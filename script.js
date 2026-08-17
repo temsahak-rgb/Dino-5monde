@@ -124,14 +124,14 @@ async function switchSection(section) {
 // ===============================
 function simpleCard(icon, title, meta, onclick) {
     return `<div onclick="${onclick}" style="
-        background:#fff;border:1px solid #e5e5e5;border-radius:6px;padding:14px;
+        background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:14px;
         cursor:pointer;transition:border-color 0.15s;
-    " onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#e5e5e5'">
+    " onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#e0e0e0'">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
             <span style="font-size:18px;">${icon}</span>
             <span style="font-size:14px;font-weight:600;color:#1a1a1a;line-height:1.3;">${title}</span>
         </div>
-        <p style="margin:0;font-size:12px;color:#888;">${meta}</p>
+        <p style="margin:0;font-size:12px;color:#777;">${meta}</p>
     </div>`;
 }
 
@@ -160,7 +160,7 @@ async function showHome() {
     let html = renderNavbar();
     html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
         <h1 style="font-size:22px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">${lang === "fa" ? "سلام، ادامه بده 👋" : "Bonjour, continuez 👋"}</h1>
-        <p style="font-size:13px;color:#888;margin:0 0 30px;">${level} · ${lang === "fa" ? "سطح فعلی" : "Niveau actuel"}</p>
+        <p style="font-size:13px;color:#777;margin:0 0 30px;">${level} · ${lang === "fa" ? "سطح فعلی" : "Niveau actuel"}</p>
 
         <div style="margin-bottom:35px;">
             ${sectionHeader(lang === "fa" ? "گرامر" : "Grammaire", "switchSection('grammar')", lang)}
@@ -204,7 +204,7 @@ function placeholderPage(icon, titleFa, titleFr) {
     html += `<div style="max-width:900px;margin:0 auto;padding:60px 16px;text-align:center;">
         <div style="font-size:48px;margin-bottom:16px;">${icon}</div>
         <h1 style="font-size:22px;color:#1a1a1a;margin-bottom:10px;">${lang === "fa" ? titleFa : titleFr}</h1>
-        <p style="font-size:14px;color:#888;">${lang === "fa" ? "این بخش به زودی فعال می‌شود." : "Cette section sera bientôt disponible."}</p>
+        <p style="font-size:14px;color:#777;">${lang === "fa" ? "این بخش به زودی فعال می‌شود." : "Cette section sera bientôt disponible."}</p>
     </div>`;
     app.innerHTML = html;
 }
@@ -221,8 +221,8 @@ async function showDailyHome() {
     let html = renderNavbar();
     html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
         <h1 style="font-size:22px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">${lang === "fa" ? "🏘️ فرانسوی روزمره" : "🏘️ Français quotidien"}</h1>
-        <p style="font-size:13px;color:#888;margin:0 0 30px;">${lang === "fa" ? "برای زندگی در فرانسه" : "Pour vivre en France"}</p>
-        <p style="font-size:14px;color:#888;text-align:center;padding:40px 0;">${lang === "fa" ? "🏗️ در حال آماده‌سازی..." : "🏗️ En cours de préparation..."}</p>
+        <p style="font-size:13px;color:#777;margin:0 0 30px;">${lang === "fa" ? "برای زندگی در فرانسه" : "Pour vivre en France"}</p>
+        <p style="font-size:14px;color:#777;text-align:center;padding:40px 0;">${lang === "fa" ? "🏗️ در حال آماده‌سازی..." : "🏗️ En cours de préparation..."}</p>
     </div>`;
     app.innerHTML = html;
 }
@@ -232,37 +232,42 @@ async function showTravelHome() {
     let html = renderNavbar();
     html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
         <h1 style="font-size:22px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">${lang === "fa" ? "✈️ فرانسوی در سفر" : "✈️ Français voyage"}</h1>
-        <p style="font-size:13px;color:#888;margin:0 0 30px;">${lang === "fa" ? "۱۸ درس برای سفری بی‌نقص" : "18 leçons pour un voyage parfait"}</p>
-        <p style="font-size:14px;color:#888;text-align:center;padding:40px 0;">${lang === "fa" ? "🏗️ در حال آماده‌سازی..." : "🏗️ En cours de préparation..."}</p>
+        <p style="font-size:13px;color:#777;margin:0 0 30px;">${lang === "fa" ? "۱۸ درس برای سفری بی‌نقص" : "18 leçons pour un voyage parfait"}</p>
+        <p style="font-size:14px;color:#777;text-align:center;padding:40px 0;">${lang === "fa" ? "🏗️ در حال آماده‌سازی..." : "🏗️ En cours de préparation..."}</p>
     </div>`;
     app.innerHTML = html;
 }
 
 // ===============================
-// تعیین سطح و انتخاب زبان
+// 🦖 انتخاب زبان (با دایناسور)
 // ===============================
 function showLanguage() {
     const lang = localStorage.getItem("language") || "fr";
     const t = texts[lang];
-    app.innerHTML = `<div style="max-width:500px;margin:60px auto;padding:0 16px;text-align:center;">
-        <h1 style="font-size:24px;margin-bottom:8px;">${t.title}</h1>
-        <p style="font-size:14px;color:#888;margin-bottom:30px;">${t.chooseLanguage}</p>
-        <button id="fr" style="width:100%;padding:14px;margin-bottom:10px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:16px;cursor:pointer;">${t.french}</button>
-        <button id="fa" style="width:100%;padding:14px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:16px;cursor:pointer;">${t.persian}</button>
+    app.innerHTML = `<div style="max-width:400px;margin:80px auto;padding:0 16px;text-align:center;">
+        <div style="font-size:64px;margin-bottom:20px;">🦖</div>
+        <h1 style="font-size:24px;color:#1a1a1a;margin-bottom:8px;">${t.title}</h1>
+        <p style="font-size:14px;color:#777;margin-bottom:30px;">${t.chooseLanguage}</p>
+        <button id="fr" style="width:100%;padding:14px;margin-bottom:10px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:16px;color:#1a1a1a;cursor:pointer;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#ddd'">${t.french}</button>
+        <button id="fa" style="width:100%;padding:14px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:16px;color:#1a1a1a;cursor:pointer;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#ddd'">${t.persian}</button>
     </div>`;
     document.getElementById("fr").onclick = () => { localStorage.setItem("language", "fr"); showPath(); };
     document.getElementById("fa").onclick = () => { localStorage.setItem("language", "fa"); showPath(); };
 }
 
+// ===============================
+// 🦖 انتخاب مسیر (با دایناسور)
+// ===============================
 function showPath() {
     const lang = localStorage.getItem("language") || "fr";
     const t = texts[lang];
-    app.innerHTML = `<div style="max-width:500px;margin:40px auto;padding:0 16px;">
-        <button id="back" class="back-btn" style="background:none;border:none;color:#087F5B;font-size:14px;cursor:pointer;padding:0;margin-bottom:20px;">← ${t.back}</button>
-        <h1 style="font-size:22px;margin-bottom:20px;">${t.choosePath}</h1>
-        <button id="general" style="width:100%;padding:14px;margin-bottom:10px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:16px;cursor:pointer;text-align:left;">${t.general}</button>
-        <button id="travel" style="width:100%;padding:14px;margin-bottom:10px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:16px;cursor:pointer;text-align:left;">${t.travel}</button>
-        <button id="daily" style="width:100%;padding:14px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:16px;cursor:pointer;text-align:left;">${t.daily}</button>
+    app.innerHTML = `<div style="max-width:400px;margin:60px auto;padding:0 16px;">
+        <div style="font-size:48px;margin-bottom:16px;text-align:center;">🦖</div>
+        <button id="back" class="back-btn" style="background:none;border:none;color:#087F5B;font-size:13px;cursor:pointer;padding:0;margin-bottom:16px;">← ${t.back}</button>
+        <h1 style="font-size:22px;color:#1a1a1a;margin-bottom:20px;">${t.choosePath}</h1>
+        <button id="general" style="width:100%;padding:14px;margin-bottom:10px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:15px;color:#1a1a1a;cursor:pointer;text-align:left;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#ddd'">🇫🇷 ${t.general}</button>
+        <button id="travel" style="width:100%;padding:14px;margin-bottom:10px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:15px;color:#1a1a1a;cursor:pointer;text-align:left;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#ddd'">✈️ ${t.travel}</button>
+        <button id="daily" style="width:100%;padding:14px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:15px;color:#1a1a1a;cursor:pointer;text-align:left;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#ddd'">🏘️ ${t.daily}</button>
     </div>`;
     document.getElementById("back").onclick = showLanguage;
     document.getElementById("general").onclick = showPlacementChoice;
@@ -270,21 +275,28 @@ function showPath() {
     document.getElementById("daily").onclick = () => { localStorage.setItem("currentPath", "daily"); showHome(); };
 }
 
+// ===============================
+// 🦖 تعیین سطح (با دایناسور)
+// ===============================
 function showPlacementChoice() {
     const lang = localStorage.getItem("language") || "fr";
     const t = texts[lang];
-    app.innerHTML = `<div style="max-width:500px;margin:40px auto;padding:0 16px;">
-        <button id="back" class="back-btn" style="background:none;border:none;color:#087F5B;font-size:14px;cursor:pointer;padding:0;margin-bottom:20px;">← ${t.back}</button>
-        <h1 style="font-size:22px;margin-bottom:10px;">${t.general}</h1>
-        <p style="font-size:14px;color:#888;margin-bottom:25px;">${t.levelQuestion}</p>
-        <button id="yes" style="width:100%;padding:14px;margin-bottom:10px;border:none;border-radius:6px;background:#087F5B;color:#fff;font-size:16px;cursor:pointer;">${t.yes}</button>
-        <button id="later" style="width:100%;padding:14px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:16px;cursor:pointer;">${t.later}</button>
+    app.innerHTML = `<div style="max-width:400px;margin:60px auto;padding:0 16px;">
+        <div style="font-size:48px;margin-bottom:16px;text-align:center;">🦖</div>
+        <button id="back" class="back-btn" style="background:none;border:none;color:#087F5B;font-size:13px;cursor:pointer;padding:0;margin-bottom:16px;">← ${t.back}</button>
+        <h1 style="font-size:22px;color:#1a1a1a;margin-bottom:10px;">${t.general}</h1>
+        <p style="font-size:14px;color:#777;margin-bottom:25px;">${t.levelQuestion}</p>
+        <button id="yes" style="width:100%;padding:14px;margin-bottom:10px;border:none;border-radius:6px;background:#087F5B;color:#fff;font-size:15px;cursor:pointer;">${t.yes}</button>
+        <button id="later" style="width:100%;padding:14px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:15px;color:#1a1a1a;cursor:pointer;">${t.later}</button>
     </div>`;
     document.getElementById("back").onclick = showPath;
     document.getElementById("later").onclick = showHome;
     document.getElementById("yes").onclick = () => { resetPlacementState(); showQuestion(); };
 }
 
+// ===============================
+// 🦖 سوالات تعیین سطح (با دایناسور + اصلاح رنگ)
+// ===============================
 function showQuestion() {
     const question = getNextQuestion();
     if (!question) { showFinalResult(); return; }
@@ -293,18 +305,19 @@ function showQuestion() {
     const progress = (placementState.asked.length / 15) * 100;
 
     let html = `<div style="max-width:600px;margin:0 auto;padding:30px 16px;">
-        <div style="background:#e9ecef;height:4px;border-radius:2px;margin-bottom:25px;overflow:hidden;">
+        <div style="text-align:center;font-size:32px;margin-bottom:16px;">🦖</div>
+        <div style="background:#e0e0e0;height:4px;border-radius:2px;margin-bottom:25px;overflow:hidden;">
             <div style="background:#087F5B;height:100%;width:${progress}%;transition:width 0.3s;"></div>
         </div>
-        <div style="background:#fff;border:1px solid #e5e5e5;border-radius:8px;padding:30px;">
-            <p class="ltr-lock" style="font-size:18px;margin:0 0 25px;line-height:1.6;color:#1a1a1a;">${question.question}</p>
+        <div style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:30px;">
+            <p class="ltr-lock" style="font-size:18px;margin:0 0 25px;line-height:1.6;color:#1a1a1a;font-weight:500;">${question.question}</p>
             <div style="display:flex;flex-direction:column;gap:10px;">`;
 
     question.options.forEach((option, index) => {
-        html += `<button class="option-btn ltr-lock" data-index="${index}" style="width:100%;padding:14px;font-size:15px;border:1px solid #e5e5e5;border-radius:6px;background:#fff;color:#333;cursor:pointer;text-align:left;transition:border-color 0.15s;">${option}</button>`;
+        html += `<button class="option-btn ltr-lock" data-index="${index}" style="width:100%;padding:14px;font-size:15px;border:1px solid #e0e0e0;border-radius:6px;background:#fafafa;color:#1a1a1a;cursor:pointer;text-align:left;transition:all 0.15s;font-weight:500;">${option}</button>`;
     });
 
-    html += `</div><button id="dont-know" style="width:100%;margin-top:15px;padding:12px;font-size:14px;border:1px solid #dc2626;border-radius:6px;background:#fff;color:#dc2626;cursor:pointer;">${t.dontKnow}</button></div></div>`;
+    html += `</div><button id="dont-know" style="width:100%;margin-top:15px;padding:12px;font-size:14px;border:1px solid #dc2626;border-radius:6px;background:#fff;color:#dc2626;cursor:pointer;font-weight:600;">${t.dontKnow}</button></div></div>`;
     app.innerHTML = html;
 
     document.querySelectorAll(".option-btn").forEach(btn => {
@@ -329,17 +342,21 @@ function showQuestion() {
     };
 }
 
+// ===============================
+// 🦖 نتیجه تعیین سطح (با دایناسور)
+// ===============================
 function showFinalResult() {
     const levelInfo = getEstimatedLevelRange();
     const lang = localStorage.getItem("language") || "fr";
     const t = texts[lang];
     app.innerHTML = `<div style="text-align:center;padding:50px 16px;max-width:500px;margin:0 auto;">
-        <h1 style="font-size:24px;margin-bottom:20px;">🎉 ${t.finalResult}</h1>
-        <p style="font-size:14px;color:#888;margin-bottom:8px;">${t.yourLevel} :</p>
+        <div style="font-size:48px;margin-bottom:16px;">🦖</div>
+        <h1 style="font-size:24px;color:#1a1a1a;margin-bottom:16px;">🎉 ${t.finalResult}</h1>
+        <p style="font-size:14px;color:#777;margin-bottom:8px;">${t.yourLevel} :</p>
         <h2 style="font-size:48px;color:#087F5B;margin:15px 0;font-weight:800;">${levelInfo.range}</h2>
-        <p style="font-size:14px;color:#888;margin:20px 0;line-height:1.6;">${t.canModify}</p>
-        <button id="accept-level" style="width:100%;padding:14px;border:none;border-radius:6px;background:#087F5B;color:#fff;font-size:16px;cursor:pointer;margin-bottom:10px;">${t.acceptLevel}</button>
-        <button id="change-level" style="width:100%;padding:14px;border:1px solid #087F5B;border-radius:6px;background:#fff;color:#087F5B;font-size:16px;cursor:pointer;">${t.changeLevel}</button>
+        <p style="font-size:14px;color:#777;margin:20px 0;line-height:1.6;">${t.canModify}</p>
+        <button id="accept-level" style="width:100%;padding:14px;border:none;border-radius:6px;background:#087F5B;color:#fff;font-size:15px;cursor:pointer;margin-bottom:10px;font-weight:600;">${t.acceptLevel}</button>
+        <button id="change-level" style="width:100%;padding:14px;border:1px solid #087F5B;border-radius:6px;background:#fff;color:#087F5B;font-size:15px;cursor:pointer;font-weight:600;">${t.changeLevel}</button>
     </div>`;
     document.getElementById("accept-level").onclick = () => { savePlacementResult(levelInfo.level); showHome(); };
     document.getElementById("change-level").onclick = showLevelSelection;
@@ -350,9 +367,10 @@ function showLevelSelection() {
     const t = texts[lang];
     const levels = ["A1", "A2", "B1", "B2", "C1"];
     let html = `<div style="text-align:center;padding:50px 16px;max-width:500px;margin:0 auto;">
-        <h1 style="font-size:22px;margin-bottom:30px;">${t.chooseYourLevel}</h1>
+        <div style="font-size:48px;margin-bottom:16px;">🦖</div>
+        <h1 style="font-size:22px;color:#1a1a1a;margin-bottom:30px;">${t.chooseYourLevel}</h1>
         <div style="display:flex;flex-direction:column;gap:10px;">`;
-    levels.forEach(level => { html += `<button class="level-btn" data-level="${level}" style="padding:14px;font-size:18px;border:1px solid #ddd;border-radius:6px;background:#fff;cursor:pointer;">${level}</button>`; });
+    levels.forEach(level => { html += `<button class="level-btn" data-level="${level}" style="padding:14px;font-size:18px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;font-weight:600;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#ddd'">${level}</button>`; });
     html += `</div></div>`;
     app.innerHTML = html;
     document.querySelectorAll(".level-btn").forEach(btn => { btn.onclick = () => { savePlacementResult(btn.getAttribute("data-level")); showHome(); }; });
@@ -367,7 +385,7 @@ async function showGrammarPage() {
     const level = getPlacementResult() || "A1";
 
     let html = renderNavbar();
-    html += `<div style="text-align:center;padding:40px 16px;"><p style="font-size:14px;color:#888;">⏳ ...</p></div>`;
+    html += `<div style="text-align:center;padding:40px 16px;"><p style="font-size:14px;color:#777;">⏳ ...</p></div>`;
     app.innerHTML = html;
 
     await loadGrammar(level);
@@ -378,7 +396,7 @@ async function showGrammarPage() {
     html = renderNavbar();
     html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
         <h1 style="font-size:22px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">${t.grammar}</h1>
-        <p style="font-size:13px;color:#888;margin:0 0 30px;">${level} – ${levelNames[level] || ""}</p>`;
+        <p style="font-size:13px;color:#777;margin:0 0 30px;">${level} – ${levelNames[level] || ""}</p>`;
 
     if (recommended.length > 0) {
         html += `<div style="margin-bottom:35px;">
@@ -417,7 +435,7 @@ async function showGrammarLesson(lessonId) {
         const response = await fetch(`./data/lessons/${level}/${lessonId}.json`);
         lesson = await response.json();
     } catch (error) {
-        app.innerHTML = `<div style="padding:40px 16px;text-align:center;"><p>خطا در یافتن درس.</p><button onclick="showGrammarPage()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;cursor:pointer;">بازگشت</button></div>`;
+        app.innerHTML = `<div style="padding:40px 16px;text-align:center;"><p style="color:#1a1a1a;">خطا در یافتن درس.</p><button onclick="showGrammarPage()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">بازگشت</button></div>`;
         return;
     }
 
@@ -438,14 +456,14 @@ async function showGrammarLesson(lessonId) {
             const typeLabel = section.type === "lesson" ? (lang === "fa" ? "درسنامه" : "Leçon") : section.type === "exercise" ? (lang === "fa" ? "تمرین" : "Exercice") : (lang === "fa" ? "آزمون" : "Quiz");
 
             sectionsHtml += `<div onclick="showLessonSection('${lessonId}','${section.id}')" style="
-                background:#fff;border:1px solid ${isDone ? '#10b981' : '#e5e5e5'};border-radius:6px;
+                background:#fff;border:1px solid ${isDone ? '#10b981' : '#e0e0e0'};border-radius:6px;
                 padding:14px 16px;margin-bottom:8px;display:flex;align-items:center;gap:12px;
                 cursor:pointer;transition:border-color 0.15s;
-            " onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='${isDone ? '#10b981' : '#e5e5e5'}'">
+            " onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='${isDone ? '#10b981' : '#e0e0e0'}'">
                 <span style="font-size:20px;flex-shrink:0;">${icon}</span>
                 <div style="flex:1;">
                     <p class="ltr-lock" style="margin:0;font-size:14px;font-weight:600;color:#1a1a1a;">${section.title}</p>
-                    <p style="margin:4px 0 0;font-size:12px;color:#888;">${typeLabel}${isDone ? (lang === "fa" ? " · انجام شد" : " · Terminé") : ""}</p>
+                    <p style="margin:4px 0 0;font-size:12px;color:#777;">${typeLabel}${isDone ? (lang === "fa" ? " · انجام شد" : " · Terminé") : ""}</p>
                 </div>
                 <span style="color:#ccc;font-size:16px;">›</span>
             </div>`;
@@ -454,20 +472,20 @@ async function showGrammarLesson(lessonId) {
 
     let html = renderNavbar();
     html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
-        <button id="back" class="back-btn" style="background:none;border:none;color:#087F5B;font-size:13px;cursor:pointer;padding:0;margin-bottom:16px;">← ${t.back}</button>
+        <button id="back" class="back-btn">← ${t.back}</button>
 
         <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:6px;">
             <h1 class="ltr-lock" style="font-size:22px;margin:0;font-weight:700;color:#1a1a1a;">${lesson.title}</h1>
             <button id="bookmark-btn" style="background:none;border:none;font-size:20px;cursor:pointer;padding:0;margin:0;">${bookmarked ? "⭐" : "☆"}</button>
         </div>
-        <p class="ltr-lock" style="font-size:13px;color:#888;margin:0 0 20px;">${lesson.level} · ${lessonId} · ⏱ ${lesson.estimatedTime} min · ${totalSections} ${lang === "fa" ? "بخش" : "sections"}</p>
+        <p class="ltr-lock" style="font-size:13px;color:#777;margin:0 0 20px;">${lesson.level} · ${lessonId} · ⏱ ${lesson.estimatedTime} min · ${totalSections} ${lang === "fa" ? "بخش" : "sections"}</p>
 
         <div style="margin-bottom:25px;">
-            <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:12px;color:#888;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:12px;color:#777;">
                 <span>${lang === "fa" ? "پیشرفت" : "Progression"}</span>
                 <span style="font-weight:600;color:#087F5B;">${completedCount}/${totalSections}</span>
             </div>
-            <div style="background:#e9ecef;height:4px;border-radius:2px;overflow:hidden;">
+            <div style="background:#e0e0e0;height:4px;border-radius:2px;overflow:hidden;">
                 <div style="background:#087F5B;height:100%;width:${progressPercent}%;transition:width 0.3s;border-radius:2px;"></div>
             </div>
         </div>
@@ -519,10 +537,10 @@ function showLessonContent(lessonId, section) {
 
     let html = renderNavbar();
     html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
-        <button id="back" class="back-btn" style="background:none;border:none;color:#087F5B;font-size:13px;cursor:pointer;padding:0;margin-bottom:16px;">← ${t.back}</button>
-        <p style="font-size:11px;color:#888;text-transform:uppercase;letter-spacing:1px;margin:0 0 6px;">${section.type === 'lesson' ? (lang === "fa" ? "درسنامه" : "Leçon") : (lang === "fa" ? "تمرین" : "Exercice")}</p>
+        <button id="back" class="back-btn">← ${t.back}</button>
+        <p style="font-size:11px;color:#777;text-transform:uppercase;letter-spacing:1px;margin:0 0 6px;">${section.type === 'lesson' ? (lang === "fa" ? "درسنامه" : "Leçon") : (lang === "fa" ? "تمرین" : "Exercice")}</p>
         <h1 class="ltr-lock" style="font-size:22px;margin:0 0 20px;font-weight:700;color:#1a1a1a;">${title}</h1>
-        <div style="background:#fff;border:1px solid #e5e5e5;border-radius:6px;padding:24px;margin-bottom:20px;">`;
+        <div style="background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:24px;margin-bottom:20px;">`;
 
     if (section.content) html += `<div class="ltr-lock" style="line-height:1.8;color:#333;font-size:15px;margin-bottom:20px;">${renderMarkdown(section.content)}</div>`;
     if (section.table) html += renderTable(section.table);
@@ -561,16 +579,16 @@ function showLessonContent(lessonId, section) {
 // درس‌های روزمره و سفر
 // ===============================
 async function showDailyLesson(lessonId) {
-    app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#888;">⏳ ...</p></div>`;
+    app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">⏳ ...</p></div>`;
     const lessonData = await loadSpecificLesson("daily", lessonId);
-    if (!lessonData) { app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#888;">🚧 به زودی</p><button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;cursor:pointer;">بازگشت</button></div>`; return; }
+    if (!lessonData) { app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">🚧 به زودی</p><button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">بازگشت</button></div>`; return; }
     showLessonContent(lessonId, lessonData.sections[0]);
 }
 
 async function showTravelLesson(lessonId) {
-    app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#888;">⏳ ...</p></div>`;
+    app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">⏳ ...</p></div>`;
     const lessonData = await loadSpecificLesson("travel", lessonId);
-    if (!lessonData) { app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#888;">🚧 به زودی</p><button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;cursor:pointer;">بازگشت</button></div>`; return; }
+    if (!lessonData) { app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">🚧 به زودی</p><button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">بازگشت</button></div>`; return; }
     showLessonContent(lessonId, lessonData.sections[0]);
 }
 
@@ -591,20 +609,20 @@ function showExerciseContent(lessonId, section) {
 
         let html = renderNavbar();
         html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
-            <button id="back" class="back-btn" style="background:none;border:none;color:#087F5B;font-size:13px;cursor:pointer;padding:0;margin-bottom:16px;">← ${t.back}</button>
+            <button id="back" class="back-btn">← ${t.back}</button>
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
-                <span style="font-size:13px;color:#888;">${currentQuestionIndex + 1} / ${questions.length}</span>
+                <span style="font-size:13px;color:#777;">${currentQuestionIndex + 1} / ${questions.length}</span>
             </div>
-            <div style="background:#e9ecef;height:4px;border-radius:2px;margin-bottom:25px;overflow:hidden;">
+            <div style="background:#e0e0e0;height:4px;border-radius:2px;margin-bottom:25px;overflow:hidden;">
                 <div style="background:#087F5B;height:100%;width:${((currentQuestionIndex + 1) / questions.length) * 100}%;transition:width 0.3s;border-radius:2px;"></div>
             </div>
             <h2 class="${lang === 'fa' ? 'persian-text' : 'ltr-lock'}" style="font-size:18px;margin-bottom:10px;color:#1a1a1a;">${title}</h2>
-            <p class="ltr-lock" style="font-size:17px;line-height:1.6;color:#333;margin-bottom:25px;">${question.question}</p>
+            <p class="ltr-lock" style="font-size:17px;line-height:1.6;color:#1a1a1a;margin-bottom:25px;font-weight:500;">${question.question}</p>
             <div id="options-container" style="display:flex;flex-direction:column;gap:10px;">`;
 
         if (question.type === "mcq" || question.type === "binary") {
             question.options.forEach((option, index) => {
-                html += `<button class="option-btn ltr-lock" data-index="${index}" style="width:100%;padding:14px;font-size:15px;border:1px solid #e5e5e5;border-radius:6px;background:#fff;color:#333;cursor:pointer;text-align:left;transition:border-color 0.15s;">${option}</button>`;
+                html += `<button class="option-btn ltr-lock" data-index="${index}" style="width:100%;padding:14px;font-size:15px;border:1px solid #e0e0e0;border-radius:6px;background:#fafafa;color:#1a1a1a;cursor:pointer;text-align:left;transition:all 0.15s;font-weight:500;">${option}</button>`;
             });
         }
 
@@ -651,9 +669,9 @@ function showExerciseResult(lessonId, section, correctCount, totalCount) {
     let html = renderNavbar();
     html += `<div style="max-width:500px;margin:0 auto;padding:50px 16px;text-align:center;">
         <div style="font-size:48px;margin-bottom:16px;">${emoji}</div>
-        <h1 style="font-size:24px;margin-bottom:10px;color:#1a1a1a;">${message}</h1>
+        <h1 style="font-size:24px;color:#1a1a1a;margin-bottom:10px;">${message}</h1>
         <p style="font-size:36px;font-weight:800;color:#087F5B;margin:15px 0;">${correctCount}/${totalCount}</p>
-        <p style="font-size:16px;color:#888;margin-bottom:30px;">${percentage}%</p>
+        <p style="font-size:16px;color:#777;margin-bottom:30px;">${percentage}%</p>
         <button onclick="showGrammarLesson('${lessonId}')" style="width:100%;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:6px;background:#087F5B;color:#fff;cursor:pointer;">${lang === "fa" ? "بازگشت به درس" : "Retour à la leçon"}</button>
     </div>`;
     app.innerHTML = html;
