@@ -1,0 +1,60 @@
+{
+  "id": "C1-G-002",
+  "level": "C1",
+  "title": "Voix active, voix passive : choisir pour nuancer",
+  "icon": "🔄",
+  "estimatedTime": 20,
+  "sections": [
+    {
+      "id": "C1-G-002-1",
+      "type": "lesson",
+      "title": "Les fondamentaux et le choix de la préposition",
+      "content": "La voix passive permet de **focaliser l'attention sur le sujet qui subit l'action** plutôt que sur l'agent. \n\nSeuls les verbes transitifs directs (admettant un **COD**) peuvent être mis à la forme passive. Le choix de la préposition introduisant le complément d'agent (`par` ou `de`) dépend de la nature du verbe et du registre de langue.",
+      "table": {
+        "headers": ["Préposition", "Usage", "Exemple authentique"],
+        "rows": [
+          ["**par**", "Verbes d'action, de mouvement, de transformation.", "Le nouveau traité climatique a été **ratifié par** l'ensemble des États membres."],
+          ["**de**", "Verbes d'état, de sentiment (aimer, estimer) ou de connaissance (connaître, ignorer).", "Ce magistrat intègre est respecté **de** tous ses confrères."],
+          ["**(Omise)**", "Quand l'agent est `on`, inconnu, évident ou volontairement tu pour des raisons diplomatiques.", "Des **mesures drastiques** ont été prises hier soir."]
+        ]
+      },
+      "examples": [
+        {"fr": "**Comparaison stylistique** :\n*Actif (neutre)* : Le comité de rédaction a censuré l'article.\n*Passif (C1)* : L'article **a été censuré** par le comité. *(Met en valeur la victime de l'action)*."},
+        {"fr": "L'existence des ondes gravitationnelles a été **confirmée par** les équipes de l'observatoire LIGO."},
+        {"fr": "Cette théorie controversée reste méconnue **du** grand public."},
+        {"fr": "Les négociations diplomatiques ont été **interrompues** subitement. *(Agent volontairement omis pour rester neutre)*"}
+      ]
+    },
+    {
+      "id": "C1-G-002-2",
+      "type": "lesson",
+      "title": "Les tournures à sens passif et la forme impersonnelle",
+      "content": "En français avancé, on évite souvent la voix passive classique (parfois jugée lourde) au profit de **tournures actives à sens passif** ou de la **forme impersonnelle**. Ces structures sont omniprésentes dans la littérature, la presse et les textes juridiques.",
+      "table": {
+        "headers": ["Structure", "Nuance stylistique", "Exemple"],
+        "rows": [
+          ["Verbe pronominal (sens passif)", "Exprime une propriété, une vérité générale ou une facilité.", "Ce scandale politique **se lit** comme un thriller judiciaire."],
+          ["`se voir` / `s'entendre` + inf.", "Mise en relief de la subordination ou de la contrainte subie.", "Malgré son talent, elle **s'est vu refuser** la bourse de recherche."],
+          ["Forme impersonnelle (`il est` + p.p.)", "Style très formel, juridique ou administratif (distanciation).", "**Il sera procédé** à une évacuation immédiate des lieux."]
+        ]
+      },
+      "examples": [
+        {"fr": "**Comparaison** :\n*Lourd* : Ce vin est bu chambré.\n*Élégant (C1)* : Ce vin d'exception **se boit** chambré, idéalement autour de 17 degrés."},
+        {"fr": "Les riverains **se sont entendu dire** que le chantier durerait au moins trois ans."},
+        {"fr": "Durant l'état d'urgence, **il a été interdit** de manifester sur la voie publique."}
+      ]
+    },
+    {
+      "id": "C1-G-002-3",
+      "type": "lesson",
+      "title": "Les pièges de l'accord : Erreurs fréquentes",
+      "content": "L'accord du participe passé des verbes pronominaux suivis d'un infinitif (`se faire`, `se laisser`, `se voir`) est un **cauchemar orthographique** même pour les natifs. \n\n⚠️ **Exceptions absolues** : Les participes passés de `se faire` et `se laisser` suivis d'un infinitif sont **TOUJOURS INVARIABLES**. De plus, un verbe construisant un **COI** (ex: *penser à*, *parler de*) ne peut **jamais** être mis à la voix passive.",
+      "examples": [
+        {"fr": "❌ ~~Elle s'est fait**e** licencier~~ sans préavis.\n✅ Elle **s'est fait** licencier sans préavis. (`se faire` + inf. = TOUJOURS invariable)"},
+        {"fr": "❌ ~~Ils se sont laissé**s** surprendre~~ par la crise économique.\n✅ Ils **se sont laissé** surprendre par la crise économique. (`se laisser` + inf. = TOUJOURS invariable)"},
+        {"fr": "❌ ~~Cette solution a été pensé**e** à~~ par les ingénieurs.\n✅ Les ingénieurs **ont pensé à** cette solution. (Pas de passif avec un verbe + COI)"}
+      ],
+      "note": "⚠️ **Astuce de rédaction C1** : Si vous hésitez sur l'accord d'un verbe pronominal suivi d'un infinitif (comme `se voir`), **reformulez** pour éviter la faute dans un écrit formel.\n\n✅ *Élégant* : `Elle a essuyé un refus concernant sa bourse.`\n❌ *Risqué* : `Elle s'est vu(e) refuser...`"
+    }
+  ]
+}
