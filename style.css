@@ -13,10 +13,12 @@ body {
     color: #1a1a1a;
     min-height: 100vh;
     line-height: 1.6;
-    /* 🦖 دایناسور سبز خیلی کمرنگ */
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='120' opacity='0.04' fill='%23087F5B'%3E🦖%3C/text%3E%3C/svg%3E");
-    background-repeat: repeat;
-    background-size: 200px 200px;
+    /* 🦖 یک دایناسور بزرگ محو در مرکز */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='280' opacity='0.035' fill='%23087F5B'%3E🦖%3C/text%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 600px 600px;
+    background-attachment: fixed;
 }
 
 /* =============================== */
