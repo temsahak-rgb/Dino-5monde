@@ -135,7 +135,15 @@ function simpleCard(icon, title, meta, onclick) {
         <p style="margin:0;font-size:13px;color:#777;">${meta}</p>
     </div>`;
 }
-
+//======
+//header
+//=====
+function sectionHeader(title, moreOnclick, lang) {
+    return `<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px;border-bottom:2px solid #1a1a1a;padding-bottom:10px;">
+        <h2 style="margin:0;font-size:20px;font-weight:700;color:#1a1a1a;">${title}</h2>
+        ${moreOnclick ? `<span onclick="${moreOnclick}" style="font-size:14px;color:#087F5B;cursor:pointer;font-weight:600;">${lang === "fa" ? "همه →" : "Tout →"}</span>` : ''}
+    </div>`;
+}
 // ===============================
 // 🏠 صفحه اصلی مینیمال
 // ===============================
