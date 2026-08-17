@@ -1,0 +1,78 @@
+{
+  "id": "A2-G-002-B",
+  "level": "A2",
+  "title": "L'accord du participe passé avec être et avoir",
+  "icon": "🟫",
+  "estimatedTime": 15,
+  "sections": [
+    {
+      "id": "A2-G-002-B-1",
+      "type": "lesson",
+      "title": "L'accord avec l'auxiliaire être",
+      "content": "Avec l'auxiliaire **être**, le participe passé s'accorde **toujours** en genre et en nombre avec le **sujet**.\n\n📌 C'est la règle la plus simple : le participe passé fonctionne comme un **adjectif**.",
+      "table": {
+        "headers": ["Sujet", "Exemple"],
+        "rows": [
+          ["Masculin singulier", "Il est **parti**."],
+          ["Féminin singulier", "Elle est **partie**."],
+          ["Masculin pluriel", "Ils sont **partis**."],
+          ["Féminin pluriel", "Elles sont **parties**."]
+        ]
+      },
+      "examples": [
+        {"fr": "Elle est **partie** à midi."},
+        {"fr": "Ils sont **allés** à Paris."},
+        {"fr": "Julie et Cécile sont **parties** ensemble."},
+        {"fr": "À quelle heure êtes-vous **parti**, monsieur ?"},
+        {"fr": "À quelle heure êtes-vous **partie**, madame ?"}
+      ],
+      "note": "⚠️ **Vous de politesse** :\n\nLe participe s'accorde avec la **personne réelle** :\n- À un homme : *Êtes-vous **parti** ?*\n- À une femme : *Êtes-vous **partie** ?*\n\n📌 **Verbes pronominaux** (se laver, se lever…) :\nLe participe s'accorde **généralement** avec le sujet :\n*Elle s'est **lavée**. Ils se sont **promenés**.*\n\n→ Voir la leçon **A2-G-004** pour les cas particuliers."
+    },
+    {
+      "id": "A2-G-002-B-2",
+      "type": "lesson",
+      "title": "L'accord avec l'auxiliaire avoir : la règle du COD",
+      "content": "Avec l'auxiliaire **avoir**, le participe passé s'accorde **uniquement** avec le **COD** si celui-ci est placé **avant** le verbe.\n\n📌 **Règle d'or** :\n- COD **avant** → ✅ accord\n- COD **après** ou **absent** → ❌ pas d'accord",
+      "table": {
+        "headers": ["Position du COD", "Accord ?", "Exemple"],
+        "rows": [
+          ["COD **après** le verbe", "❌ Non", "J'ai mangé une **pomme**."],
+          ["COD **avant** le verbe", "✅ Oui", "La **pomme** que j'ai mangée."],
+          ["Pas de COD", "❌ Non", "J'ai **dormi**."],
+          ["COI (indirect)", "❌ Non", "J'ai parlé **à Marie**."]
+        ]
+      },
+      "examples": [
+        {"fr": "J'ai mangé une pomme. (COD après → pas d'accord)"},
+        {"fr": "La pomme que j'ai mang**ée**. (COD avant → accord)"},
+        {"fr": "J'ai dormi. (pas de COD → pas d'accord)"},
+        {"fr": "J'ai parlé à Marie. (COI → pas d'accord)"}
+      ],
+      "note": "📌 **Quels mots déclenchent l'accord ?**\n\nLe COD placé avant peut être :\n\n1. **Pronom relatif** `que` :\n*Les livres **que** j'ai lu**s**.*\n\n2. **Pronom personnel COD** (me, te, le, la, nous, vous, les) :\n*Ses amis ? Je **les** ai connu**s**.*\n\n3. **Adjectif interrogatif** (quel, quelle, lesquels…) :\n*Quelle école as-tu choisi**e** ?*\n\n4. **Pronom interrogatif** (lequel, laquelle…) :\n*Laquelle as-tu choisi**e** ?*"
+    },
+    {
+      "id": "A2-G-002-B-3",
+      "type": "lesson",
+      "title": "Récapitulatif : être vs avoir",
+      "content": "Voici un tableau récapitulatif pour mémoriser les règles d'accord :",
+      "table": {
+        "headers": ["Auxiliaire", "Accord ?", "Avec quoi ?", "Exemple"],
+        "rows": [
+          ["**être**", "✅ Toujours", "Sujet", "Elles sont arrivé**es**."],
+          ["**Pronominal**", "✅ Généralement", "Sujet", "Ils se sont réveillé**s**."],
+          ["**avoir** + COD avant", "✅ Oui", "COD", "La lettre qu'il a écrit**e**."],
+          ["**avoir** + COD après", "❌ Non", "—", "Il a écrit une lettre."],
+          ["**avoir** sans COD", "❌ Non", "—", "Il a dormi."]
+        ]
+      },
+      "examples": [
+        {"fr": "Elles sont **arrivées** à l'heure."},
+        {"fr": "La lettre qu'il a **écrite** est longue."},
+        {"fr": "Il a **écrit** une lettre."},
+        {"fr": "Ses amis ? Je les ai **connus** à une fête."},
+        {"fr": "Quelle école as-tu **choisie** ?"}
+      ],
+      "note": "💡 **Points essentiels à retenir** :\n\n- **être** → accord avec le **sujet** (toujours)\n- **avoir** → accord avec le **COD avant** (jamais avec le sujet)\n- Pas de COD ou COD après → **pas d'accord**\n\n⚠️ Les formes irrégulières comme `fait`, `dû`, `écrit`, `pris` s'accordent aussi :\n*Les efforts qu'il a **faits**. (fait → faits)*"
+    }
+  ]
+}
