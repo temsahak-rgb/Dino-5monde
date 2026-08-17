@@ -341,127 +341,176 @@ async function switchSection(section) {
 // ===============================
 // 🏠 صفحه اصلی (Dashboard)
 // ===============================
-function showHome() {
+// ===============================
+// 🏠 صفحه اصلی - سبک RTS.ch (مجله‌ای و تمیز)
+// ===============================
+async function showHome() {
     const lang = localStorage.getItem("language") || "fr";
+    const level = getPlacementResult() || "A1";
+    
+    // ---------- بارگذاری داده‌های واقعی ----------
+    let grammarLessons = [];
+    try {
+        await loadGrammar(level);
+        grammarLessons = getGrammar(level).slice(0, 4);
+    } catch (e) {}
+    
+    let travelLessons = [];
+    try {
+        const r = await fetch("./data/travel/lessons.json");
+        travelLessons = (await r.json()).slice(0, 4);
+    } catch (e) {}
+    
+    let dailyLessons = [];
+    try {
+        const r = await fetch("./data/daily/lessons.json");
+        dailyLessons = (await r.json()).slice(0, 4);
+    } catch (e) {}
+    
+    // ---------- کمکی: کارت محتوا (سبک RTS) ----------
+    const card = (emoji, gradient, tag, tagColor, title, meta, onclick) => `
+        <div onclick="${onclick}" style="
+            background: white; border-radius: 10px; overflow: hidden; cursor: pointer;
+            transition: all 0.25s; box-shadow: 0 1px 4px rgba(0,0,0,0.08); border: 1px solid #eee;
+        " onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.12)'"
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 1px 4px rgba(0,0,0,0.08)'">
+            <div style="height: 130px; background: ${gradient}; display: flex; align-items: center; justify-content: center; font-size: 56px;">${emoji}</div>
+            <div style="padding: 16px;">
+                <p style="margin: 0 0 8px 0; font-size: 11px; font-weight: 700; color: ${tagColor}; text-transform: uppercase; letter-spacing: 1px;">${tag}</p>
+                <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #1a1a1a; line-height: 1.4; font-weight: 700;">${title}</h3>
+                <p style="margin: 0; font-size: 12px; color: #8a8a8a;">${meta}</p>
+            </div>
+        </div>
+    `;
+    
+    // ---------- کمکی: تیتر بخش (سبک RTS) ----------
+    const sectionHeader = (title, moreOnclick) => `
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 0 0 20px 0; border-bottom: 2px solid #1a1a1a; padding-bottom: 10px;">
+            <h2 style="margin: 0; font-size: 22px; color: #1a1a1a; font-weight: 800;">${title}</h2>
+            <span onclick="${moreOnclick}" style="color: #087F5B; font-size: 13px; font-weight: 700; cursor: pointer;">${lang === "fa" ? "مشاهده بیشتر →" : "Voir plus →"}</span>
+        </div>
+    `;
     
     let html = renderNavbar();
     
     html += `
-        <div style="background: #f8f9fa; min-height: calc(100vh - 65px);">
-            <!-- هدر بزرگ -->
-            <div style="background: linear-gradient(135deg, #087F5B 0%, #20c997 100%); padding: 70px 20px; color: white; text-align: center;">
-                <h1 style="font-size: 48px; margin: 0 0 15px 0; font-weight: 800;">
-                    ${lang === "fa" ? "یادگیری فرانسه با داینو 🦖" : "Apprenez le français avec Dino 🦖"}
-                </h1>
-                <p style="font-size: 20px; opacity: 0.95; max-width: 650px; margin: 0 auto;">
-                    ${lang === "fa" ? "از سطح مبتدی تا پیشرفته، با روشی جذاب و تعاملی" : "Du débutant à l'avancé, avec une méthode ludique et interactive"}
-                </p>
-                <div style="margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <button onclick="switchSection('grammar')" style="padding: 15px 35px; background: white; color: #087F5B; border: none; border-radius: 12px; font-size: 17px; font-weight: 700; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-                        ${lang === "fa" ? "🚀 شروع یادگیری" : "🚀 Commencer"}
-                    </button>
-                    <button onclick="showPlacementChoice()" style="padding: 15px 35px; background: transparent; color: white; border: 2px solid white; border-radius: 12px; font-size: 17px; font-weight: 700; cursor: pointer;">
-                        ${lang === "fa" ? "📊 تعیین سطح" : "📊 Test de niveau"}
-                    </button>
+    <div style="background: #fafafa; min-height: calc(100vh - 65px);">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 30px 20px 70px 20px;">
+            
+            <!-- 🌟 HERO: درس ویژه -->
+            <div onclick="showGrammarLesson('A1-G-002')" style="
+                background: linear-gradient(135deg, #087F5B 0%, #20c997 100%);
+                border-radius: 14px; color: white; padding: 50px; margin-bottom: 55px;
+                display: flex; justify-content: space-between; align-items: center; gap: 30px; flex-wrap: wrap;
+                cursor: pointer; box-shadow: 0 8px 25px rgba(8,127,91,0.25);
+            ">
+                <div style="max-width: 620px;">
+                    <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 2px; opacity: 0.9; margin: 0 0 12px 0;">🦖 ${lang === "fa" ? "درس ویژه امروز" : "À la une aujourd'hui"}</p>
+                    <h1 style="font-size: 38px; margin: 0 0 14px 0; font-weight: 800; line-height: 1.2;">Être et Avoir</h1>
+                    <p style="font-size: 16px; opacity: 0.95; margin: 0 0 25px 0; line-height: 1.6;">
+                        ${lang === "fa" ? "دو فعل مهم زبان فرانسه را با درس‌های تعاملی، مثال و آزمون یاد بگیرید." : "Apprenez les deux verbes les plus importants du français avec des leçons interactives."}
+                    </p>
+                    <span style="display: inline-block; background: white; color: #087F5B; padding: 12px 28px; border-radius: 8px; font-weight: 700; font-size: 14px;">
+                        ${lang === "fa" ? "شروع درس →" : "Commencer la leçon →"}
+                    </span>
+                </div>
+                <div style="font-size: 110px;">📖</div>
+            </div>
+            
+            <!-- 📚 بخش گرامر -->
+            <div style="margin-bottom: 55px;">
+                ${sectionHeader(lang === "fa" ? "📚 گرامر" : "📚 Grammaire", "switchSection('grammar')")}
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px;">
+                    ${grammarLessons.map(l => card(
+                        l.icon || "📗",
+                        "linear-gradient(135deg, #e8f5f0 0%, #d0ebe1 100%)",
+                        l.level || "A1", "#087F5B",
+                        lang === "fa" ? l.title_fa : l.title,
+                        `⏱ ${l.estimatedTime} min`,
+                        `showGrammarLesson('${l.id}')`
+                    )).join("")}
                 </div>
             </div>
             
-            <div style="max-width: 1200px; margin: 0 auto; padding: 50px 20px;">
-                
-                <h2 style="font-size: 30px; margin-bottom: 30px; color: #212529; display: flex; align-items: center; gap: 12px;">
-                    <span style="font-size: 36px;">🎯</span>
-                    <span>${lang === "fa" ? "مسیرهای یادگیری" : "Parcours d'apprentissage"}</span>
-                </h2>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 60px;">
-                    
-                    <div onclick="switchSection('grammar')" style="
-                        background: white; border-radius: 20px; padding: 35px; cursor: pointer;
-                        transition: all 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-                        border-top: 5px solid #087F5B;
-                    " onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(8,127,91,0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
-                        <div style="font-size: 56px; margin-bottom: 15px;">📚</div>
-                        <h3 style="margin: 0 0 12px 0; font-size: 24px; color: #212529;">${lang === "fa" ? "فرانسوی عمومی" : "Français général"}</h3>
-                        <p style="color: #6c757d; line-height: 1.7; margin: 0; font-size: 16px;">
-                            ${lang === "fa" ? "گرامر کامل از A1 تا C1 با تمرین‌های تعاملی" : "Grammaire complète de A1 à C1 avec exercices interactifs"}
-                        </p>
-                        <div style="margin-top: 20px; color: #087F5B; font-weight: 700; font-size: 16px;">
-                            ${lang === "fa" ? "مشاهده درس‌ها →" : "Voir les leçons →"}
-                        </div>
-                    </div>
-                    
-                    <div onclick="switchSection('daily')" style="
-                        background: white; border-radius: 20px; padding: 35px; cursor: pointer;
-                        transition: all 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-                        border-top: 5px solid #f59e0b;
-                    " onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(245,158,11,0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
-                        <div style="font-size: 56px; margin-bottom: 15px;">🏘️</div>
-                        <h3 style="margin: 0 0 12px 0; font-size: 24px; color: #212529;">${lang === "fa" ? "فرانسوی روزمره" : "Français quotidien"}</h3>
-                        <p style="color: #6c757d; line-height: 1.7; margin: 0; font-size: 16px;">
-                            ${lang === "fa" ? "برای زندگی در فرانسه: بانک، مسکن، کار، ادارات..." : "Pour vivre en France: banque, logement, travail, administration..."}
-                        </p>
-                        <div style="margin-top: 20px; color: #f59e0b; font-weight: 700; font-size: 16px;">
-                            ${lang === "fa" ? "مشاهده موضوعات →" : "Voir les sujets →"}
-                        </div>
-                    </div>
-                    
-                    <div onclick="switchSection('travel')" style="
-                        background: white; border-radius: 20px; padding: 35px; cursor: pointer;
-                        transition: all 0.3s; box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-                        border-top: 5px solid #3b82f6;
-                    " onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(59,130,246,0.2)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
-                        <div style="font-size: 56px; margin-bottom: 15px;">✈️</div>
-                        <h3 style="margin: 0 0 12px 0; font-size: 24px; color: #212529;">${lang === "fa" ? "فرانسوی در سفر" : "Français voyage"}</h3>
-                        <p style="color: #6c757d; line-height: 1.7; margin: 0; font-size: 16px;">
-                            ${lang === "fa" ? "۱۸ درس کاربردی برای سفری بی‌نقص به فرانسه" : "18 leçons pratiques pour un voyage parfait en France"}
-                        </p>
-                        <div style="margin-top: 20px; color: #3b82f6; font-weight: 700; font-size: 16px;">
-                            ${lang === "fa" ? "شروع ماجراجویی →" : "Commencer l'aventure →"}
-                        </div>
-                    </div>
-                </div>
-                
-                <h2 style="font-size: 30px; margin-bottom: 30px; color: #212529; display: flex; align-items: center; gap: 12px;">
-                    <span style="font-size: 36px;">📰</span>
-                    <span>${lang === "fa" ? "مقالات و نکات آموزشی" : "Articles et conseils"}</span>
-                </h2>
-                
-                <div style="background: white; border-radius: 20px; padding: 35px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-                        <article style="border-bottom: 2px solid #f0f0f0; padding-bottom: 25px;">
-                            <div style="font-size: 13px; color: #087F5B; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;"> GRAMMAIRE</div>
-                            <h3 style="margin: 0 0 12px 0; font-size: 20px; color: #212529; line-height: 1.4;">
-                                ${lang === "fa" ? "چگونه passé composé را درست استفاده کنیم؟" : "Comment bien utiliser le passé composé?"}
-                            </h3>
-                            <p style="color: #6c757d; line-height: 1.7; margin: 0; font-size: 15px;">
-                                ${lang === "fa" ? "راهنمای کامل با مثال‌های کاربردی و تمرین‌های تعاملی..." : "Guide complet avec exemples pratiques et exercices..."}
-                            </p>
-                        </article>
-                        
-                        <article style="border-bottom: 2px solid #f0f0f0; padding-bottom: 25px;">
-                            <div style="font-size: 13px; color: #f59e0b; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">🏘️ VIE QUOTIDIENNE</div>
-                            <h3 style="margin: 0 0 12px 0; font-size: 20px; color: #212529; line-height: 1.4;">
-                                ${lang === "fa" ? "۱۰ عبارت ضروری برای باز کردن حساب بانکی" : "10 expressions pour ouvrir un compte bancaire"}
-                            </h3>
-                            <p style="color: #6c757d; line-height: 1.7; margin: 0; font-size: 15px;">
-                                ${lang === "fa" ? "از افتتاح حساب تا درخواست کارت اعتباری..." : "De l'ouverture à la demande de carte de crédit..."}
-                            </p>
-                        </article>
-                        
-                        <article>
-                            <div style="font-size: 13px; color: #3b82f6; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">✈️ VOYAGE</div>
-                            <h3 style="margin: 0 0 12px 0; font-size: 20px; color: #212529; line-height: 1.4;">
-                                ${lang === "fa" ? "راهنمای کامل فرودگاه شارل دوگل (CDG)" : "Guide complet de l'aéroport CDG"}
-                            </h3>
-                            <p style="color: #6c757d; line-height: 1.7; margin: 0; font-size: 15px;">
-                                ${lang === "fa" ? "از ترمینال تا خروجی: همه چیز درباره CDG" : "Du terminal à la sortie: tout sur CDG"}
-                            </p>
-                        </article>
-                    </div>
+            <!-- 🏘️ بخش روزمره -->
+            <div style="margin-bottom: 55px;">
+                ${sectionHeader(lang === "fa" ? "🏘️ فرانسوی روزمره" : "🏘️ Français quotidien", "switchSection('daily')")}
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px;">
+                    ${dailyLessons.map(l => card(
+                        l.icon || "🏠",
+                        "linear-gradient(135deg, #fef3e2 0%, #fde5c8 100%)",
+                        lang === "fa" ? "زندگی" : "Vie pratique", "#d97706",
+                        lang === "fa" ? l.title_fa : l.title,
+                        `⏱ ${l.estimatedTime} min`,
+                        `showDailyLesson('${l.id}')`
+                    )).join("")}
                 </div>
             </div>
+            
+            <!-- ✈️ بخش سفر -->
+            <div style="margin-bottom: 55px;">
+                ${sectionHeader(lang === "fa" ? "✈️ فرانسوی در سفر" : "✈️ Français voyage", "switchSection('travel')")}
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px;">
+                    ${travelLessons.map(l => card(
+                        l.icon || "🧳",
+                        "linear-gradient(135deg, #e8f0fe 0%, #d5e5fc 100%)",
+                        lang === "fa" ? "سفر" : "Voyage", "#2563eb",
+                        lang === "fa" ? l.title_fa : l.title,
+                        `⏱ ${l.estimatedTime} min`,
+                        `showTravelLesson('${l.id}')`
+                    )).join("")}
+                </div>
+            </div>
+            
+            <!-- 🎮 بخش بازی و تمرین -->
+            <div style="margin-bottom: 55px;">
+                ${sectionHeader(lang === "fa" ? "🎮 بازی و تمرین" : "🎮 Jeux & exercices", "switchSection('games')")}
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px;">
+                    ${card("🎮", "linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%)", lang === "fa" ? "بازی" : "Jeux", "#7c3aed",
+                        lang === "fa" ? "بازی‌های آموزشی" : "Jeux éducatifs",
+                        lang === "fa" ? "یادگیری با سرگرمی" : "Apprendre en s'amusant",
+                        "switchSection('games')")}
+                    ${card("📝", "linear-gradient(135deg, #ffe8e8 0%, #ffd5d5 100%)", lang === "fa" ? "تمرین" : "Exercices", "#dc2626",
+                        lang === "fa" ? "تمرین‌های سریع" : "Exercices rapides",
+                        lang === "fa" ? "تثبیت یادگیری" : "Consolider l'apprentissage",
+                        "switchSection('exercises')")}
+                    ${card("🏆", "linear-gradient(135deg, #fef9e7 0%, #fdf3cd 100%)", lang === "fa" ? "آزمون" : "Quiz", "#ca8a04",
+                        lang === "fa" ? "آزمون تعیین سطح" : "Test de niveau",
+                        lang === "fa" ? "سطح خود را بسنجید" : "Évaluez votre niveau",
+                        "showPlacementChoice()")}
+                </div>
+            </div>
+            
+            <!-- 📰 بخش مقالات -->
+            <div>
+                ${sectionHeader(lang === "fa" ? "📰 نکات و مقالات" : "📰 Conseils & articles", "")}
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px;">
+                    <article style="background: white; border-radius: 10px; padding: 20px; border: 1px solid #eee; cursor: pointer;">
+                        <p style="margin: 0 0 8px 0; font-size: 11px; font-weight: 700; color: #087F5B; text-transform: uppercase; letter-spacing: 1px;">Grammaire</p>
+                        <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #1a1a1a; line-height: 1.4; font-weight: 700;">
+                            ${lang === "fa" ? "چگونه passé composé را درست استفاده کنیم؟" : "Comment bien utiliser le passé composé ?"}
+                        </h3>
+                        <p style="margin: 0; font-size: 12px; color: #8a8a8a;">${lang === "fa" ? "۵ دقیقه مطالعه" : "5 min de lecture"}</p>
+                    </article>
+                    <article style="background: white; border-radius: 10px; padding: 20px; border: 1px solid #eee; cursor: pointer;">
+                        <p style="margin: 0 0 8px 0; font-size: 11px; font-weight: 700; color: #d97706; text-transform: uppercase; letter-spacing: 1px;">Vie quotidienne</p>
+                        <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #1a1a1a; line-height: 1.4; font-weight: 700;">
+                            ${lang === "fa" ? "۱۰ عبارت ضروری برای باز کردن حساب بانکی" : "10 expressions pour ouvrir un compte bancaire"}
+                        </h3>
+                        <p style="margin: 0; font-size: 12px; color: #8a8a8a;">${lang === "fa" ? "۴ دقیقه مطالعه" : "4 min de lecture"}</p>
+                    </article>
+                    <article style="background: white; border-radius: 10px; padding: 20px; border: 1px solid #eee; cursor: pointer;">
+                        <p style="margin: 0 0 8px 0; font-size: 11px; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 1px;">Voyage</p>
+                        <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #1a1a1a; line-height: 1.4; font-weight: 700;">
+                            ${lang === "fa" ? "راهنمای کامل فرودگاه شارل دوگل (CDG)" : "Guide complet de l'aéroport CDG"}
+                        </h3>
+                        <p style="margin: 0; font-size: 12px; color: #8a8a8a;">${lang === "fa" ? "۶ دقیقه مطالعه" : "6 min de lecture"}</p>
+                    </article>
+                </div>
+            </div>
+            
         </div>
-    `;
+    </div>`;
     
     app.innerHTML = html;
 }
