@@ -150,6 +150,7 @@ async function showHome() {
     const lang = localStorage.getItem("language") || "fr";
     const level = getPlacementResult() || "A1";
 
+    // بارگذاری داده‌ها
     let grammarLessons = [];
     try { await loadGrammar(level); grammarLessons = getGrammar(level).slice(0, 4); } catch (e) {}
     let travelLessons = [];
@@ -158,40 +159,106 @@ async function showHome() {
     try { const r = await fetch("./data/daily/lessons.json"); dailyLessons = (await r.json()).slice(0, 4); } catch (e) {}
 
     let html = renderNavbar();
-    html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
-        <h1 style="font-size:22px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">${lang === "fa" ? "سلام، ادامه بده 👋" : "Bonjour, continuez 👋"}</h1>
-        <p style="font-size:13px;color:#777;margin:0 0 30px;">${level} · ${lang === "fa" ? "سطح فعلی" : "Niveau actuel"}</p>
 
+    html += `<div style="max-width:900px;margin:0 auto;padding:28px 20px 60px;">
+
+        <!-- 🦖 سلام + دایناسور بزرگ -->
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:6px;">
+            <span style="font-size:42px;line-height:1;">🦖</span>
+            <h1 style="font-size:26px;font-weight:700;color:#1a1a1a;margin:0;">${lang === "fa" ? "سلام، ادامه بده!" : "Bonjour, continuez !"}</h1>
+        </div>
+        <p style="font-size:15px;color:#777;margin:0 0 32px;">${level} · ${lang === "fa" ? "سطح فعلی شما" : "Votre niveau actuel"}</p>
+
+        <!-- ═══════════════════════════ -->
+        <!-- 📰 بخش بالایی: اخبار و نکات -->
+        <!-- ═══════════════════════════ -->
+        <div style="margin-bottom:40px;">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;border-bottom:1px solid #ddd;padding-bottom:8px;">
+                <h2 style="font-size:17px;font-weight:700;color:#1a1a1a;margin:0;">${lang === "fa" ? "📰 اخبار و نکات" : "📰 Actualités & conseils"}</h2>
+            </div>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;">
+                <!-- مقاله ۱ -->
+                <article style="background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:16px;cursor:pointer;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#e0e0e0'">
+                    <p style="font-size:11px;font-weight:700;color:#087F5B;text-transform:uppercase;letter-spacing:1px;margin:0 0 8px;">GRAMMAIRE</p>
+                    <h3 style="font-size:15px;font-weight:600;color:#1a1a1a;margin:0 0 8px;line-height:1.4;">${lang === "fa" ? "چگونه passé composé را درست استفاده کنیم؟" : "Comment bien utiliser le passé composé ?"}</h3>
+                    <p style="font-size:12px;color:#888;margin:0;">${lang === "fa" ? "۵ دقیقه مطالعه" : "5 min de lecture"}</p>
+                </article>
+
+                <!-- مقاله ۲ -->
+                <article style="background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:16px;cursor:pointer;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#e0e0e0'">
+                    <p style="font-size:11px;font-weight:700;color:#d97706;text-transform:uppercase;letter-spacing:1px;margin:0 0 8px;">VIE QUOTIDIENNE</p>
+                    <h3 style="font-size:15px;font-weight:600;color:#1a1a1a;margin:0 0 8px;line-height:1.4;">${lang === "fa" ? "۱۰ عبارت ضروری برای باز کردن حساب بانکی" : "10 expressions pour ouvrir un compte bancaire"}</h3>
+                    <p style="font-size:12px;color:#888;margin:0;">${lang === "fa" ? "۴ دقیقه مطالعه" : "4 min de lecture"}</p>
+                </article>
+
+                <!-- مقاله ۳ -->
+                <article style="background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:16px;cursor:pointer;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#e0e0e0'">
+                    <p style="font-size:11px;font-weight:700;color:#2563eb;text-transform:uppercase;letter-spacing:1px;margin:0 0 8px;">VOYAGE</p>
+                    <h3 style="font-size:15px;font-weight:600;color:#1a1a1a;margin:0 0 8px;line-height:1.4;">${lang === "fa" ? "راهنمای کامل فرودگاه شارل دوگل" : "Guide complet de l'aéroport CDG"}</h3>
+                    <p style="font-size:12px;color:#888;margin:0;">${lang === "fa" ? "۶ دقیقه مطالعه" : "6 min de lecture"}</p>
+                </article>
+
+                <!-- فال / نکته روز -->
+                <article style="background:#fffbeb;border:1px solid #fde68a;border-radius:6px;padding:16px;cursor:pointer;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#f59e0b'" onmouseout="this.style.borderColor='#fde68a'">
+                    <p style="font-size:11px;font-weight:700;color:#b45309;text-transform:uppercase;letter-spacing:1px;margin:0 0 8px;">✨ ${lang === "fa" ? "نکته روز" : "Astuce du jour"}</p>
+                    <h3 style="font-size:15px;font-weight:600;color:#1a1a1a;margin:0 0 8px;line-height:1.4;">${lang === "fa" ? "در فرانسه همیشه اول Bonjour بگویید!" : "En France, dites toujours Bonjour en premier !"}</h3>
+                    <p style="font-size:12px;color:#888;margin:0;">${lang === "fa" ? "ادب فرانسوی" : "Politesse française"}</p>
+                </article>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════ -->
+        <!-- 📚 بخش پایینی: درس‌ها       -->
+        <!-- ═══════════════════════════ -->
+
+        <!-- گرامر -->
         <div style="margin-bottom:35px;">
-            ${sectionHeader(lang === "fa" ? "گرامر" : "Grammaire", "switchSection('grammar')", lang)}
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;border-bottom:1px solid #ddd;padding-bottom:8px;">
+                <h2 style="font-size:17px;font-weight:700;color:#1a1a1a;margin:0;">${lang === "fa" ? "📚 گرامر" : "📚 Grammaire"}</h2>
+                <span onclick="switchSection('grammar')" style="font-size:12px;color:#087F5B;cursor:pointer;font-weight:600;">${lang === "fa" ? "همه →" : "Tout →"}</span>
+            </div>
             <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;">
                 ${grammarLessons.map(l => simpleCard(l.icon || "📗", lang === "fa" ? l.title_fa : l.title, `${l.level} · ${l.estimatedTime} min`, `showGrammarLesson('${l.id}')`)).join("")}
             </div>
         </div>
 
+        <!-- روزمره -->
         <div style="margin-bottom:35px;">
-            ${sectionHeader(lang === "fa" ? "زندگی روزمره" : "Vie quotidienne", "switchSection('daily')", lang)}
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;border-bottom:1px solid #ddd;padding-bottom:8px;">
+                <h2 style="font-size:17px;font-weight:700;color:#1a1a1a;margin:0;">${lang === "fa" ? "🏘️ زندگی روزمره" : "🏘️ Vie quotidienne"}</h2>
+                <span onclick="switchSection('daily')" style="font-size:12px;color:#087F5B;cursor:pointer;font-weight:600;">${lang === "fa" ? "همه →" : "Tout →"}</span>
+            </div>
             <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;">
                 ${dailyLessons.map(l => simpleCard(l.icon || "🏠", lang === "fa" ? l.title_fa : l.title, `${l.estimatedTime} min`, `showDailyLesson('${l.id}')`)).join("")}
             </div>
         </div>
 
+        <!-- سفر -->
         <div style="margin-bottom:35px;">
-            ${sectionHeader(lang === "fa" ? "سفر" : "Voyage", "switchSection('travel')", lang)}
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;border-bottom:1px solid #ddd;padding-bottom:8px;">
+                <h2 style="font-size:17px;font-weight:700;color:#1a1a1a;margin:0;">${lang === "fa" ? "✈️ سفر" : "✈️ Voyage"}</h2>
+                <span onclick="switchSection('travel')" style="font-size:12px;color:#087F5B;cursor:pointer;font-weight:600;">${lang === "fa" ? "همه →" : "Tout →"}</span>
+            </div>
             <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;">
                 ${travelLessons.map(l => simpleCard(l.icon || "✈️", lang === "fa" ? l.title_fa : l.title, `${l.estimatedTime} min`, `showTravelLesson('${l.id}')`)).join("")}
             </div>
         </div>
 
+        <!-- بازی و تمرین -->
         <div style="margin-bottom:35px;">
-            ${sectionHeader(lang === "fa" ? "بازی و تمرین" : "Jeux & exercices", "", lang)}
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;border-bottom:1px solid #ddd;padding-bottom:8px;">
+                <h2 style="font-size:17px;font-weight:700;color:#1a1a1a;margin:0;">${lang === "fa" ? "🎮 بازی و تمرین" : "🎮 Jeux & exercices"}</h2>
+            </div>
             <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;">
                 ${simpleCard("🎮", lang === "fa" ? "بازی‌ها" : "Jeux", lang === "fa" ? "یادگیری با سرگرمی" : "Apprendre en jouant", "switchSection('games')")}
                 ${simpleCard("📝", lang === "fa" ? "تمرین‌ها" : "Exercices", lang === "fa" ? "تثبیت یادگیری" : "Consolider", "switchSection('exercises')")}
                 ${simpleCard("📊", lang === "fa" ? "تعیین سطح" : "Test", lang === "fa" ? "سطح خود را بسنجید" : "Évaluer votre niveau", "showPlacementChoice()")}
             </div>
         </div>
+
     </div>`;
+
     app.innerHTML = html;
 }
 
