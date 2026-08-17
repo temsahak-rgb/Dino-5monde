@@ -1,0 +1,81 @@
+{
+  "id": "A1-G-017",
+  "level": "A1",
+  "title": "L'heure",
+  "icon": "🕒",
+  "estimatedTime": 10,
+  "sections": [
+    {
+      "id": "A1-G-017-1",
+      "type": "lesson",
+      "title": "Dire l'heure",
+      "content": "Pour dire l'heure, on utilise la structure **Il est** + nombre + **heure(s)**.\n\n⚠️ **Attention** : le verbe **être** est toujours au **singulier** (**il est**), même pour plusieurs heures.",
+      "table": {
+        "headers": ["Heure", "Forme"],
+        "rows": [
+          ["8:00", "**Il est** huit heures."],
+          ["8:05", "**Il est** huit heures cinq."],
+          ["8:15", "**Il est** huit heures **et quart**."],
+          ["8:30", "**Il est** huit heures **et demie**."],
+          ["8:45", "**Il est** neuf heures **moins le quart**."],
+          ["8:50", "**Il est** neuf heures **moins dix**."]
+        ]
+      },
+      "examples": [
+        {"fr": "**Il est** une heure. (1h00)"},
+        {"fr": "**Il est** trois heures vingt. (3h20)"},
+        {"fr": "**Il est** midi et quart. (12h15)"},
+        {"fr": "**Il est** minuit et demie. (00h30)"}
+      ],
+      "note": "⚠️ **Très important** :\n\n- **et** s'utilise **uniquement** avec **quart** et **demie**\n- ❌ ~~huit heures et vingt~~ → huit heures vingt ✅\n- ✅ huit heures **et** quart\n- ✅ huit heures **et** demie"
+    },
+    {
+      "id": "A1-G-017-2",
+      "type": "lesson",
+      "title": "Les formes avec moins",
+      "content": "Pour les minutes après **30**, on utilise souvent **moins** (sauf dans les horaires officiels).\n\nOn exprime le temps qui reste avant l'heure suivante.",
+      "table": {
+        "headers": ["Heure", "Forme courante", "Forme officielle"],
+        "rows": [
+          ["8:35", "neuf heures **moins vingt-cinq**", "huit heures trente-cinq"],
+          ["8:40", "neuf heures **moins vingt**", "huit heures quarante"],
+          ["8:45", "neuf heures **moins le quart**", "huit heures quarante-cinq"],
+          ["8:50", "neuf heures **moins dix**", "huit heures cinquante"],
+          ["8:55", "neuf heures **moins cinq**", "huit heures cinquante-cinq"]
+        ]
+      },
+      "examples": [
+        {"fr": "Le train part à neuf heures **moins le quart**."},
+        {"fr": "Le film commence à huit heures **moins vingt**."},
+        {"fr": "Il est midi **moins cinq**."},
+        {"fr": "Nous nous retrouvons à sept heures **moins dix**."}
+      ],
+      "note": "⚠️ **Attention** :\n\n- Dans la langue **courante** : utilisez **moins** (neuf heures moins vingt)\n- Dans les horaires **officiels** (trains, avions) : utilisez les chiffres (huit heures quarante)\n\n✅ Le train part à **16h40** (seize heures quarante)\n✅ On se retrouve à **cinq heures moins vingt**"
+    },
+    {
+      "id": "A1-G-017-3",
+      "type": "lesson",
+      "title": "Midi, minuit et les moments de la journée",
+      "content": "**Midi** (12h00) et **minuit** (00h00) remplacent les chiffres.\n\nPour préciser le moment de la journée, on ajoute **du matin**, **de l'après-midi** ou **du soir**.",
+      "table": {
+        "headers": ["Heure", "Forme", "Moment de la journée"],
+        "rows": [
+          ["12:00", "**midi**", "du matin / du soir"],
+          ["00:00", "**minuit**", ""],
+          ["2:00", "deux heures", "**du matin**"],
+          ["14:00", "deux heures", "**de l'après-midi**"],
+          ["20:00", "huit heures", "**du soir**"]
+        ]
+      },
+      "examples": [
+        {"fr": "**Il est midi** et quart. (12h15)"},
+        {"fr": "**Il est minuit** et demie. (00h30)"},
+        {"fr": "Je me lève à six heures **du matin**."},
+        {"fr": "Nous déjeunons à une heure **de l'après-midi**."},
+        {"fr": "Le concert commence à huit heures **du soir**."},
+        {"fr": "Il est deux heures **du matin**, je dois dormir."}
+      ],
+      "note": "⚠️ **Règles importantes** :\n\n- **Pas d'article** devant l'heure : `Il est cinq heures.` ✅\n- **Une heure** (et non ~~un heure~~) : `Il est une heure.` ✅\n- **Quelle heure est-il ?** = « ساعت چنده؟ »\n- **Il est quelle heure ?** = « ساعت چنده؟ » (plus familier)"
+    }
+  ]
+}

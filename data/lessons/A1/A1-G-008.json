@@ -1,0 +1,74 @@
+{
+  "id": "A1-G-008",
+  "level": "A1",
+  "title": "L'interrogation",
+  "icon": "❓",
+  "estimatedTime": 12,
+  "sections": [
+    {
+      "id": "A1-G-008-1",
+      "type": "lesson",
+      "title": "Les trois constructions interrogatives",
+      "content": "En français, il existe **trois façons** de poser une question. Chaque construction a son propre niveau de formalité.",
+      "table": {
+        "headers": ["Construction", "Formalité", "Structure", "Exemple"],
+        "rows": [
+          ["**Intonation**", "Familier (oral)", "Sujet + verbe + ?", "Tu es d'accord ?"],
+          ["**Est-ce que**", "Standard", "**Est-ce que** + sujet + verbe", "**Est-ce que** tu es d'accord ?"],
+          ["**Inversion**", "Formel (écrit)", "Verbe + sujet", "Es-tu d'accord ?"]
+        ]
+      },
+      "examples": [
+        {"fr": "Tu habites à Paris ? (intonation)"},
+        {"fr": "**Est-ce que** tu habites à Paris ? (standard)"},
+        {"fr": "Habites-tu à Paris ? (inversion)"},
+        {"fr": "**Est-ce qu'**ils sont canadiens ? (devant voyelle)"},
+        {"fr": "Sont-ils canadiens ? (inversion)"}
+      ],
+      "note": "⚠️ Devant une **voyelle** ou un **h muet**, **est-ce que** devient **est-ce qu'** :\n\n- **Est-ce qu'**il est français ?\n- **Est-ce qu'**elle habite ici ?"
+    },
+    {
+      "id": "A1-G-008-2",
+      "type": "lesson",
+      "title": "L'inversion : règles particulières",
+      "content": "L'inversion est la construction la plus **formelle**. Elle a quelques règles spécifiques.",
+      "table": {
+        "headers": ["Cas", "Règle", "Exemple"],
+        "rows": [
+          ["**Verbe en -e + il/elle/on**", "Ajouter **-t-** euphonique", "Parle-**t**-il français ?"],
+          ["**Nom + verbe**", "Nom + verbe + pronom", "Marie vient-**elle** ?"],
+          ["**Temps composés**", "Auxiliaire + sujet", "Est-il parti ? A-t-elle fini ?"]
+        ]
+      },
+      "examples": [
+        {"fr": "Parle-**t**-il espagnol ?"},
+        {"fr": "A-**t**-elle une voiture ?"},
+        {"fr": "Va-**t**-il à la piscine ce soir ?"},
+        {"fr": "Le professeur parle-**t**-il lentement ?"},
+        {"fr": "Marie vient-**elle** avec nous ?"}
+      ],
+      "note": "⚠️ **Très important** : le **-t-** euphonique s'ajoute **uniquement** quand le verbe se termine par une **voyelle** et que le pronom commence par une **voyelle**.\n\n✅ Parle-**t**-il ? (parle se termine par -e)\n❌ ~~Prend-t-il ?~~ → Prend-il ? (prend se termine par -d)"
+    },
+    {
+      "id": "A1-G-008-3",
+      "type": "lesson",
+      "title": "La confirmation et l'interro-négative",
+      "content": "**n'est-ce pas ?** sert à demander une confirmation à la fin d'une question.\n\nL'interro-négative suit les **trois mêmes constructions** que l'interrogation positive.",
+      "table": {
+        "headers": ["Construction", "Forme affirmative", "Forme négative"],
+        "rows": [
+          ["**Intonation**", "Il est en classe ?", "Il n'est pas en classe ?"],
+          ["**Est-ce que**", "**Est-ce qu'**il est en classe ?", "**Est-ce qu'**il n'est pas en classe ?"],
+          ["**Inversion**", "Est-il en classe ?", "**N'**est-il **pas** en classe ?"]
+        ]
+      },
+      "examples": [
+        {"fr": "Tu habites à Lyon, **n'est-ce pas** ?"},
+        {"fr": "Il n'est pas en classe ?"},
+        {"fr": "**Est-ce qu'**il n'est pas en classe ?"},
+        {"fr": "**N'**est-il **pas** en classe ?"}
+      ],
+      "note": "⚠️ **Très important** : pour répondre **positivement** à une question **négative**, on utilise **si** (et non **oui**).\n\n- Il ne vient pas ce soir ?\n- **Si**, il vient. ✅ (réponse positive)\n- **Non**, il ne vient pas. ✅ (réponse négative)\n\n❌ ~~Oui, il vient.~~ (incorrect après une question négative)"
+    }
+  ]
+}

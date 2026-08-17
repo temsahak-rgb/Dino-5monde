@@ -1,0 +1,111 @@
+{
+  "id": "A1-G-003",
+  "level": "A1",
+  "title": "Les numéraux cardinaux",
+  "icon": "🔢",
+  "estimatedTime": 15,
+  "sections": [
+    {
+      "id": "A1-G-003-1",
+      "type": "lesson",
+      "title": "Les nombres de 0 à 19",
+      "content": "Les numéraux cardinaux indiquent une **quantité**. Les nombres de 0 à 16 sont des mots simples. À partir de 17, on utilise **dix-** + le chiffre.",
+      "table": {
+        "headers": ["Chiffre", "Forme", "Chiffre", "Forme"],
+        "rows": [
+          ["0", "**zéro**", "10", "**dix**"],
+          ["1", "**un**", "11", "**onze**"],
+          ["2", "**deux**", "12", "**douze**"],
+          ["3", "**trois**", "13", "**treize**"],
+          ["4", "**quatre**", "14", "**quatorze**"],
+          ["5", "**cinq**", "15", "**quinze**"],
+          ["6", "**six**", "16", "**seize**"],
+          ["7", "**sept**", "17", "**dix-sept**"],
+          ["8", "**huit**", "18", "**dix-huit**"],
+          ["9", "**neuf**", "19", "**dix-neuf**"]
+        ]
+      },
+      "examples": [
+        {"fr": "J'ai **vingt-trois** ans."},
+        {"fr": "Il y a **quinze** étudiants dans la classe."},
+        {"fr": "Le magasin ferme à **dix-huit** heures."}
+      ]
+    },
+    {
+      "id": "A1-G-003-2",
+      "type": "lesson",
+      "title": "Les nombres de 20 à 99",
+      "content": "⚠️ **Point très important** : en français, les nombres **70**, **80** et **90** sont des **combinaisons**.\n\n- **70** = 60 + 10 → **soixante-dix**\n- **80** = 4 × 20 → **quatre-vingts**\n- **90** = 80 + 10 → **quatre-vingt-dix**",
+      "table": {
+        "headers": ["Chiffre", "Forme", "Chiffre", "Forme"],
+        "rows": [
+          ["20", "**vingt**", "60", "**soixante**"],
+          ["21", "**vingt et un**", "70", "**soixante-dix**"],
+          ["22", "**vingt-deux**", "71", "**soixante et onze**"],
+          ["30", "**trente**", "72", "**soixante-douze**"],
+          ["31", "**trente et un**", "80", "**quatre-vingts**"],
+          ["40", "**quarante**", "81", "**quatre-vingt-un**"],
+          ["50", "**cinquante**", "90", "**quatre-vingt-dix**"],
+          ["", "", "91", "**quatre-vingt-onze**"]
+        ]
+      },
+      "examples": [
+        {"fr": "Elle a **soixante-dix** ans."},
+        {"fr": "Il y a **quatre-vingts** personnes dans la salle."},
+        {"fr": "Le numéro **quatre-vingt-un** est libre."},
+        {"fr": "Nous sommes **vingt-deux** dans le groupe."}
+      ],
+      "note": "⚠️ **Attention** :\n\n- **21, 31, 41, 51, 61, 71** → avec **et** : vingt **et** un\n- **81, 91** → **sans et** : quatre-vingt-un, quatre-vingt-onze\n\n✅ vingt **et** un\n❌ ~~quatre-vingt et un~~"
+    },
+    {
+      "id": "A1-G-003-3",
+      "type": "lesson",
+      "title": "Les nombres à partir de 100",
+      "content": "À partir de 100, les nombres se construisent en **ajoutant** les chiffres.",
+      "table": {
+        "headers": ["Chiffre", "Forme", "Chiffre", "Forme"],
+        "rows": [
+          ["100", "**cent**", "1 000", "**mille**"],
+          ["101", "**cent un**", "1 100", "**mille cent**"],
+          ["200", "**deux cents**", "1 200", "**mille deux cents**"],
+          ["201", "**deux cent un**", "2 000", "**deux mille**"],
+          ["", "", "1 000 000", "**un million**"],
+          ["", "", "1 000 000 000", "**un milliard**"]
+        ]
+      },
+      "examples": [
+        {"fr": "Il y a **deux cents** étudiants dans cette université."},
+        {"fr": "J'ai lu **deux cent un** pages de ce roman."},
+        {"fr": "Cette ville compte **un million** d'habitants."},
+        {"fr": "Le projet coûte **deux milliards** d'euros."}
+      ]
+    },
+    {
+      "id": "A1-G-003-4",
+      "type": "lesson",
+      "title": "Les règles de grammaire importantes",
+      "content": "Voici les règles essentielles à respecter avec les numéraux cardinaux.",
+      "table": {
+        "headers": ["Règle", "Exemple correct", "Explication"],
+        "rows": [
+          ["**vingt / cent** prennent **-s**", "**trois cents**, **quatre-vingts**", "Quand ils sont multipliés et **sans** autre nombre après"],
+          ["**vingt / cent** sans **-s**", "**trois cent deux**, **quatre-vingt cinq**", "Quand un autre nombre suit"],
+          ["**mille** toujours **invariable**", "**cinq mille** euros", "Jamais de -s"],
+          ["**million / milliard** prennent **-s**", "**quatre millions** d'habitants", "Ce sont des noms"],
+          ["**Pas d'élision** devant un, huit, onze", "**le huit** septembre", "Le **ne** s'élide jamais"],
+          ["**Pas de liaison** avec les devant huit, onze", "**les onze** exercices", "Pas de liaison sonore"]
+        ]
+      },
+      "examples": [
+        {"fr": "**Trois cents** personnes sont venues. (200 × 3)"},
+        {"fr": "**Trois cent deux** personnes sont venues. (302)"},
+        {"fr": "**Quatre-vingts** euros. (80)"},
+        {"fr": "**Quatre-vingt-cinq** euros. (85)"},
+        {"fr": "**Cinq mille** euros. (et non ~~cinq milles~~)"},
+        {"fr": "**Le huit** septembre. (et non ~~l'huit~~)"},
+        {"fr": "**Les onze** exercices. (pas de liaison)"}
+      ],
+      "note": "⚠️ **Résumé des accords** :\n\n- **vingt** et **cent** prennent **-s** uniquement quand ils sont **multipliés** et **sans autre nombre après**\n- **mille** est **toujours invariable**\n- **million** et **milliard** sont des **noms** et prennent **-s**\n\n✅ deux **cents** / deux **cent** un\n✅ quatre-**vingts** / quatre-**vingt**-cinq\n✅ cinq **mille** / ~~cinq milles~~ ❌"
+    }
+  ]
+}
