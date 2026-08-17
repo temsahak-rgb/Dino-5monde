@@ -111,6 +111,7 @@ async function switchSection(section) {
     switch (section) {
         case 'home': showHome(); break;
         case 'grammar': showGrammarPage(); break;
+        case 'vocabulary': showVocabularyPage(); break;
         case 'daily': showDailyHome(); break;
         case 'travel': showTravelHome(); break;
         case 'games': showGamesPage(); break;
