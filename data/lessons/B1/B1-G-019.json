@@ -1,0 +1,88 @@
+{
+  "id": "B1-G-019",
+  "level": "B1",
+  "title": "Les pronoms personnels groupés (COD + COI)",
+  "icon": "🎯",
+  "estimatedTime": 15,
+  "sections": [
+    {
+      "id": "B1-G-019-1",
+      "type": "lesson",
+      "title": "Phrase affirmative et impératif négatif",
+      "content": "Quand un **COD** et un **COI** apparaissent ensemble dans la même phrase, leur ordre dépend de la **personne** du COI.\n\n📌 **Règle générale** (phrase affirmative et impératif négatif) :\n\n**COI** (`me` / `te` / `nous` / `vous`) → **COD** (`le` / `la` / `les`)\n\n⚠️ **Exception importante** : `lui` et `leur` se placent **après** le COD.\n\n**COD** (`le` / `la` / `les`) → **COI** (`lui` / `leur`)\n\n📌 L'**impératif négatif** suit le même ordre que la phrase affirmative :",
+      "table": {
+        "headers": ["COI", "COD", "Exemple"],
+        "rows": [
+          ["**me**", "le / la / les", "Tu **me le** conseilles."],
+          ["**te**", "le / la / les", "Je **te le** conseille."],
+          ["**nous**", "le / la / les", "Vous **nous le** conseillez."],
+          ["**vous**", "le / la / les", "Nous **vous le** conseillons."],
+          ["le / la / les", "**lui**", "Je **le lui** conseille."],
+          ["le / la / les", "**leur**", "Je **la leur** conseille."]
+        ]
+      },
+      "examples": [
+        {"fr": "Tu **me le** conseilles."},
+        {"fr": "Je **te la** donne."},
+        {"fr": "Vous **nous les** envoyez."},
+        {"fr": "Je **le lui** conseille."},
+        {"fr": "Je **les lui** envoie."},
+        {"fr": "**Ne me le** conseille pas !"},
+        {"fr": "**Ne le lui** envoie pas !"},
+        {"fr": "**Ne nous l'** achetez pas !"}
+      ],
+      "note": "⚠️ **Note essentielle** :\n\n`lui` et `leur` sont les **seuls** COI qui se placent **après** le COD :\n✅ *Je **le lui** dis.*\n✅ *Je **la leur** donne.*\n❌ ~~Je lui le dis.~~ ❌ ~~Je leur la donne.~~\n\n📌 **Impératif négatif** = même ordre que la phrase affirmative :\n*Ne **me le** donne pas !*\n*Ne **le lui** envoie pas !*"
+    },
+    {
+      "id": "B1-G-019-2",
+      "type": "lesson",
+      "title": "L'impératif affirmatif",
+      "content": "À l'**impératif affirmatif**, l'ordre est **inversé** :\n\n**COD** (`le` / `la` / `les`) → **COI** (`moi` / `toi` / `nous` / `vous` / `lui` / `leur`)\n\n📌 Deux changements importants :\n\n1. `me` → **`moi`** | `te` → **`toi`**\n2. Les pronoms sont reliés par des **traits d'union**\n\n⚠️ Cet ordre est **différent** de la phrase affirmative normale :",
+      "table": {
+        "headers": ["Phrase affirmative", "Impératif affirmatif"],
+        "rows": [
+          ["Tu **me le** donnes.", "Donne-**le-moi** !"],
+          ["Tu **te l'** achètes.", "Achète-**le-toi** !"],
+          ["Vous **nous la** communiquez.", "Communiquez-**la-nous** !"],
+          ["Vous **nous les** achetez.", "Achetez-**les-nous** !"],
+          ["Tu **le lui** envoies.", "Envoie-**le-lui** !"]
+        ]
+      },
+      "examples": [
+        {"fr": "Explique-**le-moi** !"},
+        {"fr": "Envoie-**la-lui** !"},
+        {"fr": "Achetez-**les-vous** !"},
+        {"fr": "Achète-**le-toi** !"},
+        {"fr": "Communique-**la-nous** !"},
+        {"fr": "Achetez-**les-nous** !"}
+      ],
+      "note": "⚠️ **Transformations obligatoires à l'impératif affirmatif** :\n\n- `me` → **`moi`** : *Donne-**le-moi** !*\n- `te` → **`toi`** : *Achète-**le-toi** !*\n\n📌 Traits d'union **obligatoires** entre tous les pronoms :\n✅ *Donne-**le-moi** !*\n❌ ~~Donne le moi !~~\n\n📌 Comparaison :\n- Phrase normale : *Tu **me le** donnes.* (COI → COD)\n- Impératif affirmatif : *Donne-**le-moi** !* (COD → COI)"
+    },
+    {
+      "id": "B1-G-019-3",
+      "type": "lesson",
+      "title": "Place de en et y — Récapitulatif",
+      "content": "Les pronoms `en` et `y` se placent toujours **à la fin** du groupe pronominal.\n\n📌 **Ordre avec `en` / `y`** :\n\n- Phrase affirmative : sujet + verbe + **COD/COI** + `en` / `y`\n- Impératif affirmatif : verbe + **COD** + **COI** + `en` / `y`\n\n📌 Récapitulatif complet des ordres :",
+      "table": {
+        "headers": ["Contexte", "Ordre", "Exemple"],
+        "rows": [
+          ["Phrase affirmative (me/te/nous/vous)", "**COI** → **COD**", "Tu **me le** donnes."],
+          ["Phrase affirmative (lui/leur)", "**COD** → **COI**", "Je **le lui** dis."],
+          ["Impératif négatif", "**COI** → **COD**", "Ne **me le** donne pas !"],
+          ["Impératif affirmatif", "**COD** → **COI**", "Donne-**le-moi** !"],
+          ["Avec `en` / `y`", "pronom + **en** / **y**", "Tu **m'en** donnes."],
+          ["Impératif + `en` / `y`", "verbe + COD + COI + **en** / **y**", "Envoie-**m'en** trois !"]
+        ]
+      },
+      "examples": [
+        {"fr": "Nous vous **en** parlerons."},
+        {"fr": "Tu **m'y** accompagnes ?"},
+        {"fr": "Envoie-**m'en** trois !"},
+        {"fr": "Ne **m'en** donne pas !"},
+        {"fr": "Il **y en** a beaucoup."},
+        {"fr": "Donne-**m'en** un peu."}
+      ],
+      "note": "💡 **Points essentiels à retenir** :\n\n1. `me` / `te` / `nous` / `vous` (COI) → **avant** le COD\n2. `lui` / `leur` (COI) → **après** le COD ⚠️\n3. À l'impératif affirmatif : ordre **inversé** (COD → COI)\n4. `me` → `moi`, `te` → `toi` à l'impératif affirmatif\n5. `en` / `y` → toujours **en dernier**\n\n⚠️ **Ne pas confondre** :\n- *Tu **me le** donnes.* (phrase normale)\n- *Donne-**le-moi** !* (impératif affirmatif)\n- *Ne **me le** donne pas !* (impératif négatif = même ordre que phrase normale)"
+    }
+  ]
+}

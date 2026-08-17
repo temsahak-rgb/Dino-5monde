@@ -1,0 +1,89 @@
+{
+  "id": "B1-G-030",
+  "level": "B1",
+  "title": "Le discours indirect (1) : transformations syntaxiques et concordance des temps",
+  "icon": "🗣️",
+  "estimatedTime": 20,
+  "sections": [
+    {
+      "id": "B1-G-030-1",
+      "type": "lesson",
+      "title": "Définition et transformations syntaxiques",
+      "content": "📌 **Discours direct** :\n\nLes paroles sont rapportées **exactement** comme prononcées, entre guillemets.\n\n📌 **Discours indirect** :\n\nLes paroles sont rapportées par un narrateur, sous forme de **proposition subordonnée**.\n\n📌 **Transformations syntaxiques** :\n\n**1. Subordonnées complétives** introduites par `que`, `de`, `à` :\n\n- `que` → pour rapporter une affirmation\n- `de` → pour rapporter un conseil, un ordre, une demande\n- `à` → pour rapporter une invitation\n\n**2. Interrogatives indirectes** :\n\n→ Pour rapporter une question.",
+      "table": {
+        "headers": ["Type", "Structure", "Exemple"],
+        "rows": [
+          ["**Affirmation**", "**que** + subordonnée", "Il a dit **qu**'il avait des choses à annoncer."],
+          ["**Conseil / Ordre**", "**de** + infinitif", "Elle m'a conseillé **de** me reposer."],
+          ["**Invitation**", "**à** + infinitif", "Ils nous ont invités **à** dîner chez eux."],
+          ["**Question**", "interrogative indirecte", "Il veut savoir **ce que** nous pensons."]
+        ]
+      },
+      "examples": [
+        {"fr": "**Discours direct** : Elle dit : « Je suis fatiguée. »"},
+        {"fr": "**Discours indirect** : Elle dit **qu'** elle est fatiguée."},
+        {"fr": "Il a communiqué **qu**'il avait des choses importantes à annoncer."},
+        {"fr": "Elle m'a conseillé **de** me reposer."},
+        {"fr": "Ils nous ont invités **à** dîner chez eux."},
+        {"fr": "Il veut savoir **ce que** nous pensons."},
+        {"fr": "Je me demande **où** elle habite."},
+        {"fr": "Il ignore **qui** viendra."}
+      ],
+      "note": "📌 **Choix de la conjonction** :\n\n- **Affirmation** → `que`\n✅ *Il a dit **qu**'il viendrait.*\n\n- **Ordre / Conseil / Demande** → `de` + infinitif\n✅ *Elle m'a dit **de** partir.*\n✅ *Il m'a demandé **de** l'aider.*\n\n- **Invitation** → `à` + infinitif\n✅ *Ils nous ont invités **à** venir.*\n\n⚠️ **Ne pas confondre** :\n\n- *Il m'a dit **de** venir.* (ordre/demande)\n- *Il m'a invité **à** venir.* (invitation)\n\n📌 **Interrogatives indirectes** :\n\nLes questions directes se transforment en interrogatives indirectes :\n- `est-ce que` → `si`\n- `qu'est-ce que` → `ce que`\n- `qu'est-ce qui` → `ce qui`\n- `quel` / `où` / `quand` / `comment` / `pourquoi` → identiques"
+    },
+    {
+      "id": "B1-G-030-2",
+      "type": "lesson",
+      "title": "Concordance des temps",
+      "content": "Les modifications des temps dépendent du **temps du verbe introducteur**.\n\n📌 **1. Verbe introducteur au présent ou futur** :\n\n→ **Pas de changement** des temps dans la subordonnée.\n\n📌 **2. Verbe introducteur au passé** :\n\n→ Le temps de la subordonnée **recule** dans le passé.\n\n📌 **3. Impératif → infinitif** :\n\n→ Quel que soit le temps du verbe introducteur, l'impératif se transforme en **`de` + infinitif**.",
+      "table": {
+        "headers": ["Discours direct", "Discours indirect (verbe au passé)", "Exemple"],
+        "rows": [
+          ["**présent**", "**imparfait**", "Elle affirmait : « Je **suis** désolée. » → Elle affirmait qu'elle **était** désolée."],
+          ["**passé composé** / **passé simple**", "**plus-que-parfait**", "Il communiqua : « J'**ai compris**. » → Il communiqua qu'il **avait compris**."],
+          ["**imparfait**", "**imparfait** *(pas de changement)*", "Je lui ai dit : « J'**avais** un cousin. » → Je lui ai dit que j'**avais** un cousin."],
+          ["**futur**", "**conditionnel présent**", "Il a déclaré : « J'**arriverai**. » → Il a déclaré qu'il **arriverait**."],
+          ["**futur antérieur**", "**conditionnel passé**", "Il déclara : « J'**aurai fini**. » → Il déclara qu'il **aurait fini**."],
+          ["**conditionnel**", "**conditionnel** *(pas de changement)*", "Tu as dit : « Je **voudrais** venir. » → Tu as dit que tu **voudrais** venir."],
+          ["**impératif**", "**de + infinitif**", "Elle ordonne : « **Fermez** la porte ! » → Elle ordonne **de fermer** la porte."]
+        ]
+      },
+      "examples": [
+        {"fr": "Elle **répète** : « Je **suis** sûre. » → Elle **répète** qu'elle **est** sûre. *(pas de changement)*"},
+        {"fr": "Elle **répétera** : « Je **suis** sûre. » → Elle **répétera** qu'elle **est** sûre. *(pas de changement)*"},
+        {"fr": "Elle **affirmait** : « Je **suis** désolée. » → Elle **affirmait** qu'elle **était** désolée."},
+        {"fr": "Il **communiqua** : « J'**ai compris**. » → Il **communiqua** qu'il **avait compris**."},
+        {"fr": "Il **a déclaré** : « J'**arriverai** demain. » → Il **a déclaré** qu'il **arriverait** le lendemain."},
+        {"fr": "Elle **ordonne** : « **Fermez** la porte ! » → Elle **ordonne** **de fermer** la porte."},
+        {"fr": "Elle **ordonna** : « **Fermez** la porte ! » → Elle **ordonna** **de fermer** la porte."}
+      ],
+      "note": "⚠️ **Règle essentielle** :\n\n- Verbe introducteur au **présent/futur** → **pas de changement**\n- Verbe introducteur au **passé** → temps **recule**\n\n📌 **Transformations des temps** :\n\n| Direct | Indirect (verbe au passé) |\n|---|---|\n| présent | imparfait |\n| passé composé | plus-que-parfait |\n| futur | conditionnel présent |\n| futur antérieur | conditionnel passé |\n| impératif | de + infinitif |\n\n⚠️ **Temps qui ne changent pas** :\n\n- **imparfait** → imparfait\n- **conditionnel** → conditionnel\n\n📌 **Impératif** :\n\n✅ *Elle ordonne : « Fermez la porte ! » → Elle ordonne **de fermer** la porte.*\n✅ *Elle ordonna : « Fermez la porte ! » → Elle ordonna **de fermer** la porte.*\n\n📌 **Négation à l'impératif** :\n\n✅ *« Ne partez pas ! » → Il a dit **de ne pas partir**.*"
+    },
+    {
+      "id": "B1-G-030-3",
+      "type": "lesson",
+      "title": "Changements des pronoms, possessifs et récapitulatif",
+      "content": "Les **pronoms personnels**, les **adjectifs possessifs** et les **pronoms possessifs** doivent être adaptés selon le sens.\n\n📌 **Transformations typiques** :\n\n- `je` → `il` / `elle`\n- `tu` → `je` / `il` / `elle`\n- `nous` → `ils` / `elles`\n- `mon` / `ma` / `mes` → `son` / `sa` / `ses`\n- `notre` / `nos` → `leur` / `leurs`\n\n📌 Récapitulatif complet des transformations du discours direct au discours indirect :",
+      "table": {
+        "headers": ["Élément", "Discours direct", "Discours indirect"],
+        "rows": [
+          ["**Paroles**", "« … »", "**que** / **de** / **à** + subordonnée"],
+          ["**Questions**", "?", "interrogative indirecte"],
+          ["**Temps**", "inchangé si verbe au présent", "reculé si verbe au passé"],
+          ["**Impératif**", "Fermez !", "**de** fermer"],
+          ["**Pronoms**", "je / tu / nous…", "il / elle / me / lui…"],
+          ["**Possessifs**", "mon / ton / notre…", "son / leur / leur…"],
+          ["**Temps (verbe au passé)**", "présent / passé composé / futur", "imparfait / plus-que-parfait / conditionnel"]
+        ]
+      },
+      "examples": [
+        {"fr": "Il a dit : « **Je** vends **ma** voiture. » → Il a dit qu'**il** vendait **sa** voiture."},
+        {"fr": "« **Je te** vois demain. » → Il a dit qu'**il me** voyait demain."},
+        {"fr": "« **Nous** aimons **notre** maison. » → **Ils** ont dit qu'**ils** aimaient **leur** maison."},
+        {"fr": "Elle m'a dit : « **Tu** dois partir. » → Elle m'a dit que **je** devais partir."},
+        {"fr": "« **Mon** frère est malade. » → Il a dit que **son** frère était malade."}
+      ],
+      "note": "💡 **Points essentiels** :\n\n1. **Discours direct** = paroles entre guillemets\n2. **Discours indirect** = subordonnée introduite par `que`, `de`, `à`\n3. **Verbe introducteur au passé** → temps reculent\n4. **Verbe introducteur au présent/futur** → pas de changement\n5. **Impératif** → `de` + infinitif (toujours)\n6. **Pronoms et possessifs** → adaptés selon le sens\n\n⚠️ **Erreur fréquente** :\n\n❌ ~~Il a dit qu'il **viendra** demain.~~ (si verbe introducteur au passé)\n✅ *Il a dit qu'il **viendrait** le lendemain.*\n\n📌 **Pour bien transformer** :\n\n1. Identifier le temps du verbe introducteur\n2. Appliquer la concordance des temps si nécessaire\n3. Adapter les pronoms et possessifs\n4. Transformer les expressions de temps et de lieu (si verbe au passé)\n5. Transformer l'impératif en `de` + infinitif"
+    }
+  ]
+}
