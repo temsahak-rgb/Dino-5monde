@@ -1,3 +1,15 @@
+function getWeakWords(packId) {
+    const p = JSON.parse(localStorage.getItem("dino_vocab_weak") || "{}");
+    return p[packId] || [];
+}
+function setWeakWord(packId, fr, weak) {
+    const p = JSON.parse(localStorage.getItem("dino_vocab_weak") || "{}");
+    if (!p[packId]) p[packId] = [];
+    p[packId] = p[packId].filter(w => w !== fr);
+    if (weak) p[packId].push(fr);
+    localStorage.setItem("dino_vocab_weak", JSON.stringify(p));
+}
+
 // ===============================
 // 📖 موتور واژگان
 // ===============================
