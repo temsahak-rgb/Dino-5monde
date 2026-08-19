@@ -18,10 +18,10 @@ let vocabCache = {};
 async function loadVocabIndex(level) {
     if (vocabCache["index-" + level]) return vocabCache["index-" + level];
     try {
-        const r = await fetch(`./data/vocabulary/vocab-${level}.json`);
-        const data = await r.json();
-        vocabCache["index-" + level] = data;
-        return data;
+        const r = await fetch("./data/vocabulary/vocab-" + level + ".json?v=" + Date.now(), { cache: "no-store" });
+        const d = await r.json();
+        vocabCache["index-" + level] = d;
+        return d;
     } catch (e) { return []; }
 }
 
