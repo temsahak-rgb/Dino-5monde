@@ -307,8 +307,6 @@ function placeholderPage(icon, titleFa, titleFr) {
     </div>`;
     app.innerHTML = html;
 }
-کد showVocabularyPage()
-رو کجا باید بذارم؟
 
         <!-- ═══════════════════════════ -->
         <!-- 📖 واژگان (فلش‌کارت)       -->
