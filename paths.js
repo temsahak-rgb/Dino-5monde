@@ -1,5 +1,5 @@
 // ===============================
-// صفحات مسیرها (مینیمال)
+// صفحات مسیرها (paths.js)
 // ===============================
 async function showDailyHome() {
     const lang = localStorage.getItem("language") || "fr";
@@ -7,7 +7,7 @@ async function showDailyHome() {
     html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
         <h1 style="font-size:22px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">${lang === "fa" ? "🏘️ فرانسوی روزمره" : "🏘️ Français quotidien"}</h1>
         <p style="font-size:13px;color:#777;margin:0 0 30px;">${lang === "fa" ? "برای زندگی در فرانسه" : "Pour vivre en France"}</p>
-        <p style="font-size:14px;color:#777;text-align:center;padding:40px 0;">${lang === "fa" ? "🏗️ در حال آماده‌سازی..." : "🏗️ En cours de préparation..."}</p>
+        <p style="font-size:14px;color:#777;text-align:center;padding:40px 0;">🏗️🦖 ${lang === "fa" ? "دایناسورها مشغول ساخت این بخش هستند!" : "Les dinosaures sont au travail !"}</p>
     </div>`;
     app.innerHTML = html;
 }
@@ -18,36 +18,7 @@ async function showTravelHome() {
     html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
         <h1 style="font-size:22px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">${lang === "fa" ? "✈️ فرانسوی در سفر" : "✈️ Français voyage"}</h1>
         <p style="font-size:13px;color:#777;margin:0 0 30px;">${lang === "fa" ? "۱۸ درس برای سفری بی‌نقص" : "18 leçons pour un voyage parfait"}</p>
-        <p style="font-size:14px;color:#777;text-align:center;padding:40px 0;">${lang === "fa" ? "🏗️ در حال آماده‌سازی..." : "🏗️ En cours de préparation..."}</p>
-    </div>`;
-    app.innerHTML = html;
-}
-
-function showGamesPage() { placeholderPage("🎮", "بازی‌های آموزشی", "Jeux éducatifs"); }
-function showExercisesPage() { placeholderPage("📝", "تمرین‌ها و آزمون‌ها", "Exercices et tests"); }
-function showProfile() { placeholderPage("👤", "پروفایل من", "Mon profil"); }
-
-// ===============================
-// صفحات مسیرها (مینیمال)
-// ===============================
-async function showDailyHome() {
-    const lang = localStorage.getItem("language") || "fr";
-    let html = renderNavbar();
-    html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
-        <h1 style="font-size:22px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">${lang === "fa" ? "🏘️ فرانسوی روزمره" : "🏘️ Français quotidien"}</h1>
-        <p style="font-size:13px;color:#777;margin:0 0 30px;">${lang === "fa" ? "برای زندگی در فرانسه" : "Pour vivre en France"}</p>
-        <p style="font-size:14px;color:#777;text-align:center;padding:40px 0;">${lang === "fa" ? "🏗️ در حال آماده‌سازی..." : "🏗️ En cours de préparation..."}</p>
-    </div>`;
-    app.innerHTML = html;
-}
-
-async function showTravelHome() {
-    const lang = localStorage.getItem("language") || "fr";
-    let html = renderNavbar();
-    html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
-        <h1 style="font-size:22px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">${lang === "fa" ? "✈️ فرانسوی در سفر" : "✈️ Français voyage"}</h1>
-        <p style="font-size:13px;color:#777;margin:0 0 30px;">${lang === "fa" ? "۱۸ درس برای سفری بی‌نقص" : "18 leçons pour un voyage parfait"}</p>
-        <p style="font-size:14px;color:#777;text-align:center;padding:40px 0;">${lang === "fa" ? "🏗️ در حال آماده‌سازی..." : "🏗️ En cours de préparation..."}</p>
+        <p style="font-size:14px;color:#777;text-align:center;padding:40px 0;">🏗️🦖 ${lang === "fa" ? "دایناسورها مشغول ساخت این بخش هستند!" : "Les dinosaures sont au travail !"}</p>
     </div>`;
     app.innerHTML = html;
 }
@@ -58,19 +29,25 @@ async function showTravelHome() {
 async function showDailyLesson(lessonId) {
     app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">⏳ ...</p></div>`;
     const lessonData = await loadSpecificLesson("daily", lessonId);
-    if (!lessonData) { app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">🚧 به زودی</p><button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">بازگشت</button></div>`; return; }
+    if (!lessonData) { 
+        app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">🚧 به زودی</p><button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">بازگشت</button></div>`; 
+        return; 
+    }
     showLessonContent(lessonId, lessonData.sections[0]);
 }
 
 async function showTravelLesson(lessonId) {
     app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">⏳ ...</p></div>`;
     const lessonData = await loadSpecificLesson("travel", lessonId);
-    if (!lessonData) { app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">🚧 به زودی</p><button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">بازگشت</button></div>`; return; }
+    if (!lessonData) { 
+        app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">🚧 به زودی</p><button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">بازگشت</button></div>`; 
+        return; 
+    }
     showLessonContent(lessonId, lessonData.sections[0]);
 }
 
 // ===============================
-// تمرین
+// موتور تمرین (مشترک بین گرامر، سفر و روزمره)
 // ===============================
 function showExerciseContent(lessonId, section) {
     const lang = localStorage.getItem("language") || "fr";
