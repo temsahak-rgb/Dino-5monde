@@ -307,6 +307,112 @@ function placeholderPage(icon, titleFa, titleFr) {
     </div>`;
     app.innerHTML = html;
 }
+کد showVocabularyPage()
+رو کجا باید بذارم؟
+
+        <!-- ═══════════════════════════ -->
+        <!-- 📖 واژگان (فلش‌کارت)       -->
+        <!-- ═══════════════════════════ -->
+        <div style="margin-bottom:40px;">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px;border-bottom:2px solid #1a1a1a;padding-bottom:10px;">
+                <h2 style="font-size:20px;font-weight:700;color:#1a1a1a;margin:0;">${lang === "fa" ? "📖 واژگان" : "📖 Vocabulaire"}</h2>
+                <span onclick="switchSection('vocabulary')" style="font-size:14px;color:#087F5B;cursor:pointer;font-weight:600;">${lang === "fa" ? "همه →" : "Tout →"}</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
+                ${simpleCard("👕", lang === "fa" ? "لباس و پوشاک" : "Vêtements", lang === "fa" ? "۲۵ کلمه" : "25 mots", "switchSection('vocabulary')")}
+                ${simpleCard("🍽️", lang === "fa" ? "غذا و رستوران" : "Nourriture", lang === "fa" ? "۳۰ کلمه" : "30 mots", "switchSection('vocabulary')")}
+                ${simpleCard("🏠", lang === "fa" ? "خانه و وسایل" : "Maison", lang === "fa" ? "۲۰ کلمه" : "20 mots", "switchSection('vocabulary')")}
+                ${simpleCard("👨‍👩‍👧", lang === "fa" ? "خانواده" : "Famille", lang === "fa" ? "۱۸ کلمه" : "18 mots", "switchSection('vocabulary')")}
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════ -->
+        <!-- 🏘️ زندگی روزمره            -->
+        <!-- ═══════════════════════════ -->
+        <div style="margin-bottom:40px;">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px;border-bottom:2px solid #1a1a1a;padding-bottom:10px;">
+                <h2 style="font-size:20px;font-weight:700;color:#1a1a1a;margin:0;">${lang === "fa" ? "🏘️ زندگی روزمره" : "🏘️ Vie quotidienne"}</h2>
+                <span onclick="switchSection('daily')" style="font-size:14px;color:#087F5B;cursor:pointer;font-weight:600;">${lang === "fa" ? "همه →" : "Tout →"}</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
+                ${dailyLessons.map(l => simpleCard(l.icon || "🏠", lang === "fa" ? l.title_fa : l.title, `${l.estimatedTime} min`, `showDailyLesson('${l.id}')`)).join("")}
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════ -->
+        <!-- ✈️ سفر                      -->
+        <!-- ═══════════════════════════ -->
+        <div style="margin-bottom:40px;">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px;border-bottom:2px solid #1a1a1a;padding-bottom:10px;">
+                <h2 style="font-size:20px;font-weight:700;color:#1a1a1a;margin:0;">${lang === "fa" ? "✈️ سفر" : "✈️ Voyage"}</h2>
+                <span onclick="switchSection('travel')" style="font-size:14px;color:#087F5B;cursor:pointer;font-weight:600;">${lang === "fa" ? "همه →" : "Tout →"}</span>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
+                ${travelLessons.map(l => simpleCard(l.icon || "✈️", lang === "fa" ? l.title_fa : l.title, `${l.estimatedTime} min`, `showTravelLesson('${l.id}')`)).join("")}
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════ -->
+        <!-- 🎮 بازی و تمرین            -->
+        <!-- ═══════════════════════════ -->
+        <div style="margin-bottom:40px;">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px;border-bottom:2px solid #1a1a1a;padding-bottom:10px;">
+                <h2 style="font-size:20px;font-weight:700;color:#1a1a1a;margin:0;">${lang === "fa" ? "🎮 بازی و تمرین" : "🎮 Jeux & exercices"}</h2>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
+                ${simpleCard("🎮", lang === "fa" ? "بازی‌ها" : "Jeux", lang === "fa" ? "یادگیری با سرگرمی" : "Apprendre en jouant", "switchSection('games')")}
+                ${simpleCard("📝", lang === "fa" ? "تمرین‌ها" : "Exercices", lang === "fa" ? "تثبیت یادگیری" : "Consolider", "switchSection('exercises')")}
+                ${simpleCard("📊", lang === "fa" ? "تعیین سطح" : "Test", lang === "fa" ? "سطح خود را بسنجید" : "Évaluer votre niveau", "showPlacementChoice()")}
+            </div>
+        </div>
+
+    </div>`;
+
+    app.innerHTML = html;
+}
+
+// ===============================
+// صفحات Placeholder مینیمال
+// ===============================
+function placeholderPage(icon, titleFa, titleFr) {
+    const lang = localStorage.getItem("language") || "fr";
+    let html = renderNavbar();
+    html += `<div style="max-width:900px;margin:0 auto;padding:60px 16px;text-align:center;">
+        <div style="font-size:48px;margin-bottom:16px;">${icon}</div>
+        <h1 style="font-size:22px;color:#1a1a1a;margin-bottom:10px;">${lang === "fa" ? titleFa : titleFr}</h1>
+        <p style="font-size:14px;color:#777;">${lang === "fa" ? "این بخش به زودی فعال می‌شود." : "Cette section sera bientôt disponible."}</p>
+    </div>`;
+    app.innerHTML = html;
+}
+
+function showGamesPage() { placeholderPage("🎮", "بازی‌های آموزشی", "Jeux éducatifs"); }
+function showExercisesPage() { placeholderPage("📝", "تمرین‌ها و آزمون‌ها", "Exercices et tests"); }
+function showProfile() { placeholderPage("👤", "پروفایل من", "Mon profil"); }
+
+// ===============================
+// صفحات مسیرها (مینیمال)
+// ===============================
+async function showDailyHome() {
+    const lang = localStorage.getItem("language") || "fr";
+    let html = renderNavbar();
+    html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
+        <h1 style="font-size:22px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">${lang === "fa" ? "🏘️ فرانسوی روزمره" : "🏘️ Français quotidien"}</h1>
+        <p style="font-size:13px;color:#777;margin:0 0 30px;">${lang === "fa" ? "برای زندگی در فرانسه" : "Pour vivre en France"}</p>
+        <p style="font-size:14px;color:#777;text-align:center;padding:40px 0;">${lang === "fa" ? "🏗️ در حال آماده‌سازی..." : "🏗️ En cours de préparation..."}</p>
+    </div>`;
+    app.innerHTML = html;
+}
+
+async function showTravelHome() {
+    const lang = localStorage.getItem("language") || "fr";
+    let html = renderNavbar();
+    html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
+        <h1 style="font-size:22px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">${lang === "fa" ? "✈️ فرانسوی در سفر" : "✈️ Français voyage"}</h1>
+        <p style="font-size:13px;color:#777;margin:0 0 30px;">${lang === "fa" ? "۱۸ درس برای سفری بی‌نقص" : "18 leçons pour un voyage parfait"}</p>
+        <p style="font-size:14px;color:#777;text-align:center;padding:40px 0;">${lang === "fa" ? "🏗️ در حال آماده‌سازی..." : "🏗️ En cours de préparation..."}</p>
+    </div>`;
+    app.innerHTML = html;
+}
 
 function showGamesPage() { placeholderPage("🎮", "بازی‌های آموزشی", "Jeux éducatifs"); }
 function showExercisesPage() { placeholderPage("📝", "تمرین‌ها و آزمون‌ها", "Exercices et tests"); }
