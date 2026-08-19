@@ -1,5 +1,5 @@
 // ===============================
-// صفحات Placeholder مینیمال
+// صفحات Placeholder مینیمال (misc.js)
 // ===============================
 function placeholderPage(icon, titleFa, titleFr) {
     const lang = localStorage.getItem("language") || "fr";
@@ -7,7 +7,7 @@ function placeholderPage(icon, titleFa, titleFr) {
     html += `<div style="max-width:900px;margin:0 auto;padding:60px 16px;text-align:center;">
         <div style="font-size:48px;margin-bottom:16px;">${icon}</div>
         <h1 style="font-size:22px;color:#1a1a1a;margin-bottom:10px;">${lang === "fa" ? titleFa : titleFr}</h1>
-        <p style="font-size:14px;color:#777;">${lang === "fa" ? "این بخش به زودی فعال می‌شود." : "Cette section sera bientôt disponible."}</p>
+        <p style="font-size:14px;color:#777;">🏗️🦖 ${lang === "fa" ? "دایناسورها مشغول کارند — به زودی!" : "Les dinosaures sont au travail — bientôt !"}</p>
     </div>`;
     app.innerHTML = html;
 }
