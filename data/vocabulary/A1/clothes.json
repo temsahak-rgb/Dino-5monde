@@ -1,0 +1,52 @@
+{
+  "id": "clothes",
+  "level": "A1",
+  "title": "Vêtements",
+  "title_fa": "لباس و پوشاک",
+  "icon": "👕",
+  "words": [
+    { "fr": "le chapeau", "fa": "کلاه", "ex": "Je porte un chapeau noir." },
+    { "fr": "la chaussure", "fa": "کفش", "ex": "J'achète des chaussures." },
+    { "fr": "le manteau", "fa": "پالتو", "ex": "Ce manteau est chaud." },
+    { "fr": "le pantalon", "fa": "شلوار", "ex": "Ce pantalon est trop grand." },
+    { "fr": "la veste", "fa": "کت", "ex": "Mets ta veste, il fait froid." }
+  ],
+  "stories": {
+    "easy": {
+      "title": "Au magasin de vêtements",
+      "title_fa": "در فروشگاه لباس",
+      "paragraphs": [
+        { "fr": "Marie entre dans un magasin de vêtements.", "fa": "ماری وارد یک فروشگاه لباس می‌شود." },
+        { "fr": "Elle essaie un manteau noir et un pantalon bleu.", "fa": "او یک پالتو مشکی و یک شلوار آبی پرو می‌کند." },
+        { "fr": "Elle achète aussi un chapeau.", "fa": "او یک کلاه هم می‌خرد." }
+      ],
+      "keyWords": ["le manteau", "le pantalon", "le chapeau", "essayer"],
+      "questions": [
+        { "question": "Qu'est-ce que Marie essaie ?", "options": ["Un manteau et un pantalon", "Une veste", "Des chaussures"], "correct": 0 },
+        { "question": "Qu'est-ce qu'elle achète aussi ?", "options": ["Un chapeau", "Un pull", "Une jupe"], "correct": 0 }
+      ]
+    },
+    "hard": {
+      "title": "Une journée de soldes",
+      "title_fa": "یک روز حراج",
+      "paragraphs": [
+        { "fr": "Pendant les soldes, Sophie a repéré une veste en cuir dont le prix était réduit de moitié.", "fa": "در طول حراج، سوفی یک کت چرمی را دید که قیمتش نصف شده بود." },
+        { "fr": "Il ne restait plus sa taille, alors elle a demandé à la vendeuse de la commander.", "fa": "سایز او باقی نمانده بود، پس از فروشنده خواشت آن را سفارش دهد." }
+      ],
+      "keyWords": ["les soldes", "le prix réduit", "la taille", "commander"],
+      "questions": [
+        { "question": "Pourquoi Sophie n'a-t-elle pas acheté la veste ?", "options": ["Il n'y avait plus sa taille", "Elle était trop chère", "Elle ne l'aimait pas"], "correct": 0 }
+      ]
+    }
+  },
+  "exercise": {
+    "title": "Quiz : Vêtements",
+    "title_fa": "آزمون: لباس",
+    "displayCount": 5,
+    "questions": [
+      { "type": "mcq", "question": "«le chapeau» یعنی چه؟", "options": ["کفش", "کلاه", "کت", "شلوار"], "correct": 1, "explanation": "Chapeau = کلاه." },
+      { "type": "mcq", "question": "«Ce manteau est chaud» یعنی چه؟", "options": ["این پالتو گرم است", "این شلوار بزرگ است", "این کت سرد است"], "correct": 0, "explanation": "Manteau = پالتو، chaud = گرم." },
+      { "type": "binary", "question": "«Mets ta veste» یعنی «کتت را بپوش».", "options": ["✅ درست", "❌ غلط"], "correct": 0, "explanation": "Mets = بپوش (فعل impératif)، veste = کت." }
+    ]
+  }
+}
