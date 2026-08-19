@@ -1,0 +1,67 @@
+{
+  "id": "breakfast",
+  "level": "A1",
+  "title": "Petit-déjeuner à l'hôtel",
+  "title_fa": "صبحانه در هتل",
+  "icon": "🥐",
+  "words": [
+    { "fr": "le croissant", "fa": "کروسان", "pron": "کغواسان", "ex": "Un croissant au beurre." },
+    { "fr": "le pain", "fa": "نان", "pron": "پَن", "ex": "Le pain est frais." },
+    { "fr": "le beurre", "fa": "کره", "pron": "بُغ", "ex": "Du beurre et de la confiture." },
+    { "fr": "la confiture", "fa": "مربا", "pron": "کُنفیتوغ", "ex": "La confiture de fraise." },
+    { "fr": "le miel", "fa": "عسل", "pron": "می‌یِل", "ex": "Du miel et du yaourt." },
+    { "fr": "le café", "fa": "قهوه", "pron": "کافه", "ex": "Un café, s'il vous plaît." },
+    { "fr": "le thé", "fa": "چای", "pron": "تِ", "ex": "Un thé au citron." },
+    { "fr": "le chocolat chaud", "fa": "شکلات داغ", "pron": "شُکُلا شو", "ex": "Un chocolat chaud, s'il vous plaît." },
+    { "fr": "le jus d'orange", "fa": "آب پرتقال", "pron": "ژو دُغانژ", "ex": "Un jus d'orange frais." },
+    { "fr": "l'œuf", "fa": "تخم مرغ", "pron": "اُف", "ex": "Un œuf à la coque." },
+    { "fr": "le fromage", "fa": "پنیر", "pron": "فغُماژ", "ex": "Le fromage suisse est délicieux." },
+    { "fr": "le yaourt", "fa": "ماست", "pron": "یاوُغت", "ex": "Un yaourt aux fruits." },
+    { "fr": "la tasse", "fa": "فنجان", "pron": "تَس", "ex": "Une tasse de café." },
+    { "fr": "l'assiette", "fa": "بشقاب", "pron": "اَسی‌یِت", "ex": "Une assiette blanche." },
+    { "fr": "la cuillère", "fa": "قاشق", "pron": "کویی‌یِغ", "ex": "Une petite cuillère." }
+  ],
+  "stories": {
+    "easy": {
+      "title": "Le petit-déjeuner de Marie",
+      "title_fa": "صبحانه ماری",
+      "paragraphs": [
+        { "fr": "Marie prend son petit-déjeuner à l'hôtel.", "fa": "ماری در هتل صبحانه می‌خورد." },
+        { "fr": "Elle mange un croissant avec du beurre et de la confiture.", "fa": "او یک کروسان با کره و مربا می‌خورد." },
+        { "fr": "Elle boit un café au lait et un jus d'orange.", "fa": "او قهوه با شیر و یک آب پرتقال می‌نوشد." },
+        { "fr": "Le petit-déjeuner est délicieux !", "fa": "صبحانه خوشمزه است!" }
+      ],
+      "keyWords": ["le croissant", "le beurre", "la confiture", "le jus d'orange"],
+      "questions": [
+        { "question": "Que mange Marie ?", "options": ["Un croissant", "Un œuf", "Du fromage"], "correct": 0 },
+        { "question": "Que boit Marie ?", "options": ["Un thé", "Un café au lait et un jus d'orange", "De l'eau"], "correct": 1 }
+      ]
+    },
+    "hard": {
+      "title": "Le petit-déjeuner en Suisse",
+      "title_fa": "صبحانه در سوییس",
+      "paragraphs": [
+        { "fr": "En Suisse, le petit-déjeuner est généralement plus complet qu'en France.", "fa": "در سوییس، صبحانه معمولاً کامل‌تر از فرانسه است." },
+        { "fr": "Pour environ six francs suisses, on peut commander une formule complète avec une boisson chaude, un jus de fruit frais, du pain frais ou un croissant.", "fa": "با حدود شش فرانک سوییس، می‌توان یک فرمول کامل با نوشیدنی گرم، آب میوه تازه، نان تازه یا کروسان سفارش داد." },
+        { "fr": "Dans les hôtels suisses, le buffet comprend aussi une variété de fromages, de charcuteries et de chocolats de qualité.", "fa": "در هتل‌های سوییس، بوفه شامل انواع پنیر، گوشت سرد و شکلات‌های باکیفیت نیز می‌شود." }
+      ],
+      "keyWords": ["complet", "une formule", "le buffet", "le fromage"],
+      "questions": [
+        { "question": "Où le petit-déjeuner est-il plus complet ?", "options": ["En Suisse", "En France", "En Italie"], "correct": 0 },
+        { "question": "Combien coûte une formule en Suisse ?", "options": ["Environ 6 francs suisses", "10 euros", "Gratuit"], "correct": 0 }
+      ]
+    }
+  },
+  "exercise": {
+    "title": "Quiz : Petit-déjeuner",
+    "title_fa": "آزمون: صبحانه",
+    "displayCount": 5,
+    "questions": [
+      { "type": "mcq", "question": "«le croissant» یعنی چه؟", "options": ["کروسان", "نان", "کره", "مربا"], "correct": 0, "explanation": "Croissant = کروسان." },
+      { "type": "mcq", "question": "«la confiture» یعنی چه؟", "options": ["عسل", "مربا", "خامه", "پنیر"], "correct": 1, "explanation": "Confiture = مربا." },
+      { "type": "binary", "question": "در کافه‌های فرانسوی، قیمت داخل کافه گران‌تر از تراس است.", "options": ["✅ درست", "❌ غلط"], "correct": 0, "explanation": "درست؛ نشستن داخل گران‌تر از تراس است." },
+      { "type": "mcq", "question": "«une tasse de café» یعنی چه؟", "options": ["یک فنجان قهوه", "یک لیوان آب", "یک بشقاب غذا", "یک قاشق"], "correct": 0, "explanation": "Tasse = فنجان." },
+      { "type": "binary", "question": "سرویس در کافه‌های فرانسوی معمولاً در قیمت لحاظ شده است.", "options": ["✅ درست", "❌ غلط"], "correct": 0, "explanation": "درست؛ انعام اضافی لازم نیست." }
+    ]
+  }
+}
