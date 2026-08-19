@@ -747,10 +747,15 @@ function showLessonContent(lessonId, section) {
         <h1 class="ltr-lock" style="font-size:22px;margin:0 0 20px;font-weight:700;color:#1a1a1a;">${title}</h1>
         <div style="background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:24px;margin-bottom:20px;">`;
 
-        if (section.content) html += `<div class="ltr-lock" style="line-height:1.8;color:#333;font-size:15px;margin-bottom:20px;">${renderMarkdown(section.content)}</div>`;
-    if (section.table) html += renderTable(section.table);
+    if (section.content) {
+        html += `<div class="ltr-lock" style="line-height:1.8;color:#333;font-size:15px;margin-bottom:20px;">${renderMarkdown(section.content)}</div>`;
+    }
 
-    // 👇 این بخش جدید اضافه شد
+    if (section.table) {
+        html += renderTable(section.table);
+    }
+
+    // جدول دوم (برای درس‌های travel)
     if (section.table2) {
         if (section.examples && section.examples[0]) {
             html += `<h3 style="font-size:15px;color:#087F5B;margin:24px 0 6px;font-weight:700;">${renderMarkdown(section.examples[0].fr)}</h3>`;
@@ -761,9 +766,8 @@ function showLessonContent(lessonId, section) {
         html += renderTable(section.table2);
     }
 
-    if (section.examples && section.examples.length > 0) {
-
-    if (section.examples && section.examples.length > 0) {
+    // مثال‌ها (فقط اگر table2 نباشد)
+    if (section.examples && section.examples.length > 0 && !section.table2) {
         html += `<h3 style="font-size:15px;color:#087F5B;margin:20px 0 10px;font-weight:700;">${lang === "fa" ? "مثال‌ها" : "Exemples"}</h3>`;
         section.examples.forEach(ex => {
             html += `<div style="background:#fafafa;padding:12px 14px;border-radius:4px;margin:8px 0;border-left:3px solid #087F5B;">
