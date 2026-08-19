@@ -57,3 +57,28 @@ const texts = {
         revision: "مرور", continue: "ادامه", level: "سطح"
     }
 };
+
+// ===============================
+// کارت ساده مینیمال
+// ===============================
+function simpleCard(icon, title, meta, onclick) {
+    return `<div onclick="${onclick}" style="
+        background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:16px;
+        cursor:pointer;transition:border-color 0.15s;
+    " onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#e0e0e0'">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+            <span style="font-size:22px;">${icon}</span>
+            <span style="font-size:16px;font-weight:600;color:#1a1a1a;line-height:1.3;">${title}</span>
+        </div>
+        <p style="margin:0;font-size:13px;color:#777;">${meta}</p>
+    </div>`;
+}
+//======
+//header
+//=====
+function sectionHeader(title, moreOnclick, lang) {
+    return `<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px;border-bottom:2px solid #1a1a1a;padding-bottom:10px;">
+        <h2 style="margin:0;font-size:20px;font-weight:700;color:#1a1a1a;">${title}</h2>
+        ${moreOnclick ? `<span onclick="${moreOnclick}" style="font-size:14px;color:#087F5B;cursor:pointer;font-weight:600;">${lang === "fa" ? "همه →" : "Tout →"}</span>` : ''}
+    </div>`;
+}
