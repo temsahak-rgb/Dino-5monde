@@ -26,13 +26,13 @@ async function loadVocabIndex(level) {
 }
 
 async function loadVocabPack(level, packId) {
-    const key = `${level}-${packId}`;
+    const key = level + "-" + packId;
     if (vocabCache[key]) return vocabCache[key];
     try {
-        const r = await fetch(`./data/vocabulary/${level}/${packId}.json`);
-        const data = await r.json();
-        vocabCache[key] = data;
-        return data;
+        const r = await fetch("./data/vocabulary/" + level + "/" + packId + ".json?v=" + Date.now(), { cache: "no-store" });
+        const d = await r.json();
+        vocabCache[key] = d;
+        return d;
     } catch (e) { return null; }
 }
 
