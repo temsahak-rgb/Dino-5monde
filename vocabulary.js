@@ -114,6 +114,7 @@ async function showVocabPack(level, packId) {
             ${simpleCard("🌱", lang === "fa" ? "داستان ساده" : "Histoire facile", "A1-A2", "startStory('easy')")}
             ${simpleCard("🌳", lang === "fa" ? "داستان پیشرفته" : "Histoire avancée", "B1+", "startStory('hard')")}
             ${simpleCard("📝", lang === "fa" ? "تمرین" : "Quiz", lang === "fa" ? "آزمون کوتاه" : "Quiz rapide", "startVocabExercise()")}
+            ${(() => { const weak = getWeakWords(pack.id); return weak.length ? simpleCard("🔁", lang === "fa" ? "مرور کلمات ضعیف" : "Mots faibles", weak.length + " " + (lang === "fa" ? "کلمه" : "mots"), "startFlashcards(true)") : ""; })()}
         </div>
     </div>`;
     app.innerHTML = html;
@@ -274,15 +275,26 @@ function startVocabExercise() {
     const ex = pack.exercise;
     if (!ex || !ex.questions) { alert(lang === "fa" ? "به زودی" : "Bientôt"); return; }
 
-    const questions = [...ex.questions].sort(() => Math.random() - 0.5).slice(0, ex.displayCount || ex.questions.length);
-    let i = 0, correct = 0;
+    const questions = ex.questions.slice().sort(() => Math.random() - 0.5)
+        .slice(0, ex.displayCount || ex.questions.length)
+        .map(q => {
+            const opts = q.options.map((text, i) => ({ text, ok: i === q.correct })).sort(() => Math.random() - 0.5);
+            return { question: q.question, options: opts.map(o => o.text), correct: opts.findIndex(o => o.ok), explanation: q.explanation };
+        });
 
+    let i = 0, correct = 0;
     function renderQ() {
         if (i >= questions.length) {
+            const pct = Math.round((correct / questions.length) * 100);
+            let emoji = "🎉", msg = lang === "fa" ? "عالی بود!" : "Excellent !";
+            if (pct < 50) { emoji = "💪"; msg = lang === "fa" ? "باید بیشتر تمرین کنی!" : "Plus d'entraînement !"; }
+            else if (pct < 80) { emoji = "👍"; msg = lang === "fa" ? "خوب بود!" : "Bien !"; }
             app.innerHTML = renderNavbar() + `<div style="max-width:500px;margin:0 auto;padding:50px 16px;text-align:center;">
-                <div style="font-size:48px;margin-bottom:16px;">🎉</div>
-                <h1 style="font-size:24px;color:#1a1a1a;margin-bottom:30px;">${correct} / ${questions.length}</h1>
-                <button onclick="showVocabPack('${pack.level}','${pack.id}')" style="width:100%;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:6px;background:#087F5B;color:#fff;cursor:pointer;">${lang === "fa" ? "بازگشت به پک" : "Retour"}</button>
+                <div style="font-size:48px;margin-bottom:16px;">${emoji}</div>
+                <h1 style="font-size:24px;color:#1a1a1a;margin-bottom:10px;">${msg}</h1>
+                <p style="font-size:16px;color:#777;margin-bottom:30px;">${correct} / ${questions.length} (${pct}%)</p>
+                <button onclick="startVocabExercise()" style="width:100%;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:6px;background:#087F5B;color:#fff;cursor:pointer;margin-bottom:10px;">🔄 ${lang === "fa" ? "دوباره" : "Recommencer"}</button>
+                <button onclick="showVocabPack('${pack.level}','${pack.id}')" style="width:100%;padding:14px;font-size:15px;font-weight:600;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">${lang === "fa" ? "بازگشت" : "Retour"}</button>
             </div>`;
             return;
         }
@@ -298,7 +310,6 @@ function startVocabExercise() {
             <div id="vfb" style="margin-top:16px;"></div>
         </div>`;
         app.innerHTML = html;
-
         document.querySelectorAll(".vq").forEach(btn => {
             btn.onclick = () => {
                 const oi = parseInt(btn.getAttribute("data-o"));
