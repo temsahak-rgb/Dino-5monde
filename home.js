@@ -5,13 +5,13 @@ async function showHome() {
     const lang = localStorage.getItem("language") || "fr";
     const level = getPlacementResult() || "A1";
 
-    let grammarLessons = [];
-    try { await loadGrammar(level); grammarLessons = getGrammar(level).slice(0, 4); } catch (e) {}
-    let travelLessons = [];
-    try { const r = await fetch("./data/travel/lessons.json"); travelLessons = (await r.json()).slice(0, 4); } catch (e) {}
-    let dailyLessons = [];
-    try { const r = await fetch("./data/daily/lessons.json"); dailyLessons = (await r.json()).slice(0, 4); } catch (e) {}
-
+    const [g, t, d] = await Promise.all([
+        loadGrammar(level).then(() => getGrammar(level).slice(0, 4)).catch(() => []),
+        fetch("./data/travel/lessons.json").then(r => r.json()).catch(() => []),
+        fetch("./data/daily/lessons.json").then(r => r.json()).catch(() => [])
+    ]);
+    const grammarLessons = g, travelLessons = t.slice(0, 4), dailyLessons = d.slice(0, 4);
+    
     let html = renderNavbar();
 
     html += `<div style="max-width:960px;margin:0 auto;padding:32px 20px 60px;">
