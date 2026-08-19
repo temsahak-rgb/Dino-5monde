@@ -122,23 +122,21 @@ async function showVocabPack(level, packId) {
 // ===============================
 // 🃏 فلش‌کارت‌ها
 // ===============================
-function startFlashcards() {
+function startFlashcards(reviewMode) {
     const pack = window.currentPack;
     const lang = localStorage.getItem("language") || "fr";
-    const deck = [...pack.words].sort(() => Math.random() - 0.5);
-    let index = 0, knownCount = 0;
+    let deck;
+    if (reviewMode) {
+        const weak = getWeakWords(pack.id);
+        deck = pack.words.filter(w => weak.includes(w.fr)).sort(() => Math.random() - 0.5);
+        if (!deck.length) { alert(lang === "fa" ? "کلمه‌ای برای مرور نیست! 🎉" : "Aucun mot à réviser !"); return; }
+    } else {
+        deck = pack.words.slice().sort(() => Math.random() - 0.5);
+    }
+    let index = 0, knownCount = 0, retry = [];
 
     function renderCard() {
-        if (index >= deck.length) {
-            app.innerHTML = renderNavbar() + `<div style="max-width:500px;margin:0 auto;padding:50px 16px;text-align:center;">
-                <div style="font-size:48px;margin-bottom:16px;">🎉</div>
-                <h1 style="font-size:24px;color:#1a1a1a;margin-bottom:10px;">${lang === "fa" ? "تمام شد!" : "Terminé !"}</h1>
-                <p style="font-size:16px;color:#777;margin-bottom:30px;">${knownCount} / ${deck.length}</p>
-                <button onclick="startFlashcards()" style="width:100%;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:6px;background:#087F5B;color:#fff;cursor:pointer;margin-bottom:10px;">🔄 ${lang === "fa" ? "دوباره" : "Recommencer"}</button>
-                <button onclick="showVocabPack('${pack.level}','${pack.id}')" style="width:100%;padding:14px;font-size:15px;font-weight:600;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">${lang === "fa" ? "بازگشت" : "Retour"}</button>
-            </div>`;
-            return;
-        }
+        if (index >= deck.length) { renderEnd(); return; }
         const word = deck[index];
         let html = renderNavbar();
         html += `<div style="max-width:560px;margin:0 auto;padding:32px 16px 60px;">
@@ -146,22 +144,24 @@ function startFlashcards() {
                 <button class="back-btn" style="margin:0;" onclick="showVocabPack('${pack.level}','${pack.id}')">← ${lang === "fa" ? "بازگشت" : "Retour"}</button>
                 <span style="font-size:14px;color:#777;">${index + 1} / ${deck.length}</span>
             </div>
-            <div style="background:#e0e0e0;height:4px;border-radius:2px;margin-bottom:30px;overflow:hidden;">
+            <div style="background:#e0e0e0;height:4px;border-radius:2px;margin-bottom:24px;overflow:hidden;">
                 <div style="background:#087F5B;height:100%;width:${(index / deck.length) * 100}%;"></div>
             </div>
-            <div id="flashcard" style="background:#fff;border:1px solid #e0e0e0;border-radius:10px;min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;padding:30px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
-                <p class="ltr-lock" style="font-size:32px;font-weight:700;color:#1a1a1a;margin:0 0 12px;">${word.fr}</p>
-                <div id="card-back" style="display:none;">
+            <div id="flashcard" style="background:#fff;border:1px solid #e0e0e0;border-radius:10px;min-height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;padding:28px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+                ${word.img ? `<img src="${word.img}" alt="" style="width:100%;max-height:160px;object-fit:cover;border-radius:8px;margin-bottom:14px;">` : (word.emoji ? `<div style="font-size:52px;margin-bottom:10px;">${word.emoji}</div>` : "")}
+                <p class="ltr-lock" style="font-size:30px;font-weight:700;color:#1a1a1a;margin:0 0 10px;">${word.fr}</p>
+                <div id="card-back" style="display:none;width:100%;">
                     <p class="persian-text" style="font-size:20px;color:#087F5B;font-weight:600;margin:0 0 14px;">${word.fa}</p>
-                    ${word.pron ? `<p class="persian-text" style="font-size:14px;color:#999;margin:0 0 10px;">${word.pron}</p>` : ''}
-                    ${word.ex ? `<p class="ltr-lock" style="font-size:14px;color:#777;margin:0;font-style:italic;">${word.ex}</p>` : ''}
+                    ${word.ex ? `<p class="ltr-lock" style="font-size:15px;color:#333;margin:0 0 6px;font-style:italic;">${word.ex}</p>` : ""}
+                    ${word.ex_fa ? `<p class="persian-text" style="font-size:13px;color:#777;margin:0;">${word.ex_fa}</p>` : ""}
                 </div>
-                <p id="card-hint" style="font-size:12px;color:#aaa;margin:16px 0 0;">${lang === "fa" ? "برای دیدن ترجمه کلیک کنید" : "Cliquez pour la traduction"}</p>
+                <p id="card-hint" style="font-size:12px;color:#aaa;margin:18px 0 0;">${lang === "fa" ? "👆 برای دیدن معنی و مثال، روی کارت بزن" : "👆 Touchez pour voir le sens et l'exemple"}</p>
             </div>
-            <div id="card-buttons" style="display:none;gap:10px;margin-top:20px;">
+            <div id="card-buttons" style="display:none;gap:10px;margin-top:16px;">
                 <button id="btn-unknown" style="flex:1;padding:14px;font-size:15px;font-weight:600;border:1px solid #dc2626;border-radius:6px;background:#fff;color:#dc2626;cursor:pointer;">❌ ${lang === "fa" ? "بلد نیستم" : "Je ne sais pas"}</button>
                 <button id="btn-known" style="flex:1;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:6px;background:#087F5B;color:#fff;cursor:pointer;">✅ ${lang === "fa" ? "بلدم" : "Je sais"}</button>
             </div>
+            <p style="font-size:12px;color:#999;text-align:center;margin:12px 0 0;">${lang === "fa" ? "کلماتی که بلد نیستی، در پایان مرور می‌شوند و برای جلسه بعد ذخیره می‌شوند." : "Les mots inconnus seront révisés à la fin et gardés pour la prochaine fois."}</p>
         </div>`;
         app.innerHTML = html;
         document.getElementById("flashcard").onclick = function () {
@@ -170,8 +170,34 @@ function startFlashcards() {
             document.getElementById("card-buttons").style.display = "flex";
             this.onclick = null;
         };
-        document.getElementById("btn-unknown").onclick = () => { markWord(pack.id, word.fr, false); index++; renderCard(); };
-        document.getElementById("btn-known").onclick = () => { markWord(pack.id, word.fr, true); knownCount++; index++; renderCard(); };
+        document.getElementById("btn-unknown").onclick = function () { setWeakWord(pack.id, word.fr, true); retry.push(word); index++; renderCard(); };
+        document.getElementById("btn-known").onclick = function () { setWeakWord(pack.id, word.fr, false); knownCount++; index++; renderCard(); };
+    }
+
+    function renderEnd() {
+        if (retry.length && !reviewMode) {
+            app.innerHTML = renderNavbar() + `<div style="max-width:500px;margin:0 auto;padding:50px 16px;text-align:center;">
+                <div style="font-size:48px;margin-bottom:16px;">🔁</div>
+                <h1 style="font-size:22px;color:#1a1a1a;margin-bottom:10px;">${lang === "fa" ? retry.length + " کلمه را بلد نبودی" : retry.length + " mot(s) non connu(s)"}</h1>
+                <p style="font-size:15px;color:#777;margin-bottom:30px;">${lang === "fa" ? "حالا وقت مرور است!" : "C'est l'heure de réviser !"}</p>
+                <button id="btn-review" style="width:100%;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:6px;background:#087F5B;color:#fff;cursor:pointer;margin-bottom:10px;">🔁 ${lang === "fa" ? "مرور کن" : "Réviser"}</button>
+                <button id="btn-stop" style="width:100%;padding:14px;font-size:15px;font-weight:600;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">${lang === "fa" ? "پایان" : "Terminer"}</button>
+            </div>`;
+            document.getElementById("btn-review").onclick = function () { startFlashcards(true); };
+            document.getElementById("btn-stop").onclick = function () { showVocabPack(pack.level, pack.id); };
+            return;
+        }
+        const pct = Math.round((knownCount / deck.length) * 100);
+        let emoji = "🎉", msg = lang === "fa" ? "عالی بود!" : "Excellent !";
+        if (pct < 50) { emoji = "💪"; msg = lang === "fa" ? "باید بیشتر تمرین کنی!" : "Plus d'entraînement !"; }
+        else if (pct < 80) { emoji = "👍"; msg = lang === "fa" ? "خوب بود!" : "Bien !"; }
+        app.innerHTML = renderNavbar() + `<div style="max-width:500px;margin:0 auto;padding:50px 16px;text-align:center;">
+            <div style="font-size:48px;margin-bottom:16px;">${emoji}</div>
+            <h1 style="font-size:24px;color:#1a1a1a;margin-bottom:10px;">${msg}</h1>
+            <p style="font-size:16px;color:#777;margin-bottom:30px;">${knownCount} / ${deck.length} (${pct}%)</p>
+            <button onclick="startFlashcards(${reviewMode ? "true" : "false"})" style="width:100%;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:6px;background:#087F5B;color:#fff;cursor:pointer;margin-bottom:10px;">🔄 ${lang === "fa" ? "دوباره" : "Recommencer"}</button>
+            <button onclick="showVocabPack('${pack.level}','${pack.id}')" style="width:100%;padding:14px;font-size:15px;font-weight:600;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">${lang === "fa" ? "بازگشت" : "Retour"}</button>
+        </div>`;
     }
     renderCard();
 }
