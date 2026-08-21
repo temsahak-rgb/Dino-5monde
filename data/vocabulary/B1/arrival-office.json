@@ -1,0 +1,357 @@
+{
+  "id": "arrival_office",
+  "level": "B1",
+  "theme": "Arrivée au bureau",
+  "theme_fa": "ورود به شرکت و محیط کار",
+  "icon": "🏢",
+  "inspiration": "Dix pour cent (Call My Agent!)",
+
+  "words": [
+    {
+      "fr": "la place",
+      "fa": "جا / جای پارک",
+      "emoji": "🅿️",
+      "difficulty": 2,
+      "ex": "Je cherche une place de parking près du bureau.",
+      "ex_fa": "دنبال جای پارک نزدیک دفتر می‌گردم."
+    },
+    {
+      "fr": "l'accès",
+      "fa": "دسترسی / ورودی",
+      "emoji": "🚪",
+      "difficulty": 4,
+      "ex": "L'accès au bâtiment est sécurisé par badge.",
+      "ex_fa": "دسترسی به ساختمان با کارت امنیتی است."
+    },
+    {
+      "fr": "accessible",
+      "fa": "در دسترس / قابل دسترسی",
+      "emoji": "✅",
+      "difficulty": 4,
+      "ex": "Le bureau est accessible aux personnes à mobilité réduite.",
+      "ex_fa": "دفتر برای افراد کم‌توان حرکتی قابل دسترسی است."
+    },
+    {
+      "fr": "l'ascenseur",
+      "fa": "آسانسور",
+      "emoji": "⬆️",
+      "difficulty": 3,
+      "ex": "Je prends l'ascenseur pour monter au cinquième étage.",
+      "ex_fa": "آسانسور می‌گیرم تا به طبقه پنجم بروم."
+    },
+    {
+      "fr": "l'appareil",
+      "fa": "دستگاه / ابزار",
+      "emoji": "📱",
+      "difficulty": 3,
+      "ex": "Cet appareil ne fonctionne plus correctement depuis hier.",
+      "ex_fa": "این دستگاه از دیروز دیگر درست کار نمی‌کند."
+    },
+    {
+      "fr": "l'accessoire",
+      "fa": "لوازم جانبی / متعلقات",
+      "emoji": "🎒",
+      "difficulty": 4,
+      "ex": "J'ai acheté des accessoires pour mon nouvel ordinateur.",
+      "ex_fa": "لوازم جانبی برای کامپیوتر جدیدم خریدم."
+    },
+    {
+      "fr": "actif / active",
+      "fa": "فعال / پویا",
+      "emoji": "⚡",
+      "difficulty": 4,
+      "ex": "Elle est très active dans la gestion de son équipe.",
+      "ex_fa": "او در مدیریت تیمش بسیار فعال است."
+    },
+    {
+      "fr": "l'ambiance",
+      "fa": "اتمسفر / فضای محیط",
+      "emoji": "🌟",
+      "difficulty": 3,
+      "ex": "L'ambiance au bureau est détendue ce matin.",
+      "ex_fa": "امروز صبح فضای دفتر آرام و راحت است."
+    },
+    {
+      "fr": "l'attitude",
+      "fa": "نگرش / رفتار",
+      "emoji": "🧍",
+      "difficulty": 3,
+      "ex": "Son attitude professionnelle est exemplaire.",
+      "ex_fa": "نگرش حرفه‌ای او الگویی است."
+    }
+  ],
+
+  "stories": {
+    "simple": {
+      "title": "Lundi matin au bureau",
+      "title_fa": "صبح دوشنبه در دفتر",
+      "text": "C'est lundi matin. Sophie arrive au bureau en retard. Elle cherche une {{BLANK_1}} de parking pendant dix minutes. Enfin, elle trouve une place libre. Elle entre dans le bâtiment. {{BLANK_2}} principal est déjà ouvert grâce au gardien. Au rez-de-chaussée, elle remarque que le hall est {{BLANK_3}} à tous les visiteurs. Elle appelle {{BLANK_4}}, mais il est en panne ! Elle doit monter les escaliers jusqu'au quatrième étage. Arrivée au bureau, elle remarque que son {{BLANK_5}} photo ne fonctionne plus. Elle a oublié de charger la batterie. Son collègue lui prête un {{BLANK_6}} utile : un chargeur universel. Aujourd'hui, l'équipe est très {{BLANK_7}} car il y a une réunion importante. {{BLANK_8}} est un peu tendue avant la présentation. Sophie adopte une {{BLANK_9}} calme et concentrée pour réussir sa journée.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "place",
+          "options": ["place", "salle", "chambre", "zone"],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "L'accès",
+          "options": ["L'accès", "Le passage", "Le couloir", "Le portail"],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "accessible",
+          "options": ["disponible", "accessible", "ouvert", "visible"],
+          "correctIndex": 1
+        },
+        {
+          "id": 4,
+          "answer": "l'ascenseur",
+          "options": ["l'escalier", "la porte", "l'ascenseur", "le couloir"],
+          "correctIndex": 2
+        },
+        {
+          "id": 5,
+          "answer": "appareil",
+          "options": ["appareil", "ordinateur", "téléphone", "écran"],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "accessoire",
+          "options": ["outil", "accessoire", "objet", "élément"],
+          "correctIndex": 1
+        },
+        {
+          "id": 7,
+          "answer": "active",
+          "options": ["active", "occupée", "rapide", "dynamique"],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "L'ambiance",
+          "options": ["L'atmosphère", "L'ambiance", "La situation", "La tension"],
+          "correctIndex": 1
+        },
+        {
+          "id": 9,
+          "answer": "attitude",
+          "options": ["position", "attitude", "posture", "façon"],
+          "correctIndex": 1
+        }
+      ]
+    },
+    "literary": {
+      "title": "Retour au bureau Haussmannien",
+      "title_fa": "بازگشت به دفتر هاوسمانی",
+      "inspiration": "Dix pour cent (Call My Agent!) - série française",
+      "text": "Le jour se levait à peine sur Paris quand Marc poussa la porte vitrée de l'immeuble Haussmannien où se trouvait son nouveau bureau. Après trois semaines de télétravail forcé, il retrouvait enfin les lieux familiers. Il chercha du regard une {{BLANK_1}} disponible dans le petit parking souterrain, mais toutes étaient occupées par les voitures des cadres supérieurs. Résigné, il se gara dans la rue adjacente et marcha jusqu'à l'entrée. {{BLANK_2}} au bâtiment se faisait par une lourde porte en chêne qu'il fallut pousser avec effort, son badge électronique émettant un bip discret. À l'intérieur, un hall lumineux et {{BLANK_3}} à tous les visiteurs accueillait les employés matinaux. Marc appuya sur le bouton de {{BLANK_4}}, observant son reflet fatigué dans les parois métalliques. Arrivé au sixième étage, il sortit son {{BLANK_5}} photo pour immortaliser cette rentrée particulière. Dans son sac, il avait aussi glissé un {{BLANK_6}} indispensable : un trépied miniature pour ses visioconférences. L'open-space bourdonnait déjà d'activité. Ses collègues, {{BLANK_7}} et concentrés, préparaient la réunion trimestrielle avec une efficacité remarquable. Une {{BLANK_8}} singulière régnait, mélange subtil d'excitation et de nervosité avant l'arrivée du directeur. Marc ajusta sa cravate devant le miroir du couloir et adopta l'{{BLANK_9}} confiante qu'on attendait d'un chef de projet chevronné.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "place",
+          "options": ["place", "position", "zone", "aire"],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "L'accès",
+          "options": ["L'entrée", "L'accès", "Le passage", "La voie"],
+          "correctIndex": 1
+        },
+        {
+          "id": 3,
+          "answer": "accessible",
+          "options": ["ouvert", "accessible", "disponible", "autorisé"],
+          "correctIndex": 1
+        },
+        {
+          "id": 4,
+          "answer": "l'ascenseur",
+          "options": ["l'ascenseur", "le monte-charge", "la cage", "l'escalator"],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "appareil",
+          "options": ["équipement", "appareil", "instrument", "matériel"],
+          "correctIndex": 1
+        },
+        {
+          "id": 6,
+          "answer": "accessoire",
+          "options": ["complément", "accessoire", "supplément", "ajout"],
+          "correctIndex": 1
+        },
+        {
+          "id": 7,
+          "answer": "actifs",
+          "options": ["occupés", "dynamiques", "actifs", "productifs"],
+          "correctIndex": 2
+        },
+        {
+          "id": 8,
+          "answer": "ambiance",
+          "options": ["atmosphère", "humeur", "ambiance", "tension"],
+          "correctIndex": 2
+        },
+        {
+          "id": 9,
+          "answer": "attitude",
+          "options": ["posture", "attitude", "démarche", "allure"],
+          "correctIndex": 1
+        }
+      ]
+    }
+  },
+
+  "quiz": {
+    "title": "Quiz : Arrivée au bureau",
+    "title_fa": "آزمون: ورود به شرکت و محیط کار",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Je cherche une ____ de parking depuis vingt minutes.",
+        "options": ["place", "salle", "zone", "aire"],
+        "correctIndex": 0,
+        "explanation_fa": "برای جای پارک از place de parking استفاده می‌کنیم."
+      },
+      {
+        "type": "mcq",
+        "question": "____ au bâtiment est réservé aux employés munis d'un badge.",
+        "options": ["Le passage", "L'entrée", "L'accès", "Le portail"],
+        "correctIndex": 2,
+        "explanation_fa": "L'accès = دسترسی رسمی به یک مکان."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce musée est ____ aux personnes en fauteuil roulant.",
+        "options": ["ouvert", "accessible", "disponible", "autorisé"],
+        "correctIndex": 1,
+        "explanation_fa": "Accessible به معنای قابل دسترسی برای افراد دارای معلولیت است."
+      },
+      {
+        "type": "mcq",
+        "question": "Je préfère prendre ____ plutôt que les escaliers.",
+        "options": ["le couloir", "l'ascenseur", "le monte-charge", "l'escalator"],
+        "correctIndex": 1,
+        "explanation_fa": "برای رفتن به طبقات بالا در ساختمان از ascenseur استفاده می‌کنیم."
+      },
+      {
+        "type": "mcq",
+        "question": "Mon ____ photo est tombé en panne pendant les vacances.",
+        "options": ["outil", "équipement", "appareil", "instrument"],
+        "correctIndex": 2,
+        "explanation_fa": "Appareil photo = دوربین عکاسی (یک اصطلاح ثابت)."
+      },
+      {
+        "type": "mcq",
+        "question": "J'ai acheté plusieurs ____ pour mon nouveau téléphone.",
+        "options": ["outils", "accessoires", "objets", "éléments"],
+        "correctIndex": 1,
+        "explanation_fa": "Accessoires = لوازم جانبی (مثل قاب، شارژر، هندزفری)."
+      },
+      {
+        "type": "mcq",
+        "question": "Elle est très ____ dans son association caritative.",
+        "options": ["active", "occupée", "dynamique", "rapide"],
+        "correctIndex": 0,
+        "explanation_fa": "Actif/active = فعال و مشارکت‌کننده در یک فعالیت."
+      },
+      {
+        "type": "mcq",
+        "question": "____ de ce restaurant est très chaleureuse et accueillante.",
+        "options": ["L'atmosphère", "L'ambiance", "Le décor", "L'humeur"],
+        "correctIndex": 1,
+        "explanation_fa": "Ambiance = فضای حسی یک مکان (نه فقط دکور فیزیکی)."
+      },
+      {
+        "type": "mcq",
+        "question": "Son ____ face aux critiques a impressionné tout le monde.",
+        "options": ["posture", "position", "attitude", "comportement"],
+        "correctIndex": 2,
+        "explanation_fa": "Attitude = نگرش و طرز برخورد ذهنی."
+      },
+      {
+        "type": "mcq",
+        "question": "Trouver une ____ de parking à Paris est un véritable défi.",
+        "options": ["zone", "aire", "place", "position"],
+        "correctIndex": 2,
+        "explanation_fa": "Place de parking اصطلاح ثابت برای جای پارک است."
+      },
+      {
+        "type": "mcq",
+        "question": "____ à internet est gratuit dans cet hôtel.",
+        "options": ["L'entrée", "L'accès", "Le passage", "La connexion"],
+        "correctIndex": 1,
+        "explanation_fa": "Accès à internet = دسترسی به اینترنت."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette information n'est pas ____ au grand public.",
+        "options": ["visible", "accessible", "ouverte", "disponible"],
+        "correctIndex": 1,
+        "explanation_fa": "Accessible ici au sens figuré = قابل دسترسی (اطلاعات)."
+      },
+      {
+        "type": "binary",
+        "question": "\"L'ascenseur\" est un synonyme exact de \"l'escalier\".",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 1,
+        "explanation_fa": "Ascenseur آسانسور است، escalier پله. این‌ها متضادند نه مترادف."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"accessoire\" est un élément secondaire qui complète un objet principal.",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 0,
+        "explanation_fa": "بله، accessoire دقیقاً به معنای لوازم جانبی و تکمیل‌کننده است."
+      },
+      {
+        "type": "binary",
+        "question": "Le mot \"actif\" s'utilise uniquement pour décrire des personnes.",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 1,
+        "explanation_fa": "Actif هم برای افراد و هم برای اشیاء (compte actif, volcan actif) استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "\"Ambiance\" et \"atmosphère\" peuvent être utilisés comme synonymes dans certains contextes.",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 0,
+        "explanation_fa": "بله، در توصیف فضای یک مکان این دو کلمه مترادف‌اند."
+      },
+      {
+        "type": "binary",
+        "question": "Une \"attitude\" désigne uniquement la posture physique d'une personne.",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 1,
+        "explanation_fa": "Attitude بیشتر به نگرش ذهنی اشاره دارد تا وضعیت فیزیکی (که posture است)."
+      },
+      {
+        "type": "mcq",
+        "question": "Le médecin a examiné le patient avec un ____ médical sophistiqué.",
+        "options": ["outil", "accessoire", "appareil", "équipement"],
+        "correctIndex": 2,
+        "explanation_fa": "Appareil médical = دستگاه پزشکی (مثل ECG، رادیولوژی)."
+      },
+      {
+        "type": "binary",
+        "question": "\"Accessible\" peut signifier à la fois \"physiquement atteignable\" et \"facile à comprendre\".",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 0,
+        "explanation_fa": "بله، accessible هم برای مکان (قابل دسترسی) و هم برای متن/مفهوم (قابل فهم) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Il faut adopter une ____ positive pour réussir dans la vie.",
+        "options": ["posture", "position", "attitude", "façon"],
+        "correctIndex": 2,
+        "explanation_fa": "Attitude positive = نگرش مثبت (یک اصطلاح رایج روانشناسی)."
+      }
+    ]
+  }
+}
