@@ -5,48 +5,309 @@
   "theme_fa": "احساسات عمیق، همدلی و ارتباط عاطفی",
   "icon": "💝",
   "inspiration": "Amélie Poulain (film de Jean-Pierre Jeunet)",
-
   "words": [
-    { "fr": "l'empathie", "fa": "همدلی", "emoji": "💞", "difficulty": 4, "ex": "L'empathie permet de comprendre la douleur des autres.", "ex_fa": "همدلی اجازه می‌دهد درد دیگران را درک کنیم." },
-    { "fr": "compatir", "fa": "همدردی کردن", "emoji": "🤗", "difficulty": 5, "ex": "Je compatis à votre peine immense.", "ex_fa": "من با غم بزرگ شما همدردی می‌کنم." },
-    { "fr": "la compassion", "fa": "شفقت / دلسوزی", "emoji": "🙏", "difficulty": 4, "ex": "Elle a fait preuve d'une grande compassion.", "ex_fa": "او شفقت زیادی نشان داد." },
-    { "fr": "émouvoir", "fa": "تحت تاثیر قرار دادن / احساساتی کردن", "emoji": "😢", "difficulty": 4, "ex": "Ce film m'a profondément ému.", "ex_fa": "این فیلم عمیقاً مرا تحت تاثیر قرار داد." },
-    { "fr": "émouvant / émouvante", "fa": "احساساتی‌کننده / تاثیرگذار", "emoji": "💧", "difficulty": 3, "ex": "C'était une scène très émouvante.", "ex_fa": "این یک صحنه بسیار تاثیرگذار بود." },
-    { "fr": "bouleverser", "fa": "به‌شدت ناراحت کردن / منقلب کردن", "emoji": "💔", "difficulty": 4, "ex": "Cette nouvelle l'a complètement bouleversé.", "ex_fa": "این خبر کاملاً او را منقلب کرد." },
-    { "fr": "bouleversant / bouleversante", "fa": "تکان‌دهنده / شوکه‌کننده", "emoji": "😨", "difficulty": 4, "ex": "Le témoignage était bouleversant.", "ex_fa": "شهادت تکان‌دهنده بود." },
-    { "fr": "consoler", "fa": "تسلی دادن / دلداری دادن", "emoji": "🫂", "difficulty": 3, "ex": "Elle essaie de consoler son amie en pleurs.", "ex_fa": "او سعی می‌کند به دوست گریانش دلداری بدهد." },
-    { "fr": "la consolation", "fa": "تسلی / دلداری", "emoji": "🌸", "difficulty": 4, "ex": "Ses mots étaient une douce consolation.", "ex_fa": "کلماتش یک تسلی شیرین بود." },
-    { "fr": "réconforter", "fa": "آرامش دادن / قوت قلب دادن", "emoji": "☕", "difficulty": 5, "ex": "Une présence aimante peut réconforter.", "ex_fa": "یک حضور عاشقانه می‌تواند آرامش دهد." },
-    { "fr": "le réconfort", "fa": "آرامش / قوت قلب", "emoji": "🌞", "difficulty": 4, "ex": "Il a trouvé du réconfort dans la musique.", "ex_fa": "او در موسیقی آرامش یافت." },
-    { "fr": "touchant / touchante", "fa": "دلنشین / تاثیرگذار", "emoji": "💕", "difficulty": 3, "ex": "Son geste était vraiment touchant.", "ex_fa": "حرکتش واقعاً دلنشین بود." },
-    { "fr": "sensible", "fa": "حساس / زودرنج", "emoji": "🌺", "difficulty": 3, "ex": "Elle est très sensible à la beauté.", "ex_fa": "او نسبت به زیبایی بسیار حساس است." },
-    { "fr": "la sensibilité", "fa": "حساسیت", "emoji": "🎨", "difficulty": 4, "ex": "Sa sensibilité artistique est remarquable.", "ex_fa": "حساسیت هنری او قابل توجه است." },
-    { "fr": "la tendresse", "fa": "مهربانی / لطافت", "emoji": "🌷", "difficulty": 4, "ex": "Il la regarde avec tendresse.", "ex_fa": "او با مهربانی به او نگاه می‌کند." },
-    { "fr": "affectueux / affectueuse", "fa": "مهربان / پرمحبت", "emoji": "💗", "difficulty": 4, "ex": "C'est une personne très affectueuse.", "ex_fa": "او یک فرد بسیار پرمحبت است." }
+    {
+      "fr": "l'empathie",
+      "fa": "همدلی",
+      "emoji": "💞",
+      "difficulty": 4,
+      "ex": "L'empathie permet de comprendre la douleur des autres.",
+      "ex_fa": "همدلی اجازه می‌دهد درد دیگران را درک کنیم."
+    },
+    {
+      "fr": "compatir",
+      "fa": "همدردی کردن",
+      "emoji": "🤗",
+      "difficulty": 5,
+      "ex": "Je compatis à votre peine immense.",
+      "ex_fa": "من با غم بزرگ شما همدردی می‌کنم."
+    },
+    {
+      "fr": "la compassion",
+      "fa": "شفقت / دلسوزی",
+      "emoji": "🙏",
+      "difficulty": 4,
+      "ex": "Elle a fait preuve d'une grande compassion.",
+      "ex_fa": "او شفقت زیادی نشان داد."
+    },
+    {
+      "fr": "émouvoir",
+      "fa": "تحت تاثیر قرار دادن / احساساتی کردن",
+      "emoji": "😢",
+      "difficulty": 4,
+      "ex": "Ce film m'a profondément ému.",
+      "ex_fa": "این فیلم عمیقاً مرا تحت تاثیر قرار داد."
+    },
+    {
+      "fr": "émouvant / émouvante",
+      "fa": "احساساتی‌کننده / تاثیرگذار",
+      "emoji": "💧",
+      "difficulty": 3,
+      "ex": "C'était une scène très émouvante.",
+      "ex_fa": "این یک صحنه بسیار تاثیرگذار بود."
+    },
+    {
+      "fr": "bouleverser",
+      "fa": "به‌شدت ناراحت کردن / منقلب کردن",
+      "emoji": "💔",
+      "difficulty": 4,
+      "ex": "Cette nouvelle l'a complètement bouleversé.",
+      "ex_fa": "این خبر کاملاً او را منقلب کرد."
+    },
+    {
+      "fr": "bouleversant / bouleversante",
+      "fa": "تکان‌دهنده / شوکه‌کننده",
+      "emoji": "😨",
+      "difficulty": 4,
+      "ex": "Le témoignage était bouleversant.",
+      "ex_fa": "شهادت تکان‌دهنده بود."
+    },
+    {
+      "fr": "consoler",
+      "fa": "تسلی دادن / دلداری دادن",
+      "emoji": "🫂",
+      "difficulty": 3,
+      "ex": "Elle essaie de consoler son amie en pleurs.",
+      "ex_fa": "او سعی می‌کند به دوست گریانش دلداری بدهد."
+    },
+    {
+      "fr": "la consolation",
+      "fa": "تسلی / دلداری",
+      "emoji": "🌸",
+      "difficulty": 4,
+      "ex": "Ses mots étaient une douce consolation.",
+      "ex_fa": "کلماتش یک تسلی شیرین بود."
+    },
+    {
+      "fr": "réconforter",
+      "fa": "آرامش دادن / قوت قلب دادن",
+      "emoji": "☕",
+      "difficulty": 5,
+      "ex": "Une présence aimante peut réconforter.",
+      "ex_fa": "یک حضور عاشقانه می‌تواند آرامش دهد."
+    },
+    {
+      "fr": "le réconfort",
+      "fa": "آرامش / قوت قلب",
+      "emoji": "🌞",
+      "difficulty": 4,
+      "ex": "Il a trouvé du réconfort dans la musique.",
+      "ex_fa": "او در موسیقی آرامش یافت."
+    },
+    {
+      "fr": "touchant / touchante",
+      "fa": "دلنشین / تاثیرگذار",
+      "emoji": "💕",
+      "difficulty": 3,
+      "ex": "Son geste était vraiment touchant.",
+      "ex_fa": "حرکتش واقعاً دلنشین بود."
+    },
+    {
+      "fr": "sensible",
+      "fa": "حساس / زودرنج",
+      "emoji": "🌺",
+      "difficulty": 3,
+      "ex": "Elle est très sensible à la beauté.",
+      "ex_fa": "او نسبت به زیبایی بسیار حساس است."
+    },
+    {
+      "fr": "la sensibilité",
+      "fa": "حساسیت",
+      "emoji": "🎨",
+      "difficulty": 4,
+      "ex": "Sa sensibilité artistique est remarquable.",
+      "ex_fa": "حساسیت هنری او قابل توجه است."
+    },
+    {
+      "fr": "la tendresse",
+      "fa": "مهربانی / لطافت",
+      "emoji": "🌷",
+      "difficulty": 4,
+      "ex": "Il la regarde avec tendresse.",
+      "ex_fa": "او با مهربانی به او نگاه می‌کند."
+    },
+    {
+      "fr": "affectueux / affectueuse",
+      "fa": "مهربان / پرمحبت",
+      "emoji": "💗",
+      "difficulty": 4,
+      "ex": "C'est une personne très affectueuse.",
+      "ex_fa": "او یک فرد بسیار پرمحبت است."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "Le secret d'Amélie",
       "title_fa": "راز آمیلی",
       "text": "Amélie travaille comme serveuse dans un petit café de Montmartre. Elle est très {{BLANK_1}} et observe attentivement les clients. Un jour, elle découvre une vieille boîte cachée derrière un mur. Cette {{BLANK_2}} la pousse à rechercher le propriétaire. Quand elle le retrouve, l'homme est profondément {{BLANK_3}} par les souvenirs de son enfance. Amélie décide de faire des petits gestes pour aider les gens. Elle veut {{BLANK_4}} une voisine hypochondriaque en lui racontant des histoires. Elle essaie de {{BLANK_5}} le père de son collègue qui se sent seul. Sa {{BLANK_6}} envers les autres est sincère et désintéressée. Un homme aveugle traverse la rue, Amélie l'aide et lui décrit tout avec {{BLANK_7}}. Ce geste {{BLANK_8}} illumine sa journée. Mais Amélie cache sa propre tristesse. Elle a perdu sa mère jeune et son père est distant. Elle cherche du {{BLANK_9}} dans les petits plaisirs quotidiens. Un jour, elle rencontre Nino, un homme qui collectionne les photos d'identité abandonnées. Leur rencontre est {{BLANK_10}} et inattendue. Amélie ressent une profonde {{BLANK_11}} pour cet homme mystérieux. Elle commence à {{BLANK_12}} à sa souffrance secrète. Sa {{BLANK_13}} artistique l'aide à créer des énigmes romantiques pour lui. Finalement, elle trouve le courage de révéler ses sentiments. Cette histoire {{BLANK_14}} montre que l'amour peut naître des gestes les plus simples. Le {{BLANK_15}} qu'elle offre aux autres lui revient enfin.",
       "blanks": [
-        { "id": 1, "answer": "sensible", "options": ["sensible", "indifférente", "froide", "dure"], "correctIndex": 0 },
-        { "id": 2, "answer": "découverte", "options": ["découverte", "perte", "erreur", "faute"], "correctIndex": 0 },
-        { "id": 3, "answer": "ému", "options": ["ému", "indifférent", "froid", "insensible"], "correctIndex": 0 },
-        { "id": 4, "answer": "consoler", "options": ["consoler", "blesser", "ignorer", "abandonner"], "correctIndex": 0 },
-        { "id": 5, "answer": "réconforter", "options": ["réconforter", "blesser", "ignorer", "abandonner"], "correctIndex": 0 },
-        { "id": 6, "answer": "compassion", "options": ["compassion", "indifférence", "froideur", "cruauté"], "correctIndex": 0 },
-        { "id": 7, "answer": "tendresse", "options": ["tendresse", "froideur", "indifférence", "cruauté"], "correctIndex": 0 },
-        { "id": 8, "answer": "touchant", "options": ["touchant", "désagréable", "ennuyeux", "froid"], "correctIndex": 0 },
-        { "id": 9, "answer": "réconfort", "options": ["réconfort", "douleur", "souffrance", "tristesse"], "correctIndex": 0 },
-        { "id": 10, "answer": "émouvante", "options": ["émouvante", "banale", "ordinaire", "ennuyeuse"], "correctIndex": 0 },
-        { "id": 11, "answer": "empathie", "options": ["empathie", "indifférence", "froideur", "haine"], "correctIndex": 0 },
-        { "id": 12, "answer": "compatir", "options": ["compatir", "ignorer", "rejeter", "abandonner"], "correctIndex": 0 },
-        { "id": 13, "answer": "sensibilité", "options": ["sensibilité", "froideur", "dureté", "indifférence"], "correctIndex": 0 },
-        { "id": 14, "answer": "bouleversante", "options": ["bouleversante", "banale", "ordinaire", "ennuyeuse"], "correctIndex": 0 },
-        { "id": 15, "answer": "réconfort", "options": ["réconfort", "douleur", "souffrance", "tristesse"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "sensible",
+          "options": [
+            "sensible",
+            "indifférente",
+            "froide",
+            "dure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "découverte",
+          "options": [
+            "découverte",
+            "perte",
+            "erreur",
+            "faute"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "ému",
+          "options": [
+            "ému",
+            "indifférent",
+            "froid",
+            "insensible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "consoler",
+          "options": [
+            "consoler",
+            "blesser",
+            "ignorer",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "réconforter",
+          "options": [
+            "réconforter",
+            "blesser",
+            "ignorer",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "compassion",
+          "options": [
+            "compassion",
+            "indifférence",
+            "froideur",
+            "cruauté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tendresse",
+          "options": [
+            "tendresse",
+            "froideur",
+            "indifférence",
+            "cruauté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "touchant",
+          "options": [
+            "touchant",
+            "désagréable",
+            "ennuyeux",
+            "froid"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "réconfort",
+          "options": [
+            "réconfort",
+            "douleur",
+            "souffrance",
+            "tristesse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "émouvante",
+          "options": [
+            "émouvante",
+            "banale",
+            "ordinaire",
+            "ennuyeuse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "empathie",
+          "options": [
+            "empathie",
+            "indifférence",
+            "froideur",
+            "haine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "compatir",
+          "options": [
+            "compatir",
+            "ignorer",
+            "rejeter",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "sensibilité",
+          "options": [
+            "sensibilité",
+            "froideur",
+            "dureté",
+            "indifférence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "bouleversante",
+          "options": [
+            "bouleversante",
+            "banale",
+            "ordinaire",
+            "ennuyeuse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "réconfort",
+          "options": [
+            "réconfort",
+            "douleur",
+            "souffrance",
+            "tristesse"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Amélie travaille comme serveuse dans un petit café de Montmartre. Elle est très ___ et observe attentivement les clients. Un jour, elle découvre une vieille boîte cachée derrière un mur. Cette ___ la pousse à rechercher le propriétaire. Quand elle le retrouve, l'homme est profondément ___ par les souvenirs de son enfance. Amélie décide de faire des petits gestes pour aider les gens. Elle veut ___ une voisine hypochondriaque en lui racontant des histoires. Elle essaie de ___ le père de son collègue qui se sent seul. Sa ___ envers les autres est sincère et désintéressée. Un homme aveugle traverse la rue, Amélie l'aide et lui décrit tout avec ___. Ce geste ___ illumine sa journée. Mais Amélie cache sa propre tristesse. Elle a perdu sa mère jeune et son père est distant. Elle cherche du ___ dans les petits plaisirs quotidiens. Un jour, elle rencontre Nino, un homme qui collectionne les photos d'identité abandonnées. Leur rencontre est ___ et inattendue. Amélie ressent une profonde ___ pour cet homme mystérieux. Elle commence à ___ à sa souffrance secrète. Sa ___ artistique l'aide à créer des énigmes romantiques pour lui. Finalement, elle trouve le courage de révéler ses sentiments. Cette histoire ___ montre que l'amour peut naître des gestes les plus simples. Le ___ qu'elle offre aux autres lui revient enfin."
     },
     "literary": {
       "title": "Les petits bonheurs",
@@ -54,46 +315,366 @@
       "inspiration": "Le Fabuleux Destin d'Amélie Poulain (film de Jean-Pierre Jeunet)",
       "text": "Amélie Poulain servait les clients du Café des Deux Moulins avec une discrétion élégante. Cette jeune femme extraordinairement {{BLANK_1}} observait le monde avec des yeux émerveillés. Un matin, en déplaçant un carreau de sa salle de bain, elle fit une {{BLANK_2}} incroyable : une boîte métallique remplie de souvenirs d'enfance. Quand elle retrouva le propriétaire quarante ans plus tard, l'homme fut profondément {{BLANK_3}} par ces trésors oubliés. Amélie décida alors de devenir l'ange gardien invisible de son quartier. Elle voulait {{BLANK_4}} Georgette, sa collègue hypocondriaque, en inventant des histoires romantiques. Elle tentait de {{BLANK_5}} Raphaël, le père de son collègue, enfermé dans son deuil. Sa {{BLANK_6}} envers les âmes blessées était pure et désintéressée. Un après-midi pluvieux, elleaida un aveugle à traverser la rue, lui décrivant chaque détail avec {{BLANK_7}}. Ce geste {{BLANK_8}} illumina toute sa semaine. Mais derrière son sourire se cachait une profonde mélancolie. Amélie avait perdu sa mère tragiquement et son père vivait replié sur lui-même. Elle cherchait du {{BLANK_9}} dans les plaisirs minuscules : casser la croûle d'une crème brûlée, faire des ricochets. Puis elle rencontra Nino Quincampoix, collectionneur de photos d'identité jetées dans les photomatons. Leur première rencontre fut {{BLANK_10}} et déterminante. Amélie ressentit une {{BLANK_11}} immédiate pour cet homme rêveur. Elle commença à {{BLANK_12}} sincèrement à sa solitude partagée. Sa {{BLANK_13}} artistique lui permit de créer un jeu de piste romantique à travers Paris. Finalement, elle trouva le courage de sortir de l'ombre pour avouer ses sentiments. Cette histoire {{BLANK_14}} prouvait que l'amour naît souvent des gestes les plus simples et les plus sincères. Le {{BLANK_15}} qu'elle offrait généreusement aux autres lui revint enfin en cascade, transformant sa vie solitaire en une symphonie de bonheurs partagés.",
       "blanks": [
-        { "id": 1, "answer": "sensible", "options": ["sensible", "indifférente", "froide", "dure"], "correctIndex": 0 },
-        { "id": 2, "answer": "découverte", "options": ["découverte", "perte", "erreur", "faute"], "correctIndex": 0 },
-        { "id": 3, "answer": "ému", "options": ["ému", "indifférent", "froid", "insensible"], "correctIndex": 0 },
-        { "id": 4, "answer": "consoler", "options": ["consoler", "blesser", "ignorer", "abandonner"], "correctIndex": 0 },
-        { "id": 5, "answer": "réconforter", "options": ["réconforter", "blesser", "ignorer", "abandonner"], "correctIndex": 0 },
-        { "id": 6, "answer": "compassion", "options": ["compassion", "indifférence", "froideur", "cruauté"], "correctIndex": 0 },
-        { "id": 7, "answer": "tendresse", "options": ["tendresse", "froideur", "indifférence", "cruauté"], "correctIndex": 0 },
-        { "id": 8, "answer": "touchant", "options": ["touchant", "désagréable", "ennuyeux", "froid"], "correctIndex": 0 },
-        { "id": 9, "answer": "réconfort", "options": ["réconfort", "douleur", "souffrance", "tristesse"], "correctIndex": 0 },
-        { "id": 10, "answer": "émouvante", "options": ["émouvante", "banale", "ordinaire", "ennuyeuse"], "correctIndex": 0 },
-        { "id": 11, "answer": "empathie", "options": ["empathie", "indifférence", "froideur", "haine"], "correctIndex": 0 },
-        { "id": 12, "answer": "compatir", "options": ["compatir", "ignorer", "rejeter", "abandonner"], "correctIndex": 0 },
-        { "id": 13, "answer": "sensibilité", "options": ["sensibilité", "froideur", "dureté", "indifférence"], "correctIndex": 0 },
-        { "id": 14, "answer": "bouleversante", "options": ["bouleversante", "banale", "ordinaire", "ennuyeuse"], "correctIndex": 0 },
-        { "id": 15, "answer": "réconfort", "options": ["réconfort", "douleur", "souffrance", "tristesse"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "sensible",
+          "options": [
+            "sensible",
+            "indifférente",
+            "froide",
+            "dure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "découverte",
+          "options": [
+            "découverte",
+            "perte",
+            "erreur",
+            "faute"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "ému",
+          "options": [
+            "ému",
+            "indifférent",
+            "froid",
+            "insensible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "consoler",
+          "options": [
+            "consoler",
+            "blesser",
+            "ignorer",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "réconforter",
+          "options": [
+            "réconforter",
+            "blesser",
+            "ignorer",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "compassion",
+          "options": [
+            "compassion",
+            "indifférence",
+            "froideur",
+            "cruauté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tendresse",
+          "options": [
+            "tendresse",
+            "froideur",
+            "indifférence",
+            "cruauté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "touchant",
+          "options": [
+            "touchant",
+            "désagréable",
+            "ennuyeux",
+            "froid"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "réconfort",
+          "options": [
+            "réconfort",
+            "douleur",
+            "souffrance",
+            "tristesse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "émouvante",
+          "options": [
+            "émouvante",
+            "banale",
+            "ordinaire",
+            "ennuyeuse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "empathie",
+          "options": [
+            "empathie",
+            "indifférence",
+            "froideur",
+            "haine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "compatir",
+          "options": [
+            "compatir",
+            "ignorer",
+            "rejeter",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "sensibilité",
+          "options": [
+            "sensibilité",
+            "froideur",
+            "dureté",
+            "indifférence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "bouleversante",
+          "options": [
+            "bouleversante",
+            "banale",
+            "ordinaire",
+            "ennuyeuse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "réconfort",
+          "options": [
+            "réconfort",
+            "douleur",
+            "souffrance",
+            "tristesse"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Amélie Poulain servait les clients du Café des Deux Moulins avec une discrétion élégante. Cette jeune femme extraordinairement ___ observait le monde avec des yeux émerveillés. Un matin, en déplaçant un carreau de sa salle de bain, elle fit une ___ incroyable : une boîte métallique remplie de souvenirs d'enfance. Quand elle retrouva le propriétaire quarante ans plus tard, l'homme fut profondément ___ par ces trésors oubliés. Amélie décida alors de devenir l'ange gardien invisible de son quartier. Elle voulait ___ Georgette, sa collègue hypocondriaque, en inventant des histoires romantiques. Elle tentait de ___ Raphaël, le père de son collègue, enfermé dans son deuil. Sa ___ envers les âmes blessées était pure et désintéressée. Un après-midi pluvieux, elleaida un aveugle à traverser la rue, lui décrivant chaque détail avec ___. Ce geste ___ illumina toute sa semaine. Mais derrière son sourire se cachait une profonde mélancolie. Amélie avait perdu sa mère tragiquement et son père vivait replié sur lui-même. Elle cherchait du ___ dans les plaisirs minuscules : casser la croûle d'une crème brûlée, faire des ricochets. Puis elle rencontra Nino Quincampoix, collectionneur de photos d'identité jetées dans les photomatons. Leur première rencontre fut ___ et déterminante. Amélie ressentit une ___ immédiate pour cet homme rêveur. Elle commença à ___ sincèrement à sa solitude partagée. Sa ___ artistique lui permit de créer un jeu de piste romantique à travers Paris. Finalement, elle trouva le courage de sortir de l'ombre pour avouer ses sentiments. Cette histoire ___ prouvait que l'amour naît souvent des gestes les plus simples et les plus sincères. Le ___ qu'elle offrait généreusement aux autres lui revint enfin en cascade, transformant sa vie solitaire en une symphonie de bonheurs partagés."
     }
   },
-
   "quiz": {
     "title": "Quiz : Émotions profondes et Empathie",
     "title_fa": "آزمون: احساسات عمیق و همدلی",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "L'____ permet de comprendre et partager les sentiments d'autrui.", "options": ["empathie", "indifférence", "froideur", "haine"], "correctIndex": 0, "explanation_fa": "empathie = همدلی." },
-      { "type": "mcq", "question": "Je ____ sincèrement à votre douleur après cette perte.", "options": ["compatis", "ignore", "rejette", "abandonne"], "correctIndex": 0, "explanation_fa": "compatir = همدردی کردن." },
-      { "type": "binary", "question": "La \"compassion\" est un sentiment de pitié et de compréhension envers la souffrance d'autrui.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، compassion به معنای شفقت و دلسوزی است." },
-      { "type": "mcq", "question": "Ce documentaire sur les réfugiés m'a profondément ____.", "options": ["ému", "indifférent", "ennuyé", "laissé froid"], "correctIndex": 0, "explanation_fa": "émouvoir = تحت تاثیر قرار دادن." },
-      { "type": "mcq", "question": "La scène où le père retrouve son fils était très ____.", "options": ["émouvante", "banale", "ordinaire", "ennuyeuse"], "correctIndex": 0, "explanation_fa": "émouvant = احساساتی‌کننده." },
-      { "type": "mcq", "question": "La nouvelle de son licenciement l'a complètement ____.", "options": ["bouleversé", "calmé", "apaisé", "réjoui"], "correctIndex": 0, "explanation_fa": "bouleverser = به‌شدت ناراحت کردن / منقلب کردن." },
-      { "type": "mcq", "question": "Le témoignage de cette survivante était absolument ____.", "options": ["bouleversant", "banal", "ordinaire", "ennuyeux"], "correctIndex": 0, "explanation_fa": "bouleversant = تکان‌دهنده." },
-      { "type": "binary", "question": "Le verbe \"consoler\" signifie \"apporter du réconfort à quelqu'un qui souffre\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، consoler یعنی تسلی دادن." },
-      { "type": "mcq", "question": "Ses paroles étaient une douce ____ dans ma peine.", "options": ["consolation", "douleur", "souffrance", "tristesse"], "correctIndex": 0, "explanation_fa": "consolation = تسلی / دلداری." },
-      { "type": "mcq", "question": "Une présence aimante peut ____ une personne en deuil.", "options": ["réconforter", "blesser", "ignorer", "abandonner"], "correctIndex": 0, "explanation_fa": "réconforter = آرامش دادن / قوت قلب دادن." },
-      { "type": "mcq", "question": "Il a trouvé du ____ dans la lecture après son divorce.", "options": ["réconfort", "douleur", "souffrance", "tristesse"], "correctIndex": 0, "explanation_fa": "réconfort = آرامش / قوت قلب." },
-      { "type": "mcq", "question": "Son attention délicate était vraiment ____.", "options": ["touchante", "désagréable", "ennuyeuse", "froide"], "correctIndex": 0, "explanation_fa": "touchant = دلنشین / تاثیرگذار." },
-      { "type": "mcq", "question": "Elle est très ____ aux critiques et pleure facilement.", "options": ["sensible", "indifférente", "froide", "dure"], "correctIndex": 0, "explanation_fa": "sensible = حساس / زودرنج." },
-      { "type": "binary", "question": "La \"sensibilité\" peut désigner la capacité à ressentir vivement les émotions.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، sensibilité به معنای حساسیت عاطفی است." },
-      { "type": "mcq", "question": "Il la regarde avec ____ et amour.", "options": ["tendresse", "froideur", "indifférence", "cruauté"], "correctIndex": 0, "explanation_fa": "tendresse = مهربانی / لطافت." },
-      { "type": "mcq", "question": "C'est une grand-mère très ____ avec ses petits-enfants.", "options": ["affectueuse", "froide", "distante", "indifférente"], "correctIndex": 0, "explanation_fa": "affectueux = مهربان / پرمحبت." }
+      {
+        "type": "mcq",
+        "question": "L'____ permet de comprendre et partager les sentiments d'autrui.",
+        "options": [
+          "empathie",
+          "indifférence",
+          "froideur",
+          "haine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "empathie = همدلی."
+      },
+      {
+        "type": "mcq",
+        "question": "Je ____ sincèrement à votre douleur après cette perte.",
+        "options": [
+          "compatis",
+          "ignore",
+          "rejette",
+          "abandonne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "compatir = همدردی کردن."
+      },
+      {
+        "type": "binary",
+        "question": "La \"compassion\" est un sentiment de pitié et de compréhension envers la souffrance d'autrui.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، compassion به معنای شفقت و دلسوزی است."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce documentaire sur les réfugiés m'a profondément ____.",
+        "options": [
+          "ému",
+          "indifférent",
+          "ennuyé",
+          "laissé froid"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "émouvoir = تحت تاثیر قرار دادن."
+      },
+      {
+        "type": "mcq",
+        "question": "La scène où le père retrouve son fils était très ____.",
+        "options": [
+          "émouvante",
+          "banale",
+          "ordinaire",
+          "ennuyeuse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "émouvant = احساساتی‌کننده."
+      },
+      {
+        "type": "mcq",
+        "question": "La nouvelle de son licenciement l'a complètement ____.",
+        "options": [
+          "bouleversé",
+          "calmé",
+          "apaisé",
+          "réjoui"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "bouleverser = به‌شدت ناراحت کردن / منقلب کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "Le témoignage de cette survivante était absolument ____.",
+        "options": [
+          "bouleversant",
+          "banal",
+          "ordinaire",
+          "ennuyeux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "bouleversant = تکان‌دهنده."
+      },
+      {
+        "type": "binary",
+        "question": "Le verbe \"consoler\" signifie \"apporter du réconfort à quelqu'un qui souffre\".",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، consoler یعنی تسلی دادن."
+      },
+      {
+        "type": "mcq",
+        "question": "Ses paroles étaient une douce ____ dans ma peine.",
+        "options": [
+          "consolation",
+          "douleur",
+          "souffrance",
+          "tristesse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "consolation = تسلی / دلداری."
+      },
+      {
+        "type": "mcq",
+        "question": "Une présence aimante peut ____ une personne en deuil.",
+        "options": [
+          "réconforter",
+          "blesser",
+          "ignorer",
+          "abandonner"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "réconforter = آرامش دادن / قوت قلب دادن."
+      },
+      {
+        "type": "mcq",
+        "question": "Il a trouvé du ____ dans la lecture après son divorce.",
+        "options": [
+          "réconfort",
+          "douleur",
+          "souffrance",
+          "tristesse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "réconfort = آرامش / قوت قلب."
+      },
+      {
+        "type": "mcq",
+        "question": "Son attention délicate était vraiment ____.",
+        "options": [
+          "touchante",
+          "désagréable",
+          "ennuyeuse",
+          "froide"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "touchant = دلنشین / تاثیرگذار."
+      },
+      {
+        "type": "mcq",
+        "question": "Elle est très ____ aux critiques et pleure facilement.",
+        "options": [
+          "sensible",
+          "indifférente",
+          "froide",
+          "dure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "sensible = حساس / زودرنج."
+      },
+      {
+        "type": "binary",
+        "question": "La \"sensibilité\" peut désigner la capacité à ressentir vivement les émotions.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، sensibilité به معنای حساسیت عاطفی است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il la regarde avec ____ et amour.",
+        "options": [
+          "tendresse",
+          "froideur",
+          "indifférence",
+          "cruauté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "tendresse = مهربانی / لطافت."
+      },
+      {
+        "type": "mcq",
+        "question": "C'est une grand-mère très ____ avec ses petits-enfants.",
+        "options": [
+          "affectueuse",
+          "froide",
+          "distante",
+          "indifférente"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "affectueux = مهربان / پرمحبت."
+      }
     ]
   }
 }
