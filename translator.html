@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 ربات ترجمه خودکار Dino</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            font-family: Tahoma, Arial; 
+            padding: 20px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container { 
+            max-width: 900px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 { 
+            color: #087F5B; 
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #777;
+            margin-bottom: 30px;
+        }
+        .setup { 
+            background: #f0f9ff;
+            border: 2px solid #087F5B;
+            padding: 20px; 
+            border-radius: 8px; 
+            margin-bottom: 20px;
+        }
+        .setup h3 { margin-top: 0; color: #087F5B; }
+        label { display: block; margin: 12px 0 6px; font-weight: bold; color: #333; }
+        input, select { 
+            width: 100%; 
+            padding: 12px; 
+            border: 1px solid #ddd; 
+            border-radius: 6px; 
+            font-size: 14px;
+            font-family: inherit;
+        }
+        .btn { 
+            background: #087F5B; 
+            color: white; 
+            border: none; 
+            padding: 14px 28px; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            font-size: 16px; 
+            font-weight: bold;
+            width: 100%;
+            margin-top: 15px;
+            transition: all 0.2s;
+        }
+        .btn:hover:not(:disabled) { background: #066b4c; transform: translateY(-2px); }
+        .btn:disabled { background: #ccc; cursor: not-allowed; }
+        .btn-stop { background: #dc2626; }
+        .btn-stop:hover:not(:disabled) { background: #b91c1c; }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .stat-box {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+        .stat-value { font-size: 24px; font-weight: bold; color: #087F5B; }
+        .stat-label { font-size: 12px; color: #777; margin-top: 4px; }
+        .log { 
+            background: #1a1a1a;
+            color: #00ff00;
+            border-radius: 8px; 
+            padding: 15px; 
+            margin-top: 20px; 
+            max-height: 400px; 
+            overflow-y: auto; 
+            font-family: 'Courier New', monospace; 
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .log-entry { margin: 4px 0; }
+        .log-success { color: #00ff00; }
+        .log-error { color: #ff4444; }
+        .log-info { color: #44aaff; }
+        .log-warning { color: #ffaa00; }
+        .progress-bar {
+            background: #e0e0e0;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        .progress-fill {
+            background: linear-gradient(90deg, #087F5B, #10b981);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s;
+        }
+        .help {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .help a { color: #087F5B; font-weight: bold; }
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .status-idle { background: #e0e0e0; color: #666; }
+        .status-running { background: #dbeafe; color: #1d4ed8; animation: pulse 1s infinite; }
+        .status-done { background: #d1fae5; color: #065f46; }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 ربات ترجمه خودکار Dino</h1>
+        <p class="subtitle">ترجمه خودکار تمام داستان‌های واژگان + commit مستقیم به GitHub</p>
+
+        <div class="help">
+            <strong>📋 راهنمای سریع (فقط یک بار):</strong><br>
+            ۱. در GitHub برو به: <a href="https://github.com/settings/tokens" target="_blank">Settings → Tokens</a><br>
+            ۲. دکمه "Generate new token (classic)" را بزن<br>
+            . تیک <code>repo</code> را بزن و token را کپی کن<br>
+            ۴. token را در کادر پایین پیست کن (فقط یک بار ذخیره می‌شود)
+        </div>
+
+        <div class="setup">
+            <h3>⚙️ تنظیمات</h3>
+            <label>GitHub Token (Personal Access Token):</label>
+            <input type="password" id="token" placeholder="ghp_xxxxxxxxxxxx">
+            
+            <label>نام کاربری GitHub:</label>
+            <input type="text" id="username" placeholder="temsahak-rgb">
+            
+            <label>نام مخزن:</label>
+            <input type="text" id="repo" placeholder="Dino-5monde">
+            
+            <label>سطح مورد نظر:</label>
+            <select id="level">
+                <option value="all">همه سطوح (A1, A2, B1, B2, C1, C2)</option>
+                <option value="A1">فقط A1</option>
+                <option value="A2">فقط A2</option>
+                <option value="B1">فقط B1</option>
+                <option value="B2">فقط B2</option>
+                <option value="C1">فقط C1</option>
+                <option value="C2">فقط C2</option>
+            </select>
+
+            <label>تاخیر بین درخواست‌ها (میلی‌ثانیه):</label>
+            <input type="number" id="delay" value="1500" min="500" max="5000">
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-value" id="statTotal">0</div>
+                <div class="stat-label">کل پک‌ها</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="statDone">0</div>
+                <div class="stat-label">ترجمه شده</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="statSkipped">0</div>
+                <div class="stat-label">رد شده</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="statErrors">0</div>
+                <div class="stat-label">خطا</div>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div style="text-align: center;">
+            <span class="status-badge status-idle" id="statusBadge">آماده</span>
+        </div>
+
+        <button class="btn" id="startBtn" onclick="startTranslation()">🚀 شروع ترجمه خودکار</button>
+        <button class="btn btn-stop" id="stopBtn" onclick="stopTranslation()" style="display:none;"> توقف</button>
+
+        <div class="log" id="log"></div>
+    </div>
+
+    <script>
+        let isRunning = false;
+        let shouldStop = false;
+
+        function log(msg, type = 'info') {
+            const logDiv = document.getElementById('log');
+            const time = new Date().toLocaleTimeString('fa-IR');
+            const className = `log-${type}`;
+            logDiv.innerHTML += `<div class="log-entry ${className}">[${time}] ${msg}</div>`;
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+
+        function setStatus(text, className) {
+            const badge = document.getElementById('statusBadge');
+            badge.textContent = text;
+            badge.className = `status-badge status-${className}`;
+        }
+
+        function updateStats(total, done, skipped, errors) {
+            document.getElementById('statTotal').textContent = total;
+            document.getElementById('statDone').textContent = done;
+            document.getElementById('statSkipped').textContent = skipped;
+            document.getElementById('statErrors').textContent = errors;
+        }
+
+        function updateProgress(current, total) {
+            const pct = total > 0 ? (current / total) * 100 : 0;
+            document.getElementById('progressFill').style.width = pct + '%';
+        }
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function translate(text, from = 'fr', to = 'fa') {
+            if (!text || text.trim() === '') return '';
+            
+            const encoded = encodeURIComponent(text);
+            const url = `https://api.mymemory.translated.net/get?q=${encoded}&langpair=${from}|${to}`;
+            
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                
+                if (data.responseStatus === 200) {
+                    return data.responseData.translatedText;
+                } else {
+                    log(`⚠️ خطای API: ${data.responseDetails}`, 'warning');
+                    return text;
+                }
+            } catch (e) {
+                log(`❌ خطا در ترجمه: ${e.message}`, 'error');
+                return text;
+            }
+        }
+
+        async function githubGet(path, token, user, repo) {
+            const url = `https://api.github.com/repos/${user}/${repo}/contents/${path}`;
+            const res = await fetch(url, {
+                headers: { 'Authorization': `token ${token}` }
+            });
+            if (!res.ok) throw new Error(`HTTP ${res.status}: ${path}`);
+            return await res.json();
+        }
+
+        async function githubPut(path, content, sha, token, user, repo, message) {
+            const url = `https://api.github.com/repos/${user}/${repo}/contents/${path}`;
+            const res = await fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `token ${token}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    message: message,
+                    content: btoa(unescape(encodeURIComponent(content))),
+                    sha: sha
+                })
+            });
+            if (!res.ok) {
+                const err = await res.text();
+                throw new Error(`PUT failed: ${err}`);
+            }
+            return await res.json();
+        }
+
+        async function processPack(path, token, user, repo, delay) {
+            log(`📥 خواندن: ${path}`, 'info');
+            const file = await githubGet(path, token, user, repo);
+            const content = decodeURIComponent(escape(atob(file.content)));
+            const pack = JSON.parse(content);
+            
+            let changed = false;
+            
+            // ترجمه عنوان پک
+            if (!pack.title_fa && pack.title) {
+                log(`  🔄 عنوان پک: "${pack.title}"`, 'info');
+                pack.title_fa = await translate(pack.title);
+                await sleep(delay);
+                changed = true;
+            }
+
+            if (!pack.stories) {
+                log(`  ️ داستان ندارد`, 'info');
+                return { changed, path, sha: file.sha, content: JSON.stringify(pack, null, 2) };
+            }
+
+            for (const [key, story] of Object.entries(pack.stories)) {
+                if (shouldStop) break;
+                
+                log(`  📖 داستان: ${key}`, 'info');
+
+                if (story.title && !story.title_fa) {
+                    log(`    🔄 عنوان...`, 'info');
+                    story.title_fa = await translate(story.title);
+                    await sleep(delay);
+                    changed = true;
+                }
+
+                if (story.text && !story.text_fa) {
+                    log(`    🔄 متن (با blanks)...`, 'info');
+                    const cleanText = story.text.replace(/\{\{BLANK_\d+\}\}/g, '___');
+                    story.text_fa = await translate(cleanText);
+                    await sleep(delay);
+                    changed = true;
+                }
+
+                if (story.paragraphs) {
+                    for (const para of story.paragraphs) {
+                        if (shouldStop) break;
+                        if (para.fr && !para.fa) {
+                            log(`    🔄 پاراگراف...`, 'info');
+                            para.fa = await translate(para.fr);
+                            await sleep(delay);
+                            changed = true;
+                        }
+                    }
+                }
+            }
+
+            return { changed, path, sha: file.sha, content: JSON.stringify(pack, null, 2) };
+        }
+
+        async function startTranslation() {
+            const token = document.getElementById('token').value.trim();
+            const user = document.getElementById('username').value.trim();
+            const repo = document.getElementById('repo').value.trim();
+            const level = document.getElementById('level').value;
+            const delay = parseInt(document.getElementById('delay').value) || 1500;
+
+            if (!token || !user || !repo) {
+                log('❌ لطفاً همه فیلدها را پر کن', 'error');
+                return;
+            }
+
+            // ذخیره تنظیمات
+            localStorage.setItem('dino_token', token);
+            localStorage.setItem('dino_user', user);
+            localStorage.setItem('dino_repo', repo);
+
+            isRunning = true;
+            shouldStop = false;
+            document.getElementById('startBtn').disabled = true;
+            document.getElementById('stopBtn').style.display = 'inline-block';
+            setStatus('در حال اجرا...', 'running');
+            log('🚀 شروع ترجمه خودکار...', 'info');
+
+            try {
+                // پیدا کردن همه پک‌ها
+                const levels = level === 'all' ? ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] : [level];
+                const allPacks = [];
+
+                for (const lv of levels) {
+                    try {
+                        const listFile = await githubGet(`data/vocabulary/vocab-${lv}.json`, token, user, repo);
+                        const list = JSON.parse(decodeURIComponent(escape(atob(listFile.content))));
+                        for (const pack of list) {
+                            allPacks.push({ level: lv, id: pack.id });
+                        }
+                    } catch (e) {
+                        log(`⚠️ سطح ${lv} پیدا نشد: ${e.message}`, 'warning');
+                    }
+                }
+
+                log(`📊 ${allPacks.length} پک پیدا شد`, 'info');
+                updateStats(allPacks.length, 0, 0, 0);
+
+                let done = 0, skipped = 0, errors = 0;
+
+                for (const pack of allPacks) {
+                    if (shouldStop) {
+                        log('⏹ متوقف شد توسط کاربر', 'warning');
+                        break;
+                    }
+
+                    const path = `data/vocabulary/${pack.level}/${pack.id}.json`;
+                    try {
+                        const result = await processPack(path, token, user, repo, delay);
+                        
+                        if (result.changed) {
+                            log(`  💾 commit: ${path}`, 'success');
+                            await githubPut(
+                                path, 
+                                result.content, 
+                                result.sha, 
+                                token, 
+                                user, 
+                                repo, 
+                                `🤖 auto-translate: add fa translations to ${pack.id}`
+                            );
+                            done++;
+                        } else {
+                            log(`  ✅ از قبل ترجمه شده`, 'info');
+                            skipped++;
+                        }
+                    } catch (e) {
+                        log(`   خطا: ${e.message}`, 'error');
+                        errors++;
+                    }
+
+                    updateStats(allPacks.length, done, skipped, errors);
+                    updateProgress(done + skipped + errors, allPacks.length);
+                }
+
+                setStatus('تمام شد!', 'done');
+                log(`🎉 پایان! ${done} ترجمه، ${skipped} رد شده، ${errors} خطا`, 'success');
+            } catch (e) {
+                log(`❌ خطای کلی: ${e.message}`, 'error');
+                setStatus('خطا!', 'idle');
+            }
+
+            isRunning = false;
+            document.getElementById('startBtn').disabled = false;
+            document.getElementById('stopBtn').style.display = 'none';
+        }
+
+        function stopTranslation() {
+            shouldStop = true;
+            log('⏹ درخواست توقف ارسال شد...', 'warning');
+        }
+
+        // بارگذاری تنظیمات ذخیره شده
+        window.onload = function() {
+            const savedToken = localStorage.getItem('dino_token');
+            const savedUser = localStorage.getItem('dino_user');
+            const savedRepo = localStorage.getItem('dino_repo');
+            if (savedToken) document.getElementById('token').value = savedToken;
+            if (savedUser) document.getElementById('username').value = savedUser;
+            if (savedRepo) document.getElementById('repo').value = savedRepo;
+        };
+    </script>
+</body>
+</html>
