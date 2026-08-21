@@ -5,49 +5,317 @@
   "theme_fa": "تفکر انتقادی و فلسفه",
   "icon": "🤔",
   "inspiration": "The Matrix (film des Wachowski)",
-
   "words": [
-    { "fr": "la vérité", "fa": "حقیقت", "emoji": "💡", "difficulty": 3, "ex": "Il cherche la vérité derrière les apparences.", "ex_fa": "او به دنبال حقیقت پشت ظواهر است." },
-    { "fr": "vrai / vraie", "fa": "درست / واقعی", "emoji": "✅", "difficulty": 2, "ex": "Est-ce que cette histoire est vraie ?", "ex_fa": "آیا این داستان واقعی است؟" },
-    { "fr": "le doute", "fa": "شک / تردید", "emoji": "❓", "difficulty": 3, "ex": "Le doute est le commencement de la sagesse.", "ex_fa": "شک، آغاز خردمندی است." },
-    { "fr": "douter", "fa": "شک کردن", "emoji": "🤨", "difficulty": 3, "ex": "Il doute de tout ce qu'on lui dit.", "ex_fa": "او به هر چه به او گفته می‌شود شک می‌کند." },
-    { "fr": "la certitude", "fa": "یقین / اطمینان", "emoji": "💯", "difficulty": 4, "ex": "Il n'y a aucune certitude dans ce monde.", "ex_fa": "در این دنیا هیچ یقینی وجود ندارد." },
-    { "fr": "l'hypothèse", "fa": "فرضیه", "emoji": "🔬", "difficulty": 5, "ex": "Le scientifique teste son hypothèse en laboratoire.", "ex_fa": "دانشمند فرضیه‌اش را در آزمایشگاه آزمایش می‌کند." },
-    { "fr": "la théorie", "fa": "نظریه / تئوری", "emoji": "📚", "difficulty": 3, "ex": "La théorie de l'évolution a révolutionné la biologie.", "ex_fa": "نظریه تکامل، زیست‌شناسی را متحول کرد." },
-    { "fr": "l'argument", "fa": "استدلال / برهان", "emoji": "⚖️", "difficulty": 4, "ex": "Son argument est logique et convaincant.", "ex_fa": "استدلال او منطقی و متقاعدکننده است." },
-    { "fr": "la logique", "fa": "منطق", "emoji": "🧮", "difficulty": 3, "ex": "Il faut utiliser la logique pour résoudre ce problème.", "ex_fa": "برای حل این مسئله باید از منطق استفاده کرد." },
-    { "fr": "logique", "fa": "منطقی", "emoji": "🎯", "difficulty": 3, "ex": "Sa décision était parfaitement logique.", "ex_fa": "تصمیم او کاملاً منطقی بود." },
-    { "fr": "la philosophie", "fa": "فلسفه", "emoji": "📖", "difficulty": 3, "ex": "La philosophie pose des questions fondamentales.", "ex_fa": "فلسفه پرسش‌های بنیادین مطرح می‌کند." },
-    { "fr": "le philosophe", "fa": "فیلسوف", "emoji": "🎓", "difficulty": 4, "ex": "Socrate est un philosophe grec célèbre.", "ex_fa": "سقراط یک فیلسوف مشهور یونانی است." },
-    { "fr": "la réalité", "fa": "واقعیت", "emoji": "🌍", "difficulty": 3, "ex": "Il confond parfois ses rêves avec la réalité.", "ex_fa": "او گاهی رویاهایش را با واقعیت اشتباه می‌گیرد." },
-    { "fr": "réel / réelle", "fa": "واقعی", "emoji": "👁️", "difficulty": 3, "ex": "Le monde réel est complexe et imprévisible.", "ex_fa": "دنیای واقعی پیچیده و غیرقابل پیش‌بینی است." },
-    { "fr": "l'illusion", "fa": "توهم / فریب", "emoji": "🎭", "difficulty": 4, "ex": "Nos sens peuvent créer des illusions.", "ex_fa": "حواس ما می‌توانند توهم ایجاد کنند." },
-    { "fr": "la conscience", "fa": "آگاهی / وجدان", "emoji": "🧠", "difficulty": 4, "ex": "Prendre conscience de ses erreurs est difficile.", "ex_fa": "آگاه شدن از اشتباهات خود دشوار است." },
-    { "fr": "la question", "fa": "پرسش / سوال", "emoji": "❔", "difficulty": 2, "ex": "Chaque réponse soulève une nouvelle question.", "ex_fa": "هر پاسخ، پرسش جدیدی برمی‌انگیزد." }
+    {
+      "fr": "la vérité",
+      "fa": "حقیقت",
+      "emoji": "💡",
+      "difficulty": 3,
+      "ex": "Il cherche la vérité derrière les apparences.",
+      "ex_fa": "او به دنبال حقیقت پشت ظواهر است."
+    },
+    {
+      "fr": "vrai / vraie",
+      "fa": "درست / واقعی",
+      "emoji": "✅",
+      "difficulty": 2,
+      "ex": "Est-ce que cette histoire est vraie ?",
+      "ex_fa": "آیا این داستان واقعی است؟"
+    },
+    {
+      "fr": "le doute",
+      "fa": "شک / تردید",
+      "emoji": "❓",
+      "difficulty": 3,
+      "ex": "Le doute est le commencement de la sagesse.",
+      "ex_fa": "شک، آغاز خردمندی است."
+    },
+    {
+      "fr": "douter",
+      "fa": "شک کردن",
+      "emoji": "🤨",
+      "difficulty": 3,
+      "ex": "Il doute de tout ce qu'on lui dit.",
+      "ex_fa": "او به هر چه به او گفته می‌شود شک می‌کند."
+    },
+    {
+      "fr": "la certitude",
+      "fa": "یقین / اطمینان",
+      "emoji": "💯",
+      "difficulty": 4,
+      "ex": "Il n'y a aucune certitude dans ce monde.",
+      "ex_fa": "در این دنیا هیچ یقینی وجود ندارد."
+    },
+    {
+      "fr": "l'hypothèse",
+      "fa": "فرضیه",
+      "emoji": "🔬",
+      "difficulty": 5,
+      "ex": "Le scientifique teste son hypothèse en laboratoire.",
+      "ex_fa": "دانشمند فرضیه‌اش را در آزمایشگاه آزمایش می‌کند."
+    },
+    {
+      "fr": "la théorie",
+      "fa": "نظریه / تئوری",
+      "emoji": "📚",
+      "difficulty": 3,
+      "ex": "La théorie de l'évolution a révolutionné la biologie.",
+      "ex_fa": "نظریه تکامل، زیست‌شناسی را متحول کرد."
+    },
+    {
+      "fr": "l'argument",
+      "fa": "استدلال / برهان",
+      "emoji": "⚖️",
+      "difficulty": 4,
+      "ex": "Son argument est logique et convaincant.",
+      "ex_fa": "استدلال او منطقی و متقاعدکننده است."
+    },
+    {
+      "fr": "la logique",
+      "fa": "منطق",
+      "emoji": "🧮",
+      "difficulty": 3,
+      "ex": "Il faut utiliser la logique pour résoudre ce problème.",
+      "ex_fa": "برای حل این مسئله باید از منطق استفاده کرد."
+    },
+    {
+      "fr": "logique",
+      "fa": "منطقی",
+      "emoji": "🎯",
+      "difficulty": 3,
+      "ex": "Sa décision était parfaitement logique.",
+      "ex_fa": "تصمیم او کاملاً منطقی بود."
+    },
+    {
+      "fr": "la philosophie",
+      "fa": "فلسفه",
+      "emoji": "📖",
+      "difficulty": 3,
+      "ex": "La philosophie pose des questions fondamentales.",
+      "ex_fa": "فلسفه پرسش‌های بنیادین مطرح می‌کند."
+    },
+    {
+      "fr": "le philosophe",
+      "fa": "فیلسوف",
+      "emoji": "🎓",
+      "difficulty": 4,
+      "ex": "Socrate est un philosophe grec célèbre.",
+      "ex_fa": "سقراط یک فیلسوف مشهور یونانی است."
+    },
+    {
+      "fr": "la réalité",
+      "fa": "واقعیت",
+      "emoji": "🌍",
+      "difficulty": 3,
+      "ex": "Il confond parfois ses rêves avec la réalité.",
+      "ex_fa": "او گاهی رویاهایش را با واقعیت اشتباه می‌گیرد."
+    },
+    {
+      "fr": "réel / réelle",
+      "fa": "واقعی",
+      "emoji": "👁️",
+      "difficulty": 3,
+      "ex": "Le monde réel est complexe et imprévisible.",
+      "ex_fa": "دنیای واقعی پیچیده و غیرقابل پیش‌بینی است."
+    },
+    {
+      "fr": "l'illusion",
+      "fa": "توهم / فریب",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "Nos sens peuvent créer des illusions.",
+      "ex_fa": "حواس ما می‌توانند توهم ایجاد کنند."
+    },
+    {
+      "fr": "la conscience",
+      "fa": "آگاهی / وجدان",
+      "emoji": "🧠",
+      "difficulty": 4,
+      "ex": "Prendre conscience de ses erreurs est difficile.",
+      "ex_fa": "آگاه شدن از اشتباهات خود دشوار است."
+    },
+    {
+      "fr": "la question",
+      "fa": "پرسش / سوال",
+      "emoji": "❔",
+      "difficulty": 2,
+      "ex": "Chaque réponse soulève une nouvelle question.",
+      "ex_fa": "هر پاسخ، پرسش جدیدی برمی‌انگیزد."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "Le choix de Neo",
       "title_fa": "انتخاب نئو",
       "text": "Thomas Anderson travaille comme programmeur informatique le jour. La nuit, il devient Neo, un pirate informatique qui cherche la {{BLANK_1}} sur Internet. Il {{BLANK_2}} de tout ce que la société lui apprend. Morpheus, un {{BLANK_3}} moderne, le contacte et lui propose un choix crucial. Il lui présente deux pilules : une rouge et une bleue. Morpheus explique son {{BLANK_4}} sur la nature du monde. Selon sa {{BLANK_5}}, le monde que Neo connaît n'est qu'une {{BLANK_6}} créée par des machines. Neo doit utiliser sa {{BLANK_7}} pour comprendre cette révélation. L'{{BLANK_8}} de Morpheus est solide et {{BLANK_9}}. Si Neo prend la pilule bleue, il oubliera tout et retournera à sa vie {{BLANK_10}} normale. S'il prend la pilule rouge, il verra le monde {{BLANK_11}} et prendra {{BLANK_12}} de la vérité. Neo se pose une {{BLANK_13}} fondamentale : qu'est-ce qui est réel ? Il n'a aucune {{BLANK_14}} avant de faire son choix. Finalement, il choisit la pilule rouge et découvre une {{BLANK_15}} choquante qui va changer son existence à jamais.",
       "blanks": [
-        { "id": 1, "answer": "vérité", "options": ["vérité", "musique", "recette", "photo"], "correctIndex": 0 },
-        { "id": 2, "answer": "doute", "options": ["doute", "accepte", "croit", "suit"], "correctIndex": 0 },
-        { "id": 3, "answer": "philosophe", "options": ["philosophe", "cuisinier", "chauffeur", "boulanger"], "correctIndex": 0 },
-        { "id": 4, "answer": "hypothèse", "options": ["hypothèse", "voiture", "vélo", "moto"], "correctIndex": 0 },
-        { "id": 5, "answer": "théorie", "options": ["théorie", "chanson", "recette", "photo"], "correctIndex": 0 },
-        { "id": 6, "answer": "illusion", "options": ["illusion", "vérité", "certitude", "réalité"], "correctIndex": 0 },
-        { "id": 7, "answer": "logique", "options": ["logique", "voiture", "vélo", "moto"], "correctIndex": 0 },
-        { "id": 8, "answer": "argument", "options": ["argument", "chanson", "recette", "photo"], "correctIndex": 0 },
-        { "id": 9, "answer": "logique", "options": ["logique", "absurde", "faux", "illogique"], "correctIndex": 0 },
-        { "id": 10, "answer": "réelle", "options": ["réelle", "fausse", "imaginaire", "virtuelle"], "correctIndex": 0 },
-        { "id": 11, "answer": "réel", "options": ["réel", "faux", "imaginaire", "virtuel"], "correctIndex": 0 },
-        { "id": 12, "answer": "conscience", "options": ["conscience", "ignorance", "oubli", "sommeil"], "correctIndex": 0 },
-        { "id": 13, "answer": "question", "options": ["question", "réponse", "solution", "problème"], "correctIndex": 0 },
-        { "id": 14, "answer": "certitude", "options": ["certitude", "doute", "hésitation", "peur"], "correctIndex": 0 },
-        { "id": 15, "answer": "réalité", "options": ["réalité", "illusion", "fiction", "rêve"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "vérité",
+          "options": [
+            "vérité",
+            "musique",
+            "recette",
+            "photo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "doute",
+          "options": [
+            "doute",
+            "accepte",
+            "croit",
+            "suit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "philosophe",
+          "options": [
+            "philosophe",
+            "cuisinier",
+            "chauffeur",
+            "boulanger"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "hypothèse",
+          "options": [
+            "hypothèse",
+            "voiture",
+            "vélo",
+            "moto"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "théorie",
+          "options": [
+            "théorie",
+            "chanson",
+            "recette",
+            "photo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "illusion",
+          "options": [
+            "illusion",
+            "vérité",
+            "certitude",
+            "réalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "logique",
+          "options": [
+            "logique",
+            "voiture",
+            "vélo",
+            "moto"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "argument",
+          "options": [
+            "argument",
+            "chanson",
+            "recette",
+            "photo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "logique",
+          "options": [
+            "logique",
+            "absurde",
+            "faux",
+            "illogique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "réelle",
+          "options": [
+            "réelle",
+            "fausse",
+            "imaginaire",
+            "virtuelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "réel",
+          "options": [
+            "réel",
+            "faux",
+            "imaginaire",
+            "virtuel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "conscience",
+          "options": [
+            "conscience",
+            "ignorance",
+            "oubli",
+            "sommeil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "question",
+          "options": [
+            "question",
+            "réponse",
+            "solution",
+            "problème"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "certitude",
+          "options": [
+            "certitude",
+            "doute",
+            "hésitation",
+            "peur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "réalité",
+          "options": [
+            "réalité",
+            "illusion",
+            "fiction",
+            "rêve"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Thomas Anderson travaille comme programmeur informatique le jour. La nuit, il devient Neo, un pirate informatique qui cherche la ___ sur Internet. Il ___ de tout ce que la société lui apprend. Morpheus, un ___ moderne, le contacte et lui propose un choix crucial. Il lui présente deux pilules : une rouge et une bleue. Morpheus explique son ___ sur la nature du monde. Selon sa ___, le monde que Neo connaît n'est qu'une ___ créée par des machines. Neo doit utiliser sa ___ pour comprendre cette révélation. L'___ de Morpheus est solide et ___. Si Neo prend la pilule bleue, il oubliera tout et retournera à sa vie ___ normale. S'il prend la pilule rouge, il verra le monde ___ et prendra ___ de la vérité. Neo se pose une ___ fondamentale : qu'est-ce qui est réel ? Il n'a aucune ___ avant de faire son choix. Finalement, il choisit la pilule rouge et découvre une ___ choquante qui va changer son existence à jamais."
     },
     "literary": {
       "title": "La pilule rouge",
@@ -55,46 +323,366 @@
       "inspiration": "The Matrix (film des Wachowski avec Keanu Reeves)",
       "text": "Thomas Anderson menait une double vie : programmeur respecté le jour, hacker rebelle la nuit sous le pseudonyme de Neo. Il cherchait désespérément la {{BLANK_1}} cachée derrière les apparences du monde numérique. Profondément, il {{BLANK_2}} de tout ce que la société de consommation lui enseignait depuis l'enfance. Un homme mystérieux nommé Morpheus, véritable {{BLANK_3}} des temps modernes, le contacta un soir de pluie. Ce mentor lui présenta une {{BLANK_4}} vertigineuse sur la nature même de l'existence humaine. Selon sa {{BLANK_5}} révolutionnaire, le monde que Neo percevait n'était qu'une vaste {{BLANK_6}} informatique créée par des machines intelligentes pour asservir l'humanité. Neo devait mobiliser toute sa {{BLANK_7}} pour appréhender cette révélation métaphysique. L'{{BLANK_8}} de Morpheus était d'une cohérence parfaite et absolument {{BLANK_9}}. Si Neo choisissait la pilule bleue, il retournerait à son existence {{BLANK_10}} confortable mais mensongère. S'il optait pour la pilule rouge, il découvrirait le monde {{BLANK_11}} dans toute sa brutalité et prendrait pleinement {{BLANK_12}} de la vérité libératrice. Face à ce dilemme, Neo se posa la {{BLANK_13}} philosophique fondamentale : qu'est-ce qui définit la réalité ? Il n'avait aucune {{BLANK_14}} absolue avant de tendre la main vers son destin. Finalement, il saisit la pilule rouge et découvrit une {{BLANK_15}} apocalyptique qui allait transformer son existence en une quête métaphysique pour libérer l'humanité de sa prison virtuelle.",
       "blanks": [
-        { "id": 1, "answer": "vérité", "options": ["vérité", "musique", "recette", "photo"], "correctIndex": 0 },
-        { "id": 2, "answer": "doutait", "options": ["doutait", "acceptait", "croyait", "suivait"], "correctIndex": 0 },
-        { "id": 3, "answer": "philosophe", "options": ["philosophe", "cuisinier", "chauffeur", "boulanger"], "correctIndex": 0 },
-        { "id": 4, "answer": "hypothèse", "options": ["hypothèse", "voiture", "vélo", "moto"], "correctIndex": 0 },
-        { "id": 5, "answer": "théorie", "options": ["théorie", "chanson", "recette", "photo"], "correctIndex": 0 },
-        { "id": 6, "answer": "illusion", "options": ["illusion", "vérité", "certitude", "réalité"], "correctIndex": 0 },
-        { "id": 7, "answer": "logique", "options": ["logique", "voiture", "vélo", "moto"], "correctIndex": 0 },
-        { "id": 8, "answer": "argument", "options": ["argument", "chanson", "recette", "photo"], "correctIndex": 0 },
-        { "id": 9, "answer": "logique", "options": ["logique", "absurde", "faux", "illogique"], "correctIndex": 0 },
-        { "id": 10, "answer": "réelle", "options": ["réelle", "fausse", "imaginaire", "virtuelle"], "correctIndex": 0 },
-        { "id": 11, "answer": "réel", "options": ["réel", "faux", "imaginaire", "virtuel"], "correctIndex": 0 },
-        { "id": 12, "answer": "conscience", "options": ["conscience", "ignorance", "oubli", "sommeil"], "correctIndex": 0 },
-        { "id": 13, "answer": "question", "options": ["question", "réponse", "solution", "problème"], "correctIndex": 0 },
-        { "id": 14, "answer": "certitude", "options": ["certitude", "doute", "hésitation", "peur"], "correctIndex": 0 },
-        { "id": 15, "answer": "réalité", "options": ["réalité", "illusion", "fiction", "rêve"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "vérité",
+          "options": [
+            "vérité",
+            "musique",
+            "recette",
+            "photo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "doutait",
+          "options": [
+            "doutait",
+            "acceptait",
+            "croyait",
+            "suivait"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "philosophe",
+          "options": [
+            "philosophe",
+            "cuisinier",
+            "chauffeur",
+            "boulanger"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "hypothèse",
+          "options": [
+            "hypothèse",
+            "voiture",
+            "vélo",
+            "moto"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "théorie",
+          "options": [
+            "théorie",
+            "chanson",
+            "recette",
+            "photo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "illusion",
+          "options": [
+            "illusion",
+            "vérité",
+            "certitude",
+            "réalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "logique",
+          "options": [
+            "logique",
+            "voiture",
+            "vélo",
+            "moto"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "argument",
+          "options": [
+            "argument",
+            "chanson",
+            "recette",
+            "photo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "logique",
+          "options": [
+            "logique",
+            "absurde",
+            "faux",
+            "illogique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "réelle",
+          "options": [
+            "réelle",
+            "fausse",
+            "imaginaire",
+            "virtuelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "réel",
+          "options": [
+            "réel",
+            "faux",
+            "imaginaire",
+            "virtuel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "conscience",
+          "options": [
+            "conscience",
+            "ignorance",
+            "oubli",
+            "sommeil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "question",
+          "options": [
+            "question",
+            "réponse",
+            "solution",
+            "problème"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "certitude",
+          "options": [
+            "certitude",
+            "doute",
+            "hésitation",
+            "peur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "réalité",
+          "options": [
+            "réalité",
+            "illusion",
+            "fiction",
+            "rêve"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Thomas Anderson menait une double vie : programmeur respecté le jour, hacker rebelle la nuit sous le pseudonyme de Neo. Il cherchait désespérément la ___ cachée derrière les apparences du monde numérique. Profondément, il ___ de tout ce que la société de consommation lui enseignait depuis l'enfance. Un homme mystérieux nommé Morpheus, véritable ___ des temps modernes, le contacta un soir de pluie. Ce mentor lui présenta une ___ vertigineuse sur la nature même de l'existence humaine. Selon sa ___ révolutionnaire, le monde que Neo percevait n'était qu'une vaste ___ informatique créée par des machines intelligentes pour asservir l'humanité. Neo devait mobiliser toute sa ___ pour appréhender cette révélation métaphysique. L'___ de Morpheus était d'une cohérence parfaite et absolument ___. Si Neo choisissait la pilule bleue, il retournerait à son existence ___ confortable mais mensongère. S'il optait pour la pilule rouge, il découvrirait le monde ___ dans toute sa brutalité et prendrait pleinement ___ de la vérité libératrice. Face à ce dilemme, Neo se posa la ___ philosophique fondamentale : qu'est-ce qui définit la réalité ? Il n'avait aucune ___ absolue avant de tendre la main vers son destin. Finalement, il saisit la pilule rouge et découvrit une ___ apocalyptique qui allait transformer son existence en une quête métaphysique pour libérer l'humanité de sa prison virtuelle."
     }
   },
-
   "quiz": {
     "title": "Quiz : Pensée critique et Philosophie",
     "title_fa": "آزمون: تفکر انتقادی و فلسفه",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "Le journaliste cherche toujours à rétablir la ____ des faits.", "options": ["vérité", "musique", "recette", "photo"], "correctIndex": 0, "explanation_fa": "vérité = حقیقت." },
-      { "type": "mcq", "question": "Cette information est-elle ____ ou fausse ?", "options": ["vraie", "fausse", "imaginaire", "virtuelle"], "correctIndex": 0, "explanation_fa": "vrai = درست / واقعی." },
-      { "type": "binary", "question": "Le \"doute\" est un état d'incertitude face à une affirmation.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، doute به معنای شک و تردید است." },
-      { "type": "mcq", "question": "Le scientifique ____ de ses propres résultats avant de publier.", "options": ["doute", "accepte", "croit", "suit"], "correctIndex": 0, "explanation_fa": "douter = شک کردن." },
-      { "type": "mcq", "question": "J'ai la ____ absolue qu'il dit la vérité.", "options": ["certitude", "doute", "hésitation", "peur"], "correctIndex": 0, "explanation_fa": "certitude = یقین / اطمینان." },
-      { "type": "mcq", "question": "Le chercheur formule une ____ avant de commencer l'expérience.", "options": ["hypothèse", "voiture", "vélo", "moto"], "correctIndex": 0, "explanation_fa": "hypothèse = فرضیه." },
-      { "type": "mcq", "question": "La ____ de la relativité a été proposée par Einstein.", "options": ["théorie", "chanson", "recette", "photo"], "correctIndex": 0, "explanation_fa": "théorie = نظریه." },
-      { "type": "binary", "question": "Un \"argument\" est une raison ou une preuve utilisée pour convaincre.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، argument به معنای استدلال و برهان است." },
-      { "type": "mcq", "question": "Il faut utiliser la ____ pour résoudre ce problème mathématique.", "options": ["logique", "voiture", "vélo", "moto"], "correctIndex": 0, "explanation_fa": "logique = منطق." },
-      { "type": "mcq", "question": "Sa décision était parfaitement ____ et rationnelle.", "options": ["logique", "absurde", "fausse", "illogique"], "correctIndex": 0, "explanation_fa": "logique = منطقی." },
-      { "type": "mcq", "question": "Platon et Aristote sont des ____ grecs célèbres.", "options": ["philosophes", "cuisiniers", "chauffeurs", "boulangers"], "correctIndex": 0, "explanation_fa": "philosophe = فیلسوف." },
-      { "type": "mcq", "question": "Il est difficile de distinguer le rêve de la ____.", "options": ["réalité", "illusion", "fiction", "mensonge"], "correctIndex": 0, "explanation_fa": "réalité = واقعیت." },
-      { "type": "binary", "question": "L'adjectif \"réel\" qualifie ce qui existe véritablement.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، réel یعنی واقعی." },
-      { "type": "mcq", "question": "Un mirage dans le désert est une ____ optique.", "options": ["illusion", "vérité", "certitude", "réalité"], "correctIndex": 0, "explanation_fa": "illusion = توهم / فریب." },
-      { "type": "mcq", "question": "Prendre ____ de ses privilèges est important.", "options": ["conscience", "ignorance", "oubli", "sommeil"], "correctIndex": 0, "explanation_fa": "conscience = آگاهی / وجدان." },
-      { "type": "mcq", "question": "Chaque bonne ____ mérite une réponse réfléchie.", "options": ["question", "réponse", "solution", "problème"], "correctIndex": 0, "explanation_fa": "question = پرسش / سوال." }
+      {
+        "type": "mcq",
+        "question": "Le journaliste cherche toujours à rétablir la ____ des faits.",
+        "options": [
+          "vérité",
+          "musique",
+          "recette",
+          "photo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "vérité = حقیقت."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette information est-elle ____ ou fausse ?",
+        "options": [
+          "vraie",
+          "fausse",
+          "imaginaire",
+          "virtuelle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "vrai = درست / واقعی."
+      },
+      {
+        "type": "binary",
+        "question": "Le \"doute\" est un état d'incertitude face à une affirmation.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، doute به معنای شک و تردید است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le scientifique ____ de ses propres résultats avant de publier.",
+        "options": [
+          "doute",
+          "accepte",
+          "croit",
+          "suit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "douter = شک کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "J'ai la ____ absolue qu'il dit la vérité.",
+        "options": [
+          "certitude",
+          "doute",
+          "hésitation",
+          "peur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "certitude = یقین / اطمینان."
+      },
+      {
+        "type": "mcq",
+        "question": "Le chercheur formule une ____ avant de commencer l'expérience.",
+        "options": [
+          "hypothèse",
+          "voiture",
+          "vélo",
+          "moto"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "hypothèse = فرضیه."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ de la relativité a été proposée par Einstein.",
+        "options": [
+          "théorie",
+          "chanson",
+          "recette",
+          "photo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "théorie = نظریه."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"argument\" est une raison ou une preuve utilisée pour convaincre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، argument به معنای استدلال و برهان است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il faut utiliser la ____ pour résoudre ce problème mathématique.",
+        "options": [
+          "logique",
+          "voiture",
+          "vélo",
+          "moto"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "logique = منطق."
+      },
+      {
+        "type": "mcq",
+        "question": "Sa décision était parfaitement ____ et rationnelle.",
+        "options": [
+          "logique",
+          "absurde",
+          "fausse",
+          "illogique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "logique = منطقی."
+      },
+      {
+        "type": "mcq",
+        "question": "Platon et Aristote sont des ____ grecs célèbres.",
+        "options": [
+          "philosophes",
+          "cuisiniers",
+          "chauffeurs",
+          "boulangers"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "philosophe = فیلسوف."
+      },
+      {
+        "type": "mcq",
+        "question": "Il est difficile de distinguer le rêve de la ____.",
+        "options": [
+          "réalité",
+          "illusion",
+          "fiction",
+          "mensonge"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "réalité = واقعیت."
+      },
+      {
+        "type": "binary",
+        "question": "L'adjectif \"réel\" qualifie ce qui existe véritablement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، réel یعنی واقعی."
+      },
+      {
+        "type": "mcq",
+        "question": "Un mirage dans le désert est une ____ optique.",
+        "options": [
+          "illusion",
+          "vérité",
+          "certitude",
+          "réalité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "illusion = توهم / فریب."
+      },
+      {
+        "type": "mcq",
+        "question": "Prendre ____ de ses privilèges est important.",
+        "options": [
+          "conscience",
+          "ignorance",
+          "oubli",
+          "sommeil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "conscience = آگاهی / وجدان."
+      },
+      {
+        "type": "mcq",
+        "question": "Chaque bonne ____ mérite une réponse réfléchie.",
+        "options": [
+          "question",
+          "réponse",
+          "solution",
+          "problème"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "question = پرسش / سوال."
+      }
     ]
   }
 }
