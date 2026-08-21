@@ -1,0 +1,72 @@
+{
+  "id": "health_science_norms",
+  "level": "B1",
+  "theme": "Santé, Sciences et Normes",
+  "theme_fa": "پزشکی، سلامت، علم و استانداردها",
+  "icon": "🔬",
+  "inspiration": "Radioactive (film de Marjane Satrapi sur Marie Curie)",
+  "words": [
+    { "fr": "l'opération", "fa": "عمل جراحی", "emoji": "🏥", "difficulty": 3, "ex": "Le chirurgien a réalisé une opération complexe.", "ex_fa": "جراح یک عمل جراحی پیچیده انجام داد." },
+    { "fr": "opérer", "fa": "عمل کردن (جراحی)", "emoji": "🔪", "difficulty": 3, "ex": "Il faut opérer le patient immédiatement.", "ex_fa": "باید بیمار را فوراً عمل کرد." },
+    { "fr": "l'ordonnance", "fa": "نسخه پزشک", "emoji": "📝", "difficulty": 4, "ex": "Le médecin a écrit une ordonnance pour des antibiotiques.", "ex_fa": "پزشک یک نسخه برای آنتی‌بیوتیک‌ها نوشت." },
+    { "fr": "le pharmacien", "fa": "داروساز", "emoji": "⚕️", "difficulty": 3, "ex": "Le pharmacien a expliqué comment prendre les médicaments.", "ex_fa": "داروساز توضیح داد که چگونه داروها را مصرف کنیم." },
+    { "fr": "physique", "fa": "فیزیکی / بدنی", "emoji": "🧬", "difficulty": 2, "ex": "Les radiations ont un effet physique destructeur.", "ex_fa": "تشعشعات اثر فیزیکی مخربی دارند." },
+    { "fr": "le niveau", "fa": "سطح", "emoji": "📊", "difficulty": 2, "ex": "Le niveau de radiation est dangereux.", "ex_fa": "سطح تشعشع خطرناک است." },
+    { "fr": "la norme", "fa": "استاندارد / هنجار", "emoji": "📏", "difficulty": 3, "ex": "Les expériences ne respectent aucune norme de sécurité.", "ex_fa": "آزمایش‌ها هیچ استاندارد ایمنی‌ای را رعایت نمی‌کنند." },
+    { "fr": "observer", "fa": "مشاهده کردن", "emoji": "🔬", "difficulty": 3, "ex": "Elle observe les cellules au microscope.", "ex_fa": "او سلول‌ها را زیر میکروسکوپ مشاهده می‌کند." },
+    { "fr": "optionnel", "fa": "اختیاری", "emoji": "✅", "difficulty": 4, "ex": "Le port des gants n'est pas optionnel dans ce laboratoire.", "ex_fa": "استفاده از دستکش در این آزمایشگاه اختیاری نیست." }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les recherches de Marie",
+      "title_fa": "تحقیقات ماری",
+      "text": "Marie travaille dans un laboratoire médical. Aujourd'hui, elle doit {{BLANK_1}} des tissus au microscope. Son mari, Pierre, prépare une {{BLANK_2}} pour un patient malade. Un chirurgien va l'{{BLANK_3}} demain matin. Marie vérifie le {{BLANK_4}} de radioactivité dans la salle. Ce {{BLANK_5}} est beaucoup trop élevé pour la santé. L'exposition aux rayons a un impact {{BLANK_6}} très grave sur le corps humain. Elle rédige une {{BLANK_7}} médicale pour un collègue souffrant. Il devra aller chez le {{BLANK_8}} pour récupérer les produits nécessaires. Dans ce laboratoire, le port des lunettes de protection n'est pas {{BLANK_9}}, c'est obligatoire. Marie et Pierre ne respectent pas toujours la {{BLANK_10}} de sécurité de l'époque, car ils ignorent encore les vrais dangers de leurs découvertes.",
+      "blanks": [
+        { "id": 1, "answer": "observer", "options": ["observer", "ignorer", "cacher", "détruire"], "correctIndex": 0 },
+        { "id": 2, "answer": "opération", "options": ["opération", "chanson", "recette", "photo"], "correctIndex": 0 },
+        { "id": 3, "answer": "opérer", "options": ["opérer", "chanter", "danser", "cuisiner"], "correctIndex": 0 },
+        { "id": 4, "answer": "niveau", "options": ["niveau", "poids", "âge", "taille"], "correctIndex": 0 },
+        { "id": 5, "answer": "niveau", "options": ["niveau", "poids", "âge", "taille"], "correctIndex": 0 },
+        { "id": 6, "answer": "physique", "options": ["physique", "musical", "littéraire", "financier"], "correctIndex": 0 },
+        { "id": 7, "answer": "ordonnance", "options": ["ordonnance", "facture", "lettre", "photo"], "correctIndex": 0 },
+        { "id": 8, "answer": "pharmacien", "options": ["pharmacien", "boulanger", "boucher", "coiffeur"], "correctIndex": 0 },
+        { "id": 9, "answer": "optionnel", "options": ["optionnel", "obligatoire", "impossible", "interdit"], "correctIndex": 0 },
+        { "id": 10, "answer": "norme", "options": ["norme", "chanson", "recette", "photo"], "correctIndex": 0 }
+      ]
+    },
+    "literary": {
+      "title": "Le prix du radium",
+      "title_fa": "بهای رادیوم",
+      "inspiration": "Radioactive (film de Marjane Satrapi)",
+      "text": "Dans l' hangar glacial de la rue Lhomond, Marie Curie passait ses nuits à {{BLANK_1}} les réactions lumineuses du radium. Son mari Pierre devait subir une {{BLANK_2}} mineure à la main, brûlée par les tubes à essai. Le médecin avait décidé de l'{{BLANK_3}} sous anesthésie locale. Marie mesurait avec inquiétude le {{BLANK_4}} de radiation ambiant qui ne cessait de grimper. Ce {{BLANK_5}} invisible menaçait directement leur intégrité. L'effet {{BLANK_6}} de ces éléments nouveaux sur les tissus humains restait un mystère total. Avant de partir à l'hôpital, Pierre avait laissé une {{BLANK_7}} sur le bureau pour son assistant. Ce dernier devait courir chez le {{BLANK_8}} du quartier pour acheter des produits apaisants. À cette époque, le port d'un tablier en plomb n'était qu'{{BLANK_9}} pour les chercheurs audacieux. La communauté scientifique n'avait encore établi aucune {{BLANK_10}} stricte de radioprotection, laissant les pionniers sacrifier leur propre santé sur l'autel de la science moderne.",
+      "blanks": [
+        { "id": 1, "answer": "observer", "options": ["observer", "ignorer", "cacher", "fuir"], "correctIndex": 0 },
+        { "id": 2, "answer": "opération", "options": ["opération", "chanson", "danse", "promenade"], "correctIndex": 0 },
+        { "id": 3, "answer": "opérer", "options": ["opérer", "chanter", "danser", "promener"], "correctIndex": 0 },
+        { "id": 4, "answer": "niveau", "options": ["niveau", "poids", "âge", "taille"], "correctIndex": 0 },
+        { "id": 5, "answer": "niveau", "options": ["niveau", "poids", "âge", "taille"], "correctIndex": 0 },
+        { "id": 6, "answer": "physique", "options": ["physique", "musical", "littéraire", "financier"], "correctIndex": 0 },
+        { "id": 7, "answer": "ordonnance", "options": ["ordonnance", "facture", "lettre", "photo"], "correctIndex": 0 },
+        { "id": 8, "answer": "pharmacien", "options": ["pharmacien", "boulanger", "boucher", "coiffeur"], "correctIndex": 0 },
+        { "id": 9, "answer": "optionnel", "options": ["optionnel", "obligatoire", "impossible", "interdit"], "correctIndex": 0 },
+        { "id": 10, "answer": "norme", "options": ["norme", "chanson", "danse", "promenade"], "correctIndex": 0 }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Santé, Sciences et Normes",
+    "title_fa": "آزمون: سلامت، علم و استانداردها",
+    "displayCount": 10,
+    "questions": [
+      { "type": "mcq", "question": "Le chirurgien a réalisé une ____ complexe de six heures.", "options": ["opération", "chanson", "recette", "photo"], "correctIndex": 0, "explanation_fa": "opération = عمل جراحی." },
+      { "type": "mcq", "question": "Il faut ____ le patient immédiatement pour sauver sa jambe.", "options": ["opérer", "chanter", "danser", "cuisiner"], "correctIndex": 0, "explanation_fa": "opérer = عمل کردن (جراحی)." },
+      { "type": "binary", "question": "L'\"ordonnance\" est le papier sur lequel le médecin prescrit des médicaments.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، ordonnance یعنی نسخه پزشک." },
+      { "type": "mcq", "question": "Le ____ m'a expliqué les effets secondaires de ce sirop.", "options": ["pharmacien", "boulanger", "boucher", "coiffeur"], "correctIndex": 0, "explanation_fa": "pharmacien = داروساز." },
+      { "type": "mcq", "question": "Le sport a un impact ____ très positif sur le corps.", "options": ["physique", "musical", "littéraire", "financier"], "correctIndex": 0, "explanation_fa": "physique = فیزیکی و بدنی." },
+      { "type": "mcq", "question": "Le ____ de la mer monte dangereusement à cause du réchauffement.", "options": ["niveau", "poids", "âge", "taille"], "correctIndex": 0, "explanation_fa": "niveau = سطح." },
+      { "type": "mcq", "question": "Cette usine ne respecte aucune ____ environnementale européenne.", "options": ["norme", "chanson", "recette", "photo"], "correctIndex": 0, "explanation_fa": "norme = استاندارد و هنجار." },
+      { "type": "binary", "question": "Le verbe \"observer\" signifie \"regarder avec attention\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، observer یعنی مشاهده کردن." },
+      { "type": "mcq", "question": "Le choix de la couleur de la voiture est ____, vous pouvez prendre celle que vous voulez.", "options": ["optionnel", "obligatoire", "impossible", "interdit"], "correctIndex": 0, "explanation_fa": "optionnel = اختیاری." }
+    ]
+  }
+}
