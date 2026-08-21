@@ -1,0 +1,94 @@
+{
+  "id": "critical_thinking",
+  "level": "B1",
+  "theme": "Pensée critique",
+  "theme_fa": "تفکر انتقادی و حل مسئله",
+  "icon": "🧩",
+  "inspiration": "12 Hommes en colère (film de Sidney Lumet)",
+  "words": [
+    { "fr": "l'avis", "fa": "نظر / عقیده", "emoji": "💬", "difficulty": 2, "ex": "Le juge a demandé l'avis du jury.", "ex_fa": "قاضی نظر هیئت منصفه را پرسید." },
+    { "fr": "l'axe", "fa": "محور / جهت اصلی", "emoji": "📐", "difficulty": 4, "ex": "L'axe principal de l'enquête est la préméditation.", "ex_fa": "محور اصلی تحقیق، پیش‌بینی و نقشه قبلی است." },
+    { "fr": "balancer", "fa": "پرت کردن / دور انداختن (عامیانه)", "emoji": "🗑️", "difficulty": 5, "ex": "Il refuse de balancer ses doutes à la poubelle.", "ex_fa": "او از دور انداختن شک‌هایش خودداری می‌کند." },
+    { "fr": "bizarre", "fa": "عجیب", "emoji": "👽", "difficulty": 2, "ex": "L'arme du crime est très bizarre.", "ex_fa": "اسلحه قتل بسیار عجیب است." },
+    { "fr": "le but", "fa": "هدف", "emoji": "🎯", "difficulty": 2, "ex": "Le but est de douter raisonnablement.", "ex_fa": "هدف این است که به طور منطقی شک کنیم." },
+    { "fr": "le calendrier", "fa": "تقویم / برنامه زمانی", "emoji": "📅", "difficulty": 2, "ex": "Selon le calendrier du suspect, il était ailleurs.", "ex_fa": "طبق برنامه زمانی مظنون، او جای دیگری بوده است." },
+    { "fr": "la catégorie", "fa": "دسته / طبقه", "emoji": "📂", "difficulty": 3, "ex": "Chaque preuve appartient à une catégorie précise.", "ex_fa": "هر مدرک متعلق به یک دسته مشخص است." },
+    { "fr": "catégoriser", "fa": "دسته‌بندی کردن", "emoji": "🗂️", "difficulty": 4, "ex": "Il faut catégoriser les indices trouvés sur place.", "ex_fa": "باید سرنخ‌های یافت شده در محل را دسته‌بندی کرد." },
+    { "fr": "le caractère", "fa": "شخصیت / ویژگی", "emoji": "🎭", "difficulty": 3, "ex": "Le caractère violent du suspect est connu de tous.", "ex_fa": "شخصیت خشن مظنون برای همه شناخته شده است." },
+    { "fr": "caractériser", "fa": "مشخص کردن / ویژگی بارز داشتن", "emoji": "🔍", "difficulty": 4, "ex": "Comment caractériser son état mental ce soir-là ?", "ex_fa": "چون می‌توان وضعیت روانی او را در آن شب مشخص کرد؟" },
+    { "fr": "certainement", "fa": "قطعاً / حتماً", "emoji": "✅", "difficulty": 3, "ex": "Il va certainement changer d'opinion après ça.", "ex_fa": "او قطعاً بعد از این موضوع نظرش را تغییر خواهد داد." },
+    { "fr": "certes", "fa": "البته / یقیناً (برای بیان concede)", "emoji": "⚖️", "difficulty": 5, "ex": "Certes, il a des antécédents, mais il n'était pas là.", "ex_fa": "البته او سابقه دارد، اما آنجا حضور نداشته است." },
+    { "fr": "clairement", "fa": "به وضوح", "emoji": "💡", "difficulty": 2, "ex": "Le juré parle clairement et calmement.", "ex_fa": "عضو هیئت منصفه به وضوح و آرامش صحبت می‌کند." },
+    { "fr": "la clarté", "fa": "وضوح / روشنی", "emoji": "☀️", "difficulty": 4, "ex": "La clarté de son discours persuade les autres.", "ex_fa": "وضوح سخنانش دیگران را متقاعد می‌کند." },
+    { "fr": "combiner", "fa": "ترکیب کردن", "emoji": "🧩", "difficulty": 4, "ex": "Ils finissent par combiner leurs analyses pour l'acquitter.", "ex_fa": "آن‌ها در نهایت تحلیل‌هایشان را برای تبرئه او ترکیب می‌کنند." }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le jury délibère",
+      "title_fa": "مشورت هیئت منصفه",
+      "text": "Le juge demande l'{{BLANK_1}} du jury. L'{{BLANK_2}} principal de l'enquête est la préméditation. Un juré refuse de {{BLANK_3}} une preuve importante à la poubelle. Il trouve l'arme du crime très {{BLANK_4}}. Le {{BLANK_5}} est de douter raisonnablement. Selon le {{BLANK_6}} du suspect, il était ailleurs. Il faut {{BLANK_7}} les indices trouvés. Chaque preuve appartient à une {{BLANK_8}} précise. Le {{BLANK_9}} violent du suspect est connu. Mais comment {{BLANK_10}} son état mental ce soir-là ? Il va {{BLANK_11}} réussir à convaincre les autres. {{BLANK_12}}, l'accusé avait un alibi, mais des doutes persistent. Le juré parle {{BLANK_13}} et calmement. La {{BLANK_14}} de son argumentation impressionne tout le monde. Enfin, ils vont {{BLANK_15}} leurs idées pour atteindre un verdict juste.",
+      "blanks": [
+        { "id": 1, "answer": "avis", "options": ["avis", "silence", "secret", "mensonge"], "correctIndex": 0 },
+        { "id": 2, "answer": "axe", "options": ["axe", "mur", "plafond", "tapis"], "correctIndex": 0 },
+        { "id": 3, "answer": "balancer", "options": ["balancer", "garder", "cacher", "protéger"], "correctIndex": 0 },
+        { "id": 4, "answer": "bizarre", "options": ["bizarre", "normal", "habituel", "logique"], "correctIndex": 0 },
+        { "id": 5, "answer": "but", "options": ["but", "hasard", "accident", "erreur"], "correctIndex": 0 },
+        { "id": 6, "answer": "calendrier", "options": ["calendrier", "passeport", "menu", "ticket"], "correctIndex": 0 },
+        { "id": 7, "answer": "catégoriser", "options": ["catégoriser", "mélanger", "détruire", "oublier"], "correctIndex": 0 },
+        { "id": 8, "answer": "catégorie", "options": ["catégorie", "couleur", "chanson", "odeur"], "correctIndex": 0 },
+        { "id": 9, "answer": "caractère", "options": ["caractère", "poids", "taille", "âge"], "correctIndex": 0 },
+        { "id": 10, "answer": "caractériser", "options": ["caractériser", "ignorer", "effacer", "cacher"], "correctIndex": 0 },
+        { "id": 11, "answer": "certainement", "options": ["certainement", "jamais", "rarement", "impossible"], "correctIndex": 0 },
+        { "id": 12, "answer": "Certes", "options": ["Certes", "Cependant", "Donc", "Ensuite"], "correctIndex": 0 },
+        { "id": 13, "answer": "clairement", "options": ["clairement", "sombrement", "confusément", "secrètement"], "correctIndex": 0 },
+        { "id": 14, "answer": "clarté", "options": ["clarté", "confusion", "obscurité", "complexité"], "correctIndex": 0 },
+        { "id": 15, "answer": "combiner", "options": ["combiner", "séparer", "diviser", "couper"], "correctIndex": 0 }
+      ]
+    },
+    "literary": {
+      "title": "Douze hommes sous la chaleur",
+      "title_fa": "دوازده مرد در گرما",
+      "inspiration": "12 Hommes en colère (film de Sidney Lumet)",
+      "text": "La salle de délibération était étouffante en cet après-midi d'été. Les douze jurés étaient épuisés et voulaient en finir. Le juge venait de demander leur {{BLANK_1}} sur la culpabilité du jeune accusé. Pour la majorité, l'{{BLANK_2}} de l'accusation était solide : le garçon avait planifié le meurtre. Mais le juré numéro huit refusait de {{BLANK_3}} ses doutes à la poubelle juste pour rentrer chez lui. Il trouvait la trajectoire du couteau, l'arme du crime, franchement {{BLANK_4}}. Son {{BLANK_5}} n'était pas de dire que le garçon était innocent, mais d'examiner les faits. Il a sorti le {{BLANK_6}} des événements de la soirée pour vérifier les horaires. Il a proposé de {{BLANK_7}} méthodiquement les témoignages. Chaque déclaration entrait dans une {{BLANK_8}} précise : les faits, les suppositions, les mensonges. Tout le monde connaissait le {{BLANK_9}} impulsif du garçon, mais comment {{BLANK_10}} sa réaction exacte face à la menace de son père ? Le juré numéro huit savait qu'il allait {{BLANK_11}} provoquer la colère des autres. {{BLANK_12}}, le garçon avait un casier judiciaire, mais cela ne prouvait rien pour ce soir précis. Il a exposé ses arguments {{BLANK_13}}, sans hausser le ton. La {{BLANK_14}} de sa logique a commencé à fissurer les certitudes de la salle. Finalement, les douze hommes ont dû {{BLANK_15}} leurs différentes perspectives pour rendre un verdict d'acquittement.",
+      "blanks": [
+        { "id": 1, "answer": "avis", "options": ["avis", "silence", "secret", "mensonge"], "correctIndex": 0 },
+        { "id": 2, "answer": "axe", "options": ["axe", "mur", "plafond", "tapis"], "correctIndex": 0 },
+        { "id": 3, "answer": "balancer", "options": ["balancer", "garder", "cacher", "protéger"], "correctIndex": 0 },
+        { "id": 4, "answer": "bizarre", "options": ["bizarre", "normal", "habituel", "logique"], "correctIndex": 0 },
+        { "id": 5, "answer": "but", "options": ["but", "hasard", "accident", "erreur"], "correctIndex": 0 },
+        { "id": 6, "answer": "calendrier", "options": ["calendrier", "passeport", "menu", "ticket"], "correctIndex": 0 },
+        { "id": 7, "answer": "catégoriser", "options": ["catégoriser", "mélanger", "détruire", "oublier"], "correctIndex": 0 },
+        { "id": 8, "answer": "catégorie", "options": ["catégorie", "couleur", "chanson", "odeur"], "correctIndex": 0 },
+        { "id": 9, "answer": "caractère", "options": ["caractère", "poids", "taille", "âge"], "correctIndex": 0 },
+        { "id": 10, "answer": "caractériser", "options": ["caractériser", "ignorer", "effacer", "cacher"], "correctIndex": 0 },
+        { "id": 11, "answer": "certainement", "options": ["certainement", "jamais", "rarement", "impossible"], "correctIndex": 0 },
+        { "id": 12, "answer": "Certes", "options": ["Certes", "Cependant", "Donc", "Ensuite"], "correctIndex": 0 },
+        { "id": 13, "answer": "clairement", "options": ["clairement", "sombrement", "confusément", "secrètement"], "correctIndex": 0 },
+        { "id": 14, "answer": "clarté", "options": ["clarté", "confusion", "obscurité", "complexité"], "correctIndex": 0 },
+        { "id": 15, "answer": "combiner", "options": ["combiner", "séparer", "diviser", "couper"], "correctIndex": 0 }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Pensée critique",
+    "title_fa": "آزمون: تفکر انتقادی",
+    "displayCount": 10,
+    "questions": [
+      { "type": "mcq", "question": "Le professeur a demandé mon ____ sur ce roman contemporain.", "options": ["avis", "silence", "secret", "mensonge"], "correctIndex": 0, "explanation_fa": "avis = نظر و عقیده." },
+      { "type": "mcq", "question": "L'____ de notre stratégie marketing est la fidélisation client.", "options": ["axe", "mur", "plafond", "tapis"], "correctIndex": 0, "explanation_fa": "axe = محور و جهت اصلی." },
+      { "type": "binary", "question": "Le verbe \"balancer\" en langage familier peut signifier \"jeter à la poubelle\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، در زبان عامیانه balancer یعنی دور انداختن یا پرت کردن." },
+      { "type": "mcq", "question": "Il portait un chapeau vert et des chaussures rouges, c'était très ____.", "options": ["bizarre", "normal", "habituel", "logique"], "correctIndex": 0, "explanation_fa": "bizarre = عجیب و غیرعادی." },
+      { "type": "mcq", "question": "Le ____ de cette réunion est de trouver une solution rapide.", "options": ["but", "hasard", "accident", "erreur"], "correctIndex": 0, "explanation_fa": "but = هدف." },
+      { "type": "mcq", "question": "Regarde ton ____ pour savoir quel jour nous sommes.", "options": ["calendrier", "passeport", "menu", "ticket"], "correctIndex": 0, "explanation_fa": "calendrier = تقویم." },
+      { "type": "mcq", "question": "Il faut ____ les déchets : le plastique d'un côté, le papier de l'autre.", "options": ["catégoriser", "mélanger", "détruire", "oublier"], "correctIndex": 0, "explanation_fa": "catégoriser = دسته‌بندی کردن." },
+      { "type": "mcq", "question": "Ce livre entre dans la ____ des romans policiers.", "options": ["catégorie", "couleur", "chanson", "odeur"], "correctIndex": 0, "explanation_fa": "catégorie = دسته و طبقه." },
+      { "type": "mcq", "question": "Elle a un ____ très fort, elle n'abandonne jamais.", "options": ["caractère", "poids", "taille", "âge"], "correctIndex": 0, "explanation_fa": "caractère = شخصیت و خوی." },
+      { "type": "binary", "question": "\"Caractériser\" signifie \"décrire les traits distinctifs de quelque chose\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، caractériser یعنی مشخص کردن ویژگی‌های بارز." },
+      { "type": "mcq", "question": "Il va ____ pleuvoir cet après-midi, le ciel est tout noir.", "options": ["certainement", "jamais", "rarement", "impossible"], "correctIndex": 0, "explanation_fa": "certainement = قطعاً و حتماً." },
+      { "type": "mcq", "question": "____, ce projet est coûteux, mais il est indispensable pour l'avenir.", "options": ["Certes", "Cependant", "Donc", "Ensuite"], "correctIndex": 0, "explanation_fa": "Certes = البته / یقیناً (برای بیان یک امتیاز قبل از بیان یک نقطه ضعف یا برعکس)." },
+      { "type": "mcq", "question": "Le professeur a expliqué la règle ____ pour que tout le monde comprenne.", "options": ["clairement", "sombrement", "confusément", "secrètement"], "correctIndex": 0, "explanation_fa": "clairement = به وضوح و روشنی." },
+      { "type": "mcq", "question": "La ____ de l'eau de cette rivière permet de voir les poissons.", "options": ["clarté", "confusion", "obscurité", "complexité"], "correctIndex": 0, "explanation_fa": "clarté = وضوح و شفافی." },
+      { "type": "mcq", "question": "Le chef cuisinier aime ____ les saveurs sucrées et salées.", "options": ["combiner", "séparer", "diviser", "couper"], "correctIndex": 0, "explanation_fa": "combiner = ترکیب کردن." }
+    ]
+  }
+}
