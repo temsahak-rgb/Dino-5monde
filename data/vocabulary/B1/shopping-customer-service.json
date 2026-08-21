@@ -5,54 +5,363 @@
   "theme_fa": "خرید، خدمات مشتریان و تجارت",
   "icon": "🛍️",
   "inspiration": "Confessions d'une accro du shopping (film de P.J. Hogan)",
-
   "words": [
-    { "fr": "acheter", "fa": "خریدن", "emoji": "🛒", "difficulty": 2, "ex": "Elle adore acheter des chaussures en solde.", "ex_fa": "او عاشق خریدن کفش در حراجی است." },
-    { "fr": "le client / la cliente", "fa": "مشتری", "emoji": "🛍️", "difficulty": 2, "ex": "La cliente a demandé à parler au directeur.", "ex_fa": "مشتری درخواست کرد با مدیر صحبت کند." },
-    { "fr": "le magasin", "fa": "فروشگاه / مغازه", "emoji": "🏪", "difficulty": 2, "ex": "Le magasin ferme à vingt heures ce soir.", "ex_fa": "فروشگاه امشب ساعت بیست تعطیل می‌شود." },
-    { "fr": "la livraison", "fa": "تحویل کالا", "emoji": "📦", "difficulty": 3, "ex": "La livraison à domicile est gratuite dès cinquante euros.", "ex_fa": "تحویل در منزل از پنجاه یورو به بالا رایگان است." },
-    { "fr": "livrer", "fa": "تحویل دادن", "emoji": "🚚", "difficulty": 3, "ex": "Le facteur va livrer le colis demain matin.", "ex_fa": "پستچی فردا صبح بسته را تحویل خواهد داد." },
-    { "fr": "le prix", "fa": "قیمت", "emoji": "💰", "difficulty": 2, "ex": "Le prix de ce manteau est vraiment excessif.", "ex_fa": "قیمت این پالتو واقعاً زیاد است." },
-    { "fr": "la réduction", "fa": "تخفیف", "emoji": "🏷️", "difficulty": 3, "ex": "Elle a obtenu une réduction de trente pour cent.", "ex_fa": "او سی درصد تخفیف گرفت." },
-    { "fr": "réduire", "fa": "کاهش دادن", "emoji": "📉", "difficulty": 3, "ex": "Le vendeur a accepté de réduire le prix.", "ex_fa": "فروشنده قبول کرد قیمت را کاهش دهد." },
-    { "fr": "rembourser", "fa": "پس دادن پول / بازپرداخت کردن", "emoji": "💵", "difficulty": 4, "ex": "La boutique doit rembourser les articles défectueux.", "ex_fa": "مغازه باید کالاهای معیوب را پس بدهد." },
-    { "fr": "le remboursement", "fa": "بازپرداخت", "emoji": "💳", "difficulty": 4, "ex": "Le remboursement sera effectué sous huit jours.", "ex_fa": "بازپرداخت ظرف هشت روز انجام خواهد شد." },
-    { "fr": "la taille", "fa": "سایز", "emoji": "📏", "difficulty": 2, "ex": "Cette robe n'est pas à la bonne taille.", "ex_fa": "این لباس سایز مناسبی ندارد." },
-    { "fr": "vendre", "fa": "فروختن", "emoji": "💱", "difficulty": 2, "ex": "Il vend des vêtements de créateurs.", "ex_fa": "او لباس‌های طراحان مد می‌فروشد." },
-    { "fr": "la vente", "fa": "فروش", "emoji": "📊", "difficulty": 3, "ex": "Les ventes ont augmenté pendant les fêtes.", "ex_fa": "فروش در طول تعطیلات افزایش یافت." },
-    { "fr": "le vendeur / la vendeuse", "fa": "فروشنده", "emoji": "🧑‍💼", "difficulty": 2, "ex": "La vendeuse était très sympathique et attentionnée.", "ex_fa": "فروشنده بسیار خوش‌برخورد و با محبت بود." },
-    { "fr": "la vitrine", "fa": "ویترین", "emoji": "🪟", "difficulty": 4, "ex": "Elle passe des heures à regarder les vitrines.", "ex_fa": "او ساعت‌ها به تماشای ویترین‌ها می‌گذراند." },
-    { "fr": "l'essayage", "fa": "پرو کردن", "emoji": "👗", "difficulty": 5, "ex": "Les cabines d'essayage sont au fond du magasin.", "ex_fa": "اتاق‌های پرو در انتهای فروشگاه هستند." },
-    { "fr": "essayer", "fa": "پرو کردن / امتحان کردن", "emoji": "👔", "difficulty": 2, "ex": "Tu devrais essayer cette veste avant de l'acheter.", "ex_fa": "باید قبل از خریدن این کت آن را پرو کنی." },
-    { "fr": "la caisse", "fa": "صندوق پرداخت", "emoji": "💸", "difficulty": 3, "ex": "Il y a une longue file d'attente à la caisse.", "ex_fa": "صف طولانی در صندوق پرداخت وجود دارد." },
-    { "fr": "le reçu", "fa": "رسید / فاکتور خرید", "emoji": "🧾", "difficulty": 4, "ex": "Gardez bien votre reçu en cas d'échange.", "ex_fa": "رسید خود را برای تعویض احتمالی نگه دارید." },
-    { "fr": "la cabine", "fa": "اتاقک / اتاق پرو", "emoji": "🚪", "difficulty": 3, "ex": "Une cabine est libre, tu peux entrer.", "ex_fa": "یک اتاقک خالی است، می‌توانی وارد شوی." }
+    {
+      "fr": "acheter",
+      "fa": "خریدن",
+      "emoji": "🛒",
+      "difficulty": 2,
+      "ex": "Elle adore acheter des chaussures en solde.",
+      "ex_fa": "او عاشق خریدن کفش در حراجی است."
+    },
+    {
+      "fr": "le client / la cliente",
+      "fa": "مشتری",
+      "emoji": "🛍️",
+      "difficulty": 2,
+      "ex": "La cliente a demandé à parler au directeur.",
+      "ex_fa": "مشتری درخواست کرد با مدیر صحبت کند."
+    },
+    {
+      "fr": "le magasin",
+      "fa": "فروشگاه / مغازه",
+      "emoji": "🏪",
+      "difficulty": 2,
+      "ex": "Le magasin ferme à vingt heures ce soir.",
+      "ex_fa": "فروشگاه امشب ساعت بیست تعطیل می‌شود."
+    },
+    {
+      "fr": "la livraison",
+      "fa": "تحویل کالا",
+      "emoji": "📦",
+      "difficulty": 3,
+      "ex": "La livraison à domicile est gratuite dès cinquante euros.",
+      "ex_fa": "تحویل در منزل از پنجاه یورو به بالا رایگان است."
+    },
+    {
+      "fr": "livrer",
+      "fa": "تحویل دادن",
+      "emoji": "🚚",
+      "difficulty": 3,
+      "ex": "Le facteur va livrer le colis demain matin.",
+      "ex_fa": "پستچی فردا صبح بسته را تحویل خواهد داد."
+    },
+    {
+      "fr": "le prix",
+      "fa": "قیمت",
+      "emoji": "💰",
+      "difficulty": 2,
+      "ex": "Le prix de ce manteau est vraiment excessif.",
+      "ex_fa": "قیمت این پالتو واقعاً زیاد است."
+    },
+    {
+      "fr": "la réduction",
+      "fa": "تخفیف",
+      "emoji": "🏷️",
+      "difficulty": 3,
+      "ex": "Elle a obtenu une réduction de trente pour cent.",
+      "ex_fa": "او سی درصد تخفیف گرفت."
+    },
+    {
+      "fr": "réduire",
+      "fa": "کاهش دادن",
+      "emoji": "📉",
+      "difficulty": 3,
+      "ex": "Le vendeur a accepté de réduire le prix.",
+      "ex_fa": "فروشنده قبول کرد قیمت را کاهش دهد."
+    },
+    {
+      "fr": "rembourser",
+      "fa": "پس دادن پول / بازپرداخت کردن",
+      "emoji": "💵",
+      "difficulty": 4,
+      "ex": "La boutique doit rembourser les articles défectueux.",
+      "ex_fa": "مغازه باید کالاهای معیوب را پس بدهد."
+    },
+    {
+      "fr": "le remboursement",
+      "fa": "بازپرداخت",
+      "emoji": "💳",
+      "difficulty": 4,
+      "ex": "Le remboursement sera effectué sous huit jours.",
+      "ex_fa": "بازپرداخت ظرف هشت روز انجام خواهد شد."
+    },
+    {
+      "fr": "la taille",
+      "fa": "سایز",
+      "emoji": "📏",
+      "difficulty": 2,
+      "ex": "Cette robe n'est pas à la bonne taille.",
+      "ex_fa": "این لباس سایز مناسبی ندارد."
+    },
+    {
+      "fr": "vendre",
+      "fa": "فروختن",
+      "emoji": "💱",
+      "difficulty": 2,
+      "ex": "Il vend des vêtements de créateurs.",
+      "ex_fa": "او لباس‌های طراحان مد می‌فروشد."
+    },
+    {
+      "fr": "la vente",
+      "fa": "فروش",
+      "emoji": "📊",
+      "difficulty": 3,
+      "ex": "Les ventes ont augmenté pendant les fêtes.",
+      "ex_fa": "فروش در طول تعطیلات افزایش یافت."
+    },
+    {
+      "fr": "le vendeur / la vendeuse",
+      "fa": "فروشنده",
+      "emoji": "🧑‍💼",
+      "difficulty": 2,
+      "ex": "La vendeuse était très sympathique et attentionnée.",
+      "ex_fa": "فروشنده بسیار خوش‌برخورد و با محبت بود."
+    },
+    {
+      "fr": "la vitrine",
+      "fa": "ویترین",
+      "emoji": "🪟",
+      "difficulty": 4,
+      "ex": "Elle passe des heures à regarder les vitrines.",
+      "ex_fa": "او ساعت‌ها به تماشای ویترین‌ها می‌گذراند."
+    },
+    {
+      "fr": "l'essayage",
+      "fa": "پرو کردن",
+      "emoji": "👗",
+      "difficulty": 5,
+      "ex": "Les cabines d'essayage sont au fond du magasin.",
+      "ex_fa": "اتاق‌های پرو در انتهای فروشگاه هستند."
+    },
+    {
+      "fr": "essayer",
+      "fa": "پرو کردن / امتحان کردن",
+      "emoji": "👔",
+      "difficulty": 2,
+      "ex": "Tu devrais essayer cette veste avant de l'acheter.",
+      "ex_fa": "باید قبل از خریدن این کت آن را پرو کنی."
+    },
+    {
+      "fr": "la caisse",
+      "fa": "صندوق پرداخت",
+      "emoji": "💸",
+      "difficulty": 3,
+      "ex": "Il y a une longue file d'attente à la caisse.",
+      "ex_fa": "صف طولانی در صندوق پرداخت وجود دارد."
+    },
+    {
+      "fr": "le reçu",
+      "fa": "رسید / فاکتور خرید",
+      "emoji": "🧾",
+      "difficulty": 4,
+      "ex": "Gardez bien votre reçu en cas d'échange.",
+      "ex_fa": "رسید خود را برای تعویض احتمالی نگه دارید."
+    },
+    {
+      "fr": "la cabine",
+      "fa": "اتاقک / اتاق پرو",
+      "emoji": "🚪",
+      "difficulty": 3,
+      "ex": "Une cabine est libre, tu peux entrer.",
+      "ex_fa": "یک اتاقک خالی است، می‌توانی وارد شوی."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "Une journée de shopping",
       "title_fa": "یک روز خرید",
       "text": "Rebecca est une journaliste qui adore {{BLANK_1}} des vêtements. Ce matin, elle passe devant un grand {{BLANK_2}} de luxe. Elle s'arrête devant la {{BLANK_3}} pour admirer une magnifique écharpe en soie. Le {{BLANK_4}} est élevé, mais il y a une belle {{BLANK_5}} de quarante pour cent aujourd'hui. Rebecca entre dans la boutique et une {{BLANK_6}} très aimable l'accueille. Elle demande à {{BLANK_7}} l'écharpe autour de son cou. Puis, elle décide de regarder les robes et cherche sa {{BLANK_8}} habituelle. Elle entre dans une {{BLANK_9}} d'essayage pour passer une robe verte. La robe lui va parfaitement ! Elle se dirige vers la {{BLANK_10}} pour payer. La vendeuse lui donne un {{BLANK_11}} qu'elle range dans son sac. De retour chez elle, elle commande un livre en ligne. La {{BLANK_12}} est prévue pour vendredi. Le magasin s'engage à {{BLANK_13}} le colis directement à son domicile. Hélas, le livre arrive avec une page déchirée. Rebecca contacte le service {{BLANK_14}} pour réclamer un {{BLANK_15}} immédiat. Grâce à la politique de {{BLANK_16}} généreuse du site, elle sera remboursée sous cinq jours. Les {{BLANK_17}} du mois prochain risquent d'être difficiles à cause de ses dépenses excessives !",
       "blanks": [
-        { "id": 1, "answer": "acheter", "options": ["acheter", "vendre", "fabriquer", "dessiner"], "correctIndex": 0 },
-        { "id": 2, "answer": "magasin", "options": ["magasin", "hôpital", "école", "musée"], "correctIndex": 0 },
-        { "id": 3, "answer": "vitrine", "options": ["vitrine", "cuisine", "toilette", "garage"], "correctIndex": 0 },
-        { "id": 4, "answer": "prix", "options": ["prix", "poids", "âge", "taille"], "correctIndex": 0 },
-        { "id": 5, "answer": "réduction", "options": ["réduction", "augmentation", "hausse", "majoration"], "correctIndex": 0 },
-        { "id": 6, "answer": "vendeuse", "options": ["vendeuse", "cliente", "acheteuse", "directrice"], "correctIndex": 0 },
-        { "id": 7, "answer": "essayer", "options": ["essayer", "refuser", "cacher", "jeter"], "correctIndex": 0 },
-        { "id": 8, "answer": "taille", "options": ["taille", "couleur", "matière", "marque"], "correctIndex": 0 },
-        { "id": 9, "answer": "cabine", "options": ["cabine", "cuisine", "toilette", "garage"], "correctIndex": 0 },
-        { "id": 10, "answer": "caisse", "options": ["caisse", "sortie", "entrée", "réserve"], "correctIndex": 0 },
-        { "id": 11, "answer": "reçu", "options": ["reçu", "cadeau", "photo", "menu"], "correctIndex": 0 },
-        { "id": 12, "answer": "livraison", "options": ["livraison", "destruction", "fabrication", "invention"], "correctIndex": 0 },
-        { "id": 13, "answer": "livrer", "options": ["livrer", "voler", "perdre", "cacher"], "correctIndex": 0 },
-        { "id": 14, "answer": "client", "options": ["client", "vendeur", "directeur", "patron"], "correctIndex": 0 },
-        { "id": 15, "answer": "remboursement", "options": ["remboursement", "cadeau", "échange", "réduction"], "correctIndex": 0 },
-        { "id": 16, "answer": "vente", "options": ["vente", "location", "fabrication", "création"], "correctIndex": 0 },
-        { "id": 17, "answer": "ventes", "options": ["ventes", "achats", "productions", "créations"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "acheter",
+          "options": [
+            "acheter",
+            "vendre",
+            "fabriquer",
+            "dessiner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "magasin",
+          "options": [
+            "magasin",
+            "hôpital",
+            "école",
+            "musée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "vitrine",
+          "options": [
+            "vitrine",
+            "cuisine",
+            "toilette",
+            "garage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "prix",
+          "options": [
+            "prix",
+            "poids",
+            "âge",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "réduction",
+          "options": [
+            "réduction",
+            "augmentation",
+            "hausse",
+            "majoration"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "vendeuse",
+          "options": [
+            "vendeuse",
+            "cliente",
+            "acheteuse",
+            "directrice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "essayer",
+          "options": [
+            "essayer",
+            "refuser",
+            "cacher",
+            "jeter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "taille",
+          "options": [
+            "taille",
+            "couleur",
+            "matière",
+            "marque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cabine",
+          "options": [
+            "cabine",
+            "cuisine",
+            "toilette",
+            "garage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "caisse",
+          "options": [
+            "caisse",
+            "sortie",
+            "entrée",
+            "réserve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "reçu",
+          "options": [
+            "reçu",
+            "cadeau",
+            "photo",
+            "menu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "livraison",
+          "options": [
+            "livraison",
+            "destruction",
+            "fabrication",
+            "invention"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "livrer",
+          "options": [
+            "livrer",
+            "voler",
+            "perdre",
+            "cacher"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "client",
+          "options": [
+            "client",
+            "vendeur",
+            "directeur",
+            "patron"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "remboursement",
+          "options": [
+            "remboursement",
+            "cadeau",
+            "échange",
+            "réduction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "vente",
+          "options": [
+            "vente",
+            "location",
+            "fabrication",
+            "création"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 17,
+          "answer": "ventes",
+          "options": [
+            "ventes",
+            "achats",
+            "productions",
+            "créations"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Rebecca est une journaliste qui adore ___ des vêtements. Ce matin, elle passe devant un grand ___ de luxe. Elle s'arrête devant la ___ pour admirer une magnifique écharpe en soie. Le ___ est élevé, mais il y a une belle ___ de quarante pour cent aujourd'hui. Rebecca entre dans la boutique et une ___ très aimable l'accueille. Elle demande à ___ l'écharpe autour de son cou. Puis, elle décide de regarder les robes et cherche sa ___ habituelle. Elle entre dans une ___ d'essayage pour passer une robe verte. La robe lui va parfaitement ! Elle se dirige vers la ___ pour payer. La vendeuse lui donne un ___ qu'elle range dans son sac. De retour chez elle, elle commande un livre en ligne. La ___ est prévue pour vendredi. Le magasin s'engage à ___ le colis directement à son domicile. Hélas, le livre arrive avec une page déchirée. Rebecca contacte le service ___ pour réclamer un ___ immédiat. Grâce à la politique de ___ généreuse du site, elle sera remboursée sous cinq jours. Les ___ du mois prochain risquent d'être difficiles à cause de ses dépenses excessives !"
     },
     "literary": {
       "title": "L'écharpe en soie verte",
@@ -60,51 +369,424 @@
       "inspiration": "Confessions d'une accro du shopping (Confessions of a Shopaholic)",
       "text": "Rebecca Bloomwood marchait d'un pas décidé sur la Cinquième Avenue, ses talons claquant sur le trottoir new-yorkais. Elle était en retard pour son entretien au magazine Alette, mais une force magnétique l'attirait vers la {{BLANK_1}} de Denny & George. Cette écharpe en soie verte, repérée trois jours plus tôt, l'appelait comme un chant de sirène. Elle devait absolument l'{{BLANK_2}} avant qu'une autre femme ne la lui vole. Le {{BLANK_3}} affiché était exorbitant pour une journaliste débutante, mais la {{BLANK_4}} exceptionnelle de cinquante pour cent rendait l'affaire irrésistible. Elle a poussé la porte vitrée du {{BLANK_5}} avec l'assurance d'une habituée des lieux chics. Une {{BLANK_6}} aux manières parfaites s'est immédiatement approchée d'elle. Rebecca a demandé à {{BLANK_7}} l'écharpe devant un miroir doré, frissonnant de plaisir au contact de la soie. Elle a ensuite jeté son dévolu sur une robe noire qui semblait être à sa {{BLANK_8}} exacte. Elle s'est glissée dans une {{BLANK_9}} d'essayage pour vérifier la coupe flatteuse. La robe épousait ses formes avec une élégance rare. Elle a rejoint la {{BLANK_10}} en feignant l'indifférence, son sac débordant de trouvailles. La vendeuse lui a tendu un {{BLANK_11}} qu'elle a fourré négligemment dans son sac à main. En sortant, elle a composé le numéro du service {{BLANK_12}} de sa banque pour demander un découvert supplémentaire. Plus tard dans la journée, une {{BLANK_13}} inattendue est arrivée à son appartement : les chaussures commandées la veille. Hélas, la paire était deux pointures trop petite. Rebecca a immédiatement appelé le magasin pour exiger un {{BLANK_14}} complet. Grâce à sa carte de fidélité, la politique de {{BLANK_15}} en ligne était exceptionnellement clémente. Elle a raccroché en soupirant, sachant pertinemment que ses {{BLANK_16}} du mois suivant seraient compromises. Mais comment résister à l'appel irrésistible d'une belle {{BLANK_17}} new-yorkaise quand on a vingt-cinq ans et un optimisme financier à toute épreuve ?",
       "blanks": [
-        { "id": 1, "answer": "vitrine", "options": ["vitrine", "cuisine", "toilette", "garage"], "correctIndex": 0 },
-        { "id": 2, "answer": "acheter", "options": ["acheter", "vendre", "fabriquer", "dessiner"], "correctIndex": 0 },
-        { "id": 3, "answer": "prix", "options": ["prix", "poids", "âge", "taille"], "correctIndex": 0 },
-        { "id": 4, "answer": "réduction", "options": ["réduction", "augmentation", "hausse", "majoration"], "correctIndex": 0 },
-        { "id": 5, "answer": "magasin", "options": ["magasin", "hôpital", "école", "musée"], "correctIndex": 0 },
-        { "id": 6, "answer": "vendeuse", "options": ["vendeuse", "cliente", "acheteuse", "amie"], "correctIndex": 0 },
-        { "id": 7, "answer": "essayer", "options": ["essayer", "refuser", "cacher", "jeter"], "correctIndex": 0 },
-        { "id": 8, "answer": "taille", "options": ["taille", "couleur", "matière", "marque"], "correctIndex": 0 },
-        { "id": 9, "answer": "cabine", "options": ["cabine", "cuisine", "toilette", "garage"], "correctIndex": 0 },
-        { "id": 10, "answer": "caisse", "options": ["caisse", "sortie", "entrée", "réserve"], "correctIndex": 0 },
-        { "id": 11, "answer": "reçu", "options": ["reçu", "cadeau", "photo", "menu"], "correctIndex": 0 },
-        { "id": 12, "answer": "client", "options": ["client", "vendeur", "directeur", "patron"], "correctIndex": 0 },
-        { "id": 13, "answer": "livraison", "options": ["livraison", "destruction", "fabrication", "invention"], "correctIndex": 0 },
-        { "id": 14, "answer": "remboursement", "options": ["remboursement", "cadeau", "échange", "réduction"], "correctIndex": 0 },
-        { "id": 15, "answer": "vente", "options": ["vente", "location", "fabrication", "création"], "correctIndex": 0 },
-        { "id": 16, "answer": "ventes", "options": ["ventes", "achats", "productions", "créations"], "correctIndex": 0 },
-        { "id": 17, "answer": "vitrine", "options": ["vitrine", "cuisine", "toilette", "garage"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "vitrine",
+          "options": [
+            "vitrine",
+            "cuisine",
+            "toilette",
+            "garage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "acheter",
+          "options": [
+            "acheter",
+            "vendre",
+            "fabriquer",
+            "dessiner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "prix",
+          "options": [
+            "prix",
+            "poids",
+            "âge",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "réduction",
+          "options": [
+            "réduction",
+            "augmentation",
+            "hausse",
+            "majoration"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "magasin",
+          "options": [
+            "magasin",
+            "hôpital",
+            "école",
+            "musée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "vendeuse",
+          "options": [
+            "vendeuse",
+            "cliente",
+            "acheteuse",
+            "amie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "essayer",
+          "options": [
+            "essayer",
+            "refuser",
+            "cacher",
+            "jeter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "taille",
+          "options": [
+            "taille",
+            "couleur",
+            "matière",
+            "marque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cabine",
+          "options": [
+            "cabine",
+            "cuisine",
+            "toilette",
+            "garage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "caisse",
+          "options": [
+            "caisse",
+            "sortie",
+            "entrée",
+            "réserve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "reçu",
+          "options": [
+            "reçu",
+            "cadeau",
+            "photo",
+            "menu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "client",
+          "options": [
+            "client",
+            "vendeur",
+            "directeur",
+            "patron"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "livraison",
+          "options": [
+            "livraison",
+            "destruction",
+            "fabrication",
+            "invention"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "remboursement",
+          "options": [
+            "remboursement",
+            "cadeau",
+            "échange",
+            "réduction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "vente",
+          "options": [
+            "vente",
+            "location",
+            "fabrication",
+            "création"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "ventes",
+          "options": [
+            "ventes",
+            "achats",
+            "productions",
+            "créations"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 17,
+          "answer": "vitrine",
+          "options": [
+            "vitrine",
+            "cuisine",
+            "toilette",
+            "garage"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Rebecca Bloomwood marchait d'un pas décidé sur la Cinquième Avenue, ses talons claquant sur le trottoir new-yorkais. Elle était en retard pour son entretien au magazine Alette, mais une force magnétique l'attirait vers la ___ de Denny & George. Cette écharpe en soie verte, repérée trois jours plus tôt, l'appelait comme un chant de sirène. Elle devait absolument l'___ avant qu'une autre femme ne la lui vole. Le ___ affiché était exorbitant pour une journaliste débutante, mais la ___ exceptionnelle de cinquante pour cent rendait l'affaire irrésistible. Elle a poussé la porte vitrée du ___ avec l'assurance d'une habituée des lieux chics. Une ___ aux manières parfaites s'est immédiatement approchée d'elle. Rebecca a demandé à ___ l'écharpe devant un miroir doré, frissonnant de plaisir au contact de la soie. Elle a ensuite jeté son dévolu sur une robe noire qui semblait être à sa ___ exacte. Elle s'est glissée dans une ___ d'essayage pour vérifier la coupe flatteuse. La robe épousait ses formes avec une élégance rare. Elle a rejoint la ___ en feignant l'indifférence, son sac débordant de trouvailles. La vendeuse lui a tendu un ___ qu'elle a fourré négligemment dans son sac à main. En sortant, elle a composé le numéro du service ___ de sa banque pour demander un découvert supplémentaire. Plus tard dans la journée, une ___ inattendue est arrivée à son appartement : les chaussures commandées la veille. Hélas, la paire était deux pointures trop petite. Rebecca a immédiatement appelé le magasin pour exiger un ___ complet. Grâce à sa carte de fidélité, la politique de ___ en ligne était exceptionnellement clémente. Elle a raccroché en soupirant, sachant pertinemment que ses ___ du mois suivant seraient compromises. Mais comment résister à l'appel irrésistible d'une belle ___ new-yorkaise quand on a vingt-cinq ans et un optimisme financier à toute épreuve ?"
     }
   },
-
   "quiz": {
     "title": "Quiz : Achats et Service client",
     "title_fa": "آزمون: خرید و خدمات مشتریان",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "Chaque samedi, ma mère va au marché pour ____ des légumes frais.", "options": ["acheter", "vendre", "fabriquer", "dessiner"], "correctIndex": 0, "explanation_fa": "acheter = خریدن." },
-      { "type": "mcq", "question": "Le ____ mécontent a demandé à parler au responsable du magasin.", "options": ["client", "vendeur", "directeur", "patron"], "correctIndex": 0, "explanation_fa": "client = مشتری." },
-      { "type": "binary", "question": "Un \"magasin\" est un lieu où l'on vend des marchandises au public.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، magasin یعنی فروشگاه." },
-      { "type": "mcq", "question": "La ____ de votre commande se fera dans les quarante-huit heures.", "options": ["livraison", "destruction", "fabrication", "invention"], "correctIndex": 0, "explanation_fa": "livraison = تحویل کالا." },
-      { "type": "mcq", "question": "Le facteur va ____ un colis recommandé cet après-midi.", "options": ["livrer", "voler", "perdre", "cacher"], "correctIndex": 0, "explanation_fa": "livrer = تحویل دادن." },
-      { "type": "mcq", "question": "Le ____ de cette voiture d'occasion est beaucoup trop élevé.", "options": ["prix", "poids", "âge", "taille"], "correctIndex": 0, "explanation_fa": "prix = قیمت." },
-      { "type": "mcq", "question": "Pendant les soldes d'hiver, les ____ peuvent atteindre soixante-dix pour cent.", "options": ["réductions", "augmentations", "hausses", "majorations"], "correctIndex": 0, "explanation_fa": "réduction = تخفیف." },
-      { "type": "mcq", "question": "Le magasin a accepté de ____ le prix pour écouler le stock.", "options": ["réduire", "augmenter", "hausser", "majorer"], "correctIndex": 0, "explanation_fa": "réduire = کاهش دادن." },
-      { "type": "mcq", "question": "Si le produit ne fonctionne pas, le vendeur doit vous ____.", "options": ["rembourser", "facturer", "taxer", "charger"], "correctIndex": 0, "explanation_fa": "rembourser = پول را پس دادن." },
-      { "type": "mcq", "question": "Le ____ sera crédité sur votre compte bancaire sous cinq jours.", "options": ["remboursement", "cadeau", "échange", "réduction"], "correctIndex": 0, "explanation_fa": "remboursement = بازپرداخت." },
-      { "type": "binary", "question": "Le mot \"taille\" peut désigner les dimensions d'un vêtement.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، taille برای سایز لباس استفاده می‌شود." },
-      { "type": "mcq", "question": "Mon grand-père ____ des fruits sur le marché chaque dimanche matin.", "options": ["vend", "achète", "vole", "perd"], "correctIndex": 0, "explanation_fa": "vendre = فروختن." },
-      { "type": "mcq", "question": "Les ____ de Noël ont été excellentes cette année.", "options": ["ventes", "achats", "productions", "créations"], "correctIndex": 0, "explanation_fa": "vente = فروش." },
-      { "type": "mcq", "question": "La ____ m'a aidé à choisir la bonne pointure de chaussures.", "options": ["vendeuse", "cliente", "acheteuse", "amie"], "correctIndex": 0, "explanation_fa": "vendeuse = فروشنده زن." },
-      { "type": "mcq", "question": "Elle passe des heures à regarder les ____ des grandes marques.", "options": ["vitrines", "cuisines", "toilettes", "garages"], "correctIndex": 0, "explanation_fa": "vitrine = ویترین فروشگاه." },
-      { "type": "binary", "question": "Une \"cabine d'essayage\" est un petit espace pour essayer des vêtements.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، cabine d'essayage یعنی اتاق پرو." },
-      { "type": "mcq", "question": "Tu devrais ____ cette veste avant de l'acheter.", "options": ["essayer", "refuser", "cacher", "jeter"], "correctIndex": 0, "explanation_fa": "essayer = پرو کردن / امتحان کردن." },
-      { "type": "mcq", "question": "Il y avait une longue file d'attente à la ____ du supermarché.", "options": ["caisse", "sortie", "entrée", "réserve"], "correctIndex": 0, "explanation_fa": "caisse = صندوق پرداخت." },
-      { "type": "mcq", "question": "Gardez bien votre ____ pour pouvoir échanger l'article.", "options": ["reçu", "cadeau", "photo", "menu"], "correctIndex": 0, "explanation_fa": "reçu = رسید خرید." }
+      {
+        "type": "mcq",
+        "question": "Chaque samedi, ma mère va au marché pour ____ des légumes frais.",
+        "options": [
+          "acheter",
+          "vendre",
+          "fabriquer",
+          "dessiner"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "acheter = خریدن."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ mécontent a demandé à parler au responsable du magasin.",
+        "options": [
+          "client",
+          "vendeur",
+          "directeur",
+          "patron"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "client = مشتری."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"magasin\" est un lieu où l'on vend des marchandises au public.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، magasin یعنی فروشگاه."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ de votre commande se fera dans les quarante-huit heures.",
+        "options": [
+          "livraison",
+          "destruction",
+          "fabrication",
+          "invention"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "livraison = تحویل کالا."
+      },
+      {
+        "type": "mcq",
+        "question": "Le facteur va ____ un colis recommandé cet après-midi.",
+        "options": [
+          "livrer",
+          "voler",
+          "perdre",
+          "cacher"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "livrer = تحویل دادن."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ de cette voiture d'occasion est beaucoup trop élevé.",
+        "options": [
+          "prix",
+          "poids",
+          "âge",
+          "taille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "prix = قیمت."
+      },
+      {
+        "type": "mcq",
+        "question": "Pendant les soldes d'hiver, les ____ peuvent atteindre soixante-dix pour cent.",
+        "options": [
+          "réductions",
+          "augmentations",
+          "hausses",
+          "majorations"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "réduction = تخفیف."
+      },
+      {
+        "type": "mcq",
+        "question": "Le magasin a accepté de ____ le prix pour écouler le stock.",
+        "options": [
+          "réduire",
+          "augmenter",
+          "hausser",
+          "majorer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "réduire = کاهش دادن."
+      },
+      {
+        "type": "mcq",
+        "question": "Si le produit ne fonctionne pas, le vendeur doit vous ____.",
+        "options": [
+          "rembourser",
+          "facturer",
+          "taxer",
+          "charger"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "rembourser = پول را پس دادن."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ sera crédité sur votre compte bancaire sous cinq jours.",
+        "options": [
+          "remboursement",
+          "cadeau",
+          "échange",
+          "réduction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "remboursement = بازپرداخت."
+      },
+      {
+        "type": "binary",
+        "question": "Le mot \"taille\" peut désigner les dimensions d'un vêtement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، taille برای سایز لباس استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Mon grand-père ____ des fruits sur le marché chaque dimanche matin.",
+        "options": [
+          "vend",
+          "achète",
+          "vole",
+          "perd"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "vendre = فروختن."
+      },
+      {
+        "type": "mcq",
+        "question": "Les ____ de Noël ont été excellentes cette année.",
+        "options": [
+          "ventes",
+          "achats",
+          "productions",
+          "créations"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "vente = فروش."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ m'a aidé à choisir la bonne pointure de chaussures.",
+        "options": [
+          "vendeuse",
+          "cliente",
+          "acheteuse",
+          "amie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "vendeuse = فروشنده زن."
+      },
+      {
+        "type": "mcq",
+        "question": "Elle passe des heures à regarder les ____ des grandes marques.",
+        "options": [
+          "vitrines",
+          "cuisines",
+          "toilettes",
+          "garages"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "vitrine = ویترین فروشگاه."
+      },
+      {
+        "type": "binary",
+        "question": "Une \"cabine d'essayage\" est un petit espace pour essayer des vêtements.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، cabine d'essayage یعنی اتاق پرو."
+      },
+      {
+        "type": "mcq",
+        "question": "Tu devrais ____ cette veste avant de l'acheter.",
+        "options": [
+          "essayer",
+          "refuser",
+          "cacher",
+          "jeter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "essayer = پرو کردن / امتحان کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "Il y avait une longue file d'attente à la ____ du supermarché.",
+        "options": [
+          "caisse",
+          "sortie",
+          "entrée",
+          "réserve"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "caisse = صندوق پرداخت."
+      },
+      {
+        "type": "mcq",
+        "question": "Gardez bien votre ____ pour pouvoir échanger l'article.",
+        "options": [
+          "reçu",
+          "cadeau",
+          "photo",
+          "menu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "reçu = رسید خرید."
+      }
     ]
   }
 }
