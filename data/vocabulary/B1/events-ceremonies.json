@@ -1,0 +1,377 @@
+{
+  "id": "events_ceremonies",
+  "level": "B1",
+  "theme": "Événements et Cérémonies",
+  "theme_fa": "رویدادهای اجتماعی، افتتاحیه و جشن",
+  "icon": "🎉",
+  "inspiration": "La Grande Bellezza ( film de Paolo Sorrentino)",
+
+  "words": [
+    {
+      "fr": "accueillir",
+      "fa": "استقبال کردن / پذیرایی کردن",
+      "emoji": "🤝",
+      "difficulty": 3,
+      "ex": "L'hôtesse accueille les invités à l'entrée.",
+      "ex_fa": "میزبان از مهمانان در ورودی استقبال می‌کند."
+    },
+    {
+      "fr": "l'accord",
+      "fa": "توافق / هماهنگی",
+      "emoji": "🤝",
+      "difficulty": 3,
+      "ex": "Les deux entreprises ont trouvé un accord.",
+      "ex_fa": "دو شرکت به یک توافق رسیدند."
+    },
+    {
+      "fr": "acclamer",
+      "fa": "تشویق کردن (با هیجان و صدای بلند)",
+      "emoji": "📣",
+      "difficulty": 6,
+      "ex": "Le public acclame le vainqueur de la compétition.",
+      "ex_fa": "تماشاگران برنده مسابقه را با هیجان تشویق می‌کنند."
+    },
+    {
+      "fr": "applaudir",
+      "fa": "تشویق کردن (کف زدن)",
+      "emoji": "👏",
+      "difficulty": 3,
+      "ex": "Tous les spectateurs applaudissent à la fin du spectacle.",
+      "ex_fa": "همه تماشاگران در پایان نمایش کف می‌زنند."
+    },
+    {
+      "fr": "les applaudissements",
+      "fa": "تشویق‌ها / صدای کف زدن",
+      "emoji": "👏",
+      "difficulty": 4,
+      "ex": "Les applaudissements résonnent dans toute la salle.",
+      "ex_fa": "صدای تشویق‌ها در تمام سالن طنین‌انداز می‌شود."
+    },
+    {
+      "fr": "l'acceptation",
+      "fa": "پذیرش (مفهوم اجتماعی/روانشناختی)",
+      "emoji": "✅",
+      "difficulty": 6,
+      "ex": "L'acceptation du changement est difficile mais nécessaire.",
+      "ex_fa": "پذیرش تغییر سخت اما ضروری است."
+    },
+    {
+      "fr": "apparaître",
+      "fa": "ظاهر شدن / به نظر رسیدن",
+      "emoji": "✨",
+      "difficulty": 5,
+      "ex": "Le soleil apparaît derrière les nuages.",
+      "ex_fa": "خورشید از پشت ابرها ظاهر می‌شود."
+    },
+    {
+      "fr": "l'apparence",
+      "fa": "ظاهر / نمود",
+      "emoji": "👔",
+      "difficulty": 5,
+      "ex": "Il soigne toujours son apparence avant une réunion.",
+      "ex_fa": "او همیشه قبل از جلسه به ظاهرش رسیدگی می‌کند."
+    },
+    {
+      "fr": "apparent",
+      "fa": "آشکار / ظاهری",
+      "emoji": "👁️",
+      "difficulty": 5,
+      "ex": "Son enthousiasme est apparent dès son arrivée.",
+      "ex_fa": "اشتیاقش از لحظه ورود آشکار است."
+    },
+    {
+      "fr": "appartenir",
+      "fa": "تعلق داشتن",
+      "emoji": "🏷️",
+      "difficulty": 5,
+      "ex": "Ce tableau appartient au musée du Louvre.",
+      "ex_fa": "این تابلو متعلق به موزه لوور است."
+    }
+  ],
+
+  "stories": {
+    "simple": {
+      "title": "La soirée de gala",
+      "title_fa": "شب گالا",
+      "text": "C'est la grande soirée annuelle de l'entreprise. À l'entrée, une hôtesse en robe longue {{BLANK_1}} les invités avec un sourire. Tous sont d'{{BLANK_2}} sur le programme de la soirée. Soudain, le PDG monte sur scène. Les employés commencent à l'{{BLANK_3}} avec enthousiasme. Certains se lèvent pour l'{{BLANK_4}} longuement. Les {{BLANK_5}} remplissent la salle de joie. Après son discours, il parle de l'{{BLANK_6}} des nouvelles règles par tous les départements. Quand le prix de l'employé de l'année est annoncé, le gagnant {{BLANK_7}} sur scène. Il a soigné son {{BLANK_8}} pour cette occasion spéciale. Son bonheur est {{BLANK_9}} sur son visage. Le trophée qu'il reçoit {{BLANK_10}} à la collection de l'entreprise.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "accueille",
+          "options": ["reçoit", "accueille", "salue", "invite"],
+          "correctIndex": 1
+        },
+        {
+          "id": 2,
+          "answer": "accord",
+          "options": ["accord", "entente", "avis", "opinion"],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "acclamer",
+          "options": ["crier", "acclamer", "appeler", "nommer"],
+          "correctIndex": 1
+        },
+        {
+          "id": 4,
+          "answer": "applaudir",
+          "options": ["féliciter", "applaudir", "encourager", "saluer"],
+          "correctIndex": 1
+        },
+        {
+          "id": 5,
+          "answer": "applaudissements",
+          "options": ["cris", "applaudissements", "bravos", "acclamations"],
+          "correctIndex": 1
+        },
+        {
+          "id": 6,
+          "answer": "acceptation",
+          "options": ["adoption", "acceptation", "approbation", "validation"],
+          "correctIndex": 1
+        },
+        {
+          "id": 7,
+          "answer": "apparaît",
+          "options": ["arrive", "apparaît", "montre", "vient"],
+          "correctIndex": 1
+        },
+        {
+          "id": 8,
+          "answer": "apparence",
+          "options": ["look", "apparence", "style", "image"],
+          "correctIndex": 1
+        },
+        {
+          "id": 9,
+          "answer": "apparent",
+          "options": ["visible", "apparent", "clair", "évident"],
+          "correctIndex": 1
+        },
+        {
+          "id": 10,
+          "answer": "appartient",
+          "options": ["revient", "appartient", "va", "correspond"],
+          "correctIndex": 1
+        }
+      ]
+    },
+    "literary": {
+      "title": "Nuit romaine au Palazzo Barberini",
+      "title_fa": "شب رمی در پالاتزو باربرینی",
+      "inspiration": "La Grande Bellezza (Paolo Sorrentino) - film italien primé à Cannes",
+      "text": "La nuit tombait sur Rome quand les premières limousines noires s'engouffrèrent dans la cour pavée du Palazzo Barberini. Sur le perron, une maîtresse de cérémonie en fourreau de soie {{BLANK_1}} les invités fortunés avec une grâce étudiée. Le tout-Rome des affaires et de la culture était d'{{BLANK_2}} sur l'importance de cette soirée caritative. Quand le célèbre acteur Marcello Vitani fit son entrée dans le grand salon doré, la foule se mit à l'{{BLANK_3}} comme s'il s'agissait d'un monarque. Les femmes en robes de haute couture se levèrent pour l'{{BLANK_4}} avec une ferveur presque religieuse. Les {{BLANK_5}} crépitèrent sous les fresques du plafond peint par Pierre de Cortone. Dans son discours, le mécène évoqua l'{{BLANK_6}} nécessaire des nouvelles réalités sociales par l'élite italienne. Au moment de la remise du prix d'excellence artistique, une jeune peintre inconnue {{BLANK_7}} soudainement sur l'estrade, éblouie par les lumières. Elle avait minutieusement soigné son {{BLANK_8}} pour cette consécration inespérée. Son émotion était {{BLANK_9}} dans ses yeux brillants de larmes. La statue de bronze qu'elle reçut des mains du cardinal {{BLANK_10}} désormais à la prestigieuse collection du musée contemporain, rejoignant les œuvres de ceux qui, avant elle, avaient capturé l'âme éternelle de la Ville Éternelle.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "accueillait",
+          "options": ["recevait", "accueillait", "saluait", "introduisait"],
+          "correctIndex": 1
+        },
+        {
+          "id": 2,
+          "answer": "accord",
+          "options": ["consensus", "accord", "unanimité", "entente"],
+          "correctIndex": 1
+        },
+        {
+          "id": 3,
+          "answer": "acclamer",
+          "options": ["ovationner", "acclamer", "applaudir", "fêter"],
+          "correctIndex": 1
+        },
+        {
+          "id": 4,
+          "answer": "applaudir",
+          "options": ["célébrer", "applaudir", "honorer", "saluer"],
+          "correctIndex": 1
+        },
+        {
+          "id": 5,
+          "answer": "applaudissements",
+          "options": ["acclamations", "applaudissements", "ovations", "bravos"],
+          "correctIndex": 1
+        },
+        {
+          "id": 6,
+          "answer": "acceptation",
+          "options": ["reconnaissance", "acceptation", "compréhension", "admission"],
+          "correctIndex": 1
+        },
+        {
+          "id": 7,
+          "answer": "apparut",
+          "options": ["émergea", "apparut", "surgit", "se montra"],
+          "correctIndex": 1
+        },
+        {
+          "id": 8,
+          "answer": "apparence",
+          "options": ["tenue", "apparence", "présentation", "allure"],
+          "correctIndex": 1
+        },
+        {
+          "id": 9,
+          "answer": "apparente",
+          "options": ["lisible", "apparente", "visible", "manifeste"],
+          "correctIndex": 1
+        },
+        {
+          "id": 10,
+          "answer": "appartiendrait",
+          "options": ["rejoindrait", "appartiendrait", "intégrerait", "enrichirait"],
+          "correctIndex": 1
+        }
+      ]
+    }
+  },
+
+  "quiz": {
+    "title": "Quiz : Événements et Cérémonies",
+    "title_fa": "آزمون: رویدادها و جشن‌ها",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'hôtesse ____ les invités avec un sourire chaleureux.",
+        "options": ["accueille", "reçoit", "salue", "invite"],
+        "correctIndex": 0,
+        "explanation_fa": "Accueillir = استقبال کردن (کلمه رسمی‌تر از recevoir)."
+      },
+      {
+        "type": "mcq",
+        "question": "Les deux pays ont enfin trouvé un ____ sur la question commerciale.",
+        "options": ["accord", "contrat", "traité", "pacte"],
+        "correctIndex": 0,
+        "explanation_fa": "Trouver un accord = به توافق رسیدن."
+      },
+      {
+        "type": "mcq",
+        "question": "La foule a commencé à ____ le chanteur quand il est monté sur scène.",
+        "options": ["acclamer", "applaudir", "appeler", "crier"],
+        "correctIndex": 0,
+        "explanation_fa": "Acclamer = تشویق پرهیاهو با فریاد (شدیدتر از applaudir)."
+      },
+      {
+        "type": "mcq",
+        "question": "À la fin de la pièce, le public s'est levé pour ____ les acteurs.",
+        "options": ["applaudir", "féliciter", "acclamer", "saluer"],
+        "correctIndex": 0,
+        "explanation_fa": "Applaudir = کف زدن (اقدام فیزیکی)."
+      },
+      {
+        "type": "mcq",
+        "question": "Les ____ du public ont duré plus de cinq minutes.",
+        "options": ["applaudissements", "acclamations", "cris", "bravos"],
+        "correctIndex": 0,
+        "explanation_fa": "Applaudissements = صدای کف زدن‌ها."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus d'____ du changement prend souvent du temps.",
+        "options": ["acceptation", "adoption", "approbation", "validation"],
+        "correctIndex": 0,
+        "explanation_fa": "Acceptation = پذیرش روانی و درونی یک وضعیت."
+      },
+      {
+        "type": "binary",
+        "question": "\"Acclamer\" et \"applaudir\" sont des synonymes exacts.",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 1,
+        "explanation_fa": "Acclamer شامل فریاد و هیجان بیشتر است، applaudir فقط کف زدن."
+      },
+      {
+        "type": "binary",
+        "question": "\"Accueillir\" peut s'utiliser pour des personnes et des idées.",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 0,
+        "explanation_fa": "بله، می‌توان هم از افراد و هم از ایده‌ها استقبال کرد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le soleil ____ enfin après trois jours de pluie.",
+        "options": ["apparaît", "sort", "se montre", "arrive"],
+        "correctIndex": 0,
+        "explanation_fa": "Apparaître = ظاهر شدن (ناگهانی یا تدریجی)."
+      },
+      {
+        "type": "mcq",
+        "question": "Il faut toujours soigner son ____ lors d'un entretien d'embauche.",
+        "options": ["apparence", "look", "style", "image"],
+        "correctIndex": 0,
+        "explanation_fa": "Apparence = ظاهر کلی (رسمی‌تر از look)."
+      },
+      {
+        "type": "mcq",
+        "question": "Sa nervosité était ____ dès le début de la présentation.",
+        "options": ["apparente", "visible", "claire", "évidente"],
+        "correctIndex": 0,
+        "explanation_fa": "Apparent = آشکار و واضح (از ریشه apparaître)."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette maison ____ à ma famille depuis trois générations.",
+        "options": ["appartient", "revient", "est", "va"],
+        "correctIndex": 0,
+        "explanation_fa": "Appartenir à = متعلق بودن به."
+      },
+      {
+        "type": "binary",
+        "question": "\"Appartenir\" s'utilise uniquement pour des objets physiques.",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 1,
+        "explanation_fa": "Appartenir هم برای اشیاء و هم برای مفاهیم (appartenir à une famille/groupe) استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "\"L'apparence\" a souvent une connotation de superficialité par rapport à la réalité.",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 0,
+        "explanation_fa": "بله، apparence معمولاً در مقابل réalité/essence قرار می‌گیرد."
+      },
+      {
+        "type": "mcq",
+        "question": "Il est difficile de trouver un ____ entre ces deux positions opposées.",
+        "options": ["accord", "entente", "compromis", "consensus"],
+        "correctIndex": 0,
+        "explanation_fa": "Trouver un accord = رسیدن به توافق (رسمی)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ de cette nouvelle politique par les employés a été remarquable.",
+        "options": ["acceptation", "adoption", "approbation", "admission"],
+        "correctIndex": 0,
+        "explanation_fa": "Acceptation = پذیرش (بعد از مقاومت احتمالی)."
+      },
+      {
+        "type": "binary",
+        "question": "\"Apparaître\" est un verbe régulier du premier groupe.",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 1,
+        "explanation_fa": "Apparaître فعل بی‌قاعده از گروه سوم است (je apparais, il apparaît)."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fantôme ____ dans le couloir à minuit pile.",
+        "options": ["apparut", "surgit", "émergea", "se montra"],
+        "correctIndex": 0,
+        "explanation_fa": "Apparut = passé simple از apparaître."
+      },
+      {
+        "type": "binary",
+        "question": "Les \"applaudissements\" sont le son produit par l'action d'\"applaudir\".",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 0,
+        "explanation_fa": "بله، applaudissements اسم مصدر applaudir است."
+      },
+      {
+        "type": "mcq",
+        "question": "Son ____ bonheur était ____ sur son visage radieux.",
+        "options": ["apparent", "visible", "clair", "évident"],
+        "correctIndex": 0,
+        "explanation_fa": "Apparent = واضح و آشکار (صفت)."
+      }
+    ]
+  }
+}
