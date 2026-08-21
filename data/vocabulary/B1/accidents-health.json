@@ -5,42 +5,255 @@
   "theme_fa": "حوادث، سلامت و اورژانس",
   "icon": "🚑",
   "inspiration": "Urgences (ER - série télévisée)",
-
   "words": [
-    { "fr": "blesser", "fa": "زخمی کردن", "emoji": "🤕", "difficulty": 3, "ex": "La chute a blessé le genou du joueur.", "ex_fa": "سقوط باعث زخمی شدن زانوی بازیکن شد." },
-    { "fr": "la blessure", "fa": "زخم / آسیب", "emoji": "🩹", "difficulty": 3, "ex": "Le médecin a nettoyé la blessure avec soin.", "ex_fa": "پزشک زخم را با دقت تمیز کرد." },
-    { "fr": "le bien-être", "fa": "آسایش / سلامت روان", "emoji": "🧘", "difficulty": 3, "ex": "Le yoga est excellent pour le bien-être mental.", "ex_fa": "یوگا برای سلامت روان عالی است." },
-    { "fr": "briser", "fa": "شکستن / خرد کردن", "emoji": "🦴", "difficulty": 4, "ex": "L'accident de voiture a failli lui briser la jambe.", "ex_fa": "تصادف رانندگی نزدیک بود پایش را بشکند." },
-    { "fr": "brusque", "fa": "ناگهانی / عجول", "emoji": "⚡", "difficulty": 4, "ex": "Il a eu un mouvement brusque qui a causé l'accident.", "ex_fa": "او یک حرکت ناگهانی کرد که باعث تصادف شد." },
-    { "fr": "brusquement", "fa": "ناگهان / به یکباره", "emoji": "💥", "difficulty": 4, "ex": "La voiture s'est arrêtée brusquement au feu rouge.", "ex_fa": "ماشین ناگهان پشت چراغ قرمز ترمز کرد." },
-    { "fr": "le brouillard", "fa": "مه", "emoji": "🌫️", "difficulty": 3, "ex": "Il est dangereux de conduire dans le brouillard épais.", "ex_fa": "رانندگی در مه غلیظ خطرناک است." },
-    { "fr": "consulter", "fa": "مراجعه کردن (به پزشک) / مشورت کردن", "emoji": "👨‍⚕️", "difficulty": 3, "ex": "Tu devrais consulter un médecin pour cette toux.", "ex_fa": "برای این سرفه باید به پزشک مراجعه کنی." },
-    { "fr": "contenir", "fa": "شامل بودن / در بر گرفتن", "emoji": "💊", "difficulty": 4, "ex": "Ce médicament peut contenir des substances allergènes.", "ex_fa": "این دارو ممکن است شامل مواد حساسیت‌زا باشد." },
-    { "fr": "continuel", "fa": "مستمر / پیوسته", "emoji": "🔁", "difficulty": 4, "ex": "Le patient souffre d'une toux continuelle depuis lundi.", "ex_fa": "بیمار از روز دوشنبه سرفه مستمر دارد." },
-    { "fr": "la connexion", "fa": "اتصال / ارتباط", "emoji": "🔌", "difficulty": 3, "ex": "La connexion internet est nécessaire pour la téléconsultation.", "ex_fa": "اتصال اینترنت برای ویزیت آنلاین ضروری است." },
-    { "fr": "le conseil", "fa": "نصیحت / راهنمایی", "emoji": "💡", "difficulty": 2, "ex": "Suivez bien les conseils de votre pharmacien.", "ex_fa": "راهنمایی‌های داروسازتان را به خوبی دنبال کنید." }
+    {
+      "fr": "blesser",
+      "fa": "زخمی کردن",
+      "emoji": "🤕",
+      "difficulty": 3,
+      "ex": "La chute a blessé le genou du joueur.",
+      "ex_fa": "سقوط باعث زخمی شدن زانوی بازیکن شد."
+    },
+    {
+      "fr": "la blessure",
+      "fa": "زخم / آسیب",
+      "emoji": "🩹",
+      "difficulty": 3,
+      "ex": "Le médecin a nettoyé la blessure avec soin.",
+      "ex_fa": "پزشک زخم را با دقت تمیز کرد."
+    },
+    {
+      "fr": "le bien-être",
+      "fa": "آسایش / سلامت روان",
+      "emoji": "🧘",
+      "difficulty": 3,
+      "ex": "Le yoga est excellent pour le bien-être mental.",
+      "ex_fa": "یوگا برای سلامت روان عالی است."
+    },
+    {
+      "fr": "briser",
+      "fa": "شکستن / خرد کردن",
+      "emoji": "🦴",
+      "difficulty": 4,
+      "ex": "L'accident de voiture a failli lui briser la jambe.",
+      "ex_fa": "تصادف رانندگی نزدیک بود پایش را بشکند."
+    },
+    {
+      "fr": "brusque",
+      "fa": "ناگهانی / عجول",
+      "emoji": "⚡",
+      "difficulty": 4,
+      "ex": "Il a eu un mouvement brusque qui a causé l'accident.",
+      "ex_fa": "او یک حرکت ناگهانی کرد که باعث تصادف شد."
+    },
+    {
+      "fr": "brusquement",
+      "fa": "ناگهان / به یکباره",
+      "emoji": "💥",
+      "difficulty": 4,
+      "ex": "La voiture s'est arrêtée brusquement au feu rouge.",
+      "ex_fa": "ماشین ناگهان پشت چراغ قرمز ترمز کرد."
+    },
+    {
+      "fr": "le brouillard",
+      "fa": "مه",
+      "emoji": "🌫️",
+      "difficulty": 3,
+      "ex": "Il est dangereux de conduire dans le brouillard épais.",
+      "ex_fa": "رانندگی در مه غلیظ خطرناک است."
+    },
+    {
+      "fr": "consulter",
+      "fa": "مراجعه کردن (به پزشک) / مشورت کردن",
+      "emoji": "👨‍⚕️",
+      "difficulty": 3,
+      "ex": "Tu devrais consulter un médecin pour cette toux.",
+      "ex_fa": "برای این سرفه باید به پزشک مراجعه کنی."
+    },
+    {
+      "fr": "contenir",
+      "fa": "شامل بودن / در بر گرفتن",
+      "emoji": "💊",
+      "difficulty": 4,
+      "ex": "Ce médicament peut contenir des substances allergènes.",
+      "ex_fa": "این دارو ممکن است شامل مواد حساسیت‌زا باشد."
+    },
+    {
+      "fr": "continuel",
+      "fa": "مستمر / پیوسته",
+      "emoji": "🔁",
+      "difficulty": 4,
+      "ex": "Le patient souffre d'une toux continuelle depuis lundi.",
+      "ex_fa": "بیمار از روز دوشنبه سرفه مستمر دارد."
+    },
+    {
+      "fr": "la connexion",
+      "fa": "اتصال / ارتباط",
+      "emoji": "🔌",
+      "difficulty": 3,
+      "ex": "La connexion internet est nécessaire pour la téléconsultation.",
+      "ex_fa": "اتصال اینترنت برای ویزیت آنلاین ضروری است."
+    },
+    {
+      "fr": "le conseil",
+      "fa": "نصیحت / راهنمایی",
+      "emoji": "💡",
+      "difficulty": 2,
+      "ex": "Suivez bien les conseils de votre pharmacien.",
+      "ex_fa": "راهنمایی‌های داروسازتان را به خوبی دنبال کنید."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "Un accident sur la route",
       "title_fa": "یک تصادف در جاده",
       "text": "Ce matin, il y avait beaucoup de {{BLANK_1}} sur l'autoroute. Un conducteur a freiné {{BLANK_2}} pour éviter un animal. Le choc a été violent et a réussi à {{BLANK_3}} le pare-brise. Heureusement, personne n'a été grièvement {{BLANK_4}}, mais le passager avait une petite {{BLANK_5}} au front causée par un mouvement {{BLANK_6}} de la tête. Les pompiers sont arrivés vite pour {{BLANK_7}} les victimes sur place. Le médecin a expliqué que la boîte de premiers secours devait {{BLANK_8}} des pansements stériles. Il a donné un {{BLANK_9}} important : il faut toujours attacher sa ceinture. Le blessé souffrait d'une douleur {{BLANK_10}} au cou. Plus tard, il a dû {{BLANK_11}} un spécialiste à l'hôpital pour faire des radios. Aujourd'hui, il se repose chez lui et fait des exercices pour retrouver son {{BLANK_12}} physique et mental. Il a même acheté une meilleure {{BLANK_13}} Wi-Fi pour garder le contact avec sa famille pendant sa convalescence.",
       "blanks": [
-        { "id": 1, "answer": "brouillard", "options": ["brouillard", "soleil", "chaleur", "lumière"], "correctIndex": 0 },
-        { "id": 2, "answer": "brusquement", "options": ["brusquement", "lentement", "doucement", "calmement"], "correctIndex": 0 },
-        { "id": 3, "answer": "briser", "options": ["briser", "réparer", "nettoyer", "polir"], "correctIndex": 0 },
-        { "id": 4, "answer": "blessé", "options": ["blessé", "soigné", "guéri", "caressé"], "correctIndex": 0 },
-        { "id": 5, "answer": "blessure", "options": ["blessure", "récompense", "médaille", "fleur"], "correctIndex": 0 },
-        { "id": 6, "answer": "brusque", "options": ["brusque", "doux", "lent", "prévu"], "correctIndex": 0 },
-        { "id": 7, "answer": "consulter", "options": ["consulter", "ignorer", "abandonner", "frapper"], "correctIndex": 0 },
-        { "id": 8, "answer": "contenir", "options": ["contenir", "vider", "jeter", "détruire"], "correctIndex": 0 },
-        { "id": 9, "answer": "conseil", "options": ["conseil", "poison", "insulte", "danger"], "correctIndex": 0 },
-        { "id": 10, "answer": "continuelle", "options": ["continuelle", "rare", "inexistante", "unique"], "correctIndex": 0 },
-        { "id": 11, "answer": "consulter", "options": ["consulter", "éviter", "fuir", "ignorer"], "correctIndex": 0 },
-        { "id": 12, "answer": "bien-être", "options": ["bien-être", "malheur", "stress", "douleur"], "correctIndex": 0 },
-        { "id": 13, "answer": "connexion", "options": ["connexion", "rupture", "coupure", "séparation"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "brouillard",
+          "options": [
+            "brouillard",
+            "soleil",
+            "chaleur",
+            "lumière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "brusquement",
+          "options": [
+            "brusquement",
+            "lentement",
+            "doucement",
+            "calmement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "briser",
+          "options": [
+            "briser",
+            "réparer",
+            "nettoyer",
+            "polir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "blessé",
+          "options": [
+            "blessé",
+            "soigné",
+            "guéri",
+            "caressé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "blessure",
+          "options": [
+            "blessure",
+            "récompense",
+            "médaille",
+            "fleur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "brusque",
+          "options": [
+            "brusque",
+            "doux",
+            "lent",
+            "prévu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "consulter",
+          "options": [
+            "consulter",
+            "ignorer",
+            "abandonner",
+            "frapper"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "contenir",
+          "options": [
+            "contenir",
+            "vider",
+            "jeter",
+            "détruire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "conseil",
+          "options": [
+            "conseil",
+            "poison",
+            "insulte",
+            "danger"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "continuelle",
+          "options": [
+            "continuelle",
+            "rare",
+            "inexistante",
+            "unique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "consulter",
+          "options": [
+            "consulter",
+            "éviter",
+            "fuir",
+            "ignorer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "bien-être",
+          "options": [
+            "bien-être",
+            "malheur",
+            "stress",
+            "douleur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "connexion",
+          "options": [
+            "connexion",
+            "rupture",
+            "coupure",
+            "séparation"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Ce matin, il y avait beaucoup de ___ sur l'autoroute. Un conducteur a freiné ___ pour éviter un animal. Le choc a été violent et a réussi à ___ le pare-brise. Heureusement, personne n'a été grièvement ___, mais le passager avait une petite ___ au front causée par un mouvement ___ de la tête. Les pompiers sont arrivés vite pour ___ les victimes sur place. Le médecin a expliqué que la boîte de premiers secours devait ___ des pansements stériles. Il a donné un ___ important : il faut toujours attacher sa ceinture. Le blessé souffrait d'une douleur ___ au cou. Plus tard, il a dû ___ un spécialiste à l'hôpital pour faire des radios. Aujourd'hui, il se repose chez lui et fait des exercices pour retrouver son ___ physique et mental. Il a même acheté une meilleure ___ Wi-Fi pour garder le contact avec sa famille pendant sa convalescence."
     },
     "literary": {
       "title": "Garde de nuit aux urgences",
@@ -48,39 +261,287 @@
       "inspiration": "Urgences (ER) - Série médicale culte",
       "text": "La salle des urgences du Cook County Hospital était plongée dans une agitation fiévreuse. Dehors, un épais {{BLANK_1}} réduisait la visibilité à moins de dix mètres, provoquant une série de collisions en chaîne. Une ambulance a déchargé un jeune homme qui avait freiné {{BLANK_2}} pour éviter un camion. Le choc avait réussi à {{BLANK_3}} la vitre latérale en mille morceaux. Le patient n'était pas gravement {{BLANK_4}}, mais il présentait une profonde {{BLANK_5}} à l'arcade sourcilière, résultat d'un mouvement {{BLANK_6}} vers l'avant lors de l'impact. L'interne de garde s'est approché pour l'{{BLANK_7}} et évaluer son état neurologique. Il a vérifié que le dossier médical électronique continuait à bien {{BLANK_8}} toutes les allergies connues du patient. Avec calme, il lui a donné un {{BLANK_9}} essentiel : rester immobile pour éviter d'aggraver la lésion cervicale. Le jeune homme se plaignait en effet d'une douleur {{BLANK_10}} et lancinante dans la nuque. L'interne a décidé de faire {{BLANK_7}} un neurologue en urgence pour lire le scanner. Après des heures d'attente, le patient a enfin pu retrouver un certain {{BLANK_12}} grâce aux antidouleurs. Allongé dans sa chambre d'hôpital, il a utilisé la {{BLANK_13}} Wi-Fi de l'établissement pour rassurer ses parents terrifiés, promettant que ce n'était qu'un mauvais rêve.",
       "blanks": [
-        { "id": 1, "answer": "brouillard", "options": ["brouillard", "soleil", "arc-en-ciel", "canicule"], "correctIndex": 0 },
-        { "id": 2, "answer": "brusquement", "options": ["brusquement", "lentement", "tardivement", "paresseusement"], "correctIndex": 0 },
-        { "id": 3, "answer": "briser", "options": ["briser", "réparer", "souder", "coller"], "correctIndex": 0 },
-        { "id": 4, "answer": "blessé", "options": ["blessé", "soigné", "guéri", "opéré"], "correctIndex": 0 },
-        { "id": 5, "answer": "blessure", "options": ["blessure", "cicatrice", "tache", "ride"], "correctIndex": 0 },
-        { "id": 6, "answer": "brusque", "options": ["brusque", "doux", "lent", "harmonieux"], "correctIndex": 0 },
-        { "id": 7, "answer": "consulter", "options": ["consulter", "ignorer", "repousser", "frapper"], "correctIndex": 0 },
-        { "id": 8, "answer": "contenir", "options": ["contenir", "effacer", "vider", "perdre"], "correctIndex": 0 },
-        { "id": 9, "answer": "conseil", "options": ["conseil", "insulte", "poison", "menace"], "correctIndex": 0 },
-        { "id": 10, "answer": "continuelle", "options": ["continuelle", "intermittente", "rare", "imaginaire"], "correctIndex": 0 },
-        { "id": 11, "answer": "bien-être", "options": ["bien-être", "agonie", "désespoir", "souffrance"], "correctIndex": 0 },
-        { "id": 12, "answer": "connexion", "options": ["connexion", "coupure", "panne", "isolement"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "brouillard",
+          "options": [
+            "brouillard",
+            "soleil",
+            "arc-en-ciel",
+            "canicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "brusquement",
+          "options": [
+            "brusquement",
+            "lentement",
+            "tardivement",
+            "paresseusement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "briser",
+          "options": [
+            "briser",
+            "réparer",
+            "souder",
+            "coller"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "blessé",
+          "options": [
+            "blessé",
+            "soigné",
+            "guéri",
+            "opéré"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "blessure",
+          "options": [
+            "blessure",
+            "cicatrice",
+            "tache",
+            "ride"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "brusque",
+          "options": [
+            "brusque",
+            "doux",
+            "lent",
+            "harmonieux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "consulter",
+          "options": [
+            "consulter",
+            "ignorer",
+            "repousser",
+            "frapper"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "contenir",
+          "options": [
+            "contenir",
+            "effacer",
+            "vider",
+            "perdre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "conseil",
+          "options": [
+            "conseil",
+            "insulte",
+            "poison",
+            "menace"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "continuelle",
+          "options": [
+            "continuelle",
+            "intermittente",
+            "rare",
+            "imaginaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "bien-être",
+          "options": [
+            "bien-être",
+            "agonie",
+            "désespoir",
+            "souffrance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "connexion",
+          "options": [
+            "connexion",
+            "coupure",
+            "panne",
+            "isolement"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "La salle des urgences du Cook County Hospital était plongée dans une agitation fiévreuse. Dehors, un épais ___ réduisait la visibilité à moins de dix mètres, provoquant une série de collisions en chaîne. Une ambulance a déchargé un jeune homme qui avait freiné ___ pour éviter un camion. Le choc avait réussi à ___ la vitre latérale en mille morceaux. Le patient n'était pas gravement ___, mais il présentait une profonde ___ à l'arcade sourcilière, résultat d'un mouvement ___ vers l'avant lors de l'impact. L'interne de garde s'est approché pour l'___ et évaluer son état neurologique. Il a vérifié que le dossier médical électronique continuait à bien ___ toutes les allergies connues du patient. Avec calme, il lui a donné un ___ essentiel : rester immobile pour éviter d'aggraver la lésion cervicale. Le jeune homme se plaignait en effet d'une douleur ___ et lancinante dans la nuque. L'interne a décidé de faire ___ un neurologue en urgence pour lire le scanner. Après des heures d'attente, le patient a enfin pu retrouver un certain ___ grâce aux antidouleurs. Allongé dans sa chambre d'hôpital, il a utilisé la ___ Wi-Fi de l'établissement pour rassurer ses parents terrifiés, promettant que ce n'était qu'un mauvais rêve."
     }
   },
-
   "quiz": {
     "title": "Quiz : Accidents et Santé",
     "title_fa": "آزمون: حوادث و سلامت",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "Le verre tombé de la table a réussi à se ____ en mille morceaux.", "options": ["briser", "réparer", "nettoyer", "coller"], "correctIndex": 0, "explanation_fa": "briser = شکستن و خرد شدن." },
-      { "type": "mcq", "question": "Il est très dangereux de conduire quand il y a beaucoup de ____ sur la route.", "options": ["brouillard", "soleil", "lumière", "chaleur"], "correctIndex": 0, "explanation_fa": "brouillard = مه." },
-      { "type": "binary", "question": "L'adverbe \"brusquement\" décrit une action qui se fait de manière soudaine et inattendue.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، brusquement یعنی ناگهان و به یکباره." },
-      { "type": "mcq", "question": "Le joueur de football s'est effondré sur le terrain, il était gravement ____.", "options": ["blessé", "soigné", "guéri", "récompensé"], "correctIndex": 0, "explanation_fa": "être blessé = زخمی شدن / آسیب دیدن." },
-      { "type": "mcq", "question": "L'infirmière a désinfecté la ____ avec un produit antiseptique.", "options": ["blessure", "médaille", "fleur", "récompense"], "correctIndex": 0, "explanation_fa": "blessure = زخم." },
-      { "type": "mcq", "question": "Pour améliorer son ____ mental, elle pratique la méditation chaque matin.", "options": ["bien-être", "stress", "malheur", "anxiété"], "correctIndex": 0, "explanation_fa": "bien-être = آسایش و سلامت (جسمی و روانی)." },
-      { "type": "mcq", "question": "Le patient a fait un geste ____ qui a provoqué une douleur au dos.", "options": ["brusque", "doux", "lent", "harmonieux"], "correctIndex": 0, "explanation_fa": "un geste brusque = یک حرکت ناگهانی و خشن." },
-      { "type": "mcq", "question": "Si vous avez de la fièvre pendant trois jours, il faut ____ un médecin.", "options": ["consulter", "ignorer", "éviter", "fuir"], "correctIndex": 0, "explanation_fa": "consulter un médecin = مراجعه کردن به پزشک / ویزیت شدن." },
-      { "type": "binary", "question": "Le verbe \"contenir\" signifie \"vider complètement un récipient\".", "options": ["Vrai", "Faux"], "correctIndex": 1, "explanation_fa": "contenir یعنی شامل بودن و در بر گرفتن (متضاد vider)." },
-      { "type": "mcq", "question": "Le ____ de votre médecin est de boire beaucoup d'eau et de vous reposer.", "options": ["conseil", "poison", "danger", "insulte"], "correctIndex": 0, "explanation_fa": "conseil = نصیحت و توصیه پزشکی." },
-      { "type": "mcq", "question": "Le malade se plaint d'une douleur ____ qui ne s'arrête jamais.", "options": ["continuelle", "rare", "imaginaire", "unique"], "correctIndex": 0, "explanation_fa": "continuel = مستمر و پیوسته." },
-      { "type": "mcq", "question": "Sans une bonne ____ internet, la téléconsultation médicale est impossible.", "options": ["connexion", "coupure", "panne", "rupture"], "correctIndex": 0, "explanation_fa": "connexion = اتصال (اینترنت یا شبکه)." }
+      {
+        "type": "mcq",
+        "question": "Le verre tombé de la table a réussi à se ____ en mille morceaux.",
+        "options": [
+          "briser",
+          "réparer",
+          "nettoyer",
+          "coller"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "briser = شکستن و خرد شدن."
+      },
+      {
+        "type": "mcq",
+        "question": "Il est très dangereux de conduire quand il y a beaucoup de ____ sur la route.",
+        "options": [
+          "brouillard",
+          "soleil",
+          "lumière",
+          "chaleur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "brouillard = مه."
+      },
+      {
+        "type": "binary",
+        "question": "L'adverbe \"brusquement\" décrit une action qui se fait de manière soudaine et inattendue.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، brusquement یعنی ناگهان و به یکباره."
+      },
+      {
+        "type": "mcq",
+        "question": "Le joueur de football s'est effondré sur le terrain, il était gravement ____.",
+        "options": [
+          "blessé",
+          "soigné",
+          "guéri",
+          "récompensé"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "être blessé = زخمی شدن / آسیب دیدن."
+      },
+      {
+        "type": "mcq",
+        "question": "L'infirmière a désinfecté la ____ avec un produit antiseptique.",
+        "options": [
+          "blessure",
+          "médaille",
+          "fleur",
+          "récompense"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "blessure = زخم."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour améliorer son ____ mental, elle pratique la méditation chaque matin.",
+        "options": [
+          "bien-être",
+          "stress",
+          "malheur",
+          "anxiété"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "bien-être = آسایش و سلامت (جسمی و روانی)."
+      },
+      {
+        "type": "mcq",
+        "question": "Le patient a fait un geste ____ qui a provoqué une douleur au dos.",
+        "options": [
+          "brusque",
+          "doux",
+          "lent",
+          "harmonieux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "un geste brusque = یک حرکت ناگهانی و خشن."
+      },
+      {
+        "type": "mcq",
+        "question": "Si vous avez de la fièvre pendant trois jours, il faut ____ un médecin.",
+        "options": [
+          "consulter",
+          "ignorer",
+          "éviter",
+          "fuir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "consulter un médecin = مراجعه کردن به پزشک / ویزیت شدن."
+      },
+      {
+        "type": "binary",
+        "question": "Le verbe \"contenir\" signifie \"vider complètement un récipient\".",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "contenir یعنی شامل بودن و در بر گرفتن (متضاد vider)."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ de votre médecin est de boire beaucoup d'eau et de vous reposer.",
+        "options": [
+          "conseil",
+          "poison",
+          "danger",
+          "insulte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "conseil = نصیحت و توصیه پزشکی."
+      },
+      {
+        "type": "mcq",
+        "question": "Le malade se plaint d'une douleur ____ qui ne s'arrête jamais.",
+        "options": [
+          "continuelle",
+          "rare",
+          "imaginaire",
+          "unique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "continuel = مستمر و پیوسته."
+      },
+      {
+        "type": "mcq",
+        "question": "Sans une bonne ____ internet, la téléconsultation médicale est impossible.",
+        "options": [
+          "connexion",
+          "coupure",
+          "panne",
+          "rupture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "connexion = اتصال (اینترنت یا شبکه)."
+      }
     ]
   }
 }
