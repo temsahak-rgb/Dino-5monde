@@ -5,47 +5,301 @@
   "theme_fa": "موانع، محدودیت‌ها و حل مسئله",
   "icon": "🚧",
   "inspiration": "127 Hours (film de Danny Boyle)",
-
   "words": [
-    { "fr": "l'obstacle", "fa": "مانع", "emoji": "🚧", "difficulty": 3, "ex": "Chaque obstacle est une opportunité d'apprendre.", "ex_fa": "هر مانعی یک فرصت برای یادگیری است." },
-    { "fr": "bloquer", "fa": "مسدود کردن", "emoji": "🔒", "difficulty": 3, "ex": "La neige va bloquer les routes de montagne.", "ex_fa": "برف جاده‌های کوهستانی را مسدود خواهد کرد." },
-    { "fr": "bloqué / bloquée", "fa": "گیر کرده / مسدود", "emoji": "⛔", "difficulty": 3, "ex": "Il est bloqué dans sa chambre sans clé.", "ex_fa": "او بدون کلید در اتاقش گیر کرده است." },
-    { "fr": "le blocage", "fa": "انسداد", "emoji": "🛑", "difficulty": 4, "ex": "Le blocage de la sortie a provoqué la panique.", "ex_fa": "انسداد خروجی باعث وحشت شد." },
-    { "fr": "limité / limitée", "fa": "محدود", "emoji": "📏", "difficulty": 3, "ex": "Ses ressources financières sont très limitées.", "ex_fa": "منابع مالی او بسیار محدود است." },
-    { "fr": "la limite", "fa": "محدودیت / مرز", "emoji": "🚩", "difficulty": 2, "ex": "Il faut connaître ses limites physiques.", "ex_fa": "باید محدودیت‌های فیزیکی خود را شناخت." },
-    { "fr": "limiter", "fa": "محدود کردن", "emoji": "📐", "difficulty": 3, "ex": "Il faut limiter sa consommation de sucre.", "ex_fa": "باید مصرف شکر را محدود کرد." },
-    { "fr": "le problème", "fa": "مشکل", "emoji": "❓", "difficulty": 2, "ex": "Chaque problème a au moins une solution.", "ex_fa": "هر مشکلی حداقل یک راه حل دارد." },
-    { "fr": "la solution", "fa": "راه حل", "emoji": "💡", "difficulty": 2, "ex": "La meilleure solution est souvent la plus simple.", "ex_fa": "بهترین راه حل اغلب ساده‌ترین آن است." },
-    { "fr": "résoudre", "fa": "حل کردن", "emoji": "✅", "difficulty": 3, "ex": "Il a réussi à résoudre l'équation complexe.", "ex_fa": "او موفق شد معادله پیچیده را حل کند." },
-    { "fr": "surmonter", "fa": "غلبه کردن", "emoji": "💪", "difficulty": 4, "ex": "Elle a dû surmonter sa peur de l'eau.", "ex_fa": "او مجبور شد بر ترسش از آب غلبه کند." },
-    { "fr": "la barrière", "fa": "مانع / سد", "emoji": "🚧", "difficulty": 3, "ex": "La barrière de la langue peut être frustrante.", "ex_fa": "مانع زبانی می‌تواند ناامیدکننده باشد." },
-    { "fr": "franchir", "fa": "عبور کردن", "emoji": "🏃", "difficulty": 4, "ex": "Il faut franchir ses peurs pour avancer.", "ex_fa": "برای پیشرفت باید از ترس‌های خود عبور کرد." },
-    { "fr": "impossible", "fa": "غیرممکن", "emoji": "❌", "difficulty": 2, "ex": "Rien n'est impossible avec de la volonté.", "ex_fa": "با اراده، هیچ چیز غیرممکن نیست." },
-    { "fr": "difficile", "fa": "دشوار", "emoji": "⛰️", "difficulty": 2, "ex": "L'ascension était difficile mais gratifiante.", "ex_fa": "صعود دشوار اما رضایت‌بخش بود." }
+    {
+      "fr": "l'obstacle",
+      "fa": "مانع",
+      "emoji": "🚧",
+      "difficulty": 3,
+      "ex": "Chaque obstacle est une opportunité d'apprendre.",
+      "ex_fa": "هر مانعی یک فرصت برای یادگیری است."
+    },
+    {
+      "fr": "bloquer",
+      "fa": "مسدود کردن",
+      "emoji": "🔒",
+      "difficulty": 3,
+      "ex": "La neige va bloquer les routes de montagne.",
+      "ex_fa": "برف جاده‌های کوهستانی را مسدود خواهد کرد."
+    },
+    {
+      "fr": "bloqué / bloquée",
+      "fa": "گیر کرده / مسدود",
+      "emoji": "⛔",
+      "difficulty": 3,
+      "ex": "Il est bloqué dans sa chambre sans clé.",
+      "ex_fa": "او بدون کلید در اتاقش گیر کرده است."
+    },
+    {
+      "fr": "le blocage",
+      "fa": "انسداد",
+      "emoji": "🛑",
+      "difficulty": 4,
+      "ex": "Le blocage de la sortie a provoqué la panique.",
+      "ex_fa": "انسداد خروجی باعث وحشت شد."
+    },
+    {
+      "fr": "limité / limitée",
+      "fa": "محدود",
+      "emoji": "📏",
+      "difficulty": 3,
+      "ex": "Ses ressources financières sont très limitées.",
+      "ex_fa": "منابع مالی او بسیار محدود است."
+    },
+    {
+      "fr": "la limite",
+      "fa": "محدودیت / مرز",
+      "emoji": "🚩",
+      "difficulty": 2,
+      "ex": "Il faut connaître ses limites physiques.",
+      "ex_fa": "باید محدودیت‌های فیزیکی خود را شناخت."
+    },
+    {
+      "fr": "limiter",
+      "fa": "محدود کردن",
+      "emoji": "📐",
+      "difficulty": 3,
+      "ex": "Il faut limiter sa consommation de sucre.",
+      "ex_fa": "باید مصرف شکر را محدود کرد."
+    },
+    {
+      "fr": "le problème",
+      "fa": "مشکل",
+      "emoji": "❓",
+      "difficulty": 2,
+      "ex": "Chaque problème a au moins une solution.",
+      "ex_fa": "هر مشکلی حداقل یک راه حل دارد."
+    },
+    {
+      "fr": "la solution",
+      "fa": "راه حل",
+      "emoji": "💡",
+      "difficulty": 2,
+      "ex": "La meilleure solution est souvent la plus simple.",
+      "ex_fa": "بهترین راه حل اغلب ساده‌ترین آن است."
+    },
+    {
+      "fr": "résoudre",
+      "fa": "حل کردن",
+      "emoji": "✅",
+      "difficulty": 3,
+      "ex": "Il a réussi à résoudre l'équation complexe.",
+      "ex_fa": "او موفق شد معادله پیچیده را حل کند."
+    },
+    {
+      "fr": "surmonter",
+      "fa": "غلبه کردن",
+      "emoji": "💪",
+      "difficulty": 4,
+      "ex": "Elle a dû surmonter sa peur de l'eau.",
+      "ex_fa": "او مجبور شد بر ترسش از آب غلبه کند."
+    },
+    {
+      "fr": "la barrière",
+      "fa": "مانع / سد",
+      "emoji": "🚧",
+      "difficulty": 3,
+      "ex": "La barrière de la langue peut être frustrante.",
+      "ex_fa": "مانع زبانی می‌تواند ناامیدکننده باشد."
+    },
+    {
+      "fr": "franchir",
+      "fa": "عبور کردن",
+      "emoji": "🏃",
+      "difficulty": 4,
+      "ex": "Il faut franchir ses peurs pour avancer.",
+      "ex_fa": "برای پیشرفت باید از ترس‌های خود عبور کرد."
+    },
+    {
+      "fr": "impossible",
+      "fa": "غیرممکن",
+      "emoji": "❌",
+      "difficulty": 2,
+      "ex": "Rien n'est impossible avec de la volonté.",
+      "ex_fa": "با اراده، هیچ چیز غیرممکن نیست."
+    },
+    {
+      "fr": "difficile",
+      "fa": "دشوار",
+      "emoji": "⛰️",
+      "difficulty": 2,
+      "ex": "L'ascension était difficile mais gratifiante.",
+      "ex_fa": "صعود دشوار اما رضایت‌بخش بود."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "L'accident dans le canyon",
       "title_fa": "حادثه در دره",
       "text": "Aaron adorait l'escalade en solo. Ce jour-là, un énorme {{BLANK_1}} naturel s'est dressé devant lui : un rocher instable. Soudain, la pierre a commencé à {{BLANK_2}} le passage étroit du canyon. Son bras est resté complètement {{BLANK_3}} sous le poids du rocher. Ce {{BLANK_4}} physique l'empêchait de bouger. Ses réserves d'eau étaient très {{BLANK_5}} : seulement une petite gourde. Il a atteint la {{BLANK_6}} de sa résistance physique après trois jours. Il devait absolument {{BLANK_7}} ses mouvements pour économiser son énergie. Un {{BLANK_8}} vital se posait : comment se libérer seul ? La {{BLANK_9}} semblait évidente mais terrifiante. Il fallait {{BLANK_10}} cette équation mortelle avec sang-froid. Aaron devait {{BLANK_11}} une douleur atroce pour survivre. La {{BLANK_12}} mentale de la solitude était aussi dure que la douleur physique. Il a réussi à {{BLANK_13}} le mur de roche après s'être libéré. Ce qui semblait {{BLANK_14}} est devenu sa réalité. Cette épreuve extrêmement {{BLANK_15}} a transformé sa vision de la vie pour toujours.",
       "blanks": [
-        { "id": 1, "answer": "obstacle", "options": ["obstacle", "cadeau", "récompense", "miracle"], "correctIndex": 0 },
-        { "id": 2, "answer": "bloquer", "options": ["bloquer", "ouvrir", "libérer", "dégager"], "correctIndex": 0 },
-        { "id": 3, "answer": "bloqué", "options": ["bloqué", "libre", "dégagé", "ouvert"], "correctIndex": 0 },
-        { "id": 4, "answer": "blocage", "options": ["blocage", "passage", "ouverture", "libération"], "correctIndex": 0 },
-        { "id": 5, "answer": "limitées", "options": ["limitées", "illimitées", "infinies", "abondantes"], "correctIndex": 0 },
-        { "id": 6, "answer": "limite", "options": ["limite", "début", "milieu", "origine"], "correctIndex": 0 },
-        { "id": 7, "answer": "limiter", "options": ["limiter", "augmenter", "multiplier", "étendre"], "correctIndex": 0 },
-        { "id": 8, "answer": "problème", "options": ["problème", "cadeau", "récompense", "bonheur"], "correctIndex": 0 },
-        { "id": 9, "answer": "solution", "options": ["solution", "question", "mystère", "énigme"], "correctIndex": 0 },
-        { "id": 10, "answer": "résoudre", "options": ["résoudre", "créer", "inventer", "aggraver"], "correctIndex": 0 },
-        { "id": 11, "answer": "surmonter", "options": ["surmonter", "abandonner", "fuir", "céder"], "correctIndex": 0 },
-        { "id": 12, "answer": "barrière", "options": ["barrière", "porte", "fenêtre", "pont"], "correctIndex": 0 },
-        { "id": 13, "answer": "franchir", "options": ["franchir", "reculer", "stagner", "hésiter"], "correctIndex": 0 },
-        { "id": 14, "answer": "impossible", "options": ["impossible", "facile", "simple", "évident"], "correctIndex": 0 },
-        { "id": 15, "answer": "difficile", "options": ["difficile", "facile", "aisée", "simple"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "obstacle",
+          "options": [
+            "obstacle",
+            "cadeau",
+            "récompense",
+            "miracle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bloquer",
+          "options": [
+            "bloquer",
+            "ouvrir",
+            "libérer",
+            "dégager"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "bloqué",
+          "options": [
+            "bloqué",
+            "libre",
+            "dégagé",
+            "ouvert"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "blocage",
+          "options": [
+            "blocage",
+            "passage",
+            "ouverture",
+            "libération"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "limitées",
+          "options": [
+            "limitées",
+            "illimitées",
+            "infinies",
+            "abondantes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "limite",
+          "options": [
+            "limite",
+            "début",
+            "milieu",
+            "origine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "limiter",
+          "options": [
+            "limiter",
+            "augmenter",
+            "multiplier",
+            "étendre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "problème",
+          "options": [
+            "problème",
+            "cadeau",
+            "récompense",
+            "bonheur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "solution",
+          "options": [
+            "solution",
+            "question",
+            "mystère",
+            "énigme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "résoudre",
+          "options": [
+            "résoudre",
+            "créer",
+            "inventer",
+            "aggraver"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "surmonter",
+          "options": [
+            "surmonter",
+            "abandonner",
+            "fuir",
+            "céder"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "barrière",
+          "options": [
+            "barrière",
+            "porte",
+            "fenêtre",
+            "pont"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "franchir",
+          "options": [
+            "franchir",
+            "reculer",
+            "stagner",
+            "hésiter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "impossible",
+          "options": [
+            "impossible",
+            "facile",
+            "simple",
+            "évident"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "difficile",
+          "options": [
+            "difficile",
+            "facile",
+            "aisée",
+            "simple"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Aaron adorait l'escalade en solo. Ce jour-là, un énorme ___ naturel s'est dressé devant lui : un rocher instable. Soudain, la pierre a commencé à ___ le passage étroit du canyon. Son bras est resté complètement ___ sous le poids du rocher. Ce ___ physique l'empêchait de bouger. Ses réserves d'eau étaient très ___ : seulement une petite gourde. Il a atteint la ___ de sa résistance physique après trois jours. Il devait absolument ___ ses mouvements pour économiser son énergie. Un ___ vital se posait : comment se libérer seul ? La ___ semblait évidente mais terrifiante. Il fallait ___ cette équation mortelle avec sang-froid. Aaron devait ___ une douleur atroce pour survivre. La ___ mentale de la solitude était aussi dure que la douleur physique. Il a réussi à ___ le mur de roche après s'être libéré. Ce qui semblait ___ est devenu sa réalité. Cette épreuve extrêmement ___ a transformé sa vision de la vie pour toujours."
     },
     "literary": {
       "title": "Cinq jours de solitude",
@@ -53,45 +307,354 @@
       "inspiration": "127 Hours (film de Danny Boyle avec James Franco)",
       "text": "Aaron Ralston s'était aventuré seul dans les canyons rouges de l'Utah, cherchant l'aventure pure. Mais un {{BLANK_1}} imprévu allait bouleverser sa vie : un rocher de plusieurs tonnes s'est détaché de la paroi. La chute brutale de la pierre a commencé à {{BLANK_2}} complètement l'étroit couloir rocheux. Son bras droit est resté terriblement {{BLANK_3}} sous la masse écrasante du minéral. Ce {{BLANK_4}} absolu l'a plongé dans une situation de survie extrême. Ses réserves en eau et nourriture étaient dramatiquement {{BLANK_5}} : une gourde à moitié vide et deux burritos. Il a atteint la {{BLANK_6}} de ses capacités humaines après cinq jours sans secours. Il devait impérativement {{BLANK_7}} chaque mouvement, chaque pensée, pour ne pas gaspiller ses forces. Un {{BLANK_8}} existentiel se posait désormais : accepter l'amputation ou mourir lentement de soif. La {{BLANK_9}} était claire mais absolument terrifiante pour un homme de vingt-sept ans. Il fallait {{BLANK_10}} cette équation macabre avec un simple canif émoussé trouvé dans son sac. Aaron a dû {{BLANK_11}} une douleur inimaginable que personne ne devrait jamais connaître. La {{BLANK_12}} psychologique de la solitude totale ajoutait à sa torture physique. Il a finalement réussi à {{BLANK_14}} (wait, 13) -> {{BLANK_13}} les derniers mètres de falaise pour atteindre la surface. Ce qui paraissait absolument {{BLANK_14}} s'est transformé en acte de libération suprême. Cette expérience {{BLANK_15}} a radicalement changé sa philosophie de vie et sa gratitude envers chaque instant partagé avec les autres.",
       "blanks": [
-        { "id": 1, "answer": "obstacle", "options": ["obstacle", "cadeau", "miracle", "bonheur"], "correctIndex": 0 },
-        { "id": 2, "answer": "bloquer", "options": ["bloquer", "ouvrir", "libérer", "dégager"], "correctIndex": 0 },
-        { "id": 3, "answer": "bloqué", "options": ["bloqué", "libre", "dégagé", "sauvé"], "correctIndex": 0 },
-        { "id": 4, "answer": "blocage", "options": ["blocage", "passage", "ouverture", "sortie"], "correctIndex": 0 },
-        { "id": 5, "answer": "limitées", "options": ["limitées", "illimitées", "infinies", "abondantes"], "correctIndex": 0 },
-        { "id": 6, "answer": "limite", "options": ["limite", "début", "commencement", "origine"], "correctIndex": 0 },
-        { "id": 7, "answer": "limiter", "options": ["limiter", "augmenter", "multiplier", "étendre"], "correctIndex": 0 },
-        { "id": 8, "answer": "problème", "options": ["problème", "miracle", "bonheur", "chance"], "correctIndex": 0 },
-        { "id": 9, "answer": "solution", "options": ["solution", "question", "mystère", "secret"], "correctIndex": 0 },
-        { "id": 10, "answer": "résoudre", "options": ["résoudre", "créer", "inventer", "aggraver"], "correctIndex": 0 },
-        { "id": 11, "answer": "surmonter", "options": ["surmonter", "abandonner", "fuir", "céder"], "correctIndex": 0 },
-        { "id": 12, "answer": "barrière", "options": ["barrière", "porte", "fenêtre", "entrée"], "correctIndex": 0 },
-        { "id": 13, "answer": "franchir", "options": ["franchir", "reculer", "stagner", "tomber"], "correctIndex": 0 },
-        { "id": 14, "answer": "impossible", "options": ["impossible", "facile", "simple", "évident"], "correctIndex": 0 },
-        { "id": 15, "answer": "difficile", "options": ["difficile", "facile", "aisée", "simple"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "obstacle",
+          "options": [
+            "obstacle",
+            "cadeau",
+            "miracle",
+            "bonheur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bloquer",
+          "options": [
+            "bloquer",
+            "ouvrir",
+            "libérer",
+            "dégager"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "bloqué",
+          "options": [
+            "bloqué",
+            "libre",
+            "dégagé",
+            "sauvé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "blocage",
+          "options": [
+            "blocage",
+            "passage",
+            "ouverture",
+            "sortie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "limitées",
+          "options": [
+            "limitées",
+            "illimitées",
+            "infinies",
+            "abondantes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "limite",
+          "options": [
+            "limite",
+            "début",
+            "commencement",
+            "origine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "limiter",
+          "options": [
+            "limiter",
+            "augmenter",
+            "multiplier",
+            "étendre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "problème",
+          "options": [
+            "problème",
+            "miracle",
+            "bonheur",
+            "chance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "solution",
+          "options": [
+            "solution",
+            "question",
+            "mystère",
+            "secret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "résoudre",
+          "options": [
+            "résoudre",
+            "créer",
+            "inventer",
+            "aggraver"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "surmonter",
+          "options": [
+            "surmonter",
+            "abandonner",
+            "fuir",
+            "céder"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "barrière",
+          "options": [
+            "barrière",
+            "porte",
+            "fenêtre",
+            "entrée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "franchir",
+          "options": [
+            "franchir",
+            "reculer",
+            "stagner",
+            "tomber"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "impossible",
+          "options": [
+            "impossible",
+            "facile",
+            "simple",
+            "évident"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "difficile",
+          "options": [
+            "difficile",
+            "facile",
+            "aisée",
+            "simple"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Aaron Ralston s'était aventuré seul dans les canyons rouges de l'Utah, cherchant l'aventure pure. Mais un ___ imprévu allait bouleverser sa vie : un rocher de plusieurs tonnes s'est détaché de la paroi. La chute brutale de la pierre a commencé à ___ complètement l'étroit couloir rocheux. Son bras droit est resté terriblement ___ sous la masse écrasante du minéral. Ce ___ absolu l'a plongé dans une situation de survie extrême. Ses réserves en eau et nourriture étaient dramatiquement ___ : une gourde à moitié vide et deux burritos. Il a atteint la ___ de ses capacités humaines après cinq jours sans secours. Il devait impérativement ___ chaque mouvement, chaque pensée, pour ne pas gaspiller ses forces. Un ___ existentiel se posait désormais : accepter l'amputation ou mourir lentement de soif. La ___ était claire mais absolument terrifiante pour un homme de vingt-sept ans. Il fallait ___ cette équation macabre avec un simple canif émoussé trouvé dans son sac. Aaron a dû ___ une douleur inimaginable que personne ne devrait jamais connaître. La ___ psychologique de la solitude totale ajoutait à sa torture physique. Il a finalement réussi à ___ (wait, 13) -> ___ les derniers mètres de falaise pour atteindre la surface. Ce qui paraissait absolument ___ s'est transformé en acte de libération suprême. Cette expérience ___ a radicalement changé sa philosophie de vie et sa gratitude envers chaque instant partagé avec les autres."
     }
   },
-
   "quiz": {
     "title": "Quiz : Obstacles et Limites",
     "title_fa": "آزمون: موانع و محدودیت‌ها",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "Le manque de financement est le principal ____ à la réalisation de ce projet.", "options": ["obstacle", "cadeau", "miracle", "bonheur"], "correctIndex": 0, "explanation_fa": "obstacle = مانع." },
-      { "type": "mcq", "question": "L'accident va ____ la circulation pendant plusieurs heures.", "options": ["bloquer", "ouvrir", "libérer", "dégager"], "correctIndex": 0, "explanation_fa": "bloquer = مسدود کردن." },
-      { "type": "binary", "question": "Une personne \"bloquée\" ne peut plus avancer ou bouger librement.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، bloqué یعنی گیر کرده و مسدود." },
-      { "type": "mcq", "question": "Le ____ des négociations a duré trois semaines.", "options": ["blocage", "passage", "ouverture", "libération"], "correctIndex": 0, "explanation_fa": "blocage = انسداد و بن‌بست." },
-      { "type": "mcq", "question": "Le nombre de places disponibles est très ____, dépêchez-vous de réserver.", "options": ["limité", "illimité", "infini", "abondant"], "correctIndex": 0, "explanation_fa": "limité = محدود." },
-      { "type": "mcq", "question": "Il ne faut jamais dépasser la ____ de vitesse sur l'autoroute.", "options": ["limite", "début", "milieu", "origine"], "correctIndex": 0, "explanation_fa": "limite = محدودیت / مرز." },
-      { "type": "mcq", "question": "Le médecin lui a conseillé de ____ sa consommation d'alcool.", "options": ["limiter", "augmenter", "multiplier", "étendre"], "correctIndex": 0, "explanation_fa": "limiter = محدود کردن." },
-      { "type": "binary", "question": "Chaque \"problème\" possède théoriquement au moins une solution.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، problème = مشکل و مسئله." },
-      { "type": "mcq", "question": "La meilleure ____ est souvent la plus simple et la plus directe.", "options": ["solution", "question", "mystère", "énigme"], "correctIndex": 0, "explanation_fa": "solution = راه حل." },
-      { "type": "mcq", "question": "Les mathématiciens cherchent à ____ des équations complexes depuis des siècles.", "options": ["résoudre", "créer", "inventer", "aggraver"], "correctIndex": 0, "explanation_fa": "résoudre = حل کردن." },
-      { "type": "mcq", "question": "Il a réussi à ____ sa timidité pour devenir un excellent orateur.", "options": ["surmonter", "abandonner", "fuir", "céder"], "correctIndex": 0, "explanation_fa": "surmonter = غلبه کردن." },
-      { "type": "mcq", "question": "La ____ linguistique empêche parfois les touristes de communiquer.", "options": ["barrière", "porte", "fenêtre", "pont"], "correctIndex": 0, "explanation_fa": "barrière = مانع / سد." },
-      { "type": "binary", "question": "Le verbe \"franchir\" signifie \"passer au-delà de quelque chose\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، franchir یعنی عبور کردن." },
-      { "type": "mcq", "question": "Il est absolument ____ de voyager sans passeport à l'étranger.", "options": ["impossible", "facile", "simple", "évident"], "correctIndex": 0, "explanation_fa": "impossible = غیرممکن." },
-      { "type": "mcq", "question": "L'apprentissage du chinois est ____ mais très enrichissant.", "options": ["difficile", "facile", "aisé", "simple"], "correctIndex": 0, "explanation_fa": "difficile = دشوار و سخت." }
+      {
+        "type": "mcq",
+        "question": "Le manque de financement est le principal ____ à la réalisation de ce projet.",
+        "options": [
+          "obstacle",
+          "cadeau",
+          "miracle",
+          "bonheur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "obstacle = مانع."
+      },
+      {
+        "type": "mcq",
+        "question": "L'accident va ____ la circulation pendant plusieurs heures.",
+        "options": [
+          "bloquer",
+          "ouvrir",
+          "libérer",
+          "dégager"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "bloquer = مسدود کردن."
+      },
+      {
+        "type": "binary",
+        "question": "Une personne \"bloquée\" ne peut plus avancer ou bouger librement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، bloqué یعنی گیر کرده و مسدود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ des négociations a duré trois semaines.",
+        "options": [
+          "blocage",
+          "passage",
+          "ouverture",
+          "libération"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "blocage = انسداد و بن‌بست."
+      },
+      {
+        "type": "mcq",
+        "question": "Le nombre de places disponibles est très ____, dépêchez-vous de réserver.",
+        "options": [
+          "limité",
+          "illimité",
+          "infini",
+          "abondant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "limité = محدود."
+      },
+      {
+        "type": "mcq",
+        "question": "Il ne faut jamais dépasser la ____ de vitesse sur l'autoroute.",
+        "options": [
+          "limite",
+          "début",
+          "milieu",
+          "origine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "limite = محدودیت / مرز."
+      },
+      {
+        "type": "mcq",
+        "question": "Le médecin lui a conseillé de ____ sa consommation d'alcool.",
+        "options": [
+          "limiter",
+          "augmenter",
+          "multiplier",
+          "étendre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "limiter = محدود کردن."
+      },
+      {
+        "type": "binary",
+        "question": "Chaque \"problème\" possède théoriquement au moins une solution.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، problème = مشکل و مسئله."
+      },
+      {
+        "type": "mcq",
+        "question": "La meilleure ____ est souvent la plus simple et la plus directe.",
+        "options": [
+          "solution",
+          "question",
+          "mystère",
+          "énigme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "solution = راه حل."
+      },
+      {
+        "type": "mcq",
+        "question": "Les mathématiciens cherchent à ____ des équations complexes depuis des siècles.",
+        "options": [
+          "résoudre",
+          "créer",
+          "inventer",
+          "aggraver"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "résoudre = حل کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "Il a réussi à ____ sa timidité pour devenir un excellent orateur.",
+        "options": [
+          "surmonter",
+          "abandonner",
+          "fuir",
+          "céder"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "surmonter = غلبه کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ linguistique empêche parfois les touristes de communiquer.",
+        "options": [
+          "barrière",
+          "porte",
+          "fenêtre",
+          "pont"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "barrière = مانع / سد."
+      },
+      {
+        "type": "binary",
+        "question": "Le verbe \"franchir\" signifie \"passer au-delà de quelque chose\".",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، franchir یعنی عبور کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "Il est absolument ____ de voyager sans passeport à l'étranger.",
+        "options": [
+          "impossible",
+          "facile",
+          "simple",
+          "évident"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "impossible = غیرممکن."
+      },
+      {
+        "type": "mcq",
+        "question": "L'apprentissage du chinois est ____ mais très enrichissant.",
+        "options": [
+          "difficile",
+          "facile",
+          "aisé",
+          "simple"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "difficile = دشوار و سخت."
+      }
     ]
   }
 }
