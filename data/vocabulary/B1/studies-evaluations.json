@@ -1,0 +1,104 @@
+{
+  "id": "studies_evaluations",
+  "level": "B1",
+  "theme": "Études et Évaluations",
+  "theme_fa": "تحصیل، امتحانات و ارزیابی",
+  "icon": "📝",
+  "inspiration": "Le Brio (film d'Yvan Attal)",
+
+  "words": [
+    { "fr": "réviser", "fa": "مرور کردن (درس)", "emoji": "📚", "difficulty": 3, "ex": "Elle doit réviser pour son examen de droit.", "ex_fa": "او باید برای امتحان حقوقش درس‌ها را مرور کند." },
+    { "fr": "la récréation", "fa": "زنگ تفریح", "emoji": "🏃", "difficulty": 3, "ex": "Les enfants jouent pendant la récréation.", "ex_fa": "بچه‌ها در زنگ تفریح بازی می‌کنند." },
+    { "fr": "rédiger", "fa": "نگارش کردن", "emoji": "✍️", "difficulty": 4, "ex": "Il doit rédiger un mémoire de cinquante pages.", "ex_fa": "او باید یک پایان‌نامه پنجاه صفحه‌ای بنویسد." },
+    { "fr": "réfléchir", "fa": "فکر کردن / تامل کردن", "emoji": "🤔", "difficulty": 3, "ex": "Il faut réfléchir avant de répondre.", "ex_fa": "باید قبل از پاسخ دادن فکر کرد." },
+    { "fr": "réfléchi", "fa": "اندیشیده / فکر شده", "emoji": "💭", "difficulty": 4, "ex": "C'est une décision bien réfléchie.", "ex_fa": "این تصمیم به خوبی فکر شده است." },
+    { "fr": "la réflexion", "fa": "تفکر / بازتاب", "emoji": "💡", "difficulty": 4, "ex": "Sa réflexion philosophique est profonde.", "ex_fa": "تفکر فلسفی او عمیق است." },
+    { "fr": "le schéma", "fa": "نمودار / طرح", "emoji": "📊", "difficulty": 4, "ex": "Le schéma explique clairement le processus.", "ex_fa": "نمودار فرآیند را به وضوح توضیح می‌دهد." },
+    { "fr": "le score", "fa": "امتیاز / نمره", "emoji": "🏆", "difficulty": 3, "ex": "Son score au TOEFL est excellent.", "ex_fa": "نمره تافل او عالی است." },
+    { "fr": "la séance", "fa": "جلسه / نوبت", "emoji": "🎬", "difficulty": 3, "ex": "La séance de travaux pratiques dure trois heures.", "ex_fa": "جلسه کار عملی سه ساعت طول می‌کشد." },
+    { "fr": "secondaire", "fa": "ثانویه / دبیرستان", "emoji": "🏫", "difficulty": 3, "ex": "Elle enseigne dans un lycée secondaire.", "ex_fa": "او در دبیرستان تدریس می‌کند." },
+    { "fr": "sélectionner", "fa": "انتخاب کردن / گزینش کردن", "emoji": "✅", "difficulty": 3, "ex": "Il faut sélectionner les meilleures sources.", "ex_fa": "باید بهترین منابع را انتخاب کرد." },
+    { "fr": "sérieusement", "fa": "به طور جدی", "emoji": "🎓", "difficulty": 3, "ex": "Il travaille sérieusement pour ses examens.", "ex_fa": "او به طور جدی برای امتحاناتش کار می‌کند." },
+    { "fr": "simplifier", "fa": "ساده کردن", "emoji": "🔽", "difficulty": 4, "ex": "Le professeur essaie de simplifier les concepts.", "ex_fa": "استاد سعی می‌کند مفاهیم را ساده کند." },
+    { "fr": "simplement", "fa": "به سادگی / فقط", "emoji": "✨", "difficulty": 3, "ex": "C'est simplement une question de logique.", "ex_fa": "این به سادگی یک مسئله منطقی است." },
+    { "fr": "le sujet", "fa": "موضوع", "emoji": "📋", "difficulty": 2, "ex": "Le sujet de la dissertation est complexe.", "ex_fa": "موضوع انشا پیچیده است." },
+    { "fr": "suffisant", "fa": "کافی", "emoji": "✅", "difficulty": 3, "ex": "Ce score est suffisant pour être admis.", "ex_fa": "این نمره برای پذیرش کافی است." }
+  ],
+
+  "stories": {
+    "simple": {
+      "title": "La préparation du concours",
+      "title_fa": "آمادگی برای آزمون",
+      "text": "Neïla est étudiante en droit à l'université de Créteil. Elle doit {{BLANK_1}} intensément pour un concours d'éloquence très sélectif. Son professeur, Pierre Richard, est connu pour sa sévérité. Il va la {{BLANK_2}} parmi des centaines d'étudiants pour la former personnellement. La première {{BLANK_3}} de travail est catastrophique. Neïla n'arrive pas à {{BLANK_4}} calmement avant de répondre. Le professeur lui demande de {{BLANK_5}} un discours de dix minutes. Son {{BLANK_6}} manque de structure et de clarté. Elle doit apprendre à {{BLANK_7}} ses arguments avec un {{BLANK_8}} logique précis. Chaque {{BLANK_9}} d'examen dure exactement sept minutes. Le {{BLANK_10}} minimum pour passer au tour suivant est de quinze sur vingt. Pierre lui apprend à {{BLANK_11}} les informations pertinentes dans ses lectures. Il lui demande de travailler {{BLANK_12}} chaque jour pendant trois mois. Elle passe des heures à la bibliothèque, oubliant même la {{BLANK_13}}. Le {{BLANK_14}} de l'examen final est particulièrement difficile : défendre une cause impopulaire. Neïla doit {{BLANK_15}} la complexité du sujet pour convaincre le jury. Sa préparation n'est pas {{BLANK_16}} seule, elle a besoin de soutien. Elle demande conseil à ses anciens amis du lycée {{BLANK_17}}. Finalement, son discours sera brillant et très {{BLANK_18}}.",
+      "blanks": [
+        { "id": 1, "answer": "réviser", "options": ["réviser", "oublier", "ignorer", "négliger"], "correctIndex": 0 },
+        { "id": 2, "answer": "sélectionner", "options": ["sélectionner", "rejeter", "refuser", "écarter"], "correctIndex": 0 },
+        { "id": 3, "answer": "séance", "options": ["séance", "pause", "vacances", "fête"], "correctIndex": 0 },
+        { "id": 4, "answer": "réfléchir", "options": ["réfléchir", "parler", "crier", "dormir"], "correctIndex": 0 },
+        { "id": 5, "answer": "rédiger", "options": ["rédiger", "effacer", "supprimer", "détruire"], "correctIndex": 0 },
+        { "id": 6, "answer": "discours", "options": ["discours", "silence", "bruit", "cri"], "correctIndex": 0 },
+        { "id": 7, "answer": "simplifier", "options": ["simplifier", "compliquer", "embrouiller", "obscurcir"], "correctIndex": 0 },
+        { "id": 8, "answer": "schéma", "options": ["schéma", "photo", "dessin", "peinture"], "correctIndex": 0 },
+        { "id": 9, "answer": "sujet", "options": ["sujet", "objet", "chose", "personne"], "correctIndex": 0 },
+        { "id": 10, "answer": "score", "options": ["score", "poids", "âge", "taille"], "correctIndex": 0 },
+        { "id": 11, "answer": "sélectionner", "options": ["sélectionner", "rejeter", "refuser", "écarter"], "correctIndex": 0 },
+        { "id": 12, "answer": "sérieusement", "options": ["sérieusement", "négligemment", "rapidement", "mal"], "correctIndex": 0 },
+        { "id": 13, "answer": "récréation", "options": ["récréation", "classe", "cours", "leçon"], "correctIndex": 0 },
+        { "id": 14, "answer": "sujet", "options": ["sujet", "objet", "chose", "personne"], "correctIndex": 0 },
+        { "id": 15, "answer": "simplifier", "options": ["simplifier", "compliquer", "embrouiller", "obscurcir"], "correctIndex": 0 },
+        { "id": 16, "answer": "suffisante", "options": ["suffisante", "insuffisante", "incomplète", "partielle"], "correctIndex": 0 },
+        { "id": 17, "answer": "secondaire", "options": ["secondaire", "primaire", "supérieur", "universitaire"], "correctIndex": 0 },
+        { "id": 18, "answer": "réfléchi", "options": ["réfléchi", "précipité", "hâtif", "superficiel"], "correctIndex": 0 }
+      ]
+    },
+    "literary": {
+      "title": "L'école de l'éloquence",
+      "title_fa": "مدرسه سخنوری",
+      "inspiration": "Le Brio (film d'Yvan Attal avec Daniel Auteuil)",
+      "text": "Neïla Salah poussait les portes de l'université Paris-II avec une détermination farouche. Cette jeune femme de banlieue devait {{BLANK_1}} sans relâche pour le prestigieux concours d'éloquence du mémorial de Caen. Le redoutable professeur Pierre Richard, connu pour ses méthodes brutales, allait la {{BLANK_2}} parmi cent cinquante candidats prometteurs. Leur première {{BLANK_3}} de travail dans le bureau poussiéreux fut électrisante. Neïla, habituée aux joutes verbales du quartier, n'arrivait pourtant pas à {{BLANK_4}} posément face à ce maître intimidant. Le professeur lui demanda de {{BLANK_5}} un plaidoyer de dix minutes sur un thème imposé. Son premier jet manquait cruellement de structure et d'élégance rhétorique. Elle devait impérativement apprendre à {{BLANK_6}} les arguments complexes avec un {{BLANK_7}} logique implacable. Chaque {{BLANK_8}} d'entraînement hebdomadaire ressemblait à un véritable tribunal. Le {{BLANK_9}} éliminatoire fixé par le jury national était de seize sur vingt minimum. Pierre lui enseigna l'art subtil de {{BLANK_10}} les citations pertinentes dans les textes classiques. Il exigea qu'elle travaillât {{BLANK_11}} chaque jour, week-ends compris, pendant quatre longs mois. Elle passait désormais ses nuits à la bibliothèque Sainte-Geneviève, oubliant jusqu'à la {{BLANK_12}} de son existence étudiante. Le {{BLANK_13}} de la finale nationale était redoutable : défendre l'indéfendable avec brio. Neïla devait {{BLANK_14}} l'apparente complexité du paradoxe pour emporter l'adhésion du jury parisien. Sa préparation solitaire n'était clairement pas {{BLANK_15}} pour affronter l'élite des grandes écoles. Elle demanda humblement conseil à Mounir, son fidèle ami du lycée {{BLANK_16}} de Créteil. Le soir de la finale, son discours brillant et profondément {{BLANK_17}} allait stupéfier l'auditoire et révéler une voix nouvelle de la République.",
+      "blanks": [
+        { "id": 1, "answer": "réviser", "options": ["réviser", "oublier", "ignorer", "négliger"], "correctIndex": 0 },
+        { "id": 2, "answer": "sélectionner", "options": ["sélectionner", "rejeter", "refuser", "écarter"], "correctIndex": 0 },
+        { "id": 3, "answer": "séance", "options": ["séance", "pause", "vacances", "fête"], "correctIndex": 0 },
+        { "id": 4, "answer": "réfléchir", "options": ["réfléchir", "parler", "crier", "dormir"], "correctIndex": 0 },
+        { "id": 5, "answer": "rédiger", "options": ["rédiger", "effacer", "supprimer", "détruire"], "correctIndex": 0 },
+        { "id": 6, "answer": "simplifier", "options": ["simplifier", "compliquer", "embrouiller", "obscurcir"], "correctIndex": 0 },
+        { "id": 7, "answer": "schéma", "options": ["schéma", "photo", "dessin", "peinture"], "correctIndex": 0 },
+        { "id": 8, "answer": "séance", "options": ["séance", "pause", "vacances", "fête"], "correctIndex": 0 },
+        { "id": 9, "answer": "score", "options": ["score", "poids", "âge", "taille"], "correctIndex": 0 },
+        { "id": 10, "answer": "sélectionner", "options": ["sélectionner", "rejeter", "refuser", "écarter"], "correctIndex": 0 },
+        { "id": 11, "answer": "sérieusement", "options": ["sérieusement", "négligemment", "rapidement", "mal"], "correctIndex": 0 },
+        { "id": 12, "answer": "récréation", "options": ["récréation", "classe", "cours", "leçon"], "correctIndex": 0 },
+        { "id": 13, "answer": "sujet", "options": ["sujet", "objet", "chose", "personne"], "correctIndex": 0 },
+        { "id": 14, "answer": "simplifier", "options": ["simplifier", "compliquer", "embrouiller", "obscurcir"], "correctIndex": 0 },
+        { "id": 15, "answer": "suffisante", "options": ["suffisante", "insuffisante", "incomplète", "partielle"], "correctIndex": 0 },
+        { "id": 16, "answer": "secondaire", "options": ["secondaire", "primaire", "supérieur", "universitaire"], "correctIndex": 0 },
+        { "id": 17, "answer": "réfléchi", "options": ["réfléchi", "précipité", "hâtif", "superficiel"], "correctIndex": 0 }
+      ]
+    }
+  },
+
+  "quiz": {
+    "title": "Quiz : Études et Évaluations",
+    "title_fa": "آزمون: تحصیل و ارزیابی‌ها",
+    "displayCount": 10,
+    "questions": [
+      { "type": "mcq", "question": "Les étudiants doivent ____ pendant des semaines avant les partiels.", "options": ["réviser", "oublier", "ignorer", "négliger"], "correctIndex": 0, "explanation_fa": "réviser = مرور کردن درس." },
+      { "type": "mcq", "question": "Les enfants courent dans la cour pendant la ____.", "options": ["récréation", "classe", "cours", "leçon"], "correctIndex": 0, "explanation_fa": "récréation = زنگ تفریح." },
+      { "type": "binary", "question": "Le verbe \"rédiger\" signifie \"écrire un texte de manière structurée\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، rédiger یعنی نگارش کردن." },
+      { "type": "mcq", "question": "Il faut ____ longuement avant de prendre une décision importante.", "options": ["réfléchir", "parler", "crier", "dormir"], "correctIndex": 0, "explanation_fa": "réfléchir = فکر کردن." },
+      { "type": "mcq", "question": "C'est un choix mûrement ____, il a pesé tous les arguments.", "options": ["réfléchi", "précipité", "hâtif", "superficiel"], "correctIndex": 0, "explanation_fa": "réfléchi = اندیشیده / فکر شده." },
+      { "type": "mcq", "question": "Sa ____ sur ce problème philosophique est remarquable.", "options": ["réflexion", "distraction", "inattention", "négligence"], "correctIndex": 0, "explanation_fa": "réflexion = تفکر." },
+      { "type": "mcq", "question": "Le ____ ci-dessous illustre le fonctionnement du moteur.", "options": ["schéma", "photo", "dessin", "peinture"], "correctIndex": 0, "explanation_fa": "schéma = نمودار / طرح." },
+      { "type": "binary", "question": "Le \"score\" désigne le résultat chiffré d'un test ou d'un examen.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، score یعنی امتیاز و نمره." },
+      { "type": "mcq", "question": "La prochaine ____ de travaux dirigés aura lieu jeudi après-midi.", "options": ["séance", "pause", "vacances", "fête"], "correctIndex": 0, "explanation_fa": "séance = جلسه." },
+      { "type": "mcq", "question": "Elle enseigne les mathématiques dans un collège ____.", "options": ["secondaire", "primaire", "supérieur", "universitaire"], "correctIndex": 0, "explanation_fa": "secondaire = ثانویه / دبیرستان." },
+      { "type": "mcq", "question": "Il faut ____ soigneusement les sources fiables pour son mémoire.", "options": ["sélectionner", "rejeter", "refuser", "écarter"], "correctIndex": 0, "explanation_fa": "sélectionner = انتخاب کردن / گزینش کردن." },
+      { "type": "mcq", "question": "Elle étudie ____ pour obtenir sa bourse d'excellence.", "options": ["sérieusement", "négligemment", "rapidement", "mal"], "correctIndex": 0, "explanation_fa": "sérieusement = به طور جدی." },
+      { "type": "mcq", "question": "Le pédagogue essaie de ____ les notions abstraites pour les enfants.", "options": ["simplifier", "compliquer", "embrouiller", "obscurcir"], "correctIndex": 0, "explanation_fa": "simplifier = ساده کردن." },
+      { "type": "binary", "question": "L'adverbe \"simplement\" peut signifier \"seulement\" ou \"de façon simple\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، simplement یعنی به سادگی یا فقط." },
+      { "type": "mcq", "question": "Le ____ de la dissertation porte sur la liberté d'expression.", "options": ["sujet", "objet", "chose", "personne"], "correctIndex": 0, "explanation_fa": "sujet = موضوع." },
+      { "type": "mcq", "question": "Ce résultat n'est pas ____ pour être admis en deuxième année.", "options": ["suffisant", "insuffisant", "incomplet", "partiel"], "correctIndex": 0, "explanation_fa": "suffisant = کافی." }
+    ]
+  }
+}
