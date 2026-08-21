@@ -1,0 +1,182 @@
+{
+  "id": "urbanism_quarter",
+  "level": "B1",
+  "theme": "Urbanisme et Quartier",
+  "theme_fa": "برنامه‌ریزی شهری و زندگی در محله",
+  "icon": "🏙️",
+  "inspiration": "La Haine (film de Mathieu Kassovitz)",
+
+  "words": [
+    {
+      "fr": "la banlieue",
+      "fa": "حومه شهر",
+      "emoji": "🏢",
+      "difficulty": 3,
+      "ex": "Ils habitent en banlieue et prennent le train chaque matin.",
+      "ex_fa": "آن‌ها در حومه شهر زندگی می‌کنند و هر صبح قطار می‌گیرند."
+    },
+    {
+      "fr": "le bâtiment",
+      "fa": "ساختمان",
+      "emoji": "🏗️",
+      "difficulty": 2,
+      "ex": "Ce bâtiment en béton va être rénové l'année prochaine.",
+      "ex_fa": "این ساختمان بتنی سال آینده نوسازی خواهد شد."
+    },
+    {
+      "fr": "le centre-ville",
+      "fa": "مرکز شهر",
+      "emoji": "🏙️",
+      "difficulty": 2,
+      "ex": "Le centre-ville est très animé le samedi après-midi.",
+      "ex_fa": "مرکز شهر عصرهای شنبه بسیار پر جنب و جوش است."
+    },
+    {
+      "fr": "le cadre",
+      "fa": "محیط / قاب",
+      "emoji": "🖼️",
+      "difficulty": 4,
+      "ex": "Le cadre de vie dans ce quartier est très agréable.",
+      "ex_fa": "محیط زندگی در این محله بسیار دلپذیر است."
+    },
+    {
+      "fr": "construire",
+      "fa": "ساختن",
+      "emoji": "🧱",
+      "difficulty": 3,
+      "ex": "La mairie va construire une nouvelle école ici.",
+      "ex_fa": "شهرداری اینجا یک مدرسه جدید خواهد ساخت."
+    },
+    {
+      "fr": "la décoration",
+      "fa": "دکوراسیون",
+      "emoji": "🛋️",
+      "difficulty": 3,
+      "ex": "Elle a changé la décoration de son salon.",
+      "ex_fa": "او دکوراسیون اتاق نشیمن خود را تغییر داد."
+    },
+    {
+      "fr": "le bricolage",
+      "fa": "کارهای دستی / تعمیرات خانه",
+      "emoji": "🔧",
+      "difficulty": 4,
+      "ex": "Il passe son week-end à faire du bricolage.",
+      "ex_fa": "او آخر هفته‌اش را صرف کارهای تعمیراتی خانه می‌کند."
+    },
+    {
+      "fr": "le commerce",
+      "fa": "تجارت / مغازه",
+      "emoji": "🏪",
+      "difficulty": 3,
+      "ex": "Les petits commerces de quartier ferment à cause des supermarchés.",
+      "ex_fa": "مغازه‌های کوچک محلی به دلیل سوپرمارکت‌ها تعطیل می‌شوند."
+    },
+    {
+      "fr": "le commissariat",
+      "fa": "کلانتری",
+      "emoji": "👮",
+      "difficulty": 4,
+      "ex": "Il est allé au commissariat pour déclarer le vol de son vélo.",
+      "ex_fa": "او برای گزارش سرقت دوچرخه‌اش به کلانتری رفت."
+    },
+    {
+      "fr": "le conducteur",
+      "fa": "راننده",
+      "emoji": "🚗",
+      "difficulty": 3,
+      "ex": "Le conducteur du bus a ouvert les portes.",
+      "ex_fa": "راننده اتوبوس درها را باز کرد."
+    },
+    {
+      "fr": "conduire",
+      "fa": "رانندگی کردن",
+      "emoji": "🛣️",
+      "difficulty": 3,
+      "ex": "Elle a appris à conduire l'année dernière.",
+      "ex_fa": "او سال گذشته رانندگی یاد گرفت."
+    },
+    {
+      "fr": "dangereux / dangereuse",
+      "fa": "خطرناک",
+      "emoji": "⚠️",
+      "difficulty": 2,
+      "ex": "Il est dangereux de traverser ici sans feu piéton.",
+      "ex_fa": "عبور از اینجا بدون چراغ عابر پیاده خطرناک است."
+    },
+    {
+      "fr": "les degrés",
+      "fa": "پله‌ها / درجه‌ها",
+      "emoji": "🪜",
+      "difficulty": 5,
+      "ex": "Il a monté les degrés de l'escalier en courant.",
+      "ex_fa": "او پله‌های راه پله را با دویدن بالا رفت."
+    }
+  ],
+
+  "stories": {
+    "simple": {
+      "title": "Une journée en ville",
+      "title_fa": "یک روز در شهر",
+      "text": "Marc habite en {{BLANK_1}} et travaille dans le centre. Ce matin, il regarde un grand {{BLANK_2}} en verre qui vient d'être terminé. Il préfère le {{BLANK_3}} pour faire ses courses, car il y a beaucoup de magasins. Le {{BLANK_4}} de son quartier est calme, mais la mairie veut {{BLANK_5}} un nouveau parc. En rentrant, Marc s'occupe de la {{BLANK_6}} de sa chambre. Il adore le {{BLANK_7}} et répare ses meubles lui-même. Il descend acheter du pain dans un petit {{BLANK_8}} en bas de la rue. Soudain, il voit une voiture de police qui va vers le {{BLANK_9}}. Le {{BLANK_10}} de la voiture roulait trop vite. C'est très {{BLANK_11}} de {{BLANK_12}} comme ça près des écoles. Marc rentre chez lui et monte les {{BLANK_13}} de son immeuble à pied.",
+      "blanks": [
+        { "id": 1, "answer": "banlieue", "options": ["banlieue", "campagne", "montagne", "forêt"], "correctIndex": 0 },
+        { "id": 2, "answer": "bâtiment", "options": ["bâtiment", "véhicule", "animal", "vêtement"], "correctIndex": 0 },
+        { "id": 3, "answer": "centre-ville", "options": ["centre-ville", "aéroport", "hôpital", "stade"], "correctIndex": 0 },
+        { "id": 4, "answer": "cadre", "options": ["cadre", "bruit", "salaire", "âge"], "correctIndex": 0 },
+        { "id": 5, "answer": "construire", "options": ["construire", "détruire", "manger", "oublier"], "correctIndex": 0 },
+        { "id": 6, "answer": "décoration", "options": ["décoration", "alimentation", "médicament", "chaussure"], "correctIndex": 0 },
+        { "id": 7, "answer": "bricolage", "options": ["bricolage", "voyage", "sommeil", "sport"], "correctIndex": 0 },
+        { "id": 8, "answer": "commerce", "options": ["commerce", "silence", "climat", "hasard"], "correctIndex": 0 },
+        { "id": 9, "answer": "commissariat", "options": ["commissariat", "restaurant", "cinéma", "musée"], "correctIndex": 0 },
+        { "id": 10, "answer": "conducteur", "options": ["conducteur", "passager", "piéton", "touriste"], "correctIndex": 0 },
+        { "id": 11, "answer": "dangereux", "options": ["dangereux", "délicieux", "magnifique", "tranquille"], "correctIndex": 0 },
+        { "id": 12, "answer": "conduire", "options": ["conduire", "dormir", "nager", "lire"], "correctIndex": 0 },
+        { "id": 13, "answer": "degrés", "options": ["degrés", "kilos", "litres", "heures"], "correctIndex": 0 }
+      ]
+    },
+    "literary": {
+      "title": "Dimanche matin à la cité",
+      "title_fa": "صبح یکشنبه در شهرک",
+      "inspiration": "La Haine (film de Mathieu Kassovitz)",
+      "text": "C'était un dimanche matin dans la {{BLANK_1}} nord de Paris. Vinz et Saïd regardaient un vieux {{BLANK_2}} en béton qui allait être démoli. Ils préféraient le {{BLANK_3}} avec ses cafés animés, mais le {{BLANK_4}} de leur quartier avait un charme particulier. La mairie avait décidé de {{BLANK_5}} un nouveau parc à la place. En attendant, Saïd s'occupait de la {{BLANK_6}} de son appartement. Il adorait le {{BLANK_7}} et réparait tout lui-même. Plus tard, ils sont allés faire des courses dans un petit {{BLANK_8}} de proximité. Soudain, ils ont entendu des sirènes de police et ont vu une voiture filer vers le {{BLANK_9}}. Le {{BLANK_10}} de la voiture roulait trop vite. C'était très {{BLANK_11}} de {{BLANK_12}} comme ça dans ces rues étroites. Pour échapper à la tension, ils ont décidé de monter les {{BLANK_13}} de la tour voisine pour regarder le panorama.",
+      "blanks": [
+        { "id": 1, "answer": "banlieue", "options": ["banlieue", "campagne", "plage", "montagne"], "correctIndex": 0 },
+        { "id": 2, "answer": "bâtiment", "options": ["bâtiment", "nuage", "arbre", "stylo"], "correctIndex": 0 },
+        { "id": 3, "answer": "centre-ville", "options": ["centre-ville", "sous-sol", "toit", "désert"], "correctIndex": 0 },
+        { "id": 4, "answer": "cadre", "options": ["cadre", "moteur", "clavier", "tissu"], "correctIndex": 0 },
+        { "id": 5, "answer": "construire", "options": ["construire", "boire", "chanter", "dormir"], "correctIndex": 0 },
+        { "id": 6, "answer": "décoration", "options": ["décoration", "fièvre", "douleur", "famine"], "correctIndex": 0 },
+        { "id": 7, "answer": "bricolage", "options": ["bricolage", "mensonge", "secret", "silence"], "correctIndex": 0 },
+        { "id": 8, "answer": "commerce", "options": ["commerce", "nuage", "volcan", "océan"], "correctIndex": 0 },
+        { "id": 9, "answer": "commissariat", "options": ["commissariat", "paradis", "enfer", "espace"], "correctIndex": 0 },
+        { "id": 10, "answer": "conducteur", "options": ["conducteur", "fantôme", "extraterrestre", "magicien"], "correctIndex": 0 },
+        { "id": 11, "answer": "dangereux", "options": ["dangereux", "sucré", "salé", "acide"], "correctIndex": 0 },
+        { "id": 12, "answer": "conduire", "options": ["conduire", "voler", "nager", "fondre"], "correctIndex": 0 },
+        { "id": 13, "answer": "degrés", "options": ["degrés", "litres", "grammes", "euros"], "correctIndex": 0 }
+      ]
+    }
+  },
+
+  "quiz": {
+    "title": "Quiz : Urbanisme et Quartier",
+    "title_fa": "آزمون: برنامه‌ریزی شهری و محله",
+    "displayCount": 10,
+    "questions": [
+      { "type": "mcq", "question": "Beaucoup de familles quittent ____ pour avoir une maison avec jardin.", "options": ["le centre-ville", "la banlieue", "la campagne", "la montagne"], "correctIndex": 0, "explanation_fa": "ترک مرکز شهر برای رفتن به حومه یا روستا." },
+      { "type": "mcq", "question": "Les architectes ont conçu un ____ de vingt étages.", "options": ["bâtiment", "véhicule", "meuble", "vêtement"], "correctIndex": 0, "explanation_fa": "bâtiment = ساختمان." },
+      { "type": "mcq", "question": "Les touristes préfèrent séjourner dans ____ pour être près des monuments.", "options": ["le centre-ville", "la banlieue", "la forêt", "l'usine"], "correctIndex": 0, "explanation_fa": "centre-ville = مرکز شهر (نزدیک جاذبه‌ها)." },
+      { "type": "mcq", "question": "Cette entreprise offre un ____ de travail très stimulant et vert.", "options": ["cadre", "salaire", "âge", "poids"], "correctIndex": 0, "explanation_fa": "cadre de travail = محیط کار." },
+      { "type": "mcq", "question": "Il faut du ciment et des briques pour ____ un mur.", "options": ["construire", "manger", "lire", "écouter"], "correctIndex": 0, "explanation_fa": "construire = ساختن." },
+      { "type": "mcq", "question": "Elle a acheté des rideaux et des tapis pour changer la ____.", "options": ["décoration", "température", "gravité", "vitesse"], "correctIndex": 0, "explanation_fa": "décoration = دکوراسیون." },
+      { "type": "mcq", "question": "Mon père fait du ____ le week-end pour réparer la plomberie.", "options": ["bricolage", "sommeil", "jeûne", "silence"], "correctIndex": 0, "explanation_fa": "bricolage = کارهای فنی و تعمیراتی خانه." },
+      { "type": "binary", "question": "Un \"commerce de proximité\" désigne un petit magasin situé près de chez soi.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، commerce de proximité یعنی مغازه محلی و نزدیک." },
+      { "type": "mcq", "question": "Après l'accident, la police a demandé aux témoins de venir au ____.", "options": ["commissariat", "restaurant", "cinéma", "stade"], "correctIndex": 0, "explanation_fa": "commissariat = کلانتری." },
+      { "type": "mcq", "question": "Le ____ du taxi a oublié de mettre le compteur en marche.", "options": ["conducteur", "passager", "piéton", "touriste"], "correctIndex": 0, "explanation_fa": "conducteur = راننده." },
+      { "type": "binary", "question": "Le verbe \"conduire\" signifie uniquement \"diriger une entreprise\".", "options": ["Vrai", "Faux"], "correctIndex": 1, "explanation_fa": "conduire یعنی رانندگی کردن (وسیله نقلیه)، هرچند مجازاً به معنای هدایت کردن هم هست." },
+      { "type": "mcq", "question": "Il est ____ de marcher seul dans cette ruelle mal éclairée la nuit.", "options": ["dangereux", "délicieux", "magnifique", "tranquille"], "correctIndex": 0, "explanation_fa": "dangereux = خطرناک." },
+      { "type": "binary", "question": "Le mot \"degrés\" peut désigner les marches d'un escalier.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، degrés می‌تواند به معنای پله‌ها یا درجه حرارت باشد." },
+      { "type": "mcq", "question": "Pour obtenir le permis de ____, il faut passer un examen pratique.", "options": ["conduire", "dormir", "nager", "voler"], "correctIndex": 0, "explanation_fa": "permis de conduire = گواهینامه رانندگی." },
+      { "type": "binary", "question": "La \"banlieue\" est toujours synonyme de \"campagne\".", "options": ["Vrai", "Faux"], "correctIndex": 1, "explanation_fa": "banlieue حومه شهر است (شهری)، اما campagne روستا و طبیعت است." }
+    ]
+  }
+}
