@@ -1,0 +1,94 @@
+{
+  "id": "daily_life_house",
+  "level": "B1",
+  "theme": "Vie quotidienne et Maison",
+  "theme_fa": "خانه، عادات روزمره و سبک زندگی",
+  "icon": "🏡",
+  "inspiration": "Le Fabuleux Destin d'Amélie Poulain (film de Jean-Pierre Jeunet)",
+  "words": [
+    { "fr": "l'habitude", "fa": "عادت", "emoji": "🔁", "difficulty": 2, "ex": "Elle a l'habitude de boire du thé le matin.", "ex_fa": "او عادت دارد صبح‌ها چای بنوشد." },
+    { "fr": "ménager / ménagère", "fa": "خانگی / مربوط به خانه", "emoji": "🧹", "difficulty": 3, "ex": "Il utilise des produits ménagers écologiques.", "ex_fa": "او از محصولات شوینده خانگیِ اکولوژیک استفاده می‌کند." },
+    { "fr": "le jardinage", "fa": "باغبانی", "emoji": "🌻", "difficulty": 3, "ex": "Le jardinage est une activité relaxante.", "ex_fa": "باغبانی یک فعالیت آرامش‌بخش است." },
+    { "fr": "jardiner", "fa": "باغبانی کردن", "emoji": "🌱", "difficulty": 3, "ex": "Elle aime jardiner sur son balcon.", "ex_fa": "او دوست دارد در بالکنش باغبانی کند." },
+    { "fr": "l'ingrédient", "fa": "ماده اولیه (غذا)", "emoji": "🧂", "difficulty": 3, "ex": "Il manque un ingrédient essentiel dans cette recette.", "ex_fa": "یک ماده اولیه ضروری در این دستور پخت کم است." },
+    { "fr": "la jeunesse", "fa": "جوانی / جوانان", "emoji": "👱‍♀️", "difficulty": 3, "ex": "Les photos de sa jeunesse ornent les murs.", "ex_fa": "عکس‌های دوران جوانی‌اش دیوارها را زینت می‌دهند." },
+    { "fr": "laisser", "fa": "گذاشتن / اجازه دادن", "emoji": "🚪", "difficulty": 2, "ex": "Elle laisse la fenêtre ouverte pour aérer.", "ex_fa": "او پنجره را باز می‌گذارد تا هوا جریان یابد." },
+    { "fr": "se lever", "fa": "برخاستن / بیدار شدن", "emoji": "⏰", "difficulty": 2, "ex": "Il se lève toujours avant le soleil.", "ex_fa": "او همیشه قبل از طلوع خورشید بیدار می‌شود." },
+    { "fr": "la liberté", "fa": "آزادی", "emoji": "🕊️", "difficulty": 2, "ex": "Vivre seul lui apporte une grande liberté.", "ex_fa": "تنها زندگی کردن آزادی زیادی به او می‌بخشد." },
+    { "fr": "la librairie", "fa": "کتاب‌فروشی", "emoji": "📚", "difficulty": 3, "ex": "J'ai acheté ce roman à la librairie du quartier.", "ex_fa": "من این رمان را از کتاب‌فروشی محله خریدم." },
+    { "fr": "la littérature", "fa": "ادبیات", "emoji": "📖", "difficulty": 3, "ex": "Elle est passionnée par la littérature russe.", "ex_fa": "او شیفته ادبیات روسیه است." },
+    { "fr": "malgré", "fa": "علی‌رغم / با وجود", "emoji": "🌧️", "difficulty": 3, "ex": "Elle sort se promener malgré la pluie.", "ex_fa": "او علی‌رغم باران برای پیاده‌روی بیرون می‌رود." },
+    { "fr": "malheureux / malheureuse", "fa": "ناراحت / بدبخت", "emoji": "😔", "difficulty": 3, "ex": "Elle n'est pas malheureuse quand elle est seule.", "ex_fa": "وقتی تنهاست، ناراحت نیست." },
+    { "fr": "la manière", "fa": "روش / طریق", "emoji": "✨", "difficulty": 3, "ex": "Elle vit à sa manière, sans subir de pression.", "ex_fa": "او به روش خودش زندگی می‌کند، بدون اینکه فشاری را تحمل کند." },
+    { "fr": "le gymnase", "fa": "سالن ورزشی", "emoji": "🤸‍♀️", "difficulty": 3, "ex": "Elle va au gymnase pour faire du yoga.", "ex_fa": "او برای یوگا به سالن ورزشی می‌رود." }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les petits plaisirs d'Amélie",
+      "title_fa": "لذت‌های کوچک آمیلی",
+      "text": "Amélie a une petite {{BLANK_1}} très précise : chaque matin, elle nettoie son appartement avec des produits {{BLANK_2}} qui sentent bon la lavande. Elle adore le {{BLANK_3}} et passe des heures à {{BLANK_4}} sur son petit balcon fleuri. Pour le déjeuner, elle ajoute toujours un {{BLANK_5}} secret dans sa soupe de légumes. En cuisinant, elle repense souvent à sa {{BLANK_6}} dans ce quartier de Montmartre. Elle {{BLANK_7}} toujours la fenêtre de la cuisine ouverte pour entendre les oiseaux. Elle se {{BLANK_8}} de bonne heure, bien avant que la ville ne s'éveille. Pour elle, la vraie {{BLANK_9}} commence chez soi, dans l'intimité de son foyer. L'après-midi, elle descend à la {{BLANK_10}} du coin pour acheter un nouveau livre. Elle est profondément passionnée par la {{BLANK_11}} contemporaine. {{BLANK_12}} le mauvais temps, elle sort toujours se promener avec son parapluie jaune. Elle n'est jamais {{BLANK_13}} quand elle est seule, car son esprit est toujours occupé. Elle vit exactement à sa {{BLANK_14}}, sans jamais subir la pression des autres. Le soir, elle va au {{BLANK_15}} municipal pour suivre son cours de gymnastique douce.",
+      "blanks": [
+        { "id": 1, "answer": "habitude", "options": ["habitude", "exception", "surprise", "nouveauté"], "correctIndex": 0 },
+        { "id": 2, "answer": "ménagers", "options": ["ménagers", "sauvages", "industriels", "toxiques"], "correctIndex": 0 },
+        { "id": 3, "answer": "jardinage", "options": ["jardinage", "bricolage", "ménage", "sommeil"], "correctIndex": 0 },
+        { "id": 4, "answer": "jardiner", "options": ["jardiner", "dormir", "courir", "nager"], "correctIndex": 0 },
+        { "id": 5, "answer": "ingrédient", "options": ["ingrédient", "meuble", "vêtement", "outil"], "correctIndex": 0 },
+        { "id": 6, "answer": "jeunesse", "options": ["jeunesse", "vieillesse", "retraite", "enfance"], "correctIndex": 0 },
+        { "id": 7, "answer": "laisse", "options": ["laisse", "ferme", "bloque", "casse"], "correctIndex": 0 },
+        { "id": 8, "answer": "lève", "options": ["lève", "couche", "assoit", "perd"], "correctIndex": 0 },
+        { "id": 9, "answer": "liberté", "options": ["liberté", "prison", "contrainte", "obligation"], "correctIndex": 0 },
+        { "id": 10, "answer": "librairie", "options": ["librairie", "boucherie", "boulangerie", "pharmacie"], "correctIndex": 0 },
+        { "id": 11, "answer": "littérature", "options": ["littérature", "mécanique", "chimie", "informatique"], "correctIndex": 0 },
+        { "id": 12, "answer": "Malgré", "options": ["Malgré", "Grâce à", "À cause de", "Loin de"], "correctIndex": 0 },
+        { "id": 13, "answer": "malheureuse", "options": ["malheureuse", "joyeuse", "ravie", "contente"], "correctIndex": 0 },
+        { "id": 14, "answer": "manière", "options": ["manière", "règle", "loi", "norme"], "correctIndex": 0 },
+        { "id": 15, "answer": "gymnase", "options": ["gymnase", "restaurant", "cinéma", "musée"], "correctIndex": 0 }
+      ]
+    },
+    "literary": {
+      "title": "La poésie du quotidien",
+      "title_fa": "شعرِ روزمرگی",
+      "inspiration": "Le Fabuleux Destin d'Amélie Poulain (film de Jean-Pierre Jeunet)",
+      "text": "Dans son petit appartement sous les toits de Paris, Amélie cultivait ses rituels avec un soin méticuleux. Sa plus chère {{BLANK_1}} était de cirer son parquet ancien avec des produits {{BLANK_2}} artisanaux qui embaumaient la cire d'abeille. Le {{BLANK_3}} était devenu sa thérapie silencieuse ; elle aimait {{BLANK_4}} en écoutant le murmure lointain de la ville. En préparant ses repas, elle glissait toujours un {{BLANK_5}} inattendu, comme une pincée de cannelle, pour éveiller les sens. Les vieilles photographies de sa {{BLANK_6}} solitaire ornaient les murs de son couloir. Elle {{BLANK_7}} volontiers la porte de sa cuisine entrouverte pour que l'arôme du café frais se répande dans l'escalier. Dès qu'elle se {{BLANK_8}}, son premier geste était d'ouvrir grand les volets pour saluer le ciel. Cette indépendance farouche était sa propre définition de la {{BLANK_9}}. Elle flânait ensuite jusqu'à la {{BLANK_10}} de la rue des Martyrs, un refuge chaleureux dédié à la {{BLANK_11}} fantastique. {{BLANK_12}} son apparence timide et ses petits tocs, elle n'était absolument pas {{BLANK_13}}. Elle observait le monde à sa {{BLANK_14}} bien à elle, trouvant de la poésie dans les détails invisibles aux yeux des gens pressés. Parfois, elle s'arrêtait devant le {{BLANK_15}} du quartier, souriant à l'idée que la véritable gymnastique était avant tout celle de l'esprit.",
+      "blanks": [
+        { "id": 1, "answer": "habitude", "options": ["habitude", "surprise", "exception", "anomalie"], "correctIndex": 0 },
+        { "id": 2, "answer": "ménagers", "options": ["ménagers", "cosmétiques", "alimentaires", "médicaux"], "correctIndex": 0 },
+        { "id": 3, "answer": "jardinage", "options": ["jardinage", "bricolage", "tricot", "dessin"], "correctIndex": 0 },
+        { "id": 4, "answer": "jardiner", "options": ["jardiner", "cuisiner", "peindre", "chanter"], "correctIndex": 0 },
+        { "id": 5, "answer": "ingrédient", "options": ["ingrédient", "ustensile", "meuble", "vêtement"], "correctIndex": 0 },
+        { "id": 6, "answer": "jeunesse", "options": ["jeunesse", "vieillesse", "grossesse", "maladie"], "correctIndex": 0 },
+        { "id": 7, "answer": "laissait", "options": ["laissait", "fermait", "cassait", "bloquait"], "correctIndex": 0 },
+        { "id": 8, "answer": "levait", "options": ["levait", "couchait", "lavait", "habillait"], "correctIndex": 0 },
+        { "id": 9, "answer": "liberté", "options": ["liberté", "prison", "captivité", "contrainte"], "correctIndex": 0 },
+        { "id": 10, "answer": "librairie", "options": ["librairie", "boucherie", "quincaillerie", "charcuterie"], "correctIndex": 0 },
+        { "id": 11, "answer": "littérature", "options": ["littérature", "menuiserie", "plomberie", "maçonnerie"], "correctIndex": 0 },
+        { "id": 12, "answer": "Malgré", "options": ["Malgré", "Avec", "Grâce à", "Sans"], "correctIndex": 0 },
+        { "id": 13, "answer": "malheureuse", "options": ["malheureuse", "heureuse", "comblée", "satisfaite"], "correctIndex": 0 },
+        { "id": 14, "answer": "manière", "options": ["manière", "façon", "règle", "loi"], "correctIndex": 0 },
+        { "id": 15, "answer": "gymnase", "options": ["gymnase", "supermarché", "tribunal", "hôpital"], "correctIndex": 0 }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Vie quotidienne et Maison",
+    "title_fa": "آزمون: زندگی روزمره و خانه",
+    "displayCount": 10,
+    "questions": [
+      { "type": "mcq", "question": "Boire un café en regardant par la fenêtre est une ____ qu'il prend chaque matin.", "options": ["habitude", "exception", "surprise", "anomalie"], "correctIndex": 0, "explanation_fa": "habitude = عادت." },
+      { "type": "mcq", "question": "Il faut utiliser des produits ____ non toxiques pour nettoyer la salle de bain.", "options": ["ménagers", "sauvages", "industriels", "radioactifs"], "correctIndex": 0, "explanation_fa": "produits ménagers = محصولات شوینده و نظافتی خانه." },
+      { "type": "binary", "question": "Le \"jardinage\" est l'activité qui consiste à s'occuper d'un jardin ou de plantes.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، jardinage یعنی باغبانی." },
+      { "type": "mcq", "question": "Mon grand-père adore ____ le dimanche matin pour cultiver ses tomates.", "options": ["jardiner", "dormir", "conduire", "nager"], "correctIndex": 0, "explanation_fa": "jardiner = باغبانی کردن." },
+      { "type": "mcq", "question": "La farine, les œufs et le sucre sont les ____ de base d'un gâteau.", "options": ["ingrédients", "meubles", "vêtements", "outils"], "correctIndex": 0, "explanation_fa": "ingrédient = ماده اولیه (در آشپزی)." },
+      { "type": "mcq", "question": "Les photos de sa ____ montrent un jeune homme aux cheveux longs.", "options": ["jeunesse", "vieillesse", "retraite", "enfance"], "correctIndex": 0, "explanation_fa": "jeunesse = جوانی." },
+      { "type": "binary", "question": "Le verbe \"laisser\" peut signifier \"ne pas fermer\" ou \"permettre\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، laisser یعنی گذاشتن، رها کردن یا اجازه دادن." },
+      { "type": "mcq", "question": "En hiver, je me ____ difficilement quand il fait encore noir dehors.", "options": ["lève", "couche", "perds", "lave"], "correctIndex": 0, "explanation_fa": "se lever = برخاستن و از خواب بیدار شدن." },
+      { "type": "mcq", "question": "Après des années en prison, il a enfin retrouvé sa ____.", "options": ["liberté", "prison", "contrainte", "cellule"], "correctIndex": 0, "explanation_fa": "liberté = آزادی." },
+      { "type": "mcq", "question": "J'ai acheté ce beau roman de Victor Hugo à la ____ du centre-ville.", "options": ["librairie", "boucherie", "boulangerie", "pharmacie"], "correctIndex": 0, "explanation_fa": "librairie = کتاب‌فروشی (دقت کنید: کتابخانه در فرانسه bibliothèque است!)." },
+      { "type": "mcq", "question": "Elle étudie la ____ française du XIXe siècle à l'université.", "options": ["littérature", "mécanique", "chimie", "informatique"], "correctIndex": 0, "explanation_fa": "littérature = ادبیات." },
+      { "type": "mcq", "question": "____ ses douleurs au dos, il a réussi à terminer le marathon.", "options": ["Malgré", "Grâce à", "À cause de", "Loin de"], "correctIndex": 0, "explanation_fa": "malgré = علی‌رغم / با وجود." },
+      { "type": "binary", "question": "L'adjectif \"malheureux\" signifie \"très content et satisfait\".", "options": ["Vrai", "Faux"], "correctIndex": 1, "explanation_fa": "malheureux یعنی ناراحت، غمگین یا بدبخت." },
+      { "type": "mcq", "question": "Il a résolu le problème à sa ____, sans suivre le manuel d'instructions.", "options": ["manière", "règle", "loi", "norme"], "correctIndex": 0, "explanation_fa": "à sa manière = به روش خودش." },
+      { "type": "mcq", "question": "Les élèves font des exercices de gymnastique dans le ____ de l'école.", "options": ["gymnase", "restaurant", "cinéma", "musée"], "correctIndex": 0, "explanation_fa": "gymnase = سالن ورزشی." }
+    ]
+  }
+}
