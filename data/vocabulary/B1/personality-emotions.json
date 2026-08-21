@@ -5,35 +5,187 @@
   "theme_fa": "روانشناسی شخصیت، احساسات و تعارضات",
   "icon": "🎭",
   "inspiration": "Eternal Sunshine of the Spotless Mind (film de Michel Gondry)",
-
   "words": [
-    { "fr": "supporter", "fa": "تحمل کردن / تاب آوردن", "emoji": "🏋️", "difficulty": 3, "ex": "Il ne peut plus supporter cette situation toxique.", "ex_fa": "او دیگر نمی‌تواند این وضعیت سمی را تحمل کند." },
-    { "fr": "timide", "fa": "خجالتی / کم‌رو", "emoji": "😳", "difficulty": 2, "ex": "Il est trop timide pour lui parler en premier.", "ex_fa": "او خیلی خجالتی است که اول با او صحبت کند." },
-    { "fr": "tranquille", "fa": "آرام / بی‌دغدغه", "emoji": "😌", "difficulty": 2, "ex": "Elle mène une vie tranquille à la campagne.", "ex_fa": "او زندگی آرامی در روستا دارد." },
-    { "fr": "tromper", "fa": "فریب دادن / خیانت کردن", "emoji": "💔", "difficulty": 3, "ex": "Il a peur que sa partenaire le trompe.", "ex_fa": "او می‌ترسد که شریک عاطفی‌اش به او خیانت کند." },
-    { "fr": "tendre", "fa": "نرم / مهربان / دراز کردن", "emoji": "🤲", "difficulty": 3, "ex": "Il aime lui tendre la main dans les moments difficiles.", "ex_fa": "او دوست دارد در لحظات سخت دستش را به سویش دراز کند." },
-    { "fr": "violent / violente", "fa": "خشن / شدید", "emoji": "🌪️", "difficulty": 3, "ex": "Leur conflit est parfois très violent.", "ex_fa": "تعارض آن‌ها گاهی بسیار خشن است." },
-    { "fr": "la tristesse", "fa": "غم / اندوه", "emoji": "🌧️", "difficulty": 2, "ex": "Une profonde tristesse l'envahit après la rupture.", "ex_fa": "غم عمیقی پس از جدایی او را فرا می‌گیرد." },
-    { "fr": "volontaire", "fa": "داوطلب / بااراده", "emoji": "💪", "difficulty": 4, "ex": "C'est une personne très volontaire qui atteint ses buts.", "ex_fa": "او فرد بسیار بااراده‌ای است که به اهدافش می‌رسد." },
-    { "fr": "vulgaire", "fa": "عامیانه / زننده / بی‌ادبانه", "emoji": "🤬", "difficulty": 4, "ex": "Elle utilise un langage vulgaire quand elle est en colère.", "ex_fa": "او وقتی عصبانی است از زبان زننده‌ای استفاده می‌کند." }
+    {
+      "fr": "supporter",
+      "fa": "تحمل کردن / تاب آوردن",
+      "emoji": "🏋️",
+      "difficulty": 3,
+      "ex": "Il ne peut plus supporter cette situation toxique.",
+      "ex_fa": "او دیگر نمی‌تواند این وضعیت سمی را تحمل کند."
+    },
+    {
+      "fr": "timide",
+      "fa": "خجالتی / کم‌رو",
+      "emoji": "😳",
+      "difficulty": 2,
+      "ex": "Il est trop timide pour lui parler en premier.",
+      "ex_fa": "او خیلی خجالتی است که اول با او صحبت کند."
+    },
+    {
+      "fr": "tranquille",
+      "fa": "آرام / بی‌دغدغه",
+      "emoji": "😌",
+      "difficulty": 2,
+      "ex": "Elle mène une vie tranquille à la campagne.",
+      "ex_fa": "او زندگی آرامی در روستا دارد."
+    },
+    {
+      "fr": "tromper",
+      "fa": "فریب دادن / خیانت کردن",
+      "emoji": "💔",
+      "difficulty": 3,
+      "ex": "Il a peur que sa partenaire le trompe.",
+      "ex_fa": "او می‌ترسد که شریک عاطفی‌اش به او خیانت کند."
+    },
+    {
+      "fr": "tendre",
+      "fa": "نرم / مهربان / دراز کردن",
+      "emoji": "🤲",
+      "difficulty": 3,
+      "ex": "Il aime lui tendre la main dans les moments difficiles.",
+      "ex_fa": "او دوست دارد در لحظات سخت دستش را به سویش دراز کند."
+    },
+    {
+      "fr": "violent / violente",
+      "fa": "خشن / شدید",
+      "emoji": "🌪️",
+      "difficulty": 3,
+      "ex": "Leur conflit est parfois très violent.",
+      "ex_fa": "تعارض آن‌ها گاهی بسیار خشن است."
+    },
+    {
+      "fr": "la tristesse",
+      "fa": "غم / اندوه",
+      "emoji": "🌧️",
+      "difficulty": 2,
+      "ex": "Une profonde tristesse l'envahit après la rupture.",
+      "ex_fa": "غم عمیقی پس از جدایی او را فرا می‌گیرد."
+    },
+    {
+      "fr": "volontaire",
+      "fa": "داوطلب / بااراده",
+      "emoji": "💪",
+      "difficulty": 4,
+      "ex": "C'est une personne très volontaire qui atteint ses buts.",
+      "ex_fa": "او فرد بسیار بااراده‌ای است که به اهدافش می‌رسد."
+    },
+    {
+      "fr": "vulgaire",
+      "fa": "عامیانه / زننده / بی‌ادبانه",
+      "emoji": "🤬",
+      "difficulty": 4,
+      "ex": "Elle utilise un langage vulgaire quand elle est en colère.",
+      "ex_fa": "او وقتی عصبانی است از زبان زننده‌ای استفاده می‌کند."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "L'effacement des souvenirs",
       "title_fa": "پاک کردن خاطرات",
       "text": "Joel est un homme très {{BLANK_1}} qui mène une vie assez {{BLANK_2}} dans la banlieue de New York. Un jour, il rencontre Clementine, une femme aux cheveux bleus, spontanée et imprévisible. Leur relation est passionnée, mais leur conflit est parfois très {{BLANK_3}} à cause de leurs caractères opposés. Un soir de dispute, Joel a peur qu'elle le {{BLANK_4}} avec un autre homme. Finalement, ils rompent. Après la séparation, Joel ressent une profonde {{BLANK_5}} qu'il n'arrive pas à oublier. Il ne peut plus {{BLANK_6}} la douleur de ces souvenirs douloureux. Il décide alors d'effacer Clementine de sa mémoire. Pendant le processus, il se souvient des moments où il aimait lui {{BLANK_7}} la main pour la rassurer. Clementine, de son côté, est une femme très {{BLANK_8}} qui prend des décisions radicales sans hésiter. Cependant, quand elle est en colère, elle peut devenir agressive et utiliser un langage {{BLANK_9}}. À la fin, ils se rencontrent à nouveau, sans souvenirs, mais avec la même attirance inévitable, prouvant que les émotions survivent à la mémoire.",
       "blanks": [
-        { "id": 1, "answer": "timide", "options": ["timide", "courageux", "agressif", "bavard"], "correctIndex": 0 },
-        { "id": 2, "answer": "tranquille", "options": ["tranquille", "agitée", "stressante", "chaotique"], "correctIndex": 0 },
-        { "id": 3, "answer": "violent", "options": ["violent", "doux", "paisible", "calme"], "correctIndex": 0 },
-        { "id": 4, "answer": "tromper", "options": ["tromper", "aider", "soutenir", "encourager"], "correctIndex": 0 },
-        { "id": 5, "answer": "tristesse", "options": ["tristesse", "joie", "euphorie", "gaieté"], "correctIndex": 0 },
-        { "id": 6, "answer": "supporter", "options": ["supporter", "adorer", "célébrer", "féliciter"], "correctIndex": 0 },
-        { "id": 7, "answer": "tendre", "options": ["tendre", "cacher", "retirer", "fermer"], "correctIndex": 0 },
-        { "id": 8, "answer": "volontaire", "options": ["volontaire", "paresseuse", "hésitante", "passive"], "correctIndex": 0 },
-        { "id": 9, "answer": "vulgaire", "options": ["vulgaire", "élégant", "poli", "raffiné"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "timide",
+          "options": [
+            "timide",
+            "courageux",
+            "agressif",
+            "bavard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "tranquille",
+          "options": [
+            "tranquille",
+            "agitée",
+            "stressante",
+            "chaotique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "violent",
+          "options": [
+            "violent",
+            "doux",
+            "paisible",
+            "calme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tromper",
+          "options": [
+            "tromper",
+            "aider",
+            "soutenir",
+            "encourager"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "tristesse",
+          "options": [
+            "tristesse",
+            "joie",
+            "euphorie",
+            "gaieté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "supporter",
+          "options": [
+            "supporter",
+            "adorer",
+            "célébrer",
+            "féliciter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tendre",
+          "options": [
+            "tendre",
+            "cacher",
+            "retirer",
+            "fermer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "volontaire",
+          "options": [
+            "volontaire",
+            "paresseuse",
+            "hésitante",
+            "passive"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "vulgaire",
+          "options": [
+            "vulgaire",
+            "élégant",
+            "poli",
+            "raffiné"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Joel est un homme très ___ qui mène une vie assez ___ dans la banlieue de New York. Un jour, il rencontre Clementine, une femme aux cheveux bleus, spontanée et imprévisible. Leur relation est passionnée, mais leur conflit est parfois très ___ à cause de leurs caractères opposés. Un soir de dispute, Joel a peur qu'elle le ___ avec un autre homme. Finalement, ils rompent. Après la séparation, Joel ressent une profonde ___ qu'il n'arrive pas à oublier. Il ne peut plus ___ la douleur de ces souvenirs douloureux. Il décide alors d'effacer Clementine de sa mémoire. Pendant le processus, il se souvient des moments où il aimait lui ___ la main pour la rassurer. Clementine, de son côté, est une femme très ___ qui prend des décisions radicales sans hésiter. Cependant, quand elle est en colère, elle peut devenir agressive et utiliser un langage ___. À la fin, ils se rencontrent à nouveau, sans souvenirs, mais avec la même attirance inévitable, prouvant que les émotions survivent à la mémoire."
     },
     "literary": {
       "title": "Les méandres de l'âme",
@@ -41,33 +193,218 @@
       "inspiration": "Eternal Sunshine of the Spotless Mind (film de Michel Gondry)",
       "text": "Joel Barish était un homme fondamentalement {{BLANK_1}}, préférant le silence de son carnet de croquis au bruit du monde. Il menait une existence {{BLANK_2}}, presque monotone, jusqu'à sa rencontre explosive avec Clementine. Elle était l'ouragan qui avait balayé sa routine. Leur amour était absolu, mais leur conflit quotidien devenait parfois si {{BLANK_3}} qu'il brisait les murs de leur petit appartement. Hanté par la jalousie, Joel vivait dans la terreur qu'elle le {{BLANK_4}} pour échapper à leur routine étouffante. Quand elle l'a finalement quitté, une {{BLANK_5}} abyssale l'a submergé, le clouant au lit pendant des semaines. Il ne pouvait plus {{BLANK_6}} le poids de chaque objet lui rappelant son absence. Désespéré, il a engagé une clinique pour effacer ses souvenirs d'elle. Mais au cœur de son esprit endormi, il s'est rebellé. Il voulait préserver les instants où il aimait lui {{BLANK_7}} la main dans l'obscurité des cinémas. Clementine, avec son tempérament {{BLANK_8}}, avait déjà subi la même procédure pour l'oublier plus vite. Pourtant, derrière ses impulsions et son langage parfois {{BLANK_9}} quand elle perdait le contrôle, elle cherchait juste quelqu'un pour accepter ses failles. Le destin les a ramenés l'un vers l'autre sur une plage enneigée, prouvant que l'âme reconnaît ce que la mémoire a choisi d'effacer.",
       "blanks": [
-        { "id": 1, "answer": "timide", "options": ["timide", "courageux", "agressif", "bavard"], "correctIndex": 0 },
-        { "id": 2, "answer": "tranquille", "options": ["tranquille", "agitée", "stressante", "chaotique"], "correctIndex": 0 },
-        { "id": 3, "answer": "violent", "options": ["violent", "doux", "paisible", "calme"], "correctIndex": 0 },
-        { "id": 4, "answer": "tromper", "options": ["tromper", "aider", "soutenir", "encourager"], "correctIndex": 0 },
-        { "id": 5, "answer": "tristesse", "options": ["tristesse", "joie", "euphorie", "gaieté"], "correctIndex": 0 },
-        { "id": 6, "answer": "supporter", "options": ["supporter", "adorer", "célébrer", "féliciter"], "correctIndex": 0 },
-        { "id": 7, "answer": "tendre", "options": ["tendre", "cacher", "retirer", "fermer"], "correctIndex": 0 },
-        { "id": 8, "answer": "volontaire", "options": ["volontaire", "paresseuse", "hésitante", "passive"], "correctIndex": 0 },
-        { "id": 9, "answer": "vulgaire", "options": ["vulgaire", "élégant", "poli", "raffiné"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "timide",
+          "options": [
+            "timide",
+            "courageux",
+            "agressif",
+            "bavard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "tranquille",
+          "options": [
+            "tranquille",
+            "agitée",
+            "stressante",
+            "chaotique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "violent",
+          "options": [
+            "violent",
+            "doux",
+            "paisible",
+            "calme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tromper",
+          "options": [
+            "tromper",
+            "aider",
+            "soutenir",
+            "encourager"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "tristesse",
+          "options": [
+            "tristesse",
+            "joie",
+            "euphorie",
+            "gaieté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "supporter",
+          "options": [
+            "supporter",
+            "adorer",
+            "célébrer",
+            "féliciter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tendre",
+          "options": [
+            "tendre",
+            "cacher",
+            "retirer",
+            "fermer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "volontaire",
+          "options": [
+            "volontaire",
+            "paresseuse",
+            "hésitante",
+            "passive"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "vulgaire",
+          "options": [
+            "vulgaire",
+            "élégant",
+            "poli",
+            "raffiné"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Joel Barish était un homme fondamentalement ___, préférant le silence de son carnet de croquis au bruit du monde. Il menait une existence ___, presque monotone, jusqu'à sa rencontre explosive avec Clementine. Elle était l'ouragan qui avait balayé sa routine. Leur amour était absolu, mais leur conflit quotidien devenait parfois si ___ qu'il brisait les murs de leur petit appartement. Hanté par la jalousie, Joel vivait dans la terreur qu'elle le ___ pour échapper à leur routine étouffante. Quand elle l'a finalement quitté, une ___ abyssale l'a submergé, le clouant au lit pendant des semaines. Il ne pouvait plus ___ le poids de chaque objet lui rappelant son absence. Désespéré, il a engagé une clinique pour effacer ses souvenirs d'elle. Mais au cœur de son esprit endormi, il s'est rebellé. Il voulait préserver les instants où il aimait lui ___ la main dans l'obscurité des cinémas. Clementine, avec son tempérament ___, avait déjà subi la même procédure pour l'oublier plus vite. Pourtant, derrière ses impulsions et son langage parfois ___ quand elle perdait le contrôle, elle cherchait juste quelqu'un pour accepter ses failles. Le destin les a ramenés l'un vers l'autre sur une plage enneigée, prouvant que l'âme reconnaît ce que la mémoire a choisi d'effacer."
     }
   },
-
   "quiz": {
     "title": "Quiz : Psychologie et Émotions",
     "title_fa": "آزمون: روانشناسی و احساسات",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "Il ne peut plus ____ les critiques injustes de son patron.", "options": ["supporter", "adorer", "célébrer", "féliciter"], "correctIndex": 0, "explanation_fa": "supporter = تحمل کردن." },
-      { "type": "mcq", "question": "Elle est trop ____ pour lever la main et parler devant la classe.", "options": ["timide", "courageuse", "agressive", "bavarde"], "correctIndex": 0, "explanation_fa": "timide = خجالتی." },
-      { "type": "binary", "question": "L'adjectif \"tranquille\" décrit un état de calme et d'absence d'agitation.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، tranquille یعنی آرام." },
-      { "type": "mcq", "question": "Il a découvert que son associé essayait de le ____ en secret.", "options": ["tromper", "aider", "soutenir", "encourager"], "correctIndex": 0, "explanation_fa": "tromper = فریب دادن / خیانت کردن." },
-      { "type": "mcq", "question": "Il est toujours prêt à ____ la main à ceux qui en ont besoin.", "options": ["tendre", "cacher", "retirer", "fermer"], "correctIndex": 0, "explanation_fa": "tendre la main = دست دراز کردن (کمک کردن)." },
-      { "type": "mcq", "question": "La tempête a été très ____ et a détruit plusieurs toitures.", "options": ["violente", "douce", "paisible", "calme"], "correctIndex": 0, "explanation_fa": "violent = خشن / شدید." },
-      { "type": "mcq", "question": "Une profonde ____ l'a envahi après la perte de son animal de compagnie.", "options": ["tristesse", "joie", "euphorie", "gaieté"], "correctIndex": 0, "explanation_fa": "tristesse = غم / اندوه." },
-      { "type": "binary", "question": "Une personne \"volontaire\" manque de détermination et abandonne facilement.", "options": ["Vrai", "Faux"], "correctIndex": 1, "explanation_fa": "volontaire یعنی بااراده و مصمم (متضاد abandonner)." },
-      { "type": "mcq", "question": "Le professeur a sanctionné l'élève pour ses propos ____ et insultants.", "options": ["vulgaires", "élégants", "polis", "raffinés"], "correctIndex": 0, "explanation_fa": "vulgaire = عامیانه / زننده." }
+      {
+        "type": "mcq",
+        "question": "Il ne peut plus ____ les critiques injustes de son patron.",
+        "options": [
+          "supporter",
+          "adorer",
+          "célébrer",
+          "féliciter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "supporter = تحمل کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "Elle est trop ____ pour lever la main et parler devant la classe.",
+        "options": [
+          "timide",
+          "courageuse",
+          "agressive",
+          "bavarde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "timide = خجالتی."
+      },
+      {
+        "type": "binary",
+        "question": "L'adjectif \"tranquille\" décrit un état de calme et d'absence d'agitation.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، tranquille یعنی آرام."
+      },
+      {
+        "type": "mcq",
+        "question": "Il a découvert que son associé essayait de le ____ en secret.",
+        "options": [
+          "tromper",
+          "aider",
+          "soutenir",
+          "encourager"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "tromper = فریب دادن / خیانت کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "Il est toujours prêt à ____ la main à ceux qui en ont besoin.",
+        "options": [
+          "tendre",
+          "cacher",
+          "retirer",
+          "fermer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "tendre la main = دست دراز کردن (کمک کردن)."
+      },
+      {
+        "type": "mcq",
+        "question": "La tempête a été très ____ et a détruit plusieurs toitures.",
+        "options": [
+          "violente",
+          "douce",
+          "paisible",
+          "calme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "violent = خشن / شدید."
+      },
+      {
+        "type": "mcq",
+        "question": "Une profonde ____ l'a envahi après la perte de son animal de compagnie.",
+        "options": [
+          "tristesse",
+          "joie",
+          "euphorie",
+          "gaieté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "tristesse = غم / اندوه."
+      },
+      {
+        "type": "binary",
+        "question": "Une personne \"volontaire\" manque de détermination et abandonne facilement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "volontaire یعنی بااراده و مصمم (متضاد abandonner)."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professeur a sanctionné l'élève pour ses propos ____ et insultants.",
+        "options": [
+          "vulgaires",
+          "élégants",
+          "polis",
+          "raffinés"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "vulgaire = عامیانه / زننده."
+      }
     ]
   }
 }
