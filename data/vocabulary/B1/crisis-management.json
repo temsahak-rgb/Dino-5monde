@@ -1,0 +1,317 @@
+{
+  "id": "crisis_management",
+  "level": "B1",
+  "theme": "Gestion de crise",
+  "theme_fa": "مدیریت بحران، موانع و وضعیت‌های خاص",
+  "icon": "⚠️",
+  "inspiration": "Contagion (film de Steven Soderbergh)",
+
+  "words": [
+    {
+      "fr": "l'abandon",
+      "fa": "رها کردن / ترک کردن",
+      "emoji": "🚪",
+      "difficulty": 6,
+      "ex": "L'abandon du projet a surpris tout le monde.",
+      "ex_fa": "رها کردن پروژه همه را غافلگیر کرد."
+    },
+    {
+      "fr": "abordable",
+      "fa": "ارزان / مقرون‌به‌صرفه",
+      "emoji": "💰",
+      "difficulty": 3,
+      "ex": "Ce restaurant propose des prix très abordables.",
+      "ex_fa": "این رستوران قیمت‌های بسیار مقرون‌به‌صرفه‌ای دارد."
+    },
+    {
+      "fr": "abondant / abondante",
+      "fa": "فراوان / وفور",
+      "emoji": "📦",
+      "difficulty": 5,
+      "ex": "La région bénéficie de ressources naturelles abondantes.",
+      "ex_fa": "این منطقه از منابع طبیعی فراوانی برخوردار است."
+    },
+    {
+      "fr": "annuler",
+      "fa": "کنسل کردن / لغو کردن",
+      "emoji": "❌",
+      "difficulty": 2,
+      "ex": "Le vol a été annulé à cause de la tempête.",
+      "ex_fa": "پرواز به دلیل طوفان کنسل شد."
+    },
+    {
+      "fr": "l'application",
+      "fa": "اپلیکیشن / کاربرد",
+      "emoji": "📱",
+      "difficulty": 3,
+      "ex": "J'utilise une application pour gérer mes tâches quotidiennes.",
+      "ex_fa": "من از یک اپلیکیشن برای مدیریت کارهای روزانه‌ام استفاده می‌کنم."
+    },
+    {
+      "fr": "activer",
+      "fa": "فعال کردن",
+      "emoji": "⚡",
+      "difficulty": 3,
+      "ex": "N'oubliez pas d'activer votre antivirus.",
+      "ex_fa": "فراموش نکنید آنتی‌ویروس خود را فعال کنید."
+    },
+    {
+      "fr": "apprécier",
+      "fa": "قدردانی کردن / لذت بردن",
+      "emoji": "👍",
+      "difficulty": 3,
+      "ex": "J'apprécie beaucoup votre aide précieuse.",
+      "ex_fa": "من از کمک ارزشمند شما بسیار قدردانی می‌کنم."
+    }
+  ],
+
+  "stories": {
+    "simple": {
+      "title": "Une journée difficile",
+      "title_fa": "یک روز سخت",
+      "text": "Sophie travaille comme chef de projet. Ce matin, elle doit faire face à une crise. Son client menace l'{{BLANK_1}} du contrat si les délais ne sont pas respectés. Heureusement, les coûts du projet restent {{BLANK_2}} pour le budget du client. L'équipe dispose de ressources {{BLANK_3}} en personnel qualifié. Mais un problème technique vient de survenir : il faut {{BLANK_4}} la réunion de présentation prévue cet après-midi. Sophie ouvre une {{BLANK_5}} de gestion de crise sur son téléphone pour coordonner l'équipe. Elle doit {{BLANK_6}} immédiatement le plan d'urgence. Malgré le stress, elle {{BLANK_7}} le calme et la réactivité de ses collaborateurs.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "abandon",
+          "options": ["annulation", "abandon", "rupture", "fin"],
+          "correctIndex": 1
+        },
+        {
+          "id": 2,
+          "answer": "abordables",
+          "options": ["raisonnables", "abordables", "acceptables", "corrects"],
+          "correctIndex": 1
+        },
+        {
+          "id": 3,
+          "answer": "abondantes",
+          "options": ["nombreuses", "abondantes", "suffisantes", "importantes"],
+          "correctIndex": 1
+        },
+        {
+          "id": 4,
+          "answer": "annuler",
+          "options": ["reporter", "annuler", "retarder", "supprimer"],
+          "correctIndex": 1
+        },
+        {
+          "id": 5,
+          "answer": "application",
+          "options": ["app", "application", "programme", "logiciel"],
+          "correctIndex": 1
+        },
+        {
+          "id": 6,
+          "answer": "activer",
+          "options": ["lancer", "activer", "démarrer", "déclencher"],
+          "correctIndex": 1
+        },
+        {
+          "id": 7,
+          "answer": "apprécie",
+          "options": ["aime", "apprécie", "valorise", "reconnaît"],
+          "correctIndex": 1
+        }
+      ]
+    },
+    "literary": {
+      "title": "Pandémie au CDC d'Atlanta",
+      "title_fa": "همه‌گیری در CDC آتلانتا",
+      "inspiration": "Contagion (Steven Soderbergh) - thriller médical",
+      "text": "Dans le centre de commandement du CDC d'Atlanta, les écrans clignotaient de données alarmantes. La Dre Ellis contemplait avec une froideur professionnelle les chiffres qui défilaient : le taux de mortalité du nouveau virus grimpait de façon exponentielle. L'{{BLANK_1}} pur et simple de toutes les recherches annexes s'imposait pour concentrer les ressources sur l'ennemi principal. Les coûts des équipements de protection restaient heureusement {{BLANK_2}} grâce aux contrats négociés avec les fournisseurs asiatiques. Les entrepôts fédéraux contenaient des stocks {{BLANK_3}} de masques et de respirateurs, mais la logistique posait problème. Le président venait de prendre la décision difficile d'{{BLANK_4}} toutes les conférences de presse prévues cette semaine pour éviter la panique. Sur son smartphone sécurisé, Ellis ouvrit l'{{BLANK_5}} de traçage épidémiologique qu'elle avait elle-même contribué à développer. D'un geste précis, elle décida d'{{BLANK_6}} le protocole Omega, la réponse d'urgence ultime du gouvernement américain. Malgré l'épuisement qui la gagnait après soixante-douze heures de veille, elle {{BLANK_7}} profondément la dévotion quasi religieuse de son équipe, ces hommes et femmes qui risquaient leur vie pour sauver des millions d'inconnus.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "abandon",
+          "options": ["arrêt", "abandon", "suspension", "cessation"],
+          "correctIndex": 1
+        },
+        {
+          "id": 2,
+          "answer": "abordables",
+          "options": ["raisonnables", "abordables", "maîtrisés", "contrôlés"],
+          "correctIndex": 1
+        },
+        {
+          "id": 3,
+          "answer": "abondants",
+          "options": ["importants", "abondants", "conséquents", "massifs"],
+          "correctIndex": 1
+        },
+        {
+          "id": 4,
+          "answer": "annuler",
+          "options": ["reporter", "annuler", "suspendre", "supprimer"],
+          "correctIndex": 1
+        },
+        {
+          "id": 5,
+          "answer": "application",
+          "options": ["app", "application", "plateforme", "interface"],
+          "correctIndex": 1
+        },
+        {
+          "id": 6,
+          "answer": "activer",
+          "options": ["lancer", "activer", "enclencher", "déclencher"],
+          "correctIndex": 1
+        },
+        {
+          "id": 7,
+          "answer": "appréciait",
+          "options": ["admirait", "appréciait", "valorisait", "reconnaissait"],
+          "correctIndex": 1
+        }
+      ]
+    }
+  },
+
+  "quiz": {
+    "title": "Quiz : Gestion de crise",
+    "title_fa": "آزمون: مدیریت بحران",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'____ de ce projet coûtera des millions à l'entreprise.",
+        "options": ["annulation", "abandon", "arrêt", "fin"],
+        "correctIndex": 1,
+        "explanation_fa": "Abandon = رها کردن کامل و قطعی یک پروژه."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce logement est ____ pour un étudiant avec un petit budget.",
+        "options": ["économique", "abordable", "pas cher", "accessible"],
+        "correctIndex": 1,
+        "explanation_fa": "Abordable = مقرون‌به‌صرفه (مناسب از نظر قیمت)."
+      },
+      {
+        "type": "mcq",
+        "question": "La région dispose de ressources naturelles ____.",
+        "options": ["nombreuses", "abondantes", "riches", "importantes"],
+        "correctIndex": 1,
+        "explanation_fa": "Abondantes = فراوان و به وفور یافت شونده."
+      },
+      {
+        "type": "mcq",
+        "question": "Le concert a été ____ en raison du mauvais temps.",
+        "options": ["reporté", "annulé", "retardé", "supprimé"],
+        "correctIndex": 1,
+        "explanation_fa": "Annuler = کنسل کردن و لغو کردن کامل."
+      },
+      {
+        "type": "binary",
+        "question": "\"Annuler\" et \"reporter\" ont le même sens.",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 1,
+        "explanation_fa": "Annuler = لغو کامل. Reporter = به تعویق انداختن."
+      },
+      {
+        "type": "mcq",
+        "question": "J'ai téléchargé une ____ pour apprendre le français.",
+        "options": ["app", "application", "programme", "logiciel"],
+        "correctIndex": 1,
+        "explanation_fa": "Application (app) = اپلیکیشن موبایل."
+      },
+      {
+        "type": "mcq",
+        "question": "N'oubliez pas d'____ votre compte avant de partir.",
+        "options": ["ouvrir", "activer", "démarrer", "lancer"],
+        "correctIndex": 1,
+        "explanation_fa": "Activer un compte = فعال کردن حساب کاربری."
+      },
+      {
+        "type": "mcq",
+        "question": "J'____ beaucoup votre honnêteté dans cette affaire.",
+        "options": ["aime", "apprécie", "valorise", "respecte"],
+        "correctIndex": 1,
+        "explanation_fa": "Apprécier = قدردانی کردن و ارزش قائل شدن."
+      },
+      {
+        "type": "binary",
+        "question": "\"Apprécier\" peut signifier \"aimer\" et \"estimer la valeur de\".",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 0,
+        "explanation_fa": "بله، apprécier هم لذت بردن و هم قدردانی کردن است."
+      },
+      {
+        "type": "mcq",
+        "question": "Les prix de ce supermarché sont très ____.",
+        "options": ["économiques", "abordables", "bas", "compétitifs"],
+        "correctIndex": 1,
+        "explanation_fa": "Prix abordables = قیمت‌های مقرون‌به‌صرفه."
+      },
+      {
+        "type": "binary",
+        "question": "\"Abondant\" est le contraire de \"rare\".",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 0,
+        "explanation_fa": "بله، abondant (فراوان) متضاد rare (کمیاب) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il faut ____ le système d'alarme avant de quitter la maison.",
+        "options": ["mettre", "activer", "allumer", "démarrer"],
+        "correctIndex": 1,
+        "explanation_fa": "Activer l'alarme = فعال کردن سیستم هشدار."
+      },
+      {
+        "type": "mcq",
+        "question": "Nous ____ sincèrement votre participation à cet événement.",
+        "options": ["aimons", "apprécions", "remercions", "valorisons"],
+        "correctIndex": 1,
+        "explanation_fa": "Apprécier votre participation = قدردانی از مشارکت شما."
+      },
+      {
+        "type": "binary",
+        "question": "\"Abandon\" peut s'utiliser dans le contexte sportif (abandon d'une course).",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 0,
+        "explanation_fa": "بله، abandon en course = کناره‌گیری از مسابقه."
+      },
+      {
+        "type": "mcq",
+        "question": "Après l'____ du navire, les passagers furent secourus.",
+        "options": ["départ", "abandon", "évacuation", "naufrage"],
+        "correctIndex": 1,
+        "explanation_fa": "Abandon du navire = ترک کشتی (در شرایط اضطراری)."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette solution est ____ et accessible à tous.",
+        "options": ["économique", "abordable", "facile", "pratique"],
+        "correctIndex": 1,
+        "explanation_fa": "Abordable ici au sens figuré = قابل فهم و دسترس."
+      },
+      {
+        "type": "binary",
+        "question": "\"Application\" peut désigner à la fois un logiciel et l'action d'appliquer.",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 0,
+        "explanation_fa": "بله، application هم اپلیکیشن است و هم کاربرد/اجرا."
+      },
+      {
+        "type": "mcq",
+        "question": "Le médecin a décidé d'____ le traitement expérimental.",
+        "options": ["arrêter", "annuler", "stopper", "interrompre"],
+        "correctIndex": 1,
+        "explanation_fa": "Annuler un traitement = لغو کردن درمان."
+      },
+      {
+        "type": "binary",
+        "question": "\"Activer\" est le contraire de \"désactiver\".",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": 0,
+        "explanation_fa": "بله، activer (فعال کردن) متضاد désactiver (غیرفعال کردن) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Nous avons reçu une ____ de nourriture pour l'hiver.",
+        "options": ["grande quantité", "abondante", "large", "importante"],
+        "correctIndex": 1,
+        "explanation_fa": "Une abondante nourriture = مقدار فراوان غذا."
+      }
+    ]
+  }
+}
