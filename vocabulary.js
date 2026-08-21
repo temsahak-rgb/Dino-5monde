@@ -91,6 +91,7 @@ async function showVocabLevel(level) {
 async function showVocabPack(level, packId) {
     const lang = localStorage.getItem("language") || "fr";
     const pack = await loadVocabPack(level, packId);
+    
     if (!pack) {
         app.innerHTML = renderNavbar() + `<div style="max-width:500px;margin:0 auto;padding:60px 16px;text-align:center;">
             <p style="font-size:14px;color:#777;">🚧 ${lang === "fa" ? "این پک به زودی اضافه می‌شود." : "Bientôt disponible."}</p>
@@ -98,7 +99,17 @@ async function showVocabPack(level, packId) {
         </div>`;
         return;
     }
+    
     window.currentPack = pack;
+    const weak = getWeakWords(pack.id);
+    
+    // تشخیص ساختار داستان‌ها (پشتیبانی از هر دو نام)
+    const hasSimple = pack.stories && (pack.stories.simple || pack.stories.easy);
+    const hasLiterary = pack.stories && (pack.stories.literary || pack.stories.hard);
+    
+    // تشخیص ساختار تمرین (پشتیبانی از هر دو نام)
+    const hasQuiz = pack.quiz || pack.exercise;
+    
     let html = renderNavbar();
     html += `<div style="max-width:960px;margin:0 auto;padding:32px 20px 60px;">
         <button class="back-btn" onclick="showVocabLevel('${level}')">← ${lang === "fa" ? "بازگشت" : "Retour"}</button>
@@ -109,14 +120,35 @@ async function showVocabPack(level, packId) {
                 <p style="font-size:13px;color:#777;margin:4px 0 0;">${level} · ${pack.words.length} ${lang === "fa" ? "کلمه" : "mots"}</p>
             </div>
         </div>
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
-            ${simpleCard("🃏", lang === "fa" ? "فلش‌کارت‌ها" : "Flashcards", `${pack.words.length} ${lang === "fa" ? "کلمه" : "mots"}`, "startFlashcards()")}
-            ${simpleCard("🌱", lang === "fa" ? "داستان ساده" : "Histoire facile", "A1-A2", "startStory('easy')")}
-            ${simpleCard("🌳", lang === "fa" ? "داستان پیشرفته" : "Histoire avancée", "B1+", "startStory('hard')")}
-            ${simpleCard("📝", lang === "fa" ? "تمرین" : "Quiz", lang === "fa" ? "آزمون کوتاه" : "Quiz rapide", "startVocabExercise()")}
-            ${(() => { const weak = getWeakWords(pack.id); return weak.length ? simpleCard("🔁", lang === "fa" ? "مرور کلمات ضعیف" : "Mots faibles", weak.length + " " + (lang === "fa" ? "کلمه" : "mots"), "startFlashcards(true)") : ""; })()}
-        </div>
-    </div>`;
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">`;
+    
+    // همیشه فلش‌کارت را نشان بده (چون words همیشه هست)
+    html += simpleCard("🃏", lang === "fa" ? "فلش‌کارت‌ها" : "Flashcards", 
+        `${pack.words.length} ${lang === "fa" ? "کلمه" : "mots"}`, "startFlashcards()");
+    
+    // داستان‌ها فقط اگر وجود داشته باشند
+    if (hasSimple) {
+        html += simpleCard("🌱", lang === "fa" ? "داستان ساده" : "Histoire simple", 
+            "A1-A2", "startStory('simple')");
+    }
+    if (hasLiterary) {
+        html += simpleCard("🌳", lang === "fa" ? "داستان ادبی" : "Histoire littéraire", 
+            "B1+", "startStory('literary')");
+    }
+    
+    // تمرین فقط اگر وجود داشته باشد
+    if (hasQuiz) {
+        html += simpleCard("📝", lang === "fa" ? "تمرین" : "Quiz", 
+            lang === "fa" ? "آزمون کوتاه" : "Quiz rapide", "startVocabExercise()");
+    }
+    
+    // مرور کلمات ضعیف فقط اگر کلمه ضعیف وجود داشته باشد
+    if (weak.length) {
+        html += simpleCard("🔁", lang === "fa" ? "مرور کلمات ضعیف" : "Mots faibles", 
+            weak.length + " " + (lang === "fa" ? "کلمه" : "mots"), "startFlashcards(true)");
+    }
+    
+    html += `</div></div>`;
     app.innerHTML = html;
 }
 
