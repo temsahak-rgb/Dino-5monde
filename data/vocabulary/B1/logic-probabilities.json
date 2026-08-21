@@ -5,57 +5,396 @@
   "theme_fa": "تفکر انتقادی، استدلال و احتمالات",
   "icon": "🧮",
   "inspiration": "The Imitation Game (film de Morten Tyldum)",
-
   "words": [
-    { "fr": "la pensée", "fa": "فکر / اندیشه", "emoji": "💭", "difficulty": 3, "ex": "La pensée critique est essentielle en science.", "ex_fa": "تفکر انتقادی در علم ضروری است." },
-    { "fr": "la raison", "fa": "دلیل / عقل", "emoji": "🧠", "difficulty": 2, "ex": "Il a de bonnes raisons de douter.", "ex_fa": "او دلایل خوبی برای شک کردن دارد." },
-    { "fr": "raisonnable", "fa": "منطقی / معقول", "emoji": "⚖️", "difficulty": 3, "ex": "C'est une décision raisonnable et prudente.", "ex_fa": "این تصمیمی منطقی و محتاطانه است." },
-    { "fr": "positif / positive", "fa": "مثبت", "emoji": "➕", "difficulty": 2, "ex": "Le résultat du test est positif.", "ex_fa": "نتیجه آزمایش مثبت است." },
-    { "fr": "négatif / négative", "fa": "منفی", "emoji": "➖", "difficulty": 2, "ex": "La réponse est malheureusement négative.", "ex_fa": "پاسخ متاسفانه منفی است." },
-    { "fr": "optimiste", "fa": "خوش‌بین", "emoji": "😊", "difficulty": 3, "ex": "Il reste optimiste malgré les difficultés.", "ex_fa": "او علی‌رغم مشکلات خوش‌بین باقی می‌ماند." },
-    { "fr": "pessimiste", "fa": "بدبین", "emoji": "😔", "difficulty": 3, "ex": "Elle est pessimiste quant à l'avenir.", "ex_fa": "او نسبت به آینده بدبین است." },
-    { "fr": "l'opinion", "fa": "نظر / عقیده", "emoji": "💬", "difficulty": 2, "ex": "Chacun a le droit d'exprimer son opinion.", "ex_fa": "هر کس حق دارد نظر خود را بیان کند." },
-    { "fr": "l'opposition", "fa": "مخالفت", "emoji": "⚔️", "difficulty": 3, "ex": "L'opposition politique critique la réforme.", "ex_fa": "اپوزیسیون سیاسی از اصلاحات انتقاد می‌کند." },
-    { "fr": "la preuve", "fa": "مدرک / اثبات", "emoji": "🔍", "difficulty": 3, "ex": "Il faut apporter la preuve de ses affirmations.", "ex_fa": "باید مدرک ادعاهای خود را ارائه داد." },
-    { "fr": "pourtant", "fa": "با این حال / اما", "emoji": "⚡", "difficulty": 3, "ex": "Il a étudié, pourtant il a échoué.", "ex_fa": "او درس خواند، با این حال شکست خورد." },
-    { "fr": "plutôt", "fa": "ترجیحاً / بیشتر", "emoji": "👉", "difficulty": 3, "ex": "Je choisirais plutôt cette option.", "ex_fa": "من ترجیحاً این گزینه را انتخاب می‌کنم." },
-    { "fr": "par exemple", "fa": "به عنوان مثال", "emoji": "📌", "difficulty": 2, "ex": "Les énergies renouvelables, par exemple le solaire.", "ex_fa": "انرژی‌های تجدیدپذیر، به عنوان مثال خورشیدی." },
-    { "fr": "presque", "fa": "تقریباً", "emoji": "📏", "difficulty": 2, "ex": "Le travail est presque terminé.", "ex_fa": "کار تقریباً تمام شده است." },
-    { "fr": "la précision", "fa": "دقت", "emoji": "🎯", "difficulty": 3, "ex": "Il travaille avec une grande précision.", "ex_fa": "او با دقت زیادی کار می‌کند." },
-    { "fr": "prédire", "fa": "پیش‌بینی کردن", "emoji": "🔮", "difficulty": 4, "ex": "Impossible de prédire l'avenir avec certitude.", "ex_fa": "پیش‌بینی آینده با قطعیت غیرممکن است." },
-    { "fr": "la possibilité", "fa": "امکان", "emoji": "🌟", "difficulty": 3, "ex": "Il existe plusieurs possibilités de solution.", "ex_fa": "چندین امکان برای راه حل وجود دارد." },
-    { "fr": "probable", "fa": "محتمل", "emoji": "🎲", "difficulty": 4, "ex": "Une augmentation des prix est probable.", "ex_fa": "افزایش قیمت‌ها محتمل است." },
-    { "fr": "probablement", "fa": "احتمالاً", "emoji": "🎯", "difficulty": 3, "ex": "Il va probablement accepter notre offre.", "ex_fa": "او احتمالاً پیشنهاد ما را خواهد پذیرفت." },
-    { "fr": "parfaitement", "fa": "کاملاً / به طور کامل", "emoji": "✅", "difficulty": 3, "ex": "Je suis parfaitement d'accord avec vous.", "ex_fa": "من کاملاً با شما موافقم." }
+    {
+      "fr": "la pensée",
+      "fa": "فکر / اندیشه",
+      "emoji": "💭",
+      "difficulty": 3,
+      "ex": "La pensée critique est essentielle en science.",
+      "ex_fa": "تفکر انتقادی در علم ضروری است."
+    },
+    {
+      "fr": "la raison",
+      "fa": "دلیل / عقل",
+      "emoji": "🧠",
+      "difficulty": 2,
+      "ex": "Il a de bonnes raisons de douter.",
+      "ex_fa": "او دلایل خوبی برای شک کردن دارد."
+    },
+    {
+      "fr": "raisonnable",
+      "fa": "منطقی / معقول",
+      "emoji": "⚖️",
+      "difficulty": 3,
+      "ex": "C'est une décision raisonnable et prudente.",
+      "ex_fa": "این تصمیمی منطقی و محتاطانه است."
+    },
+    {
+      "fr": "positif / positive",
+      "fa": "مثبت",
+      "emoji": "➕",
+      "difficulty": 2,
+      "ex": "Le résultat du test est positif.",
+      "ex_fa": "نتیجه آزمایش مثبت است."
+    },
+    {
+      "fr": "négatif / négative",
+      "fa": "منفی",
+      "emoji": "➖",
+      "difficulty": 2,
+      "ex": "La réponse est malheureusement négative.",
+      "ex_fa": "پاسخ متاسفانه منفی است."
+    },
+    {
+      "fr": "optimiste",
+      "fa": "خوش‌بین",
+      "emoji": "😊",
+      "difficulty": 3,
+      "ex": "Il reste optimiste malgré les difficultés.",
+      "ex_fa": "او علی‌رغم مشکلات خوش‌بین باقی می‌ماند."
+    },
+    {
+      "fr": "pessimiste",
+      "fa": "بدبین",
+      "emoji": "😔",
+      "difficulty": 3,
+      "ex": "Elle est pessimiste quant à l'avenir.",
+      "ex_fa": "او نسبت به آینده بدبین است."
+    },
+    {
+      "fr": "l'opinion",
+      "fa": "نظر / عقیده",
+      "emoji": "💬",
+      "difficulty": 2,
+      "ex": "Chacun a le droit d'exprimer son opinion.",
+      "ex_fa": "هر کس حق دارد نظر خود را بیان کند."
+    },
+    {
+      "fr": "l'opposition",
+      "fa": "مخالفت",
+      "emoji": "⚔️",
+      "difficulty": 3,
+      "ex": "L'opposition politique critique la réforme.",
+      "ex_fa": "اپوزیسیون سیاسی از اصلاحات انتقاد می‌کند."
+    },
+    {
+      "fr": "la preuve",
+      "fa": "مدرک / اثبات",
+      "emoji": "🔍",
+      "difficulty": 3,
+      "ex": "Il faut apporter la preuve de ses affirmations.",
+      "ex_fa": "باید مدرک ادعاهای خود را ارائه داد."
+    },
+    {
+      "fr": "pourtant",
+      "fa": "با این حال / اما",
+      "emoji": "⚡",
+      "difficulty": 3,
+      "ex": "Il a étudié, pourtant il a échoué.",
+      "ex_fa": "او درس خواند، با این حال شکست خورد."
+    },
+    {
+      "fr": "plutôt",
+      "fa": "ترجیحاً / بیشتر",
+      "emoji": "👉",
+      "difficulty": 3,
+      "ex": "Je choisirais plutôt cette option.",
+      "ex_fa": "من ترجیحاً این گزینه را انتخاب می‌کنم."
+    },
+    {
+      "fr": "par exemple",
+      "fa": "به عنوان مثال",
+      "emoji": "📌",
+      "difficulty": 2,
+      "ex": "Les énergies renouvelables, par exemple le solaire.",
+      "ex_fa": "انرژی‌های تجدیدپذیر، به عنوان مثال خورشیدی."
+    },
+    {
+      "fr": "presque",
+      "fa": "تقریباً",
+      "emoji": "📏",
+      "difficulty": 2,
+      "ex": "Le travail est presque terminé.",
+      "ex_fa": "کار تقریباً تمام شده است."
+    },
+    {
+      "fr": "la précision",
+      "fa": "دقت",
+      "emoji": "🎯",
+      "difficulty": 3,
+      "ex": "Il travaille avec une grande précision.",
+      "ex_fa": "او با دقت زیادی کار می‌کند."
+    },
+    {
+      "fr": "prédire",
+      "fa": "پیش‌بینی کردن",
+      "emoji": "🔮",
+      "difficulty": 4,
+      "ex": "Impossible de prédire l'avenir avec certitude.",
+      "ex_fa": "پیش‌بینی آینده با قطعیت غیرممکن است."
+    },
+    {
+      "fr": "la possibilité",
+      "fa": "امکان",
+      "emoji": "🌟",
+      "difficulty": 3,
+      "ex": "Il existe plusieurs possibilités de solution.",
+      "ex_fa": "چندین امکان برای راه حل وجود دارد."
+    },
+    {
+      "fr": "probable",
+      "fa": "محتمل",
+      "emoji": "🎲",
+      "difficulty": 4,
+      "ex": "Une augmentation des prix est probable.",
+      "ex_fa": "افزایش قیمت‌ها محتمل است."
+    },
+    {
+      "fr": "probablement",
+      "fa": "احتمالاً",
+      "emoji": "🎯",
+      "difficulty": 3,
+      "ex": "Il va probablement accepter notre offre.",
+      "ex_fa": "او احتمالاً پیشنهاد ما را خواهد پذیرفت."
+    },
+    {
+      "fr": "parfaitement",
+      "fa": "کاملاً / به طور کامل",
+      "emoji": "✅",
+      "difficulty": 3,
+      "ex": "Je suis parfaitement d'accord avec vous.",
+      "ex_fa": "من کاملاً با شما موافقم."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "Le décryptage du code Enigma",
       "title_fa": "رمزگشایی کد انیگما",
       "text": "Alan Turing était un génie des mathématiques. Sa {{BLANK_1}} analytique lui permettait de résoudre des problèmes complexes. Il avait de bonnes {{BLANK_2}} de croire que la machine Enigma pouvait être vaincue. Son approche était très {{BLANK_3}} et méthodique. Les premiers résultats étaient {{BLANK_4}} : quelques messages décryptés. Mais la majorité des tentatives restaient {{BLANK_5}}. Alan restait {{BLANK_6}} quant à la réussite finale. Son collègue Hugh était plus {{BLANK_7}} et doutait constamment. L'{{BLANK_8}} personnelle d'Alan était que la guerre pouvait être gagnée grâce aux mathématiques. L'{{BLANK_9}} militaire ne croyait pas en ses méthodes. Mais Alan cherchait la {{BLANK_10}} irréfutable de sa théorie. {{BLANK_11}}, les résultats étaient lents à venir. Il préférait {{BLANK_12}} continuer ses recherches que d'abandonner. {{BLANK_13}}, la machine polonaise avait déjà fait des progrès. Le projet était {{BLANK_14}} terminé quand une découverte majeure a tout changé. La {{BLANK_15}} de ses calculs était remarquable. Alan essayait de {{BLANK_14b}} (prédire) -> {{BLANK_16}} les mouvements ennemis. Une {{BLANK_17}} inattendue s'est présentée grâce à une erreur allemande. Il était {{BLANK_18}} que cette faille soit exploitée. {{BLANK_19}}, l'équipe a réussi à décrypter des milliers de messages. Alan était {{BLANK_20}} conscient d'avoir changé le cours de la guerre.",
       "blanks": [
-        { "id": 1, "answer": "pensée", "options": ["pensée", "chanson", "recette", "photo"], "correctIndex": 0 },
-        { "id": 2, "answer": "raisons", "options": ["raisons", "chansons", "recettes", "photos"], "correctIndex": 0 },
-        { "id": 3, "answer": "raisonnable", "options": ["raisonnable", "folle", "absurde", "irrationnelle"], "correctIndex": 0 },
-        { "id": 4, "answer": "positifs", "options": ["positifs", "négatifs", "neutres", "médiocres"], "correctIndex": 0 },
-        { "id": 5, "answer": "négatives", "options": ["négatives", "positives", "neutres", "excellentes"], "correctIndex": 0 },
-        { "id": 6, "answer": "optimiste", "options": ["optimiste", "pessimiste", "indifférent", "neutre"], "correctIndex": 0 },
-        { "id": 7, "answer": "pessimiste", "options": ["pessimiste", "optimiste", "enthousiaste", "joyeux"], "correctIndex": 0 },
-        { "id": 8, "answer": "opinion", "options": ["opinion", "recette", "chanson", "photo"], "correctIndex": 0 },
-        { "id": 9, "answer": "opposition", "options": ["opposition", "approbation", "soutien", "aide"], "correctIndex": 0 },
-        { "id": 10, "answer": "preuve", "options": ["preuve", "recette", "chanson", "photo"], "correctIndex": 0 },
-        { "id": 11, "answer": "Pourtant", "options": ["Pourtant", "Donc", "Alors", "Ensuite"], "correctIndex": 0 },
-        { "id": 12, "answer": "plutôt", "options": ["plutôt", "jamais", "toujours", "parfois"], "correctIndex": 0 },
-        { "id": 13, "answer": "Par exemple", "options": ["Par exemple", "Jamais", "Toujours", "Parfois"], "correctIndex": 0 },
-        { "id": 14, "answer": "presque", "options": ["presque", "jamais", "toujours", "parfois"], "correctIndex": 0 },
-        { "id": 15, "answer": "précision", "options": ["précision", "imprécision", "confusion", "erreur"], "correctIndex": 0 },
-        { "id": 16, "answer": "prédire", "options": ["prédire", "ignorer", "oublier", "rejeter"], "correctIndex": 0 },
-        { "id": 17, "answer": "possibilité", "options": ["possibilité", "impossibilité", "certitude", "évidence"], "correctIndex": 0 },
-        { "id": 18, "answer": "probable", "options": ["probable", "improbable", "impossible", "certain"], "correctIndex": 0 },
-        { "id": 19, "answer": "Probablement", "options": ["Probablement", "Impossible", "Jamais", "Certainement"], "correctIndex": 0 },
-        { "id": 20, "answer": "parfaitement", "options": ["parfaitement", "imparfaitement", "mal", "incorrectement"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "pensée",
+          "options": [
+            "pensée",
+            "chanson",
+            "recette",
+            "photo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "raisons",
+          "options": [
+            "raisons",
+            "chansons",
+            "recettes",
+            "photos"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "raisonnable",
+          "options": [
+            "raisonnable",
+            "folle",
+            "absurde",
+            "irrationnelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "positifs",
+          "options": [
+            "positifs",
+            "négatifs",
+            "neutres",
+            "médiocres"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "négatives",
+          "options": [
+            "négatives",
+            "positives",
+            "neutres",
+            "excellentes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "optimiste",
+          "options": [
+            "optimiste",
+            "pessimiste",
+            "indifférent",
+            "neutre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pessimiste",
+          "options": [
+            "pessimiste",
+            "optimiste",
+            "enthousiaste",
+            "joyeux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "opinion",
+          "options": [
+            "opinion",
+            "recette",
+            "chanson",
+            "photo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "opposition",
+          "options": [
+            "opposition",
+            "approbation",
+            "soutien",
+            "aide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "preuve",
+          "options": [
+            "preuve",
+            "recette",
+            "chanson",
+            "photo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "Pourtant",
+          "options": [
+            "Pourtant",
+            "Donc",
+            "Alors",
+            "Ensuite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "plutôt",
+          "options": [
+            "plutôt",
+            "jamais",
+            "toujours",
+            "parfois"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "Par exemple",
+          "options": [
+            "Par exemple",
+            "Jamais",
+            "Toujours",
+            "Parfois"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "presque",
+          "options": [
+            "presque",
+            "jamais",
+            "toujours",
+            "parfois"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "précision",
+          "options": [
+            "précision",
+            "imprécision",
+            "confusion",
+            "erreur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "prédire",
+          "options": [
+            "prédire",
+            "ignorer",
+            "oublier",
+            "rejeter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 17,
+          "answer": "possibilité",
+          "options": [
+            "possibilité",
+            "impossibilité",
+            "certitude",
+            "évidence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 18,
+          "answer": "probable",
+          "options": [
+            "probable",
+            "improbable",
+            "impossible",
+            "certain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 19,
+          "answer": "Probablement",
+          "options": [
+            "Probablement",
+            "Impossible",
+            "Jamais",
+            "Certainement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 20,
+          "answer": "parfaitement",
+          "options": [
+            "parfaitement",
+            "imparfaitement",
+            "mal",
+            "incorrectement"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Alan Turing était un génie des mathématiques. Sa ___ analytique lui permettait de résoudre des problèmes complexes. Il avait de bonnes ___ de croire que la machine Enigma pouvait être vaincue. Son approche était très ___ et méthodique. Les premiers résultats étaient ___ : quelques messages décryptés. Mais la majorité des tentatives restaient ___. Alan restait ___ quant à la réussite finale. Son collègue Hugh était plus ___ et doutait constamment. L'___ personnelle d'Alan était que la guerre pouvait être gagnée grâce aux mathématiques. L'___ militaire ne croyait pas en ses méthodes. Mais Alan cherchait la ___ irréfutable de sa théorie. ___, les résultats étaient lents à venir. Il préférait ___ continuer ses recherches que d'abandonner. ___, la machine polonaise avait déjà fait des progrès. Le projet était ___ terminé quand une découverte majeure a tout changé. La ___ de ses calculs était remarquable. Alan essayait de {{BLANK_14b}} (prédire) -> ___ les mouvements ennemis. Une ___ inattendue s'est présentée grâce à une erreur allemande. Il était ___ que cette faille soit exploitée. ___, l'équipe a réussi à décrypter des milliers de messages. Alan était ___ conscient d'avoir changé le cours de la guerre."
     },
     "literary": {
       "title": "Bletchley Park, l'ombre de la victoire",
@@ -63,55 +402,467 @@
       "inspiration": "The Imitation Game (film de Morten Tyldum avec Benedict Cumberbatch)",
       "text": "Dans le manoir victorien de Bletchley Park, Alan Turing laissait libre cours à sa {{BLANK_1}} mathématique révolutionnaire. Il avait mille {{BLANK_2}} objectives de penser que la machine Enigma nazi pouvait être vaincue par la logique pure. Son approche scientifique était éminemment {{BLANK_3}} et rigoureusement structurée. Les premiers résultats obtenus étaient encourageants et {{BLANK_4}} : quelques messages allemands décryptés avec succès. Mais l'immense majorité des tentatives quotidiennes restaient désespérément {{BLANK_5}} et infructueuses. Alan demeurait farouchement {{BLANK_6}} quant à la réussite finale de son projet titanesque. Son collègue Hugh Alexander, plus {{BLANK_7}} et pragmatique, doutait constamment de la faisabilité. L'{{BLANK_8}} profonde d'Alan était que cette guerre mondiale pouvait être gagnée grâce aux équations. L'{{BLANK_9}} militaire britannique ne croyait absolument pas en ses méthodes iconoclastes. Mais Alan cherchait inlassablement la {{BLANK_10}} irréfutable qui validerait sa théorie géniale. {{BLANK_11}}, les résultats concrets tardaient cruellement à se matérialiser dans la réalité. Il préférait {{BLANK_12}} poursuivre ses recherches acharnées que d'abandonner face à l'adversité. {{BLANK_13}}, les cryptographes polonais avaient déjà accompli des progrès significatifs avant l'invasion. Le projet Christopher était {{BLANK_14}} terminé quand une découverte fortuite a tout bouleversé. La {{BLANK_15}} chirurgicale de ses calculs théoriques forçait l'admiration de ses pairs. Alan s'obstinait à vouloir {{BLANK_16}} avec exactitude les mouvements stratégiques de la Kriegsmarine. Une {{BLANK_17}} inattendue s'est soudain présentée grâce à une erreur humaine allemande récurrente. Il était hautement {{BLANK_18}} que cette faille critique soit exploitée méthodiquement par son équipe. {{BLANK_19}}, les mathématiciens britanniques ont réussi à décrypter des milliers de messages ennemis vitaux. Alan était {{BLANK_20}} conscient d'avoir radicalement changé le cours de l'histoire mondiale, même si son nom devait rester secret pendant cinquante longues années.",
       "blanks": [
-        { "id": 1, "answer": "pensée", "options": ["pensée", "chanson", "recette", "photo"], "correctIndex": 0 },
-        { "id": 2, "answer": "raisons", "options": ["raisons", "chansons", "recettes", "photos"], "correctIndex": 0 },
-        { "id": 3, "answer": "raisonnable", "options": ["raisonnable", "folle", "absurde", "irrationnelle"], "correctIndex": 0 },
-        { "id": 4, "answer": "positifs", "options": ["positifs", "négatifs", "neutres", "médiocres"], "correctIndex": 0 },
-        { "id": 5, "answer": "négatives", "options": ["négatives", "positives", "neutres", "excellentes"], "correctIndex": 0 },
-        { "id": 6, "answer": "optimiste", "options": ["optimiste", "pessimiste", "indifférent", "neutre"], "correctIndex": 0 },
-        { "id": 7, "answer": "pessimiste", "options": ["pessimiste", "optimiste", "enthousiaste", "joyeux"], "correctIndex": 0 },
-        { "id": 8, "answer": "opinion", "options": ["opinion", "recette", "chanson", "photo"], "correctIndex": 0 },
-        { "id": 9, "answer": "opposition", "options": ["opposition", "approbation", "soutien", "aide"], "correctIndex": 0 },
-        { "id": 10, "answer": "preuve", "options": ["preuve", "recette", "chanson", "photo"], "correctIndex": 0 },
-        { "id": 11, "answer": "Pourtant", "options": ["Pourtant", "Donc", "Alors", "Ensuite"], "correctIndex": 0 },
-        { "id": 12, "answer": "plutôt", "options": ["plutôt", "jamais", "toujours", "parfois"], "correctIndex": 0 },
-        { "id": 13, "answer": "Par exemple", "options": ["Par exemple", "Jamais", "Toujours", "Parfois"], "correctIndex": 0 },
-        { "id": 14, "answer": "presque", "options": ["presque", "jamais", "toujours", "parfois"], "correctIndex": 0 },
-        { "id": 15, "answer": "précision", "options": ["précision", "imprécision", "confusion", "erreur"], "correctIndex": 0 },
-        { "id": 16, "answer": "prédire", "options": ["prédire", "ignorer", "oublier", "rejeter"], "correctIndex": 0 },
-        { "id": 17, "answer": "possibilité", "options": ["possibilité", "impossibilité", "certitude", "évidence"], "correctIndex": 0 },
-        { "id": 18, "answer": "probable", "options": ["probable", "improbable", "impossible", "certain"], "correctIndex": 0 },
-        { "id": 19, "answer": "Probablement", "options": ["Probablement", "Impossible", "Jamais", "Certainement"], "correctIndex": 0 },
-        { "id": 20, "answer": "parfaitement", "options": ["parfaitement", "imparfaitement", "mal", "incorrectement"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "pensée",
+          "options": [
+            "pensée",
+            "chanson",
+            "recette",
+            "photo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "raisons",
+          "options": [
+            "raisons",
+            "chansons",
+            "recettes",
+            "photos"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "raisonnable",
+          "options": [
+            "raisonnable",
+            "folle",
+            "absurde",
+            "irrationnelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "positifs",
+          "options": [
+            "positifs",
+            "négatifs",
+            "neutres",
+            "médiocres"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "négatives",
+          "options": [
+            "négatives",
+            "positives",
+            "neutres",
+            "excellentes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "optimiste",
+          "options": [
+            "optimiste",
+            "pessimiste",
+            "indifférent",
+            "neutre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pessimiste",
+          "options": [
+            "pessimiste",
+            "optimiste",
+            "enthousiaste",
+            "joyeux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "opinion",
+          "options": [
+            "opinion",
+            "recette",
+            "chanson",
+            "photo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "opposition",
+          "options": [
+            "opposition",
+            "approbation",
+            "soutien",
+            "aide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "preuve",
+          "options": [
+            "preuve",
+            "recette",
+            "chanson",
+            "photo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "Pourtant",
+          "options": [
+            "Pourtant",
+            "Donc",
+            "Alors",
+            "Ensuite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "plutôt",
+          "options": [
+            "plutôt",
+            "jamais",
+            "toujours",
+            "parfois"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "Par exemple",
+          "options": [
+            "Par exemple",
+            "Jamais",
+            "Toujours",
+            "Parfois"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "presque",
+          "options": [
+            "presque",
+            "jamais",
+            "toujours",
+            "parfois"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "précision",
+          "options": [
+            "précision",
+            "imprécision",
+            "confusion",
+            "erreur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "prédire",
+          "options": [
+            "prédire",
+            "ignorer",
+            "oublier",
+            "rejeter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 17,
+          "answer": "possibilité",
+          "options": [
+            "possibilité",
+            "impossibilité",
+            "certitude",
+            "évidence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 18,
+          "answer": "probable",
+          "options": [
+            "probable",
+            "improbable",
+            "impossible",
+            "certain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 19,
+          "answer": "Probablement",
+          "options": [
+            "Probablement",
+            "Impossible",
+            "Jamais",
+            "Certainement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 20,
+          "answer": "parfaitement",
+          "options": [
+            "parfaitement",
+            "imparfaitement",
+            "mal",
+            "incorrectement"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Dans le manoir victorien de Bletchley Park, Alan Turing laissait libre cours à sa ___ mathématique révolutionnaire. Il avait mille ___ objectives de penser que la machine Enigma nazi pouvait être vaincue par la logique pure. Son approche scientifique était éminemment ___ et rigoureusement structurée. Les premiers résultats obtenus étaient encourageants et ___ : quelques messages allemands décryptés avec succès. Mais l'immense majorité des tentatives quotidiennes restaient désespérément ___ et infructueuses. Alan demeurait farouchement ___ quant à la réussite finale de son projet titanesque. Son collègue Hugh Alexander, plus ___ et pragmatique, doutait constamment de la faisabilité. L'___ profonde d'Alan était que cette guerre mondiale pouvait être gagnée grâce aux équations. L'___ militaire britannique ne croyait absolument pas en ses méthodes iconoclastes. Mais Alan cherchait inlassablement la ___ irréfutable qui validerait sa théorie géniale. ___, les résultats concrets tardaient cruellement à se matérialiser dans la réalité. Il préférait ___ poursuivre ses recherches acharnées que d'abandonner face à l'adversité. ___, les cryptographes polonais avaient déjà accompli des progrès significatifs avant l'invasion. Le projet Christopher était ___ terminé quand une découverte fortuite a tout bouleversé. La ___ chirurgicale de ses calculs théoriques forçait l'admiration de ses pairs. Alan s'obstinait à vouloir ___ avec exactitude les mouvements stratégiques de la Kriegsmarine. Une ___ inattendue s'est soudain présentée grâce à une erreur humaine allemande récurrente. Il était hautement ___ que cette faille critique soit exploitée méthodiquement par son équipe. ___, les mathématiciens britanniques ont réussi à décrypter des milliers de messages ennemis vitaux. Alan était ___ conscient d'avoir radicalement changé le cours de l'histoire mondiale, même si son nom devait rester secret pendant cinquante longues années."
     }
   },
-
   "quiz": {
     "title": "Quiz : Logique et Probabilités",
     "title_fa": "آزمون: منطق و احتمالات",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "La ____ philosophique de Descartes a influencé toute la pensée occidentale.", "options": ["pensée", "chanson", "recette", "photo"], "correctIndex": 0, "explanation_fa": "pensée = فکر / اندیشه." },
-      { "type": "mcq", "question": "Il a de bonnes ____ de vouloir changer de travail.", "options": ["raisons", "chansons", "recettes", "photos"], "correctIndex": 0, "explanation_fa": "raison = دلیل." },
-      { "type": "binary", "question": "Une décision \"raisonnable\" est une décision sensée et logique.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، raisonnable = منطقی و معقول." },
-      { "type": "mcq", "question": "Le test de grossesse est ____, elle attend un enfant.", "options": ["positif", "négatif", "neutre", "médiocre"], "correctIndex": 0, "explanation_fa": "positif = مثبت." },
-      { "type": "mcq", "question": "Malheureusement, la réponse de l'université est ____, il n'est pas accepté.", "options": ["négative", "positive", "neutre", "excellente"], "correctIndex": 0, "explanation_fa": "négatif = منفی." },
-      { "type": "mcq", "question": "Malgré la crise, il reste ____ et pense que tout va s'arranger.", "options": ["optimiste", "pessimiste", "indifférent", "neutre"], "correctIndex": 0, "explanation_fa": "optimiste = خوش‌بین." },
-      { "type": "mcq", "question": "Elle est très ____ et pense toujours au pire scénario possible.", "options": ["pessimiste", "optimiste", "enthousiaste", "joyeuse"], "correctIndex": 0, "explanation_fa": "pessimiste = بدبین." },
-      { "type": "binary", "question": "L'\"opinion\" est un avis personnel qui n'est pas nécessairement une vérité absolue.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، opinion = نظر شخصی." },
-      { "type": "mcq", "question": "L'____ parlementaire a voté contre la proposition du gouvernement.", "options": ["opposition", "approbation", "soutien", "aide"], "correctIndex": 0, "explanation_fa": "opposition = مخالفت." },
-      { "type": "mcq", "question": "Le détective cherche la ____ irréfutable de la culpabilité du suspect.", "options": ["preuve", "recette", "chanson", "photo"], "correctIndex": 0, "explanation_fa": "preuve = مدرک / اثبات." },
-      { "type": "mcq", "question": "Il a beaucoup travaillé, ____ il a échoué à l'examen.", "options": ["pourtant", "donc", "alors", "ensuite"], "correctIndex": 0, "explanation_fa": "pourtant = با این حال / اما." },
-      { "type": "mcq", "question": "Je préfère ____ rester à la maison que sortir sous la pluie.", "options": ["plutôt", "jamais", "toujours", "parfois"], "correctIndex": 0, "explanation_fa": "plutôt = ترجیحاً / بیشتر." },
-      { "type": "binary", "question": "L'expression \"par exemple\" sert à illustrer une affirmation.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، par exemple = به عنوان مثال." },
-      { "type": "mcq", "question": "Le film est ____ terminé, il ne reste que quelques scènes à tourner.", "options": ["presque", "jamais", "toujours", "parfois"], "correctIndex": 0, "explanation_fa": "presque = تقریباً." },
-      { "type": "mcq", "question": "Il travaille avec une grande ____ pour éviter toute erreur.", "options": ["précision", "imprécision", "confusion", "erreur"], "correctIndex": 0, "explanation_fa": "précision = دقت." },
-      { "type": "mcq", "question": "Les scientifiques essaient de ____ l'évolution du climat sur cent ans.", "options": ["prédire", "ignorer", "oublier", "rejeter"], "correctIndex": 0, "explanation_fa": "prédire = پیش‌بینی کردن." },
-      { "type": "mcq", "question": "Il existe plusieurs ____ pour résoudre ce problème mathématique.", "options": ["possibilités", "impossibilités", "certitudes", "évidences"], "correctIndex": 0, "explanation_fa": "possibilité = امکان." },
-      { "type": "mcq", "question": "Il est fort ____ qu'il pleuve demain, les nuages s'accumulent.", "options": ["probable", "improbable", "impossible", "certain"], "correctIndex": 0, "explanation_fa": "probable = محتمل." },
-      { "type": "binary", "question": "L'adverbe \"probablement\" exprime une forte vraisemblance, sans certitude absolue.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، probablement = احتمالاً." },
-      { "type": "mcq", "question": "Je suis ____ d'accord avec votre analyse, elle est très pertinente.", "options": ["parfaitement", "imparfaitement", "mal", "incorrectement"], "correctIndex": 0, "explanation_fa": "parfaitement = کاملاً / به طور کامل." }
+      {
+        "type": "mcq",
+        "question": "La ____ philosophique de Descartes a influencé toute la pensée occidentale.",
+        "options": [
+          "pensée",
+          "chanson",
+          "recette",
+          "photo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "pensée = فکر / اندیشه."
+      },
+      {
+        "type": "mcq",
+        "question": "Il a de bonnes ____ de vouloir changer de travail.",
+        "options": [
+          "raisons",
+          "chansons",
+          "recettes",
+          "photos"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "raison = دلیل."
+      },
+      {
+        "type": "binary",
+        "question": "Une décision \"raisonnable\" est une décision sensée et logique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، raisonnable = منطقی و معقول."
+      },
+      {
+        "type": "mcq",
+        "question": "Le test de grossesse est ____, elle attend un enfant.",
+        "options": [
+          "positif",
+          "négatif",
+          "neutre",
+          "médiocre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "positif = مثبت."
+      },
+      {
+        "type": "mcq",
+        "question": "Malheureusement, la réponse de l'université est ____, il n'est pas accepté.",
+        "options": [
+          "négative",
+          "positive",
+          "neutre",
+          "excellente"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "négatif = منفی."
+      },
+      {
+        "type": "mcq",
+        "question": "Malgré la crise, il reste ____ et pense que tout va s'arranger.",
+        "options": [
+          "optimiste",
+          "pessimiste",
+          "indifférent",
+          "neutre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "optimiste = خوش‌بین."
+      },
+      {
+        "type": "mcq",
+        "question": "Elle est très ____ et pense toujours au pire scénario possible.",
+        "options": [
+          "pessimiste",
+          "optimiste",
+          "enthousiaste",
+          "joyeuse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "pessimiste = بدبین."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"opinion\" est un avis personnel qui n'est pas nécessairement une vérité absolue.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، opinion = نظر شخصی."
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ parlementaire a voté contre la proposition du gouvernement.",
+        "options": [
+          "opposition",
+          "approbation",
+          "soutien",
+          "aide"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "opposition = مخالفت."
+      },
+      {
+        "type": "mcq",
+        "question": "Le détective cherche la ____ irréfutable de la culpabilité du suspect.",
+        "options": [
+          "preuve",
+          "recette",
+          "chanson",
+          "photo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "preuve = مدرک / اثبات."
+      },
+      {
+        "type": "mcq",
+        "question": "Il a beaucoup travaillé, ____ il a échoué à l'examen.",
+        "options": [
+          "pourtant",
+          "donc",
+          "alors",
+          "ensuite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "pourtant = با این حال / اما."
+      },
+      {
+        "type": "mcq",
+        "question": "Je préfère ____ rester à la maison que sortir sous la pluie.",
+        "options": [
+          "plutôt",
+          "jamais",
+          "toujours",
+          "parfois"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "plutôt = ترجیحاً / بیشتر."
+      },
+      {
+        "type": "binary",
+        "question": "L'expression \"par exemple\" sert à illustrer une affirmation.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، par exemple = به عنوان مثال."
+      },
+      {
+        "type": "mcq",
+        "question": "Le film est ____ terminé, il ne reste que quelques scènes à tourner.",
+        "options": [
+          "presque",
+          "jamais",
+          "toujours",
+          "parfois"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "presque = تقریباً."
+      },
+      {
+        "type": "mcq",
+        "question": "Il travaille avec une grande ____ pour éviter toute erreur.",
+        "options": [
+          "précision",
+          "imprécision",
+          "confusion",
+          "erreur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "précision = دقت."
+      },
+      {
+        "type": "mcq",
+        "question": "Les scientifiques essaient de ____ l'évolution du climat sur cent ans.",
+        "options": [
+          "prédire",
+          "ignorer",
+          "oublier",
+          "rejeter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "prédire = پیش‌بینی کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "Il existe plusieurs ____ pour résoudre ce problème mathématique.",
+        "options": [
+          "possibilités",
+          "impossibilités",
+          "certitudes",
+          "évidences"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "possibilité = امکان."
+      },
+      {
+        "type": "mcq",
+        "question": "Il est fort ____ qu'il pleuve demain, les nuages s'accumulent.",
+        "options": [
+          "probable",
+          "improbable",
+          "impossible",
+          "certain"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "probable = محتمل."
+      },
+      {
+        "type": "binary",
+        "question": "L'adverbe \"probablement\" exprime une forte vraisemblance, sans certitude absolue.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، probablement = احتمالاً."
+      },
+      {
+        "type": "mcq",
+        "question": "Je suis ____ d'accord avec votre analyse, elle est très pertinente.",
+        "options": [
+          "parfaitement",
+          "imparfaitement",
+          "mal",
+          "incorrectement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "parfaitement = کاملاً / به طور کامل."
+      }
     ]
   }
 }
