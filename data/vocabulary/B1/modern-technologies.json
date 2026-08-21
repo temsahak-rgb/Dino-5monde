@@ -1,0 +1,97 @@
+{
+  "id": "modern_technologies",
+  "level": "B1",
+  "theme": "Technologies modernes et Numérique",
+  "theme_fa": "فناوری‌های مدرن، هوش مصنوعی و دنیای دیجیتال",
+  "icon": "🤖",
+  "inspiration": "Black Mirror (série de Charlie Brooker)",
+
+  "words": [
+    { "fr": "l'intelligence artificielle", "fa": "هوش مصنوعی", "emoji": "🧠", "difficulty": 5, "ex": "L'intelligence artificielle révolutionne la médecine.", "ex_fa": "هوش مصنوعی پزشکی را متحول می‌کند." },
+    { "fr": "l'algorithme", "fa": "الگوریتم", "emoji": "⚙️", "difficulty": 5, "ex": "L'algorithme décide quelles vidéos vous montrer.", "ex_fa": "الگوریتم تصمیم می‌گیرد چه ویدیوهایی به شما نشان دهد." },
+    { "fr": "les données", "fa": "داده‌ها / اطلاعات", "emoji": "💾", "difficulty": 4, "ex": "Nos données personnelles sont souvent revendues.", "ex_fa": "داده‌های شخصی ما اغلب دوباره فروخته می‌شوند." },
+    { "fr": "numérique", "fa": "دیجیتال / رقمی", "emoji": "📱", "difficulty": 3, "ex": "La fracture numérique exclut certaines personnes.", "ex_fa": "شکاف دیجیتال برخی افراد را طرد می‌کند." },
+    { "fr": "virtuel / virtuelle", "fa": "مجازی", "emoji": "🥽", "difficulty": 3, "ex": "Il préfère ses amis virtuels à la réalité.", "ex_fa": "او دوستان مجازی‌اش را به واقعیت ترجیح می‌دهد." },
+    { "fr": "l'écran", "fa": "صفحه نمایش", "emoji": "🖥️", "difficulty": 2, "ex": "Il passe sa vie collé à son écran.", "ex_fa": "او زندگی‌اش را چسبیده به صفحه نمایش می‌گذراند." },
+    { "fr": "le réseau", "fa": "شبکه", "emoji": "🌐", "difficulty": 3, "ex": "Le réseau social contrôle nos émotions.", "ex_fa": "شبکه اجتماعی احساسات ما را کنترل می‌کند." },
+    { "fr": "connecter", "fa": "متصل کردن", "emoji": "🔌", "difficulty": 3, "ex": "Il faut connecter son cerveau à la machine.", "ex_fa": "باید مغز را به دستگاه متصل کرد." },
+    { "fr": "la connexion", "fa": "اتصال", "emoji": "🔗", "difficulty": 3, "ex": "La connexion au serveur a échoué.", "ex_fa": "اتصال به سرور ناموفق بود." },
+    { "fr": "télécharger", "fa": "دانلود کردن", "emoji": "⬇️", "difficulty": 3, "ex": "Il veut télécharger ses souvenirs d'enfance.", "ex_fa": "او می‌خواهد خاطرات کودکی‌اش را دانلود کند." },
+    { "fr": "le piratage", "fa": "هک / سرقت اطلاعات", "emoji": "🏴‍☠️", "difficulty": 4, "ex": "Le piratage de ses données a ruiné sa vie.", "ex_fa": "هک شدن داده‌هایش زندگی او را نابود کرد." },
+    { "fr": "pirater", "fa": "هک کردن", "emoji": "💻", "difficulty": 4, "ex": "Quelqu'un a réussi à pirater son compte bancaire.", "ex_fa": "کسی موفق شد حساب بانکی او را هک کند." },
+    { "fr": "la sécurité", "fa": "امنیت", "emoji": "🔒", "difficulty": 3, "ex": "La sécurité informatique est un enjeu majeur.", "ex_fa": "امنیت سایبری یک چالش بزرگ است." },
+    { "fr": "le mot de passe", "fa": "رمز عبور", "emoji": "🔑", "difficulty": 3, "ex": "Il a oublié son mot de passe pour la centième fois.", "ex_fa": "او برای صدمین بار رمز عبورش را فراموش کرد." },
+    { "fr": "mettre à jour", "fa": "به‌روزرسانی کردن", "emoji": "🔄", "difficulty": 4, "ex": "Il faut mettre à jour le système d'exploitation.", "ex_fa": "باید سیستم عامل را به‌روزرسانی کرد." }
+  ],
+
+  "stories": {
+    "simple": {
+      "title": "Le cauchemar numérique",
+      "title_fa": "کابوس دیجیتال",
+      "text": "Dans un futur proche, l'{{BLANK_1}} gère chaque aspect de la vie quotidienne. Un {{BLANK_2}} secret évalue notre valeur sociale en permanence. Toutes nos {{BLANK_3}} privées sont collectées par une grande entreprise {{BLANK_4}}. Léo vit dans un monde {{BLANK_5}} où les relations humaines n'existent plus. Il passe ses journées devant un {{BLANK_6}} interactif qui lui dicte ses émotions. Le {{BLANK_7}} social auquel il est abonné contrôle son emploi et son logement. Un matin, il n'arrive plus à se {{BLANK_8}} à son profil personnel. La {{BLANK_9}} au serveur central est refusée par le système. Il essaie de {{BLANK_10}} une sauvegarde de ses souvenirs, mais l'opération échoue. Soudain, il découvre qu'il est victime d'un {{BLANK_11}} informatique massif. Un hacker a réussi à {{BLANK_12}} son identité numérique et à voler son argent. La {{BLANK_13}} de ses comptes a été totalement compromise. Il réalise qu'il ne connaît même plus son propre {{BLANK_14}} de secours. Désespéré, il essaie de {{BLANK_15}} son cerveau pour effacer cette journée cauchemardesque, mais la machine refuse de lui obéir.",
+      "blanks": [
+        { "id": 1, "answer": "intelligence artificielle", "options": ["intelligence artificielle", "machine à laver", "voiture", "cuisine"], "correctIndex": 0 },
+        { "id": 2, "answer": "algorithme", "options": ["algorithme", "gâteau", "livre", "stylo"], "correctIndex": 0 },
+        { "id": 3, "answer": "données", "options": ["données", "chansons", "poésies", "recettes"], "correctIndex": 0 },
+        { "id": 4, "answer": "numérique", "options": ["numérique", "physique", "mécanique", "manuelle"], "correctIndex": 0 },
+        { "id": 5, "answer": "virtuel", "options": ["virtuel", "réel", "physique", "concret"], "correctIndex": 0 },
+        { "id": 6, "answer": "écran", "options": ["écran", "clavier", "souris", "imprimante"], "correctIndex": 0 },
+        { "id": 7, "answer": "réseau", "options": ["réseau", "signal", "courant", "câble"], "correctIndex": 0 },
+        { "id": 8, "answer": "connecter", "options": ["connecter", "déconnecter", "débrancher", "éteindre"], "correctIndex": 0 },
+        { "id": 9, "answer": "connexion", "options": ["connexion", "déconnexion", "rupture", "coupure"], "correctIndex": 0 },
+        { "id": 10, "answer": "télécharger", "options": ["télécharger", "effacer", "supprimer", "détruire"], "correctIndex": 0 },
+        { "id": 11, "answer": "piratage", "options": ["piratage", "nettoyage", "rangement", "lavage"], "correctIndex": 0 },
+        { "id": 12, "answer": "pirater", "options": ["pirater", "réparer", "nettoyer", "ranger"], "correctIndex": 0 },
+        { "id": 13, "answer": "sécurité", "options": ["sécurité", "danger", "menace", "risque"], "correctIndex": 0 },
+        { "id": 14, "answer": "mot de passe", "options": ["mot de passe", "passeport", "billet", "ticket"], "correctIndex": 0 },
+        { "id": 15, "answer": "mettre à jour", "options": ["mettre à jour", "casser", "briser", "jeter"], "correctIndex": 0 }
+      ]
+    },
+    "literary": {
+      "title": "La chute de l'utilisateur 8492",
+      "title_fa": "سقوط کاربر ۸۴۹۲",
+      "inspiration": "Black Mirror (épisode Nosedive / Chute libre)",
+      "text": "Dans la mégalopole aseptisée de San Junipero, l'{{BLANK_1}} omniprésente orchestrait chaque interaction sociale avec une précision terrifiante. Un {{BLANK_2}} invisible notait chaque sourire, chaque hesitation, déterminant le crédit social de chaque citoyen. Toutes les {{BLANK_3}} biométriques de Léo étaient aspirées en temps réel par la toute-puissante plateforme {{BLANK_4}}. Il existait désormais principalement dans un espace {{BLANK_5}}, où son avatar devait constamment plaire pour survivre. Son regard restait désespérément scotché à l'{{BLANK_6}} de sa rétine, guettant la moindre validation d'un inconnu. Le {{BLANK_7}} d'influence qu'il fréquentait dictait ses fréquentations et son droit au logement. Ce matin-là, une anomalie l'empêcha de se {{BLANK_8}} à son propre profil de citoyen modèle. La {{BLANK_9}} au serveur central clignota en rouge, lui refusant l'accès à son appartement. Paniqué, il tenta de {{BLANK_10}} une sauvegarde de ses années de souvenirs heureux, mais le transfert fut bloqué. Il venait de subir un {{BLANK_11}} d'une violence inouïe, orchestré par un concurrent jaloux. Quelqu'un avait réussi à {{BLANK_12}} son identité profonde, effaçant des décennies de réputation en quelques secondes. La {{BLANK_13}} de son existence numérique s'était effondrée comme un château de cartes. Tremblant, il réalisa qu'il avait oublié son {{BLANK_14}} biologique de secours, le condamnant à l'exclusion totale. En dernier recours, il supplia le système de {{BLANK_15}} son historique pour effacer cette chute vertigineuse, mais l'écran afficha froidement son bannissement définitif de la société.",
+      "blanks": [
+        { "id": 1, "answer": "intelligence artificielle", "options": ["intelligence artificielle", "machine à laver", "voiture", "cuisine"], "correctIndex": 0 },
+        { "id": 2, "answer": "algorithme", "options": ["algorithme", "gâteau", "livre", "stylo"], "correctIndex": 0 },
+        { "id": 3, "answer": "données", "options": ["données", "chansons", "poésies", "recettes"], "correctIndex": 0 },
+        { "id": 4, "answer": "numérique", "options": ["numérique", "physique", "mécanique", "manuelle"], "correctIndex": 0 },
+        { "id": 5, "answer": "virtuel", "options": ["virtuel", "réel", "physique", "concret"], "correctIndex": 0 },
+        { "id": 6, "answer": "écran", "options": ["écran", "clavier", "souris", "imprimante"], "correctIndex": 0 },
+        { "id": 7, "answer": "réseau", "options": ["réseau", "signal", "courant", "câble"], "correctIndex": 0 },
+        { "id": 8, "answer": "connecter", "options": ["connecter", "déconnecter", "débrancher", "éteindre"], "correctIndex": 0 },
+        { "id": 9, "answer": "connexion", "options": ["connexion", "déconnexion", "rupture", "coupure"], "correctIndex": 0 },
+        { "id": 10, "answer": "télécharger", "options": ["télécharger", "effacer", "supprimer", "détruire"], "correctIndex": 0 },
+        { "id": 11, "answer": "piratage", "options": ["piratage", "nettoyage", "rangement", "lavage"], "correctIndex": 0 },
+        { "id": 12, "answer": "pirater", "options": ["pirater", "réparer", "nettoyer", "ranger"], "correctIndex": 0 },
+        { "id": 13, "answer": "sécurité", "options": ["sécurité", "danger", "menace", "risque"], "correctIndex": 0 },
+        { "id": 14, "answer": "mot de passe", "options": ["mot de passe", "passeport", "billet", "ticket"], "correctIndex": 0 },
+        { "id": 15, "answer": "mettre à jour", "options": ["mettre à jour", "casser", "briser", "jeter"], "correctIndex": 0 }
+      ]
+    }
+  },
+
+  "quiz": {
+    "title": "Quiz : Technologies modernes et Numérique",
+    "title_fa": "آزمون: فناوری‌های مدرن و دیجیتال",
+    "displayCount": 10,
+    "questions": [
+      { "type": "mcq", "question": "L'____ permet aux voitures de conduire toutes seules.", "options": ["intelligence artificielle", "machine à laver", "voiture", "cuisine"], "correctIndex": 0, "explanation_fa": "intelligence artificielle = هوش مصنوعی." },
+      { "type": "mcq", "question": "L'____ de YouTube décide quelles vidéos vous recommander.", "options": ["algorithme", "gâteau", "livre", "stylo"], "correctIndex": 0, "explanation_fa": "algorithme = الگوریتم." },
+      { "type": "binary", "question": "Les \"données\" personnelles sont les informations qui vous concernent sur internet.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، données به معنای داده‌ها و اطلاعات است." },
+      { "type": "mcq", "question": "La transition ____ a transformé notre façon de travailler.", "options": ["numérique", "physique", "mécanique", "manuelle"], "correctIndex": 0, "explanation_fa": "numérique = دیجیتال." },
+      { "type": "mcq", "question": "Les casques de réalité ____ nous plongent dans des mondes imaginaires.", "options": ["virtuelle", "réelle", "physique", "concrète"], "correctIndex": 0, "explanation_fa": "virtuel = مجازی." },
+      { "type": "mcq", "question": "Il a les yeux fatigués à force de regarder son ____ d'ordinateur.", "options": ["écran", "clavier", "souris", "imprimante"], "correctIndex": 0, "explanation_fa": "écran = صفحه نمایش." },
+      { "type": "mcq", "question": "Le ____ Wi-Fi de cet hôtel est très rapide.", "options": ["réseau", "signal", "courant", "câble"], "correctIndex": 0, "explanation_fa": "réseau = شبکه." },
+      { "type": "binary", "question": "Le verbe \"connecter\" signifie \"relier un appareil à un réseau\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، connecter یعنی متصل کردن." },
+      { "type": "mcq", "question": "La ____ internet est tombée pendant la réunion importante.", "options": ["connexion", "déconnexion", "rupture", "coupure"], "correctIndex": 0, "explanation_fa": "connexion = اتصال." },
+      { "type": "mcq", "question": "Je vais ____ ce film sur mon disque dur pour le regarder ce soir.", "options": ["télécharger", "effacer", "supprimer", "détruire"], "correctIndex": 0, "explanation_fa": "télécharger = دانلود کردن." },
+      { "type": "mcq", "question": "Le ____ de la base de données de l'hôpital a exposé des millions de dossiers.", "options": ["piratage", "nettoyage", "rangement", "lavage"], "correctIndex": 0, "explanation_fa": "piratage = هک / سرقت اطلاعات." },
+      { "type": "mcq", "question": "Des cybercriminels ont réussi à ____ le système bancaire national.", "options": ["pirater", "réparer", "nettoyer", "ranger"], "correctIndex": 0, "explanation_fa": "pirater = هک کردن." },
+      { "type": "binary", "question": "La \"sécurité\" informatique vise à protéger les systèmes contre les attaques.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، sécurité به معنای امنیت است." },
+      { "type": "mcq", "question": "Il faut choisir un ____ complexe avec des majuscules et des chiffres.", "options": ["mot de passe", "passeport", "billet", "ticket"], "correctIndex": 0, "explanation_fa": "mot de passe = رمز عبور." },
+      { "type": "mcq", "question": "N'oubliez pas de ____ votre antivirus pour être protégé contre les nouveaux virus.", "options": ["mettre à jour", "casser", "briser", "jeter"], "correctIndex": 0, "explanation_fa": "mettre à jour = به‌روزرسانی کردن." }
+    ]
+  }
+}
