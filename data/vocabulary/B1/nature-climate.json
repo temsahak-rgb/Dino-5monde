@@ -5,47 +5,301 @@
   "theme_fa": "طبیعت، آب و هوا و محیط زیست",
   "icon": "⛅",
   "inspiration": "Le Sel de la Terre (documentaire de Wim Wenders et Juliano Ribeiro Salgado)",
-
   "words": [
-    { "fr": "la nature", "fa": "طبیعت", "emoji": "🌲", "difficulty": 2, "ex": "Il faut respecter la nature et ses cycles.", "ex_fa": "باید به طبیعت و چرخه‌های آن احترام گذاشت." },
-    { "fr": "le climat", "fa": "آب و هوا (اقلیم)", "emoji": "🌍", "difficulty": 3, "ex": "Le changement climatique menace notre avenir.", "ex_fa": "تغییرات اقلیمی آینده ما را تهدید می‌کند." },
-    { "fr": "le réchauffement", "fa": "گرمایش", "emoji": "🌡️", "difficulty": 4, "ex": "Le réchauffement de la planète s'accélère dangereusement.", "ex_fa": "گرمایش سیاره به طرز خطرناکی شتاب گرفته است." },
-    { "fr": "l'environnement", "fa": "محیط زیست", "emoji": "🌿", "difficulty": 3, "ex": "La protection de l'environnement est l'affaire de tous.", "ex_fa": "حفاظت از محیط زیست کار همه است." },
-    { "fr": "la planète", "fa": "سیاره / کره زمین", "emoji": "🌎", "difficulty": 2, "ex": "Notre planète bleue est unique dans l'univers.", "ex_fa": "سیاره آبی ما در کیهان بی‌نظیر است." },
-    { "fr": "la pollution", "fa": "آلودگی", "emoji": "🏭", "difficulty": 2, "ex": "La pollution de l'air cause de graves maladies respiratoires.", "ex_fa": "آلودگی هوا باعث بیماری‌های تنفسی شدید می‌شود." },
-    { "fr": "le recyclage", "fa": "بازیافت", "emoji": "♻️", "difficulty": 3, "ex": "Le recyclage du plastique permet d'économiser des ressources.", "ex_fa": "بازیافت پلاستیک باعث صرفه‌جویی در منابع می‌شود." },
-    { "fr": "l'écologie", "fa": "بوم‌شناسی / محیط‌زیست‌گرایی", "emoji": "🍃", "difficulty": 3, "ex": "L'écologie politique gagne du terrain dans les élections.", "ex_fa": "بوم‌شناسی سیاسی در انتخابات در حال پیشروی است." },
-    { "fr": "la forêt", "fa": "جنگل", "emoji": "🌳", "difficulty": 2, "ex": "La forêt amazonienne est le poumon vert de la Terre.", "ex_fa": "جنگل آمازون ریه سبز زمین است." },
-    { "fr": "l'océan", "fa": "اقیانوس", "emoji": "🌊", "difficulty": 2, "ex": "Les océans absorbent une grande partie du CO2.", "ex_fa": "اقیانوس‌ها بخش بزرگی از دی‌اکسید کربن را جذب می‌کنند." },
-    { "fr": "la biodiversité", "fa": "تنوع زیستی", "emoji": "🦋", "difficulty": 5, "ex": "La perte de biodiversité est une catastrophe silencieuse.", "ex_fa": "از دست رفتن تنوع زیستی یک فاجعه خاموش است." },
-    { "fr": "la sécheresse", "fa": "خشکسالی", "emoji": "🏜️", "difficulty": 4, "ex": "La sécheresse détruit les récoltes des agriculteurs.", "ex_fa": "خشکسالی محصولات کشاورزان را نابود می‌کند." },
-    { "fr": "l'inondation", "fa": "سیل", "emoji": "🌊", "difficulty": 4, "ex": "Les inondations ont ravagé le sud du pays cet hiver.", "ex_fa": "سیل‌ها زمستان امسال جنوب کشور را ویران کردند." },
-    { "fr": "la température", "fa": "دما", "emoji": "🌡️", "difficulty": 3, "ex": "La température moyenne augmente chaque décennie.", "ex_fa": "دمای میانگین هر دهه افزایش می‌یابد." },
-    { "fr": "l'espèce", "fa": "گونه (جانوری یا گیاهی)", "emoji": "🐾", "difficulty": 4, "ex": "De nombreuses espèces animales sont en voie d'extinction.", "ex_fa": "بسیاری از گونه‌های جانوری در معرض انقراض هستند." }
+    {
+      "fr": "la nature",
+      "fa": "طبیعت",
+      "emoji": "🌲",
+      "difficulty": 2,
+      "ex": "Il faut respecter la nature et ses cycles.",
+      "ex_fa": "باید به طبیعت و چرخه‌های آن احترام گذاشت."
+    },
+    {
+      "fr": "le climat",
+      "fa": "آب و هوا (اقلیم)",
+      "emoji": "🌍",
+      "difficulty": 3,
+      "ex": "Le changement climatique menace notre avenir.",
+      "ex_fa": "تغییرات اقلیمی آینده ما را تهدید می‌کند."
+    },
+    {
+      "fr": "le réchauffement",
+      "fa": "گرمایش",
+      "emoji": "🌡️",
+      "difficulty": 4,
+      "ex": "Le réchauffement de la planète s'accélère dangereusement.",
+      "ex_fa": "گرمایش سیاره به طرز خطرناکی شتاب گرفته است."
+    },
+    {
+      "fr": "l'environnement",
+      "fa": "محیط زیست",
+      "emoji": "🌿",
+      "difficulty": 3,
+      "ex": "La protection de l'environnement est l'affaire de tous.",
+      "ex_fa": "حفاظت از محیط زیست کار همه است."
+    },
+    {
+      "fr": "la planète",
+      "fa": "سیاره / کره زمین",
+      "emoji": "🌎",
+      "difficulty": 2,
+      "ex": "Notre planète bleue est unique dans l'univers.",
+      "ex_fa": "سیاره آبی ما در کیهان بی‌نظیر است."
+    },
+    {
+      "fr": "la pollution",
+      "fa": "آلودگی",
+      "emoji": "🏭",
+      "difficulty": 2,
+      "ex": "La pollution de l'air cause de graves maladies respiratoires.",
+      "ex_fa": "آلودگی هوا باعث بیماری‌های تنفسی شدید می‌شود."
+    },
+    {
+      "fr": "le recyclage",
+      "fa": "بازیافت",
+      "emoji": "♻️",
+      "difficulty": 3,
+      "ex": "Le recyclage du plastique permet d'économiser des ressources.",
+      "ex_fa": "بازیافت پلاستیک باعث صرفه‌جویی در منابع می‌شود."
+    },
+    {
+      "fr": "l'écologie",
+      "fa": "بوم‌شناسی / محیط‌زیست‌گرایی",
+      "emoji": "🍃",
+      "difficulty": 3,
+      "ex": "L'écologie politique gagne du terrain dans les élections.",
+      "ex_fa": "بوم‌شناسی سیاسی در انتخابات در حال پیشروی است."
+    },
+    {
+      "fr": "la forêt",
+      "fa": "جنگل",
+      "emoji": "🌳",
+      "difficulty": 2,
+      "ex": "La forêt amazonienne est le poumon vert de la Terre.",
+      "ex_fa": "جنگل آمازون ریه سبز زمین است."
+    },
+    {
+      "fr": "l'océan",
+      "fa": "اقیانوس",
+      "emoji": "🌊",
+      "difficulty": 2,
+      "ex": "Les océans absorbent une grande partie du CO2.",
+      "ex_fa": "اقیانوس‌ها بخش بزرگی از دی‌اکسید کربن را جذب می‌کنند."
+    },
+    {
+      "fr": "la biodiversité",
+      "fa": "تنوع زیستی",
+      "emoji": "🦋",
+      "difficulty": 5,
+      "ex": "La perte de biodiversité est une catastrophe silencieuse.",
+      "ex_fa": "از دست رفتن تنوع زیستی یک فاجعه خاموش است."
+    },
+    {
+      "fr": "la sécheresse",
+      "fa": "خشکسالی",
+      "emoji": "🏜️",
+      "difficulty": 4,
+      "ex": "La sécheresse détruit les récoltes des agriculteurs.",
+      "ex_fa": "خشکسالی محصولات کشاورزان را نابود می‌کند."
+    },
+    {
+      "fr": "l'inondation",
+      "fa": "سیل",
+      "emoji": "🌊",
+      "difficulty": 4,
+      "ex": "Les inondations ont ravagé le sud du pays cet hiver.",
+      "ex_fa": "سیل‌ها زمستان امسال جنوب کشور را ویران کردند."
+    },
+    {
+      "fr": "la température",
+      "fa": "دما",
+      "emoji": "🌡️",
+      "difficulty": 3,
+      "ex": "La température moyenne augmente chaque décennie.",
+      "ex_fa": "دمای میانگین هر دهه افزایش می‌یابد."
+    },
+    {
+      "fr": "l'espèce",
+      "fa": "گونه (جانوری یا گیاهی)",
+      "emoji": "🐾",
+      "difficulty": 4,
+      "ex": "De nombreuses espèces animales sont en voie d'extinction.",
+      "ex_fa": "بسیاری از گونه‌های جانوری در معرض انقراض هستند."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "Le voyage de Sebastião",
       "title_fa": "سفر سباستیائو",
       "text": "Sebastião est un photographe passionné par la {{BLANK_1}} sauvage. Il voyage partout pour documenter l'impact de l'homme sur le {{BLANK_2}} mondial. Il a constaté que le {{BLANK_3}} de l'atmosphère modifie les saisons. Son but est de sensibiliser le public à la protection de l'{{BLANK_4}}. Il rappelle que notre {{BLANK_5}} est fragile et unique. Dans les grandes villes, la {{BLANK_6}} de l'air devient insupportable. Pour lutter contre ce fléau, il encourage le {{BLANK_7}} systématique des déchets ménagers. Son engagement pour l'{{BLANK_8}} l'a mené aux quatre coins du monde. Il a photographié la déforestation massive de la {{BLANK_9}} tropicale. Il a aussi documenté la montée des eaux dans l'{{BLANK_10}} Pacifique. Il s'inquiète de la disparition rapide de la {{BLANK_11}} terrestre. Dans certaines régions d'Afrique, la {{BLANK_12}} prolongée affame les populations. À l'inverse, dans d'autres pays, l'{{BLANK_13}} détruit les villages côtiers. La {{BLANK_14}} globale bat des records chaque année. Il pleure la disparition de chaque {{BLANK_15}} animale qui s'éteint à jamais.",
       "blanks": [
-        { "id": 1, "answer": "nature", "options": ["nature", "cuisine", "chambre", "voiture"], "correctIndex": 0 },
-        { "id": 2, "answer": "climat", "options": ["climat", "moteur", "pneu", "volant"], "correctIndex": 0 },
-        { "id": 3, "answer": "réchauffement", "options": ["réchauffement", "refroidissement", "gel", "neige"], "correctIndex": 0 },
-        { "id": 4, "answer": "environnement", "options": ["environnement", "ordinateur", "téléphone", "imprimante"], "correctIndex": 0 },
-        { "id": 5, "answer": "planète", "options": ["planète", "lune", "étoile", "galaxie"], "correctIndex": 0 },
-        { "id": 6, "answer": "pollution", "options": ["pollution", "propreté", "pureté", "clarté"], "correctIndex": 0 },
-        { "id": 7, "answer": "recyclage", "options": ["recyclage", "gaspillage", "destruction", "abandon"], "correctIndex": 0 },
-        { "id": 8, "answer": "écologie", "options": ["écologie", "économie", "finance", "bourse"], "correctIndex": 0 },
-        { "id": 9, "answer": "forêt", "options": ["forêt", "désert", "ville", "route"], "correctIndex": 0 },
-        { "id": 10, "answer": "océan", "options": ["océan", "lac", "piscine", "rivière"], "correctIndex": 0 },
-        { "id": 11, "answer": "biodiversité", "options": ["biodiversité", "monoculture", "uniformité", "stérilité"], "correctIndex": 0 },
-        { "id": 12, "answer": "sécheresse", "options": ["sécheresse", "pluie", "neige", "inondation"], "correctIndex": 0 },
-        { "id": 13, "answer": "inondation", "options": ["inondation", "sécheresse", "canicule", "gel"], "correctIndex": 0 },
-        { "id": 14, "answer": "température", "options": ["température", "pression", "vitesse", "hauteur"], "correctIndex": 0 },
-        { "id": 15, "answer": "espèce", "options": ["espèce", "individu", "groupe", "foule"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "nature",
+          "options": [
+            "nature",
+            "cuisine",
+            "chambre",
+            "voiture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "climat",
+          "options": [
+            "climat",
+            "moteur",
+            "pneu",
+            "volant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "réchauffement",
+          "options": [
+            "réchauffement",
+            "refroidissement",
+            "gel",
+            "neige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "environnement",
+          "options": [
+            "environnement",
+            "ordinateur",
+            "téléphone",
+            "imprimante"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "planète",
+          "options": [
+            "planète",
+            "lune",
+            "étoile",
+            "galaxie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pollution",
+          "options": [
+            "pollution",
+            "propreté",
+            "pureté",
+            "clarté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "recyclage",
+          "options": [
+            "recyclage",
+            "gaspillage",
+            "destruction",
+            "abandon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "écologie",
+          "options": [
+            "écologie",
+            "économie",
+            "finance",
+            "bourse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "forêt",
+          "options": [
+            "forêt",
+            "désert",
+            "ville",
+            "route"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "océan",
+          "options": [
+            "océan",
+            "lac",
+            "piscine",
+            "rivière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "biodiversité",
+          "options": [
+            "biodiversité",
+            "monoculture",
+            "uniformité",
+            "stérilité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "sécheresse",
+          "options": [
+            "sécheresse",
+            "pluie",
+            "neige",
+            "inondation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "inondation",
+          "options": [
+            "inondation",
+            "sécheresse",
+            "canicule",
+            "gel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "température",
+          "options": [
+            "température",
+            "pression",
+            "vitesse",
+            "hauteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "espèce",
+          "options": [
+            "espèce",
+            "individu",
+            "groupe",
+            "foule"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Sebastião est un photographe passionné par la ___ sauvage. Il voyage partout pour documenter l'impact de l'homme sur le ___ mondial. Il a constaté que le ___ de l'atmosphère modifie les saisons. Son but est de sensibiliser le public à la protection de l'___. Il rappelle que notre ___ est fragile et unique. Dans les grandes villes, la ___ de l'air devient insupportable. Pour lutter contre ce fléau, il encourage le ___ systématique des déchets ménagers. Son engagement pour l'___ l'a mené aux quatre coins du monde. Il a photographié la déforestation massive de la ___ tropicale. Il a aussi documenté la montée des eaux dans l'___ Pacifique. Il s'inquiète de la disparition rapide de la ___ terrestre. Dans certaines régions d'Afrique, la ___ prolongée affame les populations. À l'inverse, dans d'autres pays, l'___ détruit les villages côtiers. La ___ globale bat des records chaque année. Il pleure la disparition de chaque ___ animale qui s'éteint à jamais."
     },
     "literary": {
       "title": "Les larmes de la Terre",
@@ -53,45 +307,354 @@
       "inspiration": "Le Sel de la Terre (documentaire de Wim Wenders)",
       "text": "Pendant quarante ans, le photographe brésilien Sebastião Salgado a parcouru le globe pour capturer l'âme de la {{BLANK_1}} dans toute sa splendeur originelle. Ses clichés en noir et blanc témoignaient de l'impact dévastateur de l'humanité sur le {{BLANK_2}} mondial en pleine mutation. Il a documenté avec effroi comment le {{BLANK_3}} inexorable de l'atmosphère bouleversait les cycles millénaires des saisons. Son œuvre magistrale visait à éveiller les consciences sur l'urgence absolue de protéger l'{{BLANK_4}} naturel. Il martelait sans cesse que notre {{BLANK_5}} bleue était un joyau éphémère et profondément vulnérable. Dans les mégalopoles industrielles, la {{BLANK_6}} asphyxiante de l'air masquait désormais le soleil. Pour contrer ce désastre, il prônait une révolution des mentalités incluant le {{BLANK_7}} intégral de nos ressources. Son militantisme fervent pour l'{{BLANK_8}} l'avait conduit au cœur de l'Amazonie menacée. Il avait immortalisé l'agonie silencieuse de la {{BLANK_9}} primaire, abattue pour nourrir le bétail mondial. Il avait aussi capturé la montée tragique des eaux dans l'{{BLANK_10}} Pacifique, engloutissant les atolls. Il s'alarmait de l'effondrement dramatique de la {{BLANK_11}} terrestre, véritable toile du vivant qui se déchirait. Dans le Sahel africain, il avait photographié la {{BLANK_12}} biblique qui transformait les terres fertiles en poussière. À l'opposé, dans les deltas asiatiques, l'{{BLANK_13}} catastrophique emportait des villages entiers dans la boue. La {{BLANK_14}} moyenne des océans grimpait, condamnant les récifs coralliens à une mort certaine. Chaque cliché était un requiem pour une {{BLANK_15}} animale disparue à jamais, un témoignage poignant pour les générations futures.",
       "blanks": [
-        { "id": 1, "answer": "nature", "options": ["nature", "cuisine", "chambre", "voiture"], "correctIndex": 0 },
-        { "id": 2, "answer": "climat", "options": ["climat", "moteur", "pneu", "volant"], "correctIndex": 0 },
-        { "id": 3, "answer": "réchauffement", "options": ["réchauffement", "refroidissement", "gel", "neige"], "correctIndex": 0 },
-        { "id": 4, "answer": "environnement", "options": ["environnement", "ordinateur", "téléphone", "imprimante"], "correctIndex": 0 },
-        { "id": 5, "answer": "planète", "options": ["planète", "lune", "étoile", "galaxie"], "correctIndex": 0 },
-        { "id": 6, "answer": "pollution", "options": ["pollution", "propreté", "pureté", "clarté"], "correctIndex": 0 },
-        { "id": 7, "answer": "recyclage", "options": ["recyclage", "gaspillage", "destruction", "abandon"], "correctIndex": 0 },
-        { "id": 8, "answer": "écologie", "options": ["écologie", "économie", "finance", "bourse"], "correctIndex": 0 },
-        { "id": 9, "answer": "forêt", "options": ["forêt", "désert", "ville", "route"], "correctIndex": 0 },
-        { "id": 10, "answer": "océan", "options": ["océan", "lac", "piscine", "rivière"], "correctIndex": 0 },
-        { "id": 11, "answer": "biodiversité", "options": ["biodiversité", "monoculture", "uniformité", "stérilité"], "correctIndex": 0 },
-        { "id": 12, "answer": "sécheresse", "options": ["sécheresse", "pluie", "neige", "inondation"], "correctIndex": 0 },
-        { "id": 13, "answer": "inondation", "options": ["inondation", "sécheresse", "canicule", "gel"], "correctIndex": 0 },
-        { "id": 14, "answer": "température", "options": ["température", "pression", "vitesse", "hauteur"], "correctIndex": 0 },
-        { "id": 15, "answer": "espèce", "options": ["espèce", "individu", "groupe", "foule"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "nature",
+          "options": [
+            "nature",
+            "cuisine",
+            "chambre",
+            "voiture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "climat",
+          "options": [
+            "climat",
+            "moteur",
+            "pneu",
+            "volant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "réchauffement",
+          "options": [
+            "réchauffement",
+            "refroidissement",
+            "gel",
+            "neige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "environnement",
+          "options": [
+            "environnement",
+            "ordinateur",
+            "téléphone",
+            "imprimante"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "planète",
+          "options": [
+            "planète",
+            "lune",
+            "étoile",
+            "galaxie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pollution",
+          "options": [
+            "pollution",
+            "propreté",
+            "pureté",
+            "clarté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "recyclage",
+          "options": [
+            "recyclage",
+            "gaspillage",
+            "destruction",
+            "abandon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "écologie",
+          "options": [
+            "écologie",
+            "économie",
+            "finance",
+            "bourse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "forêt",
+          "options": [
+            "forêt",
+            "désert",
+            "ville",
+            "route"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "océan",
+          "options": [
+            "océan",
+            "lac",
+            "piscine",
+            "rivière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "biodiversité",
+          "options": [
+            "biodiversité",
+            "monoculture",
+            "uniformité",
+            "stérilité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "sécheresse",
+          "options": [
+            "sécheresse",
+            "pluie",
+            "neige",
+            "inondation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "inondation",
+          "options": [
+            "inondation",
+            "sécheresse",
+            "canicule",
+            "gel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "température",
+          "options": [
+            "température",
+            "pression",
+            "vitesse",
+            "hauteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "espèce",
+          "options": [
+            "espèce",
+            "individu",
+            "groupe",
+            "foule"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Pendant quarante ans, le photographe brésilien Sebastião Salgado a parcouru le globe pour capturer l'âme de la ___ dans toute sa splendeur originelle. Ses clichés en noir et blanc témoignaient de l'impact dévastateur de l'humanité sur le ___ mondial en pleine mutation. Il a documenté avec effroi comment le ___ inexorable de l'atmosphère bouleversait les cycles millénaires des saisons. Son œuvre magistrale visait à éveiller les consciences sur l'urgence absolue de protéger l'___ naturel. Il martelait sans cesse que notre ___ bleue était un joyau éphémère et profondément vulnérable. Dans les mégalopoles industrielles, la ___ asphyxiante de l'air masquait désormais le soleil. Pour contrer ce désastre, il prônait une révolution des mentalités incluant le ___ intégral de nos ressources. Son militantisme fervent pour l'___ l'avait conduit au cœur de l'Amazonie menacée. Il avait immortalisé l'agonie silencieuse de la ___ primaire, abattue pour nourrir le bétail mondial. Il avait aussi capturé la montée tragique des eaux dans l'___ Pacifique, engloutissant les atolls. Il s'alarmait de l'effondrement dramatique de la ___ terrestre, véritable toile du vivant qui se déchirait. Dans le Sahel africain, il avait photographié la ___ biblique qui transformait les terres fertiles en poussière. À l'opposé, dans les deltas asiatiques, l'___ catastrophique emportait des villages entiers dans la boue. La ___ moyenne des océans grimpait, condamnant les récifs coralliens à une mort certaine. Chaque cliché était un requiem pour une ___ animale disparue à jamais, un témoignage poignant pour les générations futures."
     }
   },
-
   "quiz": {
     "title": "Quiz : Nature et Climat",
     "title_fa": "آزمون: طبیعت و اقلیم",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "Faire des randonnées en montagne permet de se reconnecter avec la ____.", "options": ["nature", "cuisine", "chambre", "voiture"], "correctIndex": 0, "explanation_fa": "nature = طبیعت." },
-      { "type": "mcq", "question": "Le ____ méditerranéen est caractérisé par des étés chauds et secs.", "options": ["climat", "moteur", "pneu", "volant"], "correctIndex": 0, "explanation_fa": "climat = آب و هوا (اقلیم)." },
-      { "type": "binary", "question": "Le \"réchauffement\" climatique désigne l'augmentation globale des températures sur Terre.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، réchauffement یعنی گرمایش." },
-      { "type": "mcq", "question": "Trier ses déchets est un geste simple pour protéger l'____.", "options": ["environnement", "ordinateur", "téléphone", "imprimante"], "correctIndex": 0, "explanation_fa": "environnement = محیط زیست." },
-      { "type": "mcq", "question": "Vue de l'espace, notre ____ ressemble à une petite bille bleue.", "options": ["planète", "lune", "étoile", "galaxie"], "correctIndex": 0, "explanation_fa": "planète = سیاره." },
-      { "type": "mcq", "question": "Les usines qui rejettent des fumées toxiques sont responsables de la ____ de l'air.", "options": ["pollution", "propreté", "pureté", "clarté"], "correctIndex": 0, "explanation_fa": "pollution = آلودگی." },
-      { "type": "mcq", "question": "Le ____ du verre permet de fabriquer de nouvelles bouteilles sans extraire de sable.", "options": ["recyclage", "gaspillage", "destruction", "abandon"], "correctIndex": 0, "explanation_fa": "recyclage = بازیافت." },
-      { "type": "binary", "question": "L'\"écologie\" est la science qui étudie les interactions entre les êtres vivants et leur milieu.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، écologie یعنی بوم‌شناسی." },
-      { "type": "mcq", "question": "La ____ de Fontainebleau est un lieu de promenade très apprécié des Parisiens.", "options": ["forêt", "désert", "ville", "route"], "correctIndex": 0, "explanation_fa": "forêt = جنگل." },
-      { "type": "mcq", "question": "L'____ Atlantique sépare l'Europe de l'Amérique du Nord.", "options": ["océan", "lac", "piscine", "rivière"], "correctIndex": 0, "explanation_fa": "océan = اقیانوس." },
-      { "type": "mcq", "question": "La destruction des habitats naturels menace la ____ mondiale.", "options": ["biodiversité", "monoculture", "uniformité", "stérilité"], "correctIndex": 0, "explanation_fa": "biodiversité = تنوع زیستی." },
-      { "type": "mcq", "question": "En été, la ____ provoque des incendies dévastateurs dans le sud de la France.", "options": ["sécheresse", "pluie", "neige", "inondation"], "correctIndex": 0, "explanation_fa": "sécheresse = خشکسالی." },
-      { "type": "binary", "question": "Une \"inondation\" se produit lorsqu'une grande quantité d'eau recouvre des terres habituellement sèches.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، inondation یعنی سیل." },
-      { "type": "mcq", "question": "Le thermomètre extérieur indique une ____ de 35 degrés à l'ombre.", "options": ["température", "pression", "vitesse", "hauteur"], "correctIndex": 0, "explanation_fa": "température = دما." },
-      { "type": "mcq", "question": "Le panda géant est une ____ menacée qui vit uniquement en Chine.", "options": ["espèce", "individu", "groupe", "foule"], "correctIndex": 0, "explanation_fa": "espèce = گونه (جانوری یا گیاهی)." }
+      {
+        "type": "mcq",
+        "question": "Faire des randonnées en montagne permet de se reconnecter avec la ____.",
+        "options": [
+          "nature",
+          "cuisine",
+          "chambre",
+          "voiture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "nature = طبیعت."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ méditerranéen est caractérisé par des étés chauds et secs.",
+        "options": [
+          "climat",
+          "moteur",
+          "pneu",
+          "volant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "climat = آب و هوا (اقلیم)."
+      },
+      {
+        "type": "binary",
+        "question": "Le \"réchauffement\" climatique désigne l'augmentation globale des températures sur Terre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، réchauffement یعنی گرمایش."
+      },
+      {
+        "type": "mcq",
+        "question": "Trier ses déchets est un geste simple pour protéger l'____.",
+        "options": [
+          "environnement",
+          "ordinateur",
+          "téléphone",
+          "imprimante"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "environnement = محیط زیست."
+      },
+      {
+        "type": "mcq",
+        "question": "Vue de l'espace, notre ____ ressemble à une petite bille bleue.",
+        "options": [
+          "planète",
+          "lune",
+          "étoile",
+          "galaxie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "planète = سیاره."
+      },
+      {
+        "type": "mcq",
+        "question": "Les usines qui rejettent des fumées toxiques sont responsables de la ____ de l'air.",
+        "options": [
+          "pollution",
+          "propreté",
+          "pureté",
+          "clarté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "pollution = آلودگی."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ du verre permet de fabriquer de nouvelles bouteilles sans extraire de sable.",
+        "options": [
+          "recyclage",
+          "gaspillage",
+          "destruction",
+          "abandon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "recyclage = بازیافت."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"écologie\" est la science qui étudie les interactions entre les êtres vivants et leur milieu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، écologie یعنی بوم‌شناسی."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ de Fontainebleau est un lieu de promenade très apprécié des Parisiens.",
+        "options": [
+          "forêt",
+          "désert",
+          "ville",
+          "route"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "forêt = جنگل."
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ Atlantique sépare l'Europe de l'Amérique du Nord.",
+        "options": [
+          "océan",
+          "lac",
+          "piscine",
+          "rivière"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "océan = اقیانوس."
+      },
+      {
+        "type": "mcq",
+        "question": "La destruction des habitats naturels menace la ____ mondiale.",
+        "options": [
+          "biodiversité",
+          "monoculture",
+          "uniformité",
+          "stérilité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "biodiversité = تنوع زیستی."
+      },
+      {
+        "type": "mcq",
+        "question": "En été, la ____ provoque des incendies dévastateurs dans le sud de la France.",
+        "options": [
+          "sécheresse",
+          "pluie",
+          "neige",
+          "inondation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "sécheresse = خشکسالی."
+      },
+      {
+        "type": "binary",
+        "question": "Une \"inondation\" se produit lorsqu'une grande quantité d'eau recouvre des terres habituellement sèches.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، inondation یعنی سیل."
+      },
+      {
+        "type": "mcq",
+        "question": "Le thermomètre extérieur indique une ____ de 35 degrés à l'ombre.",
+        "options": [
+          "température",
+          "pression",
+          "vitesse",
+          "hauteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "température = دما."
+      },
+      {
+        "type": "mcq",
+        "question": "Le panda géant est une ____ menacée qui vit uniquement en Chine.",
+        "options": [
+          "espèce",
+          "individu",
+          "groupe",
+          "foule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "espèce = گونه (جانوری یا گیاهی)."
+      }
     ]
   }
 }
