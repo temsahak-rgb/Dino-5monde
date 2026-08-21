@@ -1,0 +1,89 @@
+{
+  "id": "health_hospital",
+  "level": "B1",
+  "theme": "Santé et Hôpital",
+  "theme_fa": "سیستم سلامت، بیمارستان و مراقبت‌های پزشکی",
+  "icon": "🏥",
+  "inspiration": "Hippocrate (film de Thomas Lilti)",
+
+  "words": [
+    { "fr": "la fièvre", "fa": "تب", "emoji": "🤒", "difficulty": 2, "ex": "L'enfant a beaucoup de fièvre depuis ce matin.", "ex_fa": "کودک از امروز صبح تب زیادی دارد." },
+    { "fr": "guéri / guérie", "fa": "شفا یافته / درمان شده", "emoji": "🩹", "difficulty": 3, "ex": "Après une semaine de repos, il est complètement guéri.", "ex_fa": "بعد از یک هفته استراحت، او کاملاً شفا یافته است." },
+    { "fr": "l'infirmier / l'infirmière", "fa": "پرستار", "emoji": "👩‍⚕️", "difficulty": 2, "ex": "L'infirmière prend ma tension artérielle.", "ex_fa": "پرستار فشار خون من را اندازه می‌گیرد." },
+    { "fr": "le médicament", "fa": "دارو", "emoji": "💊", "difficulty": 2, "ex": "Il faut prendre ce médicament après le repas.", "ex_fa": "باید این دارو را بعد از غذا مصرف کرد." },
+    { "fr": "la maladie", "fa": "بیماری", "emoji": "🦠", "difficulty": 2, "ex": "Cette maladie nécessite un suivi médical régulier.", "ex_fa": "این بیماری نیاز به پیگیری منظم پزشکی دارد." },
+    { "fr": "mental / mentale", "fa": "ذهنی / روانی", "emoji": "🧠", "difficulty": 3, "ex": "La santé mentale est aussi importante que la santé physique.", "ex_fa": "سلامت روان به اندازه سلامت جسمی مهم است." },
+    { "fr": "la mesure", "fa": "اندازه‌گیری / تدبیر", "emoji": "📏", "difficulty": 3, "ex": "Le médecin a pris des mesures sanitaires strictes.", "ex_fa": "پزشک تدابیر بهداشتی سخت‌گیرانه‌ای اتخاذ کرد." },
+    { "fr": "mesurer", "fa": "اندازه گرفتن", "emoji": "🌡️", "difficulty": 3, "ex": "Il faut mesurer la température du patient.", "ex_fa": "باید دمای بدن بیمار را اندازه گرفت." },
+    { "fr": "le membre", "fa": "عضو (بدن)", "emoji": "💪", "difficulty": 3, "ex": "Il ressent une douleur dans le membre inférieur.", "ex_fa": "او در عضو تحتانی (پا) احساس درد می‌کند." },
+    { "fr": "la mémoire", "fa": "حافظه", "emoji": "💭", "difficulty": 3, "ex": "Ce traumatisme a affecté sa mémoire à court terme.", "ex_fa": "این ضربه روانی حافظه کوتاه‌مدت او را تحت تاثیر قرار داده است." },
+    { "fr": "léger / légère", "fa": "خفیف / سبک", "emoji": "🍃", "difficulty": 3, "ex": "Il ne souffre que d'une légère entorse.", "ex_fa": "او فقط از یک پیچ‌خوردگی خفیف رنج می‌برد." },
+    { "fr": "grave", "fa": "جدی / وخیم", "emoji": "🚨", "difficulty": 2, "ex": "Son état est grave, il doit être hospitalisé.", "ex_fa": "وضعیت او وخیم است، باید بستری شود." },
+    { "fr": "lourd / lourde", "fa": "سنگین (عوارض یا درمان)", "emoji": "⚖️", "difficulty": 4, "ex": "Ce traitement lourd a des effets secondaires importants.", "ex_fa": "این درمان سنگین عوارض جانبی مهمی دارد." }
+  ],
+
+  "stories": {
+    "simple": {
+      "title": "Une visite aux urgences",
+      "title_fa": "یک ویزیت در اورژانس",
+      "text": "Arthur est arrivé à l'hôpital avec une forte {{BLANK_1}}. Une {{BLANK_2}} très gentille l'a immédiatement accueilli. Elle a commencé par {{BLANK_3}} sa température et sa tension. Après l'examen, le médecin a diagnostiqué une {{BLANK_4}} virale bénigne. Heureusement, ce n'était pas du tout {{BLANK_5}}, juste un rhume très fatigant. Le docteur lui a prescrit un {{BLANK_6}} pour faire baisser la température. Il a aussi vérifié son état {{BLANK_7}} car Arthur était très stressé par son travail. Le médecin a expliqué que le stress pouvait affaiblir le système immunitaire et causer une douleur dans n'importe quel {{BLANK_8}} du corps. Grâce à ce traitement {{BLANK_9}}, sans effets secondaires, Arthur s'est vite reposé. En quelques jours, il était totalement {{BLANK_10}}. Il a retrouvé toute sa {{BLANK_11}} et son énergie. Cette petite alerte lui a servi de leçon. Désormais, il fait très attention à sa santé et prend des {{BLANK_12}} préventives comme le sport. Il a compris qu'une alimentation {{BLANK_13}} et équilibrée est la clé d'une longue vie.",
+      "blanks": [
+        { "id": 1, "answer": "fièvre", "options": ["fièvre", "soif", "faim", "joie"], "correctIndex": 0 },
+        { "id": 2, "answer": "infirmière", "options": ["infirmière", "boulangère", "vendeuse", "chauffeuse"], "correctIndex": 0 },
+        { "id": 3, "answer": "mesurer", "options": ["mesurer", "dessiner", "chanter", "danser"], "correctIndex": 0 },
+        { "id": 4, "answer": "maladie", "options": ["maladie", "récompense", "médaille", "fête"], "correctIndex": 0 },
+        { "id": 5, "answer": "grave", "options": ["grave", "drôle", "amusant", "comique"], "correctIndex": 0 },
+        { "id": 6, "answer": "médicament", "options": ["médicament", "gâteau", "vêtement", "livre"], "correctIndex": 0 },
+        { "id": 7, "answer": "mental", "options": ["mental", "financier", "immobilier", "automobile"], "correctIndex": 0 },
+        { "id": 8, "answer": "membre", "options": ["membre", "moteur", "pneu", "volant"], "correctIndex": 0 },
+        { "id": 9, "answer": "léger", "options": ["léger", "lourd", "géant", "massif"], "correctIndex": 0 },
+        { "id": 10, "answer": "guéri", "options": ["guéri", "perdu", "volé", "cassé"], "correctIndex": 0 },
+        { "id": 11, "answer": "mémoire", "options": ["mémoire", "voiture", "maison", "bicyclette"], "correctIndex": 0 },
+        { "id": 12, "answer": "mesures", "options": ["mesures", "chansons", "poésies", "blagues"], "correctIndex": 0 },
+        { "id": 13, "answer": "légère", "options": ["légère", "lourde", "massive", "géante"], "correctIndex": 0 }
+      ]
+    },
+    "literary": {
+      "title": "Garde de nuit à l'hôpital",
+      "title_fa": "شیفت شب در بیمارستان",
+      "inspiration": "Hippocrate (film de Thomas Lilti) - Réalisme médical",
+      "text": "Benjamin effectuait son premier stage dans le service de cardiologie de l'hôpital public. Cette nuit-là, un patient âgé a été admis en urgence avec une {{BLANK_1}} inquiétante qui ne baissait pas. Une {{BLANK_2}} expérimentée de l'équipe de nuit a immédiatement commencé à {{BLANK_3}} ses constantes vitales avec précision. Après des analyses approfondies, le chef de service a diagnostiqué une {{BLANK_4}} neurologique rare et complexe. L'état du patient était particulièrement {{BLANK_5}}, nécessitant une surveillance de chaque instant. Benjamin a dû lui administrer un {{BLANK_6}} puissant par voie intraveineuse pour stabiliser son cœur. Il s'est aussi penché sur son état {{BLANK_7}}, car le vieil homme semblait profondément déprimé par son isolement. Le jeune interne a noté une perte de sensibilité dans le {{BLANK_8}} supérieur gauche du patient. En discutant avec lui, Benjamin a réalisé que sa {{BLANK_11}} (wait, 9 is mémoire) -> que sa {{BLANK_9}} récente commençait à défaillir à cause du choc. Heureusement, ce symptôme cognitive était {{BLANK_10}} et probablement réversible avec le temps. Au bout de trois jours de soins intensifs, le patient était enfin {{BLANK_11}} et pouvait sortir. Cette expérience a marqué Benjamin à jamais. Il a compris que la médecine moderne, malgré ses traitements parfois {{BLANK_12}} et agressifs, devait toujours préserver l'humanité. Prendre les bonnes {{BLANK_13}} éthiques face à la souffrance était devenu sa véritable vocation.",
+      "blanks": [
+        { "id": 1, "answer": "fièvre", "options": ["fièvre", "soif", "faim", "joie"], "correctIndex": 0 },
+        { "id": 2, "answer": "infirmière", "options": ["infirmière", "boulangère", "vendeuse", "chauffeuse"], "correctIndex": 0 },
+        { "id": 3, "answer": "mesurer", "options": ["mesurer", "dessiner", "chanter", "danser"], "correctIndex": 0 },
+        { "id": 4, "answer": "maladie", "options": ["maladie", "récompense", "médaille", "fête"], "correctIndex": 0 },
+        { "id": 5, "answer": "grave", "options": ["grave", "drôle", "amusant", "comique"], "correctIndex": 0 },
+        { "id": 6, "answer": "médicament", "options": ["médicament", "gâteau", "vêtement", "livre"], "correctIndex": 0 },
+        { "id": 7, "answer": "mental", "options": ["mental", "financier", "immobilier", "automobile"], "correctIndex": 0 },
+        { "id": 8, "answer": "membre", "options": ["membre", "moteur", "pneu", "volant"], "correctIndex": 0 },
+        { "id": 9, "answer": "mémoire", "options": ["mémoire", "voiture", "maison", "bicyclette"], "correctIndex": 0 },
+        { "id": 10, "answer": "léger", "options": ["léger", "lourd", "géant", "massif"], "correctIndex": 0 },
+        { "id": 11, "answer": "guéri", "options": ["guéri", "perdu", "volé", "cassé"], "correctIndex": 0 },
+        { "id": 12, "answer": "lourds", "options": ["lourds", "légers", "doux", "faibles"], "correctIndex": 0 },
+        { "id": 13, "answer": "mesures", "options": ["mesures", "chansons", "poésies", "blagues"], "correctIndex": 0 }
+      ]
+    }
+  },
+
+  "quiz": {
+    "title": "Quiz : Santé et Hôpital",
+    "title_fa": "آزمون: سلامت و بیمارستان",
+    "displayCount": 10,
+    "questions": [
+      { "type": "mcq", "question": "Le thermomètre indique que l'enfant a 39 degrés de ____.", "options": ["fièvre", "soif", "faim", "joie"], "correctIndex": 0, "explanation_fa": "fièvre = تب." },
+      { "type": "mcq", "question": "Après deux semaines de traitement, la patiente est enfin ____.", "options": ["guérie", "perdue", "volée", "cassée"], "correctIndex": 0, "explanation_fa": "guéri = شفا یافته." },
+      { "type": "binary", "question": "Une \"infirmière\" est une professionnelle de santé qui soigne les patients.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، infirmière به معنای پرستار است." },
+      { "type": "mcq", "question": "Le pharmacien m'a donné ce ____ pour soigner mon mal de tête.", "options": ["médicament", "gâteau", "vêtement", "livre"], "correctIndex": 0, "explanation_fa": "médicament = دارو." },
+      { "type": "mcq", "question": "Le diabète est une ____ chronique qui nécessite de l'insuline.", "options": ["maladie", "récompense", "médaille", "fête"], "correctIndex": 0, "explanation_fa": "maladie = بیماری." },
+      { "type": "mcq", "question": "Le psychologue s'occupe de la santé ____ de ses patients.", "options": ["mentale", "financière", "immobilière", "automobile"], "correctIndex": 0, "explanation_fa": "santé mentale = سلامت روان." },
+      { "type": "binary", "question": "Le verbe \"mesurer\" signifie \"déterminer la dimension ou la quantité de quelque chose\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، mesurer یعنی اندازه گرفتن." },
+      { "type": "mcq", "question": "Après l'accident, il a perdu l'usage de son ____ inférieur droit.", "options": ["membre", "moteur", "pneu", "volant"], "correctIndex": 0, "explanation_fa": "membre = عضو بدن (دست یا پا)." },
+      { "type": "mcq", "question": "Avec l'âge, la ____ commence souvent à faire défaut.", "options": ["mémoire", "voiture", "maison", "bicyclette"], "correctIndex": 0, "explanation_fa": "mémoire = حافظه." },
+      { "type": "mcq", "question": "Ce n'est qu'une ____ égratignure, il faut juste mettre un pansement.", "options": ["légère", "lourde", "massive", "géante"], "correctIndex": 0, "explanation_fa": "léger = خفیف و سطحی." },
+      { "type": "mcq", "question": "L'accident de la route a été très ____, plusieurs personnes sont à l'hôpital.", "options": ["grave", "drôle", "amusant", "comique"], "correctIndex": 0, "explanation_fa": "grave = جدی و وخیم." },
+      { "type": "mcq", "question": "La chimiothérapie est un traitement ____ qui fatigue beaucoup le corps.", "options": ["lourd", "léger", "doux", "faible"], "correctIndex": 0, "explanation_fa": "lourd (traitement) = سنگین و پرعوارض." },
+      { "type": "binary", "question": "Le mot \"mesure\" peut signifier \"une action prise pour résoudre un problème\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، prendre des mesures یعنی تدابیری اتخاذ کردن." }
+    ]
+  }
+}
