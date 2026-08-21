@@ -5,47 +5,301 @@
   "theme_fa": "سفر، گمرک و ماجراجویی",
   "icon": "✈️",
   "inspiration": "Into the Wild (film de Sean Penn)",
-
   "words": [
-    { "fr": "la douane", "fa": "گمرک", "emoji": "🛂", "difficulty": 4, "ex": "Il faut passer la douane avant d'entrer dans le pays.", "ex_fa": "قبل از ورود به کشور باید از گمرک عبور کرد." },
-    { "fr": "l'expédition", "fa": "سفر اکتشافی / فرستادن مرسوله", "emoji": "🏔️", "difficulty": 4, "ex": "L'expédition en Alaska durera trois mois.", "ex_fa": "سفر اکتشافی به آلاسکا سه ماه طول خواهد کشید." },
-    { "fr": "l'excursion", "fa": "گشت و گذار / گردش یک‌روزه", "emoji": "🎒", "difficulty": 3, "ex": "Nous avons fait une excursion en montagne hier.", "ex_fa": "دیروز یک گشت یک‌روزه به کوهستان داشتیم." },
-    { "fr": "l'environnement", "fa": "محیط زیست / محیط پیرامون", "emoji": "🌿", "difficulty": 3, "ex": "Il faut protéger l'environnement pour les générations futures.", "ex_fa": "باید محیط زیست را برای نسل‌های آینده حفظ کنیم." },
-    { "fr": "environ", "fa": "حدود / تقریباً", "emoji": "🔢", "difficulty": 2, "ex": "Le voyage dure environ six heures en train.", "ex_fa": "سفر با قطار حدود شش ساعت طول می‌کشد." },
-    { "fr": "le désert", "fa": "بیابان / کویر", "emoji": "🏜️", "difficulty": 3, "ex": "Traverser le désert à pied est très dangereux.", "ex_fa": "پیاده از بیابان عبور کردن بسیار خطرناک است." },
-    { "fr": "étranger / étrangère", "fa": "خارجی / غریبه", "emoji": "🌍", "difficulty": 3, "ex": "Il se sent comme un étranger dans ce pays.", "ex_fa": "او در این کشور احساس غریبگی می‌کند." },
-    { "fr": "échapper (à)", "fa": "فرار کردن / از دست رفتن", "emoji": "🏃", "difficulty": 4, "ex": "Le voleur a réussi à échapper à la police.", "ex_fa": "دزد موفق شد از دست پلیس فرار کند." },
-    { "fr": "l'emballage", "fa": "بسته‌بندی", "emoji": "📦", "difficulty": 4, "ex": "L'emballage de ce produit est entièrement recyclable.", "ex_fa": "بسته‌بندی این محصول کاملاً قابل بازیافت است." },
-    { "fr": "l'écran", "fa": "صفحه نمایش", "emoji": "🖥️", "difficulty": 2, "ex": "Il regarde un film sur l'écran de l'avion.", "ex_fa": "او یک فیلم روی صفحه نمایش هواپیما تماشا می‌کند." },
-    { "fr": "directement", "fa": "مستقیماً / بدون توقف", "emoji": "➡️", "difficulty": 2, "ex": "Ce vol va directement à Tokyo sans escale.", "ex_fa": "این پرواز مستقیماً و بدون توقف به توکیو می‌رود." },
-    { "fr": "l'événement", "fa": "رویداد / اتفاق", "emoji": "📅", "difficulty": 3, "ex": "Cet événement imprévu a bouleversé nos plans.", "ex_fa": "این رویداد غیرمنتظره برنامه‌های ما را به هم ریخت." },
-    { "fr": "l'existence", "fa": "وجود / زندگی", "emoji": "🌱", "difficulty": 4, "ex": "Il cherche le sens de son existence en voyageant.", "ex_fa": "او با سفر کردن به دنبال معنای زندگی‌اش می‌گردد." },
-    { "fr": "facilement", "fa": "به راحتی / آسان", "emoji": "✅", "difficulty": 2, "ex": "On s'adapte facilement à ce climat tropical.", "ex_fa": "آدم به راحتی به این آب و هوای استوایی عادت می‌کند." },
-    { "fr": "la façon", "fa": "روش / طریق", "emoji": "🛠️", "difficulty": 3, "ex": "La façon de saluer varie selon les cultures.", "ex_fa": "روش سلام کردن بسته به فرهنگ‌ها متفاوت است." }
+    {
+      "fr": "la douane",
+      "fa": "گمرک",
+      "emoji": "🛂",
+      "difficulty": 4,
+      "ex": "Il faut passer la douane avant d'entrer dans le pays.",
+      "ex_fa": "قبل از ورود به کشور باید از گمرک عبور کرد."
+    },
+    {
+      "fr": "l'expédition",
+      "fa": "سفر اکتشافی / فرستادن مرسوله",
+      "emoji": "🏔️",
+      "difficulty": 4,
+      "ex": "L'expédition en Alaska durera trois mois.",
+      "ex_fa": "سفر اکتشافی به آلاسکا سه ماه طول خواهد کشید."
+    },
+    {
+      "fr": "l'excursion",
+      "fa": "گشت و گذار / گردش یک‌روزه",
+      "emoji": "🎒",
+      "difficulty": 3,
+      "ex": "Nous avons fait une excursion en montagne hier.",
+      "ex_fa": "دیروز یک گشت یک‌روزه به کوهستان داشتیم."
+    },
+    {
+      "fr": "l'environnement",
+      "fa": "محیط زیست / محیط پیرامون",
+      "emoji": "🌿",
+      "difficulty": 3,
+      "ex": "Il faut protéger l'environnement pour les générations futures.",
+      "ex_fa": "باید محیط زیست را برای نسل‌های آینده حفظ کنیم."
+    },
+    {
+      "fr": "environ",
+      "fa": "حدود / تقریباً",
+      "emoji": "🔢",
+      "difficulty": 2,
+      "ex": "Le voyage dure environ six heures en train.",
+      "ex_fa": "سفر با قطار حدود شش ساعت طول می‌کشد."
+    },
+    {
+      "fr": "le désert",
+      "fa": "بیابان / کویر",
+      "emoji": "🏜️",
+      "difficulty": 3,
+      "ex": "Traverser le désert à pied est très dangereux.",
+      "ex_fa": "پیاده از بیابان عبور کردن بسیار خطرناک است."
+    },
+    {
+      "fr": "étranger / étrangère",
+      "fa": "خارجی / غریبه",
+      "emoji": "🌍",
+      "difficulty": 3,
+      "ex": "Il se sent comme un étranger dans ce pays.",
+      "ex_fa": "او در این کشور احساس غریبگی می‌کند."
+    },
+    {
+      "fr": "échapper (à)",
+      "fa": "فرار کردن / از دست رفتن",
+      "emoji": "🏃",
+      "difficulty": 4,
+      "ex": "Le voleur a réussi à échapper à la police.",
+      "ex_fa": "دزد موفق شد از دست پلیس فرار کند."
+    },
+    {
+      "fr": "l'emballage",
+      "fa": "بسته‌بندی",
+      "emoji": "📦",
+      "difficulty": 4,
+      "ex": "L'emballage de ce produit est entièrement recyclable.",
+      "ex_fa": "بسته‌بندی این محصول کاملاً قابل بازیافت است."
+    },
+    {
+      "fr": "l'écran",
+      "fa": "صفحه نمایش",
+      "emoji": "🖥️",
+      "difficulty": 2,
+      "ex": "Il regarde un film sur l'écran de l'avion.",
+      "ex_fa": "او یک فیلم روی صفحه نمایش هواپیما تماشا می‌کند."
+    },
+    {
+      "fr": "directement",
+      "fa": "مستقیماً / بدون توقف",
+      "emoji": "➡️",
+      "difficulty": 2,
+      "ex": "Ce vol va directement à Tokyo sans escale.",
+      "ex_fa": "این پرواز مستقیماً و بدون توقف به توکیو می‌رود."
+    },
+    {
+      "fr": "l'événement",
+      "fa": "رویداد / اتفاق",
+      "emoji": "📅",
+      "difficulty": 3,
+      "ex": "Cet événement imprévu a bouleversé nos plans.",
+      "ex_fa": "این رویداد غیرمنتظره برنامه‌های ما را به هم ریخت."
+    },
+    {
+      "fr": "l'existence",
+      "fa": "وجود / زندگی",
+      "emoji": "🌱",
+      "difficulty": 4,
+      "ex": "Il cherche le sens de son existence en voyageant.",
+      "ex_fa": "او با سفر کردن به دنبال معنای زندگی‌اش می‌گردد."
+    },
+    {
+      "fr": "facilement",
+      "fa": "به راحتی / آسان",
+      "emoji": "✅",
+      "difficulty": 2,
+      "ex": "On s'adapte facilement à ce climat tropical.",
+      "ex_fa": "آدم به راحتی به این آب و هوای استوایی عادت می‌کند."
+    },
+    {
+      "fr": "la façon",
+      "fa": "روش / طریق",
+      "emoji": "🛠️",
+      "difficulty": 3,
+      "ex": "La façon de saluer varie selon les cultures.",
+      "ex_fa": "روش سلام کردن بسته به فرهنگ‌ها متفاوت است."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "Le départ vers l'inconnu",
       "title_fa": "عزیمت به سوی ناشناخته‌ها",
       "text": "Christopher a décidé de tout quitter pour partir à l'aventure. À l'aéroport, il a passé la {{BLANK_1}} sans problème avec son passeport américain. Son {{BLANK_2}} vers l'Alaska sauvage allait durer plusieurs mois. Avant de partir, il a fait une petite {{BLANK_3}} dans les montagnes Rocheuses. Il est très sensible à la protection de l'{{BLANK_4}} naturel. Le voyage en bus a duré {{BLANK_5}} quatre jours depuis Atlanta. Il rêve de traverser le grand {{BLANK_6}} du Nevada à pied. Dans ce territoire immense, il se sent comme un {{BLANK_7}} loin de la civilisation. Il veut {{BLANK_8}} à la société de consommation moderne. Il a laissé son {{BLANK_9}} minimaliste dans un vieux sac à dos. Sur l'{{BLANK_10}} de son ordinateur portable, il regarde une dernière fois des photos de sa famille. Il a pris un vol {{BLANK_11}} pour Anchorage sans escale. Cet {{BLANK_12}} marquera un tournant dans sa vie. Il cherche un nouveau sens à son {{BLANK_13}} en s'isolant du monde. Il s'adapte {{BLANK_14}} aux conditions extrêmes de la nature. La {{BLANK_15}} dont il aborde chaque défi montre son courage exceptionnel.",
       "blanks": [
-        { "id": 1, "answer": "douane", "options": ["douane", "cafétéria", "librairie", "pharmacie"], "correctIndex": 0 },
-        { "id": 2, "answer": "expédition", "options": ["expédition", "récréation", "vacance scolaire", "sieste"], "correctIndex": 0 },
-        { "id": 3, "answer": "excursion", "options": ["excursion", "expédition polaire", "migration", "exil"], "correctIndex": 0 },
-        { "id": 4, "answer": "environnement", "options": ["environnement", "ordinateur", "téléphone", "télévision"], "correctIndex": 0 },
-        { "id": 5, "answer": "environ", "options": ["environ", "exactement", "précisément", "absolument"], "correctIndex": 0 },
-        { "id": 6, "answer": "désert", "options": ["désert", "océan", "forêt", "jungle"], "correctIndex": 0 },
-        { "id": 7, "answer": "étranger", "options": ["étranger", "habitant", "natif", "résident"], "correctIndex": 0 },
-        { "id": 8, "answer": "échapper", "options": ["échapper", "appartenir", "adhérer", "participer"], "correctIndex": 0 },
-        { "id": 9, "answer": "emballage", "options": ["emballage", "véhicule", "moteur", "carburant"], "correctIndex": 0 },
-        { "id": 10, "answer": "écran", "options": ["écran", "clavier", "souris", "imprimante"], "correctIndex": 0 },
-        { "id": 11, "answer": "directement", "options": ["directement", "indirectement", "lentement", "tardivement"], "correctIndex": 0 },
-        { "id": 12, "answer": "événement", "options": ["événement", "routine", "habitude", "banalité"], "correctIndex": 0 },
-        { "id": 13, "answer": "existence", "options": ["existence", "disparition", "mort", "absence"], "correctIndex": 0 },
-        { "id": 14, "answer": "facilement", "options": ["facilement", "difficilement", "péniblement", "laborieusement"], "correctIndex": 0 },
-        { "id": 15, "answer": "façon", "options": ["façon", "machine", "voiture", "bicyclette"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "douane",
+          "options": [
+            "douane",
+            "cafétéria",
+            "librairie",
+            "pharmacie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "expédition",
+          "options": [
+            "expédition",
+            "récréation",
+            "vacance scolaire",
+            "sieste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "excursion",
+          "options": [
+            "excursion",
+            "expédition polaire",
+            "migration",
+            "exil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "environnement",
+          "options": [
+            "environnement",
+            "ordinateur",
+            "téléphone",
+            "télévision"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "environ",
+          "options": [
+            "environ",
+            "exactement",
+            "précisément",
+            "absolument"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "désert",
+          "options": [
+            "désert",
+            "océan",
+            "forêt",
+            "jungle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "étranger",
+          "options": [
+            "étranger",
+            "habitant",
+            "natif",
+            "résident"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "échapper",
+          "options": [
+            "échapper",
+            "appartenir",
+            "adhérer",
+            "participer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "emballage",
+          "options": [
+            "emballage",
+            "véhicule",
+            "moteur",
+            "carburant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "écran",
+          "options": [
+            "écran",
+            "clavier",
+            "souris",
+            "imprimante"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "directement",
+          "options": [
+            "directement",
+            "indirectement",
+            "lentement",
+            "tardivement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "événement",
+          "options": [
+            "événement",
+            "routine",
+            "habitude",
+            "banalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "existence",
+          "options": [
+            "existence",
+            "disparition",
+            "mort",
+            "absence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "facilement",
+          "options": [
+            "facilement",
+            "difficilement",
+            "péniblement",
+            "laborieusement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "façon",
+          "options": [
+            "façon",
+            "machine",
+            "voiture",
+            "bicyclette"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Christopher a décidé de tout quitter pour partir à l'aventure. À l'aéroport, il a passé la ___ sans problème avec son passeport américain. Son ___ vers l'Alaska sauvage allait durer plusieurs mois. Avant de partir, il a fait une petite ___ dans les montagnes Rocheuses. Il est très sensible à la protection de l'___ naturel. Le voyage en bus a duré ___ quatre jours depuis Atlanta. Il rêve de traverser le grand ___ du Nevada à pied. Dans ce territoire immense, il se sent comme un ___ loin de la civilisation. Il veut ___ à la société de consommation moderne. Il a laissé son ___ minimaliste dans un vieux sac à dos. Sur l'___ de son ordinateur portable, il regarde une dernière fois des photos de sa famille. Il a pris un vol ___ pour Anchorage sans escale. Cet ___ marquera un tournant dans sa vie. Il cherche un nouveau sens à son ___ en s'isolant du monde. Il s'adapte ___ aux conditions extrêmes de la nature. La ___ dont il aborde chaque défi montre son courage exceptionnel."
     },
     "literary": {
       "title": "La route vers l'Alaska",
@@ -53,45 +307,354 @@
       "inspiration": "Into the Wild (film de Sean Penn avec Emile Hirsch)",
       "text": "Christopher McCandless avait brûlé tout son argent avant de prendre la route. À la frontière canadienne, il a passé la {{BLANK_1}} avec son seul passeport et un sourire déterminé. Sa grande {{BLANK_2}} vers les terres vierges de l'Alaska allait durer près de deux ans. Avant de s'enfoncer dans le Grand Nord, il a fait une courte {{BLANK_3}} dans le parc national du Yellowstone. Il était profondément attaché à la préservation de l'{{BLANK_4}} sauvage américain. Le voyage en auto-stop avait déjà duré {{BLANK_5}} six mois depuis la Géorgie. Il rêvait de traverser seul le vaste {{BLANK_6}} du Mojave pour tester ses limites. Dans ces étendues immenses, il se sentait comme un {{BLANK_7}} volontaire au milieu de nulle part. Son but ultime était d'{{BLANK_8}} définitivement aux chaînes de la société matérialiste. Il avait jeté tout son {{BLANK_9}} superflu dans une poubelle au bord de la route. Sur l'{{BLANK_10}} de son appareil photo, il contemplait une dernière fois les visages de ses parents. Il avait pris un bus {{BLANK_11}} pour Fairbanks, sans aucun arrêt intermédiaire. Cet {{BLANK_12}} radical allait marquer le début de sa légende. Il cherchait désespérément la vérité de son {{BLANK_13}} dans la solitude absolue des bois. Il s'adaptait étonnamment {{BLANK_14}} aux conditions les plus rudes de la nature sauvage. La {{BLANK_15}} dont il affrontait chaque tempête de neige révélait une âme d'une pureté rare.",
       "blanks": [
-        { "id": 1, "answer": "douane", "options": ["douane", "boulangerie", "boucherie", "librairie"], "correctIndex": 0 },
-        { "id": 2, "answer": "expédition", "options": ["expédition", "promenade", "sieste", "récréation"], "correctIndex": 0 },
-        { "id": 3, "answer": "excursion", "options": ["excursion", "migration", "exil", "fuite"], "correctIndex": 0 },
-        { "id": 4, "answer": "environnement", "options": ["environnement", "ordinateur", "imprimante", "téléphone"], "correctIndex": 0 },
-        { "id": 5, "answer": "environ", "options": ["environ", "exactement", "précisément", "strictement"], "correctIndex": 0 },
-        { "id": 6, "answer": "désert", "options": ["désert", "océan", "fleuve", "rivière"], "correctIndex": 0 },
-        { "id": 7, "answer": "étranger", "options": ["étranger", "citoyen", "habitant", "natif"], "correctIndex": 0 },
-        { "id": 8, "answer": "échapper", "options": ["échapper", "appartenir", "adhérer", "obéir"], "correctIndex": 0 },
-        { "id": 9, "answer": "emballage", "options": ["emballage", "véhicule", "moteur", "pneu"], "correctIndex": 0 },
-        { "id": 10, "answer": "écran", "options": ["écran", "objectif", "bouton", "flash"], "correctIndex": 0 },
-        { "id": 11, "answer": "directement", "options": ["directement", "indirectement", "lentement", "tardivement"], "correctIndex": 0 },
-        { "id": 12, "answer": "événement", "options": ["événement", "routine", "habitude", "quotidien"], "correctIndex": 0 },
-        { "id": 13, "answer": "existence", "options": ["existence", "disparition", "mort", "néant"], "correctIndex": 0 },
-        { "id": 14, "answer": "facilement", "options": ["facilement", "difficilement", "péniblement", "durement"], "correctIndex": 0 },
-        { "id": 15, "answer": "façon", "options": ["façon", "machine", "voiture", "mobylette"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "douane",
+          "options": [
+            "douane",
+            "boulangerie",
+            "boucherie",
+            "librairie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "expédition",
+          "options": [
+            "expédition",
+            "promenade",
+            "sieste",
+            "récréation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "excursion",
+          "options": [
+            "excursion",
+            "migration",
+            "exil",
+            "fuite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "environnement",
+          "options": [
+            "environnement",
+            "ordinateur",
+            "imprimante",
+            "téléphone"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "environ",
+          "options": [
+            "environ",
+            "exactement",
+            "précisément",
+            "strictement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "désert",
+          "options": [
+            "désert",
+            "océan",
+            "fleuve",
+            "rivière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "étranger",
+          "options": [
+            "étranger",
+            "citoyen",
+            "habitant",
+            "natif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "échapper",
+          "options": [
+            "échapper",
+            "appartenir",
+            "adhérer",
+            "obéir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "emballage",
+          "options": [
+            "emballage",
+            "véhicule",
+            "moteur",
+            "pneu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "écran",
+          "options": [
+            "écran",
+            "objectif",
+            "bouton",
+            "flash"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "directement",
+          "options": [
+            "directement",
+            "indirectement",
+            "lentement",
+            "tardivement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "événement",
+          "options": [
+            "événement",
+            "routine",
+            "habitude",
+            "quotidien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "existence",
+          "options": [
+            "existence",
+            "disparition",
+            "mort",
+            "néant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "facilement",
+          "options": [
+            "facilement",
+            "difficilement",
+            "péniblement",
+            "durement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "façon",
+          "options": [
+            "façon",
+            "machine",
+            "voiture",
+            "mobylette"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Christopher McCandless avait brûlé tout son argent avant de prendre la route. À la frontière canadienne, il a passé la ___ avec son seul passeport et un sourire déterminé. Sa grande ___ vers les terres vierges de l'Alaska allait durer près de deux ans. Avant de s'enfoncer dans le Grand Nord, il a fait une courte ___ dans le parc national du Yellowstone. Il était profondément attaché à la préservation de l'___ sauvage américain. Le voyage en auto-stop avait déjà duré ___ six mois depuis la Géorgie. Il rêvait de traverser seul le vaste ___ du Mojave pour tester ses limites. Dans ces étendues immenses, il se sentait comme un ___ volontaire au milieu de nulle part. Son but ultime était d'___ définitivement aux chaînes de la société matérialiste. Il avait jeté tout son ___ superflu dans une poubelle au bord de la route. Sur l'___ de son appareil photo, il contemplait une dernière fois les visages de ses parents. Il avait pris un bus ___ pour Fairbanks, sans aucun arrêt intermédiaire. Cet ___ radical allait marquer le début de sa légende. Il cherchait désespérément la vérité de son ___ dans la solitude absolue des bois. Il s'adaptait étonnamment ___ aux conditions les plus rudes de la nature sauvage. La ___ dont il affrontait chaque tempête de neige révélait une âme d'une pureté rare."
     }
   },
-
   "quiz": {
     "title": "Quiz : Voyage et Aventure",
     "title_fa": "آزمون: سفر و ماجراجویی",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "À l'aéroport, il faut montrer son passeport à la ____.", "options": ["douane", "boulangerie", "librairie", "pharmacie"], "correctIndex": 0, "explanation_fa": "douane = گمرک." },
-      { "type": "mcq", "question": "L'____ scientifique en Antarctique a duré huit mois.", "options": ["expédition", "récréation", "sieste", "promenade"], "correctIndex": 0, "explanation_fa": "expédition = سفر اکتشافی یا علمی." },
-      { "type": "binary", "question": "Une \"excursion\" est généralement une sortie courte d'une journée.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، excursion معمولاً یک گردش کوتاه و یک‌روزه است." },
-      { "type": "mcq", "question": "Il faut protéger l'____ en recyclant nos déchets.", "options": ["environnement", "ordinateur", "téléphone", "télévision"], "correctIndex": 0, "explanation_fa": "environnement = محیط زیست." },
-      { "type": "mcq", "question": "Le film dure ____ deux heures, sans les publicités.", "options": ["environ", "exactement", "précisément", "strictement"], "correctIndex": 0, "explanation_fa": "environ = حدود و تقریباً." },
-      { "type": "mcq", "question": "Les chameaux peuvent survivre longtemps sans eau dans le ____.", "options": ["désert", "océan", "forêt", "jungle"], "correctIndex": 0, "explanation_fa": "désert = بیابان و کویر." },
-      { "type": "mcq", "question": "Quand on voyage seul, on se sent parfois comme un ____ au milieu des autres.", "options": ["étranger", "habitant", "natif", "résident"], "correctIndex": 0, "explanation_fa": "étranger = خارجی و غریبه." },
-      { "type": "binary", "question": "Le verbe \"échapper\" peut signifier \"se libérer de quelque chose\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، échapper می‌تواند به معنای فرار کردن و رها شدن باشد." },
-      { "type": "mcq", "question": "L'____ de ce produit alimentaire est entièrement biodégradable.", "options": ["emballage", "véhicule", "moteur", "carburant"], "correctIndex": 0, "explanation_fa": "emballage = بسته‌بندی." },
-      { "type": "mcq", "question": "Les passagers regardent un film sur l'____ pendant le vol.", "options": ["écran", "clavier", "souris", "imprimante"], "correctIndex": 0, "explanation_fa": "écran = صفحه نمایش." },
-      { "type": "mcq", "question": "Ce train va ____ de Paris à Marseille sans aucun arrêt.", "options": ["directement", "indirectement", "lentement", "tardivement"], "correctIndex": 0, "explanation_fa": "directement = مستقیماً و بدون توقف." },
-      { "type": "mcq", "question": "La finale de la Coupe du Monde était l'____ sportif de l'année.", "options": ["événement", "routine", "habitude", "banalité"], "correctIndex": 0, "explanation_fa": "événement = رویداد و اتفاق." },
-      { "type": "binary", "question": "Le mot \"existence\" peut désigner la vie ou le fait d'exister.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، existence به معنای وجود و زندگی است." },
-      { "type": "mcq", "question": "Avec ce logiciel, on peut ____ créer des graphiques en quelques clics.", "options": ["facilement", "difficilement", "péniblement", "laborieusement"], "correctIndex": 0, "explanation_fa": "facilement = به راحتی و آسانی." },
-      { "type": "mcq", "question": "Il a une ____ très particulière de résoudre les problèmes mathématiques.", "options": ["façon", "machine", "voiture", "bicyclette"], "correctIndex": 0, "explanation_fa": "façon = روش و طریق." }
+      {
+        "type": "mcq",
+        "question": "À l'aéroport, il faut montrer son passeport à la ____.",
+        "options": [
+          "douane",
+          "boulangerie",
+          "librairie",
+          "pharmacie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "douane = گمرک."
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ scientifique en Antarctique a duré huit mois.",
+        "options": [
+          "expédition",
+          "récréation",
+          "sieste",
+          "promenade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "expédition = سفر اکتشافی یا علمی."
+      },
+      {
+        "type": "binary",
+        "question": "Une \"excursion\" est généralement une sortie courte d'une journée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، excursion معمولاً یک گردش کوتاه و یک‌روزه است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il faut protéger l'____ en recyclant nos déchets.",
+        "options": [
+          "environnement",
+          "ordinateur",
+          "téléphone",
+          "télévision"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "environnement = محیط زیست."
+      },
+      {
+        "type": "mcq",
+        "question": "Le film dure ____ deux heures, sans les publicités.",
+        "options": [
+          "environ",
+          "exactement",
+          "précisément",
+          "strictement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "environ = حدود و تقریباً."
+      },
+      {
+        "type": "mcq",
+        "question": "Les chameaux peuvent survivre longtemps sans eau dans le ____.",
+        "options": [
+          "désert",
+          "océan",
+          "forêt",
+          "jungle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "désert = بیابان و کویر."
+      },
+      {
+        "type": "mcq",
+        "question": "Quand on voyage seul, on se sent parfois comme un ____ au milieu des autres.",
+        "options": [
+          "étranger",
+          "habitant",
+          "natif",
+          "résident"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "étranger = خارجی و غریبه."
+      },
+      {
+        "type": "binary",
+        "question": "Le verbe \"échapper\" peut signifier \"se libérer de quelque chose\".",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، échapper می‌تواند به معنای فرار کردن و رها شدن باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ de ce produit alimentaire est entièrement biodégradable.",
+        "options": [
+          "emballage",
+          "véhicule",
+          "moteur",
+          "carburant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "emballage = بسته‌بندی."
+      },
+      {
+        "type": "mcq",
+        "question": "Les passagers regardent un film sur l'____ pendant le vol.",
+        "options": [
+          "écran",
+          "clavier",
+          "souris",
+          "imprimante"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "écran = صفحه نمایش."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce train va ____ de Paris à Marseille sans aucun arrêt.",
+        "options": [
+          "directement",
+          "indirectement",
+          "lentement",
+          "tardivement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "directement = مستقیماً و بدون توقف."
+      },
+      {
+        "type": "mcq",
+        "question": "La finale de la Coupe du Monde était l'____ sportif de l'année.",
+        "options": [
+          "événement",
+          "routine",
+          "habitude",
+          "banalité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "événement = رویداد و اتفاق."
+      },
+      {
+        "type": "binary",
+        "question": "Le mot \"existence\" peut désigner la vie ou le fait d'exister.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، existence به معنای وجود و زندگی است."
+      },
+      {
+        "type": "mcq",
+        "question": "Avec ce logiciel, on peut ____ créer des graphiques en quelques clics.",
+        "options": [
+          "facilement",
+          "difficilement",
+          "péniblement",
+          "laborieusement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "facilement = به راحتی و آسانی."
+      },
+      {
+        "type": "mcq",
+        "question": "Il a une ____ très particulière de résoudre les problèmes mathématiques.",
+        "options": [
+          "façon",
+          "machine",
+          "voiture",
+          "bicyclette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "façon = روش و طریق."
+      }
     ]
   }
 }
