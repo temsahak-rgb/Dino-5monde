@@ -5,47 +5,301 @@
   "theme_fa": "هنر، رسانه، شخصیت و شهرت",
   "icon": "🎭",
   "inspiration": "Birdman (film d'Alejandro González Iñárritu)",
-
   "words": [
-    { "fr": "le personnage", "fa": "شخصیت (داستانی یا نمایشی)", "emoji": "🦸", "difficulty": 3, "ex": "Il est prisonnier du personnage de super-héros qu'il a joué.", "ex_fa": "او اسیر شخصیت ابرقهرمانی‌ای است که بازی کرده است." },
-    { "fr": "le rôle", "fa": "نقش", "emoji": "🎬", "difficulty": 2, "ex": "Elle a obtenu le rôle principal dans cette pièce.", "ex_fa": "او نقش اصلی را در این نمایش به دست آورد." },
-    { "fr": "jouer", "fa": "بازی کردن (نقش)", "emoji": "🎭", "difficulty": 2, "ex": "Il va jouer sur Broadway pour la première fois.", "ex_fa": "او برای اولین بار در برودوی بازی خواهد کرد." },
-    { "fr": "l'acteur / l'actrice", "fa": "بازیگر", "emoji": "🎥", "difficulty": 2, "ex": "Cet acteur hollywoodien cherche la reconnaissance du théâtre.", "ex_fa": "این بازیگر هالیوودی به دنبال اعتبار تئاتر است." },
-    { "fr": "le théâtre", "fa": "تئاتر", "emoji": "🎟️", "difficulty": 2, "ex": "Le théâtre exige une présence physique intense.", "ex_fa": "تئاتر نیازمند حضور فیزیکی شدید است." },
-    { "fr": "le cinéma", "fa": "سینما", "emoji": "🍿", "difficulty": 2, "ex": "Le cinéma rapporte plus d'argent mais offre moins de liberté.", "ex_fa": "سینما پول بیشتری می‌آورد اما آزادی کمتری می‌دهد." },
-    { "fr": "la scène", "fa": "صحنه", "emoji": "🎤", "difficulty": 3, "ex": "Monter sur scène devant mille personnes est terrifiant.", "ex_fa": "رفتن روی صحنه جلوی هزار نفر وحشتناک است." },
-    { "fr": "le public", "fa": "مخاطب / تماشاگران", "emoji": "👏", "difficulty": 2, "ex": "Le public a applaudi pendant dix minutes.", "ex_fa": "مخاطبان ده دقیقه تشویق کردند." },
-    { "fr": "la critique", "fa": "نقد / منتقد", "emoji": "📝", "difficulty": 3, "ex": "La critique du New York Times peut détruire une carrière.", "ex_fa": "نقد نیویورک تایمز می‌تواند یک دوران کاری را نابود کند." },
-    { "fr": "le succès", "fa": "موفقیت", "emoji": "🏆", "difficulty": 2, "ex": "Le succès de son dernier film l'a rendu arrogant.", "ex_fa": "موفقیت آخرین فیلمش او را مغرور کرد." },
-    { "fr": "l'échec", "fa": "شکست", "emoji": "📉", "difficulty": 3, "ex": "Il a peur de l'échec public de sa pièce.", "ex_fa": "او از شکست عمومی نمایشش می‌ترسد." },
-    { "fr": "le talent", "fa": "استعداد", "emoji": "🌟", "difficulty": 2, "ex": "Son talent d'acteur est indéniable.", "ex_fa": "استعداد بازیگری او غیرقابل انکار است." },
-    { "fr": "le génie", "fa": "نبوغ", "emoji": "🧠", "difficulty": 4, "ex": "Le génie de cet artiste réside dans sa folie.", "ex_fa": "نبوغ این هنرمند در دیوانگی‌اش نهفته است." },
-    { "fr": "la gloire", "fa": "شهرت / جلال", "emoji": "👑", "difficulty": 3, "ex": "La gloire d'Hollywood est éphémère.", "ex_fa": "شهرت هالیوود زودگذر است." },
-    { "fr": "la réputation", "fa": "اعتبار / شهرت", "emoji": "📢", "difficulty": 3, "ex": "Il veut restaurer sa réputation d'artiste sérieux.", "ex_fa": "او می‌خواهد اعتبارش را به‌عنوان یک هنرمند جدی بازگرداند." }
+    {
+      "fr": "le personnage",
+      "fa": "شخصیت (داستانی یا نمایشی)",
+      "emoji": "🦸",
+      "difficulty": 3,
+      "ex": "Il est prisonnier du personnage de super-héros qu'il a joué.",
+      "ex_fa": "او اسیر شخصیت ابرقهرمانی‌ای است که بازی کرده است."
+    },
+    {
+      "fr": "le rôle",
+      "fa": "نقش",
+      "emoji": "🎬",
+      "difficulty": 2,
+      "ex": "Elle a obtenu le rôle principal dans cette pièce.",
+      "ex_fa": "او نقش اصلی را در این نمایش به دست آورد."
+    },
+    {
+      "fr": "jouer",
+      "fa": "بازی کردن (نقش)",
+      "emoji": "🎭",
+      "difficulty": 2,
+      "ex": "Il va jouer sur Broadway pour la première fois.",
+      "ex_fa": "او برای اولین بار در برودوی بازی خواهد کرد."
+    },
+    {
+      "fr": "l'acteur / l'actrice",
+      "fa": "بازیگر",
+      "emoji": "🎥",
+      "difficulty": 2,
+      "ex": "Cet acteur hollywoodien cherche la reconnaissance du théâtre.",
+      "ex_fa": "این بازیگر هالیوودی به دنبال اعتبار تئاتر است."
+    },
+    {
+      "fr": "le théâtre",
+      "fa": "تئاتر",
+      "emoji": "🎟️",
+      "difficulty": 2,
+      "ex": "Le théâtre exige une présence physique intense.",
+      "ex_fa": "تئاتر نیازمند حضور فیزیکی شدید است."
+    },
+    {
+      "fr": "le cinéma",
+      "fa": "سینما",
+      "emoji": "🍿",
+      "difficulty": 2,
+      "ex": "Le cinéma rapporte plus d'argent mais offre moins de liberté.",
+      "ex_fa": "سینما پول بیشتری می‌آورد اما آزادی کمتری می‌دهد."
+    },
+    {
+      "fr": "la scène",
+      "fa": "صحنه",
+      "emoji": "🎤",
+      "difficulty": 3,
+      "ex": "Monter sur scène devant mille personnes est terrifiant.",
+      "ex_fa": "رفتن روی صحنه جلوی هزار نفر وحشتناک است."
+    },
+    {
+      "fr": "le public",
+      "fa": "مخاطب / تماشاگران",
+      "emoji": "👏",
+      "difficulty": 2,
+      "ex": "Le public a applaudi pendant dix minutes.",
+      "ex_fa": "مخاطبان ده دقیقه تشویق کردند."
+    },
+    {
+      "fr": "la critique",
+      "fa": "نقد / منتقد",
+      "emoji": "📝",
+      "difficulty": 3,
+      "ex": "La critique du New York Times peut détruire une carrière.",
+      "ex_fa": "نقد نیویورک تایمز می‌تواند یک دوران کاری را نابود کند."
+    },
+    {
+      "fr": "le succès",
+      "fa": "موفقیت",
+      "emoji": "🏆",
+      "difficulty": 2,
+      "ex": "Le succès de son dernier film l'a rendu arrogant.",
+      "ex_fa": "موفقیت آخرین فیلمش او را مغرور کرد."
+    },
+    {
+      "fr": "l'échec",
+      "fa": "شکست",
+      "emoji": "📉",
+      "difficulty": 3,
+      "ex": "Il a peur de l'échec public de sa pièce.",
+      "ex_fa": "او از شکست عمومی نمایشش می‌ترسد."
+    },
+    {
+      "fr": "le talent",
+      "fa": "استعداد",
+      "emoji": "🌟",
+      "difficulty": 2,
+      "ex": "Son talent d'acteur est indéniable.",
+      "ex_fa": "استعداد بازیگری او غیرقابل انکار است."
+    },
+    {
+      "fr": "le génie",
+      "fa": "نبوغ",
+      "emoji": "🧠",
+      "difficulty": 4,
+      "ex": "Le génie de cet artiste réside dans sa folie.",
+      "ex_fa": "نبوغ این هنرمند در دیوانگی‌اش نهفته است."
+    },
+    {
+      "fr": "la gloire",
+      "fa": "شهرت / جلال",
+      "emoji": "👑",
+      "difficulty": 3,
+      "ex": "La gloire d'Hollywood est éphémère.",
+      "ex_fa": "شهرت هالیوود زودگذر است."
+    },
+    {
+      "fr": "la réputation",
+      "fa": "اعتبار / شهرت",
+      "emoji": "📢",
+      "difficulty": 3,
+      "ex": "Il veut restaurer sa réputation d'artiste sérieux.",
+      "ex_fa": "او می‌خواهد اعتبارش را به‌عنوان یک هنرمند جدی بازگرداند."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "Le retour de Riggan",
       "title_fa": "بازگشت ریگان",
       "text": "Riggan Thomson est un ancien {{BLANK_1}} hollywoodien célèbre. Il est connu pour avoir joué un {{BLANK_2}} de super-héros ailé nommé Birdman. Aujourd'hui, il veut prouver son {{BLANK_3}} dramatique. Il décide de monter une pièce au {{BLANK_4}} à Broadway. Il va {{BLANK_5}} le rôle principal et il est aussi le metteur en scène. Il a peur de l'{{BLANK_6}} devant les spectateurs new-yorkais. La {{BLANK_7}} du journal local est très sévère et menace de massacrer son travail. Riggan cherche le {{BLANK_8}} artistique, loin des blockbusters du {{BLANK_9}}. Il veut retrouver la {{BLANK_10}} qu'il a perdue avec ses films commerciaux. Quand il monte sur {{BLANK_11}} pour les répétitions, il sent le regard du {{BLANK_12}} imaginaire. Il espère que cette pièce sera un grand {{BLANK_13}} pour sa carrière. Il ne supportera pas un nouvel {{BLANK_14}} public. Sa {{BLANK_15}} d'artiste sérieux en dépend totalement.",
       "blanks": [
-        { "id": 1, "answer": "acteur", "options": ["acteur", "véhicule", "moteur", "pneu"], "correctIndex": 0 },
-        { "id": 2, "answer": "personnage", "options": ["personnage", "véhicule", "moteur", "pneu"], "correctIndex": 0 },
-        { "id": 3, "answer": "talent", "options": ["talent", "poids", "âge", "taille"], "correctIndex": 0 },
-        { "id": 4, "answer": "théâtre", "options": ["théâtre", "supermarché", "hôpital", "aéroport"], "correctIndex": 0 },
-        { "id": 5, "answer": "jouer", "options": ["jouer", "dormir", "manger", "boire"], "correctIndex": 0 },
-        { "id": 6, "answer": "échec", "options": ["échec", "succès", "réussite", "victoire"], "correctIndex": 0 },
-        { "id": 7, "answer": "critique", "options": ["critique", "recette", "chanson", "photo"], "correctIndex": 0 },
-        { "id": 8, "answer": "génie", "options": ["génie", "poids", "âge", "taille"], "correctIndex": 0 },
-        { "id": 9, "answer": "cinéma", "options": ["cinéma", "supermarché", "hôpital", "aéroport"], "correctIndex": 0 },
-        { "id": 10, "answer": "gloire", "options": ["gloire", "honte", "défaite", "ruine"], "correctIndex": 0 },
-        { "id": 11, "answer": "scène", "options": ["scène", "cuisine", "toilette", "garage"], "correctIndex": 0 },
-        { "id": 12, "answer": "public", "options": ["public", "mur", "plafond", "tapis"], "correctIndex": 0 },
-        { "id": 13, "answer": "succès", "options": ["succès", "échec", "défaite", "ruine"], "correctIndex": 0 },
-        { "id": 14, "answer": "échec", "options": ["échec", "succès", "réussite", "victoire"], "correctIndex": 0 },
-        { "id": 15, "answer": "réputation", "options": ["réputation", "recette", "chanson", "photo"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "acteur",
+          "options": [
+            "acteur",
+            "véhicule",
+            "moteur",
+            "pneu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "personnage",
+          "options": [
+            "personnage",
+            "véhicule",
+            "moteur",
+            "pneu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "talent",
+          "options": [
+            "talent",
+            "poids",
+            "âge",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "théâtre",
+          "options": [
+            "théâtre",
+            "supermarché",
+            "hôpital",
+            "aéroport"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "jouer",
+          "options": [
+            "jouer",
+            "dormir",
+            "manger",
+            "boire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "échec",
+          "options": [
+            "échec",
+            "succès",
+            "réussite",
+            "victoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "critique",
+          "options": [
+            "critique",
+            "recette",
+            "chanson",
+            "photo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "génie",
+          "options": [
+            "génie",
+            "poids",
+            "âge",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cinéma",
+          "options": [
+            "cinéma",
+            "supermarché",
+            "hôpital",
+            "aéroport"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "gloire",
+          "options": [
+            "gloire",
+            "honte",
+            "défaite",
+            "ruine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "scène",
+          "options": [
+            "scène",
+            "cuisine",
+            "toilette",
+            "garage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "public",
+          "options": [
+            "public",
+            "mur",
+            "plafond",
+            "tapis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "succès",
+          "options": [
+            "succès",
+            "échec",
+            "défaite",
+            "ruine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "échec",
+          "options": [
+            "échec",
+            "succès",
+            "réussite",
+            "victoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "réputation",
+          "options": [
+            "réputation",
+            "recette",
+            "chanson",
+            "photo"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Riggan Thomson est un ancien ___ hollywoodien célèbre. Il est connu pour avoir joué un ___ de super-héros ailé nommé Birdman. Aujourd'hui, il veut prouver son ___ dramatique. Il décide de monter une pièce au ___ à Broadway. Il va ___ le rôle principal et il est aussi le metteur en scène. Il a peur de l'___ devant les spectateurs new-yorkais. La ___ du journal local est très sévère et menace de massacrer son travail. Riggan cherche le ___ artistique, loin des blockbusters du ___. Il veut retrouver la ___ qu'il a perdue avec ses films commerciaux. Quand il monte sur ___ pour les répétitions, il sent le regard du ___ imaginaire. Il espère que cette pièce sera un grand ___ pour sa carrière. Il ne supportera pas un nouvel ___ public. Sa ___ d'artiste sérieux en dépend totalement."
     },
     "literary": {
       "title": "La voix dans la tête",
@@ -53,45 +307,354 @@
       "inspiration": "Birdman (film d'Alejandro González Iñárritu)",
       "text": "Dans sa loge exiguë du St. James Theatre, Riggan Thomson fixait le miroir avec désespoir. Cet ancien {{BLANK_1}} d'Hollywood était hanté par la voix grave et moqueuse de Birdman. Ce {{BLANK_2}} de super-héros cynique, qu'il avait incarné dans trois blockbusters, refusait de le laisser tranquille. Riggan voulait prouver son {{BLANK_3}} dramatique au monde entier, au-delà des costumes en latex. Il avait tout risqué pour adapter et {{BLANK_4}} une pièce de Raymond Carver au {{BLANK_5}} sacré de Broadway. Il terrifiait à l'idée de l'{{BLANK_6}} cuisant que lui promettait l'élite intellectuelle new-yorkaise. Tabitha Dickinson, la redoutable {{BLANK_7}} du Times, avait juré de détruire son spectacle avant même la première. Riggan cherchait désespérément le {{BLANK_8}} créateur, loin des explosions factices du {{BLANK_9}} commercial. Il rêvait de reconquérir la {{BLANK_10}} littéraire qu'il avait sacrifiée pour des chèques à sept chiffres. Quand il montait sur {{BLANK_11}} pour les avant-premières, il sentait le jugement impitoyable du {{BLANK_12}} exigeant. Il espérait que cette œuvre intime serait le {{BLANK_13}} artistique de sa vie. Il ne survivrait pas à un nouvel {{BLANK_14}} public humiliant. Sa {{BLANK_15}} d'homme de théâtre sérieux était la seule chose qui le maintenait encore debout face à sa folie grandissante.",
       "blanks": [
-        { "id": 1, "answer": "acteur", "options": ["acteur", "véhicule", "moteur", "pneu"], "correctIndex": 0 },
-        { "id": 2, "answer": "personnage", "options": ["personnage", "véhicule", "moteur", "pneu"], "correctIndex": 0 },
-        { "id": 3, "answer": "talent", "options": ["talent", "poids", "âge", "taille"], "correctIndex": 0 },
-        { "id": 4, "answer": "jouer", "options": ["jouer", "dormir", "manger", "boire"], "correctIndex": 0 },
-        { "id": 5, "answer": "théâtre", "options": ["théâtre", "supermarché", "hôpital", "aéroport"], "correctIndex": 0 },
-        { "id": 6, "answer": "échec", "options": ["échec", "succès", "réussite", "victoire"], "correctIndex": 0 },
-        { "id": 7, "answer": "critique", "options": ["critique", "recette", "chanson", "photo"], "correctIndex": 0 },
-        { "id": 8, "answer": "génie", "options": ["génie", "poids", "âge", "taille"], "correctIndex": 0 },
-        { "id": 9, "answer": "cinéma", "options": ["cinéma", "supermarché", "hôpital", "aéroport"], "correctIndex": 0 },
-        { "id": 10, "answer": "gloire", "options": ["gloire", "honte", "défaite", "ruine"], "correctIndex": 0 },
-        { "id": 11, "answer": "scène", "options": ["scène", "cuisine", "toilette", "garage"], "correctIndex": 0 },
-        { "id": 12, "answer": "public", "options": ["public", "mur", "plafond", "tapis"], "correctIndex": 0 },
-        { "id": 13, "answer": "succès", "options": ["succès", "échec", "défaite", "ruine"], "correctIndex": 0 },
-        { "id": 14, "answer": "échec", "options": ["échec", "succès", "réussite", "victoire"], "correctIndex": 0 },
-        { "id": 15, "answer": "réputation", "options": ["réputation", "recette", "chanson", "photo"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "acteur",
+          "options": [
+            "acteur",
+            "véhicule",
+            "moteur",
+            "pneu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "personnage",
+          "options": [
+            "personnage",
+            "véhicule",
+            "moteur",
+            "pneu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "talent",
+          "options": [
+            "talent",
+            "poids",
+            "âge",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "jouer",
+          "options": [
+            "jouer",
+            "dormir",
+            "manger",
+            "boire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "théâtre",
+          "options": [
+            "théâtre",
+            "supermarché",
+            "hôpital",
+            "aéroport"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "échec",
+          "options": [
+            "échec",
+            "succès",
+            "réussite",
+            "victoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "critique",
+          "options": [
+            "critique",
+            "recette",
+            "chanson",
+            "photo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "génie",
+          "options": [
+            "génie",
+            "poids",
+            "âge",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cinéma",
+          "options": [
+            "cinéma",
+            "supermarché",
+            "hôpital",
+            "aéroport"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "gloire",
+          "options": [
+            "gloire",
+            "honte",
+            "défaite",
+            "ruine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "scène",
+          "options": [
+            "scène",
+            "cuisine",
+            "toilette",
+            "garage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "public",
+          "options": [
+            "public",
+            "mur",
+            "plafond",
+            "tapis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "succès",
+          "options": [
+            "succès",
+            "échec",
+            "défaite",
+            "ruine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "échec",
+          "options": [
+            "échec",
+            "succès",
+            "réussite",
+            "victoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "réputation",
+          "options": [
+            "réputation",
+            "recette",
+            "chanson",
+            "photo"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Dans sa loge exiguë du St. James Theatre, Riggan Thomson fixait le miroir avec désespoir. Cet ancien ___ d'Hollywood était hanté par la voix grave et moqueuse de Birdman. Ce ___ de super-héros cynique, qu'il avait incarné dans trois blockbusters, refusait de le laisser tranquille. Riggan voulait prouver son ___ dramatique au monde entier, au-delà des costumes en latex. Il avait tout risqué pour adapter et ___ une pièce de Raymond Carver au ___ sacré de Broadway. Il terrifiait à l'idée de l'___ cuisant que lui promettait l'élite intellectuelle new-yorkaise. Tabitha Dickinson, la redoutable ___ du Times, avait juré de détruire son spectacle avant même la première. Riggan cherchait désespérément le ___ créateur, loin des explosions factices du ___ commercial. Il rêvait de reconquérir la ___ littéraire qu'il avait sacrifiée pour des chèques à sept chiffres. Quand il montait sur ___ pour les avant-premières, il sentait le jugement impitoyable du ___ exigeant. Il espérait que cette œuvre intime serait le ___ artistique de sa vie. Il ne survivrait pas à un nouvel ___ public humiliant. Sa ___ d'homme de théâtre sérieux était la seule chose qui le maintenait encore debout face à sa folie grandissante."
     }
   },
-
   "quiz": {
     "title": "Quiz : Arts et Caractère",
     "title_fa": "آزمون: هنر و شخصیت",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "Sherlock Holmes est un ____ de fiction très célèbre créé par Arthur Conan Doyle.", "options": ["personnage", "véhicule", "moteur", "pneu"], "correctIndex": 0, "explanation_fa": "personnage = شخصیت (در داستان یا نمایش)." },
-      { "type": "mcq", "question": "Elle a auditionné pendant des mois pour obtenir le ____ principal.", "options": ["rôle", "poids", "âge", "taille"], "correctIndex": 0, "explanation_fa": "rôle = نقش." },
-      { "type": "binary", "question": "Le verbe \"jouer\" peut signifier \"interpréter un rôle au théâtre ou au cinéma\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، jouer به معنای نقش بازی کردن است." },
-      { "type": "mcq", "question": "Meryl Streep est une ____ qui a remporté trois Oscars.", "options": ["actrice", "véhicule", "moteur", "pneu"], "correctIndex": 0, "explanation_fa": "actrice = بازیگر زن." },
-      { "type": "mcq", "question": "Le Festival d'Avignon est le plus grand événement de ____ en France.", "options": ["théâtre", "supermarché", "hôpital", "aéroport"], "correctIndex": 0, "explanation_fa": "théâtre = تئاتر." },
-      { "type": "mcq", "question": "Les frères Lumière sont les inventeurs du ____ en 1895.", "options": ["cinéma", "supermarché", "hôpital", "aéroport"], "correctIndex": 0, "explanation_fa": "cinéma = سینما." },
-      { "type": "mcq", "question": "Les comédiens répètent des semaines avant de monter sur ____.", "options": ["scène", "cuisine", "toilette", "garage"], "correctIndex": 0, "explanation_fa": "scène = صحنه نمایش." },
-      { "type": "binary", "question": "Le \"public\" désigne l'ensemble des personnes qui assistent à un spectacle.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، public به معنای مخاطب و تماشاگران است." },
-      { "type": "mcq", "question": "La ____ littéraire du journal a éreinté le nouveau roman de cet auteur.", "options": ["critique", "recette", "chanson", "photo"], "correctIndex": 0, "explanation_fa": "critique = نقد (و منتقد)." },
-      { "type": "mcq", "question": "Le ____ de ce film indépendant a surpris tout le monde au box-office.", "options": ["succès", "échec", "défaite", "ruine"], "correctIndex": 0, "explanation_fa": "succès = موفقیت." },
-      { "type": "mcq", "question": "Malgré son budget énorme, le film a été un ____ commercial retentissant.", "options": ["échec", "succès", "réussite", "victoire"], "correctIndex": 0, "explanation_fa": "échec = شکست." },
-      { "type": "mcq", "question": "Mozart était un enfant ____ qui composait dès l'âge de cinq ans.", "options": ["génie", "poids", "âge", "taille"], "correctIndex": 0, "explanation_fa": "génie = نبوغ." },
-      { "type": "binary", "question": "Le \"talent\" est une aptitude naturelle ou acquise pour faire quelque chose de bien.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، talent به معنای استعداد است." },
-      { "type": "mcq", "question": "Après sa médaille d'or, l'athlète a connu la ____ mondiale.", "options": ["gloire", "honte", "défaite", "ruine"], "correctIndex": 0, "explanation_fa": "gloire = شهرت و جلال." },
-      { "type": "mcq", "question": "Un scandale financier a gravement endommagé la ____ de ce politicien.", "options": ["réputation", "recette", "chanson", "photo"], "correctIndex": 0, "explanation_fa": "réputation = اعتبار و شهرت." }
+      {
+        "type": "mcq",
+        "question": "Sherlock Holmes est un ____ de fiction très célèbre créé par Arthur Conan Doyle.",
+        "options": [
+          "personnage",
+          "véhicule",
+          "moteur",
+          "pneu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "personnage = شخصیت (در داستان یا نمایش)."
+      },
+      {
+        "type": "mcq",
+        "question": "Elle a auditionné pendant des mois pour obtenir le ____ principal.",
+        "options": [
+          "rôle",
+          "poids",
+          "âge",
+          "taille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "rôle = نقش."
+      },
+      {
+        "type": "binary",
+        "question": "Le verbe \"jouer\" peut signifier \"interpréter un rôle au théâtre ou au cinéma\".",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، jouer به معنای نقش بازی کردن است."
+      },
+      {
+        "type": "mcq",
+        "question": "Meryl Streep est une ____ qui a remporté trois Oscars.",
+        "options": [
+          "actrice",
+          "véhicule",
+          "moteur",
+          "pneu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "actrice = بازیگر زن."
+      },
+      {
+        "type": "mcq",
+        "question": "Le Festival d'Avignon est le plus grand événement de ____ en France.",
+        "options": [
+          "théâtre",
+          "supermarché",
+          "hôpital",
+          "aéroport"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "théâtre = تئاتر."
+      },
+      {
+        "type": "mcq",
+        "question": "Les frères Lumière sont les inventeurs du ____ en 1895.",
+        "options": [
+          "cinéma",
+          "supermarché",
+          "hôpital",
+          "aéroport"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "cinéma = سینما."
+      },
+      {
+        "type": "mcq",
+        "question": "Les comédiens répètent des semaines avant de monter sur ____.",
+        "options": [
+          "scène",
+          "cuisine",
+          "toilette",
+          "garage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "scène = صحنه نمایش."
+      },
+      {
+        "type": "binary",
+        "question": "Le \"public\" désigne l'ensemble des personnes qui assistent à un spectacle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، public به معنای مخاطب و تماشاگران است."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ littéraire du journal a éreinté le nouveau roman de cet auteur.",
+        "options": [
+          "critique",
+          "recette",
+          "chanson",
+          "photo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "critique = نقد (و منتقد)."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ de ce film indépendant a surpris tout le monde au box-office.",
+        "options": [
+          "succès",
+          "échec",
+          "défaite",
+          "ruine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "succès = موفقیت."
+      },
+      {
+        "type": "mcq",
+        "question": "Malgré son budget énorme, le film a été un ____ commercial retentissant.",
+        "options": [
+          "échec",
+          "succès",
+          "réussite",
+          "victoire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "échec = شکست."
+      },
+      {
+        "type": "mcq",
+        "question": "Mozart était un enfant ____ qui composait dès l'âge de cinq ans.",
+        "options": [
+          "génie",
+          "poids",
+          "âge",
+          "taille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "génie = نبوغ."
+      },
+      {
+        "type": "binary",
+        "question": "Le \"talent\" est une aptitude naturelle ou acquise pour faire quelque chose de bien.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، talent به معنای استعداد است."
+      },
+      {
+        "type": "mcq",
+        "question": "Après sa médaille d'or, l'athlète a connu la ____ mondiale.",
+        "options": [
+          "gloire",
+          "honte",
+          "défaite",
+          "ruine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "gloire = شهرت و جلال."
+      },
+      {
+        "type": "mcq",
+        "question": "Un scandale financier a gravement endommagé la ____ de ce politicien.",
+        "options": [
+          "réputation",
+          "recette",
+          "chanson",
+          "photo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "réputation = اعتبار و شهرت."
+      }
     ]
   }
 }
