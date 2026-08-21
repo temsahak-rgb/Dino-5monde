@@ -5,51 +5,339 @@
   "theme_fa": "هویت، جامعه، حقوق و چرخه زندگی",
   "icon": "🌍",
   "inspiration": "120 Battements par minute (film de Robin Campillo)",
-
   "words": [
-    { "fr": "la société", "fa": "جامعه", "emoji": "🏙️", "difficulty": 2, "ex": "Les inégalités restent un problème majeur dans notre société.", "ex_fa": "نابرابری‌ها همچنان یک مشکل بزرگ در جامعه ما هستند." },
-    { "fr": "l'identité", "fa": "هویت", "emoji": "🪪", "difficulty": 3, "ex": "La quête d'identité est centrale à l'adolescence.", "ex_fa": "جستجوی هویت در دوران نوجوانی محوریت دارد." },
-    { "fr": "le droit", "fa": "حق (قانونی)", "emoji": "⚖️", "difficulty": 2, "ex": "Chaque citoyen a le droit de s'exprimer librement.", "ex_fa": "هر شهروندی حق دارد آزادانه بیان کند." },
-    { "fr": "le devoir", "fa": "وظیفه / تکلیف", "emoji": "📜", "difficulty": 2, "ex": "Voter est un droit, mais c'est aussi un devoir civique.", "ex_fa": "رای دادن یک حق است، اما یک وظیفه شهروندی نیز هست." },
-    { "fr": "la génération", "fa": "نسل", "emoji": "👨‍👩‍👧‍👦", "difficulty": 3, "ex": "Chaque génération apporte son propre regard sur le monde.", "ex_fa": "هر نسل نگاه خاص خود را به جهان به همراه می‌آورد." },
-    { "fr": "l'origine", "fa": "ریشه / اصالت", "emoji": "🌳", "difficulty": 3, "ex": "Il est fier de ses origines multiculturelles.", "ex_fa": "او به ریشه‌های چندفرهنگی‌اش افتخار می‌کند." },
-    { "fr": "l'intégration", "fa": "ادغام / یکپارچگی اجتماعی", "emoji": "🤝", "difficulty": 4, "ex": "L'intégration des nouveaux arrivants demande des efforts mutuels.", "ex_fa": "ادغام تازه‌واردها نیاز به تلاش دوطرفه دارد." },
-    { "fr": "la communauté", "fa": "جامعه محلی / انجمن", "emoji": "🏘️", "difficulty": 3, "ex": "La communauté locale s'est mobilisée pour aider les sinistrés.", "ex_fa": "جامعه محلی برای کمک به آسیب‌دیدگان بسیج شد." },
-    { "fr": "l'égalité", "fa": "برابری", "emoji": "⚖️", "difficulty": 3, "ex": "L'égalité des chances est un idéal démocratique.", "ex_fa": "برابری فرصت‌ها یک آرمان دموکراتیک است." },
-    { "fr": "l'injustice", "fa": "بی‌عدالتی", "emoji": "⚔️", "difficulty": 3, "ex": "Ils manifestent pour dénoncer une injustice sociale flagrante.", "ex_fa": "آن‌ها برای محکوم کردن یک بی‌عدالتی اجتماعی آشکار تظاهرات می‌کنند." },
-    { "fr": "la discrimination", "fa": "تبعیض", "emoji": "🚫", "difficulty": 4, "ex": "La loi punit sévèrement toute forme de discrimination.", "ex_fa": "قانون هرگونه تبعیض را به شدت مجازات می‌کند." },
-    { "fr": "le respect", "fa": "احترام", "emoji": "🙏", "difficulty": 2, "ex": "Le respect de l'autre est la base de toute relation saine.", "ex_fa": "احترام به دیگری پایه و اساس هر رابطه سالمی است." },
-    { "fr": "la tolérance", "fa": "مدارا / تساهل", "emoji": "🕊️", "difficulty": 4, "ex": "Une société mature fait preuve de tolérance envers les minorités.", "ex_fa": "یک جامعه بالغ نسبت به اقلیت‌ها مدارا نشان می‌دهد." },
-    { "fr": "l'individu", "fa": "فرد", "emoji": "🧍", "difficulty": 3, "ex": "Les droits de l'individu doivent être protégés par l'État.", "ex_fa": "حقوق فرد باید توسط دولت محافظت شود." },
-    { "fr": "le collectif", "fa": "امر جمعی / گروه", "emoji": "👥", "difficulty": 4, "ex": "L'intérêt collectif doit parfois passer avant les envies personnelles.", "ex_fa": "منفعت جمعی گاهی باید بر خواسته‌های شخصی مقدم باشد." },
-    { "fr": "la citoyenneté", "fa": "شهروندی", "emoji": "🗳️", "difficulty": 4, "ex": "Les cours d'éducation civique enseignent la citoyenneté aux enfants.", "ex_fa": "کلاس‌های تربیت مدنی، شهروندی را به کودکان آموزش می‌دهند." },
-    { "fr": "l'appartenance", "fa": "تعلق", "emoji": "🫂", "difficulty": 5, "ex": "Le sentiment d'appartenance à un groupe rassure beaucoup de gens.", "ex_fa": "احساس تعلق به یک گروه، بسیاری از مردم را آرام می‌کند." }
+    {
+      "fr": "la société",
+      "fa": "جامعه",
+      "emoji": "🏙️",
+      "difficulty": 2,
+      "ex": "Les inégalités restent un problème majeur dans notre société.",
+      "ex_fa": "نابرابری‌ها همچنان یک مشکل بزرگ در جامعه ما هستند."
+    },
+    {
+      "fr": "l'identité",
+      "fa": "هویت",
+      "emoji": "🪪",
+      "difficulty": 3,
+      "ex": "La quête d'identité est centrale à l'adolescence.",
+      "ex_fa": "جستجوی هویت در دوران نوجوانی محوریت دارد."
+    },
+    {
+      "fr": "le droit",
+      "fa": "حق (قانونی)",
+      "emoji": "⚖️",
+      "difficulty": 2,
+      "ex": "Chaque citoyen a le droit de s'exprimer librement.",
+      "ex_fa": "هر شهروندی حق دارد آزادانه بیان کند."
+    },
+    {
+      "fr": "le devoir",
+      "fa": "وظیفه / تکلیف",
+      "emoji": "📜",
+      "difficulty": 2,
+      "ex": "Voter est un droit, mais c'est aussi un devoir civique.",
+      "ex_fa": "رای دادن یک حق است، اما یک وظیفه شهروندی نیز هست."
+    },
+    {
+      "fr": "la génération",
+      "fa": "نسل",
+      "emoji": "👨‍👩‍👧‍👦",
+      "difficulty": 3,
+      "ex": "Chaque génération apporte son propre regard sur le monde.",
+      "ex_fa": "هر نسل نگاه خاص خود را به جهان به همراه می‌آورد."
+    },
+    {
+      "fr": "l'origine",
+      "fa": "ریشه / اصالت",
+      "emoji": "🌳",
+      "difficulty": 3,
+      "ex": "Il est fier de ses origines multiculturelles.",
+      "ex_fa": "او به ریشه‌های چندفرهنگی‌اش افتخار می‌کند."
+    },
+    {
+      "fr": "l'intégration",
+      "fa": "ادغام / یکپارچگی اجتماعی",
+      "emoji": "🤝",
+      "difficulty": 4,
+      "ex": "L'intégration des nouveaux arrivants demande des efforts mutuels.",
+      "ex_fa": "ادغام تازه‌واردها نیاز به تلاش دوطرفه دارد."
+    },
+    {
+      "fr": "la communauté",
+      "fa": "جامعه محلی / انجمن",
+      "emoji": "🏘️",
+      "difficulty": 3,
+      "ex": "La communauté locale s'est mobilisée pour aider les sinistrés.",
+      "ex_fa": "جامعه محلی برای کمک به آسیب‌دیدگان بسیج شد."
+    },
+    {
+      "fr": "l'égalité",
+      "fa": "برابری",
+      "emoji": "⚖️",
+      "difficulty": 3,
+      "ex": "L'égalité des chances est un idéal démocratique.",
+      "ex_fa": "برابری فرصت‌ها یک آرمان دموکراتیک است."
+    },
+    {
+      "fr": "l'injustice",
+      "fa": "بی‌عدالتی",
+      "emoji": "⚔️",
+      "difficulty": 3,
+      "ex": "Ils manifestent pour dénoncer une injustice sociale flagrante.",
+      "ex_fa": "آن‌ها برای محکوم کردن یک بی‌عدالتی اجتماعی آشکار تظاهرات می‌کنند."
+    },
+    {
+      "fr": "la discrimination",
+      "fa": "تبعیض",
+      "emoji": "🚫",
+      "difficulty": 4,
+      "ex": "La loi punit sévèrement toute forme de discrimination.",
+      "ex_fa": "قانون هرگونه تبعیض را به شدت مجازات می‌کند."
+    },
+    {
+      "fr": "le respect",
+      "fa": "احترام",
+      "emoji": "🙏",
+      "difficulty": 2,
+      "ex": "Le respect de l'autre est la base de toute relation saine.",
+      "ex_fa": "احترام به دیگری پایه و اساس هر رابطه سالمی است."
+    },
+    {
+      "fr": "la tolérance",
+      "fa": "مدارا / تساهل",
+      "emoji": "🕊️",
+      "difficulty": 4,
+      "ex": "Une société mature fait preuve de tolérance envers les minorités.",
+      "ex_fa": "یک جامعه بالغ نسبت به اقلیت‌ها مدارا نشان می‌دهد."
+    },
+    {
+      "fr": "l'individu",
+      "fa": "فرد",
+      "emoji": "🧍",
+      "difficulty": 3,
+      "ex": "Les droits de l'individu doivent être protégés par l'État.",
+      "ex_fa": "حقوق فرد باید توسط دولت محافظت شود."
+    },
+    {
+      "fr": "le collectif",
+      "fa": "امر جمعی / گروه",
+      "emoji": "👥",
+      "difficulty": 4,
+      "ex": "L'intérêt collectif doit parfois passer avant les envies personnelles.",
+      "ex_fa": "منفعت جمعی گاهی باید بر خواسته‌های شخصی مقدم باشد."
+    },
+    {
+      "fr": "la citoyenneté",
+      "fa": "شهروندی",
+      "emoji": "🗳️",
+      "difficulty": 4,
+      "ex": "Les cours d'éducation civique enseignent la citoyenneté aux enfants.",
+      "ex_fa": "کلاس‌های تربیت مدنی، شهروندی را به کودکان آموزش می‌دهند."
+    },
+    {
+      "fr": "l'appartenance",
+      "fa": "تعلق",
+      "emoji": "🫂",
+      "difficulty": 5,
+      "ex": "Le sentiment d'appartenance à un groupe rassure beaucoup de gens.",
+      "ex_fa": "احساس تعلق به یک گروه، بسیاری از مردم را آرام می‌کند."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "Un combat pour la dignité",
       "title_fa": "مبارزه‌ای برای کرامت",
       "text": "Dans notre {{BLANK_1}} moderne, les minorités doivent souvent lutter pour exister. Nathan cherche sa propre {{BLANK_2}} en tant que jeune militant. Il défend le {{BLANK_3}} fondamental de vivre librement sa vie. Mais il sait que chaque liberté implique un {{BLANK_4}} envers les autres. Sa {{BLANK_5}} entière est concernée par les enjeux de santé publique. Peu importe son {{BLANK_6}} sociale, il se bat pour tous. L'{{BLANK_7}} des personnes marginalisées dans le débat public est son combat quotidien. Il travaille avec une {{BLANK_8}} de bénévoles dévoués. Ensemble, ils exigent une véritable {{BLANK_9}} d'accès aux soins médicaux. Ils ne peuvent plus supporter l'{{BLANK_10}} du gouvernement face à l'épidémie. Ils dénoncent la {{BLANK_11}} à l'embauche qui touche les personnes vulnérables. Leur mouvement exige le {{BLANK_12}} absolu de la dignité humaine. Ils prônent la {{BLANK_13}} et l'acceptation des différences. Chaque {{BLANK_14}} compte dans cette lutte acharnée. Leur force réside dans l'action {{BLANK_15}} plutôt que dans la solitude. Grâce à leur engagement, l'éducation à la {{BLANK_16}} active progresse enfin. Leur profond sentiment d'{{BLANK_17}} à ce mouvement leur donne le courage de continuer.",
       "blanks": [
-        { "id": 1, "answer": "société", "options": ["société", "cuisine", "forêt", "chambre"], "correctIndex": 0 },
-        { "id": 2, "answer": "identité", "options": ["identité", "passeport", "voiture", "vélo"], "correctIndex": 0 },
-        { "id": 3, "answer": "droit", "options": ["droit", "menu", "ticket", "passeport"], "correctIndex": 0 },
-        { "id": 4, "answer": "devoir", "options": ["devoir", "gâteau", "nuage", "tapis"], "correctIndex": 0 },
-        { "id": 5, "answer": "génération", "options": ["génération", "voiture", "machine", "ordinateur"], "correctIndex": 0 },
-        { "id": 6, "answer": "origine", "options": ["origine", "passeport", "valise", "billet"], "correctIndex": 0 },
-        { "id": 7, "answer": "intégration", "options": ["intégration", "destruction", "explosion", "chute"], "correctIndex": 0 },
-        { "id": 8, "answer": "communauté", "options": ["communauté", "solitude", "machine", "véhicule"], "correctIndex": 0 },
-        { "id": 9, "answer": "égalité", "options": ["égalité", "inégalité", "différence", "injustice"], "correctIndex": 0 },
-        { "id": 10, "answer": "injustice", "options": ["injustice", "justice", "équité", "vérité"], "correctIndex": 0 },
-        { "id": 11, "answer": "discrimination", "options": ["discrimination", "acceptation", "tolérance", "respect"], "correctIndex": 0 },
-        { "id": 12, "answer": "respect", "options": ["respect", "mépris", "insulte", "haine"], "correctIndex": 0 },
-        { "id": 13, "answer": "tolérance", "options": ["tolérance", "intolérance", "haine", "rejet"], "correctIndex": 0 },
-        { "id": 14, "answer": "individu", "options": ["individu", "groupe", "foule", "masse"], "correctIndex": 0 },
-        { "id": 15, "answer": "collective", "options": ["collective", "solitaire", "individuelle", "personnelle"], "correctIndex": 0 },
-        { "id": 16, "answer": "citoyenneté", "options": ["citoyenneté", "tourisme", "voyage", "vacances"], "correctIndex": 0 },
-        { "id": 17, "answer": "appartenance", "options": ["appartenance", "exclusion", "rejet", "solitude"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "société",
+          "options": [
+            "société",
+            "cuisine",
+            "forêt",
+            "chambre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "identité",
+          "options": [
+            "identité",
+            "passeport",
+            "voiture",
+            "vélo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "droit",
+          "options": [
+            "droit",
+            "menu",
+            "ticket",
+            "passeport"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "devoir",
+          "options": [
+            "devoir",
+            "gâteau",
+            "nuage",
+            "tapis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "génération",
+          "options": [
+            "génération",
+            "voiture",
+            "machine",
+            "ordinateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "origine",
+          "options": [
+            "origine",
+            "passeport",
+            "valise",
+            "billet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "intégration",
+          "options": [
+            "intégration",
+            "destruction",
+            "explosion",
+            "chute"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "communauté",
+          "options": [
+            "communauté",
+            "solitude",
+            "machine",
+            "véhicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "égalité",
+          "options": [
+            "égalité",
+            "inégalité",
+            "différence",
+            "injustice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "injustice",
+          "options": [
+            "injustice",
+            "justice",
+            "équité",
+            "vérité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "discrimination",
+          "options": [
+            "discrimination",
+            "acceptation",
+            "tolérance",
+            "respect"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "respect",
+          "options": [
+            "respect",
+            "mépris",
+            "insulte",
+            "haine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "tolérance",
+          "options": [
+            "tolérance",
+            "intolérance",
+            "haine",
+            "rejet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "individu",
+          "options": [
+            "individu",
+            "groupe",
+            "foule",
+            "masse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "collective",
+          "options": [
+            "collective",
+            "solitaire",
+            "individuelle",
+            "personnelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "citoyenneté",
+          "options": [
+            "citoyenneté",
+            "tourisme",
+            "voyage",
+            "vacances"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 17,
+          "answer": "appartenance",
+          "options": [
+            "appartenance",
+            "exclusion",
+            "rejet",
+            "solitude"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Dans notre ___ moderne, les minorités doivent souvent lutter pour exister. Nathan cherche sa propre ___ en tant que jeune militant. Il défend le ___ fondamental de vivre librement sa vie. Mais il sait que chaque liberté implique un ___ envers les autres. Sa ___ entière est concernée par les enjeux de santé publique. Peu importe son ___ sociale, il se bat pour tous. L'___ des personnes marginalisées dans le débat public est son combat quotidien. Il travaille avec une ___ de bénévoles dévoués. Ensemble, ils exigent une véritable ___ d'accès aux soins médicaux. Ils ne peuvent plus supporter l'___ du gouvernement face à l'épidémie. Ils dénoncent la ___ à l'embauche qui touche les personnes vulnérables. Leur mouvement exige le ___ absolu de la dignité humaine. Ils prônent la ___ et l'acceptation des différences. Chaque ___ compte dans cette lutte acharnée. Leur force réside dans l'action ___ plutôt que dans la solitude. Grâce à leur engagement, l'éducation à la ___ active progresse enfin. Leur profond sentiment d'___ à ce mouvement leur donne le courage de continuer."
     },
     "literary": {
       "title": "Les guerriers du silence",
@@ -57,49 +345,400 @@
       "inspiration": "120 Battements par minute (film de Robin Campillo) - Militants Act Up",
       "text": "Dans les années 90, la {{BLANK_1}} française restait aveugle face au drame qui décimait sa jeunesse. Sean, un jeune militant d'Act Up Paris, forgeait son {{BLANK_2}} politique dans la douleur de la maladie. Il revendiquait le {{BLANK_3}} inaliénable de vivre et d'aimer au grand jour. Pour lui, cette liberté imposait un {{BLANK_4}} moral absolu : briser le silence complice des laboratoires pharmaceutiques. Toute sa {{BLANK_5}} payait le prix fort de l'indifférence des pouvoirs publics. Peu importe son {{BLANK_6}} étrangère, il se battait sur le front parisien avec une rage communicative. L'{{BLANK_7}} des voix des malades dans les médias traditionnels était son obsession quotidienne. Il haranguait sa {{BLANK_8}} de survivants lors des réunions hebdomadaires dans le dixième arrondissement. Ensemble, ils exigeaient une stricte {{BLANK_9}} d'accès aux traitements expérimentaux qui pouvaient les sauver. Ils ne pouvaient plus tolérer l'{{BLANK_10}} criante d'un État qui les laissait mourir dans l'ombre. Ils dénonçaient avec force la {{BLANK_11}} systémique qui frappait les homosexuels et les usagers de drogue. Leur mouvement exigeait le {{BLANK_12}} inconditionnel de la dignité humaine jusqu'au dernier souffle. Ils prônaient une {{BLANK_13}} radicale face aux jugements moraux de l'époque. Chaque {{BLANK_14}} perdu devenait un martyr de plus dans leur combat acharné. Leur force résidait dans l'action {{BLANK_15}} spectaculaire, comme jeter de fausses cendres sur les patrons de l'industrie. Grâce à leur sacrifice, l'éducation à la {{BLANK_16}} sanitaire et préventive a fini par s'imposer. Leur puissant sentiment d'{{BLANK_17}} à cette famille de combattants leur a donné la force d'affronter l'inéluctable avec une dignité bouleversante.",
       "blanks": [
-        { "id": 1, "answer": "société", "options": ["société", "forêt", "cuisine", "chambre"], "correctIndex": 0 },
-        { "id": 2, "answer": "identité", "options": ["identité", "passeport", "voiture", "vélo"], "correctIndex": 0 },
-        { "id": 3, "answer": "droit", "options": ["droit", "menu", "ticket", "passeport"], "correctIndex": 0 },
-        { "id": 4, "answer": "devoir", "options": ["devoir", "gâteau", "nuage", "tapis"], "correctIndex": 0 },
-        { "id": 5, "answer": "génération", "options": ["génération", "voiture", "machine", "ordinateur"], "correctIndex": 0 },
-        { "id": 6, "answer": "origine", "options": ["origine", "passeport", "valise", "billet"], "correctIndex": 0 },
-        { "id": 7, "answer": "intégration", "options": ["intégration", "destruction", "explosion", "chute"], "correctIndex": 0 },
-        { "id": 8, "answer": "communauté", "options": ["communauté", "solitude", "machine", "véhicule"], "correctIndex": 0 },
-        { "id": 9, "answer": "égalité", "options": ["égalité", "inégalité", "différence", "injustice"], "correctIndex": 0 },
-        { "id": 10, "answer": "injustice", "options": ["injustice", "justice", "équité", "vérité"], "correctIndex": 0 },
-        { "id": 11, "answer": "discrimination", "options": ["discrimination", "acceptation", "tolérance", "respect"], "correctIndex": 0 },
-        { "id": 12, "answer": "respect", "options": ["respect", "mépris", "insulte", "haine"], "correctIndex": 0 },
-        { "id": 13, "answer": "tolérance", "options": ["tolérance", "intolérance", "haine", "rejet"], "correctIndex": 0 },
-        { "id": 14, "answer": "individu", "options": ["individu", "groupe", "foule", "masse"], "correctIndex": 0 },
-        { "id": 15, "answer": "collective", "options": ["collective", "solitaire", "individuelle", "personnelle"], "correctIndex": 0 },
-        { "id": 16, "answer": "citoyenneté", "options": ["citoyenneté", "tourisme", "voyage", "vacances"], "correctIndex": 0 },
-        { "id": 17, "answer": "appartenance", "options": ["appartenance", "exclusion", "rejet", "solitude"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "société",
+          "options": [
+            "société",
+            "forêt",
+            "cuisine",
+            "chambre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "identité",
+          "options": [
+            "identité",
+            "passeport",
+            "voiture",
+            "vélo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "droit",
+          "options": [
+            "droit",
+            "menu",
+            "ticket",
+            "passeport"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "devoir",
+          "options": [
+            "devoir",
+            "gâteau",
+            "nuage",
+            "tapis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "génération",
+          "options": [
+            "génération",
+            "voiture",
+            "machine",
+            "ordinateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "origine",
+          "options": [
+            "origine",
+            "passeport",
+            "valise",
+            "billet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "intégration",
+          "options": [
+            "intégration",
+            "destruction",
+            "explosion",
+            "chute"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "communauté",
+          "options": [
+            "communauté",
+            "solitude",
+            "machine",
+            "véhicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "égalité",
+          "options": [
+            "égalité",
+            "inégalité",
+            "différence",
+            "injustice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "injustice",
+          "options": [
+            "injustice",
+            "justice",
+            "équité",
+            "vérité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "discrimination",
+          "options": [
+            "discrimination",
+            "acceptation",
+            "tolérance",
+            "respect"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "respect",
+          "options": [
+            "respect",
+            "mépris",
+            "insulte",
+            "haine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "tolérance",
+          "options": [
+            "tolérance",
+            "intolérance",
+            "haine",
+            "rejet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "individu",
+          "options": [
+            "individu",
+            "groupe",
+            "foule",
+            "masse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "collective",
+          "options": [
+            "collective",
+            "solitaire",
+            "individuelle",
+            "personnelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "citoyenneté",
+          "options": [
+            "citoyenneté",
+            "tourisme",
+            "voyage",
+            "vacances"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 17,
+          "answer": "appartenance",
+          "options": [
+            "appartenance",
+            "exclusion",
+            "rejet",
+            "solitude"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Dans les années 90, la ___ française restait aveugle face au drame qui décimait sa jeunesse. Sean, un jeune militant d'Act Up Paris, forgeait son ___ politique dans la douleur de la maladie. Il revendiquait le ___ inaliénable de vivre et d'aimer au grand jour. Pour lui, cette liberté imposait un ___ moral absolu : briser le silence complice des laboratoires pharmaceutiques. Toute sa ___ payait le prix fort de l'indifférence des pouvoirs publics. Peu importe son ___ étrangère, il se battait sur le front parisien avec une rage communicative. L'___ des voix des malades dans les médias traditionnels était son obsession quotidienne. Il haranguait sa ___ de survivants lors des réunions hebdomadaires dans le dixième arrondissement. Ensemble, ils exigeaient une stricte ___ d'accès aux traitements expérimentaux qui pouvaient les sauver. Ils ne pouvaient plus tolérer l'___ criante d'un État qui les laissait mourir dans l'ombre. Ils dénonçaient avec force la ___ systémique qui frappait les homosexuels et les usagers de drogue. Leur mouvement exigeait le ___ inconditionnel de la dignité humaine jusqu'au dernier souffle. Ils prônaient une ___ radicale face aux jugements moraux de l'époque. Chaque ___ perdu devenait un martyr de plus dans leur combat acharné. Leur force résidait dans l'action ___ spectaculaire, comme jeter de fausses cendres sur les patrons de l'industrie. Grâce à leur sacrifice, l'éducation à la ___ sanitaire et préventive a fini par s'imposer. Leur puissant sentiment d'___ à cette famille de combattants leur a donné la force d'affronter l'inéluctable avec une dignité bouleversante."
     }
   },
-
   "quiz": {
     "title": "Quiz : Identité et Société",
     "title_fa": "آزمون: هویت و جامعه",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "Les réseaux sociaux ont profondément transformé notre ____ moderne.", "options": ["société", "cuisine", "forêt", "chambre"], "correctIndex": 0, "explanation_fa": "société = جامعه." },
-      { "type": "mcq", "question": "À l'adolescence, on se pose beaucoup de questions sur son ____.", "options": ["identité", "passeport", "voiture", "vélo"], "correctIndex": 0, "explanation_fa": "identité = هویت." },
-      { "type": "binary", "question": "Le \"droit\" désigne une permission ou une prérogative reconnue par la loi.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، droit در اینجا به معنای حق قانونی است." },
-      { "type": "mcq", "question": "Payer ses impôts est un ____ civique pour chaque citoyen.", "options": ["devoir", "gâteau", "nuage", "tapis"], "correctIndex": 0, "explanation_fa": "devoir = وظیفه و تکلیف." },
-      { "type": "mcq", "question": "La ____ actuelle est très préoccupée par les questions écologiques.", "options": ["génération", "voiture", "machine", "ordinateur"], "correctIndex": 0, "explanation_fa": "génération = نسل." },
-      { "type": "mcq", "question": "Il est très attaché à son pays d'____ et y retourne chaque été.", "options": ["origine", "passeport", "valise", "billet"], "correctIndex": 0, "explanation_fa": "origine = ریشه و اصالت." },
-      { "type": "mcq", "question": "L'____ des immigrants passe par l'apprentissage de la langue locale.", "options": ["intégration", "destruction", "explosion", "chute"], "correctIndex": 0, "explanation_fa": "intégration = ادغام و یکپارچگی." },
-      { "type": "binary", "question": "Une \"communauté\" regroupe des personnes partageant des intérêts ou un lieu de vie commun.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، communauté یعنی جامعه محلی یا گروه." },
-      { "type": "mcq", "question": "La devise de la République française est : Liberté, ____, Fraternité.", "options": ["Égalité", "Inégalité", "Différence", "Injustice"], "correctIndex": 0, "explanation_fa": "égalité = برابری." },
-      { "type": "mcq", "question": "Les manifestants sont dans la rue pour protester contre une ____ sociale.", "options": ["injustice", "justice", "équité", "vérité"], "correctIndex": 0, "explanation_fa": "injustice = بی‌عدالتی." },
-      { "type": "mcq", "question": "Refuser d'embaucher quelqu'un à cause de sa couleur de peau est une ____.", "options": ["discrimination", "acceptation", "tolérance", "respect"], "correctIndex": 0, "explanation_fa": "discrimination = تبعیض." },
-      { "type": "mcq", "question": "Le ____ mutuel est la base d'une relation de couple saine.", "options": ["respect", "mépris", "insulte", "haine"], "correctIndex": 0, "explanation_fa": "respect = احترام." },
-      { "type": "binary", "question": "La \"tolérance\" est le fait d'accepter les opinions ou les comportements différents des siens.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، tolérance یعنی مدارا و تساهل." },
-      { "type": "mcq", "question": "La loi protège les libertés fondamentales de chaque ____.", "options": ["individu", "groupe", "foule", "masse"], "correctIndex": 0, "explanation_fa": "individu = فرد." },
-      { "type": "mcq", "question": "Pendant la crise, l'effort ____ doit primer sur les intérêts personnels.", "options": ["collectif", "solitaire", "individuel", "personnel"], "correctIndex": 0, "explanation_fa": "collectif = جمعی و گروهی." },
-      { "type": "mcq", "question": "L'éducation à la ____ apprend aux jeunes le fonctionnement des institutions.", "options": ["citoyenneté", "tourisme", "voyage", "vacances"], "correctIndex": 0, "explanation_fa": "citoyenneté = شهروندی." },
-      { "type": "mcq", "question": "Le sentiment d'____ à une équipe sportive procure une grande joie.", "options": ["appartenance", "exclusion", "rejet", "solitude"], "correctIndex": 0, "explanation_fa": "appartenance = احساس تعلق." }
+      {
+        "type": "mcq",
+        "question": "Les réseaux sociaux ont profondément transformé notre ____ moderne.",
+        "options": [
+          "société",
+          "cuisine",
+          "forêt",
+          "chambre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "société = جامعه."
+      },
+      {
+        "type": "mcq",
+        "question": "À l'adolescence, on se pose beaucoup de questions sur son ____.",
+        "options": [
+          "identité",
+          "passeport",
+          "voiture",
+          "vélo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "identité = هویت."
+      },
+      {
+        "type": "binary",
+        "question": "Le \"droit\" désigne une permission ou une prérogative reconnue par la loi.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، droit در اینجا به معنای حق قانونی است."
+      },
+      {
+        "type": "mcq",
+        "question": "Payer ses impôts est un ____ civique pour chaque citoyen.",
+        "options": [
+          "devoir",
+          "gâteau",
+          "nuage",
+          "tapis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "devoir = وظیفه و تکلیف."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ actuelle est très préoccupée par les questions écologiques.",
+        "options": [
+          "génération",
+          "voiture",
+          "machine",
+          "ordinateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "génération = نسل."
+      },
+      {
+        "type": "mcq",
+        "question": "Il est très attaché à son pays d'____ et y retourne chaque été.",
+        "options": [
+          "origine",
+          "passeport",
+          "valise",
+          "billet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "origine = ریشه و اصالت."
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ des immigrants passe par l'apprentissage de la langue locale.",
+        "options": [
+          "intégration",
+          "destruction",
+          "explosion",
+          "chute"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "intégration = ادغام و یکپارچگی."
+      },
+      {
+        "type": "binary",
+        "question": "Une \"communauté\" regroupe des personnes partageant des intérêts ou un lieu de vie commun.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، communauté یعنی جامعه محلی یا گروه."
+      },
+      {
+        "type": "mcq",
+        "question": "La devise de la République française est : Liberté, ____, Fraternité.",
+        "options": [
+          "Égalité",
+          "Inégalité",
+          "Différence",
+          "Injustice"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "égalité = برابری."
+      },
+      {
+        "type": "mcq",
+        "question": "Les manifestants sont dans la rue pour protester contre une ____ sociale.",
+        "options": [
+          "injustice",
+          "justice",
+          "équité",
+          "vérité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "injustice = بی‌عدالتی."
+      },
+      {
+        "type": "mcq",
+        "question": "Refuser d'embaucher quelqu'un à cause de sa couleur de peau est une ____.",
+        "options": [
+          "discrimination",
+          "acceptation",
+          "tolérance",
+          "respect"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "discrimination = تبعیض."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ mutuel est la base d'une relation de couple saine.",
+        "options": [
+          "respect",
+          "mépris",
+          "insulte",
+          "haine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "respect = احترام."
+      },
+      {
+        "type": "binary",
+        "question": "La \"tolérance\" est le fait d'accepter les opinions ou les comportements différents des siens.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، tolérance یعنی مدارا و تساهل."
+      },
+      {
+        "type": "mcq",
+        "question": "La loi protège les libertés fondamentales de chaque ____.",
+        "options": [
+          "individu",
+          "groupe",
+          "foule",
+          "masse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "individu = فرد."
+      },
+      {
+        "type": "mcq",
+        "question": "Pendant la crise, l'effort ____ doit primer sur les intérêts personnels.",
+        "options": [
+          "collectif",
+          "solitaire",
+          "individuel",
+          "personnel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "collectif = جمعی و گروهی."
+      },
+      {
+        "type": "mcq",
+        "question": "L'éducation à la ____ apprend aux jeunes le fonctionnement des institutions.",
+        "options": [
+          "citoyenneté",
+          "tourisme",
+          "voyage",
+          "vacances"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "citoyenneté = شهروندی."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sentiment d'____ à une équipe sportive procure une grande joie.",
+        "options": [
+          "appartenance",
+          "exclusion",
+          "rejet",
+          "solitude"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "appartenance = احساس تعلق."
+      }
     ]
   }
 }
