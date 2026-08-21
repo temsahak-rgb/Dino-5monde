@@ -5,47 +5,301 @@
   "theme_fa": "دادگاه، جرم و سیستم قضایی",
   "icon": "👮",
   "inspiration": "Engrenages (série télévisée française - Spiral)",
-
   "words": [
-    { "fr": "juger", "fa": "قضاوت کردن / محاکمه کردن", "emoji": "⚖️", "difficulty": 3, "ex": "Le tribunal va juger cette affaire demain matin.", "ex_fa": "دادگاه فردا صبح این پرونده را محاکمه خواهد کرد." },
-    { "fr": "la justice", "fa": "عدالت / سیستم قضایی", "emoji": "🏛️", "difficulty": 3, "ex": "Il a fait appel à la justice pour défendre ses droits.", "ex_fa": "او برای دفاع از حقوقش به سیستم قضایی متوسل شد." },
-    { "fr": "innocent / innocente", "fa": "بی‌گناه", "emoji": "🕊️", "difficulty": 2, "ex": "L'accusé clame qu'il est totalement innocent.", "ex_fa": "متهم فریاد می‌زند که کاملاً بی‌گناه است." },
-    { "fr": "injuste", "fa": "ناعادلانه", "emoji": "⚖️", "difficulty": 3, "ex": "Cette décision de justice semble profondément injuste.", "ex_fa": "این تصمیم قضایی عمیقاً ناعادلانه به نظر می‌رسد." },
-    { "fr": "le mensonge", "fa": "دروغ", "emoji": "🤥", "difficulty": 3, "ex": "Le détecteur de mensonges a confirmé ses doutes.", "ex_fa": "دستگاه دروغ‌سنج شک‌های او را تایید کرد." },
-    { "fr": "mentir", "fa": "دروغ گفتن", "emoji": "🤐", "difficulty": 3, "ex": "Il est interdit de mentir devant un juge.", "ex_fa": "دروغ گفتن در برابر قاضی ممنوع است." },
-    { "fr": "la loi", "fa": "قانون", "emoji": "📜", "difficulty": 2, "ex": "Nul n'est censé ignorer la loi.", "ex_fa": "هیچ‌کس فرض بر این نیست که قانون را نداند (همه باید قانون را بدانند)." },
-    { "fr": "l'interdiction", "fa": "ممنوعیت", "emoji": "🚫", "difficulty": 4, "ex": "Le juge a prononcé l'interdiction de quitter le territoire.", "ex_fa": "قاضی ممنوعیت خروج از کشور را صادر کرد." },
-    { "fr": "justifier", "fa": "توجیه کردن / اثبات کردن", "emoji": "📑", "difficulty": 4, "ex": "Il doit justifier ses revenus devant le tribunal.", "ex_fa": "او باید درآمدش را در برابر دادگاه اثبات کند." },
-    { "fr": "identifier", "fa": "شناسایی کردن", "emoji": "🔍", "difficulty": 3, "ex": "La police a réussi à identifier le suspect.", "ex_fa": "پلیس موفق به شناسایی مظنون شد." },
-    { "fr": "l'identité", "fa": "هویت", "emoji": "🪪", "difficulty": 3, "ex": "Le policier a demandé ses papiers d'identité.", "ex_fa": "پلیس مدارک هویتی او را درخواست کرد." },
-    { "fr": "l'indice", "fa": "سرنخ / نشانه", "emoji": "🔎", "difficulty": 4, "ex": "Les enquêteurs ont trouvé un indice crucial sur place.", "ex_fa": "بازپرس‌یک سرنخ حیاتی در محل پیدا کردند." },
-    { "fr": "indiquer", "fa": "نشان دادن / اشاره کردن", "emoji": "👉", "difficulty": 3, "ex": "Les preuves indiquent clairement sa culpabilité.", "ex_fa": "مدارک به وضوح گناهکاری او را نشان می‌دهند." },
-    { "fr": "impliquer", "fa": "درگیر کردن / دست داشتن در جرم", "emoji": "🕸️", "difficulty": 4, "ex": "Ce scandale politique implique plusieurs ministres.", "ex_fa": "این رسوایی سیاسی چندین وزیر را درگیر کرده است." },
-    { "fr": "l'illusion", "fa": "توهم / فریب", "emoji": "🎭", "difficulty": 5, "ex": "Il se faisait des illusions sur la clémence du jury.", "ex_fa": "او درباره ارفاق هیئت منصفه دچار توهم شده بود." }
+    {
+      "fr": "juger",
+      "fa": "قضاوت کردن / محاکمه کردن",
+      "emoji": "⚖️",
+      "difficulty": 3,
+      "ex": "Le tribunal va juger cette affaire demain matin.",
+      "ex_fa": "دادگاه فردا صبح این پرونده را محاکمه خواهد کرد."
+    },
+    {
+      "fr": "la justice",
+      "fa": "عدالت / سیستم قضایی",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "Il a fait appel à la justice pour défendre ses droits.",
+      "ex_fa": "او برای دفاع از حقوقش به سیستم قضایی متوسل شد."
+    },
+    {
+      "fr": "innocent / innocente",
+      "fa": "بی‌گناه",
+      "emoji": "🕊️",
+      "difficulty": 2,
+      "ex": "L'accusé clame qu'il est totalement innocent.",
+      "ex_fa": "متهم فریاد می‌زند که کاملاً بی‌گناه است."
+    },
+    {
+      "fr": "injuste",
+      "fa": "ناعادلانه",
+      "emoji": "⚖️",
+      "difficulty": 3,
+      "ex": "Cette décision de justice semble profondément injuste.",
+      "ex_fa": "این تصمیم قضایی عمیقاً ناعادلانه به نظر می‌رسد."
+    },
+    {
+      "fr": "le mensonge",
+      "fa": "دروغ",
+      "emoji": "🤥",
+      "difficulty": 3,
+      "ex": "Le détecteur de mensonges a confirmé ses doutes.",
+      "ex_fa": "دستگاه دروغ‌سنج شک‌های او را تایید کرد."
+    },
+    {
+      "fr": "mentir",
+      "fa": "دروغ گفتن",
+      "emoji": "🤐",
+      "difficulty": 3,
+      "ex": "Il est interdit de mentir devant un juge.",
+      "ex_fa": "دروغ گفتن در برابر قاضی ممنوع است."
+    },
+    {
+      "fr": "la loi",
+      "fa": "قانون",
+      "emoji": "📜",
+      "difficulty": 2,
+      "ex": "Nul n'est censé ignorer la loi.",
+      "ex_fa": "هیچ‌کس فرض بر این نیست که قانون را نداند (همه باید قانون را بدانند)."
+    },
+    {
+      "fr": "l'interdiction",
+      "fa": "ممنوعیت",
+      "emoji": "🚫",
+      "difficulty": 4,
+      "ex": "Le juge a prononcé l'interdiction de quitter le territoire.",
+      "ex_fa": "قاضی ممنوعیت خروج از کشور را صادر کرد."
+    },
+    {
+      "fr": "justifier",
+      "fa": "توجیه کردن / اثبات کردن",
+      "emoji": "📑",
+      "difficulty": 4,
+      "ex": "Il doit justifier ses revenus devant le tribunal.",
+      "ex_fa": "او باید درآمدش را در برابر دادگاه اثبات کند."
+    },
+    {
+      "fr": "identifier",
+      "fa": "شناسایی کردن",
+      "emoji": "🔍",
+      "difficulty": 3,
+      "ex": "La police a réussi à identifier le suspect.",
+      "ex_fa": "پلیس موفق به شناسایی مظنون شد."
+    },
+    {
+      "fr": "l'identité",
+      "fa": "هویت",
+      "emoji": "🪪",
+      "difficulty": 3,
+      "ex": "Le policier a demandé ses papiers d'identité.",
+      "ex_fa": "پلیس مدارک هویتی او را درخواست کرد."
+    },
+    {
+      "fr": "l'indice",
+      "fa": "سرنخ / نشانه",
+      "emoji": "🔎",
+      "difficulty": 4,
+      "ex": "Les enquêteurs ont trouvé un indice crucial sur place.",
+      "ex_fa": "بازپرس‌یک سرنخ حیاتی در محل پیدا کردند."
+    },
+    {
+      "fr": "indiquer",
+      "fa": "نشان دادن / اشاره کردن",
+      "emoji": "👉",
+      "difficulty": 3,
+      "ex": "Les preuves indiquent clairement sa culpabilité.",
+      "ex_fa": "مدارک به وضوح گناهکاری او را نشان می‌دهند."
+    },
+    {
+      "fr": "impliquer",
+      "fa": "درگیر کردن / دست داشتن در جرم",
+      "emoji": "🕸️",
+      "difficulty": 4,
+      "ex": "Ce scandale politique implique plusieurs ministres.",
+      "ex_fa": "این رسوایی سیاسی چندین وزیر را درگیر کرده است."
+    },
+    {
+      "fr": "l'illusion",
+      "fa": "توهم / فریب",
+      "emoji": "🎭",
+      "difficulty": 5,
+      "ex": "Il se faisait des illusions sur la clémence du jury.",
+      "ex_fa": "او درباره ارفاق هیئت منصفه دچار توهم شده بود."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "Le procès du siècle",
       "title_fa": "محاکمه قرن",
       "text": "Aujourd'hui, le tribunal de Paris va {{BLANK_1}} un homme accusé de vol. La {{BLANK_2}} doit être égale pour tous les citoyens. L'accusé se défend et crie qu'il est {{BLANK_3}}. Son avocat trouve la preuve principale très {{BLANK_4}} et insuffisante. Le procureur affirme que le suspect a utilisé un {{BLANK_5}} pour tromper la victime. En effet, il a choisi de {{BLANK_6}} sur son alibi. Devant le juge, il faut toujours respecter la {{BLANK_7}}. L'{{BLANK_8}} de parler à la presse a été prononcée par le magistrat. Le suspect n'a pas pu {{BLANK_9}} la provenance de l'argent trouvé chez lui. Les caméras de surveillance ont permis d'{{BLANK_10}} formellement le voleur. Après vérification de son {{BLANK_11}}, la police a découvert qu'il utilisait un faux nom. Un petit {{BLANK_12}} laissé sur la scène du crime a été décisif. Les analyses ADN vont {{BLANK_13}} la direction de l'enquête. Cette affaire complexe va {{BLANK_14}} plusieurs complices dans la ville. L'accusé s'est finalement rendu compte qu'il n'avait aucune {{BLANK_15}} de s'en sortir sans avouer la vérité.",
       "blanks": [
-        { "id": 1, "answer": "juger", "options": ["juger", "cuisiner", "danser", "chanter"], "correctIndex": 0 },
-        { "id": 2, "answer": "justice", "options": ["justice", "musique", "peinture", "poésie"], "correctIndex": 0 },
-        { "id": 3, "answer": "innocent", "options": ["innocent", "coupable", "puni", "condamné"], "correctIndex": 0 },
-        { "id": 4, "answer": "injuste", "options": ["injuste", "équitable", "juste", "loyale"], "correctIndex": 0 },
-        { "id": 5, "answer": "mensonge", "options": ["mensonge", "vérité", "sincérité", "honnêteté"], "correctIndex": 0 },
-        { "id": 6, "answer": "mentir", "options": ["mentir", "avouer", "confesser", "dire"], "correctIndex": 0 },
-        { "id": 7, "answer": "loi", "options": ["loi", "chanson", "recette", "blague"], "correctIndex": 0 },
-        { "id": 8, "answer": "interdiction", "options": ["interdiction", "permission", "autorisation", "accord"], "correctIndex": 0 },
-        { "id": 9, "answer": "justifier", "options": ["justifier", "cacher", "nier", "refuser"], "correctIndex": 0 },
-        { "id": 10, "answer": "identifier", "options": ["identifier", "perdre", "oublier", "ignorer"], "correctIndex": 0 },
-        { "id": 11, "answer": "identité", "options": ["identité", "voiture", "maison", "bicyclette"], "correctIndex": 0 },
-        { "id": 12, "answer": "indice", "options": ["indice", "problème", "désastre", "catastrophe"], "correctIndex": 0 },
-        { "id": 13, "answer": "indiquer", "options": ["indiquer", "cacher", "effacer", "détruire"], "correctIndex": 0 },
-        { "id": 14, "answer": "impliquer", "options": ["impliquer", "exclure", "libérer", "sauver"], "correctIndex": 0 },
-        { "id": 15, "answer": "illusion", "options": ["illusion", "certitude", "vérité", "réalité"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "juger",
+          "options": [
+            "juger",
+            "cuisiner",
+            "danser",
+            "chanter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "justice",
+          "options": [
+            "justice",
+            "musique",
+            "peinture",
+            "poésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "innocent",
+          "options": [
+            "innocent",
+            "coupable",
+            "puni",
+            "condamné"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "injuste",
+          "options": [
+            "injuste",
+            "équitable",
+            "juste",
+            "loyale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mensonge",
+          "options": [
+            "mensonge",
+            "vérité",
+            "sincérité",
+            "honnêteté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "mentir",
+          "options": [
+            "mentir",
+            "avouer",
+            "confesser",
+            "dire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "loi",
+          "options": [
+            "loi",
+            "chanson",
+            "recette",
+            "blague"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "interdiction",
+          "options": [
+            "interdiction",
+            "permission",
+            "autorisation",
+            "accord"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "justifier",
+          "options": [
+            "justifier",
+            "cacher",
+            "nier",
+            "refuser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "identifier",
+          "options": [
+            "identifier",
+            "perdre",
+            "oublier",
+            "ignorer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "identité",
+          "options": [
+            "identité",
+            "voiture",
+            "maison",
+            "bicyclette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "indice",
+          "options": [
+            "indice",
+            "problème",
+            "désastre",
+            "catastrophe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "indiquer",
+          "options": [
+            "indiquer",
+            "cacher",
+            "effacer",
+            "détruire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "impliquer",
+          "options": [
+            "impliquer",
+            "exclure",
+            "libérer",
+            "sauver"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "illusion",
+          "options": [
+            "illusion",
+            "certitude",
+            "vérité",
+            "réalité"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Aujourd'hui, le tribunal de Paris va ___ un homme accusé de vol. La ___ doit être égale pour tous les citoyens. L'accusé se défend et crie qu'il est ___. Son avocat trouve la preuve principale très ___ et insuffisante. Le procureur affirme que le suspect a utilisé un ___ pour tromper la victime. En effet, il a choisi de ___ sur son alibi. Devant le juge, il faut toujours respecter la ___. L'___ de parler à la presse a été prononcée par le magistrat. Le suspect n'a pas pu ___ la provenance de l'argent trouvé chez lui. Les caméras de surveillance ont permis d'___ formellement le voleur. Après vérification de son ___, la police a découvert qu'il utilisait un faux nom. Un petit ___ laissé sur la scène du crime a été décisif. Les analyses ADN vont ___ la direction de l'enquête. Cette affaire complexe va ___ plusieurs complices dans la ville. L'accusé s'est finalement rendu compte qu'il n'avait aucune ___ de s'en sortir sans avouer la vérité."
     },
     "literary": {
       "title": "L'enquête de la capitaine Laure Berthaud",
@@ -53,45 +307,354 @@
       "inspiration": "Engrenages (Spiral) - Série policière et judiciaire française",
       "text": "La capitaine de police Laure Berthaud savait que la cour d'assises allait bientôt {{BLANK_1}} le dossier de la bande organisée du 19ème arrondissement. Pour elle, la {{BLANK_2}} n'était pas qu'un mot, c'était un combat quotidien dans les rues sombres de Paris. Le principal suspect, un certain Marco, hurlait dans la salle d'interrogatoire qu'il était parfaitement {{BLANK_3}}. Son avocat plaidait que l'arrestation musclée était profondément {{BLANK_4}} et violait ses droits fondamentaux. Mais Laure savait que Marco avait tissé un réseau de {{BLANK_5}} pour blanchir de l'argent sale. Il n'hésitait jamais à {{BLANK_6}} aux inspecteurs pour protéger son réseau. Dans ce commissariat, chacun savait que contourner la {{BLANK_7}} menait droit à la faute professionnelle. Une stricte {{BLANK_8}} de fouiller son entrepôt sans mandat avait d'abord bloqué l'enquête. Mais Marco n'avait pas pu {{BLANK_9}} la présence de son ADN sur l'arme du crime. Les experts de la police scientifique avaient réussi à l'{{BLANK_10}} grâce à une base de données européenne. La vérification de son {{BLANK_11}} avait révélé qu'il possédait trois passeports différents. Un simple mégot de cigarette, un {{BLANK_12}} négligé par les tueurs, avait tout changé. Les rapports balistiques allaient {{BLANK_13}} sans ambiguïté la direction du trafic d'armes. Ce coup de filet spectaculaire allait {{BLANK_14}} des élus locaux corrompus jusqu'au plus haut niveau. En cellule, Marco a perdu sa dernière {{BLANK_15}} : il a compris que son empire criminel s'effondrait définitivement.",
       "blanks": [
-        { "id": 1, "answer": "juger", "options": ["juger", "cuisiner", "danser", "chanter"], "correctIndex": 0 },
-        { "id": 2, "answer": "justice", "options": ["justice", "musique", "peinture", "poésie"], "correctIndex": 0 },
-        { "id": 3, "answer": "innocent", "options": ["innocent", "coupable", "puni", "condamné"], "correctIndex": 0 },
-        { "id": 4, "answer": "injuste", "options": ["injuste", "équitable", "juste", "loyale"], "correctIndex": 0 },
-        { "id": 5, "answer": "mensonges", "options": ["mensonges", "vérités", "sincérités", "honnêtetés"], "correctIndex": 0 },
-        { "id": 6, "answer": "mentir", "options": ["mentir", "avouer", "confesser", "dire"], "correctIndex": 0 },
-        { "id": 7, "answer": "loi", "options": ["loi", "chanson", "recette", "blague"], "correctIndex": 0 },
-        { "id": 8, "answer": "interdiction", "options": ["interdiction", "permission", "autorisation", "accord"], "correctIndex": 0 },
-        { "id": 9, "answer": "justifier", "options": ["justifier", "cacher", "nier", "refuser"], "correctIndex": 0 },
-        { "id": 10, "answer": "identifier", "options": ["identifier", "perdre", "oublier", "ignorer"], "correctIndex": 0 },
-        { "id": 11, "answer": "identité", "options": ["identité", "voiture", "maison", "bicyclette"], "correctIndex": 0 },
-        { "id": 12, "answer": "indice", "options": ["indice", "problème", "désastre", "catastrophe"], "correctIndex": 0 },
-        { "id": 13, "answer": "indiquer", "options": ["indiquer", "cacher", "effacer", "détruire"], "correctIndex": 0 },
-        { "id": 14, "answer": "impliquer", "options": ["impliquer", "exclure", "libérer", "sauver"], "correctIndex": 0 },
-        { "id": 15, "answer": "illusion", "options": ["illusion", "certitude", "vérité", "réalité"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "juger",
+          "options": [
+            "juger",
+            "cuisiner",
+            "danser",
+            "chanter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "justice",
+          "options": [
+            "justice",
+            "musique",
+            "peinture",
+            "poésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "innocent",
+          "options": [
+            "innocent",
+            "coupable",
+            "puni",
+            "condamné"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "injuste",
+          "options": [
+            "injuste",
+            "équitable",
+            "juste",
+            "loyale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mensonges",
+          "options": [
+            "mensonges",
+            "vérités",
+            "sincérités",
+            "honnêtetés"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "mentir",
+          "options": [
+            "mentir",
+            "avouer",
+            "confesser",
+            "dire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "loi",
+          "options": [
+            "loi",
+            "chanson",
+            "recette",
+            "blague"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "interdiction",
+          "options": [
+            "interdiction",
+            "permission",
+            "autorisation",
+            "accord"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "justifier",
+          "options": [
+            "justifier",
+            "cacher",
+            "nier",
+            "refuser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "identifier",
+          "options": [
+            "identifier",
+            "perdre",
+            "oublier",
+            "ignorer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "identité",
+          "options": [
+            "identité",
+            "voiture",
+            "maison",
+            "bicyclette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "indice",
+          "options": [
+            "indice",
+            "problème",
+            "désastre",
+            "catastrophe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "indiquer",
+          "options": [
+            "indiquer",
+            "cacher",
+            "effacer",
+            "détruire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "impliquer",
+          "options": [
+            "impliquer",
+            "exclure",
+            "libérer",
+            "sauver"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "illusion",
+          "options": [
+            "illusion",
+            "certitude",
+            "vérité",
+            "réalité"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "La capitaine de police Laure Berthaud savait que la cour d'assises allait bientôt ___ le dossier de la bande organisée du 19ème arrondissement. Pour elle, la ___ n'était pas qu'un mot, c'était un combat quotidien dans les rues sombres de Paris. Le principal suspect, un certain Marco, hurlait dans la salle d'interrogatoire qu'il était parfaitement ___. Son avocat plaidait que l'arrestation musclée était profondément ___ et violait ses droits fondamentaux. Mais Laure savait que Marco avait tissé un réseau de ___ pour blanchir de l'argent sale. Il n'hésitait jamais à ___ aux inspecteurs pour protéger son réseau. Dans ce commissariat, chacun savait que contourner la ___ menait droit à la faute professionnelle. Une stricte ___ de fouiller son entrepôt sans mandat avait d'abord bloqué l'enquête. Mais Marco n'avait pas pu ___ la présence de son ADN sur l'arme du crime. Les experts de la police scientifique avaient réussi à l'___ grâce à une base de données européenne. La vérification de son ___ avait révélé qu'il possédait trois passeports différents. Un simple mégot de cigarette, un ___ négligé par les tueurs, avait tout changé. Les rapports balistiques allaient ___ sans ambiguïté la direction du trafic d'armes. Ce coup de filet spectaculaire allait ___ des élus locaux corrompus jusqu'au plus haut niveau. En cellule, Marco a perdu sa dernière ___ : il a compris que son empire criminel s'effondrait définitivement."
     }
   },
-
   "quiz": {
     "title": "Quiz : Justice et Criminalité",
     "title_fa": "آزمون: عدالت و جرم",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "Le jury populaire va ____ l'accusé à la fin du procès.", "options": ["juger", "cuisiner", "danser", "chanter"], "correctIndex": 0, "explanation_fa": "juger = قضاوت کردن و محاکمه کردن." },
-      { "type": "mcq", "question": "Les avocats travaillent tous les jours au service de la ____.", "options": ["justice", "musique", "peinture", "poésie"], "correctIndex": 0, "explanation_fa": "justice = عدالت و سیستم قضایی." },
-      { "type": "binary", "question": "Une personne \"innocente\" est quelqu'un qui n'a pas commis le crime reproché.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، innocent یعنی بی‌گناه." },
-      { "type": "mcq", "question": "Payer une amende pour une erreur qu'on n'a pas commise est très ____.", "options": ["injuste", "équitable", "juste", "loyal"], "correctIndex": 0, "explanation_fa": "injuste = ناعادلانه." },
-      { "type": "mcq", "question": "Le politicien a été piégé par un ____ habile de ses adversaires.", "options": ["mensonge", "vérité", "sincérité", "honnêteté"], "correctIndex": 0, "explanation_fa": "mensonge = دروغ." },
-      { "type": "mcq", "question": "Il est formellement interdit de ____ sous serment devant un tribunal.", "options": ["mentir", "avouer", "confesser", "dire"], "correctIndex": 0, "explanation_fa": "mentir = دروغ گفتن." },
-      { "type": "mcq", "question": "Le rôle du parlement est de voter la ____ pour organiser la société.", "options": ["loi", "chanson", "recette", "blague"], "correctIndex": 0, "explanation_fa": "loi = قانون." },
-      { "type": "binary", "question": "Une \"interdiction\" est une autorisation officielle de faire quelque chose.", "options": ["Vrai", "Faux"], "correctIndex": 1, "explanation_fa": "interdiction یعنی ممنوعیت (متضاد autorisation)." },
-      { "type": "mcq", "question": "L'employé doit ____ ses frais de déplacement avec des factures.", "options": ["justifier", "cacher", "nier", "refuser"], "correctIndex": 0, "explanation_fa": "justifier = توجیه کردن و اثبات کردن با مدرک." },
-      { "type": "mcq", "question": "Les témoins ont réussi à ____ le voleur grâce à son tatouage.", "options": ["identifier", "perdre", "oublier", "ignorer"], "correctIndex": 0, "explanation_fa": "identifier = شناسایی کردن." },
-      { "type": "mcq", "question": "À l'aéroport, la police vérifie toujours votre carte d'____.", "options": ["identité", "voiture", "maison", "bicyclette"], "correctIndex": 0, "explanation_fa": "carte d'identité = کارت هویت." },
-      { "type": "mcq", "question": "Le détective a trouvé un ____ de pas dans la boue près de la fenêtre.", "options": ["indice", "problème", "désastre", "catastrophe"], "correctIndex": 0, "explanation_fa": "indice = سرنخ و نشانه." },
-      { "type": "binary", "question": "Le verbe \"indiquer\" signifie \"montrer ou désigner quelque chose\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، indiquer یعنی نشان دادن." },
-      { "type": "mcq", "question": "Cette affaire de corruption va ____ plusieurs hauts fonctionnaires.", "options": ["impliquer", "exclure", "libérer", "sauver"], "correctIndex": 0, "explanation_fa": "impliquer = درگیر کردن (در یک جرم یا رسوایی)." },
-      { "type": "mcq", "question": "Il se faisait des ____ en pensant que la police ne le retrouverait jamais.", "options": ["illusions", "certitudes", "vérités", "réalités"], "correctIndex": 0, "explanation_fa": "se faire des illusions = دچار توهم شدن / خیال‌بافی کردن." }
+      {
+        "type": "mcq",
+        "question": "Le jury populaire va ____ l'accusé à la fin du procès.",
+        "options": [
+          "juger",
+          "cuisiner",
+          "danser",
+          "chanter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "juger = قضاوت کردن و محاکمه کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "Les avocats travaillent tous les jours au service de la ____.",
+        "options": [
+          "justice",
+          "musique",
+          "peinture",
+          "poésie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "justice = عدالت و سیستم قضایی."
+      },
+      {
+        "type": "binary",
+        "question": "Une personne \"innocente\" est quelqu'un qui n'a pas commis le crime reproché.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، innocent یعنی بی‌گناه."
+      },
+      {
+        "type": "mcq",
+        "question": "Payer une amende pour une erreur qu'on n'a pas commise est très ____.",
+        "options": [
+          "injuste",
+          "équitable",
+          "juste",
+          "loyal"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "injuste = ناعادلانه."
+      },
+      {
+        "type": "mcq",
+        "question": "Le politicien a été piégé par un ____ habile de ses adversaires.",
+        "options": [
+          "mensonge",
+          "vérité",
+          "sincérité",
+          "honnêteté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "mensonge = دروغ."
+      },
+      {
+        "type": "mcq",
+        "question": "Il est formellement interdit de ____ sous serment devant un tribunal.",
+        "options": [
+          "mentir",
+          "avouer",
+          "confesser",
+          "dire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "mentir = دروغ گفتن."
+      },
+      {
+        "type": "mcq",
+        "question": "Le rôle du parlement est de voter la ____ pour organiser la société.",
+        "options": [
+          "loi",
+          "chanson",
+          "recette",
+          "blague"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "loi = قانون."
+      },
+      {
+        "type": "binary",
+        "question": "Une \"interdiction\" est une autorisation officielle de faire quelque chose.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "interdiction یعنی ممنوعیت (متضاد autorisation)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'employé doit ____ ses frais de déplacement avec des factures.",
+        "options": [
+          "justifier",
+          "cacher",
+          "nier",
+          "refuser"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "justifier = توجیه کردن و اثبات کردن با مدرک."
+      },
+      {
+        "type": "mcq",
+        "question": "Les témoins ont réussi à ____ le voleur grâce à son tatouage.",
+        "options": [
+          "identifier",
+          "perdre",
+          "oublier",
+          "ignorer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "identifier = شناسایی کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "À l'aéroport, la police vérifie toujours votre carte d'____.",
+        "options": [
+          "identité",
+          "voiture",
+          "maison",
+          "bicyclette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "carte d'identité = کارت هویت."
+      },
+      {
+        "type": "mcq",
+        "question": "Le détective a trouvé un ____ de pas dans la boue près de la fenêtre.",
+        "options": [
+          "indice",
+          "problème",
+          "désastre",
+          "catastrophe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "indice = سرنخ و نشانه."
+      },
+      {
+        "type": "binary",
+        "question": "Le verbe \"indiquer\" signifie \"montrer ou désigner quelque chose\".",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، indiquer یعنی نشان دادن."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette affaire de corruption va ____ plusieurs hauts fonctionnaires.",
+        "options": [
+          "impliquer",
+          "exclure",
+          "libérer",
+          "sauver"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "impliquer = درگیر کردن (در یک جرم یا رسوایی)."
+      },
+      {
+        "type": "mcq",
+        "question": "Il se faisait des ____ en pensant que la police ne le retrouverait jamais.",
+        "options": [
+          "illusions",
+          "certitudes",
+          "vérités",
+          "réalités"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "se faire des illusions = دچار توهم شدن / خیال‌بافی کردن."
+      }
     ]
   }
 }
