@@ -328,12 +328,27 @@
                 }
 
                 if (story.text && !story.text_fa) {
-                    log(`    🔄 متن (با blanks)...`, 'info');
-                    const cleanText = story.text.replace(/\{\{BLANK_\d+\}\}/g, '___');
-                    story.text_fa = await translate(cleanText);
-                    await sleep(delay);
-                    changed = true;
-                }
+    log(`    🔄 متن (با blanks) - تقسیم به جملات...`, 'info');
+    
+    // جایگزینی blanks با placeholder
+    const cleanText = story.text.replace(/\{\{BLANK_\d+\}\}/g, '___');
+    
+    // تقسیم به جملات (بر اساس نقطه، علامت سوال، علامت تعجب)
+    const sentences = cleanText.match(/[^.!?]+[.!?]+/g) || [cleanText];
+    const translatedSentences = [];
+    
+    for (const sentence of sentences) {
+        if (sentence.trim()) {
+            const translated = await translate(sentence.trim());
+            translatedSentences.push(translated);
+            await sleep(delay);
+        }
+    }
+    
+    story.text_fa = translatedSentences.join(' ');
+    changed = true;
+    log(`    ✅ ترجمه شد (${sentences.length} جمله)`, 'success');
+}
 
                 if (story.paragraphs) {
                     for (const para of story.paragraphs) {
