@@ -5,47 +5,301 @@
   "theme_fa": "تحصیلات، پژوهش و مستندات",
   "icon": "🎓",
   "inspiration": "Le Cercle des Poètes Disparus (film de Peter Weir)",
-
   "words": [
-    { "fr": "l'éducation", "fa": "آموزش و پرورش / تربیت", "emoji": "🏫", "difficulty": 3, "ex": "L'éducation nationale est une priorité pour le gouvernement.", "ex_fa": "آموزش و پرورش ملی یک اولویت برای دولت است." },
-    { "fr": "enseigner", "fa": "تدریس کردن / آموزش دادن", "emoji": "👩‍🏫", "difficulty": 2, "ex": "Il enseigne la littérature française à l'université.", "ex_fa": "او ادبیات فرانسه را در دانشگاه تدریس می‌کند." },
-    { "fr": "les études", "fa": "تحصیلات / مطالعات", "emoji": "📚", "difficulty": 2, "ex": "Elle poursuit ses études de médecine à Paris.", "ex_fa": "او تحصیلات پزشکی‌اش را در پاریس ادامه می‌دهد." },
-    { "fr": "le diplôme", "fa": "مدرک تحصیلی", "emoji": "📜", "difficulty": 2, "ex": "Obtenir un diplôme est essentiel pour trouver un bon emploi.", "ex_fa": "گرفتن مدرک تحصیلی برای پیدا کردن یک شغل خوب ضروری است." },
-    { "fr": "le document", "fa": "سند / مدرک", "emoji": "📄", "difficulty": 2, "ex": "Veuillez signer ce document officiel.", "ex_fa": "لطفاً این سند رسمی را امضا کنید." },
-    { "fr": "le documentaire", "fa": "فیلم مستند", "emoji": "🎬", "difficulty": 3, "ex": "Nous avons regardé un documentaire sur la nature.", "ex_fa": "ما یک فیلم مستند درباره طبیعت تماشا کردیم." },
-    { "fr": "les données", "fa": "داده‌ها / اطلاعات", "emoji": "📊", "difficulty": 4, "ex": "Le chercheur analyse les données statistiques.", "ex_fa": "محقق داده‌های آماری را تحلیل می‌کند." },
-    { "fr": "l'explication", "fa": "توضیح / تشریح", "emoji": "💡", "difficulty": 3, "ex": "Le professeur a donné une explication claire.", "ex_fa": "استاد یک توضیح واضح داد." },
-    { "fr": "examiner", "fa": "بررسی کردن / معاینه کردن", "emoji": "🔍", "difficulty": 3, "ex": "Le jury va examiner les dossiers des candidats.", "ex_fa": "هیئت داوران پرونده‌های داوطلبان را بررسی خواهد کرد." },
-    { "fr": "l'erreur", "fa": "اشتباه / خطا", "emoji": "❌", "difficulty": 2, "ex": "Faire une erreur est humain et fait partie de l'apprentissage.", "ex_fa": "اشتباه کردن انسانی است و بخشی از یادگیری است." },
-    { "fr": "l'expérience", "fa": "تجربه / آزمایش علمی", "emoji": "🧪", "difficulty": 3, "ex": "Les étudiants font une expérience en laboratoire.", "ex_fa": "دانشجویان یک آزمایش علمی در آزمایشگاه انجام می‌دهند." },
-    { "fr": "expérimental", "fa": "تجربی / آزمایشی", "emoji": "🔬", "difficulty": 4, "ex": "Ce nouveau traitement médical est encore expérimental.", "ex_fa": "این درمان پزشکی جدید هنوز آزمایشی است." },
-    { "fr": "explorer", "fa": "کاوش کردن / بررسی کردن", "emoji": "🧭", "difficulty": 3, "ex": "Il faut explorer de nouvelles méthodes d'enseignement.", "ex_fa": "باید روش‌های تدریس جدیدی را کاوش کرد." },
-    { "fr": "l'exploration", "fa": "کاوش / اکتشاف", "emoji": "🗺️", "difficulty": 4, "ex": "L'exploration spatiale coûte très cher.", "ex_fa": "کاوش فضایی بسیار پرهزینه است." },
-    { "fr": "établi / établie", "fa": "تثبیت شده / مشخص", "emoji": "✅", "difficulty": 4, "ex": "Les règles établies par l'école sont strictes.", "ex_fa": "قوانین تثبیت شده توسط مدرسه سخت‌گیرانه هستند." }
+    {
+      "fr": "l'éducation",
+      "fa": "آموزش و پرورش / تربیت",
+      "emoji": "🏫",
+      "difficulty": 3,
+      "ex": "L'éducation nationale est une priorité pour le gouvernement.",
+      "ex_fa": "آموزش و پرورش ملی یک اولویت برای دولت است."
+    },
+    {
+      "fr": "enseigner",
+      "fa": "تدریس کردن / آموزش دادن",
+      "emoji": "👩‍🏫",
+      "difficulty": 2,
+      "ex": "Il enseigne la littérature française à l'université.",
+      "ex_fa": "او ادبیات فرانسه را در دانشگاه تدریس می‌کند."
+    },
+    {
+      "fr": "les études",
+      "fa": "تحصیلات / مطالعات",
+      "emoji": "📚",
+      "difficulty": 2,
+      "ex": "Elle poursuit ses études de médecine à Paris.",
+      "ex_fa": "او تحصیلات پزشکی‌اش را در پاریس ادامه می‌دهد."
+    },
+    {
+      "fr": "le diplôme",
+      "fa": "مدرک تحصیلی",
+      "emoji": "📜",
+      "difficulty": 2,
+      "ex": "Obtenir un diplôme est essentiel pour trouver un bon emploi.",
+      "ex_fa": "گرفتن مدرک تحصیلی برای پیدا کردن یک شغل خوب ضروری است."
+    },
+    {
+      "fr": "le document",
+      "fa": "سند / مدرک",
+      "emoji": "📄",
+      "difficulty": 2,
+      "ex": "Veuillez signer ce document officiel.",
+      "ex_fa": "لطفاً این سند رسمی را امضا کنید."
+    },
+    {
+      "fr": "le documentaire",
+      "fa": "فیلم مستند",
+      "emoji": "🎬",
+      "difficulty": 3,
+      "ex": "Nous avons regardé un documentaire sur la nature.",
+      "ex_fa": "ما یک فیلم مستند درباره طبیعت تماشا کردیم."
+    },
+    {
+      "fr": "les données",
+      "fa": "داده‌ها / اطلاعات",
+      "emoji": "📊",
+      "difficulty": 4,
+      "ex": "Le chercheur analyse les données statistiques.",
+      "ex_fa": "محقق داده‌های آماری را تحلیل می‌کند."
+    },
+    {
+      "fr": "l'explication",
+      "fa": "توضیح / تشریح",
+      "emoji": "💡",
+      "difficulty": 3,
+      "ex": "Le professeur a donné une explication claire.",
+      "ex_fa": "استاد یک توضیح واضح داد."
+    },
+    {
+      "fr": "examiner",
+      "fa": "بررسی کردن / معاینه کردن",
+      "emoji": "🔍",
+      "difficulty": 3,
+      "ex": "Le jury va examiner les dossiers des candidats.",
+      "ex_fa": "هیئت داوران پرونده‌های داوطلبان را بررسی خواهد کرد."
+    },
+    {
+      "fr": "l'erreur",
+      "fa": "اشتباه / خطا",
+      "emoji": "❌",
+      "difficulty": 2,
+      "ex": "Faire une erreur est humain et fait partie de l'apprentissage.",
+      "ex_fa": "اشتباه کردن انسانی است و بخشی از یادگیری است."
+    },
+    {
+      "fr": "l'expérience",
+      "fa": "تجربه / آزمایش علمی",
+      "emoji": "🧪",
+      "difficulty": 3,
+      "ex": "Les étudiants font une expérience en laboratoire.",
+      "ex_fa": "دانشجویان یک آزمایش علمی در آزمایشگاه انجام می‌دهند."
+    },
+    {
+      "fr": "expérimental",
+      "fa": "تجربی / آزمایشی",
+      "emoji": "🔬",
+      "difficulty": 4,
+      "ex": "Ce nouveau traitement médical est encore expérimental.",
+      "ex_fa": "این درمان پزشکی جدید هنوز آزمایشی است."
+    },
+    {
+      "fr": "explorer",
+      "fa": "کاوش کردن / بررسی کردن",
+      "emoji": "🧭",
+      "difficulty": 3,
+      "ex": "Il faut explorer de nouvelles méthodes d'enseignement.",
+      "ex_fa": "باید روش‌های تدریس جدیدی را کاوش کرد."
+    },
+    {
+      "fr": "l'exploration",
+      "fa": "کاوش / اکتشاف",
+      "emoji": "🗺️",
+      "difficulty": 4,
+      "ex": "L'exploration spatiale coûte très cher.",
+      "ex_fa": "کاوش فضایی بسیار پرهزینه است."
+    },
+    {
+      "fr": "établi / établie",
+      "fa": "تثبیت شده / مشخص",
+      "emoji": "✅",
+      "difficulty": 4,
+      "ex": "Les règles établies par l'école sont strictes.",
+      "ex_fa": "قوانین تثبیت شده توسط مدرسه سخت‌گیرانه هستند."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "À la bibliothèque universitaire",
       "title_fa": "در کتابخانه دانشگاه",
       "text": "Thomas est à la bibliothèque pour ses {{BLANK_1}}. Il veut réussir ses examens et obtenir son {{BLANK_2}} en biologie. Sur son bureau, il y a un {{BLANK_3}} important sur la génétique. Hier soir, il a regardé un {{BLANK_4}} sur le même sujet à la télévision. Maintenant, il analyse les {{BLANK_5}} de son dernier test. Il ne comprend pas une partie et demande une {{BLANK_6}} au bibliothécaire. L'homme {{BLANK_7}} le texte avec attention. Il trouve une petite {{BLANK_8}} dans le calcul de Thomas. Thomas décide de refaire l'{{BLANK_9}} en laboratoire. C'est un projet {{BLANK_10}} qui n'a jamais été testé avant. Il adore {{BLANK_11}} des idées originales. Cette {{BLANK_12}} intellectuelle le passionne. Pour lui, l'{{BLANK_13}} ne se limite pas aux livres. Son professeur préféré {{BLANK_14}} avec beaucoup de passion. Grâce à lui, Thomas a remis en question chaque principe {{BLANK_15}} par les manuels scolaires.",
       "blanks": [
-        { "id": 1, "answer": "études", "options": ["études", "vacances", "loisirs", "siestes"], "correctIndex": 0 },
-        { "id": 2, "answer": "diplôme", "options": ["diplôme", "passeport", "ticket", "facture"], "correctIndex": 0 },
-        { "id": 3, "answer": "document", "options": ["document", "gâteau", "vêtement", "nuage"], "correctIndex": 0 },
-        { "id": 4, "answer": "documentaire", "options": ["documentaire", "comédie", "fiction", "dessin animé"], "correctIndex": 0 },
-        { "id": 5, "answer": "données", "options": ["données", "chansons", "poésies", "blagues"], "correctIndex": 0 },
-        { "id": 6, "answer": "explication", "options": ["explication", "insulte", "menace", "secret"], "correctIndex": 0 },
-        { "id": 7, "answer": "examine", "options": ["examine", "ignore", "détruit", "cache"], "correctIndex": 0 },
-        { "id": 8, "answer": "erreur", "options": ["erreur", "vérité", "réussite", "perfection"], "correctIndex": 0 },
-        { "id": 9, "answer": "expérience", "options": ["expérience", "théorie", "fiction", "illusion"], "correctIndex": 0 },
-        { "id": 10, "answer": "expérimental", "options": ["expérimental", "définitif", "éternel", "historique"], "correctIndex": 0 },
-        { "id": 11, "answer": "explorer", "options": ["explorer", "ignorer", "éviter", "fuir"], "correctIndex": 0 },
-        { "id": 12, "answer": "exploration", "options": ["exploration", "sédentarité", "routine", "immobilité"], "correctIndex": 0 },
-        { "id": 13, "answer": "éducation", "options": ["éducation", "ignorance", "paresse", "bêtise"], "correctIndex": 0 },
-        { "id": 14, "answer": "enseigne", "options": ["enseigne", "cache", "oublie", "détruit"], "correctIndex": 0 },
-        { "id": 15, "answer": "établi", "options": ["établi", "inventé", "imaginaire", "provisoire"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "études",
+          "options": [
+            "études",
+            "vacances",
+            "loisirs",
+            "siestes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "diplôme",
+          "options": [
+            "diplôme",
+            "passeport",
+            "ticket",
+            "facture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "document",
+          "options": [
+            "document",
+            "gâteau",
+            "vêtement",
+            "nuage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "documentaire",
+          "options": [
+            "documentaire",
+            "comédie",
+            "fiction",
+            "dessin animé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "données",
+          "options": [
+            "données",
+            "chansons",
+            "poésies",
+            "blagues"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "explication",
+          "options": [
+            "explication",
+            "insulte",
+            "menace",
+            "secret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "examine",
+          "options": [
+            "examine",
+            "ignore",
+            "détruit",
+            "cache"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "erreur",
+          "options": [
+            "erreur",
+            "vérité",
+            "réussite",
+            "perfection"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "expérience",
+          "options": [
+            "expérience",
+            "théorie",
+            "fiction",
+            "illusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "expérimental",
+          "options": [
+            "expérimental",
+            "définitif",
+            "éternel",
+            "historique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "explorer",
+          "options": [
+            "explorer",
+            "ignorer",
+            "éviter",
+            "fuir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "exploration",
+          "options": [
+            "exploration",
+            "sédentarité",
+            "routine",
+            "immobilité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "éducation",
+          "options": [
+            "éducation",
+            "ignorance",
+            "paresse",
+            "bêtise"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "enseigne",
+          "options": [
+            "enseigne",
+            "cache",
+            "oublie",
+            "détruit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "établi",
+          "options": [
+            "établi",
+            "inventé",
+            "imaginaire",
+            "provisoire"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Thomas est à la bibliothèque pour ses ___. Il veut réussir ses examens et obtenir son ___ en biologie. Sur son bureau, il y a un ___ important sur la génétique. Hier soir, il a regardé un ___ sur le même sujet à la télévision. Maintenant, il analyse les ___ de son dernier test. Il ne comprend pas une partie et demande une ___ au bibliothécaire. L'homme ___ le texte avec attention. Il trouve une petite ___ dans le calcul de Thomas. Thomas décide de refaire l'___ en laboratoire. C'est un projet ___ qui n'a jamais été testé avant. Il adore ___ des idées originales. Cette ___ intellectuelle le passionne. Pour lui, l'___ ne se limite pas aux livres. Son professeur préféré ___ avec beaucoup de passion. Grâce à lui, Thomas a remis en question chaque principe ___ par les manuels scolaires."
     },
     "literary": {
       "title": "Le cours de Monsieur Keating",
@@ -53,45 +307,354 @@
       "inspiration": "Le Cercle des Poètes Disparus (Dead Poets Society)",
       "text": "Monsieur Keating voulait révolutionner l'{{BLANK_1}} traditionnelle à l'académie de Welton. Il adorait {{BLANK_2}} la poésie d'une manière totalement différente. Ses élèves faisaient des {{BLANK_3}} classiques très rigides, mais il leur a dit qu'un simple {{BLANK_4}} en papier ne définissait pas leur valeur humaine. Un jour, il a sorti un vieux {{BLANK_5}} de sa jeunesse, une photo de classe qui ressemblait à un {{BLANK_6}} sur le temps qui passe. Il a analysé les {{BLANK_7}} biographiques de ces anciens élèves, dont beaucoup étaient morts. Il a donné une {{BLANK_8}} bouleversante sur le sens du \"Carpe Diem\". Il a {{BLANK_9}} les visages de ses étudiants et leur a dit que faire une {{BLANK_10}} était la seule façon d'avancer. Pour lui, la vie n'était pas une théorie, mais une {{BLANK_11}} quotidienne. Il a proposé un exercice {{BLANK_12}} : monter sur les bureaux pour voir le monde sous un autre angle. Il les a poussés à {{BLANK_13}} leurs propres émotions et à écrire leurs propres vers. Cette {{BLANK_14}} intérieure a complètement changé leur vision de l'existence. Les règles strictes {{BLANK_15}} par la direction de l'école n'avaient plus aucune importance face à l'éveil de leurs esprits.",
       "blanks": [
-        { "id": 1, "answer": "éducation", "options": ["éducation", "ignorance", "paresse", "bêtise"], "correctIndex": 0 },
-        { "id": 2, "answer": "enseigner", "options": ["enseigner", "cacher", "taire", "oublier"], "correctIndex": 0 },
-        { "id": 3, "answer": "études", "options": ["études", "vacances", "loisirs", "siestes"], "correctIndex": 0 },
-        { "id": 4, "answer": "diplôme", "options": ["diplôme", "passeport", "ticket", "facture"], "correctIndex": 0 },
-        { "id": 5, "answer": "document", "options": ["document", "gâteau", "vêtement", "nuage"], "correctIndex": 0 },
-        { "id": 6, "answer": "documentaire", "options": ["documentaire", "comédie", "fiction", "dessin animé"], "correctIndex": 0 },
-        { "id": 7, "answer": "données", "options": ["données", "chansons", "poésies", "blagues"], "correctIndex": 0 },
-        { "id": 8, "answer": "explication", "options": ["explication", "insulte", "menace", "secret"], "correctIndex": 0 },
-        { "id": 9, "answer": "examiné", "options": ["examiné", "ignoré", "détruit", "caché"], "correctIndex": 0 },
-        { "id": 10, "answer": "erreur", "options": ["erreur", "vérité", "réussite", "perfection"], "correctIndex": 0 },
-        { "id": 11, "answer": "expérience", "options": ["expérience", "théorie", "fiction", "illusion"], "correctIndex": 0 },
-        { "id": 12, "answer": "expérimental", "options": ["expérimental", "définitif", "éternel", "historique"], "correctIndex": 0 },
-        { "id": 13, "answer": "explorer", "options": ["explorer", "ignorer", "éviter", "fuir"], "correctIndex": 0 },
-        { "id": 14, "answer": "exploration", "options": ["exploration", "sédentarité", "routine", "immobilité"], "correctIndex": 0 },
-        { "id": 15, "answer": "établies", "options": ["établies", "inventées", "imaginaires", "provisoires"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "éducation",
+          "options": [
+            "éducation",
+            "ignorance",
+            "paresse",
+            "bêtise"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "enseigner",
+          "options": [
+            "enseigner",
+            "cacher",
+            "taire",
+            "oublier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "études",
+          "options": [
+            "études",
+            "vacances",
+            "loisirs",
+            "siestes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "diplôme",
+          "options": [
+            "diplôme",
+            "passeport",
+            "ticket",
+            "facture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "document",
+          "options": [
+            "document",
+            "gâteau",
+            "vêtement",
+            "nuage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "documentaire",
+          "options": [
+            "documentaire",
+            "comédie",
+            "fiction",
+            "dessin animé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "données",
+          "options": [
+            "données",
+            "chansons",
+            "poésies",
+            "blagues"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "explication",
+          "options": [
+            "explication",
+            "insulte",
+            "menace",
+            "secret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "examiné",
+          "options": [
+            "examiné",
+            "ignoré",
+            "détruit",
+            "caché"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "erreur",
+          "options": [
+            "erreur",
+            "vérité",
+            "réussite",
+            "perfection"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "expérience",
+          "options": [
+            "expérience",
+            "théorie",
+            "fiction",
+            "illusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "expérimental",
+          "options": [
+            "expérimental",
+            "définitif",
+            "éternel",
+            "historique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "explorer",
+          "options": [
+            "explorer",
+            "ignorer",
+            "éviter",
+            "fuir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "exploration",
+          "options": [
+            "exploration",
+            "sédentarité",
+            "routine",
+            "immobilité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "établies",
+          "options": [
+            "établies",
+            "inventées",
+            "imaginaires",
+            "provisoires"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Monsieur Keating voulait révolutionner l'___ traditionnelle à l'académie de Welton. Il adorait ___ la poésie d'une manière totalement différente. Ses élèves faisaient des ___ classiques très rigides, mais il leur a dit qu'un simple ___ en papier ne définissait pas leur valeur humaine. Un jour, il a sorti un vieux ___ de sa jeunesse, une photo de classe qui ressemblait à un ___ sur le temps qui passe. Il a analysé les ___ biographiques de ces anciens élèves, dont beaucoup étaient morts. Il a donné une ___ bouleversante sur le sens du \"Carpe Diem\". Il a ___ les visages de ses étudiants et leur a dit que faire une ___ était la seule façon d'avancer. Pour lui, la vie n'était pas une théorie, mais une ___ quotidienne. Il a proposé un exercice ___ : monter sur les bureaux pour voir le monde sous un autre angle. Il les a poussés à ___ leurs propres émotions et à écrire leurs propres vers. Cette ___ intérieure a complètement changé leur vision de l'existence. Les règles strictes ___ par la direction de l'école n'avaient plus aucune importance face à l'éveil de leurs esprits."
     }
   },
-
   "quiz": {
     "title": "Quiz : Éducation et Recherche",
     "title_fa": "آزمون: آموزش و پژوهش",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "Le ministère de l'____ a annoncé des réformes pour les écoles primaires.", "options": ["éducation", "ignorance", "paresse", "bêtise"], "correctIndex": 0, "explanation_fa": "éducation = آموزش و پرورش." },
-      { "type": "mcq", "question": "Ma sœur ____ les mathématiques dans un lycée depuis dix ans.", "options": ["enseigne", "cache", "oublie", "détruit"], "correctIndex": 0, "explanation_fa": "enseigner = تدریس کردن." },
-      { "type": "binary", "question": "Le mot \"études\" au pluriel désigne le parcours universitaire ou scolaire.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، les études به معنای تحصیلات است." },
-      { "type": "mcq", "question": "Après quatre ans de travail acharné, il a enfin reçu son ____ d'ingénieur.", "options": ["diplôme", "passeport", "ticket", "facture"], "correctIndex": 0, "explanation_fa": "diplôme = مدرک تحصیلی." },
-      { "type": "mcq", "question": "Veuillez remplir et signer ce ____ avant de commencer l'examen.", "options": ["document", "gâteau", "vêtement", "nuage"], "correctIndex": 0, "explanation_fa": "document = سند و مدرک." },
-      { "type": "mcq", "question": "Hier soir, la télévision a diffusé un excellent ____ sur les fonds marins.", "options": ["documentaire", "comédie", "fiction", "dessin animé"], "correctIndex": 0, "explanation_fa": "documentaire = فیلم مستند." },
-      { "type": "mcq", "question": "Le scientifique a collecté les ____ nécessaires pour prouver son hypothèse.", "options": ["données", "chansons", "poésies", "blagues"], "correctIndex": 0, "explanation_fa": "données = داده‌ها و اطلاعات." },
-      { "type": "binary", "question": "Une \"explication\" sert à rendre quelque chose de clair et compréhensible.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، explication یعنی توضیح و تشریح." },
-      { "type": "mcq", "question": "Le médecin doit ____ le patient avant de prescrire un traitement.", "options": ["examiner", "ignorer", "détruire", "cacher"], "correctIndex": 0, "explanation_fa": "examiner = معاینه و بررسی کردن." },
-      { "type": "mcq", "question": "Il est normal de faire une ____ quand on apprend une nouvelle langue.", "options": ["erreur", "vérité", "réussite", "perfection"], "correctIndex": 0, "explanation_fa": "erreur = اشتباه و خطا." },
-      { "type": "mcq", "question": "En cours de chimie, nous avons fait une ____ avec des produits dangereux.", "options": ["expérience", "théorie", "fiction", "illusion"], "correctIndex": 0, "explanation_fa": "expérience = آزمایش علمی." },
-      { "type": "mcq", "question": "Ce nouveau vaccin est encore au stade ____, il n'est pas vendu en pharmacie.", "options": ["expérimental", "définitif", "éternel", "historique"], "correctIndex": 0, "explanation_fa": "expérimental = آزمایشی و تجربی." },
-      { "type": "mcq", "question": "Les archéologues continuent d'____ les ruines de cette cité antique.", "options": ["explorer", "ignorer", "éviter", "fuir"], "correctIndex": 0, "explanation_fa": "explorer = کاوش و بررسی کردن." },
-      { "type": "binary", "question": "L'\"exploration\" spatiale désigne l'envoi de missions dans l'espace.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، exploration یعنی کاوش و اکتشاف." },
-      { "type": "mcq", "question": "Il a remis en question les faits ____ par les anciens manuels d'histoire.", "options": ["établis", "inventés", "imaginaires", "provisoires"], "correctIndex": 0, "explanation_fa": "établi = تثبیت شده و پذیرفته شده." }
+      {
+        "type": "mcq",
+        "question": "Le ministère de l'____ a annoncé des réformes pour les écoles primaires.",
+        "options": [
+          "éducation",
+          "ignorance",
+          "paresse",
+          "bêtise"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "éducation = آموزش و پرورش."
+      },
+      {
+        "type": "mcq",
+        "question": "Ma sœur ____ les mathématiques dans un lycée depuis dix ans.",
+        "options": [
+          "enseigne",
+          "cache",
+          "oublie",
+          "détruit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "enseigner = تدریس کردن."
+      },
+      {
+        "type": "binary",
+        "question": "Le mot \"études\" au pluriel désigne le parcours universitaire ou scolaire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، les études به معنای تحصیلات است."
+      },
+      {
+        "type": "mcq",
+        "question": "Après quatre ans de travail acharné, il a enfin reçu son ____ d'ingénieur.",
+        "options": [
+          "diplôme",
+          "passeport",
+          "ticket",
+          "facture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "diplôme = مدرک تحصیلی."
+      },
+      {
+        "type": "mcq",
+        "question": "Veuillez remplir et signer ce ____ avant de commencer l'examen.",
+        "options": [
+          "document",
+          "gâteau",
+          "vêtement",
+          "nuage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "document = سند و مدرک."
+      },
+      {
+        "type": "mcq",
+        "question": "Hier soir, la télévision a diffusé un excellent ____ sur les fonds marins.",
+        "options": [
+          "documentaire",
+          "comédie",
+          "fiction",
+          "dessin animé"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "documentaire = فیلم مستند."
+      },
+      {
+        "type": "mcq",
+        "question": "Le scientifique a collecté les ____ nécessaires pour prouver son hypothèse.",
+        "options": [
+          "données",
+          "chansons",
+          "poésies",
+          "blagues"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "données = داده‌ها و اطلاعات."
+      },
+      {
+        "type": "binary",
+        "question": "Une \"explication\" sert à rendre quelque chose de clair et compréhensible.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، explication یعنی توضیح و تشریح."
+      },
+      {
+        "type": "mcq",
+        "question": "Le médecin doit ____ le patient avant de prescrire un traitement.",
+        "options": [
+          "examiner",
+          "ignorer",
+          "détruire",
+          "cacher"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "examiner = معاینه و بررسی کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "Il est normal de faire une ____ quand on apprend une nouvelle langue.",
+        "options": [
+          "erreur",
+          "vérité",
+          "réussite",
+          "perfection"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "erreur = اشتباه و خطا."
+      },
+      {
+        "type": "mcq",
+        "question": "En cours de chimie, nous avons fait une ____ avec des produits dangereux.",
+        "options": [
+          "expérience",
+          "théorie",
+          "fiction",
+          "illusion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "expérience = آزمایش علمی."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce nouveau vaccin est encore au stade ____, il n'est pas vendu en pharmacie.",
+        "options": [
+          "expérimental",
+          "définitif",
+          "éternel",
+          "historique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "expérimental = آزمایشی و تجربی."
+      },
+      {
+        "type": "mcq",
+        "question": "Les archéologues continuent d'____ les ruines de cette cité antique.",
+        "options": [
+          "explorer",
+          "ignorer",
+          "éviter",
+          "fuir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "explorer = کاوش و بررسی کردن."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"exploration\" spatiale désigne l'envoi de missions dans l'espace.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، exploration یعنی کاوش و اکتشاف."
+      },
+      {
+        "type": "mcq",
+        "question": "Il a remis en question les faits ____ par les anciens manuels d'histoire.",
+        "options": [
+          "établis",
+          "inventés",
+          "imaginaires",
+          "provisoires"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "établi = تثبیت شده و پذیرفته شده."
+      }
     ]
   }
 }
