@@ -1,0 +1,172 @@
+{
+  "id": "financial_management",
+  "level": "B1",
+  "theme": "Gestion financière",
+  "theme_fa": "مدیریت مالی، اقتصاد و مصرف",
+  "icon": "💶",
+  "inspiration": "Margin Call (film de J.C. Chandor)",
+
+  "words": [
+    {
+      "fr": "le budget",
+      "fa": "بودجه",
+      "emoji": "💰",
+      "difficulty": 3,
+      "ex": "Nous devons respecter le budget fixé pour ce projet.",
+      "ex_fa": "ما باید بودجه تعیین شده برای این پروژه را رعایت کنیم."
+    },
+    {
+      "fr": "bénéficier",
+      "fa": "بهره‌مند شدن",
+      "emoji": "🎁",
+      "difficulty": 4,
+      "ex": "Les étudiants vont bénéficier d'une bourse.",
+      "ex_fa": "دانشجویان از یک بورسیه بهره‌مند خواهند شد."
+    },
+    {
+      "fr": "bénéfique",
+      "fa": "مفید / سودمند",
+      "emoji": "🌱",
+      "difficulty": 4,
+      "ex": "Le sport est bénéfique pour la santé.",
+      "ex_fa": "ورزش برای سلامتی مفید است."
+    },
+    {
+      "fr": "le bénévole",
+      "fa": "داوطلب",
+      "emoji": "🤝",
+      "difficulty": 3,
+      "ex": "Un bénévole aide à distribuer les repas.",
+      "ex_fa": "یک داوطلب به توزیع غذاها کمک می‌کند."
+    },
+    {
+      "fr": "consommer",
+      "fa": "مصرف کردن",
+      "emoji": "🛒",
+      "difficulty": 3,
+      "ex": "Il faut consommer moins d'électricité.",
+      "ex_fa": "باید برق کمتری مصرف کنیم."
+    },
+    {
+      "fr": "convertir",
+      "fa": "تبدیل کردن",
+      "emoji": "🔄",
+      "difficulty": 4,
+      "ex": "Je dois convertir mes euros en dollars.",
+      "ex_fa": "من باید یوروهایم را به دلار تبدیل کنم."
+    },
+    {
+      "fr": "contrôler",
+      "fa": "کنترل کردن / نظارت کردن",
+      "emoji": "👁️",
+      "difficulty": 3,
+      "ex": "Le comptable doit contrôler les factures.",
+      "ex_fa": "حسابدار باید فاکتورها را کنترل کند."
+    },
+    {
+      "fr": "la condition",
+      "fa": "شرط",
+      "emoji": "📜",
+      "difficulty": 3,
+      "ex": "La seule condition est de payer à l'avance.",
+      "ex_fa": "تنها شرط این است که از قبل پرداخت کنید."
+    },
+    {
+      "fr": "conditionnel",
+      "fa": "مشروط",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "L'accord est conditionnel à la signature du directeur.",
+      "ex_fa": "توافق مشروط به امضای مدیر است."
+    },
+    {
+      "fr": "le bilan",
+      "fa": "ارزیابی / ترازنامه",
+      "emoji": "📊",
+      "difficulty": 4,
+      "ex": "Le bilan financier de l'année est positif.",
+      "ex_fa": "ترازنامه مالی سال مثبت است."
+    },
+    {
+      "fr": "le bulletin",
+      "fa": "برگه / کارنامه",
+      "emoji": "📄",
+      "difficulty": 3,
+      "ex": "J'ai reçu mon bulletin de salaire ce matin.",
+      "ex_fa": "من امروز صبح فیش حقوقی‌ام را دریافت کردم."
+    },
+    {
+      "fr": "la compétition",
+      "fa": "رقابت",
+      "emoji": "🏆",
+      "difficulty": 3,
+      "ex": "La compétition entre les banques est très forte.",
+      "ex_fa": "رقابت بین بانک‌ها بسیار شدید است."
+    }
+  ],
+
+  "stories": {
+    "simple": {
+      "title": "Au bureau du comptable",
+      "title_fa": "در دفتر حسابدار",
+      "text": "Paul est comptable. Il doit préparer le {{BLANK_1}} de l'entreprise. Il faut {{BLANK_2}} chaque dépense pour ne pas dépasser le {{BLANK_3}}. Un {{BLANK_4}} est venu aider à ranger les dossiers gratuitement. Les clients continuent à {{BLANK_5}} nos services. Paul doit {{BLANK_6}} les devises étrangères en euros. Il sait que cette organisation est {{BLANK_7}} pour la survie de la société. En regardant son {{BLANK_8}} de salaire, il voit que la prime est là. La {{BLANK_9}} pour recevoir cette prime était de finir le travail à temps. Ce bonus est {{BLANK_10}} aux résultats finaux. Dans ce secteur, la {{BLANK_11}} est rude. Heureusement, l'entreprise va {{BLANK_12}} d'une aide de l'État.",
+      "blanks": [
+        { "id": 1, "answer": "bilan", "options": ["bilan", "voyage", "repas", "sourire"], "correctIndex": 0 },
+        { "id": 2, "answer": "contrôler", "options": ["contrôler", "ignorer", "oublier", "cacher"], "correctIndex": 0 },
+        { "id": 3, "answer": "budget", "options": ["budget", "climat", "poids", "âge"], "correctIndex": 0 },
+        { "id": 4, "answer": "bénévole", "options": ["bénévole", "robot", "animal", "véhicule"], "correctIndex": 0 },
+        { "id": 5, "answer": "consommer", "options": ["consommer", "détester", "fuir", "ignorer"], "correctIndex": 0 },
+        { "id": 6, "answer": "convertir", "options": ["convertir", "manger", "dormir", "jeter"], "correctIndex": 0 },
+        { "id": 7, "answer": "bénéfique", "options": ["bénéfique", "dangereux", "impossible", "imaginaire"], "correctIndex": 0 },
+        { "id": 8, "answer": "bulletin", "options": ["bulletin", "passeport", "diplôme", "menu"], "correctIndex": 0 },
+        { "id": 9, "answer": "condition", "options": ["condition", "couleur", "chanson", "odeur"], "correctIndex": 0 },
+        { "id": 10, "answer": "conditionnel", "options": ["conditionnel", "définitif", "éternel", "historique"], "correctIndex": 0 },
+        { "id": 11, "answer": "compétition", "options": ["compétition", "amitié", "solitude", "silence"], "correctIndex": 0 },
+        { "id": 12, "answer": "bénéficier", "options": ["bénéficier", "souffrir", "pleurer", "tomber"], "correctIndex": 0 }
+      ]
+    },
+    "literary": {
+      "title": "La fin de l'année fiscale",
+      "title_fa": "پایان سال مالی",
+      "inspiration": "Margin Call (film de J.C. Chandor)",
+      "text": "C'était la fin de l'année dans une grande banque d'investissement. Le directeur devait présenter le {{BLANK_1}} financier au conseil d'administration. Il fallait {{BLANK_2}} chaque dépense pour respecter le {{BLANK_3}} annuel fixé par les actionnaires. Les analystes étaient épuisés ; heureusement, un ancien {{BLANK_4}} de la Croix-Rouge les aidait à organiser la salle de conférence bénévolement. Pendant ce temps, les riches clients continuaient à {{BLANK_5}} des produits de luxe sans se soucier de la crise imminente. Le directeur savait que cette insouciance n'était pas {{BLANK_6}} pour l'économie réelle. En regardant le {{BLANK_7}} de salaire de son assistant, il a eu une idée soudaine. Il a décidé de {{BLANK_8}} une partie du capital en or pur. La seule {{BLANK_9}} pour survivre à la tempête boursière était la prudence absolue. Le maintien de son poste de PDG était strictement {{BLANK_10}} aux résultats du dernier trimestre. Dans le secteur bancaire international, la {{BLANK_11}} était impitoyable et ne pardonnait aucune erreur. Finalement, l'entreprise allait {{BLANK_12}} d'un prêt exceptionnel de la Banque Centrale pour éviter la faillite.",
+      "blanks": [
+        { "id": 1, "answer": "bilan", "options": ["bilan", "passeport", "menu", "ticket"], "correctIndex": 0 },
+        { "id": 2, "answer": "contrôler", "options": ["contrôler", "ignorer", "détruire", "cacher"], "correctIndex": 0 },
+        { "id": 3, "answer": "budget", "options": ["budget", "tapis", "nuage", "moteur"], "correctIndex": 0 },
+        { "id": 4, "answer": "bénévole", "options": ["bénévole", "extraterrestre", "dinosaure", "fantôme"], "correctIndex": 0 },
+        { "id": 5, "answer": "consommer", "options": ["consommer", "voler", "fondre", "exploser"], "correctIndex": 0 },
+        { "id": 6, "answer": "bénéfique", "options": ["bénéfique", "toxique", "mortel", "invisible"], "correctIndex": 0 },
+        { "id": 7, "answer": "bulletin", "options": ["bulletin", "vélo", "arbre", "caillou"], "correctIndex": 0 },
+        { "id": 8, "answer": "convertir", "options": ["convertir", "avaler", "brûler", "enterrer"], "correctIndex": 0 },
+        { "id": 9, "answer": "condition", "options": ["condition", "mélodie", "couleur", "parfum"], "correctIndex": 0 },
+        { "id": 10, "answer": "conditionnel", "options": ["conditionnel", "éternel", "magique", "historique"], "correctIndex": 0 },
+        { "id": 11, "answer": "compétition", "options": ["compétition", "sieste", "méditation", "solitude"], "correctIndex": 0 },
+        { "id": 12, "answer": "bénéficier", "options": ["bénéficier", "mourir", "pleurer", "tomber"], "correctIndex": 0 }
+      ]
+    }
+  },
+
+  "quiz": {
+    "title": "Quiz : Gestion financière",
+    "title_fa": "آزمون: مدیریت مالی",
+    "displayCount": 10,
+    "questions": [
+      { "type": "mcq", "question": "L'entreprise doit présenter son ____ annuel aux investisseurs.", "options": ["bilan", "passeport", "diplôme", "menu"], "correctIndex": 0, "explanation_fa": "bilan = ترازنامه و ارزیابی مالی." },
+      { "type": "mcq", "question": "Le gardien doit ____ qui entre dans l'immeuble.", "options": ["contrôler", "ignorer", "oublier", "cacher"], "correctIndex": 0, "explanation_fa": "contrôler = کنترل کردن و نظارت داشتن." },
+      { "type": "mcq", "question": "Nous n'avons plus assez de ____ pour finir les travaux.", "options": ["budget", "climat", "poids", "âge"], "correctIndex": 0, "explanation_fa": "budget = بودجه." },
+      { "type": "mcq", "question": "Un ____ travaille sans être payé pour une association.", "options": ["bénévole", "robot", "animal", "véhicule"], "correctIndex": 0, "explanation_fa": "bénévole = داوطلب (بدون حقوق)." },
+      { "type": "mcq", "question": "Les Français ____ beaucoup de fromage et de pain.", "options": ["consomment", "détestent", "fuient", "ignorent"], "correctIndex": 0, "explanation_fa": "consommer = مصرف کردن." },
+      { "type": "mcq", "question": "À l'aéroport, je dois ____ mes euros en yens japonais.", "options": ["convertir", "manger", "dormir", "jeter"], "correctIndex": 0, "explanation_fa": "convertir = تبدیل کردن (ارز)." },
+      { "type": "mcq", "question": "Une alimentation équilibrée est ____ pour le cœur.", "options": ["bénéfique", "dangereuse", "impossible", "imaginaire"], "correctIndex": 0, "explanation_fa": "bénéfique = مفید و سودمند." },
+      { "type": "binary", "question": "Un \"bulletin de salaire\" est le document qui détaille le salaire d'un employé.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، bulletin de salaire یعنی فیش حقوقی." },
+      { "type": "mcq", "question": "La seule ____ pour entrer dans ce club est de porter une cravate.", "options": ["condition", "couleur", "chanson", "odeur"], "correctIndex": 0, "explanation_fa": "condition = شرط." },
+      { "type": "mcq", "question": "Le contrat est ____ : il peut être annulé si les ventes baissent.", "options": ["conditionnel", "définitif", "éternel", "historique"], "correctIndex": 0, "explanation_fa": "conditionnel = مشروط." },
+      { "type": "mcq", "question": "La ____ entre ces deux entreprises technologiques est féroce.", "options": ["compétition", "amitié", "solitude", "silence"], "correctIndex": 0, "explanation_fa": "compétition = رقابت." },
+      { "type": "binary", "question": "Le verbe \"bénéficier\" est toujours suivi de la préposition \"de\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، bénéficier de qqch (بهره‌مند شدن از چیزی)." },
+      { "type": "binary", "question": "\"Convertir\" peut s'utiliser pour la religion (convertir à l'islam) et pour les devises.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، convertir هم برای تغییر دین و هم برای تبدیل ارز استفاده می‌شود." },
+      { "type": "binary", "question": "Le \"bilan\" peut aussi désigner l'évaluation d'une situation (ex: le bilan de l'accident).", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، bilan یعنی ارزیابی کلی یک وضعیت یا حادثه." },
+      { "type": "mcq", "question": "Les start-ups de la Silicon Valley ____ d'énormes investissements.", "options": ["bénéficient", "souffrent", "pleurent", "tombent"], "correctIndex": 0, "explanation_fa": "bénéficier de = بهره‌مند شدن از." }
+    ]
+  }
+}
