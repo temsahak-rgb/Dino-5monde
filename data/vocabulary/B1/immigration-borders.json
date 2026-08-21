@@ -1,0 +1,97 @@
+{
+  "id": "immigration_borders",
+  "level": "B1",
+  "theme": "Immigration et Frontières",
+  "theme_fa": "مهاجرت، سفر و چالش‌های مرزی",
+  "icon": "🛂",
+  "inspiration": "Welcome (film de Philippe Lioret)",
+
+  "words": [
+    { "fr": "l'immigration", "fa": "مهاجرت", "emoji": "🌍", "difficulty": 3, "ex": "Les politiques d'immigration sont un sujet de débat constant.", "ex_fa": "سیاست‌های مهاجرتی موضوع بحث مداوم هستند." },
+    { "fr": "la frontière", "fa": "مرز", "emoji": "🚧", "difficulty": 2, "ex": "Ils ont traversé la frontière illégalement.", "ex_fa": "آن‌ها به صورت غیرقانونی از مرز عبور کردند." },
+    { "fr": "l'itinéraire", "fa": "مسیر / مسیر سفر", "emoji": "🗺️", "difficulty": 3, "ex": "L'itinéraire du voyage est long et dangereux.", "ex_fa": "مسیر سفر طولانی و خطرناک است." },
+    { "fr": "l'hébergement", "fa": "اسکان / اقامت", "emoji": "🏠", "difficulty": 4, "ex": "Les réfugiés cherchent un hébergement d'urgence.", "ex_fa": "پناهندگان به دنبال اسکان اضطراری هستند." },
+    { "fr": "le logement", "fa": "مسکن", "emoji": "🏢", "difficulty": 2, "ex": "Trouver un logement stable est difficile.", "ex_fa": "پیدا کردن مسکن پایدار دشوار است." },
+    { "fr": "loger", "fa": "اسکان دادن / ساکن بودن", "emoji": "🛌", "difficulty": 3, "ex": "Il a décidé de loger un migrant chez lui.", "ex_fa": "او تصمیم گرفت یک مهاجر را در خانه‌اش اسکان دهد." },
+    { "fr": "le local", "fa": "محلی / مکان", "emoji": "📍", "difficulty": 3, "ex": "Le local de l'association accueille les nouveaux arrivants.", "ex_fa": "مکان انجمن از تازه‌واردها استقبال می‌کند." },
+    { "fr": "l'horizon", "fa": "افق", "emoji": "🌅", "difficulty": 4, "ex": "Il regarde l'horizon en rêvant d'un autre pays.", "ex_fa": "او در حالی که رویای کشور دیگری را دارد به افق نگاه می‌کند." },
+    { "fr": "l'humain", "fa": "انسانی / بشر", "emoji": "🫂", "difficulty": 3, "ex": "C'est avant tout une crise humaine.", "ex_fa": "این بیش از هر چیز یک بحران انسانی است." },
+    { "fr": "le hasard", "fa": "تصادف / شانس", "emoji": "🎲", "difficulty": 3, "ex": "Le hasard des rencontres change parfois une vie.", "ex_fa": "تصادفِ دیدارها گاهی زندگی را تغییر می‌دهد." },
+    { "fr": "immédiatement", "fa": "فوراً", "emoji": "⚡", "difficulty": 2, "ex": "Il a été expulsé immédiatement du territoire.", "ex_fa": "او فوراً از خاک کشور اخراج شد." },
+    { "fr": "immédiat", "fa": "فوری", "emoji": "🚨", "difficulty": 3, "ex": "Le besoin de soins est immédiat.", "ex_fa": "نیاز به مراقبت فوری است." },
+    { "fr": "la livraison", "fa": "تحویل (کالا/پست)", "emoji": "📦", "difficulty": 3, "ex": "La livraison de l'aide humanitaire est bloquée.", "ex_fa": "تحویل کمک‌های بشردوستانه متوقف شده است." },
+    { "fr": "franchir", "fa": "عبور کردن / پشت سر گذاشتن", "emoji": "🏃", "difficulty": 4, "ex": "Il veut franchir la Manche à la nage.", "ex_fa": "او می‌خواهد کانال مانش را شنا کند (از آن عبور کند)." },
+    { "fr": "identique", "fa": "یکسان / هم‌شکل", "emoji": "👯", "difficulty": 4, "ex": "Leur destin est identique à celui de milliers d'autres.", "ex_fa": "سرنوشت آن‌ها با هزاران نفر دیگر یکسان است." }
+  ],
+
+  "stories": {
+    "simple": {
+      "title": "Le rêve de Bilal",
+      "title_fa": "رویای بیلال",
+      "text": "Bilal est un jeune Kurde qui veut aller en Angleterre. Pour lui, l'{{BLANK_1}} n'est pas un choix, mais une nécessité. Il arrive à Calais et regarde la {{BLANK_2}} invisible qui le sépare de son but. Son {{BLANK_3}} est compliqué : il doit passer par la mer. En attendant, il cherche un {{BLANK_4}} pour dormir au chaud. La crise du {{BLANK_5}} est grave dans la région. Par chance, un maître-nageur décide de le {{BLANK_6}} chez lui. Ce {{BLANK_7}} devient un refuge sûr. Bilal passe des heures à regarder l'{{BLANK_8}} gris de la Manche. C'est une histoire profondément {{BLANK_9}}. Un jour, par {{BLANK_10}}, il trouve un vieux vélo pour s'entraîner. Il doit agir {{BLANK_11}} car la police patrouille souvent. Son besoin de réussir est {{BLANK_12}} et vital. La {{BLANK_13}} de nourriture aux migrants est risquée mais nécessaire. Bilal s'entraîne dur pour {{BLANK_14}} le détroit. Son courage est {{BLANK_15}} à celui des plus grands héros.",
+      "blanks": [
+        { "id": 1, "answer": "immigration", "options": ["immigration", "vacance", "promenade", "fête"], "correctIndex": 0 },
+        { "id": 2, "answer": "frontière", "options": ["frontière", "route", "rivière", "fenêtre"], "correctIndex": 0 },
+        { "id": 3, "answer": "itinéraire", "options": ["itinéraire", "passeport", "bagage", "souvenir"], "correctIndex": 0 },
+        { "id": 4, "answer": "hébergement", "options": ["hébergement", "divertissement", "jugement", "punition"], "correctIndex": 0 },
+        { "id": 5, "answer": "logement", "options": ["logement", "vêtement", "aliment", "médicament"], "correctIndex": 0 },
+        { "id": 6, "answer": "loger", "options": ["loger", "expulser", "ignorer", "frapper"], "correctIndex": 0 },
+        { "id": 7, "answer": "local", "options": ["local", "global", "national", "international"], "correctIndex": 0 },
+        { "id": 8, "answer": "horizon", "options": ["horizon", "trottoir", "plafond", "tapis"], "correctIndex": 0 },
+        { "id": 9, "answer": "humaine", "options": ["humaine", "robotique", "animale", "végétale"], "correctIndex": 0 },
+        { "id": 10, "answer": "hasard", "options": ["hasard", "certitude", "plan", "calcul"], "correctIndex": 0 },
+        { "id": 11, "answer": "immédiatement", "options": ["immédiatement", "lentement", "tardivement", "jadis"], "correctIndex": 0 },
+        { "id": 12, "answer": "immédiat", "options": ["immédiat", "lointain", "futur", "passé"], "correctIndex": 0 },
+        { "id": 13, "answer": "livraison", "options": ["livraison", "destruction", "fabrication", "invention"], "correctIndex": 0 },
+        { "id": 14, "answer": "franchir", "options": ["franchir", "reculer", "stagner", "hésiter"], "correctIndex": 0 },
+        { "id": 15, "answer": "identique", "options": ["identique", "différent", "opposé", "contraire"], "correctIndex": 0 }
+      ]
+    },
+    "literary": {
+      "title": "La Manche, un mur d'eau",
+      "title_fa": "مانش، دیواری از آب",
+      "inspiration": "Welcome (film de Philippe Lioret) - Drame social poignant",
+      "text": "Pour Bilal, un jeune Kurde de dix-sept ans, l'{{BLANK_1}} clandestine était la seule porte de sortie vers son amour, Mina, réfugiée à Londres. Calais n'était qu'une étape glaciale, une zone de non-droit où la {{BLANK_2}} n'était pas une ligne sur une carte, mais un mur d'eau salée et mortelle. Son {{BLANK_3}} était tracé d'avance : survivre aux passeurs, éviter la police, et nager. Mais pour l'instant, il dormait dans la \"Jungle\", un camp de fortune où l'{{BLANK_4}} précaire était un luxe. La crise du {{BLANK_5}} social en France rendait chaque nuit plus incertaine. Un soir, Simon, un maître-nageur désabusé, a croisé son regard et a décidé de le {{BLANK_6}} dans son appartement, bravant la loi qui punissait l'aide aux migrants. Ce {{BLANK_7}} chaleureux est devenu son sanctuaire. Bilal passait ses journées à fixer l'{{BLANK_8}} brumeux, imaginant les côtes anglaises. Cette rencontre était une histoire {{BLANK_9}} pure, loin des débats politiques stériles. Par un heureux {{BLANK_10}}, Simon a accepté de lui donner des cours de natation en piscine municipale. Bilal savait qu'il devait agir {{BLANK_11}} avant que la police ne démantèle le camp. Son besoin de liberté était {{BLANK_12}} et brûlant. La {{BLANK_13}} discrète de repas par les bénévoles était leur seul lien avec le monde extérieur. Le jour du départ, Bilal s'est jeté à l'eau pour {{BLANK_14}} le détroit, porté par un espoir fou. Son destin tragique est devenu {{BLANK_15}} à celui de milliers d'autres ombres englouties par l'indifférence.",
+      "blanks": [
+        { "id": 1, "answer": "immigration", "options": ["immigration", "exportation", "importation", "déportation"], "correctIndex": 0 },
+        { "id": 2, "answer": "frontière", "options": ["frontière", "autoroute", "rivière", "fenêtre"], "correctIndex": 0 },
+        { "id": 3, "answer": "itinéraire", "options": ["itinéraire", "passeport", "bagage", "souvenir"], "correctIndex": 0 },
+        { "id": 4, "answer": "hébergement", "options": ["hébergement", "amusement", "jugement", "châtiment"], "correctIndex": 0 },
+        { "id": 5, "answer": "logement", "options": ["logement", "vêtement", "aliment", "médicament"], "correctIndex": 0 },
+        { "id": 6, "answer": "loger", "options": ["loger", "expulser", "ignorer", "frapper"], "correctIndex": 0 },
+        { "id": 7, "answer": "local", "options": ["local", "global", "national", "international"], "correctIndex": 0 },
+        { "id": 8, "answer": "horizon", "options": ["horizon", "trottoir", "plafond", "tapis"], "correctIndex": 0 },
+        { "id": 9, "answer": "humaine", "options": ["humaine", "robotique", "animale", "végétale"], "correctIndex": 0 },
+        { "id": 10, "answer": "hasard", "options": ["hasard", "certitude", "plan", "calcul"], "correctIndex": 0 },
+        { "id": 11, "answer": "immédiatement", "options": ["immédiatement", "lentement", "tardivement", "jadis"], "correctIndex": 0 },
+        { "id": 12, "answer": "immédiat", "options": ["immédiat", "lointain", "futur", "passé"], "correctIndex": 0 },
+        { "id": 13, "answer": "livraison", "options": ["livraison", "destruction", "fabrication", "invention"], "correctIndex": 0 },
+        { "id": 14, "answer": "franchir", "options": ["franchir", "reculer", "stagner", "hésiter"], "correctIndex": 0 },
+        { "id": 15, "answer": "identique", "options": ["identique", "différent", "opposé", "contraire"], "correctIndex": 0 }
+      ]
+    }
+  },
+
+  "quiz": {
+    "title": "Quiz : Immigration et Frontières",
+    "title_fa": "آزمون: مهاجرت و مرزها",
+    "displayCount": 10,
+    "questions": [
+      { "type": "mcq", "question": "Les débats sur l'____ sont souvent au cœur des élections.", "options": ["immigration", "exportation", "importation", "déportation"], "correctIndex": 0, "explanation_fa": "immigration = مهاجرت (ورود به کشور)." },
+      { "type": "mcq", "question": "Le passeport est obligatoire pour passer la ____.", "options": ["frontière", "autoroute", "rivière", "fenêtre"], "correctIndex": 0, "explanation_fa": "frontière = مرز." },
+      { "type": "binary", "question": "L'\"itinéraire\" désigne le chemin à suivre pour aller d'un point à un autre.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، itinéraire یعنی مسیر و راه." },
+      { "type": "mcq", "question": "Les sans-abris cherchent un ____ d'urgence pour dormir.", "options": ["hébergement", "divertissement", "jugement", "châtiment"], "correctIndex": 0, "explanation_fa": "hébergement = اسکان و پناه." },
+      { "type": "mcq", "question": "La crise du ____ touche beaucoup de jeunes actifs dans les grandes villes.", "options": ["logement", "vêtement", "aliment", "médicament"], "correctIndex": 0, "explanation_fa": "logement = مسکن و سرپناه." },
+      { "type": "mcq", "question": "Mon oncle a accepté de me ____ pendant mes études à Paris.", "options": ["loger", "expulser", "ignorer", "frapper"], "correctIndex": 0, "explanation_fa": "loger = اسکان دادن / جا دادن." },
+      { "type": "mcq", "question": "Le ____ de l'association sert de point de rencontre pour les bénévoles.", "options": ["local", "global", "national", "international"], "correctIndex": 0, "explanation_fa": "local (nom) = مکان و مقر (یک انجمن یا سازمان)." },
+      { "type": "binary", "question": "L'\"horizon\" est la ligne où le ciel semble toucher la terre ou la mer.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، horizon یعنی افق." },
+      { "type": "mcq", "question": "Il faut traiter chaque migrant avec dignité, c'est une valeur ____.", "options": ["humaine", "robotique", "animale", "végétale"], "correctIndex": 0, "explanation_fa": "humain = انسانی." },
+      { "type": "mcq", "question": "Par un heureux ____, ils se sont retrouvés dans le même train.", "options": ["hasard", "certitude", "plan", "calcul"], "correctIndex": 0, "explanation_fa": "hasard = تصادف و شانس." },
+      { "type": "mcq", "question": "Il faut appeler les secours ____ en cas d'accident grave.", "options": ["immédiatement", "lentement", "tardivement", "jadis"], "correctIndex": 0, "explanation_fa": "immédiatement = فوراً و بلافاصله." },
+      { "type": "mcq", "question": "Le danger est ____, il faut évacuer le bâtiment maintenant.", "options": ["immédiat", "lointain", "futur", "passé"], "correctIndex": 0, "explanation_fa": "immédiat = فوری و آنی." },
+      { "type": "mcq", "question": "La ____ de colis a été retardée à cause de la tempête.", "options": ["livraison", "destruction", "fabrication", "invention"], "correctIndex": 0, "explanation_fa": "livraison = تحویل (کالا یا پست)." },
+      { "type": "mcq", "question": "Les manifestants ont réussi à ____ les barrages de police.", "options": ["franchir", "reculer", "stagner", "hésiter"], "correctIndex": 0, "explanation_fa": "franchir = عبور کردن و پشت سر گذاشتن." },
+      { "type": "binary", "question": "Deux objets \"identiques\" sont parfaitement semblables.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، identique یعنی یکسان و هم‌شکل." }
+    ]
+  }
+}
