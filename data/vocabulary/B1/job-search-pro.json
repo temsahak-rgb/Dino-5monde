@@ -1,0 +1,90 @@
+{
+  "id": "job_search_pro",
+  "level": "B1",
+  "theme": "Recherche d'emploi et Vie pro",
+  "theme_fa": "جستجوی کار، شبکه‌سازی و محیط حرفه‌ای",
+  "icon": "💼",
+  "inspiration": "À la recherche du bonheur (The Pursuit of Happyness)",
+
+  "words": [
+    { "fr": "le candidat", "fa": "داوطلب / کاندیدا", "emoji": "🙋‍♂️", "difficulty": 3, "ex": "Le candidat a réussi son entretien d'embauche.", "ex_fa": "داوطلب در مصاحبه کاری‌اش موفق شد." },
+    { "fr": "le chômage", "fa": "بیکاری", "emoji": "📉", "difficulty": 3, "ex": "Il touche des allocations de chômage depuis trois mois.", "ex_fa": "او از سه ماه پیش مقرری بیکاری دریافت می‌کند." },
+    { "fr": "le contrat", "fa": "قرارداد", "emoji": "📝", "difficulty": 2, "ex": "Elle a signé un contrat à durée indéterminée (CDI).", "ex_fa": "او یک قرارداد دائم (CDI) امضا کرد." },
+    { "fr": "contractuel", "fa": "قراردادی / موقت", "emoji": "📅", "difficulty": 4, "ex": "Son poste est contractuel pour une durée de six mois.", "ex_fa": "موقعیت شغلی او قراردادی و به مدت شش ماه است." },
+    { "fr": "la compétence", "fa": "مهارت / صلاحیت", "emoji": "🎯", "difficulty": 3, "ex": "La maîtrise de l'anglais est une compétence requise.", "ex_fa": "تسلط به زبان انگلیسی یک مهارت الزامی است." },
+    { "fr": "capable", "fa": "توانا / قادر", "emoji": "💪", "difficulty": 2, "ex": "Il est capable de gérer des situations de crise.", "ex_fa": "او قادر به مدیریت شرایط بحرانی است." },
+    { "fr": "le capital", "fa": "سرمایه", "emoji": "🏦", "difficulty": 4, "ex": "Le capital humain est la richesse de l'entreprise.", "ex_fa": "سرمایه انسانی، ثروت شرکت است." },
+    { "fr": "le collègue", "fa": "همکار", "emoji": "👔", "difficulty": 2, "ex": "Je déjeune souvent avec mon collègue de bureau.", "ex_fa": "من اغلب با همکار دفتری‌ام ناهار می‌خورم." },
+    { "fr": "le camarade", "fa": "همکلاسی / رفیق", "emoji": "🎒", "difficulty": 3, "ex": "J'ai retrouvé un vieux camarade d'université.", "ex_fa": "من یکی از همکلاسی‌های قدیمی دانشگاه را دیدم." },
+    { "fr": "le client", "fa": "مشتری", "emoji": "🛍️", "difficulty": 2, "ex": "Il faut toujours satisfaire les besoins du client.", "ex_fa": "همیشه باید نیازهای مشتری را برآورده کرد." },
+    { "fr": "le coiffeur", "fa": "آرایشگر", "emoji": "💇‍♂️", "difficulty": 2, "ex": "Je vais chez le coiffeur avant mon entretien.", "ex_fa": "قبل از مصاحبه‌ام به آرایشگاه می‌روم." },
+    { "fr": "la coopération", "fa": "همکاری", "emoji": "🤝", "difficulty": 3, "ex": "La coopération entre les services est essentielle.", "ex_fa": "همکاری بین بخش‌ها ضروری است." },
+    { "fr": "coordonner", "fa": "هماهنگ کردن", "emoji": "🔄", "difficulty": 4, "ex": "Elle doit coordonner les horaires de toute l'équipe.", "ex_fa": "او باید برنامه زمانی کل تیم را هماهنگ کند." },
+    { "fr": "contribuer", "fa": "مشارکت کردن / سهم داشتن", "emoji": "🧩", "difficulty": 4, "ex": "Chacun doit contribuer au succès du projet.", "ex_fa": "هر کس باید در موفقیت پروژه مشارکت کند." },
+    { "fr": "le courage", "fa": "شجاعت", "emoji": "🦁", "difficulty": 2, "ex": "Il a eu le courage de demander une augmentation.", "ex_fa": "او شجاعت درخواست افزایش حقوق را داشت." },
+    { "fr": "courageux", "fa": "شجاع", "emoji": "🛡️", "difficulty": 2, "ex": "C'est une décision courageuse de changer de carrière.", "ex_fa": "تغییر شغل تصمیم شجاعانه‌ای است." }
+  ],
+
+  "stories": {
+    "simple": {
+      "title": "L'entretien décisif",
+      "title_fa": "مصاحبه سرنوشت‌ساز",
+      "text": "Thomas cherchait du travail depuis longtemps. Ce matin, il était le dernier {{BLANK_1}} dans la salle d'attente. Après une longue période de {{BLANK_2}}, il avait enfin l'opportunité de signer un {{BLANK_3}} stable. Le recruteur lui a demandé de décrire sa meilleure {{BLANK_4}} technique. Thomas a répondu qu'il était parfaitement {{BLANK_5}} de manager une équipe de dix personnes. Pour lui, l'expérience était son plus grand {{BLANK_6}} professionnel. Pendant la pause, il a discuté avec un futur {{BLANK_7}} qui travaillait déjà au service marketing. Ils ont parlé de leurs anciens {{BLANK_8}} de la faculté de commerce. Le but principal de l'entreprise était de satisfaire le {{BLANK_9}} international. Thomas savait que la {{BLANK_10}} entre les départements était la clé de la réussite.",
+      "blanks": [
+        { "id": 1, "answer": "candidat", "options": ["candidat", "spectateur", "passager", "touriste"], "correctIndex": 0 },
+        { "id": 2, "answer": "chômage", "options": ["chômage", "retraite", "vacances", "maladie"], "correctIndex": 0 },
+        { "id": 3, "answer": "contrat", "options": ["contrat", "divorce", "passeport", "ticket"], "correctIndex": 0 },
+        { "id": 4, "answer": "compétence", "options": ["compétence", "allergie", "cicatrice", "grippe"], "correctIndex": 0 },
+        { "id": 5, "answer": "capable", "options": ["capable", "incapable", "aveugle", "sourde"], "correctIndex": 0 },
+        { "id": 6, "answer": "capital", "options": ["capital", "tapis", "nuage", "moteur"], "correctIndex": 0 },
+        { "id": 7, "answer": "collègue", "options": ["collègue", "ennemi", "fantôme", "animal"], "correctIndex": 0 },
+        { "id": 8, "answer": "camarades", "options": ["camarades", "extraterrestres", "dinosaures", "véhicules"], "correctIndex": 0 },
+        { "id": 9, "answer": "client", "options": ["client", "mur", "plafond", "trottoir"], "correctIndex": 0 },
+        { "id": 10, "answer": "coopération", "options": ["coopération", "guerre", "solitude", "silence"], "correctIndex": 0 }
+      ]
+    },
+    "literary": {
+      "title": "Le dernier espoir de Chris",
+      "title_fa": "آخرین امید کریس",
+      "inspiration": "À la recherche du bonheur (The Pursuit of Happyness)",
+      "text": "Pendant des mois, Chris a affronté la réalité brutale de la rue. Chaque matin, il mettait son unique costume pour aller à son stage non rémunéré. Ce jour-là, il était le seul {{BLANK_1}} retenu pour le poste final de courtier. Il devait absolument décrocher ce {{BLANK_2}} pour offrir un toit à son fils. Le directeur l'a regardé avec sévérité et lui a demandé quelle était sa principale {{BLANK_3}} face aux chiffres. Chris a expliqué qu'il était {{BLANK_4}} de résoudre des équations complexes en quelques secondes. Il savait que son {{BLANK_5}} intellectuel valait bien plus que les diplômes des autres. Soudain, un {{BLANK_6}} de bureau est entré pour apporter des dossiers urgents. Chris a reconnu un ancien {{BLANK_7}} qu'il avait croisé dans un stade de football des années auparavant. Ils ont échangé un sourire rapide. Chris savait que dans ce métier, il fallait toujours anticiper les besoins du {{BLANK_8}} fortuné. Il a promis que la {{BLANK_9}} avec les autres analystes serait sa priorité absolue. Trouver le {{BLANK_10}} de se battre chaque jour malgré l'épuisement était sa plus grande victoire. Il était {{BLANK_11}} de quitter la rue pour toujours. Le poste était {{BLANK_12}}, mais il espérait une embauche définitive. Il devait {{BLANK_13}} les plannings de rendez-vous. Chaque appel passé allait {{BLANK_14}} à la survie de sa petite famille. Avant d'entrer, il est passé chez le {{BLANK_15}} du quartier pour soigner son apparence.",
+      "blanks": [
+        { "id": 1, "answer": "candidat", "options": ["candidat", "électeur", "patient", "accusé"], "correctIndex": 0 },
+        { "id": 2, "answer": "contrat", "options": ["contrat", "billet", "jugement", "diplôme"], "correctIndex": 0 },
+        { "id": 3, "answer": "compétence", "options": ["compétence", "douleur", "fièvre", "fracture"], "correctIndex": 0 },
+        { "id": 4, "answer": "capable", "options": ["capable", "paralysé", "endormi", "absent"], "correctIndex": 0 },
+        { "id": 5, "answer": "capital", "options": ["capital", "bagage", "vélo", "manteau"], "correctIndex": 0 },
+        { "id": 6, "answer": "collègue", "options": ["collègue", "cambrioleur", "manifestant", "touriste"], "correctIndex": 0 },
+        { "id": 7, "answer": "camarade", "options": ["camarade", "adversaire", "juge", "policier"], "correctIndex": 0 },
+        { "id": 8, "answer": "client", "options": ["client", "fournisseur", "concurrent", "inspecteur"], "correctIndex": 0 },
+        { "id": 9, "answer": "coopération", "options": ["coopération", "rivalité", "trahison", "indifférence"], "correctIndex": 0 },
+        { "id": 10, "answer": "courage", "options": ["courage", "désespoir", "abandon", "lâcheté"], "correctIndex": 0 },
+        { "id": 11, "answer": "courageux", "options": ["courageux", "peureux", "hésitant", "faible"], "correctIndex": 0 },
+        { "id": 12, "answer": "contractuel", "options": ["contractuel", "éternel", "imaginaire", "bénévole"], "correctIndex": 0 },
+        { "id": 13, "answer": "coordonner", "options": ["coordonner", "détruire", "ignorer", "cacher"], "correctIndex": 0 },
+        { "id": 14, "answer": "contribuer", "options": ["contribuer", "nuire", "empêcher", "bloquer"], "correctIndex": 0 },
+        { "id": 15, "answer": "coiffeur", "options": ["coiffeur", "dentiste", "chirurgien", "pharmacien"], "correctIndex": 0 }
+      ]
+    }
+  },
+
+  "quiz": {
+    "title": "Quiz : Recherche d'emploi",
+    "title_fa": "آزمون: جستجوی کار",
+    "displayCount": 10,
+    "questions": [
+      { "type": "mcq", "question": "Après trois entretiens, le meilleur ____ a été choisi pour le poste.", "options": ["candidat", "électeur", "spectateur", "passager"], "correctIndex": 0, "explanation_fa": "candidat = داوطلب شغل. بقیه گزینه‌ها مربوط به انتخابات، تماشا و سفر هستند." },
+      { "type": "mcq", "question": "Suite à la faillite de l'usine, beaucoup d'ouvriers se sont retrouvés au ____.", "options": ["chômage", "paradis", "sommet", "volcan"], "correctIndex": 0, "explanation_fa": "être au chômage = بیکار شدن." },
+      { "type": "binary", "question": "Un \"CDI\" (Contrat à Durée Indéterminée) est un contrat de travail temporaire.", "options": ["Vrai", "Faux"], "correctIndex": 1, "explanation_fa": "CDI قرارداد دائم است. قرارداد موقت CDD نام دارد." },
+      { "type": "mcq", "question": "La maîtrise du logiciel Excel est une ____ très recherchée en comptabilité.", "options": ["compétence", "maladie", "allergie", "blessure"], "correctIndex": 0, "explanation_fa": "compétence = مهارت شغلی." },
+      { "type": "mcq", "question": "Elle est parfaitement ____ de parler quatre langues couramment.", "options": ["capable", "aveugle", "sourde", "muette"], "correctIndex": 0, "explanation_fa": "être capable de = توانا بودن در انجام کاری." },
+      { "type": "mcq", "question": "Dans cette start-up, le ____ humain est considéré comme la ressource la plus précieuse.", "options": ["capital", "moteur", "tapis", "nuage"], "correctIndex": 0, "explanation_fa": "capital humain = سرمایه انسانی." },
+      { "type": "binary", "question": "Un \"collègue\" est une personne qui travaille dans la même entreprise que vous.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، collègue به معنای همکار است." },
+      { "type": "mcq", "question": "À la fin de la réunion, les deux départements ont signé un accord de ____.", "options": ["coopération", "guerre", "rupture", "divorce"], "correctIndex": 0, "explanation_fa": "accord de coopération = توافق‌نامه همکاری." },
+      { "type": "mcq", "question": "Le chef de projet doit ____ les tâches de chacun pour éviter les retards.", "options": ["coordonner", "détruire", "ignorer", "cacher"], "correctIndex": 0, "explanation_fa": "coordonner = هماهنگ کردن." },
+      { "type": "mcq", "question": "Chaque employé doit ____ à l'atteinte des objectifs annuels de l'entreprise.", "options": ["contribuer", "nuire", "empêcher", "bloquer"], "correctIndex": 0, "explanation_fa": "contribuer à = مشارکت کردن / سهم داشتن در." },
+      { "type": "binary", "question": "Le mot \"courageux\" est un adjectif qui qualifie une personne qui n'a pas peur d'agir.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، courageux یعنی شجاع." },
+      { "type": "mcq", "question": "Il a eu le ____ de dénoncer les irrégularités financières à la direction.", "options": ["courage", "lâcheté", "abandon", "désespoir"], "correctIndex": 0, "explanation_fa": "avoir le courage de = شجاعتِ انجام کاری را داشتن." }
+    ]
+  }
+}
