@@ -1,0 +1,89 @@
+{
+  "id": "culture_leisure",
+  "level": "B1",
+  "theme": "Culture et Loisirs",
+  "theme_fa": "رویدادهای فرهنگی، جشن‌ها و سرگرمی",
+  "icon": "🎭",
+  "inspiration": "Minuit à Paris (Midnight in Paris - film de Woody Allen)",
+
+  "words": [
+    { "fr": "l'aventure", "fa": "ماجراجویی", "emoji": "🧭", "difficulty": 2, "ex": "Partir en montagne est une vraie aventure.", "ex_fa": "رفتن به کوه یک ماجراجویی واقعی است." },
+    { "fr": "le bijou / les bijoux", "fa": "جواهر / جواهرات", "emoji": "💍", "difficulty": 3, "ex": "Il a offert un bijou en or à sa femme.", "ex_fa": "او یک جواهر طلا به همسرش هدیه داد." },
+    { "fr": "la célébration", "fa": "جشن / بزرگداشت", "emoji": "🎊", "difficulty": 3, "ex": "La célébration du Nouvel An dure toute la nuit.", "ex_fa": "جشن سال نو تمام شب طول می‌کشد." },
+    { "fr": "célébrer", "fa": "جشن گرفتن", "emoji": "🥂", "difficulty": 3, "ex": "Nous allons célébrer notre anniversaire de mariage.", "ex_fa": "ما سالگرد ازدواجمان را جشن می‌گیریم." },
+    { "fr": "la cérémonie", "fa": "مراسم", "emoji": "💒", "difficulty": 3, "ex": "La cérémonie de remise des prix commence à 20h.", "ex_fa": "مراسم اهدای جوایز ساعت ۲۰ شروع می‌شود." },
+    { "fr": "la chaîne", "fa": "شبکه تلویزیونی / زنجیر", "emoji": "📺", "difficulty": 3, "ex": "Je regarde un documentaire sur une chaîne culturelle.", "ex_fa": "من یک مستند در یک شبکه فرهنگی تماشا می‌کنم." },
+    { "fr": "le changement", "fa": "تغییر", "emoji": "🔄", "difficulty": 2, "ex": "Ce festival marque un changement dans sa carrière.", "ex_fa": "این جشنواره نقطه تغییری در Karriere او است." },
+    { "fr": "célibataire", "fa": "مجرد", "emoji": "🙋", "difficulty": 2, "ex": "Elle est célibataire et profite de sa liberté.", "ex_fa": "او مجرد است و از آزادی‌اش لذت می‌برد." },
+    { "fr": "la coïncidence", "fa": "تصادف / همزمانی", "emoji": "🎯", "difficulty": 3, "ex": "Quelle coïncidence de te rencontrer ici !", "ex_fa": "چه تصادفی که تو را اینجا دیدم!" },
+    { "fr": "la collection", "fa": "مجموعه / کلکسیون", "emoji": "🖼️", "difficulty": 3, "ex": "Le musée expose une collection d'art moderne.", "ex_fa": "موزه یک مجموعه هنر مدرن را به نمایش گذاشته است." },
+    { "fr": "la commande", "fa": "سفارش", "emoji": "🍽️", "difficulty": 3, "ex": "Le serveur a pris notre commande rapidement.", "ex_fa": "گارسون سفارش ما را سریع گرفت." },
+    { "fr": "le cyclisme", "fa": "دوچرخه‌سواری", "emoji": "🚴", "difficulty": 3, "ex": "Le cyclisme est très populaire en France.", "ex_fa": "دوچرخه‌سواری در فرانسه بسیار محبوب است." },
+    { "fr": "la culture", "fa": "فرهنگ", "emoji": "🎨", "difficulty": 2, "ex": "Paris est la capitale de la culture française.", "ex_fa": "پاریس پایتخت فرهنگ فرانسه است." }
+  ],
+
+  "stories": {
+    "simple": {
+      "title": "Une soirée spéciale à Paris",
+      "title_fa": "یک شب ویژه در پاریس",
+      "text": "Julie est {{BLANK_1}} ce soir, alors elle décide de sortir. Elle veut vivre une petite {{BLANK_2}} en explorant un nouveau quartier. En marchant, elle passe devant un magasin de {{BLANK_3}} et admire une belle bague en argent. Soudain, elle voit une affiche pour une {{BLANK_4}} de musique classique. Elle décide de {{BLANK_5}} cet événement avec ses amis. La {{BLANK_6}} officielle commence à 20 heures dans une grande salle. En rentrant, elle allume sa télévision et zappe sur une {{BLANK_7}} qui diffuse un documentaire. Ce film montre un grand {{BLANK_8}} dans le monde de l'art contemporain. Par une incroyable {{BLANK_9}}, elle retrouve un vieil ami devant le musée. Ils décident d'entrer pour visiter une {{BLANK_10}} de peintures impressionnistes. Après la visite, ils vont au restaurant et passent leur {{BLANK_11}} au serveur. En dessert, ils parlent de leur passion commune pour le {{BLANK_12}}. Julie réalise que la {{BLANK_13}} française est riche et vivante.",
+      "blanks": [
+        { "id": 1, "answer": "célibataire", "options": ["célibataire", "mariée", "enceinte", "malade"], "correctIndex": 0 },
+        { "id": 2, "answer": "aventure", "options": ["aventure", "sieste", "corvée", "punition"], "correctIndex": 0 },
+        { "id": 3, "answer": "bijoux", "options": ["bijoux", "légumes", "outils", "médicaments"], "correctIndex": 0 },
+        { "id": 4, "answer": "célébration", "options": ["célébration", "autopsie", "facture", "grève"], "correctIndex": 0 },
+        { "id": 5, "answer": "célébrer", "options": ["célébrer", "annuler", "détester", "ignorer"], "correctIndex": 0 },
+        { "id": 6, "answer": "cérémonie", "options": ["cérémonie", "autopsie", "chirurgie", "punition"], "correctIndex": 0 },
+        { "id": 7, "answer": "chaîne", "options": ["chaîne", "casserole", "fenêtre", "chaussure"], "correctIndex": 0 },
+        { "id": 8, "answer": "changement", "options": ["changement", "silence", "sommeil", "vide"], "correctIndex": 0 },
+        { "id": 9, "answer": "coïncidence", "options": ["coïncidence", "catastrophe", "obligation", "punition"], "correctIndex": 0 },
+        { "id": 10, "answer": "collection", "options": ["collection", "poubelle", "cuisine", "toilette"], "correctIndex": 0 },
+        { "id": 11, "answer": "commande", "options": ["commande", "poubelle", "valise", "couverture"], "correctIndex": 0 },
+        { "id": 12, "answer": "cyclisme", "options": ["cyclisme", "sommeil", "ménage", "tricot"], "correctIndex": 0 },
+        { "id": 13, "answer": "culture", "options": ["culture", "poubelle", "douleur", "fièvre"], "correctIndex": 0 }
+      ]
+    },
+    "literary": {
+      "title": "Minuit sur le Pont Alexandre III",
+      "title_fa": "نیمه‌شب روی پل الکساندر سوم",
+      "inspiration": "Minuit à Paris (Midnight in Paris - film de Woody Allen)",
+      "text": "Gil était {{BLANK_1}} depuis son arrivée à Paris, et cette solitude dorée lui plaisait. Ce soir-là, il décida de vivre une {{BLANK_2}} en se perdant volontairement dans les ruelles du Marais. Devant une vitrine éclairée, il s'arrêta pour admirer des {{BLANK_3}} anciens qui scintillaient sous la lumière dorée. Une affiche annonçait une {{BLANK_4}} du centenaire d'un célèbre peintre. Il décida d'y {{BLANK_5}} avec la nostalgie d'un homme qui cherche son époque perdue. La {{BLANK_6}} d'ouverture rassemblait des artistes en tenues élégantes. De retour dans sa chambre d'hôtel, il alluma une vieille {{BLANK_7}} qui diffusait un film en noir et blanc. Ce documentaire racontait le {{BLANK_8}} radical qu'avait connu l'art moderne au XXe siècle. Par une {{BLANK_9}} qui tenait du miracle, il croisa une femme qui ressemblait à une muse des années folles. Elle l'invita à découvrir une {{BLANK_10}} privée de tableaux impressionnistes dans un salon particulier. Après cette visite enchantée, ils s'installèrent à une terrasse et passèrent leur {{BLANK_11}} à un serveur en gilet noir. Entre deux verres de vin, ils parlèrent de leur passion partagée pour le {{BLANK_12}} et les courses du Tour de France. Gil comprit alors que la {{BLANK_13}} parisienne n'était pas morte, mais qu'elle vivait dans chaque pierre, chaque regard, chaque soupir de la nuit.",
+      "blanks": [
+        { "id": 1, "answer": "célibataire", "options": ["célibataire", "veuf", "orphelin", "prisonnier"], "correctIndex": 0 },
+        { "id": 2, "answer": "aventure", "options": ["aventure", "corvée", "punition", "opération"], "correctIndex": 0 },
+        { "id": 3, "answer": "bijoux", "options": ["bijoux", "outils", "légumes", "médicaments"], "correctIndex": 0 },
+        { "id": 4, "answer": "célébration", "options": ["célébration", "exécution", "autopsie", "grève"], "correctIndex": 0 },
+        { "id": 5, "answer": "célébrer", "options": ["célébrer", "détester", "annuler", "détruire"], "correctIndex": 0 },
+        { "id": 6, "answer": "cérémonie", "options": ["cérémonie", "autopsie", "chirurgie", "manifestation"], "correctIndex": 0 },
+        { "id": 7, "answer": "chaîne", "options": ["chaîne", "casserole", "valise", "couverture"], "correctIndex": 0 },
+        { "id": 8, "answer": "changement", "options": ["changement", "silence", "sommeil", "vide"], "correctIndex": 0 },
+        { "id": 9, "answer": "coïncidence", "options": ["coïncidence", "catastrophe", "punition", "obligation"], "correctIndex": 0 },
+        { "id": 10, "answer": "collection", "options": ["collection", "poubelle", "cuisine", "toilette"], "correctIndex": 0 },
+        { "id": 11, "answer": "commande", "options": ["commande", "démission", "plainte", "facture"], "correctIndex": 0 },
+        { "id": 12, "answer": "cyclisme", "options": ["cyclisme", "sommeil", "ménage", "tricot"], "correctIndex": 0 },
+        { "id": 13, "answer": "culture", "options": ["culture", "douleur", "fièvre", "poubelle"], "correctIndex": 0 }
+      ]
+    }
+  },
+
+  "quiz": {
+    "title": "Quiz : Culture et Loisirs",
+    "title_fa": "آزمون: فرهنگ و سرگرمی",
+    "displayCount": 10,
+    "questions": [
+      { "type": "mcq", "question": "Il est ____ depuis son divorce et vit seul dans un petit appartement.", "options": ["célibataire", "marié", "veuf", "orphelin"], "correctIndex": 0, "explanation_fa": "célibataire = مجرد (نه همسر دارد)." },
+      { "type": "mcq", "question": "Voyager seul en Amazonie est une véritable ____.", "options": ["aventure", "sieste", "corvée", "punition"], "correctIndex": 0, "explanation_fa": "aventure = ماجراجویی." },
+      { "type": "binary", "question": "Le mot \"bijou\" désigne uniquement des objets en or massif.", "options": ["Vrai", "Faux"], "correctIndex": 1, "explanation_fa": "bijou می‌تواند از طلا، نقره، یا هر فلز و سنگ قیمتی دیگری باشد." },
+      { "type": "mcq", "question": "La ____ du 14 juillet en France se termine par un feu d'artifice.", "options": ["célébration", "autopsie", "facture", "grève"], "correctIndex": 0, "explanation_fa": "célébration = جشن و بزرگداشت." },
+      { "type": "mcq", "question": "Ils vont ____ leurs vingt ans de mariage dans un restaurant étoilé.", "options": ["célébrer", "annuler", "détester", "ignorer"], "correctIndex": 0, "explanation_fa": "célébrer = جشن گرفتن." },
+      { "type": "mcq", "question": "La ____ de remise des Oscars dure plus de trois heures.", "options": ["cérémonie", "autopsie", "chirurgie", "manifestation"], "correctIndex": 0, "explanation_fa": "cérémonie = مراسم رسمی." },
+      { "type": "mcq", "question": "Je regarde le journal télévisé sur une ____ d'information en continu.", "options": ["chaîne", "casserole", "fenêtre", "valise"], "correctIndex": 0, "explanation_fa": "chaîne (de télévision) = شبکه تلویزیونی." },
+      { "type": "binary", "question": "Le mot \"changement\" est un nom masculin.", "options": ["Vrai", "Faux"], "correctIndex": 1, "explanation_fa": "changement یک اسم مذکر است: le changement." },
+      { "type": "mcq", "question": "Quelle ____ ! Nous portons exactement la même robe ce soir.", "options": ["coïncidence", "catastrophe", "obligation", "punition"], "correctIndex": 0, "explanation_fa": "coïncidence = تصادف و همزمانی غیرمنتظره." },
+      { "type": "mcq", "question": "Le Louvre possède la plus grande ____ d'œuvres d'art au monde.", "options": ["collection", "poubelle", "cuisine", "toilette"], "correctIndex": 0, "explanation_fa": "collection = مجموعه و کلکسیون." },
+      { "type": "mcq", "question": "Au restaurant, le serveur attend notre ____ pour apporter les plats.", "options": ["commande", "démission", "plainte", "facture"], "correctIndex": 0, "explanation_fa": "commande = سفارش غذا." },
+      { "type": "mcq", "question": "Le Tour de France est l'événement le plus important du ____ mondial.", "options": ["cyclisme", "sommeil", "ménage", "tricot"], "correctIndex": 0, "explanation_fa": "cyclisme = دوچرخه‌سواری." },
+      { "type": "binary", "question": "La \"culture\" peut désigner l'ensemble des traditions, arts et connaissances d'une société.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، culture به معنای فرهنگ و مجموعه دستاوردهای یک جامعه است." }
+    ]
+  }
+}
