@@ -1,0 +1,97 @@
+{
+  "id": "planning_management",
+  "level": "B1",
+  "theme": "Planification et Gestion",
+  "theme_fa": "برنامه‌ریزی پروژه و مدیریت زمان",
+  "icon": "📅",
+  "inspiration": "Apollo 13 (film de Ron Howard)",
+
+  "words": [
+    { "fr": "l'étape", "fa": "مرحله / گام", "emoji": "🪜", "difficulty": 2, "ex": "La première étape du projet est la recherche.", "ex_fa": "اولین مرحله پروژه، تحقیق است." },
+    { "fr": "la durée", "fa": "مدت زمان", "emoji": "⏳", "difficulty": 3, "ex": "La durée estimée des travaux est de six mois.", "ex_fa": "مدت زمان تخمین زده شده برای کارها شش ماه است." },
+    { "fr": "durer", "fa": "طول کشیدن", "emoji": "⏱️", "difficulty": 2, "ex": "La réunion va durer deux heures.", "ex_fa": "جلسه دو ساعت طول خواهد کشید." },
+    { "fr": "entamer", "fa": "آغاز کردن / استارت زدن", "emoji": "🎬", "difficulty": 4, "ex": "Nous allons entamer les négociations demain.", "ex_fa": "ما فردا مذاکرات را آغاز خواهیم کرد." },
+    { "fr": "l'échec", "fa": "شکست", "emoji": "📉", "difficulty": 3, "ex": "Il faut apprendre de ses échecs pour réussir.", "ex_fa": "برای موفقیت باید از شکست‌های خود درس گرفت." },
+    { "fr": "empêcher", "fa": "جلوگیری کردن / مانع شدن", "emoji": "🛑", "difficulty": 3, "ex": "La pluie va nous empêcher de sortir.", "ex_fa": "باران مانع بیرون رفتن ما خواهد شد." },
+    { "fr": "échanger", "fa": "مبادله کردن / تبادل نظر کردن", "emoji": "🔄", "difficulty": 3, "ex": "L'équipe doit échanger des idées pour innover.", "ex_fa": "تیم باید برای نوآوری ایده‌ها را تبادل کند." },
+    { "fr": "l'échange", "fa": "تبادل / مبادله", "emoji": "🤝", "difficulty": 3, "ex": "Un échange de points de vue constructif.", "ex_fa": "یک تبادل نظر سازنده." },
+    { "fr": "écarter", "fa": "کنار گذاشتن / رد کردن", "emoji": "🗑️", "difficulty": 5, "ex": "Le comité a décidé d'écarter cette option risquée.", "ex_fa": "کمیته تصمیم گرفت این گزینه پرخطر را کنار بگذارد." },
+    { "fr": "dresser", "fa": "تنظیم کردن / فهرست کردن", "emoji": "📋", "difficulty": 5, "ex": "Il faut dresser la liste des priorités.", "ex_fa": "باید فهرست اولویت‌ها را تنظیم کرد." },
+    { "fr": "l'élément", "fa": "عنصر / فاکتور", "emoji": "🧩", "difficulty": 3, "ex": "La confiance est un élément clé du management.", "ex_fa": "اعتماد یک عنصر کلیدی در مدیریت است." },
+    { "fr": "essentiel / essentielle", "fa": "ضروری / اساسی", "emoji": "⭐", "difficulty": 3, "ex": "Le respect des délais est essentiel pour le client.", "ex_fa": "رعایت مهلت‌ها برای مشتری ضروری است." },
+    { "fr": "éviter", "fa": "اجتناب کردن / دوری کردن", "emoji": "⚠️", "difficulty": 3, "ex": "Il faut éviter les conflits d'intérêts.", "ex_fa": "باید از تضاد منافع اجتناب کرد." },
+    { "fr": "déterminer", "fa": "تعیین کردن / مشخص کردن", "emoji": "🎯", "difficulty": 4, "ex": "Nous devons déterminer le budget nécessaire.", "ex_fa": "ما باید بودجه مورد نیاز را تعیین کنیم." },
+    { "fr": "déterminé / déterminée", "fa": "مصمم / مشخص شده", "emoji": "💪", "difficulty": 4, "ex": "L'équipe est déterminée à réussir ce défi.", "ex_fa": "تیم مصمم است که در این چالش موفق شود." }
+  ],
+
+  "stories": {
+    "simple": {
+      "title": "Le lancement du projet",
+      "title_fa": "راه‌اندازی پروژه",
+      "text": "Marc est chef de projet. Aujourd'hui, il franchit une nouvelle {{BLANK_1}} importante. La {{BLANK_2}} totale du contrat est fixée à un an. Il sait que le développement va {{BLANK_3}} plusieurs mois. Son équipe va {{BLANK_4}} la phase de conception demain matin. Tout le monde a peur de l'{{BLANK_5}} car le marché est très compétitif. Marc doit {{BLANK_6}} les retards de production à tout prix. Pour cela, il réunit ses collaborateurs pour {{BLANK_7}} des solutions. Cet {{BLANK_8}} d'idées est très productif. Ils décident d'{{BLANK_9}} les propositions trop coûteuses. Ensuite, Marc va {{BLANK_10}} un planning hebdomadaire. Chaque {{BLANK_11}} de ce tableau est vérifié. Le suivi quotidien est {{BLANK_12}} pour garder le cap. Ils doivent {{BLANK_13}} les erreurs de communication. L'objectif principal est de {{BLANK_14}} les besoins exacts du client. Grâce à cette préparation, l'équipe est très {{BLANK_15}} pour atteindre ses objectifs.",
+      "blanks": [
+        { "id": 1, "answer": "étape", "options": ["étape", "chute", "fin", "conclusion"], "correctIndex": 0 },
+        { "id": 2, "answer": "durée", "options": ["durée", "taille", "poids", "hauteur"], "correctIndex": 0 },
+        { "id": 3, "answer": "durer", "options": ["durer", "finir", "terminer", "conclure"], "correctIndex": 0 },
+        { "id": 4, "answer": "entamer", "options": ["entamer", "terminer", "finir", "conclure"], "correctIndex": 0 },
+        { "id": 5, "answer": "échec", "options": ["échec", "succès", "réussite", "victoire"], "correctIndex": 0 },
+        { "id": 6, "answer": "empêcher", "options": ["empêcher", "provoquer", "causer", "créer"], "correctIndex": 0 },
+        { "id": 7, "answer": "échanger", "options": ["échanger", "cacher", "taire", "refuser"], "correctIndex": 0 },
+        { "id": 8, "answer": "échange", "options": ["échange", "silence", "mutisme", "secret"], "correctIndex": 0 },
+        { "id": 9, "answer": "écarter", "options": ["écarter", "garder", "accepter", "valider"], "correctIndex": 0 },
+        { "id": 10, "answer": "dresser", "options": ["dresser", "détruire", "cacher", "oublier"], "correctIndex": 0 },
+        { "id": 11, "answer": "élément", "options": ["élément", "problème", "désastre", "catastrophe"], "correctIndex": 0 },
+        { "id": 12, "answer": "essentiel", "options": ["essentiel", "inutile", "superflu", "facultatif"], "correctIndex": 0 },
+        { "id": 13, "answer": "éviter", "options": ["éviter", "chercher", "provoquer", "créer"], "correctIndex": 0 },
+        { "id": 14, "answer": "déterminer", "options": ["déterminer", "ignorer", "oublier", "deviner"], "correctIndex": 0 },
+        { "id": 15, "answer": "déterminée", "options": ["déterminée", "hésitante", "indécise", "paresseuse"], "correctIndex": 0 }
+      ]
+    },
+    "literary": {
+      "title": "Le sauvetage d'Apollo 13",
+      "title_fa": "نجات آپولو ۱۳",
+      "inspiration": "Apollo 13 (film de Ron Howard) - Gestion de crise spatiale",
+      "text": "Au centre de contrôle de la NASA à Houston, l'ambiance était glaciale. L'explosion du réservoir d'oxygène marquait une {{BLANK_1}} critique et inattendue dans la mission. La {{BLANK_2}} de survie des astronautes dans le module lunaire était très limitée. Les ingénieurs savaient que les réserves d'énergie n'allaient {{BLANK_3}} que quelques dizaines d'heures. Il fallait immédiatement {{BLANK_4}} les procédures de retour d'urgence. L'{{BLANK_5}} de la mission signifiait la mort de l'équipage. Le directeur de vol, Gene Kranz, devait absolument {{BLANK_6}} une catastrophe fatale. Il a réuni tous les experts pour {{BLANK_7}} des données techniques et trouver une solution. Cet {{BLANK_8}} intellectuel intense a permis de simuler plusieurs trajectoires. Ils ont dû {{BLANK_9}} les options qui consommaient trop de carburant. Ensuite, Kranz a fait {{BLANK_10}} la liste stricte des instruments à éteindre. Chaque {{BLANK_11}} du vaisseau spatial devait être analysé avec précision. La moindre économie d'électricité était absolument {{BLANK_13}} (wait, 12 is essentiel) -> absolument {{BLANK_12}} pour survivre. Ils devaient {{BLANK_13}} toute erreur de calcul à tout prix. Les physiciens ont réussi à {{BLANK_14}} l'angle exact de rentrée dans l'atmosphère. Face à l'immensité de l'espace, l'équipe au sol restait profondément {{BLANK_15}} à ramener ses hommes sains et saufs.",
+      "blanks": [
+        { "id": 1, "answer": "étape", "options": ["étape", "chute", "fin", "conclusion"], "correctIndex": 0 },
+        { "id": 2, "answer": "durée", "options": ["durée", "taille", "poids", "hauteur"], "correctIndex": 0 },
+        { "id": 3, "answer": "durer", "options": ["durer", "finir", "terminer", "conclure"], "correctIndex": 0 },
+        { "id": 4, "answer": "entamer", "options": ["entamer", "terminer", "finir", "conclure"], "correctIndex": 0 },
+        { "id": 5, "answer": "échec", "options": ["échec", "succès", "réussite", "victoire"], "correctIndex": 0 },
+        { "id": 6, "answer": "empêcher", "options": ["empêcher", "provoquer", "causer", "créer"], "correctIndex": 0 },
+        { "id": 7, "answer": "échanger", "options": ["échanger", "cacher", "taire", "refuser"], "correctIndex": 0 },
+        { "id": 8, "answer": "échange", "options": ["échange", "silence", "mutisme", "secret"], "correctIndex": 0 },
+        { "id": 9, "answer": "écarter", "options": ["écarter", "garder", "accepter", "valider"], "correctIndex": 0 },
+        { "id": 10, "answer": "dresser", "options": ["dresser", "détruire", "cacher", "oublier"], "correctIndex": 0 },
+        { "id": 11, "answer": "élément", "options": ["élément", "problème", "désastre", "catastrophe"], "correctIndex": 0 },
+        { "id": 12, "answer": "essentielle", "options": ["essentielle", "inutile", "superflue", "facultative"], "correctIndex": 0 },
+        { "id": 13, "answer": "éviter", "options": ["éviter", "chercher", "provoquer", "créer"], "correctIndex": 0 },
+        { "id": 14, "answer": "déterminer", "options": ["déterminer", "ignorer", "oublier", "deviner"], "correctIndex": 0 },
+        { "id": 15, "answer": "déterminée", "options": ["déterminée", "hésitante", "indécise", "paresseuse"], "correctIndex": 0 }
+      ]
+    }
+  },
+
+  "quiz": {
+    "title": "Quiz : Planification et Gestion",
+    "title_fa": "آزمون: برنامه‌ریزی و مدیریت",
+    "displayCount": 10,
+    "questions": [
+      { "type": "mcq", "question": "La première ____ de la recette est de préparer tous les ingrédients.", "options": ["étape", "chute", "fin", "conclusion"], "correctIndex": 0, "explanation_fa": "étape = مرحله و گام." },
+      { "type": "mcq", "question": "La ____ du film est de deux heures et demie.", "options": ["durée", "taille", "poids", "hauteur"], "correctIndex": 0, "explanation_fa": "durée = مدت زمان." },
+      { "type": "binary", "question": "Le verbe \"durer\" signifie \"prendre fin rapidement\".", "options": ["Vrai", "Faux"], "correctIndex": 1, "explanation_fa": "durer یعنی طول کشیدن و ادامه داشتن." },
+      { "type": "mcq", "question": "Le président va ____ son discours dans quelques minutes.", "options": ["entamer", "terminer", "finir", "conclure"], "correctIndex": 0, "explanation_fa": "entamer = آغاز کردن و استارت زدن." },
+      { "type": "mcq", "question": "Après trois tentatives ratées, il a fini par accepter son ____.", "options": ["échec", "succès", "réussite", "victoire"], "correctIndex": 0, "explanation_fa": "échec = شکست." },
+      { "type": "mcq", "question": "Le vaccin va ____ la propagation du virus dans la population.", "options": ["empêcher", "provoquer", "causer", "créer"], "correctIndex": 0, "explanation_fa": "empêcher = جلوگیری کردن و مانع شدن." },
+      { "type": "mcq", "question": "Les diplomates se sont réunis pour ____ des propositions de paix.", "options": ["échanger", "cacher", "taire", "refuser"], "correctIndex": 0, "explanation_fa": "échanger = مبادله کردن و تبادل نظر کردن." },
+      { "type": "binary", "question": "Un \"échange\" peut désigner le fait de donner une chose et d'en recevoir une autre.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، échange به معنای تبادل و مبادله است." },
+      { "type": "mcq", "question": "Le médecin a décidé d'____ l'hypothèse d'une allergie alimentaire.", "options": ["écarter", "garder", "accepter", "valider"], "correctIndex": 0, "explanation_fa": "écarter = کنار گذاشتن و رد کردن (یک ایده یا گزینه)." },
+      { "type": "mcq", "question": "Avant le déménagement, il faut ____ la liste de tous les cartons.", "options": ["dresser", "détruire", "cacher", "oublier"], "correctIndex": 0, "explanation_fa": "dresser une liste = فهرستی تنظیم کردن و تهیه کردن." },
+      { "type": "mcq", "question": "L'eau est un ____ vital pour la survie de tous les êtres vivants.", "options": ["élément", "problème", "désastre", "catastrophe"], "correctIndex": 0, "explanation_fa": "élément = عنصر و فاکتور." },
+      { "type": "mcq", "question": "Il est ____ de porter un casque de sécurité sur ce chantier.", "options": ["essentiel", "inutile", "superflu", "facultatif"], "correctIndex": 0, "explanation_fa": "essentiel = ضروری و اساسی." },
+      { "type": "mcq", "question": "Pour rester en bonne santé, il faut ____ de manger trop de sucre.", "options": ["éviter", "chercher", "provoquer", "créer"], "correctIndex": 0, "explanation_fa": "éviter = اجتناب کردن و دوری کردن." },
+      { "type": "binary", "question": "Le verbe \"déterminer\" signifie \"trouver ou fixer avec précision\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، déterminer یعنی تعیین کردن و مشخص کردن." },
+      { "type": "mcq", "question": "Malgré les obstacles, l'athlète restait ____ à gagner la médaille d'or.", "options": ["déterminé", "hésitant", "indécis", "paresseux"], "correctIndex": 0, "explanation_fa": "déterminé = مصمم و بااراده." }
+    ]
+  }
+}
