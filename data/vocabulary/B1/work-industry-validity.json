@@ -5,37 +5,206 @@
   "theme_fa": "محیط کار، صنعت و اعتبار",
   "icon": "🏭",
   "inspiration": "Les Temps Modernes (film de Charlie Chaplin)",
-
   "words": [
-    { "fr": "l'usine", "fa": "کارخانه", "emoji": "🏭", "difficulty": 2, "ex": "Il travaille à la chaîne dans une grande usine.", "ex_fa": "او در خط تولید یک کارخانه بزرگ کار می‌کند." },
-    { "fr": "valable", "fa": "معتبر / قابل قبول", "emoji": "✔️", "difficulty": 4, "ex": "Ce passeport n'est plus valable pour voyager.", "ex_fa": "این گذرنامه دیگر برای سفر معتبر نیست." },
-    { "fr": "valider", "fa": "تایید کردن / معتبر کردن", "emoji": "✅", "difficulty": 3, "ex": "Le chef doit valider chaque étape de la production.", "ex_fa": "رئیس باید هر مرحله از تولید را تایید کند." },
-    { "fr": "vérifier", "fa": "بررسی کردن / چک کردن", "emoji": "🔍", "difficulty": 2, "ex": "Il faut vérifier la machine avant de l'allumer.", "ex_fa": "باید قبل از روشن کردن، دستگاه را بررسی کرد." },
-    { "fr": "viser", "fa": "هدف گرفتن / هدف داشتن", "emoji": "🎯", "difficulty": 4, "ex": "Il vise un poste de directeur l'année prochaine.", "ex_fa": "او سال آینده سمت مدیریت را هدف گرفته است." },
-    { "fr": "la valeur", "fa": "ارزش", "emoji": "💎", "difficulty": 3, "ex": "Le travail manuel a perdu de sa valeur aujourd'hui.", "ex_fa": "کار دستی امروزه ارزش خود را از دست داده است." },
-    { "fr": "en vigueur", "fa": "لازم‌الاجرا / معتبر", "emoji": "⚖️", "difficulty": 5, "ex": "Les lois en vigueur protègent les droits des ouvriers.", "ex_fa": "قوانین لازم‌الاجرا از حقوق کارگران محافظت می‌کنند." },
-    { "fr": "la vertu", "fa": "فضیلت / اخلاق", "emoji": "🌟", "difficulty": 5, "ex": "La patience est une vertu nécessaire dans ce métier.", "ex_fa": "صبر یک فضیلت ضروری در این شغل است." },
-    { "fr": "le vendeur / la vendeuse", "fa": "فروشنده", "emoji": "🛒", "difficulty": 2, "ex": "Le vendeur de journaux crie les dernières nouvelles.", "ex_fa": "فروشنده روزنامه آخرین اخبار را فریاد می‌زند." },
-    { "fr": "le week-end", "fa": "آخر هفته", "emoji": "📅", "difficulty": 2, "ex": "Les ouvriers attendent le week-end pour se reposer.", "ex_fa": "کارگران منتظر آخر هفته هستند تا استراحت کنند." }
+    {
+      "fr": "l'usine",
+      "fa": "کارخانه",
+      "emoji": "🏭",
+      "difficulty": 2,
+      "ex": "Il travaille à la chaîne dans une grande usine.",
+      "ex_fa": "او در خط تولید یک کارخانه بزرگ کار می‌کند."
+    },
+    {
+      "fr": "valable",
+      "fa": "معتبر / قابل قبول",
+      "emoji": "✔️",
+      "difficulty": 4,
+      "ex": "Ce passeport n'est plus valable pour voyager.",
+      "ex_fa": "این گذرنامه دیگر برای سفر معتبر نیست."
+    },
+    {
+      "fr": "valider",
+      "fa": "تایید کردن / معتبر کردن",
+      "emoji": "✅",
+      "difficulty": 3,
+      "ex": "Le chef doit valider chaque étape de la production.",
+      "ex_fa": "رئیس باید هر مرحله از تولید را تایید کند."
+    },
+    {
+      "fr": "vérifier",
+      "fa": "بررسی کردن / چک کردن",
+      "emoji": "🔍",
+      "difficulty": 2,
+      "ex": "Il faut vérifier la machine avant de l'allumer.",
+      "ex_fa": "باید قبل از روشن کردن، دستگاه را بررسی کرد."
+    },
+    {
+      "fr": "viser",
+      "fa": "هدف گرفتن / هدف داشتن",
+      "emoji": "🎯",
+      "difficulty": 4,
+      "ex": "Il vise un poste de directeur l'année prochaine.",
+      "ex_fa": "او سال آینده سمت مدیریت را هدف گرفته است."
+    },
+    {
+      "fr": "la valeur",
+      "fa": "ارزش",
+      "emoji": "💎",
+      "difficulty": 3,
+      "ex": "Le travail manuel a perdu de sa valeur aujourd'hui.",
+      "ex_fa": "کار دستی امروزه ارزش خود را از دست داده است."
+    },
+    {
+      "fr": "en vigueur",
+      "fa": "لازم‌الاجرا / معتبر",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "Les lois en vigueur protègent les droits des ouvriers.",
+      "ex_fa": "قوانین لازم‌الاجرا از حقوق کارگران محافظت می‌کنند."
+    },
+    {
+      "fr": "la vertu",
+      "fa": "فضیلت / اخلاق",
+      "emoji": "🌟",
+      "difficulty": 5,
+      "ex": "La patience est une vertu nécessaire dans ce métier.",
+      "ex_fa": "صبر یک فضیلت ضروری در این شغل است."
+    },
+    {
+      "fr": "le vendeur / la vendeuse",
+      "fa": "فروشنده",
+      "emoji": "🛒",
+      "difficulty": 2,
+      "ex": "Le vendeur de journaux crie les dernières nouvelles.",
+      "ex_fa": "فروشنده روزنامه آخرین اخبار را فریاد می‌زند."
+    },
+    {
+      "fr": "le week-end",
+      "fa": "آخر هفته",
+      "emoji": "📅",
+      "difficulty": 2,
+      "ex": "Les ouvriers attendent le week-end pour se reposer.",
+      "ex_fa": "کارگران منتظر آخر هفته هستند تا استراحت کنند."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "Charlot et la machine",
       "title_fa": "چارلی و ماشین",
       "text": "Charlot est un ouvrier qui travaille dans une immense {{BLANK_1}} moderne. Son travail consiste à {{BLANK_2}} les écrous sur une chaîne de montage infinie. Les règles {{BLANK_3}} dans l'entreprise sont très strictes et surveillées par des caméras. Le directeur doit {{BLANK_4}} la qualité de chaque pièce qui sort de la machine. Charlot connaît la {{BLANK_5}} de son travail, même si son salaire est très bas. La {{BLANK_6}} de la persévérance l'aide à continuer malgré la fatigue. À midi, il achète un sandwich à un {{BLANK_7}} ambulant devant la grille. Il utilise un ticket de cantine qui est encore {{BLANK_8}} pour la journée. Dans ses rêves, il {{BLANK_9}} une vie meilleure, loin du bruit des engrenages et de la fumée. Enfin, la sirène sonne et le {{BLANK_10}} arrive, lui offrant deux jours de liberté précieuse.",
       "blanks": [
-        { "id": 1, "answer": "usine", "options": ["usine", "cuisine", "chambre", "forêt"], "correctIndex": 0 },
-        { "id": 2, "answer": "vérifier", "options": ["vérifier", "ignorer", "casser", "perdre"], "correctIndex": 0 },
-        { "id": 3, "answer": "en vigueur", "options": ["en vigueur", "cassées", "perdues", "volées"], "correctIndex": 0 },
-        { "id": 4, "answer": "valider", "options": ["valider", "refuser", "détruire", "cacher"], "correctIndex": 0 },
-        { "id": 5, "answer": "valeur", "options": ["valeur", "poubelle", "voiture", "vélo"], "correctIndex": 0 },
-        { "id": 6, "answer": "vertu", "options": ["vertu", "vice", "défaut", "faute"], "correctIndex": 0 },
-        { "id": 7, "answer": "vendeur", "options": ["vendeur", "acheteur", "voleur", "menteur"], "correctIndex": 0 },
-        { "id": 8, "answer": "valable", "options": ["valable", "expiré", "faux", "invalidé"], "correctIndex": 0 },
-        { "id": 9, "answer": "vise", "options": ["vise", "fuit", "évite", "rate"], "correctIndex": 0 },
-        { "id": 10, "answer": "week-end", "options": ["week-end", "travail", "usine", "chaîne"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "usine",
+          "options": [
+            "usine",
+            "cuisine",
+            "chambre",
+            "forêt"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "vérifier",
+          "options": [
+            "vérifier",
+            "ignorer",
+            "casser",
+            "perdre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "en vigueur",
+          "options": [
+            "en vigueur",
+            "cassées",
+            "perdues",
+            "volées"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "valider",
+          "options": [
+            "valider",
+            "refuser",
+            "détruire",
+            "cacher"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "valeur",
+          "options": [
+            "valeur",
+            "poubelle",
+            "voiture",
+            "vélo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "vertu",
+          "options": [
+            "vertu",
+            "vice",
+            "défaut",
+            "faute"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "vendeur",
+          "options": [
+            "vendeur",
+            "acheteur",
+            "voleur",
+            "menteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "valable",
+          "options": [
+            "valable",
+            "expiré",
+            "faux",
+            "invalidé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "vise",
+          "options": [
+            "vise",
+            "fuit",
+            "évite",
+            "rate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "week-end",
+          "options": [
+            "week-end",
+            "travail",
+            "usine",
+            "chaîne"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Charlot est un ouvrier qui travaille dans une immense ___ moderne. Son travail consiste à ___ les écrous sur une chaîne de montage infinie. Les règles ___ dans l'entreprise sont très strictes et surveillées par des caméras. Le directeur doit ___ la qualité de chaque pièce qui sort de la machine. Charlot connaît la ___ de son travail, même si son salaire est très bas. La ___ de la persévérance l'aide à continuer malgré la fatigue. À midi, il achète un sandwich à un ___ ambulant devant la grille. Il utilise un ticket de cantine qui est encore ___ pour la journée. Dans ses rêves, il ___ une vie meilleure, loin du bruit des engrenages et de la fumée. Enfin, la sirène sonne et le ___ arrive, lui offrant deux jours de liberté précieuse."
     },
     "literary": {
       "title": "L'engrenage de la modernité",
@@ -43,35 +212,241 @@
       "inspiration": "Les Temps Modernes (film de Charlie Chaplin)",
       "text": "Le petit homme au chapeau melon pénétrait chaque matin dans l'immense {{BLANK_1}} où le bruit des machines écrasait toute pensée humaine. Son unique tâche, répétée des milliers de fois, était de {{BLANK_2}} et serrer des boulons sur une chaîne de montage infernale. Les règles de productivité {{BLANK_3}} exigeaient une rapidité surhumaine, sous l'œil froid des contremaîtres. Le patron, depuis son bureau climatisé, devait {{BLANK_4}} les quotas de production affichés sur les écrans géants. Charlot sentait confusément la {{BLANK_5}} de sa dignité d'homme s'effriter face à la mécanique. Seule la {{BLANK_6}} de l'entraide avec ses collègues lui permettait de survivre à l'aliénation. Lors de la courte pause, il échangeait quelques mots avec un {{BLANK_7}} de rues qui proposait des montres bon marché. Il rêvait d'économiser assez pour s'offrir un billet de train {{BLANK_8}} vers la campagne. Au fond de son cœur, il {{BLANK_9}} une existence simple, une petite maison avec un jardin où l'arbre fruitier remplacerait l'acier. Quand la sirène hurlait enfin la fin de la semaine, le {{BLANK_10}} devenait son seul refuge, une brève illusion de liberté avant que les portes de l'usine ne se rouvrent.",
       "blanks": [
-        { "id": 1, "answer": "usine", "options": ["usine", "cuisine", "chambre", "forêt"], "correctIndex": 0 },
-        { "id": 2, "answer": "vérifier", "options": ["vérifier", "ignorer", "casser", "perdre"], "correctIndex": 0 },
-        { "id": 3, "answer": "en vigueur", "options": ["en vigueur", "cassées", "perdues", "volées"], "correctIndex": 0 },
-        { "id": 4, "answer": "valider", "options": ["valider", "refuser", "détruire", "cacher"], "correctIndex": 0 },
-        { "id": 5, "answer": "valeur", "options": ["valeur", "poubelle", "voiture", "vélo"], "correctIndex": 0 },
-        { "id": 6, "answer": "vertu", "options": ["vertu", "vice", "défaut", "faute"], "correctIndex": 0 },
-        { "id": 7, "answer": "vendeur", "options": ["vendeur", "acheteur", "voleur", "menteur"], "correctIndex": 0 },
-        { "id": 8, "answer": "valable", "options": ["valable", "expiré", "faux", "invalidé"], "correctIndex": 0 },
-        { "id": 9, "answer": "visait", "options": ["visait", "fuyait", "évitait", "ratait"], "correctIndex": 0 },
-        { "id": 10, "answer": "week-end", "options": ["week-end", "travail", "usine", "chaîne"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "usine",
+          "options": [
+            "usine",
+            "cuisine",
+            "chambre",
+            "forêt"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "vérifier",
+          "options": [
+            "vérifier",
+            "ignorer",
+            "casser",
+            "perdre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "en vigueur",
+          "options": [
+            "en vigueur",
+            "cassées",
+            "perdues",
+            "volées"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "valider",
+          "options": [
+            "valider",
+            "refuser",
+            "détruire",
+            "cacher"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "valeur",
+          "options": [
+            "valeur",
+            "poubelle",
+            "voiture",
+            "vélo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "vertu",
+          "options": [
+            "vertu",
+            "vice",
+            "défaut",
+            "faute"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "vendeur",
+          "options": [
+            "vendeur",
+            "acheteur",
+            "voleur",
+            "menteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "valable",
+          "options": [
+            "valable",
+            "expiré",
+            "faux",
+            "invalidé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "visait",
+          "options": [
+            "visait",
+            "fuyait",
+            "évitait",
+            "ratait"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "week-end",
+          "options": [
+            "week-end",
+            "travail",
+            "usine",
+            "chaîne"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Le petit homme au chapeau melon pénétrait chaque matin dans l'immense ___ où le bruit des machines écrasait toute pensée humaine. Son unique tâche, répétée des milliers de fois, était de ___ et serrer des boulons sur une chaîne de montage infernale. Les règles de productivité ___ exigeaient une rapidité surhumaine, sous l'œil froid des contremaîtres. Le patron, depuis son bureau climatisé, devait ___ les quotas de production affichés sur les écrans géants. Charlot sentait confusément la ___ de sa dignité d'homme s'effriter face à la mécanique. Seule la ___ de l'entraide avec ses collègues lui permettait de survivre à l'aliénation. Lors de la courte pause, il échangeait quelques mots avec un ___ de rues qui proposait des montres bon marché. Il rêvait d'économiser assez pour s'offrir un billet de train ___ vers la campagne. Au fond de son cœur, il ___ une existence simple, une petite maison avec un jardin où l'arbre fruitier remplacerait l'acier. Quand la sirène hurlait enfin la fin de la semaine, le ___ devenait son seul refuge, une brève illusion de liberté avant que les portes de l'usine ne se rouvrent."
     }
   },
-
   "quiz": {
     "title": "Quiz : Travail, Industrie et Validité",
     "title_fa": "آزمون: کار، صنعت و اعتبار",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "Les ouvriers assemblent les voitures dans l'____.", "options": ["usine", "cuisine", "chambre", "forêt"], "correctIndex": 0, "explanation_fa": "usine = کارخانه." },
-      { "type": "mcq", "question": "Votre carte d'identité n'est plus ____ , elle a expiré hier.", "options": ["valable", "expirée", "fausse", "invalidée"], "correctIndex": 0, "explanation_fa": "valable = معتبر / قابل قبول." },
-      { "type": "binary", "question": "Le verbe \"valider\" signifie \"confirmer ou approuver officiellement\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، valider یعنی تایید کردن." },
-      { "type": "mcq", "question": "Le mécanicien doit ____ les freins avant le départ.", "options": ["vérifier", "ignorer", "casser", "perdre"], "correctIndex": 0, "explanation_fa": "vérifier = بررسی کردن / چک کردن." },
-      { "type": "mcq", "question": "Ce jeune ingénieur ____ un poste de direction d'ici cinq ans.", "options": ["vise", "fuit", "évite", "rate"], "correctIndex": 0, "explanation_fa": "viser = هدف گرفتن." },
-      { "type": "mcq", "question": "L'honnêteté est une ____ fondamentale dans le monde des affaires.", "options": ["valeur", "poubelle", "voiture", "vélo"], "correctIndex": 0, "explanation_fa": "valeur = ارزش." },
-      { "type": "mcq", "question": "Le code de la route ____ impose le port de la ceinture de sécurité.", "options": ["en vigueur", "cassé", "perdu", "volé"], "correctIndex": 0, "explanation_fa": "en vigueur = لازم‌الاجرا / معتبر." },
-      { "type": "binary", "question": "La \"vertu\" désigne une disposition morale à faire le bien.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، vertu به معنای فضیلت و اخلاق است." },
-      { "type": "mcq", "question": "Le ____ de fruits et légumes propose des produits frais sur le marché.", "options": ["vendeur", "acheteur", "voleur", "menteur"], "correctIndex": 0, "explanation_fa": "vendeur = فروشنده." },
-      { "type": "mcq", "question": "La plupart des bureaux sont fermés pendant le ____.", "options": ["week-end", "travail", "usine", "chaîne"], "correctIndex": 0, "explanation_fa": "week-end = آخر هفته." }
+      {
+        "type": "mcq",
+        "question": "Les ouvriers assemblent les voitures dans l'____.",
+        "options": [
+          "usine",
+          "cuisine",
+          "chambre",
+          "forêt"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "usine = کارخانه."
+      },
+      {
+        "type": "mcq",
+        "question": "Votre carte d'identité n'est plus ____ , elle a expiré hier.",
+        "options": [
+          "valable",
+          "expirée",
+          "fausse",
+          "invalidée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "valable = معتبر / قابل قبول."
+      },
+      {
+        "type": "binary",
+        "question": "Le verbe \"valider\" signifie \"confirmer ou approuver officiellement\".",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، valider یعنی تایید کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mécanicien doit ____ les freins avant le départ.",
+        "options": [
+          "vérifier",
+          "ignorer",
+          "casser",
+          "perdre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "vérifier = بررسی کردن / چک کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce jeune ingénieur ____ un poste de direction d'ici cinq ans.",
+        "options": [
+          "vise",
+          "fuit",
+          "évite",
+          "rate"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "viser = هدف گرفتن."
+      },
+      {
+        "type": "mcq",
+        "question": "L'honnêteté est une ____ fondamentale dans le monde des affaires.",
+        "options": [
+          "valeur",
+          "poubelle",
+          "voiture",
+          "vélo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "valeur = ارزش."
+      },
+      {
+        "type": "mcq",
+        "question": "Le code de la route ____ impose le port de la ceinture de sécurité.",
+        "options": [
+          "en vigueur",
+          "cassé",
+          "perdu",
+          "volé"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "en vigueur = لازم‌الاجرا / معتبر."
+      },
+      {
+        "type": "binary",
+        "question": "La \"vertu\" désigne une disposition morale à faire le bien.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، vertu به معنای فضیلت و اخلاق است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ de fruits et légumes propose des produits frais sur le marché.",
+        "options": [
+          "vendeur",
+          "acheteur",
+          "voleur",
+          "menteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "vendeur = فروشنده."
+      },
+      {
+        "type": "mcq",
+        "question": "La plupart des bureaux sont fermés pendant le ____.",
+        "options": [
+          "week-end",
+          "travail",
+          "usine",
+          "chaîne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "week-end = آخر هفته."
+      }
     ]
   }
 }
