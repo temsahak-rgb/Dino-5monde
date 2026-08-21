@@ -1,0 +1,77 @@
+{
+  "id": "work_necessities",
+  "level": "B1",
+  "theme": "Travail et Nécessités",
+  "theme_fa": "دنیای کار، اقتصاد و ضرورت‌ها",
+  "icon": "🏢",
+  "inspiration": "Le Diable s'habille en Prada (film de David Frankel)",
+
+  "words": [
+    { "fr": "la profession", "fa": "حرفه / شغل", "emoji": "💼", "difficulty": 3, "ex": "Le journalisme est une profession exigeante.", "ex_fa": "روزنامه‌نگاری یک حرفه پرتقاضا است." },
+    { "fr": "professionnel / professionnelle", "fa": "حرفه‌ای", "emoji": "👔", "difficulty": 3, "ex": "Il a un comportement très professionnel au bureau.", "ex_fa": "او در دفتر رفتار بسیار حرفه‌ای دارد." },
+    { "fr": "le patron / la patronne", "fa": "رئیس / کارفرما", "emoji": "👑", "difficulty": 2, "ex": "Elle a peur de demander une augmentation à son patron.", "ex_fa": "او از درخواست افزایش حقوق از رئیسش می‌ترسد." },
+    { "fr": "la promotion", "fa": "ترفیع / ارتقای شغلی", "emoji": "📈", "difficulty": 3, "ex": "Après cinq ans, elle a enfin obtenu une promotion.", "ex_fa": "بعد از پنج سال، او بالاخره ترفیع گرفت." },
+    { "fr": "produire", "fa": "تولید کردن", "emoji": "🏭", "difficulty": 3, "ex": "Cette usine va produire des voitures électriques.", "ex_fa": "این کارخانه خودروهای برقی تولید خواهد کرد." },
+    { "fr": "la production", "fa": "تولید / محصول", "emoji": "📦", "difficulty": 3, "ex": "La production de ce magazine est très coûteuse.", "ex_fa": "تولید این مجله بسیار پرهزینه است." },
+    { "fr": "le moyen", "fa": "وسیله / راه", "emoji": "🛠️", "difficulty": 3, "ex": "Il a trouvé le moyen de contourner le problème.", "ex_fa": "او راهی برای دور زدن مشکل پیدا کرد." },
+    { "fr": "l'outil", "fa": "ابزار", "emoji": "🔧", "difficulty": 3, "ex": "L'ordinateur est l'outil principal du graphiste.", "ex_fa": "کامپیوتر ابزار اصلی گرافیست است." },
+    { "fr": "obtenir", "fa": "به دست آوردن", "emoji": "🏆", "difficulty": 3, "ex": "Elle a réussi à obtenir le poste de rédactrice en chef.", "ex_fa": "او موفق شد سمت سردبیری را به دست آورد." },
+    { "fr": "nécessaire", "fa": "ضروری / لازم", "emoji": "✅", "difficulty": 2, "ex": "Il est nécessaire de respecter les délais de publication.", "ex_fa": "رعایت مهلت‌های انتشار ضروری است." }
+  ],
+
+  "stories": {
+    "simple": {
+      "title": "Le stage chez Runway",
+      "title_fa": "دوره کارآموزی در ران‌وی",
+      "text": "Andy vient d'arriver à New York. Elle ne connaît rien au monde de la mode, mais elle veut exercer la {{BLANK_1}} de journaliste. Elle est engagée comme assistante chez Runway. Au début, elle n'a pas une attitude très {{BLANK_2}} et s'habille mal. Sa {{BLANK_3}}, Miranda Priestly, est terrifiante et exige la perfection. Andy espère qu'une bonne évaluation lui permettra d'obtenir une {{BLANK_4}} plus tard. Le magazine doit {{BLANK_5}} des numéros de haute qualité chaque mois. La {{BLANK_6}} du prochain numéro de septembre est un vrai cauchemar. Andy doit trouver le {{BLANK_7}} de récupérer le manuscrit du nouveau livre d'Harry Potter avant sa sortie. Son téléphone portable devient son {{BLANK_8}} de travail le plus important, il sonne sans arrêt. Finalement, elle réussit à {{BLANK_9}} le manuscrit et à le relier en un temps record. Miranda est impressionnée et reconnaît qu'Andy a fait le {{BLANK_10}} pour garder son emploi.",
+      "blanks": [
+        { "id": 1, "answer": "profession", "options": ["profession", "hobby", "loisir", "passe-temps"], "correctIndex": 0 },
+        { "id": 2, "answer": "professionnelle", "options": ["professionnelle", "amateur", "débutante", "bénévole"], "correctIndex": 0 },
+        { "id": 3, "answer": "patronne", "options": ["patronne", "employée", "stagiaire", "cliente"], "correctIndex": 0 },
+        { "id": 4, "answer": "promotion", "options": ["promotion", "rétrogradation", "licenciement", "démission"], "correctIndex": 0 },
+        { "id": 5, "answer": "produire", "options": ["produire", "détruire", "consommer", "acheter"], "correctIndex": 0 },
+        { "id": 6, "answer": "production", "options": ["production", "consommation", "destruction", "importation"], "correctIndex": 0 },
+        { "id": 7, "answer": "moyen", "options": ["moyen", "véhicule", "moteur", "pneu"], "correctIndex": 0 },
+        { "id": 8, "answer": "outil", "options": ["outil", "vêtement", "meuble", "aliment"], "correctIndex": 0 },
+        { "id": 9, "answer": "obtenir", "options": ["obtenir", "perdre", "refuser", "donner"], "correctIndex": 0 },
+        { "id": 10, "answer": "nécessaire", "options": ["nécessaire", "inutile", "superflu", "facultatif"], "correctIndex": 0 }
+      ]
+    },
+    "literary": {
+      "title": "L'enfer de la mode",
+      "title_fa": "جهنم مد",
+      "inspiration": "Le Diable s'habille en Prada (film de David Frankel)",
+      "text": "Andrea Sachs débarquait dans les locaux new-yorkais du magazine Runway avec des idéaux littéraires. Elle méprisait ce milieu superficiel, mais voulait utiliser ce stage comme tremplin pour sa future {{BLANK_1}} de journaliste d'investigation sérieuse. Très vite, elle a dû adopter un comportement irréprochable et parfaitement {{BLANK_2}} pour survivre dans cet environnement toxique. Sa {{BLANK_3}} absolue, la légendaire Miranda Priestly, dirigeait la rédaction d'une main de fer dans un gant de velours glacé. Andy rêvait secrètement qu'une excellente recommandation lui offrirait une {{BLANK_4}} vers les grands journaux politiques. L'équipe devait {{BLANK_5}} un contenu éditorial d'une exigence esthétique inégalée chaque mois. La {{BLANK_6}} éditoriale du numéro de septembre représentait un marathon de stress et de larmes. Quand Miranda a exigé l'impossible, Andy a dû inventer le {{BLANK_7}} illégal de se procurer le manuscrit non publié du dernier Harry Potter. Son smartphone noir est devenu son {{BLANK_8}} de torture quotidien, la réveillant au milieu de la nuit pour des caprices vestimentaires. Contre toute attente, elle a réussi à {{BLANK_9}} ce document introuvable et à le faire livrer chez la directrice. Face à cette prouesse, Miranda a dû admettre qu'Andy avait fait tout le {{BLANK_10}} pour s'imposer dans ce monde impitoyable, même si cela allait lui coûter son âme.",
+      "blanks": [
+        { "id": 1, "answer": "profession", "options": ["profession", "hobby", "loisir", "passion"], "correctIndex": 0 },
+        { "id": 2, "answer": "professionnel", "options": ["professionnel", "amateur", "débutant", "bénévole"], "correctIndex": 0 },
+        { "id": 3, "answer": "patronne", "options": ["patronne", "employée", "stagiaire", "lectrice"], "correctIndex": 0 },
+        { "id": 4, "answer": "promotion", "options": ["promotion", "rétrogradation", "licenciement", "pause"], "correctIndex": 0 },
+        { "id": 5, "answer": "produire", "options": ["produire", "détruire", "consommer", "jeter"], "correctIndex": 0 },
+        { "id": 6, "answer": "production", "options": ["production", "consommation", "destruction", "lecture"], "correctIndex": 0 },
+        { "id": 7, "answer": "moyen", "options": ["moyen", "véhicule", "moteur", "pneu"], "correctIndex": 0 },
+        { "id": 8, "answer": "outil", "options": ["outil", "vêtement", "meuble", "aliment"], "correctIndex": 0 },
+        { "id": 9, "answer": "obtenir", "options": ["obtenir", "perdre", "refuser", "donner"], "correctIndex": 0 },
+        { "id": 10, "answer": "nécessaire", "options": ["nécessaire", "inutile", "superflu", "facultatif"], "correctIndex": 0 }
+      ]
+    }
+  },
+
+  "quiz": {
+    "title": "Quiz : Travail et Nécessités",
+    "title_fa": "آزمون: کار و ضرورت‌ها",
+    "displayCount": 10,
+    "questions": [
+      { "type": "mcq", "question": "La médecine est une ____ qui demande de longues années d'études.", "options": ["profession", "hobby", "loisir", "passe-temps"], "correctIndex": 0, "explanation_fa": "profession = حرفه و شغل." },
+      { "type": "mcq", "question": "Pour réussir dans cette entreprise, il faut avoir une attitude ____.", "options": ["professionnelle", "amateur", "débutante", "bénévole"], "correctIndex": 0, "explanation_fa": "professionnel = حرفه‌ای." },
+      { "type": "binary", "question": "Le mot \"patron\" désigne la personne qui dirige une entreprise ou des employés.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، patron یعنی رئیس یا کارفرما." },
+      { "type": "mcq", "question": "Grâce à ses excellents résultats, elle a reçu une ____ et dirige maintenant l'équipe.", "options": ["promotion", "rétrogradation", "licenciement", "démission"], "correctIndex": 0, "explanation_fa": "promotion = ترفیع و ارتقای شغلی." },
+      { "type": "mcq", "question": "Cette nouvelle usine va ____ des panneaux solaires pour toute la région.", "options": ["produire", "détruire", "consommer", "acheter"], "correctIndex": 0, "explanation_fa": "produire = تولید کردن." },
+      { "type": "mcq", "question": "La ____ de ce film d'animation a pris plus de trois ans.", "options": ["production", "consommation", "destruction", "importation"], "correctIndex": 0, "explanation_fa": "production = تولید (اثر یا محصول)." },
+      { "type": "mcq", "question": "Il n'y a pas d'autre ____ que de prendre le train pour arriver à l'heure.", "options": ["moyen", "véhicule", "moteur", "pneu"], "correctIndex": 0, "explanation_fa": "moyen = وسیله و راه." },
+      { "type": "binary", "question": "Un \"outil\" est un objet qui sert à réaliser un travail manuel ou intellectuel.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، outil یعنی ابزار کار." },
+      { "type": "mcq", "question": "Après des mois de recherche, le scientifique a fini par ____ les résultats espérés.", "options": ["obtenir", "perdre", "refuser", "donner"], "correctIndex": 0, "explanation_fa": "obtenir = به دست آوردن." },
+      { "type": "mcq", "question": "Il est absolument ____ de porter un casque de sécurité sur ce chantier.", "options": ["nécessaire", "inutile", "superflu", "facultatif"], "correctIndex": 0, "explanation_fa": "nécessaire = ضروری و لازم." }
+    ]
+  }
+}
