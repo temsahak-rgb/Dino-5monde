@@ -327,42 +327,42 @@
                     changed = true;
                 }
 
-                if (story.text && !story.text_fa) {
-    log(`    🔄 متن (با blanks) - تقسیم به جملات...`, 'info');
+// بررسی اینکه آیا text_fa خراب است
+const needsFix = story.text_fa && /[a-zA-Z]{3,}/.test(story.text_fa);
+
+if (story.text && (!story.text_fa || needsFix)) {
+    log(`    🔄 متن (تقسیم به جملات)...`, 'info');
     
-    // جایگزینی blanks با placeholder
-    const cleanText = story.text.replace(/\{\{BLANK_\d+\}\}/g, '___');
+    // حفظ blanks
+    const placeholders = [];
+    const processed = story.text.replace(/\{\{BLANK_(\d+)\}\}/g, (match, num) => {
+        placeholders.push({ num, match });
+        return `__BLANK_${placeholders.length - 1}__`;
+    });
     
-    // تقسیم به جملات (بر اساس نقطه، علامت سوال، علامت تعجب)
-    const sentences = cleanText.match(/[^.!?]+[.!?]+/g) || [cleanText];
-    const translatedSentences = [];
+    // تقسیم به جملات
+    const sentences = processed.match(/[^.!?]+[.!?]+/g) || [processed];
+    const translatedParts = [];
     
     for (const sentence of sentences) {
         if (sentence.trim()) {
             const translated = await translate(sentence.trim());
-            translatedSentences.push(translated);
+            translatedParts.push(translated);
             await sleep(delay);
         }
     }
     
-    story.text_fa = translatedSentences.join(' ');
+    let fullTranslation = translatedParts.join(' ');
+    
+    // بازگرداندن blanks
+    placeholders.forEach((p, idx) => {
+        fullTranslation = fullTranslation.replace(`__BLANK_${idx}__`, p.match);
+    });
+    
+    story.text_fa = fullTranslation;
     changed = true;
     log(`    ✅ ترجمه شد (${sentences.length} جمله)`, 'success');
 }
-
-                if (story.paragraphs) {
-                    for (const para of story.paragraphs) {
-                        if (shouldStop) break;
-                        if (para.fr && !para.fa) {
-                            log(`    🔄 پاراگراف...`, 'info');
-                            para.fa = await translate(para.fr);
-                            await sleep(delay);
-                            changed = true;
-                        }
-                    }
-                }
-            }
-
             return { changed, path, sha: file.sha, content: JSON.stringify(pack, null, 2) };
         }
 
