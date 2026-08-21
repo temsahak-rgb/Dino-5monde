@@ -5,50 +5,328 @@
   "theme_fa": "اقدامات نهایی، مدیریت بحران و متفرقه",
   "icon": "🛠️",
   "inspiration": "Sully (film de Clint Eastwood avec Tom Hanks)",
-
   "words": [
-    { "fr": "l'action", "fa": "اقدام / عمل", "emoji": "⚡", "difficulty": 2, "ex": "Une action rapide a sauvé des vies.", "ex_fa": "یک اقدام سریع جان‌ها را نجات داد." },
-    { "fr": "agir", "fa": "عمل کردن", "emoji": "🎯", "difficulty": 2, "ex": "Il faut agir immédiatement en cas de danger.", "ex_fa": "در صورت خطر باید فوراً عمل کرد." },
-    { "fr": "l'urgence", "fa": "فوریت / اورژانس", "emoji": "🚨", "difficulty": 3, "ex": "C'est une urgence médicale absolue.", "ex_fa": "این یک فوریت پزشکی مطلق است." },
-    { "fr": "urgent / urgente", "fa": "فوری", "emoji": "⚠️", "difficulty": 2, "ex": "Cette intervention chirurgicale est urgente.", "ex_fa": "این عمل جراحی فوری است." },
-    { "fr": "la crise", "fa": "بحران", "emoji": "🌪️", "difficulty": 3, "ex": "Le pays traverse une crise économique majeure.", "ex_fa": "کشور از یک بحران اقتصادی بزرگ می‌گذرد." },
-    { "fr": "gérer", "fa": "مدیریت کردن", "emoji": "📊", "difficulty": 3, "ex": "Il sait gérer les situations difficiles avec calme.", "ex_fa": "او می‌داند چگونه شرایط دشوار را با آرامش مدیریت کند." },
-    { "fr": "la gestion", "fa": "مدیریت", "emoji": "🏢", "difficulty": 3, "ex": "La gestion de crise demande du sang-froid.", "ex_fa": "مدیریت بحران نیاز به خونسردی دارد." },
-    { "fr": "décider", "fa": "تصمیم گرفتن", "emoji": "✅", "difficulty": 2, "ex": "Le capitaine doit décider en quelques secondes.", "ex_fa": "کاپیتان باید در چند ثانیه تصمیم بگیرد." },
-    { "fr": "la décision", "fa": "تصمیم", "emoji": "🎯", "difficulty": 2, "ex": "Sa décision a changé le cours de l'histoire.", "ex_fa": "تصمیم او جریان تاریخ را تغییر داد." },
-    { "fr": "réagir", "fa": "واکنش نشان دادن", "emoji": "⚡", "difficulty": 3, "ex": "Les secours ont réagi en moins de trois minutes.", "ex_fa": "نیروهای امدادی در کمتر از سه دقیقه واکنش نشان دادند." },
-    { "fr": "la réaction", "fa": "واکنش", "emoji": "🔄", "difficulty": 3, "ex": "Sa réaction face au danger était exemplaire.", "ex_fa": "واکنش او در برابر خطر الگو بود." },
-    { "fr": "rapide", "fa": "سریع", "emoji": "⚡", "difficulty": 2, "ex": "Une intervention rapide est essentielle.", "ex_fa": "یک مداخله سریع ضروری است." },
-    { "fr": "rapidement", "fa": "به سرعت", "emoji": "💨", "difficulty": 2, "ex": "Il faut évacuer rapidement le bâtiment.", "ex_fa": "باید ساختمان را به سرعت تخلیه کرد." },
-    { "fr": "sauver", "fa": "نجات دادن", "emoji": "🦸", "difficulty": 2, "ex": "Les pompiers ont réussi à sauver toute la famille.", "ex_fa": "آتش‌نشان‌ها موفق شدند کل خانواده را نجات دهند." },
-    { "fr": "le sauvetage", "fa": "عملیات نجات", "emoji": "🚁", "difficulty": 3, "ex": "Le sauvetage en mer est très dangereux.", "ex_fa": "عملیات نجات در دریا بسیار خطرناک است." },
-    { "fr": "l'évacuation", "fa": "تخلیه", "emoji": "🏃", "difficulty": 4, "ex": "L'évacuation de l'immeuble s'est faite en ordre.", "ex_fa": "تخلیه ساختمان به صورت منظم انجام شد." },
-    { "fr": "évacuer", "fa": "تخلیه کردن", "emoji": "🚪", "difficulty": 3, "ex": "Il faut évacuer la zone avant l'explosion.", "ex_fa": "باید منطقه را قبل از انفجار تخلیه کرد." }
+    {
+      "fr": "l'action",
+      "fa": "اقدام / عمل",
+      "emoji": "⚡",
+      "difficulty": 2,
+      "ex": "Une action rapide a sauvé des vies.",
+      "ex_fa": "یک اقدام سریع جان‌ها را نجات داد."
+    },
+    {
+      "fr": "agir",
+      "fa": "عمل کردن",
+      "emoji": "🎯",
+      "difficulty": 2,
+      "ex": "Il faut agir immédiatement en cas de danger.",
+      "ex_fa": "در صورت خطر باید فوراً عمل کرد."
+    },
+    {
+      "fr": "l'urgence",
+      "fa": "فوریت / اورژانس",
+      "emoji": "🚨",
+      "difficulty": 3,
+      "ex": "C'est une urgence médicale absolue.",
+      "ex_fa": "این یک فوریت پزشکی مطلق است."
+    },
+    {
+      "fr": "urgent / urgente",
+      "fa": "فوری",
+      "emoji": "⚠️",
+      "difficulty": 2,
+      "ex": "Cette intervention chirurgicale est urgente.",
+      "ex_fa": "این عمل جراحی فوری است."
+    },
+    {
+      "fr": "la crise",
+      "fa": "بحران",
+      "emoji": "🌪️",
+      "difficulty": 3,
+      "ex": "Le pays traverse une crise économique majeure.",
+      "ex_fa": "کشور از یک بحران اقتصادی بزرگ می‌گذرد."
+    },
+    {
+      "fr": "gérer",
+      "fa": "مدیریت کردن",
+      "emoji": "📊",
+      "difficulty": 3,
+      "ex": "Il sait gérer les situations difficiles avec calme.",
+      "ex_fa": "او می‌داند چگونه شرایط دشوار را با آرامش مدیریت کند."
+    },
+    {
+      "fr": "la gestion",
+      "fa": "مدیریت",
+      "emoji": "🏢",
+      "difficulty": 3,
+      "ex": "La gestion de crise demande du sang-froid.",
+      "ex_fa": "مدیریت بحران نیاز به خونسردی دارد."
+    },
+    {
+      "fr": "décider",
+      "fa": "تصمیم گرفتن",
+      "emoji": "✅",
+      "difficulty": 2,
+      "ex": "Le capitaine doit décider en quelques secondes.",
+      "ex_fa": "کاپیتان باید در چند ثانیه تصمیم بگیرد."
+    },
+    {
+      "fr": "la décision",
+      "fa": "تصمیم",
+      "emoji": "🎯",
+      "difficulty": 2,
+      "ex": "Sa décision a changé le cours de l'histoire.",
+      "ex_fa": "تصمیم او جریان تاریخ را تغییر داد."
+    },
+    {
+      "fr": "réagir",
+      "fa": "واکنش نشان دادن",
+      "emoji": "⚡",
+      "difficulty": 3,
+      "ex": "Les secours ont réagi en moins de trois minutes.",
+      "ex_fa": "نیروهای امدادی در کمتر از سه دقیقه واکنش نشان دادند."
+    },
+    {
+      "fr": "la réaction",
+      "fa": "واکنش",
+      "emoji": "🔄",
+      "difficulty": 3,
+      "ex": "Sa réaction face au danger était exemplaire.",
+      "ex_fa": "واکنش او در برابر خطر الگو بود."
+    },
+    {
+      "fr": "rapide",
+      "fa": "سریع",
+      "emoji": "⚡",
+      "difficulty": 2,
+      "ex": "Une intervention rapide est essentielle.",
+      "ex_fa": "یک مداخله سریع ضروری است."
+    },
+    {
+      "fr": "rapidement",
+      "fa": "به سرعت",
+      "emoji": "💨",
+      "difficulty": 2,
+      "ex": "Il faut évacuer rapidement le bâtiment.",
+      "ex_fa": "باید ساختمان را به سرعت تخلیه کرد."
+    },
+    {
+      "fr": "sauver",
+      "fa": "نجات دادن",
+      "emoji": "🦸",
+      "difficulty": 2,
+      "ex": "Les pompiers ont réussi à sauver toute la famille.",
+      "ex_fa": "آتش‌نشان‌ها موفق شدند کل خانواده را نجات دهند."
+    },
+    {
+      "fr": "le sauvetage",
+      "fa": "عملیات نجات",
+      "emoji": "🚁",
+      "difficulty": 3,
+      "ex": "Le sauvetage en mer est très dangereux.",
+      "ex_fa": "عملیات نجات در دریا بسیار خطرناک است."
+    },
+    {
+      "fr": "l'évacuation",
+      "fa": "تخلیه",
+      "emoji": "🏃",
+      "difficulty": 4,
+      "ex": "L'évacuation de l'immeuble s'est faite en ordre.",
+      "ex_fa": "تخلیه ساختمان به صورت منظم انجام شد."
+    },
+    {
+      "fr": "évacuer",
+      "fa": "تخلیه کردن",
+      "emoji": "🚪",
+      "difficulty": 3,
+      "ex": "Il faut évacuer la zone avant l'explosion.",
+      "ex_fa": "باید منطقه را قبل از انفجار تخلیه کرد."
+    }
   ],
-
   "stories": {
     "simple": {
       "title": "Le miracle de l'Hudson",
       "title_fa": "معجزه هادسون",
       "text": "Le 15 janvier 2009, le vol US Airways 1549 décolle normalement. Soudain, une {{BLANK_1}} absolue se déclare : les deux moteurs explosent après une collision avec des oiseaux. Le capitaine Sully doit {{BLANK_2}} en quelques secondes pour sauver les 155 passagers. Cette {{BLANK_3}} médicale et technique demande un sang-froid exceptionnel. La situation est extrêmement {{BLANK_4}} : l'avion perd de l'altitude rapidement. Le pays entier retient son souffle face à cette {{BLANK_5}} aéronautique sans précédent. Sully doit {{BLANK_6}} l'appareil en plein cœur de New York. La {{BLANK_7}} de cette crise va devenir un cas d'école dans les écoles d'aviation. Il doit {{BLANK_8}} entre tenter un retour à l'aéroport ou un amerrissage. Sa {{BLANK_9}} finale sera historique et sauvera toutes les vies à bord. Les contrôleurs aériens ont {{BLANK_10}} avec un professionnalisme remarquable. Leur {{BLANK_11}} coordonnée a permis d'alerter les secours immédiatement. Une intervention {{BLANK_12}} des ferries new-yorkais a été cruciale. Ils ont agi très {{BLANK_13}} pour récupérer les survivants dans l'eau glacée. Les sauveteurs ont réussi à {{BLANK_14}} les 155 personnes. Le {{BLANK_15}} organisé par la Garde côtière fut spectaculaire. L'{{BLANK_16}} complète des passagers s'est faite en moins de trente minutes. Ce jour-là, des héros ordinaires ont accompli l'extraordinaire.",
       "blanks": [
-        { "id": 1, "answer": "urgence", "options": ["urgence", "routine", "habitude", "banalité"], "correctIndex": 0 },
-        { "id": 2, "answer": "agir", "options": ["agir", "dormir", "hésiter", "attendre"], "correctIndex": 0 },
-        { "id": 3, "answer": "urgence", "options": ["urgence", "fête", "vacances", "promenade"], "correctIndex": 0 },
-        { "id": 4, "answer": "urgente", "options": ["urgente", "calme", "paisible", "tranquille"], "correctIndex": 0 },
-        { "id": 5, "answer": "crise", "options": ["crise", "fête", "vacances", "promenade"], "correctIndex": 0 },
-        { "id": 6, "answer": "gérer", "options": ["gérer", "abandonner", "ignorer", "fuir"], "correctIndex": 0 },
-        { "id": 7, "answer": "gestion", "options": ["gestion", "destruction", "abandon", "fuite"], "correctIndex": 0 },
-        { "id": 8, "answer": "décider", "options": ["décider", "hésiter", "attendre", "douter"], "correctIndex": 0 },
-        { "id": 9, "answer": "décision", "options": ["décision", "hésitation", "attente", "doute"], "correctIndex": 0 },
-        { "id": 10, "answer": "réagi", "options": ["réagi", "dormi", "hésité", "attendu"], "correctIndex": 0 },
-        { "id": 11, "answer": "réaction", "options": ["réaction", "hésitation", "attente", "doute"], "correctIndex": 0 },
-        { "id": 12, "answer": "rapide", "options": ["rapide", "lente", "tardive", "retardée"], "correctIndex": 0 },
-        { "id": 13, "answer": "rapidement", "options": ["rapidement", "lentement", "tardivement", "péniblement"], "correctIndex": 0 },
-        { "id": 14, "answer": "sauver", "options": ["sauver", "perdre", "abandonner", "laisser"], "correctIndex": 0 },
-        { "id": 15, "answer": "sauvetage", "options": ["sauvetage", "abandon", "perte", "destruction"], "correctIndex": 0 },
-        { "id": 16, "answer": "évacuation", "options": ["évacuation", "arrivée", "installation", "entrée"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "urgence",
+          "options": [
+            "urgence",
+            "routine",
+            "habitude",
+            "banalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "agir",
+          "options": [
+            "agir",
+            "dormir",
+            "hésiter",
+            "attendre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "urgence",
+          "options": [
+            "urgence",
+            "fête",
+            "vacances",
+            "promenade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "urgente",
+          "options": [
+            "urgente",
+            "calme",
+            "paisible",
+            "tranquille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "crise",
+          "options": [
+            "crise",
+            "fête",
+            "vacances",
+            "promenade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "gérer",
+          "options": [
+            "gérer",
+            "abandonner",
+            "ignorer",
+            "fuir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "gestion",
+          "options": [
+            "gestion",
+            "destruction",
+            "abandon",
+            "fuite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "décider",
+          "options": [
+            "décider",
+            "hésiter",
+            "attendre",
+            "douter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "décision",
+          "options": [
+            "décision",
+            "hésitation",
+            "attente",
+            "doute"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "réagi",
+          "options": [
+            "réagi",
+            "dormi",
+            "hésité",
+            "attendu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "réaction",
+          "options": [
+            "réaction",
+            "hésitation",
+            "attente",
+            "doute"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "rapide",
+          "options": [
+            "rapide",
+            "lente",
+            "tardive",
+            "retardée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "rapidement",
+          "options": [
+            "rapidement",
+            "lentement",
+            "tardivement",
+            "péniblement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "sauver",
+          "options": [
+            "sauver",
+            "perdre",
+            "abandonner",
+            "laisser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "sauvetage",
+          "options": [
+            "sauvetage",
+            "abandon",
+            "perte",
+            "destruction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "évacuation",
+          "options": [
+            "évacuation",
+            "arrivée",
+            "installation",
+            "entrée"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Le 15 janvier 2009, le vol US Airways 1549 décolle normalement. Soudain, une ___ absolue se déclare : les deux moteurs explosent après une collision avec des oiseaux. Le capitaine Sully doit ___ en quelques secondes pour sauver les 155 passagers. Cette ___ médicale et technique demande un sang-froid exceptionnel. La situation est extrêmement ___ : l'avion perd de l'altitude rapidement. Le pays entier retient son souffle face à cette ___ aéronautique sans précédent. Sully doit ___ l'appareil en plein cœur de New York. La ___ de cette crise va devenir un cas d'école dans les écoles d'aviation. Il doit ___ entre tenter un retour à l'aéroport ou un amerrissage. Sa ___ finale sera historique et sauvera toutes les vies à bord. Les contrôleurs aériens ont ___ avec un professionnalisme remarquable. Leur ___ coordonnée a permis d'alerter les secours immédiatement. Une intervention ___ des ferries new-yorkais a été cruciale. Ils ont agi très ___ pour récupérer les survivants dans l'eau glacée. Les sauveteurs ont réussi à ___ les 155 personnes. Le ___ organisé par la Garde côtière fut spectaculaire. L'___ complète des passagers s'est faite en moins de trente minutes. Ce jour-là, des héros ordinaires ont accompli l'extraordinaire."
     },
     "literary": {
       "title": "208 secondes d'éternité",
@@ -56,48 +334,389 @@
       "inspiration": "Sully (film de Clint Eastwood avec Tom Hanks)",
       "text": "Le commandant Chesley Sullenberger III vérifiait ses instruments avec une routine professionnelle quand l'impensable s'est produit. Une {{BLANK_1}} absolue a frappé l'Airbus A320 : une volée d'oies bernaches avait détruit les deux réacteurs simultanément. Sully devait {{BLANK_2}} avec une précision chirurgicale pour offrir une chance de survie aux 155 âmes à bord. Cette {{BLANK_3}} aéronautique inédite exigeait des compétences hors du commun. La situation était devenue terriblement {{BLANK_4}} : plus aucune poussée, seulement le silence assourdissant du planeur forcé. New York entier retenait son souffle face à cette {{BLANK_5}} qui menaçait de devenir une catastrophe urbaine majeure. Le vétéran de l'US Air Force allait {{BLANK_6}} un appareil de soixante tonnes au-dessus de Manhattan. La {{BLANK_7}} exemplaire de cette crise deviendrait un mythe dans l'histoire de l'aviation civile. Il devait {{BLANK_8}} en une fraction de seconde entre l'impossible retour à LaGuardia et l'impensable amerrissage. Sa {{BLANK_9}} finale, fruit de quarante ans d'expérience, allait sauver chaque passager et membre d'équipage. Les contrôleurs aériens de la tour Patrick Hartnett ont {{BLANK_10}} avec un professionnalisme qui forçait l'admiration. Leur {{BLANK_11}} parfaitement coordonnée a permis de mobiliser tous les ferries de la Hudson River. Une intervention extrêmement {{BLANK_12}} des capitaines new-yorkais fut déterminante dans la survie des naufragés. Ils ont manœuvré très {{BLANK_13}} malgré l'eau glaciale de janvier pour atteindre les ailes de l'avion. Les héros anonymes ont réussi à {{BLANK_14}} chaque personne vivante de la carlingue immergée. Le {{BLANK_15}} miraculeux orchestré par la Garde côtière restera gravé dans les mémoires collectives. L'{{BLANK_16}} ordonnée et disciplinée des 155 occupants s'est déroulée dans un calme surréaliste, prouvant que l'excellence humaine pouvait triompher du chaos le plus absolu.",
       "blanks": [
-        { "id": 1, "answer": "urgence", "options": ["urgence", "routine", "habitude", "banalité"], "correctIndex": 0 },
-        { "id": 2, "answer": "agir", "options": ["agir", "dormir", "hésiter", "abandonner"], "correctIndex": 0 },
-        { "id": 3, "answer": "urgence", "options": ["urgence", "fête", "cérémonie", "parade"], "correctIndex": 0 },
-        { "id": 4, "answer": "urgente", "options": ["urgente", "calme", "paisible", "tranquille"], "correctIndex": 0 },
-        { "id": 5, "answer": "crise", "options": ["crise", "fête", "célébration", "réjouissance"], "correctIndex": 0 },
-        { "id": 6, "answer": "gérer", "options": ["gérer", "abandonner", "ignorer", "fuir"], "correctIndex": 0 },
-        { "id": 7, "answer": "gestion", "options": ["gestion", "destruction", "abandon", "chaos"], "correctIndex": 0 },
-        { "id": 8, "answer": "décider", "options": ["décider", "hésiter", "attendre", "subir"], "correctIndex": 0 },
-        { "id": 9, "answer": "décision", "options": ["décision", "hésitation", "attente", "soumission"], "correctIndex": 0 },
-        { "id": 10, "answer": "réagi", "options": ["réagi", "dormi", "hésité", "paniqué"], "correctIndex": 0 },
-        { "id": 11, "answer": "réaction", "options": ["réaction", "hésitation", "panique", "paralysie"], "correctIndex": 0 },
-        { "id": 12, "answer": "rapide", "options": ["rapide", "lente", "tardive", "hésitante"], "correctIndex": 0 },
-        { "id": 13, "answer": "rapidement", "options": ["rapidement", "lentement", "tardivement", "hésitamment"], "correctIndex": 0 },
-        { "id": 14, "answer": "sauver", "options": ["sauver", "perdre", "abandonner", "condamner"], "correctIndex": 0 },
-        { "id": 15, "answer": "sauvetage", "options": ["sauvetage", "abandon", "naufrage", "destruction"], "correctIndex": 0 },
-        { "id": 16, "answer": "évacuation", "options": ["évacuation", "arrivée", "installation", "invasion"], "correctIndex": 0 }
-      ]
+        {
+          "id": 1,
+          "answer": "urgence",
+          "options": [
+            "urgence",
+            "routine",
+            "habitude",
+            "banalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "agir",
+          "options": [
+            "agir",
+            "dormir",
+            "hésiter",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "urgence",
+          "options": [
+            "urgence",
+            "fête",
+            "cérémonie",
+            "parade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "urgente",
+          "options": [
+            "urgente",
+            "calme",
+            "paisible",
+            "tranquille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "crise",
+          "options": [
+            "crise",
+            "fête",
+            "célébration",
+            "réjouissance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "gérer",
+          "options": [
+            "gérer",
+            "abandonner",
+            "ignorer",
+            "fuir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "gestion",
+          "options": [
+            "gestion",
+            "destruction",
+            "abandon",
+            "chaos"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "décider",
+          "options": [
+            "décider",
+            "hésiter",
+            "attendre",
+            "subir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "décision",
+          "options": [
+            "décision",
+            "hésitation",
+            "attente",
+            "soumission"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "réagi",
+          "options": [
+            "réagi",
+            "dormi",
+            "hésité",
+            "paniqué"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "réaction",
+          "options": [
+            "réaction",
+            "hésitation",
+            "panique",
+            "paralysie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "rapide",
+          "options": [
+            "rapide",
+            "lente",
+            "tardive",
+            "hésitante"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "rapidement",
+          "options": [
+            "rapidement",
+            "lentement",
+            "tardivement",
+            "hésitamment"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "sauver",
+          "options": [
+            "sauver",
+            "perdre",
+            "abandonner",
+            "condamner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "sauvetage",
+          "options": [
+            "sauvetage",
+            "abandon",
+            "naufrage",
+            "destruction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "évacuation",
+          "options": [
+            "évacuation",
+            "arrivée",
+            "installation",
+            "invasion"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "text_fa": "Le commandant Chesley Sullenberger III vérifiait ses instruments avec une routine professionnelle quand l'impensable s'est produit. Une ___ absolue a frappé l'Airbus A320 : une volée d'oies bernaches avait détruit les deux réacteurs simultanément. Sully devait ___ avec une précision chirurgicale pour offrir une chance de survie aux 155 âmes à bord. Cette ___ aéronautique inédite exigeait des compétences hors du commun. La situation était devenue terriblement ___ : plus aucune poussée, seulement le silence assourdissant du planeur forcé. New York entier retenait son souffle face à cette ___ qui menaçait de devenir une catastrophe urbaine majeure. Le vétéran de l'US Air Force allait ___ un appareil de soixante tonnes au-dessus de Manhattan. La ___ exemplaire de cette crise deviendrait un mythe dans l'histoire de l'aviation civile. Il devait ___ en une fraction de seconde entre l'impossible retour à LaGuardia et l'impensable amerrissage. Sa ___ finale, fruit de quarante ans d'expérience, allait sauver chaque passager et membre d'équipage. Les contrôleurs aériens de la tour Patrick Hartnett ont ___ avec un professionnalisme qui forçait l'admiration. Leur ___ parfaitement coordonnée a permis de mobiliser tous les ferries de la Hudson River. Une intervention extrêmement ___ des capitaines new-yorkais fut déterminante dans la survie des naufragés. Ils ont manœuvré très ___ malgré l'eau glaciale de janvier pour atteindre les ailes de l'avion. Les héros anonymes ont réussi à ___ chaque personne vivante de la carlingue immergée. Le ___ miraculeux orchestré par la Garde côtière restera gravé dans les mémoires collectives. L'___ ordonnée et disciplinée des 155 occupants s'est déroulée dans un calme surréaliste, prouvant que l'excellence humaine pouvait triompher du chaos le plus absolu."
     }
   },
-
   "quiz": {
     "title": "Quiz : Actions et Gestion de crise",
     "title_fa": "آزمون: اقدامات و مدیریت بحران",
     "displayCount": 10,
     "questions": [
-      { "type": "mcq", "question": "Une ____ immédiate des secours a permis de limiter les dégâts.", "options": ["action", "inaction", "hésitation", "attente"], "correctIndex": 0, "explanation_fa": "action = اقدام و عمل." },
-      { "type": "mcq", "question": "Il faut ____ maintenant avant que la situation ne s'aggrave.", "options": ["agir", "dormir", "hésiter", "attendre"], "correctIndex": 0, "explanation_fa": "agir = عمل کردن." },
-      { "type": "binary", "question": "L'\"urgence\" désigne une situation qui nécessite une intervention immédiate.", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، urgence یعنی فوریت و اورژانس." },
-      { "type": "mcq", "question": "Cette opération cardiaque est ____, il faut intervenir dans l'heure.", "options": ["urgente", "calme", "paisible", "tranquille"], "correctIndex": 0, "explanation_fa": "urgent = فوری." },
-      { "type": "mcq", "question": "La ____ financière de 2008 a touché le monde entier.", "options": ["crise", "fête", "vacances", "promenade"], "correctIndex": 0, "explanation_fa": "crise = بحران." },
-      { "type": "mcq", "question": "Un bon manager sait ____ les conflits au sein de son équipe.", "options": ["gérer", "abandonner", "ignorer", "fuir"], "correctIndex": 0, "explanation_fa": "gérer = مدیریت کردن." },
-      { "type": "mcq", "question": "La ____ des ressources humaines est sa spécialité.", "options": ["gestion", "destruction", "abandon", "fuite"], "correctIndex": 0, "explanation_fa": "gestion = مدیریت." },
-      { "type": "binary", "question": "Le verbe \"décider\" signifie \"prendre une résolution après réflexion\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، décider یعنی تصمیم گرفتن." },
-      { "type": "mcq", "question": "Sa ____ de démissionner a surpris tout le monde.", "options": ["décision", "hésitation", "attente", "doute"], "correctIndex": 0, "explanation_fa": "décision = تصمیم." },
-      { "type": "mcq", "question": "Les pompiers ont ____ en moins de cinq minutes après l'appel.", "options": ["réagi", "dormi", "hésité", "attendu"], "correctIndex": 0, "explanation_fa": "réagir = واکنش نشان دادن." },
-      { "type": "mcq", "question": "Sa ____ face à l'agresseur a été héroïque et spontanée.", "options": ["réaction", "hésitation", "attente", "paralysie"], "correctIndex": 0, "explanation_fa": "réaction = واکنش." },
-      { "type": "mcq", "question": "Un guépard est l'animal terrestre le plus ____ du monde.", "options": ["rapide", "lent", "tardif", "hésitant"], "correctIndex": 0, "explanation_fa": "rapide = سریع." },
-      { "type": "binary", "question": "L'adverbe \"rapidement\" signifie \"avec une grande vitesse\".", "options": ["Vrai", "Faux"], "correctIndex": 0, "explanation_fa": "بله، rapidement یعنی به سرعت." },
-      { "type": "mcq", "question": "Les médecins ont réussi à ____ le patient d'un arrêt cardiaque.", "options": ["sauver", "perdre", "abandonner", "laisser"], "correctIndex": 0, "explanation_fa": "sauver = نجات دادن." },
-      { "type": "mcq", "question": "Le ____ en montagne par hélicoptère est une opération délicate.", "options": ["sauvetage", "abandon", "perte", "destruction"], "correctIndex": 0, "explanation_fa": "sauvetage = عملیات نجات." },
-      { "type": "mcq", "question": "L'____ de la zone sinistrée s'est déroulée dans le calme.", "options": ["évacuation", "arrivée", "installation", "entrée"], "correctIndex": 0, "explanation_fa": "évacuation = تخلیه." },
-      { "type": "mcq", "question": "Il faut ____ les lieux immédiatement en cas d'incendie.", "options": ["évacuer", "rester", "demeurer", "habiter"], "correctIndex": 0, "explanation_fa": "évacuer = تخلیه کردن." }
+      {
+        "type": "mcq",
+        "question": "Une ____ immédiate des secours a permis de limiter les dégâts.",
+        "options": [
+          "action",
+          "inaction",
+          "hésitation",
+          "attente"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "action = اقدام و عمل."
+      },
+      {
+        "type": "mcq",
+        "question": "Il faut ____ maintenant avant que la situation ne s'aggrave.",
+        "options": [
+          "agir",
+          "dormir",
+          "hésiter",
+          "attendre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "agir = عمل کردن."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"urgence\" désigne une situation qui nécessite une intervention immédiate.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، urgence یعنی فوریت و اورژانس."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette opération cardiaque est ____, il faut intervenir dans l'heure.",
+        "options": [
+          "urgente",
+          "calme",
+          "paisible",
+          "tranquille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "urgent = فوری."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ financière de 2008 a touché le monde entier.",
+        "options": [
+          "crise",
+          "fête",
+          "vacances",
+          "promenade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "crise = بحران."
+      },
+      {
+        "type": "mcq",
+        "question": "Un bon manager sait ____ les conflits au sein de son équipe.",
+        "options": [
+          "gérer",
+          "abandonner",
+          "ignorer",
+          "fuir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "gérer = مدیریت کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ des ressources humaines est sa spécialité.",
+        "options": [
+          "gestion",
+          "destruction",
+          "abandon",
+          "fuite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "gestion = مدیریت."
+      },
+      {
+        "type": "binary",
+        "question": "Le verbe \"décider\" signifie \"prendre une résolution après réflexion\".",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، décider یعنی تصمیم گرفتن."
+      },
+      {
+        "type": "mcq",
+        "question": "Sa ____ de démissionner a surpris tout le monde.",
+        "options": [
+          "décision",
+          "hésitation",
+          "attente",
+          "doute"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "décision = تصمیم."
+      },
+      {
+        "type": "mcq",
+        "question": "Les pompiers ont ____ en moins de cinq minutes après l'appel.",
+        "options": [
+          "réagi",
+          "dormi",
+          "hésité",
+          "attendu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "réagir = واکنش نشان دادن."
+      },
+      {
+        "type": "mcq",
+        "question": "Sa ____ face à l'agresseur a été héroïque et spontanée.",
+        "options": [
+          "réaction",
+          "hésitation",
+          "attente",
+          "paralysie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "réaction = واکنش."
+      },
+      {
+        "type": "mcq",
+        "question": "Un guépard est l'animal terrestre le plus ____ du monde.",
+        "options": [
+          "rapide",
+          "lent",
+          "tardif",
+          "hésitant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "rapide = سریع."
+      },
+      {
+        "type": "binary",
+        "question": "L'adverbe \"rapidement\" signifie \"avec une grande vitesse\".",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، rapidement یعنی به سرعت."
+      },
+      {
+        "type": "mcq",
+        "question": "Les médecins ont réussi à ____ le patient d'un arrêt cardiaque.",
+        "options": [
+          "sauver",
+          "perdre",
+          "abandonner",
+          "laisser"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "sauver = نجات دادن."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ en montagne par hélicoptère est une opération délicate.",
+        "options": [
+          "sauvetage",
+          "abandon",
+          "perte",
+          "destruction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "sauvetage = عملیات نجات."
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ de la zone sinistrée s'est déroulée dans le calme.",
+        "options": [
+          "évacuation",
+          "arrivée",
+          "installation",
+          "entrée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "évacuation = تخلیه."
+      },
+      {
+        "type": "mcq",
+        "question": "Il faut ____ les lieux immédiatement en cas d'incendie.",
+        "options": [
+          "évacuer",
+          "rester",
+          "demeurer",
+          "habiter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "évacuer = تخلیه کردن."
+      }
     ]
   }
 }
