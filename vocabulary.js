@@ -1,7 +1,13 @@
+// ===============================
+// 📖 موتور واژگان و مدیریت پیشرفت
+// ===============================
+let vocabCache = {};
+
 function getWeakWords(packId) {
     const p = JSON.parse(localStorage.getItem("dino_vocab_weak") || "{}");
     return p[packId] || [];
 }
+
 function setWeakWord(packId, fr, weak) {
     const p = JSON.parse(localStorage.getItem("dino_vocab_weak") || "{}");
     if (!p[packId]) p[packId] = [];
@@ -10,10 +16,19 @@ function setWeakWord(packId, fr, weak) {
     localStorage.setItem("dino_vocab_weak", JSON.stringify(p));
 }
 
-// ===============================
-// 📖 موتور واژگان
-// ===============================
-let vocabCache = {};
+function getVocabProgress() {
+    return JSON.parse(localStorage.getItem("dino_vocab_progress") || "{}");
+}
+
+function markWord(packId, wordFr, known) {
+    const progress = getVocabProgress();
+    if (!progress[packId]) progress[packId] = { known: [], unknown: [] };
+    progress[packId].known = progress[packId].known.filter(w => w !== wordFr);
+    progress[packId].unknown = progress[packId].unknown.filter(w => w !== wordFr);
+    if (known) progress[packId].known.push(wordFr);
+    else progress[packId].unknown.push(wordFr);
+    localStorage.setItem("dino_vocab_progress", JSON.stringify(progress));
+}
 
 async function loadVocabIndex(level) {
     if (vocabCache["index-" + level]) return vocabCache["index-" + level];
@@ -36,22 +51,8 @@ async function loadVocabPack(level, packId) {
     } catch (e) { return null; }
 }
 
-function getVocabProgress() {
-    return JSON.parse(localStorage.getItem("dino_vocab_progress") || "{}");
-}
-
-function markWord(packId, wordFr, known) {
-    const progress = getVocabProgress();
-    if (!progress[packId]) progress[packId] = { known: [], unknown: [] };
-    progress[packId].known = progress[packId].known.filter(w => w !== wordFr);
-    progress[packId].unknown = progress[packId].unknown.filter(w => w !== wordFr);
-    if (known) progress[packId].known.push(wordFr);
-    else progress[packId].unknown.push(wordFr);
-    localStorage.setItem("dino_vocab_progress", JSON.stringify(progress));
-}
-
 // ===============================
-// 📖 واژگان - انتخاب سطح
+// 📖 ناوبری واژگان
 // ===============================
 async function showVocabularyPage() {
     const lang = localStorage.getItem("language") || "fr";
@@ -67,9 +68,6 @@ async function showVocabularyPage() {
     app.innerHTML = html;
 }
 
-// ===============================
-// 📖 یک سطح - لیست پک‌ها
-// ===============================
 async function showVocabLevel(level) {
     const lang = localStorage.getItem("language") || "fr";
     const packs = await loadVocabIndex(level);
@@ -85,9 +83,6 @@ async function showVocabLevel(level) {
     app.innerHTML = html;
 }
 
-// ===============================
-// 📖 یک پک - منوی داخلی
-// ===============================
 async function showVocabPack(level, packId) {
     const lang = localStorage.getItem("language") || "fr";
     const pack = await loadVocabPack(level, packId);
@@ -103,11 +98,8 @@ async function showVocabPack(level, packId) {
     window.currentPack = pack;
     const weak = getWeakWords(pack.id);
     
-    // تشخیص ساختار داستان‌ها (پشتیبانی از هر دو نام)
     const hasSimple = pack.stories && (pack.stories.simple || pack.stories.easy);
     const hasLiterary = pack.stories && (pack.stories.literary || pack.stories.hard);
-    
-    // تشخیص ساختار تمرین (پشتیبانی از هر دو نام)
     const hasQuiz = pack.quiz || pack.exercise;
     
     let html = renderNavbar();
@@ -122,30 +114,19 @@ async function showVocabPack(level, packId) {
         </div>
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">`;
     
-    // همیشه فلش‌کارت را نشان بده (چون words همیشه هست)
-    html += simpleCard("🃏", lang === "fa" ? "فلش‌کارت‌ها" : "Flashcards", 
-        `${pack.words.length} ${lang === "fa" ? "کلمه" : "mots"}`, "startFlashcards()");
+    html += simpleCard("🃏", lang === "fa" ? "فلش‌کارت‌ها" : "Flashcards", `${pack.words.length} ${lang === "fa" ? "کلمه" : "mots"}`, "startFlashcards()");
     
-    // داستان‌ها فقط اگر وجود داشته باشند
     if (hasSimple) {
-    html += simpleCard("🌱", lang === "fa" ? "داستان ساده" : "Histoire simple", 
-        lang === "fa" ? "متن کوتاه با جای خالی" : "Texte court à trous", "startStory('simple')");
-}
-if (hasLiterary) {
-    html += simpleCard("🌳", lang === "fa" ? "داستان ادبی" : "Histoire littéraire", 
-        lang === "fa" ? "متن بلندتر با جای خالی" : "Texte plus long à trous", "startStory('literary')");
-}
-    
-    // تمرین فقط اگر وجود داشته باشد
-    if (hasQuiz) {
-        html += simpleCard("📝", lang === "fa" ? "تمرین" : "Quiz", 
-            lang === "fa" ? "آزمون کوتاه" : "Quiz rapide", "startVocabExercise()");
+        html += simpleCard("🌱", lang === "fa" ? "داستان ساده" : "Histoire simple", lang === "fa" ? "متن کوتاه با جای خالی" : "Texte court à trous", "startStory('simple')");
     }
-    
-    // مرور کلمات ضعیف فقط اگر کلمه ضعیف وجود داشته باشد
+    if (hasLiterary) {
+        html += simpleCard("🌳", lang === "fa" ? "داستان ادبی" : "Histoire littéraire", lang === "fa" ? "متن بلندتر با جای خالی" : "Texte plus long à trous", "startStory('literary')");
+    }
+    if (hasQuiz) {
+        html += simpleCard("📝", lang === "fa" ? "تمرین" : "Quiz", lang === "fa" ? "آزمون کوتاه" : "Quiz rapide", "startVocabExercise()");
+    }
     if (weak.length) {
-        html += simpleCard("🔁", lang === "fa" ? "مرور کلمات ضعیف" : "Mots faibles", 
-            weak.length + " " + (lang === "fa" ? "کلمه" : "mots"), "startFlashcards(true)");
+        html += simpleCard("🔁", lang === "fa" ? "مرور کلمات ضعیف" : "Mots faibles", weak.length + " " + (lang === "fa" ? "کلمه" : "mots"), "startFlashcards(true)");
     }
     
     html += `</div></div>`;
@@ -236,15 +217,19 @@ function startFlashcards(reviewMode) {
 }
 
 // ===============================
-// 📚 داستان
+// 📚 داستان‌ها
 // ===============================
+function toggleStoryTranslation() {
+    document.querySelectorAll(".story-tr").forEach(function (el) {
+        el.style.display = el.style.display === "none" ? "block" : "none";
+    });
+}
+
 function startStory(difficulty) {
     const pack = window.currentPack;
     const lang = localStorage.getItem("language") || "fr";
     
-    // پشتیبانی از هر دو ساختار: simple/literary و easy/hard
     const story = (pack.stories && (pack.stories[difficulty] || pack.stories[difficulty === 'simple' ? 'easy' : difficulty === 'literary' ? 'hard' : difficulty]));
-    
     if (!story) { alert(lang === "fa" ? "به زودی" : "Bientôt"); return; }
 
     let html = renderNavbar();
@@ -256,28 +241,21 @@ function startStory(difficulty) {
     html += '<h1 class="ltr-lock" style="font-size:24px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">' + story.title + '</h1>';
     html += '<p class="persian-text" style="font-size:15px;color:#777;margin:0 0 20px;">' + story.title_fa + '</p>';
 
-    // دکمه نمایش/مخفی ترجمه
+    // دکمه نمایش/مخفی ترجمه (اگر ترجمه وجود داشته باشد)
     if (story.text_fa) {
         html += '<button onclick="toggleStoryTranslation()" style="width:auto;padding:8px 16px;font-size:13px;font-weight:600;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;margin-bottom:20px;">👁️ ' + (lang === "fa" ? "نمایش / مخفی ترجمه" : "Traduction") + '</button>';
-            }
+    }
+
     // حالت ۱: داستان با blanks (ساختار جدید)
     if (story.text && story.blanks) {
         html += '<p style="font-size:13px;color:#777;margin-bottom:16px;">' + (lang === "fa" ? "جاهای خالی را با کلمه درست پر کن:" : "Remplis les trous avec le bon mot :") + '</p>';
         
-        // متن را به بخش‌های قابل کلیک تقسیم کن
-        let displayText = story.text;
-        let blankIndex = 0;
-        
-        // مرتب‌سازی blanks بر اساس id
         const sortedBlanks = story.blanks.slice().sort((a, b) => a.id - b.id);
-        
-        // نمایش متن با جای خالی
         html += '<div style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:24px;margin-bottom:24px;line-height:2;">';
         
-        // جایگزینی هر {{BLANK_X}} با یک دکمه
         let currentBlank = 0;
-        const parts = displayText.split(/{{BLANK_\d+}}/);
-        const blanksInText = displayText.match(/{{BLANK_\d+}}/g) || [];
+        const parts = story.text.split(/{{BLANK_\d+}}/);
+        const blanksInText = story.text.match(/{{BLANK_\d+}}/g) || [];
         
         for (let i = 0; i < parts.length; i++) {
             html += parts[i];
@@ -289,7 +267,6 @@ function startStory(difficulty) {
         }
         html += '</div>';
         
-        // لیست سوالات blanks
         html += '<div id="blanks-container">';
         sortedBlanks.forEach(function(blank, idx) {
             html += '<div class="blank-question" data-idx="' + idx + '" style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:16px;margin-bottom:12px;">';
@@ -303,10 +280,18 @@ function startStory(difficulty) {
         html += '</div>';
         
         html += '<button id="check-blanks" style="width:100%;padding:14px;font-size:15px;font-weight:700;border:none;border-radius:6px;background:#087F5B;color:#fff;cursor:pointer;margin-top:16px;">' + (lang === "fa" ? "بررسی جواب‌ها" : "Vérifier les réponses") + '</button>';
+        
+        // ✅ اینجا جای درست نمایش ترجمه داستان برای حالت blanks است ✅
+        if (story.text_fa) {
+            html += '<div class="story-tr" style="display:none;background:#f0f9ff;border:1px solid #087F5B;border-radius:8px;padding:20px;margin-top:20px;">';
+            html += '<h3 style="font-size:16px;font-weight:700;color:#087F5B;margin:0 0 12px;">📖 ' + (lang === "fa" ? "ترجمه داستان" : "Traduction de l'histoire") + '</h3>';
+            html += '<p class="persian-text" style="font-size:15px;line-height:1.8;color:#333;margin:0;">' + story.text_fa + '</p>';
+            html += '</div>';
+        }
+        
         html += '</div>';
         app.innerHTML = html;
         
-        // منطق blanks
         const answers = new Array(sortedBlanks.length).fill(null);
         
         document.querySelectorAll('.blank-opt').forEach(function(btn) {
@@ -315,7 +300,6 @@ function startStory(difficulty) {
                 const oi = parseInt(btn.getAttribute('data-oi'));
                 answers[idx] = oi;
                 
-                // علامت‌گذاری گزینه انتخابی
                 document.querySelectorAll('.blank-opt[data-idx="' + idx + '"]').forEach(function(b) {
                     b.style.background = '#fafafa';
                     b.style.borderColor = '#e0e0e0';
@@ -323,7 +307,6 @@ function startStory(difficulty) {
                 btn.style.background = '#e8f5f0';
                 btn.style.borderColor = '#087F5B';
                 
-                // به‌روزرسانی دکمه در متن
                 const blankBtn = document.querySelector('.blank-btn[data-blank="' + idx + '"]');
                 if (blankBtn) blankBtn.textContent = sortedBlanks[idx].options[oi];
             };
@@ -344,7 +327,7 @@ function startStory(difficulty) {
             const pct = Math.round((correct / sortedBlanks.length) * 100);
             let emoji = "🎉", msg = lang === "fa" ? "عالی بود!" : "Excellent !";
             if (pct < 50) { emoji = "💪"; msg = lang === "fa" ? "بیشتر تلاش کن!" : "Plus d'effort !"; }
-            else if (pct < 80) { emoji = ""; msg = lang === "fa" ? "خوب بود!" : "Bien !"; }
+            else if (pct < 80) { emoji = "👍"; msg = lang === "fa" ? "خوب بود!" : "Bien !"; }
             
             alert(emoji + ' ' + correct + '/' + sortedBlanks.length + ' (' + pct + '%) - ' + msg);
         };
@@ -352,7 +335,6 @@ function startStory(difficulty) {
     }
 
     // حالت ۲: داستان قدیمی با paragraphs و questions
-    html += '<button onclick="toggleStoryTranslation()" style="width:auto;padding:8px 16px;font-size:13px;font-weight:600;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;margin-bottom:20px;">👁 ' + (lang === "fa" ? "نمایش / مخفی ترجمه" : "Traduction") + '</button>';
     html += '<div style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:24px;margin-bottom:24px;">';
     story.paragraphs.forEach(function(p) {
         html += '<div style="margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid #f0f0f0;">';
@@ -361,6 +343,7 @@ function startStory(difficulty) {
         html += '</div>';
     });
     html += '</div>';
+    
     if (story.keyWords) {
         html += '<h2 style="font-size:17px;font-weight:700;color:#1a1a1a;margin:0 0 10px;">🔑 ' + (lang === "fa" ? "کلمات کلیدی" : "Mots-clés") + '</h2>';
         html += '<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;">';
@@ -369,6 +352,7 @@ function startStory(difficulty) {
         });
         html += '</div>';
     }
+    
     if (story.questions && story.questions.length) {
         html += '<h2 style="font-size:17px;font-weight:700;color:#1a1a1a;margin:0 0 14px;">❓ ' + (lang === "fa" ? "درک مطلب" : "Compréhension") + '</h2>';
         story.questions.forEach(function(q, qi) {
@@ -383,6 +367,7 @@ function startStory(difficulty) {
     }
     html += '</div>';
     app.innerHTML = html;
+    
     document.querySelectorAll('.story-q').forEach(function(btn) {
         btn.onclick = function() {
             const qi = parseInt(btn.getAttribute('data-q'));
@@ -402,20 +387,18 @@ function startStory(difficulty) {
 }
 
 // ===============================
-// 📝 تمرین پک
+// 📝 تمرین پک (Quiz)
 // ===============================
 function startVocabExercise() {
     const pack = window.currentPack;
     const lang = localStorage.getItem("language") || "fr";
     
-    // پشتیبانی از هر دو نام: exercise و quiz
     const ex = pack.exercise || pack.quiz;
     if (!ex || !ex.questions) { alert(lang === "fa" ? "به زودی" : "Bientôt"); return; }
 
     const questions = ex.questions.slice().sort(() => Math.random() - 0.5)
         .slice(0, ex.displayCount || ex.questions.length)
         .map(function(q) {
-            // پشتیبانی از correct و correctIndex
             const correctIdx = q.correct !== undefined ? q.correct : q.correctIndex;
             const opts = q.options.map(function(text, i) { return { text: text, ok: i === correctIdx }; }).sort(() => Math.random() - 0.5);
             return { 
@@ -454,13 +437,7 @@ function startVocabExercise() {
         });
         html += '</div>';
         html += '<div id="vfb" style="margin-top:16px;"></div>';
-        // نمایش ترجمه داستان
-if (story.text_fa) {
-    html += '<div class="story-tr" style="display:none;background:#f0f9ff;border:1px solid #087F5B;border-radius:8px;padding:20px;margin-top:20px;">';
-    html += '<h3 style="font-size:16px;font-weight:700;color:#087F5B;margin:0 0 12px;">📖 ' + (lang === "fa" ? "ترجمه داستان" : "Traduction de l'histoire") + '</h3>';
-    html += '<p class="persian-text" style="font-size:15px;line-height:1.8;color:#333;margin:0;">' + story.text_fa + '</p>';
-    html += '</div>';
-}
+        html += '</div>';
         
         app.innerHTML = html;
         document.querySelectorAll('.vq').forEach(function(btn) {
