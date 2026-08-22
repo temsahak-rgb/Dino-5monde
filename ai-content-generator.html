@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 ربات تولید محتوای حرفه‌ای</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: Tahoma; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; margin: 0; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+        h1 { color: #087F5B; text-align: center; margin-bottom: 10px; }
+        .subtitle { text-align: center; color: #777; margin-bottom: 30px; }
+        .setup { background: #f0f9ff; border: 2px solid #087F5B; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .setup h3 { margin-top: 0; color: #087F5B; }
+        label { display: block; margin: 12px 0 6px; font-weight: bold; color: #333; }
+        input, select, textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; font-family: inherit; }
+        textarea { min-height: 150px; resize: vertical; font-family: monospace; }
+        .row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .btn { background: #087F5B; color: white; border: none; padding: 14px 28px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; width: 100%; margin-top: 15px; transition: all 0.2s; }
+        .btn:hover:not(:disabled) { background: #066b4c; transform: translateY(-2px); }
+        .btn:disabled { background: #ccc; cursor: not-allowed; }
+        .btn-save { background: #2563eb; }
+        .btn-save:hover:not(:disabled) { background: #1d4ed8; }
+        .log { background: #1a1a1a; color: #00ff00; padding: 15px; border-radius: 8px; margin-top: 20px; max-height: 300px; overflow-y: auto; font-family: monospace; font-size: 13px; line-height: 1.6; }
+        .log-success { color: #00ff00; }
+        .log-error { color: #ff4444; }
+        .log-info { color: #44aaff; }
+        .log-warning { color: #ffaa00; }
+        .help { background: #fffbeb; border: 1px solid #fde68a; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; }
+        .help a { color: #087F5B; font-weight: bold; }
+        .preview { background: #f9fafb; border: 2px solid #e0e0e0; border-radius: 8px; padding: 15px; margin-top: 20px; max-height: 500px; overflow-y: auto; display: none; }
+        .preview pre { background: #1a1a1a; color: #00ff00; padding: 15px; border-radius: 6px; overflow-x: auto; font-size: 12px; line-height: 1.5; }
+        .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 15px; }
+        .stat-box { background: #f0f9ff; padding: 12px; border-radius: 6px; text-align: center; border: 1px solid #087F5B; }
+        .stat-value { font-size: 20px; font-weight: bold; color: #087F5B; }
+        .stat-label { font-size: 11px; color: #777; margin-top: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 ربات تولید محتوای حرفه‌ای</h1>
+        <p class="subtitle">تولید خودکار فلش‌کارت + داستان + کوییز با پرامپت مهندسی شده</p>
+
+        <div class="help">
+            <strong>📋 راهنما:</strong><br>
+            ۱. API Key گوگل جمینی را از <a href="https://aistudio.google.com/app/apikey" target="_blank">اینجا</a> بگیر (رایگان)<br>
+            ۲. GitHub Token را از <a href="https://github.com/settings/tokens" target="_blank">اینجا</a> بگیر (با دسترسی repo)<br>
+            ۳. اطلاعات پک را وارد کن، دکمه را بزن، JSON را بررسی کن و ذخیره کن
+        </div>
+
+        <div class="setup">
+            <h3>🔑 تنظیمات API</h3>
+            <div class="row">
+                <div>
+                    <label>Google Gemini API Key:</label>
+                    <input type="password" id="geminiKey" placeholder="AIza...">
+                </div>
+                <div>
+                    <label>GitHub Token:</label>
+                    <input type="password" id="token" placeholder="ghp_...">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px;">
+                <div>
+                    <label>نام کاربری GitHub:</label>
+                    <input type="text" id="username" value="temsahak-rgb">
+                </div>
+                <div>
+                    <label>نام مخزن:</label>
+                    <input type="text" id="repo" value="Dino-5monde">
+                </div>
+            </div>
+        </div>
+
+        <div class="setup">
+            <h3>📦 اطلاعات پک</h3>
+            <div class="row">
+                <div>
+                    <label>سطح CECRL:</label>
+                    <select id="level">
+                        <option value="A1">A1 - Débutant</option>
+                        <option value="A2">A2 - Élémentaire</option>
+                        <option value="B1" selected>B1 - Intermédiaire</option>
+                        <option value="B2">B2 - Avancé</option>
+                        <option value="C1">C1 - Autonome</option>
+                        <option value="C2">C2 - Maîtrise</option>
+                    </select>
+                </div>
+                <div>
+                    <label>ID پک (انگلیسی، snake_case):</label>
+                    <input type="text" id="packId" placeholder="arts_media_character">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px;">
+                <div>
+                    <label>عنوان فرانسوی:</label>
+                    <input type="text" id="titleFr" placeholder="Arts, Médias et Caractère">
+                </div>
+                <div>
+                    <label>عنوان فارسی:</label>
+                    <input type="text" id="titleFa" placeholder="هنر، رسانه، شخصیت">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px;">
+                <div>
+                    <label>ایموجی اصلی:</label>
+                    <input type="text" id="icon" placeholder="🎭">
+                </div>
+                <div>
+                    <label>الهام (فیلم/سریال/کتاب):</label>
+                    <input type="text" id="inspiration" placeholder="Birdman (film)">
+                </div>
+            </div>
+            
+            <label style="margin-top: 15px;">لیست کلمات (هر خط: کلمه فرانسوی | ترجمه فارسی | دشواری 1-6):</label>
+            <textarea id="words" placeholder="le personnage | شخصیت (داستانی) | 3
+le rôle | نقش | 2
+jouer | بازی کردن | 2
+l'acteur / l'actrice | بازیگر | 2
+le théâtre | تئاتر | 2"></textarea>
+
+            <button class="btn" id="generateBtn" onclick="generateContent()">🚀 تولید محتوا با AI</button>
+        </div>
+
+        <div class="preview" id="preview">
+            <h3 style="margin-top: 0; color: #087F5B;">📋 پیش‌نمایش JSON تولید شده:</h3>
+            <div class="stats" id="stats"></div>
+            <pre id="jsonPreview"></pre>
+            <button class="btn btn-save" id="saveBtn" onclick="saveToGitHub()">💾 ذخیره در GitHub</button>
+        </div>
+
+        <div class="log" id="log"></div>
+    </div>
+
+    <script>
+        // پرامپت اصلی فرانسوی
+        const SYSTEM_PROMPT = `# RÔLE
+Tu es un ingénieur pédagogique FLE (Français Langue Étrangère) de niveau expert. Tu conçois des exercices de vocabulaire contextualisés sous forme de JSON structuré, pour les niveaux A1 à C2 du CECRL. Tu maîtrises la littérature française, le cinéma, les séries et les animes, et tu t'en inspires pour créer des récits immersifs.
+
+---
+
+# SORTIE : UN SEUL FICHIER JSON VALID
+Tu réponds UNIQUEMENT avec le JSON. Aucun texte avant, aucun texte après.
+
+---
+
+# SCHÉMA JSON
+
+{
+  "id": "<identifiant anglais en snake_case>",
+  "level": "<A1|A2|B1|B2|C1|C2>",
+  "theme": "<thème en français>",
+  "theme_fa": "<thème en persan>",
+  "icon": "<emoji principal>",
+  "inspiration": "<œuvre source>",
+
+  "words": [
+    {
+      "fr": "<mot avec article>",
+      "fa": "<traduction persane>",
+      "emoji": "<emoji>",
+      "difficulty": <1-6>,
+      "ex": "<phrase exemple>",
+      "ex_fa": "<traduction persane de l'exemple>"
+    }
+  ],
+
+  "stories": {
+    "simple": {
+      "title": "<titre>",
+      "title_fa": "<traduction persane>",
+      "text": "<récit avec {{BLANK_1}}, {{BLANK_2}}…>",
+      "text_fa": "<traduction persane du récit, avec ___ à la place des {{BLANK_X}}>",
+      "blanks": [
+        {
+          "id": <numéro>,
+          "answer": "<mot correct>",
+          "options": ["<A>", "<B>", "<C>", "<D>"],
+          "correctIndex": <0-3>
+        }
+      ]
+    },
+    "literary": {
+      "title": "<titre>",
+      "title_fa": "<traduction persane>",
+      "inspiration": "<œuvre source>",
+      "text": "<récit avec {{BLANK_1}}, {{BLANK_2}}…>",
+      "text_fa": "<traduction persane du récit, avec ___ à la place des {{BLANK_X}}>",
+      "blanks": [
+        {
+          "id": <numéro>,
+          "answer": "<mot correct>",
+          "options": ["<A>", "<B>", "<C>", "<D>"],
+          "correctIndex": <0-3>
+        }
+      ]
+    }
+  },
+
+  "quiz": {
+    "title": "Quiz : <thème>",
+    "title_fa": "آزمون : <تم فارسی>",
+    "displayCount": <nombre>,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "<phrase à trou avec ____>",
+        "options": ["<A>", "<B>", "<C>", "<D>"],
+        "correctIndex": <0-3>,
+        "explanation_fa": "<explication en persan>"
+      },
+      {
+        "type": "binary",
+        "question": "<affirmation>",
+        "options": ["Vrai", "Faux"],
+        "correctIndex": <0-1>,
+        "explanation_fa": "<explication en persan>"
+      }
+    ]
+  }
+}
+
+---
+
+# RÈGLES POUR "text_fa" (TRADUCTION PERSANE DES RÉCITS) :
+- Chaque récit (simple et littéraire) DOIT avoir un champ "text_fa"
+- La traduction doit être FLUIDE et NATURELLE en persan
+- Les {{BLANK_X}} dans "text" doivent être remplacés par "___" dans "text_fa"
+- La traduction doit respecter le sens et le ton du texte français
+- Pas de traduction mot à mot, mais une adaptation naturelle
+
+---
+
+# GUIDE PAR NIVEAU
+
+## A1 : phrases courtes, présent + passé composé, style simple
+## A2 : présent + passé composé + futur proche, style narratif simple
+## B1 : imparfait + passé composé + subjonctif présent, descriptions
+## B2 : imparfait + plus-que-parfait, style littéraire modéré
+## C1 : passé simple comme temps narratif principal, métaphores, 1-2 inversions
+## C2 : passé simple + subjonctif imparfait, discours indirect libre, registres mixtes
+
+---
+
+# RÈGLES DE FORMATAGE
+- Les blancs dans "text" : {{BLANK_1}}, {{BLANK_2}}...
+- Les blancs dans "text_fa" : ___ (trois underscores)
+- Les trous dans le quiz : ____ (quatre underscores)
+- Pas de Markdown dans les valeurs JSON
+- Pas d'emojis dans les récits ni le quiz
+- Pas de virgule finale dans le JSON
+
+---
+
+# RÈGLES POUR LES RÉCITS
+- Récit SIMPLE : 100-150 mots (A1-A2), 150-200 (B1-B2), 200-250 (C1-C2)
+- Récit LITTÉRAIRE : 100-150 (A1), 150-200 (A2), 200-300 (B1), 250-350 (B2), 300-450 (C1), 400-550 (C2)
+- Chaque mot de la liste doit apparaître comme réponse d'AU MOINS UN blanc
+- Aucun mot dupliqué comme réponse dans un même récit
+
+---
+
+# RÈGLES POUR LES BLANCS
+- Chaque blanc a EXACTEMENT 4 options
+- UNE SEULE réponse correcte, ZÉRO ambiguïté
+- Les distracteurs sont du même champ sémantique mais INCORRECTS
+- Pas de synonymes dans les options
+
+---
+
+# RÈGLES POUR LE QUIZ
+- Entre 20 et 30 questions
+- Au moins 70% mcq, au moins 15% binary
+- Chaque mot testé AU MOINS UNE FOIS
+- INTERDIT : la question ne doit PAS contenir la racine du mot cible
+- Les phrases du quiz ne doivent PAS répéter celles des récits
+
+---
+
+# CHECKLIST FINALE
+□ Chaque mot utilisé au moins une fois dans les récits
+□ Pas de doublon comme réponse dans un même récit
+□ Chaque blanc a 4 options, une seule correcte
+□ Pas de synonymes dans les options
+□ Pas de racine du mot cible dans le quiz
+□ Niveau grammatical correspond au CECRL
+□ Inspiration cohérente
+□ 20-30 questions dans le quiz
+□ text_fa présent et traduit naturellement
+□ JSON syntaxiquement valide
+
+---
+
+# DONNÉES D'ENTRÉE
+`;
+
+        let generatedJSON = null;
+
+        function log(msg, type = 'info') {
+            const logDiv = document.getElementById('log');
+            const time = new Date().toLocaleTimeString('fa-IR');
+            logDiv.innerHTML += `<div class="log-${type}">[${time}] ${msg}</div>`;
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+
+        async function callGemini(prompt, apiKey) {
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${apiKey}`;
+            
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    contents: [{ parts: [{ text: prompt }] }],
+                    generationConfig: {
+                        temperature: 0.7,
+                        maxOutputTokens: 8192
+                    }
+                })
+            });
+            
+            const data = await response.json();
+            
+            if (data.candidates && data.candidates[0]) {
+                return data.candidates[0].content.parts[0].text;
+            }
+            throw new Error('No response from Gemini');
+        }
+
+        async function githubGet(path, token, user, repo) {
+            const url = `https://api.github.com/repos/${user}/${repo}/contents/${path}`;
+            const res = await fetch(url, { headers: { 'Authorization': `token ${token}` } });
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return await res.json();
+        }
+
+        async function githubPut(path, content, sha, token, user, repo, message) {
+            const url = `https://api.github.com/repos/${user}/${repo}/contents/${path}`;
+            const body = {
+                message: message,
+                content: btoa(unescape(encodeURIComponent(content)))
+            };
+            if (sha) body.sha = sha;
+            
+            const res = await fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `token ${token}`,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(body)
+            });
+            if (!res.ok) {
+                const err = await res.text();
+                throw new Error(`PUT failed: ${err}`);
+            }
+            return await res.json();
+        }
+
+        async function generateContent() {
+            const apiKey = document.getElementById('geminiKey').value.trim();
+            const token = document.getElementById('token').value.trim();
+            const user = document.getElementById('username').value.trim();
+            const repo = document.getElementById('repo').value.trim();
+            
+            const level = document.getElementById('level').value;
+            const packId = document.getElementById('packId').value.trim();
+            const titleFr = document.getElementById('titleFr').value.trim();
+            const titleFa = document.getElementById('titleFa').value.trim();
+            const icon = document.getElementById('icon').value.trim();
+            const inspiration = document.getElementById('inspiration').value.trim();
+            const wordsText = document.getElementById('words').value.trim();
+
+            if (!apiKey || !packId || !titleFr || !wordsText) {
+                log('❌ فیلدهای ضروری را پر کن', 'error');
+                return;
+            }
+
+            document.getElementById('generateBtn').disabled = true;
+            log('🚀 شروع تولید محتوا...', 'info');
+
+            try {
+                // ساخت بخش ورودی پرامپت
+                const userInput = `
+- ID: ${packId}
+- Niveau: ${level}
+- Thème: ${titleFr}
+- Thème en persan: ${titleFa}
+- Icône: ${icon}
+- Inspiration: ${inspiration || 'Non spécifiée'}
+
+Liste des mots:
+${wordsText}
+
+Génère le JSON complet maintenant.`;
+
+                const fullPrompt = SYSTEM_PROMPT + userInput;
+
+                log('📤 ارسال به Gemini (ممکن است ۳۰-۶۰ ثانیه طول بکشد)...', 'info');
+                const response = await callGemini(fullPrompt, apiKey);
+                
+                // استخراج JSON از پاسخ
+                const jsonMatch = response.match(/\{[\s\S]*\}/);
+                if (!jsonMatch) throw new Error('JSON در پاسخ پیدا نشد');
+                
+                const pack = JSON.parse(jsonMatch[0]);
+                generatedJSON = pack;
+                
+                // نمایش آمار
+                const stats = document.getElementById('stats');
+                stats.innerHTML = `
+                    <div class="stat-box">
+                        <div class="stat-value">${pack.words.length}</div>
+                        <div class="stat-label">کلمه</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value">${pack.stories.simple.blanks.length + pack.stories.literary.blanks.length}</div>
+                        <div class="stat-label">جای خالی</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value">${pack.quiz.questions.length}</div>
+                        <div class="stat-label">سوال کوییز</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value">${pack.stories.simple.text_fa ? '✅' : '❌'}</div>
+                        <div class="stat-label">ترجمه داستان</div>
+                    </div>
+                `;
+                
+                // نمایش JSON
+                document.getElementById('jsonPreview').textContent = JSON.stringify(pack, null, 2);
+                document.getElementById('preview').style.display = 'block';
+                
+                log('✅ محتوا تولید شد! JSON را بررسی کن.', 'success');
+                
+                // بررسی‌های خودکار
+                if (!pack.stories.simple.text_fa) {
+                    log('⚠️ هشدار: text_fa برای داستان ساده وجود ندارد', 'warning');
+                }
+                if (!pack.stories.literary.text_fa) {
+                    log('⚠️ هشدار: text_fa برای داستان ادبی وجود ندارد', 'warning');
+                }
+                if (pack.quiz.questions.length < 20) {
+                    log(`⚠️ هشدار: تعداد سوالات کوییز (${pack.quiz.questions.length}) کمتر از ۲۰ است`, 'warning');
+                }
+                
+            } catch (e) {
+                log(`❌ خطا: ${e.message}`, 'error');
+            }
+
+            document.getElementById('generateBtn').disabled = false;
+        }
+
+        async function saveToGitHub() {
+            if (!generatedJSON) {
+                log('❌ ابتدا محتوا را تولید کن', 'error');
+                return;
+            }
+
+            const token = document.getElementById('token').value.trim();
+            const user = document.getElementById('username').value.trim();
+            const repo = document.getElementById('repo').value.trim();
+            const level = document.getElementById('level').value;
+            const packId = document.getElementById('packId').value.trim();
+
+            if (!token) {
+                log('❌ GitHub Token را وارد کن', 'error');
+                return;
+            }
+
+            document.getElementById('saveBtn').disabled = true;
+            log('💾 در حال ذخیره در GitHub...', 'info');
+
+            try {
+                const path = `data/vocabulary/${level}/${packId}.json`;
+                const content = JSON.stringify(generatedJSON, null, 2);
+                
+                let sha = null;
+                try {
+                    const existing = await githubGet(path, token, user, repo);
+                    sha = existing.sha;
+                    log('📄 فایل موجود است، در حال به‌روزرسانی...', 'info');
+                } catch (e) {
+                    log('📄 فایل جدید ایجاد می‌شود...', 'info');
+                }
+                
+                await githubPut(path, content, sha, token, user, repo, 
+                    `🤖 AI generated: ${packId} (${level})`);
+                
+                log(`✅ با موفقیت ذخیره شد: ${path}`, 'success');
+                
+                // به‌روزرسانی vocab-{level}.json
+                log('📝 در حال به‌روزرسانی فهرست...', 'info');
+                const listPath = `data/vocabulary/vocab-${level}.json`;
+                const listFile = await githubGet(listPath, token, user, repo);
+                const list = JSON.parse(decodeURIComponent(escape(atob(listFile.content))));
+                
+                // بررسی اینکه آیا پک قبلاً در فهرست هست
+                const existingIndex = list.findIndex(p => p.id === packId);
+                const newEntry = {
+                    id: packId,
+                    title: generatedJSON.theme || generatedJSON.title,
+                    title_fa: generatedJSON.theme_fa || generatedJSON.title_fa,
+                    icon: generatedJSON.icon,
+                    words: generatedJSON.words.length
+                };
+                
+                if (existingIndex >= 0) {
+                    list[existingIndex] = newEntry;
+                } else {
+                    list.push(newEntry);
+                }
+                
+                await githubPut(
+                    listPath, 
+                    JSON.stringify(list, null, 2), 
+                    listFile.sha, 
+                    token, 
+                    user, 
+                    repo, 
+                    `📝 Add ${packId} to vocab-${level} index`
+                );
+                
+                log('✅ فهرست به‌روزرسانی شد!', 'success');
+                
+            } catch (e) {
+                log(`❌ خطا در ذخیره: ${e.message}`, 'error');
+            }
+
+            document.getElementById('saveBtn').disabled = false;
+        }
+
+        // بارگذاری تنظیمات ذخیره‌شده
+        window.onload = function() {
+            const savedToken = localStorage.getItem('dino_token');
+            const savedGemini = localStorage.getItem('dino_gemini');
+            if (savedToken) document.getElementById('token').value = savedToken;
+            if (savedGemini) document.getElementById('geminiKey').value = savedGemini;
+        };
+        
+        document.getElementById('token').addEventListener('change', function(e) {
+            localStorage.setItem('dino_token', e.target.value.trim());
+        });
+        document.getElementById('geminiKey').addEventListener('change', function(e) {
+            localStorage.setItem('dino_gemini', e.target.value.trim());
+        });
+    </script>
+</body>
+</html>
