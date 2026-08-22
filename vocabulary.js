@@ -251,7 +251,7 @@ function startStory(difficulty) {
     html += '<div style="max-width:700px;margin:0 auto;padding:32px 20px 60px;">';
     html += '<button class="back-btn" onclick="showVocabPack(\'' + pack.level + '\',\'' + pack.id + '\')">← ' + (lang === "fa" ? "بازگشت" : "Retour") + '</button>';
     
-    const label = difficulty === 'simple' || difficulty === 'easy' ? '🌱 A1-A2' : '🌳 B1+';
+    const label = difficulty === 'simple' || difficulty === 'easy' ? '🌱' : '🌳';
     html += '<p style="font-size:12px;color:#777;text-transform:uppercase;letter-spacing:1px;margin:0 0 6px;">' + label + '</p>';
     html += '<h1 class="ltr-lock" style="font-size:24px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">' + story.title + '</h1>';
     html += '<p class="persian-text" style="font-size:15px;color:#777;margin:0 0 20px;">' + story.title_fa + '</p>';
