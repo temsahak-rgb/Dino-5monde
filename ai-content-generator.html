@@ -119,8 +119,10 @@ jouer | بازی کردن | 2
 l'acteur / l'actrice | بازیگر | 2
 le théâtre | تئاتر | 2"></textarea>
 
-            <button class="btn" id="generateBtn" onclick="generateContent()">🚀 تولید محتوا با AI</button>
-        </div>
+<div style="display: flex; gap: 10px;">
+    <button class="btn" id="generateBtn" onclick="generateContent(false)" style="flex: 1;">🚀 تولید و بررسی</button>
+    <button class="btn" id="autoSaveBtn" onclick="generateContent(true)" style="flex: 1; background: #dc2626;">⚡ تولید و ذخیره خودکار</button>
+</div>
 
         <div class="preview" id="preview">
             <h3 style="margin-top: 0; color: #087F5B;">📋 پیش‌نمایش JSON تولید شده:</h3>
@@ -356,31 +358,36 @@ Tu réponds UNIQUEMENT avec le JSON. Aucun texte avant, aucun texte après.
             return await res.json();
         }
 
-        async function generateContent() {
-            const apiKey = document.getElementById('geminiKey').value.trim();
-            const token = document.getElementById('token').value.trim();
-            const user = document.getElementById('username').value.trim();
-            const repo = document.getElementById('repo').value.trim();
-            
-            const level = document.getElementById('level').value;
-            const packId = document.getElementById('packId').value.trim();
-            const titleFr = document.getElementById('titleFr').value.trim();
-            const titleFa = document.getElementById('titleFa').value.trim();
-            const icon = document.getElementById('icon').value.trim();
-            const inspiration = document.getElementById('inspiration').value.trim();
-            const wordsText = document.getElementById('words').value.trim();
+        async function generateContent(autoSave = false) {
+    const apiKey = document.getElementById('geminiKey').value.trim();
+    const token = document.getElementById('token').value.trim();
+    const user = document.getElementById('username').value.trim();
+    const repo = document.getElementById('repo').value.trim();
+    
+    const level = document.getElementById('level').value;
+    const packId = document.getElementById('packId').value.trim();
+    const titleFr = document.getElementById('titleFr').value.trim();
+    const titleFa = document.getElementById('titleFa').value.trim();
+    const icon = document.getElementById('icon').value.trim();
+    const inspiration = document.getElementById('inspiration').value.trim();
+    const wordsText = document.getElementById('words').value.trim();
 
-            if (!apiKey || !packId || !titleFr || !wordsText) {
-                log('❌ فیلدهای ضروری را پر کن', 'error');
-                return;
-            }
+    if (!apiKey || !packId || !titleFr || !wordsText) {
+        log('❌ فیلدهای ضروری را پر کن', 'error');
+        return;
+    }
 
-            document.getElementById('generateBtn').disabled = true;
-            log('🚀 شروع تولید محتوا...', 'info');
+    if (autoSave && !token) {
+        log('❌ برای ذخیره خودکار، GitHub Token را وارد کن', 'error');
+        return;
+    }
 
-            try {
-                // ساخت بخش ورودی پرامپت
-                const userInput = `
+    document.getElementById('generateBtn').disabled = true;
+    document.getElementById('autoSaveBtn').disabled = true;
+    log('🚀 شروع تولید محتوا...', 'info');
+
+    try {
+        const userInput = `
 - ID: ${packId}
 - Niveau: ${level}
 - Thème: ${titleFr}
@@ -393,62 +400,67 @@ ${wordsText}
 
 Génère le JSON complet maintenant.`;
 
-                const fullPrompt = SYSTEM_PROMPT + userInput;
+        const fullPrompt = SYSTEM_PROMPT + userInput;
 
-                log('📤 ارسال به Gemini (ممکن است ۳۰-۶۰ ثانیه طول بکشد)...', 'info');
-                const response = await callGemini(fullPrompt, apiKey);
-                
-                // استخراج JSON از پاسخ
-                const jsonMatch = response.match(/\{[\s\S]*\}/);
-                if (!jsonMatch) throw new Error('JSON در پاسخ پیدا نشد');
-                
-                const pack = JSON.parse(jsonMatch[0]);
-                generatedJSON = pack;
-                
-                // نمایش آمار
-                const stats = document.getElementById('stats');
-                stats.innerHTML = `
-                    <div class="stat-box">
-                        <div class="stat-value">${pack.words.length}</div>
-                        <div class="stat-label">کلمه</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-value">${pack.stories.simple.blanks.length + pack.stories.literary.blanks.length}</div>
-                        <div class="stat-label">جای خالی</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-value">${pack.quiz.questions.length}</div>
-                        <div class="stat-label">سوال کوییز</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-value">${pack.stories.simple.text_fa ? '✅' : '❌'}</div>
-                        <div class="stat-label">ترجمه داستان</div>
-                    </div>
-                `;
-                
-                // نمایش JSON
-                document.getElementById('jsonPreview').textContent = JSON.stringify(pack, null, 2);
-                document.getElementById('preview').style.display = 'block';
-                
-                log('✅ محتوا تولید شد! JSON را بررسی کن.', 'success');
-                
-                // بررسی‌های خودکار
-                if (!pack.stories.simple.text_fa) {
-                    log('⚠️ هشدار: text_fa برای داستان ساده وجود ندارد', 'warning');
-                }
-                if (!pack.stories.literary.text_fa) {
-                    log('⚠️ هشدار: text_fa برای داستان ادبی وجود ندارد', 'warning');
-                }
-                if (pack.quiz.questions.length < 20) {
-                    log(`⚠️ هشدار: تعداد سوالات کوییز (${pack.quiz.questions.length}) کمتر از ۲۰ است`, 'warning');
-                }
-                
-            } catch (e) {
-                log(`❌ خطا: ${e.message}`, 'error');
-            }
-
-            document.getElementById('generateBtn').disabled = false;
+        log('📤 ارسال به Gemini (ممکن است ۳۰-۶۰ ثانیه طول بکشد)...', 'info');
+        const response = await callGemini(fullPrompt, apiKey);
+        
+        const jsonMatch = response.match(/\{[\s\S]*\}/);
+        if (!jsonMatch) throw new Error('JSON در پاسخ پیدا نشد');
+        
+        const pack = JSON.parse(jsonMatch[0]);
+        generatedJSON = pack;
+        
+        // نمایش آمار
+        const stats = document.getElementById('stats');
+        stats.innerHTML = `
+            <div class="stat-box">
+                <div class="stat-value">${pack.words.length}</div>
+                <div class="stat-label">کلمه</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">${pack.stories.simple.blanks.length + pack.stories.literary.blanks.length}</div>
+                <div class="stat-label">جای خالی</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">${pack.quiz.questions.length}</div>
+                <div class="stat-label">سوال کوییز</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">${pack.stories.simple.text_fa ? '✅' : '❌'}</div>
+                <div class="stat-label">ترجمه داستان</div>
+            </div>
+        `;
+        
+        document.getElementById('jsonPreview').textContent = JSON.stringify(pack, null, 2);
+        document.getElementById('preview').style.display = 'block';
+        
+        log('✅ محتوا تولید شد!', 'success');
+        
+        // بررسی‌های خودکار
+        if (!pack.stories.simple.text_fa) {
+            log('⚠️ هشدار: text_fa برای داستان ساده وجود ندارد', 'warning');
         }
+        if (!pack.stories.literary.text_fa) {
+            log('⚠️ هشدار: text_fa برای داستان ادبی وجود ندارد', 'warning');
+        }
+        if (pack.quiz.questions.length < 20) {
+            log(`⚠️ هشدار: تعداد سوالات کوییز (${pack.quiz.questions.length}) کمتر از ۲۰ است`, 'warning');
+        }
+        
+        // اگر autoSave فعال است، خودکار ذخیره کن
+        if (autoSave) {
+            log('⚡ ذخیره خودکار فعال است...', 'info');
+            await saveToGitHub();
+        }
+        
+    } catch (e) {
+        log(`❌ خطا: ${e.message}`, 'error');
+    }
+
+    document.getElementById('generateBtn').disabled = false;
+    document.getElementById('autoSaveBtn').disabled = false;
+}
 
         async function saveToGitHub() {
             if (!generatedJSON) {
