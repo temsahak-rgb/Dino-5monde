@@ -128,13 +128,13 @@ async function showVocabPack(level, packId) {
     
     // داستان‌ها فقط اگر وجود داشته باشند
     if (hasSimple) {
-        html += simpleCard("🌱", lang === "fa" ? "داستان ساده" : "Histoire simple", 
-            "A1-A2", "startStory('simple')");
-    }
-    if (hasLiterary) {
-        html += simpleCard("🌳", lang === "fa" ? "داستان ادبی" : "Histoire littéraire", 
-            "B1+", "startStory('literary')");
-    }
+    html += simpleCard("🌱", lang === "fa" ? "داستان ساده" : "Histoire simple", 
+        lang === "fa" ? "متن کوتاه با جای خالی" : "Texte court à trous", "startStory('simple')");
+}
+if (hasLiterary) {
+    html += simpleCard("🌳", lang === "fa" ? "داستان ادبی" : "Histoire littéraire", 
+        lang === "fa" ? "متن بلندتر با جای خالی" : "Texte plus long à trous", "startStory('literary')");
+}
     
     // تمرین فقط اگر وجود داشته باشد
     if (hasQuiz) {
