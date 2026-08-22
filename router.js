@@ -24,6 +24,7 @@ function renderNavbar() {
         <button id="menu-toggle" style="display:none;background:none;border:none;color:#fff;font-size:20px;cursor:pointer;padding:4px 8px;margin:0;line-height:1;">☰</button>
         <div id="nav-links" style="display:flex;align-items:center;gap:0;">
             ${item('grammar', lang === "fa" ? "گرامر" : "Grammaire")}
+            ${item('vocabulary', lang === "fa" ? "واژگان" : "Vocabulaire")}
             ${item('daily', lang === "fa" ? "روزمره" : "Quotidien")}
             ${item('travel', lang === "fa" ? "سفر" : "Voyage")}
             ${item('games', lang === "fa" ? "بازی" : "Jeux")}
