@@ -37,6 +37,136 @@ async function renderNewsSection() {
     }
 }
 // ===============================
+// 📰 صفحه جزئیات خبر
+// ===============================
+async function showNewsDetail(newsId) {
+    const lang = localStorage.getItem("language") || "fr";
+    
+    try {
+        const response = await fetch("./data/news/" + newsId + ".json?v=" + Date.now());
+        if (!response.ok) throw new Error("News not found");
+        const news = await response.json();
+        
+        let html = renderNavbar();
+        html += `<div style="max-width:900px;margin:0 auto;padding:20px 16px 60px;">`;
+        html += `<button class="back-btn" onclick="showHome()" style="margin-bottom:20px;">← ${lang === "fa" ? "بازگشت به خانه" : "Retour à l'accueil"}</button>`;
+        
+        // تصویر بزرگ
+        html += `<img src="${news.image}" alt="${news.imageAlt || news.title}" style="width:100%;max-height:500px;object-fit:cover;border-radius:12px;margin-bottom:20px;">`;
+        
+        // عنوان و متادیتا
+        html += `<div style="display:flex;gap:10px;align-items:center;margin-bottom:15px;flex-wrap:wrap;">`;
+        html += `<span style="background:#087F5B;color:#fff;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:700;">${news.level}</span>`;
+        html += `<span style="font-size:14px;color:#777;">📅 ${news.publishedDate}</span>`;
+        html += `</div>`;
+        
+        html += `<h1 style="font-size:28px;font-weight:700;color:#1a1a1a;margin:0 0 10px;line-height:1.3;">${lang === "fa" ? news.title_fa : news.title}</h1>`;
+        html += `<p style="font-size:16px;color:#555;margin:0 0 30px;">${lang === "fa" ? news.subtitle_fa : news.subtitle}</p>`;
+        
+        // دکمه‌های تغییر متن
+        html += `<div style="display:flex;gap:10px;margin-bottom:20px;background:#f9fafb;padding:10px;border-radius:8px;">`;
+        html += `<button id="btn-full" onclick="switchNewsText('full')" style="flex:1;padding:10px;font-size:14px;font-weight:700;border:2px solid #087F5B;border-radius:6px;background:#087F5B;color:#fff;cursor:pointer;">📖 ${lang === "fa" ? "متن کامل" : "Texte complet"}</button>`;
+        html += `<button id="btn-simple" onclick="switchNewsText('simple')" style="flex:1;padding:10px;font-size:14px;font-weight:600;border:2px solid #e0e0e0;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">🌱 ${lang === "fa" ? "متن ساده" : "Texte simple"}</button>`;
+        html += `</div>`;
+        
+        // متن کامل
+        html += `<div id="news-full-text" style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:30px;margin-bottom:30px;">`;
+        html += `<div style="font-size:16px;line-height:1.9;color:#333;white-space:pre-line;">${news.content.fullText}</div>`;
+        html += `</div>`;
+        
+        // متن ساده (مخفی)
+        html += `<div id="news-simple-text" style="display:none;background:#f0f9ff;border:1px solid #087F5B;border-radius:8px;padding:30px;margin-bottom:30px;">`;
+        html += `<p style="font-size:13px;color:#087F5B;font-weight:700;margin:0 0 12px;">🌱 ${lang === "fa" ? "نسخه ساده‌شده (A1-B1)" : "Version simplifiée (A1-B1)"}</p>`;
+        html += `<div style="font-size:16px;line-height:1.9;color:#333;white-space:pre-line;">${news.content.simpleText}</div>`;
+        html += `</div>`;
+        
+        // واژگان
+        if (news.content.vocabulary && news.content.vocabulary.length) {
+            html += `<h2 style="font-size:20px;font-weight:700;margin:30px 0 15px;">📚 ${lang === "fa" ? "واژگان کلیدی" : "Vocabulaire clé"}</h2>`;
+            html += `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;">`;
+            news.content.vocabulary.forEach(word => {
+                html += `<div style="background:#f9fafb;padding:12px 16px;border-radius:6px;border-right:4px solid #087F5B;">`;
+                html += `<p class="ltr-lock" style="font-weight:700;color:#1a1a1a;margin:0 0 4px;font-size:15px;">${word.fr}</p>`;
+                html += `<p class="persian-text" style="font-size:14px;color:#777;margin:0;">${word.fa}</p>`;
+                html += `</div>`;
+            });
+            html += `</div>`;
+        }
+        
+        // گرامر
+        if (news.content.grammar && news.content.grammar.length) {
+            html += `<h2 style="font-size:20px;font-weight:700;margin:30px 0 15px;">📐 ${lang === "fa" ? "نکات گرامری" : "Points de grammaire"}</h2>`;
+            news.content.grammar.forEach((item, idx) => {
+                html += `<div style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:20px;margin-bottom:15px;">`;
+                html += `<h3 style="font-size:16px;font-weight:700;color:#087F5B;margin:0 0 10px;">${idx + 1}. ${item.title}</h3>`;
+                html += `<div class="ltr-lock" style="background:#f9fafb;padding:12px;border-radius:6px;margin:10px 0;font-size:15px;line-height:1.7;border-left:3px solid #087F5B;">${item.example}</div>`;
+                if (item.translation) {
+                    html += `<p class="persian-text" style="font-size:14px;color:#555;margin:10px 0;font-style:italic;">${item.translation}</p>`;
+                }
+                if (item.explanation) {
+                    html += `<p class="persian-text" style="font-size:14px;color:#777;margin:8px 0 0;">💡 ${item.explanation}</p>`;
+                }
+                html += `</div>`;
+            });
+        }
+        
+        // منابع
+        if (news.sources && news.sources.length) {
+            html += `<h2 style="font-size:20px;font-weight:700;margin:30px 0 15px;">📖 ${lang === "fa" ? "منابع" : "Sources"}</h2>`;
+            html += `<div style="display:flex;flex-direction:column;gap:10px;">`;
+            news.sources.forEach(source => {
+                html += `<a href="${source.url}" target="_blank" style="padding:12px 16px;background:#fff;border:1px solid #e0e0e0;border-radius:6px;color:#087F5B;text-decoration:none;font-weight:600;display:flex;justify-content:space-between;align-items:center;">`;
+                html += `<span>${source.title}</span><span>↗</span>`;
+                html += `</a>`;
+            });
+            html += `</div>`;
+        }
+        
+        html += `</div>`;
+        app.innerHTML = html;
+        window.scrollTo(0, 0);
+        
+    } catch (e) {
+        console.error("News detail error:", e);
+        app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;">
+            <p style="font-size:18px;color:#777;">❌ ${lang === "fa" ? "این خبر پیدا نشد." : "Cet article est introuvable."}</p>
+            <button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;cursor:pointer;">${lang === "fa" ? "بازگشت" : "Retour"}</button>
+        </div>`;
+    }
+}
+
+// ===============================
+// 🔄 تغییر بین متن کامل و ساده
+// ===============================
+function switchNewsText(mode) {
+    const fullDiv = document.getElementById("news-full-text");
+    const simpleDiv = document.getElementById("news-simple-text");
+    const btnFull = document.getElementById("btn-full");
+    const btnSimple = document.getElementById("btn-simple");
+    
+    if (!fullDiv || !simpleDiv) return;
+    
+    if (mode === "full") {
+        fullDiv.style.display = "block";
+        simpleDiv.style.display = "none";
+        btnFull.style.background = "#087F5B";
+        btnFull.style.color = "#fff";
+        btnFull.style.borderColor = "#087F5B";
+        btnSimple.style.background = "#fff";
+        btnSimple.style.color = "#1a1a1a";
+        btnSimple.style.borderColor = "#e0e0e0";
+    } else {
+        fullDiv.style.display = "none";
+        simpleDiv.style.display = "block";
+        btnSimple.style.background = "#087F5B";
+        btnSimple.style.color = "#fff";
+        btnSimple.style.borderColor = "#087F5B";
+        btnFull.style.background = "#fff";
+        btnFull.style.color = "#1a1a1a";
+        btnFull.style.borderColor = "#e0e0e0";
+    }
+}
+// ===============================
 // 🏠 صفحه اصلی مینیمال
 // ===============================
 async function showHome() {
