@@ -3,84 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🤖 ربات ترجمه مرحله‌ای (اصلاح‌شده)</title>
+    <title>🤖 ربات ترجمه Google Translate - B1</title>
     <style>
         body { font-family: Tahoma; padding: 20px; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); min-height: 100vh; margin: 0; }
         .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
-        h1 { color: #087F5B; text-align: center; margin-bottom: 5px; }
-        .subtitle { text-align: center; color: #777; margin-bottom: 25px; font-size: 14px; }
+        h1 { color: #087F5B; text-align: center; }
         .setup { background: #f0f9ff; border: 2px solid #087F5B; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
-        label { display: block; margin: 12px 0 6px; font-weight: bold; color: #333; }
-        input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
-        .btn { background: #087F5B; color: white; border: none; padding: 16px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; width: 100%; margin-top: 10px; transition: 0.2s; }
-        .btn:hover:not(:disabled) { background: #066b4c; transform: translateY(-2px); }
-        .btn:disabled { background: #ccc; cursor: not-allowed; }
-        .btn-continue { background: #2563eb; }
-        .btn-continue:hover:not(:disabled) { background: #1d4ed8; }
-        .btn-stop { background: #dc2626; }
-        .btn-stop:hover:not(:disabled) { background: #b91c1c; }
+        label { display: block; margin: 12px 0 6px; font-weight: bold; }
+        input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; }
+        .btn { background: #087F5B; color: white; border: none; padding: 16px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; width: 100%; margin-top: 10px; }
+        .btn:hover:not(:disabled) { background: #066b4c; }
+        .btn:disabled { background: #ccc; }
         .btn-reset { background: #f59e0b; }
-        .btn-reset:hover:not(:disabled) { background: #d97706; }
-        .log { background: #1a1a1a; color: #00ff00; padding: 15px; border-radius: 8px; margin-top: 20px; max-height: 300px; overflow-y: auto; font-family: monospace; font-size: 13px; line-height: 1.6; }
+        .btn-continue { background: #2563eb; }
+        .btn-stop { background: #dc2626; }
+        .btn-test { background: #8b5cf6; }
+        .log { background: #1a1a1a; color: #00ff00; padding: 15px; border-radius: 8px; margin-top: 20px; max-height: 500px; overflow-y: auto; font-family: monospace; font-size: 12px; line-height: 1.5; }
         .log-success { color: #00ff00; } .log-error { color: #ff4444; } .log-info { color: #44aaff; } .log-warning { color: #ffaa00; }
-        .preview { background: #f9fafb; border: 2px solid #e0e0e0; border-radius: 8px; padding: 15px; margin-top: 20px; display: none; max-height: 500px; overflow-y: auto; }
-        .preview-item { background: white; border: 1px solid #ddd; border-radius: 6px; padding: 12px; margin-bottom: 10px; }
-        .preview-item h4 { margin: 0 0 8px 0; color: #087F5B; font-size: 14px; }
-        .preview-item .original { background: #fef3c7; padding: 8px; border-radius: 4px; margin-bottom: 8px; font-size: 13px; direction: ltr; text-align: left; }
-        .preview-item .translated { background: #d1fae5; padding: 8px; border-radius: 4px; font-size: 13px; }
         .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 15px 0; }
         .stat-box { background: #f0f9ff; padding: 12px; border-radius: 6px; text-align: center; border: 1px solid #087F5B; }
         .stat-value { font-size: 24px; font-weight: bold; color: #087F5B; }
-        .stat-label { font-size: 11px; color: #777; margin-top: 4px; }
+        .stat-label { font-size: 11px; color: #777; }
         .progress-bar { background: #e0e0e0; height: 12px; border-radius: 6px; overflow: hidden; margin: 15px 0; }
         .progress-fill { background: linear-gradient(90deg, #087F5B, #10b981); height: 100%; width: 0%; transition: width 0.3s; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🤖 ربات ترجمه مرحله‌ای (اصلاح‌شده)</h1>
-        <p class="subtitle">ابتدا پاک‌سازی ترجمه‌های خراب، سپس ترجمه مرحله‌ای</p>
+        <h1>🤖 ربات ترجمه Google Translate</h1>
+        <p style="text-align: center; color: #777; margin-bottom: 20px;">رایگان، بدون API key، کیفیت بالا</p>
 
         <div class="setup">
             <label>GitHub Token:</label>
             <input type="password" id="token" placeholder="ghp_...">
+            <button class="btn btn-test" onclick="testGoogleTranslate()">🧪 تست Google Translate</button>
         </div>
 
         <div class="stats">
             <div class="stat-box">
                 <div class="stat-value" id="statTotal">0</div>
-                <div class="stat-label">کل ترجمه‌های لازم</div>
+                <div class="stat-label">کل جملات</div>
             </div>
             <div class="stat-box">
                 <div class="stat-value" id="statDone">0</div>
-                <div class="stat-label">انجام شده</div>
+                <div class="stat-label">ترجمه شده</div>
             </div>
             <div class="stat-box">
-                <div class="stat-value" id="statBatch">0</div>
-                <div class="stat-label">دسته فعلی</div>
+                <div class="stat-value" id="statFailed">0</div>
+                <div class="stat-label">ترجمه نشده</div>
             </div>
         </div>
 
         <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
 
-        <button class="btn btn-reset" id="resetBtn" onclick="resetBrokenTranslations()">🧹 گام ۱: پاک‌سازی ترجمه‌های خراب</button>
-        <button class="btn" id="startBtn" onclick="startBatchTranslation()" style="display:none;">🚀 گام ۲: شروع ترجمه (۱۰ تای اول)</button>
-        <button class="btn btn-continue" id="continueBtn" onclick="continueBatch()" style="display:none;">✅ ادامه (۱۰ تای بعدی)</button>
-        <button class="btn btn-stop" id="stopBtn" onclick="stopTranslation()" style="display:none;">⏹ توقف و ذخیره همه</button>
-
-        <div class="preview" id="preview">
-            <h3 style="margin-top: 0; color: #087F5B;">📋 پیش‌نمایش ترجمه‌های این دسته:</h3>
-            <div id="previewContent"></div>
-        </div>
+        <button class="btn btn-reset" id="resetBtn" onclick="resetAndCollect()">🧹 گام ۱: پاک‌سازی + جمع‌آوری جملات</button>
+        <button class="btn" id="startBtn" onclick="startTranslation()" style="display:none;">🚀 گام ۲: شروع ترجمه (۲۰ جمله)</button>
+        <button class="btn btn-continue" id="continueBtn" onclick="continueTranslation()" style="display:none;">✅ ادامه ترجمه</button>
+        <button class="btn btn-stop" id="stopBtn" onclick="stopTranslation()" style="display:none;">⏹ توقف و ذخیره</button>
 
         <div class="log" id="log"></div>
     </div>
 
     <script>
         let shouldStop = false;
-        let allTranslations = [];
-        let currentBatchIndex = 0;
-        let totalTranslationsNeeded = 0;
+        let allSentences = [];
+        let currentSentenceIndex = 0;
+        let totalSentences = 0;
+        let translatedCount = 0;
+        let failedCount = 0;
+
+        const USER = "temsahak-rgb";
+        const REPO = "Dino-5monde";
+        const LEVEL = "B1";
 
         function log(msg, type = 'info') {
             const logDiv = document.getElementById('log');
@@ -92,23 +86,23 @@
         function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
         function updateStats() {
-            document.getElementById('statTotal').textContent = totalTranslationsNeeded;
-            document.getElementById('statDone').textContent = allTranslations.filter(t => t.translated).length;
-            document.getElementById('statBatch').textContent = Math.ceil(currentBatchIndex / 10);
-            const pct = totalTranslationsNeeded > 0 ? (allTranslations.filter(t => t.translated).length / totalTranslationsNeeded) * 100 : 0;
+            document.getElementById('statTotal').textContent = totalSentences;
+            document.getElementById('statDone').textContent = translatedCount;
+            document.getElementById('statFailed').textContent = failedCount;
+            const pct = totalSentences > 0 ? ((translatedCount + failedCount) / totalSentences) * 100 : 0;
             document.getElementById('progressFill').style.width = pct + '%';
         }
 
-        async function githubGet(path, token, user, repo) {
-            const res = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/${path}`, { 
+        async function githubGet(path, token) {
+            const res = await fetch(`https://api.github.com/repos/${USER}/${REPO}/contents/${path}`, { 
                 headers: { 'Authorization': `token ${token}` } 
             });
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             return await res.json();
         }
 
-        async function githubPut(path, content, sha, token, user, repo, message) {
-            const res = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/${path}`, {
+        async function githubPut(path, content, sha, token, message) {
+            const res = await fetch(`https://api.github.com/repos/${USER}/${REPO}/contents/${path}`, {
                 method: 'PUT',
                 headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message, content: btoa(unescape(encodeURIComponent(content))), sha })
@@ -116,12 +110,89 @@
             if (!res.ok) throw new Error(`PUT failed`);
         }
 
-        // ============ گام ۱: پاک‌سازی ترجمه‌های خراب ============
-        async function resetBrokenTranslations() {
-            const token = document.getElementById('token').value.trim();
-            const user = "temsahak-rgb";
-            const repo = "Dino-5monde";
+        // ============ ترجمه با Google Translate (غیررسمی) ============
+        async function translateWithGoogle(text) {
+            if (!text || text.trim().length < 3) return text;
 
+            const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=fr&tl=fa&dt=t&q=${encodeURIComponent(text.trim())}`;
+
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+
+                if (data && data[0]) {
+                    let translated = '';
+                    for (const segment of data[0]) {
+                        if (segment[0]) {
+                            translated += segment[0];
+                        }
+                    }
+                    
+                    if (translated && translated.length > 0) {
+                        return translated.trim();
+                    }
+                }
+                
+                log(`    ⚠️ Google Translate پاسخ خالی داد`, 'warning');
+                return text;
+            } catch (e) {
+                log(`    ❌ خطا: ${e.message}`, 'error');
+                return text;
+            }
+        }
+
+        // ============ تست Google Translate ============
+        async function testGoogleTranslate() {
+            log('🧪 تست Google Translate...', 'info');
+            
+            try {
+                const result = await translateWithGoogle('Bonjour le monde');
+                if (result && result !== 'Bonjour le monde') {
+                    log(`✅ Google Translate کار می‌کند: "${result}"`, 'success');
+                } else {
+                    log('❌ Google Translate پاسخ نامعتبر داد', 'error');
+                }
+            } catch (e) {
+                log(`❌ خطا: ${e.message}`, 'error');
+            }
+        }
+
+        // ============ تقسیم متن به جملات ============
+        function splitToSentences(text) {
+            const sentences = [];
+            let current = '';
+            
+            for (let i = 0; i < text.length; i++) {
+                current += text[i];
+                
+                if ((text[i] === '.' || text[i] === '?' || text[i] === '!') && current.length >= 20) {
+                    sentences.push(current.trim());
+                    current = '';
+                }
+                
+                if (current.length > 400) {
+                    sentences.push(current.trim());
+                    current = '';
+                }
+            }
+            
+            if (current.trim()) sentences.push(current.trim());
+            
+            return sentences;
+        }
+
+        // ============ تشخیص خرابی ============
+        function isTranslationBroken(text) {
+            if (!text || text.trim() === '') return false;
+            const words = text.trim().split(/\s+/);
+            if (words.length === 0) return false;
+            const latinWords = words.filter(w => /^[a-zA-ZÀ-ÿ]{3,}$/.test(w));
+            return (latinWords.length / words.length) * 100 > 50;
+        }
+
+        // ============ گام ۱: پاک‌سازی + جمع‌آوری ============
+        async function resetAndCollect() {
+            const token = document.getElementById('token').value.trim();
             if (!token) {
                 log('❌ GitHub Token را وارد کنید', 'error');
                 return;
@@ -129,64 +200,110 @@
 
             localStorage.setItem('dino_token', token);
             document.getElementById('resetBtn').disabled = true;
+            allSentences = [];
+            translatedCount = 0;
+            failedCount = 0;
 
-            log('🧹 شروع پاک‌سازی ترجمه‌های خراب...', 'info');
+            log('🧹 شروع پاک‌سازی و جمع‌آوری جملات...', 'info');
 
             try {
-                const levelsToScan = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
-                let resetCount = 0;
+                const listFile = await githubGet(`data/vocabulary/vocab-${LEVEL}.json`, token);
+                const list = JSON.parse(decodeURIComponent(escape(atob(listFile.content))));
+                
+                log(`📊 ${list.length} پک در B1 پیدا شد`, 'info');
 
-                for (const lv of levelsToScan) {
+                for (const pack of list) {
+                    const path = `data/vocabulary/${LEVEL}/${pack.id}.json`;
+                    
                     try {
-                        const listFile = await githubGet(`data/vocabulary/vocab-${lv}.json`, token, user, repo);
-                        const list = JSON.parse(decodeURIComponent(escape(atob(listFile.content))));
+                        const file = await githubGet(path, token);
+                        const packData = JSON.parse(decodeURIComponent(escape(atob(file.content))));
                         
-                        for (const pack of list) {
-                            const path = `data/vocabulary/${lv}/${pack.id}.json`;
-                            const file = await githubGet(path, token, user, repo);
-                            const packData = JSON.parse(decodeURIComponent(escape(atob(file.content))));
-                            
-                            let changed = false;
-                            
-                            if (packData.stories) {
-                                for (const [key, story] of Object.entries(packData.stories)) {
-                                    // پاک کردن text_fa اگر فرانسوی است
-                                    if (story.text_fa && /[a-zA-Z]{3,}/.test(story.text_fa)) {
-                                        log(`  🗑️ ${pack.id} - text_fa (${key}) پاک شد`, 'warning');
-                                        story.text_fa = "";
-                                        changed = true;
+                        let changed = false;
+                        
+                        if (packData.stories) {
+                            for (const [key, story] of Object.entries(packData.stories)) {
+                                if (isTranslationBroken(story.text_fa)) {
+                                    log(`  🗑️ ${pack.id} - ${key}.text_fa خراب → پاک شد`, 'warning');
+                                    story.text_fa = "";
+                                    changed = true;
+                                }
+                                
+                                if (isTranslationBroken(story.title_fa)) {
+                                    log(`  🗑️ ${pack.id} - ${key}.title_fa خراب → پاک شد`, 'warning');
+                                    story.title_fa = "";
+                                    changed = true;
+                                }
+                                
+                                if (story.paragraphs) {
+                                    for (let i = 0; i < story.paragraphs.length; i++) {
+                                        if (isTranslationBroken(story.paragraphs[i].fa)) {
+                                            story.paragraphs[i].fa = "";
+                                            changed = true;
+                                        }
                                     }
-                                    
-                                    // پاک کردن title_fa اگر فرانسوی است
-                                    if (story.title_fa && /[a-zA-Z]{3,}/.test(story.title_fa)) {
-                                        log(`  🗑️ ${pack.id} - title_fa (${key}) پاک شد`, 'warning');
-                                        story.title_fa = "";
-                                        changed = true;
-                                    }
-                                    
-                                    // پاک کردن paragraphs.fa اگر فرانسوی است
-                                    if (story.paragraphs) {
-                                        for (const para of story.paragraphs) {
-                                            if (para.fa && /[a-zA-Z]{3,}/.test(para.fa)) {
-                                                para.fa = "";
-                                                changed = true;
-                                            }
+                                }
+                                
+                                if (story.text && story.text_fa === "") {
+                                    const sentences = splitToSentences(story.text.replace(/\{\{BLANK_\d+\}\}/g, '___'));
+                                    sentences.forEach(s => {
+                                        allSentences.push({
+                                            packId: pack.id,
+                                            storyKey: key,
+                                            type: 'text_fa',
+                                            sentence: s,
+                                            path: path,
+                                            sha: file.sha
+                                        });
+                                    });
+                                }
+                                
+                                if (story.title && story.title_fa === "") {
+                                    allSentences.push({
+                                        packId: pack.id,
+                                        storyKey: key,
+                                        type: 'title_fa',
+                                        sentence: story.title,
+                                        path: path,
+                                        sha: file.sha
+                                    });
+                                }
+                                
+                                if (story.paragraphs) {
+                                    for (let i = 0; i < story.paragraphs.length; i++) {
+                                        const para = story.paragraphs[i];
+                                        if (para.fr && para.fa === "") {
+                                            allSentences.push({
+                                                packId: pack.id,
+                                                storyKey: key,
+                                                type: 'paragraph_fa',
+                                                paraIndex: i,
+                                                sentence: para.fr,
+                                                path: path,
+                                                sha: file.sha
+                                            });
                                         }
                                     }
                                 }
                             }
-                            
-                            if (changed) {
-                                await githubPut(path, JSON.stringify(packData, null, 2), file.sha, token, user, repo, `🧹 reset broken translations: ${pack.id}`);
-                                resetCount++;
-                            }
                         }
+                        
+                        if (changed) {
+                            await githubPut(path, JSON.stringify(packData, null, 2), file.sha, token, `🧹 reset: ${pack.id}`);
+                            log(`  ✅ ${pack.id} پاک‌سازی شد`, 'success');
+                        }
+                        
+                        await sleep(500);
+                        
                     } catch (e) {
-                        log(`⚠️ خطا در سطح ${lv}: ${e.message}`, 'warning');
+                        log(`  ❌ خطا در ${pack.id}: ${e.message}`, 'error');
                     }
                 }
 
-                log(`✅ ${resetCount} فایل پاک‌سازی شد. حالا می‌توانید ترجمه را شروع کنید.`, 'success');
+                totalSentences = allSentences.length;
+                log(`\n✅ ${totalSentences} جمله برای ترجمه جمع‌آوری شد`, 'success');
+                updateStats();
+                
                 document.getElementById('startBtn').style.display = 'inline-block';
                 
             } catch (e) {
@@ -196,256 +313,82 @@
             document.getElementById('resetBtn').disabled = false;
         }
 
-        // ============ گام ۲: جمع‌آوری و ترجمه ============
-        async function collectAllTranslations(token, user, repo) {
-            log('🔍 جستجو در کل مخزن برای یافتن ترجمه‌های لازم...', 'info');
-            
-            const levelsToScan = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
-            const translations = [];
-
-            for (const lv of levelsToScan) {
-                try {
-                    const listFile = await githubGet(`data/vocabulary/vocab-${lv}.json`, token, user, repo);
-                    const list = JSON.parse(decodeURIComponent(escape(atob(listFile.content))));
-                    
-                    for (const pack of list) {
-                        const path = `data/vocabulary/${lv}/${pack.id}.json`;
-                        const file = await githubGet(path, token, user, repo);
-                        const packData = JSON.parse(decodeURIComponent(escape(atob(file.content))));
-                        
-                        if (packData.stories) {
-                            for (const [key, story] of Object.entries(packData.stories)) {
-                                // text_fa خالی یا ناموجود
-                                if (story.text && !story.text_fa) {
-                                    translations.push({
-                                        type: 'text_fa',
-                                        packId: pack.id,
-                                        level: lv,
-                                        storyKey: key,
-                                        path: path,
-                                        original: story.text.replace(/\{\{BLANK_\d+\}\}/g, '___'),
-                                        sha: file.sha
-                                    });
-                                }
-                                
-                                // title_fa خالی یا ناموجود
-                                if (story.title && !story.title_fa) {
-                                    translations.push({
-                                        type: 'title_fa',
-                                        packId: pack.id,
-                                        level: lv,
-                                        storyKey: key,
-                                        path: path,
-                                        original: story.title,
-                                        sha: file.sha
-                                    });
-                                }
-                                
-                                // paragraphs.fa خالی یا ناموجود
-                                if (story.paragraphs) {
-                                    for (let i = 0; i < story.paragraphs.length; i++) {
-                                        const para = story.paragraphs[i];
-                                        if (para.fr && !para.fa) {
-                                            translations.push({
-                                                type: 'paragraph_fa',
-                                                packId: pack.id,
-                                                level: lv,
-                                                storyKey: key,
-                                                paraIndex: i,
-                                                path: path,
-                                                original: para.fr,
-                                                sha: file.sha
-                                            });
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                } catch (e) {
-                    log(`⚠️ خطا در سطح ${lv}: ${e.message}`, 'warning');
-                }
-            }
-
-            return translations;
-        }
-
-        // ترجمه با MyMemory - تقسیم به جملات خیلی کوتاه
-        async function translateWithMyMemory(text) {
-            if (!text || text.trim() === '') return '';
-
-            // تقسیم به جملات کوتاه (بر اساس نقطه، علامت سوال، علامت تعجب)
-            // اما این بار با حفظ مرزهای دقیق‌تر
-            const sentences = [];
-            let current = '';
-            
-            for (let i = 0; i < text.length; i++) {
-                current += text[i];
-                if ((text[i] === '.' || text[i] === '?' || text[i] === '!') && current.length >= 20) {
-                    sentences.push(current.trim());
-                    current = '';
-                }
-                // اگر جمله خیلی بلند شد، به زور بشکن
-                if (current.length > 300) {
-                    sentences.push(current.trim());
-                    current = '';
-                }
-            }
-            if (current.trim()) sentences.push(current.trim());
-
-            log(`    📝 تقسیم به ${sentences.length} جمله`, 'info');
-
-            const translatedParts = [];
-
-            for (let i = 0; i < sentences.length; i++) {
-                const sentence = sentences[i];
-                if (sentence.trim().length < 5) {
-                    translatedParts.push(sentence);
-                    continue;
-                }
-
-                const encoded = encodeURIComponent(sentence.trim());
-                const url = `https://api.mymemory.translated.net/get?q=${encoded}&langpair=fr|fa`;
-                
-                try {
-                    const response = await fetch(url);
-                    const data = await response.json();
-                    
-                    if (data.responseStatus === 200 && data.responseData.translatedText) {
-                        let translated = data.responseData.translatedText;
-                        
-                        // بررسی: آیا ترجمه واقعاً فارسی است؟
-                        const frenchWords = translated.match(/\b[a-zA-Z]{4,}\b/g) || [];
-                        const totalWords = translated.split(/\s+/).length;
-                        const frenchPercent = totalWords > 0 ? (frenchWords.length / totalWords) * 100 : 0;
-                        
-                        if (frenchPercent > 50) {
-                            log(`    ⚠️ جمله ${i+1} فرانسوی ترجمه شد (${frenchPercent.toFixed(0)}%) - رد شد`, 'warning');
-                            translatedParts.push(sentence); // همان اصلی را بگذار
-                        } else {
-                            translatedParts.push(translated);
-                            log(`    ✅ جمله ${i+1} ترجمه شد`, 'success');
-                        }
-                    } else {
-                        translatedParts.push(sentence);
-                    }
-                } catch (e) {
-                    translatedParts.push(sentence);
-                }
-                
-                await sleep(1500); // تاخیر برای جلوگیری از مسدود شدن API
-            }
-
-            return translatedParts.join(' ');
-        }
-
-        async function startBatchTranslation() {
+        // ============ گام ۲: شروع ترجمه ============
+        async function startTranslation() {
             const token = document.getElementById('token').value.trim();
-            const user = "temsahak-rgb";
-            const repo = "Dino-5monde";
-
-            if (!token) {
-                log('❌ GitHub Token را وارد کنید', 'error');
+            
+            if (allSentences.length === 0) {
+                log('❌ هیچ جمله‌ای برای ترجمه نیست', 'error');
                 return;
             }
 
             document.getElementById('startBtn').disabled = true;
+            document.getElementById('continueBtn').style.display = 'inline-block';
+            document.getElementById('stopBtn').style.display = 'inline-block';
             
-            try {
-                allTranslations = await collectAllTranslations(token, user, repo);
-                totalTranslationsNeeded = allTranslations.length;
-                
-                if (allTranslations.length === 0) {
-                    log('✅ هیچ ترجمه‌ای لازم نیست! همه فایل‌ها سالم هستند.', 'success');
-                    document.getElementById('startBtn').disabled = false;
-                    return;
-                }
-
-                log(`✅ ${allTranslations.length} ترجمه لازم پیدا شد`, 'success');
-                updateStats();
-
-                await translateBatch(0, 10, token, user, repo);
-                
-            } catch (e) {
-                log(`❌ خطا: ${e.message}`, 'error');
-                document.getElementById('startBtn').disabled = false;
-            }
+            await translateBatch(0, 20, token);
         }
 
-        async function translateBatch(startIndex, count, token, user, repo) {
-            const end = Math.min(startIndex + count, allTranslations.length);
-            log(`\n🔄 ترجمه ${startIndex + 1} تا ${end} از ${allTranslations.length}...`, 'info');
+        // ============ ترجمه دسته‌ای ============
+        async function translateBatch(startIndex, count, token) {
+            const end = Math.min(startIndex + count, allSentences.length);
+            log(`\n🔄 ترجمه جملات ${startIndex + 1} تا ${end}...`, 'info');
 
-            const previewHtml = [];
+            const fileChanges = {};
 
             for (let i = startIndex; i < end; i++) {
                 if (shouldStop) break;
 
-                const trans = allTranslations[i];
-                log(`  📝 ${trans.packId} - ${trans.type}...`, 'info');
+                const item = allSentences[i];
+                log(`  📝 ${item.packId} - جمله ${i + 1}/${totalSentences}...`, 'info');
                 
-                const translated = await translateWithMyMemory(trans.original);
-                trans.translated = translated;
+                const translated = await translateWithGoogle(item.sentence);
                 
-                previewHtml.push(`
-                    <div class="preview-item">
-                        <h4>${trans.packId} (${trans.level}) - ${trans.type}</h4>
-                        <div class="original"><strong>اصلی (فرانسوی):</strong> ${trans.original.substring(0, 300)}${trans.original.length > 300 ? '...' : ''}</div>
-                        <div class="translated"><strong>ترجمه (فارسی):</strong> ${translated.substring(0, 300)}${translated.length > 300 ? '...' : ''}</div>
-                    </div>
-                `);
+                if (translated !== item.sentence) {
+                    translatedCount++;
+                    log(`    ✅ ترجمه شد: "${translated.substring(0, 50)}..."`, 'success');
+                } else {
+                    failedCount++;
+                    log(`    ⚠️ ترجمه نشد`, 'warning');
+                }
+                
+                item.translated = translated;
+                
+                if (!fileChanges[item.path]) {
+                    fileChanges[item.path] = { sha: item.sha, changes: [] };
+                }
+                fileChanges[item.path].changes.push(item);
                 
                 updateStats();
+                await sleep(800); // تاخیر کوتاه برای Google
             }
 
-            document.getElementById('previewContent').innerHTML = previewHtml.join('');
-            document.getElementById('preview').style.display = 'block';
+            log(`\n💾 ذخیره تغییرات در GitHub...`, 'info');
+            await saveChanges(fileChanges, token);
 
-            if (end < allTranslations.length) {
-                document.getElementById('continueBtn').style.display = 'inline-block';
-                document.getElementById('stopBtn').style.display = 'inline-block';
-                currentBatchIndex = end;
+            if (end < allSentences.length && !shouldStop) {
+                currentSentenceIndex = end;
+                log(`\n✅ ${end} جمله پردازش شد. برای ادامه دکمه "ادامه" را بزنید.`, 'success');
             } else {
-                log('\n✅ همه ترجمه‌ها انجام شد! در حال ذخیره در GitHub...', 'success');
-                await saveAllToGitHub(token, user, repo);
+                log(`\n🎉 تمام جملات پردازش شدند!`, 'success');
+                document.getElementById('continueBtn').style.display = 'none';
+                document.getElementById('stopBtn').style.display = 'none';
+                document.getElementById('startBtn').disabled = false;
             }
         }
 
-        async function continueBatch() {
-            const token = document.getElementById('token').value.trim();
-            const user = "temsahak-rgb";
-            const repo = "Dino-5monde";
-
-            document.getElementById('continueBtn').disabled = true;
-            document.getElementById('preview').style.display = 'none';
-            
-            await translateBatch(currentBatchIndex, 10, token, user, repo);
-            
-            document.getElementById('continueBtn').disabled = false;
-        }
-
-        async function saveAllToGitHub(token, user, repo) {
-            log('\n💾 ذخیره همه تغییرات در GitHub...', 'info');
-            
-            const fileChanges = {};
-            for (const trans of allTranslations) {
-                if (!trans.translated) continue;
-                if (!fileChanges[trans.path]) {
-                    fileChanges[trans.path] = { sha: trans.sha, changes: [] };
-                }
-                fileChanges[trans.path].changes.push(trans);
-            }
-
-            let savedCount = 0;
-
+        async function saveChanges(fileChanges, token) {
             for (const [path, data] of Object.entries(fileChanges)) {
                 try {
-                    const file = await githubGet(path, token, user, repo);
+                    const file = await githubGet(path, token);
                     const pack = JSON.parse(decodeURIComponent(escape(atob(file.content))));
                     
                     for (const change of data.changes) {
                         if (change.type === 'text_fa') {
-                            pack.stories[change.storyKey].text_fa = change.translated;
+                            if (!pack.stories[change.storyKey].text_fa) {
+                                pack.stories[change.storyKey].text_fa = '';
+                            }
+                            pack.stories[change.storyKey].text_fa += change.translated + ' ';
                         } else if (change.type === 'title_fa') {
                             pack.stories[change.storyKey].title_fa = change.translated;
                         } else if (change.type === 'paragraph_fa') {
@@ -453,30 +396,24 @@
                         }
                     }
                     
-                    await githubPut(path, JSON.stringify(pack, null, 2), file.sha, token, user, repo, `🤖 batch-translate: ${path}`);
-                    savedCount++;
-                    log(`  ✅ ${path}`, 'success');
+                    await githubPut(path, JSON.stringify(pack, null, 2), file.sha, token, `🤖 google-translate: ${path}`);
+                    log(`  ✅ ${path} ذخیره شد`, 'success');
                 } catch (e) {
                     log(`  ❌ خطا در ${path}: ${e.message}`, 'error');
                 }
             }
+        }
 
-            log(`\n🎉 پایان! ${savedCount} فایل با موفقیت ذخیره شد.`, 'success');
-            
-            document.getElementById('continueBtn').style.display = 'none';
-            document.getElementById('stopBtn').style.display = 'none';
-            document.getElementById('startBtn').disabled = false;
+        async function continueTranslation() {
+            const token = document.getElementById('token').value.trim();
+            document.getElementById('continueBtn').disabled = true;
+            await translateBatch(currentSentenceIndex, 20, token);
+            document.getElementById('continueBtn').disabled = false;
         }
 
         function stopTranslation() {
             shouldStop = true;
-            log('⏹ توقف - در حال ذخیره تغییرات انجام شده...', 'warning');
-            
-            const token = document.getElementById('token').value.trim();
-            const user = "temsahak-rgb";
-            const repo = "Dino-5monde";
-            
-            saveAllToGitHub(token, user, repo);
+            log('⏹ توقف درخواست شد', 'warning');
         }
 
         window.onload = function() {
