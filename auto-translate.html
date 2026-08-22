@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🤖 ربات ترجمه خودکار با Gemini</title>
+    <title>🤖 ربات جستجو و ترجمه خودکار کل سایت</title>
     <style>
         body { font-family: Tahoma; padding: 20px; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); min-height: 100vh; margin: 0; }
         .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
-        h1 { color: #087F5B; text-align: center; }
+        h1 { color: #087F5B; text-align: center; margin-bottom: 5px; }
+        .subtitle { text-align: center; color: #777; margin-bottom: 25px; font-size: 14px; }
         .setup { background: #f0f9ff; border: 2px solid #087F5B; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
         label { display: block; margin: 12px 0 6px; font-weight: bold; color: #333; }
-        input, select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
-        .btn { background: #087F5B; color: white; border: none; padding: 16px; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; width: 100%; margin-top: 15px; transition: 0.2s; }
+        input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
+        .btn { background: #087F5B; color: white; border: none; padding: 18px; border-radius: 8px; cursor: pointer; font-size: 18px; font-weight: bold; width: 100%; margin-top: 15px; transition: 0.2s; }
         .btn:hover:not(:disabled) { background: #066b4c; transform: translateY(-2px); }
         .btn:disabled { background: #ccc; cursor: not-allowed; }
         .btn-stop { background: #dc2626; }
+        .btn-stop:hover:not(:disabled) { background: #b91c1c; }
         .log { background: #1a1a1a; color: #00ff00; padding: 15px; border-radius: 8px; margin-top: 20px; max-height: 400px; overflow-y: auto; font-family: monospace; font-size: 13px; line-height: 1.6; }
         .log-success { color: #00ff00; } .log-error { color: #ff4444; } .log-info { color: #44aaff; } .log-warning { color: #ffaa00; }
-        .progress-bar { background: #e0e0e0; height: 10px; border-radius: 5px; overflow: hidden; margin: 15px 0; }
+        .progress-bar { background: #e0e0e0; height: 12px; border-radius: 6px; overflow: hidden; margin: 15px 0; }
         .progress-fill { background: linear-gradient(90deg, #087F5B, #10b981); height: 100%; width: 0%; transition: width 0.3s; }
         .help { background: #fffbeb; border: 1px solid #fde68a; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; text-align: center; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🤖 ربات ترجمه خودکار داستان‌ها</h1>
+        <h1>🤖 ربات جستجو و ترجمه خودکار</h1>
+        <p class="subtitle">ربات خودش کل سایت را می‌گردد، پک‌های ناقص را پیدا می‌کند و ترجمه می‌کند.</p>
+
         <div class="help">
-            ✅ این ربات <strong>کاملاً خودکار</strong> است. فقط دکمه زیر را بزن و صفحه را ببند!<br>
-            خودش فایل‌ها را می‌خواند، ترجمه می‌کند و در گیت‌هاب ذخیره می‌کند.
+            🔑 فقط API Key و GitHub Token را وارد کن و دکمه سبز را بزن. <strong>همین!</strong><br>
+            ربات خودش سطوح A1 تا C2 را اسکن می‌کند.
         </div>
 
         <div class="setup">
@@ -36,22 +40,13 @@
             
             <label>GitHub Token:</label>
             <input type="password" id="token" placeholder="ghp_...">
-            
-            <label>سطح مورد نظر:</label>
-            <select id="level">
-                <option value="all">همه سطوح (پیشنهادی)</option>
-                <option value="A1">فقط A1</option>
-                <option value="A2">فقط A2</option>
-                <option value="B1">فقط B1</option>
-                <option value="B2">فقط B2</option>
-                <option value="C1">فقط C1</option>
-                <option value="C2">فقط C2</option>
-            </select>
         </div>
 
         <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
-        <button class="btn" id="startBtn" onclick="startTranslation()">🚀 شروع ترجمه خودکار (فقط یک کلیک)</button>
+        
+        <button class="btn" id="startBtn" onclick="startAutoScan()">🚀 شروع جستجو و ترجمه خودکار کل سایت</button>
         <button class="btn btn-stop" id="stopBtn" onclick="stopTranslation()" style="display:none;">⏹ توقف اضطراری</button>
+        
         <div class="log" id="log"></div>
     </div>
 
@@ -90,7 +85,9 @@
         }
 
         async function githubGet(path, token, user, repo) {
-            const res = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/${path}`, { headers: { 'Authorization': `token ${token}` } });
+            const res = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/${path}`, { 
+                headers: { 'Authorization': `token ${token}` } 
+            });
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             return await res.json();
         }
@@ -104,7 +101,7 @@
             if (!res.ok) throw new Error(`PUT failed`);
         }
 
-        async function translatePack(path, geminiKey, token, user, repo) {
+        async function checkAndTranslatePack(path, geminiKey, token, user, repo) {
             const file = await githubGet(path, token, user, repo);
             const pack = JSON.parse(decodeURIComponent(escape(atob(file.content))));
             let changed = false;
@@ -114,20 +111,28 @@
             for (const [key, story] of Object.entries(pack.stories)) {
                 if (shouldStop) break;
 
+                // ۱. بررسی و ترجمه text_fa اگر خراب باشد یا وجود نداشته باشد
                 if (story.text && (!story.text_fa || /[a-zA-Z]{3,}/.test(story.text_fa))) {
                     log(`  🔄 ترجمه متن داستان ${key}...`, 'info');
-                    story.text_fa = await translateWithGemini(story.text.replace(/\{\{BLANK_\d+\}\}/g, '___'), geminiKey);
-                    await sleep(1200);
+                    const cleanText = story.text.replace(/\{\{BLANK_\d+\}\}/g, '___');
+                    story.text_fa = await translateWithGemini(cleanText, geminiKey);
+                    await sleep(1200); // تاخیر برای جلوگیری از مسدود شدن API
                     changed = true;
                 }
+
+                // ۲. بررسی و ترجمه title_fa
                 if (story.title && (!story.title_fa || /[a-zA-Z]{3,}/.test(story.title_fa))) {
+                    log(`  🔄 ترجمه عنوان داستان ${key}...`, 'info');
                     story.title_fa = await translateWithGemini(story.title, geminiKey);
                     await sleep(1200);
                     changed = true;
                 }
+
+                // ۳. بررسی و ترجمه پاراگراف‌ها (برای ساختارهای قدیمی)
                 if (story.paragraphs) {
                     for (const para of story.paragraphs) {
                         if (para.fr && (!para.fa || /[a-zA-Z]{3,}/.test(para.fa))) {
+                            log(`  🔄 ترجمه پاراگراف...`, 'info');
                             para.fa = await translateWithGemini(para.fr, geminiKey);
                             await sleep(1200);
                             changed = true;
@@ -138,62 +143,86 @@
             return { changed, path, sha: file.sha, content: JSON.stringify(pack, null, 2) };
         }
 
-        async function startTranslation() {
+        async function startAutoScan() {
             const geminiKey = document.getElementById('geminiKey').value.trim();
             const token = document.getElementById('token').value.trim();
             const user = "temsahak-rgb";
             const repo = "Dino-5monde";
-            const levelFilter = document.getElementById('level').value;
 
             if (!geminiKey || !token) {
                 log('❌ لطفاً API Key و GitHub Token را وارد کن', 'error');
                 return;
             }
 
-            // ذخیره خودکار برای دفعات بعد
+            // ذخیره برای دفعات بعد
             localStorage.setItem('dino_gemini', geminiKey);
             localStorage.setItem('dino_token', token);
-            localStorage.setItem('dino_level', levelFilter);
 
             shouldStop = false;
             document.getElementById('startBtn').disabled = true;
             document.getElementById('stopBtn').style.display = 'inline-block';
-            log('🚀 شروع فرآیند خودکار...', 'info');
+            log('🔍 در حال جستجو در کل مخزن برای یافتن پک‌ها...', 'info');
 
             try {
-                const levels = levelFilter === 'all' ? ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] : [levelFilter];
+                const levelsToScan = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
                 const allPacks = [];
 
-                for (const lv of levels) {
+                // گام ۱: جستجو و ساخت لیست کامل از همه پک‌های موجود در سایت
+                for (const lv of levelsToScan) {
                     try {
                         const listFile = await githubGet(`data/vocabulary/vocab-${lv}.json`, token, user, repo);
                         const list = JSON.parse(decodeURIComponent(escape(atob(listFile.content))));
                         list.forEach(p => allPacks.push({ level: lv, id: p.id }));
-                    } catch (e) { /* رد شدن در صورت نبود سطح */ }
+                    } catch (e) {
+                        // اگر سطحی وجود نداشت، نادیده گرفته می‌شود
+                    }
                 }
 
-                log(`📊 ${allPacks.length} پک برای بررسی پیدا شد.`, 'info');
-                let fixedCount = 0;
+                if (allPacks.length === 0) {
+                    log('⚠️ هیچ پکی پیدا نشد. مسیر فایل‌ها را بررسی کن.', 'warning');
+                    return;
+                }
 
+                log(`✅ ${allPacks.length} پک در کل سایت پیدا شد. شروع بررسی...`, 'success');
+                let fixedCount = 0;
+                let skippedCount = 0;
+
+                // گام ۲: بررسی تک‌تک پک‌ها و ترجمه در صورت نیاز
                 for (let i = 0; i < allPacks.length; i++) {
-                    if (shouldStop) break;
-                    const path = `data/vocabulary/${allPacks[i].level}/${allPacks[i].id}.json`;
+                    if (shouldStop) {
+                        log('⏹ فرآیند توسط شما متوقف شد.', 'warning');
+                        break;
+                    }
+
+                    const packInfo = allPacks[i];
+                    const path = `data/vocabulary/${packInfo.level}/${packInfo.id}.json`;
+                    
+                    log(`📦 بررسی ${i + 1}/${allPacks.length}: ${packInfo.id} (${packInfo.level})`, 'info');
                     
                     try {
-                        const result = await translatePack(path, geminiKey, token, user, repo);
+                        const result = await checkAndTranslatePack(path, geminiKey, token, user, repo);
+                        
                         if (result.changed) {
-                            log(`  💾 ذخیره در گیت‌هاب: ${allPacks[i].id}`, 'success');
-                            await githubPut(path, result.content, result.sha, token, user, repo, `🤖 auto-translate: ${allPacks[i].id}`);
+                            log(`  💾 در حال ذخیره تغییرات در گیت‌هاب...`, 'info');
+                            await githubPut(path, result.content, result.sha, token, user, repo, `🤖 auto-fix-translate: ${packInfo.id}`);
+                            log(`  ✅ ${packInfo.id} با موفقیت ترجمه و ذخیره شد!`, 'success');
                             fixedCount++;
+                        } else {
+                            log(`  ⏭️ ${packInfo.id} از قبل ترجمه سالم دارد. رد شد.`, 'info');
+                            skippedCount++;
                         }
                     } catch (e) {
-                        log(`  ❌ خطا در ${allPacks[i].id}: ${e.message}`, 'error');
+                        log(`  ❌ خطا در بررسی ${packInfo.id}: ${e.message}`, 'error');
                     }
+                    
                     updateProgress(i + 1, allPacks.length);
                 }
-                log(`🎉 پایان! ${fixedCount} فایل با موفقیت ترجمه و ذخیره شد.`, 'success');
+
+                log(`🎉 عملیات پایان یافت!`, 'success');
+                log(`📊 خلاصه: ${fixedCount} پک ترجمه و ذخیره شد | ${skippedCount} پک از قبل سالم بودند.`, 'success');
+
             } catch (e) {
-                log(`❌ خطای کلی: ${e.message}`, 'error');
+                log(`❌ خطای کلی در اسکن: ${e.message}`, 'error');
             }
 
             document.getElementById('startBtn').disabled = false;
@@ -202,14 +231,13 @@
 
         function stopTranslation() {
             shouldStop = true;
-            log('⏹ درخواست توقف ثبت شد...', 'warning');
+            log('⏹ درخواست توقف ثبت شد. پس از اتمام پک جاری متوقف می‌شود...', 'warning');
         }
 
-        // بارگذاری خودکار تنظیمات قبلی
+        // بارگذاری خودکار کلیدها
         window.onload = function() {
             if (localStorage.getItem('dino_gemini')) document.getElementById('geminiKey').value = localStorage.getItem('dino_gemini');
             if (localStorage.getItem('dino_token')) document.getElementById('token').value = localStorage.getItem('dino_token');
-            if (localStorage.getItem('dino_level')) document.getElementById('level').value = localStorage.getItem('dino_level');
         };
     </script>
 </body>
