@@ -21,7 +21,9 @@ function renderNavbar() {
             <span style="font-size:16px;">🦖</span>
             <span style="color:#fff;font-size:14px;font-weight:700;">Français avec Dino</span>
         </div>
+        
         <button id="menu-toggle" style="display:none;background:none;border:none;color:#fff;font-size:20px;cursor:pointer;padding:4px 8px;margin:0;line-height:1;">☰</button>
+        
         <div id="nav-links" style="display:flex;align-items:center;gap:0;">
             ${item('grammar', lang === "fa" ? "گرامر" : "Grammaire")}
             ${item('vocabulary', lang === "fa" ? "واژگان" : "Vocabulaire")}
@@ -29,7 +31,18 @@ function renderNavbar() {
             ${item('travel', lang === "fa" ? "سفر" : "Voyage")}
             ${item('games', lang === "fa" ? "بازی" : "Jeux")}
             ${item('exercises', lang === "fa" ? "تمرین" : "Exercices")}
-            <button onclick="switchSection('profile')" style="background:none;border:none;color:#fff;font-size:15px;cursor:pointer;padding:0 0 0 10px;margin:0;line-height:48px;">👤</button>
+            
+            <!-- 🔍 دکمه جستجو -->
+            <button onclick="openSearch()" title="${lang === "fa" ? "جستجو در سایت" : "Rechercher dans le site"}" style="
+                background:none;border:none;color:#fff;font-size:16px;cursor:pointer;
+                padding:0 10px;margin:0;line-height:48px;transition:opacity 0.15s;
+            " onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">🔍</button>
+            
+            <!-- 👤 دکمه پروفایل -->
+            <button onclick="switchSection('profile')" title="${lang === "fa" ? "پروفایل" : "Profil"}" style="
+                background:none;border:none;color:#fff;font-size:18px;cursor:pointer;
+                padding:0 0 0 4px;margin:0;line-height:48px;transition:opacity 0.15s;
+            " onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">👤</button>
         </div>
     </nav>
     <style>
@@ -37,10 +50,14 @@ function renderNavbar() {
             #menu-toggle{display:block!important;}
             #nav-links{display:none!important;position:absolute;top:48px;left:0;right:0;background:#087F5B;flex-direction:column;padding:4px 0;box-shadow:0 4px 12px rgba(0,0,0,0.15);}
             #nav-links.open{display:flex!important;}
-            #nav-links button{width:100%;text-align:left;padding:12px 16px!important;line-height:1.4!important;border-bottom:1px solid rgba(255,255,255,0.1)!important;}
+            #nav-links button{width:100%;text-align:left;padding:12px 16px!important;line-height:1.4!important;border-bottom:1px solid rgba(255,255,255,0.1)!important;border-left:none!important;}
         }
     </style>
-    <script>document.getElementById('menu-toggle').onclick=function(){document.getElementById('nav-links').classList.toggle('open');};</script>`;
+    <script>
+        document.getElementById('menu-toggle').onclick = function(){
+            document.getElementById('nav-links').classList.toggle('open');
+        };
+    </script>`;
 }
 
 // ===============================
