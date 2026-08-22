@@ -256,6 +256,10 @@ function startStory(difficulty) {
     html += '<h1 class="ltr-lock" style="font-size:24px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">' + story.title + '</h1>';
     html += '<p class="persian-text" style="font-size:15px;color:#777;margin:0 0 20px;">' + story.title_fa + '</p>';
 
+    // دکمه نمایش/مخفی ترجمه
+    if (story.text_fa) {
+        html += '<button onclick="toggleStoryTranslation()" style="width:auto;padding:8px 16px;font-size:13px;font-weight:600;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;margin-bottom:20px;">👁️ ' + (lang === "fa" ? "نمایش / مخفی ترجمه" : "Traduction") + '</button>';
+            }
     // حالت ۱: داستان با blanks (ساختار جدید)
     if (story.text && story.blanks) {
         html += '<p style="font-size:13px;color:#777;margin-bottom:16px;">' + (lang === "fa" ? "جاهای خالی را با کلمه درست پر کن:" : "Remplis les trous avec le bon mot :") + '</p>';
