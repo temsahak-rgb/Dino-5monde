@@ -438,7 +438,39 @@ async function showHome() {
             </article>
         </div>
     </div>`;
+async function showHome() {
+    const lang = localStorage.getItem("language") || "fr";
+    const level = getPlacementResult() || "A1";
 
+    // ... بارگذاری داده‌ها ...
+    
+    let html = renderNavbar();
+    html += `<div style="max-width:960px;margin:0 auto;padding:32px 20px 60px;">`;
+    
+    // سلام
+    html += `<div style="display:flex;align-items:center;gap:16px;margin-bottom:8px;">
+        <span style="font-size:48px;line-height:1;">🦖</span>
+        <h1 style="font-size:30px;font-weight:700;color:#1a1a1a;margin:0;">${lang === "fa" ? "سلام، ادامه بده!" : "Bonjour, continuez !"}</h1>
+    </div>
+    <p style="font-size:17px;color:#777;margin:0 0 36px;">${level} · ${lang === "fa" ? "سطح فعلی شما" : "Votre niveau actuel"}</p>`;
+    
+    // 📰 بخش اخبار (تصویر بزرگ)
+    html += await renderNewsSection();
+    
+    // 📊 بخش نظرسنجی (مستقل)
+    html += await renderPollSection();
+    
+    // 📰 اخبار و نکات ثابت
+    html += `<div style="margin-bottom:45px;">
+        ${sectionHeader(lang === "fa" ? "📰 اخبار و نکات" : "📰 Actualités & conseils", "", lang)}
+        ...
+    </div>`;
+    
+    // ... بقیه بخش‌ها ...
+    
+    html += `</div>`;
+    app.innerHTML = html;
+}
     html += `<div style="margin-bottom:40px;">
         ${sectionHeader(lang === "fa" ? "📚 گرامر" : "📚 Grammaire", "switchSection('grammar')", lang)}
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
