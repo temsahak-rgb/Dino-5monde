@@ -454,7 +454,14 @@ function startVocabExercise() {
         });
         html += '</div>';
         html += '<div id="vfb" style="margin-top:16px;"></div>';
-        html += '</div>';
+        // نمایش ترجمه داستان
+if (story.text_fa) {
+    html += '<div class="story-tr" style="display:none;background:#f0f9ff;border:1px solid #087F5B;border-radius:8px;padding:20px;margin-top:20px;">';
+    html += '<h3 style="font-size:16px;font-weight:700;color:#087F5B;margin:0 0 12px;">📖 ' + (lang === "fa" ? "ترجمه داستان" : "Traduction de l'histoire") + '</h3>';
+    html += '<p class="persian-text" style="font-size:15px;line-height:1.8;color:#333;margin:0;">' + story.text_fa + '</p>';
+    html += '</div>';
+}
+        
         app.innerHTML = html;
         document.querySelectorAll('.vq').forEach(function(btn) {
             btn.onclick = function() {
