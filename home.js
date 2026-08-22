@@ -1,16 +1,58 @@
 // ===============================
+// 📰 بخش اخبار (نسخه امن و ضدخطا)
+// ===============================
+async function renderNewsSection() {
+    const lang = localStorage.getItem("language") || "fr";
+    try {
+        // تلاش برای خواندن فایل اخبار
+        const response = await fetch("./data/news/news-index.json?v=" + Date.now());
+        if (!response.ok) return ""; // اگر فایل نبود، خالی برگردان
+        
+        const allNews = await response.json();
+        if (!allNews || !allNews.length) return ""; // اگر خالی بود، خالی برگردان
+        
+        const currentNews = allNews[0]; // آخرین خبر
+        
+        let html = "";
+        html += `<div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.1);margin-bottom:30px;cursor:pointer;" onclick="showNewsDetail('${currentNews.id}')">`;
+        html += `<div style="position:relative;height:350px;overflow:hidden;">`;
+        html += `<img src="${currentNews.image}" alt="${currentNews.title}" style="width:100%;height:100%;object-fit:cover;">`;
+        html += `<div style="position:absolute;top:15px;right:15px;display:flex;gap:8px;">`;
+        html += `<span style="background:#087F5B;color:#fff;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:700;">${currentNews.level}</span>`;
+        html += `<span style="background:rgba(0,0,0,0.7);color:#fff;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:700;">📰 ${lang === "fa" ? "خبر هفته" : "Actualité"}</span>`;
+        html += `</div>`;
+        html += `<div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top, rgba(0,0,0,0.9), transparent);padding:25px;color:#fff;">`;
+        html += `<h2 style="font-size:24px;font-weight:700;margin:0 0 8px;">${lang === "fa" ? currentNews.title_fa : currentNews.title}</h2>`;
+        html += `<p style="font-size:15px;margin:0;opacity:0.9;">${lang === "fa" ? currentNews.subtitle_fa : currentNews.subtitle}</p>`;
+        html += `</div></div>`;
+        html += `<div style="padding:15px 25px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #f0f0f0;">`;
+        html += `<span style="font-size:13px;color:#777;">📅 ${currentNews.publishedDate}</span>`;
+        html += `<span style="font-size:14px;font-weight:700;color:#087F5B;">${lang === "fa" ? "مشاهده کامل ←" : "Lire la suite ←"}</span>`;
+        html += `</div></div>`;
+        
+        return html;
+    } catch (error) {
+        console.warn("News section skipped:", error);
+        return ""; // در صورت هرگونه خطا، سکوت کن و صفحه را خراب نکن
+    }
+}
+// ===============================
 // 🏠 صفحه اصلی مینیمال
 // ===============================
 async function showHome() {
     const lang = localStorage.getItem("language") || "fr";
     const level = getPlacementResult() || "A1";
 
+    // بارگذاری موازی برای سرعت بیشتر
     const [g, t, d] = await Promise.all([
         loadGrammar(level).then(() => getGrammar(level).slice(0, 4)).catch(() => []),
         fetch("./data/travel/lessons.json").then(r => r.json()).catch(() => []),
         fetch("./data/daily/lessons.json").then(r => r.json()).catch(() => [])
     ]);
-    const grammarLessons = g, travelLessons = t.slice(0, 4), dailyLessons = d.slice(0, 4);
+    
+    const grammarLessons = g;
+    const travelLessons = t.slice(0, 4);
+    const dailyLessons = d.slice(0, 4);
     
     let html = renderNavbar();
 
@@ -20,7 +62,10 @@ async function showHome() {
             <h1 style="font-size:30px;font-weight:700;color:#1a1a1a;margin:0;">${lang === "fa" ? "سلام، ادامه بده!" : "Bonjour, continuez !"}</h1>
         </div>
         <p style="font-size:17px;color:#777;margin:0 0 36px;">${level} · ${lang === "fa" ? "سطح فعلی شما" : "Votre niveau actuel"}</p>`;
-html += await renderNewsSection();
+    
+    // اینجا اخبار تزریق می‌شود (اگر تابع بالا باشد، کار می‌کند)
+    html += await renderNewsSection();
+    
     html += `<div style="margin-bottom:45px;">
         ${sectionHeader(lang === "fa" ? "📰 اخبار و نکات" : "📰 Actualités & conseils", "", lang)}
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;">
@@ -69,7 +114,7 @@ html += await renderNewsSection();
     html += `<div style="margin-bottom:40px;">
         ${sectionHeader(lang === "fa" ? "📖 واژگان" : "📖 Vocabulaire", "switchSection('vocabulary')", lang)}
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
-            ${simpleCard("", lang === "fa" ? "لباس و پوشاک" : "Vêtements", lang === "fa" ? "۱۵ کلمه" : "15 mots", "switchSection('vocabulary')")}
+            ${simpleCard("👕", lang === "fa" ? "لباس و پوشاک" : "Vêtements", lang === "fa" ? "۱۵ کلمه" : "15 mots", "switchSection('vocabulary')")}
             ${simpleCard("🥐", lang === "fa" ? "صبحانه در هتل" : "Petit-déjeuner", lang === "fa" ? "۱۵ کلمه" : "15 mots", "switchSection('vocabulary')")}
             ${simpleCard("🍽️", lang === "fa" ? "غذا و رستوران" : "Nourriture", lang === "fa" ? "۱۵ کلمه" : "15 mots", "switchSection('vocabulary')")}
             ${simpleCard("👨‍👩‍👧", lang === "fa" ? "خانواده" : "Famille", lang === "fa" ? "۱۵ کلمه" : "15 mots", "switchSection('vocabulary')")}
