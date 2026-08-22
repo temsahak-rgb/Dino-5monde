@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 ربات ترجمه دوگانه - مقایسه Gemini و MyMemory</title>
+    <style>
+        body { font-family: Tahoma; padding: 20px; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); min-height: 100vh; margin: 0; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+        h1 { color: #087F5B; text-align: center; margin-bottom: 5px; }
+        .subtitle { text-align: center; color: #777; margin-bottom: 25px; font-size: 14px; }
+        .setup { background: #f0f9ff; border: 2px solid #087F5B; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        label { display: block; margin: 12px 0 6px; font-weight: bold; color: #333; }
+        input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
+        .btn { background: #087F5B; color: white; border: none; padding: 16px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; width: 100%; margin-top: 10px; transition: 0.2s; }
+        .btn:hover:not(:disabled) { background: #066b4c; transform: translateY(-2px); }
+        .btn:disabled { background: #ccc; cursor: not-allowed; }
+        .btn-continue { background: #2563eb; }
+        .btn-continue:hover:not(:disabled) { background: #1d4ed8; }
+        .btn-stop { background: #dc2626; }
+        .btn-reset { background: #f59e0b; }
+        .log { background: #1a1a1a; color: #00ff00; padding: 15px; border-radius: 8px; margin-top: 20px; max-height: 300px; overflow-y: auto; font-family: monospace; font-size: 13px; line-height: 1.6; }
+        .log-success { color: #00ff00; } .log-error { color: #ff4444; } .log-info { color: #44aaff; } .log-warning { color: #ffaa00; }
+        .preview { background: #f9fafb; border: 2px solid #e0e0e0; border-radius: 8px; padding: 15px; margin-top: 20px; display: none; max-height: 600px; overflow-y: auto; }
+        .preview-item { background: white; border: 2px solid #ddd; border-radius: 8px; padding: 15px; margin-bottom: 15px; }
+        .preview-item h4 { margin: 0 0 10px 0; color: #087F5B; font-size: 14px; }
+        .original { background: #fef3c7; padding: 10px; border-radius: 6px; margin-bottom: 12px; font-size: 13px; direction: ltr; text-align: left; }
+        .translation-box { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+        .translation-option { border: 2px solid #e0e0e0; border-radius: 6px; padding: 10px; cursor: pointer; transition: 0.2s; }
+        .translation-option:hover { border-color: #087F5B; background: #f0f9ff; }
+        .translation-option.selected { border-color: #087F5B; background: #d1fae5; }
+        .translation-option.rejected { border-color: #dc2626; background: #fee2e2; opacity: 0.6; }
+        .translation-option h5 { margin: 0 0 8px 0; font-size: 13px; color: #333; }
+        .translation-option p { margin: 0; font-size: 13px; line-height: 1.6; }
+        .api-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; margin-bottom: 5px; }
+        .badge-gemini { background: #4285f4; color: white; }
+        .badge-mymemory { background: #34a853; color: white; }
+        .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 15px 0; }
+        .stat-box { background: #f0f9ff; padding: 12px; border-radius: 6px; text-align: center; border: 1px solid #087F5B; }
+        .stat-value { font-size: 24px; font-weight: bold; color: #087F5B; }
+        .stat-label { font-size: 11px; color: #777; margin-top: 4px; }
+        .progress-bar { background: #e0e0e0; height: 12px; border-radius: 6px; overflow: hidden; margin: 15px 0; }
+        .progress-fill { background: linear-gradient(90deg, #087F5B, #10b981); height: 100%; width: 0%; transition: width 0.3s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 ربات ترجمه دوگانه</h1>
+        <p class="subtitle">مقایسه Gemini و MyMemory - شما انتخاب کنید کدام بهتر است</p>
+
+        <div class="setup">
+            <label>Google Gemini API Key:</label>
+            <input type="password" id="geminiKey" placeholder="AIza...">
+            
+            <label>GitHub Token:</label>
+            <input type="password" id="token" placeholder="ghp_...">
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-value" id="statTotal">0</div>
+                <div class="stat-label">کل ترجمه‌ها</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="statDone">0</div>
+                <div class="stat-label">انتخاب شده</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="statGemini">0</div>
+                <div class="stat-label">Gemini</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value" id="statMyMemory">0</div>
+                <div class="stat-label">MyMemory</div>
+            </div>
+        </div>
+
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+
+        <button class="btn btn-reset" id="resetBtn" onclick="resetBrokenTranslations()">🧹 گام ۱: پاک‌سازی ترجمه‌های خراب</button>
+        <button class="btn" id="startBtn" onclick="startBatchTranslation()" style="display:none;">🚀 گام ۲: شروع ترجمه دوگانه (۱۰ تای اول)</button>
+        <button class="btn btn-continue" id="continueBtn" onclick="continueBatch()" style="display:none;">✅ ادامه (۱۰ تای بعدی)</button>
+        <button class="btn btn-stop" id="stopBtn" onclick="stopTranslation()" style="display:none;">⏹ توقف و ذخیره انتخاب‌ها</button>
+
+        <div class="preview" id="preview">
+            <h3 style="margin-top: 0; color: #087F5B;">📋 روی هر ترجمه کلیک کنید تا انتخاب شود:</h3>
+            <div id="previewContent"></div>
+        </div>
+
+        <div class="log" id="log"></div>
+    </div>
+
+    <script>
+        let shouldStop = false;
+        let allTranslations = [];
+        let currentBatchIndex = 0;
+        let totalTranslationsNeeded = 0;
+        let selectedCount = { gemini: 0, mymemory: 0 };
+
+        function log(msg, type = 'info') {
+            const logDiv = document.getElementById('log');
+            const time = new Date().toLocaleTimeString('fa-IR');
+            logDiv.innerHTML += `<div class="log-${type}">[${time}] ${msg}</div>`;
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+
+        function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
+
+        function updateStats() {
+            document.getElementById('statTotal').textContent = totalTranslationsNeeded;
+            document.getElementById('statDone').textContent = allTranslations.filter(t => t.selected).length;
+            document.getElementById('statGemini').textContent = selectedCount.gemini;
+            document.getElementById('statMyMemory').textContent = selectedCount.mymemory;
+            const pct = totalTranslationsNeeded > 0 ? (allTranslations.filter(t => t.selected).length / totalTranslationsNeeded) * 100 : 0;
+            document.getElementById('progressFill').style.width = pct + '%';
+        }
+
+        async function githubGet(path, token, user, repo) {
+            const res = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/${path}`, { 
+                headers: { 'Authorization': `token ${token}` } 
+            });
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return await res.json();
+        }
+
+        async function githubPut(path, content, sha, token, user, repo, message) {
+            const res = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/${path}`, {
+                method: 'PUT',
+                headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message, content: btoa(unescape(encodeURIComponent(content))), sha })
+            });
+            if (!res.ok) throw new Error(`PUT failed`);
+        }
+
+        // ============ ترجمه با Gemini ============
+        async function translateWithGemini(text, apiKey) {
+            if (!text || text.trim() === '') return '';
+
+            const prompt = `You are a professional French-to-Persian translator.
+
+TASK: Translate the following French text to Persian (Farsi).
+
+RULES:
+1. The input text is in French and may contain blanks marked with "___"
+2. Translate ONLY to Persian - do NOT keep French words (except proper names like "Bertrand", "Paris", "Wi-Fi")
+3. Keep the blanks "___" exactly as they are in the Persian translation
+4. Output ONLY the Persian translation - no explanations, no notes
+5. The translation must be natural and fluent in Persian
+
+French text to translate:
+${text}`;
+
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: prompt }] }],
+                        generationConfig: { temperature: 0.2, maxOutputTokens: 2048 }
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.candidates && data.candidates[0] && data.candidates[0].content.parts[0]) {
+                    return data.candidates[0].content.parts[0].text.trim();
+                }
+                return '';
+            } catch (e) {
+                log(`    ❌ خطای Gemini: ${e.message}`, 'error');
+                return '';
+            }
+        }
+
+        // ============ ترجمه با MyMemory ============
+        async function translateWithMyMemory(text) {
+            if (!text || text.trim() === '') return '';
+
+            // تقسیم به جملات کوتاه
+            const sentences = [];
+            let current = '';
+            
+            for (let i = 0; i < text.length; i++) {
+                current += text[i];
+                if ((text[i] === '.' || text[i] === '?' || text[i] === '!') && current.length >= 20) {
+                    sentences.push(current.trim());
+                    current = '';
+                }
+                if (current.length > 300) {
+                    sentences.push(current.trim());
+                    current = '';
+                }
+            }
+            if (current.trim()) sentences.push(current.trim());
+
+            const translatedParts = [];
+
+            for (const sentence of sentences) {
+                if (sentence.trim().length < 5) {
+                    translatedParts.push(sentence);
+                    continue;
+                }
+
+                const encoded = encodeURIComponent(sentence.trim());
+                const url = `https://api.mymemory.translated.net/get?q=${encoded}&langpair=fr|fa`;
+                
+                try {
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    
+                    if (data.responseStatus === 200 && data.responseData.translatedText) {
+                        translatedParts.push(data.responseData.translatedText);
+                    } else {
+                        translatedParts.push(sentence);
+                    }
+                } catch (e) {
+                    translatedParts.push(sentence);
+                }
+                
+                await sleep(1200);
+            }
+
+            return translatedParts.join(' ');
+        }
+
+        // ============ گام ۱: پاک‌سازی ============
+        async function resetBrokenTranslations() {
+            const token = document.getElementById('token').value.trim();
+            const user = "temsahak-rgb";
+            const repo = "Dino-5monde";
+
+            if (!token) {
+                log('❌ GitHub Token را وارد کنید', 'error');
+                return;
+            }
+
+            localStorage.setItem('dino_token', token);
+            document.getElementById('resetBtn').disabled = true;
+
+            log('🧹 شروع پاک‌سازی...', 'info');
+
+            try {
+                const levelsToScan = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+                let resetCount = 0;
+
+                for (const lv of levelsToScan) {
+                    try {
+                        const listFile = await githubGet(`data/vocabulary/vocab-${lv}.json`, token, user, repo);
+                        const list = JSON.parse(decodeURIComponent(escape(atob(listFile.content))));
+                        
+                        for (const pack of list) {
+                            const path = `data/vocabulary/${lv}/${pack.id}.json`;
+                            const file = await githubGet(path, token, user, repo);
+                            const packData = JSON.parse(decodeURIComponent(escape(atob(file.content))));
+                            
+                            let changed = false;
+                            
+                            if (packData.stories) {
+                                for (const [key, story] of Object.entries(packData.stories)) {
+                                    if (story.text_fa && /[a-zA-Z]{3,}/.test(story.text_fa)) {
+                                        story.text_fa = "";
+                                        changed = true;
+                                    }
+                                    if (story.title_fa && /[a-zA-Z]{3,}/.test(story.title_fa)) {
+                                        story.title_fa = "";
+                                        changed = true;
+                                    }
+                                    if (story.paragraphs) {
+                                        for (const para of story.paragraphs) {
+                                            if (para.fa && /[a-zA-Z]{3,}/.test(para.fa)) {
+                                                para.fa = "";
+                                                changed = true;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            if (changed) {
+                                await githubPut(path, JSON.stringify(packData, null, 2), file.sha, token, user, repo, `🧹 reset: ${pack.id}`);
+                                resetCount++;
+                            }
+                        }
+                    } catch (e) {
+                        log(`⚠️ خطا در سطح ${lv}: ${e.message}`, 'warning');
+                    }
+                }
+
+                log(`✅ ${resetCount} فایل پاک‌سازی شد`, 'success');
+                document.getElementById('startBtn').style.display = 'inline-block';
+                
+            } catch (e) {
+                log(`❌ خطا: ${e.message}`, 'error');
+            }
+
+            document.getElementById('resetBtn').disabled = false;
+        }
+
+        // ============ جمع‌آوری ترجمه‌ها ============
+        async function collectAllTranslations(token, user, repo) {
+            log('🔍 جستجو در کل مخزن...', 'info');
+            
+            const levelsToScan = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+            const translations = [];
+
+            for (const lv of levelsToScan) {
+                try {
+                    const listFile = await githubGet(`data/vocabulary/vocab-${lv}.json`, token, user, repo);
+                    const list = JSON.parse(decodeURIComponent(escape(atob(listFile.content))));
+                    
+                    for (const pack of list) {
+                        const path = `data/vocabulary/${lv}/${pack.id}.json`;
+                        const file = await githubGet(path, token, user, repo);
+                        const packData = JSON.parse(decodeURIComponent(escape(atob(file.content))));
+                        
+                        if (packData.stories) {
+                            for (const [key, story] of Object.entries(packData.stories)) {
+                                if (story.text && !story.text_fa) {
+                                    translations.push({
+                                        type: 'text_fa',
+                                        packId: pack.id,
+                                        level: lv,
+                                        storyKey: key,
+                                        path: path,
+                                        original: story.text.replace(/\{\{BLANK_\d+\}\}/g, '___'),
+                                        sha: file.sha
+                                    });
+                                }
+                                if (story.title && !story.title_fa) {
+                                    translations.push({
+                                        type: 'title_fa',
+                                        packId: pack.id,
+                                        level: lv,
+                                        storyKey: key,
+                                        path: path,
+                                        original: story.title,
+                                        sha: file.sha
+                                    });
+                                }
+                                if (story.paragraphs) {
+                                    for (let i = 0; i < story.paragraphs.length; i++) {
+                                        const para = story.paragraphs[i];
+                                        if (para.fr && !para.fa) {
+                                            translations.push({
+                                                type: 'paragraph_fa',
+                                                packId: pack.id,
+                                                level: lv,
+                                                storyKey: key,
+                                                paraIndex: i,
+                                                path: path,
+                                                original: para.fr,
+                                                sha: file.sha
+                                            });
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } catch (e) {
+                    log(`⚠️ خطا در سطح ${lv}: ${e.message}`, 'warning');
+                }
+            }
+
+            return translations;
+        }
+
+        // ============ شروع ترجمه دوگانه ============
+        async function startBatchTranslation() {
+            const token = document.getElementById('token').value.trim();
+            const geminiKey = document.getElementById('geminiKey').value.trim();
+            const user = "temsahak-rgb";
+            const repo = "Dino-5monde";
+
+            if (!token || !geminiKey) {
+                log('❌ هر دو کلید را وارد کنید', 'error');
+                return;
+            }
+
+            localStorage.setItem('dino_token', token);
+            localStorage.setItem('dino_gemini', geminiKey);
+
+            document.getElementById('startBtn').disabled = true;
+            
+            try {
+                allTranslations = await collectAllTranslations(token, user, repo);
+                totalTranslationsNeeded = allTranslations.length;
+                
+                if (allTranslations.length === 0) {
+                    log('✅ هیچ ترجمه‌ای لازم نیست!', 'success');
+                    document.getElementById('startBtn').disabled = false;
+                    return;
+                }
+
+                log(`✅ ${allTranslations.length} ترجمه لازم پیدا شد`, 'success');
+                updateStats();
+
+                await translateBatchDual(0, 10, geminiKey, token, user, repo);
+                
+            } catch (e) {
+                log(`❌ خطا: ${e.message}`, 'error');
+                document.getElementById('startBtn').disabled = false;
+            }
+        }
+
+        // ============ ترجمه دوگانه ============
+        async function translateBatchDual(startIndex, count, geminiKey, token, user, repo) {
+            const end = Math.min(startIndex + count, allTranslations.length);
+            log(`\n🔄 ترجمه دوگانه ${startIndex + 1} تا ${end}...`, 'info');
+
+            const previewHtml = [];
+
+            for (let i = startIndex; i < end; i++) {
+                if (shouldStop) break;
+
+                const trans = allTranslations[i];
+                log(`  📝 ${trans.packId} - ${trans.type}...`, 'info');
+                
+                // ترجمه با هر دو API
+                const [geminiTranslation, myMemoryTranslation] = await Promise.all([
+                    translateWithGemini(trans.original, geminiKey),
+                    translateWithMyMemory(trans.original)
+                ]);
+                
+                trans.gemini = geminiTranslation;
+                trans.mymemory = myMemoryTranslation;
+                trans.selected = null;
+                
+                previewHtml.push(`
+                    <div class="preview-item" data-index="${i}">
+                        <h4>${trans.packId} (${trans.level}) - ${trans.type}</h4>
+                        <div class="original"><strong>اصلی (فرانسوی):</strong><br>${trans.original.substring(0, 400)}${trans.original.length > 400 ? '...' : ''}</div>
+                        <div class="translation-box">
+                            <div class="translation-option" data-api="gemini" data-index="${i}" onclick="selectTranslation(${i}, 'gemini')">
+                                <span class="api-badge badge-gemini">Gemini</span>
+                                <p>${geminiTranslation.substring(0, 300)}${geminiTranslation.length > 300 ? '...' : ''}</p>
+                            </div>
+                            <div class="translation-option" data-api="mymemory" data-index="${i}" onclick="selectTranslation(${i}, 'mymemory')">
+                                <span class="api-badge badge-mymemory">MyMemory</span>
+                                <p>${myMemoryTranslation.substring(0, 300)}${myMemoryTranslation.length > 300 ? '...' : ''}</p>
+                            </div>
+                        </div>
+                    </div>
+                `);
+                
+                updateStats();
+            }
+
+            document.getElementById('previewContent').innerHTML = previewHtml.join('');
+            document.getElementById('preview').style.display = 'block';
+
+            if (end < allTranslations.length) {
+                document.getElementById('continueBtn').style.display = 'inline-block';
+                document.getElementById('stopBtn').style.display = 'inline-block';
+                currentBatchIndex = end;
+            } else {
+                log('\n✅ همه ترجمه‌ها انجام شد! در حال ذخیره انتخاب‌ها...', 'success');
+                await saveAllToGitHub(token, user, repo);
+            }
+        }
+
+        function selectTranslation(index, api) {
+            const trans = allTranslations[index];
+            
+            // اگر قبلاً انتخاب شده بود، لغو کن
+            if (trans.selected === api) {
+                trans.selected = null;
+                selectedCount[api]--;
+            } else {
+                // اگر قبلاً API دیگری انتخاب شده بود، آن را لغو کن
+                if (trans.selected) {
+                    selectedCount[trans.selected]--;
+                }
+                trans.selected = api;
+                selectedCount[api]++;
+            }
+            
+            // به‌روزرسانی ظاهر
+            const item = document.querySelector(`.preview-item[data-index="${index}"]`);
+            item.querySelectorAll('.translation-option').forEach(opt => {
+                opt.classList.remove('selected', 'rejected');
+            });
+            
+            if (trans.selected) {
+                item.querySelector(`.translation-option[data-api="${trans.selected}"]`).classList.add('selected');
+                const otherApi = trans.selected === 'gemini' ? 'mymemory' : 'gemini';
+                item.querySelector(`.translation-option[data-api="${otherApi}"]`).classList.add('rejected');
+            }
+            
+            updateStats();
+            log(`  ✓ ${trans.packId} - ${trans.type}: ${api} انتخاب شد`, 'success');
+        }
+
+        async function continueBatch() {
+            const token = document.getElementById('token').value.trim();
+            const geminiKey = document.getElementById('geminiKey').value.trim();
+            const user = "temsahak-rgb";
+            const repo = "Dino-5monde";
+
+            document.getElementById('continueBtn').disabled = true;
+            document.getElementById('preview').style.display = 'none';
+            
+            await translateBatchDual(currentBatchIndex, 10, geminiKey, token, user, repo);
+            
+            document.getElementById('continueBtn').disabled = false;
+        }
+
+        async function saveAllToGitHub(token, user, repo) {
+            log('\n💾 ذخیره انتخاب‌ها در GitHub...', 'info');
+            
+            const fileChanges = {};
+            for (const trans of allTranslations) {
+                if (!trans.selected) continue;
+                if (!fileChanges[trans.path]) {
+                    fileChanges[trans.path] = { sha: trans.sha, changes: [] };
+                }
+                fileChanges[trans.path].changes.push(trans);
+            }
+
+            let savedCount = 0;
+
+            for (const [path, data] of Object.entries(fileChanges)) {
+                try {
+                    const file = await githubGet(path, token, user, repo);
+                    const pack = JSON.parse(decodeURIComponent(escape(atob(file.content))));
+                    
+                    for (const change of data.changes) {
+                        const translated = change.selected === 'gemini' ? change.gemini : change.mymemory;
+                        
+                        if (change.type === 'text_fa') {
+                            pack.stories[change.storyKey].text_fa = translated;
+                        } else if (change.type === 'title_fa') {
+                            pack.stories[change.storyKey].title_fa = translated;
+                        } else if (change.type === 'paragraph_fa') {
+                            pack.stories[change.storyKey].paragraphs[change.paraIndex].fa = translated;
+                        }
+                    }
+                    
+                    await githubPut(path, JSON.stringify(pack, null, 2), file.sha, token, user, repo, `🤖 dual-translate: ${path}`);
+                    savedCount++;
+                    log(`  ✅ ${path}`, 'success');
+                } catch (e) {
+                    log(`  ❌ خطا در ${path}: ${e.message}`, 'error');
+                }
+            }
+
+            log(`\n🎉 پایان! ${savedCount} فایل ذخیره شد.`, 'success');
+            log(`📊 آمار: ${selectedCount.gemini} Gemini | ${selectedCount.mymemory} MyMemory`, 'success');
+            
+            document.getElementById('continueBtn').style.display = 'none';
+            document.getElementById('stopBtn').style.display = 'none';
+            document.getElementById('startBtn').disabled = false;
+        }
+
+        function stopTranslation() {
+            shouldStop = true;
+            log('⏹ توقف - در حال ذخیره انتخاب‌ها...', 'warning');
+            
+            const token = document.getElementById('token').value.trim();
+            const user = "temsahak-rgb";
+            const repo = "Dino-5monde";
+            
+            saveAllToGitHub(token, user, repo);
+        }
+
+        window.onload = function() {
+            if (localStorage.getItem('dino_token')) document.getElementById('token').value = localStorage.getItem('dino_token');
+            if (localStorage.getItem('dino_gemini')) document.getElementById('geminiKey').value = localStorage.getItem('dino_gemini');
+        };
+    </script>
+</body>
+</html>
