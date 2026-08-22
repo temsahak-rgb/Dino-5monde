@@ -39,22 +39,29 @@ async function renderNewsSection() {
 // ===============================
 // 📰 صفحه جزئیات خبر
 // ===============================
+// ===============================
+// 📰 صفحه جزئیات خبر (نسخه پیشرفته)
+// ===============================
 async function showNewsDetail(newsId) {
     const lang = localStorage.getItem("language") || "fr";
+    const userLevel = getPlacementResult() || "A1";
     
+    // تبدیل سطح به عدد برای مقایسه (A1=1, A2=2, B1=3, B2=4, C1=5, C2=6)
+    const levelMap = { "A1": 1, "A2": 2, "B1": 3, "B2": 4, "C1": 5, "C2": 6 };
+    const userLevelNum = levelMap[userLevel] || 1;
+
     try {
         const response = await fetch("./data/news/" + newsId + ".json?v=" + Date.now());
         if (!response.ok) throw new Error("News not found");
         const news = await response.json();
-        
+        const newsLevelNum = levelMap[news.level.split('-')[0]] || 1; // سطح پایه خبر
+
         let html = renderNavbar();
         html += `<div style="max-width:900px;margin:0 auto;padding:20px 16px 60px;">`;
         html += `<button class="back-btn" onclick="showHome()" style="margin-bottom:20px;">← ${lang === "fa" ? "بازگشت به خانه" : "Retour à l'accueil"}</button>`;
         
-        // تصویر بزرگ
         html += `<img src="${news.image}" alt="${news.imageAlt || news.title}" style="width:100%;max-height:500px;object-fit:cover;border-radius:12px;margin-bottom:20px;">`;
         
-        // عنوان و متادیتا
         html += `<div style="display:flex;gap:10px;align-items:center;margin-bottom:15px;flex-wrap:wrap;">`;
         html += `<span style="background:#087F5B;color:#fff;padding:6px 12px;border-radius:6px;font-size:13px;font-weight:700;">${news.level}</span>`;
         html += `<span style="font-size:14px;color:#777;">📅 ${news.publishedDate}</span>`;
@@ -74,52 +81,101 @@ async function showNewsDetail(newsId) {
         html += `<div style="font-size:16px;line-height:1.9;color:#333;white-space:pre-line;">${news.content.fullText}</div>`;
         html += `</div>`;
         
-        // متن ساده (مخفی)
+        // متن ساده
         html += `<div id="news-simple-text" style="display:none;background:#f0f9ff;border:1px solid #087F5B;border-radius:8px;padding:30px;margin-bottom:30px;">`;
-        html += `<p style="font-size:13px;color:#087F5B;font-weight:700;margin:0 0 12px;">🌱 ${lang === "fa" ? "نسخه ساده‌شده (A1-B1)" : "Version simplifiée (A1-B1)"}</p>`;
+        html += `<p style="font-size:13px;color:#087F5B;font-weight:700;margin:0 0 12px;">🌱 ${lang === "fa" ? "نسخه ساده‌شده" : "Version simplifiée"}</p>`;
         html += `<div style="font-size:16px;line-height:1.9;color:#333;white-space:pre-line;">${news.content.simpleText}</div>`;
         html += `</div>`;
         
-        // واژگان
+        // --- بخش واژگان (با فیلتر سطح) ---
         if (news.content.vocabulary && news.content.vocabulary.length) {
-            html += `<h2 style="font-size:20px;font-weight:700;margin:30px 0 15px;">📚 ${lang === "fa" ? "واژگان کلیدی" : "Vocabulaire clé"}</h2>`;
-            html += `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;">`;
-            news.content.vocabulary.forEach(word => {
-                html += `<div style="background:#f9fafb;padding:12px 16px;border-radius:6px;border-right:4px solid #087F5B;">`;
-                html += `<p class="ltr-lock" style="font-weight:700;color:#1a1a1a;margin:0 0 4px;font-size:15px;">${word.fr}</p>`;
-                html += `<p class="persian-text" style="font-size:14px;color:#777;margin:0;">${word.fa}</p>`;
-                html += `</div>`;
+            // فیلتر: اگر سطح کلمه مشخص است و خیلی بالاتر از کاربر است، نشان نده
+            const filteredVocab = news.content.vocabulary.filter(v => {
+                if (!v.level) return true; // اگر سطح ندارد، نشان بده
+                const vLevelNum = levelMap[v.level] || 1;
+                return vLevelNum <= userLevelNum + 1; // حداکثر ۱ سطح بالاتر را نشان بده
             });
-            html += `</div>`;
+
+            if (filteredVocab.length > 0) {
+                html += `<details style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;margin-bottom:20px;overflow:hidden;">
+                    <summary style="padding:18px 24px;font-weight:700;color:#087F5B;cursor:pointer;background:#f9fafb;display:flex;justify-content:space-between;align-items:center;list-style:none;">
+                        <span>📚 ${lang === "fa" ? "واژگان کلیدی" : "Vocabulaire clé"}</span>
+                        <span style="font-size:18px;">▼</span>
+                    </summary>
+                    <div style="padding:0 24px 24px 24px;border-top:1px solid #e0e0e0;">
+                        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin-top:20px;">`;
+                
+                filteredVocab.forEach(word => {
+                    html += `<div style="background:#f9fafb;padding:12px 16px;border-radius:6px;border-right:4px solid #087F5B;">`;
+                    html += `<p class="ltr-lock" style="font-weight:700;color:#1a1a1a;margin:0 0 4px;font-size:15px;">${word.fr} ${word.level ? `<span style="font-size:11px;background:#e0e0e0;padding:2px 6px;border-radius:4px;color:#555;">${word.level}</span>` : ''}</p>`;
+                    html += `<p class="persian-text" style="font-size:14px;color:#777;margin:0;">${word.fa}</p>`;
+                    html += `</div>`;
+                });
+                html += `</div></div></details>`;
+            }
         }
         
-        // گرامر
+        // --- بخش گرامر (با فیلتر سطح و لینک خودکار) ---
         if (news.content.grammar && news.content.grammar.length) {
-            html += `<h2 style="font-size:20px;font-weight:700;margin:30px 0 15px;">📐 ${lang === "fa" ? "نکات گرامری" : "Points de grammaire"}</h2>`;
-            news.content.grammar.forEach((item, idx) => {
-                html += `<div style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:20px;margin-bottom:15px;">`;
-                html += `<h3 style="font-size:16px;font-weight:700;color:#087F5B;margin:0 0 10px;">${idx + 1}. ${item.title}</h3>`;
-                html += `<div class="ltr-lock" style="background:#f9fafb;padding:12px;border-radius:6px;margin:10px 0;font-size:15px;line-height:1.7;border-left:3px solid #087F5B;">${item.example}</div>`;
-                if (item.translation) {
-                    html += `<p class="persian-text" style="font-size:14px;color:#555;margin:10px 0;font-style:italic;">${item.translation}</p>`;
-                }
-                if (item.explanation) {
-                    html += `<p class="persian-text" style="font-size:14px;color:#777;margin:8px 0 0;">💡 ${item.explanation}</p>`;
-                }
-                html += `</div>`;
+            const filteredGrammar = news.content.grammar.filter(g => {
+                if (!g.level) return true;
+                const gLevelNum = levelMap[g.level] || 1;
+                return gLevelNum <= userLevelNum + 1;
             });
+
+            if (filteredGrammar.length > 0) {
+                html += `<details style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;margin-bottom:20px;overflow:hidden;">
+                    <summary style="padding:18px 24px;font-weight:700;color:#087F5B;cursor:pointer;background:#f9fafb;display:flex;justify-content:space-between;align-items:center;list-style:none;">
+                        <span>📐 ${lang === "fa" ? "نکات گرامری" : "Points de grammaire"}</span>
+                        <span style="font-size:18px;">▼</span>
+                    </summary>
+                    <div style="padding:0 24px 24px 24px;border-top:1px solid #e0e0e0;">`;
+                
+                filteredGrammar.forEach((item, idx) => {
+                    // ساخت لینک به درس گرامر اگر grammarId وجود داشته باشد
+                    let grammarLink = "";
+                    if (item.grammarId) {
+                        grammarLink = `<a href="#" onclick="showGrammarLesson('${item.grammarId}'); return false;" style="display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:#087F5B;text-decoration:none;background:#e8f5f0;padding:6px 12px;border-radius:6px;">🔗 ${lang === "fa" ? "مشاهده درس گرامر" : "Voir la leçon de grammaire"}</a>`;
+                    } else if (item.level) {
+                        grammarLink = `<p style="font-size:12px;color:#999;margin-top:10px;">${lang === "fa" ? "⚠️ این نکته برای سطح " + item.level + " است." : "⚠️ Ce point est pour le niveau " + item.level + "."}</p>`;
+                    }
+
+                    html += `<div style="background:#f9fafb;border:1px solid #e0e0e0;border-radius:8px;padding:20px;margin-bottom:15px;margin-top:20px;">`;
+                    html += `<h3 style="font-size:16px;font-weight:700;color:#1a1a1a;margin:0 0 10px;">${idx + 1}. ${item.title} ${item.level ? `<span style="font-size:12px;background:#087F5B;color:#fff;padding:2px 8px;border-radius:4px;margin-right:8px;">${item.level}</span>` : ''}</h3>`;
+                    html += `<div class="ltr-lock" style="background:#fff;padding:12px;border-radius:6px;margin:10px 0;font-size:15px;line-height:1.7;border-left:3px solid #087F5B;font-style:italic;">${item.example}</div>`;
+                    if (item.translation) {
+                        html += `<p class="persian-text" style="font-size:14px;color:#555;margin:10px 0;">${item.translation}</p>`;
+                    }
+                    if (item.explanation) {
+                        html += `<p class="persian-text" style="font-size:14px;color:#777;margin:8px 0 0;">💡 ${item.explanation}</p>`;
+                    }
+                    html += grammarLink;
+                    html += `</div>`;
+                });
+                html += `</div></details>`;
+            } else {
+                // اگر همه نکات گرامری فیلتر شدند
+                html += `<div style="background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:16px;margin-bottom:20px;text-align:center;color:#92400e;">
+                    ${lang === "fa" ? "💡 نکات گرامری این متن برای سطح فعلی شما پیشرفته است و پنهان شده‌اند." : "💡 Les points de grammaire de ce texte sont trop avancés pour votre niveau et ont été masqués."}
+                </div>`;
+            }
         }
         
         // منابع
         if (news.sources && news.sources.length) {
-            html += `<h2 style="font-size:20px;font-weight:700;margin:30px 0 15px;">📖 ${lang === "fa" ? "منابع" : "Sources"}</h2>`;
-            html += `<div style="display:flex;flex-direction:column;gap:10px;">`;
+            html += `<details style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;margin-bottom:20px;overflow:hidden;">
+                <summary style="padding:18px 24px;font-weight:700;color:#1a1a1a;cursor:pointer;background:#f9fafb;display:flex;justify-content:space-between;align-items:center;list-style:none;">
+                    <span>📖 ${lang === "fa" ? "منابع" : "Sources"}</span>
+                    <span style="font-size:18px;">▼</span>
+                </summary>
+                <div style="padding:0 24px 24px 24px;border-top:1px solid #e0e0e0;">
+                    <div style="display:flex;flex-direction:column;gap:10px;margin-top:20px;">`;
             news.sources.forEach(source => {
                 html += `<a href="${source.url}" target="_blank" style="padding:12px 16px;background:#fff;border:1px solid #e0e0e0;border-radius:6px;color:#087F5B;text-decoration:none;font-weight:600;display:flex;justify-content:space-between;align-items:center;">`;
                 html += `<span>${source.title}</span><span>↗</span>`;
                 html += `</a>`;
             });
-            html += `</div>`;
+            html += `</div></div></details>`;
         }
         
         html += `</div>`;
@@ -135,6 +191,23 @@ async function showNewsDetail(newsId) {
     }
 }
 
+// تابع تغییر متن (همان قبلی)
+function switchNewsText(mode) {
+    const fullDiv = document.getElementById("news-full-text");
+    const simpleDiv = document.getElementById("news-simple-text");
+    const btnFull = document.getElementById("btn-full");
+    const btnSimple = document.getElementById("btn-simple");
+    if (!fullDiv || !simpleDiv) return;
+    if (mode === "full") {
+        fullDiv.style.display = "block"; simpleDiv.style.display = "none";
+        btnFull.style.background = "#087F5B"; btnFull.style.color = "#fff"; btnFull.style.borderColor = "#087F5B";
+        btnSimple.style.background = "#fff"; btnSimple.style.color = "#1a1a1a"; btnSimple.style.borderColor = "#e0e0e0";
+    } else {
+        fullDiv.style.display = "none"; simpleDiv.style.display = "block";
+        btnSimple.style.background = "#087F5B"; btnSimple.style.color = "#fff"; btnSimple.style.borderColor = "#087F5B";
+        btnFull.style.background = "#fff"; btnFull.style.color = "#1a1a1a"; btnFull.style.borderColor = "#e0e0e0";
+    }
+}
 // ===============================
 // 🔄 تغییر بین متن کامل و ساده
 // ===============================
