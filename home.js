@@ -1,4 +1,43 @@
 // ===============================
+// 📊 توابع نظرسنجی
+// ===============================
+function votePoll(newsId, choice) {
+    const lang = localStorage.getItem("language") || "fr";
+    
+    // ذخیره رای
+    localStorage.setItem("dino_poll_voted_" + newsId, "true");
+    localStorage.setItem("dino_poll_choice_" + newsId, choice);
+    
+    // افزایش شمارنده
+    const currentCount = parseInt(localStorage.getItem("dino_poll_" + newsId + "_" + choice) || "0");
+    localStorage.setItem("dino_poll_" + newsId + "_" + choice, currentCount + 1);
+    
+    // افزایش مجموع آرا
+    const totalVotes = parseInt(localStorage.getItem("dino_poll_total_" + newsId) || "0");
+    localStorage.setItem("dino_poll_total_" + newsId, totalVotes + 1);
+    
+    // رفرش صفحه اصلی
+    showHome();
+}
+
+function resetPoll(newsId) {
+    // حذف رای قبلی
+    const previousChoice = localStorage.getItem("dino_poll_choice_" + newsId);
+    if (previousChoice) {
+        const previousCount = parseInt(localStorage.getItem("dino_poll_" + newsId + "_" + previousChoice) || "1");
+        localStorage.setItem("dino_poll_" + newsId + "_" + previousChoice, Math.max(0, previousCount - 1));
+        
+        const totalVotes = parseInt(localStorage.getItem("dino_poll_total_" + newsId) || "1");
+        localStorage.setItem("dino_poll_total_" + newsId, Math.max(0, totalVotes - 1));
+    }
+    
+    localStorage.removeItem("dino_poll_voted_" + newsId);
+    localStorage.removeItem("dino_poll_choice_" + newsId);
+    
+    showHome();
+}
+
+// ===============================
 // 📰 بخش اخبار (نسخه امن و ضدخطا)
 // ===============================
 async function renderNewsSection() {
