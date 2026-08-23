@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 ربات تبدیل HTML به درس Travel (نسخه ۲)</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: Tahoma; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; margin: 0; }
+        .container { max-width: 1100px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+        h1 { color: #087F5B; text-align: center; margin-bottom: 5px; }
+        .subtitle { text-align: center; color: #777; margin-bottom: 25px; font-size: 14px; }
+        .setup { background: #f0f9ff; border: 2px solid #087F5B; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .setup h3 { margin-top: 0; color: #087F5B; }
+        label { display: block; margin: 12px 0 6px; font-weight: bold; color: #333; }
+        input, select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; font-family: inherit; }
+        .row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; }
+        .btn { background: #087F5B; color: white; border: none; padding: 14px 24px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; width: 100%; margin-top: 10px; transition: 0.2s; }
+        .btn:hover:not(:disabled) { background: #066b4c; transform: translateY(-2px); }
+        .btn:disabled { background: #ccc; cursor: not-allowed; }
+        .btn-secondary { background: #2563eb; }
+        .log { background: #1a1a1a; color: #00ff00; padding: 15px; border-radius: 8px; margin-top: 20px; max-height: 400px; overflow-y: auto; font-family: monospace; font-size: 13px; line-height: 1.6; }
+        .log-success { color: #00ff00; } .log-error { color: #ff4444; } .log-info { color: #44aaff; } .log-warning { color: #ffaa00; }
+        .help { background: #fffbeb; border: 1px solid #fde68a; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 14px; }
+        .file-upload { border: 2px dashed #087F5B; border-radius: 8px; padding: 30px; text-align: center; background: #f0f9ff; cursor: pointer; transition: all 0.2s; }
+        .file-upload:hover { background: #e0f2fe; border-color: #066b4c; }
+        .file-upload input { display: none; }
+        .section-preview { background: #f9fafb; border: 2px solid #087F5B; border-radius: 8px; padding: 20px; margin-bottom: 15px; }
+        .section-title-preview { font-size: 18px; font-weight: 700; color: #087F5B; margin: 0 0 15px; border-bottom: 2px solid #087F5B; padding-bottom: 8px; }
+        .word-card { background: white; border: 1px solid #e0e0e0; border-radius: 6px; padding: 12px; margin-bottom: 8px; display: grid; grid-template-columns: 2fr 2fr 2fr auto; gap: 10px; align-items: center; }
+        .word-card input { padding: 8px; font-size: 13px; }
+        .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 15px 0; }
+        .stat-box { background: #f0f9ff; padding: 12px; border-radius: 6px; text-align: center; border: 1px solid #087F5B; }
+        .stat-value { font-size: 22px; font-weight: bold; color: #087F5B; }
+        .stat-label { font-size: 11px; color: #777; margin-top: 4px; }
+        .tip-preview { background: #fffbeb; border: 1px solid #fde68a; border-radius: 6px; padding: 12px; margin-bottom: 8px; }
+        .tip-type { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; margin-bottom: 6px; }
+        .tip-type-tip { background: #dbeafe; color: #1e40af; }
+        .tip-type-warning { background: #fee2e2; color: #991b1b; }
+        .tip-type-note { background: #e0e7ff; color: #3730a3; }
+        .tip-type-comparison { background: #d1fae5; color: #065f46; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 ربات تبدیل HTML به درس Travel</h1>
+        <p class="subtitle">استخراج خودکار مینی‌درس‌ها، توصیه‌ها و کادرهای اطلاعات از فایل HTML</p>
+
+        <div class="help">
+            <strong>✨ این ربات چه می‌کند؟</strong><br>
+            ✅ فایل HTML را آپلود می‌کنی<br>
+            ✅ از <code>h1</code>, <code>h2</code> عنوان و شناسه را خودکار استخراج می‌کند<br>
+            ✅ هر <code>section-title</code> را به یک مینی‌درس واژگان تبدیل می‌کند<br>
+            ✅ <code>tip-title</code>, <code>warning-title</code>, <code>note-title</code>, <code>comparison-title</code> را به کادرهای توصیه تبدیل می‌کند<br>
+            ✅ <code>bilingual</code> را نادیده می‌گیرد (چون متن دو زبانه است)<br>
+            ✅ JSON می‌سازد و در <code>data/travel/</code> ذخیره می‌کند
+        </div>
+
+        <div class="setup">
+            <h3>⚙️ تنظیمات</h3>
+            <div class="row">
+                <div>
+                    <label>GitHub Token:</label>
+                    <input type="password" id="token" placeholder="ghp_...">
+                </div>
+                <div>
+                    <label>نام کاربری:</label>
+                    <input type="text" id="username" value="temsahak-rgb">
+                </div>
+                <div>
+                    <label>نام مخزن:</label>
+                    <input type="text" id="repo" value="Dino-5monde">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px;">
+                <div>
+                    <label>ایموجی:</label>
+                    <input type="text" id="icon" placeholder="📱">
+                </div>
+                <div>
+                    <label>زمان تخمینی (دقیقه):</label>
+                    <input type="number" id="estimatedTime" value="25">
+                </div>
+                <div></div>
+            </div>
+
+            <label style="margin-top: 15px;">📄 فایل HTML را آپلود کن:</label>
+            <div class="file-upload" onclick="document.getElementById('fileInput').click()">
+                <input type="file" id="fileInput" accept=".html,.htm" onchange="handleFileUpload(event)">
+                <p style="font-size: 16px; color: #087F5B; margin: 0;">📁 کلیک کن یا فایل را بکش و رها کن</p>
+                <p style="font-size: 13px; color: #777; margin: 8px 0 0;" id="fileName">فایلی انتخاب نشده</p>
+            </div>
+
+            <button class="btn" onclick="processFile()" id="processBtn" disabled>🔍 پردازش فایل و استخراج مینی‌درس‌ها</button>
+        </div>
+
+        <div id="previewSection" style="display:none;">
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-value" id="statSections">0</div>
+                    <div class="stat-label">مینی‌درس</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="statWords">0</div>
+                    <div class="stat-label">کل کلمات</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="statTips">0</div>
+                    <div class="stat-label">توصیه/نکته</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-value" id="statTime">0</div>
+                    <div class="stat-label">دقیقه</div>
+                </div>
+            </div>
+
+            <h3 style="color: #087F5B; margin: 20px 0 10px;">📋 مینی‌درس‌های استخراج‌شده:</h3>
+            <div id="sectionsPreview"></div>
+
+            <button class="btn btn-secondary" onclick="saveToGitHub()">💾 ساخت JSON و ذخیره در GitHub</button>
+            <button class="btn" style="background: #6b7280;" onclick="downloadJSON()">📥 دانلود JSON</button>
+        </div>
+
+        <div class="log" id="log"></div>
+    </div>
+
+    <script>
+        let extractedSections = [];
+        let generatedJSON = null;
+        let lessonMeta = {};
+
+        function log(msg, type = 'info') {
+            const logDiv = document.getElementById('log');
+            const time = new Date().toLocaleTimeString('fa-IR');
+            logDiv.innerHTML += `<div class="log-${type}">[${time}] ${msg}</div>`;
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                document.getElementById('fileName').textContent = `✅ ${file.name}`;
+                document.getElementById('processBtn').disabled = false;
+                log(`✅ فایل انتخاب شد: ${file.name}`, 'success');
+            }
+        }
+
+        async function processFile() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            
+            if (!file) {
+                log('❌ فایلی انتخاب نشده', 'error');
+                return;
+            }
+
+            log('🔍 در حال پردازش فایل...', 'info');
+            
+            const html = await file.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            // استخراج عنوان‌ها
+            const h1 = doc.querySelector('h1');
+            const h2 = doc.querySelector('h2');
+            const h3 = doc.querySelector('h3');
+
+            if (!h1 || !h2) {
+                log('❌ h1 یا h2 پیدا نشد', 'error');
+                return;
+            }
+
+            lessonMeta = {
+                title: h1.textContent.trim(),
+                title_fa: h2.textContent.trim(),
+                topic: h3 ? h3.textContent.trim() : '',
+                id: generateId(h1.textContent.trim())
+            };
+
+            log(`✅ عنوان فرانسوی: ${lessonMeta.title}`, 'success');
+            log(`✅ عنوان فارسی: ${lessonMeta.title_fa}`, 'success');
+            if (lessonMeta.topic) log(`✅ موضوع: ${lessonMeta.topic}`, 'success');
+            log(`✅ شناسه: ${lessonMeta.id}`, 'success');
+
+            // استخراج مینی‌درس‌ها
+            extractedSections = [];
+            
+            // پیدا کردن همه section-title ها
+            const sectionTitles = doc.querySelectorAll('.section-title');
+            
+            sectionTitles.forEach((titleEl, idx) => {
+                const title = titleEl.textContent.trim();
+                const words = extractWordsUntilNextSection(titleEl);
+                
+                if (words.length > 0) {
+                    extractedSections.push({
+                        id: `section-${idx + 1}`,
+                        title: title,
+                        type: 'vocab',
+                        words: words
+                    });
+                    log(`  📚 مینی‌درس ${idx + 1}: "${title}" - ${words.length} کلمه`, 'info');
+                }
+            });
+
+            // پیدا کردن tip/warning/note/comparison
+            const tipTypes = [
+                { class: 'tip-title', type: 'tip' },
+                { class: 'warning-title', type: 'warning' },
+                { class: 'note-title', type: 'note' },
+                { class: 'comparison-title', type: 'comparison' }
+            ];
+
+            tipTypes.forEach(({ class: className, type }) => {
+                const tips = doc.querySelectorAll(`.${className}`);
+                tips.forEach((tipEl, idx) => {
+                    const tipData = extractTipContent(tipEl, type);
+                    if (tipData) {
+                        extractedSections.push({
+                            id: `${type}-${idx + 1}`,
+                            type: 'tips',
+                            tips: [tipData]
+                        });
+                        log(`  💡 ${type}: "${tipData.title_fa || tipData.title_fr}"`, 'info');
+                    }
+                });
+            });
+
+            if (extractedSections.length === 0) {
+                log('❌ هیچ مینی‌درسی پیدا نشد', 'error');
+                return;
+            }
+
+            log(`\n✅ ${extractedSections.length} مینی‌درس استخراج شد!`, 'success');
+            renderPreview();
+        }
+
+        function generateId(title) {
+            return title
+                .toLowerCase()
+                .replace(/[^\w\s-]/g, '')
+                .replace(/\s+/g, '-')
+                .replace(/-+/g, '-')
+                .trim();
+        }
+
+        function extractWordsUntilNextSection(startEl) {
+            const words = [];
+            let currentEl = startEl.nextElementSibling;
+            
+            while (currentEl) {
+                // اگر به section-title بعدی رسیدیم، متوقف شو
+                if (currentEl.classList.contains('section-title')) break;
+                
+                // اگر به tip/warning/note/comparison رسیدیم، متوقف شو
+                if (currentEl.classList.contains('tip-title') ||
+                    currentEl.classList.contains('warning-title') ||
+                    currentEl.classList.contains('note-title') ||
+                    currentEl.classList.contains('comparison-title')) break;
+                
+                // اگر bilingual است، نادیده بگیر
+                if (currentEl.classList.contains('bilingual')) {
+                    currentEl = currentEl.nextElementSibling;
+                    continue;
+                }
+                
+                // اگر جدول است
+                if (currentEl.tagName === 'TABLE') {
+                    const rows = currentEl.querySelectorAll('tr');
+                    rows.forEach(row => {
+                        const cells = row.querySelectorAll('td');
+                        if (cells.length >= 3) {
+                            const col1 = cells[0].textContent.trim();
+                            const col2 = cells[1].textContent.trim();
+                            const col3 = cells[2].textContent.trim();
+                            
+                            // تشخیص ترتیب ستون‌ها
+                            let fr, fa, phonetic;
+                            
+                            if (/[a-zA-ZÀ-ÿ]/.test(col3) && !/[a-zA-ZÀ-ÿ]/.test(col1)) {
+                                fa = col1;
+                                phonetic = col2;
+                                fr = col3;
+                            } else if (/[a-zA-ZÀ-ÿ]/.test(col1) && !/[a-zA-ZÀ-ÿ]/.test(col3)) {
+                                fr = col1;
+                                phonetic = col2;
+                                fa = col3;
+                            } else {
+                                return;
+                            }
+                            
+                            fr = fr.replace(/\*\*/g, '').trim();
+                            fa = fa.replace(/\*\*/g, '').trim();
+                            phonetic = phonetic.replace(/\*\*/g, '').trim();
+                            
+                            if (fr.length < 2 || fa.length < 1) return;
+                            if (fr.includes('|') || fa.includes('|')) return;
+                            if (fr.toLowerCase().includes('français') || fa.includes('ترجمه')) return;
+                            
+                            words.push({
+                                fr: fr,
+                                fa: fa,
+                                phonetic: phonetic,
+                                emoji: guessEmoji(fr)
+                            });
+                        }
+                    });
+                }
+                
+                currentEl = currentEl.nextElementSibling;
+            }
+            
+            return words;
+        }
+
+        function extractTipContent(tipEl, type) {
+            const title = tipEl.textContent.trim();
+            let contentFr = '';
+            let contentFa = '';
+            
+            // پیدا کردن محتوای بعد از title
+            let currentEl = tipEl.nextElementSibling;
+            while (currentEl && !currentEl.classList.contains('section-title') &&
+                   !currentEl.classList.contains('tip-title') &&
+                   !currentEl.classList.contains('warning-title') &&
+                   !currentEl.classList.contains('note-title') &&
+                   !currentEl.classList.contains('comparison-title')) {
+                
+                if (currentEl.classList.contains('bilingual')) {
+                    const frP = currentEl.querySelector('p[lang="fr"]') || currentEl.querySelector('p:first-child');
+                    const faP = currentEl.querySelector('p[lang="fa"]') || currentEl.querySelector('p:last-child');
+                    
+                    if (frP) contentFr = frP.textContent.trim();
+                    if (faP) contentFa = faP.textContent.trim();
+                }
+                
+                currentEl = currentEl.nextElementSibling;
+            }
+            
+            if (!contentFr && !contentFa) return null;
+            
+            return {
+                type: type,
+                title_fr: title,
+                title_fa: title,
+                content_fr: contentFr,
+                content_fa: contentFa,
+                icon: type === 'tip' ? '💡' : type === 'warning' ? '⚠️' : type === 'note' ? '📝' : '🔄'
+            };
+        }
+
+        function guessEmoji(fr) {
+            const lower = fr.toLowerCase();
+            const map = {
+                'pain': '🍞', 'baguette': '🥖', 'croissant': '🥐', 'brioche': '🥐',
+                'beurre': '🧈', 'confiture': '🍓', 'miel': '🍯', 'fromage': '🧀',
+                'yaourt': '🥣', 'œuf': '🥚', 'omelette': '🍳', 'jambon': '🥓',
+                'café': '☕', 'thé': '🍵', 'lait': '🥛', 'eau': '💧',
+                'jus': '🧃', 'fruit': '🍎', 'pomme': '🍎', 'banane': '🍌',
+                'orange': '🍊', 'fraise': '🍓', 'tasse': '☕', 'verre': '🥃',
+                'assiette': '🍽️', 'cuillère': '🥄', 'fourchette': '🍴', 'couteau': '🔪'
+            };
+            for (const [key, emoji] of Object.entries(map)) {
+                if (lower.includes(key)) return emoji;
+            }
+            return '📝';
+        }
+
+        function renderPreview() {
+            const preview = document.getElementById('sectionsPreview');
+            let html = '';
+            
+            extractedSections.forEach((section, sIdx) => {
+                html += `<div class="section-preview">`;
+                
+                if (section.type === 'vocab') {
+                    html += `<h3 class="section-title-preview">${section.title}</h3>`;
+                    html += `<p style="font-size:13px;color:#777;margin:0 0 12px;">${section.words.length} کلمه</p>`;
+                    
+                    section.words.forEach((word, wIdx) => {
+                        html += `<div class="word-card">
+                            <div><input type="text" value="${word.fr}" onchange="extractedSections[${sIdx}].words[${wIdx}].fr=this.value" placeholder="فرانسوی"></div>
+                            <div><input type="text" value="${word.fa}" onchange="extractedSections[${sIdx}].words[${wIdx}].fa=this.value" placeholder="فارسی"></div>
+                            <div><input type="text" value="${word.phonetic}" onchange="extractedSections[${sIdx}].words[${wIdx}].phonetic=this.value" placeholder="تلفظ"></div>
+                            <div><input type="text" value="${word.emoji}" onchange="extractedSections[${sIdx}].words[${wIdx}].emoji=this.value" style="width: 50px; text-align: center;" placeholder="📝"></div>
+                        </div>`;
+                    });
+                } else if (section.type === 'tips') {
+                    const tip = section.tips[0];
+                    const typeClass = `tip-type-${tip.type}`;
+                    const typeLabel = tip.type === 'tip' ? '💡 توصیه' : tip.type === 'warning' ? '⚠️ هشدار' : tip.type === 'note' ? '📝 نکته' : '🔄 مقایسه';
+                    
+                    html += `<div class="tip-preview">`;
+                    html += `<span class="tip-type ${typeClass}">${typeLabel}</span>`;
+                    html += `<h4 style="margin: 8px 0; color: #1a1a1a;">${tip.title_fa || tip.title_fr}</h4>`;
+                    if (tip.content_fr) html += `<p class="ltr-lock" style="font-size: 14px; color: #333; margin: 8px 0;">${tip.content_fr}</p>`;
+                    if (tip.content_fa) html += `<p class="persian-text" style="font-size: 13px; color: #777; margin: 8px 0;">${tip.content_fa}</p>`;
+                    html += `</div>`;
+                }
+                
+                html += `</div>`;
+            });
+            
+            preview.innerHTML = html;
+            document.getElementById('previewSection').style.display = 'block';
+            
+            const totalWords = extractedSections.filter(s => s.type === 'vocab').reduce((sum, s) => sum + s.words.length, 0);
+            const totalTips = extractedSections.filter(s => s.type === 'tips').length;
+            
+            document.getElementById('statSections').textContent = extractedSections.filter(s => s.type === 'vocab').length;
+            document.getElementById('statWords').textContent = totalWords;
+            document.getElementById('statTips').textContent = totalTips;
+            document.getElementById('statTime').textContent = document.getElementById('estimatedTime').value;
+        }
+
+        function buildJSON() {
+            return {
+                id: lessonMeta.id,
+                title: lessonMeta.title,
+                title_fa: lessonMeta.title_fa,
+                topic: lessonMeta.topic,
+                icon: document.getElementById('icon').value || '📝',
+                estimatedTime: parseInt(document.getElementById('estimatedTime').value),
+                miniLessons: extractedSections
+            };
+        }
+
+        async function saveToGitHub() {
+            const token = document.getElementById('token').value.trim();
+            const username = document.getElementById('username').value.trim();
+            const repo = document.getElementById('repo').value.trim();
+            
+            if (!token) {
+                log('❌ Token را وارد کن', 'error');
+                return;
+            }
+            
+            localStorage.setItem('dino_token', token);
+            localStorage.setItem('dino_username', username);
+            localStorage.setItem('dino_repo', repo);
+            
+            log('🔨 در حال ساخت JSON...', 'info');
+            generatedJSON = buildJSON();
+            
+            const content = JSON.stringify(generatedJSON, null, 2);
+            const path = `data/travel/${lessonMeta.id}.json`;
+            
+            log(`📤 ذخیره در: ${path}`, 'info');
+            
+            try {
+                let sha = null;
+                try {
+                    const checkRes = await fetch(`https://api.github.com/repos/${username}/${repo}/contents/${path}`, {
+                        headers: { 'Authorization': `token ${token}` }
+                    });
+                    if (checkRes.ok) {
+                        const existing = await checkRes.json();
+                        sha = existing.sha;
+                        log('📄 فایل موجود است، به‌روزرسانی می‌شود...', 'info');
+                    }
+                } catch (e) { /* فایل جدید */ }
+                
+                const saveRes = await fetch(`https://api.github.com/repos/${username}/${repo}/contents/${path}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `token ${token}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message: `🤖 Auto-generated travel lesson: ${lessonMeta.id}`,
+                        content: btoa(unescape(encodeURIComponent(content))),
+                        sha: sha
+                    })
+                });
+                
+                if (!saveRes.ok) {
+                    throw new Error(`HTTP ${saveRes.status}`);
+                }
+                
+                const totalWords = extractedSections.filter(s => s.type === 'vocab').reduce((sum, s) => sum + s.words.length, 0);
+                const totalTips = extractedSections.filter(s => s.type === 'tips').length;
+                
+                log(`✅ با موفقیت ذخیره شد: ${path}`, 'success');
+                log(`📊 ${extractedSections.filter(s => s.type === 'vocab').length} مینی‌درس + ${totalWords} کلمه + ${totalTips} توصیه`, 'success');
+                
+            } catch (e) {
+                log(`❌ خطا: ${e.message}`, 'error');
+            }
+        }
+
+        function downloadJSON() {
+            generatedJSON = buildJSON();
+            const content = JSON.stringify(generatedJSON, null, 2);
+            const blob = new Blob([content], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${lessonMeta.id}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+            log('💾 فایل دانلود شد', 'success');
+        }
+
+        window.onload = function() {
+            if (localStorage.getItem('dino_token')) document.getElementById('token').value = localStorage.getItem('dino_token');
+            if (localStorage.getItem('dino_username')) document.getElementById('username').value = localStorage.getItem('dino_username');
+            if (localStorage.getItem('dino_repo')) document.getElementById('repo').value = localStorage.getItem('dino_repo');
+        };
+    </script>
+</body>
+</html>
