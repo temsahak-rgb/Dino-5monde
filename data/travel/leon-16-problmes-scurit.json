@@ -1,0 +1,520 @@
+{
+  "id": "leon-16-problmes-scurit",
+  "title": "Leçon 16: Problèmes & sécurité",
+  "title_fa": "درس ۱۶: مشکلات و امنیت",
+  "topic": "پلیس، اشیاء گمشده، مشکلات اسناد و پر کردن فرم‌ها",
+  "icon": "📝",
+  "estimatedTime": 25,
+  "miniLessons": [
+    {
+      "id": "section-1",
+      "title": "۱) پلیس: گزارش شیء گمشده (Police : déclarer un objet perdu)",
+      "type": "vocab",
+      "words": [
+        {
+          "fr": "J'ai perdu mon portefeuille.",
+          "fa": "کیف پولم را گم کرده‌ام.",
+          "phonetic": "ژِ پِغدو مُن پُغتُفُی.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Mon téléphone portable a été volé.",
+          "fa": "تلفن همراهم دزدیده شده است.",
+          "phonetic": "مُن تِلِفُن پُغتَبل آ اِته وُله.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Je voudrais déclarer un objet perdu.",
+          "fa": "می‌خواهم یک شیء گمشده را گزارش کنم.",
+          "phonetic": "ژُ وودغِ دِکلَغه اَن اُبژِ پِغدو.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Où puis-je faire une déclaration de police ?",
+          "fa": "کجا می‌توانم یک گزارش پلیس تنظیم کنم؟",
+          "phonetic": "او پویی-ژُ فِغ اون دِکلَغَسیون دُ پُلیس؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Vous devez aller au commissariat.",
+          "fa": "باید به کلانتری بروید.",
+          "phonetic": "وو دُوِ اَله اُ کُمیسَغیَ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Vous pouvez faire une déclaration en ligne.",
+          "fa": "می‌توانید گزارش آنلاین ثبت کنید.",
+          "phonetic": "وو پووِ فِغ اون دِکلَغَسیون آن لینْیْ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Quand cela s'est produit ?",
+          "fa": "چه زمانی این اتفاق افتاد؟",
+          "phonetic": "کان سِ پغُدوی؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Vers quatre heures de l'après-midi.",
+          "fa": "حدود ساعت ۴ بعد از ظهر.",
+          "phonetic": "وِغ کَتغ اُغ دُ لَپغِ-میدی.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Où l'avez-vous perdu ?",
+          "fa": "کجا آن را گم کردید؟",
+          "phonetic": "او لَوِ-وو پِغدو؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Je pense dans le métro.",
+          "fa": "فکر می‌کنم در مترو.",
+          "phonetic": "ژُ پانس دان لُ مِتغُ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Pouvez-vous le décrire ?",
+          "fa": "می‌توانید آن را توصیف کنید؟",
+          "phonetic": "پووِ-وو لُ دِکغیغ؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Un portefeuille en cuir marron avec carte d'identité et cartes bancaires.",
+          "fa": "یک کیف پول چرمی قهوه‌ای با کارت شناسایی و کارت‌های بانکی.",
+          "phonetic": "اَن پُغتُفُی آن کویغ مَغُن اَوِک کَغت دیدانتیته اِ کَغت بانکِغ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Est-ce qu'il a un numéro de série ?",
+          "fa": "آیا شماره سریال دارد؟",
+          "phonetic": "اِسکیل آ اَن نومِغُ دُ سِغی؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Oui, voici le numéro.",
+          "fa": "بله، این شماره است.",
+          "phonetic": "وی، وواسی لُ نومِغُ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Vous devez remplir ce formulaire.",
+          "fa": "باید این فرم را پر کنید.",
+          "phonetic": "وو دُوِ غامپلیغ سُ فُغمولِغ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Voulez-vous une copie de la déclaration ?",
+          "fa": "آیا کپی گزارش را می‌خواهید؟",
+          "phonetic": "وولِ-وو اون کُپی دُ لَ دِکلَغَسیون؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Oui, j'en ai besoin pour l'assurance.",
+          "fa": "بله، برای بیمه نیاز دارم.",
+          "phonetic": "وی، ژآن اِ بُزوَن پوغ لَسوغانس.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "S'ils le trouvent, comment me contacteront-ils ?",
+          "fa": "اگر آن را پیدا کنند، چطور با من تماس می‌گیرند؟",
+          "phonetic": "سی اُن لُ تغوو، کُمان مُ کُنتَکتُغُن-تیل؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Nous vous contacterons au numéro que vous nous avez donné.",
+          "fa": "با شماره تلفنی که داده‌اید تماس می‌گیریم.",
+          "phonetic": "نو وو کُنتَکتُغُن اُ نومِغُ کُ وو نوزَوِ دُنه.",
+          "emoji": "📝"
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "۲) کلانتری کجاست؟ (Où est le commissariat ?)",
+      "type": "vocab",
+      "words": [
+        {
+          "fr": "Pardon, où est le commissariat le plus proche ?",
+          "fa": "ببخشید، کلانتری نزدیک کجاست؟",
+          "phonetic": "پَغدُن، او اِ لُ کُمیسَغیَ لُ پلو پغُش؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Est-ce qu'il y a des policiers dans les alentours ?",
+          "fa": "آیا در این نزدیکی پلیس هست؟",
+          "phonetic": "اِسکیل یَ دِ پُلیسیِ دان لُ کُنتوغ؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Allez tout droit, puis la première rue à gauche.",
+          "fa": "مستقیم بروید، سپس اولین خیابان سمت چپ.",
+          "phonetic": "اَله توت دغوا، پوی لَ پغُمیِغ غو آ گُش.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "C'est à environ cinq cents mètres d'ici.",
+          "fa": "حدود ۵۰۰ متر از اینجا فاصله دارد.",
+          "phonetic": "سِ آ آنویغُن سَنک سَن مِتغ دیسی.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Près de la station de métro.",
+          "fa": "در نزدیکی ایستگاه مترو.",
+          "phonetic": "پغِ دُ لَ اِستَسیون دُ مِتغُ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Est-ce qu'il est ouvert 24 heures sur 24 ?",
+          "fa": "آیا ۲۴ ساعته باز است؟",
+          "phonetic": "اِسکیل اِ اووِغ وَن-کَتغ اُغ سوغ وَن-کَتغ؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Oui, c'est le commissariat central.",
+          "fa": "بله، این کلانتری مرکزی است.",
+          "phonetic": "وی، سِ لُ کُمیسَغیَ سانتغَل.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Non, il ferme à huit heures du soir.",
+          "fa": "خیر، ساعت ۸ شب می‌بندد.",
+          "phonetic": "نُن، ایل فِغم آ ویت اُغ دو سواغ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Pouvez-vous me donner le numéro de téléphone du commissariat ?",
+          "fa": "آیا می‌توانید شماره تلفن کلانتری را به من بدهید؟",
+          "phonetic": "پووِ-وو مُ دُنه لُ نومِغُ دُ تِلِفُن دو کُمیسَغیَ؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Pour les urgences, appelez le dix-sept.",
+          "fa": "برای موارد اضطراری، با شماره ۱۷ تماس بگیرید.",
+          "phonetic": "پوغ لِ اوغژانس، اَپُله لُ دیس-سِت.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Voici le numéro de téléphone du commissariat.",
+          "fa": "شماره تلفن کلانتری این است.",
+          "phonetic": "وواسی لُ نومِغُ دُ تِلِفُن دو کُمیسَغیَ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Est-ce qu'il y a quelqu'un qui parle anglais là-bas ?",
+          "fa": "آیا آنجا کسی به انگلیسی صحبت می‌کند؟",
+          "phonetic": "اِسکیل یَ کِلکاَن کی پَغل آنگلِ لَ-بَ؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "En général oui, ne vous inquiétez pas.",
+          "fa": "معمولاً بله، نگران نباشید.",
+          "phonetic": "آن ژِنِغَل وی، نُ وو زَنکیِته پَ.",
+          "emoji": "📝"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "۳) مشکلات با اسناد (گذرنامه، چمدان) (Problèmes avec documents (passeport, valise))",
+      "type": "vocab",
+      "words": [
+        {
+          "fr": "J'ai perdu mon passeport.",
+          "fa": "گذرنامه‌ام را گم کرده‌ام.",
+          "phonetic": "ژِ پِغدو مُن پَسپُغ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Ma valise a été perdue.",
+          "fa": "چمدانم گم شده است.",
+          "phonetic": "مَ وَلیز آ اِته پِغدو.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Ma carte d'identité a été volée.",
+          "fa": "کارت شناسایی‌ام دزدیده شده است.",
+          "phonetic": "مَ کَغت دیدانتیته آ اِته وُله.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Vous devez contacter l'ambassade de votre pays.",
+          "fa": "باید به سفارت کشورتان مراجعه کنید.",
+          "phonetic": "وو دُوِ کُنتَکته لآمبَسَد دُ وُتغ پِی.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Où se trouve l'ambassade d'Iran ?",
+          "fa": "سفارت ایران کجاست؟",
+          "phonetic": "او سُ تغوو لآمبَسَد دیغان؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Vous devez demander un passeport provisoire.",
+          "fa": "باید یک گذرنامه موقت درخواست کنید.",
+          "phonetic": "وو دُوِ دُمانده اَن پَسپُغ پغُویزواغ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Quels documents me faut-il ?",
+          "fa": "چه مدارکی نیاز دارم؟",
+          "phonetic": "کِل دُکومان مُ فُ-تیل؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Des photos d'identité, la déclaration de police et une copie de vos pièces d'identité.",
+          "fa": "عکس پاسپورتی، گزارش پلیس و کپی مدارک شناسایی.",
+          "phonetic": "دِ فُتو دیدانتیته، لَ دِکلَغَسیون دُ پُلیس اِ اون کُپی دُ وُ پیِس دیدانتیته.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Combien de temps ça prend ?",
+          "fa": "چقدر طول می‌کشد؟",
+          "phonetic": "کُمبیَن دُ تام سَ پغان؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "En général deux à trois jours ouvrables.",
+          "fa": "معمولاً ۲ تا ۳ روز کاری.",
+          "phonetic": "آن ژِنِغَل دُ آ تغوا ژوغ اووغَبل.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Puis-je voyager avec ce document ?",
+          "fa": "آیا می‌توانم با این مدرک سفر کنم؟",
+          "phonetic": "پویی-ژُ وُیَژه اَوِک سُ دُکومان؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Oui, mais seulement pour retourner dans votre pays.",
+          "fa": "بله، اما فقط برای بازگشت به کشور خود.",
+          "phonetic": "وی، مِ سُلُمان پوغ غُتوغنه دان وُتغ پِی.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "J'ai oublié ma valise à l'aéroport.",
+          "fa": "چمدانم در فرودگاه جا مانده است.",
+          "phonetic": "ژِ اوبلیه مَ وَلیز آ لاِغُپُغ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Vous devez contacter le service des objets trouvés.",
+          "fa": "باید با بخش اشیاء گمشده تماس بگیرید.",
+          "phonetic": "وو دُوِ کُنتَکته لُ سِغویس دِ اُبژِ تغووه.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Avez-vous le numéro de vol et le code-barre de la valise ?",
+          "fa": "شماره پرواز و بارکد چمدان را دارید؟",
+          "phonetic": "اَوِ-وو لُ نومِغُ دُ وُل اِ لُ کُد-بَغ دُ لَ وَلیز؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Oui, le voici.",
+          "fa": "بله، اینجاست.",
+          "phonetic": "وی، لُ وواسی.",
+          "emoji": "📝"
+        }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "۴) پر کردن فرم (Remplir un formulaire)",
+      "type": "vocab",
+      "words": [
+        {
+          "fr": "Comment remplir ce formulaire ?",
+          "fa": "چگونه این فرم را پر کنم؟",
+          "phonetic": "کُمان غامپلیغ سُ فُغمولِغ؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Veuillez remplir ces parties, s'il vous plaît.",
+          "fa": "لطفاً این قسمت‌ها را پر کنید.",
+          "phonetic": "وُیِ غامپلیغ سِ پَغتی، سیل وو پلِ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Nom de famille",
+          "fa": "نام خانوادگی",
+          "phonetic": "نُم دُ فَمیی",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Prénom",
+          "fa": "نام کوچک",
+          "phonetic": "پغِنُم",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Date de naissance",
+          "fa": "تاریخ تولد",
+          "phonetic": "دَت دُ نِسانس",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Lieu de naissance",
+          "fa": "محل تولد",
+          "phonetic": "لیُ دُ نِسانس",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Nationalité",
+          "fa": "ملیت",
+          "phonetic": "نَسیونَلیته",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Numéro de passeport",
+          "fa": "شماره گذرنامه",
+          "phonetic": "نومِغُ دُ پَسپُغ",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Date d'émission",
+          "fa": "تاریخ صدور",
+          "phonetic": "دَت دِمیسیون",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Date d'expiration",
+          "fa": "تاریخ انقضا",
+          "phonetic": "دَت دِکسپیغَسیون",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Adresse en France",
+          "fa": "آدرس در فرانسه",
+          "phonetic": "آدغِس آن فغانس",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Adresse e-mail",
+          "fa": "آدرس ایمیل",
+          "phonetic": "آدغِس ایمِل",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Numéro de téléphone",
+          "fa": "شماره تلفن",
+          "phonetic": "نومِغُ دُ تِلِفُن",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Motif du voyage",
+          "fa": "هدف از سفر",
+          "phonetic": "مُتیف دو وُیَژ",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Durée du séjour",
+          "fa": "مدت اقامت",
+          "phonetic": "دوغه دو سِژوغ",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Veuillez écrire en lettres capitales, s'il vous plaît.",
+          "fa": "لطفاً با حروف بزرگ بنویسید.",
+          "phonetic": "وُیِ اِکغیغ آن لِتغ کَپیتَل، سیل وو پلِ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Veuillez signer, s'il vous plaît.",
+          "fa": "لطفاً امضا کنید.",
+          "phonetic": "وُیِ سینْیِ، سیل وو پلِ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Mettez la date d'aujourd'hui.",
+          "fa": "تاریخ امروز را بنویسید.",
+          "phonetic": "مِتِ لَ دَت دُژوغدوی.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Laissez cette partie vide.",
+          "fa": "این قسمت را خالی بگذارید.",
+          "phonetic": "لِسِ سِت پَغتی ویدُ.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Cette partie est réservée à l'administration.",
+          "fa": "این قسمت برای استفاده اداری است.",
+          "phonetic": "سِت پَغتی اِ غِزِغوه آ لَدمینیستغَسیون.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Dois-je fournir les documents originaux ?",
+          "fa": "آیا باید مدارک اصلی را ارائه دهم؟",
+          "phonetic": "دُوا-ژُ فوغنیغ لِ دُکومان اُغیژینُ؟",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Oui, avec une copie.",
+          "fa": "بله، به همراه یک کپی.",
+          "phonetic": "وی، اَوِک اون کُپی.",
+          "emoji": "📝"
+        },
+        {
+          "fr": "Non, une copie certifiée conforme suffit.",
+          "fa": "خیر، کپی برابر اصل کافی است.",
+          "phonetic": "نُن، اون کُپی سِغتیفیه کُنفُغم سوفی.",
+          "emoji": "📝"
+        }
+      ]
+    },
+    {
+      "id": "tip-1",
+      "type": "tips",
+      "tips": [
+        {
+          "type": "tip",
+          "title_fr": "نکته مفید:\n          Conseil utile:",
+          "title_fa": "نکته مفید:\n          Conseil utile:",
+          "content_fr": "در فرانسه، می‌توانید اشیاء گمشده را در سایت service-public.fr گزارش کنید. برای گزارش سرقت، باید شخصاً به کلانتری مراجعه کنید. همچنین، بسیاری از شهرهای بزرگ دفاتر اشیاء گمشده (Bureau des objets trouvés) دارند که معمولاً در شهرداری یا ایستگاه‌های اصلی قطار قرار دارند.",
+          "content_fa": "En France, vous pouvez signaler des objets perdus sur le site service-public.fr. Pour déclarer un vol, vous devez vous rendre personnellement au commissariat. De plus, de nombreuses grandes villes disposent de Bureaux des objets trouvés, généralement situés dans les mairies ou les principales gares.",
+          "icon": "💡"
+        }
+      ]
+    },
+    {
+      "id": "tip-2",
+      "type": "tips",
+      "tips": [
+        {
+          "type": "tip",
+          "title_fr": "راهنمای تکمیل فرم‌ها:\n          Guide pour remplir les formulaires:",
+          "title_fa": "راهنمای تکمیل فرم‌ها:\n          Guide pour remplir les formulaires:",
+          "content_fr": "۱. در فرانسه، تاریخ معمولاً به صورت روز/ماه/سال نوشته می‌شود (مثال: ۱۲/۰۹/۲۰۲۵).\n          ۲. نام خانوادگی را معمولاً با حروف بزرگ می‌نویسند (مثال: MOHAMMADI).\n          ۳. در فرم‌های رسمی، اگر مطمئن نیستید چگونه یک قسمت را پر کنید، از مسئول مربوطه سؤال کنید.\n          ۴. همیشه قبل از امضا، تمام فرم را با دقت بخوانید.\n          ۵. برای برخی فرم‌ها، ممکن است به ترجمه رسمی مدارک نیاز داشته باشید.",
+          "content_fa": "1. En France, les dates sont généralement écrites au format jour/mois/année (exemple : 12/09/2025).\n          2. Le nom de famille est généralement écrit en lettres majuscules (exemple : MOHAMMADI).\n          3. Dans les formulaires officiels, si vous n'êtes pas sûr de comment remplir une section, demandez à la personne responsable.\n          4. Lisez toujours attentivement tout le formulaire avant de signer.\n          5. Pour certains formulaires, vous pourriez avoir besoin de traductions officielles de vos documents.",
+          "icon": "💡"
+        }
+      ]
+    },
+    {
+      "id": "note-1",
+      "type": "tips",
+      "tips": [
+        {
+          "type": "note",
+          "title_fr": "نکته مهم:\n          Note importante:",
+          "title_fa": "نکته مهم:\n          Note importante:",
+          "content_fr": "همیشه کپی مدارک مهم خود (گذرنامه، کارت شناسایی، بلیط و...) را در مکانی جدا از اصل آن‌ها نگهداری کنید. همچنین، اسکن یا عکس این مدارک را در ایمیل یا فضای ابری خود ذخیره کنید تا در صورت گم شدن یا سرقت، به آن‌ها دسترسی داشته باشید. برای مسافران ایرانی، داشتن شماره تلفن و آدرس سفارت یا کنسولگری ایران در کشور مقصد بسیار مهم است.",
+          "content_fa": "Gardez toujours une copie de vos documents importants (passeport, carte d'identité, billets, etc.) séparément des originaux. De plus, enregistrez des scans ou des photos de ces documents dans votre e-mail ou cloud pour y accéder en cas de perte ou de vol. Pour les voyageurs iraniens, il est très important d'avoir le numéro de téléphone et l'adresse de l'ambassade ou du consulat d'Iran dans le pays de destination.",
+          "icon": "📝"
+        }
+      ]
+    },
+    {
+      "id": "note-2",
+      "type": "tips",
+      "tips": [
+        {
+          "type": "note",
+          "title_fr": "اصطلاحات مفید برای تکمیل فرم‌ها:\n          Termes utiles pour remplir les formulaires:",
+          "title_fa": "اصطلاحات مفید برای تکمیل فرم‌ها:\n          Termes utiles pour remplir les formulaires:",
+          "content_fr": "• Cochez la case: علامت بزنید در مربع\n          • Remplir en majuscules: با حروف بزرگ پر کنید\n          • Recto-verso: دو رو (پشت و رو)\n          • Pièce jointe: پیوست\n          • Justificatif de domicile: مدرک محل سکونت\n          • État civil: وضعیت مدنی (مجرد، متأهل و...)\n          • Situation professionnelle: وضعیت شغلی\n          • Personne à contacter en cas d'urgence: فرد برای تماس در موارد اضطراری",
+          "content_fa": "• Cochez la case: Marquez la case\n          • Remplir en majuscules: Remplir en lettres capitales\n          • Recto-verso: Les deux côtés (avant et arrière)\n          • Pièce jointe: Document attaché\n          • Justificatif de domicile: Preuve de résidence\n          • État civil: Statut civil (célibataire, marié, etc.)\n          • Situation professionnelle: Statut professionnel\n          • Personne à contacter en cas d'urgence: Personne à contacter en cas d'urgence",
+          "icon": "📝"
+        }
+      ]
+    }
+  ]
+}
