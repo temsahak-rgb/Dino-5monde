@@ -74,5 +74,6 @@ async function switchSection(section) {
         case 'games': showGamesPage(); break;
         case 'exercises': showExercisesPage(); break;
         case 'profile': showProfile(); break;
+        case 'travel': showTravelPage(); break;
     }
 }
