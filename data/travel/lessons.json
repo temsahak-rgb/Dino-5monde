@@ -1,66 +1,250 @@
 [
   {
-    "id": "TR-001",
-    "title": "L'alphabet",
-    "title_fa": "الفبا",
-    "icon": "🔤",
-    "estimatedTime": 10,
-    "module": "base"
-  },
-  {
-    "id": "TR-002",
-    "title": "Les nombres",
-    "title_fa": "اعداد",
-    "icon": "🔢",
-    "estimatedTime": 10,
-    "module": "base"
-  },
-  {
-    "id": "TR-003",
-    "title": "Petites conversations",
-    "title_fa": "گفت‌وگوهای کوتاه",
-    "icon": "💬",
-    "estimatedTime": 15,
-    "module": "base"
-  },
-  {
-    "id": "TR-004",
-    "title": "À l'aéroport",
-    "title_fa": "در فرودگاه",
-    "icon": "✈️",
-    "estimatedTime": 20,
-    "module": "transport"
-  },
-  {
     "id": "TR-006",
     "title": "À l'hôtel",
     "title_fa": "در هتل",
     "icon": "🏨",
     "estimatedTime": 15,
-    "module": "hebergement"
+    "module": "general"
   },
   {
-    "id": "TR-011",
-    "title": "Restaurants & cafés",
-    "title_fa": "رستوران‌ها و کافه‌ها",
-    "icon": "🍽️",
-    "estimatedTime": 20,
-    "module": "restauration"
+    "id": "leon-1-lalphabet",
+    "title": "Leçon 1 – L’alphabet",
+    "title_fa": "درس 1 – الفبا",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
   },
   {
-    "id": "TR-013",
-    "title": "Shopping",
-    "title_fa": "خرید",
-    "icon": "🛍️",
-    "estimatedTime": 20,
-    "module": "shopping"
+    "id": "leon-10-petit-djeuner-lhtel",
+    "title": "Leçon 10: Petit-déjeuner à l'hôtel",
+    "title_fa": "درس ۱۰: صبحانه در هتل",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
   },
   {
-    "id": "TR-017",
-    "title": "Santé & urgences",
-    "title_fa": "سلامت و موارد اضطراری",
-    "icon": "🏥",
-    "estimatedTime": 15,
-    "module": "urgences"
+    "id": "leon-11-restaurants-cafs",
+    "title": "Leçon 11: Restaurants & cafés",
+    "title_fa": "درس ۱۱: رستوران‌ها و کافه‌ها",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "leon-12-questions-dans-la-rue",
+    "title": "Leçon 12: Questions dans la rue",
+    "title_fa": "درس ۱۲: پرسش‌ها در خیابان",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "lesson-13-shopping",
+    "title": "Leçon 13: Shopping",
+    "title_fa": "درس ۱۳: خرید",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "leon-14-visites-tourisme",
+    "title": "Leçon 14: Visites & tourisme",
+    "title_fa": "درس ۱۴: بازدید و گردشگری",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "leon-15-acheter-des-cartes-postales-et-souvenirs",
+    "title": "Leçon 15: Acheter des cartes postales et souvenirs",
+    "title_fa": "درس ۱۵: خرید کارت پستال و سوغاتی",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "leon-16-problmes-scurit",
+    "title": "Leçon 16: Problèmes & sécurité",
+    "title_fa": "درس ۱۶: مشکلات و امنیت",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "leon-17-sant-urgences",
+    "title": "Leçon 17: Santé & urgences",
+    "title_fa": "درس ۱۷: سلامت و موارد اضطراری",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "leon-18-dpart-et-au-revoir",
+    "title": "Leçon 18: Départ et au revoir",
+    "title_fa": "درس ۱۸: عزیمت و خداحافظی",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "leon-2-les-nombres",
+    "title": "Leçon 2 – Les nombres",
+    "title_fa": "درس ۲ – اعداد",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "leon-3-petites-conversations-et-expressions-utiles",
+    "title": "Leçon 3 – Petites conversations et expressions utiles",
+    "title_fa": "درس۳: گفت‌وگوهای کوتاه و عبارت‌های ضروری",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "leon-4-laroport-contrle-frontire",
+    "title": "Leçon 4 – À l'aéroport & contrôle frontière",
+    "title_fa": "در فرودگاه و کنترل مرزی",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "leon-4-suite-wi-fi-problmes-de-bagages",
+    "title": "Leçon 4 (Suite) – Wi-Fi & Problèmes de bagages",
+    "title_fa": "بخش ۴ (ادامه) – وای‌فای و مشکلات چمدان",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "leon-5-transport-depuis-laroport",
+    "title": "Leçon 5 - Transport depuis l'aéroport",
+    "title_fa": "درس ۵ - حمل و نقل از فرودگاه",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "leon-6-lhtel",
+    "title": "Leçon 6: À l'hôtel",
+    "title_fa": "درس ۶: در هتل",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "leon-7-banque-bureau-de-change",
+    "title": "Leçon 7: Banque & Bureau de Change",
+    "title_fa": "درس ۷: بانک و صرافی",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "leon-9-mto-prparation-pour-sortir",
+    "title": "Leçon 9: Météo & préparation pour sortir",
+    "title_fa": "درس ۹: آب و هوا و آمادگی برای بیرون رفتن",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "lesson-8-telephone-internet",
+    "title": "Leçon 8 : Téléphone & Internet",
+    "title_fa": "درس ۸: تلفن و اینترنت",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "suite-leon-10-petit-djeuner-lhtel",
+    "title": "Suite Leçon 10: Petit-déjeuner à l'hôtel",
+    "title_fa": "ادامه درس ۱۰: صبحانه در هتل",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "suite-lesson-13-1-shopping-spcialis",
+    "title": "Suite Leçon 13-1: Shopping spécialisé",
+    "title_fa": "ادامه درس ۱۳-۱: خرید تخصصی",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "suite-leon-13-2-supermarch",
+    "title": "Suite Leçon 13-2: Supermarché",
+    "title_fa": "ادامه درس ۱۳-۲: سوپرمارکت",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "suite-leon-13-3-shopping-spcialis",
+    "title": "Suite Leçon 13-3: Shopping spécialisé",
+    "title_fa": "ادامه درس ۱۳-۳: خرید تخصصی",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "suite-leon-13-4-accessoires-services-de-rparation",
+    "title": "Suite Leçon 13-4: Accessoires & Services de réparation",
+    "title_fa": "ادامه درس ۱۳-۴: اکسسوری و خدمات تعمیرات",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "suite-leon-13-vente-dobjets-personnels-et-dantiquits",
+    "title": "Suite Leçon 13: Vente d'objets personnels et d'antiquités",
+    "title_fa": "ادامه درس ۱۳: فروش اشیاء شخصی و عتیقه‌جات",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "suite-leon-15-les-artistes-de-rue-et-lart-de-marchander",
+    "title": "Suite Leçon 15: Les artistes de rue et l'art de marchander",
+    "title_fa": "ادامه درس ۱۵: هنرمندان خیابانی و هنر چانه زنی",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "suite-leon-17-sant-urgences",
+    "title": "Suite Leçon 17: Santé & urgences",
+    "title_fa": "ادامه درس ۱۷: سلامت و موارد اضطراری",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "suite-leon-5-transport-depuis-laroport",
+    "title": "Suite Leçon 5: Transport depuis l'aéroport",
+    "title_fa": "ادامه درس ۵: حمل و نقل از فرودگاه",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "suite-leon-6-1-utiliser-les-quipements-et-services-de-lhtel",
+    "title": "Suite Leçon 6-1: Utiliser les équipements et services de l'hôtel",
+    "title_fa": "ادامه درس ۶-۱: استفاده از امکانات و خدمات هتل",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
+  },
+  {
+    "id": "suite-leon-6-2-se-renseigner-auprs-de-la-rception",
+    "title": "Suite Leçon 6-2: Se renseigner auprès de la réception",
+    "title_fa": "ادامه درس ۶-۲: کسب اطلاعات از پذیرش",
+    "icon": "📝",
+    "estimatedTime": 25,
+    "module": "general"
   }
 ]
