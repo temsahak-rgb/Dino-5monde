@@ -70,10 +70,10 @@ async function switchSection(section) {
         case 'grammar': showGrammarPage(); break;
         case 'vocabulary': showVocabularyPage(); break;
         case 'daily': showDailyHome(); break;
-        case 'travel': showTravelHome(); break;
+        case 'travel': showTravelPage(); break; // ✅ فقط این یکی بماند
         case 'games': showGamesPage(); break;
         case 'exercises': showExercisesPage(); break;
         case 'profile': showProfile(); break;
-        case 'travel': showTravelPage(); break;
+        default: showHome(); break;
     }
 }
