@@ -37,7 +37,7 @@ async function renderNewsSection() {
 }
 
 // ===============================
-// 📰 صفحه جزئیات خبر (نسخه پیشرفته با فیلتر سطح)
+// 📰 صفحه جزئیات خبر
 // ===============================
 async function showNewsDetail(newsId) {
     const lang = localStorage.getItem("language") || "fr";
@@ -78,6 +78,7 @@ async function showNewsDetail(newsId) {
         html += `<div style="font-size:16px;line-height:1.9;color:#333;white-space:pre-line;">${news.content.simpleText}</div>`;
         html += `</div>`;
         
+        // واژگان (با فیلتر سطح)
         if (news.content.vocabulary && news.content.vocabulary.length) {
             const filteredVocab = news.content.vocabulary.filter(v => {
                 if (!v.level) return true;
@@ -104,6 +105,7 @@ async function showNewsDetail(newsId) {
             }
         }
         
+        // گرامر (با فیلتر سطح)
         if (news.content.grammar && news.content.grammar.length) {
             const filteredGrammar = news.content.grammar.filter(g => {
                 if (!g.level) return true;
@@ -143,6 +145,7 @@ async function showNewsDetail(newsId) {
             }
         }
         
+        // منابع
         if (news.sources && news.sources.length) {
             html += `<details style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;margin-bottom:20px;overflow:hidden;">
                 <summary style="padding:18px 24px;font-weight:700;color:#1a1a1a;cursor:pointer;background:#f9fafb;display:flex;justify-content:space-between;align-items:center;list-style:none;">
@@ -205,37 +208,29 @@ function switchNewsText(mode) {
 }
 
 // ===============================
-// 🏠 صفحه اصلی مینیمال (کامل و اصلاح‌شده)
+// 🏠 صفحه اصلی مینیمال (بهینه‌شده و سریع)
 // ===============================
 async function showHome() {
     const lang = localStorage.getItem("language") || "fr";
     const level = getPlacementResult() || "A1";
 
-    // بارگذاری موازی برای سرعت بیشتر
-    const [g, t, d] = await Promise.all([
-        loadGrammar(level).then(() => getGrammar(level).slice(0, 4)).catch(() => []),
-        fetch("./data/travel/lessons.json").then(r => r.json()).catch(() => []),
-        fetch("./data/daily/lessons.json").then(r => r.json()).catch(() => [])
-    ]);
-    
-    const grammarLessons = g;
-    const travelLessons = t.slice(0, 4);
-    const dailyLessons = d.slice(0, 4);
-    
+    // ✅ حذف درخواست‌های اضافه (Fetch) برای سرعت بالاتر لود صفحه
+    // دیگر نیازی به دانلود گرامر، سفر و روزمره در صفحه اصلی نیست.
+
     let html = renderNavbar();
     html += `<div style="max-width:960px;margin:0 auto;padding:32px 20px 60px;">`;
     
-    // سلام و سطح
+    // ۱. سلام و سطح
     html += `<div style="display:flex;align-items:center;gap:16px;margin-bottom:8px;">
         <span style="font-size:48px;line-height:1;">🦖</span>
         <h1 style="font-size:30px;font-weight:700;color:#1a1a1a;margin:0;">${lang === "fa" ? "سلام، ادامه بده!" : "Bonjour, continuez !"}</h1>
     </div>
     <p style="font-size:17px;color:#777;margin:0 0 36px;">${level} · ${lang === "fa" ? "سطح فعلی شما" : "Votre niveau actuel"}</p>`;
     
-    // 📰 بخش اخبار دینامیک (تصویر بزرگ)
+    // ۲. بخش اخبار دینامیک (تصویر بزرگ)
     html += await renderNewsSection();
     
-    // 📰 اخبار و نکات ثابت
+    // ۳. بخش اخبار و نکات ثابت (کارت‌های استاتیک)
     html += `<div style="margin-bottom:45px;">
         ${sectionHeader(lang === "fa" ? "📰 اخبار و نکات" : "📰 Actualités & conseils", "", lang)}
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;">
@@ -274,50 +269,8 @@ async function showHome() {
         </div>
     </div>`;
 
-    // 📚 گرامر
-    html += `<div style="margin-bottom:40px;">
-        ${sectionHeader(lang === "fa" ? "📚 گرامر" : "📚 Grammaire", "switchSection('grammar')", lang)}
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
-            ${grammarLessons.map(l => simpleCard(l.icon || "📗", lang === "fa" ? l.title_fa : l.title, `${l.level} · ${l.estimatedTime} min`, `showGrammarLesson('${l.id}')`)).join("")}
-        </div>
-    </div>`;
-
-    // 📖 واژگان
-    html += `<div style="margin-bottom:40px;">
-        ${sectionHeader(lang === "fa" ? "📖 واژگان" : "📖 Vocabulaire", "switchSection('vocabulary')", lang)}
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
-            ${simpleCard("👕", lang === "fa" ? "لباس و پوشاک" : "Vêtements", lang === "fa" ? "۱۵ کلمه" : "15 mots", "switchSection('vocabulary')")}
-            ${simpleCard("🥐", lang === "fa" ? "صبحانه در هتل" : "Petit-déjeuner", lang === "fa" ? "۱۵ کلمه" : "15 mots", "switchSection('vocabulary')")}
-            ${simpleCard("🍽️", lang === "fa" ? "غذا و رستوران" : "Nourriture", lang === "fa" ? "۱۵ کلمه" : "15 mots", "switchSection('vocabulary')")}
-            ${simpleCard("👨‍👩‍👧", lang === "fa" ? "خانواده" : "Famille", lang === "fa" ? "۱۵ کلمه" : "15 mots", "switchSection('vocabulary')")}
-        </div>
-    </div>`;
-
-    // 🏘️ زندگی روزمره
-    html += `<div style="margin-bottom:40px;">
-        ${sectionHeader(lang === "fa" ? "🏘️ زندگی روزمره" : "🏘️ Vie quotidienne", "switchSection('daily')", lang)}
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
-            ${dailyLessons.map(l => simpleCard(l.icon || "🏠", lang === "fa" ? l.title_fa : l.title, `${l.estimatedTime} min`, `showDailyLesson('${l.id}')`)).join("")}
-        </div>
-    </div>`;
-
-    // ✈️ سفر
-    html += `<div style="margin-bottom:40px;">
-        ${sectionHeader(lang === "fa" ? "✈️ سفر" : "✈️ Voyage", "switchSection('travel')", lang)}
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
-            ${travelLessons.map(l => simpleCard(l.icon || "✈️", lang === "fa" ? l.title_fa : l.title, `${l.estimatedTime} min`, `showTravelLesson('${l.id}')`)).join("")}
-        </div>
-    </div>`;
-
-    // 🎮 بازی و تمرین
-    html += `<div style="margin-bottom:40px;">
-        ${sectionHeader(lang === "fa" ? "🎮 بازی و تمرین" : "🎮 Jeux & exercices", "", lang)}
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
-            ${simpleCard("🎮", lang === "fa" ? "بازی‌ها" : "Jeux", lang === "fa" ? "یادگیری با سرگرمی" : "Apprendre en jouant", "switchSection('games')")}
-            ${simpleCard("📝", lang === "fa" ? "تمرین‌ها" : "Exercices", lang === "fa" ? "تثبیت یادگیری" : "Consolider", "switchSection('exercises')")}
-            ${simpleCard("📊", lang === "fa" ? "تعیین سطح" : "Test", lang === "fa" ? "سطح خود را بسنجید" : "Évaluer votre niveau", "showPlacementChoice()")}
-        </div>
-    </div>`;
+    // ✅ حذف کامل بخش‌های گرامر، واژگان، روزمره، سفر و بازی از پایین صفحه
+    // کاربر می‌تواند از نوار بالای سایت (Navbar) به این بخش‌ها دسترسی داشته باشد.
 
     html += `</div>`;
     app.innerHTML = html;
