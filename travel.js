@@ -7,11 +7,13 @@ async function loadTravelIndex() {
     if (travelCache.index) return travelCache.index;
     try {
         const r = await fetch("./data/travel/lessons.json?v=" + Date.now(), { cache: "no-store" });
+        if (!r.ok) throw new Error("lessons.json not found");
         const d = await r.json();
         travelCache.index = d;
+        console.log("✅ Travel lessons loaded:", d.length, "lessons");
         return d;
     } catch (e) { 
-        console.error("Error loading travel index:", e);
+        console.error("❌ Error loading travel index:", e);
         return []; 
     }
 }
@@ -19,13 +21,18 @@ async function loadTravelIndex() {
 async function loadTravelLesson(lessonId) {
     const key = "travel-" + lessonId;
     if (travelCache[key]) return travelCache[key];
+    
+    console.log("🔍 Loading lesson:", lessonId);
+    
     try {
         const r = await fetch("./data/travel/lessons/" + lessonId + ".json?v=" + Date.now(), { cache: "no-store" });
+        if (!r.ok) throw new Error("Lesson file not found: " + lessonId);
         const d = await r.json();
         travelCache[key] = d;
+        console.log("✅ Lesson loaded:", lessonId);
         return d;
     } catch (e) { 
-        console.error("Error loading travel lesson:", e);
+        console.error("❌ Error loading lesson:", e);
         return null; 
     }
 }
@@ -73,12 +80,23 @@ async function showTravelPage() {
 // ===============================
 async function showTravelLesson(lessonId) {
     const lang = localStorage.getItem("language") || "fr";
+    
+    console.log("📖 Opening lesson:", lessonId);
+    
     const lesson = await loadTravelLesson(lessonId);
     
     if (!lesson) {
-        app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p>❌ ${lang === "fa" ? "درس پیدا نشد" : "Leçon introuvable"}</p></div>`;
+        console.error("❌ Lesson not found:", lessonId);
+        app.innerHTML = renderNavbar() + `<div style="max-width:600px;margin:0 auto;padding:60px 20px;text-align:center;">
+            <p style="font-size:48px;margin-bottom:20px;">❌</p>
+            <p style="font-size:18px;color:#1a1a1a;margin-bottom:10px;">${lang === "fa" ? "درس پیدا نشد" : "Leçon introuvable"}</p>
+            <p style="font-size:14px;color:#777;margin-bottom:20px;">ID: ${lessonId}</p>
+            <button onclick="showTravelPage()" style="padding:12px 24px;background:#087F5B;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700;">${lang === "fa" ? "بازگشت به لیست" : "Retour à la liste"}</button>
+        </div>`;
         return;
     }
+    
+    console.log("✅ Lesson loaded:", lesson.title_fa || lesson.title);
     
     let html = renderNavbar();
     html += `<div style="max-width:900px;margin:0 auto;padding:20px 16px 60px;">`;
@@ -100,7 +118,7 @@ async function showTravelLesson(lessonId) {
         
         lesson.miniLessons.forEach((mini, idx) => {
             const typeIcon = mini.type === 'vocab' ? '📖' : mini.type === 'tips' ? '💡' : '📝';
-            const itemCount = mini.type === 'vocab' ? mini.words.length : mini.tips.length;
+            const itemCount = mini.type === 'vocab' ? mini.words.length : (mini.tips ? mini.tips.length : 0);
             const itemLabel = mini.type === 'vocab' ? (lang === "fa" ? "کلمه" : "mots") : (lang === "fa" ? "نکته" : "conseils");
             
             html += `<button onclick="showMiniLesson('${lessonId}', ${idx})" style="padding:12px;background:#fff;border:1px solid #e0e0e0;border-radius:6px;cursor:pointer;text-align:right;transition:all 0.2s;" onmouseover="this.style.borderColor='#087F5B';this.style.background='#f0f9ff'" onmouseout="this.style.borderColor='#e0e0e0';this.style.background='#fff'">`;
@@ -197,7 +215,6 @@ function startTravelFlashcards(lessonId, miniIdx) {
     
     if (mini.type !== 'vocab') return;
     
-    // ساخت ساختار مشابه vocabulary pack
     window.currentPack = {
         id: lessonId + '-' + mini.id,
         level: 'travel',
