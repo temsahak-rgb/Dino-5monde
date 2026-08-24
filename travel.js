@@ -10,10 +10,9 @@ async function loadTravelIndex() {
         if (!r.ok) throw new Error("lessons.json not found");
         const d = await r.json();
         travelCache.index = d;
-        console.log("✅ Travel lessons loaded:", d.length, "lessons");
         return d;
     } catch (e) { 
-        console.error("❌ Error loading travel index:", e);
+        console.error("Error loading travel index:", e);
         return []; 
     }
 }
@@ -22,17 +21,17 @@ async function loadTravelLesson(lessonId) {
     const key = "travel-" + lessonId;
     if (travelCache[key]) return travelCache[key];
     
-    console.log("🔍 Loading lesson:", lessonId);
-    
     try {
         const r = await fetch("./data/travel/lessons/" + lessonId + ".json?v=" + Date.now(), { cache: "no-store" });
-        if (!r.ok) throw new Error("Lesson file not found: " + lessonId);
+        if (!r.ok) {
+            console.warn(`Lesson file not found: ${lessonId}`);
+            return null;
+        }
         const d = await r.json();
         travelCache[key] = d;
-        console.log("✅ Lesson loaded:", lessonId);
         return d;
     } catch (e) { 
-        console.error("❌ Error loading lesson:", e);
+        console.error(`Error loading lesson ${lessonId}:`, e);
         return null; 
     }
 }
@@ -76,28 +75,36 @@ async function showTravelPage() {
 }
 
 // ===============================
-// ✈️ نمایش یک درس سفر
+// ✈️ نمایش یک درس سفر (با مدیریت خطای قوی)
 // ===============================
 async function showTravelLesson(lessonId) {
     const lang = localStorage.getItem("language") || "fr";
     
-    console.log("📖 Opening lesson:", lessonId);
-    
     const lesson = await loadTravelLesson(lessonId);
     
+    // اگر درس پیدا نشد، پیام موقت نشان بده
     if (!lesson) {
-        console.error("❌ Lesson not found:", lessonId);
         app.innerHTML = renderNavbar() + `<div style="max-width:600px;margin:0 auto;padding:60px 20px;text-align:center;">
-            <p style="font-size:48px;margin-bottom:20px;">❌</p>
-            <p style="font-size:18px;color:#1a1a1a;margin-bottom:10px;">${lang === "fa" ? "درس پیدا نشد" : "Leçon introuvable"}</p>
-            <p style="font-size:14px;color:#777;margin-bottom:20px;">ID: ${lessonId}</p>
+            <p style="font-size:48px;margin-bottom:20px;">🚧</p>
+            <p style="font-size:18px;color:#1a1a1a;margin-bottom:10px;">${lang === "fa" ? "این درس به زودی اضافه می‌شود" : "Cette leçon sera bientôt disponible"}</p>
+            <p style="font-size:14px;color:#777;margin-bottom:20px;">${lang === "fa" ? "محتوای این درس هنوز آماده نشده است" : "Le contenu de cette leçon n'est pas encore prêt"}</p>
             <button onclick="showTravelPage()" style="padding:12px 24px;background:#087F5B;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700;">${lang === "fa" ? "بازگشت به لیست" : "Retour à la liste"}</button>
         </div>`;
         return;
     }
     
-    console.log("✅ Lesson loaded:", lesson.title_fa || lesson.title);
+    // اگر درس هست ولی miniLessons ندارد
+    if (!lesson.miniLessons || lesson.miniLessons.length === 0) {
+        app.innerHTML = renderNavbar() + `<div style="max-width:600px;margin:0 auto;padding:60px 20px;text-align:center;">
+            <p style="font-size:48px;margin-bottom:20px;">📝</p>
+            <h1 style="font-size:24px;font-weight:700;color:#1a1a1a;margin-bottom:10px;">${lang === "fa" ? lesson.title_fa : lesson.title}</h1>
+            <p style="font-size:16px;color:#777;margin-bottom:20px;">${lang === "fa" ? "محتوای این درس به زودی اضافه می‌شود" : "Le contenu de cette leçon sera bientôt ajouté"}</p>
+            <button onclick="showTravelPage()" style="padding:12px 24px;background:#087F5B;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700;">${lang === "fa" ? "بازگشت به لیست" : "Retour à la liste"}</button>
+        </div>`;
+        return;
+    }
     
+    // درس کامل است - نمایش آن
     let html = renderNavbar();
     html += `<div style="max-width:900px;margin:0 auto;padding:20px 16px 60px;">`;
     html += `<button class="back-btn" onclick="showTravelPage()">← ${lang === "fa" ? "بازگشت" : "Retour"}</button>`;
@@ -111,25 +118,23 @@ async function showTravelLesson(lessonId) {
     html += `</div></div>`;
     
     // منوی مینی‌درس‌ها
-    if (lesson.miniLessons && lesson.miniLessons.length > 0) {
-        html += `<div style="background:#f9fafb;border:1px solid #e0e0e0;border-radius:8px;padding:16px;margin-bottom:24px;">`;
-        html += `<h3 style="font-size:15px;font-weight:700;color:#1a1a1a;margin:0 0 12px;">📚 ${lang === "fa" ? "بخش‌های درس" : "Sections de la leçon"}</h3>`;
-        html += `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">`;
+    html += `<div style="background:#f9fafb;border:1px solid #e0e0e0;border-radius:8px;padding:16px;margin-bottom:24px;">`;
+    html += `<h3 style="font-size:15px;font-weight:700;color:#1a1a1a;margin:0 0 12px;">📚 ${lang === "fa" ? "بخش‌های درس" : "Sections de la leçon"}</h3>`;
+    html += `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">`;
+    
+    lesson.miniLessons.forEach((mini, idx) => {
+        const typeIcon = mini.type === 'vocab' ? '📖' : mini.type === 'tips' ? '💡' : '📝';
+        const itemCount = mini.type === 'vocab' ? (mini.words ? mini.words.length : 0) : (mini.tips ? mini.tips.length : 0);
+        const itemLabel = mini.type === 'vocab' ? (lang === "fa" ? "کلمه" : "mots") : (lang === "fa" ? "نکته" : "conseils");
         
-        lesson.miniLessons.forEach((mini, idx) => {
-            const typeIcon = mini.type === 'vocab' ? '📖' : mini.type === 'tips' ? '💡' : '📝';
-            const itemCount = mini.type === 'vocab' ? mini.words.length : (mini.tips ? mini.tips.length : 0);
-            const itemLabel = mini.type === 'vocab' ? (lang === "fa" ? "کلمه" : "mots") : (lang === "fa" ? "نکته" : "conseils");
-            
-            html += `<button onclick="showMiniLesson('${lessonId}', ${idx})" style="padding:12px;background:#fff;border:1px solid #e0e0e0;border-radius:6px;cursor:pointer;text-align:right;transition:all 0.2s;" onmouseover="this.style.borderColor='#087F5B';this.style.background='#f0f9ff'" onmouseout="this.style.borderColor='#e0e0e0';this.style.background='#fff'">`;
-            html += `<span style="font-size:20px;">${typeIcon}</span>`;
-            html += `<p style="font-size:14px;font-weight:600;color:#1a1a1a;margin:6px 0 0;">${mini.title}</p>`;
-            html += `<p style="font-size:12px;color:#777;margin:4px 0 0;">${itemCount} ${itemLabel}</p>`;
-            html += `</button>`;
-        });
-        
-        html += `</div></div>`;
-    }
+        html += `<button onclick="showMiniLesson('${lessonId}', ${idx})" style="padding:12px;background:#fff;border:1px solid #e0e0e0;border-radius:6px;cursor:pointer;text-align:right;transition:all 0.2s;" onmouseover="this.style.borderColor='#087F5B';this.style.background='#f0f9ff'" onmouseout="this.style.borderColor='#e0e0e0';this.style.background='#fff'">`;
+        html += `<span style="font-size:20px;">${typeIcon}</span>`;
+        html += `<p style="font-size:14px;font-weight:600;color:#1a1a1a;margin:6px 0 0;">${mini.title}</p>`;
+        html += `<p style="font-size:12px;color:#777;margin:4px 0 0;">${itemCount} ${itemLabel}</p>`;
+        html += `</button>`;
+    });
+    
+    html += `</div></div>`;
     
     // محتوای مینی‌درس‌ها
     html += `<div id="mini-lesson-content">`;
@@ -148,8 +153,13 @@ async function showTravelLesson(lessonId) {
 function showMiniLesson(lessonId, miniIdx) {
     const lang = localStorage.getItem("language") || "fr";
     const lesson = window.currentTravelLesson;
-    const mini = lesson.miniLessons[miniIdx];
     
+    if (!lesson || !lesson.miniLessons || !lesson.miniLessons[miniIdx]) {
+        console.error("Mini lesson not found");
+        return;
+    }
+    
+    const mini = lesson.miniLessons[miniIdx];
     const contentDiv = document.getElementById("mini-lesson-content");
     let html = "";
     
@@ -159,12 +169,12 @@ function showMiniLesson(lessonId, miniIdx) {
     html += `</div>`;
     
     // نوع ۱: واژگان
-    if (mini.type === 'vocab') {
+    if (mini.type === 'vocab' && mini.words && mini.words.length > 0) {
         html += `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;">`;
         mini.words.forEach(word => {
             html += `<div style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:16px;transition:all 0.2s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#e0e0e0'">`;
             html += `<div style="display:flex;align-items:start;gap:12px;">`;
-            html += `<span style="font-size:32px;">${word.emoji}</span>`;
+            html += `<span style="font-size:32px;">${word.emoji || '📝'}</span>`;
             html += `<div style="flex:1;">`;
             html += `<p class="ltr-lock" style="font-size:18px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">${word.fr}</p>`;
             if (word.phonetic) {
@@ -180,7 +190,7 @@ function showMiniLesson(lessonId, miniIdx) {
     }
     
     // نوع ۲: توصیه‌ها
-    else if (mini.type === 'tips') {
+    else if (mini.type === 'tips' && mini.tips && mini.tips.length > 0) {
         html += `<div style="display:flex;flex-direction:column;gap:12px;">`;
         mini.tips.forEach((tip, idx) => {
             const bgColor = tip.type === 'warning' ? '#fef2f2' : tip.type === 'note' ? '#eff6ff' : tip.type === 'comparison' ? '#f0fdf4' : '#fffbeb';
@@ -188,9 +198,9 @@ function showMiniLesson(lessonId, miniIdx) {
             
             html += `<div style="background:${bgColor};border:1px solid ${borderColor};border-radius:8px;padding:18px;">`;
             html += `<div style="display:flex;align-items:start;gap:12px;">`;
-            html += `<span style="font-size:28px;">${tip.icon}</span>`;
+            html += `<span style="font-size:28px;">${tip.icon || '💡'}</span>`;
             html += `<div style="flex:1;">`;
-            html += `<h3 style="font-size:16px;font-weight:700;color:#1a1a1a;margin:0 0 8px;">${idx + 1}. ${tip.title_fa || tip.title_fr}</h3>`;
+            html += `<h3 style="font-size:16px;font-weight:700;color:#1a1a1a;margin:0 0 8px;">${idx + 1}. ${tip.title_fa || tip.title_fr || ''}</h3>`;
             if (tip.content_fr) {
                 html += `<p class="ltr-lock" style="font-size:14px;color:#333;margin:0 0 8px;line-height:1.7;">${tip.content_fr}</p>`;
             }
@@ -202,6 +212,11 @@ function showMiniLesson(lessonId, miniIdx) {
         html += `</div>`;
     }
     
+    // اگر هیچ محتوایی نداشت
+    else {
+        html += `<p style="text-align:center;color:#777;padding:40px;">${lang === "fa" ? "این بخش هنوز محتوایی ندارد" : "Cette section n'a pas encore de contenu"}</p>`;
+    }
+    
     contentDiv.innerHTML = html;
     contentDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
@@ -211,9 +226,18 @@ function showMiniLesson(lessonId, miniIdx) {
 // ===============================
 function startTravelFlashcards(lessonId, miniIdx) {
     const lesson = window.currentTravelLesson;
+    
+    if (!lesson || !lesson.miniLessons || !lesson.miniLessons[miniIdx]) {
+        console.error("Cannot start flashcards: lesson or mini lesson not found");
+        return;
+    }
+    
     const mini = lesson.miniLessons[miniIdx];
     
-    if (mini.type !== 'vocab') return;
+    if (mini.type !== 'vocab' || !mini.words || mini.words.length === 0) {
+        console.error("Cannot start flashcards: not a vocab section or no words");
+        return;
+    }
     
     window.currentPack = {
         id: lessonId + '-' + mini.id,
@@ -222,7 +246,7 @@ function startTravelFlashcards(lessonId, miniIdx) {
             fr: w.fr,
             fa: w.fa,
             phonetic: w.phonetic,
-            emoji: w.emoji
+            emoji: w.emoji || '📝'
         }))
     };
     
