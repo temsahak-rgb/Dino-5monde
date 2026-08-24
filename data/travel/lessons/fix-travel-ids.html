@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔧 اصلاح ID های Travel</title>
+    <style>
+        body { font-family: Tahoma; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 1000px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h1 { color: #087F5B; }
+        .setup { background: #f0f9ff; border: 2px solid #087F5B; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        label { display: block; margin: 12px 0 6px; font-weight: bold; }
+        input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
+        .btn { background: #087F5B; color: white; border: none; padding: 14px 24px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; width: 100%; margin-top: 10px; }
+        .log { background: #1a1a1a; color: #00ff00; padding: 15px; border-radius: 8px; margin-top: 20px; max-height: 500px; overflow-y: auto; font-family: monospace; font-size: 13px; line-height: 1.6; }
+        .log-success { color: #00ff00; } .log-error { color: #ff4444; } .log-info { color: #44aaff; } .log-warning { color: #ffaa00; }
+        .comparison { background: #f9fafb; border: 1px solid #e0e0e0; border-radius: 6px; padding: 15px; margin-top: 15px; }
+        .match { background: #d1fae5; padding: 8px; border-radius: 4px; margin: 4px 0; }
+        .mismatch { background: #fee2e2; padding: 8px; border-radius: 4px; margin: 4px 0; }
+        .missing { background: #fef3c7; padding: 8px; border-radius: 4px; margin: 4px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 اصلاح ID های Travel Lessons</h1>
+        <p>این ابزار نشان می‌دهد کدام فایل‌ها با ID ها مطابقت ندارند و چگونه اصلاح شوند.</p>
+
+        <div class="setup">
+            <label>GitHub Token:</label>
+            <input type="password" id="token" placeholder="ghp_...">
+        </div>
+
+        <button class="btn" onclick="fixIds()">🔍 بررسی و اصلاح ID ها</button>
+
+        <div class="log" id="log"></div>
+    </div>
+
+    <script>
+        function log(msg, type = 'info') {
+            const logDiv = document.getElementById('log');
+            const time = new Date().toLocaleTimeString('fa-IR');
+            logDiv.innerHTML += `<div class="log-${type}">[${time}] ${msg}</div>`;
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+
+        async function githubGet(path, token, user, repo) {
+            const url = `https://api.github.com/repos/${user}/${repo}/contents/${path}`;
+            const res = await fetch(url, { headers: { 'Authorization': `token ${token}` } });
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return await res.json();
+        }
+
+        async function githubPut(path, content, sha, token, user, repo, message) {
+            const url = `https://api.github.com/repos/${user}/${repo}/contents/${path}`;
+            const res = await fetch(url, {
+                method: 'PUT',
+                headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message, content: btoa(unescape(encodeURIComponent(content))), sha })
+            });
+            if (!res.ok) throw new Error(`PUT failed`);
+        }
+
+        async function fixIds() {
+            const token = document.getElementById('token').value.trim();
+            const username = "temsahak-rgb";
+            const repo = "Dino-5monde";
+
+            if (!token) {
+                log('❌ Token را وارد کن', 'error');
+                return;
+            }
+
+            log('🔍 شروع بررسی...', 'info');
+
+            try {
+                // ۱. خواندن lessons.json
+                const lessonsFile = await githubGet('data/travel/lessons.json', token, username, repo);
+                const lessons = JSON.parse(decodeURIComponent(escape(atob(lessonsFile.content))));
+                log(`✅ ${lessons.length} درس در lessons.json`, 'success');
+
+                // ۲. خواندن لیست فایل‌ها
+                const filesList = await githubGet('data/travel/lessons', token, username, repo);
+                const lessonFiles = filesList.filter(f => f.name.endsWith('.json'));
+                log(`✅ ${lessonFiles.length} فایل در پوشه lessons/`, 'success');
+
+                // ۳. مقایسه
+                log('\n📊 مقایسه ID ها با نام فایل‌ها:', 'info');
+                
+                const fileNames = lessonFiles.map(f => f.name.replace('.json', ''));
+                const lessonIds = lessons.map(l => l.id);
+                
+                const matches = [];
+                const mismatches = [];
+                const missing = [];
+
+                lessonIds.forEach(id => {
+                    if (fileNames.includes(id)) {
+                        matches.push(id);
+                    } else {
+                        // جستجوی نام مشابه
+                        const similar = fileNames.find(f => 
+                            f.toLowerCase().replace(/[-_]/g, '') === id.toLowerCase().replace(/[-_]/g, '') ||
+                            f.toLowerCase().includes(id.toLowerCase().split('-').slice(0, 2).join(''))
+                        );
+                        
+                        if (similar) {
+                            mismatches.push({ id, fileName: similar });
+                        } else {
+                            missing.push(id);
+                        }
+                    }
+                });
+
+                // نمایش نتایج
+                log(`\n✅ ${matches.length} ID مطابقت کامل دارد`, 'success');
+                matches.forEach(id => log(`  ✓ ${id}`, 'success'));
+
+                if (mismatches.length > 0) {
+                    log(`\n⚠️ ${mismatches.length} ID با نام فایل متفاوت است:`, 'warning');
+                    mismatches.forEach(m => {
+                        log(`  ❌ ID: ${m.id}`, 'error');
+                        log(`     📄 فایل: ${m.fileName}.json`, 'warning');
+                        log(`     💡 راه‌حل: ID را به "${m.fileName}" تغییر بده یا نام فایل را به "${m.id}.json" تغییر بده`, 'info');
+                    });
+                }
+
+                if (missing.length > 0) {
+                    log(`\n❌ ${missing.length} ID فایل ندارند:`, 'error');
+                    missing.forEach(id => {
+                        log(`  ❌ ${id}`, 'error');
+                    });
+                }
+
+                // ۴. پیشنهاد اصلاح
+                if (mismatches.length > 0 || missing.length > 0) {
+                    log('\n\n🔧 اصلاح خودکار lessons.json...', 'info');
+                    
+                    const updatedLessons = lessons.map(lesson => {
+                        const mismatch = mismatches.find(m => m.id === lesson.id);
+                        if (mismatch) {
+                            log(`  🔧 تغییر ID "${lesson.id}" به "${mismatch.fileName}"`, 'info');
+                            return { ...lesson, id: mismatch.fileName };
+                        }
+                        return lesson;
+                    }).filter(lesson => !missing.includes(lesson.id));
+
+                    // ذخیره در GitHub
+                    const content = JSON.stringify(updatedLessons, null, 2);
+                    await githubPut('data/travel/lessons.json', content, lessonsFile.sha, token, username, repo, '🔧 Fix lesson IDs to match file names');
+                    
+                    log(`\n✅ lessons.json به‌روزرسانی شد!`, 'success');
+                    log(`📊 ${matches.length} مطابقت | ${mismatches.length} اصلاح شد | ${missing.length} حذف شد`, 'success');
+                } else {
+                    log('\n🎉 همه ID ها درست هستند!', 'success');
+                }
+
+            } catch (e) {
+                log(`❌ خطا: ${e.message}`, 'error');
+            }
+        }
+
+        window.onload = function() {
+            if (localStorage.getItem('dino_token')) document.getElementById('token').value = localStorage.getItem('dino_token');
+        };
+    </script>
+</body>
+</html>
