@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تست سفر</title>
+    <style>
+        body { font-family: Tahoma; padding: 20px; background: #f5f5f5; }
+        .card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 16px; margin: 10px 0; cursor: pointer; }
+        .card:hover { border-color: #087F5B; }
+        .error { background: #fef2f2; border: 2px solid #dc2626; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .success { background: #d1fae5; border: 2px solid #087F5B; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        pre { background: #1a1a1a; color: #00ff00; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <h1>🧪 تست مستقل بخش سفر</h1>
+    <p>این صفحه هیچ ربطی به کدهای سایت ندارد. فقط lessons.json را می‌خواند.</p>
+    
+    <div id="result"></div>
+    
+    <script>
+        const resultDiv = document.getElementById('result');
+        
+        async function test() {
+            resultDiv.innerHTML = '<p>⏳ در حال خواندن lessons.json...</p>';
+            
+            try {
+                const res = await fetch('./data/travel/lessons.json?v=' + Date.now());
+                
+                if (!res.ok) {
+                    resultDiv.innerHTML = `
+                        <div class="error">
+                            <h2>❌ فایل lessons.json پیدا نشد!</h2>
+                            <p>کد HTTP: ${res.status}</p>
+                            <p>مسیر: ./data/travel/lessons.json</p>
+                            <p><b>راه‌حل:</b> در GitHub چک کن که فایل <code>data/travel/lessons.json</code> وجود دارد.</p>
+                        </div>`;
+                    return;
+                }
+                
+                const lessons = await res.json();
+                
+                if (!Array.isArray(lessons) || lessons.length === 0) {
+                    resultDiv.innerHTML = `
+                        <div class="error">
+                            <h2>❌ فایل خالی یا نامعتبر است!</h2>
+                            <p>محتوا: ${JSON.stringify(lessons).substring(0, 200)}</p>
+                            <p><b>راه‌حل:</b> فایل lessons.json باید یک آرایه JSON باشد با حداقل یک درس.</p>
+                        </div>`;
+                    return;
+                }
+                
+                // موفقیت! لیست درس‌ها را نشان بده
+                let html = `
+                    <div class="success">
+                        <h2>✅ فایل lessons.json سالم است!</h2>
+                        <p>تعداد درس‌ها: <b>${lessons.length}</b></p>
+                    </div>
+                    <h3>📚 لیست درس‌ها (روی هر کدام کلیک کن):</h3>`;
+                
+                lessons.forEach((lesson, idx) => {
+                    html += `
+                        <div class="card" onclick="loadLesson('${lesson.id}', this)">
+                            <div style="display:flex;align-items:center;gap:12px;">
+                                <span style="font-size:32px;">${lesson.icon || '📝'}</span>
+                                <div>
+                                    <h3 style="margin:0;">${lesson.title_fa || lesson.title}</h3>
+                                    <p style="margin:4px 0 0;color:#777;font-size:13px;">ID: ${lesson.id} · ${lesson.estimatedTime || '?'} دقیقه</p>
+                                </div>
+                            </div>
+                        </div>`;
+                });
+                
+                resultDiv.innerHTML = html;
+                
+            } catch (e) {
+                resultDiv.innerHTML = `
+                    <div class="error">
+                        <h2>❌ خطای ناشناخته!</h2>
+                        <p>پیام خطا: ${e.message}</p>
+                        <p><b>راه‌حل:</b> احتمالاً فایل lessons.json JSON معتبر نیست (کاما اضافی، پرانتز بسته نشده و...).</p>
+                    </div>`;
+            }
+        }
+        
+        async function loadLesson(id, card) {
+            card.innerHTML = '<p>⏳ در حال خواندن درس...</p>';
+            
+            try {
+                const res = await fetch(`./data/travel/lessons/${id}.json?v=${Date.now()}`);
+                
+                if (!res.ok) {
+                    card.innerHTML = `
+                        <div class="error" style="margin:0;">
+                            <h3>❌ فایل درس پیدا نشد!</h3>
+                            <p>مسیر: <code>data/travel/lessons/${id}.json</code></p>
+                            <p>کد HTTP: ${res.status}</p>
+                            <p><b>راه‌حل:</b> در GitHub چک کن که فایل <code>${id}.json</code> در پوشه <code>data/travel/lessons/</code> وجود دارد. دقت کن حروف بزرگ و کوچک باید دقیقاً مطابقت داشته باشند!</p>
+                        </div>`;
+                    return;
+                }
+                
+                const lesson = await res.json();
+                
+                if (!lesson.miniLessons || lesson.miniLessons.length === 0) {
+                    card.innerHTML = `
+                        <div class="error" style="margin:0;">
+                            <h3>⚠️ فایل خوانده شد ولی miniLessons ندارد!</h3>
+                            <p>شروع محتوا:</p>
+                            <pre>${JSON.stringify(lesson, null, 2).substring(0, 500)}...</pre>
+                            <p><b>راه‌حل:</b> فایل باید فیلد <code>"miniLessons": [...]</code> داشته باشد.</p>
+                        </div>`;
+                    return;
+                }
+                
+                // موفقیت!
+                card.innerHTML = `
+                    <div class="success" style="margin:0;">
+                        <h3>✅ درس کامل است!</h3>
+                        <p>عنوان: ${lesson.title_fa || lesson.title}</p>
+                        <p>تعداد مینی‌درس‌ها: <b>${lesson.miniLessons.length}</b></p>
+                        <p>مینی‌درس‌ها:</p>
+                        <ul>
+                            ${lesson.miniLessons.map(m => `<li>${m.title || 'بدون عنوان'} (${m.type})</li>`).join('')}
+                        </ul>
+                    </div>`;
+                    
+            } catch (e) {
+                card.innerHTML = `
+                    <div class="error" style="margin:0;">
+                        <h3>❌ خطا در خواندن فایل!</h3>
+                        <p>پیام: ${e.message}</p>
+                        <p><b>راه‌حل:</b> فایل JSON معتبر نیست. احتمالاً کاما اضافی یا پرانتز بسته نشده دارد.</p>
+                    </div>`;
+            }
+        }
+        
+        test();
+    </script>
+</body>
+</html>
