@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ربات آپلود لغت‌نامه به گیت‌هاب (نسخه نهایی)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f3f4f6; }
+        .loader { border-top-color: #3498db; -webkit-animation: spinner 1.5s linear infinite; animation: spinner 1.5s linear infinite; }
+        @keyframes spinner { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="p-6">
+
+<div class="max-w-3xl mx-auto bg-white rounded-xl shadow-md overflow-hidden p-6">
+    <h1 class="text-2xl font-bold text-gray-800 mb-2 flex items-center gap-2">
+        🤖 ربات آپلود خودکار به گیت‌هاب
+    </h1>
+    <p class="text-sm text-gray-600 mb-6">
+        کد JSON را از Qwen کپی کنید و اینجا پیست نمایید. ربات به صورت خودکار اعداد انتهایی (مثل <code class="bg-red-100 text-red-700 px-1 rounded">_369</code>) را از ID حذف کرده و فایل را در مسیر <code class="bg-gray-100 px-1 rounded">Dino-5monde/data/vocabulary/{level}/{clean_id}.json</code> ذخیره می‌کند.
+    </p>
+
+    <!-- تنظیمات گیت‌هاب -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">توکن دسترسی گیت‌هاب (PAT)</label>
+            <input type="password" id="githubToken" placeholder="ghp_..." class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 outline-none">
+            <p class="text-xs text-gray-500 mt-1">نیاز به دسترسی <code>repo</code> دارد.</p>
+        </div>
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">نام مخزن (Repository)</label>
+            <!-- مقدار پیش‌فرض بر اساس لینک شما تنظیم شد -->
+            <input type="text" id="repoName" value="temsahak-rgb/Dino-5monde" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 outline-none bg-gray-50">
+        </div>
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">شاخه (Branch)</label>
+            <input type="text" id="branchName" value="main" class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 outline-none">
+        </div>
+    </div>
+
+    <!-- ورودی JSON -->
+    <div class="mb-4">
+        <label class="block text-sm font-medium text-gray-700 mb-1">کد JSON را اینجا پیست کنید</label>
+        <textarea id="jsonInput" rows="10" placeholder='{ "id": "numismatics_coins_369", "level": "C1", ... }' class="w-full border border-gray-300 rounded-lg p-3 font-mono text-sm focus:ring-2 focus:ring-blue-500 outline-none dir-ltr text-left"></textarea>
+    </div>
+
+    <!-- دکمه عملیات -->
+    <button onclick="processAndUpload()" id="uploadBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center gap-2">
+        <span>🚀 پاک‌سازی ID و آپلود در گیت‌هاب</span>
+    </button>
+
+    <!-- نمایش وضعیت -->
+    <div id="statusArea" class="mt-6 hidden">
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
+            <div id="loadingIndicator" class="hidden flex items-center gap-3 text-blue-600">
+                <div class="loader ease-linear rounded-full border-2 border-t-2 border-gray-200 h-5 w-5"></div>
+                <span>در حال پردازش و ارتباط با گیت‌هاب...</span>
+            </div>
+            <div id="successMessage" class="hidden text-green-700 flex items-center gap-2">
+                <span>✅</span> <span id="successText"></span>
+            </div>
+            <div id="errorMessage" class="hidden text-red-700 flex items-center gap-2">
+                <span>❌</span> <span id="errorText"></span>
+            </div>
+            <div id="previewInfo" class="mt-3 text-sm text-gray-600 font-mono bg-gray-100 p-2 rounded hidden">
+                <div>آیدی اصلی: <span id="originalIdDisplay" class="text-red-600 line-through"></span></div>
+                <div>آیدی و نام فایل نهایی: <span id="targetPath" class="font-bold text-green-700"></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    async function processAndUpload() {
+        const token = document.getElementById('githubToken').value.trim();
+        const repo = document.getElementById('repoName').value.trim();
+        const branch = document.getElementById('branchName').value.trim() || 'main';
+        const jsonText = document.getElementById('jsonInput').value.trim();
+
+        const statusArea = document.getElementById('statusArea');
+        const loading = document.getElementById('loadingIndicator');
+        const success = document.getElementById('successMessage');
+        const error = document.getElementById('errorMessage');
+        const preview = document.getElementById('previewInfo');
+
+        // Reset UI
+        statusArea.classList.remove('hidden');
+        loading.classList.remove('hidden');
+        success.classList.add('hidden');
+        error.classList.add('hidden');
+        preview.classList.add('hidden');
+        document.getElementById('uploadBtn').disabled = true;
+
+        try {
+            if (!token || !repo || !jsonText) {
+                throw new Error("لطفاً تمام فیلدها (توکن، مخزن و JSON) را پر کنید.");
+            }
+
+            // 1. Parse JSON
+            let data;
+            try {
+                data = JSON.parse(jsonText);
+            } catch (e) {
+                throw new Error("فرمت JSON نامعتبر است. لطفاً کد را به درستی کپی کنید.");
+            }
+
+            if (!data.id || !data.level) {
+                throw new Error("کد JSON باید حتماً شامل فیلدهای 'id' و 'level' باشد.");
+            }
+
+            // 2. Clean the ID (Remove trailing _numbers)
+            const originalId = data.id;
+            // حذف خط تیره و اعداد انتهایی (مثلاً _369)
+            const cleanId = originalId.replace(/_\d+$/, '');
+            
+            // به‌روزرسانی ID در داخل خود آبجکت JSON
+            data.id = cleanId;
+
+            // 3. Construct Path
+            const fileName = `${cleanId}.json`;
+            const path = `Dino-5monde/data/vocabulary/${data.level}/${fileName}`;
+            
+            document.getElementById('originalIdDisplay').textContent = originalId;
+            document.getElementById('targetPath').textContent = `${data.level} ➔ ${fileName}`;
+            preview.classList.remove('hidden');
+
+            // 4. Encode Content to Base64 (UTF-8 safe)
+            const formattedJson = JSON.stringify(data, null, 2);
+            const base64Content = btoa(unescape(encodeURIComponent(formattedJson)));
+
+            // 5. Check if file exists (to get 'sha' for updating)
+            const checkUrl = `https://api.github.com/repos/${repo}/contents/${path}`;
+            let sha = null;
+
+            const checkRes = await fetch(checkUrl, {
+                headers: {
+                    'Authorization': `token ${token}`,
+                    'Accept': 'application/vnd.github.v3+json'
+                }
+            });
+
+            if (checkRes.ok) {
+                const checkData = await checkRes.json();
+                sha = checkData.sha; // File exists, we need sha to update
+            } else if (checkRes.status !== 404) {
+                throw new Error(`خطا در بررسی فایل: ${checkRes.status} ${checkRes.statusText}`);
+            }
+
+            // 6. Upload / Update File
+            const uploadBody = {
+                message: `chore: add/update vocabulary ${cleanId} (${data.level})`,
+                content: base64Content,
+                branch: branch
+            };
+
+            if (sha) {
+                uploadBody.sha = sha;
+            }
+
+            const uploadRes = await fetch(checkUrl, {
+                method: 'PUT',
+                headers: {
+                    'Authorization': `token ${token}`,
+                    'Accept': 'application/vnd.github.v3+json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(uploadBody)
+            });
+
+            if (!uploadRes.ok) {
+                const errData = await uploadRes.json();
+                throw new Error(errData.message || "خطای ناشناخته در آپلود گیت‌هاب");
+            }
+
+            const result = await uploadRes.json();
+            
+            // Success UI
+            loading.classList.add('hidden');
+            success.classList.remove('hidden');
+            document.getElementById('successText').innerHTML = `فایل با موفقیت آپلود شد! <a href="${result.content.html_url}" target="_blank" class="underline text-blue-600">مشاهده در گیت‌هاب</a>`;
+
+        } catch (err) {
+            loading.classList.add('hidden');
+            error.classList.remove('hidden');
+            document.getElementById('errorText').textContent = err.message;
+        } finally {
+            document.getElementById('uploadBtn').disabled = false;
+        }
+    }
+</script>
+
+</body>
+</html>
