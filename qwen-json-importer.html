@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🤖 واردکننده چندگانه JSON (نسخه نهایی)</title>
+    <title>🤖 واردکننده JSON (بدون نیاز به بلوک کد)</title>
     <style>
         body { font-family: Tahoma, Arial; padding: 20px; background: linear-gradient(135deg, #087F5B 0%, #065f46 100%); min-height: 100vh; margin: 0; color: #333; }
         .container { max-width: 950px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
@@ -11,7 +11,7 @@
         .subtitle { text-align: center; color: #777; margin-bottom: 25px; font-size: 14px; }
         .setup { background: #f0f9ff; border: 2px solid #087F5B; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
         label { display: block; margin: 12px 0 6px; font-weight: bold; color: #333; }
-        input, textarea, select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; font-family: inherit; box-sizing: border-box; }
+        input, textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; font-family: inherit; box-sizing: border-box; }
         textarea { min-height: 250px; font-family: monospace; font-size: 12px; resize: vertical; }
         .btn { background: #087F5B; color: white; border: none; padding: 14px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; width: 100%; margin-top: 15px; transition: 0.2s; }
         .btn:hover:not(:disabled) { background: #066b4c; transform: translateY(-2px); }
@@ -20,27 +20,19 @@
         .log-success { color: #00ff00; } .log-error { color: #ff4444; } .log-info { color: #44aaff; } .log-warning { color: #ffaa00; }
         .preview { background: #fffbeb; border: 1px solid #fde68a; padding: 15px; border-radius: 8px; margin-top: 15px; display: none; }
         .preview-item { background: #fff; padding: 14px; border-radius: 6px; margin-bottom: 10px; border-right: 4px solid #087F5B; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .checkbox-group { display: flex; gap: 20px; margin: 15px 0; flex-wrap: wrap; }
-        .checkbox-group label { display: flex; align-items: center; gap: 6px; margin: 0; font-weight: normal; cursor: pointer; }
-        .checkbox-group input { width: auto; }
         .summary { background: #d1fae5; border: 2px solid #087F5B; padding: 15px; border-radius: 8px; margin: 15px 0; text-align: center; }
         .summary strong { color: #065f46; font-size: 18px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🤖 واردکننده چندگانه JSON</h1>
-        <p class="subtitle">کل پیام Qwen را پیست کنید. ربات همه بلوک‌های کد را جداگانه پردازش می‌کند.</p>
+        <h1>🤖 واردکننده JSON (بدون نیاز به بلوک کد)</h1>
+        <p class="subtitle">ربات مستقیماً هر JSON را در متن پیدا می‌کند، حتی بدون ```</p>
 
         <div class="setup">
             <label>GitHub Token:</label>
             <input type="password" id="token" placeholder="ghp_...">
             
-            <div class="checkbox-group">
-                <label><input type="checkbox" id="updateIndex" checked> به‌روزرسانی خودکار فهرست (vocab-{level}.json)</label>
-                <label><input type="checkbox" id="autoTranslate" checked> افزودن ترجمه فارسی داستان‌ها با Gemini</label>
-            </div>
-
             <label>متن کامل پیام Qwen را اینجا پیست کنید:</label>
             <textarea id="qwenText" placeholder="کل پیام را اینجا پیست کنید..."></textarea>
 
@@ -66,6 +58,60 @@
             const time = new Date().toLocaleTimeString('fa-IR');
             logDiv.innerHTML += `<div class="log-${type}">[${time}] ${msg}</div>`;
             logDiv.scrollTop = logDiv.scrollHeight;
+        }
+
+        // 🎯 تابع استخراج JSON با شمارنده پرانتز
+        function extractAllJSON(text) {
+            const results = [];
+            let i = 0;
+            
+            while (i < text.length) {
+                // پیدا کردن { بعدی
+                if (text[i] === '{') {
+                    let braceCount = 0;
+                    let inString = false;
+                    let escape = false;
+                    let start = i;
+                    
+                    // شمارش پرانتزها تا بسته شدن کامل
+                    for (let j = i; j < text.length; j++) {
+                        const char = text[j];
+                        
+                        if (escape) {
+                            escape = false;
+                            continue;
+                        }
+                        
+                        if (char === '\\') {
+                            escape = true;
+                            continue;
+                        }
+                        
+                        if (char === '"') {
+                            inString = !inString;
+                            continue;
+                        }
+                        
+                        if (!inString) {
+                            if (char === '{') braceCount++;
+                            if (char === '}') {
+                                braceCount--;
+                                if (braceCount === 0) {
+                                    // یک شیء JSON کامل پیدا شد
+                                    const jsonStr = text.substring(start, j + 1);
+                                    results.push(jsonStr);
+                                    i = j + 1;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    i++;
+                }
+            }
+            
+            return results;
         }
 
         async function githubGet(path, token, user, repo) {
@@ -98,32 +144,25 @@
                 return;
             }
 
-            log('🔍 در حال جداسازی بلوک‌های کد...', 'info');
+            log('🔍 در حال جستجوی همه اشیاء JSON در متن...', 'info');
             foundPacks = [];
             
-            // 🎯 روش جدید و قوی: تقسیم متن بر اساس ```
-            // این تضمین می‌کند که هر بلوک جداگانه پردازش شود
-            const parts = text.split(/```/);
+            // 🎯 استخراج همه JSONها با شمارنده پرانتز
+            const jsonStrings = extractAllJSON(text);
+            log(`📊 ${jsonStrings.length} شیء JSON پیدا شد.`, 'info');
             
-            let blockCount = 0;
             let validCount = 0;
             
-            // بلوک‌های فرد (1, 3, 5, ...) محتوای داخل ``` هستند
-            for (let i = 1; i < parts.length; i += 2) {
-                blockCount++;
-                let jsonStr = parts[i].trim();
-                
-                // حذف برچسب json یا هر زبان دیگری از ابتدای بلوک
-                jsonStr = jsonStr.replace(/^(json|jsonc|javascript|js|typescript|ts)\s*\n?/i, '').trim();
-                
+            jsonStrings.forEach((jsonStr, index) => {
                 try {
                     const pack = JSON.parse(jsonStr);
 
+                    // فقط پک‌هایی که id و level دارند را بپذیر
                     if (!pack.id || !pack.level) {
-                        throw new Error("فیلدهای 'id' یا 'level' یافت نشد.");
+                        return;
                     }
 
-                    // 🧹 تمیزسازی ID: حذف _369, _370 و غیره از انتهای ID
+                    // 🧹 تمیزسازی ID
                     const originalId = pack.id;
                     const cleanId = originalId.replace(/_\d+$/, ''); 
                     
@@ -139,17 +178,17 @@
                         wordsCount: pack.words ? pack.words.length : 0
                     });
                     validCount++;
-                    log(`✅ بلوک ${blockCount} معتبر: ${originalId} ➔ ${cleanId} (سطح: ${pack.level}, ${pack.words.length} کلمه)`, 'success');
+                    log(`✅ پک ${validCount}: ${originalId} ➔ ${cleanId} (${pack.level}, ${pack.words.length} کلمه)`, 'success');
 
                 } catch (e) {
-                    log(`⚠️ بلوک ${blockCount} JSON معتبر نبود (${e.message.substring(0, 60)})`, 'warning');
+                    // JSON معتبر نبود، نادیده بگیر
                 }
-            }
+            });
 
-            log(`\n📊 نتیجه: ${blockCount} بلوک بررسی شد، ${validCount} پک معتبر پیدا شد.`, validCount > 0 ? 'success' : 'error');
+            log(`\n📊 نتیجه: ${validCount} پک معتبر از ${jsonStrings.length} شیء JSON.`, validCount > 0 ? 'success' : 'error');
 
             if (foundPacks.length === 0) {
-                log('❌ هیچ پک معتبری پیدا نشد. مطمئن شوید کدها داخل ``` قرار دارند.', 'error');
+                log('❌ هیچ پک معتبری پیدا نشد.', 'error');
                 return;
             }
 
@@ -187,7 +226,6 @@
             const token = document.getElementById('token').value.trim();
             const user = "temsahak-rgb";
             const repo = "Dino-5monde";
-            const updateIndex = document.getElementById('updateIndex').checked;
 
             if (!token) {
                 log('❌ لطفاً GitHub Token را وارد کنید', 'error');
@@ -223,29 +261,25 @@
                     log(`  ✅ فایل آپلود شد: ${p.targetPath}`, 'success');
 
                     // ۲. به‌روزرسانی فهرست
-                    if (updateIndex) {
-                        try {
-                            const listFile = await githubGet(p.indexPath, token, user, repo);
-                            const list = JSON.parse(decodeURIComponent(escape(atob(listFile.content))));
-                            
-                            // حذف نسخه قدیمی
-                            const oldIndex = list.findIndex(item => item.id === p.originalId || item.id === p.cleanId);
-                            if (oldIndex >= 0) list.splice(oldIndex, 1);
-                            
-                            // افزودن نسخه جدید
-                            list.push({
-                                id: p.cleanId,
-                                title: p.data.theme || p.data.title,
-                                title_fa: p.data.theme_fa || p.data.title_fa,
-                                icon: p.data.icon,
-                                words: p.wordsCount
-                            });
-                            
-                            await githubPut(p.indexPath, JSON.stringify(list, null, 2), listFile.sha, token, user, repo, `📝 Update ${p.indexPath}`);
-                            log(`  ✅ فهرست به‌روز شد: ${p.indexPath}`, 'success');
-                        } catch (e) {
-                            log(`  ⚠️ خطا در فهرست: ${e.message}`, 'warning');
-                        }
+                    try {
+                        const listFile = await githubGet(p.indexPath, token, user, repo);
+                        const list = JSON.parse(decodeURIComponent(escape(atob(listFile.content))));
+                        
+                        const oldIndex = list.findIndex(item => item.id === p.originalId || item.id === p.cleanId);
+                        if (oldIndex >= 0) list.splice(oldIndex, 1);
+                        
+                        list.push({
+                            id: p.cleanId,
+                            title: p.data.theme || p.data.title,
+                            title_fa: p.data.theme_fa || p.data.title_fa,
+                            icon: p.data.icon,
+                            words: p.wordsCount
+                        });
+                        
+                        await githubPut(p.indexPath, JSON.stringify(list, null, 2), listFile.sha, token, user, repo, `📝 Update ${p.indexPath}`);
+                        log(`  ✅ فهرست به‌روز شد: ${p.indexPath}`, 'success');
+                    } catch (e) {
+                        log(`  ⚠️ خطا در فهرست: ${e.message}`, 'warning');
                     }
                     
                     await new Promise(r => setTimeout(r, 800));
