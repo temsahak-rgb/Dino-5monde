@@ -1,0 +1,680 @@
+{
+  "id": "perfumery_scents",
+  "level": "C1",
+  "theme": "Parfumerie, essences et art olfactif",
+  "theme_fa": "عطرسازی، اسانس‌ها و هنر بویایی",
+  "icon": "🌸",
+  "inspiration": "Le Parfum (Tom Tykwer, 2006)",
+  "words": [
+    {
+      "fr": "le parfum",
+      "fa": "عطر",
+      "emoji": "🌸",
+      "difficulty": 3,
+      "ex": "Ce parfum de niche est composé de plus de cent ingrédients.",
+      "ex_fa": "این عطر خاص از بیش از صد ماده تشکیل شده است."
+    },
+    {
+      "fr": "le nez",
+      "fa": "بینی، عطار (اصطلاح تخصصی)",
+      "emoji": "👃",
+      "difficulty": 4,
+      "ex": "Le nez de la maison de Grasse crée des fragrances mythiques.",
+      "ex_fa": "عطار (بینی) خانه عطر گراس، رایحه‌های افسانه‌ای خلق می‌کند."
+    },
+    {
+      "fr": "l'essence",
+      "fa": "اسانس",
+      "emoji": "💧",
+      "difficulty": 4,
+      "ex": "L'essence de rose bulgare coûte une fortune au kilo.",
+      "ex_fa": "اسانس گل رز بلغاری کیلویی ثروتی ارزش دارد."
+    },
+    {
+      "fr": "la note de tête",
+      "fa": "نت آغازین",
+      "emoji": "🍋",
+      "difficulty": 5,
+      "ex": "La note de tête, souvent agrumée, s'évapore en premier.",
+      "ex_fa": "نت آغازین که معمولاً مرکباتی است، اول تبخیر می‌شود."
+    },
+    {
+      "fr": "la note de cœur",
+      "fa": "نت میانی",
+      "emoji": "🌹",
+      "difficulty": 5,
+      "ex": "La note de cœur florale donne son caractère principal au parfum.",
+      "ex_fa": "نت میانی گلی، شخصیت اصلی عطر را می‌سازد."
+    },
+    {
+      "fr": "la note de fond",
+      "fa": "نت پایانی",
+      "emoji": "🪵",
+      "difficulty": 5,
+      "ex": "La note de fond boisée peut rester sur la peau pendant des jours.",
+      "ex_fa": "نت پایانی چوبی می‌تواند روزها روی پوست بماند."
+    },
+    {
+      "fr": "le flacon",
+      "fa": "شیشه عطر",
+      "emoji": "🍾",
+      "difficulty": 3,
+      "ex": "Le flacon en cristal a été dessiné par un artiste célèbre.",
+      "ex_fa": "شیشه عطر کریستالی توسط یک هنرمند مشهور طراحی شده است."
+    },
+    {
+      "fr": "l'alambic",
+      "fa": "دیگ تقطیر",
+      "emoji": "⚗️",
+      "difficulty": 5,
+      "ex": "Les pétales chauffent doucement dans l'alambic en cuivre.",
+      "ex_fa": "گلبرگ‌ها به آرامی در دیگ مسی تقطیر گرم می‌شوند."
+    },
+    {
+      "fr": "le sillage",
+      "fa": "رد بویایی (سیاژ)",
+      "emoji": "💨",
+      "difficulty": 5,
+      "ex": "Son sillage envoûtant attire les regards partout où elle passe.",
+      "ex_fa": "رد بویایی فریبنده او در هر کجا که می‌رود نگاه‌ها را جلب می‌کند."
+    },
+    {
+      "fr": "la distillation",
+      "fa": "تقطیر",
+      "emoji": "🔬",
+      "difficulty": 4,
+      "ex": "La distillation à la vapeur extrait les huiles essentielles des plantes.",
+      "ex_fa": "تقطیر با بخار، روغن‌های ضروری گیاهان را استخراج می‌کند."
+    },
+    {
+      "fr": "le musc",
+      "fa": "مشک",
+      "emoji": "🦌",
+      "difficulty": 4,
+      "ex": "Le musc synthétique remplace aujourd'hui le musc animal.",
+      "ex_fa": "مشک مصنوعی امروزه جایگزین مشک حیوانی شده است."
+    },
+    {
+      "fr": "l'absolue",
+      "fa": "مطلقه (عصاره غلیظ)",
+      "emoji": "🌺",
+      "difficulty": 5,
+      "ex": "L'absolue de jasmin est la matière la plus précieuse du parfumeur.",
+      "ex_fa": "مطلقه یاس، ارزشمندترین ماده برای عطار است."
+    },
+    {
+      "fr": "l'orgue",
+      "fa": "ارگ عطرسازی (میز کار)",
+      "emoji": "🎹",
+      "difficulty": 5,
+      "ex": "Le parfumeur compose ses accords devant son orgue rempli de fioles.",
+      "ex_fa": "عطار آکوردهای خود را جلوی ارگ پر از شیشه‌های کوچک می‌سازد."
+    },
+    {
+      "fr": "l'olfactif",
+      "fa": "بویایی",
+      "emoji": "👃",
+      "difficulty": 4,
+      "ex": "La mémoire olfactive est la plus puissante des mémoires sensorielles.",
+      "ex_fa": "حافظه بویایی قوی‌ترین حافظه حسی است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La quête de l'odeur parfaite",
+      "text": "Jean-Baptiste possède un don {{BLANK_14}} exceptionnel qui lui permet de tout sentir. Ce jeune {{BLANK_2}} de génie rêve de créer le {{BLANK_1}} parfait. Dans son laboratoire, il utilise un vieil {{BLANK_8}} en cuivre. Par la {{BLANK_10}} lente des fleurs, il extrait l'{{BLANK_3}} pure des roses de mai. Il compose ses mélanges sur son {{BLANK_13}}, entouré de centaines de fioles. D'abord, la {{BLANK_4}} fraîche et citronnée frappe l'odorat. Ensuite, la {{BLANK_5}} florale et épicée se révèle après quelques minutes. Enfin, la {{BLANK_6}} boisée et le {{BLANK_11}} animal fixent le mélange pour des heures. Il obtient une {{BLANK_12}} de jasmin d'une rare intensité. Il verse le liquide précieux dans un {{BLANK_7}} de cristal taillé. Quand il passe dans la rue, son {{BLANK_9}} invisible mais envoûtant fait se retourner les passants, fascinés par cette aura mystérieuse.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "parfum",
+          "options": [
+            "parfum",
+            "flacon",
+            "musc",
+            "sillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "nez",
+          "options": [
+            "nez",
+            "alambic",
+            "orgue",
+            "olfactif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "essence",
+          "options": [
+            "essence",
+            "note de tête",
+            "distillation",
+            "absolue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "note de tête",
+          "options": [
+            "note de tête",
+            "note de fond",
+            "note de cœur",
+            "nez"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "note de cœur",
+          "options": [
+            "note de cœur",
+            "note de tête",
+            "musc",
+            "sillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "note de fond",
+          "options": [
+            "note de fond",
+            "absolue",
+            "essence",
+            "flacon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "flacon",
+          "options": [
+            "flacon",
+            "alambic",
+            "orgue",
+            "parfum"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "alambic",
+          "options": [
+            "alambic",
+            "flacon",
+            "nez",
+            "sillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "sillage",
+          "options": [
+            "sillage",
+            "musc",
+            "note de tête",
+            "distillation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "distillation",
+          "options": [
+            "distillation",
+            "note de cœur",
+            "essence",
+            "olfactif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "musc",
+          "options": [
+            "musc",
+            "note de fond",
+            "flacon",
+            "alambic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "absolue",
+          "options": [
+            "absolue",
+            "note de tête",
+            "parfum",
+            "orgue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "orgue",
+          "options": [
+            "orgue",
+            "sillage",
+            "nez",
+            "distillation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "olfactif",
+          "options": [
+            "olfactif",
+            "flacon",
+            "musc",
+            "alambic"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'âme des fleurs",
+      "inspiration": "Le Parfum (Tom Tykwer, 2006)",
+      "text": "À peine Jean-Baptiste Grenouille eut-il respiré l'air fétide des halles de Paris qu'il sut que le monde n'était qu'une vaste partition {{BLANK_14}} attendant son maître. Ce monstre sans odeur propre, doté d'un {{BLANK_2}} surnaturel, méprisait les vulgaires eaux de toilette pour chercher l'âme même des choses. Dans l'ombre de son atelier, l'{{BLANK_8}} de cuivre bouillonnait, et par l'alchimie de la {{BLANK_10}}, il extorquait l'{{BLANK_3}} vitale des fleurs innocentes. Assis devant son {{BLANK_13}}, tel un démiurge fou, il assemblait la {{BLANK_4}} éphémère, la {{BLANK_5}} charnelle, et la {{BLANK_6}} ténébreuse où le {{BLANK_11}} et les bois pourris ancraient le désir. Il convoitait l'{{BLANK_12}} de la beauté absolue, cette goutte de rosée qui rendrait les mortels esclaves de son génie. Quand il scella enfin le liquide doré dans un {{BLANK_7}} de verre froid, il savait que son {{BLANK_9}} ne serait pas celui d'un simple {{BLANK_1}}, mais celui d'un dieu éphémère, prêt à enivrer la foule jusqu'à la dévorer dans un banquet d'amour et de mort.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "parfum",
+          "options": [
+            "parfum",
+            "flacon",
+            "musc",
+            "sillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "nez",
+          "options": [
+            "nez",
+            "alambic",
+            "orgue",
+            "olfactif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "essence",
+          "options": [
+            "essence",
+            "note de tête",
+            "distillation",
+            "absolue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "note de tête",
+          "options": [
+            "note de tête",
+            "note de fond",
+            "note de cœur",
+            "nez"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "note de cœur",
+          "options": [
+            "note de cœur",
+            "note de tête",
+            "musc",
+            "sillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "note de fond",
+          "options": [
+            "note de fond",
+            "absolue",
+            "essence",
+            "flacon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "flacon",
+          "options": [
+            "flacon",
+            "alambic",
+            "orgue",
+            "parfum"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "alambic",
+          "options": [
+            "alambic",
+            "flacon",
+            "nez",
+            "sillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "sillage",
+          "options": [
+            "sillage",
+            "musc",
+            "note de tête",
+            "distillation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "distillation",
+          "options": [
+            "distillation",
+            "note de cœur",
+            "essence",
+            "olfactif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "musc",
+          "options": [
+            "musc",
+            "note de fond",
+            "flacon",
+            "alambic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "absolue",
+          "options": [
+            "absolue",
+            "note de tête",
+            "parfum",
+            "orgue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "orgue",
+          "options": [
+            "orgue",
+            "sillage",
+            "nez",
+            "distillation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "olfactif",
+          "options": [
+            "olfactif",
+            "flacon",
+            "musc",
+            "alambic"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Parfumerie et essences",
+    "title_fa": "آزمون : عطرسازی و اسانس‌ها",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le produit cosmétique liquide ou solide composé d'extraits aromatiques et d'alcool, utilisé pour dégager une odeur agréable, est le ____.",
+        "options": [
+          "parfum",
+          "flacon",
+          "musc",
+          "sillage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محصول معطر = parfum."
+      },
+      {
+        "type": "mcq",
+        "question": "Le terme professionnel désignant le créateur et compositeur de parfums, doté d'un odorat exceptionnel, est le ____.",
+        "options": [
+          "nez",
+          "alambic",
+          "orgue",
+          "olfactif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عطار و خالق عطر = nez."
+      },
+      {
+        "type": "mcq",
+        "question": "Le liquide très concentré extrait d'une plante ou d'une fleur, qui contient son principe aromatique pur, est l'____.",
+        "options": [
+          "essence",
+          "note de tête",
+          "distillation",
+          "absolue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عصاره غلیظ و خالص = essence."
+      },
+      {
+        "type": "mcq",
+        "question": "La première impression olfactive d'un parfum, très volatile et souvent composée d'agrumes, est la ____.",
+        "options": [
+          "note de tête",
+          "note de fond",
+          "note de cœur",
+          "nez"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اولین رایحه‌ای که استشمام می‌شود = note de tête."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie centrale du parfum qui se développe après l'évaporation des notes de tête et qui en forme le thème principal est la ____.",
+        "options": [
+          "note de cœur",
+          "note de tête",
+          "musc",
+          "sillage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رایحه میانی و اصلی = note de cœur."
+      },
+      {
+        "type": "mcq",
+        "question": "Les composants lourds et tenaces d'un parfum (bois, résines) qui fixent la fragrance et persistent des heures sur la peau sont la ____.",
+        "options": [
+          "note de fond",
+          "absolue",
+          "essence",
+          "flacon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رایحه پایه و ماندگار = note de fond."
+      },
+      {
+        "type": "mcq",
+        "question": "Le contenant en verre ou en cristal, souvent très ouvragé, qui renferme le liquide odorant est le ____.",
+        "options": [
+          "flacon",
+          "alambic",
+          "orgue",
+          "parfum"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ظرف شیشه‌ای عطر = flacon."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil en verre ou en cuivre utilisé pour chauffer et séparer les composants d'un mélange liquide par évaporation et condensation est l'____.",
+        "options": [
+          "alambic",
+          "flacon",
+          "nez",
+          "sillage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه تقطیر = alambic."
+      },
+      {
+        "type": "mcq",
+        "question": "La trace odorante et persistante qu'un parfum laisse dans l'air sur le passage de la personne qui le porte est le ____.",
+        "options": [
+          "sillage",
+          "musc",
+          "note de tête",
+          "distillation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رد بویایی به جا مانده در هوا = sillage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le procédé chimique qui consiste à séparer les substances par ébullition puis récupération de la vapeur condensée est la ____.",
+        "options": [
+          "distillation",
+          "note de cœur",
+          "essence",
+          "olfactif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرآیند جداسازی با بخار = distillation."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance d'origine animale (ou synthétique) très tenace, utilisée comme fixateur pour prolonger la durée du parfum, est le ____.",
+        "options": [
+          "musc",
+          "note de fond",
+          "flacon",
+          "alambic"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده تثبیت‌کننده حیوانی/مصنوعی = musc."
+      },
+      {
+        "type": "mcq",
+        "question": "L'extrait floral pur et extrêmement concentré, obtenu par extraction aux solvants, est l'____.",
+        "options": [
+          "absolue",
+          "note de tête",
+          "parfum",
+          "orgue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عصاره خالص و غلیظ گل‌ها = absolue."
+      },
+      {
+        "type": "mcq",
+        "question": "Le meuble en gradins sur lequel le parfumeur dispose ses centaines de flacons de matières premières pour composer est l'____.",
+        "options": [
+          "orgue",
+          "sillage",
+          "nez",
+          "distillation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "میز کار پلکانی عطار = orgue."
+      },
+      {
+        "type": "mcq",
+        "question": "L'adjectif qui se rapporte au sens de l'odorat et à la perception des odeurs est ____.",
+        "options": [
+          "olfactif",
+          "flacon",
+          "musc",
+          "alambic"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مربوط به حس بویایی = olfactif."
+      },
+      {
+        "type": "binary",
+        "question": "La note de fond est la première odeur que l'on sent immédiatement après avoir vaporisé le parfum.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. نت آغازین (note de tête) اول استشمام می‌شود، نت پایانی ساعت‌ها بعد باقی می‌ماند."
+      },
+      {
+        "type": "binary",
+        "question": "Le nez est le surnom donné au maître parfumeur qui crée les fragrances grâce à son odorat exceptionnel.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. در صنعت عطر، به عطار و خالق رایحه «بینی» (nez) می‌گویند."
+      },
+      {
+        "type": "binary",
+        "question": "Le sillage désigne le contenant en verre dans lequel on conserve le parfum.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. شیشه عطر flacon نام دارد، اما sillage رد بویایی است که در هوا به جا می‌ماند."
+      },
+      {
+        "type": "binary",
+        "question": "L'orgue en parfumerie est l'étagère spécifique où sont classées toutes les matières premières du créateur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ارگ (orgue) میز یا قفسه‌ای است که شیشه‌های مواد اولیه عطار در آن چیده شده‌اند."
+      },
+      {
+        "type": "binary",
+        "question": "La distillation est une technique utilisée pour extraire les huiles essentielles des plantes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تقطیر یکی از روش‌های اصلی استخراج اسانس از گیاهان است."
+      },
+      {
+        "type": "binary",
+        "question": "L'absolue est une eau florale très diluée et peu concentrée utilisée pour les brumes légères.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. مطلقه (absolue) غلیظ‌ترین و خالص‌ترین عصاره معطر است، نه یک آب رقیق."
+      }
+    ]
+  }
+}
