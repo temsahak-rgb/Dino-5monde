@@ -1,0 +1,680 @@
+{
+  "id": "aeronautics_aviation",
+  "level": "C1",
+  "theme": "Aéronautique, aviation et vol",
+  "theme_fa": "هوانوردی، خلبانی و پرواز",
+  "icon": "✈️",
+  "inspiration": "Sully (Clint Eastwood, 2016)",
+  "words": [
+    {
+      "fr": "l'aéronautique",
+      "fa": "هوانوردی",
+      "emoji": "✈️",
+      "difficulty": 4,
+      "ex": "L'aéronautique englobe la conception et le pilotage des aéronefs.",
+      "ex_fa": "هوانوردی شامل طراحی و خلبانی هواگردها است."
+    },
+    {
+      "fr": "le cockpit",
+      "fa": "کابین خلبان",
+      "emoji": "🎛️",
+      "difficulty": 4,
+      "ex": "Le cockpit est rempli d'instruments de navigation complexes.",
+      "ex_fa": "کابین خلبان پر از ابزارهای پیچیده ناوبری است."
+    },
+    {
+      "fr": "le fuselage",
+      "fa": "بدنه هواپیما",
+      "emoji": "🛩️",
+      "difficulty": 4,
+      "ex": "Le fuselage de l'Airbus peut accueillir plus de 300 passagers.",
+      "ex_fa": "بدنه ایرباس می‌تواند بیش از ۳۰۰ مسافر را جای دهد."
+    },
+    {
+      "fr": "le réacteur",
+      "fa": "موتور جت",
+      "emoji": "🔥",
+      "difficulty": 4,
+      "ex": "Le réacteur gauche a subi une panne catastrophique.",
+      "ex_fa": "موتور جت سمت چپ دچار نقص فنی فاجعه‌باری شد."
+    },
+    {
+      "fr": "la turbulence",
+      "fa": "تلاطم، چاله هوایی",
+      "emoji": "🌪️",
+      "difficulty": 3,
+      "ex": "L'avion a traversé une zone de forte turbulence.",
+      "ex_fa": "هواپیما از یک منطقه پرتلاطم عبور کرد."
+    },
+    {
+      "fr": "le décollage",
+      "fa": "برخاست (تیک‌آف)",
+      "emoji": "🛫",
+      "difficulty": 3,
+      "ex": "Le décollage s'est déroulé sans incident depuis la piste 4.",
+      "ex_fa": "برخاست از باند ۴ بدون هیچ حادثه‌ای انجام شد."
+    },
+    {
+      "fr": "l'atterrissage",
+      "fa": "فرود",
+      "emoji": "🛬",
+      "difficulty": 3,
+      "ex": "L'atterrissage d'urgence sur l'eau a sauvé toutes les vies.",
+      "ex_fa": "فرود اضطراری روی آب جان همه را نجات داد."
+    },
+    {
+      "fr": "le contrôle aérien",
+      "fa": "کنترل ترافیک هوایی",
+      "emoji": "📡",
+      "difficulty": 5,
+      "ex": "Le contrôle aérien a guidé l'avion vers l'aéroport le plus proche.",
+      "ex_fa": "کنترل هوایی، هواپیما را به نزدیک‌ترین فرودگاه هدایت کرد."
+    },
+    {
+      "fr": "la piste",
+      "fa": "باند فرودگاه",
+      "emoji": "🛣️",
+      "difficulty": 3,
+      "ex": "La piste était trop courte pour un atterrissage sécurisé.",
+      "ex_fa": "باند برای یک فرود ایمن خیلی کوتاه بود."
+    },
+    {
+      "fr": "l'altitude",
+      "fa": "ارتفاع",
+      "emoji": "📏",
+      "difficulty": 3,
+      "ex": "L'avion a perdu rapidement de l'altitude après la collision.",
+      "ex_fa": "هواپیما پس از برخورد به سرعت ارتفاع از دست داد."
+    },
+    {
+      "fr": "le manche",
+      "fa": "دسته هدایت (استیک)",
+      "emoji": "🕹️",
+      "difficulty": 4,
+      "ex": "Le pilote a tiré sur le manche pour redresser l'appareil.",
+      "ex_fa": "خلبان دسته را به عقب کشید تا هواپیما را صاف کند."
+    },
+    {
+      "fr": "le radar",
+      "fa": "رادار",
+      "emoji": "📡",
+      "difficulty": 3,
+      "ex": "Le radar météo a détecté un orage sur la trajectoire.",
+      "ex_fa": "رادار هواشناسی یک طوفان را در مسیر شناسایی کرد."
+    },
+    {
+      "fr": "le kérosène",
+      "fa": "سوخت جت (کروزن)",
+      "emoji": "⛽",
+      "difficulty": 4,
+      "ex": "Les réservoirs de kérosène étaient presque vides.",
+      "ex_fa": "مخازن سوخت جت تقریباً خالی بودند."
+    },
+    {
+      "fr": "le pilote automatique",
+      "fa": "خلبان خودکار",
+      "emoji": "🤖",
+      "difficulty": 4,
+      "ex": "Le pilote automatique a été désengagé pour la manœuvre finale.",
+      "ex_fa": "خلبان خودکار برای مانور نهایی غیرفعال شد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le miracle de l'Hudson",
+      "text": "Chesley Sullenberger est un vétéran de l'{{BLANK_1}}. En ce matin de janvier, il est aux commandes dans le {{BLANK_2}} d'un Airbus A320. Le {{BLANK_3}} transporte 155 passagers au-dessus de New York. Quelques minutes après le {{BLANK_6}}, un vol d'oiseaux percute le {{BLANK_4}} droit et gauche. Les deux moteurs s'éteignent simultanément. L'avion traverse une violente {{BLANK_5}} et perd rapidement de l'{{BLANK_10}}. Sully saisit fermement le {{BLANK_11}} pour garder le contrôle. Il contacte le {{BLANK_8}} qui lui propose un retour immédiat sur la {{BLANK_9}} de LaGuardia. Mais Sully sait que l'altitude est trop basse et qu'il n'y a plus assez de {{BLANK_13}}. Il désactive le {{BLANK_14}} pour prendre les commandes manuelles. Le {{BLANK_12}} ne montre aucun obstacle sur le fleuve Hudson. Il prend une décision historique : un {{BLANK_7}} d'urgence sur l'eau glacée. L'avion glisse sur le fleuve et s'immobilise. Tous les passagers sont évacués sains et saufs. Sully devient un héros national pour son sang-froid exceptionnel.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "aéronautique",
+          "options": [
+            "aéronautique",
+            "cockpit",
+            "fuselage",
+            "réacteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "cockpit",
+          "options": [
+            "cockpit",
+            "turbulence",
+            "décollage",
+            "atterrissage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fuselage",
+          "options": [
+            "fuselage",
+            "contrôle aérien",
+            "piste",
+            "altitude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "réacteur",
+          "options": [
+            "réacteur",
+            "manche",
+            "radar",
+            "kérosène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "turbulence",
+          "options": [
+            "turbulence",
+            "pilote automatique",
+            "aéronautique",
+            "cockpit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "décollage",
+          "options": [
+            "décollage",
+            "fuselage",
+            "réacteur",
+            "turbulence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "atterrissage",
+          "options": [
+            "atterrissage",
+            "contrôle aérien",
+            "piste",
+            "altitude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "contrôle aérien",
+          "options": [
+            "contrôle aérien",
+            "manche",
+            "radar",
+            "kérosène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "piste",
+          "options": [
+            "piste",
+            "pilote automatique",
+            "aéronautique",
+            "cockpit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "altitude",
+          "options": [
+            "altitude",
+            "fuselage",
+            "réacteur",
+            "turbulence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "manche",
+          "options": [
+            "manche",
+            "décollage",
+            "atterrissage",
+            "contrôle aérien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "radar",
+          "options": [
+            "radar",
+            "piste",
+            "altitude",
+            "manche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "kérosène",
+          "options": [
+            "kérosène",
+            "pilote automatique",
+            "aéronautique",
+            "cockpit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "pilote automatique",
+          "options": [
+            "pilote automatique",
+            "fuselage",
+            "réacteur",
+            "turbulence"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le silence des moteurs",
+      "inspiration": "Sully (Clint Eastwood, 2016)",
+      "text": "À peine Sully eut-il senti le train d'atterrissage quitter le béton de LaGuardia qu'un silence terrifiant envahit le {{BLANK_2}}. Ce vétéran de l'{{BLANK_1}}, qui avait consacré sa vie à maîtriser les lois de l'air, sentit soudain le {{BLANK_3}} de son Airbus vibrer sous un choc violent. Une nuée d'oies sauvages venait de s'engouffrer dans chaque {{BLANK_4}}, étouffant les turbines dans un cri métallique. L'avion, privé de sa force motrice, traversa une {{BLANK_5}} invisible et commença à sombrer. L'{{BLANK_10}} fondait à vue d'œil, les chiffres rouges des écrans dégringolaient comme un compte à rebours mortel. Sully, d'une main ferme, empoigna le {{BLANK_11}}, refusant de laisser la machine devenir un cercueil de métal. La voix du {{BLANK_8}} grésilla dans son casque, lui ordonnant de tenter un retour désespéré sur la {{BLANK_9}} la plus proche. Mais Sully, avec l'instinct de quarante années de vol, sut que le {{BLANK_13}} manquait et que la physique ne pardonnait pas. Il débraya le {{BLANK_14}}, reprenant le contrôle total de son destin et de celui des 155 âmes à bord. Ses yeux scannèrent le {{BLANK_12}} et les hublots : aucun aéroport n'était atteignable, seul le fleuve Hudson offrait une dernière chance. Il aligna le nez de l'appareil sur l'eau grise, transformant le {{BLANK_6}} raté en un {{BLANK_7}} d'urgence sur un miroir liquide. Quand le fuselage toucha l'eau dans une gerbe d'écume, le silence revint, suivi par le miracle : personne n'avait péri. Sully avait compris que la véritable maîtrise n'était pas de dompter les machines, mais de garder son calme quand le ciel vous abandonne.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "aéronautique",
+          "options": [
+            "aéronautique",
+            "cockpit",
+            "fuselage",
+            "réacteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "cockpit",
+          "options": [
+            "cockpit",
+            "turbulence",
+            "décollage",
+            "atterrissage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fuselage",
+          "options": [
+            "fuselage",
+            "contrôle aérien",
+            "piste",
+            "altitude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "réacteur",
+          "options": [
+            "réacteur",
+            "manche",
+            "radar",
+            "kérosène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "turbulence",
+          "options": [
+            "turbulence",
+            "pilote automatique",
+            "aéronautique",
+            "cockpit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "décollage",
+          "options": [
+            "décollage",
+            "fuselage",
+            "réacteur",
+            "turbulence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "atterrissage",
+          "options": [
+            "atterrissage",
+            "contrôle aérien",
+            "piste",
+            "altitude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "contrôle aérien",
+          "options": [
+            "contrôle aérien",
+            "manche",
+            "radar",
+            "kérosène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "piste",
+          "options": [
+            "piste",
+            "pilote automatique",
+            "aéronautique",
+            "cockpit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "altitude",
+          "options": [
+            "altitude",
+            "fuselage",
+            "réacteur",
+            "turbulence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "manche",
+          "options": [
+            "manche",
+            "décollage",
+            "atterrissage",
+            "contrôle aérien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "radar",
+          "options": [
+            "radar",
+            "piste",
+            "altitude",
+            "manche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "kérosène",
+          "options": [
+            "kérosène",
+            "pilote automatique",
+            "aéronautique",
+            "cockpit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "pilote automatique",
+          "options": [
+            "pilote automatique",
+            "fuselage",
+            "réacteur",
+            "turbulence"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Aéronautique et aviation",
+    "title_fa": "آزمون : هوانوردی و خلبانی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science et la technique de la navigation et du déplacement dans l'atmosphère terrestre est l'____.",
+        "options": [
+          "aéronautique",
+          "cockpit",
+          "fuselage",
+          "réacteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم و فنون پرواز در جو = aéronautique."
+      },
+      {
+        "type": "mcq",
+        "question": "L'habitacle situé à l'avant de l'avion où se trouvent les commandes et les pilotes est le ____.",
+        "options": [
+          "cockpit",
+          "turbulence",
+          "décollage",
+          "atterrissage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کابین خلبان = cockpit."
+      },
+      {
+        "type": "mcq",
+        "question": "Le corps principal de l'avion qui contient la cabine des passagers et la soute est le ____.",
+        "options": [
+          "fuselage",
+          "contrôle aérien",
+          "piste",
+          "altitude"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بدنه اصلی هواپیما = fuselage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le moteur à réaction qui propulse les avions modernes en éjectant des gaz à grande vitesse est le ____.",
+        "options": [
+          "réacteur",
+          "manche",
+          "radar",
+          "kérosène"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "موتور جت = réacteur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'agitation irrégulière de l'air qui provoque des secousses en vol est la ____.",
+        "options": [
+          "turbulence",
+          "pilote automatique",
+          "aéronautique",
+          "cockpit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تلاطم و چاله هوایی = turbulence."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action pour un aéronef de quitter le sol et de s'élever dans les airs est le ____.",
+        "options": [
+          "décollage",
+          "fuselage",
+          "réacteur",
+          "turbulence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برخاستن از زمین = décollage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action pour un aéronef de se poser sur le sol ou sur l'eau est l'____.",
+        "options": [
+          "atterrissage",
+          "contrôle aérien",
+          "piste",
+          "altitude"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نشستن روی زمین یا آب = atterrissage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le service au sol chargé de guider et de réguler le trafic des avions dans le ciel est le ____.",
+        "options": [
+          "contrôle aérien",
+          "manche",
+          "radar",
+          "kérosène"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کنترل ترافیک هوایی = contrôle aérien."
+      },
+      {
+        "type": "mcq",
+        "question": "La bande de terrain aménagée et nivelée pour permettre le décollage et l'atterrissage des avions est la ____.",
+        "options": [
+          "piste",
+          "pilote automatique",
+          "aéronautique",
+          "cockpit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باند فرودگاه = piste."
+      },
+      {
+        "type": "mcq",
+        "question": "La hauteur de vol d'un aéronef par rapport au niveau de la mer ou au sol est l'____.",
+        "options": [
+          "altitude",
+          "fuselage",
+          "réacteur",
+          "turbulence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارتفاع پرواز = altitude."
+      },
+      {
+        "type": "mcq",
+        "question": "Le levier de commande manuel que le pilote manipule pour diriger l'avion est le ____.",
+        "options": [
+          "manche",
+          "décollage",
+          "atterrissage",
+          "contrôle aérien"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دسته هدایت هواپیما = manche."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système de détection qui utilise des ondes radio pour localiser les objets et les obstacles est le ____.",
+        "options": [
+          "radar",
+          "piste",
+          "altitude",
+          "manche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم ردیابی امواج رادیویی = radar."
+      },
+      {
+        "type": "mcq",
+        "question": "Le combustible liquide spécifique utilisé pour alimenter les moteurs des avions à réaction est le ____.",
+        "options": [
+          "kérosène",
+          "pilote automatique",
+          "aéronautique",
+          "cockpit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سوخت مخصوص موتور جت = kérosène."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système informatique qui permet à l'avion de voler et de suivre sa route sans intervention constante du pilote est le ____.",
+        "options": [
+          "pilote automatique",
+          "fuselage",
+          "réacteur",
+          "turbulence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم پرواز خودکار = pilote automatique."
+      },
+      {
+        "type": "binary",
+        "question": "Le fuselage est la partie de l'avion qui contient les moteurs à réaction.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. موتورها معمولاً زیر بال‌ها یا در دم نصب می‌شوند؛ بدنه (fuselage) جایگاه مسافران است."
+      },
+      {
+        "type": "binary",
+        "question": "Le kérosène est un type de carburant spécialement formulé pour les moteurs d'avion.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کروزن سوخت استاندارد هوانوردی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le contrôle aérien est responsable de la maintenance mécanique des avions au sol.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کنترل هوایی وظیفه هدایت و تنظیم ترافیک پروازها را دارد، نه تعمیرات."
+      },
+      {
+        "type": "binary",
+        "question": "Le manche est l'organe de commande que le pilote utilise pour incliner et diriger l'avion.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دسته (manche) برای کنترل جهت و شیب هواپیما استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Une turbulence est une zone de vide absolu où l'avion ne peut plus voler.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تلاطم (turbulence) فقط ناپایداری و حرکات نامنظم هواست، نه خلأ."
+      },
+      {
+        "type": "binary",
+        "question": "Le pilote automatique peut gérer la trajectoire de vol, permettant aux pilotes de surveiller les instruments.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. خلبان خودکار مسیر را مدیریت می‌کند و خلبانان بر آن نظارت دارند."
+      }
+    ]
+  }
+}
