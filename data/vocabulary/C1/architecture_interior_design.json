@@ -1,0 +1,650 @@
+{
+  "id": "architecture_interior_design",
+  "level": "C1",
+  "theme": "Architecture, design d'intérieur et habitat",
+  "theme_fa": "معماری، طراحی داخلی و مسکن",
+  "icon": "🏠",
+  "inspiration": "Parasite (Bong Joon-ho, 2019)",
+  "words": [
+    {
+      "fr": "la mezzanine",
+      "fa": "نیم‌طبقه",
+      "emoji": "🏗️",
+      "difficulty": 4,
+      "ex": "La mezzanine offre un espace de travail supplémentaire.",
+      "ex_fa": "نیم‌طبقه فضای کاری اضافی ارائه می‌دهد."
+    },
+    {
+      "fr": "le parquet",
+      "fa": "پارکت، کفپوش چوبی",
+      "emoji": "🪵",
+      "difficulty": 4,
+      "ex": "Le parquet en chêne massif donne du cachet à la pièce.",
+      "ex_fa": "پارکت بلوط جامد به اتاق شخصیت می‌دهد."
+    },
+    {
+      "fr": "la verrière",
+      "fa": "سقف شیشه‌ای",
+      "emoji": "🪟",
+      "difficulty": 4,
+      "ex": "La verrière inonde le salon de lumière naturelle.",
+      "ex_fa": "سقف شیشه‌ای اتاق نشیمن را از نور طبیعی سرشار می‌کند."
+    },
+    {
+      "fr": "le placard",
+      "fa": "کمد دیواری",
+      "emoji": "🚪",
+      "difficulty": 3,
+      "ex": "Les placards intégrés optimisent l'espace de rangement.",
+      "ex_fa": "کمدهای توکار فضای نگهداری را بهینه می‌کنند."
+    },
+    {
+      "fr": "la cloison",
+      "fa": "دیوار جداکننده",
+      "emoji": "🧱",
+      "difficulty": 4,
+      "ex": "Une cloison amovible sépare le salon de la salle à manger.",
+      "ex_fa": "یک دیوار متحرک اتاق نشیمن را از ناهارخوری جدا می‌کند."
+    },
+    {
+      "fr": "le linoléum",
+      "fa": "کفپوش لینولئوم",
+      "emoji": "🟫",
+      "difficulty": 5,
+      "ex": "Le linoléum est un revêtement écologique et durable.",
+      "ex_fa": "لینولئوم یک پوشش اکولوژیک و بادوام است."
+    },
+    {
+      "fr": "la mansarde",
+      "fa": "اتاق زیرشیروانی",
+      "emoji": "🏚️",
+      "difficulty": 5,
+      "ex": "La mansarde a été transformée en chambre d'amis.",
+      "ex_fa": "اتاق زیرشیروانی به اتاق مهمان تبدیل شده است."
+    },
+    {
+      "fr": "l'alcôve",
+      "fa": "طاقچه، گوشه دنج",
+      "emoji": "🛏️",
+      "difficulty": 5,
+      "ex": "L'alcôve abrite un lit dissimulé derrière des rideaux.",
+      "ex_fa": "طاقچه تختی را پشت پرده‌ها پنهان می‌کند."
+    },
+    {
+      "fr": "le palier",
+      "fa": "پاگرد (طبقه بین دو راه‌پله)",
+      "emoji": "🪜",
+      "difficulty": 4,
+      "ex": "Les voisins se croisent souvent sur le palier.",
+      "ex_fa": "همسایه‌ها اغلب روی پاگرد به هم برمی‌خورند."
+    },
+    {
+      "fr": "la plinthe",
+      "fa": "قرنیز",
+      "emoji": "📏",
+      "difficulty": 5,
+      "ex": "Les plinthes blanches contrastent avec le mur gris.",
+      "ex_fa": "قرنیزهای سفید با دیوار خاکستری تضاد دارند."
+    },
+    {
+      "fr": "le bow-window",
+      "fa": "پنجره بیرون‌زده",
+      "emoji": "🪟",
+      "difficulty": 5,
+      "ex": "Le bow-window offre une vue panoramique sur le jardin.",
+      "ex_fa": "پنجره بیرون‌زده چشم‌انداز پانوراما از باغ را می‌دهد."
+    },
+    {
+      "fr": "la buanderie",
+      "fa": "رختشوی‌خانه",
+      "emoji": "👕",
+      "difficulty": 4,
+      "ex": "La buanderie est équipée d'un lave-linge et d'un sèche-linge.",
+      "ex_fa": "رختشوی‌خانه به ماشین لباسشویی و خشک‌کن مجهز است."
+    },
+    {
+      "fr": "le cellier",
+      "fa": "انباری، زیرزمین نگهداری",
+      "emoji": "🍷",
+      "difficulty": 4,
+      "ex": "Le cellier conserve le vin à température idéale.",
+      "ex_fa": "انباری شراب را در دمای ایده‌آل نگه می‌دارد."
+    },
+    {
+      "fr": "la véranda",
+      "fa": "ایوان شیشه‌ای",
+      "emoji": "🌿",
+      "difficulty": 4,
+      "ex": "La véranda prolonge le salon vers le jardin.",
+      "ex_fa": "ایوان شیشه‌ای اتاق نشیمن را به باغ متصل می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La maison moderne",
+      "title_fa": "خانه مدرن",
+      "text": "La famille Park emménage dans une villa contemporaine conçue par un architecte célèbre. Au rez-de-chaussée, une immense {{BLANK_1}} inonde le salon de lumière. Le sol est recouvert d'un {{BLANK_2}} en chêne massif qui craque légèrement sous les pas. Une {{BLANK_3}} en verre sépare élégamment la cuisine ouverte du salon. À l'étage, une {{BLANK_4}} surplombe le séjour, créant un espace bibliothèque. Les chambres sont équipées de {{BLANK_5}} intégrés qui maximisent le rangement. Dans la chambre principale, une {{BLANK_6}} confortable abrite le lit. Au sous-sol, un {{BLANK_7}} climatisé conserve les bouteilles précieuses. La {{BLANK_8}} moderne accueille lave-linge et sèche-linge. Une {{BLANK_9}} vitrée permet de profiter du jardin même en hiver. À l'extérieur, un {{BLANK_10}} offre une vue imprenable sur le parc. Les enfants adorent jouer sur le {{BLANK_11}} entre les étages. Dans les combles, une ancienne {{BLANK_12}} a été transformée en salle de jeux. Les {{BLANK_13}} blanches dessinent des lignes épurées le long des murs. La famille apprécie cette maison où chaque détail a été pensé pour le confort moderne.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "verrière",
+          "options": [
+            "verrière",
+            "mezzanine",
+            "alcôve",
+            "véranda"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "parquet",
+          "options": [
+            "parquet",
+            "linoléum",
+            "placard",
+            "cellier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "cloison",
+          "options": [
+            "cloison",
+            "plinthe",
+            "mansarde",
+            "bow-window"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "mezzanine",
+          "options": [
+            "mezzanine",
+            "buanderie",
+            "palier",
+            "alcôve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "placards",
+          "options": [
+            "placards",
+            "plinthes",
+            "cloisons",
+            "parquets"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "alcôve",
+          "options": [
+            "alcôve",
+            "véranda",
+            "mansarde",
+            "cellier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "cellier",
+          "options": [
+            "cellier",
+            "palier",
+            "buanderie",
+            "bow-window"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "buanderie",
+          "options": [
+            "buanderie",
+            "mezzanine",
+            "verrière",
+            "alcôve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "véranda",
+          "options": [
+            "véranda",
+            "cloison",
+            "mansarde",
+            "plinthe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "bow-window",
+          "options": [
+            "bow-window",
+            "parquet",
+            "placard",
+            "cellier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "palier",
+          "options": [
+            "palier",
+            "linoléum",
+            "verrière",
+            "alcôve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "mansarde",
+          "options": [
+            "mansarde",
+            "buanderie",
+            "véranda",
+            "cloison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "plinthes",
+          "options": [
+            "plinthes",
+            "parquets",
+            "cloisons",
+            "placards"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La ligne invisible",
+      "title_fa": "خط نامرئی",
+      "inspiration": "Parasite (Bong Joon-ho, 2019)",
+      "text": "À peine la famille Kim eut-elle franchi le seuil de la villa Park que l'abîme social se matérialisa sous leurs pieds. Le {{BLANK_1}} en chêne massif, poli comme un miroir, reflétait leur pauvreté avec une cruauté involontaire. Eux qui vivaient dans un sous-sol insalubre, où le {{BLANK_2}} bon marché se décollait par plaques entières, contemplaient maintenant ce luxe insolent. La {{BLANK_3}} qui séparait la cuisine du salon était d'une transparence arrogante, comme si les riches n'avaient rien à cacher, contrairement aux pauvres qui devaient dissimuler leur misère. Monsieur Park, le père de famille, descendit l'escalier monumental et s'arrêta sur le {{BLANK_4}} pour saluer ses nouveaux employés. Il ne remarqua pas que Ki-taek, le chauffeur, observait chaque détail avec une précision de prédateur. La {{BLANK_5}} qui surplombait le séjour offrait une vue plongeante sur le salon, comme une loge de théâtre d'où l'on pouvait observer sans être vu. Les {{BLANK_6}} intégrés dissimulaient des trésors : porcelaine de Chine, argenterie ancienne, vêtements griffés. Dans la chambre principale, une {{BLANK_7}} profonde abritait le lit king-size, créant un cocon de luxe inaccessible aux Kim. Au sous-sol, un {{BLANK_8}} climatisé alignait des bouteilles de vin dont une seule coûtait le salaire mensuel de toute la famille. La {{BLANK_9}} moderne, avec ses machines dernier cri, contrastait avec le lavoir commun où les Kim faisaient leur lessive. Une {{BLANK_10}} vitrée prolongeait le salon vers le jardin immaculé, effaçant la frontière entre intérieur et extérieur, entre privé et public. De là, on pouvait voir le {{BLANK_11}} qui avançait comme une proue de navire vers le parc verdoyant. Mais ce que les Park ignoraient, c'est qu'une autre famille vivait cachée dans leur maison. Dans une ancienne {{BLANK_12}} transformée en bunker secret, sous les {{BLANK_13}} blanches et les apparences parfaites, un homme survivait depuis des années, nourri clandestinement par sa femme, la gouvernante. La maison, avec ses espaces ouverts et ses transparences, cachait en réalité des secrets inavouables. Les Kim, en infiltrant la famille Park un par un, ne faisaient que reproduire ce que d'autres avaient fait avant eux. La ligne invisible qui séparait les riches des pauvres n'était pas seulement sociale : elle était architecturale, spatiale, olfactive. Et quand la violence éclata enfin, ce fut dans ce salon baigné de lumière, sur ce parquet ciré, que le sang coula, révélant que les murs les plus transparents sont parfois les plus infranchissables.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "parquet",
+          "options": [
+            "parquet",
+            "linoléum",
+            "placard",
+            "cellier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "linoléum",
+          "options": [
+            "linoléum",
+            "parquet",
+            "cloison",
+            "verrière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "cloison",
+          "options": [
+            "cloison",
+            "plinthe",
+            "mansarde",
+            "bow-window"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "palier",
+          "options": [
+            "palier",
+            "linoléum",
+            "verrière",
+            "alcôve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mezzanine",
+          "options": [
+            "mezzanine",
+            "buanderie",
+            "véranda",
+            "alcôve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "placards",
+          "options": [
+            "placards",
+            "plinthes",
+            "cloisons",
+            "parquets"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "alcôve",
+          "options": [
+            "alcôve",
+            "véranda",
+            "mansarde",
+            "cellier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "cellier",
+          "options": [
+            "cellier",
+            "palier",
+            "buanderie",
+            "bow-window"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "buanderie",
+          "options": [
+            "buanderie",
+            "mezzanine",
+            "verrière",
+            "alcôve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "véranda",
+          "options": [
+            "véranda",
+            "cloison",
+            "mansarde",
+            "plinthe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "bow-window",
+          "options": [
+            "bow-window",
+            "parquet",
+            "placard",
+            "cellier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "mansarde",
+          "options": [
+            "mansarde",
+            "buanderie",
+            "véranda",
+            "cloison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "plinthes",
+          "options": [
+            "plinthes",
+            "parquets",
+            "cloisons",
+            "placards"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Architecture intérieure et habitat",
+    "title_fa": "آزمون : معماری داخلی و مسکن",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Cette plateforme intermédiaire entre deux étages, souvent utilisée comme espace de travail ou de lecture, est une ____.",
+        "options": [
+          "mezzanine",
+          "buanderie",
+          "véranda",
+          "alcôve"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نیم‌طبقه بین دو طبقه = mezzanine."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce revêtement de sol composé de lames de bois massif ou contrecollé est un ____.",
+        "options": [
+          "parquet",
+          "linoléum",
+          "placard",
+          "cellier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کفپوش چوبی = parquet."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette toiture transparente en verre qui laisse passer la lumière naturelle dans une pièce est une ____.",
+        "options": [
+          "verrière",
+          "mezzanine",
+          "alcôve",
+          "véranda"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سقف شیشه‌ای نورگیر = verrière."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce meuble de rangement encastré dans le mur, avec des portes, est un ____.",
+        "options": [
+          "placard",
+          "linoléum",
+          "cellier",
+          "palier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کمد دیواری = placard."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce mur léger et non porteur qui sert à diviser l'espace intérieur est une ____.",
+        "options": [
+          "cloison",
+          "plinthe",
+          "mansarde",
+          "bow-window"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دیوار جداکننده سبک = cloison."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce revêtement de sol écologique fabriqué à partir d'huile de lin et de liège est le ____.",
+        "options": [
+          "linoléum",
+          "parquet",
+          "placard",
+          "cellier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کفپوش اکولوژیک از روغن بزرک = linoléum."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette pièce aménagée sous les combles, souvent avec des fenêtres de toit, est une ____.",
+        "options": [
+          "mansarde",
+          "buanderie",
+          "véranda",
+          "cloison"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اتاق زیر شیروانی = mansarde."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce renfoncement dans un mur, souvent utilisé pour y placer un lit, est une ____.",
+        "options": [
+          "alcôve",
+          "véranda",
+          "mezzanine",
+          "cellier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طاقچه و گوشه دنج = alcôve."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette plateforme horizontale située entre deux volées d'escalier est un ____.",
+        "options": [
+          "palier",
+          "linoléum",
+          "verrière",
+          "alcôve"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پاگرد راه‌پله = palier."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette bande décorative qui couvre le joint entre le mur et le sol est une ____.",
+        "options": [
+          "plinthe",
+          "cloison",
+          "mansarde",
+          "bow-window"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قرنیز دیوار = plinthe."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette fenêtre en saillie qui avance sur la façade et offre une vue panoramique est un ____.",
+        "options": [
+          "bow-window",
+          "parquet",
+          "placard",
+          "cellier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پنجره بیرون‌زده = bow-window."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette pièce équipée pour faire la lessive, avec machine à laver et étendoir, est une ____.",
+        "options": [
+          "buanderie",
+          "mezzanine",
+          "verrière",
+          "alcôve"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رختشوی‌خانه = buanderie."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette petite cave ou réserve où l'on conserve le vin et les provisions est un ____.",
+        "options": [
+          "cellier",
+          "palier",
+          "buanderie",
+          "bow-window"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انباری شراب و آذوقه = cellier."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette galerie vitrée attenante à une maison, qui prolonge l'espace de vie vers l'extérieur, est une ____.",
+        "options": [
+          "véranda",
+          "cloison",
+          "mansarde",
+          "plinthe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ایوان شیشه‌ای = véranda."
+      },
+      {
+        "type": "binary",
+        "question": "Une mezzanine et un palier désignent tous deux une plateforme intermédiaire dans un escalier.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. mezzanine نیم‌طبقه مسکونی است، palier پاگرد راه‌پله."
+      },
+      {
+        "type": "binary",
+        "question": "Le linoléum est un matériau synthétique dérivé du plastique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. linoléum ماده‌ای طبیعی از روغن بزرک، چوب‌پنبه و صمغ است."
+      },
+      {
+        "type": "binary",
+        "question": "Une cloison est un mur porteur qui soutient la structure du bâtiment.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. cloison دیوار جداکننده سبک و غیرحامل است."
+      },
+      {
+        "type": "binary",
+        "question": "L'alcôve désigne un renfoncement dans une pièce, souvent utilisé pour y placer un lit.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. alcôve طاقچه‌ای است که معمولاً تخت در آن قرار می‌گیرد."
+      },
+      {
+        "type": "binary",
+        "question": "La véranda et la verrière sont toutes deux des structures vitrées.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هر دو شامل شیشه هستند، اما کاربردهای متفاوت دارند."
+      }
+    ]
+  }
+}
