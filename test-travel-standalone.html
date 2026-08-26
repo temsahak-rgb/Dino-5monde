@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تست مستقل سفر</title>
+    <style>
+        body { font-family: Tahoma; padding: 20px; background: #f5f5f5; margin: 0; }
+        .container { max-width: 960px; margin: 0 auto; }
+        h1 { color: #087F5B; }
+        .card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; margin: 15px 0; cursor: pointer; transition: all 0.2s; }
+        .card:hover { border-color: #087F5B; transform: translateY(-4px); }
+        .card-content { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; margin: 15px 0; }
+        .word-card { background: #f9fafb; border: 1px solid #e0e0e0; border-radius: 8px; padding: 16px; margin: 10px 0; }
+        .back-btn { background: #087F5B; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: 700; margin-bottom: 20px; }
+        .error { background: #fef2f2; border: 2px solid #dc2626; padding: 20px; border-radius: 8px; margin: 20px 0; }
+        .success { background: #d1fae5; border: 2px solid #087F5B; padding: 20px; border-radius: 8px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 تست مستقل بخش سفر</h1>
+        <p style="color:#777;">این صفحه هیچ ربطی به travel.js یا router.js ندارد. فقط lessons.json را می‌خواند.</p>
+        
+        <div id="app"></div>
+    </div>
+    
+    <script>
+        const app = document.getElementById('app');
+        
+        async function showList() {
+            app.innerHTML = '<p>⏳ در حال خواندن lessons.json...</p>';
+            
+            try {
+                const res = await fetch('./data/travel/lessons.json?v=' + Date.now());
+                if (!res.ok) throw new Error('lessons.json not found');
+                
+                const lessons = await res.json();
+                
+                if (!Array.isArray(lessons) || lessons.length === 0) {
+                    app.innerHTML = '<div class="error">❌ فایل lessons.json خالی یا نامعتبر است!</div>';
+                    return;
+                }
+                
+                let html = '<div class="success">✅ فایل lessons.json سالم است! تعداد درس‌ها: <b>' + lessons.length + '</b></div>';
+                html += '<h2>📚 لیست درس‌ها (روی هر کدام کلیک کن):</h2>';
+                
+                lessons.forEach(lesson => {
+                    html += '<div class="card" onclick="showLesson(\'' + lesson.id + '\')">';
+                    html += '<div style="display:flex;align-items:center;gap:12px;">';
+                    html += '<span style="font-size:36px;">' + (lesson.icon || '📝') + '</span>';
+                    html += '<div>';
+                    html += '<h3 style="margin:0;">' + (lesson.title_fa || lesson.title) + '</h3>';
+                    html += '<p style="margin:4px 0 0;color:#777;font-size:13px;">ID: ' + lesson.id + ' · ' + (lesson.estimatedTime || '?') + ' دقیقه</p>';
+                    html += '</div></div></div>';
+                });
+                
+                app.innerHTML = html;
+                
+            } catch (e) {
+                app.innerHTML = '<div class="error">❌ خطا: ' + e.message + '</div>';
+            }
+        }
+        
+        async function showLesson(lessonId) {
+            app.innerHTML = '<p>⏳ در حال خواندن درس...</p>';
+            
+            try {
+                const res = await fetch('./data/travel/lessons/' + lessonId + '.json?v=' + Date.now());
+                if (!res.ok) throw new Error('فایل پیدا نشد');
+                
+                const lesson = await res.json();
+                
+                if (!lesson.miniLessons || lesson.miniLessons.length === 0) {
+                    app.innerHTML = '<div class="error">⚠️ فایل خوانده شد ولی miniLessons ندارد!</div>';
+                    return;
+                }
+                
+                let html = '<button class="back-btn" onclick="showList()">← بازگشت به لیست</button>';
+                html += '<div style="display:flex;align-items:center;gap:16px;margin:20px 0;">';
+                html += '<span style="font-size:48px;">' + lesson.icon + '</span>';
+                html += '<div>';
+                html += '<h1 style="margin:0;">' + (lesson.title_fa || lesson.title) + '</h1>';
+                html += '<p style="margin:4px 0 0;color:#777;">⏱️ ' + lesson.estimatedTime + ' دقیقه</p>';
+                html += '</div></div>';
+                
+                html += '<h2>📚 بخش‌های درس:</h2>';
+                
+                lesson.miniLessons.forEach((mini, idx) => {
+                    const typeIcon = mini.type === 'vocab' ? '📖' : '💡';
+                    const itemCount = mini.type === 'vocab' ? (mini.words ? mini.words.length : 0) : (mini.tips ? mini.tips.length : 0);
+                    
+                    html += '<div class="card" onclick="showMini(' + idx + ')">';
+                    html += '<span style="font-size:20px;">' + typeIcon + '</span> ';
+                    html += '<b>' + mini.title + '</b>';
+                    html += '<p style="margin:4px 0 0;color:#777;font-size:13px;">' + itemCount + ' ' + (mini.type === 'vocab' ? 'کلمه' : 'نکته') + '</p>';
+                    html += '</div>';
+                });
+                
+                app.innerHTML = html;
+                window.currentLesson = lesson;
+                
+            } catch (e) {
+                app.innerHTML = '<div class="error">❌ خطا: ' + e.message + '</div>';
+            }
+        }
+        
+        function showMini(idx) {
+            const lesson = window.currentLesson;
+            const mini = lesson.miniLessons[idx];
+            
+            let html = '<button class="back-btn" onclick="showLesson(\'' + lesson.id + '\')">← بازگشت</button>';
+            html += '<div class="card-content">';
+            html += '<h2 style="color:#087F5B;">' + mini.title + '</h2>';
+            
+            if (mini.type === 'vocab' && mini.words) {
+                mini.words.forEach(word => {
+                    html += '<div class="word-card">';
+                    html += '<div style="display:flex;align-items:start;gap:12px;">';
+                    html += '<span style="font-size:32px;">' + (word.emoji || '📝') + '</span>';
+                    html += '<div>';
+                    html += '<p style="font-size:18px;font-weight:700;margin:0 0 4px;">' + word.fr + '</p>';
+                    if (word.phonetic) html += '<p style="font-size:13px;color:#888;margin:0 0 4px;font-style:italic;">🔊 ' + word.phonetic + '</p>';
+                    html += '<p style="font-size:15px;color:#555;margin:0;">' + word.fa + '</p>';
+                    html += '</div></div></div>';
+                });
+            }
+            else if (mini.type === 'tips' && mini.tips) {
+                mini.tips.forEach((tip, i) => {
+                    html += '<div class="word-card" style="background:#fffbeb;">';
+                    html += '<h3>' + (i + 1) + '. ' + (tip.title_fa || tip.title_fr) + '</h3>';
+                    if (tip.content_fr) html += '<p style="direction:ltr;text-align:left;">' + tip.content_fr + '</p>';
+                    if (tip.content_fa) html += '<p style="color:#777;">' + tip.content_fa + '</p>';
+                    html += '</div>';
+                });
+            }
+            
+            html += '</div>';
+            app.innerHTML = html;
+        }
+        
+        showList();
+    </script>
+</body>
+</html>
