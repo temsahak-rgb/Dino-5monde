@@ -1,0 +1,680 @@
+{
+  "id": "economics_financial_markets",
+  "level": "C1",
+  "theme": "Économie, marchés financiers et crise",
+  "theme_fa": "اقتصاد، بازارهای مالی و بحران",
+  "icon": "📈",
+  "inspiration": "The Big Short (Adam McKay, 2015)",
+  "words": [
+    {
+      "fr": "l'économie",
+      "fa": "اقتصاد",
+      "emoji": "🌍",
+      "difficulty": 3,
+      "ex": "L'économie mondiale est de plus en plus interconnectée.",
+      "ex_fa": "اقتصاد جهانی به طور فزاینده‌ای به هم پیوسته است."
+    },
+    {
+      "fr": "la bourse",
+      "fa": "بورس",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "La bourse de Wall Street est le cœur financier des États-Unis.",
+      "ex_fa": "بورس وال‌استریت قلب مالی ایالات متحده است."
+    },
+    {
+      "fr": "l'action",
+      "fa": "سهم",
+      "emoji": "📊",
+      "difficulty": 3,
+      "ex": "Acheter une action signifie devenir copropriétaire de l'entreprise.",
+      "ex_fa": "خرید سهم به معنای شریک شدن در مالکیت شرکت است."
+    },
+    {
+      "fr": "l'obligation",
+      "fa": "اوراق قرضه",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "L'obligation d'État est considérée comme un investissement sûr.",
+      "ex_fa": "اوراق قرضه دولتی سرمایه‌گذاری امنی محسوب می‌شود."
+    },
+    {
+      "fr": "le krach",
+      "fa": "سقوط ناگهانی بازار",
+      "emoji": "📉",
+      "difficulty": 4,
+      "ex": "Le krach de 1929 a déclenché la Grande Dépression.",
+      "ex_fa": "سقوط بازار در سال ۱۹۲۹ رکود بزرگ را آغاز کرد."
+    },
+    {
+      "fr": "la spéculation",
+      "fa": "سفته‌بازی",
+      "emoji": "🎲",
+      "difficulty": 5,
+      "ex": "La spéculation immobilière a créé une bulle toxique.",
+      "ex_fa": "سفته‌بازی ملکی یک حباب سمی ایجاد کرد."
+    },
+    {
+      "fr": "l'inflation",
+      "fa": "تورم",
+      "emoji": "🎈",
+      "difficulty": 3,
+      "ex": "L'inflation réduit le pouvoir d'achat des ménages.",
+      "ex_fa": "تورم قدرت خرید خانوارها را کاهش می‌دهد."
+    },
+    {
+      "fr": "la récession",
+      "fa": "رکود اقتصادی",
+      "emoji": "📉",
+      "difficulty": 4,
+      "ex": "La récession entraîne une hausse du chômage.",
+      "ex_fa": "رکود اقتصادی باعث افزایش بیکاری می‌شود."
+    },
+    {
+      "fr": "le portefeuille",
+      "fa": "سبد سهام (پورتفوی)",
+      "emoji": "💼",
+      "difficulty": 4,
+      "ex": "Il a diversifié son portefeuille pour réduire les risques.",
+      "ex_fa": "او برای کاهش ریسک، سبد سهامش را متنوع کرد."
+    },
+    {
+      "fr": "le dividende",
+      "fa": "سود سهام",
+      "emoji": "💰",
+      "difficulty": 4,
+      "ex": "L'entreprise verse un dividende trimestriel à ses actionnaires.",
+      "ex_fa": "شرکت هر سه ماه یک‌بار به سهامدارانش سود پرداخت می‌کند."
+    },
+    {
+      "fr": "la faillite",
+      "fa": "ورشکستگی",
+      "emoji": "🏚️",
+      "difficulty": 3,
+      "ex": "La banque a déclaré faillite faute de liquidités.",
+      "ex_fa": "بانک به دلیل کمبود نقدینگی اعلام ورشکستگی کرد."
+    },
+    {
+      "fr": "l'actif",
+      "fa": "دارایی",
+      "emoji": "🏦",
+      "difficulty": 4,
+      "ex": "L'actif de l'entreprise comprend ses immeubles et ses brevets.",
+      "ex_fa": "دارایی شرکت شامل ساختمان‌ها و حق اختراع‌های آن است."
+    },
+    {
+      "fr": "le passif",
+      "fa": "بدهی",
+      "emoji": "📉",
+      "difficulty": 4,
+      "ex": "Le passif de la société dépasse largement ses revenus.",
+      "ex_fa": "بدهی شرکت بسیار بیشتر از درآمدهایش است."
+    },
+    {
+      "fr": "le trader",
+      "fa": "معامله‌گر",
+      "emoji": "💻",
+      "difficulty": 3,
+      "ex": "Le trader achète et vend des titres toute la journée.",
+      "ex_fa": "معامله‌گر تمام روز اوراق بهادار می‌خرد و می‌فروشد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le pari du siècle",
+      "text": "Michael Burry est un {{BLANK_14}} excentrique qui gère un fonds d'investissement. En analysant le marché immobilier, il prédit un {{BLANK_5}} imminent. Il décide de parier contre le marché, persuadé que la {{BLANK_6}} des banques a créé une bulle toxique. Quand l'{{BLANK_7}} monte et que la {{BLANK_8}} frappe l'{{BLANK_1}} mondiale, les ménages ne peuvent plus rembourser leurs prêts. Les {{BLANK_3}}s des grandes banques perdent brutalement leur valeur, et même les {{BLANK_4}}s d'État ne semblent plus sûres. Le {{BLANK_9}} des investisseurs institutionnels s'effondre en quelques jours. Les entreprises géantes font {{BLANK_11}} les unes après les autres. L'{{BLANK_12}} comptable des banques n'est qu'une illusion, masquant un {{BLANK_13}} abyssal rempli de dettes pourries. Les {{BLANK_10}}s promis aux actionnaires s'évaporent. La {{BLANK_2}} de Wall Street, ce temple de l'avidité, plonge dans la panique absolue, emportant avec elle les économies de millions de personnes ordinaires.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "économie",
+          "options": [
+            "économie",
+            "bourse",
+            "action",
+            "obligation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bourse",
+          "options": [
+            "bourse",
+            "krach",
+            "spéculation",
+            "inflation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "actions",
+          "options": [
+            "actions",
+            "récession",
+            "portefeuille",
+            "dividende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "obligations",
+          "options": [
+            "obligations",
+            "faillite",
+            "actif",
+            "passif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "krach",
+          "options": [
+            "krach",
+            "trader",
+            "économie",
+            "bourse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "spéculation",
+          "options": [
+            "spéculation",
+            "action",
+            "obligation",
+            "krach"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "inflation",
+          "options": [
+            "inflation",
+            "récession",
+            "portefeuille",
+            "dividende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "récession",
+          "options": [
+            "récession",
+            "faillite",
+            "actif",
+            "passif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "portefeuille",
+          "options": [
+            "portefeuille",
+            "trader",
+            "économie",
+            "bourse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "dividendes",
+          "options": [
+            "dividendes",
+            "spéculation",
+            "inflation",
+            "récession"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "faillite",
+          "options": [
+            "faillite",
+            "portefeuille",
+            "dividende",
+            "krach"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "actif",
+          "options": [
+            "actif",
+            "passif",
+            "trader",
+            "économie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "passif",
+          "options": [
+            "passif",
+            "bourse",
+            "action",
+            "obligation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "trader",
+          "options": [
+            "trader",
+            "krach",
+            "spéculation",
+            "inflation"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le château de cartes",
+      "inspiration": "The Big Short (Adam McKay, 2015)",
+      "text": "À peine Michael eut-il plongé dans les tableaux complexes de la dette immobilière qu'il comprit que l'{{BLANK_1}} mondiale était bâtie sur un château de cartes. Ce {{BLANK_14}} asocial, qui écoutait du heavy metal en analysant les {{BLANK_3}}s toxiques, vit la vérité que Wall Street refusait d'admettre : la {{BLANK_6}} effrénée avait créé un monstre. Quand l'{{BLANK_7}} commença à ronger le pouvoir d'achat et que la {{BLANK_8}} s'installa, le système s'effondra. Les {{BLANK_4}}s, autrefois considérées comme des refuges sûrs, se révélèrent être du papier sans valeur. Le {{BLANK_9}} des plus grands fonds d'investissement partit en fumée. Les géants de la finance firent {{BLANK_11}} les uns après les autres. L'{{BLANK_12}} de ces banques n'était qu'une illusion comptable, masquant un {{BLANK_13}} abyssal. Les {{BLANK_10}}s promis aux actionnaires s'évaporèrent. La {{BLANK_2}} de New York, ce temple de l'avidité, devint un cimetière de costumes-cravates. Michael avait eu raison, mais sa victoire avait le goût amer de la ruine de millions de vies ordinaires, prouvant que dans ce jeu de dupes, les dés étaient pipés depuis le début.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "économie",
+          "options": [
+            "économie",
+            "bourse",
+            "action",
+            "obligation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bourse",
+          "options": [
+            "bourse",
+            "krach",
+            "spéculation",
+            "inflation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "actions",
+          "options": [
+            "actions",
+            "récession",
+            "portefeuille",
+            "dividende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "obligations",
+          "options": [
+            "obligations",
+            "faillite",
+            "actif",
+            "passif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "krach",
+          "options": [
+            "krach",
+            "trader",
+            "économie",
+            "bourse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "spéculation",
+          "options": [
+            "spéculation",
+            "action",
+            "obligation",
+            "krach"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "inflation",
+          "options": [
+            "inflation",
+            "récession",
+            "portefeuille",
+            "dividende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "récession",
+          "options": [
+            "récession",
+            "faillite",
+            "actif",
+            "passif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "portefeuille",
+          "options": [
+            "portefeuille",
+            "trader",
+            "économie",
+            "bourse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "dividendes",
+          "options": [
+            "dividendes",
+            "spéculation",
+            "inflation",
+            "récession"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "faillite",
+          "options": [
+            "faillite",
+            "portefeuille",
+            "dividende",
+            "krach"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "actif",
+          "options": [
+            "actif",
+            "passif",
+            "trader",
+            "économie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "passif",
+          "options": [
+            "passif",
+            "bourse",
+            "action",
+            "obligation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "trader",
+          "options": [
+            "trader",
+            "krach",
+            "spéculation",
+            "inflation"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Économie et marchés financiers",
+    "title_fa": "آزمون : اقتصاد و بازارهای مالی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie la production, la distribution et la consommation des richesses est l'____.",
+        "options": [
+          "économie",
+          "bourse",
+          "action",
+          "obligation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم تولید و توزیع ثروت = économie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le marché organisé où s'échangent les titres financiers des entreprises cotées est la ____.",
+        "options": [
+          "bourse",
+          "krach",
+          "spéculation",
+          "inflation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بازار خرید و فروش اوراق بهادار = bourse."
+      },
+      {
+        "type": "mcq",
+        "question": "Le titre de propriété d'une fraction du capital d'une entreprise, donnant droit à une part des bénéfices, est l'____.",
+        "options": [
+          "action",
+          "récession",
+          "portefeuille",
+          "dividende"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سهم مالکیت در شرکت = action."
+      },
+      {
+        "type": "mcq",
+        "question": "Le titre de créance émis par une entreprise ou un État, qui promet de rembourser le capital avec des intérêts, est l'____.",
+        "options": [
+          "obligation",
+          "faillite",
+          "actif",
+          "passif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اوراق قرضه و بدهی = obligation."
+      },
+      {
+        "type": "mcq",
+        "question": "L'effondrement brutal et soudain des cours sur les marchés financiers est le ____.",
+        "options": [
+          "krach",
+          "trader",
+          "économie",
+          "bourse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سقوط ناگهانی بازار = krach."
+      },
+      {
+        "type": "mcq",
+        "question": "L'opération qui consiste à miser sur les variations des prix pour réaliser un profit rapide est la ____.",
+        "options": [
+          "spéculation",
+          "action",
+          "obligation",
+          "krach"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سفته‌بازی و سودجویی از نوسانات = spéculation."
+      },
+      {
+        "type": "mcq",
+        "question": "L'augmentation générale et durable des prix des biens et services, qui réduit le pouvoir d'achat, est l'____.",
+        "options": [
+          "inflation",
+          "récession",
+          "portefeuille",
+          "dividende"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "افزایش عمومی قیمت‌ها = inflation."
+      },
+      {
+        "type": "mcq",
+        "question": "La période de ralentissement significatif de l'activité économique, marquée par une baisse du PIB, est la ____.",
+        "options": [
+          "récession",
+          "faillite",
+          "actif",
+          "passif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رکود و کاهش فعالیت اقتصادی = récession."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des placements financiers (actions, obligations) détenus par un investisseur est le ____.",
+        "options": [
+          "portefeuille",
+          "trader",
+          "économie",
+          "bourse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سبد سرمایه‌گذاری = portefeuille."
+      },
+      {
+        "type": "mcq",
+        "question": "La part des bénéfices d'une entreprise distribuée à ses actionnaires est le ____.",
+        "options": [
+          "dividende",
+          "spéculation",
+          "inflation",
+          "récession"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سود پرداختی به سهامداران = dividende."
+      },
+      {
+        "type": "mcq",
+        "question": "La situation juridique d'une entreprise qui ne peut plus payer ses dettes et cesse ses activités est la ____.",
+        "options": [
+          "faillite",
+          "portefeuille",
+          "dividende",
+          "krach"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورشکستگی شرکت = faillite."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des biens et des droits ayant une valeur économique possédés par une entreprise est l'____.",
+        "options": [
+          "actif",
+          "passif",
+          "trader",
+          "économie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دارایی‌های شرکت = actif."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des dettes et des obligations financières qu'une entreprise doit rembourser est le ____.",
+        "options": [
+          "passif",
+          "bourse",
+          "action",
+          "obligation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بدهی‌های شرکت = passif."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel qui achète et vend des instruments financiers sur les marchés est le ____.",
+        "options": [
+          "trader",
+          "krach",
+          "spéculation",
+          "inflation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "معامله‌گر بازارهای مالی = trader."
+      },
+      {
+        "type": "binary",
+        "question": "L'actif d'une entreprise représente ses dettes, tandis que le passif représente ses richesses.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. actif دارایی‌ها و passif بدهی‌ها هستند."
+      },
+      {
+        "type": "binary",
+        "question": "Une obligation est un titre de propriété qui rend l'investisseur copropriétaire de l'entreprise.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اوراق قرضه (obligation) نوعی وام و بدهی است، نه مالکیت (که action نام دارد)."
+      },
+      {
+        "type": "binary",
+        "question": "L'inflation correspond à une baisse générale des prix qui augmente le pouvoir d'achat.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تورم (inflation) به معنای افزایش قیمت‌ها و کاهش قدرت خرید است."
+      },
+      {
+        "type": "binary",
+        "question": "Un krach boursier est une chute brutale et soudaine de la valeur des titres sur les marchés.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سقوط ناگهانی بازار را krach می‌نامند."
+      },
+      {
+        "type": "binary",
+        "question": "Le dividende est la somme d'argent prélevée sur les bénéfices pour rémunérer les actionnaires.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سود سهام (dividende) از محل درآمد شرکت به سهامداران پرداخت می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La spéculation consiste à investir à très long terme dans des projets industriels solides.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سفته‌بازی (spéculation) معمولاً به دنبال سود کوتاه‌مدت از نوسانات قیمت است."
+      }
+    ]
+  }
+}
