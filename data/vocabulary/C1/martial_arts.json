@@ -1,0 +1,680 @@
+{
+  "id": "martial_arts",
+  "level": "C1",
+  "theme": "Arts martiaux, kung-fu et cinéma hongkongais",
+  "theme_fa": "هنرهای رزمی، کونگ‌فو و سینمای هنگ‌کنگ",
+  "icon": "🥋",
+  "inspiration": "Il était une fois en Chine (Once Upon a Time in China - Tsui Hark, 1991)",
+  "words": [
+    {
+      "fr": "les arts martiaux",
+      "fa": "هنرهای رزمی",
+      "emoji": "🥋",
+      "difficulty": 3,
+      "ex": "Les arts martiaux enseignent la discipline du corps et de l'esprit.",
+      "ex_fa": "هنرهای رزمی، نظم جسم و ذهن را می‌آموزند."
+    },
+    {
+      "fr": "le kung-fu",
+      "fa": "کونگ‌فو",
+      "emoji": "🥋",
+      "difficulty": 3,
+      "ex": "Le kung-fu Shaolin est réputé pour sa rigueur millénaire.",
+      "ex_fa": "کونگ‌فوی شائولین به نظم هزاران ساله‌اش معروف است."
+    },
+    {
+      "fr": "le maître",
+      "fa": "استاد",
+      "emoji": "🧙",
+      "difficulty": 3,
+      "ex": "Le maître transmet la sagesse ancestrale à ses disciples.",
+      "ex_fa": "استاد، خرد باستانی را به شاگردانش منتقل می‌کند."
+    },
+    {
+      "fr": "le dojo",
+      "fa": "دوجو (محل تمرین)",
+      "emoji": "🏛️",
+      "difficulty": 4,
+      "ex": "On salue en entrant dans le dojo par respect.",
+      "ex_fa": "هنگام ورود به دوجو به نشانه احترام تعظیم می‌کنند."
+    },
+    {
+      "fr": "le disciple",
+      "fa": "شاگرد",
+      "emoji": "🧑",
+      "difficulty": 4,
+      "ex": "Le disciple s'entraîne des heures pour honorer son maître.",
+      "ex_fa": "شاگرد ساعت‌ها تمرین می‌کند تا استادش را سربلند کند."
+    },
+    {
+      "fr": "le kata",
+      "fa": "کاتا (فرم تمرینی)",
+      "emoji": "🧘",
+      "difficulty": 5,
+      "ex": "Le kata est une séquence codifiée de mouvements martiaux.",
+      "ex_fa": "کاتا یک دنباله رمزگذاری‌شده از حرکات رزمی است."
+    },
+    {
+      "fr": "le qi",
+      "fa": "چی (انرژی حیاتی)",
+      "emoji": "⚡",
+      "difficulty": 5,
+      "ex": "Le qi circule dans les méridiens du corps selon la médecine chinoise.",
+      "ex_fa": "چی در مسیرهای انرژی بدن طبق طب چینی جریان دارد."
+    },
+    {
+      "fr": "la méditation",
+      "fa": "مراقبه",
+      "emoji": "🧘",
+      "difficulty": 3,
+      "ex": "La méditation permet au guerrier de contrôler ses émotions.",
+      "ex_fa": "مراقبه به جنگجو اجازه می‌دهد احساساتش را کنترل کند."
+    },
+    {
+      "fr": "le sabre",
+      "fa": "شمشیر",
+      "emoji": "⚔️",
+      "difficulty": 3,
+      "ex": "Le sabre japonais est l'âme du samouraï.",
+      "ex_fa": "شمشیر ژاپنی، روح سامورایی است."
+    },
+    {
+      "fr": "la ceinture noire",
+      "fa": "کمربند مشکی",
+      "emoji": "🥋",
+      "difficulty": 3,
+      "ex": "La ceinture noire symbolise la maîtrise d'un art martial.",
+      "ex_fa": "کمربند مشکی نماد تسلط بر یک هنر رزمی است."
+    },
+    {
+      "fr": "le combat",
+      "fa": "مبارزه",
+      "emoji": "🥊",
+      "difficulty": 3,
+      "ex": "Le combat oppose deux adversaires dans un duel loyal.",
+      "ex_fa": "مبارزه دو حریف را در یک دوئل عادلانه روبرو می‌کند."
+    },
+    {
+      "fr": "la discipline",
+      "fa": "نظم، انضباط",
+      "emoji": "📏",
+      "difficulty": 3,
+      "ex": "La discipline est la base de tout apprentissage martial.",
+      "ex_fa": "نظم، پایه هر یادگیری رزمی است."
+    },
+    {
+      "fr": "le shaolin",
+      "fa": "شائولین (معبد بودایی)",
+      "emoji": "🏯",
+      "difficulty": 4,
+      "ex": "Le temple Shaolin est le berceau du kung-fu chinois.",
+      "ex_fa": "معبد شائولین، زادگاه کونگ‌فوی چینی است."
+    },
+    {
+      "fr": "l'honneur",
+      "fa": "شرف، آبرو",
+      "emoji": "🎌",
+      "difficulty": 3,
+      "ex": "Un guerrier préfère la mort à la perte de son honneur.",
+      "ex_fa": "جنگجو مرگ را بر از دست دادن شرفش ترجیح می‌دهد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le dernier élève de Wong Fei-hung",
+      "text": "Wong Fei-hung est un grand {{BLANK_3}} de {{BLANK_2}} dans la Chine de la fin du XIXe siècle. Dans son {{BLANK_4}} traditionnel, il enseigne la {{BLANK_12}} à de jeunes élèves. Son meilleur {{BLANK_5}}, Leung Foon, s'entraîne dur tous les jours. Il répète chaque {{BLANK_6}} pendant des heures pour perfectionner ses gestes. Il apprend à canaliser son {{BLANK_7}} grâce à la {{BLANK_8}} quotidienne. Mais l'arrivée des étrangers menace les {{BLANK_1}} ancestraux. Wong Fei-hung doit défendre l'{{BLANK_14}} de son peuple face aux envahisseurs occidentaux. Il saisit son vieux {{BLANK_9}} pour affronter les soldats armés. Le {{BLANK_11}} final contre le chef ennemi sera épique. Grâce à sa {{BLANK_13}} de fer, il remporte la victoire et sauve son village. Sa {{BLANK_10}} est méritée. Il devient une légende vivante des {{BLANK_1}} chinois.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "arts martiaux",
+          "options": [
+            "arts martiaux",
+            "kung-fu",
+            "shaolin",
+            "dojo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "kung-fu",
+          "options": [
+            "kung-fu",
+            "sabre",
+            "méditation",
+            "qi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "maître",
+          "options": [
+            "maître",
+            "disciple",
+            "adversaire",
+            "ennemi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "dojo",
+          "options": [
+            "dojo",
+            "temple",
+            "arène",
+            "palais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "disciple",
+          "options": [
+            "disciple",
+            "maître",
+            "sabre",
+            "kata"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "kata",
+          "options": [
+            "kata",
+            "combat",
+            "honneur",
+            "discipline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "qi",
+          "options": [
+            "qi",
+            "combat",
+            "honneur",
+            "ceinture noire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "méditation",
+          "options": [
+            "méditation",
+            "kata",
+            "combat",
+            "discipline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "sabre",
+          "options": [
+            "sabre",
+            "dojo",
+            "kata",
+            "qi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "ceinture noire",
+          "options": [
+            "ceinture noire",
+            "méditation",
+            "kata",
+            "honneur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "combat",
+          "options": [
+            "combat",
+            "discipline",
+            "maître",
+            "shaolin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "discipline",
+          "options": [
+            "discipline",
+            "sabre",
+            "dojo",
+            "qi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "shaolin",
+          "options": [
+            "shaolin",
+            "méditation",
+            "kata",
+            "honneur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "honneur",
+          "options": [
+            "honneur",
+            "combat",
+            "dojo",
+            "disciple"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le dragon et l'opium",
+      "inspiration": "Il était une fois en Chine (Once Upon a Time in China - Tsui Hark, 1991)",
+      "text": "À peine Wong Fei-hung eut-il bandé ses mains calleuses que le vent de Canton apporta l'odeur âcre de la poudre et de l'opium. Ce {{BLANK_3}} légendaire, héritier d'un {{BLANK_2}} millénaire, sentait que le monde qu'il avait connu s'effondrait sous les bottes des barbares venus de l'océan. Dans son {{BLANK_4}} de bois sombre, où l'encens montait vers les ancêtres, il enseignait à son jeune {{BLANK_5}} que la véritable force ne résidait pas dans le poing, mais dans la {{BLANK_12}} de l'âme. Chaque matin, avant l'aube, l'élève répétait son {{BLANK_6}} dans la cour brumeuse, cherchant à capturer le {{BLANK_7}} invisible qui faisait danser les feuilles mortes. La {{BLANK_8}} silencieuse lui apprenait à calmer les tempêtes intérieures. Mais dehors, les navires étrangers crachaient leur poison, et les {{BLANK_1}} ancestraux étaient moqués par les marchands d'âmes. Wong Fei-hung comprit que défendre l'{{BLANK_14}} de son peuple exigeait plus que des mots. Il dégaina son {{BLANK_9}} familial, dont la lame avait bu le sang des tyrans d'autrefois. Le {{BLANK_11}} contre le général britannique fut une danse mortelle, où chaque esquive était une prière, chaque frappe une justice. Sa tradition {{BLANK_13}}, forgée dans les montagnes sacrées, triompha de la technologie froide. Quand il noua enfin sa {{BLANK_10}} autour de sa taille, il sut que la véritable victoire n'était pas d'avoir vaincu l'ennemi, mais d'avoir préservé la flamme de la sagesse face au chaos du monde moderne.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "arts martiaux",
+          "options": [
+            "arts martiaux",
+            "kung-fu",
+            "shaolin",
+            "dojo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "kung-fu",
+          "options": [
+            "kung-fu",
+            "sabre",
+            "méditation",
+            "qi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "maître",
+          "options": [
+            "maître",
+            "disciple",
+            "adversaire",
+            "ennemi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "dojo",
+          "options": [
+            "dojo",
+            "temple",
+            "arène",
+            "palais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "disciple",
+          "options": [
+            "disciple",
+            "maître",
+            "sabre",
+            "kata"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "kata",
+          "options": [
+            "kata",
+            "combat",
+            "honneur",
+            "discipline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "qi",
+          "options": [
+            "qi",
+            "combat",
+            "honneur",
+            "ceinture noire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "méditation",
+          "options": [
+            "méditation",
+            "kata",
+            "combat",
+            "discipline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "sabre",
+          "options": [
+            "sabre",
+            "dojo",
+            "kata",
+            "qi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "ceinture noire",
+          "options": [
+            "ceinture noire",
+            "méditation",
+            "kata",
+            "honneur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "combat",
+          "options": [
+            "combat",
+            "discipline",
+            "maître",
+            "shaolin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "discipline",
+          "options": [
+            "discipline",
+            "sabre",
+            "dojo",
+            "qi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "shaolin",
+          "options": [
+            "shaolin",
+            "méditation",
+            "kata",
+            "honneur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "honneur",
+          "options": [
+            "honneur",
+            "combat",
+            "dojo",
+            "disciple"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Arts martiaux et traditions",
+    "title_fa": "آزمون : هنرهای رزمی و سنت‌ها",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'ensemble des pratiques de combat d'origine asiatique qui combinent techniques physiques et développement spirituel sont les ____.",
+        "options": [
+          "arts martiaux",
+          "kung-fu",
+          "shaolin",
+          "dojo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنرهای رزمی آسیایی = arts martiaux."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art martial chinois ancestral, caractérisé par des mouvements fluides imitant souvent les animaux, est le ____.",
+        "options": [
+          "kung-fu",
+          "sabre",
+          "méditation",
+          "qi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر رزمی چینی = kung-fu."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui possède une connaissance approfondie et qui enseigne son art à des élèves est le ____.",
+        "options": [
+          "maître",
+          "disciple",
+          "adversaire",
+          "ennemi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آموزگار و استاد = maître."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu spécialement aménagé pour la pratique des arts martiaux japonais, où l'on entre pieds nus, est le ____.",
+        "options": [
+          "dojo",
+          "temple",
+          "arène",
+          "palais"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محل تمرین رزمی = dojo."
+      },
+      {
+        "type": "mcq",
+        "question": "L'élève qui suit l'enseignement d'un maître et s'engage dans la voie martiale est le ____.",
+        "options": [
+          "disciple",
+          "maître",
+          "sabre",
+          "kata"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شاگرد و پیرو = disciple."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enchaînement codifié de mouvements offensifs et défensifs, exécuté seul, qui simule un combat imaginaire est le ____.",
+        "options": [
+          "kata",
+          "combat",
+          "honneur",
+          "discipline"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرم تمرینی و دنباله حرکات = kata."
+      },
+      {
+        "type": "mcq",
+        "question": "L'énergie vitale universelle qui circule dans le corps selon la philosophie chinoise et les arts martiaux est le ____.",
+        "options": [
+          "qi",
+          "combat",
+          "honneur",
+          "ceinture noire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انرژی حیاتی در فلسفه چینی = qi."
+      },
+      {
+        "type": "mcq",
+        "question": "La pratique de concentration mentale et de relaxation qui permet d'apaiser l'esprit est la ____.",
+        "options": [
+          "méditation",
+          "kata",
+          "combat",
+          "discipline"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تمرکز ذهنی و آرامش = méditation."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arme blanche longue, à lame courbe ou droite, utilisée dans de nombreux arts martiaux est le ____.",
+        "options": [
+          "sabre",
+          "dojo",
+          "kata",
+          "qi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سلاح تیغه‌دار بلند = sabre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le grade suprême dans la plupart des arts martiaux, qui symbolise la maîtrise technique et mentale, est la ____.",
+        "options": [
+          "ceinture noire",
+          "méditation",
+          "kata",
+          "honneur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درجه استادی = ceinture noire."
+      },
+      {
+        "type": "mcq",
+        "question": "L'affrontement physique entre deux personnes, qu'il soit sportif ou réel, est le ____.",
+        "options": [
+          "combat",
+          "discipline",
+          "maître",
+          "shaolin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درگیری و مبارزه = combat."
+      },
+      {
+        "type": "mcq",
+        "question": "La rigueur morale, l'obéissance aux règles et la constance dans l'effort constituent la ____.",
+        "options": [
+          "discipline",
+          "sabre",
+          "dojo",
+          "qi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نظم و انضباط = discipline."
+      },
+      {
+        "type": "mcq",
+        "question": "Le temple bouddhiste chinois mythique, considéré comme le berceau du kung-fu, est le ____.",
+        "options": [
+          "shaolin",
+          "méditation",
+          "kata",
+          "honneur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "معبد بودایی زادگاه کونگ‌فو = shaolin."
+      },
+      {
+        "type": "mcq",
+        "question": "La valeur morale fondamentale qui pousse le guerrier à agir avec dignité, loyauté et respect est l'____.",
+        "options": [
+          "honneur",
+          "combat",
+          "dojo",
+          "disciple"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شرف و ارزش اخلاقی = honneur."
+      },
+      {
+        "type": "binary",
+        "question": "Le dojo est un temple religieux où l'on prie les divinités martiales.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. دوجو محل تمرین است، نه معبد عبادی."
+      },
+      {
+        "type": "binary",
+        "question": "Le qi désigne l'énergie vitale qui circule dans le corps selon la médecine et les arts martiaux chinois.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. چی انرژی حیاتی در فلسفه چینی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le kata est une forme de combat libre et improvisé entre deux adversaires.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کاتا فرم از پیش تعیین‌شده و انفرادی است، نه مبارزه آزاد."
+      },
+      {
+        "type": "binary",
+        "question": "Le maître est l'élève débutant qui apprend les bases de l'art martial.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. maître استاد است، شاگرد débutant نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "La ceinture noire représente le plus haut niveau de compétence dans la plupart des arts martiaux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کمربند مشکی نماد تسلط در هنرهای رزمی است."
+      },
+      {
+        "type": "binary",
+        "question": "Shaolin est un célèbre temple chinois associé à la naissance du kung-fu et à la tradition bouddhiste.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. شائولین معبد معروف چینی و زادگاه کونگ‌فو است."
+      }
+    ]
+  }
+}
