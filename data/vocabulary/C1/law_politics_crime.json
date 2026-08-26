@@ -1,0 +1,672 @@
+{
+  "id": "law_politics_crime",
+  "level": "C1",
+  "theme": "Tribunal, droit, crime et politique",
+  "theme_fa": "دادگاه، حقوق، جرم و سیاست",
+  "icon": "⚖️",
+  "inspiration": "Engrenages (Alexandra Clert, Canal+, 2005-2020)",
+  "words": [
+    {
+      "fr": "la réquisition",
+      "fa": "کیفرخواست دادستان",
+      "emoji": "📋",
+      "difficulty": 5,
+      "ex": "Le procureur a prononcé une réquisition sévère demandant vingt ans de prison.",
+      "ex_fa": "دادستان کیفرخواست شدیدی قرائت کرد و بیست سال زندان خواست."
+    },
+    {
+      "fr": "la contumace",
+      "fa": "محاکمه غیابی",
+      "emoji": "👻",
+      "difficulty": 5,
+      "ex": "Le fugitif a été condamné par contumace à la réclusion criminelle.",
+      "ex_fa": "فرد فراری به‌صورت غیابی به حبس جنایی محکوم شد."
+    },
+    {
+      "fr": "la circonscription",
+      "fa": "حوزه انتخابیه",
+      "emoji": "🗺️",
+      "difficulty": 4,
+      "ex": "Le député a été réélu dans sa circonscription avec une large majorité.",
+      "ex_fa": "نماینده در حوزه انتخابیه خود با اکثریت قاطع دوباره انتخاب شد."
+    },
+    {
+      "fr": "le délit",
+      "fa": "تخلف، جرم سبک",
+      "emoji": "⚠️",
+      "difficulty": 3,
+      "ex": "Le vol à l'étalage est considéré comme un délit puni par le code pénal.",
+      "ex_fa": "سرقت از فروشگاه به عنوان تخلفی در قانون کیفری مجازات می‌شود."
+    },
+    {
+      "fr": "la réclusion",
+      "fa": "حبس، زندان",
+      "emoji": "🔒",
+      "difficulty": 4,
+      "ex": "Il a été condamné à dix ans de réclusion pour trafic de stupéfiants.",
+      "ex_fa": "او به جرم قاچاق مواد مخدر به ده سال حبس محکوم شد."
+    },
+    {
+      "fr": "le plénum",
+      "fa": "جلسه عمومی",
+      "emoji": "🏛️",
+      "difficulty": 5,
+      "ex": "La Cour de cassation s'est réunie en plénum pour trancher cette affaire complexe.",
+      "ex_fa": "دیوان عالی برای رسیدگی به این پرونده پیچیده در جلسه عمومی تشکیل جلسه داد."
+    },
+    {
+      "fr": "la prévarication",
+      "fa": "سوءاستفاده از مقام",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "Le ministre a été destitué pour prévarication après le scandale financier.",
+      "ex_fa": "وزیر پس از رسوایی مالی به دلیل سوءاستفاده از مقام برکنار شد."
+    },
+    {
+      "fr": "la concussion",
+      "fa": "اخاذی توسط مقامات",
+      "emoji": "💵",
+      "difficulty": 5,
+      "ex": "Le fonctionnaire a été arrêté pour concussion après avoir exigé des pots-de-vin.",
+      "ex_fa": "مأمور دولت پس از درخواست رشوه به جرم اخاذی دستگیر شد."
+    },
+    {
+      "fr": "le mandat",
+      "fa": "حکم، دوره نمایندگی",
+      "emoji": "📜",
+      "difficulty": 3,
+      "ex": "Le président ne peut pas briguer un troisième mandat selon la constitution.",
+      "ex_fa": "طبق قانون اساسی، رئیس‌جمهور نمی‌تواند برای دوره سوم نامزد شود."
+    },
+    {
+      "fr": "la promulgation",
+      "fa": "توشیح، ابلاغ قانون",
+      "emoji": "✍️",
+      "difficulty": 5,
+      "ex": "La promulgation de la nouvelle loi interviendra dès demain matin.",
+      "ex_fa": "ابلاغ قانون جدید از فردا صبح انجام خواهد شد."
+    },
+    {
+      "fr": "le scrutin",
+      "fa": "رأی‌گیری",
+      "emoji": "🗳️",
+      "difficulty": 4,
+      "ex": "Le second tour du scrutin aura lieu dimanche prochain.",
+      "ex_fa": "دور دوم رأی‌گیری یکشنبه آینده برگزار خواهد شد."
+    },
+    {
+      "fr": "la censure",
+      "fa": "رأی عدم اعتماد، سانسور",
+      "emoji": "🚫",
+      "difficulty": 4,
+      "ex": "L'opposition a déposé une motion de censure contre le gouvernement.",
+      "ex_fa": "اپوزیسیون طرح رأی عدم اعتماد علیه دولت را ارائه کرد."
+    },
+    {
+      "fr": "la récidive",
+      "fa": "تکرار جرم",
+      "emoji": "🔁",
+      "difficulty": 4,
+      "ex": "En cas de récidive, la peine encourue est automatiquement doublée.",
+      "ex_fa": "در صورت تکرار جرم، مجازات مقرر به‌طور خودکار دو برابر می‌شود."
+    },
+    {
+      "fr": "l'amnistie",
+      "fa": "عفو عمومی",
+      "emoji": "🕊️",
+      "difficulty": 4,
+      "ex": "Le président a accordé l'amnistie à plusieurs prisonniers politiques.",
+      "ex_fa": "رئیس‌جمهور چندین زندانی سیاسی را مشمول عفو عمومی کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le procès du maire",
+      "title_fa": "محاکمه شهردار",
+      "text": "Le maire de la ville est accusé de plusieurs infractions. D'abord, il a commis un {{BLANK_1}} en acceptant des cadeaux d'entreprises locales. Ensuite, il est soupçonné de {{BLANK_2}} pour avoir exigé de l'argent lors de l'attribution de marchés publics. Pire encore, il est accusé de {{BLANK_3}} pour avoir détourné des fonds municipaux à son profit. Le procès s'ouvre au tribunal. Le procureur prononce sa {{BLANK_4}} et demande une peine exemplaire. L'avocat du maire plaide non coupable, mais les preuves sont accablantes. Le tribunal le condamne à cinq ans de {{BLANK_5}} ferme. Le maire décide de fuir le pays avant le verdict final. Il est alors jugé par {{BLANK_6}} et sa peine est confirmée. Cette affaire a un retentissement national. Dans sa {{BLANK_7}}, les électeurs sont furieux et préparent le prochain {{BLANK_8}} pour élire un nouveau représentant. À l'Assemblée nationale, l'opposition profite du scandale pour déposer une motion de {{BLANK_9}} contre le ministre de l'Intérieur, jugé responsable. Le gouvernement survit de justesse. Pendant ce temps, le Parlement vote une nouvelle loi anti-corruption. La {{BLANK_10}} de ce texte par le président de la République est prévue pour la semaine prochaine. Certains députés proposent aussi d'inclure une {{BLANK_11}} pour les petits délits financiers, mais l'opinion publique s'y oppose fermement. Le juge d'instruction, quant à lui, refuse toute clémence en raison de la {{BLANK_12}} du maire, déjà condamné par le passé pour des faits similaires. L'affaire est si complexe que la Cour d'appel décide de se réunir en {{BLANK_13}} pour rendre sa décision finale. Finalement, le maire est arrêté à l'étranger et extradé. Il purgera sa peine, et son {{BLANK_14}} électoral sera définitivement annulé.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "délit",
+          "options": [
+            "délit",
+            "scrutin",
+            "mandat",
+            "plénum"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "concussion",
+          "options": [
+            "concussion",
+            "amnistie",
+            "censure",
+            "circonscription"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "prévarication",
+          "options": [
+            "prévarication",
+            "promulgation",
+            "récidive",
+            "réquisition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "réquisition",
+          "options": [
+            "réquisition",
+            "contumace",
+            "réclusion",
+            "censure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "réclusion",
+          "options": [
+            "réclusion",
+            "amnistie",
+            "promulgation",
+            "circonscription"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "contumace",
+          "options": [
+            "contumace",
+            "réquisition",
+            "plénum",
+            "scrutin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "circonscription",
+          "options": [
+            "circonscription",
+            "récidive",
+            "mandat",
+            "concussion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "scrutin",
+          "options": [
+            "scrutin",
+            "délit",
+            "plénum",
+            "amnistie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "censure",
+          "options": [
+            "censure",
+            "promulgation",
+            "réclusion",
+            "prévarication"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "promulgation",
+          "options": [
+            "promulgation",
+            "réquisition",
+            "contumace",
+            "censure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "amnistie",
+          "options": [
+            "amnistie",
+            "récidive",
+            "réclusion",
+            "concussion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "récidive",
+          "options": [
+            "récidive",
+            "promulgation",
+            "circonscription",
+            "censure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "plénum",
+          "options": [
+            "plénum",
+            "scrutin",
+            "mandat",
+            "délit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "mandat",
+          "options": [
+            "mandat",
+            "amnistie",
+            "réquisition",
+            "prévarication"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'ombre du palais",
+      "title_fa": "سایه کاخ دادگستری",
+      "inspiration": "Engrenages (Alexandra Clert, Canal+, 2005-2020)",
+      "text": "À peine la lourde porte en chêne du palais de justice de Paris se fut-elle refermée que la capitaine Laure Berthaud alluma une cigarette, bravant l'interdiction formelle. L'air était vicié, chargé de cette odeur de vieux dossiers et de désespoirs accumulés qui collait aux murs de la juridiction. Depuis six mois, elle enquêtait sur un réseau de corruption qui gangrenait les plus hauts échelons de l'administration. Ce matin-là, le juge d'instruction Roban venait de rendre son ordonnance de renvoi. Le maire d'une grande ville de banlieue, figure intouchable de la politique locale, allait enfin répondre de ses actes. Les chefs d'accusation étaient lourds : {{BLANK_1}} pour avoir monnayé son influence auprès des promoteurs immobiliers, et {{BLANK_2}} pour avoir systématiquement détourné les subventions publiques. Mais le plus grave restait la {{BLANK_3}} : l'élu avait déjà été condamné dix ans plus tôt pour des faits similaires, et la loi imposait désormais une sévérité exemplaire. Dans son bureau, le procureur François Chevalier préparait sa {{BLANK_4}}. Il savait que l'opinion publique attendait un châtiment à la hauteur du scandale. Il demanderait vingt ans de {{BLANK_5}} criminelle, le maximum prévu. Pourtant, la défense s'organisait. L'avocat du maire, un ténor du barreau rompu aux joutes médiatiques, multipliait les recours. Il tenta même de faire jouer ses relations à l'Assemblée nationale, où le maire conservait une forte influence dans sa {{BLANK_6}} d'origine. Certains députés, craignant pour leur propre {{BLANK_7}} lors des prochaines élections, murmuraient l'idée d'une loi taillée sur mesure, une sorte d'{{BLANK_8}} déguisée qui aurait éteint les poursuites. Mais la ministre de la Justice, sous la pression des médias, refusa catégoriquement. Pire, l'opposition parlementaire flaira le sang et déposa une motion de {{BLANK_9}} visant le garde des Sceaux, accusé de laxisme. La crise politique menaçait d'éclipser le procès lui-même. Le jour de l'audience, la salle des pas perdus était noire de monde. Journalistes, caméras, militants : tout le gratin judiciaire était présent. Mais le maire ne vint pas. Il avait pris la fuite la veille, franchissant la frontière suisse avec un faux passeport. Le tribunal n'eut d'autre choix que de le juger par {{BLANK_10}}. L'atmosphère était surréaliste. Le procureur prononça son réquisitoire devant une chaise vide, détaillant avec une froideur clinique les mécanismes de la spoliation. Quand le président du tribunal annonça le verdict, condamnant l'absent à la peine maximale, un murmure parcourut l'assemblée. L'affaire ne s'arrêta pas là. Les ramifications du réseau remontaient jusqu'au ministère de l'Intérieur. Une commission d'enquête fut constituée, et la Cour de cassation dut se réunir en {{BLANK_11}} pour trancher une question de procédure inédite concernant la saisie des biens à l'étranger. Pendant ce temps, dans les quartiers populaires, la colère grondait. Les électeurs, écœurés par ce spectacle, promettaient de sanctionner les responsables lors du prochain {{BLANK_12}}. Ils ne voulaient plus de ces élites qui s'autoprotégeaient, qui votaient des lois pour se blanchir avant même la {{BLANK_13}} officielle des textes. Un soir, Laure Berthaud retrouva le juge Roban dans un bistrot discret du Marais. « Nous avons gagné une bataille, » dit-elle en commandant un whisky. « Mais la guerre continue. » Roban acquiesça silencieusement. Il savait que dans ce système, chaque victoire n'était qu'un sursis. Demain, un autre édile commettrait le même {{BLANK_14}}, persuadé de son impunité. Et eux, magistrats usés jusqu'à la corde, devraient recommencer, inlassablement, à démêler l'écheveau de la corruption, espérant qu'un jour, peut-être, la justice ne serait plus seulement un mot gravé sur le fronton d'un palais.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "concussion",
+          "options": [
+            "concussion",
+            "amnistie",
+            "censure",
+            "promulgation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "prévarication",
+          "options": [
+            "prévarication",
+            "récidive",
+            "contumace",
+            "plénum"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "récidive",
+          "options": [
+            "récidive",
+            "circonscription",
+            "réquisition",
+            "mandat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "réquisition",
+          "options": [
+            "réquisition",
+            "censure",
+            "scrutin",
+            "délit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "réclusion",
+          "options": [
+            "réclusion",
+            "amnistie",
+            "promulgation",
+            "contumace"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "circonscription",
+          "options": [
+            "circonscription",
+            "plénum",
+            "réclusion",
+            "concussion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "mandat",
+          "options": [
+            "mandat",
+            "récidive",
+            "délit",
+            "scrutin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "amnistie",
+          "options": [
+            "amnistie",
+            "prévarication",
+            "réquisition",
+            "censure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "censure",
+          "options": [
+            "censure",
+            "promulgation",
+            "contumace",
+            "plénum"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "contumace",
+          "options": [
+            "contumace",
+            "réclusion",
+            "circonscription",
+            "récidive"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "plénum",
+          "options": [
+            "plénum",
+            "scrutin",
+            "mandat",
+            "délit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "scrutin",
+          "options": [
+            "scrutin",
+            "amnistie",
+            "promulgation",
+            "prévarication"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "promulgation",
+          "options": [
+            "promulgation",
+            "réquisition",
+            "contumace",
+            "censure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "délit",
+          "options": [
+            "délit",
+            "plénum",
+            "mandat",
+            "récidive"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Système judiciaire et vie politique",
+    "title_fa": "آزمون : سیستم قضایی و زندگی سیاسی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "À la fin du procès, le procureur se lève pour exposer les peines qu'il estime justes contre l'accusé. Il prononce sa ____.",
+        "options": [
+          "réquisition",
+          "promulgation",
+          "censure",
+          "circonscription"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درخواست رسمی دادستان برای تعیین مجازات = réquisition."
+      },
+      {
+        "type": "mcq",
+        "question": "L'accusé a fui le pays avant le début de son procès. Le tribunal le juge donc et le condamne par ____.",
+        "options": [
+          "contumace",
+          "amnistie",
+          "récidive",
+          "plénum"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محاکمه و محکومیت فرد فراری و غایب = contumace."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour être élu député, un candidat doit faire campagne dans sa ____, la zone géographique où les citoyens votent pour lui.",
+        "options": [
+          "circonscription",
+          "réclusion",
+          "concussion",
+          "censure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حوزه جغرافیایی انتخاب نمایندگان = circonscription."
+      },
+      {
+        "type": "mcq",
+        "question": "Conduire en état d'ivresse n'est pas un simple crime grave, c'est un ____ puni par le tribunal correctionnel.",
+        "options": [
+          "délit",
+          "mandat",
+          "scrutin",
+          "plénum"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جرم سبک‌تر از جنایت که در دادگاه کیفری رسیدگی می‌شود = délit."
+      },
+      {
+        "type": "mcq",
+        "question": "Le meurtrier a été condamné à vingt ans de ____ criminelle, qu'il purgera dans une prison de haute sécurité.",
+        "options": [
+          "réclusion",
+          "amnistie",
+          "promulgation",
+          "censure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حبس و زندان (به‌ویژه برای جرایم سنگین) = réclusion."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour trancher cette question de droit particulièrement complexe, toutes les chambres de la Cour se sont réunies en ____.",
+        "options": [
+          "plénum",
+          "scrutin",
+          "mandat",
+          "délit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جلسه عمومی با حضور تمام اعضا = plénum."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce haut fonctionnaire a utilisé son pouvoir pour favoriser illégalement les entreprises de ses amis. Il est poursuivi pour ____.",
+        "options": [
+          "prévarication",
+          "amnistie",
+          "circonscription",
+          "promulgation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سوءاستفاده از قدرت و مقام عمومی = prévarication."
+      },
+      {
+        "type": "mcq",
+        "question": "Le douanier exigeait de l'argent des voyageurs en échange de leur laisser passer la frontière sans contrôle. Il a été arrêté pour ____.",
+        "options": [
+          "concussion",
+          "récidive",
+          "censure",
+          "plénum"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اخاذی و دریافت پول غیرقانونی توسط مأمور دولت = concussion."
+      },
+      {
+        "type": "mcq",
+        "question": "La constitution limite le ____ du président à deux périodes de cinq ans pour éviter toute dérive autoritaire.",
+        "options": [
+          "mandat",
+          "délit",
+          "scrutin",
+          "plénum"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره نمایندگی یا مأموریت رسمی = mandat."
+      },
+      {
+        "type": "mcq",
+        "question": "Après le vote du Parlement, le texte de loi est transmis au chef de l'État pour sa ____ officielle qui le rend applicable.",
+        "options": [
+          "promulgation",
+          "réquisition",
+          "contumace",
+          "censure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توشیح و ابلاغ رسمی قانون توسط رئیس‌جمهور = promulgation."
+      },
+      {
+        "type": "mcq",
+        "question": "Les citoyens se rendent aux urnes pour le second tour du ____ afin d'élire leur nouveau maire.",
+        "options": [
+          "scrutin",
+          "mandat",
+          "délit",
+          "plénum"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرآیند رأی‌گیری و انتخابات = scrutin."
+      },
+      {
+        "type": "mcq",
+        "question": "Les députés de l'opposition, mécontents de la politique économique, votent une motion de ____ pour renverser le gouvernement.",
+        "options": [
+          "censure",
+          "amnistie",
+          "promulgation",
+          "réclusion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رأی عدم اعتماد پارلمان به دولت = censure."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce voleur a déjà été condamné trois fois pour des faits identiques. Le juge alourdit sa peine en raison de sa ____.",
+        "options": [
+          "récidive",
+          "contumace",
+          "circonscription",
+          "promulgation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکرار جرم پس از محکومیت‌های قبلی = récidive."
+      },
+      {
+        "type": "mcq",
+        "question": "À l'occasion de la fête nationale, le président signe un décret qui efface les peines de nombreux petits délinquants. C'est une ____.",
+        "options": [
+          "amnistie",
+          "censure",
+          "prévarication",
+          "réquisition"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عفو عمومی و پاک کردن سابقه کیفری = amnistie."
+      },
+      {
+        "type": "binary",
+        "question": "La prévarication et la concussion désignent exactement le même type de crime financier.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "prévarication سوءاستفاده از مقام است، concussion اخاذی و دریافت پول زور توسط مأمور است."
+      },
+      {
+        "type": "binary",
+        "question": "Un jugement par contumace est rendu lorsque l'accusé est absent et en fuite.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، contumace به معنای محاکمه غیابی فرد فراری است."
+      },
+      {
+        "type": "binary",
+        "question": "La promulgation est l'acte par lequel le Parlement vote définitivement une loi.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پارلمان قانون را تصویب می‌کند، promulgation توشیح آن توسط رئیس‌جمهور است."
+      },
+      {
+        "type": "binary",
+        "question": "Le plénum désigne une séance où tous les membres d'une assemblée ou d'une cour sont réunis.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، plénum به معنای جلسه عمومی با حضور تمام اعضا است."
+      },
+      {
+        "type": "binary",
+        "question": "Une motion de censure permet au gouvernement de dissoudre l'Assemblée nationale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. motion de censure ابزاری برای پارلمان است تا دولت را ساقط کند، نه برعکس."
+      }
+    ]
+  }
+}
