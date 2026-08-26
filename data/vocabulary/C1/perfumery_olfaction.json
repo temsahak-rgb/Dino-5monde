@@ -1,0 +1,680 @@
+{
+  "id": "perfumery_olfaction",
+  "level": "C1",
+  "theme": "Parfumerie, olfaction et création de fragrances",
+  "theme_fa": "عطر سازی، بویایی و خلق رایحه",
+  "icon": "🌸",
+  "inspiration": "Le Parfum (Tom Tykwer, 2006)",
+  "words": [
+    {
+      "fr": "le parfum",
+      "fa": "عطر",
+      "emoji": "🌸",
+      "difficulty": 3,
+      "ex": "Le parfum de Grasse est réputé dans le monde entier.",
+      "ex_fa": "عطر گراس در سراسر جهان مشهور است."
+    },
+    {
+      "fr": "le nez",
+      "fa": "عطار، بینی (متخصص عطر)",
+      "emoji": "👃",
+      "difficulty": 5,
+      "ex": "Ce grand nez a composé les fragrances les plus iconiques du siècle.",
+      "ex_fa": "این عطار بزرگ، نمادین‌ترین رایحه‌های قرن را خلق کرده است."
+    },
+    {
+      "fr": "l'essence",
+      "fa": "اسانس، جوهر",
+      "emoji": "💧",
+      "difficulty": 4,
+      "ex": "L'essence de rose nécessite des milliers de pétales pour une seule goutte.",
+      "ex_fa": "اسانس گل محمدی برای یک قطره به هزاران گلبرگ نیاز دارد."
+    },
+    {
+      "fr": "la distillation",
+      "fa": "تقطیر",
+      "emoji": "⚗️",
+      "difficulty": 5,
+      "ex": "La distillation à la vapeur d'eau extrait les huiles essentielles.",
+      "ex_fa": "تقطیر با بخار آب، روغن‌های ضروری را استخراج می‌کند."
+    },
+    {
+      "fr": "la note",
+      "fa": "نت بویایی",
+      "emoji": "🎵",
+      "difficulty": 4,
+      "ex": "Un parfum se compose de notes de tête, de cœur et de fond.",
+      "ex_fa": "عطر از نت‌های آغازین، میانی و پایه تشکیل شده است."
+    },
+    {
+      "fr": "l'alambic",
+      "fa": "دیگ تقطیر",
+      "emoji": "🏺",
+      "difficulty": 5,
+      "ex": "L'alambic en cuivre chauffe lentement les fleurs macérées.",
+      "ex_fa": "دیگ مسی تقطیر، گل‌های خیسانده‌شده را آرام گرم می‌کند."
+    },
+    {
+      "fr": "le flacon",
+      "fa": "شیشه عطر",
+      "emoji": "🧴",
+      "difficulty": 3,
+      "ex": "Le flacon en cristal taillé reflète la lumière comme un bijou.",
+      "ex_fa": "شیشه عطر کریستال تراش‌خورده نور را مانند جواهر منعکس می‌کند."
+    },
+    {
+      "fr": "l'olfactif",
+      "fa": "بویایی",
+      "emoji": "👃",
+      "difficulty": 4,
+      "ex": "La mémoire olfactive est la plus puissante des mémoires humaines.",
+      "ex_fa": "حافظه بویایی قوی‌ترین حافظه انسانی است."
+    },
+    {
+      "fr": "la macération",
+      "fa": "خیساندن، ماسراسیون",
+      "emoji": "🫙",
+      "difficulty": 5,
+      "ex": "La macération des jasmins dans la graisse animale capture leur âme.",
+      "ex_fa": "خیساندن یاس در چربی حیوانی، روح آن را جذب می‌کند."
+    },
+    {
+      "fr": "le sillage",
+      "fa": "رد بویایی",
+      "emoji": "💨",
+      "difficulty": 5,
+      "ex": "Son sillage envoûtant hante les couloirs longtemps après son passage.",
+      "ex_fa": "رد بویایی مسحورکننده‌اش مدت‌ها پس از عبورش در راهروها می‌ماند."
+    },
+    {
+      "fr": "la fragrance",
+      "fa": "رایحه",
+      "emoji": "🌺",
+      "difficulty": 4,
+      "ex": "Cette fragrance boisée évoque les forêts humides après la pluie.",
+      "ex_fa": "این رایحه چوبی، جنگل‌های مرطوب پس از باران را تداعی می‌کند."
+    },
+    {
+      "fr": "le musc",
+      "fa": "مشک",
+      "emoji": "🦌",
+      "difficulty": 4,
+      "ex": "Le musc synthétique remplace aujourd'hui le musc animal pour des raisons éthiques.",
+      "ex_fa": "مشک مصنوعی امروزه به دلایل اخلاقی جایگزین مشک حیوانی شده است."
+    },
+    {
+      "fr": "l'absolu",
+      "fa": "مطلق (عصاره بسیار غلیظ)",
+      "emoji": "🧪",
+      "difficulty": 5,
+      "ex": "L'absolu de tubéreuse est une matière première rare et coûteuse.",
+      "ex_fa": "عصاره مطلق مریم گلی ماده اولیه‌ای کمیاب و گران است."
+    },
+    {
+      "fr": "la volatilité",
+      "fa": "فراریت (سرعت تبخیر)",
+      "emoji": "🌬️",
+      "difficulty": 5,
+      "ex": "La volatilité des agrumes en fait des notes de tête éphémères.",
+      "ex_fa": "فراریت مرکبات، آن‌ها را به نت‌های آغازین و زودگذر تبدیل می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le génie sans odeur",
+      "text": "Jean-Baptiste Grenouille est un jeune homme né sans aucune odeur corporelle, mais doté d'un talent {{BLANK_8}} surhumain. Il devient l'apprenti d'un vieux {{BLANK_2}} à Grasse. Dans l'arrière-boutique, il apprend l'art de la {{BLANK_4}} et utilise un grand {{BLANK_6}} en cuivre pour extraire l'{{BLANK_3}} des fleurs. Il maîtrise aussi la {{BLANK_9}} des jasmins dans la graisse purifiée. Son obsession est de capturer l'{{BLANK_13}} de la beauté humaine. Il comprend que la {{BLANK_14}} des agrumes les rend parfaits pour la {{BLANK_5}} de tête, tandis que le {{BLANK_12}} animal ancre la {{BLANK_11}} sur la peau. Quand il crée enfin son {{BLANK_1}} ultime, il le verse dans un minuscule {{BLANK_7}} de verre. Le {{BLANK_10}} qu'il laisse derrière lui est si puissant qu'il transforme la haine de la foule en un amour aveugle et dévorant.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "parfum",
+          "options": [
+            "parfum",
+            "nez",
+            "essence",
+            "distillation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "nez",
+          "options": [
+            "nez",
+            "note",
+            "alambic",
+            "flacon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "essence",
+          "options": [
+            "essence",
+            "olfactif",
+            "macération",
+            "sillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "distillation",
+          "options": [
+            "distillation",
+            "fragrance",
+            "musc",
+            "absolu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "note",
+          "options": [
+            "note",
+            "volatilité",
+            "parfum",
+            "nez"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "alambic",
+          "options": [
+            "alambic",
+            "essence",
+            "distillation",
+            "note"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "flacon",
+          "options": [
+            "flacon",
+            "olfactif",
+            "macération",
+            "sillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "olfactif",
+          "options": [
+            "olfactif",
+            "fragrance",
+            "musc",
+            "absolu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "macération",
+          "options": [
+            "macération",
+            "volatilité",
+            "parfum",
+            "nez"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sillage",
+          "options": [
+            "sillage",
+            "essence",
+            "distillation",
+            "note"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "fragrance",
+          "options": [
+            "fragrance",
+            "alambic",
+            "flacon",
+            "olfactif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "musc",
+          "options": [
+            "musc",
+            "macération",
+            "sillage",
+            "fragrance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "absolu",
+          "options": [
+            "absolu",
+            "volatilité",
+            "parfum",
+            "nez"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "volatilité",
+          "options": [
+            "volatilité",
+            "essence",
+            "distillation",
+            "note"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'âme en bouteille",
+      "inspiration": "Le Parfum (Tom Tykwer, 2006)",
+      "text": "À peine Grenouille eut-il scellé le {{BLANK_7}} de cristal qu'il sut qu'il tenait enfin l'âme du monde entre ses mains pâles. Ce monstre sans odeur, rejeté par l'humanité, possédait un génie {{BLANK_8}} qui défiait la raison. Dans les caves sombres de Grasse, il avait torturé les fleurs, les soumettant à la chaleur de l'{{BLANK_6}} pour arracher leur {{BLANK_3}} par la {{BLANK_4}}, ou les noyant dans la graisse lors d'une lente {{BLANK_9}}. Ce {{BLANK_2}} maudit ne cherchait pas la beauté, mais la domination. Il savait que la {{BLANK_14}} des citrus ne serait qu'un éclair, une simple {{BLANK_5}} de tête, tandis que la lourdeur du {{BLANK_12}} formerait le socle de sa {{BLANK_11}} mortelle. Quand il s'ouvrit le chemin vers l'échafaud, une seule goutte de son {{BLANK_1}} absolu libéra un {{BLANK_10}} si divin que la foule venue pour le pendre tomba à genoux, pleurant d'extase. Il avait capturé l'{{BLANK_13}} de l'innocence, prouvant que l'homme n'est qu'un animal guidé par son nez, prêt à dévorer son créateur pour une bouffée de paradis artificiel.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "parfum",
+          "options": [
+            "parfum",
+            "nez",
+            "essence",
+            "distillation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "nez",
+          "options": [
+            "nez",
+            "note",
+            "alambic",
+            "flacon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "essence",
+          "options": [
+            "essence",
+            "olfactif",
+            "macération",
+            "sillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "distillation",
+          "options": [
+            "distillation",
+            "fragrance",
+            "musc",
+            "absolu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "note",
+          "options": [
+            "note",
+            "volatilité",
+            "parfum",
+            "nez"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "alambic",
+          "options": [
+            "alambic",
+            "essence",
+            "distillation",
+            "note"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "flacon",
+          "options": [
+            "flacon",
+            "olfactif",
+            "macération",
+            "sillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "olfactif",
+          "options": [
+            "olfactif",
+            "fragrance",
+            "musc",
+            "absolu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "macération",
+          "options": [
+            "macération",
+            "volatilité",
+            "parfum",
+            "nez"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sillage",
+          "options": [
+            "sillage",
+            "essence",
+            "distillation",
+            "note"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "fragrance",
+          "options": [
+            "fragrance",
+            "alambic",
+            "flacon",
+            "olfactif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "musc",
+          "options": [
+            "musc",
+            "macération",
+            "sillage",
+            "fragrance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "absolu",
+          "options": [
+            "absolu",
+            "volatilité",
+            "parfum",
+            "nez"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "volatilité",
+          "options": [
+            "volatilité",
+            "essence",
+            "distillation",
+            "note"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Parfumerie et olfaction",
+    "title_fa": "آزمون : عطر سازی و بویایی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le produit cosmétique liquide composé d'huiles essentielles et d'alcool, utilisé pour son odeur agréable, est le ____.",
+        "options": [
+          "parfum",
+          "nez",
+          "essence",
+          "distillation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محصول خوشبوی مایع = parfum."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans l'industrie du parfum, le terme qui désigne le créateur et maître compositeur de fragrances est le ____.",
+        "options": [
+          "nez",
+          "note",
+          "alambic",
+          "flacon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خالق و استاد ترکیب عطر = nez."
+      },
+      {
+        "type": "mcq",
+        "question": "L'extrait concentré et pur obtenu à partir d'une matière première végétale ou animale est l'____.",
+        "options": [
+          "essence",
+          "olfactif",
+          "macération",
+          "sillage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عصاره غلیظ و خالص = essence."
+      },
+      {
+        "type": "mcq",
+        "question": "Le procédé thermique qui consiste à séparer les composants d'un mélange par évaporation et condensation est la ____.",
+        "options": [
+          "distillation",
+          "fragrance",
+          "musc",
+          "absolu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرآیند جداسازی با تبخیر و میعان = distillation."
+      },
+      {
+        "type": "mcq",
+        "question": "Chacune des phases odorantes (tête, cœur, fond) qui se révèlent successivement lors de l'évaporation d'un parfum est la ____.",
+        "options": [
+          "note",
+          "volatilité",
+          "parfum",
+          "nez"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فازهای بویایی (آغازین، میانی، پایه) = note."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil historique en cuivre ou en verre utilisé pour chauffer et condenser les vapeurs aromatiques est l'____.",
+        "options": [
+          "alambic",
+          "essence",
+          "distillation",
+          "note"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه تقطیر سنتی = alambic."
+      },
+      {
+        "type": "mcq",
+        "question": "Le récipient, souvent en verre ou en cristal, spécialement conçu pour contenir et conserver le parfum est le ____.",
+        "options": [
+          "flacon",
+          "olfactif",
+          "macération",
+          "sillage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ظرف نگهدارنده عطر = flacon."
+      },
+      {
+        "type": "mcq",
+        "question": "L'adjectif qui se rapporte au sens de l'odorat et à la perception des odeurs est ____.",
+        "options": [
+          "olfactif",
+          "fragrance",
+          "musc",
+          "absolu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مربوط به حس بویایی = olfactif."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique d'extraction qui consiste à laisser tremper des matières odorantes dans un solvant ou un corps gras est la ____.",
+        "options": [
+          "macération",
+          "volatilité",
+          "parfum",
+          "nez"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک خیساندن در حلال یا چربی = macération."
+      },
+      {
+        "type": "mcq",
+        "question": "La trace odorante et persistante qu'un parfum laisse dans l'air après le passage de la personne qui le porte est le ____.",
+        "options": [
+          "sillage",
+          "essence",
+          "distillation",
+          "note"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رد بویایی به‌جامانده در هوا = sillage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le terme élégant et poétique utilisé pour désigner l'odeur agréable et complexe d'une composition parfumée est la ____.",
+        "options": [
+          "fragrance",
+          "alambic",
+          "flacon",
+          "olfactif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واژه ظریف برای رایحه خوش = fragrance."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance odorante forte, d'origine animale (cervidé) ou synthétique, utilisée comme fixateur en note de fond est le ____.",
+        "options": [
+          "musc",
+          "macération",
+          "sillage",
+          "fragrance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده تثبیت‌کننده با بوی قوی = musc."
+      },
+      {
+        "type": "mcq",
+        "question": "L'extrait floral ou végétal le plus pur et le plus concentré, obtenu par extraction aux solvants volatils, est l'____.",
+        "options": [
+          "absolu",
+          "volatilité",
+          "parfum",
+          "nez"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خالص‌ترین و غلیظ‌ترین عصاره = absolu."
+      },
+      {
+        "type": "mcq",
+        "question": "La propriété physique d'une substance odorante à s'évaporer rapidement au contact de l'air est la ____.",
+        "options": [
+          "volatilité",
+          "essence",
+          "distillation",
+          "note"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خاصیت تبخیر سریع در هوا = volatilité."
+      },
+      {
+        "type": "binary",
+        "question": "Le terme 'nez' dans l'industrie du parfum désigne exclusivement l'organe sensoriel et jamais le créateur du parfum.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. در صنعت عطر، 'nez' به معنای استاد عطار و خالق عطر نیز هست."
+      },
+      {
+        "type": "binary",
+        "question": "La note de tête est la première odeur perçue, souvent très volatile, composée d'agrumes ou d'herbes fraîches.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. نت آغازین (note de tête) اولین بویی است که استشمام و زود تبخیر می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le sillage désigne le bouchon en verre lourd qui ferme hermétiquement le flacon de parfum.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. sillage به رد بویایی به‌جامانده از عطر در محیط گفته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "L'alambic est un appareil utilisé pour la distillation, permettant de séparer les huiles essentielles de l'eau.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دیگ تقطیر (alambic) برای جداسازی روغن‌های ضروری استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "L'absolu est une matière première très diluée et peu coûteuse utilisée pour les parfums d'entrée de gamme.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. absolu غلیظ‌ترین، خالص‌ترین و گران‌ترین عصاره گیاهی است."
+      },
+      {
+        "type": "binary",
+        "question": "La macération consiste à laisser reposer des ingrédients dans un liquide pour en extraire les arômes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ماسراسیون خیساندن مواد برای استخراج عطر و طعم است."
+      }
+    ]
+  }
+}
