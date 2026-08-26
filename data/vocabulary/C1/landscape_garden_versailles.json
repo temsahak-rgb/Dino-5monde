@@ -1,0 +1,680 @@
+{
+  "id": "landscape_garden_versailles",
+  "level": "C1",
+  "theme": "Jardin à la française, paysage et architecture verte",
+  "theme_fa": "باغ فرانسوی، منظره و معماری سبز",
+  "icon": "🌳",
+  "inspiration": "Les Jardins du Roi (A Little Chaos - Alan Rickman, 2014)",
+  "words": [
+    {
+      "fr": "le jardin à la française",
+      "fa": "باغ فرانسوی (کلاسیک)",
+      "emoji": "🏰",
+      "difficulty": 4,
+      "ex": "Le jardin à la française impose la symétrie et la maîtrise de la nature.",
+      "ex_fa": "باغ فرانسوی تقارن و تسلط بر طبیعت را تحمیل می‌کند."
+    },
+    {
+      "fr": "la perspective",
+      "fa": "پرسپکتیو، چشم‌انداز",
+      "emoji": "👁️",
+      "difficulty": 4,
+      "ex": "La perspective centrale guide le regard vers l'horizon infini.",
+      "ex_fa": "پرسپکتیو مرکزی نگاه را به سوی افق بی‌نهایت هدایت می‌کند."
+    },
+    {
+      "fr": "le parterre",
+      "fa": "گل‌کاری، باغچه تزیینی",
+      "emoji": "🌺",
+      "difficulty": 4,
+      "ex": "Les parterres de broderie sont dessinés comme de la dentelle végétale.",
+      "ex_fa": "باغچه‌های گلدوزی‌شده مانند توری گیاهی طراحی شده‌اند."
+    },
+    {
+      "fr": "le bosquet",
+      "fa": "بیشه، درختزار کوچک",
+      "emoji": "🌲",
+      "difficulty": 5,
+      "ex": "Le bosquet cachait des salles de verdure pour les fêtes royales.",
+      "ex_fa": "بیشه، سالن‌های سبز را برای جشن‌های سلطنتی پنهان می‌کرد."
+    },
+    {
+      "fr": "la fontaine",
+      "fa": "فواره",
+      "emoji": "⛲",
+      "difficulty": 3,
+      "ex": "La fontaine d'Apollon jaillit au rythme de la musique de Lully.",
+      "ex_fa": "فواره آپولو هماهنگ با موسیقی لولی می‌جوشد."
+    },
+    {
+      "fr": "le bassin",
+      "fa": "حوضچه، استخر بزرگ",
+      "emoji": "💧",
+      "difficulty": 4,
+      "ex": "Le grand bassin reflète la façade dorée du château.",
+      "ex_fa": "حوضچه بزرگ نمای طلایی قلعه را منعکس می‌کند."
+    },
+    {
+      "fr": "la symétrie",
+      "fa": "تقارن",
+      "emoji": "⚖️",
+      "difficulty": 3,
+      "ex": "La symétrie absolue reflète l'ordre et le pouvoir du Roi-Soleil.",
+      "ex_fa": "تقارن مطلق نشان‌دهنده نظم و قدرت پادشاه خورشید است."
+    },
+    {
+      "fr": "l'art topiaire",
+      "fa": "هنر هرس مجسمه‌ای",
+      "emoji": "✂️",
+      "difficulty": 5,
+      "ex": "L'art topiaire transforme les buis en animaux ou en formes géométriques.",
+      "ex_fa": "هنر هرس مجسمه‌ای، شمشادها را به شکل حیوانات یا هندسی درمی‌آورد."
+    },
+    {
+      "fr": "l'allée",
+      "fa": "قدمگاه، خیابان باغ",
+      "emoji": "🚶",
+      "difficulty": 3,
+      "ex": "L'allée principale est bordée de statues de marbre blanc.",
+      "ex_fa": "قدمگاه اصلی با مجسمه‌های مرمر سفید احاطه شده است."
+    },
+    {
+      "fr": "la cascade",
+      "fa": "آبشار پلکانی",
+      "emoji": "🌊",
+      "difficulty": 4,
+      "ex": "La cascade de marbre rose déverse ses eaux dans le canal.",
+      "ex_fa": "آبشار مرمر صورتی آب‌هایش را به درون کانال می‌ریزد."
+    },
+    {
+      "fr": "le paysagiste",
+      "fa": "طراح منظره",
+      "emoji": "📐",
+      "difficulty": 4,
+      "ex": "André Le Nôtre est le plus grand paysagiste du XVIIe siècle.",
+      "ex_fa": "آندره لو نوتر بزرگترین طراح منظره قرن هفدهم است."
+    },
+    {
+      "fr": "la treille",
+      "fa": "داربست انگور",
+      "emoji": "🍇",
+      "difficulty": 4,
+      "ex": "La treille offre une ombre fraîche et des fruits sucrés en été.",
+      "ex_fa": "داربست انگور در تابستان سایه خنک و میوه شیرین می‌دهد."
+    },
+    {
+      "fr": "le gazon",
+      "fa": "چمن",
+      "emoji": "🌱",
+      "difficulty": 3,
+      "ex": "Le gazon est tondu parfaitement pour former des tapis verts.",
+      "ex_fa": "چمن به طور بی‌نقص کوتاه می‌شود تا فرش‌های سبز تشکیل دهد."
+    },
+    {
+      "fr": "l'ornement",
+      "fa": "زینت، مجسمه تزیینی",
+      "emoji": "🗿",
+      "difficulty": 4,
+      "ex": "Chaque carrefour est marqué par un ornement mythologique.",
+      "ex_fa": "هر چهارراه با یک زینت اساطیری مشخص می‌شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le chef-d'œuvre de Le Nôtre",
+      "text": "André Le Nôtre est le {{BLANK_11}} attitré du roi Louis XIV. Il conçoit le plus grand {{BLANK_1}} du monde à Versailles. Son but est de dompter la nature sauvage pour glorifier le monarque. Il trace une {{BLANK_2}} immense qui part du château et semble toucher le ciel. Tout repose sur une {{BLANK_7}} parfaite : chaque côté est le miroir de l'autre. Devant le palais, il dessine un {{BLANK_3}} complexe, brodé de fleurs colorées. Plus loin, le {{BLANK_13}} vert s'étend comme un tapis royal. Les promeneurs empruntent la grande {{BLANK_9}} bordée de statues. Chaque statue sert d'{{BLANK_14}} pour célébrer les dieux antiques. Au détour d'un chemin, on découvre un {{BLANK_4}} sombre et mystérieux. Soudain, le bruit de l'eau éclate : une majestueuse {{BLANK_5}} danse au soleil. L'eau s'écoule ensuite dans un large {{BLANK_6}} où nagent des cygnes. Pour surprendre les visiteurs, il crée une {{BLANK_10}} de marbre qui chante en tombant. Les jardiniers pratiquent l'{{BLANK_8}} pour donner aux ifs la forme de pyramides. Sous une {{BLANK_12}} odorante, le roi aime se reposer loin des regards de la cour.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "jardin à la française",
+          "options": [
+            "jardin à la française",
+            "bosquet",
+            "cascade",
+            "gazon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "perspective",
+          "options": [
+            "perspective",
+            "treille",
+            "fontaine",
+            "ornement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "parterre",
+          "options": [
+            "parterre",
+            "bassin",
+            "symétrie",
+            "art topiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "bosquet",
+          "options": [
+            "bosquet",
+            "paysagiste",
+            "allée",
+            "gazon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "fontaine",
+          "options": [
+            "fontaine",
+            "treille",
+            "cascade",
+            "ornement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "bassin",
+          "options": [
+            "bassin",
+            "perspective",
+            "parterre",
+            "art topiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "symétrie",
+          "options": [
+            "symétrie",
+            "bosquet",
+            "fontaine",
+            "gazon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "art topiaire",
+          "options": [
+            "art topiaire",
+            "treille",
+            "cascade",
+            "paysagiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "allée",
+          "options": [
+            "allée",
+            "bassin",
+            "symétrie",
+            "ornement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "cascade",
+          "options": [
+            "cascade",
+            "perspective",
+            "parterre",
+            "fontaine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "paysagiste",
+          "options": [
+            "paysagiste",
+            "bosquet",
+            "gazon",
+            "art topiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "treille",
+          "options": [
+            "treille",
+            "cascade",
+            "symétrie",
+            "bassin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "gazon",
+          "options": [
+            "gazon",
+            "ornement",
+            "allée",
+            "perspective"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "ornement",
+          "options": [
+            "ornement",
+            "treille",
+            "parterre",
+            "bosquet"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La rébellion de la nature",
+      "inspiration": "Les Jardins du Roi (A Little Chaos - Alan Rickman, 2014)",
+      "text": "À peine Sabine De Barra eut-elle déroulé ses parchemins humides sur la table du Roi-Soleil qu'elle sentit le poids du courroux de Le Nôtre s'abattre sur elle. Dans ce royaume où le {{BLANK_1}} dictait sa loi d'airain, la moindre feuille devait obéir à la géométrie du monarque. Le grand {{BLANK_11}} avait tracé une {{BLANK_2}} impitoyable, soumettant la terre à une {{BLANK_7}} glacée qui flattait l'ego de Louis XIV. Les {{BLANK_3}}s de broderie étaient des tapis d'orgueil, et l'{{BLANK_8}} torturait les arbres pour les plier aux caprices de la cour. Mais Sabine, veuve brisée par le destin, refusait cette nature emprisonnée. Pour son petit {{BLANK_4}} secret, elle voulait introduire le chaos, le murmure du vent, l'imprévu d'une {{BLANK_10}} sauvage qui pleurerait sur la pierre plutôt qu'une majestueuse {{BLANK_5}} domestiquée. Elle imaginait un {{BLANK_6}} aux bords irréguliers, reflétant les nuages passagers plutôt que la froide façade du palais. Là, sous une {{BLANK_12}} ployant sous le poids des vignes, le {{BLANK_13}} foulerait des herbes folles plutôt que des dalles de marbre. Elle osait cacher un simple {{BLANK_14}} de bois brut au détour d'une {{BLANK_9}} sinueuse, loin des statues olympiennes. Quand le roi découvrit ce jardin de l'âme, où l'eau coulait comme des larmes et où les rosiers grimpants défiaient la ligne droite, il comprit que la véritable beauté ne naît pas de la contrainte, mais de la liberté laissée à la vie de s'exprimer.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "jardin à la française",
+          "options": [
+            "jardin à la française",
+            "bosquet",
+            "cascade",
+            "gazon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "perspective",
+          "options": [
+            "perspective",
+            "treille",
+            "fontaine",
+            "ornement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "parterre",
+          "options": [
+            "parterre",
+            "bassin",
+            "symétrie",
+            "art topiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "bosquet",
+          "options": [
+            "bosquet",
+            "paysagiste",
+            "allée",
+            "gazon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "fontaine",
+          "options": [
+            "fontaine",
+            "treille",
+            "cascade",
+            "ornement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "bassin",
+          "options": [
+            "bassin",
+            "perspective",
+            "parterre",
+            "art topiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "symétrie",
+          "options": [
+            "symétrie",
+            "bosquet",
+            "fontaine",
+            "gazon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "art topiaire",
+          "options": [
+            "art topiaire",
+            "treille",
+            "cascade",
+            "paysagiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "allée",
+          "options": [
+            "allée",
+            "bassin",
+            "symétrie",
+            "ornement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "cascade",
+          "options": [
+            "cascade",
+            "perspective",
+            "parterre",
+            "fontaine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "paysagiste",
+          "options": [
+            "paysagiste",
+            "bosquet",
+            "gazon",
+            "art topiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "treille",
+          "options": [
+            "treille",
+            "cascade",
+            "symétrie",
+            "bassin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "gazon",
+          "options": [
+            "gazon",
+            "ornement",
+            "allée",
+            "perspective"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "ornement",
+          "options": [
+            "ornement",
+            "treille",
+            "parterre",
+            "bosquet"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Architecture des jardins et paysage",
+    "title_fa": "آزمون : معماری باغ و منظره",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le style de jardin classique caractérisé par la géométrie, la maîtrise de la nature et la grandeur, typique du XVIIe siècle français, est le ____.",
+        "options": [
+          "jardin à la française",
+          "bosquet",
+          "cascade",
+          "gazon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سبک باغ کلاسیک فرانسوی = jardin à la française."
+      },
+      {
+        "type": "mcq",
+        "question": "L'effet visuel qui donne une impression de profondeur et guide le regard vers un point de fuite lointain est la ____.",
+        "options": [
+          "perspective",
+          "treille",
+          "fontaine",
+          "ornement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اثر بصری عمق و نقطه گریز = perspective."
+      },
+      {
+        "type": "mcq",
+        "question": "La plate-bande de fleurs ou de buis taillés, souvent disposée en motifs complexes vus d'en haut, est le ____.",
+        "options": [
+          "parterre",
+          "bassin",
+          "symétrie",
+          "art topiaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باغچه تزیینی با نقوش هندسی = parterre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit bois touffu et aménagé dans un grand jardin, servant de salle de verdure intime, est le ____.",
+        "options": [
+          "bosquet",
+          "paysagiste",
+          "allée",
+          "gazon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بیشه یا درختزار کوچک در باغ = bosquet."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ouvrage hydraulique qui projette l'eau en l'air pour un effet décoratif et sonore est la ____.",
+        "options": [
+          "fontaine",
+          "treille",
+          "cascade",
+          "ornement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازه پاشش آب به هوا = fontaine."
+      },
+      {
+        "type": "mcq",
+        "question": "La grande pièce d'eau artificielle, souvent de forme géométrique, qui sert de miroir au paysage est le ____.",
+        "options": [
+          "bassin",
+          "perspective",
+          "parterre",
+          "art topiaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حوضچه بزرگ و هندسی = bassin."
+      },
+      {
+        "type": "mcq",
+        "question": "L'équilibre visuel où les éléments de part et d'autre d'un axe central sont identiques ou équivalents est la ____.",
+        "options": [
+          "symétrie",
+          "bosquet",
+          "fontaine",
+          "gazon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تعادل بصری دو طرف یک محور = symétrie."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique horticole qui consiste à tailler les arbres et arbustes pour leur donner des formes géométriques ou figuratives est l'____.",
+        "options": [
+          "art topiaire",
+          "treille",
+          "cascade",
+          "paysagiste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر هرس درختان به شکل مجسمه = art topiaire."
+      },
+      {
+        "type": "mcq",
+        "question": "Le chemin large et bordé d'arbres ou de statues qui structure la promenade dans le parc est l'____.",
+        "options": [
+          "allée",
+          "bassin",
+          "symétrie",
+          "ornement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسیر یا قدمگاه باغ = allée."
+      },
+      {
+        "type": "mcq",
+        "question": "L'aménagement de rochers et d'eau qui imite une chute d'eau naturelle sur plusieurs niveaux est la ____.",
+        "options": [
+          "cascade",
+          "perspective",
+          "parterre",
+          "fontaine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آبشار پلکانی مصنوعی = cascade."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel qui conçoit, aménage et entretient les espaces verts et les parcs est le ____.",
+        "options": [
+          "paysagiste",
+          "bosquet",
+          "gazon",
+          "art topiaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طراح و معمار فضای سبز = paysagiste."
+      },
+      {
+        "type": "mcq",
+        "question": "La structure en bois ou en fer sur laquelle on fait grimper des plantes, comme la vigne, pour créer de l'ombre est la ____.",
+        "options": [
+          "treille",
+          "cascade",
+          "symétrie",
+          "bassin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "داربست گیاهان رونده = treille."
+      },
+      {
+        "type": "mcq",
+        "question": "La surface couverte d'herbes fines, régulièrement tondues pour former un tapis vert uniforme, est le ____.",
+        "options": [
+          "gazon",
+          "ornement",
+          "allée",
+          "perspective"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطح پوشیده از چمن کوتاه‌شده = gazon."
+      },
+      {
+        "type": "mcq",
+        "question": "L'élément décoratif, comme une statue, un vase ou une colonne, qui enrichit visuellement un carrefour ou une allée est l'____.",
+        "options": [
+          "ornement",
+          "treille",
+          "parterre",
+          "bosquet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عنصر تزیینی مانند مجسمه یا گلدان = ornement."
+      },
+      {
+        "type": "binary",
+        "question": "Le jardin à la française privilégie la nature sauvage et l'asymétrie pour imiter les forêts naturelles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. باغ فرانسوی بر پایه نظم هندسی، تقارن و تسلط بر طبیعت است، نه طبیعت وحشی."
+      },
+      {
+        "type": "binary",
+        "question": "L'art topiaire est l'art de tailler les végétaux (buis, ifs) pour leur donner des formes architecturales ou animales.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هرس مجسمه‌ای (topiaire) برای شکل دادن به گیاهان استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Un bosquet est un grand lac artificiel utilisé pour faire naviguer des bateaux de plaisance.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. بیشه (bosquet) یک درختزار کوچک و اتاقک سبز است، نه دریاچه."
+      },
+      {
+        "type": "binary",
+        "question": "La perspective dans les jardins classiques vise à agrandir visuellement l'espace et à montrer la domination de l'homme sur l'horizon.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پرسپکتیو فضا را بزرگتر نشان داده و تسلط انسان را به رخ می‌کشد."
+      },
+      {
+        "type": "binary",
+        "question": "Le paysagiste est le musicien qui compose les mélodies jouées près des fontaines.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. طراح منظره (paysagiste) معمار فضای سبز است، نه موسیقیدان."
+      },
+      {
+        "type": "binary",
+        "question": "Une treille sert principalement de support pour faire grimper la vigne et créer des pergolas ombragées.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. داربست برای هدایت موهای انگور و ایجاد سایه استفاده می‌شود."
+      }
+    ]
+  }
+}
