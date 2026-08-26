@@ -1,0 +1,680 @@
+{
+  "id": "underwater_archaeology_shipwrecks",
+  "level": "C1",
+  "theme": "Archéologie sous-marine, épaves et abysses",
+  "theme_fa": "باستان‌شناسی زیر آب، کشتی‌های غرق‌شده و اعماق",
+  "icon": "⚓",
+  "inspiration": "Titanic (James Cameron, 1997)",
+  "words": [
+    {
+      "fr": "l'épave",
+      "fa": "لشه، کشتی غرق‌شده",
+      "emoji": "🚢",
+      "difficulty": 4,
+      "ex": "L'épave repose à trois mille mètres de profondeur dans l'obscurité totale.",
+      "ex_fa": "لشه کشتی در عمق سه هزار متری و در تاریکی مطلق آرام گرفته است."
+    },
+    {
+      "fr": "le galion",
+      "fa": "کشتی بادبانی قدیمی (گالیون)",
+      "emoji": "⛵",
+      "difficulty": 5,
+      "ex": "Le galion espagnol transportait l'or des Amériques vers l'Europe.",
+      "ex_fa": "کشتی گالیون اسپانیایی طلای قاره آمریکا را به اروپا می‌برد."
+    },
+    {
+      "fr": "l'ancre",
+      "fa": "لنگر",
+      "emoji": "⚓",
+      "difficulty": 3,
+      "ex": "L'ancre rouillée est le premier signe de la présence du navire.",
+      "ex_fa": "لنگر زنگ‌زده اولین نشانه از حضور کشتی است."
+    },
+    {
+      "fr": "le trésor",
+      "fa": "گنج",
+      "emoji": "💰",
+      "difficulty": 3,
+      "ex": "Les chasseurs d'épaves rêvent de découvrir un trésor inestimable.",
+      "ex_fa": "جویندگان لشه‌ها رؤیای کشف گنجی بی‌ارزش را در سر دارند."
+    },
+    {
+      "fr": "la coque",
+      "fa": "بدنه کشتی",
+      "emoji": "🛳️",
+      "difficulty": 4,
+      "ex": "La coque du navire est déchirée par la violence de l'iceberg.",
+      "ex_fa": "بدنه کشتی بر اثر برخورد شدید با کوه یخ پاره شده است."
+    },
+    {
+      "fr": "le canon",
+      "fa": "توپ جنگی",
+      "emoji": "💣",
+      "difficulty": 4,
+      "ex": "Les canons de bronze sont recouverts d'algues et de coraux.",
+      "ex_fa": "توپ‌های برنزی با جلبک و مرجان پوشیده شده‌اند."
+    },
+    {
+      "fr": "le hublot",
+      "fa": "دریچه، پنجره کشتی",
+      "emoji": "🔘",
+      "difficulty": 4,
+      "ex": "La lumière du submersible éclaire le hublot brisé d'une cabine.",
+      "ex_fa": "نور زیردریایی، دریچه شکسته یک کابین را روشن می‌کند."
+    },
+    {
+      "fr": "le sonar",
+      "fa": "سونار (ردیاب صوتی)",
+      "emoji": "📡",
+      "difficulty": 4,
+      "ex": "Le sonar détecte les anomalies métalliques sur le fond marin.",
+      "ex_fa": "سونار ناهنجاری‌های فلزی را در بستر دریا شناسایی می‌کند."
+    },
+    {
+      "fr": "l'artefact",
+      "fa": "شیء باستانی",
+      "emoji": "🏺",
+      "difficulty": 5,
+      "ex": "Chaque artefact doit être photographié avant d'être remonté à la surface.",
+      "ex_fa": "از هر شیء باستانی باید قبل از انتقال به سطح عکس‌برداری شود."
+    },
+    {
+      "fr": "le submersible",
+      "fa": "زیردریایی کوچک تحقیقاتی",
+      "emoji": "🛥️",
+      "difficulty": 5,
+      "ex": "Le submersible biplace résiste aux pressions extrêmes des abysses.",
+      "ex_fa": "زیردریایی کوچک دو نفره در برابر فشارهای شدید اعماق مقاوم است."
+    },
+    {
+      "fr": "le corail",
+      "fa": "مرجان",
+      "emoji": "🪸",
+      "difficulty": 3,
+      "ex": "Le corail a colonisé la proue du navire, la transformant en récif.",
+      "ex_fa": "مرجان‌ها دماغه کشتی را تسخیر و آن را به صخره‌ای دریایی تبدیل کرده‌اند."
+    },
+    {
+      "fr": "la fouille",
+      "fa": "کاوش، حفاری",
+      "emoji": "🔍",
+      "difficulty": 4,
+      "ex": "La fouille sous-marine exige des techniques de conservation très strictes.",
+      "ex_fa": "کاوش زیر آبی به تکنیک‌های بسیار دقیق نگهداری نیاز دارد."
+    },
+    {
+      "fr": "le butin",
+      "fa": "غنائم، اموال به‌غنیمت‌رفته",
+      "emoji": "🏴‍☠️",
+      "difficulty": 4,
+      "ex": "Les pirates ont caché leur butin dans les cales avant le naufrage.",
+      "ex_fa": "دزدان دریایی غنائم خود را قبل از غرق شدن در انبار پنهان کردند."
+    },
+    {
+      "fr": "la proue",
+      "fa": "دماغه (جلوی) کشتی",
+      "emoji": "🚢",
+      "difficulty": 4,
+      "ex": "La proue du bateau s'enfonce lentement dans la vase marine.",
+      "ex_fa": "دماغه کشتی آرام در گل‌ولای بستر دریا فرو می‌رود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le secret de l'Atlantique",
+      "text": "Brock Lovett est un chasseur d'épaves qui cherche un {{BLANK_4}} légendaire. À bord de son navire, il utilise un {{BLANK_8}} pour scanner les fonds marins. Soudain, l'écran révèle la silhouette d'un ancien {{BLANK_2}} espagnol. Il envoie un {{BLANK_10}} robotisé pour explorer les lieux. La {{BLANK_5}} du navire est largement ouverte, révélant des {{BLANK_6}}s en bronze envahis par le {{BLANK_11}}. En s'approchant de la {{BLANK_14}}, le robot filme une immense {{BLANK_3}} rouillée. À travers un {{BLANK_7}} fissuré, on devine les cabines des passagers. La {{BLANK_12}} scientifique commence, chaque {{BLANK_9}} étant soigneusement catalogué. Brock espère trouver le {{BLANK_13}} des pirates, mais découvre plutôt des objets du quotidien, des témoignages émouvants de vies brisées par la tempête. Cette {{BLANK_1}} silencieuse devient un tombeau sacré que l'océan garde jalousement depuis des siècles.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "épave",
+          "options": [
+            "épave",
+            "galion",
+            "ancre",
+            "trésor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "galion",
+          "options": [
+            "galion",
+            "coque",
+            "canon",
+            "hublot"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "ancre",
+          "options": [
+            "ancre",
+            "sonar",
+            "artefact",
+            "submersible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "trésor",
+          "options": [
+            "trésor",
+            "corail",
+            "fouille",
+            "butin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "coque",
+          "options": [
+            "coque",
+            "proue",
+            "épave",
+            "galion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "canons",
+          "options": [
+            "canons",
+            "ancre",
+            "trésor",
+            "coque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "hublot",
+          "options": [
+            "hublot",
+            "sonar",
+            "artefact",
+            "submersible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "sonar",
+          "options": [
+            "sonar",
+            "corail",
+            "fouille",
+            "butin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "artefact",
+          "options": [
+            "artefact",
+            "proue",
+            "épave",
+            "galion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "submersible",
+          "options": [
+            "submersible",
+            "ancre",
+            "trésor",
+            "coque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "corail",
+          "options": [
+            "corail",
+            "canon",
+            "hublot",
+            "sonar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "fouille",
+          "options": [
+            "fouille",
+            "artefact",
+            "submersible",
+            "corail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "butin",
+          "options": [
+            "butin",
+            "proue",
+            "épave",
+            "galion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "proue",
+          "options": [
+            "proue",
+            "ancre",
+            "trésor",
+            "coque"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les fantômes de l'abysse",
+      "inspiration": "Titanic (James Cameron, 1997)",
+      "text": "À peine le chercheur eut-il scruté l'écran du {{BLANK_8}} que les fantômes de l'abysse se matérialisèrent dans la lueur spectrale des moniteurs. Ce n'était pas un simple {{BLANK_2}} chargé d'or, mais le cadavre d'un géant d'acier, une {{BLANK_1}} majestueuse reposant dans le linceul des ténèbres. Le {{BLANK_10}} s'enfonça dans les profondeurs glacées, ses projecteurs caressant la {{BLANK_14}} déchiquetée où le {{BLANK_11}} avait tissé un suaire de pierre et de vie. La {{BLANK_5}} éventrée racontait l'agonie du métal face à la violence de l'iceberg. À travers chaque {{BLANK_7}} brisé, l'œil mécanique cherchait les âmes disparues, tandis qu'un {{BLANK_6}} solitaire pointait encore vers un ennemi invisible. Lovett ne cherchait plus un vulgaire {{BLANK_4}} ou le {{BLANK_13}} de quelque roi oublié, mais la mémoire du monde. Chaque {{BLANK_9}} remonté lors de cette {{BLANK_12}} délicate n'était pas un objet, mais une larme figée de l'histoire, une chaussure, une paire de lunettes, une lettre d'amour jamais envoyée. Près de la gigantesque {{BLANK_3}} plantée dans la vase comme une croix tombale, il comprit que l'océan ne rend pas ses morts, il les adopte, transformant la tragédie humaine en un sanctuaire éternel que seule la pression écrasante des abysses sait protéger de l'avidité des vivants.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "épave",
+          "options": [
+            "épave",
+            "galion",
+            "ancre",
+            "trésor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "galion",
+          "options": [
+            "galion",
+            "coque",
+            "canon",
+            "hublot"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "ancre",
+          "options": [
+            "ancre",
+            "sonar",
+            "artefact",
+            "submersible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "trésor",
+          "options": [
+            "trésor",
+            "corail",
+            "fouille",
+            "butin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "coque",
+          "options": [
+            "coque",
+            "proue",
+            "épave",
+            "galion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "canon",
+          "options": [
+            "canon",
+            "ancre",
+            "trésor",
+            "coque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "hublot",
+          "options": [
+            "hublot",
+            "sonar",
+            "artefact",
+            "submersible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "sonar",
+          "options": [
+            "sonar",
+            "corail",
+            "fouille",
+            "butin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "artefact",
+          "options": [
+            "artefact",
+            "proue",
+            "épave",
+            "galion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "submersible",
+          "options": [
+            "submersible",
+            "ancre",
+            "trésor",
+            "coque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "corail",
+          "options": [
+            "corail",
+            "canon",
+            "hublot",
+            "sonar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "fouille",
+          "options": [
+            "fouille",
+            "artefact",
+            "submersible",
+            "corail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "butin",
+          "options": [
+            "butin",
+            "proue",
+            "épave",
+            "galion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "proue",
+          "options": [
+            "proue",
+            "ancre",
+            "trésor",
+            "coque"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Archéologie sous-marine",
+    "title_fa": "آزمون : باستان‌شناسی زیر آب",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Les restes d'un navire qui a coulé et qui repose au fond de l'eau sont l'____.",
+        "options": [
+          "épave",
+          "galion",
+          "ancre",
+          "trésor"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بقایای کشتی غرق‌شده = épave."
+      },
+      {
+        "type": "mcq",
+        "question": "Le grand navire à voiles utilisé autrefois pour le commerce et la guerre, notamment par les Espagnols, est le ____.",
+        "options": [
+          "galion",
+          "coque",
+          "canon",
+          "hublot"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشتی بادبانی بزرگ و قدیمی = galion."
+      },
+      {
+        "type": "mcq",
+        "question": "La lourde pièce de métal qu'on laisse tomber au fond de l'eau pour immobiliser le bateau est l'____.",
+        "options": [
+          "ancre",
+          "sonar",
+          "artefact",
+          "submersible"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله ثابت نگه داشتن کشتی = ancre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des richesses, des objets précieux ou des métaux cachés ou perdus est le ____.",
+        "options": [
+          "trésor",
+          "corail",
+          "fouille",
+          "butin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ثروت و اشیاء قیمتی پنهان = trésor."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enveloppe extérieure et imperméable qui forme le corps du navire est la ____.",
+        "options": [
+          "coque",
+          "proue",
+          "épave",
+          "galion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بدنه بیرونی و ضد آب کشتی = coque."
+      },
+      {
+        "type": "mcq",
+        "question": "La pièce d'artillerie tubulaire utilisée pour tirer des boulets sur les navires ennemis est le ____.",
+        "options": [
+          "canon",
+          "ancre",
+          "trésor",
+          "coque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سلاح پرتاب گلوله جنگی = canon."
+      },
+      {
+        "type": "mcq",
+        "question": "La petite fenêtre circulaire et étanche percée dans la paroi d'un navire est le ____.",
+        "options": [
+          "hublot",
+          "sonar",
+          "artefact",
+          "submersible"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پنجره کوچک و گرد کشتی = hublot."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil qui utilise la réflexion des ondes sonores pour détecter des objets sous l'eau est le ____.",
+        "options": [
+          "sonar",
+          "corail",
+          "fouille",
+          "butin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه ردیاب صوتی زیر آب = sonar."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objet fabriqué ou modifié par l'homme, découvert lors de recherches historiques, est l'____.",
+        "options": [
+          "artefact",
+          "proue",
+          "épave",
+          "galion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیء ساخت دست بشر و باستانی = artefact."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit engin sous-marin capable d'emporter des explorateurs dans les grandes profondeurs est le ____.",
+        "options": [
+          "submersible",
+          "ancre",
+          "trésor",
+          "coque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شناور کوچک اعماق دریا = submersible."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal marin qui construit des squelettes calcaires formant des récifs sur les épaves est le ____.",
+        "options": [
+          "corail",
+          "canon",
+          "hublot",
+          "sonar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جانور سازنده صخره‌های دریایی = corail."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de creuser et d'explorer méthodiquement un site pour découvrir des vestiges est la ____.",
+        "options": [
+          "fouille",
+          "artefact",
+          "submersible",
+          "corail"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل کاوش و حفاری علمی = fouille."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des richesses volées ou prises par la force, souvent par des pirates, est le ____.",
+        "options": [
+          "butin",
+          "proue",
+          "épave",
+          "galion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "غنائم و اموال دزدیده‌شده = butin."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie avant d'un navire, conçue pour fendre les vagues, est la ____.",
+        "options": [
+          "proue",
+          "ancre",
+          "trésor",
+          "coque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش جلویی و شکافنده آب کشتی = proue."
+      },
+      {
+        "type": "binary",
+        "question": "Le sonar émet des ondes lumineuses pour photographier les fonds marins dans l'obscurité.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سونار (sonar) از امواج صوتی (آکوستیک) برای ردیابی استفاده می‌کند، نه نور."
+      },
+      {
+        "type": "binary",
+        "question": "La coque est la structure extérieure et étanche qui forme le corps principal du navire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بدنه (coque) ساختار اصلی و ضد آب کشتی است."
+      },
+      {
+        "type": "binary",
+        "question": "Un artefact désigne exclusivement un bijou en or ou en pierres précieuses.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. artefact به هر شیء ساخت دست انسان (از سفال تا ابزار) گفته می‌شود، نه فقط جواهرات."
+      },
+      {
+        "type": "binary",
+        "question": "Le galion était un grand navire à voiles utilisé principalement entre le XVIe et le XVIIIe siècle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. گالیون کشتی بادبانی بزرگی بود که در قرون ۱۶ تا ۱۸ استفاده می‌شد."
+      },
+      {
+        "type": "binary",
+        "question": "La proue désigne l'arrière du navire où se trouve généralement le gouvernail.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. proue بخش جلویی (دماغه) کشتی است؛ بخش عقبی poupe نامیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Un submersible est un petit sous-marin d'exploration conçu pour résister aux pressions des abysses.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. submersible شناور تحقیقاتی کوچکی برای کاوش در اعماق و فشارهای زیاد است."
+      }
+    ]
+  }
+}
