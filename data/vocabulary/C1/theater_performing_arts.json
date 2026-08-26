@@ -1,0 +1,672 @@
+{
+  "id": "theater_performing_arts",
+  "level": "C1",
+  "theme": "Théâtre, arts de la scène et dramaturgie",
+  "theme_fa": "تئاتر، هنرهای نمایشی و دراماتورژی",
+  "icon": "🎭",
+  "inspiration": "Cyrano de Bergerac (Jean-Paul Rappeneau, 1990)",
+  "words": [
+    {
+      "fr": "la coulisse",
+      "fa": "پشت صحنه",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "L'acteur attendait en coulisse avant son entrée.",
+      "ex_fa": "بازیگر قبل از ورودش در پشت صحنه منتظر بود."
+    },
+    {
+      "fr": "le monologue",
+      "fa": "تک‌گویی",
+      "emoji": "🗣️",
+      "difficulty": 4,
+      "ex": "Hamlet prononce un célèbre monologue sur la mort.",
+      "ex_fa": "هملت تک‌گویی مشهوری درباره مرگ ایراد می‌کند."
+    },
+    {
+      "fr": "la tirade",
+      "fa": "سخنرانی طولانی احساسی",
+      "emoji": "📜",
+      "difficulty": 5,
+      "ex": "L'acteur a débité sa tirade avec une passion vibrante.",
+      "ex_fa": "بازیگر سخنرانی احساسی‌اش را با شوری لرزان بیان کرد."
+    },
+    {
+      "fr": "le décor",
+      "fa": "دکور، صحنه‌آرایی",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "Le décor représentait un salon bourgeois du XIXe siècle.",
+      "ex_fa": "دکور، سالن پذیرایی یک بورژوازی قرن نوزدهمی را نشان می‌دهد."
+    },
+    {
+      "fr": "la réplique",
+      "fa": "پاسخ بازیگر، دیالوگ",
+      "emoji": "💬",
+      "difficulty": 4,
+      "ex": "Il a oublié sa réplique et le souffleur a dû l'aider.",
+      "ex_fa": "او دیالوگش را فراموش کرد و لقمه‌گو مجبور شد کمکش کند."
+    },
+    {
+      "fr": "l'entracte",
+      "fa": "بین پرده",
+      "emoji": "⏸️",
+      "difficulty": 4,
+      "ex": "Le public a profité de l'entracte pour discuter de la pièce.",
+      "ex_fa": "تماشاگران از بین پرده برای بحث درباره نمایش استفاده کردند."
+    },
+    {
+      "fr": "la fosse",
+      "fa": "گودال ارکستر",
+      "emoji": "🎻",
+      "difficulty": 5,
+      "ex": "Les musiciens accordent leurs instruments dans la fosse.",
+      "ex_fa": "نوازندگان سازهایشان را در گودال ارکستر کوک می‌کنند."
+    },
+    {
+      "fr": "l'aparté",
+      "fa": "نجوا با تماشاگر",
+      "emoji": "🤫",
+      "difficulty": 5,
+      "ex": "Dans cet aparté, le héros révèle ses véritables intentions.",
+      "ex_fa": "در این نجوا، قهرمان نیات واقعی‌اش را فاش می‌کند."
+    },
+    {
+      "fr": "le dramaturge",
+      "fa": "نمایشنامه‌نویس",
+      "emoji": "✍️",
+      "difficulty": 4,
+      "ex": "Molière est le plus grand dramaturge français.",
+      "ex_fa": "مولیر بزرگترین نمایشنامه‌نویس فرانسوی است."
+    },
+    {
+      "fr": "la régie",
+      "fa": "اتاق فرمان",
+      "emoji": "🎛️",
+      "difficulty": 5,
+      "ex": "Le régisseur suit le spectacle depuis la régie.",
+      "ex_fa": "مدیر صحنه نمایش را از اتاق فرمان پیگیری می‌کند."
+    },
+    {
+      "fr": "le souffleur",
+      "fa": "لقمه‌گو (یادآور دیالوگ)",
+      "emoji": "📖",
+      "difficulty": 5,
+      "ex": "Le souffleur murmure les vers caché sous la scène.",
+      "ex_fa": "لقمه‌گو ابیات را در حالی که زیر صحنه پنهان شده، زمزمه می‌کند."
+    },
+    {
+      "fr": "le quiproquo",
+      "fa": "سوءتفاهم دراماتیک",
+      "emoji": "🔄",
+      "difficulty": 5,
+      "ex": "Cette comédie repose sur un immense quiproquo.",
+      "ex_fa": "این کمدی بر پایه یک سوءتفاهم بزرگ بنا شده است."
+    },
+    {
+      "fr": "la catharsis",
+      "fa": "تطهیر روانی (کاتارسیس)",
+      "emoji": "💧",
+      "difficulty": 5,
+      "ex": "La tragédie grecque provoque la catharsis du spectateur.",
+      "ex_fa": "تراژدی یونانی باعث تطهیر روانی تماشاگر می‌شود."
+    },
+    {
+      "fr": "la scénographie",
+      "fa": "طراحی صحنه",
+      "emoji": "📐",
+      "difficulty": 5,
+      "ex": "La scénographie de ce spectacle est d'une modernité époustouflante.",
+      "ex_fa": "طراحی صحنه این نمایش از مدرنیته‌ای خیره‌کننده برخوردار است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La première",
+      "title_fa": "اجرای افتتاحیه",
+      "text": "Ce soir, c'est la première de la nouvelle pièce. Le {{BLANK_1}} est très nerveux dans la salle. Sur scène, le {{BLANK_2}} représente un château médiéval grâce à une {{BLANK_3}} très élaborée. Dans la {{BLANK_4}} d'orchestre, les musiciens s'accordent. Le rideau se lève. L'acteur principal commence un long {{BLANK_5}} pour exprimer sa solitude. Ensuite, il fait un {{BLANK_6}} pour confier un secret au public. En {{BLANK_7}}, les techniciens de la {{BLANK_8}} gèrent les lumières et le son. L'actrice entre et donne sa {{BLANK_9}} avec colère. Elle prononce une longue {{BLANK_10}} pour défendre son honneur. Soudain, un acteur a un trou de mémoire, mais le {{BLANK_11}} le sauve discrètement. La scène suivante repose sur un {{BLANK_12}} comique : un personnage en prend un autre pour le roi. À l'{{BLANK_13}}, les spectateurs applaudissent et discutent. À la fin de la représentation, quand le héros meurt tragiquement, une véritable {{BLANK_14}} s'opère dans la salle : le public est ému et purgé de ses passions.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "dramaturge",
+          "options": [
+            "dramaturge",
+            "souffleur",
+            "régisseur",
+            "acteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "décor",
+          "options": [
+            "décor",
+            "monologue",
+            "aparté",
+            "quiproquo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "scénographie",
+          "options": [
+            "scénographie",
+            "catharsis",
+            "tirade",
+            "réplique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "fosse",
+          "options": [
+            "fosse",
+            "coulisse",
+            "régie",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "monologue",
+          "options": [
+            "monologue",
+            "aparté",
+            "quiproquo",
+            "décor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "aparté",
+          "options": [
+            "aparté",
+            "monologue",
+            "tirade",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "coulisse",
+          "options": [
+            "coulisse",
+            "fosse",
+            "régie",
+            "scénographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "régie",
+          "options": [
+            "régie",
+            "catharsis",
+            "fosse",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "réplique",
+          "options": [
+            "réplique",
+            "tirade",
+            "aparté",
+            "catharsis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "tirade",
+          "options": [
+            "tirade",
+            "réplique",
+            "scénographie",
+            "quiproquo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "souffleur",
+          "options": [
+            "souffleur",
+            "dramaturge",
+            "régisseur",
+            "décor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "quiproquo",
+          "options": [
+            "quiproquo",
+            "catharsis",
+            "aparté",
+            "monologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "entracte",
+          "options": [
+            "entracte",
+            "coulisse",
+            "fosse",
+            "régie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "catharsis",
+          "options": [
+            "catharsis",
+            "scénographie",
+            "tirade",
+            "quiproquo"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le panache et l'ombre",
+      "title_fa": "پاناچ و سایه",
+      "inspiration": "Cyrano de Bergerac (Edmond Rostand / Jean-Paul Rappeneau, 1990)",
+      "text": "À peine le rideau rouge de l'Hôtel de Bourgogne se fut-il levé que le brouhaha de la salle s'éteignit, laissant place à un silence religieux. Sur scène, le {{BLANK_1}} représentait une salle de jeu de paume, chef-d'œuvre de {{BLANK_2}} baroque où la lumière jouait avec les ombres. Dans la {{BLANK_3}} obscure, les violons attaquèrent les premiers accords, faisant vibrer le plancher sous les pieds des spectateurs. Le {{BLANK_4}}, Edmond Rostand, retenait son souffle dans sa loge, priant pour que son pari fou soit couronné de succès. Cyrano, le cadet de Gascogne au nez proéminent, fit son entrée. Son appendice provoqua l'hilarité d'un marquis insolent, mais un {{BLANK_5}} fulgurant, cinglant comme une lame, cloua le bec à l'arrogant. Cyrano se battit en rimant, maniant l'épée et le vers avec la même virtuosité meurtrière. Plus tard, sous le balcon de Roxane, il souffla à Christian les mots d'amour que lui, le poète maudit, n'oserait jamais prononcer. Chaque {{BLANK_6}} était une estocade, chaque {{BLANK_7}} un assaut de bravoure qui faisait pleurer les dames dans les loges. Parfois, dans un {{BLANK_8}} déchirant, Cyrano laissait éclater sa douleur secrète, caché dans l'ombre de son propre génie. En {{BLANK_9}}, les machinistes s'activaient dans le noir. Depuis la {{BLANK_10}}, on commandait les lunes et les étoiles, on tissait l'illusion. Le {{BLANK_11}}, tapi dans sa petite boîte au bord de la scène, murmurait les alexandrins aux acteurs égarés, ange gardien des mémoires défaillantes. Sur scène, le {{BLANK_12}} battait son plein : Roxane croyait aimer Christian pour ses mots, ignorant que l'âme de ces lettres brûlantes appartenait à Cyrano. À l'{{BLANK_13}}, le public, haletant, s'éventait, les yeux brillants de larmes retenues. La tragédie finale approchait. Quand Cyrano mourut sous les arbres du couvent, emportant avec lui son panache immaculé, une profonde {{BLANK_14}} saisit la salle tout entière. Les larmes coulèrent enfin, purifiant les cœurs de deux mille spectateurs unis dans le deuil d'un héros qui avait préféré l'honneur à l'amour, et la poésie au bonheur.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "décor",
+          "options": [
+            "décor",
+            "monologue",
+            "aparté",
+            "quiproquo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "scénographie",
+          "options": [
+            "scénographie",
+            "catharsis",
+            "tirade",
+            "réplique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fosse",
+          "options": [
+            "fosse",
+            "coulisse",
+            "régie",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "dramaturge",
+          "options": [
+            "dramaturge",
+            "souffleur",
+            "régisseur",
+            "acteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "monologue",
+          "options": [
+            "monologue",
+            "aparté",
+            "quiproquo",
+            "décor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "réplique",
+          "options": [
+            "réplique",
+            "tirade",
+            "aparté",
+            "catharsis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tirade",
+          "options": [
+            "tirade",
+            "réplique",
+            "scénographie",
+            "quiproquo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "aparté",
+          "options": [
+            "aparté",
+            "monologue",
+            "tirade",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "coulisse",
+          "options": [
+            "coulisse",
+            "fosse",
+            "régie",
+            "scénographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "régie",
+          "options": [
+            "régie",
+            "catharsis",
+            "fosse",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "souffleur",
+          "options": [
+            "souffleur",
+            "dramaturge",
+            "régisseur",
+            "décor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "quiproquo",
+          "options": [
+            "quiproquo",
+            "catharsis",
+            "aparté",
+            "monologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "entracte",
+          "options": [
+            "entracte",
+            "coulisse",
+            "fosse",
+            "régie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "catharsis",
+          "options": [
+            "catharsis",
+            "scénographie",
+            "tirade",
+            "quiproquo"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Théâtre et arts de la scène",
+    "title_fa": "آزمون : تئاتر و هنرهای نمایشی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'espace situé de chaque côté de la scène, invisible pour le public, où les acteurs attendent leur entrée, est la ____.",
+        "options": [
+          "coulisse",
+          "fosse",
+          "régie",
+          "scénographie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فضای کناری و پشت صحنه = coulisse."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce long discours qu'un personnage prononce seul sur scène, sans être interrompu, est un ____.",
+        "options": [
+          "monologue",
+          "aparté",
+          "quiproquo",
+          "décor"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سخنرانی طولانی یک بازیگر به تنهایی = monologue."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce long discours véhément et passionné, souvent porteur d'une forte émotion dramatique, est une ____.",
+        "options": [
+          "tirade",
+          "réplique",
+          "scénographie",
+          "catharsis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سخنرانی احساسی و پرشور = tirade."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des éléments visuels (meubles, toiles peintes, accessoires) qui plantent le lieu de l'action sur scène forme le ____.",
+        "options": [
+          "décor",
+          "monologue",
+          "aparté",
+          "quiproquo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عناصر بصری و چیدمان صحنه = décor."
+      },
+      {
+        "type": "mcq",
+        "question": "Chaque prise de parole d'un acteur en réponse à un autre dans un dialogue théâtral est une ____.",
+        "options": [
+          "réplique",
+          "tirade",
+          "aparté",
+          "catharsis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پاسخ و دیالوگ بازیگر = réplique."
+      },
+      {
+        "type": "mcq",
+        "question": "La pause entre deux actes d'une pièce, qui permet au public de se reposer et aux techniciens de changer le décor, est l'____.",
+        "options": [
+          "entracte",
+          "coulisse",
+          "fosse",
+          "régie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استراحت بین پرده‌ها = entracte."
+      },
+      {
+        "type": "mcq",
+        "question": "L'espace surélevé ou creusé au-devant de la scène où se tiennent les musiciens et le chef d'orchestre est la ____.",
+        "options": [
+          "fosse",
+          "coulisse",
+          "régie",
+          "scénographie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محل قرارگیری ارکستر = fosse."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce procédé par lequel un personnage s'adresse au public ou à lui-même, sans que les autres personnages sur scène ne l'entendent, est l'____.",
+        "options": [
+          "aparté",
+          "monologue",
+          "tirade",
+          "entracte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نجوای پنهانی با تماشاگر = aparté."
+      },
+      {
+        "type": "mcq",
+        "question": "L'auteur qui écrit des pièces de théâtre, concevant l'intrigue et les dialogues, est un ____.",
+        "options": [
+          "dramaturge",
+          "souffleur",
+          "régisseur",
+          "acteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نویسنده نمایشنامه = dramaturge."
+      },
+      {
+        "type": "mcq",
+        "question": "L'espace technique d'où l'on contrôle les lumières, le son et les effets spéciaux pendant le spectacle est la ____.",
+        "options": [
+          "régie",
+          "catharsis",
+          "fosse",
+          "entracte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اتاق کنترل نور و صدا = régie."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne cachée du public qui lit le texte à voix basse pour aider un acteur en cas de trou de mémoire est le ____.",
+        "options": [
+          "souffleur",
+          "dramaturge",
+          "régisseur",
+          "décor"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یادآور دیالوگ = souffleur."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce malentendu comique où un personnage en prend un autre pour quelqu'un d'autre, créant des situations absurdes, est un ____.",
+        "options": [
+          "quiproquo",
+          "catharsis",
+          "aparté",
+          "monologue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سوءتفاهم کمدی و جابجایی هویت = quiproquo."
+      },
+      {
+        "type": "mcq",
+        "question": "Selon Aristote, la tragédie doit provoquer chez le spectateur une purgation des émotions (pitié et terreur). Ce processus est la ____.",
+        "options": [
+          "catharsis",
+          "scénographie",
+          "tirade",
+          "quiproquo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پالایش احساسات در تراژدی = catharsis."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de concevoir l'espace scénique, l'architecture du plateau et la relation avec le public est la ____.",
+        "options": [
+          "scénographie",
+          "catharsis",
+          "tirade",
+          "réplique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر طراحی فضای صحنه = scénographie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le monologue et l'aparté sont tous deux entendus par l'ensemble des personnages présents sur scène.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. مونولوگ شنیده می‌شود، اما آپارته فقط توسط تماشاگر شنیده می‌شود و دیگر بازیگران آن را نمی‌شنوند."
+      },
+      {
+        "type": "binary",
+        "question": "Le quiproquo est un ressort essentiel du théâtre comique, particulièrement dans le vaudeville.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سوءتفاهم یکی از پایه‌های اصلی کمدی و wodvil است."
+      },
+      {
+        "type": "binary",
+        "question": "La catharsis est un concept philosophique qui désigne l'ennui ressenti par le spectateur devant une tragédie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کاتارسیس به معنای پالایش و تخلیه احساسات است، نه خستگی."
+      },
+      {
+        "type": "binary",
+        "question": "La fosse d'orchestre est généralement située en dessous du niveau de la scène pour ne pas masquer la vue des spectateurs.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. گودال ارکستر پایین‌تر از صحنه است تا دید تماشاگران کور نشود."
+      },
+      {
+        "type": "binary",
+        "question": "La scénographie englobe uniquement la peinture des décors et la fabrication des meubles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. طراحی صحنه شامل فضا، نور، صدا و ارتباط با تماشاگر است، نه فقط دکور."
+      }
+    ]
+  }
+}
