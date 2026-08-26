@@ -2,8 +2,126 @@
   "id": "leon-2-les-nombres",
   "title": "Leçon 2 – Les nombres",
   "title_fa": "درس ۲ – اعداد",
-  "topic": "",
-  "icon": "📝",
+  "topic": "شناخت سریع اعداد برای سن، قیمت، تعداد و زمان",
+  "icon": "🔢",
   "estimatedTime": 25,
-  "miniLessons": []
+  "module": "general",
+  "miniLessons": [
+    {
+      "id": "section-1",
+      "title": "۱) اعداد ۰ تا ۲۰ (Nombres 0 à 20)",
+      "type": "vocab",
+      "words": [
+        { "fr": "zéro", "fa": "صفر", "phonetic": "زِغو", "emoji": "0️⃣" },
+        { "fr": "un", "fa": "یک", "phonetic": "اَ̃ن", "emoji": "1️⃣" },
+        { "fr": "deux", "fa": "دو", "phonetic": "دُ", "emoji": "2️⃣" },
+        { "fr": "trois", "fa": "سه", "phonetic": "تْغوا", "emoji": "3️⃣" },
+        { "fr": "quatre", "fa": "چهار", "phonetic": "کَتْغ", "emoji": "4️⃣" },
+        { "fr": "cinq", "fa": "پنج", "phonetic": "سَ̃ک", "emoji": "5️⃣" },
+        { "fr": "six", "fa": "شش", "phonetic": "سیس / سی", "emoji": "6️⃣" },
+        { "fr": "sept", "fa": "هفت", "phonetic": "سِت", "emoji": "7️⃣" },
+        { "fr": "huit", "fa": "هشت", "phonetic": "ویت", "emoji": "8️⃣" },
+        { "fr": "neuf", "fa": "نه", "phonetic": "نُف", "emoji": "9️⃣" },
+        { "fr": "dix", "fa": "ده", "phonetic": "دیس", "emoji": "🔟" },
+        { "fr": "onze", "fa": "یازده", "phonetic": "اُنز", "emoji": "1️⃣1️⃣" },
+        { "fr": "douze", "fa": "دوازده", "phonetic": "دوز", "emoji": "1️⃣2️⃣" },
+        { "fr": "treize", "fa": "سیزده", "phonetic": "تْغِز", "emoji": "1️⃣3️⃣" },
+        { "fr": "quatorze", "fa": "چهارده", "phonetic": "کَتُغز", "emoji": "1️⃣4️⃣" },
+        { "fr": "quinze", "fa": "پانزده", "phonetic": "کَ̃ز", "emoji": "1️⃣5️⃣" },
+        { "fr": "seize", "fa": "شانزده", "phonetic": "سِز", "emoji": "1️⃣6️⃣" },
+        { "fr": "dix-sept", "fa": "هفده", "phonetic": "دیس‌سِت", "emoji": "1️⃣7️⃣" },
+        { "fr": "dix-huit", "fa": "هجده", "phonetic": "دی‌زویت", "emoji": "1️⃣8️⃣" },
+        { "fr": "dix-neuf", "fa": "نوزده", "phonetic": "دیز‌نُف", "emoji": "1️⃣9️⃣" },
+        { "fr": "vingt", "fa": "بیست", "phonetic": "وَ̃", "emoji": "2️⃣0️⃣" }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "۲) دهگان‌های پایه ۲۰ تا ۶۰ (Dizaines 20–60)",
+      "type": "vocab",
+      "words": [
+        { "fr": "vingt", "fa": "بیست", "phonetic": "وَ̃", "emoji": "📊" },
+        { "fr": "trente", "fa": "سی", "phonetic": "تْغُنت", "emoji": "📊" },
+        { "fr": "quarante", "fa": "چهل", "phonetic": "کَغانت", "emoji": "📊" },
+        { "fr": "cinquante", "fa": "پنجاه", "phonetic": "سَ̃کانت", "emoji": "📊" },
+        { "fr": "soixante", "fa": "شصت", "phonetic": "سواسانت", "emoji": "📊" },
+        { "fr": "vingt et un", "fa": "بیست و یک (۲۱)", "phonetic": "وَ̃تِ اَن", "emoji": "2️⃣1️⃣" },
+        { "fr": "trente et un", "fa": "سی و یک (۳۱)", "phonetic": "تْغُنتِ اَن", "emoji": "3️⃣1️⃣" },
+        { "fr": "quarante-deux", "fa": "چهل و دو (۴۲)", "phonetic": "کَغانت دُ", "emoji": "4️⃣2️⃣" },
+        { "fr": "cinquante-trois", "fa": "پنجاه و سه (۵۳)", "phonetic": "سَ̃کانت تْغوا", "emoji": "5️⃣3️⃣" },
+        { "fr": "soixante et un", "fa": "شصت و یک (۶۱)", "phonetic": "سواسانتِ اَن", "emoji": "6️⃣1️⃣" }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "۳) اعداد ۷۰ تا ۹۹ (70 à 99)",
+      "type": "vocab",
+      "words": [
+        { "fr": "soixante-dix", "fa": "هفتاد (۶۰+۱۰)", "phonetic": "سواسانت دیس", "emoji": "7️⃣0️⃣" },
+        { "fr": "soixante-quinze", "fa": "هفتاد و پنج (۶۰+۱۵)", "phonetic": "سواسانت کَ̃ز", "emoji": "7️⃣5️⃣" },
+        { "fr": "quatre-vingts", "fa": "هشتاد (۴×۲۰)", "phonetic": "کَتْغ وَ̃", "emoji": "8️⃣0️⃣" },
+        { "fr": "quatre-vingt-deux", "fa": "هشتاد و دو (۸۰+۲)", "phonetic": "کَتْغ وَ̃ دُ", "emoji": "8️⃣2️⃣" },
+        { "fr": "quatre-vingt-dix", "fa": "نود (۸۰+۱۰)", "phonetic": "کَتْغ وَ̃ دیس", "emoji": "9️⃣0️⃣" },
+        { "fr": "quatre-vingt-dix-sept", "fa": "نود و هفت (۸۰+۱۷)", "phonetic": "کَتْغ وَ̃ دیس سِت", "emoji": "9️⃣7️⃣" }
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "۴) اعداد بزرگ (Grands nombres)",
+      "type": "vocab",
+      "words": [
+        { "fr": "deux cent quarante-cinq", "fa": "دویست و چهل و پنج (۲۴۵)", "phonetic": "دُ سان کَغانت سَ̃ک", "emoji": "💯" },
+        { "fr": "cinq cent vingt-deux", "fa": "پانصد و بیست و دو (۵۲۲)", "phonetic": "سَنک سان وَ̃ دُ", "emoji": "💯" },
+        { "fr": "mille cinq cents", "fa": "هزار و پانصد (۱۵۰۰)", "phonetic": "میل سَنک سان", "emoji": "💯" },
+        { "fr": "deux mille vingt-trois", "fa": "دو هزار و بیست و سه (۲۰۲۳)", "phonetic": "دُ میل وَ̃ تْغوا", "emoji": "💯" },
+        { "fr": "cent", "fa": "صد", "phonetic": "سان", "emoji": "💯" },
+        { "fr": "mille", "fa": "هزار", "phonetic": "میل", "emoji": "🔢" }
+      ]
+    },
+    {
+      "id": "section-5",
+      "title": "۵) جملات کاربردی با اعداد (Phrases utiles)",
+      "type": "vocab",
+      "words": [
+        { "fr": "J'ai vingt et un ans.", "fa": "من ۲۱ سال دارم.", "phonetic": "ژِ وَ̃تِ اَن اَن.", "emoji": "🎂" },
+        { "fr": "Nous sommes quatre.", "fa": "ما چهار نفریم.", "phonetic": "نو سُم کَتْغ.", "emoji": "👥" },
+        { "fr": "Il coûte quinze euros.", "fa": "این پانزده یوروست.", "phonetic": "ایل کوت کَ̃ز اُغُ.", "emoji": "💶" },
+        { "fr": "Ça fait soixante-huit euros.", "fa": "می‌شود ۶۸ یورو.", "phonetic": "سا فِ سواسانت ویت اُغُ.", "emoji": "💶" },
+        { "fr": "Le ticket est dix-neuf euros.", "fa": "بلیط ۱۹ یورو است.", "phonetic": "لُ تیکِ اِ دیز‌نُف اُغُ.", "emoji": "🎫" },
+        { "fr": "J'attends depuis trente minutes.", "fa": "۳۰ دقیقه است منتظرم.", "phonetic": "ژاتان دوپویی تْغُنت مینوت.", "emoji": "⏰" },
+        { "fr": "On part à sept heures.", "fa": "ساعت ۷ می‌رویم.", "phonetic": "اُن پَ آ سِت اُغ.", "emoji": "🕖" },
+        { "fr": "Il y a deux cents personnes.", "fa": "دویست نفر هست.", "phonetic": "ایل یَ دُ سان پِغسُن.", "emoji": "👥" }
+      ]
+    },
+    {
+      "id": "note-1",
+      "type": "tips",
+      "tips": [
+        {
+          "type": "note",
+          "title_fr": "Logique de composition",
+          "title_fa": "منطق ترکیب اعداد",
+          "content_fr": "L'ordre va du plus grand au plus petit : milliers → centaines → dizaines → unités.\n• 21, 31, 41... : dizaine + et + un → vingt et un\n• 70 = 60 + 10 (soixante-dix), 90 = 80 + 10 (quatre-vingt-dix)\n• 80 = 4 × 20 (quatre-vingts)\n• 522 = 500 + 20 + 2 → cinq cent vingt deux (cent sans 's' car suivi d'un nombre)\n• 2 345 = 2 000 + 300 + 40 + 5 → deux mille trois cent quarante-cinq",
+          "content_fa": "ترتیب از بزرگ به کوچک است: هزارگان → صدها → دهگان → یکان.\n• ۲۱، ۳۱، ۴۱...: دهگان + et + un → vingt et un\n• ۷۰ = ۶۰ + ۱۰ (soixante-dix)، ۹۰ = ۸۰ + ۱۰ (quatre-vingt-dix)\n• ۸۰ = ۴ × ۲۰ (quatre-vingts)\n• ۵۲۲ = ۵۰۰ + ۲۰ + ۲ → cinq cent vingt deux (cent بدون 's' چون بعدش عدد می‌آید)\n• ۲۳۴۵ = ۲۰۰۰ + ۳۰۰ + ۴۰ + ۵ → deux mille trois cent quarante-cinq",
+          "icon": "📐"
+        },
+        {
+          "type": "tip",
+          "title_fr": "Formes régionales (Belgique / Suisse)",
+          "title_fa": "شکل‌های منطقه‌ای (بلژیک و سوئیس)",
+          "content_fr": "En Belgique et en Suisse, on utilise des formes plus simples :\n• 70 = septante\n• 80 = huitante / octante\n• 90 = nonante\n\nEn France et au Québec, on utilise : soixante-dix, quatre-vingts, quatre-vingt-dix.",
+          "content_fa": "در بلژیک و سوئیس از شکل‌های ساده‌تری استفاده می‌شود:\n• ۷۰ = septante\n• ۸۰ = huitante / octante\n• ۹۰ = nonante\n\nدر فرانسه و کبک از: soixante-dix، quatre-vingts، quatre-vingt-dix استفاده می‌شود.",
+          "icon": "🌍"
+        },
+        {
+          "type": "warning",
+          "title_fr": "Attention : règle du 'et'",
+          "title_fa": "⚠️ توجه: قانون 'et'",
+          "content_fr": "On utilise 'et' entre la dizaine et 'un' seulement pour 21, 31, 41, 51, 61.\n• vingt et un (21) ✓\n• trente et un (31) ✓\n• MAIS : quarante-deux (42) ✗ (pas 'et')\n• MAIS : soixante-dix (70) ✗ (pas 'et')",
+          "content_fa": "فقط در ۲۱، ۳۱، ۴۱، ۵۱، ۶۱ از 'et' بین دهگان و 'un' استفاده می‌شود.\n• vingt et un (۲۱) ✓\n• trente et un (۳۱) ✓\n• اما: quarante-deux (۴۲) ✗ (بدون 'et')\n• اما: soixante-dix (۷۰) ✗ (بدون 'et')",
+          "icon": "⚠️"
+        }
+      ]
+    }
+  ]
 }
