@@ -1,0 +1,714 @@
+{
+  "id": "economy_finance_markets",
+  "level": "C1",
+  "theme": "Économie, finance et marchés boursiers",
+  "theme_fa": "اقتصاد، مالیه و بازارهای بورس",
+  "icon": "📈",
+  "inspiration": "Le Casse du siècle (The Big Short - Adam McKay, 2015)",
+  "words": [
+    {
+      "fr": "la bulle spéculative",
+      "fa": "حباب سفته‌بازانه",
+      "emoji": "🫧",
+      "difficulty": 5,
+      "ex": "L'éclatement de la bulle spéculative a ruiné des millions d'investisseurs.",
+      "ex_fa": "ترکیدن حباب سفته‌بازانه میلیون‌ها سرمایه‌گذار را نابود کرد."
+    },
+    {
+      "fr": "le krach",
+      "fa": "سقوط ناگهانی بازار (کرش)",
+      "emoji": "📉",
+      "difficulty": 4,
+      "ex": "Le krach de 1929 a plongé le monde dans la Grande Dépression.",
+      "ex_fa": "سقوط بازار در سال ۱۹۲۹ جهان را در رکود بزرگ فرو برد."
+    },
+    {
+      "fr": "l'action",
+      "fa": "سهام",
+      "emoji": "📜",
+      "difficulty": 3,
+      "ex": "Il a acheté une action de cette entreprise technologique.",
+      "ex_fa": "او یک سهم از این شرکت فناوری خرید."
+    },
+    {
+      "fr": "l'obligation",
+      "fa": "اوراق قرضه",
+      "emoji": "📑",
+      "difficulty": 4,
+      "ex": "L'État émet une obligation pour financer ses infrastructures.",
+      "ex_fa": "دولت برای تأمین مالی زیرساخت‌هایش اوراق قرضه منتشر می‌کند."
+    },
+    {
+      "fr": "la dérégulation",
+      "fa": "مقررات‌زدایی",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "La dérégulation financière a permis aux banques de prendre des risques excessifs.",
+      "ex_fa": "مقررات‌زدایی مالی به بانک‌ها اجازه داد ریسک‌های بیش از حد بپذیرند."
+    },
+    {
+      "fr": "le hedge fund",
+      "fa": "صندوق پوشش ریسک (صندوق سرمایه‌گذاری)",
+      "emoji": "🏦",
+      "difficulty": 5,
+      "ex": "Ce hedge fund parie sur la faillite des entreprises endettées.",
+      "ex_fa": "این صندوق سرمایه‌گذاری روی ورشکستگی شرکت‌های بدهکار شرط می‌بندد."
+    },
+    {
+      "fr": "la cotation",
+      "fa": "نقل قول قیمت در بورس",
+      "emoji": "🔔",
+      "difficulty": 4,
+      "ex": "La cotation de cette entreprise a été suspendue ce matin.",
+      "ex_fa": "نقل قول قیمت این شرکت امروز صبح متوقف شد."
+    },
+    {
+      "fr": "le rendement",
+      "fa": "بازدهی، سودآوری",
+      "emoji": "💰",
+      "difficulty": 4,
+      "ex": "Le rendement de ce placement est supérieur à l'inflation.",
+      "ex_fa": "بازدهی این سرمایه‌گذاری بیشتر از تورم است."
+    },
+    {
+      "fr": "l'inflation",
+      "fa": "تورم",
+      "emoji": "🎈",
+      "difficulty": 3,
+      "ex": "L'inflation réduit le pouvoir d'achat des ménages.",
+      "ex_fa": "تورم قدرت خرید خانوارها را کاهش می‌دهد."
+    },
+    {
+      "fr": "la récession",
+      "fa": "رکود اقتصادی",
+      "emoji": "📉",
+      "difficulty": 4,
+      "ex": "Le pays est entré en récession après deux trimestres de croissance négative.",
+      "ex_fa": "کشور پس از دو فصل رشد منفی وارد رکود اقتصادی شد."
+    },
+    {
+      "fr": "le portefeuille",
+      "fa": "سبد سرمایه‌گذاری (پورتفولیو)",
+      "emoji": "💼",
+      "difficulty": 4,
+      "ex": "Il a diversifié son portefeuille pour limiter les risques.",
+      "ex_fa": "او برای محدود کردن ریسک‌ها، سبد سرمایه‌گذاری خود را متنوع کرد."
+    },
+    {
+      "fr": "le courtier",
+      "fa": "کارگزار بورس",
+      "emoji": "🤝",
+      "difficulty": 4,
+      "ex": "Le courtier exécute les ordres d'achat de ses clients.",
+      "ex_fa": "کارگزار بورس، دستورات خرید مشتریانش را اجرا می‌کند."
+    },
+    {
+      "fr": "la liquidité",
+      "fa": "نقدینگی",
+      "emoji": "💧",
+      "difficulty": 4,
+      "ex": "Le marché immobilier manque de liquidité en période de crise.",
+      "ex_fa": "بازار مسکن در دوره بحران با کمبود نقدینگی مواجه است."
+    },
+    {
+      "fr": "l'effet de levier",
+      "fa": "اهرم مالی",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "L'effet de levier permet de multiplier les gains, mais aussi les pertes.",
+      "ex_fa": "اهرم مالی سودها و همچنین ضررها را چند برابر می‌کند."
+    },
+    {
+      "fr": "la spéculation",
+      "fa": "سفته‌بازی",
+      "emoji": "🎲",
+      "difficulty": 4,
+      "ex": "La spéculation sur les matières premières fait flamber les prix.",
+      "ex_fa": "سفته‌بازی روی مواد اولیه باعث شعله‌ور شدن قیمت‌ها می‌شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le pari du siècle",
+      "title_fa": "شرط‌بندی قرن",
+      "text": "Michael Burry gère un {{BLANK_6}} excentrique. En analysant le marché immobilier, il découvre une énorme {{BLANK_1}} prête à exploser. Pendant que chaque {{BLANK_12}} vante les mérites des prêts toxiques, Burry décide de parier contre le marché. Il achète des {{BLANK_4}} d'État pour sécuriser une partie de son {{BLANK_11}}, tout en gardant des positions risquées. Ses investisseurs paniquent, craignant que la {{BLANK_5}} du secteur ne permette aux banques de les écraser. Ils menacent de retirer leur argent, mettant en danger la {{BLANK_13}} du fonds. Pourtant, Burry sait que l'{{BLANK_9}} galopante et la hausse des taux vont provoquer une {{BLANK_10}} dévastatrice. Il refuse de céder à la {{BLANK_15}} ambiante qui aveugle Wall Street. Il calcule le {{BLANK_8}} potentiel de son pari sur plusieurs années. Quand la {{BLANK_7}} d'une grande banque fait trembler la Bourse, c'est le début de la fin. Le {{BLANK_2}} final de 2008 emporte tout sur son passage. Les institutions, étranglées par l'{{BLANK_14}} massif qu'elles ont utilisé, s'effondrent. Finalement, Burry prouve que l'achat d'une simple {{BLANK_3}} bien choisie ou un pari à contre-courant peut sauver un fonds quand le monde entier fait faillite.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "bulle spéculative",
+          "options": [
+            "bulle spéculative",
+            "récession",
+            "inflation",
+            "liquidité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "krach",
+          "options": [
+            "krach",
+            "rendement",
+            "portefeuille",
+            "dérégulation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "action",
+          "options": [
+            "action",
+            "obligation",
+            "hedge fund",
+            "courtier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "obligations",
+          "options": [
+            "obligations",
+            "actions",
+            "cotations",
+            "spéculations"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "dérégulation",
+          "options": [
+            "dérégulation",
+            "cotation",
+            "liquidité",
+            "inflation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "hedge fund",
+          "options": [
+            "hedge fund",
+            "krach",
+            "rendement",
+            "portefeuille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "cotation",
+          "options": [
+            "cotation",
+            "bulle spéculative",
+            "récession",
+            "effet de levier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "rendement",
+          "options": [
+            "rendement",
+            "courtier",
+            "krach",
+            "dérégulation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "inflation",
+          "options": [
+            "inflation",
+            "liquidité",
+            "action",
+            "spéculation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "récession",
+          "options": [
+            "récession",
+            "bulle spéculative",
+            "cotation",
+            "hedge fund"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "portefeuille",
+          "options": [
+            "portefeuille",
+            "rendement",
+            "krach",
+            "effet de levier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "courtier",
+          "options": [
+            "courtier",
+            "hedge fund",
+            "obligation",
+            "dérégulation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "liquidité",
+          "options": [
+            "liquidité",
+            "inflation",
+            "récession",
+            "action"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "effet de levier",
+          "options": [
+            "effet de levier",
+            "portefeuille",
+            "cotation",
+            "spéculation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "spéculation",
+          "options": [
+            "spéculation",
+            "krach",
+            "obligation",
+            "courtier"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La danse des chiffres fous",
+      "title_fa": "رقص اعداد دیوانه",
+      "inspiration": "Le Casse du siècle (The Big Short - Adam McKay, 2015)",
+      "text": "À peine Michael Burry eut-il épluché les milliers de pages de contrats hypothécaires qu'il comprit que le système financier mondial était une gigantesque maison de cartes. Ce gérant de {{BLANK_6}} excentrique, qui travaillait pieds nus dans son bureau en écoutant du heavy metal, venait de découvrir la vérité nue : le marché immobilier américain n'était qu'une {{BLANK_1}} monstrueuse, gonflée artificiellement par des prêts toxiques accordés à des insolvable. Pendant que Wall Street célébrait des {{BLANK_7}} record et que chaque {{BLANK_12}} en costume sur mesure vantait le {{BLANK_8}} miraculeux des produits dérivés, Burry, seul dans son coin, voyait l'abîme s'ouvrir sous leurs pieds. Il décida de parier contre le marché, une {{BLANK_15}} à contre-courant qui semblait suicidaire aux yeux de ses pairs. Ses investisseurs, paniqués par la {{BLANK_5}} financière qui permettait aux grandes banques de prendre des risques insensés en toute impunité, menaçaient de retirer leur argent. Ils craignaient que son entêtement ne détruise la {{BLANK_13}} de son fonds, le condamnant à mort. Pourtant, Burry, avec sa logique mathématique implacable, savait que l'{{BLANK_9}} galopante et la montée inévitable des taux d'intérêt allaient provoquer une {{BLANK_10}} dévastatrice. Il acheta prudemment des {{BLANK_4}} d'État pour sécuriser une partie de son {{BLANK_11}}, tout en maintenant ses positions à haut risque sur les crédits pourris. Quand la suspension de la {{BLANK_7}} d'une grande banque d'investissement fit trembler la Bourse, ce n'était que le premier craquement. Le {{BLANK_2}} final de l'automne 2008 emporta tout sur son passage comme un tsunami. Les institutions centenaires, étranglées par l'{{BLANK_14}} massif qu'elles avaient utilisé pour multiplier leurs mises, s'effondrèrent en quelques heures. L'achat d'une simple {{BLANK_3}} était devenu un jeu de roulette russe. Burry, lui, encaissa des milliards de dollars, mais sans la moindre joie. En regardant les écrans rouges, il savait que ce triomphe mathématique signifiait la ruine, les expulsions et le désespoir de millions de familles ordinaires, sacrifiées sur l'autel de la cupidité.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "bulle spéculative",
+          "options": [
+            "bulle spéculative",
+            "récession",
+            "inflation",
+            "liquidité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "krach",
+          "options": [
+            "krach",
+            "rendement",
+            "portefeuille",
+            "dérégulation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "action",
+          "options": [
+            "action",
+            "obligation",
+            "hedge fund",
+            "courtier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "obligations",
+          "options": [
+            "obligations",
+            "actions",
+            "cotations",
+            "spéculations"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "dérégulation",
+          "options": [
+            "dérégulation",
+            "cotation",
+            "liquidité",
+            "inflation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "hedge fund",
+          "options": [
+            "hedge fund",
+            "krach",
+            "rendement",
+            "portefeuille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "cotations",
+          "options": [
+            "cotations",
+            "bulles spéculatives",
+            "récessions",
+            "effets de levier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "rendement",
+          "options": [
+            "rendement",
+            "courtier",
+            "krach",
+            "dérégulation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "inflation",
+          "options": [
+            "inflation",
+            "liquidité",
+            "action",
+            "spéculation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "récession",
+          "options": [
+            "récession",
+            "bulle spéculative",
+            "cotation",
+            "hedge fund"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "portefeuille",
+          "options": [
+            "portefeuille",
+            "rendement",
+            "krach",
+            "effet de levier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "courtier",
+          "options": [
+            "courtier",
+            "hedge fund",
+            "obligation",
+            "dérégulation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "liquidité",
+          "options": [
+            "liquidité",
+            "inflation",
+            "récession",
+            "action"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "effet de levier",
+          "options": [
+            "effet de levier",
+            "portefeuille",
+            "cotation",
+            "spéculation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "spéculation",
+          "options": [
+            "spéculation",
+            "krach",
+            "obligation",
+            "courtier"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Économie et marchés financiers",
+    "title_fa": "آزمون : اقتصاد و بازارهای مالی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La situation où le prix d'un actif (immobilier, actions) monte artificiellement et bien au-delà de sa valeur réelle avant de s'effondrer est une ____.",
+        "options": [
+          "bulle spéculative",
+          "récession",
+          "inflation",
+          "liquidité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "افزایش مصنوعی قیمت دارایی قبل از سقوط = bulle spéculative."
+      },
+      {
+        "type": "mcq",
+        "question": "L'effondrement brutal et soudain des cours de la Bourse, provoquant la panique des investisseurs, s'appelle un ____.",
+        "options": [
+          "krach",
+          "rendement",
+          "portefeuille",
+          "dérégulation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سقوط ناگهانی و شدید بازار بورس = krach."
+      },
+      {
+        "type": "mcq",
+        "question": "Le titre de propriété qui représente une fraction du capital d'une entreprise et donne droit à une partie de ses bénéfices est l'____.",
+        "options": [
+          "action",
+          "obligation",
+          "hedge fund",
+          "courtier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سند مالکیت بخشی از شرکت = action."
+      },
+      {
+        "type": "mcq",
+        "question": "Le titre de créance par lequel un État ou une entreprise emprunte de l'argent aux investisseurs en promettant de le rembourser avec intérêts est l'____.",
+        "options": [
+          "obligation",
+          "action",
+          "cotation",
+          "spéculation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سند بدهی و وام با بهره مشخص = obligation."
+      },
+      {
+        "type": "mcq",
+        "question": "La suppression ou l'allègement des règles et des lois qui encadrent les activités des banques et des marchés financiers est la ____.",
+        "options": [
+          "dérégulation",
+          "cotation",
+          "liquidité",
+          "inflation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حذف قوانین نظارتی بازارهای مالی = dérégulation."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce fonds d'investissement privé, très flexible, qui utilise des stratégies complexes et risquées pour générer des profits absolus est un ____.",
+        "options": [
+          "hedge fund",
+          "krach",
+          "rendement",
+          "portefeuille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صندوق سرمایه‌گذاری با استراتژی‌های پیچیده = hedge fund."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enregistrement officiel du prix d'une valeur mobilière sur le marché boursier à un instant donné est la ____.",
+        "options": [
+          "cotation",
+          "bulle spéculative",
+          "récession",
+          "effet de levier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ثبت رسمی قیمت سهام در بورس = cotation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le rapport entre le revenu généré par un placement et la somme initiale investie, souvent exprimé en pourcentage, est le ____.",
+        "options": [
+          "rendement",
+          "courtier",
+          "krach",
+          "dérégulation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نسبت سود به سرمایه اولیه = rendement."
+      },
+      {
+        "type": "mcq",
+        "question": "La hausse générale et durable des prix des biens et services, qui entraîne une perte du pouvoir d'achat de la monnaie, est l'____.",
+        "options": [
+          "inflation",
+          "liquidité",
+          "action",
+          "spéculation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "افزایش عمومی قیمت‌ها و کاهش ارزش پول = inflation."
+      },
+      {
+        "type": "mcq",
+        "question": "La période de ralentissement significatif de l'activité économique, caractérisée par la baisse du PIB et la montée du chômage, est la ____.",
+        "options": [
+          "récession",
+          "bulle spéculative",
+          "cotation",
+          "hedge fund"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره کاهش فعالیت اقتصادی و افزایش بیکاری = récession."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des actifs financiers (actions, obligations, immobilier) détenus par un investisseur pour diversifier ses risques est son ____.",
+        "options": [
+          "portefeuille",
+          "rendement",
+          "krach",
+          "effet de levier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه دارایی‌های مالی یک سرمایه‌گذار = portefeuille."
+      },
+      {
+        "type": "mcq",
+        "question": "L'intermédiaire professionnel qui exécute les ordres d'achat et de vente en Bourse pour le compte de ses clients est le ____.",
+        "options": [
+          "courtier",
+          "hedge fund",
+          "obligation",
+          "dérégulation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واسطه اجرای دستورات خرید و فروش = courtier."
+      },
+      {
+        "type": "mcq",
+        "question": "La capacité d'un actif à être acheté ou vendu très rapidement sur le marché sans que son prix ne soit fortement affecté est la ____.",
+        "options": [
+          "liquidité",
+          "inflation",
+          "récession",
+          "action"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توانایی تبدیل سریع دارایی به پول نقد = liquidité."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique financière qui consiste à emprunter de l'argent pour investir davantage, amplifiant ainsi les gains potentiels mais aussi les pertes, est l'____.",
+        "options": [
+          "effet de levier",
+          "portefeuille",
+          "cotation",
+          "spéculation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استفاده از بدهی برای چند برابر کردن سود یا زیان = effet de levier."
+      },
+      {
+        "type": "mcq",
+        "question": "L'activité qui consiste à réaliser des opérations financières risquées dans le seul but de profiter des variations de prix à court terme est la ____.",
+        "options": [
+          "spéculation",
+          "krach",
+          "obligation",
+          "courtier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "معاملات پرخطر برای سود از نوسانات قیمت = spéculation."
+      },
+      {
+        "type": "binary",
+        "question": "L'action et l'obligation représentent exactement le même type d'investissement pour l'épargnant.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. action سند مالکیت است (ریسک بالا)، اما obligation سند بدهی و وام است (ریسک کمتر)."
+      },
+      {
+        "type": "binary",
+        "question": "L'inflation est toujours bénéfique pour les consommateurs car elle augmente la valeur de leurs économies.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تورم قدرت خرید را کاهش می‌دهد و ارزش پول نقد را از بین می‌برد."
+      },
+      {
+        "type": "binary",
+        "question": "Un krach boursier peut être déclenché par l'éclatement soudain d'une bulle spéculative.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ترکیدن حباب سفته‌بازانه معمولاً منجر به سقوط ناگهانی بازار (krach) می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "L'effet de levier garantit à l'investisseur des profits élevés sans aucun risque de perte financière.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اهرم مالی ریسک را به شدت افزایش می‌دهد و می‌تواند منجر به ضررهای سنگین شود."
+      },
+      {
+        "type": "binary",
+        "question": "La liquidité d'un marché désigne la facilité avec laquelle on peut y acheter ou vendre des actifs rapidement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. نقدینگی به معنای سهولت و سرعت تبدیل دارایی به پول نقد در بازار است."
+      }
+    ]
+  }
+}
