@@ -1,0 +1,714 @@
+{
+  "id": "emotions_mind",
+  "level": "C1",
+  "theme": "Émotions, esprit et traits humains",
+  "theme_fa": "احساسات، ذهن و ویژگی‌های انسانی",
+  "icon": "🧠",
+  "inspiration": "Inception (Christopher Nolan, 2010)",
+  "words": [
+    {
+      "fr": "la réminiscence",
+      "fa": "خاطره مبهم، یادآوری",
+      "emoji": "💭",
+      "difficulty": 5,
+      "ex": "Cette mélodie provoque en moi une douce réminiscence de mon enfance.",
+      "ex_fa": "این ملودی خاطره‌ای شیرین و مبهم از کودکی‌ام را در من زنده می‌کند."
+    },
+    {
+      "fr": "la sidération",
+      "fa": "بهت‌زدگی، شوکه شدن",
+      "emoji": "😨",
+      "difficulty": 5,
+      "ex": "L'annonce de sa mort a plongé l'assemblée dans une profonde sidération.",
+      "ex_fa": "اعلام خبر مرگ او، مجمع را در بهت‌زدگی عمیقی فرو برد."
+    },
+    {
+      "fr": "la procrastination",
+      "fa": "اهمال‌کاری، به تعویق انداختن",
+      "emoji": "⏰",
+      "difficulty": 4,
+      "ex": "Sa procrastination chronique l'empêche de terminer ses projets.",
+      "ex_fa": "اهمال‌کاری مزمن او مانع از تکمیل پروژه‌هایش می‌شود."
+    },
+    {
+      "fr": "la clairvoyance",
+      "fa": "بصیرت، هوشیاری",
+      "emoji": "👁️",
+      "difficulty": 4,
+      "ex": "Avec une grande clairvoyance, il a anticipé la crise économique.",
+      "ex_fa": "او با بصیرت زیاد، بحران اقتصادی را پیش‌بینی کرد."
+    },
+    {
+      "fr": "l'irrésolution",
+      "fa": "تردید، بی‌تصمیمی",
+      "emoji": "🤔",
+      "difficulty": 5,
+      "ex": "Son irrésolution face aux choix importants paralyse sa carrière.",
+      "ex_fa": "تردید او در برابر انتخاب‌های مهم، مسیر شغلی‌اش را فلج کرده است."
+    },
+    {
+      "fr": "la componction",
+      "fa": "پشیمانی و ندامت عمیق",
+      "emoji": "😔",
+      "difficulty": 5,
+      "ex": "Il a exprimé sa componction avec des larmes sincères.",
+      "ex_fa": "او پشیمانی و ندامت خود را با اشک‌های صادقانه ابراز کرد."
+    },
+    {
+      "fr": "la désinvolture",
+      "fa": "بی‌خیالی، گستاخی",
+      "emoji": "😏",
+      "difficulty": 5,
+      "ex": "Il a annoncé son divorce avec une désinvolture qui a choqué tout le monde.",
+      "ex_fa": "او طلاقش را با بی‌خیالی‌ای اعلام کرد که همه را شوکه کرد."
+    },
+    {
+      "fr": "l'effroi",
+      "fa": "وحشت شدید",
+      "emoji": "😱",
+      "difficulty": 4,
+      "ex": "Un cri d'effroi s'échappa de sa bouche en voyant le monstre.",
+      "ex_fa": "با دیدن هیولا، فریاد وحشتی از دهانش خارج شد."
+    },
+    {
+      "fr": "la sagacité",
+      "fa": "تیزهوشی، ذکاوت",
+      "emoji": "🎯",
+      "difficulty": 5,
+      "ex": "Le détective résolut l'énigme avec une sagacité remarquable.",
+      "ex_fa": "کارآگاه با تیزهوشی قابل توجهی معما را حل کرد."
+    },
+    {
+      "fr": "l'apathie",
+      "fa": "بی‌تفاوتی، بی‌حالی",
+      "emoji": "😐",
+      "difficulty": 4,
+      "ex": "L'apathie des électeurs a conduit à une forte abstention.",
+      "ex_fa": "بی‌تفاوتی رأی‌دهندگان منجر به عدم مشارکت زیاد شد."
+    },
+    {
+      "fr": "l'acrimonie",
+      "fa": "تندی و کینه در رفتار",
+      "emoji": "😠",
+      "difficulty": 5,
+      "ex": "Leurs discussions sont toujours empreintes d'acrimonie.",
+      "ex_fa": "بحث‌های آن‌ها همواره با تندی و کینه همراه است."
+    },
+    {
+      "fr": "la félicité",
+      "fa": "شادمانی عمیق",
+      "emoji": "😇",
+      "difficulty": 4,
+      "ex": "La naissance de son premier enfant l'a plongé dans la félicité.",
+      "ex_fa": "تولد اولین فرزندش او را در شادمانی عمیقی فرو برد."
+    },
+    {
+      "fr": "le remords",
+      "fa": "عذاب وجدان",
+      "emoji": "😣",
+      "difficulty": 3,
+      "ex": "Le remords de n'avoir pas aidé son ami le hante depuis des années.",
+      "ex_fa": "عذاب وجدان کمک نکردن به دوستش سال‌هاست که او را رها نمی‌کند."
+    },
+    {
+      "fr": "la prescience",
+      "fa": "پیش‌آگاهی، علم غیب",
+      "emoji": "🔮",
+      "difficulty": 5,
+      "ex": "Certains prophètes prétendent avoir la prescience de l'avenir.",
+      "ex_fa": "برخی پیامبران ادعای پیش‌آگاهی از آینده را دارند."
+    },
+    {
+      "fr": "la béatitude",
+      "fa": "سعادت و آرامش روحانی",
+      "emoji": "🧘",
+      "difficulty": 5,
+      "ex": "Le moine méditait dans un état de béatitude absolue.",
+      "ex_fa": "راهب در حالت سعادت و آرامش مطلق مراقبه می‌کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le rêveur",
+      "title_fa": "رویاپرداز",
+      "text": "Cobb est un extracteur de rêves. Il entre dans l'esprit des gens pour voler leurs secrets. Un jour, un homme riche lui propose une mission impossible : implanter une idée dans l'esprit d'un héritier. Cobb hésite, mais accepte par {{BLANK_1}} de retrouver ses enfants. Il rassemble une équipe. Arthur, son bras droit, fait preuve d'une grande {{BLANK_2}} pour organiser les détails. Ariane, une jeune architecte, crée les décors des rêves avec une {{BLANK_3}} remarquable. Mais Cobb est hanté par le souvenir de sa femme morte. Cette {{BLANK_4}} constante menace de faire échouer la mission. Dans le premier niveau du rêve, l'héritier ressent un profond {{BLANK_5}} en voyant des hommes armés. Son {{BLANK_6}} le pousse à fuir. Mais l'équipe le capture. Cobb essaie de lui parler avec douceur, sans {{BLANK_7}}, pour gagner sa confiance. Il sait que l'{{BLANK_8}} ne mène à rien. L'héritier, d'abord méfiant, finit par baisser sa garde. Il évoque ses souvenirs d'enfance avec une certaine {{BLANK_9}}, se rappelant les moments heureux avec son père. Cobb utilise cette émotion pour implanter l'idée. Mais dans les niveaux profonds, le temps s'étire. L'équipe risque de tomber dans l'{{BLANK_10}}, cet état où l'esprit s'endort pour toujours. Cobb doit lutter contre sa propre {{BLANK_11}} qui le pousse à tout remettre au lendemain. Il sait que chaque seconde compte. À la fin, quand l'héritier se réveille, il ressent une étrange {{BLANK_12}}, comme si une vérité profonde lui était apparue. Il décide de démanteler l'empire de son père. Cobb, lui, retrouve enfin ses enfants. Mais un doute subsiste : est-il vraiment éveillé ? Cette {{BLANK_13}} le hantera peut-être toujours. Quoi qu'il en soit, il a trouvé une forme de {{BLANK_14}} en accomplissant sa mission. Et le {{BLANK_15}} qui le rongeait pour avoir abandonné sa femme commence enfin à s'apaiser.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "irrésolution",
+          "options": [
+            "irrésolution",
+            "décision",
+            "certitude",
+            "volonté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "clairvoyance",
+          "options": [
+            "clairvoyance",
+            "bêtise",
+            "lenteur",
+            "naïveté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "sagacité",
+          "options": [
+            "sagacité",
+            "bêtise",
+            "lenteur",
+            "naïveté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "réminiscence",
+          "options": [
+            "réminiscence",
+            "oubli",
+            "amnésie",
+            "ignorance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "effroi",
+          "options": [
+            "effroi",
+            "joie",
+            "calme",
+            "paix"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "effroi",
+          "options": [
+            "effroi",
+            "courage",
+            "audace",
+            "bravoure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "acrimonie",
+          "options": [
+            "acrimonie",
+            "douceur",
+            "gentillesse",
+            "amitié"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "acrimonie",
+          "options": [
+            "acrimonie",
+            "douceur",
+            "gentillesse",
+            "amitié"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "componction",
+          "options": [
+            "componction",
+            "joie",
+            "colère",
+            "indifférence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "apathie",
+          "options": [
+            "apathie",
+            "activité",
+            "énergie",
+            "action"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "procrastination",
+          "options": [
+            "procrastination",
+            "action",
+            "décision",
+            "volonté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "béatitude",
+          "options": [
+            "béatitude",
+            "tristesse",
+            "colère",
+            "peur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "sidération",
+          "options": [
+            "sidération",
+            "certitude",
+            "clarté",
+            "compréhension"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "félicité",
+          "options": [
+            "félicité",
+            "malheur",
+            "tristesse",
+            "douleur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "remords",
+          "options": [
+            "remords",
+            "joie",
+            "satisfaction",
+            "bonheur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les architectures de l'esprit",
+      "title_fa": "معماری‌های ذهن",
+      "inspiration": "Inception (Christopher Nolan, 2010)",
+      "text": "À peine le sédatif eut-il fait effet que Cobb sentit la réalité se dissoudre autour de lui. Il n'était plus dans cet avion qui traversait le Pacifique, mais quelque part dans les méandres d'un esprit étranger, celui de Robert Fischer, héritier d'un empire énergétique. Cobb était un extracteur, un voleur de rêves, mais cette fois, on lui avait confié une mission inverse : l'inception, l'implantation d'une idée au plus profond du subconscient. Autour de lui, son équipe s'activait. Arthur, toujours d'une {{BLANK_1}} remarquable, vérifiait les paramètres du sédatif avec une précision d'horloger. Ariane, la jeune architecte des rêves, avait conçu un labyrinthe mental d'une complexité inouïe, faisant preuve d'une {{BLANK_2}} qui dépassait largement son âge. Mais Cobb savait que le véritable danger ne venait pas des défenses de Fischer. Il venait de lui-même, de cette {{BLANK_3}} obsédante de Mal, sa femme défunte, qui hantait chaque niveau de son subconscient. Dans le premier rêve, une ville pluvieuse, Fischer fut attaqué par des projections armées. L'{{BLANK_4}} qui se lut sur son visage était celui d'un homme qui voit son monde s'effondrer. Son premier réflexe fut la fuite, mais l'équipe l'intercepta. Cobb s'approcha de lui, essayant de dissimuler toute {{BLANK_5}} dans sa voix. Il savait que la moindre agressivité renforcerait les défenses mentales de sa cible. « Robert, » dit-il doucement, « votre père vous aimait. Il voulait que vous trouviez votre propre voie. » Fischer, d'abord hostile, sentit quelque chose se briser en lui. Une {{BLANK_6}} ancienne remonta à la surface, ce souvenir flou d'un été à la plage, quand son père lui avait tenu la main pour la dernière fois. Les larmes lui montèrent aux yeux, et avec elles, une {{BLANK_7}} sincère pour toutes ces années de silence et d'incompréhension. Cobb profita de cette faille pour planter la graine de l'idée : démanteler l'empire paternel. Mais les niveaux suivants étaient plus profonds, plus dangereux. Dans un hôtel aux couloirs infinis, le temps s'étirait à l'infini. L'équipe risquait de sombrer dans les Limbes, cet état d'{{BLANK_8}} absolue où l'esprit oubliait jusqu'à son propre nom. Cobb sentait la fatigue le gagner, cette {{BLANK_9}} qui le poussait à tout remettre à plus tard, à fuir ses responsabilités. Mais il n'avait pas le choix. Dans le niveau le plus profond, une forteresse enneigée, il affronta enfin le fantôme de Mal. Elle le regardait avec cette {{BLANK_10}} glaciale qui avait précédé son suicide. « Viens avec moi, » disait-elle. « Ici, tout est réel. Nous pouvons être heureux pour l'éternité. » Cobb ferma les yeux. Il savait que cette {{BLANK_11}} qu'elle lui offrait n'était qu'une illusion, un piège mortel. Avec une {{BLANK_12}} douloureuse, il comprit qu'il devait la laisser partir, accepter sa mort pour enfin se libérer. Quand il se réveilla dans l'avion, la mission était accomplie. Fischer avait décidé de démanteler l'empire. Cobb, lui, passa la douane sans encombre et retrouva ses enfants qui l'attendaient dans le hall des arrivées. Il fit tourner son totem, une petite toupie en métal. Elle tourna, tourna, sans vaciller. Mais Cobb ne regarda pas. Il serra ses enfants dans ses bras, savourant cette {{BLANK_13}} retrouvée, ce bonheur simple d'être enfin chez lui. Était-ce la réalité ou un autre rêve ? Peu importait. Il avait trouvé sa propre {{BLANK_14}}, loin des architectures impossibles et des limbes éternels. Et pour la première fois depuis des années, le {{BLANK_15}} qui le rongeait pour avoir abandonné Mal commença enfin à s'estomper, comme un souvenir qui s'efface doucement dans la lumière du matin.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "clairvoyance",
+          "options": [
+            "clairvoyance",
+            "bêtise",
+            "lenteur",
+            "naïveté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "sagacité",
+          "options": [
+            "sagacité",
+            "bêtise",
+            "lenteur",
+            "naïveté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "réminiscence",
+          "options": [
+            "réminiscence",
+            "oubli",
+            "amnésie",
+            "ignorance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "effroi",
+          "options": [
+            "effroi",
+            "joie",
+            "calme",
+            "paix"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "acrimonie",
+          "options": [
+            "acrimonie",
+            "douceur",
+            "gentillesse",
+            "amitié"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "réminiscence",
+          "options": [
+            "réminiscence",
+            "oubli",
+            "amnésie",
+            "ignorance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "componction",
+          "options": [
+            "componction",
+            "joie",
+            "colère",
+            "indifférence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "apathie",
+          "options": [
+            "apathie",
+            "activité",
+            "énergie",
+            "action"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "procrastination",
+          "options": [
+            "procrastination",
+            "action",
+            "décision",
+            "volonté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "désinvolture",
+          "options": [
+            "désinvolture",
+            "chaleur",
+            "amour",
+            "affection"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "félicité",
+          "options": [
+            "félicité",
+            "malheur",
+            "tristesse",
+            "douleur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "clairvoyance",
+          "options": [
+            "clairvoyance",
+            "bêtise",
+            "lenteur",
+            "naïveté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "félicité",
+          "options": [
+            "félicité",
+            "malheur",
+            "tristesse",
+            "douleur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "béatitude",
+          "options": [
+            "béatitude",
+            "tristesse",
+            "colère",
+            "peur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "remords",
+          "options": [
+            "remords",
+            "joie",
+            "satisfaction",
+            "bonheur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : États d'âme et processus mentaux",
+    "title_fa": "آزمون : حالات روحی و فرآیندهای ذهنی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Cette odeur de madeleine trempée dans le thé lui rappelle soudain son enfance, mais de façon vague et imprécise. C'est une ____.",
+        "options": [
+          "réminiscence",
+          "amnésie",
+          "oubli",
+          "ignorance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یادآوری مبهم و غیرارادی خاطرات = réminiscence."
+      },
+      {
+        "type": "mcq",
+        "question": "Quand le bâtiment s'est effondré, les spectateurs sont restés figés, incapables de bouger ou de crier. Ils étaient en état de ____.",
+        "options": [
+          "sidération",
+          "joie",
+          "calme",
+          "paix"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بهت‌زدگی و شوکه شدن که فرد را میخکوب می‌کند = sidération."
+      },
+      {
+        "type": "mcq",
+        "question": "Cet étudiant remet toujours ses travaux au dernier moment, trouvant mille excuses pour ne pas commencer. Il souffre de ____.",
+        "options": [
+          "procrastination",
+          "action",
+          "décision",
+          "volonté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "به تعویق انداختن مداوم کارها = procrastination."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce vieil homme a vu venir la crise financière alors que tous les experts étaient optimistes. Sa ____ était remarquable.",
+        "options": [
+          "clairvoyance",
+          "bêtise",
+          "lenteur",
+          "naïveté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بصیرت و توانایی دیدن حقایق پنهان = clairvoyance."
+      },
+      {
+        "type": "mcq",
+        "question": "Face à deux offres d'emploi equally intéressantes, il n'arrive pas à se décider et reste paralysé par le doute. C'est de l'____.",
+        "options": [
+          "irrésolution",
+          "décision",
+          "certitude",
+          "volonté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تردید و ناتوانی در تصمیم‌گیری = irrésolution."
+      },
+      {
+        "type": "mcq",
+        "question": "Le prêtre a écouté la confession du criminel et a été touché par sa ____ sincère et ses larmes de regret.",
+        "options": [
+          "componction",
+          "joie",
+          "colère",
+          "indifférence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پشیمانی و ندامت عمیق همراه با اندوه = componction."
+      },
+      {
+        "type": "mcq",
+        "question": "Il a annoncé son licenciement à ses employés avec une ____ choquante, comme si cela n'avait aucune importance.",
+        "options": [
+          "désinvolture",
+          "chaleur",
+          "empathie",
+          "tristesse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بی‌خیالی و گستاخی در رفتار = désinvolture."
+      },
+      {
+        "type": "mcq",
+        "question": "En voyant l'accident horrible, elle poussa un cri de ____ et détourna les yeux.",
+        "options": [
+          "effroi",
+          "joie",
+          "calme",
+          "paix"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وحشت شدید و ترس ناگهانی = effroi."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce détective a résolu l'énigme en remarquant un détail que personne d'autre n'avait vu. Sa ____ est exceptionnelle.",
+        "options": [
+          "sagacité",
+          "bêtise",
+          "lenteur",
+          "naïveté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تیزهوشی و ذکاوت در درک مسائل = sagacité."
+      },
+      {
+        "type": "mcq",
+        "question": "Les citoyens ne votent plus, ne manifestent plus, ne s'intéressent plus à la politique. Cette ____ générale inquiète les démocrates.",
+        "options": [
+          "apathie",
+          "activité",
+          "énergie",
+          "action"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بی‌تفاوتی و بی‌حالی عمومی = apathie."
+      },
+      {
+        "type": "mcq",
+        "question": "Leurs discussions politiques dégénèrent toujours en disputes pleines de ____ et de reproches amers.",
+        "options": [
+          "acrimonie",
+          "douceur",
+          "gentillesse",
+          "amitié"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تندی، کینه و تلخی در رفتار = acrimonie."
+      },
+      {
+        "type": "mcq",
+        "question": "Quand il a tenu son nouveau-né dans ses bras pour la première fois, il a été submergé par une ____ indescriptible.",
+        "options": [
+          "félicité",
+          "malheur",
+          "tristesse",
+          "douleur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شادمانی عمیق و سعادت = félicité."
+      },
+      {
+        "type": "mcq",
+        "question": "Depuis qu'il a menti à son ami, il ne dort plus tranquille. Le ____ le ronge chaque nuit.",
+        "options": [
+          "remords",
+          "joie",
+          "satisfaction",
+          "bonheur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عذاب وجدان و پشیمانی = remords."
+      },
+      {
+        "type": "mcq",
+        "question": "Certains voyants prétendent connaître l'avenir avant qu'il ne se produise. Ils affirment avoir la ____.",
+        "options": [
+          "prescience",
+          "ignorance",
+          "oubli",
+          "amnésie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیش‌آگاهی و علم به آینده = prescience."
+      },
+      {
+        "type": "mcq",
+        "question": "Le moine méditait depuis des heures, atteint d'un état de ____ absolue, loin des soucis du monde.",
+        "options": [
+          "béatitude",
+          "tristesse",
+          "colère",
+          "peur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سعادت و آرامش روحانی عمیق = béatitude."
+      },
+      {
+        "type": "binary",
+        "question": "La sidération et la béatitude décrivent toutes deux un état de choc violent.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "sidération بهت‌زدگی منفی است، اما béatitude آرامش و سعادت عمیق است."
+      },
+      {
+        "type": "binary",
+        "question": "La procrastination est une maladie mentale reconnue par la psychiatrie moderne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "procrastination یک عادت رفتاری است، نه بیماری روانی رسمی."
+      },
+      {
+        "type": "binary",
+        "question": "La clairvoyance et la sagacité sont des qualités intellectuelles liées à la perception et à la compréhension.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، هر دو به توانایی درک عمیق و بصیرت اشاره دارند."
+      },
+      {
+        "type": "binary",
+        "question": "La componction désigne une joie intense et explosive.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. componction به معنای پشیمانی و ندامت عمیق است."
+      },
+      {
+        "type": "binary",
+        "question": "L'acrimonie se manifeste par des paroles douces et bienveillantes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. acrimonie به معنای تندی و کینه در کلام و رفتار است."
+      }
+    ]
+  }
+}
