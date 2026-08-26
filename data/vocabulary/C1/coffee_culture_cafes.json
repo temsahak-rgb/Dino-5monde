@@ -1,0 +1,680 @@
+{
+  "id": "coffee_culture_cafes",
+  "level": "C1",
+  "theme": "Café, culture des cafés et boissons chaudes",
+  "theme_fa": "قهوه، فرهنگ کافه و نوشیدنی‌های گرم",
+  "icon": "☕",
+  "inspiration": "Le Fabuleux Destin d'Amélie Poulain (Jean-Pierre Jeunet, 2001)",
+  "words": [
+    {
+      "fr": "le barista",
+      "fa": "باریستا (متخصص قهوه)",
+      "emoji": "👨‍🍳",
+      "difficulty": 4,
+      "ex": "Le barista prépare un latte art d'une précision remarquable.",
+      "ex_fa": "باریستا لاته‌آرتی با دقتی فوق‌العاده آماده می‌کند."
+    },
+    {
+      "fr": "l'espresso",
+      "fa": "اسپرسو",
+      "emoji": "☕",
+      "difficulty": 3,
+      "ex": "Un espresso serré est la base de toutes les boissons italiennes.",
+      "ex_fa": "یک اسپرسوی غلیظ پایه تمام نوشیدنی‌های ایتالیایی است."
+    },
+    {
+      "fr": "la torréfaction",
+      "fa": "برشته‌کاری دانه قهوه",
+      "emoji": "🔥",
+      "difficulty": 5,
+      "ex": "La torréfaction détermine l'arôme final du café.",
+      "ex_fa": "برشته‌کاری، عطر نهایی قهوه را تعیین می‌کند."
+    },
+    {
+      "fr": "le moulin",
+      "fa": "آسیاب قهوه",
+      "emoji": "⚙️",
+      "difficulty": 4,
+      "ex": "Un bon moulin préserve les arômes du grain fraîchement moulu.",
+      "ex_fa": "آسیاب خوب، عطر دانه تازه‌آسیاب‌شده را حفظ می‌کند."
+    },
+    {
+      "fr": "l'arôme",
+      "fa": "عطر، رایحه",
+      "emoji": "👃",
+      "difficulty": 4,
+      "ex": "L'arôme de ce café éthiopien rappelle les fruits rouges.",
+      "ex_fa": "عطر این قهوه اتیوپیایی یادآور میوه‌های قرمز است."
+    },
+    {
+      "fr": "la caféine",
+      "fa": "کافئین",
+      "emoji": "⚡",
+      "difficulty": 3,
+      "ex": "La caféine est un stimulant naturel présent dans le café.",
+      "ex_fa": "کافئین یک محرک طبیعی موجود در قهوه است."
+    },
+    {
+      "fr": "le grain",
+      "fa": "دانه قهوه",
+      "emoji": "🌰",
+      "difficulty": 3,
+      "ex": "Les meilleurs grains proviennent des hauteurs d'Amérique latine.",
+      "ex_fa": "بهترین دانه‌ها از ارتفاعات آمریکای لاتین می‌آیند."
+    },
+    {
+      "fr": "le cappuccino",
+      "fa": "کاپوچینو",
+      "emoji": "☕",
+      "difficulty": 3,
+      "ex": "Un cappuccino parfait a une mousse onctueuse et brillante.",
+      "ex_fa": "کاپوچینوی بی‌نقص، کفی نرم و درخشان دارد."
+    },
+    {
+      "fr": "la mousse",
+      "fa": "کف شیر",
+      "emoji": "☁️",
+      "difficulty": 3,
+      "ex": "La mousse de lait doit être veloutée, sans grosses bulles.",
+      "ex_fa": "کف شیر باید مخملی و بدون حباب درشت باشد."
+    },
+    {
+      "fr": "le filtre",
+      "fa": "فیلتر قهوه",
+      "emoji": "🔽",
+      "difficulty": 4,
+      "ex": "Le café filtre est préparé par infusion lente.",
+      "ex_fa": "قهوه فیلتر با دم‌کردن آرام تهیه می‌شود."
+    },
+    {
+      "fr": "le décaféiné",
+      "fa": "قهوه بدون کافئین",
+      "emoji": "🚫",
+      "difficulty": 4,
+      "ex": "Elle préfère le décaféiné après 18 heures.",
+      "ex_fa": "او بعد از ساعت ۱۸ قهوه بدون کافئین را ترجیح می‌دهد."
+    },
+    {
+      "fr": "la latte art",
+      "fa": "هنر لاته (نقاشی روی شیر)",
+      "emoji": "🎨",
+      "difficulty": 5,
+      "ex": "Le champion du monde de latte art crée des rosaces parfaites.",
+      "ex_fa": "قهرمان جهان در هنر لاته، گل‌های رز بی‌نقصی خلق می‌کند."
+    },
+    {
+      "fr": "le ristretto",
+      "fa": "ریسترتو (اسپرسوی خیلی غلیظ)",
+      "emoji": "☕",
+      "difficulty": 5,
+      "ex": "Le ristretto est plus court et plus intense qu'un espresso classique.",
+      "ex_fa": "ریسترتو کوتاه‌تر و شدیدتر از اسپرسوی معمولی است."
+    },
+    {
+      "fr": "la dégustation",
+      "fa": "چشیدن تخصصی",
+      "emoji": "👅",
+      "difficulty": 4,
+      "ex": "La dégustation professionnelle se fait sans sucre ni lait.",
+      "ex_fa": "چشیدن تخصصی بدون شکر و شیر انجام می‌شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Au café des Deux Moulins",
+      "text": "Amélie travaille comme serveuse au café des Deux Moulins, à Montmartre. Derrière le comptoir, le {{BLANK_1}} prépare avec passion chaque boisson. Chaque matin, il vérifie la qualité du {{BLANK_7}} avant la {{BLANK_3}} quotidienne. Le {{BLANK_4}} électrique broie les grains juste avant l'extraction pour préserver l'{{BLANK_5}}. Un client habituel commande toujours un {{BLANK_2}} italien, serré et puissant, tandis qu'une dame âgée préfère le {{BLANK_11}} pour éviter l'insomnie. Georgette, la collègue hypocondriaque, surveille sa dose de {{BLANK_6}} quotidienne. Quand un amateur s'installe, il demande un {{BLANK_8}} avec une {{BLANK_9}} parfaitement onctueuse. Le {{BLANK_1}} verse le lait chaud avec précision pour réaliser une {{BLANK_12}} en forme de cœur. Les étudiants commandent souvent un café {{BLANK_10}} long, pour étudier toute la nuit. Parfois, un connaisseur organise une {{BLANK_14}} à l'aveugle pour identifier l'origine des grains. Un habitué exige toujours un {{BLANK_13}}, plus court et plus intense qu'un espresso. Amélie observe ce petit théâtre quotidien avec tendresse, imaginant les histoires cachées derrière chaque tasse fumante. Dans ce café parisien typique, le temps semble suspendu entre deux gorgées.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "barista",
+          "options": [
+            "barista",
+            "grain",
+            "filtre",
+            "décaféiné"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "espresso",
+          "options": [
+            "espresso",
+            "cappuccino",
+            "ristretto",
+            "mousse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "torréfaction",
+          "options": [
+            "torréfaction",
+            "dégustation",
+            "arôme",
+            "caféine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "moulin",
+          "options": [
+            "moulin",
+            "filtre",
+            "grain",
+            "mousse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "arôme",
+          "options": [
+            "arôme",
+            "caféine",
+            "torréfaction",
+            "latte art"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "caféine",
+          "options": [
+            "caféine",
+            "arôme",
+            "grain",
+            "mousse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "grain",
+          "options": [
+            "grain",
+            "filtre",
+            "moulin",
+            "barista"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "cappuccino",
+          "options": [
+            "cappuccino",
+            "ristretto",
+            "décaféiné",
+            "espresso"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "mousse",
+          "options": [
+            "mousse",
+            "latte art",
+            "dégustation",
+            "arôme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "filtre",
+          "options": [
+            "filtre",
+            "ristretto",
+            "grain",
+            "torréfaction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "décaféiné",
+          "options": [
+            "décaféiné",
+            "cappuccino",
+            "ristretto",
+            "espresso"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "latte art",
+          "options": [
+            "latte art",
+            "dégustation",
+            "mousse",
+            "torréfaction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "ristretto",
+          "options": [
+            "ristretto",
+            "cappuccino",
+            "filtre",
+            "décaféiné"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "dégustation",
+          "options": [
+            "dégustation",
+            "torréfaction",
+            "latte art",
+            "arôme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les petits plaisirs d'Amélie",
+      "inspiration": "Le Fabuleux Destin d'Amélie Poulain (Jean-Pierre Jeunet, 2001)",
+      "text": "À peine la porte du café des Deux Moulins eut-elle tinté qu'Amélie Poulain sentit cette odeur familière l'envelopper comme une caresse. Depuis cinq ans, elle travaillait là, dans ce petit bistrot de Montmartre où le temps semblait avoir oublié de s'écouler. Derrière le comptoir en zinc, le {{BLANK_1}} accomplissait chaque matin son rituel sacré. Il vérifiait la provenance du {{BLANK_7}}, caressant les grains sombres comme des pierres précieuses. La {{BLANK_3}}, cet alchimie du feu qui transforme une graine verte en élixir brun, était pour lui une cérémonie. Le {{BLANK_4}} électrique chantait sa mélopée grinçante, libérant un {{BLANK_5}} envoûtant qui envahissait la salle. Amélie observait les clients avec cette attention silencieuse qui la caractérisait. Monsieur Colignon, l'épicier cruel, commandait toujours un {{BLANK_2}} serré, comme sa vision de la vie. Georgette, sa collègue hypocondriaque, surveillait sa consommation de {{BLANK_6}} comme un médecin surveille un patient fragile. Madame Suzanne, l'ancienne patronne, exigeait un {{BLANK_8}} avec une {{BLANK_9}} parfaite, veloutée comme la peau d'un nouveau-né. Le {{BLANK_1}}, artiste dans l'âme, versait le lait chaud avec la précision d'un calligraphe, créant une {{BLANK_12}} en forme de feuille de fougère. Les étudiants du quartier, en période d'examens, commandaient des litres de café {{BLANK_10}}, ce breuvage lent qui les accompagnait dans leurs révisions nocturnes. Un vieux monsieur distingué, qui se faisait appeler l'Homme de Verre, exigeait un {{BLANK_13}}, cette goutte d'intensité pure qui concentrait toute l'âme du café en quelques millilitres. Une dame, soucieuse de son sommeil, demandait un {{BLANK_11}}, comme si l'on pouvait retirer l'âme d'une boisson sans la trahir. Parfois, quand le café était vide, Amélie organisait une {{BLANK_14}} secrète, goûtant les crus différents pour deviner leur origine géographique. Elle aimait ces petits plaisirs invisibles que personne ne remarquait : le craquement de la croûte de crème brûlée, le son d'une bille tombant dans un verre, et le parfum d'un café fraîchement préparé. Dans ces moments suspendus, elle se sentait enfin connectée au monde, cette serveuse timide qui rêvait de changer la vie des autres, une tasse à la fois.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "barista",
+          "options": [
+            "barista",
+            "grain",
+            "filtre",
+            "décaféiné"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "espresso",
+          "options": [
+            "espresso",
+            "cappuccino",
+            "ristretto",
+            "mousse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "torréfaction",
+          "options": [
+            "torréfaction",
+            "dégustation",
+            "arôme",
+            "caféine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "moulin",
+          "options": [
+            "moulin",
+            "filtre",
+            "grain",
+            "mousse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "arôme",
+          "options": [
+            "arôme",
+            "caféine",
+            "torréfaction",
+            "latte art"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "caféine",
+          "options": [
+            "caféine",
+            "arôme",
+            "grain",
+            "mousse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "grain",
+          "options": [
+            "grain",
+            "filtre",
+            "moulin",
+            "barista"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "cappuccino",
+          "options": [
+            "cappuccino",
+            "ristretto",
+            "décaféiné",
+            "espresso"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "mousse",
+          "options": [
+            "mousse",
+            "latte art",
+            "dégustation",
+            "arôme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "filtre",
+          "options": [
+            "filtre",
+            "ristretto",
+            "grain",
+            "torréfaction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "décaféiné",
+          "options": [
+            "décaféiné",
+            "cappuccino",
+            "ristretto",
+            "espresso"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "latte art",
+          "options": [
+            "latte art",
+            "dégustation",
+            "mousse",
+            "torréfaction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "ristretto",
+          "options": [
+            "ristretto",
+            "cappuccino",
+            "filtre",
+            "décaféiné"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "dégustation",
+          "options": [
+            "dégustation",
+            "torréfaction",
+            "latte art",
+            "arôme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Culture du café et boissons chaudes",
+    "title_fa": "آزمون : فرهنگ قهوه و نوشیدنی‌های گرم",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le professionnel spécialisé dans la préparation des cafés de qualité et la maîtrise des techniques d'extraction est le ____.",
+        "options": [
+          "barista",
+          "grain",
+          "filtre",
+          "décaféiné"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص تهیه قهوه = barista."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette boisson italienne concentrée, préparée par percolation sous pression, est l'____.",
+        "options": [
+          "espresso",
+          "cappuccino",
+          "ristretto",
+          "mousse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قهوه غلیظ ایتالیایی = espresso."
+      },
+      {
+        "type": "mcq",
+        "question": "L'opération qui consiste à chauffer les grains verts pour développer leurs arômes par réaction de Maillard est la ____.",
+        "options": [
+          "torréfaction",
+          "dégustation",
+          "arôme",
+          "caféine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برشته‌کاری دانه قهوه = torréfaction."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil qui broie les grains de café en poudre juste avant la préparation est le ____.",
+        "options": [
+          "moulin",
+          "filtre",
+          "grain",
+          "mousse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه آسیاب قهوه = moulin."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des senteurs perçues par le nez lors de la dégustation d'un café est l'____.",
+        "options": [
+          "arôme",
+          "caféine",
+          "torréfaction",
+          "latte art"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عطر و رایحه قهوه = arôme."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance stimulante naturelle présente dans le café qui agit sur le système nerveux est la ____.",
+        "options": [
+          "caféine",
+          "arôme",
+          "grain",
+          "mousse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده محرک طبیعی قهوه = caféine."
+      },
+      {
+        "type": "mcq",
+        "question": "La petite graine ovale du caféier qui, une fois torréfiée, sert à préparer la boisson est le ____.",
+        "options": [
+          "grain",
+          "filtre",
+          "moulin",
+          "barista"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دانه قهوه = grain."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette boisson italienne composée d'un tiers d'espresso, d'un tiers de lait chaud et d'un tiers de mousse de lait est le ____.",
+        "options": [
+          "cappuccino",
+          "ristretto",
+          "décaféiné",
+          "espresso"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نوشیدنی با اسپرسو، شیر و کف = cappuccino."
+      },
+      {
+        "type": "mcq",
+        "question": "L'écume légère et aérienne formée par le lait chauffé à la vapeur est la ____.",
+        "options": [
+          "mousse",
+          "latte art",
+          "dégustation",
+          "arôme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کف شیر = mousse."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dispositif en papier ou en métal qui retient le marc pendant que l'eau traverse la poudre de café est le ____.",
+        "options": [
+          "filtre",
+          "ristretto",
+          "grain",
+          "torréfaction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صافی قهوه = filtre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le café dont on a retiré la quasi-totalité de la caféine par un procédé chimique est le ____.",
+        "options": [
+          "décaféiné",
+          "cappuccino",
+          "ristretto",
+          "espresso"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قهوه بدون کافئین = décaféiné."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique artistique qui consiste à créer des dessins à la surface d'un café en versant le lait est la ____.",
+        "options": [
+          "latte art",
+          "dégustation",
+          "mousse",
+          "torréfaction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر طراحی با شیر روی قهوه = latte art."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette version très courte et intense de l'espresso, préparée avec moins d'eau, est le ____.",
+        "options": [
+          "ristretto",
+          "cappuccino",
+          "filtre",
+          "décaféiné"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اسپرسوی خیلی کوتاه و غلیظ = ristretto."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de goûter attentivement un café pour en analyser les qualités sensorielles est la ____.",
+        "options": [
+          "dégustation",
+          "torréfaction",
+          "latte art",
+          "arôme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چشیدن تخصصی قهوه = dégustation."
+      },
+      {
+        "type": "binary",
+        "question": "La torréfaction consiste à refroidir rapidement les grains de café après leur récolte.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. torréfaction یعنی برشته‌کاری با حرارت، نه سرد کردن."
+      },
+      {
+        "type": "binary",
+        "question": "Le barista et le sommelier exercent tous deux un métier lié à la dégustation, mais dans des domaines différents.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. باریستا در قهوه و سوملیه در شراب متخصص هستند."
+      },
+      {
+        "type": "binary",
+        "question": "L'espresso contient moins de caféine qu'une tasse de café filtre de volume équivalent.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. با وجود غلظت بیشتر، حجم کم اسپرسو باعث می‌شود کافئین کل کمتری نسبت به یک فنجان قهوه فیلتر داشته باشد."
+      },
+      {
+        "type": "binary",
+        "question": "Le ristretto est une version plus longue et plus diluée que l'espresso classique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ریسترتو کوتاه‌تر و غلیظ‌تر از اسپرسو است."
+      },
+      {
+        "type": "binary",
+        "question": "Le décaféiné contient zéro milligramme de caféine.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. قهوه بدون کافئین همچنان مقدار بسیار کمی (کمتر از ۰.۱٪) کافئین دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le latte art est une technique qui utilise la mousse de lait pour créer des dessins sur les boissons.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. لاته‌آرت هنر طراحی با کف شیر روی قهوه است."
+      }
+    ]
+  }
+}
