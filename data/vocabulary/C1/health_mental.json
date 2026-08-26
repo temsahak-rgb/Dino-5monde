@@ -1,0 +1,464 @@
+{
+  "id": "health_mental",
+  "level": "C1",
+  "theme": "Hôpital, médecine et santé mentale",
+  "theme_fa": "بیمارستان، پزشکی و سلامت روان",
+  "icon": "🏥",
+  "inspiration": "Vol au-dessus d'un nid de coucou (Ken Kesey / Miloš Forman, 1975)",
+  "words": [
+    {
+      "fr": "la détresse psychologique",
+      "fa": "پریشانی روانی",
+      "emoji": "😰",
+      "difficulty": 4,
+      "ex": "Le patient montre des signes évidents de détresse psychologique.",
+      "ex_fa": "بیمار نشانه‌های آشکار پریشانی روانی نشان می‌دهد."
+    },
+    {
+      "fr": "l'angoisse",
+      "fa": "اضطراب عمیق",
+      "emoji": "😨",
+      "difficulty": 3,
+      "ex": "Une angoisse sourde lui serrait la poitrine depuis des semaines.",
+      "ex_fa": "یک اضطراب مبهم از هفته‌ها پیش سینه‌اش را می‌فشرد."
+    },
+    {
+      "fr": "la schizophrénie",
+      "fa": "اسکیزوفرنی",
+      "emoji": "🌀",
+      "difficulty": 4,
+      "ex": "La schizophrénie nécessite un suivi psychiatrique régulier.",
+      "ex_fa": "اسکیزوفرنی نیازمند پیگیری منظم روان‌پزشکی است."
+    },
+    {
+      "fr": "la dépression",
+      "fa": "افسردگی",
+      "emoji": "🌧️",
+      "difficulty": 3,
+      "ex": "Il a sombré dans une dépression profonde après son licenciement.",
+      "ex_fa": "او پس از اخراجش در یک افسردگی عمیق فرو رفت."
+    },
+    {
+      "fr": "le trouble bipolaire",
+      "fa": "اختلال دوقطبی",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "Le trouble bipolaire alterne phases maniaques et épisodes dépressifs.",
+      "ex_fa": "اختلال دوقطبی میان دوره‌های شیدایی و افسردگی در نوسان است."
+    },
+    {
+      "fr": "l'aliénation",
+      "fa": "از خودبیگانگی",
+      "emoji": "⛓️",
+      "difficulty": 5,
+      "ex": "L'aliénation mentale peut transformer un individu en étranger à lui-même.",
+      "ex_fa": "از خودبیگانگی ذهنی می‌تواند فرد را به غریبه‌ای نسبت به خودش تبدیل کند."
+    },
+    {
+      "fr": "la névrose",
+      "fa": "نوروز",
+      "emoji": "😟",
+      "difficulty": 4,
+      "ex": "Sa névrose obsessionnelle le pousse à vérifier dix fois la serrure.",
+      "ex_fa": "نوروز وسواسی‌اش او را وادار می‌کند ده بار قفل را چک کند."
+    },
+    {
+      "fr": "la psychose",
+      "fa": "روان‌پریشی",
+      "emoji": "🔮",
+      "difficulty": 4,
+      "ex": "La psychose provoque une perte de contact avec la réalité.",
+      "ex_fa": "روان‌پریشی باعث قطع ارتباط با واقعیت می‌شود."
+    },
+    {
+      "fr": "le sevrage",
+      "fa": "ترک اعتیاد",
+      "emoji": "💊",
+      "difficulty": 4,
+      "ex": "Le sevrage alcoolique doit se faire sous surveillance médicale.",
+      "ex_fa": "ترک الکل باید تحت نظارت پزشکی انجام شود."
+    },
+    {
+      "fr": "la rechute",
+      "fa": "عود بیماری",
+      "emoji": "🔄",
+      "difficulty": 3,
+      "ex": "Après trois mois de rémission, il a fait une rechute.",
+      "ex_fa": "پس از سه ماه بهبودی، او دچار عود بیماری شد."
+    },
+    {
+      "fr": "l'épuisement professionnel",
+      "fa": "فرسودگی شغلی",
+      "emoji": "🔥",
+      "difficulty": 3,
+      "ex": "L'épuisement professionnel touche de plus en plus de cadres.",
+      "ex_fa": "فرسودگی شغلی مدیران بیشتری را درگیر می‌کند."
+    },
+    {
+      "fr": "la thérapie",
+      "fa": "درمان",
+      "emoji": "🛋️",
+      "difficulty": 3,
+      "ex": "Elle suit une thérapie cognitive depuis six mois.",
+      "ex_fa": "او شش ماه است که تحت درمان شناختی قرار دارد."
+    },
+    {
+      "fr": "le diagnostic",
+      "fa": "تشخیص",
+      "emoji": "🔍",
+      "difficulty": 3,
+      "ex": "Le diagnostic a été confirmé par des analyses sanguines.",
+      "ex_fa": "تشخیص با آزمایش‌های خون تأیید شد."
+    },
+    {
+      "fr": "l'ordonnance",
+      "fa": "نسخه پزشکی",
+      "emoji": "📋",
+      "difficulty": 3,
+      "ex": "Le médecin a rédigé une ordonnance pour des antidépresseurs.",
+      "ex_fa": "پزشک نسخه‌ای برای داروهای ضدافسردگی نوشت."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La consultation",
+      "title_fa": "ویزیت",
+      "text": "Paul travaillait soixante heures par semaine. Un matin, il n'arriva pas à se lever. Son médecin lui expliqua qu'il souffrait d'un {{BLANK_1}} sévère. Après plusieurs examens, le {{BLANK_2}} tomba : c'était une {{BLANK_3}} profonde. Le docteur lui remit une {{BLANK_4}} pour des antidépresseurs et lui recommanda de suivre une {{BLANK_5}} régulière. Paul accepta. Mais après quelques mois, se sentant mieux, il arrêta ses médicaments. Ce fut la {{BLANK_6}}, encore plus brutale que la première fois. Il dut reprendre le traitement et entamer un long processus de {{BLANK_7}} pour se libérer de sa dépendance aux calmants. Cette fois, il promit de ne plus jamais négliger sa santé mentale.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "épuisement professionnel",
+          "options": [
+            "épuisement professionnel",
+            "trouble bipolaire",
+            "schizophrénie",
+            "psychose"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "diagnostic",
+          "options": [
+            "diagnostic",
+            "ordonnance",
+            "sevrage",
+            "thérapie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "dépression",
+          "options": [
+            "dépression",
+            "névrose",
+            "angoisse",
+            "détresse psychologique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "ordonnance",
+          "options": [
+            "ordonnance",
+            "thérapie",
+            "diagnostic",
+            "rechute"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "thérapie",
+          "options": [
+            "thérapie",
+            "ordonnance",
+            "sevrage",
+            "rechute"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "rechute",
+          "options": [
+            "rechute",
+            "sevrage",
+            "thérapie",
+            "diagnostic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "sevrage",
+          "options": [
+            "sevrage",
+            "rechute",
+            "thérapie",
+            "ordonnance"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le pavillon des oubliés",
+      "title_fa": "بخش فراموش‌شدگان",
+      "inspiration": "Vol au-dessus d'un nid de coucou (Ken Kesey / Miloš Forman, 1975)",
+      "text": "Dans le pavillon psychiatrique de l'hôpital Sainte-Marie, le silence n'était troublé que par le bourdonnement des néons blafards. McMurphy, un homme au regard vif et à la mâchoire serrée, venait d'être admis après avoir simulé la folie pour échapper à la prison. Mais à peine eut-il franchi le seuil qu'il comprit que ce lieu était bien plus qu'un simple asile : c'était une machine à broyer les âmes. Autour de lui, les patients erraient comme des spectres. L'un d'eux, un grand échalas au regard vide, murmurait des mots incohérents, perdu dans les méandres de sa {{BLANK_1}}. Une femme, assise dans un coin, oscillait entre des éclats de rire et des crises de larmes, prisonnière des montagnes russes de son {{BLANK_2}}. Plus loin, un vieil homme tremblait de tout son corps, rongé par une {{BLANK_3}} qui lui faisait voir des menaces là où il n'y avait que des ombres. L'infirmière en chef, Miss Ratched, observait ce petit monde avec une froideur calculée. Pour elle, ces patients n'étaient pas des êtres souffrants, mais des cas à gérer, des rouages défectueux dans sa mécanique parfaite. McMurphy, lui, refusait cette {{BLANK_4}} qui transformait les hommes en objets. Il voyait dans leurs yeux non pas la folie, mais une {{BLANK_5}} profonde, un appel au secours que personne ne voulait entendre. Un jeune homme, recroquevillé sur son lit, gémissait doucement, terrifié par une {{BLANK_6}} qui lui serrait la gorge comme un étau. McMurphy s'approcha de lui et lui posa une main sur l'épaule. « T'inquiète pas, mon gars, » murmura-t-il. « On va s'en sortir. » Mais au fond de lui, il savait que dans ce lieu où la {{BLANK_7}} était devenue la norme et la normalité une illusion, la vraie folie était peut-être de croire qu'on pouvait encore être libre.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "schizophrénie",
+          "options": [
+            "schizophrénie",
+            "dépression",
+            "épuisement professionnel",
+            "ordonnance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "trouble bipolaire",
+          "options": [
+            "trouble bipolaire",
+            "névrose",
+            "sevrage",
+            "thérapie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "névrose",
+          "options": [
+            "névrose",
+            "psychose",
+            "rechute",
+            "angoisse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "aliénation",
+          "options": [
+            "aliénation",
+            "détresse psychologique",
+            "schizophrénie",
+            "dépression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "détresse psychologique",
+          "options": [
+            "détresse psychologique",
+            "aliénation",
+            "névrose",
+            "psychose"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "angoisse",
+          "options": [
+            "angoisse",
+            "psychose",
+            "schizophrénie",
+            "trouble bipolaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "psychose",
+          "options": [
+            "psychose",
+            "aliénation",
+            "détresse psychologique",
+            "angoisse"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Santé mentale et psychiatrie",
+    "title_fa": "آزمون : سلامت روان و روان‌پزشکی",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Après deux ans de surmenage, ce cadre n'arrive plus à se lever le matin. Il souffre probablement d'____.",
+        "options": [
+          "épuisement professionnel",
+          "schizophrénie",
+          "trouble bipolaire",
+          "psychose"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خستگی شدید ناشی از کار زیاد = فرسودگی شغلی."
+      },
+      {
+        "type": "mcq",
+        "question": "Le médecin examine le patient, analyse ses symptômes et finit par établir un ____.",
+        "options": [
+          "diagnostic",
+          "ordonnance",
+          "sevrage",
+          "thérapie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نتیجه بررسی پزشک از علائم = تشخیص."
+      },
+      {
+        "type": "mcq",
+        "question": "Il alterne entre des périodes d'euphorie intense et des phases de profonde tristesse. Le psychiatre suspecte un ____.",
+        "options": [
+          "trouble bipolaire",
+          "épuisement professionnel",
+          "névrose",
+          "sevrage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نوسان بین شیدایی و افسردگی = اختلال دوقطبی."
+      },
+      {
+        "type": "mcq",
+        "question": "Elle entend des voix et voit des choses que les autres ne perçoivent pas. Ces symptômes évoquent une ____.",
+        "options": [
+          "schizophrénie",
+          "dépression",
+          "angoisse",
+          "rechute"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شنیدن صداها و دیدن چیزهای غیرواقعی = اسکیزوفرنی."
+      },
+      {
+        "type": "mcq",
+        "question": "Il se lave les mains cinquante fois par jour et vérifie sans cesse que la porte est fermée. Il souffre d'une ____.",
+        "options": [
+          "névrose",
+          "psychose",
+          "aliénation",
+          "dépression"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسواس‌های تکراری بدون قطع ارتباط با واقعیت = نوروز."
+      },
+      {
+        "type": "mcq",
+        "question": "Après trois mois de sobriété, il a recommencé à boire. C'est une ____.",
+        "options": [
+          "rechute",
+          "thérapie",
+          "ordonnance",
+          "diagnostic"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بازگشت بیماری پس از دوره بهبود = عود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour arrêter les somnifères, il doit suivre un protocole progressif de ____.",
+        "options": [
+          "sevrage",
+          "thérapie",
+          "diagnostic",
+          "ordonnance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ترک تدریجی دارو یا مواد = sevrage."
+      },
+      {
+        "type": "mcq",
+        "question": "Elle se sent vidée, sans énergie, et pleure sans raison depuis des semaines. Le médecin parle de ____.",
+        "options": [
+          "dépression",
+          "schizophrénie",
+          "névrose",
+          "aliénation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بی‌انرژی بودن و گریه بی‌دلیل مداوم = افسردگی."
+      },
+      {
+        "type": "binary",
+        "question": "L'aliénation désigne un état dans lequel une personne se sent étrangère à elle-même.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، aliénation به معنای از خودبیگانگی و احساس غریبه بودن نسبت به خود است."
+      },
+      {
+        "type": "binary",
+        "question": "La psychose et la névrose sont exactement la même chose en psychiatrie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. در روان‌پریشی ارتباط با واقعیت قطع می‌شود، اما در نوروز فرد با واقعیت در ارتباط است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une oppression permanente lui serre la poitrine, sans cause apparente. Elle ressent une ____ constante.",
+        "options": [
+          "angoisse",
+          "dépression",
+          "schizophrénie",
+          "rechute"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "احساس فشار مداوم در سینه بدون دلیل مشخص = اضطراب عمیق."
+      },
+      {
+        "type": "mcq",
+        "question": "Le psychiatre a rédigé un document qui permet au patient d'obtenir ses médicaments en pharmacie. C'est une ____.",
+        "options": [
+          "ordonnance",
+          "thérapie",
+          "diagnostic",
+          "aliénation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سند پزشکی برای دریافت دارو از داروخانه = نسخه."
+      },
+      {
+        "type": "mcq",
+        "question": "Après un traumatisme, il se sent submergé, incapable de dormir ou de penser clairement. Il traverse une période de ____.",
+        "options": [
+          "détresse psychologique",
+          "thérapie",
+          "ordonnance",
+          "sevrage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حالت بحرانی پس از ضربه روحی = پریشانی روانی."
+      },
+      {
+        "type": "mcq",
+        "question": "Elle rencontre un psychologue chaque semaine pour apprendre à gérer ses émotions. Elle suit une ____.",
+        "options": [
+          "thérapie",
+          "ordonnance",
+          "diagnostic",
+          "rechute"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جلسات منظم با روان‌شناس = درمان."
+      }
+    ]
+  }
+}
