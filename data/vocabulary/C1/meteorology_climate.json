@@ -1,0 +1,680 @@
+{
+  "id": "meteorology_climate",
+  "level": "C1",
+  "theme": "Météorologie, climatologie et phénomènes atmosphériques",
+  "theme_fa": "هواشناسی، اقلیم‌شناسی و پدیده‌های جوی",
+  "icon": "🌪️",
+  "inspiration": "Twister (Jan de Bont, 1996)",
+  "words": [
+    {
+      "fr": "la météorologie",
+      "fa": "هواشناسی",
+      "emoji": "🌦️",
+      "difficulty": 4,
+      "ex": "La météorologie utilise des satellites pour prévoir le temps à court terme.",
+      "ex_fa": "هواشناسی برای پیش‌بینی کوتاه‌مدت هوا از ماهواره‌ها استفاده می‌کند."
+    },
+    {
+      "fr": "le climat",
+      "fa": "اقلیم، آب‌وهوا",
+      "emoji": "🌍",
+      "difficulty": 3,
+      "ex": "Le changement climatique menace les écosystèmes du monde entier.",
+      "ex_fa": "تغییر اقلیم، اکوسیستم‌های سراسر جهان را تهدید می‌کند."
+    },
+    {
+      "fr": "la pression",
+      "fa": "فشار (اتمسفری)",
+      "emoji": "📉",
+      "difficulty": 3,
+      "ex": "Une chute brutale de la pression atmosphérique annonce une tempête.",
+      "ex_fa": "افت ناگهانی فشار اتمسفر، خبر از یک طوفان می‌دهد."
+    },
+    {
+      "fr": "l'anticyclone",
+      "fa": "پرفشار، آنتی‌سیکلون",
+      "emoji": "☀️",
+      "difficulty": 5,
+      "ex": "L'anticyclone des Açores apporte un temps sec et ensoleillé sur l'Europe.",
+      "ex_fa": "توده پرفشار آزور، هوای خشک و آفتابی را برای اروپا به ارمغان می‌آورد."
+    },
+    {
+      "fr": "la dépression",
+      "fa": "کم‌فشار، افسردگی جوی",
+      "emoji": "🌧️",
+      "difficulty": 4,
+      "ex": "La dépression islandaise génère des vents violents et des pluies continues.",
+      "ex_fa": "توده کم‌فشار ایسلند باعث بادهای شدید و باران‌های مداوم می‌شود."
+    },
+    {
+      "fr": "le front",
+      "fa": "جبهه (هوا)",
+      "emoji": "🌬️",
+      "difficulty": 4,
+      "ex": "Le front froid provoque des orages en rencontrant l'air chaud.",
+      "ex_fa": "جبهه سرد در برخورد با هوای گرم باعث ایجاد رگبار می‌شود."
+    },
+    {
+      "fr": "la précipitation",
+      "fa": "بارش",
+      "emoji": "🌧️",
+      "difficulty": 4,
+      "ex": "Les météorologues mesurent la précipitation en millimètres par heure.",
+      "ex_fa": "هواشناسان میزان بارش را بر حسب میلی‌متر در ساعت اندازه‌گیری می‌کنند."
+    },
+    {
+      "fr": "l'ouragan",
+      "fa": "توفان، طوفان دریایی",
+      "emoji": "🌀",
+      "difficulty": 4,
+      "ex": "L'ouragan de catégorie cinq rase tout sur son passage.",
+      "ex_fa": "توفان دسته پنج همه چیز را در مسیرش نابود می‌کند."
+    },
+    {
+      "fr": "la foudre",
+      "fa": "آذرخش، صاعقه",
+      "emoji": "⚡",
+      "difficulty": 3,
+      "ex": "La foudre a frappé le paratonnerre au sommet de la tour.",
+      "ex_fa": "صاعقه به برق‌گیر نوک برج برخورد کرد."
+    },
+    {
+      "fr": "le tonnerre",
+      "fa": "رعد",
+      "emoji": "🌩️",
+      "difficulty": 2,
+      "ex": "Le grondement du tonnerre résonne quelques secondes après l'éclair.",
+      "ex_fa": "غرش رعد چند ثانیه پس از برق آسمان شنیده می‌شود."
+    },
+    {
+      "fr": "la sécheresse",
+      "fa": "خشکسالی",
+      "emoji": "🏜️",
+      "difficulty": 4,
+      "ex": "La sécheresse estivale a détruit les récoltes des agriculteurs.",
+      "ex_fa": "خشکسالی تابستانی محصولات کشاورزان را نابود کرد."
+    },
+    {
+      "fr": "l'inondation",
+      "fa": "سیل",
+      "emoji": "🌊",
+      "difficulty": 3,
+      "ex": "L'inondation soudaine a submergé les quartiers bas de la ville.",
+      "ex_fa": "سیل ناگهانی محله‌های پایین‌دست شهر را زیر آب برد."
+    },
+    {
+      "fr": "le brouillard",
+      "fa": "مه",
+      "emoji": "🌫️",
+      "difficulty": 2,
+      "ex": "Le brouillard matinal réduit la visibilité sur l'autoroute.",
+      "ex_fa": "مه صبحگاهی دید را در بزرگراه کاهش می‌دهد."
+    },
+    {
+      "fr": "le givre",
+      "fa": "یخ‌زدگی، شبنم یخ‌زده",
+      "emoji": "❄️",
+      "difficulty": 3,
+      "ex": "Le givre recouvre les branches d'un voile blanc et cristallin.",
+      "ex_fa": "شبنم یخ‌زده شاخه‌ها را با پرده‌ای سفید و بلورین می‌پوشاند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les chasseurs de tempêtes",
+      "text": "Jo est une passionnée de {{BLANK_1}} qui étudie les caprices imprévisibles du {{BLANK_2}}. Dans son laboratoire mobile, elle analyse en temps réel la {{BLANK_3}} atmosphérique. Elle sait qu'un {{BLANK_4}} apporte généralement du beau temps, tandis qu'une profonde {{BLANK_5}} annonce des tempêtes dévastatrices. Aujourd'hui, un {{BLANK_6}} froid approche dangereusement des plaines du Midwest. Les modèles numériques prévoient une forte {{BLANK_7}} sur la région. Au loin, sur le golfe, un véritable {{BLANK_8}} se forme et prend de la force. Soudain, la {{BLANK_9}} déchire le ciel noir, immédiatement suivie par le grondement terrifiant du {{BLANK_10}}. L'année dernière, cette même région a souffert d'une terrible {{BLANK_11}} qui a brûlé les sols, mais aujourd'hui, le risque majeur est l'{{BLANK_12}} des rivières en crue. Le {{BLANK_13}} épais réduit la visibilité à quelques mètres, et demain matin, si le froid s'installe, le {{BLANK_14}} recouvrira les arbres survivants d'une armure de glace.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "météorologie",
+          "options": [
+            "météorologie",
+            "climat",
+            "pression",
+            "anticyclone"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "climat",
+          "options": [
+            "climat",
+            "dépression",
+            "front",
+            "précipitation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "pression",
+          "options": [
+            "pression",
+            "ouragan",
+            "foudre",
+            "tonnerre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "anticyclone",
+          "options": [
+            "anticyclone",
+            "sécheresse",
+            "inondation",
+            "brouillard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "dépression",
+          "options": [
+            "dépression",
+            "givre",
+            "météorologie",
+            "climat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "front",
+          "options": [
+            "front",
+            "pression",
+            "anticyclone",
+            "dépression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "précipitation",
+          "options": [
+            "précipitation",
+            "ouragan",
+            "foudre",
+            "tonnerre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "ouragan",
+          "options": [
+            "ouragan",
+            "sécheresse",
+            "inondation",
+            "brouillard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "foudre",
+          "options": [
+            "foudre",
+            "givre",
+            "météorologie",
+            "climat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "tonnerre",
+          "options": [
+            "tonnerre",
+            "pression",
+            "anticyclone",
+            "dépression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "sécheresse",
+          "options": [
+            "sécheresse",
+            "front",
+            "précipitation",
+            "ouragan"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "inondation",
+          "options": [
+            "inondation",
+            "foudre",
+            "tonnerre",
+            "givre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "brouillard",
+          "options": [
+            "brouillard",
+            "météorologie",
+            "climat",
+            "pression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "givre",
+          "options": [
+            "givre",
+            "anticyclone",
+            "dépression",
+            "front"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le souffle des dieux",
+      "inspiration": "Twister (Jan de Bont, 1996)",
+      "text": "À peine Jo eut-elle déployé ses instruments sur la plaine que la fureur du {{BLANK_2}} se révéla dans toute sa violence primitive. Cette chercheuse en {{BLANK_1}} ne traquait pas de simples nuages, mais les monstres célestes enfantés par la Terre. L'aiguille mesurant la {{BLANK_3}} chutait vertigineusement, trahissant la mort de l'{{BLANK_4}} bienveillant et la naissance d'une {{BLANK_5}} vorace et tourbillonnante. Un {{BLANK_6}} glacé percutait l'air brûlant, déclenchant une {{BLANK_7}} diluvienne qui noyait l'horizon. L'océan de nuages hurlait, accouchant d'un {{BLANK_8}} qui dévorait les paysages sur son passage. La {{BLANK_9}} zébrait la pénombre comme une lance divine, et le {{BLANK_10}} faisait trembler les fondations du monde. Elle se souvenait de la {{BLANK_11}} qui avait craquelé ces mêmes plaines l'été passé, et redoutait désormais l'{{BLANK_12}} boueuse qui engloutirait les vallées. Dans le {{BLANK_13}} fantomatique qui montait de la terre trempée, elle attendait que la nuit vienne figer sa colère sous le {{BLANK_14}}, comprenant que l'humanité n'est qu'une poussière éphémère face au souffle indomptable des dieux atmosphériques.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "météorologie",
+          "options": [
+            "météorologie",
+            "climat",
+            "pression",
+            "anticyclone"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "climat",
+          "options": [
+            "climat",
+            "dépression",
+            "front",
+            "précipitation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "pression",
+          "options": [
+            "pression",
+            "ouragan",
+            "foudre",
+            "tonnerre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "anticyclone",
+          "options": [
+            "anticyclone",
+            "sécheresse",
+            "inondation",
+            "brouillard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "dépression",
+          "options": [
+            "dépression",
+            "givre",
+            "météorologie",
+            "climat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "front",
+          "options": [
+            "front",
+            "pression",
+            "anticyclone",
+            "dépression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "précipitation",
+          "options": [
+            "précipitation",
+            "ouragan",
+            "foudre",
+            "tonnerre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "ouragan",
+          "options": [
+            "ouragan",
+            "sécheresse",
+            "inondation",
+            "brouillard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "foudre",
+          "options": [
+            "foudre",
+            "givre",
+            "météorologie",
+            "climat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "tonnerre",
+          "options": [
+            "tonnerre",
+            "pression",
+            "anticyclone",
+            "dépression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "sécheresse",
+          "options": [
+            "sécheresse",
+            "front",
+            "précipitation",
+            "ouragan"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "inondation",
+          "options": [
+            "inondation",
+            "foudre",
+            "tonnerre",
+            "givre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "brouillard",
+          "options": [
+            "brouillard",
+            "météorologie",
+            "climat",
+            "pression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "givre",
+          "options": [
+            "givre",
+            "anticyclone",
+            "dépression",
+            "front"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Météorologie et climat",
+    "title_fa": "آزمون : هواشناسی و اقلیم",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie les phénomènes atmosphériques et prévoit le temps à court terme est la ____.",
+        "options": [
+          "météorologie",
+          "climat",
+          "pression",
+          "anticyclone"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه پدیده‌های جوی = météorologie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des conditions atmosphériques moyennes d'une région sur une longue période est le ____.",
+        "options": [
+          "climat",
+          "dépression",
+          "front",
+          "précipitation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شرایط میانگین جوی در طولانی‌مدت = climat."
+      },
+      {
+        "type": "mcq",
+        "question": "La force exercée par le poids de l'air sur une surface, mesurée en hectopascals, est la ____.",
+        "options": [
+          "pression",
+          "ouragan",
+          "foudre",
+          "tonnerre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نیروی وزن هوا = pression."
+      },
+      {
+        "type": "mcq",
+        "question": "La zone de hautes pressions atmosphériques généralement associée au temps calme et ensoleillé est l'____.",
+        "options": [
+          "anticyclone",
+          "sécheresse",
+          "inondation",
+          "brouillard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توده پرفشار و هوای صاف = anticyclone."
+      },
+      {
+        "type": "mcq",
+        "question": "La zone de basses pressions où l'air converge et s'élève, provoquant nuages et pluies, est la ____.",
+        "options": [
+          "dépression",
+          "givre",
+          "météorologie",
+          "climat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توده کم‌فشار و طوفانی = dépression."
+      },
+      {
+        "type": "mcq",
+        "question": "La limite ou zone de transition entre deux masses d'air de températures différentes est le ____.",
+        "options": [
+          "front",
+          "pression",
+          "anticyclone",
+          "dépression"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مرز بین دو توده هوا = front."
+      },
+      {
+        "type": "mcq",
+        "question": "Tout phénomène de chute d'eau (pluie, neige, grêle) de l'atmosphère vers le sol est la ____.",
+        "options": [
+          "précipitation",
+          "ouragan",
+          "foudre",
+          "tonnerre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ریزش آب از اتمسفر = précipitation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le cyclone tropical violent, caractérisé par des vents extrêmes et de fortes pluies, est l'____.",
+        "options": [
+          "ouragan",
+          "sécheresse",
+          "inondation",
+          "brouillard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طوفان استوایی شدید = ouragan."
+      },
+      {
+        "type": "mcq",
+        "question": "La décharge électrique lumineuse et brutale qui se produit dans l'atmosphère est la ____.",
+        "options": [
+          "foudre",
+          "givre",
+          "météorologie",
+          "climat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تخلیه الکتریکی آسمان = foudre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bruit assourdissant provoqué par l'expansion soudaine de l'air lors d'un éclair est le ____.",
+        "options": [
+          "tonnerre",
+          "pression",
+          "anticyclone",
+          "dépression"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صدای ناشی از صاعقه = tonnerre."
+      },
+      {
+        "type": "mcq",
+        "question": "La période prolongée de déficit pluviométrique entraînant un manque d'eau critique est la ____.",
+        "options": [
+          "sécheresse",
+          "front",
+          "précipitation",
+          "ouragan"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره طولانی بدون باران = sécheresse."
+      },
+      {
+        "type": "mcq",
+        "question": "Le débordement des cours d'eau ou la submersion des terres par des eaux abondantes est l'____.",
+        "options": [
+          "inondation",
+          "foudre",
+          "tonnerre",
+          "givre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زیر آب رفتن زمین‌ها = inondation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le nuage bas et dense composé de gouttelettes d'eau en suspension qui réduit la visibilité est le ____.",
+        "options": [
+          "brouillard",
+          "météorologie",
+          "climat",
+          "pression"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابر پایینی که دید را کم می‌کند = brouillard."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dépôt de cristaux de glace sur les surfaces lorsque la température descend sous zéro degré est le ____.",
+        "options": [
+          "givre",
+          "anticyclone",
+          "dépression",
+          "front"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کریستال‌های یخ روی سطوح = givre."
+      },
+      {
+        "type": "binary",
+        "question": "L'anticyclone est une zone de basses pressions qui apporte généralement des tempêtes et de la pluie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. آنتی‌سیکلون (anticyclone) توده پرفشار است که هوای صاف و آفتابی به همراه می‌آورد."
+      },
+      {
+        "type": "binary",
+        "question": "Le front froid se forme lorsque une masse d'air froid pousse et soulève une masse d'air chaud.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. جبهه سرد از برخورد و بالا رفتن هوای گرم توسط هوای سرد ایجاد می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le tonnerre est la lumière brillante produite par la décharge électrique dans les nuages.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. روشنایی آسمان فoudre (صاعقه) نام دارد؛ tonnerre صدای غرش آن است."
+      },
+      {
+        "type": "binary",
+        "question": "La sécheresse désigne une période prolongée avec des précipitations anormalement faibles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. خشکسالی (sécheresse) دوره‌ای با بارش بسیار کم و کمبود آب است."
+      },
+      {
+        "type": "binary",
+        "question": "Le givre se forme lorsque la vapeur d'eau se condense directement en cristaux de glace sur des surfaces froides.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. شبنم یخ‌زده (givre) از انجماد مستقیم بخار آب روی سطوح سرد ایجاد می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La météorologie et la climatologie désignent exactement la même science sans aucune différence.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. هواشناسی (météorologie) به پیش‌بینی کوتاه‌مدت می‌پردازد، اما اقلیم‌شناسی (climatologie) روندهای بلندمدت را بررسی می‌کند."
+      }
+    ]
+  }
+}
