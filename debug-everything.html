@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>دیباگ کامل</title>
+    <style>
+        body { font-family: Tahoma; padding: 20px; background: #f5f5f5; margin: 0; }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { color: #087F5B; }
+        .box { background: white; border-radius: 8px; padding: 20px; margin: 15px 0; }
+        .error { background: #fef2f2; border: 2px solid #dc2626; }
+        .success { background: #d1fae5; border: 2px solid #087F5B; }
+        .warning { background: #fffbeb; border: 2px solid #f59e0b; }
+        h2 { margin-top: 0; color: #1a1a1a; }
+        .check-item { padding: 10px; margin: 8px 0; border-radius: 4px; }
+        .check-ok { background: #d1fae5; border-left: 4px solid #087F5B; }
+        .check-fail { background: #fef2f2; border-left: 4px solid #dc2626; }
+        code { background: #1a1a1a; color: #00ff00; padding: 2px 6px; border-radius: 3px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 دیباگ کامل سیستم سفر</h1>
+        <p style="color:#777;">این ابزار همه چیز را چک می‌کند و دقیقاً می‌گوید مشکل کجاست.</p>
+        
+        <div id="result"></div>
+    </div>
+    
+    <script>
+        const resultDiv = document.getElementById('result');
+        let checks = [];
+        
+        function addCheck(title, status, message) {
+            checks.push({ title, status, message });
+        }
+        
+        function renderChecks() {
+            let html = '<div class="box"><h2>📋 نتایج بررسی:</h2>';
+            
+            checks.forEach(check => {
+                const className = check.status === 'ok' ? 'check-ok' : 'check-fail';
+                const icon = check.status === 'ok' ? '✅' : '❌';
+                html += `<div class="check-item ${className}">`;
+                html += `<b>${icon} ${check.title}</b>`;
+                if (check.message) {
+                    html += `<p style="margin:4px 0 0;font-size:14px;color:#555;">${check.message}</p>`;
+                }
+                html += `</div>`;
+            });
+            
+            html += '</div>';
+            resultDiv.innerHTML = html;
+        }
+        
+        async function debugEverything() {
+            resultDiv.innerHTML = '<div class="box"><h2>⏳ در حال بررسی...</h2></div>';
+            
+            // ۱. چک کردن existence فایل travel.js
+            try {
+                const res = await fetch('./travel.js?v=' + Date.now());
+                if (res.ok) {
+                    addCheck('فایل travel.js وجود دارد', 'ok', 'فایل در ریشه پروژه پیدا شد');
+                } else {
+                    addCheck('فایل travel.js وجود دارد', 'fail', `کد HTTP: ${res.status} - فایل پیدا نشد!`);
+                }
+            } catch (e) {
+                addCheck('فایل travel.js وجود دارد', 'fail', `خطا: ${e.message}`);
+            }
+            
+            // ۲. چک کردن existence فایل lessons.json
+            try {
+                const res = await fetch('./data/travel/lessons.json?v=' + Date.now());
+                if (res.ok) {
+                    const lessons = await res.json();
+                    addCheck('فایل lessons.json وجود دارد', 'ok', `${lessons.length} درس در فایل`);
+                } else {
+                    addCheck('فایل lessons.json وجود دارد', 'fail', `کد HTTP: ${res.status}`);
+                }
+            } catch (e) {
+                addCheck('فایل lessons.json وجود دارد', 'fail', `خطا: ${e.message}`);
+            }
+            
+            // ۳. چک کردن existence پوشه lessons
+            try {
+                const res = await fetch('./data/travel/lessons/lesson-10-petit-dejeuner.json?v=' + Date.now());
+                if (res.ok) {
+                    addCheck('پوشه data/travel/lessons/ وجود دارد', 'ok', 'حداقل یک فایل درس پیدا شد');
+                } else {
+                    addCheck('پوشه data/travel/lessons/ وجود دارد', 'fail', `کد HTTP: ${res.status}`);
+                }
+            } catch (e) {
+                addCheck('پوشه data/travel/lessons/ وجود دارد', 'fail', `خطا: ${e.message}`);
+            }
+            
+            // ۴. چک کردن existence فایل index.html
+            try {
+                const res = await fetch('./index.html?v=' + Date.now());
+                if (res.ok) {
+                    const html = await res.text();
+                    if (html.includes('travel.js')) {
+                        addCheck('فایل index.html شامل travel.js است', 'ok', 'اسکریپت travel.js در index.html اضافه شده');
+                    } else {
+                        addCheck('فایل index.html شامل travel.js است', 'fail', 'اسکریپت travel.js در index.html پیدا نشد!');
+                    }
+                } else {
+                    addCheck('فایل index.html وجود دارد', 'fail', `کد HTTP: ${res.status}`);
+                }
+            } catch (e) {
+                addCheck('فایل index.html وجود دارد', 'fail', `خطا: ${e.message}`);
+            }
+            
+            // ۵. چک کردن existence فایل router.js
+            try {
+                const res = await fetch('./router.js?v=' + Date.now());
+                if (res.ok) {
+                    const js = await res.text();
+                    if (js.includes("case 'travel'")) {
+                        if (js.includes('showTravelPage')) {
+                            addCheck('فایل router.js case travel دارد', 'ok', 'تابع showTravelPage در router.js فراخوانی شده');
+                        } else {
+                            addCheck('فایل router.js case travel دارد', 'fail', 'case travel وجود دارد ولی showTravelPage فراخوانی نشده!');
+                        }
+                    } else {
+                        addCheck('فایل router.js case travel دارد', 'fail', 'case travel در router.js پیدا نشد!');
+                    }
+                } else {
+                    addCheck('فایل router.js وجود دارد', 'fail', `کد HTTP: ${res.status}`);
+                }
+            } catch (e) {
+                addCheck('فایل router.js وجود دارد', 'fail', `خطا: ${e.message}`);
+            }
+            
+            renderChecks();
+            
+            // ۶. نتیجه نهایی
+            const failCount = checks.filter(c => c.status === 'fail').length;
+            
+            if (failCount === 0) {
+                resultDiv.innerHTML += `
+                    <div class="box success">
+                        <h2>✅ همه چیز درست است!</h2>
+                        <p>همه فایل‌ها و مسیرها سالم هستند. اگر هنوز کار نمی‌کند، مشکل از <b>کش مرورگر</b> است.</p>
+                        <p><b>راه‌حل:</b> کش مرورگر را کاملاً پاک کن (Settings > Safari > Clear History and Website Data) و دوباره تست کن.</p>
+                    </div>`;
+            } else {
+                resultDiv.innerHTML += `
+                    <div class="box error">
+                        <h2>❌ ${failCount} مشکل پیدا شد!</h2>
+                        <p>لطفاً موارد قرمز رنگ بالا را اصلاح کن.</p>
+                    </div>`;
+            }
+        }
+        
+        debugEverything();
+    </script>
+</body>
+</html>
