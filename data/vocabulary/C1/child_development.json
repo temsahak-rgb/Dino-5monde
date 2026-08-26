@@ -1,0 +1,680 @@
+{
+  "id": "child_development",
+  "level": "C1",
+  "theme": "Psychologie du développement, éducation et parentalité",
+  "theme_fa": "روان‌شناسی رشد، تربیت و فرزندپروری",
+  "icon": "🧒",
+  "inspiration": "Le Monde de Nemo (Finding Nemo - Andrew Stanton, 2003)",
+  "words": [
+    {
+      "fr": "l'attachement",
+      "fa": "دلبستگی",
+      "emoji": "🤱",
+      "difficulty": 4,
+      "ex": "L'attachement sécure se forme dans les premiers mois de la vie.",
+      "ex_fa": "دلبستگی ایمن در ماه‌های اول زندگی شکل می‌گیرد."
+    },
+    {
+      "fr": "le développement",
+      "fa": "رشد",
+      "emoji": "🌱",
+      "difficulty": 3,
+      "ex": "Le développement cognitif s'accélère pendant les premières années.",
+      "ex_fa": "رشد شناختی در سال‌های اول شتاب می‌گیرد."
+    },
+    {
+      "fr": "l'autonomie",
+      "fa": "استقلال",
+      "emoji": "🧍",
+      "difficulty": 4,
+      "ex": "L'enfant conquiert son autonomie pas à pas.",
+      "ex_fa": "کودک استقلالش را قدم‌به‌قدم به دست می‌آورد."
+    },
+    {
+      "fr": "la socialisation",
+      "fa": "اجتماعی شدن",
+      "emoji": "👫",
+      "difficulty": 4,
+      "ex": "La socialisation commence dès l'entrée à l'école maternelle.",
+      "ex_fa": "اجتماعی شدن از ورود به مهدکودک آغاز می‌شود."
+    },
+    {
+      "fr": "l'éducation",
+      "fa": "تربیت، آموزش",
+      "emoji": "📚",
+      "difficulty": 3,
+      "ex": "L'éducation positive privilégie le dialogue à la punition.",
+      "ex_fa": "تربیت مثبت، گفتگو را بر تنبیه ترجیح می‌دهد."
+    },
+    {
+      "fr": "la parentalité",
+      "fa": "فرزندپروری",
+      "emoji": "👨‍👩‍👧",
+      "difficulty": 4,
+      "ex": "La parentalité bienveillante favorise l'estime de soi.",
+      "ex_fa": "فرزندپروری مهربان، عزت نفس را تقویت می‌کند."
+    },
+    {
+      "fr": "l'adolescence",
+      "fa": "نوجوانی",
+      "emoji": "🧑",
+      "difficulty": 3,
+      "ex": "L'adolescence est une période de transformation profonde.",
+      "ex_fa": "نوجوانی دوره‌ای از دگرگونی عمیق است."
+    },
+    {
+      "fr": "le jeu",
+      "fa": "بازی",
+      "emoji": "🧸",
+      "difficulty": 2,
+      "ex": "Le jeu est le langage naturel de l'enfant.",
+      "ex_fa": "بازی، زبان طبیعی کودک است."
+    },
+    {
+      "fr": "la motricité",
+      "fa": "مهارت حرکتی",
+      "emoji": "🏃",
+      "difficulty": 4,
+      "ex": "La motricité fine se développe en dessinant et en découpant.",
+      "ex_fa": "مهارت حرکتی ظریف با نقاشی و بریدن رشد می‌کند."
+    },
+    {
+      "fr": "le langage",
+      "fa": "زبان",
+      "emoji": "💬",
+      "difficulty": 3,
+      "ex": "Le langage évolue de manière spectaculaire entre deux et cinq ans.",
+      "ex_fa": "زبان بین دو تا پنج سال به شکلی چشمگیر تحول می‌یابد."
+    },
+    {
+      "fr": "la bienveillance",
+      "fa": "مهربانی، نیک‌خواهی",
+      "emoji": "💛",
+      "difficulty": 4,
+      "ex": "La bienveillance éducative n'exclut pas la fermeté.",
+      "ex_fa": "مهربانی تربیتی، قاطعیت را رد نمی‌کند."
+    },
+    {
+      "fr": "l'éveil",
+      "fa": "شکوفایی، بیداری حسی",
+      "emoji": "🌅",
+      "difficulty": 4,
+      "ex": "Les activités d'éveil stimulent la curiosité du tout-petit.",
+      "ex_fa": "فعالیت‌های شکوفایی، کنجکاوی کودک خردسال را تحریک می‌کنند."
+    },
+    {
+      "fr": "la fratrie",
+      "fa": "خواهران و برادران",
+      "emoji": "👧👦",
+      "difficulty": 4,
+      "ex": "La fratrie est le premier lieu d'apprentissage du partage.",
+      "ex_fa": "خواهران و برادران، نخستین مکان یادگیری تقسیم کردن هستند."
+    },
+    {
+      "fr": "la résilience",
+      "fa": "تاب‌آوری",
+      "emoji": "🌳",
+      "difficulty": 5,
+      "ex": "La résilience permet à l'enfant de surmonter les traumatismes.",
+      "ex_fa": "تاب‌آوری به کودک امکان غلبه بر تروماها را می‌دهد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le père et l'océan",
+      "text": "Marlin, un poisson-clown surprotecteur, élève seul son fils Nemo dans l'océan. Depuis la mort de sa femme, il vit dans la peur constante. Son {{BLANK_5}} l'empêche de laisser Nemo explorer le récif. Il veut tout contrôler pour protéger son petit. Mais Nemo grandit et réclame son {{BLANK_3}}. Le jour de son entrée à l'école, la {{BLANK_4}} avec les autres poissons le transforme. Il veut prouver qu'il est courageux. Quand un plongeur le capture, Marlin se lance dans un voyage désespéré pour le retrouver. En chemin, il rencontre Dory, une poisson-chirurgien oublieuse mais pleine de {{BLANK_11}}. Elle lui apprend que la {{BLANK_1}} ne signifie pas tout contrôler. Marlin découvre que le {{BLANK_2}} de son fils passe par des expériences, même dangereuses. Le {{BLANK_8}} libre dans l'océan est essentiel à son épanouissement. Nemo, de son côté, apprend à communiquer avec ses nouveaux amis : le {{BLANK_10}} évolue rapidement au contact des autres. Dans l'aquarium du dentiste, il découvre la {{BLANK_13}} : Gill, un poisson blessé, devient son mentor. Ensemble, ils élaborent un plan d'évasion. Marlin comprend que la {{BLANK_6}} n'est pas une prison dorée, mais un accompagnement. La {{BLANK_7}} de Nemo, avec ses rébellions et ses peurs, est naturelle. Grâce à la {{BLANK_14}} acquise dans l'adversité, Nemo réussit à s'échapper. Père et fils se retrouvent, transformés. Marlin a appris à faire confiance, et Nemo a conquis sa liberté sans perdre l'amour de son père.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "attachement",
+          "options": [
+            "attachement",
+            "développement",
+            "autonomie",
+            "socialisation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "développement",
+          "options": [
+            "développement",
+            "éducation",
+            "parentalité",
+            "adolescence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "autonomie",
+          "options": [
+            "autonomie",
+            "jeu",
+            "motricité",
+            "langage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "socialisation",
+          "options": [
+            "socialisation",
+            "bienveillance",
+            "éveil",
+            "fratrie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "attachement",
+          "options": [
+            "attachement",
+            "résilience",
+            "jeu",
+            "motricité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "parentalité",
+          "options": [
+            "parentalité",
+            "socialisation",
+            "langage",
+            "éveil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "adolescence",
+          "options": [
+            "adolescence",
+            "attachement",
+            "motricité",
+            "fratrie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "jeu",
+          "options": [
+            "jeu",
+            "développement",
+            "autonomie",
+            "résilience"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "motricité",
+          "options": [
+            "motricité",
+            "langage",
+            "bienveillance",
+            "jeu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "langage",
+          "options": [
+            "langage",
+            "motricité",
+            "socialisation",
+            "parentalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "bienveillance",
+          "options": [
+            "bienveillance",
+            "éveil",
+            "fratrie",
+            "résilience"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "éveil",
+          "options": [
+            "éveil",
+            "attachement",
+            "développement",
+            "autonomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "fratrie",
+          "options": [
+            "fratrie",
+            "jeu",
+            "motricité",
+            "langage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "résilience",
+          "options": [
+            "résilience",
+            "bienveillance",
+            "éveil",
+            "fratrie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'océan intérieur",
+      "inspiration": "Le Monde de Nemo (Finding Nemo - Andrew Stanton, 2003)",
+      "text": "À peine Marlin eut-il vu la barque du plongeur disparaître à l'horizon que son cœur de père se brisa en deux, comme le corail sous la tempête. Ce petit poisson-clown, qui avait autrefois perdu sa compagne et tous ses œufs sauf un, vivait depuis dans la terreur sacrée de l'{{BLANK_1}}. Son amour pour Nemo était une cage transparente, invisible et pourtant infranchissable. Il croyait protéger, mais il étouffait. Nemo, lui, sentait grandir en lui une soif d'{{BLANK_3}}, ce désir irrépressible de nager au-delà du récif, de toucher l'inconnu de ses propres nageoires. Le jour fatidique de l'école, la {{BLANK_4}} avec les autres petits poissons alluma une étincelle de rébellion. « Tu es trop petit ! » cria Marlin, sans comprendre que ces mots gravaient dans l'âme de son fils la certitude inverse. Quand Nemo fut arraché à l'océan, Marlin se jeta dans le vide bleu, porté par un désespoir plus fort que sa peur. En chemin, Dory, cette âme oublieuse mais lumineuse, lui enseigna sans le vouloir la {{BLANK_11}} : l'art de faire confiance à l'instant, de lâcher prise sur ce qu'on ne peut contrôler. Elle lui montra que le {{BLANK_2}} d'un enfant n'est pas une ligne droite tracée par les parents, mais un chemin sinueux que l'enfant doit inventer lui-même. Marlin découvrit que le {{BLANK_8}} libre, ce langage universel des petits, était plus éducatif que mille leçons. Dans l'aquarium du dentiste, Nemo apprenait la {{BLANK_13}} de fortune : Gill, le poisson blessé, devint le frère aîné qu'il n'avait jamais eu. Leur {{BLANK_10}} commun évolua, passant de la peur aux mots du courage. La {{BLANK_9}} de Nemo, affinée par l'effort de nager contre le courant, devint son arme de libération. Marlin comprit enfin que la {{BLANK_6}} n'était pas une armure, mais une voile : elle devait porter l'enfant vers le large, pas l'ancrer au port. L'{{BLANK_7}} de Nemo, cette tempête intérieure entre l'enfance et l'âge adulte, n'était pas une maladie à guérir, mais une métamorphose à accompagner. Et quand la {{BLANK_14}} du petit poisson triompha du filet et de la peur, Marlin pleura de joie. Il avait perdu un fils obéissant, mais retrouvé un fils libre. Et dans l'océan retrouvé, père et fils nagèrent côte à côte, non plus comme le geôlier et le prisonnier, mais comme deux voyageurs partageant la même immensité.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "attachement",
+          "options": [
+            "attachement",
+            "développement",
+            "autonomie",
+            "socialisation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "développement",
+          "options": [
+            "développement",
+            "éducation",
+            "parentalité",
+            "adolescence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "autonomie",
+          "options": [
+            "autonomie",
+            "jeu",
+            "motricité",
+            "langage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "socialisation",
+          "options": [
+            "socialisation",
+            "bienveillance",
+            "éveil",
+            "fratrie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "éducation",
+          "options": [
+            "éducation",
+            "parentalité",
+            "adolescence",
+            "jeu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "parentalité",
+          "options": [
+            "parentalité",
+            "socialisation",
+            "langage",
+            "éveil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "adolescence",
+          "options": [
+            "adolescence",
+            "attachement",
+            "motricité",
+            "fratrie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "jeu",
+          "options": [
+            "jeu",
+            "développement",
+            "autonomie",
+            "résilience"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "motricité",
+          "options": [
+            "motricité",
+            "langage",
+            "bienveillance",
+            "jeu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "langage",
+          "options": [
+            "langage",
+            "motricité",
+            "socialisation",
+            "parentalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "bienveillance",
+          "options": [
+            "bienveillance",
+            "éveil",
+            "fratrie",
+            "résilience"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "éveil",
+          "options": [
+            "éveil",
+            "attachement",
+            "développement",
+            "autonomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "fratrie",
+          "options": [
+            "fratrie",
+            "jeu",
+            "motricité",
+            "langage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "résilience",
+          "options": [
+            "résilience",
+            "bienveillance",
+            "éveil",
+            "fratrie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Développement de l'enfant et parentalité",
+    "title_fa": "آزمون : رشد کودک و فرزندپروری",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le lien affectif profond qui unit l'enfant à sa figure de soin principale, essentiel à sa sécurité émotionnelle, est l'____.",
+        "options": [
+          "attachement",
+          "développement",
+          "autonomie",
+          "socialisation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیوند عاطفی کودک با مراقب = attachement."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des transformations physiques, cognitives et émotionnelles qui accompagnent la croissance d'un individu est le ____.",
+        "options": [
+          "développement",
+          "éducation",
+          "parentalité",
+          "adolescence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه تغییرات رشد = développement."
+      },
+      {
+        "type": "mcq",
+        "question": "La capacité progressive de l'enfant à agir, décider et se prendre en charge sans dépendre entièrement de l'adulte est l'____.",
+        "options": [
+          "autonomie",
+          "jeu",
+          "motricité",
+          "langage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توانایی استقلال کودک = autonomie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus par lequel l'enfant apprend les normes, les valeurs et les comportements de la société est la ____.",
+        "options": [
+          "socialisation",
+          "bienveillance",
+          "éveil",
+          "fratrie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یادگیری هنجارهای اجتماعی = socialisation."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des pratiques et des valeurs qui guident les parents dans l'accompagnement de leur enfant est l'____.",
+        "options": [
+          "éducation",
+          "parentalité",
+          "adolescence",
+          "jeu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه روش‌های تربیتی والدین = éducation."
+      },
+      {
+        "type": "mcq",
+        "question": "La manière dont les parents exercent leur rôle, entre autorité, affection et accompagnement, est la ____.",
+        "options": [
+          "parentalité",
+          "socialisation",
+          "langage",
+          "éveil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیوه ایفای نقش والدینی = parentalité."
+      },
+      {
+        "type": "mcq",
+        "question": "La période de transition entre l'enfance et l'âge adulte, marquée par des bouleversements physiques et psychologiques, est l'____.",
+        "options": [
+          "adolescence",
+          "attachement",
+          "motricité",
+          "fratrie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره گذار از کودکی به بزرگسالی = adolescence."
+      },
+      {
+        "type": "mcq",
+        "question": "L'activité spontanée et libre par laquelle l'enfant explore, apprend et exprime ses émotions est le ____.",
+        "options": [
+          "jeu",
+          "développement",
+          "autonomie",
+          "résilience"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعالیت خودجوش کودک = jeu."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des capacités motrices, de la marche à la manipulation fine d'objets, est la ____.",
+        "options": [
+          "motricité",
+          "langage",
+          "bienveillance",
+          "jeu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مهارت‌های حرکتی = motricité."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système de communication qui évolue des premiers babillages aux phrases complexes est le ____.",
+        "options": [
+          "langage",
+          "motricité",
+          "socialisation",
+          "parentalité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم ارتباطی کودک = langage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'attitude éducative qui combine écoute, respect et cadre bienveillant est la ____.",
+        "options": [
+          "bienveillance",
+          "éveil",
+          "fratrie",
+          "résilience"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رویکرد تربیتی مهربان = bienveillance."
+      },
+      {
+        "type": "mcq",
+        "question": "La stimulation sensorielle et cognitive proposée au tout-petit pour éveiller sa curiosité est l'____.",
+        "options": [
+          "éveil",
+          "attachement",
+          "développement",
+          "autonomie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تحریک حسی و شناختی کودک = éveil."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des frères et sœurs d'une même famille, premier cercle d'apprentissage du partage, est la ____.",
+        "options": [
+          "fratrie",
+          "jeu",
+          "motricité",
+          "langage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه خواهران و برادران = fratrie."
+      },
+      {
+        "type": "mcq",
+        "question": "La capacité à surmonter les épreuves, à se reconstruire après un traumatisme et à rebondir est la ____.",
+        "options": [
+          "résilience",
+          "bienveillance",
+          "éveil",
+          "fratrie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توانایی بازسازی پس از سختی = résilience."
+      },
+      {
+        "type": "binary",
+        "question": "L'attachement sécure se forme quand le parent répond de manière cohérente et chaleureuse aux besoins de l'enfant.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دلبستگی ایمن با پاسخ‌دهی ثابت و مهربان والد شکل می‌گیرد."
+      },
+      {
+        "type": "binary",
+        "question": "L'autonomie signifie que l'enfant n'a plus besoin d'aucun accompagnement adulte.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. استقلال به معنای توانایی تدریجی عمل کردن است، نه قطع کامل رابطه با والد."
+      },
+      {
+        "type": "binary",
+        "question": "La socialisation commence uniquement à l'entrée à l'école, vers six ans.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اجتماعی شدن از بدو تولد و در تعامل با خانواده آغاز می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le jeu est reconnu par les psychologues comme un outil fondamental d'apprentissage et d'expression chez l'enfant.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بازی ابزار اصلی یادگیری و بیان کودک است."
+      },
+      {
+        "type": "binary",
+        "question": "La résilience est une qualité innée qui ne peut ni se développer ni s'apprendre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تاب‌آوری قابل رشد و تقویت از طریق تجربه و حمایت است."
+      },
+      {
+        "type": "binary",
+        "question": "La parentalité bienveillante exclut toute forme de cadre ou de limite imposée à l'enfant.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. فرزندپروری مهربان شامل چارچوب و حد و مرز روشن همراه با احترام است."
+      }
+    ]
+  }
+}
