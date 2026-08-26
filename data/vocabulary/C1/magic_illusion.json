@@ -1,0 +1,680 @@
+{
+  "id": "magic_illusion",
+  "level": "C1",
+  "theme": "Magie, illusionnisme et prestidigitation",
+  "theme_fa": "شعبده‌بازی، ایلوژنیسم و تردستی",
+  "icon": "🎩",
+  "inspiration": "Le Prestige (The Prestige - Christopher Nolan, 2006)",
+  "words": [
+    {
+      "fr": "la magie",
+      "fa": "جادو، شعبده‌بازی",
+      "emoji": "✨",
+      "difficulty": 3,
+      "ex": "La magie de scène repose sur l'art de l'illusion et du détournement d'attention.",
+      "ex_fa": "شعبده‌بازی صحنه‌ای بر هنر توهم و انحراف توجه استوار است."
+    },
+    {
+      "fr": "l'illusionniste",
+      "fa": "شعبده‌باز (ایلوژیونیست)",
+      "emoji": "🎩",
+      "difficulty": 4,
+      "ex": "L'illusionniste a fait disparaître la Statue de la Liberté en direct.",
+      "ex_fa": "شعبده‌باز مجسمه آزادی را به صورت زنده ناپدید کرد."
+    },
+    {
+      "fr": "le tour",
+      "fa": "تریک، شعبده",
+      "emoji": "🪄",
+      "difficulty": 3,
+      "ex": "Ce tour de cartes nécessite des années de pratique devant un miroir.",
+      "ex_fa": "این تریک پاسور به سال‌ها تمرین جلوی آینه نیاز دارد."
+    },
+    {
+      "fr": "le prestidigitateur",
+      "fa": "تردست",
+      "emoji": "🤹",
+      "difficulty": 5,
+      "ex": "Le prestidigitateur manipule les objets avec une rapidité imperceptible.",
+      "ex_fa": "تردست اشیاء را با سرعتی غیرقابل درک دستکاری می‌کند."
+    },
+    {
+      "fr": "l'escamotage",
+      "fa": "غیب کردن، ناپدیدسازی",
+      "emoji": "💨",
+      "difficulty": 5,
+      "ex": "L'escamotage du pigeon exige un mouvement de poignet parfait.",
+      "ex_fa": "غیب کردن کبوتر به حرکت مچ دست بی‌نقصی نیاز دارد."
+    },
+    {
+      "fr": "le chapeau",
+      "fa": "کلاه (معمولاً سیلندری)",
+      "emoji": "🎩",
+      "difficulty": 2,
+      "ex": "Le magicien plonge sa main dans le chapeau vide pour en sortir une colombe.",
+      "ex_fa": "شعبده‌باز دستش را در کلاه خالی فرو می‌برد تا کبوتری بیرون بیاورد."
+    },
+    {
+      "fr": "la baguette",
+      "fa": "چوب جادو",
+      "emoji": "🪄",
+      "difficulty": 3,
+      "ex": "Il frappe la boîte trois fois avec sa baguette magique.",
+      "ex_fa": "او با چوب جادوی خود سه بار به جعبه ضربه می‌زند."
+    },
+    {
+      "fr": "le lapin",
+      "fa": "خرگوش",
+      "emoji": "🐇",
+      "difficulty": 2,
+      "ex": "Le classique lapin blanc sortant du chapeau est un cliché de la magie.",
+      "ex_fa": "خرگوش سفید کلاسیک که از کلاه بیرون می‌آید یک کلیشه در شعبده‌بازی است."
+    },
+    {
+      "fr": "le trucage",
+      "fa": "ترفند، حقه",
+      "emoji": "🤫",
+      "difficulty": 4,
+      "ex": "Le trucage de la boîte à double fond reste invisible pour le public.",
+      "ex_fa": "ترفند جعبه دوجداره برای تماشاگران نامرئی باقی می‌ماند."
+    },
+    {
+      "fr": "le spectateur",
+      "fa": "تماشاگر",
+      "emoji": "👁️",
+      "difficulty": 3,
+      "ex": "Le magicien choisit un spectateur au hasard pour l'assister sur scène.",
+      "ex_fa": "شعبده‌باز یک تماشاگر را تصادفی برای کمک روی صحنه انتخاب می‌کند."
+    },
+    {
+      "fr": "le mentaliste",
+      "fa": "ذهن‌خوان",
+      "emoji": "🧠",
+      "difficulty": 4,
+      "ex": "Le mentaliste prétend lire dans les pensées et deviner les numéros.",
+      "ex_fa": "ذهن‌خوان ادعا می‌کند افکار را می‌خواند و اعداد را حدس می‌زند."
+    },
+    {
+      "fr": "la télépathie",
+      "fa": "تله‌پاتی، ذهن‌خوانی",
+      "emoji": "📡",
+      "difficulty": 4,
+      "ex": "Le duo présente un numéro de télépathie où la devineresse a les yeux bandés.",
+      "ex_fa": "این گروه شماره‌ای از تله‌پاتی ارائه می‌دهند که در آن پیشگو چشمانش بسته است."
+    },
+    {
+      "fr": "le secret",
+      "fa": "راز",
+      "emoji": "🤐",
+      "difficulty": 3,
+      "ex": "Le serment des magiciens interdit de révéler le secret d'un tour à un profane.",
+      "ex_fa": "سوگند جادوگران افشای راز یک شعبده را برای افراد عادی ممنوع می‌کند."
+    },
+    {
+      "fr": "le rival",
+      "fa": "رقیب",
+      "emoji": "⚔️",
+      "difficulty": 3,
+      "ex": "La jalousie entre les deux magiciens les pousse à créer des illusions mortelles.",
+      "ex_fa": "حسادت بین دو شعبده‌باز آن‌ها را به خلق توهمات مرگبار سوق می‌دهد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le duel des ombres",
+      "text": "Robert Angier et Alfred Borden sont deux jeunes prodiges de la {{BLANK_1}} à Londres. Ils commencent comme assistants, mais deviennent vite des {{BLANK_2}}s célèbres. Chaque soir, ils présentent un nouveau {{BLANK_3}} pour éblouir le {{BLANK_10}}. Angier, en véritable {{BLANK_4}}, excelle dans la manipulation rapide des cartes. Borden préfère les grandes illusions, comme l'{{BLANK_5}} d'un homme enfermé dans un coffre. Sur scène, Angier porte un haut-de-forme, ce {{BLANK_6}} noir d'où il sort parfois un {{BLANK_8}} blanc à l'aide de sa {{BLANK_7}}. Cependant, chaque performance cache un {{BLANK_9}} ingénieux, une trappe ou un miroir. Leur amitié se transforme en une guerre impitoyable quand l'un d'eux vole le {{BLANK_13}} de l'autre. Ce {{BLANK_14}} obsédant pousse Borden à inventer un numéro de {{BLANK_11}} extraordinaire, simulant la {{BLANK_12}} pour deviner les pensées les plus intimes. Cette rivalité toxique les conduira au bord de la folie et du crime, prouvant que le véritable sacrifice est le prix ultime de l'art de l'illusion.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "magie",
+          "options": [
+            "magie",
+            "illusionniste",
+            "tour",
+            "prestidigitateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "illusionnistes",
+          "options": [
+            "illusionnistes",
+            "escamotage",
+            "chapeau",
+            "baguette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tour",
+          "options": [
+            "tour",
+            "lapin",
+            "trucage",
+            "spectateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "prestidigitateur",
+          "options": [
+            "prestidigitateur",
+            "mentaliste",
+            "télépathie",
+            "secret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "escamotage",
+          "options": [
+            "escamotage",
+            "rival",
+            "magie",
+            "illusionniste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "chapeau",
+          "options": [
+            "chapeau",
+            "tour",
+            "prestidigitateur",
+            "escamotage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "baguette",
+          "options": [
+            "baguette",
+            "lapin",
+            "trucage",
+            "spectateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "lapin",
+          "options": [
+            "lapin",
+            "mentaliste",
+            "télépathie",
+            "secret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "trucage",
+          "options": [
+            "trucage",
+            "rival",
+            "magie",
+            "illusionniste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "spectateur",
+          "options": [
+            "spectateur",
+            "tour",
+            "prestidigitateur",
+            "escamotage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "mentalisme",
+          "options": [
+            "mentalisme",
+            "chapeau",
+            "baguette",
+            "lapin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "télépathie",
+          "options": [
+            "télépathie",
+            "trucage",
+            "spectateur",
+            "rival"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "secret",
+          "options": [
+            "secret",
+            "magie",
+            "illusionniste",
+            "tour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "rival",
+          "options": [
+            "rival",
+            "prestidigitateur",
+            "escamotage",
+            "chapeau"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le prix du sacrifice",
+      "inspiration": "Le Prestige (Christopher Nolan, 2006)",
+      "text": "À peine Angier eut-il ouvert le carnet relié en cuir qu'il comprit que la {{BLANK_1}} n'était qu'un mensonge magnifique, une cicatrice sur la réalité. Lui, l'aristocrate de la scène, avait passé sa vie à traquer son {{BLANK_14}}, ce génie des bas-fonds qui exécutait le {{BLANK_3}} de l'homme transporté avec une perfection insultante. Angier, bien que brillant {{BLANK_4}}, manquait de cette aura mystique qui fascinait le {{BLANK_10}}. Il avait commencé par de simples apparitions, tirant un {{BLANK_8}} effrayé de son {{BLANK_6}} d'un coup sec de {{BLANK_7}}, mais il voulait l'impossible. Il voulait maîtriser l'{{BLANK_5}} absolu, faire disparaître non pas une colombe, mais un homme. Chaque {{BLANK_9}} mécanique qu'il achetait à Tesla coûtait une fortune, mais c'était le prix pour écraser son ennemi. Borden, de son côté, vivait son art jusqu'à l'os, utilisant la {{BLANK_12}} simulée par un faux {{BLANK_11}} pour deviner les pensées les plus sombres. Mais le véritable {{BLANK_13}} de Borden n'était pas écrit dans le carnet, il était gravé dans sa propre chair. Car le public, avide de sang et de mystère, ne se laisse tromper que si l'{{BLANK_2}} accepte de sacrifier une partie de son âme, prouvant que la plus grande illusion n'est pas celle qu'on voit sur scène, mais celle qu'on accepte de vivre dans l'ombre.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "magie",
+          "options": [
+            "magie",
+            "illusionniste",
+            "tour",
+            "prestidigitateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "illusionniste",
+          "options": [
+            "illusionniste",
+            "escamotage",
+            "chapeau",
+            "baguette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tour",
+          "options": [
+            "tour",
+            "lapin",
+            "trucage",
+            "spectateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "prestidigitateur",
+          "options": [
+            "prestidigitateur",
+            "mentaliste",
+            "télépathie",
+            "secret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "escamotage",
+          "options": [
+            "escamotage",
+            "rival",
+            "magie",
+            "illusionniste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "chapeau",
+          "options": [
+            "chapeau",
+            "tour",
+            "prestidigitateur",
+            "escamotage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "baguette",
+          "options": [
+            "baguette",
+            "lapin",
+            "trucage",
+            "spectateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "lapin",
+          "options": [
+            "lapin",
+            "mentaliste",
+            "télépathie",
+            "secret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "trucage",
+          "options": [
+            "trucage",
+            "rival",
+            "magie",
+            "illusionniste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "spectateur",
+          "options": [
+            "spectateur",
+            "tour",
+            "prestidigitateur",
+            "escamotage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "mentaliste",
+          "options": [
+            "mentaliste",
+            "chapeau",
+            "baguette",
+            "lapin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "télépathie",
+          "options": [
+            "télépathie",
+            "trucage",
+            "spectateur",
+            "rival"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "secret",
+          "options": [
+            "secret",
+            "magie",
+            "illusionniste",
+            "tour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "rival",
+          "options": [
+            "rival",
+            "prestidigitateur",
+            "escamotage",
+            "chapeau"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Magie et illusionnisme",
+    "title_fa": "آزمون : شعبده‌بازی و تردستی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art du spectacle qui consiste à créer des illusions et à simuler des phénomènes surnaturels est la ____.",
+        "options": [
+          "magie",
+          "illusionniste",
+          "tour",
+          "prestidigitateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر ایجاد توهم و پدیده‌های فراطبیعی = magie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artiste de spectacle qui réalise des grandes illusions (disparitions, lévitations) est l'____.",
+        "options": [
+          "illusionniste",
+          "escamotage",
+          "chapeau",
+          "baguette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنرمند توهمات بزرگ = illusionniste."
+      },
+      {
+        "type": "mcq",
+        "question": "L'effet magique ou la performance spécifique réalisée par le magicien pour divertir est le ____.",
+        "options": [
+          "tour",
+          "lapin",
+          "trucage",
+          "spectateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اثر یا اجرای جادویی = tour."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artiste spécialisé dans la manipulation ultra-rapide et discrète des petits objets (cartes, pièces) est le ____.",
+        "options": [
+          "prestidigitateur",
+          "mentaliste",
+          "télépathie",
+          "secret"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص دستکاری سریع اشیاء کوچک = prestidigitateur."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique ou l'action de faire disparaître un objet ou un animal aux yeux du public est l'____.",
+        "options": [
+          "escamotage",
+          "rival",
+          "magie",
+          "illusionniste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک ناپدید کردن اشیاء = escamotage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le couvre-chef, souvent haut-de-forme, utilisé comme accessoire classique pour en faire sortir des objets est le ____.",
+        "options": [
+          "chapeau",
+          "tour",
+          "prestidigitateur",
+          "escamotage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلاه استوانه‌ای شعبده‌باز = chapeau."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit bâton décoré que le magicien utilise pour guider l'attention ou toucher ses accessoires est la ____.",
+        "options": [
+          "baguette",
+          "lapin",
+          "trucage",
+          "spectateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چوب کوچک جادویی = baguette."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal emblématique et traditionnel que le magicien fait apparaître de son chapeau est le ____.",
+        "options": [
+          "lapin",
+          "mentaliste",
+          "télépathie",
+          "secret"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوان نمادین شعبده‌بازی = lapin."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mécanisme caché, la ruse ou l'astuce technique qui rend l'illusion possible est le ____.",
+        "options": [
+          "trucage",
+          "rival",
+          "magie",
+          "illusionniste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانیزم پنهان یا ترفند = trucage."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne du public qui assiste au spectacle et que le magicien tente de tromper est le ____.",
+        "options": [
+          "spectateur",
+          "tour",
+          "prestidigitateur",
+          "escamotage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص حاضر در تماشاگران = spectateur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artiste qui simule des pouvoirs psychiques comme la lecture de pensée ou la suggestion est le ____.",
+        "options": [
+          "mentaliste",
+          "chapeau",
+          "baguette",
+          "lapin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنرمند ذهن‌خوان = mentaliste."
+      },
+      {
+        "type": "mcq",
+        "question": "La capacité simulée de communiquer par la pensée ou de deviner ce que quelqu'un d'autre pense est la ____.",
+        "options": [
+          "télépathie",
+          "trucage",
+          "spectateur",
+          "rival"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارتباط از طریق ذهن = télépathie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'explication cachée d'un tour de magie, que le magicien s'engage à ne jamais révéler, est le ____.",
+        "options": [
+          "secret",
+          "magie",
+          "illusionniste",
+          "tour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توضیح پنهان شعبده = secret."
+      },
+      {
+        "type": "mcq",
+        "question": "L'autre magicien avec lequel on est en compétition directe et souvent féroce est le ____.",
+        "options": [
+          "rival",
+          "prestidigitateur",
+          "escamotage",
+          "chapeau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رقیب شعبده‌باز = rival."
+      },
+      {
+        "type": "binary",
+        "question": "La prestidigitation repose principalement sur des machines géantes et des effets spéciaux pyrotechniques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تردستی (prestidigitation) بر مهارت دست و سرعت عمل در دستکاری اشیاء کوچک متکی است."
+      },
+      {
+        "type": "binary",
+        "question": "L'escamotage désigne l'action de faire disparaître subtilement un objet ou un être vivant.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. escamotage به معنای غیب کردن و ناپدیدسازی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le mentalisme est une branche de la magie qui utilise de vrais pouvoirs surnaturels et paranormaux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ذهن‌خوانی (mentalisme) یک هنر نمایشی است که از تکنیک‌های روان‌شناختی و ترفند استفاده می‌کند، نه قدرت واقعی."
+      },
+      {
+        "type": "binary",
+        "question": "Le trucage désigne l'astuce technique ou le mécanisme caché qui permet de réaliser l'illusion.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. trucage ترفند یا حقه پنهانی است که توهم را ممکن می‌سازد."
+      },
+      {
+        "type": "binary",
+        "question": "Un tour de magie est composé de trois actes : la promesse, le tour (ou le virage) et le prestige.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. این ساختار کلاسیک سه‌گانه در شعبده‌بازی (به ویژه در فیلم The Prestige) مطرح است."
+      },
+      {
+        "type": "binary",
+        "question": "Le spectateur est le partenaire du magicien qui connaît tous les secrets et l'aide à préparer le matériel.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. spectateur تماشاگر است و از رازها بی‌خبر است؛ به همکار شعبده‌باز complice می‌گویند."
+      }
+    ]
+  }
+}
