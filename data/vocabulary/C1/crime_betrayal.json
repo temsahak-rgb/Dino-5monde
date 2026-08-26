@@ -1,0 +1,714 @@
+{
+  "id": "crime_betrayal",
+  "level": "C1",
+  "theme": "Tribunal, crime, trahison",
+  "theme_fa": "دادگاه، جرم، جنایت و خیانت",
+  "icon": "⚖️",
+  "inspiration": "The Departed (Martin Scorsese, 2006)",
+  "words": [
+    {
+      "fr": "la trahison",
+      "fa": "خیانت",
+      "emoji": "🗡️",
+      "difficulty": 3,
+      "ex": "Sa trahison a coûté la vie à plusieurs de ses camarades.",
+      "ex_fa": "خیانت او به قیمت جان چندین تن از هم‌رزمانش تمام شد."
+    },
+    {
+      "fr": "le parjure",
+      "fa": "سوگندشکنی، شهادت دروغ در دادگاه",
+      "emoji": "🤚",
+      "difficulty": 5,
+      "ex": "Le témoin a commis un parjure devant la cour d'assises.",
+      "ex_fa": "شاهد در دادگاه کیفری مرتکب سوگندشکنی شد."
+    },
+    {
+      "fr": "la subornation",
+      "fa": "تطمیع (خریدن شاهد یا مقام)",
+      "emoji": "💰",
+      "difficulty": 5,
+      "ex": "L'avocat a été accusé de subornation de témoins.",
+      "ex_fa": "وکیل به تطمیع شهود متهم شد."
+    },
+    {
+      "fr": "la forfaiture",
+      "fa": "خیانت در امانت یا وظیفه (توسط مقام)",
+      "emoji": "👮",
+      "difficulty": 5,
+      "ex": "Ce policier a été condamné pour forfaiture.",
+      "ex_fa": "این پلیس به خاطر خیانت در وظیفه محکوم شد."
+    },
+    {
+      "fr": "l'attentat",
+      "fa": "سوءقصد، ترور",
+      "emoji": "💣",
+      "difficulty": 3,
+      "ex": "L'attentat contre le ministre a échoué de justesse.",
+      "ex_fa": "سوءقصد علیه وزیر به سختی ناکام ماند."
+    },
+    {
+      "fr": "le guet-apens",
+      "fa": "تله، کمین",
+      "emoji": "🪤",
+      "difficulty": 4,
+      "ex": "La victime est tombée dans un guet-apens en rentrant chez elle.",
+      "ex_fa": "قربانی در راه بازگشت به خانه در یک کمین گرفتار شد."
+    },
+    {
+      "fr": "la récidive",
+      "fa": "تکرار جرم",
+      "emoji": "🔁",
+      "difficulty": 4,
+      "ex": "En cas de récidive, la peine sera doublée.",
+      "ex_fa": "در صورت تکرار جرم، مجازات دو برابر خواهد شد."
+    },
+    {
+      "fr": "la cavale",
+      "fa": "فرار از دست پلیس",
+      "emoji": "🏃",
+      "difficulty": 4,
+      "ex": "Le braqueur a été arrêté après trois mois de cavale.",
+      "ex_fa": "سارق مسلح پس از سه ماه فرار دستگیر شد."
+    },
+    {
+      "fr": "l'extorsion",
+      "fa": "اخاذی، زورگیری",
+      "emoji": "💵",
+      "difficulty": 4,
+      "ex": "Le gang vivait de l'extorsion des commerçants du quartier.",
+      "ex_fa": "گنگ از اخاذی از مغازه‌داران محله زندگی می‌کرد."
+    },
+    {
+      "fr": "la connivence",
+      "fa": "تبانی، همدستی پنهانی",
+      "emoji": "🤝",
+      "difficulty": 5,
+      "ex": "Il existe une connivence évidente entre ces deux hommes d'affaires.",
+      "ex_fa": "تبانی آشکاری بین این دو تاجر وجود دارد."
+    },
+    {
+      "fr": "la délation",
+      "fa": "خبرچینی، لو دادن",
+      "emoji": "👁️",
+      "difficulty": 5,
+      "ex": "Sous le régime totalitaire, la délation était encouragée par l'État.",
+      "ex_fa": "در رژیم توتالیتر، خبرچینی توسط دولت تشویق می‌شد."
+    },
+    {
+      "fr": "l'exaction",
+      "fa": "ظلم، اخاذی و غارت (توسط مقام)",
+      "emoji": "🔥",
+      "difficulty": 5,
+      "ex": "Les exactions commises par l'armée ont été documentées par l'ONU.",
+      "ex_fa": "ظلم‌ها و غارت‌های ارتش توسط سازمان ملل مستند شد."
+    },
+    {
+      "fr": "la vendetta",
+      "fa": "انتقام‌جویی خونین و طولانی",
+      "emoji": "🩸",
+      "difficulty": 4,
+      "ex": "Ces deux familles corses se livrent une vendetta depuis trois générations.",
+      "ex_fa": "این دو خانواده کرسی سه نسل است که درگیر انتقام‌جویی خونین هستند."
+    },
+    {
+      "fr": "le cartel",
+      "fa": "کارتل، باند تبهکار",
+      "emoji": "🏢",
+      "difficulty": 4,
+      "ex": "Le cartel de la drogue contrôle toute la région côtière.",
+      "ex_fa": "کارتل مواد مخدر کل منطقه ساحلی را کنترل می‌کند."
+    },
+    {
+      "fr": "l'omerta",
+      "fa": "قانون سکوت",
+      "emoji": "🤐",
+      "difficulty": 4,
+      "ex": "Les témoins refusent de parler par peur, c'est l'omerta.",
+      "ex_fa": "شهود از ترس حاضر به صحبت نیستند، این قانون سکوت است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'infiltré",
+      "title_fa": "نفوذی",
+      "text": "Colin travaille pour la police, mais il infiltre un grand {{BLANK_1}} de la drogue. Son patron est Costello, un criminel dangereux. Un jour, Costello organise un {{BLANK_2}} pour éliminer un rival. Colin doit participer, sinon il sera soupçonné de {{BLANK_3}} envers le groupe. Pendant l'opération, il cache une arme pour éviter un {{BLANK_4}} mortel. De retour au commissariat, Colin rencontre son vrai chef. Il lui avoue qu'il a dû commettre une {{BLANK_5}} en cachant des preuves. Son chef comprend, mais le prévient : en cas de {{BLANK_6}}, il ira en prison. Plus tard, Costello demande à Colin de s'occuper de l'{{BLANK_7}} d'un commerçant qui refuse de payer. Colin accepte, mais secrètement, il enregistre tout. Il sait que ces {{BLANK_8}} pourront servir au procès. Mais la police a aussi une taupe dans ses rangs. Colin découvre qu'un collègue travaille pour Costello. C'est une {{BLANK_9}} totale. Lors du procès, un témoin fait un faux serment. C'est un {{BLANK_10}} évident, probablement dû à une {{BLANK_11}} par l'avocat de la défense. L'{{BLANK_12}} règne dans la salle : personne n'ose parler, même les journalistes. Colin comprend que le système entier est pourri. Il décide de fuir, entamant une longue {{BLANK_13}} pour échapper aux deux camps. Mais avant de partir, il laisse un dossier qui prouve la {{BLANK_14}} entre les juges et les criminels. Cette {{BLANK_15}} ne finira que par sa mort ou celle de ses ennemis.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cartel",
+          "options": [
+            "cartel",
+            "groupe",
+            "syndicat",
+            "club"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "guet-apens",
+          "options": [
+            "guet-apens",
+            "rendez-vous",
+            "piège",
+            "réunion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "trahison",
+          "options": [
+            "trahison",
+            "fidélité",
+            "amitié",
+            "loyauté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "attentat",
+          "options": [
+            "attentat",
+            "accident",
+            "drame",
+            "incident"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "forfaiture",
+          "options": [
+            "forfaiture",
+            "erreur",
+            "faute",
+            "crime"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "récidive",
+          "options": [
+            "récidive",
+            "première",
+            "erreur",
+            "faute"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "extorsion",
+          "options": [
+            "extorsion",
+            "aide",
+            "don",
+            "prêt"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "exactions",
+          "options": [
+            "exactions",
+            "actions",
+            "gestes",
+            "paroles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "connivence",
+          "options": [
+            "connivence",
+            "opposition",
+            "guerre",
+            "haine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "parjure",
+          "options": [
+            "parjure",
+            "serment",
+            "vérité",
+            "mensonge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "subornation",
+          "options": [
+            "subornation",
+            "menace",
+            "pression",
+            "peur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "omerta",
+          "options": [
+            "omerta",
+            "parole",
+            "discussion",
+            "débat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "cavale",
+          "options": [
+            "cavale",
+            "fuite",
+            "voyage",
+            "marche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "connivence",
+          "options": [
+            "connivence",
+            "haine",
+            "guerre",
+            "opposition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "vendetta",
+          "options": [
+            "vendetta",
+            "paix",
+            "amitié",
+            "histoire"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les rats de South Boston",
+      "title_fa": "موش‌های بوستون جنوبی",
+      "inspiration": "The Departed (Martin Scorsese, 2006)",
+      "text": "À peine l'aube eut-elle point sur les docks de South Boston que Billy Costigan comprit que cette journée serait la dernière. Trois ans qu'il vivait dans la peau d'un autre, trois ans qu'il respirait la poudre et le sang pour le compte de Frank Costello, ce parrain qui régnait sur la ville comme un monarque déchu. Billy avait infiltré le {{BLANK_1}} avec la bénédiction de la police d'État, mais à force de jouer les tueurs, il sentait sa propre identité s'effriter. Ce matin-là, Costello l'avait convoqué dans un entrepôt désaffecté. L'air y était lourd, chargé de cette {{BLANK_2}} pesante qui précède les exécutions. « Billy, mon garçon, » avait dit le vieux criminel en allumant un cigare, « j'ai appris qu'une taupe ronge notre belle organisation. » Billy avait senti son cœur se glacer. Autour de lui, les lieutenants de Costello observaient la scène avec cette {{BLANK_3}} muette propre aux tueurs professionnels. Personne ne parlait, personne ne bougeait. C'était l'{{BLANK_4}} dans toute sa splendeur, cette loi du silence qui protégeait les coupables et condamnait les innocents. Costello poursuivit : « Quelqu'un ici me trahit. Et la {{BLANK_5}} est le seul crime que je ne pardonne jamais. » Billy savait que Costello entretenait une {{BLANK_6}} avec certains hauts gradés de la police. Grâce à cette complicité, il connaissait chaque mouvement des forces de l'ordre. Mais Billy ignorait que la police, elle aussi, avait sa taupe dans ses rangs : Colin Sullivan, un jeune inspecteur ambitieux qui renseignait Costello en échange de promotions rapides. Ce jour-là, Costello avait préparé un {{BLANK_7}} minutieux. Il avait fait venir un petit dealer du quartier, accusé de vendre pour un clan rival. Le jeune homme tremblait, suppliant, jurant ses grands dieux qu'il était innocent. Mais Costello, d'un signe de tête, ordonna l'{{BLANK_8}}. Billy dut regarder, impassible, tandis qu'on abattait le gamin de trois balles dans la tête. Plus tard, au commissariat, Colin Sullivan examina les rapports. Il savait que Billy était l'infiltré. Il devait le dénoncer avant d'être découvert lui-même. Mais Billy, grâce à sa {{BLANK_9}}, avait déjà deviné l'identité de la taupe policière. Une course contre la montre s'engagea. Billy recueillit des preuves des {{BLANK_10}} commises par Costello et ses hommes : racket, meurtres, trafic d'armes. Il documenta aussi la {{BLANK_11}} de certains juges corrompus qui fermaient les yeux en échange de pots-de-vin. De son côté, Colin tenta une {{BLANK_12}} de témoins clés pour faire disparaître les preuves. Il menaça, acheta, fit disparaître. Mais Billy avait tout prévu. Il avait enregistré des conversations où Costello se vantait de ses crimes, où il évoquait sa {{BLANK_13}} personnelle avec Sullivan. Quand Billy transmit ces enregistrements à son supérieur, ce dernier fut assassiné dans un parking. Billy comprit alors qu'il était seul. Il entama une {{BLANK_14}} solitaire, traqué par les deux camps. Dans les rues de Boston, une guerre souterraine faisait rage, une véritable {{BLANK_15}} où chaque camp cherchait à éliminer l'autre. Et Billy, perdu entre deux mondes, savait que la vérité finirait par éclater, mais que le prix à payer serait son propre sang.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cartel",
+          "options": [
+            "cartel",
+            "groupe",
+            "syndicat",
+            "club"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "omerta",
+          "options": [
+            "omerta",
+            "parole",
+            "discussion",
+            "chaleur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "connivence",
+          "options": [
+            "connivence",
+            "haine",
+            "peur",
+            "colère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "omerta",
+          "options": [
+            "omerta",
+            "discussion",
+            "parole",
+            "débat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "trahison",
+          "options": [
+            "trahison",
+            "fidélité",
+            "amitié",
+            "loyauté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "connivence",
+          "options": [
+            "connivence",
+            "haine",
+            "guerre",
+            "opposition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "gnet-apens",
+          "options": [
+            "gnet-apens",
+            "rendez-vous",
+            "piège",
+            "réunion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "attentat",
+          "options": [
+            "attentat",
+            "exécution",
+            "meurtre",
+            "crime"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "sagacité",
+          "options": [
+            "sagacité",
+            "bêtise",
+            "lenteur",
+            "naïveté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "exactions",
+          "options": [
+            "exactions",
+            "actions",
+            "gestes",
+            "paroles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "forfaiture",
+          "options": [
+            "forfaiture",
+            "loyauté",
+            "honnêteté",
+            "droiture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "subornation",
+          "options": [
+            "subornation",
+            "menace",
+            "pression",
+            "peur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "connivence",
+          "options": [
+            "connivence",
+            "haine",
+            "guerre",
+            "opposition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "cavale",
+          "options": [
+            "cavale",
+            "fuite",
+            "voyage",
+            "marche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "vendetta",
+          "options": [
+            "vendetta",
+            "paix",
+            "amitié",
+            "histoire"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Crime organisé et trahison",
+    "title_fa": "آزمون : جرم سازمان‌یافته و خیانت",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Un espion vend les secrets de son pays à une puissance étrangère. Il commet une ____.",
+        "options": [
+          "trahison",
+          "fidélité",
+          "loyauté",
+          "amitié"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خیانت به کشور یا گروه = trahison."
+      },
+      {
+        "type": "mcq",
+        "question": "Devant le tribunal, le témoin jure de dire la vérité, mais ment volontairement pour protéger l'accusé. Il commet un ____.",
+        "options": [
+          "parjure",
+          "serment",
+          "mensonge",
+          "erreur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شکستن سوگند رسمی در دادگاه = parjure."
+      },
+      {
+        "type": "mcq",
+        "question": "Un avocat verse de l'argent à un témoin pour qu'il modifie sa déposition en faveur de son client. C'est un cas de ____.",
+        "options": [
+          "subornation",
+          "don",
+          "cadeau",
+          "aide"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تطمیع و خریدن شاهد یا مقام = subornation."
+      },
+      {
+        "type": "mcq",
+        "question": "Un haut fonctionnaire utilise ses pouvoirs pour favoriser illégalement une entreprise amie. Il commet une ____.",
+        "options": [
+          "forfaiture",
+          "erreur",
+          "faute",
+          "négligence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خیانت در وظیفه توسط مقام رسمی = forfaiture."
+      },
+      {
+        "type": "mcq",
+        "question": "Une bombe explose près du convoi du président. Heureusement, il n'est pas blessé. C'était un ____.",
+        "options": [
+          "attentat",
+          "accident",
+          "incident",
+          "drame"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حمله تروریستی یا سوءقصد = attentat."
+      },
+      {
+        "type": "mcq",
+        "question": "Les tueurs attendent leur victime dans une ruelle sombre et l'attaquent par surprise. C'est un ____.",
+        "options": [
+          "guet-apens",
+          "rendez-vous",
+          "piège",
+          "hasard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کمین و تله برای حمله غافلگیرانه = guet-apens."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce voleur a déjà été condamné trois fois pour des faits similaires. Le juge tient compte de sa ____ pour alourdir la peine.",
+        "options": [
+          "récidive",
+          "première",
+          "chance",
+          "malchance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکرار جرم پس از محکومیت قبلی = récidive."
+      },
+      {
+        "type": "mcq",
+        "question": "Le braqueur a réussi à s'échapper de prison et vit caché depuis six mois. Il est en ____.",
+        "options": [
+          "cavale",
+          "fuite",
+          "voyage",
+          "vacances"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرار و زندگی مخفیانه از دست پلیس = cavale."
+      },
+      {
+        "type": "mcq",
+        "question": "Des criminels menacent un commerçant de brûler sa boutique s'il ne leur verse pas une somme chaque mois. C'est de l'____.",
+        "options": [
+          "extorsion",
+          "aide",
+          "prêt",
+          "don"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گرفتن پول با تهدید و زور = extorsion."
+      },
+      {
+        "type": "mcq",
+        "question": "Ces deux hommes d'affaires prétendent être concurrents, mais en réalité ils s'entendent secrètement pour fixer les prix. Il y a ____ entre eux.",
+        "options": [
+          "connivence",
+          "haine",
+          "guerre",
+          "opposition"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "همدستی و تبانی پنهانی = connivence."
+      },
+      {
+        "type": "mcq",
+        "question": "Sous la dictature, les citoyens étaient encouragés à dénoncer leurs voisins au moindre soupçon. C'était l'époque de la ____.",
+        "options": [
+          "délation",
+          "solidarité",
+          "amitié",
+          "entraide"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خبرچینی و لو دادن دیگران = délation."
+      },
+      {
+        "type": "mcq",
+        "question": "Les soldats de cette milice pillent les villages, violent et torturent sans aucune punition. Ces ____ sont documentées par les ONG.",
+        "options": [
+          "exactions",
+          "actions",
+          "gestes",
+          "paroles"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ظلم‌ها و غارت‌های خشونت‌آمیز = exactions."
+      },
+      {
+        "type": "mcq",
+        "question": "En Corse, ces deux familles s'entretuent depuis cinquante ans pour venger un meurtre ancien. C'est une ____.",
+        "options": [
+          "vendetta",
+          "paix",
+          "amitié",
+          "histoire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انتقام‌جویی خونین و طولانی بین خانواده‌ها = vendetta."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette organisation criminelle contrôle le trafic de cocaïne dans toute l'Amérique latine. C'est un puissant ____.",
+        "options": [
+          "cartel",
+          "groupe",
+          "club",
+          "syndicat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازمان بزرگ تبهکاری (معمولاً مواد مخدر) = cartel."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans ce quartier mafieux, personne ne parle à la police par peur des représailles. C'est la loi du silence, l'____.",
+        "options": [
+          "omerta",
+          "parole",
+          "discussion",
+          "débat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قانون سکوت در برابر پلیس = omerta."
+      },
+      {
+        "type": "binary",
+        "question": "La forfaiture et la trahison désignent exactement le même crime.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "trahison خیانت به کشور یا گروه است، forfaiture خیانت در وظیفه توسط مقام رسمی."
+      },
+      {
+        "type": "binary",
+        "question": "Le parjure est un mensonge ordinaire sans conséquence juridique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "parjure جرم است و به معنای شهادت دروغ پس از سوگند رسمی در دادگاه."
+      },
+      {
+        "type": "binary",
+        "question": "La subornation consiste à menacer physiquement quelqu'un pour obtenir quelque chose.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "subornation یعنی تطمیع و خریدن با پول، نه تهدید فیزیکی."
+      },
+      {
+        "type": "binary",
+        "question": "L'omerta est une tradition sicilienne qui impose le silence face aux autorités.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، omerta ریشه در مافیای سیسیل دارد و به قانون سکوت اشاره می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Une vendetta désigne une réconciliation officielle entre deux familles ennemies.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. vendetta به معنای انتقام‌جویی خونین و طولانی است، نه آشتی."
+      }
+    ]
+  }
+}
