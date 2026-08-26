@@ -1,0 +1,680 @@
+{
+  "id": "astronomy_cosmos",
+  "level": "C1",
+  "theme": "Astronomie, cosmologie et exploration spatiale",
+  "theme_fa": "نجوم، کیهان‌شناسی و اکتشافات فضایی",
+  "icon": "🔭",
+  "inspiration": "Interstellar (Christopher Nolan, 2014)",
+  "words": [
+    {
+      "fr": "l'astronomie",
+      "fa": "نجوم",
+      "emoji": "🔭",
+      "difficulty": 3,
+      "ex": "L'astronomie est la plus ancienne des sciences naturelles.",
+      "ex_fa": "نجوم، قدیمی‌ترین علوم طبیعی است."
+    },
+    {
+      "fr": "la galaxie",
+      "fa": "کهکشان",
+      "emoji": "🌌",
+      "difficulty": 3,
+      "ex": "Notre galaxie, la Voie lactée, contient des milliards d'étoiles.",
+      "ex_fa": "کهکشان ما، راه شیری، میلیاردها ستاره دارد."
+    },
+    {
+      "fr": "l'étoile",
+      "fa": "ستاره",
+      "emoji": "⭐",
+      "difficulty": 3,
+      "ex": "Le Soleil est l'étoile la plus proche de la Terre.",
+      "ex_fa": "خورشید نزدیک‌ترین ستاره به زمین است."
+    },
+    {
+      "fr": "la nébuleuse",
+      "fa": "سحابی",
+      "emoji": "🌫️",
+      "difficulty": 5,
+      "ex": "La nébuleuse d'Orion est une pouponnière d'étoiles.",
+      "ex_fa": "سحابی جبار، مهدکودک ستاره‌هاست."
+    },
+    {
+      "fr": "le trou noir",
+      "fa": "سیاه‌چاله",
+      "emoji": "🕳️",
+      "difficulty": 4,
+      "ex": "Le trou noir supermassif avale tout ce qui passe à sa portée.",
+      "ex_fa": "سیاه‌چاله ابرجرم هر آنچه در دسترسش باشد را می‌بلعد."
+    },
+    {
+      "fr": "la supernova",
+      "fa": "ابرنواختر",
+      "emoji": "💥",
+      "difficulty": 5,
+      "ex": "La supernova libère plus d'énergie que le Soleil en toute sa vie.",
+      "ex_fa": "ابرنواختر انرژی بیشتری از تمام عمر خورشید آزاد می‌کند."
+    },
+    {
+      "fr": "l'exoplanète",
+      "fa": "سیاره فراخورشیدی",
+      "emoji": "🪐",
+      "difficulty": 5,
+      "ex": "Cette exoplanète pourrait abriter de l'eau liquide.",
+      "ex_fa": "این سیاره فراخورشیدی ممکن است آب مایع داشته باشد."
+    },
+    {
+      "fr": "l'astéroïde",
+      "fa": "سیارک",
+      "emoji": "☄️",
+      "difficulty": 4,
+      "ex": "L'astéroïde qui a frappé la Terre a causé l'extinction des dinosaures.",
+      "ex_fa": "سیارکی که به زمین برخورد کرد، باعث انقراض دایناسورها شد."
+    },
+    {
+      "fr": "la comète",
+      "fa": "ستاره دنباله‌دار",
+      "emoji": "☄️",
+      "difficulty": 3,
+      "ex": "La comète laisse derrière elle une queue de poussière brillante.",
+      "ex_fa": "ستاره دنباله‌دار دمی از گرد و غبار درخشان از خود به جا می‌گذارد."
+    },
+    {
+      "fr": "l'orbite",
+      "fa": "مدار",
+      "emoji": "🔄",
+      "difficulty": 4,
+      "ex": "La Lune suit une orbite elliptique autour de la Terre.",
+      "ex_fa": "ماه مداری بیضی‌شکل به دور زمین دارد."
+    },
+    {
+      "fr": "le télescope",
+      "fa": "تلسکوپ",
+      "emoji": "🔭",
+      "difficulty": 3,
+      "ex": "Le télescope spatial James Webb observe les confins de l'univers.",
+      "ex_fa": "تلسکوپ فضایی جیمز وب، اعماق جهان را رصد می‌کند."
+    },
+    {
+      "fr": "le big bang",
+      "fa": "مه‌بانگ",
+      "emoji": "💫",
+      "difficulty": 4,
+      "ex": "Le big bang marque la naissance de l'univers il y a 13,8 milliards d'années.",
+      "ex_fa": "مه‌بانگ، آغاز پیدایش جهان در ۱۳.۸ میلیارد سال پیش است."
+    },
+    {
+      "fr": "la constellation",
+      "fa": "صورت فلکی",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "La Grande Ourse est la constellation la plus facile à repérer.",
+      "ex_fa": "دب اکبر، آسان‌ترین صورت فلکی برای شناسایی است."
+    },
+    {
+      "fr": "le pulsar",
+      "fa": "پالسار (ستاره نوترونی چرخان)",
+      "emoji": "📡",
+      "difficulty": 5,
+      "ex": "Le pulsar émet des ondes radio à intervalles réguliers.",
+      "ex_fa": "پالسار امواج رادیویی را در فواصل منظم ساطع می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le voyage à travers le trou de ver",
+      "text": "Cooper, un ancien pilote de la NASA devenu fermier, vit sur une Terre mourante. Les récoltes s'étiolent à cause de tempêtes de poussière. Un jour, sa fille Murph découvre des coordonnées secrètes transmises par un {{BLANK_12}} lointain. Ces coordonnées mènent à une base secrète où le professeur Brand lui propose une mission spatiale. L'{{BLANK_1}} moderne a découvert un {{BLANK_5}} près de Saturne, une porte vers une autre {{BLANK_2}}. Cooper accepte de piloter le vaisseau Endurance. Sa mission : trouver une {{BLANK_7}} habitable pour sauver l'humanité. Il traverse le trou de ver et observe une {{BLANK_4}} magnifique où naissent de nouvelles étoiles. Chaque {{BLANK_3}} lointaine brille comme un phare dans l'obscurité. L'équipe visite plusieurs planètes, évitant de justesse les {{BLANK_8}}s qui croisent leur chemin. Sur une planète proche d'un {{BLANK_5}}, le temps s'écoule différemment : une heure équivaut à sept ans sur Terre. Ils découvrent qu'une {{BLANK_9}} glacée cache peut-être de l'eau sous sa surface. Le {{BLANK_11}} géant qu'ils utilisent capte les signaux faibles de ces mondes lointains. En étudiant les {{BLANK_13}}s, ils identifient les zones les plus prometteuses. Un {{BLANK_14}} voisin émet des signaux périodiques qui guident leur navigation. Cooper doit choisir entre rentrer voir ses enfants ou continuer la mission. Dans l'immensité cosmique née du {{BLANK_12}}, il comprend que l'amour est la seule force qui transcende les dimensions.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "astronomie",
+          "options": [
+            "astronomie",
+            "galaxie",
+            "étoile",
+            "nébuleuse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "galaxie",
+          "options": [
+            "galaxie",
+            "trou noir",
+            "supernova",
+            "exoplanète"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "étoile",
+          "options": [
+            "étoile",
+            "astéroïde",
+            "comète",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "nébuleuse",
+          "options": [
+            "nébuleuse",
+            "télescope",
+            "big bang",
+            "constellation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "trou noir",
+          "options": [
+            "trou noir",
+            "pulsar",
+            "astronomie",
+            "galaxie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "supernova",
+          "options": [
+            "supernova",
+            "étoile",
+            "comète",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "exoplanète",
+          "options": [
+            "exoplanète",
+            "astéroïde",
+            "télescope",
+            "big bang"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "astéroïdes",
+          "options": [
+            "astéroïdes",
+            "pulsars",
+            "constellations",
+            "nébuleuses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "comète",
+          "options": [
+            "comète",
+            "orbite",
+            "étoile",
+            "galaxie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "orbite",
+          "options": [
+            "orbite",
+            "trou noir",
+            "supernova",
+            "télescope"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "télescope",
+          "options": [
+            "télescope",
+            "big bang",
+            "constellation",
+            "pulsar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "big bang",
+          "options": [
+            "big bang",
+            "pulsar",
+            "étoile",
+            "astéroïde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "constellations",
+          "options": [
+            "constellations",
+            "trous noirs",
+            "comètes",
+            "orbites"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "pulsar",
+          "options": [
+            "pulsar",
+            "big bang",
+            "télescope",
+            "exoplanète"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'horizon des événements",
+      "inspiration": "Interstellar (Christopher Nolan, 2014)",
+      "text": "À peine Cooper eut-il franchi l'horizon des événements que le temps lui-même cessa d'être une rivière pour devenir un océan dont il pouvait voir toutes les vagues simultanément. Ce fermier devenu astronaute naviguait désormais dans les plis de l'{{BLANK_1}}, cette science qui, autrefois, n'était pour lui qu'un passe-temps d'enfant regardant les étoiles. Le {{BLANK_5}} de Gargantua l'avait happé, ce monstre cosmique dont la gravité déformait jusqu'à la lumière de chaque {{BLANK_3}} lointaine. Dans le silence assourdissant de l'espace, il avait vu la {{BLANK_4}} où les univers naissent comme des bulles de savon, où les {{BLANK_6}}s explosent en feux d'artifice cosmiques pour ensemencer le vide de nouveaux atomes. Son vaisseau Endurance traçait son {{BLANK_10}} entre les mondes, croisant des {{BLANK_8}}s errants et des {{BLANK_9}}s chevelues qui portaient la mémoire des origines. Le {{BLANK_11}} spatial, ce miroir géant tourné vers l'infini, lui avait révélé des {{BLANK_7}}s où la vie aurait pu éclore, perles rares dans l'immensité hostile. Chaque {{BLANK_2}} qu'il traversait était un archipel de milliards de soleils, et chaque {{BLANK_13}} dessinait dans la nuit les mythes des ancêtres. Un {{BLANK_14}} battait comme un cœur régulier dans l'obscurité, phare fidèle pour les marins de l'espace. Cooper comprit alors, dans la cinquième dimension, que le {{BLANK_12}} n'était pas seulement l'explosion primordiale : c'était le premier souffle de l'amour, cette force invisible qui relie un père à sa fille par-delà les années-lumière. Et quand il chuta dans la bibliothèque de l'enfance, il devint le fantôme de lui-même, poussant les livres pour murmurer à Murph que la science et le cœur ne font qu'un, que la gravité elle-même obéit à ceux qui savent aimer sans frontières.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "astronomie",
+          "options": [
+            "astronomie",
+            "galaxie",
+            "étoile",
+            "nébuleuse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "galaxie",
+          "options": [
+            "galaxie",
+            "trou noir",
+            "supernova",
+            "exoplanète"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "étoile",
+          "options": [
+            "étoile",
+            "astéroïde",
+            "comète",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "nébuleuse",
+          "options": [
+            "nébuleuse",
+            "télescope",
+            "big bang",
+            "constellation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "trou noir",
+          "options": [
+            "trou noir",
+            "pulsar",
+            "astronomie",
+            "galaxie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "supernova",
+          "options": [
+            "supernova",
+            "étoile",
+            "comète",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "exoplanètes",
+          "options": [
+            "exoplanètes",
+            "astéroïdes",
+            "télescopes",
+            "big bangs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "astéroïdes",
+          "options": [
+            "astéroïdes",
+            "pulsars",
+            "constellations",
+            "nébuleuses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "comètes",
+          "options": [
+            "comètes",
+            "orbites",
+            "étoiles",
+            "galaxies"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "orbite",
+          "options": [
+            "orbite",
+            "trou noir",
+            "supernova",
+            "télescope"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "télescope",
+          "options": [
+            "télescope",
+            "big bang",
+            "constellation",
+            "pulsar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "big bang",
+          "options": [
+            "big bang",
+            "pulsar",
+            "étoile",
+            "astéroïde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "constellation",
+          "options": [
+            "constellation",
+            "trou noir",
+            "comète",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "pulsar",
+          "options": [
+            "pulsar",
+            "big bang",
+            "télescope",
+            "exoplanète"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Astronomie et cosmos",
+    "title_fa": "آزمون : نجوم و کیهان",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie les astres, leur composition, leur mouvement et leur origine est l'____.",
+        "options": [
+          "astronomie",
+          "galaxie",
+          "étoile",
+          "nébuleuse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه اجرام آسمانی = astronomie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'immense ensemble d'étoiles, de gaz et de poussières liés par la gravité, comme la Voie lactée, est une ____.",
+        "options": [
+          "galaxie",
+          "trou noir",
+          "supernova",
+          "exoplanète"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه عظیم ستاره‌ها و گاز = galaxie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'astre lumineux qui produit sa propre énergie par fusion nucléaire, comme le Soleil, est une ____.",
+        "options": [
+          "étoile",
+          "astéroïde",
+          "comète",
+          "orbite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جرم درخشان با همجوشی هسته‌ای = étoile."
+      },
+      {
+        "type": "mcq",
+        "question": "Le nuage interstellaire de gaz et de poussières où naissent les nouvelles étoiles est une ____.",
+        "options": [
+          "nébuleuse",
+          "télescope",
+          "big bang",
+          "constellation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابر بین‌ستاره‌ای و زادگاه ستاره‌ها = nébuleuse."
+      },
+      {
+        "type": "mcq",
+        "question": "La région de l'espace où la gravité est si intense que même la lumière ne peut s'en échapper est le ____.",
+        "options": [
+          "trou noir",
+          "pulsar",
+          "astronomie",
+          "galaxie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "منطقه‌ای که نور هم از آن فرار نمی‌کند = trou noir."
+      },
+      {
+        "type": "mcq",
+        "question": "L'explosion cataclysmique qui marque la mort d'une étoile massive, libérant une énergie colossale, est une ____.",
+        "options": [
+          "supernova",
+          "étoile",
+          "comète",
+          "orbite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انفجار عظیم پایان عمر ستاره = supernova."
+      },
+      {
+        "type": "mcq",
+        "question": "Une planète qui orbite autour d'une autre étoile que le Soleil est une ____.",
+        "options": [
+          "exoplanète",
+          "astéroïde",
+          "télescope",
+          "big bang"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیاره‌ای به دور ستاره‌ای غیر از خورشید = exoplanète."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit corps rocheux qui orbite autour du Soleil, principalement dans la ceinture entre Mars et Jupiter, est un ____.",
+        "options": [
+          "astéroïde",
+          "pulsar",
+          "constellation",
+          "nébuleuse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جرم کوچک سنگی در مدار خورشید = astéroïde."
+      },
+      {
+        "type": "mcq",
+        "question": "Le corps céleste composé de glace et de poussière qui développe une queue brillante en approchant du Soleil est une ____.",
+        "options": [
+          "comète",
+          "orbite",
+          "étoile",
+          "galaxie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جرم یخی با دم درخشان = comète."
+      },
+      {
+        "type": "mcq",
+        "question": "La trajectoire courbe qu'un corps céleste parcourt autour d'un autre sous l'effet de la gravité est l'____.",
+        "options": [
+          "orbite",
+          "trou noir",
+          "supernova",
+          "télescope"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسیر منحنی جرم آسمانی = orbite."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument optique qui capte la lumière des astres lointains pour les observer en détail est le ____.",
+        "options": [
+          "télescope",
+          "big bang",
+          "constellation",
+          "pulsar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار نوری رصد اجرام دوردست = télescope."
+      },
+      {
+        "type": "mcq",
+        "question": "L'explosion primordiale qui marque la naissance de l'univers il y a environ 13,8 milliards d'années est le ____.",
+        "options": [
+          "big bang",
+          "pulsar",
+          "étoile",
+          "astéroïde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انفجار آغازین جهان = big bang."
+      },
+      {
+        "type": "mcq",
+        "question": "Le groupe apparent d'étoiles qui forme une figure imaginaire dans le ciel nocturne est une ____.",
+        "options": [
+          "constellation",
+          "trou noir",
+          "comète",
+          "orbite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گروه ستاره‌ها با شکل خیالی = constellation."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étoile à neutrons en rotation rapide qui émet des faisceaux d'ondes radio à intervalles réguliers est un ____.",
+        "options": [
+          "pulsar",
+          "big bang",
+          "télescope",
+          "exoplanète"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ستاره نوترونی چرخان با امواج منظم = pulsar."
+      },
+      {
+        "type": "binary",
+        "question": "Une étoile et une planète produisent toutes deux leur propre lumière par fusion nucléaire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. فقط ستاره‌ها نور تولید می‌کنند؛ سیارات نور ستاره را بازتاب می‌دهند."
+      },
+      {
+        "type": "binary",
+        "question": "Un trou noir est une région de l'espace dont même la lumière ne peut s'échapper en raison d'une gravité extrême.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سیاه‌چاله گرانشی چنان قوی دارد که نور هم نمی‌تواند از آن فرار کند."
+      },
+      {
+        "type": "binary",
+        "question": "Une supernova est l'explosion finale d'une étoile massive qui disperse ses éléments dans l'espace.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ابرنواختر انفجار پایانی ستاره پرجرم است."
+      },
+      {
+        "type": "binary",
+        "question": "Le big bang désigne l'explosion d'une étoile géante dans notre galaxie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. مه‌بانگ (big bang) انفجار آغازین کل جهان است، نه یک ستاره خاص."
+      },
+      {
+        "type": "binary",
+        "question": "Une exoplanète est une planète qui orbite autour d'une étoile autre que notre Soleil.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سیاره فراخورشیدی به دور ستاره‌ای غیر از خورشید می‌چرخد."
+      },
+      {
+        "type": "binary",
+        "question": "Une comète est un astéroïde qui a perdu toute sa glace et ne développe jamais de queue.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ستاره دنباله‌دار از یخ و گرد و غبار تشکیل شده و هنگام نزدیک شدن به خورشید دم درخشان ایجاد می‌کند."
+      }
+    ]
+  }
+}
