@@ -1,0 +1,680 @@
+{
+  "id": "glassmaking_stained_glass",
+  "level": "C1",
+  "theme": "Verrerie, vitrail et artisanat du verre",
+  "theme_fa": "شیشه‌گری، ویترای و هنر کار با شیشه",
+  "icon": "🏺",
+  "inspiration": "Les Piliers de la Terre et l'Art de Murano",
+  "words": [
+    {
+      "fr": "le verre",
+      "fa": "شیشه",
+      "emoji": "🥃",
+      "difficulty": 2,
+      "ex": "Le verre de Venise est réputé pour sa finesse et sa pureté.",
+      "ex_fa": "شیشه ونیز به خاطر ظرافت و خلوصش مشهور است."
+    },
+    {
+      "fr": "le vitrail",
+      "fa": "ویترای، شیشه رنگی",
+      "emoji": "🪟",
+      "difficulty": 4,
+      "ex": "Le vitrail de la cathédrale raconte la vie des saints en lumière.",
+      "ex_fa": "ویترای کلیسای جامع زندگی قدیسین را در نور روایت می‌کند."
+    },
+    {
+      "fr": "le souffleur",
+      "fa": "دمنده شیشه",
+      "emoji": "🌬️",
+      "difficulty": 4,
+      "ex": "Le souffleur de verre façonne la matière incandescente avec son souffle.",
+      "ex_fa": "دمنده شیشه، ماده گداخته را با نفس خود شکل می‌دهد."
+    },
+    {
+      "fr": "le four",
+      "fa": "کوره",
+      "emoji": "🔥",
+      "difficulty": 2,
+      "ex": "Le four à verre doit atteindre plus de mille degrés pour fondre la silice.",
+      "ex_fa": "کوره شیشه‌گری باید برای ذوب سیلیس به بیش از هزار درجه برسد."
+    },
+    {
+      "fr": "la canne",
+      "fa": "لوله دمش",
+      "emoji": "🎺",
+      "difficulty": 4,
+      "ex": "Le verrier fait tourner la canne pour que la masse ne s'affaisse pas.",
+      "ex_fa": "شیشه‌گر لوله دمش را می‌چرخاند تا توده شیشه فرو نریزد."
+    },
+    {
+      "fr": "le cristal",
+      "fa": "کریستال",
+      "emoji": "💎",
+      "difficulty": 3,
+      "ex": "Le cristal contient du plomb qui lui donne une résonance musicale.",
+      "ex_fa": "کریستال حاوی سرب است که به آن طنین موسیقایی می‌دهد."
+    },
+    {
+      "fr": "la fusion",
+      "fa": "ذوب",
+      "emoji": "🌋",
+      "difficulty": 4,
+      "ex": "La fusion des différents oxydes métalliques crée les couleurs du verre.",
+      "ex_fa": "ذوب اکسیدهای فلزی مختلف، رنگ‌های شیشه را ایجاد می‌کند."
+    },
+    {
+      "fr": "le plomb",
+      "fa": "سرب",
+      "emoji": "⬛",
+      "difficulty": 3,
+      "ex": "Les baguettes de plomb maintiennent les morceaux du vitrail ensemble.",
+      "ex_fa": "میله‌های سربی تکه‌های ویترای را کنار هم نگه می‌دارند."
+    },
+    {
+      "fr": "la transparence",
+      "fa": "شفافیت",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "La transparence du matériau permet à la lumière de traverser l'œuvre.",
+      "ex_fa": "شفافیت ماده اجازه می‌دهد نور از اثر عبور کند."
+    },
+    {
+      "fr": "le calice",
+      "fa": "جام",
+      "emoji": "🍷",
+      "difficulty": 4,
+      "ex": "Le calice en verre soufflé est utilisé pour les cérémonies religieuses.",
+      "ex_fa": "جام شیشه دمیده‌شده برای مراسم مذهبی استفاده می‌شود."
+    },
+    {
+      "fr": "la bulle",
+      "fa": "حباب",
+      "emoji": "🫧",
+      "difficulty": 2,
+      "ex": "Une bulle d'air prisonnière dans le verre raconte le souffle de l'artisan.",
+      "ex_fa": "حباب هوای محبوس در شیشه، نفس صنعتگر را روایت می‌کند."
+    },
+    {
+      "fr": "le maître verrier",
+      "fa": "استاد شیشه‌گر",
+      "emoji": "👨‍🎨",
+      "difficulty": 4,
+      "ex": "Le maître verrier transmet son savoir-faire ancestral à ses apprentis.",
+      "ex_fa": "استاد شیشه‌گر دانش اجدادی خود را به شاگردانش منتقل می‌کند."
+    },
+    {
+      "fr": "l'éclat",
+      "fa": "درخشش",
+      "emoji": "🌟",
+      "difficulty": 3,
+      "ex": "L'éclat du vitrail au coucher du soleil éblouit les fidèles.",
+      "ex_fa": "درخشش ویترای در غروب آفتاب، مؤمنان را خیره می‌کند."
+    },
+    {
+      "fr": "le sable",
+      "fa": "ماسه (سیلیس)",
+      "emoji": "⏳",
+      "difficulty": 3,
+      "ex": "Le sable de silice est l'ingrédient principal pour fabriquer le verre.",
+      "ex_fa": "ماسه سیلیسی ماده اصلی برای ساخت شیشه است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'atelier de Murano",
+      "text": "Marco est un jeune {{BLANK_3}} qui travaille dans une célèbre fabrique de {{BLANK_1}} à Murano. Chaque jour, il allume le {{BLANK_4}} qui atteint des températures extrêmes pour la {{BLANK_7}} du {{BLANK_14}} siliceux. Armé de sa longue {{BLANK_5}}, il cueille la matière incandescente. En soufflant, il crée une {{BLANK_11}} parfaite qui s'étire pour former un élégant {{BLANK_10}} en {{BLANK_6}} pur. Pour les églises, son père, un grand {{BLANK_12}}, dessine des cartons pour créer un magnifique {{BLANK_2}}. Il assemble les morceaux colorés avec des baguettes de {{BLANK_8}}. La {{BLANK_9}} du matériau permet à la lumière de traverser l'œuvre, lui donnant un {{BLANK_13}} divin quand le soleil se lève.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "verre",
+          "options": [
+            "verre",
+            "vitrail",
+            "souffleur",
+            "four"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "vitrail",
+          "options": [
+            "vitrail",
+            "canne",
+            "cristal",
+            "fusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "souffleur",
+          "options": [
+            "souffleur",
+            "plomb",
+            "transparence",
+            "calice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "four",
+          "options": [
+            "four",
+            "bulle",
+            "maître verrier",
+            "éclat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "canne",
+          "options": [
+            "canne",
+            "sable",
+            "verre",
+            "vitrail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "cristal",
+          "options": [
+            "cristal",
+            "souffleur",
+            "four",
+            "canne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "fusion",
+          "options": [
+            "fusion",
+            "plomb",
+            "transparence",
+            "calice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "plomb",
+          "options": [
+            "plomb",
+            "bulle",
+            "maître verrier",
+            "éclat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "transparence",
+          "options": [
+            "transparence",
+            "sable",
+            "verre",
+            "vitrail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "calice",
+          "options": [
+            "calice",
+            "souffleur",
+            "four",
+            "canne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "bulle",
+          "options": [
+            "bulle",
+            "cristal",
+            "fusion",
+            "plomb"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "maître verrier",
+          "options": [
+            "maître verrier",
+            "transparence",
+            "calice",
+            "bulle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "éclat",
+          "options": [
+            "éclat",
+            "sable",
+            "verre",
+            "vitrail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "sable",
+          "options": [
+            "sable",
+            "souffleur",
+            "four",
+            "canne"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le dompteur de lumière",
+      "inspiration": "L'Art du Vitrail Médiéval",
+      "text": "À peine le vieux {{BLANK_12}} eut-il ouvert les portes de la cathédrale que la lumière matinale vint frapper la grande rosace. Ce n'était pas qu'une simple fenêtre, mais un {{BLANK_2}} monumental, une bible de lumière et de {{BLANK_8}}. Il avait passé sa vie à dompter le {{BLANK_1}}, à le soumettre à la chaleur infernale du {{BLANK_4}} pour atteindre la {{BLANK_7}} parfaite. Avec sa {{BLANK_5}}, il avait capturé le souffle de l'homme pour en faire une {{BLANK_11}} figée dans le {{BLANK_6}} le plus pur. Mais c'est ici, dans la pénombre sacrée, que son art prenait tout son sens. La {{BLANK_9}} des pièces colorées transformait les rayons du soleil en prières visuelles, offrant un {{BLANK_13}} qui déchirait les ténèbres de l'âme. Il caressa le {{BLANK_10}} d'argent posé sur l'autel, se souvenant du {{BLANK_14}} des origines, comprenant qu'il n'avait jamais fait que sculpter la lumière pour qu'elle vienne, un jour, consoler les cœurs brisés.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "verre",
+          "options": [
+            "verre",
+            "vitrail",
+            "souffleur",
+            "four"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "vitrail",
+          "options": [
+            "vitrail",
+            "canne",
+            "cristal",
+            "fusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "souffleur",
+          "options": [
+            "souffleur",
+            "plomb",
+            "transparence",
+            "calice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "four",
+          "options": [
+            "four",
+            "bulle",
+            "maître verrier",
+            "éclat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "canne",
+          "options": [
+            "canne",
+            "sable",
+            "verre",
+            "vitrail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "cristal",
+          "options": [
+            "cristal",
+            "souffleur",
+            "four",
+            "canne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "fusion",
+          "options": [
+            "fusion",
+            "plomb",
+            "transparence",
+            "calice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "plomb",
+          "options": [
+            "plomb",
+            "bulle",
+            "maître verrier",
+            "éclat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "transparence",
+          "options": [
+            "transparence",
+            "sable",
+            "verre",
+            "vitrail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "calice",
+          "options": [
+            "calice",
+            "souffleur",
+            "four",
+            "canne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "bulle",
+          "options": [
+            "bulle",
+            "cristal",
+            "fusion",
+            "plomb"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "maître verrier",
+          "options": [
+            "maître verrier",
+            "transparence",
+            "calice",
+            "bulle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "éclat",
+          "options": [
+            "éclat",
+            "sable",
+            "verre",
+            "vitrail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "sable",
+          "options": [
+            "sable",
+            "souffleur",
+            "four",
+            "canne"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Verrerie et vitrail",
+    "title_fa": "آزمون : شیشه‌گری و ویترای",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le matériau dur, fragile et transparent obtenu par la fusion du sable est le ____.",
+        "options": [
+          "verre",
+          "vitrail",
+          "souffleur",
+          "four"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده سخت و شفاف حاصل از ذوب ماسه = verre."
+      },
+      {
+        "type": "mcq",
+        "question": "La composition artistique faite de morceaux de verre coloré assemblés, souvent dans les églises, est le ____.",
+        "options": [
+          "vitrail",
+          "canne",
+          "cristal",
+          "fusion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر شیشه‌های رنگی در کلیسا = vitrail."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artisan qui façonne le verre en fusion en soufflant de l'air à l'intérieur est le ____.",
+        "options": [
+          "souffleur",
+          "plomb",
+          "transparence",
+          "calice"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صنعتگری که با دمیدن شیشه را شکل می‌دهد = souffleur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enceinte chauffée à très haute température où l'on fond les matières premières est le ____.",
+        "options": [
+          "four",
+          "bulle",
+          "maître verrier",
+          "éclat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محفظه حرارتی ذوب مواد = four."
+      },
+      {
+        "type": "mcq",
+        "question": "Le long tube métallique creux utilisé par le verrier pour cueillir et souffler le verre est la ____.",
+        "options": [
+          "canne",
+          "sable",
+          "verre",
+          "vitrail"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لوله فلزی برای دمش شیشه = canne."
+      },
+      {
+        "type": "mcq",
+        "question": "Le verre de haute qualité, contenant du plomb et connu pour sa brillance et sa résonance, est le ____.",
+        "options": [
+          "cristal",
+          "souffleur",
+          "four",
+          "canne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیشه باکیفیت و سرب‌دار = cristal."
+      },
+      {
+        "type": "mcq",
+        "question": "Le passage de l'état solide à l'état liquide sous l'effet de la chaleur est la ____.",
+        "options": [
+          "fusion",
+          "plomb",
+          "transparence",
+          "calice"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تبدیل جامد به مایع بر اثر حرارت = fusion."
+      },
+      {
+        "type": "mcq",
+        "question": "Le métal malléable utilisé sous forme de baguettes pour sertir et assembler les pièces de vitrail est le ____.",
+        "options": [
+          "plomb",
+          "bulle",
+          "maître verrier",
+          "éclat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فلز نرم برای اتصال قطعات ویترای = plomb."
+      },
+      {
+        "type": "mcq",
+        "question": "La propriété d'un matériau qui laisse passer la lumière sans la diffuser est la ____.",
+        "options": [
+          "transparence",
+          "sable",
+          "verre",
+          "vitrail"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خاصیت عبور نور = transparence."
+      },
+      {
+        "type": "mcq",
+        "question": "La coupe évasée et souvent ornée, utilisée pour boire le vin lors des cérémonies, est le ____.",
+        "options": [
+          "calice",
+          "souffleur",
+          "four",
+          "canne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جام تشریفاتی = calice."
+      },
+      {
+        "type": "mcq",
+        "question": "La petite poche d'air sphérique qui peut rester prisonnière à l'intérieur du verre est la ____.",
+        "options": [
+          "bulle",
+          "cristal",
+          "fusion",
+          "plomb"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حباب هوای محبوس در شیشه = bulle."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artisan hautement qualifié qui dirige l'atelier et possède le savoir-faire suprême du verre est le ____.",
+        "options": [
+          "maître verrier",
+          "transparence",
+          "calice",
+          "bulle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استادکار ماهر شیشه‌گری = maître verrier."
+      },
+      {
+        "type": "mcq",
+        "question": "La lumière vive et brillante réfléchie par une surface polie ou illuminée est l'____.",
+        "options": [
+          "éclat",
+          "sable",
+          "verre",
+          "vitrail"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درخشش و تابش نور = éclat."
+      },
+      {
+        "type": "mcq",
+        "question": "La matière première granuleuse, composée principalement de silice, qui forme la base du verre est le ____.",
+        "options": [
+          "sable",
+          "souffleur",
+          "four",
+          "canne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده اولیه سیلیسی = sable."
+      },
+      {
+        "type": "binary",
+        "question": "Le plomb est utilisé en vitrerie pour souder et maintenir ensemble les morceaux de verre coloré.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سرب (plomb) برای اتصال و نگه داشتن قطعات شیشه رنگی استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La canne est un outil servant à polir la surface du verre une fois qu'il a refroidi.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. لوله دمش (canne) برای جمع‌آوری شیشه مذاب و دمیدن هوا به داخل آن استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La fusion est le processus de refroidissement rapide du verre pour le durcir.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. fusion به معنای ذوب شدن و تبدیل جامد به مایع بر اثر حرارت است."
+      },
+      {
+        "type": "binary",
+        "question": "Le cristal se distingue du verre ordinaire par l'ajout de plomb qui lui donne plus d'éclat.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کریستال حاوی اکسید سرب است که ضریب شکست نور و درخشش آن را افزایش می‌دهد."
+      },
+      {
+        "type": "binary",
+        "question": "Le vitrail est une technique de peinture sur toile utilisant des pigments transparents.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ویترای (vitrail) هنر چیدمان قطعات شیشه رنگی است، نه نقاشی روی بوم."
+      },
+      {
+        "type": "binary",
+        "question": "Le sable de silice est l'ingrédient principal et indispensable à la fabrication du verre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ماسه سیلیسی پایه اصلی تشکیل‌دهنده شیشه است."
+      }
+    ]
+  }
+}
