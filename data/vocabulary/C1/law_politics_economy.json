@@ -1,0 +1,517 @@
+{
+  "id": "law_politics_economy",
+  "level": "C1",
+  "theme": "Tribunal, politique, crime et économie",
+  "theme_fa": "دادگاه، سیاست، جرم و اقتصاد",
+  "icon": "🏛️",
+  "inspiration": "House of Cards (Beau Willimon / David Fincher, 2013-2018)",
+  "words": [
+    {
+      "fr": "le népotisme",
+      "fa": "خویشاوندسالاری",
+      "emoji": "👨‍👩‍👧",
+      "difficulty": 5,
+      "ex": "Le népotisme est fréquent dans les régimes autoritaires.",
+      "ex_fa": "خویشاوندسالاری در رژیم‌های استبدادی رایج است."
+    },
+    {
+      "fr": "la prévarication",
+      "fa": "سوءاستفاده از مقام",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "Le ministre a été condamné pour prévarication.",
+      "ex_fa": "وزیر به خاطر سوءاستفاده از مقام محکوم شد."
+    },
+    {
+      "fr": "le clientélisme",
+      "fa": "پارتی‌بازی سیاسی",
+      "emoji": "🤝",
+      "difficulty": 5,
+      "ex": "Le clientélisme fausse le jeu démocratique.",
+      "ex_fa": "پارتی‌بازی سیاسی، بازی دموکراتیک را مخدوش می‌کند."
+    },
+    {
+      "fr": "la gabegie",
+      "fa": "ولخرجی و بی‌نظمی مالی",
+      "emoji": "💸",
+      "difficulty": 5,
+      "ex": "La gabegie financière de cette entreprise a conduit à la faillite.",
+      "ex_fa": "ولخرجی مالی این شرکت منجر به ورشکستگی شد."
+    },
+    {
+      "fr": "l'oligarchie",
+      "fa": "الیگارشی (حکومت اقلیت)",
+      "emoji": "👑",
+      "difficulty": 4,
+      "ex": "La Russie post-soviétique est souvent qualifiée d'oligarchie.",
+      "ex_fa": "روسیه پس از شوروی اغلب به عنوان الیگارشی توصیف می‌شود."
+    },
+    {
+      "fr": "la kleptocratie",
+      "fa": "دزدسالاری",
+      "emoji": "🦹",
+      "difficulty": 5,
+      "ex": "Ce pays est devenu une kleptocratie où les dirigeants pillent les ressources.",
+      "ex_fa": "این کشور به دزدسالاری تبدیل شده که در آن رهبران منابع را غارت می‌کنند."
+    },
+    {
+      "fr": "le ploutocrate",
+      "fa": "ثروتمند صاحب قدرت",
+      "emoji": "💰",
+      "difficulty": 5,
+      "ex": "Ce ploutocrate finance plusieurs campagnes électorales.",
+      "ex_fa": "این ثروتمند صاحب قدرت، چندین کارزار انتخاباتی را تأمین مالی می‌کند."
+    },
+    {
+      "fr": "la concussion",
+      "fa": "اخاذی توسط مقامات",
+      "emoji": "💵",
+      "difficulty": 5,
+      "ex": "La concussion est un crime grave dans le code pénal.",
+      "ex_fa": "اخاذی توسط مقامات در قانون کیفری جرم سنگینی است."
+    },
+    {
+      "fr": "le favoritisme",
+      "fa": "پارتی‌بازی",
+      "emoji": "⭐",
+      "difficulty": 4,
+      "ex": "Le favoritisme dans l'attribution des marchés publics est illégal.",
+      "ex_fa": "پارتی‌بازی در واگذاری مناقصات عمومی غیرقانونی است."
+    },
+    {
+      "fr": "l'oligarque",
+      "fa": "الیگارش",
+      "emoji": "🏦",
+      "difficulty": 4,
+      "ex": "Les oligarques russes possèdent des fortunes colossales.",
+      "ex_fa": "الیگارش‌های روسی ثروت‌های عظیمی دارند."
+    },
+    {
+      "fr": "le lobbying",
+      "fa": "لابی‌گری",
+      "emoji": "🗣️",
+      "difficulty": 4,
+      "ex": "Le lobbying des industries pétrolières influence les lois environnementales.",
+      "ex_fa": "لابی‌گری صنایع نفتی بر قوانین زیست‌محیطی تأثیر می‌گذارد."
+    },
+    {
+      "fr": "l'accaparement",
+      "fa": "تصاحب انحصاری",
+      "emoji": "📦",
+      "difficulty": 5,
+      "ex": "L'accaparement des terres par les multinationales menace les petits agriculteurs.",
+      "ex_fa": "تصاحب انحصاری زمین‌ها توسط شرکت‌های چندملیتی، کشاورزان خرد را تهدید می‌کند."
+    },
+    {
+      "fr": "le pantouflage",
+      "fa": "چرخش بین بخش دولتی و خصوصی",
+      "emoji": "🔄",
+      "difficulty": 5,
+      "ex": "Le pantouflage entre ministères et grandes entreprises est très controversé.",
+      "ex_fa": "چرخش بین وزارتخانه‌ها و شرکت‌های بزرگ بسیار بحث‌برانگیز است."
+    },
+    {
+      "fr": "le trafic d'influence",
+      "fa": "فروش نفوذ",
+      "emoji": "🎭",
+      "difficulty": 5,
+      "ex": "Le trafic d'influence est souvent difficile à prouver devant un tribunal.",
+      "ex_fa": "اثبات فروش نفوذ در دادگاه معمولاً دشوار است."
+    },
+    {
+      "fr": "la concussion",
+      "fa": "اخاذی توسط مقامات",
+      "emoji": "💵",
+      "difficulty": 5,
+      "ex": "La concussion est un crime grave dans le code pénal.",
+      "ex_fa": "اخاذی توسط مقامات در قانون کیفری جرم سنگینی است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le scandale du maire",
+      "title_fa": "رسوایی شهردار",
+      "text": "Le maire de la ville était populaire. Mais un journaliste a découvert un énorme scandale. D'abord, le maire avait embauché son neveu sans concours : c'était du {{BLANK_1}}. Ensuite, il avait attribué un contrat à l'entreprise de son ami : c'était du {{BLANK_2}}. Le journal a parlé d'une {{BLANK_3}} financière : des millions d'euros gaspillés. Le procureur a ouvert une enquête pour {{BLANK_4}} : le maire aurait profité de sa fonction pour s'enrichir. On parlait aussi de {{BLANK_5}} : il aurait exigé de l'argent de certaines entreprises. Le maire a dû démissionner. Son successeur a promis de lutter contre ces pratiques et de mettre fin à la {{BLANK_6}} qui régnait dans la mairie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "népotisme",
+          "options": [
+            "népotisme",
+            "lobbying",
+            "pantouflage",
+            "accaparement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "favoritisme",
+          "options": [
+            "favoritisme",
+            "clientélisme",
+            "kleptocratie",
+            "oligarchie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "gabegie",
+          "options": [
+            "gabegie",
+            "concussion",
+            "prévarication",
+            "oligarchie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "prévarication",
+          "options": [
+            "prévarication",
+            "favoritisme",
+            "népotisme",
+            "pantouflage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "concussion",
+          "options": [
+            "concussion",
+            "lobbying",
+            "clientélisme",
+            "accaparement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "kleptocratie",
+          "options": [
+            "kleptocratie",
+            "oligarchie",
+            "ploutocratie",
+            "gabegie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les coulisses du pouvoir",
+      "title_fa": "پشت پرده قدرت",
+      "inspiration": "House of Cards (Beau Willimon / David Fincher, 2013-2018)",
+      "text": "Francis Underwood contemplait Washington depuis la fenêtre ovale de son bureau. De là-haut, la ville ressemblait à un échiquier où chaque pion avait son prix. Vingt ans de carrière l'avaient mené jusqu'ici, au sommet de cette {{BLANK_1}} moderne où quelques familles fortunées tiraient les ficelles dans l'ombre. Lui-même, fils de modeste extraction, était devenu l'un de ces {{BLANK_2}} qui façonnaient les lois selon leurs intérêts. Son ascension n'avait pas été sans compromissions. Jeune député, il avait pratiqué le {{BLANK_3}} avec une efficacité redoutable, distribuant faveurs et postes pour s'assurer une clientèle fidèle. Puis, ministre, il avait laissé prospérer une {{BLANK_4}} financière dont ses collaborateurs profitaient allègrement. Il avait même, murmurait-on, fermé les yeux sur certains cas de {{BLANK_5}} dans son administration, quand cela servait ses intérêts. Mais aujourd'hui, un jeune procureur ambitieux menait l'enquête. Les journaux parlaient de {{BLANK_6}}, de {{BLANK_7}} avéré. On l'accusait d'avoir placé son neveu à un poste clé sans la moindre compétence, pur {{BLANK_8}} familial. Plus grave encore : un homme d'affaires affirmait avoir dû verser des pots-de-vin pour obtenir un marché public — une {{BLANK_9}} caractérisée. Underwood sourit en relisant les accusations. Il savait que dans ce monde, la vérité n'était qu'une question de narration. Il avait appris l'art du {{BLANK_10}}, passant sans vergogne du Sénat aux conseils d'administration, accumulant les mandats et les fortunes. Ses adversaires parlaient de {{BLANK_11}} des ressources publiques, mais qui, parmi eux, pouvait se targuer d'une probité intacte ? Demain, il convoquerait la presse. Il nierait tout, retournerait l'accusation, ferait de ce procès une tribune. Après tout, dans cette arène où les plus forts écrasaient les plus faibles, seule comptait la victoire. Et Underwood, en vieux routier de la politique, savait que le scandale n'était souvent que le prix à payer pour rester au sommet.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "oligarchie",
+          "options": [
+            "oligarchie",
+            "kleptocratie",
+            "gabegie",
+            "concussion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ploutocrates",
+          "options": [
+            "ploutocrates",
+            "oligarques",
+            "lobbies",
+            "clients"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "clientélisme",
+          "options": [
+            "clientélisme",
+            "favoritisme",
+            "pantouflage",
+            "accaparement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "gabegie",
+          "options": [
+            "gabegie",
+            "concussion",
+            "prévarication",
+            "kleptocratie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "prévarication",
+          "options": [
+            "prévarication",
+            "népotisme",
+            "lobbying",
+            "favoritisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "trafic d'influence",
+          "options": [
+            "trafic d'influence",
+            "clientélisme",
+            "pantouflage",
+            "accaparement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "népotisme",
+          "options": [
+            "népotisme",
+            "favoritisme",
+            "kleptocratie",
+            "oligarchie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "népotisme",
+          "options": [
+            "favoritisme",
+            "népotisme",
+            "pantouflage",
+            "clientélisme"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 9,
+          "answer": "concussion",
+          "options": [
+            "concussion",
+            "prévarication",
+            "gabegie",
+            "accaparement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "pantouflage",
+          "options": [
+            "pantouflage",
+            "lobbying",
+            "clientélisme",
+            "favoritisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "accaparement",
+          "options": [
+            "accaparement",
+            "trafic d'influence",
+            "concussion",
+            "gabegie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Corruption et dérives politiques",
+    "title_fa": "آزمون : فساد و انحرافات سیاسی",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le président a nommé son fils ministre alors que celui-ci n'a aucune expérience. C'est un cas typique de ____.",
+        "options": [
+          "népotisme",
+          "pantouflage",
+          "lobbying",
+          "clientélisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دادن پست به اعضای خانواده بدون شایستگی = népotisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Un haut fonctionnaire utilise les fonds publics pour financer ses vacances personnelles. Il est coupable de ____.",
+        "options": [
+          "prévarication",
+          "népotisme",
+          "pantouflage",
+          "clientélisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سوءاستفاده مقام از اموال عمومی = prévarication."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce politicien distribue des emplois publics à ses électeurs pour s'assurer leur fidélité. C'est du ____.",
+        "options": [
+          "clientélisme",
+          "favoritisme",
+          "pantouflage",
+          "népotisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دادن امتیاز در ازای رأی = clientélisme."
+      },
+      {
+        "type": "mcq",
+        "question": "L'entreprise a été ruinée par des dépenses inutiles et une mauvaise gestion. On parle de ____ financière.",
+        "options": [
+          "gabegie",
+          "kleptocratie",
+          "concussion",
+          "oligarchie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ولخرجی و بی‌نظمی مالی = gabegie."
+      },
+      {
+        "type": "mcq",
+        "question": "Un petit groupe de familles riches contrôle tous les médias et les grandes entreprises du pays. Ce système est une ____.",
+        "options": [
+          "oligarchie",
+          "kleptocratie",
+          "gabegie",
+          "concussion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حکومت گروه کوچک ثروتمند = oligarchie."
+      },
+      {
+        "type": "mcq",
+        "question": "Les dirigeants de ce pays détournent systématiquement les richesses nationales vers leurs comptes privés. C'est une ____.",
+        "options": [
+          "kleptocratie",
+          "oligarchie",
+          "gabegie",
+          "ploutocratie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نظام سیاسی مبتنی بر دزدی از منابع ملی = kleptocratie."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce milliardaire utilise sa fortune pour influencer les élections et les lois. C'est un ____.",
+        "options": [
+          "ploutocrate",
+          "oligarque",
+          "lobbyiste",
+          "client"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که با ثروتش قدرت سیاسی می‌خرد = ploutocrate."
+      },
+      {
+        "type": "mcq",
+        "question": "Un fonctionnaire exige de l'argent des citoyens en échange de services qu'il devrait fournir gratuitement. Il commet une ____.",
+        "options": [
+          "concussion",
+          "prévarication",
+          "gabegie",
+          "prévarication"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دریافت پول غیرقانونی توسط مقام از مردم = concussion."
+      },
+      {
+        "type": "mcq",
+        "question": "Le directeur attribue toujours les marchés publics à la même entreprise, sans appel d'offres. C'est du ____.",
+        "options": [
+          "favoritisme",
+          "népotisme",
+          "pantouflage",
+          "clientélisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ترجیح دادن یک طرف بدون رقابت = favoritisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Après avoir quitté le ministère, cet ancien ministre devient conseiller dans une grande banque qu'il régulait auparavant. C'est un cas de ____.",
+        "options": [
+          "pantouflage",
+          "clientélisme",
+          "lobbying",
+          "favoritisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جابجایی بین مقام دولتی و شغل خصوصی = pantouflage."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette multinationale achète des milliers d'hectares de terres agricoles, empêchant les paysans locaux d'y accéder. C'est un ____ des terres.",
+        "options": [
+          "accaparement",
+          "pantouflage",
+          "favoritisme",
+          "clientélisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تصاحب انحصاری منابع = accaparement."
+      },
+      {
+        "type": "mcq",
+        "question": "Un homme d'affaires paie un ancien ministre pour qu'il use de ses relations et obtienne un contrat. C'est un ____.",
+        "options": [
+          "trafic d'influence",
+          "favoritisme",
+          "pantouflage",
+          "clientélisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استفاده از نفوذ در ازای پول = trafic d'influence."
+      },
+      {
+        "type": "mcq",
+        "question": "Les industries pharmaceutiques envoient des représentants convaincre les députés de voter en leur faveur. C'est du ____.",
+        "options": [
+          "lobbying",
+          "clientélisme",
+          "népotisme",
+          "favoritisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تلاش سازمان‌یافته برای تأثیرگذاری بر قانون‌گذاران = lobbying."
+      },
+      {
+        "type": "binary",
+        "question": "Un oligarque est nécessairement un membre de la famille royale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "oligarque هر فرد قدرتمند در نظام الیگارشی است، نه لزوماً از خانواده سلطنتی."
+      },
+      {
+        "type": "binary",
+        "question": "Le népotisme et le favoritisme désignent exactement la même pratique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "népotisme فقط برای اعضای خانواده است، اما favoritisme شامل دوستان و آشنایان هم می‌شود."
+      }
+    ]
+  }
+}
