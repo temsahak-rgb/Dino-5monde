@@ -1,0 +1,680 @@
+{
+  "id": "alchimie_esoterisme",
+  "level": "C1",
+  "theme": "Alchimie, ésotérisme et quête spirituelle",
+  "theme_fa": "کیمیاگری، علوم خفیه و جستجوی معنوی",
+  "icon": "⚗️",
+  "inspiration": "Harry Potter à l'école des sorciers (Chris Columbus, 2001) / Le Nom de la Rose",
+  "words": [
+    {
+      "fr": "l'alchimie",
+      "fa": "کیمیاگری",
+      "emoji": "⚗️",
+      "difficulty": 4,
+      "ex": "L'alchimie est l'ancêtre de la chimie moderne, mêlant science et mysticisme.",
+      "ex_fa": "کیمیاگری نیای شیمی مدرن است که علم و عرفان را درمی‌آمیزد."
+    },
+    {
+      "fr": "le creuset",
+      "fa": "بوته ذوب",
+      "emoji": "🥣",
+      "difficulty": 4,
+      "ex": "Le creuset en argile résiste aux températures extrêmes de la fusion.",
+      "ex_fa": "بوته سفالی در برابر دماهای شدید ذوب مقاومت می‌کند."
+    },
+    {
+      "fr": "la pierre philosophale",
+      "fa": "سنگ فلاسفه (سنگ جادو)",
+      "emoji": "💎",
+      "difficulty": 5,
+      "ex": "La pierre philosophale est le mythe suprême permettant de transmuter les métaux.",
+      "ex_fa": "سنگ فلاسفه اسطوره برتر برای تبدیل فلزات است."
+    },
+    {
+      "fr": "l'élixir",
+      "fa": "اکسیر",
+      "emoji": "🧪",
+      "difficulty": 4,
+      "ex": "L'élixir de longue vie promettait l'immortalité à celui qui le buvait.",
+      "ex_fa": "اکسیر حیات جاودانگی را به نوشنده‌اش وعده می‌داد."
+    },
+    {
+      "fr": "le mercure",
+      "fa": "جیوه",
+      "emoji": "🌡️",
+      "difficulty": 3,
+      "ex": "Le mercure liquide fascine les alchimistes par sa mobilité et son éclat.",
+      "ex_fa": "جیوه مایع به خاطر سیالیت و درخشش، کیمیاگران را مجذوب می‌کند."
+    },
+    {
+      "fr": "le soufre",
+      "fa": "گوگرد",
+      "emoji": "🟡",
+      "difficulty": 3,
+      "ex": "Le soufre jaune brûle avec une flamme bleue et une odeur âcre.",
+      "ex_fa": "گوگرد زرد با شعله‌ای آبی و بویی تند می‌سوزد."
+    },
+    {
+      "fr": "la transmutation",
+      "fa": "تبدیل (کیمیایی)",
+      "emoji": "✨",
+      "difficulty": 5,
+      "ex": "La transmutation du plomb en or est le but ultime du grand œuvre.",
+      "ex_fa": "تبدیل سرب به طلا هدف نهایی کار بزرگ کیمیاگری است."
+    },
+    {
+      "fr": "l'athanor",
+      "fa": "کوره کیمیاگری",
+      "emoji": "🔥",
+      "difficulty": 5,
+      "ex": "L'athanor maintient une chaleur constante pendant des mois entiers.",
+      "ex_fa": "کوره کیمیاگری حرارت را برای ماه‌ها ثابت نگه می‌دارد."
+    },
+    {
+      "fr": "le grimoire",
+      "fa": "کتاب طلسمات، کتاب جادو",
+      "emoji": "📖",
+      "difficulty": 4,
+      "ex": "Le vieux grimoire est rempli de symboles cryptés et de formules secrètes.",
+      "ex_fa": "کتاب طلسمات پر از نمادهای رمزگذاری‌شده و فرمول‌های مخفی است."
+    },
+    {
+      "fr": "la cornue",
+      "fa": "بالن تقطیر (رِتورت)",
+      "emoji": "⚗️",
+      "difficulty": 4,
+      "ex": "La cornue en verre permet de récupérer les vapeurs condensées.",
+      "ex_fa": "بالن شیشه‌ای امکان جمع‌آوری بخارات متراکم‌شده را می‌دهد."
+    },
+    {
+      "fr": "le pentacle",
+      "fa": "طلسم پنج‌پر",
+      "emoji": "🔯",
+      "difficulty": 4,
+      "ex": "Le pentacle tracé sur le sol protège le mage des esprits invoqués.",
+      "ex_fa": "طلسم پنج‌پرِ کشیده‌شده روی زمین، جادوگر را از ارواح احضارشده محافظت می‌کند."
+    },
+    {
+      "fr": "la panacée",
+      "fa": "دوای همه‌دردها (نوش‌دارو)",
+      "emoji": "💊",
+      "difficulty": 5,
+      "ex": "Les charlatans vendaient de fausses panacées aux villageois crédules.",
+      "ex_fa": "شیادان نوش‌داروهای دروغین را به روستاییان زودباور می‌فروختند."
+    },
+    {
+      "fr": "le plomb",
+      "fa": "سرب",
+      "emoji": "⬛",
+      "difficulty": 2,
+      "ex": "Le plomb vil et lourd représente la matière imparfaite avant l'élévation.",
+      "ex_fa": "سربِ پست و سنگین، نشان‌دهنده ماده ناقص قبل از تعالی است."
+    },
+    {
+      "fr": "l'or",
+      "fa": "طلا",
+      "emoji": "🟡",
+      "difficulty": 1,
+      "ex": "L'or pur et inaltérable symbolise la perfection spirituelle atteinte.",
+      "ex_fa": "طلای خالص و تغییرناپذیر نماد کمال معنویِ به‌دست‌آمده است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le secret de Nicolas Flamel",
+      "text": "Nicolas est un vieux savant qui pratique l'{{BLANK_1}} dans son laboratoire secret de Paris. Son but ultime est de découvrir la légendaire {{BLANK_3}}. Chaque nuit, il allume son {{BLANK_8}} pour chauffer un {{BLANK_2}} en argile réfractaire. Il y mélange du {{BLANK_6}} jaune et du {{BLANK_5}} liquide, deux éléments essentiels. Il observe la {{BLANK_7}} de la matière dans une {{BLANK_10}} en verre. Il espère transformer le vil {{BLANK_13}} en {{BLANK_14}} pur et brillant. Sur son pupitre, un ancien {{BLANK_9}} ouvert révèle des recettes oubliées. Avant de commencer, il trace un {{BLANK_11}} protecteur sur le sol de pierre. Il ne cherche pas seulement la richesse, mais aussi l'{{BLANK_4}} de longue vie, une véritable {{BLANK_12}} qui guérirait toutes les maladies du monde. Ce travail exige une patience infinie et une foi absolue en la magie de la nature.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "alchimie",
+          "options": [
+            "alchimie",
+            "creuset",
+            "pierre philosophale",
+            "élixir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "creuset",
+          "options": [
+            "creuset",
+            "mercure",
+            "soufre",
+            "transmutation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "pierre philosophale",
+          "options": [
+            "pierre philosophale",
+            "athanor",
+            "grimoire",
+            "cornue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "élixir",
+          "options": [
+            "élixir",
+            "pentacle",
+            "panacée",
+            "plomb"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mercure",
+          "options": [
+            "mercure",
+            "or",
+            "alchimie",
+            "creuset"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "soufre",
+          "options": [
+            "soufre",
+            "pierre philosophale",
+            "élixir",
+            "mercure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "transmutation",
+          "options": [
+            "transmutation",
+            "athanor",
+            "grimoire",
+            "cornue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "athanor",
+          "options": [
+            "athanor",
+            "pentacle",
+            "panacée",
+            "plomb"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "grimoire",
+          "options": [
+            "grimoire",
+            "or",
+            "alchimie",
+            "creuset"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "cornue",
+          "options": [
+            "cornue",
+            "pierre philosophale",
+            "élixir",
+            "mercure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pentacle",
+          "options": [
+            "pentacle",
+            "soufre",
+            "transmutation",
+            "athanor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "panacée",
+          "options": [
+            "panacée",
+            "grimoire",
+            "cornue",
+            "pentacle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "plomb",
+          "options": [
+            "plomb",
+            "or",
+            "alchimie",
+            "creuset"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "or",
+          "options": [
+            "or",
+            "pierre philosophale",
+            "élixir",
+            "mercure"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le grand œuvre de l'âme",
+      "inspiration": "Le Nom de la Rose / Harry Potter (Nicolas Flamel)",
+      "text": "À peine le vieil ermite eut-il ouvert le lourd {{BLANK_9}} que les ombres de la crypte semblèrent danser à la lueur des bougies. Pour lui, l'{{BLANK_1}} n'était pas une science de la matière, mais la cartographie de l'âme humaine. Il attisa les braises de l'{{BLANK_8}}, ce ventre de dragon qui dévorait ses illusions. Dans le {{BLANK_2}} incandescent, il jetait le {{BLANK_13}} de ses propres peurs et le {{BLANK_6}} de ses colères, espérant que le {{BLANK_5}} fuyant de son esprit trouverait enfin la stabilité. La {{BLANK_7}} n'était pas chimique, elle était spirituelle. À travers le col étroit de la {{BLANK_10}}, les vapeurs de ses souvenirs remontaient, purifiées. Il traça un {{BLANK_11}} de craie sur le sol froid, non pour invoquer des démons, mais pour bannir ses doutes. Il savait que la véritable {{BLANK_3}} ne se trouvait pas dans une mine, mais dans le cœur de celui qui accepte sa propre mortalité. L'{{BLANK_4}} qu'il cherchait n'offrait pas l'immortalité du corps, mais l'éveil de la conscience. Cette {{BLANK_12}} universelle guérissait la cécité de l'ignorance. Et quand, au terme d'une vie de sacrifices, il vit enfin briller l'{{BLANK_14}} intérieur, il comprit que le sage ne transforme pas les métaux, il se transforme lui-même.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "alchimie",
+          "options": [
+            "alchimie",
+            "creuset",
+            "pierre philosophale",
+            "élixir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "creuset",
+          "options": [
+            "creuset",
+            "mercure",
+            "soufre",
+            "transmutation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "pierre philosophale",
+          "options": [
+            "pierre philosophale",
+            "athanor",
+            "grimoire",
+            "cornue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "élixir",
+          "options": [
+            "élixir",
+            "pentacle",
+            "panacée",
+            "plomb"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mercure",
+          "options": [
+            "mercure",
+            "or",
+            "alchimie",
+            "creuset"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "soufre",
+          "options": [
+            "soufre",
+            "pierre philosophale",
+            "élixir",
+            "mercure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "transmutation",
+          "options": [
+            "transmutation",
+            "athanor",
+            "grimoire",
+            "cornue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "athanor",
+          "options": [
+            "athanor",
+            "pentacle",
+            "panacée",
+            "plomb"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "grimoire",
+          "options": [
+            "grimoire",
+            "or",
+            "alchimie",
+            "creuset"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "cornue",
+          "options": [
+            "cornue",
+            "pierre philosophale",
+            "élixir",
+            "mercure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pentacle",
+          "options": [
+            "pentacle",
+            "soufre",
+            "transmutation",
+            "athanor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "panacée",
+          "options": [
+            "panacée",
+            "grimoire",
+            "cornue",
+            "pentacle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "plomb",
+          "options": [
+            "plomb",
+            "or",
+            "alchimie",
+            "creuset"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "or",
+          "options": [
+            "or",
+            "pierre philosophale",
+            "élixir",
+            "mercure"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Alchimie et ésotérisme",
+    "title_fa": "آزمون : کیمیاگری و علوم خفیه",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La discipline ancienne mêlant proto-chimie, philosophie et mysticisme pour transformer la matière est l'____.",
+        "options": [
+          "alchimie",
+          "creuset",
+          "pierre philosophale",
+          "élixir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رشته باستانی تبدیل ماده و عرفان = alchimie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le récipient en matériau réfractaire utilisé pour fondre ou calciner des substances à très haute température est le ____.",
+        "options": [
+          "creuset",
+          "mercure",
+          "soufre",
+          "transmutation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ظرف نسوز برای ذوب مواد = creuset."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance mythique suprême censée transformer les métaux vils en or et guérir toutes les maladies est la ____.",
+        "options": [
+          "pierre philosophale",
+          "athanor",
+          "grimoire",
+          "cornue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده افسانه‌ای تبدیل سرب به طلا = pierre philosophale."
+      },
+      {
+        "type": "mcq",
+        "question": "Le liquide magique ou la potion concentrée, souvent associé à la vie éternelle, est l'____.",
+        "options": [
+          "élixir",
+          "pentacle",
+          "panacée",
+          "plomb"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مایع جادویی و اکسیر = élixir."
+      },
+      {
+        "type": "mcq",
+        "question": "Le métal liquide à température ambiante, très dense et toxique, fascinant les anciens savants, est le ____.",
+        "options": [
+          "mercure",
+          "or",
+          "alchimie",
+          "creuset"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فلز مایع و سمی = mercure."
+      },
+      {
+        "type": "mcq",
+        "question": "L'élément chimique jaune, inflammable, associé au feu et à la combustion dans les rituels anciens est le ____.",
+        "options": [
+          "soufre",
+          "pierre philosophale",
+          "élixir",
+          "mercure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عنصر زرد و قابل اشتعال = soufre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus alchimique de changement radical d'une substance en une autre (comme le plomb en or) est la ____.",
+        "options": [
+          "transmutation",
+          "athanor",
+          "grimoire",
+          "cornue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرآیند تغییر ماهیت ماده = transmutation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fourneau alchimique spécial conçu pour maintenir une chaleur constante et prolongée est l'____.",
+        "options": [
+          "athanor",
+          "pentacle",
+          "panacée",
+          "plomb"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کوره خاص کیمیاگری = athanor."
+      },
+      {
+        "type": "mcq",
+        "question": "Le livre ancien contenant des formules magiques, des sorts et des savoirs occultes est le ____.",
+        "options": [
+          "grimoire",
+          "or",
+          "alchimie",
+          "creuset"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کتاب جادو و طلسمات = grimoire."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ballon en verre à long col recourbé utilisé pour la distillation et la condensation des vapeurs est la ____.",
+        "options": [
+          "cornue",
+          "pierre philosophale",
+          "élixir",
+          "mercure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بالن شیشه‌ای تقطیر = cornue."
+      },
+      {
+        "type": "mcq",
+        "question": "Le symbole magique à cinq branches, souvent utilisé dans les rituels de protection, est le ____.",
+        "options": [
+          "pentacle",
+          "soufre",
+          "transmutation",
+          "athanor"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نماد جادویی پنج‌پر = pentacle."
+      },
+      {
+        "type": "mcq",
+        "question": "Le remède universel fictif capable de guérir absolument toutes les maladies est la ____.",
+        "options": [
+          "panacée",
+          "grimoire",
+          "cornue",
+          "pentacle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوای همه‌دردها = panacée."
+      },
+      {
+        "type": "mcq",
+        "question": "Le métal lourd, grisâtre et terne, considéré comme la matière de base imparfaite à purifier est le ____.",
+        "options": [
+          "plomb",
+          "or",
+          "alchimie",
+          "creuset"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فلز سنگین و پست = plomb."
+      },
+      {
+        "type": "mcq",
+        "question": "Le métal précieux, jaune et inaltérable, représentant la perfection et le but final du grand œuvre est l'____.",
+        "options": [
+          "or",
+          "pierre philosophale",
+          "élixir",
+          "mercure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فلز گرانبها و کامل = or."
+      },
+      {
+        "type": "binary",
+        "question": "La pierre philosophale est un minéral naturel que l'on peut extraire des mines profondes d'Afrique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سنگ فلاسفه یک مفهوم اسطوره‌ای و نمادین در کیمیاگری است، نه یک ماده معدنی واقعی."
+      },
+      {
+        "type": "binary",
+        "question": "L'athanor est le fourneau utilisé par les alchimistes pour chauffer leurs préparations sur de longues périodes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. آتانور (athanor) کوره‌ای برای حفظ حرارت طولانی‌مدت در آزمایشگاه کیمیاگری است."
+      },
+      {
+        "type": "binary",
+        "question": "La transmutation désigne la transformation magique ou chimique d'un métal vil en métal précieux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ترانس‌موتاسیون (transmutation) به معنای تغییر ماهیت و تبدیل فلزات پست به طلا است."
+      },
+      {
+        "type": "binary",
+        "question": "Un grimoire est un instrument de mesure astronomique utilisé pour observer les étoiles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. گریموار (grimoire) کتاب جادو و طلسمات است؛ ابزار نجومی astrolabe نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le soufre et le mercure étaient considérés comme les deux principes fondamentaux de la composition des métaux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. در کیمیاگری کلاسیک، گوگرد و جیوه دو رکن اصلی تشکیل‌دهنده فلزات محسوب می‌شدند."
+      },
+      {
+        "type": "binary",
+        "question": "La panacée est une maladie rare qui affectait uniquement les alchimistes au Moyen Âge.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. نوش‌دارو (panacée) یک داروی خیالی برای درمان تمام بیماری‌هاست، نه یک بیماری."
+      }
+    ]
+  }
+}
