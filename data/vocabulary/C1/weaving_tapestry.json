@@ -1,0 +1,680 @@
+{
+  "id": "weaving_tapestry",
+  "level": "C1",
+  "theme": "Tissage, tapisserie et artisanat textile",
+  "theme_fa": "بافندگی، تاپیستری و هنرهای نساجی",
+  "icon": "🧶",
+  "inspiration": "Les Moires et la Tapisserie de Bayeux (Mythologie et Histoire)",
+  "words": [
+    {
+      "fr": "le tissage",
+      "fa": "بافندگی",
+      "emoji": "🧶",
+      "difficulty": 3,
+      "ex": "Le tissage est l'art d'entrelacer des fils pour créer une étoffe.",
+      "ex_fa": "بافندگی هنر درهم‌تنیدن نخ‌ها برای خلق پارچه است."
+    },
+    {
+      "fr": "le métier à tisser",
+      "fa": "دستگاه بافندگی",
+      "emoji": "🪡",
+      "difficulty": 4,
+      "ex": "Le métier à tisser en bois occupe le centre de l'atelier de l'artisan.",
+      "ex_fa": "دستگاه بافندگی چوبی مرکز کارگاه صنعتگر را اشغال کرده است."
+    },
+    {
+      "fr": "le fil",
+      "fa": "نخ",
+      "emoji": "🧵",
+      "difficulty": 2,
+      "ex": "Le fil de lin est résistant et idéal pour les vêtements d'été.",
+      "ex_fa": "نخ کتان مقاوم و برای لباس‌های تابستانی ایده‌آل است."
+    },
+    {
+      "fr": "la chaîne",
+      "fa": "تار",
+      "emoji": "↕️",
+      "difficulty": 4,
+      "ex": "La chaîne est constituée des fils verticaux tendus sur le cadre.",
+      "ex_fa": "تار از نخ‌های عمودی کشیده‌شده روی قاب تشکیل شده است."
+    },
+    {
+      "fr": "la trame",
+      "fa": "پود",
+      "emoji": "↔️",
+      "difficulty": 4,
+      "ex": "La trame passe horizontalement à travers la chaîne pour former le tissu.",
+      "ex_fa": "پود به صورت افقی از میان تار عبور می‌کند تا پارچه شکل بگیرد."
+    },
+    {
+      "fr": "le motif",
+      "fa": "نقش، طرح",
+      "emoji": "🌸",
+      "difficulty": 3,
+      "ex": "Le motif floral demande une grande précision dans le choix des couleurs.",
+      "ex_fa": "نقش گل‌دار به دقت زیادی در انتخاب رنگ‌ها نیاز دارد."
+    },
+    {
+      "fr": "la tapisserie",
+      "fa": "قالیچه دیواری (تاپیستری)",
+      "emoji": "🖼️",
+      "difficulty": 4,
+      "ex": "La tapisserie médiévale raconte des épopées chevaleresques sur les murs.",
+      "ex_fa": "تاپیستری قرون وسطایی حماسه‌های پهلوانی را روی دیوارها روایت می‌کند."
+    },
+    {
+      "fr": "la laine",
+      "fa": "پشم",
+      "emoji": "🐑",
+      "difficulty": 2,
+      "ex": "La laine de mouton garde la chaleur et isole parfaitement du froid.",
+      "ex_fa": "پشم گوسفند گرما را حفظ و کاملاً در برابر سرما عایق می‌کند."
+    },
+    {
+      "fr": "le coton",
+      "fa": "پنبه",
+      "emoji": "🌿",
+      "difficulty": 2,
+      "ex": "Le coton est une fibre douce et respirante, parfaite pour les draps.",
+      "ex_fa": "پنبه الیافی نرم و قابل تنفس است و برای ملحفه‌ها عالی است."
+    },
+    {
+      "fr": "la soie",
+      "fa": "ابریشم",
+      "emoji": "✨",
+      "difficulty": 3,
+      "ex": "La soie naturelle possède un éclat subtil et une douceur incomparable.",
+      "ex_fa": "ابریشم طبیعی درخششی ظریف و لطافتی بی‌نظیر دارد."
+    },
+    {
+      "fr": "la navette",
+      "fa": "ماکو",
+      "emoji": "🛶",
+      "difficulty": 4,
+      "ex": "Le tisserand lance la navette d'une main agile à travers les fils.",
+      "ex_fa": "بافنده ماکو را با دستی چابک از میان نخ‌ها پرتاب می‌کند."
+    },
+    {
+      "fr": "le nœud",
+      "fa": "گره",
+      "emoji": "🪢",
+      "difficulty": 3,
+      "ex": "Chaque nœud sur le tapis oriental est fait entièrement à la main.",
+      "ex_fa": "هر گره روی فرش شرقی کاملاً با دست زده می‌شود."
+    },
+    {
+      "fr": "le teinturier",
+      "fa": "رنگرز",
+      "emoji": "🎨",
+      "difficulty": 4,
+      "ex": "Le teinturier plonge les écheveaux dans des cuves de pigments naturels.",
+      "ex_fa": "رنگرز کلاف‌ها را در حوضچه‌های رنگدانه‌های طبیعی فرو می‌برد."
+    },
+    {
+      "fr": "l'écheveau",
+      "fa": "کلاف نخ",
+      "emoji": "🧶",
+      "difficulty": 5,
+      "ex": "L'artisan dévide l'écheveau de laine avant de commencer son ouvrage.",
+      "ex_fa": "صنعتگر قبل از شروع کار، کلاف پشم را باز می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'atelier des Flandres",
+      "text": "Élise est une artisane passionnée par l'art du {{BLANK_1}}. Dans son atelier, elle installe son grand {{BLANK_2}} en bois de chêne. Elle déroule soigneusement chaque {{BLANK_3}} pour former la {{BLANK_4}} verticale bien tendue. Ensuite, elle utilise une petite {{BLANK_11}} en bois pour faire passer la {{BLANK_5}} horizontale de gauche à droite. Elle utilise souvent de la {{BLANK_8}} chaude pour les manteaux d'hiver, ou du {{BLANK_9}} léger pour les chemises d'été. Pour les commandes royales, elle ajoute de la {{BLANK_10}} brillante et précieuse. Avant de commencer, elle achète un magnifique {{BLANK_14}} de fil chez le {{BLANK_13}} du village, qui lui donne des couleurs éclatantes grâce à ses bains de plantes. Avec une patience infinie, elle crée un {{BLANK_6}} complexe de chasse en forêt. Chaque {{BLANK_12}} est solide et invisible, garantissant la longévité de l'œuvre. Après des mois de travail acharné, elle détache enfin sa magnifique {{BLANK_7}} qui ornera bientôt les murs d'un grand château.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "tissage",
+          "options": [
+            "tissage",
+            "métier à tisser",
+            "fil",
+            "chaîne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "métier à tisser",
+          "options": [
+            "métier à tisser",
+            "trame",
+            "motif",
+            "tapisserie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fil",
+          "options": [
+            "fil",
+            "laine",
+            "coton",
+            "soie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "chaîne",
+          "options": [
+            "chaîne",
+            "navette",
+            "nœud",
+            "teinturier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "trame",
+          "options": [
+            "trame",
+            "écheveau",
+            "tissage",
+            "métier à tisser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "motif",
+          "options": [
+            "motif",
+            "fil",
+            "chaîne",
+            "trame"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tapisserie",
+          "options": [
+            "tapisserie",
+            "laine",
+            "coton",
+            "soie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "laine",
+          "options": [
+            "laine",
+            "navette",
+            "nœud",
+            "teinturier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "coton",
+          "options": [
+            "coton",
+            "écheveau",
+            "tissage",
+            "métier à tisser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "soie",
+          "options": [
+            "soie",
+            "fil",
+            "chaîne",
+            "trame"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "navette",
+          "options": [
+            "navette",
+            "motif",
+            "tapisserie",
+            "laine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "nœud",
+          "options": [
+            "nœud",
+            "coton",
+            "soie",
+            "navette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "teinturier",
+          "options": [
+            "teinturier",
+            "écheveau",
+            "tissage",
+            "métier à tisser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "écheveau",
+          "options": [
+            "écheveau",
+            "fil",
+            "chaîne",
+            "trame"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les tisseuses du destin",
+      "inspiration": "Les Moires (Mythologie grecque)",
+      "text": "À peine Clotho eut-elle saisi l'{{BLANK_14}} brut que le silence éternel de la grotte fut rompu par le grincement du grand {{BLANK_2}} cosmique. Les trois Moires, gardiennes aveugles du temps, ne connaissaient ni pitié ni repos. Clotho attachait le premier {{BLANK_3}} à la {{BLANK_4}} verticale, ancrant l'âme d'un nouveau-né dans l'existence. Lachesis, d'un geste monotone, lançait la {{BLANK_11}} qui portait la {{BLANK_5}} de la vie, croisant les bonheurs et les tragédies pour créer le {{BLANK_6}} unique de chaque destinée humaine. Parfois, elle y mêlait un fil de {{BLANK_10}} dorée pour les rois éphémères, ou la rudesse du {{BLANK_9}} pour les paysans oubliés. Avant de naître, chaque esprit avait été plongé par le {{BLANK_13}} des enfers dans des cuves sombres pour y absorber la couleur de ses futures souffrances. Ce {{BLANK_1}} sans fin formait l'immense {{BLANK_7}} de l'humanité, où chaque {{BLANK_12}} était une rencontre amoureuse, chaque déchirure une guerre. Mais derrière le cadre, Atropos observait en silence, ses ciseaux noirs à la main. Quand son heure viendrait, elle trancherait net la {{BLANK_8}} de la vie, arrêtant pour toujours le battement du cœur, prouvant que même les dieux sont prisonniers de la toile qu'ils ont eux-mêmes ourdie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "tissage",
+          "options": [
+            "tissage",
+            "métier à tisser",
+            "fil",
+            "chaîne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "métier à tisser",
+          "options": [
+            "métier à tisser",
+            "trame",
+            "motif",
+            "tapisserie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fil",
+          "options": [
+            "fil",
+            "laine",
+            "coton",
+            "soie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "chaîne",
+          "options": [
+            "chaîne",
+            "navette",
+            "nœud",
+            "teinturier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "trame",
+          "options": [
+            "trame",
+            "écheveau",
+            "tissage",
+            "métier à tisser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "motif",
+          "options": [
+            "motif",
+            "fil",
+            "chaîne",
+            "trame"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tapisserie",
+          "options": [
+            "tapisserie",
+            "laine",
+            "coton",
+            "soie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "laine",
+          "options": [
+            "laine",
+            "navette",
+            "nœud",
+            "teinturier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "coton",
+          "options": [
+            "coton",
+            "écheveau",
+            "tissage",
+            "métier à tisser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "soie",
+          "options": [
+            "soie",
+            "fil",
+            "chaîne",
+            "trame"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "navette",
+          "options": [
+            "navette",
+            "motif",
+            "tapisserie",
+            "laine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "nœud",
+          "options": [
+            "nœud",
+            "coton",
+            "soie",
+            "navette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "teinturier",
+          "options": [
+            "teinturier",
+            "écheveau",
+            "tissage",
+            "métier à tisser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "écheveau",
+          "options": [
+            "écheveau",
+            "fil",
+            "chaîne",
+            "trame"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Tissage et tapisserie",
+    "title_fa": "آزمون : بافندگی و تاپیستری",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art et la technique de croiser des fils perpendiculairement pour former un tissu est le ____.",
+        "options": [
+          "tissage",
+          "métier à tisser",
+          "fil",
+          "chaîne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر درهم‌تنیدن نخ‌ها = tissage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le cadre en bois ou la machine qui maintient les fils tendus pendant la fabrication du tissu est le ____.",
+        "options": [
+          "métier à tisser",
+          "trame",
+          "motif",
+          "tapisserie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه نگهدارنده نخ‌ها = métier à tisser."
+      },
+      {
+        "type": "mcq",
+        "question": "Le brin long et fin, de coton, de laine ou de soie, qui sert de matière première est le ____.",
+        "options": [
+          "fil",
+          "laine",
+          "coton",
+          "soie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده اولیه نخ‌شکل = fil."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des fils longitudinaux tendus verticalement sur le métier, sur lesquels on croise la trame, est la ____.",
+        "options": [
+          "chaîne",
+          "navette",
+          "nœud",
+          "teinturier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نخ‌های عمودی و کشیده = chaîne."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fil transversal qui passe horizontalement à travers la chaîne pour former l'étoffe est la ____.",
+        "options": [
+          "trame",
+          "écheveau",
+          "tissage",
+          "métier à tisser"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نخ افقی عرضی = trame."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dessin, la figure ou l'ornement répété qui décore la surface du tissu est le ____.",
+        "options": [
+          "motif",
+          "fil",
+          "chaîne",
+          "trame"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طرح و نقش روی پارچه = motif."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ouvrage textile décoratif, tissé à la main et destiné à être accroché aux murs, est la ____.",
+        "options": [
+          "tapisserie",
+          "laine",
+          "coton",
+          "soie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پارچه تزیینی دیواری = tapisserie."
+      },
+      {
+        "type": "mcq",
+        "question": "La fibre textile naturelle et chaude, obtenue par la tonte des moutons, est la ____.",
+        "options": [
+          "laine",
+          "navette",
+          "nœud",
+          "teinturier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "الیاف طبیعی و گرم گوسفند = laine."
+      },
+      {
+        "type": "mcq",
+        "question": "La fibre végétale douce et légère, extraite de la plante du même nom, est le ____.",
+        "options": [
+          "coton",
+          "écheveau",
+          "tissage",
+          "métier à tisser"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "الیاف گیاهی و نرم = coton."
+      },
+      {
+        "type": "mcq",
+        "question": "La fibre précieuse, brillante et douce, produite par le ver à soie, est la ____.",
+        "options": [
+          "soie",
+          "fil",
+          "chaîne",
+          "trame"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "الیاف درخشان و قیمتی = soie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'outil en forme de petite barque qui transporte le fil de trame à travers les fils de chaîne est la ____.",
+        "options": [
+          "navette",
+          "motif",
+          "tapisserie",
+          "laine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار حمل نخ پود = navette."
+      },
+      {
+        "type": "mcq",
+        "question": "L'entrelacement serré de deux fils qui permet de les fixer ensemble, essentiel dans la fabrication des tapis, est le ____.",
+        "options": [
+          "nœud",
+          "coton",
+          "soie",
+          "navette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اتصال دو نخ به هم = nœud."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artisan spécialiste qui colore les fils et les tissus à l'aide de pigments est le ____.",
+        "options": [
+          "teinturier",
+          "écheveau",
+          "tissage",
+          "métier à tisser"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص رنگ‌آمیزی نخ = teinturier."
+      },
+      {
+        "type": "mcq",
+        "question": "Le paquet de fil enroulé sur lui-même, prêt à être dévidé pour le travail, est l'____.",
+        "options": [
+          "écheveau",
+          "fil",
+          "chaîne",
+          "trame"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بسته نخ پیچیده‌شده = écheveau."
+      },
+      {
+        "type": "binary",
+        "question": "La chaîne désigne les fils tendus verticalement sur le métier à tisser, croisés par la trame.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تار (chaîne) نخ‌های عمودی هستند که پود از میان آن‌ها عبور می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La navette est l'outil qui transporte le fil de trame à travers les fils de chaîne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ماکو (navette) نخ پود را از عرض دستگاه عبور می‌دهد."
+      },
+      {
+        "type": "binary",
+        "question": "Le teinturier est la personne qui tisse les tapisseries et répare les métiers à tisser.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. رنگرز (teinturier) کارش رنگ کردن نخ‌ها و پارچه‌هاست، نه بافتن آن‌ها."
+      },
+      {
+        "type": "binary",
+        "question": "L'écheveau est une grande pièce de tissu terminée et prête à être encadrée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کلاف (écheveau) بسته‌ای از نخ‌های پیچیده‌شده است، نه پارچه بافته‌شده."
+      },
+      {
+        "type": "binary",
+        "question": "Le métier à tisser est la structure qui maintient les fils de chaîne tendus pour faciliter le tissage.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دستگاه بافندگی (métier à tisser) چارچوب اصلی کار است."
+      },
+      {
+        "type": "binary",
+        "question": "Le motif désigne le dessin ou les formes décoratives créés par l'agencement des fils colorés.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. نقش (motif) طرحی است که از ترکیب نخ‌های رنگی به وجود می‌آید."
+      }
+    ]
+  }
+}
