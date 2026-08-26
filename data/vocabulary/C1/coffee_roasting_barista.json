@@ -1,0 +1,680 @@
+{
+  "id": "coffee_roasting_barista",
+  "level": "C1",
+  "theme": "Caféologie, torréfaction et culture du café",
+  "theme_fa": "قهوه‌شناسی، برشته‌کاری و فرهنگ قهوه",
+  "icon": "☕",
+  "inspiration": "Café Society (Woody Allen, 2016)",
+  "words": [
+    {
+      "fr": "le café",
+      "fa": "قهوه",
+      "emoji": "☕",
+      "difficulty": 2,
+      "ex": "Le café éthiopien est réputé pour ses notes florales et fruitées.",
+      "ex_fa": "قهوه اتیوپیایی به خاطر نت‌های گل‌دار و میوه‌ای‌اش مشهور است."
+    },
+    {
+      "fr": "le barista",
+      "fa": "باریستا",
+      "emoji": "🧑‍🍳",
+      "difficulty": 3,
+      "ex": "Le barista maîtrise l'extraction parfaite de chaque origine.",
+      "ex_fa": "باریستا بر عصاره‌گیری بی‌نقص هر خاستگاهی تسلط دارد."
+    },
+    {
+      "fr": "la torréfaction",
+      "fa": "برشته‌کاری، رُست",
+      "emoji": "🔥",
+      "difficulty": 4,
+      "ex": "La torréfaction révèle les arômes cachés dans le grain vert.",
+      "ex_fa": "برشته‌کاری عطرهای پنهان در دانه سبز را آشکار می‌کند."
+    },
+    {
+      "fr": "le grain",
+      "fa": "دانه قهوه",
+      "emoji": "🫘",
+      "difficulty": 2,
+      "ex": "Chaque grain est trié à la main pour éliminer les défauts.",
+      "ex_fa": "هر دانه برای حذف نقص‌ها با دست سورت می‌شود."
+    },
+    {
+      "fr": "l'espresso",
+      "fa": "اسپرسو",
+      "emoji": "☕",
+      "difficulty": 2,
+      "ex": "Un bon espresso doit être extrait en vingt-cinq secondes.",
+      "ex_fa": "یک اسپرسوی خوب باید در بیست و پنج ثانیه عصاره‌گیری شود."
+    },
+    {
+      "fr": "le filtre",
+      "fa": "فیلتر",
+      "emoji": "📄",
+      "difficulty": 3,
+      "ex": "Le café filtre offre une tasse propre et désaltérante.",
+      "ex_fa": "قهوه فیلتر یک فنجان شفاف و گلوگیر ارائه می‌دهد."
+    },
+    {
+      "fr": "la mousse",
+      "fa": "کف (شیر یا کرما)",
+      "emoji": "☁️",
+      "difficulty": 3,
+      "ex": "La mousse de lait doit être soyeuse et sans grosses bulles.",
+      "ex_fa": "کف شیر باید ابریشمی و بدون حباب‌های درشت باشد."
+    },
+    {
+      "fr": "l'arôme",
+      "fa": "عطر و بو",
+      "emoji": "👃",
+      "difficulty": 3,
+      "ex": "L'arôme du café fraîchement moulu emplit toute la maison.",
+      "ex_fa": "عطر قهوه تازه آسیاب‌شده کل خانه را پر می‌کند."
+    },
+    {
+      "fr": "la cafetière",
+      "fa": "قهوه‌ساز",
+      "emoji": "⚙️",
+      "difficulty": 3,
+      "ex": "La cafetière italienne produit un breuvage court et intense.",
+      "ex_fa": "قهوه‌ساز ایتالیایی (موکاپات) نوشیدنی‌ای کوتاه و غلیظ تولید می‌کند."
+    },
+    {
+      "fr": "le moulin",
+      "fa": "آسیاب",
+      "emoji": "⚙️",
+      "difficulty": 3,
+      "ex": "Le moulin à meules coniques garantit une mouture homogène.",
+      "ex_fa": "آسیاب مخروطی یکنواختی پودر را تضمین می‌کند."
+    },
+    {
+      "fr": "l'amertume",
+      "fa": "تلخی",
+      "emoji": "😖",
+      "difficulty": 4,
+      "ex": "Une extraction trop longue augmente l'amertume désagréable.",
+      "ex_fa": "عصاره‌گیری بیش از حد طولانی، تلخی ناخوشایند را افزایش می‌دهد."
+    },
+    {
+      "fr": "le latte",
+      "fa": "لاته",
+      "emoji": "🥛",
+      "difficulty": 3,
+      "ex": "Le latte art transforme la tasse en une toile éphémère.",
+      "ex_fa": "هنر لاته فنجان را به یک بوم نقاشی زودگذر تبدیل می‌کند."
+    },
+    {
+      "fr": "le percolateur",
+      "fa": "پرکولاتور (قهوه‌ساز چکه‌ای)",
+      "emoji": "⏳",
+      "difficulty": 5,
+      "ex": "Le percolateur en verre permet d'observer l'infusion goutte à goutte.",
+      "ex_fa": "پرکولاتور شیشه‌ای امکان مشاهده دم‌آوری قطره‌قطره را می‌دهد."
+    },
+    {
+      "fr": "la dégustation",
+      "fa": "چشیدن، تست مزه",
+      "emoji": "👅",
+      "difficulty": 4,
+      "ex": "La dégustation à la cuillère permet d'évaluer l'acidité et le corps.",
+      "ex_fa": "چشیدن با قاشق امکان ارزیابی اسیدیته و بدنه را می‌دهد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'alchimiste du matin",
+      "text": "Léo est un jeune {{BLANK_2}} passionné qui ouvre sa boutique à l'aube. Chaque semaine, il reçoit des sacs de {{BLANK_4}}s verts du monde entier. Il maîtrise l'art de la {{BLANK_3}} pour développer l'{{BLANK_8}} unique de chaque terroir. Avant chaque préparation, il utilise un {{BLANK_10}} précis pour moudre les grains à la minute. Ensuite, il extrait un {{BLANK_5}} serré avec sa {{BLANK_9}} professionnelle. Il adore aussi le {{BLANK_12}} art, créant des dessins complexes dans la {{BLANK_7}} de lait chaud. Pour les clients préférant les méthodes douces, il utilise un {{BLANK_6}} en papier ou un {{BLANK_13}} en verre élégant. La {{BLANK_14}} finale permet de juger l'équilibre parfait entre l'acidité vive et l'{{BLANK_11}} noble. Ce {{BLANK_1}} noir est bien plus qu'une simple boisson, c'est le carburant des rêves de la ville.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "café",
+          "options": [
+            "café",
+            "barista",
+            "torréfaction",
+            "grain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "barista",
+          "options": [
+            "barista",
+            "espresso",
+            "filtre",
+            "mousse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "torréfaction",
+          "options": [
+            "torréfaction",
+            "arôme",
+            "cafetière",
+            "moulin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "grain",
+          "options": [
+            "grain",
+            "amertume",
+            "latte",
+            "percolateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "espresso",
+          "options": [
+            "espresso",
+            "dégustation",
+            "café",
+            "barista"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "filtre",
+          "options": [
+            "filtre",
+            "torréfaction",
+            "grain",
+            "espresso"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "mousse",
+          "options": [
+            "mousse",
+            "arôme",
+            "cafetière",
+            "moulin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "arôme",
+          "options": [
+            "arôme",
+            "amertume",
+            "latte",
+            "percolateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cafetière",
+          "options": [
+            "cafetière",
+            "dégustation",
+            "café",
+            "barista"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "moulin",
+          "options": [
+            "moulin",
+            "torréfaction",
+            "grain",
+            "espresso"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "amertume",
+          "options": [
+            "amertume",
+            "filtre",
+            "mousse",
+            "arôme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "latte",
+          "options": [
+            "latte",
+            "cafetière",
+            "moulin",
+            "amertume"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "percolateur",
+          "options": [
+            "percolateur",
+            "dégustation",
+            "café",
+            "barista"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "dégustation",
+          "options": [
+            "dégustation",
+            "torréfaction",
+            "grain",
+            "espresso"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La mémoire en infusion",
+      "inspiration": "Café Society (Woody Allen, 2016)",
+      "text": "À peine le vieux {{BLANK_2}} eut-il ouvert le sac de jute que l'{{BLANK_8}} des hauts plateaux éthiopiens envahit la boutique endormie. Ce n'était pas un simple {{BLANK_1}}, c'était la mémoire liquide du monde. Il surveillait la {{BLANK_3}} comme un alchimiste, transformant le {{BLANK_4}} pâle en une perle sombre et huileuse. Le {{BLANK_10}} grinçait, libérant la poudre sacrificielle. Dans la {{BLANK_9}} brûlante, l'eau sous pression arrachait l'âme de la terre pour offrir un {{BLANK_5}} couronné d'une {{BLANK_7}} ocrée. Parfois, pour les âmes en quête de douceur, il versait le lait fumant en un {{BLANK_12}} éphémère. L'{{BLANK_11}} noble et l'acidité vive dansaient sur les papilles lors de la {{BLANK_14}} silencieuse. Quand le {{BLANK_13}} de verre gouttait lentement à travers le {{BLANK_6}}, il savait que chaque tasse était une promesse tenue, un rituel sacré qui reliait les solitudes urbaines dans la chaleur d'une porcelaine fumante.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "café",
+          "options": [
+            "café",
+            "barista",
+            "torréfaction",
+            "grain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "barista",
+          "options": [
+            "barista",
+            "espresso",
+            "filtre",
+            "mousse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "torréfaction",
+          "options": [
+            "torréfaction",
+            "arôme",
+            "cafetière",
+            "moulin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "grain",
+          "options": [
+            "grain",
+            "amertume",
+            "latte",
+            "percolateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "espresso",
+          "options": [
+            "espresso",
+            "dégustation",
+            "café",
+            "barista"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "filtre",
+          "options": [
+            "filtre",
+            "torréfaction",
+            "grain",
+            "espresso"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "mousse",
+          "options": [
+            "mousse",
+            "arôme",
+            "cafetière",
+            "moulin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "arôme",
+          "options": [
+            "arôme",
+            "amertume",
+            "latte",
+            "percolateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cafetière",
+          "options": [
+            "cafetière",
+            "dégustation",
+            "café",
+            "barista"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "moulin",
+          "options": [
+            "moulin",
+            "torréfaction",
+            "grain",
+            "espresso"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "amertume",
+          "options": [
+            "amertume",
+            "filtre",
+            "mousse",
+            "arôme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "latte",
+          "options": [
+            "latte",
+            "cafetière",
+            "moulin",
+            "amertume"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "percolateur",
+          "options": [
+            "percolateur",
+            "dégustation",
+            "café",
+            "barista"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "dégustation",
+          "options": [
+            "dégustation",
+            "torréfaction",
+            "grain",
+            "espresso"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Café et torréfaction",
+    "title_fa": "آزمون : قهوه و برشته‌کاری",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La boisson stimulante préparée à partir de graines torréfiées d'un arbuste tropical est le ____.",
+        "options": [
+          "café",
+          "barista",
+          "torréfaction",
+          "grain"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نوشیدنی تهیه‌شده از دانه‌های برشته = café."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel spécialisé dans la préparation et le service des boissons à base de café est le ____.",
+        "options": [
+          "barista",
+          "espresso",
+          "filtre",
+          "mousse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص تهیه قهوه = barista."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus thermique qui consiste à chauffer les grains verts pour développer leurs arômes est la ____.",
+        "options": [
+          "torréfaction",
+          "arôme",
+          "cafetière",
+          "moulin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرآیند حرارتی برشته کردن دانه‌ها = torréfaction."
+      },
+      {
+        "type": "mcq",
+        "question": "La graine du caféier, qui est récoltée, torréfiée puis moulue, est le ____.",
+        "options": [
+          "grain",
+          "amertume",
+          "latte",
+          "percolateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دانه قهوه = grain."
+      },
+      {
+        "type": "mcq",
+        "question": "Le café très concentré obtenu par percolation rapide d'eau chaude sous pression est l'____.",
+        "options": [
+          "espresso",
+          "dégustation",
+          "café",
+          "barista"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قهوه غلیظ با فشار آب = espresso."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dispositif en papier ou en métal qui retient le marc et laisse passer le liquide est le ____.",
+        "options": [
+          "filtre",
+          "torréfaction",
+          "grain",
+          "espresso"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله جداکننده تفاله = filtre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'écume légère qui se forme à la surface de l'espresso ou du lait chauffé à la vapeur est la ____.",
+        "options": [
+          "mousse",
+          "arôme",
+          "cafetière",
+          "moulin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کف روی قهوه یا شیر = mousse."
+      },
+      {
+        "type": "mcq",
+        "question": "L'odeur agréable et complexe qui se dégage du café fraîchement préparé est l'____.",
+        "options": [
+          "arôme",
+          "amertume",
+          "latte",
+          "percolateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بوی خوش قهوه = arôme."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil électroménager ou manuel utilisé pour préparer le café par infusion est la ____.",
+        "options": [
+          "cafetière",
+          "dégustation",
+          "café",
+          "barista"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه قهوه‌ساز = cafetière."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument équipé de meules qui broie les grains torréfiés en poudre fine est le ____.",
+        "options": [
+          "moulin",
+          "torréfaction",
+          "grain",
+          "espresso"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آسیاب قهوه = moulin."
+      },
+      {
+        "type": "mcq",
+        "question": "La saveur fondamentale, parfois recherchée mais souvent signe de sur-extraction, est l'____.",
+        "options": [
+          "amertume",
+          "filtre",
+          "mousse",
+          "arôme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طعم تلخ = amertume."
+      },
+      {
+        "type": "mcq",
+        "question": "La boisson composée d'un espresso allongé avec une grande quantité de lait mousseux est le ____.",
+        "options": [
+          "latte",
+          "cafetière",
+          "moulin",
+          "amertume"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قهوه با شیر فوم‌دار زیاد = latte."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil qui fait passer l'eau bouillante à travers la mouture par gravité ou pression est le ____.",
+        "options": [
+          "percolateur",
+          "dégustation",
+          "café",
+          "barista"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه عبور دهنده آب جوش = percolateur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de goûter et d'analyser méthodiquement les qualités organoleptiques d'un café est la ____.",
+        "options": [
+          "dégustation",
+          "torréfaction",
+          "grain",
+          "espresso"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل چشیدن و ارزیابی = dégustation."
+      },
+      {
+        "type": "binary",
+        "question": "La torréfaction est l'étape où l'on mélange le café moulu avec de l'eau froide.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. برشته‌کاری (torréfaction) حرارت دادن به دانه‌های سبز قهوه برای قهوه‌ای شدن و ایجاد عطر آن‌هاست."
+      },
+      {
+        "type": "binary",
+        "question": "L'espresso est caractérisé par son extraction rapide sous haute pression, produisant une petite quantité de liquide.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اسپرسو با فشار بالا و در زمان کوتاه عصاره‌گیری می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le barista est le cultivateur qui récolte les cerises de café dans les plantations tropicales.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. باریستا (barista) متخصص آماده‌سازی قهوه در کافه است؛ کشاورز قهوه producteur نامیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Une amertume excessive dans la tasse est souvent le signe d'une mouture trop fine ou d'une extraction trop longue.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تلخی زیاد معمولاً ناشی از عصاره‌گیری بیش از حد (over-extraction) است."
+      },
+      {
+        "type": "binary",
+        "question": "Le percolateur désigne exclusivement la petite cuillère utilisée par les experts pour goûter le café.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پرکولاتور (percolateur) نوعی دستگاه قهوه‌ساز است، نه قاشق چشیدن."
+      },
+      {
+        "type": "binary",
+        "question": "Le moulin sert à réduire les grains de café torréfiés en poudre avant l'infusion.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. آسیاب (moulin) دانه‌ها را برای دم‌آوری خرد می‌کند."
+      }
+    ]
+  }
+}
