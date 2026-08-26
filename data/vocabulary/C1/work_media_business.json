@@ -1,0 +1,683 @@
+{
+  "id": "work_media_business",
+  "level": "C1",
+  "theme": "Travail, économie, médias et affaires",
+  "theme_fa": "محیط کار، اقتصاد، رسانه و تجارت",
+  "icon": "💼",
+  "inspiration": "Spotlight (Tom McCarthy, 2015)",
+  "words": [
+    {
+      "fr": "le tirage",
+      "fa": "تیراژ",
+      "emoji": "🗞️",
+      "difficulty": 3,
+      "ex": "Le tirage de ce quotidien national dépasse les trois cent mille exemplaires.",
+      "ex_fa": "تیراژ این روزنامه ملی از سیصد هزار نسخه فراتر می‌رود."
+    },
+    {
+      "fr": "la une",
+      "fa": "صفحه اول روزنامه",
+      "emoji": "📰",
+      "difficulty": 3,
+      "ex": "Le scandale politique a fait la une de tous les journaux ce matin.",
+      "ex_fa": "رسوایی سیاسی امروز صبح در صفحه اول تمام روزنامه‌ها بود."
+    },
+    {
+      "fr": "le scoop",
+      "fa": "خبر دست‌اول",
+      "emoji": "📸",
+      "difficulty": 3,
+      "ex": "Le journaliste a publié un scoop qui a fait trembler le gouvernement.",
+      "ex_fa": "روزنامه‌نگار خبر دست‌اولی منتشر کرد که دولت را به لرزه درآورد."
+    },
+    {
+      "fr": "le déficit",
+      "fa": "کسری بودجه",
+      "emoji": "📉",
+      "difficulty": 3,
+      "ex": "L'entreprise a annoncé un déficit record pour le dernier trimestre.",
+      "ex_fa": "شرکت کسری بودجه رکوردشکنی را برای سه‌ماهه آخر اعلام کرد."
+    },
+    {
+      "fr": "le monopole",
+      "fa": "انحصار",
+      "emoji": "🏢",
+      "difficulty": 3,
+      "ex": "L'autorité de la concurrence lutte contre le monopole de ce géant du numérique.",
+      "ex_fa": "سازمان رقابت علیه انحصار این غول دیجیتال مبارزه می‌کند."
+    },
+    {
+      "fr": "la fusion",
+      "fa": "ادغام شرکت‌ها",
+      "emoji": "🤝",
+      "difficulty": 4,
+      "ex": "La fusion des deux banques créera le plus grand établissement financier du pays.",
+      "ex_fa": "ادغام دو بانک، بزرگترین مؤسسه مالی کشور را ایجاد خواهد کرد."
+    },
+    {
+      "fr": "le dividende",
+      "fa": "سود سهام",
+      "emoji": "💰",
+      "difficulty": 4,
+      "ex": "Les actionnaires ont voté pour une augmentation du dividende annuel.",
+      "ex_fa": "سهامداران به افزایش سود سهام سالانه رأی دادند."
+    },
+    {
+      "fr": "la faillite",
+      "fa": "ورشکستگی",
+      "emoji": "📉",
+      "difficulty": 3,
+      "ex": "La petite librairie a dû déposer le bilan et faire face à la faillite.",
+      "ex_fa": "کتابفروشی کوچک مجبور شد اعلام ورشکستگی کند."
+    },
+    {
+      "fr": "le syndicat",
+      "fa": "اتحادیه کارگری",
+      "emoji": "✊",
+      "difficulty": 3,
+      "ex": "Le syndicat des transports a appelé à une grève illimitée.",
+      "ex_fa": "اتحادیه حمل‌ونقل فراخوان اعتصاب نامحدود داد."
+    },
+    {
+      "fr": "la grève",
+      "fa": "اعتصاب",
+      "emoji": "🛑",
+      "difficulty": 3,
+      "ex": "La grève des éboueurs paralyse la ville depuis une semaine.",
+      "ex_fa": "اعتصاب رفتگران یک هفته است که شهر را فلج کرده است."
+    },
+    {
+      "fr": "le mécénat",
+      "fa": "حمایت مالی از هنر و فرهنگ",
+      "emoji": "🎨",
+      "difficulty": 4,
+      "ex": "Grâce au mécénat d'entreprise, le musée a pu restaurer ses œuvres majeures.",
+      "ex_fa": "به لطف حمایت مالی شرکت‌ها، موزه توانست آثار مهم خود را بازسازی کند."
+    },
+    {
+      "fr": "le lobbying",
+      "fa": "لابی‌گری",
+      "emoji": "🗣️",
+      "difficulty": 4,
+      "ex": "L'industrie pharmaceutique dépense des millions en lobbying pour influencer les lois.",
+      "ex_fa": "صنعت داروسازی میلیون‌ها دلار صرف لابی‌گری برای تأثیرگذاری بر قوانین می‌کند."
+    },
+    {
+      "fr": "l'audit",
+      "fa": "حسابرسی",
+      "emoji": "🔍",
+      "difficulty": 4,
+      "ex": "L'audit financier a révélé de graves irrégularités dans la comptabilité.",
+      "ex_fa": "حسابرسی مالی بی‌نظمی‌های شدیدی را در حسابداری آشکار کرد."
+    },
+    {
+      "fr": "le bilan",
+      "fa": "ترازنامه، کارنامه",
+      "emoji": "📊",
+      "difficulty": 4,
+      "ex": "Le bilan de l'année montre une croissance de 5% malgré la crise.",
+      "ex_fa": "ترازنامه سال نشان‌دهنده رشد ۵ درصدی علی‌رغم بحران است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'enquête du Boston Globe",
+      "title_fa": "تحقیق روزنامه بوستون گلوب",
+      "text": "Walter Robinson dirige l'équipe d'investigation du Boston Globe, appelée « Spotlight ». Le journal traverse une période difficile : le {{BLANK_1}} baisse chaque mois à cause d'Internet et le {{BLANK_2}} financier s'aggrave. Pour redresser la barre, la direction envisage même une {{BLANK_3}} avec un autre groupe de presse. Mais Walter croit encore au pouvoir du journalisme. Un jour, un avocat lui confie un dossier explosif sur des abus dans l'Église locale. C'est un {{BLANK_4}} potentiel qui pourrait faire la {{BLANK_5}} du journal pendant des semaines. L'équipe commence un long travail de recherche. Ils engagent un cabinet pour réaliser un {{BLANK_6}} indépendant des archives judiciaires. Ils découvrent que l'institution a couvert des crimes pendant des décennies. Pendant l'enquête, les journalistes subissent des pressions. Des groupes conservateurs font du {{BLANK_7}} auprès des annonceurs pour les menacer de retirer leurs publicités. De plus, le journal refuse traditionnellement le {{BLANK_8}} d'entreprises liées à l'Église pour garder son indépendance éditoriale. Quand l'article est enfin prêt, les employés de l'imprimerie, soutenus par leur {{BLANK_9}}, menacent de faire {{BLANK_10}} pour obtenir de meilleures conditions de travail. Walter doit négocier rapidement pour ne pas rater la date de publication. Le dimanche matin, le journal sort. Le {{BLANK_11}} est exceptionnel : tous les exemplaires sont vendus en quelques heures. L'impact est mondial. Les actionnaires, voyant le retour de la crédibilité, acceptent de réduire leur {{BLANK_12}} pour réinvestir dans la rédaction. Quelques mois plus tard, une grande entreprise locale, autrefois en situation de {{BLANK_13}} sur le marché immobilier, fait {{BLANK_14}} à cause du scandale révélé. Le Boston Globe a prouvé que le journalisme d'investigation pouvait encore changer le monde.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "tirage",
+          "options": [
+            "tirage",
+            "bilan",
+            "dividende",
+            "scoop"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "déficit",
+          "options": [
+            "déficit",
+            "monopole",
+            "mécénat",
+            "audit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fusion",
+          "options": [
+            "fusion",
+            "grève",
+            "faillite",
+            "une"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "scoop",
+          "options": [
+            "scoop",
+            "bilan",
+            "tirage",
+            "dividende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "une",
+          "options": [
+            "une",
+            "fusion",
+            "grève",
+            "faillite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "audit",
+          "options": [
+            "audit",
+            "lobbying",
+            "mécénat",
+            "syndicat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "lobbying",
+          "options": [
+            "lobbying",
+            "mécénat",
+            "déficit",
+            "tirage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "mécénat",
+          "options": [
+            "mécénat",
+            "monopole",
+            "audit",
+            "dividende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "syndicat",
+          "options": [
+            "syndicat",
+            "lobbying",
+            "bilan",
+            "scoop"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "grève",
+          "options": [
+            "grève",
+            "fusion",
+            "faillite",
+            "une"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "tirage",
+          "options": [
+            "tirage",
+            "déficit",
+            "bilan",
+            "dividende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "dividende",
+          "options": [
+            "dividende",
+            "mécénat",
+            "audit",
+            "scoop"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "monopole",
+          "options": [
+            "monopole",
+            "déficit",
+            "tirage",
+            "grève"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "faillite",
+          "options": [
+            "faillite",
+            "fusion",
+            "une",
+            "lobbying"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les ombres de la ville",
+      "title_fa": "سایه‌های شهر",
+      "inspiration": "Spotlight (Tom McCarthy, 2015)",
+      "text": "À peine le café eut-il coulé dans la tasse ébréchée de Walter Robinson que le téléphone de son bureau se mit à hurler. Nous étions en juillet 2001, et la rédaction du Boston Globe bruissait de cette agitation fébrile propre aux salles de nouvelles. Walter dirigeait l'équipe Spotlight, quatre journalistes d'élite chargés des enquêtes au long cours. Ce matin-là, le nouveau rédacteur en chef, Marty Baron, venait de débarquer de Miami avec une idée fixe : briser le mur du silence qui protégeait le clergé local. Le journal, il faut le dire, traversait une crise existentielle. Le {{BLANK_1}} papier s'effondrait mois après mois, grignoté par les sites d'information gratuits. Le conseil d'administration s'inquiétait du {{BLANK_2}} croissant et envisageait sérieusement une {{BLANK_3}} avec un conglomérat new-yorkais pour sauver les meubles. Mais Baron s'en moquait. « Nous ne sommes pas là pour faire du profit, » avait-il lancé lors de sa première conférence. « Nous sommes là pour dire la vérité. » L'enquête commença par un nom : le père Geoghan. Un avocat, Mitchell Garabedian, accepta de leur parler en off. Ce qu'il leur révéla glaça l'équipe. Ce n'était pas un cas isolé, mais un système. Walter sentit qu'il tenait là un {{BLANK_4}} capable d'ébranler les fondations mêmes de la ville de Boston. Mais il fallait des preuves, des documents. L'équipe se mit à éplucher les annuaires, les registres paroissiaux, les archives judiciaires. Ils engagèrent un cabinet spécialisé pour mener un {{BLANK_5}} comptable des transactions suspectes entre le diocèse et ses assureurs. Les semaines passèrent. L'équipe travaillait seize heures par jour, dormant sur des canapés de bureau. Mais les obstacles s'accumulaient. Les avocats de l'Église multipliaient les procédures pour bloquer l'accès aux dossiers. En coulisses, un intense travail de {{BLANK_6}} s'organisait auprès des élus locaux pour faire voter des lois restreignant la liberté de la presse. Le Globe, historiquement proche de l'institution religieuse, avait longtemps bénéficié de son {{BLANK_7}} pour financer des expositions culturelles. Accepter cette manne, c'était compromettre son indépendance. Baron trancha : on refuserait désormais tout argent suspect. Puis vint la crise sociale. Les imprimeurs, inquiets pour leur avenir dans un secteur en déclin, votèrent la {{BLANK_8}}. Leur {{BLANK_9}}, puissant et bien organisé, bloqua les rotatives. Walter dut descendre dans les sous-sols pour négocier, promettant des primes de résultat si l'enquête aboutissait. La {{BLANK_10}} fut levée in extremis. Enfin, en janvier 2002, l'article fut publié. Il fit la {{BLANK_11}} non seulement du Globe, mais de tous les journaux du pays. Le standard du journal explosa. Des centaines de victimes appelèrent pour témoigner. Le {{BLANK_12}} de ce dimanche-là dut être triplé en urgence pour répondre à la demande. Dans les mois qui suivirent, les répercussions furent sismiques. Le cardinal Law dut démissionner. L'Église, qui jouissait d'un quasi-{{BLANK_13}} moral sur la ville, vit son autorité s'effriter. Plusieurs de ses institutions caritatives, privées de dons, frôlèrent la {{BLANK_14}}. Quant aux actionnaires du Globe, voyant le prestige retrouvé et les abonnements numériques décoller, ils acceptèrent de réduire leur {{BLANK_15}} habituel pour réinvestir dans la rédaction. Walter, assis à son bureau un soir de décembre, regarda les lumières de Boston scintiller à travers la fenêtre. Il savait que d'autres ombres se cachaient dans les recoins de la ville, attendant qu'on vienne les éclairer. Et tant qu'il y aurait des journalistes pour allumer la lumière, la démocratie aurait une chance.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "tirage",
+          "options": [
+            "tirage",
+            "bilan",
+            "dividende",
+            "scoop"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "déficit",
+          "options": [
+            "déficit",
+            "monopole",
+            "mécénat",
+            "audit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fusion",
+          "options": [
+            "fusion",
+            "grève",
+            "faillite",
+            "une"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "scoop",
+          "options": [
+            "scoop",
+            "bilan",
+            "tirage",
+            "dividende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "audit",
+          "options": [
+            "audit",
+            "lobbying",
+            "mécénat",
+            "syndicat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "lobbying",
+          "options": [
+            "lobbying",
+            "mécénat",
+            "déficit",
+            "tirage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "mécénat",
+          "options": [
+            "mécénat",
+            "monopole",
+            "audit",
+            "dividende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "grève",
+          "options": [
+            "grève",
+            "fusion",
+            "faillite",
+            "une"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "syndicat",
+          "options": [
+            "syndicat",
+            "lobbying",
+            "bilan",
+            "scoop"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "grève",
+          "options": [
+            "grève",
+            "fusion",
+            "faillite",
+            "une"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "une",
+          "options": [
+            "une",
+            "déficit",
+            "bilan",
+            "dividende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "tirage",
+          "options": [
+            "tirage",
+            "audit",
+            "mécénat",
+            "lobbying"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "monopole",
+          "options": [
+            "monopole",
+            "déficit",
+            "tirage",
+            "grève"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "faillite",
+          "options": [
+            "faillite",
+            "fusion",
+            "une",
+            "lobbying"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "dividende",
+          "options": [
+            "dividende",
+            "mécénat",
+            "audit",
+            "scoop"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Presse, économie et monde du travail",
+    "title_fa": "آزمون : مطبوعات، اقتصاد و دنیای کار",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Chaque jour, cette imprimerie produit cinq cent mille exemplaires du quotidien national. C'est son ____ quotidien.",
+        "options": [
+          "tirage",
+          "bilan",
+          "dividende",
+          "scoop"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تعداد نسخه‌های چاپ‌شده روزنامه = tirage."
+      },
+      {
+        "type": "mcq",
+        "question": "La photo du président démissionnaire occupe toute la première page du journal ce matin. Elle est à la ____.",
+        "options": [
+          "une",
+          "fusion",
+          "grève",
+          "faillite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صفحه اول و ویترین روزنامه = une."
+      },
+      {
+        "type": "mcq",
+        "question": "Le reporter a obtenu en exclusivité les documents secrets du gouvernement. Il vient de publier un ____ retentissant.",
+        "options": [
+          "scoop",
+          "bilan",
+          "tirage",
+          "dividende"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خبر اختصاصی و دست‌اول = scoop."
+      },
+      {
+        "type": "mcq",
+        "question": "À la fin de l'année, les dépenses de l'entreprise ont dépassé ses recettes de deux millions d'euros. Elle affiche un ____.",
+        "options": [
+          "déficit",
+          "monopole",
+          "mécénat",
+          "audit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کسری بودجه و زیان = déficit."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette entreprise de téléphonie est la seule à fournir l'accès à Internet dans cette région rurale. Elle détient un ____.",
+        "options": [
+          "monopole",
+          "déficit",
+          "tirage",
+          "grève"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انحصار کامل یک بازار = monopole."
+      },
+      {
+        "type": "mcq",
+        "question": "Les deux constructeurs automobiles ont décidé d'unir leurs forces pour créer un géant mondial. Cette ____ a été validée par Bruxelles.",
+        "options": [
+          "fusion",
+          "grève",
+          "faillite",
+          "une"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ادغام دو شرکت در یکدیگر = fusion."
+      },
+      {
+        "type": "mcq",
+        "question": "L'assemblée générale des actionnaires a voté la distribution de 5 euros par action aux investisseurs. C'est le ____.",
+        "options": [
+          "dividende",
+          "mécénat",
+          "audit",
+          "scoop"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخشی از سود که به سهامداران پرداخت می‌شود = dividende."
+      },
+      {
+        "type": "mcq",
+        "question": "Incapable de rembourser ses dettes, le commerçant a dû fermer boutique et déclarer ____.",
+        "options": [
+          "faillite",
+          "fusion",
+          "une",
+          "lobbying"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورشکستگی و ناتوانی در پرداخت دیون = faillite."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour défendre leurs droits et négocier les salaires, les cheminots se sont organisés en ____.",
+        "options": [
+          "syndicat",
+          "lobbying",
+          "bilan",
+          "scoop"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازمان کارگران برای دفاع از منافعشان = syndicat."
+      },
+      {
+        "type": "mcq",
+        "question": "Les éboueurs refusent de travailler tant que leurs conditions de sécurité ne seront pas améliorées. La ____ paralyse la ville.",
+        "options": [
+          "grève",
+          "fusion",
+          "faillite",
+          "une"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توقف دسته‌جمعی کار به‌نشانه اعتراض = grève."
+      },
+      {
+        "type": "mcq",
+        "question": "Une grande banque finance la restauration d'un tableau de la Renaissance pour le musée du Louvre. C'est une opération de ____.",
+        "options": [
+          "mécénat",
+          "monopole",
+          "audit",
+          "dividende"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حمایت مالی شرکت‌ها از هنر و فرهنگ = mécénat."
+      },
+      {
+        "type": "mcq",
+        "question": "Les représentants de l'industrie pétrolière rencontrent les députés pour les convaincre de voter contre la taxe carbone. Ils font du ____.",
+        "options": [
+          "lobbying",
+          "mécénat",
+          "déficit",
+          "tirage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تلاش برای تأثیرگذاری بر قانون‌گذاران = lobbying."
+      },
+      {
+        "type": "mcq",
+        "question": "Des experts-comptables externes ont vérifié les livres de la société pour s'assurer qu'il n'y avait pas de fraude. Ils ont mené un ____.",
+        "options": [
+          "audit",
+          "lobbying",
+          "mécénat",
+          "syndicat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بررسی و حسابرسی مالی توسط متخصصان = audit."
+      },
+      {
+        "type": "mcq",
+        "question": "À la fin de l'exercice comptable, le directeur financier présente le ____ qui résume les actifs et les passifs de l'entreprise.",
+        "options": [
+          "bilan",
+          "tirage",
+          "dividende",
+          "scoop"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ترازنامه مالی و کارنامه شرکت = bilan."
+      },
+      {
+        "type": "binary",
+        "question": "Le tirage et la une désignent tous deux la première page d'un journal.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "une صفحه اول است، اما tirage به معنای تیراژ و تعداد کل نسخه‌های چاپ‌شده است."
+      },
+      {
+        "type": "binary",
+        "question": "Le mécénat et le sponsoring (parrainage) poursuivent exactement les mêmes objectifs commerciaux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "mécénat حمایت بدون انتظار بازگشت تبلیغاتی مستقیم است، اما sponsoring هدف تجاری و تبلیغاتی دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Un monopole existe lorsqu'une seule entreprise contrôle l'ensemble de l'offre sur un marché donné.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، monopole به معنای انحصار کامل یک بازار توسط یک بازیگر است."
+      },
+      {
+        "type": "binary",
+        "question": "La faillite est la situation juridique d'une entreprise qui ne peut plus faire face à ses dettes exigibles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، faillite (یا redressement judiciaire) حالت ناتوانی در پرداخت بدهی‌هاست."
+      },
+      {
+        "type": "binary",
+        "question": "Le dividende est la partie du bénéfice d'une société distribuée à ses actionnaires.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، dividende سودی است که به نسبت سهام به سرمایه‌گذاران پرداخت می‌شود."
+      }
+    ]
+  }
+}
