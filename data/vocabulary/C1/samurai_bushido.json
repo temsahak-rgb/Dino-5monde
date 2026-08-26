@@ -1,0 +1,680 @@
+{
+  "id": "samurai_bushido",
+  "level": "C1",
+  "theme": "Samouraïs, bushido et culture japonaise",
+  "theme_fa": "سامورایی، بوشیدو و فرهنگ ژاپنی",
+  "icon": "⚔️",
+  "inspiration": "Le Dernier Samouraï (Edward Zwick, 2003)",
+  "words": [
+    {
+      "fr": "le samouraï",
+      "fa": "سامورایی",
+      "emoji": "⚔️",
+      "difficulty": 3,
+      "ex": "Le samouraï servait son seigneur avec une loyauté absolue.",
+      "ex_fa": "سامورایی با وفاداری مطلق به اربابش خدمت می‌کرد."
+    },
+    {
+      "fr": "le bushido",
+      "fa": "بوشیدو (راه جنگجو)",
+      "emoji": "📜",
+      "difficulty": 5,
+      "ex": "Le bushido est le code d'honneur des guerriers japonais.",
+      "ex_fa": "بوشیدو کد افتخار جنگجویان ژاپنی است."
+    },
+    {
+      "fr": "le katana",
+      "fa": "شمشیر کاتانا",
+      "emoji": "🗡️",
+      "difficulty": 4,
+      "ex": "Le katana est considéré comme l'âme du samouraï.",
+      "ex_fa": "کاتانا به عنوان روح سامورایی در نظر گرفته می‌شود."
+    },
+    {
+      "fr": "le seigneur",
+      "fa": "ارباب، دایمیو",
+      "emoji": "👑",
+      "difficulty": 3,
+      "ex": "Le seigneur féodal commandait des armées de samouraïs.",
+      "ex_fa": "ارباب فئودالی ارتش‌هایی از سامورایی‌ها را فرماندهی می‌کرد."
+    },
+    {
+      "fr": "le harakiri",
+      "fa": "هاراکیری (خودکشی آیینی)",
+      "emoji": "⚔️",
+      "difficulty": 5,
+      "ex": "Le harakiri était pratiqué pour restaurer l'honneur perdu.",
+      "ex_fa": "هاراکیری برای بازگرداندن آبروی از دست رفته انجام می‌شد."
+    },
+    {
+      "fr": "la loyauté",
+      "fa": "وفاداری",
+      "emoji": "🤝",
+      "difficulty": 3,
+      "ex": "La loyauté envers le seigneur primait sur tout.",
+      "ex_fa": "وفاداری به ارباب بر همه چیز اولویت داشت."
+    },
+    {
+      "fr": "l'honneur",
+      "fa": "افتخار، شرف",
+      "emoji": "🎌",
+      "difficulty": 3,
+      "ex": "L'honneur était plus important que la vie elle-même.",
+      "ex_fa": "افتخار از خود زندگی مهم‌تر بود."
+    },
+    {
+      "fr": "le dojo",
+      "fa": "دوجو (محل تمرین)",
+      "emoji": "🏛️",
+      "difficulty": 4,
+      "ex": "Le dojo est le lieu sacré de l'apprentissage martial.",
+      "ex_fa": "دوجو مکان مقدس یادگیری رزمی است."
+    },
+    {
+      "fr": "le sensei",
+      "fa": "استاد، معلم",
+      "emoji": "🧙",
+      "difficulty": 4,
+      "ex": "Le sensei transmet la sagesse ancestrale à ses élèves.",
+      "ex_fa": "استاد خرد باستانی را به شاگردانش منتقل می‌کند."
+    },
+    {
+      "fr": "le sakura",
+      "fa": "شکوفه گیلاس",
+      "emoji": "🌸",
+      "difficulty": 4,
+      "ex": "Le sakura symbolise la beauté éphémère de la vie.",
+      "ex_fa": "شکوفه گیلاس نماد زیبایی زودگذر زندگی است."
+    },
+    {
+      "fr": "le zen",
+      "fa": "ذن (مکتب بودایی)",
+      "emoji": "🧘",
+      "difficulty": 4,
+      "ex": "Le zen enseigne la méditation et la pleine conscience.",
+      "ex_fa": "ذن مراقبه و حضور ذهن را آموزش می‌دهد."
+    },
+    {
+      "fr": "le shogun",
+      "fa": "شوگون (فرمانده نظامی)",
+      "emoji": "⚔️",
+      "difficulty": 5,
+      "ex": "Le shogun détenait le pouvoir militaire réel au Japon féodal.",
+      "ex_fa": "شوگون قدرت نظامی واقعی در ژاپن فئودالی را در دست داشت."
+    },
+    {
+      "fr": "la discipline",
+      "fa": "نظم، انضباط",
+      "emoji": "📏",
+      "difficulty": 3,
+      "ex": "La discipline martiale forge le caractère du guerrier.",
+      "ex_fa": "نظم رزمی شخصیت جنگجو را می‌سازد."
+    },
+    {
+      "fr": "le kimono",
+      "fa": "کیمونو",
+      "emoji": "👘",
+      "difficulty": 3,
+      "ex": "Le kimono traditionnel est porté lors des cérémonies.",
+      "ex_fa": "کیمونوی سنتی در مراسم پوشیده می‌شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le capitaine et le guerrier",
+      "text": "Nathan Algren est un ancien capitaine américain traumatisé par la guerre. Il est engagé pour entraîner l'armée impériale japonaise à utiliser des fusils modernes. Mais quand il est capturé par des samouraïs rebelles, sa vie bascule. Katsumoto, le {{BLANK_1}} chef des rebelles, l'épargne et l'emmène dans son village montagnard. Là, Nathan découvre le {{BLANK_2}}, ce code d'honneur millénaire qui régit la vie des guerriers. Il apprend que le {{BLANK_3}} n'est pas une simple arme, mais l'âme même du guerrier. Chaque jour, il observe la {{BLANK_6}} absolue des samouraïs envers leur {{BLANK_4}}, le seigneur local. L'{{BLANK_7}} guide chaque action, chaque décision. Dans le {{BLANK_8}} du village, les jeunes guerriers s'entraînent sous la direction d'un {{BLANK_9}} exigeant. La {{BLANK_13}} martiale est enseignée dès l'enfance. Nathan commence à comprendre la philosophie du {{BLANK_11}}, cette méditation qui apporte la paix intérieure. Au printemps, les {{BLANK_10}}s tombent comme des flocons de neige, rappelant que la vie est belle parce qu'elle est courte. Les guerriers portent le {{BLANK_14}} traditionnel lors des cérémonies. Quand l'armée impériale attaque, Nathan choisit son camp. Il combat aux côtés des samouraïs, respectant leur {{BLANK_12}} suprême qui refuse la modernisation aveugle. Dans la bataille finale, Katsumoto pratique le {{BLANK_5}} pour mourir avec dignité. Nathan a trouvé un sens à sa vie en honorant ces guerriers d'un autre temps.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "samouraï",
+          "options": [
+            "samouraï",
+            "bushido",
+            "katana",
+            "seigneur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bushido",
+          "options": [
+            "bushido",
+            "harakiri",
+            "loyauté",
+            "honneur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "katana",
+          "options": [
+            "katana",
+            "dojo",
+            "sensei",
+            "sakura"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "seigneur",
+          "options": [
+            "seigneur",
+            "zen",
+            "shogun",
+            "discipline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "harakiri",
+          "options": [
+            "harakiri",
+            "kimono",
+            "samouraï",
+            "bushido"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "loyauté",
+          "options": [
+            "loyauté",
+            "honneur",
+            "katana",
+            "seigneur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "honneur",
+          "options": [
+            "honneur",
+            "dojo",
+            "sensei",
+            "sakura"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dojo",
+          "options": [
+            "dojo",
+            "zen",
+            "shogun",
+            "discipline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "sensei",
+          "options": [
+            "sensei",
+            "kimono",
+            "samouraï",
+            "bushido"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sakura",
+          "options": [
+            "sakura",
+            "harakiri",
+            "loyauté",
+            "honneur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "zen",
+          "options": [
+            "zen",
+            "dojo",
+            "sensei",
+            "katana"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "shogun",
+          "options": [
+            "shogun",
+            "seigneur",
+            "discipline",
+            "kimono"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "discipline",
+          "options": [
+            "discipline",
+            "samouraï",
+            "bushido",
+            "katana"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "kimono",
+          "options": [
+            "kimono",
+            "seigneur",
+            "harakiri",
+            "loyauté"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La chute des pétales",
+      "inspiration": "Le Dernier Samouraï (Edward Zwick, 2003)",
+      "text": "À peine Nathan eut-il ouvert les yeux dans la hutte de montagne qu'il comprit que son âme de soldat brisé allait renaître dans un corps étranger. Ce capitaine américain, hanté par le massacre des Indiens, se retrouvait prisonnier d'un monde où le temps semblait suspendu. Katsumoto, ce {{BLANK_1}} qui lisait les poèmes autant qu'il maniait le {{BLANK_3}}, l'avait épargné non par pitié, mais par curiosité philosophique. Dans ce village oublié des cartes modernes, Nathan découvrit que le {{BLANK_2}} n'était pas un code de mort, mais un art de vivre pleinement chaque instant. Il apprit que la {{BLANK_6}} envers le {{BLANK_4}} n'était pas de la servitude, mais un don total de soi à quelque chose de plus grand. L'{{BLANK_7}} n'était pas une vanité, mais une boussole morale qui guidait chaque souffle. Chaque matin, dans le {{BLANK_8}} de bois poli par des générations de pieds nus, les jeunes guerriers répétaient les katas sous l'œil impitoyable de leur {{BLANK_9}}. La {{BLANK_13}} n'était pas une contrainte, mais une liberté : celle de maîtriser son corps pour libérer son esprit. Nathan s'initia au {{BLANK_11}}, cette méditation qui lui apprit à observer ses pensées sans les juger, à accepter la douleur sans la fuir. Au printemps, quand les {{BLANK_10}}s commencèrent leur danse funèbre, il comprit enfin pourquoi les guerriers aimaient ces fleurs : elles mouraient au sommet de leur beauté, sans regret, sans peur. Les hommes portaient le {{BLANK_14}} de soie pour les cérémonies, et chaque pli racontait une histoire de famille, de batailles, d'amours perdus. Quand l'armée impériale, armée de canons occidentaux, vint écraser ce monde ancien, Nathan choisit son camp. Il n'était plus l'Américain qui entraînait des tueurs, mais le disciple qui défendait une philosophie. Le {{BLANK_12}} lui-même, ce titre militaire suprême, ne pouvait rien contre la force des convictions. Dans la bataille finale, quand Katsumoto s'ouvrit le ventre dans le rituel du {{BLANK_5}}, Nathan comprit que certains hommes ne meurent pas : ils deviennent des légendes, des étoiles qui guident les âmes perdues vers leur propre lumière.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "samouraï",
+          "options": [
+            "samouraï",
+            "bushido",
+            "katana",
+            "seigneur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bushido",
+          "options": [
+            "bushido",
+            "harakiri",
+            "loyauté",
+            "honneur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "katana",
+          "options": [
+            "katana",
+            "dojo",
+            "sensei",
+            "sakura"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "seigneur",
+          "options": [
+            "seigneur",
+            "zen",
+            "shogun",
+            "discipline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "harakiri",
+          "options": [
+            "harakiri",
+            "kimono",
+            "samouraï",
+            "bushido"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "loyauté",
+          "options": [
+            "loyauté",
+            "honneur",
+            "katana",
+            "seigneur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "honneur",
+          "options": [
+            "honneur",
+            "dojo",
+            "sensei",
+            "sakura"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dojo",
+          "options": [
+            "dojo",
+            "zen",
+            "shogun",
+            "discipline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "sensei",
+          "options": [
+            "sensei",
+            "kimono",
+            "samouraï",
+            "bushido"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sakura",
+          "options": [
+            "sakura",
+            "harakiri",
+            "loyauté",
+            "honneur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "zen",
+          "options": [
+            "zen",
+            "dojo",
+            "sensei",
+            "katana"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "shogun",
+          "options": [
+            "shogun",
+            "seigneur",
+            "discipline",
+            "kimono"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "discipline",
+          "options": [
+            "discipline",
+            "samouraï",
+            "bushido",
+            "katana"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "kimono",
+          "options": [
+            "kimono",
+            "seigneur",
+            "harakiri",
+            "loyauté"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Samouraïs et bushido",
+    "title_fa": "آزمون : سامورایی و بوشیدو",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le guerrier noble du Japon féodal, au service d'un seigneur et soumis à un code d'honneur strict, est le ____.",
+        "options": [
+          "samouraï",
+          "bushido",
+          "katana",
+          "seigneur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جنگجوی نجیب ژاپنی = samouraï."
+      },
+      {
+        "type": "mcq",
+        "question": "Le code moral et comportemental des samouraïs, basé sur la loyauté, l'honneur et la maîtrise de soi, est le ____.",
+        "options": [
+          "bushido",
+          "harakiri",
+          "loyauté",
+          "honneur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کد اخلاقی سامورایی‌ها = bushido."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sabre japonais à lame courbe, considéré comme l'âme du samouraï, est le ____.",
+        "options": [
+          "katana",
+          "dojo",
+          "sensei",
+          "sakura"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شمشیر منحنی ژاپنی = katana."
+      },
+      {
+        "type": "mcq",
+        "question": "Le maître féodal auquel le samouraï devait une fidélité absolue est le ____.",
+        "options": [
+          "seigneur",
+          "zen",
+          "shogun",
+          "discipline"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارباب فئودالی = seigneur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le rituel de suicide par éventration, pratiqué pour restaurer l'honneur ou éviter la capture, est le ____.",
+        "options": [
+          "harakiri",
+          "kimono",
+          "samouraï",
+          "bushido"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خودکشی آیینی با شکافتن شکم = harakiri."
+      },
+      {
+        "type": "mcq",
+        "question": "La fidélité inconditionnelle et le dévouement total envers une personne ou une cause est la ____.",
+        "options": [
+          "loyauté",
+          "honneur",
+          "katana",
+          "seigneur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وفاداری مطلق = loyauté."
+      },
+      {
+        "type": "mcq",
+        "question": "La valeur morale qui pousse à agir avec dignité, intégrité et respect de soi et des autres est l'____.",
+        "options": [
+          "honneur",
+          "dojo",
+          "sensei",
+          "sakura"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شرف و ارزش اخلاقی = honneur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu d'entraînement et d'enseignement des arts martiaux japonais est le ____.",
+        "options": [
+          "dojo",
+          "zen",
+          "shogun",
+          "discipline"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محل تمرین رزمی = dojo."
+      },
+      {
+        "type": "mcq",
+        "question": "Le titre donné au maître ou à l'enseignant dans les arts martiaux et la culture japonaise est le ____.",
+        "options": [
+          "sensei",
+          "kimono",
+          "samouraï",
+          "bushido"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استاد و معلم = sensei."
+      },
+      {
+        "type": "mcq",
+        "question": "La fleur de cerisier qui symbolise la beauté éphémère de la vie dans la culture japonaise est le ____.",
+        "options": [
+          "sakura",
+          "harakiri",
+          "loyauté",
+          "honneur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شکوفه گیلاس = sakura."
+      },
+      {
+        "type": "mcq",
+        "question": "L'école bouddhiste qui privilégie la méditation assise et l'éveil par l'expérience directe est le ____.",
+        "options": [
+          "zen",
+          "dojo",
+          "sensei",
+          "katana"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکتب بودایی مراقبه = zen."
+      },
+      {
+        "type": "mcq",
+        "question": "Le titre du dictateur militaire qui détenait le pouvoir réel au Japon féodal, au-dessus de l'empereur, est le ____.",
+        "options": [
+          "shogun",
+          "seigneur",
+          "discipline",
+          "kimono"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرمانده نظامی عالی = shogun."
+      },
+      {
+        "type": "mcq",
+        "question": "La rigueur morale, l'obéissance aux règles et la constance dans l'effort constituent la ____.",
+        "options": [
+          "discipline",
+          "samouraï",
+          "bushido",
+          "katana"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نظم و انضباط = discipline."
+      },
+      {
+        "type": "mcq",
+        "question": "Le vêtement traditionnel japonais en forme de T, porté lors des occasions formelles, est le ____.",
+        "options": [
+          "kimono",
+          "seigneur",
+          "harakiri",
+          "loyauté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لباس سنتی ژاپنی = kimono."
+      },
+      {
+        "type": "binary",
+        "question": "Le bushido est un code d'honneur qui valorise la loyauté, le courage et la maîtrise de soi.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بوشیدو کد افتخار سامورایی‌هاست."
+      },
+      {
+        "type": "binary",
+        "question": "Le katana est un sabre à lame droite utilisé principalement par les ninjas.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کاتانا شمشیر منحنی سامورایی‌هاست، نه نینجاها."
+      },
+      {
+        "type": "binary",
+        "question": "Le harakiri (ou seppuku) était un suicide rituel pratiqué pour restaurer l'honneur perdu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هاراکیری خودکشی آیینی برای بازگرداندن آبرو بود."
+      },
+      {
+        "type": "binary",
+        "question": "Le sakura symbolise l'éternité et la permanence dans la culture japonaise.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ساکورا نماد زیبایی زودگذر و ناپایداری زندگی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le zen est une école bouddhiste qui privilégie la méditation et la pleine conscience.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ذن بر مراقبه و حضور ذهن تأکید دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le shogun était le titre de l'empereur du Japon, chef suprême de l'État.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. شوگون فرمانده نظامی بود، امپراتور مقام تشریفاتی بالاتری داشت."
+      }
+    ]
+  }
+}
