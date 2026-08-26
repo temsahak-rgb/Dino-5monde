@@ -1,0 +1,680 @@
+{
+  "id": "gothic_architecture",
+  "level": "C1",
+  "theme": "Architecture gothique, cathédrales et art sacré",
+  "theme_fa": "معماری گوتیک، کلیساهای جامع و هنر مقدس",
+  "icon": "⛪",
+  "inspiration": "Les Piliers de la Terre (The Pillars of the Earth - Ridley Scott, 2010)",
+  "words": [
+    {
+      "fr": "la cathédrale",
+      "fa": "کلیسای جامع",
+      "emoji": "⛪",
+      "difficulty": 3,
+      "ex": "La cathédrale de Chartres est un chef-d'œuvre de l'art gothique.",
+      "ex_fa": "کلیسای جامع شارتر شاهکاری از هنر گوتیک است."
+    },
+    {
+      "fr": "l'arc-boutant",
+      "fa": "شمع‌های مهار (آرک‌بوتان)",
+      "emoji": "🏛️",
+      "difficulty": 5,
+      "ex": "L'arc-boutant soutient les murs et permet d'ouvrir de grandes baies vitrées.",
+      "ex_fa": "شمع‌های مهار دیوارها را نگه می‌دارند و امکان باز کردن پنجره‌های بزرگ را می‌دهند."
+    },
+    {
+      "fr": "la voûte",
+      "fa": "طاق، گنبد",
+      "emoji": "⛪",
+      "difficulty": 4,
+      "ex": "La voûte en croisée d'ogives élève le regard vers le ciel.",
+      "ex_fa": "طاق متقاطع نگاه را به سوی آسمان بالا می‌برد."
+    },
+    {
+      "fr": "le pilier",
+      "fa": "ستون",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "Le pilier massif supporte le poids colossal de la nef.",
+      "ex_fa": "ستون عظیم وزن سنگین شبستان را تحمل می‌کند."
+    },
+    {
+      "fr": "la nef",
+      "fa": "شبستان (ناو مرکزی)",
+      "emoji": "🚢",
+      "difficulty": 4,
+      "ex": "La nef centrale guide les fidèles vers le chœur sacré.",
+      "ex_fa": "شبستان مرکزی مؤمنان را به سمت محراب مقدس هدایت می‌کند."
+    },
+    {
+      "fr": "le clocher",
+      "fa": "برج ناقوس",
+      "emoji": "🔔",
+      "difficulty": 3,
+      "ex": "Le clocher s'élance vers les cieux comme une prière de pierre.",
+      "ex_fa": "برج ناقوس مانند دعایی از سنگ به سوی آسمان قد می‌کشد."
+    },
+    {
+      "fr": "le vitrail",
+      "fa": "ویترای (شیشه رنگی)",
+      "emoji": "🪟",
+      "difficulty": 4,
+      "ex": "Le vitrail raconte la Bible en lumière colorée.",
+      "ex_fa": "ویترای کتاب مقدس را با نور رنگی روایت می‌کند."
+    },
+    {
+      "fr": "la gargouille",
+      "fa": "ناودان سنگی (گارگویل)",
+      "emoji": "👹",
+      "difficulty": 4,
+      "ex": "La gargouille crache l'eau de pluie loin des murs de l'édifice.",
+      "ex_fa": "ناودان سنگی آب باران را از دیوارهای ساختمان دور می‌ریزد."
+    },
+    {
+      "fr": "le portail",
+      "fa": "درگاه اصلی",
+      "emoji": "🚪",
+      "difficulty": 3,
+      "ex": "Le portail sculpté accueille les pèlerins avec ses saints protecteurs.",
+      "ex_fa": "درگاه کنده‌کاری‌شده با قدیسین محافظش از زائران استقبال می‌کند."
+    },
+    {
+      "fr": "le chœur",
+      "fa": "محراب، جایگاه کشیشان",
+      "emoji": "⛪",
+      "difficulty": 3,
+      "ex": "Le chœur est l'espace sacré réservé au clergé pendant la messe.",
+      "ex_fa": "محراب فضای مقدسی است که در طول مراسم برای روحانیون اختصاص دارد."
+    },
+    {
+      "fr": "l'ogive",
+      "fa": "قوس نوک‌تیز (اُژیو)",
+      "emoji": "🏛️",
+      "difficulty": 5,
+      "ex": "L'ogive caractéristique du gothique permet d'élever les murs plus haut.",
+      "ex_fa": "قوس نوک‌تیز مشخصه گوتیک امکان بلندتر کردن دیوارها را می‌دهد."
+    },
+    {
+      "fr": "la rosace",
+      "fa": "گل‌پنجره دایره‌ای (رُزاس)",
+      "emoji": "🌹",
+      "difficulty": 4,
+      "ex": "La rosace occidentale illumine la façade au coucher du soleil.",
+      "ex_fa": "گل‌پنجره غربی در غروب آفتاب نما را روشن می‌کند."
+    },
+    {
+      "fr": "le transept",
+      "fa": "بازوی عرضی (ترانسِپت)",
+      "emoji": "✝️",
+      "difficulty": 5,
+      "ex": "Le transept donne à la cathédrale sa forme caractéristique de croix.",
+      "ex_fa": "بازوی عرضی به کلیسای جامع شکل مشخصه صلیب را می‌دهد."
+    },
+    {
+      "fr": "la flèche",
+      "fa": "مناره، نوک برج",
+      "emoji": "🗼",
+      "difficulty": 3,
+      "ex": "La flèche de Notre-Dame perçait les nuages de Paris.",
+      "ex_fa": "مناره نوتردام ابرهای پاریس را می‌شکافت."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le rêve de pierre",
+      "text": "Tom Builder est un maître maçon du Moyen Âge qui rêve de construire une grande {{BLANK_1}}. Pendant des décennies, il supervise le chantier. Les tailleurs de pierre sculptent chaque {{BLANK_4}} avec précision. Les maçons élèvent les murs de la {{BLANK_5}} centrale à des hauteurs vertigineuses. Pour soutenir ces parois immenses, ils construisent des {{BLANK_2}}s extérieurs qui repoussent la poussée vers le sol. À l'intérieur, les {{BLANK_3}}s en croisée d'{{BLANK_11}} s'élèvent comme des forêts de pierre. Les verriers créent des {{BLANK_7}}s colorés qui transforment la lumière en histoires sacrées. Sur la façade, une immense {{BLANK_12}} circulaire brille comme un soleil de verre. Les sculpteurs taillent des {{BLANK_8}}s effrayantes pour évacuer l'eau de pluie. Le {{BLANK_9}} principal, orné de statues, accueille les fidèles. À l'intérieur, le {{BLANK_10}} forme une croix latine parfaite. Le {{BLANK_6}} s'élève vers le ciel, abritant les cloches qui appellent à la prière. Enfin, la {{BLANK_13}} dorée perce les nuages, reliant la terre au divin. L'{{BLANK_14}} est terminée.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cathédrale",
+          "options": [
+            "cathédrale",
+            "arc-boutant",
+            "voûte",
+            "pilier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "arc-boutant",
+          "options": [
+            "arc-boutant",
+            "nef",
+            "clocher",
+            "vitrail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "voûtes",
+          "options": [
+            "voûtes",
+            "gargouille",
+            "portail",
+            "chœur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "pilier",
+          "options": [
+            "pilier",
+            "ogive",
+            "rosace",
+            "transept"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "nef",
+          "options": [
+            "nef",
+            "flèche",
+            "cathédrale",
+            "arc-boutant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "clocher",
+          "options": [
+            "clocher",
+            "voûte",
+            "pilier",
+            "nef"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "vitraux",
+          "options": [
+            "vitraux",
+            "clocher",
+            "gargouille",
+            "portail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "gargouilles",
+          "options": [
+            "gargouilles",
+            "chœur",
+            "ogive",
+            "rosace"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "portail",
+          "options": [
+            "portail",
+            "transept",
+            "flèche",
+            "cathédrale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "transept",
+          "options": [
+            "transept",
+            "arc-boutant",
+            "voûte",
+            "pilier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "ogives",
+          "options": [
+            "ogives",
+            "nef",
+            "clocher",
+            "vitrail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "rosace",
+          "options": [
+            "rosace",
+            "gargouille",
+            "portail",
+            "chœur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "flèche",
+          "options": [
+            "flèche",
+            "ogive",
+            "rosace",
+            "transept"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "cathédrale",
+          "options": [
+            "cathédrale",
+            "voûte",
+            "pilier",
+            "nef"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La prière de pierre",
+      "inspiration": "Les Piliers de la Terre (Ridley Scott, 2010)",
+      "text": "À peine Tom eut-il posé la dernière pierre que la {{BLANK_1}} s'éleva comme une prière figée dans le temps. Ce maître maçon avait consacré sa vie entière à ce rêve de lumière et de hauteur. Pendant des décennies, il avait guidé les hommes qui taillaient chaque {{BLANK_4}} avec la ferveur des moines copistes. La {{BLANK_5}} centrale montait vers le ciel, soutenue par les {{BLANK_2}}s qui écartelaient la poussée des murs vers la terre. À l'intérieur, les {{BLANK_3}}s en croisée d'{{BLANK_11}}s formaient une forêt mystique où la lumière dansait. Les maîtres verriers avaient créé des {{BLANK_7}}s qui transformaient le soleil en évangile coloré. Sur la façade, la grande {{BLANK_12}} tournait comme un cadran cosmique. Les sculpteurs avaient peuplé les toits de {{BLANK_8}}s grimaçantes, gardiennes de pierre contre les démons. Le {{BLANK_9}} occidental accueillait les âmes perdues, tandis que le {{BLANK_10}} formait la croix du Christ sur le sol sacré. Le {{BLANK_6}} sonnait les heures de la prière, et la {{BLANK_13}} perçait les nuages comme une lance vers le divin. Tom mourut avant de voir son œuvre achevée, mais chaque fidèle qui franchissait le {{BLANK_9}} sentait que cette {{BLANK_14}} n'était pas faite de pierres, mais de la foi indestructible de ceux qui l'avaient bâtie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cathédrale",
+          "options": [
+            "cathédrale",
+            "arc-boutant",
+            "voûte",
+            "pilier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "arcs-boutants",
+          "options": [
+            "arcs-boutants",
+            "nef",
+            "clocher",
+            "vitrail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "voûtes",
+          "options": [
+            "voûtes",
+            "gargouille",
+            "portail",
+            "chœur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "pilier",
+          "options": [
+            "pilier",
+            "ogive",
+            "rosace",
+            "transept"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "nef",
+          "options": [
+            "nef",
+            "flèche",
+            "cathédrale",
+            "arc-boutant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "clocher",
+          "options": [
+            "clocher",
+            "voûte",
+            "pilier",
+            "nef"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "vitraux",
+          "options": [
+            "vitraux",
+            "clocher",
+            "gargouille",
+            "portail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "gargouilles",
+          "options": [
+            "gargouilles",
+            "chœur",
+            "ogive",
+            "rosace"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "portail",
+          "options": [
+            "portail",
+            "transept",
+            "flèche",
+            "cathédrale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "transept",
+          "options": [
+            "transept",
+            "arc-boutant",
+            "voûte",
+            "pilier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "ogives",
+          "options": [
+            "ogives",
+            "nef",
+            "clocher",
+            "vitrail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "rosace",
+          "options": [
+            "rosace",
+            "gargouille",
+            "portail",
+            "chœur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "flèche",
+          "options": [
+            "flèche",
+            "ogive",
+            "rosace",
+            "transept"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "cathédrale",
+          "options": [
+            "cathédrale",
+            "voûte",
+            "pilier",
+            "nef"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Architecture gothique",
+    "title_fa": "آزمون : معماری گوتیک",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La grande église principale d'un diocèse, siège de l'évêque, est la ____.",
+        "options": [
+          "cathédrale",
+          "arc-boutant",
+          "voûte",
+          "pilier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلیسای اصلی و مقر اسقف = cathédrale."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arc extérieur qui contrebutte la poussée des voûtes et permet d'ouvrir de grandes baies est l'____.",
+        "options": [
+          "arc-boutant",
+          "nef",
+          "clocher",
+          "vitrail"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قوس بیرونی مهارکننده فشار = arc-boutant."
+      },
+      {
+        "type": "mcq",
+        "question": "La structure arquée qui couvre un espace et supporte le poids du toit est la ____.",
+        "options": [
+          "voûte",
+          "gargouille",
+          "portail",
+          "chœur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازه قوسی پوشش‌دهنده = voûte."
+      },
+      {
+        "type": "mcq",
+        "question": "Le support vertical massif qui soutient les arcs et les voûtes est le ____.",
+        "options": [
+          "pilier",
+          "ogive",
+          "rosace",
+          "transept"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ستون عمودی نگهدارنده = pilier."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie centrale et longitudinale de l'église où se rassemblent les fidèles est la ____.",
+        "options": [
+          "nef",
+          "flèche",
+          "cathédrale",
+          "arc-boutant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش مرکزی و طولی کلیسا = nef."
+      },
+      {
+        "type": "mcq",
+        "question": "La tour qui abrite les cloches et appelle les fidèles à la prière est le ____.",
+        "options": [
+          "clocher",
+          "voûte",
+          "pilier",
+          "nef"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برج ناقوس‌ها = clocher."
+      },
+      {
+        "type": "mcq",
+        "question": "La composition de morceaux de verre coloré assemblés au plomb, racontant des scènes bibliques, est le ____.",
+        "options": [
+          "vitrail",
+          "clocher",
+          "gargouille",
+          "portail"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ترکیب شیشه‌های رنگی = vitrail."
+      },
+      {
+        "type": "mcq",
+        "question": "La sculpture fantastique en forme de monstre qui sert d'évacuation d'eau de pluie est la ____.",
+        "options": [
+          "gargouille",
+          "chœur",
+          "ogive",
+          "rosace"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجسمه هیولایی ناودان = gargouille."
+      },
+      {
+        "type": "mcq",
+        "question": "La grande porte d'entrée sculptée et monumentale de la cathédrale est le ____.",
+        "options": [
+          "portail",
+          "transept",
+          "flèche",
+          "cathédrale"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "در اصلی و تزیین‌شده = portail."
+      },
+      {
+        "type": "mcq",
+        "question": "L'espace sacré autour de l'autel, réservé au clergé pendant la messe, est le ____.",
+        "options": [
+          "chœur",
+          "arc-boutant",
+          "voûte",
+          "pilier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فضای مقدس اطراف محراب = chœur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arc en forme de pointe, caractéristique de l'architecture gothique, est l'____.",
+        "options": [
+          "ogive",
+          "nef",
+          "clocher",
+          "vitrail"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قوس نوک‌تیز گوتیک = ogive."
+      },
+      {
+        "type": "mcq",
+        "question": "La grande baie circulaire ornée de vitraux, en forme de fleur, est la ____.",
+        "options": [
+          "rosace",
+          "gargouille",
+          "portail",
+          "chœur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پنجره دایره‌ای گل‌شکل = rosace."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie transversale de l'église qui lui donne la forme d'une croix est le ____.",
+        "options": [
+          "transept",
+          "flèche",
+          "ogive",
+          "rosace"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بازوی عرضی صلیبی‌شکل = transept."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie supérieure pointue d'une tour ou d'un clocher est la ____.",
+        "options": [
+          "flèche",
+          "cathédrale",
+          "voûte",
+          "pilier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نوک تیز برج = flèche."
+      },
+      {
+        "type": "binary",
+        "question": "L'arc-boutant est un élément extérieur qui permet de soutenir les murs et d'ouvrir de grandes fenêtres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. آرک‌بوتان (arc-boutant) عنصر بیرونی مهارکننده فشار دیوارها است."
+      },
+      {
+        "type": "binary",
+        "question": "La gargouille est une simple décoration sans fonction pratique sur les cathédrales.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. گارگویل (gargouille) در اصل ناودانی برای دور ریختن آب باران از دیوارها است."
+      },
+      {
+        "type": "binary",
+        "question": "La nef désigne la partie centrale longitudinale où se tiennent les fidèles pendant la messe.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. شبستان (nef) بخش اصلی و طولی کلیسا برای تجمع مؤمنان است."
+      },
+      {
+        "type": "binary",
+        "question": "L'ogive est un arc en plein cintre (demi-cercle parfait) typique de l'architecture romane.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ogive قوس نوک‌تیز است که مشخصه معماری گوتیک است، نه قوس نیم‌دایره‌ای."
+      },
+      {
+        "type": "binary",
+        "question": "Le transept est la partie transversale qui donne à l'église sa forme de croix latine.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ترانسِپت (transept) بازوی عرضی است که شکل صلیب را ایجاد می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La rosace est une petite sculpture en pierre placée sur le toit de la cathédrale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. رُزاس (rosace) پنجره دایره‌ای بزرگی از شیشه‌های رنگی است، نه مجسمه."
+      }
+    ]
+  }
+}
