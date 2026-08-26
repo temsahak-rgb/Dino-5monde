@@ -1,0 +1,680 @@
+{
+  "id": "volcanology_geology",
+  "level": "C1",
+  "theme": "Volcanologie, géologie et catastrophes naturelles",
+  "theme_fa": "آتشفشان‌شناسی، زمین‌شناسی و بلایای طبیعی",
+  "icon": "🌋",
+  "inspiration": "Le Pic de Dante (Dante's Peak - Roger Donaldson, 1997)",
+  "words": [
+    {
+      "fr": "la volcanologie",
+      "fa": "آتشفشان‌شناسی",
+      "emoji": "🌋",
+      "difficulty": 5,
+      "ex": "La volcanologie tente de prédire les éruptions pour sauver des vies.",
+      "ex_fa": "آتشفشان‌شناسی تلاش می‌کند فوران‌ها را برای نجات جان‌ها پیش‌بینی کند."
+    },
+    {
+      "fr": "le magma",
+      "fa": "ماگما",
+      "emoji": "🔥",
+      "difficulty": 4,
+      "ex": "Le magma sous pression cherche une issue vers la surface.",
+      "ex_fa": "ماگمای تحت فشار به دنبال راهی به سطح زمین است."
+    },
+    {
+      "fr": "la lave",
+      "fa": "گدازه",
+      "emoji": "🌋",
+      "difficulty": 3,
+      "ex": "La lave en fusion détruit tout sur son passage.",
+      "ex_fa": "گدازه مذاب هر چه در مسیرش باشد نابود می‌کند."
+    },
+    {
+      "fr": "le cratère",
+      "fa": "دهانه آتشفشان",
+      "emoji": "⭕",
+      "difficulty": 4,
+      "ex": "Le cratère du volcan s'est effondré lors de la dernière explosion.",
+      "ex_fa": "دهانه آتشفشان در آخرین انفجار فرو ریخت."
+    },
+    {
+      "fr": "l'éruption",
+      "fa": "فوران",
+      "emoji": "💥",
+      "difficulty": 3,
+      "ex": "L'éruption a recouvert la région d'une épaisse couche de cendres.",
+      "ex_fa": "فوران منطقه را با لایه ضخیمی از خاکستر پوشاند."
+    },
+    {
+      "fr": "la cendre",
+      "fa": "خاکستر",
+      "emoji": "🌫️",
+      "danger": 4,
+      "ex": "Respirer la cendre volcanique est extrêmement dangereux pour les poumons.",
+      "ex_fa": "تنفس خاکستر آتشفشانی برای ریه‌ها بسیار خطرناک است."
+    },
+    {
+      "fr": "le séisme",
+      "fa": "زلزله",
+      "emoji": "📈",
+      "difficulty": 4,
+      "ex": "Un séisme de magnitude 6 a précédé le réveil du volcan.",
+      "ex_fa": "زلزله‌ای به بزرگی ۶ ریشتر پیش از بیداری آتشفشان رخ داد."
+    },
+    {
+      "fr": "la faille",
+      "fa": "گسل",
+      "emoji": "〰️",
+      "difficulty": 5,
+      "ex": "La faille tectonique est responsable de l'activité sismique de la région.",
+      "ex_fa": "گسل تکتونیکی مسئول فعالیت لرزه‌ای منطقه است."
+    },
+    {
+      "fr": "le géologue",
+      "fa": "زمین‌شناس",
+      "emoji": "👨‍🔬",
+      "difficulty": 3,
+      "ex": "Le géologue analyse les roches pour comprendre l'histoire de la Terre.",
+      "ex_fa": "زمین‌شناس سنگ‌ها را برای درک تاریخچه زمین تحلیل می‌کند."
+    },
+    {
+      "fr": "la sismologie",
+      "fa": "زلزله‌شناسی",
+      "emoji": "📊",
+      "difficulty": 5,
+      "ex": "La sismologie utilise des ondes pour cartographier l'intérieur de la Terre.",
+      "ex_fa": "زلزله‌شناسی از امواج برای نقشه‌برداری از درون زمین استفاده می‌کند."
+    },
+    {
+      "fr": "le tremblement de terre",
+      "fa": "زلزله",
+      "emoji": "🏚️",
+      "difficulty": 3,
+      "ex": "Le tremblement de terre a provoqué la panique dans la ville.",
+      "ex_fa": "زلزله باعث وحشت در شهر شد."
+    },
+    {
+      "fr": "la coulée pyroclastique",
+      "fa": "جریان آذرآواری",
+      "emoji": "🌪️",
+      "difficulty": 5,
+      "ex": "La coulée pyroclastique dévale les pentes à plus de 400 km/h.",
+      "ex_fa": "جریان آذرآواری با سرعت بیش از ۴۰۰ کیلومتر بر ساعت از دامنه‌ها سرازیر می‌شود."
+    },
+    {
+      "fr": "le lac de cratère",
+      "fa": "دریاچه دهانه",
+      "emoji": "💧",
+      "difficulty": 5,
+      "ex": "Le lac de cratère est devenu acide à cause des gaz souterrains.",
+      "ex_fa": "دریاچه دهانه به دلیل گازهای زیرزمینی اسیدی شده است."
+    },
+    {
+      "fr": "l'évacuation",
+      "fa": "تخلیه",
+      "emoji": "🏃",
+      "difficulty": 3,
+      "ex": "Le maire a ordonné l'évacuation immédiate de la zone à risque.",
+      "ex_fa": "شهردار دستور تخلیه فوری منطقه پرخطر را صادر کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le réveil du géant",
+      "text": "Harry Dalton est un {{BLANK_9}} de l'Institut géologique américain. Il arrive dans la petite ville de Dante's Peak après avoir détecté des anomalies. Spécialiste de la {{BLANK_1}}, il comprend vite que le volcan endormi depuis des siècles montre des signes de réveil. En testant l'eau du {{BLANK_13}}, il découvre une acidité anormale causée par les gaz souterrains. Les premiers {{BLANK_7}}s secouent la région, révélant qu'une {{BLANK_8}} tectonique s'active en profondeur. Harry prévient le maire qu'une {{BLANK_5}} catastrophique est imminente. Soudain, le sommet explose, ouvrant un immense {{BLANK_4}} qui crache du {{BLANK_2}} incandescent dans le ciel. Des tonnes de {{BLANK_6}} recouvrent la ville, bloquant le soleil et étouffant les rescapés. Une rivière de {{BLANK_3}} en fusion commence à descendre lentement les pentes, brûlant les forêts. Mais le vrai danger vient d'une {{BLANK_12}} fulgurante, un nuage de gaz brûlant qui rase tout sur son passage. Les experts en {{BLANK_10}} enregistrent un violent {{BLANK_11}} qui détruit les infrastructures. Face au chaos, les autorités n'ont d'autre choix que d'organiser une {{BLANK_14}} d'urgence pour sauver les habitants pris au piège.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "volcanologie",
+          "options": [
+            "volcanologie",
+            "magma",
+            "lave",
+            "cratère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "magma",
+          "options": [
+            "magma",
+            "éruption",
+            "cendre",
+            "séisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "lave",
+          "options": [
+            "lave",
+            "faille",
+            "géologue",
+            "sismologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cratère",
+          "options": [
+            "cratère",
+            "tremblement de terre",
+            "coulée pyroclastique",
+            "lac de cratère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "éruption",
+          "options": [
+            "éruption",
+            "évacuation",
+            "volcanologie",
+            "magma"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "cendre",
+          "options": [
+            "cendre",
+            "lave",
+            "faille",
+            "géologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "séismes",
+          "options": [
+            "séismes",
+            "sismologies",
+            "tremblements de terre",
+            "évacuations"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "faille",
+          "options": [
+            "faille",
+            "coulée pyroclastique",
+            "lac de cratère",
+            "éruption"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "géologue",
+          "options": [
+            "géologue",
+            "cratère",
+            "magma",
+            "lave"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sismologie",
+          "options": [
+            "sismologie",
+            "cendre",
+            "séisme",
+            "faille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "tremblement de terre",
+          "options": [
+            "tremblement de terre",
+            "volcanologie",
+            "éruption",
+            "évacuation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "coulée pyroclastique",
+          "options": [
+            "coulée pyroclastique",
+            "lave",
+            "magma",
+            "cratère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "lac de cratère",
+          "options": [
+            "lac de cratère",
+            "faille",
+            "géologue",
+            "sismologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "évacuation",
+          "options": [
+            "évacuation",
+            "tremblement de terre",
+            "coulée pyroclastique",
+            "lac de cratère"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La colère de la Terre",
+      "inspiration": "Le Pic de Dante (Dante's Peak - Roger Donaldson, 1997)",
+      "text": "À peine Harry eut-il plongé son thermomètre dans les eaux fumantes du {{BLANK_13}} qu'il sentit l'odeur âcre du soufre lui brûler les narines. Ce {{BLANK_9}} chevronné, hanté par la perte de sa fiancée dans une précédente catastrophe, savait lire les colères de la Terre mieux que quiconque. La {{BLANK_1}} lui avait appris que les montagnes endormies ne meurent jamais vraiment, elles attendent. L'acidité extrême de l'eau trahissait la montée du {{BLANK_2}}, cette roche en fusion qui bouillait dans les entrailles du monde, cherchant désespérément une issue. Les premiers {{BLANK_7}}s, d'abord imperceptibles, devinrent des secousses violentes qui fissuraient les murs et les certitudes. Harry comprit que la {{BLANK_8}} tectonique, cette cicatrice invisible de la croûte terrestre, venait de se rompre sous une pression titanesque. Il hurla aux autorités qu'une {{BLANK_5}} apocalyptique était en marche, mais l'incrédulité des politiques coûta des heures précieuses. Quand le sommet de Dante's Peak explosa enfin, il arracha le {{BLANK_4}} dans un rugissement qui fit taire le ciel. Le {{BLANK_2}} jaillit, se transformant instantanément en {{BLANK_3}} incandescente qui dévalait les pentes comme un fleuve d'enfer. Une pluie de {{BLANK_6}} grise s'abattit sur la ville, transformant le jour en nuit et les poumons en pierre. Mais l'horreur absolue surgit de l'ombre : une {{BLANK_12}}, ce mur de gaz et de roches à 600 degrés qui vaporisait la vie en une fraction de seconde. Les instruments de {{BLANK_10}} s'affolèrent, enregistrant un {{BLANK_11}} si puissant qu'il remodela la géographie locale. Dans le chaos de la fin du monde, Harry guida une poignée de survivants à travers les flammes, prouvant que même face à la fureur des dieux géologiques, le courage humain pouvait arracher quelques vies à l'inévitable {{BLANK_14}} de la mort.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "volcanologie",
+          "options": [
+            "volcanologie",
+            "magma",
+            "lave",
+            "cratère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "magma",
+          "options": [
+            "magma",
+            "éruption",
+            "cendre",
+            "séisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "lave",
+          "options": [
+            "lave",
+            "faille",
+            "géologue",
+            "sismologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cratère",
+          "options": [
+            "cratère",
+            "tremblement de terre",
+            "coulée pyroclastique",
+            "lac de cratère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "éruption",
+          "options": [
+            "éruption",
+            "évacuation",
+            "volcanologie",
+            "magma"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "cendre",
+          "options": [
+            "cendre",
+            "lave",
+            "faille",
+            "géologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "séismes",
+          "options": [
+            "séismes",
+            "sismologies",
+            "tremblements de terre",
+            "évacuations"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "faille",
+          "options": [
+            "faille",
+            "coulée pyroclastique",
+            "lac de cratère",
+            "éruption"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "géologue",
+          "options": [
+            "géologue",
+            "cratère",
+            "magma",
+            "lave"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sismologie",
+          "options": [
+            "sismologie",
+            "cendre",
+            "séisme",
+            "faille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "tremblement de terre",
+          "options": [
+            "tremblement de terre",
+            "volcanologie",
+            "éruption",
+            "évacuation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "coulée pyroclastique",
+          "options": [
+            "coulée pyroclastique",
+            "lave",
+            "magma",
+            "cratère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "lac de cratère",
+          "options": [
+            "lac de cratère",
+            "faille",
+            "géologue",
+            "sismologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "évacuation",
+          "options": [
+            "évacuation",
+            "tremblement de terre",
+            "coulée pyroclastique",
+            "lac de cratère"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Volcanologie et géologie",
+    "title_fa": "آزمون : آتشفشان‌شناسی و زمین‌شناسی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie les volcans, leur fonctionnement et les phénomènes qui y sont associés est la ____.",
+        "options": [
+          "volcanologie",
+          "magma",
+          "lave",
+          "cratère"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه آتشفشان‌ها = volcanologie."
+      },
+      {
+        "type": "mcq",
+        "question": "La roche en fusion, riche en gaz, qui se trouve sous la surface de la Terre avant d'être émise est le ____.",
+        "options": [
+          "magma",
+          "éruption",
+          "cendre",
+          "séisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سنگ مذاب زیر سطح زمین = magma."
+      },
+      {
+        "type": "mcq",
+        "question": "Le magma qui a atteint la surface de la Terre et qui s'écoule lors d'une éruption est la ____.",
+        "options": [
+          "lave",
+          "faille",
+          "géologue",
+          "sismologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماگمایی که به سطح زمین رسیده = lave."
+      },
+      {
+        "type": "mcq",
+        "question": "La dépression généralement circulaire située au sommet ou sur le flanc d'un volcan est le ____.",
+        "options": [
+          "cratère",
+          "tremblement de terre",
+          "coulée pyroclastique",
+          "lac de cratère"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرورفتگی دهانه آتشفشان = cratère."
+      },
+      {
+        "type": "mcq",
+        "question": "Le phénomène géologique par lequel un volcan rejette brutalement des gaz, des cendres et de la lave est l'____.",
+        "options": [
+          "éruption",
+          "évacuation",
+          "volcanologie",
+          "magma"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پدیده خروج ناگهانی مواد آتشفشانی = éruption."
+      },
+      {
+        "type": "mcq",
+        "question": "La poudre fine composée de fragments de roche et de verre volcanique projetée dans l'air est la ____.",
+        "options": [
+          "cendre",
+          "lave",
+          "faille",
+          "géologue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گرد و غبار سنگ و شیشه آتشفشانی = cendre."
+      },
+      {
+        "type": "mcq",
+        "question": "La secousse brutale et passagère de la croûte terrestre causée par la rupture d'une faille est le ____.",
+        "options": [
+          "séisme",
+          "sismologie",
+          "tremblement de terre",
+          "évacuation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لرزش ناگهانی پوسته زمین = séisme."
+      },
+      {
+        "type": "mcq",
+        "question": "La fracture ou la zone de rupture dans les roches de la croûte terrestre le long de laquelle s'exercent des mouvements est la ____.",
+        "options": [
+          "faille",
+          "coulée pyroclastique",
+          "lac de cratère",
+          "éruption"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شکاف در پوسته زمین = faille."
+      },
+      {
+        "type": "mcq",
+        "question": "Le scientifique spécialiste de l'étude de la Terre, de sa composition et de son histoire est le ____.",
+        "options": [
+          "géologue",
+          "cratère",
+          "magma",
+          "lave"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دانشمند متخصص زمین = géologue."
+      },
+      {
+        "type": "mcq",
+        "question": "La branche de la géophysique qui étudie les séismes et la propagation des ondes sismiques est la ____.",
+        "options": [
+          "sismologie",
+          "cendre",
+          "séisme",
+          "faille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شاخه‌ای از ژئوفیزیک برای مطالعه زلزله = sismologie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le synonyme courant de séisme, désignant une vibration du sol destructrice, est le ____.",
+        "options": [
+          "tremblement de terre",
+          "volcanologie",
+          "éruption",
+          "évacuation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مترادف رایج زلزله = tremblement de terre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le nuage brûlant et ultra-rapide de gaz, de cendres et de blocs rocheux qui dévale les flancs d'un volcan est la ____.",
+        "options": [
+          "coulée pyroclastique",
+          "lave",
+          "magma",
+          "cratère"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابر سوزان و سریع گاز و خاکستر = coulée pyroclastique."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étendue d'eau qui s'accumule dans la dépression circulaire au sommet d'un volcan éteint ou en sommeil est le ____.",
+        "options": [
+          "lac de cratère",
+          "faille",
+          "géologue",
+          "sismologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آب جمع‌شده در دهانه آتشفشان = lac de cratère."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action organisée de faire quitter un lieu dangereux à une population menacée est l'____.",
+        "options": [
+          "évacuation",
+          "tremblement de terre",
+          "coulée pyroclastique",
+          "lac de cratère"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خارج کردن مردم از منطقه خطر = évacuation."
+      },
+      {
+        "type": "binary",
+        "question": "Le magma et la lave désignent exactement la même roche en fusion, qu'elle soit sous terre ou en surface.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ماگما در زیر زمین و گدازه (lave) پس از رسیدن به سطح زمین نامیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Une coulée pyroclastique est un phénomène lent qui laisse largement le temps aux populations de fuir.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. جریان آذرآواری بسیار سریع (صدها کیلومتر بر ساعت) و به شدت مرگبار است."
+      },
+      {
+        "type": "binary",
+        "question": "La sismologie est la science qui utilise les ondes générées par les séismes pour étudier la structure interne de la Terre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. زلزله‌شناسی از امواج لرزه‌ای برای شناخت درون زمین استفاده می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Une faille géologique est une zone de stabilité absolue où aucun mouvement de terrain n'est possible.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. گسل (faille) دقیقاً محل شکستگی و حرکت صفحات تکتونیکی است."
+      },
+      {
+        "type": "binary",
+        "question": "Les cendres volcaniques peuvent provoquer l'effondrement des toits et causer de graves problèmes respiratoires.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. خاکستر آتشفشانی سنگین است و تنفس آن به ریه‌ها آسیب می‌زند."
+      },
+      {
+        "type": "binary",
+        "question": "Un lac de cratère peut devenir très acide et toxique à cause de la remontée des gaz volcaniques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. گازهای گوگردی و دی‌اکسید کربن می‌توانند آب دریاچه دهانه را به شدت اسیدی کنند."
+      }
+    ]
+  }
+}
