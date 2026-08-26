@@ -1,0 +1,680 @@
+{
+  "id": "archaeology_excavation",
+  "level": "C1",
+  "theme": "Archéologie, fouilles et civilisations anciennes",
+  "theme_fa": "باستان‌شناسی، حفاری و تمدن‌های باستانی",
+  "icon": "🏺",
+  "inspiration": "Indiana Jones : Les Aventuriers de l'arche perdue (Steven Spielberg, 1981)",
+  "words": [
+    {
+      "fr": "l'archéologie",
+      "fa": "باستان‌شناسی",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "L'archéologie permet de reconstituer l'histoire des peuples sans écriture.",
+      "ex_fa": "باستان‌شناسی امکان بازسازی تاریخ مردمان بدون خط را می‌دهد."
+    },
+    {
+      "fr": "la fouille",
+      "fa": "کاوش، حفاری",
+      "emoji": "⛏️",
+      "difficulty": 3,
+      "ex": "La fouille méthodique révèle les couches successives de l'occupation humaine.",
+      "ex_fa": "کاوش روشمند، لایه‌های پی‌درپی سکونت انسان را آشکار می‌کند."
+    },
+    {
+      "fr": "le chantier",
+      "fa": "محوطه باستانی، کارگاه حفاری",
+      "emoji": "🚧",
+      "difficulty": 3,
+      "ex": "Le chantier de fouilles s'étend sur plusieurs hectares dans le désert.",
+      "ex_fa": "محوطه حفاری در بیابان چندین هکتار وسعت دارد."
+    },
+    {
+      "fr": "la truelle",
+      "fa": "کمچه، ماله باستان‌شناسی",
+      "emoji": "🔧",
+      "difficulty": 4,
+      "ex": "Le chercheur gratte délicatement la terre avec sa truelle pour ne rien abîmer.",
+      "ex_fa": "پژوهشگر با کمچه به آرامی خاک را می‌تراشد تا آسیبی نرسد."
+    },
+    {
+      "fr": "le vestige",
+      "fa": "آثار باقی‌مانده، بقایا",
+      "emoji": "🏺",
+      "difficulty": 4,
+      "ex": "Ce vestige de muraille témoigne de la grandeur de l'empire déchu.",
+      "ex_fa": "این بقایای دیوار، نشان‌دهنده عظمت امپراتوری سقوط‌کرده است."
+    },
+    {
+      "fr": "la stratigraphie",
+      "fa": "لایه‌نگاری، چینه‌شناسی",
+      "emoji": "📚",
+      "difficulty": 5,
+      "ex": "La stratigraphie permet de dater les objets selon leur profondeur dans le sol.",
+      "ex_fa": "لایه‌نگاری امکان تاریخ‌گذاری اشیاء را بر اساس عمق آن‌ها در خاک می‌دهد."
+    },
+    {
+      "fr": "l'amphore",
+      "fa": "کوزه دودسته (آمفورا)",
+      "emoji": "🏺",
+      "difficulty": 4,
+      "ex": "L'amphore romaine servait à transporter le vin et l'huile d'olive.",
+      "ex_fa": "کوزه دودسته رومی برای حمل شراب و روغن زیتون استفاده می‌شد."
+    },
+    {
+      "fr": "le fossile",
+      "fa": "فسیل، سنگواره",
+      "emoji": "🦴",
+      "difficulty": 3,
+      "ex": "Le fossile de dinosaure a été découvert intact dans la roche sédimentaire.",
+      "ex_fa": "فسیل دایناسور به صورت سالم در سنگ رسوبی کشف شد."
+    },
+    {
+      "fr": "le sarcophage",
+      "fa": "تابوت سنگی",
+      "emoji": "⚰️",
+      "difficulty": 4,
+      "ex": "Le lourd sarcophage en basalte protège la dépouille du pharaon.",
+      "ex_fa": "تابوت سنگی سنگین بازالتی از جسد فرعون محافظت می‌کند."
+    },
+    {
+      "fr": "la momie",
+      "fa": "مومیایی",
+      "emoji": "🧟",
+      "difficulty": 3,
+      "ex": "Les bandelettes de la momie sont recouvertes de résines conservatrices.",
+      "ex_fa": "باندهای مومیایی با رزین‌های نگهدارنده پوشانده شده‌اند."
+    },
+    {
+      "fr": "la ruine",
+      "fa": "ویرانه، خرابه",
+      "emoji": "🏚️",
+      "difficulty": 2,
+      "ex": "La ruine du temple antique attire des milliers de touristes chaque année.",
+      "ex_fa": "ویرانه‌های معبد باستانی هر ساله هزاران گردشگر را جذب می‌کند."
+    },
+    {
+      "fr": "la stèle",
+      "fa": "سنگ‌نوشته، استل",
+      "emoji": "🪨",
+      "difficulty": 5,
+      "ex": "La stèle gravée raconte les victoires militaires du roi assyrien.",
+      "ex_fa": "سنگ‌نوشته حکاکی‌شده، پیروزی‌های نظامی پادشاه آشوری را روایت می‌کند."
+    },
+    {
+      "fr": "le hiéroglyphe",
+      "fa": "هیروگلیف",
+      "emoji": "𓀀",
+      "difficulty": 4,
+      "ex": "Champollion a percé le mystère du hiéroglyphe égyptien grâce à la pierre de Rosette.",
+      "ex_fa": "شامپولیون به لطف سنگ روزتا، راز هیروگلیف مصری را کشف کرد."
+    },
+    {
+      "fr": "la datation",
+      "fa": "تاریخ‌گذاری",
+      "emoji": "📅",
+      "difficulty": 4,
+      "ex": "La datation au carbone 14 a confirmé l'âge préhistorique de l'outil.",
+      "ex_fa": "تاریخ‌گذاری با کربن ۱۴، سن پیشاتاریخی ابزار را تأیید کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le secret des sables",
+      "text": "Henry est un professeur d'{{BLANK_1}} renommé qui dirige une {{BLANK_2}} dans le désert égyptien. Sur le vaste {{BLANK_3}}, il utilise une petite {{BLANK_4}} pour dégager le sable millénaire avec une précision chirurgicale. Un matin, il découvre un {{BLANK_5}} exceptionnel de l'époque pharaonique. En étudiant minutieusement la {{BLANK_6}} du sol, il parvient à dater les couches successives de l'histoire. Son équipe remonte à la surface une {{BLANK_7}} en terre cuite presque intacte, ainsi qu'un rare {{BLANK_8}} marin piégé dans la roche. Au fond d'une {{BLANK_9}} effondrée et oubliée, ils trouvent un lourd {{BLANK_10}} en granit noir. À l'intérieur repose une {{BLANK_11}} royale préservée par les siècles. Près de l'entrée, une grande {{BLANK_12}} de pierre raconte l'histoire glorieuse du souverain. Henry déchiffre patiemment chaque {{BLANK_13}} gravé dans la roche. Enfin, une {{BLANK_14}} scientifique en laboratoire confirmera l'âge exact de cette tombe légendaire.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "archéologie",
+          "options": [
+            "archéologie",
+            "fouille",
+            "chantier",
+            "truelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fouille",
+          "options": [
+            "fouille",
+            "vestige",
+            "stratigraphie",
+            "amphore"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "chantier",
+          "options": [
+            "chantier",
+            "fossile",
+            "sarcophage",
+            "momie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "truelle",
+          "options": [
+            "truelle",
+            "ruine",
+            "stèle",
+            "hiéroglyphe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "vestige",
+          "options": [
+            "vestige",
+            "datation",
+            "archéologie",
+            "fouille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "stratigraphie",
+          "options": [
+            "stratigraphie",
+            "chantier",
+            "truelle",
+            "vestige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "amphore",
+          "options": [
+            "amphore",
+            "fossile",
+            "sarcophage",
+            "momie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "fossile",
+          "options": [
+            "fossile",
+            "ruine",
+            "stèle",
+            "hiéroglyphe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ruine",
+          "options": [
+            "ruine",
+            "datation",
+            "archéologie",
+            "fouille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sarcophage",
+          "options": [
+            "sarcophage",
+            "chantier",
+            "truelle",
+            "vestige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "momie",
+          "options": [
+            "momie",
+            "stratigraphie",
+            "amphore",
+            "fossile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "stèle",
+          "options": [
+            "stèle",
+            "ruine",
+            "hiéroglyphe",
+            "datation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "hiéroglyphe",
+          "options": [
+            "hiéroglyphe",
+            "archéologie",
+            "fouille",
+            "chantier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "datation",
+          "options": [
+            "datation",
+            "truelle",
+            "vestige",
+            "stratigraphie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le murmure des ancêtres",
+      "inspiration": "Indiana Jones (Steven Spielberg, 1981)",
+      "text": "À peine le professeur eut-il effleuré la pierre brûlante que les murmures de l'{{BLANK_1}} résonnèrent dans son esprit fatigué. Ce n'était pas une simple {{BLANK_2}} de routine, mais une descente vertigineuse dans la mémoire du monde. Sur ce {{BLANK_3}} maudit par le soleil, il maniait la {{BLANK_4}} comme un scalpel, révélant avec respect chaque {{BLANK_5}} d'une gloire éteinte. Il lisait la {{BLANK_6}} comme les pages d'un livre tragique, où chaque couche de poussière était un siècle de sang et de prières. Ses mains tremblaient en déterrant une {{BLANK_7}} scellée par le temps et un {{BLANK_8}} témoin des océans disparus. Au cœur de la {{BLANK_9}} silencieuse, le lourd {{BLANK_10}} attendait dans l'ombre, gardien implacable de la {{BLANK_11}} endormie. Une {{BLANK_12}} brisée portait le dernier avertissement des prêtres, gravé en chaque {{BLANK_13}} sacré et menaçant. Quand la {{BLANK_14}} scientifique scellerait finalement son âge, il saurait que réveiller les morts exige toujours de payer le prix de leur éternité, et que les véritables trésors ne sont pas d'or, mais de mémoire.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "archéologie",
+          "options": [
+            "archéologie",
+            "fouille",
+            "chantier",
+            "truelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fouille",
+          "options": [
+            "fouille",
+            "vestige",
+            "stratigraphie",
+            "amphore"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "chantier",
+          "options": [
+            "chantier",
+            "fossile",
+            "sarcophage",
+            "momie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "truelle",
+          "options": [
+            "truelle",
+            "ruine",
+            "stèle",
+            "hiéroglyphe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "vestige",
+          "options": [
+            "vestige",
+            "datation",
+            "archéologie",
+            "fouille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "stratigraphie",
+          "options": [
+            "stratigraphie",
+            "chantier",
+            "truelle",
+            "vestige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "amphore",
+          "options": [
+            "amphore",
+            "fossile",
+            "sarcophage",
+            "momie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "fossile",
+          "options": [
+            "fossile",
+            "ruine",
+            "stèle",
+            "hiéroglyphe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ruine",
+          "options": [
+            "ruine",
+            "datation",
+            "archéologie",
+            "fouille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sarcophage",
+          "options": [
+            "sarcophage",
+            "chantier",
+            "truelle",
+            "vestige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "momie",
+          "options": [
+            "momie",
+            "stratigraphie",
+            "amphore",
+            "fossile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "stèle",
+          "options": [
+            "stèle",
+            "ruine",
+            "hiéroglyphe",
+            "datation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "hiéroglyphe",
+          "options": [
+            "hiéroglyphe",
+            "archéologie",
+            "fouille",
+            "chantier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "datation",
+          "options": [
+            "datation",
+            "truelle",
+            "vestige",
+            "stratigraphie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Archéologie et fouilles",
+    "title_fa": "آزمون : باستان‌شناسی و حفاری",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie les civilisations disparues à travers leurs vestiges matériels est l'____.",
+        "options": [
+          "archéologie",
+          "fouille",
+          "chantier",
+          "truelle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه تمدن‌های گمشده = archéologie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de creuser méthodiquement le sol pour découvrir des objets ou structures anciens est la ____.",
+        "options": [
+          "fouille",
+          "vestige",
+          "stratigraphie",
+          "amphore"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل کندن روشمند خاک = fouille."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu physique et le site où se déroulent les travaux de recherche et d'excavation est le ____.",
+        "options": [
+          "chantier",
+          "fossile",
+          "sarcophage",
+          "momie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محل فیزیکی حفاری = chantier."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit outil manuel à lame plate utilisé pour gratter délicatement la terre autour des objets est la ____.",
+        "options": [
+          "truelle",
+          "ruine",
+          "stèle",
+          "hiéroglyphe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار دستی کوچک برای تراشیدن خاک = truelle."
+      },
+      {
+        "type": "mcq",
+        "question": "La trace matérielle, le reste ou le fragment laissé par une civilisation ou un événement passé est le ____.",
+        "options": [
+          "vestige",
+          "datation",
+          "archéologie",
+          "fouille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آثار و بقایای تمدن‌های گذشته = vestige."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étude et l'analyse de la succession des couches de terre pour établir une chronologie relative est la ____.",
+        "options": [
+          "stratigraphie",
+          "chantier",
+          "truelle",
+          "vestige"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مطالعه لایه‌های خاک برای تاریخ‌گذاری = stratigraphie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le grand vase antique à deux anses, utilisé pour le transport du vin ou de l'huile, est l'____.",
+        "options": [
+          "amphore",
+          "fossile",
+          "sarcophage",
+          "momie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کوزه دودسته باستانی = amphore."
+      },
+      {
+        "type": "mcq",
+        "question": "Le reste conservé et minéralisé d'un organisme animal ou végétal ayant vécu dans un passé lointain est le ____.",
+        "options": [
+          "fossile",
+          "ruine",
+          "stèle",
+          "hiéroglyphe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بقایای سنگ‌شده جانداران = fossile."
+      },
+      {
+        "type": "mcq",
+        "question": "Le grand cercueil en pierre ou en marbre, souvent sculpté, utilisé dans l'Antiquité est le ____.",
+        "options": [
+          "sarcophage",
+          "datation",
+          "archéologie",
+          "fouille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تابوت سنگی بزرگ = sarcophage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le cadavre qui a été préservé de la décomposition par des techniques naturelles ou artificielles est la ____.",
+        "options": [
+          "momie",
+          "chantier",
+          "truelle",
+          "vestige"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جسد حفظ‌شده از تجزیه = momie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le reste d'un bâtiment ou d'une ville détruite, tombé en décrépitude, est la ____.",
+        "options": [
+          "ruine",
+          "stratigraphie",
+          "amphore",
+          "fossile"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خرابه‌های ساختمان یا شهر = ruine."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bloc de pierre dressé, souvent plat, portant des inscriptions commémoratives ou funéraires est la ____.",
+        "options": [
+          "stèle",
+          "ruine",
+          "hiéroglyphe",
+          "datation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سنگ عمودی حکاکی‌شده = stèle."
+      },
+      {
+        "type": "mcq",
+        "question": "Le caractère de l'écriture sacrée de l'Égypte antique, représentant des objets ou des idées, est le ____.",
+        "options": [
+          "hiéroglyphe",
+          "archéologie",
+          "fouille",
+          "chantier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خط تصویری مصر باستان = hiéroglyphe."
+      },
+      {
+        "type": "mcq",
+        "question": "La méthode scientifique qui permet de déterminer l'âge absolu d'un objet ou d'un fossile est la ____.",
+        "options": [
+          "datation",
+          "truelle",
+          "vestige",
+          "stratigraphie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روش علمی تعیین سن = datation."
+      },
+      {
+        "type": "binary",
+        "question": "La stratigraphie permet de dater les objets en analysant l'ordre de superposition des couches de terre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. لایه‌نگاری (stratigraphie) بر این اصل استوار است که لایه‌های زیرین قدیمی‌تر از لایه‌های بالایی هستند."
+      },
+      {
+        "type": "binary",
+        "question": "Une amphore est une arme tranchante utilisée par les légionnaires romains au combat.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. آمفورا (amphore) یک کوزه سفالی دودسته برای حمل مایعات است، نه یک سلاح."
+      },
+      {
+        "type": "binary",
+        "question": "Le hiéroglyphe est un système d'écriture utilisant des pictogrammes, principalement dans l'Égypte antique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هیروگلیف سیستم نوشتاری تصویری مصر باستان است."
+      },
+      {
+        "type": "binary",
+        "question": "La datation au carbone 14 est utilisée pour déterminer l'âge des roches volcaniques et des météorites.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تاریخ‌گذاری کربن ۱۴ فقط برای مواد آلی (مانند استخوان یا چوب) استفاده می‌شود، نه سنگ‌های آتشفشانی."
+      },
+      {
+        "type": "binary",
+        "question": "Un sarcophage est littéralement un 'mangeur de chair', un cercueil de pierre destiné à recevoir un corps.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. واژه سارکوفاگ ریشه یونانی دارد و به معنای تابوت سنگی است."
+      },
+      {
+        "type": "binary",
+        "question": "La truelle est un gros engin mécanique utilisé pour creuser des tranchées profondes sur les chantiers.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تروئل (truelle) یک کمچه یا ماله کوچک دستی است که باستان‌شناسان برای کارهای ظریف استفاده می‌کنند."
+      }
+    ]
+  }
+}
