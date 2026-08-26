@@ -1,0 +1,680 @@
+{
+  "id": "museology_restoration",
+  "level": "C1",
+  "theme": "Muséologie, conservation et restauration d'œuvres d'art",
+  "theme_fa": "موزه‌داری، نگهداری و مرمت آثار هنری",
+  "icon": "🏛️",
+  "inspiration": "Monuments Men (George Clooney, 2014)",
+  "words": [
+    {
+      "fr": "la muséologie",
+      "fa": "موزه‌داری",
+      "emoji": "🏛️",
+      "difficulty": 5,
+      "ex": "La muséologie étudie l'organisation et la gestion des musées.",
+      "ex_fa": "موزه‌داری سازماندهی و مدیریت موزه‌ها را مطالعه می‌کند."
+    },
+    {
+      "fr": "la restauration",
+      "fa": "مرمت",
+      "emoji": "🔧",
+      "difficulty": 4,
+      "ex": "La restauration d'art exige des connaissances en chimie et en histoire.",
+      "ex_fa": "مرمت هنر به دانش شیمی و تاریخ نیاز دارد."
+    },
+    {
+      "fr": "le conservateur",
+      "fa": "مسئول موزه، محافظ",
+      "emoji": "👨‍💼",
+      "difficulty": 4,
+      "ex": "Le conservateur veille à la préservation des collections.",
+      "ex_fa": "مسئول موزه بر حفظ مجموعه‌ها نظارت می‌کند."
+    },
+    {
+      "fr": "le vernis",
+      "fa": "ورنی، لایه محافظ",
+      "emoji": "✨",
+      "difficulty": 3,
+      "ex": "Le vernis protège la peinture de l'oxydation et de la poussière.",
+      "ex_fa": "ورنی از نقاشی در برابر اکسیداسیون و گرد و غبار محافظت می‌کند."
+    },
+    {
+      "fr": "le solvant",
+      "fa": "حلال",
+      "emoji": "🧪",
+      "difficulty": 4,
+      "ex": "Le solvant dissout les anciennes couches de vernis jauni.",
+      "ex_fa": "حلال، لایه‌های قدیمی و زرد شده ورنی را حل می‌کند."
+    },
+    {
+      "fr": "la patine",
+      "fa": "پاتینه (لایه کهنگی)",
+      "emoji": "🟤",
+      "difficulty": 4,
+      "ex": "La patine du temps donne une noblesse aux sculptures anciennes.",
+      "ex_fa": "پاتینه زمان به مجسمه‌های قدیمی شکوه می‌بخشد."
+    },
+    {
+      "fr": "le pigment",
+      "fa": "رنگدانه",
+      "emoji": "🎨",
+      "difficulty": 3,
+      "ex": "Le pigment bleu outremer était autrefois plus cher que l'or.",
+      "ex_fa": "رنگدانه آبی اولترامارین زمانی از طلا گران‌تر بود."
+    },
+    {
+      "fr": "la toile",
+      "fa": "بوم نقاشی",
+      "emoji": "🖼️",
+      "difficulty": 2,
+      "ex": "La toile de lin est tendue sur un châssis en bois.",
+      "ex_fa": "بوم کتان روی یک قاب چوبی کشیده شده است."
+    },
+    {
+      "fr": "le châssis",
+      "fa": "قاب بوم",
+      "emoji": "🪵",
+      "difficulty": 4,
+      "ex": "Le châssis doit être parfaitement droit pour éviter les déformations.",
+      "ex_fa": "قاب باید کاملاً صاف باشد تا از تغییر شکل جلوگیری شود."
+    },
+    {
+      "fr": "l'authentification",
+      "fa": "اصالت‌سنجی",
+      "emoji": "🔍",
+      "difficulty": 5,
+      "ex": "L'authentification d'un tableau peut prendre des années de recherche.",
+      "ex_fa": "اصالت‌سنجی یک نقاشی می‌تواند سال‌ها تحقیق ببرد."
+    },
+    {
+      "fr": "la provenance",
+      "fa": "منشأ، سابقه مالکیت",
+      "emoji": "📜",
+      "difficulty": 5,
+      "ex": "La provenance documentée augmente considérablement la valeur d'une œuvre.",
+      "ex_fa": "منشأ مستندشده ارزش یک اثر را به‌طور قابل‌توجهی افزایش می‌دهد."
+    },
+    {
+      "fr": "la radiographie",
+      "fa": "رادیوگرافی (عکس‌برداری ایکس)",
+      "emoji": "📸",
+      "difficulty": 4,
+      "ex": "La radiographie révèle les repentirs et les couches cachées.",
+      "ex_fa": "رادیوگرافی تغییرات و لایه‌های پنهان را آشکار می‌کند."
+    },
+    {
+      "fr": "l'infrarouge",
+      "fa": "مادون قرمز",
+      "emoji": "🔴",
+      "difficulty": 4,
+      "ex": "L'infrarouge permet de voir les dessins préparatoires sous la peinture.",
+      "ex_fa": "مادون قرمز امکان دیدن طرح‌های مقدماتی زیر نقاشی را می‌دهد."
+    },
+    {
+      "fr": "le chef-d'œuvre",
+      "fa": "شاهکار",
+      "emoji": "🏆",
+      "difficulty": 3,
+      "ex": "Ce chef-d'œuvre de la Renaissance a survécu à cinq siècles.",
+      "ex_fa": "این شاهکار رنسانس پنج قرن دوام آورده است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le secret de Vermeer",
+      "text": "Clara est une jeune {{BLANK_3}} spécialisée dans la {{BLANK_2}} des tableaux flamands. Un jour, on lui confie un {{BLANK_14}} mystérieux attribué à Vermeer. Elle commence par examiner la {{BLANK_8}} tendue sur son {{BLANK_9}} ancien. Le {{BLANK_4}} jauni masque les couleurs originales. Elle utilise un {{BLANK_5}} doux pour nettoyer la surface sans abimer les {{BLANK_7}}s délicats. La {{BLANK_6}} du temps a donné une teinte dorée à l'ensemble. Grâce à la {{BLANK_12}}, elle découvre une signature cachée sous la peinture. L'{{BLANK_13}} révèle des esquisses préparatoires invisibles à l'œil nu. L'{{BLANK_10}} du tableau prend des mois : elle doit retracer l'histoire de chaque propriétaire depuis le XVIIe siècle. Finalement, le {{BLANK_1}} valide ses découvertes. Ce tableau oublié est bien un authentique Vermeer. Clara sait qu'elle a sauvé un fragment de l'histoire de l'art, et que son travail de {{BLANK_1}} préservera cette beauté pour les générations futures.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "muséologie",
+          "options": [
+            "muséologie",
+            "restauration",
+            "conservateur",
+            "vernis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "restauration",
+          "options": [
+            "restauration",
+            "solvant",
+            "patine",
+            "pigment"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "conservateur",
+          "options": [
+            "conservateur",
+            "toile",
+            "châssis",
+            "authentification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "vernis",
+          "options": [
+            "vernis",
+            "provenance",
+            "radiographie",
+            "infrarouge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "solvant",
+          "options": [
+            "solvant",
+            "chef-d'œuvre",
+            "muséologie",
+            "restauration"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "patine",
+          "options": [
+            "patine",
+            "conservateur",
+            "vernis",
+            "solvant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pigments",
+          "options": [
+            "pigments",
+            "toile",
+            "châssis",
+            "authentification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "toile",
+          "options": [
+            "toile",
+            "provenance",
+            "radiographie",
+            "infrarouge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "châssis",
+          "options": [
+            "châssis",
+            "chef-d'œuvre",
+            "muséologie",
+            "restauration"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "authentification",
+          "options": [
+            "authentification",
+            "conservateur",
+            "vernis",
+            "solvant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "provenance",
+          "options": [
+            "provenance",
+            "patine",
+            "pigment",
+            "toile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "radiographie",
+          "options": [
+            "radiographie",
+            "châssis",
+            "authentification",
+            "provenance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "infrarouge",
+          "options": [
+            "infrarouge",
+            "radiographie",
+            "chef-d'œuvre",
+            "muséologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "chef-d'œuvre",
+          "options": [
+            "chef-d'œuvre",
+            "restauration",
+            "conservateur",
+            "vernis"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le voile des siècles",
+      "inspiration": "Monuments Men (George Clooney, 2014)",
+      "text": "À peine la jeune {{BLANK_3}} eut-elle effleuré la surface du tableau que cinq siècles d'histoire semblèrent respirer sous ses doigts. Ce n'était pas une simple {{BLINK_2}}, mais une résurrection. Elle savait que la {{BLANK_1}} n'était pas qu'une science, mais un dialogue avec les morts. Le {{BLANK_4}} jauni, comme un voile de deuil, masquait la lumière originelle. Avec un {{BLANK_5}} précis, elle dissolvait les années, révélant les {{BLANK_7}}s oubliés qui avaient fait pleurer les rois. La {{BLANK_6}} du temps, loin d'être une ennemie, était la signature invisible de l'histoire sur la {{BLANK_8}} tendue. Le {{BLANK_9}} grinçait sous ses mains, témoin silencieux de toutes les mains qui l'avaient touché. Quand la {{BLANK_12}} révéla une signature fantôme, et que l'{{BLANK_13}} montra les hésitations du maître, Clara comprit que l'{{BLANK_10}} n'était pas qu'une question technique, mais une enquête policière. Retracer la {{BLANK_11}}, c'était suivre les pas des voleurs, des rois et des amants qui avaient possédé ce {{BLANK_14}}. Chaque couche enlevée était un mensonge de moins, chaque couleur retrouvée une vérité de plus. La {{BLANK_1}} lui avait appris que sauver une œuvre, c'était sauver la mémoire du monde.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "muséologie",
+          "options": [
+            "muséologie",
+            "restauration",
+            "conservateur",
+            "vernis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "restauration",
+          "options": [
+            "restauration",
+            "solvant",
+            "patine",
+            "pigment"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "conservateur",
+          "options": [
+            "conservateur",
+            "toile",
+            "châssis",
+            "authentification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "vernis",
+          "options": [
+            "vernis",
+            "provenance",
+            "radiographie",
+            "infrarouge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "solvant",
+          "options": [
+            "solvant",
+            "chef-d'œuvre",
+            "muséologie",
+            "restauration"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "patine",
+          "options": [
+            "patine",
+            "conservateur",
+            "vernis",
+            "solvant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pigments",
+          "options": [
+            "pigments",
+            "toile",
+            "châssis",
+            "authentification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "toile",
+          "options": [
+            "toile",
+            "provenance",
+            "radiographie",
+            "infrarouge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "châssis",
+          "options": [
+            "châssis",
+            "chef-d'œuvre",
+            "muséologie",
+            "restauration"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "authentification",
+          "options": [
+            "authentification",
+            "conservateur",
+            "vernis",
+            "solvant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "provenance",
+          "options": [
+            "provenance",
+            "patine",
+            "pigment",
+            "toile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "radiographie",
+          "options": [
+            "radiographie",
+            "châssis",
+            "authentification",
+            "provenance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "infrarouge",
+          "options": [
+            "infrarouge",
+            "radiographie",
+            "chef-d'œuvre",
+            "muséologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "chef-d'œuvre",
+          "options": [
+            "chef-d'œuvre",
+            "restauration",
+            "conservateur",
+            "vernis"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Muséologie et restauration",
+    "title_fa": "آزمون : موزه‌داری و مرمت",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La discipline qui étudie l'organisation, la gestion et la mission des musées est la ____.",
+        "options": [
+          "muséologie",
+          "restauration",
+          "conservateur",
+          "vernis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رشته مطالعه سازماندهی و مدیریت موزه‌ها = muséologie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des techniques visant à remettre une œuvre d'art en bon état de conservation est la ____.",
+        "options": [
+          "restauration",
+          "solvant",
+          "patine",
+          "pigment"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه تکنیک‌های بازگرداندن اثر به حالت خوب = restauration."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel responsable de la gestion, de l'étude et de la préservation des collections est le ____.",
+        "options": [
+          "conservateur",
+          "toile",
+          "châssis",
+          "authentification"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسئول مدیریت و حفظ مجموعه‌ها = conservateur."
+      },
+      {
+        "type": "mcq",
+        "question": "La couche transparente appliquée sur une peinture pour la protéger et la saturer est le ____.",
+        "options": [
+          "vernis",
+          "provenance",
+          "radiographie",
+          "infrarouge"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لایه شفاف محافظ روی نقاشی = vernis."
+      },
+      {
+        "type": "mcq",
+        "question": "Le liquide chimique utilisé pour dissoudre et éliminer les anciennes couches de vernis est le ____.",
+        "options": [
+          "solvant",
+          "chef-d'œuvre",
+          "muséologie",
+          "restauration"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مایع شیمیایی برای حل کردن ورنی قدیمی = solvant."
+      },
+      {
+        "type": "mcq",
+        "question": "L'aspect visuel acquis par une œuvre avec le temps, témoignant de son ancienneté, est la ____.",
+        "options": [
+          "patine",
+          "conservateur",
+          "vernis",
+          "solvant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ظاهر کسب‌شده با گذشت زمان = patine."
+      },
+      {
+        "type": "mcq",
+        "question": "La poudre colorée, naturelle ou synthétique, qui donne sa couleur à la peinture est le ____.",
+        "options": [
+          "pigment",
+          "toile",
+          "châssis",
+          "authentification"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پودر رنگی که رنگ نقاشی را می‌دهد = pigment."
+      },
+      {
+        "type": "mcq",
+        "question": "Le support textile, généralement en lin ou coton, sur lequel le peintre applique sa peinture est la ____.",
+        "options": [
+          "toile",
+          "provenance",
+          "radiographie",
+          "infrarouge"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطح پارچه‌ای برای نقاشی = toile."
+      },
+      {
+        "type": "mcq",
+        "question": "Le cadre en bois sur lequel la toile est tendue et agrafée est le ____.",
+        "options": [
+          "châssis",
+          "chef-d'œuvre",
+          "muséologie",
+          "restauration"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قاب چوبی که بوم روی آن کشیده می‌شود = châssis."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus scientifique et historique visant à confirmer l'auteur et l'origine d'une œuvre est l'____.",
+        "options": [
+          "authentification",
+          "conservateur",
+          "vernis",
+          "solvant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرآیند تأیید نویسنده و منشأ اثر = authentification."
+      },
+      {
+        "type": "mcq",
+        "question": "L'historique documenté des propriétaires successifs d'une œuvre d'art est la ____.",
+        "options": [
+          "provenance",
+          "patine",
+          "pigment",
+          "toile"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تاریخچه مستند مالکان متوالی = provenance."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique d'imagerie utilisant les rayons X pour révéler les couches cachées d'une peinture est la ____.",
+        "options": [
+          "radiographie",
+          "châssis",
+          "authentification",
+          "provenance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک تصویربرداری با اشعه ایکس = radiographie."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique d'analyse utilisant la lumière non visible pour révéler les dessins préparatoires est l'____.",
+        "options": [
+          "infrarouge",
+          "radiographie",
+          "chef-d'œuvre",
+          "muséologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک استفاده از نور نامرئی = infrarouge."
+      },
+      {
+        "type": "mcq",
+        "question": "Une œuvre d'art exceptionnelle, reconnue pour sa qualité et son importance historique, est un ____.",
+        "options": [
+          "chef-d'œuvre",
+          "restauration",
+          "conservateur",
+          "vernis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اثر هنری استثنایی و مهم = chef-d'œuvre."
+      },
+      {
+        "type": "binary",
+        "question": "La muséologie est la science qui étudie uniquement les techniques de peinture et de sculpture.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. موزه‌داری به سازماندهی و مدیریت موزه‌ها می‌پردازد، نه فقط تکنیک‌های هنری."
+      },
+      {
+        "type": "binary",
+        "question": "Le conservateur est le professionnel responsable de la gestion et de la préservation des collections d'un musée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. مسئول موزه (conservateur) مدیریت و حفظ مجموعه‌ها را بر عهده دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le vernis est une couche opaque qui masque complètement la peinture originale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ورنی لایه‌ای شفاف است که از نقاشی محافظت می‌کند، نه آن را پنهان می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La provenance désigne l'historique des propriétaires successifs d'une œuvre, crucial pour son authentification.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. منشأ (provenance) تاریخچه مالکان است که برای اصالت‌سنجی حیاتی است."
+      },
+      {
+        "type": "binary",
+        "question": "La radiographie permet de voir les couches de peinture cachées et les repentirs de l'artiste.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. رادیوگرافی لایه‌های پنهان و تغییرات هنرمند را آشکار می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La patine est une saleté qu'il faut toujours enlever lors de la restauration d'une œuvre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پاتینه (patine) لایه کهنگی طبیعی است که گاهی باید حفظ شود، نه همیشه حذف گردد."
+      }
+    ]
+  }
+}
