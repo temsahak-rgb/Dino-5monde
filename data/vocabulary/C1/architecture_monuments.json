@@ -1,0 +1,680 @@
+{
+  "id": "architecture_monuments",
+  "level": "C1",
+  "theme": "Architecture, monuments et urbanisme",
+  "theme_fa": "معماری، بناهای یادبود و شهرسازی",
+  "icon": "🏛️",
+  "inspiration": "Inception (Christopher Nolan, 2010)",
+  "words": [
+    {
+      "fr": "l'architecture",
+      "fa": "معماری",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "L'architecture gothique se caractérise par ses arcs brisés.",
+      "ex_fa": "معماری گوتیک با قوس‌های نوک‌تیز مشخص می‌شود."
+    },
+    {
+      "fr": "la façade",
+      "fa": "نمای ساختمان",
+      "emoji": "🏢",
+      "difficulty": 4,
+      "ex": "La façade haussmannienne est typique des immeubles parisiens.",
+      "ex_fa": "نمای هاوسمانی مختص ساختمان‌های پاریسی است."
+    },
+    {
+      "fr": "la voûte",
+      "fa": "طاق",
+      "emoji": "🌉",
+      "difficulty": 5,
+      "ex": "La voûte en berceau couvre la nef de l'église romane.",
+      "ex_fa": "طاق گهواره‌ای شبستان کلیسای رومانسک را می‌پوشاند."
+    },
+    {
+      "fr": "la colonne",
+      "fa": "ستون",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "Les colonnes doriques du Parthénon sont emblématiques.",
+      "ex_fa": "ستون‌های دوریک پارتنون نمادین هستند."
+    },
+    {
+      "fr": "le dôme",
+      "fa": "گنبد بزرگ",
+      "emoji": "🕌",
+      "difficulty": 4,
+      "ex": "Le dôme des Invalides domine le ciel de Paris.",
+      "ex_fa": "گنبد لِنوِلید آسمان پاریس را تسخیر کرده است."
+    },
+    {
+      "fr": "l'arc-boutant",
+      "fa": "پشتبند (شمعی)",
+      "emoji": "🏰",
+      "difficulty": 5,
+      "ex": "Les arcs-boutants de Notre-Dame soutiennent les murs de la nef.",
+      "ex_fa": "پشتبندهای نوتردام دیوارهای شبستان را نگه می‌دارند."
+    },
+    {
+      "fr": "le cloître",
+      "fa": "رواق صومعه",
+      "emoji": "⛪",
+      "difficulty": 5,
+      "ex": "Le cloître médiéval entoure un jardin intérieur paisible.",
+      "ex_fa": "رواق صومعه قرون وسطایی یک باغ داخلی آرام را احاطه کرده است."
+    },
+    {
+      "fr": "le gratte-ciel",
+      "fa": "آسمان‌خراش",
+      "emoji": "🏙️",
+      "difficulty": 4,
+      "ex": "Le gratte-ciel Burj Khalifa est le plus haut du monde.",
+      "ex_fa": "آسمان‌خراش برج خلیفه بلندترین در جهان است."
+    },
+    {
+      "fr": "le pilier",
+      "fa": "پایه، ستون ضخیم",
+      "emoji": "🏛️",
+      "difficulty": 4,
+      "ex": "Les piliers massifs soutiennent la cathédrale gothique.",
+      "ex_fa": "پایه‌های سنگین کلیسای جامع گوتیک را نگه می‌دارند."
+    },
+    {
+      "fr": "la nef",
+      "fa": "شبستان (ناو اصلی کلیسا)",
+      "emoji": "⛪",
+      "difficulty": 5,
+      "ex": "La nef centrale peut accueillir plus de mille fidèles.",
+      "ex_fa": "شبستان مرکزی می‌تواند بیش از هزار نمازگزار را جای دهد."
+    },
+    {
+      "fr": "le vitrail",
+      "fa": "شیشه رنگی (ویترای)",
+      "emoji": "🪟",
+      "difficulty": 4,
+      "ex": "Les vitraux de Chartres filtrent une lumière mystique.",
+      "ex_fa": "ویترای‌های شارتر نوری عرفانی را فیلتر می‌کنند."
+    },
+    {
+      "fr": "la coupole",
+      "fa": "گنبد کوچک",
+      "emoji": "🕌",
+      "difficulty": 5,
+      "ex": "La coupole byzantine repose sur quatre pendentifs.",
+      "ex_fa": "گنبد بیزانسی روی چهار پاندانتیو قرار دارد."
+    },
+    {
+      "fr": "le beffroi",
+      "fa": "برج ناقوس",
+      "emoji": "🗼",
+      "difficulty": 5,
+      "ex": "Le beffroi de Bruges domine la Grand-Place depuis le XIIIe siècle.",
+      "ex_fa": "برج ناقوس بروژ از قرن سیزدهم بر میدان بزرگ تسلط دارد."
+    },
+    {
+      "fr": "le parvis",
+      "fa": "محوطه جلوی کلیسا",
+      "emoji": "⛪",
+      "difficulty": 5,
+      "ex": "Le parvis de Notre-Dame accueille des milliers de touristes.",
+      "ex_fa": "محوطه جلوی نوتردام میزبان هزاران گردشگر است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'architecte des rêves",
+      "text": "Ariadne est une jeune étudiante en {{BLANK_1}} recrutée pour une mission secrète. Cobb lui demande de créer des labyrinthes mentaux. Elle dessine d'abord une {{BLANK_2}} parisienne typique, avec ses fenêtres alignées. Puis elle imagine une immense {{BLANK_3}} gothique qui se déploie sur cent mètres. La {{BLANK_4}} principale est soutenue par des dizaines de {{BLANK_9}}s massifs en pierre. Des {{BLANK_5}}s majestueux s'élèvent vers le ciel, tandis que les {{BLANK_6}}s extérieurs poussent contre les murs pour les maintenir debout. Elle place un {{BLANK_11}} coloré qui projette une lumière mystique sur le sol. Au centre, une {{BLANK_12}} dorée capture les rayons du soleil. Le {{BLANK_13}} de la cathédrale sonne midi, résonnant dans tout le quartier. Devant l'édifice, le {{BLANK_14}} immense est rempli de visiteurs. Pour le niveau suivant, elle crée un {{BLANK_8}} moderne en verre et acier, qui défie la gravité. Dans un rêve plus ancien, elle construit un {{BLANK_7}} médiéval paisible, où les moines méditent en silence. Chaque détail est pensé : chaque {{BLANK_10}} latérale, chaque pierre, chaque reflet. Quand le rêve devient trop réel, elle comprend que l'architecture n'est pas seulement de la matière, mais aussi de la mémoire et du désir.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "architecture",
+          "options": [
+            "architecture",
+            "voûte",
+            "colonne",
+            "nef"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "façade",
+          "options": [
+            "façade",
+            "dôme",
+            "pilier",
+            "vitrail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "voûte",
+          "options": [
+            "voûte",
+            "arc-boutant",
+            "cloître",
+            "coupole"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "nef",
+          "options": [
+            "nef",
+            "beffroi",
+            "parvis",
+            "gratte-ciel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "colonnes",
+          "options": [
+            "colonnes",
+            "façades",
+            "coupoles",
+            "nefs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "arcs-boutants",
+          "options": [
+            "arcs-boutants",
+            "vitraux",
+            "piliers",
+            "cloîtres"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "cloître",
+          "options": [
+            "cloître",
+            "beffroi",
+            "dôme",
+            "gratte-ciel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "gratte-ciel",
+          "options": [
+            "gratte-ciel",
+            "parvis",
+            "vitrail",
+            "arc-boutant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "piliers",
+          "options": [
+            "piliers",
+            "colonnes",
+            "coupoles",
+            "façades"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "nef",
+          "options": [
+            "nef",
+            "voûte",
+            "cloître",
+            "beffroi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "vitrail",
+          "options": [
+            "vitrail",
+            "parvis",
+            "gratte-ciel",
+            "dôme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "coupole",
+          "options": [
+            "coupole",
+            "façade",
+            "arc-boutant",
+            "colonne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "beffroi",
+          "options": [
+            "beffroi",
+            "pilier",
+            "nef",
+            "vitrail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "parvis",
+          "options": [
+            "parvis",
+            "cloître",
+            "voûte",
+            "dôme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les cités impossibles",
+      "inspiration": "Inception (Christopher Nolan, 2010)",
+      "text": "À peine Ariadne eut-elle refermé son carnet de croquis qu'elle comprit que l'{{BLANK_1}} n'était pas qu'un métier, mais une manière de modeler la réalité elle-même. Cobb, cet extracteur de secrets, l'avait recrutée pour bâtir des labyrinthes mentaux, des villes impossibles où les rêves s'emmêlaient. Dans le café parisien où ils s'étaient rencontrés, elle avait dessiné en deux minutes une {{BLANK_2}} haussmannienne parfaite, puis avait plié la rue sur elle-même comme une feuille de papier, stupéfaite de son propre pouvoir. Pour la mission Fischer, elle devait imaginer trois niveaux de rêve, trois architectures emboîtées comme des poupées russes. Au premier niveau, une métropole pluvieuse avec ses tours de verre et d'acier. Au deuxième, un hôtel art déco aux couloirs infinis. Au troisième, une forteresse enneigée perdue dans les montagnes. Mais dans ses moments de solitude, elle rêvait d'autre chose. Elle bâtissait une cathédrale gothique imaginaire dont la {{BLANK_3}} en ogive atteignait soixante mètres de hauteur, une prouesse qui défiait toute logique structurelle. La {{BLANK_4}} centrale était soutenue par des {{BLANK_9}}s cyclopéens, tandis que des {{BLANK_5}}s corinthiennes semblaient danser sous la lumière filtrée par un immense {{BLANK_11}} rosace. Dehors, les {{BLANK_6}}s, ces araignées de pierre, étreignaient les murs pour les empêcher de s'effondrer sous le poids du ciel. Elle y ajoutait un {{BLANK_7}} silencieux où des moines fantômes cultivaient des roses éternelles. Une {{BLANK_12}} byzantine, dorée à la feuille, couronnait le transept, tandis que le {{BLANK_13}} solitaire rythmait les heures d'un temps qui n'existait pas. Sur le {{BLANK_14}} immense, les touristes du rêve se pressaient, sans savoir qu'ils marchaient dans la tête d'une jeune femme endormie à des milliers de kilomètres de là. Parfois, pour s'amuser, elle créait un {{BLANK_8}} de cristal qui se reflétait dans des miroirs infinis, tour de Babel moderne qui défiait la gravité. Mais au fond d'elle, elle savait que la plus belle architecture n'était pas celle qu'on construit avec des pierres, mais celle qu'on édifie dans le cœur de ceux qu'on aime, souvenir indestructible qui survit à tous les réveils.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "architecture",
+          "options": [
+            "architecture",
+            "voûte",
+            "colonne",
+            "nef"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "façade",
+          "options": [
+            "façade",
+            "dôme",
+            "pilier",
+            "vitrail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "voûte",
+          "options": [
+            "voûte",
+            "arc-boutant",
+            "cloître",
+            "coupole"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "nef",
+          "options": [
+            "nef",
+            "beffroi",
+            "parvis",
+            "gratte-ciel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "colonnes",
+          "options": [
+            "colonnes",
+            "façades",
+            "coupoles",
+            "nefs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "arcs-boutants",
+          "options": [
+            "arcs-boutants",
+            "vitraux",
+            "piliers",
+            "cloîtres"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "cloître",
+          "options": [
+            "cloître",
+            "beffroi",
+            "dôme",
+            "gratte-ciel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "gratte-ciel",
+          "options": [
+            "gratte-ciel",
+            "parvis",
+            "vitrail",
+            "arc-boutant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "piliers",
+          "options": [
+            "piliers",
+            "colonnes",
+            "coupoles",
+            "façades"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "nef",
+          "options": [
+            "nef",
+            "voûte",
+            "cloître",
+            "beffroi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "vitrail",
+          "options": [
+            "vitrail",
+            "parvis",
+            "gratte-ciel",
+            "dôme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "coupole",
+          "options": [
+            "coupole",
+            "façade",
+            "arc-boutant",
+            "colonne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "beffroi",
+          "options": [
+            "beffroi",
+            "pilier",
+            "nef",
+            "vitrail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "parvis",
+          "options": [
+            "parvis",
+            "cloître",
+            "voûte",
+            "dôme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Architecture et monuments",
+    "title_fa": "آزمون : معماری و بناهای یادبود",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art de concevoir et de construire des bâtiments en alliant esthétique, fonction et technique est l'____.",
+        "options": [
+          "architecture",
+          "voûte",
+          "colonne",
+          "nef"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر طراحی و ساخت بنا = architecture."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mur extérieur principal d'un bâtiment, qui donne sur la rue et qui est souvent décoré, est la ____.",
+        "options": [
+          "façade",
+          "dôme",
+          "pilier",
+          "vitrail"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نمای بیرونی ساختمان = façade."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ouvrage de maçonnerie courbe qui couvre un espace et soutient un plafond ou un toit est la ____.",
+        "options": [
+          "voûte",
+          "arc-boutant",
+          "cloître",
+          "coupole"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازه منحنی سقف = voûte."
+      },
+      {
+        "type": "mcq",
+        "question": "Le support vertical cylindrique, souvent orné d'un chapiteau, qui soutient une structure architecturale est la ____.",
+        "options": [
+          "colonne",
+          "façade",
+          "coupole",
+          "nef"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکیه‌گاه عمودی استوانه‌ای = colonne."
+      },
+      {
+        "type": "mcq",
+        "question": "La toiture hémisphérique de grande dimension qui couvre un édifice prestigieux est le ____.",
+        "options": [
+          "dôme",
+          "cloître",
+          "parvis",
+          "beffroi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سقف نیم‌کره‌ای بزرگ = dôme."
+      },
+      {
+        "type": "mcq",
+        "question": "L'élément architectural extérieur en forme d'arc qui soutient les murs d'une église gothique est l'____.",
+        "options": [
+          "arc-boutant",
+          "vitrail",
+          "pilier",
+          "cloître"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قوس بیرونی نگهدارنده در معماری گوتیک = arc-boutant."
+      },
+      {
+        "type": "mcq",
+        "question": "La galerie couverte en forme de quadrilatère qui entoure une cour intérieure dans un monastère est le ____.",
+        "options": [
+          "cloître",
+          "beffroi",
+          "dôme",
+          "gratte-ciel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رواق صومعه اطراف حیاط = cloître."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bâtiment très élevé, caractéristique des grandes métropoles modernes, est le ____.",
+        "options": [
+          "gratte-ciel",
+          "parvis",
+          "vitrail",
+          "arc-boutant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ساختمان بسیار بلند شهری = gratte-ciel."
+      },
+      {
+        "type": "mcq",
+        "question": "Le support vertical massif, plus épais qu'une colonne, qui soutient une voûte ou une arcade est le ____.",
+        "options": [
+          "pilier",
+          "colonne",
+          "coupole",
+          "façade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکیه‌گاه عمودی ضخیم = pilier."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie centrale et principale d'une église, où se rassemblent les fidèles, est la ____.",
+        "options": [
+          "nef",
+          "voûte",
+          "cloître",
+          "beffroi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش اصلی کلیسا برای عبادت = nef."
+      },
+      {
+        "type": "mcq",
+        "question": "La composition de pièces de verre coloré assemblées au plomb qui orne les fenêtres des cathédrales est le ____.",
+        "options": [
+          "vitrail",
+          "parvis",
+          "gratte-ciel",
+          "dôme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پنجره شیشه‌های رنگی = vitrail."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit dôme, souvent de style byzantin ou Renaissance, qui couronne une chapelle ou un bâtiment est la ____.",
+        "options": [
+          "coupole",
+          "façade",
+          "arc-boutant",
+          "colonne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گنبد کوچک = coupole."
+      },
+      {
+        "type": "mcq",
+        "question": "La tour civique caractéristique des villes du nord de la France et de Belgique, contenant un carillon, est le ____.",
+        "options": [
+          "beffroi",
+          "pilier",
+          "nef",
+          "vitrail"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برج ناقوس شهری شمال اروپا = beffroi."
+      },
+      {
+        "type": "mcq",
+        "question": "La place ou l'esplanade située devant une église ou une cathédrale est le ____.",
+        "options": [
+          "parvis",
+          "cloître",
+          "voûte",
+          "dôme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محوطه جلوی کلیسا = parvis."
+      },
+      {
+        "type": "binary",
+        "question": "La colonne et le pilier désignent exactement le même élément architectural, sans aucune distinction.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ستون (colonne) استوانه‌ای و ظریف است، پایه (pilier) ضخیم‌تر و چهارگوش است."
+      },
+      {
+        "type": "binary",
+        "question": "Les arcs-boutants sont une innovation de l'architecture gothique qui permet d'élever les murs et d'y percer de grandes fenêtres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پشتبندها از اختراعات گوتیک برای بالا بردن دیوارها هستند."
+      },
+      {
+        "type": "binary",
+        "question": "Le dôme et la coupole désignent tous deux des structures architecturales de forme hémisphérique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هر دو به سقف نیم‌کره‌ای اشاره دارند، dôme بزرگتر و coupole کوچکتر."
+      },
+      {
+        "type": "binary",
+        "question": "Le cloître est un espace extérieur ouvert, sans toiture, situé au sommet d'une cathédrale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. رواق صومعه سرپوشیده است و اطراف حیاط داخلی قرار دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le vitrail est une technique décorative qui utilise des verres colorés assemblés par des baguettes de plomb.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ویترای از شیشه‌های رنگی متصل با سرب ساخته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le parvis est la partie la plus sacrée de l'église où se trouve l'autel principal.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. parvis محوطه بیرونی جلوی کلیساست، نه بخش مقدس داخلی."
+      }
+    ]
+  }
+}
