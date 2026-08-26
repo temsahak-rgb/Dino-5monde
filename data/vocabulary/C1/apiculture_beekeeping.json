@@ -1,0 +1,680 @@
+{
+  "id": "apiculture_beekeeping",
+  "level": "C1",
+  "theme": "Apiculture, élevage d'abeilles et produits de la ruche",
+  "theme_fa": "زنبورداری، پرورش زنبور و محصولات کندو",
+  "icon": "🐝",
+  "inspiration": "Des abeilles et des hommes (More than Honey - Markus Imhoof, 2012)",
+  "words": [
+    {
+      "fr": "l'apiculture",
+      "fa": "زنبورداری",
+      "emoji": "🐝",
+      "difficulty": 4,
+      "ex": "L'apiculture est essentielle pour la pollinisation de nombreuses cultures.",
+      "ex_fa": "زنبورداری برای گرده‌افشانی بسیاری از محصولات کشاورزی ضروری است."
+    },
+    {
+      "fr": "l'apiculteur",
+      "fa": "زنبوردار",
+      "emoji": "🧑‍🌾",
+      "difficulty": 3,
+      "ex": "L'apiculteur visite ses ruches chaque semaine pour vérifier la santé de la colonie.",
+      "ex_fa": "زنبوردار هر هفته برای بررسی سلامت کلونی به کندوهایش سر می‌زند."
+    },
+    {
+      "fr": "l'enfumoir",
+      "fa": "دودکن (دستگاه دودساز)",
+      "emoji": "💨",
+      "difficulty": 5,
+      "ex": "L'enfumoir produit une fumée froide qui calme les abeilles lors de l'inspection.",
+      "ex_fa": "دودکن، دود سردی تولید می‌کند که زنبورها را هنگام بازرسی آرام می‌کند."
+    },
+    {
+      "fr": "la hausse",
+      "fa": "طبقه اضافه کندو",
+      "emoji": "📦",
+      "difficulty": 5,
+      "ex": "Quand la ruche déborde de miel, on ajoute une hausse pour le stockage.",
+      "ex_fa": "وقتی کندو از عسل لبریز شود، یک طبقه اضافه برای ذخیره‌سازی قرار می‌دهند."
+    },
+    {
+      "fr": "le cadre",
+      "fa": "قاب (داخل کندو)",
+      "emoji": "🖼️",
+      "difficulty": 4,
+      "ex": "L'apiculteur retire délicatement le cadre pour observer le couvain.",
+      "ex_fa": "زنبوردار به آرامی قاب را بیرون می‌آورد تا نوزادان زنبور را مشاهده کند."
+    },
+    {
+      "fr": "la propolis",
+      "fa": "بره‌موم (پروپولیس)",
+      "emoji": "🟤",
+      "difficulty": 5,
+      "ex": "La propolis est une résine végétale utilisée par les abeilles pour aseptiser la ruche.",
+      "ex_fa": "بره‌موم صمغی گیاهی است که زنبورها برای ضدعفونی کردن کندو استفاده می‌کنند."
+    },
+    {
+      "fr": "la gelée royale",
+      "fa": "ژل رویال",
+      "emoji": "👑",
+      "difficulty": 4,
+      "ex": "La gelée royale est la nourriture exclusive de la reine tout au long de sa vie.",
+      "ex_fa": "ژل رویال غذای انحصاری ملکه در تمام طول عمرش است."
+    },
+    {
+      "fr": "l'essaimage",
+      "fa": "بچه‌دهی (پرواز دسته‌جمعی)",
+      "emoji": "🌪️",
+      "difficulty": 5,
+      "ex": "L'essaimage est le processus naturel de reproduction et de division de la colonie.",
+      "ex_fa": "بچه‌دهی فرآیند طبیعی تولیدمثل و تقسیم کلونی زنبورهاست."
+    },
+    {
+      "fr": "le couvain",
+      "fa": "نوزادان زنبور (محل تخم‌ها)",
+      "emoji": "🥚",
+      "difficulty": 5,
+      "ex": "Un couvain compact et régulier indique que la reine est jeune et en bonne santé.",
+      "ex_fa": "نوزادان متراکم و منظم نشان می‌دهد که ملکه جوان و سالم است."
+    },
+    {
+      "fr": "l'extracteur",
+      "fa": "دستگاه عسل‌گیری (سانتریفیوژ)",
+      "emoji": "🌀",
+      "difficulty": 5,
+      "ex": "L'extracteur centrifuge permet de récupérer le miel sans détruire les rayons de cire.",
+      "ex_fa": "دستگاه سانتریفیوژ اجازه می‌دهد عسل را بدون تخریب موم‌ها برداشت کنند."
+    },
+    {
+      "fr": "la cire",
+      "fa": "موم",
+      "emoji": "🕯️",
+      "difficulty": 3,
+      "ex": "Les abeilles sécrètent la cire pour construire les alvéoles de leur habitat.",
+      "ex_fa": "زنبورها موم ترشح می‌کنند تا سلول‌های زیستگاهشان را بسازند."
+    },
+    {
+      "fr": "la miellée",
+      "fa": "فصل عسل‌دهی، شهدآوری",
+      "emoji": "🍯",
+      "difficulty": 5,
+      "ex": "La miellée de lavande en juin donne un miel clair et très parfumé.",
+      "ex_fa": "شهدآوری اسطوخودوس در ژوئن، عسلی روشن و بسیار معطر تولید می‌کند."
+    },
+    {
+      "fr": "la transhumance",
+      "fa": "کوچ کندوها (مهاجرت زنبورها)",
+      "emoji": "🚚",
+      "difficulty": 5,
+      "ex": "La transhumance des ruches suit les floraisons saisonnières à travers le pays.",
+      "ex_fa": "کوچ کندوها، شکوفه‌های فصلی را در سراسر کشور دنبال می‌کند."
+    },
+    {
+      "fr": "le butinage",
+      "fa": "گرده‌افشانی، جمع‌آوری شهد",
+      "emoji": "🌸",
+      "difficulty": 4,
+      "ex": "Le butinage quotidien assure la survie alimentaire de toute la colonie.",
+      "ex_fa": "جمع‌آوری روزانه شهد، بقای غذایی کل کلونی را تضمین می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'or des fleurs",
+      "text": "Antoine est un {{BLANK_2}} passionné qui pratique l'{{BLANK_1}} depuis son enfance. Au printemps, il prépare ses ruches pour la grande saison. Il allume son {{BLANK_3}} pour calmer les abeilles avant d'ouvrir le toit. Il ajoute une {{BLANK_4}} supplémentaire pour que les ouvrières aient de la place pour stocker le miel. À l'intérieur, chaque {{BLANK_5}} en bois est recouvert de {{BLANK_11}} pure. Il vérifie la santé du {{BLANK_9}}, là où les larves grandissent, et s'assure que la reine pond bien. Les abeilles utilisent la {{BLANK_6}} pour aseptiser leur habitat. Quand la {{BLANK_12}} bat son plein, les butineuses reviennent chargées de nectar après leur {{BLANK_14}} quotidien. Parfois, il doit prévenir l'{{BLANK_8}} naturel qui diviserait la colonie. Il récolte aussi un peu de {{BLANK_7}}, une substance précieuse et rare. Enfin, il utilise un {{BLANK_10}} centrifuge pour séparer le miel des rayons. En été, il pratique la {{BLANK_13}}, déplaçant ses ruches vers les montagnes fleuries.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "apiculture",
+          "options": [
+            "apiculture",
+            "apiculteur",
+            "enfumoir",
+            "hausse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "apiculteur",
+          "options": [
+            "apiculteur",
+            "cadre",
+            "propolis",
+            "gelée royale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "enfumoir",
+          "options": [
+            "enfumoir",
+            "essaimage",
+            "couvain",
+            "extracteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "hausse",
+          "options": [
+            "hausse",
+            "cire",
+            "miellée",
+            "transhumance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "cadre",
+          "options": [
+            "cadre",
+            "butinage",
+            "apiculture",
+            "apiculteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "propolis",
+          "options": [
+            "propolis",
+            "enfumoir",
+            "hausse",
+            "cadre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "gelée royale",
+          "options": [
+            "gelée royale",
+            "essaimage",
+            "couvain",
+            "extracteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "essaimage",
+          "options": [
+            "essaimage",
+            "cire",
+            "miellée",
+            "transhumance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "couvain",
+          "options": [
+            "couvain",
+            "butinage",
+            "apiculture",
+            "apiculteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "extracteur",
+          "options": [
+            "extracteur",
+            "enfumoir",
+            "hausse",
+            "cadre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "cire",
+          "options": [
+            "cire",
+            "propolis",
+            "gelée royale",
+            "essaimage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "miellée",
+          "options": [
+            "miellée",
+            "couvain",
+            "extracteur",
+            "cire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "transhumance",
+          "options": [
+            "transhumance",
+            "butinage",
+            "apiculture",
+            "apiculteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "butinage",
+          "options": [
+            "butinage",
+            "enfumoir",
+            "hausse",
+            "cadre"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le murmure de la ruche",
+      "inspiration": "Des abeilles et des hommes (Markus Imhoof, 2012)",
+      "text": "À peine l'{{BLANK_2}} eut-il soulevé le toit de bois que le bourdonnement sacré de la colonie vibra dans sa poitrine. Pour lui, l'{{BLANK_1}} n'était pas un métier, mais une conversation silencieuse avec la nature. La fumée froide de son {{BLANK_3}} apaisait les gardiennes, lui permettant d'inspecter chaque {{BLANK_5}} où s'écrivait l'histoire de la ruche. Il admirait l'architecture parfaite de la {{BLANK_11}}, tirée de leur propre corps, et la forteresse de {{BLANK_6}} qui repoussait les maladies. Au centre, le {{BLANK_9}} palpitait de vie, berceau de la future génération, tandis que quelques ouvrières nourrissaient la souveraine de {{BLANK_7}}. Dehors, la grande {{BLANK_12}} inondait les champs de lavande, et des milliers d'éclaireuses partaient en {{BLANK_14}} sous le soleil brûlant. Il savait qu'il devait rester vigilant face à l'{{BLANK_8}}, cette pulsion de liberté qui poussait une moitié du peuple à s'envoler vers l'inconnu. Plus tard, quand il ajouterait la {{BLANK_4}} et que l'{{BLANK_10}} tournerait pour libérer l'or liquide, il partirait sur les routes pour la {{BLANK_13}}, suivant les floraisons comme un nomade des fleurs, guidé par le miel et les étoiles.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "apiculture",
+          "options": [
+            "apiculture",
+            "apiculteur",
+            "enfumoir",
+            "hausse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "apiculteur",
+          "options": [
+            "apiculteur",
+            "cadre",
+            "propolis",
+            "gelée royale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "enfumoir",
+          "options": [
+            "enfumoir",
+            "essaimage",
+            "couvain",
+            "extracteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "hausse",
+          "options": [
+            "hausse",
+            "cire",
+            "miellée",
+            "transhumance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "cadre",
+          "options": [
+            "cadre",
+            "butinage",
+            "apiculture",
+            "apiculteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "propolis",
+          "options": [
+            "propolis",
+            "enfumoir",
+            "hausse",
+            "cadre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "gelée royale",
+          "options": [
+            "gelée royale",
+            "essaimage",
+            "couvain",
+            "extracteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "essaimage",
+          "options": [
+            "essaimage",
+            "cire",
+            "miellée",
+            "transhumance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "couvain",
+          "options": [
+            "couvain",
+            "butinage",
+            "apiculture",
+            "apiculteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "extracteur",
+          "options": [
+            "extracteur",
+            "enfumoir",
+            "hausse",
+            "cadre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "cire",
+          "options": [
+            "cire",
+            "propolis",
+            "gelée royale",
+            "essaimage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "miellée",
+          "options": [
+            "miellée",
+            "couvain",
+            "extracteur",
+            "cire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "transhumance",
+          "options": [
+            "transhumance",
+            "butinage",
+            "apiculture",
+            "apiculteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "butinage",
+          "options": [
+            "butinage",
+            "enfumoir",
+            "hausse",
+            "cadre"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Apiculture et abeilles",
+    "title_fa": "آزمون : زنبورداری و زنبورها",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'activité agricole qui consiste à élever des abeilles pour produire du miel est l'____.",
+        "options": [
+          "apiculture",
+          "apiculteur",
+          "enfumoir",
+          "hausse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعالیت پرورش زنبور = apiculture."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui s'occupe des ruches et récolte les produits de l'abeille est l'____.",
+        "options": [
+          "apiculteur",
+          "cadre",
+          "propolis",
+          "gelée royale"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص مراقب کندوها = apiculteur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil qui produit de la fumée pour endormir et calmer les abeilles est l'____.",
+        "options": [
+          "enfumoir",
+          "essaimage",
+          "couvain",
+          "extracteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه تولید دود = enfumoir."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étage supplémentaire ajouté au sommet de la ruche pour que les abeilles y stockent le miel est la ____.",
+        "options": [
+          "hausse",
+          "cire",
+          "miellée",
+          "transhumance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طبقه اضافه برای ذخیره عسل = hausse."
+      },
+      {
+        "type": "mcq",
+        "question": "La structure amovible en bois sur laquelle les abeilles bâtissent leurs rayons est le ____.",
+        "options": [
+          "cadre",
+          "butinage",
+          "apiculture",
+          "apiculteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازه چوبی متحرک داخل کندو = cadre."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance résineuse récoltée sur les arbres, utilisée comme mastic et désinfectant naturel, est la ____.",
+        "options": [
+          "propolis",
+          "enfumoir",
+          "hausse",
+          "cadre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صمغ ضدعفونی‌کننده = propolis."
+      },
+      {
+        "type": "mcq",
+        "question": "La sécrétion nutritive extrêmement riche, réservée exclusivement à l'alimentation de la reine, est la ____.",
+        "options": [
+          "gelée royale",
+          "essaimage",
+          "couvain",
+          "extracteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "غذای اختصاصی ملکه = gelée royale."
+      },
+      {
+        "type": "mcq",
+        "question": "Le phénomène naturel où une partie de la colonie quitte la ruche avec une reine pour en fonder une nouvelle est l'____.",
+        "options": [
+          "essaimage",
+          "cire",
+          "miellée",
+          "transhumance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پرواز دسته‌جمعی و تقسیم کلونی = essaimage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des œufs, larves et nymphes en développement dans les alvéoles est le ____.",
+        "options": [
+          "couvain",
+          "butinage",
+          "apiculture",
+          "apiculteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه تخم‌ها و لاروها = couvain."
+      },
+      {
+        "type": "mcq",
+        "question": "La machine centrifuge utilisée pour extraire le miel des rayons sans les briser est l'____.",
+        "options": [
+          "extracteur",
+          "enfumoir",
+          "hausse",
+          "cadre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه سانتریفیوژ عسل = extracteur."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance grasse sécrétée par les abeilles pour construire les alvéoles hexagonales est la ____.",
+        "options": [
+          "cire",
+          "propolis",
+          "gelée royale",
+          "essaimage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده سازنده سلول‌های شش‌ضلعی = cire."
+      },
+      {
+        "type": "mcq",
+        "question": "La période de forte production de nectar par les fleurs, permettant la récolte du miel, est la ____.",
+        "options": [
+          "miellée",
+          "couvain",
+          "extracteur",
+          "cire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فصل شهدآوری و برداشت = miellée."
+      },
+      {
+        "type": "mcq",
+        "question": "Le déplacement saisonnier des ruches d'une région à une autre pour suivre les floraisons est la ____.",
+        "options": [
+          "transhumance",
+          "butinage",
+          "apiculture",
+          "apiculteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کوچ فصلی کندوها = transhumance."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action des abeilles qui volent de fleur en fleur pour récolter le nectar et le pollen est le ____.",
+        "options": [
+          "butinage",
+          "enfumoir",
+          "hausse",
+          "cadre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل جمع‌آوری شهد از گل‌ها = butinage."
+      },
+      {
+        "type": "binary",
+        "question": "La gelée royale est la nourriture que toutes les abeilles ouvrières consomment quotidiennement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ژل رویال فقط و فقط غذای ملکه است؛ کارگرها از عسل و گرده تغذیه می‌کنند."
+      },
+      {
+        "type": "binary",
+        "question": "L'enfumoir est utilisé pour tuer les parasites à l'intérieur de la ruche.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. دودکن (enfumoir) برای آرام کردن زنبورها و جلوگیری از حمله آن‌ها هنگام باز کردن کندو استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La propolis est une résine végétale que les abeilles utilisent pour colmater et désinfecter la ruche.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بره‌موم (propolis) خاصیت آنتی‌باکتریال دارد و برای درزگیری و ضدعفونی استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "L'essaimage est une maladie grave qui décime les colonies d'abeilles en hiver.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. بچه‌دهی (essaimage) یک فرآیند طبیعی و سالم برای تکثیر و بقای نسل زنبورهاست."
+      },
+      {
+        "type": "binary",
+        "question": "La transhumance en apiculture consiste à déplacer les ruches pour suivre les périodes de floraison.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کوچ (transhumance) به زنبوردار اجازه می‌دهد از منابع شهد مختلف در فصول مختلف بهره‌برداری کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le couvain désigne exclusivement le miel operculé prêt à être récolté.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. couvain به نوزادان زنبور (تخم، لارو، شفیره) داخل سلول‌ها گفته می‌شود، نه عسل."
+      }
+    ]
+  }
+}
