@@ -1,0 +1,680 @@
+{
+  "id": "botany_exotic_plants",
+  "level": "C1",
+  "theme": "Botanique, plantes rares et écologie végétale",
+  "theme_fa": "گیاه‌شناسی، گیاهان نادر و اکولوژی گیاهی",
+  "icon": "🌿",
+  "inspiration": "Le Jardin Secret (The Secret Garden - Agnieszka Holland, 1993)",
+  "words": [
+    {
+      "fr": "la botanique",
+      "fa": "گیاه‌شناسی",
+      "emoji": "🌿",
+      "difficulty": 4,
+      "ex": "La botanique étudie la biologie et la classification des plantes.",
+      "ex_fa": "گیاه‌شناسی زیست‌شناسی و طبقه‌بندی گیاهان را مطالعه می‌کند."
+    },
+    {
+      "fr": "la photosynthèse",
+      "fa": "فتوسنتز",
+      "emoji": "☀️",
+      "difficulty": 5,
+      "ex": "La photosynthèse transforme l'énergie lumineuse en matière organique.",
+      "ex_fa": "فتوسنتز انرژی نوری را به ماده آلی تبدیل می‌کند."
+    },
+    {
+      "fr": "le stomate",
+      "fa": "روزنه (تبادلات گازی)",
+      "emoji": "🌬️",
+      "difficulty": 5,
+      "ex": "Les stomates s'ouvrent pour absorber le dioxyde de carbone.",
+      "ex_fa": "روزنه‌ها برای جذب دی‌اکسید کربن باز می‌شوند."
+    },
+    {
+      "fr": "la chlorophylle",
+      "fa": "کلروفیل (سبزینه)",
+      "emoji": "💚",
+      "difficulty": 4,
+      "ex": "La chlorophylle donne aux feuilles leur couleur verte caractéristique.",
+      "ex_fa": "کلروفیل به برگ‌ها رنگ سبز مشخصشان را می‌دهد."
+    },
+    {
+      "fr": "le rhizome",
+      "fa": "ریزوم (ساقه زیرزمینی)",
+      "emoji": "🌱",
+      "difficulty": 5,
+      "ex": "Le bambou se propage rapidement grâce à son rhizome souterrain.",
+      "ex_fa": "بامبو به کمک ریزوم زیرزمینی‌اش به سرعت گسترش می‌یابد."
+    },
+    {
+      "fr": "la sève",
+      "fa": "شیره گیاهی",
+      "emoji": "💧",
+      "difficulty": 4,
+      "ex": "La sève montante transporte les nutriments des racines vers les feuilles.",
+      "ex_fa": "شیره بالارونده مواد مغذی را از ریشه به برگ‌ها می‌برد."
+    },
+    {
+      "fr": "le pollen",
+      "fa": "گرده",
+      "emoji": "🌼",
+      "difficulty": 3,
+      "ex": "Les abeilles récoltent le pollen pour nourrir la ruche.",
+      "ex_fa": "زنبورها گرده را برای تغذیه کندو جمع‌آوری می‌کنند."
+    },
+    {
+      "fr": "l'herbier",
+      "fa": "آلبوم گیاهان خشک‌شده (هربریوم)",
+      "emoji": "📖",
+      "difficulty": 4,
+      "ex": "Ce botaniste a constitué un herbier de plus de mille espèces.",
+      "ex_fa": "این گیاه‌شناس آلبومی از بیش از هزار گونه گیاهی تهیه کرده است."
+    },
+    {
+      "fr": "la serre",
+      "fa": "گلخانه",
+      "emoji": "🏡",
+      "difficulty": 3,
+      "ex": "La serre tropicale maintient une chaleur humide constante.",
+      "ex_fa": "گلخانه استوایی گرمای مرطوب و ثابتی را حفظ می‌کند."
+    },
+    {
+      "fr": "l'orchidée",
+      "fa": "ارکیده (گل ثعلب)",
+      "emoji": "🌸",
+      "difficulty": 4,
+      "ex": "L'orchidée épiphyte pousse directement sur les branches des arbres.",
+      "ex_fa": "ارکیده هوازی مستقیماً روی شاخه درختان رشد می‌کند."
+    },
+    {
+      "fr": "la plante carnivore",
+      "fa": "گیاه گوشت‌خوار",
+      "emoji": "🪰",
+      "difficulty": 4,
+      "ex": "La plante carnivore piège les insectes pour compléter son apport en azote.",
+      "ex_fa": "گیاه گوشت‌خوار حشرات را برای تأمین نیتروژن به دام می‌اندازد."
+    },
+    {
+      "fr": "la spore",
+      "fa": "هاگ",
+      "emoji": "🍄",
+      "difficulty": 5,
+      "ex": "La fougère se reproduit en libérant des spores dans le vent.",
+      "ex_fa": "سرخس با رها کردن هاگ‌ها در باد تولیدمثل می‌کند."
+    },
+    {
+      "fr": "la greffe",
+      "fa": "پیوند زدن (گیاه)",
+      "emoji": "🌳",
+      "difficulty": 4,
+      "ex": "La greffe permet de multiplier un arbre fruitier aux qualités exceptionnelles.",
+      "ex_fa": "پیوند زدن امکان تکثیر درخت میوه با ویژگی‌های استثنایی را می‌دهد."
+    },
+    {
+      "fr": "le mycélium",
+      "fa": "میسیلیوم (شبکه قارچی)",
+      "emoji": "🕸️",
+      "difficulty": 5,
+      "ex": "Le mycélium relie les racines des arbres dans un réseau d'entraide souterrain.",
+      "ex_fa": "میسیلیوم ریشه درختان را در یک شبکه کمک متقابل زیرزمینی به هم وصل می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le jardin retrouvé",
+      "text": "Mary, une petite fille solitaire, découvre un jardin abandonné depuis dix ans. Passionnée par la {{BLANK_1}}, elle décide de le faire renaître. Elle apprend comment les feuilles utilisent la {{BLANK_2}} pour créer leur propre nourriture grâce au soleil. La {{BLANK_4}} donne aux nouvelles pousses leur belle couleur verte. Sous la terre, elle déterre un vieux {{BLANK_5}} de lys qui a survécu à l'hiver. Au printemps, la {{BLANK_6}} monte dans les tiges et les bourgeons éclatent, libérant du {{BLANK_7}} doré pour les abeilles. Mary observe chaque {{BLANK_3}} microscopique sous les feuilles qui respire l'air. Elle presse des fleurs rares dans un {{BLANK_8}} pour garder leur souvenir. Quand il pleut, elle se réfugie dans la vieille {{BLANK_9}} de verre. Là, une magnifique {{BLANK_10}} exotique fleurit en secret. Dans un coin sombre, une {{BLANK_11}} attend patiemment qu'une mouche se pose sur ses feuilles collantes. Les fougères libèrent leur {{BLANK_12}} invisible qui se dépose sur la pierre humide. Le vieux jardinier lui montre comment faire une {{BLANK_13}} sur un rosier sauvage pour lui donner des fleurs rouges. Enfin, elle comprend que sous ses pieds, le {{BLANK_14}} des champignons tisse une toile invisible qui nourrit tout le jardin. En soignant la terre, Mary guérit son propre cœur.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "botanique",
+          "options": [
+            "botanique",
+            "serre",
+            "greffe",
+            "spore"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "photosynthèse",
+          "options": [
+            "photosynthèse",
+            "chlorophylle",
+            "orchidée",
+            "mycélium"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "stomate",
+          "options": [
+            "stomate",
+            "rhizome",
+            "pollen",
+            "herbier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "chlorophylle",
+          "options": [
+            "chlorophylle",
+            "sève",
+            "plante carnivore",
+            "botanique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "rhizome",
+          "options": [
+            "rhizome",
+            "stomate",
+            "greffe",
+            "spore"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "sève",
+          "options": [
+            "sève",
+            "photosynthèse",
+            "mycélium",
+            "orchidée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pollen",
+          "options": [
+            "pollen",
+            "chlorophylle",
+            "herbier",
+            "serre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "herbier",
+          "options": [
+            "herbier",
+            "rhizome",
+            "stomate",
+            "plante carnivore"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "serre",
+          "options": [
+            "serre",
+            "sève",
+            "botanique",
+            "greffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "orchidée",
+          "options": [
+            "orchidée",
+            "spore",
+            "pollen",
+            "rhizome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "plante carnivore",
+          "options": [
+            "plante carnivore",
+            "chlorophylle",
+            "mycélium",
+            "stomate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "spore",
+          "options": [
+            "spore",
+            "sève",
+            "herbier",
+            "serre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "greffe",
+          "options": [
+            "greffe",
+            "photosynthèse",
+            "orchidée",
+            "botanique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "mycélium",
+          "options": [
+            "mycélium",
+            "pollen",
+            "plante carnivore",
+            "stomate"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'âme verte du manoir",
+      "inspiration": "Le Jardin Secret (The Secret Garden - Agnieszka Holland, 1993)",
+      "text": "À peine Mary Lennox eut-elle poussé la lourde porte rouillée que l'odeur de la terre humide et du lierre sauvage l'enveloppa. Ce jardin secret, abandonné depuis dix ans dans les brumes du Yorkshire, n'était qu'un enchevêtrement de ronces et de souvenirs morts. Mais Mary, orpheline revenue des Indes lointaines, portait en elle une curiosité qui ressemblait à de la {{BLANK_1}} intuitive. Elle observa comment les feuilles captaient la lumière pour la {{BLANK_2}}, cette alchimie verte qui transformait le soleil pâle d'Angleterre en matière vivante. Elle apprit, en lisant les vieux carnets de son oncle, que chaque {{BLANK_3}} sous les feuilles respirait l'air froid comme une minuscule bouche. La {{BLANK_4}} donnait aux tiges renaissantes leur couleur d'espoir, bannissant le gris de son enfance. Sous la terre gelée, un vaste {{BLANK_5}} de lis reliait les bulbes comme un cerveau souterrain attendant le signal du réveil. Quand le printemps explosa, la {{BLANK_6}} monta dans les veines des rosiers, poussant des bourgeons gorgés de {{BLANK_7}} doré qui enivraient les premiers bourdons. Mary pressa des fleurs séchées dans un vieil {{BLANK_8}} de cuir pour garder la mémoire de chaque saison volée à la mort. L'hiver, elle se réfugiait dans la {{BLANK_9}} de verre aux vitres brisées, où une rare {{BLANK_10}} exotique défiait le froid avec une arrogance tropicale. Elle fut fascinée par une {{BLANK_11}} qui piègeait les mouches égarées avec une patience mortelle, rappelant que la nature n'est pas toujours bienveillante. Les fougères anciennes libéraient leur {{BLANK_12}} invisible dans l'air humide, colonisant les murs de pierre de leur poussière d'étoiles. Le vieux jardinier lui enseigna l'art de la {{BLANK_13}} pour marier un pommier sauvage à une branche douce, créant des fruits qui n'existaient nulle part ailleurs. Et sous le gazon, le {{BLANK_14}} des champignons tissait une toile invisible, un internet fongique qui nourrissait la forêt entière en silence. Mary comprit alors que guérir un jardin, c'était tisser des racines dans son propre cœur vide, et que la vie, obstinée, finit toujours par percer le béton de la solitude.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "botanique",
+          "options": [
+            "botanique",
+            "serre",
+            "greffe",
+            "spore"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "photosynthèse",
+          "options": [
+            "photosynthèse",
+            "chlorophylle",
+            "orchidée",
+            "mycélium"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "stomate",
+          "options": [
+            "stomate",
+            "rhizome",
+            "pollen",
+            "herbier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "chlorophylle",
+          "options": [
+            "chlorophylle",
+            "sève",
+            "plante carnivore",
+            "botanique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "rhizome",
+          "options": [
+            "rhizome",
+            "stomate",
+            "greffe",
+            "spore"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "sève",
+          "options": [
+            "sève",
+            "photosynthèse",
+            "mycélium",
+            "orchidée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pollen",
+          "options": [
+            "pollen",
+            "chlorophylle",
+            "herbier",
+            "serre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "herbier",
+          "options": [
+            "herbier",
+            "rhizome",
+            "stomate",
+            "plante carnivore"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "serre",
+          "options": [
+            "serre",
+            "sève",
+            "botanique",
+            "greffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "orchidée",
+          "options": [
+            "orchidée",
+            "spore",
+            "pollen",
+            "rhizome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "plante carnivore",
+          "options": [
+            "plante carnivore",
+            "chlorophylle",
+            "mycélium",
+            "stomate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "spore",
+          "options": [
+            "spore",
+            "sève",
+            "herbier",
+            "serre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "greffe",
+          "options": [
+            "greffe",
+            "photosynthèse",
+            "orchidée",
+            "botanique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "mycélium",
+          "options": [
+            "mycélium",
+            "pollen",
+            "plante carnivore",
+            "stomate"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Botanique et écologie végétale",
+    "title_fa": "آزمون : گیاه‌شناسی و اکولوژی گیاهی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie les plantes, leur physiologie, leur anatomie et leur classification est la ____.",
+        "options": [
+          "botanique",
+          "serre",
+          "greffe",
+          "spore"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه گیاهان = botanique."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus biologique par lequel les plantes utilisent la lumière du soleil pour synthétiser leur nourriture à partir de l'eau et du CO2 est la ____.",
+        "options": [
+          "photosynthèse",
+          "chlorophylle",
+          "orchidée",
+          "mycélium"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرآیند ساخت غذا با نور خورشید = photosynthèse."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit orifice situé sur l'épiderme des feuilles qui permet les échanges gazeux avec l'atmosphère est le ____.",
+        "options": [
+          "stomate",
+          "rhizome",
+          "pollen",
+          "herbier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روزنه تبادلات گازی برگ = stomate."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pigment vert contenu dans les chloroplastes, essentiel pour capter l'énergie lumineuse, est la ____.",
+        "options": [
+          "chlorophylle",
+          "sève",
+          "plante carnivore",
+          "botanique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رنگدانه سبز گیاه = chlorophylle."
+      },
+      {
+        "type": "mcq",
+        "question": "La tige souterraine horizontale qui permet à certaines plantes de se multiplier végétativement et de stocker des nutriments est le ____.",
+        "options": [
+          "rhizome",
+          "stomate",
+          "greffe",
+          "spore"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ساقه زیرزمینی افقی = rhizome."
+      },
+      {
+        "type": "mcq",
+        "question": "Le liquide nutritif qui circule dans les vaisseaux de la plante pour transporter l'eau, les sels minéraux et les sucres est la ____.",
+        "options": [
+          "sève",
+          "photosynthèse",
+          "mycélium",
+          "orchidée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مایع مغذی در گردش گیاه = sève."
+      },
+      {
+        "type": "mcq",
+        "question": "La poudre fine produite par les étamines des fleurs, qui contient les gamètes mâles et assure la reproduction, est le ____.",
+        "options": [
+          "pollen",
+          "chlorophylle",
+          "herbier",
+          "serre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گرد تولیدمثل گیاهان = pollen."
+      },
+      {
+        "type": "mcq",
+        "question": "La collection de plantes séchées et pressées, collées sur des feuilles et identifiées pour l'étude scientifique, est l'____.",
+        "options": [
+          "herbier",
+          "rhizome",
+          "stomate",
+          "plante carnivore"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آلبوم گیاهان خشک علمی = herbier."
+      },
+      {
+        "type": "mcq",
+        "question": "La structure vitrée qui permet de cultiver des plantes en contrôlant la température et l'humidité est la ____.",
+        "options": [
+          "serre",
+          "sève",
+          "botanique",
+          "greffe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محیط شیشه‌ای کشت گیاه = serre."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette fleur exotique et complexe, souvent épiphyte dans les forêts tropicales, très prisée des collectionneurs, est l'____.",
+        "options": [
+          "orchidée",
+          "spore",
+          "pollen",
+          "rhizome"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گل استوایی و کلکسیونی = orchidée."
+      },
+      {
+        "type": "mcq",
+        "question": "Le végétal qui a évolué pour capturer et digérer de petits animaux afin de pallier le manque de nutriments dans son sol est la ____.",
+        "options": [
+          "plante carnivore",
+          "chlorophylle",
+          "mycélium",
+          "stomate"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گیاه شکارکننده حشرات = plante carnivore."
+      },
+      {
+        "type": "mcq",
+        "question": "La cellule reproductrice unicellulaire, dispersée par le vent chez les fougères et les champignons, est la ____.",
+        "options": [
+          "spore",
+          "sève",
+          "herbier",
+          "serre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سلول تولیدمثل سرخس و قارچ = spore."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique horticole qui consiste à insérer un bourgeon ou un rameau d'une plante dans une autre pour qu'ils se développent ensemble est la ____.",
+        "options": [
+          "greffe",
+          "photosynthèse",
+          "orchidée",
+          "botanique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک اتصال دو گیاه به هم = greffe."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil végétatif des champignons, formé d'un réseau de filaments souterrains qui interagit avec les racines des arbres, est le ____.",
+        "options": [
+          "mycélium",
+          "pollen",
+          "plante carnivore",
+          "stomate"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شبکه رشته‌های زیرزمینی قارچ = mycélium."
+      },
+      {
+        "type": "binary",
+        "question": "La photosynthèse est un processus qui se déroule principalement la nuit, quand la plante se repose.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. فتوسنتز به نور نیاز دارد و در روز انجام می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le rhizome est une tige souterraine qui permet à des plantes comme le bambou ou le gingembre de se propager.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ریزوم ساقه زیرزمینی است که به تکثیر گیاه کمک می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Les stomates sont des pores qui permettent à la plante de respirer et de réguler sa perte en eau.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. روزنه‌ها تبادلات گازی و تبخیر آب را کنترل می‌کنند."
+      },
+      {
+        "type": "binary",
+        "question": "Le mycélium est la partie visible du champignon qui pousse au-dessus du sol (le chapeau).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. میسیلیوم شبکه زیرزمینی و پنهان قارچ است، کلاهک فقط بخش تولیدمثل آن است."
+      },
+      {
+        "type": "binary",
+        "question": "La greffe permet de combiner les qualités d'un porte-greffe robuste avec les fruits d'une variété sélectionnée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پیوند زدن مزایای ریشه قوی را با میوه品种 عالی ترکیب می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La spore est une graine complexe produite par les plantes à fleurs pour assurer leur reproduction.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. هاگ متعلق به سرخس‌ها و قارچ‌هاست، گیاهان گل‌دار دانه (graine) تولید می‌کنند."
+      }
+    ]
+  }
+}
