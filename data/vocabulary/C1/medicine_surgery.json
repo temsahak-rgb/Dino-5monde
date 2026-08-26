@@ -1,0 +1,680 @@
+{
+  "id": "medicine_surgery",
+  "level": "C1",
+  "theme": "Médecine, chirurgie et science médicale",
+  "theme_fa": "پزشکی، جراحی و علم پزشکی",
+  "icon": "🏥",
+  "inspiration": "Grey's Anatomy (Shonda Rhimes, 2005)",
+  "words": [
+    {
+      "fr": "la médecine",
+      "fa": "پزشکی",
+      "emoji": "⚕️",
+      "difficulty": 2,
+      "ex": "La médecine moderne sauve des millions de vies chaque année.",
+      "ex_fa": "پزشکی مدرن هر ساله میلیون‌ها زندگی را نجات می‌دهد."
+    },
+    {
+      "fr": "le chirurgien",
+      "fa": "جراح",
+      "emoji": "👨‍⚕️",
+      "difficulty": 3,
+      "ex": "Le chirurgien opère avec une précision millimétrique.",
+      "ex_fa": "جراح با دقت میلی‌متری عمل می‌کند."
+    },
+    {
+      "fr": "le scalpel",
+      "fa": "تیغ جراحی",
+      "emoji": "🔪",
+      "difficulty": 4,
+      "ex": "Le scalpel tranche la peau avec une netteté chirurgicale.",
+      "ex_fa": "تیغ جراحی پوست را با تیزی جراحی می‌برد."
+    },
+    {
+      "fr": "l'anesthésie",
+      "fa": "بیهوشی",
+      "emoji": "😴",
+      "difficulty": 4,
+      "ex": "L'anesthésie générale plonge le patient dans un sommeil artificiel.",
+      "ex_fa": "بیهوشی عمومی بیمار را در خواب مصنوعی فرو می‌برد."
+    },
+    {
+      "fr": "le diagnostic",
+      "fa": "تشخیص",
+      "emoji": "🔍",
+      "difficulty": 3,
+      "ex": "Un bon diagnostic est la clé d'un traitement efficace.",
+      "ex_fa": "تشخیص خوب کلید درمان مؤثر است."
+    },
+    {
+      "fr": "le patient",
+      "fa": "بیمار",
+      "emoji": "🤒",
+      "difficulty": 2,
+      "ex": "Le patient attend avec anxiété le résultat des analyses.",
+      "ex_fa": "بیمار با اضطراب منتظر نتیجه آزمایش‌هاست."
+    },
+    {
+      "fr": "la suture",
+      "fa": "بخیه",
+      "emoji": "🪡",
+      "difficulty": 4,
+      "ex": "La suture referme la plaie avec des points précis.",
+      "ex_fa": "بخیه زخم را با کوک‌های دقیق می‌بندد."
+    },
+    {
+      "fr": "le stéthoscope",
+      "fa": "گوشی پزشکی",
+      "emoji": "🩺",
+      "difficulty": 3,
+      "ex": "Le médecin écoute les battements du cœur avec son stéthoscope.",
+      "ex_fa": "پزشک با گوشی پزشکی ضربان قلب را گوش می‌دهد."
+    },
+    {
+      "fr": "le bistouri",
+      "fa": "بیستوری (چاقوی جراحی)",
+      "emoji": "🗡️",
+      "difficulty": 5,
+      "ex": "Le bistouri électrique cautérise les vaisseaux en coupant.",
+      "ex_fa": "بیستوری الکتریکی هنگام برش، رگ‌ها را می‌سوزاند."
+    },
+    {
+      "fr": "l'urgence",
+      "fa": "اورژانس، فوریت",
+      "emoji": "🚑",
+      "difficulty": 3,
+      "ex": "Les urgences accueillent les cas critiques vingt-quatre heures sur vingt-quatre.",
+      "ex_fa": "اورژانس موارد بحرانی را ۲۴ ساعته پذیرش می‌کند."
+    },
+    {
+      "fr": "la radiographie",
+      "fa": "رادیوگرافی، عکس‌برداری",
+      "emoji": "📸",
+      "difficulty": 4,
+      "ex": "La radiographie révèle les fractures invisibles à l'œil nu.",
+      "ex_fa": "رادیوگرافی شکستگی‌های نامرئی با چشم غیرمسلح را آشکار می‌کند."
+    },
+    {
+      "fr": "le pouls",
+      "fa": "نبض",
+      "emoji": "💓",
+      "difficulty": 2,
+      "ex": "Le pouls rapide indique une fièvre ou un stress intense.",
+      "ex_fa": "نبض سریع نشان‌دهنده تب یا استرس شدید است."
+    },
+    {
+      "fr": "le pronostic",
+      "fa": "پیش‌آگهی",
+      "emoji": "📊",
+      "difficulty": 5,
+      "ex": "Le pronostic vital est engagé dans les cas les plus graves.",
+      "ex_fa": "پیش‌آگهی حیاتی در شدیدترین موارد در خطر است."
+    },
+    {
+      "fr": "l'infirmière",
+      "fa": "پرستار",
+      "emoji": "👩‍⚕️",
+      "difficulty": 3,
+      "ex": "L'infirmière surveille les constantes vitales toute la nuit.",
+      "ex_fa": "پرستار تمام شب علائم حیاتی را رصد می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La garde de nuit",
+      "text": "Meredith Grey est une jeune {{BLANK_2}} en formation à l'hôpital de Seattle. Ce soir, c'est sa première garde aux {{BLANK_10}}. Un {{BLANK_6}} arrive en état critique après un accident. L'{{BLANK_13}} prend son {{BLANK_12}} : il est très faible. Le {{BLANK_1}} senior ordonne une {{BLANK_11}} immédiate pour identifier les lésions internes. Le {{BLANK_3}} prépare la salle d'opération. Il saisit son {{BLANK_9}} et son {{BLANK_4}} stérile. L'{{BLANK_4}} est administrée par l'anesthésiste. Le chirurgien incise avec le {{BLANK_4}} et découvre une hémorragie interne. Avec une précision remarquable, il réalise une {{BLANK_7}} pour arrêter le saignement. Le {{BLANK_13}} se stabilise enfin. Le {{BLANK_13}} vital est bon. Meredith assiste à toute l'opération, comprenant que la {{BLANK_1}} est un art autant qu'une science. Cette nuit, elle a vu la vie tenir à un fil.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "médecin",
+          "options": [
+            "médecin",
+            "chirurgien",
+            "scalpel",
+            "anesthésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "chirurgienne",
+          "options": [
+            "chirurgienne",
+            "diagnostic",
+            "patient",
+            "suture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "infirmier",
+          "options": [
+            "infirmier",
+            "stéthoscope",
+            "bistouri",
+            "urgence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "anesthésie",
+          "options": [
+            "anesthésie",
+            "radiographie",
+            "pouls",
+            "pronostic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "scalpel",
+          "options": [
+            "scalpel",
+            "infirmière",
+            "médecin",
+            "chirurgien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "patient",
+          "options": [
+            "patient",
+            "diagnostic",
+            "suture",
+            "stéthoscope"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "suture",
+          "options": [
+            "suture",
+            "bistouri",
+            "urgence",
+            "radiographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "stéthoscope",
+          "options": [
+            "stéthoscope",
+            "pouls",
+            "pronostic",
+            "infirmière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "bistouri",
+          "options": [
+            "bistouri",
+            "médecin",
+            "chirurgien",
+            "scalpel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "urgences",
+          "options": [
+            "urgences",
+            "anesthésie",
+            "diagnostic",
+            "patient"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "radiographie",
+          "options": [
+            "radiographie",
+            "suture",
+            "stéthoscope",
+            "bistouri"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "pouls",
+          "options": [
+            "pouls",
+            "urgence",
+            "pronostic",
+            "infirmière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "pronostic",
+          "options": [
+            "pronostic",
+            "médecin",
+            "chirurgien",
+            "scalpel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "infirmière",
+          "options": [
+            "infirmière",
+            "anesthésie",
+            "diagnostic",
+            "patient"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le serment d'Hippocrate",
+      "inspiration": "Grey's Anatomy (Shonda Rhimes, 2005)",
+      "text": "À peine Meredith eut-elle prêté serment que la réalité de la {{BLANK_1}} la frappa de plein fouet. Cette nuit aux {{BLANK_10}}, le destin lui confia un {{BLANK_6}} brisé par la violence de la route. Le {{BLANK_8}} ne détectait qu'un {{BLANK_12}} filant, signe que la vie s'échappait. Le {{BLANK_1}} chef prit la décision : il fallait ouvrir, voir, agir. Dans la lumière crue du bloc, le {{BLANK_2}} masqué saisit son {{BLANK_5}} comme une épée de lumière. L'{{BLANK_4}} plongea le blessé dans un sommeil sans rêves. Le {{BLANK_9}} électrique cautérisa les chairs pendant que le {{BLANK_4}} tranchait avec une précision divine. Quand la {{BLANK_7}} referma enfin la plaie, Meredith comprit que chaque geste était une prière silencieuse. La {{BLANK_11}} avait révélé l'invisible, mais c'est le {{BLANK_13}} qui dirait si cette âme resterait parmi les vivants. Dans ce temple de la douleur et de l'espoir, elle sut qu'elle ne serait plus jamais la même.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "médecine",
+          "options": [
+            "médecine",
+            "chirurgien",
+            "scalpel",
+            "anesthésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "chirurgien",
+          "options": [
+            "chirurgien",
+            "diagnostic",
+            "patient",
+            "suture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "infirmier",
+          "options": [
+            "infirmier",
+            "stéthoscope",
+            "bistouri",
+            "urgence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "anesthésie",
+          "options": [
+            "anesthésie",
+            "radiographie",
+            "pouls",
+            "pronostic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "scalpel",
+          "options": [
+            "scalpel",
+            "infirmière",
+            "médecin",
+            "chirurgien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "patient",
+          "options": [
+            "patient",
+            "diagnostic",
+            "suture",
+            "stéthoscope"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "suture",
+          "options": [
+            "suture",
+            "bistouri",
+            "urgence",
+            "radiographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "stéthoscope",
+          "options": [
+            "stéthoscope",
+            "pouls",
+            "pronostic",
+            "infirmière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "bistouri",
+          "options": [
+            "bistouri",
+            "médecin",
+            "chirurgien",
+            "scalpel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "urgences",
+          "options": [
+            "urgences",
+            "anesthésie",
+            "diagnostic",
+            "patient"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "radiographie",
+          "options": [
+            "radiographie",
+            "suture",
+            "stéthoscope",
+            "bistouri"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "pouls",
+          "options": [
+            "pouls",
+            "urgence",
+            "pronostic",
+            "infirmière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "pronostic",
+          "options": [
+            "pronostic",
+            "médecin",
+            "chirurgien",
+            "scalpel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "infirmière",
+          "options": [
+            "infirmière",
+            "anesthésie",
+            "diagnostic",
+            "patient"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Médecine et chirurgie",
+    "title_fa": "آزمون : پزشکی و جراحی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science et l'art de prévenir, diagnostiquer et traiter les maladies est la ____.",
+        "options": [
+          "médecine",
+          "chirurgien",
+          "scalpel",
+          "anesthésie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم پیشگیری و درمان بیماری‌ها = médecine."
+      },
+      {
+        "type": "mcq",
+        "question": "Le médecin spécialisé dans les interventions manuelles et instrumentales sur le corps est le ____.",
+        "options": [
+          "chirurgien",
+          "diagnostic",
+          "patient",
+          "suture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پزشک متخصص عمل جراحی = chirurgien."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument tranchant à lame fine utilisé pour les incisions chirurgicales est le ____.",
+        "options": [
+          "scalpel",
+          "infirmière",
+          "médecin",
+          "chirurgien"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار برش جراحی = scalpel."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique médicale qui supprime la sensibilité à la douleur pendant une opération est l'____.",
+        "options": [
+          "anesthésie",
+          "radiographie",
+          "pouls",
+          "pronostic"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک حذف حس درد = anesthésie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'identification de la nature d'une maladie par l'examen des symptômes est le ____.",
+        "options": [
+          "diagnostic",
+          "patient",
+          "suture",
+          "stéthoscope"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شناسایی ماهیت بیماری = diagnostic."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui reçoit des soins médicaux pour une maladie ou une blessure est le ____.",
+        "options": [
+          "patient",
+          "diagnostic",
+          "suture",
+          "stéthoscope"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص دریافت‌کننده مراقبت پزشکی = patient."
+      },
+      {
+        "type": "mcq",
+        "question": "L'acte chirurgical qui consiste à recoudre les bords d'une plaie pour la refermer est la ____.",
+        "options": [
+          "suture",
+          "bistouri",
+          "urgence",
+          "radiographie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل دوختن زخم = suture."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument médical qui amplifie les sons internes du corps (cœur, poumons) est le ____.",
+        "options": [
+          "stéthoscope",
+          "pouls",
+          "pronostic",
+          "infirmière"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار تقویت صداهای داخلی بدن = stéthoscope."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit instrument chirurgical à lame utilisé pour les opérations délicates est le ____.",
+        "options": [
+          "bistouri",
+          "médecin",
+          "chirurgien",
+          "scalpel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چاقوی جراحی ظریف = bistouri."
+      },
+      {
+        "type": "mcq",
+        "question": "Le service hospitalier qui traite les cas graves nécessitant une intervention immédiate est l'____.",
+        "options": [
+          "urgence",
+          "anesthésie",
+          "diagnostic",
+          "patient"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش درمان موارد بحرانی = urgence."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique d'imagerie médicale utilisant les rayons X pour visualiser les structures internes est la ____.",
+        "options": [
+          "radiographie",
+          "suture",
+          "stéthoscope",
+          "bistouri"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تصویربرداری با اشعه ایکس = radiographie."
+      },
+      {
+        "type": "mcq",
+        "question": "La pulsation rythmique des artères, perceptible au poignet ou au cou, est le ____.",
+        "options": [
+          "pouls",
+          "urgence",
+          "pronostic",
+          "infirmière"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضربان ریتمیک شریان‌ها = pouls."
+      },
+      {
+        "type": "mcq",
+        "question": "L'évaluation médicale des chances de guérison et de l'évolution probable d'une maladie est le ____.",
+        "options": [
+          "pronostic",
+          "médecin",
+          "chirurgien",
+          "scalpel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارزیابی احتمال بهبود = pronostic."
+      },
+      {
+        "type": "mcq",
+        "question": "La professionnelle de santé qui assiste le médecin et prodigue les soins aux patients est l'____.",
+        "options": [
+          "infirmière",
+          "anesthésie",
+          "diagnostic",
+          "patient"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص مراقبت از بیمار = infirmière."
+      },
+      {
+        "type": "binary",
+        "question": "L'anesthésie générale rend le patient inconscient pendant toute la durée de l'opération.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بیهوشی عمومی بیمار را کاملاً بی‌هوش می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le scalpel et le bistouri désignent exactement le même instrument chirurgical.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. scalpel معمولاً تیغ ظریف‌تر است، bistouri چاقوی جراحی استاندارد است (هرچند در کاربرد عامیانه گاهی مترادف‌اند)."
+      },
+      {
+        "type": "binary",
+        "question": "Le pronostic est l'acte de recoudre une plaie avec du fil chirurgical.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. pronostic پیش‌آگهی است؛ بخیه زدن suture نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "La radiographie utilise des rayons X pour créer des images de l'intérieur du corps.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. رادیوگرافی از اشعه ایکس برای تصویربرداری داخلی استفاده می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le stéthoscope permet de mesurer la pression artérielle du patient.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. گوشی پزشکی (stéthoscope) برای شنیدن صداهای قلب و ریه است؛ فشارسنج tensiomètre نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le pouls correspond aux battements du cœur perceptibles dans les artères.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. نبض (pouls) همان ضربان قلب است که در شریان‌ها حس می‌شود."
+      }
+    ]
+  }
+}
