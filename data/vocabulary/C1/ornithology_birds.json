@@ -1,0 +1,680 @@
+{
+  "id": "ornithology_birds",
+  "level": "C1",
+  "theme": "Ornithologie, avifaune et migration",
+  "theme_fa": "پرنده‌شناسی، پرندگان و مهاجرت",
+  "icon": "🦅",
+  "inspiration": "La Marche de l'Empereur (March of the Penguins - Luc Jacquet, 2005)",
+  "words": [
+    {
+      "fr": "l'ornithologie",
+      "fa": "پرنده‌شناسی",
+      "emoji": "🦉",
+      "difficulty": 5,
+      "ex": "L'ornithologie est la branche de la zoologie qui étudie les oiseaux.",
+      "ex_fa": "پرنده‌شناسی شاخه‌ای از جانورشناسی است که پرندگان را مطالعه می‌کند."
+    },
+    {
+      "fr": "le plumage",
+      "fa": "پر و بال",
+      "emoji": "🪶",
+      "difficulty": 4,
+      "ex": "Le plumage nuptial du paon est d'une beauté spectaculaire.",
+      "ex_fa": "پر و بال جفت‌گیری طاووس زیبایی تماشایی دارد."
+    },
+    {
+      "fr": "le bec",
+      "fa": "منقار",
+      "emoji": "🦜",
+      "difficulty": 2,
+      "ex": "La forme du bec indique le régime alimentaire de l'oiseau.",
+      "ex_fa": "شکل منقار نشان‌دهنده رژیم غذایی پرنده است."
+    },
+    {
+      "fr": "le nid",
+      "fa": "لانه",
+      "emoji": "🪹",
+      "difficulty": 2,
+      "ex": "L'oiseau tisse son nid avec des brindilles et de la boue.",
+      "ex_fa": "پرنده لانه خود را با شاخ و برگ و گل می‌بافد."
+    },
+    {
+      "fr": "la migration",
+      "fa": "مهاجرت",
+      "emoji": "🌍",
+      "difficulty": 3,
+      "ex": "La migration automnale pousse des millions d'oiseaux vers le sud.",
+      "ex_fa": "مهاجرت پاییزی میلیون‌ها پرنده را به سمت جنوب می‌کشاند."
+    },
+    {
+      "fr": "le rapace",
+      "fa": "پرنده شکاری",
+      "emoji": "🦅",
+      "difficulty": 4,
+      "ex": "Le rapace plane dans les courants thermiques pour repérer ses proies.",
+      "ex_fa": "پرنده شکاری در جریان‌های گرمایی اوج می‌گیرد تا طعمه‌هایش را پیدا کند."
+    },
+    {
+      "fr": "l'aile",
+      "fa": "بال",
+      "emoji": "🪽",
+      "difficulty": 2,
+      "ex": "L'envergure de l'aile permet à l'albatros de survoler les océans.",
+      "ex_fa": "گستردگی بال به آلباتروس اجازه می‌دهد بر فراز اقیانوس‌ها پرواز کند."
+    },
+    {
+      "fr": "le chant",
+      "fa": "آواز پرنده",
+      "emoji": "🎶",
+      "difficulty": 3,
+      "ex": "Le chant matinal du rossignol résonne dans la forêt silencieuse.",
+      "ex_fa": "آواز صبحگاهی بلبل در جنگل ساکت طنین‌انداز می‌شود."
+    },
+    {
+      "fr": "la couvée",
+      "fa": "دسته جوجه‌ها، تخم‌گذاری",
+      "emoji": "🥚",
+      "difficulty": 5,
+      "ex": "La mère protège sa couvée contre le froid et les prédateurs.",
+      "ex_fa": "مادر از دسته جوجه‌هایش در برابر سرما و شکارچیان محافظت می‌کند."
+    },
+    {
+      "fr": "le prédateur",
+      "fa": "شکارچی (دشمن طبیعی)",
+      "emoji": "🐈",
+      "difficulty": 3,
+      "ex": "Le chat domestique est un prédateur redoutable pour les petits passereaux.",
+      "ex_fa": "گربه خانگی شکارچی خطرناکی برای گنجشک‌سانان کوچک است."
+    },
+    {
+      "fr": "l'envol",
+      "fa": "پرواز، برخاستن",
+      "emoji": "🕊️",
+      "difficulty": 4,
+      "ex": "Le premier envol du jeune oiseau est un moment critique et dangereux.",
+      "ex_fa": "اولین پرواز پرنده جوان لحظه‌ای حساس و خطرناک است."
+    },
+    {
+      "fr": "le migrateur",
+      "fa": "پرنده مهاجر",
+      "emoji": "🦆",
+      "difficulty": 4,
+      "ex": "Le migrateur parcourt des milliers de kilomètres sans s'arrêter.",
+      "ex_fa": "پرنده مهاجر هزاران کیلومتر را بدون توقف می‌پیماید."
+    },
+    {
+      "fr": "la mue",
+      "fa": "پرریزی، پوست‌اندازی",
+      "emoji": "🍂",
+      "difficulty": 5,
+      "ex": "Pendant la mue, l'oiseau perd ses vieilles plumes et devient vulnérable.",
+      "ex_fa": "در دوران پرریزی، پرنده پرهای قدیمی‌اش را از دست می‌دهد و آسیب‌پذیر می‌شود."
+    },
+    {
+      "fr": "le juvénile",
+      "fa": "جوجه، پرنده نابالغ",
+      "emoji": "🐣",
+      "difficulty": 4,
+      "ex": "Le juvénile possède un plumage terne avant d'atteindre sa maturité.",
+      "ex_fa": "پرنده نابالغ قبل از رسیدن به بلوغ، پر و بالی کدر دارد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'observateur de la canopée",
+      "text": "Luc est un passionné d'{{BLANK_1}} qui voyage à travers le monde pour observer les oiseaux. Dans la forêt amazonienne, il installe son campement pour étudier le {{BLANK_6}} majestueux qui survole la jungle. Il admire le {{BLANK_2}} coloré des perroquets et la forme recourbée de leur {{BLANK_3}} adapté aux fruits durs. Au printemps, il observe la construction du {{BLANK_4}} dans les branches hautes. C'est la période de la {{BLANK_8}}, où les mâles attirent les femelles. Bientôt, une nouvelle {{BLANK_9}} éclora, et chaque {{BLANK_14}} devra apprendre à survivre. Luc note soigneusement le moment de la {{BLANK_13}}, quand les oiseaux renouvellent leurs plumes. Il sait qu'un {{BLANK_10}} rôde toujours, guettant le moindre signe de faiblesse. Quand l'automne arrive, le grand {{BLANK_5}} commence. Le {{BLANK_12}} déploie son {{BLANK_7}} immense pour entamer son voyage vers le sud. Ce long voyage culmine avec l'{{BLANK_11}} des jeunes vers des terres inconnues, guidés par un instinct millénaire.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "ornithologie",
+          "options": [
+            "ornithologie",
+            "plumage",
+            "bec",
+            "nid"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "plumage",
+          "options": [
+            "plumage",
+            "migration",
+            "rapace",
+            "aile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "bec",
+          "options": [
+            "bec",
+            "chant",
+            "couvée",
+            "prédateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "nid",
+          "options": [
+            "nid",
+            "envol",
+            "migrateur",
+            "mue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "migration",
+          "options": [
+            "migration",
+            "juvénile",
+            "ornithologie",
+            "plumage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "rapace",
+          "options": [
+            "rapace",
+            "bec",
+            "nid",
+            "migration"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "aile",
+          "options": [
+            "aile",
+            "rapace",
+            "chant",
+            "couvée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "chant",
+          "options": [
+            "chant",
+            "prédateur",
+            "envol",
+            "migrateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "couvée",
+          "options": [
+            "couvée",
+            "mue",
+            "juvénile",
+            "ornithologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "prédateur",
+          "options": [
+            "prédateur",
+            "plumage",
+            "bec",
+            "nid"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "envol",
+          "options": [
+            "envol",
+            "migration",
+            "rapace",
+            "aile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "migrateur",
+          "options": [
+            "migrateur",
+            "chant",
+            "couvée",
+            "prédateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "mue",
+          "options": [
+            "mue",
+            "envol",
+            "migrateur",
+            "juvénile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "juvénile",
+          "options": [
+            "juvénile",
+            "ornithologie",
+            "plumage",
+            "bec"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'instinct du ciel",
+      "inspiration": "La Marche de l'Empereur (Luc Jacquet, 2005)",
+      "text": "À peine l'{{BLANK_1}} eut-il ajusté ses jumelles dans la brume matinale qu'il comprit qu'il assistait à un miracle silencieux. Ce chercheur solitaire avait consacré sa vie à décrypter les secrets du ciel, fasciné par ce {{BLANK_12}} qui portait dans ses gènes la carte du monde. Au-dessus de la canopée, le {{BLANK_6}} traçait des cercles parfaits, ses yeux perçants scrutant le sol, tandis que plus bas, le {{BLANK_2}} irisé d'un colibri scintillait comme une pierre précieuse. Luc connaissait la signification de chaque {{BLANK_8}}, cette symphonie territoriale qui précédait la tissage patient du {{BLANK_4}}. Il savait que sous les feuilles, une mère réchauffait sa {{BLANK_9}} fragile, ignorant qu'un {{BLANK_10}} invisible attendait dans l'ombre. Quand viendrait le temps de la {{BLANK_13}}, ces corps épuisés perdraient leur armure, et chaque {{BLANK_14}} maladroit devrait affronter la gravité pour son premier {{BLANK_11}}. Mais le véritable mystère résidait dans cette {{BLANK_5}} implacable, cette force magnétique qui poussait des millions d'{{BLANK_7}}s à battre l'air, à quitter la sécurité du nid connu pour l'incertitude des continents lointains, prouvant que la véritable liberté n'est pas l'absence de racines, mais la capacité à les arracher pour suivre l'appel indomptable des saisons.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "ornithologue",
+          "options": [
+            "ornithologue",
+            "plumage",
+            "bec",
+            "nid"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "plumage",
+          "options": [
+            "plumage",
+            "migration",
+            "rapace",
+            "aile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "bec",
+          "options": [
+            "bec",
+            "chant",
+            "couvée",
+            "prédateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "nid",
+          "options": [
+            "nid",
+            "envol",
+            "migrateur",
+            "mue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "migration",
+          "options": [
+            "migration",
+            "juvénile",
+            "ornithologie",
+            "plumage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "rapace",
+          "options": [
+            "rapace",
+            "bec",
+            "nid",
+            "migration"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "ailes",
+          "options": [
+            "ailes",
+            "rapace",
+            "chant",
+            "couvée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "chant",
+          "options": [
+            "chant",
+            "prédateur",
+            "envol",
+            "migrateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "couvée",
+          "options": [
+            "couvée",
+            "mue",
+            "juvénile",
+            "ornithologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "prédateur",
+          "options": [
+            "prédateur",
+            "plumage",
+            "bec",
+            "nid"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "envol",
+          "options": [
+            "envol",
+            "migration",
+            "rapace",
+            "aile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "migrateur",
+          "options": [
+            "migrateur",
+            "chant",
+            "couvée",
+            "prédateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "mue",
+          "options": [
+            "mue",
+            "envol",
+            "migrateur",
+            "juvénile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "juvénile",
+          "options": [
+            "juvénile",
+            "ornithologie",
+            "plumage",
+            "bec"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Ornithologie et oiseaux",
+    "title_fa": "آزمون : پرنده‌شناسی و پرندگان",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La branche de la zoologie consacrée à l'étude des oiseaux est l'____.",
+        "options": [
+          "ornithologie",
+          "plumage",
+          "bec",
+          "nid"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شاخه مطالعه پرندگان = ornithologie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des plumes qui recouvrent le corps d'un oiseau est le ____.",
+        "options": [
+          "plumage",
+          "migration",
+          "rapace",
+          "aile"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموع پرهای بدن پرنده = plumage."
+      },
+      {
+        "type": "mcq",
+        "question": "La structure cornée et sans dents qui remplace les mâchoires chez les oiseaux est le ____.",
+        "options": [
+          "bec",
+          "chant",
+          "couvée",
+          "prédateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ساختار شاخی دهان پرنده = bec."
+      },
+      {
+        "type": "mcq",
+        "question": "L'abri construit par l'oiseau pour y pondre ses œufs et élever ses petits est le ____.",
+        "options": [
+          "nid",
+          "envol",
+          "migrateur",
+          "mue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پناهگاه تخم‌گذاری و پرورش جوجه = nid."
+      },
+      {
+        "type": "mcq",
+        "question": "Le déplacement saisonnier et régulier d'une population d'oiseaux d'une région à une autre est la ____.",
+        "options": [
+          "migration",
+          "juvénile",
+          "ornithologie",
+          "plumage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جابجایی فصلی پرندگان = migration."
+      },
+      {
+        "type": "mcq",
+        "question": "L'oiseau carnivore doté de serres et d'un bec crochu, comme l'aigle ou le faucon, est le ____.",
+        "options": [
+          "rapace",
+          "bec",
+          "nid",
+          "migration"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پرنده شکاری و گوشت‌خوار = rapace."
+      },
+      {
+        "type": "mcq",
+        "question": "Le membre antérieur de l'oiseau, recouvert de plumes et adapté au vol, est l'____.",
+        "options": [
+          "aile",
+          "rapace",
+          "chant",
+          "couvée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اندام پروازی پرنده = aile."
+      },
+      {
+        "type": "mcq",
+        "question": "La production de sons mélodieux par les oiseaux, souvent pour marquer leur territoire, est le ____.",
+        "options": [
+          "chant",
+          "prédateur",
+          "envol",
+          "migrateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تولید صداهای خوش‌آهنگ = chant."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des œufs pondus et couvés en même temps, ou les petits qui en éclosent, est la ____.",
+        "options": [
+          "couvée",
+          "mue",
+          "juvénile",
+          "ornithologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دسته تخم‌ها یا جوجه‌های هم‌زمان = couvée."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal qui chasse d'autres espèces pour s'en nourrir est le ____.",
+        "options": [
+          "prédateur",
+          "plumage",
+          "bec",
+          "nid"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوان شکارچی = prédateur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de quitter le sol ou le nid pour prendre son vol pour la première fois est l'____.",
+        "options": [
+          "envol",
+          "migration",
+          "rapace",
+          "aile"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل برخاستن و پرواز کردن = envol."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal ou l'oiseau qui effectue de longs voyages saisonniers est le ____.",
+        "options": [
+          "migrateur",
+          "chant",
+          "couvée",
+          "prédateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "موجود مهاجر = migrateur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le renouvellement périodique du plumage, où l'oiseau perd ses anciennes plumes, est la ____.",
+        "options": [
+          "mue",
+          "envol",
+          "migrateur",
+          "juvénile"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره پرریزی و نوسازی = mue."
+      },
+      {
+        "type": "mcq",
+        "question": "Le jeune oiseau qui n'a pas encore atteint sa maturité sexuelle et son plumage adulte est le ____.",
+        "options": [
+          "juvénile",
+          "ornithologie",
+          "plumage",
+          "bec"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پرنده نابالغ و جوان = juvénile."
+      },
+      {
+        "type": "binary",
+        "question": "La forme du bec d'un oiseau est un excellent indicateur de son régime alimentaire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. شکل منقار نشان می‌دهد که پرنده دانه‌خوار، حشره‌خوار یا شکاری است."
+      },
+      {
+        "type": "binary",
+        "question": "La mue est la période où l'oiseau construit son nid pour la reproduction.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. mue به معنای پرریزی و جایگزینی پرهای قدیمی است."
+      },
+      {
+        "type": "binary",
+        "question": "Un rapace est un oiseau qui se nourrit exclusivement de graines et de fruits.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پرنده شکاری (rapace) گوشت‌خوار است و حیوانات دیگر را شکار می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La couvée désigne l'ensemble des petits issus d'une même ponte.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. couvée به تمام جوجه‌های متولدشده از یک دوره تخم‌گذاری گفته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le chant des oiseaux sert uniquement à communiquer avec les humains.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. آواز پرندگان برای تعیین قلمرو و جذب جفت در ارتباط با هم‌نوعانشان است."
+      },
+      {
+        "type": "binary",
+        "question": "Le juvénile possède généralement un plumage aussi coloré et brillant que l'adulte.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پرندگان نابالغ (juvénile) معمولاً پر و بالی کدرتر دارند تا از دید شکارچیان پنهان بمانند."
+      }
+    ]
+  }
+}
