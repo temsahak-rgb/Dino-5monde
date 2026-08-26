@@ -1,0 +1,680 @@
+{
+  "id": "japanese_cuisine_sushi",
+  "level": "C1",
+  "theme": "Cuisine japonaise, sushi et tradition",
+  "theme_fa": "آشپزی ژاپنی، سوشی و سنت",
+  "icon": "🍣",
+  "inspiration": "Jiro Dreams of Sushi (David Gelb, 2011)",
+  "words": [
+    {
+      "fr": "le sushi",
+      "fa": "سوشی",
+      "emoji": "🍣",
+      "difficulty": 3,
+      "ex": "Le sushi est l'art de marier le poisson cru et le riz vinaigré.",
+      "ex_fa": "سوشی هنر ترکیب ماهی خام و برنج سرکه‌ای است."
+    },
+    {
+      "fr": "le sashimi",
+      "fa": "ساشیمی (ماهی خام بدون برنج)",
+      "emoji": "🐟",
+      "difficulty": 4,
+      "ex": "Le sashimi met en valeur la pureté et la fraîcheur du poisson.",
+      "ex_fa": "ساشیمی خلوص و تازگی ماهی را به نمایش می‌گذارد."
+    },
+    {
+      "fr": "le wasabi",
+      "fa": "وسابی",
+      "emoji": "🟢",
+      "difficulty": 3,
+      "ex": "Le wasabi frais a un piquant qui monte instantanément au nez.",
+      "ex_fa": "وسابی تازه تندی‌ای دارد که فوراً به بینی می‌زند."
+    },
+    {
+      "fr": "le gingembre",
+      "fa": "زنجبیل (ترشی)",
+      "emoji": "🫚",
+      "difficulty": 3,
+      "ex": "Le gingembre mariné sert à nettoyer le palais entre deux bouchées.",
+      "ex_fa": "زنجبیل ترشی برای پاک کردن ذائقه بین دو لقمه استفاده می‌شود."
+    },
+    {
+      "fr": "la sauce soja",
+      "fa": "سس سویا",
+      "emoji": "🥢",
+      "difficulty": 3,
+      "ex": "La sauce soja salée rehausse subtilement le goût du poisson.",
+      "ex_fa": "سس سویای شور به ظرافت طعم ماهی را تقویت می‌کند."
+    },
+    {
+      "fr": "le riz vinaigré",
+      "fa": "برنج سرکه‌ای (شاری)",
+      "emoji": "🍚",
+      "difficulty": 4,
+      "ex": "La température du riz vinaigré doit correspondre à celle du corps humain.",
+      "ex_fa": "دمای برنج سرکه‌ای باید با دمای بدن انسان مطابقت داشته باشد."
+    },
+    {
+      "fr": "le couteau",
+      "fa": "چاقوی مخصوص",
+      "emoji": "🔪",
+      "difficulty": 3,
+      "ex": "Le couteau japonais est affûté quotidiennement comme un sabre de samouraï.",
+      "ex_fa": "چاقوی ژاپنی روزانه مانند شمشیر سامورایی تیز می‌شود."
+    },
+    {
+      "fr": "le maître",
+      "fa": "استاد، سرآشپز",
+      "emoji": "👨‍🍳",
+      "difficulty": 3,
+      "ex": "Le maître sushi consacre sa vie entière à la perfection de son art.",
+      "ex_fa": "استاد سوشی تمام زندگی خود را وقف کمال هنرش می‌کند."
+    },
+    {
+      "fr": "l'umami",
+      "fa": "اومامی (طعم لذیذ)",
+      "emoji": "🍄",
+      "difficulty": 5,
+      "ex": "L'umami est la cinquième saveur fondamentale, savoureuse et profonde.",
+      "ex_fa": "اومامی طعم پنجم بنیادین، لذیذ و عمیق است."
+    },
+    {
+      "fr": "le poisson cru",
+      "fa": "ماهی خام",
+      "emoji": "🐠",
+      "difficulty": 3,
+      "ex": "Le poisson cru exige une chaîne du froid irréprochable.",
+      "ex_fa": "ماهی خام به زنجیره سرد بی‌نقص نیاز دارد."
+    },
+    {
+      "fr": "l'algue",
+      "fa": "جلبک دریایی (نوری)",
+      "emoji": "🌿",
+      "difficulty": 4,
+      "ex": "L'algue nori croustillante enveloppe les makis.",
+      "ex_fa": "جلبک نوری ترد، ماکی‌ها را می‌پوشاند."
+    },
+    {
+      "fr": "la planche à découper",
+      "fa": "تخته برش",
+      "emoji": "🪵",
+      "difficulty": 4,
+      "ex": "La planche à découper en cyprès préserve le tranchant de la lame.",
+      "ex_fa": "تخته برش سرو، تیزی تیغه را حفظ می‌کند."
+    },
+    {
+      "fr": "le comptoir",
+      "fa": "پیشخوان (محل نشستن مشتری)",
+      "emoji": "🪑",
+      "difficulty": 4,
+      "ex": "S'asseoir au comptoir permet d'observer le geste précis du chef.",
+      "ex_fa": "نشستن در پیشخوان امکان تماشای حرکت دقیق سرآشپز را می‌دهد."
+    },
+    {
+      "fr": "la tradition",
+      "fa": "سنت",
+      "emoji": "🏯",
+      "difficulty": 3,
+      "ex": "La tradition japonaise exige dix ans d'apprentissage avant de toucher au poisson.",
+      "ex_fa": "سنت ژاپنی ده سال شاگردی قبل از دست زدن به ماهی را ایجاب می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le rêve de Jiro",
+      "text": "Jiro Ono, 85 ans, est le {{BLANK_8}} du Sukiyabashi Jiro, un petit restaurant étoilé caché dans le métro de Tokyo. Il a consacré sa vie à la perfection du {{BLANK_1}}. Chaque matin, son équipe sélectionne le meilleur {{BLANK_10}} au marché de Tsukiji. Certains clients préfèrent le {{BLANK_2}}, qui présente la chair nue et pure du thon ou de la dorade. Jiro prépare méticuleusement le {{BLANK_6}}, dont la température doit être parfaite. Sur sa {{BLANK_12}} en bois précieux, il utilise un {{BLANK_7}} aiguisé comme un rasoir pour trancher les poissons. Il ajoute une touche de {{BLANK_3}} frais pour réveiller les papilles. Entre chaque pièce, le client mange une tranche de {{BLANK_4}} rose pour rafraîchir son palais. Il trempe délicatement le poisson dans la {{BLANK_5}}, sans jamais noyer le riz. La feuille d'{{BLANK_11}} grillée enveloppe certains rouleaux croquants. Chaque bouchée révèle l'{{BLANK_9}}, cette saveur profonde et complexe. Assis au {{BLANK_13}}, les privilégiés observent le ballet silencieux des mains du chef. Cette {{BLANK_14}} ancestrale se transmet de père en fils, exigeant une discipline de fer et une humilité absolue.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "sushi",
+          "options": [
+            "sushi",
+            "sashimi",
+            "wasabi",
+            "gingembre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "sashimi",
+          "options": [
+            "sashimi",
+            "sauce soja",
+            "riz vinaigré",
+            "couteau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "wasabi",
+          "options": [
+            "wasabi",
+            "maître",
+            "umami",
+            "poisson cru"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "gingembre",
+          "options": [
+            "gingembre",
+            "algue",
+            "planche à découper",
+            "comptoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sauce soja",
+          "options": [
+            "sauce soja",
+            "tradition",
+            "sushi",
+            "sashimi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "riz vinaigré",
+          "options": [
+            "riz vinaigré",
+            "wasabi",
+            "maître",
+            "umami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "couteau",
+          "options": [
+            "couteau",
+            "poisson cru",
+            "algue",
+            "planche à découper"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "maître",
+          "options": [
+            "maître",
+            "comptoir",
+            "tradition",
+            "sushi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "umami",
+          "options": [
+            "umami",
+            "sashimi",
+            "sauce soja",
+            "riz vinaigré"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "poisson cru",
+          "options": [
+            "poisson cru",
+            "couteau",
+            "maître",
+            "umami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "algue",
+          "options": [
+            "algue",
+            "poisson cru",
+            "planche à découper",
+            "comptoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "planche à découper",
+          "options": [
+            "planche à découper",
+            "tradition",
+            "sushi",
+            "sashimi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "comptoir",
+          "options": [
+            "comptoir",
+            "wasabi",
+            "gingembre",
+            "sauce soja"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "tradition",
+          "options": [
+            "tradition",
+            "riz vinaigré",
+            "couteau",
+            "maître"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La quête de l'absolu",
+      "inspiration": "Jiro Dreams of Sushi (David Gelb, 2011)",
+      "text": "À peine Jiro eut-il posé ses mains ridées sur la {{BLANK_12}} en cyprès qu'il entra en transe, oubliant les quatre-vingt-cinq hivers qui pesaient sur ses épaules. Ce {{BLANK_8}} légendaire, qui rêvait encore la nuit de {{BLANK_1}}s parfaits, savait que la perfection n'était pas une destination, mais un chemin sans fin. Chaque matin, avant l'aube, ses apprentis traquaient le {{BLANK_10}} le plus noble au marché, rejetant des centaines de prises pour n'en garder qu'une seule, celle qui méritait son art. Sur la planche sacrée, son {{BLANK_7}}, prolongement de son âme, glissait sans effort, révélant la chair nacrée du thon comme un sculpteur libère une statue du marbre. Parfois, il servait le {{BLANK_2}} pur, dépouillé de tout artifice, pour que le client communie avec l'océan lui-même. Il modelait le {{BLANK_6}} à la température exacte du corps humain, chaque grain imprégné de vinaigre et de decades de savoir-faire. Une pointe de {{BLANK_3}} frais, râpé à la minute, et une feuille d'{{BLANK_11}} croustillante venaient parachever l'œuvre. Le client, assis religieusement au {{BLANK_13}}, trempait le poisson dans la {{BLANK_5}} sombre, puis mordait, fermant les yeux pour accueillir l'{{BLANK_9}}, cette cinquième saveur qui touche à l'âme. Entre chaque bouchée, le {{BLANK_4}} rose effaçait les souvenirs pour préparer la prochaine révélation. Cette {{BLANK_14}} impitoyable exigeait que l'apprenti lave le riz pendant dix ans avant de toucher au poisson. Jiro, dans son petit restaurant souterrain, avait transformé la cuisine en religion, prouvant que la plus haute forme de spiritualité se cachait peut-être dans la simplicité absolue d'un grain de riz et d'une tranche de mer.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "sushi",
+          "options": [
+            "sushi",
+            "sashimi",
+            "wasabi",
+            "gingembre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "sashimi",
+          "options": [
+            "sashimi",
+            "sauce soja",
+            "riz vinaigré",
+            "couteau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "wasabi",
+          "options": [
+            "wasabi",
+            "maître",
+            "umami",
+            "poisson cru"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "gingembre",
+          "options": [
+            "gingembre",
+            "algue",
+            "planche à découper",
+            "comptoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sauce soja",
+          "options": [
+            "sauce soja",
+            "tradition",
+            "sushi",
+            "sashimi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "riz vinaigré",
+          "options": [
+            "riz vinaigré",
+            "wasabi",
+            "maître",
+            "umami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "couteau",
+          "options": [
+            "couteau",
+            "poisson cru",
+            "algue",
+            "planche à découper"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "maître",
+          "options": [
+            "maître",
+            "comptoir",
+            "tradition",
+            "sushi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "umami",
+          "options": [
+            "umami",
+            "sashimi",
+            "sauce soja",
+            "riz vinaigré"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "poisson cru",
+          "options": [
+            "poisson cru",
+            "couteau",
+            "maître",
+            "umami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "algue",
+          "options": [
+            "algue",
+            "poisson cru",
+            "planche à découper",
+            "comptoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "planche à découper",
+          "options": [
+            "planche à découper",
+            "tradition",
+            "sushi",
+            "sashimi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "comptoir",
+          "options": [
+            "comptoir",
+            "wasabi",
+            "gingembre",
+            "sauce soja"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "tradition",
+          "options": [
+            "tradition",
+            "riz vinaigré",
+            "couteau",
+            "maître"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Cuisine japonaise et sushi",
+    "title_fa": "آزمون : آشپزی ژاپنی و سوشی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le plat japonais emblématique composé d'une boulette de riz vinaigré surmontée de poisson cru est le ____.",
+        "options": [
+          "sushi",
+          "sashimi",
+          "wasabi",
+          "gingembre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "غذای ژاپنی با برنج و ماهی = sushi."
+      },
+      {
+        "type": "mcq",
+        "question": "La préparation de fines tranches de poisson cru servies sans riz est le ____.",
+        "options": [
+          "sashimi",
+          "sauce soja",
+          "riz vinaigré",
+          "couteau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورقه‌های ماهی خام بدون برنج = sashimi."
+      },
+      {
+        "type": "mcq",
+        "question": "La pâte verte très piquante extraite d'une racine japonaise, servie avec le poisson, est le ____.",
+        "options": [
+          "wasabi",
+          "maître",
+          "umami",
+          "poisson cru"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خمیر سبز تند = wasabi."
+      },
+      {
+        "type": "mcq",
+        "question": "Le rhizome mariné et tranché finement, consommé pour rafraîchir le palais entre les plats, est le ____.",
+        "options": [
+          "gingembre",
+          "algue",
+          "planche à découper",
+          "comptoir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ریشه ترشی‌شده برای پاک کردن ذائقه = gingembre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le condiment liquide salé et fermenté, utilisé pour tremper les sushis, est la ____.",
+        "options": [
+          "sauce soja",
+          "tradition",
+          "sushi",
+          "sashimi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چاشنی مایع شور = sauce soja."
+      },
+      {
+        "type": "mcq",
+        "question": "Le riz à grains courts, assaisonné de vinaigre de riz, de sucre et de sel, base du sushi, est le ____.",
+        "options": [
+          "riz vinaigré",
+          "wasabi",
+          "maître",
+          "umami"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برنج چاشنی‌دار با سرکه = riz vinaigré."
+      },
+      {
+        "type": "mcq",
+        "question": "L'outil tranchant à lame asymétrique, essentiel pour préparer le poisson sans écraser sa chair, est le ____.",
+        "options": [
+          "couteau",
+          "poisson cru",
+          "algue",
+          "planche à découper"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار برش ماهی = couteau."
+      },
+      {
+        "type": "mcq",
+        "question": "Le chef hautement qualifié qui a passé des décennies à perfectionner son art culinaire est le ____.",
+        "options": [
+          "maître",
+          "comptoir",
+          "tradition",
+          "sushi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سرآشپز استاد = maître."
+      },
+      {
+        "type": "mcq",
+        "question": "La cinquième saveur fondamentale, savoureuse et profonde, présente dans les bouillons et le poisson, est l'____.",
+        "options": [
+          "umami",
+          "sashimi",
+          "sauce soja",
+          "riz vinaigré"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طعم پنجم لذیذ = umami."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ingrédient principal non cuit, nécessitant une fraîcheur absolue, est le ____.",
+        "options": [
+          "poisson cru",
+          "couteau",
+          "maître",
+          "umami"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماهی نپخته و تازه = poisson cru."
+      },
+      {
+        "type": "mcq",
+        "question": "La feuille séchée et comestible de couleur vert foncé, utilisée pour envelopper les makis, est l'____.",
+        "options": [
+          "algue",
+          "poisson cru",
+          "planche à découper",
+          "comptoir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برگ خشک جلبک دریایی = algue."
+      },
+      {
+        "type": "mcq",
+        "question": "Le support en bois sur lequel le chef prépare et découpe les ingrédients est la ____.",
+        "options": [
+          "planche à découper",
+          "tradition",
+          "sushi",
+          "sashimi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تخته چوبی برش = planche à découper."
+      },
+      {
+        "type": "mcq",
+        "question": "Le long bar où les clients s'assoient face au chef pour observer la préparation des plats est le ____.",
+        "options": [
+          "comptoir",
+          "wasabi",
+          "gingembre",
+          "sauce soja"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیشخوان رستوران = comptoir."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des savoir-faire, des règles et des coutumes transmis de génération en génération est la ____.",
+        "options": [
+          "tradition",
+          "riz vinaigré",
+          "couteau",
+          "maître"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "میراث و رسوم نسل‌ها = tradition."
+      },
+      {
+        "type": "binary",
+        "question": "Le sashimi est un plat composé principalement de riz vinaigré et de fruits de mer cuits.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ساشیمی فقط شامل ورقه‌های نازک ماهی یا گوشت خام است، بدون برنج."
+      },
+      {
+        "type": "binary",
+        "question": "Le wasabi authentique est une racine fraîche râpée, au piquant qui monte au nez puis s'estompe rapidement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. وسابی اصل ریشه‌ای رنده‌شده با تندی فرار است."
+      },
+      {
+        "type": "binary",
+        "question": "Le gingembre mariné se mange en même temps que le sushi pour mélanger les saveurs.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. زنجبیل بین دو نوع سوشی مختلف خورده می‌شود تا ذائقه را پاک کند."
+      },
+      {
+        "type": "binary",
+        "question": "L'umami est considéré comme la cinquième saveur fondamentale, au même titre que le sucré, le salé, l'acide et l'amer.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اومامی پنجمین طعم اصلی و لذیذ است."
+      },
+      {
+        "type": "binary",
+        "question": "Dans la tradition japonaise, un apprenti sushi peut toucher et préparer le poisson dès sa première année de formation.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. شاگردان سال‌ها (گاهی ده سال) فقط برنج می‌شویند و چاقو تیز می‌کنند قبل از دست زدن به ماهی."
+      },
+      {
+        "type": "binary",
+        "question": "Le riz à sushi doit idéalement être servi à une température proche de celle du corps humain.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. برنج سوشی باید دمای نزدیک به بدن داشته باشد تا طعم بهتری بدهد."
+      }
+    ]
+  }
+}
