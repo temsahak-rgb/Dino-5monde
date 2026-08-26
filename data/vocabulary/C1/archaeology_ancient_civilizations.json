@@ -1,0 +1,680 @@
+{
+  "id": "archaeology_ancient_civilizations",
+  "level": "C1",
+  "theme": "Archéologie, fouilles et civilisations antiques",
+  "theme_fa": "باستان‌شناسی، کاوش‌ها و تمدن‌های باستانی",
+  "icon": "🏺",
+  "inspiration": "Les Aventuriers de l'arche perdue (Raiders of the Lost Ark - Steven Spielberg, 1981)",
+  "words": [
+    {
+      "fr": "l'archéologie",
+      "fa": "باستان‌شناسی",
+      "emoji": "🏺",
+      "difficulty": 3,
+      "ex": "L'archéologie révèle les secrets des civilisations disparues.",
+      "ex_fa": "باستان‌شناسی اسرار تمدن‌های ناپدیدشده را آشکار می‌کند."
+    },
+    {
+      "fr": "la fouille",
+      "fa": "کاوش، حفاری",
+      "emoji": "⛏️",
+      "difficulty": 4,
+      "ex": "La fouille du site a duré plusieurs saisons.",
+      "ex_fa": "کاوش این محوطه چندین فصل طول کشید."
+    },
+    {
+      "fr": "le vestige",
+      "fa": "اثر باستانی، بقایا",
+      "emoji": "🏛️",
+      "difficulty": 4,
+      "ex": "Les vestiges du temple témoignent d'une civilisation avancée.",
+      "ex_fa": "بقایای معبد گواه تمدنی پیشرفته است."
+    },
+    {
+      "fr": "l'artefact",
+      "fa": "شیء ساخت بشر (دست‌ساخته)",
+      "emoji": "🗿",
+      "difficulty": 4,
+      "ex": "Cet artefact en bronze date de l'âge du fer.",
+      "ex_fa": "این دست‌ساخته برنزی متعلق به عصر آهن است."
+    },
+    {
+      "fr": "la datation",
+      "fa": "تاریخ‌گذاری",
+      "emoji": "📅",
+      "difficulty": 5,
+      "ex": "La datation au carbone 14 permet de dater les matières organiques.",
+      "ex_fa": "تاریخ‌گذاری کربن ۱۴ امکان تعیین سن مواد آلی را می‌دهد."
+    },
+    {
+      "fr": "la stratigraphie",
+      "fa": "لایه‌نگاری",
+      "emoji": "📚",
+      "difficulty": 5,
+      "ex": "La stratigraphie révèle l'ordre chronologique des couches.",
+      "ex_fa": "لایه‌نگاری ترتیب زمانی لایه‌ها را آشکار می‌کند."
+    },
+    {
+      "fr": "le sarcophage",
+      "fa": "تابوت سنگی",
+      "emoji": "⚰️",
+      "difficulty": 4,
+      "ex": "Le sarcophage du pharaon contenait des trésors inestimables.",
+      "ex_fa": "تابوت سنگی فرعون گنجینه‌های بی‌ارزشی داشت."
+    },
+    {
+      "fr": "la momie",
+      "fa": "مومیایی",
+      "emoji": "🧟",
+      "difficulty": 3,
+      "ex": "La momie de Toutânkhamon a été découverte en 1922.",
+      "ex_fa": "مومیایی توت‌عنخ‌آمون در سال ۱۹۲۲ کشف شد."
+    },
+    {
+      "fr": "l'hiéroglyphe",
+      "fa": "هیروگلیف",
+      "emoji": "𓀀",
+      "difficulty": 4,
+      "ex": "Les hiéroglyphes égyptiens ont été déchiffrés grâce à la pierre de Rosette.",
+      "ex_fa": "هیروگلیف‌های مصری با کمک سنگ رشید رمزگشایی شدند."
+    },
+    {
+      "fr": "la civilisation",
+      "fa": "تمدن",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "La civilisation maya a développé un calendrier sophistiqué.",
+      "ex_fa": "تمدن مایا تقویمی پیچیده توسعه داد."
+    },
+    {
+      "fr": "le temple",
+      "fa": "معبد",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "Le temple était dédié au culte des divinités locales.",
+      "ex_fa": "معبد به پرستش خدایان محلی اختصاص داشت."
+    },
+    {
+      "fr": "la poterie",
+      "fa": "سفالگری",
+      "emoji": "🏺",
+      "difficulty": 4,
+      "ex": "La poterie grecque nous renseigne sur la vie quotidienne.",
+      "ex_fa": "سفالگری یونانی ما را با زندگی روزمره آشنا می‌کند."
+    },
+    {
+      "fr": "le site archéologique",
+      "fa": "محوطه باستانی",
+      "emoji": "🗺️",
+      "difficulty": 4,
+      "ex": "Le site archéologique de Pompéi est exceptionnellement bien conservé.",
+      "ex_fa": "محوطه باستانی پمپئی به طور فوق‌العاده‌ای حفظ شده است."
+    },
+    {
+      "fr": "l'inscription",
+      "fa": "کتیبه، نوشته باستانی",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "L'inscription gravée dans la pierre raconte l'histoire du roi.",
+      "ex_fa": "کتیبه حک‌شده در سنگ، داستان پادشاه را بازگو می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'arche de l'alliance",
+      "text": "Indiana Jones est un professeur d'{{BLANK_1}} qui parcourt le monde à la recherche d'objets anciens. En 1936, il est engagé pour retrouver l'Arche d'Alliance avant les nazis. Il se rend en Égypte pour explorer un {{BLANK_13}} oublié dans le désert. Avec son équipe, il organise une {{BLANK_2}} méthodique. Les {{BLANK_3}}s du temple indiquent qu'il a été construit il y a trois mille ans. Chaque {{BLANK_4}} trouvé est soigneusement catalogué. La {{BLANK_5}} au carbone 14 confirme l'âge des objets organiques. La {{BLANK_6}} des couches de terre révèle l'ordre chronologique. Dans une chambre secrète, ils découvrent un {{BLANK_7}} en or massif. À l'intérieur, une {{BLANK_8}} parfaitement conservée repose depuis des millénaires. Les murs sont couverts d'{{BLANK_9}}s qui racontent l'histoire du peuple hébreu. Cette {{BLANK_10}} disparue avait construit des monuments impressionnants. Le {{BLANK_11}} principal était dédié à Yahvé. Des fragments de {{BLANK_12}} montrent des scènes de la vie quotidienne. Une {{BLANK_14}} gravée dans la pierre donne des instructions précises. Indiana doit affronter des pièges mortels et des nazis fanatiques pour protéger l'Arche.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "archéologie",
+          "options": [
+            "archéologie",
+            "fouille",
+            "vestige",
+            "artefact"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fouille",
+          "options": [
+            "fouille",
+            "datation",
+            "stratigraphie",
+            "sarcophage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "vestiges",
+          "options": [
+            "vestiges",
+            "momie",
+            "hiéroglyphe",
+            "civilisation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "artefact",
+          "options": [
+            "artefact",
+            "temple",
+            "poterie",
+            "site archéologique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "datation",
+          "options": [
+            "datation",
+            "inscription",
+            "archéologie",
+            "fouille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "stratigraphie",
+          "options": [
+            "stratigraphie",
+            "vestige",
+            "artefact",
+            "datation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "sarcophage",
+          "options": [
+            "sarcophage",
+            "momie",
+            "hiéroglyphe",
+            "civilisation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "momie",
+          "options": [
+            "momie",
+            "temple",
+            "poterie",
+            "site archéologique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "hiéroglyphes",
+          "options": [
+            "hiéroglyphes",
+            "inscriptions",
+            "archéologies",
+            "fouilles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "civilisation",
+          "options": [
+            "civilisation",
+            "datation",
+            "stratigraphie",
+            "sarcophage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "temple",
+          "options": [
+            "temple",
+            "momie",
+            "hiéroglyphe",
+            "artefact"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "poterie",
+          "options": [
+            "poterie",
+            "vestige",
+            "inscription",
+            "archéologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "site archéologique",
+          "options": [
+            "site archéologique",
+            "fouille",
+            "datation",
+            "stratigraphie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "inscription",
+          "options": [
+            "inscription",
+            "sarcophage",
+            "momie",
+            "civilisation"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le gardien du temps",
+      "inspiration": "Les Aventuriers de l'arche perdue (Raiders of the Lost Ark - Steven Spielberg, 1981)",
+      "text": "À peine Indiana Jones eut-il effleuré l'idole dorée du temple péruvien qu'il comprit que l'{{BLANK_1}} n'était pas une chasse au trésor, mais une conversation avec les morts. Ce professeur aventurier, qui enseignait dans une université américaine tout en parcourant le monde, savait que chaque {{BLANK_3}} qu'il déterrait était une voix qui recommençait à parler après des millénaires de silence. Quand le gouvernement américain l'engagea pour retrouver l'Arche d'Alliance avant les nazis, il accepta non par patriotisme, mais par amour pour ces {{BLANK_10}}s disparues qui avaient laissé des traces dans le sable et la pierre. Il s'envola pour l'Égypte, où un {{BLANK_13}} oublié attendait dans le désert. Là, il organisa une {{BLANK_2}} méthodique, creusant couche après couche, respectant la {{BLANK_6}} qui révélait l'ordre du temps. Les {{BLANK_3}}s du temple racontaient une histoire de foi et de guerre, et chaque {{BLANK_4}} qu'il cataloguait était une pièce du puzzle. La {{BLANK_5}} au carbone 14 confirma que les objets organiques avaient trois mille ans, contemporains de l'exode d'Égypte. Dans une chambre secrète, il découvrit un {{BLANK_7}} en or massif, et à l'intérieur, une {{BLANK_8}} qui semblait dormir plutôt que mourir. Les murs étaient couverts d'{{BLANK_9}}s qui racontaient comment ce peuple avait traversé le désert guidé par une colonne de feu. Cette {{BLANK_10}} avait construit des {{BLANK_11}}s monumentaux pour honorer son dieu unique, et la {{BLANK_12}} retrouvée montrait des scènes de la vie quotidienne : des paysans cultivant le blé, des artisans tissant le lin. Une {{BLANK_14}} gravée dans la pierre donnait des instructions précises pour ouvrir le sanctuaire sans déclencher les pièges. Indiana comprit alors que l'archéologue n'était pas un voleur de tombes, mais un gardien du temps, quelqu'un qui empêchait les voix du passé de s'éteindre définitivement. Et quand il s'empara enfin de l'Arche, il sut qu'il ne la rapportait pas pour la gloire ou l'argent, mais pour que le monde se souvienne que des hommes avaient cru en quelque chose de plus grand qu'eux-mêmes.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "archéologie",
+          "options": [
+            "archéologie",
+            "fouille",
+            "vestige",
+            "artefact"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fouille",
+          "options": [
+            "fouille",
+            "datation",
+            "stratigraphie",
+            "sarcophage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "vestige",
+          "options": [
+            "vestige",
+            "momie",
+            "hiéroglyphe",
+            "civilisation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "artefact",
+          "options": [
+            "artefact",
+            "temple",
+            "poterie",
+            "site archéologique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "datation",
+          "options": [
+            "datation",
+            "inscription",
+            "archéologie",
+            "fouille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "stratigraphie",
+          "options": [
+            "stratigraphie",
+            "vestige",
+            "artefact",
+            "datation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "sarcophage",
+          "options": [
+            "sarcophage",
+            "momie",
+            "hiéroglyphe",
+            "civilisation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "momie",
+          "options": [
+            "momie",
+            "temple",
+            "poterie",
+            "site archéologique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "hiéroglyphes",
+          "options": [
+            "hiéroglyphes",
+            "inscriptions",
+            "archéologies",
+            "fouilles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "civilisation",
+          "options": [
+            "civilisation",
+            "datation",
+            "stratigraphie",
+            "sarcophage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "temples",
+          "options": [
+            "temples",
+            "momies",
+            "hiéroglyphes",
+            "artefacts"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "poterie",
+          "options": [
+            "poterie",
+            "vestige",
+            "inscription",
+            "archéologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "site archéologique",
+          "options": [
+            "site archéologique",
+            "fouille",
+            "datation",
+            "stratigraphie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "inscription",
+          "options": [
+            "inscription",
+            "sarcophage",
+            "momie",
+            "civilisation"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Archéologie et civilisations antiques",
+    "title_fa": "آزمون : باستان‌شناسی و تمدن‌های باستانی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie les sociétés humaines du passé à travers leurs vestiges matériels est l'____.",
+        "options": [
+          "archéologie",
+          "fouille",
+          "vestige",
+          "artefact"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه جوامع گذشته = archéologie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de creuser méthodiquement un site pour mettre au jour des objets et des structures anciens est la ____.",
+        "options": [
+          "fouille",
+          "datation",
+          "stratigraphie",
+          "sarcophage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حفاری روشمند محوطه = fouille."
+      },
+      {
+        "type": "mcq",
+        "question": "Le reste matériel (construction, objet, ossement) laissé par une civilisation disparue est le ____.",
+        "options": [
+          "vestige",
+          "momie",
+          "hiéroglyphe",
+          "civilisation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بقایای مادی تمدن = vestige."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objet fabriqué ou modifié par l'homme, retrouvé lors d'une fouille et présentant un intérêt scientifique, est l'____.",
+        "options": [
+          "artefact",
+          "temple",
+          "poterie",
+          "site archéologique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیء ساخت بشر = artefact."
+      },
+      {
+        "type": "mcq",
+        "question": "La méthode scientifique qui permet de déterminer l'âge d'un objet ou d'un vestige est la ____.",
+        "options": [
+          "datation",
+          "inscription",
+          "archéologie",
+          "fouille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روش تعیین سن = datation."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étude des couches de terre superposées qui permet d'établir une chronologie relative est la ____.",
+        "options": [
+          "stratigraphie",
+          "vestige",
+          "artefact",
+          "datation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مطالعه لایه‌های خاک = stratigraphie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le grand cercueil en pierre, souvent décoré, qui abritait le corps d'un défunt important est le ____.",
+        "options": [
+          "sarcophage",
+          "momie",
+          "hiéroglyphe",
+          "civilisation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تابوت سنگی = sarcophage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le corps humain conservé par des procédés naturels ou artificiels après la mort est la ____.",
+        "options": [
+          "momie",
+          "temple",
+          "poterie",
+          "site archéologique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بدن حفظ‌شده پس از مرگ = momie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le signe figuratif de l'écriture sacrée égyptienne, gravé ou peint sur les monuments, est l'____.",
+        "options": [
+          "hiéroglyphe",
+          "inscription",
+          "archéologie",
+          "fouille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نشانه نوشتاری مصری = hiéroglyphe."
+      },
+      {
+        "type": "mcq",
+        "question": "La société humaine organisée ayant développé des institutions, des arts et des techniques avancées est la ____.",
+        "options": [
+          "civilisation",
+          "datation",
+          "stratigraphie",
+          "sarcophage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جامعه سازمان‌یافته پیشرفته = civilisation."
+      },
+      {
+        "type": "mcq",
+        "question": "L'édifice religieux consacré au culte d'une ou plusieurs divinités est le ____.",
+        "options": [
+          "temple",
+          "momie",
+          "hiéroglyphe",
+          "artefact"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بنای مذهبی = temple."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de fabriquer des objets en terre cuite (vases, amphores, figurines) est la ____.",
+        "options": [
+          "poterie",
+          "vestige",
+          "inscription",
+          "archéologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر ساخت اشیاء سفالی = poterie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu géographique où se concentrent les vestiges d'une occupation humaine ancienne est le ____.",
+        "options": [
+          "site archéologique",
+          "fouille",
+          "datation",
+          "stratigraphie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکان تمرکز بقایای باستانی = site archéologique."
+      },
+      {
+        "type": "mcq",
+        "question": "Le texte gravé ou peint sur un monument, une stèle ou un objet ancien est l'____.",
+        "options": [
+          "inscription",
+          "sarcophage",
+          "momie",
+          "civilisation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متن حک‌شده باستانی = inscription."
+      },
+      {
+        "type": "binary",
+        "question": "L'archéologie étudie principalement les dinosaures et les fossiles d'animaux préhistoriques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. دایناسورها موضوع دیرینه‌شناسی (paléontologie) هستند، نه باستان‌شناسی."
+      },
+      {
+        "type": "binary",
+        "question": "La stratigraphie permet d'établir une chronologie relative en observant l'ordre de superposition des couches.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. لایه‌نگاری ترتیب نسبی زمانی را با مشاهده لایه‌ها تعیین می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Un artefact est un objet naturel trouvé dans la nature sans modification humaine.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. artefact حتماً باید ساخته یا تغییر داده شده توسط انسان باشد."
+      },
+      {
+        "type": "binary",
+        "question": "La datation au carbone 14 permet de dater les matières organiques jusqu'à environ 50 000 ans.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کربن ۱۴ برای مواد آلی تا حدود ۵۰ هزار سال کار می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Les hiéroglyphes sont un système d'écriture alphabétique similaire à l'alphabet latin.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. هیروگلیف سیستم تصویری و نمادین است، نه الفبایی."
+      },
+      {
+        "type": "binary",
+        "question": "Un sarcophage est un cercueil en pierre, souvent richement décoré, utilisé dans l'Antiquité.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تابوت سنگی در دوران باستان استفاده می‌شد."
+      }
+    ]
+  }
+}
