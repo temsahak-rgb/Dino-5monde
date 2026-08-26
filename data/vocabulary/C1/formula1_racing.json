@@ -1,0 +1,680 @@
+{
+  "id": "formula1_racing",
+  "level": "C1",
+  "theme": "Formule 1, sport automobile et compétition",
+  "theme_fa": "فرمول یک، ورزش‌های موتوری و رقابت",
+  "icon": "🏎️",
+  "inspiration": "Rush (Ron Howard, 2013)",
+  "words": [
+    {
+      "fr": "la monoplace",
+      "fa": "خودروی تک‌سرنشین مسابقه‌ای",
+      "emoji": "🏎️",
+      "difficulty": 4,
+      "ex": "La monoplace de Formule 1 pèse moins de huit cents kilos.",
+      "ex_fa": "خودروی تک‌سرنشین فرمول یک کمتر از هشتصد کیلوگرم وزن دارد."
+    },
+    {
+      "fr": "le circuit",
+      "fa": "پیست مسابقه",
+      "emoji": "🏁",
+      "difficulty": 3,
+      "ex": "Le circuit de Monza est le temple de la vitesse.",
+      "ex_fa": "پیست مونزا معبد سرعت است."
+    },
+    {
+      "fr": "le paddock",
+      "fa": "پادوک (محوطه پشت پیست)",
+      "emoji": "🏕️",
+      "difficulty": 4,
+      "ex": "Les journalistes traquent les pilotes dans le paddock.",
+      "ex_fa": "خبرنگاران در پادوک به دنبال رانندگان هستند."
+    },
+    {
+      "fr": "le stand",
+      "fa": "پیت استاپ، گاراژ",
+      "emoji": "🔧",
+      "difficulty": 3,
+      "ex": "La voiture entre au stand pour changer ses pneus.",
+      "ex_fa": "ماشین برای تعویض لاستیک وارد پیت استاپ می‌شود."
+    },
+    {
+      "fr": "le dépassement",
+      "fa": "سبقت گرفتن",
+      "emoji": "💨",
+      "difficulty": 4,
+      "ex": "Ce dépassement par l'extérieur est d'une audace inouïe.",
+      "ex_fa": "این سبقت از مسیر خارجی، بی‌نهایت جسورانه است."
+    },
+    {
+      "fr": "l'aérodynamisme",
+      "fa": "آیرودینامیک",
+      "emoji": "🌬️",
+      "difficulty": 5,
+      "ex": "L'aérodynamisme de l'aileron arrière plaque la voiture au sol.",
+      "ex_fa": "آیرودینامیک بال عقب، ماشین را به زمین می‌چسباند."
+    },
+    {
+      "fr": "le pneu",
+      "fa": "لاستیک",
+      "emoji": "⭕",
+      "difficulty": 3,
+      "ex": "Le choix du pneu pluie ou sec est crucial sous l'averse.",
+      "ex_fa": "انتخاب لاستیک بارانی یا خشک زیر رگبار حیاتی است."
+    },
+    {
+      "fr": "le volant",
+      "fa": "فرمان",
+      "emoji": "🎛️",
+      "difficulty": 3,
+      "ex": "Le volant de F1 compte plus de vingt boutons et molettes.",
+      "ex_fa": "فرمان F1 بیش از بیست دکمه و کلید چرخشی دارد."
+    },
+    {
+      "fr": "le moteur",
+      "fa": "موتور",
+      "emoji": "⚙️",
+      "difficulty": 3,
+      "ex": "Le moteur hybride développe plus de mille chevaux.",
+      "ex_fa": "موتور هیبریدی بیش از هزار اسب بخار قدرت تولید می‌کند."
+    },
+    {
+      "fr": "le drapeau à damier",
+      "fa": "پرچم شطرنجی (پایان مسابقه)",
+      "emoji": "🏁",
+      "difficulty": 4,
+      "ex": "Le drapeau à damier s'agite pour le vainqueur.",
+      "ex_fa": "پرچم شطرنجی برای برنده تکان داده می‌شود."
+    },
+    {
+      "fr": "le podium",
+      "fa": "سکوی قهرمانی",
+      "emoji": "🏆",
+      "difficulty": 3,
+      "ex": "Les trois premiers s'aspergent de champagne sur le podium.",
+      "ex_fa": "سه نفر اول روی سکو یکدیگر را با شامپاین خیس می‌کنند."
+    },
+    {
+      "fr": "le casque",
+      "fa": "کلاه ایمنی",
+      "emoji": "⛑️",
+      "difficulty": 3,
+      "ex": "Le casque en fibre de carbone protège la tête du pilote.",
+      "ex_fa": "کلاه ایمنی فیبر کربن از سر راننده محافظت می‌کند."
+    },
+    {
+      "fr": "le virage",
+      "fa": "پیچ (مسیر)",
+      "emoji": "↪️",
+      "difficulty": 3,
+      "ex": "Le virage en épingle exige un freinage tardif et précis.",
+      "ex_fa": "پیچ سنجاقی به ترمزگیری دیرهنگام و دقیق نیاز دارد."
+    },
+    {
+      "fr": "le châssis",
+      "fa": "شاسی",
+      "emoji": "🏗️",
+      "difficulty": 4,
+      "ex": "Le châssis monocoque assure la survie du pilote en cas de crash.",
+      "ex_fa": "شاسی یکپارچه، بقای راننده را در صورت تصادف تضمین می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La pluie de Fuji",
+      "text": "Niki est un champion méthodique qui connaît chaque {{BLANK_13}} du {{BLANK_2}} japonais de Fuji. Dans le {{BLANK_3}}, ses ingénieurs analysent les données télémétriques. Sa {{BLANK_1}} repose sur un {{BLANK_14}} en fibre de carbone ultra-résistant. L'{{BLANK_6}} a été optimisée en soufflerie pour coller à la route. Soudain, le ciel s'assombrit et la pluie commence à tomber. Niki enfile son {{BLANK_12}} et ajuste son {{BLANK_8}} complexe. Le {{BLANK_9}} hybride hurle au départ. Après vingt tours, il doit s'arrêter au {{BLANK_4}} pour changer de {{BLANK_7}} et passer les gommes pluie. De retour en piste, il tente un {{BLANK_5}} spectaculaire par l'extérieur dans la ligne droite. La visibilité est nulle, mais il garde le contrôle. Enfin, le {{BLANK_10}} s'agite au bout de la ligne droite. Épuisé mais victorieux, il monte sur la plus haute marche du {{BLANK_11}} sous les applaudissements de la foule.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "monoplace",
+          "options": [
+            "monoplace",
+            "pneu",
+            "casque",
+            "stand"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "circuit",
+          "options": [
+            "circuit",
+            "virage",
+            "paddock",
+            "moteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "paddock",
+          "options": [
+            "paddock",
+            "châssis",
+            "drapeau à damier",
+            "volant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "stand",
+          "options": [
+            "stand",
+            "dépassement",
+            "aérodynamisme",
+            "podium"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "dépassement",
+          "options": [
+            "dépassement",
+            "châssis",
+            "pneu",
+            "virage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "aérodynamisme",
+          "options": [
+            "aérodynamisme",
+            "moteur",
+            "casque",
+            "podium"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pneu",
+          "options": [
+            "pneu",
+            "volant",
+            "drapeau à damier",
+            "monoplace"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "volant",
+          "options": [
+            "volant",
+            "stand",
+            "paddock",
+            "circuit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "moteur",
+          "options": [
+            "moteur",
+            "châssis",
+            "virage",
+            "dépassement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "drapeau à damier",
+          "options": [
+            "drapeau à damier",
+            "pneu",
+            "casque",
+            "aérodynamisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "podium",
+          "options": [
+            "podium",
+            "moteur",
+            "volant",
+            "stand"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "casque",
+          "options": [
+            "casque",
+            "paddock",
+            "circuit",
+            "dépassement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "virage",
+          "options": [
+            "virage",
+            "drapeau à damier",
+            "monoplace",
+            "podium"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "châssis",
+          "options": [
+            "châssis",
+            "pneu",
+            "moteur",
+            "volant"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le ballet de la mort",
+      "inspiration": "Rush (Ron Howard, 2013)",
+      "text": "À peine Niki Lauda eut-il enclenché la visière de son {{BLANK_12}} que le ciel de Fuji se déchira en une pluie de plomb. Ce pilote autrichien, obsédé par la mécanique et la précision, savait que l'eau transformait le {{BLANK_2}} en une patinoire mortelle. Dans le {{BLANK_3}} fiévreux, les ingénieurs s'arrachaient les cheveux sur les choix de stratégie, tandis que sa {{BLANK_1}}, ce monstre de carbone et de titane, attendait sur un {{BLANK_14}} conçu pour survivre à l'enfer. L'{{BLANK_6}}, sculptée en soufflerie pour dompter l'air, devenait inutile face au déluge. Quand le {{BLANK_9}} explosa dans un hurlement suraigu, Niki agrippa son {{BLANK_8}} comme on saisit une arme. Dès le premier {{BLANK_13}}, l'aquaplaning guettait, et chaque {{BLANK_7}} luttait pour trouver une adhérence fantôme. Il s'arrêta au {{BLANK_4}} dans un ballet chorégraphié de mécaniciens, troquant ses gommes sèches contre des sculptures d'évacuation. De retour dans la meute, il calcula un {{BLANK_5}} millimétré, frôlant le mur à trois cents kilomètres-heure. James Hunt, son rival maudit, le suivait comme une ombre. Quand le {{BLANK_10}} tomba enfin, libérant les pilotes de cette torture liquide, Niki monta sur le {{BLANK_11}}, le visage marqué par les sangles. Il avait survécu à la danse avec la mort, prouvant que le courage n'est pas l'absence de peur, mais la froide acceptation du risque calculé.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "monoplace",
+          "options": [
+            "monoplace",
+            "pneu",
+            "casque",
+            "stand"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "circuit",
+          "options": [
+            "circuit",
+            "virage",
+            "paddock",
+            "moteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "paddock",
+          "options": [
+            "paddock",
+            "châssis",
+            "drapeau à damier",
+            "volant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "stand",
+          "options": [
+            "stand",
+            "dépassement",
+            "aérodynamisme",
+            "podium"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "dépassement",
+          "options": [
+            "dépassement",
+            "châssis",
+            "pneu",
+            "virage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "aérodynamisme",
+          "options": [
+            "aérodynamisme",
+            "moteur",
+            "casque",
+            "podium"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pneu",
+          "options": [
+            "pneu",
+            "volant",
+            "drapeau à damier",
+            "monoplace"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "volant",
+          "options": [
+            "volant",
+            "stand",
+            "paddock",
+            "circuit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "moteur",
+          "options": [
+            "moteur",
+            "châssis",
+            "virage",
+            "dépassement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "drapeau à damier",
+          "options": [
+            "drapeau à damier",
+            "pneu",
+            "casque",
+            "aérodynamisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "podium",
+          "options": [
+            "podium",
+            "moteur",
+            "volant",
+            "stand"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "casque",
+          "options": [
+            "casque",
+            "paddock",
+            "circuit",
+            "dépassement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "virage",
+          "options": [
+            "virage",
+            "drapeau à damier",
+            "monoplace",
+            "podium"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "châssis",
+          "options": [
+            "châssis",
+            "pneu",
+            "moteur",
+            "volant"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Formule 1 et sport automobile",
+    "title_fa": "آزمون : فرمول یک و ورزش‌های موتوری",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le véhicule de course ouvert, à quatre roues et à une seule place, conçu spécifiquement pour la compétition sur circuit, est la ____.",
+        "options": [
+          "monoplace",
+          "pneu",
+          "casque",
+          "stand"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خودروی مسابقه‌ای تک‌سرنشین = monoplace."
+      },
+      {
+        "type": "mcq",
+        "question": "Le tracé fermé et aménagé spécialement pour les courses automobiles, avec ses lignes droites et ses courbes, est le ____.",
+        "options": [
+          "circuit",
+          "virage",
+          "paddock",
+          "moteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسیر و پیست مسابقه = circuit."
+      },
+      {
+        "type": "mcq",
+        "question": "L'aire réservée derrière les stands où les équipes garagent leurs camions, préparent les voitures et accueillent les médias est le ____.",
+        "options": [
+          "paddock",
+          "châssis",
+          "drapeau à damier",
+          "volant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محوطه پشت پیست و گاراژها = paddock."
+      },
+      {
+        "type": "mcq",
+        "question": "L'atelier en bord de piste où la voiture s'arrête pour ravitailler, changer de pneus ou réparer est le ____.",
+        "options": [
+          "stand",
+          "dépassement",
+          "aérodynamisme",
+          "podium"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گاراژ و محل توقف در پیست = stand."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action par laquelle un pilote passe devant un concurrent pour prendre l'avantage en course est le ____.",
+        "options": [
+          "dépassement",
+          "châssis",
+          "pneu",
+          "virage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عبور از رقیب و سبقت = dépassement."
+      },
+      {
+        "type": "mcq",
+        "question": "La science qui étudie la façon dont l'air circule autour de la voiture pour réduire la traînée et augmenter l'appui est l'____.",
+        "options": [
+          "aérodynamisme",
+          "moteur",
+          "casque",
+          "podium"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم جریان هوا روی بدنه = aérodynamisme."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enveloppe en caoutchouc qui entoure la jante et qui assure le contact unique entre la voiture et la piste est le ____.",
+        "options": [
+          "pneu",
+          "volant",
+          "drapeau à damier",
+          "monoplace"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لاستیک خودرو = pneu."
+      },
+      {
+        "type": "mcq",
+        "question": "L'organe de direction, équipé de nombreux boutons électroniques, que le pilote manipule pour guider la voiture est le ____.",
+        "options": [
+          "volant",
+          "stand",
+          "paddock",
+          "circuit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرمان خودرو = volant."
+      },
+      {
+        "type": "mcq",
+        "question": "La machine thermique et/ou électrique qui transforme l'énergie en mouvement pour propulser le véhicule est le ____.",
+        "options": [
+          "moteur",
+          "châssis",
+          "virage",
+          "dépassement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "موتور پیشران = moteur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le signal黑白 agité par les commissaires de piste pour indiquer la fin de la course et désigner le vainqueur est le ____.",
+        "options": [
+          "drapeau à damier",
+          "pneu",
+          "casque",
+          "aérodynamisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پرچم پایان مسابقه = drapeau à damier."
+      },
+      {
+        "type": "mcq",
+        "question": "L'estrade à trois niveaux où les trois premiers pilotes de la course reçoivent leurs trophées et célèbrent la victoire est le ____.",
+        "options": [
+          "podium",
+          "moteur",
+          "volant",
+          "stand"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سکوی قهرمانی = podium."
+      },
+      {
+        "type": "mcq",
+        "question": "L'équipement de protection rigide, porté sur la tête pour absorber les chocs et protéger le visage du pilote, est le ____.",
+        "options": [
+          "casque",
+          "paddock",
+          "circuit",
+          "dépassement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلاه ایمنی راننده = casque."
+      },
+      {
+        "type": "mcq",
+        "question": "La portion courbe du tracé qui oblige le pilote à ralentir et à tourner pour suivre la piste est le ____.",
+        "options": [
+          "virage",
+          "drapeau à damier",
+          "monoplace",
+          "podium"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیچ مسیر = virage."
+      },
+      {
+        "type": "mcq",
+        "question": "La structure squelettique de la voiture, souvent en fibre de carbone, qui supporte tous les éléments et protège le pilote est le ____.",
+        "options": [
+          "châssis",
+          "pneu",
+          "moteur",
+          "volant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اسکلت و شاسی خودرو = châssis."
+      },
+      {
+        "type": "binary",
+        "question": "Le paddock est la partie de la piste où les voitures roulent à pleine vitesse pendant la course.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پادوک محوطه پشت پیست برای استقرار تیم‌هاست، نه مسیر مسابقه."
+      },
+      {
+        "type": "binary",
+        "question": "L'aérodynamisme vise à plaquer la voiture au sol (appui) tout en minimisant la résistance à l'avancement (traînée).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. آیرودینامیک هم چسبندگی به زمین را زیاد می‌کند و هم مقاومت هوا را کم."
+      },
+      {
+        "type": "binary",
+        "question": "Le drapeau à damier est agité pour signaler un danger ou un accident survenu sur le circuit.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پرچم شطرنجی فقط پایان مسابقه را اعلام می‌کند. پرچم زرد برای خطر است."
+      },
+      {
+        "type": "binary",
+        "question": "Le châssis monocoque moderne est conçu comme une cellule de survie indestructible pour protéger le pilote en cas de choc violent.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. شاسی یکپارچه مانند یک کپسول بقا از راننده در تصادفات محافظت می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Un dépassement est l'action pour un pilote de perdre volontairement une place pour laisser passer un coéquipier.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سبقت (dépassement) یعنی جلو زدن از رقیب، نه از دست دادن مکان."
+      },
+      {
+        "type": "binary",
+        "question": "Le stand est l'endroit où l'équipe technique intervient rapidement sur la voiture pendant la course (pit-stop).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پیت استاپ (stand) محل توقف برای تعمیرات و تعویض لاستیک است."
+      }
+    ]
+  }
+}
