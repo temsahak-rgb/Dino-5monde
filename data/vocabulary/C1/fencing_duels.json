@@ -1,0 +1,680 @@
+{
+  "id": "fencing_duels",
+  "level": "C1",
+  "theme": "Escrime, duel et arts martiaux historiques",
+  "theme_fa": "شمشیربازی، دوئل و هنرهای رزمی تاریخی",
+  "icon": "🤺",
+  "inspiration": "Les Duellistes (The Duellists - Ridley Scott, 1977)",
+  "words": [
+    {
+      "fr": "l'escrime",
+      "fa": "شمشیربازی",
+      "emoji": "🤺",
+      "difficulty": 4,
+      "ex": "L'escrime est un sport olympique qui exige rapidité et stratégie.",
+      "ex_fa": "شمشیربازی یک ورزش المپیکی است که به سرعت و استراتژی نیاز دارد."
+    },
+    {
+      "fr": "le fleuret",
+      "fa": "فلوره (شمشیر نوک‌تیز سبک)",
+      "emoji": "🗡️",
+      "difficulty": 4,
+      "ex": "Le fleuret est une arme conventionnelle où seules les touches au tronc comptent.",
+      "ex_fa": "فلوره سلاحی قراردادی است که در آن فقط ضربات به تنه امتیاز دارند."
+    },
+    {
+      "fr": "l'épée",
+      "fa": "اپه (شمشیر دوئل)",
+      "emoji": "⚔️",
+      "difficulty": 3,
+      "ex": "À l'épée, le corps entier est une cible valable.",
+      "ex_fa": "در اپه، تمام بدن یک هدف معتبر است."
+    },
+    {
+      "fr": "le sabre",
+      "fa": "سابر (شمشیر برنده)",
+      "emoji": "🗡️",
+      "difficulty": 4,
+      "ex": "Le sabre permet de toucher avec le tranchant et la pointe.",
+      "ex_fa": "سابر امکان ضربه زدن با لبه و نوک را می‌دهد."
+    },
+    {
+      "fr": "le duelliste",
+      "fa": "دوئلیست، شمشیرزن",
+      "emoji": "🤺",
+      "difficulty": 4,
+      "ex": "Le duelliste défend son honneur au péril de sa vie.",
+      "ex_fa": "شمشیرزن از آبروی خود در برابر خطر جانی دفاع می‌کند."
+    },
+    {
+      "fr": "la parade",
+      "fa": "دفاع، پاری",
+      "emoji": "🛡️",
+      "difficulty": 4,
+      "ex": "Une parade ferme bloque la lame adverse avec autorité.",
+      "ex_fa": "دفاع بسته، تیغ حریف را با قدرت مسدود می‌کند."
+    },
+    {
+      "fr": "la riposte",
+      "fa": "پاتک، حمله متقابل",
+      "emoji": "⚡",
+      "difficulty": 4,
+      "ex": "La riposte immédiate suit la parade pour punir l'attaquant.",
+      "ex_fa": "پاتک فوری پس از دفاع برای تنبیه مهاجم انجام می‌شود."
+    },
+    {
+      "fr": "la touche",
+      "fa": "ضربه معتبر (تاچ)",
+      "emoji": "🎯",
+      "difficulty": 3,
+      "ex": "L'arbitre valide la touche quand la pointe atteint la cible.",
+      "ex_fa": "داور زمانی ضربه را تایید می‌کند که نوک شمشیر به هدف برسد."
+    },
+    {
+      "fr": "le masque",
+      "fa": "ماسک شمشیربازی",
+      "emoji": "🎭",
+      "difficulty": 3,
+      "ex": "Le masque grillagé protège le visage et la gorge des coups.",
+      "ex_fa": "ماسک توری از صورت و گلو در برابر ضربات محافظت می‌کند."
+    },
+    {
+      "fr": "la piste",
+      "fa": "پیست، زمین مسابقه",
+      "emoji": "📏",
+      "difficulty": 3,
+      "ex": "Le tireur recule jusqu'au bout de la piste pour éviter l'assaut.",
+      "ex_fa": "شمشیرزن برای فرار از حمله تا انتهای پیست عقب‌نشینی می‌کند."
+    },
+    {
+      "fr": "l'assaut",
+      "fa": "حمله، نبرد",
+      "emoji": "💥",
+      "difficulty": 4,
+      "ex": "L'assaut final se joue en cinq touches gagnantes.",
+      "ex_fa": "نبرد نهایی در پنج ضربه برنده بازی می‌شود."
+    },
+    {
+      "fr": "la garde",
+      "fa": "گارد، حالت دفاعی",
+      "emoji": "🧍",
+      "difficulty": 3,
+      "ex": "La garde haute protège le visage des coups plongeants.",
+      "ex_fa": "گارد بالا از صورت در برابر ضربات فرودآمدن محافظت می‌کند."
+    },
+    {
+      "fr": "la feinte",
+      "fa": "حرکت فریبکارانه، فینت",
+      "emoji": "🎭",
+      "difficulty": 5,
+      "ex": "La feinte pousse l'adversaire à réagir pour mieux le tromper.",
+      "ex_fa": "فینت حریف را وادار به واکنش می‌کند تا بهتر فریبش دهد."
+    },
+    {
+      "fr": "le plastron",
+      "fa": "سینه‌بند، محافظ سینه",
+      "emoji": "🦺",
+      "difficulty": 4,
+      "ex": "Le plastron électrique enregistre les touches au fleuret.",
+      "ex_fa": "سینه‌بند الکتریکی ضربات به فلوره را ثبت می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'honneur de l'Empire",
+      "text": "D'Hubert et Féraud sont deux officiers de l'armée napoléonienne et d'excellents {{BLANK_5}}s. Leur rivalité les pousse à s'affronter dans un {{BLANK_11}} secret. D'Hubert préfère la légèreté du {{BLANK_2}}, tandis que Féraud manie le lourd {{BLANK_4}} de cavalerie. Avant chaque combat, ils enfilent leur {{BLANK_9}} grillagé et leur {{BLANK_14}} rembourré. Ils se mettent en {{BLANK_12}} sur la {{BLANK_10}} métallique. Dans les salles d'{{BLANK_1}}, les règles sont strictes. Lors du duel, D'Hubert exécute une brillante {{BLANK_13}} pour tromper son adversaire, suivie d'une {{BLANK_6}} rapide pour bloquer l'attaque. Immédiatement, il lance une {{BLANK_7}} foudroyante qui atteint sa cible. L'arbitre annonce la {{BLANK_8}} valide avec l'{{BLANK_3}} de tournoi. Mais cet art martial ne suffit pas à éteindre leur haine obsessionnelle.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "escrime",
+          "options": [
+            "escrime",
+            "fleuret",
+            "épée",
+            "sabre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fleuret",
+          "options": [
+            "fleuret",
+            "duelliste",
+            "parade",
+            "riposte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "épée",
+          "options": [
+            "épée",
+            "touche",
+            "masque",
+            "piste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "sabre",
+          "options": [
+            "sabre",
+            "assaut",
+            "garde",
+            "feinte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "duelliste",
+          "options": [
+            "duelliste",
+            "plastron",
+            "escrime",
+            "fleuret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "parade",
+          "options": [
+            "parade",
+            "épée",
+            "sabre",
+            "duelliste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "riposte",
+          "options": [
+            "riposte",
+            "touche",
+            "masque",
+            "piste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "touche",
+          "options": [
+            "touche",
+            "assaut",
+            "garde",
+            "feinte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "masque",
+          "options": [
+            "masque",
+            "plastron",
+            "escrime",
+            "fleuret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "piste",
+          "options": [
+            "piste",
+            "épée",
+            "sabre",
+            "duelliste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "assaut",
+          "options": [
+            "assaut",
+            "parade",
+            "riposte",
+            "touche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "garde",
+          "options": [
+            "garde",
+            "masque",
+            "piste",
+            "assaut"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "feinte",
+          "options": [
+            "feinte",
+            "plastron",
+            "escrime",
+            "fleuret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "plastron",
+          "options": [
+            "plastron",
+            "épée",
+            "sabre",
+            "duelliste"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La danse de l'acier",
+      "inspiration": "Les Duellistes (Ridley Scott, 1977)",
+      "text": "À peine le {{BLANK_5}} eut-il croisé le fer que la brume de l'aube se teinta du reflet glacé de l'acier. Cet {{BLANK_1}} n'était plus un sport, mais une danse macabre où deux âmes cherchaient la rédemption. D'Hubert, figé dans sa {{BLANK_12}} impeccable, sentait le poids du {{BLANK_4}} ennemi fendre l'air. Sous le {{BLANK_9}} de fer qui cachait ses larmes de rage, il guettait la moindre {{BLANK_13}} de Féraud. Sur la {{BLANK_10}} boueuse, chaque {{BLANK_11}} était une conversation mortelle. Une {{BLANK_6}} sèche dévia la lame hurlante, ouvrant la voie à une {{BLANK_7}} fulgurante. La {{BLANK_8}} fut nette, indiscutable, traversant le {{BLANK_14}} blanc comme un pardon refusé. Que ce soit avec la grâce du {{BLANK_2}} ou la brutalité de l'{{BLANK_3}} de cour, ces deux ombres étaient condamnées à se pourchasser à travers l'Europe, prouvant que la véritable blessure n'est pas celle que l'acier inflige à la chair, mais celle que l'orgueil grave à jamais dans le cœur des hommes.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "escrime",
+          "options": [
+            "escrime",
+            "fleuret",
+            "épée",
+            "sabre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fleuret",
+          "options": [
+            "fleuret",
+            "duelliste",
+            "parade",
+            "riposte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "épée",
+          "options": [
+            "épée",
+            "touche",
+            "masque",
+            "piste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "sabre",
+          "options": [
+            "sabre",
+            "assaut",
+            "garde",
+            "feinte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "duelliste",
+          "options": [
+            "duelliste",
+            "plastron",
+            "escrime",
+            "fleuret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "parade",
+          "options": [
+            "parade",
+            "épée",
+            "sabre",
+            "duelliste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "riposte",
+          "options": [
+            "riposte",
+            "touche",
+            "masque",
+            "piste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "touche",
+          "options": [
+            "touche",
+            "assaut",
+            "garde",
+            "feinte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "masque",
+          "options": [
+            "masque",
+            "plastron",
+            "escrime",
+            "fleuret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "piste",
+          "options": [
+            "piste",
+            "épée",
+            "sabre",
+            "duelliste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "assaut",
+          "options": [
+            "assaut",
+            "parade",
+            "riposte",
+            "touche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "garde",
+          "options": [
+            "garde",
+            "masque",
+            "piste",
+            "assaut"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "feinte",
+          "options": [
+            "feinte",
+            "plastron",
+            "escrime",
+            "fleuret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "plastron",
+          "options": [
+            "plastron",
+            "épée",
+            "sabre",
+            "duelliste"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Escrime et duels",
+    "title_fa": "آزمون : شمشیربازی و دوئل‌ها",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le sport de combat armé où les tireurs s'affrontent avec des armes blanches (fleuret, épée, sabre) est l'____.",
+        "options": [
+          "escrime",
+          "fleuret",
+          "épée",
+          "sabre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزش رزمی با سلاح سفید = escrime."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arme d'estoc légère et flexible où seules les touches portées sur le tronc sont valables est le ____.",
+        "options": [
+          "fleuret",
+          "duelliste",
+          "parade",
+          "riposte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سلاح سبک با هدف محدود به تنه = fleuret."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arme d'estoc où la surface valable couvre l'ensemble du corps et où la priorité n'existe pas est l'____.",
+        "options": [
+          "épée",
+          "touche",
+          "masque",
+          "piste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سلاحی که تمام بدن هدف است = épée."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arme de taille et d'estoc qui permet de toucher avec le tranchant de la lame est le ____.",
+        "options": [
+          "sabre",
+          "assaut",
+          "garde",
+          "feinte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سلاح برنده که با لبه ضربه می‌زند = sabre."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui se bat en duel, souvent pour défendre son honneur, est le ____.",
+        "options": [
+          "duelliste",
+          "plastron",
+          "escrime",
+          "fleuret"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخصی که دوئل می‌کند = duelliste."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action défensive qui consiste à bloquer ou dévier l'arme adverse avec sa propre lame est la ____.",
+        "options": [
+          "parade",
+          "épée",
+          "sabre",
+          "duelliste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل دفاعی و دفع حمله = parade."
+      },
+      {
+        "type": "mcq",
+        "question": "L'attaque offensive exécutée immédiatement après avoir réussi une parade est la ____.",
+        "options": [
+          "riposte",
+          "touche",
+          "masque",
+          "piste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حمله متقابل پس از دفاع = riposte."
+      },
+      {
+        "type": "mcq",
+        "question": "Le contact valable de la pointe ou du tranchant de l'arme sur la cible adverse est la ____.",
+        "options": [
+          "touche",
+          "assaut",
+          "garde",
+          "feinte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برخورد معتبر سلاح با هدف = touche."
+      },
+      {
+        "type": "mcq",
+        "question": "L'équipement de protection métallique qui couvre la tête et le visage du tireur est le ____.",
+        "options": [
+          "masque",
+          "plastron",
+          "escrime",
+          "fleuret"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تجهیزات محافظ سر و صورت = masque."
+      },
+      {
+        "type": "mcq",
+        "question": "La surface rectangulaire et délimitée sur laquelle se déplacent les escrimeurs est la ____.",
+        "options": [
+          "piste",
+          "épée",
+          "sabre",
+          "duelliste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زمین مستطیلی مسابقه = piste."
+      },
+      {
+        "type": "mcq",
+        "question": "Le combat ou la phase de confrontation directe entre deux tireurs pour marquer des points est l'____.",
+        "options": [
+          "assaut",
+          "parade",
+          "riposte",
+          "touche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فاز نبرد و رویارویی = assaut."
+      },
+      {
+        "type": "mcq",
+        "question": "La position de préparation et de protection que prend le tireur avant d'attaquer ou de défendre est la ____.",
+        "options": [
+          "garde",
+          "masque",
+          "piste",
+          "assaut"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حالت آماده‌باش و دفاعی = garde."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mouvement simulé destiné à provoquer une réaction de l'adversaire pour le tromper est la ____.",
+        "options": [
+          "feinte",
+          "plastron",
+          "escrime",
+          "fleuret"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرکت فریب‌دهنده = feinte."
+      },
+      {
+        "type": "mcq",
+        "question": "Le vêtement de protection rembourré (ou équipé de capteurs) qui couvre le torse du tireur est le ____.",
+        "options": [
+          "plastron",
+          "épée",
+          "sabre",
+          "duelliste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محافظ سینه = plastron."
+      },
+      {
+        "type": "binary",
+        "question": "Au sabre, il est interdit de toucher l'adversaire avec le tranchant de la lame, seule la pointe compte.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. در سابر (sabre) ضربه زدن با لبه تیغ نیز کاملاً معتبر است."
+      },
+      {
+        "type": "binary",
+        "question": "La parade est l'action de bloquer ou dévier l'attaque de l'adversaire avec sa propre arme.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پاری (parade) دفع حمله حریف با سلاح خودی است."
+      },
+      {
+        "type": "binary",
+        "question": "La feinte est une botte secrète qui permet de transpercer l'armure de l'adversaire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. فینت (feinte) یک حرکت جعلی و فریب‌دهنده برای باز کردن گارد حریف است."
+      },
+      {
+        "type": "binary",
+        "question": "Le plastron désigne la veste de protection portée sur le torse par les escrimeurs.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سینه‌بند (plastron) لباس محافظ بالاتنه است."
+      },
+      {
+        "type": "binary",
+        "question": "À l'épée, la règle de la priorité s'applique : le premier qui attaque a toujours raison.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. در اپه (épée) قانون تقدم (priority) وجود ندارد و هر کس زودتر ضربه بزند امتیاز می‌گیرد."
+      },
+      {
+        "type": "binary",
+        "question": "La riposte est l'attaque que l'on porte immédiatement après avoir paré l'attaque adverse.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ریپوست (riposte) حمله متقابل بلافاصله پس از دفاع موفق است."
+      }
+    ]
+  }
+}
