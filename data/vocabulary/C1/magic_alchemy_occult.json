@@ -1,0 +1,682 @@
+{
+  "id": "magic_alchemy_occult",
+  "level": "C1",
+  "theme": "Magie, alchimie et sciences occultes",
+  "theme_fa": "جادوگری، کیمیاگری و علوم غریبه",
+  "icon": "🪄",
+  "inspiration": "Harry Potter à l'école des sorciers (Chris Columbus, 2001)",
+  "words": [
+    {
+      "fr": "la sorcellerie",
+      "fa": "جادوگری",
+      "emoji": "🧙‍♀️",
+      "difficulty": 4,
+      "ex": "La sorcellerie était considérée comme un crime au Moyen Âge.",
+      "ex_fa": "جادوگری در قرون وسطی جرم محسوب می‌شد."
+    },
+    {
+      "fr": "l'alchimie",
+      "fa": "کیمیاگری",
+      "emoji": "⚗️",
+      "difficulty": 5,
+      "ex": "L'alchimie cherchait à transformer le plomb en or.",
+      "ex_fa": "کیمیاگری به دنبال تبدیل سرب به طلا بود."
+    },
+    {
+      "fr": "le grimoire",
+      "fa": "کتاب جادو",
+      "emoji": "📕",
+      "difficulty": 5,
+      "ex": "Ce grimoire ancien contient des formules interdites.",
+      "ex_fa": "این کتاب جادوی باستانی حاوی فرمول‌های ممنوعه است."
+    },
+    {
+      "fr": "la potion",
+      "fa": "معجون",
+      "emoji": "🧪",
+      "difficulty": 4,
+      "ex": "La potion polyjuice permet de prendre l'apparence d'un autre.",
+      "ex_fa": "معجون پلی‌جوس امکان تغییر شکل به فرد دیگر را می‌دهد."
+    },
+    {
+      "fr": "l'incantation",
+      "fa": "وِرد، اوراد",
+      "emoji": "🗣️",
+      "difficulty": 5,
+      "ex": "L'incantation doit être prononcée avec une diction parfaite.",
+      "ex_fa": "وِرد باید با تلفظی بی‌نقص ادا شود."
+    },
+    {
+      "fr": "la baguette magique",
+      "fa": "عصای جادویی",
+      "emoji": "🪄",
+      "difficulty": 3,
+      "ex": "Chaque sorcier choisit sa baguette magique chez Ollivander.",
+      "ex_fa": "هر جادوگر عصای جادویی‌اش را از اولیواندر انتخاب می‌کند."
+    },
+    {
+      "fr": "le chaudron",
+      "fa": "دیگ جادوگری",
+      "emoji": "🍲",
+      "difficulty": 4,
+      "ex": "Les ingrédients mijotent dans le chaudron en cuivre.",
+      "ex_fa": "مواد اولیه در دیگ مسی در حال جوشیدن هستند."
+    },
+    {
+      "fr": "le sortilège",
+      "fa": "طلسم، افسون",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "Le sortilège de désarmement s'appelle Expelliarmus.",
+      "ex_fa": "طلسم خلع سلاح، اِکسپلیارموس نام دارد."
+    },
+    {
+      "fr": "le philtre",
+      "fa": "معجون عشق",
+      "emoji": "❤️",
+      "difficulty": 5,
+      "ex": "Le philtre d'amour est interdit par la loi magique.",
+      "ex_fa": "معجون عشق توسط قانون جادوگری ممنوع است."
+    },
+    {
+      "fr": "le talisman",
+      "fa": "طلسم محافظ",
+      "emoji": "🔮",
+      "difficulty": 4,
+      "ex": "Ce talisman protège son porteur du mauvais œil.",
+      "ex_fa": "این طلسم محافظ، دارنده‌اش را از چشم‌زخم حفظ می‌کند."
+    },
+    {
+      "fr": "l'élixir",
+      "fa": "اکسیر",
+      "emoji": "🏺",
+      "difficulty": 5,
+      "ex": "L'élixir de longue vie était le Graal des alchimistes.",
+      "ex_fa": "اکسیر جاودانگی، آرزوی نهایی کیمیاگران بود."
+    },
+    {
+      "fr": "la divination",
+      "fa": "پیشگویی، غیب‌گویی",
+      "emoji": "🔮",
+      "difficulty": 4,
+      "ex": "La divination par les feuilles de thé s'appelle la tasséomancie.",
+      "ex_fa": "پیشگویی از روی برگ‌های چای، تاسئومانتی نام دارد."
+    },
+    {
+      "fr": "la transmutation",
+      "fa": "دگردیسی کیمیاگری",
+      "emoji": "⚗️",
+      "difficulty": 5,
+      "ex": "La transmutation du plomb en or exige la Pierre Philosophale.",
+      "ex_fa": "دگردیسی سرب به طلا به سنگ فلسفی نیاز دارد."
+    },
+    {
+      "fr": "le mage",
+      "fa": "جادوگر، مغ",
+      "emoji": "🧙",
+      "difficulty": 4,
+      "ex": "Le mage Merlin conseillait le roi Arthur.",
+      "ex_fa": "جادوگر مرلین مشاور شاه آرتور بود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La première leçon",
+      "title_fa": "درس اول",
+      "text": "Harry Potter entre à Poudlard, l'école de {{BLANK_1}}. Le directeur Dumbledore est un puissant {{BLANK_14}} centenaire. Dans le cours de potions, le professeur Rogue fait préparer une {{BLANK_4}} complexe dans un grand {{BLANK_7}} en étain. Harry apprend que l'{{BLANK_2}} cherche à transformer les métaux vils en or grâce à la {{BLANK_13}}. En cours de sortilèges, il agite sa {{BLANK_6}} en bois de houx et prononce une {{BLANK_5}} en latin : « Wingardium Leviosa ! ». Un petit {{BLANK_8}} fait léviter la plume. Dans la bibliothèque interdite, il découvre un {{BLANK_3}} qui parle des philtres anciens. Un {{BLANK_9}} d'amour peut rendre fou n'importe qui, et un {{BLANK_10}} gravé de runes protège des malédictions. Dans la salle sur demande, il trouve l'{{BLANK_11}} de Nicolas Flamel, qui offre la vie éternelle. Le professeur Trelawney enseigne la {{BLANK_12}} en lisant les lignes de la main. Quand Voldemort menace, Harry comprend que la vraie magie n'est pas dans les formules, mais dans l'amour et le courage.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "sorcellerie",
+          "options": [
+            "sorcellerie",
+            "alchimie",
+            "divination",
+            "transmutation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "alchimie",
+          "options": [
+            "alchimie",
+            "sorcellerie",
+            "divination",
+            "transmutation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "grimoire",
+          "options": [
+            "grimoire",
+            "chaudron",
+            "talisman",
+            "philtre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "potion",
+          "options": [
+            "potion",
+            "élixir",
+            "philtre",
+            "incantation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "incantation",
+          "options": [
+            "incantation",
+            "potion",
+            "baguette",
+            "sortilège"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "baguette magique",
+          "options": [
+            "baguette magique",
+            "talisman",
+            "grimoire",
+            "chaudron"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "chaudron",
+          "options": [
+            "chaudron",
+            "grimoire",
+            "talisman",
+            "élixir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "sortilège",
+          "options": [
+            "sortilège",
+            "philtre",
+            "mage",
+            "divination"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "philtre",
+          "options": [
+            "philtre",
+            "élixir",
+            "sortilège",
+            "talisman"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "talisman",
+          "options": [
+            "talisman",
+            "philtre",
+            "grimoire",
+            "chaudron"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "élixir",
+          "options": [
+            "élixir",
+            "potion",
+            "philtre",
+            "transmutation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "divination",
+          "options": [
+            "divination",
+            "alchimie",
+            "sorcellerie",
+            "transmutation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "transmutation",
+          "options": [
+            "transmutation",
+            "incantation",
+            "divination",
+            "sorcellerie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "mage",
+          "options": [
+            "mage",
+            "sortilège",
+            "chaudron",
+            "grimoire"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le secret de la Pierre",
+      "title_fa": "راز سنگ",
+      "inspiration": "Harry Potter à l'école des sorciers (Chris Columbus, 2001)",
+      "text": "À peine Harry Potter eut-il poussé les lourdes portes de chêne de Poudlard qu'il sentit le souffle ancestral de la {{BLANK_1}} lui caresser le visage. Dans cette école perchée sur les falaises d'Écosse, les escaliers changeaient de direction, les tableaux bavardaient, et les fantômes traversaient les murs comme des courants d'air glacés. Albus Dumbledore, le vieux {{BLANK_14}} à la barbe d'argent, l'accueillit d'un regard où dansaient mille secrets inavouables. Harry découvrit que le monde magique n'était pas qu'un conte pour enfants, mais une civilisation parallèle, avec ses lois, ses querelles, ses ombres. Dans les sous-sols humides, le professeur Rogue, silhouette noire aux yeux d'encre, enseignait l'art subtil de la {{BLANK_4}}, faisant mijoter des liquides aux couleurs impossibles dans un {{BLANK_7}} en étain bosselé. Chaque ingrédient avait son heure, sa lune, son murmure. Plus haut, dans les tours crénelées, le professeur Flitwick faisait léviter des plumes grâce à une {{BLANK_5}} précise, tandis que les élèves agitaient leur {{BLANK_6}} comme des chefs d'orchestre hésitants. Un {{BLANK_8}} mal prononcé pouvait transformer un camarade en grenouille, ou pire. Dans la bibliothèque interdite, derrière des grilles rouillées, Harry dénicha un {{BLANK_3}} poussiéreux, relié en cuir de dragon, qui parlait de l'{{BLANK_2}} et de ses promesses éternelles. Les alchimistes médiévaux avaient cherché la {{BLANK_13}} des métaux, rêvant de créer l'{{BLANK_11}} de longue vie. Nicolas Flamel, seul, avait réussi. Mais la véritable quête de Harry était ailleurs. Lord Voldemort, le mage déchu, avait préparé un {{BLANK_9}} terrible pour ressusciter, et semait des {{BLANK_10}} empoisonnés sur son chemin. Dans la salle sur demande, Harry apprit la {{BLANK_12}} en fixant les flammes de la cheminée, y lisant des avenirs incertains. Il comprit alors que la magie la plus puissante n'était ni dans les formules latines, ni dans les cristaux, ni dans les chaudrons fumants, mais dans l'amour d'une mère morte pour le sauver, ce sortilège ancien que même les ténèbres ne pouvaient briser.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "sorcellerie",
+          "options": [
+            "sorcellerie",
+            "alchimie",
+            "divination",
+            "transmutation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "alchimie",
+          "options": [
+            "alchimie",
+            "sorcellerie",
+            "divination",
+            "transmutation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "grimoire",
+          "options": [
+            "grimoire",
+            "chaudron",
+            "talisman",
+            "philtre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "potion",
+          "options": [
+            "potion",
+            "élixir",
+            "philtre",
+            "incantation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "incantation",
+          "options": [
+            "incantation",
+            "potion",
+            "baguette",
+            "sortilège"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "baguette magique",
+          "options": [
+            "baguette magique",
+            "talisman",
+            "grimoire",
+            "chaudron"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "chaudron",
+          "options": [
+            "chaudron",
+            "grimoire",
+            "talisman",
+            "élixir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "sortilège",
+          "options": [
+            "sortilège",
+            "philtre",
+            "mage",
+            "divination"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "philtre",
+          "options": [
+            "philtre",
+            "élixir",
+            "sortilège",
+            "talisman"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "talismans",
+          "options": [
+            "talismans",
+            "philtres",
+            "grimoires",
+            "chaudrons"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "élixir",
+          "options": [
+            "élixir",
+            "potion",
+            "philtre",
+            "transmutation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "divination",
+          "options": [
+            "divination",
+            "alchimie",
+            "sorcellerie",
+            "transmutation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "transmutation",
+          "options": [
+            "transmutation",
+            "incantation",
+            "divination",
+            "sorcellerie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "mage",
+          "options": [
+            "mage",
+            "sortilège",
+            "chaudron",
+            "grimoire"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Magie, alchimie et occultisme",
+    "title_fa": "آزمون : جادوگری، کیمیاگری و علوم غریبه",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art d'utiliser des forces surnaturelles pour influencer le monde, souvent associé aux sorcières du Moyen Âge, est la ____.",
+        "options": [
+          "sorcellerie",
+          "alchimie",
+          "divination",
+          "transmutation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر استفاده از نیروهای فراطبیعی = sorcellerie."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette proto-science médiévale qui cherchait à transformer les métaux vils en or et à découvrir l'immortalité est l'____.",
+        "options": [
+          "alchimie",
+          "sorcellerie",
+          "divination",
+          "transmutation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نیا-علم تبدیل فلزات به طلا = alchimie."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce livre ancien contenant des formules magiques, des incantations et des rituels secrets est un ____.",
+        "options": [
+          "grimoire",
+          "chaudron",
+          "talisman",
+          "philtre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کتاب جادو و اوراد = grimoire."
+      },
+      {
+        "type": "mcq",
+        "question": "Le breuvage magique préparé en mélangeant des ingrédients spécifiques dans un chaudron est une ____.",
+        "options": [
+          "potion",
+          "élixir",
+          "philtre",
+          "incantation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نوشیدنی جادویی با مواد مخلوط = potion."
+      },
+      {
+        "type": "mcq",
+        "question": "La formule verbale, souvent en latin, qu'il faut prononcer pour activer un sortilège est l'____.",
+        "options": [
+          "incantation",
+          "potion",
+          "baguette",
+          "sortilège"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرمول کلامی برای فعال کردن جادو = incantation."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objet en bois, souvent orné, que le sorcier utilise pour canaliser et diriger son pouvoir magique est la ____.",
+        "options": [
+          "baguette magique",
+          "talisman",
+          "grimoire",
+          "chaudron"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عصای چوبی هدایت‌کننده جادو = baguette magique."
+      },
+      {
+        "type": "mcq",
+        "question": "Le grand récipient en métal, souvent en cuivre ou en étain, dans lequel on prépare les potions est le ____.",
+        "options": [
+          "chaudron",
+          "grimoire",
+          "talisman",
+          "élixir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ظرف بزرگ فلزی برای تهیه معجون = chaudron."
+      },
+      {
+        "type": "mcq",
+        "question": "Le charme ou l'enchantement qui produit un effet magique spécifique (lévitation, désarmement) est un ____.",
+        "options": [
+          "sortilège",
+          "philtre",
+          "mage",
+          "divination"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "افسون و طلسم خاص = sortilège."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette potion spécifique destinée à provoquer artificiellement l'amour chez celui qui la boit est un ____.",
+        "options": [
+          "philtre",
+          "élixir",
+          "sortilège",
+          "talisman"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "معجون مخصوص ایجاد عشق = philtre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objet (pierre, bijou) gravé de symboles et porté sur soi pour se protéger des malédictions est un ____.",
+        "options": [
+          "talisman",
+          "philtre",
+          "grimoire",
+          "chaudron"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیء محافظ در برابر طلسم = talisman."
+      },
+      {
+        "type": "mcq",
+        "question": "Le liquide miraculeux, souvent associé à la Pierre Philosophale, qui confère la jeunesse ou l'immortalité est l'____.",
+        "options": [
+          "élixir",
+          "potion",
+          "philtre",
+          "transmutation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مایع جادویی جاودانگی = élixir."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de prédire l'avenir en lisant les signes (astres, cartes, lignes de la main) est la ____.",
+        "options": [
+          "divination",
+          "alchimie",
+          "sorcellerie",
+          "transmutation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر پیشگویی آینده = divination."
+      },
+      {
+        "type": "mcq",
+        "question": "L'opération alchimique fondamentale qui transforme une substance en une autre, comme le plomb en or, est la ____.",
+        "options": [
+          "transmutation",
+          "incantation",
+          "divination",
+          "sorcellerie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تبدیل کیمیاگری یک ماده به ماده دیگر = transmutation."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce praticien des arts magiques, souvent représenté comme un sage barbu, est un ____.",
+        "options": [
+          "mage",
+          "sortilège",
+          "chaudron",
+          "grimoire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استاد هنرهای جادویی = mage."
+      },
+      {
+        "type": "binary",
+        "question": "L'alchimie et la chimie moderne sont exactement la même discipline scientifique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کیمیاگری ریشه‌ای عرفانی داشت، اما شیمی مدرن یک علم تجربی دقیق است."
+      },
+      {
+        "type": "binary",
+        "question": "Le grimoire est un récipient utilisé pour faire bouillir les ingrédients des potions.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. grimoire کتاب جادو است، ظرف مخصوص concha یا chaudron نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Une incantation doit généralement être prononcée à voix haute pour fonctionner dans les rituels magiques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ورد باید معمولاً با صدای بلند و لحن خاص ادا شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le philtre d'amour est considéré comme un outil magique inoffensif dans la plupart des traditions.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. معجون عشق اغلب به عنوان جادویی خطرناک و غیراخلاقی شناخته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La divination et la sorcellerie sont deux pratiques distinctes, même si elles peuvent se chevaucher.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. غیب‌گویی فقط پیشگویی است، اما جادوگری شامل تأثیرگذاری بر جهان است."
+      },
+      {
+        "type": "binary",
+        "question": "La transmutation est le but ultime recherché par les alchimistes dans leur quête spirituelle et matérielle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دگردیسی سرب به طلا هدف نمادین و مادی کیمیاگران بود."
+      }
+    ]
+  }
+}
