@@ -43,7 +43,7 @@ async function showTravelLesson(lessonId) {
         app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">🚧 به زودی</p><button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">بازگشت</button></div>`; 
         return; 
     }
-    showLessonContent(lessonId, lessonData.miniLessons[0]);
+    showLessonContent(lessonId, lessonData.section[0]);
 }
 
 // ===============================
