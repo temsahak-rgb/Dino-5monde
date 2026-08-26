@@ -1,0 +1,680 @@
+{
+  "id": "astronomy_space",
+  "level": "C1",
+  "theme": "Astronomie, astrophysique et exploration spatiale",
+  "theme_fa": "نجوم، اخترفیزیک و اکتشافات فضایی",
+  "icon": "🌌",
+  "inspiration": "Interstellar (Christopher Nolan, 2014)",
+  "words": [
+    {
+      "fr": "l'astronomie",
+      "fa": "نجوم",
+      "emoji": "🔭",
+      "difficulty": 3,
+      "ex": "L'astronomie est la science qui étudie les astres et l'univers.",
+      "ex_fa": "نجوم علمی است که ستارگان و جهان را مطالعه می‌کند."
+    },
+    {
+      "fr": "le télescope",
+      "fa": "تلسکوپ",
+      "emoji": "🔭",
+      "difficulty": 3,
+      "ex": "Le télescope spatial Hubble a révolutionné notre vision du cosmos.",
+      "ex_fa": "تلسکوپ فضایی هابل دید ما از کیهان را متحول کرد."
+    },
+    {
+      "fr": "la galaxie",
+      "fa": "کهکشان",
+      "emoji": "🌌",
+      "difficulty": 3,
+      "ex": "Notre galaxie, la Voie lactée, contient des milliards d'étoiles.",
+      "ex_fa": "کهکشان ما، راه شیری، شامل میلیاردها ستاره است."
+    },
+    {
+      "fr": "le trou noir",
+      "fa": "سیاه‌چاله",
+      "emoji": "🕳️",
+      "difficulty": 4,
+      "ex": "Le trou noir possède une gravité si forte que la lumière ne peut s'en échapper.",
+      "ex_fa": "سیاه‌چاله جاذبه‌ای چنان قوی دارد که نور نمی‌تواند از آن بگریزد."
+    },
+    {
+      "fr": "l'orbite",
+      "fa": "مدار",
+      "emoji": "🪐",
+      "difficulty": 4,
+      "ex": "La Terre suit une orbite elliptique autour du Soleil.",
+      "ex_fa": "زمین مداری بیضی‌شکل به دور خورشید طی می‌کند."
+    },
+    {
+      "fr": "la constellation",
+      "fa": "صورت فلکی",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "Orion est une constellation facilement reconnaissable en hiver.",
+      "ex_fa": "شکارچی (اوراین) صورت فلکی‌ای است که در زمستان به راحتی شناخته می‌شود."
+    },
+    {
+      "fr": "la nébuleuse",
+      "fa": "سحابی",
+      "emoji": "🌫️",
+      "difficulty": 5,
+      "ex": "La nébuleuse d'Orion est une immense pouponnière d'étoiles.",
+      "ex_fa": "سحابی جبار یک کارخانه عظیم ستاره‌سازی است."
+    },
+    {
+      "fr": "l'astéroïde",
+      "fa": "سیارک",
+      "emoji": "☄️",
+      "difficulty": 4,
+      "ex": "L'astéroïde a frôlé la Terre à une vitesse vertigineuse.",
+      "ex_fa": "سیارک با سرعتی سرگیجه‌آور از کنار زمین عبور کرد."
+    },
+    {
+      "fr": "la gravité",
+      "fa": "جاذبه",
+      "emoji": "🍎",
+      "difficulty": 3,
+      "ex": "La gravité lunaire est six fois plus faible que celle de la Terre.",
+      "ex_fa": "جاذبه ماه شش برابر ضعیف‌تر از جاذبه زمین است."
+    },
+    {
+      "fr": "l'éclipse",
+      "fa": "کسوف، خسوف",
+      "emoji": "🌑",
+      "difficulty": 3,
+      "ex": "L'éclipse solaire totale plonge le paysage en pleine nuit pendant quelques minutes.",
+      "ex_fa": "کسوف کامل خورشید، منظره را برای چند دقیقه در روز به شب تبدیل می‌کند."
+    },
+    {
+      "fr": "la supernova",
+      "fa": "ابرنواختر",
+      "emoji": "💥",
+      "difficulty": 5,
+      "ex": "L'explosion d'une supernova disperse des éléments lourds dans l'espace.",
+      "ex_fa": "انفجار ابرنواختر عناصر سنگین را در فضا پخش می‌کند."
+    },
+    {
+      "fr": "la navette",
+      "fa": "شاتل، فضاپیما",
+      "emoji": "🚀",
+      "difficulty": 3,
+      "ex": "La navette spatiale a permis la construction de la station orbitale.",
+      "ex_fa": "شاتل فضایی امکان ساخت ایستگاه مداری را فراهم کرد."
+    },
+    {
+      "fr": "l'apesanteur",
+      "fa": "بی‌وزنی",
+      "emoji": "🧑‍🚀",
+      "difficulty": 4,
+      "ex": "Les astronautes flottent en apesanteur à l'intérieur de la station.",
+      "ex_fa": "فضانوردان در بی‌وزنی در داخل ایستگاه شناورند."
+    },
+    {
+      "fr": "le cosmos",
+      "fa": "کیهان",
+      "emoji": "🌠",
+      "difficulty": 4,
+      "ex": "Le cosmos reste un mystère fascinant pour l'humanité.",
+      "ex_fa": "کیهان همچنان رازی شگفت‌انگیز برای بشریت است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le voyage de l'Endurance",
+      "text": "Cooper est un ancien pilote devenu fermier, passionné d'{{BLANK_1}}. Un jour, il découvre une base secrète où les scientifiques construisent une {{BLANK_12}} pour sauver l'humanité. Il accepte de diriger la mission à travers un ver l'air. À bord, il observe le {{BLANK_14}} infini à travers le hublot. L'équipage s'approche d'une {{BLANK_7}} colorée où naissent de nouvelles étoiles. Ils doivent éviter une pluie d'météores et un énorme {{BLANK_8}} rocheux. Leur destination est une {{BLANK_3}} lointaine abritant des planètes habitables. En s'approchant d'un {{BLANK_4}} massif appelé Gargantua, ils ressentent les effets extrêmes de la {{BLANK_9}}. Le temps se dilate et chaque heure sur la planète équivaut à des années sur Terre. Ils utilisent les étoiles d'une {{BLANK_6}} précise pour s'orienter. Quand une étoile géante explose en {{BLANK_11}}, l'énergie libérée illumine l'{{BLANK_5}} de leur vaisseau. En flottant en {{BLANK_13}} dans la cabine, Cooper regarde par son {{BLANK_2}} spatial et aperçoit une {{BLANK_10}} totale qui cache temporairement le soleil, réalisant que l'amour est la seule force qui transcende les dimensions.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "astronomie",
+          "options": [
+            "astronomie",
+            "télescope",
+            "galaxie",
+            "trou noir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "télescope",
+          "options": [
+            "télescope",
+            "orbite",
+            "constellation",
+            "nébuleuse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "galaxie",
+          "options": [
+            "galaxie",
+            "astéroïde",
+            "gravité",
+            "éclipse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "trou noir",
+          "options": [
+            "trou noir",
+            "supernova",
+            "navette",
+            "apesanteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "orbite",
+          "options": [
+            "orbite",
+            "cosmos",
+            "astronomie",
+            "télescope"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "constellation",
+          "options": [
+            "constellation",
+            "galaxie",
+            "trou noir",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "nébuleuse",
+          "options": [
+            "nébuleuse",
+            "astéroïde",
+            "gravité",
+            "éclipse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "astéroïde",
+          "options": [
+            "astéroïde",
+            "supernova",
+            "navette",
+            "apesanteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "gravité",
+          "options": [
+            "gravité",
+            "cosmos",
+            "astronomie",
+            "télescope"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "éclipse",
+          "options": [
+            "éclipse",
+            "galaxie",
+            "trou noir",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "supernova",
+          "options": [
+            "supernova",
+            "astéroïde",
+            "gravité",
+            "éclipse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "navette",
+          "options": [
+            "navette",
+            "apesanteur",
+            "cosmos",
+            "astronomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "apesanteur",
+          "options": [
+            "apesanteur",
+            "télescope",
+            "galaxie",
+            "trou noir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "cosmos",
+          "options": [
+            "cosmos",
+            "orbite",
+            "constellation",
+            "nébuleuse"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'horizon des événements",
+      "inspiration": "Interstellar (Christopher Nolan, 2014)",
+      "text": "À peine Cooper eut-il franchi l'horizon des événements que les lois de la physique s'effondrèrent autour de sa {{BLANK_12}} blessée. Ce fermier qui rêvait d'{{BLANK_1}} se retrouvait désormais prisonnier du {{BLANK_14}}, avalé par la gueule vorace d'un {{BLANK_4}} titanesque. Dehors, la {{BLANK_3}} spirale se tordait sous l'effet d'une {{BLANK_9}} si monstrueuse qu'elle broyait le temps lui-même. Il se souvenait des nuits passées sur Terre, à pointer son vieux {{BLANK_2}} vers une {{BLANK_6}} familière, ignorant qu'il finirait par naviguer à travers une {{BLANK_7}} de poussières stellaires. Son vaisseau, mis en {{BLANK_5}} stable, avait frôlé un {{BLANK_8}} errant avant d'assister à l'agonie flamboyante d'une {{BLANK_11}}. Ici, dans le silence absolu, il flottait en {{BLANK_13}}, privé de haut et de bas, regardant à travers le hublot une {{BLANK_10}} éternelle où la lumière mourait. Il comprit alors que la science n'était qu'une boussole, et que seul l'amour pouvait tracer une ligne droite à travers l'immensité glacée de l'univers.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "astronomie",
+          "options": [
+            "astronomie",
+            "télescope",
+            "galaxie",
+            "trou noir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "télescope",
+          "options": [
+            "télescope",
+            "orbite",
+            "constellation",
+            "nébuleuse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "galaxie",
+          "options": [
+            "galaxie",
+            "astéroïde",
+            "gravité",
+            "éclipse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "trou noir",
+          "options": [
+            "trou noir",
+            "supernova",
+            "navette",
+            "apesanteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "orbite",
+          "options": [
+            "orbite",
+            "cosmos",
+            "astronomie",
+            "télescope"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "constellation",
+          "options": [
+            "constellation",
+            "galaxie",
+            "trou noir",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "nébuleuse",
+          "options": [
+            "nébuleuse",
+            "astéroïde",
+            "gravité",
+            "éclipse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "astéroïde",
+          "options": [
+            "astéroïde",
+            "supernova",
+            "navette",
+            "apesanteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "gravité",
+          "options": [
+            "gravité",
+            "cosmos",
+            "astronomie",
+            "télescope"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "éclipse",
+          "options": [
+            "éclipse",
+            "galaxie",
+            "trou noir",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "supernova",
+          "options": [
+            "supernova",
+            "astéroïde",
+            "gravité",
+            "éclipse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "navette",
+          "options": [
+            "navette",
+            "apesanteur",
+            "cosmos",
+            "astronomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "apesanteur",
+          "options": [
+            "apesanteur",
+            "télescope",
+            "galaxie",
+            "trou noir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "cosmos",
+          "options": [
+            "cosmos",
+            "orbite",
+            "constellation",
+            "nébuleuse"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Astronomie et espace",
+    "title_fa": "آزمون : نجوم و فضا",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie les astres, leur mouvement et leur nature est l'____.",
+        "options": [
+          "astronomie",
+          "télescope",
+          "galaxie",
+          "trou noir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه ستارگان و اجرام آسمانی = astronomie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument optique puissant qui permet d'observer les objets célestes lointains est le ____.",
+        "options": [
+          "télescope",
+          "orbite",
+          "constellation",
+          "nébuleuse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار نوری رصد آسمان = télescope."
+      },
+      {
+        "type": "mcq",
+        "question": "Le gigantesque ensemble d'étoiles, de gaz et de poussières liés par la gravitation est la ____.",
+        "options": [
+          "galaxie",
+          "astéroïde",
+          "gravité",
+          "éclipse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه عظیم ستارگان و گازها = galaxie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objet céleste extrêmement dense dont la gravité est si forte que même la lumière ne peut s'en échapper est le ____.",
+        "options": [
+          "trou noir",
+          "supernova",
+          "navette",
+          "apesanteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جرم آسمانی با جاذبه بسیار قوی = trou noir."
+      },
+      {
+        "type": "mcq",
+        "question": "La trajectoire courbe et périodique qu'un corps céleste suit autour d'un autre sous l'effet de la gravité est l'____.",
+        "options": [
+          "orbite",
+          "cosmos",
+          "astronomie",
+          "télescope"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسیر چرخشی یک جرم آسمانی = orbite."
+      },
+      {
+        "type": "mcq",
+        "question": "Le groupe apparent d'étoiles qui forme une figure imaginaire dans le ciel nocturne est la ____.",
+        "options": [
+          "constellation",
+          "galaxie",
+          "trou noir",
+          "orbite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گروه ستارگان شکل‌دهنده یک شکل = constellation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le vaste nuage de gaz et de poussières interstellaires où naissent souvent les étoiles est la ____.",
+        "options": [
+          "nébuleuse",
+          "astéroïde",
+          "gravité",
+          "éclipse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابر عظیم گاز و غبار میان‌ستاره‌ای = nébuleuse."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit corps rocheux du système solaire qui croise parfois l'orbite de la Terre est l'____.",
+        "options": [
+          "astéroïde",
+          "supernova",
+          "navette",
+          "apesanteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جرم سنگی کوچک در فضا = astéroïde."
+      },
+      {
+        "type": "mcq",
+        "question": "La force d'attraction universelle qui maintient les planètes en orbite et les objets au sol est la ____.",
+        "options": [
+          "gravité",
+          "cosmos",
+          "astronomie",
+          "télescope"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نیروی جاذبه جهانی = gravité."
+      },
+      {
+        "type": "mcq",
+        "question": "Le phénomène astronomique où un astre masque temporairement la lumière d'un autre est l'____.",
+        "options": [
+          "éclipse",
+          "galaxie",
+          "trou noir",
+          "orbite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پدیده پنهان شدن نور یک جرم = éclipse."
+      },
+      {
+        "type": "mcq",
+        "question": "L'explosion cataclysmique et très lumineuse qui marque la fin de vie d'une étoile massive est la ____.",
+        "options": [
+          "supernova",
+          "astéroïde",
+          "gravité",
+          "éclipse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انفجار عظیم پایان عمر ستاره = supernova."
+      },
+      {
+        "type": "mcq",
+        "question": "Le véhicule spatial conçu pour transporter un équipage et du matériel en orbite terrestre est la ____.",
+        "options": [
+          "navette",
+          "apesanteur",
+          "cosmos",
+          "astronomie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خودروی فضایی حمل خدمه = navette."
+      },
+      {
+        "type": "mcq",
+        "question": "L'état dans lequel se trouve un corps qui ne subit plus les effets de la pesanteur est l'____.",
+        "options": [
+          "apesanteur",
+          "télescope",
+          "galaxie",
+          "trou noir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حالت بدون جاذبه = apesanteur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le terme poétique et philosophique qui désigne l'univers dans son ensemble et son ordre est le ____.",
+        "options": [
+          "cosmos",
+          "orbite",
+          "constellation",
+          "nébuleuse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جهان به عنوان یک کل منظم = cosmos."
+      },
+      {
+        "type": "binary",
+        "question": "Une nébuleuse est un trou noir qui absorbe toute la lumière environnante.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سحابی (nébuleuse) ابری از گاز و غبار است که اغلب محل تولد ستارگان است، نه سیاه‌چاله."
+      },
+      {
+        "type": "binary",
+        "question": "L'apesanteur est l'état d'un corps qui semble privé de poids, comme les astronautes en orbite.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بی‌وزنی (apesanteur) حالتی است که اجرام در سقوط آزاد یا مدار احساس وزن نمی‌کنند."
+      },
+      {
+        "type": "binary",
+        "question": "Une constellation est un groupe d'étoiles physiquement très proches les unes des autres dans l'espace.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. صورت فلکی (constellation) فقط از دید ناظر زمینی نزدیک به هم به نظر می‌رسند، اما در فضا فاصله زیادی دارند."
+      },
+      {
+        "type": "binary",
+        "question": "Une supernova est l'explosion finale et très brillante d'une étoile arrivée en fin de vie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ابرنواختر (supernova) انفجار ستاره‌های پرجرم در پایان عمرشان است."
+      },
+      {
+        "type": "binary",
+        "question": "La gravité est la force de répulsion qui éloigne les galaxies les unes des autres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. جاذبه (gravité) نیروی جذب و کشش است، نه دفع."
+      },
+      {
+        "type": "binary",
+        "question": "Une éclipse solaire se produit quand la Lune passe entre le Soleil et la Terre, cachant la lumière.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. در کسوف (éclipse solaire) ماه بین زمین و خورشید قرار می‌گیرد."
+      }
+    ]
+  }
+}
