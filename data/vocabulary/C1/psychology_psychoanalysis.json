@@ -1,0 +1,680 @@
+{
+  "id": "psychology_psychoanalysis",
+  "level": "C1",
+  "theme": "Psychanalyse, inconscient et psychologie profonde",
+  "theme_fa": "روانکاوی، ناخودآگاه و روان‌شناسی عمقی",
+  "icon": "🧠",
+  "inspiration": "Une méthode dangereuse (A Dangerous Method - David Cronenberg, 2011)",
+  "words": [
+    {
+      "fr": "l'inconscient",
+      "fa": "ناخودآگاه",
+      "emoji": "🌑",
+      "difficulty": 4,
+      "ex": "Freud a révolutionné la médecine en explorant l'inconscient.",
+      "ex_fa": "فروید با کاوش ناخودآگاه، پزشکی را متحول کرد."
+    },
+    {
+      "fr": "le rêve",
+      "fa": "رویا، خواب",
+      "emoji": "💭",
+      "difficulty": 3,
+      "ex": "Le rêve est considéré comme la voie royale vers l'inconscient.",
+      "ex_fa": "رویا به عنوان شاهراهی به سوی ناخودآگاه در نظر گرفته می‌شود."
+    },
+    {
+      "fr": "le refoulement",
+      "fa": "سرکوب (روانی)",
+      "emoji": "📦",
+      "difficulty": 5,
+      "ex": "Le refoulement des souvenirs douloureux peut causer des symptômes physiques.",
+      "ex_fa": "سرکوب خاطرات دردناک می‌تواند باعث علائم جسمی شود."
+    },
+    {
+      "fr": "le lapsus",
+      "fa": "لغزش زبانی (سکته کلامی)",
+      "emoji": "🗣️",
+      "difficulty": 5,
+      "ex": "Ce lapsus révélateur a trahi ses véritables sentiments.",
+      "ex_fa": "این لغزش زبانی آشکارکننده، احساسات واقعی او را لو داد."
+    },
+    {
+      "fr": "la névrose",
+      "fa": "روان‌رنجوری، نوروز",
+      "emoji": "🌀",
+      "difficulty": 5,
+      "ex": "La névrose obsessionnelle se manifeste par des rituels répétitifs.",
+      "ex_fa": "روان‌رنجوری وسواسی خود را با آیین‌های تکراری نشان می‌دهد."
+    },
+    {
+      "fr": "le complexe",
+      "fa": "عقده روانی",
+      "emoji": "🔗",
+      "difficulty": 4,
+      "ex": "Le complexe d'Œdipe est un concept central de la théorie freudienne.",
+      "ex_fa": "عقده اُدیپ یک مفهوم مرکزی در نظریه فرویدی است."
+    },
+    {
+      "fr": "le traumatisme",
+      "fa": "تروما، ضربه روانی",
+      "emoji": "⚡",
+      "difficulty": 4,
+      "ex": "Le traumatisme de l'enfance a façonné sa personnalité d'adulte.",
+      "ex_fa": "ترومای کودکی، شخصیت بزرگسالی او را شکل داد."
+    },
+    {
+      "fr": "l'association libre",
+      "fa": "تداعی آزاد",
+      "emoji": "🔀",
+      "difficulty": 5,
+      "ex": "Le patient pratique l'association libre en disant tout ce qui lui passe par la tête.",
+      "ex_fa": "بیمار با گفتن هرچه به ذهنش می‌رسد، تداعی آزاد را تمرین می‌کند."
+    },
+    {
+      "fr": "le divan",
+      "fa": "مبل راحتی روانکاوی",
+      "emoji": "🛋️",
+      "difficulty": 4,
+      "ex": "Allongé sur le divan, le patient ne voit pas le visage du thérapeute.",
+      "ex_fa": "بیمار درازکشیده روی مبل، چهره درمانگر را نمی‌بیند."
+    },
+    {
+      "fr": "le psychanalyste",
+      "fa": "روانکاو",
+      "emoji": "👨‍⚕️",
+      "difficulty": 4,
+      "ex": "Le psychanalyste écoute en silence et interprète les silences.",
+      "ex_fa": "روانکاو در سکوت گوش می‌دهد و سکوت‌ها را تفسیر می‌کند."
+    },
+    {
+      "fr": "l'ego",
+      "fa": "ایگو، خود",
+      "emoji": "🪞",
+      "difficulty": 4,
+      "ex": "L'ego tente de trouver un compromis entre les désirs et la réalité.",
+      "ex_fa": "ایگو تلاش می‌کند بین امیال و واقعیت مصالحه کند."
+    },
+    {
+      "fr": "le déni",
+      "fa": "انکار (مکانیسم دفاعی)",
+      "emoji": "🙈",
+      "difficulty": 4,
+      "ex": "Le déni de la maladie est fréquent lors de l'annonce du diagnostic.",
+      "ex_fa": "انکار بیماری هنگام اعلام تشخیص شایع است."
+    },
+    {
+      "fr": "la catharsis",
+      "fa": "کاتارسیس، تخلیه هیجانی",
+      "emoji": "🌧️",
+      "difficulty": 5,
+      "ex": "La catharsis permet au patient de libérer une émotion longtemps bloquée.",
+      "ex_fa": "کاتارسیس به بیمار اجازه می‌دهد هیجانی را که مدت‌ها مسدود شده آزاد کند."
+    },
+    {
+      "fr": "la pulsion",
+      "fa": "تکانه، غریزه درونی",
+      "emoji": "🔥",
+      "difficulty": 5,
+      "ex": "La pulsion de mort s'oppose à la pulsion de vie dans la théorie freudienne.",
+      "ex_fa": "تکانه مرگ در نظریه فرویدی در برابر تکانه زندگی قرار می‌گیرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La naissance d'une méthode",
+      "text": "Sabina Spielrein arrive à Zurich en 1904 pour être soignée par le jeune {{BLANK_10}}, Carl Jung. Elle souffre d'une {{BLANK_5}} sévère liée à un {{BLANK_7}} d'enfance non résolu. Jung l'installe sur le {{BLANK_9}} et lui demande de pratiquer l'{{BLANK_8}}, sans cacher aucune pensée. À travers l'analyse de chaque {{BLANK_2}}, ils découvrent des désirs cachés. Jung remarque qu'un simple {{BLANK_4}} de sa patiente révèle souvent plus de vérité qu'un long discours. Il comprend que son {{BLANK_11}} utilise le {{BLANK_12}} pour se protéger des souvenirs insupportables. Ce mécanisme de {{BLANK_3}} maintient la douleur dans l'{{BLANK_1}}. Ensemble, ils explorent le {{BLANK_6}} d'Œdipe et les forces obscures de la {{BLANK_14}} qui poussent les humains à agir. Sabina finit par vivre une profonde {{BLANK_13}} en pleurant des larmes de libération. Guérie, elle décide de devenir elle-même médecin pour explorer les mystères de l'esprit humain.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "inconscient",
+          "options": [
+            "inconscient",
+            "rêve",
+            "ego",
+            "catharsis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "rêve",
+          "options": [
+            "rêve",
+            "lapsus",
+            "complexe",
+            "pulsion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "refoulement",
+          "options": [
+            "refoulement",
+            "dén",
+            "névrose",
+            "divan"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "lapsus",
+          "options": [
+            "lapsus",
+            "traumatisme",
+            "association libre",
+            "psychanalyste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "névrose",
+          "options": [
+            "névrose",
+            "catharsis",
+            "pulsion",
+            "refoulement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "complexe",
+          "options": [
+            "complexe",
+            "ego",
+            "déni",
+            "rêve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "traumatisme",
+          "options": [
+            "traumatisme",
+            "lapsus",
+            "inconscient",
+            "névrose"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "association libre",
+          "options": [
+            "association libre",
+            "catharsis",
+            "pulsion",
+            "refoulement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "divan",
+          "options": [
+            "divan",
+            "complexe",
+            "déni",
+            "traumatisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "psychanalyste",
+          "options": [
+            "psychanalyste",
+            "ego",
+            "lapsus",
+            "rêve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "ego",
+          "options": [
+            "ego",
+            "inconscient",
+            "divan",
+            "névrose"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "déni",
+          "options": [
+            "déni",
+            "complexe",
+            "association libre",
+            "catharsis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "catharsis",
+          "options": [
+            "catharsis",
+            "pulsion",
+            "refoulement",
+            "lapsus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "pulsion",
+          "options": [
+            "pulsion",
+            "traumatisme",
+            "déni",
+            "ego"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les ombres de l'âme",
+      "inspiration": "Une méthode dangereuse (A Dangerous Method - David Cronenberg, 2011)",
+      "text": "À peine Sabina Spielrein eut-elle franchi le seuil du Burghölzli qu'elle comprit que son esprit brisé allait devenir le laboratoire d'une révolution silencieuse. Le jeune {{BLANK_10}} Carl Jung, fasciné par les théories naissantes de Vienne, vit en cette jeune Russe hurlante et convulsée bien plus qu'une simple hystérique. Il l'allongea sur le {{BLANK_9}} de cuir usé, détournant le regard pour laisser l'{{BLANK_1}} de la patiente parler sans le filtre de la honte. Il lui demanda de s'abandonner à l'{{BLANK_8}}, laissant les mots couler comme une rivière souterraine, charriant les boues d'un {{BLANK_7}} d'enfance enfoui sous des années de silence. Chaque nuit, Sabina notait chaque {{BLANK_2}}, ces lettres chiffrées que le cerveau envoie pour tromper la censure de l'éveil. Jung décelait le sens caché derrière le moindre {{BLANK_4}}, cette langue qui fourche quand la vérité cherche à s'échapper. Il comprit que son {{BLANK_11}}, ce gardien épuisé, érigeait le {{BLANK_12}} comme une forteresse contre la douleur, utilisant le {{BLANK_3}} pour jeter les souvenirs insupportables dans les oubliettes de la mémoire. Mais la {{BLANK_5}} de Sabina résistait, tissant des toiles d'angoisse autour de son {{BLANK_6}} paternel non résolu. Sous la surface polie de la conscience, la {{BLANK_14}} grondait, cette force aveugle et primitive qui dicte nos destins à notre insu. Un jour d'orage, en racontant l'innommable, Sabina connut enfin la {{BLANK_13}} violente qui lava son âme de ses fantômes. Elle ne fut plus seulement une patiente guérie, mais une pionnière qui plongerait à son tour dans les abysses pour y pêcher les monstres des autres.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "inconscient",
+          "options": [
+            "inconscient",
+            "rêve",
+            "ego",
+            "catharsis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "rêve",
+          "options": [
+            "rêve",
+            "lapsus",
+            "complexe",
+            "pulsion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "refoulement",
+          "options": [
+            "refoulement",
+            "déni",
+            "névrose",
+            "divan"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "lapsus",
+          "options": [
+            "lapsus",
+            "traumatisme",
+            "association libre",
+            "psychanalyste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "névrose",
+          "options": [
+            "névrose",
+            "catharsis",
+            "pulsion",
+            "refoulement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "complexe",
+          "options": [
+            "complexe",
+            "ego",
+            "déni",
+            "rêve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "traumatisme",
+          "options": [
+            "traumatisme",
+            "lapsus",
+            "inconscient",
+            "névrose"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "association libre",
+          "options": [
+            "association libre",
+            "catharsis",
+            "pulsion",
+            "refoulement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "divan",
+          "options": [
+            "divan",
+            "complexe",
+            "déni",
+            "traumatisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "psychanalyste",
+          "options": [
+            "psychanalyste",
+            "ego",
+            "lapsus",
+            "rêve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "ego",
+          "options": [
+            "ego",
+            "inconscient",
+            "divan",
+            "névrose"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "déni",
+          "options": [
+            "déni",
+            "complexe",
+            "association libre",
+            "catharsis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "catharsis",
+          "options": [
+            "catharsis",
+            "pulsion",
+            "refoulement",
+            "lapsus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "pulsion",
+          "options": [
+            "pulsion",
+            "traumatisme",
+            "déni",
+            "ego"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Psychanalyse et inconscient",
+    "title_fa": "آزمون : روانکاوی و ناخودآگاه",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La partie de l'esprit humain qui contient les pensées, les souvenirs et les désirs inaccessibles à la conscience est l'____.",
+        "options": [
+          "inconscient",
+          "rêve",
+          "ego",
+          "catharsis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخشی از ذهن که دور از دسترس آگاهی است = inconscient."
+      },
+      {
+        "type": "mcq",
+        "question": "La succession d'images et de pensées qui se produisent pendant le sommeil et qui révèlent souvent des désirs cachés est le ____.",
+        "options": [
+          "rêve",
+          "lapsus",
+          "complexe",
+          "pulsion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تصاویر و افکار هنگام خواب = rêve."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mécanisme de défense qui consiste à rejeter hors de la conscience des idées ou des souvenirs douloureux est le ____.",
+        "options": [
+          "refoulement",
+          "déni",
+          "névrose",
+          "divan"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانیسم بیرون راندن خاطرات دردناک از آگاهی = refoulement."
+      },
+      {
+        "type": "mcq",
+        "question": "L'erreur de langage involontaire qui trahit une pensée ou un désir caché est le ____.",
+        "options": [
+          "lapsus",
+          "traumatisme",
+          "association libre",
+          "psychanalyste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خطای کلامی که راز درون را فاش می‌کند = lapsus."
+      },
+      {
+        "type": "mcq",
+        "question": "Le trouble psychique caractérisé par de l'anxiété, des obsessions ou des phobies, sans perte de contact avec la réalité, est la ____.",
+        "options": [
+          "névrose",
+          "catharsis",
+          "pulsion",
+          "refoulement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اختلال روانی شامل اضطراب و وسواس = névrose."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble organisé de représentations et de souvenirs émotionnels refoulés, comme celui d'Œdipe, est le ____.",
+        "options": [
+          "complexe",
+          "ego",
+          "déni",
+          "rêve"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه خاطرات و احساسات سرکوب‌شده (عقده) = complexe."
+      },
+      {
+        "type": "mcq",
+        "question": "Le choc émotionnel violent causé par un événement blessant qui laisse des traces durables dans le psychisme est le ____.",
+        "options": [
+          "traumatisme",
+          "lapsus",
+          "inconscient",
+          "névrose"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضربه شدید عاطفی و روانی = traumatisme."
+      },
+      {
+        "type": "mcq",
+        "question": "La méthode psychanalytique fondamentale qui consiste à exprimer sans censure toutes les pensées qui viennent à l'esprit est l'____.",
+        "options": [
+          "association libre",
+          "catharsis",
+          "pulsion",
+          "refoulement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بیان آزادانه افکار بدون سانسور = association libre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le meuble sur lequel le patient s'allonge pendant la cure psychanalytique pour favoriser la régression et la parole est le ____.",
+        "options": [
+          "divan",
+          "complexe",
+          "déni",
+          "traumatisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مبل درازکشیدن بیمار در روانکاوی = divan."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel de la santé mentale formé à la théorie et à la pratique de l'exploration de l'inconscient est le ____.",
+        "options": [
+          "psychanalyste",
+          "ego",
+          "lapsus",
+          "rêve"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص کاوش ناخودآگاه = psychanalyste."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instance psychique qui tente de concilier les exigences de la réalité, les pulsions et la morale est l'____.",
+        "options": [
+          "ego",
+          "inconscient",
+          "divan",
+          "névrose"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش میانجی روان بین واقعیت و امیال = ego."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mécanisme de défense par lequel une personne refuse de reconnaître une réalité perçue comme menaçante est le ____.",
+        "options": [
+          "déni",
+          "complexe",
+          "association libre",
+          "catharsis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "امتناع از پذیرش واقعیت تهدیدکننده = déni."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus de libération des émotions refoulées qui apporte un soulagement psychologique profond est la ____.",
+        "options": [
+          "catharsis",
+          "pulsion",
+          "refoulement",
+          "lapsus"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تخلیه هیجانی و آرامش روانی = catharsis."
+      },
+      {
+        "type": "mcq",
+        "question": "La force énergétique interne, d'origine biologique, qui pousse l'individu à agir pour satisfaire un besoin est la ____.",
+        "options": [
+          "pulsion",
+          "traumatisme",
+          "déni",
+          "ego"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نیروی درونی و غریزی برای عمل = pulsion."
+      },
+      {
+        "type": "binary",
+        "question": "Le lapsus et le déni désignent tous deux des erreurs involontaires de prononciation.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. lapsus خطای کلامی است، اما déni یک مکانیسم دفاعی برای انکار واقعیت است."
+      },
+      {
+        "type": "binary",
+        "question": "L'association libre est une technique où le patient dit tout ce qui lui passe par la tête sans essayer de censurer ses pensées.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تداعی آزاد یعنی بیان افکار بدون هیچ‌گونه سانسور درونی."
+      },
+      {
+        "type": "binary",
+        "question": "Le refoulement consiste à oublier volontairement et consciemment un souvenir désagréable.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سرکوب (refoulement) یک فرآیند ناخودآگاه است، نه فراموشی عمدی و آگاهانه."
+      },
+      {
+        "type": "binary",
+        "question": "La catharsis est un phénomène de libération émotionnelle qui procure un effet apaisant au patient.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کاتارسیس تخلیه هیجانی است که به آرامش بیمار منجر می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le psychanalyste dirige la séance en posant de nombreuses questions fermées pour orienter le patient.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. روانکاو بیشتر گوش می‌دهد و تفسیر می‌کند و از هدایت مستقیم و سوالات بسته پرهیز می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le complexe d'Œdipe est un concept fondamental en psychanalyse concernant les désirs infantiles envers les parents.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. عقده اُدیپ مفهومی پایه‌ای درباره امیال کودکی نسبت به والدین است."
+      }
+    ]
+  }
+}
