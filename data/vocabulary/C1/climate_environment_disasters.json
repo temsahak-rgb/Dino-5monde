@@ -1,0 +1,714 @@
+{
+  "id": "climate_environment_disasters",
+  "level": "C1",
+  "theme": "Environnement, climat et catastrophes naturelles",
+  "theme_fa": "محیط زیست، آب و هوا و بلایای طبیعی",
+  "icon": "🌍",
+  "inspiration": "Don't Look Up (Adam McKay, 2021)",
+  "words": [
+    {
+      "fr": "le réchauffement climatique",
+      "fa": "گرمایش جهانی",
+      "emoji": "🌡️",
+      "difficulty": 4,
+      "ex": "Le réchauffement climatique menace les écosystèmes côtiers.",
+      "ex_fa": "گرمایش جهانی اکوسیستم‌های ساحلی را تهدید می‌کند."
+    },
+    {
+      "fr": "la déforestation",
+      "fa": "جنگل‌زدایی",
+      "emoji": "🪓",
+      "difficulty": 4,
+      "ex": "La déforestation amazonienne s'accélère chaque année.",
+      "ex_fa": "جنگل‌زدایی آمازون هر سال شتاب می‌گیرد."
+    },
+    {
+      "fr": "la sécheresse",
+      "fa": "خشکسالی",
+      "emoji": "🏜️",
+      "difficulty": 3,
+      "ex": "La sécheresse prolongée a détruit les récoltes.",
+      "ex_fa": "خشکسالی طولانی‌مدت محصولات را نابود کرد."
+    },
+    {
+      "fr": "l'inondation",
+      "fa": "سیل",
+      "emoji": "🌊",
+      "difficulty": 3,
+      "ex": "L'inondation a submergé plusieurs quartiers de la ville.",
+      "ex_fa": "سیل چندین محله شهر را زیر آب برد."
+    },
+    {
+      "fr": "le tsunami",
+      "fa": "سونامی",
+      "emoji": "🌊",
+      "difficulty": 3,
+      "ex": "Le tsunami de 2004 a dévasté les côtes de l'océan Indien.",
+      "ex_fa": "سونامی ۲۰۰۴ سواحل اقیانوس هند را ویران کرد."
+    },
+    {
+      "fr": "l'ouragan",
+      "fa": "طوفان تندری",
+      "emoji": "🌪️",
+      "difficulty": 4,
+      "ex": "L'ouragan a frappé la Floride avec des vents de 250 km/h.",
+      "ex_fa": "طوفان تندری با بادهای ۲۵۰ کیلومتر بر ساعت به فلوریدا برخورد کرد."
+    },
+    {
+      "fr": "la canicule",
+      "fa": "موج گرما",
+      "emoji": "☀️",
+      "difficulty": 4,
+      "ex": "La canicule de l'été 2003 a causé des milliers de décès.",
+      "ex_fa": "موج گرمای تابستان ۲۰۰۳ هزاران کشته بر جای گذاشت."
+    },
+    {
+      "fr": "la fonte des glaces",
+      "fa": "ذوب یخ‌ها",
+      "emoji": "🧊",
+      "difficulty": 4,
+      "ex": "La fonte des glaces arctiques accélère la montée des eaux.",
+      "ex_fa": "ذوب یخ‌های قطب شمال، بالا آمدن سطح آب‌ها را تسریع می‌کند."
+    },
+    {
+      "fr": "l'effet de serre",
+      "fa": "اثر گلخانه‌ای",
+      "emoji": "🏠",
+      "difficulty": 4,
+      "ex": "L'effet de serre est un phénomène naturel amplifié par l'homme.",
+      "ex_fa": "اثر گلخانه‌ای پدیده‌ای طبیعی است که توسط انسان تشدید شده است."
+    },
+    {
+      "fr": "la couche d'ozone",
+      "fa": "لایه ازون",
+      "emoji": "🛡️",
+      "difficulty": 4,
+      "ex": "La couche d'ozone nous protège des rayons ultraviolets.",
+      "ex_fa": "لایه ازون ما را از اشعه‌های فرابنفش محافظت می‌کند."
+    },
+    {
+      "fr": "le smog",
+      "fa": "مه‌دود",
+      "emoji": "🌫️",
+      "difficulty": 4,
+      "ex": "Le smog de Pékin atteint des niveaux dangereux en hiver.",
+      "ex_fa": "مه‌دود پکن در زمستان به سطوح خطرناکی می‌رسد."
+    },
+    {
+      "fr": "la désertification",
+      "fa": "بیابان‌زایی",
+      "emoji": "🏜️",
+      "difficulty": 5,
+      "ex": "La désertification progresse dans le Sahel africain.",
+      "ex_fa": "بیابان‌زایی در ساحل آفریقا در حال پیشرفت است."
+    },
+    {
+      "fr": "l'érosion",
+      "fa": "فرسایش",
+      "emoji": "🏞️",
+      "difficulty": 4,
+      "ex": "L'érosion côtière menace les habitations en Bretagne.",
+      "ex_fa": "فرسایش ساحلی خانه‌های برتانی را تهدید می‌کند."
+    },
+    {
+      "fr": "la biodiversité",
+      "fa": "تنوع زیستی",
+      "emoji": "🦋",
+      "difficulty": 4,
+      "ex": "La biodiversité marine est essentielle à l'équilibre planétaire.",
+      "ex_fa": "تنوع زیستی دریایی برای تعادل سیاره ضروری است."
+    },
+    {
+      "fr": "le méthane",
+      "fa": "متان (گاز گلخانه‌ای)",
+      "emoji": "💨",
+      "difficulty": 4,
+      "ex": "Le méthane est un gaz à effet de serre très puissant.",
+      "ex_fa": "متان یک گاز گلخانه‌ای بسیار قوی است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'alerte des scientifiques",
+      "title_fa": "هشدار دانشمندان",
+      "text": "Le Dr Mindy et Kate Dibiansky découvrent qu'une comète se dirige vers la Terre. Ils avertissent le président, mais personne ne les écoute. Pendant ce temps, le monde continue de subir le {{BLANK_1}} qui provoque la {{BLANK_2}} en Amazonie et la {{BLANK_3}} en Afrique. En Asie, une {{BLANK_4}} sans précédent submerge les rizières, tandis qu'un {{BLANK_5}} dévaste les côtes du Pacifique. L'{{BLANK_6}} frappe la Floride, causant des milliards de dégâts. En Europe, une {{BLANK_7}} mortelle tue des milliers de personnes âgées. Pendant ce temps, la {{BLANK_8}} accélère la montée du niveau de la mer, menaçant les îles du Pacifique. L'{{BLANK_9}} s'intensifie à cause des émissions industrielles, et la {{BLANK_10}} se reconstitue lentement grâce aux accords internationaux. Dans les grandes villes asiatiques, le {{BLANK_11}} rend l'air irrespirable en hiver. En Afrique, la {{BLANK_12}} transforme les terres fertiles en désert. L'{{BLANK_13}} des falaises côtières met en danger les villages de pêcheurs. Pourtant, les scientifiques s'inquiètent surtout pour la {{BLANK_14}} qui disparaît à un rythme alarmant. Ils découvrent que le {{BLANK_15}} libéré par le dégel du permafrost accélère encore le réchauffement. Mais comme la comète dans le film, leurs avertissements sont ignorés jusqu'à ce qu'il soit trop tard.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "réchauffement climatique",
+          "options": [
+            "réchauffement climatique",
+            "effet de serre",
+            "smog",
+            "méthane"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "déforestation",
+          "options": [
+            "déforestation",
+            "érosion",
+            "désertification",
+            "sécheresse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "désertification",
+          "options": [
+            "désertification",
+            "inondation",
+            "canicule",
+            "érosion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "inondation",
+          "options": [
+            "inondation",
+            "sécheresse",
+            "tsunami",
+            "ouragan"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "tsunami",
+          "options": [
+            "tsunami",
+            "ouragan",
+            "inondation",
+            "canicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "ouragan",
+          "options": [
+            "ouragan",
+            "tsunami",
+            "canicule",
+            "sécheresse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "canicule",
+          "options": [
+            "canicule",
+            "sécheresse",
+            "inondation",
+            "ouragan"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "fonte des glaces",
+          "options": [
+            "fonte des glaces",
+            "érosion",
+            "déforestation",
+            "désertification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "effet de serre",
+          "options": [
+            "effet de serre",
+            "couche d'ozone",
+            "smog",
+            "méthane"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "couche d'ozone",
+          "options": [
+            "couche d'ozone",
+            "biodiversité",
+            "érosion",
+            "smog"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "smog",
+          "options": [
+            "smog",
+            "méthane",
+            "effet de serre",
+            "érosion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "désertification",
+          "options": [
+            "désertification",
+            "déforestation",
+            "érosion",
+            "inondation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "érosion",
+          "options": [
+            "érosion",
+            "déforestation",
+            "désertification",
+            "fonte des glaces"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "biodiversité",
+          "options": [
+            "biodiversité",
+            "couche d'ozone",
+            "érosion",
+            "smog"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "méthane",
+          "options": [
+            "méthane",
+            "smog",
+            "effet de serre",
+            "érosion"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La comète de l'indifférence",
+      "title_fa": "دنباله‌دار بی‌تفاوتی",
+      "inspiration": "Don't Look Up (Adam McKay, 2021)",
+      "text": "À peine le Dr Randall Mindy eut-il posé ses calculs sur le bureau présidentiel que l'incrédulité envahit la pièce ovale. Cette comète, grosse comme l'Everest, fonçait droit sur la Terre à la vitesse de la lumière, et personne, absolument personne, ne voulait lever les yeux pour la voir. C'était une métaphore parfaite de l'humanité face à sa propre extinction. Pendant que les scientifiques hurlaient leurs avertissements, le monde continuait sa course folle vers l'abîme. En Amazonie, la {{BLANK_1}} grignotait chaque jour l'équivalent de mille terrains de football, transformant le poumon de la planète en pâturages pour bétail. En Afrique, la {{BLANK_2}} avançait inexorablement, chassant les populations vers des villes déjà surpeuplées. Les agriculteurs du Midwest américain contemplaient leurs champs craquelés, victimes d'une {{BLANK_3}} sans précédent qui réduisait les récoltes à néant. En Asie du Sud-Est, une {{BLANK_4}} monstrueuse, amplifiée par la montée des eaux, engloutissait des villages entiers, emportant maisons et souvenirs dans un torrent boueux. Les côtes du Pacifique tremblaient encore du passage d'un {{BLANK_5}} qui avait rayé de la carte des îles paradisiaques. La Floride, elle, pansait ses plaies après le passage dévastateur d'un {{BLANK_6}} de catégorie 5, dont les vents avaient arraché les toits comme des feuilles mortes. En Europe, les maisons de retraite avaient vécu un été cauchemardesque, une {{BLANK_7}} qui avait fauché des milliers de vies fragiles, transformant les chambres climatisées en mouroirs silencieux. Pendant ce temps, aux pôles, la {{BLANK_8}} libérait des quantités colossales d'eau douce dans les océans, perturbant les courants marins qui régulaient le climat planétaire. Les scientifiques s'alarmaient de l'amplification de l'{{BLANK_9}}, cette couverture invisible qui étouffait lentement la Terre sous une chape de chaleur. Seule lueur d'espoir : la {{BLANK_10}}, grâce au Protocole de Montréal, montrait des signes de reconstitution, prouvant que l'humanité pouvait agir quand elle le décidait. Mais dans les mégalopoles asiatiques, le {{BLANK_11}} toxique continuait d'empoisonner les poumons de millions d'enfants, transformant le ciel en une soupe grisâtre où le soleil n'était plus qu'un souvenir. Les rives méditerranéennes, elles, voyaient leurs falaises s'effriter sous l'effet de l'{{BLANK_12}} millénaire, emportant dans la mer des maisons construites par des générations. Les biologistes pleuraient la disparition accélérée de la {{BLANK_13}}, cette tapisserie vivante tissée pendant des millions d'années et que l'homme défaisait en quelques décennies. Et comme pour aggraver l'équation apocalyptique, le {{BLANK_14}} prisonnier du permafrost sibérien se libérait par milliards de tonnes, accélérant encore la spirale infernale. Le Dr Mindy regarda par la fenêtre de la Maison-Blanche. Dans le ciel, invisible à l'œil nu mais inexorable dans sa trajectoire, la comète approchait. Comme le climat, elle était la conséquence d'une trajectoire commencée il y a longtemps, et comme lui, elle ne s'arrêterait pas parce qu'on refusait de la regarder. L'humanité avait choisi de détourner les yeux, de changer de chaîne, de scroller vers la prochaine vidéo amusante. Et pendant ce temps, la fin du monde approchait, silencieuse et certaine, comme une facture qu'on refuse d'ouvrir en sachant qu'elle finira par arriver. Le Dr Mindy éteignit son téléphone, but son café froid, et se demanda si quelque part, dans l'immensité cosmique, une autre civilisation avait fait les mêmes choix stupides, avait ignoré les mêmes signes avant-coureurs, avait préféré le confort immédiat à la survie à long terme. Peut-être que l'univers était jonché de planètes mortes, témoins silencieux de cette {{BLANK_15}} universelle qui poussait les êtres intelligents à détruire leur propre maison plutôt que de changer leurs habitudes.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "déforestation",
+          "options": [
+            "déforestation",
+            "érosion",
+            "désertification",
+            "sécheresse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "désertification",
+          "options": [
+            "désertification",
+            "inondation",
+            "canicule",
+            "érosion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "sécheresse",
+          "options": [
+            "sécheresse",
+            "inondation",
+            "tsunami",
+            "ouragan"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "inondation",
+          "options": [
+            "inondation",
+            "sécheresse",
+            "tsunami",
+            "ouragan"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "tsunami",
+          "options": [
+            "tsunami",
+            "ouragan",
+            "inondation",
+            "canicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "ouragan",
+          "options": [
+            "ouragan",
+            "tsunami",
+            "canicule",
+            "sécheresse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "canicule",
+          "options": [
+            "canicule",
+            "sécheresse",
+            "inondation",
+            "ouragan"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "fonte des glaces",
+          "options": [
+            "fonte des glaces",
+            "érosion",
+            "déforestation",
+            "désertification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "effet de serre",
+          "options": [
+            "effet de serre",
+            "couche d'ozone",
+            "smog",
+            "méthane"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "couche d'ozone",
+          "options": [
+            "couche d'ozone",
+            "biodiversité",
+            "érosion",
+            "smog"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "smog",
+          "options": [
+            "smog",
+            "méthane",
+            "effet de serre",
+            "érosion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "érosion",
+          "options": [
+            "érosion",
+            "déforestation",
+            "désertification",
+            "fonte des glaces"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "biodiversité",
+          "options": [
+            "biodiversité",
+            "couche d'ozone",
+            "érosion",
+            "smog"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "méthane",
+          "options": [
+            "méthane",
+            "smog",
+            "effet de serre",
+            "érosion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "réchauffement climatique",
+          "options": [
+            "réchauffement climatique",
+            "déforestation",
+            "érosion",
+            "désertification"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Environnement et catastrophes naturelles",
+    "title_fa": "آزمون : محیط زیست و بلایای طبیعی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'augmentation globale des températures terrestres due aux activités humaines s'appelle le ____.",
+        "options": [
+          "réchauffement climatique",
+          "effet de serre",
+          "smog",
+          "méthane"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "افزایش دمای کره زمین = réchauffement climatique."
+      },
+      {
+        "type": "mcq",
+        "question": "En Amazonie, on coupe des millions d'arbres chaque année pour créer des pâturages. Cette destruction massive s'appelle la ____.",
+        "options": [
+          "déforestation",
+          "érosion",
+          "désertification",
+          "sécheresse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قطع گسترده درختان = déforestation."
+      },
+      {
+        "type": "mcq",
+        "question": "Pendant plusieurs mois, aucune goutte de pluie ne tombe, les rivières s'assèchent et les cultures meurent. C'est une période de ____.",
+        "options": [
+          "sécheresse",
+          "inondation",
+          "canicule",
+          "érosion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره طولانی بدون بارندگی = sécheresse."
+      },
+      {
+        "type": "mcq",
+        "question": "Après trois jours de pluies torrentielles, la rivière sort de son lit et submerge les quartiers bas de la ville. C'est une ____.",
+        "options": [
+          "inondation",
+          "sécheresse",
+          "tsunami",
+          "ouragan"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زیر آب رفتن خشکی توسط آب = inondation."
+      },
+      {
+        "type": "mcq",
+        "question": "Un séisme sous-marin provoque une vague géante qui dévaste les côtes à des milliers de kilomètres. C'est un ____.",
+        "options": [
+          "tsunami",
+          "ouragan",
+          "inondation",
+          "canicule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "موج عظیم ناشی از زلزله دریایی = tsunami."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans les Caraïbes, une tempête tropicale avec des vents dépassant 200 km/h frappe les côtes. C'est un ____.",
+        "options": [
+          "ouragan",
+          "tsunami",
+          "canicule",
+          "sécheresse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طوفان استوایی با بادهای بسیار قوی = ouragan."
+      },
+      {
+        "type": "mcq",
+        "question": "Pendant deux semaines, les températures dépassent 40°C jour et nuit, causant de nombreux décès chez les personnes vulnérables. C'est une ____.",
+        "options": [
+          "canicule",
+          "sécheresse",
+          "inondation",
+          "ouragan"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره گرمای شدید و طولانی = canicule."
+      },
+      {
+        "type": "mcq",
+        "question": "En Arctique, les glaciers fondent à un rythme accéléré, contribuant à l'élévation du niveau des océans. C'est la ____.",
+        "options": [
+          "fonte des glaces",
+          "érosion",
+          "déforestation",
+          "désertification"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ذوب شدن یخچال‌های قطبی = fonte des glaces."
+      },
+      {
+        "type": "mcq",
+        "question": "Les gaz comme le CO2 piègent la chaleur du soleil dans l'atmosphère terrestre, créant un réchauffement. C'est l'____.",
+        "options": [
+          "effet de serre",
+          "couche d'ozone",
+          "smog",
+          "méthane"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پدیده حبس گرما در جو = effet de serre."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette couche atmosphérique filtre les rayons UV dangereux du soleil, protégeant la vie sur Terre. C'est la ____.",
+        "options": [
+          "couche d'ozone",
+          "biodiversité",
+          "érosion",
+          "smog"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لایه محافظ در برابر اشعه فرابنفش = couche d'ozone."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans les grandes villes industrielles d'Asie, un brouillard toxique mélangeant fumée et pollution rend l'air irrespirable. C'est le ____.",
+        "options": [
+          "smog",
+          "méthane",
+          "effet de serre",
+          "érosion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مه‌دود آلوده شهری = smog."
+      },
+      {
+        "type": "mcq",
+        "question": "Au Sahel, les terres autrefois fertiles se transforment progressivement en désert à cause du surpâturage et du climat. C'est la ____.",
+        "options": [
+          "désertification",
+          "déforestation",
+          "érosion",
+          "inondation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تبدیل زمین‌های حاصلخیز به بیابان = désertification."
+      },
+      {
+        "type": "mcq",
+        "question": "Les falaises de Normandie reculent chaque année de quelques centimètres sous l'action du vent et des vagues. C'est l'____.",
+        "options": [
+          "érosion",
+          "déforestation",
+          "désertification",
+          "fonte des glaces"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرسایش خاک و سنگ توسط عوامل طبیعی = érosion."
+      },
+      {
+        "type": "mcq",
+        "question": "Les récifs coralliens abritent des milliers d'espèces différentes de poissons, coraux et crustacés. Cette richesse s'appelle la ____.",
+        "options": [
+          "biodiversité",
+          "couche d'ozone",
+          "érosion",
+          "smog"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تنوع گونه‌های زنده در یک اکوسیستم = biodiversité."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce gaz, libéré par l'élevage bovin et le dégel du permafrost, est un puissant contributeur au réchauffement. C'est le ____.",
+        "options": [
+          "méthane",
+          "smog",
+          "effet de serre",
+          "érosion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گاز گلخانه‌ای قوی = méthane."
+      },
+      {
+        "type": "binary",
+        "question": "L'effet de serre est un phénomène entièrement artificiel créé par l'homme.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اثر گلخانه‌ای یک پدیده طبیعی است که حیات را ممکن می‌سازد، اما فعالیت انسانی آن را تشدید کرده است."
+      },
+      {
+        "type": "binary",
+        "question": "La couche d'ozone et l'effet de serre désignent exactement le même phénomène atmosphérique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. لایه ازون از اشعه UV محافظت می‌کند، اما اثر گلخانه‌ای گرما را حفظ می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Un tsunami est toujours provoqué par un séisme sous-marin.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سونامی می‌تواند ناشی از زلزله، آتشفشان یا رانش زمین زیر دریایی باشد."
+      },
+      {
+        "type": "binary",
+        "question": "La désertification peut être causée par des facteurs humains comme le surpâturage.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. چرای بیش از حد و جنگل‌زدایی از عوامل انسانی بیابان‌زایی هستند."
+      },
+      {
+        "type": "binary",
+        "question": "Le smog est un mélange de brouillard et de polluants atmosphériques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. smog ترکیبی از smoke (دود) و fog (مه) است."
+      }
+    ]
+  }
+}
