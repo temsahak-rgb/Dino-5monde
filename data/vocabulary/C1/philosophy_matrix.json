@@ -1,0 +1,680 @@
+{
+  "id": "philosophy_matrix",
+  "level": "C1",
+  "theme": "Philosophie, métaphysique et pensée abstraite",
+  "theme_fa": "فلسفه، متافیزیک و تفکر انتزاعی",
+  "icon": "🧠",
+  "inspiration": "Matrix (Lana & Lilly Wachowski, 1999)",
+  "words": [
+    {
+      "fr": "la philosophie",
+      "fa": "فلسفه",
+      "emoji": "🦉",
+      "difficulty": 3,
+      "ex": "La philosophie cherche à comprendre le sens de l'existence.",
+      "ex_fa": "فلسفه به دنبال درک معنای هستی است."
+    },
+    {
+      "fr": "la métaphysique",
+      "fa": "متافیزیک (مابعدالطبیعه)",
+      "emoji": "🌌",
+      "difficulty": 5,
+      "ex": "La métaphysique interroge la nature profonde de la réalité.",
+      "ex_fa": "متافیزیک، ماهیت عمیق واقعیت را به چالش می‌کشد."
+    },
+    {
+      "fr": "l'épistémologie",
+      "fa": "معرفت‌شناسی",
+      "emoji": "📚",
+      "difficulty": 5,
+      "ex": "L'épistémologie étudie les limites et la validité de la connaissance.",
+      "ex_fa": "معرفت‌شناسی حدود و اعتبار دانش را مطالعه می‌کند."
+    },
+    {
+      "fr": "le libre arbitre",
+      "fa": "اختیار، اراده آزاد",
+      "emoji": "🕊️",
+      "difficulty": 4,
+      "ex": "Le libre arbitre est la capacité de faire des choix sans contrainte.",
+      "ex_fa": "اختیار، توانایی انتخاب بدون اجبار است."
+    },
+    {
+      "fr": "le déterminisme",
+      "fa": "جبرگرایی",
+      "emoji": "⚙️",
+      "difficulty": 5,
+      "ex": "Le déterminisme affirme que chaque événement est la conséquence inévitable de causes antérieures.",
+      "ex_fa": "جبرگرایی تأکید می‌کند هر رویداد نتیجه اجتناب‌ناپذیر علل پیشین است."
+    },
+    {
+      "fr": "le paradoxe",
+      "fa": "پارادوکس، تناقض",
+      "emoji": "🔄",
+      "difficulty": 4,
+      "ex": "Ce paradoxe logique défie notre compréhension habituelle du temps.",
+      "ex_fa": "این پارادوکس منطقی، درک معمول ما از زمان را به چالش می‌کشد."
+    },
+    {
+      "fr": "l'allégorie",
+      "fa": "تمثیل",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "Le mythe de la caverne est une allégorie célèbre de Platon.",
+      "ex_fa": "اسطوره غار، تمثیل مشهوری از افلاطون است."
+    },
+    {
+      "fr": "le scepticisme",
+      "fa": "شکاکیت",
+      "emoji": "🤔",
+      "difficulty": 4,
+      "ex": "Le scepticisme philosophique remet en doute les certitudes absolues.",
+      "ex_fa": "شکاکیت فلسفی، یقین‌های مطلق را زیر سؤال می‌برد."
+    },
+    {
+      "fr": "le nihilisme",
+      "fa": "نهیلیسم، پوچ‌گرایی",
+      "emoji": "🕳️",
+      "difficulty": 5,
+      "ex": "Le nihilisme nie toute valeur morale ou sens à la vie.",
+      "ex_fa": "نهیلیسم هرگونه ارزش اخلاقی یا معنایی برای زندگی را انکار می‌کند."
+    },
+    {
+      "fr": "l'absurde",
+      "fa": "پوچی",
+      "emoji": "🎲",
+      "difficulty": 4,
+      "ex": "Camus a exploré le sentiment de l'absurde face à un monde silencieux.",
+      "ex_fa": "کامو احساس پوچی را در برابر جهانی خاموش کاوش کرد."
+    },
+    {
+      "fr": "la dialectique",
+      "fa": "دیالکتیک",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "La dialectique hégélienne oppose une thèse et une antithèse pour créer une synthèse.",
+      "ex_fa": "دیالکتیک هگلی، تز و آنتی‌تز را برای ایجاد سنتز در برابر هم قرار می‌دهد."
+    },
+    {
+      "fr": "l'utopie",
+      "fa": "آرمان‌شهر",
+      "emoji": "🏝️",
+      "difficulty": 4,
+      "ex": "L'utopie décrit une société idéale qui n'existe nulle part.",
+      "ex_fa": "آرمان‌شهر جامعه‌ای ایده‌آل را توصیف می‌کند که در هیچ‌کجا وجود ندارد."
+    },
+    {
+      "fr": "la transcendance",
+      "fa": "تعالی",
+      "emoji": "✨",
+      "difficulty": 5,
+      "ex": "La transcendance désigne ce qui dépasse les limites de l'expérience humaine.",
+      "ex_fa": "تعالی به چیزی اشاره دارد که از حدود تجربه انسانی فراتر می‌رود."
+    },
+    {
+      "fr": "l'illusion",
+      "fa": "توهم",
+      "emoji": "🪞",
+      "difficulty": 3,
+      "ex": "Nos sens nous plongent parfois dans une illusion trompeuse.",
+      "ex_fa": "حواس ما گاهی ما را در یک توهم فریبنده غرق می‌کنند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le choix de la pilule",
+      "text": "Thomas Anderson est un hacker en quête de vérité. Morpheus lui offre un choix fondamental qui oppose le {{BLANK_4}} au {{BLANK_5}}. S'il prend la pilule rouge, il devra étudier la {{BLANK_1}} et la {{BLANK_2}} de son existence pour comprendre ce qui est réel. S'il prend la bleue, il restera prisonnier de l'{{BLANK_14}} confortable. Thomas choisit la vérité et découvre que le monde n'est qu'une simulation, une parfaite {{BLANK_7}} moderne de la caverne de Platon. Face à ce {{BLANK_6}} terrifiant d'exister sans être vraiment vivant, certains esprits sombrent dans le {{BLANK_9}} ou l'{{BLANK_10}}, incapables de supporter la perte de toute {{BLANK_13}} spirituelle. Mais Thomas, par une {{BLANK_11}} interne rigoureuse, surmonte son {{BLANK_8}} initial. Il refuse d'accepter que les machines contrôlent son destin. Il se bat pour créer une {{BLANK_12}} de liberté, défiant ainsi l'{{BLANK_3}} artificielle imposée par les créateurs du système.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "philosophie",
+          "options": [
+            "philosophie",
+            "utopie",
+            "dialectique",
+            "absurde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "métaphysique",
+          "options": [
+            "métaphysique",
+            "illusion",
+            "nihilisme",
+            "scepticisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "épistémologie",
+          "options": [
+            "épistémologie",
+            "transcendance",
+            "allégorie",
+            "paradoxe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "libre arbitre",
+          "options": [
+            "libre arbitre",
+            "déterminisme",
+            "paradoxe",
+            "nihilisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "déterminisme",
+          "options": [
+            "déterminisme",
+            "libre arbitre",
+            "scepticisme",
+            "utopie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "paradoxe",
+          "options": [
+            "paradoxe",
+            "allégorie",
+            "absurde",
+            "philosophie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "allégorie",
+          "options": [
+            "allégorie",
+            "épistémologie",
+            "transcendance",
+            "dialectique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "scepticisme",
+          "options": [
+            "scepticisme",
+            "nihilisme",
+            "illusion",
+            "métaphysique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "nihilisme",
+          "options": [
+            "nihilisme",
+            "absurde",
+            "utopie",
+            "libre arbitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "absurde",
+          "options": [
+            "absurde",
+            "nihilisme",
+            "paradoxe",
+            "scepticisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "dialectique",
+          "options": [
+            "dialectique",
+            "philosophie",
+            "allégorie",
+            "illusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "utopie",
+          "options": [
+            "utopie",
+            "transcendance",
+            "métaphysique",
+            "épistémologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "transcendance",
+          "options": [
+            "transcendance",
+            "utopie",
+            "dialectique",
+            "absurde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "illusion",
+          "options": [
+            "illusion",
+            "allégorie",
+            "philosophie",
+            "nihilisme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le désert du réel",
+      "inspiration": "Matrix (Lana & Lilly Wachowski, 1999)",
+      "text": "À peine Thomas eut-il avalé la pilule rouge que son esprit se fractura, laissant s'engouffrer le vertige glacial de la {{BLANK_2}}. Il n'était plus Neo, le simple employé de bureau, mais l'Élu d'une {{BLANK_1}} de la rébellion. Morpheus, tel un Socrate des temps cybernétiques, l'avait arraché à l'{{BLANK_14}} matricielle pour le plonger dans le désert du réel. Là, dans les ruines de Zion, la survie de l'humanité ne tenait qu'à un fil, suspendue entre le {{BLANK_4}} de l'homme et le {{BLANK_5}} glacé des algorithmes. Ce monde n'était qu'une vaste {{BLANK_7}}, une prison pour l'esprit où les ombres numériques tenaient lieu de lumière solaire. Face à ce {{BLANK_6}} d'exister sans être vivant, beaucoup de libérés sombraient dans le {{BLANK_9}}, trouvant dans l'{{BLANK_10}} de leur condition une raison de se jeter dans le vide. Mais Neo refusait cette défaite. Par une {{BLANK_11}} féroce entre sa chair et le code, il repoussait les frontières de l'{{BLANK_3}} humaine, prouvant que la conscience pouvait plier les règles de la simulation. Il avait surmonté son {{BLANK_8}} initial pour toucher du doigt une forme de {{BLANK_13}} numérique. Il ne se battait pas seulement pour survivre, mais pour bâtir une {{BLANK_12}} où l'homme et la machine cesseraient de s'entretuer, devenant enfin les architectes lucides de leur propre destin.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "philosophie",
+          "options": [
+            "philosophie",
+            "utopie",
+            "dialectique",
+            "absurde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "métaphysique",
+          "options": [
+            "métaphysique",
+            "illusion",
+            "nihilisme",
+            "scepticisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "épistémologie",
+          "options": [
+            "épistémologie",
+            "transcendance",
+            "allégorie",
+            "paradoxe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "libre arbitre",
+          "options": [
+            "libre arbitre",
+            "déterminisme",
+            "paradoxe",
+            "nihilisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "déterminisme",
+          "options": [
+            "déterminisme",
+            "libre arbitre",
+            "scepticisme",
+            "utopie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "paradoxe",
+          "options": [
+            "paradoxe",
+            "allégorie",
+            "absurde",
+            "philosophie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "allégorie",
+          "options": [
+            "allégorie",
+            "épistémologie",
+            "transcendance",
+            "dialectique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "scepticisme",
+          "options": [
+            "scepticisme",
+            "nihilisme",
+            "illusion",
+            "métaphysique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "nihilisme",
+          "options": [
+            "nihilisme",
+            "absurde",
+            "utopie",
+            "libre arbitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "absurde",
+          "options": [
+            "absurde",
+            "nihilisme",
+            "paradoxe",
+            "scepticisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "dialectique",
+          "options": [
+            "dialectique",
+            "philosophie",
+            "allégorie",
+            "illusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "utopie",
+          "options": [
+            "utopie",
+            "transcendance",
+            "métaphysique",
+            "épistémologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "transcendance",
+          "options": [
+            "transcendance",
+            "utopie",
+            "dialectique",
+            "absurde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "illusion",
+          "options": [
+            "illusion",
+            "allégorie",
+            "philosophie",
+            "nihilisme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Philosophie et pensée abstraite",
+    "title_fa": "آزمون : فلسفه و تفکر انتزاعی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'étude fondamentale des problèmes de l'existence, de la connaissance, des valeurs et de la raison est la ____.",
+        "options": [
+          "philosophie",
+          "utopie",
+          "dialectique",
+          "absurde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مطالعه بنیادین هستی و خرد = philosophie."
+      },
+      {
+        "type": "mcq",
+        "question": "La branche de la philosophie qui étudie la nature ultime de la réalité, de l'être et du monde au-delà de la physique est la ____.",
+        "options": [
+          "métaphysique",
+          "illusion",
+          "nihilisme",
+          "scepticisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شاخه‌ای از فلسفه درباره ماهیت نهایی واقعیت = métaphysique."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étude critique des principes, des méthodes et de la validité de la connaissance scientifique et humaine est l'____.",
+        "options": [
+          "épistémologie",
+          "transcendance",
+          "allégorie",
+          "paradoxe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "معرفت‌شناسی و مطالعه اعتبار دانش = épistémologie."
+      },
+      {
+        "type": "mcq",
+        "question": "La capacité de l'être humain à faire des choix de manière autonome, sans être entièrement déterminé par des causes extérieures, est le ____.",
+        "options": [
+          "libre arbitre",
+          "déterminisme",
+          "paradoxe",
+          "nihilisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توانایی انتخاب آزادانه = libre arbitre."
+      },
+      {
+        "type": "mcq",
+        "question": "La doctrine selon laquelle tous les événements de l'univers, y compris les actions humaines, sont la conséquence nécessaire de causes antérieures est le ____.",
+        "options": [
+          "déterminisme",
+          "libre arbitre",
+          "scepticisme",
+          "utopie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باور به اینکه همه چیز معلول علل پیشین است = déterminisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Une situation ou une proposition qui contient deux éléments contradictoires mais qui peuvent être vrais simultanément est un ____.",
+        "options": [
+          "paradoxe",
+          "allégorie",
+          "absurde",
+          "philosophie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تناقض و موقعیت متضاد = paradoxe."
+      },
+      {
+        "type": "mcq",
+        "question": "Une représentation symbolique, souvent sous forme de récit, qui illustre une idée morale ou philosophique abstraite est une ____.",
+        "options": [
+          "allégorie",
+          "épistémologie",
+          "transcendance",
+          "dialectique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نمایش نمادین یک ایده انتزاعی = allégorie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'attitude philosophique qui consiste à douter de la vérité des croyances et à suspendre son jugement est le ____.",
+        "options": [
+          "scepticisme",
+          "nihilisme",
+          "illusion",
+          "métaphysique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شکاکیت و تردید در حقایق = scepticisme."
+      },
+      {
+        "type": "mcq",
+        "question": "La doctrine philosophique qui nie toute valeur, tout sens à l'existence et toute vérité absolue est le ____.",
+        "options": [
+          "nihilisme",
+          "absurde",
+          "utopie",
+          "libre arbitre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انکار هرگونه ارزش و معنا = nihilisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le concept développé par Albert Camus qui décrit le conflit entre la quête de sens de l'homme et le silence déraisonnable du monde est l'____.",
+        "options": [
+          "absurde",
+          "nihilisme",
+          "paradoxe",
+          "scepticisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تضاد بین جستجوی معنا و سکوت جهان = absurde."
+      },
+      {
+        "type": "mcq",
+        "question": "La méthode de raisonnement et de dialogue qui confronte des idées opposées (thèse et antithèse) pour aboutir à une vérité supérieure est la ____.",
+        "options": [
+          "dialectique",
+          "philosophie",
+          "allégorie",
+          "illusion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روش تقابل افکار برای رسیدن به حقیقت = dialectique."
+      },
+      {
+        "type": "mcq",
+        "question": "La conception imaginaire d'une société idéale et parfaite, souvent irréalisable dans la réalité, est l'____.",
+        "options": [
+          "utopie",
+          "transcendance",
+          "métaphysique",
+          "épistémologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تصور جامعه‌ای ایده‌آل و خیالی = utopie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le caractère de ce qui dépasse les limites de l'expérience sensible et du monde matériel, s'élevant au-dessus de la condition humaine, est la ____.",
+        "options": [
+          "transcendance",
+          "utopie",
+          "dialectique",
+          "absurde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فراتر رفتن از حدود تجربه مادی = transcendance."
+      },
+      {
+        "type": "mcq",
+        "question": "L'apparence trompeuse qui donne pour réel ce qui n'existe pas ou qui cache la véritable nature des choses est l'____.",
+        "options": [
+          "illusion",
+          "allégorie",
+          "philosophie",
+          "nihilisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ظاهر فریبنده و غیرواقعی = illusion."
+      },
+      {
+        "type": "binary",
+        "question": "Le libre arbitre et le déterminisme sont deux concepts philosophiques qui s'accordent parfaitement sur la nature de la volonté humaine.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. این دو مفهوم در تضاد کامل‌اند؛ یکی اختیار را تأیید می‌کند و دیگری جبر را."
+      },
+      {
+        "type": "binary",
+        "question": "L'épistémologie s'intéresse à la manière dont nous acquérons la connaissance et à ce qui distingue la science de la simple opinion.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. معرفت‌شناسی چگونگی کسب دانش و تفاوت علم با عقیده را بررسی می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le nihilisme est une philosophie optimiste qui affirme que la vie possède un sens divin prédéfini.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. نهیلیسم دقیقاً برعکس است و هرگونه معنای از پیش تعیین‌شده و ارزش مطلق را انکار می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Une allégorie utilise des éléments concrets (personnages, objets) pour représenter des idées abstraites.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تمثیل از عناصر ملموس برای نمایش مفاهیم انتزاعی استفاده می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La transcendance désigne uniquement ce qui se trouve à l'intérieur des limites physiques de l'univers matériel.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تعالی (transcendance) دقیقاً به معنای فراتر رفتن از حدود جهان مادی و فیزیکی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le paradoxe est une figure de pensée qui réunit deux affirmations apparemment contradictoires mais qui révèlent une vérité profonde.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پارادوکس دو گزاره متضاد را کنار هم می‌گذارد تا حقیقتی عمیق‌تر را آشکار کند."
+      }
+    ]
+  }
+}
