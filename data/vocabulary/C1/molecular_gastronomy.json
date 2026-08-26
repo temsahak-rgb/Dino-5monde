@@ -1,0 +1,680 @@
+{
+  "id": "molecular_gastronomy",
+  "level": "C1",
+  "theme": "Gastronomie moléculaire, cuisine conceptuelle et avant-garde",
+  "theme_fa": "گاسترونومی مولکولی، آشپزی مفهومی و آوانگارد",
+  "icon": "🍽️",
+  "inspiration": "The Menu (Mark Mylod, 2022)",
+  "words": [
+    {
+      "fr": "la cuisine moléculaire",
+      "fa": "آشپزی مولکولی",
+      "emoji": "🧪",
+      "difficulty": 5,
+      "ex": "La cuisine moléculaire utilise la chimie pour transformer les textures.",
+      "ex_fa": "آشپزی مولکولی از شیمی برای تغییر بافت‌ها استفاده می‌کند."
+    },
+    {
+      "fr": "l'émulsion",
+      "fa": "امولسیون",
+      "emoji": "🫧",
+      "difficulty": 4,
+      "ex": "L'émulsion stable nécessite un agent liant comme la lécithine de soja.",
+      "ex_fa": "امولسیون پایدار به یک عامل پیونددهنده مانند لسیتین سویا نیاز دارد."
+    },
+    {
+      "fr": "la sphérification",
+      "fa": "کره‌ای کردن (اسفریفیکاسیون)",
+      "emoji": "🟢",
+      "difficulty": 5,
+      "ex": "La sphérification transforme un liquide en perles qui éclatent en bouche.",
+      "ex_fa": "اسفریفیکاسیون مایع را به مرواریدهایی تبدیل می‌کند که در دهان می‌ترکند."
+    },
+    {
+      "fr": "l'azote liquide",
+      "fa": "نیتروژن مایع",
+      "emoji": "❄️",
+      "difficulty": 4,
+      "ex": "L'azote liquide permet de congeler des ingrédients instantanément.",
+      "ex_fa": "نیتروژن مایع امکان انجماد فوری مواد را می‌دهد."
+    },
+    {
+      "fr": "le sous-vide",
+      "fa": "پخت در خلأ",
+      "emoji": "🌡️",
+      "difficulty": 4,
+      "ex": "La cuisson sous-vide préserve les jus et la tendreté de la viande.",
+      "ex_fa": "پخت در خلأ، آب و لطافت گوشت را حفظ می‌کند."
+    },
+    {
+      "fr": "la texture",
+      "fa": "بافت",
+      "emoji": "🧽",
+      "difficulty": 3,
+      "ex": "Le contraste de texture entre le croustillant et le fondant est essentiel.",
+      "ex_fa": "تضاد بافت بین تردی و نرمی ضروری است."
+    },
+    {
+      "fr": "l'arôme",
+      "fa": "عطر، رایحه",
+      "emoji": "👃",
+      "difficulty": 3,
+      "ex": "L'arôme du plat atteint le cerveau avant même la première bouchée.",
+      "ex_fa": "عطر غذا حتی قبل از اولین لقمه به مغز می‌رسد."
+    },
+    {
+      "fr": "le palais",
+      "fa": "چشایی، ذائقه",
+      "emoji": "👅",
+      "difficulty": 4,
+      "ex": "Ce vin complexe demande un palais éduqué pour être apprécié.",
+      "ex_fa": "این شراب پیچیده برای درک شدن به ذائقه‌ای آموزش‌دیده نیاز دارد."
+    },
+    {
+      "fr": "le menu dégustation",
+      "fa": "منوی چشیدن (تستینگ)",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "Le menu dégustation propose douze plats en format miniature.",
+      "ex_fa": "منوی چشیدن دوازده غذا را در ابعاد مینیاتوری ارائه می‌دهد."
+    },
+    {
+      "fr": "l'umami",
+      "fa": "اومامی (طعم پنجم)",
+      "emoji": "🍄",
+      "difficulty": 5,
+      "ex": "L'umami, cette cinquième saveur, est présent dans les champignons séchés.",
+      "ex_fa": "اومامی، این طعم پنجم، در قارچ‌های خشک‌شده وجود دارد."
+    },
+    {
+      "fr": "la déconstruction",
+      "fa": "ساختارشکنی (دکانستراکشن)",
+      "emoji": "🧩",
+      "difficulty": 5,
+      "ex": "La déconstruction du taco sépare chaque ingrédient pour une nouvelle expérience.",
+      "ex_fa": "ساختارشکنی تاکو، هر ماده را برای تجربه‌ای جدید جدا می‌کند."
+    },
+    {
+      "fr": "l'avant-garde",
+      "fa": "آوانگارد، پیشرو",
+      "emoji": "🚀",
+      "difficulty": 4,
+      "ex": "Ce chef de l'avant-garde repousse les limites de la gastronomie.",
+      "ex_fa": "این سرآشپز پیشرو، مرزهای گاسترونومی را جابه‌جا می‌کند."
+    },
+    {
+      "fr": "la métaphore",
+      "fa": "استعاره",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "Ce dessert est une métaphore comestible de l'enfance perdue.",
+      "ex_fa": "این دسر، استعاره‌ای خوراکی از کودکیِ از دست رفته است."
+    },
+    {
+      "fr": "le dressage",
+      "fa": "چیدمان بشقاب (پلیتینگ)",
+      "emoji": "🎨",
+      "difficulty": 4,
+      "ex": "Le dressage de l'assiette doit être aussi beau qu'une peinture.",
+      "ex_fa": "چیدمان بشقاب باید به زیبایی یک نقاشی باشد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le dernier service",
+      "text": "Le chef Julian Slowik prépare un {{BLANK_9}} exclusif sur une île isolée. Son approche relève de la {{BLANK_1}}, mêlant science et art. Chaque plat est une {{BLANK_13}} culinaire qui raconte une histoire sombre. Il utilise l'{{BLANK_4}} pour congeler instantanément les herbes. La {{BLANK_3}} transforme les jus de fruits en perles explosives. Il crée une {{BLANK_2}} parfaite à base d'algues. La {{BLANK_5}} permet de cuire les viandes à basse température pendant des heures. Le {{BLANK_14}} de chaque assiette est d'une précision géométrique. La {{BLANK_6}} en bouche surprend les convives. L'{{BLANK_7}} de chaque bouchée évoque des souvenirs d'enfance. Le {{BLANK_8}} des invités est mis à l'épreuve par des saveurs inédites. La cinquième saveur, l'{{BLANK_10}}, est subtilement intégrée. La {{BLANK_11}} des classiques transforme un simple taco en œuvre d'art. Ce chef de l'{{BLANK_12}} pousse la provocation jusqu'au bout.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cuisine moléculaire",
+          "options": [
+            "cuisine moléculaire",
+            "émulsion",
+            "sphérification",
+            "azote liquide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "émulsion",
+          "options": [
+            "émulsion",
+            "sous-vide",
+            "texture",
+            "arôme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "sphérification",
+          "options": [
+            "sphérification",
+            "palais",
+            "menu dégustation",
+            "umami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "azote liquide",
+          "options": [
+            "azote liquide",
+            "déconstruction",
+            "avant-garde",
+            "métaphore"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sous-vide",
+          "options": [
+            "sous-vide",
+            "dressage",
+            "cuisine moléculaire",
+            "émulsion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "texture",
+          "options": [
+            "texture",
+            "sphérification",
+            "azote liquide",
+            "sous-vide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "arôme",
+          "options": [
+            "arôme",
+            "texture",
+            "umami",
+            "déconstruction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "palais",
+          "options": [
+            "palais",
+            "arôme",
+            "avant-garde",
+            "métaphore"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "menu dégustation",
+          "options": [
+            "menu dégustation",
+            "dressage",
+            "cuisine moléculaire",
+            "émulsion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "umami",
+          "options": [
+            "umami",
+            "palais",
+            "menu dégustation",
+            "sphérification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "déconstruction",
+          "options": [
+            "déconstruction",
+            "azote liquide",
+            "sous-vide",
+            "texture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "avant-garde",
+          "options": [
+            "avant-garde",
+            "arôme",
+            "palais",
+            "umami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "métaphore",
+          "options": [
+            "métaphore",
+            "menu dégustation",
+            "déconstruction",
+            "dressage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "dressage",
+          "options": [
+            "dressage",
+            "cuisine moléculaire",
+            "émulsion",
+            "sphérification"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le festin des ombres",
+      "inspiration": "The Menu (Mark Mylod, 2022)",
+      "text": "À peine le chef Slowik eut-il frappé dans ses mains que le silence tomba sur la salle, annonçant le début d'un rituel macabre déguisé en haute gastronomie. Ce maître de la {{BLANK_1}} ne servait pas de la nourriture, il servait des concepts, des traumatismes et des vérités amères. Le {{BLANK_9}} qu'il avait conçu pour ces invités privilégiés était en réalité un jugement dernier. Chaque assiette était une {{BLANK_13}} glaciale de l'âme humaine. Il utilisait l'{{BLANK_4}} pour figer le temps et les herbes dans une brume spectrale. Par la {{BLANK_3}}, il emprisonnait l'océan dans des perles de caviar végétal qui éclataient sur le {{BLANK_8}} des convives terrorisés. Il maîtrisait l'{{BLANK_2}} comme on maîtrise les fluides vitaux, et la {{BLANK_5}} avait rendu ses viandes aussi tendres que des confessions chuchotées. Le {{BLANK_14}} était d'une rigueur militaire, chaque goutte de sauce placée au millimètre. La {{BLANK_6}} des plats alternait entre le croquant du désespoir et le fondant de la culpabilité. L'{{BLANK_7}} des pains brûlés rappelait l'odeur des incendies d'enfance. Il explorait les abysses de l'{{BLANK_10}} pour déstabiliser les papilles blasées. Sa {{BLANK_11}} des plats populaires n'était pas un hommage, mais une moquerie envers l'industrie qui l'avait broyé. Figure de proue de l'{{BLANK_12}} culinaire, il avait décidé que le dernier service serait un feu d'artifice littéral, prouvant que l'art véritable exige parfois le sacrifice absolu de son créateur et de son public.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cuisine moléculaire",
+          "options": [
+            "cuisine moléculaire",
+            "émulsion",
+            "sphérification",
+            "azote liquide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "émulsion",
+          "options": [
+            "émulsion",
+            "sous-vide",
+            "texture",
+            "arôme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "sphérification",
+          "options": [
+            "sphérification",
+            "palais",
+            "menu dégustation",
+            "umami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "azote liquide",
+          "options": [
+            "azote liquide",
+            "déconstruction",
+            "avant-garde",
+            "métaphore"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sous-vide",
+          "options": [
+            "sous-vide",
+            "dressage",
+            "cuisine moléculaire",
+            "émulsion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "texture",
+          "options": [
+            "texture",
+            "sphérification",
+            "azote liquide",
+            "sous-vide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "arôme",
+          "options": [
+            "arôme",
+            "texture",
+            "umami",
+            "déconstruction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "palais",
+          "options": [
+            "palais",
+            "arôme",
+            "avant-garde",
+            "métaphore"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "menu dégustation",
+          "options": [
+            "menu dégustation",
+            "dressage",
+            "cuisine moléculaire",
+            "émulsion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "umami",
+          "options": [
+            "umami",
+            "palais",
+            "menu dégustation",
+            "sphérification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "déconstruction",
+          "options": [
+            "déconstruction",
+            "azote liquide",
+            "sous-vide",
+            "texture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "avant-garde",
+          "options": [
+            "avant-garde",
+            "arôme",
+            "palais",
+            "umami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "métaphore",
+          "options": [
+            "métaphore",
+            "menu dégustation",
+            "déconstruction",
+            "dressage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "dressage",
+          "options": [
+            "dressage",
+            "cuisine moléculaire",
+            "émulsion",
+            "sphérification"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Gastronomie moléculaire",
+    "title_fa": "آزمون : گاسترونومی مولکولی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La discipline qui applique les principes de la chimie et de la physique à la préparation des aliments est la ____.",
+        "options": [
+          "cuisine moléculaire",
+          "émulsion",
+          "sphérification",
+          "azote liquide"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کاربرد شیمی و فیزیک در آشپزی = cuisine moléculaire."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mélange stable de deux liquides qui ne se mélangent pas naturellement, comme l'eau et l'huile, est l'____.",
+        "options": [
+          "émulsion",
+          "sous-vide",
+          "texture",
+          "arôme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مخلوط پایدار دو مایع جدا = émulsion."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique qui consiste à donner à un liquide la forme d'une sphère gélifiée est la ____.",
+        "options": [
+          "sphérification",
+          "palais",
+          "menu dégustation",
+          "umami"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک کره‌ای شکل دادن به مایع = sphérification."
+      },
+      {
+        "type": "mcq",
+        "question": "Le gaz refroidi à l'état liquide, utilisé pour congeler instantanément des aliments, est l'____.",
+        "options": [
+          "azote liquide",
+          "déconstruction",
+          "avant-garde",
+          "métaphore"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گاز مایع‌شده برای انجماد فوری = azote liquide."
+      },
+      {
+        "type": "mcq",
+        "question": "La méthode de cuisson lente dans un sac en plastique privé d'air, à basse température, est le ____.",
+        "options": [
+          "sous-vide",
+          "dressage",
+          "cuisine moléculaire",
+          "émulsion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پخت آرام در کیسه بدون هوا = sous-vide."
+      },
+      {
+        "type": "mcq",
+        "question": "La sensation tactile produite par un aliment en bouche (croquant, fondant, gélatineux) est la ____.",
+        "options": [
+          "texture",
+          "sphérification",
+          "azote liquide",
+          "sous-vide"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حس لامسه غذا در دهان = texture."
+      },
+      {
+        "type": "mcq",
+        "question": "L'odeur dégagée par un aliment ou une boisson, perçue par l'odorat, est l'____.",
+        "options": [
+          "arôme",
+          "texture",
+          "umami",
+          "déconstruction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بوی منتشرشده از غذا = arôme."
+      },
+      {
+        "type": "mcq",
+        "question": "L'organe du goût, ou par extension la capacité d'apprécier les saveurs, est le ____.",
+        "options": [
+          "palais",
+          "arôme",
+          "avant-garde",
+          "métaphore"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اندام چشایی یا ذائقه = palais."
+      },
+      {
+        "type": "mcq",
+        "question": "La succession de nombreux plats en petites portions proposés par un restaurant gastronomique est le ____.",
+        "options": [
+          "menu dégustation",
+          "dressage",
+          "cuisine moléculaire",
+          "émulsion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "منوی شامل چندین غذای کوچک = menu dégustation."
+      },
+      {
+        "type": "mcq",
+        "question": "La cinquième saveur fondamentale, savoureuse et charnue, souvent associée au bouillon et aux aliments fermentés, est l'____.",
+        "options": [
+          "umami",
+          "palais",
+          "menu dégustation",
+          "sphérification"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طعم پنجم و لذیذ = umami."
+      },
+      {
+        "type": "mcq",
+        "question": "L'approche culinaire qui consiste à séparer les éléments d'un plat classique pour les présenter différemment est la ____.",
+        "options": [
+          "déconstruction",
+          "azote liquide",
+          "sous-vide",
+          "texture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جدا کردن عناصر یک غذای کلاسیک = déconstruction."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mouvement artistique ou culinaire qui devance les tendances et repousse les limites établies est l'____.",
+        "options": [
+          "avant-garde",
+          "arôme",
+          "palais",
+          "umami"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جریان پیشرو و ساختارشکن = avant-garde."
+      },
+      {
+        "type": "mcq",
+        "question": "La figure de style qui utilise un plat pour représenter une idée abstraite ou un souvenir est la ____.",
+        "options": [
+          "métaphore",
+          "menu dégustation",
+          "déconstruction",
+          "dressage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نمایش یک ایده از طریق غذا = métaphore."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de disposer et de présenter les aliments sur l'assiette de manière esthétique est le ____.",
+        "options": [
+          "dressage",
+          "cuisine moléculaire",
+          "émulsion",
+          "sphérification"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر چیدمان غذا در بشقاب = dressage."
+      },
+      {
+        "type": "binary",
+        "question": "La sphérification utilise généralement de l'alginate de sodium et du calcium pour créer des perles liquides.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اسفریفیکاسیون بر پایه واکنش آلژینات و کلسیم است."
+      },
+      {
+        "type": "binary",
+        "question": "L'umami est une saveur sucrée que l'on trouve principalement dans les desserts.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اومامی طعم لذیذ و گوشتی است، نه شیرین."
+      },
+      {
+        "type": "binary",
+        "question": "La cuisson sous-vide permet de cuire les aliments à des températures très élevées en peu de temps.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پخت در خلأ (sous-vide) با دمای پایین و در زمان طولانی انجام می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le dressage désigne l'action de dresser un animal pour qu'il serve dans un restaurant.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. در آشپزی، dressage به معنای چیدمان هنری غذا در بشقاب است."
+      },
+      {
+        "type": "binary",
+        "question": "L'azote liquide est extrêmement froid (-196°C) et nécessite des précautions de sécurité strictes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. نیتروژن مایع بسیار سرد است و نیاز به ایمنی بالا دارد."
+      },
+      {
+        "type": "binary",
+        "question": "La déconstruction en cuisine vise à reproduire exactement l'apparence d'un plat traditionnel.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ساختارشکنی (déconstruction) عناصر را از هم جدا کرده و به شکلی نو ارائه می‌دهد."
+      }
+    ]
+  }
+}
