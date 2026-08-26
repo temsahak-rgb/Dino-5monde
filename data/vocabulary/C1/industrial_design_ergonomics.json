@@ -1,0 +1,680 @@
+{
+  "id": "industrial_design_ergonomics",
+  "level": "C1",
+  "theme": "Design industriel, ergonomie et objets du quotidien",
+  "theme_fa": "طراحی صنعتی، ارگونومی و اشیاء روزمره",
+  "icon": "🪑",
+  "inspiration": "Objectified (Gary Hustwit, 2009)",
+  "words": [
+    {
+      "fr": "le design",
+      "fa": "طراحی",
+      "emoji": "✏️",
+      "difficulty": 3,
+      "ex": "Le design industriel façonne notre environnement quotidien.",
+      "ex_fa": "طراحی صنعتی، محیط روزمره ما را شکل می‌دهد."
+    },
+    {
+      "fr": "l'ergonomie",
+      "fa": "ارگونومی",
+      "emoji": "🖐️",
+      "difficulty": 4,
+      "ex": "L'ergonomie adapte l'objet au corps humain.",
+      "ex_fa": "ارگونومی، شیء را با بدن انسان تطبیق می‌دهد."
+    },
+    {
+      "fr": "la fonctionnalité",
+      "fa": "کارکردی بودن",
+      "emoji": "⚙️",
+      "difficulty": 4,
+      "ex": "La fonctionnalité prime sur l'esthétique dans le design utilitaire.",
+      "ex_fa": "در طراحی کاربردی، کارکرد بر زیبایی‌شناسی اولویت دارد."
+    },
+    {
+      "fr": "l'esthétique",
+      "fa": "زیبایی‌شناسی",
+      "emoji": "🎨",
+      "difficulty": 4,
+      "ex": "L'esthétique minimaliste de Braun a influencé toute une génération.",
+      "ex_fa": "زیبایی‌شناسی مینیمالیستی براون، نسل‌ها را تحت تأثیر قرار داد."
+    },
+    {
+      "fr": "le prototype",
+      "fa": "نمونه اولیه",
+      "emoji": "🔧",
+      "difficulty": 4,
+      "ex": "Le prototype a été testé auprès de cinquante utilisateurs.",
+      "ex_fa": "نمونه اولیه روی پنجاه کاربر آزمایش شد."
+    },
+    {
+      "fr": "l'utilisateur",
+      "fa": "کاربر",
+      "emoji": "👤",
+      "difficulty": 3,
+      "ex": "L'utilisateur final doit être au centre du processus de conception.",
+      "ex_fa": "کاربر نهایی باید در مرکز فرآیند طراحی باشد."
+    },
+    {
+      "fr": "l'interface",
+      "fa": "رابط",
+      "emoji": "🖥️",
+      "difficulty": 4,
+      "ex": "L'interface tactile a révolutionné l'usage des téléphones.",
+      "ex_fa": "رابط لمسی، استفاده از تلفن‌ها را متحول کرد."
+    },
+    {
+      "fr": "l'objet",
+      "fa": "شیء",
+      "emoji": "📦",
+      "difficulty": 2,
+      "ex": "Cet objet du quotidien cache une ingénierie complexe.",
+      "ex_fa": "این شیء روزمره، مهندسی پیچیده‌ای را پنهان می‌کند."
+    },
+    {
+      "fr": "la durabilité",
+      "fa": "پایداری",
+      "emoji": "♻️",
+      "difficulty": 4,
+      "ex": "La durabilité des matériaux réduit l'impact environnemental.",
+      "ex_fa": "پایداری مواد، تأثیر زیست‌محیطی را کاهش می‌دهد."
+    },
+    {
+      "fr": "l'innovation",
+      "fa": "نوآوری",
+      "emoji": "💡",
+      "difficulty": 3,
+      "ex": "L'innovation de rupture transforme les marchés en profondeur.",
+      "ex_fa": "نوآوری تحول‌آفرین، بازارها را عمیقاً دگرگون می‌کند."
+    },
+    {
+      "fr": "le croquis",
+      "fa": "طرح اولیه، اسکیس",
+      "emoji": "📝",
+      "difficulty": 4,
+      "ex": "Le designer dessine des croquis avant de modéliser en 3D.",
+      "ex_fa": "طراح قبل از مدل‌سازی سه‌بعدی، اسکیس می‌کشد."
+    },
+    {
+      "fr": "le minimalisme",
+      "fa": "مینیمالیسم",
+      "emoji": "⬜",
+      "difficulty": 4,
+      "ex": "Le minimalisme prône la suppression de tout élément superflu.",
+      "ex_fa": "مینیمالیسم، حذف هر عنصر اضافی را ترویج می‌کند."
+    },
+    {
+      "fr": "l'obsolescence",
+      "fa": "کهنگی، منسوخ شدن",
+      "emoji": "🗑️",
+      "difficulty": 5,
+      "ex": "L'obsolescence programmée est une pratique controversée.",
+      "ex_fa": "کهنگی برنامه‌ریزی‌شده، عملی بحث‌برانگیز است."
+    },
+    {
+      "fr": "le concepteur",
+      "fa": "طراح، مفهوم‌پرداز",
+      "emoji": "🧠",
+      "difficulty": 4,
+      "ex": "Le concepteur imagine des solutions aux problèmes d'usage.",
+      "ex_fa": "طراح، راه‌حل‌هایی برای مشکلات کاربردی تصور می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La chaise parfaite",
+      "text": "Dieter, un {{BLANK_14}} industriel allemand, rêve de créer la chaise parfaite. Pour lui, le {{BLANK_1}} n'est pas une question de décoration, mais de résolution de problèmes. Il commence par des {{BLANK_11}} au crayon, explorant cent formes différentes. L'{{BLANK_2}} est sa priorité absolue : la chaise doit épouser le dos de l'{{BLANK_6}} sans effort. La {{BLANK_3}} compte autant que l'{{BLANK_4}} : une chaise belle mais inconfortable est un échec. Il construit un premier {{BLANK_5}} en bois et le teste pendant des semaines. Chaque {{BLANK_8}} du quotidien, du stylo à la lampe, lui inspire des solutions. L'{{BLANK_7}} entre la forme et la matière doit être intuitive. Il choisit des matériaux respectant la {{BLANK_9}} pour réduire l'impact écologique. Son {{BLANK_10}} réside dans la suppression de tout ornement inutile. Le {{BLANK_12}} guide ses choix : moins, c'est mieux. Il refuse l'{{BLANK_13}} programmée qui pousse à jeter et racheter. Après deux ans de travail, la chaise est enfin présentée. Elle semble simple, presque banale. Mais chaque courbe cache des mois de réflexion. Dieter sourit : le vrai design est invisible. Il ne se remarque pas, il se vit.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "design",
+          "options": [
+            "design",
+            "ergonomie",
+            "fonctionnalité",
+            "esthétique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ergonomie",
+          "options": [
+            "ergonomie",
+            "prototype",
+            "interface",
+            "objet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fonctionnalité",
+          "options": [
+            "fonctionnalité",
+            "durabilité",
+            "innovation",
+            "croquis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "esthétique",
+          "options": [
+            "esthétique",
+            "minimalisme",
+            "obsolescence",
+            "concepteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "prototype",
+          "options": [
+            "prototype",
+            "utilisateur",
+            "interface",
+            "objet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "utilisateur",
+          "options": [
+            "utilisateur",
+            "design",
+            "ergonomie",
+            "fonctionnalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "interface",
+          "options": [
+            "interface",
+            "esthétique",
+            "durabilité",
+            "innovation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "objet",
+          "options": [
+            "objet",
+            "prototype",
+            "croquis",
+            "minimalisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "durabilité",
+          "options": [
+            "durabilité",
+            "obsolescence",
+            "concepteur",
+            "design"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "innovation",
+          "options": [
+            "innovation",
+            "ergonomie",
+            "fonctionnalité",
+            "esthétique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "croquis",
+          "options": [
+            "croquis",
+            "interface",
+            "objet",
+            "prototype"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "minimalisme",
+          "options": [
+            "minimalisme",
+            "durabilité",
+            "obsolescence",
+            "concepteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "obsolescence",
+          "options": [
+            "obsolescence",
+            "innovation",
+            "croquis",
+            "utilisateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "concepteur",
+          "options": [
+            "concepteur",
+            "design",
+            "ergonomie",
+            "fonctionnalité"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'âme des objets",
+      "inspiration": "Objectified (Gary Hustwit, 2009)",
+      "text": "À peine Dieter Rams eut-il posé son crayon sur la feuille blanche que le silence de son atelier de Kronberg devint une prière. Ce {{BLANK_14}} légendaire, héritier du Bauhaus et père spirituel d'Apple, ne dessinait pas des objets : il sculptait le silence entre les choses. Pour lui, le {{BLANK_1}} n'était pas un métier, mais une éthique, une manière de respecter l'homme en respectant ce qu'il touche. Chaque {{BLANK_11}} était une méditation, chaque courbe un dialogue entre la main et la matière. L'{{BLANK_2}} n'était pas une contrainte technique, mais un acte d'amour : adapter le monde au corps, et non l'inverse. La {{BLANK_3}} devait être absolue, car un objet qui ne sert pas est un mensonge. Mais l'{{BLANK_4}} comptait aussi, cette beauté discrète qui ne crie pas mais murmure. Il construisait un {{BLANK_5}}, puis un autre, puis un autre encore, jusqu'à ce que l'{{BLANK_6}} oublie l'effort et ne sente que le naturel. L'{{BLANK_7}} entre le doigt et le bouton, entre l'œil et la forme, devait être si intuitive qu'elle en devenait invisible. Chaque {{BLANK_8}} du quotidien, du taille-crayon à la radio, portait en lui une philosophie. La {{BLANK_9}} des matériaux n'était pas une option, mais un devoir envers les générations futures. Son {{BLANK_10}} véritable résidait dans le retrait, dans l'art de dire moins pour signifier plus. Le {{BLANK_12}} était sa religion : supprimer, encore supprimer, jusqu'à ce qu'il ne reste que l'essentiel. Il méprisait l'{{BLANK_13}} programmée, cette violence faite au temps et à la confiance. Quand la chaise fut enfin terminée, elle semblait n'avoir jamais été dessinée. Elle était simplement là, évidente comme une pierre au bord du chemin. Et Dieter sourit, car il avait compris la leçon suprême : le plus grand design est celui qu'on ne remarque pas, celui qui s'efface pour laisser l'homme exister.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "design",
+          "options": [
+            "design",
+            "ergonomie",
+            "fonctionnalité",
+            "esthétique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ergonomie",
+          "options": [
+            "ergonomie",
+            "prototype",
+            "interface",
+            "objet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fonctionnalité",
+          "options": [
+            "fonctionnalité",
+            "durabilité",
+            "innovation",
+            "croquis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "esthétique",
+          "options": [
+            "esthétique",
+            "minimalisme",
+            "obsolescence",
+            "concepteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "prototype",
+          "options": [
+            "prototype",
+            "utilisateur",
+            "interface",
+            "objet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "utilisateur",
+          "options": [
+            "utilisateur",
+            "design",
+            "ergonomie",
+            "fonctionnalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "interface",
+          "options": [
+            "interface",
+            "esthétique",
+            "durabilité",
+            "innovation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "objet",
+          "options": [
+            "objet",
+            "prototype",
+            "croquis",
+            "minimalisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "durabilité",
+          "options": [
+            "durabilité",
+            "obsolescence",
+            "concepteur",
+            "design"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "innovation",
+          "options": [
+            "innovation",
+            "ergonomie",
+            "fonctionnalité",
+            "esthétique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "croquis",
+          "options": [
+            "croquis",
+            "interface",
+            "objet",
+            "prototype"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "minimalisme",
+          "options": [
+            "minimalisme",
+            "durabilité",
+            "obsolescence",
+            "concepteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "obsolescence",
+          "options": [
+            "obsolescence",
+            "innovation",
+            "croquis",
+            "utilisateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "concepteur",
+          "options": [
+            "concepteur",
+            "design",
+            "ergonomie",
+            "fonctionnalité"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Design industriel et ergonomie",
+    "title_fa": "آزمون : طراحی صنعتی و ارگونومی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La discipline qui conçoit la forme, la fonction et l'apparence des objets manufacturés est le ____.",
+        "options": [
+          "design",
+          "ergonomie",
+          "fonctionnalité",
+          "esthétique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طراحی شکل و کارکرد اشیاء = design."
+      },
+      {
+        "type": "mcq",
+        "question": "La science qui adapte les objets, les postes de travail et les environnements aux capacités du corps humain est l'____.",
+        "options": [
+          "ergonomie",
+          "prototype",
+          "interface",
+          "objet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تطبیق اشیاء با بدن انسان = ergonomie."
+      },
+      {
+        "type": "mcq",
+        "question": "La capacité d'un objet à remplir efficacement l'usage pour lequel il a été conçu est la ____.",
+        "options": [
+          "fonctionnalité",
+          "durabilité",
+          "innovation",
+          "croquis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توانایی انجام کارکرد مورد نظر = fonctionnalité."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des qualités visuelles et sensorielles qui rendent un objet agréable à regarder et à toucher est l'____.",
+        "options": [
+          "esthétique",
+          "minimalisme",
+          "obsolescence",
+          "concepteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ویژگی‌های بصری و حسی شیء = esthétique."
+      },
+      {
+        "type": "mcq",
+        "question": "Le premier modèle physique d'un produit, fabriqué pour tester et valider un concept, est le ____.",
+        "options": [
+          "prototype",
+          "utilisateur",
+          "interface",
+          "objet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اولین مدل فیزیکی برای آزمایش = prototype."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui se sert concrètement d'un produit ou d'un service dans sa vie quotidienne est l'____.",
+        "options": [
+          "utilisateur",
+          "design",
+          "ergonomie",
+          "fonctionnalité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص استفاده‌کننده از محصول = utilisateur."
+      },
+      {
+        "type": "mcq",
+        "question": "La surface ou le système par lequel une personne interagit avec une machine ou un logiciel est l'____.",
+        "options": [
+          "interface",
+          "esthétique",
+          "durabilité",
+          "innovation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطح تعامل انسان و ماشین = interface."
+      },
+      {
+        "type": "mcq",
+        "question": "Toute chose matérielle fabriquée ou transformée par l'homme, ayant une utilité ou une valeur symbolique, est un ____.",
+        "options": [
+          "objet",
+          "prototype",
+          "croquis",
+          "minimalisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هر چیز مادی ساخته‌شده = objet."
+      },
+      {
+        "type": "mcq",
+        "question": "La capacité d'un produit à durer dans le temps sans s'user prématurément, en respectant l'environnement, est la ____.",
+        "options": [
+          "durabilité",
+          "obsolescence",
+          "concepteur",
+          "design"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توانایی ماندگاری در طول زمان = durabilité."
+      },
+      {
+        "type": "mcq",
+        "question": "L'introduction d'une nouveauté qui transforme significativement un marché ou un usage existant est l'____.",
+        "options": [
+          "innovation",
+          "ergonomie",
+          "fonctionnalité",
+          "esthétique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "معرفی تازگی تحول‌آفرین = innovation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dessin rapide et sommaire qui esquisse une idée avant sa réalisation détaillée est le ____.",
+        "options": [
+          "croquis",
+          "interface",
+          "objet",
+          "prototype"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طرح سریع و اولیه = croquis."
+      },
+      {
+        "type": "mcq",
+        "question": "Le courant artistique et philosophique qui prône la réduction à l'essentiel et le rejet de l'ornement superflu est le ____.",
+        "options": [
+          "minimalisme",
+          "durabilité",
+          "obsolescence",
+          "concepteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جریان کاهش به ضرورت = minimalisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus par lequel un produit devient dépassé ou inutilisable, parfois volontairement planifié par le fabricant, est l'____.",
+        "options": [
+          "obsolescence",
+          "innovation",
+          "croquis",
+          "utilisateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرآیند منسوخ شدن محصول = obsolescence."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui imagine et développe un projet, un produit ou un système en réponse à un besoin est le ____.",
+        "options": [
+          "concepteur",
+          "design",
+          "ergonomie",
+          "fonctionnalité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص ایده‌پرداز و توسعه‌دهنده = concepteur."
+      },
+      {
+        "type": "binary",
+        "question": "L'ergonomie vise uniquement à rendre les objets plus beaux, sans se soucier du confort physique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ارگونومی دقیقاً بر تطبیق شیء با بدن و راحتی فیزیکی تمرکز دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Un prototype est une version finale et commercialisée d'un produit.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. نمونه اولیه (prototype) مدل آزمایشی است، نه نسخه نهایی بازار."
+      },
+      {
+        "type": "binary",
+        "question": "Le minimalisme en design consiste à éliminer tout élément non essentiel pour ne garder que l'utile.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. مینیمالیسم حذف عناصر غیرضروری و حفظ ضروری‌هاست."
+      },
+      {
+        "type": "binary",
+        "question": "L'obsolescence programmée est une pratique qui consiste à concevoir un produit pour qu'il dure le plus longtemps possible.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کهنگی برنامه‌ریزی‌شده دقیقاً برعکس است: طراحی برای عمر کوتاه‌تر و ترغیب به خرید مجدد."
+      },
+      {
+        "type": "binary",
+        "question": "L'interface utilisateur désigne le point de contact et d'interaction entre une personne et un système.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. رابط کاربری نقطه تعامل انسان و سیستم است."
+      },
+      {
+        "type": "binary",
+        "question": "La durabilité d'un objet intègre à la fois sa résistance dans le temps et son impact environnemental réduit.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پایداری هم ماندگاری فیزیکی و هم کاهش تأثیر زیست‌محیطی را شامل می‌شود."
+      }
+    ]
+  }
+}
