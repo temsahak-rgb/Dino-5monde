@@ -1,0 +1,680 @@
+{
+  "id": "jardinage_paysagisme",
+  "level": "C1",
+  "theme": "Jardinage, architecture paysagère et jardins à la française",
+  "theme_fa": "باغبانی، معماری منظره و باغ‌های فرانسوی",
+  "icon": "🏰",
+  "inspiration": "Le Jardin secret (The Secret Garden - Agnieszka Holland, 1993)",
+  "words": [
+    {
+      "fr": "le jardin",
+      "fa": "باغ",
+      "emoji": "🏡",
+      "difficulty": 2,
+      "ex": "Le jardin à la française est célèbre pour sa symétrie parfaite.",
+      "ex_fa": "باغ فرانسوی به خاطر تقارن بی‌نقصش مشهور است."
+    },
+    {
+      "fr": "le paysagiste",
+      "fa": "معمار منظره، طراح باغ",
+      "emoji": "📐",
+      "difficulty": 4,
+      "ex": "Le paysagiste dessine les allées et les perspectives du parc.",
+      "ex_fa": "معمار منظره، پیاده‌روها و چشم‌اندازهای پارک را طراحی می‌کند."
+    },
+    {
+      "fr": "la taille",
+      "fa": "هرس کردن",
+      "emoji": "✂️",
+      "difficulty": 3,
+      "ex": "La taille des rosiers s'effectue à la fin de l'hiver.",
+      "ex_fa": "هرس کردن گل‌های رز در اواخر زمستان انجام می‌شود."
+    },
+    {
+      "fr": "le parterre",
+      "fa": "گل‌کاری، باغچه تزئینی",
+      "emoji": "🌷",
+      "difficulty": 4,
+      "ex": "Le parterre de broderie forme des motifs complexes vus d'en haut.",
+      "ex_fa": "باغچه گلدوزی‌شده نقوش پیچیده‌ای را از بالا تشکیل می‌دهد."
+    },
+    {
+      "fr": "la haie",
+      "fa": "پرچین، دیوار سبز",
+      "emoji": "🌳",
+      "difficulty": 3,
+      "ex": "La haie de cyprès protège le domaine des vents violents.",
+      "ex_fa": "پرچین سرو، ملک را از بادهای شدید محافظت می‌کند."
+    },
+    {
+      "fr": "la pelouse",
+      "fa": "چمنزار",
+      "emoji": "🌱",
+      "difficulty": 2,
+      "ex": "La pelouse anglaise exige un arrosage régulier et une tonte fréquente.",
+      "ex_fa": "چمنزار انگلیسی به آبیاری منظم و چمن‌زنی مکرر نیاز دارد."
+    },
+    {
+      "fr": "la tonnelle",
+      "fa": "آلاچیق، سایبان",
+      "emoji": "🏕️",
+      "difficulty": 4,
+      "ex": "La tonnelle couverte de glycine offre un ombrage parfumé.",
+      "ex_fa": "آلاچیق پوشیده از گل ویستریا سایه‌ای معطر ایجاد می‌کند."
+    },
+    {
+      "fr": "le bosquet",
+      "fa": "بیشه، درختزار کوچک",
+      "emoji": "🌲",
+      "difficulty": 4,
+      "ex": "Les amants se retrouvent en secret dans le bosquet isolé.",
+      "ex_fa": "عاشقان در بیشه دورافتاده مخفیانه یکدیگر را ملاقات می‌کنند."
+    },
+    {
+      "fr": "le jardinier",
+      "fa": "باغبان",
+      "emoji": "🧑‍🌾",
+      "difficulty": 2,
+      "ex": "Le jardinier s'occupe quotidiennement des plantes et des arbres.",
+      "ex_fa": "باغبان روزانه از گیاهان و درختان مراقبت می‌کند."
+    },
+    {
+      "fr": "la floraison",
+      "fa": "شکوفایی، گل‌دهی",
+      "emoji": "🌸",
+      "difficulty": 3,
+      "ex": "La floraison des cerisiers attire des milliers de visiteurs.",
+      "ex_fa": "شکوفایی درختان گیلاس هزاران بازدیدکننده را جذب می‌کند."
+    },
+    {
+      "fr": "le bassin",
+      "fa": "حوض، استخر باغ",
+      "emoji": "⛲",
+      "difficulty": 3,
+      "ex": "Le bassin central reflète la façade du château.",
+      "ex_fa": "حوض مرکزی، نمای قلعه را منعکس می‌کند."
+    },
+    {
+      "fr": "la fontaine",
+      "fa": "فواره",
+      "emoji": "⛲",
+      "difficulty": 3,
+      "ex": "La fontaine de Neptune jaillit au rythme de la musique.",
+      "ex_fa": "فواره نپتون هماهنگ با ریتم موسیقی می‌جوشد."
+    },
+    {
+      "fr": "la greffe",
+      "fa": "پیوند زدن (گیاه)",
+      "emoji": "🌿",
+      "difficulty": 5,
+      "ex": "La greffe permet de multiplier une variété rare de pommier.",
+      "ex_fa": "پیوند زدن امکان تکثیر یک نوع نادر از درخت سیب را می‌دهد."
+    },
+    {
+      "fr": "le terreau",
+      "fa": "خاک گلدان، بستر کشت",
+      "emoji": "🪴",
+      "difficulty": 3,
+      "ex": "Un bon terreau doit être riche en matières organiques.",
+      "ex_fa": "خاک خوب باید غنی از مواد آلی باشد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le domaine abandonné",
+      "text": "Mary Lennox arrive dans un immense manoir anglais entouré de terres sauvages. Un vieux {{BLANK_9}} lui parle d'un {{BLANK_1}} mystérieux, fermé depuis dix ans. Intriguée, elle trouve la clé et pousse la lourde porte. À l'intérieur, la nature a repris ses droits. Elle décide de devenir une petite {{BLANK_2}} et commence le nettoyage. Elle coupe les branches mortes avec une {{BLANK_3}} précise. Elle désherbe la {{BLANK_6}} envahie et prépare un nouveau {{BLANK_14}} fertile pour les semis. Bientôt, elle redessine un magnifique {{BLANK_4}} de roses anciennes. Elle plante une {{BLANK_5}} d'ifs pour cacher les murs de pierre. Près de la {{BLANK_7}} couverte de lierre, elle découvre un petit {{BLANK_8}} où les oiseaux viennent nicher. Au centre, un ancien {{BLANK_11}} de pierre est rempli de feuilles mortes, mais elle le nettoie pour installer une belle {{BLANK_12}} qui chantera à nouveau. Grâce à ses soins, la {{BLANK_10}} printanière explose de couleurs, et elle apprend même la technique de la {{BLANK_13}} pour sauver un vieil arbre fruitier. Le {{BLANK_2}} du domaine, ému, lui offre des graines rares.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "jardin",
+          "options": [
+            "jardin",
+            "paysagiste",
+            "taille",
+            "parterre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "paysagiste",
+          "options": [
+            "paysagiste",
+            "haie",
+            "pelouse",
+            "tonnelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "taille",
+          "options": [
+            "taille",
+            "bosquet",
+            "jardinier",
+            "floraison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "parterre",
+          "options": [
+            "parterre",
+            "bassin",
+            "fontaine",
+            "greffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "haie",
+          "options": [
+            "haie",
+            "terreau",
+            "jardin",
+            "paysagiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pelouse",
+          "options": [
+            "pelouse",
+            "taille",
+            "parterre",
+            "haie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tonnelle",
+          "options": [
+            "tonnelle",
+            "bosquet",
+            "jardinier",
+            "floraison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "bosquet",
+          "options": [
+            "bosquet",
+            "bassin",
+            "fontaine",
+            "greffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "jardinier",
+          "options": [
+            "jardinier",
+            "terreau",
+            "jardin",
+            "paysagiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "floraison",
+          "options": [
+            "floraison",
+            "taille",
+            "parterre",
+            "haie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "bassin",
+          "options": [
+            "bassin",
+            "pelouse",
+            "tonnelle",
+            "bosquet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "fontaine",
+          "options": [
+            "fontaine",
+            "jardinier",
+            "floraison",
+            "greffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "greffe",
+          "options": [
+            "greffe",
+            "terreau",
+            "jardin",
+            "paysagiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "terreau",
+          "options": [
+            "terreau",
+            "taille",
+            "parterre",
+            "haie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La résurrection de la terre",
+      "inspiration": "Le Jardin secret (Agnieszka Holland, 1993)",
+      "text": "À peine Mary eut-elle tourné la clé rouillée que le souffle d'un printemps oublié caressa son visage d'enfant en deuil. Ce {{BLANK_1}} maudit, muré par la douleur d'un père inconsolable, n'était qu'un cimetière de ronces où la nature pleurait en silence. Mais la fillette, armée de sa seule volonté, s'improvisa {{BLANK_2}} de l'impossible. Elle maniait le sécateur avec la fureur d'une survivante, chaque {{BLANK_3}} libérant une branche de son agonie hivernale. Sous ses mains sales, le {{BLANK_14}} noir et humide redevenait une matrice de vie, promettant un {{BLANK_4}} qui rivaliserait avec les tapis des rois. Elle guidait la pousse d'une {{BLANK_5}} sombre pour s'isoler du monde des adultes, et trouvait refuge sous la {{BLANK_7}} effondrée, au cœur d'un {{BLANK_8}} sauvage où les rouges-gorges chantaient la résurrection. Quand la {{BLANK_6}} verdoyante recouvrit enfin la terre nue, elle pleura de joie. Au centre, le {{BLANK_11}} de marbre, longtemps tari, se remplit des larmes du ciel, et la {{BLANK_12}} de bronze cracha à nouveau son eau bénie. À la première {{BLANK_10}}, quand les pétales explosèrent en une symphonie de couleurs, le vieux {{BLANK_9}} sourit pour la première fois depuis des années, comprenant que la petite orpheline n'avait pas seulement sauvé des roses, mais qu'elle avait greffé l'espérance sur son propre cœur brisé, comme la plus belle des {{BLANK_13}}s.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "jardin",
+          "options": [
+            "jardin",
+            "paysagiste",
+            "taille",
+            "parterre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "paysagiste",
+          "options": [
+            "paysagiste",
+            "haie",
+            "pelouse",
+            "tonnelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "taille",
+          "options": [
+            "taille",
+            "bosquet",
+            "jardinier",
+            "floraison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "parterre",
+          "options": [
+            "parterre",
+            "bassin",
+            "fontaine",
+            "greffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "haie",
+          "options": [
+            "haie",
+            "terreau",
+            "jardin",
+            "paysagiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pelouse",
+          "options": [
+            "pelouse",
+            "taille",
+            "parterre",
+            "haie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tonnelle",
+          "options": [
+            "tonnelle",
+            "bosquet",
+            "jardinier",
+            "floraison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "bosquet",
+          "options": [
+            "bosquet",
+            "bassin",
+            "fontaine",
+            "greffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "jardinier",
+          "options": [
+            "jardinier",
+            "terreau",
+            "jardin",
+            "paysagiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "floraison",
+          "options": [
+            "floraison",
+            "taille",
+            "parterre",
+            "haie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "bassin",
+          "options": [
+            "bassin",
+            "pelouse",
+            "tonnelle",
+            "bosquet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "fontaine",
+          "options": [
+            "fontaine",
+            "jardinier",
+            "floraison",
+            "greffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "greffe",
+          "options": [
+            "greffe",
+            "terreau",
+            "jardin",
+            "paysagiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "terreau",
+          "options": [
+            "terreau",
+            "taille",
+            "parterre",
+            "haie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Jardinage et paysage",
+    "title_fa": "آزمون : باغبانی و معماری منظره",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'espace extérieur cultivé et aménagé pour l'agrément, la détente ou la production végétale est le ____.",
+        "options": [
+          "jardin",
+          "paysagiste",
+          "taille",
+          "parterre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فضای بیرونی کشت‌شده و طراحی‌شده = jardin."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel qui conçoit et aménage les espaces verts, les parcs et les paysages est le ____.",
+        "options": [
+          "paysagiste",
+          "haie",
+          "pelouse",
+          "tonnelle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طراح فضاهای سبز و منظره = paysagiste."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de couper les branches superflues d'un arbre ou d'un arbuste pour favoriser sa croissance est la ____.",
+        "options": [
+          "taille",
+          "bosquet",
+          "jardinier",
+          "floraison"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل بریدن شاخه‌های اضافی = taille."
+      },
+      {
+        "type": "mcq",
+        "question": "La plate-bande ornée de fleurs ou de buissons taillés, souvent disposée en motifs géométriques, est le ____.",
+        "options": [
+          "parterre",
+          "bassin",
+          "fontaine",
+          "greffe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باغچه تزئینی با نقوش هندسی = parterre."
+      },
+      {
+        "type": "mcq",
+        "question": "La clôture végétale formée d'arbustes plantés serrés pour délimiter un espace est la ____.",
+        "options": [
+          "haie",
+          "terreau",
+          "jardin",
+          "paysagiste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حصار گیاهی و دیوار سبز = haie."
+      },
+      {
+        "type": "mcq",
+        "question": "La surface d'herbe courte et dense, entretenue et tondue régulièrement, est la ____.",
+        "options": [
+          "pelouse",
+          "taille",
+          "parterre",
+          "haie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطح چمن کوتاه و متراکم = pelouse."
+      },
+      {
+        "type": "mcq",
+        "question": "La petite construction légère, souvent en treillage, destinée à supporter des plantes grimpantes et à offrir de l'ombre est la ____.",
+        "options": [
+          "tonnelle",
+          "bosquet",
+          "jardinier",
+          "floraison"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سایبان یا آلاچیق گیاهی = tonnelle."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit bois, le groupe d'arbres plantés ensemble pour former un massif dans un parc est le ____.",
+        "options": [
+          "bosquet",
+          "bassin",
+          "fontaine",
+          "greffe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درختزار کوچک یا بیشه = bosquet."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne dont le métier est de cultiver et d'entretenir les plantes, les fleurs et les espaces verts est le ____.",
+        "options": [
+          "jardinier",
+          "terreau",
+          "jardin",
+          "paysagiste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخصی که از باغ مراقبت می‌کند = jardinier."
+      },
+      {
+        "type": "mcq",
+        "question": "La période pendant laquelle les plantes développent et ouvrent leurs fleurs est la ____.",
+        "options": [
+          "floraison",
+          "taille",
+          "parterre",
+          "haie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره باز شدن گل‌ها = floraison."
+      },
+      {
+        "type": "mcq",
+        "question": "La pièce d'eau artificielle, souvent maçonnée, qui orne un jardin et peut abriter des plantes aquatiques est le ____.",
+        "options": [
+          "bassin",
+          "pelouse",
+          "tonnelle",
+          "bosquet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حوض یا استخر تزئینی باغ = bassin."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ouvrage hydraulique qui fait jaillir l'eau en jet pour un effet décoratif est la ____.",
+        "options": [
+          "fontaine",
+          "jardinier",
+          "floraison",
+          "greffe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازه پاشش آب تزئینی = fontaine."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique horticole qui consiste à insérer un bourgeon ou un rameau d'une plante sur une autre pour les souder est la ____.",
+        "options": [
+          "greffe",
+          "terreau",
+          "jardin",
+          "paysagiste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک اتصال دو گیاه به هم = greffe."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mélange de terre et de matières organiques décomposées, utilisé pour enrichir le sol et rempoter les plantes, est le ____.",
+        "options": [
+          "terreau",
+          "taille",
+          "parterre",
+          "haie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خاک غنی و کود آلی = terreau."
+      },
+      {
+        "type": "binary",
+        "question": "Le paysagiste est la personne qui taille exclusivement les pelouses et ramasse les feuilles mortes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. معمار منظره (paysagiste) طراح و خالق فضاهای سبز است؛ کارگر ساده باغبان یا نگهبان است."
+      },
+      {
+        "type": "binary",
+        "question": "La taille des arbres fruitiers se fait pour stimuler la production de fruits et maintenir une belle forme.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هرس کردن (taille) برای تحریک میوه‌دهی و حفظ شکل درخت انجام می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le parterre désigne la grande étendue d'eau naturelle où nagent les cygnes du domaine.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. parterre به باغچه‌های گل‌کاری‌شده و تزئینی روی زمین گفته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La greffe permet de reproduire à l'identique une variété de plante rare ou fragile.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پیوند زدن (greffe) روشی برای تکثیر غیرجنسی و حفظ ویژگی‌های گیاه مادر است."
+      },
+      {
+        "type": "binary",
+        "question": "Le terreau est un sol stérile et pauvre, utilisé uniquement pour drainer l'eau des pots.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. خاک گلدان (terreau) غنی از مواد آلی است و برای تغذیه ریشه گیاهان استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Un bosquet est un petit groupe d'arbres formant un massif ombragé dans un jardin ou un parc.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بیشه (bosquet) گروهی از درختان است که فضایی سایه‌دار ایجاد می‌کنند."
+      }
+    ]
+  }
+}
