@@ -1,0 +1,680 @@
+{
+  "id": "typography_calligraphy",
+  "level": "C1",
+  "theme": "Typographie, calligraphie et imprimerie",
+  "theme_fa": "تایپوگرافی، خوشنویسی و صنعت چاپ",
+  "icon": "🖋️",
+  "inspiration": "Le Nom de la rose (The Name of the Rose - Jean-Jacques Annaud, 1986)",
+  "words": [
+    {
+      "fr": "la typographie",
+      "fa": "تایپوگرافی",
+      "emoji": "🔠",
+      "difficulty": 5,
+      "ex": "La typographie est l'art d'assembler les caractères pour créer des textes lisibles.",
+      "ex_fa": "تایپوگرافی هنر چیدمان حروف برای ایجاد متون خوانا است."
+    },
+    {
+      "fr": "la calligraphie",
+      "fa": "خوشنویسی",
+      "emoji": "✍️",
+      "difficulty": 4,
+      "ex": "La calligraphie arabe transforme l'écriture en un art visuel majestueux.",
+      "ex_fa": "خوشنویسی عربی، نوشتار را به یک هنر بصری باشکوه تبدیل می‌کند."
+    },
+    {
+      "fr": "l'encre",
+      "fa": "جوهر",
+      "emoji": "🖤",
+      "difficulty": 3,
+      "ex": "L'encre de Chine est utilisée pour ses noirs profonds et indélébiles.",
+      "ex_fa": "جوهر چینی به خاطر سیاهی عمیق و پاک‌نشدنی‌اش استفاده می‌شود."
+    },
+    {
+      "fr": "la plume",
+      "fa": "قلم (پر)",
+      "emoji": "🪶",
+      "difficulty": 3,
+      "ex": "Le moine taille sa plume d'oie avec un petit canif.",
+      "ex_fa": "راهب پر اردک خود را با یک چاقوی کوچک می‌تراشد."
+    },
+    {
+      "fr": "le parchemin",
+      "fa": "پارچمن (پوست نوشته)",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "Le parchemin en peau de vélin est extrêmement coûteux et durable.",
+      "ex_fa": "پارچمنِ ساخته‌شده از پوست گوساله بسیار گران و بادوام است."
+    },
+    {
+      "fr": "le manuscrit",
+      "fa": "دست‌نوشته",
+      "emoji": "📖",
+      "difficulty": 4,
+      "ex": "Le manuscrit enluminé date du XIIe siècle.",
+      "ex_fa": "دست‌نوشته تذهیب‌کاری‌شده مربوط به قرن دوازدهم است."
+    },
+    {
+      "fr": "l'imprimerie",
+      "fa": "صنعت چاپ",
+      "emoji": "🖨️",
+      "difficulty": 4,
+      "ex": "L'invention de l'imprimerie a révolutionné la diffusion du savoir.",
+      "ex_fa": "اختراع صنعت چاپ، انتشار دانش را متحول کرد."
+    },
+    {
+      "fr": "la presse",
+      "fa": "دستگاه چاپ",
+      "emoji": "⚙️",
+      "difficulty": 4,
+      "ex": "La presse de Gutenberg utilise la force mécanique pour transférer l'encre.",
+      "ex_fa": "دستگاه چاپ گوتنبرگ از نیروی مکانیکی برای انتقال جوهر استفاده می‌کند."
+    },
+    {
+      "fr": "le caractère",
+      "fa": "حرف، کاراکتر",
+      "emoji": "🔡",
+      "difficulty": 3,
+      "ex": "Chaque caractère en plomb doit être aligné parfaitement.",
+      "ex_fa": "هر حرف سربی باید کاملاً تراز شود."
+    },
+    {
+      "fr": "la police",
+      "fa": "فونت، قلم تایپی",
+      "emoji": "🔤",
+      "difficulty": 4,
+      "ex": "Cette police moderne s'inspire des écritures de la Renaissance.",
+      "ex_fa": "این فونت مدرن از خط‌های دوره رنسانس الهام گرفته است."
+    },
+    {
+      "fr": "l'enluminure",
+      "fa": "تذهیب، مینیاتور",
+      "emoji": "🎨",
+      "difficulty": 5,
+      "ex": "L'enluminure à la feuille d'or donne un éclat sacré au texte.",
+      "ex_fa": "تذهیب با ورق طلا، درخششی مقدس به متن می‌بخشد."
+    },
+    {
+      "fr": "le poinçon",
+      "fa": "مهره، سمبه (قالب حرف)",
+      "emoji": "🔨",
+      "difficulty": 5,
+      "ex": "Le graveur sculpte le poinçon en acier pour créer la matrice.",
+      "ex_fa": "حکاک، مهره فولادی را برای ساخت قالب حکاکی می‌کند."
+    },
+    {
+      "fr": "la reliure",
+      "fa": "صحافی",
+      "emoji": "📚",
+      "difficulty": 4,
+      "ex": "La reliure en cuir protège les cahiers cousus du manuscrit.",
+      "ex_fa": "صحافی چرمی از دفترچه‌های دوخته‌شده دست‌نوشته محافظت می‌کند."
+    },
+    {
+      "fr": "le scribe",
+      "fa": "کاتب",
+      "emoji": "🧑‍💼",
+      "difficulty": 4,
+      "ex": "Le scribe passe ses journées à copier les textes anciens.",
+      "ex_fa": "کاتب روزهای خود را به رونویسی از متون باستانی می‌گذراند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le secret de l'abbaye",
+      "text": "Guillaume de Baskerville arrive dans une abbaye isolée pour mener une enquête. Dans le scriptorium, un {{BLANK_14}} aveugle et talentueux travaille sans relâche. Il utilise une {{BLANK_4}} d'oie finement taillée et de l'{{BLANK_3}} noire pour écrire sur du {{BLANK_5}} coûteux. Chaque {{BLANK_9}} est dessiné avec une {{BLANK_2}} parfaite. Un précieux {{BLANK_6}} est décoré d'une magnifique {{BLANK_11}} à la feuille d'or, tandis qu'une solide {{BLANK_13}} en cuir le protège. Mais une nouvelle invention venue d'Allemagne menace cet art : l'{{BLANK_7}}. La {{BLANK_8}} mécanique de Gutenberg peut reproduire des livres rapidement. L'artisan utilise un {{BLANK_12}} en métal dur pour fondre les lettres. Chaque {{BLANK_10}} typographique est standardisée, changeant à jamais l'art de la {{BLANK_1}} et la diffusion des idées en Europe.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "typographie",
+          "options": [
+            "typographie",
+            "calligraphie",
+            "encre",
+            "plume"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "calligraphie",
+          "options": [
+            "calligraphie",
+            "parchemin",
+            "manuscrit",
+            "imprimerie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "encre",
+          "options": [
+            "encre",
+            "presse",
+            "caractère",
+            "police"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "plume",
+          "options": [
+            "plume",
+            "enluminure",
+            "poinçon",
+            "reliure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "parchemin",
+          "options": [
+            "parchemin",
+            "scribe",
+            "typographie",
+            "calligraphie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "manuscrit",
+          "options": [
+            "manuscrit",
+            "encre",
+            "plume",
+            "parchemin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "imprimerie",
+          "options": [
+            "imprimerie",
+            "presse",
+            "caractère",
+            "police"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "presse",
+          "options": [
+            "presse",
+            "enluminure",
+            "poinçon",
+            "reliure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "caractère",
+          "options": [
+            "caractère",
+            "scribe",
+            "typographie",
+            "calligraphie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "police",
+          "options": [
+            "police",
+            "encre",
+            "plume",
+            "parchemin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "enluminure",
+          "options": [
+            "enluminure",
+            "imprimerie",
+            "presse",
+            "caractère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "poinçon",
+          "options": [
+            "poinçon",
+            "reliure",
+            "scribe",
+            "typographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "reliure",
+          "options": [
+            "reliure",
+            "calligraphie",
+            "encre",
+            "plume"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "scribe",
+          "options": [
+            "scribe",
+            "parchemin",
+            "manuscrit",
+            "imprimerie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le labyrinthe des mots",
+      "inspiration": "Le Nom de la rose (Jean-Jacques Annaud, 1986)",
+      "text": "À peine Guillaume eut-il poussé la lourde porte de chêne du scriptorium que l'odeur âcre du {{BLANK_5}} ancien et de l'{{BLANK_3}} gallique l'enveloppa comme un suaire sacré. Dans cette abbaye perdue, le vieux {{BLANK_14}} aveugle, courbé sur son pupitre, traçait chaque {{BLANK_9}} avec une {{BLANK_2}} qui défiait la mort, guidant sa {{BLANK_4}} d'oie comme une épée de lumière contre les ténèbres de l'ignorance. Sur le {{BLANK_6}} naissant, une {{BLANK_11}} d'or et de lapis-lazuli transformait la lettre en vitrail, tandis que la {{BLANK_13}} de cuir épais protégeait les secrets interdits. Mais Guillaume, esprit des Lumières, savait que ce monde agonisait. Au loin, dans les villes, le grondement de la {{BLANK_8}} de l'{{BLANK_7}} montait comme un tonnerre, frappant le {{BLANK_12}} de métal pour multiplier les mots à l'infini. Bientôt, une nouvelle {{BLANK_10}} uniforme remplacerait l'âme tremblante et imparfaite des moines, et la {{BLANK_1}} mécanique tuerait la prière silencieuse de l'écriture manuelle, prouvant que chaque révolution du savoir exige inévitablement le sacrifice de la beauté unique qui l'avait précédée.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "typographie",
+          "options": [
+            "typographie",
+            "calligraphie",
+            "encre",
+            "plume"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "calligraphie",
+          "options": [
+            "calligraphie",
+            "parchemin",
+            "manuscrit",
+            "imprimerie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "encre",
+          "options": [
+            "encre",
+            "presse",
+            "caractère",
+            "police"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "plume",
+          "options": [
+            "plume",
+            "enluminure",
+            "poinçon",
+            "reliure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "parchemin",
+          "options": [
+            "parchemin",
+            "scribe",
+            "typographie",
+            "calligraphie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "manuscrit",
+          "options": [
+            "manuscrit",
+            "encre",
+            "plume",
+            "parchemin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "imprimerie",
+          "options": [
+            "imprimerie",
+            "presse",
+            "caractère",
+            "police"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "presse",
+          "options": [
+            "presse",
+            "enluminure",
+            "poinçon",
+            "reliure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "caractère",
+          "options": [
+            "caractère",
+            "scribe",
+            "typographie",
+            "calligraphie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "police",
+          "options": [
+            "police",
+            "encre",
+            "plume",
+            "parchemin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "enluminure",
+          "options": [
+            "enluminure",
+            "imprimerie",
+            "presse",
+            "caractère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "poinçon",
+          "options": [
+            "poinçon",
+            "reliure",
+            "scribe",
+            "typographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "reliure",
+          "options": [
+            "reliure",
+            "calligraphie",
+            "encre",
+            "plume"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "scribe",
+          "options": [
+            "scribe",
+            "parchemin",
+            "manuscrit",
+            "imprimerie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Typographie et calligraphie",
+    "title_fa": "آزمون : تایپوگرافی و خوشنویسی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art et la technique de composer un texte à l'aide de caractères d'imprimerie choisis et assemblés est la ____.",
+        "options": [
+          "typographie",
+          "calligraphie",
+          "encre",
+          "plume"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر چیدمان حروف چاپی = typographie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de tracer les lettres à la main de manière esthétique, harmonieuse et expressive est la ____.",
+        "options": [
+          "calligraphie",
+          "parchemin",
+          "manuscrit",
+          "imprimerie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر نوشتن زیبا با دست = calligraphie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le liquide coloré, souvent noir, utilisé pour écrire, dessiner ou imprimer est l'____.",
+        "options": [
+          "encre",
+          "presse",
+          "caractère",
+          "police"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مایع رنگی برای نوشتن = encre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument d'écriture traditionnel, souvent taillé dans une plume d'oiseau, est la ____.",
+        "options": [
+          "plume",
+          "enluminure",
+          "poinçon",
+          "reliure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار نوشتن با پر پرنده = plume."
+      },
+      {
+        "type": "mcq",
+        "question": "Le support d'écriture fabriqué à partir de peau d'animal tannée et préparée, très utilisé au Moyen Âge, est le ____.",
+        "options": [
+          "parchemin",
+          "scribe",
+          "typographie",
+          "calligraphie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پوست آماده‌شده برای نوشتن = parchemin."
+      },
+      {
+        "type": "mcq",
+        "question": "Un document écrit entièrement à la main, avant l'invention de l'impression mécanique, est un ____.",
+        "options": [
+          "manuscrit",
+          "encre",
+          "plume",
+          "parchemin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سند نوشته‌شده با دست = manuscrit."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des techniques permettant de reproduire des textes et des images en multiples exemplaires est l'____.",
+        "options": [
+          "imprimerie",
+          "presse",
+          "caractère",
+          "police"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک‌های تکثیر متن و تصویر = imprimerie."
+      },
+      {
+        "type": "mcq",
+        "question": "La machine qui exerce une forte pression pour transférer l'encre des caractères sur le papier est la ____.",
+        "options": [
+          "presse",
+          "enluminure",
+          "poinçon",
+          "reliure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه اعمال فشار برای چاپ = presse."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bloc de métal (ou signe) représentant une lettre ou un symbole, utilisé pour composer un texte, est le ____.",
+        "options": [
+          "caractère",
+          "scribe",
+          "typographie",
+          "calligraphie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قطعه فلزی نشان‌دهنده یک حرف = caractère."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble complet de caractères typographiques partageant le même style et la même graisse est la ____.",
+        "options": [
+          "police",
+          "encre",
+          "plume",
+          "parchemin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه حروف با سبک یکسان (فونت) = police."
+      },
+      {
+        "type": "mcq",
+        "question": "La décoration peinte (souvent à la feuille d'or et aux couleurs vives) qui orne les lettres et les marges des manuscrits est l'____.",
+        "options": [
+          "enluminure",
+          "imprimerie",
+          "presse",
+          "caractère"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تزیین رنگی و طلایی حاشیه و حروف = enluminure."
+      },
+      {
+        "type": "mcq",
+        "question": "La tige d'acier gravée en relief qui sert à frapper la matrice pour fondre les caractères d'imprimerie est le ____.",
+        "options": [
+          "poinçon",
+          "reliure",
+          "scribe",
+          "typographie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قالب فولادی حکاکی‌شده برای ریخته‌گری حروف = poinçon."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art d'assembler, de coudre et de couvrir les cahiers d'un livre pour en assurer la solidité et l'esthétique est la ____.",
+        "options": [
+          "reliure",
+          "calligraphie",
+          "encre",
+          "plume"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر صحافی و جلدسازی کتاب = reliure."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne dont le métier est de copier des textes à la main, particulièrement dans les monastères médiévaux, est le ____.",
+        "options": [
+          "scribe",
+          "parchemin",
+          "manuscrit",
+          "imprimerie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص رونویس متون با دست = scribe."
+      },
+      {
+        "type": "binary",
+        "question": "La calligraphie et la typographie désignent exactement la même technique de reproduction mécanique des textes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. خوشنویسی (calligraphie) هنر دستی است، اما تایپوگرافی (typographie) به چیدمان حروف چاپی اشاره دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le parchemin est un support d'écriture fabriqué à partir de fibres de bois broyées.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پارچمن از پوست حیوانات تهیه می‌شود؛ کاغذ از الیاف چوب یا گیاهان ساخته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "L'enluminure désigne les illustrations et décorations peintes à la main dans les manuscrits médiévaux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تذهیب (enluminure) به نقاشی‌ها و تزیینات رنگی در دست‌نوشته‌ها گفته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "L'invention de la presse de Gutenberg a ralenti la diffusion des idées en Europe en rendant les livres plus rares.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. دستگاه چاپ گوتنبرگ با تولید انبوه کتاب‌ها، سرعت انتشار دانش و ایده‌ها را به شدت افزایش داد."
+      },
+      {
+        "type": "binary",
+        "question": "Le poinçon est l'outil original gravé en relief qui permet de créer les moules pour la fonte des caractères.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. مهره یا سمبه (poinçon) قالب اولیه‌ای است که برای ساخت حروف سربی استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le scribe est le mécanicien chargé d'entretenir les presses d'imprimerie au XVe siècle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کاتب (scribe) کسی است که متون را با دست و قلم رونویسی می‌کند، نه مکانیک دستگاه چاپ."
+      }
+    ]
+  }
+}
