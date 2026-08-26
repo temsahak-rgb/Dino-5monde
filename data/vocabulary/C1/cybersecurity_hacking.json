@@ -1,0 +1,680 @@
+{
+  "id": "cybersecurity_hacking",
+  "level": "C1",
+  "theme": "Cybersécurité, piratage et protection des données",
+  "theme_fa": "امنیت سایبری، هک و حفاظت از داده‌ها",
+  "icon": "💻",
+  "inspiration": "Mr. Robot (Sam Esmail, 2015)",
+  "words": [
+    {
+      "fr": "la cybersécurité",
+      "fa": "امنیت سایبری",
+      "emoji": "🛡️",
+      "difficulty": 4,
+      "ex": "La cybersécurité est devenue une priorité nationale pour les États.",
+      "ex_fa": "امنیت سایبری به یک اولویت ملی برای کشورها تبدیل شده است."
+    },
+    {
+      "fr": "le piratage",
+      "fa": "هک، نفوذ غیرمجاز",
+      "emoji": "🏴‍☠️",
+      "difficulty": 4,
+      "ex": "Le piratage de la base de données a exposé des millions d'utilisateurs.",
+      "ex_fa": "هک پایگاه داده، اطلاعات میلیون‌ها کاربر را فاش کرد."
+    },
+    {
+      "fr": "le chiffrement",
+      "fa": "رمزنگاری",
+      "emoji": "🔐",
+      "difficulty": 5,
+      "ex": "Le chiffrement de bout en bout protège la confidentialité des messages.",
+      "ex_fa": "رمزنگاری سرتاسری، محرمانگی پیام‌ها را محافظت می‌کند."
+    },
+    {
+      "fr": "le malware",
+      "fa": "بدافزار",
+      "emoji": "🦠",
+      "difficulty": 4,
+      "ex": "Un malware sophistiqué a paralysé les hôpitaux du pays.",
+      "ex_fa": "یک بدافزار پیشرفته، بیمارستان‌های کشور را فلج کرد."
+    },
+    {
+      "fr": "le pare-feu",
+      "fa": "فایروال، دیواره آتش",
+      "emoji": "🧱",
+      "difficulty": 4,
+      "ex": "Le pare-feu bloque les connexions non autorisées entrantes.",
+      "ex_fa": "فایروال اتصالات ورودی غیرمجاز را مسدود می‌کند."
+    },
+    {
+      "fr": "la vulnérabilité",
+      "fa": "آسیب‌پذیری",
+      "emoji": "⚠️",
+      "difficulty": 5,
+      "ex": "Les développeurs corrigent rapidement chaque vulnérabilité découverte.",
+      "ex_fa": "توسعه‌دهندگان هر آسیب‌پذیری کشف‌شده را به سرعت اصلاح می‌کنند."
+    },
+    {
+      "fr": "le phishing",
+      "fa": "فیشینگ (جعل هویت اینترنتی)",
+      "emoji": "🎣",
+      "difficulty": 4,
+      "ex": "Le phishing utilise de faux e-mails pour voler des mots de passe.",
+      "ex_fa": "فیشینگ از ایمیل‌های جعلی برای سرقت رمزهای عبور استفاده می‌کند."
+    },
+    {
+      "fr": "l'ingénierie sociale",
+      "fa": "مهندسی اجتماعی",
+      "emoji": "🎭",
+      "difficulty": 5,
+      "ex": "L'ingénierie sociale manipule la psychologie humaine plutôt que le code.",
+      "ex_fa": "مهندسی اجتماعی به جای کد، روان‌شناسی انسان را دستکاری می‌کند."
+    },
+    {
+      "fr": "le ransomware",
+      "fa": "باج‌افزار",
+      "emoji": "💰",
+      "difficulty": 5,
+      "ex": "Le ransomware a verrouillé tous les fichiers de l'entreprise.",
+      "ex_fa": "باج‌افزار تمام فایل‌های شرکت را قفل کرد."
+    },
+    {
+      "fr": "le serveur",
+      "fa": "سرور",
+      "emoji": "🖥️",
+      "difficulty": 3,
+      "ex": "Le serveur central héberge les données de tous les clients.",
+      "ex_fa": "سرور مرکزی میزبان داده‌های تمام مشتریان است."
+    },
+    {
+      "fr": "l'anonymat",
+      "fa": "ناشناسی",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "Le réseau Tor garantit l'anonymat de ses utilisateurs.",
+      "ex_fa": "شبکه تور، ناشناسی کاربرانش را تضمین می‌کند."
+    },
+    {
+      "fr": "la faille",
+      "fa": "حفره امنیتی",
+      "emoji": "🕳️",
+      "difficulty": 4,
+      "ex": "Le hacker a exploité une faille zero-day pour s'introduire.",
+      "ex_fa": "هکر از یک حفره امنیتی روز صفر برای نفوذ استفاده کرد."
+    },
+    {
+      "fr": "le botnet",
+      "fa": "شبکه رباتیک (بات‌نت)",
+      "emoji": "🤖",
+      "difficulty": 5,
+      "ex": "Le botnet a lancé une attaque massive par déni de service.",
+      "ex_fa": "شبکه رباتیک یک حمله عظیم محروم‌سازی از سرویس را آغاز کرد."
+    },
+    {
+      "fr": "le lanceur d'alerte",
+      "fa": "افشاگر",
+      "emoji": "📢",
+      "difficulty": 5,
+      "ex": "Le lanceur d'alerte a révélé les programmes de surveillance secrète.",
+      "ex_fa": "افشاگر، برنامه‌های نظارت مخفیانه را فاش کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'attaque invisible",
+      "text": "Elliot est un génie de la {{BLANK_1}} qui travaille le jour et pirate la nuit. Il découvre une énorme {{BLANK_12}} dans le {{BLANK_10}} principal d'une multinationale corrompue. Pour s'y introduire, il contourne d'abord le {{BLANK_5}} en exploitant une {{BLANK_6}} non corrigée. Il n'utilise pas la force brute, mais préfère le {{BLANK_7}}, envoyant de faux e-mails aux employés. Grâce à l'{{BLANK_8}}, il manipule un cadre pour qu'il clique sur un lien piégé. Ce lien installe discrètement un {{BLANK_4}} qui ouvre une porte dérobée. Une fois à l'intérieur, Elliot déploie un {{BLANK_9}} qui verrouille les bases de données financières. L'entreprise panique et contacte les autorités, mais Elliot utilise le réseau Tor pour garantir son {{BLANK_11}} total. En parallèle, un vaste {{BLANK_13}} de milliers d'ordinateurs zombies sature les systèmes de défense. Tout cela est protégé par un {{BLANK_3}} complexe que personne ne peut briser. Finalement, Elliot agit comme un {{BLANK_14}}, publiant les preuves de corruption sur internet. Le {{BLANK_2}} éthique a réussi, et les secrets de l'entreprise sont enfin exposés au monde.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cybersécurité",
+          "options": [
+            "cybersécurité",
+            "faille",
+            "serveur",
+            "pare-feu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "piratage",
+          "options": [
+            "piratage",
+            "chiffrement",
+            "malware",
+            "botnet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "chiffrement",
+          "options": [
+            "chiffrement",
+            "vulnérabilité",
+            "phishing",
+            "ingénierie sociale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "malware",
+          "options": [
+            "malware",
+            "ransomware",
+            "anonymat",
+            "lanceur d'alerte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pare-feu",
+          "options": [
+            "pare-feu",
+            "serveur",
+            "faille",
+            "botnet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "vulnérabilité",
+          "options": [
+            "vulnérabilité",
+            "cybersécurité",
+            "piratage",
+            "chiffrement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "phishing",
+          "options": [
+            "phishing",
+            "malware",
+            "ransomware",
+            "anonymat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "ingénierie sociale",
+          "options": [
+            "ingénierie sociale",
+            "pare-feu",
+            "vulnérabilité",
+            "lanceur d'alerte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ransomware",
+          "options": [
+            "ransomware",
+            "botnet",
+            "serveur",
+            "chiffrement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "serveur",
+          "options": [
+            "serveur",
+            "faille",
+            "pare-feu",
+            "malware"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "anonymat",
+          "options": [
+            "anonymat",
+            "phishing",
+            "ingénierie sociale",
+            "ransomware"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "faille",
+          "options": [
+            "faille",
+            "cybersécurité",
+            "botnet",
+            "vulnérabilité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "botnet",
+          "options": [
+            "botnet",
+            "serveur",
+            "lanceur d'alerte",
+            "piratage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "lanceur d'alerte",
+          "options": [
+            "lanceur d'alerte",
+            "chiffrement",
+            "anonymat",
+            "phishing"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les fantômes de silicium",
+      "inspiration": "Mr. Robot (Sam Esmail, 2015)",
+      "text": "À peine Elliot eut-il appuyé sur la touche Entrée que la matrice numérique révéla ses cicatrices invisibles. Dans l'ombre de sa chambre new-yorkaise, il n'était pas qu'un simple technicien de la {{BLANK_1}}, mais un justicier solitaire traquant les démons du capitalisme. Le géant E Corp cachait ses péchés dans un {{BLANK_10}} blindé, une forteresse de données protégée par un {{BLANK_5}} impénétrable. Mais Elliot savait que toute armure possède une {{BLANK_12}}, une minuscule fissure née de l'arrogance humaine. Plutôt que de s'attaquer au code, il utilisa l'{{BLANK_8}}, cette manipulation toxique de l'âme humaine, en envoyant une vague de {{BLANK_7}} qui trompa la cupidité d'un cadre supérieur. Un simple clic suffit pour qu'un {{BLANK_4}} insidieux s'infiltre comme un venin silencieux. Une fois maître des lieux, il ne détruisit pas, il prit en otage. Le {{BLANK_9}} chiffra des décennies de dettes et de mensonges, réduisant l'empire financier à l'impuissance. Les systèmes hurlèrent, mais Elliot se fondit dans l'{{BLANK_11}} du réseau sombre, devenant un fantôme de silicium. Dehors, un {{BLANK_13}} d'ordinateurs esclaves lançait des assauts pour aveugler les gardiens. Tout ce qu'il volait était scellé par un {{BLANK_3}} mathématique absolu. Ce {{BLANK_2}} n'était pas un crime, mais une révolution. Tel un {{BLANK_14}} des temps modernes, il offrit la vérité brute au monde, prouvant que dans cet univers de verre et de lumière, la plus grande {{BLANK_6}} n'était pas dans les machines, mais dans l'illusion de notre propre liberté.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cybersécurité",
+          "options": [
+            "cybersécurité",
+            "faille",
+            "serveur",
+            "pare-feu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "piratage",
+          "options": [
+            "piratage",
+            "chiffrement",
+            "malware",
+            "botnet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "chiffrement",
+          "options": [
+            "chiffrement",
+            "vulnérabilité",
+            "phishing",
+            "ingénierie sociale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "malware",
+          "options": [
+            "malware",
+            "ransomware",
+            "anonymat",
+            "lanceur d'alerte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pare-feu",
+          "options": [
+            "pare-feu",
+            "serveur",
+            "faille",
+            "botnet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "vulnérabilité",
+          "options": [
+            "vulnérabilité",
+            "cybersécurité",
+            "piratage",
+            "chiffrement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "phishing",
+          "options": [
+            "phishing",
+            "malware",
+            "ransomware",
+            "anonymat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "ingénierie sociale",
+          "options": [
+            "ingénierie sociale",
+            "pare-feu",
+            "vulnérabilité",
+            "lanceur d'alerte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ransomware",
+          "options": [
+            "ransomware",
+            "botnet",
+            "serveur",
+            "chiffrement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "serveur",
+          "options": [
+            "serveur",
+            "faille",
+            "pare-feu",
+            "malware"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "anonymat",
+          "options": [
+            "anonymat",
+            "phishing",
+            "ingénierie sociale",
+            "ransomware"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "faille",
+          "options": [
+            "faille",
+            "cybersécurité",
+            "botnet",
+            "vulnérabilité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "botnet",
+          "options": [
+            "botnet",
+            "serveur",
+            "lanceur d'alerte",
+            "piratage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "lanceur d'alerte",
+          "options": [
+            "lanceur d'alerte",
+            "chiffrement",
+            "anonymat",
+            "phishing"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Cybersécurité et hacking",
+    "title_fa": "آزمون : امنیت سایبری و هک",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'ensemble des pratiques et technologies visant à protéger les systèmes informatiques et les réseaux contre les attaques est la ____.",
+        "options": [
+          "cybersécurité",
+          "faille",
+          "serveur",
+          "pare-feu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محافظت از سیستم‌های رایانه‌ای = cybersécurité."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action illégale de s'introduire dans un système informatique pour voler, modifier ou détruire des données est le ____.",
+        "options": [
+          "piratage",
+          "chiffrement",
+          "malware",
+          "botnet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نفوذ غیرقانونی به سیستم = piratage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus qui transforme des informations claires en un code illisible sans une clé secrète est le ____.",
+        "options": [
+          "chiffrement",
+          "vulnérabilité",
+          "phishing",
+          "ingénierie sociale"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تبدیل اطلاعات به کد ناخوانا = chiffrement."
+      },
+      {
+        "type": "mcq",
+        "question": "Un logiciel malveillant conçu pour endommager un système ou voler des informations à l'insu de l'utilisateur est un ____.",
+        "options": [
+          "malware",
+          "ransomware",
+          "anonymat",
+          "lanceur d'alerte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نرم‌افزار مخرب = malware."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système de sécurité réseau qui surveille et contrôle le trafic entrant et sortant selon des règles prédéfinies est le ____.",
+        "options": [
+          "pare-feu",
+          "serveur",
+          "faille",
+          "botnet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم کنترل ترافیک شبکه = pare-feu."
+      },
+      {
+        "type": "mcq",
+        "question": "La faiblesse ou le défaut dans un système informatique qui peut être exploité par un cybercriminel est la ____.",
+        "options": [
+          "vulnérabilité",
+          "cybersécurité",
+          "piratage",
+          "chiffrement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نقطه ضعف سیستم = vulnérabilité."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique frauduleuse qui envoie de faux messages (souvent des e-mails) pour inciter la victime à révéler des informations personnelles est le ____.",
+        "options": [
+          "phishing",
+          "malware",
+          "ransomware",
+          "anonymat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جعل هویت برای سرقت اطلاعات = phishing."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de manipuler psychologiquement les gens pour qu'ils commettent des erreurs de sécurité ou divulguent des secrets est l'____.",
+        "options": [
+          "ingénierie sociale",
+          "pare-feu",
+          "vulnérabilité",
+          "lanceur d'alerte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستکاری روانی افراد = ingénierie sociale."
+      },
+      {
+        "type": "mcq",
+        "question": "Le type de malware qui bloque l'accès aux données de la victime et exige une rançon financière pour les restituer est le ____.",
+        "options": [
+          "ransomware",
+          "botnet",
+          "serveur",
+          "chiffrement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بدافزار باج‌گیر = ransomware."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ordinateur ou le système central qui fournit des ressources, des données ou des services à d'autres ordinateurs sur un réseau est le ____.",
+        "options": [
+          "serveur",
+          "faille",
+          "pare-feu",
+          "malware"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کامپیوتر ارائه‌دهنده خدمات = serveur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'état d'une personne dont l'identité réelle ne peut pas être découverte sur internet est l'____.",
+        "options": [
+          "anonymat",
+          "phishing",
+          "ingénierie sociale",
+          "ransomware"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پنهان بودن هویت = anonymat."
+      },
+      {
+        "type": "mcq",
+        "question": "La brèche spécifique dans le code d'un logiciel qui permet à un attaquant de contourner les sécurités est la ____.",
+        "options": [
+          "faille",
+          "cybersécurité",
+          "botnet",
+          "vulnérabilité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حفره و شکاف امنیتی = faille."
+      },
+      {
+        "type": "mcq",
+        "question": "Un réseau d'ordinateurs infectés et contrôlés à distance par un pirate pour mener des attaques coordonnées est un ____.",
+        "options": [
+          "botnet",
+          "serveur",
+          "lanceur d'alerte",
+          "piratage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شبکه کامپیوترهای آلوده و کنترل‌شده = botnet."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui révèle publiquement des activités illégales, immorales ou secrètes au sein d'une organisation est le ____.",
+        "options": [
+          "lanceur d'alerte",
+          "chiffrement",
+          "anonymat",
+          "phishing"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص افشاگر فساد = lanceur d'alerte."
+      },
+      {
+        "type": "binary",
+        "question": "Le phishing repose principalement sur l'exploitation de failles techniques complexes dans le code des sites web.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. فیشینگ بر پایه فریب روانی و مهندسی اجتماعی کاربران استوار است، نه حفره‌های کدنویسی."
+      },
+      {
+        "type": "binary",
+        "question": "Le chiffrement garantit que seules les personnes possédant la clé de déchiffrement peuvent lire le message original.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. رمزنگاری فقط به صاحبان کلید اجازه خواندن پیام را می‌دهد."
+      },
+      {
+        "type": "binary",
+        "question": "Un ransomware détruit définitivement les fichiers de l'ordinateur sans possibilité de les récupérer.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. باج‌افزار فایل‌ها را رمزنگاری و گروگان می‌گیرد، آن‌ها را نابود نمی‌کند (هرچند بدون کلید غیرقابل دسترسی‌اند)."
+      },
+      {
+        "type": "binary",
+        "question": "Le pare-feu agit comme une barrière filtrante entre un réseau interne sécurisé et un réseau externe comme internet.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. فایروال مانند یک دیوار و فیلتر بین شبکه داخلی و اینترنت عمل می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Un botnet est constitué d'ordinateurs légitimes dont les propriétaires sont pleinement conscients de leur utilisation malveillante.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. بات‌نت‌ها از کامپیوترهای آلوده‌ای تشکیل شده‌اند که صاحبانشان معمولاً از کنترل هکر بی‌خبرند."
+      },
+      {
+        "type": "binary",
+        "question": "L'ingénierie sociale cible le facteur humain, considéré comme le maillon le plus faible de la sécurité informatique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. مهندسی اجتماعی، انسان را که ضعیف‌ترین حلقه امنیت است هدف قرار می‌دهد."
+      }
+    ]
+  }
+}
