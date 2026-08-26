@@ -1,0 +1,680 @@
+{
+  "id": "fencing_swordsmanship",
+  "level": "C1",
+  "theme": "Escrime, duel et art de l'épée",
+  "theme_fa": "شمشیرزنی، دوئل و هنر اپه",
+  "icon": "🤺",
+  "inspiration": "La Princesse des Fées (The Princess Bride - Rob Reiner, 1987)",
+  "words": [
+    {
+      "fr": "l'escrime",
+      "fa": "شمشیرزنی",
+      "emoji": "🤺",
+      "difficulty": 4,
+      "ex": "L'escrime est un sport olympique qui allie rapidité et stratégie.",
+      "ex_fa": "شمشیرزنی یک ورزش المپیکی است که سرعت و استراتژی را ترکیب می‌کند."
+    },
+    {
+      "fr": "le fleuret",
+      "fa": "فلوره (نوعی شمشیر)",
+      "emoji": "🗡️",
+      "difficulty": 4,
+      "ex": "Au fleuret, seules les touches portées sur le tronc sont valables.",
+      "ex_fa": "در فلوره، فقط ضربات واردشده به بالاتنه معتبر هستند."
+    },
+    {
+      "fr": "l'épée",
+      "fa": "اپه (شمشیر سنگین)",
+      "emoji": "⚔️",
+      "difficulty": 4,
+      "ex": "À l'épée, le corps entier est une cible valable.",
+      "ex_fa": "در اپه، تمام بدن یک هدف معتبر است."
+    },
+    {
+      "fr": "le sabre",
+      "fa": "سابر (شمشیر برنده)",
+      "emoji": "🔪",
+      "difficulty": 4,
+      "ex": "Le sabre permet de toucher l'adversaire avec le tranchant de la lame.",
+      "ex_fa": "سابر امکان ضربه زدن با لبه تیغه را می‌دهد."
+    },
+    {
+      "fr": "la touche",
+      "fa": "ضربه، امتیاز",
+      "emoji": "🎯",
+      "difficulty": 3,
+      "ex": "L'arbitre valide la touche quand la lame atteint la cible.",
+      "ex_fa": "داور زمانی ضربه را تأیید می‌کند که تیغه به هدف برسد."
+    },
+    {
+      "fr": "la parade",
+      "fa": "دفاع، دفع حمله",
+      "emoji": "🛡️",
+      "difficulty": 4,
+      "ex": "Une parade parfaite écarte la lame adverse et ouvre une opportunité.",
+      "ex_fa": "دفاع کامل تیغه حریف را دفع کرده و فرصت ایجاد می‌کند."
+    },
+    {
+      "fr": "la riposte",
+      "fa": "پاتک، ضدحمله",
+      "emoji": "⚡",
+      "difficulty": 4,
+      "ex": "La riposte immédiate après une parade surprend souvent l'attaquant.",
+      "ex_fa": "پاتک فوری پس از دفاع اغلب مهاجم را غافلگیر می‌کند."
+    },
+    {
+      "fr": "la feinte",
+      "fa": "حرکت فریب‌دهنده",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "Une feinte habile pousse l'adversaire à réagir de manière prévisible.",
+      "ex_fa": "حرکت فریب‌دهنده ماهرانه حریف را وادار به واکنشی قابل پیش‌بینی می‌کند."
+    },
+    {
+      "fr": "le masque",
+      "fa": "ماسک محافظ",
+      "emoji": "🎭",
+      "difficulty": 3,
+      "ex": "Le masque métallique protège le visage et la gorge des coups.",
+      "ex_fa": "ماسک فلزی از صورت و گلو در برابر ضربات محافظت می‌کند."
+    },
+    {
+      "fr": "la piste",
+      "fa": "پیست شمشیرزنی",
+      "emoji": "📏",
+      "difficulty": 3,
+      "ex": "Les escrimeurs ne doivent pas sortir des limites de la piste.",
+      "ex_fa": "شمشیرزنان نباید از مرزهای پیست خارج شوند."
+    },
+    {
+      "fr": "l'assaut",
+      "fa": "راند، تقابل",
+      "emoji": "🤼",
+      "difficulty": 5,
+      "ex": "L'assaut dure jusqu'à ce qu'un tireur marque un certain nombre de points.",
+      "ex_fa": "تقابل تا زمانی که یک شمشیرزن به تعداد مشخصی امتیاز برسد ادامه می‌یابد."
+    },
+    {
+      "fr": "le plastron",
+      "fa": "محافظ سینه (لباس مخصوص)",
+      "emoji": "🦺",
+      "difficulty": 4,
+      "ex": "Le plastron électrique enregistre les touches grâce à des capteurs.",
+      "ex_fa": "محافظ سینه الکتریکی ضربات را از طریق حسگرها ثبت می‌کند."
+    },
+    {
+      "fr": "la garde",
+      "fa": "حالت آماده‌باش (گارد)",
+      "emoji": "🧍",
+      "difficulty": 4,
+      "ex": "La position de garde permet d'attaquer et de se défendre rapidement.",
+      "ex_fa": "حالت گارد امکان حمله و دفاع سریع را می‌دهد."
+    },
+    {
+      "fr": "le salut",
+      "fa": "احترام نظامی (سلام)",
+      "emoji": "🙇",
+      "difficulty": 3,
+      "ex": "Avant le combat, les escrimeurs se font face et exécutent le salut traditionnel.",
+      "ex_fa": "قبل از مبارزه، شمشیرزنان رو به هم ایستاده و سلام سنتی را اجرا می‌کنند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La vengeance d'Inigo",
+      "text": "Inigo Montoya a consacré toute sa vie à l'{{BLANK_1}} pour venger l'assassinat de son père. Il maîtrise parfaitement le {{BLANK_2}} léger, l'{{BLANK_3}} noble et le {{BLANK_4}} tranchant des anciens maîtres espagnols. Sur la {{BLANK_10}} d'entraînement, il répète chaque mouvement avec une précision absolue. Il adopte une {{BLANK_13}} ferme avant d'échanger un {{BLANK_14}} respectueux avec son partenaire. Lors de l'{{BLANK_11}}, il exécute une {{BLANK_8}} pour tromper l'ennemi, puis une solide {{BLANK_6}} pour bloquer l'attaque adverse. Immédiatement, il place une {{BLANK_7}} foudroyante qui touche le {{BLANK_12}} de son opposant. La {{BLANK_5}} est validée par l'arbitre. Il porte toujours son {{BLANK_9}} pour protéger son visage des coups accidentels. Son rêve absolu est de retrouver l'homme à six doigts et de lui dire : « Bonjour, je m'appelle Inigo Montoya, tu as tué mon père, prépare-toi à mourir. »",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "escrime",
+          "options": [
+            "escrime",
+            "fleuret",
+            "épée",
+            "sabre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fleuret",
+          "options": [
+            "fleuret",
+            "touche",
+            "parade",
+            "riposte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "épée",
+          "options": [
+            "épée",
+            "feinte",
+            "masque",
+            "piste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "sabre",
+          "options": [
+            "sabre",
+            "assaut",
+            "plastron",
+            "garde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "touche",
+          "options": [
+            "touche",
+            "salut",
+            "escrime",
+            "fleuret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "parade",
+          "options": [
+            "parade",
+            "épée",
+            "sabre",
+            "assaut"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "riposte",
+          "options": [
+            "riposte",
+            "plastron",
+            "garde",
+            "salut"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "feinte",
+          "options": [
+            "feinte",
+            "escrime",
+            "fleuret",
+            "touche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "masque",
+          "options": [
+            "masque",
+            "parade",
+            "riposte",
+            "feinte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "piste",
+          "options": [
+            "piste",
+            "masque",
+            "assaut",
+            "plastron"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "assaut",
+          "options": [
+            "assaut",
+            "garde",
+            "salut",
+            "escrime"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "plastron",
+          "options": [
+            "plastron",
+            "fleuret",
+            "épée",
+            "sabre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "garde",
+          "options": [
+            "garde",
+            "touche",
+            "parade",
+            "riposte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "salut",
+          "options": [
+            "salut",
+            "feinte",
+            "masque",
+            "piste"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le ballet de l'acier",
+      "inspiration": "La Princesse des Fées (The Princess Bride - Rob Reiner, 1987)",
+      "text": "À peine Inigo eut-il dégainé son {{BLANK_3}} sous le clair de lune des falaises de Florin qu'il sentit le poids de vingt années de vengeance alléger son cœur. Ce maître d'{{BLANK_1}}, qui avait sacrifié sa jeunesse pour devenir une légende, faisait face à l'homme en noir. Sur la {{BLANK_10}} étroite bordée par le vide, chaque pas était une danse avec la mort. Derrière son {{BLANK_9}} de métal, ses yeux brillaient d'une joie pure : enfin, un adversaire digne de son art. Il adopta la {{BLANK_13}} classique, échangea un {{BLANK_14}} solennel, et l'{{BLANK_11}} s'engagea dans un cliquetis d'acier qui résonnait comme une symphonie. Inigo multipliait les {{BLANK_8}}s subtiles, testant les réflexes de son ennemi. Quand la lame adverse cherchait son cœur, sa {{BLANK_6}} était un mur infranchissable, suivie instantanément d'une {{BLANK_7}} qui venait mordre le {{BLANK_12}} adverse. La {{BLANK_5}} était d'une précision chirurgicale. Qu'il manie le {{BLANK_2}} léger, l'{{BLANK_3}} noble ou le {{BLANK_4}} tranchant, Inigo ne se battait pas pour tuer, mais pour honorer la mémoire d'un père assassiné. Et quand il prononça enfin les mots sacrés face à l'homme aux six doigts, il sut que son épée n'avait jamais été une arme, mais la clé qui ouvrait enfin la cage de son deuil.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "escrime",
+          "options": [
+            "escrime",
+            "fleuret",
+            "épée",
+            "sabre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fleuret",
+          "options": [
+            "fleuret",
+            "touche",
+            "parade",
+            "riposte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "épée",
+          "options": [
+            "épée",
+            "feinte",
+            "masque",
+            "piste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "sabre",
+          "options": [
+            "sabre",
+            "assaut",
+            "plastron",
+            "garde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "touche",
+          "options": [
+            "touche",
+            "salut",
+            "escrime",
+            "fleuret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "parade",
+          "options": [
+            "parade",
+            "épée",
+            "sabre",
+            "assaut"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "riposte",
+          "options": [
+            "riposte",
+            "plastron",
+            "garde",
+            "salut"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "feinte",
+          "options": [
+            "feinte",
+            "escrime",
+            "fleuret",
+            "touche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "masque",
+          "options": [
+            "masque",
+            "parade",
+            "riposte",
+            "feinte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "piste",
+          "options": [
+            "piste",
+            "masque",
+            "assaut",
+            "plastron"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "assaut",
+          "options": [
+            "assaut",
+            "garde",
+            "salut",
+            "escrime"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "plastron",
+          "options": [
+            "plastron",
+            "fleuret",
+            "épée",
+            "sabre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "garde",
+          "options": [
+            "garde",
+            "touche",
+            "parade",
+            "riposte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "salut",
+          "options": [
+            "salut",
+            "feinte",
+            "masque",
+            "piste"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Escrime et duel",
+    "title_fa": "آزمون : شمشیرزنی و دوئل",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le sport de combat qui consiste à toucher son adversaire avec une arme blanche (fleuret, épée, sabre) est l'____.",
+        "options": [
+          "escrime",
+          "fleuret",
+          "épée",
+          "sabre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزش رزمی با سلاح سرد = escrime."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arme d'escrime légère et flexible où seules les touches portées sur le buste avec la pointe sont valables est le ____.",
+        "options": [
+          "fleuret",
+          "touche",
+          "parade",
+          "riposte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سلاح سبک با هدف بالاتنه = fleuret."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arme d'escrime plus lourde où le corps entier est une cible valable et où il n'y a pas de règle de priorité est l'____.",
+        "options": [
+          "épée",
+          "feinte",
+          "masque",
+          "piste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سلاح سنگین‌تر با هدف کل بدن = épée."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arme d'escrime qui permet de toucher l'adversaire à la fois avec la pointe et le tranchant de la lame est le ____.",
+        "options": [
+          "sabre",
+          "assaut",
+          "plastron",
+          "garde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سلاحی که با نوک و لبه ضربه می‌زند = sabre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de frapper l'adversaire avec la pointe ou le tranchant de l'arme pour marquer un point est la ____.",
+        "options": [
+          "touche",
+          "salut",
+          "escrime",
+          "fleuret"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضربه زدن برای کسب امتیاز = touche."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action défensive qui consiste à écarter l'arme adverse avec sa propre lame est la ____.",
+        "options": [
+          "parade",
+          "épée",
+          "sabre",
+          "assaut"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرکت دفاعی برای دفع تیغه حریف = parade."
+      },
+      {
+        "type": "mcq",
+        "question": "L'attaque offensive réalisée immédiatement après avoir réussi une parade est la ____.",
+        "options": [
+          "riposte",
+          "plastron",
+          "garde",
+          "salut"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حمله فوری پس از دفاع موفق = riposte."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mouvement trompeur destiné à provoquer une réaction prévisible chez l'adversaire est la ____.",
+        "options": [
+          "feinte",
+          "escrime",
+          "fleuret",
+          "touche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرکت فریب‌دهنده = feinte."
+      },
+      {
+        "type": "mcq",
+        "question": "L'équipement de protection métallique qui couvre le visage et le cou de l'escrimeur est le ____.",
+        "options": [
+          "masque",
+          "parade",
+          "riposte",
+          "feinte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تجهیزات محافظ صورت و گردن = masque."
+      },
+      {
+        "type": "mcq",
+        "question": "La surface de combat rectangulaire et délimitée sur laquelle évoluent les deux escrimeurs est la ____.",
+        "options": [
+          "piste",
+          "masque",
+          "assaut",
+          "plastron"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محوطه مستطیلی مبارزه = piste."
+      },
+      {
+        "type": "mcq",
+        "question": "Le combat ou la phase de jeu où les deux tireurs s'affrontent pour marquer des points est l'____.",
+        "options": [
+          "assaut",
+          "garde",
+          "salut",
+          "escrime"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فاز مبارزه و کسب امتیاز = assaut."
+      },
+      {
+        "type": "mcq",
+        "question": "Le vêtement protecteur porté sur le torse et qui peut être relié à un appareil électrique pour signaler les touches est le ____.",
+        "options": [
+          "plastron",
+          "fleuret",
+          "épée",
+          "sabre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لباس محافظ سینه = plastron."
+      },
+      {
+        "type": "mcq",
+        "question": "La position fondamentale de l'escrimeur, prêt à attaquer ou à se défendre, est la ____.",
+        "options": [
+          "garde",
+          "touche",
+          "parade",
+          "riposte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حالت پایه و آماده‌باش = garde."
+      },
+      {
+        "type": "mcq",
+        "question": "Le geste protocolaire et respectueux effectué avec l'arme avant et après le combat est le ____.",
+        "options": [
+          "salut",
+          "feinte",
+          "masque",
+          "piste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرکت احترام‌آمیز با سلاح = salut."
+      },
+      {
+        "type": "binary",
+        "question": "Au fleuret, il est permis de toucher l'adversaire sur les jambes et la tête pour marquer des points.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. در فلوره (fleuret) فقط بالاتنه هدف معتبر است."
+      },
+      {
+        "type": "binary",
+        "question": "La riposte est une attaque immédiate qui suit une parade réussie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پاتک (riposte) حمله‌ای است که بلافاصله پس از دفاع انجام می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le masque d'escrime est optionnel lors des entraînements légers.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ماسک همیشه برای محافظت از صورت و گردن الزامی است."
+      },
+      {
+        "type": "binary",
+        "question": "L'assaut désigne la période de combat où les deux tireurs s'affrontent pour marquer des points.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. assaut به دوره مبارزه و امتیازگیری گفته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La feinte est un mouvement destiné à tromper l'adversaire pour l'inciter à faire une parade inutile.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. حرکت فریب‌دهنده برای وادار کردن حریف به دفاع اشتباه است."
+      },
+      {
+        "type": "binary",
+        "question": "Le salut est un geste de courtoisie traditionnel qui précède et suit chaque combat d'escrime.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سلام (salut) یک رسم احترام‌آمیز قبل و بعد از مبارزه است."
+      }
+    ]
+  }
+}
