@@ -1,0 +1,680 @@
+{
+  "id": "haute_gastronomy",
+  "level": "C1",
+  "theme": "Haute gastronomie, critique culinaire et étoile",
+  "theme_fa": "آشپزی عالی، منتقد غذایی و ستاره میشلن",
+  "icon": "🍽️",
+  "inspiration": "Ratatouille (Brad Bird, 2007)",
+  "words": [
+    {
+      "fr": "la gastronomie",
+      "fa": "گاسترونامی، آشپزی عالی",
+      "emoji": "🍽️",
+      "difficulty": 4,
+      "ex": "La gastronomie française est inscrite au patrimoine mondial de l'UNESCO.",
+      "ex_fa": "آشپزی عالی فرانسوی در میراث جهانی یونسکو ثبت شده است."
+    },
+    {
+      "fr": "le chef",
+      "fa": "سرآشپز",
+      "emoji": "👨‍🍳",
+      "difficulty": 2,
+      "ex": "Le chef étoilé dirige sa brigade avec une exigence absolue.",
+      "ex_fa": "سرآشپز ستاره‌دار تیمش را با سخت‌گیری مطلق هدایت می‌کند."
+    },
+    {
+      "fr": "la recette",
+      "fa": "دستور پخت",
+      "emoji": "📖",
+      "difficulty": 2,
+      "ex": "Cette recette secrète se transmet de génération en génération.",
+      "ex_fa": "این دستور پخت مخفی نسل به نسل منتقل می‌شود."
+    },
+    {
+      "fr": "l'étoile",
+      "fa": "ستاره (میشلن)",
+      "emoji": "⭐",
+      "difficulty": 3,
+      "ex": "Obtenir une troisième étoile consacre le restaurant au sommet mondial.",
+      "ex_fa": "گرفتن ستاره سوم، رستوران را در قله جهانی تثبیت می‌کند."
+    },
+    {
+      "fr": "la brigade",
+      "fa": "تیم آشپزخانه (بریگاد)",
+      "emoji": "👥",
+      "difficulty": 4,
+      "ex": "La brigade de cuisine fonctionne comme une horloge suisse pendant le service.",
+      "ex_fa": "تیم آشپزخانه در طول سرویس مانند یک ساعت سوئیسی کار می‌کند."
+    },
+    {
+      "fr": "le palais",
+      "fa": "ذائقه، کام",
+      "emoji": "👅",
+      "difficulty": 3,
+      "ex": "Son palais exercé détecte la moindre imperfection dans la sauce.",
+      "ex_fa": "ذائقه آموزش‌دیده‌اش کوچکترین نقص در سس را تشخیص می‌دهد."
+    },
+    {
+      "fr": "la réduction",
+      "fa": "تغلیظ، سس غلیظ",
+      "emoji": "🍲",
+      "difficulty": 4,
+      "ex": "La réduction du vin rouge concentre les arômes et la profondeur du goût.",
+      "ex_fa": "تغلیظ شراب قرمز، عطرها و عمق طعم را متمرکز می‌کند."
+    },
+    {
+      "fr": "le dressage",
+      "fa": "چیدمان بشقاب (درساژ)",
+      "emoji": "🍽️",
+      "difficulty": 5,
+      "ex": "Le dressage de l'assiette est une œuvre d'art visuel avant d'être gustatif.",
+      "ex_fa": "چیدمان بشقاب قبل از اینکه چشایی باشد، یک اثر هنری بصری است."
+    },
+    {
+      "fr": "le critique",
+      "fa": "منتقد",
+      "emoji": "📝",
+      "difficulty": 3,
+      "ex": "Le critique gastronomique peut faire ou défaire la réputation d'un restaurant.",
+      "ex_fa": "منتقد غذایی می‌تواند اعتبار یک رستوران را بسازد یا نابود کند."
+    },
+    {
+      "fr": "le caviar",
+      "fa": "خاویار",
+      "emoji": "🐟",
+      "difficulty": 3,
+      "ex": "Le caviar d'Aquitaine est servi sur un lit de blinis et de crème fraîche.",
+      "ex_fa": "خاویار آکیتن روی بستری از بلینی و خامه ترش سرو می‌شود."
+    },
+    {
+      "fr": "la papille",
+      "fa": "جوانه چشایی",
+      "emoji": "👅",
+      "difficulty": 4,
+      "ex": "L'acidité du citron réveille immédiatement les papilles endormies.",
+      "ex_fa": "اسیدیته لیمو فوراً جوانه‌های چشایی خوابیده را بیدار می‌کند."
+    },
+    {
+      "fr": "le bouillon",
+      "fa": "عصاره، آب گوشت",
+      "emoji": "🍜",
+      "difficulty": 3,
+      "ex": "Un bouillon clair et parfumé est la base de nombreuses soupes raffinées.",
+      "ex_fa": "عصاره شفاف و معطر پایه بسیاری از سوپ‌های ظریف است."
+    },
+    {
+      "fr": "la pincée",
+      "fa": "یک مقدار کم (پینسه)",
+      "emoji": "🤏",
+      "difficulty": 3,
+      "ex": "Une pincée de sel de Guérande rehausse la douceur du caramel.",
+      "ex_fa": "یک مقدار کم نمک گِراند، شیرینی کارامل را برجسته می‌کند."
+    },
+    {
+      "fr": "le festin",
+      "fa": "ضیافت",
+      "emoji": "🍷",
+      "difficulty": 3,
+      "ex": "Le repas de mariage s'est transformé en un véritable festin royal.",
+      "ex_fa": "غذای عروسی به یک ضیافت واقعی سلطنتی تبدیل شد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le petit rat des cuisines",
+      "text": "Rémy est un petit rongeur doté d'un {{BLANK_6}} exceptionnel et de {{BLANK_11}}s ultra-sensibles. Il rêve de {{BLANK_1}} dans le grand restaurant parisien de son idole, le {{BLANK_2}} Auguste Gusteau. Caché sous la toque d'un jeune commis, il dirige secrètement la {{BLANK_5}} entière. Il invente une nouvelle {{BLANK_3}} révolutionnaire, commençant par un {{BLANK_12}} de légumes parfaitement clarifié. Il ajoute une {{BLANK_13}} d'herbes fraîches et maîtrise l'art de la {{BLANK_7}} pour créer une sauce onctueuse. Le {{BLANK_8}} de l'assiette est d'une précision géométrique, digne d'un tableau. Il ose même servir quelques grains de {{BLANK_10}} noir sur une entrée de poisson. Le soir de la visite du redoutable {{BLANK_9}} Anton Ego, le restaurant est en émoi. Ego attend un {{BLANK_14}} mémorable, prêt à détruire l'établissement. Mais dès la première bouchée du plat modeste, son enfance lui revient en mémoire. Ému aux larmes, il rédige un article magnifique qui rend au restaurant son {{BLANK_4}} perdue, prouvant que le grand art peut naître de n'importe où.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "gastronomie",
+          "options": [
+            "gastronomie",
+            "chef",
+            "recette",
+            "étoile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "chef",
+          "options": [
+            "chef",
+            "brigade",
+            "palais",
+            "réduction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "recette",
+          "options": [
+            "recette",
+            "dressage",
+            "critique",
+            "caviar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "étoile",
+          "options": [
+            "étoile",
+            "papille",
+            "bouillon",
+            "pincée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "brigade",
+          "options": [
+            "brigade",
+            "festin",
+            "gastronomie",
+            "chef"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "palais",
+          "options": [
+            "palais",
+            "recette",
+            "étoile",
+            "brigade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "réduction",
+          "options": [
+            "réduction",
+            "dressage",
+            "critique",
+            "caviar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dressage",
+          "options": [
+            "dressage",
+            "papille",
+            "bouillon",
+            "pincée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "critique",
+          "options": [
+            "critique",
+            "festin",
+            "gastronomie",
+            "chef"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "caviar",
+          "options": [
+            "caviar",
+            "recette",
+            "étoile",
+            "brigade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "papilles",
+          "options": [
+            "papilles",
+            "palais",
+            "réduction",
+            "dressage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "bouillon",
+          "options": [
+            "bouillon",
+            "critique",
+            "caviar",
+            "papille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "pincée",
+          "options": [
+            "pincée",
+            "festin",
+            "gastronomie",
+            "chef"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "festin",
+          "options": [
+            "festin",
+            "recette",
+            "étoile",
+            "brigade"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La madeleine du tyran",
+      "inspiration": "Ratatouille (Brad Bird, 2007)",
+      "text": "À peine le {{BLANK_9}} Anton Ego eut-il porté la cuillère à ses lèvres que le silence de mort qui régnait dans la salle se brisa en mille éclats de mémoire. Ce tyran de la {{BLANK_1}}, dont la plume glacée avait fermé plus de cuisines que les services d'hygiène, s'attendait à un {{BLANK_14}} prétentieux, noyé sous le {{BLANK_10}} et l'or. Mais on lui avait servi la pauvreté sublime de son enfance. Dans l'ombre de la cuisine, une petite créature aux {{BLANK_11}}s bénies des dieux avait orchestré la {{BLANK_5}} terrifiée d'un grand {{BLANK_2}} déchu. Ce génie invisible avait compris que la {{BLANK_3}} parfaite n'est pas une équation chimique, mais un voyage vers l'âme. Le {{BLANK_12}} avait mijoté des heures, la {{BLANK_7}} du vin avait capturé le temps, et le {{BLANK_8}} de l'assiette reflétait une humilité absolue. Une simple {{BLANK_13}} de thym sauvage avait suffi à réveiller le {{BLANK_6}} endormi du vieil homme. En pleurant sur son assiette vide, Ego comprit que la véritable {{BLANK_4}} ne se gagne pas dans les palais dorés, mais dans la capacité d'un artiste, quelle que soit son espèce, à transformer la misère du monde en un pur acte d'amour comestible.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "gastronomie",
+          "options": [
+            "gastronomie",
+            "chef",
+            "recette",
+            "étoile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "chef",
+          "options": [
+            "chef",
+            "brigade",
+            "palais",
+            "réduction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "recette",
+          "options": [
+            "recette",
+            "dressage",
+            "critique",
+            "caviar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "étoile",
+          "options": [
+            "étoile",
+            "papille",
+            "bouillon",
+            "pincée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "brigade",
+          "options": [
+            "brigade",
+            "festin",
+            "gastronomie",
+            "chef"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "palais",
+          "options": [
+            "palais",
+            "recette",
+            "étoile",
+            "brigade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "réduction",
+          "options": [
+            "réduction",
+            "dressage",
+            "critique",
+            "caviar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dressage",
+          "options": [
+            "dressage",
+            "papille",
+            "bouillon",
+            "pincée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "critique",
+          "options": [
+            "critique",
+            "festin",
+            "gastronomie",
+            "chef"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "caviar",
+          "options": [
+            "caviar",
+            "recette",
+            "étoile",
+            "brigade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "papilles",
+          "options": [
+            "papilles",
+            "palais",
+            "réduction",
+            "dressage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "bouillon",
+          "options": [
+            "bouillon",
+            "critique",
+            "caviar",
+            "papille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "pincée",
+          "options": [
+            "pincée",
+            "festin",
+            "gastronomie",
+            "chef"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "festin",
+          "options": [
+            "festin",
+            "recette",
+            "étoile",
+            "brigade"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Haute gastronomie",
+    "title_fa": "آزمون : آشپزی عالی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art de préparer des repas raffinés et de déguster la bonne chère, élevé au rang de culture, est la ____.",
+        "options": [
+          "gastronomie",
+          "chef",
+          "recette",
+          "étoile"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر پخت و چشیدن غذای عالی = gastronomie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le cuisinier professionnel qui dirige une cuisine et crée les menus d'un restaurant est le ____.",
+        "options": [
+          "chef",
+          "brigade",
+          "palais",
+          "réduction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آشپز حرفه‌ای و مدیر = chef."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des instructions détaillées et des ingrédients nécessaires pour préparer un plat est la ____.",
+        "options": [
+          "recette",
+          "dressage",
+          "critique",
+          "caviar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستورالعمل تهیه غذا = recette."
+      },
+      {
+        "type": "mcq",
+        "question": "La distinction suprême attribuée par le guide Michelin aux meilleurs restaurants du monde est l'____.",
+        "options": [
+          "étoile",
+          "papille",
+          "bouillon",
+          "pincée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نشان افتخار راهنمای میشلن = étoile."
+      },
+      {
+        "type": "mcq",
+        "question": "L'équipe hiérarchisée de cuisiniers qui travaille sous les ordres du chef pendant le service est la ____.",
+        "options": [
+          "brigade",
+          "festin",
+          "gastronomie",
+          "chef"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تیم سلسله‌مراتبی آشپزخانه = brigade."
+      },
+      {
+        "type": "mcq",
+        "question": "L'organe du goût et, par extension, la capacité d'une personne à apprécier et juger les saveurs est le ____.",
+        "options": [
+          "palais",
+          "recette",
+          "étoile",
+          "brigade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اندام چشایی و قدرت تشخیص طعم = palais."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique culinaire qui consiste à faire évaporer l'eau d'un liquide pour en concentrer les saveurs est la ____.",
+        "options": [
+          "réduction",
+          "dressage",
+          "critique",
+          "caviar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک تبخیر و غلیظ کردن سس = réduction."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de disposer et de présenter les aliments dans l'assiette de manière esthétique avant le service est le ____.",
+        "options": [
+          "dressage",
+          "papille",
+          "bouillon",
+          "pincée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر چیدمان زیبایی‌شناختی بشقاب = dressage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le journaliste ou expert qui évalue la qualité des restaurants et publie ses avis dans la presse est le ____.",
+        "options": [
+          "critique",
+          "festin",
+          "gastronomie",
+          "chef"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کارشناس و روزنامه‌نگار ارزیاب = critique."
+      },
+      {
+        "type": "mcq",
+        "question": "Les œufs d'esturgeon salés, considérés comme un mets de luxe et de grand raffinement, sont le ____.",
+        "options": [
+          "caviar",
+          "recette",
+          "étoile",
+          "brigade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تخم ماهیان خاویاری = caviar."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit organe sensoriel situé sur la langue qui permet de percevoir les différentes saveurs est la ____.",
+        "options": [
+          "papille",
+          "palais",
+          "réduction",
+          "dressage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اندام کوچک حسی روی زبان = papille."
+      },
+      {
+        "type": "mcq",
+        "question": "Le liquide aromatique obtenu par la cuisson lente de viandes, de légumes ou de poissons dans l'eau est le ____.",
+        "options": [
+          "bouillon",
+          "critique",
+          "caviar",
+          "papille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مایع معطر پخت آرام = bouillon."
+      },
+      {
+        "type": "mcq",
+        "question": "La très petite quantité d'un ingrédient en poudre (sel, épices) que l'on prend entre deux doigts est la ____.",
+        "options": [
+          "pincée",
+          "festin",
+          "gastronomie",
+          "chef"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مقدار بسیار کم بین دو انگشت = pincée."
+      },
+      {
+        "type": "mcq",
+        "question": "Un repas très copieux, luxueux et célébratoire, comportant de nombreux mets raffinés, est le ____.",
+        "options": [
+          "festin",
+          "recette",
+          "étoile",
+          "brigade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وعده غذایی مفصل و باشکوه = festin."
+      },
+      {
+        "type": "binary",
+        "question": "Le dressage d'une assiette se réfère à la technique de nettoyage et de stérilisation de la vaisselle avant le service.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. dressage به هنر چیدمان و تزیین غذا در بشقاب اشاره دارد."
+      },
+      {
+        "type": "binary",
+        "question": "La brigade désigne l'équipe de cuisiniers organisée hiérarchiquement dans un restaurant professionnel.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بریگاد ساختار سلسله‌مراتبی تیم آشپزخانه است."
+      },
+      {
+        "type": "binary",
+        "question": "Obtenir une étoile au guide Michelin est une distinction mineure qui n'a aucun impact sur la renommée d'un restaurant.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ستاره میشلن معتبرترین افتخار در دنیای آشپزی است و تأثیر عظیمی بر شهرت رستوران دارد."
+      },
+      {
+        "type": "binary",
+        "question": "La réduction est une technique qui consiste à ajouter de l'eau à une sauce pour la rendre plus liquide.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. réduction به معنای جوشاندن و تبخیر آب برای غلیظ‌تر کردن و تمرکز طعم سس است."
+      },
+      {
+        "type": "binary",
+        "question": "Le palais désigne à la fois le toit de la bouche et le sens du goût d'un dégustateur expert.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. palais هم به کام دهان و هم به ذائقه و قدرت تشخیص طعم اشاره دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le critique gastronomique est le propriétaire du restaurant qui goûte ses propres plats avant l'ouverture.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. منتقد (critique) یک روزنامه‌نگار یا کارشناس مستقل است که رستوران‌ها را ارزیابی می‌کند."
+      }
+    ]
+  }
+}
