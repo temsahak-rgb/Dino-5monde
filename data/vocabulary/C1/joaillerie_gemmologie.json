@@ -1,0 +1,680 @@
+{
+  "id": "joaillerie_gemmologie",
+  "level": "C1",
+  "theme": "Joaillerie, gemmologie et pierres précieuses",
+  "theme_fa": "جواهرسازی، سنگ‌شناسی و سنگ‌های قیمتی",
+  "icon": "💎",
+  "inspiration": "Blood Diamond (Edward Zwick, 2006)",
+  "words": [
+    {
+      "fr": "le diamant",
+      "fa": "الماس",
+      "emoji": "💎",
+      "difficulty": 2,
+      "ex": "Le diamant est le minéral naturel le plus dur connu.",
+      "ex_fa": "الماس سخت‌ترین ماده معدنی طبیعی شناخته‌شده است."
+    },
+    {
+      "fr": "la gemme",
+      "fa": "سنگ قیمتی",
+      "emoji": "💍",
+      "difficulty": 4,
+      "ex": "Cette gemme transparente capture la lumière de manière exceptionnelle.",
+      "ex_fa": "این سنگ قیمتی شفاف، نور را به شکل استثنایی جذب می‌کند."
+    },
+    {
+      "fr": "le joaillier",
+      "fa": "جواهرساز",
+      "emoji": "👨‍🎨",
+      "difficulty": 3,
+      "ex": "Le joaillier crée des pièces uniques pour sa haute clientèle.",
+      "ex_fa": "جواهرساز قطعات منحصربه‌فردی برای مشتریان خاص خود خلق می‌کند."
+    },
+    {
+      "fr": "la facette",
+      "fa": "تراش، وجه (سنگ)",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "Chaque facette est polie pour maximiser l'éclat de la pierre.",
+      "ex_fa": "هر وجه برای به حداکثر رساندن درخشش سنگ صیقل داده می‌شود."
+    },
+    {
+      "fr": "le carat",
+      "fa": "قیراط (واحد وزن)",
+      "emoji": "⚖️",
+      "difficulty": 3,
+      "ex": "Ce diamant pèse plus de cinq carats et vaut une fortune.",
+      "ex_fa": "این الماس بیش از پنج قیراط وزن دارد و ثروتی می‌ارزد."
+    },
+    {
+      "fr": "le sertissage",
+      "fa": "مخروط‌کاری، نشاندن سنگ",
+      "emoji": "🛠️",
+      "difficulty": 5,
+      "ex": "Le sertissage en griffe maintient la pierre solidement sur l'anneau.",
+      "ex_fa": "نشاندن چنگکی، سنگ را محکم روی حلقه نگه می‌دارد."
+    },
+    {
+      "fr": "l'écrin",
+      "fa": "جعبه جواهر",
+      "emoji": "🎁",
+      "difficulty": 4,
+      "ex": "Le collier repose sur du velours dans un écrin en acajou.",
+      "ex_fa": "گردنبند روی مخمل در یک جعبه جواهر ماهون قرار دارد."
+    },
+    {
+      "fr": "la bague",
+      "fa": "انگشتر، حلقه",
+      "emoji": "💍",
+      "difficulty": 2,
+      "ex": "Il a glissé la bague de fiançailles à son doigt.",
+      "ex_fa": "او حلقه نامزدی را در انگشتش کرد."
+    },
+    {
+      "fr": "le collier",
+      "fa": "گردنبند",
+      "emoji": "📿",
+      "difficulty": 2,
+      "ex": "Le collier de perles appartenait à sa grand-mère.",
+      "ex_fa": "گردنبند مروارید متعلق به مادربزرگش بود."
+    },
+    {
+      "fr": "la perle",
+      "fa": "مروارید",
+      "emoji": "⚪",
+      "difficulty": 3,
+      "ex": "La perle naturelle se forme à l'intérieur d'une huître.",
+      "ex_fa": "مروارید طبیعی در داخل یک صدف تشکیل می‌شود."
+    },
+    {
+      "fr": "le saphir",
+      "fa": "یاقوت کبود",
+      "emoji": "🔵",
+      "difficulty": 4,
+      "ex": "Le saphir du Cachemire est prisé pour son bleu profond.",
+      "ex_fa": "یاقوت کبود کشمیر به خاطر آبی عمیقش ارزشمند است."
+    },
+    {
+      "fr": "l'émeraude",
+      "fa": "زمرد",
+      "emoji": "🟢",
+      "difficulty": 4,
+      "ex": "L'émeraude colombienne possède une teinte verte incomparable.",
+      "ex_fa": "زمرد کلمبیایی دارای رنگ سبز بی‌نظیری است."
+    },
+    {
+      "fr": "le rubis",
+      "fa": "یاقوت سرخ",
+      "emoji": "🔴",
+      "difficulty": 4,
+      "ex": "Le rubis sang-de-pigeon est la variété la plus rare.",
+      "ex_fa": "یاقوت سرخ خون‌کبوتری کمیاب‌ترین نوع است."
+    },
+    {
+      "fr": "l'orfèvre",
+      "fa": "طلاساز، زرگر",
+      "emoji": "🔨",
+      "difficulty": 4,
+      "ex": "L'orfèvre façonne l'or et l'argent avec une précision millimétrique.",
+      "ex_fa": "زرگر طلا و نقره را با دقت میلی‌متری شکل می‌دهد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'atelier des merveilles",
+      "text": "Solomon est un {{BLANK_3}} talentueux qui travaille dans la place Vendôme à Paris. Aujourd'hui, il doit monter une pièce exceptionnelle. Il examine une {{BLANK_2}} brute à l'aide de sa loupe. C'est un magnifique {{BLANK_1}} de plus de dix {{BLANK_5}}s. Il commence par calculer la {{BLANK_4}} parfaite pour révéler son feu intérieur. Sur son établi, d'autres pierres l'attendent : un {{BLANK_11}} bleu nuit, une {{BLANK_12}} verte aux refets profonds, et un {{BLANK_13}} rouge sang. Son collègue, un maître {{BLANK_14}}, prépare la monture en or blanc. Solomon procède ensuite au {{BLANK_6}} délicat, fixant la pierre centrale avec des griffes invisibles. Autour, il ajoute une petite {{BLANK_10}} nacrée pour adoucir le contraste. L'œuvre finale sera une {{BLANK_8}} royale, bien plus imposante qu'une simple {{BLANK_7}}. Quand il ferme le lourd {{BLANK_7}} en cuir doublé de soie, il sait que ce {{BLANK_9}} unique fera pleurer de joie celle qui le portera, ignorant peut-être le long et douloureux voyage de la pierre depuis les mines lointaines.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "diamant",
+          "options": [
+            "diamant",
+            "gemme",
+            "joaillier",
+            "facette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "gemme",
+          "options": [
+            "gemme",
+            "carat",
+            "sertissage",
+            "écrin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "joaillier",
+          "options": [
+            "joaillier",
+            "bague",
+            "collier",
+            "perle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "facette",
+          "options": [
+            "facette",
+            "saphir",
+            "émeraude",
+            "rubis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "carats",
+          "options": [
+            "carats",
+            "orfèvre",
+            "diamant",
+            "gemme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "sertissage",
+          "options": [
+            "sertissage",
+            "joaillier",
+            "facette",
+            "carat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "bague",
+          "options": [
+            "bague",
+            "écrin",
+            "collier",
+            "perle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "collier",
+          "options": [
+            "collier",
+            "saphir",
+            "émeraude",
+            "rubis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "écrin",
+          "options": [
+            "écrin",
+            "orfèvre",
+            "diamant",
+            "gemme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "perle",
+          "options": [
+            "perle",
+            "joaillier",
+            "facette",
+            "carat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "saphir",
+          "options": [
+            "saphir",
+            "sertissage",
+            "bague",
+            "collier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "émeraude",
+          "options": [
+            "émeraude",
+            "écrin",
+            "perle",
+            "saphir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "rubis",
+          "options": [
+            "rubis",
+            "orfèvre",
+            "diamant",
+            "gemme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "orfèvre",
+          "options": [
+            "orfèvre",
+            "joaillier",
+            "facette",
+            "carat"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le poids de la lumière",
+      "inspiration": "Blood Diamond (Edward Zwick, 2006)",
+      "text": "À peine Solomon eut-il ajusté sa loupe sur son œil fatigué que l'histoire sanglante du monde se révéla dans les reflets de la pierre. Ce {{BLANK_3}} exilé, qui avait fui les terres rouges de la guerre, tenait entre ses pincettes une {{BLANK_2}} maudite. Ce n'était pas qu'un simple {{BLANK_1}}, c'était le cristallisation de la cupidité humaine, pesant son poids de {{BLANK_5}}s de souffrance et de larmes. Il se souvenait des enfants aux mains coupées dans les mines, creusant la terre pour extraire cette lumière glaciale. Sur l'établi parisien, loin de la poussière et de la mort, il devait tailler la {{BLANK_4}} parfaite pour que le monde oublie l'origine du monstre. Il travaillait l'or comme un pieux {{BLANK_14}}, préparant le {{BLANK_6}} qui emprisonnerait l'étoile volée. Autour, il disposerait des {{BLANK_10}}s douces, un {{BLANK_11}} mélancolique, une {{BLANK_12}} aveuglante, un {{BLANK_13}} brûlant, pour créer un {{BLANK_8}} d'apparat, bien trop lourd pour une simple {{BLANK_7}} de fiançailles. Quand il refermerait le {{BLANK_9}} de velours, il saurait que la beauté absolue exige toujours un sacrifice invisible. La cliente sourirait en ignorant que le feu qui dansait dans la gemme n'était pas celui du soleil, mais l'incendie lointain d'un continent en flammes, capturé à jamais dans la prison transparente de la vanité humaine.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "diamant",
+          "options": [
+            "diamant",
+            "gemme",
+            "joaillier",
+            "facette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "gemme",
+          "options": [
+            "gemme",
+            "carat",
+            "sertissage",
+            "écrin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "joaillier",
+          "options": [
+            "joaillier",
+            "bague",
+            "collier",
+            "perle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "facette",
+          "options": [
+            "facette",
+            "saphir",
+            "émeraude",
+            "rubis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "carats",
+          "options": [
+            "carats",
+            "orfèvre",
+            "diamant",
+            "gemme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "sertissage",
+          "options": [
+            "sertissage",
+            "joaillier",
+            "facette",
+            "carat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "bague",
+          "options": [
+            "bague",
+            "écrin",
+            "collier",
+            "perle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "collier",
+          "options": [
+            "collier",
+            "saphir",
+            "émeraude",
+            "rubis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "écrin",
+          "options": [
+            "écrin",
+            "orfèvre",
+            "diamant",
+            "gemme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "perles",
+          "options": [
+            "perles",
+            "joaillier",
+            "facette",
+            "carat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "saphir",
+          "options": [
+            "saphir",
+            "sertissage",
+            "bague",
+            "collier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "émeraude",
+          "options": [
+            "émeraude",
+            "écrin",
+            "perle",
+            "saphir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "rubis",
+          "options": [
+            "rubis",
+            "orfèvre",
+            "diamant",
+            "gemme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "orfèvre",
+          "options": [
+            "orfèvre",
+            "joaillier",
+            "facette",
+            "carat"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Joaillerie et pierres précieuses",
+    "title_fa": "آزمون : جواهرسازی و سنگ‌های قیمتی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La pierre précieuse transparente, composée de carbone pur et réputée pour sa dureté extrême, est le ____.",
+        "options": [
+          "diamant",
+          "gemme",
+          "joaillier",
+          "facette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سنگ قیمتی شفاف و بسیار سخت = diamant."
+      },
+      {
+        "type": "mcq",
+        "question": "Le terme générique désignant une pierre précieuse ou fine, taillée et polie pour la bijouterie, est la ____.",
+        "options": [
+          "gemme",
+          "carat",
+          "sertissage",
+          "écrin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واژه کلی برای سنگ‌های قیمتی = gemme."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artisan qui conçoit, fabrique et vend des bijoux ornés de pierres précieuses est le ____.",
+        "options": [
+          "joaillier",
+          "bague",
+          "collier",
+          "perle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طراح و سازنده جواهرات = joaillier."
+      },
+      {
+        "type": "mcq",
+        "question": "Chacune des petites surfaces planes et polies taillées sur une pierre pour en multiplier l'éclat est la ____.",
+        "options": [
+          "facette",
+          "saphir",
+          "émeraude",
+          "rubis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطوح صیقلی و چندوجهی سنگ = facette."
+      },
+      {
+        "type": "mcq",
+        "question": "L'unité de masse utilisée spécifiquement pour peser les pierres précieuses (équivalant à 0,2 gramme) est le ____.",
+        "options": [
+          "carat",
+          "orfèvre",
+          "diamant",
+          "gemme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واحد وزن سنگ‌های قیمتی = carat."
+      },
+      {
+        "type": "mcq",
+        "question": "L'opération technique qui consiste à fixer solidement une pierre précieuse sur le métal du bijou est le ____.",
+        "options": [
+          "sertissage",
+          "joaillier",
+          "facette",
+          "carat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل تثبیت سنگ روی فلز = sertissage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit coffret précieux, souvent tapissé de velours ou de soie, utilisé pour ranger les bijoux est l'____.",
+        "options": [
+          "écrin",
+          "orfèvre",
+          "diamant",
+          "gemme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جعبه کوچک و نفیس جواهر = écrin."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bijou circulaire que l'on porte autour d'un doigt, souvent symbole d'engagement, est la ____.",
+        "options": [
+          "bague",
+          "écrin",
+          "collier",
+          "perle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جواهری که در انگشت انداخته می‌شود = bague."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bijou constitué d'une chaîne ou d'un rang de perles qui se porte autour du cou est le ____.",
+        "options": [
+          "collier",
+          "saphir",
+          "émeraude",
+          "rubis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جواهری که دور گردن بسته می‌شود = collier."
+      },
+      {
+        "type": "mcq",
+        "question": "La concrétion nacrée, généralement blanche et sphérique, produite par certains mollusques marins est la ____.",
+        "options": [
+          "perle",
+          "joaillier",
+          "facette",
+          "carat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مروارید تولیدشده توسط صدف = perle."
+      },
+      {
+        "type": "mcq",
+        "question": "La pierre précieuse d'un bleu profond, variété de corindon, est le ____.",
+        "options": [
+          "saphir",
+          "sertissage",
+          "bague",
+          "collier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سنگ قیمتی آبی‌رنگ = saphir."
+      },
+      {
+        "type": "mcq",
+        "question": "La pierre précieuse très prisée pour sa couleur verte intense et brillante est l'____.",
+        "options": [
+          "émeraude",
+          "écrin",
+          "perle",
+          "saphir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سنگ قیمتی سبز رنگ = émeraude."
+      },
+      {
+        "type": "mcq",
+        "question": "La pierre précieuse d'un rouge vif, variété rouge du corindon, est le ____.",
+        "options": [
+          "rubis",
+          "orfèvre",
+          "diamant",
+          "gemme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سنگ قیمتی سرخ‌رنگ = rubis."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artisan spécialiste du travail et de la ciselure des métaux précieux (or, argent) pour créer des objets ou bijoux est l'____.",
+        "options": [
+          "orfèvre",
+          "joaillier",
+          "facette",
+          "carat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنرمند و استاد کار با فلزات قیمتی = orfèvre."
+      },
+      {
+        "type": "binary",
+        "question": "Le joaillier et l'orfèvre exercent exactement le même métier et travaillent principalement les mêmes matériaux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. جواهرساز (joaillier) روی سنگ‌های قیمتی و ترکیب آن‌ها با فلز تمرکز دارد، در حالی که زرگر (orfèvre) بیشتر روی شکل‌دهی و حجیم‌سازی خود فلزات کار می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La facette est une petite surface plane taillée sur une pierre pour réfléchir la lumière et créer des scintillements.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تراش‌های چندوجهی (facettes) برای درخشش سنگ ایجاد می‌شوند."
+      },
+      {
+        "type": "binary",
+        "question": "Le carat est une unité de mesure qui définit la pureté de l'or (ex: or 18 carats).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "این تعریف تا حدی درست است اما در سنگ‌شناسی، carat واحد *وزن* سنگ (۰.۲ گرم) است. (برای طلا از عیار یا karat استفاده می‌شود اما در فرانسه carat برای هر دو به کار می‌رود. برای جلوگیری از ابهام، گزینه را بر اساس وزن سنگ در نظر می‌گیریم: در این سوال منظور واحد وزن سنگ است، نه خلوص)."
+      },
+      {
+        "type": "binary",
+        "question": "Le sertissage est l'action de fixer une pierre précieuse dans une monture métallique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. نشاندن یا مخراج‌کاری (sertissage) تثبیت سنگ روی پایه فلزی است."
+      },
+      {
+        "type": "binary",
+        "question": "La perle est une pierre précieuse extraite des mines profondes en Afrique du Sud.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. مروارید (perle) یک ماده آلی است که توسط صدف‌ها در دریا تولید می‌شود، نه در معدن."
+      },
+      {
+        "type": "binary",
+        "question": "Le rubis, le saphir et l'émeraude sont classés parmi les pierres précieuses traditionnelles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. این سه سنگ به همراه الماس در دسته چهار سنگ قیمتی اصلی و کلاسیک قرار دارند."
+      }
+    ]
+  }
+}
