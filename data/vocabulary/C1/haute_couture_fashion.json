@@ -1,0 +1,680 @@
+{
+  "id": "haute_couture_fashion",
+  "level": "C1",
+  "theme": "Haute couture, mode et création vestimentaire",
+  "theme_fa": "اوت کوتور، مد و طراحی لباس",
+  "icon": "🧵",
+  "inspiration": "Phantom Thread (Paul Thomas Anderson, 2017)",
+  "words": [
+    {
+      "fr": "la haute couture",
+      "fa": "اوت کوتور (مد عالی)",
+      "emoji": "👗",
+      "difficulty": 4,
+      "ex": "La haute couture parisienne dicte les tendances mondiales du luxe.",
+      "ex_fa": "اوت کوتور پاریس روندهای جهانی لوکس را دیکته می‌کند."
+    },
+    {
+      "fr": "le couturier",
+      "fa": "طراح مد، خیاط",
+      "emoji": "✂️",
+      "difficulty": 3,
+      "ex": "Le couturier crée des pièces uniques pour une clientèle élitiste.",
+      "ex_fa": "طراح مد قطعات منحصربه‌فردی برای مشتریان خاص خلق می‌کند."
+    },
+    {
+      "fr": "le tissu",
+      "fa": "پارچه",
+      "emoji": "🧵",
+      "difficulty": 2,
+      "ex": "Le choix du tissu détermine la chute et l'élégance de la robe.",
+      "ex_fa": "انتخاب پارچه، ریزش و ظرافت لباس را تعیین می‌کند."
+    },
+    {
+      "fr": "la soie",
+      "fa": "ابریشم",
+      "emoji": "✨",
+      "difficulty": 3,
+      "ex": "La soie naturelle possède un éclat incomparable et une douceur extrême.",
+      "ex_fa": "ابریشم طبیعی درخششی بی‌نظیر و لطافتی فوق‌العاده دارد."
+    },
+    {
+      "fr": "le velours",
+      "fa": "مخمل",
+      "emoji": "🧸",
+      "difficulty": 3,
+      "ex": "Le velours bordeaux absorbe la lumière et donne une allure royale.",
+      "ex_fa": "مخمل زرشکی نور را جذب و ظاهری سلطنتی ایجاد می‌کند."
+    },
+    {
+      "fr": "la dentelle",
+      "fa": "توری، گیپور",
+      "emoji": "🕸️",
+      "difficulty": 4,
+      "ex": "La dentelle de Calais orne les manches avec une délicatesse arachnéenne.",
+      "ex_fa": "توری کاله، آستین‌ها را با ظرافتی تار عنکبوتی تزیین می‌کند."
+    },
+    {
+      "fr": "le fil",
+      "fa": "نخ",
+      "emoji": "🧵",
+      "difficulty": 2,
+      "ex": "Un fil de couleur parfaitement assortie rend les coutures invisibles.",
+      "ex_fa": "نخ با رنگ کاملاً هماهنگ، دوخت‌ها را نامرئی می‌کند."
+    },
+    {
+      "fr": "l'aiguille",
+      "fa": "سوزن",
+      "emoji": "🪡",
+      "difficulty": 2,
+      "ex": "L'aiguille fine perce le tissu sans abîmer les fibres délicates.",
+      "ex_fa": "سوزن ظریف بدون آسیب به الیاف لطیف، پارچه را سوراخ می‌کند."
+    },
+    {
+      "fr": "le dé à coudre",
+      "fa": "انگشتانه",
+      "emoji": "🥄",
+      "difficulty": 4,
+      "ex": "Le dé à coudre en argent protège le doigt qui pousse l'aiguille.",
+      "ex_fa": "انگشتانه نقره‌ای از انگشتی که سوزن را هل می‌دهد محافظت می‌کند."
+    },
+    {
+      "fr": "la robe",
+      "fa": "لباس زنانه، پیراهن",
+      "emoji": "👗",
+      "difficulty": 2,
+      "ex": "La robe de mariée a nécessité plus de cinq cents heures de travail.",
+      "ex_fa": "لباس عروس به بیش از پانصد ساعت کار نیاز داشت."
+    },
+    {
+      "fr": "le mannequin",
+      "fa": "مدل، مانکن",
+      "emoji": "🧍‍♀️",
+      "difficulty": 3,
+      "ex": "Le mannequin défile sur le podium en portant la nouvelle collection.",
+      "ex_fa": "مدل با پوشیدن کلکسیون جدید روی سکو قدم می‌زند."
+    },
+    {
+      "fr": "le défilé",
+      "fa": "نمایش مد",
+      "emoji": "📸",
+      "difficulty": 3,
+      "ex": "Le défilé de mode présente les créations de la saison prochaine.",
+      "ex_fa": "نمایش مد، طراحی‌های فصل آینده را ارائه می‌دهد."
+    },
+    {
+      "fr": "la broderie",
+      "fa": "گلدوزی",
+      "emoji": "🪡",
+      "difficulty": 4,
+      "ex": "La broderie de perles et de cristaux transforme le vêtement en bijou.",
+      "ex_fa": "گلدوزی با مروارید و کریستال، لباس را به جواهر تبدیل می‌کند."
+    },
+    {
+      "fr": "le croquis",
+      "fa": "طرح اولیه، اسکچ",
+      "emoji": "✏️",
+      "difficulty": 4,
+      "ex": "Le couturier dessine un croquis rapide pour capturer son inspiration.",
+      "ex_fa": "طراح مد برای ثبت الهامش، طرح اولیه سریعی می‌کشد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La maison Woodcock",
+      "text": "Reynolds Woodcock est un {{BLANK_2}} londonien renommé, maître incontesté de la {{BLANK_1}}. Chaque matin, il commence par dessiner un {{BLANK_14}} précis de sa nouvelle vision. Il sélectionne ensuite le {{BLANK_3}} parfait : une {{BLANK_4}} irisée pour l'été, ou un lourd {{BLANK_5}} pour l'hiver. Dans son atelier silencieux, ses ouvrières assemblent les pièces avec un {{BLANK_7}} de couleur exacte. Chaque {{BLANK_8}} d'acier danse sous leurs doigts protégés par un {{BLANK_9}} en métal. Il ajoute une {{BLANK_6}} délicate sur les poignets et une magnifique {{BLANK_13}} de fleurs sur le corsage. Quand la {{BLANK_10}} est enfin terminée, il la fait essayer sur un {{BLANK_11}} vivant pour ajuster la coupe au millimètre. Le soir du {{BLANK_12}}, les flashs crépitent. Les spectateurs retiennent leur souffle en voyant passer cette œuvre d'art portable, fruit de la passion obsessionnelle d'un homme qui coud son âme dans chaque ourlet.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "haute couture",
+          "options": [
+            "haute couture",
+            "couturier",
+            "tissu",
+            "soie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "couturier",
+          "options": [
+            "couturier",
+            "velours",
+            "dentelle",
+            "fil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tissu",
+          "options": [
+            "tissu",
+            "aiguille",
+            "dé à coudre",
+            "robe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "soie",
+          "options": [
+            "soie",
+            "mannequin",
+            "défilé",
+            "broderie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "velours",
+          "options": [
+            "velours",
+            "croquis",
+            "haute couture",
+            "couturier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "dentelle",
+          "options": [
+            "dentelle",
+            "tissu",
+            "soie",
+            "velours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "fil",
+          "options": [
+            "fil",
+            "dentelle",
+            "aiguille",
+            "dé à coudre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "aiguille",
+          "options": [
+            "aiguille",
+            "robe",
+            "mannequin",
+            "défilé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "dé à coudre",
+          "options": [
+            "dé à coudre",
+            "broderie",
+            "croquis",
+            "haute couture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "robe",
+          "options": [
+            "robe",
+            "couturier",
+            "tissu",
+            "soie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "mannequin",
+          "options": [
+            "mannequin",
+            "velours",
+            "dentelle",
+            "fil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "défilé",
+          "options": [
+            "défilé",
+            "aiguille",
+            "dé à coudre",
+            "robe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "broderie",
+          "options": [
+            "broderie",
+            "mannequin",
+            "défilé",
+            "croquis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "croquis",
+          "options": [
+            "croquis",
+            "haute couture",
+            "couturier",
+            "tissu"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le fil de l'obsession",
+      "inspiration": "Phantom Thread (Paul Thomas Anderson, 2017)",
+      "text": "À peine Reynolds eut-il effleuré la {{BLANK_4}} froide qu'il sut que cette étoffe exigerait le sacrifice d'une nouvelle muse. Ce {{BLANK_2}} tyrannique, souverain absolu de la {{BLANK_1}} londonienne, ne créait pas des vêtements, il tissait des prisons de beauté. Son {{BLANK_14}}, tracé d'une main tremblante de fièvre, était le plan d'une architecture amoureuse. Il choisissait le {{BLANK_3}} comme on choisit une peau : le lourd {{BLANK_5}} pour cacher les secrets, la {{BLANK_6}} fragile pour rappeler la vulvabilité des amants. Dans la pénombre de l'atelier, l'{{BLANK_8}} perçait la matière, guidée par un {{BLANK_7}} invisible qui reliait son cœur à celui de la femme qui l'inspirait. Protégé par son vieux {{BLANK_9}} d'argent, il brodait des messages codés dans la doublure, une {{BLANK_13}} intime que seule la porteuse pourrait deviner contre sa peau. Quand la {{BLANK_10}} épousait enfin les courbes du {{BLANK_11}}, il comprenait que son amour était éphémère. Bientôt, elle marcherait sous les projecteurs du {{BLANK_12}}, offrant au monde ce qu'il avait de plus précieux, le laissant seul avec ses fantômes et ses bobines de fil, éternel captif d'une élégance qui ne pardonnait aucune faiblesse humaine.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "haute couture",
+          "options": [
+            "haute couture",
+            "couturier",
+            "tissu",
+            "soie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "couturier",
+          "options": [
+            "couturier",
+            "velours",
+            "dentelle",
+            "fil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tissu",
+          "options": [
+            "tissu",
+            "aiguille",
+            "dé à coudre",
+            "robe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "soie",
+          "options": [
+            "soie",
+            "mannequin",
+            "défilé",
+            "broderie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "velours",
+          "options": [
+            "velours",
+            "croquis",
+            "haute couture",
+            "couturier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "dentelle",
+          "options": [
+            "dentelle",
+            "tissu",
+            "soie",
+            "velours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "fil",
+          "options": [
+            "fil",
+            "dentelle",
+            "aiguille",
+            "dé à coudre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "aiguille",
+          "options": [
+            "aiguille",
+            "robe",
+            "mannequin",
+            "défilé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "dé à coudre",
+          "options": [
+            "dé à coudre",
+            "broderie",
+            "croquis",
+            "haute couture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "robe",
+          "options": [
+            "robe",
+            "couturier",
+            "tissu",
+            "soie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "mannequin",
+          "options": [
+            "mannequin",
+            "velours",
+            "dentelle",
+            "fil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "défilé",
+          "options": [
+            "défilé",
+            "aiguille",
+            "dé à coudre",
+            "robe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "broderie",
+          "options": [
+            "broderie",
+            "mannequin",
+            "défilé",
+            "croquis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "croquis",
+          "options": [
+            "croquis",
+            "haute couture",
+            "couturier",
+            "tissu"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Haute couture et mode",
+    "title_fa": "آزمون : اوت کوتور و مد",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le secteur de luxe de la mode qui crée des vêtements sur mesure, uniques et d'une extrême qualité est la ____.",
+        "options": [
+          "haute couture",
+          "couturier",
+          "tissu",
+          "soie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش لوکس و سفارشی مد = haute couture."
+      },
+      {
+        "type": "mcq",
+        "question": "Le créateur qui dessine et réalise des vêtements, particulièrement dans le domaine du luxe, est le ____.",
+        "options": [
+          "couturier",
+          "velours",
+          "dentelle",
+          "fil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طراح و سازنده لباس = couturier."
+      },
+      {
+        "type": "mcq",
+        "question": "Le matériau souple obtenu par le tissage de fibres, base de tout vêtement, est le ____.",
+        "options": [
+          "tissu",
+          "aiguille",
+          "dé à coudre",
+          "robe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده حاصل از بافت الیاف = tissu."
+      },
+      {
+        "type": "mcq",
+        "question": "La fibre naturelle luxueuse, brillante et douce, produite par le ver du même nom est la ____.",
+        "options": [
+          "soie",
+          "mannequin",
+          "défilé",
+          "broderie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "الیاف طبیعی و لوکس = soie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étoffe épaisse, douce au toucher et à l'aspect velu, souvent utilisée pour les tenues de soirée est le ____.",
+        "options": [
+          "velours",
+          "croquis",
+          "haute couture",
+          "couturier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پارچه ضخیم و نرم = velours."
+      },
+      {
+        "type": "mcq",
+        "question": "Le tissu ajouré et délicat, formé de motifs entrelacés, souvent utilisé pour les finitions est la ____.",
+        "options": [
+          "dentelle",
+          "tissu",
+          "soie",
+          "velours"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پارچه توری و ظریف = dentelle."
+      },
+      {
+        "type": "mcq",
+        "question": "Le brin long et fin, de coton ou de polyester, utilisé pour coudre les morceaux de tissu ensemble est le ____.",
+        "options": [
+          "fil",
+          "dentelle",
+          "aiguille",
+          "dé à coudre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نخ برای دوختن = fil."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit instrument pointu en métal, muni d'un trou (chas), qui sert à faire passer le fil est l'____.",
+        "options": [
+          "aiguille",
+          "robe",
+          "mannequin",
+          "défilé"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار فلزی نوک‌تیز برای نخ کردن = aiguille."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit étui en métal, en os ou en plastique qui se met sur le doigt pour le protéger lors de la couture est le ____.",
+        "options": [
+          "dé à coudre",
+          "broderie",
+          "croquis",
+          "haute couture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محافظ انگشت در هنگام دوخت = dé à coudre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le vêtement féminin d'une seule pièce, couvrant le corps et souvent porté lors d'événements formels est la ____.",
+        "options": [
+          "robe",
+          "couturier",
+          "tissu",
+          "soie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لباس زنانه یک‌تکه = robe."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui porte les vêtements pour les présenter au public lors des shows de mode est le ____.",
+        "options": [
+          "mannequin",
+          "velours",
+          "dentelle",
+          "fil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص نمایش‌دهنده لباس = mannequin."
+      },
+      {
+        "type": "mcq",
+        "question": "L'événement où les créateurs présentent leurs nouvelles collections sur un podium est le ____.",
+        "options": [
+          "défilé",
+          "aiguille",
+          "dé à coudre",
+          "robe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رویداد نمایش کلکسیون جدید = défilé."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art d'orner un tissu en y cousant des motifs décoratifs avec des fils, perles ou paillettes est la ____.",
+        "options": [
+          "broderie",
+          "mannequin",
+          "défilé",
+          "croquis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر تزیین پارچه با دوخت = broderie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dessin préparatoire, rapide et à main levée, qui visualise l'idée du vêtement avant sa fabrication est le ____.",
+        "options": [
+          "croquis",
+          "haute couture",
+          "couturier",
+          "tissu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طرح اولیه و سریع = croquis."
+      },
+      {
+        "type": "binary",
+        "question": "La haute couture est une appellation protégée qui désigne des vêtements de luxe fabriqués sur mesure à la main.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اوت کوتور یک عنوان قانونی و محافظت‌شده در فرانسه برای لباس‌های لوکس و دست‌دوز است."
+      },
+      {
+        "type": "binary",
+        "question": "Le velours est un tissu léger, transparent et très fin, souvent utilisé pour les robes d'été.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. مخمل (velours) پارچه‌ای ضخیم، گرم و دارای پرز است، نه نازک و شفاف."
+      },
+      {
+        "type": "binary",
+        "question": "Le dé à coudre se porte sur le doigt pour éviter de se piquer avec l'aiguille en poussant le tissu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. انگشتانه (dé à coudre) از نوک انگشت در برابر سوزن محافظت می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Un croquis est la version finale et parfaitement cousue du vêtement, prête à être vendue.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اسکچ (croquis) فقط طرح اولیه و روی کاغذ است، نه لباس دوخته‌شده."
+      },
+      {
+        "type": "binary",
+        "question": "La dentelle est un tissu orné de motifs ajourés, souvent utilisé pour les détails féminins et délicats.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. توری (dentelle) پارچه‌ای شبکه‌ای و ظریف است."
+      },
+      {
+        "type": "binary",
+        "question": "Le mannequin est la personne qui fabrique les patrons en papier pour découper le tissu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. مانکن (mannequin) شخصی است که لباس را می‌پوشد و نمایش می‌دهد؛ الگوساز modéliste نامیده می‌شود."
+      }
+    ]
+  }
+}
