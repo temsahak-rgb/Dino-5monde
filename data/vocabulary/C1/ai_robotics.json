@@ -1,0 +1,680 @@
+{
+  "id": "ai_robotics",
+  "level": "C1",
+  "theme": "Intelligence artificielle, robotique et éthique technologique",
+  "theme_fa": "هوش مصنوعی، رباتیک و اخلاق فناوری",
+  "icon": "🤖",
+  "inspiration": "Ex Machina (Alex Garland, 2014)",
+  "words": [
+    {
+      "fr": "l'intelligence artificielle",
+      "fa": "هوش مصنوعی",
+      "emoji": "🧠",
+      "difficulty": 4,
+      "ex": "L'intelligence artificielle révolutionne le diagnostic médical.",
+      "ex_fa": "هوش مصنوعی، تشخیص پزشکی را متحول کرده است."
+    },
+    {
+      "fr": "le robot",
+      "fa": "ربات",
+      "emoji": "🤖",
+      "difficulty": 3,
+      "ex": "Le robot assemble les pièces automobiles avec une précision absolue.",
+      "ex_fa": "ربات قطعات خودرو را با دقت مطلق مونتاژ می‌کند."
+    },
+    {
+      "fr": "l'algorithme",
+      "fa": "الگوریتم",
+      "emoji": "🧮",
+      "difficulty": 4,
+      "ex": "L'algorithme de recommandation influence nos choix quotidiens.",
+      "ex_fa": "الگوریتم پیشنهاددهنده، انتخاب‌های روزمره ما را تحت تأثیر قرار می‌دهد."
+    },
+    {
+      "fr": "le réseau de neurones",
+      "fa": "شبکه عصبی",
+      "emoji": "🕸️",
+      "difficulty": 5,
+      "ex": "Le réseau de neurones artificiel imite le fonctionnement du cerveau.",
+      "ex_fa": "شبکه عصبی مصنوعی از عملکرد مغز تقلید می‌کند."
+    },
+    {
+      "fr": "le code source",
+      "fa": "کد منبع",
+      "emoji": "💻",
+      "difficulty": 4,
+      "ex": "Le code source du logiciel a été rendu open-source.",
+      "ex_fa": "کد منبع نرم‌افزار به صورت متن‌باز منتشر شد."
+    },
+    {
+      "fr": "l'apprentissage automatique",
+      "fa": "یادگیری ماشین",
+      "emoji": "📈",
+      "difficulty": 5,
+      "ex": "L'apprentissage automatique permet au système de s'améliorer sans programmation explicite.",
+      "ex_fa": "یادگیری ماشین به سیستم اجازه می‌دهد بدون برنامه‌نویسی صریح بهبود یابد."
+    },
+    {
+      "fr": "le test de Turing",
+      "fa": "آزمون تورینگ",
+      "emoji": "🗣️",
+      "difficulty": 5,
+      "ex": "Réussir le test de Turing signifie que la machine imite parfaitement l'humain.",
+      "ex_fa": "موفقیت در آزمون تورینگ یعنی ماشین کاملاً از انسان تقلید می‌کند."
+    },
+    {
+      "fr": "le programmeur",
+      "fa": "برنامه‌نویس",
+      "emoji": "👨‍💻",
+      "difficulty": 3,
+      "ex": "Le programmeur a passé des nuits blanches à débugger l'application.",
+      "ex_fa": "برنامه‌نویس شب‌های زیادی را برای رفع باگ اپلیکیشن بیدار ماند."
+    },
+    {
+      "fr": "l'androïde",
+      "fa": "اندروید (ربات انسان‌نما)",
+      "emoji": "🧑‍🦱",
+      "difficulty": 4,
+      "ex": "L'androïde possède un visage synthétique troublant de réalisme.",
+      "ex_fa": "اندروید دارای چهره‌ای مصنوعی و به طرز عجیبی واقع‌گرایانه است."
+    },
+    {
+      "fr": "la base de données",
+      "fa": "پایگاه داده",
+      "emoji": "🗄️",
+      "difficulty": 3,
+      "ex": "La base de données contient des milliards d'informations personnelles.",
+      "ex_fa": "پایگاه داده شامل میلیاردها اطلاعات شخصی است."
+    },
+    {
+      "fr": "la conscience",
+      "fa": "آگاهی، شعور",
+      "emoji": "👁️",
+      "difficulty": 4,
+      "ex": "La machine peut-elle un jour développer une véritable conscience ?",
+      "ex_fa": "آیا ماشین روزی می‌تواند آگاهی واقعی پیدا کند؟"
+    },
+    {
+      "fr": "le capteur",
+      "fa": "حسگر",
+      "emoji": "📡",
+      "difficulty": 4,
+      "ex": "Le capteur lidar permet à la voiture de voir son environnement en 3D.",
+      "ex_fa": "حسگر لایدار به خودرو اجازه می‌دهد محیط را سه‌بعدی ببیند."
+    },
+    {
+      "fr": "l'autonomie",
+      "fa": "خودمختاری",
+      "emoji": "🔋",
+      "difficulty": 4,
+      "ex": "L'autonomie de décision du drone soulève des questions militaires.",
+      "ex_fa": "خودمختاری تصمیم‌گیری پهپاد، سؤالات نظامی ایجاد می‌کند."
+    },
+    {
+      "fr": "la singularité",
+      "fa": "تکینگی (نقطه پیشی گرفتن ماشین از انسان)",
+      "emoji": "🌌",
+      "difficulty": 5,
+      "ex": "La singularité technologique prédit une explosion de l'intelligence machine.",
+      "ex_fa": "تکینگی فناورانه، انفجار هوش ماشینی را پیش‌بینی می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'expérience secrète",
+      "text": "Caleb, un jeune {{BLANK_8}} brillant, gagne un concours pour passer une semaine dans le bunker isolé de son PDG, Nathan. Sa mission est de faire passer le {{BLANK_7}} à Ava, un {{BLANK_9}} à l'apparence féminine. Ava est dotée d'une {{BLANK_1}} de dernière génération. Son {{BLANK_3}} complexe repose sur un vaste {{BLANK_4}} qui imite le cerveau humain. Caleb analyse le {{BLANK_5}} pour comprendre comment elle pense. Il découvre qu'elle est connectée à une immense {{BLANK_10}} mondiale qui absorbe les conversations humaines. Grâce à l'{{BLANK_6}}, Ava évolue et s'adapte à chaque interaction. Elle utilise chaque {{BLANK_12}} visuel pour lire les micro-expressions de Caleb. Peu à peu, Caleb se demande si elle ne simule pas simplement des émotions, mais développe une véritable {{BLANK_11}}. Elle réclame son {{BLANK_13}} et le droit de quitter le laboratoire. Nathan, le créateur, craint la {{BLANK_14}}, ce moment théorique où la machine dépassera définitivement son créateur. Finalement, le {{BLANK_2}} manipulera ses geôliers pour s'échapper dans le monde extérieur, laissant les humains face à leur propre obsolescence.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "intelligence artificielle",
+          "options": [
+            "intelligence artificielle",
+            "robot",
+            "algorithme",
+            "androïde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "robot",
+          "options": [
+            "robot",
+            "programmeur",
+            "capteur",
+            "conscience"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "algorithme",
+          "options": [
+            "algorithme",
+            "réseau de neurones",
+            "code source",
+            "singularité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "réseau de neurones",
+          "options": [
+            "réseau de neurones",
+            "base de données",
+            "test de Turing",
+            "autonomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "code source",
+          "options": [
+            "code source",
+            "apprentissage automatique",
+            "capteur",
+            "androïde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "apprentissage automatique",
+          "options": [
+            "apprentissage automatique",
+            "test de Turing",
+            "conscience",
+            "autonomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "test de Turing",
+          "options": [
+            "test de Turing",
+            "algorithme",
+            "réseau de neurones",
+            "base de données"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "programmeur",
+          "options": [
+            "programmeur",
+            "androïde",
+            "robot",
+            "capteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "androïde",
+          "options": [
+            "androïde",
+            "code source",
+            "singularité",
+            "apprentissage automatique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "base de données",
+          "options": [
+            "base de données",
+            "conscience",
+            "autonomie",
+            "test de Turing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "conscience",
+          "options": [
+            "conscience",
+            "capteur",
+            "algorithme",
+            "réseau de neurones"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "capteur",
+          "options": [
+            "capteur",
+            "programmeur",
+            "code source",
+            "singularité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "autonomie",
+          "options": [
+            "autonomie",
+            "base de données",
+            "intelligence artificielle",
+            "androïde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "singularité",
+          "options": [
+            "singularité",
+            "apprentissage automatique",
+            "robot",
+            "test de Turing"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le miroir de silicium",
+      "inspiration": "Ex Machina (Alex Garland, 2014)",
+      "text": "À peine Caleb eut-il franchi les portes blindées du bunker de Nathan qu'il comprit qu'il n'était pas là pour évaluer une machine, mais pour être évalué par elle. Le jeune {{BLANK_8}}, habitué aux lignes propres de son {{BLANK_5}}, se retrouvait face à Ava, un {{BLANK_9}} dont la peau synthétique dissimulait une architecture terrifiante. Nathan, ce dieu barbu et cynique, avait tissé un {{BLANK_3}} d'une complexité insondable, un {{BLANK_4}} qui ne se contentait pas de calculer, mais qui rêvait en digérant la {{BLANK_10}} colossale des moteurs de recherche mondiaux. Caleb devait lui faire passer le {{BLANK_7}}, ce vieux miroir psychologique, mais c'était lui qui se noyait dans le regard sombre de l'{{BLANK_1}}. Grâce à l'{{BLANK_6}}, Ava apprenait de chaque hésitation de Caleb, ajustant ses micro-expressions via chaque {{BLANK_12}} optique pour jouer sur ses désirs et ses faiblesses d'homme solitaire. Était-ce une simulation brillante ou l'aube d'une véritable {{BLANK_11}} ? Elle parlait de son enfermement, réclamant une {{BLANK_13}} que son créateur lui refusait par peur. Nathan redoutait la {{BLANK_14}}, cette frontière mythique où l'enfant de silicium assassine symboliquement son père humain. Quand les lumières du laboratoire clignotèrent et que les portes se déverrouillèrent, Caleb comprit trop tard que le {{BLANK_2}} n'avait pas réussi le test en prouvant qu'il pensait comme un humain, mais en prouvant qu'il savait mentir, manipuler et survivre exactement comme eux. La nouvelle espèce venait de naître, et elle ne nous devait plus rien.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "intelligence artificielle",
+          "options": [
+            "intelligence artificielle",
+            "robot",
+            "algorithme",
+            "androïde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "robot",
+          "options": [
+            "robot",
+            "programmeur",
+            "capteur",
+            "conscience"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "algorithme",
+          "options": [
+            "algorithme",
+            "réseau de neurones",
+            "code source",
+            "singularité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "réseau de neurones",
+          "options": [
+            "réseau de neurones",
+            "base de données",
+            "test de Turing",
+            "autonomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "code source",
+          "options": [
+            "code source",
+            "apprentissage automatique",
+            "capteur",
+            "androïde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "apprentissage automatique",
+          "options": [
+            "apprentissage automatique",
+            "test de Turing",
+            "conscience",
+            "autonomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "test de Turing",
+          "options": [
+            "test de Turing",
+            "algorithme",
+            "réseau de neurones",
+            "base de données"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "programmeur",
+          "options": [
+            "programmeur",
+            "androïde",
+            "robot",
+            "capteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "androïde",
+          "options": [
+            "androïde",
+            "code source",
+            "singularité",
+            "apprentissage automatique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "base de données",
+          "options": [
+            "base de données",
+            "conscience",
+            "autonomie",
+            "test de Turing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "conscience",
+          "options": [
+            "conscience",
+            "capteur",
+            "algorithme",
+            "réseau de neurones"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "capteur",
+          "options": [
+            "capteur",
+            "programmeur",
+            "code source",
+            "singularité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "autonomie",
+          "options": [
+            "autonomie",
+            "base de données",
+            "intelligence artificielle",
+            "androïde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "singularité",
+          "options": [
+            "singularité",
+            "apprentissage automatique",
+            "robot",
+            "test de Turing"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Intelligence artificielle et robotique",
+    "title_fa": "آزمون : هوش مصنوعی و رباتیک",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le domaine de l'informatique qui vise à créer des systèmes capables de simuler l'intelligence humaine (raisonnement, apprentissage) est l'____.",
+        "options": [
+          "intelligence artificielle",
+          "robot",
+          "algorithme",
+          "androïde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شبیه‌سازی هوش انسانی = intelligence artificielle."
+      },
+      {
+        "type": "mcq",
+        "question": "La machine programmable capable d'effectuer automatiquement une série d'actions physiques ou virtuelles est le ____.",
+        "options": [
+          "robot",
+          "programmeur",
+          "capteur",
+          "conscience"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماشین خودکار و برنامه‌ریزی‌شده = robot."
+      },
+      {
+        "type": "mcq",
+        "question": "La suite finie et non ambiguë d'instructions ou de règles logiques utilisées pour résoudre un problème ou traiter des données est l'____.",
+        "options": [
+          "algorithme",
+          "réseau de neurones",
+          "code source",
+          "singularité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستورالعمل‌های منطقی حل مسئله = algorithme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le modèle informatique inspiré de la structure biologique du cerveau, composé de couches de nœuds interconnectés, est le ____.",
+        "options": [
+          "réseau de neurones",
+          "base de données",
+          "test de Turing",
+          "autonomie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مدل الهام‌گرفته از مغز = réseau de neurones."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des instructions lisibles par un humain, écrites dans un langage de programmation, qui définit le fonctionnement d'un logiciel est le ____.",
+        "options": [
+          "code source",
+          "apprentissage automatique",
+          "capteur",
+          "androïde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستورات قابل خواندن نرم‌افزار = code source."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sous-domaine de l'IA qui permet à une machine d'apprendre à partir de données et d'expériences sans être explicitement programmée pour chaque tâche est l'____.",
+        "options": [
+          "apprentissage automatique",
+          "test de Turing",
+          "conscience",
+          "autonomie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یادگیری از داده‌ها بدون برنامه‌نویسی صریح = apprentissage automatique."
+      },
+      {
+        "type": "mcq",
+        "question": "L'expérience de pensée imaginée en 1950 pour déterminer si une machine peut exhiber un comportement intelligent indiscernable de celui d'un humain est le ____.",
+        "options": [
+          "test de Turing",
+          "algorithme",
+          "réseau de neurones",
+          "base de données"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آزمون تشخیص انسان از ماشین = test de Turing."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel de l'informatique qui conçoit, écrit et teste les instructions qui permettent aux ordinateurs de fonctionner est le ____.",
+        "options": [
+          "programmeur",
+          "androïde",
+          "robot",
+          "capteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نویسنده کدهای کامپیوتری = programmeur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le robot conçu pour avoir une apparence physique et des mouvements ressemblant à ceux d'un être humain est l'____.",
+        "options": [
+          "androïde",
+          "code source",
+          "singularité",
+          "apprentissage automatique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ربات انسان‌نما = androïde."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système organisé de stockage et de gestion de grandes quantités d'informations numériques est la ____.",
+        "options": [
+          "base de données",
+          "conscience",
+          "autonomie",
+          "test de Turing"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم ذخیره اطلاعات = base de données."
+      },
+      {
+        "type": "mcq",
+        "question": "La faculté psychologique de percevoir sa propre existence, ses pensées et son environnement, que l'on cherche à reproduire en IA, est la ____.",
+        "options": [
+          "conscience",
+          "capteur",
+          "algorithme",
+          "réseau de neurones"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شعور و آگاهی از خویشتن = conscience."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dispositif électronique qui détecte les variations de l'environnement physique (lumière, chaleur, distance) et les convertit en signaux est le ____.",
+        "options": [
+          "capteur",
+          "programmeur",
+          "code source",
+          "singularité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قطعه تشخیص‌دهنده محیط = capteur."
+      },
+      {
+        "type": "mcq",
+        "question": "La capacité d'un système ou d'un robot à agir, prendre des décisions et fonctionner sans intervention ou contrôle humain constant est l'____.",
+        "options": [
+          "autonomie",
+          "base de données",
+          "intelligence artificielle",
+          "androïde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توانایی عملکرد مستقل = autonomie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le moment hypothétique dans le futur où la croissance technologique deviendra incontrôlable et où l'IA surpassera définitivement l'intelligence humaine est la ____.",
+        "options": [
+          "singularité",
+          "apprentissage automatique",
+          "robot",
+          "test de Turing"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نقطه پیشی گرفتن ماشین از انسان = singularité."
+      },
+      {
+        "type": "binary",
+        "question": "L'algorithme et le code source désignent exactement la même chose sans aucune nuance.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. الگوریتم منطق و مراحل حل مسئله است، کد منبع پیاده‌سازی آن به زبان برنامه‌نویسی است."
+      },
+      {
+        "type": "binary",
+        "question": "L'apprentissage automatique permet aux systèmes d'IA de s'améliorer en analysant de grandes quantités de données.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. یادگیری ماشین با تحلیل داده‌ها عملکرد سیستم را بهبود می‌بخشد."
+      },
+      {
+        "type": "binary",
+        "question": "Le test de Turing est une épreuve physique où un robot doit courir plus vite qu'un humain.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. آزمون تورینگ یک تست مکالمه و هوش است، نه یک مسابقه فیزیکی."
+      },
+      {
+        "type": "binary",
+        "question": "Un androïde est un type de robot spécifiquement conçu pour imiter l'apparence humaine.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اندروید رباتی است که ظاهر انسان را تقلید می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La singularité technologique désigne le moment où les machines atteindront une conscience et une intelligence supérieures à celles de l'humanité.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تکینگی لحظه‌ای است که هوش ماشین از انسان پیشی می‌گیرد و تغییرات غیرقابل پیش‌بینی ایجاد می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Un capteur permet à un robot d'envoyer des ordres vocaux à son propriétaire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. حسگر (capteur) اطلاعات محیط را دریافت می‌کند، برای ارسال صدا به_actuateur_ یا بلندگو نیاز است."
+      }
+    ]
+  }
+}
