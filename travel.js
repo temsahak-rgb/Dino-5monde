@@ -1,5 +1,5 @@
 // ===============================
-// ✈️ موتور درس‌های سفر (نسخه دیباگ دقیق)
+// ✈️ موتور درس‌های سفر (نسخه نهایی و کامل)
 // ===============================
 let travelCache = {};
 
@@ -58,18 +58,17 @@ async function showTravelLesson(lessonId) {
         const r = await fetch(url, { cache: "no-store" });
         
         if (!r.ok) {
-            errorMsg = `❌ فایل پیدا نشد (کد HTTP: ${r.status}).<br><br>📂 مسیر جستجو شده توسط سایت:<br><code style="background:#eee;padding:4px;border-radius:4px;display:block;margin:8px 0;word-break:break-all;">${url}</code><br>💡 <b>راه‌حل:</b> در گیت‌هاب به پوشه <code>data/travel/lessons/</code> برو و چک کن فایلی با <b>دقیقاً همین نام</b> (حروف بزرگ و کوچک مهم است) وجود دارد.`;
+            errorMsg = `❌ فایل پیدا نشد (کد HTTP: ${r.status}).<br><br>📂 مسیر جستجو شده:<br><code style="background:#eee;padding:4px;border-radius:4px;display:block;margin:8px 0;word-break:break-all;">${url}</code>`;
         } else {
             lesson = await r.json();
             if (!lesson.miniLessons || lesson.miniLessons.length === 0) {
-                errorMsg = `⚠️ فایل خوانده شد، اما بخش‌های درس (miniLessons) خالی یا نامعتبر است.<br><br>📄 شروع محتوای فایل:<br><pre style="text-align:left;font-size:11px;background:#eee;padding:8px;border-radius:4px;">${JSON.stringify(lesson, null, 2).substring(0, 300)}...</pre><br>💡 <b>راه‌حل:</b> فایل باید فیلد <code>"miniLessons": [...]</code> داشته باشد.`;
+                errorMsg = `⚠️ فایل خوانده شد، اما miniLessons ندارد.`;
             }
         }
     } catch (e) {
-        errorMsg = `❌ خطا در خواندن فایل JSON:<br><code>${e.message}</code><br><br>💡 <b>راه‌حل:</b> احتمالاً فایل JSON معتبر نیست (مثلاً کاما اضافی در انتهای لیست دارد یا پرانتز بسته نشده است).`;
+        errorMsg = `❌ خطا در خواندن فایل: ${e.message}`;
     }
 
-    // اگر خطایی وجود داشت، آن را با کادر قرمز روی صفحه نشان بده
     if (errorMsg) {
         app.innerHTML = renderNavbar() + `<div style="max-width:600px;margin:0 auto;padding:40px 20px;text-align:center;">
             <p style="font-size:48px;margin-bottom:20px;">🚧</p>
@@ -82,7 +81,6 @@ async function showTravelLesson(lessonId) {
         return;
     }
     
-    // ✅ اگر همه چیز درست بود، درس را نمایش بده
     let html = renderNavbar();
     html += `<div style="max-width:900px;margin:0 auto;padding:20px 16px 60px;">`;
     html += `<button class="back-btn" onclick="showTravelPage()">← ${lang === "fa" ? "بازگشت" : "Retour"}</button>`;
