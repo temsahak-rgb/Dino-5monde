@@ -1,0 +1,680 @@
+{
+  "id": "scuba_diving_ocean",
+  "level": "C1",
+  "theme": "Plongée sous-marine, océanographie et abysses",
+  "theme_fa": "غواصی، اقیانوس‌شناسی و اعماق",
+  "icon": "🤿",
+  "inspiration": "Le Grand Bleu (The Big Blue - Luc Besson, 1988)",
+  "words": [
+    {
+      "fr": "la plongée",
+      "fa": "غواصی",
+      "emoji": "🤿",
+      "difficulty": 3,
+      "ex": "La plongée sous-marine permet d'explorer les fonds marins.",
+      "ex_fa": "غواصی امکان کاوش بستر دریا را می‌دهد."
+    },
+    {
+      "fr": "la bouteille",
+      "fa": "کپسول اکسیژن",
+      "emoji": "🧯",
+      "difficulty": 3,
+      "ex": "La bouteille d'air comprimé assure l'autonomie du plongeur.",
+      "ex_fa": "کپسول هوای فشرده استقلال غواص را تضمین می‌کند."
+    },
+    {
+      "fr": "le détendeur",
+      "fa": "رگولاتور (تنظیم‌کننده فشار)",
+      "emoji": "🫧",
+      "difficulty": 5,
+      "ex": "Le détendeur fournit l'air à la pression ambiante.",
+      "ex_fa": "رگولاتور هوا را در فشار محیط تأمین می‌کند."
+    },
+    {
+      "fr": "la palanquée",
+      "fa": "گروه غواصان",
+      "emoji": "👥",
+      "difficulty": 5,
+      "ex": "Une palanquée ne doit jamais dépasser quatre ou cinq personnes.",
+      "ex_fa": "یک گروه غواصی هرگز نباید از چهار یا پنج نفر بیشتر شود."
+    },
+    {
+      "fr": "la combinaison",
+      "fa": "لباس غواصی",
+      "emoji": "🦺",
+      "difficulty": 3,
+      "ex": "La combinaison en néoprène protège contre le froid.",
+      "ex_fa": "لباس نئوپرن در برابر سرما محافظت می‌کند."
+    },
+    {
+      "fr": "le lestage",
+      "fa": "وزنه‌بندی",
+      "emoji": "⚖️",
+      "difficulty": 4,
+      "ex": "Un bon lestage permet de s'immerger sans effort.",
+      "ex_fa": "وزنه‌بندی مناسب امکان غوطه‌وری بدون تلاش را می‌دهد."
+    },
+    {
+      "fr": "la palme",
+      "fa": "فین (پای غواصی)",
+      "emoji": "🦶",
+      "difficulty": 3,
+      "ex": "La palme longue est idéale pour la plongée profonde.",
+      "ex_fa": "فین بلند برای غواصی عمیق ایده‌آل است."
+    },
+    {
+      "fr": "le masque",
+      "fa": "ماسک غواصی",
+      "emoji": "🥽",
+      "difficulty": 2,
+      "ex": "Le masque crée une poche d'air pour permettre la vision sous l'eau.",
+      "ex_fa": "ماسک یک محفظه هوا برای دیدن زیر آب ایجاد می‌کند."
+    },
+    {
+      "fr": "l'apnée",
+      "fa": "آپنه (حبس نفس)",
+      "emoji": "🧘",
+      "difficulty": 4,
+      "ex": "L'apnée exige un contrôle mental et physique absolu.",
+      "ex_fa": "آپنه به کنترل مطلق ذهنی و جسمی نیاز دارد."
+    },
+    {
+      "fr": "la décompression",
+      "fa": "رفع فشار (دکوپرسیون)",
+      "emoji": "⏱️",
+      "difficulty": 5,
+      "ex": "Les paliers de décompression évitent les accidents graves.",
+      "ex_fa": "ایست‌های رفع فشار از حوادث جدی جلوگیری می‌کنند."
+    },
+    {
+      "fr": "l'ivresse",
+      "fa": "مستی اعماق (نیتروژن)",
+      "emoji": "🍷",
+      "difficulty": 5,
+      "ex": "L'ivresse des profondeurs survient généralement au-delà de 30 mètres.",
+      "ex_fa": "مستی اعماق معمولاً در عمق بیش از ۳۰ متری رخ می‌دهد."
+    },
+    {
+      "fr": "le récif",
+      "fa": "صخره مرجانی",
+      "emoji": "🪸",
+      "difficulty": 4,
+      "ex": "Le récif corallien abrite une biodiversité extraordinaire.",
+      "ex_fa": "صخره مرجانی میزبان تنوع زیستی فوق‌العاده‌ای است."
+    },
+    {
+      "fr": "le tuba",
+      "fa": "لوله تنفسی (اسنورکل)",
+      "emoji": "🤿",
+      "difficulty": 3,
+      "ex": "Le tuba permet de respirer en surface sans sortir la tête.",
+      "ex_fa": "لوله تنفسی امکان تنفس در سطح آب بدون بیرون آوردن سر را می‌دهد."
+    },
+    {
+      "fr": "l'ordinateur",
+      "fa": "کامپیوتر غواصی",
+      "emoji": "⌚",
+      "difficulty": 4,
+      "ex": "L'ordinateur de plongée calcule en temps réel les paliers obligatoires.",
+      "ex_fa": "کامپیوتر غواصی ایست‌های اجباری را در زمان واقعی محاسبه می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'appel du grand bleu",
+      "text": "Jacques Mayol est un passionné de l'océan. Contrairement à son rival qui utilise une {{BLANK_2}} et un {{BLANK_3}}, Jacques préfère l'{{BLANK_9}} pure. Il ne porte qu'un simple {{BLANK_8}} et une {{BLANK_7}} pour se propulser. À la surface, il respire grâce à un {{BLANK_13}}. Son ami Enzo, adepte de la {{BLANK_1}} avec équipement, rejoint une {{BLANK_4}} organisée. Enzo enfile une épaisse {{BLANK_5}} pour se protéger du froid et ajuste sa ceinture de {{BLANK_6}} pour descendre plus vite. Ensemble, ils explorent un magnifique {{BLANK_12}} corallien. Enzo consulte régulièrement son {{BLANK_14}} pour surveiller la profondeur et le temps. Ils doivent impérativement respecter les paliers de {{BLANK_10}} pour éviter les accidents. S'ils descendent trop profond, ils risquent l'{{BLANK_11}} des profondeurs, un état euphorique et dangereux causé par l'azote.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "plongée",
+          "options": [
+            "plongée",
+            "bouteille",
+            "détendeur",
+            "palanquée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bouteille",
+          "options": [
+            "bouteille",
+            "combinaison",
+            "lestage",
+            "palme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "détendeur",
+          "options": [
+            "détendeur",
+            "masque",
+            "apnée",
+            "décompression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "palanquée",
+          "options": [
+            "palanquée",
+            "ivresse",
+            "récif",
+            "tuba"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "combinaison",
+          "options": [
+            "combinaison",
+            "ordinateur",
+            "plongée",
+            "bouteille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "lestage",
+          "options": [
+            "lestage",
+            "détendeur",
+            "palanquée",
+            "combinaison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "palme",
+          "options": [
+            "palme",
+            "masque",
+            "apnée",
+            "décompression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "masque",
+          "options": [
+            "masque",
+            "ivresse",
+            "récif",
+            "tuba"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "apnée",
+          "options": [
+            "apnée",
+            "ordinateur",
+            "plongée",
+            "bouteille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "décompression",
+          "options": [
+            "décompression",
+            "détendeur",
+            "palanquée",
+            "combinaison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "ivresse",
+          "options": [
+            "ivresse",
+            "palme",
+            "masque",
+            "apnée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "récif",
+          "options": [
+            "récif",
+            "décompression",
+            "ivresse",
+            "tuba"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "tuba",
+          "options": [
+            "tuba",
+            "ordinateur",
+            "plongée",
+            "bouteille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "ordinateur",
+          "options": [
+            "ordinateur",
+            "détendeur",
+            "palanquée",
+            "combinaison"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le silence des abysses",
+      "inspiration": "Le Grand Bleu (Luc Besson, 1988)",
+      "text": "À peine Jacques eut-il glissé sous la surface que le bruit du monde s'éteignit, remplacé par le battement sourd de son propre cœur. Ce maître de l'{{BLANK_9}} ne cherchait pas à conquérir l'océan, mais à s'y fondre comme un enfant retourne dans le ventre maternel. Loin des bulles mécaniques de son rival Enzo, qui trimballait sa lourde {{BLANK_2}} et s'en remettait à son {{BLANK_3}} pour respirer, Jacques n'avait besoin que de son {{BLANK_8}} et d'une longue {{BLANK_7}} pour fendre le bleu infini. À la surface, un simple {{BLANK_13}} lui suffisait pour contempler les vagues. Enzo, lui, préférait la {{BLANK_1}} technique, encadré par une {{BLANK_4}} de moniteurs. Il s'engonçait dans sa {{BLANK_5}} de néoprène et alourdissait son corps avec un {{BLANK_6}} de plomb pour vaincre la poussée d'Archimède. Ensemble, ils descendaient vers le {{BLANK_12}}, cette cathédrale de coraux où la vie explosait en couleurs silencieuses. Enzo fixait nerveusement son {{BLANK_14}}, cette petite machine qui dictait sa survie et imposait la tyrannie de la {{BLANK_10}}. Jacques, les yeux fermés, plongeait plus bas, frôlant les limites où l'azote provoque l'{{BLANK_11}}, cette ivresse mortelle qui pousse les hommes à enlever leur masque pour embrasser l'abysse. Car pour Jacques, la mer n'était pas un terrain de sport, mais la seule véritable demeure.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "plongée",
+          "options": [
+            "plongée",
+            "bouteille",
+            "détendeur",
+            "palanquée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bouteille",
+          "options": [
+            "bouteille",
+            "combinaison",
+            "lestage",
+            "palme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "détendeur",
+          "options": [
+            "détendeur",
+            "masque",
+            "apnée",
+            "décompression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "palanquée",
+          "options": [
+            "palanquée",
+            "ivresse",
+            "récif",
+            "tuba"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "combinaison",
+          "options": [
+            "combinaison",
+            "ordinateur",
+            "plongée",
+            "bouteille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "lestage",
+          "options": [
+            "lestage",
+            "détendeur",
+            "palanquée",
+            "combinaison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "palme",
+          "options": [
+            "palme",
+            "masque",
+            "apnée",
+            "décompression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "masque",
+          "options": [
+            "masque",
+            "ivresse",
+            "récif",
+            "tuba"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "apnée",
+          "options": [
+            "apnée",
+            "ordinateur",
+            "plongée",
+            "bouteille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "décompression",
+          "options": [
+            "décompression",
+            "détendeur",
+            "palanquée",
+            "combinaison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "ivresse",
+          "options": [
+            "ivresse",
+            "palme",
+            "masque",
+            "apnée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "récif",
+          "options": [
+            "récif",
+            "décompression",
+            "ivresse",
+            "tuba"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "tuba",
+          "options": [
+            "tuba",
+            "ordinateur",
+            "plongée",
+            "bouteille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "ordinateur",
+          "options": [
+            "ordinateur",
+            "détendeur",
+            "palanquée",
+            "combinaison"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Plongée sous-marine",
+    "title_fa": "آزمون : غواصی و اعماق",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'activité qui consiste à explorer le milieu subaquatique, avec ou sans équipement respiratoire, est la ____.",
+        "options": [
+          "plongée",
+          "bouteille",
+          "détendeur",
+          "palanquée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعالیت کاوش زیر آب = plongée."
+      },
+      {
+        "type": "mcq",
+        "question": "Le réservoir métallique contenant de l'air comprimé pour respirer sous l'eau est la ____.",
+        "options": [
+          "bouteille",
+          "combinaison",
+          "lestage",
+          "palme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مخزن هوای فشرده = bouteille."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil qui réduit la pression de l'air de la bouteille pour le rendre respirable à la demande est le ____.",
+        "options": [
+          "détendeur",
+          "masque",
+          "apnée",
+          "décompression"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه تنظیم فشار هوا = détendeur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le groupe de plongeurs qui descendent et évoluent ensemble sous la direction d'un guide est la ____.",
+        "options": [
+          "palanquée",
+          "ivresse",
+          "récif",
+          "tuba"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گروه غواصان همراه = palanquée."
+      },
+      {
+        "type": "mcq",
+        "question": "Le vêtement isotherme (souvent en néoprène) qui protège le plongeur du froid est la ____.",
+        "options": [
+          "combinaison",
+          "ordinateur",
+          "plongée",
+          "bouteille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لباس محافظ در برابر سرما = combinaison."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des poids (plombs) que le plongeur porte pour compenser sa flottabilité et descendre est le ____.",
+        "options": [
+          "lestage",
+          "détendeur",
+          "palanquée",
+          "combinaison"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وزنه‌های تعادلی برای غوطه‌وری = lestage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'accessoire en caoutchouc fixé aux pieds qui permet de se déplacer efficacement dans l'eau est la ____.",
+        "options": [
+          "palme",
+          "masque",
+          "apnée",
+          "décompression"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله پیشران پا = palme."
+      },
+      {
+        "type": "mcq",
+        "question": "L'équipement qui recouvre les yeux et le nez pour créer une lame d'air et permettre la vision nette est le ____.",
+        "options": [
+          "masque",
+          "ivresse",
+          "récif",
+          "tuba"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تجهیزات پوشاننده چشم و بینی = masque."
+      },
+      {
+        "type": "mcq",
+        "question": "La discipline qui consiste à plonger en retenant sa respiration, sans bouteille d'air, est l'____.",
+        "options": [
+          "apnée",
+          "ordinateur",
+          "plongée",
+          "bouteille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "غواصی با حبس نفس = apnée."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus physiologique et les arrêts obligatoires lors de la remontée pour éliminer les gaz dissous est la ____.",
+        "options": [
+          "décompression",
+          "détendeur",
+          "palanquée",
+          "combinaison"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرآیند رفع فشار و ایست‌های ایمنی = décompression."
+      },
+      {
+        "type": "mcq",
+        "question": "Le trouble neurologique causé par la narcose à l'azote en profondeur, provoquant une euphorie dangereuse, est l'____ des profondeurs.",
+        "options": [
+          "ivresse",
+          "palme",
+          "masque",
+          "apnée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مستی ناشی از نیتروژن در عمق = ivresse."
+      },
+      {
+        "type": "mcq",
+        "question": "La structure rocheuse sous-marine, souvent construite par des coraux et riche en vie marine, est le ____.",
+        "options": [
+          "récif",
+          "décompression",
+          "ivresse",
+          "tuba"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازه صخره‌ای و مرجانی زیر آب = récif."
+      },
+      {
+        "type": "mcq",
+        "question": "Le tube court qui permet de respirer l'air atmosphérique tout en gardant le visage immergé est le ____.",
+        "options": [
+          "tuba",
+          "ordinateur",
+          "plongée",
+          "bouteille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لوله تنفسی سطح آب = tuba."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument électronique porté au poignet qui calcule la profondeur, le temps et les paliers est l'____ de plongée.",
+        "options": [
+          "ordinateur",
+          "détendeur",
+          "palanquée",
+          "combinaison"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه محاسبه‌گر عمق و زمان = ordinateur."
+      },
+      {
+        "type": "binary",
+        "question": "L'apnée nécessite l'utilisation d'une bouteille d'air comprimé pour descendre profondément.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. آپنه دقیقاً به معنای غواصی بدون تجهیزات تنفسی و با حبس نفس است."
+      },
+      {
+        "type": "binary",
+        "question": "Le lestage (ceinture de plombs) aide le plongeur à vaincre la flottabilité naturelle du corps et de la combinaison.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. وزنه‌بندی برای غلبه بر شناوری طبیعی و فرورفتن در آب ضروری است."
+      },
+      {
+        "type": "binary",
+        "question": "L'ivresse des profondeurs (narcose à l'azote) est un état sans danger qui améliore les réflexes du plongeur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. مستی اعماق بسیار خطرناک است و باعث اختلال در قضاوت و واکنش‌ها می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Les paliers de décompression sont des arrêts obligatoires lors de la remontée pour éviter l'accident de décompression.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ایست‌های دکوپرسیون برای خروج ایمن گازهای حل‌شده در خون ضروری‌اند."
+      },
+      {
+        "type": "binary",
+        "question": "Le tuba est un appareil électronique qui mesure la pression de l'air dans la bouteille.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. tuba یک لوله پلاستیکی ساده برای تنفس در سطح آب است."
+      },
+      {
+        "type": "binary",
+        "question": "Une palanquée désigne un groupe de plongeurs évoluant ensemble sous la responsabilité d'un guide.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. palanquée به گروه سازمان‌یافته غواصان گفته می‌شود."
+      }
+    ]
+  }
+}
