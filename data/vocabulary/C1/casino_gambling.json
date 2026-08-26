@@ -1,0 +1,680 @@
+{
+  "id": "casino_gambling",
+  "level": "C1",
+  "theme": "Casino, jeux d'argent et probabilités",
+  "theme_fa": "کازینو، قمار و احتمالات",
+  "icon": "🎰",
+  "inspiration": "Casino (Martin Scorsese, 1995)",
+  "words": [
+    {
+      "fr": "le casino",
+      "fa": "کازینو",
+      "emoji": "🎰",
+      "difficulty": 3,
+      "ex": "Le casino de Las Vegas attire des millions de touristes chaque année.",
+      "ex_fa": "کازینوی لاس‌وگاس هر ساله میلیون‌ها توریست را جذب می‌کند."
+    },
+    {
+      "fr": "le croupier",
+      "fa": "کروپیه (مسئول میز)",
+      "emoji": "🎩",
+      "difficulty": 4,
+      "ex": "Le croupier distribue les cartes avec une dextérité impressionnante.",
+      "ex_fa": "کروپیه با مهارت چشمگیری کارت‌ها را پخش می‌کند."
+    },
+    {
+      "fr": "la mise",
+      "fa": "شرط، مبلغ شرط‌بندی",
+      "emoji": "💰",
+      "difficulty": 4,
+      "ex": "Il a doublé sa mise après avoir gagné la première main.",
+      "ex_fa": "او پس از برد دست اول، شرطش را دو برابر کرد."
+    },
+    {
+      "fr": "la roulette",
+      "fa": "رولت",
+      "emoji": "🎡",
+      "difficulty": 3,
+      "ex": "La roulette européenne offre de meilleures chances que l'américaine.",
+      "ex_fa": "رولت اروپایی شانس بهتری نسبت به آمریکایی دارد."
+    },
+    {
+      "fr": "le blackjack",
+      "fa": "بلک‌جک",
+      "emoji": "🃏",
+      "difficulty": 3,
+      "ex": "Le blackjack requiert à la fois chance et stratégie.",
+      "ex_fa": "بلک‌جک هم به شانس و هم به استراتژی نیاز دارد."
+    },
+    {
+      "fr": "le poker",
+      "fa": "پوکر",
+      "emoji": "♠️",
+      "difficulty": 3,
+      "ex": "Le poker est un jeu de psychologie autant que de cartes.",
+      "ex_fa": "پوکر هم بازی روانشناسی است و هم بازی ورق."
+    },
+    {
+      "fr": "le jackpot",
+      "fa": "جکپات (جایزه بزرگ)",
+      "emoji": "🏆",
+      "difficulty": 3,
+      "ex": "Le jackpot progressif a atteint dix millions de dollars.",
+      "ex_fa": "جکپات پیشرونده به ده میلیون دلار رسیده است."
+    },
+    {
+      "fr": "la cote",
+      "fa": "احتمال، شانس برد",
+      "emoji": "📊",
+      "difficulty": 5,
+      "ex": "La cote de gagner au loto est infime.",
+      "ex_fa": "احتمال برد در لاتاری بسیار ناچیز است."
+    },
+    {
+      "fr": "le bluff",
+      "fa": "بلوف",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "Son bluff magistral a fait plier tous ses adversaires.",
+      "ex_fa": "بلوف استادانه‌اش همه حریفان را وادار به تسلیم کرد."
+    },
+    {
+      "fr": "la martingale",
+      "fa": "سیستم شرط‌بندی (مارتینگل)",
+      "emoji": "📈",
+      "difficulty": 5,
+      "ex": "La martingale promet des gains mais reste mathématiquement perdante.",
+      "ex_fa": "مارتینگل وعده سود می‌دهد اما از نظر ریاضی بازنده است."
+    },
+    {
+      "fr": "le bookmaker",
+      "fa": "شرط‌بند (بوک‌میکر)",
+      "emoji": "📝",
+      "difficulty": 5,
+      "ex": "Le bookmaker fixe les cotes pour les paris sportifs.",
+      "ex_fa": "بوک‌میکر احتمالات را برای شرط‌های ورزشی تعیین می‌کند."
+    },
+    {
+      "fr": "l'addiction",
+      "fa": "اعتیاد (به قمار)",
+      "emoji": "⚠️",
+      "difficulty": 4,
+      "ex": "L'addiction au jeu peut détruire des vies entières.",
+      "ex_fa": "اعتیاد به قمار می‌تواند زندگی‌ها را نابود کند."
+    },
+    {
+      "fr": "la bankroll",
+      "fa": "سرمایه قمار",
+      "emoji": "💵",
+      "difficulty": 5,
+      "ex": "Gérer sa bankroll est essentiel pour durer au casino.",
+      "ex_fa": "مدیریت سرمایه برای دوام آوردن در کازینو ضروری است."
+    },
+    {
+      "fr": "le comptage",
+      "fa": "شمارش کارت",
+      "emoji": "🔢",
+      "difficulty": 5,
+      "ex": "Le comptage de cartes est interdit dans la plupart des casinos.",
+      "ex_fa": "شمارش کارت‌ها در اکثر کازینوها ممنوع است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les rois de Las Vegas",
+      "text": "Ace Rothstein dirige le Tangiers, l'un des plus grands {{BLANK_1}}s de Las Vegas. Chaque soir, les {{BLANK_2}}s professionnels distribuent des milliers de mains. Les joueurs placent leur {{BLANK_3}} sur la table de {{BLANK_4}} ou tentent leur chance au {{BLANK_5}}. Certains maîtrisent l'art du {{BLANK_6}} pour tromper leurs adversaires. D'autres préfèrent le {{BLANK_7}} progressif qui peut changer une vie en un instant. Ace connaît parfaitement la {{BLANK_8}} de chaque jeu et sait que la maison gagne toujours à long terme. Il surveille attentivement ceux qui tentent le {{BLANK_14}} de cartes au blackjack. Son ami Nicky Santoro, un {{BLANK_11}} notoire, parie sur tout : courses de chevaux, matchs de boxe, élections politiques. Ginger, la femme d'Ace, souffre d'une {{BLANK_12}} au jeu qui menace leur empire. Elle dilapide leur {{BLANK_13}} en quelques nuits de folie. Ace essaie d'appliquer une {{BLANK_10}} scientifique pour récupérer ses pertes, mais les mathématiques sont impitoyables. Quand le FBI enquête sur les liens mafieux du casino, Ace comprend que même les meilleurs joueurs finissent par perdre quand les règles du jeu changent brutalement.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "casinos",
+          "options": [
+            "casinos",
+            "croupiers",
+            "mises",
+            "roulettes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "croupiers",
+          "options": [
+            "croupiers",
+            "blackjacks",
+            "pokers",
+            "jackpots"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "mise",
+          "options": [
+            "mise",
+            "cote",
+            "bluff",
+            "martingale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "roulette",
+          "options": [
+            "roulette",
+            "bookmaker",
+            "addiction",
+            "bankroll"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "blackjack",
+          "options": [
+            "blackjack",
+            "comptage",
+            "casino",
+            "croupier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "bluff",
+          "options": [
+            "bluff",
+            "mise",
+            "cote",
+            "martingale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "jackpot",
+          "options": [
+            "jackpot",
+            "roulette",
+            "poker",
+            "bookmaker"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "cote",
+          "options": [
+            "cote",
+            "addiction",
+            "bankroll",
+            "comptage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "poker",
+          "options": [
+            "poker",
+            "bluff",
+            "mise",
+            "cote"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "martingale",
+          "options": [
+            "martingale",
+            "jackpot",
+            "roulette",
+            "blackjack"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "bookmaker",
+          "options": [
+            "bookmaker",
+            "casino",
+            "croupier",
+            "comptage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "addiction",
+          "options": [
+            "addiction",
+            "bankroll",
+            "martingale",
+            "bluff"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "bankroll",
+          "options": [
+            "bankroll",
+            "cote",
+            "addiction",
+            "comptage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "comptage",
+          "options": [
+            "comptage",
+            "poker",
+            "mise",
+            "cote"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La maison gagne toujours",
+      "inspiration": "Casino (Martin Scorsese, 1995)",
+      "text": "À peine Ace eut-il franchi les portes dorées du Tangiers qu'il sentit l'odeur du rêve et du désespoir se mêler dans l'air climatisé. Ce {{BLANK_1}} n'était pas qu'un bâtiment de néon et de marbre, c'était une cathédrale de l'illusion où des milliers d'âmes venaient sacrifier leur fortune sur l'autel du hasard. Les {{BLANK_2}}s, ces prêtres en gilet noir, distribuaient les cartes avec la précision de chirurgiens, indifférents aux drames qui se nouaient autour des tables. Chaque {{BLANK_3}} déposée sur le feutre vert était une prière muette, un pari sur le destin. Ace observait la {{BLANK_4}} tourner, cette roue infernale qui broyait les espoirs, et les tables de {{BLANK_5}} où les stratèges comptaient mentalement les cartes sorties. Le {{BLANK_6}}, cet art de la tromperie, transformait des hommes ordinaires en acteurs shakespeariens, capables de mentir avec un sourire impassible. Parfois, le {{BLANK_7}} tombait comme une bénédiction divine, changeant une vie médiocre en conte de fées éphémère. Mais Ace, mathématicien dans l'âme, connaissait la {{BLANK_8}} exacte de chaque jeu, cette vérité froide qui garantissait que la maison gagnait toujours à la fin. Il méprisait ceux qui croyaient aux systèmes, ces pauvres hères qui appliquaient une {{BLANK_10}} pseudo-scientifique pour doubler leurs pertes. Son ami Nicky, ce {{BLANK_11}} de rue, pariait sur tout avec la même férocité, incapable de résister à l'appel du jeu. Mais c'est Ginger qui incarnait la tragédie la plus pure : son {{BLANK_12}} au jeu n'était pas une faiblesse, mais une maladie de l'âme, une soif inextinguible qui consumait sa {{BLANK_13}} nuit après nuit. Ace avait tenté de la sauver, de lui apprendre le {{BLANK_14}} des cartes, de lui inculquer la discipline, mais on ne guérit pas d'une passion qui vous définit. Quand le FBI frappa à la porte, Ace comprit que Las Vegas n'était qu'un mirage, un théâtre où tous jouaient un rôle, et que les vrais gagnants étaient ceux qui possédaient les dés, pas ceux qui les jetaient.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "casino",
+          "options": [
+            "casino",
+            "croupier",
+            "mise",
+            "roulette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "croupiers",
+          "options": [
+            "croupiers",
+            "blackjacks",
+            "pokers",
+            "jackpots"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "mise",
+          "options": [
+            "mise",
+            "cote",
+            "bluff",
+            "martingale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "roulette",
+          "options": [
+            "roulette",
+            "bookmaker",
+            "addiction",
+            "bankroll"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "blackjack",
+          "options": [
+            "blackjack",
+            "comptage",
+            "casino",
+            "croupier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "bluff",
+          "options": [
+            "bluff",
+            "mise",
+            "cote",
+            "martingale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "jackpot",
+          "options": [
+            "jackpot",
+            "roulette",
+            "poker",
+            "bookmaker"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "cote",
+          "options": [
+            "cote",
+            "addiction",
+            "bankroll",
+            "comptage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "poker",
+          "options": [
+            "poker",
+            "bluff",
+            "mise",
+            "cote"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "martingale",
+          "options": [
+            "martingale",
+            "jackpot",
+            "roulette",
+            "blackjack"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "bookmaker",
+          "options": [
+            "bookmaker",
+            "casino",
+            "croupier",
+            "comptage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "addiction",
+          "options": [
+            "addiction",
+            "bankroll",
+            "martingale",
+            "bluff"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "bankroll",
+          "options": [
+            "bankroll",
+            "cote",
+            "addiction",
+            "comptage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "comptage",
+          "options": [
+            "comptage",
+            "poker",
+            "mise",
+            "cote"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Casino et jeux d'argent",
+    "title_fa": "آزمون : کازینو و قمار",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'établissement où l'on pratique des jeux d'argent comme la roulette, le poker ou les machines à sous est le ____.",
+        "options": [
+          "casino",
+          "croupier",
+          "mise",
+          "roulette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محل انجام بازی‌های قمار = casino."
+      },
+      {
+        "type": "mcq",
+        "question": "L'employé du casino qui dirige la table, distribue les cartes et gère les mises est le ____.",
+        "options": [
+          "croupier",
+          "blackjack",
+          "poker",
+          "jackpot"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسئول میز قمار = croupier."
+      },
+      {
+        "type": "mcq",
+        "question": "La somme d'argent qu'un joueur risque sur un pari ou une main est la ____.",
+        "options": [
+          "mise",
+          "cote",
+          "bluff",
+          "martingale"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مبلغ شرط‌بندی = mise."
+      },
+      {
+        "type": "mcq",
+        "question": "Le jeu de casino où une bille tourne sur une roue numérotée et où l'on parie sur le numéro gagnant est la ____.",
+        "options": [
+          "roulette",
+          "bookmaker",
+          "addiction",
+          "bankroll"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بازی چرخ شانس = roulette."
+      },
+      {
+        "type": "mcq",
+        "question": "Le jeu de cartes où l'objectif est d'obtenir 21 points sans dépasser, en battant le croupier, est le ____.",
+        "options": [
+          "blackjack",
+          "comptage",
+          "casino",
+          "croupier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بازی ۲۱ = blackjack."
+      },
+      {
+        "type": "mcq",
+        "question": "Le jeu de cartes où les joueurs misent sur la valeur de leur main et peuvent tromper leurs adversaires est le ____.",
+        "options": [
+          "poker",
+          "bluff",
+          "mise",
+          "cote"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بازی ورق با بلوف = poker."
+      },
+      {
+        "type": "mcq",
+        "question": "Le gain exceptionnel, souvent très élevé, obtenu sur une machine à sous ou un jeu progressif est le ____.",
+        "options": [
+          "jackpot",
+          "roulette",
+          "poker",
+          "bookmaker"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جایزه بزرگ = jackpot."
+      },
+      {
+        "type": "mcq",
+        "question": "Le rapport mathématique entre les chances de gagner et de perdre, fixé par le casino, est la ____.",
+        "options": [
+          "cote",
+          "addiction",
+          "bankroll",
+          "comptage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نسبت احتمال برد = cote."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique au poker qui consiste à faire croire aux adversaires qu'on a une main forte alors qu'elle est faible est le ____.",
+        "options": [
+          "bluff",
+          "mise",
+          "cote",
+          "martingale"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فریب حریفان = bluff."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système de pari qui consiste à doubler sa mise après chaque perte pour récupérer ses pertes est la ____.",
+        "options": [
+          "martingale",
+          "jackpot",
+          "roulette",
+          "blackjack"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم دوبرابر کردن شرط = martingale."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui accepte les paris sportifs et fixe les cotes des événements est le ____.",
+        "options": [
+          "bookmaker",
+          "casino",
+          "croupier",
+          "comptage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شرط‌بند ورزشی = bookmaker."
+      },
+      {
+        "type": "mcq",
+        "question": "La dépendance pathologique au jeu qui pousse une personne à jouer compulsivement malgré les pertes est l'____.",
+        "options": [
+          "addiction",
+          "bankroll",
+          "martingale",
+          "bluff"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اعتیاد به قمار = addiction."
+      },
+      {
+        "type": "mcq",
+        "question": "Le capital total qu'un joueur consacre au jeu et qu'il doit gérer pour ne pas tout perdre est la ____.",
+        "options": [
+          "bankroll",
+          "cote",
+          "addiction",
+          "comptage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سرمایه قمار = bankroll."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique interdite au blackjack qui consiste à mémoriser les cartes déjà sorties pour prédire les suivantes est le ____.",
+        "options": [
+          "comptage",
+          "poker",
+          "mise",
+          "cote"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شمارش کارت‌ها = comptage."
+      },
+      {
+        "type": "binary",
+        "question": "La martingale est une stratégie mathématiquement gagnante qui garantit des profits à long terme.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. مارتینگل از نظر ریاضی در بلندمدت بازنده است."
+      },
+      {
+        "type": "binary",
+        "question": "Le bluff au poker consiste à faire croire aux adversaires qu'on a une meilleure main que la réalité.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بلوف یعنی وانمود کردن به داشتن دست قوی‌تر."
+      },
+      {
+        "type": "binary",
+        "question": "Le croupier est un joueur professionnel qui parie de grosses sommes au casino.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کروپیه کارمند کازینو است، نه بازیکن."
+      },
+      {
+        "type": "binary",
+        "question": "La bankroll désigne l'argent total qu'un joueur alloue à ses sessions de jeu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سرمایه اختصاص‌یافته به قمار = bankroll."
+      },
+      {
+        "type": "binary",
+        "question": "Le comptage de cartes au blackjack est une technique légale encouragée par les casinos.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. شمارش کارت ممنوع است و کازینوها با آن مبارزه می‌کنند."
+      },
+      {
+        "type": "binary",
+        "question": "L'addiction au jeu est reconnue comme un trouble psychologique pouvant nécessiter un traitement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اعتیاد به قمار یک اختلال روانی شناخته‌شده است."
+      }
+    ]
+  }
+}
