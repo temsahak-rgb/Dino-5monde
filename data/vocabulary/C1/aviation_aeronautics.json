@@ -1,0 +1,680 @@
+{
+  "id": "aviation_aeronautics",
+  "level": "C1",
+  "theme": "Aviation, aéronautique et pilotage",
+  "theme_fa": "هوانوردی، صنایع هوایی و خلبانی",
+  "icon": "✈️",
+  "inspiration": "Sully (Clint Eastwood, 2016)",
+  "words": [
+    {
+      "fr": "l'avion",
+      "fa": "هواپیما",
+      "emoji": "✈️",
+      "difficulty": 2,
+      "ex": "L'avion de ligne peut transporter plus de trois cents passagers.",
+      "ex_fa": "هواپیمای مسافربری می‌تواند بیش از سیصد مسافر حمل کند."
+    },
+    {
+      "fr": "le pilote",
+      "fa": "خلبان",
+      "emoji": "👨‍✈️",
+      "difficulty": 3,
+      "ex": "Le pilote aux commandes garde son sang-froid dans les situations critiques.",
+      "ex_fa": "خلبان در شرایط بحرانی خونسردی خود را حفظ می‌کند."
+    },
+    {
+      "fr": "le cockpit",
+      "fa": "کابین خلبان",
+      "emoji": "🎛️",
+      "difficulty": 4,
+      "ex": "Le cockpit est rempli d'écrans et d'instruments de navigation.",
+      "ex_fa": "کابین خلبان پر از صفحه‌نمایش و ابزارهای ناوبری است."
+    },
+    {
+      "fr": "le décollage",
+      "fa": "برخاستن (تیک‌آف)",
+      "emoji": "🛫",
+      "difficulty": 3,
+      "ex": "Le décollage s'effectue face au vent pour plus de portance.",
+      "ex_fa": "برخاستن برای نیروی برآر بیشتر، رو به باد انجام می‌شود."
+    },
+    {
+      "fr": "l'atterrissage",
+      "fa": "فرود",
+      "emoji": "🛬",
+      "difficulty": 3,
+      "ex": "L'atterrissage par temps de brouillard exige une grande précision.",
+      "ex_fa": "فرود در هوای مه‌آلود به دقت زیادی نیاز دارد."
+    },
+    {
+      "fr": "le fuselage",
+      "fa": "بدنه اصلی هواپیما",
+      "emoji": "🛩️",
+      "difficulty": 5,
+      "ex": "Le fuselage cylindrique abrite la cabine des passagers et la soute.",
+      "ex_fa": "بدنه استوانه‌ای، کابین مسافران و انبار بار را در خود جای می‌دهد."
+    },
+    {
+      "fr": "le réacteur",
+      "fa": "موتور جت",
+      "emoji": "🔥",
+      "difficulty": 4,
+      "ex": "L'avion biréacteur possède deux moteurs sous les ailes.",
+      "ex_fa": "هواپیمای دوموتوره، دو موتور جت زیر بال‌ها دارد."
+    },
+    {
+      "fr": "la turbulence",
+      "fa": "تلاطم، چاله هوایی",
+      "emoji": "🌪️",
+      "difficulty": 4,
+      "ex": "Les passagers doivent attacher leur ceinture en cas de turbulence.",
+      "ex_fa": "مسافران در صورت تلاطم باید کمربند خود را ببندند."
+    },
+    {
+      "fr": "le radar",
+      "fa": "رادار",
+      "emoji": "📡",
+      "difficulty": 3,
+      "ex": "Le radar détecte la position et la vitesse des autres aéronefs.",
+      "ex_fa": "رادار موقعیت و سرعت سایر پرنده‌ها را شناسایی می‌کند."
+    },
+    {
+      "fr": "la tour de contrôle",
+      "fa": "برج مراقبت",
+      "emoji": "🗼",
+      "difficulty": 4,
+      "ex": "La tour de contrôle autorise le départ et guide les approches.",
+      "ex_fa": "برج مراقبت اجازه پرواز می‌دهد و نزدیک شدن را هدایت می‌کند."
+    },
+    {
+      "fr": "le train d'atterrissage",
+      "fa": "ارابه فرود (چرخ‌ها)",
+      "emoji": "🛞",
+      "difficulty": 5,
+      "ex": "Le train d'atterrissage se rétracte après le décollage pour réduire la traînée.",
+      "ex_fa": "ارابه فرود پس از برخاستن جمع می‌شود تا مقاومت هوا کم شود."
+    },
+    {
+      "fr": "l'altitude",
+      "fa": "ارتفاع",
+      "emoji": "📏",
+      "difficulty": 3,
+      "ex": "L'avion de croisière vole à une altitude de dix mille mètres.",
+      "ex_fa": "هواپیمای مسافربری در ارتفاع ده هزار متری پرواز می‌کند."
+    },
+    {
+      "fr": "le manche",
+      "fa": "اهرم هدایت (جوی‌استیک)",
+      "emoji": "🕹️",
+      "difficulty": 4,
+      "ex": "Le pilote tire sur le manche pour faire monter l'appareil.",
+      "ex_fa": "خلبان اهرم را به عقب می‌کشد تا هواپیما اوج بگیرد."
+    },
+    {
+      "fr": "le vol",
+      "fa": "پرواز",
+      "emoji": "☁️",
+      "difficulty": 2,
+      "ex": "Le vol Paris-New York dure environ huit heures.",
+      "ex_fa": "پرواز پاریس-نیویورک حدود هشت ساعت طول می‌کشد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le miracle de l'Hudson",
+      "text": "Le commandant Sully est un {{BLANK_2}} très expérimenté. Ce matin glacial de janvier, il prépare son {{BLANK_1}} pour un {{BLANK_14}} de routine vers la Caroline. L'appareil quitte la piste de New York, c'est le {{BLANK_4}}. L'{{BLANK_12}} de croisière est rapidement atteinte. Quelques minutes plus tard, un vol d'oiseaux heurte violemment l'appareil. Les deux {{BLANK_7}}s s'éteignent brusquement dans un grand bruit. Le {{BLANK_3}} devient silencieux, les alarmes hurlent. Sully prend les commandes avec son {{BLANK_13}}. Il contacte la {{BLANK_10}} qui lui propose de retourner à l'aéroport. Mais l'appareil est trop lourd et trop bas. Il décide de tenter un {{BLANK_5}} d'urgence sur le fleuve Hudson. Le {{BLANK_6}} descend rapidement au-dessus des gratte-ciels. Sully déploie le {{BLANK_11}} juste avant de toucher l'eau. L'avion glisse sur les vagues glacées et s'immobilise. Le {{BLANK_9}} a suivi toute la descente sur ses écrans. Grâce à son sang-froid, les cent cinquante-cinq personnes survivent. Même les fortes {{BLANK_8}}s du fleuve n'ont pas empêché le sauvetage rapide.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "avion",
+          "options": [
+            "avion",
+            "fuselage",
+            "radar",
+            "vol"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pilote",
+          "options": [
+            "pilote",
+            "tour de contrôle",
+            "train d'atterrissage",
+            "manche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "cockpit",
+          "options": [
+            "cockpit",
+            "réacteur",
+            "décollage",
+            "turbulence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "décollage",
+          "options": [
+            "décollage",
+            "atterrissage",
+            "altitude",
+            "vol"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "atterrissage",
+          "options": [
+            "atterrissage",
+            "décollage",
+            "turbulence",
+            "radar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "fuselage",
+          "options": [
+            "fuselage",
+            "réacteur",
+            "train d'atterrissage",
+            "cockpit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "réacteurs",
+          "options": [
+            "réacteurs",
+            "manches",
+            "fuselages",
+            "radars"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "turbulences",
+          "options": [
+            "turbulences",
+            "altitudes",
+            "tours de contrôle",
+            "pilotes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "radar",
+          "options": [
+            "radar",
+            "manche",
+            "avion",
+            "vol"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "tour de contrôle",
+          "options": [
+            "tour de contrôle",
+            "train d'atterrissage",
+            "altitude",
+            "réacteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "train d'atterrissage",
+          "options": [
+            "train d'atterrissage",
+            "cockpit",
+            "fuselage",
+            "décollage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "altitude",
+          "options": [
+            "altitude",
+            "turbulence",
+            "atterrissage",
+            "avion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "manche",
+          "options": [
+            "manche",
+            "radar",
+            "tour de contrôle",
+            "pilote"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "vol",
+          "options": [
+            "vol",
+            "décollage",
+            "réacteur",
+            "cockpit"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Cent cinquante-cinq secondes",
+      "inspiration": "Sully (Clint Eastwood, 2016)",
+      "text": "À peine le commandant Chesley Sullenberger eut-il aligné son Airbus A320 sur la piste de LaGuardia que la routine de trente ans de carrière allait se briser. Le {{BLANK_4}} s'effectua sans heurt, le lourd {{BLANK_1}} de métal s'arrachant à la gravité pour entamer son {{BLANK_14}} vers Charlotte. Dans le {{BLANK_3}} feutré, les instruments scintillaient, et le {{BLANK_2}} surveillait l'{{BLANK_12}} de croisière avec une sérénité professionnelle. Soudain, une nuée d'oies bernaches percuta l'appareil. Un double bang sourd, une odeur de brûlé, et les deux {{BLANK_7}}s moururent instantanément. Le géant de cent tonnes n'était plus qu'un planeur de plomb tombant vers Manhattan. La {{BLANK_10}} hurlait dans la radio des instructions impossibles, guidée par un {{BLANK_9}} impuissant. Sully sentit le {{BLANK_13}} dans sa paume, ce prolongement nerveux qui reliait son instinct à l'âme de la machine. Il n'y avait pas de piste assez proche. Il ne restait que le fleuve Hudson, gris et glacé. Il annonça à la cabine : « Brace for impact. » L'{{BLANK_5}} sur l'eau fut d'une violence inouïe, arrachant le {{BLANK_11}} dans un fracas de métal. L'eau glacée s'engouffrait, mais le {{BLANK_6}} restait intègre. Même les {{BLANK_8}}s glaciales du fleuve ne purent engloutir le miracle. Cent cinquante-cinq secondes avaient suffi pour transformer un vétéran du ciel en légende vivante, prouvant que face au chaos, la main de l'homme vaut tous les ordinateurs du monde.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "avion",
+          "options": [
+            "avion",
+            "fuselage",
+            "radar",
+            "vol"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pilote",
+          "options": [
+            "pilote",
+            "tour de contrôle",
+            "train d'atterrissage",
+            "manche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "cockpit",
+          "options": [
+            "cockpit",
+            "réacteur",
+            "décollage",
+            "turbulence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "décollage",
+          "options": [
+            "décollage",
+            "atterrissage",
+            "altitude",
+            "vol"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "atterrissage",
+          "options": [
+            "atterrissage",
+            "décollage",
+            "turbulence",
+            "radar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "fuselage",
+          "options": [
+            "fuselage",
+            "réacteur",
+            "train d'atterrissage",
+            "cockpit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "réacteurs",
+          "options": [
+            "réacteurs",
+            "manches",
+            "fuselages",
+            "radars"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "turbulences",
+          "options": [
+            "turbulences",
+            "altitudes",
+            "tours de contrôle",
+            "pilotes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "radar",
+          "options": [
+            "radar",
+            "manche",
+            "avion",
+            "vol"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "tour de contrôle",
+          "options": [
+            "tour de contrôle",
+            "train d'atterrissage",
+            "altitude",
+            "réacteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "train d'atterrissage",
+          "options": [
+            "train d'atterrissage",
+            "cockpit",
+            "fuselage",
+            "décollage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "altitude",
+          "options": [
+            "altitude",
+            "turbulence",
+            "atterrissage",
+            "avion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "manche",
+          "options": [
+            "manche",
+            "radar",
+            "tour de contrôle",
+            "pilote"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "vol",
+          "options": [
+            "vol",
+            "décollage",
+            "réacteur",
+            "cockpit"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Aviation et aéronautique",
+    "title_fa": "آزمون : هوانوردی و پرواز",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le véhicule volant propulsé par des moteurs et doté d'ailes fixes, utilisé pour le transport de passagers ou de fret, est l'____.",
+        "options": [
+          "avion",
+          "fuselage",
+          "radar",
+          "vol"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله نقلیه پرنده بال‌ثابت = avion."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel formé pour diriger et manœuvrer un aéronef en toute sécurité est le ____.",
+        "options": [
+          "pilote",
+          "tour de contrôle",
+          "train d'atterrissage",
+          "manche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هدایت‌کننده هواپیما = pilote."
+      },
+      {
+        "type": "mcq",
+        "question": "L'habitacle fermé à l'avant de l'appareil où se trouvent les commandes et où s'installent les pilotes est le ____.",
+        "options": [
+          "cockpit",
+          "réacteur",
+          "décollage",
+          "turbulence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اتاقک فرمان و خلبانان = cockpit."
+      },
+      {
+        "type": "mcq",
+        "question": "La phase du vol où l'appareil quitte le sol et prend son envol grâce à sa vitesse est le ____.",
+        "options": [
+          "décollage",
+          "atterrissage",
+          "altitude",
+          "vol"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بلند شدن از زمین = décollage."
+      },
+      {
+        "type": "mcq",
+        "question": "La phase finale du vol où l'aéronef se pose et reprend contact avec le sol ou l'eau est l'____.",
+        "options": [
+          "atterrissage",
+          "décollage",
+          "turbulence",
+          "radar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نشستن روی زمین یا آب = atterrissage."
+      },
+      {
+        "type": "mcq",
+        "question": "La structure centrale et allongée d'un aéronef qui contient la cabine, le fret et relie les ailes est le ____.",
+        "options": [
+          "fuselage",
+          "réacteur",
+          "train d'atterrissage",
+          "cockpit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بدنه اصلی و استوانه‌ای هواپیما = fuselage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le moteur qui propulse les avions modernes en éjectant des gaz à très grande vitesse est le ____.",
+        "options": [
+          "réacteur",
+          "manche",
+          "fuselage",
+          "radar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "موتور جت = réacteur."
+      },
+      {
+        "type": "mcq",
+        "question": "La perturbation atmosphérique qui provoque des secousses et des mouvements brusques de l'appareil en vol est la ____.",
+        "options": [
+          "turbulence",
+          "altitude",
+          "tour de contrôle",
+          "pilote"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تلاطم و چاله هوایی = turbulence."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système électronique qui utilise les ondes radio pour détecter la position et la distance des objets est le ____.",
+        "options": [
+          "radar",
+          "manche",
+          "avion",
+          "vol"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم ردیابی با امواج رادیویی = radar."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bâtiment élevé dans les aéroports depuis lequel les contrôleurs aériens guident les décollages et les atterrissages est la ____.",
+        "options": [
+          "tour de contrôle",
+          "train d'atterrissage",
+          "altitude",
+          "réacteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ساختمان هدایت ترافیک هوایی = tour de contrôle."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des roues et des amortisseurs qui supportent l'avion au sol et lors du roulement est le ____.",
+        "options": [
+          "train d'atterrissage",
+          "cockpit",
+          "fuselage",
+          "décollage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چرخ‌ها و پایه‌های فرود = train d'atterrissage."
+      },
+      {
+        "type": "mcq",
+        "question": "La hauteur verticale à laquelle vole un aéronef par rapport au niveau de la mer est l'____.",
+        "options": [
+          "altitude",
+          "turbulence",
+          "atterrissage",
+          "avion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارتفاع از سطح دریا = altitude."
+      },
+      {
+        "type": "mcq",
+        "question": "Le levier de commande tenu par le pilote pour orienter l'appareil (monter, descendre, tourner) est le ____.",
+        "options": [
+          "manche",
+          "radar",
+          "tour de contrôle",
+          "pilote"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اهرم کنترل خلبان = manche."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de se déplacer dans les airs à bord d'un aéronef, du départ à l'arrivée, est le ____.",
+        "options": [
+          "vol",
+          "décollage",
+          "réacteur",
+          "cockpit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سفر هوایی = vol."
+      },
+      {
+        "type": "binary",
+        "question": "Le cockpit et la cabine des passagers désignent exactement le même espace dans l'avion.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کابین خلبان (cockpit) محل کار خلبانان است، کابین مسافران جداگانه است."
+      },
+      {
+        "type": "binary",
+        "question": "Le train d'atterrissage est généralement rétracté pendant le vol pour améliorer l'aérodynamisme.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. چرخ‌ها در طول پرواز جمع می‌شوند تا مقاومت هوا کاهش یابد."
+      },
+      {
+        "type": "binary",
+        "question": "La tour de contrôle est l'endroit où les passagers attendent leur avion avant l'embarquement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. برج مراقبت محل کار کنترلرهای ترافیک هوایی است، نه سالن انتظار مسافران."
+      },
+      {
+        "type": "binary",
+        "question": "Une turbulence est un mouvement d'air instable qui provoque des secousses plus ou moins fortes en vol.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تلاطم ناشی از جریان‌های ناپایدار هوا و تکان دادن هواپیماست."
+      },
+      {
+        "type": "binary",
+        "question": "Le fuselage contient les moteurs à réaction de l'avion.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. موتورهای جت معمولاً زیر بال‌ها یا در انتهای بدنه نصب می‌شوند، نه داخل آن."
+      },
+      {
+        "type": "binary",
+        "question": "Le manche permet au pilote de contrôler l'assiette et la direction de l'avion en vol.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اهرم کنترل (جوی‌استیک) برای تغییر زاویه و جهت هواپیما استفاده می‌شود."
+      }
+    ]
+  }
+}
