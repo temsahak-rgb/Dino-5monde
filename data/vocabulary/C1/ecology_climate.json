@@ -1,0 +1,680 @@
+{
+  "id": "ecology_climate",
+  "level": "C1",
+  "theme": "Écologie, climat et développement durable",
+  "theme_fa": "اکولوژی، اقلیم و توسعه پایدار",
+  "icon": "🌍",
+  "inspiration": "Demain (Cyril Dion & Mélanie Laurent, 2015)",
+  "words": [
+    {
+      "fr": "le réchauffement climatique",
+      "fa": "گرمایش جهانی",
+      "emoji": "🌡️",
+      "difficulty": 4,
+      "ex": "Le réchauffement climatique menace les écosystèmes polaires.",
+      "ex_fa": "گرمایش جهانی اکوسیستم‌های قطبی را تهدید می‌کند."
+    },
+    {
+      "fr": "l'effet de serre",
+      "fa": "اثر گلخانه‌ای",
+      "emoji": "🏭",
+      "difficulty": 4,
+      "ex": "L'effet de serre naturel est vital, mais son amplification est dangereuse.",
+      "ex_fa": "اثر گلخانه‌ای طبیعی حیاتی است، اما تشدید آن خطرناک است."
+    },
+    {
+      "fr": "la biodiversité",
+      "fa": "تنوع زیستی",
+      "emoji": "🦋",
+      "difficulty": 4,
+      "ex": "La perte de biodiversité affaiblit la résilience de la nature.",
+      "ex_fa": "از دست رفتن تنوع زیستی، تاب‌آوری طبیعت را ضعیف می‌کند."
+    },
+    {
+      "fr": "l'empreinte carbone",
+      "fa": "ردپای کربن",
+      "emoji": "👣",
+      "difficulty": 5,
+      "ex": "Chaque citoyen doit réduire son empreinte carbone quotidienne.",
+      "ex_fa": "هر شهروند باید ردپای کربن روزانه خود را کاهش دهد."
+    },
+    {
+      "fr": "l'énergie renouvelable",
+      "fa": "انرژی تجدیدپذیر",
+      "emoji": "☀️",
+      "difficulty": 4,
+      "ex": "L'énergie renouvelable remplace progressivement les combustibles fossiles.",
+      "ex_fa": "انرژی تجدیدپذیر به تدریج جایگزین سوخت‌های فسیلی می‌شود."
+    },
+    {
+      "fr": "la déforestation",
+      "fa": "جنگل‌زدایی",
+      "emoji": "🪓",
+      "difficulty": 4,
+      "ex": "La déforestation amazonienne libère d'énormes quantités de CO2.",
+      "ex_fa": "جنگل‌زدایی آمازون مقادیر عظیمی CO2 آزاد می‌کند."
+    },
+    {
+      "fr": "la sécheresse",
+      "fa": "خشکسالی",
+      "emoji": "🏜️",
+      "difficulty": 4,
+      "ex": "La sécheresse prolongée détruit les récoltes et assèche les rivières.",
+      "ex_fa": "خشکسالی طولانی‌مدت، محصولات را نابود و رودها را خشک می‌کند."
+    },
+    {
+      "fr": "le développement durable",
+      "fa": "توسعه پایدار",
+      "emoji": "♻️",
+      "difficulty": 4,
+      "ex": "Le développement durable concilie économie, social et environnement.",
+      "ex_fa": "توسعه پایدار، اقتصاد، اجتماع و محیط زیست را هماهنگ می‌کند."
+    },
+    {
+      "fr": "la permaculture",
+      "fa": "پرمکالچر (کشاورزی پایدار)",
+      "emoji": "🌱",
+      "difficulty": 5,
+      "ex": "La permaculture imite les cycles naturels pour produire sans épuiser le sol.",
+      "ex_fa": "پرمکالچر برای تولید بدون فرسایش خاک، از چرخه‌های طبیعی تقلید می‌کند."
+    },
+    {
+      "fr": "le recyclage",
+      "fa": "بازیافت",
+      "emoji": "🔄",
+      "difficulty": 3,
+      "ex": "Le recyclage du plastique permet d'économiser le pétrole.",
+      "ex_fa": "بازیافت پلاستیک باعث صرفه‌جویی در نفت می‌شود."
+    },
+    {
+      "fr": "la couche d'ozone",
+      "fa": "لایه اوزون",
+      "emoji": "🛡️",
+      "difficulty": 4,
+      "ex": "La couche d'ozone nous protège des rayons ultraviolets nocifs.",
+      "ex_fa": "لایه اوزون ما را از اشعه‌های فرابنفش مضر محافظت می‌کند."
+    },
+    {
+      "fr": "l'éolienne",
+      "fa": "توربین بادی",
+      "emoji": "🌬️",
+      "difficulty": 4,
+      "ex": "L'éolienne transforme la force du vent en électricité verte.",
+      "ex_fa": "توربین بادی نیروی باد را به الکتریسیته سبز تبدیل می‌کند."
+    },
+    {
+      "fr": "la fonte des glaces",
+      "fa": "ذوب شدن یخ‌ها",
+      "emoji": "🧊",
+      "difficulty": 4,
+      "ex": "La fonte des glaces arctiques ouvre de nouvelles routes maritimes.",
+      "ex_fa": "ذوب یخ‌های قطب شمال، مسیرهای دریایی جدیدی باز می‌کند."
+    },
+    {
+      "fr": "l'agriculture biologique",
+      "fa": "کشاورزی ارگانیک",
+      "emoji": "🍎",
+      "difficulty": 4,
+      "ex": "L'agriculture biologique refuse les pesticides de synthèse.",
+      "ex_fa": "کشاورزی ارگانیک از آفت‌کش‌های مصنوعی خودداری می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le tour du monde des solutions",
+      "text": "Cyril s'inquiète pour l'avenir de son fils. Il décide de partir autour du monde pour comprendre les menaces et trouver des réponses. Les scientifiques lui expliquent que le {{BLANK_1}} s'accélère à cause de l'{{BLANK_2}} provoqué par nos industries. Cette surchauffe entraîne la {{BLANK_13}} aux pôles et la {{BLANK_7}} dans les régions arides. Partout, la {{BLANK_6}} massive détruit les poumons verts de la Terre. Mais Cyril découvre aussi des lueurs d'espoir. Dans une ferme française, des paysans pratiquent la {{BLANK_9}} pour nourrir le sol sans l'épuiser. D'autres se tournent vers l'{{BLANK_14}} qui garantit des aliments sains. Pour réduire notre {{BLANK_4}}, chaque geste compte, notamment le {{BLANK_10}} systématique des matériaux. Dans les villes danoises, chaque toit accueille une {{BLANK_12}} qui produit une {{BLANK_5}} propre et inépuisable. Grâce aux accords internationaux, la {{BLANK_11}} commence à se reconstituer lentement. Cyril comprend qu'un véritable {{BLANK_8}} est possible si l'humanité décide de protéger la {{BLANK_3}} menacée par nos excès. Il rentre avec un message : le futur n'est pas écrit, il est à inventer.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "réchauffement climatique",
+          "options": [
+            "réchauffement climatique",
+            "recyclage",
+            "agriculture biologique",
+            "éolienne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "effet de serre",
+          "options": [
+            "effet de serre",
+            "permaculture",
+            "empreinte carbone",
+            "biodiversité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "biodiversité",
+          "options": [
+            "biodiversité",
+            "sécheresse",
+            "fonte des glaces",
+            "déforestation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "empreinte carbone",
+          "options": [
+            "empreinte carbone",
+            "couche d'ozone",
+            "développement durable",
+            "éolienne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "énergie renouvelable",
+          "options": [
+            "énergie renouvelable",
+            "recyclage",
+            "agriculture biologique",
+            "permaculture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "déforestation",
+          "options": [
+            "déforestation",
+            "fonte des glaces",
+            "sécheresse",
+            "biodiversité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "sécheresse",
+          "options": [
+            "sécheresse",
+            "couche d'ozone",
+            "déforestation",
+            "effet de serre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "développement durable",
+          "options": [
+            "développement durable",
+            "réchauffement climatique",
+            "empreinte carbone",
+            "recyclage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "permaculture",
+          "options": [
+            "permaculture",
+            "agriculture biologique",
+            "éolienne",
+            "biodiversité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "recyclage",
+          "options": [
+            "recyclage",
+            "effet de serre",
+            "déforestation",
+            "fonte des glaces"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "couche d'ozone",
+          "options": [
+            "couche d'ozone",
+            "permaculture",
+            "empreinte carbone",
+            "sécheresse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "éolienne",
+          "options": [
+            "éolienne",
+            "déforestation",
+            "biodiversité",
+            "recyclage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "fonte des glaces",
+          "options": [
+            "fonte des glaces",
+            "énergie renouvelable",
+            "agriculture biologique",
+            "éolienne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "agriculture biologique",
+          "options": [
+            "agriculture biologique",
+            "réchauffement climatique",
+            "développement durable",
+            "effet de serre"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les graines de demain",
+      "inspiration": "Demain (Cyril Dion & Mélanie Laurent, 2015)",
+      "text": "À peine Cyril Dion eut-il lu le rapport glaçant des scientifiques qu'une angoisse sourde lui étreignit la poitrine. Le {{BLANK_1}} n'était plus une lointaine prophétie, mais une réalité brûlante qui s'abattait déjà sur les rives et les champs. L'{{BLANK_2}}, autrefois bouclier invisible et protecteur, était devenu une étouffante prison de gaz, alimentée par nos appétits insatiables. Partout où il posait les yeux, la {{BLANK_6}} dévorait les forêts primaires, ces cathédrales vivantes qui abritaient une {{BLANK_3}} inestimable. Dans le sud, la {{BLANK_7}} craquelait la terre assoiffée, tandis qu'aux pôles, la {{BLANK_13}} pleurait la mort des ours et la montée des eaux. Chaque geste quotidien, chaque trajet en voiture alourdissait l'{{BLANK_4}} de l'humanité, cette marque invisible qui condamnait les générations futures. Mais Cyril refusa le désespoir. Il prit la route, traversa les continents, cherchant les éclaireurs d'un {{BLANK_8}} possible. Dans les campagnes françaises, il rencontra des paysans rebelles qui pratiquaient la {{BLANK_9}}, redessinant les paysages en imitant la sagesse des forêts sauvages. D'autres, plus loin, prouvaient que l'{{BLANK_14}} pouvait nourrir le monde sans empoisonner les nappes phréatiques. Dans les cités du Nord, d'immenses forêts de métal dressaient leurs bras blancs vers le ciel : chaque {{BLANK_12}} capturait le souffle du vent pour le muer en une {{BLANK_5}} pure et inépuisable. Les citoyens, unis, avaient réparé la {{BLANK_11}} blessée en bannissant les gaz interdits, et dans chaque foyer, le {{BLANK_10}} était devenu une seconde nature, transformant les déchets d'hier en ressources de demain. Cyril comprit alors que le salut ne viendrait ni des rois ni des machines, mais de ces millions de mains anonymes qui, jour après jour, semaient les graines d'un futur où l'homme cesserait d'être le parasite de sa propre maison.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "réchauffement climatique",
+          "options": [
+            "réchauffement climatique",
+            "recyclage",
+            "agriculture biologique",
+            "éolienne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "effet de serre",
+          "options": [
+            "effet de serre",
+            "permaculture",
+            "empreinte carbone",
+            "biodiversité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "biodiversité",
+          "options": [
+            "biodiversité",
+            "sécheresse",
+            "fonte des glaces",
+            "déforestation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "empreinte carbone",
+          "options": [
+            "empreinte carbone",
+            "couche d'ozone",
+            "développement durable",
+            "éolienne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "énergie renouvelable",
+          "options": [
+            "énergie renouvelable",
+            "recyclage",
+            "agriculture biologique",
+            "permaculture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "déforestation",
+          "options": [
+            "déforestation",
+            "fonte des glaces",
+            "sécheresse",
+            "biodiversité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "sécheresse",
+          "options": [
+            "sécheresse",
+            "couche d'ozone",
+            "déforestation",
+            "effet de serre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "développement durable",
+          "options": [
+            "développement durable",
+            "réchauffement climatique",
+            "empreinte carbone",
+            "recyclage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "permaculture",
+          "options": [
+            "permaculture",
+            "agriculture biologique",
+            "éolienne",
+            "biodiversité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "recyclage",
+          "options": [
+            "recyclage",
+            "effet de serre",
+            "déforestation",
+            "fonte des glaces"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "couche d'ozone",
+          "options": [
+            "couche d'ozone",
+            "permaculture",
+            "empreinte carbone",
+            "sécheresse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "éolienne",
+          "options": [
+            "éolienne",
+            "déforestation",
+            "biodiversité",
+            "recyclage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "fonte des glaces",
+          "options": [
+            "fonte des glaces",
+            "énergie renouvelable",
+            "agriculture biologique",
+            "éolienne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "agriculture biologique",
+          "options": [
+            "agriculture biologique",
+            "réchauffement climatique",
+            "développement durable",
+            "effet de serre"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Écologie et enjeux climatiques",
+    "title_fa": "آزمون : اکولوژی و چالش‌های اقلیمی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'augmentation générale et durable des températures moyennes à la surface du globe, causée principalement par les activités humaines, est le ____.",
+        "options": [
+          "réchauffement climatique",
+          "recyclage",
+          "agriculture biologique",
+          "éolienne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "افزایش دمای جهانی = réchauffement climatique."
+      },
+      {
+        "type": "mcq",
+        "question": "Le phénomène naturel amplifié par les émissions de gaz (comme le CO2) qui retient la chaleur dans l'atmosphère terrestre est l'____.",
+        "options": [
+          "effet de serre",
+          "permaculture",
+          "empreinte carbone",
+          "biodiversité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پدیده حبس گرما در جو = effet de serre."
+      },
+      {
+        "type": "mcq",
+        "question": "La diversité des espèces vivantes (animaux, plantes, micro-organismes) présentes dans un milieu naturel donné est la ____.",
+        "options": [
+          "biodiversité",
+          "sécheresse",
+          "fonte des glaces",
+          "déforestation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تنوع گونه‌های زنده = biodiversité."
+      },
+      {
+        "type": "mcq",
+        "question": "La mesure qui quantifie la quantité de gaz à effet de serre émise par une personne, une entreprise ou un produit est l'____.",
+        "options": [
+          "empreinte carbone",
+          "couche d'ozone",
+          "développement durable",
+          "éolienne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "میزان گازهای گلخانه‌ای تولیدشده = empreinte carbone."
+      },
+      {
+        "type": "mcq",
+        "question": "Une source d'énergie qui se reconstitue naturellement à l'échelle humaine (soleil, vent, eau) est une ____.",
+        "options": [
+          "énergie renouvelable",
+          "recyclage",
+          "agriculture biologique",
+          "permaculture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انرژی با قابلیت تجدید طبیعی = énergie renouvelable."
+      },
+      {
+        "type": "mcq",
+        "question": "La destruction massive et durable des forêts, souvent pour l'agriculture ou l'exploitation du bois, est la ____.",
+        "options": [
+          "déforestation",
+          "fonte des glaces",
+          "sécheresse",
+          "biodiversité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نابودی گسترده جنگل‌ها = déforestation."
+      },
+      {
+        "type": "mcq",
+        "question": "La période prolongée de déficit pluviométrique qui assèche les sols et menace l'agriculture est la ____.",
+        "options": [
+          "sécheresse",
+          "couche d'ozone",
+          "déforestation",
+          "effet de serre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره طولانی بدون باران = sécheresse."
+      },
+      {
+        "type": "mcq",
+        "question": "Le concept de croissance économique et sociale qui respecte l'environnement et préserve les ressources pour les générations futures est le ____.",
+        "options": [
+          "développement durable",
+          "réchauffement climatique",
+          "empreinte carbone",
+          "recyclage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رشد اقتصادی سازگار با محیط زیست = développement durable."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système agricole qui s'inspire des écosystèmes naturels pour créer des jardins productifs et autosuffisants est la ____.",
+        "options": [
+          "permaculture",
+          "agriculture biologique",
+          "éolienne",
+          "biodiversité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم کشاورزی الهام‌گرفته از طبیعت = permaculture."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus industriel ou artisanal qui transforme les déchets en nouvelles matières premières pour éviter le gaspillage est le ____.",
+        "options": [
+          "recyclage",
+          "effet de serre",
+          "déforestation",
+          "fonte des glaces"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تبدیل زباله به ماده اولیه = recyclage."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie de la stratosphère riche en ozone qui filtre les rayons ultraviolets dangereux du Soleil est la ____.",
+        "options": [
+          "couche d'ozone",
+          "permaculture",
+          "empreinte carbone",
+          "sécheresse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لایه محافظ در برابر اشعه UV = couche d'ozone."
+      },
+      {
+        "type": "mcq",
+        "question": "La machine de grande taille, dotée de pales, qui capte l'énergie cinétique du vent pour produire de l'électricité est l'____.",
+        "options": [
+          "éolienne",
+          "déforestation",
+          "biodiversité",
+          "recyclage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه تولید برق از باد = éolienne."
+      },
+      {
+        "type": "mcq",
+        "question": "Le phénomène de disparition accélérée des banquises et des glaciers dû à la hausse des températures est la ____.",
+        "options": [
+          "fonte des glaces",
+          "énergie renouvelable",
+          "agriculture biologique",
+          "éolienne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ناپدید شدن یخچال‌های طبیعی = fonte des glaces."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mode de production agricole qui exclut l'usage des pesticides et engrais chimiques de synthèse est l'____.",
+        "options": [
+          "agriculture biologique",
+          "réchauffement climatique",
+          "développement durable",
+          "effet de serre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشاورزی بدون مواد شیمیایی = agriculture biologique."
+      },
+      {
+        "type": "binary",
+        "question": "L'effet de serre est un phénomène uniquement négatif et artificiel créé par les usines modernes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اثر گلخانه‌ای یک پدیده طبیعی و حیاتی برای گرم نگه داشتن زمین است، اما تشدید آن توسط انسان خطرناک است."
+      },
+      {
+        "type": "binary",
+        "question": "La déforestation contribue au réchauffement climatique en libérant le carbone stocké dans les arbres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. قطع درختان کربن ذخیره‌شده را آزاد کرده و به گرمایش جهانی دامن می‌زند."
+      },
+      {
+        "type": "binary",
+        "question": "La permaculture est une méthode agricole industrielle qui utilise massivement les engrais chimiques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پرمکالچر دقیقاً برعکس، یک روش کشاورزی طبیعی و پایدار است."
+      },
+      {
+        "type": "binary",
+        "question": "Le recyclage permet d'économiser des ressources naturelles en réutilisant les matériaux déjà extraits.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بازیافت با استفاده مجدد از مواد، در منابع طبیعی صرفه‌جویی می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "L'énergie renouvelable comprend des sources comme le pétrole, le charbon et le gaz naturel.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. نفت، زغال‌سنگ و گاز سوخت‌های فسیلی هستند، نه تجدیدپذیر."
+      },
+      {
+        "type": "binary",
+        "question": "La fonte des glaces arctiques est une conséquence directe de l'augmentation des températures mondiales.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ذوب یخ‌های قطبی پیامد مستقیم افزایش دمای کره زمین است."
+      }
+    ]
+  }
+}
