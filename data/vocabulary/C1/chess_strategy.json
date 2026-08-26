@@ -1,74 +1,58 @@
 {
   "id": "chess_strategy",
   "level": "C1",
-  "theme": "Échecs, stratégie et compétition",
-  "theme_fa": "شطرنج، استراتژی و رقابت",
+  "theme": "Échecs, stratégie et tournoi",
+  "theme_fa": "شطرنج، استراتژی و مسابقات",
   "icon": "♟️",
-  "inspiration": "Le Jeu de la dame (The Queen's Gambit - Scott Frank, 2020)",
+  "inspiration": "Le Jeu de la Dame (The Queen's Gambit - Scott Frank, 2020)",
   "words": [
+    {
+      "fr": "les échecs",
+      "fa": "شطرنج",
+      "emoji": "♟️",
+      "difficulty": 3,
+      "ex": "Les échecs sont considérés comme le roi des jeux de stratégie.",
+      "ex_fa": "شطرنج به عنوان پادشاه بازی‌های استراتژیک شناخته می‌شود."
+    },
     {
       "fr": "l'échiquier",
       "fa": "صفحه شطرنج",
       "emoji": "♟️",
       "difficulty": 3,
-      "ex": "L'échiquier comprend soixante-quatre cases alternées noires et blanches.",
-      "ex_fa": "صفحه شطرنج شامل شصت و چهار خانه سیاه و سفید متناوب است."
-    },
-    {
-      "fr": "la partie",
-      "fa": "بازی، مسابقه",
-      "emoji": "🎯",
-      "difficulty": 3,
-      "ex": "La partie d'échecs peut durer plusieurs heures.",
-      "ex_fa": "بازی شطرنج می‌تواند چندین ساعت طول بکشد."
-    },
-    {
-      "fr": "l'ouverture",
-      "fa": "گشایش، شروع بازی",
-      "emoji": "🎬",
-      "difficulty": 4,
-      "ex": "L'ouverture italienne est l'une des plus anciennes stratégies.",
-      "ex_fa": "گشایش ایتالیایی یکی از قدیمی‌ترین استراتژی‌هاست."
-    },
-    {
-      "fr": "le gambit",
-      "fa": "گامبی (قربانی دادن مهره)",
-      "emoji": "🎁",
-      "difficulty": 5,
-      "ex": "Le gambit dame sacrifie un pion pour contrôler le centre.",
-      "ex_fa": "گامبی وزیر، یک پیاده را برای کنترل مرکز قربانی می‌کند."
+      "ex": "L'échiquier est composé de 64 cases alternativement blanches et noires.",
+      "ex_fa": "صفحه شطرنج از ۶۴ خانه سیاه و سفید متناوب تشکیل شده است."
     },
     {
       "fr": "le pion",
       "fa": "پیاده",
       "emoji": "♙",
-      "difficulty": 2,
-      "ex": "Le pion ne peut reculer une fois qu'il a avancé.",
-      "ex_fa": "پیاده پس از پیشروی نمی‌تواند عقب برود."
+      "difficulty": 3,
+      "ex": "Le pion ne peut jamais reculer une fois qu'il a avancé.",
+      "ex_fa": "پیاده پس از پیشروی هرگز نمی‌تواند عقب برود."
     },
     {
       "fr": "le cavalier",
       "fa": "اسب",
       "emoji": "♘",
       "difficulty": 3,
-      "ex": "Le cavalier se déplace en L et peut sauter par-dessus les pièces.",
-      "ex_fa": "اسب به شکل L حرکت می‌کند و می‌تواند از روی مهره‌ها بپرد."
+      "ex": "Le cavalier est la seule pièce qui peut sauter par-dessus les autres.",
+      "ex_fa": "اسب تنها مهره‌ای است که می‌تواند از روی مهره‌های دیگر بپرد."
     },
     {
       "fr": "le fou",
       "fa": "فیل",
       "emoji": "♗",
       "difficulty": 3,
-      "ex": "Le fou se déplace en diagonale sur toute la longueur de l'échiquier.",
-      "ex_fa": "فیل به صورت مورب در تمام طول صفحه حرکت می‌کند."
+      "ex": "Le fou se déplace uniquement sur les cases de sa propre couleur.",
+      "ex_fa": "فیل فقط روی خانه‌های همرنگ خودش حرکت می‌کند."
     },
     {
       "fr": "la tour",
       "fa": "رخ",
       "emoji": "♖",
       "difficulty": 3,
-      "ex": "La tour se déplace horizontalement et verticalement.",
-      "ex_fa": "رخ به صورت افقی و عمودی حرکت می‌کند."
+      "ex": "La tour est particulièrement puissante en fin de partie sur les colonnes ouvertes.",
+      "ex_fa": "رخ در آخر بازی روی ستون‌های باز بسیار قدرتمند است."
     },
     {
       "fr": "la dame",
@@ -82,64 +66,124 @@
       "fr": "le roi",
       "fa": "شاه",
       "emoji": "♔",
-      "difficulty": 2,
-      "ex": "Le roi doit être protégé à tout prix pour éviter l'échec et mat.",
-      "ex_fa": "شاه باید به هر قیمتی برای جلوگیری از مات محافظت شود."
+      "difficulty": 3,
+      "ex": "La protection du roi est l'objectif absolu de chaque joueur.",
+      "ex_fa": "محافظت از شاه هدف مطلق هر بازیکن است."
     },
     {
       "fr": "l'échec et mat",
       "fa": "کیش و مات",
-      "emoji": "🏆",
-      "difficulty": 3,
+      "emoji": "🏁",
+      "difficulty": 4,
       "ex": "L'échec et mat signifie la fin immédiate de la partie.",
       "ex_fa": "کیش و مات به معنای پایان فوری بازی است."
     },
     {
-      "fr": "le pat",
-      "fa": "پات (بن‌بست)",
-      "emoji": "🤝",
+      "fr": "l'ouverture",
+      "fa": "گشایش",
+      "emoji": "📖",
+      "difficulty": 4,
+      "ex": "L'ouverture italienne est l'une des plus anciennes du jeu.",
+      "ex_fa": "گشایش ایتالیایی یکی از قدیمی‌ترین گشایش‌های بازی است."
+    },
+    {
+      "fr": "le gambit",
+      "fa": "گامبی (قربانی)",
+      "emoji": "🎁",
       "difficulty": 5,
-      "ex": "Le pat se produit quand le roi n'est pas en échec mais ne peut jouer.",
-      "ex_fa": "پات زمانی رخ می‌دهد که شاه کیش نیست اما نمی‌تواند حرکت کند."
+      "ex": "Le gambit dame consiste à sacrifier un pion pour le contrôle du centre.",
+      "ex_fa": "گامبی وزیر شامل قربانی دادن یک پیاده برای کنترل مرکز است."
     },
     {
-      "fr": "le roque",
-      "fa": "قلعه‌رفتن",
-      "emoji": "🏰",
+      "fr": "la stratégie",
+      "fa": "استراتژی",
+      "emoji": "🧠",
       "difficulty": 4,
-      "ex": "Le roque protège le roi et développe la tour simultanément.",
-      "ex_fa": "قلعه‌رفتن، شاه را محافظت و رخ را توسعه می‌دهد."
+      "ex": "La stratégie à long terme prime souvent sur la tactique immédiate.",
+      "ex_fa": "استراتژی بلندمدت اغلب بر تاکتیک فوری برتری دارد."
     },
     {
-      "fr": "la promotion",
-      "fa": "ارتقاء پیاده",
-      "emoji": "⬆️",
+      "fr": "le grand maître",
+      "fa": "استاد بزرگ",
+      "emoji": "🏆",
       "difficulty": 4,
-      "ex": "La promotion transforme un pion en dame quand il atteint la dernière rangée.",
-      "ex_fa": "ارتقاء، پیاده را وقتی به ردیف آخر برسد به وزیر تبدیل می‌کند."
+      "ex": "Le titre de grand maître est la plus haute distinction aux échecs.",
+      "ex_fa": "عنوان استاد بزرگ بالاترین افتخار در شطرنج است."
+    },
+    {
+      "fr": "la pendule",
+      "fa": "ساعت شطرنج",
+      "emoji": "⏰",
+      "difficulty": 4,
+      "ex": "Le joueur doit appuyer sur la pendule après chaque coup joué.",
+      "ex_fa": "بازیکن باید پس از هر حرکت ساعت را فشار دهد."
     }
   ],
   "stories": {
     "simple": {
       "title": "La prodige du Kentucky",
-      "text": "Beth Harmon découvre les échecs dans l'orphelinat où elle grandit. Le concierge lui apprend à déplacer chaque pièce sur l'{{BLANK_1}}. Le {{BLANK_5}} avance d'une case, le {{BLANK_6}} saute en L, le {{BLANK_7}} glisse en diagonale. La {{BLANK_8}} domine les lignes droites, tandis que la {{BLANK_9}} combine tous les mouvements. Le {{BLANK_10}} doit être protégé absolument. Beth apprend les {{BLANK_3}}s classiques comme l'ouverture italienne ou espagnole. Elle maîtrise le {{BLANK_4}} dame qui sacrifie un pion pour l'initiative. Pendant une {{BLANK_2}} difficile, elle utilise le {{BLANK_13}} pour mettre son roi en sécurité. Quand son pion atteint la dernière rangée, la {{BLANK_14}} le transforme en dame puissante. Elle évite soigneusement le {{BLANK_12}} qui annulerait la partie. Finalement, elle réussit l'{{BLANK_11}} et remporte le championnat mondial. Sa stratégie brillante et son intuition exceptionnelle font d'elle la meilleure joueuse de tous les temps.",
+      "text": "Beth Harmon est une jeune orpheline qui découvre les {{BLANK_1}} dans le sous-sol sombre de l'orphelinat. Le concierge, Monsieur Shaibel, lui apprend à déplacer chaque pièce sur l'{{BLANK_2}} de 64 cases. Elle maîtrise rapidement le {{BLANK_3}} modeste mais nombreux, le {{BLANK_4}} au saut imprévisible en forme de L, le {{BLANK_5}} qui domine les diagonales, la {{BLANK_6}} puissante en ligne droite, la {{BLANK_7}} omnipotente qui combine tous les mouvements, et le {{BLANK_8}} fragile qu'il faut absolument protéger. Elle vise toujours l'{{BLANK_9}} rapide pour achever ses adversaires. Elle étudie chaque {{BLANK_10}} classique dans les livres pour bien commencer ses parties. Elle sacrifie parfois un pion dans un {{BLANK_11}} audacieux pour prendre un avantage positionnel. Sa {{BLANK_12}} positionnelle et ses visions mentales écrasent tous ses rivaux. À dix-neuf ans, elle affronte le {{BLANK_13}} mondial russe, Borgov, lors du championnat de Moscou. Elle appuie calmement sur la {{BLANK_14}} après chaque coup pour gérer son temps. Grâce à son génie, elle finit par remporter le titre suprême et révolutionner le monde des échecs.",
       "blanks": [
         {
           "id": 1,
-          "answer": "échiquier",
+          "answer": "échecs",
           "options": [
+            "échecs",
             "échiquier",
-            "partie",
-            "ouverture",
-            "gambit"
+            "pion",
+            "cavalier"
           ],
           "correctIndex": 0
         },
         {
           "id": 2,
-          "answer": "partie",
+          "answer": "échiquier",
           "options": [
-            "partie",
+            "échiquier",
+            "fou",
+            "tour",
+            "dame"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "pion",
+          "options": [
+            "pion",
+            "roi",
+            "échec et mat",
+            "ouverture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cavalier",
+          "options": [
+            "cavalier",
+            "gambit",
+            "stratégie",
+            "grand maître"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "fou",
+          "options": [
+            "fou",
+            "pendule",
+            "échecs",
+            "échiquier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "tour",
+          "options": [
+            "tour",
             "pion",
             "cavalier",
             "fou"
@@ -147,160 +191,160 @@
           "correctIndex": 0
         },
         {
-          "id": 3,
-          "answer": "ouverture",
-          "options": [
-            "ouverture",
-            "tour",
-            "dame",
-            "roi"
-          ],
-          "correctIndex": 0
-        },
-        {
-          "id": 4,
-          "answer": "gambit",
-          "options": [
-            "gambit",
-            "échec et mat",
-            "pat",
-            "roque"
-          ],
-          "correctIndex": 0
-        },
-        {
-          "id": 5,
-          "answer": "pion",
-          "options": [
-            "pion",
-            "promotion",
-            "échiquier",
-            "partie"
-          ],
-          "correctIndex": 0
-        },
-        {
-          "id": 6,
-          "answer": "cavalier",
-          "options": [
-            "cavalier",
-            "ouverture",
-            "gambit",
-            "pion"
-          ],
-          "correctIndex": 0
-        },
-        {
           "id": 7,
-          "answer": "fou",
+          "answer": "dame",
           "options": [
-            "fou",
-            "tour",
             "dame",
-            "roi"
+            "roi",
+            "échec et mat",
+            "ouverture"
           ],
           "correctIndex": 0
         },
         {
           "id": 8,
-          "answer": "tour",
+          "answer": "roi",
           "options": [
-            "tour",
-            "échec et mat",
-            "pat",
-            "roque"
+            "roi",
+            "gambit",
+            "stratégie",
+            "grand maître"
           ],
           "correctIndex": 0
         },
         {
           "id": 9,
-          "answer": "dame",
+          "answer": "échec et mat",
           "options": [
-            "dame",
-            "promotion",
-            "échiquier",
-            "partie"
+            "échec et mat",
+            "pendule",
+            "échecs",
+            "échiquier"
           ],
           "correctIndex": 0
         },
         {
           "id": 10,
-          "answer": "roi",
+          "answer": "ouverture",
           "options": [
-            "roi",
             "ouverture",
-            "gambit",
-            "pion"
+            "pion",
+            "cavalier",
+            "fou"
           ],
           "correctIndex": 0
         },
         {
           "id": 11,
-          "answer": "échec et mat",
+          "answer": "gambit",
           "options": [
-            "échec et mat",
-            "cavalier",
-            "fou",
-            "tour"
+            "gambit",
+            "tour",
+            "dame",
+            "roi"
           ],
           "correctIndex": 0
         },
         {
           "id": 12,
-          "answer": "pat",
+          "answer": "stratégie",
           "options": [
-            "pat",
-            "dame",
-            "roi",
-            "promotion"
+            "stratégie",
+            "échec et mat",
+            "ouverture",
+            "gambit"
           ],
           "correctIndex": 0
         },
         {
           "id": 13,
-          "answer": "roque",
+          "answer": "grand maître",
           "options": [
-            "roque",
-            "échec et mat",
-            "pat",
-            "promotion"
+            "grand maître",
+            "pendule",
+            "échecs",
+            "échiquier"
           ],
           "correctIndex": 0
         },
         {
           "id": 14,
-          "answer": "promotion",
+          "answer": "pendule",
           "options": [
-            "promotion",
-            "échiquier",
-            "partie",
-            "ouverture"
+            "pendule",
+            "pion",
+            "cavalier",
+            "fou"
           ],
           "correctIndex": 0
         }
       ]
     },
     "literary": {
-      "title": "Les soixante-quatre cases du destin",
-      "inspiration": "Le Jeu de la dame (Scott Frank, 2020)",
-      "text": "À peine Beth eut-elle touché le {{BLANK_5}} de bois qu'elle comprit que ces soixante-quatre cases allaient devenir son univers entier. Sur l'{{BLANK_1}} poussiéreux du sous-sol, le vieux concierge lui révélait les secrets d'un monde où chaque {{BLANK_2}} était une bataille, chaque {{BLANK_3}} une déclaration de guerre. Le {{BLANK_4}} dame, ce sacrifice audacieux qui offrait un pion pour conquérir le centre, devint sa signature. Le {{BLANK_5}} modeste avançait avec détermination, le {{BLANK_6}} bondissait comme un félin imprévisible, le {{BLANK_7}} traçait des diagonales mortelles. La {{BLANK_8}} balayait les colonnes avec la puissance d'une tempête, tandis que la {{BLANK_9}} dansait avec la grâce d'une reine absolue. Le {{BLANK_10}}, fragile monarque, devait survivre à tout prix. Dans les tournois internationaux, elle maîtrisait les {{BLANK_3}}s complexes, exécutait le {{BLANK_13}} protecteur, et quand son pion héroïque atteignait la dernière rangée, la {{BLANK_14}} le transformait en nouvelle reine. Elle évitait soigneusement le {{BLANK_12}} traître qui aurait annulé sa victoire, et quand enfin elle prononçait l'{{BLANK_11}} fatidique contre le champion soviétique, elle comprenait que les échecs n'étaient pas qu'un jeu, mais une métaphore de la vie elle-même, où chaque décision compte, où chaque sacrifice peut mener au triomphe, où la solitude du roi reflète celle de l'âme humaine cherchant sa place dans le chaos organisé du destin.",
+      "title": "La reine des ombres",
+      "inspiration": "Le Jeu de la Dame (The Queen's Gambit - Scott Frank, 2020)",
+      "text": "À peine Beth eut-elle déplacé sa première pièce sur l'{{BLANK_2}} poussiéreux du sous-sol qu'elle comprit que les soixante-quatre cases étaient un univers bien plus vaste que l'orphelinat qui l'enfermait. Les {{BLANK_1}} devinrent son langage secret, sa drogue, sa raison de vivre dans un monde qui l'avait rejetée. Elle s'identifiait au {{BLANK_3}} solitaire qui avançait sans jamais reculer, au {{BLANK_4}} cabriolant au-dessus des obstacles invisibles, au {{BLANK_5}} tranchant les diagonales comme un rasoir silencieux. La {{BLANK_6}} balayait les colonnes avec la fureur d'un ouragan, tandis que la {{BLANK_7}}, reine absolue, dansait la mort sur l'échiquier de sa vie. Elle protégeait son {{BLANK_8}} avec la férocité d'une mère, car sa chute signifiait la fin de son monde intérieur. Chaque {{BLANK_10}} était une déclaration de guerre, chaque {{BLANK_11}} un pari fou où elle sacrifiait du matériel pour gagner l'âme de la partie. Sa {{BLANK_12}} glaciale, nourrie par les pilules vertes qui calmaient ses visions au plafond, terrifiait les hommes adultes. La {{BLANK_14}} tic-taquait comme un compte à rebours vers sa propre destruction ou sa gloire éternelle. Quand elle affronta enfin le {{BLANK_13}} soviétique Borgov, ce n'était plus un simple jeu, mais une danse cosmique où chaque pièce cherchait l'{{BLANK_9}} final, prouvant qu'une petite orpheline du Kentucky pouvait mettre à genoux l'empire des tsars par la seule puissance de son esprit brisé mais génial.",
       "blanks": [
         {
           "id": 1,
-          "answer": "échiquier",
+          "answer": "échecs",
           "options": [
+            "échecs",
             "échiquier",
-            "partie",
-            "ouverture",
-            "gambit"
+            "pion",
+            "cavalier"
           ],
           "correctIndex": 0
         },
         {
           "id": 2,
-          "answer": "partie",
+          "answer": "échiquier",
           "options": [
-            "partie",
+            "échiquier",
+            "fou",
+            "tour",
+            "dame"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "pion",
+          "options": [
+            "pion",
+            "roi",
+            "échec et mat",
+            "ouverture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cavalier",
+          "options": [
+            "cavalier",
+            "gambit",
+            "stratégie",
+            "grand maître"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "fou",
+          "options": [
+            "fou",
+            "pendule",
+            "échecs",
+            "échiquier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "tour",
+          "options": [
+            "tour",
             "pion",
             "cavalier",
             "fou"
@@ -308,134 +352,90 @@
           "correctIndex": 0
         },
         {
-          "id": 3,
-          "answer": "ouverture",
-          "options": [
-            "ouverture",
-            "tour",
-            "dame",
-            "roi"
-          ],
-          "correctIndex": 0
-        },
-        {
-          "id": 4,
-          "answer": "gambit",
-          "options": [
-            "gambit",
-            "échec et mat",
-            "pat",
-            "roque"
-          ],
-          "correctIndex": 0
-        },
-        {
-          "id": 5,
-          "answer": "pion",
-          "options": [
-            "pion",
-            "promotion",
-            "échiquier",
-            "partie"
-          ],
-          "correctIndex": 0
-        },
-        {
-          "id": 6,
-          "answer": "cavalier",
-          "options": [
-            "cavalier",
-            "ouverture",
-            "gambit",
-            "pion"
-          ],
-          "correctIndex": 0
-        },
-        {
           "id": 7,
-          "answer": "fou",
+          "answer": "dame",
           "options": [
-            "fou",
-            "tour",
             "dame",
-            "roi"
+            "roi",
+            "échec et mat",
+            "ouverture"
           ],
           "correctIndex": 0
         },
         {
           "id": 8,
-          "answer": "tour",
+          "answer": "roi",
           "options": [
-            "tour",
-            "échec et mat",
-            "pat",
-            "roque"
+            "roi",
+            "gambit",
+            "stratégie",
+            "grand maître"
           ],
           "correctIndex": 0
         },
         {
           "id": 9,
-          "answer": "dame",
+          "answer": "échec et mat",
           "options": [
-            "dame",
-            "promotion",
-            "échiquier",
-            "partie"
+            "échec et mat",
+            "pendule",
+            "échecs",
+            "échiquier"
           ],
           "correctIndex": 0
         },
         {
           "id": 10,
-          "answer": "roi",
+          "answer": "ouverture",
           "options": [
-            "roi",
             "ouverture",
-            "gambit",
-            "pion"
+            "pion",
+            "cavalier",
+            "fou"
           ],
           "correctIndex": 0
         },
         {
           "id": 11,
-          "answer": "échec et mat",
+          "answer": "gambit",
           "options": [
-            "échec et mat",
-            "cavalier",
-            "fou",
-            "tour"
+            "gambit",
+            "tour",
+            "dame",
+            "roi"
           ],
           "correctIndex": 0
         },
         {
           "id": 12,
-          "answer": "pat",
+          "answer": "stratégie",
           "options": [
-            "pat",
-            "dame",
-            "roi",
-            "promotion"
+            "stratégie",
+            "échec et mat",
+            "ouverture",
+            "gambit"
           ],
           "correctIndex": 0
         },
         {
           "id": 13,
-          "answer": "roque",
+          "answer": "grand maître",
           "options": [
-            "roque",
-            "échec et mat",
-            "pat",
-            "promotion"
+            "grand maître",
+            "pendule",
+            "échecs",
+            "échiquier"
           ],
           "correctIndex": 0
         },
         {
           "id": 14,
-          "answer": "promotion",
+          "answer": "pendule",
           "options": [
-            "promotion",
-            "échiquier",
-            "partie",
-            "ouverture"
+            "pendule",
+            "pion",
+            "cavalier",
+            "fou"
           ],
           "correctIndex": 0
         }
@@ -449,171 +449,181 @@
     "questions": [
       {
         "type": "mcq",
-        "question": "Le plateau de jeu composé de 64 cases alternées noires et blanches est l'____.",
+        "question": "Le jeu de réflexion et de stratégie pure qui oppose deux joueurs sur un plateau de 64 cases s'appelle ____.",
+        "options": [
+          "les échecs",
+          "l'échiquier",
+          "le pion",
+          "le cavalier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بازی استراتژیک روی صفحه ۶۴ خانه‌ای = les échecs."
+      },
+      {
+        "type": "mcq",
+        "question": "Le plateau carré quadrillé de cases blanches et noires sur lequel se déroule la partie est l'____.",
         "options": [
           "échiquier",
-          "partie",
-          "ouverture",
-          "gambit"
+          "le fou",
+          "la tour",
+          "la dame"
         ],
         "correctIndex": 0,
-        "explanation_fa": "صفحه بازی ۶۴ خانه‌ای = échiquier."
+        "explanation_fa": "صفحه شطرنج = l'échiquier."
       },
       {
         "type": "mcq",
-        "question": "Une rencontre complète entre deux joueurs d'échecs est une ____.",
-        "options": [
-          "partie",
-          "pion",
-          "cavalier",
-          "fou"
-        ],
-        "correctIndex": 0,
-        "explanation_fa": "یک مسابقه کامل شطرنج = partie."
-      },
-      {
-        "type": "mcq",
-        "question": "La phase initiale du jeu où les joueurs développent leurs pièces est l'____.",
-        "options": [
-          "ouverture",
-          "tour",
-          "dame",
-          "roi"
-        ],
-        "correctIndex": 0,
-        "explanation_fa": "فاز آغازین بازی = ouverture."
-      },
-      {
-        "type": "mcq",
-        "question": "Le sacrifice volontaire d'une pièce (souvent un pion) pour obtenir un avantage positionnel est le ____.",
-        "options": [
-          "gambit",
-          "échec et mat",
-          "pat",
-          "roque"
-        ],
-        "correctIndex": 0,
-        "explanation_fa": "قربانی دادن مهره برای برتری = gambit."
-      },
-      {
-        "type": "mcq",
-        "question": "La pièce la plus nombreuse qui ne peut avancer que vers l'avant est le ____.",
+        "question": "La pièce la plus modeste mais la plus nombreuse, qui ne peut généralement avancer que d'une case vers l'avant, est le ____.",
         "options": [
           "pion",
-          "promotion",
-          "échiquier",
-          "partie"
+          "le roi",
+          "l'échec et mat",
+          "l'ouverture"
         ],
         "correctIndex": 0,
-        "explanation_fa": "مهره‌ای که فقط جلو می‌رود = pion."
+        "explanation_fa": "مهره کوچک و پرتعداد = le pion."
       },
       {
         "type": "mcq",
-        "question": "La pièce qui se déplace en forme de L et peut sauter par-dessus les autres est le ____.",
+        "question": "La pièce qui se déplace en 'L' et qui est la seule à pouvoir sauter par-dessus les autres pièces est le ____.",
         "options": [
           "cavalier",
-          "ouverture",
-          "gambit",
-          "pion"
+          "le gambit",
+          "la stratégie",
+          "le grand maître"
         ],
         "correctIndex": 0,
-        "explanation_fa": "مهره‌ای که به شکل L می‌پرد = cavalier."
+        "explanation_fa": "مهره با حرکت L شکل = le cavalier."
       },
       {
         "type": "mcq",
-        "question": "La pièce qui se déplace en diagonale sur toute la longueur de l'échiquier est le ____.",
+        "question": "La pièce qui se déplace en diagonale sur une distance illimitée est le ____.",
         "options": [
           "fou",
-          "tour",
-          "dame",
-          "roi"
+          "la pendule",
+          "les échecs",
+          "l'échiquier"
         ],
         "correctIndex": 0,
-        "explanation_fa": "مهره‌ای که مورب حرکت می‌کند = fou."
+        "explanation_fa": "مهره حرکت‌کننده به صورت مورب = le fou."
       },
       {
         "type": "mcq",
-        "question": "La pièce qui se déplace horizontalement et verticalement sur toute la longueur est la ____.",
+        "question": "La pièce qui se déplace en ligne droite (horizontalement ou verticalement) sur une distance illimitée est la ____.",
         "options": [
           "tour",
-          "échec et mat",
-          "pat",
-          "roque"
+          "le pion",
+          "le cavalier",
+          "le fou"
         ],
         "correctIndex": 0,
-        "explanation_fa": "مهره‌ای که افقی و عمودی می‌رود = tour."
+        "explanation_fa": "مهره حرکت‌کننده مستقیم = la tour."
       },
       {
         "type": "mcq",
-        "question": "La pièce la plus puissante qui combine les mouvements de la tour et du fou est la ____.",
+        "question": "La pièce la plus puissante du jeu, combinant les mouvements de la tour et du fou, est la ____ (ou la reine).",
         "options": [
           "dame",
-          "promotion",
-          "échiquier",
-          "partie"
+          "le roi",
+          "l'échec et mat",
+          "l'ouverture"
         ],
         "correctIndex": 0,
-        "explanation_fa": "قدرتمندترین مهره = dame."
+        "explanation_fa": "قدرتمندترین مهره = la dame."
       },
       {
         "type": "mcq",
-        "question": "La pièce la plus importante qui doit être protégée à tout prix est le ____.",
+        "question": "La pièce la plus importante du jeu, dont la capture imminente entraîne la fin de la partie, est le ____.",
         "options": [
           "roi",
+          "le gambit",
+          "la stratégie",
+          "le grand maître"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مهم‌ترین مهره بازی = le roi."
+      },
+      {
+        "type": "mcq",
+        "question": "La situation finale où le roi est attaqué sans aucune possibilité de fuir ou de se protéger est l'____.",
+        "options": [
+          "échec et mat",
+          "la pendule",
+          "les échecs",
+          "l'échiquier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حمله نهایی به شاه = l'échec et mat."
+      },
+      {
+        "type": "mcq",
+        "question": "La phase initiale de la partie où les joueurs développent leurs pièces et contrôlent le centre est l'____.",
+        "options": [
           "ouverture",
+          "le pion",
+          "le cavalier",
+          "le fou"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فاز آغازین بازی = l'ouverture."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sacrifice volontaire d'un matériel (souvent un pion) dès le début de la partie pour obtenir un avantage positionnel est le ____.",
+        "options": [
           "gambit",
-          "pion"
+          "la tour",
+          "la dame",
+          "le roi"
         ],
         "correctIndex": 0,
-        "explanation_fa": "مهم‌ترین مهره که باید محافظت شود = roi."
+        "explanation_fa": "قربانی دادن مهره برای برتری = le gambit."
       },
       {
         "type": "mcq",
-        "question": "La situation finale où le roi est attaqué et ne peut échapper à la capture est l'____.",
+        "question": "L'art de planifier les mouvements et de prévoir les coups de l'adversaire à long terme est la ____.",
         "options": [
-          "échec et mat",
-          "cavalier",
-          "fou",
-          "tour"
+          "stratégie",
+          "l'échec et mat",
+          "l'ouverture",
+          "le gambit"
         ],
         "correctIndex": 0,
-        "explanation_fa": "وضعیت نهایی حمله به شاه = échec et mat."
+        "explanation_fa": "هنر برنامه‌ریزی بلندمدت = la stratégie."
       },
       {
         "type": "mcq",
-        "question": "La situation où le roi n'est pas en échec mais ne peut jouer aucun coup légal est le ____.",
+        "question": "Le titre suprême décerné par la Fédération Internationale aux joueurs d'élite de niveau mondial est le titre de ____.",
         "options": [
-          "pat",
-          "dame",
-          "roi",
-          "promotion"
+          "grand maître",
+          "la pendule",
+          "les échecs",
+          "l'échiquier"
         ],
         "correctIndex": 0,
-        "explanation_fa": "وضعیت بن‌بست شاه = pat."
+        "explanation_fa": "عالی‌ترین عنوان شطرنج = le grand maître."
       },
       {
         "type": "mcq",
-        "question": "Le mouvement spécial qui permet au roi et à la tour de se déplacer simultanément est le ____.",
+        "question": "L'instrument qui mesure le temps de réflexion de chaque joueur et oblige à jouer dans un temps imparti est la ____.",
         "options": [
-          "roque",
-          "échec et mat",
-          "pat",
-          "promotion"
+          "pendule",
+          "le pion",
+          "le cavalier",
+          "le fou"
         ],
         "correctIndex": 0,
-        "explanation_fa": "حرکت ویژه شاه و رخ = roque."
+        "explanation_fa": "ابزار اندازه‌گیری زمان بازی = la pendule."
       },
       {
-        "type": "mcq",
-        "question": "La transformation d'un pion en dame (ou autre pièce) quand il atteint la dernière rangée est la ____.",
+        "type": "binary",
+        "question": "Le cavalier est la seule pièce aux échecs capable de sauter par-dessus d'autres pièces.",
         "options": [
-          "promotion",
-          "échiquier",
-          "partie",
-          "ouverture"
+          "Vrai",
+          "Faux"
         ],
         "correctIndex": 0,
-        "explanation_fa": "تبدیل پیاده به وزیر = promotion."
+        "explanation_fa": "بله. اسب تنها مهره‌ای است که می‌تواند از روی مهره‌های دیگر بپرد."
       },
       {
         "type": "binary",
@@ -623,17 +633,17 @@
           "Faux"
         ],
         "correctIndex": 1,
-        "explanation_fa": "خیر. پیاده (pion) هرگز نمی‌تواند عقب برود."
+        "explanation_fa": "خیر. پیاده هرگز نمی‌تواند به عقب برگردد."
       },
       {
         "type": "binary",
-        "question": "Le cavalier est la seule pièce qui peut sauter par-dessus les autres pièces.",
+        "question": "Le gambit désigne une tactique où un joueur sacrifie du matériel en début de partie pour un avantage stratégique.",
         "options": [
           "Vrai",
           "Faux"
         ],
         "correctIndex": 0,
-        "explanation_fa": "بله. اسب (cavalier) تنها مهره‌ای است که می‌تواند از روی بقیه بپرد."
+        "explanation_fa": "بله. گامبی قربانی دادن مهره در شروع بازی است."
       },
       {
         "type": "binary",
@@ -643,37 +653,27 @@
           "Faux"
         ],
         "correctIndex": 1,
-        "explanation_fa": "خیر. فیل (fou) فقط روی خانه‌های همرنگ خود حرکت می‌کند."
+        "explanation_fa": "خیر. فیل فقط روی خانه‌های همرنگ خودش (سفید یا سیاه) حرکت می‌کند."
       },
       {
         "type": "binary",
-        "question": "Le pat se produit quand le roi est en échec et ne peut pas se déplacer.",
+        "question": "L'échec et mat signifie que le roi est capturé et retiré physiquement de l'échiquier.",
         "options": [
           "Vrai",
           "Faux"
         ],
         "correctIndex": 1,
-        "explanation_fa": "خیر. پات (pat) زمانی است که شاه کیش نیست اما هیچ حرکت قانونی ندارد."
+        "explanation_fa": "خیر. در کیش و مات بازی بلافاصله تمام می‌شود و شاه از صفحه برداشته نمی‌شود."
       },
       {
         "type": "binary",
-        "question": "Le roque est un mouvement spécial qui implique le roi et une tour.",
+        "question": "La pendule d'échecs sert à chronométrer le temps de réflexion de chaque joueur.",
         "options": [
           "Vrai",
           "Faux"
         ],
         "correctIndex": 0,
-        "explanation_fa": "بله. قلعه‌رفتن (roque) حرکت ویژه‌ای بین شاه و رخ است."
-      },
-      {
-        "type": "binary",
-        "question": "La promotion permet de transformer un pion en n'importe quelle pièce, y compris un roi.",
-        "options": [
-          "Vrai",
-          "Faux"
-        ],
-        "correctIndex": 1,
-        "explanation_fa": "خیر. ارتقاء (promotion) پیاده را به وزیر، رخ، فیل یا اسب تبدیل می‌کند، نه شاه."
+        "explanation_fa": "بله. ساعت شطرنج زمان تفکر هر بازیکن را ثبت می‌کند."
       }
     ]
   }
