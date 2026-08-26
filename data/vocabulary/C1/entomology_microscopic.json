@@ -1,0 +1,680 @@
+{
+  "id": "entomology_microscopic",
+  "level": "C1",
+  "theme": "Entomologie, insectes et monde microscopique",
+  "theme_fa": "حشره‌شناسی، حشرات و دنیای میکروسکوپی",
+  "icon": "🐜",
+  "inspiration": "Microcosmos : Le peuple de l'herbe (Claude Nuridsany & Marie Pérennou, 1996)",
+  "words": [
+    {
+      "fr": "l'entomologie",
+      "fa": "حشره‌شناسی",
+      "emoji": "🐜",
+      "difficulty": 5,
+      "ex": "L'entomologie est la branche de la zoologie dédiée à l'étude des insectes.",
+      "ex_fa": "حشره‌شناسی شاخه‌ای از جانورشناسی است که به مطالعه حشرات اختصاص دارد."
+    },
+    {
+      "fr": "l'insecte",
+      "fa": "حشره",
+      "emoji": "🐛",
+      "difficulty": 2,
+      "ex": "Chaque insecte possède un exosquelette qui protège son corps.",
+      "ex_fa": "هر حشره دارای یک اسکلت بیرونی است که از بدنش محافظت می‌کند."
+    },
+    {
+      "fr": "la fourmi",
+      "fa": "مورچه",
+      "emoji": "🐜",
+      "difficulty": 2,
+      "ex": "La fourmi ouvrière peut porter des charges cinquante fois supérieures à son poids.",
+      "ex_fa": "مورچه کارگر می‌تواند بارهایی پنجاه برابر وزن خود را حمل کند."
+    },
+    {
+      "fr": "l'abeille",
+      "fa": "زنبور عسل",
+      "emoji": "🐝",
+      "difficulty": 2,
+      "ex": "L'abeille butineuse joue un rôle crucial dans la pollinisation des fleurs.",
+      "ex_fa": "زنبور عسلِ گرده‌افشان نقش حیاتی در گرده‌افشانی گل‌ها دارد."
+    },
+    {
+      "fr": "le papillon",
+      "fa": "پروانه",
+      "emoji": "🦋",
+      "difficulty": 2,
+      "ex": "Le papillon monarch effectue une migration de milliers de kilomètres.",
+      "ex_fa": "پروانه مونارک مهاجرتی هزاران کیلومتری انجام می‌دهد."
+    },
+    {
+      "fr": "la larve",
+      "fa": "لارو، نوزاد حشره",
+      "emoji": "🐛",
+      "difficulty": 3,
+      "ex": "La larve vorace mange sans cesse avant de se transformer.",
+      "ex_fa": "لاروِ پرخور قبل از دگردیسی بی‌وقفه غذا می‌خورد."
+    },
+    {
+      "fr": "la chrysalide",
+      "fa": "شفیره (پروانه)",
+      "emoji": "🧶",
+      "difficulty": 5,
+      "ex": "À l'intérieur de la chrysalide, le corps se dissout pour renaître.",
+      "ex_fa": "در داخل شفیره، بدن حل می‌شود تا دوباره متولد شود."
+    },
+    {
+      "fr": "le dard",
+      "fa": "نیش",
+      "emoji": "🦂",
+      "difficulty": 3,
+      "ex": "Le dard de la guêpe injecte un venin douloureux pour se défendre.",
+      "ex_fa": "نیش زنبور برای دفاع، زهری دردناک تزریق می‌کند."
+    },
+    {
+      "fr": "la ruche",
+      "fa": "کندو",
+      "emoji": "🍯",
+      "difficulty": 3,
+      "ex": "La ruche est une société ultra-organisée dirigée par une reine.",
+      "ex_fa": "کندو جامعه‌ای فوق‌سازمان‌یافته است که توسط یک ملکه اداره می‌شود."
+    },
+    {
+      "fr": "le nectar",
+      "fa": "شهد، نوش گل",
+      "emoji": "🌸",
+      "difficulty": 4,
+      "ex": "Les insectes récoltent le nectar sucré au cœur des corolles.",
+      "ex_fa": "حشرات شهد شیرین را از قلب جام گل‌ها جمع‌آوری می‌کنند."
+    },
+    {
+      "fr": "la colonie",
+      "fa": "کلونی، جامعه حشرات",
+      "emoji": "🏘️",
+      "difficulty": 4,
+      "ex": "Une colonie de termites peut construire des monticules géants.",
+      "ex_fa": "یک کلونی موریانه می‌تواند تپه‌های غول‌پیکری بسازد."
+    },
+    {
+      "fr": "le scarabée",
+      "fa": "سوسک، سرگین‌غلتان",
+      "emoji": "🪲",
+      "difficulty": 4,
+      "ex": "Le scarabée bousculeur roule sa boule vers son terrier.",
+      "ex_fa": "سوسک سرگین‌غلتان توپ خود را به سمت لانه‌اش می‌غلتاند."
+    },
+    {
+      "fr": "l'antenne",
+      "fa": "شاخک",
+      "emoji": "📡",
+      "difficulty": 3,
+      "ex": "L'antenne capte les phéromones émises par les autres insectes.",
+      "ex_fa": "شاخک، فرومون‌های ساطع‌شده از سایر حشرات را دریافت می‌کند."
+    },
+    {
+      "fr": "le cocon",
+      "fa": "پیله",
+      "emoji": "🧵",
+      "difficulty": 4,
+      "ex": "Le ver à soie tisse un cocon protecteur avant sa métamorphose.",
+      "ex_fa": "کرم ابریشم قبل از دگردیسی یک پیله محافظ می‌تند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le peuple de l'herbe",
+      "text": "Lucas est passionné d'{{BLANK_1}} et passe ses journées allongé dans le jardin. Avec sa loupe, il observe chaque petit {{BLANK_2}} qui s'active. Il suit une longue file de {{BLANK_3}}s qui transporte des miettes vers son nid. Non loin, une {{BLANK_4}} ouvrière récolte le {{BLANK_10}} d'une marguerite avant de retourner à la {{BLANK_9}}. Sous une feuille, il découvre une {{BLANK_6}} verte en train de dévorer une tige. Bientôt, elle formera une {{BLANK_7}} rigide, puis un {{BLANK_14}} de soie si c'est un papillon de nuit. Un magnifique {{BLANK_5}} aux ailes orange s'envole juste devant ses yeux. Dans la terre humide, un puissant {{BLANK_12}} pousse une boule avec ses pattes arrière. Lucas admire comment chaque insecte utilise son {{BLANK_13}} sensible pour communiquer avec sa {{BLANK_11}} entière. Il fait attention à ne pas toucher le {{BLANK_8}} venimeux d'une guêpe qui se repose sur une pierre. Ce monde microscopique est un univers complexe et fascinant.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "entomologie",
+          "options": [
+            "entomologie",
+            "insecte",
+            "fourmi",
+            "abeille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "insecte",
+          "options": [
+            "insecte",
+            "papillon",
+            "larve",
+            "chrysalide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fourmis",
+          "options": [
+            "fourmis",
+            "dard",
+            "ruche",
+            "nectar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "abeille",
+          "options": [
+            "abeille",
+            "colonie",
+            "scarabée",
+            "antenne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "papillon",
+          "options": [
+            "papillon",
+            "cocon",
+            "entomologie",
+            "insecte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "larve",
+          "options": [
+            "larve",
+            "fourmi",
+            "abeille",
+            "papillon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "chrysalide",
+          "options": [
+            "chrysalide",
+            "larve",
+            "dard",
+            "ruche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dard",
+          "options": [
+            "dard",
+            "nectar",
+            "colonie",
+            "scarabée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ruche",
+          "options": [
+            "ruche",
+            "antenne",
+            "cocon",
+            "entomologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "nectar",
+          "options": [
+            "nectar",
+            "insecte",
+            "fourmi",
+            "abeille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "colonie",
+          "options": [
+            "colonie",
+            "papillon",
+            "larve",
+            "chrysalide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "scarabée",
+          "options": [
+            "scarabée",
+            "dard",
+            "ruche",
+            "nectar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "antenne",
+          "options": [
+            "antenne",
+            "colonie",
+            "scarabée",
+            "cocon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "cocon",
+          "options": [
+            "cocon",
+            "entomologie",
+            "insecte",
+            "fourmi"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'empire des géants",
+      "inspiration": "Microcosmos : Le peuple de l'herbe (1996)",
+      "text": "À peine l'{{BLANK_1}} eut-il approché son objectif macroscopique du brin d'herbe qu'un univers titanique et silencieux se révéla à ses yeux. Ici, une simple goutte de rosée devenait un océan où un {{BLANK_2}} égaré risquait la noyade. Il observa la discipline martiale d'une {{BLANK_11}} de {{BLANK_3}}s, ces architectes aveugles qui bâtissaient des cathédrales de terre. Plus haut, dans la canopée des marguerites, une {{BLANK_4}} dansait de fleur en fleur, aspirant le {{BLANK_10}} sacré pour nourrir les larves de sa {{BLANK_9}} bourdonnante. Sous l'écorce, une {{BLANK_6}} insatiable se préparait au grand sommeil, s'enfermant bientôt dans une {{BLANK_7}} de jade ou un {{BLANK_14}} de soie pour y subir l'alchimie de la renaissance. Quand enfin le {{BLANK_5}} déploierait ses ailes de vitrail, il oublierait sa vie rampante. Dans la boue, un {{BLANK_12}} herculéen poussait son trésor vers les étoiles, guidé par la vibration de son {{BLANK_13}} dans l'air lourd. Le chercheur retint son souffle, terrifié par la beauté cruelle d'un {{BLANK_8}} luisant au soleil, comprenant que dans ce royaume miniature, la survie était la seule loi, et la métamorphose, la plus sublime des victoires.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "entomologiste",
+          "options": [
+            "entomologiste",
+            "insecte",
+            "fourmi",
+            "abeille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "insecte",
+          "options": [
+            "insecte",
+            "papillon",
+            "larve",
+            "chrysalide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fourmis",
+          "options": [
+            "fourmis",
+            "dard",
+            "ruche",
+            "nectar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "abeille",
+          "options": [
+            "abeille",
+            "colonie",
+            "scarabée",
+            "antenne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "papillon",
+          "options": [
+            "papillon",
+            "cocon",
+            "entomologie",
+            "insecte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "larve",
+          "options": [
+            "larve",
+            "fourmi",
+            "abeille",
+            "papillon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "chrysalide",
+          "options": [
+            "chrysalide",
+            "larve",
+            "dard",
+            "ruche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dard",
+          "options": [
+            "dard",
+            "nectar",
+            "colonie",
+            "scarabée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ruche",
+          "options": [
+            "ruche",
+            "antenne",
+            "cocon",
+            "entomologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "nectar",
+          "options": [
+            "nectar",
+            "insecte",
+            "fourmi",
+            "abeille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "colonie",
+          "options": [
+            "colonie",
+            "papillon",
+            "larve",
+            "chrysalide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "scarabée",
+          "options": [
+            "scarabée",
+            "dard",
+            "ruche",
+            "nectar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "antenne",
+          "options": [
+            "antenne",
+            "colonie",
+            "scarabée",
+            "cocon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "cocon",
+          "options": [
+            "cocon",
+            "entomologie",
+            "insecte",
+            "fourmi"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Entomologie et insectes",
+    "title_fa": "آزمون : حشره‌شناسی و حشرات",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La branche de la zoologie qui étudie spécifiquement les insectes est l'____.",
+        "options": [
+          "entomologie",
+          "insecte",
+          "fourmi",
+          "abeille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شاخه مطالعه حشرات = entomologie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arthropode caractérisé par un corps en trois parties et six pattes est l'____.",
+        "options": [
+          "insecte",
+          "papillon",
+          "larve",
+          "chrysalide"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بندپای شش‌پا = insecte."
+      },
+      {
+        "type": "mcq",
+        "question": "L'insecte social vivant en colonie très organisée et connu pour sa force proportionnelle est la ____.",
+        "options": [
+          "fourmi",
+          "dard",
+          "ruche",
+          "nectar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حشره اجتماعی و بسیار قوی = fourmi."
+      },
+      {
+        "type": "mcq",
+        "question": "L'insecte volant producteur de miel et essentiel à la pollinisation est l'____.",
+        "options": [
+          "abeille",
+          "colonie",
+          "scarabée",
+          "antenne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حشره پرنده تولیدکننده عسل = abeille."
+      },
+      {
+        "type": "mcq",
+        "question": "L'insecte aux ailes souvent colorées qui subit une métamorphose complète est le ____.",
+        "options": [
+          "papillon",
+          "cocon",
+          "entomologie",
+          "insecte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حشره بال‌رنگی با دگردیسی = papillon."
+      },
+      {
+        "type": "mcq",
+        "question": "Le stade de développement immature, souvent en forme de ver, qui précède la métamorphose est la ____.",
+        "options": [
+          "larve",
+          "fourmi",
+          "abeille",
+          "papillon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مرحله نابالغ و کرمی‌شکل = larve."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enveloppe rigide dans laquelle la chenille se transforme en papillon est la ____.",
+        "options": [
+          "chrysalide",
+          "larve",
+          "dard",
+          "ruche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پوسته سخت دگردیسی پروانه = chrysalide."
+      },
+      {
+        "type": "mcq",
+        "question": "L'organe pointu et venimeux utilisé par certains insectes pour piquer et se défendre est le ____.",
+        "options": [
+          "dard",
+          "nectar",
+          "colonie",
+          "scarabée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اندام نیش‌زننده و سمی = dard."
+      },
+      {
+        "type": "mcq",
+        "question": "L'habitat structuré où vit et se reproduit la colonie d'abeilles est la ____.",
+        "options": [
+          "ruche",
+          "antenne",
+          "cocon",
+          "entomologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زیستگاه کلونی زنبورها = ruche."
+      },
+      {
+        "type": "mcq",
+        "question": "Le liquide sucré sécrété par les fleurs pour attirer les insectes pollinisateurs est le ____.",
+        "options": [
+          "nectar",
+          "insecte",
+          "fourmi",
+          "abeille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مایع شیرین گل‌ها = nectar."
+      },
+      {
+        "type": "mcq",
+        "question": "Le groupe d'individus d'une même espèce vivant ensemble et coopérant est la ____.",
+        "options": [
+          "colonie",
+          "papillon",
+          "larve",
+          "chrysalide"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گروه همکار حشرات = colonie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'insecte coléoptère robuste, souvent associé au bousier ou aux boiseries, est le ____.",
+        "options": [
+          "scarabée",
+          "dard",
+          "ruche",
+          "nectar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سوسک سخت‌پوست = scarabée."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appendice sensoriel sur la tête de l'insecte qui capte les odeurs et le toucher est l'____.",
+        "options": [
+          "antenne",
+          "colonie",
+          "scarabée",
+          "cocon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اندام حسی روی سر = antenne."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enveloppe protectrice tissée par certaines larves (comme le ver à soie) avant la nymphose est le ____.",
+        "options": [
+          "cocon",
+          "entomologie",
+          "insecte",
+          "fourmi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پوشش محافظ تنیده‌شده = cocon."
+      },
+      {
+        "type": "binary",
+        "question": "La chrysalide est le stade où la chenille se transforme en papillon à l'intérieur d'une enveloppe.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. شفیره (chrysalide) مرحله دگردیسی پروانه درون یک پوشش است."
+      },
+      {
+        "type": "binary",
+        "question": "L'antenne sert principalement à la locomotion et à sauter de branche en branche.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. شاخک (antenne) اندام حسی برای بویایی و لامسه است، نه برای حرکت."
+      },
+      {
+        "type": "binary",
+        "question": "Le nectar est la substance sucrée produite par les fleurs pour attirer les pollinisateurs.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. شهد (nectar) ماده شیرینی است که حشرات را جذب می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le scarabée appartient à la grande famille des coléoptères, caractérisée par des ailes antérieures dures.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سوسک (scarabée) متعلق به راسته قاب‌بالان (coléoptères) است."
+      },
+      {
+        "type": "binary",
+        "question": "Le cocon et la chrysalide désignent exactement la même chose et s'utilisent pour tous les insectes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. cocon معمولاً توسط لارو (مثل کرم ابریشم) *تافته* می‌شود، اما chrysalide پوسته سخت خود شفیره پروانه است."
+      },
+      {
+        "type": "binary",
+        "question": "La fourmi est un insecte solitaire qui vit et chasse exclusivement seul dans la nature.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. مورچه‌ها حشراتی به‌شدت اجتماعی هستند و در کلونی‌های بزرگ زندگی می‌کنند."
+      }
+    ]
+  }
+}
