@@ -1,0 +1,683 @@
+{
+  "id": "meteorology_weather",
+  "level": "C1",
+  "theme": "Météorologie, climat et phénomènes atmosphériques",
+  "theme_fa": "هواشناسی، اقلیم و پدیده‌های جوی",
+  "icon": "🌪️",
+  "inspiration": "Twister (Jan de Bont, 1996)",
+  "words": [
+    {
+      "fr": "la tornade",
+      "fa": "گردباد",
+      "emoji": "🌪️",
+      "difficulty": 3,
+      "ex": "La tornade a détruit plusieurs maisons sur son passage.",
+      "ex_fa": "گردباد چندین خانه را در مسیرش نابود کرد."
+    },
+    {
+      "fr": "l'ouragan",
+      "fa": "طوفان تندری",
+      "emoji": "🌀",
+      "difficulty": 3,
+      "ex": "L'ouragan Katrina a dévasté La Nouvelle-Orléans.",
+      "ex_fa": "طوفان کاترینا نیواورلئان را ویران کرد."
+    },
+    {
+      "fr": "le cyclone",
+      "fa": "سیکلون (طوفان استوایی)",
+      "emoji": "🌀",
+      "difficulty": 4,
+      "ex": "Le cyclone a frappé l'île avec des vents de 200 km/h.",
+      "ex_fa": "سیکلون با بادهای ۲۰۰ کیلومتر بر ساعت به جزیره برخورد کرد."
+    },
+    {
+      "fr": "la foudre",
+      "fa": "صاعقه، رعد و برق",
+      "emoji": "⚡",
+      "difficulty": 3,
+      "ex": "La foudre a frappé le clocher de l'église.",
+      "ex_fa": "صاعقه به برج کلیسا برخورد کرد."
+    },
+    {
+      "fr": "le tonnerre",
+      "fa": "رعد",
+      "emoji": "🔊",
+      "difficulty": 3,
+      "ex": "Le tonnerre gronde au loin, annonçant l'orage.",
+      "ex_fa": "رعد از دور غرش می‌کند و طوفان را نوید می‌دهد."
+    },
+    {
+      "fr": "la grêle",
+      "fa": "تگرگ",
+      "emoji": "🧊",
+      "difficulty": 4,
+      "ex": "La grêle a endommagé les vignobles de la région.",
+      "ex_fa": "تگرگ به تاکستان‌های منطقه آسیب زد."
+    },
+    {
+      "fr": "le brouillard",
+      "fa": "مه",
+      "emoji": "🌫️",
+      "difficulty": 3,
+      "ex": "Le brouillard dense réduit la visibilité à quelques mètres.",
+      "ex_fa": "مه غلیظ دید را به چند متر کاهش می‌دهد."
+    },
+    {
+      "fr": "la canicule",
+      "fa": "موج گرما",
+      "emoji": "☀️",
+      "difficulty": 4,
+      "ex": "La canicule de 2003 a causé des milliers de décès.",
+      "ex_fa": "موج گرمای ۲۰۰۳ هزاران کشته بر جای گذاشت."
+    },
+    {
+      "fr": "la sécheresse",
+      "fa": "خشکسالی",
+      "emoji": "🏜️",
+      "difficulty": 3,
+      "ex": "La sécheresse persistante menace les récoltes.",
+      "ex_fa": "خشکسالی مداوم محصولات را تهدید می‌کند."
+    },
+    {
+      "fr": "l'inondation",
+      "fa": "سیل",
+      "emoji": "🌊",
+      "difficulty": 3,
+      "ex": "L'inondation a submergé tout le quartier bas.",
+      "ex_fa": "سیل تمام محله پایین را زیر آب برد."
+    },
+    {
+      "fr": "le blizzard",
+      "fa": "طوفان برف",
+      "emoji": "❄️",
+      "difficulty": 4,
+      "ex": "Le blizzard a bloqué les routes pendant trois jours.",
+      "ex_fa": "طوفان برف جاده‌ها را سه روز مسدود کرد."
+    },
+    {
+      "fr": "l'anticyclone",
+      "fa": "پرفشاری (سیستم هوای پایدار)",
+      "emoji": "🌤️",
+      "difficulty": 5,
+      "ex": "L'anticyclone apporte un temps sec et ensoleillé.",
+      "ex_fa": "پرفشاری هوای خشک و آفتابی می‌آورد."
+    },
+    {
+      "fr": "la dépression",
+      "fa": "کم‌فشاری (سیستم هوای ناپایدار)",
+      "emoji": "🌧️",
+      "difficulty": 5,
+      "ex": "Une dépression atlantique apporte pluie et vent.",
+      "ex_fa": "یک کم‌فشاری اقیانوس اطلس باران و باد می‌آورد."
+    },
+    {
+      "fr": "le verglas",
+      "fa": "یخبندان سیاه (یخ نازک روی جاده)",
+      "emoji": "🧊",
+      "difficulty": 4,
+      "ex": "Le verglas rend les routes extrêmement glissantes.",
+      "ex_fa": "یخبندان سیاه جاده‌ها را بسیار لغزنده می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les chasseurs de tempêtes",
+      "title_fa": "شکارچیان طوفان‌ها",
+      "text": "Jo Harding est une météorologue qui poursuit les {{BLANK_1}} dans les plaines américaines pour les étudier. Son équipe utilise des véhicules blindés équipés de capteurs. Un jour, ils repèrent une formation orageuse menaçante. Le {{BLANK_2}} gronde au loin, tandis que des éclairs de {{BLANK_3}} illuminent le ciel sombre. Soudain, des grêlons de {{BLANK_4}} commencent à tomber, martelant le toit du véhicule. La visibilité diminue à cause du {{BLANK_5}} qui accompagne la tempête. L'équipe doit trouver un abri avant l'arrivée du {{BLANK_6}} principal. Ils observent les données : une {{BLANK_7}} atmosphérique se forme, signe de temps instable. Au contraire, un {{BLANK_8}} apporterait du beau temps durable. L'hiver dernier, un {{BLANK_9}} avait paralysé toute la région pendant des jours. Aujourd'hui, c'est la chaleur qui inquiète : une {{BLANK_10}} s'installe depuis deux semaines. Cette absence de pluie crée une {{BLANK_11}} dangereuse pour l'agriculture. Mais soudain, les capteurs détectent une rotation dans le nuage. Une {{BLANK_12}} se forme, avec des vents dépassant 300 km/h. L'équipe fuit vers le nord pour éviter le {{BLANK_13}} qui menace la côte. De retour au laboratoire, ils analysent les données. Chaque phénomène, du simple orage au {{BLANK_14}} tropical, obéit à des lois physiques que les scientifiques tentent de comprendre pour mieux protéger les populations.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "tornades",
+          "options": [
+            "tornades",
+            "canicules",
+            "brouillards",
+            "verglasses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "tonnerre",
+          "options": [
+            "tonnerre",
+            "cyclone",
+            "anticyclone",
+            "dépression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "foudre",
+          "options": [
+            "foudre",
+            "grêle",
+            "sécheresse",
+            "inondation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "grêle",
+          "options": [
+            "grêle",
+            "brouillard",
+            "canicule",
+            "blizzard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "brouillard",
+          "options": [
+            "brouillard",
+            "verglas",
+            "tornade",
+            "ouragan"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "cyclone",
+          "options": [
+            "cyclone",
+            "anticyclone",
+            "dépression",
+            "canicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "dépression",
+          "options": [
+            "dépression",
+            "anticyclone",
+            "sécheresse",
+            "inondation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "anticyclone",
+          "options": [
+            "anticyclone",
+            "dépression",
+            "blizzard",
+            "tornade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "blizzard",
+          "options": [
+            "blizzard",
+            "canicule",
+            "verglas",
+            "foudre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "canicule",
+          "options": [
+            "canicule",
+            "sécheresse",
+            "inondation",
+            "grêle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "sécheresse",
+          "options": [
+            "sécheresse",
+            "inondation",
+            "brouillard",
+            "verglas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "tornade",
+          "options": [
+            "tornade",
+            "ouragan",
+            "cyclone",
+            "blizzard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "ouragan",
+          "options": [
+            "ouragan",
+            "anticyclone",
+            "dépression",
+            "tonnerre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "cyclone",
+          "options": [
+            "cyclone",
+            "brouillard",
+            "verglas",
+            "foudre"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le souffle du Léviathan",
+      "title_fa": "نفس لوایتان",
+      "inspiration": "Twister (Jan de Bont, 1996)",
+      "text": "À peine le ciel eut-il viré au vert malade que Jo sut que le Léviathan s'éveillait. Dans les plaines de l'Oklahoma, les chasseurs de tempêtes attendaient ce moment depuis des mois. L'air était devenu lourd, électrique, chargé d'une tension qui faisait dresser les poils sur les bras. Au loin, le {{BLANK_1}} grondait comme un animal en cage, tandis que la {{BLANK_2}} zébrait l'horizon de ses éclairs violacés. Jo ajusta ses instruments. Elle n'était pas venue là pour observer, mais pour comprendre. Son père était mort vingt ans plus tôt, emporté par une {{BLANK_3}} F5 qui avait rayé de la carte leur ferme familiale. Depuis, elle poursuivait ces monstres atmosphériques, cherchant à percer leur secret. L'équipe déploya les capteurs. Les données affluaient : une {{BLANK_4}} profonde se creusait au-dessus d'eux, aspirant l'air chaud et humide du golfe du Mexique. C'était le cocktail explosif qui engendrait les {{BLANK_5}}, ces colonnes d'air旋转 qui broyaient tout sur leur passage. Les premiers grêlons de {{BLANK_6}} commencèrent à tomber, gros comme des balles de golf, martelant le toit du véhicule blindé. Un {{BLANK_7}} dense accompagna soudain la tempête, réduisant la visibilité à quelques mètres, transformant le monde en un chaos blanc et gris. « Reculez ! » hurla Jo. Elle avait vu la rotation dans le nuage, cette signature mortelle qui annonçait la naissance d'une tornade. Le véhicule fit marche arrière juste à temps. Devant eux, le Léviathan se matérialisa : un entonnoir noir qui toucha terre avec un rugissement assourdissant. Les vents dépassaient les 400 km/h, arrachant les arbres, soulevant les voitures, pulvérisant les maisons. Jo enregistrait tout, chaque donnée, chaque vibration. Elle savait que ce monstre obéissait à des lois physiques précises, que la {{BLANK_8}} qui le nourrissait finirait par s'épuiser, qu'un {{BLANK_9}} finirait par ramener le calme. Mais en attendant, il fallait survivre. Ils roulèrent vers le nord, fuyant la trajectoire de destruction. Dans le rétroviseur, la tornade poursuivait sa danse macabre, indifférente aux vies qu'elle broyait. Jo pensa aux autres phénomènes qu'elle avait affrontés : le {{BLANK_10}} de l'hiver précédent qui avait enseveli des villages entiers sous des mètres de neige, la {{BLANK_11}} de l'été qui avait transformé les villes en fours mortuaires, la {{BLANK_12}} qui avait noyé des vallées entières sous des torrents de boue. Chaque fois, elle avait survécu, mais chaque fois, elle avait perdu quelque chose. Son père, son mariage, sa jeunesse. Les {{BLANK_13}} tropicales qui frappaient les côtes, les {{BLANK_14}} qui paralysaient les routes, les orages de {{BLANK_15}} qui détruisaient les récoltes : tous ces phénomènes étaient les manifestations d'une planète vivante, respirant, souffrant. Et Jo, petite femme dans son véhicule blindé, tentait de comprendre son langage, de décoder sa colère, peut-être pour lui demander pardon au nom de l'humanité. Quand le calme revint enfin, elle sortit du véhicule. Le ciel était redevenu bleu, presque insultant dans sa sérénité. Les champs autour étaient dévastés, mais la vie repousserait, comme toujours. Jo ramassa un débris, un morceau de tôle tordue qui avait appartenu à quelqu'un, quelque part. Elle le serra dans sa main comme une relique, puis remonta dans le véhicule. Demain, le Léviathan se réveillerait ailleurs, et elle serait là, prête à l'affronter encore, inlassablement.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "tonnerre",
+          "options": [
+            "tonnerre",
+            "cyclone",
+            "anticyclone",
+            "dépression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "foudre",
+          "options": [
+            "foudre",
+            "grêle",
+            "sécheresse",
+            "inondation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tornade",
+          "options": [
+            "tornade",
+            "canicule",
+            "brouillard",
+            "verglas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "dépression",
+          "options": [
+            "dépression",
+            "anticyclone",
+            "sécheresse",
+            "inondation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "tornades",
+          "options": [
+            "tornades",
+            "canicules",
+            "brouillards",
+            "verglasses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "grêle",
+          "options": [
+            "grêle",
+            "brouillard",
+            "canicule",
+            "blizzard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "brouillard",
+          "options": [
+            "brouillard",
+            "verglas",
+            "tornade",
+            "ouragan"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dépression",
+          "options": [
+            "dépression",
+            "anticyclone",
+            "blizzard",
+            "tornade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "anticyclone",
+          "options": [
+            "anticyclone",
+            "dépression",
+            "sécheresse",
+            "inondation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "blizzard",
+          "options": [
+            "blizzard",
+            "canicule",
+            "verglas",
+            "foudre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "canicule",
+          "options": [
+            "canicule",
+            "sécheresse",
+            "inondation",
+            "grêle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "inondation",
+          "options": [
+            "inondation",
+            "sécheresse",
+            "brouillard",
+            "verglas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "cyclones",
+          "options": [
+            "cyclones",
+            "brouillards",
+            "verglasses",
+            "foudres"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "blizzards",
+          "options": [
+            "blizzards",
+            "canicules",
+            "anticyclones",
+            "dépressions"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "grêle",
+          "options": [
+            "grêle",
+            "foudre",
+            "tonnerre",
+            "brouillard"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Météorologie et phénomènes atmosphériques",
+    "title_fa": "آزمون : هواشناسی و پدیده‌های جوی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Ce tourbillon d'air violent en forme d'entonnoir qui touche le sol et détruit tout sur son passage est une ____.",
+        "options": [
+          "tornade",
+          "canicule",
+          "brouillard",
+          "verglas"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گردباد قیفی شکل مخرب = tornade."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette tempête tropicale majeure avec des vents supérieurs à 118 km/h, formée sur l'Atlantique, est un ____.",
+        "options": [
+          "ouragan",
+          "anticyclone",
+          "dépression",
+          "tonnerre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طوفان گرمسیری اقیانوس اطلس = ouragan."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette tempête tropicale équivalente à l'ouragan, mais formée dans l'océan Indien ou le Pacifique, est un ____.",
+        "options": [
+          "cyclone",
+          "anticyclone",
+          "dépression",
+          "canicule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طوفان گرمسیری اقیانوس هند یا آرام = cyclone."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette décharge électrique brutale qui se produit entre les nuages ou entre un nuage et le sol est la ____.",
+        "options": [
+          "foudre",
+          "grêle",
+          "sécheresse",
+          "inondation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تخلیه الکتریکی شدید = foudre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bruit violent provoqué par l'expansion brutale de l'air lors d'un éclair est le ____.",
+        "options": [
+          "tonnerre",
+          "cyclone",
+          "anticyclone",
+          "dépression"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صدای غرش ناشی از صاعقه = tonnerre."
+      },
+      {
+        "type": "mcq",
+        "question": "Ces précipitations sous forme de boules de glace qui tombent lors des orages violents sont la ____.",
+        "options": [
+          "grêle",
+          "brouillard",
+          "canicule",
+          "blizzard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بارش گلوله‌های یخ = grêle."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce nuage de gouttelettes d'eau en suspension près du sol qui réduit fortement la visibilité est le ____.",
+        "options": [
+          "brouillard",
+          "verglas",
+          "tornade",
+          "ouragan"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابر نزدیک زمین که دید را کم می‌کند = brouillard."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette période prolongée de chaleur excessive et anormale est une ____.",
+        "options": [
+          "canicule",
+          "sécheresse",
+          "inondation",
+          "grêle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره گرمای شدید و طولانی = canicule."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce déficit prolongé de précipitations qui assèche les sols et menace l'agriculture est une ____.",
+        "options": [
+          "sécheresse",
+          "inondation",
+          "brouillard",
+          "verglas"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کمبود طولانی بارندگی = sécheresse."
+      },
+      {
+        "type": "mcq",
+        "question": "La submersion temporaire de terres par l'eau, due à des pluies abondantes ou à la crue d'un cours d'eau, est une ____.",
+        "options": [
+          "inondation",
+          "sécheresse",
+          "brouillard",
+          "verglas"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زیر آب رفتن زمین‌ها = inondation."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette tempête de neige violente avec des vents forts et une visibilité réduite est un ____.",
+        "options": [
+          "blizzard",
+          "canicule",
+          "verglas",
+          "foudre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طوفان برف شدید = blizzard."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce système de haute pression atmosphérique qui apporte généralement un temps stable et ensoleillé est un ____.",
+        "options": [
+          "anticyclone",
+          "dépression",
+          "blizzard",
+          "tornade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم پرفشار با هوای پایدار = anticyclone."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce système de basse pression atmosphérique associé au temps nuageux, venteux et pluvieux est une ____.",
+        "options": [
+          "dépression",
+          "anticyclone",
+          "sécheresse",
+          "inondation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم کم‌فشار با هوای ناپایدار = dépression."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette fine couche de glace transparente qui se forme sur les routes et les rend extrêmement glissantes est le ____.",
+        "options": [
+          "verglas",
+          "brouillard",
+          "tornade",
+          "ouragan"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یخ نازک و نامرئی روی جاده = verglas."
+      },
+      {
+        "type": "binary",
+        "question": "Un ouragan et un cyclone désignent exactement le même phénomène météorologique, seul le nom change selon la région géographique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هر دو طوفان گرمسیری هستند، اما در مناطق مختلف جغرافیایی نام‌های متفاوت دارند."
+      },
+      {
+        "type": "binary",
+        "question": "La foudre et le tonnerre se produisent simultanément et sont perçus au même moment.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. نور فوری دیده می‌شود اما صدا با تأخیر می‌رسد چون صوت کندتر از نور است."
+      },
+      {
+        "type": "binary",
+        "question": "Un anticyclone est associé à un temps instable avec pluies et vents forts.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. anticyclone هوای پایدار و آفتابی می‌آورد، dépression هوای ناپایدار."
+      },
+      {
+        "type": "binary",
+        "question": "La canicule et la sécheresse sont deux phénomènes météorologiques distincts mais souvent liés.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. canicule گرمای شدید است، sécheresse کمبود باران، اما اغلب با هم رخ می‌دهند."
+      },
+      {
+        "type": "binary",
+        "question": "Le verglas est une forme de précipitation neigeuse qui recouvre le sol d'une épaisse couche blanche.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. verglas یخ نازک و شفاف است، نه برف ضخیم."
+      }
+    ]
+  }
+}
