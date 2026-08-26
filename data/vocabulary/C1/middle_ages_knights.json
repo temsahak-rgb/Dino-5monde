@@ -1,0 +1,672 @@
+{
+  "id": "middle_ages_knights",
+  "level": "C1",
+  "theme": "Moyen Âge, féodalité et chevalerie",
+  "theme_fa": "قرون وسطی، فئودالیسم و شوالیه‌گری",
+  "icon": "🏰",
+  "inspiration": "Le Nom de la Rose (Jean-Jacques Annaud, 2001)",
+  "words": [
+    {
+      "fr": "le fief",
+      "fa": "تیول، قلمرو فئودالی",
+      "emoji": "🏰",
+      "difficulty": 4,
+      "ex": "Le seigneur administrait son fief depuis son château fort.",
+      "ex_fa": "ارباب، تیول خود را از قلعه‌اش اداره می‌کرد."
+    },
+    {
+      "fr": "le suzerain",
+      "fa": "ارباب فئودال، پادشاه",
+      "emoji": "👑",
+      "difficulty": 5,
+      "ex": "Le roi était le suzerain de tous les nobles du royaume.",
+      "ex_fa": "پادشاه، ارباب فئودال تمام نجیب‌زادگان پادشاهی بود."
+    },
+    {
+      "fr": "le vassal",
+      "fa": "رعیت، دست‌نشانده",
+      "emoji": "🤝",
+      "difficulty": 4,
+      "ex": "Le vassal devait fidélité et assistance militaire à son seigneur.",
+      "ex_fa": "دست‌نشانده باید به ارباب خود وفاداری و کمک نظامی می‌کرد."
+    },
+    {
+      "fr": "le manant",
+      "fa": "رعیت آزاد، دهقان",
+      "emoji": "🌾",
+      "difficulty": 5,
+      "ex": "Le manant possédait sa propre terre mais payait des impôts.",
+      "ex_fa": "رعیت آزاد زمین خودش را داشت اما مالیات می‌پرداخت."
+    },
+    {
+      "fr": "le donjon",
+      "fa": "برج اصلی قلعه",
+      "emoji": "🗼",
+      "difficulty": 4,
+      "ex": "En cas de siège, la population se réfugiait dans le donjon.",
+      "ex_fa": "در صورت محاصره، مردم به برج اصلی قلعه پناه می‌بردند."
+    },
+    {
+      "fr": "la douve",
+      "fa": "خندق قلعه",
+      "emoji": "🌊",
+      "difficulty": 4,
+      "ex": "La douve remplie d'eau protégeait les murailles des assaillants.",
+      "ex_fa": "خندق پر از آب، دیوارها را از مهاجمان محافظت می‌کرد."
+    },
+    {
+      "fr": "le serf",
+      "fa": "رعیت وابسته به زمین",
+      "emoji": "⛓️",
+      "difficulty": 4,
+      "ex": "Le serf ne pouvait pas quitter la terre de son seigneur.",
+      "ex_fa": "رعیت وابسته نمی‌توانست زمین اربابش را ترک کند."
+    },
+    {
+      "fr": "la dîme",
+      "fa": "مالیات یک‌دهم کلیسا",
+      "emoji": "⛪",
+      "difficulty": 5,
+      "ex": "Les paysans versaient la dîme à l'Église chaque automne.",
+      "ex_fa": "دهقانان هر پاییز مالیات یک‌دهم را به کلیسا می‌پرداختند."
+    },
+    {
+      "fr": "l'adoubement",
+      "fa": "مراسم شوالیه‌گری",
+      "emoji": "⚔️",
+      "difficulty": 5,
+      "ex": "L'adoubement transformait l'écuyer en chevalier.",
+      "ex_fa": "مراسم شوالیه‌گری، ندیمه را به شوالیه تبدیل می‌کرد."
+    },
+    {
+      "fr": "la joute",
+      "fa": "مبارزه نیزه‌بازی سواره",
+      "emoji": "🐎",
+      "difficulty": 4,
+      "ex": "La joute équestre était le divertissement favori des nobles.",
+      "ex_fa": "نیزه‌بازی سواره سرگرمی مورد علاقه نجیب‌زادگان بود."
+    },
+    {
+      "fr": "le troubadour",
+      "fa": "شاعر و نوازنده دوره‌گرد",
+      "emoji": "🎸",
+      "difficulty": 5,
+      "ex": "Le troubadour chantait l'amour courtois dans les châteaux.",
+      "ex_fa": "شاعر دوره‌گرد، عشق درباری را در قلعه‌ها می‌خواند."
+    },
+    {
+      "fr": "la croisade",
+      "fa": "جنگ صلیبی",
+      "emoji": "✝️",
+      "difficulty": 4,
+      "ex": "De nombreux chevaliers sont morts pendant la première croisade.",
+      "ex_fa": "شوالیه‌های بسیاری در اولین جنگ صلیبی کشته شدند."
+    },
+    {
+      "fr": "le pèlerinage",
+      "fa": "زیارت",
+      "emoji": "🚶",
+      "difficulty": 4,
+      "ex": "Le pèlerinage à Saint-Jacques-de-Compostelle durait des mois.",
+      "ex_fa": "زیارت سانتیاگو د کامپوستلا ماه‌ها طول می‌کشید."
+    },
+    {
+      "fr": "l'hérésie",
+      "fa": "بدعت در دین",
+      "emoji": "🔥",
+      "difficulty": 5,
+      "ex": "L'Inquisition traquait l'hérésie avec une impitoyable rigueur.",
+      "ex_fa": "تفتیش عقاید، بدعت را با بی‌رحمی تمام تعقیب می‌کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La vie au château",
+      "title_fa": "زندگی در قلعه",
+      "text": "Au Moyen Âge, la société est très hiérarchisée. Le roi, {{BLANK_1}} de tous, distribue des terres appelées {{BLANK_2}} à ses nobles. Chaque noble devient son {{BLANK_3}} et jure de le protéger. Dans les champs, le {{BLANK_4}} libre cultive sa petite parcelle, tandis que le {{BLANK_5}}, attaché à la glèbe, travaille gratuitement pour le seigneur. En échange de sa protection, le paysan paie la {{BLANK_6}} à l'Église et divers impôts. Le seigneur vit dans un château fort, entouré d'une profonde {{BLANK_7}} pour empêcher les ennemis d'approcher. En cas d'attaque, tout le monde se réfugie dans le {{BLANK_8}}, la tour la plus solide. Quand le fils du seigneur a vingt ans, il reçoit son {{BLANK_9}} lors d'une grande cérémonie religieuse. Pour s'entraîner, il participe à une {{BLANK_10}} où il doit désarçonner son adversaire. Le soir, un {{BLANK_11}} venu du sud chante des poèmes en s'accompagnant d'un luth. Parfois, des prédicateurs parcourent les routes pour appeler à la {{BLANK_12}} afin de libérer Jérusalem. D'autres préfèrent faire un {{BLANK_13}} pacifique pour expier leurs péchés. Mais l'Église surveille tout le monde : la moindre remise en cause du dogme est punie comme une {{BLANK_14}} mortelle.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "suzerain",
+          "options": [
+            "suzerain",
+            "vassal",
+            "manant",
+            "serf"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fiefs",
+          "options": [
+            "fiefs",
+            "dîmes",
+            "douve",
+            "joutes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "vassal",
+          "options": [
+            "vassal",
+            "troubadour",
+            "manant",
+            "suzerain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "manant",
+          "options": [
+            "manant",
+            "serf",
+            "vassal",
+            "troubadour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "serf",
+          "options": [
+            "serf",
+            "manant",
+            "suzerain",
+            "donjon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "dîme",
+          "options": [
+            "dîme",
+            "douve",
+            "croisade",
+            "adoubement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "douve",
+          "options": [
+            "douve",
+            "joute",
+            "dîme",
+            "hérésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "donjon",
+          "options": [
+            "donjon",
+            "fief",
+            "pèlerinage",
+            "troubadour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "adoubement",
+          "options": [
+            "adoubement",
+            "pèlerinage",
+            "croisade",
+            "hérésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "joute",
+          "options": [
+            "joute",
+            "douve",
+            "dîme",
+            "fief"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "troubadour",
+          "options": [
+            "troubadour",
+            "serf",
+            "manant",
+            "vassal"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "croisade",
+          "options": [
+            "croisade",
+            "joute",
+            "dîme",
+            "douve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "pèlerinage",
+          "options": [
+            "pèlerinage",
+            "adoubement",
+            "fief",
+            "hérésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "hérésie",
+          "options": [
+            "hérésie",
+            "croisade",
+            "joute",
+            "dîme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le labyrinthe de l'abbaye",
+      "title_fa": "هزارتوی صومعه",
+      "inspiration": "Le Nom de la Rose (Jean-Jacques Annaud, 2001)",
+      "text": "À peine frère Guillaume de Baskerville eut-il franchi la herse de l'abbaye bénédictine que le poids des siècles s'abattit sur ses épaules. Nous étions en 1327, et l'Europe tremblait sous la menace de l'{{BLANK_1}}. Le vieil abbé l'avait convoqué pour enquêter sur une série de morts mystérieuses. L'abbaye, véritable forteresse de la foi, était entourée d'une profonde {{BLANK_2}} et dominée par un {{BLANK_3}} austère où étaient enfermés les livres interdits, ces savoirs païens que l'Église redoutait plus que la peste. Dans le scriptorium, les moines copiaient des manuscrits enluminés. Certains parlaient à voix basse de la pauvreté du Christ, défiant ainsi le {{BLANK_4}} temporel qu'était le Pape d'Avignon. Dans les villages environnants, le {{BLANK_5}} courbait l'échine sous le poids écrasant de la {{BLANK_6}}, tandis que le {{BLANK_7}} libre tentait de survivre sur son petit lopin de terre, faisant partie intégrante du {{BLANK_8}} de l'abbé. Guillaume interrogea un jeune novice aux yeux fiévreux. Celui-ci rêvait en secret de quitter le froc pour obtenir son {{BLANK_9}} et de briller dans les {{BLANK_10}} sanglantes de la cour. Il écoutait, fasciné, un {{BLANK_11}} de passage qui chantait l'amour courtois et la beauté charnelle des dames. Mais le rire était banni ici. Le rire tuait, disait-on. L'Inquisition arriva bientôt, menée par Bernardo Gui, un inquisiteur impitoyable qui voyait le diable dans chaque sourire. Guillaume comprit que la véritable bataille n'était pas pour la Terre sainte, comme lors de la dernière {{BLANK_12}} sanglante, mais pour l'âme même de l'Église et la liberté de penser. Certains moines partaient en {{BLANK_13}} sur les routes poussiéreuses pour expier leurs fautes imaginaires, mais d'autres cherchaient le savoir interdit au péril de leur vie. Dans ce monde médiéval figé, le {{BLANK_14}} devait fidélité absolue à son seigneur, mais ici, dans l'ombre des cloîtres, la fidélité allait aux mots, et les mots, Guillaume le savait désormais, pouvaient être plus meurtriers que les épées.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "hérésie",
+          "options": [
+            "hérésie",
+            "croisade",
+            "joute",
+            "dîme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "douve",
+          "options": [
+            "douve",
+            "joute",
+            "dîme",
+            "hérésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "donjon",
+          "options": [
+            "donjon",
+            "fief",
+            "pèlerinage",
+            "troubadour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "suzerain",
+          "options": [
+            "suzerain",
+            "vassal",
+            "manant",
+            "serf"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "serf",
+          "options": [
+            "serf",
+            "manant",
+            "suzerain",
+            "donjon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "dîme",
+          "options": [
+            "dîme",
+            "douve",
+            "croisade",
+            "adoubement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "manant",
+          "options": [
+            "manant",
+            "serf",
+            "vassal",
+            "troubadour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "fief",
+          "options": [
+            "fief",
+            "dîmes",
+            "douve",
+            "joutes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "adoubement",
+          "options": [
+            "adoubement",
+            "pèlerinage",
+            "croisade",
+            "hérésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "joutes",
+          "options": [
+            "joutes",
+            "douves",
+            "dîmes",
+            "hérésies"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "troubadour",
+          "options": [
+            "troubadour",
+            "serf",
+            "manant",
+            "vassal"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "croisade",
+          "options": [
+            "croisade",
+            "joute",
+            "dîme",
+            "douve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "pèlerinage",
+          "options": [
+            "pèlerinage",
+            "adoubement",
+            "fief",
+            "hérésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "vassal",
+          "options": [
+            "vassal",
+            "troubadour",
+            "manant",
+            "suzerain"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Société féodale et Moyen Âge",
+    "title_fa": "آزمون : جامعه فئودالی و قرون وسطی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le territoire confié par un seigneur à un vassal en échange de sa fidélité et de ses services s'appelle un ____.",
+        "options": [
+          "fief",
+          "dîme",
+          "donjon",
+          "manant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قلمرو واگذارشده در نظام فئودالی = fief."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans la hiérarchie féodale, le seigneur supérieur qui accorde des terres et reçoit l'hommage est le ____.",
+        "options": [
+          "suzerain",
+          "vassal",
+          "serf",
+          "troubadour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارباب بالاتر در سلسله‌مراتب = suzerain."
+      },
+      {
+        "type": "mcq",
+        "question": "L'homme libre ou noble qui prête serment de fidélité à un seigneur en échange d'une terre est son ____.",
+        "options": [
+          "vassal",
+          "suzerain",
+          "manant",
+          "troubadour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دست‌نشانده و وفادار به ارباب = vassal."
+      },
+      {
+        "type": "mcq",
+        "question": "Au Moyen Âge, un paysan libre qui possède ou loue sa terre, par opposition au serf, est un ____.",
+        "options": [
+          "manant",
+          "serf",
+          "vassal",
+          "donjon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دهقان و رعیت آزاد = manant."
+      },
+      {
+        "type": "mcq",
+        "question": "La tour la plus haute et la plus fortifiée d'un château, servant d'ultime refuge en cas de siège, est le ____.",
+        "options": [
+          "donjon",
+          "fief",
+          "pèlerinage",
+          "troubadour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برج اصلی و مستحکم قلعه = donjon."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce fossé large et profond, souvent rempli d'eau, qui entoure les murailles d'un château fort est la ____.",
+        "options": [
+          "douve",
+          "joute",
+          "dîme",
+          "hérésie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خندق اطراف قلعه = douve."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce paysan non libre, attaché à la terre de son seigneur et qui ne peut pas la quitter, est un ____.",
+        "options": [
+          "serf",
+          "manant",
+          "suzerain",
+          "donjon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رعیت وابسته به زمین = serf."
+      },
+      {
+        "type": "mcq",
+        "question": "L'impôt religieux qui consistait à donner un dixième des récoltes à l'Église s'appelait la ____.",
+        "options": [
+          "dîme",
+          "douve",
+          "croisade",
+          "adoubement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مالیات یک‌دهم محصولات به کلیسا = dîme."
+      },
+      {
+        "type": "mcq",
+        "question": "La cérémonie solennelle au cours de laquelle un jeune noble était armé chevalier s'appelait l'____.",
+        "options": [
+          "adoubement",
+          "pèlerinage",
+          "croisade",
+          "hérésie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مراسم اعطای درجه شوالیه‌گری = adoubement."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce combat singulier à cheval, où deux chevaliers tentent de se désarçonner avec une lance, est une ____.",
+        "options": [
+          "joute",
+          "douve",
+          "dîme",
+          "fief"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مبارزه نیزه‌بازی سواره نظامی = joute."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce poète et musicien itinérant du sud de la France, qui chantait l'amour courtois, était un ____.",
+        "options": [
+          "troubadour",
+          "serf",
+          "manant",
+          "vassal"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شاعر و نوازنده دوره‌گرد جنوب فرانسه = troubadour."
+      },
+      {
+        "type": "mcq",
+        "question": "Les expéditions militaires menées par les chrétiens d'Europe pour reprendre Jérusalem aux musulmans étaient les ____.",
+        "options": [
+          "croisades",
+          "joutes",
+          "dîmes",
+          "douves"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جنگ‌های صلیبی = croisade."
+      },
+      {
+        "type": "mcq",
+        "question": "Le voyage religieux entrepris par les fidèles vers un lieu saint pour expier leurs fautes est un ____.",
+        "options": [
+          "pèlerinage",
+          "adoubement",
+          "fief",
+          "hérésie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سفر زیارتی به اماکن مقدس = pèlerinage."
+      },
+      {
+        "type": "mcq",
+        "question": "Une doctrine ou une croyance qui contredit les dogmes officiels de l'Église catholique est une ____.",
+        "options": [
+          "hérésie",
+          "croisade",
+          "joute",
+          "dîme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بدعت و عقیده مخالف با دین رسمی = hérésie."
+      },
+      {
+        "type": "mcq",
+        "question": "La société féodale reposait sur un système de dépendance mutuelle entre le suzerain et son vassal.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. نظام فئودالی بر پایه تبادل زمین در برابر وفاداری و خدمات نظامی بود."
+      },
+      {
+        "type": "binary",
+        "question": "Le serf et le manant avaient exactement le même statut juridique au Moyen Âge.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. manant آزاد بود، اما serf به زمین وابسته و عملاً اسیر بود."
+      },
+      {
+        "type": "binary",
+        "question": "Le donjon servait principalement de grenier pour stocker les récoltes des paysans.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. donjon برج دفاعی و محل آخرین پناهگاه ارباب بود، نه انبار غله."
+      },
+      {
+        "type": "binary",
+        "question": "L'adoubement marquait le passage de l'état d'écuyer à celui de chevalier.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. adoubement مراسم رسمی شوالیه شدن ندیمه (écuyer) بود."
+      },
+      {
+        "type": "binary",
+        "question": "Les troubadours étaient des religieux qui prêchaient la parole de Dieu dans les villages.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. troubadourها شاعران و موسیقی‌دانان غیرمذهبی بودند که عشق و حماسه می‌خواندند."
+      }
+    ]
+  }
+}
