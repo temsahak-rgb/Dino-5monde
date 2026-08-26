@@ -1,0 +1,680 @@
+{
+  "id": "theater_acting",
+  "level": "C1",
+  "theme": "Théâtre, art dramatique et Broadway",
+  "theme_fa": "تئاتر، هنرهای نمایشی و برادوی",
+  "icon": "🎭",
+  "inspiration": "Birdman (Alejandro G. Iñárritu, 2014)",
+  "words": [
+    {
+      "fr": "la scène",
+      "fa": "صحنه",
+      "emoji": "🎭",
+      "difficulty": 3,
+      "ex": "La scène du théâtre Saint James est mythique à Broadway.",
+      "ex_fa": "صحنه تئاتر سنت جیمز در برادوی افسانه‌ای است."
+    },
+    {
+      "fr": "les coulisses",
+      "fa": "پشت صحنه",
+      "emoji": "🚪",
+      "difficulty": 4,
+      "ex": "Dans les coulisses, la tension est palpable avant le lever du rideau.",
+      "ex_fa": "در پشت صحنه، تنش قبل از بالا رفتن پرده ملموس است."
+    },
+    {
+      "fr": "le metteur en scène",
+      "fa": "کارگردان تئاتر",
+      "emoji": "🎬",
+      "difficulty": 4,
+      "ex": "Le metteur en scène dirige les acteurs et conçoit la vision globale.",
+      "ex_fa": "کارگردان، بازیگران را هدایت و دیدگاه کلی را طراحی می‌کند."
+    },
+    {
+      "fr": "la tirade",
+      "fa": "تیراد (سخنرانی طولانی نمایشی)",
+      "emoji": "🗣️",
+      "difficulty": 5,
+      "ex": "L'acteur a débité sa tirade avec une émotion bouleversante.",
+      "ex_fa": "بازیگر تیراد خود را با احساسی تکان‌دهنده ادا کرد."
+    },
+    {
+      "fr": "le monologue",
+      "fa": "تک‌گویی، مونولوگ",
+      "emoji": "🎙️",
+      "difficulty": 4,
+      "ex": "Le monologue final révèle la folie intérieure du personnage.",
+      "ex_fa": "تک‌گویی پایانی، جنون درونی شخصیت را آشکار می‌کند."
+    },
+    {
+      "fr": "le trac",
+      "fa": "اضطراب قبل از اجرا",
+      "emoji": "😰",
+      "difficulty": 4,
+      "ex": "Même les plus grands acteurs souffrent du trac avant d'entrer en scène.",
+      "ex_fa": "حتی بزرگترین بازیگران نیز قبل از ورود به صحنه دچار اضطراب می‌شوند."
+    },
+    {
+      "fr": "la première",
+      "fa": "اجرای نخست (پریمیر)",
+      "emoji": "🌟",
+      "difficulty": 3,
+      "ex": "La première de la pièce a reçu des critiques élogieuses.",
+      "ex_fa": "اجرای نخست نمایش، نقدهای تحسین‌آمیزی دریافت کرد."
+    },
+    {
+      "fr": "l'entracte",
+      "fa": "تنفس بین پرده‌ها",
+      "emoji": "⏸️",
+      "duration": 4,
+      "ex": "Pendant l'entracte, le public discute des rebondissements de l'acte I.",
+      "ex_fa": "در زمان تنفس، تماشاگران درباره اتفاقات پرده اول بحث می‌کنند."
+    },
+    {
+      "fr": "le décor",
+      "fa": "دکور صحنه",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "Le décor minimaliste laisse toute la place au jeu des acteurs.",
+      "ex_fa": "دکور مینیمالیستی تمام فضا را برای بازی بازیگران باز می‌گذارد."
+    },
+    {
+      "fr": "les accessoires",
+      "fa": "لوازم صحنه (آکسسوار)",
+      "emoji": "🎩",
+      "difficulty": 4,
+      "ex": "Les accessoires doivent être parfaitement placés sur la table.",
+      "ex_fa": "لوازم صحنه باید کاملاً روی میز قرار گرفته باشند."
+    },
+    {
+      "fr": "le souffleur",
+      "fa": "پشت‌صحنه‌خوان (سوفلور)",
+      "emoji": "📖",
+      "difficulty": 5,
+      "ex": "Le souffleur murmure le texte quand l'acteur a un trou de mémoire.",
+      "ex_fa": "سوفلور هنگام فراموشی بازیگر، متن را زمزمه می‌کند."
+    },
+    {
+      "fr": "la distribution",
+      "fa": "گروه بازیگران (کست)",
+      "emoji": "👥",
+      "difficulty": 4,
+      "ex": "La distribution de cette pièce réunit les meilleurs talents de New York.",
+      "ex_fa": "گروه بازیگران این نمایش، بهترین استعدادهای نیویورک را گرد هم آورده است."
+    },
+    {
+      "fr": "l'interprétation",
+      "fa": "ایفای نقش، تفسیر",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "Son interprétation du rôle principal lui a valu un Tony Award.",
+      "ex_fa": "ایفای نقش اصلی، جایزه تونی را برای او به ارمغان آورد."
+    },
+    {
+      "fr": "la réplique",
+      "fa": "دیالوگ، پاسخ نمایشی",
+      "emoji": "💬",
+      "difficulty": 4,
+      "ex": "Il a oublié sa réplique et a dû improviser pour sauver la scène.",
+      "ex_fa": "او دیالوگش را فراموش کرد و برای نجات صحنه مجبور به بداهه‌پردازی شد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'acteur déchu",
+      "text": "Riggan Thomson est un ancien acteur d'Hollywood qui tente de relancer sa carrière en montant une pièce à Broadway. Il est à la fois l'acteur principal et le {{BLANK_3}}. La {{BLANK_1}} du théâtre Saint James l'obsède. Dans les {{BLANK_2}}, la tension est permanente. Il doit mémoriser un long {{BLANK_5}} introspectif et une {{BLANK_4}} passionnée. Le {{BLANK_6}} le paralyse avant chaque représentation. La {{BLANK_7}} approche et les critiques new-yorkais sont impitoyables. Pendant l'{{BLANK_8}}, il se retrouve accidentellement enfermé dehors en sous-vêtements et doit traverser Times Square. Le {{BLANK_9}} de la pièce est minimaliste mais exigeant. Les {{BLANK_10}} doivent être parfaitement placés. Parfois, il oublie une {{BLANK_14}} et le {{BLANK_11}} caché doit l'aider. La {{BLANK_12}} de la pièce inclut des acteurs talentueux mais imprévisibles comme Mike Shiner. L'{{BLANK_13}} de Riggan devient de plus en plus instable, brouillant la frontière entre sa vie et la fiction.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "scène",
+          "options": [
+            "scène",
+            "coulisses",
+            "metteur en scène",
+            "tirade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "coulisses",
+          "options": [
+            "coulisses",
+            "monologue",
+            "trac",
+            "première"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "metteur en scène",
+          "options": [
+            "metteur en scène",
+            "entracte",
+            "décor",
+            "accessoires"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tirade",
+          "options": [
+            "tirade",
+            "souffleur",
+            "distribution",
+            "interprétation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "monologue",
+          "options": [
+            "monologue",
+            "réplique",
+            "scène",
+            "coulisses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "trac",
+          "options": [
+            "trac",
+            "metteur en scène",
+            "tirade",
+            "monologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "première",
+          "options": [
+            "première",
+            "trac",
+            "entracte",
+            "décor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "entracte",
+          "options": [
+            "entracte",
+            "accessoires",
+            "souffleur",
+            "distribution"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "décor",
+          "options": [
+            "décor",
+            "interprétation",
+            "réplique",
+            "scène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "accessoires",
+          "options": [
+            "accessoires",
+            "coulisses",
+            "première",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "souffleur",
+          "options": [
+            "souffleur",
+            "décor",
+            "accessoires",
+            "trac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "distribution",
+          "options": [
+            "distribution",
+            "metteur en scène",
+            "tirade",
+            "monologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "interprétation",
+          "options": [
+            "interprétation",
+            "réplique",
+            "scène",
+            "coulisses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "réplique",
+          "options": [
+            "réplique",
+            "première",
+            "entracte",
+            "décor"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le vol de l'homme-oiseau",
+      "inspiration": "Birdman (Alejandro G. Iñárritu, 2014)",
+      "text": "À peine Riggan eut-il franchi le seuil de sa loge que la voix moqueuse de son alter ego super-héroïque résonna dans sa tête, lui rappelant qu'il n'était qu'un has-been en mal de reconnaissance. Ce théâtre de Broadway, avec sa {{BLANK_1}} sacrée et ses planches qui avaient vu pleurer les plus grands, était son ultime champ de bataille. Loin des {{BLANK_2}} où l'on cachait ses échecs, il devait affronter le regard impitoyable du public new-yorkais. En tant que {{BLANK_3}} et acteur principal, il portait le poids de la pièce sur ses épaules meurtries. Il devait cracher une {{BLANK_4}} de trois pages sans reprendre son souffle, et plonger dans un {{BLANK_5}} si intime qu'il lui arrachait l'âme. Le {{BLANK_6}}, ce monstre froid qui lui nouait les entrailles, ne le quittait plus. La {{BLANK_7}} approchait, et la critique impitoyable avait déjà promis de le détruire. Lors de l'{{BLANK_8}} fatidique où il se retrouva nu dans Times Square, il comprit que l'humiliation était le prix de la vérité artistique. Le {{BLANK_9}} dépouillé de la pièce ne laissait aucune place pour se cacher, et les {{BLANK_10}} devenaient des prolongements de sa propre névrose. Quand sa mémoire défaillait, le {{BLANK_11}} invisible murmurait la {{BLANK_14}} manquante comme un ange gardien désespéré. La {{BLANK_12}} chaotique, menée par le génial mais toxique Mike Shiner, menaçait d'imploser à chaque acte. Son {{BLANK_13}} finale, à la frontière de la folie, brouillait les pistes entre l'homme, l'acteur et le personnage, jusqu'à ce coup de feu final qui transforma sa tragédie personnelle en chef-d'œuvre immortel.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "scène",
+          "options": [
+            "scène",
+            "coulisses",
+            "metteur en scène",
+            "tirade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "coulisses",
+          "options": [
+            "coulisses",
+            "monologue",
+            "trac",
+            "première"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "metteur en scène",
+          "options": [
+            "metteur en scène",
+            "entracte",
+            "décor",
+            "accessoires"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tirade",
+          "options": [
+            "tirade",
+            "souffleur",
+            "distribution",
+            "interprétation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "monologue",
+          "options": [
+            "monologue",
+            "réplique",
+            "scène",
+            "coulisses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "trac",
+          "options": [
+            "trac",
+            "metteur en scène",
+            "tirade",
+            "monologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "première",
+          "options": [
+            "première",
+            "trac",
+            "entracte",
+            "décor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "entracte",
+          "options": [
+            "entracte",
+            "accessoires",
+            "souffleur",
+            "distribution"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "décor",
+          "options": [
+            "décor",
+            "interprétation",
+            "réplique",
+            "scène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "accessoires",
+          "options": [
+            "accessoires",
+            "coulisses",
+            "première",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "souffleur",
+          "options": [
+            "souffleur",
+            "décor",
+            "accessoires",
+            "trac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "distribution",
+          "options": [
+            "distribution",
+            "metteur en scène",
+            "tirade",
+            "monologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "interprétation",
+          "options": [
+            "interprétation",
+            "réplique",
+            "scène",
+            "coulisses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "réplique",
+          "options": [
+            "réplique",
+            "première",
+            "entracte",
+            "décor"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Théâtre et art dramatique",
+    "title_fa": "آزمون : تئاتر و هنرهای نمایشی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'espace surélevé où les acteurs jouent la pièce devant le public est la ____.",
+        "options": [
+          "scène",
+          "coulisses",
+          "metteur en scène",
+          "tirade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محل اجرای بازیگران = scène."
+      },
+      {
+        "type": "mcq",
+        "question": "Les parties du théâtre cachées au public, où les acteurs se préparent et attendent, sont les ____.",
+        "options": [
+          "coulisses",
+          "monologue",
+          "trac",
+          "première"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش‌های پنهان پشت صحنه = coulisses."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui dirige les acteurs, coordonne l'équipe artistique et conçoit la vision de la pièce est le ____.",
+        "options": [
+          "metteur en scène",
+          "entracte",
+          "décor",
+          "accessoires"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کارگردان تئاتر = metteur en scène."
+      },
+      {
+        "type": "mcq",
+        "question": "Le long discours qu'un acteur prononce avec véhémence et émotion sur scène est la ____.",
+        "options": [
+          "tirade",
+          "souffleur",
+          "distribution",
+          "interprétation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سخنرانی طولانی و احساسی = tirade."
+      },
+      {
+        "type": "mcq",
+        "question": "Le discours qu'un personnage se tient à lui-même, seul en scène, pour exprimer ses pensées est le ____.",
+        "options": [
+          "monologue",
+          "réplique",
+          "scène",
+          "coulisses"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تک‌گویی شخصیت با خودش = monologue."
+      },
+      {
+        "type": "mcq",
+        "question": "L'anxiété et le stress ressentis par les artistes juste avant d'entrer en scène est le ____.",
+        "options": [
+          "trac",
+          "metteur en scène",
+          "tirade",
+          "monologue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اضطراب قبل از اجرا = trac."
+      },
+      {
+        "type": "mcq",
+        "question": "La toute première représentation publique d'une pièce, souvent devant la presse et les invités, est la ____.",
+        "options": [
+          "première",
+          "trac",
+          "entracte",
+          "décor"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اولین اجرای عمومی = première."
+      },
+      {
+        "type": "mcq",
+        "question": "La pause entre deux actes d'une pièce, permettant au public de se reposer, est l'____.",
+        "options": [
+          "entracte",
+          "accessoires",
+          "souffleur",
+          "distribution"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استراحت بین پرده‌ها = entracte."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des éléments visuels (meubles, toiles peintes) qui plantent le lieu de l'action est le ____.",
+        "options": [
+          "décor",
+          "interprétation",
+          "réplique",
+          "scène"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عناصر بصری صحنه = décor."
+      },
+      {
+        "type": "mcq",
+        "question": "Les objets manipulés par les acteurs pendant la représentation (livres, armes, tasses) sont les ____.",
+        "options": [
+          "accessoires",
+          "coulisses",
+          "première",
+          "entracte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اشیاء مورد استفاده بازیگران = accessoires."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne cachée du public qui lit le texte pour aider un acteur en cas de trou de mémoire est le ____.",
+        "options": [
+          "souffleur",
+          "décor",
+          "accessoires",
+          "trac"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص یادآورنده دیالوگ = souffleur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des comédiens choisis pour jouer les différents rôles d'une pièce est la ____.",
+        "options": [
+          "distribution",
+          "metteur en scène",
+          "tirade",
+          "monologue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گروه بازیگران = distribution."
+      },
+      {
+        "type": "mcq",
+        "question": "La manière dont un acteur incarne un personnage et lui donne vie par son jeu est l'____.",
+        "options": [
+          "interprétation",
+          "réplique",
+          "scène",
+          "coulisses"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نحوه ایفای نقش = interprétation."
+      },
+      {
+        "type": "mcq",
+        "question": "La phrase ou le court discours qu'un acteur prononce en réponse à un autre personnage est la ____.",
+        "options": [
+          "réplique",
+          "première",
+          "entracte",
+          "décor"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پاسخ کوتاه نمایشی = réplique."
+      },
+      {
+        "type": "binary",
+        "question": "Le trac est une maladie chronique qui empêche définitivement un acteur de jouer.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. trac یک اضطراب موقتی قبل از اجراست، نه یک بیماری دائمی."
+      },
+      {
+        "type": "binary",
+        "question": "Le monologue est une scène où plusieurs acteurs dialoguent vivement entre eux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. مونولوگ سخن گفتن یک شخصیت با خودش یا رو به تماشاگر است."
+      },
+      {
+        "type": "binary",
+        "question": "Le souffleur est là pour rappeler discrètement son texte à un acteur qui l'aurait oublié.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سوفلور متن را در مواقع فراموشی به بازیگر یادآوری می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La distribution désigne uniquement les techniciens qui construisent le décor.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. distribution به گروه بازیگران (کست) اشاره دارد."
+      },
+      {
+        "type": "binary",
+        "question": "L'entracte est la pause qui sépare les différentes parties (actes) d'un spectacle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. آنتراکت استراحت بین پرده‌های نمایش است."
+      },
+      {
+        "type": "binary",
+        "question": "Les accessoires sont les objets que les acteurs utilisent et manipulent sur scène.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. آکسسوارها اشیاء قابل حملی هستند که بازیگران استفاده می‌کنند."
+      }
+    ]
+  }
+}
