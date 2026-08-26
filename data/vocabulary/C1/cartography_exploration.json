@@ -1,0 +1,680 @@
+{
+  "id": "cartography_exploration",
+  "level": "C1",
+  "theme": "Cartographie, navigation et exploration géographique",
+  "theme_fa": "نقشه‌کشی، دریانوردی و اکتشافات جغرافیایی",
+  "icon": "🧭",
+  "inspiration": "Master and Commander (Peter Weir, 2003)",
+  "words": [
+    {
+      "fr": "la cartographie",
+      "fa": "نقشه‌کشی، کارتوگرافی",
+      "emoji": "🗺️",
+      "difficulty": 4,
+      "ex": "La cartographie moderne utilise les satellites pour une précision absolue.",
+      "ex_fa": "نقشه‌کشی مدرن برای دقت مطلق از ماهواره‌ها استفاده می‌کند."
+    },
+    {
+      "fr": "la carte",
+      "fa": "نقشه",
+      "emoji": "🗺️",
+      "difficulty": 2,
+      "ex": "La carte maritime indique les courants dangereux et les récifs cachés.",
+      "ex_fa": "نقشه دریایی جریان‌های خطرناک و صخره‌های پنهان را نشان می‌دهد."
+    },
+    {
+      "fr": "la boussole",
+      "fa": "قطب‌نما",
+      "emoji": "🧭",
+      "difficulty": 3,
+      "ex": "L'aiguille de la boussole pointe invariablement vers le nord magnétique.",
+      "ex_fa": "عقربه قطب‌نما همواره به سمت شمال مغناطیسی اشاره می‌کند."
+    },
+    {
+      "fr": "l'astrolabe",
+      "fa": "اسطرلاب",
+      "emoji": "⚙️",
+      "difficulty": 5,
+      "ex": "L'astrolabe antique permettait de mesurer la hauteur des étoiles au-dessus de l'horizon.",
+      "ex_fa": "اسطرلاب باستانی امکان اندازه‌گیری ارتفاع ستارگان از افق را می‌داد."
+    },
+    {
+      "fr": "le méridien",
+      "fa": "نصف‌النهار",
+      "emoji": "🌐",
+      "difficulty": 4,
+      "ex": "Le méridien de Greenwich sert de référence internationale pour le temps.",
+      "ex_fa": "نصف‌النهار گرینویچ به عنوان مرجع بین‌المللی زمان استفاده می‌شود."
+    },
+    {
+      "fr": "la latitude",
+      "fa": "عرض جغرافیایی",
+      "emoji": "↔️",
+      "difficulty": 4,
+      "ex": "La latitude détermine la position nord ou sud par rapport à l'équateur.",
+      "ex_fa": "عرض جغرافیایی موقعیت شمالی یا جنوبی را نسبت به استوا تعیین می‌کند."
+    },
+    {
+      "fr": "la longitude",
+      "fa": "طول جغرافیایی",
+      "emoji": "↕️",
+      "difficulty": 4,
+      "ex": "Calculer la longitude en mer a été le plus grand défi des navigateurs du XVIIIe siècle.",
+      "ex_fa": "محاسبه طول جغرافیایی در دریا بزرگترین چالش دریانوردان قرن هجدهم بود."
+    },
+    {
+      "fr": "l'équateur",
+      "fa": "خط استوا",
+      "emoji": "🌍",
+      "difficulty": 3,
+      "ex": "L'équateur divise le globe terrestre en deux hémisphères égaux.",
+      "ex_fa": "خط استوا کره زمین را به دو نیمکره مساوی تقسیم می‌کند."
+    },
+    {
+      "fr": "le relief",
+      "fa": "ناهمواری، پستی و بلندی",
+      "emoji": "⛰️",
+      "difficulty": 4,
+      "ex": "Les courbes de niveau sur la carte indiquent le relief des montagnes.",
+      "ex_fa": "خطوط تراز روی نقشه، پستی و بلندی کوه‌ها را نشان می‌دهند."
+    },
+    {
+      "fr": "la légende",
+      "fa": "راهنمای نقشه",
+      "emoji": "📖",
+      "difficulty": 3,
+      "ex": "Il faut toujours consulter la légende pour comprendre les symboles de la carte.",
+      "ex_fa": "برای درک نمادهای نقشه همیشه باید به راهنمای آن مراجعه کرد."
+    },
+    {
+      "fr": "l'échelle",
+      "fa": "مقیاس",
+      "emoji": "📏",
+      "difficulty": 3,
+      "ex": "L'échelle au 1/50000 permet de voir les détails d'un petit territoire.",
+      "ex_fa": "مقیاس ۱/۵۰۰۰۰ امکان دیدن جزئیات یک منطقه کوچک را می‌دهد."
+    },
+    {
+      "fr": "le cartographe",
+      "fa": "نقشه‌کش",
+      "emoji": "✍️",
+      "difficulty": 4,
+      "ex": "Le cartographe de l'expédition dessinait chaque baie découverte.",
+      "ex_fa": "نقشه‌کشِ هیئت اکتشافی، هر خلیج کشف‌شده را ترسیم می‌کرد."
+    },
+    {
+      "fr": "la toponymie",
+      "fa": "نام‌شناسی مکان‌ها",
+      "emoji": "🏷️",
+      "difficulty": 5,
+      "ex": "La toponymie révèle l'histoire des peuples qui ont habité ces terres.",
+      "ex_fa": "نام‌شناسی مکان‌ها، تاریخ مردمانی را که در این سرزمین‌ها ساکن بوده‌اند آشکار می‌کند."
+    },
+    {
+      "fr": "le sextant",
+      "fa": "سکstant (زاویه‌سنج دریایی)",
+      "emoji": "📐",
+      "difficulty": 5,
+      "ex": "Le capitaine utilise le sextant pour mesurer l'angle entre le soleil et l'horizon.",
+      "ex_fa": "کاپیتان از سکstant برای اندازه‌گیری زاویه بین خورشید و افق استفاده می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les explorateurs du Pacifique",
+      "text": "Arthur est un jeune {{BLANK_12}} qui travaille pour la marine royale. Sa mission est de dessiner une nouvelle {{BLANK_2}} des côtes inexplorées du Pacifique. Dans sa cabine, il utilise un {{BLANK_14}} et un ancien {{BLANK_4}} pour mesurer la position des étoiles. Il calcule ainsi la {{BLANK_6}} et la {{BLANK_7}} exactes du navire. Pour s'orienter quand le ciel est couvert, il se fie à sa {{BLANK_3}} magnétique. Il trace le {{BLANK_5}} de Greenwich et note la traversée de l'{{BLANK_8}}. Sur le parchemin, il dessine le {{BLANK_9}} des montagnes côtières avec précision. Au bas de la page, il ajoute la {{BLANK_10}} pour expliquer les symboles utilisés. Il n'oublie pas d'indiquer l'{{BLANK_11}} graphique pour estimer les distances. Son travail exige une grande connaissance de la {{BLANK_1}}. Il s'intéresse aussi à la {{BLANK_13}}, notant soigneusement les noms indigènes des baies et des caps. Grâce à lui, les futurs marins ne seront plus perdus.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cartographie",
+          "options": [
+            "cartographie",
+            "carte",
+            "boussole",
+            "astrolabe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "carte",
+          "options": [
+            "carte",
+            "méridien",
+            "latitude",
+            "longitude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "boussole",
+          "options": [
+            "boussole",
+            "équateur",
+            "relief",
+            "légende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "astrolabe",
+          "options": [
+            "astrolabe",
+            "échelle",
+            "cartographe",
+            "toponymie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "méridien",
+          "options": [
+            "méridien",
+            "sextant",
+            "cartographie",
+            "carte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "latitude",
+          "options": [
+            "latitude",
+            "boussole",
+            "astrolabe",
+            "méridien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "longitude",
+          "options": [
+            "longitude",
+            "équateur",
+            "relief",
+            "légende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "équateur",
+          "options": [
+            "équateur",
+            "échelle",
+            "cartographe",
+            "toponymie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "relief",
+          "options": [
+            "relief",
+            "sextant",
+            "cartographie",
+            "carte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "légende",
+          "options": [
+            "légende",
+            "boussole",
+            "astrolabe",
+            "méridien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "échelle",
+          "options": [
+            "échelle",
+            "latitude",
+            "longitude",
+            "équateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "cartographe",
+          "options": [
+            "cartographe",
+            "relief",
+            "légende",
+            "échelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "toponymie",
+          "options": [
+            "toponymie",
+            "sextant",
+            "cartographie",
+            "carte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "sextant",
+          "options": [
+            "sextant",
+            "boussole",
+            "astrolabe",
+            "méridien"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le parchemin du monde",
+      "inspiration": "Master and Commander (Peter Weir, 2003)",
+      "text": "À peine le {{BLANK_12}} eut-il posé sa plume que le monde sauvage se trouvait domestiqué par l'encre et le parchemin. Cet homme de science, perdu sur un navire de guerre, pratiquait la {{BLANK_1}} comme on pratique une prière. Quand la tempête grondait, il serrait sa {{BLANK_3}} contre son cœur, seul repère dans le chaos des océans. Par les nuits claires, il levait son {{BLANK_14}} vers les étoiles, ou sortait l'{{BLANK_4}} hérité des Arabes, pour capturer la {{BLANK_6}} invisible qui les liait au pôle. Il traçait le {{BLANK_5}} comme une cicatrice sur le papier, calculant la {{BLANK_7}} avec la fièvre d'un homme cherchant sa place dans l'univers. Franchir l'{{BLANK_8}} était pour lui un baptême, une ligne de feu où les alizés changeaient de visage. Il modelait le {{BLANK_9}} des terres inconnues, respectant la {{BLANK_13}} sacrée des peuples premiers qui nommaient ces rivages avant lui. Sur sa {{BLANK_2}}, chaque détail avait sa {{BLANK_10}}, et chaque centimètre respectait l'{{BLANK_11}} de la réalité. Il savait que dessiner le monde, c'était le posséder un peu, mais que l'océan, dans son immensité, se rirait toujours des lignes tracées par les mortels.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cartographie",
+          "options": [
+            "cartographie",
+            "carte",
+            "boussole",
+            "astrolabe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "carte",
+          "options": [
+            "carte",
+            "méridien",
+            "latitude",
+            "longitude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "boussole",
+          "options": [
+            "boussole",
+            "équateur",
+            "relief",
+            "légende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "astrolabe",
+          "options": [
+            "astrolabe",
+            "échelle",
+            "cartographe",
+            "toponymie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "méridien",
+          "options": [
+            "méridien",
+            "sextant",
+            "cartographie",
+            "carte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "latitude",
+          "options": [
+            "latitude",
+            "boussole",
+            "astrolabe",
+            "méridien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "longitude",
+          "options": [
+            "longitude",
+            "équateur",
+            "relief",
+            "légende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "équateur",
+          "options": [
+            "équateur",
+            "échelle",
+            "cartographe",
+            "toponymie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "relief",
+          "options": [
+            "relief",
+            "sextant",
+            "cartographie",
+            "carte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "légende",
+          "options": [
+            "légende",
+            "boussole",
+            "astrolabe",
+            "méridien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "échelle",
+          "options": [
+            "échelle",
+            "latitude",
+            "longitude",
+            "équateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "cartographe",
+          "options": [
+            "cartographe",
+            "relief",
+            "légende",
+            "échelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "toponymie",
+          "options": [
+            "toponymie",
+            "sextant",
+            "cartographie",
+            "carte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "sextant",
+          "options": [
+            "sextant",
+            "boussole",
+            "astrolabe",
+            "méridien"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Cartographie et exploration",
+    "title_fa": "آزمون : نقشه‌کشی و اکتشافات",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science et l'art de concevoir, dessiner et étudier les cartes géographiques est la ____.",
+        "options": [
+          "cartographie",
+          "carte",
+          "boussole",
+          "astrolabe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم و هنر طراحی نقشه = cartographie."
+      },
+      {
+        "type": "mcq",
+        "question": "La représentation plane et conventionnelle de la surface de la Terre ou d'une région est la ____.",
+        "options": [
+          "carte",
+          "méridien",
+          "latitude",
+          "longitude"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نمایش مسطح از سطح زمین = carte."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument de navigation magnétique dont l'aiguille indique la direction du nord est la ____.",
+        "options": [
+          "boussole",
+          "équateur",
+          "relief",
+          "légende"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار مغناطیسی جهت‌یابی = boussole."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ancien instrument astronomique utilisé pour mesurer la hauteur des astres et déterminer sa position est l'____.",
+        "options": [
+          "astrolabe",
+          "échelle",
+          "cartographe",
+          "toponymie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار باستانی سنجش ستارگان = astrolabe."
+      },
+      {
+        "type": "mcq",
+        "question": "Le demi-grand cercle imaginaire reliant les deux pôles terrestres, servant de référence horaire, est le ____.",
+        "options": [
+          "méridien",
+          "sextant",
+          "cartographie",
+          "carte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نیم‌دایره واصل قطب‌ها = méridien."
+      },
+      {
+        "type": "mcq",
+        "question": "La coordonnée géographique qui mesure la distance angulaire d'un point au nord ou au sud de l'équateur est la ____.",
+        "options": [
+          "latitude",
+          "boussole",
+          "astrolabe",
+          "méridien"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فاصله زاویه‌ای از استوا = latitude."
+      },
+      {
+        "type": "mcq",
+        "question": "La coordonnée géographique qui mesure la distance angulaire à l'est ou à l'ouest du méridien de référence est la ____.",
+        "options": [
+          "longitude",
+          "équateur",
+          "relief",
+          "légende"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فاصله زاویه‌ای از نصف‌النهار = longitude."
+      },
+      {
+        "type": "mcq",
+        "question": "Le grand cercle imaginaire équidistant des deux pôles, qui divise la Terre en hémisphères nord et sud, est l'____.",
+        "options": [
+          "équateur",
+          "échelle",
+          "cartographe",
+          "toponymie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دایره بزرگ تقسیم‌کننده زمین = équateur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des inégalités de la surface terrestre (montagnes, vallées) représentées sur une carte est le ____.",
+        "options": [
+          "relief",
+          "sextant",
+          "cartographie",
+          "carte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ناهمواری‌های سطح زمین = relief."
+      },
+      {
+        "type": "mcq",
+        "question": "Le tableau explicatif qui donne la signification des symboles et couleurs utilisés sur une carte est la ____.",
+        "options": [
+          "légende",
+          "boussole",
+          "astrolabe",
+          "méridien"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جدول راهنمای نمادها = légende."
+      },
+      {
+        "type": "mcq",
+        "question": "Le rapport mathématique constant entre les dimensions sur la carte et les dimensions réelles sur le terrain est l'____.",
+        "options": [
+          "échelle",
+          "latitude",
+          "longitude",
+          "équateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نسبت ابعاد نقشه به واقعیت = échelle."
+      },
+      {
+        "type": "mcq",
+        "question": "Le spécialiste qui conçoit et dessine les cartes géographiques est le ____.",
+        "options": [
+          "cartographe",
+          "relief",
+          "légende",
+          "échelle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص طراحی نقشه = cartographe."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étude scientifique des noms propres de lieux (villes, fleuves, montagnes) et de leur origine est la ____.",
+        "options": [
+          "toponymie",
+          "sextant",
+          "cartographie",
+          "carte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مطالعه ریشه نام مکان‌ها = toponymie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument d'optique et de mesure d'angle, essentiel en navigation maritime pour faire le point avec le soleil, est le ____.",
+        "options": [
+          "sextant",
+          "boussole",
+          "astrolabe",
+          "méridien"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار اپتیکال دریانوردی = sextant."
+      },
+      {
+        "type": "binary",
+        "question": "L'équateur est une ligne imaginaire qui relie le pôle Nord au pôle Sud.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. خط استوا (équateur) دایره‌ای افقی است که زمین را به دو نیمکره شمالی و جنوبی تقسیم می‌کند؛ نصف‌النهار (méridien) قطب‌ها را وصل می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La légende d'une carte est le texte historique qui raconte la découverte du territoire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. راهنمای نقشه (légende) جدولی است که نمادها و رنگ‌های استفاده‌شده در نقشه را توضیح می‌دهد."
+      },
+      {
+        "type": "binary",
+        "question": "Le sextant permet de mesurer la hauteur angulaire d'un astre au-dessus de l'horizon pour se positionner.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سکstant با اندازه‌گیری زاویه ستارگان یا خورشید به تعیین موقعیت کمک می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La toponymie est l'art de calligraphier les noms des villes sur les anciens parchemins.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. نام‌شناسی (toponymie) علم بررسی ریشه و تاریخچه نام مکان‌هاست، نه خوشنویسی."
+      },
+      {
+        "type": "binary",
+        "question": "La latitude et la longitude forment un système de coordonnées qui permet de localiser n'importe quel point sur le globe.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ترکیب عرض و طول جغرافیایی یک شبکه مختصات جهانی برای مکان‌یابی ایجاد می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "L'astrolabe était un instrument historique utilisé par les marins et les astronomes pour observer les étoiles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اسطرلاب (astrolabe) یکی از مهم‌ترین ابزارهای نجومی و دریانوردی در دوران باستان و قرون وسطی بود."
+      }
+    ]
+  }
+}
