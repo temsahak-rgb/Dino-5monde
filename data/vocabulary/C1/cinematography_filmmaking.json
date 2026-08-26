@@ -1,0 +1,680 @@
+{
+  "id": "cinematography_filmmaking",
+  "level": "C1",
+  "theme": "Cinématographie, réalisation et techniques de tournage",
+  "theme_fa": "عکاسی سینمایی، کارگردانی و تکنیک‌های فیلم‌برداری",
+  "icon": "🎥",
+  "inspiration": "1917 (Sam Mendes, 2019)",
+  "words": [
+    {
+      "fr": "le plan-séquence",
+      "fa": "پلان‌سکانس (نمای پیوسته)",
+      "emoji": "🎬",
+      "difficulty": 5,
+      "ex": "Le plan-séquence de dix minutes crée une tension dramatique exceptionnelle.",
+      "ex_fa": "پلان‌سکانس ده دقیقه‌ای تنش دراماتیک استثنایی ایجاد می‌کند."
+    },
+    {
+      "fr": "le travelling",
+      "fa": "تراولینگ (حرکت دوربین)",
+      "emoji": "🎥",
+      "difficulty": 4,
+      "ex": "Le travelling avant rapproche progressivement le spectateur du sujet.",
+      "ex_fa": "تراولینگ جلو، تماشاگر را تدریجاً به سوژه نزدیک می‌کند."
+    },
+    {
+      "fr": "le cadre",
+      "fa": "قاب، کادر",
+      "emoji": "🖼️",
+      "difficulty": 3,
+      "ex": "Le cadre serré isole le personnage de son environnement.",
+      "ex_fa": "کادر بسته، شخصیت را از محیطش جدا می‌کند."
+    },
+    {
+      "fr": "la profondeur de champ",
+      "fa": "عمق میدان",
+      "emoji": "📐",
+      "difficulty": 5,
+      "ex": "La faible profondeur de champ crée un flou artistique en arrière-plan.",
+      "ex_fa": "عمق میدان کم، تاری هنری در پس‌زمینه ایجاد می‌کند."
+    },
+    {
+      "fr": "le contre-jour",
+      "fa": "ضد نور، نور از پشت",
+      "emoji": "☀️",
+      "difficulty": 4,
+      "ex": "Le contre-jour dramatise la silhouette du personnage principal.",
+      "ex_fa": "نور از پشت، سایه شخصیت اصلی را دراماتیک می‌کند."
+    },
+    {
+      "fr": "le clair-obscur",
+      "fa": "سایه-روشن، کلاروسکور",
+      "emoji": "🌓",
+      "difficulty": 5,
+      "ex": "Le clair-obscur caravagesque donne une atmosphère mystérieuse.",
+      "ex_fa": "سایه-روشن کاراواجویی فضایی مرموز ایجاد می‌کند."
+    },
+    {
+      "fr": "le montage",
+      "fa": "تدوین، مونتاژ",
+      "emoji": "✂️",
+      "difficulty": 4,
+      "ex": "Le montage parallèle alterne deux actions simultanées.",
+      "ex_fa": "تدوین موازی، دو کنش همزمان را متناوب نشان می‌دهد."
+    },
+    {
+      "fr": "le storyboard",
+      "fa": "استوری‌برد، طرح صحنه‌ها",
+      "emoji": "📋",
+      "difficulty": 4,
+      "ex": "Le storyboard détaille chaque plan avant le tournage.",
+      "ex_fa": "استوری‌برد هر نما را قبل از فیلم‌برداری مشخص می‌کند."
+    },
+    {
+      "fr": "le steadicam",
+      "fa": "استدی‌کم (لرزش‌گیر)",
+      "emoji": "🎥",
+      "difficulty": 5,
+      "ex": "Le steadicam permet des mouvements fluides sans tremblement.",
+      "ex_fa": "استدی‌کم حرکات روان بدون لرزش را ممکن می‌سازد."
+    },
+    {
+      "fr": "le zoom",
+      "fa": "زوم، بزرگنمایی",
+      "emoji": "🔍",
+      "difficulty": 3,
+      "ex": "Le zoom avant crée un effet de surprise dramatique.",
+      "ex_fa": "زوم جلو، افکت غافلگیری دراماتیک ایجاد می‌کند."
+    },
+    {
+      "fr": "l'étalonnage",
+      "fa": "رنگ‌بندی، اصلاح رنگ",
+      "emoji": "🎨",
+      "difficulty": 5,
+      "ex": "L'étalonnage donne une teinte bleutée à l'ensemble du film.",
+      "ex_fa": "رنگ‌بندی، توناژ آبی به کل فیلم می‌دهد."
+    },
+    {
+      "fr": "le fondu",
+      "fa": "محو شدن، فید",
+      "emoji": "🌅",
+      "difficulty": 4,
+      "ex": "Le fondu au noir marque la fin d'une séquence.",
+      "ex_fa": "محو شدن به سیاهی، پایان یک سکانس را نشان می‌دهد."
+    },
+    {
+      "fr": "la mise au point",
+      "fa": "فوکوس، تنظیم وضوح",
+      "emoji": "🎯",
+      "difficulty": 4,
+      "ex": "La mise au point sélective guide le regard du spectateur.",
+      "ex_fa": "فوکوس انتخابی، نگاه تماشاگر را هدایت می‌کند."
+    },
+    {
+      "fr": "le champ-contrechamp",
+      "fa": "نما-ضد نما",
+      "emoji": "🔄",
+      "difficulty": 5,
+      "ex": "Le champ-contrechamp structure les dialogues entre deux personnages.",
+      "ex_fa": "نما-ضد نما، دیالوگ بین دو شخصیت را ساختار می‌دهد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La mission impossible",
+      "text": "Le réalisateur Sam Mendes prépare un film de guerre ambitieux. Son {{BLANK_8}} détaille chaque mouvement de caméra pour les scènes complexes. Il décide de tourner en {{BLANK_1}} pour créer l'illusion d'un film en temps réel. Le {{BLANK_9}} permet à l'opérateur de suivre les soldats dans les tranchées sans secousse. Le {{BLANK_2}} serré capture l'angoisse sur les visages des acteurs. La {{BLANK_4}} réduite isole les personnages dans un flou cauchemardesque. Le {{BLANK_3}} long suit les soldats à travers le champ de bataille. Le {{BLANK_5}} dramatique silhouette les combattants contre le ciel brûlant. Le {{BLANK_6}} crée des ombres profondes dans les bunkers souterrains. Après le tournage, le {{BLANK_7}} assemble les plans pour créer le rythme narratif. Le {{BLANK_10}} avant sur un visage révèle l'horreur progressive. L'{{BLANK_11}} final donne une atmosphère froide et désaturée. Le {{BLANK_12}} au noir termine chaque acte. Le {{BLANK_14}} structure les conversations entre officiers. La {{BLANK_13}} précise sur les yeux des soldats captive le public.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "plan-séquence",
+          "options": [
+            "plan-séquence",
+            "travelling",
+            "cadre",
+            "profondeur de champ"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "cadre",
+          "options": [
+            "cadre",
+            "contre-jour",
+            "clair-obscur",
+            "montage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "travelling",
+          "options": [
+            "travelling",
+            "storyboard",
+            "steadicam",
+            "zoom"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "profondeur de champ",
+          "options": [
+            "profondeur de champ",
+            "étalonnage",
+            "fondu",
+            "mise au point"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "contre-jour",
+          "options": [
+            "contre-jour",
+            "champ-contrechamp",
+            "plan-séquence",
+            "travelling"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "clair-obscur",
+          "options": [
+            "clair-obscur",
+            "cadre",
+            "profondeur de champ",
+            "contre-jour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "montage",
+          "options": [
+            "montage",
+            "storyboard",
+            "steadicam",
+            "zoom"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "storyboard",
+          "options": [
+            "storyboard",
+            "étalonnage",
+            "fondu",
+            "mise au point"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "steadicam",
+          "options": [
+            "steadicam",
+            "champ-contrechamp",
+            "plan-séquence",
+            "travelling"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "zoom",
+          "options": [
+            "zoom",
+            "cadre",
+            "profondeur de champ",
+            "contre-jour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "étalonnage",
+          "options": [
+            "étalonnage",
+            "clair-obscur",
+            "montage",
+            "storyboard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "fondu",
+          "options": [
+            "fondu",
+            "steadicam",
+            "zoom",
+            "étalonnage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "mise au point",
+          "options": [
+            "mise au point",
+            "champ-contrechamp",
+            "plan-séquence",
+            "travelling"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "champ-contrechamp",
+          "options": [
+            "champ-contrechamp",
+            "cadre",
+            "profondeur de champ",
+            "contre-jour"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le souffle de la guerre",
+      "inspiration": "1917 (Sam Mendes, 2019)",
+      "text": "À peine le {{BLANK_9}} eut-il commencé à glisser que Mendes sut qu'il tenait entre ses mains l'âme même de la guerre. Ce {{BLANK_1}} audacieux, cette prouesse technique qui défiait le temps cinématographique, allait plonger le spectateur dans l'enfer des tranchées sans lui offrir le réconfort d'une coupe salvatrice. Le {{BLANK_8}} qu'il avait dessiné nuit après nuit prenait vie, chaque case devenant un fragment de cauchemar organisé. Le {{BLANK_2}} serré capturait la terreur pure dans les yeux des jeunes soldats, tandis que le {{BLANK_3}} infatigable les suivait comme un fantôme à travers les champs de mort. La {{BLANK_4}} volontairement réduite transformait l'arrière-plan en purgatoire flou, isolant les héros dans leur solitude absolue. Le {{BLANK_5}} dramatique découpait leurs silhouettes contre le ciel incendié, et le {{BLANK_6}} caravagesque sculptait leurs visages dans l'ombre des bunkers. Quand venait l'heure du {{BLANK_7}}, chaque plan trouvait sa place dans la symphonie visuelle, le {{BLANK_10}} lent révélant progressivement l'horreur d'un visage défiguré. L'{{BLANK_11}} final baignait l'ensemble dans une froideur spectrale, et le {{BLANK_12}} au noir refermait chaque chapitre comme on ferme un cercueil. La {{BLANK_13}} sélective guidait le regard vers l'essentiel, tandis que le {{BLANK_14}} rythmait les dialogues impossibles entre hommes condamnés, prouvant que le cinéma pouvait capturer non seulement l'image de la guerre, mais son souffle même, son odeur de terre et de sang, son silence assourdissant avant l'assaut final.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "plan-séquence",
+          "options": [
+            "plan-séquence",
+            "travelling",
+            "cadre",
+            "profondeur de champ"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "cadre",
+          "options": [
+            "cadre",
+            "contre-jour",
+            "clair-obscur",
+            "montage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "travelling",
+          "options": [
+            "travelling",
+            "storyboard",
+            "steadicam",
+            "zoom"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "profondeur de champ",
+          "options": [
+            "profondeur de champ",
+            "étalonnage",
+            "fondu",
+            "mise au point"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "contre-jour",
+          "options": [
+            "contre-jour",
+            "champ-contrechamp",
+            "plan-séquence",
+            "travelling"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "clair-obscur",
+          "options": [
+            "clair-obscur",
+            "cadre",
+            "profondeur de champ",
+            "contre-jour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "montage",
+          "options": [
+            "montage",
+            "storyboard",
+            "steadicam",
+            "zoom"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "storyboard",
+          "options": [
+            "storyboard",
+            "étalonnage",
+            "fondu",
+            "mise au point"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "steadicam",
+          "options": [
+            "steadicam",
+            "champ-contrechamp",
+            "plan-séquence",
+            "travelling"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "zoom",
+          "options": [
+            "zoom",
+            "cadre",
+            "profondeur de champ",
+            "contre-jour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "étalonnage",
+          "options": [
+            "étalonnage",
+            "clair-obscur",
+            "montage",
+            "storyboard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "fondu",
+          "options": [
+            "fondu",
+            "steadicam",
+            "zoom",
+            "étalonnage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "mise au point",
+          "options": [
+            "mise au point",
+            "champ-contrechamp",
+            "plan-séquence",
+            "travelling"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "champ-contrechamp",
+          "options": [
+            "champ-contrechamp",
+            "cadre",
+            "profondeur de champ",
+            "contre-jour"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Cinématographie",
+    "title_fa": "آزمون : عکاسی سینمایی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La technique qui consiste à filmer une scène entière en une seule prise sans coupe est le ____.",
+        "options": [
+          "plan-séquence",
+          "travelling",
+          "cadre",
+          "profondeur de champ"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک فیلم‌برداری بدون قطع = plan-séquence."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mouvement de caméra qui se déplace latéralement ou en profondeur sur des rails est le ____.",
+        "options": [
+          "travelling",
+          "cadre",
+          "contre-jour",
+          "clair-obscur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرکت دوربین روی ریل = travelling."
+      },
+      {
+        "type": "mcq",
+        "question": "La délimitation visuelle de ce qui est montré à l'écran, défini par les bords de l'image, est le ____.",
+        "options": [
+          "cadre",
+          "montage",
+          "storyboard",
+          "steadicam"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محدوده بصری تصویر = cadre."
+      },
+      {
+        "type": "mcq",
+        "question": "La zone de netteté dans l'image, qui détermine ce qui est flou ou net, est la ____.",
+        "options": [
+          "profondeur de champ",
+          "étalonnage",
+          "fondu",
+          "mise au point"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محدوده وضوح در تصویر = profondeur de champ."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique d'éclairage où la source lumineuse est placée derrière le sujet est le ____.",
+        "options": [
+          "contre-jour",
+          "champ-contrechamp",
+          "plan-séquence",
+          "travelling"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نورپردازی از پشت سوژه = contre-jour."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique picturale qui joue sur les forts contrastes entre ombre et lumière est le ____.",
+        "options": [
+          "clair-obscur",
+          "cadre",
+          "profondeur de champ",
+          "contre-jour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک تضاد شدید سایه-روشن = clair-obscur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'assemblage des plans filmés pour créer la narration finale du film est le ____.",
+        "options": [
+          "montage",
+          "storyboard",
+          "steadicam",
+          "zoom"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ترکیب نماها برای روایت نهایی = montage."
+      },
+      {
+        "type": "mcq",
+        "question": "La série de dessins préparatoires qui visualise chaque plan avant le tournage est le ____.",
+        "options": [
+          "storyboard",
+          "étalonnage",
+          "fondu",
+          "mise au point"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طرح‌های آماده‌سازی صحنه‌ها = storyboard."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système de stabilisation qui permet à la caméra de se déplacer sans vibration est le ____.",
+        "options": [
+          "steadicam",
+          "champ-contrechamp",
+          "plan-séquence",
+          "travelling"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم لرزش‌گیر دوربین = steadicam."
+      },
+      {
+        "type": "mcq",
+        "question": "L'effet optique qui modifie la distance focale pour rapprocher ou éloigner le sujet est le ____.",
+        "options": [
+          "zoom",
+          "cadre",
+          "profondeur de champ",
+          "contre-jour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تغییر فاصله کانونی = zoom."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus de correction et d'harmonisation des couleurs en post-production est l'____.",
+        "options": [
+          "étalonnage",
+          "clair-obscur",
+          "montage",
+          "storyboard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اصلاح رنگ در پس‌تولید = étalonnage."
+      },
+      {
+        "type": "mcq",
+        "question": "La transition progressive qui fait disparaître ou apparaître une image est le ____.",
+        "options": [
+          "fondu",
+          "steadicam",
+          "zoom",
+          "étalonnage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گذار تدریجی تصویر = fondu."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action d'ajuster la netteté de l'image sur un sujet précis est la ____.",
+        "options": [
+          "mise au point",
+          "champ-contrechamp",
+          "plan-séquence",
+          "travelling"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تنظیم وضوح روی سوژه = mise au point."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique qui alterne les plans entre deux personnages qui se parlent est le ____.",
+        "options": [
+          "champ-contrechamp",
+          "cadre",
+          "profondeur de champ",
+          "contre-jour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تناوب نما بین دو شخصیت = champ-contrechamp."
+      },
+      {
+        "type": "binary",
+        "question": "Le plan-séquence est une scène filmée en plusieurs prises avec de nombreuses coupes au montage.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پلان‌سکانس (plan-séquence) بدون هیچ قطعی و در یک برداشت فیلم‌برداری می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le travelling nécessite généralement des rails ou un chariot pour déplacer la caméra.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تراولینگ (travelling) معمولاً به ریل یا چرخ‌دستی نیاز دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Une faible profondeur de champ signifie que seul le sujet principal est net, l'arrière-plan étant flou.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. عمق میدان کم یعنی فقط سوژه واضح و پس‌زمینه تار است."
+      },
+      {
+        "type": "binary",
+        "question": "Le storyboard est réalisé après le tournage pour organiser les plans au montage.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. استوری‌برد (storyboard) قبل از فیلم‌برداری برای برنامه‌ریزی تهیه می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le steadicam permet des mouvements de caméra fluides tout en suivant les acteurs en mouvement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. استدی‌کم (steadicam) حرکات روان هنگام تعقیب بازیگران را ممکن می‌سازد."
+      },
+      {
+        "type": "binary",
+        "question": "Le champ-contrechamp est utilisé principalement pour filmer des paysages et des décors.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. نما-ضد نما (champ-contrechamp) برای دیالوگ بین شخصیت‌ها استفاده می‌شود، نه مناظر."
+      }
+    ]
+  }
+}
