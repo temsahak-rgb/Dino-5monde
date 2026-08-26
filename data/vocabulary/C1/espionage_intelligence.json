@@ -1,0 +1,680 @@
+{
+  "id": "espionage_intelligence",
+  "level": "C1",
+  "theme": "Espionnage, services secrets et guerre froide",
+  "theme_fa": "جاسوسی، سرویس‌های مخفی و جنگ سرد",
+  "icon": "🕵️",
+  "inspiration": "La Taupe (Tinker Tailor Soldier Spy - Tomas Alfredson, 2011)",
+  "words": [
+    {
+      "fr": "l'espionnage",
+      "fa": "جاسوسی",
+      "emoji": "🕵️",
+      "difficulty": 4,
+      "ex": "L'espionnage est l'art de recueillir des informations secrètes.",
+      "ex_fa": "جاسوسی هنر جمع‌آوری اطلاعات محرمانه است."
+    },
+    {
+      "fr": "l'agent secret",
+      "fa": "مامور مخفی",
+      "emoji": "🕴️",
+      "difficulty": 3,
+      "ex": "L'agent secret opère sous une fausse identité à l'étranger.",
+      "ex_fa": "مامور مخفی با هویت جعلی در خارج از کشور فعالیت می‌کند."
+    },
+    {
+      "fr": "la taupe",
+      "fa": "نفوذی، جاسوس دوجانبه",
+      "emoji": "🦔",
+      "difficulty": 5,
+      "ex": "Une taupe soviétique a infiltré les plus hauts niveaux du MI6.",
+      "ex_fa": "یک جاسوس دوجانبه شوروی به سطوح عالی MI6 نفوذ کرده بود."
+    },
+    {
+      "fr": "le renseignement",
+      "fa": "اطلاعات (سرویس)",
+      "emoji": "📋",
+      "difficulty": 4,
+      "ex": "Le service de renseignement analyse les menaces contre l'État.",
+      "ex_fa": "سرویس اطلاعات، تهدیدات علیه دولت را تحلیل می‌کند."
+    },
+    {
+      "fr": "le code",
+      "fa": "رمز، کد",
+      "emoji": "🔢",
+      "difficulty": 3,
+      "ex": "Le code Morse était utilisé par les espions pendant la guerre.",
+      "ex_fa": "کد مورس توسط جاسوسان در طول جنگ استفاده می‌شد."
+    },
+    {
+      "fr": "la filature",
+      "fa": "تعقیب مخفیانه",
+      "emoji": "👣",
+      "difficulty": 5,
+      "ex": "La filature nocturne a révélé les contacts secrets du suspect.",
+      "ex_fa": "تعقیب شبانه، تماس‌های مخفی مظنون را آشکار کرد."
+    },
+    {
+      "fr": "le contre-espionnage",
+      "fa": "ضد جاسوسی",
+      "emoji": "🛡️",
+      "difficulty": 5,
+      "ex": "Le contre-espionnage traque les agents ennemis sur le territoire national.",
+      "ex_fa": "ضد جاسوسی به دنبال شکار ماموران دشمن در خاک کشور است."
+    },
+    {
+      "fr": "la mission",
+      "fa": "مأموریت",
+      "emoji": "🎯",
+      "difficulty": 3,
+      "ex": "La mission consistait à exfiltrer un scientifique dissident.",
+      "ex_fa": "مأموریت، خارج کردن یک دانشمند مخالف بود."
+    },
+    {
+      "fr": "l'indic",
+      "fa": "مخبر، خبرچین",
+      "emoji": "🗣️",
+      "difficulty": 5,
+      "ex": "L'indic a fourni des informations cruciales en échange d'argent.",
+      "ex_fa": "مخبر در ازای پول، اطلاعات حیاتی ارائه داد."
+    },
+    {
+      "fr": "la planque",
+      "fa": "مخفیگاه، پایگاه امن",
+      "emoji": "🏚️",
+      "difficulty": 4,
+      "ex": "Les espions se retrouvaient dans une planque discrète de Berlin.",
+      "ex_fa": "جاسوسان در یک مخفیگاه محتاطانه در برلین دیدار می‌کردند."
+    },
+    {
+      "fr": "le micro",
+      "fa": "شنود، میکروفون مخفی",
+      "emoji": "🎙️",
+      "difficulty": 4,
+      "ex": "Un micro miniature avait été caché dans le téléphone du bureau.",
+      "ex_fa": "یک میکروفون کوچک در تلفن دفتر پنهان شده بود."
+    },
+    {
+      "fr": "le cryptage",
+      "fa": "رمزنگاری",
+      "emoji": "🔐",
+      "difficulty": 5,
+      "ex": "Le cryptage des messages empêchait leur interception par l'ennemi.",
+      "ex_fa": "رمزنگاری پیام‌ها از شنود آن‌ها توسط دشمن جلوگیری می‌کرد."
+    },
+    {
+      "fr": "la trahison",
+      "fa": "خیانت",
+      "emoji": "💔",
+      "difficulty": 4,
+      "ex": "La trahison de l'agent a coûté la vie à plusieurs collègues.",
+      "ex_fa": "خیانت مامور، جان چندین همکار را گرفت."
+    },
+    {
+      "fr": "le dossier",
+      "fa": "پرونده",
+      "emoji": "📁",
+      "difficulty": 3,
+      "ex": "Le dossier classifié contenait des preuves accablantes.",
+      "ex_fa": "پرونده طبقه‌بندی‌شده حاوی شواهد سنگینی بود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La chasse à la taupe",
+      "text": "George Smiley est un ancien {{BLANK_2}} à la retraite, rappelé par le {{BLANK_4}} britannique. Une {{BLANK_12}} insupportable pèse sur les épaules du service : une {{BLANK_3}} soviétique s'est infiltrée au sommet de l'organisation. Sa {{BLANK_7}} est de retrouver le traître avant que d'autres secrets ne fuient. Il ouvre un vieux {{BLANK_14}} poussiéreux et analyse chaque {{BLANK_8}} suspect. Les méthodes modernes de {{BLANK_12}} numérique ont remplacé les vieux {{BLANK_5}}s manuscrits, mais la nature humaine reste inchangée. Smiley organise une {{BLANK_6}} discrète autour d'un diplomate. Un {{BLANK_9}} de bas étage lui révèle qu'une {{BLANK_10}} sûre existe près de Camden. Dans cette planque, un {{BLANK_11}} caché enregistre les conversations. Le {{BLANK_12}} des messages diplomatiques a été compromis, preuve d'une {{BLANK_13}} interne. La vérité éclatera lors d'un rendez-vous nocturne, où Smiley démasquera enfin le coupable.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "espionnage",
+          "options": [
+            "espionnage",
+            "agent secret",
+            "taupe",
+            "renseignement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "agent secret",
+          "options": [
+            "agent secret",
+            "code",
+            "filature",
+            "contre-espionnage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "taupe",
+          "options": [
+            "taupe",
+            "mission",
+            "indic",
+            "planque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "renseignement",
+          "options": [
+            "renseignement",
+            "micro",
+            "cryptage",
+            "trahison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "code",
+          "options": [
+            "code",
+            "dossier",
+            "espionnage",
+            "agent secret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "filature",
+          "options": [
+            "filature",
+            "taupe",
+            "renseignement",
+            "code"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "contre-espionnage",
+          "options": [
+            "contre-espionnage",
+            "mission",
+            "indic",
+            "planque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "indic",
+          "options": [
+            "indic",
+            "micro",
+            "cryptage",
+            "trahison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "indic",
+          "options": [
+            "indic",
+            "dossier",
+            "espionnage",
+            "agent secret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "planque",
+          "options": [
+            "planque",
+            "taupe",
+            "renseignement",
+            "code"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "micro",
+          "options": [
+            "micro",
+            "filature",
+            "contre-espionnage",
+            "mission"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "cryptage",
+          "options": [
+            "cryptage",
+            "indic",
+            "planque",
+            "micro"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "trahison",
+          "options": [
+            "trahison",
+            "dossier",
+            "espionnage",
+            "agent secret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "dossier",
+          "options": [
+            "dossier",
+            "taupe",
+            "renseignement",
+            "code"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les ombres de Whitehall",
+      "inspiration": "La Taupe (Tinker Tailor Soldier Spy - Tomas Alfredson, 2011)",
+      "text": "À peine Smiley eut-il nettoyé ses lunettes épaisses qu'il comprit que la {{BLANK_1}} moderne n'était plus qu'un jeu d'échecs joué dans les brouillards de Londres. Ce vieil {{BLANK_2}} fatigué, que ses supérieurs croyaient inoffensif, allait bientôt prouver que les vieux loups ont les dents plus acérées que les jeunes carriéristes. Une {{BLANK_3}} dormait au cœur même du {{BLANK_4}} britannique, un Judas qui vendait les secrets de l'Occident pour quelques roubles et une idéologie fanée. Dans un {{BLANK_14}} jauni par les années, il retrouva les traces d'un ancien {{BLANK_5}} soviétique que personne n'avait su déchiffrer. Sa {{BLANK_7}} officieuse consistait à démêler l'écheveau des mensonges, à remonter la {{BLANK_6}} des contacts jusqu'à identifier l'{{BLANK_9}} qui trahissait pour une poignée de billets sales. Il découvrit une {{BLANK_10}} abandonnée dans l'East End, où un {{BLANK_11}} microscopique capturait les murmures des amants et des traîtres. Le {{BLANK_12}} des communications diplomatiques avait été brisé, et cette {{BLANK_13}} silencieuse avait coûté la vie à des hommes intègres. Dans le brouillard automnal, Smiley attendit que la taupe sorte enfin de son terrier, sachant que la plus grande victoire n'est pas de tuer l'ennemi, mais de le regarder dans les yeux et de reconnaître en lui le reflet de nos propres compromissions.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "espionnage",
+          "options": [
+            "espionnage",
+            "agent secret",
+            "taupe",
+            "renseignement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "agent secret",
+          "options": [
+            "agent secret",
+            "code",
+            "filature",
+            "contre-espionnage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "taupe",
+          "options": [
+            "taupe",
+            "mission",
+            "indic",
+            "planque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "renseignement",
+          "options": [
+            "renseignement",
+            "micro",
+            "cryptage",
+            "trahison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "code",
+          "options": [
+            "code",
+            "dossier",
+            "espionnage",
+            "agent secret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "filature",
+          "options": [
+            "filature",
+            "taupe",
+            "renseignement",
+            "code"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "mission",
+          "options": [
+            "mission",
+            "contre-espionnage",
+            "indic",
+            "planque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "contre-espionnage",
+          "options": [
+            "contre-espionnage",
+            "micro",
+            "cryptage",
+            "trahison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "indic",
+          "options": [
+            "indic",
+            "dossier",
+            "espionnage",
+            "agent secret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "planque",
+          "options": [
+            "planque",
+            "taupe",
+            "renseignement",
+            "code"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "micro",
+          "options": [
+            "micro",
+            "filature",
+            "contre-espionnage",
+            "mission"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "cryptage",
+          "options": [
+            "cryptage",
+            "indic",
+            "planque",
+            "micro"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "trahison",
+          "options": [
+            "trahison",
+            "dossier",
+            "espionnage",
+            "agent secret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "dossier",
+          "options": [
+            "dossier",
+            "taupe",
+            "renseignement",
+            "code"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Espionnage et renseignement",
+    "title_fa": "آزمون : جاسوسی و اطلاعات",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'activité clandestine qui consiste à obtenir des informations secrètes d'un État ou d'une organisation ennemie est l'____.",
+        "options": [
+          "espionnage",
+          "agent secret",
+          "taupe",
+          "renseignement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعالیت پنهانی برای کسب اطلاعات = espionnage."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui travaille clandestinement pour un service de renseignement étranger, souvent sous couverture, est l'____.",
+        "options": [
+          "agent secret",
+          "code",
+          "filature",
+          "contre-espionnage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص مخفی سرویس اطلاعاتی = agent secret."
+      },
+      {
+        "type": "mcq",
+        "question": "Un esp infiltré au sein même d'une organisation pour transmettre des informations à l'ennemi est une ____.",
+        "options": [
+          "taupe",
+          "mission",
+          "indic",
+          "planque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جاسوس دوجانبه نفوذی در سازمان = taupe."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des informations confidentielles collectées et analysées pour la sécurité nationale est le ____.",
+        "options": [
+          "renseignement",
+          "micro",
+          "cryptage",
+          "trahison"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اطلاعات محرمانه امنیتی = renseignement."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système de signes convenus qui permet de rendre un message incompréhensible pour les non-initiés est le ____.",
+        "options": [
+          "code",
+          "dossier",
+          "espionnage",
+          "agent secret"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم علایم محرمانه = code."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de suivre discrètement une personne pour observer ses déplacements et ses contacts est la ____.",
+        "options": [
+          "filature",
+          "taupe",
+          "renseignement",
+          "code"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تعقیب پنهانی یک فرد = filature."
+      },
+      {
+        "type": "mcq",
+        "question": "Le service chargé de détecter et neutraliser les activités d'espionnage ennemies sur le territoire national est le ____.",
+        "options": [
+          "contre-espionnage",
+          "mission",
+          "indic",
+          "planque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سرویس خنثی‌سازی جاسوسی دشمن = contre-espionnage."
+      },
+      {
+        "type": "mcq",
+        "question": "La tâche opérationnelle précise confiée à un agent, avec des objectifs spécifiques, est la ____.",
+        "options": [
+          "mission",
+          "micro",
+          "cryptage",
+          "trahison"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وظیفه عملیاتی مشخص = mission."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui fournit des informations à la police ou aux services secrets, souvent contre rémunération, est l'____.",
+        "options": [
+          "indic",
+          "dossier",
+          "espionnage",
+          "agent secret"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خبرچین و مخبر = indic."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu secret et discret utilisé par les agents pour se cacher ou se rencontrer est la ____.",
+        "options": [
+          "planque",
+          "taupe",
+          "renseignement",
+          "code"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکان مخفی ملاقات = planque."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit appareil dissimulé qui permet d'enregistrer ou de transmettre des conversations à distance est le ____.",
+        "options": [
+          "micro",
+          "filature",
+          "contre-espionnage",
+          "mission"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه کوچک شنود = micro."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des techniques mathématiques qui protègent la confidentialité des communications numériques est le ____.",
+        "options": [
+          "cryptage",
+          "indic",
+          "planque",
+          "micro"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک‌های محافظت از پیام = cryptage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'acte par lequel une personne viole sa loyauté envers son pays ou son organisation au profit de l'ennemi est la ____.",
+        "options": [
+          "trahison",
+          "dossier",
+          "espionnage",
+          "agent secret"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل خیانت به کشور = trahison."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble de documents confidentiels relatifs à une affaire ou à une personne est le ____.",
+        "options": [
+          "dossier",
+          "taupe",
+          "renseignement",
+          "code"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه اسناد محرمانه = dossier."
+      },
+      {
+        "type": "binary",
+        "question": "La taupe est un agent qui travaille ouvertement pour les services secrets de son propre pays.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. جاسوس دوجانبه (taupe) به صورت مخفیانه برای دشمن کار می‌کند در حالی که در سازمان خود نفوذ کرده است."
+      },
+      {
+        "type": "binary",
+        "question": "La filature est une technique de surveillance qui consiste à suivre discrètement une personne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. filature تعقیب مخفیانه فرد مظنون است."
+      },
+      {
+        "type": "binary",
+        "question": "Le cryptage rend un message parfaitement lisible par n'importe quelle personne non autorisée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. رمزنگاری (cryptage) پیام را غیرقابل خواندن برای افراد غیرمجاز می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "L'indic est une personne qui fournit des informations aux services secrets, généralement contre rémunération.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. مخبر (indic) در ازای پول اطلاعات ارائه می‌دهد."
+      },
+      {
+        "type": "binary",
+        "question": "Le contre-espionnage vise à infiltrer les services secrets étrangers pour voler leurs informations.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ضد جاسوسی (contre-espionnage) وظیفه دفاع و خنثی‌سازی جاسوسان دشمن در خاک خودی را دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Une planque est un lieu sûr et secret utilisé par les agents clandestins.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. مخفیگاه (planque) مکان امنی برای ملاقات یا استراحت ماموران است."
+      }
+    ]
+  }
+}
