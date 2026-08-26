@@ -1,0 +1,680 @@
+{
+  "id": "chemistry_elements",
+  "level": "C1",
+  "theme": "Chimie, éléments et réactions moléculaires",
+  "theme_fa": "شیمی، عناصر و واکنش‌های مولکولی",
+  "icon": "🧪",
+  "inspiration": "Breaking Bad (Vince Gilligan, 2008-2013)",
+  "words": [
+    {
+      "fr": "la chimie",
+      "fa": "شیمی",
+      "emoji": "🧪",
+      "difficulty": 3,
+      "ex": "La chimie étudie la composition et les transformations de la matière.",
+      "ex_fa": "شیمی ترکیب و دگرگونی‌های ماده را مطالعه می‌کند."
+    },
+    {
+      "fr": "l'atome",
+      "fa": "اتم",
+      "emoji": "⚛️",
+      "difficulty": 3,
+      "ex": "L'atome est l'unité fondamentale de toute matière.",
+      "ex_fa": "اتم واحد بنیادین هر ماده‌ای است."
+    },
+    {
+      "fr": "la molécule",
+      "fa": "مولکول",
+      "emoji": "🔬",
+      "difficulty": 3,
+      "ex": "La molécule d'eau est composée de deux atomes d'hydrogène.",
+      "ex_fa": "مولکول آب از دو اتم هیدروژن تشکیل شده است."
+    },
+    {
+      "fr": "l'élément",
+      "fa": "عنصر",
+      "emoji": "🧱",
+      "difficulty": 3,
+      "ex": "Le tableau périodique classe tous les éléments connus.",
+      "ex_fa": "جدول تناوبی تمام عناصر شناخته‌شده را طبقه‌بندی می‌کند."
+    },
+    {
+      "fr": "la réaction",
+      "fa": "واکنش",
+      "emoji": "⚡",
+      "difficulty": 3,
+      "ex": "La réaction chimique transforme les réactifs en produits.",
+      "ex_fa": "واکنش شیمیایی واکنش‌دهنده‌ها را به فرآورده‌ها تبدیل می‌کند."
+    },
+    {
+      "fr": "le catalyseur",
+      "fa": "کاتالیزور",
+      "emoji": "🔥",
+      "difficulty": 4,
+      "ex": "Le catalyseur accélère la réaction sans être consommé.",
+      "ex_fa": "کاتالیزور واکنش را بدون مصرف شدن سرعت می‌بخشد."
+    },
+    {
+      "fr": "la solution",
+      "fa": "محلول",
+      "emoji": "💧",
+      "difficulty": 3,
+      "ex": "La solution saline contient du chlorure de sodium dissous.",
+      "ex_fa": "محلول نمکی شامل کلرید سدیم حل‌شده است."
+    },
+    {
+      "fr": "le précipité",
+      "fa": "رسوب",
+      "emoji": "⬇️",
+      "difficulty": 4,
+      "ex": "Un précipité blanc se forme au fond du bécher.",
+      "ex_fa": "یک رسوب سفید در ته بشر تشکیل می‌شود."
+    },
+    {
+      "fr": "l'oxydation",
+      "fa": "اکسیداسیون",
+      "emoji": "🔴",
+      "difficulty": 5,
+      "ex": "L'oxydation du fer provoque la formation de rouille.",
+      "ex_fa": "اکسیداسیون آهن باعث تشکیل زنگ‌زدگی می‌شود."
+    },
+    {
+      "fr": "la synthèse",
+      "fa": "سنتز، ترکیب",
+      "emoji": "🧬",
+      "difficulty": 4,
+      "ex": "La synthèse organique crée des molécules complexes.",
+      "ex_fa": "سنتز آلی مولکول‌های پیچیده خلق می‌کند."
+    },
+    {
+      "fr": "le composé",
+      "fa": "ترکیب شیمیایی",
+      "emoji": "🧫",
+      "difficulty": 4,
+      "ex": "Ce composé organique a des propriétés médicinales.",
+      "ex_fa": "این ترکیب آلی دارای خواص دارویی است."
+    },
+    {
+      "fr": "la distillation",
+      "fa": "تقطیر",
+      "emoji": "⚗️",
+      "difficulty": 4,
+      "ex": "La distillation sépare les liquides selon leur point d'ébullition.",
+      "ex_fa": "تقطیر مایعات را بر اساس نقطه جوششان جدا می‌کند."
+    },
+    {
+      "fr": "la concentration",
+      "fa": "غلظت",
+      "emoji": "📊",
+      "difficulty": 4,
+      "ex": "La concentration molaire s'exprime en moles par litre.",
+      "ex_fa": "غلظت مولی بر حسب مول در لیتر بیان می‌شود."
+    },
+    {
+      "fr": "l'isotope",
+      "fa": "ایزوتوپ",
+      "emoji": "☢️",
+      "difficulty": 5,
+      "ex": "Le carbone 14 est un isotope radioactif utilisé pour la datation.",
+      "ex_fa": "کربن ۱۴ یک ایزوتوپ رادیواکتیو برای تاریخ‌گذاری است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le professeur devenu chimiste",
+      "text": "Walter White est un professeur de {{BLANK_1}} surdiplômé mais sous-payé. Atteint d'un cancer, il décide d'utiliser ses connaissances pour gagner de l'argent. Il installe un laboratoire clandestin dans un camping-car. Là, il maîtrise parfaitement la {{BLANK_10}} de cristaux purs. Chaque {{BLANK_5}} est calculée avec une précision scientifique absolue. Il utilise un {{BLANK_6}} spécial pour accélérer le processus sans gaspiller de produit. L'{{BLANK_3}} clé contient un nombre précis d'{{BLANK_2}}s organisés en une structure unique. La {{BLANK_7}} obtenue doit être parfaitement limpide. Walter surveille la {{BLANK_13}} de chaque ingrédient pour obtenir un produit d'une pureté exceptionnelle. Quand la {{BLANK_12}} est terminée, il récupère les cristaux bleus. Parfois, un {{BLANK_8}} indésirable se forme et doit être éliminé. L'{{BLANK_9}} contrôlée des précurseurs est cruciale pour la qualité finale. Ce {{BLANK_11}} organique deviendra sa signature. Il consulte la table des {{BLANK_4}}s pour choisir le meilleur {{BLANK_14}} radioactif pour ses expériences. Son partenaire Jesse apprend que la chimie est l'étude du changement : la transformation de la matière, mais aussi celle d'un homme ordinaire en criminel redoutable.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "chimie",
+          "options": [
+            "chimie",
+            "atome",
+            "molécule",
+            "élément"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "atomes",
+          "options": [
+            "atomes",
+            "molécules",
+            "réactions",
+            "catalyseurs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "molécule",
+          "options": [
+            "molécule",
+            "solution",
+            "précipité",
+            "oxydation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "éléments",
+          "options": [
+            "éléments",
+            "synthèses",
+            "composés",
+            "distillations"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "réaction",
+          "options": [
+            "réaction",
+            "concentration",
+            "isotope",
+            "chimie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "catalyseur",
+          "options": [
+            "catalyseur",
+            "précipité",
+            "élément",
+            "atome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "solution",
+          "options": [
+            "solution",
+            "oxydation",
+            "synthèse",
+            "distillation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "précipité",
+          "options": [
+            "précipité",
+            "composé",
+            "concentration",
+            "isotope"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "oxydation",
+          "options": [
+            "oxydation",
+            "réaction",
+            "solution",
+            "molécule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "synthèse",
+          "options": [
+            "synthèse",
+            "catalyseur",
+            "élément",
+            "atome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "composé",
+          "options": [
+            "composé",
+            "précipité",
+            "distillation",
+            "concentration"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "distillation",
+          "options": [
+            "distillation",
+            "oxydation",
+            "synthèse",
+            "réaction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "concentration",
+          "options": [
+            "concentration",
+            "isotope",
+            "chimie",
+            "solution"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "isotope",
+          "options": [
+            "isotope",
+            "élément",
+            "atome",
+            "catalyseur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La transformation du cristal bleu",
+      "inspiration": "Breaking Bad (Vince Gilligan, 2008-2013)",
+      "text": "À peine Walter White eut-il refermé la porte du camping-car que le désert du Nouveau-Mexique devint sa cathédrale et son royaume. La {{BLANK_1}} n'était plus cette science timide enseignée à des adolescents endormis : c'était désormais une alchimie souveraine, un pouvoir de vie et de mort. Chaque {{BLANK_2}} de matière obéissait à sa volonté, chaque {{BLANK_3}} dansait selon ses ordres silencieux. Il ne cuisinait pas un simple produit : il accomplissait la {{BLANK_10}} parfaite, un {{BLANK_11}} d'une pureté absolue qui brillait comme un saphir volé au ciel. Le {{BLANK_6}} invisible accélérait le temps de la transformation, tandis que la {{BLANK_12}} séparait l'ivraie du grain, l'impur du sublime. Dans la {{BLANK_7}} limpide, il lisait son propre destin, et la {{BLANK_13}} de chaque geste déterminait la frontière entre le génie et la catastrophe. L'{{BLANK_9}} rongeait les métaux comme le cancer rongeait ses poumons, rappel cruel que tout se transforme et rien ne se perd. Parfois, un {{BLANK_8}} trouble venait souiller son œuvre, témoin minéral de ses nuits blanches. Il choisissait chaque {{BLANK_4}} comme un général choisit ses soldats, et la {{BLANK_5}} finale explosait en silence dans le laboratoire improvisé. Même l'{{BLANK_14}} du temps semblait se plier à sa volonté, car dans ce désert, il était devenu le seul maître des transformations. Jesse regardait les cristaux bleus scintiller comme des étoiles tombées, sans comprendre que chaque gramme de cette pureté était un pas de plus vers l'abîme. Car la chimie, murmurait Walter, est l'étude du changement : et lui, il avait changé pour toujours.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "chimie",
+          "options": [
+            "chimie",
+            "atome",
+            "molécule",
+            "élément"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "atome",
+          "options": [
+            "atome",
+            "molécule",
+            "réaction",
+            "catalyseur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "molécule",
+          "options": [
+            "molécule",
+            "solution",
+            "précipité",
+            "oxydation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "élément",
+          "options": [
+            "élément",
+            "synthèse",
+            "composé",
+            "distillation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "réaction",
+          "options": [
+            "réaction",
+            "concentration",
+            "isotope",
+            "chimie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "catalyseur",
+          "options": [
+            "catalyseur",
+            "précipité",
+            "élément",
+            "atome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "solution",
+          "options": [
+            "solution",
+            "oxydation",
+            "synthèse",
+            "distillation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "précipité",
+          "options": [
+            "précipité",
+            "composé",
+            "concentration",
+            "isotope"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "oxydation",
+          "options": [
+            "oxydation",
+            "réaction",
+            "solution",
+            "molécule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "synthèse",
+          "options": [
+            "synthèse",
+            "catalyseur",
+            "élément",
+            "atome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "composé",
+          "options": [
+            "composé",
+            "précipité",
+            "distillation",
+            "concentration"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "distillation",
+          "options": [
+            "distillation",
+            "oxydation",
+            "synthèse",
+            "réaction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "concentration",
+          "options": [
+            "concentration",
+            "isotope",
+            "chimie",
+            "solution"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "isotope",
+          "options": [
+            "isotope",
+            "élément",
+            "atome",
+            "catalyseur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Chimie et éléments",
+    "title_fa": "آزمون : شیمی و عناصر",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie la composition, la structure et les transformations de la matière est la ____.",
+        "options": [
+          "chimie",
+          "atome",
+          "molécule",
+          "élément"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه ماده و تغییرات آن = chimie."
+      },
+      {
+        "type": "mcq",
+        "question": "La plus petite particule de matière qui conserve les propriétés d'un élément chimique est l'____.",
+        "options": [
+          "atome",
+          "molécule",
+          "réaction",
+          "catalyseur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کوچکترین ذره ماده = atome."
+      },
+      {
+        "type": "mcq",
+        "question": "L'assemblage d'au moins deux atomes liés chimiquement, formant l'unité de base d'un composé, est la ____.",
+        "options": [
+          "molécule",
+          "solution",
+          "précipité",
+          "oxydation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه‌ای از اتم‌های متصل = molécule."
+      },
+      {
+        "type": "mcq",
+        "question": "Une substance pure constituée d'un seul type d'atome, répertoriée dans le tableau périodique, est un ____.",
+        "options": [
+          "élément",
+          "synthèse",
+          "composé",
+          "distillation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده خالص با یک نوع اتم = élément."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus par lequel des substances (réactifs) se transforment en nouvelles substances (produits) est une ____.",
+        "options": [
+          "réaction",
+          "concentration",
+          "isotope",
+          "chimie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرآیند تبدیل مواد به یکدیگر = réaction."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance qui accélère une réaction chimique sans être consommée ni modifiée dans le processus est le ____.",
+        "options": [
+          "catalyseur",
+          "précipité",
+          "élément",
+          "atome"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده‌ای که واکنش را سرعت می‌بخشد = catalyseur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mélange homogène obtenu en dissolvant une ou plusieurs substances dans un solvant (souvent l'eau) est une ____.",
+        "options": [
+          "solution",
+          "oxydation",
+          "synthèse",
+          "distillation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مخلوط همگن حل‌شده = solution."
+      },
+      {
+        "type": "mcq",
+        "question": "Le solide insoluble qui se forme et se dépose lors d'une réaction chimique en solution est le ____.",
+        "options": [
+          "précipité",
+          "composé",
+          "concentration",
+          "isotope"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جامد ته‌نشین‌شده در واکنش = précipité."
+      },
+      {
+        "type": "mcq",
+        "question": "La réaction chimique au cours de laquelle une substance perd des électrons, souvent en se combinant avec l'oxygène, est l'____.",
+        "options": [
+          "oxydation",
+          "réaction",
+          "solution",
+          "molécule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واکنش از دست دادن الکترون = oxydation."
+      },
+      {
+        "type": "mcq",
+        "question": "L'opération qui consiste à fabriquer un composé chimique complexe à partir de substances plus simples est la ____.",
+        "options": [
+          "synthèse",
+          "catalyseur",
+          "élément",
+          "atome"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ساخت ماده پیچیده از مواد ساده = synthèse."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance pure formée de deux ou plusieurs éléments chimiques combinés dans des proportions fixes est un ____.",
+        "options": [
+          "composé",
+          "précipité",
+          "distillation",
+          "concentration"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده خالص از چند عنصر = composé."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique de séparation des composants d'un mélange liquide basée sur leurs différences de points d'ébullition est la ____.",
+        "options": [
+          "distillation",
+          "oxydation",
+          "synthèse",
+          "réaction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جداسازی بر اساس نقطه جوش = distillation."
+      },
+      {
+        "type": "mcq",
+        "question": "La quantité de soluté dissous dans un volume donné de solution, souvent exprimée en moles par litre, est la ____.",
+        "options": [
+          "concentration",
+          "isotope",
+          "chimie",
+          "solution"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مقدار ماده حل‌شده در حجم مشخص = concentration."
+      },
+      {
+        "type": "mcq",
+        "question": "Une variante d'un élément chimique qui a le même nombre de protons mais un nombre différent de neutrons est un ____.",
+        "options": [
+          "isotope",
+          "élément",
+          "atome",
+          "catalyseur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گونه‌ای از عنصر با تعداد نوترون متفاوت = isotope."
+      },
+      {
+        "type": "binary",
+        "question": "L'atome et la molécule désignent exactement la même entité chimique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اتم کوچکترین واحد است؛ مولکول از اتصال دو یا چند اتم تشکیل می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Un catalyseur est consommé et transformé pendant la réaction chimique qu'il accélère.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کاتالیزور واکنش را سرعت می‌بخشد اما خودش مصرف یا تغییر نمی‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "L'oxydation est une réaction où une substance perd des électrons, souvent en réagissant avec l'oxygène.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اکسیداسیون واکنشی است که در آن ماده الکترون از دست می‌دهد."
+      },
+      {
+        "type": "binary",
+        "question": "Un précipité est un solide insoluble qui se forme lors d'une réaction en solution et se dépose au fond du récipient.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. رسوب جامدی است که در واکنش تشکیل و ته‌نشین می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La distillation permet de séparer les composants d'un mélange liquide en exploitant leurs températures d'ébullition différentes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تقطیر مایعات را بر اساس تفاوت نقطه جوش جدا می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Un isotope est un élément chimique complètement différent, avec un nombre de protons différent.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ایزوتوپ‌های یک عنصر تعداد پروتون یکسان اما تعداد نوترون متفاوت دارند."
+      }
+    ]
+  }
+}
