@@ -1,0 +1,680 @@
+{
+  "id": "philosophy_existentialism",
+  "level": "C1",
+  "theme": "Philosophie, existentialisme et pensée critique",
+  "theme_fa": "فلسفه، اگزیستانسیالیسم و تفکر انتقادی",
+  "icon": "🦉",
+  "inspiration": "Le Septième Sceau (Ingmar Bergman, 1957)",
+  "words": [
+    {
+      "fr": "l'existentialisme",
+      "fa": "اگزیستانسیالیسم (اصالت وجود)",
+      "emoji": "🚶",
+      "difficulty": 5,
+      "ex": "Sartre est la figure principale de l'existentialisme français.",
+      "ex_fa": "سارتر چهره اصلی اگزیستانسیالیسم فرانسوی است."
+    },
+    {
+      "fr": "l'absurde",
+      "fa": "پوچی، امر ابزورد",
+      "emoji": "🎲",
+      "difficulty": 5,
+      "ex": "Camus explore le sentiment de l'absurde face à la mort.",
+      "ex_fa": "کامو احساس پوچی را در برابر مرگ کاوش می‌کند."
+    },
+    {
+      "fr": "la métaphysique",
+      "fa": "متافیزیک (مابعدالطبیعه)",
+      "emoji": "🌌",
+      "difficulty": 5,
+      "ex": "La métaphysique s'interroge sur la nature profonde de la réalité.",
+      "ex_fa": "متافیزیک درباره ماهیت عمیق واقعیت می‌پرسد."
+    },
+    {
+      "fr": "le nihilisme",
+      "fa": "نهیلیسم (پوچ‌گرایی)",
+      "emoji": "🕳️",
+      "difficulty": 5,
+      "ex": "Le nihilisme refuse toute valeur morale ou religieuse absolue.",
+      "ex_fa": "نهیلیسم هرگونه ارزش اخلاقی یا دینی مطلق را رد می‌کند."
+    },
+    {
+      "fr": "l'éthique",
+      "fa": "اخلاق، اتیک",
+      "emoji": "⚖️",
+      "difficulty": 4,
+      "ex": "L'éthique de Kant repose sur l'impératif catégorique.",
+      "ex_fa": "اخلاق کانت بر امر مطلق استوار است."
+    },
+    {
+      "fr": "le libre arbitre",
+      "fa": "اختیار، اراده آزاد",
+      "emoji": "🕊️",
+      "difficulty": 5,
+      "ex": "Le libre arbitre est la capacité de choisir sans contrainte.",
+      "ex_fa": "اختیار، توانایی انتخاب بدون اجبار است."
+    },
+    {
+      "fr": "la phénoménologie",
+      "fa": "پدیدارشناسی",
+      "emoji": "👁️",
+      "difficulty": 5,
+      "ex": "Husserl a fondé la phénoménologie pour étudier la conscience.",
+      "ex_fa": "هوسرل پدیدارشناسی را برای مطالعه آگاهی بنیان نهاد."
+    },
+    {
+      "fr": "le stoïcisme",
+      "fa": "رواقی‌گری",
+      "emoji": "🗿",
+      "difficulty": 4,
+      "ex": "Le stoïcisme enseigne à accepter ce qu'on ne peut pas changer.",
+      "ex_fa": "رواقی‌گری می‌آموزد که آنچه را نمی‌توان تغییر داد بپذیریم."
+    },
+    {
+      "fr": "l'épistémologie",
+      "fa": "شناخت‌شناسی",
+      "emoji": "🧠",
+      "difficulty": 5,
+      "ex": "L'épistémologie étudie la nature et les limites de la connaissance.",
+      "ex_fa": "شناخت‌شناسی ماهیت و حدود دانش را بررسی می‌کند."
+    },
+    {
+      "fr": "la dialectique",
+      "fa": "دیالکتیک (هنر استدلال)",
+      "emoji": "🗣️",
+      "difficulty": 5,
+      "ex": "La dialectique hégélienne procède par thèse, antithèse et synthèse.",
+      "ex_fa": "دیالکتیک هگلی از طریق تز، آنتی‌تز و سنتز پیش می‌رود."
+    },
+    {
+      "fr": "le syllogisme",
+      "fa": "قیاس منطقی",
+      "emoji": "📐",
+      "difficulty": 5,
+      "ex": "Le syllogisme d'Aristote déduit une conclusion de deux prémisses.",
+      "ex_fa": "قیاس ارسطو یک نتیجه را از دو مقدمه استنتاج می‌کند."
+    },
+    {
+      "fr": "l'empirisme",
+      "fa": "تجربه‌گرایی",
+      "emoji": "🔬",
+      "difficulty": 5,
+      "ex": "L'empirisme affirme que toute connaissance vient des sens.",
+      "ex_fa": "تجربه‌گرایی تأکید می‌کند که تمام دانش از حواس می‌آید."
+    },
+    {
+      "fr": "le déterminisme",
+      "fa": "جبرگرایی",
+      "emoji": "⚙️",
+      "difficulty": 5,
+      "ex": "Le déterminisme scientifique nie le hasard dans l'univers.",
+      "ex_fa": "جبرگرایی علمی، تصادف را در جهان انکار می‌کند."
+    },
+    {
+      "fr": "l'angoisse",
+      "fa": "اضطراب وجودی",
+      "emoji": "😰",
+      "difficulty": 4,
+      "ex": "Kierkegaard décrit l'angoisse comme le vertige du possible.",
+      "ex_fa": "کرکگور اضطراب را به عنوان سرگیجه امر ممکن توصیف می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'étudiant en quête de sens",
+      "text": "Antoine est étudiant en philosophie à la Sorbonne. Il étudie la {{BLANK_3}} pour comprendre la nature profonde de la réalité et de l'être. Il s'intéresse particulièrement à l'{{BLANK_1}} de Sartre, qui affirme que l'homme est condamné à être libre. Cette idée soulève la grande question du {{BLANK_6}} humain face au {{BLANK_13}} rigide des lois de la physique. Son professeur utilise la {{BLANK_10}} socratique pour faire émerger la vérité par le débat contradictoire. Parfois, il construit un {{BLANK_11}} logique rigoureux pour prouver ses théories. Antoine rejette fermement le {{BLANK_4}} qui nie tout sens à l'existence, et préfère l'{{BLANK_5}} qui guide l'action morale au quotidien. Il lit Camus et le mythe de Sisyphe, symbole parfait de l'{{BLANK_2}} de la condition humaine. Face à la souffrance inévitable, il admire le {{BLANK_8}} antique qui enseigne l'acceptation sereine du destin. L'{{BLANK_12}} de Locke lui apprend que la connaissance vient uniquement de l'expérience sensorielle, tandis que la {{BLANK_7}} de Husserl étudie la structure pure de la conscience. Parfois, une profonde {{BLANK_14}} existentielle l'envahit au cœur de la nuit, mais la recherche éternelle de sens le maintient éveillé.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "existentialisme",
+          "options": [
+            "existentialisme",
+            "stoïcisme",
+            "empirisme",
+            "absurde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "absurde",
+          "options": [
+            "absurde",
+            "syllogisme",
+            "éthique",
+            "métaphysique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "métaphysique",
+          "options": [
+            "métaphysique",
+            "phénoménologie",
+            "dialectique",
+            "angoisse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "nihilisme",
+          "options": [
+            "nihilisme",
+            "libre arbitre",
+            "déterminisme",
+            "épistémologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "éthique",
+          "options": [
+            "éthique",
+            "absurde",
+            "stoïcisme",
+            "syllogisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "libre arbitre",
+          "options": [
+            "libre arbitre",
+            "nihilisme",
+            "empirisme",
+            "angoisse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "phénoménologie",
+          "options": [
+            "phénoménologie",
+            "dialectique",
+            "métaphysique",
+            "déterminisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "stoïcisme",
+          "options": [
+            "stoïcisme",
+            "existentialisme",
+            "épistémologie",
+            "absurde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "épistémologie",
+          "options": [
+            "épistémologie",
+            "syllogisme",
+            "éthique",
+            "phénoménologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "dialectique",
+          "options": [
+            "dialectique",
+            "angoisse",
+            "nihilisme",
+            "libre arbitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "syllogisme",
+          "options": [
+            "syllogisme",
+            "stoïcisme",
+            "empirisme",
+            "absurde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "empirisme",
+          "options": [
+            "empirisme",
+            "déterminisme",
+            "métaphysique",
+            "dialectique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "déterminisme",
+          "options": [
+            "déterminisme",
+            "angoisse",
+            "éthique",
+            "existentialisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "angoisse",
+          "options": [
+            "angoisse",
+            "phénoménologie",
+            "syllogisme",
+            "nihilisme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'échiquier de la Mort",
+      "inspiration": "Le Septième Sceau (Ingmar Bergman, 1957)",
+      "text": "À peine le chevalier Antonius Block eut-il posé son roi sur l'échiquier de pierre que la Mort, drapée de noir, s'assit face à lui sur la plage brumeuse de la Baltique. Nous étions au XIVe siècle, et la peste dévorait l'Europe sans pitié. Le chevalier, de retour des croisades, sentait en lui une {{BLANK_14}} métaphysique que nulle prière d'église ne pouvait apaiser. Il défia la Mort aux échecs pour gagner du temps, cherchant désespérément un acte de pur {{BLANK_6}} avant que le {{BLANK_13}} implacable de la maladie ne l'engloutisse. Tout autour de lui, les flagellants hurlaient dans les villages, incarnant un {{BLANK_4}} désespéré, tandis que les prêtres brûlaient des femmes au nom d'une {{BLANK_5}} totalement dévoyée par la peur. Block, lui, cherchait Dieu dans la {{BLANK_3}}, mais ne trouvait que le silence glacé des étoiles et l'indifférence du cosmos. Son écuyer, Jöns, incarnait un {{BLANK_8}} goguenard et terrestre, acceptant la misère du monde sans illusion, trouvant du réconfort dans une simple poire et un bol de lait frais. Face à l'horreur de la peste, la {{BLANK_10}} savante des théologiens semblait dérisoire, et le plus beau {{BLANK_11}} aristotélicien s'effondrait devant l'agonie silencieuse d'un enfant. Block réalisait avec amertume que l'{{BLANK_12}}, fondé sur les seuls sens, ne pouvait prouver l'existence de l'âme, et que la {{BLANK_7}} de la conscience humaine se heurtait au mur infranchissable de la finitude. La vie lui apparaissait soudain dans toute sa nudité tragique, frappée par l'{{BLANK_2}} d'un destin aveugle qui fauchait le juste et le coupable sans distinction. Pourtant, en partageant des fraises sauvages et du lait avec une jeune famille de bateleurs innocents, il comprit enfin que l'{{BLANK_1}} ne se trouvait pas dans les cieux muets, mais dans l'amour simple et concret des humains qui se protègent les uns les autres. Quand la Mort vint enfin frapper à la porte du château pour la danse macabre finale, Block avait accompli son unique acte de sens absolu : il avait sauvé une vie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "existentialisme",
+          "options": [
+            "existentialisme",
+            "stoïcisme",
+            "empirisme",
+            "absurde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "absurde",
+          "options": [
+            "absurde",
+            "syllogisme",
+            "éthique",
+            "métaphysique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "métaphysique",
+          "options": [
+            "métaphysique",
+            "phénoménologie",
+            "dialectique",
+            "angoisse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "nihilisme",
+          "options": [
+            "nihilisme",
+            "libre arbitre",
+            "déterminisme",
+            "épistémologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "éthique",
+          "options": [
+            "éthique",
+            "absurde",
+            "stoïcisme",
+            "syllogisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "libre arbitre",
+          "options": [
+            "libre arbitre",
+            "nihilisme",
+            "empirisme",
+            "angoisse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "phénoménologie",
+          "options": [
+            "phénoménologie",
+            "dialectique",
+            "métaphysique",
+            "déterminisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "stoïcisme",
+          "options": [
+            "stoïcisme",
+            "existentialisme",
+            "épistémologie",
+            "absurde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "épistémologie",
+          "options": [
+            "épistémologie",
+            "syllogisme",
+            "éthique",
+            "phénoménologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "dialectique",
+          "options": [
+            "dialectique",
+            "angoisse",
+            "nihilisme",
+            "libre arbitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "syllogisme",
+          "options": [
+            "syllogisme",
+            "stoïcisme",
+            "empirisme",
+            "absurde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "empirisme",
+          "options": [
+            "empirisme",
+            "déterminisme",
+            "métaphysique",
+            "dialectique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "déterminisme",
+          "options": [
+            "déterminisme",
+            "angoisse",
+            "éthique",
+            "existentialisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "angoisse",
+          "options": [
+            "angoisse",
+            "phénoménologie",
+            "syllogisme",
+            "nihilisme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Philosophie et grands courants",
+    "title_fa": "آزمون : فلسفه و مکاتب بزرگ",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le courant philosophique qui affirme que l'existence précède l'essence et que l'homme est totalement responsable de ses choix est l'____.",
+        "options": [
+          "existentialisme",
+          "stoïcisme",
+          "empirisme",
+          "absurde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکتبی که می‌گوید وجود بر ماهیت مقدم است = existentialisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le concept développé par Albert Camus pour décrire le conflit entre la quête de sens de l'homme et le silence du monde est l'____.",
+        "options": [
+          "absurde",
+          "syllogisme",
+          "éthique",
+          "métaphysique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تضاد بین جستجوی معنا و سکوت جهان = absurde."
+      },
+      {
+        "type": "mcq",
+        "question": "La branche de la philosophie qui étudie les principes fondamentaux de l'être, de la réalité et de l'existence est la ____.",
+        "options": [
+          "métaphysique",
+          "phénoménologie",
+          "dialectique",
+          "angoisse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شاخه‌ای که ماهیت هستی و واقعیت را بررسی می‌کند = métaphysique."
+      },
+      {
+        "type": "mcq",
+        "question": "La doctrine philosophique qui nie toute valeur morale, religieuse ou politique absolue et tout sens à la vie est le ____.",
+        "options": [
+          "nihilisme",
+          "libre arbitre",
+          "déterminisme",
+          "épistémologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انکار هرگونه ارزش مطلق و معنا = nihilisme."
+      },
+      {
+        "type": "mcq",
+        "question": "La discipline philosophique qui réfléchit sur les valeurs morales, le bien, le mal et la conduite humaine est l'____.",
+        "options": [
+          "éthique",
+          "absurde",
+          "stoïcisme",
+          "syllogisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تأمل درباره ارزش‌های اخلاقی = éthique."
+      },
+      {
+        "type": "mcq",
+        "question": "La capacité de la volonté humaine à faire des choix sans être déterminée par des causes extérieures est le ____.",
+        "options": [
+          "libre arbitre",
+          "nihilisme",
+          "empirisme",
+          "angoisse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توانایی انتخاب آزادانه بدون اجبار = libre arbitre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étude descriptive des phénomènes tels qu'ils apparaissent à la conscience, fondée par Husserl, est la ____.",
+        "options": [
+          "phénoménologie",
+          "dialectique",
+          "métaphysique",
+          "déterminisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مطالعه پدیده‌ها آن‌گونه که در آگاهی ظاهر می‌شوند = phénoménologie."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette école philosophique antique enseigne la maîtrise de soi, la vertu et l'acceptation sereine du destin est le ____.",
+        "options": [
+          "stoïcisme",
+          "existentialisme",
+          "épistémologie",
+          "absurde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکتب باستانی تسلط بر نفس و پذیرش سرنوشت = stoïcisme."
+      },
+      {
+        "type": "mcq",
+        "question": "La branche de la philosophie qui s'interroge sur la nature, les sources et les limites de la connaissance scientifique est l'____.",
+        "options": [
+          "épistémologie",
+          "syllogisme",
+          "éthique",
+          "phénoménologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بررسی ماهیت و حدود دانش = épistémologie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art du dialogue et de la confrontation des idées opposées pour faire émerger la vérité est la ____.",
+        "options": [
+          "dialectique",
+          "angoisse",
+          "nihilisme",
+          "libre arbitre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر تقابل آرا برای کشف حقیقت = dialectique."
+      },
+      {
+        "type": "mcq",
+        "question": "Le raisonnement logique composé de deux prémisses (majeure et mineure) et d'une conclusion est le ____.",
+        "options": [
+          "syllogisme",
+          "stoïcisme",
+          "empirisme",
+          "absurde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استدلال منطقی با دو مقدمه و یک نتیجه = syllogisme."
+      },
+      {
+        "type": "mcq",
+        "question": "La théorie selon laquelle toute connaissance humaine provient exclusivement de l'expérience sensorielle est l'____.",
+        "options": [
+          "empirisme",
+          "déterminisme",
+          "métaphysique",
+          "dialectique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نظریه منشأ حسی تمام دانش‌ها = empirisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le principe selon lequel tous les événements de l'univers sont la conséquence nécessaire de causes antérieures est le ____.",
+        "options": [
+          "déterminisme",
+          "angoisse",
+          "éthique",
+          "existentialisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اصل علیت ضروری تمام رویدادها = déterminisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sentiment profond de vertige et d'inquiétude face à la liberté et aux possibilités de l'existence est l'____.",
+        "options": [
+          "angoisse",
+          "phénoménologie",
+          "syllogisme",
+          "nihilisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "احساس دلهره و سرگیجه در برابر آزادی = angoisse."
+      },
+      {
+        "type": "binary",
+        "question": "Le déterminisme et le libre arbitre sont des concepts philosophiques parfaitement compatibles et identiques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. جبرگرایی اختیار را نفی می‌کند، این دو در تضاد هستند."
+      },
+      {
+        "type": "binary",
+        "question": "L'épistémologie est la discipline qui étudie la beauté et l'art.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. معرفت‌شناسی (épistémologie) درباره دانش است، زیبایی‌شناسی (esthétique) درباره هنر است."
+      },
+      {
+        "type": "binary",
+        "question": "Le syllogisme est une forme de raisonnement déductif inventée par Aristote.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. قیاس منطقی (syllogisme) توسط ارسطو فرموله شد."
+      },
+      {
+        "type": "binary",
+        "question": "L'existentialisme de Sartre soutient que la nature humaine est fixée à la naissance par Dieu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سارتر معتقد بود «وجود بر ماهیت مقدم است» و انسان خودش را می‌سازد."
+      },
+      {
+        "type": "binary",
+        "question": "Le stoïcisme recommande de lutter violemment contre le destin et de refuser toute douleur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. رواقی‌گری پذیرش آرام سرنوشت و کنترل واکنش‌های درونی را توصیه می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le nihilisme est une attitude philosophique qui affirme que la vie possède un sens absolu et universel.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. نهیلیسم دقیقاً فقدان معنای ذاتی و ارزش‌های مطلق را مطرح می‌کند."
+      }
+    ]
+  }
+}
