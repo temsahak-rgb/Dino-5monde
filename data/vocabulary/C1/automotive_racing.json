@@ -1,0 +1,672 @@
+{
+  "id": "automotive_racing",
+  "level": "C1",
+  "theme": "Automobile, ingénierie et courses mécaniques",
+  "theme_fa": "خودروسازی، مهندسی و مسابقات اتومبیل‌رانی",
+  "icon": "🏎️",
+  "inspiration": "Le Mans 66 (Ford v Ferrari - James Mangold, 2019)",
+  "words": [
+    {
+      "fr": "le châssis",
+      "fa": "شاسی",
+      "emoji": "🏗️",
+      "difficulty": 4,
+      "ex": "Le châssis tubulaire assure la rigidité de la voiture de course.",
+      "ex_fa": "شاسی لوله‌ای، استحکام خودروی مسابقه‌ای را تضمین می‌کند."
+    },
+    {
+      "fr": "le vilebrequin",
+      "fa": "میل‌لنگ",
+      "emoji": "⚙️",
+      "difficulty": 5,
+      "ex": "Le vilebrequin transforme le mouvement linéaire en rotation.",
+      "ex_fa": "میل‌لنگ حرکت خطی را به چرخشی تبدیل می‌کند."
+    },
+    {
+      "fr": "la carrosserie",
+      "fa": "بدنه خودرو",
+      "emoji": "🚗",
+      "difficulty": 3,
+      "ex": "La carrosserie en aluminium a été sculptée en soufflerie.",
+      "ex_fa": "بدنه آلومینیومی در تونل باد فرم داده شده است."
+    },
+    {
+      "fr": "l'aérodynamisme",
+      "fa": "آیرودینامیک",
+      "emoji": "💨",
+      "difficulty": 4,
+      "ex": "L'aérodynamisme est crucial pour atteindre les 300 km/h.",
+      "ex_fa": "آیرودینامیک برای رسیدن به سرعت ۳۰۰ کیلومتر بر ساعت حیاتی است."
+    },
+    {
+      "fr": "la cylindrée",
+      "fa": "حجم موتور",
+      "emoji": "📏",
+      "difficulty": 4,
+      "ex": "Ce moteur V8 a une cylindrée de sept litres.",
+      "ex_fa": "این موتور V8 دارای حجم هفت لیتر است."
+    },
+    {
+      "fr": "le turbocompresseur",
+      "fa": "توربوشارژر",
+      "emoji": "🌪️",
+      "difficulty": 5,
+      "ex": "Le turbocompresseur force l'air dans la chambre de combustion.",
+      "ex_fa": "توربوشارژر هوا را به درون محفظه احتراق می‌راند."
+    },
+    {
+      "fr": "le différentiel",
+      "fa": "دیفرانسیل",
+      "emoji": "🔄",
+      "difficulty": 5,
+      "ex": "Le différentiel permet aux roues de tourner à des vitesses différentes dans les virages.",
+      "ex_fa": "دیفرانسیل به چرخ‌ها اجازه می‌دهد در پیچ‌ها با سرعت‌های متفاوتی بچرخند."
+    },
+    {
+      "fr": "l'embrayage",
+      "fa": "کلاچ",
+      "emoji": "🦶",
+      "difficulty": 4,
+      "ex": "Il a brûlé l'embrayage en démarrant trop brutalement.",
+      "ex_fa": "او با شروع حرکت بیش از حد ناگهانی، کلاچ را سوزاند."
+    },
+    {
+      "fr": "le carburateur",
+      "fa": "کاربراتو",
+      "emoji": "⛽",
+      "difficulty": 5,
+      "ex": "Les mécaniciens ont réglé le carburateur pour enrichir le mélange.",
+      "ex_fa": "مکانیک‌ها کاربراتور را برای غنی‌سازی مخلوط تنظیم کردند."
+    },
+    {
+      "fr": "le pot d'échappement",
+      "fa": "اگزوز",
+      "emoji": "💨",
+      "difficulty": 3,
+      "ex": "Le rugissement du pot d'échappement résonne dans la ligne droite.",
+      "ex_fa": "غرش اگزوز در مسیر مستقیم طنین‌انداز می‌شود."
+    },
+    {
+      "fr": "la suspension",
+      "fa": "سیستم تعلیق، فنربندی",
+      "emoji": "🔧",
+      "difficulty": 4,
+      "ex": "La suspension absorbe les chocs sur les vibreurs du circuit.",
+      "ex_fa": "سیستم تعلیق ضربه‌های روی لبه‌های پیست را جذب می‌کند."
+    },
+    {
+      "fr": "le piston",
+      "fa": "پیستون",
+      "emoji": "⬆️",
+      "difficulty": 4,
+      "ex": "Chaque piston subit des températures extrêmes à chaque explosion.",
+      "ex_fa": "هر پیستون در هر انفجار دماهای بسیار بالایی را تحمل می‌کند."
+    },
+    {
+      "fr": "le freinage",
+      "fa": "ترمزگیری",
+      "emoji": "🛑",
+      "difficulty": 4,
+      "ex": "Le freinage en bout de ligne droite met les disques à rude épreuve.",
+      "ex_fa": "ترمزگیری در انتهای مسیر مستقیم، دیسک‌ها را به شدت می‌آزماید."
+    },
+    {
+      "fr": "l'habitacle",
+      "fa": "کابین خودرو",
+      "emoji": "💺",
+      "difficulty": 4,
+      "ex": "L'habitacle spartiate ne contient que l'essentiel pour le pilote.",
+      "ex_fa": "کابین ساده خودرو فقط شامل موارد ضروری برای راننده است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La naissance d'une légende",
+      "title_fa": "تولد یک افسانه",
+      "text": "Carroll Shelby et Ken Miles travaillent sur un projet fou : battre Ferrari au Mans. Dans leur atelier, ils assemblent la Ford GT40. Le {{BLANK_1}} tubulaire doit être extrêmement rigide pour résister aux contraintes. Ils sculptent la {{BLANK_2}} en aluminium pour optimiser l'{{BLANK_3}} et fendre l'air. Au cœur de la bête, un moteur V8 de forte {{BLANK_4}} gronde. Quatre {{BLANK_5}} géants préparent le mélange air-essence. Quand le pilote accélère, chaque {{BLANK_6}} monte et descend à toute allure, faisant tourner le {{BLANK_7}} à des milliers de tours par minute. Pour les virages serrés, le {{BLANK_8}} répartit la puissance entre les roues arrière. La {{BLANK_9}} est réglée très ferme pour garder la voiture collée à la piste. Le pilote doit maîtriser l'{{BLANK_10}} avec précision pour passer les vitesses sans casser la boîte. Derrière lui, le {{BLANK_11}} crache des flammes et hurle. Dans les lignes droites, le {{BLANK_12}} doit être parfait pour ralentir cette fusée avant le virage. Assis dans l'{{BLANK_13}} étroit, le pilote ne fait qu'un avec la machine. Parfois, un {{BLANK_14}} est ajouté pour gagner de la puissance en altitude. Après des mois de tests, la voiture est enfin prête à écrire l'histoire.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "châssis",
+          "options": [
+            "châssis",
+            "piston",
+            "différentiel",
+            "vilebrequin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "carrosserie",
+          "options": [
+            "carrosserie",
+            "suspension",
+            "cylindrée",
+            "habitacle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "aérodynamisme",
+          "options": [
+            "aérodynamisme",
+            "embrayage",
+            "freinage",
+            "carburateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cylindrée",
+          "options": [
+            "cylindrée",
+            "carrosserie",
+            "mnémotechnie",
+            "turbocompresseur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "carburateurs",
+          "options": [
+            "carburateurs",
+            "pistons",
+            "différentiels",
+            "châssis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "piston",
+          "options": [
+            "piston",
+            "vilebrequin",
+            "pot d'échappement",
+            "freinage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "vilebrequin",
+          "options": [
+            "vilebrequin",
+            "turbocompresseur",
+            "embrayage",
+            "châssis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "différentiel",
+          "options": [
+            "différentiel",
+            "carburateur",
+            "aérodynamisme",
+            "piston"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "suspension",
+          "options": [
+            "suspension",
+            "carrosserie",
+            "cylindrée",
+            "habitacle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "embrayage",
+          "options": [
+            "embrayage",
+            "freinage",
+            "aérodynamisme",
+            "vilebrequin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pot d'échappement",
+          "options": [
+            "pot d'échappement",
+            "turbocompresseur",
+            "différentiel",
+            "châssis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "freinage",
+          "options": [
+            "freinage",
+            "embrayage",
+            "cylindrée",
+            "piston"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "habitacle",
+          "options": [
+            "habitacle",
+            "châssis",
+            "carrosserie",
+            "suspension"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "turbocompresseur",
+          "options": [
+            "turbocompresseur",
+            "carburateur",
+            "vilebrequin",
+            "différentiel"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le ballet de l'acier",
+      "title_fa": "رقص فولاد",
+      "inspiration": "Le Mans 66 (Ford v Ferrari - James Mangold, 2019)",
+      "text": "À peine le moteur V8 eut-il rugi dans la nuit floridienne que Carroll Shelby sut que cette fois, ils battraient Ferrari. La Ford GT40 n'était pas qu'une simple voiture, c'était une arme de guerre forgée dans l'acier et la sueur. Son {{BLANK_1}} tubulaire, d'une rigidité absolue, supportait les contraintes extrêmes de la course. Sous la {{BLANK_2}} sculptée par les souffleries, chaque courbe avait été pensée pour l'{{BLANK_3}}, fendre l'air sans turbulences. Au cœur de la bête, le V8 de sept litres de {{BLANK_4}} grondait, alimenté par quatre {{BLANK_5}} géants qui vaporisaient l'essence avec une précision chirurgicale. Quand Ken Miles enfonçait la pédale, les {{BLANK_6}} montaient et descendaient des milliers de fois par minute, transformant l'explosion en une rotation furieuse du {{BLANK_7}}. Dans les virages du Mans, le {{BLANK_8}} répartissait la puissance entre les roues arrière, tandis que la {{BLANK_9}} absorbait les imperfections de la piste pour garder les pneus collés au bitume. Pour sortir des épingles, Ken jouait avec l'{{BLANK_10}} de ses pieds et de sa main gauche, trouvant le point de friction parfait. Le {{BLANK_11}} crachait des flammes bleues, hurlant la puissance brute à la face du monde. Mais la vitesse exigeait aussi la maîtrise : le {{BLANK_12}} à disque, une innovation majeure, permettait de ralentir cette fusée de mille kilos sans perdre le contrôle. Assis dans l'{{BLANK_13}} spartiate, Ken ne faisait plus qu'un avec la machine, sentant chaque vibration, chaque glissade. Un {{BLANK_14}} avait été ajouté tardivement pour compenser le manque d'air en altitude sur certains circuits, mais ici, au niveau de la mer, c'était la pureté mécanique qui régnait. Quand le drapeau à damier tomba enfin, ce n'était pas seulement une victoire américaine, c'était le triomphe de l'ingénierie sur l'arrogance.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "châssis",
+          "options": [
+            "châssis",
+            "piston",
+            "différentiel",
+            "vilebrequin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "carrosserie",
+          "options": [
+            "carrosserie",
+            "suspension",
+            "cylindrée",
+            "habitacle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "aérodynamisme",
+          "options": [
+            "aérodynamisme",
+            "embrayage",
+            "freinage",
+            "carburateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cylindrée",
+          "options": [
+            "cylindrée",
+            "carrosserie",
+            "mnémotechnie",
+            "turbocompresseur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "carburateurs",
+          "options": [
+            "carburateurs",
+            "pistons",
+            "différentiels",
+            "châssis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pistons",
+          "options": [
+            "pistons",
+            "vilebrequins",
+            "pots d'échappement",
+            "freinages"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "vilebrequin",
+          "options": [
+            "vilebrequin",
+            "turbocompresseur",
+            "embrayage",
+            "châssis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "différentiel",
+          "options": [
+            "différentiel",
+            "carburateur",
+            "aérodynamisme",
+            "piston"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "suspension",
+          "options": [
+            "suspension",
+            "carrosserie",
+            "cylindrée",
+            "habitacle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "embrayage",
+          "options": [
+            "embrayage",
+            "freinage",
+            "aérodynamisme",
+            "vilebrequin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pot d'échappement",
+          "options": [
+            "pot d'échappement",
+            "turbocompresseur",
+            "différentiel",
+            "châssis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "freinage",
+          "options": [
+            "freinage",
+            "embrayage",
+            "cylindrée",
+            "piston"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "habitacle",
+          "options": [
+            "habitacle",
+            "châssis",
+            "carrosserie",
+            "suspension"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "turbocompresseur",
+          "options": [
+            "turbocompresseur",
+            "carburateur",
+            "vilebrequin",
+            "différentiel"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Ingénierie automobile et course",
+    "title_fa": "آزمون : مهندسی خودرو و مسابقات",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La structure métallique rigide qui sert de squelette à la voiture et supporte tous les autres éléments est le ____.",
+        "options": [
+          "châssis",
+          "piston",
+          "différentiel",
+          "vilebrequin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اسکلت و چارچوب اصلی خودرو = châssis."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette pièce mécanique en acier, située dans le moteur, transforme le mouvement vertical des cylindres en mouvement rotatif. C'est le ____.",
+        "options": [
+          "vilebrequin",
+          "turbocompresseur",
+          "embrayage",
+          "châssis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قطعه‌ای که حرکت عمودی را به چرخشی تبدیل می‌کند = vilebrequin."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enveloppe extérieure du véhicule, faite de métal ou de matériaux composites, qui lui donne sa forme visuelle est la ____.",
+        "options": [
+          "carrosserie",
+          "suspension",
+          "cylindrée",
+          "habitacle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پوسته و بدنه بیرونی خودرو = carrosserie."
+      },
+      {
+        "type": "mcq",
+        "question": "La science qui étudie la façon dont l'air s'écoule autour d'un véhicule pour réduire la résistance est l'____.",
+        "options": [
+          "aérodynamisme",
+          "embrayage",
+          "freinage",
+          "carburateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم جریان هوا اطراف خودرو = aérodynamisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le volume total balayé par les cylindres du moteur, souvent exprimé en litres ou en centimètres cubes, est la ____.",
+        "options": [
+          "cylindrée",
+          "carrosserie",
+          "mnémotechnie",
+          "turbocompresseur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حجم کلی سیلندرهای موتور = cylindrée."
+      },
+      {
+        "type": "mcq",
+        "question": "Cet appareil utilise les gaz d'échappement pour comprimer l'air entrant dans le moteur, augmentant ainsi sa puissance. C'est le ____.",
+        "options": [
+          "turbocompresseur",
+          "carburateur",
+          "vilebrequin",
+          "différentiel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه فشرده‌ساز هوا با استفاده از گازهای خروجی = turbocompresseur."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce mécanisme situé entre les roues motrices leur permet de tourner à des vitesses différentes lors d'un virage. C'est le ____.",
+        "options": [
+          "différentiel",
+          "carburateur",
+          "aérodynamisme",
+          "piston"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانیزم تنظیم سرعت چرخ‌ها در پیچ = différentiel."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système qui permet de relier ou de désolidariser le moteur de la boîte de vitesses pour changer les rapports est l'____.",
+        "options": [
+          "embrayage",
+          "freinage",
+          "aérodynamisme",
+          "vilebrequin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم قطع و وصل نیرو بین موتور و گیربکس = embrayage."
+      },
+      {
+        "type": "mcq",
+        "question": "Avant l'injection électronique, cet appareil servait à mélanger l'air et l'essence dans les bonnes proportions pour la combustion. C'est le ____.",
+        "options": [
+          "carburateur",
+          "piston",
+          "différentiel",
+          "châssis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه مخلوط‌کننده هوا و بنزین در موتورهای قدیمی = carburateur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le tuyau métallique qui évacue les gaz brûlés hors du moteur et qui influence le bruit du véhicule est le ____.",
+        "options": [
+          "pot d'échappement",
+          "turbocompresseur",
+          "différentiel",
+          "châssis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لوله خروج گازهای سوخته = pot d'échappement."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des ressorts et amortisseurs qui relie les roues au châssis pour absorber les chocs de la route est la ____.",
+        "options": [
+          "suspension",
+          "carrosserie",
+          "cylindrée",
+          "habitacle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم فنربندی و ضربه‌گیر = suspension."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette pièce cylindrique mobile à l'intérieur du moteur qui monte et descend sous la pression des explosions est le ____.",
+        "options": [
+          "piston",
+          "vilebrequin",
+          "pot d'échappement",
+          "freinage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قطعه متحرک داخل سیلندر = piston."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de ralentir ou d'arrêter le véhicule en utilisant les disques ou les tambours s'appelle le ____.",
+        "options": [
+          "freinage",
+          "embrayage",
+          "cylindrée",
+          "piston"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل ترمز گرفتن = freinage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'espace intérieur du véhicule où prennent place le conducteur et les passagers est l'____.",
+        "options": [
+          "habitacle",
+          "châssis",
+          "carrosserie",
+          "suspension"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فضای داخلی کابین خودرو = habitacle."
+      },
+      {
+        "type": "binary",
+        "question": "Le vilebrequin et le piston sont tous deux des pièces internes du moteur à combustion.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هر دو از اجزای اصلی و داخلی موتور هستند."
+      },
+      {
+        "type": "binary",
+        "question": "La carrosserie a pour fonction principale de transmettre la puissance du moteur aux roues.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. carrosserie بدنه و پوسته خودرو است و در انتقال نیرو نقشی ندارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le turbocompresseur diminue la puissance du moteur en limitant l'entrée d'air.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. توربوشارژر با فشرده کردن هوا، قدرت موتور را افزایش می‌دهد."
+      },
+      {
+        "type": "binary",
+        "question": "Le différentiel est indispensable pour qu'une voiture puisse prendre un virage sans endommager ses pneus ou sa transmission.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دیفرانسیل اجازه می‌دهد چرخ‌های سمت داخل و خارج پیچ با سرعت‌های متفاوتی بچرخند."
+      },
+      {
+        "type": "binary",
+        "question": "L'habitacle désigne le coffre arrière où l'on range les bagages.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. habitacle به فضای کابین سرنشینان و راننده اشاره دارد، نه صندوق عقب."
+      }
+    ]
+  }
+}
