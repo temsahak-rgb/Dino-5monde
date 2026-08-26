@@ -1,5 +1,7 @@
+
+
 // ===============================
-// صفحات مسیرها (paths.js)
+// صفحات مسیرها (paths.js) - نسخه اصلی
 // ===============================
 async function showDailyHome() {
     const lang = localStorage.getItem("language") || "fr";
@@ -23,23 +25,24 @@ async function showTravelHome() {
     app.innerHTML = html;
 }
 
-// ===============================
-// درس‌های روزمره و سفر
-// ===============================
-// ===============================
-// درس‌های روزمره و سفر (نسخه هوشمند و سازگار با همه فرمت‌ها)
-// ===============================
 async function showDailyLesson(lessonId) {
-    await showSmartLesson("daily", lessonId);
-}
-async function showTravelLesson(lessonId) {
-    // این خط باعث می‌شود سایت مستقیماً از موتور جدید travel.js استفاده کند
-    // و دیگر کاری به lessonEngine.js و تمرین‌ها نداشته باشد
-    if (typeof renderTravelLessonPage === 'function') {
-        await renderTravelLessonPage(lessonId);
-    } else {
-        app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p>⚠️ travel.js بارگذاری نشده است.</p><button onclick="showTravelPage()">بازگشت</button></div>`;
+    app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">⏳ ...</p></div>`;
+    const lessonData = await loadSpecificLesson("daily", lessonId);
+    if (!lessonData) { 
+        app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">🚧 به زودی</p><button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">بازگشت</button></div>`; 
+        return; 
     }
+    showLessonContent(lessonId, lessonData.sections[0]);
+}
+
+async function showTravelLesson(lessonId) {
+    app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">⏳ ...</p></div>`;
+    const lessonData = await loadSpecificLesson("travel", lessonId);
+    if (!lessonData) { 
+        app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">🚧 به زودی</p><button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">بازگشت</button></div>`; 
+        return; 
+    }
+    showLessonContent(lessonId, lessonData.sections[0]);
 }
 // ===============================
 // موتور تمرین (مشترک بین گرامر، سفر و روزمره)
