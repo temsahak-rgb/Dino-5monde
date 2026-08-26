@@ -1,0 +1,537 @@
+{
+  "id": "law_crime",
+  "level": "C1",
+  "theme": "Tribunal, crime et conflits",
+  "theme_fa": "دادگاه، جرم و جنایت و درگیری‌ها",
+  "icon": "⚖️",
+  "inspiration": "Anatomie d'une chute (Justine Triet, 2023)",
+  "words": [
+    {
+      "fr": "la complicité",
+      "fa": "همدستی در جرم",
+      "emoji": "🤝",
+      "difficulty": 3,
+      "ex": "Il a été reconnu coupable de complicité dans cette affaire de vol.",
+      "ex_fa": "او به جرم همدستی در این پرونده سرقت مجرم شناخته شد."
+    },
+    {
+      "fr": "le chantage",
+      "fa": "باج‌گیری، اخاذی",
+      "emoji": "💰",
+      "difficulty": 3,
+      "ex": "La victime a porté plainte pour chantage et extorsion de fonds.",
+      "ex_fa": "قربانی به جرم باج‌گیری و اخاذی شکایت کرد."
+    },
+    {
+      "fr": "l'escroquerie",
+      "fa": "کلاهبرداری",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "Cette escroquerie a coûté des millions aux investisseurs.",
+      "ex_fa": "این کلاهبرداری میلیون‌ها تومان به سرمایه‌گذاران ضرر زد."
+    },
+    {
+      "fr": "le braquage",
+      "fa": "سرقت مسلحانه",
+      "emoji": "🔫",
+      "difficulty": 3,
+      "ex": "Le braquage de la bijouterie a duré moins de trois minutes.",
+      "ex_fa": "سرقت مسلحانه از طلافروشی کمتر از سه دقیقه طول کشید."
+    },
+    {
+      "fr": "l'effraction",
+      "fa": "ورود غیرمجاز با شکستن قفل",
+      "emoji": "🚪",
+      "difficulty": 4,
+      "ex": "Les cambrioleurs sont entrés par effraction en brisant la vitrine.",
+      "ex_fa": "سارقان با شکستن ویترین به‌صورت غیرمجاز وارد شدند."
+    },
+    {
+      "fr": "le recel",
+      "fa": "نگهداری مال مسروقه",
+      "emoji": "📦",
+      "difficulty": 5,
+      "ex": "Il est poursuivi pour recel d'objets volés.",
+      "ex_fa": "او به جرم نگهداری اموال مسروقه تحت تعقیب است."
+    },
+    {
+      "fr": "la préméditation",
+      "fa": "عمد و پیش‌اندیشی مجرمانه",
+      "emoji": "🧠",
+      "difficulty": 5,
+      "ex": "La préméditation a été retenue comme circonstance aggravante.",
+      "ex_fa": "پیش‌اندیشی به‌عنوان circumstance تشدیدکننده لحاظ شد."
+    },
+    {
+      "fr": "l'acquittement",
+      "fa": "تبرئه",
+      "emoji": "✅",
+      "difficulty": 4,
+      "ex": "Après trois heures de délibéré, le jury a prononcé l'acquittement.",
+      "ex_fa": "پس از سه ساعت شور، هیئت منصفه حکم تبرئه صادر کرد."
+    },
+    {
+      "fr": "la condamnation",
+      "fa": "محکومیت",
+      "emoji": "⚖️",
+      "difficulty": 3,
+      "ex": "Sa condamnation à dix ans de prison a été confirmée en appel.",
+      "ex_fa": "محکومیت ده ساله او در دادگاه تجدیدنظر تأیید شد."
+    },
+    {
+      "fr": "le verdict",
+      "fa": "حکم نهایی، رأی دادگاه",
+      "emoji": "📜",
+      "difficulty": 3,
+      "ex": "Le verdict est tombé : coupable de meurtre avec préméditation.",
+      "ex_fa": "حکم نهایی صادر شد: مجرم به قتل عمد."
+    },
+    {
+      "fr": "la plaidoirie",
+      "fa": "سخنرانی دفاعیه وکیل",
+      "emoji": "🗣️",
+      "difficulty": 5,
+      "ex": "L'avocat a prononcé une plaidoirie bouleversante en faveur de son client.",
+      "ex_fa": "وکیل یک دفاعیه تکان‌دهنده به نفع موکلش ایراد کرد."
+    },
+    {
+      "fr": "le réquisitoire",
+      "fa": "کیفرخواست، سخنرانی دادستان",
+      "emoji": "📋",
+      "difficulty": 5,
+      "ex": "Le réquisitoire du procureur a duré près de deux heures.",
+      "ex_fa": "کیفرخواست دادستان نزدیک به دو ساعت طول کشید."
+    },
+    {
+      "fr": "la détention",
+      "fa": "بازداشت، حبس",
+      "emoji": "🔒",
+      "difficulty": 3,
+      "ex": "Le suspect a été placé en détention provisoire.",
+      "ex_fa": "مظروف تحت بازداشت موقت قرار گرفت."
+    },
+    {
+      "fr": "l'inculpation",
+      "fa": "تفهیم اتهام رسمی",
+      "emoji": "⚡",
+      "difficulty": 4,
+      "ex": "L'inculpation pour meurtre a été prononcée hier soir.",
+      "ex_fa": "تفهیم اتهام قتل دیشب صادر شد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le procès du braqueur",
+      "title_fa": "محاکمه سارق مسلح",
+      "text": "Ce matin, un homme entre au tribunal. Il est accusé d'un {{BLANK_1}} dans une banque. La police dit qu'il est entré par {{BLANK_2}} en cassant la porte. Son ami l'a aidé. Il est accusé de {{BLANK_3}}. Le procureur lit son {{BLANK_4}} et demande une peine sévère. L'avocat de la défense fait sa {{BLANK_5}} et dit que son client n'a pas agi avec {{BLANK_6}}. Les jurés délibèrent. À la fin, le président lit le {{BLANK_7}} : l'homme est coupable. Il reçoit une {{BLANK_8}} de huit ans de prison. Il est placé en {{BLANK_9}} immédiatement. Son ami, en revanche, obtient l'{{BLANK_10}} faute de preuves suffisantes. La victime, elle, avait subi un {{BLANK_11}} avant le procès et n'a pas pu témoigner.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "braquage",
+          "options": [
+            "braquage",
+            "chantage",
+            "escroquerie",
+            "recel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "effraction",
+          "options": [
+            "détention",
+            "effraction",
+            "condamnation",
+            "inculpation"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 3,
+          "answer": "complicité",
+          "options": [
+            "préméditation",
+            "plaidoirie",
+            "complicité",
+            "acquittement"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": 4,
+          "answer": "réquisitoire",
+          "options": [
+            "verdict",
+            "réquisitoire",
+            "recel",
+            "chantage"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 5,
+          "answer": "plaidoirie",
+          "options": [
+            "plaidoirie",
+            "inculpation",
+            "détention",
+            "escroquerie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "préméditation",
+          "options": [
+            "complicité",
+            "condamnation",
+            "préméditation",
+            "effraction"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": 7,
+          "answer": "verdict",
+          "options": [
+            "réquisitoire",
+            "braquage",
+            "verdict",
+            "recel"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": 8,
+          "answer": "condamnation",
+          "options": [
+            "acquittement",
+            "condamnation",
+            "plaidoirie",
+            "détention"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 9,
+          "answer": "détention",
+          "options": [
+            "détention",
+            "escroquerie",
+            "effraction",
+            "complicité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "acquittement",
+          "options": [
+            "verdict",
+            "inculpation",
+            "acquittement",
+            "chantage"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": 11,
+          "answer": "chantage",
+          "options": [
+            "recel",
+            "chantage",
+            "braquage",
+            "verdict"
+          ],
+          "correctIndex": 1
+        }
+      ]
+    },
+    "literary": {
+      "title": "La dernière audience",
+      "title_fa": "آخرین جلسه دادگاه",
+      "inspiration": "Anatomie d'une chute (Justine Triet, 2023)",
+      "text": "À peine le président eut-il frappé son marteau que le silence tomba sur la salle d'audience comme un linceul. L'accusé, un homme d'une quarantaine d'années au visage émacié, se tenait dans le box, les yeux rivés sur le parquet de chêne. On lui reprochait un {{BLANK_1}} commis dans une agence bancaire du centre-ville, un crime pour lequel la {{BLANK_2}} avait été retenue comme circonstance aggravante. Le procureur, dont le {{BLANK_3}} cinglant avait duré près de deux heures, avait exigé la peine maximale, soulignant que l'accusé avait agi de sang-froid et qu'il avait bénéficié de la {{BLANK_4}} d'un complice resté introuvable. L'avocat de la défense, un vieil homme à la voix grave, se leva pour sa {{BLANK_5}}. « Messieurs les jurés, » commença-t-il, « mon client n'a pas choisi cette voie. Il y fut poussé par la misère, par le désespoir, par cette société qui l'a broyé sans jamais lui tendre la main. » Il évoqua l'{{BLANK_6}} dont avait été victime son client — un chantage exercé par un ancien employeur — et contesta la {{BLANK_7}} qui pesait sur lui. « Où est la preuve de l'intention ? Où est le mobile, sinon la survie ? » Les jurés se retirèrent. Trois heures s'écoulèrent, interminables. Puis, le président reprit la parole et, d'une voix blanche, prononça le {{BLANK_8}}. L'accusé fut reconnu coupable. La {{BLANK_9}} tomba : douze ans de réclusion criminelle. On l'emmena en {{BLANK_10}} sous les regards hébétés de sa famille. Quant au complice, jamais identifié, il bénéficiait, par définition, de l'{{BLANK_11}} éternel de l'absence. Dans la salle, une femme pleurait en silence. C'était la veuve du vigile tué pendant le {{BLANK_12}}. Pour elle, aucun verdict ne rendrait jamais ce que la mort lui avait pris.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "braquage",
+          "options": [
+            "braquage",
+            "chantage",
+            "recel",
+            "effraction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "préméditation",
+          "options": [
+            "complicité",
+            "préméditation",
+            "inculpation",
+            "condamnation"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 3,
+          "answer": "réquisitoire",
+          "options": [
+            "verdict",
+            "plaidoirie",
+            "réquisitoire",
+            "acquittement"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": 4,
+          "answer": "complicité",
+          "options": [
+            "complicité",
+            "détention",
+            "effraction",
+            "escroquerie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "plaidoirie",
+          "options": [
+            "plaidoirie",
+            "inculpation",
+            "détention",
+            "condamnation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "escroquerie",
+          "options": [
+            "effraction",
+            "acquittement",
+            "escroquerie",
+            "préméditation"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": 7,
+          "answer": "inculpation",
+          "options": [
+            "inculpation",
+            "verdict",
+            "détention",
+            "complicité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "verdict",
+          "options": [
+            "réquisitoire",
+            "verdict",
+            "recel",
+            "chantage"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 9,
+          "answer": "condamnation",
+          "options": [
+            "acquittement",
+            "plaidoirie",
+            "condamnation",
+            "effraction"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": 10,
+          "answer": "détention",
+          "options": [
+            "détention",
+            "escroquerie",
+            "inculpation",
+            "préméditation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "acquittement",
+          "options": [
+            "verdict",
+            "acquittement",
+            "condamnation",
+            "détention"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 12,
+          "answer": "braquage",
+          "options": [
+            "chantage",
+            "recel",
+            "braquage",
+            "complicité"
+          ],
+          "correctIndex": 2
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Tribunal, crime et conflits",
+    "title_fa": "آزمون : دادگاه، جرم و جنایت",
+    "displayCount": 12,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Deux hommes ont attaqué une banque à main armée. Le second est poursuivi pour ____.",
+        "options": [
+          "complicité",
+          "acquittement",
+          "verdict",
+          "plaidoirie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شریک جرم به جرم «همدستی» (complicité) متهم می‌شود، نه تبرئه یا حکم."
+      },
+      {
+        "type": "mcq",
+        "question": "« Si tu ne paies pas, je révèle ton secret. » C'est un cas de ____.",
+        "options": [
+          "braquage",
+          "chantage",
+          "escroquerie",
+          "recel"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "تهدید به افشای راز در ازای پول = باج‌گیری (chantage). سرقت مسلحانه و کلاهبرداری متفاوت‌اند."
+      },
+      {
+        "type": "mcq",
+        "question": "Un homme a vendu des tableaux volés en connaissance de cause. Il est coupable de ____.",
+        "options": [
+          "effraction",
+          "complicité",
+          "recel",
+          "préméditation"
+        ],
+        "correctIndex": 2,
+        "explanation_fa": "نگهداری و فروش مال مسروقه با علم به دزدی بودن = recel."
+      },
+      {
+        "type": "mcq",
+        "question": "L'avocat se lève et prononce sa ____ en faveur de son client.",
+        "options": [
+          "inculpation",
+          "condamnation",
+          "plaidoirie",
+          "détention"
+        ],
+        "correctIndex": 2,
+        "explanation_fa": "سخنرانی دفاعیه وکیل در دادگاه = plaidoirie. بقیه گزینه‌ها علیه متهم هستند."
+      },
+      {
+        "type": "mcq",
+        "question": "Le procureur lit son ____ et demande une peine de vingt ans.",
+        "options": [
+          "verdict",
+          "acquittement",
+          "réquisitoire",
+          "plaidoirie"
+        ],
+        "correctIndex": 2,
+        "explanation_fa": "کیفرخواست دادستان = réquisitoire. verdict حکم نهایی است و plaidoirie دفاع وکیل."
+      },
+      {
+        "type": "mcq",
+        "question": "Le jury déclare l'accusé innocent. Le président prononce l'____.",
+        "options": [
+          "inculpation",
+          "acquittement",
+          "condamnation",
+          "détention"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "تبرئه و آزادسازی متهم بی‌گناه = acquittement."
+      },
+      {
+        "type": "mcq",
+        "question": "Les cambrioleurs sont entrés en brisant la serrure. Ils sont poursuivis pour ____.",
+        "options": [
+          "effraction",
+          "complicité",
+          "recel",
+          "préméditation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورود با شکستن قفل یا مانع فیزیکی = effraction."
+      },
+      {
+        "type": "mcq",
+        "question": "Le juge prononce la ____ : dix ans de réclusion criminelle.",
+        "options": [
+          "acquittement",
+          "inculpation",
+          "condamnation",
+          "plaidoirie"
+        ],
+        "correctIndex": 2,
+        "explanation_fa": "صدور حکم مجازات = condamnation. acquittement یعنی آزادی."
+      },
+      {
+        "type": "mcq",
+        "question": "Le crime a été planifié trois mois à l'avance. La ____ est retenue.",
+        "options": [
+          "complicité",
+          "préméditation",
+          "effraction",
+          "détention"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "برنامه‌ریزی قبلی برای جرم = préméditation (تعمد و پیش‌اندیشی)."
+      },
+      {
+        "type": "binary",
+        "question": "Le réquisitoire est prononcé par l'avocat de la défense.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "réquisitoire توسط دادستان (procureur) خوانده می‌شود، نه وکیل مدافع. وکیل plaidoirie می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le recel consiste à garder des objets volés en sachant qu'ils ont été volés.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، recel دقیقاً به معنای نگهداری مال مسروقه با علم به دزدی بودن آن است."
+      },
+      {
+        "type": "binary",
+        "question": "L'inculpation signifie que la personne est définitivement reconnue coupable.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "inculpation فقط تفهیم اتهام است، نه محکومیت قطعی. فرد تا صدور حکم نهایی بی‌گناه فرض می‌شود."
+      }
+    ]
+  }
+}
