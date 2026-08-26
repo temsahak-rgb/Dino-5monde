@@ -286,6 +286,11 @@
                 }
 
                 log(`\n🎉 پایان! ${foundPacks.length} پک با موفقیت آپلود شد.`, 'success');
+                
+                // 🧹 پاک کردن خودکار متن پیست شده پس از اتمام موفقیت‌آمیز
+                document.getElementById('qwenText').value = '';
+                log('🧹 کادر متن ورودی به‌طور خودکار پاک شد تا برای دفعه بعد آماده باشد.', 'info');
+
                 document.getElementById('previewBox').style.display = 'none';
                 document.getElementById('confirmBtn').textContent = '✅ تأیید و آپلود همه پک‌ها';
 
