@@ -1,0 +1,680 @@
+{
+  "id": "pharmacy_pharmacology",
+  "level": "C1",
+  "theme": "Pharmacologie, médicaments et essais cliniques",
+  "theme_fa": "داروشناسی، داروها و کارآزمایی‌های بالینی",
+  "icon": "💊",
+  "inspiration": "Dallas Buyers Club (Jean-Marc Vallée, 2013)",
+  "words": [
+    {
+      "fr": "la pharmacologie",
+      "fa": "داروشناسی",
+      "emoji": "💊",
+      "difficulty": 5,
+      "ex": "La pharmacologie étudie l'action des médicaments sur l'organisme.",
+      "ex_fa": "داروشناسی اثر داروها بر ارگانیسم را مطالعه می‌کند."
+    },
+    {
+      "fr": "le principe actif",
+      "fa": "ماده مؤثره",
+      "emoji": "🧪",
+      "difficulty": 5,
+      "ex": "Le principe actif est la substance qui produit l'effet thérapeutique.",
+      "ex_fa": "ماده مؤثره، ماده‌ای است که اثر درمانی ایجاد می‌کند."
+    },
+    {
+      "fr": "la posologie",
+      "fa": "دوز مصرف",
+      "emoji": "📏",
+      "difficulty": 4,
+      "ex": "Respecter la posologie est essentiel pour éviter la toxicité.",
+      "ex_fa": "رعایت دوز مصرف برای جلوگیری از سمیت ضروری است."
+    },
+    {
+      "fr": "l'ordonnance",
+      "fa": "نسخه پزشکی",
+      "emoji": "📝",
+      "difficulty": 3,
+      "ex": "Ce médicament puissant n'est délivré que sur ordonnance.",
+      "ex_fa": "این داروی قوی فقط با نسخه پزشکی تحویل داده می‌شود."
+    },
+    {
+      "fr": "l'effet indésirable",
+      "fa": "عوارض جانبی",
+      "emoji": "⚠️",
+      "difficulty": 4,
+      "ex": "Les nausées sont un effet indésirable fréquent de ce traitement.",
+      "ex_fa": "حالت تهوع یکی از عوارض جانبی شایع این درمان است."
+    },
+    {
+      "fr": "la molécule",
+      "fa": "مولکول",
+      "emoji": "⚛️",
+      "difficulty": 4,
+      "ex": "Les chercheurs testent des milliers de molécules avant d'en trouver une efficace.",
+      "ex_fa": "محققان هزاران مولکول را قبل از یافتن یک مورد مؤثر آزمایش می‌کنند."
+    },
+    {
+      "fr": "le placebo",
+      "fa": "دارونما",
+      "emoji": "🍬",
+      "difficulty": 4,
+      "ex": "Le groupe de contrôle reçoit un placebo pour comparer les résultats.",
+      "ex_fa": "گروه کنترل برای مقایسه نتایج، دارونما دریافت می‌کند."
+    },
+    {
+      "fr": "la contre-indication",
+      "fa": "منع مصرف",
+      "emoji": "🚫",
+      "difficulty": 5,
+      "ex": "La grossesse est une contre-indication absolue pour ce médicament.",
+      "ex_fa": "بارداری یک منع مصرف مطلق برای این دارو است."
+    },
+    {
+      "fr": "l'interaction",
+      "fa": "تداخل (دارویی)",
+      "emoji": "🔄",
+      "difficulty": 4,
+      "ex": "L'interaction entre ces deux médicaments peut être mortelle.",
+      "ex_fa": "تداخل بین این دو دارو می‌تواند کشنده باشد."
+    },
+    {
+      "fr": "l'antibiotique",
+      "fa": "آنتی‌بیوتیک",
+      "emoji": "🦠",
+      "difficulty": 3,
+      "ex": "L'antibiotique est inefficace contre les infections virales.",
+      "ex_fa": "آنتی‌بیوتیک در برابر عفونت‌های ویروسی بی‌اثر است."
+    },
+    {
+      "fr": "le surdosage",
+      "fa": "مصرف بیش از حد (اوردوز)",
+      "emoji": "☠️",
+      "difficulty": 4,
+      "ex": "Le surdosage de paracétamol détruit irréversiblement le foie.",
+      "ex_fa": "مصرف بیش از حد استامینوفن کبد را به طور برگشت‌ناپذیری نابود می‌کند."
+    },
+    {
+      "fr": "la résistance",
+      "fa": "مقاومت (دارویی)",
+      "emoji": "🛡️",
+      "difficulty": 4,
+      "ex": "L'usage abusif d'antibiotiques favorise la résistance bactérienne.",
+      "ex_fa": "استفاده بی‌رویه از آنتی‌بیوتیک‌ها، مقاومت باکتریایی را تقویت می‌کند."
+    },
+    {
+      "fr": "le brevet",
+      "fa": "ثبت اختراع",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "Le laboratoire détient le brevet exclusif pour les vingt prochaines années.",
+      "ex_fa": "آزمایشگاه حق اختراع انحصاری را برای بیست سال آینده در اختیار دارد."
+    },
+    {
+      "fr": "l'essai clinique",
+      "fa": "کارآزمایی بالینی",
+      "emoji": "🏥",
+      "difficulty": 5,
+      "ex": "L'essai clinique de phase III confirme l'efficacité du vaccin.",
+      "ex_fa": "کارآزمایی بالینی فاز سه، اثربخشی واکسن را تأیید می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le combat pour la vie",
+      "text": "Ron Woodroof est diagnostiqué séropositif en 1985. Les médecins l'incluent dans un {{BLANK_14}} contrôlé où il reçoit de l'AZT. Très vite, il subit de graves {{BLANK_5}}s qui détruisent sa santé. Cherchant à survivre, il voyage à l'étranger pour trouver d'autres {{BLANK_6}}s non approuvées aux États-Unis. Il apprend seul les bases de la {{BLANK_1}} pour comprendre comment ces traitements agissent sur son corps. Il importe les produits illégalement, sans aucune {{BLANK_4}} officielle. En ajustant lui-même sa {{BLANK_3}}, il parvient à éviter le {{BLANK_11}} toxique qui tue les autres patients. Il étudie méticuleusement chaque {{BLANK_9}} pour ne pas mélanger des substances dangereuses. Il prend des {{BLANK_10}}s pour combattre les infections opportunistes qui menacent son système immunitaire affaibli. Refusant d'être un cobaye, il exige un véritable {{BLANK_2}} plutôt qu'un simple {{BLANK_7}} inerte. Ignorant toute {{BLANK_8}} médicale par désespoir, il prend des risques insensés. Il découvre que le virus développe une {{BLANK_12}} rapide aux doses massives d'AZT. Pendant ce temps, les grands laboratoires pharmaceutiques défendent jalousement leur {{BLANK_13}} pour bloquer la concurrence et maximiser leurs profits. Ron crée un club d'acheteurs pour distribuer les traitements alternatifs et se bat jusqu'à son dernier souffle pour le droit des malades à choisir leur propre guérison.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "pharmacologie",
+          "options": [
+            "pharmacologie",
+            "principe actif",
+            "posologie",
+            "ordonnance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "principe actif",
+          "options": [
+            "principe actif",
+            "effet indésirable",
+            "molécule",
+            "placebo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "posologie",
+          "options": [
+            "posologie",
+            "contre-indication",
+            "interaction",
+            "antibiotique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "ordonnance",
+          "options": [
+            "ordonnance",
+            "surdosage",
+            "résistance",
+            "brevet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "effets indésirables",
+          "options": [
+            "effets indésirables",
+            "essais cliniques",
+            "pharmacologies",
+            "posologies"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "molécules",
+          "options": [
+            "molécules",
+            "placebos",
+            "contre-indications",
+            "interactions"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "placebo",
+          "options": [
+            "placebo",
+            "antibiotique",
+            "surdosage",
+            "résistance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "contre-indication",
+          "options": [
+            "contre-indication",
+            "brevet",
+            "essai clinique",
+            "pharmacologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "interaction",
+          "options": [
+            "interaction",
+            "principe actif",
+            "ordonnance",
+            "effet indésirable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "antibiotiques",
+          "options": [
+            "antibiotiques",
+            "molécules",
+            "placebos",
+            "brevets"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "surdosage",
+          "options": [
+            "surdosage",
+            "résistance",
+            "brevet",
+            "essai clinique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "résistance",
+          "options": [
+            "résistance",
+            "pharmacologie",
+            "posologie",
+            "ordonnance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "brevet",
+          "options": [
+            "brevet",
+            "contre-indication",
+            "interaction",
+            "antibiotique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "essai clinique",
+          "options": [
+            "essai clinique",
+            "surdosage",
+            "résistance",
+            "principe actif"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le cobaye rebelle",
+      "inspiration": "Dallas Buyers Club (Jean-Marc Vallée, 2013)",
+      "text": "À peine Ron eut-il entendu le diagnostic fatal qu'il comprit que le système médical le condamnait à être un simple numéro dans un tableau statistique. Ce cow-boy texan, homophobe et fêtard, se retrouvait soudain plongé dans l'enfer du sida, enrolé de force dans un {{BLANK_14}} où l'on testait l'AZT, une molécule toxique qui brûlait ses veines. Les {{BLANK_5}}s étaient terrifiants : nausées, fièvres, destruction cellulaire. Refusant de mourir en souriant pour la science, il s'échappa vers le Mexique, puis Israël et le Japon, traquant des {{BLANK_6}}s oubliées ou interdites. Dans les chambres d'hôtel miteuses, il devint son propre médecin, dévorant des traités de {{BLANK_1}} pour comprendre comment chaque {{BLANK_2}} interagissait avec son sang corrompu. Il calculait sa {{BLANK_3}} avec la précision d'un chimiste, sachant qu'un milligramme de trop provoquerait un {{BLANK_11}} mortel. Il analysait la moindre {{BLANK_9}} pour éviter que deux substances ne s'annulent ou ne se transforment en poison. Il avalait des {{BLANK_10}}s pour repousser les pneumonies qui guettaient ses poumons fragiles. Il n'avait aucune {{BLANK_4}} légale, aucun médecin pour le guider, seulement son instinct de survie et son mépris des règles. Il refusait catégoriquement d'avaler un {{BLANK_7}}, cette pilule de sucre destinée aux groupes de contrôle qu'on laissait mourir en silence. Ignorant toute {{BLANK_8}} officielle, il mélangeait les traitements expérimentaux avec une audace suicidaire. Il comprit vite que le virus mutait, développant une {{BLANK_12}} féroce contre les doses massives imposées par les hôpitaux. Pendant ce temps, derrière les murs de verre des grands laboratoires, des hommes en costume protégeaient leur {{BLANK_13}}, préférant sacrifier des milliers de vies plutôt que de perdre leur monopole lucratif. Ron transforma sa chambre en clinique clandestine, distribuant l'espoir à ceux que la société avait rejetés, prouvant que parfois, pour sauver des vies, il faut accepter de devenir un hors-la-loi.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "pharmacologie",
+          "options": [
+            "pharmacologie",
+            "principe actif",
+            "posologie",
+            "ordonnance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "principe actif",
+          "options": [
+            "principe actif",
+            "effet indésirable",
+            "molécule",
+            "placebo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "posologie",
+          "options": [
+            "posologie",
+            "contre-indication",
+            "interaction",
+            "antibiotique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "ordonnance",
+          "options": [
+            "ordonnance",
+            "surdosage",
+            "résistance",
+            "brevet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "effets indésirables",
+          "options": [
+            "effets indésirables",
+            "essais cliniques",
+            "pharmacologies",
+            "posologies"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "molécules",
+          "options": [
+            "molécules",
+            "placebos",
+            "contre-indications",
+            "interactions"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "placebo",
+          "options": [
+            "placebo",
+            "antibiotique",
+            "surdosage",
+            "résistance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "contre-indication",
+          "options": [
+            "contre-indication",
+            "brevet",
+            "essai clinique",
+            "pharmacologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "interaction",
+          "options": [
+            "interaction",
+            "principe actif",
+            "ordonnance",
+            "effet indésirable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "antibiotiques",
+          "options": [
+            "antibiotiques",
+            "molécules",
+            "placebos",
+            "brevets"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "surdosage",
+          "options": [
+            "surdosage",
+            "résistance",
+            "brevet",
+            "essai clinique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "résistance",
+          "options": [
+            "résistance",
+            "pharmacologie",
+            "posologie",
+            "ordonnance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "brevet",
+          "options": [
+            "brevet",
+            "contre-indication",
+            "interaction",
+            "antibiotique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "essai clinique",
+          "options": [
+            "essai clinique",
+            "surdosage",
+            "résistance",
+            "principe actif"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Pharmacologie et médicaments",
+    "title_fa": "آزمون : داروشناسی و داروها",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie la composition, les effets et le métabolisme des médicaments dans l'organisme est la ____.",
+        "options": [
+          "pharmacologie",
+          "principe actif",
+          "posologie",
+          "ordonnance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه داروها در بدن = pharmacologie."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance chimique contenue dans un médicament qui est responsable de son effet thérapeutique est le ____.",
+        "options": [
+          "principe actif",
+          "effet indésirable",
+          "molécule",
+          "placebo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده مؤثره دارو = principe actif."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des règles qui précisent les doses à prendre et la fréquence des prises d'un médicament est la ____.",
+        "options": [
+          "posologie",
+          "contre-indication",
+          "interaction",
+          "antibiotique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستور و دوز مصرف دارو = posologie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le document écrit par un médecin qui autorise le pharmacien à délivrer un médicament est l'____.",
+        "options": [
+          "ordonnance",
+          "surdosage",
+          "résistance",
+          "brevet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نسخه پزشکی = ordonnance."
+      },
+      {
+        "type": "mcq",
+        "question": "La réaction nocive et non voulue qui se produit lors de l'utilisation normale d'un médicament est l'____.",
+        "options": [
+          "effet indésirable",
+          "essai clinique",
+          "pharmacologie",
+          "posologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واکنش ناخواسته و مضر دارو = effet indésirable."
+      },
+      {
+        "type": "mcq",
+        "question": "La plus petite unité chimique d'une substance qui possède des propriétés spécifiques est la ____.",
+        "options": [
+          "molécule",
+          "placebo",
+          "contre-indication",
+          "interaction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کوچکترین واحد شیمیایی ماده = molécule."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance inerte administrée à un groupe de patients pour servir de comparaison lors d'un test est le ____.",
+        "options": [
+          "placebo",
+          "antibiotique",
+          "surdosage",
+          "résistance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده بی‌اثر برای مقایسه = placebo."
+      },
+      {
+        "type": "mcq",
+        "question": "La situation médicale qui interdit formellement l'utilisation d'un traitement ou d'un médicament est la ____.",
+        "options": [
+          "contre-indication",
+          "brevet",
+          "essai clinique",
+          "pharmacologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وضعیت منع مصرف دارو = contre-indication."
+      },
+      {
+        "type": "mcq",
+        "question": "L'influence mutuelle que deux ou plusieurs médicaments peuvent avoir lorsqu'ils sont pris en même temps est l'____.",
+        "options": [
+          "interaction",
+          "principe actif",
+          "ordonnance",
+          "effet indésirable"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تأثیر متقابل داروها بر هم = interaction."
+      },
+      {
+        "type": "mcq",
+        "question": "Le médicament spécifique utilisé pour combattre les infections causées par des bactéries est l'____.",
+        "options": [
+          "antibiotique",
+          "molécule",
+          "placebo",
+          "brevet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "داروی ضد عفونت باکتریایی = antibiotique."
+      },
+      {
+        "type": "mcq",
+        "question": "L'absorption d'une quantité de médicament supérieure à la dose maximale recommandée est le ____.",
+        "options": [
+          "surdosage",
+          "résistance",
+          "brevet",
+          "essai clinique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مصرف بیش از حد مجاز = surdosage."
+      },
+      {
+        "type": "mcq",
+        "question": "La capacité d'un micro-organisme ou d'une cellule à survivre à l'action d'un médicament est la ____.",
+        "options": [
+          "résistance",
+          "pharmacologie",
+          "posologie",
+          "ordonnance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توانایی مقاومت در برابر دارو = résistance."
+      },
+      {
+        "type": "mcq",
+        "question": "Le titre de propriété intellectuelle qui protège une invention pharmaceutique et lui donne l'exclusivité commerciale est le ____.",
+        "options": [
+          "brevet",
+          "contre-indication",
+          "interaction",
+          "antibiotique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حق انحصاری اختراع دارویی = brevet."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étude scientifique rigoureuse menée sur des volontaires pour évaluer la sécurité et l'efficacité d'un nouveau traitement est l'____.",
+        "options": [
+          "essai clinique",
+          "surdosage",
+          "résistance",
+          "principe actif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مطالعه علمی روی داوطلبان = essai clinique."
+      },
+      {
+        "type": "binary",
+        "question": "Le principe actif est la substance inerte du médicament qui ne sert qu'à donner sa forme au comprimé.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ماده مؤثره (principe actif) همان بخشی است که اثر درمانی دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Une contre-indication est une raison médicale valable pour ne pas prescrire un traitement à un patient.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. منع مصرف دلیلی پزشکی برای تجویز نکردن دارو است."
+      },
+      {
+        "type": "binary",
+        "question": "Le placebo contient des principes actifs très puissants pour guérir les maladies psychologiques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پلاسیبو (دارونما) ماده بی‌اثری است که اثر روانی دارد، نه شیمیایی."
+      },
+      {
+        "type": "binary",
+        "question": "L'interaction médicamenteuse peut diminuer l'efficacité d'un traitement ou augmenter sa toxicité.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تداخل دارویی می‌تواند اثر را کم یا سمیت را زیاد کند."
+      },
+      {
+        "type": "binary",
+        "question": "Les antibiotiques sont efficaces pour soigner les maladies virales comme la grippe ou le rhume.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. آنتی‌بیوتیک‌ها فقط روی باکتری‌ها اثر دارند، نه ویروس‌ها."
+      },
+      {
+        "type": "binary",
+        "question": "Un essai clinique est une phase de recherche obligatoire avant qu'un nouveau médicament soit autorisé sur le marché.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کارآزمایی بالینی مرحله‌ای اجباری قبل از عرضه دارو به بازار است."
+      }
+    ]
+  }
+}
