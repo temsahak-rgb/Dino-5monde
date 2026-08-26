@@ -1,9 +1,65 @@
 {
   "id": "leon-1-lalphabet",
-  "title": "Leçon 1 – L’alphabet",
-  "title_fa": "درس 1 – الفبا",
-  "topic": "",
-  "icon": "📝",
+  "title": "Leçon 1 – L'alphabet",
+  "title_fa": "درس ۱ – الفبا",
+  "topic": "آشنایی با حروف الفبای فرانسوی و تلفظ آن‌ها",
+  "icon": "🔤",
   "estimatedTime": 25,
-  "miniLessons": []
+  "module": "general",
+  "miniLessons": [
+    {
+      "id": "section-1",
+      "title": "۱) حروف الفبا (A-M)",
+      "type": "vocab",
+      "words": [
+        { "fr": "A - avion", "fa": "اَ - هواپیما", "phonetic": "اَوی‌یُن", "emoji": "✈️" },
+        { "fr": "B - bateau", "fa": "بَ - قایق", "phonetic": "بَتو", "emoji": "⛵" },
+        { "fr": "C - citron", "fa": "سَ/کَ - لیمو/قهوه", "phonetic": "سیتغُن / کَفه", "emoji": "🍋" },
+        { "fr": "D - dimanche", "fa": "دَ/دِ - یکشنبه", "phonetic": "دیمانش", "emoji": "📅" },
+        { "fr": "E - petit", "fa": "اُ - کوچک", "phonetic": "پُتی", "emoji": "🔹" },
+        { "fr": "F - famille", "fa": "فَ - خانواده", "phonetic": "فَمیی", "emoji": "👨‍👩‍👧" },
+        { "fr": "G - gâteau", "fa": "ژِ/گَ - کیک/عالی", "phonetic": "گَتو / ژِنیال", "emoji": "🎂" },
+        { "fr": "H - hôtel", "fa": "(ساکت) - هتل", "phonetic": "اُتل", "emoji": "🏨" },
+        { "fr": "I - idée", "fa": "ی - ایده", "phonetic": "ای‌ده", "emoji": "💡" },
+        { "fr": "J - journée", "fa": "ژِ - روز", "phonetic": "ژوغنه", "emoji": "☀️" },
+        { "fr": "K - Québec", "fa": "کَ - کبک", "phonetic": "کِبِک", "emoji": "🍁" },
+        { "fr": "L - lit", "fa": "لَ/لِ - تخت", "phonetic": "لی", "emoji": "🛏️" },
+        { "fr": "M - mère", "fa": "مَ/مِ - مادر", "phonetic": "مِغ", "emoji": "👩" }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "۲) حروف الفبا (N-Z)",
+      "type": "vocab",
+      "words": [
+        { "fr": "N - nuit", "fa": "نَ - شب", "phonetic": "نْوی", "emoji": "🌙" },
+        { "fr": "O - robe", "fa": "اُ - لباس", "phonetic": "غُب", "emoji": "👗" },
+        { "fr": "P - porte", "fa": "پَ - در", "phonetic": "پُغت", "emoji": "🚪" },
+        { "fr": "Q - qui", "fa": "کَ - چه کسی", "phonetic": "کی", "emoji": "❓" },
+        { "fr": "R - rouge", "fa": "غَ/رَ - قرمز", "phonetic": "غوژ روژ", "emoji": "🔴" },
+        { "fr": "S - sac", "fa": "سَ/زَ - کیف/خانه", "phonetic": "سَک / مِزُن", "emoji": "👜" },
+        { "fr": "T - ticket", "fa": "تِ - بلیت", "phonetic": "تیکِه", "emoji": "🎫" },
+        { "fr": "U - lune", "fa": "اوو - ماه", "phonetic": "لوون", "emoji": "🌕" },
+        { "fr": "V - vin", "fa": "وَ - شراب", "phonetic": "وَن", "emoji": "🍷" },
+        { "fr": "W - week-end", "fa": "وِ - آخر هفته", "phonetic": "ویک-اَند", "emoji": "🎉" },
+        { "fr": "X - boxe", "fa": "اِکْس - بوکس", "phonetic": "بُکس", "emoji": "🥊" },
+        { "fr": "Y - yaourt", "fa": "یا - ماست", "phonetic": "یااُغ", "emoji": "🥛" },
+        { "fr": "Z - zéro", "fa": "زِ - صفر", "phonetic": "زِغو", "emoji": "0️⃣" }
+      ]
+    },
+    {
+      "id": "note-1",
+      "type": "tips",
+      "tips": [
+        {
+          "type": "note",
+          "title_fr": "Note sur la lettre R",
+          "title_fa": "نکته مهم درباره حرف R",
+          "content_fr": "Dans ce livre, nous transcrivons le son standard français de la lettre R (/ʁ/ uvulaire) avec «غ» pour le distinguer de «ر» (r alvéolaire roulé). Vous pouvez toutefois produire un r roulé si c'est plus naturel pour vous. Ainsi «rouge» peut s'entendre «غوژ» (standard) ou «روژ» (r roulé).",
+          "content_fa": "در این کتاب صدای معیار فرانسوی حرف R (آوای ملازی/حلقی /ʁ/) را با «غ» نمایش می‌دهیم تا با «ر» فارسی (لرزشی جلویی) اشتباه نشود. با این حال اگر برایتان طبیعی‌تر یا راحت‌تر است می‌توانید آن را «ر» (rolled / trill) تلفظ کنید. بنابراین «rouge» را هم «غوژ» (معیار) و هم «روژ» می‌شنوید.",
+          "icon": "📝"
+        }
+      ]
+    }
+  ]
 }
