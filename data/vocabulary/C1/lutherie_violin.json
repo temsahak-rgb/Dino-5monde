@@ -1,0 +1,680 @@
+{
+  "id": "lutherie_violin",
+  "level": "C1",
+  "theme": "Lutherie, facture de violons et bois précieux",
+  "theme_fa": "سازسازی، ساخت ویولن و چوب‌های ارزشمند",
+  "icon": "🎻",
+  "inspiration": "Le Violon rouge (The Red Violin - François Girard, 1998)",
+  "words": [
+    {
+      "fr": "la lutherie",
+      "fa": "سازسازی (لوتیه‌گری)",
+      "emoji": "🎻",
+      "difficulty": 5,
+      "ex": "La lutherie de Crémone est mondialement célèbre grâce à Stradivarius.",
+      "ex_fa": "سازسازی کرمونا به لطف استرادیواریوس در جهان مشهور است."
+    },
+    {
+      "fr": "le luthier",
+      "fa": "سازساز (لوتیه)",
+      "emoji": "‍🔧",
+      "difficulty": 4,
+      "ex": "Le luthier ajuste l'âme du violon pour parfaire sa sonorité.",
+      "ex_fa": "سازساز جانِ ویولن را برای بی‌نقص کردن صدایش تنظیم می‌کند."
+    },
+    {
+      "fr": "le violon",
+      "fa": "ویولن",
+      "emoji": "🎻",
+      "difficulty": 2,
+      "ex": "Le violon est l'instrument le plus aigu de la famille des cordes frottées.",
+      "ex_fa": "ویولن زیرترین ساز خانواده زهی‌های آرشه‌ای است."
+    },
+    {
+      "fr": "l'archet",
+      "fa": "آرشه",
+      "emoji": "🪄",
+      "difficulty": 3,
+      "ex": "L'archet en bois de Pernambouc est prisé pour son élasticité.",
+      "ex_fa": "آرشه چوب برنامبوکو به خاطر انعطافش ارزشمند است."
+    },
+    {
+      "fr": "le vernis",
+      "fa": "ورنی (لاک محافظ)",
+      "emoji": "🎨",
+      "difficulty": 4,
+      "ex": "Le vernis à l'huile protège le bois et sublime ses reflets.",
+      "ex_fa": "ورنی روغنی از چوب محافظت و درخشش آن را دوچندان می‌کند."
+    },
+    {
+      "fr": "l'épicéa",
+      "fa": "چوب صنوبر (اسپروس)",
+      "emoji": "🌲",
+      "difficulty": 5,
+      "ex": "L'épicéa des Alpes, léger et résonant, forme la table d'harmonie.",
+      "ex_fa": "صنوبر آلپ، سبک و خوش‌طنین، صفحه صوتی را می‌سازد."
+    },
+    {
+      "fr": "l'érable",
+      "fa": "چوب افرا (میپل)",
+      "emoji": "🍁",
+      "difficulty": 5,
+      "ex": "L'érable flammé donne au fond du violon des reflets chatoyants.",
+      "ex_fa": "افرای موج‌دار به پشت ویولن درخشش مواج می‌بخشد."
+    },
+    {
+      "fr": "la touche",
+      "fa": "دسته (توشه)",
+      "emoji": "⬛",
+      "difficulty": 4,
+      "ex": "La touche en ébène doit être parfaitement lisse sous les doigts.",
+      "ex_fa": "دسته آبنوسی باید زیر انگشتان کاملاً صاف باشد."
+    },
+    {
+      "fr": "le chevalet",
+      "fa": "خرک (پلک)",
+      "emoji": "🌉",
+      "difficulty": 5,
+      "ex": "Le chevalet transmet les vibrations des cordes à la table d'harmonie.",
+      "ex_fa": "خرک ارتعاش سیم‌ها را به صفحه صوتی منتقل می‌کند."
+    },
+    {
+      "fr": "la corde",
+      "fa": "سیم",
+      "emoji": "🧵",
+      "difficulty": 2,
+      "ex": "Chaque corde est accordée en quintes : sol, ré, la, mi.",
+      "ex_fa": "هر سیم بر فاصله پنجم کوک می‌شود: سل، ر، لا، می."
+    },
+    {
+      "fr": "l'âme",
+      "fa": "جانِ ساز (میله صوتی)",
+      "emoji": "🪵",
+      "difficulty": 5,
+      "ex": "Sans son âme, le violon resterait muet.",
+      "ex_fa": "بدون جان، ویولن خاموش می‌ماند."
+    },
+    {
+      "fr": "la colophane",
+      "fa": "کلوفان (صمغ آرشه)",
+      "emoji": "🟡",
+      "difficulty": 5,
+      "ex": "La colophane permet aux crins de l'archet d'accrocher les cordes.",
+      "ex_fa": "کلوفان به موی آرشه اجازه می‌دهد سیم‌ها را بگیرد."
+    },
+    {
+      "fr": "l'ouïe",
+      "fa": "روزنه صوتی (سوراخ f)",
+      "emoji": "🎼",
+      "difficulty": 5,
+      "ex": "Les ouïes en forme de f laissent s'échapper la voix de l'instrument.",
+      "ex_fa": "روزنه‌های f‌شکل اجازه می‌دهند صدای ساز بیرون بزند."
+    },
+    {
+      "fr": "le manche",
+      "fa": "دسته ساز",
+      "emoji": "🪵",
+      "difficulty": 3,
+      "ex": "Le manche supporte la touche et permet le jeu de la main gauche.",
+      "ex_fa": "دسته، توشه را نگه می‌دارد و بازی دست چپ را ممکن می‌سازد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le violon rouge",
+      "text": "Niccolò Bussotti est un vieux {{BLANK_2}} de Crémone qui pratique la {{BLANK_1}} comme un art sacré. Pour son fils à naître, il façonne un {{BLANK_3}} exceptionnel. Il choisit un {{BLANK_6}} léger pour la table d'harmonie et un {{BLANK_7}} flammé pour le fond. Il sculpte la {{BLANK_8}} en ébène noir et ajuste le {{BLANK_9}} qui transmet les vibrations. Il tend les quatre {{BLANK_10}}s et glisse l'{{BLANK_11}}, ce petit poteau de bois qui donne sa voix à l'instrument. Il découpe l'{{BLANK_13}} élégante en forme de f. Enfin, il applique un mystérieux {{BLANK_5}} rouge sang. Le {{BLANK_14}} poli attend la main du musicien. Pour mordre les cordes, l'{{BLANK_4}} doit être frotté de {{BLANK_12}}. Ainsi naît un instrument maudit, condamné à survivre à tous ceux qui l'aimeront.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "lutherie",
+          "options": [
+            "lutherie",
+            "luthier",
+            "violon",
+            "archet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "luthier",
+          "options": [
+            "luthier",
+            "vernis",
+            "épicéa",
+            "érable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "violon",
+          "options": [
+            "violon",
+            "touche",
+            "chevalet",
+            "corde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "archet",
+          "options": [
+            "archet",
+            "âme",
+            "colophane",
+            "ouïe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "vernis",
+          "options": [
+            "vernis",
+            "manche",
+            "lutherie",
+            "luthier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "épicéa",
+          "options": [
+            "épicéa",
+            "violon",
+            "touche",
+            "chevalet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "érable",
+          "options": [
+            "érable",
+            "corde",
+            "âme",
+            "colophane"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "touche",
+          "options": [
+            "touche",
+            "ouïe",
+            "manche",
+            "archet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "chevalet",
+          "options": [
+            "chevalet",
+            "vernis",
+            "épicéa",
+            "érable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "corde",
+          "options": [
+            "corde",
+            "violon",
+            "touche",
+            "chevalet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "âme",
+          "options": [
+            "âme",
+            "colophane",
+            "ouïe",
+            "manche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "colophane",
+          "options": [
+            "colophane",
+            "archet",
+            "vernis",
+            "lutherie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "ouïe",
+          "options": [
+            "ouïe",
+            "luthier",
+            "violon",
+            "archet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "manche",
+          "options": [
+            "manche",
+            "épicéa",
+            "érable",
+            "touche"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le sang du bois",
+      "inspiration": "Le Violon rouge (François Girard, 1998)",
+      "text": "À peine le vieux Bussotti eut-il appliqué la dernière couche de {{BLANK_5}} que le destin scella le sort de l'instrument maudit. Ce {{BLANK_2}} de Crémone, veuf avant même d'être père, avait versé son chagrin dans la {{BLANK_1}} comme on verse du sang dans une coupe. Pour l'enfant qui ne naîtrait jamais, il choisit un {{BLANK_6}} aux fibres serrées, un {{BLANK_7}} flammé comme un coucher d'enfer. Sur la {{BLANK_8}} d'ébène, ses doigts traçaient les futures caresses de doigts inconnus. Il dressa le {{BLANK_9}} comme un autel, tendit les {{BLANK_10}}s qui chanteraient sa douleur, et glissa l'{{BLANK_11}} — cette petite colonne de bois que les initiés appellent l'âme — pour que l'instrument respire. Il perça l'{{BLANK_13}} en forme de f, deux blessures élégantes par où s'échapperait la voix. Le {{BLANK_14}} poli attendrait la main, et l'{{BLANK_4}}, frotté de {{BLANK_12}}, arracherait au bois le cri de trois siècles de larmes. Ainsi naquit le violon rouge, condamné à survivre à tous ceux qui l'aimeraient.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "lutherie",
+          "options": [
+            "lutherie",
+            "luthier",
+            "violon",
+            "archet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "luthier",
+          "options": [
+            "luthier",
+            "vernis",
+            "épicéa",
+            "érable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "violon",
+          "options": [
+            "violon",
+            "touche",
+            "chevalet",
+            "corde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "archet",
+          "options": [
+            "archet",
+            "âme",
+            "colophane",
+            "ouïe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "vernis",
+          "options": [
+            "vernis",
+            "manche",
+            "lutherie",
+            "luthier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "épicéa",
+          "options": [
+            "épicéa",
+            "violon",
+            "touche",
+            "chevalet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "érable",
+          "options": [
+            "érable",
+            "corde",
+            "âme",
+            "colophane"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "touche",
+          "options": [
+            "touche",
+            "ouïe",
+            "manche",
+            "archet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "chevalet",
+          "options": [
+            "chevalet",
+            "vernis",
+            "épicéa",
+            "érable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "cordes",
+          "options": [
+            "cordes",
+            "violon",
+            "touche",
+            "chevalet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "âme",
+          "options": [
+            "âme",
+            "colophane",
+            "ouïe",
+            "manche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "colophane",
+          "options": [
+            "colophane",
+            "archet",
+            "vernis",
+            "lutherie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "ouïe",
+          "options": [
+            "ouïe",
+            "luthier",
+            "violon",
+            "archet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "manche",
+          "options": [
+            "manche",
+            "épicéa",
+            "érable",
+            "touche"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Lutherie et violon",
+    "title_fa": "آزمون : سازسازی و ویولن",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'artisanat qui consiste à fabriquer et réparer les instruments à cordes frottées est la ____.",
+        "options": [
+          "lutherie",
+          "luthier",
+          "violon",
+          "archet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر ساخت سازهای زهی = lutherie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artisan qui construit et restaure les violons, altos et violoncelles est le ____.",
+        "options": [
+          "luthier",
+          "vernis",
+          "épicéa",
+          "érable"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استاد سازنده ویولن = luthier."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument à cordes frottées le plus aigu de sa famille, tenu sous le menton, est le ____.",
+        "options": [
+          "violon",
+          "touche",
+          "chevalet",
+          "corde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زیرترین ساز زهی آرشه‌ای = violon."
+      },
+      {
+        "type": "mcq",
+        "question": "La baguette de bois munie de crins tendus, servant à faire vibrer les cordes, est l'____.",
+        "options": [
+          "archet",
+          "âme",
+          "colophane",
+          "ouïe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چوب مودار برای نواختن = archet."
+      },
+      {
+        "type": "mcq",
+        "question": "La couche de protection colorée, souvent à l'huile, appliquée sur le bois de l'instrument est le ____.",
+        "options": [
+          "vernis",
+          "manche",
+          "lutherie",
+          "luthier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لاک محافظ و رنگی ساز = vernis."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bois léger et résonant, généralement des Alpes, utilisé pour la table d'harmonie est l'____.",
+        "options": [
+          "épicéa",
+          "violon",
+          "touche",
+          "chevalet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چوب سبک صفحه صوتی = épicéa."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bois dur, souvent flammé, utilisé pour le fond et les éclisses du violon est l'____.",
+        "options": [
+          "érable",
+          "corde",
+          "âme",
+          "colophane"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چوب سخت پشت و بدنه = érable."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie longue et lisse, généralement en ébène, où les doigts pressent les cordes est la ____.",
+        "options": [
+          "touche",
+          "ouïe",
+          "manche",
+          "archet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطح صاف فشار دادن سیم‌ها = touche."
+      },
+      {
+        "type": "mcq",
+        "question": "La petite pièce de bois qui soutient les cordes et transmet leurs vibrations à la table est le ____.",
+        "options": [
+          "chevalet",
+          "vernis",
+          "épicéa",
+          "érable"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پلک نگهدارنده سیم‌ها = chevalet."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fil tendu qui vibre pour produire le son, accordé en quintes, est la ____.",
+        "options": [
+          "corde",
+          "violon",
+          "touche",
+          "chevalet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیم لرزان تولید صدا = corde."
+      },
+      {
+        "type": "mcq",
+        "question": "La petite cheville de bois placée verticalement à l'intérieur de la caisse, essentielle à la sonorité, est l'____.",
+        "options": [
+          "âme",
+          "colophane",
+          "ouïe",
+          "manche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "میله چوبی درونی ساز = âme."
+      },
+      {
+        "type": "mcq",
+        "question": "La résine jaune frottée sur les crins de l'archet pour qu'ils accrochent les cordes est la ____.",
+        "options": [
+          "colophane",
+          "archet",
+          "vernis",
+          "lutherie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صمغ زرد روی موی آرشه = colophane."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ouverture découpée dans la table d'harmonie, en forme de f, qui laisse sortir le son est l'____.",
+        "options": [
+          "ouïe",
+          "luthier",
+          "violon",
+          "archet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روزنه f‌شکل خروج صدا = ouïe."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie allongée de l'instrument que la main gauche serre pour jouer les notes est le ____.",
+        "options": [
+          "manche",
+          "épicéa",
+          "érable",
+          "touche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش بلند گرفته‌شده با دست چپ = manche."
+      },
+      {
+        "type": "binary",
+        "question": "L'âme du violon est une pièce métallique visible à l'extérieur de l'instrument.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. جان (âme) یک میله چوبی کوچک در داخل بدنه است و از روزنه‌ها به سختی دیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La colophane permet aux crins de l'archet d'accrocher les cordes pour produire le son.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بدون کلوفان، موی آرشه روی سیم لیز می‌خورد و صدایی تولید نمی‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "L'épicéa est utilisé pour la touche du violon car c'est un bois très dur et noir.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. توشه (touche) از آبنوس (ébène) ساخته می‌شود؛ صنوبر (épicéa) برای صفحه صوتی است."
+      },
+      {
+        "type": "binary",
+        "question": "Les ouïes en forme de f permettent à la voix de l'instrument de s'échapper de la caisse de résonance.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. روزنه‌های f شکل خروج صدا از بدنه را ممکن می‌سازند."
+      },
+      {
+        "type": "binary",
+        "question": "Le chevalet est collé à la table d'harmonie pour le maintenir solidement en place.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. خرک (chevalet) فقط با فشار سیم‌ها سر جای خود می‌ماند و چسب نمی‌خورد."
+      },
+      {
+        "type": "binary",
+        "question": "Le luthier fabrique également des violoncelles, des altos et des contrebasses.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. لوتیه تمام سازهای خانواده زهی آرشه‌ای را می‌سازد."
+      }
+    ]
+  }
+}
