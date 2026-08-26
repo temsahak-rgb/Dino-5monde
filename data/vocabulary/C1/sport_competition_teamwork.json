@@ -1,0 +1,725 @@
+{
+  "id": "sport_competition_teamwork",
+  "level": "C1",
+  "theme": "Sport, compétition et travail d'équipe",
+  "theme_fa": "ورزش، رقابت و کار تیمی",
+  "icon": "⚽",
+  "inspiration": "Moneyball (Bennett Miller, 2011)",
+  "words": [
+    {
+      "fr": "la performance",
+      "fa": "عملکرد، کارایی",
+      "emoji": "🏆",
+      "difficulty": 3,
+      "ex": "La performance de l'équipe s'est améliorée cette saison.",
+      "ex_fa": "عملکرد تیم در این فصل بهبود یافته است."
+    },
+    {
+      "fr": "l'entraîneur",
+      "fa": "مربی",
+      "emoji": "👨‍🏫",
+      "difficulty": 3,
+      "ex": "L'entraîneur a motivé les joueurs avant le match.",
+      "ex_fa": "مربی بازیکنان را قبل از بازی انگیزه داد."
+    },
+    {
+      "fr": "la stratégie",
+      "fa": "استراتژی",
+      "emoji": "📊",
+      "difficulty": 4,
+      "ex": "La stratégie défensive a permis de gagner le match.",
+      "ex_fa": "استراتژی دفاعی امکان پیروزی در بازی را داد."
+    },
+    {
+      "fr": "le fair-play",
+      "fa": "رفتار جوانمردانه",
+      "emoji": "🤝",
+      "difficulty": 4,
+      "ex": "Le fair-play est une valeur essentielle dans le sport.",
+      "ex_fa": "رفتار جوانمردانه یک ارزش اساسی در ورزش است."
+    },
+    {
+      "fr": "le dopage",
+      "fa": "دوپینگ",
+      "emoji": "💊",
+      "difficulty": 4,
+      "ex": "Le dopage est interdit dans toutes les compétitions officielles.",
+      "ex_fa": "دوپینگ در تمام رقابت‌های رسمی ممنوع است."
+    },
+    {
+      "fr": "la cohésion",
+      "fa": "انسجام تیمی",
+      "emoji": "🔗",
+      "difficulty": 4,
+      "ex": "La cohésion de l'équipe est essentielle pour réussir.",
+      "ex_fa": "انسجام تیمی برای موفقیت ضروری است."
+    },
+    {
+      "fr": "l'arbitre",
+      "fa": "داور",
+      "emoji": "🏁",
+      "difficulty": 3,
+      "ex": "L'arbitre a sifflé une faute contre l'équipe adverse.",
+      "ex_fa": "داور خطایی علیه تیم حریف سوت زد."
+    },
+    {
+      "fr": "le championnat",
+      "fa": "قهرمانی، لیگ",
+      "emoji": "🏅",
+      "difficulty": 3,
+      "ex": "Le championnat de France de football attire des millions de spectateurs.",
+      "ex_fa": "لیگ فوتبال فرانسه میلیون‌ها تماشاگر جذب می‌کند."
+    },
+    {
+      "fr": "la victoire",
+      "fa": "پیروزی",
+      "emoji": "🎉",
+      "difficulty": 2,
+      "ex": "La victoire finale a été célébrée par toute la ville.",
+      "ex_fa": "پیروزی نهایی توسط تمام شهر جشن گرفته شد."
+    },
+    {
+      "fr": "la défaite",
+      "fa": "شکست",
+      "emoji": "😔",
+      "difficulty": 2,
+      "ex": "La défaite en finale a été difficile à accepter.",
+      "ex_fa": "شکست در فینال سخت پذیرفته شد."
+    },
+    {
+      "fr": "le record",
+      "fa": "رکورد",
+      "emoji": "📈",
+      "difficulty": 3,
+      "ex": "L'athlète a battu le record du monde du 100 mètres.",
+      "ex_fa": "ورزشکار رکورد جهانی ۱۰۰ متر را شکست."
+    },
+    {
+      "fr": "l'endurance",
+      "fa": "استقامت",
+      "emoji": "💪",
+      "difficulty": 4,
+      "ex": "Le marathon demande une grande endurance physique.",
+      "ex_fa": "ماراتن به استقامت بدنی بالایی نیاز دارد."
+    },
+    {
+      "fr": "la tactique",
+      "fa": "تاکتیک",
+      "emoji": "🎯",
+      "difficulty": 4,
+      "ex": "La tactique offensive a surpris l'équipe adverse.",
+      "ex_fa": "تاکتیک تهاجمی تیم حریف را غافلگیر کرد."
+    },
+    {
+      "fr": "le sponsor",
+      "fa": "حامی مالی",
+      "emoji": "💰",
+      "difficulty": 4,
+      "ex": "Le sponsor principal a renouvelé son contrat pour trois ans.",
+      "ex_fa": "حامی مالی اصلی قراردادش را برای سه سال تمدید کرد."
+    },
+    {
+      "fr": "la rivalité",
+      "fa": "رقابت شدید",
+      "emoji": "⚔️",
+      "difficulty": 4,
+      "ex": "La rivalité entre ces deux clubs dure depuis des décennies.",
+      "ex_fa": "رقابت شدید بین این دو باشگاه دهه‌هاست ادامه دارد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La saison décisive",
+      "title_fa": "فصل سرنوشت‌ساز",
+      "text": "Billy Beane est le directeur sportif des Oakland Athletics. Son équipe a un budget limité, mais il doit rivaliser avec des clubs riches. Il engage Peter Brand, un jeune analyste qui utilise les statistiques pour évaluer la {{BLANK_1}} des joueurs. Cette {{BLANK_2}} révolutionnaire choque les vieux scouts traditionnels. L'{{BLANK_3}}, Art Howe, refuse d'appliquer ces nouvelles méthodes. Mais Billy impose sa vision. L'équipe commence mal la saison, accumulant les {{BLANK_4}}. Les médias critiquent violemment Billy. Mais peu à peu, la {{BLANK_5}} de l'équipe se renforce. Les joueurs apprennent à jouer ensemble, développant une {{BLANK_6}} exceptionnelle. Ils adoptent une {{BLANK_7}} basée sur les données : patience à la batte, exploitation des faiblesses adverses. Un scandale éclate quand un joueur star est accusé de {{BLANK_8}}. Billy doit gérer la crise tout en maintenant le {{BLANK_9}} de l'équipe. La {{BLANK_10}} avec les Yankees de New York atteint son paroxysme lors d'un match crucial. L'{{BLANK_11}} prend des décisions controversées, provoquant la colère des supporters. Mais l'équipe développe une {{BLANK_12}} remarquable, enchaînant vingt victoires consécutives, battant tous les {{BLANK_13}}. Le {{BLANK_14}} principal, impressionné, double le budget pour l'année suivante. La {{BLANK_15}} finale est remportée, prouvant que l'intelligence peut vaincre l'argent.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "performance",
+          "options": [
+            "performance",
+            "stratégie",
+            "tactique",
+            "cohésion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "stratégie",
+          "options": [
+            "stratégie",
+            "performance",
+            "tactique",
+            "rivalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "entraîneur",
+          "options": [
+            "entraîneur",
+            "arbitre",
+            "sponsor",
+            "championnat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "défaites",
+          "options": [
+            "défaites",
+            "victoires",
+            "records",
+            "performances"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "cohésion",
+          "options": [
+            "cohésion",
+            "stratégie",
+            "tactique",
+            "rivalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "cohésion",
+          "options": [
+            "cohésion",
+            "performance",
+            "endurance",
+            "fair-play"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tactique",
+          "options": [
+            "tactique",
+            "stratégie",
+            "performance",
+            "cohésion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dopage",
+          "options": [
+            "dopage",
+            "fair-play",
+            "rivalité",
+            "défaite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "fair-play",
+          "options": [
+            "fair-play",
+            "dopage",
+            "record",
+            "championnat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "rivalité",
+          "options": [
+            "rivalité",
+            "cohésion",
+            "stratégie",
+            "performance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "arbitre",
+          "options": [
+            "arbitre",
+            "entraîneur",
+            "sponsor",
+            "championnat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "endurance",
+          "options": [
+            "endurance",
+            "performance",
+            "tactique",
+            "stratégie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "records",
+          "options": [
+            "records",
+            "défaites",
+            "championnats",
+            "sponsors"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "sponsor",
+          "options": [
+            "sponsor",
+            "arbitre",
+            "entraîneur",
+            "championnat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "victoire",
+          "options": [
+            "victoire",
+            "défaite",
+            "performance",
+            "stratégie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'équation impossible",
+      "title_fa": "معادله غیرممکن",
+      "inspiration": "Moneyball (Bennett Miller, 2011)",
+      "text": "À peine Billy Beane eut-il refermé le livre de statistiques que la vérité s'imposa à lui comme une révélation. Tout ce que le baseball croyait savoir depuis un siècle était faux. Les scouts, ces vieux briscards qui jugeaient les joueurs sur leur mâchoire carrée ou la façon dont ils couraient vers la première base, se trompaient systématiquement. Ce qui comptait vraiment, c'était ce que personne ne regardait : la capacité à atteindre les bases, la patience à la batte, cette statistique obscure qu'on appelait l'OBP. Billy, ancien joueur prometteur devenu directeur sportif des Oakland Athletics, vivait avec un budget de misère. Quarante millions de dollars pour construire une équipe, quand les Yankees en dépensaient cent vingt. C'était comme jouer au Monopoly avec des billets de monopoly face à quelqu'un qui avait la vraie banque. L'équation semblait impossible. Mais Peter Brand, ce jeune diplômé de Yale aux yeux fatigués, lui avait montré une autre voie. Une voie où les chiffres parlaient plus fort que les intuitions, où la {{BLANK_1}} mesurable remplaçait les impressions subjectives. Cette {{BLANK_2}} nouvelle, basée sur la sabermétrie, allait bouleverser un siècle de traditions. L'{{BLANK_3}} Art Howe, un homme taillé dans le granit des certitudes anciennes, refusa d'abord de jouer les joueurs que Billy lui imposait. « Ces types ne savent pas jouer au baseball, » grognait-il en regardant Scott Hatteberg, ce joueur reconverti dont le coude blessé semblait condamner la carrière. Mais Billy tint bon. Il savait que la {{BLANK_4}} de son système serait prouvée par les résultats, pas par les discours. Les premières semaines furent un désastre. L'équipe enchaînait les {{BLANK_5}}, les journaux titraient sur l'échec cuisant de l'expérience statistique. Billy, seul dans son bureau, regardait les matchs à la télévision, le visage impassible, mais le cœur serré. Pourtant, quelque chose changeait. Les joueurs, d'abord sceptiques, commençaient à comprendre. Ils développaient une {{BLANK_6}} inattendue, apprenant à se faire confiance, à compenser les faiblesses individuelles par la force collective. Billy leur avait donné une {{BLANK_7}} simple mais révolutionnaire : ne pas chercher les coups spectaculaires, mais accumuler les petites victoires, base après base, point après point. Un scandale éclata quand José Canseco, ancienne gloire du club, fut accusé de {{BLANK_8}} dans son livre à sensation. Billy dut gérer la tempête médiatique tout en maintenant le {{BLANK_9}} de ses propres joueurs, refusant toute suspicion collective. La {{BLANK_10}} avec les Yankees atteignit son paroxysme lors d'un match de septembre. Les New-Yorkais, avec leurs stars payées des fortunes, méprisaient ouvertement cette équipe de bras cassés qui osait les défier. L'{{BLANK_11}} de ce soir-là prit des décisions qui firent hurler les supporters d'Oakland, mais Billy resta impassible. Il savait que sur cent matchs, les décisions controversées s'équilibraient. Ce qui comptait, c'était la loi des grands nombres. Et puis vint la série de vingt victoires consécutives. Vingt matchs sans {{BLANK_12}}, un exploit qui stupéfia le monde du baseball. L'équipe développait une {{BLANK_13}} mentale remarquable, remontant des situations désespérées, trouvant toujours le joueur qu'il fallait au moment crucial. Ils battaient tous les {{BLANK_14}} de la franchise, écrivain une page d'histoire avec des noms que personne ne connaissait la saison précédente. Le {{BLANK_15}} principal, un homme d'affaires qui avait toujours considéré le baseball comme un hobby coûteux, appela Billy dans son bureau. « Vous avez prouvé quelque chose, » dit-il en signant un chèque qui doublait le budget pour l'année suivante. « Maintenant, montrez-moi jusqu'où on peut aller. » Billy sourit pour la première fois depuis des mois. Il savait que la vraie {{BLANK_16}} n'était pas dans les chiffres ou les dollars, mais dans cette idée folle qu'un groupe d'inadaptés pouvait, par la force de l'intelligence collective, défier les géants et gagner. Ce soir-là, en rentrant chez lui, il regarda sa fille dormir. Elle avait douze ans et croyait encore que son père était un héros. Peut-être, pensa-t-il, que c'était ça le plus beau trophée de tous.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "performance",
+          "options": [
+            "performance",
+            "stratégie",
+            "tactique",
+            "cohésion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "stratégie",
+          "options": [
+            "stratégie",
+            "performance",
+            "tactique",
+            "rivalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "entraîneur",
+          "options": [
+            "entraîneur",
+            "arbitre",
+            "sponsor",
+            "championnat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "performance",
+          "options": [
+            "performance",
+            "cohésion",
+            "stratégie",
+            "rivalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "défaites",
+          "options": [
+            "défaites",
+            "victoires",
+            "records",
+            "performances"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "cohésion",
+          "options": [
+            "cohésion",
+            "performance",
+            "endurance",
+            "fair-play"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tactique",
+          "options": [
+            "tactique",
+            "stratégie",
+            "performance",
+            "cohésion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dopage",
+          "options": [
+            "dopage",
+            "fair-play",
+            "rivalité",
+            "défaite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "fair-play",
+          "options": [
+            "fair-play",
+            "dopage",
+            "record",
+            "championnat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "rivalité",
+          "options": [
+            "rivalité",
+            "cohésion",
+            "stratégie",
+            "performance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "arbitre",
+          "options": [
+            "arbitre",
+            "entraîneur",
+            "sponsor",
+            "championnat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "défaite",
+          "options": [
+            "défaite",
+            "victoire",
+            "performance",
+            "stratégie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "endurance",
+          "options": [
+            "endurance",
+            "performance",
+            "tactique",
+            "stratégie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "records",
+          "options": [
+            "records",
+            "défaites",
+            "championnats",
+            "sponsors"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "sponsor",
+          "options": [
+            "sponsor",
+            "arbitre",
+            "entraîneur",
+            "championnat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "victoire",
+          "options": [
+            "victoire",
+            "défaite",
+            "performance",
+            "stratégie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Sport, compétition et management",
+    "title_fa": "آزمون : ورزش، رقابت و مدیریت",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Les statistiques montrent que ce joueur marque en moyenne deux buts par match. Sa ____ est exceptionnelle.",
+        "options": [
+          "performance",
+          "stratégie",
+          "tactique",
+          "cohésion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نتایج و کارایی یک ورزشکار = performance."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette personne dirige les entraînements, choisit les joueurs titulaires et donne les consignes pendant le match. C'est l'____.",
+        "options": [
+          "entraîneur",
+          "arbitre",
+          "sponsor",
+          "championnat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مربی و هدایت‌کننده تیم = entraîneur."
+      },
+      {
+        "type": "mcq",
+        "question": "Avant chaque match, l'équipe analyse les forces et faiblesses de l'adversaire pour élaborer une ____ globale.",
+        "options": [
+          "stratégie",
+          "performance",
+          "tactique",
+          "rivalité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برنامه کلی و بلندمدت = stratégie."
+      },
+      {
+        "type": "mcq",
+        "question": "Même après une défaite, les joueurs serrent la main de leurs adversaires et les félicitent. C'est du ____.",
+        "options": [
+          "fair-play",
+          "dopage",
+          "rivalité",
+          "défaite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رفتار محترمانه و جوانمردانه = fair-play."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce cycliste a été contrôlé positif à l'EPO et a été disqualifié pour ____.",
+        "options": [
+          "dopage",
+          "fair-play",
+          "rivalité",
+          "défaite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استفاده از مواد ممنوعه برای بهبود عملکرد = dopage."
+      },
+      {
+        "type": "mcq",
+        "question": "Les joueurs de cette équipe se connaissent depuis des années et anticipent parfaitement les mouvements de leurs coéquipiers. Leur ____ est remarquable.",
+        "options": [
+          "cohésion",
+          "stratégie",
+          "tactique",
+          "rivalité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هماهنگی و انسجام بین اعضای تیم = cohésion."
+      },
+      {
+        "type": "mcq",
+        "question": "Sur le terrain, cette personne en noir siffle les fautes, distribue les cartons jaunes et rouges. C'est l'____.",
+        "options": [
+          "arbitre",
+          "entraîneur",
+          "sponsor",
+          "championnat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قضاوت‌کننده بازی = arbitre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le PSG dispute chaque année le ____ de France de football contre dix-neuf autres équipes.",
+        "options": [
+          "championnat",
+          "record",
+          "sponsor",
+          "arbitre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لیگ یا مسابقات قهرمانی فصلی = championnat."
+      },
+      {
+        "type": "mcq",
+        "question": "Après avoir gagné la finale trois buts à un, les joueurs célèbrent leur ____ en soulevant le trophée.",
+        "options": [
+          "victoire",
+          "défaite",
+          "performance",
+          "stratégie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیروزی در مسابقه = victoire."
+      },
+      {
+        "type": "mcq",
+        "question": "L'équipe a perdu le match décisif et n'a pas pu se qualifier pour les play-offs. Cette ____ est difficile à digérer.",
+        "options": [
+          "défaite",
+          "victoire",
+          "performance",
+          "stratégie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باخت و شکست = défaite."
+      },
+      {
+        "type": "mcq",
+        "question": "Usain Bolt détient le ____ du monde du 100 mètres en 9,58 secondes depuis 2009.",
+        "options": [
+          "record",
+          "championnat",
+          "sponsor",
+          "arbitre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بهترین نتیجه ثبت‌شده = record."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour courir un marathon de 42 kilomètres, il faut une excellente ____ cardiovasculaire.",
+        "options": [
+          "endurance",
+          "performance",
+          "tactique",
+          "stratégie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توانایی تحمل فعالیت طولانی = endurance."
+      },
+      {
+        "type": "mcq",
+        "question": "Pendant le match, le coach change de formation et demande à ses ailiers de percuter sur les côtés. Cette ____ porte ses fruits.",
+        "options": [
+          "tactique",
+          "stratégie",
+          "performance",
+          "cohésion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روش اجرایی و کوتاه‌مدت = tactique."
+      },
+      {
+        "type": "mcq",
+        "question": "Nike verse des millions d'euros par an à cette équipe pour que son logo apparaisse sur les maillots. C'est un ____.",
+        "options": [
+          "sponsor",
+          "arbitre",
+          "entraîneur",
+          "championnat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حامی مالی = sponsor."
+      },
+      {
+        "type": "mcq",
+        "question": "Quand le Real Madrid affronte le FC Barcelone, la ____ entre ces deux clubs dépasse le cadre sportif.",
+        "options": [
+          "rivalité",
+          "cohésion",
+          "stratégie",
+          "performance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رقابت شدید و تاریخی = rivalité."
+      },
+      {
+        "type": "binary",
+        "question": "La stratégie et la tactique désignent exactement la même chose dans le domaine sportif.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "stratégie برنامه کلی و بلندمدت است، tactique اقدامات اجرایی و کوتاه‌مدت."
+      },
+      {
+        "type": "binary",
+        "question": "Le fair-play implique de respecter les règles et ses adversaires même dans la défaite.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. fair-play یعنی رفتار محترمانه در همه شرایط."
+      },
+      {
+        "type": "binary",
+        "question": "Le dopage est autorisé dans certains sports professionnels sous contrôle médical.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. دوپینگ در تمام ورزش‌های حرفه‌ای ممنوع است."
+      },
+      {
+        "type": "binary",
+        "question": "La cohésion d'équipe peut compenser un manque de talent individuel.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کار تیمی قوی می‌تواند کمبود استعداد فردی را جبران کند."
+      },
+      {
+        "type": "binary",
+        "question": "Un record est une performance qui n'a jamais été égalée ou dépassée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. record بهترین نتیجه ثبت‌شده تا آن لحظه است."
+      }
+    ]
+  }
+}
