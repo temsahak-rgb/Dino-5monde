@@ -1,0 +1,680 @@
+{
+  "id": "gastronomy_culinary",
+  "level": "C1",
+  "theme": "Gastronomie, haute cuisine et art culinaire",
+  "theme_fa": "غذای لذیذ، آشپزی سطح بالا و هنر آشپزی",
+  "icon": "🍽️",
+  "inspiration": "Ratatouille (Brad Bird, Pixar, 2007)",
+  "words": [
+    {
+      "fr": "la gastronomie",
+      "fa": "هنر آشپزی و خوراک‌شناسی",
+      "emoji": "🍷",
+      "difficulty": 4,
+      "ex": "La gastronomie française est inscrite au patrimoine mondial de l'UNESCO.",
+      "ex_fa": "هنر آشپزی فرانسوی در میراث جهانی یونسکو ثبت شده است."
+    },
+    {
+      "fr": "le chef étoilé",
+      "fa": "سرآشپز ستاره‌دار (میشلن)",
+      "emoji": "👨‍🍳",
+      "difficulty": 4,
+      "ex": "Le chef étoilé a perdu une étoile au guide Michelin cette année.",
+      "ex_fa": "سرآشپز ستاره‌دار امسال یک ستاره از راهنمای میشلن را از دست داد."
+    },
+    {
+      "fr": "la recette",
+      "fa": "دستور پخت",
+      "emoji": "📖",
+      "difficulty": 3,
+      "ex": "Cette recette de famille se transmet de génération en génération.",
+      "ex_fa": "این دستور پخت خانوادگی نسل به نسل منتقل می‌شود."
+    },
+    {
+      "fr": "le ragoût",
+      "fa": "خوراک گوشت و سبزیجات (خورشت)",
+      "emoji": "🍲",
+      "difficulty": 4,
+      "ex": "Le ragoût doit mijoter pendant des heures pour être tendre.",
+      "ex_fa": "خورشت باید ساعت‌ها بپزد تا نرم شود."
+    },
+    {
+      "fr": "la pâtisserie",
+      "fa": "شیرینی‌پزی، قنادی",
+      "emoji": "🥐",
+      "difficulty": 3,
+      "ex": "La pâtisserie française exige une précision de chimiste.",
+      "ex_fa": "شیرینی‌پزی فرانسوی به دقت یک شیمیدان نیاز دارد."
+    },
+    {
+      "fr": "le palais",
+      "fa": "چشایی، ذائقه",
+      "emoji": "👅",
+      "difficulty": 4,
+      "ex": "Un grand cuisinier doit avoir le palais absolu.",
+      "ex_fa": "یک آشپز بزرگ باید ذائقه‌ای بی‌نقص داشته باشد."
+    },
+    {
+      "fr": "l'umami",
+      "fa": "اومامی (طعم پنجم، لذیذ)",
+      "emoji": "🍄",
+      "difficulty": 5,
+      "ex": "Les champignons séchés apportent une touche d'umami au bouillon.",
+      "ex_fa": "قارچ‌های خشک‌شده لمس اومامی را به آبگوشت می‌بخشند."
+    },
+    {
+      "fr": "le dressage",
+      "fa": "چیدمان و تزیین بشقاب",
+      "emoji": "🍽️",
+      "difficulty": 5,
+      "ex": "Le dressage de l'assiette est la dernière touche artistique du plat.",
+      "ex_fa": "چیدمان بشقاب، آخرین لمس هنری غذاست."
+    },
+    {
+      "fr": "la marinade",
+      "fa": "مواد خواباندن گوشت (مرینید)",
+      "emoji": "🥣",
+      "difficulty": 4,
+      "ex": "La viande repose dans une marinade au vin rouge et aux herbes.",
+      "ex_fa": "گوشت در مخلوطی از شراب قرمز و سبزیجات استراحت می‌کند."
+    },
+    {
+      "fr": "le bouquet garni",
+      "fa": "دسته سبزیجات معطر",
+      "emoji": "🌿",
+      "difficulty": 5,
+      "ex": "On retire le bouquet garni avant de servir le pot-au-feu.",
+      "ex_fa": "دسته سبزیجات معطر را قبل از سرو غذا خارج می‌کنند."
+    },
+    {
+      "fr": "la réduction",
+      "fa": "سس غلیظ‌شده (کاهش حجم)",
+      "emoji": "🍯",
+      "difficulty": 5,
+      "ex": "La réduction de vinaigre balsamique sublime les fraises.",
+      "ex_fa": "سس غلیظ بالزامیک، توت‌فرنگی‌ها را بی‌نظیر می‌کند."
+    },
+    {
+      "fr": "le croustillant",
+      "fa": "ترد بودن، хруст",
+      "emoji": "🥖",
+      "difficulty": 4,
+      "ex": "Le croustillant de la baguette contraste avec la mie moelleuse.",
+      "ex_fa": "تردی باگت با مغز نرم آن تضاد دارد."
+    },
+    {
+      "fr": "la truffe",
+      "fa": "دنبلان (قارچ گران‌قیمت)",
+      "emoji": "🍄",
+      "difficulty": 4,
+      "ex": "La truffe noire du Périgord est surnommée le diamant noir.",
+      "ex_fa": "دنبلان سیاه پریگور به الماس سیاه ملقب است."
+    },
+    {
+      "fr": "le critique gastronomique",
+      "fa": "منتقد غذا و رستوران",
+      "emoji": "✍️",
+      "difficulty": 5,
+      "ex": "Un seul article du critique gastronomique peut ruiner un restaurant.",
+      "ex_fa": "تنها یک مقاله از منتقد غذا می‌تواند یک رستوران را نابود کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le petit rat de Paris",
+      "text": "Rémy, un petit rat doté d'un {{BLANK_6}} exceptionnel, rêve de {{BLANK_1}}. Il arrive à Paris et découvre le restaurant d'un grand {{BLANK_2}} récemment décédé. En lisant une vieille {{BLANK_3}}, il décide de préparer un {{BLANK_4}} provençal traditionnel. Il fait d'abord reposer les légumes dans une {{BLANK_9}} à l'huile d'olive et au thym. Pendant la cuisson, il ajoute un {{BLANK_10}} pour parfumer le bouillon. Il surveille la {{BLANK_11}} du jus de cuisson pour créer une sauce onctueuse. Pour accompagner le plat, il prépare un pain dont le {{BLANK_12}} rappellera la campagne. En dessert, il réalise une {{BLANK_5}} complexe à base de chocolat. Il râpe ensuite une précieuse {{BLANK_13}} sur des pâtes fraîches. Il cherche toujours à éveiller la cinquième saveur, l'{{BLANK_7}}, pour sublimer ses créations. Quand l'assiette est prête, il soigne méticuleusement le {{BLANK_8}} pour en faire une œuvre d'art visuelle. Le lendemain, le redoutable {{BLANK_14}} entre dans la salle pour juger le restaurant. Une seule bouchée suffira à lui rappeler les saveurs de son enfance.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "gastronomie",
+          "options": [
+            "gastronomie",
+            "pâtisserie",
+            "marinade",
+            "umami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "chef étoilé",
+          "options": [
+            "chef étoilé",
+            "critique gastronomique",
+            "ragoût",
+            "palais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "recette",
+          "options": [
+            "recette",
+            "truffe",
+            "réduction",
+            "bouquet garni"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "ragoût",
+          "options": [
+            "ragoût",
+            "dressage",
+            "croustillant",
+            "umami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pâtisserie",
+          "options": [
+            "pâtisserie",
+            "gastronomie",
+            "marinade",
+            "truffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "palais",
+          "options": [
+            "palais",
+            "croustillant",
+            "bouquet garni",
+            "réduction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "umami",
+          "options": [
+            "umami",
+            "dressage",
+            "chef étoilé",
+            "ragoût"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dressage",
+          "options": [
+            "dressage",
+            "recette",
+            "pâtisserie",
+            "palais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "marinade",
+          "options": [
+            "marinade",
+            "truffe",
+            "gastronomie",
+            "croustillant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "bouquet garni",
+          "options": [
+            "bouquet garni",
+            "critique gastronomique",
+            "umami",
+            "réduction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "réduction",
+          "options": [
+            "réduction",
+            "marinade",
+            "dressage",
+            "pâtisserie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "croustillant",
+          "options": [
+            "croustillant",
+            "bouquet garni",
+            "gastronomie",
+            "palais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "truffe",
+          "options": [
+            "truffe",
+            "recette",
+            "ragoût",
+            "umami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "critique gastronomique",
+          "options": [
+            "critique gastronomique",
+            "chef étoilé",
+            "croustillant",
+            "dressage"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le souvenir en bouchée",
+      "inspiration": "Ratatouille (Brad Bird, Pixar, 2007)",
+      "text": "À peine le {{BLANK_14}} Anton Ego eut-il posé sa fourchette sur la nappe immaculée qu'un silence de cathédrale s'abattit sur la salle. Ce restaurant parisien, autrefois temple de la {{BLANK_1}} mondiale, avait perdu ses étoiles et son âme depuis la mort de son fondateur. Ego, cet homme au visage de rapace et au cœur de glace, s'attendait à un désastre. Par pur mépris, il avait commandé un plat de paysan, un simple {{BLANK_4}} provençal, pour humilier l'établissement. Mais quand le cuisinier apporta l'assiette, le {{BLANK_8}} était d'une précision géométrique, une architecture de légumes confits qui défiait la lourdeur traditionnelle de ce mets rustique. Ego porta la première bouchée à ses lèvres. Soudain, le temps se fractura. Le goût le propulsa brutalement dans son enfance, dans la cuisine baignée de soleil de sa mère, où ce même plat mijotait avec un {{BLANK_10}} frais du jardin. La viande, longuement préparée dans une {{BLANK_9}} aux herbes, fondait sous la dent. La {{BLANK_11}} du jus de cuisson, concentrée par des heures de patience, enrobait les courgettes et les aubergines d'un velours sombre et brillant. Ce n'était pas de la simple cuisine, c'était de la mémoire pure, liquide et brûlante. Il sentit sur son {{BLANK_6}} l'explosion subtile de l'{{BLANK_7}}, cette profondeur mystérieuse que les plus grands {{BLANK_2}}s recherchent toute leur vie sans toujours la trouver. Même le pain, avec son {{BLANK_12}} parfait, semblait raconter l'histoire d'un matin de moisson. Il n'y avait pas de {{BLANK_13}} râpée à prix d'or ni de {{BLANK_5}} sucrée et complexe pour masquer la vérité des ingrédients, juste l'honnêteté absolue d'une {{BLANK_3}} transmise par amour. Ego laissa tomber son stylo sur le carnet. Demain, son article détruirait le mythe du grand chef, mais il savait désormais que la véritable magie ne se trouvait pas dans les palaces étoilés, mais dans les mains invisibles qui osaient cuisiner avec leur cœur.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "gastronomie",
+          "options": [
+            "gastronomie",
+            "pâtisserie",
+            "marinade",
+            "umami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "chefs étoilés",
+          "options": [
+            "chefs étoilés",
+            "critiques gastronomiques",
+            "ragoûts",
+            "palais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "recette",
+          "options": [
+            "recette",
+            "truffe",
+            "réduction",
+            "bouquet garni"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "ragoût",
+          "options": [
+            "ragoût",
+            "dressage",
+            "croustillant",
+            "umami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pâtisserie",
+          "options": [
+            "pâtisserie",
+            "gastronomie",
+            "marinade",
+            "truffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "palais",
+          "options": [
+            "palais",
+            "croustillant",
+            "bouquet garni",
+            "réduction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "umami",
+          "options": [
+            "umami",
+            "dressage",
+            "chef étoilé",
+            "ragoût"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dressage",
+          "options": [
+            "dressage",
+            "recette",
+            "pâtisserie",
+            "palais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "marinade",
+          "options": [
+            "marinade",
+            "truffe",
+            "gastronomie",
+            "croustillant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "bouquet garni",
+          "options": [
+            "bouquet garni",
+            "critique gastronomique",
+            "umami",
+            "réduction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "réduction",
+          "options": [
+            "réduction",
+            "marinade",
+            "dressage",
+            "pâtisserie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "croustillant",
+          "options": [
+            "croustillant",
+            "bouquet garni",
+            "gastronomie",
+            "palais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "truffe",
+          "options": [
+            "truffe",
+            "recette",
+            "ragoût",
+            "umami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "critique gastronomique",
+          "options": [
+            "critique gastronomique",
+            "chef étoilé",
+            "croustillant",
+            "dressage"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Gastronomie et art culinaire",
+    "title_fa": "آزمون : خوراک‌شناسی و هنر آشپزی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art de préparer des mets raffinés et de déguster la bonne chère, considéré comme une culture à part entière, est la ____.",
+        "options": [
+          "gastronomie",
+          "pâtisserie",
+          "marinade",
+          "umami"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر پخت و چشیدن غذای عالی = gastronomie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le cuisinier de haut niveau qui a été récompensé par le prestigieux guide Michelin pour l'excellence de sa table est le ____.",
+        "options": [
+          "chef étoilé",
+          "critique gastronomique",
+          "ragoût",
+          "palais"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سرآشپز برنده ستاره میشلن = chef étoilé."
+      },
+      {
+        "type": "mcq",
+        "question": "Le document qui détaille les ingrédients et les étapes nécessaires pour préparer un plat spécifique est la ____.",
+        "options": [
+          "recette",
+          "truffe",
+          "réduction",
+          "bouquet garni"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستور پخت غذا = recette."
+      },
+      {
+        "type": "mcq",
+        "question": "Le plat mijoté composé de morceaux de viande et de légumes cuits longuement dans une sauce est le ____.",
+        "options": [
+          "ragoût",
+          "dressage",
+          "croustillant",
+          "umami"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خورشت و خوراک گوشت و سبزیجات = ragoût."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de préparer des desserts, des gâteaux et des viennoiseries est la ____.",
+        "options": [
+          "pâtisserie",
+          "gastronomie",
+          "marinade",
+          "truffe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر شیرینی‌پزی و قنادی = pâtisserie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'organe du goût, ou par extension la capacité d'un dégustateur à analyser les saveurs, est le ____.",
+        "options": [
+          "palais",
+          "croustillant",
+          "bouquet garni",
+          "réduction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حس چشایی و ذائقه = palais."
+      },
+      {
+        "type": "mcq",
+        "question": "La cinquième saveur fondamentale, découverte au Japon, qui correspond au goût savoureux et profond des aliments, est l'____.",
+        "options": [
+          "umami",
+          "dressage",
+          "chef étoilé",
+          "ragoût"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طعم پنجم و لذیذ = umami."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de disposer les aliments dans l'assiette de manière esthétique et harmonieuse avant le service est le ____.",
+        "options": [
+          "dressage",
+          "recette",
+          "pâtisserie",
+          "palais"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چیدمان و تزیین بشقاب = dressage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le liquide aromatisé (vin, huile, herbes) dans lequel on fait reposer une viande ou un poisson avant cuisson est la ____.",
+        "options": [
+          "marinade",
+          "truffe",
+          "gastronomie",
+          "croustillant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مایع طعم‌دار برای خواباندن گوشت = marinade."
+      },
+      {
+        "type": "mcq",
+        "question": "L'assemblage de tiges de persil, de thym et de laurier ficelées ensemble pour parfumer les bouillons est le ____.",
+        "options": [
+          "bouquet garni",
+          "critique gastronomique",
+          "umami",
+          "réduction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دسته سبزیجات معطر گره‌خورده = bouquet garni."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique culinaire qui consiste à faire évaporer l'eau d'un liquide pour en concentrer les arômes et l'épaissir est la ____.",
+        "options": [
+          "réduction",
+          "marinade",
+          "dressage",
+          "pâtisserie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "غلیظ کردن سس با تبخیر آب = réduction."
+      },
+      {
+        "type": "mcq",
+        "question": "La texture d'un aliment qui croque agréablement sous la dent, comme une baguette fraîche, est le ____.",
+        "options": [
+          "croustillant",
+          "bouquet garni",
+          "gastronomie",
+          "palais"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بافت ترد و хрустящий = croustillant."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce champignon souterrain très rare et coûteux, prized pour son arôme puissant, est la ____.",
+        "options": [
+          "truffe",
+          "recette",
+          "ragoût",
+          "umami"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قارچ زیرزمینی و گران‌قیمت = truffe."
+      },
+      {
+        "type": "mcq",
+        "question": "Le journaliste spécialisé qui visite les restaurants pour en évaluer la qualité et publier ses avis dans la presse est le ____.",
+        "options": [
+          "critique gastronomique",
+          "chef étoilé",
+          "croustillant",
+          "dressage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "منتقد و روزنامه‌نگار غذا = critique gastronomique."
+      },
+      {
+        "type": "binary",
+        "question": "L'umami est l'une des cinq saveurs fondamentales, au même titre que le sucré, le salé, l'acide et l'amer.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اومامی پنجمین طعم اصلی در کنار شیرینی، شوری، ترشی و تلخی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le bouquet garni est généralement servi et mangé avec le plat final.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. دسته سبزیجات فقط برای طعم‌دهی در دیگ است و قبل از سرو خارج می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La réduction d'une sauce permet de concentrer ses arômes en faisant évaporer une partie de son eau.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کاهش حجم مایعات باعث غلیظ شدن و تمرکز طعم سس می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le dressage désigne l'action de cuire la viande à très haute température.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. dressage به معنای چیدمان هنری غذا در بشقاب است."
+      },
+      {
+        "type": "binary",
+        "question": "La truffe noire est un champignon très apprécié en gastronomie pour son parfum unique et son prix élevé.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دنبلان سیاه به دلیل عطر خاص و قیمت بالا در آشپزی لوکس بسیار ارزشمند است."
+      },
+      {
+        "type": "binary",
+        "question": "Un chef étoilé est un cuisinier qui a perdu toutes ses distinctions au guide Michelin.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. chef étoilé سرآشپزی است که حداقل یک ستاره میشلن به دست آورده است."
+      }
+    ]
+  }
+}
