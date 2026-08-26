@@ -32,77 +32,15 @@ async function showTravelHome() {
 async function showDailyLesson(lessonId) {
     await showSmartLesson("daily", lessonId);
 }
-
 async function showTravelLesson(lessonId) {
-    await showSmartLesson("travel", lessonId);
-}
-
-// تابع هوشمند مرکزی که همه چیز را مدیریت می‌کند
-async function showSmartLesson(type, lessonId) {
-    const lang = localStorage.getItem("language") || "fr";
-    app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">⏳ در حال بارگذاری...</p></div>`;
-    
-    let lessonData = null;
-    
-    // ۱. اول پوشه lessons را چک می‌کند (جایی که ربات فایل‌ها را ساخت)
-    try {
-        const res1 = await fetch(`./data/${type}/lessons/${lessonId}.json?v=${Date.now()}`, { cache: "no-store" });
-        if (res1.ok) lessonData = await res1.json();
-    } catch (e) {}
-
-    // ۲. اگر پیدا نشد، پوشه اصلی type را چک می‌کند
-    if (!lessonData) {
-        try {
-            const res2 = await fetch(`./data/${type}/${lessonId}.json?v=${Date.now()}`, { cache: "no-store" });
-            if (res2.ok) lessonData = await res2.json();
-        } catch (e) {}
-    }
-
-    // ۳. اگر هنوز پیدا نشد، پیام خطای دقیق می‌دهد
-    if (!lessonData) { 
-        app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;">
-            <p style="font-size:48px;margin-bottom:10px;">🚧</p>
-            <p style="font-size:16px;color:#1a1a1a;font-weight:700;">درس پیدا نشد</p>
-            <p style="font-size:13px;color:#777;margin-top:10px;direction:ltr;">
-                File not found: <code>data/${type}/lessons/${lessonId}.json</code><br>
-                or <code>data/${type}/${lessonId}.json</code>
-            </p>
-            <button onclick="type === 'travel' ? showTravelPage() : showHome()" style="margin-top:20px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;font-weight:700;">${lang === "fa" ? "بازگشت به لیست" : "Retour"}</button>
-        </div>`; 
-        return; 
-    }
-
-    // 🌟 ۴. جادوی سازگاری: اگر فایل miniLessons دارد اما کد قدیمی sections می‌خواهد، آن را تبدیل می‌کند
-    if (!lessonData.sections && lessonData.miniLessons) {
-        lessonData.sections = lessonData.miniLessons.map(m => ({
-            id: m.id,
-            title: m.title,
-            title_fa: m.title,
-            type: m.type,
-            words: m.words || [],
-            tips: m.tips || [],
-            displayCount: m.displayCount || 10
-        }));
-    }
-
-    // ۵. نمایش محتوا
-    if (typeof showLessonContent === 'function' && lessonData.sections && lessonData.sections.length > 0) {
-        // اگر موتور قدیمی وجود دارد، از آن استفاده می‌کند
-        showLessonContent(lessonId, lessonData.sections[0]);
-    } else if (typeof showTravelLessonContent === 'function' && type === 'travel') {
-        // اگر تابع جدید travel.js لود شده باشد، از آن استفاده می‌کند
-        window.currentTravelLesson = lessonData;
-        showTravelLessonContent(lessonId);
+    // این خط باعث می‌شود سایت مستقیماً از موتور جدید travel.js استفاده کند
+    // و دیگر کاری به lessonEngine.js و تمرین‌ها نداشته باشد
+    if (typeof renderTravelLessonPage === 'function') {
+        await renderTravelLessonPage(lessonId);
     } else {
-        // فال‌بک نهایی اگر هیچکدام کار نکرد
-        app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;">
-            <p style="font-size:18px;color:#dc2626;">⚠️ خطا در نمایش درس</p>
-            <p style="font-size:13px;color:#777;">ساختار فایل خوانده شد اما تابع نمایش آن در دسترس نیست.</p>
-            <button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;cursor:pointer;">بازگشت</button>
-        </div>`;
+        app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p>⚠️ travel.js بارگذاری نشده است.</p><button onclick="showTravelPage()">بازگشت</button></div>`;
     }
 }
-
 // ===============================
 // موتور تمرین (مشترک بین گرامر، سفر و روزمره)
 // ===============================
