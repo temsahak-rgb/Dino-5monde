@@ -1,0 +1,604 @@
+{
+  "id": "hospital_mental",
+  "level": "C1",
+  "theme": "Hôpital, médecine et santé mentale",
+  "theme_fa": "بیمارستان، پزشکی و سلامت روان",
+  "icon": "🏥",
+  "inspiration": "Shutter Island (Dennis Lehane / Martin Scorsese, 2010)",
+  "words": [
+    {
+      "fr": "la catatonie",
+      "fa": "کاتاتونیا (بی‌حرکتی و انزوای شدید)",
+      "emoji": "🧍",
+      "difficulty": 5,
+      "ex": "Le patient est resté des heures dans un état de catatonie, le regard fixe.",
+      "ex_fa": "بیمار ساعت‌ها در حالت کاتاتونیا (بی‌حرکتی مطلق) با نگاهی خیره ماند."
+    },
+    {
+      "fr": "la neurasthénie",
+      "fa": "نوراستنی (ضعف اعصاب و خستگی مفرط)",
+      "emoji": "🔋",
+      "difficulty": 5,
+      "ex": "Au XIXe siècle, on diagnostiquait souvent la neurasthénie chez les intellectuels épuisés.",
+      "ex_fa": "در قرن نوزدهم، اغلب روشنفکران خسته را به نوراستنی تشخیص می‌دادند."
+    },
+    {
+      "fr": "l'hypocondrie",
+      "fa": "خودبیمارانگاری",
+      "emoji": "🩺",
+      "difficulty": 4,
+      "ex": "Son hypocondrie le pousse à consulter un médecin pour la moindre égratignure.",
+      "ex_fa": "خودبیمارانگاری‌اش او را وادار می‌کند برای کوچک‌ترین خراشی به پزشک مراجعه کند."
+    },
+    {
+      "fr": "la nosographie",
+      "fa": "طبقه‌بندی و نام‌گذاری بیماری‌ها",
+      "emoji": "📖",
+      "difficulty": 5,
+      "ex": "La nosographie psychiatrique a beaucoup évolué avec les nouvelles éditions du DSM.",
+      "ex_fa": "طبقه‌بندی بیماری‌های روانی با نسخه‌های جدید DSM بسیار تحول یافته است."
+    },
+    {
+      "fr": "le délire de persécution",
+      "fa": "هذیان گزند و آسیب",
+      "emoji": "👁️",
+      "difficulty": 4,
+      "ex": "Il est persuadé que ses voisins espionnent ses pensées : c'est un délire de persécution.",
+      "ex_fa": "او مطمئن است که همسایگانش افکارش را جاسوسی می‌کنند: این یک هذیان گزند و آسیب است."
+    },
+    {
+      "fr": "l'éréthisme",
+      "fa": "تحریک‌پذیری عصبی و بی‌قراری",
+      "emoji": "⚡",
+      "difficulty": 5,
+      "ex": "L'éréthisme nerveux de ce patient rend tout interrogatoire médical très difficile.",
+      "ex_fa": "تحریک‌پذیری عصبی این بیمار هرگونه بازجویی پزشکی را بسیار دشوار می‌کند."
+    },
+    {
+      "fr": "la psychasthénie",
+      "fa": "روان‌استنی (ضعف اراده و وسواس)",
+      "emoji": "🧩",
+      "difficulty": 5,
+      "ex": "La psychasthénie se manifeste par des doutes constants et des rituels obsessifs.",
+      "ex_fa": "روان‌استنی با شک‌های مداوم و مناسک وسواسی ظاهر می‌شود."
+    },
+    {
+      "fr": "le somnambulisme",
+      "fa": "راه‌روی در خواب",
+      "emoji": "🌙",
+      "difficulty": 4,
+      "ex": "Le somnambulisme peut être dangereux si le patient sort de la maison.",
+      "ex_fa": "راه‌روی در خواب می‌تواند خطرناک باشد اگر بیمار از خانه خارج شود."
+    },
+    {
+      "fr": "la paranoïa",
+      "fa": "پارانویا (بدبینی و سوءظن بیمارگونه)",
+      "emoji": "🕵️",
+      "difficulty": 4,
+      "ex": "Sa paranoïa l'isole socialement, car il ne fait plus confiance à personne.",
+      "ex_fa": "پارانویای او باعث انزوای اجتماعی‌اش شده، زیرا دیگر به کسی اعتماد نمی‌کند."
+    },
+    {
+      "fr": "la mégalomanie",
+      "fa": "خودبزرگ‌بینی و توهم قدرت",
+      "emoji": "👑",
+      "difficulty": 4,
+      "ex": "Le dictateur souffrait d'une mégalomanie qui lui faisait croire à sa propre divinité.",
+      "ex_fa": "دیکتاتور از خودبزرگ‌بینی رنج می‌برد که باعث می‌شد به الوهیت خود باور داشته باشد."
+    },
+    {
+      "fr": "la dysphorie",
+      "fa": "ملال، نارضایتی و بی‌قراری عمیق",
+      "emoji": "🌧️",
+      "difficulty": 5,
+      "ex": "La dysphorie de genre provoque une souffrance intense liée à l'identité sexuelle.",
+      "ex_fa": "ملال جنسیتی باعث رنجشی عمیق مرتبط با هویت جنسی می‌شود."
+    },
+    {
+      "fr": "l'anhédonie",
+      "fa": "لذت‌نبردنی (ناتوانی در احساس شادی)",
+      "emoji": "🕳️",
+      "difficulty": 5,
+      "ex": "L'anhédonie est un symptôme central de la dépression mélancolique.",
+      "ex_fa": "لذت‌نبردنی یکی از علائم مرکزی افسردگی ملانکولیک است."
+    },
+    {
+      "fr": "la logorrhée",
+      "fa": "پرحرفی بیمارگونه و بی‌وقفه",
+      "emoji": "🗣️",
+      "difficulty": 5,
+      "ex": "En phase maniaque, le patient présente une logorrhée que rien ne peut interrompre.",
+      "ex_fa": "در فاز شیدایی، بیمار دچار پرحرفی بیمارگونه‌ای می‌شود که هیچ‌چیز نمی‌تواند آن را متوقف کند."
+    },
+    {
+      "fr": "la bradypsychie",
+      "fa": "کندی تفکر و پردازش ذهنی",
+      "emoji": "🐌",
+      "difficulty": 5,
+      "ex": "La bradypsychie observée chez ce patient ralentit considérablement ses réponses.",
+      "ex_fa": "کندی تفکر مشاهده‌شده در این بیمار، پاسخ‌های او را به شدت کند می‌کند."
+    },
+    {
+      "fr": "l'aboulie",
+      "fa": "بی‌ارادگی و ناتوانی در تصمیم‌گیری",
+      "emoji": "⚓",
+      "difficulty": 5,
+      "ex": "L'aboulie du malade l'empêche de choisir ses vêtements ou de prendre ses repas.",
+      "ex_fa": "بی‌ارادگی بیمار مانع از انتخاب لباس یا غذا خوردن او می‌شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La garde de nuit",
+      "title_fa": "شیفت شب",
+      "text": "Le Dr Aris fait sa ronde de nuit dans l'unité psychiatrique fermée. Dans la chambre 12, un homme reste assis sur son lit, immobile, les yeux vides. C'est un cas classique de {{BLANK_1}}. Plus loin, une femme âgée se plaint de douleurs imaginaires au cœur et au foie. Son dossier indique une forte {{BLANK_2}}. Dans le couloir, un jeune patient marche en dormant : il souffre de {{BLANK_3}} et l'infirmière le ramène doucement dans son lit. Le Dr Aris retourne à son bureau pour réviser la {{BLANK_4}} de ses patients, classant chaque symptôme selon le manuel officiel. Il note que le patient de la chambre 4 souffre d'une {{BLANK_5}} sévère : il ne ressent plus aucun plaisir à écouter sa musique préférée. Un autre patient, au contraire, parle sans s'arrêter depuis trois heures. Cette {{BLANK_6}} épuise le personnel soignant. Le Dr Aris observe aussi une dame qui vérifie la serrure de sa porte cinquante fois par heure, typique de la {{BLANK_7}}. Soudain, une alarme sonne. Un homme croit que les infirmiers veulent l'empoisonner. Ce {{BLANK_8}} nécessite une intervention rapide pour le rassurer. Le médecin prescrit un sédatif pour calmer son {{BLANK_9}} nerveux, car le patient est trop agité pour dialoguer. Enfin, il rend visite à un homme brillant mais totalement incapable de choisir quoi manger ce soir. Cette {{BLANK_10}} paralyse son quotidien. La nuit sera longue.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "catatonie",
+          "options": [
+            "catatonie",
+            "aboulie",
+            "anhédonie",
+            "bradypsychie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "hypocondrie",
+          "options": [
+            "hypocondrie",
+            "paranoïa",
+            "mégalomanie",
+            "dysphorie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "somnambulisme",
+          "options": [
+            "somnambulisme",
+            "catatonie",
+            "éréthisme",
+            "neurasthénie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "nosographie",
+          "options": [
+            "nosographie",
+            "logorrhée",
+            "psychasthénie",
+            "anhédonie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "anhédonie",
+          "options": [
+            "anhédonie",
+            "dysphorie",
+            "aboulie",
+            "neurasthénie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "logorrhée",
+          "options": [
+            "logorrhée",
+            "bradypsychie",
+            "catatonie",
+            "hypocondrie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "psychasthénie",
+          "options": [
+            "psychasthénie",
+            "mégalomanie",
+            "paranoïa",
+            "éréthisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "délire de persécution",
+          "options": [
+            "délire de persécution",
+            "somnambulisme",
+            "éréthisme",
+            "aboulie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "éréthisme",
+          "options": [
+            "éréthisme",
+            "anhédonie",
+            "bradypsychie",
+            "logorrhée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "aboulie",
+          "options": [
+            "aboulie",
+            "catatonie",
+            "dysphorie",
+            "nosographie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les ombres d'Ashecliffe",
+      "title_fa": "سایه‌های اشکلیف",
+      "inspiration": "Shutter Island (Dennis Lehane / Martin Scorsese, 2010)",
+      "text": "À peine le ferry eut-il accosté que le marshal Teddy Daniels sentit le poids de l'île peser sur ses épaules. Ashecliffe n'était pas un simple hôpital ; c'était une forteresse dressée contre la raison, un sanctuaire pour les esprits brisés que le monde avait rejetés. Le Dr Cawley, directeur de l'établissement, l'accueillit avec une courtoisie glaciale. « Nous accueillons ici les cas les plus complexes, » expliqua-t-il en le guidant à travers les couloirs pavés de linoléum. Dans une salle commune, une femme fixait le mur depuis l'aube, prisonnière d'une {{BLANK_1}} qui la figeait comme une statue de cire. « Elle n'a pas bougé depuis mardi, » murmura un infirmier. Plus loin, un homme aux yeux fiévres accusait les gardiens de comploter contre lui, victime d'un {{BLANK_2}} si parfaitement structuré qu'il en devenait terrifiant de cohérence. Teddy nota dans son carnet chaque détail. Il cherchait Rachel Solando, une patiente évadée qui avait noyé ses trois enfants. Selon son dossier, elle souffrait d'une {{BLANK_3}} qui la poussait à croire qu'elle était toujours chez elle, entourée de ses enfants vivants. Le Dr Cawley expliqua que la {{BLANK_4}} de l'institut classait ces troubles selon des critères stricts, mais que la clinique préférait une approche humaine. « Nous ne nous contentons pas d'étiqueter, » dit-il. « Nous essayons de comprendre. » Pourtant, Teddy sentait une {{BLANK_5}} sourde monter en lui, une agitation nerveuse qui rendait sa main tremblante lorsqu'il allumait sa cigarette. Dans l'aile C, réservée aux criminels, l'atmosphère était plus lourde encore. Un détenu, ancien chirurgien, hurlait des théories anatomiques avec une {{BLANK_6}} qui ne laissait aucune place à la respiration. Un autre, atteint de {{BLANK_7}}, se croyait l'empereur de l'île et exigeait qu'on lui baise la main. Teddy interrogea une infirmière sur les traitements expérimentaux. Elle baissa les yeux, évoquant des lobotomies et des thérapies de choc. « Certains patients, » dit-elle à voix basse, « sombrent dans une {{BLANK_8}} totale après les interventions. Ils perdent jusqu'à la volonté de cligner des yeux. » Teddy pensa à sa femme, Dolores, morte dans l'incendie de leur appartement. Depuis, il vivait avec une {{BLANK_9}} profonde, une incapacité absolue à ressentir la moindre joie, même en buvant son whisky préféré. Et parfois, la nuit, il se réveillait en sursaut, ou pire, se retrouvait dans la cuisine sans savoir comment il y était arrivé, victime d'un {{BLANK_10}} qu'il cachait soigneusement à ses collègues. L'île gardait ses secrets, et Teddy commençait à comprendre que les véritables monstres n'étaient pas toujours ceux qui portaient des camisoles de force. Parfois, ils portaient des costumes sur mesure et des sourires bienveillants. Et parfois, ils se cachaient derrière son propre reflet dans le miroir brisé des toilettes du pavillon principal.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "catatonie",
+          "options": [
+            "catatonie",
+            "aboulie",
+            "bradypsychie",
+            "anhédonie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "délire de persécution",
+          "options": [
+            "délire de persécution",
+            "éréthisme",
+            "somnambulisme",
+            "hypocondrie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "paranoïa",
+          "options": [
+            "paranoïa",
+            "mégalomanie",
+            "dysphorie",
+            "neurasthénie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "nosographie",
+          "options": [
+            "nosographie",
+            "logorrhée",
+            "psychasthénie",
+            "aboulie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "éréthisme",
+          "options": [
+            "éréthisme",
+            "anhédonie",
+            "catatonie",
+            "dysphorie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "logorrhée",
+          "options": [
+            "logorrhée",
+            "bradypsychie",
+            "nosographie",
+            "hypocondrie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "mégalomanie",
+          "options": [
+            "mégalomanie",
+            "paranoïa",
+            "psychasthénie",
+            "aboulie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "aboulie",
+          "options": [
+            "aboulie",
+            "catatonie",
+            "dysphorie",
+            "neurasthénie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "anhédonie",
+          "options": [
+            "anhédonie",
+            "dysphorie",
+            "éréthisme",
+            "logorrhée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "somnambulisme",
+          "options": [
+            "somnambulisme",
+            "catatonie",
+            "éréthisme",
+            "bradypsychie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Psychiatrie et troubles mentaux",
+    "title_fa": "آزمون : روان‌پزشکی و اختلالات روانی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Ce patient reste figé dans la même position pendant des heures, insensible aux stimulations extérieures. Il souffre de ____.",
+        "options": [
+          "catatonie",
+          "aboulie",
+          "anhédonie",
+          "bradypsychie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بی‌حرکتی مطلق و عدم واکنش به محیط = catatonie."
+      },
+      {
+        "type": "mcq",
+        "question": "Au XIXe siècle, on utilisait ce terme pour décrire un épuisement nerveux profond, souvent attribué au stress de la vie moderne. C'était la ____.",
+        "options": [
+          "neurasthénie",
+          "paranoïa",
+          "dysphorie",
+          "logorrhée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضعف اعصاب و خستگی مفرط (اصطلاح تاریخی) = neurasthénie."
+      },
+      {
+        "type": "mcq",
+        "question": "Cet homme consulte cinq médecins par semaine, persuadé qu'une tache sur sa peau est un cancer mortel. Il souffre d'____.",
+        "options": [
+          "hypocondrie",
+          "paranoïa",
+          "mégalomanie",
+          "catatonie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باور مداوم به بیمار بودن بدون دلیل پزشکی = hypocondrie."
+      },
+      {
+        "type": "mcq",
+        "question": "La science qui s'occupe de classer, décrire et nommer les différentes maladies mentales s'appelle la ____.",
+        "options": [
+          "nosographie",
+          "logorrhée",
+          "psychasthénie",
+          "bradypsychie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم طبقه‌بندی و نام‌گذاری بیماری‌ها = nosographie."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce patient est convaincu que la CIA a placé des micros dans ses dents pour écouter ses pensées. Il présente un ____.",
+        "options": [
+          "délire de persécution",
+          "somnambulisme",
+          "éréthisme",
+          "anhédonie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باور هذیانی مبنی بر اینکه دیگران قصد آسیب رساندن به او را دارند = délire de persécution."
+      },
+      {
+        "type": "mcq",
+        "question": "L'agitation motrice et l'irritabilité nerveuse extrême de ce toxicomane en sevrage s'appellent l'____.",
+        "options": [
+          "éréthisme",
+          "aboulie",
+          "catatonie",
+          "dysphorie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تحریک‌پذیری عصبی و بی‌قراری شدید = éréthisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette patiente est paralysée par le doute et doit vérifier dix fois que le gaz est fermé avant de sortir. Elle souffre de ____.",
+        "options": [
+          "psychasthénie",
+          "mégalomanie",
+          "paranoïa",
+          "logorrhée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضعف اراده، شک‌های مداوم و وسواس فکری = psychasthénie."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce garçon se lève la nuit, descend les escaliers et prépare son petit-déjeuner tout en dormant profondément. C'est un cas de ____.",
+        "options": [
+          "somnambulisme",
+          "catatonie",
+          "éréthisme",
+          "aboulie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انجام اعمال پیچیده در حالت خواب = somnambulisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette femme pense que tous ses collègues de bureau complotent dans son dos pour la faire licencier. Elle souffre de ____.",
+        "options": [
+          "paranoïa",
+          "hypocondrie",
+          "mégalomanie",
+          "dysphorie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بدبینی و سوءظن بیمارگونه نسبت به دیگران = paranoïa."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce chef d'entreprise se prend pour Napoléon et exige que ses employés l'appellent 'Votre Majesté'. Il souffre de ____.",
+        "options": [
+          "mégalomanie",
+          "paranoïa",
+          "psychasthénie",
+          "neurasthénie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توهم قدرت، عظمت و خودبزرگ‌بینی = mégalomanie."
+      },
+      {
+        "type": "mcq",
+        "question": "Un sentiment profond de malaise, d'insatisfaction et d'agitation intérieure, souvent opposé à l'euphorie, est la ____.",
+        "options": [
+          "dysphorie",
+          "anhédonie",
+          "aboulie",
+          "catatonie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "احساس ملال، نارضایتی و بی‌قراری درونی = dysphorie."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce patient dépressif ne ressent plus aucun plaisir à regarder son équipe de football préférée gagner, une activité qu'il adorait autrefois. C'est l'____.",
+        "options": [
+          "anhédonie",
+          "dysphorie",
+          "aboulie",
+          "bradypsychie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ناتوانی در احساس لذت از چیزهایی که قبلاً خوشایند بودند = anhédonie."
+      },
+      {
+        "type": "mcq",
+        "question": "En phase maniaque, ce patient parle à une vitesse vertigineuse, passant du coq à l'âne sans jamais s'arrêter. Il présente une ____.",
+        "options": [
+          "logorrhée",
+          "bradypsychie",
+          "catatonie",
+          "nosographie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پرحرفی بیمارگونه، سریع و بی‌وقفه = logorrhée."
+      },
+      {
+        "type": "mcq",
+        "question": "Le temps de réaction de ce patient est anormalement long ; il met plusieurs minutes à formuler une réponse simple. On observe une ____.",
+        "options": [
+          "bradypsychie",
+          "logorrhée",
+          "aboulie",
+          "éréthisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کندی سرعت تفکر و پردازش اطلاعات = bradypsychie."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce patient reste assis devant son assiette pendant des heures, incapable de décider s'il doit manger ou non. Il souffre d'____.",
+        "options": [
+          "aboulie",
+          "catatonie",
+          "anhédonie",
+          "dysphorie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فقدان اراده و ناتوانی در تصمیم‌گیری یا شروع یک عمل = aboulie."
+      },
+      {
+        "type": "binary",
+        "question": "L'anhédonie et la dysphorie désignent exactement le même symptôme psychiatrique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "anhédonie یعنی عدم توانایی در لذت بردن، اما dysphorie یعنی احساس ملال و نارضایتی فعال."
+      },
+      {
+        "type": "binary",
+        "question": "La nosographie est la branche de la médecine qui s'occupe de la chirurgie du cerveau.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. nosographie علم طبقه‌بندی و نام‌گذاری بیماری‌هاست، نه جراحی."
+      },
+      {
+        "type": "binary",
+        "question": "La bradypsychie est le contraire de la logorrhée en termes de vitesse de production de la pensée et de la parole.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. bradypsychie کندی تفکر است و logorrhée پرحرفی و سرعت بیش از حد بیان."
+      },
+      {
+        "type": "binary",
+        "question": "Un patient atteint de mégalomanie a tendance à se sous-estimer et à se sentir inférieur aux autres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. mégalomanie توهم عظمت و خودبزرگ‌بینی است، نه خودکم‌بینی."
+      },
+      {
+        "type": "binary",
+        "question": "L'éréthisme désigne un état de calme olympien et de relaxation musculaire profonde.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. éréthisme به معنای تحریک‌پذیری عصبی و بی‌قراری شدید است."
+      }
+    ]
+  }
+}
