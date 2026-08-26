@@ -1,0 +1,680 @@
+{
+  "id": "horology_watchmaking",
+  "level": "C1",
+  "theme": "Horlogerie, mécanique de précision et automates",
+  "theme_fa": "ساعت‌سازی، مکانیک دقیق و اتوماتون‌ها",
+  "icon": "⏱️",
+  "inspiration": "Hugo Cabret (Hugo - Martin Scorsese, 2011)",
+  "words": [
+    {
+      "fr": "l'horlogerie",
+      "fa": "ساعت‌سازی",
+      "emoji": "⏱️",
+      "difficulty": 4,
+      "ex": "L'horlogerie suisse est reconnue mondialement pour sa précision.",
+      "ex_fa": "ساعت‌سازی سوئیس به خاطر دقتش در جهان شناخته شده است."
+    },
+    {
+      "fr": "le mécanisme",
+      "fa": "مکانیزم",
+      "emoji": "⚙️",
+      "difficulty": 3,
+      "ex": "Le mécanisme complexe de la montre comprend des centaines de pièces.",
+      "ex_fa": "مکانیزم پیچیده ساعت شامل صدها قطعه است."
+    },
+    {
+      "fr": "le ressort",
+      "fa": "فنر",
+      "emoji": "🌀",
+      "difficulty": 3,
+      "ex": "Le ressort moteur emmagasine l'énergie quand on remonte la montre.",
+      "ex_fa": "فنر اصلی هنگام کوک کردن ساعت، انرژی را ذخیره می‌کند."
+    },
+    {
+      "fr": "le rouage",
+      "fa": "چرخ‌دنده",
+      "emoji": "⚙️",
+      "difficulty": 4,
+      "ex": "Chaque rouage transmet le mouvement avec une friction minimale.",
+      "ex_fa": "هر چرخ‌دنده حرکت را با حداقل اصطکاک منتقل می‌کند."
+    },
+    {
+      "fr": "le cadran",
+      "fa": "صفحه ساعت",
+      "emoji": "⏱️",
+      "difficulty": 3,
+      "ex": "Le cadran émaillé affiche les chiffres romains avec élégance.",
+      "ex_fa": "صفحه میناکاری‌شده اعداد رومی را با ظرافت نمایش می‌دهد."
+    },
+    {
+      "fr": "l'aiguille",
+      "fa": "عقربه",
+      "emoji": "🪡",
+      "difficulty": 2,
+      "ex": "L'aiguille des secondes balaie le cadran avec fluidité.",
+      "ex_fa": "عقربه ثانیه‌شمار با روانی روی صفحه حرکت می‌کند."
+    },
+    {
+      "fr": "le balancier",
+      "fa": "رقاصک",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "Le balancier oscille régulièrement pour diviser le temps en fractions.",
+      "ex_fa": "رقاصک برای تقسیم زمان به کسرها، به طور منظم نوسان می‌کند."
+    },
+    {
+      "fr": "le remontoir",
+      "fa": "کوک‌کن، دسته کوک",
+      "emoji": "🔑",
+      "difficulty": 4,
+      "ex": "Il tourne délicatement le remontoir pour armer le ressort.",
+      "ex_fa": "او دسته کوک را به آرامی می‌چرخاند تا فنر را مسلح کند."
+    },
+    {
+      "fr": "le tic-tac",
+      "fa": "تیک‌تاک",
+      "emoji": "🔊",
+      "difficulty": 2,
+      "ex": "Le tic-tac régulier de la pendule berce le silence de la nuit.",
+      "ex_fa": "تیک‌تاک منظم ساعت دیواری، سکوت شب را لالایی می‌کند."
+    },
+    {
+      "fr": "l'automate",
+      "fa": "اتوماتون (عروسک کوکی)",
+      "emoji": "🤖",
+      "difficulty": 5,
+      "ex": "L'automate du XVIIIe siècle peut écrire des phrases avec une plume.",
+      "ex_fa": "اتوماتون قرن هجدهم می‌تواند با قلم جملاتی بنویسد."
+    },
+    {
+      "fr": "l'engrenage",
+      "fa": "چرخ‌دنده‌ها، درگیری",
+      "emoji": "⚙️",
+      "difficulty": 4,
+      "ex": "L'engrenage parfait assure la synchronisation des mouvements.",
+      "ex_fa": "درگیری بی‌نقص چرخ‌دنده‌ها هماهنگی حرکات را تضمین می‌کند."
+    },
+    {
+      "fr": "la montre",
+      "fa": "ساعت (مچی/جیبی)",
+      "emoji": "⌚",
+      "difficulty": 1,
+      "ex": "La montre à gousset était l'accessoire indispensable des gentlemen.",
+      "ex_fa": "ساعت جیبی وسیله ضروری جنتلمن‌ها بود."
+    },
+    {
+      "fr": "le chronomètre",
+      "fa": "زمان‌سنج",
+      "emoji": "⏱️",
+      "difficulty": 4,
+      "ex": "Le chronomètre de marine permettait de calculer la longitude en mer.",
+      "ex_fa": "زمان‌سنج دریایی امکان محاسبه طول جغرافیایی در دریا را می‌داد."
+    },
+    {
+      "fr": "le boîtier",
+      "fa": "قاب ساعت",
+      "emoji": "📦",
+      "difficulty": 3,
+      "ex": "Le boîtier en or protège le mouvement de la poussière et de l'humidité.",
+      "ex_fa": "قاب طلایی از موتور ساعت در برابر گرد و غبار و رطوبت محافظت می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le secret de la gare",
+      "text": "Hugo vit caché dans les murs d'une grande gare parisienne. Son travail est d'entretenir les grandes horloges, une véritable passion pour l'{{BLANK_1}}. Un jour, il trouve un vieil {{BLANK_10}} cassé dans un musée. Il décide de le réparer en secret. Il démonte le {{BLANK_14}} en laiton pour accéder au {{BLANK_2}} interne. Il nettoie chaque petit {{BLANK_4}} et replace le {{BLANK_3}} moteur qui s'était détendu. Il observe comment l'{{BLANK_11}} transmet l'énergie au {{BLANK_7}} qui commence à osciller. Le fameux {{BLANK_9}} résonne à nouveau. Sur le {{BLANK_5}} de porcelaine, l'{{BLANK_6}} des heures reprend sa course. Hugo utilise son propre {{BLANK_13}} pour vérifier la précision de la machine. Quand il tourne enfin le {{BLANK_8}}, l'automate s'anime et se met à dessiner. C'est bien plus qu'une simple {{BLANK_12}}, c'est un cœur de métal qui bat à nouveau.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "horlogerie",
+          "options": [
+            "horlogerie",
+            "mécanisme",
+            "ressort",
+            "rouage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "mécanisme",
+          "options": [
+            "mécanisme",
+            "cadran",
+            "aiguille",
+            "balancier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "ressort",
+          "options": [
+            "ressort",
+            "remontoir",
+            "tic-tac",
+            "automate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "rouage",
+          "options": [
+            "rouage",
+            "engrenage",
+            "montre",
+            "chronomètre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "cadran",
+          "options": [
+            "cadran",
+            "boîtier",
+            "horlogerie",
+            "mécanisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "aiguille",
+          "options": [
+            "aiguille",
+            "ressort",
+            "rouage",
+            "cadran"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "balancier",
+          "options": [
+            "balancier",
+            "remontoir",
+            "tic-tac",
+            "automate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "remontoir",
+          "options": [
+            "remontoir",
+            "engrenage",
+            "montre",
+            "chronomètre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "tic-tac",
+          "options": [
+            "tic-tac",
+            "boîtier",
+            "horlogerie",
+            "mécanisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "automate",
+          "options": [
+            "automate",
+            "ressort",
+            "rouage",
+            "cadran"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "engrenage",
+          "options": [
+            "engrenage",
+            "aiguille",
+            "balancier",
+            "remontoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "montre",
+          "options": [
+            "montre",
+            "tic-tac",
+            "automate",
+            "engrenage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "chronomètre",
+          "options": [
+            "chronomètre",
+            "boîtier",
+            "horlogerie",
+            "mécanisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "boîtier",
+          "options": [
+            "boîtier",
+            "ressort",
+            "rouage",
+            "cadran"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le cœur de laiton",
+      "inspiration": "Hugo Cabret (Martin Scorsese, 2011)",
+      "text": "À peine Hugo eut-il inséré la clé dorée dans le {{BLANK_8}} que le silence de l'atelier fut brisé par un {{BLANK_9}} hésitant, puis régulier, comme le battement d'un cœur ressuscité. Ce n'était pas une simple {{BLANK_12}} qu'il tenait entre ses mains sales de cambouis, mais un {{BLANK_10}} oublié, une âme mécanique prisonnière d'un {{BLANK_14}} de laiton terni. L'enfant orphelin, maître clandestin de l'{{BLANK_1}}, avait passé des mois à comprendre ce {{BLANK_2}} labyrinthique. Il avait poli chaque {{BLANK_4}} microscopique, tendu le {{BLANK_3}} avec la douceur d'une mère, et aligné l'{{BLANK_11}} pour que la vie circule à nouveau. Quand le {{BLANK_7}} s'était mis à osciller, rythmant le temps volé, l'{{BLANK_6}} avait enfin repris sa danse sur le {{BLANK_5}} d'émail. Il vérifiait l'infaillibilité de la renaissance avec son vieux {{BLANK_13}} de poche. Dans ce monde de rouages et de pignons, Hugo comprenait que le monde entier était une vaste machine, et que chaque être humain, aussi brisé fût-il, méritait qu'on trouve la pièce manquante pour le réparer.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "horlogerie",
+          "options": [
+            "horlogerie",
+            "mécanisme",
+            "ressort",
+            "rouage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "mécanisme",
+          "options": [
+            "mécanisme",
+            "cadran",
+            "aiguille",
+            "balancier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "ressort",
+          "options": [
+            "ressort",
+            "remontoir",
+            "tic-tac",
+            "automate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "rouage",
+          "options": [
+            "rouage",
+            "engrenage",
+            "montre",
+            "chronomètre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "cadran",
+          "options": [
+            "cadran",
+            "boîtier",
+            "horlogerie",
+            "mécanisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "aiguille",
+          "options": [
+            "aiguille",
+            "ressort",
+            "rouage",
+            "cadran"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "balancier",
+          "options": [
+            "balancier",
+            "remontoir",
+            "tic-tac",
+            "automate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "remontoir",
+          "options": [
+            "remontoir",
+            "engrenage",
+            "montre",
+            "chronomètre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "tic-tac",
+          "options": [
+            "tic-tac",
+            "boîtier",
+            "horlogerie",
+            "mécanisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "automate",
+          "options": [
+            "automate",
+            "ressort",
+            "rouage",
+            "cadran"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "engrenage",
+          "options": [
+            "engrenage",
+            "aiguille",
+            "balancier",
+            "remontoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "montre",
+          "options": [
+            "montre",
+            "tic-tac",
+            "automate",
+            "engrenage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "chronomètre",
+          "options": [
+            "chronomètre",
+            "boîtier",
+            "horlogerie",
+            "mécanisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "boîtier",
+          "options": [
+            "boîtier",
+            "ressort",
+            "rouage",
+            "cadran"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Horlogerie et mécanique",
+    "title_fa": "آزمون : ساعت‌سازی و مکانیک",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art et la science de la mesure du temps et de la fabrication des instruments horaires est l'____.",
+        "options": [
+          "horlogerie",
+          "mécanisme",
+          "ressort",
+          "rouage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر و علم زمان‌سنجی و ساخت ساعت = horlogerie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des pièces mobiles et des organes qui assurent le fonctionnement d'une machine est le ____.",
+        "options": [
+          "mécanisme",
+          "cadran",
+          "aiguille",
+          "balancier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه قطعات متحرک ماشین = mécanisme."
+      },
+      {
+        "type": "mcq",
+        "question": "La pièce métallique élastique qui emmagasine l'énergie mécanique pour la restituer est le ____.",
+        "options": [
+          "ressort",
+          "remontoir",
+          "tic-tac",
+          "automate"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قطعه فلزی ذخیره‌کننده انرژی = ressort."
+      },
+      {
+        "type": "mcq",
+        "question": "La pièce dentelée en forme de roue qui transmet le mouvement dans une horloge est le ____.",
+        "options": [
+          "rouage",
+          "engrenage",
+          "montre",
+          "chronomètre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قطعه چرخ‌دنده‌ای انتقال‌دهنده حرکت = rouage."
+      },
+      {
+        "type": "mcq",
+        "question": "La surface plane, souvent circulaire, sur laquelle sont affichées les heures et les minutes est le ____.",
+        "options": [
+          "cadran",
+          "boîtier",
+          "horlogerie",
+          "mécanisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطح نمایش زمان = cadran."
+      },
+      {
+        "type": "mcq",
+        "question": "La tige fine et mobile qui pointe les divisions sur le cadran pour indiquer l'heure est l'____.",
+        "options": [
+          "aiguille",
+          "ressort",
+          "rouage",
+          "cadran"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "میله نشان‌دهنده زمان = aiguille."
+      },
+      {
+        "type": "mcq",
+        "question": "L'organe régulateur qui oscille de manière isochrone pour contrôler la vitesse du mécanisme est le ____.",
+        "options": [
+          "balancier",
+          "remontoir",
+          "tic-tac",
+          "automate"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عضو تنظیم‌کننده نوسانی = balancier."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dispositif ou la clé qui permet de tendre le ressort et de remettre l'énergie dans la montre est le ____.",
+        "options": [
+          "remontoir",
+          "engrenage",
+          "montre",
+          "chronomètre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله کوک کردن ساعت = remontoir."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bruit caractéristique et répétitif produit par l'échappement d'une horloge mécanique est le ____.",
+        "options": [
+          "tic-tac",
+          "boîtier",
+          "horlogerie",
+          "mécanisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صدای تکرارشونده ساعت = tic-tac."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil mécanique complexe qui imite les mouvements d'un être vivant ou d'un objet est l'____.",
+        "options": [
+          "automate",
+          "ressort",
+          "rouage",
+          "cadran"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه مکانیکی تقلیدکننده حرکات زنده = automate."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système de roues dentées qui s'emboîtent pour transmettre un mouvement rotatif est l'____.",
+        "options": [
+          "engrenage",
+          "aiguille",
+          "balancier",
+          "remontoir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم چرخ‌دنده‌های درگیر = engrenage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument portatif de mesure du temps, que l'on porte au poignet ou dans la poche, est la ____.",
+        "options": [
+          "montre",
+          "tic-tac",
+          "automate",
+          "engrenage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار قابل حمل سنجش زمان = montre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument de haute précision utilisé pour mesurer des intervalles de temps courts est le ____.",
+        "options": [
+          "chronomètre",
+          "boîtier",
+          "horlogerie",
+          "mécanisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار دقیق اندازه‌گیری زمان کوتاه = chronomètre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enveloppe extérieure, souvent en métal précieux, qui protège le mouvement de la montre est le ____.",
+        "options": [
+          "boîtier",
+          "ressort",
+          "rouage",
+          "cadran"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پوشش بیرونی محافظ ساعت = boîtier."
+      },
+      {
+        "type": "binary",
+        "question": "Le balancier est la pièce qui stocke l'énergie de la montre pour la redistribuer lentement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. فنر (ressort) انرژی را ذخیره می‌کند؛ رقاصک (balancier) زمان را تنظیم و تقسیم می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Un automate est une machine mécanique programmée pour exécuter des mouvements imitant la vie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اتوماتون (automate) ماشین مکانیکی تقلیدکننده حرکات زنده است."
+      },
+      {
+        "type": "binary",
+        "question": "Le cadran désigne l'ensemble des rouages internes invisibles de la montre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. cadran صفحه رویی ساعت است که اعداد روی آن نمایش داده می‌شوند."
+      },
+      {
+        "type": "binary",
+        "question": "Le remontoir est la couronne ou la clé qui sert à armer le ressort de la montre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کوک‌کن (remontoir) برای مسلح کردن فنر و کوک کردن ساعت استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le chronomètre est un instrument de musique utilisé pour donner le tempo aux orchestres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. زمان‌سنج (chronomètre) برای اندازه‌گیری دقیق زمان در ورزش یا دریانوردی است؛ ابزار موسیقی métronome نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "L'engrenage désigne le système de roues dentées qui se transmettent le mouvement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. چرخ‌دنده‌ها (engrenage) حرکت را به یکدیگر منتقل می‌کنند."
+      }
+    ]
+  }
+}
