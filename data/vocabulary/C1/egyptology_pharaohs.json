@@ -1,0 +1,680 @@
+{
+  "id": "egyptology_pharaohs",
+  "level": "C1",
+  "theme": "Égyptologie, pharaons et antiquité égyptienne",
+  "theme_fa": "مصرشناسی، فراعنه و باستان‌شناسی مصر",
+  "icon": "🏺",
+  "inspiration": "La Momie (The Mummy - Stephen Sommers, 1999)",
+  "words": [
+    {
+      "fr": "l'égyptologie",
+      "fa": "مصرشناسی",
+      "emoji": "🏺",
+      "difficulty": 5,
+      "ex": "L'égyptologie étudie la civilisation pharaonique et ses mystères.",
+      "ex_fa": "مصرشناسی تمدن فراعنه و اسرار آن را مطالعه می‌کند."
+    },
+    {
+      "fr": "le pharaon",
+      "fa": "فرعون",
+      "emoji": "👑",
+      "difficulty": 3,
+      "ex": "Le pharaon était considéré comme un dieu vivant sur terre.",
+      "ex_fa": "فرعون به عنوان خدای زنده روی زمین شناخته می‌شد."
+    },
+    {
+      "fr": "la pyramide",
+      "fa": "هرم",
+      "emoji": "🔺",
+      "difficulty": 3,
+      "ex": "La pyramide de Khéops est la dernière des sept merveilles du monde.",
+      "ex_fa": "هرم خوفو آخرین اثر از هفت عجایب جهان است."
+    },
+    {
+      "fr": "le sarcophage",
+      "fa": "تابوت سنگی",
+      "emoji": "⚰️",
+      "difficulty": 4,
+      "ex": "Le sarcophage en granit protégeait la momie royale.",
+      "ex_fa": "تابوت سنگی گرانیتی از مومیایی سلطنتی محافظت می‌کرد."
+    },
+    {
+      "fr": "la momie",
+      "fa": "مومیایی",
+      "emoji": "🧟",
+      "difficulty": 3,
+      "ex": "La momie était enveloppée de bandelettes de lin et de résines.",
+      "ex_fa": "مومیایی در باندهای کتانی و صمغ‌ها پیچیده شده بود."
+    },
+    {
+      "fr": "l'hiéroglyphe",
+      "fa": "هیروگلیف",
+      "emoji": "𓀀",
+      "difficulty": 4,
+      "ex": "Les hiéroglyphes ornent les murs des temples et des tombeaux.",
+      "ex_fa": "هیروگلیف‌ها دیوارهای معابد و مقبره‌ها را تزیین می‌کنند."
+    },
+    {
+      "fr": "le tombeau",
+      "fa": "مقبره",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "Le tombeau de Toutânkhamon a été découvert intact en 1922.",
+      "ex_fa": "مقبره توت‌عنخ‌آمون در سال ۱۹۲۲ سالم کشف شد."
+    },
+    {
+      "fr": "la momification",
+      "fa": "مومیایی‌سازی",
+      "emoji": "🩹",
+      "difficulty": 5,
+      "ex": "La momification durait soixante-dix jours selon les rites sacrés.",
+      "ex_fa": "مومیایی‌سازی طبق آیین‌های مقدس هفتاد روز طول می‌کشید."
+    },
+    {
+      "fr": "l'amulette",
+      "fa": "طلسم، تعویذ",
+      "emoji": "🔮",
+      "difficulty": 4,
+      "ex": "L'amulette en forme de scarabée protégeait le cœur du défunt.",
+      "ex_fa": "طلسم سوسکی‌شکل از قلب متوفی محافظت می‌کند."
+    },
+    {
+      "fr": "le cartouche",
+      "fa": "کارتوش (قاب نام سلطنتی)",
+      "emoji": "⭕",
+      "difficulty": 5,
+      "ex": "Le cartouche ovale entoure le nom du pharaon dans les inscriptions.",
+      "ex_fa": "قاب بیضی‌شکل نام فرعون را در کتیبه‌ها احاطه می‌کند."
+    },
+    {
+      "fr": "le sphinx",
+      "fa": "اسفنکس",
+      "emoji": "🗿",
+      "difficulty": 4,
+      "ex": "Le sphinx de Gizeh garde les pyramides depuis des millénaires.",
+      "ex_fa": "اسفنکس جیزه هزاران سال است که از هرم‌ها محافظت می‌کند."
+    },
+    {
+      "fr": "le papyrus",
+      "fa": "پاپیروس",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "Le papyrus du Livre des Morts guidait l'âme dans l'au-delà.",
+      "ex_fa": "پاپیروس کتاب مردگان روح را در جهان پس از مرگ هدایت می‌کرد."
+    },
+    {
+      "fr": "l'obélisque",
+      "fa": "ابلیسک (ستون سنگی نوک‌تیز)",
+      "emoji": "🗼",
+      "difficulty": 5,
+      "ex": "L'obélisque de Louxor a été transporté à Paris au XIXe siècle.",
+      "ex_fa": "ستون لوکسور در قرن نوزدهم به پاریس منتقل شد."
+    },
+    {
+      "fr": "la dynastie",
+      "fa": "سلسله",
+      "emoji": "👨‍👩‍👧‍👦",
+      "difficulty": 4,
+      "ex": "La XVIIIe dynastie vit le règne des plus grands pharaons.",
+      "ex_fa": "سلسله هجدهم شاهد حکومت بزرگترین فراعنه بود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le réveil d'Imhotep",
+      "text": "Rick O'Connell est un aventurier qui découvre une cité perdue en Égypte. Il accompagne une jeune {{BLANK_1}} qui déchiffre les anciens {{BLANK_6}}s. Ensemble, ils pénètrent dans un {{BLANK_7}} oublié sous les sables. À l'intérieur, ils trouvent un magnifique {{BLANK_4}} en or massif contenant une {{BLANK_5}} millénaire. Les murs sont couverts de {{BLANK_6}}s qui racontent l'histoire d'un prêtre maudit. Ce dernier avait osé aimer la femme d'un {{BLANK_2}} de la XVIIIe {{BLANK_14}}. En punition, il fut enterré vivant et condamné à l'immortalité maudite. Sur son torse repose une {{BLANK_9}} en lapis-lazuli en forme de scarabée. Son nom est gravé dans un {{BLANK_10}} ovale sur la paroi. Près de l'entrée, un immense {{BLANK_11}} de pierre monte la garde. Les archéologues découvrent aussi un {{BLANK_12}} déroulé contenant des formules magiques. Dans la cour extérieure, une {{BLANK_3}} colossale domine le désert. Un {{BLANK_13}} de granit rose se dresse vers le soleil, couvert de textes sacrés. Par accident, ils récitent une formule qui réveille le monstre endormi depuis trois mille ans, déclenchant une malédiction terrifiante.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "égyptologue",
+          "options": [
+            "égyptologue",
+            "pharaon",
+            "pyramide",
+            "sarcophage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pharaon",
+          "options": [
+            "pharaon",
+            "momie",
+            "hiéroglyphe",
+            "tombeau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "pyramide",
+          "options": [
+            "pyramide",
+            "momification",
+            "amulette",
+            "cartouche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "sarcophage",
+          "options": [
+            "sarcophage",
+            "sphinx",
+            "papyrus",
+            "obélisque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "momie",
+          "options": [
+            "momie",
+            "dynastie",
+            "égyptologue",
+            "pharaon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "hiéroglyphe",
+          "options": [
+            "hiéroglyphe",
+            "pyramide",
+            "sarcophage",
+            "momie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tombeau",
+          "options": [
+            "tombeau",
+            "momification",
+            "amulette",
+            "cartouche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "momification",
+          "options": [
+            "momification",
+            "sphinx",
+            "papyrus",
+            "obélisque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "amulette",
+          "options": [
+            "amulette",
+            "dynastie",
+            "égyptologue",
+            "pharaon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "cartouche",
+          "options": [
+            "cartouche",
+            "pyramide",
+            "sarcophage",
+            "momie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "sphinx",
+          "options": [
+            "sphinx",
+            "hiéroglyphe",
+            "tombeau",
+            "momification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "papyrus",
+          "options": [
+            "papyrus",
+            "amulette",
+            "cartouche",
+            "sphinx"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "obélisque",
+          "options": [
+            "obélisque",
+            "dynastie",
+            "égyptologue",
+            "pharaon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "dynastie",
+          "options": [
+            "dynastie",
+            "pyramide",
+            "sarcophage",
+            "momie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le Livre des Ombres",
+      "inspiration": "La Momie (Stephen Sommers, 1999)",
+      "text": "À peine Evelyn eut-elle déchiffré le dernier {{BLANK_6}} que le silence millénaire du {{BLANK_7}} se brisa dans un souffle de poussière et de malédiction. Cette jeune {{BLANK_1}} aux yeux brillants de fièvre ne savait pas qu'elle venait de réveiller un amour interdit, vieux de trois mille ans. Devant elle, le {{BLANK_4}} d'or pur brillait comme un soleil captif, abritant la {{BLANK_5}} d'Imhotep, ce grand prêtre qui avait osé toucher la reine d'un {{BLANK_2}} de la plus puissante {{BLANK_14}}. Les murs racontaient en {{BLANK_6}}s sa chute et son châtiment éternel. Dans l'ombre, une {{BLANK_9}} de lapis-lazuli reposait sur sa poitrine momifiée, gardant son cœur pour le jugement d'Osiris. Son nom sacré était enfermé dans un {{BLANK_10}} protecteur, tandis qu'à l'extérieur, le grand {{BLANK_11}} de pierre gardait son sommeil. Un {{BLANK_12}} jauni contenait les formules qui pouvaient le ramener à la vie, ou le condamner à nouveau. Au-dessus, la {{BLANK_3}} colossale défiait le ciel, et l'{{BLANK_13}} de granit pointait vers Râ comme une prière pétrifiée. Quand Rick et Evelyn lurent à haute voix les mots interdits, ils ne comprirent pas qu'ils ne réveillaient pas un simple mort, mais un dieu déchu qui avait attendu trente siècles pour retrouver celle qu'il avait aimée, prêt à détruire le monde entier pour un seul baiser volé à l'éternité.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "égyptologue",
+          "options": [
+            "égyptologue",
+            "pharaon",
+            "pyramide",
+            "sarcophage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pharaon",
+          "options": [
+            "pharaon",
+            "momie",
+            "hiéroglyphe",
+            "tombeau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "pyramide",
+          "options": [
+            "pyramide",
+            "momification",
+            "amulette",
+            "cartouche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "sarcophage",
+          "options": [
+            "sarcophage",
+            "sphinx",
+            "papyrus",
+            "obélisque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "momie",
+          "options": [
+            "momie",
+            "dynastie",
+            "égyptologue",
+            "pharaon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "hiéroglyphe",
+          "options": [
+            "hiéroglyphe",
+            "pyramide",
+            "sarcophage",
+            "momie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tombeau",
+          "options": [
+            "tombeau",
+            "momification",
+            "amulette",
+            "cartouche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "momification",
+          "options": [
+            "momification",
+            "sphinx",
+            "papyrus",
+            "obélisque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "amulette",
+          "options": [
+            "amulette",
+            "dynastie",
+            "égyptologue",
+            "pharaon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "cartouche",
+          "options": [
+            "cartouche",
+            "pyramide",
+            "sarcophage",
+            "momie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "sphinx",
+          "options": [
+            "sphinx",
+            "hiéroglyphe",
+            "tombeau",
+            "momification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "papyrus",
+          "options": [
+            "papyrus",
+            "amulette",
+            "cartouche",
+            "sphinx"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "obélisque",
+          "options": [
+            "obélisque",
+            "dynastie",
+            "égyptologue",
+            "pharaon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "dynastie",
+          "options": [
+            "dynastie",
+            "pyramide",
+            "sarcophage",
+            "momie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Égyptologie et pharaons",
+    "title_fa": "آزمون : مصرشناسی و فراعنه",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie la civilisation de l'Égypte antique, sa langue, son histoire et ses monuments est l'____.",
+        "options": [
+          "égyptologie",
+          "pharaon",
+          "pyramide",
+          "sarcophage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه تمدن مصر باستان = égyptologie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le roi-dieu de l'Égypte antique, considéré comme fils de Râ et intermédiaire entre les dieux et les hommes, est le ____.",
+        "options": [
+          "pharaon",
+          "momie",
+          "hiéroglyphe",
+          "tombeau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پادشاه-خدای مصر باستان = pharaon."
+      },
+      {
+        "type": "mcq",
+        "question": "Le monument funéraire colossal à base carrée et à quatre faces triangulaires, tombeau des rois, est la ____.",
+        "options": [
+          "pyramide",
+          "momification",
+          "amulette",
+          "cartouche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بنای عظیم مقبره‌ای = pyramide."
+      },
+      {
+        "type": "mcq",
+        "question": "Le cercueil de pierre ou de bois richement décoré qui contenait la momie est le ____.",
+        "options": [
+          "sarcophage",
+          "sphinx",
+          "papyrus",
+          "obélisque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تابوت سنگی یا چوبی = sarcophage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le corps du défunt conservé par des techniques de dessiccation et enveloppé de bandelettes est la ____.",
+        "options": [
+          "momie",
+          "dynastie",
+          "égyptologue",
+          "pharaon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بدن محافظت‌شده متوفی = momie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le signe de l'écriture sacrée égyptienne, représentant des objets, des animaux ou des idées, est l'____.",
+        "options": [
+          "hiéroglyphe",
+          "pyramide",
+          "sarcophage",
+          "momie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نماد نوشتاری مقدس = hiéroglyphe."
+      },
+      {
+        "type": "mcq",
+        "question": "La sépulture, souvent souterraine et richement décorée, où était enterré le défunt avec son mobilier funéraire est le ____.",
+        "options": [
+          "tombeau",
+          "momification",
+          "amulette",
+          "cartouche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محل دفن تزئین‌شده = tombeau."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des rites et techniques visant à conserver le corps du défunt pour l'éternité est la ____.",
+        "options": [
+          "momification",
+          "sphinx",
+          "papyrus",
+          "obélisque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آیین‌های حفظ بدن = momification."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit objet magique porté ou placé sur la momie pour la protéger dans l'au-delà est l'____.",
+        "options": [
+          "amulette",
+          "dynastie",
+          "égyptologue",
+          "pharaon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیء کوچک محافظتی = amulette."
+      },
+      {
+        "type": "mcq",
+        "question": "L'encadrement ovale qui entoure le nom royal dans les inscriptions hiéroglyphiques est le ____.",
+        "options": [
+          "cartouche",
+          "pyramide",
+          "sarcophage",
+          "momie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قاب بیضی نام سلطنتی = cartouche."
+      },
+      {
+        "type": "mcq",
+        "question": "La statue colossale à corps de lion et à tête humaine, gardienne des nécropoles, est le ____.",
+        "options": [
+          "sphinx",
+          "hiéroglyphe",
+          "tombeau",
+          "momification"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجسمه شیر با سر انسان = sphinx."
+      },
+      {
+        "type": "mcq",
+        "question": "Le support d'écriture fabriqué à partir de la tige d'une plante aquatique du Nil est le ____.",
+        "options": [
+          "papyrus",
+          "amulette",
+          "cartouche",
+          "sphinx"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطح نوشتاری از گیاه نیل = papyrus."
+      },
+      {
+        "type": "mcq",
+        "question": "Le monolithe de granit en forme d'aiguille quadrangulaire, souvent dressé devant les temples, est l'____.",
+        "options": [
+          "obélisque",
+          "dynastie",
+          "égyptologue",
+          "pharaon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ستون سنگی نوک‌تیز = obélisque."
+      },
+      {
+        "type": "mcq",
+        "question": "La lignée de souverains appartenant à une même famille ou période historique est la ____.",
+        "options": [
+          "dynastie",
+          "pyramide",
+          "sarcophage",
+          "momie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سلسله حاکمان = dynastie."
+      },
+      {
+        "type": "binary",
+        "question": "Le cartouche est un petit scarabée sacré placé sur le cœur de la momie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کارتوش قاب بیضی اطراف نام سلطنتی است؛ scarabée نوعی amulette است."
+      },
+      {
+        "type": "binary",
+        "question": "La momification était un processus complexe qui durait environ soixante-dix jours.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. مومیایی‌سازی حدود هفتاد روز طول می‌کشید."
+      },
+      {
+        "type": "binary",
+        "question": "Les hiéroglyphes étaient utilisés uniquement pour décorer les bijoux et les amulettes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. هیروگلیف‌ها سیستم نوشتاری بودند که روی معابد، مقبره‌ها و پاپیروس‌ها استفاده می‌شدند."
+      },
+      {
+        "type": "binary",
+        "question": "Le sphinx de Gizeh est une statue colossale à corps de lion et à tête humaine.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اسفنکس جیزه بدن شیر و سر انسان دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le papyrus était fabriqué à partir des fibres d'un arbre fruitier cultivé dans les oasis.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پاپیروس از ساقه گیاه پاپیروس که در کنار نیل می‌رویید ساخته می‌شد."
+      },
+      {
+        "type": "binary",
+        "question": "L'obélisque est un monolithe de granit en forme d'aiguille, souvent couvert d'hiéroglyphes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ابلیسک ستون سنگی نوک‌تیز با نوشته‌های هیروگلیف است."
+      }
+    ]
+  }
+}
