@@ -1,0 +1,680 @@
+{
+  "id": "espionage_cold_war",
+  "level": "C1",
+  "theme": "Espionnage, guerre froide et renseignement",
+  "theme_fa": "جاسوسی، جنگ سرد و اطلاعات محرمانه",
+  "icon": "🕵️‍♂️",
+  "inspiration": "La Taupe (Tinker Tailor Soldier Spy - Tomas Alfredson, 2011)",
+  "words": [
+    {
+      "fr": "l'espionnage",
+      "fa": "جاسوسی",
+      "emoji": "🕵️‍♂️",
+      "difficulty": 4,
+      "ex": "L'espionnage industriel menace les secrets d'État.",
+      "ex_fa": "جاسوسی صنعتی، اسرار دولتی را تهدید می‌کند."
+    },
+    {
+      "fr": "la taupe",
+      "fa": "جاسوس نفوذی (موش)",
+      "emoji": "🐀",
+      "difficulty": 5,
+      "ex": "Une taupe soviétique opère au plus haut niveau du Cirque.",
+      "ex_fa": "یک جاسوس نفوذی شوروی در بالاترین سطح سازمان فعالیت می‌کند."
+    },
+    {
+      "fr": "le contre-espionnage",
+      "fa": "ضد جاسوسی",
+      "emoji": "🛡️",
+      "difficulty": 5,
+      "ex": "Le contre-espionnage traque les agents étrangers sur le territoire.",
+      "ex_fa": "ضد جاسوسی به دنبال مأموران بیگانه در قلمرو کشور است."
+    },
+    {
+      "fr": "le cryptage",
+      "fa": "رمزگذاری",
+      "emoji": "🔐",
+      "difficulty": 4,
+      "ex": "Le cryptage des messages diplomatiques est inviolable.",
+      "ex_fa": "رمزگذاری پیام‌های دیپلماتیک غیرقابل نفوذ است."
+    },
+    {
+      "fr": "la planque",
+      "fa": "مخفیگاه، پاتوق امن",
+      "emoji": "🏚️",
+      "difficulty": 4,
+      "ex": "L'agent se réfugie dans une planque en banlieue.",
+      "ex_fa": "مأمور به یک مخفیگاه در حومه شهر پناه می‌برد."
+    },
+    {
+      "fr": "le micro",
+      "fa": "شنود (میکروفون مخفی)",
+      "emoji": "🎙️",
+      "difficulty": 3,
+      "ex": "Un micro a été dissimulé dans le téléphone du bureau.",
+      "ex_fa": "یک شنود در تلفن دفتر کار جاسازی شده است."
+    },
+    {
+      "fr": "la filature",
+      "fa": "تعقیب و مراقبت",
+      "emoji": "👣",
+      "difficulty": 4,
+      "ex": "La filature du suspect a duré trois semaines.",
+      "ex_fa": "تعقیب مظنون سه هفته طول کشید."
+    },
+    {
+      "fr": "l'agent double",
+      "fa": "جاسوس دوجانبه",
+      "emoji": "🎭",
+      "difficulty": 5,
+      "ex": "L'agent double vend des informations aux deux camps.",
+      "ex_fa": "جاسوس دوجانبه اطلاعات را به هر دو اردوگاه می‌فروشد."
+    },
+    {
+      "fr": "le transfuge",
+      "fa": "فراری، پناهنده سیاسی",
+      "emoji": "🏃",
+      "difficulty": 5,
+      "ex": "Le transfuge a fui son pays avec des documents classifiés.",
+      "ex_fa": "پناهنده سیاسی با اسناد محرمانه از کشورش گریخت."
+    },
+    {
+      "fr": "le rideau de fer",
+      "fa": "پرده آهنین",
+      "emoji": "🧱",
+      "difficulty": 4,
+      "ex": "Le rideau de fer divisait l'Europe en deux blocs.",
+      "ex_fa": "پرده آهنین اروپا را به دو بلوک تقسیم می‌کرد."
+    },
+    {
+      "fr": "la guerre froide",
+      "fa": "جنگ سرد",
+      "emoji": "❄️",
+      "difficulty": 3,
+      "ex": "La guerre froide a opposé l'URSS et les États-Unis.",
+      "ex_fa": "جنگ سرد، شوروی و ایالات متحده را در برابر هم قرار داد."
+    },
+    {
+      "fr": "le renseignement",
+      "fa": "اطلاعات محرمانه، سازمان اطلاعاتی",
+      "emoji": "📂",
+      "difficulty": 4,
+      "ex": "Le service de renseignement protège la sécurité nationale.",
+      "ex_fa": "سازمان اطلاعاتی از امنیت ملی محافظت می‌کند."
+    },
+    {
+      "fr": "le débriefing",
+      "fa": "بازجویی و ارزیابی پس از عملیات",
+      "emoji": "📝",
+      "difficulty": 5,
+      "ex": "Le débriefing de l'agent a révélé des failles majeures.",
+      "ex_fa": "ارزیابی پس از عملیات مأمور، حفره‌های بزرگی را آشکار کرد."
+    },
+    {
+      "fr": "le camouflage",
+      "fa": "استتار، پنهان‌سازی",
+      "emoji": "🌿",
+      "difficulty": 4,
+      "ex": "Le camouflage de l'identité est essentiel pour l'infiltration.",
+      "ex_fa": "استتار هویت برای نفوذ ضروری است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La chasse à la taupe",
+      "text": "George Smiley est un vétéran de l'{{BLANK_1}} britannique. Pendant la {{BLANK_11}}, il est secrètement rappelé par le gouvernement. Sa mission : trouver une {{BLANK_2}} au sommet du service de {{BLANK_12}}, surnommé le Cirque. Le {{BLANK_3}} officiel a échoué à identifier le traître. Smiley reprend l'enquête de zéro. Il analyse le {{BLANK_4}} des vieux messages soviétiques. Il découvre qu'un {{BLANK_8}} transmet des secrets à Moscou. Smiley organise une {{BLANK_7}} discrète sur plusieurs directeurs. Il trouve une {{BLANK_5}} abandonnée où les rendez-vous secrets avaient lieu. Un {{BLANK_6}} caché dans une lampe a enregistré des conversations. Pour piéger le coupable, il utilise un {{BLANK_14}} parfait, se faisant passer pour un diplomate hongrois. Un {{BLANK_9}} de l'Est apporte la preuve finale lors d'un échange. Après un long {{BLANK_13}} dans une salle isolée, la vérité éclate enfin. La trahison est confirmée. Symboliquement, c'est une brèche majeure dans le {{BLANK_10}} qui vient d'être réparée. Smiley retourne dans l'ombre, fatigué mais victorieux.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "espionnage",
+          "options": [
+            "espionnage",
+            "taupe",
+            "contre-espionnage",
+            "cryptage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "taupe",
+          "options": [
+            "taupe",
+            "planque",
+            "micro",
+            "filature"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "contre-espionnage",
+          "options": [
+            "contre-espionnage",
+            "agent double",
+            "transfuge",
+            "rideau de fer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cryptage",
+          "options": [
+            "cryptage",
+            "guerre froide",
+            "renseignement",
+            "débriefing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "planque",
+          "options": [
+            "planque",
+            "camouflage",
+            "espionnage",
+            "taupe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "micro",
+          "options": [
+            "micro",
+            "contre-espionnage",
+            "cryptage",
+            "planque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "filature",
+          "options": [
+            "filature",
+            "agent double",
+            "transfuge",
+            "rideau de fer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "agent double",
+          "options": [
+            "agent double",
+            "guerre froide",
+            "renseignement",
+            "débriefing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "transfuge",
+          "options": [
+            "transfuge",
+            "camouflage",
+            "espionnage",
+            "taupe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "rideau de fer",
+          "options": [
+            "rideau de fer",
+            "micro",
+            "filature",
+            "agent double"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "guerre froide",
+          "options": [
+            "guerre froide",
+            "transfuge",
+            "renseignement",
+            "débriefing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "renseignement",
+          "options": [
+            "renseignement",
+            "camouflage",
+            "espionnage",
+            "taupe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "débriefing",
+          "options": [
+            "débriefing",
+            "contre-espionnage",
+            "cryptage",
+            "planque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "camouflage",
+          "options": [
+            "camouflage",
+            "micro",
+            "filature",
+            "agent double"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les ombres du Cirque",
+      "inspiration": "La Taupe (Tinker Tailor Soldier Spy - Tomas Alfredson, 2011)",
+      "text": "À peine George Smiley eut-il nettoyé ses lunettes épaisses avec son mouchoir en soie qu'il comprit que le monde des ombres l'appelait une dernière fois. Ce vétéran de l'{{BLANK_1}}, mis à la retraite anticipée, savait que la {{BLANK_11}} ne se gagnait pas avec des missiles, mais avec des murmures et des trahisons silencieuses. Le gouvernement l'avait rappelé dans le secret absolu pour une mission suicidaire : débusquer une {{BLANK_2}} au sommet du Cirque, le cœur même du {{BLANK_12}} britannique. Le {{BLANK_3}} officiel, avec ses machines et ses certitudes, avait échoué lamentablement. Smiley, lui, chassait à l'ancienne. Il plongea dans les archives poussiéreuses, analysant le {{BLANK_4}} des télégrammes soviétiques pour y déceler la signature d'un {{BLANK_8}}, ce Janus qui vendait l'âme de l'Occident à Moscou. Il lança une {{BLANK_7}} invisible sur ses anciens collègues, ces hommes qu'il avait aimés et qui, peut-être, le vendaient. Il découvrit une {{BLANK_5}} miteuse en banlieue, et fit extraire un {{BLANK_6}} minuscule caché dans le bois d'une lampe. Pour forcer le destin, il orchestra un {{BLANK_14}} magistral, attirant un {{BLANK_9}} de l'Est dans ses filets comme un poisson désespéré. Lors du {{BLANK_13}} final, dans une pièce aux murs capitonnés, les masques tombèrent. Le traître fut démasqué, et Smiley sut qu'il venait de recoudre une maille déchirée du {{BLANK_10}} qui séparait la lumière des ténèbres. Mais en regardant par la fenêtre le brouillard londonien, il comprit que dans ce métier, la victoire n'a jamais le goût du triomphe, mais seulement celui, amer, de la survie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "espionnage",
+          "options": [
+            "espionnage",
+            "taupe",
+            "contre-espionnage",
+            "cryptage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "taupe",
+          "options": [
+            "taupe",
+            "planque",
+            "micro",
+            "filature"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "contre-espionnage",
+          "options": [
+            "contre-espionnage",
+            "agent double",
+            "transfuge",
+            "rideau de fer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cryptage",
+          "options": [
+            "cryptage",
+            "guerre froide",
+            "renseignement",
+            "débriefing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "planque",
+          "options": [
+            "planque",
+            "camouflage",
+            "espionnage",
+            "taupe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "micro",
+          "options": [
+            "micro",
+            "contre-espionnage",
+            "cryptage",
+            "planque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "filature",
+          "options": [
+            "filature",
+            "agent double",
+            "transfuge",
+            "rideau de fer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "agent double",
+          "options": [
+            "agent double",
+            "guerre froide",
+            "renseignement",
+            "débriefing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "transfuge",
+          "options": [
+            "transfuge",
+            "camouflage",
+            "espionnage",
+            "taupe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "rideau de fer",
+          "options": [
+            "rideau de fer",
+            "micro",
+            "filature",
+            "agent double"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "guerre froide",
+          "options": [
+            "guerre froide",
+            "transfuge",
+            "renseignement",
+            "débriefing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "renseignement",
+          "options": [
+            "renseignement",
+            "camouflage",
+            "espionnage",
+            "taupe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "débriefing",
+          "options": [
+            "débriefing",
+            "contre-espionnage",
+            "cryptage",
+            "planque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "camouflage",
+          "options": [
+            "camouflage",
+            "micro",
+            "filature",
+            "agent double"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Espionnage et guerre froide",
+    "title_fa": "آزمون : جاسوسی و جنگ سرد",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'activité clandestine qui consiste à recueillir des informations secrètes pour le compte d'un État ou d'une organisation est l'____.",
+        "options": [
+          "espionnage",
+          "taupe",
+          "contre-espionnage",
+          "cryptage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعالیت مخفیانه برای کسب اطلاعات = espionnage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'agent infiltré au sein d'une organisation ennemie pour transmettre des secrets à son pays d'origine est la ____.",
+        "options": [
+          "taupe",
+          "planque",
+          "micro",
+          "filature"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جاسوس نفوذی در سازمان دشمن = taupe."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des mesures et des services chargés de détecter et de neutraliser les activités d'espionnage ennemies est le ____.",
+        "options": [
+          "contre-espionnage",
+          "agent double",
+          "transfuge",
+          "rideau de fer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اقدامات خنثی‌سازی جاسوسی دشمن = contre-espionnage."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique qui consiste à transformer un message clair en code illisible pour protéger son contenu est le ____.",
+        "options": [
+          "cryptage",
+          "guerre froide",
+          "renseignement",
+          "débriefing"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تبدیل پیام به کد غیرقابل خواندن = cryptage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu secret et dissimulé où un agent peut se cacher ou rencontrer des informateurs est la ____.",
+        "options": [
+          "planque",
+          "camouflage",
+          "espionnage",
+          "taupe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مخفیگاه امن مأمور = planque."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit appareil électronique caché pour enregistrer ou transmettre des conversations à l'insu des personnes est le ____.",
+        "options": [
+          "micro",
+          "contre-espionnage",
+          "cryptage",
+          "planque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه شنود مخفی = micro."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de suivre discrètement une personne pour observer ses déplacements et ses contacts est la ____.",
+        "options": [
+          "filature",
+          "agent double",
+          "transfuge",
+          "rideau de fer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تعقیب مخفیانه یک شخص = filature."
+      },
+      {
+        "type": "mcq",
+        "question": "L'espion qui travaille simultanément pour deux services de renseignement rivaux, les trahissant tous deux, est l'____.",
+        "options": [
+          "agent double",
+          "guerre froide",
+          "renseignement",
+          "débriefing"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جاسوسی که همزمان برای دو طرف کار می‌کند = agent double."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne (souvent militaire ou diplomate) qui fuit son pays pour se réfugier dans un pays rival en emportant des secrets est le ____.",
+        "options": [
+          "transfuge",
+          "camouflage",
+          "espionnage",
+          "taupe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فراری یا پناهنده سیاسی با اسناد = transfuge."
+      },
+      {
+        "type": "mcq",
+        "question": "L'expression métaphorique désignant la frontière idéologique et physique qui divisait l'Europe pendant la guerre froide est le ____.",
+        "options": [
+          "rideau de fer",
+          "micro",
+          "filature",
+          "agent double"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مرز ایدئولوژیک اروپا در جنگ سرد = rideau de fer."
+      },
+      {
+        "type": "mcq",
+        "question": "La période de fortes tensions géopolitiques entre le bloc de l'Est et le bloc de l'Ouest, sans affrontement militaire direct, est la ____.",
+        "options": [
+          "guerre froide",
+          "transfuge",
+          "renseignement",
+          "débriefing"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره تنش بدون جنگ مستقیم = guerre froide."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des informations secrètes collectées, ou l'organisme d'État chargé de cette collecte, est le ____.",
+        "options": [
+          "renseignement",
+          "camouflage",
+          "espionnage",
+          "taupe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اطلاعات محرمانه یا سازمان اطلاعاتی = renseignement."
+      },
+      {
+        "type": "mcq",
+        "question": "L'interrogatoire détaillé d'un agent à son retour de mission pour analyser les informations recueillies est le ____.",
+        "options": [
+          "débriefing",
+          "contre-espionnage",
+          "cryptage",
+          "planque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارزیابی و بازجویی پس از عملیات = débriefing."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de dissimuler son identité, ses intentions ou son matériel pour tromper l'ennemi est le ____.",
+        "options": [
+          "camouflage",
+          "micro",
+          "filature",
+          "agent double"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پنهان‌سازی و استتار هویت = camouflage."
+      },
+      {
+        "type": "binary",
+        "question": "Une taupe est un agent ennemi qui a réussi à s'infiltrer au sein d'une organisation pour en voler les secrets.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. taupe به جاسوس نفوذی در سازمان خودی گفته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le contre-espionnage a pour but de mener des opérations secrètes à l'étranger pour voler des technologies.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ضد جاسوسی (contre-espionnage) وظیفه دفاع و خنثی کردن جاسوسان بیگانه در خاک خودی را دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Un transfuge est un diplomate qui change simplement de pays de résidence pour des raisons personnelles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. transfuge معمولاً مأمور یا نظامی‌ای است که با اسناد محرمانه به اردوگاه دشمن پناهنده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le rideau de fer est une expression popularisée par Churchill pour décrire la division de l'Europe après 1945.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. چرچیل این اصطلاح را برای توصیف جدایی اروپای شرقی و غربی به کار برد."
+      },
+      {
+        "type": "binary",
+        "question": "Le débriefing se déroule avant le départ en mission pour donner les instructions à l'agent.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. debriefing ارزیابی «پس از» بازگشت از عملیات است (به جلسه پیش از عملیات briefing می‌گویند)."
+      },
+      {
+        "type": "binary",
+        "question": "La filature est la technique qui consiste à suivre discrètement une personne pour découvrir ses activités.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. filature همان تعقیب و مراقبت نامحسوس است."
+      }
+    ]
+  }
+}
