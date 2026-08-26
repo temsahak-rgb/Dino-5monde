@@ -1,0 +1,680 @@
+{
+  "id": "italian_opera",
+  "level": "C1",
+  "theme": "Opéra italien, bel canto et art lyrique",
+  "theme_fa": "اوپرای ایتالیایی، بل کانتو و هنر غنایی",
+  "icon": "🎭",
+  "inspiration": "Cinema Paradiso (Giuseppe Tornatore, 1988)",
+  "words": [
+    {
+      "fr": "le soprano",
+      "fa": "سوپرانو (صدای زیر زنانه)",
+      "emoji": "👩‍🎤",
+      "difficulty": 3,
+      "ex": "La soprano a chanté l'air de la Reine de la Nuit à la perfection.",
+      "ex_fa": "سوپرانو، آریای ملکه شب را بی‌نقص خواند."
+    },
+    {
+      "fr": "le ténor",
+      "fa": "تنور (صدای زیر مردانه)",
+      "emoji": "👨‍🎤",
+      "difficulty": 3,
+      "ex": "Luciano Pavarotti était le plus grand ténor du XXe siècle.",
+      "ex_fa": "لوچانو پاواروتی بزرگترین تنور قرن بیستم بود."
+    },
+    {
+      "fr": "le baryton",
+      "fa": "باریتون (صدای میانی مردانه)",
+      "emoji": "🎤",
+      "difficulty": 4,
+      "ex": "Le baryton interprétait souvent les rôles de père ou de roi.",
+      "ex_fa": "باریتون اغلب نقش‌های پدر یا شاه را بازی می‌کرد."
+    },
+    {
+      "fr": "l'aria",
+      "fa": "آریا (تک‌خوانی اپرایی)",
+      "emoji": "🎶",
+      "difficulty": 4,
+      "ex": "« Nessun dorma » est l'aria la plus célèbre du répertoire.",
+      "ex_fa": "«نسّون دورما» مشهورترین آریای رپرتوار است."
+    },
+    {
+      "fr": "l'ouverture",
+      "fa": "اُورتور (پیش‌درآمد ارکسترال)",
+      "emoji": "🎻",
+      "difficulty": 4,
+      "ex": "L'ouverture du Barbier de Séville est jubilatoire.",
+      "ex_fa": "اُورتور آرایشگر سویل شادی‌آور است."
+    },
+    {
+      "fr": "le librettiste",
+      "fa": "لیبرتونویس",
+      "emoji": "✍️",
+      "difficulty": 5,
+      "ex": "Boito était le librettiste favori de Verdi.",
+      "ex_fa": "بوییتو لیبرتونویس محبوب وردی بود."
+    },
+    {
+      "fr": "le bel canto",
+      "fa": "بل کانتو (آواز زیبا)",
+      "emoji": "💎",
+      "difficulty": 5,
+      "ex": "Bellini est le maître incontesté du bel canto.",
+      "ex_fa": "بلینی استاد بی‌چون‌وچرای بل کانتو است."
+    },
+    {
+      "fr": "le vibrato",
+      "fa": "ویبراتو (لرزش صدا)",
+      "emoji": "🌊",
+      "difficulty": 5,
+      "ex": "Son vibrato naturel embellit chaque note.",
+      "ex_fa": "ویبراتوی طبیعی‌اش هر نت را زیباتر می‌کند."
+    },
+    {
+      "fr": "le récitatif",
+      "fa": "رِسیتاتیو (گفتار آوازی)",
+      "emoji": "🗣️",
+      "difficulty": 5,
+      "ex": "Le récitatif accompagne le dialogue entre les personnages.",
+      "ex_fa": "رِسیتاتیو، گفتگوی بین شخصیت‌ها را همراهی می‌کند."
+    },
+    {
+      "fr": "la colorature",
+      "fa": "کلوراتور (آواز پرزرق‌وبرق)",
+      "emoji": "✨",
+      "difficulty": 5,
+      "ex": "La soprano colorature exécute des vocalises vertigineuses.",
+      "ex_fa": "سوپرانوی کلوراتور، آوازهای سرگیجه‌آوری اجرا می‌کند."
+    },
+    {
+      "fr": "le crescendo",
+      "fa": "کرشندو (افزایش تدریجی صدا)",
+      "emoji": "📈",
+      "difficulty": 4,
+      "ex": "Le crescendo final soulève l'orchestre tout entier.",
+      "ex_fa": "کرشندوی پایانی، کل ارکستر را به اوج می‌رساند."
+    },
+    {
+      "fr": "le fortissimo",
+      "fa": "فورتیسیمو (بسیار بلند)",
+      "emoji": "🔊",
+      "difficulty": 4,
+      "ex": "Le chœur chante en fortissimo à l'apogée dramatique.",
+      "ex_fa": "گروه کر در اوج درام، فورتیسیمو می‌خواند."
+    },
+    {
+      "fr": "le pianissimo",
+      "fa": "پیانیسیمو (بسیار آهسته)",
+      "emoji": "🔉",
+      "difficulty": 4,
+      "ex": "La soprano murmure sa douleur en pianissimo.",
+      "ex_fa": "سوپرانو دردش را در پیانیسیمو زمزمه می‌کند."
+    },
+    {
+      "fr": "l'entracte",
+      "fa": "بین پرده",
+      "emoji": "⏸️",
+      "difficulty": 4,
+      "ex": "L'entracte permet aux spectateurs de se rafraîchir.",
+      "ex_fa": "بین پرده به تماشاگران امکان تجدید قوا می‌دهد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La diva de Palerme",
+      "text": "À Palerme, une jeune fille nommée Lucia rêve de devenir chanteuse d'opéra. Elle possède une voix de {{BLANK_1}} exceptionnelle, capable de monter jusqu'au contre-fa. Son professeur, un vieux {{BLANK_3}} à la retraite, lui enseigne les secrets du {{BLANK_7}}, cet art italien de la belle ligne vocale. Elle apprend à maîtriser son {{BLANK_8}} naturel pour donner vie aux notes. Chaque matin, elle travaille le {{BLANK_10}}, ces vocalises rapides qui exigent une agilité parfaite. Elle chante d'abord en {{BLANK_13}}, presque un murmure, puis monte progressivement en {{BLANK_12}}, jusqu'à remplir la salle entière. Son maître lui explique la structure d'un opéra : l'{{BLANK_5}} orchestrale ouvre le spectacle, puis le {{BLANK_9}} fait avancer l'intrigue entre les airs. Quand arrive l'{{BLANK_4}} principale, Lucia doit exprimer toute l'émotion du personnage. Le {{BLANK_6}} écrit les vers que le compositeur met en musique. Dans les rôles masculins, le {{BLANK_2}} brille par sa puissance héroïque, tandis que le {{BLANK_3}} apporte la maturité et la gravité. Pendant l'{{BLANK_14}}, Lucia se repose avant le dernier acte. Le soir de la première, devant un public conquis, elle chante « Casta Diva » avec une pureté céleste. Le théâtre explose en applaudissements. La petite orpheline de Palerme est devenue une diva.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "soprano",
+          "options": [
+            "soprano",
+            "ténor",
+            "baryton",
+            "vibrato"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ténor",
+          "options": [
+            "ténor",
+            "baryton",
+            "soprano",
+            "colorature"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "baryton",
+          "options": [
+            "baryton",
+            "soprano",
+            "ténor",
+            "librettiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "aria",
+          "options": [
+            "aria",
+            "ouverture",
+            "récitatif",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "ouverture",
+          "options": [
+            "ouverture",
+            "aria",
+            "crescendo",
+            "fortissimo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "librettiste",
+          "options": [
+            "librettiste",
+            "bel canto",
+            "vibrato",
+            "soprano"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "bel canto",
+          "options": [
+            "bel canto",
+            "colorature",
+            "récitatif",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "vibrato",
+          "options": [
+            "vibrato",
+            "bel canto",
+            "pianissimo",
+            "fortissimo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "récitatif",
+          "options": [
+            "récitatif",
+            "aria",
+            "ouverture",
+            "colorature"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "colorature",
+          "options": [
+            "colorature",
+            "bel canto",
+            "vibrato",
+            "crescendo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "crescendo",
+          "options": [
+            "crescendo",
+            "fortissimo",
+            "pianissimo",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "fortissimo",
+          "options": [
+            "fortissimo",
+            "pianissimo",
+            "crescendo",
+            "aria"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "pianissimo",
+          "options": [
+            "pianissimo",
+            "fortissimo",
+            "crescendo",
+            "bel canto"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "entracte",
+          "options": [
+            "entracte",
+            "ouverture",
+            "récitatif",
+            "aria"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La voix du silence",
+      "inspiration": "Cinema Paradiso (Giuseppe Tornatore, 1988)",
+      "text": "À peine Lucia eut-elle poussé la porte du Teatro Massimo de Palerme qu'elle sentit le poids de deux siècles de musique l'envelopper. Les velours rouges des fauteuils, les dorures du plafond, le lustre immense qui semblait un soleil captif : tout ici respirait la sacralité de l'art lyrique. Elle avait dix-neuf ans, et sa voix de {{BLANK_1}} pouvait faire pleurer les pierres. Son maître, un vieux {{BLANK_3}} à la carrière brisée par la guerre, lui avait transmis l'héritage sacré du {{BLANK_7}}, cette école italienne qui privilégie la beauté pure de la ligne mélodique avant tout effet. « La voix, » disait-il, « est un violon dont le corps est l'âme. » Il lui avait appris à cultiver son {{BLANK_8}}, cette oscillation naturelle qui donne vie et chaleur aux notes, comme le vent donne vie aux feuilles. Chaque matin, elle travaillait la {{BLANK_10}}, ces arabesques vocales qui exigent une précision d'horloger suisse. Elle chantait d'abord en {{BLANK_13}}, si doucement qu'on eût dit une prière, puis montait en {{BLANK_11}}, vague après vague, jusqu'au {{BLANK_12}} triomphal qui emplissait la salle entière comme une marée. Le soir de la première, elle chantait Norma de Bellini. L'{{BLANK_5}} orchestrale avait soulevé le rideau sur un drame antique. Puis le {{BLANK_9}} avait fait avancer l'intrigue, ces phrases à demi chantées qui préparent l'explosion lyrique. Quand vint l'{{BLANK_4}} « Casta Diva », Lucia sentit le temps se suspendre. Le {{BLANK_6}}, Arrigo Boito, avait ciselé chaque syllabe pour qu'elle épouse la musique comme une main épouse un gant. À ses côtés, le {{BLANK_2}} héroïque incarnait Pollione avec une puissance de bronze, tandis que le {{BLANK_3}} sombre apportait la gravité du père Oroveso. Pendant l'{{BLANK_14}}, Lucia ferma les yeux dans sa loge, respirant lentement. Elle entendait, étouffés par les murs, les murmures émerveillés du public. Au dernier acte, quand Norma monta sur le bûcher, Lucia chanta avec une intensité qui fit trembler les cintres. Elle n'était plus une jeune fille de Palerme, elle était la prêtresse gauloise, elle était toutes les femmes trahies de l'histoire. Quand le dernier accord s'éteignit, il y eut un silence d'une seconde, une éternité, puis le théâtre explosa. Les roses pleuvaient sur la scène. Quelque part, dans une loge obscure, son vieux maître essuyait une larme. Il savait qu'il avait transmis le flambeau, que la voix de Lucia porterait le {{BLANK_7}} vers d'autres siècles, d'autres cœurs, d'autres larmes.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "soprano",
+          "options": [
+            "soprano",
+            "ténor",
+            "baryton",
+            "vibrato"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ténor",
+          "options": [
+            "ténor",
+            "baryton",
+            "soprano",
+            "colorature"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "baryton",
+          "options": [
+            "baryton",
+            "soprano",
+            "ténor",
+            "librettiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "aria",
+          "options": [
+            "aria",
+            "ouverture",
+            "récitatif",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "ouverture",
+          "options": [
+            "ouverture",
+            "aria",
+            "crescendo",
+            "fortissimo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "librettiste",
+          "options": [
+            "librettiste",
+            "bel canto",
+            "vibrato",
+            "soprano"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "bel canto",
+          "options": [
+            "bel canto",
+            "colorature",
+            "récitatif",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "vibrato",
+          "options": [
+            "vibrato",
+            "bel canto",
+            "pianissimo",
+            "fortissimo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "récitatif",
+          "options": [
+            "récitatif",
+            "aria",
+            "ouverture",
+            "colorature"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "colorature",
+          "options": [
+            "colorature",
+            "bel canto",
+            "vibrato",
+            "crescendo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "crescendo",
+          "options": [
+            "crescendo",
+            "fortissimo",
+            "pianissimo",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "fortissimo",
+          "options": [
+            "fortissimo",
+            "pianissimo",
+            "crescendo",
+            "aria"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "pianissimo",
+          "options": [
+            "pianissimo",
+            "fortissimo",
+            "crescendo",
+            "bel canto"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "entracte",
+          "options": [
+            "entracte",
+            "ouverture",
+            "récitatif",
+            "aria"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Opéra italien et art lyrique",
+    "title_fa": "آزمون : اوپرای ایتالیایی و هنر غنایی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La voix féminine la plus aiguë, qui interprète souvent les rôles principaux féminins à l'opéra, est le ____.",
+        "options": [
+          "soprano",
+          "ténor",
+          "baryton",
+          "vibrato"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زیرترین صدای زنانه = soprano."
+      },
+      {
+        "type": "mcq",
+        "question": "La voix masculine la plus aiguë, qui incarne souvent les héros romantiques, est le ____.",
+        "options": [
+          "ténor",
+          "baryton",
+          "soprano",
+          "colorature"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زیرترین صدای مردانه = ténor."
+      },
+      {
+        "type": "mcq",
+        "question": "La voix masculine intermédiaire, entre le ténor et la basse, souvent utilisée pour les rôles de père ou de vilain, est le ____.",
+        "options": [
+          "baryton",
+          "soprano",
+          "ténor",
+          "librettiste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صدای میانی مردانه = baryton."
+      },
+      {
+        "type": "mcq",
+        "question": "Le morceau soliste où un personnage exprime ses émotions profondes, souvent le sommet musical d'un acte, est l'____.",
+        "options": [
+          "aria",
+          "ouverture",
+          "récitatif",
+          "entracte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تک‌خوانی احساسی = aria."
+      },
+      {
+        "type": "mcq",
+        "question": "Le prélude orchestral qui ouvre un opéra et présente souvent les thèmes principaux est l'____.",
+        "options": [
+          "ouverture",
+          "aria",
+          "crescendo",
+          "fortissimo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیش‌درآمد ارکسترال = ouverture."
+      },
+      {
+        "type": "mcq",
+        "question": "L'auteur qui écrit le texte littéraire d'un opéra, en collaboration avec le compositeur, est le ____.",
+        "options": [
+          "librettiste",
+          "bel canto",
+          "vibrato",
+          "soprano"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نویسنده متن ادبی اپرا = librettiste."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette école de chant italienne qui privilégie la beauté de la ligne vocale et la virtuosité technique est le ____.",
+        "options": [
+          "bel canto",
+          "colorature",
+          "récitatif",
+          "entracte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکتب آواز زیبای ایتالیایی = bel canto."
+      },
+      {
+        "type": "mcq",
+        "question": "La légère oscillation naturelle de la voix qui donne chaleur et expressivité aux notes tenues est le ____.",
+        "options": [
+          "vibrato",
+          "bel canto",
+          "pianissimo",
+          "fortissimo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لرزش طبیعی صدا = vibrato."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce passage chanté proche de la parole, qui fait avancer l'action dramatique entre les airs, est le ____.",
+        "options": [
+          "récitatif",
+          "aria",
+          "ouverture",
+          "colorature"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گفتار آوازی = récitatif."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce style vocal ornemental, caractérisé par des vocalises rapides et des trilles, est la ____.",
+        "options": [
+          "colorature",
+          "bel canto",
+          "vibrato",
+          "crescendo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آواز پرزرق‌وبرق و پرورش‌دار = colorature."
+      },
+      {
+        "type": "mcq",
+        "question": "L'augmentation progressive de l'intensité sonore dans un passage musical est un ____.",
+        "options": [
+          "crescendo",
+          "fortissimo",
+          "pianissimo",
+          "entracte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "افزایش تدریجی شدت صدا = crescendo."
+      },
+      {
+        "type": "mcq",
+        "question": "La nuance dynamique qui indique qu'un passage doit être joué très fort est le ____.",
+        "options": [
+          "fortissimo",
+          "pianissimo",
+          "crescendo",
+          "aria"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بسیار بلند = fortissimo."
+      },
+      {
+        "type": "mcq",
+        "question": "La nuance dynamique qui indique qu'un passage doit être joué très doucement est le ____.",
+        "options": [
+          "pianissimo",
+          "fortissimo",
+          "crescendo",
+          "bel canto"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بسیار آهسته = pianissimo."
+      },
+      {
+        "type": "mcq",
+        "question": "La pause entre deux actes d'un opéra, pendant laquelle le public peut se reposer, est l'____.",
+        "options": [
+          "entracte",
+          "ouverture",
+          "récitatif",
+          "aria"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استراحت بین پرده‌ها = entracte."
+      },
+      {
+        "type": "binary",
+        "question": "Le soprano et le ténor désignent tous deux des voix masculines.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. soprano صدای زنانه است، ténor صدای مردانه."
+      },
+      {
+        "type": "binary",
+        "question": "L'aria et le récitatif sont deux formes musicales distinctes qui remplissent des fonctions différentes dans l'opéra.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. آریا بیان احساس است، رسیتاتیو پیشبرد داستان."
+      },
+      {
+        "type": "binary",
+        "question": "Le bel canto est une technique de danse utilisée dans les opéras baroques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. bel canto مکتب آواز است، نه رقص."
+      },
+      {
+        "type": "binary",
+        "question": "Le fortissimo et le pianissimo sont deux nuances opposées qui indiquent respectivement très fort et très doux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. این دو نقطه مقابل هم در شدت صدا هستند."
+      },
+      {
+        "type": "binary",
+        "question": "Le librettiste est le musicien qui dirige l'orchestre pendant la représentation.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. لیبرتونویس متن را می‌نویسد، رهبر ارکستر dirigent نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "La colorature exige une grande agilité vocale et une maîtrise parfaite des ornementations.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کلوراتور به چابکی صدا و تسلط بر آرایش‌های صوتی نیاز دارد."
+      }
+    ]
+  }
+}
