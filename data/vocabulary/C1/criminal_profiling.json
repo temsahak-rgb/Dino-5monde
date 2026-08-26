@@ -1,0 +1,702 @@
+{
+  "id": "criminal_profiling",
+  "level": "C1",
+  "theme": "Profilage criminel, psychologie légale et enquêtes",
+  "theme_fa": "پروفایل‌سازی جنایی، روان‌شناسی قانونی و تحقیقات",
+  "icon": "🕵️‍♀️",
+  "inspiration": "Le Silence des Agneaux (Jonathan Demme, 1991)",
+  "words": [
+    {
+      "fr": "le profiler",
+      "fa": "پروفایلر (تحلیلگر رفتار)",
+      "emoji": "🔍",
+      "difficulty": 4,
+      "ex": "Le profiler établit le portrait psychologique du suspect.",
+      "ex_fa": "پروفایلر، پروفایل روانی مظنون را تهیه می‌کند."
+    },
+    {
+      "fr": "le tueur en série",
+      "fa": "قاتل زنجیره‌ای",
+      "emoji": "🔪",
+      "difficulty": 4,
+      "ex": "Le tueur en série agit selon un rituel précis et répétitif.",
+      "ex_fa": "قاتل زنجیره‌ای طبق یک آیین مشخص و تکراری عمل می‌کند."
+    },
+    {
+      "fr": "la scène de crime",
+      "fa": "صحنه جرم",
+      "emoji": "📍",
+      "difficulty": 4,
+      "ex": "La scène de crime a été quadrillée par les techniciens.",
+      "ex_fa": "صحنه جرم توسط تکنسین‌ها شبکه‌بندی شد."
+    },
+    {
+      "fr": "l'indice",
+      "fa": "سرنخ",
+      "emoji": "🔎",
+      "difficulty": 3,
+      "ex": "Un indice microscopique a permis de confondre le suspect.",
+      "ex_fa": "یک سرنخ میکروسکوپی مظنون را رسوا کرد."
+    },
+    {
+      "fr": "le mobile",
+      "fa": "انگیزه",
+      "emoji": "💭",
+      "difficulty": 3,
+      "ex": "Le mobile du crime reste un mystère pour les enquêteurs.",
+      "ex_fa": "انگیزه جرم برای محققان همچنان یک راز است."
+    },
+    {
+      "fr": "l'alibi",
+      "fa": "بهانه، مدرک عدم حضور",
+      "emoji": "🛡️",
+      "difficulty": 3,
+      "ex": "Son alibi s'est effondré lors de l'interrogatoire.",
+      "ex_fa": "بهانه او هنگام بازجویی فرو ریخت."
+    },
+    {
+      "fr": "le suspect",
+      "fa": "مظنون",
+      "emoji": "👤",
+      "difficulty": 3,
+      "ex": "Le suspect a été placé en garde à vue.",
+      "ex_fa": "مظنون در بازداشت موقت قرار گرفت."
+    },
+    {
+      "fr": "l'interrogatoire",
+      "fa": "بازجویی",
+      "emoji": "🎤",
+      "difficulty": 4,
+      "ex": "L'interrogatoire a duré douze heures sans interruption.",
+      "ex_fa": "بازجویی دوازده ساعت بدون وقفه طول کشید."
+    },
+    {
+      "fr": "la psychopathie",
+      "fa": "سایکوپاتی (روان‌آزاری)",
+      "emoji": "🧠",
+      "difficulty": 5,
+      "ex": "La psychopathie se caractérise par l'absence d'empathie.",
+      "ex_fa": "سایکوپاتی با فقدان همدلی مشخص می‌شود."
+    },
+    {
+      "fr": "le témoignage",
+      "fa": "شهادت",
+      "emoji": "🗣️",
+      "difficulty": 3,
+      "ex": "Le témoignage oculaire a été déterminant pour le verdict.",
+      "ex_fa": "شهادت چشمی برای حکم نهایی تعیین‌کننده بود."
+    },
+    {
+      "fr": "l'enquêteur",
+      "fa": "کارآگاه، بازپرس",
+      "emoji": "🕵️",
+      "difficulty": 3,
+      "ex": "L'enquêteur a suivi la piste jusqu'à son terme.",
+      "ex_fa": "کارآگاه سرنخ را تا انتها دنبال کرد."
+    },
+    {
+      "fr": "le modus operandi",
+      "fa": "شیوه ارتکاب جرم",
+      "emoji": "🔁",
+      "difficulty": 5,
+      "ex": "Le modus operandi révèle la signature psychologique du criminel.",
+      "ex_fa": "شیوه ارتکاب جرم، امضای روانی مجرم را نشان می‌دهد."
+    },
+    {
+      "fr": "le verdict",
+      "fa": "حکم، رأی",
+      "emoji": "⚖️",
+      "difficulty": 3,
+      "ex": "Le verdict de culpabilité a été prononcé à l'unanimité.",
+      "ex_fa": "حکم مجرمیت به اتفاق آرا صادر شد."
+    },
+    {
+      "fr": "l'incarcération",
+      "fa": "زندانی کردن",
+      "emoji": "⛓️",
+      "difficulty": 4,
+      "ex": "L'incarcération à perpétuité est la peine maximale.",
+      "ex_fa": "حبس ابد، حداکثر مجازات است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La traque de Buffalo Bill",
+      "text": "Clarice Starling, jeune stagiaire du FBI, est envoyée interviewer le Dr Hannibal Lecter, un {{BLANK_1}} brillant devenu {{BLANK_2}} cannibale. Elle doit obtenir son aide pour capturer un nouveau {{BLANK_3}} qui enlève des femmes. Sur chaque {{BLANK_4}}, l'{{BLANK_5}} laisse des indices macabres. Le {{BLANK_6}} de ses actes révèle un rituel obsessionnel. L'{{BLANK_12}} de Clarice analyse ces éléments pour dresser un portrait psychologique. Elle découvre que le {{BLANK_8}} du crime est lié à un traumatisme d'enfance. Chaque {{BLANK_9}} interrogé fournit un {{BLANK_10}} contradictoire. Un {{BLANK_11}} solide finit par émerger. Grâce à la {{BLANK_7}} révélée par Lecter, Clarice comprend que le tueur souffre de {{BLANK_13}} sévère. Elle localise sa cachette et affronte l'homme dans l'obscurité. Le {{BLANK_15}} du jury sera sans appel. L'{{BLANK_16}} du monstre mettra fin à ses crimes.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "profiler",
+          "options": [
+            "profiler",
+            "enquêteur",
+            "suspect",
+            "tueur en série"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "tueur en série",
+          "options": [
+            "tueur en série",
+            "suspect",
+            "enquêteur",
+            "profil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tueur en série",
+          "options": [
+            "tueur en série",
+            "alibi",
+            "témoin",
+            "verdict"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "scène de crime",
+          "options": [
+            "scène de crime",
+            "interrogatoire",
+            "prison",
+            "tribunal"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "indice",
+          "options": [
+            "indice",
+            "mobile",
+            "alibi",
+            "verdict"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "modus operandi",
+          "options": [
+            "modus operandi",
+            "témoignage",
+            "incarcération",
+            "psychopathie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "scène de crime",
+          "options": [
+            "scène de crime",
+            "enquête",
+            "garde à vue",
+            "liberté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "mobile",
+          "options": [
+            "mobile",
+            "indice",
+            "témoin",
+            "juge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "suspect",
+          "options": [
+            "suspect",
+            "enquêteur",
+            "juge",
+            "avocat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "alibi",
+          "options": [
+            "alibi",
+            "verdict",
+            "témoignage",
+            "incarcération"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "témoignage",
+          "options": [
+            "témoignage",
+            "indice",
+            "mobile",
+            "profil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "enquêteur",
+          "options": [
+            "enquêteur",
+            "avocat",
+            "juge",
+            "suspect"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "psychopathie",
+          "options": [
+            "psychopathie",
+            "alibi",
+            "verdict",
+            "incarcération"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "verdict",
+          "options": [
+            "verdict",
+            "alibi",
+            "témoin",
+            "indice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "incarcération",
+          "options": [
+            "incarcération",
+            "liberté",
+            "fuite",
+            "acquittement"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le monstre derrière la vitre",
+      "inspiration": "Le Silence des Agneaux (Jonathan Demme, 1991)",
+      "text": "À peine Clarice Starling eut-elle franchi les grilles de l'hôpital psychiatrique de Baltimore que le froid glacial des sous-sols lui glaça l'âme. Elle descendait vers l'enfer pour rencontrer le diable en personne : le Dr Hannibal Lecter, ancien {{BLANK_1}} de génie devenu le plus terrifiant {{BLANK_2}} de l'histoire américaine. Derrière sa vitre blindée, le monstre l'attendait, immobile, respirant l'air vicié avec la sérénité d'un sage. Clarice devait extraire de son esprit malade la clé pour capturer Buffalo Bill, un autre prédateur qui semait la terreur. Sur chaque {{BLANK_4}} abandonnée, l'assassin laissait des {{BLANK_5}}s macabres, des papillons de la mort posés sur les lèvres des victimes. Le {{BLANK_6}} de ses actes révélait une obsession de transformation, une haine viscérale de sa propre identité. Clarice, guidée par les murmures du cannibale, apprit à lire l'âme des monstres. Elle comprit que le {{BLANK_8}} profond du crime était un cri d'enfance étouffé, que chaque {{BLANK_9}} interrogé cachait un {{BLANK_10}} fragile comme du verre. Dans le dédale des mensonges, un {{BLANK_11}} oculaire finit par percer la brume. Elle comprit enfin que Buffalo Bill souffrait d'une {{BLANK_13}} qui le poussait à coudre une seconde peau avec la chair des femmes. Quand elle pénétra seule dans la maison des horreurs, plongée dans les ténèbres, elle entendit le cri des agneaux de son enfance. Elle tira pour faire taire ce bruit, pour sauver l'innocente, pour prouver au monde que la lumière pouvait vaincre l'abîme. Le {{BLANK_15}} de culpabilité tomberait comme un couperet, et l'{{BLANK_16}} éternelle du monstre permettrait à Clarice de trouver enfin le silence.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "profiler",
+          "options": [
+            "profiler",
+            "enquêteur",
+            "suspect",
+            "tueur en série"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "tueur en série",
+          "options": [
+            "tueur en série",
+            "suspect",
+            "enquêteur",
+            "profil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tueur en série",
+          "options": [
+            "tueur en série",
+            "alibi",
+            "témoin",
+            "verdict"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "scène de crime",
+          "options": [
+            "scène de crime",
+            "interrogatoire",
+            "prison",
+            "tribunal"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "indices",
+          "options": [
+            "indices",
+            "mobiles",
+            "alibis",
+            "verdicts"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "modus operandi",
+          "options": [
+            "modus operandi",
+            "témoignage",
+            "incarcération",
+            "psychopathie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "scène de crime",
+          "options": [
+            "scène de crime",
+            "enquête",
+            "garde à vue",
+            "liberté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "mobile",
+          "options": [
+            "mobile",
+            "indice",
+            "témoin",
+            "juge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "suspect",
+          "options": [
+            "suspect",
+            "enquêteur",
+            "juge",
+            "avocat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "alibi",
+          "options": [
+            "alibi",
+            "verdict",
+            "témoignage",
+            "incarcération"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "témoignage",
+          "options": [
+            "témoignage",
+            "indice",
+            "mobile",
+            "profil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "enquêteur",
+          "options": [
+            "enquêteur",
+            "avocat",
+            "juge",
+            "suspect"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "psychopathie",
+          "options": [
+            "psychopathie",
+            "alibi",
+            "verdict",
+            "incarcération"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "verdict",
+          "options": [
+            "verdict",
+            "alibi",
+            "témoin",
+            "indice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "incarcération",
+          "options": [
+            "incarcération",
+            "liberté",
+            "fuite",
+            "acquittement"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Profilage criminel et enquêtes",
+    "title_fa": "آزمون : پروفایل‌سازی جنایی و تحقیقات",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le spécialiste qui analyse les scènes de crime pour établir le portrait psychologique et comportemental d'un criminel inconnu est le ____.",
+        "options": [
+          "profiler",
+          "enquêteur",
+          "suspect",
+          "tueur en série"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تحلیلگر رفتار مجرم = profiler."
+      },
+      {
+        "type": "mcq",
+        "question": "Le criminel qui assassine plusieurs victimes au fil du temps, généralement selon un schéma ou un rituel répétitif, est le ____.",
+        "options": [
+          "tueur en série",
+          "suspect",
+          "enquêteur",
+          "profil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قاتل چندین نفر در طول زمان = tueur en série."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu précis où une infraction a été commise et où les enquêteurs recherchent les preuves matérielles est la ____.",
+        "options": [
+          "scène de crime",
+          "interrogatoire",
+          "prison",
+          "tribunal"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محل وقوع جرم = scène de crime."
+      },
+      {
+        "type": "mcq",
+        "question": "L'élément matériel ou la trace qui permet d'orienter une enquête et d'établir la vérité est l'____.",
+        "options": [
+          "indice",
+          "mobile",
+          "alibi",
+          "verdict"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سرنخ و نشانه = indice."
+      },
+      {
+        "type": "mcq",
+        "question": "La raison psychologique, affective ou financière qui pousse une personne à commettre un crime est le ____.",
+        "options": [
+          "mobile",
+          "indice",
+          "témoin",
+          "juge"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دلیل و انگیزه جرم = mobile."
+      },
+      {
+        "type": "mcq",
+        "question": "La preuve ou le témoignage qui démontre qu'un suspect ne pouvait pas être présent sur les lieux du crime est l'____.",
+        "options": [
+          "alibi",
+          "verdict",
+          "témoignage",
+          "incarcération"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مدرک عدم حضور در صحنه = alibi."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne soupçonnée d'avoir commis une infraction et sur laquelle se concentrent les investigations est le ____.",
+        "options": [
+          "suspect",
+          "enquêteur",
+          "juge",
+          "avocat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص مظنون = suspect."
+      },
+      {
+        "type": "mcq",
+        "question": "L'audition menée par les policiers pour obtenir des informations ou des aveux d'un suspect est l'____.",
+        "options": [
+          "interrogatoire",
+          "verdict",
+          "alibi",
+          "indice"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جلسه بازجویی = interrogatoire."
+      },
+      {
+        "type": "mcq",
+        "question": "Le trouble de la personnalité caractérisé par l'absence de remords, d'empathie et le mépris des normes sociales est la ____.",
+        "options": [
+          "psychopathie",
+          "alibi",
+          "verdict",
+          "incarcération"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اختلال شخصیت ضداجتماعی = psychopathie."
+      },
+      {
+        "type": "mcq",
+        "question": "La déclaration faite par une personne qui a vu ou entendu des faits pertinents pour une enquête est le ____.",
+        "options": [
+          "témoignage",
+          "indice",
+          "mobile",
+          "profil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اظهارات شاهد = témoignage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel chargé de diriger les investigations pour découvrir la vérité sur une infraction est l'____.",
+        "options": [
+          "enquêteur",
+          "avocat",
+          "juge",
+          "suspect"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کارآگاه و محقق = enquêteur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'expression latine qui désigne la méthode et les habitudes spécifiques qu'un criminel utilise pour commettre ses forfaits est le ____.",
+        "options": [
+          "modus operandi",
+          "témoignage",
+          "incarcération",
+          "psychopathie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیوه خاص ارتکاب جرم = modus operandi."
+      },
+      {
+        "type": "mcq",
+        "question": "La décision rendue par un tribunal ou un jury qui déclare l'accusé coupable ou non coupable est le ____.",
+        "options": [
+          "verdict",
+          "alibi",
+          "témoin",
+          "indice"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رأی نهایی دادگاه = verdict."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fait de priver une personne condamnée de sa liberté en l'enfermant dans un établissement pénitentiaire est l'____.",
+        "options": [
+          "incarcération",
+          "liberté",
+          "fuite",
+          "acquittement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حبس و زندانی کردن = incarcération."
+      },
+      {
+        "type": "binary",
+        "question": "Le profiler est le policier qui arrête physiquement les criminels lors des opérations de terrain.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پروفایلر تحلیلگر روانی است که در اداره کار می‌کند، نه مأمور عملیاتی."
+      },
+      {
+        "type": "binary",
+        "question": "Le modus operandi désigne la signature comportementale et les habitudes répétitives d'un criminel.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. modus operandi روش و عادت‌های تکراری مجرم در ارتکاب جرم است."
+      },
+      {
+        "type": "binary",
+        "question": "Un alibi solide peut innocenter un suspect en prouvant qu'il était ailleurs au moment des faits.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بهانه و مدرک قوی می‌تواند ثابت کند مظنون در زمان جرم جای دیگری بوده است."
+      },
+      {
+        "type": "binary",
+        "question": "La psychopathie se caractérise principalement par une empathie excessive et un fort sentiment de culpabilité.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سایکوپاتی دقیقاً با فقدان همدلی و عدم احساس گناه مشخص می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le témoignage oculaire est la déclaration d'une personne qui a directement vu les faits se produire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. شهادت چشمی از سوی کسی است که مستقیماً رویداد را دیده است."
+      },
+      {
+        "type": "binary",
+        "question": "Le verdict est la peine financière que doit payer le condamné à l'État.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. verdict رأی گناهکاری یا بی‌گناهی است، جریمه مالی amende نام دارد."
+      }
+    ]
+  }
+}
