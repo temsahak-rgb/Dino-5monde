@@ -1,0 +1,714 @@
+{
+  "id": "medicine_psychiatry",
+  "level": "C1",
+  "theme": "Médecine, psychiatrie et santé mentale",
+  "theme_fa": "پزشکی، روانپزشکی و سلامت روان",
+  "icon": "🧠",
+  "inspiration": "Un homme d'exception (A Beautiful Mind - Ron Howard, 2001)",
+  "words": [
+    {
+      "fr": "la schizophrénie",
+      "fa": "اسکیزوفرنی",
+      "emoji": "🧩",
+      "difficulty": 5,
+      "ex": "La schizophrénie se manifeste souvent par des hallucinations.",
+      "ex_fa": "اسکیزوفرنی اغلب با توهمات بروز می‌کند."
+    },
+    {
+      "fr": "l'hallucination",
+      "fa": "توهّم",
+      "emoji": "👁️",
+      "difficulty": 4,
+      "ex": "Le patient a une hallucination visuelle et voit des ombres.",
+      "ex_fa": "بیمار دچار توهم بینایی است و سایه‌هایی می‌بیند."
+    },
+    {
+      "fr": "le diagnostic",
+      "fa": "تشخیص (پزشکی)",
+      "emoji": "🩺",
+      "difficulty": 3,
+      "ex": "Le diagnostic précoce permet une meilleure prise en charge.",
+      "ex_fa": "تشخیص زودهنگام امکان رسیدگی بهتر را می‌دهد."
+    },
+    {
+      "fr": "la thérapie",
+      "fa": "درمان (روان‌شناختی)",
+      "emoji": "🛋️",
+      "difficulty": 3,
+      "ex": "La thérapie cognitive aide à modifier les pensées négatives.",
+      "ex_fa": "درمان شناختی به تغییر افکار منفی کمک می‌کند."
+    },
+    {
+      "fr": "le traumatisme",
+      "fa": "تروما، ضربه روحی",
+      "emoji": "💔",
+      "difficulty": 4,
+      "ex": "Ce traumatisme d'enfance hante ses nuits.",
+      "ex_fa": "این ترومای کودکی، شب‌هایش را تسخیر کرده است."
+    },
+    {
+      "fr": "l'amnésie",
+      "fa": "فراموشی",
+      "emoji": "🧠",
+      "difficulty": 4,
+      "ex": "L'accident a provoqué une amnésie partielle.",
+      "ex_fa": "تصادف باعث فراموشی جزئی شد."
+    },
+    {
+      "fr": "le placebo",
+      "fa": "دارونما",
+      "emoji": "💊",
+      "difficulty": 4,
+      "ex": "L'effet placebo montre le pouvoir de l'esprit sur le corps.",
+      "ex_fa": "اثر دارونما قدرت ذهن بر بدن را نشان می‌دهد."
+    },
+    {
+      "fr": "la lobotomie",
+      "fa": "لوبوتومی (جراحی مغز)",
+      "emoji": "🔪",
+      "difficulty": 5,
+      "ex": "La lobotomie était pratiquée au milieu du XXe siècle.",
+      "ex_fa": "لوبوتومی در اواسط قرن بیستم انجام می‌شد."
+    },
+    {
+      "fr": "le syndrome",
+      "fa": "سندرم",
+      "emoji": "📋",
+      "difficulty": 4,
+      "ex": "Le syndrome de Stockholm lie la victime à son ravisseur.",
+      "ex_fa": "سندرم استکهلم، قربانی را به گروگان‌گیرش پیوند می‌دهد."
+    },
+    {
+      "fr": "la névrose",
+      "fa": "روان‌رنجوری",
+      "emoji": "😰",
+      "difficulty": 5,
+      "ex": "Sa névrose le pousse à vérifier dix fois que la porte est fermée.",
+      "ex_fa": "روان‌رنجوری او را وادار می‌کند ده بار بسته بودن در را چک کند."
+    },
+    {
+      "fr": "le sevrage",
+      "fa": "ترک اعتیاد / عادت",
+      "emoji": "🚫",
+      "difficulty": 4,
+      "ex": "Le sevrage alcoolique nécessite un suivi médical strict.",
+      "ex_fa": "ترک الکل به پیگیری پزشکی دقیق نیاز دارد."
+    },
+    {
+      "fr": "l'électrochoc",
+      "fa": "شوک الکتریکی",
+      "emoji": "⚡",
+      "difficulty": 5,
+      "ex": "L'électrochoc est parfois utilisé pour les dépressions sévères.",
+      "ex_fa": "شوک الکتریکی گاهی برای افسردگی‌های شدید استفاده می‌شود."
+    },
+    {
+      "fr": "la psychanalyse",
+      "fa": "روانکاوی",
+      "emoji": "🛋️",
+      "difficulty": 4,
+      "ex": "Freud est le fondateur de la psychanalyse.",
+      "ex_fa": "فروید بنیان‌گذار روانکاوی است."
+    },
+    {
+      "fr": "le délire",
+      "fa": "هذیان",
+      "emoji": "🗣️",
+      "difficulty": 4,
+      "ex": "Le patient est en plein délire de persécution.",
+      "ex_fa": "بیمار در میان هذیان گزندآسیب است."
+    },
+    {
+      "fr": "l'hystérie",
+      "fa": "هیستری (هیجان‌زدگی شدید)",
+      "emoji": "😱",
+      "difficulty": 5,
+      "ex": "Au XIXe siècle, l'hystérie était mal comprise par les médecins.",
+      "ex_fa": "در قرن نوزدهم، هیستری توسط پزشکان به درستی درک نمی‌شد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'esprit prisonnier",
+      "title_fa": "ذهن اسیر",
+      "text": "John Nash est un mathématicien de génie, mais son esprit lui joue des tours. Il souffre de {{BLANK_1}}, une maladie complexe. Parfois, il voit son colocataire qui n'existe pas : c'est une {{BLANK_2}} visuelle très réaliste. Après des années d'errance médicale, un psychiatre pose enfin le {{BLANK_3}}. On lui propose une {{BLANK_4}} comportementale et des médicaments. John cache un {{BLANK_5}} lié à la guerre froide, et souffre d'{{BLANK_6}} concernant certains événements douloureux. Pour tester un nouveau traitement, les médecins lui donnent parfois un {{BLANK_7}} sans substance active. Il a peur des traitements anciens comme la {{BLANK_8}} qui détruisait la personnalité des patients. Il présente un {{BLANK_9}} paranoïaque très marqué. Sa {{BLANK_10}} le pousse à classer ses feuilles de calcul de manière obsessionnelle. Quand il essaie d'arrêter ses cachets, il traverse un {{BLANK_11}} difficile. Dans les cas extrêmes du passé, on utilisait l'{{BLANK_12}} pour calmer les crises. John entreprend une {{BLANK_13}} sur le divan pour explorer les racines de son mal. Son {{BLANK_14}} de grandeur lui fait croire qu'il est espion pour le gouvernement. Heureusement, la médecine a évolué et ne traite plus les émotions intenses comme de l'{{BLANK_15}}.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "schizophrénie",
+          "options": [
+            "schizophrénie",
+            "névrose",
+            "amnésie",
+            "hystérie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "hallucination",
+          "options": [
+            "hallucination",
+            "lobotomie",
+            "thérapie",
+            "sevrage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "diagnostic",
+          "options": [
+            "diagnostic",
+            "placebo",
+            "délire",
+            "syndrome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "thérapie",
+          "options": [
+            "thérapie",
+            "traumatisme",
+            "électrochoc",
+            "psychanalyse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "traumatisme",
+          "options": [
+            "traumatisme",
+            "diagnostic",
+            "hallucination",
+            "placebo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "amnésie",
+          "options": [
+            "amnésie",
+            "hystérie",
+            "névrose",
+            "lobotomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "placebo",
+          "options": [
+            "placebo",
+            "sevrage",
+            "syndrome",
+            "délire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "lobotomie",
+          "options": [
+            "lobotomie",
+            "thérapie",
+            "psychanalyse",
+            "hallucination"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "syndrome",
+          "options": [
+            "syndrome",
+            "traumatisme",
+            "diagnostic",
+            "électrochoc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "névrose",
+          "options": [
+            "névrose",
+            "amnésie",
+            "hystérie",
+            "placebo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "sevrage",
+          "options": [
+            "sevrage",
+            "délire",
+            "lobotomie",
+            "syndrome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "électrochoc",
+          "options": [
+            "électrochoc",
+            "thérapie",
+            "placebo",
+            "diagnostic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "psychanalyse",
+          "options": [
+            "psychanalyse",
+            "névrose",
+            "hallucination",
+            "traumatisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "délire",
+          "options": [
+            "délire",
+            "sevrage",
+            "amnésie",
+            "syndrome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "hystérie",
+          "options": [
+            "hystérie",
+            "lobotomie",
+            "névrose",
+            "placebo"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les équations de l'ombre",
+      "title_fa": "معادلات سایه",
+      "inspiration": "Un homme d'exception (A Beautiful Mind - Ron Howard, 2001)",
+      "text": "À peine John Nash eut-il tracé sa dernière équation sur la vitre embuée que les murmures recommencèrent. Son esprit, cette machine brillante capable de décoder les mystères de l'univers, était aussi son propre bourreau. Atteint de {{BLANK_1}}, il vivait dans un monde peuplé de fantômes tangibles. Charles, son meilleur ami, lui parlait à l'oreille, mais Charles n'était qu'une {{BLANK_2}} auditive, un mirage né de la solitude. Il fallut des années avant qu'un médecin de l'hôpital psychiatrique ne pose le {{BLANK_3}} implacable qui brisa ses certitudes. La {{BLANK_4}} chimique qui suivit fut un calvaire, éteignant la flamme de son génie mathématique pour apaiser les démons. John portait en lui le {{BLANK_5}} de la guerre froide, une paranoïa nourrie par les espions imaginaires du Pentagone. Parfois, son esprit se protégeait par l'{{BLANK_6}}, effaçant les souvenirs les plus douloureux de sa conscience. Lors des essais cliniques, on lui administra un {{BLANK_7}}, simple pilule de sucre, pour mesurer la part de l'illusion dans sa guérison. Il hantait les couloirs de l'université, terrifié à l'idée qu'on ne le soumette à une {{BLANK_8}}, cette barbarie chirurgicale qui transformait les penseurs en légumes. Son {{BLANK_9}} de persécution le poussait à décrypter des messages secrets dans les magazines. Sa {{BLANK_10}} obsessionnelle le forçait à aligner ses crayons parallèlement aux bords de la table. Quand il cessait ses médicaments, le {{BLANK_11}} le frappait de plein fouet, faisant trembler ses mains et hurler ses nerfs. Il se souvenait des récits sur l'{{BLANK_12}} administré sans anesthésie, qui brisait les corps pour sauver les âmes. Sur le divan d'une {{BLANK_13}} freudienne, il tenta de remonter le fil de son enfance. Son {{BLANK_14}} mystique lui faisait voir des conspirations cosmiques dans le vol des oiseaux. À l'époque victorienne, on aurait enfermé sa femme pour la moindre crise de larmes, la taxant d'{{BLANK_15}}. Mais John apprit à ignorer ses démons, à les laisser parler sans leur obéir, trouvant dans l'amour de sa femme la seule équation que la folie ne pouvait pas résoudre.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "schizophrénie",
+          "options": [
+            "schizophrénie",
+            "névrose",
+            "amnésie",
+            "hystérie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "hallucination",
+          "options": [
+            "hallucination",
+            "lobotomie",
+            "thérapie",
+            "sevrage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "diagnostic",
+          "options": [
+            "diagnostic",
+            "placebo",
+            "délire",
+            "syndrome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "thérapie",
+          "options": [
+            "thérapie",
+            "traumatisme",
+            "électrochoc",
+            "psychanalyse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "traumatisme",
+          "options": [
+            "traumatisme",
+            "diagnostic",
+            "hallucination",
+            "placebo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "amnésie",
+          "options": [
+            "amnésie",
+            "hystérie",
+            "névrose",
+            "lobotomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "placebo",
+          "options": [
+            "placebo",
+            "sevrage",
+            "syndrome",
+            "délire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "lobotomie",
+          "options": [
+            "lobotomie",
+            "thérapie",
+            "psychanalyse",
+            "hallucination"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "syndrome",
+          "options": [
+            "syndrome",
+            "traumatisme",
+            "diagnostic",
+            "électrochoc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "névrose",
+          "options": [
+            "névrose",
+            "amnésie",
+            "hystérie",
+            "placebo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "sevrage",
+          "options": [
+            "sevrage",
+            "délire",
+            "lobotomie",
+            "syndrome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "électrochoc",
+          "options": [
+            "électrochoc",
+            "thérapie",
+            "placebo",
+            "diagnostic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "psychanalyse",
+          "options": [
+            "psychanalyse",
+            "névrose",
+            "hallucination",
+            "traumatisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "délire",
+          "options": [
+            "délire",
+            "sevrage",
+            "amnésie",
+            "syndrome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "hystérie",
+          "options": [
+            "hystérie",
+            "lobotomie",
+            "névrose",
+            "placebo"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Psychiatrie et troubles mentaux",
+    "title_fa": "آزمون : روانپزشکی و اختلالات روانی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Cette maladie psychiatrique grave se caractérise par une perte de contact avec la réalité, des délires et des hallucinations. C'est la ____.",
+        "options": [
+          "schizophrénie",
+          "névrose",
+          "amnésie",
+          "hystérie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اختلال روانی با قطع ارتباط با واقعیت = schizophrénie."
+      },
+      {
+        "type": "mcq",
+        "question": "La perception sensorielle (visuelle, auditive) d'une chose qui n'existe pas dans la réalité est une ____.",
+        "options": [
+          "hallucination",
+          "lobotomie",
+          "thérapie",
+          "sevrage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درک حسی چیزی که وجود خارجی ندارد = hallucination."
+      },
+      {
+        "type": "mcq",
+        "question": "L'identification précise d'une maladie par un médecin après examen des symptômes est le ____.",
+        "options": [
+          "diagnostic",
+          "placebo",
+          "délire",
+          "syndrome"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شناسایی دقیق بیماری توسط پزشک = diagnostic."
+      },
+      {
+        "type": "mcq",
+        "question": "Le traitement psychologique visant à soigner les troubles mentaux par la parole et l'analyse est une ____.",
+        "options": [
+          "thérapie",
+          "traumatisme",
+          "électrochoc",
+          "psychanalyse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درمان اختلالات روانی از طریق گفتگو = thérapie."
+      },
+      {
+        "type": "mcq",
+        "question": "Un choc émotionnel violent, dû à un événement grave, qui laisse des séquelles psychologiques durables est un ____.",
+        "options": [
+          "traumatisme",
+          "diagnostic",
+          "hallucination",
+          "placebo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضربه روحی شدید و ماندگار = traumatisme."
+      },
+      {
+        "type": "mcq",
+        "question": "La perte partielle ou totale de la mémoire, souvent due à un choc ou une maladie, est l'____.",
+        "options": [
+          "amnésie",
+          "hystérie",
+          "névrose",
+          "lobotomie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "از دست دادن حافظه = amnésie."
+      },
+      {
+        "type": "mcq",
+        "question": "Une substance sans principe actif, donnée à un patient pour tester l'effet psychologique de la prise d'un médicament, est un ____.",
+        "options": [
+          "placebo",
+          "sevrage",
+          "syndrome",
+          "délire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده بدون اثر دارویی برای تست روانی = placebo."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette intervention neurochirurgicale ancienne, qui consistait à sectionner des lobes du cerveau pour calmer les malades, est la ____.",
+        "options": [
+          "lobotomie",
+          "thérapie",
+          "psychanalyse",
+          "hallucination"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جراحی برش لوب‌های مغزی = lobotomie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble de symptômes cliniques qui caractérisent une maladie ou un état psychologique donné forme un ____.",
+        "options": [
+          "syndrome",
+          "traumatisme",
+          "diagnostic",
+          "électrochoc"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه علائم مشخص‌کننده یک بیماری = syndrome."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce trouble psychique, moins grave que la psychose, se manifeste par de l'anxiété, des phobies ou des obsessions. C'est une ____.",
+        "options": [
+          "névrose",
+          "amnésie",
+          "hystérie",
+          "placebo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اختلال روانی شامل اضطراب و وسواس = névrose."
+      },
+      {
+        "type": "mcq",
+        "question": "La période difficile pendant laquelle un dépendant arrête de consommer une substance toxique s'appelle le ____.",
+        "options": [
+          "sevrage",
+          "délire",
+          "lobotomie",
+          "syndrome"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره ترک ماده مخدر یا سمی = sevrage."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce traitement psychiatrique qui consiste à provoquer une crise convulsive par un courant électrique dans le cerveau est l'____.",
+        "options": [
+          "électrochoc",
+          "thérapie",
+          "placebo",
+          "diagnostic"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ایجاد تشنج با جریان الکتریکی برای درمان = électrochoc."
+      },
+      {
+        "type": "mcq",
+        "question": "La méthode thérapeutique fondée par Freud, qui explore l'inconscient à travers les rêves et les associations libres, est la ____.",
+        "options": [
+          "psychanalyse",
+          "névrose",
+          "hallucination",
+          "traumatisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روش فروید برای کاوش ناخودآگاه = psychanalyse."
+      },
+      {
+        "type": "mcq",
+        "question": "Un trouble grave de la pensée où le patient tient des discours incohérents et croit à des choses fausses est le ____.",
+        "options": [
+          "délire",
+          "sevrage",
+          "amnésie",
+          "syndrome"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اختلال تفکر و باور به امور غیرواقعی = délire."
+      },
+      {
+        "type": "mcq",
+        "question": "Autrefois, on désignait par ce terme des crises émotionnelles incontrôlables, souvent attribuées à tort uniquement aux femmes. C'est l'____.",
+        "options": [
+          "hystérie",
+          "lobotomie",
+          "névrose",
+          "placebo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هیجان‌زدگی و بحران احساسی (اصطلاح قدیمی) = hystérie."
+      },
+      {
+        "type": "binary",
+        "question": "La schizophrénie et le dédoublement de la personnalité désignent exactement la même maladie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اسکیزوفرنی به معنای گسست از واقعیت است، نه داشتن چند شخصیت مجزا."
+      },
+      {
+        "type": "binary",
+        "question": "L'effet placebo démontre que la simple croyance en l'efficacité d'un traitement peut améliorer l'état du patient.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اثر دارونما نشان می‌دهد باور به درمان می‌تواند باعث بهبود واقعی شود."
+      },
+      {
+        "type": "binary",
+        "question": "La lobotomie est une pratique chirurgicale courante et recommandée dans la psychiatrie moderne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. لوبوتومی یک روش منسوخ و غیراخلاقی است و دیگر انجام نمی‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le sevrage peut provoquer des symptômes physiques et psychologiques très douloureux chez le patient.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ترک اعتیاد اغلب با علائم جسمی و روانی شدید همراه است."
+      },
+      {
+        "type": "binary",
+        "question": "La psychanalyse et la thérapie comportementale utilisent exactement les mêmes méthodes pour soigner les patients.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. روانکاوی بر ناخودآگاه تمرکز دارد، اما درمان رفتاری روی تغییر عادات و افکار کنونی کار می‌کند."
+      }
+    ]
+  }
+}
