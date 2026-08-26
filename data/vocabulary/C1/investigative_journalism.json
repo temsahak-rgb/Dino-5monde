@@ -1,0 +1,680 @@
+{
+  "id": "investigative_journalism",
+  "level": "C1",
+  "theme": "Journalisme d'investigation, médias et éthique",
+  "theme_fa": "روزنامه‌نگاری تحقیقی، رسانه‌ها و اخلاق حرفه‌ای",
+  "icon": "📰",
+  "inspiration": "Spotlight (Tom McCarthy, 2015)",
+  "words": [
+    {
+      "fr": "le journalisme",
+      "fa": "روزنامه‌نگاری",
+      "emoji": "📰",
+      "difficulty": 3,
+      "ex": "Le journalisme d'investigation révèle les scandales cachés.",
+      "ex_fa": "روزنامه‌نگاری تحقیقی رسوایی‌های پنهان را فاش می‌کند."
+    },
+    {
+      "fr": "l'investigation",
+      "fa": "تحقیق و تفحص",
+      "emoji": "🔍",
+      "difficulty": 4,
+      "ex": "L'investigation a duré plusieurs mois avant la publication.",
+      "ex_fa": "تحقیق و تفحص ماه‌ها قبل از انتشار طول کشید."
+    },
+    {
+      "fr": "le scoop",
+      "fa": "خبر فوری و اختصاصی",
+      "emoji": "🗞️",
+      "difficulty": 4,
+      "ex": "Ce journaliste a obtenu le scoop de l'année.",
+      "ex_fa": "این روزنامه‌نگار خبر اختصاصی سال را به دست آورد."
+    },
+    {
+      "fr": "la source",
+      "fa": "منبع خبری",
+      "emoji": "💧",
+      "difficulty": 3,
+      "ex": "Protéger ses sources est le devoir absolu du reporter.",
+      "ex_fa": "محافظت از منابع، وظیفه مطلق خبرنگار است."
+    },
+    {
+      "fr": "l'anonymat",
+      "fa": "ناشناسی",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "Le témoin a exigé l'anonymat par peur des représailles.",
+      "ex_fa": "شاهد از ترس انتقام، درخواست ناشناسی کرد."
+    },
+    {
+      "fr": "la diffamation",
+      "fa": "افترا، تهمت",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "L'homme politique a poursuivi le journal pour diffamation.",
+      "ex_fa": "سیاستمدار به جرم افترا از روزنامه شکایت کرد."
+    },
+    {
+      "fr": "le rédacteur en chef",
+      "fa": "سردبیر",
+      "emoji": "👔",
+      "difficulty": 4,
+      "ex": "Le rédacteur en chef valide les articles avant l'impression.",
+      "ex_fa": "سردبیر مقالات را قبل از چاپ تأیید می‌کند."
+    },
+    {
+      "fr": "la déontologie",
+      "fa": "اخلاق حرفه‌ای",
+      "emoji": "📜",
+      "difficulty": 5,
+      "ex": "La déontologie impose de croiser les informations.",
+      "ex_fa": "اخلاق حرفه‌ای ایجاب می‌کند که اطلاعات از چند منبع تأیید شوند."
+    },
+    {
+      "fr": "le plagiat",
+      "fa": "سرقت ادبی",
+      "emoji": "🚫",
+      "difficulty": 4,
+      "ex": "Le journaliste a été licencié pour plagiat.",
+      "ex_fa": "روزنامه‌نگار به دلیل سرقت ادبی اخراج شد."
+    },
+    {
+      "fr": "la censure",
+      "fa": "سانسور",
+      "emoji": "✂️",
+      "difficulty": 4,
+      "ex": "La censure gouvernementale empêche la libre circulation des idées.",
+      "ex_fa": "سانسور دولتی مانع گردش آزاد ایده‌ها می‌شود."
+    },
+    {
+      "fr": "le confrère",
+      "fa": "همکار مطبوعاتی",
+      "emoji": "🤝",
+      "difficulty": 4,
+      "ex": "Un confrère d'un autre quotidien lui a fourni un indice.",
+      "ex_fa": "یکی از همکاران مطبوعاتی در روزنامه‌ای دیگر، سرنخی به او داد."
+    },
+    {
+      "fr": "la tribune",
+      "fa": "تریبون، ستون آزاد",
+      "emoji": "🎤",
+      "difficulty": 5,
+      "ex": "Il a publié une tribune pour défendre la liberté de la presse.",
+      "ex_fa": "او یک ستون آزاد برای دفاع از آزادی مطبوعات منتشر کرد."
+    },
+    {
+      "fr": "le tirage",
+      "fa": "تیراژ",
+      "emoji": "📈",
+      "difficulty": 4,
+      "ex": "Le tirage du journal a doublé après la révélation du scandale.",
+      "ex_fa": "تیراژ روزنامه پس از افشای رسوایی دو برابر شد."
+    },
+    {
+      "fr": "la une",
+      "fa": "صفحه اول روزنامه",
+      "emoji": "📰",
+      "difficulty": 3,
+      "ex": "L'affaire a fait la une de tous les quotidiens nationaux.",
+      "ex_fa": "این پرونده تیتر یک تمام روزنامه‌های ملی شد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le scandale de Boston",
+      "text": "Robby est le {{BLANK_7}} du Boston Globe. Il dirige l'équipe Spotlight, spécialisée dans le {{BLANK_2}} approfondi. Un jour, ils découvrent un scandale majeur impliquant des institutions puissantes. Pour protéger leurs {{BLANK_4}}s, ils garantissent l'{{BLANK_5}} le plus strict. La {{BLANK_8}} de la presse exige de vérifier chaque fait pour éviter toute poursuite pour {{BLANK_6}}. Ils refusent toute {{BLANK_10}} gouvernementale et luttent contre le {{BLANK_9}} en citant toujours leurs références. Un {{BLANK_11}} d'un autre journal leur fournit un indice crucial. Ils publient une {{BLANK_12}} libre pour alerter l'opinion publique. Le lendemain, le scandale fait la {{BLANK_14}} de tous les quotidiens. C'est un véritable {{BLANK_3}} mondial. Grâce à cet article, le {{BLANK_13}} du journal augmente de façon spectaculaire. Ils prouvent que le {{BLANK_1}} de qualité est le pilier de la démocratie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "journalisme",
+          "options": [
+            "journalisme",
+            "investigation",
+            "scoop",
+            "censure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "investigation",
+          "options": [
+            "investigation",
+            "plagiat",
+            "déontologie",
+            "tirage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "scoop",
+          "options": [
+            "scoop",
+            "une",
+            "tribune",
+            "confrère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "sources",
+          "options": [
+            "sources",
+            "anonymats",
+            "diffamations",
+            "censures"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "anonymat",
+          "options": [
+            "anonymat",
+            "scoop",
+            "tirage",
+            "journalisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "diffamation",
+          "options": [
+            "diffamation",
+            "déontologie",
+            "investigation",
+            "plagiat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "rédacteur en chef",
+          "options": [
+            "rédacteur en chef",
+            "confrère",
+            "scoop",
+            "tirage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "déontologie",
+          "options": [
+            "déontologie",
+            "diffamation",
+            "censure",
+            "une"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "plagiat",
+          "options": [
+            "plagiat",
+            "anonymat",
+            "scoop",
+            "tribune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "censure",
+          "options": [
+            "censure",
+            "déontologie",
+            "tirage",
+            "investigation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "confrère",
+          "options": [
+            "confrère",
+            "rédacteur en chef",
+            "journalisme",
+            "plagiat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "tribune",
+          "options": [
+            "tribune",
+            "une",
+            "scoop",
+            "source"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "tirage",
+          "options": [
+            "tirage",
+            "une",
+            "anonymat",
+            "diffamation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "une",
+          "options": [
+            "une",
+            "tribune",
+            "censure",
+            "investigation"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'encre et les ombres",
+      "inspiration": "Spotlight (Tom McCarthy, 2015)",
+      "text": "À peine Robby eut-il allumé la lampe de son bureau que l'odeur du café froid et de l'encre d'imprimerie lui rappela pourquoi il avait choisi ce métier. Ce {{BLANK_7}} vétéran du Boston Globe savait que la vérité ne se donnait pas, elle s'arrachait aux dents des puissants. Son équipe Spotlight ne faisait pas de la simple information, elle faisait du {{BLANK_2}} chirurgical, disséquant les mensonges d'État avec la patience des orfèvres. Ils avaient trouvé des {{BLANK_4}}s terrifiées, des voix tremblantes auxquelles ils avaient juré un {{BLANK_5}} absolu, bouclier invisible contre les représailles. La {{BLANK_8}} de leur profession n'était pas un vague concept, mais une armure : vérifier, revérifier, pour que les avocats adverses ne puissent jamais les attaquer pour {{BLANK_6}}. Ils refusaient de plier devant la {{BLANK_10}} silencieuse des institutions, et méprisaient le {{BLANK_9}} des journalistes paresseux qui copient sans comprendre. Quand un {{BLANK_11}} d'un journal rival leur glissa un document compromettant, ils surent que l'heure avait sonné. Ils offrirent une {{BLANK_12}} aux victimes pour que leur cri résonne dans l'espace public. Le matin de la parution, le scandale éclatait à la {{BLANK_14}}, une bombe de papier qui secouait le pays. C'était le {{BLANK_3}} du siècle, et dans les rues, les gens s'arrachaient les exemplaires, faisant exploser le {{BLANK_13}} historique du quotidien. Robby sourit en regardant les rotatives tourner : le véritable {{BLANK_1}} n'était pas mort, il venait de prouver qu'il était encore le seul rempart contre les ténèbres de l'impunité.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "journalisme",
+          "options": [
+            "journalisme",
+            "investigation",
+            "scoop",
+            "censure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "investigation",
+          "options": [
+            "investigation",
+            "plagiat",
+            "déontologie",
+            "tirage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "scoop",
+          "options": [
+            "scoop",
+            "une",
+            "tribune",
+            "confrère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "sources",
+          "options": [
+            "sources",
+            "anonymats",
+            "diffamations",
+            "censures"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "anonymat",
+          "options": [
+            "anonymat",
+            "scoop",
+            "tirage",
+            "journalisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "diffamation",
+          "options": [
+            "diffamation",
+            "déontologie",
+            "investigation",
+            "plagiat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "rédacteur en chef",
+          "options": [
+            "rédacteur en chef",
+            "confrère",
+            "scoop",
+            "tirage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "déontologie",
+          "options": [
+            "déontologie",
+            "diffamation",
+            "censure",
+            "une"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "plagiat",
+          "options": [
+            "plagiat",
+            "anonymat",
+            "scoop",
+            "tribune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "censure",
+          "options": [
+            "censure",
+            "déontologie",
+            "tirage",
+            "investigation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "confrère",
+          "options": [
+            "confrère",
+            "rédacteur en chef",
+            "journalisme",
+            "plagiat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "tribune",
+          "options": [
+            "tribune",
+            "une",
+            "scoop",
+            "source"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "tirage",
+          "options": [
+            "tirage",
+            "une",
+            "anonymat",
+            "diffamation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "une",
+          "options": [
+            "une",
+            "tribune",
+            "censure",
+            "investigation"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Journalisme et médias",
+    "title_fa": "آزمون : روزنامه‌نگاری و رسانه‌ها",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'activité qui consiste à recueillir, vérifier et diffuser des informations d'actualité au public est le ____.",
+        "options": [
+          "journalisme",
+          "investigation",
+          "scoop",
+          "censure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعالیت جمع‌آوری و انتشار اخبار = journalisme."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enquête approfondie et minutieuse menée par un journaliste pour révéler des faits cachés est l'____.",
+        "options": [
+          "investigation",
+          "plagiat",
+          "déontologie",
+          "tirage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تحقیق عمیق روزنامه‌نگاری = investigation."
+      },
+      {
+        "type": "mcq",
+        "question": "L'information exclusive et sensationnelle qu'un média est le premier à publier est le ____.",
+        "options": [
+          "scoop",
+          "une",
+          "tribune",
+          "confrère"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خبر اختصاصی و فوری = scoop."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui fournit des informations confidentielles à un journaliste est la ____.",
+        "options": [
+          "source",
+          "anonymat",
+          "diffamation",
+          "censure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "منبع اطلاعاتی = source."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fait de ne pas révéler l'identité d'une personne, souvent pour la protéger, est l'____.",
+        "options": [
+          "anonymat",
+          "scoop",
+          "tirage",
+          "journalisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پنهان کردن هویت = anonymat."
+      },
+      {
+        "type": "mcq",
+        "question": "Le délit qui consiste à porter atteinte à la réputation de quelqu'un par des accusations fausses est la ____.",
+        "options": [
+          "diffamation",
+          "déontologie",
+          "investigation",
+          "plagiat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تهمت و افترا = diffamation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le journaliste qui dirige la rédaction d'un journal et décide de la ligne éditoriale est le ____.",
+        "options": [
+          "rédacteur en chef",
+          "confrère",
+          "scoop",
+          "tirage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سردبیر روزنامه = rédacteur en chef."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des règles morales et des devoirs qui régissent la profession de journaliste est la ____.",
+        "options": [
+          "déontologie",
+          "diffamation",
+          "censure",
+          "une"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اخلاق حرفه‌ای = déontologie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fait de copier le travail ou les idées d'un autre auteur en les présentant comme les siens est le ____.",
+        "options": [
+          "plagiat",
+          "anonymat",
+          "scoop",
+          "tribune"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سرقت ادبی = plagiat."
+      },
+      {
+        "type": "mcq",
+        "question": "Le contrôle exercé par une autorité pour empêcher la diffusion de certaines informations est la ____.",
+        "options": [
+          "censure",
+          "déontologie",
+          "tirage",
+          "investigation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سانسور و کنترل اطلاعات = censure."
+      },
+      {
+        "type": "mcq",
+        "question": "Le terme désignant un collègue exerçant la même profession dans le domaine de la presse est le ____.",
+        "options": [
+          "confrère",
+          "rédacteur en chef",
+          "journalisme",
+          "plagiat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "همکار مطبوعاتی = confrère."
+      },
+      {
+        "type": "mcq",
+        "question": "L'espace dans un journal où une personne extérieure à la rédaction peut exprimer librement son opinion est la ____.",
+        "options": [
+          "tribune",
+          "une",
+          "scoop",
+          "source"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ستون آزاد و تریبون = tribune."
+      },
+      {
+        "type": "mcq",
+        "question": "Le nombre total d'exemplaires d'un journal imprimés et distribués est le ____.",
+        "options": [
+          "tirage",
+          "une",
+          "anonymat",
+          "diffamation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تعداد نسخه‌های چاپ‌شده (تیراژ) = tirage."
+      },
+      {
+        "type": "mcq",
+        "question": "La première page d'un journal, où figurent les informations les plus importantes, est la ____.",
+        "options": [
+          "une",
+          "tribune",
+          "censure",
+          "investigation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صفحه اول روزنامه = une."
+      },
+      {
+        "type": "binary",
+        "question": "La déontologie journalistique autorise un reporter à inventer des citations pour rendre son article plus vivant.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اخلاق حرفه‌ای ایجاب می‌کند که نقل‌قول‌ها کاملاً واقعی و دقیق باشند."
+      },
+      {
+        "type": "binary",
+        "question": "Le secret des sources est un principe fondamental qui protège l'identité des informateurs du journaliste.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. محرمانگی منابع از اصول بنیادین روزنامه‌نگاری برای محافظت از اطلاع‌رسانان است."
+      },
+      {
+        "type": "binary",
+        "question": "La diffamation est un délit qui punit la publication de faits faux portant atteinte à l'honneur d'une personne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. افترا جرمی است که شامل انتشار اطلاعات دروغین علیه آبروی افراد می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Un scoop désigne un article banal qui reprend des informations déjà connues de tous.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. scoop دقیقاً به معنای یک خبر اختصاصی و فوری است که دیگران از آن بی‌خبرند."
+      },
+      {
+        "type": "binary",
+        "question": "La censure est une pratique qui vise à garantir la liberté totale d'expression dans les médias.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سانسور دقیقاً برعکس است و برای محدود کردن و کنترل آزادی بیان اعمال می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le tirage d'un journal correspond au nombre d'exemplaires imprimés pour la vente et la distribution.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تیراژ به تعداد کل نسخه‌های چاپ‌شده اشاره دارد."
+      }
+    ]
+  }
+}
