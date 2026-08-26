@@ -1,0 +1,680 @@
+{
+  "id": "painting_fine_arts",
+  "level": "C1",
+  "theme": "Peinture, beaux-arts et création picturale",
+  "theme_fa": "نقاشی، هنرهای زیبا و خلق تصویری",
+  "icon": "🎨",
+  "inspiration": "La Jeune Fille à la perle (Girl with a Pearl Earring - Peter Webber, 2003)",
+  "words": [
+    {
+      "fr": "la peinture",
+      "fa": "نقاشی",
+      "emoji": "🎨",
+      "difficulty": 2,
+      "ex": "La peinture à l'huile permet des dégradés subtils et profonds.",
+      "ex_fa": "نقاشی رنگ روغن امکان سایه‌روشن‌های ظریف و عمیق را می‌دهد."
+    },
+    {
+      "fr": "le pinceau",
+      "fa": "قلم‌مو",
+      "emoji": "🖌️",
+      "difficulty": 2,
+      "ex": "Le pinceau en poil de martre offre une précision exceptionnelle.",
+      "ex_fa": "قلم‌موی موی سمور دقت استثنایی ارائه می‌دهد."
+    },
+    {
+      "fr": "la toile",
+      "fa": "بوم نقاشی",
+      "emoji": "🖼️",
+      "difficulty": 3,
+      "ex": "La toile tendue sur le châssis attend les premières touches de couleur.",
+      "ex_fa": "بوم کشیده‌شده روی چهارچوب منتظر اولین لکه‌های رنگ است."
+    },
+    {
+      "fr": "le chevalet",
+      "fa": "سه‌پایه نقاشی",
+      "emoji": "🎨",
+      "difficulty": 3,
+      "ex": "Le chevalet en bois supporte la toile pendant que l'artiste travaille.",
+      "ex_fa": "سه‌پایه چوبی بوم را هنگام کار هنرمند نگه می‌دارد."
+    },
+    {
+      "fr": "la palette",
+      "fa": "پالت رنگ",
+      "emoji": "🎨",
+      "difficulty": 3,
+      "ex": "Le peintre mélange les couleurs sur sa palette en bois.",
+      "ex_fa": "نقاش رنگ‌ها را روی پالت چوبی خود ترکیب می‌کند."
+    },
+    {
+      "fr": "le portrait",
+      "fa": "پرتره، چهره‌نگاری",
+      "emoji": "👤",
+      "difficulty": 3,
+      "ex": "Le portrait de la Joconde fascine le monde depuis cinq siècles.",
+      "ex_fa": "پرتره مونالیزا پنج قرن است که جهان را مجذوب کرده است."
+    },
+    {
+      "fr": "le modèle",
+      "fa": "مدل",
+      "emoji": "🧍",
+      "difficulty": 2,
+      "ex": "Le modèle pose immobile pendant des heures pour l'artiste.",
+      "ex_fa": "مدل ساعت‌ها بی‌حرکت برای هنرمند ژست می‌گیرد."
+    },
+    {
+      "fr": "l'atelier",
+      "fa": "کارگاه هنری",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "L'atelier baigné de lumière du nord est idéal pour peindre.",
+      "ex_fa": "کارگاه غرق در نور شمالی برای نقاشی ایده‌آل است."
+    },
+    {
+      "fr": "le pigment",
+      "fa": "رنگدانه",
+      "emoji": "🌈",
+      "difficulty": 4,
+      "ex": "Le pigment bleu outremer était autrefois plus précieux que l'or.",
+      "ex_fa": "رنگدانه آبی لاجوردی زمانی از طلا ارزشمندتر بود."
+    },
+    {
+      "fr": "la perspective",
+      "fa": "پرسپکتیو",
+      "emoji": "📐",
+      "difficulty": 4,
+      "ex": "La perspective linéaire crée l'illusion de la profondeur sur la toile.",
+      "ex_fa": "پرسپکتیو خطی توهم عمق را روی بوم ایجاد می‌کند."
+    },
+    {
+      "fr": "le clair-obscur",
+      "fa": "سایه‌روشن",
+      "emoji": "🌓",
+      "difficulty": 5,
+      "ex": "Le clair-obscur de Caravage dramatise les scènes avec des contrastes saisissants.",
+      "ex_fa": "سایه‌روشن کاراواجو صحنه‌ها را با تضادهای خیره‌کننده دراماتیک می‌کند."
+    },
+    {
+      "fr": "la fresque",
+      "fa": "نقاشی دیواری (فرسک)",
+      "emoji": "🏛️",
+      "difficulty": 4,
+      "ex": "La fresque de la Chapelle Sixtine est un chef-d'œuvre absolu.",
+      "ex_fa": "نقاشی دیواری کلیسای سیستین یک شاهکار مطلق است."
+    },
+    {
+      "fr": "le vernis",
+      "fa": "ورنی محافظ",
+      "emoji": "✨",
+      "difficulty": 3,
+      "ex": "Le vernis protège la peinture des outrages du temps.",
+      "ex_fa": "ورنی از نقاشی در برابر آسیب‌های زمان محافظت می‌کند."
+    },
+    {
+      "fr": "le chef-d'œuvre",
+      "fa": "شاهکار",
+      "emoji": "🏆",
+      "difficulty": 3,
+      "ex": "Ce tableau est considéré comme le chef-d'œuvre de la Renaissance.",
+      "ex_fa": "این تابلو شاهکار دوره رنسانس محسوب می‌شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'énigme du regard",
+      "text": "Griet est une jeune servante dans l'{{BLANK_8}} du peintre Vermeer à Delft. Un jour, le maître remarque sa sensibilité à la lumière et lui demande d'être son {{BLANK_7}} secret. Il installe son {{BLANK_4}} près de la fenêtre et prépare sa {{BLANK_5}} avec des {{BLANK_9}}s rares. Sur la {{BLANK_3}} tendue, il esquisse les contours d'un {{BLANK_6}} qui capturera l'âme de la jeune fille. Griet observe comment il utilise la {{BLANK_10}} pour donner de la profondeur à la pièce. Le {{BLANK_11}} dramatise son visage, créant un contraste saisissant entre l'ombre et la lumière. Avec un {{BLANK_2}} fin, il ajoute les détails les plus subtils. Quand l'œuvre est terminée, il applique un {{BLANK_13}} protecteur. Ce {{BLANK_14}} mystérieux, avec son regard fuyant et son turban bleu, traversera les siècles. La {{BLANK_1}} de Vermeer a immortalisé un instant de beauté pure.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "peinture",
+          "options": [
+            "peinture",
+            "pinceau",
+            "toile",
+            "chevalet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pinceau",
+          "options": [
+            "pinceau",
+            "palette",
+            "portrait",
+            "modèle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "toile",
+          "options": [
+            "toile",
+            "atelier",
+            "pigment",
+            "perspective"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "chevalet",
+          "options": [
+            "chevalet",
+            "clair-obscur",
+            "fresque",
+            "vernis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "palette",
+          "options": [
+            "palette",
+            "chef-d'œuvre",
+            "peinture",
+            "pinceau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "portrait",
+          "options": [
+            "portrait",
+            "toile",
+            "chevalet",
+            "palette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "modèle",
+          "options": [
+            "modèle",
+            "atelier",
+            "pigment",
+            "perspective"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "atelier",
+          "options": [
+            "atelier",
+            "clair-obscur",
+            "fresque",
+            "vernis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "pigments",
+          "options": [
+            "pigments",
+            "chef-d'œuvre",
+            "peinture",
+            "pinceau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "perspective",
+          "options": [
+            "perspective",
+            "toile",
+            "chevalet",
+            "palette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "clair-obscur",
+          "options": [
+            "clair-obscur",
+            "portrait",
+            "modèle",
+            "atelier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "pinceau",
+          "options": [
+            "pinceau",
+            "pigment",
+            "perspective",
+            "clair-obscur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "vernis",
+          "options": [
+            "vernis",
+            "fresque",
+            "chef-d'œuvre",
+            "peinture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "chef-d'œuvre",
+          "options": [
+            "chef-d'œuvre",
+            "pinceau",
+            "toile",
+            "chevalet"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le regard éternel",
+      "inspiration": "La Jeune Fille à la perle (Peter Webber, 2003)",
+      "text": "À peine Vermeer eut-il posé son {{BLANK_2}} sur la {{BLANK_3}} que le temps suspendit son vol dans l'{{BLANK_8}} silencieux. Cette servante aux yeux d'eau devenait son {{BLANK_7}} muet, capturant l'instant où la beauté se fait éternité. Sur sa {{BLANK_5}} usée, il mélangeait les {{BLANK_9}}s comme un alchimiste, cherchant la teinte exacte de son regard. Le {{BLANK_4}} grimaçait sous le poids du destin qui s'écrivait. Quand il traçait les lignes de {{BLANK_10}}, la chambre s'ouvrait sur l'infini. Le {{BLANK_11}} sculptait son visage, révélant l'âme cachée sous la peau de lait. Chaque coup de {{BLANK_2}} était une caresse interdite, un aveu silencieux. Quand le {{BLANK_13}} final scella l'œuvre, Griet sut qu'elle ne serait plus jamais seulement une servante. Ce {{BLANK_6}} mystérieux, ce {{BLANK_14}} de lumière et d'ombre, traverserait les siècles pour rappeler aux hommes que la {{BLANK_1}} est le seul langage capable de dire l'indicible.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "peinture",
+          "options": [
+            "peinture",
+            "pinceau",
+            "toile",
+            "chevalet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pinceau",
+          "options": [
+            "pinceau",
+            "palette",
+            "portrait",
+            "modèle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "toile",
+          "options": [
+            "toile",
+            "atelier",
+            "pigment",
+            "perspective"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "chevalet",
+          "options": [
+            "chevalet",
+            "clair-obscur",
+            "fresque",
+            "vernis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "palette",
+          "options": [
+            "palette",
+            "chef-d'œuvre",
+            "peinture",
+            "pinceau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "portrait",
+          "options": [
+            "portrait",
+            "toile",
+            "chevalet",
+            "palette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "modèle",
+          "options": [
+            "modèle",
+            "atelier",
+            "pigment",
+            "perspective"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "atelier",
+          "options": [
+            "atelier",
+            "clair-obscur",
+            "fresque",
+            "vernis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "pigments",
+          "options": [
+            "pigments",
+            "chef-d'œuvre",
+            "peinture",
+            "pinceau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "perspective",
+          "options": [
+            "perspective",
+            "toile",
+            "chevalet",
+            "palette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "clair-obscur",
+          "options": [
+            "clair-obscur",
+            "portrait",
+            "modèle",
+            "atelier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "pinceau",
+          "options": [
+            "pinceau",
+            "pigment",
+            "perspective",
+            "clair-obscur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "vernis",
+          "options": [
+            "vernis",
+            "fresque",
+            "chef-d'œuvre",
+            "peinture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "chef-d'œuvre",
+          "options": [
+            "chef-d'œuvre",
+            "pinceau",
+            "toile",
+            "chevalet"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Peinture et beaux-arts",
+    "title_fa": "آزمون : نقاشی و هنرهای زیبا",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art de représenter des formes et des couleurs sur une surface plane est la ____.",
+        "options": [
+          "peinture",
+          "pinceau",
+          "toile",
+          "chevalet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر نمایش شکل و رنگ = peinture."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument composé de poils fixés sur un manche, utilisé pour appliquer la couleur, est le ____.",
+        "options": [
+          "pinceau",
+          "palette",
+          "portrait",
+          "modèle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار اعمال رنگ = pinceau."
+      },
+      {
+        "type": "mcq",
+        "question": "Le support en tissu tendu sur un cadre, sur lequel le peintre travaille, est la ____.",
+        "options": [
+          "toile",
+          "atelier",
+          "pigment",
+          "perspective"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطح پارچه‌ای نقاشی = toile."
+      },
+      {
+        "type": "mcq",
+        "question": "Le support en bois à trois pieds qui maintient la toile verticale pendant le travail est le ____.",
+        "options": [
+          "chevalet",
+          "clair-obscur",
+          "fresque",
+          "vernis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سه‌پایه نگهدارنده بوم = chevalet."
+      },
+      {
+        "type": "mcq",
+        "question": "La planchette où l'artiste dispose et mélange ses couleurs avant de les appliquer est la ____.",
+        "options": [
+          "palette",
+          "chef-d'œuvre",
+          "peinture",
+          "pinceau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تخته کوچک ترکیب رنگ = palette."
+      },
+      {
+        "type": "mcq",
+        "question": "La représentation artistique du visage ou du buste d'une personne est le ____.",
+        "options": [
+          "portrait",
+          "toile",
+          "chevalet",
+          "palette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بازنمایی هنری چهره = portrait."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui pose pour l'artiste afin d'être peinte ou dessinée est le ____.",
+        "options": [
+          "modèle",
+          "atelier",
+          "pigment",
+          "perspective"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخصی که ژست می‌گیرد = modèle."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu de travail où l'artiste crée ses œuvres, souvent bien éclairé, est l'____.",
+        "options": [
+          "atelier",
+          "clair-obscur",
+          "fresque",
+          "vernis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محل کار هنرمند = atelier."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance colorante en poudre qui, mélangée à un liant, forme la peinture est le ____.",
+        "options": [
+          "pigment",
+          "chef-d'œuvre",
+          "peinture",
+          "pinceau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده رنگی پودری = pigment."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique qui crée l'illusion de la profondeur et de la troisième dimension est la ____.",
+        "options": [
+          "perspective",
+          "toile",
+          "chevalet",
+          "palette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک ایجاد توهم عمق = perspective."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique picturale jouant sur les contrastes violents entre lumière et obscurité est le ____.",
+        "options": [
+          "clair-obscur",
+          "portrait",
+          "modèle",
+          "atelier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک تضاد نور و سایه = clair-obscur."
+      },
+      {
+        "type": "mcq",
+        "question": "La peinture monumentale réalisée directement sur un mur ou un plafond enduit est la ____.",
+        "options": [
+          "fresque",
+          "pigment",
+          "perspective",
+          "clair-obscur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نقاشی بزرگ روی دیوار = fresque."
+      },
+      {
+        "type": "mcq",
+        "question": "La couche transparente et protectrice appliquée sur une peinture terminée est le ____.",
+        "options": [
+          "vernis",
+          "chef-d'œuvre",
+          "peinture",
+          "pinceau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لایه محافظ شفاف = vernis."
+      },
+      {
+        "type": "mcq",
+        "question": "L'œuvre d'art exceptionnelle qui représente l'apogée du talent d'un artiste est le ____.",
+        "options": [
+          "chef-d'œuvre",
+          "toile",
+          "chevalet",
+          "palette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اثر هنری استثنایی = chef-d'œuvre."
+      },
+      {
+        "type": "binary",
+        "question": "La perspective est une technique qui donne l'illusion de la profondeur sur une surface plane.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پرسپکتیو توهم عمق سه‌بعدی را ایجاد می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le clair-obscur désigne une technique de sculpture sur bois.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سایه‌روشن (clair-obscur) تکنیک نقاشی با تضاد شدید نور و تاریکی است."
+      },
+      {
+        "type": "binary",
+        "question": "La fresque est une peinture réalisée directement sur un enduit mural frais.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. فرسک (fresque) نقاشی روی گچ تازه دیوار است."
+      },
+      {
+        "type": "binary",
+        "question": "Le pigment est le support en tissu sur lequel on peint.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. رنگدانه (pigment) ماده رنگی است؛ بوم نقاشی toile نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le chevalet est le support en bois qui maintient la toile pendant que l'artiste peint.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سه‌پایه (chevalet) بوم را حین کار نگه می‌دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le vernis est appliqué sur la peinture pour la protéger et lui donner de la brillance.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ورنی (vernis) لایه محافظ و براق‌کننده نهایی است."
+      }
+    ]
+  }
+}
