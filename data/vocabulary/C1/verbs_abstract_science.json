@@ -1,0 +1,682 @@
+{
+  "id": "verbs_abstract_science",
+  "level": "C1",
+  "theme": "Verbes, concepts abstraits et science",
+  "theme_fa": "افعال، مفاهیم انتزاعی و علم",
+  "icon": "🔄",
+  "inspiration": "Interstellar (Christopher Nolan, 2014)",
+  "words": [
+    {
+      "fr": "appréhender",
+      "fa": "درک کردن / هراس داشتن",
+      "emoji": "🧠",
+      "difficulty": 4,
+      "ex": "Il est difficile d'appréhender la complexité de l'univers.",
+      "ex_fa": "درک پیچیدگی جهان دشوار است."
+    },
+    {
+      "fr": "corréler",
+      "fa": "همبسته کردن",
+      "emoji": "🔗",
+      "difficulty": 4,
+      "ex": "Les chercheurs tentent de corréler ces deux phénomènes.",
+      "ex_fa": "پژوهشگران تلاش می‌کنند این دو پدیده را همبسته کنند."
+    },
+    {
+      "fr": "extrapoler",
+      "fa": "برون‌یابی کردن، تعمیم دادن",
+      "emoji": "📈",
+      "difficulty": 4,
+      "ex": "On ne peut pas extrapoler à partir d'un seul exemple.",
+      "ex_fa": "نمی‌توان از یک مثال به تنهایی برون‌یابی (تعمیم) کرد."
+    },
+    {
+      "fr": "le paradigme",
+      "fa": "پارادایم، الگو",
+      "emoji": "🧩",
+      "difficulty": 5,
+      "ex": "Cette découverte impose un changement de paradigme.",
+      "ex_fa": "این کشف، تغییر پارادایم را تحمیل می‌کند."
+    },
+    {
+      "fr": "empirique",
+      "fa": "تجربی",
+      "emoji": "🔬",
+      "difficulty": 4,
+      "ex": "Toute théorie doit être validée par une preuve empirique.",
+      "ex_fa": "هر نظریه‌ای باید با یک دلیل تجربی تأیید شود."
+    },
+    {
+      "fr": "axiomatique",
+      "fa": "اصل موضوعی، بدیهی",
+      "emoji": "📐",
+      "difficulty": 5,
+      "ex": "Cette vérité est considérée comme axiomatique.",
+      "ex_fa": "این حقیقت به عنوان یک اصل بدیهی در نظر گرفته می‌شود."
+    },
+    {
+      "fr": "l'épistémologie",
+      "fa": "شناخت‌شناسی",
+      "emoji": "📚",
+      "difficulty": 5,
+      "ex": "L'épistémologie étudie la construction des savoirs scientifiques.",
+      "ex_fa": "شناخت‌شناسی چگونگی شکل‌گیری دانش علمی را مطالعه می‌کند."
+    },
+    {
+      "fr": "heuristique",
+      "fa": "اکتشافی، ابتکاری",
+      "emoji": "💡",
+      "difficulty": 5,
+      "ex": "Il utilise une méthode heuristique pour résoudre le problème.",
+      "ex_fa": "او از یک روش اکتشافی برای حل مسئله استفاده می‌کند."
+    },
+    {
+      "fr": "intrinsèque",
+      "fa": "ذاتی، درونی",
+      "emoji": "💎",
+      "difficulty": 4,
+      "ex": "La valeur intrinsèque de ce métal est très élevée.",
+      "ex_fa": "ارزش ذاتی این فلز بسیار بالاست."
+    },
+    {
+      "fr": "le corollaire",
+      "fa": "پیامد طبیعی، نتیجه",
+      "emoji": "➡️",
+      "difficulty": 5,
+      "ex": "La responsabilité est le corollaire de la liberté.",
+      "ex_fa": "مسئولیت، پیامد طبیعی آزادی است."
+    },
+    {
+      "fr": "occulter",
+      "fa": "پنهان کردن، نادیده گرفتن",
+      "emoji": "🙈",
+      "difficulty": 4,
+      "ex": "Il ne faut pas occulter les risques de cette opération.",
+      "ex_fa": "نباید خطرات این عملیات را نادیده گرفت."
+    },
+    {
+      "fr": "infirmer",
+      "fa": "رد کردن، باطل کردن",
+      "emoji": "❌",
+      "difficulty": 5,
+      "ex": "Les nouveaux tests viennent infirmer notre hypothèse.",
+      "ex_fa": "آزمایش‌های جدید، فرضیه ما را باطل می‌کنند."
+    },
+    {
+      "fr": "postuler",
+      "fa": "فرض کردن",
+      "emoji": "🤔",
+      "difficulty": 4,
+      "ex": "La théorie postule l'existence de dimensions cachées.",
+      "ex_fa": "این نظریه وجود ابعاد پنهان را فرض می‌کند."
+    },
+    {
+      "fr": "inhérent",
+      "fa": "جدایی‌ناپذیر، وابسته",
+      "emoji": "🧲",
+      "difficulty": 4,
+      "ex": "Le risque est inhérent à toute exploration spatiale.",
+      "ex_fa": "خطر، جزئی جدایی‌ناپذیر از هرگونه کاوش فضایی است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le laboratoire",
+      "title_fa": "آزمایشگاه",
+      "text": "Le Dr Aris étudie un phénomène physique étrange. Il essaie d'{{BLANK_1}} toute sa complexité. Pour cela, il doit {{BLANK_2}} les nouvelles données avec ses anciennes observations. Cependant, il est dangereux d'{{BLANK_3}} une règle générale à partir de si peu de mesures. Il sent qu'il est face à un nouveau {{BLANK_4}} scientifique. La preuve {{BLANK_5}} manque encore, mais la logique semble {{BLANK_6}} et indiscutable. Son collègue, spécialiste de l'{{BLANK_7}}, l'aide à structurer sa pensée. Ensemble, ils utilisent une approche {{BLANK_8}} pour avancer par tâtonnements. Ils découvrent que la valeur {{BLANK_9}} de cette énergie est colossale. Le {{BLANK_10}} direct de cette découverte est la fin de la crise énergétique. Mais le Dr Aris refuse d'{{BLANK_11}} les dangers potentiels. Il craint que de futures expériences ne viennent {{BLANK_12}} ses résultats. Pour l'instant, il ose à peine {{BLANK_13}} l'existence d'une nouvelle particule. Il sait que le doute est {{BLANK_14}} à toute démarche scientifique.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "appréhender",
+          "options": [
+            "appréhender",
+            "occulter",
+            "infirmer",
+            "corréler"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "corréler",
+          "options": [
+            "corréler",
+            "extrapoler",
+            "postuler",
+            "appréhender"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "extrapoler",
+          "options": [
+            "extrapoler",
+            "corréler",
+            "infirmer",
+            "occulter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "paradigme",
+          "options": [
+            "paradigme",
+            "corollaire",
+            "axiomatique",
+            "heuristique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "empirique",
+          "options": [
+            "empirique",
+            "axiomatique",
+            "intrinsèque",
+            "inhérent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "axiomatique",
+          "options": [
+            "axiomatique",
+            "empirique",
+            "heuristique",
+            "intrinsèque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "épistémologie",
+          "options": [
+            "épistémologie",
+            "heuristique",
+            "paradigme",
+            "corollaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "heuristique",
+          "options": [
+            "heuristique",
+            "axiomatique",
+            "empirique",
+            "intrinsèque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "intrinsèque",
+          "options": [
+            "intrinsèque",
+            "extrinsèque",
+            "axiomatique",
+            "empirique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "corollaire",
+          "options": [
+            "corollaire",
+            "paradigme",
+            "postulat",
+            "axiome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "occulter",
+          "options": [
+            "occulter",
+            "infirmer",
+            "postuler",
+            "corréler"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "infirmer",
+          "options": [
+            "infirmer",
+            "occulter",
+            "extrapoler",
+            "appréhender"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "postuler",
+          "options": [
+            "postuler",
+            "occulter",
+            "infirmer",
+            "corréler"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "inhérent",
+          "options": [
+            "inhérent",
+            "étranger",
+            "opposé",
+            "extérieur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'horizon des événements",
+      "title_fa": "افق رویداد",
+      "inspiration": "Interstellar (Christopher Nolan, 2014)",
+      "text": "À peine le vaisseau Endurance eut-il franchi l'horizon des événements que le professeur Brand dut {{BLANK_1}} l'immensité terrifiante du vide. Il tentait désespérément de {{BLANK_2}} les équations quantiques avec la gravité, mais il était impossible d'{{BLANK_3}} les résultats de la Terre à ce nouveau {{BLANK_4}} spatial. Toute observation {{BLANK_5}} semblait défier la logique {{BLANK_6}} de la physique classique. L'{{BLANK_7}} même de la science s'effondrait comme un château de cartes face à l'océan cosmique. Cooper, utilisant une approche purement {{BLANK_8}}, naviguait à vue dans ce labyrinthe de distorsions temporelles. La valeur {{BLANK_9}} de leur mission résidait dans un {{BLANK_10}} terrible : sauver l'humanité exigeait de sacrifier le présent. Brand refusait d'{{BLANK_11}} cette vérité morale. Pourtant, les données extraites du trou noir allaient bientôt {{BLANK_12}} ses certitudes mathématiques. Il osait à peine {{BLANK_13}} l'existence d'une cinquième dimension capable de plier le temps. Le danger était {{BLANK_14}} à chaque seconde passée près de Gargantua, ce monstre céleste qui dévorait la lumière elle-même.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "appréhender",
+          "options": [
+            "appréhender",
+            "occulter",
+            "infirmer",
+            "corréler"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "corréler",
+          "options": [
+            "corréler",
+            "extrapoler",
+            "postuler",
+            "appréhender"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "extrapoler",
+          "options": [
+            "extrapoler",
+            "corréler",
+            "infirmer",
+            "occulter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "paradigme",
+          "options": [
+            "paradigme",
+            "corollaire",
+            "axiomatique",
+            "heuristique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "empirique",
+          "options": [
+            "empirique",
+            "axiomatique",
+            "intrinsèque",
+            "inhérent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "axiomatique",
+          "options": [
+            "axiomatique",
+            "empirique",
+            "heuristique",
+            "intrinsèque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "épistémologie",
+          "options": [
+            "épistémologie",
+            "heuristique",
+            "paradigme",
+            "corollaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "heuristique",
+          "options": [
+            "heuristique",
+            "axiomatique",
+            "empirique",
+            "intrinsèque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "intrinsèque",
+          "options": [
+            "intrinsèque",
+            "extrinsèque",
+            "axiomatique",
+            "empirique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "corollaire",
+          "options": [
+            "corollaire",
+            "paradigme",
+            "postulat",
+            "axiome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "occulter",
+          "options": [
+            "occulter",
+            "infirmer",
+            "postuler",
+            "corréler"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "infirmer",
+          "options": [
+            "infirmer",
+            "occulter",
+            "extrapoler",
+            "appréhender"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "postuler",
+          "options": [
+            "postuler",
+            "occulter",
+            "infirmer",
+            "corréler"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "inhérent",
+          "options": [
+            "inhérent",
+            "étranger",
+            "opposé",
+            "extérieur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Science et concepts abstraits",
+    "title_fa": "آزمون : علم و مفاهیم انتزاعی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Face à la complexité de la théorie des cordes, le jeune physicien peine à ____ l'ensemble des concepts.",
+        "options": [
+          "appréhender",
+          "corréler",
+          "extrapoler",
+          "infirmer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درک کردن موضوعی پیچیده = appréhender."
+      },
+      {
+        "type": "mcq",
+        "question": "Les chercheurs tentent de ____ l'augmentation des températures avec la fonte des glaces pour prouver le lien de cause à effet.",
+        "options": [
+          "corréler",
+          "appréhender",
+          "postuler",
+          "occulter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ایجاد ارتباط و همبستگی بین دو متغیر = corréler."
+      },
+      {
+        "type": "mcq",
+        "question": "À partir de ces trois mesures isolées, il est dangereux de ____ une tendance générale pour l'ensemble du pays.",
+        "options": [
+          "extrapoler",
+          "corréler",
+          "infirmer",
+          "appréhender"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تعمیم دادن نتایج محدود به یک کل = extrapoler."
+      },
+      {
+        "type": "mcq",
+        "question": "La découverte de la relativité a provoqué un véritable changement de ____ en physique moderne.",
+        "options": [
+          "paradigme",
+          "corollaire",
+          "dogme",
+          "postulat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تغییر بنیادین در الگوی فکری و علمی = paradigme."
+      },
+      {
+        "type": "mcq",
+        "question": "Une théorie scientifique doit toujours être validée par une preuve ____, basée sur l'observation.",
+        "options": [
+          "empirique",
+          "axiomatique",
+          "intrinsèque",
+          "inhérente"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مبتنی بر تجربه و مشاهده = empirique."
+      },
+      {
+        "type": "mcq",
+        "question": "En mathématiques, cette vérité de base est considérée comme ____ et ne nécessite aucune démonstration.",
+        "options": [
+          "axiomatique",
+          "empirique",
+          "heuristique",
+          "intrinsèque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بدیهی و به عنوان اصل پذیرفته‌شده = axiomatique."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce philosophe étudie l'____, c'est-à-dire la manière dont les sciences construisent et valident leurs connaissances.",
+        "options": [
+          "épistémologie",
+          "heuristique",
+          "paradigme",
+          "corollaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فلسفه علم و شناخت‌شناسی = épistémologie."
+      },
+      {
+        "type": "mcq",
+        "question": "Face à un problème inédit, l'ingénieur utilise une méthode ____ pour trouver une solution rapide par tâtonnements.",
+        "options": [
+          "heuristique",
+          "axiomatique",
+          "empirique",
+          "intrinsèque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روش اکتشافی و مبتنی بر آزمون و خطا = heuristique."
+      },
+      {
+        "type": "mcq",
+        "question": "La valeur ____ de ce métal précieux ne dépend pas des fluctuations artificielles du marché.",
+        "options": [
+          "intrinsèque",
+          "extrinsèque",
+          "axiomatique",
+          "empirique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارزش ذاتی و درونی یک چیز = intrinsèque."
+      },
+      {
+        "type": "mcq",
+        "question": "L'augmentation du pouvoir d'achat a eu pour ____ direct une hausse de la consommation des ménages.",
+        "options": [
+          "corollaire",
+          "paradigme",
+          "postulat",
+          "axiome"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیامد طبیعی و مستقیم = corollaire."
+      },
+      {
+        "type": "mcq",
+        "question": "Le politicien a tenté d'____ les chiffres du chômage pendant la campagne électorale pour ne pas effrayer les électeurs.",
+        "options": [
+          "occulter",
+          "infirmer",
+          "postuler",
+          "corréler"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پنهان کردن و نادیده گرفتن = occulter."
+      },
+      {
+        "type": "mcq",
+        "question": "Les nouvelles découvertes génétiques viennent ____ l'ancienne théorie qui dominait depuis un siècle.",
+        "options": [
+          "infirmer",
+          "occulter",
+          "extrapoler",
+          "appréhender"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باطل کردن و رد کردن یک نظریه = infirmer."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour résoudre cette équation complexe, il faut ____ l'existence d'une dimension supplémentaire invisible.",
+        "options": [
+          "postuler",
+          "occulter",
+          "infirmer",
+          "corréler"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرض کردن به عنوان پایه استدلال = postuler."
+      },
+      {
+        "type": "mcq",
+        "question": "Le risque d'erreur est ____ à toute démarche expérimentale humaine.",
+        "options": [
+          "inhérent",
+          "étranger",
+          "opposé",
+          "extérieur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جزئی جدایی‌ناپذیر و وابسته = inhérent."
+      },
+      {
+        "type": "binary",
+        "question": "L'épistémologie est l'étude des astres et des galaxies.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. épistémologie شناخت‌شناسی و فلسفه علم است، نه ستاره‌شناسی."
+      },
+      {
+        "type": "binary",
+        "question": "Une démarche empirique s'appuie sur l'observation et l'expérience plutôt que sur la pure théorie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، empirique دقیقاً به معنای مبتنی بر تجربه و مشاهده است."
+      },
+      {
+        "type": "binary",
+        "question": "Le mot 'paradigme' désigne un modèle théorique de pensée qui oriente la recherche.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، paradigme چارچوب و الگوی فکری حاکم بر یک علم است."
+      },
+      {
+        "type": "binary",
+        "question": "Infirmer une hypothèse signifie la confirmer par des preuves solides.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. infirmer یعنی رد کردن و باطل کردن، نقطه مقابل تأیید کردن."
+      },
+      {
+        "type": "binary",
+        "question": "Une vérité axiomatique doit être prouvée par des expériences en laboratoire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. axiomatique یعنی بدیهی و پذیرفته‌شده بدون نیاز به اثبات."
+      },
+      {
+        "type": "binary",
+        "question": "Occulter une information signifie la mettre en lumière et la révéler au public.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. occulter یعنی پنهان کردن و از دید عموم مخفی کردن."
+      }
+    ]
+  }
+}
