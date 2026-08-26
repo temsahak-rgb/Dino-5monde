@@ -1,0 +1,680 @@
+{
+  "id": "theater_shakespeare",
+  "level": "C1",
+  "theme": "Théâtre élisabéthain, dramaturgie et arts de la scène",
+  "theme_fa": "تئاتر الیزابتی، نمایشنامه‌نویسی و هنرهای صحنه‌ای",
+  "icon": "🎭",
+  "inspiration": "Shakespeare in Love (John Madden, 1998)",
+  "words": [
+    {
+      "fr": "la scène",
+      "fa": "صحنه",
+      "emoji": "🎭",
+      "difficulty": 3,
+      "ex": "Les acteurs foulent les planches de la scène avec passion.",
+      "ex_fa": "بازیگران با اشتیاق بر تخته‌های صحنه قدم می‌گذارند."
+    },
+    {
+      "fr": "le dramaturge",
+      "fa": "نمایشنامه‌نویس",
+      "emoji": "✍️",
+      "difficulty": 4,
+      "ex": "Shakespeare est le plus grand dramaturge de la langue anglaise.",
+      "ex_fa": "شکسپیر بزرگترین نمایشنامه‌نویس زبان انگلیسی است."
+    },
+    {
+      "fr": "la tragédie",
+      "fa": "تراژدی",
+      "emoji": "💔",
+      "difficulty": 4,
+      "ex": "Roméo et Juliette est une tragédie sur l'amour impossible.",
+      "ex_fa": "رومئو و ژولیت تراژدی عشق ناممکن است."
+    },
+    {
+      "fr": "la comédie",
+      "fa": "کمدی",
+      "emoji": "😂",
+      "difficulty": 3,
+      "ex": "La comédie se termine toujours par un mariage heureux.",
+      "ex_fa": "کمدی همیشه با یک ازدواج شاد به پایان می‌رسد."
+    },
+    {
+      "fr": "le monologue",
+      "fa": "تک‌گویی",
+      "emoji": "🗣️",
+      "difficulty": 4,
+      "ex": "Le monologue d'Hamlet « Être ou ne pas être » est universellement connu.",
+      "ex_fa": "تک‌گویی «بودن یا نبودن» هملت در سطح جهانی شناخته شده است."
+    },
+    {
+      "fr": "la coulisse",
+      "fa": "پشت صحنه",
+      "emoji": "🎬",
+      "difficulty": 4,
+      "ex": "L'acteur attend dans la coulisse, le cœur battant, avant d'entrer.",
+      "ex_fa": "بازیگر با قلبی تپنده در پشت صحنه منتظر ورود است."
+    },
+    {
+      "fr": "le souffleur",
+      "fa": "پچ‌پچ‌کننده دیالوگ (سوفلور)",
+      "emoji": "🤫",
+      "difficulty": 5,
+      "ex": "Le souffleur murmure les mots oubliés depuis sa petite boîte.",
+      "ex_fa": "سوفلور کلمات فراموش‌شده را از جعبه کوچکش زمزمه می‌کند."
+    },
+    {
+      "fr": "la réplique",
+      "fa": "دیالوگ، پاسخ",
+      "emoji": "💬",
+      "difficulty": 4,
+      "ex": "Cette réplique cinglante a fait rire tout le parterre.",
+      "ex_fa": "این دیالوگ کوبنده باعث خنده تمام سالن شد."
+    },
+    {
+      "fr": "le décor",
+      "fa": "دکور، صحنه‌آرایی",
+      "emoji": "🏰",
+      "difficulty": 3,
+      "ex": "Le décor de la forêt enchantée a été peint à la main.",
+      "ex_fa": "دکور جنگل جادویی با دست نقاشی شده است."
+    },
+    {
+      "fr": "la tirade",
+      "fa": "تک‌گویی طولانی و احساسی (تیراد)",
+      "emoji": "📜",
+      "difficulty": 5,
+      "ex": "L'acteur a débité sa tirade avec une fureur impressionnante.",
+      "ex_fa": "بازیگر تیراد خود را با خشمی چشمگیر ادا کرد."
+    },
+    {
+      "fr": "le travesti",
+      "fa": "مبدل‌پوشی (ایفای نقش جنس مخالف)",
+      "emoji": "👗",
+      "difficulty": 5,
+      "ex": "À l'époque élisabéthaine, le rôle de Juliette était joué par un jeune garçon en travesti.",
+      "ex_fa": "در دوره الیزابتی، نقش ژولیت را یک پسر جوان به صورت مبدل‌پوشی بازی می‌کرد."
+    },
+    {
+      "fr": "le prologue",
+      "fa": "پیش‌درآمد نمایش",
+      "emoji": "📖",
+      "difficulty": 4,
+      "ex": "Le prologue expose l'intrigue avant que l'action ne commence.",
+      "ex_fa": "پیش‌درآمد، داستان را قبل از شروع عملیات توضیح می‌دهد."
+    },
+    {
+      "fr": "la galerie",
+      "fa": "بالکن تماشاگران",
+      "emoji": "🎟️",
+      "difficulty": 4,
+      "ex": "Les spectateurs pauvres applaudissaient bruyamment depuis la galerie.",
+      "ex_fa": "تماشاگران فقیر از بالکن با صدای بلند تشویق می‌کردند."
+    },
+    {
+      "fr": "le masque",
+      "fa": "نقاب",
+      "emoji": "🎭",
+      "difficulty": 3,
+      "ex": "Le bal masqué permet aux amants de se rencontrer en secret.",
+      "ex_fa": "مهمانی نقاب‌دار به عاشقان اجازه می‌دهد مخفیانه یکدیگر را ملاقات کنند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La muse du Globe",
+      "text": "Will Shakespeare est un jeune {{BLANK_2}} londonien en panne d'inspiration. Il doit écrire une {{BLANK_4}} intitulée « Roméo et Rosaline » pour rembourser ses dettes. Mais son cœur est vide, jusqu'à ce qu'il rencontre Viola lors d'un bal où elle porte un {{BLANK_14}} de velours. Immédiatement, il sait que sa pièce deviendra une {{BLANK_3}} déchirante. Will passe ses nuits à écrire des {{BLANK_8}}s passionnées et de longs {{BLANK_5}}s où le héros exprime son désespoir. Le jour de la {{BLANK_12}}, il présente les personnages au public. Sur la {{BLANK_1}}, le {{BLANK_9}} représente le balcon de Vérone. Viola, amoureuse de Will, décide de jouer dans la pièce. Mais les femmes étant interdites de théâtre, elle se fait passer pour un garçon, jouant ainsi en {{BLANK_11}} le rôle de Roméo. Dans la {{BLANK_6}}, le {{BLANK_7}} l'aide quand elle oublie une {{BLANK_10}} majestueuse. Les nobles sont assis confortablement, tandis que le peuple s'entasse dans la {{BLANK_13}} et sur le parterre. Quand le rideau tombe, les larmes coulent. Will a trouvé sa muse, mais la réalité les séparera à jamais.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "scène",
+          "options": [
+            "scène",
+            "coulisse",
+            "galerie",
+            "décor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "dramaturge",
+          "options": [
+            "dramaturge",
+            "souffleur",
+            "masque",
+            "travesti"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tragédie",
+          "options": [
+            "tragédie",
+            "comédie",
+            "tirade",
+            "prologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "comédie",
+          "options": [
+            "comédie",
+            "réplique",
+            "monologue",
+            "scène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "monologues",
+          "options": [
+            "monologues",
+            "masques",
+            "décors",
+            "prologues"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "coulisse",
+          "options": [
+            "coulisse",
+            "scène",
+            "galerie",
+            "tirade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "souffleur",
+          "options": [
+            "souffleur",
+            "dramaturge",
+            "travesti",
+            "décor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "répliques",
+          "options": [
+            "répliques",
+            "tragédies",
+            "comédies",
+            "coulisses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "décor",
+          "options": [
+            "décor",
+            "masque",
+            "prologue",
+            "travesti"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "tirade",
+          "options": [
+            "tirade",
+            "comédie",
+            "scène",
+            "galerie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "travesti",
+          "options": [
+            "travesti",
+            "souffleur",
+            "dramaturge",
+            "masque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "prologue",
+          "options": [
+            "prologue",
+            "tirade",
+            "réplique",
+            "coulisse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "galerie",
+          "options": [
+            "galerie",
+            "scène",
+            "décor",
+            "tragédie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "masque",
+          "options": [
+            "masque",
+            "travesti",
+            "prologue",
+            "monologue"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'encre et les larmes",
+      "inspiration": "Shakespeare in Love (John Madden, 1998)",
+      "text": "À peine Will Shakespeare eut-il posé sa plume d'oie sur le parchemin vierge qu'il comprit que les mots lui échappaient encore. Ce jeune {{BLANK_2}} de Londres, noyé sous les dettes et les promesses non tenues, devait livrer une {{BLANK_4}} légère pour le théâtre du Rose. Mais son esprit était hanté par des ombres bien plus sombres. Lors d'un bal où les visages se cachaient derrière un {{BLANK_14}} de soie, il croisa le regard de Viola de Lesseps. En une seconde, la {{BLANK_4}} prévue se mua en une {{BLANK_3}} brûlante, celle de deux amants maudits par les étoiles. Will écrivit avec fièvre, ciselant chaque {{BLANK_8}} comme une lame de Tolède, construisant des {{BLANK_5}}s où la douleur de Roméo devenait une {{BLANK_10}} incandescente qui déchirait le cœur des spectateurs. Sur les planches usées de la {{BLANK_1}}, le {{BLANK_9}} de bois peignait l'illusion de Vérone. Mais le théâtre élisabéthain, dans sa cruelle hypocrisie, interdisait la présence des femmes. Viola, dévorée par la passion du jeu et de son auteur, trancha ses boucles dorées pour se glisser en {{BLANK_11}} dans la peau du jeune Montaigu. Dans l'ombre humide de la {{BLANK_6}}, le vieux {{BLANK_7}} murmurait les vers oubliés, gardien secret de leur amour interdit. Quand le {{BLANK_12}} fut récité, annonçant la mort inévitable des héros, les nobles dans leurs loges et le peuple grouillant de la {{BLANK_13}} retinrent leur souffle. Will avait capturé l'éternité dans l'encre, mais il savait que le véritable drame n'était pas celui qui se jouait sous les projecteurs, mais celui qui condamnait sa muse à épouser un autre homme, laissant le poète seul avec ses fantômes de papier.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "scène",
+          "options": [
+            "scène",
+            "coulisse",
+            "galerie",
+            "décor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "dramaturge",
+          "options": [
+            "dramaturge",
+            "souffleur",
+            "masque",
+            "travesti"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tragédie",
+          "options": [
+            "tragédie",
+            "comédie",
+            "tirade",
+            "prologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "comédie",
+          "options": [
+            "comédie",
+            "réplique",
+            "monologue",
+            "scène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "monologues",
+          "options": [
+            "monologues",
+            "masques",
+            "décors",
+            "prologues"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "coulisse",
+          "options": [
+            "coulisse",
+            "scène",
+            "galerie",
+            "tirade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "souffleur",
+          "options": [
+            "souffleur",
+            "dramaturge",
+            "travesti",
+            "décor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "répliques",
+          "options": [
+            "répliques",
+            "tragédies",
+            "comédies",
+            "coulisses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "décor",
+          "options": [
+            "décor",
+            "masque",
+            "prologue",
+            "travesti"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "tirade",
+          "options": [
+            "tirade",
+            "comédie",
+            "scène",
+            "galerie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "travesti",
+          "options": [
+            "travesti",
+            "souffleur",
+            "dramaturge",
+            "masque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "prologue",
+          "options": [
+            "prologue",
+            "tirade",
+            "réplique",
+            "coulisse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "galerie",
+          "options": [
+            "galerie",
+            "scène",
+            "décor",
+            "tragédie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "masque",
+          "options": [
+            "masque",
+            "travesti",
+            "prologue",
+            "monologue"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Théâtre et arts de la scène",
+    "title_fa": "آزمون : تئاتر و هنرهای صحنه‌ای",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'espace surélevé où les acteurs jouent la pièce face au public est la ____.",
+        "options": [
+          "scène",
+          "coulisse",
+          "galerie",
+          "décor"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فضای اجرای بازیگران = scène."
+      },
+      {
+        "type": "mcq",
+        "question": "L'auteur qui écrit des pièces de théâtre, créant l'intrigue, les personnages et les dialogues, est le ____.",
+        "options": [
+          "dramaturge",
+          "souffleur",
+          "masque",
+          "travesti"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نویسنده نمایشنامه = dramaturge."
+      },
+      {
+        "type": "mcq",
+        "question": "Le genre théâtral qui met en scène des héros aux prises avec un destin funeste et qui se termine souvent par la mort est la ____.",
+        "options": [
+          "tragédie",
+          "comédie",
+          "tirade",
+          "prologue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ژانر نمایشی با پایان غم‌انگیز = tragédie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le genre théâtral léger, destiné à faire rire et qui se conclut généralement par un dénouement heureux, est la ____.",
+        "options": [
+          "comédie",
+          "réplique",
+          "monologue",
+          "scène"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ژانر نمایشی خنده‌دار و شاد = comédie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le long discours qu'un personnage prononce seul sur scène pour exprimer ses pensées intimes est le ____.",
+        "options": [
+          "monologue",
+          "masque",
+          "décor",
+          "prologue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سخنرانی طولانی و انفرادی بازیگر = monologue."
+      },
+      {
+        "type": "mcq",
+        "question": "L'espace caché aux regards du public, sur les côtés ou derrière la scène, où les acteurs attendent leur entrée est la ____.",
+        "options": [
+          "coulisse",
+          "scène",
+          "galerie",
+          "tirade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فضای پشت صحنه = coulisse."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne cachée dans une petite fosse au bord de la scène, chargée d'aider les acteurs en cas d'oubli de texte, est le ____.",
+        "options": [
+          "souffleur",
+          "dramaturge",
+          "travesti",
+          "décor"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص یادآور دیالوگ‌ها = souffleur."
+      },
+      {
+        "type": "mcq",
+        "question": "La phrase ou le court échange de paroles prononcé par un acteur en réponse à un autre est la ____.",
+        "options": [
+          "réplique",
+          "tragédie",
+          "comédie",
+          "coulisse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دیالوگ و پاسخ بازیگر = réplique."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des éléments visuels (toiles peintes, meubles, accessoires) qui plantent le lieu de l'action est le ____.",
+        "options": [
+          "décor",
+          "masque",
+          "prologue",
+          "travesti"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صحنه‌آرایی و دکور = décor."
+      },
+      {
+        "type": "mcq",
+        "question": "Le discours long, véhément et souvent lyrique, prononcé par un personnage pour convaincre ou exprimer une forte émotion, est la ____.",
+        "options": [
+          "tirade",
+          "comédie",
+          "scène",
+          "galerie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تک‌گویی طولانی و احساسی = tirade."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fait pour un acteur de jouer un rôle du sexe opposé, souvent en se déguisant, est le ____.",
+        "options": [
+          "travesti",
+          "souffleur",
+          "dramaturge",
+          "masque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ایفای نقش جنس مخالف = travesti."
+      },
+      {
+        "type": "mcq",
+        "question": "Le texte d'introduction, parlé ou non, qui précède le début de l'action et présente le contexte de la pièce est le ____.",
+        "options": [
+          "prologue",
+          "tirade",
+          "réplique",
+          "coulisse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیش‌درآمد نمایش = prologue."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étage supérieur ou le balcon du théâtre, où s'installaient autrefois les spectateurs les moins fortunés, est la ____.",
+        "options": [
+          "galerie",
+          "scène",
+          "décor",
+          "tragédie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بالکن تماشاگران = galerie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objet que l'on porte sur le visage pour dissimuler son identité ou incarner un personnage mystérieux est le ____.",
+        "options": [
+          "masque",
+          "travesti",
+          "prologue",
+          "monologue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نقاب صورت = masque."
+      },
+      {
+        "type": "binary",
+        "question": "La tragédie et la comédie se terminent toutes deux par la mort des personnages principaux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تراژدی با مرگ یا فاجعه پایان می‌یابد، اما کمدی معمولاً با شادی و ازدواج تمام می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le dramaturge est l'acteur principal qui joue le rôle du héros dans la pièce.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. dramaturge نویسنده نمایشنامه است، نه بازیگر."
+      },
+      {
+        "type": "binary",
+        "question": "Le monologue et la tirade sont tous deux des discours prononcés par un seul personnage sur scène.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هر دو به سخنرانی یک نفر اشاره دارند، با این تفاوت که tirade معمولاً طولانی‌تر و احساسی‌تر است."
+      },
+      {
+        "type": "binary",
+        "question": "À l'époque élisabéthaine, les rôles féminins étaient joués par de jeunes garçons en travesti, car les femmes n'avaient pas le droit de monter sur scène.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. در تئاتر الیزابتی، زنان حق بازی نداشتند و پسران جوان نقش‌های زنانه را بازی می‌کردند."
+      },
+      {
+        "type": "binary",
+        "question": "Le souffleur est le metteur en scène qui dirige les acteurs pendant les répétitions.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سوفلور کسی است که در حین اجرا دیالوگ‌های فراموش‌شده را به بازیگر یادآوری می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Les coulisses sont les espaces invisibles pour le public où les acteurs se préparent et attendent leur entrée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پشت صحنه (coulisse) محل آماده‌سازی و انتظار بازیگران دور از دید تماشاگران است."
+      }
+    ]
+  }
+}
