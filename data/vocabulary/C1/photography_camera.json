@@ -1,0 +1,680 @@
+{
+  "id": "photography_camera",
+  "level": "C1",
+  "theme": "Photographie, chambre noire et composition",
+  "theme_fa": "عکاسی، اتاق تاریک و ترکیب‌بندی",
+  "icon": "📷",
+  "inspiration": "La Fenêtre sur cour (Rear Window - Alfred Hitchcock, 1954)",
+  "words": [
+    {
+      "fr": "la photographie",
+      "fa": "عکاسی",
+      "emoji": "📷",
+      "difficulty": 3,
+      "ex": "La photographie argentique connaît un regain d'intérêt chez les jeunes artistes.",
+      "ex_fa": "عکاسی آنالوگ در میان هنرمندان جوان دوباره مورد توجه قرار گرفته است."
+    },
+    {
+      "fr": "l'objectif",
+      "fa": "لنز",
+      "emoji": "🔭",
+      "difficulty": 4,
+      "ex": "L'objectif à grande ouverture capte un maximum de lumière.",
+      "ex_fa": "لنز با دیافراگم باز حداکثر نور را جذب می‌کند."
+    },
+    {
+      "fr": "l'ouverture",
+      "fa": "دیافراگم (گشودگی)",
+      "emoji": "⭕",
+      "difficulty": 5,
+      "ex": "Une grande ouverture (f/1.8) crée une faible profondeur de champ.",
+      "ex_fa": "دیافراگم باز (f/1.8) عمق میدان کمی ایجاد می‌کند."
+    },
+    {
+      "fr": "la vitesse",
+      "fa": "سرعت شاتر",
+      "emoji": "⏱️",
+      "difficulty": 4,
+      "ex": "Une vitesse rapide fige le mouvement du sujet en action.",
+      "ex_fa": "سرعت شاتر بالا حرکت سوژه را منجمد می‌کند."
+    },
+    {
+      "fr": "la pellicule",
+      "fa": "فیلم عکاسی",
+      "emoji": "🎞️",
+      "difficulty": 4,
+      "ex": "La pellicule noir et blanc offre des contrastes dramatiques.",
+      "ex_fa": "فیلم سیاه و سفید تضادهای دراماتیکی ارائه می‌دهد."
+    },
+    {
+      "fr": "le négatif",
+      "fa": "نگاتیو",
+      "emoji": "🎞️",
+      "difficulty": 4,
+      "ex": "Sur le négatif, les zones claires apparaissent sombres et inversement.",
+      "ex_fa": "روی نگاتیو، نواحی روشن تیره و برعکس ظاهر می‌شوند."
+    },
+    {
+      "fr": "le tirage",
+      "fa": "چاپ عکس",
+      "emoji": "🖼️",
+      "difficulty": 4,
+      "ex": "Le tirage sur papier baryté garantit une conservation exceptionnelle.",
+      "ex_fa": "چاپ روی کاغذ باریته ماندگاری فوق‌العاده‌ای را تضمین می‌کند."
+    },
+    {
+      "fr": "la chambre noire",
+      "fa": "اتاق تاریک",
+      "emoji": "🌑",
+      "difficulty": 4,
+      "ex": "Le photographe développe ses images dans la chambre noire.",
+      "ex_fa": "عکاس تصاویرش را در اتاق تاریک ظاهر می‌کند."
+    },
+    {
+      "fr": "le flash",
+      "fa": "فلاش",
+      "emoji": "⚡",
+      "difficulty": 3,
+      "ex": "Le flash intégré permet d'éclairer les sujets en basse lumière.",
+      "ex_fa": "فلاش داخلی امکان نورپردازی سوژه‌ها در نور کم را می‌دهد."
+    },
+    {
+      "fr": "le cadrage",
+      "fa": "کادربندی",
+      "emoji": "🖼️",
+      "difficulty": 4,
+      "ex": "Le cadrage serré renforce l'intensité émotionnelle du portrait.",
+      "ex_fa": "کادربندی بسته، شدت احساسی پرتره را تقویت می‌کند."
+    },
+    {
+      "fr": "le portrait",
+      "fa": "پرتره",
+      "emoji": "👤",
+      "difficulty": 3,
+      "ex": "Le portrait studio exige une maîtrise parfaite de l'éclairage.",
+      "ex_fa": "پرتره استودیویی به تسلط کامل بر نورپردازی نیاز دارد."
+    },
+    {
+      "fr": "le paysage",
+      "fa": "چشم‌انداز، منظره",
+      "emoji": "🏞️",
+      "difficulty": 3,
+      "ex": "Le paysage de montagne requiert un objectif grand-angle.",
+      "ex_fa": "منظره کوهستانی به لنز واید نیاز دارد."
+    },
+    {
+      "fr": "le contre-jour",
+      "fa": "ضد نور (نور پشت)",
+      "emoji": "☀️",
+      "difficulty": 5,
+      "ex": "Le contre-jour crée des silhouettes mystérieuses et poétiques.",
+      "ex_fa": "ضد نور، سایه‌های مرموز و شاعرانه‌ای ایجاد می‌کند."
+    },
+    {
+      "fr": "le bokeh",
+      "fa": "بوکه (تاری پس‌زمینه)",
+      "emoji": "🔵",
+      "difficulty": 5,
+      "ex": "Le bokeh crémeux détache magnifiquement le sujet de l'arrière-plan.",
+      "ex_fa": "بوکه کرمی، سوژه را به زیبایی از پس‌زمینه جدا می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le témoin immobile",
+      "text": "L.B. Jefferies est un photographe professionnel immobilisé chez lui avec une jambe plâtrée. Pour tromper l'ennui, il s'adonne à la {{BLANK_1}} d'observation en espionnant ses voisins à travers son puissant télé-{{BLANK_2}}. Il règle l'{{BLANK_3}} au maximum pour capter la moindre lueur dans la pénombre des appartements. Il ajuste la {{BLANK_4}} d'obturation pour figer les mouvements suspects. Son appareil est chargé d'une {{BLANK_5}} noir et blanc ultra-sensible. Chaque soir, il développe le {{BLANK_6}} dans sa {{BLANK_8}} improvisée dans la salle de bain. Le {{BLANK_7}} sur papier photographique révèle les détails cachés de la cour. Parfois, il utilise un {{BLANK_9}} discret pour éclairer une scène lointaine dans la nuit. Son {{BLANK_10}} précis isole les suspects du reste du décor. Il réalise un {{BLANK_11}} serré du voisin d'en face qui semble cacher quelque chose. Il capture le {{BLANK_12}} urbain de l'immeuble d'à côté. Quand le soleil se couche, il joue avec le {{BLANK_13}} qui transforme les personnages en silhouettes menaçantes. Il admire le {{BLANK_14}} artistique qui détache le sujet de son environnement flou. Soudain, il devient le témoin involontaire d'un crime mystérieux.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "photographie",
+          "options": [
+            "photographie",
+            "objectif",
+            "ouverture",
+            "vitesse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "objectif",
+          "options": [
+            "objectif",
+            "pellicule",
+            "négatif",
+            "tirage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "ouverture",
+          "options": [
+            "ouverture",
+            "chambre noire",
+            "flash",
+            "cadrage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "vitesse",
+          "options": [
+            "vitesse",
+            "portrait",
+            "paysage",
+            "contre-jour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pellicule",
+          "options": [
+            "pellicule",
+            "bokeh",
+            "photographie",
+            "objectif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "négatif",
+          "options": [
+            "négatif",
+            "ouverture",
+            "vitesse",
+            "pellicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tirage",
+          "options": [
+            "tirage",
+            "chambre noire",
+            "flash",
+            "cadrage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "chambre noire",
+          "options": [
+            "chambre noire",
+            "portrait",
+            "paysage",
+            "contre-jour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "flash",
+          "options": [
+            "flash",
+            "bokeh",
+            "photographie",
+            "objectif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "cadrage",
+          "options": [
+            "cadrage",
+            "négatif",
+            "tirage",
+            "chambre noire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "portrait",
+          "options": [
+            "portrait",
+            "flash",
+            "paysage",
+            "contre-jour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "paysage",
+          "options": [
+            "paysage",
+            "bokeh",
+            "photographie",
+            "objectif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "contre-jour",
+          "options": [
+            "contre-jour",
+            "ouverture",
+            "vitesse",
+            "pellicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "bokeh",
+          "options": [
+            "bokeh",
+            "négatif",
+            "tirage",
+            "chambre noire"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le voyeur de lumière",
+      "inspiration": "La Fenêtre sur cour (Rear Window - Alfred Hitchcock, 1954)",
+      "text": "À peine Jeff eut-il porté l'appareil à son œil que le monde extérieur se transforma en une scène de théâtre dont il était le seul spectateur. Prisonnier de son fauteuil roulant et de son appartement étouffant, il avait fait de la {{BLANK_1}} son unique fenêtre sur l'âme de ses voisins. À travers le long {{BLANK_2}} de son téléobjectif, il scrutait les intimités volées, les petits drames du quotidien. Il ouvrait grand l'{{BLANK_3}} pour aspirer la lumière crépusculaire, et ralentissait la {{BLANK_4}} d'obturation pour capturer les ombres furtives qui glissaient derrière les rideaux. La {{BLANK_5}} vierge attendait dans le boîtier comme une mémoire affamée, prête à graver les secrets. Chaque nuit, dans le rougeoiement de sa {{BLANK_8}}, il révélait le {{BLANK_6}} fantomatique, ce négatif où les ombres devenaient lumières et les mensonges vérités, avant d'opérer le {{BLANK_7}} qui fixait la preuve sur le papier. Le {{BLANK_9}} brutal figeait parfois un geste coupable, éclaboussant la nuit de sa lumière accusatrice. Son {{BLANK_10}} implacable isolait le criminel de son décor banal, transformant un simple voisin en suspect. Ce {{BLANK_11}} volé d'une femme qui pleurait, ce {{BLANK_12}} de briques rouges où se cachait le mystère, ce {{BLANK_13}} dramatique qui découpait les silhouettes sur le crépuscule, tout devenait preuve. Il admirait le {{BLANK_14}} vaporeux qui isolait le suspect de la foule indifférente, ignorant qu'il était sur le point de capturer non pas une simple image, mais le reflet de sa propre mort.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "photographie",
+          "options": [
+            "photographie",
+            "objectif",
+            "ouverture",
+            "vitesse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "objectif",
+          "options": [
+            "objectif",
+            "pellicule",
+            "négatif",
+            "tirage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "ouverture",
+          "options": [
+            "ouverture",
+            "chambre noire",
+            "flash",
+            "cadrage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "vitesse",
+          "options": [
+            "vitesse",
+            "portrait",
+            "paysage",
+            "contre-jour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pellicule",
+          "options": [
+            "pellicule",
+            "bokeh",
+            "photographie",
+            "objectif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "négatif",
+          "options": [
+            "négatif",
+            "ouverture",
+            "vitesse",
+            "pellicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tirage",
+          "options": [
+            "tirage",
+            "chambre noire",
+            "flash",
+            "cadrage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "chambre noire",
+          "options": [
+            "chambre noire",
+            "portrait",
+            "paysage",
+            "contre-jour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "flash",
+          "options": [
+            "flash",
+            "bokeh",
+            "photographie",
+            "objectif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "cadrage",
+          "options": [
+            "cadrage",
+            "négatif",
+            "tirage",
+            "chambre noire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "portrait",
+          "options": [
+            "portrait",
+            "flash",
+            "paysage",
+            "contre-jour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "paysage",
+          "options": [
+            "paysage",
+            "bokeh",
+            "photographie",
+            "objectif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "contre-jour",
+          "options": [
+            "contre-jour",
+            "ouverture",
+            "vitesse",
+            "pellicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "bokeh",
+          "options": [
+            "bokeh",
+            "négatif",
+            "tirage",
+            "chambre noire"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Photographie et chambre noire",
+    "title_fa": "آزمون : عکاسی و اتاق تاریک",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art et la technique de capturer des images à l'aide de la lumière sur un support sensible est la ____.",
+        "options": [
+          "photographie",
+          "objectif",
+          "ouverture",
+          "vitesse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر ثبت تصویر با نور = photographie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système optique composé de lentilles qui concentre la lumière vers le capteur ou la pellicule est l'____.",
+        "options": [
+          "objectif",
+          "pellicule",
+          "négatif",
+          "tirage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم نوری متمرکزکننده نور = objectif."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mécanisme qui contrôle la quantité de lumière entrant dans l'appareil en ajustant le diaphragme est l'____.",
+        "options": [
+          "ouverture",
+          "chambre noire",
+          "flash",
+          "cadrage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانیزم کنترل مقدار نور ورودی = ouverture."
+      },
+      {
+        "type": "mcq",
+        "question": "La durée pendant laquelle le capteur ou la pellicule est exposé à la lumière est la ____ d'obturation.",
+        "options": [
+          "vitesse",
+          "portrait",
+          "paysage",
+          "contre-jour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مدت زمان نوردهی = vitesse."
+      },
+      {
+        "type": "mcq",
+        "question": "La bande souple recouverte d'une émulsion photosensible, utilisée dans les appareils argentiques, est la ____.",
+        "options": [
+          "pellicule",
+          "bokeh",
+          "photographie",
+          "objectif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نوار حساس به نور در دوربین‌های آنالوگ = pellicule."
+      },
+      {
+        "type": "mcq",
+        "question": "L'image inversée (valeurs claires et sombres opposées) obtenue après le développement est le ____.",
+        "options": [
+          "négatif",
+          "ouverture",
+          "vitesse",
+          "pellicule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تصویر معکوس‌شده پس از ظهور = négatif."
+      },
+      {
+        "type": "mcq",
+        "question": "L'opération qui consiste à reproduire l'image du négatif sur du papier photographique est le ____.",
+        "options": [
+          "tirage",
+          "chambre noire",
+          "flash",
+          "cadrage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چاپ تصویر نگاتیو روی کاغذ = tirage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le local totalement privé de lumière où l'on développe les photographies argentiques est la ____.",
+        "options": [
+          "chambre noire",
+          "portrait",
+          "paysage",
+          "contre-jour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اتاق بدون نور برای ظهور عکس = chambre noire."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dispositif qui émet une lumière artificielle intense et brève pour éclairer une scène est le ____.",
+        "options": [
+          "flash",
+          "bokeh",
+          "photographie",
+          "objectif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه نور مصنوعی شدید = flash."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de choisir ce qui sera inclus dans l'image et de composer les éléments visuels est le ____.",
+        "options": [
+          "cadrage",
+          "négatif",
+          "tirage",
+          "chambre noire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انتخاب و ترکیب‌بندی عناصر در تصویر = cadrage."
+      },
+      {
+        "type": "mcq",
+        "question": "La photographie qui représente une personne ou un groupe de personnes est le ____.",
+        "options": [
+          "portrait",
+          "flash",
+          "paysage",
+          "contre-jour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عکس از یک شخص یا گروه = portrait."
+      },
+      {
+        "type": "mcq",
+        "question": "La représentation photographique d'un espace naturel ou urbain étendu est le ____.",
+        "options": [
+          "paysage",
+          "bokeh",
+          "photographie",
+          "objectif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عکس از فضای طبیعی یا شهری = paysage."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique où la source de lumière principale se trouve derrière le sujet, créant une silhouette, est le ____.",
+        "options": [
+          "contre-jour",
+          "ouverture",
+          "vitesse",
+          "pellicule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قرارگیری منبع نور پشت سوژه = contre-jour."
+      },
+      {
+        "type": "mcq",
+        "question": "L'effet esthétique de flou artistique de l'arrière-plan qui met en valeur le sujet net est le ____.",
+        "options": [
+          "bokeh",
+          "négatif",
+          "tirage",
+          "chambre noire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تاری هنری و زیبای پس‌زمینه = bokeh."
+      },
+      {
+        "type": "binary",
+        "question": "L'ouverture du diaphragme se mesure en valeurs f (ex: f/2.8) ; un petit chiffre comme f/1.8 laisse entrer beaucoup de lumière.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. عدد f کوچکتر به معنای گشودگی بیشتر و ورود نور بیشتر است."
+      },
+      {
+        "type": "binary",
+        "question": "Une vitesse d'obturation élevée (ex: 1/1000s) est utilisée pour créer des filés et du flou de mouvement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سرعت بالا حرکت را منجمد می‌کند؛ سرعت پایین (مانند ۱ ثانیه) تاری و حرکت ایجاد می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le négatif est l'image finale positive prête à être encadrée et exposée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. نگاتیو تصویر معکوس است و برای تبدیل به عکس نهایی نیاز به چاپ (tirage) دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le cadrage désigne la manière dont le photographe compose les éléments à l'intérieur du viseur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کادربندی نحوه چیدمان عناصر درون کادر عکس است."
+      },
+      {
+        "type": "binary",
+        "question": "Le bokeh est un défaut optique qui rend l'image entièrement floue et inutilisable.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. بوکه یک افکت هنری مطلوب برای تار کردن پس‌زمینه است، نه یک نقص."
+      },
+      {
+        "type": "binary",
+        "question": "La chambre noire est indispensable pour développer les pellicules argentiques et réaliser des tirages papier.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اتاق تاریک برای ظهور فیلم و چاپ عکس آنالوگ ضروری است."
+      }
+    ]
+  }
+}
