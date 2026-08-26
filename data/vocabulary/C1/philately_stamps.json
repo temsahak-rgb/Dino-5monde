@@ -1,0 +1,722 @@
+{
+  "id": "philately_stamps",
+  "level": "C1",
+  "theme": "Philatélie, timbres-poste et histoire postale",
+  "theme_fa": "تمبرشناسی، تمبرهای پستی و تاریخچه پست",
+  "icon": "📮",
+  "inspiration": "Charade (Stanley Donen, 1963)",
+  "words": [
+    {
+      "fr": "la philatélie",
+      "fa": "تمبرشناسی",
+      "emoji": "📮",
+      "difficulty": 5,
+      "ex": "La philatélie est souvent considérée comme le roi des hobbies.",
+      "ex_fa": "تمبرشناسی اغلب به عنوان پادشاه سرگرمی‌ها در نظر گرفته می‌شود."
+    },
+    {
+      "fr": "le timbre",
+      "fa": "تمبر",
+      "emoji": "🎫",
+      "difficulty": 2,
+      "ex": "Le premier timbre du monde, le Penny Black, fut émis en 1840.",
+      "ex_fa": "اولین تمبر جهان، پنی سیاه، در سال ۱۸۴۰ منتشر شد."
+    },
+    {
+      "fr": "l'affranchissement",
+      "fa": "پرداخت هزینه پست",
+      "emoji": "💵",
+      "difficulty": 4,
+      "ex": "L'affranchissement prépayé a révolutionné le système postal mondial.",
+      "ex_fa": "پرداخت پیشاپیس هزینه پست، سیستم پستی جهانی را متحول کرد."
+    },
+    {
+      "fr": "la dentelure",
+      "fa": "دندانه‌های لبه تمبر",
+      "emoji": "⚙️",
+      "difficulty": 4,
+      "ex": "La dentelure permet de détacher facilement les timbres de la feuille.",
+      "ex_fa": "دندانه‌ها امکان جداسازی آسان تمبرها از ورقه را می‌دهند."
+    },
+    {
+      "fr": "l'oblitération",
+      "fa": "باطل‌کردن تمبر",
+      "emoji": "🔴",
+      "difficulty": 5,
+      "ex": "L'oblitération empêche la réutilisation frauduleuse du timbre.",
+      "ex_fa": "باطل‌کردن از استفاده متقلبانه مجدد تمبر جلوگیری می‌کند."
+    },
+    {
+      "fr": "la lettre",
+      "fa": "نامه",
+      "emoji": "✉️",
+      "difficulty": 2,
+      "ex": "Cette lettre ancienne porte un timbre rarissime de la guerre civile.",
+      "ex_fa": "این نامه قدیمی دارای یک تمبر بسیار نادر از دوران جنگ داخلی است."
+    },
+    {
+      "fr": "le collectionneur",
+      "fa": "کلکسیونر",
+      "emoji": "🧐",
+      "difficulty": 3,
+      "ex": "Le collectionneur cherche désespérément la pièce manquante de sa série.",
+      "ex_fa": "کلکسیونر ناامیدانه به دنبال قطعه گمشده مجموعه‌اش می‌گردد."
+    },
+    {
+      "fr": "l'enveloppe",
+      "fa": "پاکت نامه",
+      "emoji": "✉️",
+      "difficulty": 2,
+      "ex": "Il préfère conserver le timbre sur son enveloppe d'origine.",
+      "ex_fa": "او ترجیح می‌دهد تمبر را روی پاکت اصلی‌اش نگه دارد."
+    },
+    {
+      "fr": "le cachet",
+      "fa": "مهر پستی",
+      "emoji": "⭕",
+      "difficulty": 4,
+      "ex": "Le cachet de la poste indique la ville et l'heure exacte de l'expédition.",
+      "ex_fa": "مهر پستی شهر و ساعت دقیق ارسال را نشان می‌دهد."
+    },
+    {
+      "fr": "la planche",
+      "fa": "ورق کامل تمبر",
+      "emoji": "📄",
+      "difficulty": 4,
+      "ex": "Posséder une planche entière de timbres neufs est le rêve de tout amateur.",
+      "ex_fa": "داشتن یک ورق کامل از تمبرهای نو، آرزوی هر علاقه‌مندی است."
+    },
+    {
+      "fr": "la poste",
+      "fa": "اداره پست",
+      "emoji": "🏢",
+      "difficulty": 2,
+      "ex": "La poste nationale émet chaque année de nouvelles séries commémoratives.",
+      "ex_fa": "پست ملی هر سال مجموعه‌های یادبود جدیدی منتشر می‌کند."
+    },
+    {
+      "fr": "le courrier",
+      "fa": "نامه‌ها، پست",
+      "emoji": "📬",
+      "difficulty": 2,
+      "ex": "Le tri du courrier prend des heures dans les grands centres de distribution.",
+      "ex_fa": "سورت کردن نامه‌ها در مراکز بزرگ توزیع ساعت‌ها طول می‌کشد."
+    },
+    {
+      "fr": "la surcharge",
+      "fa": "چاپ اضافه (تغییر قیمت)",
+      "emoji": "🖋️",
+      "difficulty": 5,
+      "ex": "Une surcharge d'urgence fut imprimée quand la colonie manqua de timbres.",
+      "ex_fa": "هنگام کمبود تمبر در مستعمره، یک چاپ اضافه اضطراری انجام شد."
+    },
+    {
+      "fr": "le filigrane",
+      "fa": "واترمارک، نقش‌آب",
+      "emoji": "💧",
+      "difficulty": 4,
+      "ex": "Le filigrane de la couronne est visible uniquement par transparence.",
+      "ex_fa": "واترمارک تاج تنها از طریق شفافیت قابل مشاهده است."
+    },
+    {
+      "fr": "la pince",
+      "fa": "پنس (موچین تمبر)",
+      "emoji": "🥢",
+      "difficulty": 3,
+      "ex": "Le philatéliste utilise toujours une pince pour ne pas graisser le papier.",
+      "ex_fa": "تمبرشناس همیشه برای چرب نکردن کاغذ از پنس استفاده می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le mystère du Penny Black",
+      "text": "Marc est un {{BLANK_7}} passionné par la {{BLANK_1}}. Chaque matin, il se rend à la {{BLANK_11}} pour trier le {{BLANK_12}} abandonné. Il cherche un rare {{BLANK_2}} du XIXe siècle encore collé sur son {{BLANK_8}}. La {{BLANK_4}} sur les bords doit être parfaitement intacte. Avec une {{BLANK_15}} spéciale, il détache délicatement le papier sans l'abîmer. Il observe le {{BLANK_9}} postal et l'{{BLANK_5}} qui indiquent la date d'expédition. Parfois, il découvre un {{BLANK_14}} caché en regardant par transparence. Une {{BLANK_13}} rare augmente la valeur de la pièce. Ce petit bout de papier servait à payer l'{{BLANK_3}} pour une simple {{BLANK_6}}. Aujourd'hui, la {{BLANK_10}} entière de ces vignettes est exposée dans un musée.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "philatélie",
+          "options": [
+            "philatélie",
+            "timbre",
+            "affranchissement",
+            "dentelure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "timbre",
+          "options": [
+            "timbre",
+            "oblitération",
+            "lettre",
+            "collectionneur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "affranchissement",
+          "options": [
+            "affranchissement",
+            "enveloppe",
+            "cachet",
+            "planche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "dentelure",
+          "options": [
+            "dentelure",
+            "poste",
+            "courrier",
+            "surcharge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "oblitération",
+          "options": [
+            "oblitération",
+            "filigrane",
+            "pince",
+            "philatélie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "lettre",
+          "options": [
+            "lettre",
+            "timbre",
+            "affranchissement",
+            "dentelure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "collectionneur",
+          "options": [
+            "collectionneur",
+            "oblitération",
+            "lettre",
+            "enveloppe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "enveloppe",
+          "options": [
+            "enveloppe",
+            "cachet",
+            "planche",
+            "poste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cachet",
+          "options": [
+            "cachet",
+            "courrier",
+            "surcharge",
+            "filigrane"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "planche",
+          "options": [
+            "planche",
+            "pince",
+            "philatélie",
+            "timbre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "poste",
+          "options": [
+            "poste",
+            "affranchissement",
+            "dentelure",
+            "oblitération"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "courrier",
+          "options": [
+            "courrier",
+            "lettre",
+            "collectionneur",
+            "enveloppe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "surcharge",
+          "options": [
+            "surcharge",
+            "cachet",
+            "planche",
+            "poste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "filigrane",
+          "options": [
+            "filigrane",
+            "courrier",
+            "surcharge",
+            "pince"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "pince",
+          "options": [
+            "pince",
+            "philatélie",
+            "timbre",
+            "affranchissement"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le secret de la couronne",
+      "inspiration": "Charade (Stanley Donen, 1963)",
+      "text": "À peine l'inspecteur eut-il braqué sa lampe ultraviolette sur l'{{BLANK_8}} jaunie que le mystère de la {{BLANK_6}} volée éclata au grand jour. Ce n'était pas le papier qui valait des millions, mais le minuscule {{BLANK_2}} collé dans le coin, témoin silencieux de l'{{BLANK_3}} d'une époque révolue. Sous la loupe, la {{BLANK_4}} irrégulière trahissait l'urgence du bureau de {{BLANK_11}} d'autrefois. Le {{BLANK_9}} d'encre noire, frappé avec violence, scellait le destin du {{BLANK_12}} à jamais. En l'examinant par transparence, le {{BLANK_7}} frissonna en découvrant le {{BLANK_14}} secret de la couronne, invisible à l'œil nu. Une mystérieuse {{BLANK_13}} rouge recouvrait le visage du roi déchu. Cette œuvre de la {{BLANK_1}} n'était pas qu'un loisir de vieillard, c'était une enquête policière où chaque {{BLANK_10}} de papier racontait les complots, les amours et les trahisons d'un monde disparu, manipulé avec une {{BLANK_15}} d'or.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "philatélie",
+          "options": [
+            "philatélie",
+            "timbre",
+            "affranchissement",
+            "dentelure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "timbre",
+          "options": [
+            "timbre",
+            "oblitération",
+            "lettre",
+            "collectionneur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "affranchissement",
+          "options": [
+            "affranchissement",
+            "enveloppe",
+            "cachet",
+            "planche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "dentelure",
+          "options": [
+            "dentelure",
+            "poste",
+            "courrier",
+            "surcharge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "oblitération",
+          "options": [
+            "oblitération",
+            "filigrane",
+            "pince",
+            "philatélie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "lettre",
+          "options": [
+            "lettre",
+            "timbre",
+            "affranchissement",
+            "dentelure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "collectionneur",
+          "options": [
+            "collectionneur",
+            "oblitération",
+            "lettre",
+            "enveloppe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "enveloppe",
+          "options": [
+            "enveloppe",
+            "cachet",
+            "planche",
+            "poste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cachet",
+          "options": [
+            "cachet",
+            "courrier",
+            "surcharge",
+            "filigrane"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "planche",
+          "options": [
+            "planche",
+            "pince",
+            "philatélie",
+            "timbre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "poste",
+          "options": [
+            "poste",
+            "affranchissement",
+            "dentelure",
+            "oblitération"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "courrier",
+          "options": [
+            "courrier",
+            "lettre",
+            "collectionneur",
+            "enveloppe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "surcharge",
+          "options": [
+            "surcharge",
+            "cachet",
+            "planche",
+            "poste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "filigrane",
+          "options": [
+            "filigrane",
+            "courrier",
+            "surcharge",
+            "pince"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "pince",
+          "options": [
+            "pince",
+            "philatélie",
+            "timbre",
+            "affranchissement"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Philatélie et timbres",
+    "title_fa": "آزمون : تمبرشناسی و پست",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art de collectionner et d'étudier les timbres-poste et l'histoire postale est la ____.",
+        "options": [
+          "philatélie",
+          "timbre",
+          "affranchissement",
+          "dentelure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر جمع‌آوری و مطالعه تمبر = philatélie."
+      },
+      {
+        "type": "mcq",
+        "question": "La petite vignette en papier qui prouve le paiement du port d'un envoi postal est le ____.",
+        "options": [
+          "timbre",
+          "oblitération",
+          "lettre",
+          "collectionneur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برچسب کاغذی پرداخت هزینه پست = timbre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de payer à l'avance les frais de transport d'un colis ou d'une lettre est l'____.",
+        "options": [
+          "affranchissement",
+          "enveloppe",
+          "cachet",
+          "planche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پرداخت پیشاپیس هزینه پست = affranchissement."
+      },
+      {
+        "type": "mcq",
+        "question": "Les petits trous perforés sur les bords du timbre qui permettent de le séparer de la feuille sont la ____.",
+        "options": [
+          "dentelure",
+          "poste",
+          "courrier",
+          "surcharge"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سوراخ‌های لبه تمبر = dentelure."
+      },
+      {
+        "type": "mcq",
+        "question": "La marque à l'encre apposée sur le timbre pour l'annuler et empêcher sa réutilisation est l'____.",
+        "options": [
+          "oblitération",
+          "filigrane",
+          "pince",
+          "philatélie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مهر باطل‌کننده تمبر = oblitération."
+      },
+      {
+        "type": "mcq",
+        "question": "Le message écrit sur papier, plié et inséré dans une enveloppe pour être expédié est la ____.",
+        "options": [
+          "lettre",
+          "timbre",
+          "affranchissement",
+          "dentelure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیام نوشته‌شده و پست‌شده = lettre."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui amasse et classe méthodiquement des objets rares ou anciens est le ____.",
+        "options": [
+          "collectionneur",
+          "oblitération",
+          "lettre",
+          "enveloppe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص جمع‌آوری‌کننده اشیاء = collectionneur."
+      },
+      {
+        "type": "mcq",
+        "question": "La pochette en papier dans laquelle on glisse une lettre pour l'envoyer par la poste est l'____.",
+        "options": [
+          "enveloppe",
+          "cachet",
+          "planche",
+          "poste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پاکت کاغذی نامه = enveloppe."
+      },
+      {
+        "type": "mcq",
+        "question": "Le tampon officiel appliqué par les services postaux pour indiquer la date et le lieu est le ____.",
+        "options": [
+          "cachet",
+          "courrier",
+          "surcharge",
+          "filigrane"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مهر رسمی اداره پست = cachet."
+      },
+      {
+        "type": "mcq",
+        "question": "La feuille entière et non découpée sortie des presses de l'imprimerie postale est la ____.",
+        "options": [
+          "planche",
+          "pince",
+          "philatélie",
+          "timbre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورق کامل چاپ‌شده تمبر = planche."
+      },
+      {
+        "type": "mcq",
+        "question": "L'administration publique chargée de l'acheminement du courrier est la ____.",
+        "options": [
+          "poste",
+          "affranchissement",
+          "dentelure",
+          "oblitération"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اداره دولتی پست = poste."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des lettres, colis et documents transportés par les services postaux est le ____.",
+        "options": [
+          "courrier",
+          "lettre",
+          "collectionneur",
+          "enveloppe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه نامه‌ها و بسته‌ها = courrier."
+      },
+      {
+        "type": "mcq",
+        "question": "L'impression secondaire ajoutée sur un timbre pour en modifier la valeur ou l'usage est la ____.",
+        "options": [
+          "surcharge",
+          "cachet",
+          "planche",
+          "poste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چاپ اضافه برای تغییر ارزش = surcharge."
+      },
+      {
+        "type": "mcq",
+        "question": "Le motif discret intégré dans l'épaisseur du papier, visible par transparence, est le ____.",
+        "options": [
+          "filigrane",
+          "courrier",
+          "surcharge",
+          "pince"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نقش پنهان در بافت کاغذ = filigrane."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit outil à bouts plats utilisé pour manipuler les timbres sans laisser de traces de doigts est la ____.",
+        "options": [
+          "pince",
+          "philatélie",
+          "timbre",
+          "affranchissement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار برداشتن تمبر = pince."
+      },
+      {
+        "type": "binary",
+        "question": "L'oblitération est la marque qui annule le timbre pour qu'il ne puisse pas être réutilisé.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. باطل‌کردن (oblitération) از استفاده مجدد تمبر جلوگیری می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le filigrane est une impression à l'encre noire ajoutée par-dessus le dessin du timbre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. واترمارک (filigrane) در بافت کاغذ ساخته می‌شود و فقط در برابر نور دیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La dentelure désigne les petites perforations qui séparent les timbres les uns des autres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دندانه‌ها (dentelure) سوراخ‌هایی برای جداسازی آسان تمبرها هستند."
+      },
+      {
+        "type": "binary",
+        "question": "Une surcharge est une erreur d'impression qui rend le timbre inutilisable.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. چاپ اضافه (surcharge) یک چاپ ثانویه عمدی برای تغییر قیمت یا کاربرد تمبر است."
+      },
+      {
+        "type": "binary",
+        "question": "Le collectionneur de timbres est appelé un philatéliste.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. به جمع‌آوری‌کننده تمبر، تمبرشناس (philatéliste) گفته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La pince sert à coller le timbre sur l'enveloppe sans se salir les doigts.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پنس (pince) برای برداشتن تمبرهای کلکسیونی بدون انتقال چربی دست استفاده می‌شود، نه برای چسباندن آن‌ها."
+      }
+    ]
+  }
+}
