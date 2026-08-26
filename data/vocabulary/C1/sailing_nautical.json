@@ -1,0 +1,680 @@
+{
+  "id": "sailing_nautical",
+  "level": "C1",
+  "theme": "Voile, navigation maritime et régate",
+  "theme_fa": "قایقرانی بادبانی، دریانوردی و مسابقات دریایی",
+  "icon": "⛵",
+  "inspiration": "En solitaire (Turning Tide - Christophe Offenstein, 2013)",
+  "words": [
+    {
+      "fr": "la voile",
+      "fa": "بادبان",
+      "emoji": "⛵",
+      "difficulty": 2,
+      "ex": "Hisser la voile principale demande la force de tout l'équipage.",
+      "ex_fa": "بالا کشیدن بادبان اصلی به قدرت تمام خدمه نیاز دارد."
+    },
+    {
+      "fr": "le mât",
+      "fa": "دکل",
+      "emoji": "🪵",
+      "difficulty": 3,
+      "ex": "Le mât en carbone de ce trimaran mesure plus de trente mètres.",
+      "ex_fa": "دکل کربنی این قایق سه‌بدنه بیش از سی متر ارتفاع دارد."
+    },
+    {
+      "fr": "la coque",
+      "fa": "بدنه قایق",
+      "emoji": "🛥️",
+      "difficulty": 3,
+      "ex": "La coque fend les vagues avec une résistance exceptionnelle.",
+      "ex_fa": "بدنه قایق با مقاومتی استثنایی امواج را می‌شکافد."
+    },
+    {
+      "fr": "le gouvernail",
+      "fa": "سکان",
+      "emoji": "🛟",
+      "difficulty": 4,
+      "ex": "Le safran du gouvernail permet de diriger le navire dans les tempêtes.",
+      "ex_fa": "تیغه سکان امکان هدایت کشتی در طوفان‌ها را می‌دهد."
+    },
+    {
+      "fr": "la proue",
+      "fa": "دماغه (جلوی قایق)",
+      "emoji": "🚢",
+      "difficulty": 4,
+      "ex": "Les vagues s'écrasent violemment contre la proue du bateau.",
+      "ex_fa": "امواج با شدت به دماغه قایق می‌کوبند."
+    },
+    {
+      "fr": "la poupe",
+      "fa": "پاشنه (عقب قایق)",
+      "emoji": "🔙",
+      "difficulty": 4,
+      "ex": "Le sillage blanc se forme à l'arrière, juste sous la poupe.",
+      "ex_fa": "ردپای سفید آب در عقب، درست زیر پاشنه تشکیل می‌شود."
+    },
+    {
+      "fr": "la barre",
+      "fa": "فرمان سکان",
+      "emoji": "🎡",
+      "difficulty": 3,
+      "ex": "Le skipper tient fermement la barre pour garder le cap.",
+      "ex_fa": "کاپیتان فرمان را محکم نگه می‌دارد تا مسیر را حفظ کند."
+    },
+    {
+      "fr": "le gréement",
+      "fa": "تجهیزات دکل و بادبان (ریگینگ)",
+      "emoji": "🪢",
+      "difficulty": 5,
+      "ex": "Le gréement dormant supporte les tensions énormes du mât.",
+      "ex_fa": "ریگینگ ثابت، تنش‌های عظیم دکل را تحمل می‌کند."
+    },
+    {
+      "fr": "la quille",
+      "fa": "شاه‌تیر، کیلی",
+      "emoji": "⚓",
+      "difficulty": 5,
+      "ex": "La quille profonde empêche le voilier de dériver latéralement.",
+      "ex_fa": "کیلی عمیق از حرکت عرضی و انحراف قایق بادبانی جلوگیری می‌کند."
+    },
+    {
+      "fr": "le foc",
+      "fa": "بادبان مثلثی جلو (جیب)",
+      "emoji": "🔺",
+      "difficulty": 5,
+      "ex": "Le foc s'enroule rapidement quand le vent commence à forcir.",
+      "ex_fa": "بادبان جلو زمانی که باد شروع به وزیدن می‌کند به سرعت جمع می‌شود."
+    },
+    {
+      "fr": "la grand-voile",
+      "fa": "بادبان اصلی",
+      "emoji": "🏳️",
+      "difficulty": 4,
+      "ex": "Prendre un ris dans la grand-voile réduit la surface exposée au vent.",
+      "ex_fa": "کم کردن سطح بادبان اصلی (ریس گرفتن) سطح در معرض باد را کاهش می‌دهد."
+    },
+    {
+      "fr": "le nœud",
+      "fa": "گره (و واحد سرعت دریایی)",
+      "emoji": "🪢",
+      "difficulty": 3,
+      "ex": "Le nœud de chaise est indispensable pour attacher une amarre.",
+      "ex_fa": "گره بولین (صندلی) برای بستن طناب اسکله ضروری است."
+    },
+    {
+      "fr": "la régate",
+      "fa": "مسابقه قایق‌رانی",
+      "emoji": "🏆",
+      "difficulty": 4,
+      "ex": "La régate autour du monde est l'épreuve ultime pour les marins.",
+      "ex_fa": "مسابقه قایق‌رانی به دور دنیا، آزمون نهایی برای دریانوردان است."
+    },
+    {
+      "fr": "le skipper",
+      "fa": "کاپیتان، سکان‌دار",
+      "emoji": "🧑‍✈️",
+      "difficulty": 4,
+      "ex": "Le skipper solitaire doit gérer la navigation et la météo sans dormir.",
+      "ex_fa": "کاپیتان انفرادی باید بدون خواب، دریانوردی و هواشناسی را مدیریت کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La course du Vendée Globe",
+      "text": "Yann est un {{BLANK_14}} expérimenté qui participe à une {{BLANK_13}} mythique autour du monde en solitaire. Son bateau est un chef-d'œuvre : la {{BLANK_3}} en composite est ultra-légère, et le {{BLANK_2}} en fibre de carbone domine le pont. Avant de partir, il vérifie chaque câble du {{BLANK_8}} pour éviter toute rupture. En pleine mer, il se tient à la {{BLANK_7}} pour ajuster sa route. Quand le vent se lève, il hisse la {{BLANK_11}} et déroule le {{BLANK_10}} à l'avant. Les vagues frappent la {{BLANK_5}} tandis qu'il surveille l'arrière depuis la {{BLANK_6}}. Pour ne pas dériver, la lourde {{BLANK_9}} sous l'eau assure la stabilité. Quand la tempête arrive, il fait un solide {{BLANK_12}} pour sécuriser les cordages. Il doit aussi réparer le {{BLANK_4}} bloqué qui l'empêche de tourner. Enfin, il règle sa {{BLANK_1}} pour capter la moindre brise, naviguant seul face à l'immensité de l'océan.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "voile",
+          "options": [
+            "voile",
+            "mât",
+            "coque",
+            "gouvernail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "mât",
+          "options": [
+            "mât",
+            "proue",
+            "poupe",
+            "barre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "coque",
+          "options": [
+            "coque",
+            "gréement",
+            "quille",
+            "foc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "gouvernail",
+          "options": [
+            "gouvernail",
+            "grand-voile",
+            "nœud",
+            "régate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "proue",
+          "options": [
+            "proue",
+            "skipper",
+            "voile",
+            "mât"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "poupe",
+          "options": [
+            "poupe",
+            "coque",
+            "gouvernail",
+            "proue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "barre",
+          "options": [
+            "barre",
+            "gréement",
+            "quille",
+            "foc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "gréement",
+          "options": [
+            "gréement",
+            "grand-voile",
+            "nœud",
+            "régate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "quille",
+          "options": [
+            "quille",
+            "skipper",
+            "voile",
+            "mât"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "foc",
+          "options": [
+            "foc",
+            "coque",
+            "gouvernail",
+            "proue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "grand-voile",
+          "options": [
+            "grand-voile",
+            "poupe",
+            "barre",
+            "gréement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "nœud",
+          "options": [
+            "nœud",
+            "quille",
+            "foc",
+            "grand-voile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "régate",
+          "options": [
+            "régate",
+            "skipper",
+            "voile",
+            "mât"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "skipper",
+          "options": [
+            "skipper",
+            "coque",
+            "gouvernail",
+            "proue"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'écume des jours",
+      "inspiration": "En solitaire (Christophe Offenstein, 2013)",
+      "text": "À peine Yann eut-il largué les amarres que l'horizon devint son unique patrie. Ce {{BLANK_14}} taciturne s'était engagé dans la plus cruelle des {{BLANK_13}}s, une fuite en avant contre ses propres démons. Seul sur son esquif, il sentait la {{BLANK_3}} vibrer sous ses pieds comme le ventre d'une bête vivante. Le grand {{BLANK_2}} noir grattait le ciel, soutenu par un {{BLANK_8}} d'acier qui chantait dans le vent. Quand la tempête hurlait, il s'accrochait à la {{BLANK_7}}, les yeux fixés sur la {{BLANK_5}} qui plongeait dans les murs d'eau glacée. Parfois, il se retournait vers la {{BLANK_6}} pour vérifier que le sillage ne trahissait pas sa route. Il avait dû plonger sous la {{BLANK_9}} pour dégager un filet, risquant sa vie pour sauver son {{BLANK_4}}. Dans la fureur des éléments, il enroulait le {{BLANK_10}} et prenait un ris dans la {{BLANK_11}}, attachant chaque écoute avec un {{BLANK_12}} serré par le désespoir. Hisser la {{BLANK_1}} devenait une prière, un acte de foi envers l'océan qui, dans sa clémence ou sa colère, décidait s'il reverrait un jour la terre des hommes.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "voile",
+          "options": [
+            "voile",
+            "mât",
+            "coque",
+            "gouvernail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "mât",
+          "options": [
+            "mât",
+            "proue",
+            "poupe",
+            "barre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "coque",
+          "options": [
+            "coque",
+            "gréement",
+            "quille",
+            "foc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "gouvernail",
+          "options": [
+            "gouvernail",
+            "grand-voile",
+            "nœud",
+            "régate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "proue",
+          "options": [
+            "proue",
+            "skipper",
+            "voile",
+            "mât"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "poupe",
+          "options": [
+            "poupe",
+            "coque",
+            "gouvernail",
+            "proue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "barre",
+          "options": [
+            "barre",
+            "gréement",
+            "quille",
+            "foc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "gréement",
+          "options": [
+            "gréement",
+            "grand-voile",
+            "nœud",
+            "régate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "quille",
+          "options": [
+            "quille",
+            "skipper",
+            "voile",
+            "mât"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "foc",
+          "options": [
+            "foc",
+            "coque",
+            "gouvernail",
+            "proue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "grand-voile",
+          "options": [
+            "grand-voile",
+            "poupe",
+            "barre",
+            "gréement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "nœud",
+          "options": [
+            "nœud",
+            "quille",
+            "foc",
+            "grand-voile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "régate",
+          "options": [
+            "régate",
+            "skipper",
+            "voile",
+            "mât"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "skipper",
+          "options": [
+            "skipper",
+            "coque",
+            "gouvernail",
+            "proue"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Voile et navigation",
+    "title_fa": "آزمون : قایقرانی و دریانوردی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La pièce de tissu qui capte la force du vent pour propulser le bateau est la ____.",
+        "options": [
+          "voile",
+          "mât",
+          "coque",
+          "gouvernail"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پارچه‌ای که نیروی باد را می‌گیرد = voile."
+      },
+      {
+        "type": "mcq",
+        "question": "Le grand espar vertical qui supporte les voiles et s'élève au-dessus du pont est le ____.",
+        "options": [
+          "mât",
+          "proue",
+          "poupe",
+          "barre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ستون عمودی نگهدارنده بادبان = mât."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enveloppe extérieure étanche du navire qui flotte sur l'eau est la ____.",
+        "options": [
+          "coque",
+          "gréement",
+          "quille",
+          "foc"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پوسته بیرونی و ضدآب قایق = coque."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil immergé à l'arrière qui permet d'orienter et de diriger le bateau est le ____.",
+        "options": [
+          "gouvernail",
+          "grand-voile",
+          "nœud",
+          "régate"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله هدایت و تغییر مسیر = gouvernail."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie avant du navire, conçue pour fendre les vagues, est la ____.",
+        "options": [
+          "proue",
+          "skipper",
+          "voile",
+          "mât"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش جلویی قایق = proue."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie arrière du navire où se trouve souvent le poste de pilotage est la ____.",
+        "options": [
+          "poupe",
+          "coque",
+          "gouvernail",
+          "proue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش عقبی قایق = poupe."
+      },
+      {
+        "type": "mcq",
+        "question": "Le levier ou la roue que le marin manie pour actionner le gouvernail est la ____.",
+        "options": [
+          "barre",
+          "gréement",
+          "quille",
+          "foc"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرمان کنترل سکان = barre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des câbles, cordages et espars qui soutiennent et manœuvrent le mât et les voiles est le ____.",
+        "options": [
+          "gréement",
+          "grand-voile",
+          "nœud",
+          "régate"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه کابل‌ها و طناب‌های دکل = gréement."
+      },
+      {
+        "type": "mcq",
+        "question": "L'aileron lourd et fixe situé sous la coque qui empêche le bateau de glisser latéralement est la ____.",
+        "options": [
+          "quille",
+          "skipper",
+          "voile",
+          "mât"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باله سنگین زیر قایق برای تعادل = quille."
+      },
+      {
+        "type": "mcq",
+        "question": "La voile triangulaire située à l'avant du mât principal est le ____.",
+        "options": [
+          "foc",
+          "coque",
+          "gouvernail",
+          "proue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بادبان مثلثی جلو = foc."
+      },
+      {
+        "type": "mcq",
+        "question": "La voile principale et la plus grande, hissée sur l'arrière du mât, est la ____.",
+        "options": [
+          "grand-voile",
+          "poupe",
+          "barre",
+          "gréement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بادبان اصلی و بزرگ = grand-voile."
+      },
+      {
+        "type": "mcq",
+        "question": "L'entrelacement de cordages pour les fixer, ainsi que l'unité de vitesse maritime, est le ____.",
+        "options": [
+          "nœud",
+          "quille",
+          "foc",
+          "grand-voile"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گره طناب و واحد سرعت دریایی = nœud."
+      },
+      {
+        "type": "mcq",
+        "question": "La course de vitesse entre plusieurs bateaux à voile sur un parcours délimité est la ____.",
+        "options": [
+          "régate",
+          "skipper",
+          "voile",
+          "mât"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسابقه سرعت قایق‌های بادبانی = régate."
+      },
+      {
+        "type": "mcq",
+        "question": "Le capitaine ou le pilote responsable de la conduite et de la stratégie d'un voilier est le ____.",
+        "options": [
+          "skipper",
+          "coque",
+          "gouvernail",
+          "proue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرمانده و هدایت‌گر قایق = skipper."
+      },
+      {
+        "type": "binary",
+        "question": "La quille est une voile de secours utilisée uniquement en cas de tempête.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کیلی (quille) یک قطعه سنگین در زیر بدنه قایق است که از واژگونی و انحراف عرضی جلوگیری می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le gréement désigne l'ensemble des cordages et câbles qui servent à manœuvrer les voiles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ریگینگ (gréement) شامل تمام طناب‌ها و کابل‌های کنترل بادبان و دکل است."
+      },
+      {
+        "type": "binary",
+        "question": "La proue et la poupe désignent respectivement l'arrière et l'avant du bateau.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. برعکس است: proue جلوی قایق (دماغه) و poupe عقب قایق (پاشنه) است."
+      },
+      {
+        "type": "binary",
+        "question": "Le foc est une voile d'avant, généralement triangulaire, hissée devant le mât.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بادبان جیب (foc) در جلوی دکل اصلی قرار می‌گیرد."
+      },
+      {
+        "type": "binary",
+        "question": "Le skipper est le propriétaire du port qui loue les places d'amarrage aux marins.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اسکیپر (skipper) کاپیتان و فرمانده قایق است، نه صاحب اسکله."
+      },
+      {
+        "type": "binary",
+        "question": "Une régate est une compétition sportive entre des bateaux à voile.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. رگاتا (régate) به مسابقات قایق‌رانی بادبانی گفته می‌شود."
+      }
+    ]
+  }
+}
