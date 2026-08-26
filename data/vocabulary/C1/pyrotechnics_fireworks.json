@@ -1,0 +1,680 @@
+{
+  "id": "pyrotechnics_fireworks",
+  "level": "C1",
+  "theme": "Pyrotechnie, feux d'artifice et chimie explosive",
+  "theme_fa": "آتش‌بازی، پیروتکنیک و شیمی انفجاری",
+  "icon": "🎆",
+  "inspiration": "V pour Vendetta (V for Vendetta - James McTeigue, 2005)",
+  "words": [
+    {
+      "fr": "la pyrotechnie",
+      "fa": "آتش‌بازی، پیروتکنیک",
+      "emoji": "🎆",
+      "difficulty": 5,
+      "ex": "La pyrotechnie est l'art millénaire de maîtriser le feu et les explosions.",
+      "ex_fa": "پیروتکنیک هنر هزاران ساله مهار آتش و انفجارهاست."
+    },
+    {
+      "fr": "le feu d'artifice",
+      "fa": "آتش‌بازی",
+      "emoji": "🎇",
+      "difficulty": 3,
+      "ex": "Le feu d'artifice du 14 juillet illumine le ciel de Paris.",
+      "ex_fa": "آتش‌بازی ۱۴ ژوئیه آسمان پاریس را روشن می‌کند."
+    },
+    {
+      "fr": "la poudre noire",
+      "fa": "باروت سیاه",
+      "emoji": "⚫",
+      "difficulty": 4,
+      "ex": "La poudre noire, inventée en Chine, est la base de tous les feux.",
+      "ex_fa": "باروت سیاه که در چین اختراع شد، پایه تمام آتش‌بازی‌هاست."
+    },
+    {
+      "fr": "la fusée",
+      "fa": "موشک آتش‌بازی",
+      "emoji": "🚀",
+      "difficulty": 3,
+      "ex": "La fusée monte dans le ciel avant d'exploser en mille couleurs.",
+      "ex_fa": "موشک به آسمان صعود می‌کند و سپس به هزار رنگ منفجر می‌شود."
+    },
+    {
+      "fr": "l'étincelle",
+      "fa": "جرقه",
+      "emoji": "✨",
+      "difficulty": 3,
+      "ex": "Une simple étincelle peut déclencher une réaction en chaîne.",
+      "ex_fa": "یک جرقه ساده می‌تواند واکنشی زنجیره‌ای را آغاز کند."
+    },
+    {
+      "fr": "la détonation",
+      "fa": "انفجار، دتوناسیون",
+      "emoji": "💥",
+      "difficulty": 4,
+      "ex": "La détonation résonne dans toute la vallée après l'explosion.",
+      "ex_fa": "انفجار پس از ترکش در تمام دره طنین‌انداز می‌شود."
+    },
+    {
+      "fr": "le salpêtre",
+      "fa": "شوره (نیترات پتاسیم)",
+      "emoji": "⚗️",
+      "difficulty": 5,
+      "ex": "Le salpêtre est l'oxydant principal de la poudre noire traditionnelle.",
+      "ex_fa": "شوره، اکسیدکننده اصلی باروت سیاه سنتی است."
+    },
+    {
+      "fr": "le soufre",
+      "fa": "گوگرد",
+      "emoji": "🟡",
+      "difficulty": 3,
+      "ex": "Le soufre abaisse la température d'inflammation du mélange.",
+      "ex_fa": "گوگرد دمای اشتعال مخلوط را کاهش می‌دهد."
+    },
+    {
+      "fr": "le charbon de bois",
+      "fa": "زغال چوب",
+      "emoji": "⬛",
+      "difficulty": 4,
+      "ex": "Le charbon de bois de saule offre une combustion lente et régulière.",
+      "ex_fa": "زغال چوب بید سوختنی آهسته و منظم ارائه می‌دهد."
+    },
+    {
+      "fr": "la mèche",
+      "fa": "فتیله",
+      "emoji": "🔥",
+      "difficulty": 3,
+      "ex": "L'artificier allume la mèche et se retire rapidement.",
+      "ex_fa": "آتش‌باز فتیله را روشن و به سرعت عقب می‌کشد."
+    },
+    {
+      "fr": "l'artificier",
+      "fa": "آتش‌باز، متخصص پیروتکنیک",
+      "emoji": "🧑‍🔬",
+      "difficulty": 4,
+      "ex": "L'artificier calcule avec précision le timing de chaque explosion.",
+      "ex_fa": "آتش‌باز زمان‌بندی هر انفجار را با دقت محاسبه می‌کند."
+    },
+    {
+      "fr": "le bouquet final",
+      "fa": "دسته گل پایانی (اوج نمایش)",
+      "emoji": "💐",
+      "difficulty": 4,
+      "ex": "Le bouquet final embrase le ciel de centaines de explosions simultanées.",
+      "ex_fa": "دسته گل پایانی آسمان را با صدها انفجار همزمان روشن می‌کند."
+    },
+    {
+      "fr": "la gerbe",
+      "fa": "فواره آتشین",
+      "emoji": "⛲",
+      "difficulty": 4,
+      "ex": "La gerbe dorée retombe lentement comme une pluie d'étoiles.",
+      "ex_fa": "فواره طلایی آرام مانند باران ستارگان فرو می‌ریزد."
+    },
+    {
+      "fr": "la déflagration",
+      "fa": "اشتعال سریع",
+      "emoji": "🔥",
+      "difficulty": 5,
+      "ex": "La déflagration se propage à une vitesse supersonique.",
+      "ex_fa": "اشتعال با سرعتی مافوق صوت منتشر می‌شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le dernier spectacle de Guy Fawkes",
+      "text": "Vincent est un {{BLANK_11}} passionné qui prépare le plus grand {{BLANK_2}} de l'année. Dans son atelier secret, il mélange soigneusement la {{BLANK_3}} : du {{BLANK_7}} blanc, du {{BLANK_8}} jaune et du {{BLANK_9}} noir. Chaque {{BLANK_4}} est assemblée à la main avec une précision d'horloger. Il attache une longue {{BLANK_10}} à chaque pièce pour retarder l'allumage. Quand la nuit tombe, il observe une {{BLANK_5}} jaillir de la première pièce. Soudain, une puissante {{BLANK_6}} fait trembler le sol. Les spectateurs applaudissent chaque {{BLANK_13}} lumineuse qui retombe en pluie d'or. Pour clôturer le spectacle, Vincent prépare le {{BLANK_12}} : cinquante pièces qui explosent simultanément dans une {{BLANK_14}} assourdissante. Toute sa vie, il a étudié la {{BLANK_1}}, cet art dangereux qui transforme la chimie en poésie lumineuse. Ce soir, le ciel raconte son histoire.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "pyrotechnie",
+          "options": [
+            "pyrotechnie",
+            "feu d'artifice",
+            "poudre noire",
+            "fusée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "feu d'artifice",
+          "options": [
+            "feu d'artifice",
+            "étincelle",
+            "détonation",
+            "salpêtre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "poudre noire",
+          "options": [
+            "poudre noire",
+            "soufre",
+            "charbon de bois",
+            "mèche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "fusée",
+          "options": [
+            "fusée",
+            "artificier",
+            "bouquet final",
+            "gerbe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "étincelle",
+          "options": [
+            "étincelle",
+            "déflagration",
+            "pyrotechnie",
+            "feu d'artifice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "détonation",
+          "options": [
+            "détonation",
+            "poudre noire",
+            "fusée",
+            "étincelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "salpêtre",
+          "options": [
+            "salpêtre",
+            "soufre",
+            "charbon de bois",
+            "mèche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "soufre",
+          "options": [
+            "soufre",
+            "artificier",
+            "bouquet final",
+            "gerbe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "charbon de bois",
+          "options": [
+            "charbon de bois",
+            "déflagration",
+            "pyrotechnie",
+            "feu d'artifice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "mèche",
+          "options": [
+            "mèche",
+            "poudre noire",
+            "fusée",
+            "étincelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "artificier",
+          "options": [
+            "artificier",
+            "détonation",
+            "salpêtre",
+            "soufre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "bouquet final",
+          "options": [
+            "bouquet final",
+            "charbon de bois",
+            "mèche",
+            "artificier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "gerbe",
+          "options": [
+            "gerbe",
+            "déflagration",
+            "pyrotechnie",
+            "feu d'artifice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "déflagration",
+          "options": [
+            "déflagration",
+            "poudre noire",
+            "fusée",
+            "étincelle"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La vengeance illuminée",
+      "inspiration": "V pour Vendetta (James McTeigue, 2005)",
+      "text": "À peine l'{{BLANK_11}} masqué eut-il craqué l'allumette que la nuit de Londres retint son souffle. Ce n'était pas un simple {{BLANK_2}} qu'il préparait, mais un requiem de lumière pour les opprimés. Dans les sous-sols humides, il avait broyé le {{BLANK_7}} des caves oubliées, pilé le {{BLANK_8}} volcanique et calciné le {{BLANK_9}} des forêts interdites. Cette {{BLANK_3}} maudite était son héritage, la recette ancestrale qui avait brûlé les parlements et couronné les révolutions. Chaque {{BLANK_4}} était un soldat de sa vengeance, chaque {{BLANK_10}} un fil conducteur vers l'apocalypse. La première {{BLANK_5}} jaillit comme un cri, suivie d'une {{BLANK_6}} qui fit trembler les fondations du pouvoir. Dans le ciel noir, chaque {{BLANK_13}} retombait en larmes dorées sur la ville endormie. Il savait que le {{BLANK_12}} ne serait pas un simple feu, mais une {{BLANK_14}} libératrice qui graverait dans la mémoire collective l'image de la résistance. Toute sa vie, il avait maîtrisé la {{BLANK_1}}, cet art dangereux qui transforme la colère en étoiles. Ce soir, la chimie devenait justice, et la poudre, une prière explosive.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "pyrotechnie",
+          "options": [
+            "pyrotechnie",
+            "feu d'artifice",
+            "poudre noire",
+            "fusée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "feu d'artifice",
+          "options": [
+            "feu d'artifice",
+            "étincelle",
+            "détonation",
+            "salpêtre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "poudre noire",
+          "options": [
+            "poudre noire",
+            "soufre",
+            "charbon de bois",
+            "mèche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "fusée",
+          "options": [
+            "fusée",
+            "artificier",
+            "bouquet final",
+            "gerbe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "étincelle",
+          "options": [
+            "étincelle",
+            "déflagration",
+            "pyrotechnie",
+            "feu d'artifice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "détonation",
+          "options": [
+            "détonation",
+            "poudre noire",
+            "fusée",
+            "étincelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "salpêtre",
+          "options": [
+            "salpêtre",
+            "soufre",
+            "charbon de bois",
+            "mèche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "soufre",
+          "options": [
+            "soufre",
+            "artificier",
+            "bouquet final",
+            "gerbe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "charbon de bois",
+          "options": [
+            "charbon de bois",
+            "déflagration",
+            "pyrotechnie",
+            "feu d'artifice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "mèche",
+          "options": [
+            "mèche",
+            "poudre noire",
+            "fusée",
+            "étincelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "artificier",
+          "options": [
+            "artificier",
+            "détonation",
+            "salpêtre",
+            "soufre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "bouquet final",
+          "options": [
+            "bouquet final",
+            "charbon de bois",
+            "mèche",
+            "artificier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "gerbe",
+          "options": [
+            "gerbe",
+            "déflagration",
+            "pyrotechnie",
+            "feu d'artifice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "déflagration",
+          "options": [
+            "déflagration",
+            "poudre noire",
+            "fusée",
+            "étincelle"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Pyrotechnie et feux d'artifice",
+    "title_fa": "آزمون : پیروتکنیک و آتش‌بازی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art et la science de concevoir et fabriquer des pièces explosives et des spectacles pyrotechniques est la ____.",
+        "options": [
+          "pyrotechnie",
+          "feu d'artifice",
+          "poudre noire",
+          "fusée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر و علم ساخت مواد منفجره و نمایش‌های آتشین = pyrotechnie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le spectacle composé d'explosions colorées et synchronisées dans le ciel est le ____.",
+        "options": [
+          "feu d'artifice",
+          "étincelle",
+          "détonation",
+          "salpêtre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نمایش انفجارهای رنگی هماهنگ در آسمان = feu d'artifice."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mélange explosif historique composé de salpêtre, soufre et charbon de bois est la ____.",
+        "options": [
+          "poudre noire",
+          "soufre",
+          "charbon de bois",
+          "mèche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مخلوط انفجاری تاریخی = poudre noire."
+      },
+      {
+        "type": "mcq",
+        "question": "Le projectile propulsé dans les airs qui explose en hauteur pour créer des figures lumineuses est la ____.",
+        "options": [
+          "fusée",
+          "artificier",
+          "bouquet final",
+          "gerbe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پرتابه‌ای که در آسمان منفجر می‌شود = fusée."
+      },
+      {
+        "type": "mcq",
+        "question": "La petite particule incandescente qui peut initier une combustion est l'____.",
+        "options": [
+          "étincelle",
+          "déflagration",
+          "pyrotechnie",
+          "feu d'artifice"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ذره سوزان آغازگر اشتعال = étincelle."
+      },
+      {
+        "type": "mcq",
+        "question": "L'explosion brutale et soudaine produisant une onde de choc puissante est la ____.",
+        "options": [
+          "détonation",
+          "poudre noire",
+          "fusée",
+          "étincelle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انفجار ناگهانی با موج شوک = détonation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le nitrate de potassium, composant oxydant essentiel de la poudre noire, est le ____.",
+        "options": [
+          "salpêtre",
+          "soufre",
+          "charbon de bois",
+          "mèche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نیترات پتاسیم، اکسیدکننده باروت = salpêtre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'élément chimique jaune, combustible, qui abaisse la température d'inflammation est le ____.",
+        "options": [
+          "soufre",
+          "artificier",
+          "bouquet final",
+          "gerbe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عنصر زرد قابل اشتعال = soufre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le résidu carboné issu de la pyrolyse du bois, servant de combustible dans la poudre, est le ____.",
+        "options": [
+          "charbon de bois",
+          "déflagration",
+          "pyrotechnie",
+          "feu d'artifice"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باقیمانده کربنی چوب = charbon de bois."
+      },
+      {
+        "type": "mcq",
+        "question": "Le cordon combustible qui transmet le feu à distance pour déclencher une explosion est la ____.",
+        "options": [
+          "mèche",
+          "poudre noire",
+          "fusée",
+          "étincelle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طناب قابل اشتعال برای انتقال آتش = mèche."
+      },
+      {
+        "type": "mcq",
+        "question": "Le spécialiste qui conçoit, fabrique et met en œuvre les pièces pyrotechniques est l'____.",
+        "options": [
+          "artificier",
+          "détonation",
+          "salpêtre",
+          "soufre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص طراحی و اجرای آتش‌بازی = artificier."
+      },
+      {
+        "type": "mcq",
+        "question": "L'apothéose finale d'un spectacle, avec des centaines d'explosions simultanées, est le ____.",
+        "options": [
+          "bouquet final",
+          "charbon de bois",
+          "mèche",
+          "artificier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اوج پایانی نمایش با انفجارهای همزمان = bouquet final."
+      },
+      {
+        "type": "mcq",
+        "question": "Le jet vertical de particules incandescentes qui retombe en pluie lumineuse est la ____.",
+        "options": [
+          "gerbe",
+          "déflagration",
+          "pyrotechnie",
+          "feu d'artifice"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فواره عمودی ذرات سوزان = gerbe."
+      },
+      {
+        "type": "mcq",
+        "question": "La combustion extrêmement rapide qui se propage à une vitesse supersonique est la ____.",
+        "options": [
+          "déflagration",
+          "poudre noire",
+          "fusée",
+          "étincelle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "احتراق بسیار سریع مافوق صوت = déflagration."
+      },
+      {
+        "type": "binary",
+        "question": "La poudre noire est composée de trois ingrédients : le salpêtre, le soufre et le charbon de bois.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. باروت سیاه از سه جزء تشکیل شده است: شوره، گوگرد و زغال چوب."
+      },
+      {
+        "type": "binary",
+        "question": "Le salpêtre est un métal précieux utilisé pour colorer les feux d'artifice en rouge.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. شوره (salpêtre) نیترات پتاسیم است که نقش اکسیدکننده دارد، نه رنگ‌دهنده."
+      },
+      {
+        "type": "binary",
+        "question": "L'artificier est le professionnel qui conçoit et déclenche les spectacles pyrotechniques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. آتش‌باز (artificier) متخصص طراحی و اجرای نمایش‌های آتشین است."
+      },
+      {
+        "type": "binary",
+        "question": "La mèche est un dispositif électronique qui programme le timing des explosions.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. فتیله (mèche) طناب قابل اشتعالی است که آتش را منتقل می‌کند، نه یک دستگاه الکترونیکی."
+      },
+      {
+        "type": "binary",
+        "question": "Le bouquet final désigne l'apothéose d'un spectacle, avec de nombreuses explosions simultanées.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دسته گل پایانی (bouquet final) اوج نمایش با انفجارهای متعدد همزمان است."
+      },
+      {
+        "type": "binary",
+        "question": "La déflagration est une combustion lente qui produit beaucoup de fumée mais peu de chaleur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. دتوناسیون (déflagration) احتراق بسیار سریع و شدید با موج شوک است."
+      }
+    ]
+  }
+}
