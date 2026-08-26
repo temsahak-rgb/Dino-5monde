@@ -1,0 +1,682 @@
+{
+  "id": "chocolate_pastry_gastronomy",
+  "level": "C1",
+  "theme": "Chocolaterie, pâtisserie et gastronomie sucrée",
+  "theme_fa": "شکلات‌سازی، قنادی و gastronomie شیرین",
+  "icon": "🍫",
+  "inspiration": "Chocolat (Lasse Hallström, 2000)",
+  "words": [
+    {
+      "fr": "la fève de cacao",
+      "fa": "دانه کاکائو",
+      "emoji": "🌰",
+      "difficulty": 4,
+      "ex": "La torréfaction de la fève de cacao développe ses arômes.",
+      "ex_fa": "برشته‌کاری دانه کاکائو عطر آن را آزاد می‌کند."
+    },
+    {
+      "fr": "le praliné",
+      "fa": "پرالینه (مغز کاراملی)",
+      "emoji": "🥜",
+      "difficulty": 5,
+      "ex": "Ce chocolat fourré contient un praliné aux noisettes.",
+      "ex_fa": "این شکلات مغزدار حاوی پرالینه فندق است."
+    },
+    {
+      "fr": "la ganache",
+      "fa": "گانش (کرم شکلات و خامه)",
+      "emoji": "🍫",
+      "difficulty": 5,
+      "ex": "La ganache montée est utilisée pour garnir les macarons.",
+      "ex_fa": "گانش فرم‌گرفته برای پر کردن ماکارون استفاده می‌شود."
+    },
+    {
+      "fr": "le tempérage",
+      "fa": "تمپر کردن (تنظیم دمای شکلات)",
+      "emoji": "🌡️",
+      "difficulty": 5,
+      "ex": "Le tempérage donne au chocolat son aspect brillant et cassant.",
+      "ex_fa": "تمپر کردن به شکلات ظاهری براق و شکننده می‌دهد."
+    },
+    {
+      "fr": "le tour de main",
+      "fa": "فوت کوزه‌گری، مهارت دستی",
+      "emoji": "🤲",
+      "difficulty": 4,
+      "ex": "Ce gâteau exige un tour de main que seuls les maîtres possèdent.",
+      "ex_fa": "این کیک به فوت کوزه‌گری‌ای نیاز دارد که فقط استادان دارند."
+    },
+    {
+      "fr": "la viennoiserie",
+      "fa": "شیرینی‌های صبحانه (مثل کروسان)",
+      "emoji": "🥐",
+      "difficulty": 4,
+      "ex": "Le croissant est la viennoiserie la plus célèbre de France.",
+      "ex_fa": "کروسان مشهورترین شیرینی صبحانه فرانسه است."
+    },
+    {
+      "fr": "le feuilletage",
+      "fa": "لایه‌لایه کردن خمیر",
+      "emoji": "📜",
+      "difficulty": 5,
+      "ex": "Le feuilletage inversé donne une pâte plus légère et croustillante.",
+      "ex_fa": "لایه‌لایه کردن معکوس، خمیری سبک‌تر و تردتر می‌دهد."
+    },
+    {
+      "fr": "le confiseur",
+      "fa": "شیرینی‌پز، آبنبات‌ساز",
+      "emoji": "🍬",
+      "difficulty": 4,
+      "ex": "Le confiseur prépare des caramels et des nougats artisanaux.",
+      "ex_fa": "شیرینی‌پز، کارامل و گزهای دستی تهیه می‌کند."
+    },
+    {
+      "fr": "la truffe",
+      "fa": "ترافل شکلاتی",
+      "emoji": "🍄",
+      "difficulty": 4,
+      "ex": "Cette truffe au champagne fond littéralement en bouche.",
+      "ex_fa": "این ترافل شامپاینی واقعاً در دهان آب می‌شود."
+    },
+    {
+      "fr": "le nappage",
+      "fa": "روکش، کاور کردن",
+      "emoji": "🍯",
+      "difficulty": 4,
+      "ex": "Le nappage au chocolat doit être lisse et sans bulles.",
+      "ex_fa": "روکش شکلاتی باید صاف و بدون حباب باشد."
+    },
+    {
+      "fr": "la caramélisation",
+      "fa": "کاراملی کردن",
+      "emoji": "🔥",
+      "difficulty": 4,
+      "ex": "La caramélisation des sucres naturels donne une couleur ambrée.",
+      "ex_fa": "کاراملی کردن قندهای طبیعی رنگ کهربایی می‌دهد."
+    },
+    {
+      "fr": "le pétrissage",
+      "fa": "ورز دادن خمیر",
+      "emoji": "👐",
+      "difficulty": 4,
+      "ex": "Le pétrissage développe le réseau glutineux de la pâte.",
+      "ex_fa": "ورز دادن، شبکه گلوتنی خمیر را توسعه می‌دهد."
+    },
+    {
+      "fr": "la levure",
+      "fa": "خمیرمایه",
+      "emoji": "🦠",
+      "difficulty": 3,
+      "ex": "La levure boulangère fait gonfler la pâte à pain.",
+      "ex_fa": "خمیرمایه نانوایی باعث پف کردن خمیر نان می‌شود."
+    },
+    {
+      "fr": "l'onctuosité",
+      "fa": "نرمی و لطافت بافت",
+      "emoji": "☁️",
+      "difficulty": 5,
+      "ex": "L'onctuosité de cette crème dessert est remarquable.",
+      "ex_fa": "لطافت بافت این دسر کرمی قابل توجه است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La chocolaterie de Vianne",
+      "title_fa": "شکلات‌فروشی ویان",
+      "text": "Vianne Rocher ouvre une petite boutique dans un village français. Chaque matin, elle torréfie la {{BLANK_1}} pour en extraire les arômes profonds. Pour ses bonbons, elle prépare une {{BLANK_2}} soyeuse en mélangeant du chocolat noir et de la crème chaude. Elle roule ensuite chaque {{BLANK_3}} à la main dans la poudre de cacao amer. Le secret de ses tablettes brillantes réside dans le {{BLANK_4}}, une technique précise de contrôle de la température. Créer ces merveilles exige un véritable {{BLANK_5}} que Vianne a hérité de ses ancêtres mayas. Pour le petit-déjeuner, elle propose aussi une {{BLANK_6}} chaude et beurrée. La préparation commence par l'ajout de {{BLANK_7}} et un long {{BLANK_8}} pour rendre la pâte élastique. Ensuite, le {{BLANK_9}} permet d'emprisonner le beurre en de fines couches croustillantes. Quand elle cuisine des noix, la {{BLANK_10}} leur donne une belle couleur dorée et un goût intense. Elle les broie ensuite pour obtenir un {{BLANK_11}} fondant qu'elle insère dans ses chocolats. En tant que {{BLANK_12}} passionnée, elle crée aussi des sucres d'orge et des guimauves. Avant de servir ses entremets, elle applique un {{BLANK_13}} miroir parfait sur le dessus. C'est finalement l'{{BLANK_14}} de ses crèmes qui conquiert le cœur des villageois les plus sévères.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "fève de cacao",
+          "options": [
+            "fève de cacao",
+            "ganache",
+            "truffe",
+            "levure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ganache",
+          "options": [
+            "ganache",
+            "viennoiserie",
+            "caramélisation",
+            "onctuosité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "truffe",
+          "options": [
+            "truffe",
+            "praliné",
+            "nappage",
+            "fève de cacao"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tempérage",
+          "options": [
+            "tempérage",
+            "feuilletage",
+            "pétrissage",
+            "tour de main"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "tour de main",
+          "options": [
+            "tour de main",
+            "confiseur",
+            "tempérage",
+            "nappage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "viennoiserie",
+          "options": [
+            "viennoiserie",
+            "truffe",
+            "ganache",
+            "onctuosité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "levure",
+          "options": [
+            "levure",
+            "fève de cacao",
+            "caramélisation",
+            "praliné"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "pétrissage",
+          "options": [
+            "pétrissage",
+            "tempérage",
+            "feuilletage",
+            "nappage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "feuilletage",
+          "options": [
+            "feuilletage",
+            "pétrissage",
+            "tempérage",
+            "tour de main"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "caramélisation",
+          "options": [
+            "caramélisation",
+            "onctuosité",
+            "levure",
+            "ganache"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "praliné",
+          "options": [
+            "praliné",
+            "nappage",
+            "truffe",
+            "fève de cacao"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "confiseur",
+          "options": [
+            "confiseur",
+            "tour de main",
+            "tempérage",
+            "feuilletage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "nappage",
+          "options": [
+            "nappage",
+            "praliné",
+            "pétrissage",
+            "caramélisation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "onctuosité",
+          "options": [
+            "onctuosité",
+            "levure",
+            "viennoiserie",
+            "truffe"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'alchimie brune",
+      "title_fa": "کیمیای قهوه‌ای",
+      "inspiration": "Chocolat (Lasse Hallström, 2000)",
+      "text": "À peine Vianne Rocher eut-elle poussé la lourde porte en bois de sa boutique que l'arôme enivrant du chocolat l'enveloppa comme une étreinte. Dans ce village français figé dans ses certitudes, elle allait semer le chaos par la douceur. Sur le marbre froid, elle concassait la {{BLANK_1}} venue des Amériques, transformant l'amertume brute en une {{BLANK_2}} soyeuse qui fondait sur la langue. Ses mains dansaient, exécutant un {{BLANK_3}} hérité des anciens Mayas, une alchimie secrète qui changeait le plomb en or noir. Elle surveillait le {{BLANK_4}} avec la précision d'un orfèvre, car c'était cette courbe de température qui offrait à la matière son craquant et son éclat. Pour les matins brumeux, elle préparait la {{BLANK_5}}, laissant la {{BLANK_6}} gonfler la pâte pendant le long {{BLANK_7}}, avant de réaliser un {{BLANK_8}} délicat qui emprisonnait le beurre dans mille feuilles croustillantes. Quand le sucre fondait dans la poêle, la {{BLANK_9}} offrait ses notes ambrées qu'elle intégrait dans un {{BLANK_10}} fondant aux noisettes. Le {{BLANK_11}} qu'elle était devenu roulait chaque {{BLANK_12}} dans la poudre fine, avant de réaliser un {{BLANK_13}} miroir sur ses gâteaux d'apparat. C'était l'{{BLANK_14}} de ses créations qui désarmait les cœurs les plus endurcis, prouvant que la vraie magie ne résidait pas dans les miracles, mais dans la gourmandise partagée.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "fève de cacao",
+          "options": [
+            "fève de cacao",
+            "ganache",
+            "truffe",
+            "levure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ganache",
+          "options": [
+            "ganache",
+            "viennoiserie",
+            "caramélisation",
+            "onctuosité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tour de main",
+          "options": [
+            "tour de main",
+            "confiseur",
+            "tempérage",
+            "nappage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tempérage",
+          "options": [
+            "tempérage",
+            "feuilletage",
+            "pétrissage",
+            "tour de main"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "viennoiserie",
+          "options": [
+            "viennoiserie",
+            "truffe",
+            "ganache",
+            "onctuosité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "levure",
+          "options": [
+            "levure",
+            "fève de cacao",
+            "caramélisation",
+            "praliné"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pétrissage",
+          "options": [
+            "pétrissage",
+            "tempérage",
+            "feuilletage",
+            "nappage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "feuilletage",
+          "options": [
+            "feuilletage",
+            "pétrissage",
+            "tempérage",
+            "tour de main"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "caramélisation",
+          "options": [
+            "caramélisation",
+            "onctuosité",
+            "levure",
+            "ganache"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "praliné",
+          "options": [
+            "praliné",
+            "nappage",
+            "truffe",
+            "fève de cacao"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "confiseur",
+          "options": [
+            "confiseur",
+            "tour de main",
+            "tempérage",
+            "feuilletage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "truffe",
+          "options": [
+            "truffe",
+            "praliné",
+            "nappage",
+            "fève de cacao"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "nappage",
+          "options": [
+            "nappage",
+            "praliné",
+            "pétrissage",
+            "caramélisation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "onctuosité",
+          "options": [
+            "onctuosité",
+            "levure",
+            "viennoiserie",
+            "truffe"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Chocolaterie et pâtisserie",
+    "title_fa": "آزمون : شکلات‌سازی و قنادی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La graine issue du cacaoyer, qui est torréfiée puis broyée pour obtenir la pâte de base du chocolat, est la ____.",
+        "options": [
+          "fève de cacao",
+          "ganache",
+          "truffe",
+          "levure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دانه درخت کاکائو = fève de cacao."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette préparation crémeuse et riche, obtenue en versant de la crème chaude sur du chocolat haché, est la ____.",
+        "options": [
+          "ganache",
+          "viennoiserie",
+          "caramélisation",
+          "onctuosité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کرم حاصل از ترکیب خامه گرم و شکلات = ganache."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette confiserie ronde et fondante, enrobée de poudre de cacao et souvent parfumée à l'alcool, est la ____.",
+        "options": [
+          "truffe",
+          "praliné",
+          "nappage",
+          "fève de cacao"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیرینی گرد و نرم پوشیده از پودر کاکائو = truffe."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus thermique qui consiste à chauffer, refroidir et réchauffer le chocolat pour lui donner un aspect brillant et un cassant net est le ____.",
+        "options": [
+          "tempérage",
+          "feuilletage",
+          "pétrissage",
+          "tour de main"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تنظیم دقیق دمای شکلات برای براق شدن = tempérage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'expression qui désigne le savoir-faire pratique, l'habileté manuelle et les secrets du métier acquis par l'expérience est le ____.",
+        "options": [
+          "tour de main",
+          "confiseur",
+          "tempérage",
+          "nappage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مهارت دستی و فوت کوزه‌گری = tour de main."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette catégorie de produits de boulangerie sucrés, préparés avec une pâte levée et feuilletée (comme le croissant), est la ____.",
+        "options": [
+          "viennoiserie",
+          "truffe",
+          "ganache",
+          "onctuosité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیرینی‌های صبحانه مانند کروسان = viennoiserie."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique qui consiste à emprisonner du beurre dans une pâte et à la plier plusieurs fois pour créer de fines couches est le ____.",
+        "options": [
+          "feuilletage",
+          "pétrissage",
+          "tempérage",
+          "tour de main"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لایه‌لایه کردن خمیر با کره = feuilletage."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce professionnel spécialisé dans la fabrication de bonbons, de caramels et de sucreries artisanales est le ____.",
+        "options": [
+          "confiseur",
+          "tour de main",
+          "tempérage",
+          "feuilletage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص تهیه آبنبات و شیرینی‌های قندی = confiseur."
+      },
+      {
+        "type": "mcq",
+        "question": "La réaction chimique qui brunit les sucres sous l'effet de la chaleur, développant des arômes complexes, est la ____.",
+        "options": [
+          "caramélisation",
+          "onctuosité",
+          "levure",
+          "ganache"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واکنش قهوه‌ای شدن قند در اثر حرارت = caramélisation."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette pâte sucrée et fondante à base de fruits secs torréfiés (amandes, noisettes) et de caramel est le ____.",
+        "options": [
+          "praliné",
+          "nappage",
+          "truffe",
+          "fève de cacao"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خمیر شیرین حاصل از مغزیجات کاراملی = praliné."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de travailler vigoureusement une pâte à la main ou au robot pour la rendre homogène et élastique est le ____.",
+        "options": [
+          "pétrissage",
+          "tempérage",
+          "feuilletage",
+          "nappage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورز دادن خمیر = pétrissage."
+      },
+      {
+        "type": "mcq",
+        "question": "La couche brillante de chocolat, de sucre ou de gelée qu'on applique sur un gâteau pour le décorer et le protéger est le ____.",
+        "options": [
+          "nappage",
+          "praliné",
+          "pétrissage",
+          "caramélisation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لایه براق روکش روی کیک = nappage."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce micro-organisme unicellulaire qui fermente les sucres et produit du gaz carbonique pour faire lever les pâtes est la ____.",
+        "options": [
+          "levure",
+          "fève de cacao",
+          "caramélisation",
+          "praliné"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "میکروارگانیسم پف‌دهنده خمیر = levure."
+      },
+      {
+        "type": "mcq",
+        "question": "La qualité tactile et gustative d'un aliment qui est doux, velouté et fondant en bouche est l'____.",
+        "options": [
+          "onctuosité",
+          "levure",
+          "viennoiserie",
+          "truffe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حس نرمی و لطافت بافت در دهان = onctuosité."
+      },
+      {
+        "type": "binary",
+        "question": "Le tempérage du chocolat est une étape optionnelle qui n'influence pas l'aspect visuel final du produit.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تمپر کردن برای ایجاد ظاهر براق و بافت شکننده شکلات کاملاً ضروری است."
+      },
+      {
+        "type": "binary",
+        "question": "La viennoiserie se distingue de la pâtisserie traditionnelle par l'utilisation de pâtes levées, souvent feuilletées.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. viennoiserie شامل خمیرهای ورآمده و لایه‌لایه مانند کروسان است."
+      },
+      {
+        "type": "binary",
+        "question": "Le feuilletage consiste à mélanger tous les ingrédients d'un gâteau dans un mixeur pour obtenir une crème lisse.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. feuilletage به معنای لایه‌لایه کردن خمیر و کره است، نه مخلوط کردن."
+      },
+      {
+        "type": "binary",
+        "question": "La caramélisation peut se produire naturellement avec les sucres présents dans les fruits ou les légumes lors de la cuisson.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. قندهای طبیعی میوه و سبزیجات نیز در اثر حرارت کاراملی می‌شوند."
+      },
+      {
+        "type": "binary",
+        "question": "Le confiseur et le boulanger exercent exactement le même métier et préparent les mêmes produits.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. boulanger نان و خمیرهای پایه می‌پزد، اما confiseur روی آبنبات، شکلات و شیرینی‌های قندی تمرکز دارد."
+      },
+      {
+        "type": "binary",
+        "question": "L'onctuosité d'une crème dessert est généralement obtenue grâce à la présence de matières grasses et à une cuisson douce.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. چربی و پخت آرام باعث ایجاد بافت نرم و لطیف (onctuosité) می‌شود."
+      }
+    ]
+  }
+}
