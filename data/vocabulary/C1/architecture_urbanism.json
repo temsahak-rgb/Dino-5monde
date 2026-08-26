@@ -1,0 +1,684 @@
+{
+  "id": "architecture_urbanism",
+  "level": "C1",
+  "theme": "Architecture, urbanisme et espaces",
+  "theme_fa": "معماری، شهرسازی و فضاها",
+  "icon": "🏙️",
+  "inspiration": "Blade Runner 2049 (Denis Villeneuve, 2017)",
+  "words": [
+    {
+      "fr": "le gratte-ciel",
+      "fa": "آسمان‌خراش",
+      "emoji": "🏢",
+      "difficulty": 3,
+      "ex": "Le nouveau gratte-ciel domine l'horizon de la ville.",
+      "ex_fa": "آسمان‌خراش جدید بر افق شهر تسلط دارد."
+    },
+    {
+      "fr": "l'urbanisme",
+      "fa": "شهرسازی",
+      "emoji": "🏗️",
+      "difficulty": 4,
+      "ex": "L'urbanisme moderne cherche à intégrer plus d'espaces verts.",
+      "ex_fa": "شهرسازی مدرن به دنبال ادغام فضاهای سبز بیشتر است."
+    },
+    {
+      "fr": "la métropole",
+      "fa": "کلان‌شهر",
+      "emoji": "🌆",
+      "difficulty": 4,
+      "ex": "La métropole attire des millions de travailleurs chaque jour.",
+      "ex_fa": "کلان‌شهر هر روز میلیون‌ها کارگر را جذب می‌کند."
+    },
+    {
+      "fr": "le béton",
+      "fa": "بتن",
+      "emoji": "🧱",
+      "difficulty": 3,
+      "ex": "Les murs en béton brut donnent un aspect froid au bâtiment.",
+      "ex_fa": "دیوارهای بتن اکسپوز ظاهری سرد به ساختمان می‌دهند."
+    },
+    {
+      "fr": "la façade",
+      "fa": "نمای ساختمان",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "La façade de l'immeuble a été restaurée avec soin.",
+      "ex_fa": "نمای ساختمان با دقت بازسازی شد."
+    },
+    {
+      "fr": "l'infrastructure",
+      "fa": "زیرساخت",
+      "emoji": "🌉",
+      "difficulty": 4,
+      "ex": "Les investissements dans l'infrastructure routière sont urgents.",
+      "ex_fa": "سرمایه‌گذاری در زیرساخت جاده‌ای فوری است."
+    },
+    {
+      "fr": "la gentrification",
+      "fa": "اعیانی‌سازی (تغییر بافت محلات به نفع ثروتمندان)",
+      "emoji": "💸",
+      "difficulty": 5,
+      "ex": "La gentrification de ce quartier a chassé les habitants historiques.",
+      "ex_fa": "اعیانی‌سازی این محله، ساکنان قدیمی را فراری داد."
+    },
+    {
+      "fr": "le bidonville",
+      "fa": "محله زاغه‌نشین، حلبی‌آباد",
+      "emoji": "🛖",
+      "difficulty": 4,
+      "ex": "Le bidonville s'étend à perte de vue en périphérie de la capitale.",
+      "ex_fa": "حلبی‌آباد تا بی‌نهایت در حومه پایتخت گسترده است."
+    },
+    {
+      "fr": "l'utopie",
+      "fa": "آرمان‌شهر",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "Le Corbusier rêvait d'une utopie architecturale pour les villes.",
+      "ex_fa": "لوکوربوزیه رویای یک آرمان‌شهر معماری برای شهرها را داشت."
+    },
+    {
+      "fr": "la dystopie",
+      "fa": "ویران‌شهر، پادآرمان‌شهر",
+      "emoji": "🌫️",
+      "difficulty": 4,
+      "ex": "Ce film de science-fiction dépeint une dystopie urbaine effrayante.",
+      "ex_fa": "این فیلم علمی-تخیلی یک ویران‌شهر شهری ترسناک را به تصویر می‌کشد."
+    },
+    {
+      "fr": "le brutalisme",
+      "fa": "سبک بروتالیسم (معماری خشن بتنی)",
+      "emoji": "🏢",
+      "difficulty": 5,
+      "ex": "Le brutalisme des années 70 est aujourd'hui réhabilité par les critiques.",
+      "ex_fa": "سبک بروتالیسم دهه ۷۰ امروزه توسط منتقدان بازسازی اعتبار شده است."
+    },
+    {
+      "fr": "l'édifice",
+      "fa": "بنای عظیم، ساختمان بزرگ",
+      "emoji": "🏰",
+      "difficulty": 4,
+      "ex": "Cet édifice religieux date du XIIe siècle.",
+      "ex_fa": "این بنای عظیم مذهبی متعلق به قرن دوازدهم است."
+    },
+    {
+      "fr": "la charpente",
+      "fa": "اسکلت ساختمان، چارچوب",
+      "emoji": "🪵",
+      "difficulty": 4,
+      "ex": "La charpente métallique soutient l'immense toit de la gare.",
+      "ex_fa": "اسکلت فلزی، سقف عظیم ایستگاه را نگه می‌دارد."
+    },
+    {
+      "fr": "la périphérie",
+      "fa": "حومه شهر",
+      "emoji": "🛣️",
+      "difficulty": 3,
+      "ex": "Beaucoup de familles s'installent en périphérie pour avoir un jardin.",
+      "ex_fa": "بسیاری از خانواده‌ها برای داشتن حیاط در حومه شهر ساکن می‌شوند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le projet urbain",
+      "title_fa": "پروژه شهری",
+      "text": "L'architecte Elena travaille sur un nouveau plan d'{{BLANK_1}} pour la {{BLANK_2}}. Son objectif est de construire un immense {{BLANK_3}} écologique au centre-ville. Cependant, elle doit faire face à plusieurs défis. D'abord, le coût du {{BLANK_4}} et de l'acier a explosé. Ensuite, la {{BLANK_5}} du bâtiment doit respecter le style historique du quartier. De plus, l'{{BLANK_6}} locale est vétuste et doit être entièrement remplacée. Elena s'inquiète aussi de la {{BLANK_7}} qui menace les quartiers populaires voisins. Si les loyers augmentent, les pauvres seront repoussés vers un {{BLANK_8}} informel en {{BLANK_9}}. Elle rêve de créer une {{BLANK_10}} où toutes les classes sociales cohabitent harmonieusement, et non une {{BLANK_11}} froide et inégalitaire. Pour le musée d'art moderne, elle choisit le style du {{BLANK_12}}, avec ses formes géométriques massives et brutes. Cet {{BLANK_13}} imposant reposera sur une {{BLANK_14}} en acier visible de l'extérieur, symbolisant la force et la transparence de l'institution.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "urbanisme",
+          "options": [
+            "urbanisme",
+            "brutalisme",
+            "dystopie",
+            "gentrification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "métropole",
+          "options": [
+            "métropole",
+            "périphérie",
+            "utopie",
+            "façade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "gratte-ciel",
+          "options": [
+            "gratte-ciel",
+            "bidonville",
+            "édifice",
+            "béton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "béton",
+          "options": [
+            "béton",
+            "charpente",
+            "urbanisme",
+            "gratte-ciel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "façade",
+          "options": [
+            "façade",
+            "infrastructure",
+            "charpente",
+            "métropole"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "infrastructure",
+          "options": [
+            "infrastructure",
+            "gentrification",
+            "utopie",
+            "façade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "gentrification",
+          "options": [
+            "gentrification",
+            "dystopie",
+            "brutalisme",
+            "périphérie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "bidonville",
+          "options": [
+            "bidonville",
+            "gratte-ciel",
+            "édifice",
+            "urbanisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "périphérie",
+          "options": [
+            "périphérie",
+            "métropole",
+            "façade",
+            "utopie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "utopie",
+          "options": [
+            "utopie",
+            "dystopie",
+            "gentrification",
+            "infrastructure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "dystopie",
+          "options": [
+            "dystopie",
+            "utopie",
+            "brutalisme",
+            "charpente"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "brutalisme",
+          "options": [
+            "brutalisme",
+            "urbanisme",
+            "gentrification",
+            "bidonville"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "édifice",
+          "options": [
+            "édifice",
+            "gratte-ciel",
+            "bidonville",
+            "béton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "charpente",
+          "options": [
+            "charpente",
+            "façade",
+            "infrastructure",
+            "périphérie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les larmes de la mégalopole",
+      "title_fa": "اشک‌های کلان‌شهر",
+      "inspiration": "Blade Runner 2049 (Denis Villeneuve, 2017)",
+      "text": "À peine l'aérocab eut-il franchi la couche de smog orangé que l'agent K contempla la {{BLANK_1}} tentaculaire qui s'étendait sous ses pieds. Los Angeles n'était plus une ville, c'était un organisme malade, une machine à broyer les âmes où chaque {{BLANK_2}} perçait les nuages toxiques comme une lame de fond. L'{{BLANK_3}} de cette époque semblait n'avoir eu d'autre but que d'entasser les humains dans des cages de verre et d'acier. K observa les tours massives du centre-ville, véritables forteresses de {{BLANK_4}} armé, où les élites vivaient coupées du monde, tandis que leur {{BLANK_5}} immaculée réfléchissait les néons publicitaires aveuglants. En bas, dans les profondeurs, l'{{BLANK_6}} était défaillante : les ponts s'effondraient, les égouts débordaient, et les transports en commun n'étaient plus qu'un souvenir lointain. L'agent survola les quartiers abandonnés. Ici, nulle {{BLANK_7}} ne viendrait sauver les rues. Les anciens habitants avaient fui, repoussés toujours plus loin vers une {{BLANK_8}} hostile et radioactive, ou avaient fini par s'entasser dans un immense {{BLANK_9}} de tôle et de plastique, véritable cicatrice à flanc de colline. Ce monde n'avait rien d'une {{BLANK_10}} lumineuse imaginée par les architectes du siècle passé. C'était une {{BLANK_11}} pure, froide et implacable, où la technologie n'avait servi qu'à asservir davantage. K posa son appareil sur le toit d'un ancien parking. Il devait rencontrer un indicateur près d'un vieil {{BLANK_12}} administratif, une relique du XXe siècle construite dans le plus pur style du {{BLANK_13}}, avec ses blocs de ciment brut et ses angles agressifs. La pluie acide commença à tomber, ruisselant sur la {{BLANK_14}} métallique apparente du bâtiment, gémissant sous le poids d'un ciel qui ne pleurait plus que des larmes empoisonnées. Dans cette jungle de béton, K savait que la vérité était aussi difficile à trouver qu'une fleur poussant sur l'asphalte.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "métropole",
+          "options": [
+            "métropole",
+            "périphérie",
+            "utopie",
+            "façade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "gratte-ciel",
+          "options": [
+            "gratte-ciel",
+            "bidonville",
+            "édifice",
+            "béton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "urbanisme",
+          "options": [
+            "urbanisme",
+            "brutalisme",
+            "dystopie",
+            "gentrification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "béton",
+          "options": [
+            "béton",
+            "charpente",
+            "urbanisme",
+            "gratte-ciel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "façade",
+          "options": [
+            "façade",
+            "infrastructure",
+            "charpente",
+            "métropole"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "infrastructure",
+          "options": [
+            "infrastructure",
+            "gentrification",
+            "utopie",
+            "façade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "gentrification",
+          "options": [
+            "gentrification",
+            "dystopie",
+            "brutalisme",
+            "périphérie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "périphérie",
+          "options": [
+            "périphérie",
+            "métropole",
+            "façade",
+            "utopie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "bidonville",
+          "options": [
+            "bidonville",
+            "gratte-ciel",
+            "édifice",
+            "urbanisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "utopie",
+          "options": [
+            "utopie",
+            "dystopie",
+            "gentrification",
+            "infrastructure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "dystopie",
+          "options": [
+            "dystopie",
+            "utopie",
+            "brutalisme",
+            "charpente"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "édifice",
+          "options": [
+            "édifice",
+            "gratte-ciel",
+            "bidonville",
+            "béton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "brutalisme",
+          "options": [
+            "brutalisme",
+            "urbanisme",
+            "gentrification",
+            "bidonville"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "charpente",
+          "options": [
+            "charpente",
+            "façade",
+            "infrastructure",
+            "périphérie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Architecture, ville et société",
+    "title_fa": "آزمون : معماری، شهر و جامعه",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Un bâtiment extrêmement haut, comptant des dizaines d'étages et dominant le centre-ville, est un ____.",
+        "options": [
+          "gratte-ciel",
+          "bidonville",
+          "édifice",
+          "béton"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ساختمان بسیار بلند = gratte-ciel."
+      },
+      {
+        "type": "mcq",
+        "question": "La science qui s'occupe de l'aménagement, de l'organisation et du développement des villes s'appelle l'____.",
+        "options": [
+          "urbanisme",
+          "brutalisme",
+          "dystopie",
+          "gentrification"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم برنامه‌ریزی و سازماندهی شهرها = urbanisme."
+      },
+      {
+        "type": "mcq",
+        "question": "New York, Tokyo ou Paris sont des exemples de ____, c'est-à-dire de très grandes villes concentrant les pouvoirs économiques.",
+        "options": [
+          "métropole",
+          "périphérie",
+          "utopie",
+          "façade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلان‌شهر و مرکز قدرت = métropole."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce matériau de construction, mélange de ciment, de sable et de gravier, est le plus utilisé au monde. C'est le ____.",
+        "options": [
+          "béton",
+          "charpente",
+          "urbanisme",
+          "gratte-ciel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مصالح ساختمانی ترکیبی از سیمان و شن = béton."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mur extérieur d'un bâtiment, qui donne sur la rue et qui est souvent décoré, s'appelle la ____.",
+        "options": [
+          "façade",
+          "infrastructure",
+          "charpente",
+          "métropole"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نمای بیرونی ساختمان = façade."
+      },
+      {
+        "type": "mcq",
+        "question": "Les routes, les ponts, les réseaux d'eau et d'électricité forment l'____ d'un pays, essentielle à son fonctionnement.",
+        "options": [
+          "infrastructure",
+          "gentrification",
+          "utopie",
+          "façade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تاسیسات و شبکه‌های پایه = infrastructure."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arrivée de cafés branchés et de boutiques de luxe dans un quartier populaire, entraînant la hausse des loyers et le départ des anciens habitants, est la ____.",
+        "options": [
+          "gentrification",
+          "dystopie",
+          "brutalisme",
+          "périphérie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اعیانی‌سازی و تغییر بافت محله به نفع ثروتمندان = gentrification."
+      },
+      {
+        "type": "mcq",
+        "question": "Aux abords de certaines grandes villes du sud, des quartiers précaires se construisent illégalement avec des matériaux de récupération. C'est un ____.",
+        "options": [
+          "bidonville",
+          "gratte-ciel",
+          "édifice",
+          "urbanisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محله فقیرنشین و حلبی‌آباد = bidonville."
+      },
+      {
+        "type": "mcq",
+        "question": "Les penseurs du XIXe siècle imaginaient une société parfaite, sans pauvreté ni injustice, vivant dans des cités idéales. Ils rêvaient d'une ____.",
+        "options": [
+          "utopie",
+          "dystopie",
+          "gentrification",
+          "infrastructure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آرمان‌شهر و جامعه ایده‌آل = utopie."
+      },
+      {
+        "type": "mcq",
+        "question": "Les romans de George Orwell ou les films comme Blade Runner décrivent des sociétés cauchemardesques, oppressives et totalitaires. Ce sont des ____.",
+        "options": [
+          "dystopies",
+          "utopies",
+          "gentrifications",
+          "infrastructures"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ویران‌شهر و جامعه کابوس‌وار = dystopie."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce mouvement architectural des années 1950-1970 se caractérise par l'utilisation de béton brut, sans enduit, et des formes massives et géométriques. C'est le ____.",
+        "options": [
+          "brutalisme",
+          "urbanisme",
+          "gentrification",
+          "bidonville"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سبک معماری با بتن اکسپوز و فرم‌های خشن = brutalisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le Palais des Papes à Avignon ou la Tour Eiffel à Paris sont des ____ remarquables par leur taille et leur importance.",
+        "options": [
+          "édifices",
+          "gratte-ciels",
+          "bidonvilles",
+          "bétons"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بنای بزرگ و مهم = édifice."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ossature en bois ou en métal qui soutient le toit et donne sa solidité à la construction s'appelle la ____.",
+        "options": [
+          "charpente",
+          "façade",
+          "infrastructure",
+          "périphérie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اسکلت و چارچوب نگهدارنده ساختمان = charpente."
+      },
+      {
+        "type": "mcq",
+        "question": "Les zones résidentielles et commerciales situées autour d'une grande ville, souvent reliées par des autoroutes, forment la ____.",
+        "options": [
+          "périphérie",
+          "métropole",
+          "façade",
+          "utopie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حومه و مناطق اطراف شهر = périphérie."
+      },
+      {
+        "type": "mcq",
+        "question": "La rénovation des centres-villes historiques pour les transformer en zones piétonnes et touristiques relève de l'____.",
+        "options": [
+          "urbanisme",
+          "brutalisme",
+          "dystopie",
+          "gentrification"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برنامه‌ریزی و نوسازی شهری = urbanisme."
+      },
+      {
+        "type": "binary",
+        "question": "La gentrification a toujours des conséquences positives pour les habitants historiques d'un quartier populaire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اعیانی‌سازی معمولاً باعث افزایش اجاره‌بها و اخراج ساکنان قدیمی و کم‌درآمد می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Une utopie et une dystopie représentent toutes deux des sociétés idéales et parfaites.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. utopie جامعه ایده‌آل است، اما dystopie جامعه‌ای کابوس‌وار و سرکوبگر است."
+      },
+      {
+        "type": "binary",
+        "question": "Le brutalisme est un style architectural qui privilégie l'ornementation classique et les matériaux précieux comme le marbre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. بروتالیسم بر پایه بتن خام، فرم‌های هندسی ساده و عدم تزیینات است."
+      },
+      {
+        "type": "binary",
+        "question": "L'infrastructure d'un pays inclut les réseaux de transport, de communication et de distribution d'énergie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. زیرساخت‌ها شامل جاده‌ها، شبکه‌های ارتباطی و انرژی هستند."
+      },
+      {
+        "type": "binary",
+        "question": "La charpente d'un bâtiment est la partie visible et décorative de son toit.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. charpente اسکلت و ساختار نگهدارنده است، نه لزوماً بخش تزیینی یا پوشش نهایی."
+      }
+    ]
+  }
+}
