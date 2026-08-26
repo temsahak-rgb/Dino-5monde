@@ -1,0 +1,680 @@
+{
+  "id": "boxe_combat",
+  "level": "C1",
+  "theme": "Boxe, sports de combat et ring",
+  "theme_fa": "بوکس، ورزش‌های رزمی و رینگ",
+  "icon": "🥊",
+  "inspiration": "Rocky (John G. Avildsen, 1976)",
+  "words": [
+    {
+      "fr": "la boxe",
+      "fa": "بوکس",
+      "emoji": "🥊",
+      "difficulty": 3,
+      "ex": "La boxe anglaise est surnommée le noble art.",
+      "ex_fa": "بوکس انگلیسی به هنر نجیب معروف است."
+    },
+    {
+      "fr": "le ring",
+      "fa": "رینگ",
+      "emoji": "⬛",
+      "difficulty": 3,
+      "ex": "Les deux combattants se retrouvent au centre du ring.",
+      "ex_fa": "دو مبارز در مرکز رینگ رو در روی هم قرار می‌گیرند."
+    },
+    {
+      "fr": "le round",
+      "fa": "راند",
+      "emoji": "🔔",
+      "difficulty": 3,
+      "ex": "Le combat est prévu en douze rounds de trois minutes.",
+      "ex_fa": "مسابقه در دوازده راند سه دقیقه‌ای برنامه‌ریزی شده است."
+    },
+    {
+      "fr": "le knock-out",
+      "fa": "نوک‌اوت (ضربه فنی)",
+      "emoji": "💥",
+      "difficulty": 4,
+      "ex": "Il remporte le match par knock-out dès la première reprise.",
+      "ex_fa": "او مسابقه را با ضربه فنی در همان راند اول می‌برد."
+    },
+    {
+      "fr": "l'arbitre",
+      "fa": "داور",
+      "emoji": "🧑‍⚖️",
+      "difficulty": 3,
+      "ex": "L'arbitre compte jusqu'à dix avant de déclarer le vainqueur.",
+      "ex_fa": "داور تا ده می‌شمارد قبل از اینکه برنده را اعلام کند."
+    },
+    {
+      "fr": "le gant",
+      "fa": "دستکش بوکس",
+      "emoji": "🧤",
+      "difficulty": 2,
+      "ex": "Le boxeur enfile son gant gauche avant de monter sur le ring.",
+      "ex_fa": "بوکسور قبل از رفتن روی رینگ دستکش چپ خود را می‌پوشد."
+    },
+    {
+      "fr": "l'uppercut",
+      "fa": "آپرکات (مشت رو به بالا)",
+      "emoji": "⬆️",
+      "difficulty": 4,
+      "ex": "Un uppercut violent au menton peut mettre fin au combat.",
+      "ex_fa": "یک آپرکات شدید به چانه می‌تواند به مسابقه پایان دهد."
+    },
+    {
+      "fr": "le crochet",
+      "fa": "هوگ (مشت چرخشی)",
+      "emoji": "↪️",
+      "difficulty": 4,
+      "ex": "Le crochet du droit est une arme redoutable pour toucher la tempe.",
+      "ex_fa": "هوگ دست راست سلاحی خطرناک برای ضربه به گیجگاه است."
+    },
+    {
+      "fr": "l'esquive",
+      "fa": "جاخالی دادن",
+      "emoji": "💨",
+      "difficulty": 4,
+      "ex": "Son esquive rotative lui permet d'éviter les coups les plus lourds.",
+      "ex_fa": "جاخالی دادن چرخشی‌اش به او اجازه می‌دهد از سنگین‌ترین ضربات فرار کند."
+    },
+    {
+      "fr": "le jab",
+      "fa": "جب (مشت مستقیم و سریع)",
+      "emoji": "👊",
+      "difficulty": 4,
+      "ex": "Le jab sert à maintenir l'adversaire à distance et à préparer les attaques.",
+      "ex_fa": "جب برای نگه داشتن حریف در فاصله و آماده‌سازی حملات استفاده می‌شود."
+    },
+    {
+      "fr": "le poids lourd",
+      "fa": "سنگین‌وزن",
+      "emoji": "🏋️",
+      "difficulty": 4,
+      "ex": "La catégorie des poids lourds regroupe les athlètes de plus de 90 kilos.",
+      "ex_fa": "دسته سنگین‌وزن شامل ورزشکاران بالای ۹۰ کیلوگرم است."
+    },
+    {
+      "fr": "l'entraînement",
+      "fa": "تمرین",
+      "emoji": "🏃",
+      "difficulty": 3,
+      "ex": "L'entraînement quotidien inclut la course à pied et le sac de frappe.",
+      "ex_fa": "تمرین روزانه شامل دویدن و ضربه زدن به کیسه بوکس است."
+    },
+    {
+      "fr": "la ceinture",
+      "fa": "کمربند قهرمانی",
+      "emoji": "🏆",
+      "difficulty": 3,
+      "ex": "Il rêve de décrocher la ceinture mondiale des poids lourds.",
+      "ex_fa": "او رؤیای به دست آوردن کمربند قهرمانی جهان در سنگین‌وزن را دارد."
+    },
+    {
+      "fr": "le challenger",
+      "fa": "رقیب، چلنجر",
+      "emoji": "🥊",
+      "difficulty": 4,
+      "ex": "Le challenger inconnu a surpris tout le monde en battant le champion.",
+      "ex_fa": "رقیب ناشناخته با شکست قهرمان همه را شگفت‌زده کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'outsieur de Philadelphie",
+      "text": "Rocky Balboa est un modeste boxeur de Philadelphie qui combat pour de petites sommes. Un jour, le champion du monde des {{BLANK_11}}s annule son combat et cherche un {{BLANK_14}} de dernière minute. Rocky saisit cette chance unique. Il commence un {{BLANK_12}} intensif, courant dans les rues froides et frappant des quartiers de viande. Le soir du combat, il monte sur le {{BLANK_2}} sous les projecteurs. Il enfile son {{BLANK_6}} rouge et écoute les consignes de l'{{BLANK_5}}. Dès le premier {{BLANK_3}}, il utilise son {{BLANK_10}} rapide pour tenir le champion à distance. Le champion répond par un violent {{BLANK_7}} qui touche la mâchoire de Rocky. Mais Rocky utilise une brillante {{BLANK_9}} pour éviter le coup suivant et riposte avec un {{BLANK_8}} puissant au foie. Le combat dure les douze rounds, sans aucun {{BLANK_4}} spectaculaire. Bien qu'il ne remporte pas la {{BLANK_13}} mondiale aux points, Rocky prouve sa valeur et gagne le respect de tous en restant debout jusqu'à la cloche finale.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "boxe",
+          "options": [
+            "boxe",
+            "ring",
+            "round",
+            "knock-out"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ring",
+          "options": [
+            "ring",
+            "arbitre",
+            "gant",
+            "uppercut"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "round",
+          "options": [
+            "round",
+            "crochet",
+            "esquive",
+            "jab"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "knock-out",
+          "options": [
+            "knock-out",
+            "poids lourd",
+            "entraînement",
+            "ceinture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "arbitre",
+          "options": [
+            "arbitre",
+            "challenger",
+            "boxe",
+            "ring"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "gant",
+          "options": [
+            "gant",
+            "round",
+            "knock-out",
+            "arbitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "uppercut",
+          "options": [
+            "uppercut",
+            "crochet",
+            "esquive",
+            "jab"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "crochet",
+          "options": [
+            "crochet",
+            "poids lourd",
+            "entraînement",
+            "ceinture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "esquive",
+          "options": [
+            "esquive",
+            "challenger",
+            "boxe",
+            "ring"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "jab",
+          "options": [
+            "jab",
+            "round",
+            "knock-out",
+            "arbitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "poids lourds",
+          "options": [
+            "poids lourds",
+            "crochet",
+            "esquive",
+            "jab"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "entraînement",
+          "options": [
+            "entraînement",
+            "poids lourd",
+            "ceinture",
+            "challenger"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "ceinture",
+          "options": [
+            "ceinture",
+            "boxe",
+            "ring",
+            "round"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "challenger",
+          "options": [
+            "challenger",
+            "knock-out",
+            "arbitre",
+            "gant"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La danse des ombres",
+      "inspiration": "Rocky (John G. Avildsen, 1976)",
+      "text": "À peine Rocky eut-il entendu le son strident de la cloche que l'odeur âcre de la sueur et du sang monta à ses narines. Ce {{BLANK_14}} anonyme, sorti des ruelles sombres de Philadelphie, se tenait maintenant au centre du {{BLANK_2}} illuminé, face au dieu vivant de la {{BLANK_1}}. Chaque {{BLANK_3}} était une éternité où le temps se dilatait entre la douleur et la survie. Son {{BLANK_6}} usé protégeait à peine ses phalanges brisées par des années de misère. Il lançait un {{BLANK_10}} prudent, cherchant la faille, avant de plonger dans une {{BLANK_9}} salvatrice pour éviter le {{BLANK_7}} mortel du champion. Quand l'{{BLANK_5}} s'interposait, Rocky reprenait son souffle, sachant que son {{BLANK_12}} solitaire dans le froid de l'aube l'avait préparé à cet enfer. Il encaissait un {{BLANK_8}} au foie qui lui coupait le souffle, mais refusait de tomber, refusant le {{BLANK_4}} que le monde entier attendait. Ce {{BLANK_11}} invincible frappait avec la fureur d'un ouragan, mais Rocky tenait bon, protégé par une armure invisible forgée dans l'amour et le désespoir. Quand le combat s'acheva sans que la {{BLANK_13}} ne changeât de mains, Rocky, le visage méconnaissable, hurla le nom de sa bien-aimée, prouvant que la véritable victoire n'est pas de détruire l'autre, mais de rester debout quand tout en nous supplie de nous effondrer.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "boxe",
+          "options": [
+            "boxe",
+            "ring",
+            "round",
+            "knock-out"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ring",
+          "options": [
+            "ring",
+            "arbitre",
+            "gant",
+            "uppercut"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "round",
+          "options": [
+            "round",
+            "crochet",
+            "esquive",
+            "jab"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "knock-out",
+          "options": [
+            "knock-out",
+            "poids lourd",
+            "entraînement",
+            "ceinture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "arbitre",
+          "options": [
+            "arbitre",
+            "challenger",
+            "boxe",
+            "ring"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "gant",
+          "options": [
+            "gant",
+            "round",
+            "knock-out",
+            "arbitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "uppercut",
+          "options": [
+            "uppercut",
+            "crochet",
+            "esquive",
+            "jab"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "crochet",
+          "options": [
+            "crochet",
+            "poids lourd",
+            "entraînement",
+            "ceinture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "esquive",
+          "options": [
+            "esquive",
+            "challenger",
+            "boxe",
+            "ring"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "jab",
+          "options": [
+            "jab",
+            "round",
+            "knock-out",
+            "arbitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "poids lourd",
+          "options": [
+            "poids lourd",
+            "crochet",
+            "esquive",
+            "jab"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "entraînement",
+          "options": [
+            "entraînement",
+            "poids lourd",
+            "ceinture",
+            "challenger"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "ceinture",
+          "options": [
+            "ceinture",
+            "boxe",
+            "ring",
+            "round"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "challenger",
+          "options": [
+            "challenger",
+            "knock-out",
+            "arbitre",
+            "gant"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Boxe et combat",
+    "title_fa": "آزمون : بوکس و ورزش‌های رزمی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le sport de combat où deux adversaires s'affrontent à coups de poing avec des gants est la ____.",
+        "options": [
+          "boxe",
+          "ring",
+          "round",
+          "knock-out"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزش مبارزه با مشت و دستکش = boxe."
+      },
+      {
+        "type": "mcq",
+        "question": "L'espace carré et surélevé, entouré de cordes, où se déroulent les combats de boxe est le ____.",
+        "options": [
+          "ring",
+          "arbitre",
+          "gant",
+          "uppercut"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محوطه مربعی و طناب‌کشی‌شده = ring."
+      },
+      {
+        "type": "mcq",
+        "question": "Chacune des périodes de temps (généralement 3 minutes) qui composent un match de boxe est le ____.",
+        "options": [
+          "round",
+          "crochet",
+          "esquive",
+          "jab"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هر دوره زمانی مسابقه = round."
+      },
+      {
+        "type": "mcq",
+        "question": "La situation où un boxeur est mis à terre et ne peut se relever avant le compte de dix est le ____.",
+        "options": [
+          "knock-out",
+          "poids lourd",
+          "entraînement",
+          "ceinture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضربه فنی و ناتوانی در برخاستن = knock-out."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne officielle qui veille au respect des règles et à la sécurité des boxeurs sur le ring est l'____.",
+        "options": [
+          "arbitre",
+          "challenger",
+          "boxe",
+          "ring"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص ناظر بر قوانین = arbitre."
+      },
+      {
+        "type": "mcq",
+        "question": "La pièce d'équipement en cuir ou en matière synthétique qui protège les mains du boxeur est le ____.",
+        "options": [
+          "gant",
+          "round",
+          "knock-out",
+          "arbitre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تجهیزات محافظ دست = gant."
+      },
+      {
+        "type": "mcq",
+        "question": "Le coup de poing frappé de bas en haut, généralement dirigé vers le menton, est l'____.",
+        "options": [
+          "uppercut",
+          "crochet",
+          "esquive",
+          "jab"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مشت رو به بالا به سمت چانه = uppercut."
+      },
+      {
+        "type": "mcq",
+        "question": "Le coup de poing circulaire frappé avec le bras plié, visant le côté du visage ou le corps, est le ____.",
+        "options": [
+          "crochet",
+          "poids lourd",
+          "entraînement",
+          "ceinture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مشت چرخشی و افقی = crochet."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mouvement défensif du corps ou de la tête pour éviter de recevoir un coup est l'____.",
+        "options": [
+          "esquive",
+          "challenger",
+          "boxe",
+          "ring"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرکت دفاعی برای فرار از ضربه = esquive."
+      },
+      {
+        "type": "mcq",
+        "question": "Le coup de poing direct, rapide et souvent utilisé pour mesurer la distance, est le ____.",
+        "options": [
+          "jab",
+          "round",
+          "knock-out",
+          "arbitre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مشت مستقیم و سریع = jab."
+      },
+      {
+        "type": "mcq",
+        "question": "La catégorie de poids la plus élevée en boxe, regroupant les athlètes les plus lourds, est celle des ____.",
+        "options": [
+          "poids lourds",
+          "crochet",
+          "esquive",
+          "jab"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دسته سنگین‌وزن = poids lourds."
+      },
+      {
+        "type": "mcq",
+        "question": "La préparation physique et technique intensive qui précède un combat est l'____.",
+        "options": [
+          "entraînement",
+          "poids lourd",
+          "ceinture",
+          "challenger"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آمادگی جسمانی و فنی = entraînement."
+      },
+      {
+        "type": "mcq",
+        "question": "Le trophée symbolique, souvent porté à la taille, qui désigne le champion d'une catégorie est la ____.",
+        "options": [
+          "ceinture",
+          "boxe",
+          "ring",
+          "round"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نماد قهرمانی = ceinture."
+      },
+      {
+        "type": "mcq",
+        "question": "Le boxeur qui affronte le champion en titre pour tenter de lui ravir son titre est le ____.",
+        "options": [
+          "challenger",
+          "knock-out",
+          "arbitre",
+          "gant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رقیب مدعی قهرمانی = challenger."
+      },
+      {
+        "type": "binary",
+        "question": "Le jab est un coup de poing circulaire très puissant qui vise généralement le foie de l'adversaire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. jab یک مشت مستقیم و سریع است؛ مشت چرخشی به کبد crochet نامیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Un knock-out (K.O.) est déclaré quand un boxeur tombe et ne peut se relever avant que l'arbitre compte jusqu'à dix.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. knock-out زمانی اعلام می‌شود که مبارز تا شمارش ده نتواند برخیزد."
+      },
+      {
+        "type": "binary",
+        "question": "L'esquive est une technique offensive qui consiste à frapper l'adversaire par surprise.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. esquive یک حرکت کاملاً دفاعی برای جاخالی دادن و فرار از ضربه است."
+      },
+      {
+        "type": "binary",
+        "question": "Le challenger est le boxeur qui détient actuellement le titre mondial et doit le défendre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. challenger رقیبی است که برای گرفتن کمربند قهرمانی به مصاف قهرمان فعلی می‌رود."
+      },
+      {
+        "type": "binary",
+        "question": "Un uppercut est un coup de poing porté de bas en haut, souvent dirigé vers le menton.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. آپرکات ضربه‌ای از پایین به بالا به سمت چانه است."
+      },
+      {
+        "type": "binary",
+        "question": "Le ring est la surface circulaire et rembourrée où se déroulent les combats de lutte gréco-romaine.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. رینگ (ring) معمولاً مربعی‌شکل و دارای طناب است و مخصوص بوکس و ورزش‌های ایستاده است."
+      }
+    ]
+  }
+}
