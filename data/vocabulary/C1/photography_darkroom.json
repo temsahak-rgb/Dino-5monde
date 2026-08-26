@@ -1,0 +1,680 @@
+{
+  "id": "photography_darkroom",
+  "level": "C1",
+  "theme": "Photographie, chambre noire et développement",
+  "theme_fa": "عکاسی، تاریکخانه و ظهور فیلم",
+  "icon": "📷",
+  "inspiration": "Fenêtre sur cour (Rear Window - Alfred Hitchcock, 1954)",
+  "words": [
+    {
+      "fr": "la photographie",
+      "fa": "عکاسی",
+      "emoji": "📷",
+      "difficulty": 2,
+      "ex": "La photographie argentique connaît un regain d'intérêt chez les jeunes artistes.",
+      "ex_fa": "عکاسی آنالوگ در میان هنرمندان جوان دوباره مورد توجه قرار گرفته است."
+    },
+    {
+      "fr": "l'appareil",
+      "fa": "دوربین عکاسی",
+      "emoji": "📸",
+      "difficulty": 2,
+      "ex": "L'appareil reflex permet de voir exactement ce qui sera capturé.",
+      "ex_fa": "دوربین رفلکس اجازه می‌دهد دقیقاً همان چیزی که ثبت می‌شود را ببینید."
+    },
+    {
+      "fr": "l'objectif",
+      "fa": "لنز",
+      "emoji": "🔭",
+      "difficulty": 3,
+      "ex": "L'objectif grand angle capture un champ de vision très large.",
+      "ex_fa": "لنز واید میدان دید بسیار وسیعی را ثبت می‌کند."
+    },
+    {
+      "fr": "le négatif",
+      "fa": "نگاتیو",
+      "emoji": "🎞️",
+      "difficulty": 3,
+      "ex": "Sur le négatif, les couleurs sont inversées par rapport à la réalité.",
+      "ex_fa": "روی نگاتیو، رنگ‌ها برعکس واقعیت هستند."
+    },
+    {
+      "fr": "le révélateur",
+      "fa": "محلول ظاهرکننده",
+      "emoji": "🧪",
+      "difficulty": 4,
+      "ex": "Le bain de révélateur fait apparaître l'image latente sur le papier.",
+      "ex_fa": "حمام ظاهرکننده تصویر پنهان را روی کاغذ آشکار می‌کند."
+    },
+    {
+      "fr": "la chambre noire",
+      "fa": "تاریکخانه",
+      "emoji": "🚪",
+      "difficulty": 4,
+      "ex": "Dans la chambre noire, seule la lumière rouge inactinique est autorisée.",
+      "ex_fa": "در تاریکخانه، فقط نور قرمز بی‌اثر مجاز است."
+    },
+    {
+      "fr": "le flash",
+      "fa": "فلاش",
+      "emoji": "⚡",
+      "difficulty": 2,
+      "ex": "Le flash se déclenche pour figer le mouvement dans l'obscurité.",
+      "ex_fa": "فلاش برای ثابت نگه داشتن حرکت در تاریکی روشن می‌شود."
+    },
+    {
+      "fr": "la mise au point",
+      "fa": "فوکوس، تنظیم وضوح",
+      "emoji": "🎯",
+      "difficulty": 4,
+      "ex": "Une mauvaise mise au point rend le sujet flou et méconnaissable.",
+      "ex_fa": "فوکوس اشتباه سوژه را تار و غیرقابل تشخیص می‌کند."
+    },
+    {
+      "fr": "le cadrage",
+      "fa": "کادربندی",
+      "emoji": "🖼️",
+      "difficulty": 3,
+      "ex": "Le cadrage serré sur le visage intensifie l'émotion du portrait.",
+      "ex_fa": "کادربندی بسته روی چهره، احساس پرتره را تشدید می‌کند."
+    },
+    {
+      "fr": "l'obturateur",
+      "fa": "شاتر (دریچه دیافراگم)",
+      "emoji": "🚪",
+      "difficulty": 5,
+      "ex": "L'obturateur s'ouvre une fraction de seconde pour laisser passer la lumière.",
+      "ex_fa": "شاتر برای کسری از ثانیه باز می‌شود تا نور عبور کند."
+    },
+    {
+      "fr": "le diaphragme",
+      "fa": "دیافراگم",
+      "emoji": "⭕",
+      "difficulty": 5,
+      "ex": "Le diaphragme contrôle la quantité de lumière qui atteint la pellicule.",
+      "ex_fa": "دیافراگم مقدار نوری را که به فیلم می‌رسد کنترل می‌کند."
+    },
+    {
+      "fr": "l'exposition",
+      "fa": "نوردهی",
+      "emoji": "☀️",
+      "difficulty": 4,
+      "ex": "Une surexposition brûle les détails dans les zones très claires.",
+      "ex_fa": "نوردهی بیش از حد (overexposure) جزئیات را در نواحی خیلی روشن می‌سوزاند."
+    },
+    {
+      "fr": "le téléobjectif",
+      "fa": "لنز تله‌فوتو (زوم بلند)",
+      "emoji": "🔭",
+      "difficulty": 4,
+      "ex": "Le téléobjectif permet de photographier des sujets très éloignés sans être vu.",
+      "ex_fa": "لنز تله‌فوتو اجازه می‌دهد از سوژه‌های بسیار دور بدون دیده شدن عکس بگیرید."
+    },
+    {
+      "fr": "l'épreuve",
+      "fa": "چاپ عکس، پرینت",
+      "emoji": "🖼️",
+      "difficulty": 4,
+      "ex": "Le photographe examine l'épreuve finale sous la lumière blanche.",
+      "ex_fa": "عکاس چاپ نهایی را زیر نور سفید بررسی می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le voyeur de Greenwich Village",
+      "text": "L.B. Jefferies est un photographe reporter cloué dans un fauteuil roulant avec une jambe plâtrée. Pour tuer le temps, il observe ses voisins avec son {{BLANK_2}} reflex muni d'un puissant {{BLANK_13}}. Il ajuste soigneusement la {{BLANK_8}} et le {{BLANK_9}} pour espionner l'immeuble d'en face. Quand la nuit tombe, il utilise parfois un {{BLANK_7}} discret. L'{{BLANK_12}} est réglée pour capter la faible lumière. Il appuie sur le bouton et l'{{BLANK_10}} clique sèchement. Plus tard, il s'enferme dans sa {{BLANK_6}} éclairée d'une ampoule rouge. Il plonge le {{BLANK_4}} dans le bac de {{BLANK_5}} chimique. Le {{BLANK_11}} de la lentille a capturé une ombre suspecte. Quand l'{{BLANK_14}} sort du bac, la {{BLANK_1}} révèle un terrible secret : un crime a été commis. Jeff comprend que son {{BLANK_3}} a capturé une vérité mortelle.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "photographie",
+          "options": [
+            "photographie",
+            "appareil",
+            "objectif",
+            "négatif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "appareil",
+          "options": [
+            "appareil",
+            "révélateur",
+            "chambre noire",
+            "flash"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "objectif",
+          "options": [
+            "objectif",
+            "mise au point",
+            "cadrage",
+            "obturateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "négatif",
+          "options": [
+            "négatif",
+            "diaphragme",
+            "exposition",
+            "téléobjectif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "révélateur",
+          "options": [
+            "révélateur",
+            "épreuve",
+            "photographie",
+            "appareil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "chambre noire",
+          "options": [
+            "chambre noire",
+            "objectif",
+            "négatif",
+            "révélateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "flash",
+          "options": [
+            "flash",
+            "mise au point",
+            "cadrage",
+            "obturateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "mise au point",
+          "options": [
+            "mise au point",
+            "diaphragme",
+            "exposition",
+            "téléobjectif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cadrage",
+          "options": [
+            "cadrage",
+            "épreuve",
+            "photographie",
+            "appareil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "obturateur",
+          "options": [
+            "obturateur",
+            "objectif",
+            "négatif",
+            "révélateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "diaphragme",
+          "options": [
+            "diaphragme",
+            "mise au point",
+            "cadrage",
+            "flash"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "exposition",
+          "options": [
+            "exposition",
+            "chambre noire",
+            "obturateur",
+            "diaphragme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "téléobjectif",
+          "options": [
+            "téléobjectif",
+            "épreuve",
+            "photographie",
+            "appareil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "épreuve",
+          "options": [
+            "épreuve",
+            "objectif",
+            "négatif",
+            "révélateur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'ombre révélée",
+      "inspiration": "Fenêtre sur cour (Alfred Hitchcock, 1954)",
+      "text": "À peine Jeff eut-il collé son œil au viseur de son {{BLANK_2}} que la cour intérieure devint un théâtre de secrets. Prisonnier de son plâtre, il scrutait l'intimité du monde à travers son lourd {{BLANK_13}}. Il peaufinait la {{BLANK_8}} jusqu'à ce que le visage du voisin devienne net, ajustant son {{BLANK_9}} pour isoler le suspect de son décor. L'{{BLANK_12}} était calculée au millième, l'{{BLANK_10}} prêt à trancher le temps, tandis que le {{BLANK_11}} s'ouvrait comme une pupille vorace. Parfois, le {{BLANK_7}} déchirait la nuit d'un éclair aveuglant. Mais c'est dans le silence de la {{BLANK_6}} que la magie opérait. Baigné dans la lueur sanglante de la lampe inactinique, il plongeait le {{BLANK_4}} fragile dans le {{BLANK_5}} toxique. Là, sous ses doigts tremblants, la {{BLANK_1}} accouchait de ses fantômes. Quand l'{{BLANK_14}} ruisselante émergeait du bac, la lumière blanche révélait enfin la preuve. L'{{BLANK_3}} de verre ne mentait jamais : il avait capturé l'instant précis où l'innocence s'était muée en horreur.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "photographie",
+          "options": [
+            "photographie",
+            "appareil",
+            "objectif",
+            "négatif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "appareil",
+          "options": [
+            "appareil",
+            "révélateur",
+            "chambre noire",
+            "flash"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "objectif",
+          "options": [
+            "objectif",
+            "mise au point",
+            "cadrage",
+            "obturateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "négatif",
+          "options": [
+            "négatif",
+            "diaphragme",
+            "exposition",
+            "téléobjectif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "révélateur",
+          "options": [
+            "révélateur",
+            "épreuve",
+            "photographie",
+            "appareil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "chambre noire",
+          "options": [
+            "chambre noire",
+            "objectif",
+            "négatif",
+            "révélateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "flash",
+          "options": [
+            "flash",
+            "mise au point",
+            "cadrage",
+            "obturateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "mise au point",
+          "options": [
+            "mise au point",
+            "diaphragme",
+            "exposition",
+            "téléobjectif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cadrage",
+          "options": [
+            "cadrage",
+            "épreuve",
+            "photographie",
+            "appareil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "obturateur",
+          "options": [
+            "obturateur",
+            "objectif",
+            "négatif",
+            "révélateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "diaphragme",
+          "options": [
+            "diaphragme",
+            "mise au point",
+            "cadrage",
+            "flash"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "exposition",
+          "options": [
+            "exposition",
+            "chambre noire",
+            "obturateur",
+            "diaphragme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "téléobjectif",
+          "options": [
+            "téléobjectif",
+            "épreuve",
+            "photographie",
+            "appareil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "épreuve",
+          "options": [
+            "épreuve",
+            "objectif",
+            "négatif",
+            "révélateur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Photographie et chambre noire",
+    "title_fa": "آزمون : عکاسی و تاریکخانه",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art et la technique de capturer des images à l'aide de la lumière est la ____.",
+        "options": [
+          "photographie",
+          "appareil",
+          "objectif",
+          "négatif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر ثبت تصویر با نور = photographie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument optique muni d'un capteur ou d'une pellicule servant à prendre des photos est l'____.",
+        "options": [
+          "appareil",
+          "révélateur",
+          "chambre noire",
+          "flash"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار نوری ثبت عکس = appareil."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système de lentilles en verre qui focalise la lumière sur le capteur ou la pellicule est l'____.",
+        "options": [
+          "objectif",
+          "mise au point",
+          "cadrage",
+          "obturateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم عدسی‌های متمرکزکننده نور = objectif."
+      },
+      {
+        "type": "mcq",
+        "question": "L'image inversée (en valeurs de gris ou de couleurs) obtenue sur la pellicule après développement est le ____.",
+        "options": [
+          "négatif",
+          "diaphragme",
+          "exposition",
+          "téléobjectif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تصویر معکوس روی فیلم = négatif."
+      },
+      {
+        "type": "mcq",
+        "question": "Le produit chimique liquide qui fait apparaître l'image latente sur le film ou le papier est le ____.",
+        "options": [
+          "révélateur",
+          "épreuve",
+          "photographie",
+          "appareil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مایع شیمیایی ظاهرکننده تصویر = révélateur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le laboratoire obscur, éclairé seulement d'une lumière rouge, où l'on développe les photos est la ____.",
+        "options": [
+          "chambre noire",
+          "objectif",
+          "négatif",
+          "révélateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اتاق تاریک ظهور عکس = chambre noire."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil qui émet une lumière artificielle intense et très brève pour éclairer une scène est le ____.",
+        "options": [
+          "flash",
+          "mise au point",
+          "cadrage",
+          "obturateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نور مصنوعی و شدید = flash."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action d'ajuster les lentilles pour que le sujet principal soit net et non flou est la ____.",
+        "options": [
+          "mise au point",
+          "diaphragme",
+          "exposition",
+          "téléobjectif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تنظیم وضوح سوژه = mise au point."
+      },
+      {
+        "type": "mcq",
+        "question": "La manière de composer l'image en choisissant ce qui sera inclus ou exclu dans le viseur est le ____.",
+        "options": [
+          "cadrage",
+          "épreuve",
+          "photographie",
+          "appareil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نحوه ترکیب‌بندی و انتخاب کادر = cadrage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mécanisme de rideaux ou de lamelles qui s'ouvre et se ferme pour laisser passer la lumière est l'____.",
+        "options": [
+          "obturateur",
+          "objectif",
+          "négatif",
+          "révélateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانیزم دریچه نور = obturateur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le trou de diamètre variable dans l'objectif qui contrôle la quantité de lumière entrante est le ____.",
+        "options": [
+          "diaphragme",
+          "mise au point",
+          "cadrage",
+          "flash"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دریچه تنظیم‌کننده مقدار نور = diaphragme."
+      },
+      {
+        "type": "mcq",
+        "question": "La quantité totale de lumière qui atteint la surface sensible, déterminée par le temps et l'ouverture, est l'____.",
+        "options": [
+          "exposition",
+          "chambre noire",
+          "obturateur",
+          "diaphragme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مقدار کل نور رسیده به حسگر = exposition."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objectif à longue focale qui permet de grossir les sujets très éloignés est le ____.",
+        "options": [
+          "téléobjectif",
+          "épreuve",
+          "photographie",
+          "appareil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لنز با فاصله کانونی بلند = téléobjectif."
+      },
+      {
+        "type": "mcq",
+        "question": "Le tirage papier final et positif de l'image photographique est l'____.",
+        "options": [
+          "épreuve",
+          "objectif",
+          "négatif",
+          "révélateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چاپ نهایی و مثبت عکس = épreuve."
+      },
+      {
+        "type": "binary",
+        "question": "La chambre noire doit être totalement plongée dans l'obscurité absolue, aucune lumière n'y est tolérée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. در تاریکخانه (chambre noire) استفاده از نور قرمز خاص (inactinique) که روی کاغذ عکس اثر نمی‌گذارد مجاز است."
+      },
+      {
+        "type": "binary",
+        "question": "Le diaphragme fonctionne comme la pupille de l'œil en s'ouvrant et se fermant pour contrôler la lumière.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دیافراگم (diaphragme) دقیقاً مانند عنبیه چشم مقدار نور ورودی را تنظیم می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le négatif est l'image finale positive imprimée sur papier que l'on encadre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. نگاتیو (négatif) تصویر معکوس روی فیلم است؛ چاپ نهایی épreuve یا tirage نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "L'obturateur détermine la durée pendant laquelle la lumière frappe la pellicule ou le capteur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. شاتر (obturateur) زمان نوردهی را کنترل می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le téléobjectif est un objectif très court utilisé pour prendre des photos macroscopiques d'insectes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تله‌فوتو (téléobjectif) لنز بلندی برای عکاسی از فواصل دور است؛ لنز ماکرو برای فواصل بسیار نزدیک است."
+      },
+      {
+        "type": "binary",
+        "question": "Le révélateur est le produit chimique qui fait apparaître l'image invisible sur le film exposé.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ظاهرکننده (révélateur) تصویر پنهان را به تصویر مرئی تبدیل می‌کند."
+      }
+    ]
+  }
+}
