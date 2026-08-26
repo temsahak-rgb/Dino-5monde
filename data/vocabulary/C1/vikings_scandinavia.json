@@ -1,0 +1,656 @@
+{
+  "id": "vikings_scandinavia",
+  "level": "C1",
+  "theme": "Vikings, Scandinavie et mythologie nordique",
+  "theme_fa": "وایکینگ‌ها، اسکاندیناوی و اساطیر شمال",
+  "icon": "⚔️",
+  "inspiration": "Vikings (Michael Hirst, History Channel, 2013-2020)",
+  "words": [
+    {
+      "fr": "le drakkar",
+      "fa": "دراکار (کشتی وایکینگی)",
+      "emoji": "⛵",
+      "difficulty": 5,
+      "ex": "Le drakkar permettait aux Vikings de naviguer sur les océans.",
+      "ex_fa": "دراکار به وایکینگ‌ها امکان دریانوردی در اقیانوس‌ها را می‌داد."
+    },
+    {
+      "fr": "le jarl",
+      "fa": "یارل (ارباب اسکاندیناوی)",
+      "emoji": "👑",
+      "difficulty": 5,
+      "ex": "Le jarl commandait les guerriers de son clan.",
+      "ex_fa": "یارل بر جنگجویان قبیله‌اش فرمان می‌راند."
+    },
+    {
+      "fr": "le fjord",
+      "fa": "فیورد (خلیج باریک کوهستانی)",
+      "emoji": "🏔️",
+      "difficulty": 4,
+      "ex": "Les villages vikings étaient construits au fond des fjords.",
+      "ex_fa": "روستاهای وایکینگی در انتهای فیوردها ساخته می‌شدند."
+    },
+    {
+      "fr": "la rune",
+      "fa": "رون (حروف باستانی شمال)",
+      "emoji": "ᚱ",
+      "difficulty": 5,
+      "ex": "Les runes étaient gravées sur les pierres pour invoquer les dieux.",
+      "ex_fa": "حروف رون برای خواندن خدایان روی سنگ‌ها حک می‌شدند."
+    },
+    {
+      "fr": "le Valhalla",
+      "fa": "والهالا (بهشت جنگجویان)",
+      "emoji": "🌩️",
+      "difficulty": 4,
+      "ex": "Seuls les guerriers morts au combat entraient au Valhalla.",
+      "ex_fa": "تنها جنگجویانی که در نبرد کشته می‌شدند به والهالا راه می‌یافتند."
+    },
+    {
+      "fr": "le berserker",
+      "fa": "برسرکر (جنگجوی خشمگین)",
+      "emoji": "🐻",
+      "difficulty": 5,
+      "ex": "Le berserker entrait en transe avant la bataille.",
+      "ex_fa": "برسرکر قبل از نبرد به حالت خلسه می‌رفت."
+    },
+    {
+      "fr": "le thing",
+      "fa": "تینگ (مجلس مردمی)",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "Le thing réunissait les hommes libres pour trancher les litiges.",
+      "ex_fa": "تینگ، مردان آزاد را برای حل اختلافات گرد هم می‌آورد."
+    },
+    {
+      "fr": "le scalde",
+      "fa": "اسکالد (شاعر دربار)",
+      "emoji": "📜",
+      "difficulty": 5,
+      "ex": "Le scalde chantait les exploits des héros lors des festins.",
+      "ex_fa": "اسکالد در ضیافت‌ها، دلاوری‌های قهرمانان را می‌خواند."
+    },
+    {
+      "fr": "le bouclier",
+      "fa": "سپر",
+      "emoji": "🛡️",
+      "difficulty": 3,
+      "ex": "Les Vikings formaient un mur de boucliers pendant l'assaut.",
+      "ex_fa": "وایکینگ‌ها هنگام حمله، دیواری از سپرها تشکیل می‌دادند."
+    },
+    {
+      "fr": "la hache",
+      "fa": "تبر",
+      "emoji": "🪓",
+      "difficulty": 3,
+      "ex": "La hache à deux mains était l'arme favorite des Vikings.",
+      "ex_fa": "تبر دو دسته‌ای سلاح محبوب وایکینگ‌ها بود."
+    },
+    {
+      "fr": "le pillage",
+      "fa": "غارت، چپاول",
+      "emoji": "💰",
+      "difficulty": 4,
+      "ex": "Le pillage des monastères enrichissait les guerriers.",
+      "ex_fa": "غارت صومعه‌ها، جنگجویان را ثروتمند می‌کرد."
+    },
+    {
+      "fr": "le paganisme",
+      "fa": "پاگانیسم، چندخدایی",
+      "emoji": "⚡",
+      "difficulty": 5,
+      "ex": "Le paganisme nordique vénérait Odin, Thor et Freyja.",
+      "ex_fa": "پاگانیسم شمالی، اودین، تور و فریا را می‌پرستید."
+    },
+    {
+      "fr": "le thrall",
+      "fa": "برده، غلام",
+      "emoji": "⛓️",
+      "difficulty": 5,
+      "ex": "Les thralls travaillaient la terre pour leurs maîtres vikings.",
+      "ex_fa": "بردگان برای اربابان وایکینگ خود زمین را شخم می‌زدند."
+    },
+    {
+      "fr": "le skald",
+      "fa": "اسکالد (شاعر جنگجو)",
+      "emoji": "⚔️",
+      "difficulty": 5,
+      "ex": "Le skald récitait des sagas transmises oralement.",
+      "ex_fa": "اسکالد حماسه‌هایی را که سینه به سینه منتقل شده بود، بازگو می‌کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le départ vers l'ouest",
+      "text": "Ragnar Lothbrok est un simple fermier du village de Kattegat, situé au fond d'un magnifique {{BLANK_3}}. Mais il rêve d'explorer l'ouest inconnu. Avec l'aide de son ami Floki, il construit un {{BLANK_1}} révolutionnaire capable de naviguer en haute mer. Le {{BLANK_2}} local, le comte Haraldson, refuse d'autoriser l'expédition. Ragnar consulte les {{BLANK_4}} gravées sur les pierres anciennes pour obtenir la faveur des dieux. Il rêve du {{BLANK_5}}, où les guerriers valeureux festoient éternellement avec Odin. Pour l'expédition, il recrute son frère Rollo, un {{BLANK_6}} terrifiant qui combat sans armure, et le sage {{BLANK_8}} qui racontera leurs exploits. Chaque guerrier emporte un solide {{BLANK_9}} rond en bois de tilleul et une lourde {{BLANK_10}} de fer. Leur premier raid vise un monastère anglais : le {{BLANK_11}} rapporte or, argent et esclaves. À leur retour, le {{BLANK_7}} du village se réunit pour juger un différend. Ragnar, qui n'est encore qu'un {{BLANK_13}} aux yeux de certains, défie l'autorité traditionnelle. Les anciens prêtres du {{BLANK_12}} s'inquiètent : les nouveaux horizons apportent aussi de nouveaux dieux. Bientôt, Ragnar deviendra un grand {{BLANK_2}} et changera à jamais l'histoire de la Scandinavie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "drakkar",
+          "options": [
+            "drakkar",
+            "bouclier",
+            "hache",
+            "fjord"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "jarl",
+          "options": [
+            "jarl",
+            "thrall",
+            "scalde",
+            "berserker"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fjord",
+          "options": [
+            "fjord",
+            "Valhalla",
+            "rune",
+            "thing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "runes",
+          "options": [
+            "runes",
+            "haches",
+            "pillage",
+            "drakkars"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Valhalla",
+          "options": [
+            "Valhalla",
+            "thing",
+            "paganisme",
+            "fjord"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "berserker",
+          "options": [
+            "berserker",
+            "scalde",
+            "jarl",
+            "thrall"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "thing",
+          "options": [
+            "thing",
+            "paganisme",
+            "Valhalla",
+            "drakkar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "scalde",
+          "options": [
+            "scalde",
+            "thrall",
+            "berserker",
+            "rune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "bouclier",
+          "options": [
+            "bouclier",
+            "hache",
+            "drakkar",
+            "fjord"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "hache",
+          "options": [
+            "hache",
+            "bouclier",
+            "rune",
+            "jarl"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pillage",
+          "options": [
+            "pillage",
+            "Valhalla",
+            "thing",
+            "paganisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "paganisme",
+          "options": [
+            "paganisme",
+            "thing",
+            "rune",
+            "scalde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "thrall",
+          "options": [
+            "thrall",
+            "jarl",
+            "berserker",
+            "scalde"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La saga des mers froides",
+      "inspiration": "Vikings (Michael Hirst, History Channel, 2013-2020)",
+      "text": "À peine la brume matinale eut-elle quitté les eaux sombres du {{BLANK_3}} que Ragnar Lothbrok contempla sa création. Ce n'était pas un simple bateau, c'était une prophétie de bois et de goudron. Floki, l'ami fou aux yeux d'enfant, avait façonné ce {{BLANK_1}} à la proue de dragon, capable de fendre les vagues de l'Atlantique et de remonter les fleuves d'Occident. Ragnar, simple paysan de Kattegat, défiait ainsi l'autorité du {{BLANK_2}} Haraldson, ce vieillard qui croyait que la mer n'avait qu'une seule direction : l'est, vers les terres connues de la Baltique. Mais Ragnar avait vu en songe les côtes de l'Angleterre, et il savait que les dieux l'appelaient. Sur la pierre sacrificielle, il lut les {{BLANK_4}} ancestrales que le vieux prêtre avait gravées : elles parlaient de conquêtes, de sang et de gloire. Chaque nuit, en fermant les yeux, il apercevait les portes dorées du {{BLANK_5}}, cette halle immense où les guerriers tombés au combat buvaient l'hydromel éternel sous le regard d'Odin. Son frère Rollo l'accompagnerait, ce colosse blond qui, sur le champ de bataille, se transformait en {{BLANK_6}}, rugissant comme un ours, indifférent aux blessures. Un {{BLANK_8}} prendrait place dans la proue du navire, pour que leurs exploits ne se perdent jamais dans l'oubli. Chaque homme portait un {{BLANK_9}} rond peint de couleurs vives, et une {{BLANK_10}} au tranchant mortel. Quand ils accostèrent à Lindisfarne, le {{BLANK_11}} du monastère fut d'une violence inouïe : or, calices, manuscrits précieux, tout fut emporté. À leur retour, le {{BLANK_7}} se réunit pour arbitrer les conflits nés du partage. Ragnar n'était plus un simple {{BLANK_13}} qu'on pouvait ignorer. Il avait vu le monde au-delà de l'horizon, et les anciens prêtres du {{BLANK_12}} le savaient : ce jeune homme changerait la destinée de tous les peuples du Nord. Les sagas, transmises de bouche à oreille par des générations de {{BLANK_8}}s, raconteraient bientôt comment un fermier de Kattegat était devenu le cauchemar de la chrétienté.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "drakkar",
+          "options": [
+            "drakkar",
+            "bouclier",
+            "hache",
+            "fjord"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "jarl",
+          "options": [
+            "jarl",
+            "thrall",
+            "scalde",
+            "berserker"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fjord",
+          "options": [
+            "fjord",
+            "Valhalla",
+            "rune",
+            "thing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "runes",
+          "options": [
+            "runes",
+            "haches",
+            "pillage",
+            "drakkars"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Valhalla",
+          "options": [
+            "Valhalla",
+            "thing",
+            "paganisme",
+            "fjord"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "berserker",
+          "options": [
+            "berserker",
+            "scalde",
+            "jarl",
+            "thrall"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "thing",
+          "options": [
+            "thing",
+            "paganisme",
+            "Valhalla",
+            "drakkar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "scalde",
+          "options": [
+            "scalde",
+            "thrall",
+            "berserker",
+            "rune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "bouclier",
+          "options": [
+            "bouclier",
+            "hache",
+            "drakkar",
+            "fjord"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "hache",
+          "options": [
+            "hache",
+            "bouclier",
+            "rune",
+            "jarl"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pillage",
+          "options": [
+            "pillage",
+            "Valhalla",
+            "thing",
+            "paganisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "paganisme",
+          "options": [
+            "paganisme",
+            "thing",
+            "rune",
+            "scalde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "thrall",
+          "options": [
+            "thrall",
+            "jarl",
+            "berserker",
+            "scalde"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Vikings et civilisation nordique",
+    "title_fa": "آزمون : وایکینگ‌ها و تمدن شمالی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Ce long navire de guerre viking, à la proue sculptée en forme de dragon et capable de naviguer en haute mer, est le ____.",
+        "options": [
+          "drakkar",
+          "bouclier",
+          "hache",
+          "fjord"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشتی جنگی بلند وایکینگی با سرنمای اژدها = drakkar."
+      },
+      {
+        "type": "mcq",
+        "question": "Le titre nobiliaire scandinave équivalent à un comte ou à un chef de clan est le ____.",
+        "options": [
+          "jarl",
+          "thrall",
+          "scalde",
+          "berserker"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عنوان اشرافی معادل کنت = jarl."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette longue et étroite baie encaissée entre des falaises, typique des côtes norvégiennes, est un ____.",
+        "options": [
+          "fjord",
+          "Valhalla",
+          "rune",
+          "thing"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خلیج باریک بین صخره‌ها = fjord."
+      },
+      {
+        "type": "mcq",
+        "question": "Chacune des lettres de l'alphabet germanique ancien, gravée sur la pierre ou le bois, est une ____.",
+        "options": [
+          "rune",
+          "hache",
+          "pillage",
+          "drakkar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حروف الفبای باستانی ژرمنی = rune."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans la mythologie nordique, la grande salle où les guerriers morts au combat festoient éternellement est le ____.",
+        "options": [
+          "Valhalla",
+          "thing",
+          "paganisme",
+          "fjord"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تالار ابدی جنگجویان کشته‌شده = Valhalla."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce guerrier viking qui entrait en transe furieuse avant le combat, se battant sans armure, est un ____.",
+        "options": [
+          "berserker",
+          "scalde",
+          "jarl",
+          "thrall"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جنگجوی خشمگین بدون زره = berserker."
+      },
+      {
+        "type": "mcq",
+        "question": "L'assemblée populaire où les hommes libres vikings se réunissaient pour voter les lois et juger les conflits est le ____.",
+        "options": [
+          "thing",
+          "paganisme",
+          "Valhalla",
+          "drakkar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجلس مردمی وایکینگی = thing."
+      },
+      {
+        "type": "mcq",
+        "question": "Le poète officiel qui composait et récitait des vers en l'honneur des guerriers et des rois est le ____.",
+        "options": [
+          "scalde",
+          "thrall",
+          "berserker",
+          "rune"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شاعر درباری و حماسه‌سرا = scalde."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arme défensive ronde en bois que les Vikings utilisaient pour former un mur lors des combats est le ____.",
+        "options": [
+          "bouclier",
+          "hache",
+          "drakkar",
+          "fjord"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سپر گرد چوبی = bouclier."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arme tranchante à manche, emblématique des guerriers nordiques, est la ____.",
+        "options": [
+          "hache",
+          "bouclier",
+          "rune",
+          "jarl"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تبر جنگی = hache."
+      },
+      {
+        "type": "mcq",
+        "question": "L'attaque violente et rapide d'un lieu pour s'emparer de richesses et de prisonniers est un ____.",
+        "options": [
+          "pillage",
+          "Valhalla",
+          "thing",
+          "paganisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حمله سریع برای غارت = pillage."
+      },
+      {
+        "type": "mcq",
+        "question": "La religion polythéiste des peuples nordiques avant la christianisation est le ____.",
+        "options": [
+          "paganisme",
+          "thing",
+          "rune",
+          "scalde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دین چندخدایی شمال باستان = paganisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans la société viking, l'esclave capturé lors des raids et contraint aux travaux agricoles est un ____.",
+        "options": [
+          "thrall",
+          "jarl",
+          "berserker",
+          "scalde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برده در جامعه وایکینگی = thrall."
+      },
+      {
+        "type": "binary",
+        "question": "Le drakkar et le fjord désignent tous deux des éléments géographiques de la Scandinavie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. drakkar یک نوع کشتی است، اما fjord یک ویژگی جغرافیایی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le Valhalla est le paradis chrétien promis aux fidèles après leur mort.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. والهالا بهشت وایکینگ‌ها برای جنگجویان است، نه بهشت مسیحی."
+      },
+      {
+        "type": "binary",
+        "question": "Le berserker était un guerrier redoutable qui combattait en état de transe furieuse.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. برسرکرها در حالت خلسه و بدون احساس درد می‌جنگیدند."
+      },
+      {
+        "type": "binary",
+        "question": "Le thing était une assemblée démocratique où les hommes libres pouvaient voter et régler les conflits.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تینگ شکلی از دموکراسی اولیه در جوامع شمالی بود."
+      },
+      {
+        "type": "binary",
+        "question": "Le thrall occupait le plus haut rang dans la hiérarchie sociale viking.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. thrall در پایین‌ترین رده اجتماعی (بردگی) قرار داشت."
+      },
+      {
+        "type": "binary",
+        "question": "Les runes étaient un système d'écriture utilisé par les peuples germaniques anciens.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. رون‌ها الفبای باستانی اقوام ژرمنی بودند."
+      },
+      {
+        "type": "binary",
+        "question": "Le scalde et le berserker exerçaient la même fonction dans la société viking.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. scalde شاعر بود، اما berserker جنگجوی خشمگین بود."
+      }
+    ]
+  }
+}
