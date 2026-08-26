@@ -1,0 +1,680 @@
+{
+  "id": "architecture_historic_buildings",
+  "level": "C1",
+  "theme": "Architecture, bâtiments historiques et urbanisme",
+  "theme_fa": "معماری، بناهای تاریخی و شهرسازی",
+  "icon": "🏛️",
+  "inspiration": "Inception (Christopher Nolan, 2010)",
+  "words": [
+    {
+      "fr": "l'architecture",
+      "fa": "معماری",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "L'architecture reflète l'âme d'une civilisation.",
+      "ex_fa": "معماری، روح یک تمدن را منعکس می‌کند."
+    },
+    {
+      "fr": "la façade",
+      "fa": "نما",
+      "emoji": "🏢",
+      "difficulty": 4,
+      "ex": "La façade baroque est ornée de sculptures complexes.",
+      "ex_fa": "نمای باروک با مجسمه‌های پیچیده تزیین شده است."
+    },
+    {
+      "fr": "le pilier",
+      "fa": "ستون، پایه",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "Les piliers gothiques supportent le poids de la voûte.",
+      "ex_fa": "ستون‌های گوتیک وزن سقف قوسی را تحمل می‌کنند."
+    },
+    {
+      "fr": "la voûte",
+      "fa": "سقف قوسی، طاق",
+      "emoji": "⛪",
+      "difficulty": 5,
+      "ex": "La voûte en berceau caractérise l'art roman.",
+      "ex_fa": "طاق گهواره‌ای مشخصه هنر رمانسک است."
+    },
+    {
+      "fr": "le dôme",
+      "fa": "گنبد",
+      "emoji": "🕌",
+      "difficulty": 4,
+      "ex": "Le dôme du Panthéon domine le skyline parisien.",
+      "ex_fa": "گنبد پانتئون بر افق پاریس غالب است."
+    },
+    {
+      "fr": "l'arc-boutant",
+      "fa": "شمعک پشت‌بند",
+      "emoji": "⛪",
+      "difficulty": 5,
+      "ex": "Les arcs-boutants permettent aux cathédrales gothiques de monter vers le ciel.",
+      "ex_fa": "شمعک‌های پشت‌بند به کلیساهای گوتیک اجازه می‌دهند به سوی آسمان قد بکشند."
+    },
+    {
+      "fr": "la nef",
+      "fa": "صحن کلیسا",
+      "emoji": "⛪",
+      "difficulty": 4,
+      "ex": "La nef centrale accueille les fidèles pendant la messe.",
+      "ex_fa": "صحن مرکزی، مؤمنان را در طول مراسم مذهبی می‌پذیرد."
+    },
+    {
+      "fr": "le cloître",
+      "fa": "صومعه، رواق",
+      "emoji": "🏛️",
+      "difficulty": 5,
+      "ex": "Le cloître médiéval entoure un jardin de méditation.",
+      "ex_fa": "صومعه قرون وسطایی باغی برای مراقبه را احاطه می‌کند."
+    },
+    {
+      "fr": "la rosace",
+      "fa": "پنجره گل‌شکل",
+      "emoji": "🌹",
+      "difficulty": 5,
+      "ex": "La rosace de Notre-Dame filtre la lumière en mille couleurs.",
+      "ex_fa": "پنجره گل‌شکل نوتردام نور را به هزار رنگ فیلتر می‌کند."
+    },
+    {
+      "fr": "le chapiteau",
+      "fa": "سرستون",
+      "emoji": "🏛️",
+      "difficulty": 5,
+      "ex": "Le chapiteau corinthien est orné de feuilles d'acanthe.",
+      "ex_fa": "سرستون کورینتی با برگ‌های آکانتوس تزیین شده است."
+    },
+    {
+      "fr": "la flèche",
+      "fa": "مناره، نوک تیز",
+      "emoji": "⛪",
+      "difficulty": 4,
+      "ex": "La flèche de la cathédrale perce les nuages.",
+      "ex_fa": "مناره کلیسا ابرها را می‌شکافد."
+    },
+    {
+      "fr": "le portail",
+      "fa": "درب بزرگ ورودی",
+      "emoji": "🚪",
+      "difficulty": 4,
+      "ex": "Le portail sculpté raconte des scènes bibliques.",
+      "ex_fa": "درب بزرگ حکاکی‌شده، صحنه‌های کتاب مقدس را بازگو می‌کند."
+    },
+    {
+      "fr": "l'urbanisme",
+      "fa": "شهرسازی",
+      "emoji": "🏙️",
+      "difficulty": 4,
+      "ex": "L'urbanisme moderne intègre espaces verts et mobilité douce.",
+      "ex_fa": "شهرسازی مدرن، فضاهای سبز و حمل‌ونقل نرم را ادغام می‌کند."
+    },
+    {
+      "fr": "le patrimoine",
+      "fa": "میراث فرهنگی",
+      "emoji": "🏛️",
+      "difficulty": 4,
+      "ex": "Le patrimoine architectural doit être préservé pour les générations futures.",
+      "ex_fa": "میراث معماری باید برای نسل‌های آینده حفظ شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'architecte des rêves",
+      "text": "Ariane est une jeune étudiante en {{BLANK_1}} brillante. Dom Cobb, un extracteur de secrets, la recrute pour une mission spéciale. Son rôle : concevoir les labyrinthes des rêves partagés. Elle apprend à manipuler l'espace : une {{BLANK_2}} peut se plier sur elle-même, un {{BLANK_3}} peut devenir infini. Dans le rêve, elle construit une {{BLANK_4}} qui défie la gravité, un {{BLANK_5}} qui touche les étoiles. L'{{BLANK_6}} d'une cathédrale imaginaire s'étend à perte de vue. Le {{BLANK_7}} central devient un jardin suspendu. Une {{BLANK_8}} lumineuse filtre la lumière du rêve en arcs-en-ciel. Chaque {{BLANK_9}} raconte une histoire différente. La {{BLANK_10}} perce le ciel comme une aiguille. Le {{BLANK_11}} monumental mène à des mondes cachés. Ariane comprend que l'{{BLANK_13}} des rêves obéit à des lois différentes de la réalité. Elle doit protéger le {{BLANK_14}} émotionnel de l'équipe en créant des structures stables. Dans le niveau le plus profond, elle bâtit une ville entière où le temps s'étire. Les {{BLANK_2}}s des immeubles se reflètent dans des miroirs impossibles. Quand la mission se termine, Ariane sait que l'{{BLANK_1}} n'est pas seulement l'art de construire des murs, mais celui de bâtir des mondes, qu'ils soient de pierre ou de songe.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "architecture",
+          "options": [
+            "architecture",
+            "façade",
+            "pilier",
+            "voûte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "façade",
+          "options": [
+            "façade",
+            "dôme",
+            "arc-boutant",
+            "nef"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "pilier",
+          "options": [
+            "pilier",
+            "cloître",
+            "rosace",
+            "chapiteau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "voûte",
+          "options": [
+            "voûte",
+            "flèche",
+            "portail",
+            "urbanisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "dôme",
+          "options": [
+            "dôme",
+            "patrimoine",
+            "architecture",
+            "façade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "arc-boutant",
+          "options": [
+            "arc-boutant",
+            "pilier",
+            "voûte",
+            "cloître"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "nef",
+          "options": [
+            "nef",
+            "rosace",
+            "chapiteau",
+            "flèche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "rosace",
+          "options": [
+            "rosace",
+            "portail",
+            "urbanisme",
+            "patrimoine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "chapiteau",
+          "options": [
+            "chapiteau",
+            "architecture",
+            "façade",
+            "dôme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "flèche",
+          "options": [
+            "flèche",
+            "arc-boutant",
+            "nef",
+            "pilier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "portail",
+          "options": [
+            "portail",
+            "voûte",
+            "cloître",
+            "rosace"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "urbanisme",
+          "options": [
+            "urbanisme",
+            "chapiteau",
+            "flèche",
+            "architecture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "patrimoine",
+          "options": [
+            "patrimoine",
+            "façade",
+            "portail",
+            "urbanisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "patrimoine",
+          "options": [
+            "patrimoine",
+            "dôme",
+            "arc-boutant",
+            "nef"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les cathédrales de l'inconscient",
+      "inspiration": "Inception (Christopher Nolan, 2010)",
+      "text": "À peine Ariane eut-elle tracé sa première ligne sur le carnet quadrillé que Dom Cobb sut qu'il avait trouvé son architecte. Cette jeune étudiante en {{BLANK_1}} ne construisait pas des bâtiments : elle créait des géographies mentales, des labyrinthes où l'esprit pouvait se perdre et se retrouver. Dans le monde des rêves partagés, elle apprit que la gravité était une suggestion, que le temps pouvait s'étirer comme du caramel. Elle pliait une {{BLANK_2}} haussmannienne sur elle-même jusqu'à ce que Paris devienne un cube, elle faisait pousser un {{BLANK_3}} corinthien jusqu'à ce qu'il perce les nuages. Dans le premier niveau du rêve, elle érigea une {{BLANK_4}} romane qui pesait de tout son poids de pierre imaginaire, tandis qu'un {{BLANK_5}} byzantin flottait comme une bulle de savon au-dessus de la ville. L'{{BLANK_6}} gothique qu'elle dessina permettait aux murs de monter vers l'infini, défiant les lois de la physique onirique. La {{BLANK_7}} centrale de sa cathédrale intérieure devenait un jardin où poussaient les souvenirs d'enfance. Une {{BLANK_8}} multicolore filtrait la lumière du rêve en mille fragments de mémoire, chaque {{BLANK_9}} sculpté racontait une histoire que le dormeur avait oubliée. La {{BLANK_10}} de sa tour imaginaire perçait le ciel comme une aiguille cousant ensemble les couches du subconscient. Le {{BLANK_11}} monumental s'ouvrait sur des mondes emboîtés, chaque porte menant à un rêve dans le rêve. Ariane comprit que l'{{BLANK_13}} des songes n'était pas fait de briques, mais d'émotions cristallisées. Elle devait protéger le {{BLANK_14}} fragile de l'équipe en bâtissant des structures qui résisteraient aux assauts du chaos. Dans le limbe, ce niveau le plus profond où le temps s'étirait en décennies, elle construisit une ville entière avec Dom, une métropole de regrets et d'espoirs où les {{BLANK_2}}s des gratte-ciels reflétaient des visages qu'ils avaient aimés et perdus. Quand elle se réveilla dans l'avion, Ariane sut que la véritable {{BLANK_1}} n'était pas celle qui défie la gravité, mais celle qui bâtit des ponts entre les âmes, qu'elles soient éveillées ou endormies.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "architecture",
+          "options": [
+            "architecture",
+            "façade",
+            "pilier",
+            "voûte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "façade",
+          "options": [
+            "façade",
+            "dôme",
+            "arc-boutant",
+            "nef"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "pilier",
+          "options": [
+            "pilier",
+            "cloître",
+            "rosace",
+            "chapiteau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "voûte",
+          "options": [
+            "voûte",
+            "flèche",
+            "portail",
+            "urbanisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "dôme",
+          "options": [
+            "dôme",
+            "patrimoine",
+            "architecture",
+            "façade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "arc-boutant",
+          "options": [
+            "arc-boutant",
+            "pilier",
+            "voûte",
+            "cloître"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "nef",
+          "options": [
+            "nef",
+            "rosace",
+            "chapiteau",
+            "flèche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "rosace",
+          "options": [
+            "rosace",
+            "portail",
+            "urbanisme",
+            "patrimoine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "chapiteau",
+          "options": [
+            "chapiteau",
+            "architecture",
+            "façade",
+            "dôme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "flèche",
+          "options": [
+            "flèche",
+            "arc-boutant",
+            "nef",
+            "pilier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "portail",
+          "options": [
+            "portail",
+            "voûte",
+            "cloître",
+            "rosace"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "urbanisme",
+          "options": [
+            "urbanisme",
+            "chapiteau",
+            "flèche",
+            "architecture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "patrimoine",
+          "options": [
+            "patrimoine",
+            "façade",
+            "portail",
+            "urbanisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "patrimoine",
+          "options": [
+            "patrimoine",
+            "dôme",
+            "arc-boutant",
+            "nef"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Architecture et bâtiments historiques",
+    "title_fa": "آزمون : معماری و بناهای تاریخی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art de concevoir et de construire des bâtiments en alliant esthétique, technique et fonction est l'____.",
+        "options": [
+          "architecture",
+          "façade",
+          "pilier",
+          "voûte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر طراحی و ساخت بنا = architecture."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mur extérieur d'un bâtiment, souvent décoré et visible depuis la rue, est la ____.",
+        "options": [
+          "façade",
+          "dôme",
+          "arc-boutant",
+          "nef"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نمای بیرونی ساختمان = façade."
+      },
+      {
+        "type": "mcq",
+        "question": "L'élément vertical de soutien qui supporte les charges d'une construction est le ____.",
+        "options": [
+          "pilier",
+          "cloître",
+          "rosace",
+          "chapiteau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ستون حامل بار = pilier."
+      },
+      {
+        "type": "mcq",
+        "question": "La structure arquée qui couvre un espace et répartit les charges sur les murs ou piliers est la ____.",
+        "options": [
+          "voûte",
+          "flèche",
+          "portail",
+          "urbanisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سقف قوسی = voûte."
+      },
+      {
+        "type": "mcq",
+        "question": "La couverture hémisphérique ou semi-sphérique qui couronne un édifice est le ____.",
+        "options": [
+          "dôme",
+          "patrimoine",
+          "architecture",
+          "façade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گنبد = dôme."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arc extérieur qui contrebut la poussée des voûtes dans l'architecture gothique est l'____.",
+        "options": [
+          "arc-boutant",
+          "pilier",
+          "voûte",
+          "cloître"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شمعک پشت‌بند گوتیک = arc-boutant."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie centrale et allongée d'une église où se rassemblent les fidèles est la ____.",
+        "options": [
+          "nef",
+          "rosace",
+          "chapiteau",
+          "flèche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صحن مرکزی کلیسا = nef."
+      },
+      {
+        "type": "mcq",
+        "question": "La galerie couverte entourant un jardin intérieur dans un monastère ou une cathédrale est le ____.",
+        "options": [
+          "cloître",
+          "portail",
+          "urbanisme",
+          "patrimoine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رواق صومعه = cloître."
+      },
+      {
+        "type": "mcq",
+        "question": "La grande baie circulaire ornée de vitraux, typique des cathédrales gothiques, est la ____.",
+        "options": [
+          "rosace",
+          "portail",
+          "urbanisme",
+          "patrimoine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پنجره گل‌شکل = rosace."
+      },
+      {
+        "type": "mcq",
+        "question": "L'élément sculpté qui couronne un pilier ou une colonne, souvent décoré de motifs végétaux, est le ____.",
+        "options": [
+          "chapiteau",
+          "architecture",
+          "façade",
+          "dôme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سرستون = chapiteau."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie pointue et élancée qui termine une tour ou un clocher est la ____.",
+        "options": [
+          "flèche",
+          "arc-boutant",
+          "nef",
+          "pilier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مناره نوک‌تیز = flèche."
+      },
+      {
+        "type": "mcq",
+        "question": "La grande porte d'entrée monumentale d'un édifice religieux, souvent richement sculptée, est le ____.",
+        "options": [
+          "portail",
+          "voûte",
+          "cloître",
+          "rosace"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درب بزرگ ورودی = portail."
+      },
+      {
+        "type": "mcq",
+        "question": "La discipline qui planifie et organise l'espace urbain, les rues et les quartiers d'une ville est l'____.",
+        "options": [
+          "urbanisme",
+          "chapiteau",
+          "flèche",
+          "architecture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برنامه‌ریزی فضای شهری = urbanisme."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des biens culturels, monuments et traditions hérités du passé et transmis aux générations futures est le ____.",
+        "options": [
+          "patrimoine",
+          "façade",
+          "portail",
+          "urbanisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "میراث فرهنگی = patrimoine."
+      },
+      {
+        "type": "binary",
+        "question": "L'arc-boutant est un élément structurel qui permet aux murs des cathédrales gothiques d'être plus hauts et percés de grandes baies.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. شمعک پشت‌بند فشار سقف را به بیرون منتقل می‌کند و اجازه می‌دهد دیوارها بلندتر و پر از پنجره باشند."
+      },
+      {
+        "type": "binary",
+        "question": "La nef est la partie la plus élevée d'une église, située au-dessus du chœur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. nef صحن مرکزی است که مؤمنان در آن جمع می‌شوند، نه بلندترین بخش."
+      },
+      {
+        "type": "binary",
+        "question": "Une rosace est une fenêtre circulaire ornée de vitraux, caractéristique de l'architecture gothique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. rosace پنجره دایره‌ای با شیشه‌های رنگی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le chapiteau est la base d'une colonne, la partie qui repose sur le sol.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. chapiteau سرستون است، نه پایه آن."
+      },
+      {
+        "type": "binary",
+        "question": "L'urbanisme est la science qui étudie les étoiles et les planètes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. urbanisme شهرسازی است، مطالعه ستارگان astronomie نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le patrimoine architectural comprend les bâtiments historiques qui doivent être préservés pour leur valeur culturelle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. میراث معماری شامل بناهای تاریخی با ارزش فرهنگی است."
+      }
+    ]
+  }
+}
