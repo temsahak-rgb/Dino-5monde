@@ -1,0 +1,736 @@
+{
+  "id": "gastronomy_cuisine",
+  "level": "C1",
+  "theme": "Gastronomie, cuisine et art culinaire",
+  "theme_fa": "هنر آشپزی، غذا و فرهنگ غذایی",
+  "icon": "🍽️",
+  "inspiration": "Chef's Table (David Gelb, Netflix, 2015-présent)",
+  "words": [
+    {
+      "fr": "la gastronomie",
+      "fa": "هنر آشپزی، خوراک‌شناسی",
+      "emoji": "👨‍🍳",
+      "difficulty": 4,
+      "ex": "La gastronomie française est inscrite au patrimoine mondial de l'UNESCO.",
+      "ex_fa": "هنر آشپزی فرانسوی در میراث جهانی یونسکو ثبت شده است."
+    },
+    {
+      "fr": "le sommelier",
+      "fa": "متخصص شراب",
+      "emoji": "🍷",
+      "difficulty": 4,
+      "ex": "Le sommelier a choisi un vin parfait pour accompagner le poisson.",
+      "ex_fa": "متخصص شراب، شرابی عالی برای همراهی با ماهی انتخاب کرد."
+    },
+    {
+      "fr": "la dégustation",
+      "fa": "چشیدن و ارزیابی غذا",
+      "emoji": "🍴",
+      "difficulty": 4,
+      "ex": "La dégustation à l'aveugle permet d'évaluer objectivement les vins.",
+      "ex_fa": "چشیدن کور امکان ارزیابی عینی شراب‌ها را می‌دهد."
+    },
+    {
+      "fr": "le mets",
+      "fa": "غذا، خوراک (رسمی)",
+      "emoji": "🍲",
+      "difficulty": 4,
+      "ex": "Ce mets délicat a été préparé avec des ingrédients rares.",
+      "ex_fa": "این غذای لطیف با مواد اولیه کمیاب تهیه شده است."
+    },
+    {
+      "fr": "le convive",
+      "fa": "مهمان غذا",
+      "emoji": "🍽️",
+      "difficulty": 4,
+      "ex": "Chaque convive a reçu un menu personnalisé.",
+      "ex_fa": "هر مهمان یک منوی شخصی‌سازی‌شده دریافت کرد."
+    },
+    {
+      "fr": "le coulis",
+      "fa": "سس میوه‌ای غلیظ",
+      "emoji": "🍓",
+      "difficulty": 5,
+      "ex": "Le coulis de framboise accompagne parfaitement le dessert.",
+      "ex_fa": "سس تمشک به خوبی با دسر همراهی می‌کند."
+    },
+    {
+      "fr": "la mijotée",
+      "fa": "خوراک آرام‌پز",
+      "emoji": "🥘",
+      "difficulty": 5,
+      "ex": "Cette mijotée de légumes a cuit pendant quatre heures.",
+      "ex_fa": "این خوراک سبزیجات چهار ساعت آرام پخته شده است."
+    },
+    {
+      "fr": "le carpaccio",
+      "fa": "کارپاچیو (گوشت یا ماهی خام نازک)",
+      "emoji": "🐟",
+      "difficulty": 5,
+      "ex": "Le carpaccio de bœuf est servi avec des copeaux de parmesan.",
+      "ex_fa": "کارپاچیوی گوشت گاو با تراشه‌های پارمزان سرو می‌شود."
+    },
+    {
+      "fr": "la julienne",
+      "fa": "خلال سبزیجات",
+      "emoji": "🥕",
+      "difficulty": 5,
+      "ex": "Coupez les carottes en julienne pour la soupe.",
+      "ex_fa": "هویج‌ها را برای سوپ خلالی کنید."
+    },
+    {
+      "fr": "le bouquet garni",
+      "fa": "دسته سبزی معطر",
+      "emoji": "🌿",
+      "difficulty": 5,
+      "ex": "Ajoutez un bouquet garni au bouillon pour le parfumer.",
+      "ex_fa": "برای معطر کردن آبگوشت، یک دسته سبزی معطر اضافه کنید."
+    },
+    {
+      "fr": "le flambage",
+      "fa": "شعله‌ور کردن غذا با الکل",
+      "emoji": "🔥",
+      "difficulty": 5,
+      "ex": "Le flambage des crêpes au Grand Marnier est spectaculaire.",
+      "ex_fa": "شعله‌ور کردن کرپ با گراند مارنیه تماشایی است."
+    },
+    {
+      "fr": "la blanquette",
+      "fa": "خوراک سفید (گوشت در سس سفید)",
+      "emoji": "🍖",
+      "difficulty": 5,
+      "ex": "La blanquette de veau est un classique de la cuisine familiale.",
+      "ex_fa": "خوراک سفید گوساله از غذاهای کلاسیک خانوادگی است."
+    },
+    {
+      "fr": "le terroir",
+      "fa": "خاستگاه جغرافیایی و ویژگی‌های آن",
+      "emoji": "🏞️",
+      "difficulty": 5,
+      "ex": "Ce fromage exprime parfaitement le terroir de sa région.",
+      "ex_fa": "این پنیر به خوبی ویژگی خاستگاه منطقه‌اش را بیان می‌کند."
+    },
+    {
+      "fr": "la pâtisserie",
+      "fa": "شیرینی‌پزی، قنادی",
+      "emoji": "🍰",
+      "difficulty": 3,
+      "ex": "La pâtisserie française est réputée dans le monde entier.",
+      "ex_fa": "شیرینی‌پزی فرانسوی در سراسر جهان مشهور است."
+    },
+    {
+      "fr": "le chef étoilé",
+      "fa": "سرآشپز ستاره‌دار میشلن",
+      "emoji": "⭐",
+      "difficulty": 4,
+      "ex": "Ce chef étoilé possède trois étoiles au guide Michelin.",
+      "ex_fa": "این سرآشپز ستاره‌دار سه ستاره در راهنمای میشلن دارد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le dîner de gala",
+      "title_fa": "شام رسمی",
+      "text": "Ce soir, un grand dîner de gala est organisé au restaurant Le Cinq. Le {{BLANK_1}} Marc Veyrat prépare un menu exceptionnel. Chaque {{BLANK_2}} recevra douze plats différents. Pour commencer, un {{BLANK_3}} de Saint-Jacques avec un {{BLANK_4}} de mangue. Ensuite, une {{BLANK_5}} de légumes du jardin, coupés en fine {{BLANK_6}} et parfumés avec un {{BLANK_7}}. Le plat principal est une {{BLANK_8}} de veau traditionnelle, servie avec des champignons. Pour le fromage, le serveur présente une sélection qui exprime parfaitement le {{BLANK_9}} de chaque région. Le {{BLANK_10}} recommande des vins adaptés à chaque plat. Avant le dessert, les invités participent à une {{BLANK_11}} de vins rares. Le dessert est une œuvre de {{BLANK_12}} : un soufflé au chocolat, suivi d'un {{BLANK_13}} de bœuf pour les amateurs de cru. Pour terminer en beauté, le {{BLANK_14}} des crêpes Suzette impressionne tous les invités. À la fin du repas, les {{BLANK_15}} applaudissent longuement le chef. La {{BLANK_16}} française a encore démontré son excellence.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "chef étoilé",
+          "options": [
+            "chef étoilé",
+            "sommelier",
+            "convive",
+            "pâtissier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "convive",
+          "options": [
+            "convive",
+            "chef étoilé",
+            "sommelier",
+            "serveur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "carpaccio",
+          "options": [
+            "carpaccio",
+            "coulis",
+            "mijotée",
+            "blanquette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "coulis",
+          "options": [
+            "coulis",
+            "bouquet garni",
+            "julienne",
+            "terroir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mijotée",
+          "options": [
+            "mijotée",
+            "blanquette",
+            "pâtisserie",
+            "dégustation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "julienne",
+          "options": [
+            "julienne",
+            "coulis",
+            "bouquet garni",
+            "carpaccio"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "bouquet garni",
+          "options": [
+            "bouquet garni",
+            "coulis",
+            "julienne",
+            "terroir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "blanquette",
+          "options": [
+            "blanquette",
+            "mijotée",
+            "pâtisserie",
+            "dégustation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "terroir",
+          "options": [
+            "terroir",
+            "bouquet garni",
+            "julienne",
+            "coulis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sommelier",
+          "options": [
+            "sommelier",
+            "chef étoilé",
+            "convive",
+            "pâtissier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "dégustation",
+          "options": [
+            "dégustation",
+            "flambage",
+            "gastronomie",
+            "mijotée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "pâtisserie",
+          "options": [
+            "pâtisserie",
+            "gastronomie",
+            "blanquette",
+            "terroir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "carpaccio",
+          "options": [
+            "carpaccio",
+            "coulis",
+            "mijotée",
+            "blanquette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "flambage",
+          "options": [
+            "flambage",
+            "dégustation",
+            "terroir",
+            "bouquet garni"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "convives",
+          "options": [
+            "convives",
+            "chefs étoilés",
+            "sommeliers",
+            "pâtissiers"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "gastronomie",
+          "options": [
+            "gastronomie",
+            "pâtisserie",
+            "dégustation",
+            "terroir"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'art de la table",
+      "title_fa": "هنر پذیرایی",
+      "inspiration": "Chef's Table (David Gelb, Netflix, 2015-présent)",
+      "text": "À peine le dernier rayon de soleil eut-il disparu derrière les toits de Paris que le chef triplement étoilé Antoine Marchand ajusta sa toque blanche. Ce soir, il recevait les plus grands critiques gastronomiques du monde, ces arbitres du goût dont une seule phrase pouvait faire ou défaire une carrière. Dans les cuisines du restaurant, c'était un ballet parfaitement orchestré. Chaque geste était millimétré, chaque ingrédient pesé au gramme près. Antoine savait que la {{BLANK_1}} n'était pas simplement l'art de cuisiner, mais une philosophie, une manière de raconter des histoires à travers les saveurs. Les premiers {{BLANK_2}} arrivaient, vêtus de leurs plus beaux atours, prêts à juger chaque bouchée avec une sévérité professionnelle. Antoine les observa depuis la passe, cherchant dans leurs regards la moindre lueur d'approbation. Le premier plat arriva : un {{BLANK_3}} de bœuf wagyu, tranché si fin qu'il était presque transparent, accompagné d'un {{BLANK_4}} de tomates anciennes qui capturait l'essence même de l'été. Le silence qui suivit la première bouchée était éloquent. Puis vint une {{BLANK_5}} de légumes oubliés, cuite pendant six heures à feu doux, où chaque racine révélait des secrets enfouis. Les légumes, coupés en parfaite {{BLANK_6}}, étaient parfumés par un {{BLANK_7}} composé de thym, laurier et queues de persil du jardin personnel d'Antoine. Le plat principal fit sensation : une {{BLANK_8}} de volaille de Bresse, où la viande fondait littéralement dans la bouche, nappée d'une sauce onctueuse qui avait mijoté depuis l'aube. Pendant ce temps, dans la salle, le {{BLANK_10}} dansait entre les tables comme un somnambule inspiré, proposant des accords mets-vins qui relevaient de l'alchimie pure. Il expliquait avec passion comment chaque bouteille avait été choisie pour dialoguer avec les plats, créant des conversations silencieuses entre le verre et l'assiette. Pour les fromages, Antoine avait sélectionné une collection qui racontait l'histoire de chaque {{BLANK_9}} français : le roquefort des caves millénaires, le comté des alpages jurassiens, l'époisses crémeux de Bourgogne. Chaque bouchée était un voyage géographique, une leçon de géologie comestible. Puis vint le moment tant attendu de la {{BLANK_11}} des vins rares. Les convives, les yeux bandés, tentaient d'identifier des crus prestigieux, se fiant uniquement à leur palais et à leur mémoire sensorielle. C'était un jeu dangereux où l'ego des experts était mis à nue. Le dessert arriva comme une apothéose : une œuvre de {{BLANK_12}} qui défiait les lois de la gravité, un soufflé au chocolat grand cru qui montait comme une cathédrale éphémère. Mais Antoine avait gardé une surprise finale pour les amateurs d'audace : un {{BLANK_13}} de thon rouge, servi avec une gelée de yuzu qui électrisait les papilles. Pour clore cette soirée mémorable, le {{BLANK_14}} des crêpes Suzette transforma la salle en théâtre, les flammes bleues dansant comme des esprits bienveillants au-dessus des assiettes. Quand les derniers {{BLANK_15}} quittèrent le restaurant, bien après minuit, Antoine resta seul dans sa cuisine vide. Il regarda les casseroles encore chaudes, les plans de travail marbrés de farine, et sourit. La {{BLANK_16}} n'était pas qu'une affaire de technique ou d'ingrédients rares. C'était un acte d'amour, une offrande faite à des inconnus qui devenaient, l'espace d'un repas, des amis intimes. Demain, il recommencerait, cherchant encore cette perfection insaisissable qui transformait un simple repas en souvenir impérissable. Car au fond, cuisiner, c'était tenter de capturer l'instant, de le préserver dans une saveur, un parfum, une texture. C'était lutter contre l'oubli, bouchée après bouchée.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "gastronomie",
+          "options": [
+            "gastronomie",
+            "pâtisserie",
+            "dégustation",
+            "terroir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "convives",
+          "options": [
+            "convives",
+            "chefs étoilés",
+            "sommeliers",
+            "pâtissiers"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "carpaccio",
+          "options": [
+            "carpaccio",
+            "coulis",
+            "mijotée",
+            "blanquette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "coulis",
+          "options": [
+            "coulis",
+            "bouquet garni",
+            "julienne",
+            "terroir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mijotée",
+          "options": [
+            "mijotée",
+            "blanquette",
+            "pâtisserie",
+            "dégustation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "julienne",
+          "options": [
+            "julienne",
+            "coulis",
+            "bouquet garni",
+            "carpaccio"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "bouquet garni",
+          "options": [
+            "bouquet garni",
+            "coulis",
+            "julienne",
+            "terroir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "blanquette",
+          "options": [
+            "blanquette",
+            "mijotée",
+            "pâtisserie",
+            "dégustation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "terroir",
+          "options": [
+            "terroir",
+            "bouquet garni",
+            "julienne",
+            "coulis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sommelier",
+          "options": [
+            "sommelier",
+            "chef étoilé",
+            "convive",
+            "pâtissier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "dégustation",
+          "options": [
+            "dégustation",
+            "flambage",
+            "gastronomie",
+            "mijotée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "pâtisserie",
+          "options": [
+            "pâtisserie",
+            "gastronomie",
+            "blanquette",
+            "terroir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "carpaccio",
+          "options": [
+            "carpaccio",
+            "coulis",
+            "mijotée",
+            "blanquette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "flambage",
+          "options": [
+            "flambage",
+            "dégustation",
+            "terroir",
+            "bouquet garni"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "convives",
+          "options": [
+            "convives",
+            "chefs étoilés",
+            "sommeliers",
+            "pâtissiers"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "gastronomie",
+          "options": [
+            "gastronomie",
+            "pâtisserie",
+            "dégustation",
+            "terroir"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Art culinaire et gastronomie",
+    "title_fa": "آزمون : هنر آشپزی و خوراک‌شناسی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art de préparer et de déguster des mets raffinés, considéré comme un patrimoine culturel, s'appelle la ____.",
+        "options": [
+          "gastronomie",
+          "pâtisserie",
+          "dégustation",
+          "terroir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر آشپزی سطح بالا = gastronomie."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans un restaurant gastronomique, ce professionnel conseille les clients sur le choix des vins en fonction des plats. C'est le ____.",
+        "options": [
+          "sommelier",
+          "chef étoilé",
+          "convive",
+          "pâtissier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص شراب در رستوران = sommelier."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour évaluer objectivement la qualité d'un vin, les experts organisent une ____ à l'aveugle où ils ne voient pas les étiquettes.",
+        "options": [
+          "dégustation",
+          "flambage",
+          "gastronomie",
+          "mijotée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چشیدن و ارزیابی غذا یا نوشیدنی = dégustation."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans la langue littéraire et soutenue, un plat préparé avec soin est appelé un ____.",
+        "options": [
+          "mets",
+          "convive",
+          "coulis",
+          "terroir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "غذا یا خوراک (واژه رسمی) = mets."
+      },
+      {
+        "type": "mcq",
+        "question": "Une personne invitée à partager un repas dans un restaurant ou chez quelqu'un est un ____.",
+        "options": [
+          "convive",
+          "chef étoilé",
+          "sommelier",
+          "pâtissier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مهمان یک وعده غذا = convive."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour accompagner une panna cotta, le chef prépare une sauce épaisse à base de fruits rouges mixés et sucrés. C'est un ____.",
+        "options": [
+          "coulis",
+          "bouquet garni",
+          "julienne",
+          "carpaccio"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سس غلیظ میوه‌ای = coulis."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce plat de légumes a cuit très lentement pendant des heures dans une cocotte, permettant aux saveurs de se mélanger. C'est une ____.",
+        "options": [
+          "mijotée",
+          "blanquette",
+          "pâtisserie",
+          "dégustation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "غذای آرام‌پز = mijotée."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce plat italien consiste en de fines tranches de bœuf cru servies avec du parmesan et de l'huile d'olive. C'est un ____.",
+        "options": [
+          "carpaccio",
+          "coulis",
+          "mijotée",
+          "blanquette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "غذای ایتالیایی با گوشت خام نازک = carpaccio."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour une soupe, le chef demande à son assistant de couper les carottes et poireaux en très fins bâtonnets. C'est une ____.",
+        "options": [
+          "julienne",
+          "coulis",
+          "bouquet garni",
+          "carpaccio"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برش خلالی نازک سبزیجات = julienne."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour parfumer un bouillon, on attache ensemble du thym, du laurier et des queues de persil. Cet assemblage s'appelle un ____.",
+        "options": [
+          "bouquet garni",
+          "coulis",
+          "julienne",
+          "terroir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دسته سبزی معطر برای آبگوشت = bouquet garni."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour préparer des crêpes Suzette, on verse de la liqueur d'orange sur les crêpes chaudes et on y met le feu. Cette technique s'appelle le ____.",
+        "options": [
+          "flambage",
+          "dégustation",
+          "terroir",
+          "bouquet garni"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شعله‌ور کردن غذا با الکل = flambage."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce plat traditionnel français consiste en de la viande de veau cuite dans une sauce blanche à base de crème et de champignons. C'est une ____.",
+        "options": [
+          "blanquette",
+          "mijotée",
+          "pâtisserie",
+          "dégustation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خوراک گوشت در سس سفید = blanquette."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce concept désigne l'ensemble des caractéristiques géographiques, climatiques et humaines qui donnent son caractère unique à un produit agricole. C'est le ____.",
+        "options": [
+          "terroir",
+          "bouquet garni",
+          "julienne",
+          "coulis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ویژگی‌های جغرافیایی و انسانی یک منطقه کشاورزی = terroir."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de préparer des gâteaux, tartes et desserts sucrés s'appelle la ____.",
+        "options": [
+          "pâtisserie",
+          "gastronomie",
+          "blanquette",
+          "terroir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر شیرینی‌پزی = pâtisserie."
+      },
+      {
+        "type": "mcq",
+        "question": "Un cuisinier qui a reçu une ou plusieurs étoiles dans le guide Michelin est appelé un ____.",
+        "options": [
+          "chef étoilé",
+          "sommelier",
+          "convive",
+          "pâtissier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سرآشپز دارای ستاره میشلن = chef étoilé."
+      },
+      {
+        "type": "binary",
+        "question": "Le terme 'mets' est un synonyme courant de 'boisson' dans le langage culinaire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. mets به معنای غذا و خوراک است، نه نوشیدنی."
+      },
+      {
+        "type": "binary",
+        "question": "Le terroir désigne uniquement le sol sur lequel pousse une plante.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. terroir شامل خاک، آب‌وهوا، فرهنگ و دانش انسانی یک منطقه است."
+      },
+      {
+        "type": "binary",
+        "question": "Un carpaccio peut être préparé avec du poisson cru, pas seulement avec de la viande.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کارپاچیو می‌تواند از گوشت یا ماهی خام نازک تهیه شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le flambage consiste à faire cuire un aliment à très haute température dans un four.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. flambage یعنی آتش زدن الکل روی غذا برای ایجاد شعله."
+      },
+      {
+        "type": "binary",
+        "question": "La julienne et le bouquet garni sont tous deux des techniques de découpe des légumes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. julienne یک نوع برش است، اما bouquet garni یک دسته سبزی معطر کامل است."
+      }
+    ]
+  }
+}
