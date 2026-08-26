@@ -1,0 +1,680 @@
+{
+  "id": "emergency_medicine",
+  "level": "C1",
+  "theme": "Médecine d'urgence, hôpital et soins intensifs",
+  "theme_fa": "پزشکی اورژانس، بیمارستان و مراقبت‌های ویژه",
+  "icon": "🏥",
+  "inspiration": "Urgences (ER - Michael Crichton, 1994-2009)",
+  "words": [
+    {
+      "fr": "l'urgence",
+      "fa": "اورژانس",
+      "emoji": "🚑",
+      "difficulty": 3,
+      "ex": "Le service des urgences fonctionne vingt-quatre heures sur vingt-quatre.",
+      "ex_fa": "بخش اورژانس بیست و چهار ساعته فعال است."
+    },
+    {
+      "fr": "le diagnostic",
+      "fa": "تشخیص پزشکی",
+      "emoji": "🩺",
+      "difficulty": 4,
+      "ex": "Le diagnostic précoce sauve des vies dans les AVC.",
+      "ex_fa": "تشخیص زودهنگام در سکته‌ها جان نجات می‌دهد."
+    },
+    {
+      "fr": "la perfusion",
+      "fa": "سرم‌تراپی، تزریق وریدی",
+      "emoji": "💉",
+      "difficulty": 4,
+      "ex": "La perfusion saline réhydrate rapidement le patient.",
+      "ex_fa": "سرم نمکی بیمار را به سرعت بازآبدهی می‌کند."
+    },
+    {
+      "fr": "le scanner",
+      "fa": "سی‌تی اسکن",
+      "emoji": "📡",
+      "difficulty": 4,
+      "ex": "Le scanner cérébral a révélé une hémorragie interne.",
+      "ex_fa": "سی‌تی اسکن مغزی خونریزی داخلی را آشکار کرد."
+    },
+    {
+      "fr": "la réanimation",
+      "fa": "احیاء، بخش مراقبت‌های ویژه",
+      "emoji": "💓",
+      "difficulty": 5,
+      "ex": "La réanimation cardiaque a permis de sauver le patient.",
+      "ex_fa": "احیاء قلبی بیمار را نجات داد."
+    },
+    {
+      "fr": "le pronostic",
+      "fa": "پیش‌آگهی",
+      "emoji": "📋",
+      "difficulty": 5,
+      "ex": "Le pronostic vital est engagé chez ce polytraumatisé.",
+      "ex_fa": "پیش‌آگهی حیاتی این بیمار چندضربه‌ای در خطر است."
+    },
+    {
+      "fr": "l'intervention chirurgicale",
+      "fa": "عمل جراحی",
+      "emoji": "🔪",
+      "difficulty": 4,
+      "ex": "L'intervention chirurgicale durera environ trois heures.",
+      "ex_fa": "عمل جراحی حدود سه ساعت طول می‌کشد."
+    },
+    {
+      "fr": "le brancard",
+      "fa": "برانکارد",
+      "emoji": "🛏️",
+      "difficulty": 3,
+      "ex": "Les ambulanciers ont transporté la victime sur un brancard.",
+      "ex_fa": "امدادگران قربانی را روی برانکارد حمل کردند."
+    },
+    {
+      "fr": "l'anesthésie",
+      "fa": "بیهوشی",
+      "emoji": "😴",
+      "difficulty": 4,
+      "ex": "L'anesthésie générale endort complètement le patient.",
+      "ex_fa": "بیهوشی عمومی بیمار را کاملاً به خواب می‌برد."
+    },
+    {
+      "fr": "la suture",
+      "fa": "بخیه",
+      "emoji": "🧵",
+      "difficulty": 4,
+      "ex": "Le médecin a réalisé une suture de douze points.",
+      "ex_fa": "پزشک دوازده بخیه زد."
+    },
+    {
+      "fr": "le coma",
+      "fa": "کما",
+      "emoji": "💤",
+      "difficulty": 4,
+      "ex": "Le patient est plongé dans un coma artificiel pour protéger son cerveau.",
+      "ex_fa": "بیمار برای محافظت از مغزش در کمای مصنوعی است."
+    },
+    {
+      "fr": "l'électrocardiogramme",
+      "fa": "نوار قلب (ECG)",
+      "emoji": "📈",
+      "difficulty": 5,
+      "ex": "L'électrocardiogramme montre un rythme sinusal normal.",
+      "ex_fa": "نوار قلب، ریتم سینوسی طبیعی را نشان می‌دهد."
+    },
+    {
+      "fr": "le triage",
+      "fa": "تريیاژ (اولویت‌بندی بیماران)",
+      "emoji": "🔴",
+      "difficulty": 5,
+      "ex": "Le triage classe les patients selon la gravité de leur état.",
+      "ex_fa": "تريیاژ بیماران را بر اساس شدت حالشان طبقه‌بندی می‌کند."
+    },
+    {
+      "fr": "le défibrillateur",
+      "fa": "دفيبريلاتور (شوک‌دهنده قلبی)",
+      "emoji": "⚡",
+      "difficulty": 5,
+      "ex": "Le défibrillateur a rétabli un rythme cardiaque normal.",
+      "ex_fa": "دفيبريلاتور ریتم طبیعی قلب را بازگرداند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une nuit aux urgences",
+      "text": "Le Dr Carter commence son service de nuit au County General Hospital de Chicago. Dès son arrivée, une ambulance amène un accidenté sur un {{BLANK_8}}. L'infirmière responsable du {{BLANK_13}} évalue immédiatement la gravité et classe le patient en urgence absolue. Le Dr Carter pose rapidement un {{BLANK_2}} : traumatisme crânien sévère. Il demande un {{BLANK_4}} cérébral en urgence. En attendant les résultats, il installe une {{BLANK_3}} pour maintenir l'hydratation. L'{{BLANK_1}} révèle une hémorragie qui nécessite une {{BLANK_7}} immédiate. L'anesthésiste prépare l'{{BLANK_9}} générale. Au bloc, le chirurgien réalise une {{BLANK_10}} précise pour refermer la plaie. Un autre patient arrive en arrêt cardiaque : le Dr Carter utilise le {{BLANK_14}} pour choquer le cœur. Après vingt minutes de {{BLANK_5}} intense, le pouls revient. L'{{BLANK_12}} montre un rythme sinusal régulier. Le {{BLANK_6}} est désormais favorable. Le patient est transféré en {{BLANK_11}} artificiel pour protéger son cerveau pendant la guérison. Le Dr Carter, épuisé, regarde l'aube se lever sur Chicago. Une autre nuit ordinaire dans le chaos salvateur des urgences.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "urgence",
+          "options": [
+            "urgence",
+            "coma",
+            "triage",
+            "suture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "diagnostic",
+          "options": [
+            "diagnostic",
+            "pronostic",
+            "scanner",
+            "perfusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "perfusion",
+          "options": [
+            "perfusion",
+            "anesthésie",
+            "suture",
+            "brancard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "scanner",
+          "options": [
+            "scanner",
+            "électrocardiogramme",
+            "défibrillateur",
+            "réanimation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "réanimation",
+          "options": [
+            "réanimation",
+            "intervention chirurgicale",
+            "triage",
+            "coma"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pronostic",
+          "options": [
+            "pronostic",
+            "diagnostic",
+            "triage",
+            "urgence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "intervention chirurgicale",
+          "options": [
+            "intervention chirurgicale",
+            "perfusion",
+            "suture",
+            "anesthésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "brancard",
+          "options": [
+            "brancard",
+            "scanner",
+            "défibrillateur",
+            "électrocardiogramme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "anesthésie",
+          "options": [
+            "anesthésie",
+            "perfusion",
+            "suture",
+            "réanimation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "suture",
+          "options": [
+            "suture",
+            "perfusion",
+            "anesthésie",
+            "réanimation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "coma",
+          "options": [
+            "coma",
+            "triage",
+            "pronostic",
+            "urgence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "électrocardiogramme",
+          "options": [
+            "électrocardiogramme",
+            "scanner",
+            "perfusion",
+            "diagnostic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "triage",
+          "options": [
+            "triage",
+            "urgence",
+            "réanimation",
+            "pronostic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "défibrillateur",
+          "options": [
+            "défibrillateur",
+            "scanner",
+            "brancard",
+            "électrocardiogramme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les anges en blouse blanche",
+      "inspiration": "Urgences (ER - Michael Crichton, 1994-2009)",
+      "text": "À peine le Dr John Carter eut-il poussé les portes battantes du County General que l'odeur âcre du désespoir humain l'enveloppa. C'était sa première nuit en tant qu'interne aux urgences, et Chicago, cette ville de vent et de violence, allait lui offrir un baptême du feu. Le bip strident d'une ambulance déchira le silence, et les portes automatiques vomirent un {{BLANK_8}} maculé de sang. L'infirmière Haleh, reine incontestée du {{BLANK_13}}, examina le blessé d'un regard aiguisé par vingt ans de drames. En trois secondes, elle classa le jeune homme en urgence vitale. Carter, les mains tremblantes, posa son premier {{BLANK_2}} indépendant : traumatisme crânien ouvert, hémorragie cérébrale probable. Il commanda un {{BLANK_4}} d'une voix qu'il voulait ferme. Pendant que la machine tournait, il installa lui-même la {{BLANK_3}}, piquant la veine avec une précision qui le surprit. Le verdict tomba comme un couperet : hématome sous-dural compressif. Chaque minute perdue rapprochait le garçon de la mort. L'{{BLANK_1}} exigeait une {{BLANK_7}} immédiate. Dans la lumière crue du bloc, l'anesthésiste endormit le patient avec une {{BLANK_9}} parfaitement dosée. Le neurochirurgien Benton, mains de virtuose, réalisa une {{BLANK_10}} millimétrée pour évacuer le sang qui étouffait le cerveau. Soudain, l'alarme hurla : arrêt cardiaque sur la table voisine. Carter saisit le {{BLANK_14}} et appliqua les électrodes sur la poitrine d'une jeune femme. « Clear ! » cria-t-il, et le corps se cabra sous la décharge. Vingt minutes de {{BLANK_5}} acharnée, de compressions thoraciques qui brisaient les côtes, d'adrénaline injectée en intraveineuse. L'{{BLANK_12}} finit par dessiner un rythme sinusal timide mais vivant. Le {{BLANK_6}} du garçon au crâne ouvert était désormais réservé mais pas désespéré. On le plongea dans un {{BLANK_11}} artificiel pour laisser son cerveau cicatriser dans le silence. À l'aube, Carter s'effondra sur une chaise de la salle de repos, les mains encore tachées du sang d'inconnus dont il avait tenu la vie entre ses doigts. Il comprit alors que la médecine n'était pas une science, mais un art tragique où l'on danse chaque nuit avec la mort, espérant lui voler ne serait-ce qu'une âme de plus.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "urgence",
+          "options": [
+            "urgence",
+            "coma",
+            "triage",
+            "suture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "diagnostic",
+          "options": [
+            "diagnostic",
+            "pronostic",
+            "scanner",
+            "perfusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "perfusion",
+          "options": [
+            "perfusion",
+            "anesthésie",
+            "suture",
+            "brancard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "scanner",
+          "options": [
+            "scanner",
+            "électrocardiogramme",
+            "défibrillateur",
+            "réanimation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "réanimation",
+          "options": [
+            "réanimation",
+            "intervention chirurgicale",
+            "triage",
+            "coma"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pronostic",
+          "options": [
+            "pronostic",
+            "diagnostic",
+            "triage",
+            "urgence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "intervention chirurgicale",
+          "options": [
+            "intervention chirurgicale",
+            "perfusion",
+            "suture",
+            "anesthésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "brancard",
+          "options": [
+            "brancard",
+            "scanner",
+            "défibrillateur",
+            "électrocardiogramme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "anesthésie",
+          "options": [
+            "anesthésie",
+            "perfusion",
+            "suture",
+            "réanimation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "suture",
+          "options": [
+            "suture",
+            "perfusion",
+            "anesthésie",
+            "réanimation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "coma",
+          "options": [
+            "coma",
+            "triage",
+            "pronostic",
+            "urgence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "électrocardiogramme",
+          "options": [
+            "électrocardiogramme",
+            "scanner",
+            "perfusion",
+            "diagnostic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "triage",
+          "options": [
+            "triage",
+            "urgence",
+            "réanimation",
+            "pronostic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "défibrillateur",
+          "options": [
+            "défibrillateur",
+            "scanner",
+            "brancard",
+            "électrocardiogramme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Médecine d'urgence et hospitalière",
+    "title_fa": "آزمون : پزشکی اورژانس و بیمارستانی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le service hospitalier qui accueille et traite les patients nécessitant des soins immédiats et non programmés est l'____.",
+        "options": [
+          "urgence",
+          "coma",
+          "triage",
+          "suture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش مراقبت‌های فوری = urgence."
+      },
+      {
+        "type": "mcq",
+        "question": "L'identification précise de la maladie ou de la pathologie d'un patient après examen clinique est le ____.",
+        "options": [
+          "diagnostic",
+          "pronostic",
+          "scanner",
+          "perfusion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شناسایی بیماری = diagnostic."
+      },
+      {
+        "type": "mcq",
+        "question": "L'administration lente et continue d'un liquide (sérum, médicaments) directement dans une veine est la ____.",
+        "options": [
+          "perfusion",
+          "anesthésie",
+          "suture",
+          "brancard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تزریق وریدی مایعات = perfusion."
+      },
+      {
+        "type": "mcq",
+        "question": "L'examen d'imagerie médicale qui utilise les rayons X pour produire des coupes transversales du corps est le ____.",
+        "options": [
+          "scanner",
+          "électrocardiogramme",
+          "défibrillateur",
+          "réanimation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تصویربرداری مقطعی با اشعه ایکس = scanner."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des techniques médicales visant à maintenir ou restaurer les fonctions vitales d'un patient en danger est la ____.",
+        "options": [
+          "réanimation",
+          "intervention chirurgicale",
+          "triage",
+          "coma"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "احیاء و حفظ علائم حیاتی = réanimation."
+      },
+      {
+        "type": "mcq",
+        "question": "L'évaluation par le médecin de l'évolution probable d'une maladie et des chances de guérison est le ____.",
+        "options": [
+          "pronostic",
+          "diagnostic",
+          "triage",
+          "urgence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیش‌بینی سیر بیماری = pronostic."
+      },
+      {
+        "type": "mcq",
+        "question": "L'acte médical qui consiste à opérer un patient pour traiter une pathologie est l'____.",
+        "options": [
+          "intervention chirurgicale",
+          "perfusion",
+          "suture",
+          "anesthésie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل جراحی = intervention chirurgicale."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lit roulant sur roues utilisé pour transporter les patients blessés ou alités est le ____.",
+        "options": [
+          "brancard",
+          "scanner",
+          "défibrillateur",
+          "électrocardiogramme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تخت چرخ‌دار حمل بیمار = brancard."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des techniques médicales qui suppriment la douleur et la conscience pendant une opération est l'____.",
+        "options": [
+          "anesthésie",
+          "perfusion",
+          "suture",
+          "réanimation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بیهوشی و بی‌دردی = anesthésie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'acte médical qui consiste à recoudre une plaie avec du fil chirurgical est la ____.",
+        "options": [
+          "suture",
+          "perfusion",
+          "anesthésie",
+          "réanimation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخیه زدن زخم = suture."
+      },
+      {
+        "type": "mcq",
+        "question": "L'état d'inconscience profonde, naturelle ou provoqué médicalement, dans lequel le patient ne répond plus aux stimuli est le ____.",
+        "options": [
+          "coma",
+          "triage",
+          "pronostic",
+          "urgence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حالت بی‌هوشی عمیق = coma."
+      },
+      {
+        "type": "mcq",
+        "question": "L'examen qui enregistre graphiquement l'activité électrique du cœur est l'____.",
+        "options": [
+          "électrocardiogramme",
+          "scanner",
+          "perfusion",
+          "diagnostic"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ثبت فعالیت الکتریکی قلب = électrocardiogramme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus qui consiste à classer les patients des urgences selon la gravité de leur état pour prioriser les soins est le ____.",
+        "options": [
+          "triage",
+          "urgence",
+          "réanimation",
+          "pronostic"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اولویت‌بندی بیماران بر اساس شدت = triage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil médical qui délivre un choc électrique au cœur pour rétablir un rythme normal en cas d'arrêt cardiaque est le ____.",
+        "options": [
+          "défibrillateur",
+          "scanner",
+          "brancard",
+          "électrocardiogramme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه شوک الکتریکی به قلب = défibrillateur."
+      },
+      {
+        "type": "binary",
+        "question": "Le diagnostic et le pronostic sont deux termes médicaux synonymes qui désignent la même chose.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. diagnostic شناسایی بیماری است، pronostic پیش‌بینی آینده آن."
+      },
+      {
+        "type": "binary",
+        "question": "Le triage permet de prioriser les soins en classant les patients selon la gravité de leur état.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تريیاژ بیماران را بر اساس فوریت اولویت‌بندی می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La réanimation est une spécialité qui ne s'occupe que des patients morts cliniquement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. احیاء شامل مراقبت از بیماران بدحال زنده و حفظ علائم حیاتی است."
+      },
+      {
+        "type": "binary",
+        "question": "L'anesthésie générale plonge le patient dans un état d'inconscience totale pendant l'opération.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بیهوشی عمومی، بیمار را کاملاً بی‌هوش می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le défibrillateur sert à mesurer la pression artérielle du patient en continu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. دفيبريلاتور شوک الکتریکی به قلب می‌دهد، نه فشار خون."
+      },
+      {
+        "type": "binary",
+        "question": "L'électrocardiogramme enregistre l'activité électrique du cœur sous forme de courbe graphique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. نوار قلب فعالیت الکتریکی قلب را ثبت می‌کند."
+      }
+    ]
+  }
+}
