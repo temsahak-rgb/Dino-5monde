@@ -1,50 +1,42 @@
 {
   "id": "viticulture_wine",
   "level": "C1",
-  "theme": "Viticulture, œnologie et dégustation",
-  "theme_fa": "تاکداری، شراب‌شناسی و چشیدن",
+  "theme": "Viticulture, œnologie et gastronomie",
+  "theme_fa": "تاکداری، شراب‌شناسی و gastronimie",
   "icon": "🍷",
-  "inspiration": "Mondovino (Jonathan Nossiter, 2004)",
+  "inspiration": "Une grande année (A Good Year - Ridley Scott, 2006)",
   "words": [
     {
       "fr": "le vignoble",
       "fa": "تاکستان",
       "emoji": "🍇",
       "difficulty": 4,
-      "ex": "Le vignoble bordelais s'étend sur plus de cent mille hectares.",
-      "ex_fa": "تاکستان بوردو بیش از صد هزار هکتار وسعت دارد."
+      "ex": "Le vignoble bordelais est mondialement réputé.",
+      "ex_fa": "تاکستان منطقه بوردو در سطح جهانی شهرت دارد."
     },
     {
-      "fr": "le cépage",
-      "fa": "نژاد انگور (واریته)",
-      "emoji": "🌱",
+      "fr": "le terroir",
+      "fa": "خاک و اقلیم خاص (ترور)",
+      "emoji": "🌍",
       "difficulty": 5,
-      "ex": "Le cabernet-sauvignon est un cépage rouge emblématique.",
-      "ex_fa": "کابرنت سووینیون یک واریته قرمز نمادین است."
+      "ex": "Ce vin exprime parfaitement le terroir de la Bourgogne.",
+      "ex_fa": "این شراب به خوبی بیانگر ترور منطقه بورگوین است."
     },
     {
       "fr": "la vendange",
       "fa": "برداشت انگور",
-      "emoji": "🍇",
+      "emoji": "🧺",
       "difficulty": 4,
       "ex": "La vendange manuelle préserve l'intégrité des grappes.",
-      "ex_fa": "برداشت دستی، سلامت خوشه‌ها را حفظ می‌کند."
+      "ex_fa": "برداشت دستی انگور، سلامت خوشه‌ها را حفظ می‌کند."
     },
     {
-      "fr": "le terroir",
-      "fa": "خاک و اقلیم منطقه‌ای",
-      "emoji": "🌍",
+      "fr": "le cépage",
+      "fa": "نژاد / رقم انگور",
+      "emoji": "🌱",
       "difficulty": 5,
-      "ex": "Le terroir bourguignon donne aux vins leur typicité unique.",
-      "ex_fa": "خاک و اقلیم بورگوین به شراب‌ها ویژگی منحصربه‌فرد می‌دهد."
-    },
-    {
-      "fr": "le millésime",
-      "fa": "سال برداشت (وینتیج)",
-      "emoji": "📅",
-      "difficulty": 4,
-      "ex": "Le millésime 1945 est considéré comme exceptionnel.",
-      "ex_fa": "وینتیج ۱۹۴۵ استثنایی محسوب می‌شود."
+      "ex": "Le Pinot Noir est un cépage délicat et exigeant.",
+      "ex_fa": "پینو نوآر رقم انگوری ظریف و پرتوقع است."
     },
     {
       "fr": "la fermentation",
@@ -58,91 +50,99 @@
       "fr": "le chai",
       "fa": "انبار شراب، سرداب",
       "emoji": "🏚️",
-      "difficulty": 5,
-      "ex": "Le chai climatisé permet un vieillissement optimal.",
-      "ex_fa": "انبار تهویه‌شده امکان پیریابی بهینه را می‌دهد."
+      "difficulty": 4,
+      "ex": "Les barriques de chêne vieillissent dans le chai obscur.",
+      "ex_fa": "بشکه‌های بلوطی در سرداب تاریک کهنه می‌شوند."
     },
     {
       "fr": "le sommelier",
-      "fa": "متخصص شراب",
+      "fa": "متصدی شراب (سوملیه)",
       "emoji": "🍷",
       "difficulty": 4,
-      "ex": "Le sommelier conseille l'accord mets et vins.",
-      "ex_fa": "متخصص شراب، ترکیب غذا و شراب را پیشنهاد می‌دهد."
+      "ex": "Le sommelier a recommandé un cru exceptionnel.",
+      "ex_fa": "متصدی شراب، یک شراب ویژه را پیشنهاد داد."
     },
     {
-      "fr": "la dégustation",
-      "fa": "چشیدن، تست مزه",
-      "emoji": "👅",
-      "difficulty": 4,
-      "ex": "La dégustation à l'aveugle teste les compétences du dégustateur.",
-      "ex_fa": "چشیدن کور، مهارت چشنده را می‌آزماید."
+      "fr": "la robe",
+      "fa": "رنگ و جلوه شراب",
+      "emoji": "👗",
+      "difficulty": 5,
+      "ex": "La robe de ce vin rouge est profonde et grenat.",
+      "ex_fa": "رنگ این شراب قرمز، عمیق و یاقوتی است."
     },
     {
       "fr": "le tanin",
       "fa": "تانن (ماده گس‌کننده)",
       "emoji": "🍂",
       "difficulty": 5,
-      "ex": "Les tanins du vin rouge proviennent des pépins et de la peau.",
-      "ex_fa": "تانن‌های شراب قرمز از هسته و پوست انگور می‌آیند."
+      "ex": "Les tanins assèchent légèrement le palais.",
+      "ex_fa": "تانن‌ها کام را کمی خشک و گس می‌کنند."
     },
     {
-      "fr": "le bouquet",
-      "fa": "عطر شراب (بوکه)",
-      "emoji": "👃",
-      "difficulty": 5,
-      "ex": "Le bouquet de ce vin révèle des arômes de fruits rouges.",
-      "ex_fa": "عطر این شراب، رایحه‌های میوه‌های قرمز را آشکار می‌کند."
+      "fr": "le millésime",
+      "fa": "سال برداشت (میلزیم)",
+      "emoji": "📅",
+      "difficulty": 4,
+      "ex": "Le millésime 1982 est considéré comme légendaire.",
+      "ex_fa": "شراب سال ۱۹۸۲ افسانه‌ای محسوب می‌شود."
+    },
+    {
+      "fr": "la dégustation",
+      "fa": "چشیدن، مزه‌کردن تخصصی",
+      "emoji": "👅",
+      "difficulty": 4,
+      "ex": "La dégustation à l'aveugle teste les véritables connaisseurs.",
+      "ex_fa": "چشیدن کور (بدون دیدن برچسب) دانش واقعی را می‌آزماید."
     },
     {
       "fr": "le bouchon",
-      "fa": "چوب‌پنبه (درپوش بطری)",
+      "fa": "چوب‌پنبه",
       "emoji": "🪵",
       "difficulty": 3,
-      "ex": "Le bouchon de liège permet une micro-oxygénation du vin.",
-      "ex_fa": "چوب‌پنبه امکان اکسیژن‌رسانی جزئی شراب را می‌دهد."
+      "ex": "Un bouchon de liège de qualité permet un micro-oxygénation.",
+      "ex_fa": "چوب‌پنبه باکیفیت امکان اکسیژن‌رسانی جزئی را می‌دهد."
     },
     {
-      "fr": "le carafage",
-      "fa": "دکانت کردن (هوادهی شراب)",
-      "emoji": "🍾",
-      "difficulty": 5,
-      "ex": "Le carafage permet d'ouvrir les arômes d'un vin jeune.",
-      "ex_fa": "دکانت کردن، عطرهای شراب جوان را باز می‌کند."
+      "fr": "la carafe",
+      "fa": "دکانتِر (ظرف بلوری برای هوادهی)",
+      "emoji": "🏺",
+      "difficulty": 4,
+      "ex": "Passer le vin en carafe permet de libérer ses arômes.",
+      "ex_fa": "ریختن شراب در دکانتر باعث آزاد شدن رایحه‌های آن می‌شود."
     },
     {
-      "fr": "l'appellation",
-      "fa": "نام مبدأ (اپلاسیون)",
-      "emoji": "🏷️",
+      "fr": "le cru",
+      "fa": "شراب ممتاز / تاکستان ویژه",
+      "emoji": "🏆",
       "difficulty": 5,
-      "ex": "L'appellation d'origine contrôlée garantit la provenance du vin.",
-      "ex_fa": "نام مبدأ کنترل‌شده، اصالت شراب را تضمین می‌کند."
+      "ex": "Ce grand cru classé se vend à prix d'or.",
+      "ex_fa": "این شراب ممتاز رده‌بندی‌شده به قیمت گزافی فروخته می‌شود."
     }
   ],
   "stories": {
     "simple": {
-      "title": "Le secret du grand cru",
-      "text": "Pierre hérite du {{BLANK_1}} familial en Bourgogne. Les vignes centenaires produisent un {{BLANK_2}} rare : le pinot noir. La {{BLANK_3}} approche, et Pierre doit décider entre récolte manuelle et mécanique. Son grand-père insistait sur l'importance du {{BLANK_4}} : ce sol calcaire unique donne au vin son caractère. Cette année, le {{BLANK_5}} sera exceptionnel grâce à un été ensoleillé. Dans le {{BLANK_7}}, les cuves en inox accueillent le moût pour la {{BLANK_6}}. Pierre surveille chaque jour la transformation du sucre en alcool. Après dix-huit mois en fûts de chêne, le vin est prêt. Le {{BLANK_8}} du restaurant étoilé vient goûter. Lors de la {{BLANK_9}}, il note les {{BLANK_10}}s puissants qui structurent le vin. Le {{BLANK_11}} complexe révèle des notes de cerise et d'épices. Pierre retire délicatement le {{BLANK_12}} de liège d'une bouteille ancienne. Un {{BLANK_13}} de deux heures permet au vin de s'ouvrir pleinement. L'{{BLANK_14}} prestigieuse garantit l'origine et la qualité. Pierre a réussi à perpétuer la tradition familiale tout en innovant.",
+      "title": "L'héritage de Provence",
+      "text": "Max, un trader londonien cynique, hérite du {{BLANK_1}} de son oncle en Provence. D'abord décidé à vendre, il découvre la magie du {{BLANK_2}}, cette alchimie unique entre le sol, le climat et le savoir-faire humain. Il apprend que le {{BLANK_4}} principal cultivé ici est le Grenache. En septembre, il participe à la {{BLANK_3}}, coupant les grappes sous le soleil brûlant. Le jus est ensuite mis en cuve pour la {{BLANK_5}}, processus où les levures font leur œuvre. Max visite le {{BLANK_6}}, ce lieu sacré et frais où le vin repose dans des fûts de chêne. Un vieux {{BLANK_7}} local lui enseigne l'art de la {{BLANK_11}}. Il lui apprend à observer d'abord la {{BLANK_8}} du vin contre la lumière, puis à humer les arômes, et enfin à ressentir la structure du {{BLANK_9}} sur les gencives. Max comprend que chaque bouteille porte la mémoire d'un {{BLANK_10}}, reflet d'une année météorologique précise. Il retire délicatement le {{BLANK_12}} de liège d'une bouteille ancienne. Il verse le nectar dans une {{BLANK_13}} pour l'oxygéner et réveiller ses saveurs endormies. Ce {{BLANK_14}} oublié, gardé précieusement par son oncle, lui révèle enfin le vrai goût de la vie, loin des chiffres et de la frénésie de la City.",
       "blanks": [
         {
           "id": 1,
           "answer": "vignoble",
           "options": [
             "vignoble",
-            "cépage",
-            "vendange",
+            "chai",
+            "cru",
             "terroir"
           ],
           "correctIndex": 0
         },
         {
           "id": 2,
-          "answer": "cépage",
+          "answer": "terroir",
           "options": [
+            "terroir",
             "cépage",
-            "millésime",
-            "fermentation",
-            "chai"
+            "tanin",
+            "millésime"
           ],
           "correctIndex": 0
         },
@@ -151,97 +151,97 @@
           "answer": "vendange",
           "options": [
             "vendange",
-            "sommelier",
+            "fermentation",
             "dégustation",
-            "tanin"
+            "robe"
           ],
           "correctIndex": 0
         },
         {
           "id": 4,
-          "answer": "terroir",
+          "answer": "cépage",
           "options": [
-            "terroir",
-            "bouquet",
+            "cépage",
             "bouchon",
-            "carafage"
+            "carafe",
+            "sommelier"
           ],
           "correctIndex": 0
         },
         {
           "id": 5,
-          "answer": "millésime",
+          "answer": "fermentation",
           "options": [
-            "millésime",
-            "appellation",
-            "vignoble",
-            "cépage"
+            "fermentation",
+            "vendange",
+            "dégustation",
+            "robe"
           ],
           "correctIndex": 0
         },
         {
           "id": 6,
-          "answer": "fermentation",
+          "answer": "chai",
           "options": [
-            "fermentation",
-            "vendange",
-            "sommelier",
-            "dégustation"
+            "chai",
+            "vignoble",
+            "cru",
+            "forum"
           ],
           "correctIndex": 0
         },
         {
           "id": 7,
-          "answer": "chai",
+          "answer": "sommelier",
           "options": [
-            "chai",
+            "sommelier",
+            "cépage",
             "tanin",
-            "bouquet",
             "bouchon"
           ],
           "correctIndex": 0
         },
         {
           "id": 8,
-          "answer": "sommelier",
+          "answer": "robe",
           "options": [
-            "sommelier",
-            "carafage",
-            "appellation",
-            "vignoble"
+            "robe",
+            "carafe",
+            "vendange",
+            "fermentation"
           ],
           "correctIndex": 0
         },
         {
           "id": 9,
-          "answer": "dégustation",
+          "answer": "tanin",
           "options": [
-            "dégustation",
-            "cépage",
+            "tanin",
             "millésime",
-            "terroir"
+            "terroir",
+            "sommelier"
           ],
           "correctIndex": 0
         },
         {
           "id": 10,
-          "answer": "tanins",
+          "answer": "millésime",
           "options": [
-            "tanins",
-            "vendanges",
-            "fermentations",
-            "chais"
+            "millésime",
+            "cru",
+            "bouchon",
+            "chai"
           ],
           "correctIndex": 0
         },
         {
           "id": 11,
-          "answer": "bouquet",
+          "answer": "dégustation",
           "options": [
-            "bouquet",
-            "bouchon",
-            "carafage",
-            "appellation"
+            "dégustation",
+            "fermentation",
+            "vendange",
+            "robe"
           ],
           "correctIndex": 0
         },
@@ -250,31 +250,31 @@
           "answer": "bouchon",
           "options": [
             "bouchon",
-            "vignoble",
-            "cépage",
-            "vendange"
+            "carafe",
+            "tanin",
+            "cépage"
           ],
           "correctIndex": 0
         },
         {
           "id": 13,
-          "answer": "carafage",
+          "answer": "carafe",
           "options": [
-            "carafage",
-            "terroir",
-            "millésime",
-            "fermentation"
+            "carafe",
+            "robe",
+            "vendange",
+            "cru"
           ],
           "correctIndex": 0
         },
         {
           "id": 14,
-          "answer": "appellation",
+          "answer": "cru",
           "options": [
-            "appellation",
-            "sommelier",
-            "dégustation",
-            "tanin"
+            "cru",
+            "terroir",
+            "bouchon",
+            "sommelier"
           ],
           "correctIndex": 0
         }
@@ -282,28 +282,28 @@
     },
     "literary": {
       "title": "Le sang de la terre",
-      "inspiration": "Mondovino (Jonathan Nossiter, 2004)",
-      "text": "À peine Pierre eut-il posé sa main sur l'écorce rugueuse de la vieille vigne qu'il sentit le poids de cinq générations peser sur ses épaules. Ce {{BLANK_1}} bourguignon, hérité de son grand-père, n'était pas une simple exploitation agricole, mais un pacte avec la terre elle-même. Les ceps centenaires de ce {{BLANK_2}} noble, le pinot noir, plongeaient leurs racines dans un {{BLANK_4}} sacré, ce sol calcaire qui donnait au vin son âme minérale. La {{BLANK_3}} approchait, et Pierre hésitait : fallait-il céder à la mécanisation ou préserver le geste ancestral de la cueillette manuelle ? Son grand-père lui avait enseigné que le vin naît d'abord dans la vigne, pas dans la cave. Cette année, le {{BLANK_5}} promettait d'être exceptionnel, ce millésime de légende qui ne se produit qu'une fois par décennie. Dans l'ombre fraîche du {{BLANK_7}}, les cuves attendaient le moût pour la {{BLANK_6}}, cette alchimie mystérieuse où les levures transforment le sucre en ivresse. Quand le {{BLANK_8}} du restaurant trois étoiles vint goûter, Pierre retint son souffle. Lors de la {{BLANK_9}}, le spécialiste fit tourner le liquide dans son verre, huma longuement, nota les {{BLANK_10}}s qui structuraient la bouche comme une charpente invisible. Le {{BLANK_11}} complexe révélait des couches de cerise noire, de sous-bois, d'épices douces. Pierre déboucha une bouteille de 1978, retirant le {{BLANK_12}} avec la délicatesse d'un archéologue. Un {{BLANK_13}} de deux heures permit au vin de s'épanouir, de raconter son histoire. L'{{BLANK_14}} prestigieuse n'était pas qu'un label, mais une promesse tenue. Pierre comprit alors qu'il n'était pas propriétaire de cette terre, mais son gardien, chargé de transmettre aux générations futures ce que ses ancêtres lui avaient confié : le sang vivant de la Bourgogne.",
+      "inspiration": "Une grande année (A Good Year - Ridley Scott, 2006)",
+      "text": "À peine Max Skinner eut-il posé ses chaussures italiennes sur la terre ocre de la Provence qu'il sentit le temps se dilater. Lui, le prédateur de la finance londonienne, se retrouvait soudain héritier d'un {{BLANK_1}} que son oncle Henry avait chéri plus que sa propre vie. Ce n'était pas qu'une étendue de terre, c'était un {{BLANK_2}} vibrant, une partition géologique où le mistral, la garrigue et le calcaire chantaient en chœur. Le vieux Fanny, régisseur du domaine, lui expliqua que le {{BLANK_4}} local, ce Grenache noueux et tordu, puisait ses forces dans la souffrance même de la roche. Quand vint l'automne, Max abandonna ses costumes sur mesure pour la {{BLANK_3}}, les mains poisseuses de jus sucré, le dos rompu sous le soleil déclinant. Il comprit alors que le vin n'était pas une boisson, mais le sang de la terre, transformé par la mystérieuse {{BLANK_5}} qui changeait l'eau et le sucre en ivresse spirituelle. Dans la pénombre humide du {{BLANK_6}}, parmi les tonneaux alignés comme des soldats de bois, Max écoutait le silence du vieillissement. Francis, le {{BLANK_7}} du village, l'initia aux rites de la {{BLANK_11}}. Il lui apprit à faire danser le liquide pour en admirer la {{BLANK_8}}, ce rubis sombre qui accrochait la lumière. Il lui enseigna à reconnaître la morsure du {{BLANK_9}}, cette charpente invisible qui donnait au vin sa longévité et son caractère. Chaque bouteille scellée par son {{BLANK_12}} de liège était une capsule temporelle, le témoignage liquide d'un {{BLANK_10}} précis, avec ses gelées tardives ou ses étés caniculaires. Un soir, Max déboucha une relique oubliée, la versa religieusement dans une {{BLANK_13}} en cristal pour l'offrir à l'air. Ce {{BLANK_14}} fantôme, en se révélant au palais, ne lui raconta pas seulement l'histoire d'une saison, mais celle d'un homme qui avait su écouter la nature. Max comprit enfin que la vraie richesse ne se cotait pas en bourse, mais se mesurait en racines, en patience et en partage.",
       "blanks": [
         {
           "id": 1,
           "answer": "vignoble",
           "options": [
             "vignoble",
-            "cépage",
-            "vendange",
+            "chai",
+            "cru",
             "terroir"
           ],
           "correctIndex": 0
         },
         {
           "id": 2,
-          "answer": "cépage",
+          "answer": "terroir",
           "options": [
+            "terroir",
             "cépage",
-            "millésime",
-            "fermentation",
-            "chai"
+            "tanin",
+            "millésime"
           ],
           "correctIndex": 0
         },
@@ -312,97 +312,97 @@
           "answer": "vendange",
           "options": [
             "vendange",
-            "sommelier",
+            "fermentation",
             "dégustation",
-            "tanin"
+            "robe"
           ],
           "correctIndex": 0
         },
         {
           "id": 4,
-          "answer": "terroir",
+          "answer": "cépage",
           "options": [
-            "terroir",
-            "bouquet",
+            "cépage",
             "bouchon",
-            "carafage"
+            "carafe",
+            "sommelier"
           ],
           "correctIndex": 0
         },
         {
           "id": 5,
-          "answer": "millésime",
+          "answer": "fermentation",
           "options": [
-            "millésime",
-            "appellation",
-            "vignoble",
-            "cépage"
+            "fermentation",
+            "vendange",
+            "dégustation",
+            "robe"
           ],
           "correctIndex": 0
         },
         {
           "id": 6,
-          "answer": "fermentation",
+          "answer": "chai",
           "options": [
-            "fermentation",
-            "vendange",
-            "sommelier",
-            "dégustation"
+            "chai",
+            "vignoble",
+            "cru",
+            "forum"
           ],
           "correctIndex": 0
         },
         {
           "id": 7,
-          "answer": "chai",
+          "answer": "sommelier",
           "options": [
-            "chai",
+            "sommelier",
+            "cépage",
             "tanin",
-            "bouquet",
             "bouchon"
           ],
           "correctIndex": 0
         },
         {
           "id": 8,
-          "answer": "sommelier",
+          "answer": "robe",
           "options": [
-            "sommelier",
-            "carafage",
-            "appellation",
-            "vignoble"
+            "robe",
+            "carafe",
+            "vendange",
+            "fermentation"
           ],
           "correctIndex": 0
         },
         {
           "id": 9,
-          "answer": "dégustation",
+          "answer": "tanin",
           "options": [
-            "dégustation",
-            "cépage",
+            "tanin",
             "millésime",
-            "terroir"
+            "terroir",
+            "sommelier"
           ],
           "correctIndex": 0
         },
         {
           "id": 10,
-          "answer": "tanins",
+          "answer": "millésime",
           "options": [
-            "tanins",
-            "vendanges",
-            "fermentations",
-            "chais"
+            "millésime",
+            "cru",
+            "bouchon",
+            "chai"
           ],
           "correctIndex": 0
         },
         {
           "id": 11,
-          "answer": "bouquet",
+          "answer": "dégustation",
           "options": [
-            "bouquet",
-            "bouchon",
-            "carafage",
-            "appellation"
+            "dégustation",
+            "fermentation",
+            "vendange",
+            "robe"
           ],
           "correctIndex": 0
         },
@@ -411,31 +411,31 @@
           "answer": "bouchon",
           "options": [
             "bouchon",
-            "vignoble",
-            "cépage",
-            "vendange"
+            "carafe",
+            "tanin",
+            "cépage"
           ],
           "correctIndex": 0
         },
         {
           "id": 13,
-          "answer": "carafage",
+          "answer": "carafe",
           "options": [
-            "carafage",
-            "terroir",
-            "millésime",
-            "fermentation"
+            "carafe",
+            "robe",
+            "vendange",
+            "cru"
           ],
           "correctIndex": 0
         },
         {
           "id": 14,
-          "answer": "appellation",
+          "answer": "cru",
           "options": [
-            "appellation",
-            "sommelier",
-            "dégustation",
-            "tanin"
+            "cru",
+            "terroir",
+            "bouchon",
+            "sommelier"
           ],
           "correctIndex": 0
         }
@@ -452,228 +452,228 @@
         "question": "L'ensemble des parcelles de terre plantées de vignes destinées à la production de vin est le ____.",
         "options": [
           "vignoble",
-          "cépage",
-          "vendange",
+          "chai",
+          "cru",
           "terroir"
         ],
         "correctIndex": 0,
-        "explanation_fa": "مجموعه زمین‌های زیر کشت انگور = vignoble."
+        "explanation_fa": "مجموعه زمین‌های کشت انگور = vignoble."
       },
       {
         "type": "mcq",
-        "question": "La variété spécifique de vigne cultivée pour ses raisins (comme le merlot ou le chardonnay) est le ____.",
-        "options": [
-          "cépage",
-          "millésime",
-          "fermentation",
-          "chai"
-        ],
-        "correctIndex": 0,
-        "explanation_fa": "نژاد یا واریته خاص انگور = cépage."
-      },
-      {
-        "type": "mcq",
-        "question": "La récolte des raisins arrivés à maturité, généralement en automne, est la ____.",
-        "options": [
-          "vendange",
-          "sommelier",
-          "dégustation",
-          "tanin"
-        ],
-        "correctIndex": 0,
-        "explanation_fa": "برداشت انگور رسیده = vendange."
-      },
-      {
-        "type": "mcq",
-        "question": "L'ensemble des facteurs naturels (sol, climat, exposition) qui donnent leur caractère unique aux vins d'une région est le ____.",
+        "question": "Ce concept français englobe l'ensemble des facteurs naturels (sol, climat, topographie) qui donnent son caractère unique à un vin. C'est le ____.",
         "options": [
           "terroir",
-          "bouquet",
-          "bouchon",
-          "carafage"
+          "cépage",
+          "tanin",
+          "millésime"
         ],
         "correctIndex": 0,
-        "explanation_fa": "مجموعه عوامل طبیعی منطقه = terroir."
+        "explanation_fa": "مفهوم خاک، اقلیم و محیط طبیعی = terroir."
       },
       {
         "type": "mcq",
-        "question": "L'année de récolte des raisins qui a servi à produire un vin donné est le ____.",
+        "question": "La période de l'année où l'on récolte les raisins arrivés à maturité s'appelle la ____.",
         "options": [
-          "millésime",
-          "appellation",
-          "vignoble",
-          "cépage"
+          "vendange",
+          "fermentation",
+          "dégustation",
+          "robe"
         ],
         "correctIndex": 0,
-        "explanation_fa": "سال برداشت انگور = millésime."
+        "explanation_fa": "فصل برداشت انگور = vendange."
       },
       {
         "type": "mcq",
-        "question": "Le processus biochimique par lequel les levures transforment le sucre du raisin en alcool est la ____.",
+        "question": "La variété spécifique de plant de vigne (comme le Merlot, le Chardonnay ou le Syrah) est le ____.",
+        "options": [
+          "cépage",
+          "bouchon",
+          "carafe",
+          "sommelier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نژاد یا رقم گیاه انگور = cépage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus biochimique par lequel les levures transforment le sucre du raisin en alcool et en gaz carbonique est la ____.",
         "options": [
           "fermentation",
           "vendange",
-          "sommelier",
-          "dégustation"
+          "dégustation",
+          "robe"
         ],
         "correctIndex": 0,
         "explanation_fa": "فرآیند تبدیل قند به الکل = fermentation."
       },
       {
         "type": "mcq",
-        "question": "Le lieu où le vin est stocké et vieilli en fûts ou en cuves est le ____.",
+        "question": "Le bâtiment, souvent semi-enterré, où l'on vinifie et où l'on conserve le vin dans des fûts ou des cuves est le ____.",
         "options": [
           "chai",
+          "vignoble",
+          "cru",
+          "forum"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انبار و محل نگهداری شراب = chai."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel de la restauration spécialisé dans le service du vin et le conseil en accords mets-vins est le ____.",
+        "options": [
+          "sommelier",
+          "cépage",
           "tanin",
-          "bouquet",
           "bouchon"
         ],
         "correctIndex": 0,
-        "explanation_fa": "انبار نگهداری و پیریابی شراب = chai."
+        "explanation_fa": "متخصص و متصدی شراب در رستوران = sommelier."
       },
       {
         "type": "mcq",
-        "question": "Le spécialiste qui conseille sur le choix des vins et leur accord avec les mets dans un restaurant est le ____.",
+        "question": "L'aspect visuel du vin, sa couleur et sa brillance, que l'on observe en penchant le verre, s'appelle la ____.",
         "options": [
-          "sommelier",
-          "carafage",
-          "appellation",
-          "vignoble"
-        ],
-        "correctIndex": 0,
-        "explanation_fa": "متخصص شراب در رستوران = sommelier."
-      },
-      {
-        "type": "mcq",
-        "question": "L'action de goûter un vin pour en apprécier les qualités gustatives et olfactives est la ____.",
-        "options": [
-          "dégustation",
-          "cépage",
-          "millésime",
-          "terroir"
-        ],
-        "correctIndex": 0,
-        "explanation_fa": "چشیدن و ارزیابی شراب = dégustation."
-      },
-      {
-        "type": "mcq",
-        "question": "La substance présente dans les pépins et la peau du raisin qui donne au vin rouge son astringence est le ____.",
-        "options": [
-          "tanin",
+          "robe",
+          "carafe",
           "vendange",
-          "fermentation",
-          "chai"
-        ],
-        "correctIndex": 0,
-        "explanation_fa": "ماده گس‌کننده شراب قرمز = tanin."
-      },
-      {
-        "type": "mcq",
-        "question": "L'ensemble des arômes complexes qui se développent dans un vin au cours de son vieillissement est le ____.",
-        "options": [
-          "bouquet",
-          "bouchon",
-          "carafage",
-          "appellation"
-        ],
-        "correctIndex": 0,
-        "explanation_fa": "مجموعه عطرهای پیچیده شراب = bouquet."
-      },
-      {
-        "type": "mcq",
-        "question": "La pièce de liège ou synthétique qui ferme hermétiquement la bouteille de vin est le ____.",
-        "options": [
-          "bouchon",
-          "vignoble",
-          "cépage",
-          "vendange"
-        ],
-        "correctIndex": 0,
-        "explanation_fa": "درپوش بطری شراب = bouchon."
-      },
-      {
-        "type": "mcq",
-        "question": "L'action de transvaser un vin dans une carafe pour l'aérer et développer ses arômes est le ____.",
-        "options": [
-          "carafage",
-          "terroir",
-          "millésime",
           "fermentation"
         ],
         "correctIndex": 0,
-        "explanation_fa": "دکانت کردن و هوادهی شراب = carafage."
+        "explanation_fa": "رنگ و جلوه بصری شراب = robe."
       },
       {
         "type": "mcq",
-        "question": "La dénomination géographique officielle qui garantit l'origine et la qualité d'un vin est l'____.",
+        "question": "La substance présente dans la peau et les pépins du raisin, qui donne au vin rouge son astringence et sa structure, est le ____.",
         "options": [
-          "appellation",
-          "sommelier",
+          "tanin",
+          "millésime",
+          "terroir",
+          "sommelier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده گس‌کننده و ساختاردهنده شراب قرمز = tanin."
+      },
+      {
+        "type": "mcq",
+        "question": "L'année de récolte du raisin, indiquée sur l'étiquette et qui reflète les conditions climatiques de l'année, est le ____.",
+        "options": [
+          "millésime",
+          "cru",
+          "bouchon",
+          "chai"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سال برداشت انگور = millésime."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action d'analyser sensoriellement un vin (vue, odorat, goût) pour en évaluer la qualité est la ____.",
+        "options": [
           "dégustation",
-          "tanin"
+          "fermentation",
+          "vendange",
+          "robe"
         ],
         "correctIndex": 0,
-        "explanation_fa": "نام مبدأ کنترل‌شده = appellation."
+        "explanation_fa": "چشیدن و ارزیابی حسی شراب = dégustation."
+      },
+      {
+        "type": "mcq",
+        "question": "La pièce de liège (ou autre matériau) utilisée pour sceller hermétiquement le goulot de la bouteille est le ____.",
+        "options": [
+          "bouchon",
+          "carafe",
+          "tanin",
+          "cépage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درپوش چوب‌پنبه‌ای بطری = bouchon."
+      },
+      {
+        "type": "mcq",
+        "question": "Le récipient en verre à large base utilisé pour servir le vin et lui permettre de s'oxygéner avant le service est la ____.",
+        "options": [
+          "carafe",
+          "robe",
+          "vendange",
+          "cru"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ظرف بلوری برای هوادهی شراب = carafe."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce terme désigne un vin de haute qualité, issu d'un terroir spécifique et souvent classé dans une hiérarchie officielle. C'est un ____.",
+        "options": [
+          "cru",
+          "terroir",
+          "bouchon",
+          "sommelier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شراب ممتاز و رده‌بندی‌شده = cru."
       },
       {
         "type": "binary",
-        "question": "Le terroir désigne uniquement le type de sol sur lequel poussent les vignes.",
+        "question": "Le terroir et le cépage désignent exactement la même chose dans le vocabulaire du vin.",
         "options": [
           "Vrai",
           "Faux"
         ],
         "correctIndex": 1,
-        "explanation_fa": "خیر. terroir شامل خاک، اقلیم، توپوگرافی و عوامل انسانی است، نه فقط خاک."
+        "explanation_fa": "خیر. terroir به محیط و خاک اشاره دارد، cépage به نژاد گیاه انگور."
       },
       {
         "type": "binary",
-        "question": "La fermentation alcoolique est le processus par lequel les levures transforment le sucre en alcool.",
+        "question": "La vendange peut être réalisée manuellement ou mécaniquement selon les domaines.",
         "options": [
           "Vrai",
           "Faux"
         ],
         "correctIndex": 0,
-        "explanation_fa": "بله. تخمیر الکلی تبدیل قند به الکل توسط مخمرهاست."
+        "explanation_fa": "بله. برداشت انگور هم به صورت دستی و هم ماشینی انجام می‌شود."
       },
       {
         "type": "binary",
-        "question": "Le millésime indique le degré d'alcool contenu dans une bouteille de vin.",
+        "question": "Le chai est l'endroit où l'on cultive les vignes en plein air.",
         "options": [
           "Vrai",
           "Faux"
         ],
         "correctIndex": 1,
-        "explanation_fa": "خیر. millésime سال برداشت انگور را نشان می‌دهد، نه میزان الکل."
+        "explanation_fa": "خیر. chai محل سرپوشیده و انبار شراب است، نه زمین کشاورزی."
       },
       {
         "type": "binary",
-        "question": "Le carafage permet d'oxygéner un vin jeune pour développer ses arômes et assouplir ses tanins.",
-        "options": [
-          "Vrai",
-          "Faux"
-        ],
-        "correctIndex": 0,
-        "explanation_fa": "بله. دکانت کردن شراب جوان را هوادهی کرده و عطرهایش را باز می‌کند."
-      },
-      {
-        "type": "binary",
-        "question": "Le sommelier est le vigneron qui cultive les vignes et produit le vin.",
+        "question": "Les tanins sont principalement présents dans les vins blancs, leur donnant leur acidité.",
         "options": [
           "Vrai",
           "Faux"
         ],
         "correctIndex": 1,
-        "explanation_fa": "خیر. sommelier متخصص شراب در رستوران است، نه تولیدکننده شراب."
+        "explanation_fa": "خیر. تانن‌ها بیشتر در شراب قرمز (به دلیل تماس با پوست انگور) یافت می‌شوند و باعث گسی می‌شوند، نه اسیدیته."
       },
       {
         "type": "binary",
-        "question": "L'appellation d'origine contrôlée (AOC) garantit qu'un vin provient d'une zone géographique spécifique et respecte un cahier des charges.",
+        "question": "Le sommelier est le professionnel chargé de conseiller les clients sur le choix des vins au restaurant.",
         "options": [
           "Vrai",
           "Faux"
         ],
         "correctIndex": 0,
-        "explanation_fa": "بله. AOC اصالت جغرافیایی و رعایت استانداردهای تولید را تضمین می‌کند."
+        "explanation_fa": "بله. سوملیه متخصص پیشنهاد شراب در رستوران است."
+      },
+      {
+        "type": "binary",
+        "question": "Passer un vin en carafe permet de l'oxygéner et de libérer ses arômes, surtout pour les vins jeunes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دکانتر کردن به هوادهی و باز شدن رایحه شراب کمک می‌کند."
       }
     ]
   }
