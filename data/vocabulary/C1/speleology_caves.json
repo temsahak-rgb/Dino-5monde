@@ -1,0 +1,680 @@
+{
+  "id": "speleology_caves",
+  "level": "C1",
+  "theme": "Spéléologie, grottes et abîmes souterrains",
+  "theme_fa": "غارنوردی، غارها و پرتگاه‌های زیرزمینی",
+  "icon": "🦇",
+  "inspiration": "Sanctum (Alister Grierson, 2011)",
+  "words": [
+    {
+      "fr": "la spéléologie",
+      "fa": "غارنوردی",
+      "emoji": "🦇",
+      "difficulty": 5,
+      "ex": "La spéléologie exige une excellente condition physique et mentale.",
+      "ex_fa": "غارنوردی به آمادگی جسمانی و روانی عالی نیاز دارد."
+    },
+    {
+      "fr": "la grotte",
+      "fa": "غار",
+      "emoji": "🕳️",
+      "difficulty": 2,
+      "ex": "La grotte préhistorique abrite des peintures rupestres millénaires.",
+      "ex_fa": "غار پیشاتاریخی میزبان نقاشی‌های دیواری هزاران ساله است."
+    },
+    {
+      "fr": "la stalactite",
+      "fa": "استالاکتیت (چکیده)",
+      "emoji": "🧊",
+      "difficulty": 4,
+      "ex": "La stalactite pend du plafond de la caverne comme une lame de glace.",
+      "ex_fa": "استالاکتیت مانند تیغه‌ای یخی از سقف غار آویزان است."
+    },
+    {
+      "fr": "la stalagmite",
+      "fa": "استالاکمیت (چکیده زمینی)",
+      "emoji": "🗻",
+      "difficulty": 4,
+      "ex": "La stalagmite s'élève lentement du sol depuis des milliers d'années.",
+      "ex_fa": "استالاکمیت هزاران سال است که آرام از زمین بالا می‌رود."
+    },
+    {
+      "fr": "le spéléologue",
+      "fa": "غارنورد",
+      "emoji": "🧗",
+      "difficulty": 4,
+      "ex": "Le spéléologue cartographie les réseaux souterrains inexplorés.",
+      "ex_fa": "غارنورد شبکه‌های زیرزمینی کشف‌نشده را نقشه‌برداری می‌کند."
+    },
+    {
+      "fr": "la paroi",
+      "fa": "دیواره صخره‌ای",
+      "emoji": "🧗‍♀️",
+      "difficulty": 3,
+      "ex": "La paroi humide et lisse rend l'escalade extrêmement périlleuse.",
+      "ex_fa": "دیواره مرطوب و لغزنده صعود را بسیار خطرناک می‌کند."
+    },
+    {
+      "fr": "le casque",
+      "fa": "کلاه ایمنی",
+      "emoji": "⛑️",
+      "difficulty": 2,
+      "ex": "Le casque protège la tête des chutes de pierres dans les galeries.",
+      "ex_fa": "کلاه ایمنی از سر در برابر ریزش سنگ در تونل‌ها محافظت می‌کند."
+    },
+    {
+      "fr": "le gouffre",
+      "fa": "پرتگاه، مغاک",
+      "emoji": "🕳️",
+      "difficulty": 4,
+      "ex": "Le gouffre plongé dans l'obscurité semble ne jamais avoir de fond.",
+      "ex_fa": "پرتگاه فرورفته در تاریکی به نظر بی‌انتها می‌رسد."
+    },
+    {
+      "fr": "la corde",
+      "fa": "طناب",
+      "emoji": "🪢",
+      "difficulty": 2,
+      "ex": "La corde statique est indispensable pour les descentes en rappel.",
+      "ex_fa": "طناب ایستا برای فرود با طناب ضروری است."
+    },
+    {
+      "fr": "le baudrier",
+      "fa": "هارنس (صندلی ایمنی)",
+      "emoji": "🪢",
+      "difficulty": 4,
+      "ex": "Le spéléologue attache son descendeur à son baudrier renforcé.",
+      "ex_fa": "غارنورد ابزار فرود خود را به هارنس تقویت‌شده‌اش متصل می‌کند."
+    },
+    {
+      "fr": "la lampe",
+      "fa": "چراغ، هدلایت",
+      "emoji": "🔦",
+      "difficulty": 2,
+      "ex": "La lampe frontale perce les ténèbres absolues du monde souterrain.",
+      "ex_fa": "چراغ پیشانی، تاریکی مطلق جهان زیرزمینی را می‌شکافد."
+    },
+    {
+      "fr": "le siphon",
+      "fa": "سیفون (تونل زیرآبی)",
+      "emoji": "💧",
+      "difficulty": 5,
+      "ex": "Le siphon entièrement inondé oblige les explorateurs à utiliser des bouteilles de plongée.",
+      "ex_fa": "سیفون کاملاً غرقابی، کاوشگران را مجبور به استفاده از کپسول غواصی می‌کند."
+    },
+    {
+      "fr": "l'écho",
+      "fa": "پژواک",
+      "emoji": "🔊",
+      "difficulty": 3,
+      "ex": "L'écho de sa voix résonne longuement dans l'immense salle souterraine.",
+      "ex_fa": "پژواک صدایش در سالن عظیم زیرزمینی طنین‌انداز می‌شود."
+    },
+    {
+      "fr": "l'obscurité",
+      "fa": "تاریکی",
+      "emoji": "🌑",
+      "difficulty": 3,
+      "ex": "L'obscurité totale des cavernes profondes désoriente les sens humains.",
+      "ex_fa": "تاریکی مطلق غارهای عمیق، حواس انسان را مختل می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Descente dans les abysses",
+      "text": "Frank est un {{BLANK_5}} expérimenté qui explore un réseau souterrain inconnu. Sa passion pour la {{BLANK_1}} l'a mené au cœur d'une immense {{BLANK_2}} vierge de toute présence humaine. Il ajuste son {{BLANK_7}} protecteur et allume sa {{BLANK_11}} pour percer l'{{BLANK_14}} totale. Il s'attache solidement avec son {{BLANK_10}} à la {{BLANK_9}} pour descendre le long de la {{BLANK_6}} humide et glacée. Au-dessus de lui, une fine {{BLANK_3}} goutte lentement sur une {{BLANK_4}} qui grandit depuis des millénaires. Soudain, son faisceau lumineux révèle un {{BLANK_8}} vertigineux, un abîme sans fond. Au loin, l'{{BLANK_13}} d'un {{BLANK_12}} souterrain et mortel résonne dans le silence minéral de la terre.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "spéléologie",
+          "options": [
+            "spéléologie",
+            "grotte",
+            "stalactite",
+            "stalagmite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "grotte",
+          "options": [
+            "grotte",
+            "spéléologue",
+            "paroi",
+            "casque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "stalactite",
+          "options": [
+            "stalactite",
+            "gouffre",
+            "corde",
+            "baudrier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "stalagmite",
+          "options": [
+            "stalagmite",
+            "lampe",
+            "siphon",
+            "écho"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "spéléologue",
+          "options": [
+            "spéléologue",
+            "obscurité",
+            "spéléologie",
+            "grotte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "paroi",
+          "options": [
+            "paroi",
+            "stalactite",
+            "stalagmite",
+            "spéléologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "casque",
+          "options": [
+            "casque",
+            "spéléologie",
+            "grotte",
+            "stalactite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "gouffre",
+          "options": [
+            "gouffre",
+            "stalagmite",
+            "spéléologue",
+            "paroi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "corde",
+          "options": [
+            "corde",
+            "casque",
+            "gouffre",
+            "baudrier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "baudrier",
+          "options": [
+            "baudrier",
+            "lampe",
+            "siphon",
+            "écho"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "lampe",
+          "options": [
+            "lampe",
+            "obscurité",
+            "spéléologie",
+            "grotte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "siphon",
+          "options": [
+            "siphon",
+            "stalactite",
+            "stalagmite",
+            "spéléologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "écho",
+          "options": [
+            "écho",
+            "paroi",
+            "casque",
+            "gouffre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "obscurité",
+          "options": [
+            "obscurité",
+            "corde",
+            "baudrier",
+            "lampe"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les entrailles du monde",
+      "inspiration": "Sanctum (Alister Grierson, 2011)",
+      "text": "À peine Frank eut-il lâché la prise rocheuse que le vide l'engloutit dans son étreinte glaciale. Ce maître de la {{BLANK_1}} ne cherchait pas la gloire, mais la vérité cachée dans les entrailles de la Terre. Sa {{BLANK_11}} frontale ne parvenait qu'à griffer l'{{BLANK_14}} oppressante de la {{BLANK_2}} millénaire. Suspendu à sa {{BLANK_9}} par son {{BLANK_10}} de cuir usé, il frôlait la {{BLANK_6}} suintante où le temps s'était pétrifié en {{BLANK_3}} de calcaire et en {{BLANK_4}} silencieuse. Sous ses bottes, le {{BLANK_8}} noir ouvrait sa gueule affamée, prêt à l'aspirer vers le centre du monde. Le seul témoin de sa descente aux enfers était l'{{BLANK_13}} moqueur de l'eau glacée qui s'engouffrait dans le {{BLANK_12}} mortel, rappelant à ce {{BLANK_5}} vulnérable, protégé par son simple {{BLANK_7}} de plastique, que la nature ne tolère aucune arrogance humaine dans ses cathédrales de pierre aveugle.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "spéléologie",
+          "options": [
+            "spéléologie",
+            "grotte",
+            "stalactite",
+            "stalagmite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "grotte",
+          "options": [
+            "grotte",
+            "spéléologue",
+            "paroi",
+            "casque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "stalactite",
+          "options": [
+            "stalactite",
+            "gouffre",
+            "corde",
+            "baudrier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "stalagmite",
+          "options": [
+            "stalagmite",
+            "lampe",
+            "siphon",
+            "écho"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "spéléologue",
+          "options": [
+            "spéléologue",
+            "obscurité",
+            "spéléologie",
+            "grotte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "paroi",
+          "options": [
+            "paroi",
+            "stalactite",
+            "stalagmite",
+            "spéléologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "casque",
+          "options": [
+            "casque",
+            "spéléologie",
+            "grotte",
+            "stalactite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "gouffre",
+          "options": [
+            "gouffre",
+            "stalagmite",
+            "spéléologue",
+            "paroi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "corde",
+          "options": [
+            "corde",
+            "casque",
+            "gouffre",
+            "baudrier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "baudrier",
+          "options": [
+            "baudrier",
+            "lampe",
+            "siphon",
+            "écho"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "lampe",
+          "options": [
+            "lampe",
+            "obscurité",
+            "spéléologie",
+            "grotte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "siphon",
+          "options": [
+            "siphon",
+            "stalactite",
+            "stalagmite",
+            "spéléologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "écho",
+          "options": [
+            "écho",
+            "paroi",
+            "casque",
+            "gouffre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "obscurité",
+          "options": [
+            "obscurité",
+            "corde",
+            "baudrier",
+            "lampe"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Spéléologie et grottes",
+    "title_fa": "آزمون : غارنوردی و غارها",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science et le sport qui consistent à explorer et étudier les cavités souterraines naturelles est la ____.",
+        "options": [
+          "spéléologie",
+          "grotte",
+          "stalactite",
+          "stalagmite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم و ورزش کاوش غارها = spéléologie."
+      },
+      {
+        "type": "mcq",
+        "question": "La cavité naturelle souterraine, formée par l'érosion de la roche, est la ____.",
+        "options": [
+          "grotte",
+          "spéléologue",
+          "paroi",
+          "casque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حفره طبیعی زیرزمینی = grotte."
+      },
+      {
+        "type": "mcq",
+        "question": "La concrétion calcaire qui pend du plafond d'une grotte comme une aiguille est la ____.",
+        "options": [
+          "stalactite",
+          "gouffre",
+          "corde",
+          "baudrier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رسوب آهکی آویزان از سقف = stalactite."
+      },
+      {
+        "type": "mcq",
+        "question": "La concrétion calcaire qui s'élève du sol de la grotte, formée par les gouttes d'eau, est la ____.",
+        "options": [
+          "stalagmite",
+          "lampe",
+          "siphon",
+          "écho"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رسوب آهکی رو به بالای زمین = stalagmite."
+      },
+      {
+        "type": "mcq",
+        "question": "Le scientifique ou l'explorateur spécialisé dans l'étude et la descente des cavernes est le ____.",
+        "options": [
+          "spéléologue",
+          "obscurité",
+          "spéléologie",
+          "grotte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دانشمند یا کاوشگر غار = spéléologue."
+      },
+      {
+        "type": "mcq",
+        "question": "La surface verticale de roche ou de terre que l'on doit escalader ou descendre est la ____.",
+        "options": [
+          "paroi",
+          "stalactite",
+          "stalagmite",
+          "spéléologue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطح عمودی سنگی = paroi."
+      },
+      {
+        "type": "mcq",
+        "question": "L'équipement de protection individuelle rigide qui protège la tête des chutes de pierres est le ____.",
+        "options": [
+          "casque",
+          "spéléologie",
+          "grotte",
+          "stalactite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تجهیزات محافظ سر = casque."
+      },
+      {
+        "type": "mcq",
+        "question": "Le trou profond, souvent vertical et terrifiant, qui s'ouvre dans le sol ou la roche est le ____.",
+        "options": [
+          "gouffre",
+          "stalagmite",
+          "spéléologue",
+          "paroi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حفره عمیق و عمودی = gouffre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lien tressé et résistant utilisé pour l'assurage, la descente et la remontée est la ____.",
+        "options": [
+          "corde",
+          "casque",
+          "gouffre",
+          "baudrier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طناب مقاوم برای فرود و صعود = corde."
+      },
+      {
+        "type": "mcq",
+        "question": "Le harnais porté autour de la taille et des cuisses pour s'attacher à la corde de sécurité est le ____.",
+        "options": [
+          "baudrier",
+          "lampe",
+          "siphon",
+          "écho"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صندلی ایمنی دور کمر و ران = baudrier."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil d'éclairage, souvent fixé sur le casque pour garder les mains libres, est la ____.",
+        "options": [
+          "lampe",
+          "obscurité",
+          "spéléologie",
+          "grotte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار روشنایی روی کلاه = lampe."
+      },
+      {
+        "type": "mcq",
+        "question": "Le passage de galerie entièrement inondé qui oblige les spéléologues à plonger en apnée ou avec bouteilles est le ____.",
+        "options": [
+          "siphon",
+          "stalactite",
+          "stalagmite",
+          "spéléologue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسیر کاملاً غرقابی در غار = siphon."
+      },
+      {
+        "type": "mcq",
+        "question": "Le phénomène acoustique où le son se réfléchit sur les parois et revient vers l'émetteur est l'____.",
+        "options": [
+          "écho",
+          "paroi",
+          "casque",
+          "gouffre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بازتاب صدا از دیواره‌ها = écho."
+      },
+      {
+        "type": "mcq",
+        "question": "L'absence totale de lumière, caractéristique des profondeurs des réseaux souterrains, est l'____.",
+        "options": [
+          "obscurité",
+          "corde",
+          "baudrier",
+          "lampe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نبود مطلق نور = obscurité."
+      },
+      {
+        "type": "binary",
+        "question": "La stalactite est la formation rocheuse qui monte du sol vers le plafond de la grotte.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. استالاکتیت (stalactite) از سقف به پایین آویزان است؛ استالاکمیت از زمین بالا می‌رود."
+      },
+      {
+        "type": "binary",
+        "question": "Un siphon en spéléologie désigne une section de galerie entièrement noyée sous l'eau.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سیفون بخشی از غار است که کاملاً زیر آب قرار دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le baudrier est un casque renforcé qui protège le spéléologue des chutes de pierres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. baudrier هارنس یا کمربند ایمنی است؛ casque کلاه ایمنی سر است."
+      },
+      {
+        "type": "binary",
+        "question": "Le gouffre est une dépression ou un trou profond et souvent vertical dans le sol.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. مغاک (gouffre) حفره‌ای عمیق و معمولاً عمودی است."
+      },
+      {
+        "type": "binary",
+        "question": "La spéléologie se pratique principalement en haute montagne sur les glaciers et les parois enneigées.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. غارنوردی (spéléologie) کاوش در غارها و حفره‌های زیرزمینی است، نه کوهنوردی روی یخ."
+      },
+      {
+        "type": "binary",
+        "question": "L'écho est la répétition d'un son causée par sa réflexion sur les parois d'une caverne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پژواک (écho) تکرار صدا بر اثر بازتاب از دیواره‌هاست."
+      }
+    ]
+  }
+}
