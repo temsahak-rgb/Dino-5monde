@@ -1,0 +1,460 @@
+{
+  "id": "verbs_abstract",
+  "level": "C1",
+  "theme": "Verbes, concepts abstraits et expressions",
+  "theme_fa": "افعال، مفاهیم انتزاعی و اصطلاحات روزمره",
+  "icon": "🔄",
+  "inspiration": "Le Nom de la Rose (Umberto Eco / Jean-Jacques Annaud, 1986)",
+  "words": [
+    {
+      "fr": "l'avènement",
+      "fa": "ظهور، به قدرت رسیدن",
+      "emoji": "🌅",
+      "difficulty": 4,
+      "ex": "L'avènement de l'intelligence artificielle bouleverse la société.",
+      "ex_fa": "ظهور هوش مصنوعی جامعه را دگرگون کرده است."
+    },
+    {
+      "fr": "le palliatif",
+      "fa": "راه‌حل موقت، مسکن",
+      "emoji": "🩹",
+      "difficulty": 5,
+      "ex": "Ce n'est qu'un palliatif, pas une vraie solution.",
+      "ex_fa": "این فقط یک راه‌حل موقت (مسکن) است، نه یک راه‌حل واقعی."
+    },
+    {
+      "fr": "la panacée",
+      "fa": "داروی همه دردها، راه‌حل جامع",
+      "emoji": "🧪",
+      "difficulty": 5,
+      "ex": "La technologie n'est pas la panacée pour tous nos problèmes.",
+      "ex_fa": "تکنولوژی داروی همه دردها (راه‌حل جامع) برای تمام مشکلات ما نیست."
+    },
+    {
+      "fr": "l'éviction",
+      "fa": "برکناری، بیرون راندن",
+      "emoji": "🚪",
+      "difficulty": 4,
+      "ex": "L'éviction du directeur a surpris tout le monde.",
+      "ex_fa": "برکناری مدیر همه را شگفت‌زده کرد."
+    },
+    {
+      "fr": "le paradigme",
+      "fa": "پارادایم، الگو",
+      "emoji": "🧩",
+      "difficulty": 5,
+      "ex": "Nous devons changer de paradigme pour innover.",
+      "ex_fa": "ما باید برای نوآوری، پارادایم (الگوی فکری) خود را تغییر دهیم."
+    },
+    {
+      "fr": "le corollaire",
+      "fa": "پیامد طبیعی، نتیجه",
+      "emoji": "🔗",
+      "difficulty": 5,
+      "ex": "La liberté a pour corollaire la responsabilité.",
+      "ex_fa": "آزادی، مسئولیت را به عنوان پیامد طبیعی خود دارد."
+    },
+    {
+      "fr": "la pierre angulaire",
+      "fa": "سنگ بنا، رکن اصلی",
+      "emoji": "🏛️",
+      "difficulty": 4,
+      "ex": "La confiance est la pierre angulaire de leur relation.",
+      "ex_fa": "اعتماد، سنگ بنای (رکن اصلی) رابطه آن‌هاست."
+    },
+    {
+      "fr": "le prisme",
+      "fa": "منشور، زاویه دید",
+      "emoji": "🔺",
+      "difficulty": 4,
+      "ex": "Il analyse la politique à travers le prisme de l'économie.",
+      "ex_fa": "او سیاست را از منشور (زاویه دید) اقتصاد تحلیل می‌کند."
+    },
+    {
+      "fr": "l'apanage",
+      "fa": "امتیاز اختصاصی، ویژگی انحصاری",
+      "emoji": "👑",
+      "difficulty": 5,
+      "ex": "L'erreur n'est pas l'apanage des débutants.",
+      "ex_fa": "اشتباه کردن، امتیاز اختصاصی (ویژه) مبتدیان نیست."
+    },
+    {
+      "fr": "la pierre de touche",
+      "fa": "معیار سنجش، محک",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "Cette crise sera la pierre de touche de son leadership.",
+      "ex_fa": "این بحران، معیار سنجش (محک) رهبری او خواهد بود."
+    },
+    {
+      "fr": "le dogme",
+      "fa": "جزم‌اندیشی، عقیده تغییرناپذیر",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "Il refuse de remettre en cause le dogme de son parti.",
+      "ex_fa": "او از زیر سوال بردن عقیده جزمی (تغییرناپذیر) حزبش خودداری می‌کند."
+    },
+    {
+      "fr": "la chimère",
+      "fa": "توهم، رویای محال",
+      "emoji": "🦄",
+      "difficulty": 5,
+      "ex": "L'idée d'une croissance infinie est une chimère.",
+      "ex_fa": "ایده رشد بی‌نهایت، یک توهم (رویای محال) است."
+    },
+    {
+      "fr": "le pléonasme",
+      "fa": "حشو، تکرار زائد",
+      "emoji": "🔁",
+      "difficulty": 4,
+      "ex": "Dire 'je l'ai vu de mes yeux' est un pléonasme.",
+      "ex_fa": "گفتن 'من آن را با چشمانم دیدم' یک حشو (تکرار زائد) است."
+    },
+    {
+      "fr": "l'antinomie",
+      "fa": "تضاد، تناقض",
+      "emoji": "⚡",
+      "difficulty": 5,
+      "ex": "Il existe une antinomie entre ses paroles et ses actes.",
+      "ex_fa": "بین حرف‌ها و اعمال او یک تضاد (تناقض) وجود دارد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le vent du changement",
+      "title_fa": "باد تغییر",
+      "text": "Dans l'entreprise, le vieux directeur résistait au changement. Mais {{BLANK_1}} du numérique a rendu ses méthodes obsolètes. Le conseil d'administration a donc voté {{BLANK_2}} du dirigeant. La nouvelle directrice pense que l'innovation est {{BLANK_3}} de la survie de la société. Elle refuse les solutions faciles : acheter une autre entreprise n'est qu'un {{BLANK_4}} à court terme, et certainement pas {{BLANK_5}} universelle. Pour elle, il faut changer de {{BLANK_6}} et repenser tout le modèle économique. Elle sait que cette transformation radicale aura pour {{BLANK_7}} une période de stress pour les employés, mais c'est le prix à payer.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "l'avènement",
+          "options": [
+            "l'avènement",
+            "le pléonasme",
+            "le corollaire",
+            "le palliatif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "l'éviction",
+          "options": [
+            "la panacée",
+            "l'éviction",
+            "la chimère",
+            "l'antinomie"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 3,
+          "answer": "la pierre angulaire",
+          "options": [
+            "la pierre angulaire",
+            "l'apanage",
+            "la chimère",
+            "l'antinomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "palliatif",
+          "options": [
+            "palliatif",
+            "avènement",
+            "paradigme",
+            "corollaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "la panacée",
+          "options": [
+            "la panacée",
+            "l'éviction",
+            "l'antinomie",
+            "la pierre de touche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "paradigme",
+          "options": [
+            "paradigme",
+            "pléonasme",
+            "dogme",
+            "apanage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "corollaire",
+          "options": [
+            "corollaire",
+            "palliatif",
+            "avènement",
+            "prisme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le secret du scriptorium",
+      "title_fa": "راز کتابخانه صومعه",
+      "inspiration": "Le Nom de la Rose (Umberto Eco / Jean-Jacques Annaud, 1986)",
+      "text": "Dans le scriptorium glacé de l'abbaye, le vieux moine Jorge de Burgos caressait les parchemins d'une main tremblante. Pour lui, la vérité n'était pas une quête, mais {{BLANK_1}} exclusif de l'Église, un trésor jalousement gardé loin des regards profanes. Le jeune novice Adso, lui, observait le monde à travers {{BLANK_2}} de sa curiosité naissante, fasciné par les enluminures qui semblaient défier {{BLANK_3}} austère de son ordre. Un jour, il trouva un fragment de texte interdit qui révélait une {{BLANK_4}} flagrante entre les prêches sur la pauvreté et les richesses accumulées par l'abbaye. Le vieil abbé, mis au courant, traita cette quête de savoir de pure {{BLANK_5}}, un mirage dangereux qui menait tout droit à l'hérésie. Pourtant, pour Adso, ce manuscrit devint {{BLANK_6}} de sa foi, le test ultime qui séparerait l'illusion de la réalité. En relisant ses propres notes, il sourit amèrement en notant que parler de « sainte richesse » n'était qu'un triste {{BLANK_7}} pour masquer l'avidité des hommes.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "l'apanage",
+          "options": [
+            "l'apanage",
+            "l'avènement",
+            "le corollaire",
+            "le palliatif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "le prisme",
+          "options": [
+            "le prisme",
+            "le dogme",
+            "le paradigme",
+            "le pléonasme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "le dogme",
+          "options": [
+            "le dogme",
+            "le prisme",
+            "le palliatif",
+            "le corollaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "antinomie",
+          "options": [
+            "antinomie",
+            "panacée",
+            "éviction",
+            "pierre angulaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "chimère",
+          "options": [
+            "chimère",
+            "pierre de touche",
+            "panacée",
+            "apanage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "la pierre de touche",
+          "options": [
+            "la pierre de touche",
+            "l'apanage",
+            "la chimère",
+            "l'antinomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pléonasme",
+          "options": [
+            "pléonasme",
+            "paradigme",
+            "dogme",
+            "prisme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Concepts abstraits et expressions",
+    "title_fa": "آزمون : مفاهیم انتزاعی و اصطلاحات",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'accession au trône du jeune prince marque un ____ historique pour le royaume.",
+        "options": [
+          "avènement",
+          "pléonasme",
+          "corollaire",
+          "palliatif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "به قدرت رسیدن و ظهور یک پادشاه = avènement."
+      },
+      {
+        "type": "mcq",
+        "question": "Le conseil d'administration a décidé de renvoyer le PDG suite au scandale. Cette ____ a choqué les marchés.",
+        "options": [
+          "panacée",
+          "éviction",
+          "chimère",
+          "antinomie"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "برکناری و بیرون راندن از مقام = éviction."
+      },
+      {
+        "type": "mcq",
+        "question": "La découverte de la relativité a forcé les physiciens à changer leur ____ de pensée.",
+        "options": [
+          "paradigme",
+          "pléonasme",
+          "dogme",
+          "apanage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تغییر الگوی فکری و چارچوب نظری = changer de paradigme."
+      },
+      {
+        "type": "mcq",
+        "question": "L'augmentation des salaires aura pour ____ direct une hausse de la consommation des ménages.",
+        "options": [
+          "corollaire",
+          "palliatif",
+          "avènement",
+          "prisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیامد طبیعی و نتیجه مستقیم یک اتفاق = corollaire."
+      },
+      {
+        "type": "mcq",
+        "question": "La liberté d'expression est le fondement essentiel, la ____ de toute société démocratique.",
+        "options": [
+          "pierre angulaire",
+          "chimère",
+          "éviction",
+          "panacée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سنگ بنا و رکن اصلی یک سیستم = pierre angulaire."
+      },
+      {
+        "type": "mcq",
+        "question": "Le journaliste analyse les événements internationaux à travers le ____ des intérêts économiques.",
+        "options": [
+          "prisme",
+          "dogme",
+          "palliatif",
+          "corollaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نگاه کردن به یک موضوع از زاویه دید یا منشور خاص = à travers le prisme de."
+      },
+      {
+        "type": "mcq",
+        "question": "Pendant des siècles, le droit de vote n'était pas universel ; c'était l'____ des hommes riches.",
+        "options": [
+          "apanage",
+          "avènement",
+          "paradigme",
+          "pléonasme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "امتیاز اختصاصی و ویژگی انحصاری یک گروه = apanage."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette période de crise économique sera le véritable test, la ____ qui révélera la solidité de notre système.",
+        "options": [
+          "pierre de touche",
+          "chimère",
+          "antinomie",
+          "éviction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "معیار سنجش و محکی برای آزمایش کیفیت = pierre de touche."
+      },
+      {
+        "type": "mcq",
+        "question": "Espérer devenir milliardaire en jouant au loto chaque semaine est une pure ____.",
+        "options": [
+          "chimère",
+          "pierre angulaire",
+          "panacée",
+          "apanage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توهم و رویای محال و دست‌نیافتنی = chimère."
+      },
+      {
+        "type": "mcq",
+        "question": "Il y a une contradiction totale, une véritable ____ entre ses discours écologistes et ses investissements dans le pétrole.",
+        "options": [
+          "antinomie",
+          "éviction",
+          "panacée",
+          "chimère"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تضاد منطقی و تناقض عمیق بین دو چیز = antinomie."
+      },
+      {
+        "type": "binary",
+        "question": "Un palliatif est une solution définitive qui éradique la cause du problème.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "palliatif یک راه‌حل موقت و مسکن است که مشکل را ریشه‌کن نمی‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La panacée désigne un remède ou une solution capable de guérir tous les maux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، panacée به معنای داروی همه دردها و راه‌حل جامع برای تمام مشکلات است."
+      },
+      {
+        "type": "binary",
+        "question": "Un dogme est une vérité scientifique toujours ouverte au débat et à la réfutation.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "dogme یک عقیده جزمی و تغییرناپذیر است که جای بحث و رد شدن ندارد."
+      },
+      {
+        "type": "binary",
+        "question": "Dire 'je l'ai vu de mes propres yeux' constitue un pléonasme.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، دیدن فقط با چشم ممکن است، پس اضافه کردن 'چشمان خودم' حشو (pléonasme) است."
+      }
+    ]
+  }
+}
