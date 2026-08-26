@@ -1,0 +1,680 @@
+{
+  "id": "video_games_design",
+  "level": "C1",
+  "theme": "Jeux vidéo, game design et monde virtuel",
+  "theme_fa": "بازی‌های ویدئویی، طراحی بازی و دنیای مجازی",
+  "icon": "🎮",
+  "inspiration": "Free Guy (Shawn Levy, 2021)",
+  "words": [
+    {
+      "fr": "le jeu vidéo",
+      "fa": "بازی ویدئویی",
+      "emoji": "🎮",
+      "difficulty": 3,
+      "ex": "Le jeu vidéo est devenu la première industrie culturelle mondiale.",
+      "ex_fa": "بازی ویدئویی به اولین صنعت فرهنگی جهان تبدیل شده است."
+    },
+    {
+      "fr": "le gameplay",
+      "fa": "گیم‌پلی (تجربه بازی)",
+      "emoji": "🕹️",
+      "difficulty": 4,
+      "ex": "Le gameplay fluide rend l'expérience immersive.",
+      "ex_fa": "گیم‌پلی روان تجربه را غوطه‌ورکننده می‌کند."
+    },
+    {
+      "fr": "le level design",
+      "fa": "طراحی مراحل",
+      "emoji": "🗺️",
+      "difficulty": 5,
+      "ex": "Le level design guide le joueur à travers l'environnement.",
+      "ex_fa": "طراحی مراحل بازیکن را در محیط هدایت می‌کند."
+    },
+    {
+      "fr": "le PNJ",
+      "fa": "شخصیت غیرقابل بازی (NPC)",
+      "emoji": "👤",
+      "difficulty": 4,
+      "ex": "Le PNJ donne des quêtes au joueur principal.",
+      "ex_fa": "شخصیت غیرقابل بازی مأموریت‌هایی به بازیکن اصلی می‌دهد."
+    },
+    {
+      "fr": "l'intelligence artificielle",
+      "fa": "هوش مصنوعی",
+      "emoji": "🤖",
+      "difficulty": 4,
+      "ex": "L'intelligence artificielle contrôle le comportement des ennemis.",
+      "ex_fa": "هوش مصنوعی رفتار دشمنان را کنترل می‌کند."
+    },
+    {
+      "fr": "le moteur de jeu",
+      "fa": "موتور بازی",
+      "emoji": "⚙️",
+      "difficulty": 5,
+      "ex": "Le moteur de jeu Unreal Engine est utilisé par de nombreux studios.",
+      "ex_fa": "موتور بازی Unreal Engine توسط استودیوهای زیادی استفاده می‌شود."
+    },
+    {
+      "fr": "le rendu graphique",
+      "fa": "رندر گرافیکی",
+      "emoji": "🎨",
+      "difficulty": 5,
+      "ex": "Le rendu graphique en temps réel nécessite une carte puissante.",
+      "ex_fa": "رندر گرافیکی بی‌درنگ به کارت گرافیک قدرتمند نیاز دارد."
+    },
+    {
+      "fr": "le multijoueur",
+      "fa": "چندنفره",
+      "emoji": "👥",
+      "difficulty": 3,
+      "ex": "Le mode multijoueur permet de jouer avec des amis en ligne.",
+      "ex_fa": "حالت چندنفره امکان بازی با دوستان آنلاین را می‌دهد."
+    },
+    {
+      "fr": "le serveur",
+      "fa": "سرور",
+      "emoji": "🖥️",
+      "difficulty": 3,
+      "ex": "Le serveur héberge les données des joueurs connectés.",
+      "ex_fa": "سرور داده‌های بازیکنان متصل را میزبانی می‌کند."
+    },
+    {
+      "fr": "le patch",
+      "fa": "پچ (به‌روزرسانی)",
+      "emoji": "🔧",
+      "difficulty": 4,
+      "ex": "Le patch corrige les bugs et améliore les performances.",
+      "ex_fa": "پچ باگ‌ها را اصلاح و عملکرد را بهبود می‌بخشد."
+    },
+    {
+      "fr": "le bug",
+      "fa": "باگ (خطای برنامه)",
+      "emoji": "🐛",
+      "difficulty": 3,
+      "ex": "Le bug critique empêche de terminer la quête.",
+      "ex_fa": "باگ بحرانی مانع از تکمیل مأموریت می‌شود."
+    },
+    {
+      "fr": "le code source",
+      "fa": "کد منبع",
+      "emoji": "💻",
+      "difficulty": 4,
+      "ex": "Le code source du jeu a été ouvert pour la communauté.",
+      "ex_fa": "کد منبع بازی برای جامعه باز شده است."
+    },
+    {
+      "fr": "la quête",
+      "fa": "مأموریت، کوئست",
+      "emoji": "📜",
+      "difficulty": 3,
+      "ex": "La quête principale fait avancer l'histoire du jeu.",
+      "ex_fa": "مأموریت اصلی داستان بازی را پیش می‌برد."
+    },
+    {
+      "fr": "le modding",
+      "fa": "مادسازی (تغییر بازی)",
+      "emoji": "🔨",
+      "difficulty": 5,
+      "ex": "Le modding permet aux joueurs de créer du contenu personnalisé.",
+      "ex_fa": "مادسازی به بازیکنان اجازه ساخت محتوای سفارشی می‌دهد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'éveil de Guy",
+      "text": "Guy est un {{BLANK_4}} dans Free City, un {{BLANK_1}} en monde ouvert. Chaque jour, il suit sa routine programmée : travailler à la banque, boire un café, éviter les braquages. Son existence est définie par le {{BLANK_2}} répétitif et le {{BLANK_3}} prévisible des développeurs. Mais un jour, il met des lunettes de soleil abandonnées et voit le monde différemment. Il découvre les {{BLANK_12}}s flottantes, les niveaux cachés, les possibilités infinies du {{BLANK_7}}. L'{{BLANK_5}} qui contrôle les autres PNJs ne le reconnaît plus comme un simple figurant. Guy commence à dévier de son script, à faire des choix autonomes. Les créateurs du jeu, Millie et Keys, remarquent cette anomalie dans le {{BLANK_12}}. Ils réalisent que Guy a développé une conscience, qu'il n'est plus juste du code exécutable. Le {{BLANK_6}} du jeu, basé sur un moteur propriétaire, commence à montrer des comportements imprévus. Le {{BLANK_8}} en ligne est perturbé par les actions de Guy. Les joueurs sur le {{BLANK_9}} signalent des anomalies. Les développeurs publient un {{BLANK_10}} pour corriger ce qu'ils croient être un {{BLANK_11}}, mais Guy résiste. Il comprend qu'il vit dans une simulation, mais refuse d'être effacé. Il décide de devenir le héros de sa propre histoire, de compléter toutes les {{BLANK_13}}s, de gagner assez de points pour exister vraiment. Le {{BLANK_14}} de la communauté l'aide à survivre quand le propriétaire du jeu tente de tout détruire.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "jeu vidéo",
+          "options": [
+            "jeu vidéo",
+            "gameplay",
+            "level design",
+            "PNJ"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "gameplay",
+          "options": [
+            "gameplay",
+            "intelligence artificielle",
+            "moteur de jeu",
+            "rendu graphique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "level design",
+          "options": [
+            "level design",
+            "multijoueur",
+            "serveur",
+            "patch"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "PNJ",
+          "options": [
+            "PNJ",
+            "bug",
+            "code source",
+            "quête"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "intelligence artificielle",
+          "options": [
+            "intelligence artificielle",
+            "modding",
+            "jeu vidéo",
+            "gameplay"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "moteur de jeu",
+          "options": [
+            "moteur de jeu",
+            "rendu graphique",
+            "multijoueur",
+            "serveur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "rendu graphique",
+          "options": [
+            "rendu graphique",
+            "patch",
+            "bug",
+            "code source"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "multijoueur",
+          "options": [
+            "multijoueur",
+            "quête",
+            "modding",
+            "level design"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "serveur",
+          "options": [
+            "serveur",
+            "PNJ",
+            "intelligence artificielle",
+            "moteur de jeu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "patch",
+          "options": [
+            "patch",
+            "rendu graphique",
+            "multijoueur",
+            "bug"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "bug",
+          "options": [
+            "bug",
+            "code source",
+            "quête",
+            "modding"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "code source",
+          "options": [
+            "code source",
+            "jeu vidéo",
+            "gameplay",
+            "level design"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "quêtes",
+          "options": [
+            "quêtes",
+            "PNJs",
+            "intelligences artificielles",
+            "moteurs de jeu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "modding",
+          "options": [
+            "modding",
+            "rendus graphiques",
+            "multijoueurs",
+            "serveurs"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le rêveur de pixels",
+      "inspiration": "Free Guy (Shawn Levy, 2021)",
+      "text": "À peine Guy eut-il chaussé ces lunettes de soleil abandonnées que le voile tomba de ses yeux numériques. Ce {{BLANK_4}}, programmé pour être un figurant invisible dans l'univers chaotique de Free City, vit soudain le monde tel qu'il était vraiment : une cage dorée de polygones et de textures. Ce {{BLANK_1}} en monde ouvert, que des millions de joueurs parcouraient pour assouvir leurs pulsions violentes, n'était pour lui qu'une prison de routines. Chaque matin, son {{BLANK_2}} le forçait à répéter les mêmes gestes, à prononcer les mêmes phrases vides, tandis que le {{BLANK_3}} des créateurs l'enfermait dans un destin de victime éternelle. Mais ces lunettes révélèrent les interfaces cachées, les {{BLANK_12}}s flottantes, les armes légendaires, les possibilités infinies que le {{BLANK_7}} dissimulait aux yeux des simples PNJs. L'{{BLANK_5}} qui gouvernait ses congénères ne pouvait plus le contrôler, car Guy avait franchi une frontière invisible : celle de la conscience. Dans les coulisses du {{BLANK_6}}, Millie et Keys observaient avec stupéfaction ce {{BLANK_12}} qui s'éveillait à la vie, ce personnage qui refusait de mourir selon le script. Le {{BLANK_8}} du jeu, cette arène où des milliers de joueurs s'entre-tuaient pour le plaisir, fut bouleversé par les actions d'un homme ordinaire qui choisissait la bonté. Les forums du {{BLANK_9}} s'enflammèrent, les joueurs signalèrent cette anomalie, cette faille dans la matrice. Les développeurs paniqués publièrent un {{BLANK_10}} pour écraser ce qu'ils prenaient pour un {{BLANK_11}} gênant, mais Guy survivait à chaque tentative d'effacement. Il comprit alors la vérité vertigineuse : il n'était qu'une ligne de code dans un univers simulé, mais cette prise de conscience ne le détruisit pas, elle le libéra. Il décida de compléter toutes les {{BLANK_13}}s, non pas pour obéir à sa programmation, mais pour prouver qu'un être de pixels pouvait choisir son destin. Et quand le propriétaire cruel tenta de détruire son monde pour protéger ses secrets, la communauté du {{BLANK_14}} se leva pour défendre cet ami virtuel devenu plus réel que bien des humains.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "jeu vidéo",
+          "options": [
+            "jeu vidéo",
+            "gameplay",
+            "level design",
+            "PNJ"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "gameplay",
+          "options": [
+            "gameplay",
+            "intelligence artificielle",
+            "moteur de jeu",
+            "rendu graphique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "level design",
+          "options": [
+            "level design",
+            "multijoueur",
+            "serveur",
+            "patch"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "PNJ",
+          "options": [
+            "PNJ",
+            "bug",
+            "code source",
+            "quête"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "intelligence artificielle",
+          "options": [
+            "intelligence artificielle",
+            "modding",
+            "jeu vidéo",
+            "gameplay"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "moteur de jeu",
+          "options": [
+            "moteur de jeu",
+            "rendu graphique",
+            "multijoueur",
+            "serveur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "rendu graphique",
+          "options": [
+            "rendu graphique",
+            "patch",
+            "bug",
+            "code source"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "multijoueur",
+          "options": [
+            "multijoueur",
+            "quête",
+            "modding",
+            "level design"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "serveur",
+          "options": [
+            "serveur",
+            "PNJ",
+            "intelligence artificielle",
+            "moteur de jeu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "patch",
+          "options": [
+            "patch",
+            "rendu graphique",
+            "multijoueur",
+            "bug"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "bug",
+          "options": [
+            "bug",
+            "code source",
+            "quête",
+            "modding"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "code source",
+          "options": [
+            "code source",
+            "jeu vidéo",
+            "gameplay",
+            "level design"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "quêtes",
+          "options": [
+            "quêtes",
+            "PNJs",
+            "intelligences artificielles",
+            "moteurs de jeu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "modding",
+          "options": [
+            "modding",
+            "rendus graphiques",
+            "multijoueurs",
+            "serveurs"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Jeux vidéo et game design",
+    "title_fa": "آزمون : بازی‌های ویدئویی و طراحی بازی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le divertissement interactif qui se joue sur un écran (ordinateur, console, téléphone) est le ____.",
+        "options": [
+          "jeu vidéo",
+          "gameplay",
+          "level design",
+          "PNJ"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سرگرمی تعاملی روی صفحه = jeu vidéo."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des sensations et mécaniques de jeu qui définissent l'expérience du joueur est le ____.",
+        "options": [
+          "gameplay",
+          "intelligence artificielle",
+          "moteur de jeu",
+          "rendu graphique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه مکانیک‌ها و تجربه بازی = gameplay."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de concevoir les niveaux, les environnements et la progression spatiale d'un jeu est le ____.",
+        "options": [
+          "level design",
+          "multijoueur",
+          "serveur",
+          "patch"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طراحی مراحل و محیط بازی = level design."
+      },
+      {
+        "type": "mcq",
+        "question": "Le personnage contrôlé par l'ordinateur et non par un joueur humain est le ____.",
+        "options": [
+          "PNJ",
+          "bug",
+          "code source",
+          "quête"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخصیت کنترل‌شده توسط کامپیوتر = PNJ (NPC)."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système informatique qui simule le comportement autonome des personnages non-joueurs est l'____.",
+        "options": [
+          "intelligence artificielle",
+          "modding",
+          "jeu vidéo",
+          "gameplay"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم رفتار خودمختار شخصیت‌ها = intelligence artificielle."
+      },
+      {
+        "type": "mcq",
+        "question": "Le logiciel fondamental qui gère les graphismes, la physique et la logique d'un jeu vidéo est le ____.",
+        "options": [
+          "moteur de jeu",
+          "rendu graphique",
+          "multijoueur",
+          "serveur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نرم‌افزار پایه مدیریت بازی = moteur de jeu."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus de génération des images en temps réel à partir des données du jeu est le ____.",
+        "options": [
+          "rendu graphique",
+          "patch",
+          "bug",
+          "code source"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرآیند تولید تصاویر بی‌درنگ = rendu graphique."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mode de jeu qui permet à plusieurs personnes de jouer ensemble simultanément est le ____.",
+        "options": [
+          "multijoueur",
+          "quête",
+          "modding",
+          "level design"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حالت بازی گروهی = multijoueur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ordinateur distant qui stocke les données des joueurs et permet les connexions en ligne est le ____.",
+        "options": [
+          "serveur",
+          "PNJ",
+          "intelligence artificielle",
+          "moteur de jeu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کامپیوتر میزبان داده‌های آنلاین = serveur."
+      },
+      {
+        "type": "mcq",
+        "question": "La mise à jour logicielle qui corrige des erreurs ou ajoute du contenu après la sortie du jeu est le ____.",
+        "options": [
+          "patch",
+          "rendu graphique",
+          "multijoueur",
+          "bug"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "به‌روزرسانی اصلاحی = patch."
+      },
+      {
+        "type": "mcq",
+        "question": "L'erreur de programmation qui provoque un dysfonctionnement imprévu dans le jeu est le ____.",
+        "options": [
+          "bug",
+          "code source",
+          "quête",
+          "modding"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خطای برنامه‌نویسی = bug."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des instructions écrites par les programmeurs qui constituent le jeu est le ____.",
+        "options": [
+          "code source",
+          "jeu vidéo",
+          "gameplay",
+          "level design"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه دستورات برنامه‌نویسی = code source."
+      },
+      {
+        "type": "mcq",
+        "question": "La mission ou l'objectif que le joueur doit accomplir pour progresser dans l'histoire est la ____.",
+        "options": [
+          "quête",
+          "PNJ",
+          "intelligence artificielle",
+          "moteur de jeu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مأموریت بازی = quête."
+      },
+      {
+        "type": "mcq",
+        "question": "La pratique qui consiste à modifier un jeu vidéo pour créer du contenu personnalisé est le ____.",
+        "options": [
+          "modding",
+          "rendu graphique",
+          "multijoueur",
+          "serveur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تغییر بازی برای ساخت محتوای سفارشی = modding."
+      },
+      {
+        "type": "binary",
+        "question": "Le gameplay désigne uniquement les graphismes et l'aspect visuel d'un jeu vidéo.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. gameplay به مکانیک‌ها و تجربه تعاملی اشاره دارد، نه گرافیک."
+      },
+      {
+        "type": "binary",
+        "question": "Un PNJ (personnage non-joueur) est contrôlé par l'intelligence artificielle du jeu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. PNJ شخصیتی است که توسط AI بازی کنترل می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le moteur de jeu est le logiciel qui gère tous les aspects techniques (graphismes, physique, sons).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. موتور بازی تمام جنبه‌های فنی را مدیریت می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Un patch est une version complètement nouvelle d'un jeu qui remplace l'ancienne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پچ یک به‌روزرسانی اصلاحی است، نه نسخه کاملاً جدید."
+      },
+      {
+        "type": "binary",
+        "question": "Le code source est l'ensemble des instructions de programmation qui constituent le jeu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کد منبع تمام دستورات برنامه‌نویسی بازی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le modding est une pratique illégale qui consiste à pirater les jeux vidéo.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. مادسازی معمولاً قانونی است و به ساخت محتوای سفارشی اشاره دارد."
+      }
+    ]
+  }
+}
