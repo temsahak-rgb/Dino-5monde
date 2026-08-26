@@ -1,0 +1,680 @@
+{
+  "id": "parkour_freerunning",
+  "level": "C1",
+  "theme": "Parkour, art du déplacement et culture urbaine",
+  "theme_fa": "پارکور، هنر جابه‌جایی و فرهنگ شهری",
+  "icon": "🏃",
+  "inspiration": "Yamakasi (Ariel Zeitoun, 2001)",
+  "words": [
+    {
+      "fr": "le parkour",
+      "fa": "پارکور",
+      "emoji": "🏃",
+      "difficulty": 3,
+      "ex": "Le parkour consiste à franchir tous les obstacles urbains avec fluidité.",
+      "ex_fa": "پارکور عبور روان از تمام موانع شهری است."
+    },
+    {
+      "fr": "le traceur",
+      "fa": "تراسور (کسی که پارکور می‌کند)",
+      "emoji": "🏃‍♂️",
+      "difficulty": 4,
+      "ex": "Le traceur voit la ville comme un immense terrain de jeu.",
+      "ex_fa": "تراسور شهر را مانند یک زمین بازی بزرگ می‌بیند."
+    },
+    {
+      "fr": "le saut",
+      "fa": "پرش",
+      "emoji": "🦘",
+      "difficulty": 2,
+      "ex": "Le saut de précision exige un équilibre parfait à la réception.",
+      "ex_fa": "پرش دقیق به تعادل کامل در فرود نیاز دارد."
+    },
+    {
+      "fr": "la roulade",
+      "fa": "غلت (رول)",
+      "emoji": "🔄",
+      "difficulty": 3,
+      "ex": "La roulade amortit l'impact lors des réceptions hautes.",
+      "ex_fa": "غلت ضربه فرودهای بلند را می‌گیرد."
+    },
+    {
+      "fr": "le mur",
+      "fa": "دیوار",
+      "emoji": "🧱",
+      "difficulty": 2,
+      "ex": "Le mur de béton devient une échelle pour le traceur.",
+      "ex_fa": "دیوار بتنی برای تراسور به نردبان تبدیل می‌شود."
+    },
+    {
+      "fr": "la barre",
+      "fa": "میله، نرده",
+      "emoji": "⬜",
+      "difficulty": 3,
+      "ex": "La barre métallique sert d'appui pour les figures acrobatiques.",
+      "ex_fa": "میله فلزی به عنوان تکیه‌گاه برای حرکات آکروباتیک استفاده می‌شود."
+    },
+    {
+      "fr": "le vide",
+      "fa": "خلأ، پرتگاه",
+      "emoji": "🕳️",
+      "difficulty": 3,
+      "ex": "Le vide entre deux immeubles ne fait pas peur au traceur expérimenté.",
+      "ex_fa": "فاصله بین دو ساختمان تراسور باتجربه را نمی‌ترساند."
+    },
+    {
+      "fr": "la réception",
+      "fa": "فرود",
+      "emoji": "🦶",
+      "difficulty": 3,
+      "ex": "Une mauvaise réception peut causer des blessures graves.",
+      "ex_fa": "فرود اشتباه می‌تواند باعث جراحات جدی شود."
+    },
+    {
+      "fr": "le mouvement",
+      "fa": "حرکت، حرکت سیال",
+      "emoji": "🌊",
+      "difficulty": 3,
+      "ex": "Le mouvement doit être fluide et sans interruption.",
+      "ex_fa": "حرکت باید روان و بدون وقفه باشد."
+    },
+    {
+      "fr": "le parcours",
+      "fa": "مسیر، تراژکت",
+      "emoji": "🗺️",
+      "difficulty": 3,
+      "ex": "Le parcours idéal utilise chaque élément du décor urbain.",
+      "ex_fa": "مسیر ایده‌آل از هر عنصر منظره شهری استفاده می‌کند."
+    },
+    {
+      "fr": "la chute",
+      "fa": "سقوط، افتادن",
+      "emoji": "⬇️",
+      "difficulty": 2,
+      "ex": "La peur de la chute est le plus grand ennemi du débutant.",
+      "ex_fa": "ترس از سقوط بزرگترین دشمن مبتدی است."
+    },
+    {
+      "fr": "la voltige",
+      "fa": "حرکات آکروباتیک هوایی",
+      "emoji": "🤸",
+      "difficulty": 4,
+      "ex": "La voltige ajoute une dimension artistique au parkour pur.",
+      "ex_fa": "ولتیج بعدی هنری به پارکور خالص اضافه می‌کند."
+    },
+    {
+      "fr": "le flow",
+      "fa": "جریان، تداوم حرکت",
+      "emoji": "💧",
+      "difficulty": 4,
+      "ex": "Quand le traceur trouve son flow, il ne pense plus, il devient mouvement.",
+      "ex_fa": "وقتی تراسور جریان خود را پیدا می‌کند، دیگر فکر نمی‌کند، بلکه خود حرکت می‌شود."
+    },
+    {
+      "fr": "l'obstacle",
+      "fa": "مانع",
+      "emoji": "🚧",
+      "difficulty": 3,
+      "ex": "Pour le traceur, chaque obstacle est une invitation au dépassement.",
+      "ex_fa": "برای تراسور، هر مانع دعوتی به فراتر رفتن است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les samouraïs des villes",
+      "text": "Leïto est un jeune {{BLANK_2}} qui vit dans les cités difficiles de Paris. Avec ses amis, il pratique le {{BLANK_1}} chaque jour sur les toits. Ensemble, ils inventent un nouveau {{BLANK_10}} à travers les immeubles abandonnés. Chaque {{BLANK_3}} est calculé au centimètre près. Quand ils doivent franchir un haut {{BLANK_5}}, ils utilisent une technique de course murale. Sur la {{BLANK_6}} métallique, ils exécutent des figures de {{BLANK_12}} aérienne. Le {{BLANK_9}} fluide les emporte comme une vague. Mais un jour, Leïto rate sa {{BLANK_8}} après un long saut au-dessus du {{BLANK_7}}. La {{BLANK_11}} est brutale, mais une {{BLANK_4}} parfaite lui sauve les poignets. Cet {{BLANK_14}} aurait pu le blesser gravement. Après sa guérison, il reprend l'entraînement avec plus de sagesse. Le {{BLANK_13}} retrouvé, il comprend que la vraie force n'est pas de défier la mort, mais de respecter ses limites pour vivre libre.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "parkour",
+          "options": [
+            "parkour",
+            "traceur",
+            "saut",
+            "roulade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "traceur",
+          "options": [
+            "traceur",
+            "mur",
+            "barre",
+            "vide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "saut",
+          "options": [
+            "saut",
+            "réception",
+            "mouvement",
+            "parcours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "roulade",
+          "options": [
+            "roulade",
+            "chute",
+            "voltige",
+            "flow"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mur",
+          "options": [
+            "mur",
+            "obstacle",
+            "parkour",
+            "traceur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "barre",
+          "options": [
+            "barre",
+            "saut",
+            "roulade",
+            "mur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "vide",
+          "options": [
+            "vide",
+            "réception",
+            "mouvement",
+            "parcours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "réception",
+          "options": [
+            "réception",
+            "chute",
+            "voltige",
+            "flow"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "mouvement",
+          "options": [
+            "mouvement",
+            "obstacle",
+            "parkour",
+            "traceur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "parcours",
+          "options": [
+            "parcours",
+            "saut",
+            "roulade",
+            "mur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "chute",
+          "options": [
+            "chute",
+            "barre",
+            "vide",
+            "réception"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "voltige",
+          "options": [
+            "voltige",
+            "mouvement",
+            "parcours",
+            "obstacle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "flow",
+          "options": [
+            "flow",
+            "chute",
+            "voltige",
+            "parkour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "obstacle",
+          "options": [
+            "obstacle",
+            "traceur",
+            "saut",
+            "roulade"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le vol de l'ange urbain",
+      "inspiration": "Yamakasi (Ariel Zeitoun, 2001)",
+      "text": "À peine Leïto eut-il pris son élan que la ville grise se transforma en une chorégraphie de béton et d'acier. Ce {{BLANK_2}} né dans les citées oubliées ne courait pas : il dansait avec la gravité. Chaque {{BLANK_3}} était une prière silencieuse, chaque {{BLANK_5}} un frère à escalader, chaque {{BLANK_6}} une partenaire de valse. Son {{BLANK_10}} mental traçait des lignes invisibles entre les toits, transformant le {{BLANK_7}} menaçant en simple parenthèse aérienne. Quand il se lançait dans le {{BLANK_9}} pur, le temps se suspendait. Mais ce jour-là, l'{{BLANK_14}} humide trahit sa {{BLANK_8}}, et la {{BLANK_11}} le rappela brutalement à sa condition mortelle. Une {{BLANK_4}} instinctive sauva son corps, mais pas son orgueil. Pendant des semaines, il regarda les autres traceurs exécuter leurs {{BLANK_12}}s acrobatiques depuis son banc. Puis un matin, il sentit à nouveau le {{BLANK_13}} l'appeler. Le {{BLANK_1}} n'était pas un sport, c'était une philosophie : l'art de transformer chaque {{BLANK_14}} de la vie en opportunité de s'élever, prouvant que la liberté ne se donne pas, elle se conquiert saut après saut.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "parkour",
+          "options": [
+            "parkour",
+            "traceur",
+            "saut",
+            "roulade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "traceur",
+          "options": [
+            "traceur",
+            "mur",
+            "barre",
+            "vide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "saut",
+          "options": [
+            "saut",
+            "réception",
+            "mouvement",
+            "parcours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "roulade",
+          "options": [
+            "roulade",
+            "chute",
+            "voltige",
+            "flow"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mur",
+          "options": [
+            "mur",
+            "obstacle",
+            "parkour",
+            "traceur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "barre",
+          "options": [
+            "barre",
+            "saut",
+            "roulade",
+            "mur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "vide",
+          "options": [
+            "vide",
+            "réception",
+            "mouvement",
+            "parcours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "réception",
+          "options": [
+            "réception",
+            "chute",
+            "voltige",
+            "flow"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "mouvement",
+          "options": [
+            "mouvement",
+            "obstacle",
+            "parkour",
+            "traceur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "parcours",
+          "options": [
+            "parcours",
+            "saut",
+            "roulade",
+            "mur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "chute",
+          "options": [
+            "chute",
+            "barre",
+            "vide",
+            "réception"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "voltiges",
+          "options": [
+            "voltiges",
+            "mouvement",
+            "parcours",
+            "obstacle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "flow",
+          "options": [
+            "flow",
+            "chute",
+            "voltige",
+            "parkour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "obstacle",
+          "options": [
+            "obstacle",
+            "traceur",
+            "saut",
+            "roulade"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Parkour et freerunning",
+    "title_fa": "آزمون : پارکور و فریرانینگ",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La discipline qui consiste à franchir des obstacles urbains de la manière la plus efficace possible est le ____.",
+        "options": [
+          "parkour",
+          "traceur",
+          "saut",
+          "roulade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رشته عبور از موانع شهری = parkour."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pratiquant de parkour, celui qui trace son chemin à travers la ville, est le ____.",
+        "options": [
+          "traceur",
+          "mur",
+          "barre",
+          "vide"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تمرین‌کننده پارکور = traceur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de s'élancer dans les airs pour franchir une distance ou un obstacle est le ____.",
+        "options": [
+          "saut",
+          "réception",
+          "mouvement",
+          "parcours"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل پرش = saut."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mouvement acrobatique au sol qui permet d'amortir une chute ou une réception est la ____.",
+        "options": [
+          "roulade",
+          "chute",
+          "voltige",
+          "flow"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرکت غلت زدن برای گرفتن ضربه = roulade."
+      },
+      {
+        "type": "mcq",
+        "question": "La surface verticale en béton ou en brique que le traceur escalade est le ____.",
+        "options": [
+          "mur",
+          "obstacle",
+          "parkour",
+          "traceur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطح عمودی برای صعود = mur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le support horizontal métallique sur lequel on peut s'appuyer ou faire des figures est la ____.",
+        "options": [
+          "barre",
+          "saut",
+          "roulade",
+          "mur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "میله افقی برای تکیه = barre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'espace vide entre deux points, souvent effrayant pour les débutants, est le ____.",
+        "options": [
+          "vide",
+          "réception",
+          "mouvement",
+          "parcours"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فاصله خالی بین دو نقطه = vide."
+      },
+      {
+        "type": "mcq",
+        "question": "Le moment où le corps touche le sol après un saut, moment crucial pour éviter les blessures, est la ____.",
+        "options": [
+          "réception",
+          "chute",
+          "voltige",
+          "flow"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لحظه تماس با زمین پس از پرش = réception."
+      },
+      {
+        "type": "mcq",
+        "question": "La séquence fluide et continue de déplacements qui caractérise l'art du traceur est le ____.",
+        "options": [
+          "mouvement",
+          "obstacle",
+          "parkour",
+          "traceur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توالی روان حرکات = mouvement."
+      },
+      {
+        "type": "mcq",
+        "question": "L'itinéraire choisi ou inventé par le traceur à travers l'espace urbain est le ____.",
+        "options": [
+          "parcours",
+          "saut",
+          "roulade",
+          "mur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسیر انتخابی در فضای شهری = parcours."
+      },
+      {
+        "type": "mcq",
+        "question": "La perte d'équilibre entraînant une descente incontrôlée vers le sol est la ____.",
+        "options": [
+          "chute",
+          "barre",
+          "vide",
+          "réception"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "از دست دادن تعادل و افتادن = chute."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des figures acrobatiques aériennes (saltos, vrilles) ajoutées au parkour pur est la ____.",
+        "options": [
+          "voltige",
+          "mouvement",
+          "parcours",
+          "obstacle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرکات آکروباتیک هوایی = voltige."
+      },
+      {
+        "type": "mcq",
+        "question": "L'état mental et physique où le traceur enchaîne les mouvements avec une fluidité parfaite est le ____.",
+        "options": [
+          "flow",
+          "chute",
+          "voltige",
+          "parkour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حالت روانی و جسمی ایده‌آل = flow."
+      },
+      {
+        "type": "mcq",
+        "question": "Tout élément urbain (mur, barre, escalier) qui bloque le passage et doit être franchi est l'____.",
+        "options": [
+          "obstacle",
+          "traceur",
+          "saut",
+          "roulade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هر عنصری که مسیر را مسدود می‌کند = obstacle."
+      },
+      {
+        "type": "binary",
+        "question": "Le parkour est un sport de combat qui se pratique en ring avec des gants.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پارکور هنر جابه‌جایی و عبور از موانع شهری است، نه یک ورزش رزمی."
+      },
+      {
+        "type": "binary",
+        "question": "La roulade est essentielle pour absorber l'énergie d'une réception haute et protéger les articulations.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. غلت زدن ضربه را پخش کرده و از مفاصل محافظت می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le flow désigne l'état où le traceur hésite constamment entre chaque mouvement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. flow حالتی است که حرکات کاملاً روان و بدون فکر خودآگاه انجام می‌شوند."
+      },
+      {
+        "type": "binary",
+        "question": "Le traceur voit la ville comme un terrain de jeu où chaque élément peut être utilisé.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تراسور شهر را به عنوان زمینی پر از فرصت‌ها برای حرکت می‌بیند."
+      },
+      {
+        "type": "binary",
+        "question": "La voltige est une technique qui consiste à rester immobile sur un obstacle pendant de longues minutes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. volti (voltige) به حرکات آکروباتیک هوایی مانند پشتک و وارو اشاره دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le parkour met l'accent sur l'efficacité du mouvement plutôt que sur l'esthétique pure.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پارکور اصیل بر کارایی و سرعت عبور از مانع تأکید دارد."
+      }
+    ]
+  }
+}
