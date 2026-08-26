@@ -1,0 +1,680 @@
+{
+  "id": "archaeology_civilizations",
+  "level": "C1",
+  "theme": "Archéologie, civilisations anciennes et découvertes",
+  "theme_fa": "باستان‌شناسی، تمدن‌های باستانی و اکتشافات",
+  "icon": "🏺",
+  "inspiration": "Les Aventuriers de l'arche perdue (Raiders of the Lost Ark - Steven Spielberg, 1981)",
+  "words": [
+    {
+      "fr": "l'archéologie",
+      "fa": "باستان‌شناسی",
+      "emoji": "🏺",
+      "difficulty": 3,
+      "ex": "L'archéologie révèle les secrets des civilisations disparues.",
+      "ex_fa": "باستان‌شناسی، اسرار تمدن‌های ناپدیدشده را آشکار می‌کند."
+    },
+    {
+      "fr": "la fouille",
+      "fa": "کاوش، حفاری",
+      "emoji": "⛏️",
+      "difficulty": 4,
+      "ex": "La fouille du site a duré trois saisons consécutives.",
+      "ex_fa": "کاوش این محوطه سه فصل متوالی طول کشید."
+    },
+    {
+      "fr": "le vestige",
+      "fa": "اثر باستانی، بقایا",
+      "emoji": "🏛️",
+      "difficulty": 4,
+      "ex": "Ces vestiges témoignent d'une civilisation autrefois prospère.",
+      "ex_fa": "این آثار، گواه تمدنی هستند که زمانی شکوفا بود."
+    },
+    {
+      "fr": "la poterie",
+      "fa": "سفال",
+      "emoji": "🏺",
+      "difficulty": 3,
+      "ex": "La poterie grecque nous renseigne sur la vie quotidienne antique.",
+      "ex_fa": "سفال یونانی ما را با زندگی روزمره باستان آشنا می‌کند."
+    },
+    {
+      "fr": "le sarcophage",
+      "fa": "تابوت سنگی",
+      "emoji": "⚰️",
+      "difficulty": 4,
+      "ex": "Le sarcophage du pharaon était sculpté dans du granit rose.",
+      "ex_fa": "تابوت سنگی فرعون از گرانیت صورتی تراشیده شده بود."
+    },
+    {
+      "fr": "la momie",
+      "fa": "مومیایی",
+      "emoji": "🧟",
+      "difficulty": 3,
+      "ex": "La momie de Toutânkhamon a été découverte en 1922.",
+      "ex_fa": "مومیایی توت‌عنخ‌آمون در سال ۱۹۲۲ کشف شد."
+    },
+    {
+      "fr": "l'hiéroglyphe",
+      "fa": "هیروگلیف",
+      "emoji": "𓀀",
+      "difficulty": 5,
+      "ex": "Les hiéroglyphes égyptiens ont été déchiffrés grâce à la pierre de Rosette.",
+      "ex_fa": "هیروگلیف‌های مصری با کمک سنگ رشید رمزگشایی شدند."
+    },
+    {
+      "fr": "la civilisation",
+      "fa": "تمدن",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "La civilisation maya a développé un calendrier sophistiqué.",
+      "ex_fa": "تمدن مایا تقویمی پیچیده توسعه داد."
+    },
+    {
+      "fr": "la ruine",
+      "fa": "خرابه",
+      "emoji": "🏚️",
+      "difficulty": 3,
+      "ex": "Les ruines du temple sont envahies par la jungle.",
+      "ex_fa": "خرابه‌های معبد توسط جنگل تسخیر شده‌اند."
+    },
+    {
+      "fr": "l'artefact",
+      "fa": "شیء باستانی ساخته دست بشر",
+      "emoji": "🗿",
+      "difficulty": 5,
+      "ex": "Chaque artefact trouvé doit être soigneusement catalogué.",
+      "ex_fa": "هر شیء باستانی کشف‌شده باید با دقت فهرست شود."
+    },
+    {
+      "fr": "la datation",
+      "fa": "تاریخ‌گذاری",
+      "emoji": "📅",
+      "difficulty": 4,
+      "ex": "La datation au carbone 14 permet de dater les matières organiques.",
+      "ex_fa": "تاریخ‌گذاری کربن ۱۴ امکان تعیین سن مواد آلی را می‌دهد."
+    },
+    {
+      "fr": "le tombeau",
+      "fa": "آرامگاه",
+      "emoji": "⚱️",
+      "difficulty": 3,
+      "ex": "Le tombeau scellé contenait un trésor inestimable.",
+      "ex_fa": "آرامگاه مهر و موم شده گنجینه‌ای بی‌ارزش داشت."
+    },
+    {
+      "fr": "la dynastie",
+      "fa": "سلسله",
+      "emoji": "👑",
+      "difficulty": 4,
+      "ex": "La XVIIIe dynastie égyptienne fut l'une des plus glorieuses.",
+      "ex_fa": "سلسله هجدهم مصر یکی از پرافتخارترین‌ها بود."
+    },
+    {
+      "fr": "l'inscription",
+      "fa": "کتیبه",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "L'inscription gravée dans la pierre raconte les exploits du roi.",
+      "ex_fa": "کتیبه حک‌شده در سنگ، دلاوری‌های پادشاه را بازگو می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'arche de l'alliance",
+      "text": "Indiana Jones, professeur d'{{BLANK_1}}, parcourt le monde à la recherche d'objets anciens. Son aventure commence dans un temple oublié de la jungle péruvienne. Il récupère une idole dorée en évitant des pièges mortels, tandis que des {{BLANK_3}}s précieux jonchent le sol. De retour à l'université, son collègue Marcus lui apprend que les nazis cherchent l'Arche d'Alliance, un {{BLANK_12}} sacré de la {{BLANK_8}} hébraïque antique. Indy s'envole pour l'Égypte, où une ancienne {{BLANK_9}} indique l'emplacement du Puits des Âmes. Dans ce {{BLANK_12}} souterrain, des milliers de serpents gardent l'Arche. Avec son amie Marion, il découvre des {{BLANK_7}}s gravés sur les murs racontant l'histoire des pharaons. La {{BLANK_11}} des objets au carbone 14 confirme leur antiquité. Ils trouvent aussi une {{BLANK_4}} intacte qui révèle des scènes de culte. Un {{BLANK_5}} de calcaire abrite peut-être le secret de la XVIIIe {{BLANK_13}}. L'{{BLANK_10}} en or massif de l'Arche brille dans l'obscurité. Mais les nazis les devancent et volent le trésor. Indy les poursuit jusqu'à une île secrète où Belloq, un archéologue rival, tente une {{BLANK_2}} pour ouvrir l'Arche. Quand le couvercle s'ouvre, une force divine réduit les ennemis en cendre. L'Arche est finalement scellée dans un entrepôt gouvernemental, parmi des milliers d'autres {{BLANK_10}}s oubliés.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "archéologie",
+          "options": [
+            "archéologie",
+            "fouille",
+            "vestige",
+            "poterie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fouille",
+          "options": [
+            "fouille",
+            "sarcophage",
+            "momie",
+            "hiéroglyphe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "vestiges",
+          "options": [
+            "vestiges",
+            "civilisations",
+            "ruines",
+            "artefacts"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "poterie",
+          "options": [
+            "poterie",
+            "datation",
+            "tombeau",
+            "dynastie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sarcophage",
+          "options": [
+            "sarcophage",
+            "inscription",
+            "archéologie",
+            "fouille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "momie",
+          "options": [
+            "momie",
+            "hiéroglyphe",
+            "civilisation",
+            "ruine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "hiéroglyphes",
+          "options": [
+            "hiéroglyphes",
+            "artefacts",
+            "datations",
+            "tombes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "civilisation",
+          "options": [
+            "civilisation",
+            "inscription",
+            "fouille",
+            "vestige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ruine",
+          "options": [
+            "ruine",
+            "poterie",
+            "sarcophage",
+            "momie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "artefact",
+          "options": [
+            "artefact",
+            "datation",
+            "tombeau",
+            "dynastie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "datation",
+          "options": [
+            "datation",
+            "inscription",
+            "archéologie",
+            "fouille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "tombeau",
+          "options": [
+            "tombeau",
+            "hiéroglyphe",
+            "civilisation",
+            "ruine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "dynastie",
+          "options": [
+            "dynastie",
+            "artefact",
+            "datation",
+            "poterie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "inscription",
+          "options": [
+            "inscription",
+            "vestige",
+            "momie",
+            "sarcophage"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les gardiens du temps",
+      "inspiration": "Les Aventuriers de l'arche perdue (Raiders of the Lost Ark - Steven Spielberg, 1981)",
+      "text": "À peine Indiana Jones eut-il effleuré l'idole dorée du temple péruvien qu'il comprit que l'{{BLANK_1}} n'était pas une simple chasse aux trésors, mais une conversation silencieuse avec les morts. Chaque {{BLANK_3}} qu'il déterrait du sable du temps portait en lui le souffle d'une {{BLANK_8}} éteinte, le rire ou la prière d'un homme qui n'était plus que poussière. La {{BLANK_2}} méthodique du site révélait des couches d'histoire empilées comme les pages d'un livre cosmique. Il ne convoitait pas l'or, mais la mémoire. Son vieil ami Marcus lui parla alors de l'Arche d'Alliance, cet {{BLANK_10}} mythique qui aurait contenu les Tables de la Loi. Les nazis, ivres d'occultisme, cherchaient à s'emparer de cette relique pour asseoir leur pouvoir. Indy s'envola vers l'Égypte, où une {{BLANK_9}} millénaire dissimulait le Puits des Âmes. Là, dans la pénombre où glissaient les serpents, un {{BLANK_5}} de pierre gardait la {{BLANK_6}} d'un prêtre oublié, tandis que les {{BLANK_7}}s racontaient sur les murs les exploits d'une {{BLANK_13}} solaire. Il déchiffra chaque {{BLANK_14}} comme on lit le visage d'un ami perdu. La {{BLANK_11}} scientifique des objets confirmait leur antiquité, mais Indy savait que leur vérité dépassait les chiffres. Une {{BLANK_4}} aux motifs rouges révélait des scènes de rituels oubliés. Quand il ouvrit enfin la chambre secrète, l'Arche brillait d'une lumière qui n'était pas de ce monde. Belloq, le rival, voulut la profaner, mais la force divine réduisit les impies en cendres fumantes. Indy comprit alors que certains secrets ne sont pas faits pour être possédés, mais pour être protégés. L'Arche fut scellée dans un entrepôt anonyme, et quelque part dans l'ombre, les gardiens du temps veillaient encore, attendant que l'humanité fût assez sage pour les entendre.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "archéologie",
+          "options": [
+            "archéologie",
+            "fouille",
+            "vestige",
+            "poterie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fouille",
+          "options": [
+            "fouille",
+            "sarcophage",
+            "momie",
+            "hiéroglyphe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "vestige",
+          "options": [
+            "vestige",
+            "civilisation",
+            "ruine",
+            "artefact"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "poterie",
+          "options": [
+            "poterie",
+            "datation",
+            "tombeau",
+            "dynastie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sarcophage",
+          "options": [
+            "sarcophage",
+            "inscription",
+            "archéologie",
+            "fouille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "momie",
+          "options": [
+            "momie",
+            "hiéroglyphe",
+            "civilisation",
+            "ruine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "hiéroglyphes",
+          "options": [
+            "hiéroglyphes",
+            "artefacts",
+            "datations",
+            "tombes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "civilisation",
+          "options": [
+            "civilisation",
+            "inscription",
+            "fouille",
+            "vestige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ruine",
+          "options": [
+            "ruine",
+            "poterie",
+            "sarcophage",
+            "momie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "artefact",
+          "options": [
+            "artefact",
+            "datation",
+            "tombeau",
+            "dynastie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "datation",
+          "options": [
+            "datation",
+            "inscription",
+            "archéologie",
+            "fouille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "tombeau",
+          "options": [
+            "tombeau",
+            "hiéroglyphe",
+            "civilisation",
+            "ruine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "dynastie",
+          "options": [
+            "dynastie",
+            "artefact",
+            "datation",
+            "poterie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "inscription",
+          "options": [
+            "inscription",
+            "vestige",
+            "momie",
+            "sarcophage"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Archéologie et civilisations",
+    "title_fa": "آزمون : باستان‌شناسی و تمدن‌ها",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie les sociétés humaines du passé à travers leurs vestiges matériels est l'____.",
+        "options": [
+          "archéologie",
+          "fouille",
+          "vestige",
+          "poterie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه جوامع گذشته از طریق آثار = archéologie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action méthodique de creuser et d'explorer un site pour mettre au jour des objets anciens est la ____.",
+        "options": [
+          "fouille",
+          "sarcophage",
+          "momie",
+          "hiéroglyphe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کاوش روشمند یک محوطه = fouille."
+      },
+      {
+        "type": "mcq",
+        "question": "Le reste matériel (objet, construction, ossement) laissé par une civilisation disparue est un ____.",
+        "options": [
+          "vestige",
+          "civilisation",
+          "ruine",
+          "artefact"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بقایای مادی تمدن ناپدیدشده = vestige."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objet en terre cuite fabriqué par l'homme, souvent un récipient, qui nous renseigne sur la vie quotidienne ancienne est une ____.",
+        "options": [
+          "poterie",
+          "datation",
+          "tombeau",
+          "dynastie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ظرف سفالی ساخته‌شده توسط انسان = poterie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le grand cercueil en pierre, souvent décoré, qui abritait le corps des personnages importants est le ____.",
+        "options": [
+          "sarcophage",
+          "inscription",
+          "archéologie",
+          "fouille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تابوت سنگی بزرگ = sarcophage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le corps humain conservé par des procédés naturels ou artificiels après la mort est une ____.",
+        "options": [
+          "momie",
+          "hiéroglyphe",
+          "civilisation",
+          "ruine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بدن حفظ‌شده پس از مرگ = momie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le signe figuratif de l'écriture sacrée égyptienne ancienne, gravé ou peint sur les monuments, est un ____.",
+        "options": [
+          "hiéroglyphe",
+          "artefact",
+          "datation",
+          "tombeau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نشانه نوشتاری مصر باستان = hiéroglyphe."
+      },
+      {
+        "type": "mcq",
+        "question": "La société humaine organisée, ayant développé des institutions, des arts et des techniques avancées, est une ____.",
+        "options": [
+          "civilisation",
+          "inscription",
+          "fouille",
+          "vestige"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جامعه سازمان‌یافته پیشرفته = civilisation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le reste délabré d'un bâtiment ou d'une ville détruite par le temps ou les hommes est une ____.",
+        "options": [
+          "ruine",
+          "poterie",
+          "sarcophage",
+          "momie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بقایای مخروبه یک ساختمان = ruine."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objet fabriqué ou modifié par l'homme, retrouvé lors d'une fouille et présentant un intérêt scientifique, est un ____.",
+        "options": [
+          "artefact",
+          "datation",
+          "tombeau",
+          "dynastie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیء ساخت دست انسان در کاوش = artefact."
+      },
+      {
+        "type": "mcq",
+        "question": "La méthode scientifique qui permet de déterminer l'âge d'un objet ancien (au carbone 14 par exemple) est la ____.",
+        "options": [
+          "datation",
+          "inscription",
+          "archéologie",
+          "fouille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روش تعیین سن اشیاء = datation."
+      },
+      {
+        "type": "mcq",
+        "question": "La construction funéraire, souterraine ou monumentale, destinée à abriter le corps d'un défunt est un ____.",
+        "options": [
+          "tombeau",
+          "hiéroglyphe",
+          "civilisation",
+          "ruine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازه یادمانی برای متوفی = tombeau."
+      },
+      {
+        "type": "mcq",
+        "question": "La succession de souverains d'une même famille régnant sur un pays pendant une période donnée est une ____.",
+        "options": [
+          "dynastie",
+          "artefact",
+          "datation",
+          "poterie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جانشینی پادشاهان یک خاندان = dynastie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le texte gravé ou peint sur un monument, une stèle ou un objet, qui apporte un témoignage historique, est une ____.",
+        "options": [
+          "inscription",
+          "vestige",
+          "momie",
+          "sarcophage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متن حک‌شده روی سنگ یا بنا = inscription."
+      },
+      {
+        "type": "binary",
+        "question": "L'archéologie étudie principalement les dinosaures et les fossiles d'animaux préhistoriques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. دایناسورها و فسیل‌ها موضوع دیرینه‌شناسی (paléontologie) هستند. باستان‌شناسی تمدن‌های انسانی را مطالعه می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La datation au carbone 14 permet de déterminer l'âge des matières organiques jusqu'à environ 50 000 ans.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کربن ۱۴ برای تعیین سن مواد آلی تا حدود ۵۰ هزار سال استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Un artefact est un objet naturel trouvé dans la nature sans modification humaine.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. artefact حتماً باید ساخته یا تغییر داده شده توسط انسان باشد."
+      },
+      {
+        "type": "binary",
+        "question": "Les hiéroglyphes sont l'ancien système d'écriture égyptien utilisant des signes figuratifs.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هیروگلیف سیستم نوشتاری تصویری مصر باستان است."
+      },
+      {
+        "type": "binary",
+        "question": "Une dynastie désigne un ensemble de villes indépendantes sans lien politique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سلسله به دنباله‌ای از حاکمان از یک خاندان اشاره دارد، نه شهرهای مستقل."
+      },
+      {
+        "type": "binary",
+        "question": "Un sarcophage est un cercueil en pierre, souvent sculpté, utilisé dans l'Antiquité pour les personnages importants.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تابوت سنگی برای افراد مهم در دوران باستان استفاده می‌شد."
+      }
+    ]
+  }
+}
