@@ -1,0 +1,680 @@
+{
+  "id": "chocolate_patisserie",
+  "level": "C1",
+  "theme": "Chocolaterie, confiserie et pâtisserie fine",
+  "theme_fa": "شکلات‌سازی، قنادی و شیرینی‌پزی ظریف",
+  "icon": "🍫",
+  "inspiration": "Le Chocolat (Lasse Hallström, 2000)",
+  "words": [
+    {
+      "fr": "le chocolat",
+      "fa": "شکلات",
+      "emoji": "🍫",
+      "difficulty": 2,
+      "ex": "Le chocolat noir à 70% est riche en antioxydants.",
+      "ex_fa": "شکلات تلخ ۷۰ درصد سرشار از آنتی‌اکسیدان است."
+    },
+    {
+      "fr": "le cacao",
+      "fa": "کاکائو",
+      "emoji": "🤎",
+      "difficulty": 3,
+      "ex": "Le cacao pur a une amertume naturelle très prononcée.",
+      "ex_fa": "کاکائو خالص تلخی طبیعی بسیار مشخصی دارد."
+    },
+    {
+      "fr": "la fève",
+      "fa": "دانه کاکائو",
+      "emoji": "🫘",
+      "difficulty": 4,
+      "ex": "La fève de cacao doit être fermentée avant le séchage.",
+      "ex_fa": "دانه کاکائو قبل از خشک شدن باید تخمیر شود."
+    },
+    {
+      "fr": "la ganache",
+      "fa": "گاناش (کرم شکلاتی)",
+      "emoji": "🍯",
+      "difficulty": 5,
+      "ex": "La ganache montée apporte une texture légère aux entremets.",
+      "ex_fa": "گاناش فرم‌گرفته بافت سبکی به دسرها می‌دهد."
+    },
+    {
+      "fr": "le praliné",
+      "fa": "پرالینه (خمیر فندق و شکر)",
+      "emoji": "🌰",
+      "difficulty": 5,
+      "ex": "Le praliné noisette est la base de nombreux bonbons fins.",
+      "ex_fa": "پرالینه فندقی پایه بسیاری از شکلات‌های مغزدار است."
+    },
+    {
+      "fr": "le tempérage",
+      "fa": "تمپر کردن (کنترل تبلور)",
+      "emoji": "🌡️",
+      "difficulty": 5,
+      "ex": "Le tempérage donne au chocolat son brillant et son cassant.",
+      "ex_fa": "تمپر کردن به شکلات درخشش و تردی می‌دهد."
+    },
+    {
+      "fr": "le confiseur",
+      "fa": "شکلات‌ساز، شیرینی‌پز",
+      "emoji": "👨‍🍳",
+      "difficulty": 4,
+      "ex": "Le confiseur crée des bonbons de chocolat artisanaux.",
+      "ex_fa": "شکلات‌ساز، شکلات‌های دست‌ساز خلق می‌کند."
+    },
+    {
+      "fr": "le moulage",
+      "fa": "قالب‌گیری",
+      "emoji": "🧊",
+      "difficulty": 4,
+      "ex": "Le moulage permet de créer des sujets creux comme les œufs de Pâques.",
+      "ex_fa": "قالب‌گیری امکان ساخت اشکال توخالی مانند تخم‌مرغ‌های عید پاک را می‌دهد."
+    },
+    {
+      "fr": "la truffe",
+      "fa": "ترافل",
+      "emoji": "🟤",
+      "difficulty": 4,
+      "ex": "La truffe traditionnelle est enrobée de poudre de cacao amer.",
+      "ex_fa": "ترافل سنتی با پودر کاکائوی تلخ پوشانده شده است."
+    },
+    {
+      "fr": "l'enrobage",
+      "fa": "روکش کردن",
+      "emoji": "🍬",
+      "difficulty": 4,
+      "ex": "L'enrobage à la fourchette demande un geste précis et rapide.",
+      "ex_fa": "روکش کردن با چنگال به حرکتی دقیق و سریع نیاز دارد."
+    },
+    {
+      "fr": "le gianduja",
+      "fa": "ژیاندویا (شکلات فندقی)",
+      "emoji": "🍫",
+      "difficulty": 5,
+      "ex": "Le gianduja piémontais fond délicieusement sur la langue.",
+      "ex_fa": "ژیاندویای پیمونتی به لذت‌بخشی روی زبان آب می‌شود."
+    },
+    {
+      "fr": "la pâtisserie",
+      "fa": "قنادی، شیرینی‌پزی",
+      "emoji": "🧁",
+      "difficulty": 3,
+      "ex": "La haute pâtisserie française est reconnue dans le monde entier.",
+      "ex_fa": "قنادی عالی فرانسوی در سراسر جهان شناخته شده است."
+    },
+    {
+      "fr": "le glaçage",
+      "fa": "لعاب، آیسینگ",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "Le glaçage miroir reflète la lumière comme une surface d'eau.",
+      "ex_fa": "لعاب آینه‌ای نور را مانند سطح آب منعکس می‌کند."
+    },
+    {
+      "fr": "le macaron",
+      "fa": "ماکارون",
+      "emoji": "🍪",
+      "difficulty": 4,
+      "ex": "Le macaron parisien se caractérise par sa collerette dentelée.",
+      "ex_fa": "ماکارون پاریسی با حاشیه دندانه‌دارش شناخته می‌شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La tentation sucrée",
+      "text": "Vianne Rocher ouvre une boutique de {{BLANK_12}} dans un village français très conservateur. Elle est un {{BLANK_7}} talentueux qui transforme l'amer {{BLANK_2}} en pur bonheur. Tout commence par la sélection rigoureuse de la {{BLANK_3}} de qualité supérieure. Le secret absolu réside dans le {{BLANK_6}} précis du {{BLANK_1}} pour qu'il brille et croque parfaitement sous la dent. Elle prépare une {{BLANK_4}} onctueuse en mélangeant crème chaude et noir profond. Pour les bonbons fins, elle réalise un {{BLANK_5}} croquant aux noisettes caramélisées et un {{BLANK_11}} fondant d'origine italienne. Le {{BLANK_8}} dans des formes complexes en polycarbonate demande une grande patience. Elle termine par l'{{BLANK_10}} délicat de chaque {{BLANK_9}} ronde et poudreuse. Sur les gâteaux d'exception, elle applique un {{BLANK_13}} miroir éblouissant. Sa spécialité locale, le {{BLANK_14}} coloré aux amandes, fait fondre les cœurs les plus endurcis. Grâce à elle, le village découvre que la gourmandise n'est pas un péché, mais une célébration de la vie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "chocolat",
+          "options": [
+            "chocolat",
+            "cacao",
+            "fève",
+            "ganache"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "cacao",
+          "options": [
+            "cacao",
+            "praliné",
+            "tempérage",
+            "confiseur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fève",
+          "options": [
+            "fève",
+            "moulage",
+            "truffe",
+            "enrobage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "ganache",
+          "options": [
+            "ganache",
+            "gianduja",
+            "pâtisserie",
+            "glaçage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "praliné",
+          "options": [
+            "praliné",
+            "macaron",
+            "chocolat",
+            "cacao"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "tempérage",
+          "options": [
+            "tempérage",
+            "fève",
+            "ganache",
+            "praliné"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "confiseur",
+          "options": [
+            "confiseur",
+            "moulage",
+            "truffe",
+            "enrobage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "moulage",
+          "options": [
+            "moulage",
+            "gianduja",
+            "pâtisserie",
+            "glaçage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "truffe",
+          "options": [
+            "truffe",
+            "macaron",
+            "chocolat",
+            "cacao"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "enrobage",
+          "options": [
+            "enrobage",
+            "fève",
+            "ganache",
+            "praliné"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "gianduja",
+          "options": [
+            "gianduja",
+            "tempérage",
+            "confiseur",
+            "moulage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "pâtisserie",
+          "options": [
+            "pâtisserie",
+            "truffe",
+            "enrobage",
+            "gianduja"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "glaçage",
+          "options": [
+            "glaçage",
+            "macaron",
+            "chocolat",
+            "cacao"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "macaron",
+          "options": [
+            "macaron",
+            "fève",
+            "ganache",
+            "praliné"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'extase amère",
+      "inspiration": "Le Chocolat (Lasse Hallström, 2000)",
+      "text": "À peine Vianne eut-elle poussé la porte de sa boutique que l'odeur enivrante du {{BLANK_2}} torréfié enveloppa la place du village comme une étreinte interdite. Dans cette bourgade figée par la morale austère, ce {{BLANK_7}} aux mains d'or venait semer le doux poison de la tentation. Elle ne travaillait pas une simple matière, mais la {{BLANK_3}} sacrée des anciens dieux mayas, qu'elle domptait par le rituel secret du {{BLANK_6}}. C'est à cette température exacte que le {{BLANK_1}} acquérait son brillant de satin et son claquement sec, promesse de plaisirs défendus. Dans son arrière-boutique, elle fouettait la crème brûlante pour créer une {{BLANK_4}} voluptueuse, et broyait les noisettes caramélisées pour un {{BLANK_5}} qui craquait sous la dent comme un péché originel. Son {{BLANK_11}}, héritage des maîtres piémontais, fondait sur la langue en libérant des vagues de chaleur. Avec une précision de sculpteur, elle accomplissait le {{BLANK_8}} de ses bonbons, avant de les plonger dans l'{{BLANK_10}} final qui les habillait de nuit ou de lumière. Chaque {{BLANK_9}}, roulée dans la poudre amère, était une petite planète de douceur. Sur les entremets, elle coulait un {{BLANK_13}} lisse comme un miroir d'eau, où se reflétait le désir des passants. Mais c'est le {{BLANK_14}}, avec sa collerette fragile et son cœur fondant, qui fit tomber les dernières résistances, prouvant à ces âmes endormies que la véritable {{BLANK_12}} n'était pas l'art de la privation, mais celui de transformer l'amertume du monde en pure extase.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "chocolat",
+          "options": [
+            "chocolat",
+            "cacao",
+            "fève",
+            "ganache"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "cacao",
+          "options": [
+            "cacao",
+            "praliné",
+            "tempérage",
+            "confiseur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fève",
+          "options": [
+            "fève",
+            "moulage",
+            "truffe",
+            "enrobage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "ganache",
+          "options": [
+            "ganache",
+            "gianduja",
+            "pâtisserie",
+            "glaçage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "praliné",
+          "options": [
+            "praliné",
+            "macaron",
+            "chocolat",
+            "cacao"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "tempérage",
+          "options": [
+            "tempérage",
+            "fève",
+            "ganache",
+            "praliné"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "confiseur",
+          "options": [
+            "confiseur",
+            "moulage",
+            "truffe",
+            "enrobage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "moulage",
+          "options": [
+            "moulage",
+            "gianduja",
+            "pâtisserie",
+            "glaçage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "truffe",
+          "options": [
+            "truffe",
+            "macaron",
+            "chocolat",
+            "cacao"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "enrobage",
+          "options": [
+            "enrobage",
+            "fève",
+            "ganache",
+            "praliné"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "gianduja",
+          "options": [
+            "gianduja",
+            "tempérage",
+            "confiseur",
+            "moulage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "pâtisserie",
+          "options": [
+            "pâtisserie",
+            "truffe",
+            "enrobage",
+            "gianduja"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "glaçage",
+          "options": [
+            "glaçage",
+            "macaron",
+            "chocolat",
+            "cacao"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "macaron",
+          "options": [
+            "macaron",
+            "fève",
+            "ganache",
+            "praliné"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Chocolaterie et pâtisserie",
+    "title_fa": "آزمون : شکلات‌سازی و قنادی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'aliment sucré ou amer fabriqué à partir de graines de cacaoyer est le ____.",
+        "options": [
+          "chocolat",
+          "cacao",
+          "fève",
+          "ganache"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده غذایی حاصل از دانه کاکائو = chocolat."
+      },
+      {
+        "type": "mcq",
+        "question": "La poudre sèche et amère obtenue après le pressage de la pâte de cacao est le ____.",
+        "options": [
+          "cacao",
+          "praliné",
+          "tempérage",
+          "confiseur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پودر خشک و تلخ کاکائو = cacao."
+      },
+      {
+        "type": "mcq",
+        "question": "La graine du cacaoyer, extraite de la cabosse, qui est la matière première du chocolat est la ____.",
+        "options": [
+          "fève",
+          "moulage",
+          "truffe",
+          "enrobage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دانه درون میوه کاکائو = fève."
+      },
+      {
+        "type": "mcq",
+        "question": "L'émulsion onctueuse composée de chocolat fondu et de crème liquide (parfois beurrée) est la ____.",
+        "options": [
+          "ganache",
+          "gianduja",
+          "pâtisserie",
+          "glaçage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ترکیب کرم‌دار شکلات و خامه = ganache."
+      },
+      {
+        "type": "mcq",
+        "question": "La pâte fondante obtenue en broyant des fruits secs torréfiés (amandes, noisettes) avec du sucre caramélisé est le ____.",
+        "options": [
+          "praliné",
+          "macaron",
+          "chocolat",
+          "cacao"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خمیر حاصل از آجیل کاراملی‌شده = praliné."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique de précision qui consiste à faire fondre et refroidir le chocolat selon des courbes de température strictes pour le rendre brillant et cassant est le ____.",
+        "options": [
+          "tempérage",
+          "fève",
+          "ganache",
+          "praliné"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کنترل دقیق دمای تبلور شکلات = tempérage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artisan spécialiste de la fabrication des bonbons de chocolat et des sucreries est le ____.",
+        "options": [
+          "confiseur",
+          "moulage",
+          "truffe",
+          "enrobage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنرمند سازنده شکلات و شیرینی = confiseur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de verser du chocolat tempéré dans des formes en plastique ou en silicone pour lui donner une structure est le ____.",
+        "options": [
+          "moulage",
+          "gianduja",
+          "pâtisserie",
+          "glaçage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ریختن شکلات در قالب = moulage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bonbon de chocolat rond et fondant, traditionnellement enrobé de poudre de cacao, est la ____.",
+        "options": [
+          "truffe",
+          "macaron",
+          "chocolat",
+          "cacao"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شکلات گرد و نرم با پودر کاکائو = truffe."
+      },
+      {
+        "type": "mcq",
+        "question": "L'opération finale qui consiste à recouvrir un intérieur (ganache, praliné) d'une fine couche de chocolat est l'____.",
+        "options": [
+          "enrobage",
+          "fève",
+          "ganache",
+          "praliné"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پوشاندن مغزی شکلات با لایه بیرونی = enrobage."
+      },
+      {
+        "type": "mcq",
+        "question": "La spécialité italienne à base de chocolat et de noisettes broyées, particulièrement fondante, est le ____.",
+        "options": [
+          "gianduja",
+          "tempérage",
+          "confiseur",
+          "moulage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شکلات فندقی ایتالیایی = gianduja."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de préparer des desserts fins, des gâteaux et des pièces montées est la ____.",
+        "options": [
+          "pâtisserie",
+          "truffe",
+          "enrobage",
+          "gianduja"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر تهیه دسر و کیک = pâtisserie."
+      },
+      {
+        "type": "mcq",
+        "question": "La couche sucrée et décorative, souvent brillante, appliquée sur un gâteau pour le finir est le ____.",
+        "options": [
+          "glaçage",
+          "macaron",
+          "chocolat",
+          "cacao"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پوشش نهایی براق روی کیک = glaçage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit gâteau à base de poudre d'amande et de meringue, reconnaissable à sa surface lisse et sa collerette, est le ____.",
+        "options": [
+          "macaron",
+          "fève",
+          "ganache",
+          "praliné"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیرینی کوچک بادامی و مرنگ = macaron."
+      },
+      {
+        "type": "binary",
+        "question": "Le tempérage du chocolat est inutile si l'on veut obtenir une finition mate et molle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. بدون تمپر کردن، شکلات مات، نرم و دارای لکه‌های سفید می‌شود. تمپر برای درخشش و تردی ضروری است."
+      },
+      {
+        "type": "binary",
+        "question": "La ganache est un mélange de chocolat et de crème utilisé pour fourrer les bonbons ou glacer les gâteaux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. گاناش ترکیب شکلات و خامه است."
+      },
+      {
+        "type": "binary",
+        "question": "Le praliné est une liqueur alcoolisée utilisée pour parfumer les truffes au chocolat.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پرالینه خمیری از آجیل بوداده و شکر کاراملی است، نه یک نوشیدنی الکلی."
+      },
+      {
+        "type": "binary",
+        "question": "La fève de cacao doit subir une fermentation avant d'être séchée et torréfiée pour développer ses précurseurs d'arômes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تخمیر مرحله‌ای حیاتی برای ایجاد طعم در دانه کاکائو است."
+      },
+      {
+        "type": "binary",
+        "question": "Le macaron est un biscuit sec à base de farine de blé et de beurre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ماکارون از پودر بادام، سفیده تخم‌مرغ و شکر تهیه می‌شود و آرد گندم یا کره ندارد."
+      },
+      {
+        "type": "binary",
+        "question": "L'enrobage consiste à recouvrir entièrement un bonbon d'une fine couche de chocolat.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. enrobage یعنی پوشش دادن کامل مغزی با شکلات."
+      }
+    ]
+  }
+}
