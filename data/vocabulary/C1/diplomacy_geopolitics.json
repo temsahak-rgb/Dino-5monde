@@ -1,0 +1,680 @@
+{
+  "id": "diplomacy_geopolitics",
+  "level": "C1",
+  "theme": "Diplomatie, géopolitique et relations internationales",
+  "theme_fa": "دیپلماسی، ژئوپلیتیک و روابط بین‌الملل",
+  "icon": "🕊️",
+  "inspiration": "Le Pont des Espions (Bridge of Spies - Steven Spielberg, 2015)",
+  "words": [
+    {
+      "fr": "la diplomatie",
+      "fa": "دیپلماسی",
+      "emoji": "🤝",
+      "difficulty": 4,
+      "ex": "La diplomatie secrète a permis d'éviter une guerre nucléaire.",
+      "ex_fa": "دیپلماسی مخفی از یک جنگ هسته‌ای جلوگیری کرد."
+    },
+    {
+      "fr": "l'ambassadeur",
+      "fa": "سفیر",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "L'ambassadeur représente son pays auprès du gouvernement étranger.",
+      "ex_fa": "سفیر کشورش را نزد دولت خارجی نمایندگی می‌کند."
+    },
+    {
+      "fr": "le traité",
+      "fa": "معاهده، پیمان",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "Le traité de paix a été signé après des mois de négociations.",
+      "ex_fa": "معاهده صلح پس از ماه‌ها مذاکره امضا شد."
+    },
+    {
+      "fr": "la géopolitique",
+      "fa": "ژئوپلیتیک",
+      "emoji": "🌍",
+      "difficulty": 5,
+      "ex": "La géopolitique analyse l'influence de la géographie sur le pouvoir.",
+      "ex_fa": "ژئوپلیتیک تأثیر جغرافیا بر قدرت را تحلیل می‌کند."
+    },
+    {
+      "fr": "le sommet",
+      "fa": "نشست سران",
+      "emoji": "🏔️",
+      "difficulty": 4,
+      "ex": "Le sommet international réunit les chefs d'État du monde entier.",
+      "ex_fa": "نشست بین‌المللی سران کشورهای جهان را گرد هم می‌آورد."
+    },
+    {
+      "fr": "la négociation",
+      "fa": "مذاکره",
+      "emoji": "🗣️",
+      "difficulty": 3,
+      "ex": "La négociation exige de la patience et des compromis mutuels.",
+      "ex_fa": "مذاکره به صبر و مصالحه متقابل نیاز دارد."
+    },
+    {
+      "fr": "l'armistice",
+      "fa": "آتش‌بس",
+      "emoji": "🏳️",
+      "difficulty": 4,
+      "ex": "L'armistice a suspendu les combats sans régler le conflit.",
+      "ex_fa": "آتش‌بس، درگیری‌ها را بدون حل مناقشه متوقف کرد."
+    },
+    {
+      "fr": "le consensus",
+      "fa": "اجماع",
+      "emoji": "🤝",
+      "difficulty": 4,
+      "ex": "Trouver un consensus parmi les nations est un défi permanent.",
+      "ex_fa": "یافتن اجماع در میان ملت‌ها یک چالش همیشگی است."
+    },
+    {
+      "fr": "la souveraineté",
+      "fa": "حاکمیت",
+      "emoji": "👑",
+      "difficulty": 4,
+      "ex": "Chaque État défend jalousement sa souveraineté nationale.",
+      "ex_fa": "هر کشوری به شدت از حاکمیت ملی خود دفاع می‌کند."
+    },
+    {
+      "fr": "l'embargo",
+      "fa": "تحریم اقتصادی",
+      "emoji": "🚫",
+      "difficulty": 5,
+      "ex": "L'embargo commercial asphyxie l'économie du pays ciblé.",
+      "ex_fa": "تحریم تجاری، اقتصاد کشور هدف را خفه می‌کند."
+    },
+    {
+      "fr": "le protocole",
+      "fa": "تشریفات، پروتکل",
+      "emoji": "📋",
+      "difficulty": 4,
+      "ex": "Le protocole diplomatique régit les préséances et les cérémonies.",
+      "ex_fa": "تشریفات دیپلماتیک، حق تقدم و مراسم را تنظیم می‌کند."
+    },
+    {
+      "fr": "la médiation",
+      "fa": "میانجی‌گری",
+      "emoji": "⚖️",
+      "difficulty": 4,
+      "ex": "L'ONU propose sa médiation pour apaiser les tensions.",
+      "ex_fa": "سازمان ملل برای کاهش تنش‌ها پیشنهاد میانجی‌گری می‌دهد."
+    },
+    {
+      "fr": "l'ingérence",
+      "fa": "مداخله، دخالت",
+      "emoji": "🚷",
+      "difficulty": 5,
+      "ex": "L'ingérence étrangère est condamnée par le droit international.",
+      "ex_fa": "مداخله خارجی توسط حقوق بین‌الملل محکوم می‌شود."
+    },
+    {
+      "fr": "le plénipotentiaire",
+      "fa": "نماینده تام‌الاختیار",
+      "emoji": "🖋️",
+      "difficulty": 5,
+      "ex": "Le plénipotentiaire a le pouvoir de signer l'accord final.",
+      "ex_fa": "نماینده تام‌الاختیار، قدرت امضای توافق نهایی را دارد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'échange du pont de Glienicke",
+      "text": "James Donovan, un avocat américain, est choisi pour une {{BLANK_6}} secrète à Berlin. Il doit rencontrer l'{{BLANK_2}} soviétique pour échanger des prisonniers. La {{BLANK_4}} mondiale est au bord de la rupture. Loin du {{BLANK_5}} officiel, ils se retrouvent dans le froid glacial. Le {{BLANK_11}} diplomatique est strict, mais Donovan cherche un {{BLANK_8}} humain. Il refuse toute {{BLANK_13}} dans les affaires internes des deux blocs. La {{BLANK_9}} nationale des deux pays est en jeu. Un lourd {{BLANK_10}} économique pèse sur les échanges. La {{BLANK_1}} est l'art du possible. Grâce à sa {{BLANK_12}} acharnée, il obtient la libération d'un pilote américain. Un {{BLANK_3}} de paix local est enfin conclu. L'échange a lieu sur le pont des espions. Le {{BLANK_14}} américain signe les documents finaux. Un simple {{BLANK_7}} moral met fin aux hostilités de ce secteur.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "diplomatie",
+          "options": [
+            "diplomatie",
+            "armistice",
+            "consensus",
+            "ingérence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ambassadeur",
+          "options": [
+            "ambassadeur",
+            "sommet",
+            "protocole",
+            "traité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "traité",
+          "options": [
+            "traité",
+            "embargo",
+            "plénipotentiaire",
+            "souveraineté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "géopolitique",
+          "options": [
+            "géopolitique",
+            "médiation",
+            "négociation",
+            "diplomatie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sommet",
+          "options": [
+            "sommet",
+            "consensus",
+            "armistice",
+            "protocole"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "négociation",
+          "options": [
+            "négociation",
+            "ingérence",
+            "embargo",
+            "souveraineté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "armistice",
+          "options": [
+            "armistice",
+            "traité",
+            "plénipotentiaire",
+            "géopolitique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "consensus",
+          "options": [
+            "consensus",
+            "sommet",
+            "ambassadeur",
+            "médiation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "souveraineté",
+          "options": [
+            "souveraineté",
+            "diplomatie",
+            "négociation",
+            "armistice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "embargo",
+          "options": [
+            "embargo",
+            "protocole",
+            "ingérence",
+            "consensus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "protocole",
+          "options": [
+            "protocole",
+            "traité",
+            "sommet",
+            "embargo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "médiation",
+          "options": [
+            "médiation",
+            "souveraineté",
+            "géopolitique",
+            "plénipotentiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "ingérence",
+          "options": [
+            "ingérence",
+            "négociation",
+            "ambassadeur",
+            "armistice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "plénipotentiaire",
+          "options": [
+            "plénipotentiaire",
+            "protocole",
+            "consensus",
+            "embargo"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le théâtre des ombres",
+      "inspiration": "Le Pont des Espions (Bridge of Spies - Steven Spielberg, 2015)",
+      "text": "À peine James Donovan eut-il posé le pied sur le pont de Glienicke, enveloppé dans le brouillard glacé de Berlin, qu'il comprit que la {{BLANK_1}} n'était qu'un théâtre d'ombres où les destins du monde se jouaient sur des poignées de main silencieuses. En tant que {{BLANK_14}} de son pays, il portait le poids écrasant de la {{BLANK_9}} américaine face au regard d'acier de l'{{BLANK_2}} soviétique. La {{BLANK_4}} de la guerre froide dictait chaque murmure, transformant ce simple échange de prisonniers en une partie d'échecs planétaire. Loin des {{BLANK_5}}s officiels où les chefs d'État fuyaient les vraies décisions, c'est ici, dans le mépris du {{BLANK_11}} rigide, que la véritable {{BLANK_6}} devait éclore. Donovan refusait l'{{BLANK_13}} idéologique, cherchant un {{BLANK_8}} humain au-delà de l'{{BLANK_10}} économique qui affamait les peuples et dressait des murs de haine. Par une {{BLANK_12}} acharnée, il tissa un fil invisible entre deux empires, transformant la peur en un {{BLANK_3}} de survie mutuelle. Quand l'{{BLANK_7}} moral fut enfin scellé sur ce pont de la désolation, il sut que la paix n'était jamais acquise, mais sans cesse arrachée à la gueule du chaos par des hommes ordinaires armés de la seule force des mots.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "diplomatie",
+          "options": [
+            "diplomatie",
+            "armistice",
+            "consensus",
+            "ingérence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ambassadeur",
+          "options": [
+            "ambassadeur",
+            "sommet",
+            "protocole",
+            "traité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "traité",
+          "options": [
+            "traité",
+            "embargo",
+            "plénipotentiaire",
+            "souveraineté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "géopolitique",
+          "options": [
+            "géopolitique",
+            "médiation",
+            "négociation",
+            "diplomatie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sommet",
+          "options": [
+            "sommet",
+            "consensus",
+            "armistice",
+            "protocole"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "négociation",
+          "options": [
+            "négociation",
+            "ingérence",
+            "embargo",
+            "souveraineté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "armistice",
+          "options": [
+            "armistice",
+            "traité",
+            "plénipotentiaire",
+            "géopolitique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "consensus",
+          "options": [
+            "consensus",
+            "sommet",
+            "ambassadeur",
+            "médiation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "souveraineté",
+          "options": [
+            "souveraineté",
+            "diplomatie",
+            "négociation",
+            "armistice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "embargo",
+          "options": [
+            "embargo",
+            "protocole",
+            "ingérence",
+            "consensus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "protocole",
+          "options": [
+            "protocole",
+            "traité",
+            "sommet",
+            "embargo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "médiation",
+          "options": [
+            "médiation",
+            "souveraineté",
+            "géopolitique",
+            "plénipotentiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "ingérence",
+          "options": [
+            "ingérence",
+            "négociation",
+            "ambassadeur",
+            "armistice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "plénipotentiaire",
+          "options": [
+            "plénipotentiaire",
+            "protocole",
+            "consensus",
+            "embargo"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Diplomatie et relations internationales",
+    "title_fa": "آزمون : دیپلماسی و روابط بین‌الملل",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art et la pratique de conduire les relations entre les États par le dialogue et la négociation est la ____.",
+        "options": [
+          "diplomatie",
+          "armistice",
+          "consensus",
+          "ingérence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر اداره روابط بین کشورها = diplomatie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le représentant officiel de plus haut rang d'un État accrédité auprès d'un autre État ou d'une organisation internationale est l'____.",
+        "options": [
+          "ambassadeur",
+          "sommet",
+          "protocole",
+          "traité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بالاترین نماینده رسمی یک کشور = ambassadeur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'accord écrit formel, conclu entre deux ou plusieurs États et régi par le droit international, est le ____.",
+        "options": [
+          "traité",
+          "embargo",
+          "plénipotentiaire",
+          "souveraineté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توافق‌نامه رسمی بین‌المللی = traité."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étude des effets de la géographie (ressources, position) sur la politique et les relations de pouvoir internationales est la ____.",
+        "options": [
+          "géopolitique",
+          "médiation",
+          "négociation",
+          "diplomatie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مطالعه تأثیر جغرافیا بر سیاست = géopolitique."
+      },
+      {
+        "type": "mcq",
+        "question": "La réunion au plus haut niveau rassemblant des chefs d'État ou de gouvernement pour prendre des décisions majeures est le ____.",
+        "options": [
+          "sommet",
+          "consensus",
+          "armistice",
+          "protocole"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نشست عالی سران کشورها = sommet."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus de discussion entre plusieurs parties visant à parvenir à un accord ou à résoudre un conflit est la ____.",
+        "options": [
+          "négociation",
+          "ingérence",
+          "embargo",
+          "souveraineté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرآیند گفتگو برای رسیدن به توافق = négociation."
+      },
+      {
+        "type": "mcq",
+        "question": "L'accord par lequel les belligérants conviennent de cesser les hostilités sans pour autant mettre fin définitivement à l'état de guerre est l'____.",
+        "options": [
+          "armistice",
+          "traité",
+          "plénipotentiaire",
+          "géopolitique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توافق توقف موقت درگیری = armistice."
+      },
+      {
+        "type": "mcq",
+        "question": "L'accord général ou l'acceptation unanime d'une décision par l'ensemble des parties prenantes est le ____.",
+        "options": [
+          "consensus",
+          "sommet",
+          "ambassadeur",
+          "médiation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توافق و هم‌نظری عمومی = consensus."
+      },
+      {
+        "type": "mcq",
+        "question": "Le principe selon lequel un État exerce son autorité exclusive sur son territoire et sa population sans ingérence extérieure est la ____.",
+        "options": [
+          "souveraineté",
+          "diplomatie",
+          "négociation",
+          "armistice"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حق انحصاری اداره کشور = souveraineté."
+      },
+      {
+        "type": "mcq",
+        "question": "L'interdiction imposée par un ou plusieurs États de commercer avec un pays cible, utilisée comme sanction politique, est l'____.",
+        "options": [
+          "embargo",
+          "protocole",
+          "ingérence",
+          "consensus"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ممنوعیت تجاری به عنوان تحریم = embargo."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des règles et des usages qui régissent le cérémonial, les préséances et les formes dans les relations officielles est le ____.",
+        "options": [
+          "protocole",
+          "traité",
+          "sommet",
+          "embargo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قوانین تشریفات رسمی = protocole."
+      },
+      {
+        "type": "mcq",
+        "question": "L'intervention d'un tiers neutre pour faciliter le dialogue et aider les parties en conflit à trouver une solution est la ____.",
+        "options": [
+          "médiation",
+          "souveraineté",
+          "géopolitique",
+          "plénipotentiaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مداخله شخص ثالث برای حل اختلاف = médiation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fait pour un État ou une organisation de s'immiscer dans les affaires intérieures d'un autre État souverain est l'____.",
+        "options": [
+          "ingérence",
+          "négociation",
+          "ambassadeur",
+          "armistice"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دخالت در امور داخلی کشور دیگر = ingérence."
+      },
+      {
+        "type": "mcq",
+        "question": "Le diplomate ou représentant qui possède les pleins pouvoirs pour négocier et signer un traité au nom de son gouvernement est le ____.",
+        "options": [
+          "plénipotentiaire",
+          "protocole",
+          "consensus",
+          "embargo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نماینده دارای اختیارات کامل = plénipotentiaire."
+      },
+      {
+        "type": "binary",
+        "question": "Un traité et un armistice mettent tous deux fin définitivement à une guerre et règlent tous les problèmes politiques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. آتش‌بس (armistice) فقط درگیری را موقتاً متوقف می‌کند، اما معاهده (traité) صلح نهایی و حل مسائل را شامل می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La géopolitique étudie comment les facteurs géographiques influencent les relations de pouvoir et la politique internationale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ژئوپلیتیک دقیقاً تأثیر جغرافیا بر قدرت جهانی را بررسی می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le protocole diplomatique est un code informel que les diplomates peuvent ignorer sans conséquence.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پروتکل دیپلماتیک مجموعه‌ای از قوانین بسیار رسمی و الزام‌آور برای مراسم و احترام متقابل است."
+      },
+      {
+        "type": "binary",
+        "question": "L'embargo est une sanction économique qui vise à isoler un pays en bloquant ses échanges commerciaux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تحریم اقتصادی (embargo) برای فشار بر یک کشور با قطع تجارت اعمال می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La médiation impose une décision finale aux parties en conflit par la force d'un tribunal international.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. میانجی‌گری (médiation) فقط تسهیل‌گر گفتگوست و قدرت تحمیل تصمیم را ندارد."
+      },
+      {
+        "type": "binary",
+        "question": "L'ingérence désigne l'intervention non sollicitée d'un État dans les affaires intérieures d'un autre État souverain.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. مداخله (ingérence) نقض حاکمیت و دخالت در امور داخلی کشور دیگر است."
+      }
+    ]
+  }
+}
