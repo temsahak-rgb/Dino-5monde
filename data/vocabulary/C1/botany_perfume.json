@@ -1,0 +1,680 @@
+{
+  "id": "botany_perfume",
+  "level": "C1",
+  "theme": "Botanique, parfumerie et extraction des essences",
+  "theme_fa": "گیاه‌شناسی، عطرسازی و استخراج اسانس‌ها",
+  "icon": "🌿",
+  "inspiration": "Le Parfum (Tom Tykwer, 2006)",
+  "words": [
+    {
+      "fr": "la botanique",
+      "fa": "گیاه‌شناسی",
+      "emoji": "🌿",
+      "difficulty": 4,
+      "ex": "La botanique étudie la biologie et la classification des plantes.",
+      "ex_fa": "گیاه‌شناسی زیست‌شناسی و طبقه‌بندی گیاهان را مطالعه می‌کند."
+    },
+    {
+      "fr": "la racine",
+      "fa": "ریشه",
+      "emoji": "🌱",
+      "difficulty": 3,
+      "ex": "La racine de l'iris est très prisée en parfumerie.",
+      "ex_fa": "ریشه زنبق در عطرسازی بسیار پرطرفدار است."
+    },
+    {
+      "fr": "la tige",
+      "fa": "ساقه",
+      "emoji": "🎋",
+      "difficulty": 3,
+      "ex": "La tige transporte l'eau et les nutriments vers les feuilles.",
+      "ex_fa": "ساقه آب و مواد مغذی را به برگ‌ها منتقل می‌کند."
+    },
+    {
+      "fr": "le feuillage",
+      "fa": "شاخ و برگ",
+      "emoji": "🍃",
+      "difficulty": 4,
+      "ex": "Le feuillage dense de la menthe dégage une odeur fraîche.",
+      "ex_fa": "شاخ و برگ متراکم نعناع بوی تازگی می‌دهد."
+    },
+    {
+      "fr": "la floraison",
+      "fa": "شکوفایی، گل‌دهی",
+      "emoji": "🌸",
+      "difficulty": 4,
+      "ex": "La floraison du jasmin n'a lieu que pendant quelques semaines.",
+      "ex_fa": "گل‌دهی یاس فقط چند هفته طول می‌کشد."
+    },
+    {
+      "fr": "la photosynthèse",
+      "fa": "فتوسنتز",
+      "emoji": "☀️",
+      "difficulty": 5,
+      "ex": "La photosynthèse permet aux plantes de produire leur propre énergie.",
+      "ex_fa": "فتوسنتز به گیاهان اجازه می‌دهد انرژی خود را تولید کنند."
+    },
+    {
+      "fr": "le pollen",
+      "fa": "گرده",
+      "emoji": "🐝",
+      "difficulty": 4,
+      "ex": "Le pollen est transporté par les abeilles pour la reproduction.",
+      "ex_fa": "گرده توسط زنبورها برای تولیدمثل منتقل می‌شود."
+    },
+    {
+      "fr": "la graine",
+      "fa": "دانه، بذر",
+      "emoji": "🌰",
+      "difficulty": 3,
+      "ex": "Chaque graine contient l'embryon d'une future plante.",
+      "ex_fa": "هر دانه حاوی جنین یک گیاه آینده است."
+    },
+    {
+      "fr": "le terreau",
+      "fa": "خاک غنی، خاکبرگ",
+      "emoji": "🪴",
+      "difficulty": 4,
+      "ex": "Un bon terreau est essentiel pour la croissance des semis.",
+      "ex_fa": "خاک غنی برای رشد نشاءها ضروری است."
+    },
+    {
+      "fr": "la serre",
+      "fa": "گلخانه",
+      "emoji": "🏡",
+      "difficulty": 3,
+      "ex": "La serre maintient une température idéale pour les plantes tropicales.",
+      "ex_fa": "گلخانه دمای ایده‌آلی را برای گیاهان حاره‌ای حفظ می‌کند."
+    },
+    {
+      "fr": "l'engrais",
+      "fa": "کود",
+      "emoji": "🧪",
+      "difficulty": 4,
+      "ex": "L'engrais organique enrichit le sol sans produits chimiques.",
+      "ex_fa": "کود آلی خاک را بدون مواد شیمیایی غنی می‌کند."
+    },
+    {
+      "fr": "la greffe",
+      "fa": "پیوند زدن",
+      "emoji": "🔪",
+      "difficulty": 5,
+      "ex": "La greffe permet de combiner les qualités de deux plantes différentes.",
+      "ex_fa": "پیوند زدن اجازه می‌دهد ویژگی‌های دو گیاه مختلف ترکیب شوند."
+    },
+    {
+      "fr": "la sève",
+      "fa": "شیره گیاهی",
+      "emoji": "💧",
+      "difficulty": 4,
+      "ex": "La sève brute monte des racines vers les feuilles.",
+      "ex_fa": "شیره خام از ریشه‌ها به سوی برگ‌ها بالا می‌رود."
+    },
+    {
+      "fr": "l'herbier",
+      "fa": "هرباریوم (مجموعه گیاهان خشک)",
+      "emoji": "📖",
+      "difficulty": 5,
+      "ex": "Le botaniste a classé chaque espèce dans son herbier personnel.",
+      "ex_fa": "گیاه‌شناس هر گونه را در هرباریوم شخصی‌اش طبقه‌بندی کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le nez absolu",
+      "text": "Jean-Baptiste Grenouille est né avec un odorat surhumain mais ignore tout de la {{BLANK_1}}. Pour créer le parfum ultime, il voyage à Grasse, la capitale mondiale des senteurs. Là, il apprend à extraire l'âme des plantes. Il étudie comment la {{BLANK_2}} de l'iris stocke les arômes profonds, et comment la {{BLANK_3}} de la rose soutient les pétales délicats. Il observe le {{BLANK_4}} de la menthe qui capture la lumière. Il attend patiemment la {{BLANK_5}} nocturne du jasmin pour cueillir les fleurs à leur apogée. Il comprend que la {{BLANK_6}} transforme la lumière en huiles essentielles. Il récolte le {{BLANK_7}} précieux et chaque {{BLANK_8}} rare pour préserver les espèces. Dans son laboratoire, il prépare un {{BLANK_9}} riche et sombre. Il construit une {{BLANK_10}} en verre pour protéger les plantes fragiles du froid. Il ajoute un {{BLANK_11}} naturel pour stimuler leur croissance. Il maîtrise l'art de la {{BLANK_12}} pour créer des hybrides aux odeurs inédites. Il observe la {{BLANK_13}} odorante circuler dans les veines des tiges. Finalement, il compile ses découvertes dans un vaste {{BLANK_14}}, cataloguant chaque essence de la nature.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "botanique",
+          "options": [
+            "botanique",
+            "racine",
+            "tige",
+            "feuillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "racine",
+          "options": [
+            "racine",
+            "floraison",
+            "photosynthèse",
+            "pollen"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tige",
+          "options": [
+            "tige",
+            "graine",
+            "terreau",
+            "serre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "feuillage",
+          "options": [
+            "feuillage",
+            "engrais",
+            "greffe",
+            "sève"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "floraison",
+          "options": [
+            "floraison",
+            "herbier",
+            "botanique",
+            "racine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "photosynthèse",
+          "options": [
+            "photosynthèse",
+            "tige",
+            "feuillage",
+            "floraison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pollen",
+          "options": [
+            "pollen",
+            "graine",
+            "terreau",
+            "serre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "graine",
+          "options": [
+            "graine",
+            "engrais",
+            "greffe",
+            "sève"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "terreau",
+          "options": [
+            "terreau",
+            "herbier",
+            "botanique",
+            "racine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "serre",
+          "options": [
+            "serre",
+            "tige",
+            "feuillage",
+            "floraison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "engrais",
+          "options": [
+            "engrais",
+            "photosynthèse",
+            "pollen",
+            "graine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "greffe",
+          "options": [
+            "greffe",
+            "terreau",
+            "serre",
+            "engrais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "sève",
+          "options": [
+            "sève",
+            "herbier",
+            "botanique",
+            "racine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "herbier",
+          "options": [
+            "herbier",
+            "tige",
+            "feuillage",
+            "floraison"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'alchimie des fleurs",
+      "inspiration": "Le Parfum (Tom Tykwer, 2006)",
+      "text": "À peine Jean-Baptiste eut-il pénétré dans les jardins en terrasses de Grasse qu'il comprit que la {{BLANK_1}} n'était pas une simple science de classification, mais la clé de l'âme du monde. Ce génie olfactif, qui avait grandi dans les puanteurs de Paris, découvrait enfin le langage silencieux des plantes. Il s'agenouilla pour humer la {{BLANK_2}} de l'iris, ce rhizome souterrain qui gardait en mémoire l'odeur de la terre humide, puis il caressa la {{BLANK_3}} de la rose, cette colonne vertébrale végétale qui élevait les pétales vers le ciel. Il s'émerveilla devant le {{BLANK_4}} de la menthe, ce capteur solaire qui transformait la lumière en fraîcheur, et attendit dans l'ombre la {{BLANK_5}} éphémère du jasmin de nuit, ce miracle qui ne durait que quelques heures avant que les pétales ne fanent. Il comprit que la {{BLANK_6}} était la grande alchimie de la nature, le processus invisible qui changeait les rayons du soleil en huiles enivrantes. Il recueillit le {{BLANK_7}} doré comme de la poussière d'étoiles, et conserva chaque {{BLANK_8}} précieuse pour perpétuer les lignées odorantes. Dans son atelier, il malaxa un {{BLANK_9}} noir et fertile, matrice de toute vie, et bâtit une {{BLANK_10}} de verre où l'été régnait éternellement sur les fleurs tropicales. Il nourrissait ses créations avec un {{BLANK_11}} secret, et pratiquait la {{BLANK_12}} avec la précision d'un chirurgien, mariant le bois d'un arbre à l'écorce d'un autre pour créer des monstres parfumés. Il regardait la {{BLANK_13}} monter dans les veines translucides des tiges, ce sang végétal qui portait la vie. Et quand il eut épuisé tous les secrets de la nature, il consigna son savoir dans un {{BLANK_14}} monumental, un cimetière de feuilles séchées qui contenait, prisonnière dans le papier, l'essence même de la beauté du monde.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "botanique",
+          "options": [
+            "botanique",
+            "racine",
+            "tige",
+            "feuillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "racine",
+          "options": [
+            "racine",
+            "floraison",
+            "photosynthèse",
+            "pollen"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tige",
+          "options": [
+            "tige",
+            "graine",
+            "terreau",
+            "serre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "feuillage",
+          "options": [
+            "feuillage",
+            "engrais",
+            "greffe",
+            "sève"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "floraison",
+          "options": [
+            "floraison",
+            "herbier",
+            "botanique",
+            "racine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "photosynthèse",
+          "options": [
+            "photosynthèse",
+            "tige",
+            "feuillage",
+            "floraison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pollen",
+          "options": [
+            "pollen",
+            "graine",
+            "terreau",
+            "serre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "graine",
+          "options": [
+            "graine",
+            "engrais",
+            "greffe",
+            "sève"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "terreau",
+          "options": [
+            "terreau",
+            "herbier",
+            "botanique",
+            "racine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "serre",
+          "options": [
+            "serre",
+            "tige",
+            "feuillage",
+            "floraison"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "engrais",
+          "options": [
+            "engrais",
+            "photosynthèse",
+            "pollen",
+            "graine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "greffe",
+          "options": [
+            "greffe",
+            "terreau",
+            "serre",
+            "engrais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "sève",
+          "options": [
+            "sève",
+            "herbier",
+            "botanique",
+            "racine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "herbier",
+          "options": [
+            "herbier",
+            "tige",
+            "feuillage",
+            "floraison"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Botanique et parfumerie",
+    "title_fa": "آزمون : گیاه‌شناسی و عطرسازی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie la biologie, l'écologie et la classification des plantes est la ____.",
+        "options": [
+          "botanique",
+          "racine",
+          "tige",
+          "feuillage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه گیاهان = botanique."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie souterraine de la plante qui la fixe au sol et absorbe l'eau et les sels minéraux est la ____.",
+        "options": [
+          "racine",
+          "floraison",
+          "photosynthèse",
+          "pollen"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش زیرزمینی گیاه = racine."
+      },
+      {
+        "type": "mcq",
+        "question": "L'axe principal de la plante qui porte les feuilles et les fleurs, et assure la circulation de la sève, est la ____.",
+        "options": [
+          "tige",
+          "graine",
+          "terreau",
+          "serre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محور اصلی گیاه = tige."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des feuilles d'un arbre ou d'une plante est le ____.",
+        "options": [
+          "feuillage",
+          "engrais",
+          "greffe",
+          "sève"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه برگ‌ها = feuillage."
+      },
+      {
+        "type": "mcq",
+        "question": "La période pendant laquelle les fleurs s'épanouissent et s'ouvrent est la ____.",
+        "options": [
+          "floraison",
+          "herbier",
+          "botanique",
+          "racine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره شکوفایی گل‌ها = floraison."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus biochimique par lequel les plantes utilisent la lumière du soleil pour synthétiser leur nourriture est la ____.",
+        "options": [
+          "photosynthèse",
+          "tige",
+          "feuillage",
+          "floraison"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرآیند استفاده از نور خورشید برای تغذیه = photosynthèse."
+      },
+      {
+        "type": "mcq",
+        "question": "La poudre fine produite par les étamines des fleurs, essentielle à leur reproduction, est le ____.",
+        "options": [
+          "pollen",
+          "graine",
+          "terreau",
+          "serre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گرد تولیدشده توسط گل = pollen."
+      },
+      {
+        "type": "mcq",
+        "question": "L'organe de reproduction de la plante qui contient l'embryon et peut donner naissance à un nouveau végétal est la ____.",
+        "options": [
+          "graine",
+          "engrais",
+          "greffe",
+          "sève"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بذر و دانه گیاه = graine."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mélange riche en matières organiques utilisé pour la culture des plantes en pot ou des semis est le ____.",
+        "options": [
+          "terreau",
+          "herbier",
+          "botanique",
+          "racine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خاک غنی برای کشت = terreau."
+      },
+      {
+        "type": "mcq",
+        "question": "La structure vitrée ou plastique qui protège les plantes du froid et permet de contrôler le climat est la ____.",
+        "options": [
+          "serre",
+          "tige",
+          "feuillage",
+          "floraison"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازه شیشه‌ای محافظ گیاهان = serre."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance ajoutée au sol pour apporter des nutriments et favoriser la croissance des plantes est l'____.",
+        "options": [
+          "engrais",
+          "photosynthèse",
+          "pollen",
+          "graine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده مغذی برای خاک = engrais."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique horticole qui consiste à insérer un bourgeon ou un rameau d'une plante sur une autre est la ____.",
+        "options": [
+          "greffe",
+          "terreau",
+          "serre",
+          "engrais"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک پیوند زدن گیاه = greffe."
+      },
+      {
+        "type": "mcq",
+        "question": "Le liquide nutritif qui circule dans les vaisseaux de la plante pour la nourrir est la ____.",
+        "options": [
+          "sève",
+          "herbier",
+          "botanique",
+          "racine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مایع مغذی در گردش گیاه = sève."
+      },
+      {
+        "type": "mcq",
+        "question": "La collection de plantes séchées et pressées, conservées pour l'étude scientifique, est l'____.",
+        "options": [
+          "herbier",
+          "tige",
+          "feuillage",
+          "floraison"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه گیاهان خشک‌شده علمی = herbier."
+      },
+      {
+        "type": "binary",
+        "question": "La photosynthèse est le processus par lequel les plantes respirent en absorbant de l'oxygène la nuit.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. فتوسنتز فرآیند جذب دی‌اکسید کربن و تولید اکسیژن با استفاده از نور خورشید است."
+      },
+      {
+        "type": "binary",
+        "question": "Le terreau est un type de sol artificiel enrichi en matières organiques pour la culture.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. خاکبرگ (terreau) خاکی غنی و آماده برای کشت است."
+      },
+      {
+        "type": "binary",
+        "question": "La greffe permet de multiplier une plante en combinant les tissus de deux végétaux différents.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پیوند زدن بافت دو گیاه را برای تکثیر و ترکیب ویژگی‌ها به هم متصل می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le pollen est la partie femelle de la fleur qui se transforme en fruit.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. گرده (pollen) بخش نر گل است که برای لقاح منتقل می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Un herbier est une collection de plantes séchées utilisées pour l'étude botanique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هرباریوم مجموعه‌ای از گیاهان خشک‌شده برای مطالعه است."
+      },
+      {
+        "type": "binary",
+        "question": "La sève brute descend des feuilles vers les racines pour nourrir la plante.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. شیره خام از ریشه‌ها به سمت برگ‌ها بالا می‌رود (شیره elaborée برعکس حرکت می‌کند)."
+      }
+    ]
+  }
+}
