@@ -36,13 +36,12 @@ async function showDailyLesson(lessonId) {
 }
 
 async function showTravelLesson(lessonId) {
-    app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">⏳ ...</p></div>`;
-    const lessonData = await loadSpecificLesson("travel", lessonId);
-    if (!lessonData) { 
-        app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">🚧 به زودی</p><button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">بازگشت</button></div>`; 
-        return; 
+    // هدایت مستقیم به موتور اختصاصی travel.js
+    if (typeof renderTravelLessonPage === 'function') {
+        await renderTravelLessonPage(lessonId);
+    } else {
+        app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p>⚠️ travel.js بارگذاری نشده است.</p></div>`;
     }
-    showLessonContent(lessonId, lessonData.sections[0]);
 }
 // ===============================
 // موتور تمرین (مشترک بین گرامر، سفر و روزمره)
