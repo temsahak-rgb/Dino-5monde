@@ -1,0 +1,366 @@
+{
+  "id": "medicine_science",
+  "level": "C1",
+  "theme": "Médecine, santé et sciences",
+  "theme_fa": "پزشکی، سلامت و علوم",
+  "icon": "🏥",
+  "inspiration": "The Knick (Jack Amiel, Michael Begler / Steven Soderbergh, 2014-2015)",
+  "words": [
+    {
+      "fr": "l'anamnèse",
+      "fa": "شرح حال پزشکی",
+      "emoji": "📋",
+      "difficulty": 5,
+      "ex": "Le médecin a commencé par une anamnèse détaillée du patient.",
+      "ex_fa": "پزشک با یک شرح حال دقیق از بیمار شروع کرد."
+    },
+    {
+      "fr": "le pronostic",
+      "fa": "پیش‌آگهی، پیش‌بینی سیر بیماری",
+      "emoji": "🔮",
+      "difficulty": 4,
+      "ex": "Le pronostic vital est engagé suite à l'hémorragie.",
+      "ex_fa": "پیش‌آگهی حیاتی (خطر مرگ) به دنبال خونریزی در میان است."
+    },
+    {
+      "fr": "la pathogénie",
+      "fa": "بیماری‌زایی، مکانیسم ایجاد بیماری",
+      "emoji": "🦠",
+      "difficulty": 5,
+      "ex": "La pathogénie de cette maladie auto-immune reste mal comprise.",
+      "ex_fa": "بیماری‌زایی این بیماری خودایمنی هنوز به خوبی درک نشده است."
+    },
+    {
+      "fr": "l'iatrogénie",
+      "fa": "عوارض ناشی از درمان پزشکی",
+      "emoji": "💊",
+      "difficulty": 5,
+      "ex": "Les effets secondaires de ce médicament sont un cas classique d'iatrogénie.",
+      "ex_fa": "عوارض جانبی این دارو یک نمونه کلاسیک از عوارض ناشی از درمان است."
+    },
+    {
+      "fr": "nosocomial",
+      "fa": "بیمارستانی (عفونت)",
+      "emoji": "🏥",
+      "difficulty": 4,
+      "ex": "Le lavage des mains est crucial pour éviter toute infection nosocomiale.",
+      "ex_fa": "شستشوی دست‌ها برای جلوگیری از هرگونه عفونت بیمارستانی حیاتی است."
+    },
+    {
+      "fr": "la posologie",
+      "fa": "دوز مصرفی، دستور مصرف",
+      "emoji": "⚖️",
+      "difficulty": 4,
+      "ex": "Il est impératif de respecter la posologie prescrite par le médecin.",
+      "ex_fa": "رعایت دوز مصرفی تجویزشده توسط پزشک الزامی است."
+    },
+    {
+      "fr": "l'allopathie",
+      "fa": "طب رایج (آلوپاتی)",
+      "emoji": "⚕️",
+      "difficulty": 5,
+      "ex": "L'allopathie traite les symptômes par des substances ayant un effet contraire.",
+      "ex_fa": "طب رایج علائم را با موادی که اثر متضاد دارند درمان می‌کند."
+    },
+    {
+      "fr": "la physiopathologie",
+      "fa": "فیزیوپاتولوژی (عملکرد اندام در حالت بیماری)",
+      "emoji": "🫀",
+      "difficulty": 5,
+      "ex": "L'étudiant en médecine révise la physiopathologie cardiaque.",
+      "ex_fa": "دانشجوی پزشکی فیزیوپاتولوژی قلبی را مرور می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le diagnostic du Dr Martin",
+      "title_fa": "تشخیص دکتر مارتین",
+      "text": "Le Dr Martin reçoit un nouveau patient souffrant de douleurs abdominales. Il commence par l'{{BLANK_1}} pour connaître ses antécédents médicaux. Ensuite, il cherche à comprendre la {{BLANK_2}} de cette douleur, c'est-à-dire comment elle s'est développée dans le corps. Après des examens, il explique la {{BLANK_3}} de la maladie au patient. Il lui annonce que le {{BLANK_4}} est bon si le traitement est suivi rapidement. Il rédige une ordonnance en précisant bien la {{BLANK_5}} pour éviter tout surdosage. Il met aussi en garde contre les risques d'{{BLANK_6}}, car certains médicaments peuvent causer d'autres problèmes de santé. Enfin, il rappelle l'importance de l'hygiène à l'hôpital pour éviter une infection {{BLANK_7}}. Le Dr Martin pratique l'{{BLANK_8}}, la médecine conventionnelle basée sur des preuves scientifiques, et assure au patient qu'il est entre de bonnes mains.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "anamnèse",
+          "options": [
+            "anamnèse",
+            "posologie",
+            "allopathie",
+            "iatrogénie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pathogénie",
+          "options": [
+            "pathogénie",
+            "physiopathologie",
+            "nosocomiale",
+            "pronostic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "physiopathologie",
+          "options": [
+            "physiopathologie",
+            "allopathie",
+            "anamnèse",
+            "posologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "pronostic",
+          "options": [
+            "pronostic",
+            "iatrogénie",
+            "pathogénie",
+            "nosocomial"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "posologie",
+          "options": [
+            "posologie",
+            "anamnèse",
+            "allopathie",
+            "physiopathologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "iatrogénie",
+          "options": [
+            "iatrogénie",
+            "pathogénie",
+            "pronostic",
+            "nosocomiale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "nosocomiale",
+          "options": [
+            "nosocomiale",
+            "iatrogénie",
+            "allopathie",
+            "posologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "allopathie",
+          "options": [
+            "allopathie",
+            "anamnèse",
+            "physiopathologie",
+            "pathogénie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le théâtre des chairs",
+      "title_fa": "تئاتر گوشت‌ها",
+      "inspiration": "The Knick (Jack Amiel, Michael Begler / Steven Soderbergh, 2014-2015)",
+      "text": "À peine le Dr John Thackery eut-il noué son tablier de caoutchouc que le silence tomba sur l'amphithéâtre du Knickerbocker Hospital. Devant lui, sur la table d'opération, gisait un docker dont l'abdomen était ravagé par une gangrène foudroyante. Thackery, les pupilles dilatées par la cocaïne qu'il s'était injectée en cachette, observa le malade. L'{{BLANK_1}} qu'il avait recueillie le matin même révélait une blessure négligée, infectée par la crasse des quais. Mais ce qui fascinait Thackery, c'était la {{BLANK_2}} de cette nécrose : comment les bactéries, profitant d'une ischémie locale, avaient colonisé les tissus avec une voracité implacable. Il comprenait la {{BLANK_3}} de cette déchéance cellulaire mieux que quiconque dans cette salle. « Le {{BLANK_4}} est sombre, » lança-t-il à l'assemblée d'étudiants en médecine qui prenaient des notes fiévreusement. « Si nous n'amputons pas dans la minute, il mourra d'un choc septique. » L'opération commença. Thackery maniait le bistouri avec une virtuosité effrayante. Il savait que chaque geste comptait, que la moindre négligence pourrait entraîner une infection {{BLANK_5}}, ce fléau qui décimait encore trop de blessés dans les couloirs de son propre hôpital. Il ajusta la {{BLANK_6}} de l'éther administrée par l'infirmière, veillant à ce que le patient ne se réveille pas dans d'atroces souffrances. Pourtant, Thackery n'était pas aveugle aux limites de son art. Il connaissait les ravages de l'{{BLANK_7}} : combien de fois ses propres interventions, ou les substances qu'il prescrivait, avaient-elles précipité la fin de ses malades ? La médecine était un champ de bataille où les remèdes tuaient parfois autant que le mal. Mais en cet instant, il ne jurait que par l'{{BLANK_8}}, cette science rigoureuse qui, par des antagonismes chimiques et chirurgicaux, arrachait des vies à la faucheuse. Le docker survécut à l'opération. Thackery, épuisé mais triomphant, retira ses gants tachés de sang, prêt à affronter le prochain corps brisé que le siècle industriel lui jetterait en pâture.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "anamnèse",
+          "options": [
+            "anamnèse",
+            "posologie",
+            "allopathie",
+            "physiopathologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pathogénie",
+          "options": [
+            "pathogénie",
+            "iatrogénie",
+            "nosocomiale",
+            "pronostic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "physiopathologie",
+          "options": [
+            "physiopathologie",
+            "allopathie",
+            "anamnèse",
+            "posologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "pronostic",
+          "options": [
+            "pronostic",
+            "iatrogénie",
+            "pathogénie",
+            "nosocomial"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "nosocomiale",
+          "options": [
+            "nosocomiale",
+            "iatrogénie",
+            "allopathie",
+            "posologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "posologie",
+          "options": [
+            "posologie",
+            "anamnèse",
+            "physiopathologie",
+            "pathogénie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "iatrogénie",
+          "options": [
+            "iatrogénie",
+            "pathogénie",
+            "pronostic",
+            "nosocomiale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "allopathie",
+          "options": [
+            "allopathie",
+            "anamnèse",
+            "physiopathologie",
+            "pathogénie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Sciences médicales et hospitalières",
+    "title_fa": "آزمون : علوم پزشکی و بیمارستانی",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'interrogatoire minutieux par lequel le médecin retrace l'histoire médicale et les antécédents du patient s'appelle l'____.",
+        "options": [
+          "anamnèse",
+          "allopathie",
+          "iatrogénie",
+          "posologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بازجویی دقیق برای ثبت تاریخچه پزشکی بیمار = anamnèse."
+      },
+      {
+        "type": "mcq",
+        "question": "L'évaluation des chances de survie ou de guérison d'un malade par le médecin constitue le ____.",
+        "options": [
+          "pronostic",
+          "diagnostic",
+          "nosocomial",
+          "physiopathologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارزیابی شانس بقا یا بهبود = pronostic."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étude des mécanismes biologiques par lesquels une maladie apparaît et se développe dans l'organisme est la ____.",
+        "options": [
+          "pathogénie",
+          "physiopathologie",
+          "allopathie",
+          "anamnèse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مطالعه مکانیسم‌های پیدایش و توسعه بیماری = pathogénie."
+      },
+      {
+        "type": "mcq",
+        "question": "Les effets indésirables et nocifs provoqués involontairement par un acte médical ou un médicament relèvent de l'____.",
+        "options": [
+          "iatrogénie",
+          "pathogénie",
+          "nosocomiale",
+          "allopathie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عوارض ناخواسته و مضر ناشی از اقدامات پزشکی = iatrogénie."
+      },
+      {
+        "type": "mcq",
+        "question": "Une infection contractée par un patient lors de son séjour à l'hôpital, et qui n'était pas présente à son admission, est dite ____.",
+        "options": [
+          "nosocomiale",
+          "iatrogénie",
+          "pathogénie",
+          "allopathie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عفونتی که در بیمارستان گرفته شود = nosocomiale."
+      },
+      {
+        "type": "mcq",
+        "question": "Les instructions détaillées concernant la dose, la fréquence et la durée de prise d'un médicament forment la ____.",
+        "options": [
+          "posologie",
+          "anamnèse",
+          "physiopathologie",
+          "pronostic"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستورالعمل دوز و نحوه مصرف دارو = posologie."
+      },
+      {
+        "type": "binary",
+        "question": "L'allopathie désigne les médecines alternatives comme l'homéopathie ou l'acupuncture.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "allopathie طب رایج و علمی است که با عوامل متضاد بیماری مبارزه می‌کند، نه طب جایگزین."
+      },
+      {
+        "type": "binary",
+        "question": "La physiopathologie étudie le fonctionnement altéré des organes et des systèmes au cours d'une maladie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، physiopathologie بررسی تغییرات عملکردی اندام‌ها در حالت بیماری است."
+      }
+    ]
+  }
+}
