@@ -1,0 +1,680 @@
+{
+  "id": "viticulture_wine",
+  "level": "C1",
+  "theme": "Viticulture, œnologie et dégustation",
+  "theme_fa": "تاک‌داری، شراب‌شناسی و چشیدن شراب",
+  "icon": "🍷",
+  "inspiration": "Ce qui nous lie (Cédric Klapisch, 2017)",
+  "words": [
+    {
+      "fr": "la viticulture",
+      "fa": "تاک‌داری، انگورکاری",
+      "emoji": "🍇",
+      "difficulty": 4,
+      "ex": "La viticulture biologique respecte les cycles naturels de la terre.",
+      "ex_fa": "تاک‌داری ارگانیک به چرخه‌های طبیعی زمین احترام می‌گذارد."
+    },
+    {
+      "fr": "le vignoble",
+      "fa": "تاکستان",
+      "emoji": "🏞️",
+      "difficulty": 3,
+      "ex": "Le vignoble bordelais est mondialement célèbre pour ses grands crus.",
+      "ex_fa": "تاکستان بوردو به خاطر شراب‌های بزرگش در جهان مشهور است."
+    },
+    {
+      "fr": "le vigneron",
+      "fa": "تاک‌دار، شراب‌ساز",
+      "emoji": "👨‍🌾",
+      "difficulty": 3,
+      "ex": "Le vigneron surveille la maturité des grappes avec une attention quotidienne.",
+      "ex_fa": "تاک‌دار هر روز با دقت رسیدگی خوشه‌ها را بررسی می‌کند."
+    },
+    {
+      "fr": "la vendange",
+      "fa": "برداشت انگور (وِندانژ)",
+      "emoji": "🧺",
+      "difficulty": 4,
+      "ex": "La vendange manuelle permet de trier les meilleurs raisins directement sur le cep.",
+      "ex_fa": "برداشت دستی امکان سورت کردن بهترین انگورها مستقیماً روی بوته را می‌دهد."
+    },
+    {
+      "fr": "le raisin",
+      "fa": "انگور",
+      "emoji": "🍇",
+      "difficulty": 2,
+      "ex": "Le raisin noir donne des vins rouges puissants et tanniques.",
+      "ex_fa": "انگور سیاه شراب‌های قرمز قدرتمند و گس تولید می‌کند."
+    },
+    {
+      "fr": "la grappe",
+      "fa": "خوشه",
+      "emoji": "🍇",
+      "difficulty": 3,
+      "ex": "Chaque grappe est gorgée de soleil et de sucre à la fin de l'été.",
+      "ex_fa": "هر خوشه در پایان تابستان پر از نور خورشید و قند است."
+    },
+    {
+      "fr": "le cep",
+      "fa": "بوته تاک، تنه درخت مو",
+      "emoji": "🪵",
+      "difficulty": 4,
+      "ex": "Le vieux cep de vigne tordu raconte des décennies de saisons passées.",
+      "ex_fa": "بوته تاک پیر و پیچ‌خورده، دهه‌ها از فصل‌های گذشته را روایت می‌کند."
+    },
+    {
+      "fr": "le terroir",
+      "fa": "خاک و اقلیم (تروآر)",
+      "emoji": "🌍",
+      "difficulty": 5,
+      "ex": "Le terroir bourguignon confère aux vins une minéralité unique.",
+      "ex_fa": "خاک و اقلیم بورگونی، ماده معدنی بی‌نظیری به شراب‌ها می‌بخشد."
+    },
+    {
+      "fr": "la cave",
+      "fa": "شراب‌خانه، زیرزمین",
+      "emoji": "🏚️",
+      "difficulty": 3,
+      "ex": "Les bouteilles reposent dans la cave fraîche et humide à l'abri de la lumière.",
+      "ex_fa": "بطری‌ها در زیرزمین خنک و مرطوب و دور از نور استراحت می‌کنند."
+    },
+    {
+      "fr": "le tonneau",
+      "fa": "بشکه چوبی",
+      "emoji": "🛢️",
+      "difficulty": 3,
+      "ex": "Le vin vieillit dans un tonneau de chêne qui lui offre des arômes boisés.",
+      "ex_fa": "شراب در بشکه بلوط کهنه می‌شود و عطرهای چوبی به آن منتقل می‌شود."
+    },
+    {
+      "fr": "la fermentation",
+      "fa": "تخمیر",
+      "emoji": "🫧",
+      "difficulty": 4,
+      "ex": "La fermentation alcoolique transforme le sucre du fruit en alcool.",
+      "ex_fa": "تخمیر الکلی، قند میوه را به الکل تبدیل می‌کند."
+    },
+    {
+      "fr": "le sommelier",
+      "fa": "سوملیه (متخصص شراب)",
+      "emoji": "🍷",
+      "difficulty": 4,
+      "ex": "Le sommelier conseille le client pour accorder le vin avec le plat.",
+      "ex_fa": "سوملیه برای هماهنگ کردن شراب با غذا به مشتری مشاوره می‌دهد."
+    },
+    {
+      "fr": "le tanin",
+      "fa": "تانن (ماده گس)",
+      "emoji": "🍷",
+      "difficulty": 5,
+      "ex": "Le tanin assèche légèrement le palais et donne sa structure au vin rouge.",
+      "ex_fa": "تانن کام را کمی خشک و ساختار شراب قرمز را ایجاد می‌کند."
+    },
+    {
+      "fr": "le millésime",
+      "fa": "سال برداشت (سال شراب)",
+      "emoji": "📅",
+      "difficulty": 4,
+      "ex": "Le millésime 1945 est considéré comme l'un des plus grands du siècle.",
+      "ex_fa": "شراب سال ۱۹۴۵ یکی از بزرگترین‌های قرن محسوب می‌شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'héritage de la terre",
+      "text": "Jean retourne dans sa Bourgogne natale pour reprendre le {{BLANK_2}} familial. Il apprend les secrets de la {{BLANK_1}} auprès de son père, un vieux {{BLANK_3}} passionné. En septembre, c'est le temps de la {{BLANK_4}}. Ils coupent soigneusement chaque {{BLANK_6}} de {{BLANK_5}} à la main pour ne pas abîmer le vieux {{BLANK_7}} tordu. Le {{BLANK_8}} argileux de cette colline donne un caractère unique au fruit. En bas, dans la {{BLANK_9}} sombre et fraîche, le jus subit sa {{BLANK_11}} magique. Le liquide rubis est ensuite transféré dans chaque {{BLANK_10}} de chêne pour y dormir pendant des mois. Des années plus tard, Jean sert son vin dans un grand restaurant. Le {{BLANK_12}} l'analyse, admire sa couleur, et ressent la puissance du {{BLANK_13}} qui structure la bouche. En regardant l'étiquette, le client découvre le {{BLANK_14}} exceptionnel de cette année-là, un véritable chef-d'œuvre en bouteille.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "viticulture",
+          "options": [
+            "viticulture",
+            "vignoble",
+            "vigneron",
+            "vendange"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "vignoble",
+          "options": [
+            "vignoble",
+            "raisin",
+            "grappe",
+            "cep"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "vigneron",
+          "options": [
+            "vigneron",
+            "terroir",
+            "cave",
+            "tonneau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "vendange",
+          "options": [
+            "vendange",
+            "fermentation",
+            "sommelier",
+            "tanin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "raisin",
+          "options": [
+            "raisin",
+            "millésime",
+            "viticulture",
+            "vignoble"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "grappe",
+          "options": [
+            "grappe",
+            "vigneron",
+            "vendange",
+            "raisin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "cep",
+          "options": [
+            "cep",
+            "grappe",
+            "terroir",
+            "cave"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "terroir",
+          "options": [
+            "terroir",
+            "tonneau",
+            "fermentation",
+            "sommelier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cave",
+          "options": [
+            "cave",
+            "tanin",
+            "millésime",
+            "viticulture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "tonneau",
+          "options": [
+            "tonneau",
+            "vignoble",
+            "vigneron",
+            "vendange"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "fermentation",
+          "options": [
+            "fermentation",
+            "raisin",
+            "grappe",
+            "cep"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "sommelier",
+          "options": [
+            "sommelier",
+            "terroir",
+            "cave",
+            "tonneau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "tanin",
+          "options": [
+            "tanin",
+            "fermentation",
+            "millésime",
+            "viticulture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "millésime",
+          "options": [
+            "millésime",
+            "vignoble",
+            "vigneron",
+            "vendange"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le sang de la vigne",
+      "inspiration": "Ce qui nous lie (Cédric Klapisch, 2017)",
+      "text": "À peine le vieux {{BLANK_3}} eut-il écrasé le grain entre ses doigts calleux qu'il sut que le sucre était à son apogée. Ce {{BLANK_2}} bourguignon n'était pas qu'une étendue de terre, c'était la mémoire liquide de ses ancêtres. Il avait dédié sa vie à la {{BLANK_1}}, écoutant le murmure de chaque {{BLANK_7}} noueux comme on écoute un vieil ami. Quand vint l'heure de la {{BLANK_4}}, ses mains caressèrent chaque {{BLANK_6}} de {{BLANK_5}} noir, offrande précieuse arrachée à ce {{BLANK_8}} de pierre et d'argile. Dans l'ombre sacrée de la {{BLANK_9}}, le moût entamait sa {{BLANK_11}} fiévreuse, bouillonnant de vie avant de s'apaiser dans le ventre d'un {{BLANK_10}} de chêne. Là, dans le silence, le temps faisait son œuvre. Des années plus tard, le {{BLANK_12}} du grand restaurant parisien ferait tourner le verre, cherchant à lire le {{BLANK_14}} gravé sur l'étiquette. Il sentirait la morsure noble du {{BLANK_13}}, cette âpre vérité de la peau et du pépin, et comprendrait que l'on ne boit pas seulement du vin, on boit le soleil d'un été disparu, la sueur d'un homme et l'histoire d'une terre qui refuse de mourir.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "viticulture",
+          "options": [
+            "viticulture",
+            "vignoble",
+            "vigneron",
+            "vendange"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "vignoble",
+          "options": [
+            "vignoble",
+            "raisin",
+            "grappe",
+            "cep"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "vigneron",
+          "options": [
+            "vigneron",
+            "terroir",
+            "cave",
+            "tonneau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "vendange",
+          "options": [
+            "vendange",
+            "fermentation",
+            "sommelier",
+            "tanin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "raisin",
+          "options": [
+            "raisin",
+            "millésime",
+            "viticulture",
+            "vignoble"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "grappe",
+          "options": [
+            "grappe",
+            "vigneron",
+            "vendange",
+            "raisin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "cep",
+          "options": [
+            "cep",
+            "grappe",
+            "terroir",
+            "cave"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "terroir",
+          "options": [
+            "terroir",
+            "tonneau",
+            "fermentation",
+            "sommelier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cave",
+          "options": [
+            "cave",
+            "tanin",
+            "millésime",
+            "viticulture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "tonneau",
+          "options": [
+            "tonneau",
+            "vignoble",
+            "vigneron",
+            "vendange"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "fermentation",
+          "options": [
+            "fermentation",
+            "raisin",
+            "grappe",
+            "cep"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "sommelier",
+          "options": [
+            "sommelier",
+            "terroir",
+            "cave",
+            "tonneau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "tanin",
+          "options": [
+            "tanin",
+            "fermentation",
+            "millésime",
+            "viticulture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "millésime",
+          "options": [
+            "millésime",
+            "vignoble",
+            "vigneron",
+            "vendange"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Viticulture et œnologie",
+    "title_fa": "آزمون : تاک‌داری و شراب‌شناسی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art de cultiver la vigne pour produire du raisin de cuve ou de table est la ____.",
+        "options": [
+          "viticulture",
+          "vignoble",
+          "vigneron",
+          "vendange"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر کشت تاک = viticulture."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étendue de terrain plantée de vignes, souvent associée à une région spécifique, est le ____.",
+        "options": [
+          "vignoble",
+          "raisin",
+          "grappe",
+          "cep"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زمین زیر کشت تاک = vignoble."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui cultive la vigne et élabore le vin est le ____.",
+        "options": [
+          "vigneron",
+          "terroir",
+          "cave",
+          "tonneau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کسی که انگور می‌کارد و شراب می‌سازد = vigneron."
+      },
+      {
+        "type": "mcq",
+        "question": "La période et l'action de récolter les grappes de raisin mûres dans les vignes est la ____.",
+        "options": [
+          "vendange",
+          "fermentation",
+          "sommelier",
+          "tanin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فصل و عمل برداشت انگور = vendange."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fruit de la vigne, dont le jus fermenté donne le vin, est le ____.",
+        "options": [
+          "raisin",
+          "millésime",
+          "viticulture",
+          "vignoble"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "میوه تاک = raisin."
+      },
+      {
+        "type": "mcq",
+        "question": "L'assemblage de nombreux grains de raisin attachés à une tige commune est la ____.",
+        "options": [
+          "grappe",
+          "vigneron",
+          "vendange",
+          "raisin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه دانه‌های انگور روی شاخه = grappe."
+      },
+      {
+        "type": "mcq",
+        "question": "Le tronc ligneux et souvent tortueux de la plante de vigne est le ____.",
+        "options": [
+          "cep",
+          "grappe",
+          "terroir",
+          "cave"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تنه چوبی و پیچ‌خورده تاک = cep."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des facteurs naturels (sol, climat, topographie) qui donnent son caractère unique au vin est le ____.",
+        "options": [
+          "terroir",
+          "tonneau",
+          "fermentation",
+          "sommelier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عوامل طبیعی مؤثر بر شخصیت شراب = terroir."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu souterrain ou frais où le vin est conservé et vieilli en bouteilles est la ____.",
+        "options": [
+          "cave",
+          "tanin",
+          "millésime",
+          "viticulture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محل خنک نگهداری شراب = cave."
+      },
+      {
+        "type": "mcq",
+        "question": "Le récipient en bois, souvent en chêne, utilisé pour l'élevage et le vieillissement du vin est le ____.",
+        "options": [
+          "tonneau",
+          "vignoble",
+          "vigneron",
+          "vendange"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ظرف چوبی کهنه کردن شراب = tonneau."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus biochimique par lequel les levures transforment le sucre du raisin en alcool est la ____.",
+        "options": [
+          "fermentation",
+          "raisin",
+          "grappe",
+          "cep"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تبدیل قند به الکل توسط مخمر = fermentation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le spécialiste du vin dans un restaurant, chargé de conseiller les clients et de gérer la cave, est le ____.",
+        "options": [
+          "sommelier",
+          "terroir",
+          "cave",
+          "tonneau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص شراب در رستوران = sommelier."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance présente dans la peau et les pépins qui donne au vin rouge sa structure et son astringence est le ____.",
+        "options": [
+          "tanin",
+          "fermentation",
+          "millésime",
+          "viticulture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده گس‌کننده در پوست و هسته = tanin."
+      },
+      {
+        "type": "mcq",
+        "question": "L'indication de l'année de récolte du raisin, reflet des conditions climatiques de cette année-là, est le ____.",
+        "options": [
+          "millésime",
+          "vignoble",
+          "vigneron",
+          "vendange"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سال برداشت انگور = millésime."
+      },
+      {
+        "type": "binary",
+        "question": "Le terroir désigne uniquement la technique de vinification utilisée par le vigneron en cave.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. terroir به عوامل طبیعی (خاک، اقلیم، توپوگرافی) اشاره دارد، نه تکنیک‌های انسانی."
+      },
+      {
+        "type": "binary",
+        "question": "La fermentation alcoolique est l'étape où les levures transforment le sucre du raisin en alcool.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تخمیر الکلی فرآیند تبدیل قند به الکل است."
+      },
+      {
+        "type": "binary",
+        "question": "Le sommelier est la personne qui cultive la vigne et récolte le raisin dans les champs.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سوملیه (sommelier) متخصص شراب در رستوران است؛ کشاورز تاکستان vigneron نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le tanin provoque une sensation d'astringence (assèchement) en bouche, typique des vins rouges.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تانن احساس گسی و خشکی در دهان ایجاد می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le millésime indique la date de mise en bouteille et d'expédition du vin vers les magasins.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. millésime نشان‌دهنده سال *برداشت* انگور است، نه سال بطری کردن."
+      },
+      {
+        "type": "binary",
+        "question": "La vendange est la période de l'année, généralement en automne, où l'on récolte le raisin.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. vendange به فصل و عمل برداشت محصول انگور گفته می‌شود."
+      }
+    ]
+  }
+}
