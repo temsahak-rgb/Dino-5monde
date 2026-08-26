@@ -1,0 +1,680 @@
+{
+  "id": "gardening_landscape",
+  "level": "C1",
+  "theme": "Jardinage, horticulture et paysagisme",
+  "theme_fa": "باغبانی، باغداری و طراحی منظره",
+  "icon": "🌿",
+  "inspiration": "Le Jardin secret (The Secret Garden - Agnieszka Holland, 1993)",
+  "words": [
+    {
+      "fr": "le jardinage",
+      "fa": "باغبانی",
+      "emoji": "🌱",
+      "difficulty": 3,
+      "ex": "Le jardinage est une activité apaisante qui connecte à la nature.",
+      "ex_fa": "باغبانی فعالیت آرامش‌بخشی است که انسان را به طبیعت متصل می‌کند."
+    },
+    {
+      "fr": "la taille",
+      "fa": "هرس کردن",
+      "emoji": "✂️",
+      "difficulty": 4,
+      "ex": "La taille des rosiers se pratique à la fin de l'hiver.",
+      "ex_fa": "هرس گل‌های رز در اواخر زمستان انجام می‌شود."
+    },
+    {
+      "fr": "le compost",
+      "fa": "کمپوست",
+      "emoji": "🍂",
+      "difficulty": 4,
+      "ex": "Le compost enrichit naturellement la terre du jardin.",
+      "ex_fa": "کمپوست به طور طبیعی خاک باغ را غنی می‌کند."
+    },
+    {
+      "fr": "la pergola",
+      "fa": "پرگولا (آلاچیق)",
+      "emoji": "🏛️",
+      "difficulty": 4,
+      "ex": "La pergola couverte de glycine offre un ombrage naturel.",
+      "ex_fa": "پرگولای پوشیده از ویستریا سایه‌ای طبیعی ایجاد می‌کند."
+    },
+    {
+      "fr": "le paillis",
+      "fa": "مالچ",
+      "emoji": "🪵",
+      "difficulty": 5,
+      "ex": "Le paillis protège le sol et limite l'évaporation de l'eau.",
+      "ex_fa": "مالچ از خاک محافظت و تبخیر آب را محدود می‌کند."
+    },
+    {
+      "fr": "le labyrinthe",
+      "fa": "هزارتو",
+      "emoji": "🌀",
+      "difficulty": 4,
+      "ex": "Le labyrinthe de buis est une attraction célèbre du château.",
+      "ex_fa": "هزارتوی شمشاد یکی از جاذبه‌های معروف قلعه است."
+    },
+    {
+      "fr": "la tonnelle",
+      "fa": "آلاچیق، داربست",
+      "emoji": "⛺",
+      "difficulty": 4,
+      "ex": "La tonnelle accueille les repas d'été sous les feuillages.",
+      "ex_fa": "آلاچیق پذیرای وعده‌های تابستانی زیر شاخ و برگ است."
+    },
+    {
+      "fr": "le massif",
+      "fa": "توده گل",
+      "emoji": "🌺",
+      "difficulty": 4,
+      "ex": "Le massif de tulipes colore le jardin au printemps.",
+      "ex_fa": "توده گل‌های لاله در بهار باغ را رنگ‌آمیزی می‌کند."
+    },
+    {
+      "fr": "la bouture",
+      "fa": "قلمه",
+      "emoji": "🌿",
+      "difficulty": 4,
+      "ex": "La bouture permet de multiplier facilement certaines plantes.",
+      "ex_fa": "قلمه امکان تکثیر آسان برخی گیاهان را می‌دهد."
+    },
+    {
+      "fr": "le paysagiste",
+      "fa": "طراح منظره",
+      "emoji": "🎨",
+      "difficulty": 4,
+      "ex": "Le paysagiste conçoit des espaces extérieurs harmonieux.",
+      "ex_fa": "طراح منظره فضاهای بیرونی هماهنگ طراحی می‌کند."
+    },
+    {
+      "fr": "la rocaille",
+      "fa": "باغ سنگی",
+      "emoji": "🪨",
+      "difficulty": 5,
+      "ex": "La rocaille accueille les plantes alpines qui aiment les sols secs.",
+      "ex_fa": "باغ سنگی میزبان گیاهان آلپی است که خاک‌های خشک را دوست دارند."
+    },
+    {
+      "fr": "l'arrosage",
+      "fa": "آبیاری",
+      "emoji": "💧",
+      "difficulty": 3,
+      "ex": "L'arrosage automatique permet d'économiser l'eau.",
+      "ex_fa": "آبیاری خودکار امکان صرفه‌جویی در آب را می‌دهد."
+    },
+    {
+      "fr": "la pelouse",
+      "fa": "چمنزار",
+      "emoji": "🌱",
+      "difficulty": 3,
+      "ex": "La pelouse anglaise nécessite des soins constants.",
+      "ex_fa": "چمنزار انگلیسی به مراقبت دائمی نیاز دارد."
+    },
+    {
+      "fr": "le parterre",
+      "fa": "باغچه گل",
+      "emoji": "🌷",
+      "difficulty": 4,
+      "ex": "Le parterre à la française est dessiné avec une symétrie parfaite.",
+      "ex_fa": "باغچه گل فرانسوی با تقارنی کامل طراحی شده است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le jardin oublié",
+      "text": "Mary Lennox est une petite fille orpheline qui arrive dans le manoir de son oncle, au cœur de la lande anglaise. Elle découvre qu'un {{BLANK_1}} mystérieux est fermé à clé depuis dix ans. Sa tante, morte en y tombant, y cultivait autrefois des roses magnifiques. Intriguée, Mary trouve la clé rouillée et pénètre dans ce lieu abandonné. Le {{BLANK_8}} de fleurs sauvages a envahi les allées. La {{BLANK_6}} de buis est devenue incontrôlable. Une {{BLANK_4}} effondrée gît sous le lierre grimpant. La {{BLANK_12}} n'a pas été faite depuis des années. Avec l'aide de Dickon, un jeune garçon du village passionné de {{BLANK_10}}, ils redonnent vie à ce lieu oublié. Ils apprennent l'art de la {{BLANK_2}} pour redonner forme aux arbres. Ils préparent du {{BLANK_3}} avec les feuilles mortes. Ils déposent du {{BLANK_5}} au pied des plantes pour conserver l'humidité. Ils multiplient les rosiers par {{BLANK_9}}. Chaque {{BLANK_11}} soigneux fait reverdir les plantes assoiffées. Le {{BLANK_14}} de roses renaît dans une explosion de couleurs. Ils créent une {{BLANK_7}} ombragée pour se reposer. Mary découvre que ce jardin secret possède un pouvoir magique : celui de guérir les cœurs brisés et de faire renaître la joie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "jardin",
+          "options": [
+            "jardin",
+            "taille",
+            "compost",
+            "pergola"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "taille",
+          "options": [
+            "taille",
+            "paillis",
+            "labyrinthe",
+            "tonnelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "compost",
+          "options": [
+            "compost",
+            "massif",
+            "bouture",
+            "paysagiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "pergola",
+          "options": [
+            "pergola",
+            "rocaille",
+            "arrosage",
+            "pelouse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "paillis",
+          "options": [
+            "paillis",
+            "parterre",
+            "jardinage",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "labyrinthe",
+          "options": [
+            "labyrinthe",
+            "compost",
+            "pergola",
+            "paillis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tonnelle",
+          "options": [
+            "tonnelle",
+            "massif",
+            "bouture",
+            "paysagiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "massif",
+          "options": [
+            "massif",
+            "rocaille",
+            "arrosage",
+            "pelouse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "bouture",
+          "options": [
+            "bouture",
+            "parterre",
+            "jardinage",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "paysagisme",
+          "options": [
+            "paysagisme",
+            "compost",
+            "pergola",
+            "paillis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "arrosage",
+          "options": [
+            "arrosage",
+            "labyrinthe",
+            "tonnelle",
+            "massif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "pelouse",
+          "options": [
+            "pelouse",
+            "bouture",
+            "paysagiste",
+            "rocaille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "rocaille",
+          "options": [
+            "rocaille",
+            "arrosage",
+            "pelouse",
+            "parterre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "parterre",
+          "options": [
+            "parterre",
+            "jardinage",
+            "taille",
+            "compost"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La résurrection des roses",
+      "inspiration": "Le Jardin secret (The Secret Garden - Agnieszka Holland, 1993)",
+      "text": "À peine Mary eut-elle poussé la porte rouillée que le parfum des roses oubliées lui monta à la tête comme un vin ancien. Ce {{BLANK_1}} clos de murs, prisonnier du silence depuis la mort tragique de sa tante, était un royaume endormi attendant son prince. Cette fillette orpheline, au cœur aussi sec que la lande anglaise, découvrait que la vie pouvait renaître là où on ne l'attendait plus. Le {{BLANK_8}} de fleurs sauvages avait envahi les allées comme une armée verte, et le {{BLANK_6}} de buis, autrefois géométrique, était devenu une jungle impénétrable. Une {{BLANK_4}} effondrée reposait sous le lierre comme une géante vaincue, et la {{BLANK_12}}, privée de tonte depuis une décennie, ressemblait à une prairie primitive. Mais Mary sentait battre dans ce chaos le cœur secret de la terre. Avec Dickon, ce jeune faune qui parlait aux oiseaux et comprenait le langage des racines, ils entreprirent la résurrection du lieu. Ils apprirent l'art délicat de la {{BLANK_2}}, coupant le bois mort pour laisser passer la lumière de l'espoir. Ils fabriquèrent du {{BLANK_3}} avec les feuilles tombées, transformant la mort en nourriture pour la vie. Ils déposèrent un {{BLANK_5}} protecteur au pied des plantes, comme une couverture maternelle. Par {{BLANK_9}}, ils multiplièrent les rosiers centenaires, chaque tige devenant une promesse de floraison. Chaque {{BLANK_11}} patient faisait reverdir les tiges assoiffées, et la {{BLANK_7}} qu'ils reconstruisirent offrit un refuge pour les rêves. Le {{BLANK_14}} de roses explosa soudain dans une symphonie de couleurs, tandis que la {{BLANK_13}} accueillait les plantes alpines venues des montagnes lointaines. Dickon, ce {{BLANK_10}} inné qui dessinait la beauté avec ses mains nues, avait révélé à Mary le plus grand des secrets : que soigner un jardin, c'était se soigner soi-même, que faire renaître une fleur, c'était renaître avec elle.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "jardin",
+          "options": [
+            "jardin",
+            "taille",
+            "compost",
+            "pergola"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "taille",
+          "options": [
+            "taille",
+            "paillis",
+            "labyrinthe",
+            "tonnelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "compost",
+          "options": [
+            "compost",
+            "massif",
+            "bouture",
+            "paysagiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "pergola",
+          "options": [
+            "pergola",
+            "rocaille",
+            "arrosage",
+            "pelouse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "paillis",
+          "options": [
+            "paillis",
+            "parterre",
+            "jardinage",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "labyrinthe",
+          "options": [
+            "labyrinthe",
+            "compost",
+            "pergola",
+            "paillis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tonnelle",
+          "options": [
+            "tonnelle",
+            "massif",
+            "bouture",
+            "paysagiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "massif",
+          "options": [
+            "massif",
+            "rocaille",
+            "arrosage",
+            "pelouse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "bouture",
+          "options": [
+            "bouture",
+            "parterre",
+            "jardinage",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "paysagiste",
+          "options": [
+            "paysagiste",
+            "compost",
+            "pergola",
+            "paillis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "arrosage",
+          "options": [
+            "arrosage",
+            "labyrinthe",
+            "tonnelle",
+            "massif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "pelouse",
+          "options": [
+            "pelouse",
+            "bouture",
+            "paysagiste",
+            "rocaille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "rocaille",
+          "options": [
+            "rocaille",
+            "arrosage",
+            "pelouse",
+            "parterre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "parterre",
+          "options": [
+            "parterre",
+            "jardinage",
+            "taille",
+            "compost"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Jardinage et paysagisme",
+    "title_fa": "آزمون : باغبانی و طراحی منظره",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'activité qui consiste à cultiver et entretenir un jardin est le ____.",
+        "options": [
+          "jardinage",
+          "taille",
+          "compost",
+          "pergola"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعالیت کشت و نگهداری باغ = jardinage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de couper les branches inutiles d'une plante pour favoriser sa croissance est la ____.",
+        "options": [
+          "taille",
+          "paillis",
+          "labyrinthe",
+          "tonnelle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قطع شاخه‌های اضافی = taille."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mélange de débris végétaux décomposés qui sert d'engrais naturel est le ____.",
+        "options": [
+          "compost",
+          "massif",
+          "bouture",
+          "paysagiste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کود طبیعی از بقایای گیاهی = compost."
+      },
+      {
+        "type": "mcq",
+        "question": "La structure légère en bois ou en métal sur laquelle grimpent les plantes est la ____.",
+        "options": [
+          "pergola",
+          "rocaille",
+          "arrosage",
+          "pelouse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازه چوبی برای گیاهان بالارونده = pergola."
+      },
+      {
+        "type": "mcq",
+        "question": "La couche de matériau organique déposée sur le sol pour protéger les racines est le ____.",
+        "options": [
+          "paillis",
+          "parterre",
+          "jardinage",
+          "taille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لایه محافظ روی خاک = paillis."
+      },
+      {
+        "type": "mcq",
+        "question": "Le jardin constitué de haies taillées formant un dédale complexe est le ____.",
+        "options": [
+          "labyrinthe",
+          "compost",
+          "pergola",
+          "paillis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باغ پرپیچ و خم با دیواره‌های گیاهی = labyrinthe."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit abri de verdure où l'on peut s'asseoir à l'ombre est la ____.",
+        "options": [
+          "tonnelle",
+          "massif",
+          "bouture",
+          "paysagiste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آلاچیق سایه‌دار = tonnelle."
+      },
+      {
+        "type": "mcq",
+        "question": "Le groupe de fleurs plantées ensemble pour former un ensemble décoratif est le ____.",
+        "options": [
+          "massif",
+          "rocaille",
+          "arrosage",
+          "pelouse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توده گل‌های تزئینی = massif."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fragment de plante prélevé pour être replanté et donner un nouveau végétal est la ____.",
+        "options": [
+          "bouture",
+          "parterre",
+          "jardinage",
+          "taille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکه گیاه برای تکثیر = bouture."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel qui conçoit et aménage les espaces verts est le ____.",
+        "options": [
+          "paysagiste",
+          "compost",
+          "pergola",
+          "paillis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طراح فضای سبز = paysagiste."
+      },
+      {
+        "type": "mcq",
+        "question": "Le jardin miniature composé de pierres et de petites plantes alpines est la ____.",
+        "options": [
+          "rocaille",
+          "arrosage",
+          "pelouse",
+          "parterre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باغ سنگی آلپی = rocaille."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action d'apporter de l'eau aux plantes est l'____.",
+        "options": [
+          "arrosage",
+          "labyrinthe",
+          "tonnelle",
+          "massif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رساندن آب به گیاهان = arrosage."
+      },
+      {
+        "type": "mcq",
+        "question": "La surface d'herbe tondue régulièrement dans un jardin est la ____.",
+        "options": [
+          "pelouse",
+          "bouture",
+          "paysagiste",
+          "rocaille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطح چمن مرتب = pelouse."
+      },
+      {
+        "type": "mcq",
+        "question": "La plate-bande décorative où les fleurs sont disposées selon un motif géométrique est le ____.",
+        "options": [
+          "parterre",
+          "jardinage",
+          "taille",
+          "compost"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باغچه گل با الگوی هندسی = parterre."
+      },
+      {
+        "type": "binary",
+        "question": "Le compost est un engrais chimique fabriqué en laboratoire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کمپوست یک کود طبیعی از بقایای گیاهی تجزیه‌شده است."
+      },
+      {
+        "type": "binary",
+        "question": "La bouture permet de reproduire une plante à partir d'un fragment de tige ou de feuille.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. قلمه روشی برای تکثیر گیاه از تکه ساقه یا برگ است."
+      },
+      {
+        "type": "binary",
+        "question": "Le paillis est une couche protectrice qui limite l'évaporation et la pousse des mauvaises herbes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. مالچ تبخیر را کم و رشد علف هرز را محدود می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le paysagiste est un spécialiste qui soigne les maladies des arbres fruitiers.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. طراح منظره (paysagiste) فضاهای سبز را طراحی می‌کند، نه درمان بیماری‌ها."
+      },
+      {
+        "type": "binary",
+        "question": "Une rocaille est un jardin ornemental qui associe pierres et plantes de montagne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. باغ سنگی ترکیبی از سنگ و گیاهان آلپی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le labyrinthe de jardin est constitué de haies taillées formant un dédale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هزارتوی باغ از دیواره‌های شمشادی کوتاه تشکیل شده است."
+      }
+    ]
+  }
+}
