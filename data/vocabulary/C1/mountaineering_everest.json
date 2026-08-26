@@ -1,0 +1,680 @@
+{
+  "id": "mountaineering_everest",
+  "level": "C1",
+  "theme": "Alpinisme, haute montagne et expéditions",
+  "theme_fa": "کوهنوردی، کوهستان بلند و اکسپدیشن‌ها",
+  "icon": "⛰️",
+  "inspiration": "Everest (Baltasar Kormákur, 2015)",
+  "words": [
+    {
+      "fr": "l'alpiniste",
+      "fa": "کوهنورد",
+      "emoji": "🧗",
+      "difficulty": 4,
+      "ex": "L'alpiniste chevronné a gravi les plus hauts sommets du monde.",
+      "ex_fa": "کوهنورد باتجربه بلندترین قلل جهان را فتح کرده است."
+    },
+    {
+      "fr": "l'ascension",
+      "fa": "صعود",
+      "emoji": "📈",
+      "difficulty": 4,
+      "ex": "L'ascension de l'Everest exige une préparation de plusieurs mois.",
+      "ex_fa": "صعود به اورست به ماه‌ها آمادگی نیاز دارد."
+    },
+    {
+      "fr": "le sommet",
+      "fa": "قله",
+      "emoji": "⛰️",
+      "difficulty": 3,
+      "ex": "Le sommet culmine à huit mille huit cent quarante-huit mètres.",
+      "ex_fa": "قله در ارتفاع هشت هزار و هشتصد و چهل و هشت متری است."
+    },
+    {
+      "fr": "le piolet",
+      "fa": "یخ‌شکن (کلنگ)",
+      "emoji": "⛏️",
+      "difficulty": 4,
+      "ex": "L'alpiniste enfonce son piolet dans la glace pour assurer sa prise.",
+      "ex_fa": "کوهنورد کلنگ خود را در یخ فرو می‌کند تا تکیه‌گاه بسازد."
+    },
+    {
+      "fr": "le crampon",
+      "fa": "یخ‌شکن پا (کرامپون)",
+      "emoji": "🥾",
+      "difficulty": 5,
+      "ex": "Les crampons mordent la glace pour éviter toute glissade.",
+      "ex_fa": "کرامپون‌ها یخ را می‌گزند تا از لیز خوردن جلوگیری کنند."
+    },
+    {
+      "fr": "la cordée",
+      "fa": "گروه طناب‌بسته",
+      "emoji": "🪢",
+      "difficulty": 5,
+      "ex": "La cordée progresse ensemble, unie par la corde de sécurité.",
+      "ex_fa": "گروه طناب‌بسته با هم و توسط طناب ایمنی به هم متصل پیش می‌روند."
+    },
+    {
+      "fr": "le bivouac",
+      "fa": "بیواک (پناهگاه موقت)",
+      "emoji": "⛺",
+      "difficulty": 5,
+      "ex": "Le bivouac improvisé protège les grimpeurs du vent glacial.",
+      "ex_fa": "بیواک موقت، کوهنوردان را از باد یخبندان محافظت می‌کند."
+    },
+    {
+      "fr": "le sherpa",
+      "fa": "شرپا (راهنمای نپالی)",
+      "emoji": "🙏",
+      "difficulty": 4,
+      "ex": "Le sherpa transporte le matériel lourd jusqu'aux camps d'altitude.",
+      "ex_fa": "شرپا تجهیزات سنگین را تا کمپ‌های مرتفع حمل می‌کند."
+    },
+    {
+      "fr": "l'altitude",
+      "fa": "ارتفاع",
+      "emoji": "📏",
+      "difficulty": 3,
+      "ex": "Au-delà de huit mille mètres, on entre dans la zone de la mort.",
+      "ex_fa": "بالاتر از هشت هزار متر، وارد منطقه مرگ می‌شویم."
+    },
+    {
+      "fr": "le vertige",
+      "fa": "سرگیجه ارتفاع",
+      "emoji": "😵",
+      "difficulty": 4,
+      "ex": "Le vertige peut paralyser même les montagnards expérimentés.",
+      "ex_fa": "سرگیجه ارتفاع حتی کوهنوردان باتجربه را فلج می‌کند."
+    },
+    {
+      "fr": "l'avalanche",
+      "fa": "بهمن",
+      "emoji": "🏔️",
+      "difficulty": 4,
+      "ex": "L'avalanche emporte tout sur son passage dans un grondement terrifiant.",
+      "ex_fa": "بهمن با غرشی وحشتناک همه‌چیز را در مسیرش با خود می‌برد."
+    },
+    {
+      "fr": "le glacier",
+      "fa": "یخچال طبیعی",
+      "emoji": "🧊",
+      "difficulty": 4,
+      "ex": "Le glacier Khumbu est une rivière de glace en mouvement constant.",
+      "ex_fa": "یخچال خومبو رودخانه‌ای از یخ با حرکت مداوم است."
+    },
+    {
+      "fr": "l'oxygène",
+      "fa": "اکسیژن",
+      "emoji": "💨",
+      "difficulty": 3,
+      "ex": "Les bouteilles d'oxygène sont vitales au-dessus de sept mille mètres.",
+      "ex_fa": "کپسول‌های اکسیژن در ارتفاع بالاتر از هفت هزار متر حیاتی هستند."
+    },
+    {
+      "fr": "l'expédition",
+      "fa": "اکسپدیشن (هیئت کوهنوردی)",
+      "emoji": "🗺️",
+      "difficulty": 4,
+      "ex": "L'expédition commerciale accueille des grimpeurs amateurs fortunés.",
+      "ex_fa": "اکسپدیشن تجاری، کوهنوردان آماتور ثروتمند را می‌پذیرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La montagne assassine",
+      "text": "Rob Hall dirige une {{BLANK_14}} commerciale sur l'Everest en 1996. Il accompagne plusieurs clients amateurs dans leur {{BLANK_2}} vers le toit du monde. Chaque {{BLANK_1}} est équipé de {{BLANK_5}}s pour marcher sur la glace et d'un {{BLANK_4}} pour s'assurer. L'équipe s'élève progressivement en {{BLANK_9}}, passant par plusieurs camps. Le {{BLANK_8}} népalais prépare la route et fixe les cordes dans le dangereux {{BLANK_12}} de Khumbu. La {{BLANK_6}} progresse lentement, chacun attaché aux autres par une corde solide. Quand la tempête approche, ils montent un {{BLANK_7}} précaire sur une plateforme rocheuse. L'{{BLANK_13}} en bouteille devient indispensable au-dessus de huit mille mètres. Enfin, ils atteignent le {{BLANK_3}} dans un vent violent. Mais la descente se transforme en cauchemar. Une énorme {{BLANK_11}} se déclenche sur les pentes. Plusieurs grimpeurs sont pris de {{BLANK_10}} paralysant. Pris dans le blizzard, ils doivent affronter la montagne qui ne pardonne jamais.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "alpiniste",
+          "options": [
+            "alpiniste",
+            "sherpa",
+            "sommet",
+            "vertige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ascension",
+          "options": [
+            "ascension",
+            "expédition",
+            "avalanche",
+            "bivouac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "sommet",
+          "options": [
+            "sommet",
+            "glacier",
+            "piolet",
+            "altitude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "piolet",
+          "options": [
+            "piolet",
+            "crampon",
+            "oxygène",
+            "cordée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "crampons",
+          "options": [
+            "crampons",
+            "piolets",
+            "bivouacs",
+            "sherpas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "cordée",
+          "options": [
+            "cordée",
+            "expédition",
+            "avalanche",
+            "altitude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "bivouac",
+          "options": [
+            "bivouac",
+            "sommet",
+            "vertige",
+            "glacier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "sherpa",
+          "options": [
+            "sherpa",
+            "alpiniste",
+            "piolet",
+            "crampon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "altitude",
+          "options": [
+            "altitude",
+            "oxygène",
+            "sommet",
+            "avalanche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "vertige",
+          "options": [
+            "vertige",
+            "bivouac",
+            "expédition",
+            "crampon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "avalanche",
+          "options": [
+            "avalanche",
+            "cordée",
+            "sherpa",
+            "oxygène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "glacier",
+          "options": [
+            "glacier",
+            "sommet",
+            "vertige",
+            "piolet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "oxygène",
+          "options": [
+            "oxygène",
+            "bivouac",
+            "ascension",
+            "alpiniste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "expédition",
+          "options": [
+            "expédition",
+            "cordée",
+            "avalanche",
+            "altitude"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La zone de la mort",
+      "inspiration": "Everest (Baltasar Kormákur, 2015)",
+      "text": "À peine Rob Hall eut-il franchi le balcon rocheux à huit mille quatre cents mètres que la montagne montra son vrai visage, celui d'une tueuse patiente et impassible. Ce guide chevronné, qui avait conduit des dizaines d'{{BLANK_1}}s au faîte du monde, savait que l'{{BLANK_2}} finale exigeait plus que de la technique, elle exigeait l'âme. Derrière lui, sa {{BLANK_6}} s'étirait comme un serpent fragile, chaque grimpeur attaché au suivant par le fil ténu d'une corde et d'une confiance mutuelle. Les {{BLANK_5}}s mordaient la glace bleutée, les {{BLANK_4}}s s'enfonçaient dans la paroi avec un son sec, tandis que plus bas, le valeureux {{BLANK_8}} avait tracé la route à travers le {{BLANK_12}} traître de Khumbu, cette rivière de glace qui craquait comme un organisme vivant. Mais l'{{BLANK_9}} n'était pas une simple mesure, c'était un prédateur qui suçait la conscience et les forces. Au-delà de huit mille mètres, dans la terrifiante zone de la mort, les bouteilles d'{{BLANK_13}} devenaient l'unique cordon ombilical avec la vie. Quand ils atteignirent enfin le {{BLANK_3}}, ce point dérisoire où la Terre touche le ciel, il n'y eut pas de joie, seulement un silence épuisé. Puis la tempête s'abattit sans prévenir. Le {{BLANK_7}} improvisé fut déchiqueté par les vents, et dans le blanc total, certains sentirent le {{BLANK_10}} envahir leurs esprits embrumés. L'{{BLANK_14}} commerciale se transforma en tragédie quand une {{BLANK_11}} monstrueuse balaya les pentes. La montagne avait parlé, et ceux qui avaient cru pouvoir la dompter comprirent, dans leur dernier souffle gelé, qu'on ne conquiert jamais un sommet, on survit seulement à son indifférence.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "alpinistes",
+          "options": [
+            "alpinistes",
+            "sherpas",
+            "sommets",
+            "vertiges"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ascension",
+          "options": [
+            "ascension",
+            "expédition",
+            "avalanche",
+            "bivouac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "sommet",
+          "options": [
+            "sommet",
+            "glacier",
+            "piolet",
+            "altitude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "piolets",
+          "options": [
+            "piolets",
+            "crampons",
+            "oxygènes",
+            "cordées"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "crampons",
+          "options": [
+            "crampons",
+            "piolets",
+            "bivouacs",
+            "sherpas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "cordée",
+          "options": [
+            "cordée",
+            "expédition",
+            "avalanche",
+            "altitude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "bivouac",
+          "options": [
+            "bivouac",
+            "sommet",
+            "vertige",
+            "glacier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "sherpa",
+          "options": [
+            "sherpa",
+            "alpiniste",
+            "piolet",
+            "crampon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "altitude",
+          "options": [
+            "altitude",
+            "oxygène",
+            "sommet",
+            "avalanche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "vertige",
+          "options": [
+            "vertige",
+            "bivouac",
+            "expédition",
+            "crampon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "avalanche",
+          "options": [
+            "avalanche",
+            "cordée",
+            "sherpa",
+            "oxygène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "glacier",
+          "options": [
+            "glacier",
+            "sommet",
+            "vertige",
+            "piolet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "oxygène",
+          "options": [
+            "oxygène",
+            "bivouac",
+            "ascension",
+            "alpiniste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "expédition",
+          "options": [
+            "expédition",
+            "cordée",
+            "avalanche",
+            "altitude"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Alpinisme et haute montagne",
+    "title_fa": "آزمون : کوهنوردی و کوهستان بلند",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La personne qui pratique l'escalade en haute montagne et la conquête des sommets est l'____.",
+        "options": [
+          "alpiniste",
+          "sherpa",
+          "sommet",
+          "vertige"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص کوهنورد = alpiniste."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de monter vers le sommet d'une montagne, avec effort et technique, est l'____.",
+        "options": [
+          "ascension",
+          "expédition",
+          "avalanche",
+          "bivouac"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل بالا رفتن از کوه = ascension."
+      },
+      {
+        "type": "mcq",
+        "question": "Le point culminant d'une montagne, son plus haut sommet, est le ____.",
+        "options": [
+          "sommet",
+          "glacier",
+          "piolet",
+          "altitude"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بلندترین نقطه کوه = sommet."
+      },
+      {
+        "type": "mcq",
+        "question": "L'outil terminé par une pointe et une lame, utilisé pour tailler des marches dans la glace, est le ____.",
+        "options": [
+          "piolet",
+          "crampon",
+          "oxygène",
+          "cordée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار یخ‌شکن دستی = piolet."
+      },
+      {
+        "type": "mcq",
+        "question": "L'armature métallique à pointes qui se fixe sous les chaussures pour marcher sur la glace est le ____.",
+        "options": [
+          "crampon",
+          "piolet",
+          "bivouac",
+          "sherpa"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تجهیزات فلزی زیر کفش = crampon."
+      },
+      {
+        "type": "mcq",
+        "question": "Le groupe d'alpinistes liés entre eux par une corde de sécurité pour progresser ensemble est la ____.",
+        "options": [
+          "cordée",
+          "expédition",
+          "avalanche",
+          "altitude"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گروه کوهنوردان طناب‌بسته = cordée."
+      },
+      {
+        "type": "mcq",
+        "question": "Le campement provisoire et léger installé en altitude pour passer la nuit sans tente confortable est le ____.",
+        "options": [
+          "bivouac",
+          "sommet",
+          "vertige",
+          "glacier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پناهگاه موقت در کوه = bivouac."
+      },
+      {
+        "type": "mcq",
+        "question": "Le guide de haute montagne népalais, appartenant à une ethnie spécialisée dans l'accompagnement des expéditions, est le ____.",
+        "options": [
+          "sherpa",
+          "alpiniste",
+          "piolet",
+          "crampon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "راهنمای نپالی کوهستان = sherpa."
+      },
+      {
+        "type": "mcq",
+        "question": "La hauteur d'un lieu par rapport au niveau de la mer, qui détermine les conditions climatiques et la raréfaction de l'air, est l'____.",
+        "options": [
+          "altitude",
+          "oxygène",
+          "sommet",
+          "avalanche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارتفاع از سطح دریا = altitude."
+      },
+      {
+        "type": "mcq",
+        "question": "La sensation d'étourdissement et de perte d'équilibre causée par la hauteur ou le manque d'oxygène est le ____.",
+        "options": [
+          "vertige",
+          "bivouac",
+          "expédition",
+          "crampon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "احساس سرگیجه در ارتفاع = vertige."
+      },
+      {
+        "type": "mcq",
+        "question": "La masse de neige et de glace qui se détache violemment d'une pente et dévale la montagne est l'____.",
+        "options": [
+          "avalanche",
+          "cordée",
+          "sherpa",
+          "oxygène"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ریزش ناگهانی برف و یخ = avalanche."
+      },
+      {
+        "type": "mcq",
+        "question": "L'énorme masse de glace formée par l'accumulation et le tassement de la neige, qui s'écoule lentement, est le ____.",
+        "options": [
+          "glacier",
+          "sommet",
+          "vertige",
+          "piolet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توده عظیم یخ در حرکت = glacier."
+      },
+      {
+        "type": "mcq",
+        "question": "Le gaz vital indispensable à la respiration, dont la raréfaction en altitude menace la vie des grimpeurs, est l'____.",
+        "options": [
+          "oxygène",
+          "bivouac",
+          "ascension",
+          "alpiniste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گاز حیاتی برای تنفس = oxygène."
+      },
+      {
+        "type": "mcq",
+        "question": "Le voyage organisé en haute montagne, avec une équipe complète et des objectifs précis, est l'____.",
+        "options": [
+          "expédition",
+          "cordée",
+          "avalanche",
+          "altitude"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سفر سازمان‌یافته کوهنوردی = expédition."
+      },
+      {
+        "type": "binary",
+        "question": "L'alpiniste et le sherpa désignent exactement le même rôle dans une expédition himalayenne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. alpiniste کوهنورد است، sherpa راهنمای محلی نپالی که به تیم کمک می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Les crampons sont des pointes métalliques fixées sous les chaussures pour adhérer à la glace.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کرامپون‌ها میخ‌های فلزی برای چسبیدن به یخ هستند."
+      },
+      {
+        "type": "binary",
+        "question": "Le bivouac est un hôtel de luxe situé au pied de la montagne pour accueillir les alpinistes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. بیواک پناهگاه موقت و ساده است، نه هتل لوکس."
+      },
+      {
+        "type": "binary",
+        "question": "La zone de la mort désigne l'altitude au-dessus de 8000 mètres où le corps humain ne peut plus s'acclimater.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. منطقه مرگ بالای ۸۰۰۰ متر است که بدن نمی‌تواند خود را تطبیق دهد."
+      },
+      {
+        "type": "binary",
+        "question": "Une cordée est un groupe d'alpinistes attachés par une corde pour progresser ensemble en sécurité.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کورده (cordée) گروهی از کوهنوردان است که با طناب به هم وصل‌اند."
+      },
+      {
+        "type": "binary",
+        "question": "L'avalanche est un phénomène météorologique qui apporte de fortes chutes de neige en altitude.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. بهمن (avalanche) ریزش ناگهانی توده برف است، نه خود بارش برف."
+      }
+    ]
+  }
+}
