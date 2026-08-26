@@ -1,0 +1,682 @@
+{
+  "id": "journalism_press",
+  "level": "C1",
+  "theme": "Journalisme, presse et médias écrits",
+  "theme_fa": "روزنامه‌نگاری، مطبوعات و رسانه‌های نوشتاری",
+  "icon": "📰",
+  "inspiration": "Spotlight (Tom McCarthy, 2015)",
+  "words": [
+    {
+      "fr": "le journalisme",
+      "fa": "روزنامه‌نگاری",
+      "emoji": "📰",
+      "difficulty": 3,
+      "ex": "Le journalisme d'investigation est essentiel à la démocratie.",
+      "ex_fa": "روزنامه‌نگاری تحقیقی برای دموکراسی ضروری است."
+    },
+    {
+      "fr": "la rédaction",
+      "fa": "تحریریه",
+      "emoji": "✍️",
+      "difficulty": 4,
+      "ex": "La rédaction du journal se réunit chaque matin à 9 heures.",
+      "ex_fa": "تحریریه روزنامه هر روز صبح ساعت ۹ جلسه دارد."
+    },
+    {
+      "fr": "le scoop",
+      "fa": "خبر فوری اختصاصی",
+      "emoji": "🚨",
+      "difficulty": 4,
+      "ex": "Ce journaliste a décroché le scoop de l'année.",
+      "ex_fa": "این خبرنگار خبر فوری سال را به دست آورد."
+    },
+    {
+      "fr": "l'éditorial",
+      "fa": "سرمقاله",
+      "emoji": "📝",
+      "difficulty": 4,
+      "ex": "L'éditorial exprime la position officielle du journal.",
+      "ex_fa": "سرمقاله موضع رسمی روزنامه را بیان می‌کند."
+    },
+    {
+      "fr": "le chroniqueur",
+      "fa": "ستون‌نویس",
+      "emoji": "🗞️",
+      "difficulty": 5,
+      "ex": "Le chroniqueur politique commente l'actualité chaque semaine.",
+      "ex_fa": "ستون‌نویس سیاسی هر هفته اخبار را تحلیل می‌کند."
+    },
+    {
+      "fr": "l'investigation",
+      "fa": "تحقیق (روزنامه‌نگاری)",
+      "emoji": "🔍",
+      "difficulty": 4,
+      "ex": "L'investigation a duré deux ans avant publication.",
+      "ex_fa": "تحقیق دو سال قبل از انتشار طول کشید."
+    },
+    {
+      "fr": "la source",
+      "fa": "منبع خبری",
+      "emoji": "🤫",
+      "difficulty": 4,
+      "ex": "Le journaliste protège l'anonymat de sa source.",
+      "ex_fa": "خبرنگار از هویت منبعش محافظت می‌کند."
+    },
+    {
+      "fr": "la une",
+      "fa": "صفحه اول روزنامه",
+      "emoji": "🗞️",
+      "difficulty": 4,
+      "ex": "Le scandale a fait la une de tous les quotidiens.",
+      "ex_fa": "رسوایی در صفحه اول تمام روزنامه‌ها قرار گرفت."
+    },
+    {
+      "fr": "le tirage",
+      "fa": "تیراژ",
+      "emoji": "📊",
+      "difficulty": 4,
+      "ex": "Le tirage de ce magazine dépasse le million d'exemplaires.",
+      "ex_fa": "تیراژ این مجله از یک میلیون نسخه فراتر می‌رود."
+    },
+    {
+      "fr": "la censure",
+      "fa": "سانسور",
+      "emoji": "✂️",
+      "difficulty": 4,
+      "ex": "La censure gouvernementale étouffe la liberté de la presse.",
+      "ex_fa": "سانسور دولتی آزادی مطبوعات را خفه می‌کند."
+    },
+    {
+      "fr": "le reportage",
+      "fa": "گزارش",
+      "emoji": "🎥",
+      "difficulty": 3,
+      "ex": "Son reportage sur la guerre lui a valu un prix Pulitzer.",
+      "ex_fa": "گزارش او درباره جنگ برایش جایزه پولیتزر به ارمغان آورد."
+    },
+    {
+      "fr": "l'interview",
+      "fa": "مصاحبه",
+      "emoji": "🎤",
+      "difficulty": 3,
+      "ex": "L'interview exclusive du président a duré deux heures.",
+      "ex_fa": "مصاحبه اختصاصی با رئیس‌جمهور دو ساعت طول کشید."
+    },
+    {
+      "fr": "le paparazzi",
+      "fa": "عکاس مزاحم ستاره‌ها",
+      "emoji": "📸",
+      "difficulty": 4,
+      "ex": "Les paparazzi traquent les célébrités jour et nuit.",
+      "ex_fa": "پاپاراتزی‌ها شب و روز سلبریتی‌ها را تعقیب می‌کنند."
+    },
+    {
+      "fr": "la diffamation",
+      "fa": "افترا، هتک حیثیت",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "Le journal a été poursuivi pour diffamation.",
+      "ex_fa": "روزنامه به اتهام افترا تحت پیگرد قرار گرفت."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'enquête du Boston Globe",
+      "title_fa": "تحقیق بوستون گلوب",
+      "text": "En 2001, Marty Baron arrive à la {{BLANK_2}} du Boston Globe. Il décide de lancer une {{BLANK_6}} sur des prêtres pédophiles. L'équipe Spotlight se met au travail. Leur {{BLANK_1}} repose sur la vérification rigoureuse des faits. Ils trouvent une {{BLANK_7}} anonyme qui leur donne des documents. Pendant des mois, ils réalisent des dizaines d'{{BLANK_12}} avec les victimes. Chaque {{BLANK_11}} sur le terrain recueille des témoignages bouleversants. Le {{BLANK_5}} politique publie une analyse contextuelle. Le rédacteur en chef écrit l'{{BLANK_4}} qui annonce la publication. La direction s'inquiète de la {{BLANK_10}} possible de l'Église. Enfin, l'article fait la {{BLANK_8}} du journal. Le {{BLANK_9}} atteint des records ce jour-là. C'est un véritable {{BLANK_3}} qui ébranle toute l'Amérique. Un {{BLANK_13}} tente de prendre des photos des prêtres accusés. Le journal évite toute {{BLANK_14}} en publiant uniquement des faits vérifiés. Le prix Pulitzer récompense ce {{BLANK_1}} d'exception.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "journalisme",
+          "options": [
+            "journalisme",
+            "reportage",
+            "interview",
+            "scoop"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "rédaction",
+          "options": [
+            "rédaction",
+            "une",
+            "censure",
+            "diffamation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "scoop",
+          "options": [
+            "scoop",
+            "éditorial",
+            "tirage",
+            "chroniqueur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "éditorial",
+          "options": [
+            "éditorial",
+            "interview",
+            "source",
+            "reportage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "chroniqueur",
+          "options": [
+            "chroniqueur",
+            "paparazzi",
+            "tirage",
+            "scoop"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "investigation",
+          "options": [
+            "investigation",
+            "diffamation",
+            "censure",
+            "une"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "source",
+          "options": [
+            "source",
+            "rédaction",
+            "éditorial",
+            "scoop"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "une",
+          "options": [
+            "une",
+            "investigation",
+            "chroniqueur",
+            "censure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "tirage",
+          "options": [
+            "tirage",
+            "paparazzi",
+            "source",
+            "diffamation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "censure",
+          "options": [
+            "censure",
+            "interview",
+            "reportage",
+            "éditorial"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "reportage",
+          "options": [
+            "reportage",
+            "chroniqueur",
+            "scoop",
+            "tirage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "interviews",
+          "options": [
+            "interviews",
+            "scoops",
+            "unes",
+            "éditoriaux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "paparazzi",
+          "options": [
+            "paparazzi",
+            "chroniqueur",
+            "source",
+            "tirage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "diffamation",
+          "options": [
+            "diffamation",
+            "censure",
+            "une",
+            "investigation"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les ombres du clocher",
+      "title_fa": "سایه‌های برج کلیسا",
+      "inspiration": "Spotlight (Tom McCarthy, 2015)",
+      "text": "À peine Marty Baron eut-il franchi les portes vitrées du Boston Globe qu'il comprit que cette ville n'était pas comme les autres. Dans cette cité où le catholicisme tissait chaque rue, chaque famille, chaque secret, le {{BLANK_1}} prenait une dimension sacrée. Baron, nouveau rédacteur en chef, venait de Miami, étranger à ces codes invisibles. Il entra dans la {{BLANK_2}} comme on entre dans un temple, avec ses bureaux encombrés de papiers jaunissants et ses machines à café éternellement en panne. Là, une petite équipe surnommée Spotlight enquêtait dans l'ombre, loin des projecteurs quotidiens. Baron leur confia une mission explosive : révéler que des prêtres pédophiles avaient été protégés par la hiérarchie pendant des décennies. L'{{BLANK_6}} commença, longue, patiente, méthodique. Sacha Pfeiffer et Mike Rezendes arpentaient les quartiers populaires, chaque {{BLANK_11}} les plongeant un peu plus dans l'horreur ordinaire. Les victimes, brisées, acceptaient une {{BLANK_12}} anonyme, tremblantes, honteuses, soulagées enfin de parler. Une {{BLANK_7}} haut placée dans l'administration diocésaine leur glissa des documents compromettants, risquant sa carrière pour la vérité. Le {{BLANK_5}} politique analysait le silence coupable des élites locales. Walter Robinson, vétéran du métier, coordonnait le travail avec une rigueur de moine. Ben Bradlee Jr. rédigeait l'{{BLANK_4}} qui encadrerait la publication, pesant chaque mot comme un orfèvre. Mais l'Église, puissante, menaçait de représailles, laissant planer l'ombre de la {{BLANK_10}} judiciaire. Un {{BLANK_13}} sans scrupule tentait de monnayer des photos volées aux victimes. Le journal, lui, avançait sur des œufs, évitant toute {{BLANK_14}} qui aurait discrédité l'ensemble du travail. Enfin, le dimanche 6 janvier 2002, l'article fit la {{BLANK_8}}. Les rotatives tournèrent toute la nuit, et le {{BLANK_9}} dépassa toutes les attentes. Ce {{BLANK_3}} monumental, qui révélait 70 prêtres abuseurs dans la seule ville de Boston, fit l'effet d'une bombe atomique dans le monde catholique. Les téléphones du standard explosèrent. Les témoignages affluèrent par milliers. Ce que Spotlight avait découvert n'était pas un fait divers isolé, mais un système mondial de protection des prédateurs. Les journalistes, épuisés mais droits dans leurs certitudes, avaient prouvé que le quatrième pouvoir, quand il est exercé avec courage, peut encore faire trembler les cathédrales et libérer la parole des oubliés.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "journalisme",
+          "options": [
+            "journalisme",
+            "reportage",
+            "interview",
+            "scoop"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "rédaction",
+          "options": [
+            "rédaction",
+            "une",
+            "censure",
+            "diffamation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "scoop",
+          "options": [
+            "scoop",
+            "éditorial",
+            "tirage",
+            "chroniqueur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "éditorial",
+          "options": [
+            "éditorial",
+            "interview",
+            "source",
+            "reportage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "chroniqueur",
+          "options": [
+            "chroniqueur",
+            "paparazzi",
+            "tirage",
+            "scoop"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "investigation",
+          "options": [
+            "investigation",
+            "diffamation",
+            "censure",
+            "une"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "source",
+          "options": [
+            "source",
+            "rédaction",
+            "éditorial",
+            "scoop"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "une",
+          "options": [
+            "une",
+            "investigation",
+            "chroniqueur",
+            "censure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "tirage",
+          "options": [
+            "tirage",
+            "paparazzi",
+            "source",
+            "diffamation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "censure",
+          "options": [
+            "censure",
+            "interview",
+            "reportage",
+            "éditorial"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "reportage",
+          "options": [
+            "reportage",
+            "chroniqueur",
+            "scoop",
+            "tirage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "interview",
+          "options": [
+            "interview",
+            "scoop",
+            "une",
+            "source"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "paparazzi",
+          "options": [
+            "paparazzi",
+            "chroniqueur",
+            "source",
+            "tirage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "diffamation",
+          "options": [
+            "diffamation",
+            "censure",
+            "une",
+            "investigation"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Journalisme et presse écrite",
+    "title_fa": "آزمون : روزنامه‌نگاری و مطبوعات",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le métier qui consiste à recueillir, vérifier et diffuser des informations d'actualité au public est le ____.",
+        "options": [
+          "journalisme",
+          "reportage",
+          "interview",
+          "scoop"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرفه جمع‌آوری و انتشار اخبار = journalisme."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des journalistes qui travaillent dans un média et qui préparent le contenu éditorial forme la ____.",
+        "options": [
+          "rédaction",
+          "une",
+          "censure",
+          "diffamation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تحریریه و گروه خبرنگاران = rédaction."
+      },
+      {
+        "type": "mcq",
+        "question": "Une information exclusive, obtenue avant tous les autres médias concurrents, s'appelle un ____.",
+        "options": [
+          "scoop",
+          "éditorial",
+          "tirage",
+          "chroniqueur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خبر فوری و انحصاری = scoop."
+      },
+      {
+        "type": "mcq",
+        "question": "L'article de fond, généralement écrit par le directeur du journal, qui exprime l'opinion officielle du média est l'____.",
+        "options": [
+          "éditorial",
+          "interview",
+          "source",
+          "reportage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سرمقاله روزنامه = éditorial."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce journaliste spécialisé qui tient une rubrique régulière sur un sujet précis (politique, sport, culture) est un ____.",
+        "options": [
+          "chroniqueur",
+          "paparazzi",
+          "tirage",
+          "scoop"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ستون‌نویس تخصصی = chroniqueur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le travail journalistique approfondi qui vise à révéler des faits cachés ou des scandales est l'____.",
+        "options": [
+          "investigation",
+          "diffamation",
+          "censure",
+          "une"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کار روزنامه‌نگاری عمیق برای افشای حقایق = investigation."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui fournit des informations confidentielles à un journaliste, souvent sous couvert d'anonymat, est sa ____.",
+        "options": [
+          "source",
+          "rédaction",
+          "éditorial",
+          "scoop"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "منبع خبری = source."
+      },
+      {
+        "type": "mcq",
+        "question": "La première page d'un journal, qui présente les titres les plus importants du jour, est la ____.",
+        "options": [
+          "une",
+          "investigation",
+          "chroniqueur",
+          "censure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صفحه اول روزنامه = une."
+      },
+      {
+        "type": "mcq",
+        "question": "Le nombre total d'exemplaires imprimés et diffusés d'un journal pour un numéro donné est le ____.",
+        "options": [
+          "tirage",
+          "paparazzi",
+          "source",
+          "diffamation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تعداد نسخه‌های چاپ‌شده = tirage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le contrôle exercé par une autorité pour interdire ou modifier la diffusion de certaines informations est la ____.",
+        "options": [
+          "censure",
+          "interview",
+          "reportage",
+          "éditorial"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کنترل و سانسور اطلاعات = censure."
+      },
+      {
+        "type": "mcq",
+        "question": "L'article détaillé qui raconte un événement sur le terrain, souvent accompagné de photos, est un ____.",
+        "options": [
+          "reportage",
+          "chroniqueur",
+          "scoop",
+          "tirage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گزارش مفصل از رویداد = reportage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'entretien journalistique au cours duquel une personne répond aux questions d'un reporter est une ____.",
+        "options": [
+          "interview",
+          "scoop",
+          "une",
+          "source"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مصاحبه با یک شخص = interview."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce photographe indépendant qui traque les célébrités pour vendre leurs photos privées à la presse people est un ____.",
+        "options": [
+          "paparazzi",
+          "chroniqueur",
+          "source",
+          "tirage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عکاس مزاحم افراد مشهور = paparazzi."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fait d'accuser publiquement quelqu'un de faits faux qui portent atteinte à son honneur est la ____.",
+        "options": [
+          "diffamation",
+          "censure",
+          "une",
+          "investigation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تهمت عمومی و افترا = diffamation."
+      },
+      {
+        "type": "binary",
+        "question": "L'éditorial et le reportage poursuivent exactement les mêmes objectifs journalistiques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سرمقاله نظر شخصی و تحلیلی است، اما گزارش باید بی‌طرفانه و مبتنی بر حقیقت باشد."
+      },
+      {
+        "type": "binary",
+        "question": "Un journaliste a le droit légal de protéger l'identité de sa source confidentielle dans la plupart des démocraties.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. در بیشتر دموکراسی‌ها خبرنگاران حق حفاظت از منبع خبری خود را دارند."
+      },
+      {
+        "type": "binary",
+        "question": "Le scoop désigne une information déjà connue et publiée par plusieurs médias concurrents.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. scoop دقیقاً برعکس، خبری انحصاری است که اولین بار توسط یک رسانه منتشر می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La diffamation est punie par la loi, même si elle est publiée dans un journal sérieux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. افترا حتی در مطبوعات نیز جرم است و قابل پیگرد قانونی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le paparazzi est un journaliste d'investigation qui enquête sur des scandales politiques majeurs.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پاپاراتزی عکاسی است که به دنبال تصاویر خصوصی سلبریتی‌هاست، نه خبرنگار تحقیقی."
+      },
+      {
+        "type": "binary",
+        "question": "La une d'un journal est la page la plus lue, car elle contient les informations les plus importantes du jour.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. صفحه اول پرخواننده‌ترین بخش است و مهم‌ترین اخبار را نمایش می‌دهد."
+      }
+    ]
+  }
+}
