@@ -1,0 +1,680 @@
+{
+  "id": "martial_arts_samurai",
+  "level": "C1",
+  "theme": "Arts martiaux, samouraïs et bushido",
+  "theme_fa": "هنرهای رزمی، سامورایی‌ها و بوشیدو",
+  "icon": "⚔️",
+  "inspiration": "Le Dernier Samouraï (Edward Zwick, 2003)",
+  "words": [
+    {
+      "fr": "le katana",
+      "fa": "کاتانا (شمشیر سامورایی)",
+      "emoji": "⚔️",
+      "difficulty": 4,
+      "ex": "Le katana est l'âme du samouraï.",
+      "ex_fa": "کاتانا روح سامورایی است."
+    },
+    {
+      "fr": "le bushido",
+      "fa": "بوشیدو (راه جنگجو)",
+      "emoji": "🌸",
+      "difficulty": 5,
+      "ex": "Le bushido enseigne l'honneur, la loyauté et le courage.",
+      "ex_fa": "بوشیدو، افتخار، وفاداری و شجاعت را می‌آموزد."
+    },
+    {
+      "fr": "le daimyo",
+      "fa": "دایمیو (ارباب فئودال ژاپنی)",
+      "emoji": "🏯",
+      "difficulty": 5,
+      "ex": "Le daimyo gouvernait sa province avec ses samouraïs.",
+      "ex_fa": "دایمیو استان خود را با سامورایی‌هایش اداره می‌کرد."
+    },
+    {
+      "fr": "le dojo",
+      "fa": "دوجو (محل تمرین رزمی)",
+      "emoji": "🥋",
+      "difficulty": 4,
+      "ex": "Le dojo impose le silence et le respect.",
+      "ex_fa": "دوجو سکوت و احترام را تحمیل می‌کند."
+    },
+    {
+      "fr": "le sensei",
+      "fa": "سنسی (استاد رزمی)",
+      "emoji": "👨‍🏫",
+      "difficulty": 4,
+      "ex": "Le sensei transmet son savoir avec rigueur et patience.",
+      "ex_fa": "سنسی دانش خود را با سخت‌گیری و صبر منتقل می‌کند."
+    },
+    {
+      "fr": "le kimono",
+      "fa": "کیمونو",
+      "emoji": "👘",
+      "difficulty": 3,
+      "ex": "Le kimono traditionnel se porte lors des cérémonies.",
+      "ex_fa": "کیمونوی سنتی در مراسم پوشیده می‌شود."
+    },
+    {
+      "fr": "le seppuku",
+      "fa": "سپوکو (خودکشی آیینی)",
+      "emoji": "🗡️",
+      "difficulty": 5,
+      "ex": "Le seppuku était l'ultime acte d'honneur du samouraï déshonoré.",
+      "ex_fa": "سپوکو آخرین عمل افتخارآمیز سامورایی بی‌آبرو بود."
+    },
+    {
+      "fr": "le shogun",
+      "fa": "شوگون (فرمانده نظامی عالی)",
+      "emoji": "👑",
+      "difficulty": 5,
+      "ex": "Le shogun détenait le véritable pouvoir militaire au Japon.",
+      "ex_fa": "شوگون قدرت نظامی واقعی ژاپن را در دست داشت."
+    },
+    {
+      "fr": "le ninjutsu",
+      "fa": "نینجوتسو (هنر نینجاها)",
+      "emoji": "🥷",
+      "difficulty": 5,
+      "ex": "Le ninjutsu enseigne l'art de l'infiltration et de l'espionnage.",
+      "ex_fa": "نینجوتسو هنر نفوذ و جاسوسی را می‌آموزد."
+    },
+    {
+      "fr": "le saké",
+      "fa": "ساکی (شراب برنج ژاپنی)",
+      "emoji": "🍶",
+      "difficulty": 3,
+      "ex": "Les guerriers partageaient le saké avant la bataille.",
+      "ex_fa": "جنگجویان قبل از نبرد ساکی را تقسیم می‌کردند."
+    },
+    {
+      "fr": "la calligraphie",
+      "fa": "خوشنویسی",
+      "emoji": "✍️",
+      "difficulty": 4,
+      "ex": "La calligraphie est l'un des arts fondamentaux du samouraï.",
+      "ex_fa": "خوشنویسی یکی از هنرهای بنیادین سامورایی است."
+    },
+    {
+      "fr": "l'ikebana",
+      "fa": "ایکِبانا (هنر گل‌آرایی ژاپنی)",
+      "emoji": "🌺",
+      "difficulty": 5,
+      "ex": "L'ikebana transforme la disposition des fleurs en méditation.",
+      "ex_fa": "ایکِبانا چیدمان گل‌ها را به مراقبه تبدیل می‌کند."
+    },
+    {
+      "fr": "la méditation",
+      "fa": "مراقبه، ذِن",
+      "emoji": "🧘",
+      "difficulty": 4,
+      "ex": "La méditation zen purifie l'esprit du guerrier.",
+      "ex_fa": "مراقبه ذِن ذهن جنگجو را پاک می‌کند."
+    },
+    {
+      "fr": "le yin et le yang",
+      "fa": "یین و یانگ (تعادل نیروها)",
+      "emoji": "☯️",
+      "difficulty": 4,
+      "ex": "Le yin et le yang symbolisent l'équilibre des forces opposées.",
+      "ex_fa": "یین و یانگ نماد تعادل نیروهای متضاد هستند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'étranger au village",
+      "text": "Le capitaine Nathan Algren, vétéran désabusé de la guerre de Sécession, est engagé pour entraîner l'armée impériale japonaise. Capturé par les samouraïs rebelles, il est amené au village de Katsumoto, un noble {{BLANK_1}} qui sert fidèlement son {{BLANK_3}}. Pendant des mois, Nathan découvre une culture millénaire. Il apprend à respecter le {{BLANK_2}}, ce code d'honneur strict qui guide chaque action du guerrier. Chaque matin, il s'entraîne dans le {{BLANK_4}} sous la direction du {{BLANK_5}} local. Il apprend à manier le {{BLANK_1}} avec précision et respect. Il porte désormais le {{BLANK_6}} traditionnel au lieu de son uniforme. Il comprend que le {{BLANK_8}} règne sur le Japon, mais que les anciennes traditions résistent. Il découvre les arts subtils : la {{BLANK_11}} qui apaise l'esprit, l'{{BLANK_12}} qui célèbre la beauté éphémère, la {{BLANK_11}} qui transmet la sagesse par le pinceau. Autour du feu, les guerriers partagent le {{BLANK_10}} en racontant leurs exploits. Nathan apprend l'existence du {{BLANK_9}}, l'art secret des espions, si différent de la voie honorable des samouraïs. Quand vient le moment de la bataille finale, Katsumoto, blessé mortellement, choisit le {{BLANK_7}} pour mourir avec honneur. Nathan comprend alors l'équilibre du {{BLANK_14}}, la danse éternelle entre la vie et la mort, la guerre et la paix. Il devient le témoin d'un monde qui disparaît, emportant avec lui la mémoire d'un peuple.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "katana",
+          "options": [
+            "katana",
+            "kimono",
+            "saké",
+            "dojo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bushido",
+          "options": [
+            "bushido",
+            "ninjutsu",
+            "shogun",
+            "seppuku"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "daimyo",
+          "options": [
+            "daimyo",
+            "sensei",
+            "shogun",
+            "samouraï"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "dojo",
+          "options": [
+            "dojo",
+            "kimono",
+            "saké",
+            "yin et yang"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sensei",
+          "options": [
+            "sensei",
+            "daimyo",
+            "shogun",
+            "samouraï"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "kimono",
+          "options": [
+            "kimono",
+            "katana",
+            "saké",
+            "dojo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "seppuku",
+          "options": [
+            "seppuku",
+            "bushido",
+            "ninjutsu",
+            "méditation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "shogun",
+          "options": [
+            "shogun",
+            "daimyo",
+            "sensei",
+            "samouraï"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ninjutsu",
+          "options": [
+            "ninjutsu",
+            "bushido",
+            "ikebana",
+            "calligraphie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "saké",
+          "options": [
+            "saké",
+            "kimono",
+            "katana",
+            "dojo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "calligraphie",
+          "options": [
+            "calligraphie",
+            "ikebana",
+            "méditation",
+            "bushido"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ikebana",
+          "options": [
+            "ikebana",
+            "calligraphie",
+            "méditation",
+            "seppuku"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "méditation",
+          "options": [
+            "méditation",
+            "calligraphie",
+            "ikebana",
+            "bushido"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "yin et le yang",
+          "options": [
+            "yin et le yang",
+            "bushido",
+            "ninjutsu",
+            "seppuku"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La fleur et le sabre",
+      "inspiration": "Le Dernier Samouraï (Edward Zwick, 2003)",
+      "text": "À peine le capitaine Nathan Algren eut-il ouvert les yeux dans cette chaumière de montagne qu'il sut que sa vie d'avant n'existait plus. Autour de lui, le village perché dans les brumes du Mont Fuji semblait hors du temps, suspendu entre deux époques. Katsumoto, le dernier grand {{BLANK_1}} de cette province oubliée, le regardait avec cette curiosité froide des prédateurs qui étudient leur proie. Nathan, vétéran brisé par les massacres de la guerre civile américaine, avait été capturé lors d'une embuscade. Mais au lieu de le tuer, Katsumoto avait vu en lui une opportunité : comprendre l'ennemi occidental. Pendant l'hiver rigoureux, Nathan découvrit une civilisation où la violence et la grâce dansaient ensemble. Le {{BLANK_2}}, ce code implacable, régissait chaque souffle, chaque geste, chaque silence. Chaque aube, dans le {{BLANK_4}} glacé, le vieux {{BLANK_5}} Nobutada lui enseignait l'art du {{BLANK_1}}, cette lame forgée dans mille couches d'acier, dont le tranchant pouvait séparer l'âme du corps. Nathan troqua son uniforme bleu contre le {{BLANK_6}} de soie indigo, apprenant à nouer l'obi avec la précision d'un rituel sacré. Il comprit que le {{BLANK_8}} de Tokyo, ce modernisateur en costume européen, voulait écraser ces traditions millénaires au nom du progrès. Mais ici, dans les montagnes, les anciens arts survivaient : la {{BLANK_11}} qui transformait l'encre en prière, l'{{BLANK_12}} qui capturait l'éternité dans une branche de cerisier, la {{BLANK_13}} zen qui vidait l'esprit de ses démons. Le soir, autour du feu, le {{BLANK_10}} chaud circulait de main en main, et les guerriers chantaient les exploits des ancêtres. Nathan apprit aussi l'existence du {{BLANK_9}}, l'ombre du samouraï, ces assassins de la nuit qui ne connaissaient ni honneur ni visage. Quand vint le printemps et la bataille inévitable contre l'armée moderne de canons et de mitrailleuses, Katsumoto chargea une dernière fois, sabre au clair, sachant que son monde mourrait avec lui. Mortellement blessé, il demanda à Nathan de l'aider à accomplir le {{BLANK_7}}, cet acte ultime par lequel le samouraï reprend sa dignité. Quand la lame traversa son ventre, Nathan comprit enfin l'équilibre parfait du {{BLANK_14}} : la fleur qui tombe et le sabre qui tranche, la vie qui s'éteint pour que renaisse l'honneur. Il retourna à Tokyo, non plus comme un vainqueur, mais comme le gardien d'une mémoire sacrée, portant en lui le dernier souffle d'un monde qui avait préféré mourir debout que vivre à genoux.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "katana",
+          "options": [
+            "katana",
+            "kimono",
+            "saké",
+            "dojo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bushido",
+          "options": [
+            "bushido",
+            "ninjutsu",
+            "shogun",
+            "seppuku"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "daimyo",
+          "options": [
+            "daimyo",
+            "sensei",
+            "shogun",
+            "samouraï"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "dojo",
+          "options": [
+            "dojo",
+            "kimono",
+            "saké",
+            "yin et yang"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sensei",
+          "options": [
+            "sensei",
+            "daimyo",
+            "shogun",
+            "samouraï"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "kimono",
+          "options": [
+            "kimono",
+            "katana",
+            "saké",
+            "dojo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "seppuku",
+          "options": [
+            "seppuku",
+            "bushido",
+            "ninjutsu",
+            "méditation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "shogun",
+          "options": [
+            "shogun",
+            "daimyo",
+            "sensei",
+            "samouraï"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ninjutsu",
+          "options": [
+            "ninjutsu",
+            "bushido",
+            "ikebana",
+            "calligraphie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "saké",
+          "options": [
+            "saké",
+            "kimono",
+            "katana",
+            "dojo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "calligraphie",
+          "options": [
+            "calligraphie",
+            "ikebana",
+            "méditation",
+            "bushido"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ikebana",
+          "options": [
+            "ikebana",
+            "calligraphie",
+            "méditation",
+            "seppuku"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "méditation",
+          "options": [
+            "méditation",
+            "calligraphie",
+            "ikebana",
+            "bushido"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "yin et le yang",
+          "options": [
+            "yin et le yang",
+            "bushido",
+            "ninjutsu",
+            "seppuku"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Arts martiaux et culture samouraï",
+    "title_fa": "آزمون : هنرهای رزمی و فرهنگ سامورایی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le sabre long et courbé, symbole et arme principale du samouraï japonais, est le ____.",
+        "options": [
+          "katana",
+          "kimono",
+          "saké",
+          "dojo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شمشیر بلند و منحنی سامورایی = katana."
+      },
+      {
+        "type": "mcq",
+        "question": "Le code d'honneur et de conduite morale strict qui guidait la vie des samouraïs est le ____.",
+        "options": [
+          "bushido",
+          "ninjutsu",
+          "shogun",
+          "seppuku"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کد اخلاقی سامورایی‌ها = bushido."
+      },
+      {
+        "type": "mcq",
+        "question": "Le seigneur féodal japonais qui gouvernait une province et commandait à des samouraïs était le ____.",
+        "options": [
+          "daimyo",
+          "sensei",
+          "shogun",
+          "samouraï"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارباب فئودال ژاپنی = daimyo."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu d'entraînement où se pratiquent les arts martiaux japonais est le ____.",
+        "options": [
+          "dojo",
+          "kimono",
+          "saké",
+          "yin et yang"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محل تمرین هنرهای رزمی = dojo."
+      },
+      {
+        "type": "mcq",
+        "question": "Le titre honorifique donné au maître ou à l'enseignant dans les arts martiaux japonais est le ____.",
+        "options": [
+          "sensei",
+          "daimyo",
+          "shogun",
+          "samouraï"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استاد و معلم رزمی = sensei."
+      },
+      {
+        "type": "mcq",
+        "question": "Le vêtement traditionnel japonais en forme de T, porté lors des occasions formelles, est le ____.",
+        "options": [
+          "kimono",
+          "katana",
+          "saké",
+          "dojo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لباس سنتی ژاپنی = kimono."
+      },
+      {
+        "type": "mcq",
+        "question": "Le rituel du suicide par éventration, pratiqué par les samouraïs pour restaurer leur honneur perdu, est le ____.",
+        "options": [
+          "seppuku",
+          "bushido",
+          "ninjutsu",
+          "méditation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خودکشی آیینی برای حفظ افتخار = seppuku."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dictateur militaire suprême du Japon féodal, qui détenait le pouvoir réel derrière l'empereur, était le ____.",
+        "options": [
+          "shogun",
+          "daimyo",
+          "sensei",
+          "samouraï"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرمانده عالی نظامی ژاپن = shogun."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art martial de l'espionnage, de l'infiltration et des techniques de guérilla pratiqué par les agents secrets est le ____.",
+        "options": [
+          "ninjutsu",
+          "bushido",
+          "ikebana",
+          "calligraphie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر رزمی نینجاها = ninjutsu."
+      },
+      {
+        "type": "mcq",
+        "question": "La boisson alcoolisée traditionnelle japonaise fabriquée par fermentation du riz est le ____.",
+        "options": [
+          "saké",
+          "kimono",
+          "katana",
+          "dojo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شراب سنتی برنج ژاپنی = saké."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de tracer les caractères japonais au pinceau avec esthétique et maîtrise est la ____.",
+        "options": [
+          "calligraphie",
+          "ikebana",
+          "méditation",
+          "bushido"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر نوشتن با قلم‌مو = calligraphie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art japonais de la composition florale, qui cherche l'harmonie et l'équilibre entre les éléments, est l'____.",
+        "options": [
+          "ikebana",
+          "calligraphie",
+          "méditation",
+          "seppuku"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر گل‌آرایی ژاپنی = ikebana."
+      },
+      {
+        "type": "mcq",
+        "question": "La pratique spirituelle de concentration et de vide mental, souvent associée au bouddhisme zen, est la ____.",
+        "options": [
+          "méditation",
+          "calligraphie",
+          "ikebana",
+          "bushido"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مراقبه و تمرکز ذهنی = méditation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le concept philosophique chinois représentant l'interaction complémentaire des forces opposées dans l'univers est le ____.",
+        "options": [
+          "yin et le yang",
+          "bushido",
+          "ninjutsu",
+          "seppuku"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تعادل نیروهای متضاد = yin et le yang."
+      },
+      {
+        "type": "binary",
+        "question": "Le bushido et le ninjutsu désignent tous deux le même code d'honneur des guerriers japonais.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. bushido کد اخلاقی سامورایی است، ninjutsu هنر نینجاها و جاسوسی."
+      },
+      {
+        "type": "binary",
+        "question": "Le seppuku était considéré comme un acte de lâcheté dans la culture samouraï.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سپوکو اوج شجاعت و راهی برای بازیافتن افتخار بود."
+      },
+      {
+        "type": "binary",
+        "question": "Le dojo est le lieu d'entraînement et de pratique des arts martiaux japonais.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دوجو محل رسمی تمرین هنرهای رزمی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le shogun avait théoriquement plus de pouvoir militaire que l'empereur dans le Japon féodal.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. شوگون قدرت نظامی واقعی را داشت، در حالی که امپراتور بیشتر نقش نمادین داشت."
+      },
+      {
+        "type": "binary",
+        "question": "L'ikebana et la calligraphie sont tous deux considérés comme des arts traditionnels majeurs de la culture japonaise.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هر دو از هنرهای بنیادین و ذِن‌محور ژاپنی هستند."
+      },
+      {
+        "type": "binary",
+        "question": "Le kimono est un vêtement exclusivement porté par les hommes dans la tradition japonaise.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کیمونو توسط هر دو جنس با تفاوت‌هایی در طرح و رنگ پوشیده می‌شود."
+      }
+    ]
+  }
+}
