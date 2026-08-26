@@ -1,0 +1,680 @@
+{
+  "id": "economy_finance",
+  "level": "C1",
+  "theme": "Économie, marchés financiers et Wall Street",
+  "theme_fa": "اقتصاد، بازارهای مالی و وال‌استریت",
+  "icon": "💹",
+  "inspiration": "The Big Short : Le Casse du siècle (Adam McKay, 2015)",
+  "words": [
+    {
+      "fr": "l'économie",
+      "fa": "اقتصاد",
+      "emoji": "📊",
+      "difficulty": 3,
+      "ex": "L'économie mondiale traverse une période d'incertitude.",
+      "ex_fa": "اقتصاد جهانی دوره‌ای از عدم قطعیت را پشت سر می‌گذارد."
+    },
+    {
+      "fr": "la bourse",
+      "fa": "بورس",
+      "emoji": "📈",
+      "difficulty": 3,
+      "ex": "La bourse de New York dicte les tendances mondiales.",
+      "ex_fa": "بورس نیویورک روندهای جهانی را تعیین می‌کند."
+    },
+    {
+      "fr": "l'action",
+      "fa": "سهم",
+      "emoji": "📄",
+      "difficulty": 3,
+      "ex": "L'action de cette entreprise technologique a doublé en un an.",
+      "ex_fa": "سهم این شرکت فناوری در یک سال دو برابر شد."
+    },
+    {
+      "fr": "le krach",
+      "fa": "سقوط ناگهانی بورس",
+      "emoji": "📉",
+      "difficulty": 4,
+      "ex": "Le krach de 1929 a plongé le monde dans la Grande Dépression.",
+      "ex_fa": "سقوط بورس ۱۹۲۹ جهان را در رکود بزرگ فرو برد."
+    },
+    {
+      "fr": "l'inflation",
+      "fa": "تورم",
+      "emoji": "💸",
+      "difficulty": 4,
+      "ex": "L'inflation réduit le pouvoir d'achat des ménages.",
+      "ex_fa": "تورم قدرت خرید خانوارها را کاهش می‌دهد."
+    },
+    {
+      "fr": "la récession",
+      "fa": "رکود اقتصادی",
+      "emoji": "📉",
+      "difficulty": 4,
+      "ex": "La récession a provoqué des licenciements massifs.",
+      "ex_fa": "رکود اقتصادی باعث اخراج‌های گسترده شد."
+    },
+    {
+      "fr": "le trader",
+      "fa": "معامله‌گر",
+      "emoji": "💼",
+      "difficulty": 4,
+      "ex": "Le trader passe ses journées devant six écrans.",
+      "ex_fa": "معامله‌گر روزهایش را جلوی شش صفحه‌نمایش می‌گذراند."
+    },
+    {
+      "fr": "la bulle spéculative",
+      "fa": "حباب سفته‌بازی",
+      "emoji": "🫧",
+      "difficulty": 5,
+      "ex": "La bulle spéculative immobilière a éclaté en 2008.",
+      "ex_fa": "حباب سفته‌بازی مسکن در سال ۲۰۰۸ ترکید."
+    },
+    {
+      "fr": "le dividende",
+      "fa": "سود سهام",
+      "emoji": "💰",
+      "difficulty": 4,
+      "ex": "Les actionnaires reçoivent un dividende chaque trimestre.",
+      "ex_fa": "سهامداران هر سه ماه یکبار سود سهام دریافت می‌کنند."
+    },
+    {
+      "fr": "l'actif",
+      "fa": "دارایی",
+      "emoji": "🏦",
+      "difficulty": 4,
+      "ex": "L'actif de l'entreprise comprend ses immeubles et ses brevets.",
+      "ex_fa": "دارایی شرکت شامل ساختمان‌ها و اختراعات آن است."
+    },
+    {
+      "fr": "le passif",
+      "fa": "بدهی، دیون",
+      "emoji": "📋",
+      "difficulty": 4,
+      "ex": "Le passif de la société dépasse dangereusement ses revenus.",
+      "ex_fa": "بدهی شرکت به طور خطرناکی از درآمدش بیشتر است."
+    },
+    {
+      "fr": "la faillite",
+      "fa": "ورشکستگی",
+      "emoji": "⚖️",
+      "difficulty": 4,
+      "ex": "La faillite de Lehman Brothers a déclenché la crise financière.",
+      "ex_fa": "ورشکستگی برادران لمن بحران مالی را آغاز کرد."
+    },
+    {
+      "fr": "le hedge fund",
+      "fa": "صندوق پوشش ریسک",
+      "emoji": "🏛️",
+      "difficulty": 5,
+      "ex": "Le hedge fund spécule sur les marchés avec des capitaux énormes.",
+      "ex_fa": "صندوق پوشش ریسک با سرمایه‌های عظیم در بازارها سفته‌بازی می‌کند."
+    },
+    {
+      "fr": "le PIB",
+      "fa": "تولید ناخالص داخلی",
+      "emoji": "📊",
+      "difficulty": 4,
+      "ex": "Le PIB mesure la richesse produite par un pays en une année.",
+      "ex_fa": "تولید ناخالص داخلی، ثروت تولیدشده یک کشور در یک سال را می‌سنجد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le pari du siècle",
+      "text": "Michael Burry est un {{BLANK_7}} atypique qui analyse obsessivement les marchés. En 2005, il découvre que l'{{BLANK_1}} américaine repose sur une énorme {{BLANK_8}} immobilière. Les banques accordent des prêts à des emprunteurs insolvables. Il décide de parier contre le système en shortant les titres toxiques. À Wall Street, les {{BLANK_7}}s continuent d'acheter des {{BLANK_3}}s de banques géantes, ignorant le danger. Ils touchent d'énormes {{BLANK_9}}s sans voir que le {{BLANK_13}} du pays stagne. Quand l'{{BLANK_5}} commence à augmenter, les ménages ne peuvent plus rembourser. La {{BLANK_6}} frappe l'Amérique, provoquant des millions de chômeurs. Le {{BLANK_4}} de 2008 anéantit des décennies d'épargne. Lehman Brothers déclare {{BLANK_12}}, emportant des milliers d'emplois. L'{{BLANK_10}} des banques s'effondre tandis que leur {{BLANK_11}} explose. Les {{BLANK_13}}s traditionnels refusent de croire Burry, mais son {{BLANK_14}} audacieux lui rapporte des milliards. Il a vu ce que personne ne voulait voir : un système bâti sur du sable.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "économie",
+          "options": [
+            "économie",
+            "bourse",
+            "action",
+            "krach"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bourse",
+          "options": [
+            "bourse",
+            "inflation",
+            "récession",
+            "trader"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "actions",
+          "options": [
+            "actions",
+            "bulles spéculatives",
+            "dividendes",
+            "faillites"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "krach",
+          "options": [
+            "krach",
+            "actif",
+            "passif",
+            "PIB"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "inflation",
+          "options": [
+            "inflation",
+            "récession",
+            "dividende",
+            "hedge fund"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "récession",
+          "options": [
+            "récession",
+            "action",
+            "bourse",
+            "krach"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "trader",
+          "options": [
+            "trader",
+            "économie",
+            "PIB",
+            "faillite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "bulle spéculative",
+          "options": [
+            "bulle spéculative",
+            "inflation",
+            "récession",
+            "PIB"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "dividendes",
+          "options": [
+            "dividendes",
+            "actifs",
+            "passifs",
+            "krachs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "actif",
+          "options": [
+            "actif",
+            "passif",
+            "dividende",
+            "action"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "passif",
+          "options": [
+            "passif",
+            "actif",
+            "PIB",
+            "bourse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "faillite",
+          "options": [
+            "faillite",
+            "krach",
+            "bulle spéculative",
+            "inflation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "hedge funds",
+          "options": [
+            "hedge funds",
+            "PIB",
+            "traders",
+            "économies"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "hedge fund",
+          "options": [
+            "hedge fund",
+            "trader",
+            "PIB",
+            "dividende"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les prophètes du chaos",
+      "inspiration": "The Big Short : Le Casse du siècle (Adam McKay, 2015)",
+      "text": "À peine Michael Burry eut-il posé ses pieds nus sur le parquet de son bureau isolé qu'il comprit que le temple de l'{{BLANK_1}} mondiale était construit sur une montagne de mensonges. Autour de lui, dans les tours de verre de Manhattan, les {{BLANK_7}}s dansaient devant leurs écrans, célébrant des {{BLANK_9}}s imaginaires et des {{BLANK_3}}s surévaluées. Personne ne voulait voir que la {{BLANK_2}} n'était plus qu'un casino géant où l'on jouait avec la vie de millions de familles. Cette {{BLANK_8}} immobilière, gonflée de crédits toxiques accordés à des fantômes insolvables, allait inévitablement exploser. Burry, cet ancien neurologue au regard d'aigle, osa parier contre l'Amérique, devenant le paria de Wall Street. Quand l'{{BLANK_5}} commença à grignoter les salaires, puis que la {{BLANK_6}} frappa les foyers endettés, le ciel financier se déchira. Le {{BLANK_4}} de septembre 2008 fut un tremblement de terre moral. Lehman Brothers, cent cinquante ans d'histoire, s'effondra dans une {{BLANK_12}} spectaculaire, emportant avec elle l'illusion de l'invincibilité bancaire. Les {{BLANK_10}}s fictifs des géants se révélèrent être des coquilles vides, dissimulant des {{BLANK_11}}s abyssaux. Le {{BLANK_13}} américain stagnait pendant que les banquiers empochaient des bonus obscènes. Burry, depuis son {{BLANK_14}} solitaire, avait vu la vérité quand tous fermaient les yeux : le système n'était pas malade, il était mort depuis longtemps, et seuls quelques prophètes maudits osaient annoncer l'apocalypse qui allait redistribuer les cartes d'un jeu truqué.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "économie",
+          "options": [
+            "économie",
+            "bourse",
+            "action",
+            "krach"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bourse",
+          "options": [
+            "bourse",
+            "inflation",
+            "récession",
+            "trader"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "actions",
+          "options": [
+            "actions",
+            "bulles spéculatives",
+            "dividendes",
+            "faillites"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "krach",
+          "options": [
+            "krach",
+            "actif",
+            "passif",
+            "PIB"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "inflation",
+          "options": [
+            "inflation",
+            "récession",
+            "dividende",
+            "hedge fund"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "récession",
+          "options": [
+            "récession",
+            "action",
+            "bourse",
+            "krach"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "traders",
+          "options": [
+            "traders",
+            "économies",
+            "PIB",
+            "faillites"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "bulle spéculative",
+          "options": [
+            "bulle spéculative",
+            "inflation",
+            "récession",
+            "PIB"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "dividendes",
+          "options": [
+            "dividendes",
+            "actifs",
+            "passifs",
+            "krachs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "actifs",
+          "options": [
+            "actifs",
+            "passifs",
+            "dividendes",
+            "actions"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "passifs",
+          "options": [
+            "passifs",
+            "actifs",
+            "PIB",
+            "bourses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "faillite",
+          "options": [
+            "faillite",
+            "krach",
+            "bulle spéculative",
+            "inflation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "PIB",
+          "options": [
+            "PIB",
+            "hedge fund",
+            "trader",
+            "dividende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "hedge fund",
+          "options": [
+            "hedge fund",
+            "trader",
+            "PIB",
+            "dividende"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Économie et finance",
+    "title_fa": "آزمون : اقتصاد و امور مالی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie la production, la distribution et la consommation des richesses dans une société est l'____.",
+        "options": [
+          "économie",
+          "bourse",
+          "action",
+          "krach"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم تولید و توزیع ثروت = économie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le marché organisé où s'échangent des titres financiers (actions, obligations) entre investisseurs est la ____.",
+        "options": [
+          "bourse",
+          "inflation",
+          "récession",
+          "trader"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بازار مبادله اوراق بهادار = bourse."
+      },
+      {
+        "type": "mcq",
+        "question": "Le titre de propriété qui représente une fraction du capital d'une entreprise et donne droit à une partie de ses bénéfices est l'____.",
+        "options": [
+          "action",
+          "bulle spéculative",
+          "dividende",
+          "faillite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سهم مالکیت در شرکت = action."
+      },
+      {
+        "type": "mcq",
+        "question": "L'effondrement brutal et généralisé des cours sur les marchés financiers, provoquant la panique, est le ____.",
+        "options": [
+          "krach",
+          "actif",
+          "passif",
+          "PIB"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سقوط ناگهانی بازار = krach."
+      },
+      {
+        "type": "mcq",
+        "question": "L'augmentation générale et durable du niveau des prix qui entraîne une perte du pouvoir d'achat est l'____.",
+        "options": [
+          "inflation",
+          "récession",
+          "dividende",
+          "hedge fund"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "افزایش عمومی قیمت‌ها = inflation."
+      },
+      {
+        "type": "mcq",
+        "question": "La phase du cycle économique caractérisée par un ralentissement de l'activité, une baisse de la production et une hausse du chômage est la ____.",
+        "options": [
+          "récession",
+          "action",
+          "bourse",
+          "krach"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رکود اقتصادی = récession."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel qui achète et vend des instruments financiers sur les marchés pour le compte d'une banque ou d'un fonds est le ____.",
+        "options": [
+          "trader",
+          "économie",
+          "PIB",
+          "faillite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "معامله‌گر بازارهای مالی = trader."
+      },
+      {
+        "type": "mcq",
+        "question": "La situation où le prix d'un actif (immobilier, actions) augmente de manière artificielle et excessive avant de s'effondrer est la ____.",
+        "options": [
+          "bulle spéculative",
+          "inflation",
+          "récession",
+          "PIB"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حباب قیمتی و سفته‌بازی = bulle spéculative."
+      },
+      {
+        "type": "mcq",
+        "question": "La part du bénéfice d'une société qui est distribuée périodiquement à ses actionnaires est le ____.",
+        "options": [
+          "dividende",
+          "actif",
+          "passif",
+          "krach"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سود تقسیم‌شده بین سهامداران = dividende."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des biens et des droits possédés par une entreprise ou une personne, ayant une valeur économique positive, est l'____.",
+        "options": [
+          "actif",
+          "passif",
+          "dividende",
+          "action"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دارایی‌ها و حقوق با ارزش = actif."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des dettes et des obligations financières qu'une entreprise ou une personne doit rembourser est le ____.",
+        "options": [
+          "passif",
+          "actif",
+          "PIB",
+          "bourse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بدهی‌ها و دیون = passif."
+      },
+      {
+        "type": "mcq",
+        "question": "La situation juridique d'une entreprise qui ne peut plus payer ses dettes et qui cesse définitivement son activité est la ____.",
+        "options": [
+          "faillite",
+          "krach",
+          "bulle spéculative",
+          "inflation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورشکستگی و توقف فعالیت = faillite."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fonds d'investissement privé qui utilise des stratégies spéculatives complexes et risquées pour maximiser les rendements est le ____.",
+        "options": [
+          "hedge fund",
+          "PIB",
+          "trader",
+          "dividende"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صندوق سرمایه‌گذاری پرریسک = hedge fund."
+      },
+      {
+        "type": "mcq",
+        "question": "L'indicateur économique qui mesure la valeur totale de tous les biens et services produits dans un pays en une année est le ____.",
+        "options": [
+          "PIB",
+          "hedge fund",
+          "trader",
+          "dividende"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارزش کل تولید کشور = PIB."
+      },
+      {
+        "type": "binary",
+        "question": "Le krach et la récession désignent exactement le même phénomène économique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. krach سقوط ناگهانی بورس است، récession رکود اقتصادی طولانی‌مدت است."
+      },
+      {
+        "type": "binary",
+        "question": "L'inflation correspond à une hausse généralisée des prix qui diminue le pouvoir d'achat de la monnaie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تورم افزایش قیمت‌ها و کاهش قدرت خرید پول است."
+      },
+      {
+        "type": "binary",
+        "question": "Un dividende est une taxe prélevée par l'État sur les bénéfices des entreprises.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سود سهام (dividende) پولی است که شرکت به سهامداران می‌پردازد، نه مالیات دولتی."
+      },
+      {
+        "type": "binary",
+        "question": "L'actif d'une entreprise représente ses dettes, tandis que le passif représente ses biens.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. دقیقاً برعکس است: actif دارایی‌ها و passif بدهی‌ها هستند."
+      },
+      {
+        "type": "binary",
+        "question": "Une bulle spéculative éclate quand les prix, artificiellement gonflés, s'effondrent brutalement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ترکیدن حباب سفته‌بازی یعنی سقوط ناگهانی قیمت‌های غیرواقعی."
+      },
+      {
+        "type": "binary",
+        "question": "Le PIB mesure la richesse produite par un pays en additionnant la valeur de tous les biens et services créés sur son territoire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تولید ناخالص داخلی (PIB) کل ارزش تولید شده در کشور را اندازه می‌گیرد."
+      }
+    ]
+  }
+}
