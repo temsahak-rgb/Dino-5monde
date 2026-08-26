@@ -1,0 +1,680 @@
+{
+  "id": "art_restoration_forgery",
+  "level": "C1",
+  "theme": "Restauration d'art, faux et marché de l'art",
+  "theme_fa": "مرمت هنری، آثار جعلی و بازار هنر",
+  "icon": "🖼️",
+  "inspiration": "La migliore offerta (Giuseppe Tornatore, 2013)",
+  "words": [
+    {
+      "fr": "la restauration",
+      "fa": "مرمت",
+      "emoji": "🖌️",
+      "difficulty": 4,
+      "ex": "La restauration de ce tableau du XVIIe siècle a pris deux ans.",
+      "ex_fa": "مرمت این نقاشی قرن هفدهمی دو سال طول کشید."
+    },
+    {
+      "fr": "le faussaire",
+      "fa": "جعل‌کننده",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "Le faussaire a imité parfaitement le style de Vermeer.",
+      "ex_fa": "جعل‌کننده، سبک ورمیر را به طرز بی‌نقصی تقلید کرد."
+    },
+    {
+      "fr": "le chef-d'œuvre",
+      "fa": "شاهکار",
+      "emoji": "🌟",
+      "difficulty": 3,
+      "ex": "La Joconde est le chef-d'œuvre incontesté de Léonard de Vinci.",
+      "ex_fa": "مونا لیزا شاهکار بی‌چون‌وچرای لئوناردو داوینچی است."
+    },
+    {
+      "fr": "le vernis",
+      "fa": "لایه محافظ (وارنیش)",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "Le restaurateur retire le vieux vernis jauni pour révéler les couleurs.",
+      "ex_fa": "مرمت‌گر وارنیش زردشده قدیمی را برمی‌دارد تا رنگ‌ها آشکار شوند."
+    },
+    {
+      "fr": "le pigment",
+      "fa": "رنگ‌دانه",
+      "emoji": "🎨",
+      "difficulty": 4,
+      "ex": "Le bleu outremer était un pigment très coûteux à la Renaissance.",
+      "ex_fa": "آبی اولترامارین در رنسانس رنگ‌دانه‌ای بسیار گران بود."
+    },
+    {
+      "fr": "le pinceau",
+      "fa": "قلم‌مو",
+      "emoji": "🖌️",
+      "difficulty": 3,
+      "ex": "Chaque coup de pinceau révèle l'émotion de l'artiste.",
+      "ex_fa": "هر ضربه قلم‌مو، احساس هنرمند را آشکار می‌کند."
+    },
+    {
+      "fr": "la toile",
+      "fa": "بوم نقاشی",
+      "emoji": "🖼️",
+      "difficulty": 3,
+      "ex": "La toile a été tendue sur un châssis en bois de chêne.",
+      "ex_fa": "بوم روی یک قاب چوبی بلوط کشیده شد."
+    },
+    {
+      "fr": "le sfumato",
+      "fa": "اسفوماتو (محوکاری)",
+      "emoji": "🌫️",
+      "difficulty": 5,
+      "ex": "Le sfumato de Léonard crée des contours doux et vaporeux.",
+      "ex_fa": "اسفوماتوی لئوناردو، خطوطی نرم و مه‌آلود ایجاد می‌کند."
+    },
+    {
+      "fr": "la contrefaçon",
+      "fa": "جعل، تقلب",
+      "emoji": "🚫",
+      "difficulty": 4,
+      "ex": "Cette peinture est une contrefaçon brillante, mais fausse.",
+      "ex_fa": "این نقاشی یک جعل درخشان اما دروغین است."
+    },
+    {
+      "fr": "l'expert",
+      "fa": "کارشناس",
+      "emoji": "🧐",
+      "difficulty": 3,
+      "ex": "L'expert en art a examiné l'œuvre à la lumière ultraviolette.",
+      "ex_fa": "کارشناس هنر، اثر را زیر نور فرابنفش بررسی کرد."
+    },
+    {
+      "fr": "la patine",
+      "fa": "پاتینه (کهنگی طبیعی)",
+      "emoji": "🕰️",
+      "difficulty": 5,
+      "ex": "La patine du temps donne une âme aux objets anciens.",
+      "ex_fa": "پاتینه زمان، به اشیاء قدیمی روح می‌بخشد."
+    },
+    {
+      "fr": "le solvant",
+      "fa": "حلال",
+      "emoji": "🧪",
+      "difficulty": 4,
+      "ex": "Le solvant chimique dissout la saleté sans abîmer la peinture.",
+      "ex_fa": "حلال شیمیایی چرک را بدون آسیب به نقاشی حل می‌کند."
+    },
+    {
+      "fr": "la fresque",
+      "fa": "نقاشی دیواری (فرسک)",
+      "emoji": "🏛️",
+      "difficulty": 4,
+      "ex": "La fresque de la chapelle a survécu à cinq siècles d'humidité.",
+      "ex_fa": "نقاشی دیواری کلیسا پنج قرن رطوبت را دوام آورد."
+    },
+    {
+      "fr": "l'authentification",
+      "fa": "اصالت‌سنجی",
+      "emoji": "✅",
+      "difficulty": 5,
+      "ex": "L'authentification de l'œuvre a fait doubler sa valeur sur le marché.",
+      "ex_fa": "اصالت‌سنجی اثر، ارزش آن را در بازار دو برابر کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le secret de la salle aux enchères",
+      "text": "Virgil Oldman est un {{BLANK_10}} en art renommé et un commissaire-priseur impitoyable. Un jour, il reçoit une {{BLANK_7}} mystérieuse à évaluer. L'œuvre est couverte d'un épais {{BLANK_4}} noirci par les siècles. Il confie la {{BLANK_1}} à son ami Billy. En utilisant un {{BLANK_12}} délicat, Billy retire les couches de saleté pour révéler le {{BLANK_5}} original. Chaque coup de {{BLANK_6}} du maître ancien semble revivre. Virgil admire la technique du {{BLANK_8}} qui rend les visages presque irréels. Cependant, il soupçonne une {{BLANK_9}}. Il appelle un scientifique pour analyser la {{BLANK_11}} et vérifier l'âge du bois. Le processus d'{{BLANK_14}} est long et rigoureux. Soudain, il découvre que le {{BLANK_2}} a imité la technique parfaite, mais a oublié un détail historique. Ce n'est pas un véritable {{BLANK_3}} de la Renaissance, mais une illusion brillante. Plus tard, Virgil achètera une véritable {{BLANK_13}} italienne pour sa collection secrète, prouvant que l'art véritable survit toujours aux mensonges.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "restauration",
+          "options": [
+            "restauration",
+            "contrefaçon",
+            "fresque",
+            "patine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "faussaire",
+          "options": [
+            "faussaire",
+            "expert",
+            "chef-d'œuvre",
+            "pigment"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "chef-d'œuvre",
+          "options": [
+            "chef-d'œuvre",
+            "vernis",
+            "pinceau",
+            "solvant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "vernis",
+          "options": [
+            "vernis",
+            "sfumato",
+            "toile",
+            "authentification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pigment",
+          "options": [
+            "pigment",
+            "faussaire",
+            "fresque",
+            "expert"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pinceau",
+          "options": [
+            "pinceau",
+            "solvant",
+            "vernis",
+            "contrefaçon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "toile",
+          "options": [
+            "toile",
+            "restauration",
+            "patine",
+            "sfumato"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "sfumato",
+          "options": [
+            "sfumato",
+            "authentification",
+            "chef-d'œuvre",
+            "pigment"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "contrefaçon",
+          "options": [
+            "contrefaçon",
+            "restauration",
+            "fresque",
+            "pinceau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "expert",
+          "options": [
+            "expert",
+            "faussaire",
+            "vernis",
+            "solvant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "patine",
+          "options": [
+            "patine",
+            "toile",
+            "sfumato",
+            "contrefaçon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "solvant",
+          "options": [
+            "solvant",
+            "pigment",
+            "expert",
+            "chef-d'œuvre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "fresque",
+          "options": [
+            "fresque",
+            "patine",
+            "authentification",
+            "faussaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "authentification",
+          "options": [
+            "authentification",
+            "restauration",
+            "vernis",
+            "pinceau"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'illusion du temps",
+      "inspiration": "La migliore offerta (Giuseppe Tornatore, 2013)",
+      "text": "À peine Virgil Oldman eut-il enfilé ses gants de coton blanc qu'il sentit l'odeur âcre de la térébenthine et du temps arrêté. Dans le silence religieux de son atelier, il n'était pas seulement un {{BLANK_10}} redouté du marché de l'art, mais un prêtre officiant devant l'autel de la beauté. Devant lui reposait une {{BLANK_7}} anonyme, une énigme recouverte d'un {{BLANK_4}} jauni par des siècles d'oubli. Avec la patience d'un chirurgien, il appliqua un {{BLANK_12}} sur la surface, regardant la crasse se dissoudre pour libérer le {{BLANK_5}} endormi. Sous son microscope, chaque coup de {{BLANK_6}} du maître invisible racontait une agonie ou une extase. Il s'émerveilla devant le {{BLANK_8}}, cette brume lumineuse qui noyait les contours dans une éternité vaporeuse. Mais Virgil, dont l'œil avait démasqué les plus grands, flairait l'odeur du mensonge. Il savait que le plus habile {{BLANK_2}} pouvait singer le génie, mais échouait à capturer l'âme. Cette {{BLANK_9}} était une insulte magnifique, une trahison peinte avec amour. Il caressa la {{BLANK_11}} artificielle, ce vernis du temps que les escrocs appliquaient au four pour tromper la mort. L'{{BLANK_14}} scientifique finit par trahir la supercherie : un atome de titane moderne dans un océan de plomb ancien. Ce n'était pas le {{BLANK_3}} promis, mais le miroir de sa propre solitude. Désabusé, Virgil se réfugia dans sa chambre forte secrète, entouré de centaines de portraits féminins, véritables ceux-là, dont une sublime {{BLANK_13}} florentine. Là, parmi les regards figés de femmes qui ne le trahiraient jamais, il comprit que la plus grande {{BLANK_1}} n'était pas celle qui sauvait les tableaux, mais celle qui aurait dû réparer son propre cœur.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "restauration",
+          "options": [
+            "restauration",
+            "contrefaçon",
+            "fresque",
+            "patine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "faussaire",
+          "options": [
+            "faussaire",
+            "expert",
+            "chef-d'œuvre",
+            "pigment"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "chef-d'œuvre",
+          "options": [
+            "chef-d'œuvre",
+            "vernis",
+            "pinceau",
+            "solvant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "vernis",
+          "options": [
+            "vernis",
+            "sfumato",
+            "toile",
+            "authentification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pigment",
+          "options": [
+            "pigment",
+            "faussaire",
+            "fresque",
+            "expert"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pinceau",
+          "options": [
+            "pinceau",
+            "solvant",
+            "vernis",
+            "contrefaçon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "toile",
+          "options": [
+            "toile",
+            "restauration",
+            "patine",
+            "sfumato"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "sfumato",
+          "options": [
+            "sfumato",
+            "authentification",
+            "chef-d'œuvre",
+            "pigment"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "contrefaçon",
+          "options": [
+            "contrefaçon",
+            "restauration",
+            "fresque",
+            "pinceau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "expert",
+          "options": [
+            "expert",
+            "faussaire",
+            "vernis",
+            "solvant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "patine",
+          "options": [
+            "patine",
+            "toile",
+            "sfumato",
+            "contrefaçon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "solvant",
+          "options": [
+            "solvant",
+            "pigment",
+            "expert",
+            "chef-d'œuvre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "fresque",
+          "options": [
+            "fresque",
+            "patine",
+            "authentification",
+            "faussaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "authentification",
+          "options": [
+            "authentification",
+            "restauration",
+            "vernis",
+            "pinceau"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Art, restauration et faux",
+    "title_fa": "آزمون : هنر، مرمت و آثار جعلی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'ensemble des techniques et des soins appliqués à une œuvre d'art pour la nettoyer, la consolider et lui rendre son aspect d'origine est la ____.",
+        "options": [
+          "restauration",
+          "contrefaçon",
+          "fresque",
+          "patine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرآیند پاکسازی و احیای اثر هنری = restauration."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artiste ou l'artisan qui fabrique de fausses œuvres d'art dans l'intention de tromper les acheteurs est le ____.",
+        "options": [
+          "faussaire",
+          "expert",
+          "chef-d'œuvre",
+          "pigment"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخص سازنده آثار تقلبی = faussaire."
+      },
+      {
+        "type": "mcq",
+        "question": "Une œuvre artistique d'une qualité exceptionnelle, considérée comme la plus belle réalisation de son créateur, est un ____.",
+        "options": [
+          "chef-d'œuvre",
+          "vernis",
+          "pinceau",
+          "solvant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اثر هنری بی‌نظیر و شاهکار = chef-d'œuvre."
+      },
+      {
+        "type": "mcq",
+        "question": "La couche transparente et protectrice appliquée sur une peinture pour la faire briller et la protéger de la poussière est le ____.",
+        "options": [
+          "vernis",
+          "sfumato",
+          "toile",
+          "authentification"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لایه محافظ و براق روی نقاشی = vernis."
+      },
+      {
+        "type": "mcq",
+        "question": "La poudre colorée d'origine minérale, végétale ou synthétique, mélangée à un liant pour créer la peinture, est le ____.",
+        "options": [
+          "pigment",
+          "faussaire",
+          "fresque",
+          "expert"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پودر رنگ‌دانه = pigment."
+      },
+      {
+        "type": "mcq",
+        "question": "L'outil composé de poils fixés à un manche, utilisé par le peintre pour appliquer la couleur, est le ____.",
+        "options": [
+          "pinceau",
+          "solvant",
+          "vernis",
+          "contrefaçon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار رنگ‌آمیزی = pinceau."
+      },
+      {
+        "type": "mcq",
+        "question": "Le tissu de lin ou de coton, tendu sur un cadre en bois, qui sert de support rigide à la peinture à l'huile est la ____.",
+        "options": [
+          "toile",
+          "restauration",
+          "patine",
+          "sfumato"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پارچه بوم نقاشی = toile."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique picturale de la Renaissance, perfectionnée par Léonard de Vinci, qui estompe les contours dans un effet vaporeux est le ____.",
+        "options": [
+          "sfumato",
+          "authentification",
+          "chef-d'œuvre",
+          "pigment"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک محوکاری و مه‌آلود = sfumato."
+      },
+      {
+        "type": "mcq",
+        "question": "L'imitation frauduleuse d'une œuvre d'art ou d'un objet de valeur destinée à tromper sur son authenticité est la ____.",
+        "options": [
+          "contrefaçon",
+          "restauration",
+          "fresque",
+          "pinceau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جعل و تقلب در هنر = contrefaçon."
+      },
+      {
+        "type": "mcq",
+        "question": "Le spécialiste reconnu qui évalue l'authenticité, la qualité et la valeur financière d'une œuvre d'art est l'____.",
+        "options": [
+          "expert",
+          "faussaire",
+          "vernis",
+          "solvant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص ارزیابی هنر = expert."
+      },
+      {
+        "type": "mcq",
+        "question": "L'aspect vieilli, les marques d'usure et la coloration naturelle qu'acquiert un objet avec le passage du temps est la ____.",
+        "options": [
+          "patine",
+          "toile",
+          "sfumato",
+          "contrefaçon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کهنگی و اصالت زمانی شیء = patine."
+      },
+      {
+        "type": "mcq",
+        "question": "Le liquide chimique capable de dissoudre d'autres substances, utilisé pour nettoyer les tableaux ou diluer les couleurs, est le ____.",
+        "options": [
+          "solvant",
+          "pigment",
+          "expert",
+          "chef-d'œuvre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مایع حلال و پاک‌کننده = solvant."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique de peinture murale exécutée sur un enduit frais à base de chaux, qui fixe les couleurs dans le mur, est la ____.",
+        "options": [
+          "fresque",
+          "patine",
+          "authentification",
+          "faussaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نقاشی روی گچ تازه دیوار = fresque."
+      },
+      {
+        "type": "mcq",
+        "question": "La procédure scientifique et historique qui consiste à prouver qu'une œuvre a bien été créée par l'artiste auquel elle est attribuée est l'____.",
+        "options": [
+          "authentification",
+          "restauration",
+          "vernis",
+          "pinceau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تأیید اصالت اثر = authentification."
+      },
+      {
+        "type": "binary",
+        "question": "Le faussaire et l'expert ont tous deux pour métier principal de créer de nouvelles œuvres d'art originales.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. faussaire آثار دیگران را جعل می‌کند و expert آن‌ها را ارزیابی می‌کند، هیچ‌کدام لزوماً خالق اثر اصیل نیستند."
+      },
+      {
+        "type": "binary",
+        "question": "Le sfumato est une technique qui utilise des lignes nettes et des contours très marqués pour séparer les sujets.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اسفوماتو دقیقاً برعکس است و خطوط را به نرمی و مانند دود محو می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La patine est souvent imitée par les faussaires pour donner à un objet neuf l'apparence de l'ancienneté.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. جعل‌کنندگان برای قدیمی نشان دادن شیء، پاتینه مصنوعی ایجاد می‌کنند."
+      },
+      {
+        "type": "binary",
+        "question": "Une fresque est peinte directement sur un mur, sur une couche de plâtre ou d'enduit encore humide.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. فرسک روی گچ خیس دیوار کشیده می‌شود تا رنگ با آن ترکیب شود."
+      },
+      {
+        "type": "binary",
+        "question": "L'authentification d'une œuvre diminue généralement sa valeur financière sur le marché de l'art.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اصالت‌سنجی و تأیید اثر توسط هنرمند بزرگ، ارزش مالی آن را به شدت افزایش می‌دهد."
+      },
+      {
+        "type": "binary",
+        "question": "Le solvant est utilisé en restauration pour dissoudre et retirer les anciennes couches de vernis ou de saleté.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. حلال برای پاک کردن لایه‌های قدیمی و آلودگی‌ها در مرمت استفاده می‌شود."
+      }
+    ]
+  }
+}
