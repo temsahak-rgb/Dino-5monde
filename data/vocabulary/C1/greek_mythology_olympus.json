@@ -1,0 +1,680 @@
+{
+  "id": "greek_mythology_olympus",
+  "level": "C1",
+  "theme": "Mythologie grecque, Olympe et héros antiques",
+  "theme_fa": "اساطیر یونان، کوه المپ و قهرمانان باستانی",
+  "icon": "🏛️",
+  "inspiration": "Le Choc des Titans (Clash of the Titans - Desmond Davis, 1981)",
+  "words": [
+    {
+      "fr": "l'Olympe",
+      "fa": "کوه المپ (جایگاه خدایان)",
+      "emoji": "⛰️",
+      "difficulty": 4,
+      "ex": "Zeus règne sur les dieux depuis le sommet de l'Olympe.",
+      "ex_fa": "زئوس از قله المپ بر خدایان حکومت می‌کند."
+    },
+    {
+      "fr": "la divinité",
+      "fa": "ایزد، الوهیت",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "Athéna est la divinité de la sagesse et de la guerre.",
+      "ex_fa": "آتنا ایزدبانوی خرد و جنگ است."
+    },
+    {
+      "fr": "le héros",
+      "fa": "قهرمان",
+      "emoji": "🛡️",
+      "difficulty": 3,
+      "ex": "Hercule est le héros le plus célèbre de la mythologie grecque.",
+      "ex_fa": "هرکول مشهورترین قهرمان اساطیر یونان است."
+    },
+    {
+      "fr": "l'oracle",
+      "fa": "اوراکل، پیشگویی معبد",
+      "emoji": "🔮",
+      "difficulty": 4,
+      "ex": "L'oracle de Delphes prédisait l'avenir des rois.",
+      "ex_fa": "اوراکل دلفی آینده پادشاهان را پیشگویی می‌کرد."
+    },
+    {
+      "fr": "le labyrinthe",
+      "fa": "هزارتو",
+      "emoji": "🧩",
+      "difficulty": 4,
+      "ex": "Thésée s'est perdu dans le labyrinthe de Crète.",
+      "ex_fa": "تزه در هزارتوی کرت گم شد."
+    },
+    {
+      "fr": "le minotaure",
+      "fa": "مینوتور (هیولای نیمه‌گاو)",
+      "emoji": "🐂",
+      "difficulty": 4,
+      "ex": "Le minotaure dévorait les jeunes gens au centre du labyrinthe.",
+      "ex_fa": "مینوتور جوانان را در مرکز هزارتو می‌بلعید."
+    },
+    {
+      "fr": "l'ambroisie",
+      "fa": "آمبروزیا (غذای خدایان)",
+      "emoji": "🍯",
+      "difficulty": 5,
+      "ex": "L'ambroisie confère l'immortalité aux dieux de l'Olympe.",
+      "ex_fa": "آمبروزیا به خدایان المپ جاودانگی می‌بخشد."
+    },
+    {
+      "fr": "le nectar",
+      "fa": "شهد (نوشیدنی خدایان)",
+      "emoji": "🍷",
+      "difficulty": 5,
+      "ex": "Les dieux s'abreuvent de nectar lors de leurs banquets.",
+      "ex_fa": "خدایان در ضیافت‌هایشان از شهد می‌نوشند."
+    },
+    {
+      "fr": "la méduse",
+      "fa": "مدوسا (هیولای سنگ‌کننده)",
+      "emoji": "🐍",
+      "difficulty": 4,
+      "ex": "Persée a tranché la tête de la méduse en utilisant son bouclier.",
+      "ex_fa": "پرسه با استفاده از سپرش سر مدوسا را قطع کرد."
+    },
+    {
+      "fr": "le trident",
+      "fa": "سه‌شاخه (سلاح پوزئیدون)",
+      "emoji": "🔱",
+      "difficulty": 4,
+      "ex": "Poséidon frappe les flots de son trident pour provoquer des tempêtes.",
+      "ex_fa": "پوزئیدون برای ایجاد طوفان، سه‌شاخه خود را به امواج می‌کوبد."
+    },
+    {
+      "fr": "la toison d'or",
+      "fa": "پشم زرین",
+      "emoji": "🐏",
+      "difficulty": 5,
+      "ex": "Jason et les Argonautes sont partis à la conquête de la toison d'or.",
+      "ex_fa": "جیسون و آرگونات‌ها برای فتح پشم زرین به سفر رفتند."
+    },
+    {
+      "fr": "le centaure",
+      "fa": "سانتور (نیمه‌اسب نیمه‌انسان)",
+      "emoji": "🐎",
+      "difficulty": 4,
+      "ex": "Chiron est un centaure sage qui a éduqué de nombreux héros.",
+      "ex_fa": "خیرون سانتوری خردمند است که قهرمانان بسیاری را تربیت کرد."
+    },
+    {
+      "fr": "la malédiction",
+      "fa": "نفرین",
+      "emoji": "💀",
+      "difficulty": 4,
+      "ex": "La malédiction des Atrides a frappé plusieurs générations.",
+      "ex_fa": "نفرین آتریدها چندین نسل را درگیر کرد."
+    },
+    {
+      "fr": "le périple",
+      "fa": "سفر طولانی و پرماجرا",
+      "emoji": "⛵",
+      "difficulty": 5,
+      "ex": "L'Odyssée raconte le long périple d'Ulysse pour rentrer chez lui.",
+      "ex_fa": "اودیسه، سفر طولانی و پرماجرای اولیس برای بازگشت به خانه را روایت می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La quête de Jason",
+      "text": "Jason est un jeune {{BLANK_3}} grec qui doit reprendre son trône. Pour prouver sa valeur, il doit rapporter la {{BLANK_11}} magique. Il commence un long {{BLANK_14}} en mer avec ses amis. Avant de partir, ils consultent l'{{BLANK_4}} de Delphes qui leur prédit de grands dangers. Sur l'{{BLANK_1}}, Zeus et chaque {{BLANK_2}} observent les mortels. Pour gagner leur faveur, les hommes offrent du {{BLANK_8}} et de l'{{BLANK_7}} aux temples. En chemin, Jason rencontre un sage {{BLANK_12}} qui lui enseigne le combat. Il doit affronter la {{BLANK_9}} dont le regard transforme les hommes en pierre. Sur l'île de Crète, il s'aventure dans un sombre {{BLANK_5}} pour échapper au {{BLANK_6}} féroce. Poséidon, furieux, frappe les vagues de son {{BLANK_10}} pour couler leur navire. Une terrible {{BLANK_13}} pèse sur la famille de Jason, mais son courage brise le destin. Après des années d'errance, il revient victorieux.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Olympe",
+          "options": [
+            "Olympe",
+            "labyrinthe",
+            "périple",
+            "oracle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "divinité",
+          "options": [
+            "divinité",
+            "méduse",
+            "toison d'or",
+            "centaure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "héros",
+          "options": [
+            "héros",
+            "minotaure",
+            "nectar",
+            "trident"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "oracle",
+          "options": [
+            "oracle",
+            "ambroisie",
+            "malédiction",
+            "Olympe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "labyrinthe",
+          "options": [
+            "labyrinthe",
+            "trident",
+            "divinité",
+            "nectar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "minotaure",
+          "options": [
+            "minotaure",
+            "héros",
+            "oracle",
+            "périple"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "ambroisie",
+          "options": [
+            "ambroisie",
+            "méduse",
+            "toison d'or",
+            "centaure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "nectar",
+          "options": [
+            "nectar",
+            "labyrinthe",
+            "malédiction",
+            "Olympe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "méduse",
+          "options": [
+            "méduse",
+            "divinité",
+            "ambroisie",
+            "oracle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "trident",
+          "options": [
+            "trident",
+            "minotaure",
+            "héros",
+            "périple"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "toison d'or",
+          "options": [
+            "toison d'or",
+            "méduse",
+            "nectar",
+            "trident"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "centaure",
+          "options": [
+            "centaure",
+            "labyrinthe",
+            "malédiction",
+            "Olympe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "malédiction",
+          "options": [
+            "malédiction",
+            "divinité",
+            "ambroisie",
+            "oracle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "périple",
+          "options": [
+            "périple",
+            "minotaure",
+            "héros",
+            "trident"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le fil du destin",
+      "inspiration": "Le Choc des Titans (Clash of the Titans - Desmond Davis, 1981)",
+      "text": "À peine le navire Argo eut-il fendu les eaux sombres de la mer Égée que Jason sut que son {{BLANK_14}} ne faisait que commencer. Les dieux, du haut de l'{{BLANK_1}}, observaient ces mortels insolents qui osaient défier le destin. Pour récupérer la {{BLANK_11}} légitime de son père, le jeune {{BLANK_3}} devait rassembler les plus grands guerriers de Grèce. Parmi eux chevauchait un sage {{BLANK_12}}, mi-homme mi-cheval, qui lui enseignait le respect dû à chaque {{BLANK_2}} de la nature. Avant de partir, ils avaient consulté l'{{BLANK_4}} de Delphes, dont la voix enfumée avait prédit qu'un seul homme survivrait à la {{BLANK_13}} jetée par le roi usurpateur. Les épreuves seraient impitoyables. Ils devraient affronter la {{BLANK_9}} au regard pétrifiant, dont les cheveux de serpents sifflaient la mort, et échapper au dieu des océans qui frappait les falaises de son {{BLANK_10}} furieux. Mais le plus grand défi les attendait en Crète, dans les ténèbres du {{BLANK_5}}, où le {{BLANK_6}} affamé exigeait son tribut de sang humain. Là-bas, les dieux se repaissaient d'{{BLANK_7}} et de {{BLANK_8}} doré, indifférents aux larmes des mères grecques. Quand Jason revint enfin, la toison brillant comme un soleil capturé, il comprit que la véritable victoire n'était pas le trône, mais d'avoir survécu à la cruauté des cieux et des hommes, devenant lui-même une légende gravée dans le marbre éternel.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Olympe",
+          "options": [
+            "Olympe",
+            "labyrinthe",
+            "périple",
+            "oracle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "divinité",
+          "options": [
+            "divinité",
+            "méduse",
+            "toison d'or",
+            "centaure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "héros",
+          "options": [
+            "héros",
+            "minotaure",
+            "nectar",
+            "trident"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "oracle",
+          "options": [
+            "oracle",
+            "ambroisie",
+            "malédiction",
+            "Olympe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "labyrinthe",
+          "options": [
+            "labyrinthe",
+            "trident",
+            "divinité",
+            "nectar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "minotaure",
+          "options": [
+            "minotaure",
+            "héros",
+            "oracle",
+            "périple"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "ambroisie",
+          "options": [
+            "ambroisie",
+            "méduse",
+            "toison d'or",
+            "centaure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "nectar",
+          "options": [
+            "nectar",
+            "labyrinthe",
+            "malédiction",
+            "Olympe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "méduse",
+          "options": [
+            "méduse",
+            "divinité",
+            "ambroisie",
+            "oracle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "trident",
+          "options": [
+            "trident",
+            "minotaure",
+            "héros",
+            "périple"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "toison d'or",
+          "options": [
+            "toison d'or",
+            "méduse",
+            "nectar",
+            "trident"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "centaure",
+          "options": [
+            "centaure",
+            "labyrinthe",
+            "malédiction",
+            "Olympe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "malédiction",
+          "options": [
+            "malédiction",
+            "divinité",
+            "ambroisie",
+            "oracle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "périple",
+          "options": [
+            "périple",
+            "minotaure",
+            "héros",
+            "trident"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Mythologie grecque et Olympe",
+    "title_fa": "آزمون : اساطیر یونان و المپ",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La montagne sacrée de Grèce qui sert de résidence aux douze dieux principaux du panthéon grec est l'____.",
+        "options": [
+          "Olympe",
+          "labyrinthe",
+          "périple",
+          "oracle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کوه مقدس جایگاه خدایان = Olympe."
+      },
+      {
+        "type": "mcq",
+        "question": "Un être surnaturel et immortel, objet d'un culte religieux, comme Zeus ou Athéna, est une ____.",
+        "options": [
+          "divinité",
+          "méduse",
+          "toison d'or",
+          "centaure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "موجود فراطبیعی و جاودان = divinité."
+      },
+      {
+        "type": "mcq",
+        "question": "Un personnage légendaire, souvent demi-dieu, qui accomplit des exploits extraordinaires et affronte des monstres est un ____.",
+        "options": [
+          "héros",
+          "minotaure",
+          "nectar",
+          "trident"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخصیت افسانه‌ای و قهرمان = héros."
+      },
+      {
+        "type": "mcq",
+        "question": "Le prêtre ou la prêtresse qui transmet la volonté des dieux et prédit l'avenir dans un sanctuaire est l'____.",
+        "options": [
+          "oracle",
+          "ambroisie",
+          "malédiction",
+          "Olympe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیشگو و واسطه خدایان = oracle."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dédale de couloirs inextricables construit par Dédale en Crète pour y enfermer un monstre est le ____.",
+        "options": [
+          "labyrinthe",
+          "trident",
+          "divinité",
+          "nectar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هزارتوی پیچیده و گیج‌کننده = labyrinthe."
+      },
+      {
+        "type": "mcq",
+        "question": "Le monstre mythologique au corps d'homme et à la tête de taureau, enfermé dans le labyrinthe de Crète, est le ____.",
+        "options": [
+          "minotaure",
+          "héros",
+          "oracle",
+          "périple"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هیولای نیمه‌انسان نیمه‌گاو = minotaure."
+      },
+      {
+        "type": "mcq",
+        "question": "La nourriture magique et divine réservée aux dieux de l'Olympe, qui leur assure l'immortalité, est l'____.",
+        "options": [
+          "ambroisie",
+          "méduse",
+          "toison d'or",
+          "centaure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "غذای جاودان‌کننده خدایان = ambroisie."
+      },
+      {
+        "type": "mcq",
+        "question": "La boisson douce et parfumée, souvent associée au miel, que les dieux consomment lors de leurs banquets est le ____.",
+        "options": [
+          "nectar",
+          "labyrinthe",
+          "malédiction",
+          "Olympe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نوشیدنی شیرین و مقدس خدایان = nectar."
+      },
+      {
+        "type": "mcq",
+        "question": "La gorgone monstrueuse dont la chevelure est faite de serpents et dont le regard pétrifie quiconque la croise est la ____.",
+        "options": [
+          "méduse",
+          "divinité",
+          "ambroisie",
+          "oracle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هیولای مویی از مار با نگاه سنگ‌کننده = méduse."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arme à trois pointes, symbole de pouvoir sur les mers et les océans, brandie par Poséidon est le ____.",
+        "options": [
+          "trident",
+          "minotaure",
+          "héros",
+          "périple"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سلاح سه‌شاخه پوزئیدون = trident."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pelage d'un bélier volant magique, objet de la quête des Argonautes, qui symbolise la royauté et la puissance est la ____.",
+        "options": [
+          "toison d'or",
+          "méduse",
+          "nectar",
+          "trident"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پشم زرین و جادویی = toison d'or."
+      },
+      {
+        "type": "mcq",
+        "question": "La créature mythologique mi-homme mi-cheval, souvent associée à la sagesse ou à la sauvagerie, est le ____.",
+        "options": [
+          "centaure",
+          "labyrinthe",
+          "malédiction",
+          "Olympe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "موجود نیمه‌انسان نیمه‌اسب = centaure."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sort funeste jeté par un dieu ou un sorcier, qui condamne une personne ou une lignée au malheur, est la ____.",
+        "options": [
+          "malédiction",
+          "divinité",
+          "ambroisie",
+          "oracle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نفرین و سرنوشت شوم = malédiction."
+      },
+      {
+        "type": "mcq",
+        "question": "Le long voyage maritime, rempli d'épreuves et d'aventures, entrepris par un héros pour accomplir sa quête est le ____.",
+        "options": [
+          "périple",
+          "minotaure",
+          "héros",
+          "trident"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سفر طولانی و پرماجرا = périple."
+      },
+      {
+        "type": "binary",
+        "question": "L'Olympe et le Tartare désignent tous deux le lieu de résidence lumineux et joyeux des dieux grecs.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. المپ جایگاه خدایان است، اما تارتاروس زندان تاریک و زیرزمینی مجرمان است."
+      },
+      {
+        "type": "binary",
+        "question": "L'ambroisie et le nectar sont tous deux des substances consommées par les dieux de l'Olympe.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. آمبروزیا غذای خدایان و نکتار نوشیدنی آن‌هاست."
+      },
+      {
+        "type": "binary",
+        "question": "Le centaure et le minotaure sont tous deux des créatures mi-homme mi-taureau.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سانتور نیمه‌اسب است، اما مینوتور نیمه‌گاو است."
+      },
+      {
+        "type": "binary",
+        "question": "L'oracle est un lieu ou une personne qui permet de connaître l'avenir et la volonté des dieux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اوراکل واسطه‌ای برای پیشگویی و ارتباط با خدایان است."
+      },
+      {
+        "type": "binary",
+        "question": "Le trident est l'arme mythologique associée à Zeus, le roi des dieux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سه‌شاخه سلاح پوزئیدون (خدای دریاها) است، سلاح زئوس صاعقه است."
+      },
+      {
+        "type": "binary",
+        "question": "Le labyrinthe a été construit pour empêcher le minotaure de s'échapper et de terroriser la Crète.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هزارتو توسط ددالوس ساخته شد تا مینوتور را در آن زندانی کند."
+      }
+    ]
+  }
+}
