@@ -1,0 +1,680 @@
+{
+  "id": "classical_music_orchestra",
+  "level": "C1",
+  "theme": "Musique classique, orchestre et opéra",
+  "theme_fa": "موسیقی کلاسیک، ارکستر و اپرا",
+  "icon": "🎻",
+  "inspiration": "Amadeus (Miloš Forman, 1984)",
+  "words": [
+    {
+      "fr": "la symphonie",
+      "fa": "سمفونی",
+      "emoji": "🎼",
+      "difficulty": 4,
+      "ex": "La symphonie n°9 de Beethoven est un chef-d'œuvre universel.",
+      "ex_fa": "سمفونی شماره ۹ بتهوون یک شاهکار جهانی است."
+    },
+    {
+      "fr": "l'orchestre",
+      "fa": "ارکستر",
+      "emoji": "🎻",
+      "difficulty": 3,
+      "ex": "L'orchestre philharmonique compte plus de quatre-vingts musiciens.",
+      "ex_fa": "ارکستر فیلارمونیک بیش از هشتاد نوازنده دارد."
+    },
+    {
+      "fr": "le chef d'orchestre",
+      "fa": "رهبر ارکستر",
+      "emoji": "🎼",
+      "difficulty": 4,
+      "ex": "Le chef d'orchestre dirige les musiciens avec sa baguette.",
+      "ex_fa": "رهبر ارکستر با چوب خود نوازندگان را هدایت می‌کند."
+    },
+    {
+      "fr": "la partition",
+      "fa": "پارتیتور، نت‌نوشته",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "La partition originale contient toutes les lignes instrumentales.",
+      "ex_fa": "پارتیتور اصلی شامل تمام خطوط سازی است."
+    },
+    {
+      "fr": "l'opéra",
+      "fa": "اپرا",
+      "emoji": "🎭",
+      "difficulty": 3,
+      "ex": "L'opéra de Vienne est considéré comme l'un des meilleurs du monde.",
+      "ex_fa": "اپرای وین یکی از بهترین‌های جهان محسوب می‌شود."
+    },
+    {
+      "fr": "le concerto",
+      "fa": "کنسرتو",
+      "emoji": "🎹",
+      "difficulty": 4,
+      "ex": "Le concerto pour violon met en valeur le soliste virtuose.",
+      "ex_fa": "کنسرتوی ویولن، تکنواز چیره‌دست را برجسته می‌کند."
+    },
+    {
+      "fr": "le virtuose",
+      "fa": "نوازنده چیره‌دست",
+      "emoji": "🎻",
+      "difficulty": 4,
+      "ex": "Le virtuose du piano a commencé à jouer dès l'âge de quatre ans.",
+      "ex_fa": "نوازنده چیره‌دست پیانو از چهارسالگی نواختن را آغاز کرد."
+    },
+    {
+      "fr": "l'archet",
+      "fa": "آرشه",
+      "emoji": "🎻",
+      "difficulty": 4,
+      "ex": "L'archet en crin de cheval frotte les cordes du violon.",
+      "ex_fa": "آرشه مویی، سیم‌های ویولن را می‌ساید."
+    },
+    {
+      "fr": "le diapason",
+      "fa": "دیاپازون",
+      "emoji": "🎵",
+      "difficulty": 5,
+      "ex": "Le diapason donne la note de référence pour accorder l'orchestre.",
+      "ex_fa": "دیاپازون نت مرجع برای کوک ارکستر را می‌دهد."
+    },
+    {
+      "fr": "la gamme",
+      "fa": "گام موسیقی",
+      "emoji": "🎹",
+      "difficulty": 4,
+      "ex": "La gamme majeure a une sonorité joyeuse et lumineuse.",
+      "ex_fa": "گام ماژور صدایی شاد و درخشان دارد."
+    },
+    {
+      "fr": "la mesure",
+      "fa": "میزان",
+      "emoji": "📏",
+      "difficulty": 4,
+      "ex": "La mesure à trois temps est caractéristique de la valse.",
+      "ex_fa": "میزان سه‌ضربی مشخصه والس است."
+    },
+    {
+      "fr": "le pupitre",
+      "fa": "پایه نت",
+      "emoji": "🎼",
+      "difficulty": 4,
+      "ex": "Chaque musicien dispose d'un pupitre pour lire sa partition.",
+      "ex_fa": "هر نوازنده یک پایه نت برای خواندن پارتیتور خود دارد."
+    },
+    {
+      "fr": "l'entracte",
+      "fa": "آنتراکت (استراحت بین پرده)",
+      "emoji": "⏸️",
+      "difficulty": 4,
+      "ex": "Pendant l'entracte, le public peut se dégourdir les jambes.",
+      "ex_fa": "در زمان آنتراکت، تماشاگران می‌توانند استراحت کنند."
+    },
+    {
+      "fr": "la cadence",
+      "fa": "کادنس، پایان‌بندی",
+      "emoji": "🎶",
+      "difficulty": 5,
+      "ex": "La cadence finale conclut magistralement le mouvement.",
+      "ex_fa": "کادنس پایانی، موومان را استادانه به پایان می‌رساند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le génie maudit",
+      "text": "Wolfgang Amadeus Mozart est un {{BLANK_7}} précoce qui compose dès l'enfance. Son rival, le {{BLANK_3}} Antonio Salieri, le déteste secrètement. Mozart écrit une nouvelle {{BLANK_1}} révolutionnaire qui bouleverse toutes les conventions. Il dirige lui-même l'{{BLANK_2}} de Vienne d'un geste précis. Chaque musicien a sa {{BLANK_4}} personnelle posée sur un {{BLANK_12}} en bois. Les violonistes manient leur {{BLANK_8}} avec une virtuosité stupéfiante. Avant le concert, un {{BLANK_9}} donne le la pour accorder les instruments. Mozart joue une {{BLANK_10}} chromatique complexe au piano. La {{BLANK_11}} à quatre temps impose un rythme rigoureux à l'ensemble. Le public retient son souffle pendant toute la {{BLANK_14}} finale du mouvement. À l'{{BLANK_13}}, les spectateurs discutent passionnément dans les couloirs dorés. Quand Mozart compose son {{BLANK_6}} pour piano, il imagine déjà les applaudissements. Mais bientôt, il sera oublié dans la misère, composant son ultime {{BLANK_5}} alors que la mort l'attend.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "symphonie",
+          "options": [
+            "symphonie",
+            "orchestre",
+            "chef d'orchestre",
+            "partition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "orchestre",
+          "options": [
+            "orchestre",
+            "opéra",
+            "concerto",
+            "virtuose"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "chef d'orchestre",
+          "options": [
+            "chef d'orchestre",
+            "archet",
+            "diapason",
+            "gamme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "partition",
+          "options": [
+            "partition",
+            "mesure",
+            "pupitre",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "opéra",
+          "options": [
+            "opéra",
+            "cadence",
+            "symphonie",
+            "orchestre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "concerto",
+          "options": [
+            "concerto",
+            "chef d'orchestre",
+            "partition",
+            "opéra"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "virtuose",
+          "options": [
+            "virtuose",
+            "archet",
+            "diapason",
+            "gamme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "archet",
+          "options": [
+            "archet",
+            "mesure",
+            "pupitre",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "diapason",
+          "options": [
+            "diapason",
+            "cadence",
+            "symphonie",
+            "orchestre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "gamme",
+          "options": [
+            "gamme",
+            "chef d'orchestre",
+            "partition",
+            "opéra"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "mesure",
+          "options": [
+            "mesure",
+            "concerto",
+            "virtuose",
+            "archet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "pupitre",
+          "options": [
+            "pupitre",
+            "diapason",
+            "gamme",
+            "mesure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "entracte",
+          "options": [
+            "entracte",
+            "cadence",
+            "symphonie",
+            "orchestre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "cadence",
+          "options": [
+            "cadence",
+            "chef d'orchestre",
+            "partition",
+            "opéra"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La musique de Dieu",
+      "inspiration": "Amadeus (Miloš Forman, 1984)",
+      "text": "À peine Salieri eut-il entendu les premières notes de la {{BLANK_1}} que ses genoux fléchirent sous le poids d'une beauté insupportable. Lui, le médiocre {{BLANK_3}} de la cour impériale, comprenait enfin que Dieu avait choisi un bouffon obscène pour être son porte-voix sur Terre. Cet enfant terrible qu'était Mozart, ce {{BLANK_7}} précoce aux rires de dément, écrivait des {{BLANK_4}}s entières de mémoire, sans une seule rature, comme si les anges eux-mêmes lui dictaient chaque note. Quand il dirigeait l'{{BLANK_2}} de Vienne, sa baguette traçait dans l'air des architectures invisibles. Les violonistes, leurs {{BLANK_8}}s dansant sur les cordes, pleuraient de joie en jouant ses mélodies. Le {{BLANK_9}} avait à peine donné le la que déjà l'univers se mettait en place. Chaque {{BLANK_10}} qu'il inventait semblait exister depuis la création du monde. Sur son {{BLANK_12}} modeste, il composait un {{BLANK_6}} qui ferait pleurer les générations futures, tandis que la {{BLANK_11}} rigoureuse imposait son ordre divin au chaos humain. À l'{{BLANK_13}}, les aristocrates poudrés chuchotaient, incapables de comprendre qu'ils venaient d'assister à un miracle. Et quand la {{BLANK_14}} finale résonna dans la salle dorée, Salieri sut qu'il passerait sa vie à écrire un {{BLANK_5}} médiocre pour un Dieu qui l'avait trahi en offrant l'éternité à un enfant indigne.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "symphonie",
+          "options": [
+            "symphonie",
+            "orchestre",
+            "chef d'orchestre",
+            "partition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "orchestre",
+          "options": [
+            "orchestre",
+            "opéra",
+            "concerto",
+            "virtuose"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "chef d'orchestre",
+          "options": [
+            "chef d'orchestre",
+            "archet",
+            "diapason",
+            "gamme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "partition",
+          "options": [
+            "partition",
+            "mesure",
+            "pupitre",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "opéra",
+          "options": [
+            "opéra",
+            "cadence",
+            "symphonie",
+            "orchestre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "concerto",
+          "options": [
+            "concerto",
+            "chef d'orchestre",
+            "partition",
+            "opéra"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "virtuose",
+          "options": [
+            "virtuose",
+            "archet",
+            "diapason",
+            "gamme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "archet",
+          "options": [
+            "archet",
+            "mesure",
+            "pupitre",
+            "entracte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "diapason",
+          "options": [
+            "diapason",
+            "cadence",
+            "symphonie",
+            "orchestre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "gamme",
+          "options": [
+            "gamme",
+            "chef d'orchestre",
+            "partition",
+            "opéra"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "mesure",
+          "options": [
+            "mesure",
+            "concerto",
+            "virtuose",
+            "archet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "pupitre",
+          "options": [
+            "pupitre",
+            "diapason",
+            "gamme",
+            "mesure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "entracte",
+          "options": [
+            "entracte",
+            "cadence",
+            "symphonie",
+            "orchestre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "cadence",
+          "options": [
+            "cadence",
+            "chef d'orchestre",
+            "partition",
+            "opéra"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Musique classique",
+    "title_fa": "آزمون : موسیقی کلاسیک",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La grande composition musicale pour orchestre, généralement en quatre mouvements, est la ____.",
+        "options": [
+          "symphonie",
+          "orchestre",
+          "chef d'orchestre",
+          "partition"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اثر بزرگ ارکسترال در چهار موومان = symphonie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble de musiciens jouant des instruments variés sous la direction d'un chef est l'____.",
+        "options": [
+          "orchestre",
+          "opéra",
+          "concerto",
+          "virtuose"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گروه نوازندگان با رهبر = orchestre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le musicien qui dirige l'orchestre avec une baguette et coordonne l'interprétation est le ____.",
+        "options": [
+          "chef d'orchestre",
+          "archet",
+          "diapason",
+          "gamme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رهبر ارکستر با چوب = chef d'orchestre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le document écrit qui contient toutes les lignes musicales de chaque instrument est la ____.",
+        "options": [
+          "partition",
+          "mesure",
+          "pupitre",
+          "entracte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سند نت‌نوشته همه سازها = partition."
+      },
+      {
+        "type": "mcq",
+        "question": "Le spectacle lyrique mêlant chant, musique orchestrale, théâtre et décors est l'____.",
+        "options": [
+          "opéra",
+          "cadence",
+          "symphonie",
+          "orchestre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نمایش موسیقیایی ترکیبی = opéra."
+      },
+      {
+        "type": "mcq",
+        "question": "La composition musicale qui met en valeur un instrument soliste accompagné par l'orchestre est le ____.",
+        "options": [
+          "concerto",
+          "chef d'orchestre",
+          "partition",
+          "opéra"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اثر برای تکنواز و ارکستر = concerto."
+      },
+      {
+        "type": "mcq",
+        "question": "Le musicien qui possède une maîtrise technique exceptionnelle de son instrument est le ____.",
+        "options": [
+          "virtuose",
+          "archet",
+          "diapason",
+          "gamme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نوازنده با مهارت استثنایی = virtuose."
+      },
+      {
+        "type": "mcq",
+        "question": "La baguette en bois munie de crins qui sert à frotter les cordes des instruments à archet est l'____.",
+        "options": [
+          "archet",
+          "mesure",
+          "pupitre",
+          "entracte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چوب مودار برای نواختن ساز زهی = archet."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit instrument métallique en forme de Y qui produit une note de référence pour accorder les instruments est le ____.",
+        "options": [
+          "diapason",
+          "cadence",
+          "symphonie",
+          "orchestre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار کوک‌کننده مرجع = diapason."
+      },
+      {
+        "type": "mcq",
+        "question": "La succession ordonnée de notes musicales selon un mode spécifique (majeur ou mineur) est la ____.",
+        "options": [
+          "gamme",
+          "chef d'orchestre",
+          "partition",
+          "opéra"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ترتیب نت‌ها در یک مد = gamme."
+      },
+      {
+        "type": "mcq",
+        "question": "L'unité de temps musical qui regroupe un certain nombre de temps forts et faibles est la ____.",
+        "options": [
+          "mesure",
+          "concerto",
+          "virtuose",
+          "archet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واحد زمانی موسیقی = mesure."
+      },
+      {
+        "type": "mcq",
+        "question": "Le support incliné sur lequel le musicien pose sa partition pour la lire est le ____.",
+        "options": [
+          "pupitre",
+          "diapason",
+          "gamme",
+          "mesure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پایه نگهدارنده نت = pupitre."
+      },
+      {
+        "type": "mcq",
+        "question": "La pause entre deux actes ou deux parties d'un spectacle, qui permet au public de se reposer, est l'____.",
+        "options": [
+          "entracte",
+          "cadence",
+          "symphonie",
+          "orchestre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استراحت بین پرده‌ها = entracte."
+      },
+      {
+        "type": "mcq",
+        "question": "Le passage conclusif d'un mouvement, souvent virtuose, qui termine brillamment l'œuvre est la ____.",
+        "options": [
+          "cadence",
+          "chef d'orchestre",
+          "partition",
+          "opéra"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پایان‌بندی درخشان موومان = cadence."
+      },
+      {
+        "type": "binary",
+        "question": "La partition contient uniquement la ligne mélodique du chanteur principal dans un opéra.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پارتیتور (partition) شامل تمام خطوط سازی و آوازی اثر است، نه فقط یک صدا."
+      },
+      {
+        "type": "binary",
+        "question": "Un concerto est une œuvre qui oppose ou associe un instrument soliste à l'orchestre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کنسرتو (concerto) تکنواز را در برابر یا همراه ارکستر قرار می‌دهد."
+      },
+      {
+        "type": "binary",
+        "question": "Le diapason produit une note de référence (généralement le la 440 Hz) pour accorder les instruments.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دیاپازون نت مرجع (معمولاً لا ۴۴۰ هرتز) تولید می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "L'archet est une petite flûte traversière utilisée dans la musique baroque.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. آرشه (archet) چوب موداری است که روی سیم‌های ساز زهی کشیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "L'entracte est le moment où tous les musiciens jouent ensemble à l'unisson.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. آنتراکت (entracte) زمان استراحت بین پرده‌هاست، نه اجرای موسیقی."
+      },
+      {
+        "type": "binary",
+        "question": "Une cadence est un passage virtuose souvent improvisé qui conclut un mouvement de concerto.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کادنس (cadence) بخشی تکنوازی و درخشان در پایان موومان کنسرتو است."
+      }
+    ]
+  }
+}
