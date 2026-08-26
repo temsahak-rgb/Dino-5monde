@@ -1,0 +1,660 @@
+{
+  "id": "work_business_art",
+  "level": "C1",
+  "theme": "Travail, affaires, médias et art",
+  "theme_fa": "محیط کار، تجارت، رسانه و هنر",
+  "icon": "💼",
+  "inspiration": "Succession (Jesse Armstrong, HBO, 2018-2023)",
+  "words": [
+    {
+      "fr": "le mécénat",
+      "fa": "حمایت مالی از هنر و فرهنگ",
+      "emoji": "🎨",
+      "difficulty": 5,
+      "ex": "Le mécénat d'entreprise permet de financer de nombreuses expositions.",
+      "ex_fa": "حمایت مالی شرکت‌ها امکان تأمین مالی نمایشگاه‌های بسیاری را فراهم می‌کند."
+    },
+    {
+      "fr": "la plus-value",
+      "fa": "ارزش افزوده، سود سرمایه",
+      "emoji": "📈",
+      "difficulty": 4,
+      "ex": "La vente de cet immeuble a généré une importante plus-value.",
+      "ex_fa": "فروش این ساختمان ارزش افزوده قابل توجهی ایجاد کرد."
+    },
+    {
+      "fr": "l'appel d'offres",
+      "fa": "مناقصه",
+      "emoji": "📋",
+      "difficulty": 4,
+      "ex": "L'entreprise a remporté l'appel d'offres pour la construction du pont.",
+      "ex_fa": "شرکت در مناقصه ساخت پل برنده شد."
+    },
+    {
+      "fr": "la clause",
+      "fa": "بند قرارداد",
+      "emoji": "📝",
+      "difficulty": 3,
+      "ex": "Le contrat contient une clause de non-concurrence très stricte.",
+      "ex_fa": "قرارداد شامل یک بند عدم رقابت بسیار سخت‌گیرانه است."
+    },
+    {
+      "fr": "le consortium",
+      "fa": "کنسرسیوم، اتحادیه شرکت‌ها",
+      "emoji": "🏢",
+      "difficulty": 4,
+      "ex": "Un consortium international a été formé pour ce projet énergétique.",
+      "ex_fa": "یک کنسرسیوم بین‌المللی برای این پروژه انرژی تشکیل شد."
+    },
+    {
+      "fr": "la cession",
+      "fa": "واگذاری، انتقال مالکیت",
+      "emoji": "🤝",
+      "difficulty": 4,
+      "ex": "La cession de la filiale a été finalisée hier.",
+      "ex_fa": "واگذاری شرکت تابعه دیروز نهایی شد."
+    },
+    {
+      "fr": "le vernissage",
+      "fa": "افتتاحیه نمایشگاه هنری",
+      "emoji": "🖼️",
+      "difficulty": 4,
+      "ex": "Le vernissage de l'exposition a attiré tout le milieu artistique parisien.",
+      "ex_fa": "افتتاحیه نمایشگاه تمام محافل هنری پاریس را جذب کرد."
+    },
+    {
+      "fr": "la cote",
+      "fa": "ارزش، اعتبار (هنرمند یا شرکت)",
+      "emoji": "⭐",
+      "difficulty": 4,
+      "ex": "La cote de cet artiste sur le marché international ne cesse de monter.",
+      "ex_fa": "ارزش این هنرمند در بازار بین‌المللی پیوسته در حال افزایش است."
+    },
+    {
+      "fr": "l'éditorial",
+      "fa": "سرمقاله",
+      "emoji": "📰",
+      "difficulty": 3,
+      "ex": "L'éditorial du journal critique sévèrement la politique gouvernementale.",
+      "ex_fa": "سرمقاله روزنامه به شدت از سیاست دولتی انتقاد می‌کند."
+    },
+    {
+      "fr": "le tirage",
+      "fa": "تیراژ",
+      "emoji": "🗞️",
+      "difficulty": 3,
+      "ex": "Le tirage de ce quotidien dépasse les cinq cent mille exemplaires.",
+      "ex_fa": "تیراژ این روزنامه از پانصد هزار نسخه فراتر می‌رود."
+    },
+    {
+      "fr": "la chronique",
+      "fa": "ستون روزنامه، نقد دوره‌ای",
+      "emoji": "✍️",
+      "difficulty": 4,
+      "ex": "Elle tient une chronique littéraire dans un magazine culturel.",
+      "ex_fa": "او یک ستون ادبی در یک مجله فرهنگی می‌نویسد."
+    },
+    {
+      "fr": "le mécène",
+      "fa": "حامی هنری، نیکوکار فرهنگی",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "Ce riche mécène finance la restauration de monuments historiques.",
+      "ex_fa": "این حامی ثروتمند، بازسازی بناهای تاریخی را تأمین مالی می‌کند."
+    },
+    {
+      "fr": "le cahier des charges",
+      "fa": "دفترچه شرایط فنی",
+      "emoji": "📑",
+      "difficulty": 4,
+      "ex": "Le cahier des charges précise toutes les spécifications techniques du projet.",
+      "ex_fa": "دفترچه شرایط تمام مشخصات فنی پروژه را تعیین می‌کند."
+    },
+    {
+      "fr": "la synergie",
+      "fa": "هم‌افزایی",
+      "emoji": "🔗",
+      "difficulty": 4,
+      "ex": "La fusion a créé d'importantes synergies entre les deux entreprises.",
+      "ex_fa": "ادغام، هم‌افزایی‌های مهمی بین دو شرکت ایجاد کرد."
+    },
+    {
+      "fr": "la curation",
+      "fa": "گلچین‌گری محتوا",
+      "emoji": "🎯",
+      "difficulty": 5,
+      "ex": "La curation de contenus est devenue un métier à part entière.",
+      "ex_fa": "گلچین‌گری محتوا به یک شغل مستقل تبدیل شده است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le grand projet",
+      "title_fa": "پروژه بزرگ",
+      "text": "Sophie travaillait dans une grande agence de communication. Un jour, son entreprise a répondu à un {{BLANK_1}} lancé par la mairie de Paris pour organiser un festival d'art contemporain. Le {{BLANK_2}} du projet était très détaillé : il fallait prévoir les lumières, la sécurité et les espaces d'exposition. Sophie a négocié avec un {{BLANK_3}} de plusieurs galeries pour partager les coûts. Elle a aussi contacté un {{BLANK_4}} célèbre, un riche industriel passionné d'art, qui a accepté de financer une partie du projet grâce au {{BLANK_5}}. Le jour du {{BLANK_6}}, tout le monde était là : artistes, journalistes et collectionneurs. La {{BLANK_7}} de Sophie dans le milieu a beaucoup augmenté après cet événement. Le journal local a même publié un {{BLANK_8}} très élogieux sur son travail, et le {{BLANK_9}} du magazine a été épuisé en quelques heures. Une {{BLANK_10}} spécialisée a salué la qualité de la programmation. Grâce aux {{BLANK_11}} créées entre les différents partenaires, l'événement a été un grand succès. La mairie a été si satisfaite qu'elle a proposé une {{BLANK_12}} des droits d'organisation pour les trois années suivantes. Le contrat contenait une {{BLANK_13}} importante interdisant à Sophie de travailler avec des villes concurrentes. Au final, cette opération a généré une belle {{BLANK_14}} pour l'agence. Quant à Sophie, elle a été félicitée pour son excellent travail de {{BLANK_15}} des œuvres présentées.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "appel d'offres",
+          "options": [
+            "appel d'offres",
+            "vernissage",
+            "mécénat",
+            "éditorial"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "cahier des charges",
+          "options": [
+            "cahier des charges",
+            "consortium",
+            "tirage",
+            "curation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "consortium",
+          "options": [
+            "consortium",
+            "mécène",
+            "synergie",
+            "cession"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "mécène",
+          "options": [
+            "mécène",
+            "chronique",
+            "cote",
+            "clause"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mécénat",
+          "options": [
+            "mécénat",
+            "plus-value",
+            "synergie",
+            "cahier des charges"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "vernissage",
+          "options": [
+            "vernissage",
+            "cession",
+            "appel d'offres",
+            "éditorial"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "cote",
+          "options": [
+            "cote",
+            "chronique",
+            "curation",
+            "cession"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "éditorial",
+          "options": [
+            "éditorial",
+            "tirage",
+            "mécénat",
+            "synergie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "tirage",
+          "options": [
+            "tirage",
+            "cahier des charges",
+            "consortium",
+            "curation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "chronique",
+          "options": [
+            "chronique",
+            "plus-value",
+            "cote",
+            "clause"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "synergies",
+          "options": [
+            "synergies",
+            "cessions",
+            "clauses",
+            "cotes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "cession",
+          "options": [
+            "cession",
+            "curation",
+            "mécénat",
+            "synergie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "clause",
+          "options": [
+            "clause",
+            "cote",
+            "chronique",
+            "cession"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "plus-value",
+          "options": [
+            "plus-value",
+            "mécénat",
+            "synergie",
+            "curation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "curation",
+          "options": [
+            "curation",
+            "chronique",
+            "cession",
+            "cote"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'empire en héritage",
+      "title_fa": "امپراتوری موروثی",
+      "inspiration": "Succession (Jesse Armstrong, HBO, 2018-2023)",
+      "text": "À peine le vieil homme eut-il annoncé sa décision que le silence retomba sur la salle de conseil comme un couperet. Logan Roy, fondateur de l'empire médiatique Waystar Royco, venait de déclarer à ses quatre enfants qu'il entendait organiser la {{BLANK_1}} progressive de ses parts avant la fin de l'année. Kendall, l'aîné, blêmit : il s'attendait à hériter de la totalité, mais son père avait d'autres projets. Autour de la table d'acajou, les regards se croisèrent, lourds de calculs et de non-dits. Depuis des mois, un {{BLANK_2}} composé de fonds souverains et de banques d'investissement manifestait son intérêt pour le rachat de la branche européenne du groupe. Les négociations, menées dans le plus grand secret, avaient abouti à un {{BLANK_3}} précisant les conditions de reprise. Chaque {{BLANK_4}} du document avait été pesée, discutée, contestée par les avocats de chaque partie. Logan savait que cette opération générerait une {{BLANK_5}} considérable, mais il savait aussi que le marché attendait de lui un geste symbolique. C'est ainsi qu'il annonça, le soir même, lors d'un {{BLANK_6}} organisé dans sa galerie privée, qu'il devenait {{BLANK_7}} officiel du Metropolitan Museum, consacrant une partie de sa fortune au {{BLANK_8}} d'œuvres contemporaines. La presse ne tarda pas à réagir. Le lendemain, un {{BLANK_9}} cinglant paraissait en une du Financial Times, s'interrogeant sur les motivations réelles du magnat. La {{BLANK_10}} financière du lendemain analysait longuement l'impact boursier de l'opération. Les analystes s'accordaient à dire que la {{BLANK_11}} personnelle de Logan, déjà haute, sortirait renforcée de ce coup d'éclat. Dans l'ombre, cependant, ses enfants fourbissaient leurs armes. Shiv, la cadette, tenait une {{BLANK_12}} politique influente dans un grand quotidien new-yorkais, et comptait bien utiliser cette tribune pour contester les choix paternels. Roman, lui, préférait agir dans les coulisses, orchestrant une subtile {{BLANK_13}} des contenus diffusés sur les chaînes familiales. Quant aux {{BLANK_14}} promises entre les différentes entités du groupe, elles semblaient de plus en plus hypothétiques à mesure que les rivalités fraternelles s'exacerbaient. Bientôt, le {{BLANK_15}} initial ne serait plus qu'un lointain souvenir, noyé sous les manœuvres et les trahisons d'une famille pour qui le pouvoir était la seule véritable œuvre d'art.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cession",
+          "options": [
+            "cession",
+            "synergie",
+            "curation",
+            "clause"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "consortium",
+          "options": [
+            "consortium",
+            "mécène",
+            "éditorial",
+            "tirage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "cahier des charges",
+          "options": [
+            "cahier des charges",
+            "vernissage",
+            "chronique",
+            "mécénat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "clause",
+          "options": [
+            "clause",
+            "cote",
+            "cession",
+            "synergie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "plus-value",
+          "options": [
+            "plus-value",
+            "curation",
+            "mécénat",
+            "chronique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "vernissage",
+          "options": [
+            "vernissage",
+            "appel d'offres",
+            "éditorial",
+            "tirage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "mécène",
+          "options": [
+            "mécène",
+            "consortium",
+            "chronique",
+            "cote"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "mécénat",
+          "options": [
+            "mécénat",
+            "synergie",
+            "cession",
+            "curation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "éditorial",
+          "options": [
+            "éditorial",
+            "cahier des charges",
+            "vernissage",
+            "consortium"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "chronique",
+          "options": [
+            "chronique",
+            "clause",
+            "cote",
+            "cession"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "cote",
+          "options": [
+            "cote",
+            "plus-value",
+            "synergie",
+            "curation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "chronique",
+          "options": [
+            "chronique",
+            "cession",
+            "curation",
+            "mécénat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "curation",
+          "options": [
+            "curation",
+            "synergie",
+            "clause",
+            "cession"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "synergies",
+          "options": [
+            "synergies",
+            "cessions",
+            "cotes",
+            "clauses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "appel d'offres",
+          "options": [
+            "appel d'offres",
+            "vernissage",
+            "mécénat",
+            "tirage"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Monde des affaires, médias et art",
+    "title_fa": "آزمون : دنیای تجارت، رسانه و هنر",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Une mairie veut construire une nouvelle école. Elle publie un document pour que plusieurs entreprises proposent leur prix. C'est un ____.",
+        "options": [
+          "appel d'offres",
+          "vernissage",
+          "mécénat",
+          "éditorial"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درخواست رسمی برای دریافت پیشنهادهای رقابتی = مناقصه."
+      },
+      {
+        "type": "mcq",
+        "question": "Un artiste vend une toile achetée 10 000€ il y a dix ans pour 50 000€. Il réalise une ____ de 40 000€.",
+        "options": [
+          "plus-value",
+          "cession",
+          "synergie",
+          "curation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سود حاصل از فروش بالاتر از قیمت خرید = ارزش افزوده."
+      },
+      {
+        "type": "mcq",
+        "question": "Trois entreprises s'associent pour construire ensemble une ligne de train à grande vitesse. Elles forment un ____.",
+        "options": [
+          "consortium",
+          "mécène",
+          "éditorial",
+          "tirage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اتحاد موقت چند شرکت برای پروژه‌ای مشترک = کنسرسیوم."
+      },
+      {
+        "type": "mcq",
+        "question": "Le propriétaire d'une entreprise décide de vendre 40% de ses parts à un investisseur. Cette opération est une ____.",
+        "options": [
+          "cession",
+          "synergie",
+          "curation",
+          "clause"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انتقال مالکیت بخشی از شرکت = واگذاری."
+      },
+      {
+        "type": "mcq",
+        "question": "Le soir de l'ouverture officielle d'une exposition, artistes et invités se réunissent pour découvrir les œuvres autour d'un verre. C'est le ____.",
+        "options": [
+          "vernissage",
+          "appel d'offres",
+          "éditorial",
+          "mécénat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مراسم افتتاحیه نمایشگاه هنری = vernissage."
+      },
+      {
+        "type": "mcq",
+        "question": "Sur le marché de l'art, cet artiste voit ses tableaux se vendre de plus en plus cher. Sa ____ monte.",
+        "options": [
+          "cote",
+          "chronique",
+          "cession",
+          "clause"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارزش و اعتبار یک هنرمند در بازار = cote."
+      },
+      {
+        "type": "mcq",
+        "question": "Au début du journal, le directeur de publication écrit un texte pour donner sa position sur un sujet d'actualité. C'est l'____.",
+        "options": [
+          "éditorial",
+          "tirage",
+          "cahier des charges",
+          "consortium"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سرمقاله‌ای که موضع رسمی روزنامه را بیان می‌کند = éditorial."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce quotidien imprime chaque jour 300 000 exemplaires. Son ____ est de 300 000.",
+        "options": [
+          "tirage",
+          "cote",
+          "mécénat",
+          "synergie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تعداد نسخه‌های چاپ شده روزنامه = tirage."
+      },
+      {
+        "type": "mcq",
+        "question": "Chaque semaine, cette journaliste écrit un texte régulier sur la cuisine dans un magazine. Elle tient une ____.",
+        "options": [
+          "chronique",
+          "cession",
+          "curation",
+          "clause"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ستون منظم و تخصصی در نشریه = chronique."
+      },
+      {
+        "type": "mcq",
+        "question": "Un riche collectionneur donne chaque année des millions pour aider de jeunes artistes à exposer leurs œuvres. C'est un ____.",
+        "options": [
+          "mécène",
+          "consortium",
+          "éditorial",
+          "chronique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که از هنر و هنرمندان حمایت مالی می‌کند = mécène."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans un contrat de travail, une phrase précise que l'employé ne pourra pas travailler pour un concurrent pendant deux ans après son départ. Cette phrase est une ____.",
+        "options": [
+          "clause",
+          "cote",
+          "cession",
+          "synergie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده یا بند مشخص در قرارداد = clause."
+      },
+      {
+        "type": "mcq",
+        "question": "Deux entreprises fusionnent et découvrent qu'en mettant en commun leurs services marketing, elles sont plus efficaces qu'avant. Elles créent des ____.",
+        "options": [
+          "synergies",
+          "cessions",
+          "clauses",
+          "cotes"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هم‌افزایی که نتیجه همکاری بیش از مجموع اجزا است = synergie."
+      },
+      {
+        "type": "mcq",
+        "question": "Avant de lancer la construction, l'architecte rédige un document détaillant toutes les exigences techniques du bâtiment. C'est le ____.",
+        "options": [
+          "cahier des charges",
+          "consortium",
+          "vernissage",
+          "éditorial"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سند فنی که الزامات پروژه را تعیین می‌کند = دفترچه شرایط."
+      },
+      {
+        "type": "binary",
+        "question": "La curation consiste à créer soi-même des contenus originaux pour les réseaux sociaux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "curation یعنی گلچین و سازماندهی محتوای موجود، نه تولید محتوای جدید."
+      },
+      {
+        "type": "binary",
+        "question": "Le mécénat et le sponsoring sont exactement la même chose.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "mécénat حمایت بدون انتظار بازگشت مستقیم تجاری است، اما sponsoring با اهداف تبلیغاتی مشخص انجام می‌شود."
+      }
+    ]
+  }
+}
