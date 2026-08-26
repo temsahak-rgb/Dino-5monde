@@ -1,0 +1,485 @@
+{
+  "id": "work_business_daily",
+  "level": "C1",
+  "theme": "Travail, affaires et vie quotidienne",
+  "theme_fa": "محیط کار، تجارت و زندگی روزمره",
+  "icon": "💼",
+  "inspiration": "The Devil Wears Prada (Lauren Weisberger / David Frankel, 2006)",
+  "words": [
+    {
+      "fr": "le curriculum vitae",
+      "fa": "رزومه",
+      "emoji": "📄",
+      "difficulty": 3,
+      "ex": "Envoyez votre curriculum vitae avant le 15 du mois.",
+      "ex_fa": "رزومه خود را قبل از پانزدهم ماه ارسال کنید."
+    },
+    {
+      "fr": "la démission",
+      "fa": "استعفا",
+      "emoji": "📤",
+      "difficulty": 3,
+      "ex": "Sa démission a pris effet le premier janvier.",
+      "ex_fa": "استعفای او از اول ژانویه لازم‌الاجرا شد."
+    },
+    {
+      "fr": "l'entretien",
+      "fa": "مصاحبه",
+      "emoji": "🎤",
+      "difficulty": 3,
+      "ex": "L'entretien d'embauche aura lieu demain à dix heures.",
+      "ex_fa": "مصاحبه استخدامی فردا ساعت ده برگزار خواهد شد."
+    },
+    {
+      "fr": "la promotion",
+      "fa": "ترفیع",
+      "emoji": "⬆️",
+      "difficulty": 3,
+      "ex": "Elle a obtenu une promotion après cinq ans de bons services.",
+      "ex_fa": "او پس از پنج سال خدمات خوب، ترفیع گرفت."
+    },
+    {
+      "fr": "la rémunération",
+      "fa": "حقوق و دستمزد",
+      "emoji": "💵",
+      "difficulty": 4,
+      "ex": "La rémunération comprend le salaire et les primes.",
+      "ex_fa": "حقوق شامل دستمزد و پاداش‌ها می‌شود."
+    },
+    {
+      "fr": "le stagiaire",
+      "fa": "کارآموز",
+      "emoji": "👨‍💼",
+      "difficulty": 3,
+      "ex": "Le stagiaire apprend le métier sous la supervision d'un tuteur.",
+      "ex_fa": "کارآموز تحت نظارت یک مربی، حرفه را می‌آموزد."
+    },
+    {
+      "fr": "la carrière",
+      "fa": "مسیر شغلی",
+      "emoji": "📈",
+      "difficulty": 3,
+      "ex": "Il a consacré toute sa carrière à la recherche médicale.",
+      "ex_fa": "او تمام مسیر شغلی‌اش را وقف پژوهش پزشکی کرد."
+    },
+    {
+      "fr": "le chômage",
+      "fa": "بیکاری",
+      "emoji": "🚫",
+      "difficulty": 3,
+      "ex": "Le taux de chômage a diminué de deux points cette année.",
+      "ex_fa": "نرخ بیکاری امسال دو واحد کاهش یافت."
+    },
+    {
+      "fr": "la retraite",
+      "fa": "بازنشستگی",
+      "emoji": "🌴",
+      "difficulty": 3,
+      "ex": "Il prendra sa retraite à l'âge de soixante-cinq ans.",
+      "ex_fa": "او در سن شصت و پنج سالگی بازنشسته خواهد شد."
+    },
+    {
+      "fr": "le syndicat",
+      "fa": "اتحادیه کارگری",
+      "emoji": "✊",
+      "difficulty": 3,
+      "ex": "Le syndicat a appelé à la grève générale.",
+      "ex_fa": "اتحادیه کارگری فراخوان اعتصاب عمومی داد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le premier emploi",
+      "title_fa": "اولین شغل",
+      "text": "Julie vient de terminer ses études. Elle cherche son premier emploi. D'abord, elle prépare son {{BLANK_1}} avec soin. Elle l'envoie à plusieurs entreprises. Une grande société de mode l'appelle pour un {{BLANK_2}}. Le jour J, Julie est nerveuse. Elle arrive en avance, bien habillée. La directrice des ressources humaines lui pose beaucoup de questions sur sa {{BLANK_3}} future et ses ambitions. À la fin de l'entretien, Julie demande des précisions sur la {{BLANK_4}} proposée. On lui explique qu'elle comprend un salaire de base, des primes et des avantages en nature. Deux semaines plus tard, Julie reçoit la bonne nouvelle : elle est embauchée ! Elle commence comme {{BLANK_5}} pendant six mois pour apprendre le métier. Son tuteur est une rédactrice expérimentée qui lui apprend les ficelles du travail. Au bout d'un an, grâce à son sérieux, Julie obtient une {{BLANK_6}} : elle devient assistante rédactrice. Mais un jour, sa meilleure amie lui propose de créer ensemble leur propre magazine. Julie hésite longuement. Doit-elle donner sa {{BLANK_7}} et quitter ce poste stable ? Elle en parle au {{BLANK_8}} pour savoir si elle pourra toucher des indemnités. Finalement, elle décide de rester encore deux ans dans l'entreprise pour acquérir plus d'expérience. Elle sait qu'un jour, elle prendra sa {{BLANK_9}} de cette entreprise pour voler de ses propres ailes. Mais ce jour n'est pas encore arrivé. Pour l'instant, elle profite de chaque opportunité dans sa jeune {{BLANK_10}}.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "curriculum vitae",
+          "options": [
+            "curriculum vitae",
+            "démission",
+            "promotion",
+            "retraite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "entretien",
+          "options": [
+            "entretien",
+            "chômage",
+            "syndicat",
+            "rémunération"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "carrière",
+          "options": [
+            "carrière",
+            "démission",
+            "retraite",
+            "stagiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "rémunération",
+          "options": [
+            "rémunération",
+            "promotion",
+            "chômage",
+            "syndicat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "stagiaire",
+          "options": [
+            "stagiaire",
+            "syndicat",
+            "chômage",
+            "retraite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "promotion",
+          "options": [
+            "promotion",
+            "démission",
+            "retraite",
+            "chômage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "démission",
+          "options": [
+            "démission",
+            "promotion",
+            "retraite",
+            "entretien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "syndicat",
+          "options": [
+            "syndicat",
+            "stagiaire",
+            "chômage",
+            "curriculum vitae"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "retraite",
+          "options": [
+            "retraite",
+            "promotion",
+            "démission",
+            "carrière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "carrière",
+          "options": [
+            "carrière",
+            "chômage",
+            "retraite",
+            "démission"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La jungle de la mode",
+      "title_fa": "جنگل مد",
+      "inspiration": "The Devil Wears Prada (Lauren Weisberger / David Frankel, 2006)",
+      "text": "À peine Andrea Sachs eut-elle franchi les portes vitrées du building Elias-Clark qu'elle comprit qu'elle venait de pénétrer dans un autre monde. Tout autour d'elle, des femmes aux silhouettes impeccables, vêtues de créations hors de prix, filaient à toute allure sur leurs talons vertigineux, un café Starbucks à la main. Andrea, elle, portait encore ses chaussures d'étudiante et un pull tricoté par sa grand-mère. Elle était venue pour un {{BLANK_1}} chez Runway, le magazine de mode le plus prestigieux au monde, dirigé par la redoutable Miranda Priestly. Son {{BLANK_2}}, soigneusement préparé la veille, tenait en une page : quelques stages dans des journaux locaux, une licence de lettres, une passion sincère pour l'écriture. Mais ici, dans ce temple du glamour, ces références semblaient dérisoires. L'entretien avec Miranda fut bref et brutal. « Pourquoi devrais-je vous engager ? » demanda la directrice sans lever les yeux de son dossier. Andrea, surprise, balbutia une réponse sur sa motivation. Miranda la coupa : « La motivation ne paie pas les factures. Ce qui compte, c'est la {{BLANK_3}} qu'on est capable de bâtir. » Contre toute attente, Andrea fut embauchée. Mais pas comme journaliste : comme seconde assistante. Elle devenait ainsi la {{BLANK_4}} de la première assistante, Emily, une Britannique au mépris cinglant. Sa {{BLANK_5}} mensuelle était dérisoire au regard des sommes astronomiques qu'elle manipulerait bientôt : des dizaines de milliers de dollars de vêtements à emprunter, des voyages en jet privé à organiser. Les premiers mois furent un calvaire. Miranda exigeait l'impossible : trouver un manuscrit inédit de Harry Potter pour ses jumeaux, réserver un restaurant complet depuis des mois, deviner les humeurs capricieuses de sa patronne. Andrea, au bord de la {{BLANK_6}} émotionnelle, songea plusieurs fois à donner sa {{BLANK_7}}. Mais quelque chose la retenait. Peut-être l'orgueil. Peut-être aussi la fascination morbide pour ce monde impitoyable. Un soir, alors qu'elle rapportait le Book — ce fameux classeur qui contenait les maquettes du prochain numéro — à l'appartement de Miranda, elle croisa Nigel, le directeur artistique. « Tu veux survivre ici ? » lui dit-il en lui tendant une paire de chaussures signées. « Change. Adapte-toi. Ou pars. » Andrea écouta. Elle troqua ses pulls informes contre des tenues griffées. Elle apprit à distinguer un vert celadon d'un vert céladon. Elle devint méconnaissable, même pour son petit ami, Nate, qui lui reprochait de sacrifier leur relation à une {{BLANK_8}} qui la dévorait. Puis vint la semaine de la Fashion Week parisienne. Emily, malade, ne put accompagner Miranda. Andrea la remplaça. Là-bas, dans les salons dorés du Ritz, elle vit l'envers du décor : les rivalités entre créateurs, les trahisons, les alliances éphémères. Elle vit aussi Miranda pleurer, un soir, dans sa suite, après l'annonce de son troisième divorce. Pour la première fois, Andrea comprit que derrière la cuirasse se cachait une femme seule, prisonnière d'un système qu'elle avait elle-même contribué à créer. Le dernier jour, Miranda lui annonça qu'elle allait lui offrir une {{BLANK_9}} : elle deviendrait journaliste, écrirait ses propres articles. Andrea devait choisir : accepter et continuer l'ascension, ou refuser et quitter ce monde pour toujours. Dans la limousine qui la ramenait à l'aéroport, elle jeta son téléphone portable dans la fontaine de la place de la Concorde. C'était sa façon à elle de démissionner. De retour à New York, elle postula dans un petit journal indépendant. La {{BLANK_10}} y serait modeste, mais au moins, se dit-elle, elle écrirait sur des sujets qui avaient du sens. Quant au {{BLANK_11}}, il continuerait de tourner sans elle, indifférent à sa disparition, comme une machine bien huilée qui ne remarque même pas quand on remplace un rouage.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "entretien",
+          "options": [
+            "entretien",
+            "chômage",
+            "syndicat",
+            "retraite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "curriculum vitae",
+          "options": [
+            "curriculum vitae",
+            "promotion",
+            "démission",
+            "stagiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "carrière",
+          "options": [
+            "carrière",
+            "rémunération",
+            "retraite",
+            "chômage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "stagiaire",
+          "options": [
+            "stagiaire",
+            "syndicat",
+            "promotion",
+            "démission"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "rémunération",
+          "options": [
+            "rémunération",
+            "promotion",
+            "carrière",
+            "retraite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "chômage",
+          "options": [
+            "chômage",
+            "promotion",
+            "démission",
+            "retraite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "démission",
+          "options": [
+            "démission",
+            "promotion",
+            "retraite",
+            "entretien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "carrière",
+          "options": [
+            "carrière",
+            "rémunération",
+            "chômage",
+            "retraite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "promotion",
+          "options": [
+            "promotion",
+            "démission",
+            "retraite",
+            "chômage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "rémunération",
+          "options": [
+            "rémunération",
+            "carrière",
+            "démission",
+            "chômage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "syndicat",
+          "options": [
+            "syndicat",
+            "retraite",
+            "promotion",
+            "stagiaire"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Monde du travail et carrière",
+    "title_fa": "آزمون : دنیای کار و مسیر شغلی",
+    "displayCount": 12,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Pour postuler à un emploi, il faut envoyer un document résumant ses études et expériences. C'est le ____.",
+        "options": [
+          "curriculum vitae",
+          "syndicat",
+          "chômage",
+          "entretien"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سندی که سوابق تحصیلی و کاری را خلاصه می‌کند = رزومه."
+      },
+      {
+        "type": "mcq",
+        "question": "Après dix ans dans cette entreprise, Paul décide de partir. Il remet sa lettre de ____ à son patron.",
+        "options": [
+          "démission",
+          "promotion",
+          "retraite",
+          "rémunération"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ترک داوطلبانه شغل = démission."
+      },
+      {
+        "type": "mcq",
+        "question": "Avant d'être embauché, le candidat doit passer un ____ avec le responsable des ressources humaines.",
+        "options": [
+          "entretien",
+          "chômage",
+          "syndicat",
+          "curriculum vitae"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جلسه پرسش و پاسخ برای استخدام = entretien."
+      },
+      {
+        "type": "mcq",
+        "question": "Grâce à ses excellents résultats, Sophie est nommée directrice adjointe. C'est une ____.",
+        "options": [
+          "promotion",
+          "démission",
+          "retraite",
+          "rémunération"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارتقاء به مقام بالاتر = promotion."
+      },
+      {
+        "type": "mcq",
+        "question": "Le salaire mensuel, les primes annuelles et les avantages en nature forment la ____ globale d'un employé.",
+        "options": [
+          "rémunération",
+          "promotion",
+          "carrière",
+          "démission"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه پرداخت‌ها و مزایا = rémunération."
+      },
+      {
+        "type": "mcq",
+        "question": "Pendant ses études, Marc travaille trois mois dans une entreprise pour apprendre le métier. Il est ____.",
+        "options": [
+          "stagiaire",
+          "syndicat",
+          "chômage",
+          "retraite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که دوره آموزشی در شرکت می‌گذراند = stagiaire."
+      },
+      {
+        "type": "mcq",
+        "question": "De son premier emploi à son dernier poste, l'ensemble du parcours professionnel d'une personne constitue sa ____.",
+        "options": [
+          "carrière",
+          "retraite",
+          "chômage",
+          "démission"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسیر کلی شغلی یک فرد = carrière."
+      },
+      {
+        "type": "mcq",
+        "question": "L'usine a fermé, laissant cinq cents ouvriers sans emploi. Ils se retrouvent au ____.",
+        "options": [
+          "chômage",
+          "syndicat",
+          "promotion",
+          "retraite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وضعیت نداشتن شغل = chômage."
+      },
+      {
+        "type": "mcq",
+        "question": "À soixante-cinq ans, ce professeur quitte définitivement l'enseignement. Il prend sa ____.",
+        "options": [
+          "retraite",
+          "démission",
+          "promotion",
+          "carrière"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پایان فعالیت شغلی به دلیل سن = retraite."
+      },
+      {
+        "type": "mcq",
+        "question": "Les employés se sont organisés en ____ pour défendre collectivement leurs droits face à la direction.",
+        "options": [
+          "syndicat",
+          "chômage",
+          "stagiaire",
+          "entretien"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازمان کارگران برای دفاع از حقوقشان = syndicat."
+      },
+      {
+        "type": "binary",
+        "question": "La démission et la retraite désignent toutes deux un départ volontaire du travail.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "démission ترک شغل در هر سنی است، retraite پایان شغل به دلیل رسیدن به سن خاص."
+      },
+      {
+        "type": "binary",
+        "question": "Un stagiaire est un employé permanent avec un contrat à durée indéterminée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "stagiaire فردی در دوره موقت آموزشی است، نه کارمند دائم."
+      }
+    ]
+  }
+}
