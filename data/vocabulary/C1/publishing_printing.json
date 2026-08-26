@@ -1,0 +1,680 @@
+{
+  "id": "publishing_printing",
+  "level": "C1",
+  "theme": "Édition, imprimerie et industrie du livre",
+  "theme_fa": "نشر، چاپ و صنعت کتاب",
+  "icon": "📚",
+  "inspiration": "The Post (Steven Spielberg, 2017)",
+  "words": [
+    {
+      "fr": "l'édition",
+      "fa": "نشر، صنعت انتشارات",
+      "emoji": "📚",
+      "difficulty": 4,
+      "ex": "L'édition indépendante résiste face aux géants du numérique.",
+      "ex_fa": "نشر مستقل در برابر غول‌های دیجیتال مقاومت می‌کند."
+    },
+    {
+      "fr": "l'imprimerie",
+      "fa": "چاپخانه، صنعت چاپ",
+      "emoji": "🖨️",
+      "difficulty": 3,
+      "ex": "Gutenberg a révolutionné le monde avec l'invention de l'imprimerie.",
+      "ex_fa": "گوتنبرگ با اختراع چاپ، جهان را متحول کرد."
+    },
+    {
+      "fr": "le manuscrit",
+      "fa": "دست‌نوشته، نسخه خطی",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "L'éditeur reçoit des centaines de manuscrits chaque mois.",
+      "ex_fa": "ناشر هر ماه صدها دست‌نوشته دریافت می‌کند."
+    },
+    {
+      "fr": "le correcteur",
+      "fa": "ویراستار، غلط‌گیر",
+      "emoji": "✏️",
+      "difficulty": 4,
+      "ex": "Le correcteur traque chaque faute d'orthographe avec précision.",
+      "ex_fa": "ویراستار هر غلط املایی را با دقت شکار می‌کند."
+    },
+    {
+      "fr": "la reliure",
+      "fa": "صحافی",
+      "emoji": "📖",
+      "difficulty": 4,
+      "ex": "La reliure en cuir donne une noblesse exceptionnelle au livre.",
+      "ex_fa": "صحافی چرمی به کتاب شکوهی استثنایی می‌بخشد."
+    },
+    {
+      "fr": "le typographe",
+      "fa": "حروف‌چین، تایپوگراف",
+      "emoji": "🔤",
+      "difficulty": 5,
+      "ex": "Le typographe choisit la police parfaite pour chaque œuvre.",
+      "ex_fa": "تایپوگراف فونت مناسب برای هر اثر را انتخاب می‌کند."
+    },
+    {
+      "fr": "l'encre",
+      "fa": "جوهر",
+      "emoji": "🖋️",
+      "difficulty": 2,
+      "ex": "L'encre noire imprègne les fibres du papier de manière indélébile.",
+      "ex_fa": "جوهر سیاه به طور پاک‌نشدنی در الیاف کاغذ نفوذ می‌کند."
+    },
+    {
+      "fr": "la presse",
+      "fa": "دستگاه چاپ، مطبوعات",
+      "emoji": "📰",
+      "difficulty": 3,
+      "ex": "La presse rotative imprime des milliers de journaux à l'heure.",
+      "ex_fa": "دستگاه چاپ روتاری هزاران روزنامه در ساعت چاپ می‌کند."
+    },
+    {
+      "fr": "le papier",
+      "fa": "کاغذ",
+      "emoji": "📄",
+      "difficulty": 2,
+      "ex": "Le papier vergé offre une texture agréable au toucher.",
+      "ex_fa": "کاغذ آجدار بافت دلپذیری برای لمس ارائه می‌دهد."
+    },
+    {
+      "fr": "la couverture",
+      "fa": "جلد کتاب",
+      "emoji": "📕",
+      "difficulty": 3,
+      "ex": "La couverture illustrée attire l'œil du lecteur en librairie.",
+      "ex_fa": "جلد مصور، چشم خواننده را در کتابفروشی جلب می‌کند."
+    },
+    {
+      "fr": "le tirage",
+      "fa": "تیراژ، شمارگان",
+      "emoji": "🔢",
+      "difficulty": 4,
+      "ex": "Le premier tirage de ce roman est de cinquante mille exemplaires.",
+      "ex_fa": "تیراژ اول این رمان پنجاه هزار نسخه است."
+    },
+    {
+      "fr": "l'exemplaire",
+      "fa": "نسخه",
+      "emoji": "📚",
+      "difficulty": 3,
+      "ex": "Chaque exemplaire est numéroté pour les éditions limitées.",
+      "ex_fa": "هر نسخه برای چاپ‌های محدود شماره‌گذاری می‌شود."
+    },
+    {
+      "fr": "le livre",
+      "fa": "کتاب",
+      "emoji": "📖",
+      "difficulty": 1,
+      "ex": "Le livre reste un objet sacré pour les amoureux de la lecture.",
+      "ex_fa": "کتاب برای عاشقان مطالعه همچنان شیئی مقدس باقی می‌ماند."
+    },
+    {
+      "fr": "la parution",
+      "fa": "انتشار، تاریخ چاپ",
+      "emoji": "📅",
+      "difficulty": 4,
+      "ex": "La parution officielle est fixée au premier jour du printemps.",
+      "ex_fa": "انتشار رسمی برای اولین روز بهار تعیین شده است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'atelier des mots",
+      "text": "Marie travaille dans une petite maison d'{{BLANK_1}} parisienne. Chaque matin, elle lit un nouveau {{BLANK_3}} envoyé par un auteur inconnu. Quand elle trouve une pépite, elle le transmet au {{BLANK_4}} qui corrige chaque phrase avec minutie. Le {{BLANK_6}} choisit ensuite la typographie idéale pour mettre en valeur le texte. Dans l'{{BLANK_2}} moderne, les machines tournent sans arrêt. L'{{BLANK_7}} noire se dépose sur le {{BLANK_9}} blanc à grande vitesse. La {{BLANK_8}} rotative produit des milliers de pages par heure. Ensuite, chaque feuille est pliée et assemblée. La {{BLANK_5}} artisanale en toile donne sa forme définitive au {{BLANK_13}}. La {{BLANK_10}} illustrée est ajoutée en dernier. Pour cette première édition, le {{BLANK_11}} est de cinq mille unités. Chaque {{BLANK_12}} est soigneusement emballé. La {{BLANK_14}} officielle aura lieu la semaine prochaine dans toutes les librairies de France.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "édition",
+          "options": [
+            "édition",
+            "imprimerie",
+            "manuscrit",
+            "correcteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "imprimerie",
+          "options": [
+            "imprimerie",
+            "reliure",
+            "typographe",
+            "encre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "manuscrit",
+          "options": [
+            "manuscrit",
+            "presse",
+            "papier",
+            "couverture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "correcteur",
+          "options": [
+            "correcteur",
+            "tirage",
+            "exemplaire",
+            "livre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "reliure",
+          "options": [
+            "reliure",
+            "parution",
+            "édition",
+            "imprimerie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "typographe",
+          "options": [
+            "typographe",
+            "manuscrit",
+            "correcteur",
+            "reliure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "encre",
+          "options": [
+            "encre",
+            "typographe",
+            "presse",
+            "papier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "presse",
+          "options": [
+            "presse",
+            "couverture",
+            "tirage",
+            "exemplaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "papier",
+          "options": [
+            "papier",
+            "livre",
+            "parution",
+            "édition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "couverture",
+          "options": [
+            "couverture",
+            "imprimerie",
+            "manuscrit",
+            "correcteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "tirage",
+          "options": [
+            "tirage",
+            "reliure",
+            "typographe",
+            "encre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "exemplaire",
+          "options": [
+            "exemplaire",
+            "presse",
+            "papier",
+            "couverture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "livre",
+          "options": [
+            "livre",
+            "tirage",
+            "exemplaire",
+            "parution"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "parution",
+          "options": [
+            "parution",
+            "édition",
+            "imprimerie",
+            "manuscrit"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le dernier imprimeur",
+      "inspiration": "The Post (Steven Spielberg, 2017)",
+      "text": "À peine le vieux {{BLANK_6}} eut-il aligné les caractères de plomb que l'odeur âcre de l'{{BLANK_7}} remplit l'atelier poussiéreux. Cet homme était le dernier gardien d'une {{BLANK_2}} artisanale qui résistait à la marée numérique. Dans sa petite maison d'{{BLANK_1}}, il recevait chaque {{BLANK_3}} comme une relique sacrée, le confiant à un {{BLANK_4}} méticuleux qui traquait la moindre imperfection. Le {{BLANK_9}} vierge attendait, comme une terre promise, que la {{BLANK_8}} antique vienne y graver les mots pour l'éternité. Quand enfin les pages sortaient, il les assemblait avec l'amour d'un père, réalisant une {{BLANK_5}} cousue main qui transformerait ces feuilles volantes en un {{BLANK_13}} véritable. La {{BLANK_10}}, dessinée par un artiste local, serait le visage offert au monde. Le {{BLANK_11}} modeste de trois cents unités ferait de chaque {{BLANK_12}} un trésor rare. La {{BLANK_14}} discrète, sans publicité tapageuse, laisserait les lecteurs découvrir par eux-mêmes ce que les machines modernes avaient oublié : qu'un livre n'est pas qu'un assemblage de mots, mais un objet vivant qui porte en lui l'âme de ceux qui l'ont créé.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "édition",
+          "options": [
+            "édition",
+            "imprimerie",
+            "manuscrit",
+            "correcteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "imprimerie",
+          "options": [
+            "imprimerie",
+            "reliure",
+            "typographe",
+            "encre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "manuscrit",
+          "options": [
+            "manuscrit",
+            "presse",
+            "papier",
+            "couverture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "correcteur",
+          "options": [
+            "correcteur",
+            "tirage",
+            "exemplaire",
+            "livre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "reliure",
+          "options": [
+            "reliure",
+            "parution",
+            "édition",
+            "imprimerie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "typographe",
+          "options": [
+            "typographe",
+            "manuscrit",
+            "correcteur",
+            "reliure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "encre",
+          "options": [
+            "encre",
+            "typographe",
+            "presse",
+            "papier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "presse",
+          "options": [
+            "presse",
+            "couverture",
+            "tirage",
+            "exemplaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "papier",
+          "options": [
+            "papier",
+            "livre",
+            "parution",
+            "édition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "couverture",
+          "options": [
+            "couverture",
+            "imprimerie",
+            "manuscrit",
+            "correcteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "tirage",
+          "options": [
+            "tirage",
+            "reliure",
+            "typographe",
+            "encre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "exemplaire",
+          "options": [
+            "exemplaire",
+            "presse",
+            "papier",
+            "couverture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "livre",
+          "options": [
+            "livre",
+            "tirage",
+            "exemplaire",
+            "parution"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "parution",
+          "options": [
+            "parution",
+            "édition",
+            "imprimerie",
+            "manuscrit"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Édition et imprimerie",
+    "title_fa": "آزمون : نشر و چاپ",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'ensemble des activités de sélection, fabrication et commercialisation des livres est l'____.",
+        "options": [
+          "édition",
+          "imprimerie",
+          "manuscrit",
+          "correcteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعالیت‌های انتخاب و تولید کتاب = édition."
+      },
+      {
+        "type": "mcq",
+        "question": "L'industrie et le lieu où l'on reproduit des textes et images sur papier est l'____.",
+        "options": [
+          "imprimerie",
+          "reliure",
+          "typographe",
+          "encre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صنعت و محل چاپ = imprimerie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le texte original écrit à la main ou à la machine par l'auteur, avant publication, est le ____.",
+        "options": [
+          "manuscrit",
+          "presse",
+          "papier",
+          "couverture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متن اصلی نویسنده قبل از چاپ = manuscrit."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel qui relit et corrige les fautes dans un texte avant l'impression est le ____.",
+        "options": [
+          "correcteur",
+          "tirage",
+          "exemplaire",
+          "livre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شخصی که غلط‌ها را اصلاح می‌کند = correcteur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art et la technique d'assembler et de protéger les feuilles imprimées pour former un livre est la ____.",
+        "options": [
+          "reliure",
+          "parution",
+          "édition",
+          "imprimerie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر اتصال و محافظت برگه‌ها = reliure."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artisan spécialisé dans le choix et l'arrangement des caractères typographiques est le ____.",
+        "options": [
+          "typographe",
+          "manuscrit",
+          "correcteur",
+          "reliure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص انتخاب و چیدمان حروف = typographe."
+      },
+      {
+        "type": "mcq",
+        "question": "Le liquide coloré utilisé pour imprimer les caractères sur le papier est l'____.",
+        "options": [
+          "encre",
+          "typographe",
+          "presse",
+          "papier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مایع رنگی برای چاپ = encre."
+      },
+      {
+        "type": "mcq",
+        "question": "La machine qui transfère l'encre sur le papier en exerçant une pression est la ____.",
+        "options": [
+          "presse",
+          "couverture",
+          "tirage",
+          "exemplaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه انتقال جوهر به کاغذ = presse."
+      },
+      {
+        "type": "mcq",
+        "question": "Le matériau à base de fibres végétales, support principal de l'écriture et de l'impression, est le ____.",
+        "options": [
+          "papier",
+          "livre",
+          "parution",
+          "édition"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطح اصلی نوشتن و چاپ = papier."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enveloppe extérieure qui protège et présente le livre au lecteur est la ____.",
+        "options": [
+          "couverture",
+          "imprimerie",
+          "manuscrit",
+          "correcteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پوشش بیرونی کتاب = couverture."
+      },
+      {
+        "type": "mcq",
+        "question": "Le nombre total de copies imprimées d'un livre en une seule fois est le ____.",
+        "options": [
+          "tirage",
+          "reliure",
+          "typographe",
+          "encre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تعداد کل نسخه‌های چاپ‌شده = tirage."
+      },
+      {
+        "type": "mcq",
+        "question": "Chacune des copies individuelles produites lors de l'impression est l'____.",
+        "options": [
+          "exemplaire",
+          "presse",
+          "papier",
+          "couverture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هر نسخه تکی چاپ‌شده = exemplaire."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objet composé de pages reliées contenant un texte ou des images est le ____.",
+        "options": [
+          "livre",
+          "tirage",
+          "exemplaire",
+          "parution"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیء شامل صفحات صحافی‌شده = livre."
+      },
+      {
+        "type": "mcq",
+        "question": "La date officielle à laquelle un livre devient disponible à la vente est la ____.",
+        "options": [
+          "parution",
+          "édition",
+          "imprimerie",
+          "manuscrit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تاریخ رسمی عرضه به فروش = parution."
+      },
+      {
+        "type": "binary",
+        "question": "Le manuscrit est la version finale imprimée et distribuée aux lecteurs.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. دست‌نوشته (manuscrit) نسخه اولیه و منتشرنشده است، نه نسخه نهایی چاپ‌شده."
+      },
+      {
+        "type": "binary",
+        "question": "La reliure désigne l'art d'assembler les pages et de les protéger par une couverture rigide.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. صحافی (reliure) اتصال صفحات و ایجاد جلد است."
+      },
+      {
+        "type": "binary",
+        "question": "Le typographe est celui qui corrige les fautes d'orthographe dans le manuscrit.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تایپوگراف (typographe) طراح حروف و صفحه‌آرایی است؛ ویراستار correcteur نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le tirage désigne le nombre total d'exemplaires imprimés d'un ouvrage.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تیراژ (tirage) تعداد کل نسخه‌های چاپ‌شده است."
+      },
+      {
+        "type": "binary",
+        "question": "La parution marque la date à laquelle un livre devient officiellement disponible en librairie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. انتشار (parution) تاریخ عرضه عمومی کتاب است."
+      },
+      {
+        "type": "binary",
+        "question": "La presse rotative est utilisée exclusivement pour imprimer des tableaux d'art en édition limitée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پرس روتاری (presse rotative) برای چاپ سریع روزنامه‌ها و مجلات در تیراژ بالا استفاده می‌شود."
+      }
+    ]
+  }
+}
