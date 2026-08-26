@@ -1,0 +1,722 @@
+{
+  "id": "origami_paper_art",
+  "level": "C1",
+  "theme": "Origami, art du pliage et géométrie du papier",
+  "theme_fa": "اوریگامی، هنر کاغذ و تاشو و هندسه کاغذ",
+  "icon": "🦢",
+  "inspiration": "Blade Runner (Ridley Scott, 1982) / Kubo et l'Armure magique",
+  "words": [
+    {
+      "fr": "l'origami",
+      "fa": "اوریگامی",
+      "emoji": "🦢",
+      "difficulty": 3,
+      "ex": "L'origami est l'art japonais de plier le papier sans le couper.",
+      "ex_fa": "اوریگامی هنر ژاپنی تا کردن کاغذ بدون بریدن آن است."
+    },
+    {
+      "fr": "le pliage",
+      "fa": "تا کردن",
+      "emoji": "📄",
+      "difficulty": 2,
+      "ex": "Le pliage précis est la base de toute figure complexe.",
+      "ex_fa": "تای دقیق پایه و اساس هر شکل پیچیده‌ای است."
+    },
+    {
+      "fr": "le papier",
+      "fa": "کاغذ",
+      "emoji": "📃",
+      "difficulty": 1,
+      "ex": "Le papier washi traditionnel est fin et extrêmement résistant.",
+      "ex_fa": "کاغذ واشی سنتی نازک و بسیار مقاوم است."
+    },
+    {
+      "fr": "la grue",
+      "fa": "درنا (پرنده)",
+      "emoji": "🦢",
+      "difficulty": 3,
+      "ex": "Plier mille grues est censé exaucer un vœu selon la légende.",
+      "ex_fa": "طبق افسانه، تا کردن هزار درنا یک آرزو را برآورده می‌کند."
+    },
+    {
+      "fr": "le pli",
+      "fa": "خط تا",
+      "emoji": "📏",
+      "difficulty": 3,
+      "ex": "Chaque pli doit être marqué fermement avec l'ongle.",
+      "ex_fa": "هر خط تا باید با ناخن به محکمی علامت‌گذاری شود."
+    },
+    {
+      "fr": "la feuille",
+      "fa": "برگ، ورقه",
+      "emoji": "🍃",
+      "difficulty": 2,
+      "ex": "Il commence toujours avec une feuille parfaitement carrée.",
+      "ex_fa": "او همیشه با یک ورقه کاملاً مربعی شروع می‌کند."
+    },
+    {
+      "fr": "le carré",
+      "fa": "مربع",
+      "emoji": "⬜",
+      "difficulty": 2,
+      "ex": "Le carré initial se transforme progressivement en une sculpture.",
+      "ex_fa": "مربع اولیه به تدریج به یک مجسمه تبدیل می‌شود."
+    },
+    {
+      "fr": "la pointe",
+      "fa": "نوک، رأس",
+      "emoji": "📍",
+      "difficulty": 3,
+      "ex": "La pointe acérée forme le bec de l'oiseau de papier.",
+      "ex_fa": "نوک تیز، منقار پرنده کاغذی را تشکیل می‌دهد."
+    },
+    {
+      "fr": "l'arête",
+      "fa": "لبه، یال",
+      "emoji": "📐",
+      "difficulty": 4,
+      "ex": "L'arête vive donne sa structure tridimensionnelle à l'œuvre.",
+      "ex_fa": "لبه تیز، ساختار سه‌بعدی اثر را ایجاد می‌کند."
+    },
+    {
+      "fr": "le motif",
+      "fa": "نقش، الگو",
+      "emoji": "🌸",
+      "difficulty": 3,
+      "ex": "Le motif coloré du papier apparaît différemment une fois plié.",
+      "ex_fa": "نقش رنگی کاغذ پس از تا شدن به شکل متفاوتی ظاهر می‌شود."
+    },
+    {
+      "fr": "la symétrie",
+      "fa": "تقارن",
+      "emoji": "⚖️",
+      "difficulty": 4,
+      "ex": "La symétrie absolue est requise pour les ailes de l'avion.",
+      "ex_fa": "تقارن مطلق برای بال‌های هواپیما مورد نیاز است."
+    },
+    {
+      "fr": "la patience",
+      "fa": "صبر",
+      "emoji": "🧘",
+      "difficulty": 2,
+      "ex": "La création de dragons complexes exige une patience infinie.",
+      "ex_fa": "خلق اژدهایان پیچیده به صبری بی‌نهایت نیاز دارد."
+    },
+    {
+      "fr": "l'animal",
+      "fa": "حیوان",
+      "emoji": "🐅",
+      "difficulty": 2,
+      "ex": "Chaque animal plié capture l'essence de son mouvement naturel.",
+      "ex_fa": "هر حیوانِ تا شده، جوهره حرکت طبیعی‌اش را به تصویر می‌کشد."
+    },
+    {
+      "fr": "la tradition",
+      "fa": "سنت",
+      "emoji": "⛩️",
+      "difficulty": 3,
+      "ex": "Cette tradition millénaire se transmet de génération en génération.",
+      "ex_fa": "این سنت هزاران ساله از نسلی به نسل دیگر منتقل می‌شود."
+    },
+    {
+      "fr": "l'œuvre",
+      "fa": "اثر، شاهکار",
+      "emoji": "🏆",
+      "difficulty": 3,
+      "ex": "L'œuvre finale semble respirer malgré sa nature rigide.",
+      "ex_fa": "اثر نهایی با وجود ماهیت سختش، گویی نفس می‌کشد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'atelier de Kyoto",
+      "text": "Kenji enseigne l'{{BLANK_1}} aux enfants de son village. Cet art du {{BLANK_2}} ne demande ni colle ni ciseaux, seulement une {{BLANK_6}} de {{BLANK_3}} coloré. Il commence toujours par un {{BLANK_7}} parfait. Chaque {{BLANK_5}} doit être marqué avec l'ongle pour créer une {{BLANK_9}} nette. Avec une grande {{BLANK_12}}, il transforme la surface plane en un magnifique {{BLANK_13}}. La {{BLANK_4}} en papier aux ailes déployées est le symbole de paix et de {{BLANK_14}} ancestrale. Il ajuste chaque {{BLANK_8}} et chaque {{BLANK_10}} géométrique. La {{BLANK_11}} parfaite de l'{{BLANK_15}} émerveille les élèves. Cette petite création éphémère capture la beauté du monde.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "origami",
+          "options": [
+            "origami",
+            "pliage",
+            "papier",
+            "grue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pliage",
+          "options": [
+            "pliage",
+            "pli",
+            "feuille",
+            "carré"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "papier",
+          "options": [
+            "papier",
+            "pointe",
+            "arête",
+            "motif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "grue",
+          "options": [
+            "grue",
+            "symétrie",
+            "patience",
+            "animal"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pli",
+          "options": [
+            "pli",
+            "tradition",
+            "œuvre",
+            "origami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "feuille",
+          "options": [
+            "feuille",
+            "pliage",
+            "papier",
+            "grue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "carré",
+          "options": [
+            "carré",
+            "pli",
+            "feuille",
+            "pointe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "pointe",
+          "options": [
+            "pointe",
+            "arête",
+            "motif",
+            "symétrie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "arête",
+          "options": [
+            "arête",
+            "patience",
+            "animal",
+            "tradition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "motif",
+          "options": [
+            "motif",
+            "œuvre",
+            "origami",
+            "pliage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "symétrie",
+          "options": [
+            "symétrie",
+            "papier",
+            "grue",
+            "pli"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "patience",
+          "options": [
+            "patience",
+            "feuille",
+            "carré",
+            "pointe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "animal",
+          "options": [
+            "animal",
+            "arête",
+            "motif",
+            "symétrie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "tradition",
+          "options": [
+            "tradition",
+            "patience",
+            "animal",
+            "œuvre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "œuvre",
+          "options": [
+            "œuvre",
+            "origami",
+            "pliage",
+            "papier"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La licorne de papier",
+      "inspiration": "Blade Runner (Ridley Scott, 1982)",
+      "text": "À peine le détective eut-il aperçu la petite créature de papier sur le bureau qu'il comprit que son rival était passé par là. Cet {{BLANK_1}} n'était pas un simple jeu d'enfant, mais une signature silencieuse, un art du {{BLANK_2}} qui défiait la complexité du monde. À partir d'un modeste {{BLANK_7}} de {{BLANK_3}}, l'assassin avait fait naître une bête mythique sans jamais trancher la matière. Chaque {{BLANK_5}} était une décision irrévocable, chaque {{BLANK_9}} une cicatrice volontaire. La {{BLANK_4}} fragile semblait prête à s'envoler, ses ailes épousant une {{BLANK_11}} mathématique et divine. Il caressa la {{BLANK_8}} acérée et le {{BLANK_10}} complexe qui structuraient l'{{BLANK_13}}. Cette {{BLANK_14}} millénaire exigeait une {{BLANK_12}} de moine et une précision de chirurgien. Dans ce commissariat sordide, cette petite {{BLANK_15}} immaculée était la seule preuve de beauté, un rappel que même les esprits les plus tordus peuvent créer la grâce absolue à partir d'une simple {{BLANK_6}} blanche.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "origami",
+          "options": [
+            "origami",
+            "pliage",
+            "papier",
+            "grue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pliage",
+          "options": [
+            "pliage",
+            "pli",
+            "feuille",
+            "carré"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "papier",
+          "options": [
+            "papier",
+            "pointe",
+            "arête",
+            "motif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "grue",
+          "options": [
+            "grue",
+            "symétrie",
+            "patience",
+            "animal"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pli",
+          "options": [
+            "pli",
+            "tradition",
+            "œuvre",
+            "origami"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "feuille",
+          "options": [
+            "feuille",
+            "pliage",
+            "papier",
+            "grue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "carré",
+          "options": [
+            "carré",
+            "pli",
+            "feuille",
+            "pointe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "pointe",
+          "options": [
+            "pointe",
+            "arête",
+            "motif",
+            "symétrie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "arête",
+          "options": [
+            "arête",
+            "patience",
+            "animal",
+            "tradition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "motif",
+          "options": [
+            "motif",
+            "œuvre",
+            "origami",
+            "pliage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "symétrie",
+          "options": [
+            "symétrie",
+            "papier",
+            "grue",
+            "pli"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "patience",
+          "options": [
+            "patience",
+            "feuille",
+            "carré",
+            "pointe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "animal",
+          "options": [
+            "animal",
+            "arête",
+            "motif",
+            "symétrie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "tradition",
+          "options": [
+            "tradition",
+            "patience",
+            "animal",
+            "œuvre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "œuvre",
+          "options": [
+            "œuvre",
+            "origami",
+            "pliage",
+            "papier"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Origami et art du papier",
+    "title_fa": "آزمون : اوریگامی و هنر کاغذ",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art traditionnel japonais consistant à créer des formes en pliant du papier, sans colle ni ciseaux, est l'____.",
+        "options": [
+          "origami",
+          "pliage",
+          "papier",
+          "grue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر ژاپنی تا کردن کاغذ = origami."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de rabattre une partie d'une feuille sur elle-même pour créer du volume est le ____.",
+        "options": [
+          "pliage",
+          "pli",
+          "feuille",
+          "carré"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل تا کردن کاغذ = pliage."
+      },
+      {
+        "type": "mcq",
+        "question": "La matière première essentielle, fabriquée à partir de fibres végétales, est le ____.",
+        "options": [
+          "papier",
+          "pointe",
+          "arête",
+          "motif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده اولیه الیافی = papier."
+      },
+      {
+        "type": "mcq",
+        "question": "L'oiseau emblématique de l'origami, symbole de longévité et de paix, est la ____.",
+        "options": [
+          "grue",
+          "symétrie",
+          "patience",
+          "animal"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پرنده نمادین اوریگامی = grue."
+      },
+      {
+        "type": "mcq",
+        "question": "La marque ou la ligne de cassure laissée sur la feuille après l'avoir pliée est le ____.",
+        "options": [
+          "pli",
+          "tradition",
+          "œuvre",
+          "origami"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خط یا ردِ تا = pli."
+      },
+      {
+        "type": "mcq",
+        "question": "Le morceau de papier, généralement de forme géométrique, que l'on utilise pour commencer est la ____.",
+        "options": [
+          "feuille",
+          "pliage",
+          "papier",
+          "grue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورقه کاغذ = feuille."
+      },
+      {
+        "type": "mcq",
+        "question": "La forme géométrique à quatre côtés égaux et quatre angles droits, base de la plupart des modèles, est le ____.",
+        "options": [
+          "carré",
+          "pli",
+          "feuille",
+          "pointe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شکل هندسی چهارضلعی مساوی = carré."
+      },
+      {
+        "type": "mcq",
+        "question": "L'extrémité fine et aiguë d'une figure pliée (comme un bec ou une queue) est la ____.",
+        "options": [
+          "pointe",
+          "arête",
+          "motif",
+          "symétrie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انتهای تیز و باریک = pointe."
+      },
+      {
+        "type": "mcq",
+        "question": "La ligne saillante formée par la rencontre de deux surfaces pliées est l'____.",
+        "options": [
+          "arête",
+          "patience",
+          "animal",
+          "tradition"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خط برجسته محل برخورد دو سطح = arête."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dessin, la couleur ou la figure décorative imprimée sur la surface du papier est le ____.",
+        "options": [
+          "motif",
+          "œuvre",
+          "origami",
+          "pliage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طرح و نقش روی کاغذ = motif."
+      },
+      {
+        "type": "mcq",
+        "question": "La propriété géométrique où les deux moitiés d'une figure sont l'image miroir l'une de l'autre est la ____.",
+        "options": [
+          "symétrie",
+          "papier",
+          "grue",
+          "pli"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خاصیت قرینه بودن = symétrie."
+      },
+      {
+        "type": "mcq",
+        "question": "La vertu nécessaire pour réaliser des modèles complexes nécessitant des dizaines d'étapes est la ____.",
+        "options": [
+          "patience",
+          "feuille",
+          "carré",
+          "pointe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فضیلت لازم برای کارهای طولانی = patience."
+      },
+      {
+        "type": "mcq",
+        "question": "L'être vivant (réel ou imaginaire) que l'artiste cherche à représenter en trois dimensions est l'____.",
+        "options": [
+          "animal",
+          "arête",
+          "motif",
+          "symétrie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "موجود زنده نمایش‌داده‌شده = animal."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des coutumes et des savoir-faire transmis depuis des générations est la ____.",
+        "options": [
+          "tradition",
+          "patience",
+          "animal",
+          "œuvre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه آداب و دانش منتقل‌شده = tradition."
+      },
+      {
+        "type": "mcq",
+        "question": "Le résultat final du travail artistique, la création achevée, est l'____.",
+        "options": [
+          "œuvre",
+          "origami",
+          "pliage",
+          "papier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نتیجه نهایی و شاهکار = œuvre."
+      },
+      {
+        "type": "binary",
+        "question": "L'origami traditionnel autorise l'utilisation de ciseaux et de colle pour assembler les formes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. در اوریگامی اصیل (origami)، بریدن کاغذ یا استفاده از چسب مجاز نیست."
+      },
+      {
+        "type": "binary",
+        "question": "La grue en papier est un modèle emblématique censé porter chance et exaucer un vœu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. درنای کاغذی (grue) نماد صلح و برآورده شدن آرزوهاست."
+      },
+      {
+        "type": "binary",
+        "question": "Le pliage nécessite généralement de commencer avec une feuille de forme parfaitement circulaire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اوریگامی معمولاً با یک ورقه کاملاً مربعی (carré) آغاز می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "L'arête est la ligne en relief créée par la rencontre de deux pans de papier pliés.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. یال یا لبه (arête) خط برجسته‌ای است که از تا شدن ایجاد می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le filigrane est une technique de pliage qui permet de créer des animaux en mouvement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. واترمارک (filigrane) مربوط به تمبر و کاغذسازی است، نه هنر تا کردن کاغذ."
+      },
+      {
+        "type": "binary",
+        "question": "La symétrie est souvent essentielle pour garantir l'équilibre des ailes ou des pattes d'une figure.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تقارن (symétrie) برای حفظ تعادل بال‌ها و پاها در اشکال اوریگامی ضروری است."
+      }
+    ]
+  }
+}
