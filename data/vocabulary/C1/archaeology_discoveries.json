@@ -1,0 +1,680 @@
+{
+  "id": "archaeology_discoveries",
+  "level": "C1",
+  "theme": "Archéologie, fouilles et découvertes historiques",
+  "theme_fa": "باستان‌شناسی، حفاری و کشف‌های تاریخی",
+  "icon": "🏺",
+  "inspiration": "Les Aventuriers de l'arche perdue (Raiders of the Lost Ark - Steven Spielberg, 1981)",
+  "words": [
+    {
+      "fr": "l'archéologie",
+      "fa": "باستان‌شناسی",
+      "emoji": "🏺",
+      "difficulty": 4,
+      "ex": "L'archéologie révèle les secrets des civilisations disparues.",
+      "ex_fa": "باستان‌شناسی اسرار تمدن‌های گمشده را آشکار می‌کند."
+    },
+    {
+      "fr": "la fouille",
+      "fa": "حفاری",
+      "emoji": "⛏️",
+      "difficulty": 4,
+      "ex": "La fouille du site a duré trois saisons de terrain.",
+      "ex_fa": "حفاری سایت سه فصل میدانی طول کشید."
+    },
+    {
+      "fr": "l'artefact",
+      "fa": "شیء ساخت بشر (دست‌ساخته)",
+      "emoji": "🏺",
+      "difficulty": 5,
+      "ex": "Cet artefact en bronze date de l'âge du fer.",
+      "ex_fa": "این دست‌ساخته برنزی به عصر آهن بازمی‌گردد."
+    },
+    {
+      "fr": "la stratigraphie",
+      "fa": "لایه‌نگاری",
+      "emoji": "📚",
+      "difficulty": 5,
+      "ex": "La stratigraphie permet de dater les couches successives du sol.",
+      "ex_fa": "لایه‌نگاری امکان تاریخ‌گذاری لایه‌های متوالی خاک را می‌دهد."
+    },
+    {
+      "fr": "le sarcophage",
+      "fa": "تابوت سنگی",
+      "emoji": "⚰️",
+      "difficulty": 4,
+      "ex": "Le sarcophage du pharaon était décoré de hiéroglyphes.",
+      "ex_fa": "تابوت سنگی فرعون با هیروگلیف تزیین شده بود."
+    },
+    {
+      "fr": "la momie",
+      "fa": "مومیایی",
+      "emoji": "🧟",
+      "difficulty": 3,
+      "ex": "La momie a été conservée pendant trois mille ans.",
+      "ex_fa": "مومیایی سه هزار سال حفظ شده بود."
+    },
+    {
+      "fr": "le hiéroglyphe",
+      "fa": "هیروگلیف",
+      "emoji": "𓀀",
+      "difficulty": 5,
+      "ex": "Champollion a déchiffré les hiéroglyphes égyptiens en 1822.",
+      "ex_fa": "شامپولیون در ۱۸۲۲ هیروگلیف‌های مصری را رمزگشایی کرد."
+    },
+    {
+      "fr": "l'amulette",
+      "fa": "طلسم، تعویذ",
+      "emoji": "🔮",
+      "difficulty": 4,
+      "ex": "L'amulette en lapis-lazuli protégeait le défunt dans l'au-delà.",
+      "ex_fa": "طلسم لاجوردی از متوفی در جهان پس از مرگ محافظت می‌کرد."
+    },
+    {
+      "fr": "la datation",
+      "fa": "تاریخ‌گذاری",
+      "emoji": "📅",
+      "difficulty": 5,
+      "ex": "La datation au carbone 14 a confirmé l'âge de l'objet.",
+      "ex_fa": "تاریخ‌گذاری با کربن ۱۴ سن شیء را تأیید کرد."
+    },
+    {
+      "fr": "le vestige",
+      "fa": "بقایا، آثار",
+      "emoji": "🏛️",
+      "difficulty": 4,
+      "ex": "Les vestiges du temple romain sont encore visibles.",
+      "ex_fa": "بقایای معبد رومی هنوز قابل مشاهده است."
+    },
+    {
+      "fr": "la civilisation",
+      "fa": "تمدن",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "La civilisation maya a développé un calendrier très précis.",
+      "ex_fa": "تمدن مایا تقویم بسیار دقیقی توسعه داد."
+    },
+    {
+      "fr": "l'inscription",
+      "fa": "کتیبه، نوشته حک‌شده",
+      "emoji": "✍️",
+      "difficulty": 4,
+      "ex": "L'inscription en latin raconte la victoire de l'empereur.",
+      "ex_fa": "کتیبه لاتینی پیروزی امپراتور را روایت می‌کند."
+    },
+    {
+      "fr": "la relique",
+      "fa": "یادگار مقدس، اثر باستانی",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "Cette relique est vénérée depuis des siècles.",
+      "ex_fa": "این یادگار مقدس قرن‌هاست مورد پرستش است."
+    },
+    {
+      "fr": "le papyrus",
+      "fa": "پاپیروس",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "Le papyrus contient des textes religieux de l'Égypte antique.",
+      "ex_fa": "پاپیروس شامل متون مذهبی مصر باستان است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La chasse au trésor",
+      "text": "Indiana Jones, professeur d'{{BLANK_1}}, reçoit un message mystérieux sur une {{BLANK_14}} sacrée cachée en Égypte. Il part immédiatement sur le terrain pour organiser une {{BLANK_2}} archéologique. Son équipe creuse méthodiquement en respectant la {{BLANK_4}} pour ne pas mélanger les époques. Ils découvrent d'abord des {{BLANK_10}}s d'un ancien temple romain. Plus profondément, ils trouvent un {{BLANK_3}} en bronze finement ouvragé. La {{BLANK_9}} au carbone 14 confirme qu'il date de deux mille ans. Ils atteignent enfin une chambre funéraire scellée. Un magnifique {{BLANK_5}} en granit repose au centre. À l'intérieur, la {{BLANK_6}} du prêtre est parfaitement conservée. Les murs sont couverts de {{BLANK_7}}s racontant sa vie. Indiana déchiffre une {{BLANK_12}} qui parle d'une {{BLANK_8}} magique protégeant le tombeau. Il trouve effectivement un pendentif en or, une {{BLANK_13}} précieuse qui appartenait à une grande {{BLANK_11}} disparue. Il roule soigneusement le {{BLANK_14}} ancien trouvé à côté du sarcophage. Quand les nazis tentent de s'emparer de la relique, Indiana sait que certains secrets doivent rester enfouis pour toujours.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "archéologie",
+          "options": [
+            "archéologie",
+            "stratigraphie",
+            "civilisation",
+            "relique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fouille",
+          "options": [
+            "fouille",
+            "datation",
+            "amulette",
+            "papyrus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "artefact",
+          "options": [
+            "artefact",
+            "sarcophage",
+            "vestige",
+            "hiéroglyphe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "stratigraphie",
+          "options": [
+            "stratigraphie",
+            "momie",
+            "inscription",
+            "relique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sarcophage",
+          "options": [
+            "sarcophage",
+            "artefact",
+            "vestige",
+            "papyrus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "momie",
+          "options": [
+            "momie",
+            "amulette",
+            "fouille",
+            "civilisation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "hiéroglyphes",
+          "options": [
+            "hiéroglyphes",
+            "datations",
+            "reliques",
+            "inscriptions"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "amulette",
+          "options": [
+            "amulette",
+            "stratigraphie",
+            "fouille",
+            "artefact"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "datation",
+          "options": [
+            "datation",
+            "momie",
+            "sarcophage",
+            "vestige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "vestiges",
+          "options": [
+            "vestiges",
+            "amulettes",
+            "papyrus",
+            "hiéroglyphes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "civilisation",
+          "options": [
+            "civilisation",
+            "datation",
+            "fouille",
+            "stratigraphie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "inscription",
+          "options": [
+            "inscription",
+            "relique",
+            "momie",
+            "artefact"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "relique",
+          "options": [
+            "relique",
+            "fouille",
+            "sarcophage",
+            "hiéroglyphe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "papyrus",
+          "options": [
+            "papyrus",
+            "stratigraphie",
+            "datation",
+            "amulette"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le secret des sables",
+      "inspiration": "Les Aventuriers de l'arche perdue (Raiders of the Lost Ark - Steven Spielberg, 1981)",
+      "text": "À peine le Dr Henry Jones Jr. eut-il déchiffré le {{BLANK_14}} volé dans les archives du Caire qu'il sut que sa quête allait le mener aux portes de l'enfer. Ce professeur d'{{BLANK_1}}, célèbre pour son fedora et son fouet, n'était pas un chercheur de bibliothèque, mais un aventurier qui salissait ses mains dans la poussière des siècles. Il organisa une {{BLANK_2}} secrète dans le désert égyptien, loin des regards des nazis qui convoitaient les mêmes trésors. Son équipe creusait avec précaution, respectant la {{BLANK_4}} qui racontait l'histoire du sol couche par couche, comme les pages d'un livre géologique. Les premiers {{BLANK_10}}s apparurent : colonnes brisées, mosaïques effritées, témoignages d'une {{BLANK_11}} romaine oubliée. Puis vint la découverte qui fit trembler ses mains gantées : un {{BLANK_3}} en bronze d'une finesse exceptionnelle, représentant Anubis guidant les âmes. La {{BLANK_9}} scientifique confirma son intuition : cet objet avait deux mille ans. Mais le véritable trésor se cachait plus profondément encore. Dans une chambre funéraire inviolée, un {{BLANK_5}} en granit noir attendait depuis des millénaires. À l'intérieur, la {{BLANK_6}} du grand prêtre reposait dans son linceul de lin, visage figé dans une sérénité éternelle. Les murs narraient en {{BLANK_7}}s multicolores le voyage de l'âme vers les champs d'Ialou. Une {{BLANK_12}} gravée avertissait : « Celui qui troublera mon sommeil subira la malédiction des dieux. » Indiana trouva pourtant l'{{BLANK_8}} en lapis-lazuli qui protégeait le défunt, une {{BLANK_13}} sacrée qui, selon la légende, ouvrait les portes du royaume d'Osiris. Quand les soldats allemands firent irruption pour s'emparer de ces trésors, Indiana comprit que certains secrets étaient trop dangereux pour appartenir aux hommes, et que la véritable archéologie consistait parfois à laisser les morts reposer en paix.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "archéologie",
+          "options": [
+            "archéologie",
+            "stratigraphie",
+            "civilisation",
+            "relique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fouille",
+          "options": [
+            "fouille",
+            "datation",
+            "amulette",
+            "papyrus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "artefact",
+          "options": [
+            "artefact",
+            "sarcophage",
+            "vestige",
+            "hiéroglyphe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "stratigraphie",
+          "options": [
+            "stratigraphie",
+            "momie",
+            "inscription",
+            "relique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sarcophage",
+          "options": [
+            "sarcophage",
+            "artefact",
+            "vestige",
+            "papyrus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "momie",
+          "options": [
+            "momie",
+            "amulette",
+            "fouille",
+            "civilisation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "hiéroglyphes",
+          "options": [
+            "hiéroglyphes",
+            "datations",
+            "reliques",
+            "inscriptions"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "amulette",
+          "options": [
+            "amulette",
+            "stratigraphie",
+            "fouille",
+            "artefact"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "datation",
+          "options": [
+            "datation",
+            "momie",
+            "sarcophage",
+            "vestige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "vestiges",
+          "options": [
+            "vestiges",
+            "amulettes",
+            "papyrus",
+            "hiéroglyphes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "civilisation",
+          "options": [
+            "civilisation",
+            "datation",
+            "fouille",
+            "stratigraphie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "inscription",
+          "options": [
+            "inscription",
+            "relique",
+            "momie",
+            "artefact"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "relique",
+          "options": [
+            "relique",
+            "fouille",
+            "sarcophage",
+            "hiéroglyphe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "papyrus",
+          "options": [
+            "papyrus",
+            "stratigraphie",
+            "datation",
+            "amulette"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Archéologie et découvertes",
+    "title_fa": "آزمون : باستان‌شناسی و کشف‌ها",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie les civilisations passées à travers leurs vestiges matériels est l'____.",
+        "options": [
+          "archéologie",
+          "stratigraphie",
+          "civilisation",
+          "relique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه تمدن‌های گذشته = archéologie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'opération de terrain qui consiste à creuser méthodiquement un site pour dégager des vestiges enfouis est la ____.",
+        "options": [
+          "fouille",
+          "datation",
+          "amulette",
+          "papyrus"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عملیات حفاری در سایت باستانی = fouille."
+      },
+      {
+        "type": "mcq",
+        "question": "Tout objet fabriqué ou modifié par l'homme et découvert lors de fouilles archéologiques est un ____.",
+        "options": [
+          "artefact",
+          "sarcophage",
+          "vestige",
+          "hiéroglyphe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیء ساخت بشر در حفاری = artefact."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étude des différentes couches de sol superposées qui permet d'établir une chronologie relative est la ____.",
+        "options": [
+          "stratigraphie",
+          "momie",
+          "inscription",
+          "relique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مطالعه لایه‌های خاک برای تاریخ‌گذاری = stratigraphie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le cercueil en pierre, souvent décoré, dans lequel on plaçait les défunts de haut rang dans l'Antiquité est le ____.",
+        "options": [
+          "sarcophage",
+          "artefact",
+          "vestige",
+          "papyrus"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تابوت سنگی تزیین‌شده = sarcophage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le cadavre qui a été préservé artificiellement par embaumement, notamment dans l'Égypte ancienne, est la ____.",
+        "options": [
+          "momie",
+          "amulette",
+          "fouille",
+          "civilisation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جسد مومیایی‌شده = momie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le caractère d'écriture sacrée de l'Égypte ancienne, représentant des objets ou des idées, est le ____.",
+        "options": [
+          "hiéroglyphe",
+          "datation",
+          "relique",
+          "inscription"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خط تصویری مصر باستان = hiéroglyphe."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit objet porté sur soi comme porte-bonheur ou protection magique est l'____.",
+        "options": [
+          "amulette",
+          "stratigraphie",
+          "fouille",
+          "artefact"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیء کوچک محافظ و خوش‌یمن = amulette."
+      },
+      {
+        "type": "mcq",
+        "question": "La détermination de l'âge absolu d'un objet ou d'un vestige par des méthodes scientifiques est la ____.",
+        "options": [
+          "datation",
+          "momie",
+          "sarcophage",
+          "vestige"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تعیین سن علمی اشیاء = datation."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce qui reste d'une construction, d'une œuvre ou d'une civilisation après sa destruction partielle est un ____.",
+        "options": [
+          "vestige",
+          "amulette",
+          "papyrus",
+          "hiéroglyphe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بقایای یک تمدن یا بنا = vestige."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des caractéristiques culturelles, sociales et techniques qui définissent une société humaine avancée est la ____.",
+        "options": [
+          "civilisation",
+          "datation",
+          "fouille",
+          "stratigraphie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه ویژگی‌های فرهنگی یک جامعه = civilisation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le texte gravé ou peint sur un monument, une stèle ou un objet pour commémorer un événement est l'____.",
+        "options": [
+          "inscription",
+          "relique",
+          "momie",
+          "artefact"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نوشته حک‌شده روی سنگ یا بنا = inscription."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objet ancien, souvent sacré, qui a appartenu à une personne vénérée et qui est conservé pieusement est la ____.",
+        "options": [
+          "relique",
+          "fouille",
+          "sarcophage",
+          "hiéroglyphe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیء مقدس و یادگار = relique."
+      },
+      {
+        "type": "mcq",
+        "question": "Le support d'écriture fabriqué à partir de la tige d'une plante aquatique, utilisé dans l'Égypte antique, est le ____.",
+        "options": [
+          "papyrus",
+          "stratigraphie",
+          "datation",
+          "amulette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کاغذ باستانی از گیاه نی = papyrus."
+      },
+      {
+        "type": "binary",
+        "question": "L'archéologie et la paléontologie étudient toutes deux principalement les mêmes objets et périodes historiques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. باستان‌شناسی درباره تمدن‌های انسانی است، دیرینه‌شناسی درباره فسیل‌های گیاهی و جانوری."
+      },
+      {
+        "type": "binary",
+        "question": "La stratigraphie permet d'établir une chronologie relative en étudiant la superposition des couches de sol.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. لایه‌نگاری با بررسی ترتیب لایه‌ها، گاه‌شماری نسبی ایجاد می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Un artefact désigne uniquement les objets en or ou en pierres précieuses découverts lors des fouilles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. artefact هر شیء ساخت بشر است، نه فقط اشیاء قیمتی."
+      },
+      {
+        "type": "binary",
+        "question": "La datation au carbone 14 est une méthode scientifique utilisée pour déterminer l'âge des matières organiques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تاریخ‌گذاری کربن ۱۴ برای تعیین سن مواد آلی استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Les hiéroglyphes sont un système d'écriture alphabétique similaire à l'alphabet latin moderne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. هیروگلیف سیستم تصویری و نمادین است، نه الفبایی."
+      },
+      {
+        "type": "binary",
+        "question": "Le papyrus était le principal support d'écriture utilisé dans l'Égypte antique avant l'invention du papier.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پاپیروس قبل از کاغذ، اصلی‌ترین ماده نوشتاری در مصر باستان بود."
+      }
+    ]
+  }
+}
