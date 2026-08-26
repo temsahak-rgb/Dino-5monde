@@ -1,0 +1,702 @@
+{
+  "id": "perfume_fragrance",
+  "level": "C1",
+  "theme": "Parfumerie, fragrances et industrie du luxe",
+  "theme_fa": "عطرسازی، رایحه‌ها و صنعت لوکس",
+  "icon": "🌹",
+  "inspiration": "Le Parfum (Patrick Süskind / Tom Tykwer, 2006)",
+  "words": [
+    {
+      "fr": "le nez",
+      "fa": "بینی (متخصص عطرساز)",
+      "emoji": "👃",
+      "difficulty": 4,
+      "ex": "Ce nez a créé plus de trois cents parfums au cours de sa carrière.",
+      "ex_fa": "این متخصص عطرساز بیش از سیصد عطر در طول زندگی حرفه‌ای خود ساخته است."
+    },
+    {
+      "fr": "le flacon",
+      "fa": "شیشه عطر",
+      "emoji": "🧴",
+      "difficulty": 3,
+      "ex": "Le flacon en cristal de Baccarat est une œuvre d'art.",
+      "ex_fa": "شیشه عطر از کریستال باکارا یک اثر هنری است."
+    },
+    {
+      "fr": "le sillage",
+      "fa": "رد بو، بوی ماندگار",
+      "emoji": "💨",
+      "difficulty": 5,
+      "ex": "Son sillage persiste dans la pièce longtemps après son départ.",
+      "ex_fa": "رد بوی او مدت‌ها پس از رفتنش در اتاق باقی می‌ماند."
+    },
+    {
+      "fr": "la note de tête",
+      "fa": "نت سر (اولین رایحه)",
+      "emoji": "🍋",
+      "difficulty": 5,
+      "ex": "La note de tête, souvent hespéridée, s'évapore en quelques minutes.",
+      "ex_fa": "نت سر که معمولاً مرکباتی است، در چند دقیقه تبخیر می‌شود."
+    },
+    {
+      "fr": "la note de cœur",
+      "fa": "نت میانی",
+      "emoji": "🌸",
+      "difficulty": 5,
+      "ex": "La note de cœur révèle la personnalité véritable du parfum.",
+      "ex_fa": "نت میانی، شخصیت واقعی عطر را آشکار می‌کند."
+    },
+    {
+      "fr": "la note de fond",
+      "fa": "نت پایانی",
+      "emoji": "🌰",
+      "difficulty": 5,
+      "ex": "La note de fond, boisée et ambrée, peut durer plusieurs jours.",
+      "ex_fa": "نت پایانی، چوبی و کهربایی، می‌تواند چند روز بماند."
+    },
+    {
+      "fr": "l'alambic",
+      "fa": "دیگ تقطیر",
+      "emoji": "⚗️",
+      "difficulty": 5,
+      "ex": "L'alambic en cuivre extrait les essences les plus pures.",
+      "ex_fa": "دیگ تقطیر مسی، خالص‌ترین اسانس‌ها را استخراج می‌کند."
+    },
+    {
+      "fr": "l'essence",
+      "fa": "اسانس، عصاره",
+      "emoji": "💧",
+      "difficulty": 4,
+      "ex": "Il faut mille roses pour produire un gramme d'essence.",
+      "ex_fa": "برای تولید یک گرم اسانس، هزار گل رز لازم است."
+    },
+    {
+      "fr": "le bouquet",
+      "fa": "دسته گل رایحه‌ای",
+      "emoji": "💐",
+      "difficulty": 4,
+      "ex": "Le bouquet floral de ce parfum rappelle un jardin en été.",
+      "ex_fa": "دسته گل رایحه‌ای این عطر، باغی در تابستان را یادآوری می‌کند."
+    },
+    {
+      "fr": "le musc",
+      "fa": "مشک",
+      "emoji": "🦌",
+      "difficulty": 4,
+      "ex": "Le musc apporte une chaleur animale et sensuelle au parfum.",
+      "ex_fa": "مشک، گرمای حیوانی و حسی به عطر می‌بخشد."
+    },
+    {
+      "fr": "l'ambre",
+      "fa": "کهربا (رایحه گرم)",
+      "emoji": "🟠",
+      "difficulty": 4,
+      "ex": "L'ambre donne une profondeur orientale aux compositions.",
+      "ex_fa": "کهربا، عمقی شرقی به ترکیبات می‌دهد."
+    },
+    {
+      "fr": "l'effluve",
+      "fa": "بوی ملایم پخش‌شونده",
+      "emoji": "🌬️",
+      "difficulty": 5,
+      "ex": "Un effluve de jasmin flotte dans le couloir.",
+      "ex_fa": "بوی ملایم یاس در راهرو می‌پیچد."
+    },
+    {
+      "fr": "la distillation",
+      "fa": "تقطیر",
+      "emoji": "🔥",
+      "difficulty": 5,
+      "ex": "La distillation à la vapeur est la méthode la plus ancienne.",
+      "ex_fa": "تقطیر با بخار، قدیمی‌ترین روش است."
+    },
+    {
+      "fr": "la macération",
+      "fa": "خیساندن (استخراج رایحه)",
+      "emoji": "🫙",
+      "difficulty": 5,
+      "ex": "La macération des fleurs dans l'alcool dure plusieurs semaines.",
+      "ex_fa": "خیساندن گل‌ها در الکل چندین هفته طول می‌کشد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'apprenti parfumeur",
+      "text": "Jean-Baptiste Grenouille naît dans les rues malodorantes de Paris au XVIIIe siècle. Il possède un don exceptionnel : son {{BLANK_1}} peut identifier des milliers d'odeurs différentes. Fasciné par les parfums, il devient apprenti chez un célèbre {{BLANK_3}} de la rue Saint-Honoré. Il apprend à reconnaître la {{BLANK_4}}, fraîche et légère, qui s'évapore rapidement. Puis vient la {{BLANK_5}}, qui forme le cœur du parfum, souvent florale. Enfin, la {{BLANK_6}}, chaude et profonde, donne sa longévité à la composition. Le maître lui enseigne l'usage de l'{{BLANK_7}}, ce grand alambic en cuivre qui chauffe les fleurs. Grâce à la {{BLANK_13}} à la vapeur, on extrait l'{{BLANK_8}} pure des pétales. Parfois, on utilise la {{BLANK_14}} dans l'alcool pour capturer les fragrances délicates. Jean-Baptiste crée son premier {{BLANK_10}} : un mélange harmonieux de fleurs blanches. Il ajoute une touche de {{BLANK_11}} pour la chaleur et de l'{{BLANK_12}} pour la profondeur orientale. Le {{BLANK_9}} de sa création embaume l'atelier. Il verse son chef-d'œuvre dans un {{BLANK_2}} en cristal taillé à la main. Un {{BLANK_15}} subtil de violette s'échappe du flacon ouvert. Mais Grenouille cache un secret terrifiant : il veut capturer l'odeur humaine parfaite, et pour cela, il est prêt à tout.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "nez",
+          "options": [
+            "nez",
+            "sillage",
+            "effluve",
+            "bouquet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "flacon",
+          "options": [
+            "flacon",
+            "alambic",
+            "musc",
+            "ambre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "nez",
+          "options": [
+            "nez",
+            "flacon",
+            "distillation",
+            "macération"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "note de tête",
+          "options": [
+            "note de tête",
+            "note de cœur",
+            "note de fond",
+            "essence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "note de cœur",
+          "options": [
+            "note de cœur",
+            "note de tête",
+            "note de fond",
+            "sillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "note de fond",
+          "options": [
+            "note de fond",
+            "note de tête",
+            "note de cœur",
+            "effluve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "alambic",
+          "options": [
+            "alambic",
+            "flacon",
+            "bouquet",
+            "musc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "essence",
+          "options": [
+            "essence",
+            "ambre",
+            "sillage",
+            "effluve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "bouquet",
+          "options": [
+            "bouquet",
+            "flacon",
+            "note de tête",
+            "macération"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "bouquet",
+          "options": [
+            "bouquet",
+            "nez",
+            "alambic",
+            "distillation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "musc",
+          "options": [
+            "musc",
+            "ambre",
+            "effluve",
+            "essence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ambre",
+          "options": [
+            "ambre",
+            "musc",
+            "sillage",
+            "note de fond"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "distillation",
+          "options": [
+            "distillation",
+            "macération",
+            "note de tête",
+            "flacon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "macération",
+          "options": [
+            "macération",
+            "distillation",
+            "bouquet",
+            "alambic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "effluve",
+          "options": [
+            "effluve",
+            "sillage",
+            "musc",
+            "ambre"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'odeur du monde",
+      "inspiration": "Le Parfum (Patrick Süskind / Tom Tykwer, 2006)",
+      "text": "À peine Jean-Baptiste Grenouille eut-il poussé son premier cri, parmi les détritus nauséabonds du marché aux poissons de Paris, qu'il sentit le monde entier. Non pas comme un nourrisson ordinaire, mais comme une créature dotée d'un {{BLANK_1}} absolu, capable de décomposer l'univers en milliers de molécules odorantes. Il n'avait pas d'odeur propre, ce qui le rendait invisible aux autres, mais lui percevait tout : la sueur des portefaix, le parfum lointain d'une dame, la pourriture des égouts. Un jour, dans la rue des Marais, un {{BLANK_15}} de jeune fille rousse lui parvint, si pur, si innocent, qu'il en trembla. Il la suivit, la tua sans haine, et inhala son souffle jusqu'à la dernière goutte. Ce fut sa révélation : il deviendrait le plus grand {{BLANK_3}} de tous les temps. Il entra en apprentissage chez Giuseppe Baldini, un vieil artisan déclinant qui possédait encore un magnifique {{BLANK_2}} vénitien. Baldini lui enseigna la pyramide olfactive : la {{BLANK_4}}, éphémère comme un sourire d'enfant, la {{BLANK_5}}, cœur battant de la composition, et la {{BLANK_6}}, ancre profonde qui persiste des jours durant. Grenouille apprit à manier l'{{BLANK_7}}, ce ventre de cuivre qui crachait des vapeurs précieuses. Il découvrit la {{BLANK_13}} à la vapeur d'eau, la {{BLANK_14}} lente dans l'alcool rectifié, l'extraction par les graisses froides. Chaque méthode libérait une {{BLANK_8}} différente, une âme végétale emprisonnée dans les pétales. Il fallait dix mille roses pour quelques gouttes d'absolu, un trésor liquide plus cher que l'or. Dans son laboratoire secret, Grenouille composa un {{BLANK_9}} inouï, mêlant jasmin, tubéreuse et iris. Il y ajouta une pointe de {{BLANK_11}}, cette chaleur animale qui trouble les sens, et une vague d'{{BLANK_12}}, résine fossile qui transporte vers l'Orient. Le {{BLANK_2}} qui contenait son chef-d'œuvre brillait comme un diamant noir. Mais ce n'était qu'un prélude. Son véritable dessein était monstrueux : capturer l'odeur de treize jeunes filles vierges, la distiller, la réduire en un parfum suprême qui ferait de lui un dieu. Quand il versa la dernière goutte sur la place de Grasse, la foule entière tomba à genoux, ivre d'un désir sans nom. Grenouille, debout parmi les corps prosternés, sentit enfin le {{BLANK_10}} de sa victoire. Mais il savait, au fond de son être sans odeur, que cette adoration n'était qu'une illusion chimique, un {{BLANK_7}} de molécules sur des cerveaux crédules. Il avait conquis le monde, mais le monde ne l'aimait pas, il aimait seulement le masque qu'il portait. Et dans la nuit parisienne, là où il était né, il disparut, dévoré par ceux qui l'avaient aimé sans le connaître.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "nez",
+          "options": [
+            "nez",
+            "sillage",
+            "effluve",
+            "bouquet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "flacon",
+          "options": [
+            "flacon",
+            "alambic",
+            "musc",
+            "ambre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "nez",
+          "options": [
+            "nez",
+            "flacon",
+            "distillation",
+            "macération"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "note de tête",
+          "options": [
+            "note de tête",
+            "note de cœur",
+            "note de fond",
+            "essence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "note de cœur",
+          "options": [
+            "note de cœur",
+            "note de tête",
+            "note de fond",
+            "sillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "note de fond",
+          "options": [
+            "note de fond",
+            "note de tête",
+            "note de cœur",
+            "effluve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "alambic",
+          "options": [
+            "alambic",
+            "flacon",
+            "bouquet",
+            "musc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "essence",
+          "options": [
+            "essence",
+            "ambre",
+            "sillage",
+            "effluve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "bouquet",
+          "options": [
+            "bouquet",
+            "flacon",
+            "note de tête",
+            "macération"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sillage",
+          "options": [
+            "sillage",
+            "effluve",
+            "musc",
+            "ambre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "musc",
+          "options": [
+            "musc",
+            "ambre",
+            "effluve",
+            "essence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ambre",
+          "options": [
+            "ambre",
+            "musc",
+            "sillage",
+            "note de fond"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "distillation",
+          "options": [
+            "distillation",
+            "macération",
+            "note de tête",
+            "flacon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "macération",
+          "options": [
+            "macération",
+            "distillation",
+            "bouquet",
+            "alambic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "effluve",
+          "options": [
+            "effluve",
+            "sillage",
+            "musc",
+            "ambre"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Parfumerie et création olfactive",
+    "title_fa": "آزمون : عطرسازی و خلق رایحه",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le professionnel doté d'un odorat exceptionnel qui crée des compositions parfumées est appelé le ____.",
+        "options": [
+          "nez",
+          "sillage",
+          "effluve",
+          "bouquet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص عطرساز با حس بویایی فوق‌العاده = nez."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit récipient en verre ou en cristal qui contient le parfum et sert à le conserver est le ____.",
+        "options": [
+          "flacon",
+          "alambic",
+          "musc",
+          "ambre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ظرف شیشه‌ای عطر = flacon."
+      },
+      {
+        "type": "mcq",
+        "question": "La trace olfactive qu'un parfum laisse dans l'air après le passage de la personne qui le porte est le ____.",
+        "options": [
+          "sillage",
+          "effluve",
+          "musc",
+          "ambre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رد بوی ماندگار در هوا = sillage."
+      },
+      {
+        "type": "mcq",
+        "question": "La première impression olfactive, fraîche et volatile, qui s'évapore en quelques minutes, est la ____.",
+        "options": [
+          "note de tête",
+          "note de cœur",
+          "note de fond",
+          "essence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اولین رایحه فرار و تازه = note de tête."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie centrale de la pyramide olfactive, souvent florale, qui dure plusieurs heures, est la ____.",
+        "options": [
+          "note de cœur",
+          "note de tête",
+          "note de fond",
+          "sillage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رایحه میانی که ساعت‌ها می‌ماند = note de cœur."
+      },
+      {
+        "type": "mcq",
+        "question": "La dernière phase du parfum, profonde et persistante, souvent boisée ou ambrée, est la ____.",
+        "options": [
+          "note de fond",
+          "note de tête",
+          "note de cœur",
+          "effluve"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رایحه پایانی عمیق و ماندگار = note de fond."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil traditionnel en cuivre utilisé pour chauffer les plantes et extraire leurs principes odorants est l'____.",
+        "options": [
+          "alambic",
+          "flacon",
+          "bouquet",
+          "musc"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه مسی تقطیر = alambic."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance concentrée et pure obtenue à partir des matières premières végétales ou animales est l'____.",
+        "options": [
+          "essence",
+          "ambre",
+          "sillage",
+          "effluve"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عصاره خالص و غلیظ = essence."
+      },
+      {
+        "type": "mcq",
+        "question": "L'assemblage harmonieux de plusieurs fragrances florales dans une composition est un ____.",
+        "options": [
+          "bouquet",
+          "flacon",
+          "note de tête",
+          "macération"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ترکیب هماهنگ چند رایحه گل = bouquet."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette substance d'origine animale, à l'odeur chaude et sensuelle, utilisée comme fixateur, est le ____.",
+        "options": [
+          "musc",
+          "ambre",
+          "effluve",
+          "essence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده حیوانی با بوی گرم و حسی = musc."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette résine fossile aux notes chaudes et orientales, utilisée en parfumerie de luxe, est l'____.",
+        "options": [
+          "ambre",
+          "musc",
+          "sillage",
+          "note de fond"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رزین فسیلی با رایحه شرقی = ambre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'odeur légère et diffuse qui se propage doucement dans l'air environnant est un ____.",
+        "options": [
+          "effluve",
+          "sillage",
+          "musc",
+          "ambre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بوی ملایم پخش‌شونده در هوا = effluve."
+      },
+      {
+        "type": "mcq",
+        "question": "Le procédé qui consiste à chauffer des végétaux pour en extraire les composés aromatiques sous forme de vapeur est la ____.",
+        "options": [
+          "distillation",
+          "macération",
+          "note de tête",
+          "flacon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استخراج رایحه با بخار = distillation."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique qui consiste à laisser tremper des fleurs dans un solvant pendant plusieurs semaines est la ____.",
+        "options": [
+          "macération",
+          "distillation",
+          "bouquet",
+          "alambic"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خیساندن گل‌ها در حلال = macération."
+      },
+      {
+        "type": "binary",
+        "question": "La note de tête est la plus persistante des trois notes de la pyramide olfactive.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. note de tête زودگذرترین است و note de fond ماندگارترین."
+      },
+      {
+        "type": "binary",
+        "question": "Le sillage désigne la trace olfactive laissée par un parfum dans l'air.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. sillage دقیقاً به معنای رد بوی ماندگار در هواست."
+      },
+      {
+        "type": "binary",
+        "question": "L'alambic est un flacon de parfum en cristal utilisé pour la vente au détail.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. alambic دستگاه تقطیر است، نه ظرف فروش عطر."
+      },
+      {
+        "type": "binary",
+        "question": "Il faut une quantité considérable de fleurs (parfois des milliers) pour produire une petite quantité d'essence pure.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. استخراج اسانس خالص به هزاران گل نیاز دارد."
+      },
+      {
+        "type": "binary",
+        "question": "La macération et la distillation sont deux techniques identiques d'extraction des parfums.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. distillation با بخار است، macération با خیساندن در حلال."
+      },
+      {
+        "type": "binary",
+        "question": "Le musc et l'ambre sont tous deux utilisés comme notes de fond pour apporter chaleur et profondeur à un parfum.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هر دو به عنوان نت پایانی برای عمق و گرما استفاده می‌شوند."
+      }
+    ]
+  }
+}
