@@ -1,0 +1,682 @@
+{
+  "id": "circus_street_arts",
+  "level": "C1",
+  "theme": "Cirque, arts de la rue et spectacle vivant",
+  "theme_fa": "سیرک، هنرهای خیابانی و نمایش زنده",
+  "icon": "🎪",
+  "inspiration": "De l'eau pour les éléphants (Water for Elephants - Francis Lawrence, 2011)",
+  "words": [
+    {
+      "fr": "le trapéziste",
+      "fa": "تراپیست (بندباز روی ذوزنقه)",
+      "emoji": "🎪",
+      "difficulty": 5,
+      "ex": "Le trapéziste effectue un triple saut mortel sans filet.",
+      "ex_fa": "تراپیست یک پرش سه‌گانه مرگبار بدون تور محافظ انجام می‌دهد."
+    },
+    {
+      "fr": "l'acrobate",
+      "fa": "آکروبات، ژیمناست",
+      "emoji": "🤸",
+      "difficulty": 4,
+      "ex": "L'acrobate enchaîne les saltos avec une grâce féline.",
+      "ex_fa": "آکروبات با ظرافتی گربه‌وار پشتک‌ها را پی هم می‌زند."
+    },
+    {
+      "fr": "le jongleur",
+      "fa": "ژوگله (شعبده‌باز توپ)",
+      "emoji": "🤹",
+      "difficulty": 4,
+      "ex": "Le jongleur manipule cinq massues enflammées simultanément.",
+      "ex_fa": "ژوگله همزمان پنج چماق آتشین را در هوا می‌چرخاند."
+    },
+    {
+      "fr": "le clown",
+      "fa": "دلقک",
+      "emoji": "🤡",
+      "difficulty": 3,
+      "ex": "Le clown fait éclater de rire les enfants avec ses grimaces.",
+      "ex_fa": "دلقک با شکلک‌هایش باعث خنده کودکان می‌شود."
+    },
+    {
+      "fr": "la contorsionniste",
+      "fa": "بندباز انعطاف‌پذیر",
+      "emoji": "🧘‍♀️",
+      "difficulty": 5,
+      "ex": "La contorsionniste plie son corps dans des positions impossibles.",
+      "ex_fa": "بندباز انعطاف‌پذیر بدنش را در حالت‌های غیرممکن خم می‌کند."
+    },
+    {
+      "fr": "le dompteur",
+      "fa": "رام‌کننده حیوانات",
+      "emoji": "🦁",
+      "difficulty": 4,
+      "ex": "Le dompteur entre dans la cage aux fauves avec assurance.",
+      "ex_fa": "رام‌کننده با اطمینان وارد قفس حیوانات درنده می‌شود."
+    },
+    {
+      "fr": "le chapiteau",
+      "fa": "چادر بزرگ سیرک",
+      "emoji": "⛺",
+      "difficulty": 4,
+      "ex": "Le grand chapiteau rouge et blanc accueille des milliers de spectateurs.",
+      "ex_fa": "چادر بزرگ قرمز و سفید میزبان هزاران تماشاگر است."
+    },
+    {
+      "fr": "l'illusionniste",
+      "fa": "شعبده‌باز، چشم‌بند",
+      "emoji": "🎩",
+      "difficulty": 4,
+      "ex": "L'illusionniste fait disparaître un éléphant sur scène.",
+      "ex_fa": "شعبده‌باز یک فیل را روی صحنه ناپدید می‌کند."
+    },
+    {
+      "fr": "le cracheur de feu",
+      "fa": "آتش‌فشان (هنرمند خیابانی)",
+      "emoji": "🔥",
+      "difficulty": 5,
+      "ex": "Le cracheur de feu illumine la nuit de ses gerbes orangées.",
+      "ex_fa": "آتش‌فشان با پرتاب شعله‌های نارنجی، شب را روشن می‌کند."
+    },
+    {
+      "fr": "l'équilibriste",
+      "fa": "بندباز تعادلی",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "L'équilibriste traverse la place sur un fil tendu à vingt mètres.",
+      "ex_fa": "بندباز تعادلی از روی یک طناب کشیده‌شده در ارتفاع بیست متری عبور می‌کند."
+    },
+    {
+      "fr": "la parade",
+      "fa": "رژه، نمایش خیابانی",
+      "emoji": "🎺",
+      "difficulty": 4,
+      "ex": "La parade annonce l'arrivée du cirque en ville.",
+      "ex_fa": "رژه، ورود سیرک به شهر را اعلام می‌کند."
+    },
+    {
+      "fr": "les coulisses",
+      "fa": "پشت صحنه",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "Dans les coulisses, les artistes préparent leurs costumes.",
+      "ex_fa": "در پشت صحنه، هنرمندان لباس‌هایشان را آماده می‌کنند."
+    },
+    {
+      "fr": "le numéro",
+      "fa": "شماره نمایش، اجرا",
+      "emoji": "🎟️",
+      "difficulty": 3,
+      "ex": "Son numéro de dressage a reçu une standing ovation.",
+      "ex_fa": "اجرای رام‌کاری او با تشویق ایستاده تماشاگران روبرو شد."
+    },
+    {
+      "fr": "l'ovation",
+      "fa": "تشویق شدید و ممتد",
+      "emoji": "👏",
+      "difficulty": 4,
+      "ex": "Le public a réservé une ovation chaleureuse à la troupe.",
+      "ex_fa": "تماشاگران تشویق گرم و پرشوری برای گروه داشتند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La vie sous la toile",
+      "title_fa": "زندگی زیر چادر",
+      "text": "Le cirque des frères Benzini arrive en ville. Une grande {{BLANK_11}} colorée traverse les rues pour annoncer le spectacle. Sous l'immense {{BLANK_7}}, le public s'installe. Dans les {{BLANK_12}}, l'agitation est à son comble. Le {{BLANK_6}} vérifie une dernière fois le fouet et la cage de ses tigres. En haut, le {{BLANK_1}} s'échauffe pour son saut périlleux. L'{{BLANK_2}} fait des étirements impressionnants. Une {{BLANK_5}} se plie en quatre dans une toute petite boîte. Le {{BLANK_8}} prépare ses tours de cartes et ses colombes. Dehors, le {{BLANK_9}} s'entraîne avec du pétrole. Le spectacle commence ! Le {{BLANK_3}} fait d'abord rire les enfants avec ses grosses chaussures. Puis, le {{BLANK_10}} marche sur un fil invisible à dix mètres du sol. Le {{BLANK_4}} lance sept massues en l'air sans en faire tomber une seule. Chaque {{BLANK_13}} est plus incroyable que le précédent. À la fin, quand tous les artistes saluent ensemble, le public se lève pour une immense {{BLANK_14}}. La magie du cirque a encore opéré.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "trapéziste",
+          "options": [
+            "trapéziste",
+            "clown",
+            "jongleur",
+            "dompteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "acrobate",
+          "options": [
+            "acrobate",
+            "illusionniste",
+            "équilibriste",
+            "cracheur de feu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "clown",
+          "options": [
+            "clown",
+            "trapéziste",
+            "jongleur",
+            "dompteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "jongleur",
+          "options": [
+            "jongleur",
+            "acrobate",
+            "clown",
+            "illusionniste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "contorsionniste",
+          "options": [
+            "contorsionniste",
+            "équilibriste",
+            "trapéziste",
+            "cracheur de feu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "dompteur",
+          "options": [
+            "dompteur",
+            "clown",
+            "jongleur",
+            "illusionniste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "chapiteau",
+          "options": [
+            "chapiteau",
+            "coulisses",
+            "parade",
+            "numéro"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "illusionniste",
+          "options": [
+            "illusionniste",
+            "dompteur",
+            "trapéziste",
+            "acrobate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cracheur de feu",
+          "options": [
+            "cracheur de feu",
+            "jongleur",
+            "clown",
+            "équilibriste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "équilibriste",
+          "options": [
+            "équilibriste",
+            "contorsionniste",
+            "trapéziste",
+            "acrobate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "parade",
+          "options": [
+            "parade",
+            "ovation",
+            "chapiteau",
+            "coulisses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "coulisses",
+          "options": [
+            "coulisses",
+            "parade",
+            "chapiteau",
+            "numéro"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "numéro",
+          "options": [
+            "numéro",
+            "ovation",
+            "chapiteau",
+            "parade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "ovation",
+          "options": [
+            "ovation",
+            "parade",
+            "coulisses",
+            "numéro"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La poussière d'étoiles",
+      "title_fa": "غبار ستارگان",
+      "inspiration": "De l'eau pour les éléphants (Water for Elephants - Francis Lawrence, 2011)",
+      "text": "À peine le vieux Jacob eut-il posé le pied sur la sciure usée qu'une bouffée de nostalgie lui serra la gorge. Il y a soixante-dix ans, en pleine Grande Dépression, il avait trouvé refuge dans ce cirque ambulant, un univers de misère et de merveilles. Il se souvenait de la première fois où il avait vu le grand {{BLANK_7}} rouge et blanc se dresser contre le ciel gris de l'Amérique en faillite, comme une cathédrale de toile promise aux rêves. Dans l'ombre des {{BLANK_12}}, loin des regards émerveillés, régnait une réalité brutale. Là, il avait croisé August, le {{BLANK_6}} cruel qui frappait ses animaux, et Marlena, l'{{BLANK_2}} équestre dont la grâce effaçait la saleté du monde. Chaque soir, sous les projecteurs, le {{BLANK_1}} s'élançait dans le vide, défiant la mort avec une insouciance qui donnait le vertige. Une jeune {{BLANK_5}} tordait son corps menu jusqu'à l'inhumain, tandis que le {{BLANK_4}} faisait danser des sphères de cristal comme si elles obéissaient à sa seule volonté. Jacob, lui, soignait les bêtes blessées, trouvant plus de noblesse dans le regard d'un cheval que dans les sourires peints du {{BLANK_3}} triste qui cachait ses propres larmes sous un maquillage gras. Parfois, la troupe organisait une {{BLANK_11}} bruyante dans les rues poussiéreuses pour attirer les fermiers ruinés. C'était un monde de marginaux, unis par la route. Un soir de tempête, un {{BLANK_9}} ivre mit le feu à une tente annexe, et ce fut un {{BLANK_8}} de génie qui sauva les enfants en les téléportant, semblait-il, à travers les flammes. Jacob se souvenait du {{BLANK_10}} qui marchait sur la corde raide, les bras en croix, tel un christ du vide, indifférent au vent qui hurlait. Chaque {{BLANK_13}} était une victoire éphémère sur la faim et le désespoir. Et quand, à la fin de la saison, le public affamé de magie offrait une {{BLANK_14}} interminable, Jacob comprenait que cette poussière d'étoiles, cette sueur et ce sang, étaient la seule richesse qui valait la peine d'être vécue.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "trapéziste",
+          "options": [
+            "trapéziste",
+            "clown",
+            "jongleur",
+            "dompteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "acrobate",
+          "options": [
+            "acrobate",
+            "illusionniste",
+            "équilibriste",
+            "cracheur de feu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "clown",
+          "options": [
+            "clown",
+            "trapéziste",
+            "jongleur",
+            "dompteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "jongleur",
+          "options": [
+            "jongleur",
+            "acrobate",
+            "clown",
+            "illusionniste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "contorsionniste",
+          "options": [
+            "contorsionniste",
+            "équilibriste",
+            "trapéziste",
+            "cracheur de feu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "dompteur",
+          "options": [
+            "dompteur",
+            "clown",
+            "jongleur",
+            "illusionniste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "chapiteau",
+          "options": [
+            "chapiteau",
+            "coulisses",
+            "parade",
+            "numéro"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "illusionniste",
+          "options": [
+            "illusionniste",
+            "dompteur",
+            "trapéziste",
+            "acrobate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cracheur de feu",
+          "options": [
+            "cracheur de feu",
+            "jongleur",
+            "clown",
+            "équilibriste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "équilibriste",
+          "options": [
+            "équilibriste",
+            "contorsionniste",
+            "trapéziste",
+            "acrobate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "parade",
+          "options": [
+            "parade",
+            "ovation",
+            "chapiteau",
+            "coulisses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "coulisses",
+          "options": [
+            "coulisses",
+            "parade",
+            "chapiteau",
+            "numéro"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "numéro",
+          "options": [
+            "numéro",
+            "ovation",
+            "chapiteau",
+            "parade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "ovation",
+          "options": [
+            "ovation",
+            "parade",
+            "coulisses",
+            "numéro"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Arts du cirque et du spectacle",
+    "title_fa": "آزمون : هنرهای سیرک و نمایش",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'artiste de cirque qui réalise des figures acrobatiques en se balançant sur une barre suspendue en hauteur est le ____.",
+        "options": [
+          "trapéziste",
+          "clown",
+          "jongleur",
+          "dompteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بندباز روی ذوزنقه معلق = trapéziste."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce gymnaste de haut niveau qui exécute des sauts, des équilibres et des figures complexes au sol ou aux agrès est l'____.",
+        "options": [
+          "acrobate",
+          "illusionniste",
+          "équilibriste",
+          "cracheur de feu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ژیمناست و بندباز آکروباتیک = acrobate."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artiste qui lance et rattrape avec dextérité plusieurs objets (balles, massues, anneaux) en les maintenant en l'air est le ____.",
+        "options": [
+          "jongleur",
+          "acrobate",
+          "clown",
+          "illusionniste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شعبده‌باز توپ و اشیاء پرتابی = jongleur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le comédien au maquillage exagéré et aux vêtements amples, dont le rôle est de faire rire par ses maladresses, est le ____.",
+        "options": [
+          "clown",
+          "trapéziste",
+          "jongleur",
+          "dompteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دلقک سیرک = clown."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette artiste féminine capable de tordre son corps dans des postures extrêmes et contre nature grâce à une souplesse exceptionnelle est la ____.",
+        "options": [
+          "contorsionniste",
+          "équilibriste",
+          "trapéziste",
+          "cracheur de feu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زن بندباز با انعطاف‌پذیری فوق‌العاده = contorsionniste."
+      },
+      {
+        "type": "mcq",
+        "question": "Celui qui dresse et présente des animaux sauvages (lions, tigres) dans une cage lors d'un spectacle est le ____.",
+        "options": [
+          "dompteur",
+          "clown",
+          "jongleur",
+          "illusionniste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رام‌کننده حیوانات وحشی = dompteur."
+      },
+      {
+        "type": "mcq",
+        "question": "La grande tente, souvent conique et colorée, qui abrite la piste et les gradins du cirque traditionnel s'appelle le ____.",
+        "options": [
+          "chapiteau",
+          "coulisses",
+          "parade",
+          "numéro"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چادر بزرگ و اصلی سیرک = chapiteau."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artiste qui réalise des tours de magie, des escamotages et des illusions d'optique pour tromper les sens du public est l'____.",
+        "options": [
+          "illusionniste",
+          "dompteur",
+          "trapéziste",
+          "acrobate"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شعبده‌باز و چشم‌بند = illusionniste."
+      },
+      {
+        "type": "mcq",
+        "question": "Cet artiste de rue ou de cirque qui projette des flammes hors de sa bouche en soufflant sur une torche est le ____.",
+        "options": [
+          "cracheur de feu",
+          "jongleur",
+          "clown",
+          "équilibriste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنرمند آتش‌فشان = cracheur de feu."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artiste qui marche sur un fil de fer tendu à grande hauteur, en utilisant souvent un balancier, est l'____.",
+        "options": [
+          "équilibriste",
+          "contorsionniste",
+          "trapéziste",
+          "acrobate"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بندباز روی طناب = équilibriste."
+      },
+      {
+        "type": "mcq",
+        "question": "Le défilé festif et musical des artistes et des chars dans les rues pour annoncer l'arrivée du spectacle est la ____.",
+        "options": [
+          "parade",
+          "ovation",
+          "chapiteau",
+          "coulisses"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رژه خیابانی سیرک = parade."
+      },
+      {
+        "type": "mcq",
+        "question": "Les espaces cachés derrière la scène ou la piste, où les artistes se préparent et attendent leur entrée, sont les ____.",
+        "options": [
+          "coulisses",
+          "parade",
+          "chapiteau",
+          "numéro"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فضای پشت صحنه = coulisses."
+      },
+      {
+        "type": "mcq",
+        "question": "La prestation individuelle ou collective d'un artiste, identifiée par un ordre de passage dans le programme, est son ____.",
+        "options": [
+          "numéro",
+          "ovation",
+          "chapiteau",
+          "parade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اجرا و شماره نمایش = numéro."
+      },
+      {
+        "type": "mcq",
+        "question": "L'applaudissement enthousiaste, prolongé et souvent accompagné de cris de joie par lequel le public salue une performance est l'____.",
+        "options": [
+          "ovation",
+          "parade",
+          "coulisses",
+          "numéro"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تشویق پرشور و ممتد = ovation."
+      },
+      {
+        "type": "binary",
+        "question": "Le trapéziste et l'équilibriste travaillent tous deux en hauteur, mais utilisent des agrès totalement différents.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تراپیست روی میله معلق (ذوزنقه) است، اما تعادلی‌کار روی طناب یا سیم راه می‌رود."
+      },
+      {
+        "type": "binary",
+        "question": "Le chapiteau désigne la petite tente personnelle où dort le directeur du cirque.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. chapiteau به چادر بزرگ و اصلی سالن نمایش سیرک گفته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le dompteur est l'artiste qui présente des tours de magie avec des cartes et des lapins.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. dompteur رام‌کننده حیوانات است، شعبده‌باز illusionniste نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Les coulisses sont invisibles pour le public et servent de zone de préparation pour les artistes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پشت صحنه از دید تماشاگران پنهان است."
+      },
+      {
+        "type": "binary",
+        "question": "Une ovation est une critique sévère publiée par un journaliste après le spectacle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ovation به معنای تشویق شدید و ایستاده تماشاگران است."
+      },
+      {
+        "type": "binary",
+        "question": "La contorsionniste utilise la souplesse extrême de son corps pour réaliser des figures impressionnantes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هنر contorsionniste بر پایه انعطاف‌پذیری غیرعادی بدن استوار است."
+      }
+    ]
+  }
+}
