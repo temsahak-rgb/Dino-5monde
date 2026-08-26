@@ -1,0 +1,680 @@
+{
+  "id": "firefighting_rescue",
+  "level": "C1",
+  "theme": "Pompiers, lutte contre l'incendie et secours",
+  "theme_fa": "آتش‌نشانی، اطفای حریق و امداد و نجات",
+  "icon": "🚒",
+  "inspiration": "Backdraft (Ron Howard, 1991)",
+  "words": [
+    {
+      "fr": "le pompier",
+      "fa": "آتش‌نشان",
+      "emoji": "👨‍🚒",
+      "difficulty": 3,
+      "ex": "Le pompier risque sa vie chaque jour pour sauver des inconnus.",
+      "ex_fa": "آتش‌نشان هر روز جانش را برای نجات غریبه‌ها به خطر می‌اندازد."
+    },
+    {
+      "fr": "l'incendie",
+      "fa": "آتش‌سوزی",
+      "emoji": "🔥",
+      "difficulty": 3,
+      "ex": "L'incendie criminel a détruit l'entrepôt en quelques minutes.",
+      "ex_fa": "آتش‌سوزی عمدی انبار را در چند دقیقه نابود کرد."
+    },
+    {
+      "fr": "la flamme",
+      "fa": "شعله",
+      "emoji": "🔥",
+      "difficulty": 2,
+      "ex": "La flamme bleue indique une combustion complète et dangereuse.",
+      "ex_fa": "شعله آبی نشان‌دهنده احتراق کامل و خطرناک است."
+    },
+    {
+      "fr": "la fumée",
+      "fa": "دود",
+      "emoji": "💨",
+      "difficulty": 2,
+      "ex": "La fumée noire et toxique est souvent plus mortelle que le feu lui-même.",
+      "ex_fa": "دود سیاه و سمی اغلب کشنده‌تر از خود آتش است."
+    },
+    {
+      "fr": "le brasier",
+      "fa": "آتش خروشان، جهنم آتشین",
+      "emoji": "🔥",
+      "difficulty": 4,
+      "ex": "Les pompiers ont dû reculer face à l'intensité du brasier.",
+      "ex_fa": "آتش‌نشانان مجبور شدند در برابر شدت آتش خروشان عقب‌نشینی کنند."
+    },
+    {
+      "fr": "la lance",
+      "fa": "شلنگ آب (نازل)",
+      "emoji": "💦",
+      "difficulty": 3,
+      "ex": "Il tient fermement la lance à incendie pour arroser les flammes.",
+      "ex_fa": "او شلنگ آب را محکم نگه می‌دارد تا شعله‌ها را خاموش کند."
+    },
+    {
+      "fr": "le casque",
+      "fa": "کلاه ایمنی",
+      "emoji": "⛑️",
+      "difficulty": 2,
+      "ex": "Le casque jaune protège la tête des chutes de débris enflammés.",
+      "ex_fa": "کلاه زرد از سر در برابر ریزش آوارهای شعله‌ور محافظت می‌کند."
+    },
+    {
+      "fr": "le masque",
+      "fa": "ماسک تنفسی",
+      "emoji": "😷",
+      "difficulty": 3,
+      "ex": "Le masque à oxygène permet de respirer dans un environnement toxique.",
+      "ex_fa": "ماسک اکسیژن امکان تنفس در محیط سمی را می‌دهد."
+    },
+    {
+      "fr": "l'échelle",
+      "fa": "نردبان",
+      "emoji": "🪜",
+      "difficulty": 2,
+      "ex": "La grande échelle aérienne atteint les fenêtres du sixième étage.",
+      "ex_fa": "نردبان بزرگ هوایی به پنجره‌های طبقه ششم می‌رسد."
+    },
+    {
+      "fr": "le sauvetage",
+      "fa": "نجات",
+      "emoji": "🛟",
+      "difficulty": 3,
+      "ex": "Le sauvetage de l'enfant coincé a pris plus de deux heures.",
+      "ex_fa": "نجات کودک گیرافتاده بیش از دو ساعت طول کشید."
+    },
+    {
+      "fr": "la braise",
+      "fa": "اخگر، خاکستر داغ",
+      "emoji": "♨️",
+      "difficulty": 4,
+      "ex": "Même éteint, le feu peut reprendre à cause d'une braise cachée.",
+      "ex_fa": "حتی پس از خاموش شدن، آتش ممکن است به خاطر یک اخگر پنهان دوباره شعله‌ور شود."
+    },
+    {
+      "fr": "l'explosion",
+      "fa": "انفجار",
+      "emoji": "💥",
+      "difficulty": 3,
+      "ex": "L'explosion de fumée (backdraft) se produit quand l'oxygène pénètre soudainement.",
+      "ex_fa": "انفجار دود (بک‌درافت) زمانی رخ می‌دهد که اکسیژن ناگهان وارد شود."
+    },
+    {
+      "fr": "le camion",
+      "fa": "ماشین آتش‌نشانی",
+      "emoji": "🚒",
+      "difficulty": 2,
+      "ex": "Le camion rouge sirène hurlante fend la circulation urbaine.",
+      "ex_fa": "ماشین قرمز با آژیر کشدار، ترافیک شهری را می‌شکافد."
+    },
+    {
+      "fr": "le feu",
+      "fa": "آتش",
+      "emoji": "🔥",
+      "difficulty": 1,
+      "ex": "Le feu est un ennemi vivant qui respire, grandit et dévore.",
+      "ex_fa": "آتش دشمنی زنده است که نفس می‌کشد، رشد می‌کند و می‌بلعد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les ombres du brasier",
+      "text": "Stephen McCaffrey est un {{BLANK_1}} légendaire à Chicago, connu pour son courage insensé. Son frère Brian, lui, enquête sur les causes de chaque {{BLANK_2}} suspect. Un soir, l'alarme retentit. Le {{BLANK_13}} rouge fonce vers un vieil immeuble en proie aux {{BLANK_3}}s. Sur place, la {{BLANK_4}} noire et épaisse empêche de voir à deux mètres. Stephen enfile son {{BLANK_8}} respiratoire et son lourd {{BLANK_7}} jaune. Il s'avance seul dans le {{BLANK_5}} rugissant, armé de sa {{BLANK_6}} à eau. Au troisième étage, il entend un cri. C'est un {{BLANK_10}} désespéré qui commence. Il trouve une enfant terrifiée et la porte vers l'{{BLANK_9}} extérieure. Soudain, la porte du fond s'ouvre, créant un appel d'air. Brian, dehors, reconnaît les signes d'une imminente {{BLANK_12}} de fumée. Il hurle à la radio. Stephen brise une vitre juste à temps pour laisser s'échapper la chaleur. Dehors, il marche sur des {{BLANK_11}}s rougeoyantes, le visage noirci, héros anonyme de la nuit. Ce {{BLANK_14}} vivant l'a encore épargné, mais pour combien de temps ?",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "pompier",
+          "options": [
+            "pompier",
+            "incendie",
+            "flamme",
+            "fumée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "incendie",
+          "options": [
+            "incendie",
+            "brasier",
+            "lance",
+            "casque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "flammes",
+          "options": [
+            "flammes",
+            "masque",
+            "échelle",
+            "sauvetage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "fumée",
+          "options": [
+            "fumée",
+            "braise",
+            "explosion",
+            "camion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "brasier",
+          "options": [
+            "brasier",
+            "feu",
+            "pompier",
+            "incendie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "lance",
+          "options": [
+            "lance",
+            "flamme",
+            "fumée",
+            "brasier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "casque",
+          "options": [
+            "casque",
+            "lance",
+            "masque",
+            "échelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "masque",
+          "options": [
+            "masque",
+            "sauvetage",
+            "braise",
+            "explosion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "échelle",
+          "options": [
+            "échelle",
+            "camion",
+            "feu",
+            "pompier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sauvetage",
+          "options": [
+            "sauvetage",
+            "incendie",
+            "flamme",
+            "fumée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "braises",
+          "options": [
+            "braises",
+            "brasier",
+            "lance",
+            "casque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "explosion",
+          "options": [
+            "explosion",
+            "masque",
+            "échelle",
+            "sauvetage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "camion",
+          "options": [
+            "camion",
+            "braise",
+            "explosion",
+            "feu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "feu",
+          "options": [
+            "feu",
+            "pompier",
+            "incendie",
+            "flamme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le souffle du dragon",
+      "inspiration": "Backdraft (Ron Howard, 1991)",
+      "text": "À peine Stephen eut-il poussé la porte calcinée que le {{BLANK_5}} rugit comme une bête réveillée dans son antre. Ce {{BLANK_1}} maudit, qui portait le deuil de son père mort dans les flammes, ne combattait pas un simple {{BLANK_14}}, il dansait avec un dieu vorace. Autour de lui, la {{BLANK_4}} s'épaississait, suaire toxique qui étouffait les cris et la lumière. Sous son {{BLANK_7}} cabossé, ses yeux brûlaient, protégés par le sifflement régulier de son {{BLANK_8}}. Il avançait, sa {{BLANK_6}} crachant des torrents dérisoires contre l'océan de {{BLANK_3}}s qui léchait les plafonds. Soudain, un gémissement. Le {{BLANK_10}} devenait sa seule religion. Il trouva le corps frêle et le porta vers la promesse de l'{{BLANK_9}} métallique. Mais le {{BLANK_2}} respirait, il attendait. Dehors, son frère vit les vitres noircir, signe que le monstre inhalait l'oxygène pour préparer son {{BLANK_12}} finale. Quand le verre éclata, le dragon cracha sa fureur. Stephen ressortit, titubant sur les {{BLANK_11}}s incandescentes, le visage noir de suie, survivant d'un monde où le {{BLANK_13}} rouge n'était qu'un cercueil roulant. Il avait regardé le {{BLANK_14}} dans les yeux, sachant qu'un jour, inévitablement, il ne clignerait pas le premier.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "pompier",
+          "options": [
+            "pompier",
+            "incendie",
+            "flamme",
+            "fumée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "incendie",
+          "options": [
+            "incendie",
+            "brasier",
+            "lance",
+            "casque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "flammes",
+          "options": [
+            "flammes",
+            "masque",
+            "échelle",
+            "sauvetage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "fumée",
+          "options": [
+            "fumée",
+            "braise",
+            "explosion",
+            "camion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "brasier",
+          "options": [
+            "brasier",
+            "feu",
+            "pompier",
+            "incendie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "lance",
+          "options": [
+            "lance",
+            "flamme",
+            "fumée",
+            "brasier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "casque",
+          "options": [
+            "casque",
+            "lance",
+            "masque",
+            "échelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "masque",
+          "options": [
+            "masque",
+            "sauvetage",
+            "braise",
+            "explosion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "échelle",
+          "options": [
+            "échelle",
+            "camion",
+            "feu",
+            "pompier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sauvetage",
+          "options": [
+            "sauvetage",
+            "incendie",
+            "flamme",
+            "fumée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "braises",
+          "options": [
+            "braises",
+            "brasier",
+            "lance",
+            "casque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "explosion",
+          "options": [
+            "explosion",
+            "masque",
+            "échelle",
+            "sauvetage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "camion",
+          "options": [
+            "camion",
+            "braise",
+            "explosion",
+            "feu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "feu",
+          "options": [
+            "feu",
+            "pompier",
+            "incendie",
+            "flamme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Pompiers et incendies",
+    "title_fa": "آزمون : آتش‌نشانی و حریق",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le professionnel entraîné pour éteindre les feux et porter secours aux personnes en danger est le ____.",
+        "options": [
+          "pompier",
+          "incendie",
+          "flamme",
+          "fumée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرفه‌ای اطفای حریق و امداد = pompier."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sinistre caractérisé par un feu non contrôlé qui détruit des bâtiments ou des forêts est l'____.",
+        "options": [
+          "incendie",
+          "brasier",
+          "lance",
+          "casque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آتش‌سوزی غیرقابل کنترل = incendie."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie visible et lumineuse du feu, qui danse et consume les matériaux, est la ____.",
+        "options": [
+          "flamme",
+          "masque",
+          "échelle",
+          "sauvetage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش نورانی و سوزان آتش = flamme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le nuage de gaz et de particules toxiques produit par la combustion, souvent très dangereux, est la ____.",
+        "options": [
+          "fumée",
+          "braise",
+          "explosion",
+          "camion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابر گازها و ذرات سمی = fumée."
+      },
+      {
+        "type": "mcq",
+        "question": "Le foyer d'un feu très intense, ardent et dévorant, est appelé le ____.",
+        "options": [
+          "brasier",
+          "feu",
+          "pompier",
+          "incendie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کانون آتش بسیار شدید = brasier."
+      },
+      {
+        "type": "mcq",
+        "question": "Le long tube souple terminé par un embout qui permet de diriger le jet d'eau sur le feu est la ____.",
+        "options": [
+          "lance",
+          "flamme",
+          "fumée",
+          "brasier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لوله هدایت‌کننده آب = lance."
+      },
+      {
+        "type": "mcq",
+        "question": "L'équipement de protection rigide qui couvre et protège la tête des chutes d'objets est le ____.",
+        "options": [
+          "casque",
+          "lance",
+          "masque",
+          "échelle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تجهیزات محافظ سر = casque."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil qui fournit de l'air respirable aux pompiers dans les environnements enfumés est le ____.",
+        "options": [
+          "masque",
+          "sauvetage",
+          "braise",
+          "explosion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه تأمین هوای تنفسی = masque."
+      },
+      {
+        "type": "mcq",
+        "question": "L'outil à barreaux qui permet d'accéder aux étages supérieurs ou de fuir par les fenêtres est l'____.",
+        "options": [
+          "échelle",
+          "camion",
+          "feu",
+          "pompier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله صعود به طبقات = échelle."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de soustraire une personne ou un animal à un danger mortel est le ____.",
+        "options": [
+          "sauvetage",
+          "incendie",
+          "flamme",
+          "fumée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل نجات از خطر = sauvetage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le morceau de bois ou de charbon partiellement consumé qui reste incandescent après le feu est la ____.",
+        "options": [
+          "braise",
+          "brasier",
+          "lance",
+          "casque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکه چوب نیمه‌سوخته و داغ = braise."
+      },
+      {
+        "type": "mcq",
+        "question": "La déflagration soudaine et violente qui se produit quand un feu privé d'air reçoit brusquement de l'oxygène est l'____.",
+        "options": [
+          "explosion",
+          "masque",
+          "échelle",
+          "sauvetage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انفجار ناگهانی ناشی از ورود اکسیژن = explosion."
+      },
+      {
+        "type": "mcq",
+        "question": "Le véhicule lourd, rouge et équipé de sirènes qui transporte les pompiers et leur matériel est le ____.",
+        "options": [
+          "camion",
+          "braise",
+          "explosion",
+          "feu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خودروی سنگین قرمز آتش‌نشانی = camion."
+      },
+      {
+        "type": "mcq",
+        "question": "Le phénomène chimique de combustion produisant chaleur et lumière est le ____.",
+        "options": [
+          "feu",
+          "pompier",
+          "incendie",
+          "flamme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پدیده احتراق و سوختن = feu."
+      },
+      {
+        "type": "binary",
+        "question": "Le backdraft (explosion de fumée) se produit quand on ouvre une porte dans une pièce surchauffée et privée d'oxygène.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بک‌درافت زمانی رخ می‌دهد که اکسیژن ناگهان به محیط داغ و پر از گازهای قابل اشتعال وارد شود."
+      },
+      {
+        "type": "binary",
+        "question": "La fumée est inoffensive et ne présente aucun danger pour les pompiers sans masque.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. دود (fumée) حاوی گازهای سمی مانند مونوکسید کربن است و کشنده‌تر از خود شعله است."
+      },
+      {
+        "type": "binary",
+        "question": "La lance à incendie est l'outil qui permet de diriger le jet d'eau sur les flammes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. نازل یا شلنگ (lance) جریان آب را به سمت آتش هدایت می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Les braises sont complètement froides et ne présentent plus aucun risque de reprendre feu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. اخگرها (braises) بسیار داغ‌اند و در صورت تماس با اکسیژن یا مواد سوختنی دوباره شعله‌ور می‌شوند."
+      },
+      {
+        "type": "binary",
+        "question": "Le casque protège la tête des pompiers contre les chutes de débris et la chaleur intense.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کلاه ایمنی (casque) محافظی حیاتی در برابر آوار و حرارت است."
+      },
+      {
+        "type": "binary",
+        "question": "Un sauvetage désigne l'action d'éteindre complètement un feu avec de la mousse chimique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. نجات (sauvetage) به معنای بیرون کشیدن افراد یا حیوانات از خطر است، نه خاموش کردن آتش."
+      }
+    ]
+  }
+}
