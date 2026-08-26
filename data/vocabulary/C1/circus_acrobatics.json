@@ -1,0 +1,680 @@
+{
+  "id": "circus_acrobatics",
+  "level": "C1",
+  "theme": "Cirque, acrobatie et arts de la piste",
+  "theme_fa": "سیرک، آکروبات و هنرهای میدان",
+  "icon": "🎪",
+  "inspiration": "The Greatest Showman (Michael Gracey, 2017)",
+  "words": [
+    {
+      "fr": "le cirque",
+      "fa": "سیرک",
+      "emoji": "🎪",
+      "difficulty": 3,
+      "ex": "Le cirque traditionnel voyage de ville en ville avec sa ménagerie.",
+      "ex_fa": "سیرک سنتی با باغ وحش خود از شهری به شهر دیگر سفر می‌کند."
+    },
+    {
+      "fr": "le trapèze",
+      "fa": "تراپز",
+      "emoji": "🎪",
+      "difficulty": 4,
+      "ex": "Les artistes volent d'un trapèze à l'autre sans filet.",
+      "ex_fa": "هنرمندان بدون تور از یک تراپز به تراپز دیگر پرواز می‌کنند."
+    },
+    {
+      "fr": "l'acrobate",
+      "fa": "آکروبات (بندباز)",
+      "emoji": "🤸",
+      "difficulty": 4,
+      "ex": "L'acrobate réalise des figures impossibles dans les airs.",
+      "ex_fa": "آکروبات حرکات غیرممکنی در هوا انجام می‌دهد."
+    },
+    {
+      "fr": "le jongleur",
+      "fa": "شعبده‌باز پرتابی (ژوگلور)",
+      "emoji": "🤹",
+      "difficulty": 4,
+      "ex": "Le jongleur manipule sept massues simultanément.",
+      "ex_fa": "ژوگلور همزمان هفت چماق را کنترل می‌کند."
+    },
+    {
+      "fr": "le funambule",
+      "fa": "بندباز",
+      "emoji": "🎪",
+      "difficulty": 5,
+      "ex": "Le funambule traverse la corde à cinquante mètres de hauteur.",
+      "ex_fa": "بندباز طناب را در ارتفاع پنجاه متری طی می‌کند."
+    },
+    {
+      "fr": "le chapiteau",
+      "fa": "چادر سیرک",
+      "emoji": "⛺",
+      "difficulty": 4,
+      "ex": "Le chapiteau rouge et blanc se dresse au centre de la ville.",
+      "ex_fa": "چادر قرمز و سفید سیرک در مرکز شهر برپا می‌شود."
+    },
+    {
+      "fr": "la piste",
+      "fa": "میدان سیرک",
+      "emoji": "⭕",
+      "difficulty": 4,
+      "ex": "La piste circulaire mesure treize mètres de diamètre.",
+      "ex_fa": "میدان دایره‌ای سیزده متر قطر دارد."
+    },
+    {
+      "fr": "le dompteur",
+      "fa": "رام‌کننده حیوانات",
+      "emoji": "🦁",
+      "difficulty": 4,
+      "ex": "Le dompteur entre dans la cage des fauves avec autorité.",
+      "ex_fa": "رام‌کننده با اقتدار وارد قفس حیوانات درنده می‌شود."
+    },
+    {
+      "fr": "le clown",
+      "fa": "دلقک",
+      "emoji": "🤡",
+      "difficulty": 3,
+      "ex": "Le clown fait rire les enfants avec ses grimaces exagérées.",
+      "ex_fa": "دلقک با شکلک‌های اغراق‌آمیزش کودکان را می‌خنداند."
+    },
+    {
+      "fr": "le contorsionniste",
+      "fa": "کنتورسیونیست (انعطاف‌بازیگر)",
+      "emoji": "🧘",
+      "difficulty": 5,
+      "ex": "Le contorsionniste plie son corps dans des positions incroyables.",
+      "ex_fa": "کنتورسیونیست بدنش را به حالت‌های باورنکردنی خم می‌کند."
+    },
+    {
+      "fr": "l'équilibriste",
+      "fa": "تعادل‌باز",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "L'équilibriste tient sur un seul doigt pendant plusieurs minutes.",
+      "ex_fa": "تعادل‌باز چند دقیقه روی یک انگشت می‌ایستد."
+    },
+    {
+      "fr": "la ménagerie",
+      "fa": "باغ وحش سیرک",
+      "emoji": "🐘",
+      "difficulty": 5,
+      "ex": "La ménagerie comprend des éléphants, des lions et des chevaux.",
+      "ex_fa": "باغ وحش شامل فیل‌ها، شیرها و اسب‌هاست."
+    },
+    {
+      "fr": "le numéro",
+      "fa": "شماره (برنامه نمایشی)",
+      "emoji": "🎭",
+      "difficulty": 4,
+      "ex": "Le numéro de haute voltige dure douze minutes.",
+      "ex_fa": "شماره آکروباتیک هوایی دوازده دقیقه طول می‌کشد."
+    },
+    {
+      "fr": "le spectacle",
+      "fa": "نمایش",
+      "emoji": "🎪",
+      "difficulty": 3,
+      "ex": "Le spectacle attire des milliers de spectateurs chaque soir.",
+      "ex_fa": "نمایش هر شب هزاران تماشاگر را جذب می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le rêve du showman",
+      "text": "P.T. Barnum est un jeune homme ambitieux qui rêve de créer le plus grand {{BLANK_1}} du monde. Avec peu d'argent mais beaucoup d'imagination, il rassemble une troupe de phénomènes et d'artistes exceptionnels. Il monte son {{BLANK_6}} géant en plein cœur de New York. Sur la {{BLANK_7}} centrale, des artistes du monde entier se succèdent. Un {{BLANK_3}} réalise des sauts mortels entre les barres de {{BLANK_2}} suspendues très haut. Un {{BLANK_4}} habile fait tourner dix objets différents dans les airs. Le {{BLANK_5}} marche sur une corde fine sans aucun balancier. Un {{BLANK_8}} courageux présente un {{BLANK_13}} spectaculaire avec des lions et des tigres de sa {{BLANK_12}}. Le {{BLANK_9}} aux chaussures géantes fait éclater de rire tout le public. Une {{BLANK_10}} plie son corps dans des formes impossibles. Un {{BLANK_11}} se tient en équilibre sur une simple canne. Chaque {{BLANK_14}} est unique et provoque l'émerveillement. Le {{BLANK_14}} final réunit tous les artistes dans un final éblouissant. Barnum transforme le divertissement en art et prouve que la plus grande aventure est celle qui unit les gens dans l'émerveillement.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cirque",
+          "options": [
+            "cirque",
+            "trapèze",
+            "acrobate",
+            "jongleur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "trapèze",
+          "options": [
+            "trapèze",
+            "funambule",
+            "chapiteau",
+            "piste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "acrobate",
+          "options": [
+            "acrobate",
+            "dompteur",
+            "clown",
+            "contorsionniste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "jongleur",
+          "options": [
+            "jongleur",
+            "équilibriste",
+            "ménagerie",
+            "numéro"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "funambule",
+          "options": [
+            "funambule",
+            "spectacle",
+            "cirque",
+            "trapèze"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "chapiteau",
+          "options": [
+            "chapiteau",
+            "piste",
+            "dompteur",
+            "clown"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "piste",
+          "options": [
+            "piste",
+            "contorsionniste",
+            "équilibriste",
+            "ménagerie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dompteur",
+          "options": [
+            "dompteur",
+            "numéro",
+            "spectacle",
+            "cirque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "clown",
+          "options": [
+            "clown",
+            "trapèze",
+            "acrobate",
+            "jongleur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "contorsionniste",
+          "options": [
+            "contorsionniste",
+            "funambule",
+            "chapiteau",
+            "piste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "équilibriste",
+          "options": [
+            "équilibriste",
+            "dompteur",
+            "clown",
+            "contorsionniste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ménagerie",
+          "options": [
+            "ménagerie",
+            "numéro",
+            "spectacle",
+            "cirque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "numéro",
+          "options": [
+            "numéro",
+            "trapèze",
+            "acrobate",
+            "jongleur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "spectacle",
+          "options": [
+            "spectacle",
+            "funambule",
+            "chapiteau",
+            "piste"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La symphonie des impossibles",
+      "inspiration": "The Greatest Showman (Michael Gracey, 2017)",
+      "text": "À peine P.T. Barnum eut-il planté le dernier piquet du {{BLANK_6}} qu'il sentit naître sous la toile la plus grande cathédrale du rêve humain. Ce jeune homme sans fortune, rejeté par la bonne société, avait décidé de bâtir un empire sur l'émerveillement plutôt que sur l'or. Son {{BLANK_1}} ne serait pas une simple foire, mais un temple où chaque être rejeté deviendrait étoile. Sur la {{BLANK_7}} de sable fin, des corps défiant la physique écriraient des poèmes éphémères. Là-haut, entre les barres de {{BLANK_2}} qui oscillaient comme des métronomes fous, un {{BLANK_3}} volait comme un oiseau qui aurait oublié la peur, attrapant la mort entre ses doigts pour la transformer en grâce. Plus loin, un {{BLANK_4}} aux mains magiques faisait danser les objets dans les airs, défiant la gravité avec une élégance de chorégraphe céleste. Le {{BLANK_5}}, ce marcheur d'impossible, traversait l'abîme sur un fil invisible, chaque pas étant un pari contre le vide. Un {{BLANK_8}} intrépide entrait dans la cage des fauves, transformant la sauvagerie en ballet majestueux. Dans sa {{BLANK_12}} dormaient des créatures venues des confins du monde, témoins silencieux de la diversité terrestre. Le {{BLANK_9}} au nez rouge, loin d'être un simple amuseur, portait sur son visage peint la mélancolie du monde et la transformait en éclats de rire libérateurs. Une {{BLANK_10}} pliait son corps comme un origami vivant, révélant les possibilités infinies de la chair humaine. Un {{BLANK_11}} se tenait sur une main, sculpture vivante défiant toutes les lois d'Isaac Newton. Chaque {{BLANK_13}} était une victoire sur la banalité, chaque {{BLANK_14}} une célébration du vivant dans toute sa splendeur bizarre. Barnum avait compris que le véritable miracle n'était pas dans les prodiges des artistes, mais dans la manière dont ils réunissaient les âmes sous une même toile, le temps d'une soirée, pour leur rappeler qu'elles aussi pouvaient voler.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cirque",
+          "options": [
+            "cirque",
+            "trapèze",
+            "acrobate",
+            "jongleur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "trapèze",
+          "options": [
+            "trapèze",
+            "funambule",
+            "chapiteau",
+            "piste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "acrobate",
+          "options": [
+            "acrobate",
+            "dompteur",
+            "clown",
+            "contorsionniste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "jongleur",
+          "options": [
+            "jongleur",
+            "équilibriste",
+            "ménagerie",
+            "numéro"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "funambule",
+          "options": [
+            "funambule",
+            "spectacle",
+            "cirque",
+            "trapèze"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "chapiteau",
+          "options": [
+            "chapiteau",
+            "piste",
+            "dompteur",
+            "clown"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "piste",
+          "options": [
+            "piste",
+            "contorsionniste",
+            "équilibriste",
+            "ménagerie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dompteur",
+          "options": [
+            "dompteur",
+            "numéro",
+            "spectacle",
+            "cirque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "clown",
+          "options": [
+            "clown",
+            "trapèze",
+            "acrobate",
+            "jongleur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "contorsionniste",
+          "options": [
+            "contorsionniste",
+            "funambule",
+            "chapiteau",
+            "piste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "équilibriste",
+          "options": [
+            "équilibriste",
+            "dompteur",
+            "clown",
+            "contorsionniste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ménagerie",
+          "options": [
+            "ménagerie",
+            "numéro",
+            "spectacle",
+            "cirque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "numéro",
+          "options": [
+            "numéro",
+            "trapèze",
+            "acrobate",
+            "jongleur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "spectacle",
+          "options": [
+            "spectacle",
+            "funambule",
+            "chapiteau",
+            "piste"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Cirque et acrobatie",
+    "title_fa": "آزمون : سیرک و آکروباتیک",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le spectacle itinérant qui réunit des artistes réalisant des numéros variés (acrobatie, clown, jonglerie) est le ____.",
+        "options": [
+          "cirque",
+          "trapèze",
+          "acrobate",
+          "jongleur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نمایش سیار با هنرمندان مختلف = cirque."
+      },
+      {
+        "type": "mcq",
+        "question": "L'agrès aérien constitué d'une barre horizontale suspendue par deux cordes est le ____.",
+        "options": [
+          "trapèze",
+          "funambule",
+          "chapiteau",
+          "piste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "میله افقی معلق با طناب = trapèze."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artiste qui réalise des figures gymniques spectaculaires et périlleuses est l'____.",
+        "options": [
+          "acrobate",
+          "dompteur",
+          "clown",
+          "contorsionniste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنرمند حرکات ژیمناستیک = acrobate."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artiste qui lance et rattrape adroitement plusieurs objets (balles, massues) est le ____.",
+        "options": [
+          "jongleur",
+          "équilibriste",
+          "ménagerie",
+          "numéro"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنرمند پرتاب و گرفتن اشیاء = jongleur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artiste qui marche sur un fil tendu à grande hauteur est le ____.",
+        "options": [
+          "funambule",
+          "spectacle",
+          "cirque",
+          "trapèze"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "راه‌رونده روی طناب = funambule."
+      },
+      {
+        "type": "mcq",
+        "question": "La grande tente sous laquelle se déroulent les représentations du cirque est le ____.",
+        "options": [
+          "chapiteau",
+          "piste",
+          "dompteur",
+          "clown"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چادر بزرگ سیرک = chapiteau."
+      },
+      {
+        "type": "mcq",
+        "question": "L'espace circulaire central où évoluent les artistes sous le chapiteau est la ____.",
+        "options": [
+          "piste",
+          "contorsionniste",
+          "équilibriste",
+          "ménagerie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فضای دایره‌ای مرکزی = piste."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artiste spécialisé dans le dressage et la présentation des fauves est le ____.",
+        "options": [
+          "dompteur",
+          "numéro",
+          "spectacle",
+          "cirque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رام‌کننده حیوانات درنده = dompteur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artiste comique au visage maquillé qui fait rire le public par ses gags est le ____.",
+        "options": [
+          "clown",
+          "trapèze",
+          "acrobate",
+          "jongleur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنرمند کمدی با چهره رنگی = clown."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artiste qui plie son corps dans des positions extrêmes et inhabituelles est le ____.",
+        "options": [
+          "contorsionniste",
+          "funambule",
+          "chapiteau",
+          "piste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنرمند با انعطاف بدنی فوق‌العاده = contorsionniste."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artiste qui maintient des positions précaires en maîtrisant parfaitement son centre de gravité est l'____.",
+        "options": [
+          "équilibriste",
+          "dompteur",
+          "clown",
+          "contorsionniste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنرمند تعادل = équilibriste."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des animaux sauvages présentés dans un cirque traditionnel est la ____.",
+        "options": [
+          "ménagerie",
+          "numéro",
+          "spectacle",
+          "cirque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه حیوانات سیرک = ménagerie."
+      },
+      {
+        "type": "mcq",
+        "question": "La prestation artistique individuelle ou collective présentée au public est le ____.",
+        "options": [
+          "numéro",
+          "trapèze",
+          "acrobate",
+          "jongleur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اجرای هنری مشخص = numéro."
+      },
+      {
+        "type": "mcq",
+        "question": "La représentation artistique présentée devant un public est le ____.",
+        "options": [
+          "spectacle",
+          "funambule",
+          "chapiteau",
+          "piste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اجرای هنری در برابر تماشاگران = spectacle."
+      },
+      {
+        "type": "binary",
+        "question": "Le trapèze est un instrument de musique utilisé dans les orchestres de cirque.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تراپز وسیله‌ای آکروباتیک است، نه ساز موسیقی."
+      },
+      {
+        "type": "binary",
+        "question": "Le funambule marche sur un fil tendu à grande hauteur, souvent sans balancier.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بندباز روی طناب کشیده‌شده در ارتفاع راه می‌رود."
+      },
+      {
+        "type": "binary",
+        "question": "La ménagerie d'un cirque désigne uniquement les chevaux de spectacle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. ménagerie شامل همه حیوانات سیرک (فیل، شیر، اسب و...) است."
+      },
+      {
+        "type": "binary",
+        "question": "Le jongleur lance et rattrape habilement plusieurs objets simultanément.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ژوگلور چند شیء را همزمان پرتاب و می‌گیرد."
+      },
+      {
+        "type": "binary",
+        "question": "Le chapiteau est la tente caractéristique sous laquelle se produisent les artistes de cirque.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. چادر سیرک chapiteau نامیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le contorsionniste est un spécialiste des tours de magie avec des cartes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کنتورسیونیست هنرمند انعطاف بدنی است، نه شعبده‌باز."
+      }
+    ]
+  }
+}
