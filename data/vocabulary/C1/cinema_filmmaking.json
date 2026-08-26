@@ -1,0 +1,680 @@
+{
+  "id": "cinema_filmmaking",
+  "level": "C1",
+  "theme": "Cinéma, réalisation et septième art",
+  "theme_fa": "سینما، کارگردانی و هنر هفتم",
+  "icon": "🎬",
+  "inspiration": "Cinema Paradiso (Giuseppe Tornatore, 1988)",
+  "words": [
+    {
+      "fr": "le cinéma",
+      "fa": "سینما",
+      "emoji": "🎬",
+      "difficulty": 2,
+      "ex": "Le cinéma est souvent appelé le septième art.",
+      "ex_fa": "سینما اغلب به عنوان هنر هفتم شناخته می‌شود."
+    },
+    {
+      "fr": "le réalisateur",
+      "fa": "کارگردان",
+      "emoji": "🎥",
+      "difficulty": 3,
+      "ex": "Le réalisateur dirige les acteurs et supervise la vision artistique du film.",
+      "ex_fa": "کارگردان بازیگران را هدایت و بر چشم‌انداز هنری فیلم نظارت می‌کند."
+    },
+    {
+      "fr": "le scénario",
+      "fa": "فیلمنامه",
+      "emoji": "📜",
+      "difficulty": 3,
+      "ex": "Un bon scénario est la colonne vertébrale de toute grande œuvre cinématographique.",
+      "ex_fa": "فیلمنامه خوب ستون فقرات هر اثر بزرگ سینمایی است."
+    },
+    {
+      "fr": "la caméra",
+      "fa": "دوربین فیلمبرداری",
+      "emoji": "🎥",
+      "difficulty": 2,
+      "ex": "La caméra capture les émotions fugaces sur le visage des comédiens.",
+      "ex_fa": "دوربین احساسات زودگذر را بر چهره بازیگران ثبت می‌کند."
+    },
+    {
+      "fr": "la pellicule",
+      "fa": "نوار فیلم (سلولوید)",
+      "emoji": "🎞️",
+      "difficulty": 4,
+      "ex": "La pellicule argentique possède un grain unique que le numérique imite mal.",
+      "ex_fa": "نوار فیلم آنالوگ دارای بافتی منحصربه‌فرد است که دیجیتال به سختی تقلید می‌کند."
+    },
+    {
+      "fr": "le montage",
+      "fa": "تدوین",
+      "emoji": "✂️",
+      "difficulty": 4,
+      "ex": "Le montage donne son rythme final et sa narration au film.",
+      "ex_fa": "تدوین، ریتم نهایی و روایت فیلم را شکل می‌دهد."
+    },
+    {
+      "fr": "le plateau",
+      "fa": "صحنه فیلمبرداری",
+      "emoji": "🎬",
+      "difficulty": 3,
+      "ex": "Sur le plateau, le silence doit être absolu quand on tourne.",
+      "ex_fa": "روی صحنه فیلمبرداری، هنگام ضبط سکوت باید مطلق باشد."
+    },
+    {
+      "fr": "la bande-son",
+      "fa": "نوار صوتی، صداگذاری",
+      "emoji": "🎧",
+      "difficulty": 4,
+      "ex": "La bande-son inclut les dialogues, les bruitages et la musique.",
+      "ex_fa": "نوار صوتی شامل دیالوگ‌ها، افکت‌های صوتی و موسیقی است."
+    },
+    {
+      "fr": "le projecteur",
+      "fa": "پروژکتور، دستگاه نمایش",
+      "emoji": "📽️",
+      "difficulty": 3,
+      "ex": "Le vieux projecteur cliquette en déroulant les souvenirs d'enfance.",
+      "ex_fa": "پروژکتور قدیمی با کلیک‌کلیک، خاطرات کودکی را پخش می‌کند."
+    },
+    {
+      "fr": "le clap",
+      "fa": "کلاکت",
+      "emoji": "🎬",
+      "difficulty": 3,
+      "ex": "Le son sec du clap permet de synchroniser l'image et le son.",
+      "ex_fa": "صدای خشک کلاکت امکان هماهنگی تصویر و صدا را می‌دهد."
+    },
+    {
+      "fr": "la prise",
+      "fa": "برداشت (تیک)",
+      "emoji": "🎬",
+      "difficulty": 4,
+      "ex": "Le réalisateur exige une dernière prise pour capturer l'émotion parfaite.",
+      "ex_fa": "کارگردان برای ثبت احساس بی‌نقص، یک برداشت دیگر درخواست می‌کند."
+    },
+    {
+      "fr": "le générique",
+      "fa": "تیتراژ",
+      "emoji": "📝",
+      "difficulty": 3,
+      "ex": "Le générique de fin rend hommage à tous les techniciens de l'ombre.",
+      "ex_fa": "تیتراژ پایانی به تمام تکنسین‌های پشت صحنه ادای احترام می‌کند."
+    },
+    {
+      "fr": "le cadreur",
+      "fa": "فیلمبردار، اپراتور دوربین",
+      "emoji": "🎥",
+      "difficulty": 4,
+      "ex": "Le cadreur suit les mouvements des acteurs avec une fluidité parfaite.",
+      "ex_fa": "فیلمبردار حرکات بازیگران را با روانی کامل دنبال می‌کند."
+    },
+    {
+      "fr": "le doublage",
+      "fa": "دوبله",
+      "emoji": "🎙️",
+      "difficulty": 4,
+      "ex": "Le doublage permet aux films de voyager à travers les langues du monde.",
+      "ex_fa": "دوبله به فیلم‌ها اجازه می‌دهد در زبان‌های جهان سفر کنند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le rêve de celluloïd",
+      "text": "Salvatore est un jeune passionné de {{BLANK_1}} dans un petit village sicilien. Un jour, il écrit son propre {{BLANK_3}} et décide de tourner un court-métrage. Il emprunte une vieille {{BLANK_4}} et achète une bobine de {{BLANK_5}} vierge. Sur le {{BLANK_7}} improvisé, il dirige ses amis acteurs. Le {{BLANK_13}} règle le cadre, et l'assistant frappe le {{BLANK_10}} avant chaque {{BLANK_11}}. Après des semaines de travail, il commence le {{BLANK_6}} dans sa chambre. Il ajoute la {{BLANK_8}} avec les voix et la musique. La projection a lieu dans la salle du village. Le {{BLANK_9}} s'allume, perçant l'obscurité. Quand le {{BLANK_12}} de fin défile, le public applaudit. Des années plus tard, devenu un grand {{BLANK_2}}, il n'oubliera jamais que le {{BLANK_14}} de ses premiers films lui a appris à donner une âme aux personnages.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cinéma",
+          "options": [
+            "cinéma",
+            "réalisateur",
+            "scénario",
+            "caméra"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "réalisateur",
+          "options": [
+            "réalisateur",
+            "pellicule",
+            "montage",
+            "plateau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "scénario",
+          "options": [
+            "scénario",
+            "bande-son",
+            "projecteur",
+            "clap"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "caméra",
+          "options": [
+            "caméra",
+            "prise",
+            "générique",
+            "cadreur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pellicule",
+          "options": [
+            "pellicule",
+            "doublage",
+            "cinéma",
+            "réalisateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "montage",
+          "options": [
+            "montage",
+            "scénario",
+            "caméra",
+            "pellicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "plateau",
+          "options": [
+            "plateau",
+            "bande-son",
+            "projecteur",
+            "clap"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "bande-son",
+          "options": [
+            "bande-son",
+            "prise",
+            "générique",
+            "cadreur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "projecteur",
+          "options": [
+            "projecteur",
+            "doublage",
+            "cinéma",
+            "réalisateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "clap",
+          "options": [
+            "clap",
+            "scénario",
+            "caméra",
+            "pellicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "prise",
+          "options": [
+            "prise",
+            "montage",
+            "plateau",
+            "bande-son"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "générique",
+          "options": [
+            "générique",
+            "projecteur",
+            "clap",
+            "prise"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "cadreur",
+          "options": [
+            "cadreur",
+            "doublage",
+            "cinéma",
+            "réalisateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "doublage",
+          "options": [
+            "doublage",
+            "scénario",
+            "caméra",
+            "pellicule"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La salle des illusions",
+      "inspiration": "Cinema Paradiso (Giuseppe Tornatore, 1988)",
+      "text": "À peine le {{BLANK_9}} eut-il grésillé dans la cabine que la poussière se transforma en poudre d'étoiles. Ce vieux {{BLANK_2}}, usé par les drames, relisait le {{BLANK_3}} jauni de son chef-d'œuvre pendant que la {{BLANK_5}} déroulait ses souvenirs. Sur l'écran blanc, le {{BLANK_7}} de sa jeunesse revivait, immortalisé par l'œil de la {{BLANK_4}}. Il se souvenait du bruit sec du {{BLANK_10}}, exigeant une dernière {{BLANK_11}}, et de la magie du {{BLANK_6}}. Le {{BLANK_13}} avait su capturer les larmes, tandis que la {{BLANK_8}} portait les murmures des amants. Il sourit en entendant le {{BLANK_14}} parfait qui redonnait voix aux fantômes. Quand le {{BLANK_12}} final égraina les noms, il comprit que le {{BLANK_1}} était la seule machine à vaincre l'oubli.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cinéma",
+          "options": [
+            "cinéma",
+            "réalisateur",
+            "scénario",
+            "caméra"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "réalisateur",
+          "options": [
+            "réalisateur",
+            "pellicule",
+            "montage",
+            "plateau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "scénario",
+          "options": [
+            "scénario",
+            "bande-son",
+            "projecteur",
+            "clap"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "caméra",
+          "options": [
+            "caméra",
+            "prise",
+            "générique",
+            "cadreur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pellicule",
+          "options": [
+            "pellicule",
+            "doublage",
+            "cinéma",
+            "réalisateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "montage",
+          "options": [
+            "montage",
+            "scénario",
+            "caméra",
+            "pellicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "plateau",
+          "options": [
+            "plateau",
+            "bande-son",
+            "projecteur",
+            "clap"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "bande-son",
+          "options": [
+            "bande-son",
+            "prise",
+            "générique",
+            "cadreur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "projecteur",
+          "options": [
+            "projecteur",
+            "doublage",
+            "cinéma",
+            "réalisateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "clap",
+          "options": [
+            "clap",
+            "scénario",
+            "caméra",
+            "pellicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "prise",
+          "options": [
+            "prise",
+            "montage",
+            "plateau",
+            "bande-son"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "générique",
+          "options": [
+            "générique",
+            "projecteur",
+            "clap",
+            "prise"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "cadreur",
+          "options": [
+            "cadreur",
+            "doublage",
+            "cinéma",
+            "réalisateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "doublage",
+          "options": [
+            "doublage",
+            "scénario",
+            "caméra",
+            "pellicule"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Cinéma et réalisation",
+    "title_fa": "آزمون : سینما و کارگردانی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art de créer des films et l'industrie qui y est associée, souvent appelé le septième art, est le ____.",
+        "options": [
+          "cinéma",
+          "réalisateur",
+          "scénario",
+          "caméra"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر هفتم و صنعت فیلم = cinéma."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui dirige la création artistique d'un film, guide les acteurs et prend les décisions finales est le ____.",
+        "options": [
+          "réalisateur",
+          "pellicule",
+          "montage",
+          "plateau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هدایت‌گر هنری فیلم = réalisateur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le texte écrit qui contient l'histoire, les dialogues et les indications de mise en scène d'un film est le ____.",
+        "options": [
+          "scénario",
+          "bande-son",
+          "projecteur",
+          "clap"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متن داستان و دیالوگ‌ها = scénario."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil optique qui enregistre les images animées sur un support numérique ou argentique est la ____.",
+        "options": [
+          "caméra",
+          "prise",
+          "générique",
+          "cadreur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه ضبط تصاویر متحرک = caméra."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ruban photosensible en celluloïd utilisé traditionnellement pour impressionner les images est la ____.",
+        "options": [
+          "pellicule",
+          "doublage",
+          "cinéma",
+          "réalisateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نوار حساس به نور = pellicule."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étape de post-production où l'on assemble et ordonne les plans tournés pour créer le récit final est le ____.",
+        "options": [
+          "montage",
+          "scénario",
+          "caméra",
+          "pellicule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مرحله چیدمان و اتصال نماها = montage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu physique, en studio ou en extérieur, où se déroule le tournage des scènes d'un film est le ____.",
+        "options": [
+          "plateau",
+          "bande-son",
+          "projecteur",
+          "clap"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محل فیزیکی فیلمبرداری = plateau."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des éléments audio d'un film, incluant les voix, les bruitages et la musique, est la ____.",
+        "options": [
+          "bande-son",
+          "prise",
+          "générique",
+          "cadreur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه صداهای فیلم = bande-son."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil optique qui projette la lumière à travers la pellicule pour afficher l'image sur l'écran est le ____.",
+        "options": [
+          "projecteur",
+          "doublage",
+          "cinéma",
+          "réalisateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه پخش تصویر روی پرده = projecteur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit tableau articulé que l'on frappe devant la caméra pour identifier le plan et synchroniser le son est le ____.",
+        "options": [
+          "clap",
+          "scénario",
+          "caméra",
+          "pellicule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تخته کوچک برای هماهنگی صدا و تصویر = clap."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enregistrement continu d'une scène, depuis le mot 'action' jusqu'au mot 'coupez', est la ____.",
+        "options": [
+          "prise",
+          "montage",
+          "plateau",
+          "bande-son"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضبط پیوسته یک صحنه = prise."
+      },
+      {
+        "type": "mcq",
+        "question": "La liste des noms des personnes ayant participé à la création du film, affichée au début ou à la fin, est le ____.",
+        "options": [
+          "générique",
+          "projecteur",
+          "clap",
+          "prise"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فهرست عوامل فیلم = générique."
+      },
+      {
+        "type": "mcq",
+        "question": "Le technicien qui opère la caméra et compose le cadrage des images pendant le tournage est le ____.",
+        "options": [
+          "cadreur",
+          "doublage",
+          "cinéma",
+          "réalisateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اپراتور دوربین = cadreur."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique qui consiste à remplacer les voix originales d'un film par des voix dans une autre langue est le ____.",
+        "options": [
+          "doublage",
+          "scénario",
+          "caméra",
+          "pellicule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جایگزینی صداها به زبان دیگر = doublage."
+      },
+      {
+        "type": "binary",
+        "question": "Le scénario est le document final qui liste tous les noms des acteurs et techniciens du film.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. فیلمنامه (scénario) متن داستان و دیالوگ‌هاست؛ فهرست اسامی générique نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le montage est l'étape cruciale où l'on assemble les plans pour donner son rythme au film.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تدوین (montage) مونتاژ نماها برای ایجاد ریتم و روایت است."
+      },
+      {
+        "type": "binary",
+        "question": "Le clap sert principalement à éclairer le visage des acteurs dans les scènes sombres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کلاکت (clap) برای هماهنگ‌سازی (sync) صدای ضبط‌شده با تصویر استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La pellicule désigne la bande de celluloïd photosensible utilisée dans les caméras argentiques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پلیکول (pellicule) همان نوار فیلم آنالوگ و حساس به نور است."
+      },
+      {
+        "type": "binary",
+        "question": "Le doublage consiste à ajouter des effets spéciaux numériques par-dessus l'image filmée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. دوبله (doublage) جایگزینی یا ضبط مجدد دیالوگ‌ها و صداهاست، نه جلوه‌های ویژه تصویری."
+      },
+      {
+        "type": "binary",
+        "question": "Le cadreur est la personne qui regarde dans le viseur et cadre l'image pendant que la caméra tourne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. فیلمبردار (cadreur) مسئول کادربندی و هدایت فیزیکی دوربین حین ضبط است."
+      }
+    ]
+  }
+}
