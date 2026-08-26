@@ -1,0 +1,680 @@
+{
+  "id": "shipwreck_underwater",
+  "level": "C1",
+  "theme": "Épaves, plongée sous-marine et exploration océanique",
+  "theme_fa": "کشتی‌های غرق‌شده، غواصی و اکتشافات اقیانوسی",
+  "icon": "🚢",
+  "inspiration": "Titanic (James Cameron, 1997)",
+  "words": [
+    {
+      "fr": "l'épave",
+      "fa": "لاشه کشتی",
+      "emoji": "🚢",
+      "difficulty": 4,
+      "ex": "L'épave du Titanic repose à près de quatre mille mètres de profondeur.",
+      "ex_fa": "لاشه تایتانیک در عمق نزدیک به چهار هزار متری آرمیده است."
+    },
+    {
+      "fr": "le submersible",
+      "fa": "زیردریایی کوچک (کاوشگر)",
+      "emoji": "🛸",
+      "difficulty": 5,
+      "ex": "Le submersible peut résister à des pressions abyssales écrasantes.",
+      "ex_fa": "زیردریایی کوچک می‌تواند در برابر فشار خردکننده اعماق مقاومت کند."
+    },
+    {
+      "fr": "la coque",
+      "fa": "بدنه کشتی",
+      "emoji": "🛳️",
+      "difficulty": 4,
+      "ex": "La coque du navire s'est brisée en deux lors de la collision.",
+      "ex_fa": "بدنه کشتی هنگام برخورد به دو نیم تقسیم شد."
+    },
+    {
+      "fr": "l'iceberg",
+      "fa": "کوه یخ",
+      "emoji": "🧊",
+      "difficulty": 3,
+      "ex": "Le paquebot a heurté un iceberg invisible dans la nuit noire.",
+      "ex_fa": "کشتی مسافربری در شب تاریک به یک کوه یخ نامرئی برخورد کرد."
+    },
+    {
+      "fr": "la rouille",
+      "fa": "زنگ‌زدگی",
+      "emoji": "🟤",
+      "difficulty": 4,
+      "ex": "La rouille dévore lentement les structures métalliques immergées.",
+      "ex_fa": "زنگ‌زدگی به آرامی سازه‌های فلزی غوطه‌ور را می‌خورد."
+    },
+    {
+      "fr": "le canot de sauvetage",
+      "fa": "قایق نجات",
+      "emoji": "🛶",
+      "difficulty": 4,
+      "ex": "Les canots de sauvetage étaient malheureusement trop peu nombreux.",
+      "ex_fa": "متأسفانه قایق‌های نجات بسیار کم بودند."
+    },
+    {
+      "fr": "la plongée",
+      "fa": "غواصی",
+      "emoji": "🤿",
+      "difficulty": 3,
+      "ex": "La plongée profonde exige un équipement très spécialisé.",
+      "ex_fa": "غواصی در اعماق به تجهیزات بسیار تخصصی نیاز دارد."
+    },
+    {
+      "fr": "le trésor",
+      "fa": "گنج",
+      "emoji": "💎",
+      "difficulty": 3,
+      "ex": "Les chasseurs d'épaves rêvent de découvrir un trésor englouti.",
+      "ex_fa": "جویندگان لاشه کشتی آرزوی کشف یک گنج غرق‌شده را دارند."
+    },
+    {
+      "fr": "l'océanographe",
+      "fa": "اقیانوس‌شناس",
+      "emoji": "🔬",
+      "difficulty": 5,
+      "ex": "L'océanographe analyse les courants et la vie marine profonde.",
+      "ex_fa": "اقیانوس‌شناس جریان‌ها و حیات دریایی اعماق را تحلیل می‌کند."
+    },
+    {
+      "fr": "l'étanchéité",
+      "fa": "آب‌بندی",
+      "emoji": "💧",
+      "difficulty": 5,
+      "ex": "L'étanchéité du hublot est vitale pour la survie de l'équipage.",
+      "ex_fa": "آب‌بندی دریچه برای بقای خدمه حیاتی است."
+    },
+    {
+      "fr": "le projecteur",
+      "fa": "نورافکن، پروژکتور",
+      "emoji": "💡",
+      "difficulty": 4,
+      "ex": "Le projecteur du robot perce l'obscurité éternelle des abysses.",
+      "ex_fa": "نورافکن ربات، تاریکی ابدی اعماق را می‌شکافد."
+    },
+    {
+      "fr": "le courant",
+      "fa": "جریان دریایی",
+      "emoji": "🌊",
+      "difficulty": 3,
+      "ex": "Le courant sous-marin déplace les sédiments sur l'épave.",
+      "ex_fa": "جریان زیرآبی رسوبات را روی لاشه کشتی جابه‌جا می‌کند."
+    },
+    {
+      "fr": "les débris",
+      "fa": "آوارها، قطعات پراکنده",
+      "emoji": "🧩",
+      "difficulty": 4,
+      "ex": "Les débris personnels des passagers jonchent le fond de l'océan.",
+      "ex_fa": "وسایل شخصی مسافران در کف اقیانوس پراکنده‌اند."
+    },
+    {
+      "fr": "l'expédition",
+      "fa": "اکتشاف، هیئت علمی",
+      "emoji": "🗺️",
+      "difficulty": 4,
+      "ex": "L'expédition scientifique a cartographié toute la zone du naufrage.",
+      "ex_fa": "هیئت علمی کل منطقه غرق شدن را نقشه‌برداری کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La chasse au Cœur de l'Océan",
+      "text": "Brock Lovett est un chasseur de trésors célèbre. Il organise une grande {{BLANK_14}} au milieu de l'Atlantique Nord. Son but est de retrouver un diamant légendaire perdu dans l'{{BLANK_1}} du Titanic. Son équipe embarque dans un {{BLANK_2}} jaune conçu pour les grandes profondeurs. La descente est longue et angoissante. L'{{BLANK_10}} parfaite de la cabine est la seule chose qui les sépare de la mort. Quand ils atteignent le fond, le pilote allume le puissant {{BLANK_11}}. La lumière révèle la {{BLANK_3}} rouillée du géant des mers. Le navire s'est fendu en heurtant un {{BLANK_4}} mortel en 1912. Après plus d'un siècle, la {{BLANK_5}} recouvre les ponts comme une neige orange. Le {{BLANK_12}} glacé fait doucement bouger les objets fragiles. L'{{BLANK_9}} à bord observe et filme les {{BLANK_13}} éparpillés : des chaussures, des lunettes, des assiettes. Ils déploient un petit robot pour explorer les cabines intactes. Les survivants avaient raconté que les {{BLANK_6}}s manquaient terriblement cette nuit tragique. La {{BLANK_7}} vers ces lieux hantés bouleverse l'équipe. Brock espère que le robot ramènera le {{BLANK_8}} caché dans le coffre-fort de la suite présidentielle. Mais les fantômes de l'océan ne livrent leurs secrets qu'à ceux qui savent écouter leur silence.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "épave",
+          "options": [
+            "épave",
+            "trésor",
+            "rouille",
+            "débris"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "submersible",
+          "options": [
+            "submersible",
+            "projecteur",
+            "courant",
+            "canot de sauvetage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "coque",
+          "options": [
+            "coque",
+            "plongée",
+            "expédition",
+            "iceberg"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "iceberg",
+          "options": [
+            "iceberg",
+            "océanographe",
+            "étanchéité",
+            "épave"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "rouille",
+          "options": [
+            "rouille",
+            "coque",
+            "submersible",
+            "débris"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "canots de sauvetage",
+          "options": [
+            "canots de sauvetage",
+            "projecteurs",
+            "courants",
+            "trésors"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "plongée",
+          "options": [
+            "plongée",
+            "expédition",
+            "épave",
+            "rouille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "trésor",
+          "options": [
+            "trésor",
+            "iceberg",
+            "coque",
+            "submersible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "océanographe",
+          "options": [
+            "océanographe",
+            "étanchéité",
+            "projecteur",
+            "plongée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "étanchéité",
+          "options": [
+            "étanchéité",
+            "expédition",
+            "débris",
+            "trésor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "projecteur",
+          "options": [
+            "projecteur",
+            "canot de sauvetage",
+            "courant",
+            "iceberg"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "courant",
+          "options": [
+            "courant",
+            "rouille",
+            "submersible",
+            "coque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "débris",
+          "options": [
+            "débris",
+            "trésor",
+            "épave",
+            "expédition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "expédition",
+          "options": [
+            "expédition",
+            "plongée",
+            "océanographe",
+            "étanchéité"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le silence des profondeurs",
+      "inspiration": "Titanic (James Cameron, 1997)",
+      "text": "À peine le {{BLANK_2}} Mir eut-il amorcé sa descente dans l'abîme que la lumière du soleil s'éteignit, remplacée par une nuit éternelle et glacée. Brock Lovett, le chasseur de {{BLANK_8}}s aux yeux fiévreux, scrutait les écrans de sonar. Il cherchait la silhouette fantomatique de la plus grande {{BLANK_1}} de l'histoire, ce palace d'acier qui avait défié Dieu avant de sombrer dans l'oubli. L'{{BLANK_10}} de la sphère de titane était leur seul rempart contre l'étreinte mortelle de l'océan, une pression qui aurait broyé leurs os en une fraction de seconde. Soudain, dans le halo du {{BLANK_11}}, la forme immense apparut, dressée comme une cathédrale maudite sur le fond vaseux. La {{BLANK_3}} déchirée racontait encore l'agonie du géant, cette nuit où la proue avait éventré un {{BLANK_4}} invisible, condamnant des âmes innocentes. Partout, la {{BLANK_5}}, cette lèpre orange des profondeurs, rongeait patiemment les ferronneries d'art, transformant le luxe d'antan en poussière métallique. Le {{BLANK_12}} sous-marin, fantôme errant, caressait les ponts où les valises pourries et les {{BLANK_13}} intimes jonchaient le sable. L'{{BLANK_9}}, fasciné, enregistrait chaque image de ce musée tragique. Il imaginait la panique, les cris, le manque cruel des {{BLANK_6}}s qui avaient scellé le destin de centaines de familles. Cette {{BLANK_7}} vers les enfers n'était pas une simple mission technique, c'était un pèlerinage profane. Brock espérait que les bras mécaniques saisiraient enfin le diamant bleu perdu dans le coffre-fort, mais en contemplant une paire de lunettes d'enfant posée sur un bureau intact, il comprit que le véritable {{BLANK_14}} de cette tombe liquide n'était pas une pierre précieuse, mais le silence pesant de mille cinq cents voix qui, depuis plus d'un siècle, attendaient encore qu'on se souvienne d'elles.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "épave",
+          "options": [
+            "épave",
+            "trésor",
+            "rouille",
+            "débris"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "submersible",
+          "options": [
+            "submersible",
+            "projecteur",
+            "courant",
+            "canot de sauvetage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "coque",
+          "options": [
+            "coque",
+            "plongée",
+            "expédition",
+            "iceberg"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "iceberg",
+          "options": [
+            "iceberg",
+            "océanographe",
+            "étanchéité",
+            "épave"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "rouille",
+          "options": [
+            "rouille",
+            "coque",
+            "submersible",
+            "débris"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "canots de sauvetage",
+          "options": [
+            "canots de sauvetage",
+            "projecteurs",
+            "courants",
+            "trésors"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "plongée",
+          "options": [
+            "plongée",
+            "expédition",
+            "épave",
+            "rouille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "trésors",
+          "options": [
+            "trésors",
+            "icebergs",
+            "coques",
+            "submersibles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "océanographe",
+          "options": [
+            "océanographe",
+            "étanchéité",
+            "projecteur",
+            "plongée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "étanchéité",
+          "options": [
+            "étanchéité",
+            "expédition",
+            "débris",
+            "trésor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "projecteur",
+          "options": [
+            "projecteur",
+            "canot de sauvetage",
+            "courant",
+            "iceberg"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "courant",
+          "options": [
+            "courant",
+            "rouille",
+            "submersible",
+            "coque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "débris",
+          "options": [
+            "débris",
+            "trésor",
+            "épave",
+            "expédition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "expédition",
+          "options": [
+            "expédition",
+            "plongée",
+            "océanographe",
+            "étanchéité"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Épaves et exploration sous-marine",
+    "title_fa": "آزمون : کشتی‌های غرق‌شده و اکتشافات زیرآبی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Les restes d'un navire qui a coulé ou qui s'est échoué, reposant au fond de l'eau ou sur une côte, sont l'____.",
+        "options": [
+          "épave",
+          "trésor",
+          "rouille",
+          "débris"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بقایای کشتی غرق‌شده = épave."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit engin sous-marin capable d'emporter quelques passagers pour explorer les grandes profondeurs est le ____.",
+        "options": [
+          "submersible",
+          "projecteur",
+          "courant",
+          "canot de sauvetage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زیردریایی کوچک اکتشافی = submersible."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enveloppe extérieure imperméable d'un bateau, qui constitue sa structure principale et le protège de l'eau, est la ____.",
+        "options": [
+          "coque",
+          "plongée",
+          "expédition",
+          "iceberg"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بدنه بیرونی کشتی = coque."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bloc de glace d'eau douce, détaché d'un glacier et flottant sur la mer, qui représente un danger pour la navigation, est l'____.",
+        "options": [
+          "iceberg",
+          "océanographe",
+          "étanchéité",
+          "épave"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکه یخ بزرگ شناور = iceberg."
+      },
+      {
+        "type": "mcq",
+        "question": "La couche rougeâtre qui se forme à la surface du fer et de l'acier au contact de l'eau et de l'oxygène est la ____.",
+        "options": [
+          "rouille",
+          "coque",
+          "submersible",
+          "débris"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اکسیداسیون و زنگ‌زدگی آهن = rouille."
+      },
+      {
+        "type": "mcq",
+        "question": "La petite embarcation prévue pour évacuer l'équipage et les passagers en cas de naufrage est le ____.",
+        "options": [
+          "canot de sauvetage",
+          "projecteur",
+          "courant",
+          "trésor"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قایق کوچک برای فرار از غرق شدن = canot de sauvetage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'activité qui consiste à descendre sous la surface de l'eau, équipé pour respirer et explorer, est la ____.",
+        "options": [
+          "plongée",
+          "expédition",
+          "épave",
+          "rouille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعالیت رفتن به زیر آب = plongée."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des richesses (or, bijoux, objets précieux) cachées ou perdues, souvent recherchées dans les épaves, est le ____.",
+        "options": [
+          "trésor",
+          "iceberg",
+          "coque",
+          "submersible"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ثروت و اشیاء قیمتی پنهان = trésor."
+      },
+      {
+        "type": "mcq",
+        "question": "Le scientifique spécialisé dans l'étude physique, chimique et biologique des océans est l'____.",
+        "options": [
+          "océanographe",
+          "étanchéité",
+          "projecteur",
+          "plongée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دانشمند متخصص اقیانوس‌ها = océanographe."
+      },
+      {
+        "type": "mcq",
+        "question": "La propriété d'un matériau ou d'une structure qui empêche l'eau de pénétrer à l'intérieur est l'____.",
+        "options": [
+          "étanchéité",
+          "expédition",
+          "débris",
+          "trésor"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خاصیت نفوذناپذیری در برابر آب = étanchéité."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil d'éclairage puissant utilisé pour illuminer les fonds marins obscurs est le ____.",
+        "options": [
+          "projecteur",
+          "canot de sauvetage",
+          "courant",
+          "iceberg"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه نورپردازی قوی زیرآبی = projecteur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mouvement continu et régulier de l'eau dans l'océan, causé par le vent, la température ou la rotation terrestre, est le ____.",
+        "options": [
+          "courant",
+          "rouille",
+          "submersible",
+          "coque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرکت مداوم آب دریا = courant."
+      },
+      {
+        "type": "mcq",
+        "question": "Les morceaux dispersés et les restes d'objets détruits ou abandonnés sur le fond marin sont les ____.",
+        "options": [
+          "débris",
+          "trésor",
+          "épave",
+          "expédition"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قطعات پراکنده و شکسته = débris."
+      },
+      {
+        "type": "mcq",
+        "question": "Le voyage organisé dans un but scientifique, géographique ou de découverte, souvent en mer, est l'____.",
+        "options": [
+          "expédition",
+          "plongée",
+          "océanographe",
+          "étanchéité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سفر علمی و اکتشافی = expédition."
+      },
+      {
+        "type": "binary",
+        "question": "L'épave et le submersible désignent tous deux un bateau qui a coulé au fond de l'océan.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. épave لاشه کشتی غرق‌شده است، اما submersible زیردریایی فعال برای اکتشاف است."
+      },
+      {
+        "type": "binary",
+        "question": "L'iceberg est composé d'eau de mer gelée et salée qui flotte sur l'océan.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. کوه یخ از یخ آب شیرین (یخچال‌های طبیعی) تشکیل شده است، نه آب شور دریا."
+      },
+      {
+        "type": "binary",
+        "question": "La rouille est une réaction chimique qui dégrade lentement les métaux ferreux immergés dans l'eau.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. زنگ‌زدگی یک واکنش شیمیایی است که آهن را در آب تخریب می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "L'étanchéité d'un hublot ou d'un sous-marin est essentielle pour empêcher l'eau d'entrer sous haute pression.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. آب‌بندی برای جلوگیری از ورود آب پرفشار به داخل کابین حیاتی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le canot de sauvetage est une embarcation utilisée pour transporter des marchandises lourdes dans la cale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. قایق نجات برای تخلیه اضطراری مسافران و خدمه است، نه حمل بار."
+      },
+      {
+        "type": "binary",
+        "question": "L'océanographe est un scientifique qui étudie les mers, leurs courants, leur géologie et leurs écosystèmes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. اقیانوس‌شناس ویژگی‌های فیزیکی و زیستی دریاها را مطالعه می‌کند."
+      }
+    ]
+  }
+}
