@@ -1,0 +1,680 @@
+{
+  "id": "space_exploration_mars",
+  "level": "C1",
+  "theme": "Exploration spatiale, astronautique et survie",
+  "theme_fa": "اکتشافات فضایی، فضاپیمایی و بقا",
+  "icon": "🚀",
+  "inspiration": "Seul sur Mars (The Martian - Ridley Scott, 2015)",
+  "words": [
+    {
+      "fr": "l'astronaute",
+      "fa": "فضانورد",
+      "emoji": "👨‍🚀",
+      "difficulty": 3,
+      "ex": "L'astronaute a passé six mois dans la Station Spatiale Internationale.",
+      "ex_fa": "فضانورد شش ماه را در ایستگاه فضایی بین‌المللی گذراند."
+    },
+    {
+      "fr": "la navette",
+      "fa": "شاتل فضایی",
+      "emoji": "🚀",
+      "difficulty": 4,
+      "ex": "La navette spatiale a été retirée du service en 2011.",
+      "ex_fa": "شاتل فضایی در سال ۲۰۱۱ از رده خارج شد."
+    },
+    {
+      "fr": "l'orbite",
+      "fa": "مدار",
+      "emoji": "🌍",
+      "difficulty": 4,
+      "ex": "Le satellite est resté en orbite géostationnaire.",
+      "ex_fa": "ماهواره در مدار زمین‌ثابت باقی ماند."
+    },
+    {
+      "fr": "l'apesanteur",
+      "fa": "بی‌وزنی",
+      "emoji": "🎈",
+      "difficulty": 4,
+      "ex": "Les astronautes flottent en apesanteur dans la station.",
+      "ex_fa": "فضانوردان در ایستگاه در حالت بی‌وزنی شناورند."
+    },
+    {
+      "fr": "le scaphandre",
+      "fa": "لباس فضایی",
+      "emoji": "🧑‍🚀",
+      "difficulty": 4,
+      "ex": "Le scaphandre protège contre le vide spatial et les radiations.",
+      "ex_fa": "لباس فضایی در برابر خلأ و تشعشعات محافظت می‌کند."
+    },
+    {
+      "fr": "le module",
+      "fa": "ماژول (بخش فضاپیما)",
+      "emoji": "🛸",
+      "difficulty": 4,
+      "ex": "Le module d'habitation fournit l'oxygène et la chaleur.",
+      "ex_fa": "ماژول سکونت، اکسیژن و گرما را تأمین می‌کند."
+    },
+    {
+      "fr": "la fusée",
+      "fa": "موشک",
+      "emoji": "🚀",
+      "difficulty": 3,
+      "ex": "La fusée Ariane 6 est le nouveau lanceur européen.",
+      "ex_fa": "موشک آریان ۶ پرتابگر جدید اروپایی است."
+    },
+    {
+      "fr": "le lancement",
+      "fa": "پرتاب",
+      "emoji": "⏱️",
+      "difficulty": 3,
+      "ex": "Le lancement a été reporté à cause de la météo.",
+      "ex_fa": "پرتاب به دلیل شرایط جوی به تعویق افتاد."
+    },
+    {
+      "fr": "l'amerrissage",
+      "fa": "فرود روی آب",
+      "emoji": "🌊",
+      "difficulty": 5,
+      "ex": "L'amerrissage de la capsule s'est déroulé dans l'océan Pacifique.",
+      "ex_fa": "فرود کپسول روی آب در اقیانوس آرام انجام شد."
+    },
+    {
+      "fr": "le hublot",
+      "fa": "پنجره کوچک فضاپیما",
+      "emoji": "🪟",
+      "difficulty": 4,
+      "ex": "L'astronaute regarde la Terre à travers le hublot.",
+      "ex_fa": "فضانورد از پنجره کوچک به زمین نگاه می‌کند."
+    },
+    {
+      "fr": "le satellite",
+      "fa": "ماهواره",
+      "emoji": "🛰️",
+      "difficulty": 3,
+      "ex": "Les satellites de télécommunication couvrent toute la planète.",
+      "ex_fa": "ماهواره‌های مخابراتی کل سیاره را پوشش می‌دهند."
+    },
+    {
+      "fr": "le rover",
+      "fa": "کاوشگر چرخ‌دار (مریخ‌نورد)",
+      "emoji": "🚜",
+      "difficulty": 4,
+      "ex": "Le rover Perseverance prélève des échantillons sur Mars.",
+      "ex_fa": "کاوشگر استقامت نمونه‌هایی را در مریخ جمع‌آوری می‌کند."
+    },
+    {
+      "fr": "la trajectoire",
+      "fa": "مسیر حرکت",
+      "emoji": "📈",
+      "difficulty": 4,
+      "ex": "La trajectoire de la sonde a été corrigée en vol.",
+      "ex_fa": "مسیر حرکت کاوشگر در حین پرواز اصلاح شد."
+    },
+    {
+      "fr": "le décollage",
+      "fa": "بلند شدن از زمین (پرتاب)",
+      "emoji": "🛫",
+      "difficulty": 3,
+      "ex": "Le décollage a eu lieu depuis le centre spatial de Kourou.",
+      "ex_fa": "پرتاب از مرکز فضایی کورو انجام شد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Seul sur la planète rouge",
+      "text": "Mark Watney est un {{BLANK_1}} américain en mission sur Mars. Lors d'une violente tempête, l'équipe doit annuler la mission et fuir en {{BLANK_2}}. Mark est laissé pour mort. Il se réveille seul dans le {{BLANK_6}} d'habitation. Il doit survivre avec des rations limitées. Il réussit à contacter la Terre via un vieux {{BLANK_11}} oublié. La NASA prépare une mission de sauvetage avec une puissante {{BLANK_7}}. Le {{BLANK_14}} de la fusée de secours est prévu dans plusieurs mois. En attendant, Mark utilise son {{BLANK_5}} pour sortir et réparer le {{BLANK_12}} qui explore la surface. Il regarde la Terre par le petit {{BLANK_10}} de la base. Plus tard, il devra rejoindre l'équipage en {{BLANK_3}} autour de la planète. Dans le grand vaisseau Hermes, il flottera enfin en {{BLANK_4}}. La {{BLANK_13}} de retour doit être parfaitement calculée par les ingénieurs. Finalement, le {{BLANK_8}} de la capsule de secours se passe bien, suivi d'un {{BLANK_9}} en douceur dans l'océan Pacifique, où il est récupéré sain et sauf.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "astronaute",
+          "options": [
+            "astronaute",
+            "rover",
+            "hublot",
+            "module"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "navette",
+          "options": [
+            "navette",
+            "fusée",
+            "satellite",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "orbite",
+          "options": [
+            "orbite",
+            "trajectoire",
+            "apesanteur",
+            "lancement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "apesanteur",
+          "options": [
+            "apesanteur",
+            "scaphandre",
+            "amerrissage",
+            "décollage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "scaphandre",
+          "options": [
+            "scaphandre",
+            "module",
+            "rover",
+            "hublot"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "module",
+          "options": [
+            "module",
+            "satellite",
+            "navette",
+            "fusée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "fusée",
+          "options": [
+            "fusée",
+            "navette",
+            "satellite",
+            "rover"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "lancement",
+          "options": [
+            "lancement",
+            "amerrissage",
+            "décollage",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "amerrissage",
+          "options": [
+            "amerrissage",
+            "lancement",
+            "décollage",
+            "trajectoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "hublot",
+          "options": [
+            "hublot",
+            "scaphandre",
+            "module",
+            "rover"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "satellite",
+          "options": [
+            "satellite",
+            "rover",
+            "fusée",
+            "navette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "rover",
+          "options": [
+            "rover",
+            "satellite",
+            "module",
+            "hublot"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "trajectoire",
+          "options": [
+            "trajectoire",
+            "orbite",
+            "apesanteur",
+            "amerrissage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "décollage",
+          "options": [
+            "décollage",
+            "lancement",
+            "amerrissage",
+            "fusée"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le jardinier de Mars",
+      "inspiration": "Seul sur Mars (The Martian - Ridley Scott, 2015)",
+      "text": "À peine Mark eut-il ouvert les yeux dans la poussière rougeâtre de Mars qu'il comprit que l'univers venait de le condamner à la solitude absolue. Cet {{BLANK_1}}, que ses camarades avaient abandonné dans la tempête, fuyant en {{BLANK_2}} vers le ciel noir, se retrouva seul maître d'un {{BLANK_6}} d'habitation qui respirait encore. Dehors, le désert ocre s'étendait à l'infini, seulement foulé par les roues métalliques du {{BLANK_12}} qui traçait des sillons muets. Pour survivre, il dut trouver de l'eau et bricoler une antenne pour hurler son existence à un vieux {{BLANK_11}} qui tournait aveuglément dans le ciel. Sur Terre, la panique s'empara de la NASA : il fallait préparer une {{BLANK_7}} titanesque, chaque détail comptait pour le {{BLANK_14}} de la salvation. Mark sortait dans son {{BLANK_5}} lourd, regardant le point bleu de la Terre à travers le {{BLANK_10}} rayé de son casque, se demandant si on l'entendrait. Quand vint le jour de quitter sa prison rouge, il s'élança dans le vide, visant l'{{BLANK_3}} où son équipage l'attendait. Une fois à bord, son corps épuisé s'abandonna enfin à l'{{BLANK_4}}, cette étreinte douce et terrifiante du cosmos. La {{BLANK_13}} du retour fut une prière mathématique de plusieurs mois, jusqu'à ce que le {{BLANK_8}} de la manœuvre finale les propulse vers la Terre, pour terminer sa course folle dans un {{BLANK_9}} salvateur, où l'eau salée de l'océan lui souhaita enfin la bienvenue sur le monde des vivants.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "astronaute",
+          "options": [
+            "astronaute",
+            "rover",
+            "hublot",
+            "module"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "navette",
+          "options": [
+            "navette",
+            "fusée",
+            "satellite",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "orbite",
+          "options": [
+            "orbite",
+            "trajectoire",
+            "apesanteur",
+            "lancement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "apesanteur",
+          "options": [
+            "apesanteur",
+            "scaphandre",
+            "amerrissage",
+            "décollage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "scaphandre",
+          "options": [
+            "scaphandre",
+            "module",
+            "rover",
+            "hublot"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "module",
+          "options": [
+            "module",
+            "satellite",
+            "navette",
+            "fusée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "fusée",
+          "options": [
+            "fusée",
+            "navette",
+            "satellite",
+            "rover"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "lancement",
+          "options": [
+            "lancement",
+            "amerrissage",
+            "décollage",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "amerrissage",
+          "options": [
+            "amerrissage",
+            "lancement",
+            "décollage",
+            "trajectoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "hublot",
+          "options": [
+            "hublot",
+            "scaphandre",
+            "module",
+            "rover"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "satellite",
+          "options": [
+            "satellite",
+            "rover",
+            "fusée",
+            "navette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "rover",
+          "options": [
+            "rover",
+            "satellite",
+            "module",
+            "hublot"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "trajectoire",
+          "options": [
+            "trajectoire",
+            "orbite",
+            "apesanteur",
+            "amerrissage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "décollage",
+          "options": [
+            "décollage",
+            "lancement",
+            "amerrissage",
+            "fusée"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Exploration spatiale",
+    "title_fa": "آزمون : اکتشافات فضایی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La personne entraînée pour voyager et travailler dans l'espace est l'____.",
+        "options": [
+          "astronaute",
+          "rover",
+          "hublot",
+          "module"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فضانورد = astronaute."
+      },
+      {
+        "type": "mcq",
+        "question": "Le véhicule spatial réutilisable conçu pour transporter un équipage et du fret en orbite basse est la ____.",
+        "options": [
+          "navette",
+          "fusée",
+          "satellite",
+          "orbite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شاتل فضایی = navette."
+      },
+      {
+        "type": "mcq",
+        "question": "La trajectoire courbe et fermée qu'un objet céleste ou artificiel parcourt autour d'un astre est l'____.",
+        "options": [
+          "orbite",
+          "trajectoire",
+          "apesanteur",
+          "lancement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مدار چرخش به دور یک جرم = orbite."
+      },
+      {
+        "type": "mcq",
+        "question": "L'état d'un corps qui ne subit plus les effets de la gravité et flotte librement dans l'espace est l'____.",
+        "options": [
+          "apesanteur",
+          "scaphandre",
+          "amerrissage",
+          "décollage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حالت بی‌وزنی = apesanteur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le vêtement pressurisé et autonome qui protège l'astronaute du vide spatial est le ____.",
+        "options": [
+          "scaphandre",
+          "module",
+          "rover",
+          "hublot"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لباس مخصوص فضانوردی = scaphandre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'élément indépendant et spécialisé d'un vaisseau spatial (comme le module lunaire) est le ____.",
+        "options": [
+          "module",
+          "satellite",
+          "navette",
+          "fusée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش مجزای فضاپیما = module."
+      },
+      {
+        "type": "mcq",
+        "question": "Le véhicule propulsé par des moteurs puissants qui sert à lancer des engins dans l'espace est la ____.",
+        "options": [
+          "fusée",
+          "navette",
+          "satellite",
+          "rover"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "موشک پرتابگر = fusée."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de faire partir une fusée ou un missile depuis le sol est le ____.",
+        "options": [
+          "lancement",
+          "amerrissage",
+          "décollage",
+          "orbite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عملیات پرتاب = lancement."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fait pour un engin spatial de se poser en douceur à la surface de la mer est l'____.",
+        "options": [
+          "amerrissage",
+          "lancement",
+          "décollage",
+          "trajectoire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرود روی سطح آب = amerrissage."
+      },
+      {
+        "type": "mcq",
+        "question": "La petite fenêtre épaisse et étanche aménagée dans la paroi d'un vaisseau spatial est le ____.",
+        "options": [
+          "hublot",
+          "scaphandre",
+          "module",
+          "rover"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پنجره کوچک فضاپیما = hublot."
+      },
+      {
+        "type": "mcq",
+        "question": "L'engin spatial qui tourne autour d'une planète pour observer, communiquer ou naviguer est le ____.",
+        "options": [
+          "satellite",
+          "rover",
+          "fusée",
+          "navette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماهواره = satellite."
+      },
+      {
+        "type": "mcq",
+        "question": "Le véhicule robotisé à roues conçu pour explorer la surface d'une planète comme Mars est le ____.",
+        "options": [
+          "rover",
+          "satellite",
+          "module",
+          "hublot"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کاوشگر چرخ‌دار = rover."
+      },
+      {
+        "type": "mcq",
+        "question": "La ligne courbe décrite par un mobile en mouvement dans l'espace est la ____.",
+        "options": [
+          "trajectoire",
+          "orbite",
+          "apesanteur",
+          "amerrissage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسیر حرکت در فضا = trajectoire."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instant précis où un aéronef ou un véhicule spatial quitte le sol pour s'élever est le ____.",
+        "options": [
+          "décollage",
+          "lancement",
+          "amerrissage",
+          "fusée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لحظه جدا شدن از زمین = décollage."
+      },
+      {
+        "type": "binary",
+        "question": "L'apesanteur signifie que la gravité a totalement disparu dans l'espace lointain.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. گرانش در فضا وجود دارد اما اجسام در حال سقوط آزاد مداوم هستند که حس بی‌وزنی ایجاد می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le scaphandre spatial fournit l'oxygène, la pression et la protection thermique nécessaires à la survie dans le vide.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. لباس فضایی شرایط حیات را در خلأ تأمین می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Un rover est un engin spatial conçu pour voler dans l'atmosphère des planètes gazeuses.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. rover کاوشگری چرخ‌دار است که روی سطح سیارات جامد مانند مریخ حرکت می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "L'amerrissage est la manœuvre qui consiste à faire atterrir un vaisseau spatial sur une piste en béton.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. amerrissage به معنای فرود روی سطح آب (دریا یا اقیانوس) است."
+      },
+      {
+        "type": "binary",
+        "question": "Le hublot est une fenêtre renforcée qui permet aux astronautes d'observer l'extérieur du vaisseau.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هابلو پنجره‌ای کوچک و مقاوم در بدنه فضاپیماست."
+      },
+      {
+        "type": "binary",
+        "question": "La trajectoire d'un vaisseau spatial peut être modifiée en vol grâce à des poussées de moteurs.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. مسیر حرکت فضاپیما با روشن کردن موتورهای کمکی در فضا قابل تغییر است."
+      }
+    ]
+  }
+}
