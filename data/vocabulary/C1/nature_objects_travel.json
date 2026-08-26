@@ -1,0 +1,712 @@
+{
+  "id": "nature_objects_travel",
+  "level": "C1",
+  "theme": "Nature, objets, lieux et voyage",
+  "theme_fa": "طبیعت، اشیاء، مکان‌ها و سفر",
+  "icon": "🏝️",
+  "inspiration": "Into the Wild (Jon Krakauer / Sean Penn, 2007)",
+  "words": [
+    {
+      "fr": "le bivouac",
+      "fa": "کمپ موقت در طبیعت",
+      "emoji": "⛺",
+      "difficulty": 4,
+      "ex": "Les alpinistes ont installé un bivouac précaire sous la paroi rocheuse.",
+      "ex_fa": "کوهنوردان یک کمپ موقت ناپایدار زیر دیواره صخره‌ای برپا کردند."
+    },
+    {
+      "fr": "la toundra",
+      "fa": "توندرا",
+      "emoji": "🏔️",
+      "difficulty": 4,
+      "ex": "La toundra sibérienne est couverte de mousse et de lichens.",
+      "ex_fa": "توندرا سیبری پوشیده از خزه و گلسنگ است."
+    },
+    {
+      "fr": "le fjord",
+      "fa": "آبدره",
+      "emoji": "🌊",
+      "difficulty": 4,
+      "ex": "Les fjords norvégiens offrent des paysages d'une beauté à couper le souffle.",
+      "ex_fa": "آبدره‌های نروژ مناظری با زیبایی خیره‌کننده ارائه می‌دهند."
+    },
+    {
+      "fr": "la boussole",
+      "fa": "قطب‌نما",
+      "emoji": "🧭",
+      "difficulty": 3,
+      "ex": "Sans boussole, il est facile de se perdre dans cette forêt dense.",
+      "ex_fa": "بدون قطب‌نما، گم شدن در این جنگل انبوه آسان است."
+    },
+    {
+      "fr": "le canoë",
+      "fa": "کانو، قایق پارویی",
+      "emoji": "🛶",
+      "difficulty": 3,
+      "ex": "Nous avons descendu la rivière en canoë pendant trois jours.",
+      "ex_fa": "ما سه روز با کانو از رودخانه پایین رفتیم."
+    },
+    {
+      "fr": "la yourte",
+      "fa": "یورت (چادر سنتی)",
+      "emoji": "🎪",
+      "difficulty": 4,
+      "ex": "Les nomades mongols vivent encore dans des yourtes traditionnelles.",
+      "ex_fa": "عشایر مغول هنوز در یورت‌های سنتی زندگی می‌کنند."
+    },
+    {
+      "fr": "l'astrolabe",
+      "fa": "اسطرلاب",
+      "emoji": "🔭",
+      "difficulty": 5,
+      "ex": "Les navigateurs arabes utilisaient l'astrolabe pour s'orienter en mer.",
+      "ex_fa": "دریانوردان عرب از اسطرلاب برای جهت‌یابی در دریا استفاده می‌کردند."
+    },
+    {
+      "fr": "la steppe",
+      "fa": "استپ، دشت بی‌درخت",
+      "emoji": "🌾",
+      "difficulty": 4,
+      "ex": "La steppe kazakhe s'étend à perte de vue sous un ciel immense.",
+      "ex_fa": "استپ قزاقستان تا بی‌نهایت زیر آسمانی عظیم گسترده است."
+    },
+    {
+      "fr": "le sextant",
+      "fa": "سکستانت",
+      "emoji": "📐",
+      "difficulty": 5,
+      "ex": "Le capitaine prenait la hauteur du soleil avec son sextant.",
+      "ex_fa": "کاپیتان با سکستانت خود ارتفاع خورشید را اندازه می‌گرفت."
+    },
+    {
+      "fr": "la taïga",
+      "fa": "تایگا (جنگل مخروطی)",
+      "emoji": "🌲",
+      "difficulty": 4,
+      "ex": "La taïga canadienne abrite des ours, des loups et des élans.",
+      "ex_fa": "تایگا کانادا میزبان خرس‌ها، گرگ‌ها و گوزن‌ها است."
+    },
+    {
+      "fr": "le bivouac",
+      "fa": "کمپ موقت",
+      "emoji": "⛺",
+      "difficulty": 4,
+      "ex": "Le bivouac sous les étoiles est une expérience inoubliable.",
+      "ex_fa": "کمپ موقت زیر ستاره‌ها تجربه‌ای فراموش‌نشدنی است."
+    },
+    {
+      "fr": "la besace",
+      "fa": "خورجین، کیف دوشی",
+      "emoji": "👜",
+      "difficulty": 4,
+      "ex": "Le pèlerin portait une besace remplie de provisions sur l'épaule.",
+      "ex_fa": "زائر خورجینی پر از آذوقه را روی دوش حمل می‌کرد."
+    },
+    {
+      "fr": "l'igloo",
+      "fa": "ایگلو",
+      "emoji": "🧊",
+      "difficulty": 3,
+      "ex": "Les Inuits construisaient des igloos pour se protéger du froid polaire.",
+      "ex_fa": "اینوئیت‌ها برای محافظت در برابر سرمای قطبی ایگلو می‌ساختند."
+    },
+    {
+      "fr": "le traîneau",
+      "fa": "سورتمه",
+      "emoji": "🛷",
+      "difficulty": 3,
+      "ex": "Le traîneau tiré par les chiens filait sur la neige immaculée.",
+      "ex_fa": "سورتمه که توسط سگ‌ها کشیده می‌شد روی برف دست‌نخورده می‌تاخت."
+    },
+    {
+      "fr": "la dune",
+      "fa": "تپه شنی",
+      "emoji": "🏜️",
+      "difficulty": 3,
+      "ex": "Les dunes du Sahara se déplacent lentement au gré du vent.",
+      "ex_fa": "تپه‌های شنی صحرای بزرگ به آرامی با وزش باد جابجا می‌شوند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'aventure en Alaska",
+      "title_fa": "ماجراجویی در آلاسکا",
+      "text": "Christopher McCandless, jeune diplômé idéaliste, décide de tout quitter pour partir en Alaska. Il remplit sa {{BLANK_1}} de livres, de riz et d'une petite {{BLANK_2}} pour ne pas se perdre. Son rêve : vivre en autonomie totale dans la nature sauvage. Il achète un vieux {{BLANK_3}} pour descendre les rivières et remonter vers le nord. Après des semaines de voyage, il atteint enfin les grandes étendues gelées. Il traverse d'abord la {{BLANK_4}}, cette forêt de conifères sombre et dense, puis arrive dans la {{BLANK_5}}, où la végétation devient rase et le vent glacial. Un soir, il trouve un vieux bus abandonné au bord d'une rivière. Il décide d'en faire son {{BLANK_6}} permanent. Les jours passent. Il chasse, pêche, lit Tolstoï. Un chasseur inuit lui apprend à construire un {{BLANK_7}} de fortune pour les nuits les plus froides. Christopher observe les animaux : un élan traverse la rivière, des loups hurlent au loin dans la {{BLANK_8}}. Il rêve d'explorer plus loin, vers les côtes découpées en {{BLANK_9}} profonds, ou vers les grandes {{BLANK_10}} de sable qui bordent l'océan Arctique. Mais l'hiver approche. Un jour, en voulant traverser la rivière pour rentrer au bus, il constate que le courant est devenu trop fort à cause de la fonte des glaces. Il est piégé. Dans sa besace, il ne reste que quelques pages de son journal. Il regarde le ciel et pense à tous les instruments qui ont guidé les explorateurs avant lui : le {{BLANK_11}} des astronomes arabes, le {{BLANK_12}} des marins anglais. Aucun ne peut le sauver maintenant. Il pense aussi aux peuples nomades qui ont survécu ici pendant des siècles grâce à leurs {{BLANK_13}} transportables et leurs {{BLANK_14}} tirés par des chiens. Lui, avec son idéalisme, a sous-estimé la brutalité de cette terre. Son histoire, retrouvée des mois plus tard, devient une légende moderne. Elle rappelle que la nature, dans toute sa beauté sauvage, ne pardonne aucune erreur. Et que le plus grand voyage est parfois celui que l'on fait vers soi-même, loin des {{BLANK_15}} de la civilisation.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "besace",
+          "options": [
+            "besace",
+            "boussole",
+            "canoë",
+            "yourte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "boussole",
+          "options": [
+            "boussole",
+            "besace",
+            "astrolabe",
+            "sextant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "canoë",
+          "options": [
+            "canoë",
+            "traîneau",
+            "igloo",
+            "bivouac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "taïga",
+          "options": [
+            "taïga",
+            "toundra",
+            "steppe",
+            "dune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "toundra",
+          "options": [
+            "toundra",
+            "taïga",
+            "steppe",
+            "fjord"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "bivouac",
+          "options": [
+            "bivouac",
+            "igloo",
+            "yourte",
+            "canoë"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "igloo",
+          "options": [
+            "igloo",
+            "yourte",
+            "bivouac",
+            "traîneau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "taïga",
+          "options": [
+            "taïga",
+            "toundra",
+            "steppe",
+            "dune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "fjords",
+          "options": [
+            "fjords",
+            "dunes",
+            "steppes",
+            "toundras"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "dunes",
+          "options": [
+            "dunes",
+            "fjords",
+            "steppes",
+            "taïgas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "astrolabe",
+          "options": [
+            "astrolabe",
+            "boussole",
+            "sextant",
+            "canoë"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "sextant",
+          "options": [
+            "sextant",
+            "astrolabe",
+            "boussole",
+            "traîneau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "yourtes",
+          "options": [
+            "yourtes",
+            "igloos",
+            "bivouacs",
+            "canoës"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "traîneaux",
+          "options": [
+            "traîneaux",
+            "canoës",
+            "yourtes",
+            "igloos"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "bivouacs",
+          "options": [
+            "bivouacs",
+            "boussoles",
+            "besaces",
+            "astrolabes"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le dernier horizon",
+      "title_fa": "آخرین افق",
+      "inspiration": "Into the Wild (Jon Krakauer / Sean Penn, 2007)",
+      "text": "À peine Christopher McCandless eut-il brûlé les derniers dollars qui lui restaient qu'il sentit une liberté vertigineuse l'envahir. Il avait vingt-quatre ans, un diplôme d'Harvard en poche, et une soif d'absolu qui le poussait vers les confins du monde. La société de consommation, avec ses promesses creuses et ses ambitions étriquées, ne l'intéressait plus. Ce qu'il voulait, c'était la vérité brute de la nature, le silence des grands espaces, cette pureté originelle que les hommes avaient oubliée. Il vida son compte en banque, donna ses économies à Oxfam, et prit la route avec pour tout bagage une {{BLANK_1}} en toile, une {{BLANK_2}} de randonnée, un sac de riz de dix livres et quelques livres essentiels : Tolstoï, Thoreau, Pasternak. Son voyage le mena d'abord vers l'Ouest américain, puis vers le nord, toujours plus loin, toujours plus haut. Au Montana, il acheta un vieux {{BLANK_3}} d'occasion pour descendre le fleuve Colorado jusqu'à la mer de Cortez. Pendant des semaines, il dériva au fil de l'eau, dormant à la belle étoile, se nourrissant de poissons pêchés à la main. C'était un {{BLANK_4}} permanent, sans attache, sans destination précise. Mais son rêve ultime, c'était l'Alaska. La dernière frontière. En avril 1992, il fit du stop jusqu'à Fairbanks, puis marcha vers l'intérieur des terres. Il traversa d'abord la {{BLANK_5}}, cette forêt boréale sombre et infinie où les épinettes et les mélèzes formaient une cathédrale naturelle. Les loups y hurlaient la nuit, les élans y bramaient à l'aube. Puis il atteignit la {{BLANK_6}}, cette étendue nue et venteuse où la terre gelée ne portait que des mousses et des lichens. Là, au milieu de nulle part, il découvrit un bus abandonné, le Magic Bus 142, échoué sur les rives de la rivière Teklanika. Il en fit son refuge, son ermitage, son royaume. Les premiers mois furent une extase. Il chassait le lièvre, cueillait des baies, lisait à la lumière du jour polaire. Il tenait un journal où il notait ses pensées, ses observations, ses émerveillements. Un jour, un vieux trappeur inuit le croisa et lui apprit à survivre : comment construire un {{BLANK_7}} en blocs de neige pour les nuits d'hiver, comment lire les signes du vent, comment respecter la terre qui nourrit. Christopher écoutait avec humilité, conscient que son idéalisme romantique ne suffirait pas face à la brutalité de ces contrées. Il rêvait d'explorer plus loin, vers les côtes découpées en {{BLANK_8}} profonds où les baleines venaient mettre bas, ou vers les grandes {{BLANK_9}} de sable noir qui bordaient l'océan Arctique. Mais l'été touchait à sa fin. En juillet, après avoir mangé des graines sauvages qu'il avait mal identifiées, il commença à faiblir. Le poison agissait lentement, paralysant ses muscles, affaiblissant son esprit. Quand il voulut retraverser la rivière pour rejoindre la civilisation, il découvrit que la fonte des glaces l'avait transformée en un torrent furieux, infranchissable. Il était piégé. Dans sa besace, il ne restait que quelques pages de son journal, une carte déchirée, et le souvenir de tous ces instruments qui avaient guidé les explorateurs avant lui : l'{{BLANK_10}} des astronomes arabes qui lisaient les étoiles, le {{BLANK_11}} des marins anglais qui mesuraient le soleil, la vieille {{BLANK_12}} en laiton qui avait conduit tant d'âmes perdues vers le nord. Aucun ne pouvait le sauver maintenant. Il pensa aux peuples nomades qui avaient survécu ici pendant des millénaires, grâce à leurs {{BLANK_13}} transportables et leurs {{BLANK_14}} tirés par des chiens huskies. Eux savaient. Lui, avec son arrogance de jeune diplômé, avait sous-estimé la terre qui l'avait accueilli. Le 18 août 1992, Christopher McCandless écrivit ses derniers mots sur une page de son journal : « J'ai eu une vie heureuse et je remercie le Seigneur. Adieu et que Dieu vous bénisse tous. » Puis il s'allongea dans son sac de couchage, regarda par la fenêtre du bus le ciel immense de l'Alaska, et ferma les yeux pour toujours. Son corps ne fut retrouvé que deux semaines plus tard par des chasseurs. Son histoire devint un livre, puis un film, une légende moderne. Elle rappelait au monde que la nature, dans toute sa beauté sauvage, ne pardonne aucune erreur. Et que le plus grand voyage n'est pas celui que l'on fait sur une carte, mais celui que l'on fait vers soi-même, loin des faux refuges de la civilisation, au cœur des {{BLANK_15}} éphémères que la vie nous offre.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "besace",
+          "options": [
+            "besace",
+            "boussole",
+            "canoë",
+            "yourte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "boussole",
+          "options": [
+            "boussole",
+            "besace",
+            "astrolabe",
+            "sextant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "canoë",
+          "options": [
+            "canoë",
+            "traîneau",
+            "igloo",
+            "bivouac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "bivouac",
+          "options": [
+            "bivouac",
+            "igloo",
+            "yourte",
+            "canoë"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "taïga",
+          "options": [
+            "taïga",
+            "toundra",
+            "steppe",
+            "dune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "toundra",
+          "options": [
+            "toundra",
+            "taïga",
+            "steppe",
+            "fjord"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "igloo",
+          "options": [
+            "igloo",
+            "yourte",
+            "bivouac",
+            "traîneau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "fjords",
+          "options": [
+            "fjords",
+            "dunes",
+            "steppes",
+            "toundras"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "dunes",
+          "options": [
+            "dunes",
+            "fjords",
+            "steppes",
+            "taïgas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "astrolabe",
+          "options": [
+            "astrolabe",
+            "boussole",
+            "sextant",
+            "canoë"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "sextant",
+          "options": [
+            "sextant",
+            "astrolabe",
+            "boussole",
+            "traîneau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "boussole",
+          "options": [
+            "boussole",
+            "astrolabe",
+            "sextant",
+            "besace"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "yourtes",
+          "options": [
+            "yourtes",
+            "igloos",
+            "bivouacs",
+            "canoës"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "traîneaux",
+          "options": [
+            "traîneaux",
+            "canoës",
+            "yourtes",
+            "igloos"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "bivouacs",
+          "options": [
+            "bivouacs",
+            "boussoles",
+            "besaces",
+            "astrolabes"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Nature sauvage et exploration",
+    "title_fa": "آزمون : طبیعت وحشی و کاوشگری",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Les alpinistes, surpris par la nuit en haute montagne, installent un campement sommaire sans tente. C'est un ____.",
+        "options": [
+          "bivouac",
+          "igloo",
+          "yourte",
+          "canoë"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کمپ موقت و بدون امکانات در طبیعت = bivouac."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans les régions arctiques, la végétation se limite à des mousses, des lichens et quelques arbustes bas. C'est la ____.",
+        "options": [
+          "toundra",
+          "taïga",
+          "steppe",
+          "dune"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زیست‌بوم قطبی با پوشش گیاهی کم = toundra."
+      },
+      {
+        "type": "mcq",
+        "question": "Ces vallées glaciaires étroites et profondes, envahies par la mer, sont typiques des côtes norvégiennes. Ce sont des ____.",
+        "options": [
+          "fjords",
+          "dunes",
+          "steppes",
+          "toundras"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دره‌های عمیق یخچالی که با آب دریا پر شده‌اند = fjords."
+      },
+      {
+        "type": "mcq",
+        "question": "Avant le GPS, les randonneurs utilisaient un instrument magnétique pour trouver le nord géographique. C'était la ____.",
+        "options": [
+          "boussole",
+          "besace",
+          "astrolabe",
+          "sextant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار مغناطیسی برای یافتن جهت شمال = boussole."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour descendre les rapides de la rivière Yukon, les aventuriers utilisent une embarcation légère à pagaie simple. C'est un ____.",
+        "options": [
+          "canoë",
+          "traîneau",
+          "igloo",
+          "bivouac"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قایق باریک و پارویی = canoë."
+      },
+      {
+        "type": "mcq",
+        "question": "Les nomades d'Asie centrale vivent dans des habitations rondes en feutre, démontables et transportables. Ce sont des ____.",
+        "options": [
+          "yourtes",
+          "igloos",
+          "bivouacs",
+          "canoës"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چادر گرد و نمدی عشایر = yourte."
+      },
+      {
+        "type": "mcq",
+        "question": "Les astronomes arabes du Moyen Âge utilisaient un instrument circulaire pour mesurer la hauteur des étoiles. C'était l'____.",
+        "options": [
+          "astrolabe",
+          "boussole",
+          "sextant",
+          "canoë"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار نجومی قدیمی برای رصد ستارگان = astrolabe."
+      },
+      {
+        "type": "mcq",
+        "question": "Les vastes plaines herbeuses du Kazakhstan, sans arbres et balayées par les vents, forment la ____.",
+        "options": [
+          "steppe",
+          "taïga",
+          "toundra",
+          "dune"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دشت‌های علفزار وسیع و بی‌درخت = steppe."
+      },
+      {
+        "type": "mcq",
+        "question": "Les marins du XVIIIe siècle utilisaient un instrument à miroirs pour mesurer l'angle entre l'horizon et un astre. C'était le ____.",
+        "options": [
+          "sextant",
+          "astrolabe",
+          "boussole",
+          "traîneau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار دریانوردی برای تعیین عرض جغرافیایی = sextant."
+      },
+      {
+        "type": "mcq",
+        "question": "La forêt boréale canadienne, composée principalement d'épinettes et de sapins, est appelée la ____.",
+        "options": [
+          "taïga",
+          "toundra",
+          "steppe",
+          "fjord"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جنگل‌های مخروطی شمالی = taïga."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pèlerin de Saint-Jacques porte sur son épaule un grand sac en toile contenant ses provisions. C'est une ____.",
+        "options": [
+          "besace",
+          "boussole",
+          "astrolabe",
+          "sextant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کیف دوشی و خورجین = besace."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour survivre aux hivers polaires, les Inuits construisaient des abris temporaires en blocs de neige. C'étaient des ____.",
+        "options": [
+          "igloos",
+          "yourtes",
+          "bivouacs",
+          "canoës"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خانه‌های برفی گنبدی شکل = igloo."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour transporter du matériel sur la banquise, les explorateurs polaires utilisaient un véhicule sans roues tiré par des chiens. C'était un ____.",
+        "options": [
+          "traîneau",
+          "canoë",
+          "yourte",
+          "igloo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله نقلیه روی برف = traîneau."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans le désert du Sahara, le vent accumule le sable en collines mobiles de formes variées. Ce sont des ____.",
+        "options": [
+          "dunes",
+          "fjords",
+          "steppes",
+          "toundras"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تپه‌های شنی در بیابان = dune."
+      },
+      {
+        "type": "binary",
+        "question": "La taïga et la toundra sont des écosystèmes identiques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. taïga جنگل‌های مخروطی است، toundرا دشت‌های بدون درخت قطبی است."
+      },
+      {
+        "type": "binary",
+        "question": "L'astrolabe et le sextant servent tous deux à la navigation astronomique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، هر دو ابزارهای اندازه‌گیری نجومی برای تعیین موقعیت هستند."
+      },
+      {
+        "type": "binary",
+        "question": "Un bivouac désigne un campement installé pour une longue durée avec tout le confort moderne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. bivouac یک کمپ موقت و بدون امکانات است."
+      },
+      {
+        "type": "binary",
+        "question": "La steppe est caractérisée par une végétation essentiellement herbacée et l'absence d'arbres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، steppe دشت‌های علفی وسیع و کم‌درخت است."
+      },
+      {
+        "type": "binary",
+        "question": "La yourte et l'igloo sont toutes deux des habitations traditionnelles des peuples nomades.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، هر دو مسکن سنتی و قابل حمل اقوام مختلف هستند (yourte برای آسیای مرکزی، igloo برای اینوئیت‌ها)."
+      },
+      {
+        "type": "binary",
+        "question": "Le fjord est une formation géologique typique des régions désertiques chaudes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. fjord مخصوص مناطق یخچالی و سردسیری مانند نروژ است."
+      }
+    ]
+  }
+}
