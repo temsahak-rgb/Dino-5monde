@@ -1,0 +1,680 @@
+{
+  "id": "cycling_tour_de_france",
+  "level": "C1",
+  "theme": "Cyclisme, Tour de France et sport d'endurance",
+  "theme_fa": "دوچرخه‌سواری، تور دو فرانس و ورزش استقامتی",
+  "icon": "🚴",
+  "inspiration": "La Grande Boucle (Laurent Tuel, 2013)",
+  "words": [
+    {
+      "fr": "le cyclisme",
+      "fa": "دوچرخه‌سواری",
+      "emoji": "🚴",
+      "difficulty": 3,
+      "ex": "Le cyclisme sur route est l'un des sports les plus exigeants.",
+      "ex_fa": "دوچرخه‌سواری جاده یکی از پرتلاش‌ترین ورزش‌هاست."
+    },
+    {
+      "fr": "le peloton",
+      "fa": "پلوتون (گروه اصلی رکاب‌زنان)",
+      "emoji": "🚴‍♂️",
+      "difficulty": 4,
+      "ex": "Le peloton roule à vive allure pour rattraper les échappés.",
+      "ex_fa": "پلوتون با سرعت بالا برای رسیدن به فراریان رکاب می‌زند."
+    },
+    {
+      "fr": "l'étape",
+      "fa": "مرحله (از تور)",
+      "emoji": "🗺️",
+      "difficulty": 3,
+      "ex": "Chaque étape du Tour représente entre 150 et 230 kilomètres.",
+      "ex_fa": "هر مرحله تور بین ۱۵۰ تا ۲۳۰ کیلومتر است."
+    },
+    {
+      "fr": "le maillot jaune",
+      "fa": "پیراهن زرد",
+      "emoji": "🟡",
+      "difficulty": 3,
+      "ex": "Le maillot jaune distingue le leader du classement général.",
+      "ex_fa": "پیراهن زرد نفر اول رده‌بندی کلی را مشخص می‌کند."
+    },
+    {
+      "fr": "la montagne",
+      "fa": "کوهستان",
+      "emoji": "🏔️",
+      "difficulty": 2,
+      "ex": "La montagne est le théâtre des plus grands exploits cyclistes.",
+      "ex_fa": "کوهستان صحنه بزرگترین افتخارات دوچرخه‌سواری است."
+    },
+    {
+      "fr": "le col",
+      "fa": "گردنه کوهستانی",
+      "emoji": "⛰️",
+      "difficulty": 4,
+      "ex": "Le col du Tourmalet est un mythe du Tour de France.",
+      "ex_fa": "گردنه تورمالت افسانه‌ای از تور دو فرانس است."
+    },
+    {
+      "fr": "le sprint",
+      "fa": "اسپرینت (شتاب نهایی)",
+      "emoji": "💨",
+      "difficulty": 3,
+      "ex": "Le sprint final sur les Champs-Élysées est légendaire.",
+      "ex_fa": "اسپرینت پایانی در شانزلیزه افسانه‌ای است."
+    },
+    {
+      "fr": "le contre-la-montre",
+      "fa": "تایم تریل (مسابقه با زمان)",
+      "emoji": "⏱️",
+      "difficulty": 5,
+      "ex": "Le contre-la-montre individuel teste la puissance pure du coureur.",
+      "ex_fa": "تایم تریل انفرادی قدرت خالص رکاب‌زن را می‌آزماید."
+    },
+    {
+      "fr": "le coureur",
+      "fa": "رکاب‌زن، دوچرخه‌سوار",
+      "emoji": "🚴",
+      "difficulty": 3,
+      "ex": "Le coureur cycliste peut parcourir plus de 200 kilomètres par jour.",
+      "ex_fa": "رکاب‌زن می‌تواند روزانه بیش از ۲۰۰ کیلومتر رکاب بزند."
+    },
+    {
+      "fr": "l'échappée",
+      "fa": "فرار (گروه پیشرو)",
+      "emoji": "🏃",
+      "difficulty": 5,
+      "ex": "L'échappée matinale tente de résister au retour du peloton.",
+      "ex_fa": "گروه فراری صبحگاهی سعی در مقاومت در برابر بازگشت پلوتون دارد."
+    },
+    {
+      "fr": "la descente",
+      "fa": "سرازیری",
+      "emoji": "⬇️",
+      "difficulty": 3,
+      "ex": "La descente technique exige sang-froid et maîtrise du vélo.",
+      "ex_fa": "سرازیری فنی به خونسردی و تسلط بر دوچرخه نیاز دارد."
+    },
+    {
+      "fr": "le ravitaillement",
+      "fa": "تدارکات، تغذیه",
+      "emoji": "🥤",
+      "difficulty": 4,
+      "ex": "Le ravitaillement en course permet aux coureurs de boire et manger.",
+      "ex_fa": "تدارکات در حین مسابقه به رکاب‌زنان اجازه نوشیدن و خوردن می‌دهد."
+    },
+    {
+      "fr": "le domestique",
+      "fa": "رکاب‌زن کمکی (هم‌تیمی)",
+      "emoji": "🤝",
+      "difficulty": 5,
+      "ex": "Le domestique sacrifie ses chances pour protéger son leader.",
+      "ex_fa": "رکاب‌زن کمکی شانس خود را فدای محافظت از رهبرش می‌کند."
+    },
+    {
+      "fr": "le Tour de France",
+      "fa": "تور دو فرانس",
+      "emoji": "🏆",
+      "difficulty": 2,
+      "ex": "Le Tour de France est la course cycliste la plus célèbre au monde.",
+      "ex_fa": "تور دو فرانس مشهورترین مسابقه دوچرخه‌سواری جهان است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le rêve du maillot jaune",
+      "text": "François est un amateur passionné de {{BLANK_1}} qui rêve de participer au {{BLANK_14}}. Par un heureux hasard, il obtient une place dans une équipe professionnelle. Dès la première {{BLANK_3}}, il découvre l'intensité du {{BLANK_2}} qui roule à plus de 45 km/h. Son rôle est d'être un {{BLANK_13}} dévoué pour protéger son leader. Dans les cols de {{BLANK_5}}, il souffre en grimpant le terrible {{BLANK_6}} alpin. Pendant la {{BLANK_8}} vertigineuse, il frôle la mort à chaque virage. Lors du {{BLANK_12}}, il attrape les bidons d'eau et les barres énergétiques. Parfois, il tente une {{BLANK_10}} audacieuse pour gagner quelques minutes. Sur le plat, il prépare le {{BLANK_7}} final pour le spécialiste de l'équipe. Le {{BLANK_8}} individuel contre la montre révèle ses limites. Chaque {{BLANK_9}} expérimenté le conseille et le guide. Son rêve absolu serait de porter, ne serait-ce qu'un jour, le mythique {{BLANK_4}} sur les Champs-Élysées, symbole de la gloire cycliste suprême.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cyclisme",
+          "options": [
+            "cyclisme",
+            "peloton",
+            "étape",
+            "maillot jaune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "peloton",
+          "options": [
+            "peloton",
+            "montagne",
+            "col",
+            "sprint"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "étape",
+          "options": [
+            "étape",
+            "contre-la-montre",
+            "coureur",
+            "échappée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "maillot jaune",
+          "options": [
+            "maillot jaune",
+            "descente",
+            "ravitaillement",
+            "domestique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "montagne",
+          "options": [
+            "montagne",
+            "Tour de France",
+            "cyclisme",
+            "peloton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "col",
+          "options": [
+            "col",
+            "étape",
+            "maillot jaune",
+            "montagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "sprint",
+          "options": [
+            "sprint",
+            "contre-la-montre",
+            "coureur",
+            "échappée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "contre-la-montre",
+          "options": [
+            "contre-la-montre",
+            "descente",
+            "ravitaillement",
+            "domestique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "coureur",
+          "options": [
+            "coureur",
+            "Tour de France",
+            "cyclisme",
+            "peloton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "échappée",
+          "options": [
+            "échappée",
+            "étape",
+            "maillot jaune",
+            "montagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "descente",
+          "options": [
+            "descente",
+            "col",
+            "sprint",
+            "contre-la-montre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ravitaillement",
+          "options": [
+            "ravitaillement",
+            "coureur",
+            "échappée",
+            "descente"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "domestique",
+          "options": [
+            "domestique",
+            "ravitaillement",
+            "Tour de France",
+            "cyclisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "Tour de France",
+          "options": [
+            "Tour de France",
+            "peloton",
+            "étape",
+            "maillot jaune"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les forçats de la route",
+      "inspiration": "Tour de France (Épopée sportive)",
+      "text": "À peine François eut-il enclenché sa première vitesse que la souffrance familière s'empara de ses jambes comme une vieille maîtresse jalouse. Ce modeste amateur, catapulté dans l'enfer du {{BLANK_14}}, découvrait que le {{BLANK_1}} professionnel n'était pas un sport, mais une passion dévorante qui consumait les âmes. Dans le {{BLANK_2}} compact, il n'était qu'une ombre anonyme luttant pour ne pas être rejetée par la meute. Chaque {{BLANK_3}} interminable était un calvaire où les corps se tordaient sous le soleil brûlant. Sur les pentes assassines de la {{BLANK_5}}, il grimpait le mythique {{BLANK_6}} alpin, son cœur battant à se rompre, ses poumons implorant l'air rare des sommets. Dans la {{BLANK_11}} périlleuse, il flirtait avec la mort à cent à l'heure, confiant sa vie à deux fines roues de carbone. Pendant le {{BLANK_12}}, il attrapait au vol les musettes tendues, élixir vital qui prolongeait son martyre. Ce {{BLANK_13}} obscur sacrifiait sa gloire personnelle pour protéger son leader, comme un soldat inconnu sur le front. Parfois, dans un accès de folie, il tentait une {{BLANK_10}} solitaire, rêvant d'être un héros éphémère. Le {{BLANK_7}} final sur les pavés parisiens et le {{BLANK_8}} contre la montre révélaient cruellement ses limites. Mais chaque {{BLANK_9}} vétéran lui avait appris que la véritable victoire n'était pas le {{BLANK_4}} mythique, mais la capacité à se relever chaque matin, à remonter sur la selle, à recommencer la danse éternelle avec la douleur qui fait de chaque cycliste un poète silencieux de la route.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cyclisme",
+          "options": [
+            "cyclisme",
+            "peloton",
+            "étape",
+            "maillot jaune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "peloton",
+          "options": [
+            "peloton",
+            "montagne",
+            "col",
+            "sprint"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "étape",
+          "options": [
+            "étape",
+            "contre-la-montre",
+            "coureur",
+            "échappée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "maillot jaune",
+          "options": [
+            "maillot jaune",
+            "descente",
+            "ravitaillement",
+            "domestique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "montagne",
+          "options": [
+            "montagne",
+            "Tour de France",
+            "cyclisme",
+            "peloton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "col",
+          "options": [
+            "col",
+            "étape",
+            "maillot jaune",
+            "montagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "sprint",
+          "options": [
+            "sprint",
+            "contre-la-montre",
+            "coureur",
+            "échappée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "contre-la-montre",
+          "options": [
+            "contre-la-montre",
+            "descente",
+            "ravitaillement",
+            "domestique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "coureur",
+          "options": [
+            "coureur",
+            "Tour de France",
+            "cyclisme",
+            "peloton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "échappée",
+          "options": [
+            "échappée",
+            "étape",
+            "maillot jaune",
+            "montagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "descente",
+          "options": [
+            "descente",
+            "col",
+            "sprint",
+            "contre-la-montre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ravitaillement",
+          "options": [
+            "ravitaillement",
+            "coureur",
+            "échappée",
+            "descente"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "domestique",
+          "options": [
+            "domestique",
+            "ravitaillement",
+            "Tour de France",
+            "cyclisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "Tour de France",
+          "options": [
+            "Tour de France",
+            "peloton",
+            "étape",
+            "maillot jaune"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Cyclisme et Tour de France",
+    "title_fa": "آزمون : دوچرخه‌سواری و تور دو فرانس",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le sport qui consiste à se déplacer à bicyclette, sur route ou sur piste, est le ____.",
+        "options": [
+          "cyclisme",
+          "peloton",
+          "étape",
+          "maillot jaune"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزش رکاب‌زنی = cyclisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le groupe principal des coureurs qui roulent ensemble pour économiser leurs forces est le ____.",
+        "options": [
+          "peloton",
+          "montagne",
+          "col",
+          "sprint"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گروه اصلی رکاب‌زنان = peloton."
+      },
+      {
+        "type": "mcq",
+        "question": "Chacune des journées de course qui composent une compétition par étapes est l'____.",
+        "options": [
+          "étape",
+          "contre-la-montre",
+          "coureur",
+          "échappée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هر روز از مسابقه = étape."
+      },
+      {
+        "type": "mcq",
+        "question": "Le maillot distinctif porté par le leader du classement général au Tour de France est le ____.",
+        "options": [
+          "maillot jaune",
+          "descente",
+          "ravitaillement",
+          "domestique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیراهن رهبر تور = maillot jaune."
+      },
+      {
+        "type": "mcq",
+        "question": "Le relief élevé avec des pentes raides où se jouent souvent les courses est la ____.",
+        "options": [
+          "montagne",
+          "Tour de France",
+          "cyclisme",
+          "peloton"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ناحیه مرتفع کوهستانی = montagne."
+      },
+      {
+        "type": "mcq",
+        "question": "Le passage de haute altitude entre deux sommets que franchissent les coureurs est le ____.",
+        "options": [
+          "col",
+          "étape",
+          "maillot jaune",
+          "montagne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گردنه کوهستانی = col."
+      },
+      {
+        "type": "mcq",
+        "question": "L'accélération finale et maximale sur les derniers mètres de la course est le ____.",
+        "options": [
+          "sprint",
+          "contre-la-montre",
+          "coureur",
+          "échappée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شتاب نهایی = sprint."
+      },
+      {
+        "type": "mcq",
+        "question": "L'épreuve où les coureurs partent séparément et sont chronométrés individuellement est le ____.",
+        "options": [
+          "contre-la-montre",
+          "descente",
+          "ravitaillement",
+          "domestique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسابقه انفرادی با زمان = contre-la-montre."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sportif qui pratique la course à bicyclette est le ____.",
+        "options": [
+          "coureur",
+          "Tour de France",
+          "cyclisme",
+          "peloton"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رکاب‌زن = coureur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le groupe de coureurs qui a pris de l'avance sur le peloton principal est l'____.",
+        "options": [
+          "échappée",
+          "étape",
+          "maillot jaune",
+          "montagne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گروه پیشرو = échappée."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie du parcours qui descend rapidement après une ascension est la ____.",
+        "options": [
+          "descente",
+          "col",
+          "sprint",
+          "contre-la-montre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخش سرازیری = descente."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de fournir nourriture et boisson aux coureurs pendant la course est le ____.",
+        "options": [
+          "ravitaillement",
+          "coureur",
+          "échappée",
+          "descente"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تهیه غذا و نوشیدنی = ravitaillement."
+      },
+      {
+        "type": "mcq",
+        "question": "Le coureur qui sacrifie ses chances personnelles pour aider son leader est le ____.",
+        "options": [
+          "domestique",
+          "ravitaillement",
+          "Tour de France",
+          "cyclisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رکاب‌زن کمکی = domestique."
+      },
+      {
+        "type": "mcq",
+        "question": "La plus célèbre course cycliste par étapes du monde, organisée chaque été en France, est le ____.",
+        "options": [
+          "Tour de France",
+          "peloton",
+          "étape",
+          "maillot jaune"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مشهورترین تور دوچرخه‌سواری = Tour de France."
+      },
+      {
+        "type": "binary",
+        "question": "Le maillot jaune est porté par le meilleur grimpeur de la course.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. پیراهن زرد برای رهبر رده‌بندی کلی است؛ بهترین کوهستان‌رو پیراهن سفید با خال‌های قرمز می‌پوشد."
+      },
+      {
+        "type": "binary",
+        "question": "Le peloton désigne le groupe principal des coureurs qui roulent ensemble.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پلوتون گروه اصلی رکاب‌زنان است که با هم حرکت می‌کنند."
+      },
+      {
+        "type": "binary",
+        "question": "Le domestique est un coureur qui travaille exclusivement pour sa propre victoire personnelle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. domestique رکاب‌زن کمکی است که شانس خود را فدای پیروزی رهبر تیمش می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le contre-la-montre est une épreuve où les coureurs partent individuellement contre le chronomètre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تایم تریل مسابقه‌ای انفرادی بر اساس زمان است."
+      },
+      {
+        "type": "binary",
+        "question": "Une échappée est un groupe de coureurs qui a pris de l'avance sur le peloton.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. échappée گروهی از رکاب‌زنان است که از گروه اصلی جلو افتاده‌اند."
+      },
+      {
+        "type": "binary",
+        "question": "Le Tour de France est une course qui se déroule sur une seule journée en circuit fermé.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تور دو فرانس مسابقه‌ای حدود سه هفته‌ای با بیش از ۲۰ مرحله است."
+      }
+    ]
+  }
+}
