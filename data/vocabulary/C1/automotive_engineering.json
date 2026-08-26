@@ -1,0 +1,680 @@
+{
+  "id": "automotive_engineering",
+  "level": "C1",
+  "theme": "Automobile, ingénierie mécanique et compétition",
+  "theme_fa": "خودروسازی، مهندسی مکانیک و مسابقات",
+  "icon": "🏎️",
+  "inspiration": "Le Mans 66 (Ford v Ferrari - James Mangold, 2019)",
+  "words": [
+    {
+      "fr": "l'automobile",
+      "fa": "خودرو",
+      "emoji": "🚗",
+      "difficulty": 3,
+      "ex": "L'industrie automobile emploie des millions de personnes dans le monde.",
+      "ex_fa": "صنعت خودروسازی میلیون‌ها نفر را در جهان استخدام می‌کند."
+    },
+    {
+      "fr": "le moteur",
+      "fa": "موتور",
+      "emoji": "⚙️",
+      "difficulty": 3,
+      "ex": "Le moteur V12 développe plus de 700 chevaux.",
+      "ex_fa": "موتور V12 بیش از ۷۰۰ اسب بخار تولید می‌کند."
+    },
+    {
+      "fr": "le châssis",
+      "fa": "شاسی",
+      "emoji": "🔩",
+      "difficulty": 4,
+      "ex": "Le châssis en fibre de carbone allège considérablement le véhicule.",
+      "ex_fa": "شاسی فیبرکربنی وزن خودرو را به طور قابل‌توجهی کاهش می‌دهد."
+    },
+    {
+      "fr": "la carrosserie",
+      "fa": "بدنه خودرو",
+      "emoji": "🚘",
+      "difficulty": 4,
+      "ex": "La carrosserie aérodynamique réduit la résistance à l'air.",
+      "ex_fa": "بدنه آیرودینامیک مقاومت هوا را کاهش می‌دهد."
+    },
+    {
+      "fr": "le piston",
+      "fa": "پیستون",
+      "emoji": "🔧",
+      "difficulty": 4,
+      "ex": "Les pistons montent et descendent des milliers de fois par minute.",
+      "ex_fa": "پیستون‌ها هزاران بار در دقیقه بالا و پایین می‌روند."
+    },
+    {
+      "fr": "l'aérodynamisme",
+      "fa": "آیرودینامیک",
+      "emoji": "💨",
+      "difficulty": 5,
+      "ex": "L'aérodynamisme est crucial pour la performance en course.",
+      "ex_fa": "آیرودینامیک برای عملکرد در مسابقه حیاتی است."
+    },
+    {
+      "fr": "la transmission",
+      "fa": "انتقال قدرت",
+      "emoji": "⚙️",
+      "difficulty": 4,
+      "ex": "La transmission à double embrayage permet des changements de vitesse rapides.",
+      "ex_fa": "انتقال قدرت دوکلاچه تعویض دنده سریع را ممکن می‌سازد."
+    },
+    {
+      "fr": "le circuit",
+      "fa": "پیست مسابقه",
+      "emoji": "🏁",
+      "difficulty": 3,
+      "ex": "Le circuit du Mans mesure 13,6 kilomètres.",
+      "ex_fa": "پیست لمان ۱۳.۶ کیلومتر طول دارد."
+    },
+    {
+      "fr": "le volant",
+      "fa": "فرمان",
+      "emoji": "🎯",
+      "difficulty": 2,
+      "ex": "Le pilote garde les mains fermement sur le volant.",
+      "ex_fa": "راننده دستانش را محکم روی فرمان نگه می‌دارد."
+    },
+    {
+      "fr": "le freinage",
+      "fa": "ترمزگیری",
+      "emoji": "🛑",
+      "difficulty": 4,
+      "ex": "Le freinage carbone-céramique résiste à des températures extrêmes.",
+      "ex_fa": "ترمز کربن-سرامیکی در برابر دماهای شدید مقاومت می‌کند."
+    },
+    {
+      "fr": "la vitesse",
+      "fa": "سرعت",
+      "emoji": "⚡",
+      "difficulty": 2,
+      "ex": "La vitesse maximale dépasse les 350 km/h.",
+      "ex_fa": "حداکثر سرعت از ۳۵۰ کیلومتر بر ساعت فراتر می‌رود."
+    },
+    {
+      "fr": "la puissance",
+      "fa": "قدرت (اسب بخار)",
+      "emoji": "💪",
+      "difficulty": 3,
+      "ex": "La puissance se mesure en chevaux ou en kilowatts.",
+      "ex_fa": "قدرت بر حسب اسب بخار یا کیلووات اندازه‌گیری می‌شود."
+    },
+    {
+      "fr": "la compétition",
+      "fa": "مسابقات، رقابت",
+      "emoji": "🏆",
+      "difficulty": 3,
+      "ex": "La compétition automobile pousse l'innovation technologique.",
+      "ex_fa": "مسابقات اتومبیل‌رانی نوآوری فناوری را به پیش می‌برد."
+    },
+    {
+      "fr": "le prototype",
+      "fa": "نمونه اولیه",
+      "emoji": "🔬",
+      "difficulty": 4,
+      "ex": "Le prototype est testé en soufflerie avant la production.",
+      "ex_fa": "نمونه اولیه قبل از تولید در تونل باد آزمایش می‌شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Ford contre Ferrari",
+      "text": "Carroll Shelby est un ancien pilote devenu constructeur d'{{BLANK_1}}s. Henry Ford II lui demande de construire une voiture capable de battre Ferrari aux 24 Heures du Mans. Shelby recrute Ken Miles, un pilote britannique talentueux mais caractériel. Ensemble, ils développent la Ford GT40, un {{BLANK_14}} révolutionnaire. Le {{BLANK_2}} V8 de 7 litres doit être parfaitement réglé. Le {{BLANK_3}} en aluminium doit résister aux contraintes énormes. La {{BLANK_4}} profilée est conçue en soufflerie pour optimiser l'{{BLANK_6}}. Chaque {{BLANK_5}} est usiné avec une précision microscopique. La {{BLANK_7}} à quatre rapports doit supporter 500 chevaux. Sur le {{BLANK_8}} du Mans, Ken pousse la voiture à ses limites. Le {{BLANK_9}} réagit instantanément à chaque virage. Le {{BLANK_10}} à haute vitesse doit être parfait pour survivre. La {{BLANK_11}} atteint 340 km/h dans la ligne droite des Hunaudières. La {{BLANK_12}} du moteur dépasse les 450 chevaux. Cette {{BLANK_13}} contre Ferrari devient une question d'honneur national. En 1966, Ford réalise un triplé historique au Mans, humiliant Enzo Ferrari sur ses propres terres.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "automobiles",
+          "options": [
+            "automobiles",
+            "moteurs",
+            "châssis",
+            "carrosseries"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "moteur",
+          "options": [
+            "moteur",
+            "piston",
+            "aérodynamisme",
+            "transmission"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "châssis",
+          "options": [
+            "châssis",
+            "circuit",
+            "volant",
+            "freinage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "carrosserie",
+          "options": [
+            "carrosserie",
+            "vitesse",
+            "puissance",
+            "compétition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "piston",
+          "options": [
+            "piston",
+            "prototype",
+            "automobile",
+            "moteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "aérodynamisme",
+          "options": [
+            "aérodynamisme",
+            "châssis",
+            "carrosserie",
+            "piston"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "transmission",
+          "options": [
+            "transmission",
+            "circuit",
+            "volant",
+            "freinage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "circuit",
+          "options": [
+            "circuit",
+            "vitesse",
+            "puissance",
+            "compétition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "volant",
+          "options": [
+            "volant",
+            "prototype",
+            "automobile",
+            "moteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "freinage",
+          "options": [
+            "freinage",
+            "châssis",
+            "carrosserie",
+            "piston"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "vitesse",
+          "options": [
+            "vitesse",
+            "transmission",
+            "circuit",
+            "volant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "puissance",
+          "options": [
+            "puissance",
+            "freinage",
+            "compétition",
+            "prototype"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "compétition",
+          "options": [
+            "compétition",
+            "automobile",
+            "moteur",
+            "châssis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "prototype",
+          "options": [
+            "prototype",
+            "carrosserie",
+            "piston",
+            "aérodynamisme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La danse des pistons",
+      "inspiration": "Le Mans 66 (Ford v Ferrari - James Mangold, 2019)",
+      "text": "À peine Carroll eut-il tourné la clé de contact que le V8 se mit à hurler comme une bête qu'on libère de sa cage. Ce constructeur d'{{BLANK_1}}s, ancien pilote au cœur fragile, avait accepté le défi impossible : humilier Ferrari sur ses terres. Son arme serait un {{BLANK_14}} de métal et de fureur, la GT40, conçue dans la sueur et les nuits blanches. Le {{BLANK_2}}, ce cœur d'aluminium qui battait sept mille fois par minute, avait été usiné comme on sculpte un diamant. Le {{BLANK_3}}, colonne vertébrale de la bête, devait résister à des forces qui broieraient l'acier ordinaire. La {{BLANK_4}}, dessinée en soufflerie, épousait l'air comme une amoureuse, transformant l'{{BLANK_6}} en alliée plutôt qu'en ennemie. Chaque {{BLANK_5}} dansait sa chorégraphie infernale, montant et descendant dans une précision d'horlogerie suisse. La {{BLANK_7}} transmettait la rage du moteur aux roues arrière, dans un hurlement mécanique. Sur le {{BLANK_8}} sacré du Mans, Ken Miles devenait un avec sa machine, ses mains greffées au {{BLANK_9}} comme des extensions nerveuses. Le {{BLANK_10}} à 340 km/h exigeait un courage surhumain, une foi absolue dans la mécanique. La {{BLANK_11}} transformait le paysage en lignes floues, et la {{BLANK_12}} du moteur faisait trembler l'air lui-même. Cette {{BLANK_13}} n'était plus une course, mais une guerre où l'orgueil américain affrontait la légende italienne. Quand les trois Ford franchirent la ligne d'arrivée en 1966, Carroll pleura, non de joie, mais de tristesse : il savait que Ken, ce génie incompris, serait bientôt écarté par les comptables, lui qui avait donné son âme à cette danse des pistons.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "automobiles",
+          "options": [
+            "automobiles",
+            "moteurs",
+            "châssis",
+            "carrosseries"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "moteur",
+          "options": [
+            "moteur",
+            "piston",
+            "aérodynamisme",
+            "transmission"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "châssis",
+          "options": [
+            "châssis",
+            "circuit",
+            "volant",
+            "freinage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "carrosserie",
+          "options": [
+            "carrosserie",
+            "vitesse",
+            "puissance",
+            "compétition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "piston",
+          "options": [
+            "piston",
+            "prototype",
+            "automobile",
+            "moteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "aérodynamisme",
+          "options": [
+            "aérodynamisme",
+            "châssis",
+            "carrosserie",
+            "piston"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "transmission",
+          "options": [
+            "transmission",
+            "circuit",
+            "volant",
+            "freinage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "circuit",
+          "options": [
+            "circuit",
+            "vitesse",
+            "puissance",
+            "compétition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "volant",
+          "options": [
+            "volant",
+            "prototype",
+            "automobile",
+            "moteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "freinage",
+          "options": [
+            "freinage",
+            "châssis",
+            "carrosserie",
+            "piston"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "vitesse",
+          "options": [
+            "vitesse",
+            "transmission",
+            "circuit",
+            "volant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "puissance",
+          "options": [
+            "puissance",
+            "freinage",
+            "compétition",
+            "prototype"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "compétition",
+          "options": [
+            "compétition",
+            "automobile",
+            "moteur",
+            "châssis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "prototype",
+          "options": [
+            "prototype",
+            "carrosserie",
+            "piston",
+            "aérodynamisme"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Automobile et ingénierie",
+    "title_fa": "آزمون : خودروسازی و مهندسی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le véhicule à quatre roues propulsé par un moteur, utilisé pour le transport routier, est l'____.",
+        "options": [
+          "automobile",
+          "moteur",
+          "châssis",
+          "carrosserie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خودروی چهارچرخ = automobile."
+      },
+      {
+        "type": "mcq",
+        "question": "La machine qui transforme l'énergie chimique du carburant en énergie mécanique est le ____.",
+        "options": [
+          "moteur",
+          "piston",
+          "aérodynamisme",
+          "transmission"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماشین تبدیل انرژی سوخت = moteur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'armature rigide qui supporte tous les éléments mécaniques et la carrosserie d'un véhicule est le ____.",
+        "options": [
+          "châssis",
+          "circuit",
+          "volant",
+          "freinage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اسکلت نگهدارنده خودرو = châssis."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enveloppe extérieure du véhicule, constituée de panneaux métalliques ou composites, est la ____.",
+        "options": [
+          "carrosserie",
+          "vitesse",
+          "puissance",
+          "compétition"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پوشش بیرونی خودرو = carrosserie."
+      },
+      {
+        "type": "mcq",
+        "question": "La pièce cylindrique mobile qui se déplace dans le cylindre du moteur pour transmettre la force est le ____.",
+        "options": [
+          "piston",
+          "prototype",
+          "automobile",
+          "moteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قطعه متحرک داخل سیلندر = piston."
+      },
+      {
+        "type": "mcq",
+        "question": "La science qui étudie l'écoulement de l'air autour des véhicules pour optimiser leur performance est l'____.",
+        "options": [
+          "aérodynamisme",
+          "châssis",
+          "carrosserie",
+          "piston"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم جریان هوا اطراف خودرو = aérodynamisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système mécanique qui transmet la puissance du moteur aux roues motrices est la ____.",
+        "options": [
+          "transmission",
+          "circuit",
+          "volant",
+          "freinage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم انتقال قدرت به چرخ‌ها = transmission."
+      },
+      {
+        "type": "mcq",
+        "question": "La piste fermée et aménagée spécialement pour les courses automobiles est le ____.",
+        "options": [
+          "circuit",
+          "vitesse",
+          "puissance",
+          "compétition"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیست بسته مسابقه = circuit."
+      },
+      {
+        "type": "mcq",
+        "question": "L'organe de direction circulaire que le conducteur manipule pour orienter les roues est le ____.",
+        "options": [
+          "volant",
+          "prototype",
+          "automobile",
+          "moteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرمان خودرو = volant."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de ralentir ou d'arrêter un véhicule à l'aide du système de freins est le ____.",
+        "options": [
+          "freinage",
+          "châssis",
+          "carrosserie",
+          "piston"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل کاهش سرعت = freinage."
+      },
+      {
+        "type": "mcq",
+        "question": "La distance parcourue par un véhicule par unité de temps, exprimée en km/h, est la ____.",
+        "options": [
+          "vitesse",
+          "transmission",
+          "circuit",
+          "volant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسافت طی‌شده در واحد زمان = vitesse."
+      },
+      {
+        "type": "mcq",
+        "question": "La capacité d'un moteur à produire un travail, mesurée en chevaux ou en kilowatts, est la ____.",
+        "options": [
+          "puissance",
+          "freinage",
+          "compétition",
+          "prototype"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توان تولیدی موتور = puissance."
+      },
+      {
+        "type": "mcq",
+        "question": "La rivalité sportive entre pilotes ou écuries lors d'épreuves automobiles est la ____.",
+        "options": [
+          "compétition",
+          "automobile",
+          "moteur",
+          "châssis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رقابت ورزشی بین رانندگان = compétition."
+      },
+      {
+        "type": "mcq",
+        "question": "Le premier exemplaire d'un véhicule conçu pour être testé avant la production en série est le ____.",
+        "options": [
+          "prototype",
+          "carrosserie",
+          "piston",
+          "aérodynamisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اولین نمونه آزمایشی = prototype."
+      },
+      {
+        "type": "binary",
+        "question": "Le châssis est la structure rigide qui supporte tous les éléments mécaniques du véhicule.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. شاسی اسکلت اصلی خودرو است."
+      },
+      {
+        "type": "binary",
+        "question": "L'aérodynamisme étudie uniquement la couleur et l'esthétique des voitures de course.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. آیرودینامیک جریان هوا و مقاومت آن را مطالعه می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le piston est une pièce mobile qui monte et descend dans le cylindre du moteur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پیستون قطعه‌ای متحرک در سیلندر است."
+      },
+      {
+        "type": "binary",
+        "question": "La transmission relie directement le volant au moteur sans aucun mécanisme intermédiaire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. انتقال قدرت موتور را به چرخ‌ها متصل می‌کند، نه فرمان را."
+      },
+      {
+        "type": "binary",
+        "question": "Un prototype est un modèle expérimental testé avant la production industrielle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پروتوتایپ نمونه آزمایشی قبل از تولید است."
+      },
+      {
+        "type": "binary",
+        "question": "La puissance d'un moteur se mesure traditionnellement en chevaux (ch) ou en kilowatts (kW).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. قدرت موتور با اسب بخار یا کیلووات سنجیده می‌شود."
+      }
+    ]
+  }
+}
