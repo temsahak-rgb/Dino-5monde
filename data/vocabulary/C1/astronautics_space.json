@@ -1,0 +1,680 @@
+{
+  "id": "astronautics_space",
+  "level": "C1",
+  "theme": "Astronautique, espace et exploration spatiale",
+  "theme_fa": "فضانوردی، فضا و اکتشافات فضایی",
+  "icon": "🚀",
+  "inspiration": "Interstellar (Christopher Nolan, 2014)",
+  "words": [
+    {
+      "fr": "l'astronaute",
+      "fa": "فضانورد",
+      "emoji": "👨‍🚀",
+      "difficulty": 3,
+      "ex": "L'astronaute a flotté dans la station spatiale internationale.",
+      "ex_fa": "فضانورد در ایستگاه فضایی بین‌المللی شناور بود."
+    },
+    {
+      "fr": "l'apesanteur",
+      "fa": "بی‌وزنی",
+      "emoji": "🎈",
+      "difficulty": 4,
+      "ex": "L'apesanteur provoque une atrophie musculaire chez les voyageurs.",
+      "ex_fa": "بی‌وزنی باعث تحلیل عضلانی در مسافران می‌شود."
+    },
+    {
+      "fr": "la fusée",
+      "fa": "موشک",
+      "emoji": "🚀",
+      "difficulty": 3,
+      "ex": "La fusée Saturn V a permis à l'homme de marcher sur la Lune.",
+      "ex_fa": "موشک ساترن ۵ به انسان امکان راه رفتن روی ماه را داد."
+    },
+    {
+      "fr": "l'orbite",
+      "fa": "مدار",
+      "emoji": "🪐",
+      "difficulty": 4,
+      "ex": "Le satellite a été mis en orbite géostationnaire.",
+      "ex_fa": "ماهواره در مدار زمین‌ثابت قرار گرفت."
+    },
+    {
+      "fr": "le télescope",
+      "fa": "تلسکوپ",
+      "emoji": "🔭",
+      "difficulty": 3,
+      "ex": "Le télescope spatial James Webb observe les galaxies lointaines.",
+      "ex_fa": "تلسکوپ فضایی جیمز وب کهکشان‌های دوردست را رصد می‌کند."
+    },
+    {
+      "fr": "la constellation",
+      "fa": "صورت فلکی",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "Orion est une constellation facilement visible en hiver.",
+      "ex_fa": "شکارچی (اوراین) صورت فلکی است که در زمستان به راحتی دیده می‌شود."
+    },
+    {
+      "fr": "le trou noir",
+      "fa": "سیاهچاله",
+      "emoji": "🕳️",
+      "difficulty": 4,
+      "ex": "La gravité d'un trou noir est si forte que rien ne peut s'en échapper.",
+      "ex_fa": "جاذبه سیاهچاله آنقدر قوی است که هیچ‌چیز نمی‌تواند از آن فرار کند."
+    },
+    {
+      "fr": "la navette spatiale",
+      "fa": "شاتل فضایی",
+      "emoji": "🛸",
+      "difficulty": 4,
+      "ex": "La navette spatiale Atlantis a effectué sa dernière mission en 2011.",
+      "ex_fa": "شاتل فضایی آتلانتیس آخرین مأموریت خود را در سال ۲۰۱۱ انجام داد."
+    },
+    {
+      "fr": "l'astéroïde",
+      "fa": "سیارک",
+      "emoji": "☄️",
+      "difficulty": 4,
+      "ex": "Un astéroïde géant a provoqué l'extinction des dinosaures.",
+      "ex_fa": "یک سیارک غول‌پیکر باعث انقراض دایناسورها شد."
+    },
+    {
+      "fr": "la gravité",
+      "fa": "جاذبه، نیروی گرانش",
+      "emoji": "🍎",
+      "difficulty": 3,
+      "ex": "La gravité lunaire est six fois plus faible que celle de la Terre.",
+      "ex_fa": "جاذبه ماه شش برابر ضعیف‌تر از زمین است."
+    },
+    {
+      "fr": "le satellite",
+      "fa": "ماهواره",
+      "emoji": "🛰️",
+      "difficulty": 3,
+      "ex": "Les satellites météorologiques prévoient les tempêtes.",
+      "ex_fa": "ماهواره‌های هواشناسی طوفان‌ها را پیش‌بینی می‌کنند."
+    },
+    {
+      "fr": "la propulsion",
+      "fa": "پیشرانش",
+      "emoji": "🔥",
+      "difficulty": 5,
+      "ex": "La propulsion ionique permet des voyages interplanétaires plus longs.",
+      "ex_fa": "پیشرانش یونی سفرهای بین‌سیاره‌ای طولانی‌تری را ممکن می‌سازد."
+    },
+    {
+      "fr": "l'exoplanète",
+      "fa": "سیاره فراخورشیدی",
+      "emoji": "🌍",
+      "difficulty": 5,
+      "ex": "Les scientifiques cherchent une exoplanète habitable.",
+      "ex_fa": "دانشمندان به دنبال یک سیاره فراخورشیدی قابل سکونت هستند."
+    },
+    {
+      "fr": "la supernova",
+      "fa": "ابرنواختر",
+      "emoji": "💥",
+      "difficulty": 5,
+      "ex": "L'explosion d'une supernova disperse des éléments lourds dans l'univers.",
+      "ex_fa": "انفجار ابرنواختر عناصر سنگین را در جهان پخش می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le voyage vers les étoiles",
+      "text": "Cooper est un ancien pilote devenu fermier, mais il est choisi comme {{BLANK_1}} pour une mission cruciale. Il embarque à bord d'une puissante {{BLANK_3}} nommée Endurance. Son objectif est de quitter le système solaire pour trouver une {{BLANK_13}} habitable. Une fois dans l'espace, le vaisseau se met en {{BLANK_4}} autour de la Terre avant de partir. Cooper déploie un {{BLANK_11}} pour communiquer avec la base. En s'éloignant, il observe l'univers à travers le {{BLANK_5}} du vaisseau et admire une magnifique {{BLANK_6}}. Soudain, les capteurs détectent un énorme {{BLANK_9}} sur leur trajectoire. Le pilote utilise le système de {{BLANK_12}} pour dévier et éviter la collision. Ils arrivent près d'un {{BLANK_7}} gigantesque appelé Gargantua. La {{BLANK_10}} extrême de cet objet déforme le temps lui-même. À l'intérieur du vaisseau, l'équipage flotte en {{BLANK_2}} totale. Ils doivent utiliser une petite {{BLANK_8}} pour descendre explorer une planète proche. Quand une étoile lointaine explose en {{BLANK_14}}, elle illumine brièvement le vide cosmique. Cooper sait que l'humanité dépend de ce voyage.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "astronaute",
+          "options": [
+            "astronaute",
+            "satellite",
+            "trou noir",
+            "fusée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "apesanteur",
+          "options": [
+            "apesanteur",
+            "gravité",
+            "orbite",
+            "propulsion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fusée",
+          "options": [
+            "fusée",
+            "navette spatiale",
+            "télescope",
+            "astéroïde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "orbite",
+          "options": [
+            "orbite",
+            "constellation",
+            "supernova",
+            "exoplanète"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "télescope",
+          "options": [
+            "télescope",
+            "satellite",
+            "trou noir",
+            "fusée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "constellation",
+          "options": [
+            "constellation",
+            "apesanteur",
+            "gravité",
+            "navette spatiale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "trou noir",
+          "options": [
+            "trou noir",
+            "astéroïde",
+            "exoplanète",
+            "supernova"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "navette spatiale",
+          "options": [
+            "navette spatiale",
+            "fusée",
+            "propulsion",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "astéroïde",
+          "options": [
+            "astéroïde",
+            "satellite",
+            "télescope",
+            "constellation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "gravité",
+          "options": [
+            "gravité",
+            "apesanteur",
+            "propulsion",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "satellite",
+          "options": [
+            "satellite",
+            "télescope",
+            "trou noir",
+            "astéroïde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "propulsion",
+          "options": [
+            "propulsion",
+            "gravité",
+            "apesanteur",
+            "supernova"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "exoplanète",
+          "options": [
+            "exoplanète",
+            "constellation",
+            "navette spatiale",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "supernova",
+          "options": [
+            "supernova",
+            "trou noir",
+            "astéroïde",
+            "fusée"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'horizon des événements",
+      "inspiration": "Interstellar (Christopher Nolan, 2014)",
+      "text": "À peine le vaisseau Endurance eut-il franchi l'atmosphère terrestre que Cooper sentit le poids de l'humanité peser sur ses épaules d'{{BLANK_1}}. La Terre se mourait, étouffée par la poussière et les maladies, et ce père de famille devait abandonner ses enfants pour chercher un salut parmi les étoiles. La puissante {{BLANK_3}} les avait arrachés à la {{BLANK_10}} terrestre, les propulsant dans le silence glacé du vide. Désormais, ils vivaient en {{BLANK_2}}, flottant comme des fantômes dans les coursives métalliques. Cooper observait l'infini à travers le {{BLANK_5}} de la coupole, cherchant désespérément une {{BLANK_13}} qui pourrait remplacer le monde perdu. Ils avaient mis le vaisseau en {{BLANK_4}} autour d'un monde gelé avant de plonger vers l'inconnu. Un {{BLANK_11}} de communication relayait leurs messages vers une Terre de plus en plus lointaine. Soudain, l'immensité s'ouvrit sur Gargantua, un {{BLANK_7}} monstrueux dont la {{BLANK_10}} titanesque tordait la lumière et le temps. Pour s'en approcher, ils durent utiliser une petite {{BLANK_8}} de descente, évitant de justesse un nuage d'{{BLANK_9}}s mortels. Le système de {{BLANK_12}} hurlait sous la contrainte. Dans le lointain, une étoile mourante explosait en {{BLANK_14},} semant les graines de la vie future dans le cosmos. Cooper fixait cette lumière ancienne, réalisant que chaque {{BLANK_6}} qu'il avait admirée dans son enfance n'était qu'un murmure du passé. Il savait que pour sauver sa fille, il devrait un jour franchir l'horizon des événements, là où la science s'effondre et où seul l'amour survit à la mort du temps.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "astronaute",
+          "options": [
+            "astronaute",
+            "satellite",
+            "trou noir",
+            "fusée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "apesanteur",
+          "options": [
+            "apesanteur",
+            "gravité",
+            "orbite",
+            "propulsion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fusée",
+          "options": [
+            "fusée",
+            "navette spatiale",
+            "télescope",
+            "astéroïde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "orbite",
+          "options": [
+            "orbite",
+            "constellation",
+            "supernova",
+            "exoplanète"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "télescope",
+          "options": [
+            "télescope",
+            "satellite",
+            "trou noir",
+            "fusée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "constellation",
+          "options": [
+            "constellation",
+            "apesanteur",
+            "gravité",
+            "navette spatiale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "trou noir",
+          "options": [
+            "trou noir",
+            "astéroïde",
+            "exoplanète",
+            "supernova"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "navette spatiale",
+          "options": [
+            "navette spatiale",
+            "fusée",
+            "propulsion",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "astéroïde",
+          "options": [
+            "astéroïde",
+            "satellite",
+            "télescope",
+            "constellation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "gravité",
+          "options": [
+            "gravité",
+            "apesanteur",
+            "propulsion",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "satellite",
+          "options": [
+            "satellite",
+            "télescope",
+            "trou noir",
+            "astéroïde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "propulsion",
+          "options": [
+            "propulsion",
+            "gravité",
+            "apesanteur",
+            "supernova"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "exoplanète",
+          "options": [
+            "exoplanète",
+            "constellation",
+            "navette spatiale",
+            "orbite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "supernova",
+          "options": [
+            "supernova",
+            "trou noir",
+            "astéroïde",
+            "fusée"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Astronautique et exploration spatiale",
+    "title_fa": "آزمون : فضانوردی و اکتشافات فضایی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La personne entraînée pour piloter un véhicule spatial ou effectuer des missions en dehors de l'atmosphère terrestre est l'____.",
+        "options": [
+          "astronaute",
+          "satellite",
+          "trou noir",
+          "fusée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرد آموزش‌دیده برای سفر به فضا = astronaute."
+      },
+      {
+        "type": "mcq",
+        "question": "L'état d'un corps qui n'est plus soumis à l'attraction gravitationnelle terrestre et qui flotte librement est l'____.",
+        "options": [
+          "apesanteur",
+          "gravité",
+          "orbite",
+          "propulsion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حالت بی‌وزنی و شناوری = apesanteur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le véhicule spatial propulsé par des moteurs puissants pour quitter l'attraction terrestre et atteindre l'espace est la ____.",
+        "options": [
+          "fusée",
+          "navette spatiale",
+          "télescope",
+          "astéroïde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله نقلیه پرتاب‌کننده به فضا = fusée."
+      },
+      {
+        "type": "mcq",
+        "question": "La trajectoire courbe et fermée qu'un objet céleste ou artificiel décrit autour d'un astre sous l'effet de la gravité est l'____.",
+        "options": [
+          "orbite",
+          "constellation",
+          "supernova",
+          "exoplanète"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسیر چرخشی به دور یک جرم آسمانی = orbite."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument optique de grande taille utilisé pour observer les astres lointains et capter la lumière de l'univers est le ____.",
+        "options": [
+          "télescope",
+          "satellite",
+          "trou noir",
+          "fusée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار اپتیکی رصد ستارگان = télescope."
+      },
+      {
+        "type": "mcq",
+        "question": "Le groupe d'étoiles qui forment une figure imaginaire dans le ciel nocturne et portent souvent des noms mythologiques est la ____.",
+        "options": [
+          "constellation",
+          "apesanteur",
+          "gravité",
+          "navette spatiale"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گروهی از ستارگان با شکل خیالی = constellation."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objet céleste dont la masse est si concentrée que son champ gravitationnel empêche même la lumière de s'en échapper est le ____.",
+        "options": [
+          "trou noir",
+          "astéroïde",
+          "exoplanète",
+          "supernova"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جرم آسمانی با جاذبه‌ای که نور هم از آن فرار نمی‌کند = trou noir."
+      },
+      {
+        "type": "mcq",
+        "question": "Le véhicule spatial réutilisable, doté d'ailes pour atterrir comme un avion, qui a servi à de nombreuses missions est la ____.",
+        "options": [
+          "navette spatiale",
+          "fusée",
+          "propulsion",
+          "orbite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله نقلیه فضایی بالدار و قابل استفاده مجدد = navette spatiale."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit corps rocheux du système solaire qui tourne autour du Soleil et qui peut parfois croiser la trajectoire de la Terre est l'____.",
+        "options": [
+          "astéroïde",
+          "satellite",
+          "télescope",
+          "constellation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جرم سنگی کوچک در منظومه شمسی = astéroïde."
+      },
+      {
+        "type": "mcq",
+        "question": "La force physique universelle qui attire les corps possédant une masse les uns vers les autres est la ____.",
+        "options": [
+          "gravité",
+          "apesanteur",
+          "propulsion",
+          "orbite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نیروی جاذبه بین اجرام = gravité."
+      },
+      {
+        "type": "mcq",
+        "question": "L'engin artificiel mis en orbite autour de la Terre pour les télécommunications, la météo ou l'observation est le ____.",
+        "options": [
+          "satellite",
+          "télescope",
+          "trou noir",
+          "astéroïde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماشین مصنوعی در مدار زمین = satellite."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système mécanique ou physique qui génère la poussée nécessaire pour faire avancer un véhicule spatial est la ____.",
+        "options": [
+          "propulsion",
+          "gravité",
+          "apesanteur",
+          "supernova"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم ایجاد نیروی پیشران = propulsion."
+      },
+      {
+        "type": "mcq",
+        "question": "Une planète située en dehors de notre système solaire et qui tourne autour d'une autre étoile que le Soleil est une ____.",
+        "options": [
+          "exoplanète",
+          "constellation",
+          "navette spatiale",
+          "orbite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیاره‌ای خارج از منظومه شمسی = exoplanète."
+      },
+      {
+        "type": "mcq",
+        "question": "L'explosion cataclysmique qui marque la fin de la vie d'une étoile massive, libérant une énergie colossale, est une ____.",
+        "options": [
+          "supernova",
+          "trou noir",
+          "astéroïde",
+          "fusée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انفجار عظیم پایان عمر یک ستاره = supernova."
+      },
+      {
+        "type": "binary",
+        "question": "L'apesanteur signifie que la gravité a totalement disparu dans l'espace lointain.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. بی‌وزنی معمولاً به دلیل سقوط آزاد یا تعادل نیروهاست، جاذبه در فضا هنوز وجود دارد اما بسیار ضعیف یا خنثی شده است."
+      },
+      {
+        "type": "binary",
+        "question": "Un satellite naturel (comme la Lune) et un satellite artificiel tournent tous deux en orbite autour d'une planète.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هر دو در مدار یک سیاره می‌چرخند، یکی طبیعی و دیگری ساخت بشر."
+      },
+      {
+        "type": "binary",
+        "question": "La lumière peut facilement s'échapper d'un trou noir s'il est de petite taille.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تعریف سیاهچاله این است که جاذبه آن آنقدر قوی است که حتی نور هم نمی‌تواند از آن فرار کند."
+      },
+      {
+        "type": "binary",
+        "question": "L'exoplanète désigne une planète qui se trouve dans notre propre système solaire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سیاره فراخورشیدی (exoplanète) دقیقاً به سیاراتی گفته می‌شود که خارج از منظومه شمسی ما هستند."
+      },
+      {
+        "type": "binary",
+        "question": "Une supernova est une explosion stellaire qui disperse des éléments chimiques essentiels à la vie dans l'univers.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ابرنواخترها عناصر سنگین را در فضا پخش می‌کنند که برای تشکیل سیارات و حیات ضروری‌اند."
+      },
+      {
+        "type": "binary",
+        "question": "La fusée et la navette spatiale désignent exactement le même type de véhicule spatial réutilisable.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. موشک (fusée) معمولاً یک‌بار مصرف است، اما شاتل (navette) برای بازگشت و استفاده مجدد طراحی شده بود."
+      }
+    ]
+  }
+}
