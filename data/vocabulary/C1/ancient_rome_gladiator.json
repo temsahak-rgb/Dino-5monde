@@ -1,0 +1,681 @@
+{
+  "id": "ancient_rome_gladiator",
+  "level": "C1",
+  "theme": "Rome antique, gladiateurs et empire",
+  "theme_fa": "روم باستان، گلادیاتورها و امپراتوری",
+  "icon": "🏛️",
+  "inspiration": "Gladiator (Ridley Scott, 2000)",
+  "words": [
+    {
+      "fr": "l'arène",
+      "fa": "میدان نبرد، آرنا",
+      "emoji": "🏟️",
+      "difficulty": 4,
+      "ex": "Le sable de l'arène absorbe le sang des combattants.",
+      "ex_fa": "شن آرنا خون مبارزان را جذب می‌کند."
+    },
+    {
+      "fr": "le gladiateur",
+      "fa": "گلادیاتور",
+      "emoji": "⚔️",
+      "difficulty": 3,
+      "ex": "Le gladiateur s'entraîne des années pour survivre au combat.",
+      "ex_fa": "گلادیاتور سال‌ها برای زنده ماندن در نبرد تمرین می‌کند."
+    },
+    {
+      "fr": "l'empereur",
+      "fa": "امپراتور",
+      "emoji": "👑",
+      "difficulty": 3,
+      "ex": "L'empereur Commodus règne par la terreur et les jeux.",
+      "ex_fa": "امپراتور کومودوس با وحشت و بازی‌ها حکومت می‌کند."
+    },
+    {
+      "fr": "le Sénat",
+      "fa": "سنا (مجلس روم)",
+      "emoji": "🏛️",
+      "emoji_alt": "📜",
+      "difficulty": 4,
+      "ex": "Le Sénat romain perd son pouvoir face aux ambitions impériales.",
+      "ex_fa": "سنای روم در برابر جاه‌طلبی‌های امپراتوری قدرت خود را از دست می‌دهد."
+    },
+    {
+      "fr": "la légion",
+      "fa": "لژیون، سپاه",
+      "emoji": "🛡️",
+      "difficulty": 4,
+      "ex": "La légion romaine est la machine de guerre la plus redoutable de l'Antiquité.",
+      "ex_fa": "لژیون روم ترسناک‌ترین ماشین جنگی دوران باستان است."
+    },
+    {
+      "fr": "le centurion",
+      "fa": "سانتوریون (فرمانده)",
+      "emoji": "🎖️",
+      "difficulty": 5,
+      "ex": "Le centurion commande une unité de cent soldats.",
+      "ex_fa": "سانتوریون فرماندهی یک واحد صد نفره را بر عهده دارد."
+    },
+    {
+      "fr": "le bouclier",
+      "fa": "سپر",
+      "emoji": "🛡️",
+      "difficulty": 3,
+      "ex": "Le bouclier en bois protège le soldat des flèches ennemies.",
+      "ex_fa": "سپر چوبی سرباز را از تیرهای دشمن محافظت می‌کند."
+    },
+    {
+      "fr": "le glaive",
+      "fa": "شمشیر کوتاه رومی",
+      "emoji": "🗡️",
+      "difficulty": 4,
+      "ex": "Le glaive court est idéal pour le combat rapproché.",
+      "ex_fa": "شمشیر کوتاه برای نبرد تن‌به‌تن ایده‌آل است."
+    },
+    {
+      "fr": "le trident",
+      "fa": "نیزه سه‌شاخه",
+      "emoji": "🔱",
+      "difficulty": 4,
+      "ex": "Le rétiaire combat avec un filet et un trident.",
+      "ex_fa": "رتیاریوس (تورداری) با تور و نیزه سه‌شاخه می‌جنگد."
+    },
+    {
+      "fr": "la toge",
+      "fa": "توگا (لباس رومی)",
+      "emoji": "👘",
+      "difficulty": 4,
+      "ex": "Seuls les citoyens romains ont le droit de porter la toge.",
+      "ex_fa": "تنها شهروندان رومی حق پوشیدن توگا را دارند."
+    },
+    {
+      "fr": "le triomphe",
+      "fa": "رژه پیروزی، شکوه",
+      "emoji": "🏆",
+      "difficulty": 4,
+      "ex": "Le général célèbre son triomphe dans les rues de Rome.",
+      "ex_fa": "ژنرال پیروزی خود را در خیابان‌های روم جشن می‌گیرد."
+    },
+    {
+      "fr": "le martyr",
+      "fa": "شهید، قربانی",
+      "emoji": "🩸",
+      "difficulty": 4,
+      "ex": "Les chrétiens sont livrés aux fauves comme martyrs.",
+      "ex_fa": "مسیحیان به عنوان قربانی به درندگان سپرده می‌شوند."
+    },
+    {
+      "fr": "le Colisée",
+      "fa": "کولوسئوم",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "Le Colisée peut accueillir plus de cinquante mille spectateurs.",
+      "ex_fa": "کولوسئوم می‌تواند بیش از پنجاه هزار تماشاگر را جای دهد."
+    },
+    {
+      "fr": "la république",
+      "fa": "جمهوری",
+      "emoji": "🗳️",
+      "difficulty": 4,
+      "ex": "La chute de la république a ouvert la voie à l'Empire.",
+      "ex_fa": "سقوط جمهوری راه را برای امپراتوری هموار کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le général devenu esclave",
+      "text": "Maximus Decimus Meridius est un général respecté qui commande la {{BLANK_5}} romaine en Germanie. Après une grande victoire, l'{{BLANK_3}} Marc Aurèle lui propose de restaurer la {{BLANK_14}} pour rendre le pouvoir au peuple. Mais son fils, Commode, assassine son père et usurpe le trône. Maximus refuse de lui prêter allégeance et s'échappe, mais sa famille est massacrée. Capturé par des marchands d'esclaves, il devient {{BLANK_2}}. Il est vendu à Proximo et envoyé au {{BLANK_13}} à Rome. Dans l'{{BLANK_1}}, il saisit son {{BLANK_7}} court et son lourd {{BLANK_7}}. Parfois, il affronte des adversaires armés d'un {{BLANK_9}} et d'un filet. Le {{BLANK_8}} en pourpre observe les jeux depuis sa loge, tandis que les sénateurs en {{BLANK_10}} blanche complotent dans les coulisses. Maximus gagne le cœur de la foule et rêve de {{BLANK_11}} pour venger les siens. Les chrétiens sont souvent livrés aux lions comme {{BLANK_12}}s pour divertir la plèbe. Chaque combat est une étape vers sa vengeance finale.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "arène",
+          "options": [
+            "arène",
+            "gladiateur",
+            "empereur",
+            "Sénat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "gladiateur",
+          "options": [
+            "gladiateur",
+            "légion",
+            "centurion",
+            "bouclier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "empereur",
+          "options": [
+            "empereur",
+            "glaive",
+            "trident",
+            "toge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Sénat",
+          "options": [
+            "Sénat",
+            "triomphe",
+            "martyr",
+            "Colisée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "légion",
+          "options": [
+            "légion",
+            "république",
+            "arène",
+            "gladiateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "centurion",
+          "options": [
+            "centurion",
+            "empereur",
+            "glaive",
+            "trident"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "glaive",
+          "options": [
+            "glaive",
+            "toge",
+            "triomphe",
+            "martyr"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "empereur",
+          "options": [
+            "empereur",
+            "Colisée",
+            "république",
+            "arène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "trident",
+          "options": [
+            "trident",
+            "gladiateur",
+            "légion",
+            "centurion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "toge",
+          "options": [
+            "toge",
+            "bouclier",
+            "glaive",
+            "trident"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "triomphe",
+          "options": [
+            "triomphe",
+            "empereur",
+            "Sénat",
+            "Colisée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "martyrs",
+          "options": [
+            "martyrs",
+            "république",
+            "arène",
+            "gladiateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "Colisée",
+          "options": [
+            "Colisée",
+            "légion",
+            "centurion",
+            "bouclier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "république",
+          "options": [
+            "république",
+            "empereur",
+            "glaive",
+            "trident"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les ombres du Colisée",
+      "inspiration": "Gladiator (Ridley Scott, 2000)",
+      "text": "À peine Maximus eut-il senti le sable brûlant de l'{{BLANK_1}} sous ses sandales qu'il comprit que les dieux l'avaient abandonné aux enfers terrestres. Ce général qui avait mené la plus grande {{BLANK_5}} de Rome aux confins du monde barbare, ce {{BLANK_6}} respecté de ses hommes, n'était plus qu'un esclave sans nom. L'ancien {{BLANK_3}} Marc Aurèle, ce sage qui rêvait de restaurer la {{BLANK_14}} perdue, gisait dans son sang, assassiné par son propre fils. Commode, ce tyran vêtu de pourpre, avait fait massacrer sa femme et son fils, transformant le héros en {{BLANK_2}} assoiffé de vengeance. Dans les entrailles du {{BLANK_13}}, parmi les cris des bêtes et les pleurs des {{BLANK_12}}s chrétiens, Maximus fourbissait son {{BLANK_7}} et son lourd {{BLANK_7}} en bois. Quand il affrontait le rétiaire armé de son {{BLANK_9}}, il ne voyait pas un adversaire, mais le visage de l'usurpateur qui l'observait depuis sa loge dorée. Les sénateurs en {{BLANK_10}} immaculée, ces lâches du {{BLANK_4}}, complotaient dans l'ombre, attendant le signal de la révolte. Maximus savait que son véritable combat n'était pas contre les autres guerriers, mais contre la pourriture de l'Empire. Chaque victoire dans l'arène était une étape vers son {{BLANK_11}} final, ce jour béni où il pourrait regarder Commode dans les yeux et lui arracher l'âme. Le sable rouge de Rome buvait le sang des innocents, mais il ignorait qu'il s'apprêtait à boire celui d'un dieu déchu.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "arène",
+          "options": [
+            "arène",
+            "gladiateur",
+            "empereur",
+            "Sénat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "gladiateur",
+          "options": [
+            "gladiateur",
+            "légion",
+            "centurion",
+            "bouclier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "empereur",
+          "options": [
+            "empereur",
+            "glaive",
+            "trident",
+            "toge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Sénat",
+          "options": [
+            "Sénat",
+            "triomphe",
+            "martyr",
+            "Colisée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "légion",
+          "options": [
+            "légion",
+            "république",
+            "arène",
+            "gladiateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "centurion",
+          "options": [
+            "centurion",
+            "empereur",
+            "glaive",
+            "trident"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "bouclier",
+          "options": [
+            "bouclier",
+            "toge",
+            "triomphe",
+            "martyr"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "glaive",
+          "options": [
+            "glaive",
+            "Colisée",
+            "république",
+            "arène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "trident",
+          "options": [
+            "trident",
+            "gladiateur",
+            "légion",
+            "centurion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "toge",
+          "options": [
+            "toge",
+            "bouclier",
+            "glaive",
+            "trident"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "triomphe",
+          "options": [
+            "triomphe",
+            "empereur",
+            "Sénat",
+            "Colisée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "martyrs",
+          "options": [
+            "martyrs",
+            "république",
+            "arène",
+            "gladiateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "Colisée",
+          "options": [
+            "Colisée",
+            "légion",
+            "centurion",
+            "bouclier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "république",
+          "options": [
+            "république",
+            "empereur",
+            "glaive",
+            "trident"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Rome antique et gladiateurs",
+    "title_fa": "آزمون : روم باستان و گلادیاتورها",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'espace circulaire sablonneux au centre de l'amphithéâtre où se déroulent les combats est l'____.",
+        "options": [
+          "arène",
+          "gladiateur",
+          "empereur",
+          "Sénat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فضای شنی مرکز آمفی‌تئاتر = arène."
+      },
+      {
+        "type": "mcq",
+        "question": "Le combattant, souvent esclave ou prisonnier, qui s'affronte en spectacle dans les amphithéâtres romains est le ____.",
+        "options": [
+          "gladiateur",
+          "légion",
+          "centurion",
+          "bouclier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مبارز آمفی‌تئاتر روم = gladiateur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le souverain suprême qui détient le pouvoir absolu sur l'Empire romain est l'____.",
+        "options": [
+          "empereur",
+          "glaive",
+          "trident",
+          "toge"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حاکم مطلق امپراتوری = empereur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'assemblée des notables et des aristocrates qui délibérait sur les affaires de l'État romain est le ____.",
+        "options": [
+          "Sénat",
+          "triomphe",
+          "martyr",
+          "Colisée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجلس اشراف روم = Sénat."
+      },
+      {
+        "type": "mcq",
+        "question": "La grande unité militaire romaine composée de plusieurs milliers de soldats est la ____.",
+        "options": [
+          "légion",
+          "république",
+          "arène",
+          "gladiateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واحد بزرگ نظامی روم = légion."
+      },
+      {
+        "type": "mcq",
+        "question": "L'officier romain qui commandait une centaine de soldats et formait la colonne vertébrale de l'armée est le ____.",
+        "options": [
+          "centurion",
+          "empereur",
+          "glaive",
+          "trident"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرمانده صد سرباز = centurion."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arme défensive, souvent en bois recouvert de cuir ou de métal, qui protège le combattant est le ____.",
+        "options": [
+          "bouclier",
+          "toge",
+          "triomphe",
+          "martyr"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سپر دفاعی = bouclier."
+      },
+      {
+        "type": "mcq",
+        "question": "L'épée courte et à double tranchant, arme emblématique du légionnaire romain, est le ____.",
+        "options": [
+          "glaive",
+          "Colisée",
+          "république",
+          "arène"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شمشیر کوتاه رومی = glaive."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arme à trois pointes utilisée notamment par les gladiateurs rétiaires (pêcheurs) est le ____.",
+        "options": [
+          "trident",
+          "gladiateur",
+          "légion",
+          "centurion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نیزه سه‌شاخه = trident."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ample vêtement drapé, symbole de la citoyenneté romaine, porté par les hommes libres est la ____.",
+        "options": [
+          "toge",
+          "bouclier",
+          "glaive",
+          "trident"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لباس نمادین شهروندی روم = toge."
+      },
+      {
+        "type": "mcq",
+        "question": "La cérémonie grandiose organisée à Rome pour honorer un général victorieux est le ____.",
+        "options": [
+          "triomphe",
+          "empereur",
+          "Sénat",
+          "Colisée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رژه پیروزی ژنرال = triomphe."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui souffre ou meurt pour sa foi ou ses convictions, souvent livrée aux bêtes dans l'arène, est le ____.",
+        "options": [
+          "martyr",
+          "république",
+          "arène",
+          "gladiateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قربانی یا شهید = martyr."
+      },
+      {
+        "type": "mcq",
+        "question": "Le plus grand amphithéâtre de Rome, symbole de la puissance impériale, est le ____.",
+        "options": [
+          "Colisée",
+          "légion",
+          "centurion",
+          "bouclier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بزرگترین آمفی‌تئاتر روم = Colisée."
+      },
+      {
+        "type": "mcq",
+        "question": "Le régime politique où le pouvoir appartient au peuple et à ses représentants, avant l'avènement de l'Empire, est la ____.",
+        "options": [
+          "république",
+          "empereur",
+          "glaive",
+          "trident"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نظام سیاسی پیش از امپراتوری = république."
+      },
+      {
+        "type": "binary",
+        "question": "Le gladiateur était généralement un citoyen romain libre qui choisissait de combattre pour la gloire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. گلادیاتورها معمولاً برده، اسیر جنگی یا محکومان بودند، نه شهروندان آزاد."
+      },
+      {
+        "type": "binary",
+        "question": "Le glaive romain (gladius) était une épée courte conçue pour frapper et poignarder dans les mêlées serrées.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. گلادیوس شمشیری کوتاه برای نبرد تن‌به‌تن و فشرده بود."
+      },
+      {
+        "type": "binary",
+        "question": "Le Sénat romain a toujours conservé un pouvoir suprême, même sous les empereurs les plus tyranniques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. در دوران امپراتوری، سنا اغلب قدرت خود را به نفع امپراتور از دست داد."
+      },
+      {
+        "type": "binary",
+        "question": "Le Colisée pouvait accueillir des combats de gladiateurs, des chasses d'animaux sauvages et même des batailles navales simulées.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کولوسئوم میزبان انواع سرگرمی‌ها از جمله نبردهای دریایی شبیه‌سازی‌شده بود."
+      },
+      {
+        "type": "binary",
+        "question": "La toge était un vêtement pratique et léger porté par les soldats romains au combat.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. توگا لباسی سنگین و رسمی برای شهروندان در مواقع صلح بود، نه برای جنگ."
+      },
+      {
+        "type": "binary",
+        "question": "Le centurion était un officier expérimenté, colonne vertébrale de la discipline dans la légion romaine.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سانتوریون‌ها افسران با经验 و ستون فقرات انضباط لژیون بودند."
+      }
+    ]
+  }
+}
