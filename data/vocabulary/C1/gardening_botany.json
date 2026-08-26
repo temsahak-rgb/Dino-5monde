@@ -1,0 +1,672 @@
+{
+  "id": "gardening_botany",
+  "level": "C1",
+  "theme": "Jardinage, botanique et horticulture",
+  "theme_fa": "باغبانی، گیاه‌شناسی و باغداری",
+  "icon": "🌿",
+  "inspiration": "Le Jardin secret (Frances Hodgson Burnett / Agnieszka Holland, 1993)",
+  "words": [
+    {
+      "fr": "le terreau",
+      "fa": "خاک گلدان، بستر کشت",
+      "emoji": "🌱",
+      "difficulty": 4,
+      "ex": "Un bon terreau est essentiel pour la croissance des plantes.",
+      "ex_fa": "خاک گلدان خوب برای رشد گیاهان ضروری است."
+    },
+    {
+      "fr": "la bouture",
+      "fa": "قلمه (روش تکثیر گیاه)",
+      "emoji": "🌿",
+      "difficulty": 4,
+      "ex": "Elle a réussi une bouture de rosier à partir d'une seule tige.",
+      "ex_fa": "او موفق شد از یک شاخه، قلمه رز بزند."
+    },
+    {
+      "fr": "le compost",
+      "fa": "کمپوست، کود آلی",
+      "emoji": "♻️",
+      "difficulty": 4,
+      "ex": "Le compost enrichit naturellement le sol du jardin.",
+      "ex_fa": "کمپوست به‌طور طبیعی خاک باغ را غنی می‌کند."
+    },
+    {
+      "fr": "l'engrais",
+      "fa": "کود (شیمیایی یا طبیعی)",
+      "emoji": "💊",
+      "difficulty": 3,
+      "ex": "Cet engrais stimule la floraison des géraniums.",
+      "ex_fa": "این کود شکوفایی شمعدانی‌ها را تقویت می‌کند."
+    },
+    {
+      "fr": "la greffe",
+      "fa": "پیوند زدن (در گیاهان)",
+      "emoji": "🌳",
+      "difficulty": 5,
+      "ex": "La greffe permet de combiner les qualités de deux arbres.",
+      "ex_fa": "پیوند زدن امکان ترکیب ویژگی‌های دو درخت را می‌دهد."
+    },
+    {
+      "fr": "le paillage",
+      "fa": "مالچ‌پاشی (پوشش خاک)",
+      "emoji": "🍂",
+      "difficulty": 5,
+      "ex": "Le paillage préserve l'humidité et limite les mauvaises herbes.",
+      "ex_fa": "مالچ‌پاشی رطوبت را حفظ و علف‌های هرز را محدود می‌کند."
+    },
+    {
+      "fr": "la taille",
+      "fa": "هرس کردن",
+      "emoji": "✂️",
+      "difficulty": 4,
+      "ex": "La taille des rosiers s'effectue généralement en mars.",
+      "ex_fa": "هرس رزها معمولاً در ماه مارس انجام می‌شود."
+    },
+    {
+      "fr": "la floraison",
+      "fa": "شکوفایی، گل‌دهی",
+      "emoji": "🌸",
+      "difficulty": 4,
+      "ex": "La floraison des cerisiers annonce le printemps.",
+      "ex_fa": "شکوفایی درختان گیلاس بهار را نوید می‌دهد."
+    },
+    {
+      "fr": "le semis",
+      "fa": "کاشت بذر، بذرپاشی",
+      "emoji": "🌾",
+      "difficulty": 4,
+      "ex": "Le semis des tomates se fait en godets dès février.",
+      "ex_fa": "کاشت بذر گوجه‌فرنگی از فوریه در گلدان کوچک انجام می‌شود."
+    },
+    {
+      "fr": "l'arrosage",
+      "fa": "آبیاری",
+      "emoji": "💧",
+      "difficulty": 3,
+      "ex": "L'arrosage au goutte-à-goutte économise beaucoup d'eau.",
+      "ex_fa": "آبیاری قطره‌ای آب زیادی صرفه‌جویی می‌کند."
+    },
+    {
+      "fr": "le désherbage",
+      "fa": "علف‌هرزی، وجین کردن",
+      "emoji": "🌾",
+      "difficulty": 5,
+      "ex": "Le désherbage manuel est long mais respectueux de l'environnement.",
+      "ex_fa": "علف‌هرزی دستی طولانی اما دوستدار محیط زیست است."
+    },
+    {
+      "fr": "la récolte",
+      "fa": "برداشت محصول",
+      "emoji": "🍅",
+      "difficulty": 3,
+      "ex": "La récolte des pommes a été abondante cette année.",
+      "ex_fa": "برداشت سیب امسال فراوان بود."
+    },
+    {
+      "fr": "le tuteur",
+      "fa": "قیم، پایه نگه‌دارنده",
+      "emoji": "🎋",
+      "difficulty": 4,
+      "ex": "Il faut installer un tuteur pour soutenir les plants de tomates.",
+      "ex_fa": "برای نگه داشتن بوته‌های گوجه‌فرنگی باید قیم نصب کرد."
+    },
+    {
+      "fr": "la serre",
+      "fa": "گلخانه",
+      "emoji": "🏡",
+      "difficulty": 3,
+      "ex": "Les semis précoces sont protégés dans la serre.",
+      "ex_fa": "کاشت‌های زودرس در گلخانه محافظت می‌شوند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le jardin oublié",
+      "title_fa": "باغ فراموش‌شده",
+      "text": "Mary, orpheline anglaise, arrive dans un grand manoir du Yorkshire. Un jour, elle découvre un jardin abandonné depuis dix ans, fermé à clé. Avec l'aide du jeune jardinier Dickon, elle décide de le faire revivre. Ils commencent par nettoyer le sol et préparent un bon {{BLANK_1}} en mélangeant la terre avec du {{BLANK_2}} fait maison. Dickon lui apprend à faire une {{BLANK_3}} pour multiplier les rosiers anciens. Ils installent un système d'{{BLANK_4}} ingénieux pour nourrir les plantes assoiffées. Pour protéger les jeunes pousses du froid, ils construisent une petite {{BLANK_5}} en verre. Quand les rosiers reprennent vie, Mary apprend l'art de la {{BLANK_6}} pour leur donner une belle forme. Au printemps, la {{BLANK_7}} des fleurs embaume le jardin. Dickon lui montre comment faire un {{BLANK_8}} pour garder l'humidité du sol. Ils plantent aussi des légumes : le {{BLANK_9}} des carottes et des radis se fait directement en pleine terre. Pour soutenir les haricots grimpants, ils installent des {{BLANK_10}} en bambou. Mary apprend aussi la {{BLANK_11}} sur un pommier sauvage pour obtenir de meilleures pommes. Un {{BLANK_12}} naturel aide les légumes à pousser plus vite. Chaque matin, le {{BLANK_13}} occupe une bonne partie de la journée pour éliminer les plantes indésirables. Enfin, l'été venu, la {{BLANK_14}} récompense tous leurs efforts. Le jardin secret est redevenu un paradis.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "terreau",
+          "options": [
+            "terreau",
+            "paillage",
+            "tuteur",
+            "serre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "compost",
+          "options": [
+            "compost",
+            "engrais",
+            "semis",
+            "greffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "bouture",
+          "options": [
+            "bouture",
+            "récolte",
+            "floraison",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "arrosage",
+          "options": [
+            "arrosage",
+            "désherbage",
+            "paillage",
+            "compost"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "serre",
+          "options": [
+            "serre",
+            "bouture",
+            "taille",
+            "greffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "taille",
+          "options": [
+            "taille",
+            "semis",
+            "arrosage",
+            "récolte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "floraison",
+          "options": [
+            "floraison",
+            "récolte",
+            "greffe",
+            "engrais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "paillage",
+          "options": [
+            "paillage",
+            "tuteur",
+            "terreau",
+            "désherbage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "semis",
+          "options": [
+            "semis",
+            "bouture",
+            "floraison",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "tuteurs",
+          "options": [
+            "tuteurs",
+            "serres",
+            "composts",
+            "engrais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "greffe",
+          "options": [
+            "greffe",
+            "arrosage",
+            "paillage",
+            "désherbage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "engrais",
+          "options": [
+            "engrais",
+            "terreau",
+            "compost",
+            "semis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "désherbage",
+          "options": [
+            "désherbage",
+            "arrosage",
+            "paillage",
+            "bouture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "récolte",
+          "options": [
+            "récolte",
+            "floraison",
+            "semis",
+            "taille"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les racines du silence",
+      "title_fa": "ریشه‌های سکوت",
+      "inspiration": "Le Jardin secret (Frances Hodgson Burnett / Agnieszka Holland, 1993)",
+      "text": "À peine Mary Lennox eut-elle poussé la vieille porte rouillée que le souffle d'un printemps oublié lui caressa le visage. Dix ans que ce jardin dormait sous son linceul de lierre et de ronces, dix ans que le maître du manoir, son oncle brisé par le deuil, en avait perdu la clé et le souvenir. Mary, petite fille aigrie venue des Indes coloniales, sentit quelque chose se dénouer en elle. Cette terre sauvage, abandonnée, l'appelait comme une mère perdue. Elle trouva d'abord un vieux rosier à moitié mort, ses branches tordues comme des doigts suppliants. Avec Dickon, le jeune domestique qui parlait aux oiseaux et aux renards, elle entreprit de le sauver. Ils préparèrent un {{BLANK_1}} riche, mélangeant la terre noire du Yorkshire avec un {{BLANK_2}} odorant qui sentait la forêt et la vie renaissante. Dickon lui montra comment prélever une {{BLANK_3}} sur le bois sain, cette technique magique qui permettait de donner naissance à un nouveau rosier identique à l'ancien. Ils installèrent un {{BLANK_4}} au pied de chaque plante, cette couverture de paille et de feuilles mortes qui protégerait les racines du gel et retiendrait l'humidité précieuse. Dans un coin abrité, ils érigèrent une petite {{BLANK_5}} de fortune avec des vitres récupérées, refuge de verre où les semis fragiles pourraient affronter l'hiver sans périr. Mary apprenait chaque jour un nouveau mot, un nouveau geste. La {{BLANK_6}} des rosiers au printemps, cet art de couper pour mieux faire renaître. Le {{BLANK_7}} des carottes et des capucines, ces graines minuscules qu'on confiait à la terre comme des prières. L'{{BLANK_8}} patient, quand la pluie refusait de tomber et que le soleil brûlait les jeunes pousses. Au fil des semaines, le jardin se transforma. Les premiers boutons apparurent, annonciateurs d'une {{BLANK_9}} qui allait submerger les murs de pierres anciennes de vagues colorées et parfumées. Dickon enseigna à Mary l'art délicat de la {{BLANK_10}} sur les pommiers sauvages, ce mariage entre deux arbres qui donnerait des fruits sucrés. Un {{BLANK_11}} naturel, concocté à base d'orties et de consoude, stimulait la croissance sans poison chimique. Pour les pois grimpants et les rosiers tiges, ils plantèrent des {{BLANK_12}} en noisetier, sentinelles silencieuses qui soutiendraient les plantes dans leur ascension vers la lumière. Chaque matin, le {{BLANK_13}} devenait une méditation, arrachant patiemment les herbes invasives qui menaçaient d'étouffer les jeunes plants. Mary, qui n'avait jamais connu que la solitude et les domestiques indifférents, découvrait par les mains la tendresse de la terre. Le jardin, lentement, la guérissait de sa colère, de son chagrin d'orpheline. Quand vint l'été, la {{BLANK_14}} fut une explosion de saveurs et de couleurs. Tomates gorgées de soleil, courgettes énormes, haricots tendres, framboises qui tachaient les lèvres de pourpre. Mary comprit alors ce que le jardin lui enseignait : que la vie renaît toujours, même après les hivers les plus longs. Que les racines, même oubliées, n'attendent qu'une main aimante pour refleurir. Et que son oncle, cet homme brisé qui pleurait sa femme disparue, finirait lui aussi par retrouver le chemin de ce jardin secret, guidé par le rire d'une enfant et le parfum d'un rosier ressuscité.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "terreau",
+          "options": [
+            "terreau",
+            "paillage",
+            "tuteur",
+            "serre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "compost",
+          "options": [
+            "compost",
+            "engrais",
+            "semis",
+            "greffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "bouture",
+          "options": [
+            "bouture",
+            "récolte",
+            "floraison",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "paillage",
+          "options": [
+            "paillage",
+            "tuteur",
+            "terreau",
+            "désherbage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "serre",
+          "options": [
+            "serre",
+            "bouture",
+            "taille",
+            "greffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "taille",
+          "options": [
+            "taille",
+            "semis",
+            "arrosage",
+            "récolte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "semis",
+          "options": [
+            "semis",
+            "bouture",
+            "floraison",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "arrosage",
+          "options": [
+            "arrosage",
+            "désherbage",
+            "paillage",
+            "compost"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "floraison",
+          "options": [
+            "floraison",
+            "récolte",
+            "greffe",
+            "engrais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "greffe",
+          "options": [
+            "greffe",
+            "arrosage",
+            "paillage",
+            "désherbage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "engrais",
+          "options": [
+            "engrais",
+            "terreau",
+            "compost",
+            "semis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "tuteurs",
+          "options": [
+            "tuteurs",
+            "serres",
+            "composts",
+            "engrais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "désherbage",
+          "options": [
+            "désherbage",
+            "arrosage",
+            "paillage",
+            "bouture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "récolte",
+          "options": [
+            "récolte",
+            "floraison",
+            "semis",
+            "taille"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Jardinage et horticulture",
+    "title_fa": "آزمون : باغبانی و باغداری",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Ce substrat riche en matière organique, spécialement préparé pour la culture en pots ou en pleine terre, est le ____.",
+        "options": [
+          "terreau",
+          "paillage",
+          "tuteur",
+          "serre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خاک غنی برای کاشت = terreau."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette technique de multiplication végétative qui consiste à faire prendre racine à un fragment de plante est la ____.",
+        "options": [
+          "bouture",
+          "récolte",
+          "floraison",
+          "taille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکثیر گیاه از طریق ریشه‌دار کردن شاخه = bouture."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce mélange de déchets organiques décomposés (épluchures, feuilles mortes) qui sert d'amendement naturel est le ____.",
+        "options": [
+          "compost",
+          "engrais",
+          "semis",
+          "greffe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کود آلی حاصل از تجزیه پسماند = compost."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette substance, naturelle ou chimique, qu'on ajoute au sol pour apporter des nutriments aux plantes est l'____.",
+        "options": [
+          "engrais",
+          "terreau",
+          "compost",
+          "semis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده مغذی برای تقویت گیاهان = engrais."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette opération horticole qui consiste à unir deux parties de plantes différentes pour qu'elles n'en forment qu'une est la ____.",
+        "options": [
+          "greffe",
+          "arrosage",
+          "paillage",
+          "désherbage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیوند زدن دو گیاه متفاوت = greffe."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique qui consiste à recouvrir le sol autour des plantes avec de la paille ou des écorces pour préserver l'humidité est le ____.",
+        "options": [
+          "paillage",
+          "tuteur",
+          "terreau",
+          "désherbage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پوشاندن خاک با کاه یا پوست درخت = paillage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'opération qui consiste à couper sélectivement certaines branches d'un arbre ou d'un arbuste pour favoriser sa croissance est la ____.",
+        "options": [
+          "taille",
+          "semis",
+          "arrosage",
+          "récolte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هرس کردن شاخه‌ها = taille."
+      },
+      {
+        "type": "mcq",
+        "question": "La période pendant laquelle les plantes produisent leurs fleurs, souvent au printemps, est la ____.",
+        "options": [
+          "floraison",
+          "récolte",
+          "greffe",
+          "engrais"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره شکوفایی و گل دادن = floraison."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de mettre des graines en terre pour qu'elles germent et donnent de nouvelles plantes est le ____.",
+        "options": [
+          "semis",
+          "bouture",
+          "floraison",
+          "taille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کاشت بذر در خاک = semis."
+      },
+      {
+        "type": "mcq",
+        "question": "L'apport d'eau aux plantes cultivées, essentiel à leur survie, s'appelle l'____.",
+        "options": [
+          "arrosage",
+          "désherbage",
+          "paillage",
+          "compost"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آبیاری گیاهان = arrosage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'élimination des plantes indésirables qui concurrencent les cultures s'appelle le ____.",
+        "options": [
+          "désherbage",
+          "arrosage",
+          "paillage",
+          "bouture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حذف علف‌های هرز = désherbage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le moment où l'on cueille les fruits, légumes ou céréales arrivés à maturité est la ____.",
+        "options": [
+          "récolte",
+          "floraison",
+          "semis",
+          "taille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برداشت محصولات رسیده = récolte."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce support en bois ou en bambou qu'on plante en terre pour soutenir les plantes grimpantes ou fragiles est un ____.",
+        "options": [
+          "tuteur",
+          "serre",
+          "compost",
+          "engrais"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پایه نگهدارنده گیاه = tuteur."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette structure vitrée qui permet de cultiver des plantes à l'abri du froid et des intempéries est une ____.",
+        "options": [
+          "serre",
+          "bouture",
+          "taille",
+          "greffe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ساختمان شیشه‌ای برای کشت = serre."
+      },
+      {
+        "type": "binary",
+        "question": "La bouture et le semis sont deux méthodes identiques de multiplication des plantes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. bouture تکثیر از طریق شاخه است، semis از طریق بذر."
+      },
+      {
+        "type": "binary",
+        "question": "Le compost est obtenu par la décomposition naturelle de matières organiques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. compost حاصل تجزیه طبیعی پسماندهای آلی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le paillage permet à la fois de limiter l'évaporation de l'eau et de réduire la pousse des mauvaises herbes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. مالچ‌پاشی هم رطوبت را حفظ می‌کند و هم علف هرز را کم."
+      },
+      {
+        "type": "binary",
+        "question": "La taille d'un rosier consiste à couper toutes ses branches jusqu'au sol pour le faire mourir.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. هرس برای تقویت رشد و شکل‌دهی است، نه کشتن گیاه."
+      },
+      {
+        "type": "binary",
+        "question": "Une serre permet de cultiver des plantes en toute saison en contrôlant la température et l'humidité.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. گلخانه امکان کشت در تمام فصول را می‌دهد."
+      }
+    ]
+  }
+}
