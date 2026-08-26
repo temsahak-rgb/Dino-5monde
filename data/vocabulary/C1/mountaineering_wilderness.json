@@ -1,0 +1,680 @@
+{
+  "id": "mountaineering_wilderness",
+  "level": "C1",
+  "theme": "Alpinisme, montagne et survie en milieu extrême",
+  "theme_fa": "کوهنوردی، کوهستان و بقا در محیط‌های سخت",
+  "icon": "🏔️",
+  "inspiration": "Everest (Baltasar Kormákur, 2015)",
+  "words": [
+    {
+      "fr": "l'alpinisme",
+      "fa": "کوهنوردی",
+      "emoji": "🏔️",
+      "difficulty": 4,
+      "ex": "L'alpinisme exige une préparation physique et mentale rigoureuse.",
+      "ex_fa": "کوهنوردی به آمادگی جسمانی و ذهنی دقیق نیاز دارد."
+    },
+    {
+      "fr": "le sommet",
+      "fa": "قله",
+      "emoji": "⛰️",
+      "difficulty": 3,
+      "ex": "Le sommet de l'Everest culmine à 8 848 mètres d'altitude.",
+      "ex_fa": "قله اورست در ارتفاع ۸۸۴۸ متری قرار دارد."
+    },
+    {
+      "fr": "le camp de base",
+      "fa": "کمپ پایه",
+      "emoji": "⛺",
+      "difficulty": 4,
+      "ex": "Le camp de base sert de point de départ pour les ascensions.",
+      "ex_fa": "کمپ پایه نقطه شروع صعودهاست."
+    },
+    {
+      "fr": "le sherpa",
+      "fa": "شرپا (راهنمای نپالی)",
+      "emoji": "🧗",
+      "difficulty": 4,
+      "ex": "Les sherpas connaissent chaque recoin de la montagne.",
+      "ex_fa": "شرپاها هر گوشه کوه را می‌شناسند."
+    },
+    {
+      "fr": "l'acclimatation",
+      "fa": "سازگاری با ارتفاع",
+      "emoji": "🫁",
+      "difficulty": 5,
+      "ex": "L'acclimatation à l'altitude prend plusieurs semaines.",
+      "ex_fa": "سازگاری با ارتفاع چندین هفته طول می‌کشد."
+    },
+    {
+      "fr": "le mal aigu des montagnes",
+      "fa": "بیماری حاد کوهستان",
+      "emoji": "🤢",
+      "difficulty": 5,
+      "ex": "Le mal aigu des montagnes peut être mortel s'il n'est pas traité.",
+      "ex_fa": "بیماری حاد کوهستان اگر درمان نشود می‌تواند کشنده باشد."
+    },
+    {
+      "fr": "le crampon",
+      "fa": "یخ‌شکن (کرامپون)",
+      "emoji": "⛏️",
+      "difficulty": 4,
+      "ex": "Les crampons permettent de marcher sur la glace vive.",
+      "ex_fa": "یخ‌شکن‌ها امکان راه رفتن روی یخ زنده را می‌دهند."
+    },
+    {
+      "fr": "le piolet",
+      "fa": "کلنگ یخ",
+      "emoji": "⛏️",
+      "difficulty": 4,
+      "ex": "Le piolet sert à tailler des marches dans la glace.",
+      "ex_fa": "کلنگ یخ برای تراشیدن پله در یخ استفاده می‌شود."
+    },
+    {
+      "fr": "la cordée",
+      "fa": "گروه طناب‌بسته",
+      "emoji": "🪢",
+      "difficulty": 5,
+      "ex": "La cordée de trois alpinistes progresse lentement sur l'arête.",
+      "ex_fa": "گروه سه‌نفره طناب‌بسته به آرامی روی یال پیش می‌رود."
+    },
+    {
+      "fr": "le bivouac",
+      "fa": "شب‌مانی در کوه (بیواک)",
+      "emoji": "🏕️",
+      "difficulty": 5,
+      "ex": "Un bivouac improvisé dans la tempête peut sauver des vies.",
+      "ex_fa": "بیواک اضطراری در طوفان می‌تواند جان‌ها را نجات دهد."
+    },
+    {
+      "fr": "l'avalanche",
+      "fa": "بهمن",
+      "emoji": "❄️",
+      "difficulty": 4,
+      "ex": "L'avalanche a emporté tout sur son passage.",
+      "ex_fa": "بهمن همه چیز را در مسیرش برد."
+    },
+    {
+      "fr": "la crevasse",
+      "fa": "شکاف یخی",
+      "emoji": "🕳️",
+      "difficulty": 4,
+      "ex": "Une crevasse cachée sous la neige peut être mortelle.",
+      "ex_fa": "شکاف پنهان زیر برف می‌تواند مرگبار باشد."
+    },
+    {
+      "fr": "l'oxygène",
+      "fa": "اکسیژن",
+      "emoji": "🫁",
+      "difficulty": 3,
+      "ex": "Au-dessus de 8 000 mètres, l'oxygène supplémentaire est vital.",
+      "ex_fa": "بالای ۸۰۰۰ متر، اکسیژن اضافی حیاتی است."
+    },
+    {
+      "fr": "l'expédition",
+      "fa": "اکتشاف، سفر کاوشگرانه",
+      "emoji": "🗺️",
+      "difficulty": 4,
+      "ex": "L'expédition a duré deux mois dans l'Himalaya.",
+      "ex_fa": "اکتشاف دو ماه در هیمالیا طول کشید."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La tragédie de l'Everest",
+      "text": "Rob Hall dirige une {{BLANK_14}} commerciale sur l'Everest. Son équipe comprend des alpinistes expérimentés et des clients riches. Ils arrivent au {{BLANK_3}} à 5 300 mètres pour commencer l'{{BLANK_5}}. Les {{BLANK_4}}s népalais préparent le matériel et fixent les cordes. Après plusieurs semaines, l'équipe est prête pour l'assaut final. Ils portent des bouteilles d'{{BLANK_13}} pour respirer au-dessus de 8 000 mètres. Le jour J, ils attachent leurs {{BLANK_7}}s et saisissent leurs {{BLANK_8}}s. La {{BLANK_9}} progresse lentement sur l'arête exposée. Soudain, une {{BLANK_11}} se déclenche plus haut, ensevelissant un camp. Une {{BLANK_12}} profonde s'ouvre sous leurs pieds, mais les cordes les retiennent. Un alpiniste souffre du {{BLANK_6}} et doit redescendre immédiatement. Ils établissent un {{BLANK_10}} d'urgence dans la tempête. Rob atteint le {{BLANK_2}} mais la descente devient un cauchemar. L'{{BLANK_1}} en haute altitude exige des décisions impossibles. Certains ne reviendront jamais.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "alpinisme",
+          "options": [
+            "alpinisme",
+            "sommet",
+            "camp de base",
+            "sherpa"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "sommet",
+          "options": [
+            "sommet",
+            "acclimatation",
+            "mal aigu des montagnes",
+            "crampon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "camp de base",
+          "options": [
+            "camp de base",
+            "piolet",
+            "cordée",
+            "bivouac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "sherpas",
+          "options": [
+            "sherpas",
+            "avalanche",
+            "crevasse",
+            "oxygène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "acclimatation",
+          "options": [
+            "acclimatation",
+            "expédition",
+            "alpinisme",
+            "sommet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "mal aigu des montagnes",
+          "options": [
+            "mal aigu des montagnes",
+            "camp de base",
+            "sherpa",
+            "crampon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "crampons",
+          "options": [
+            "crampons",
+            "piolet",
+            "cordée",
+            "bivouac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "piolets",
+          "options": [
+            "piolets",
+            "avalanche",
+            "crevasse",
+            "oxygène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cordée",
+          "options": [
+            "cordée",
+            "expédition",
+            "alpinisme",
+            "sommet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "bivouac",
+          "options": [
+            "bivouac",
+            "camp de base",
+            "sherpa",
+            "acclimatation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "avalanche",
+          "options": [
+            "avalanche",
+            "mal aigu des montagnes",
+            "crampon",
+            "piolet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "crevasse",
+          "options": [
+            "crevasse",
+            "cordée",
+            "bivouac",
+            "expédition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "oxygène",
+          "options": [
+            "oxygène",
+            "alpinisme",
+            "sommet",
+            "camp de base"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "expédition",
+          "options": [
+            "expédition",
+            "sherpa",
+            "acclimatation",
+            "mal aigu des montagnes"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La zone de la mort",
+      "inspiration": "Everest (Baltasar Kormákur, 2015)",
+      "text": "À peine Rob eut-il posé le pied sur la glace traîtresse du Khumbu qu'il sentit l'appel irrésistible du {{BLANK_2}}, ce point culminant où l'air se raréfie jusqu'à devenir poison. Cet {{BLANK_1}} chevronné, qui avait guidé des dizaines de clients vers les plus hauts sommets du monde, savait que l'Everest ne pardonnait aucune erreur. Au {{BLANK_3}}, l'atmosphère était électrique : des hommes et des femmes du monde entier, unis par le même rêve fou, attendaient leur tour. Les {{BLANK_4}}s, ces gardiens silencieux de la montagne, portaient des charges impossibles, traçant la voie dans la glace avec une patience ancestrale. L'{{BLANK_5}} prenait des semaines, chaque montée suivie d'une redescente pour habituer le corps à l'air raréfié. Certains souffraient du {{BLANK_6}}, ce mal insidieux qui gonfle le cerveau et les poumons jusqu'à la mort. Le jour de l'assaut final, ils fixèrent leurs {{BLANK_7}}s sous leurs bottes, saisirent leurs {{BLANK_8}}s comme des armes, et formèrent une {{BLANK_9}} fragile qui serpentait sur l'arête vertigineuse. Soudain, un grondement sourd : une {{BLANK_11}} dévalait les pentes plus haut, rappel brutal de la puissance de la montagne. Une {{BLANK_12}} s'ouvrit sous leurs pieds, gorge noire et sans fond, mais les cordes les retinrent in extremis. Ils durent établir un {{BLANK_10}} improvisé dans la tempête, recroquevillés dans leurs tentes qui claquaient comme des drapeaux en berne. Rob atteignit enfin le {{BLANK_2}}, ce toit du monde où l'{{BLANK_13}} se fait denrée rare, où chaque inspiration est une victoire. Mais la descente, cette partie que les alpinistes redoutent plus que la montée, devint un cauchemar blanc. Dans cette zone de la mort au-dessus de 8 000 mètres, l'{{BLANK_1}} révèle sa vraie nature : non pas une conquête, mais une reddition, un pacte avec les forces primitives qui peuvent vous briser d'un souffle. Certains ne reviendraient jamais, figés pour l'éternité dans leur marche vers l'inaccessible.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "alpinisme",
+          "options": [
+            "alpinisme",
+            "sommet",
+            "camp de base",
+            "sherpa"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "sommet",
+          "options": [
+            "sommet",
+            "acclimatation",
+            "mal aigu des montagnes",
+            "crampon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "camp de base",
+          "options": [
+            "camp de base",
+            "piolet",
+            "cordée",
+            "bivouac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "sherpas",
+          "options": [
+            "sherpas",
+            "avalanche",
+            "crevasse",
+            "oxygène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "acclimatation",
+          "options": [
+            "acclimatation",
+            "expédition",
+            "alpinisme",
+            "sommet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "mal aigu des montagnes",
+          "options": [
+            "mal aigu des montagnes",
+            "camp de base",
+            "sherpa",
+            "crampon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "crampons",
+          "options": [
+            "crampons",
+            "piolet",
+            "cordée",
+            "bivouac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "piolets",
+          "options": [
+            "piolets",
+            "avalanche",
+            "crevasse",
+            "oxygène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cordée",
+          "options": [
+            "cordée",
+            "expédition",
+            "alpinisme",
+            "sommet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "bivouac",
+          "options": [
+            "bivouac",
+            "camp de base",
+            "sherpa",
+            "acclimatation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "avalanche",
+          "options": [
+            "avalanche",
+            "mal aigu des montagnes",
+            "crampon",
+            "piolet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "crevasse",
+          "options": [
+            "crevasse",
+            "cordée",
+            "bivouac",
+            "expédition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "oxygène",
+          "options": [
+            "oxygène",
+            "alpinisme",
+            "sommet",
+            "camp de base"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "expédition",
+          "options": [
+            "expédition",
+            "sherpa",
+            "acclimatation",
+            "mal aigu des montagnes"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Alpinisme et montagne",
+    "title_fa": "آزمون : کوهنوردی و کوهستان",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le sport qui consiste à gravir des montagnes, souvent en haute altitude, est l'____.",
+        "options": [
+          "alpinisme",
+          "sommet",
+          "camp de base",
+          "sherpa"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزش صعود به کوه‌ها = alpinisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le point le plus élevé d'une montagne, l'objectif ultime de l'alpiniste, est le ____.",
+        "options": [
+          "sommet",
+          "acclimatation",
+          "mal aigu des montagnes",
+          "crampon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بالاترین نقطه کوه = sommet."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu où les alpinistes s'installent au pied de la montagne pour préparer leur ascension est le ____.",
+        "options": [
+          "camp de base",
+          "piolet",
+          "cordée",
+          "bivouac"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محل استقرار در پای کوه = camp de base."
+      },
+      {
+        "type": "mcq",
+        "question": "Le guide de montagne népalais, expert de l'Himalaya, est le ____.",
+        "options": [
+          "sherpa",
+          "avalanche",
+          "crevasse",
+          "oxygène"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "راهنمای نپالی کوهستان = sherpa."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus par lequel le corps s'adapte progressivement à la diminution de l'oxygène en altitude est l'____.",
+        "options": [
+          "acclimatation",
+          "expédition",
+          "alpinisme",
+          "sommet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازگاری بدن با ارتفاع = acclimatation."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des symptômes (maux de tête, nausées, essoufflement) causés par la montée trop rapide en altitude est le ____.",
+        "options": [
+          "mal aigu des montagnes",
+          "camp de base",
+          "sherpa",
+          "crampon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بیماری ناشی از ارتفاع = mal aigu des montagnes."
+      },
+      {
+        "type": "mcq",
+        "question": "L'équipement métallique à pointes qui se fixe sous les chaussures pour marcher sur la glace est le ____.",
+        "options": [
+          "crampon",
+          "piolet",
+          "cordée",
+          "bivouac"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تجهیزات فلزی برای یخ = crampon."
+      },
+      {
+        "type": "mcq",
+        "question": "L'outil en forme de piolets utilisé pour tailler des marches dans la glace et assurer sa progression est le ____.",
+        "options": [
+          "piolet",
+          "avalanche",
+          "crevasse",
+          "oxygène"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار تراش یخ = piolet."
+      },
+      {
+        "type": "mcq",
+        "question": "Le groupe d'alpinistes reliés par une même corde pour des raisons de sécurité est la ____.",
+        "options": [
+          "cordée",
+          "expédition",
+          "alpinisme",
+          "sommet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گروه طناب‌بسته کوهنوردان = cordée."
+      },
+      {
+        "type": "mcq",
+        "question": "Le campement temporaire et sommaire installé en haute montagne pour passer la nuit est le ____.",
+        "options": [
+          "bivouac",
+          "camp de base",
+          "sherpa",
+          "acclimatation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شب‌مانی موقت در کوه = bivouac."
+      },
+      {
+        "type": "mcq",
+        "question": "La masse de neige et de glace qui dévale une pente montagneuse à grande vitesse est l'____.",
+        "options": [
+          "avalanche",
+          "mal aigu des montagnes",
+          "crampon",
+          "piolet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ریزش بهمن = avalanche."
+      },
+      {
+        "type": "mcq",
+        "question": "La fissure profonde dans un glacier, souvent masquée par la neige, est la ____.",
+        "options": [
+          "crevasse",
+          "cordée",
+          "bivouac",
+          "expédition"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شکاف عمیق در یخچال = crevasse."
+      },
+      {
+        "type": "mcq",
+        "question": "Le gaz vital qui se raréfie en altitude et nécessite souvent des bouteilles supplémentaires au-dessus de 8 000 mètres est l'____.",
+        "options": [
+          "oxygène",
+          "alpinisme",
+          "sommet",
+          "camp de base"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گاز حیاتی در ارتفاع = oxygène."
+      },
+      {
+        "type": "mcq",
+        "question": "Le voyage organisé dans le but d'explorer ou de gravir des montagnes lointaines est l'____.",
+        "options": [
+          "expédition",
+          "sherpa",
+          "acclimatation",
+          "mal aigu des montagnes"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سفر کاوشگرانه به کوهستان = expédition."
+      },
+      {
+        "type": "binary",
+        "question": "L'acclimatation est un processus immédiat qui se produit en quelques heures après l'arrivée en altitude.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. سازگاری با ارتفاع فرآیندی تدریجی است که هفته‌ها طول می‌کشد."
+      },
+      {
+        "type": "binary",
+        "question": "Le mal aigu des montagnes peut évoluer vers des formes graves comme l'œdème pulmonaire ou cérébral.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بیماری حاد کوهستان می‌تواند به اِدِم ریوی یا مغزی تبدیل شود."
+      },
+      {
+        "type": "binary",
+        "question": "Les sherpas sont une ethnie népalaise réputée pour leur expertise en alpinisme et leur connaissance de l'Himalaya.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. شرپاها قوم نپالی با تخصص در کوهنوردی هیمالیا هستند."
+      },
+      {
+        "type": "binary",
+        "question": "Un bivouac est un hôtel de luxe situé au pied des montagnes pour les alpinistes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. بیواک کمپ موقت و ابتدایی در ارتفاعات است، نه هتل."
+      },
+      {
+        "type": "binary",
+        "question": "La crevasse est une fissure dans le rocher qui permet aux alpinistes de progresser plus facilement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. شکاف یخی (crevasse) خطرناک است و می‌تواند مرگبار باشد."
+      },
+      {
+        "type": "binary",
+        "question": "Au-dessus de 8 000 mètres, on parle de « zone de la mort » car le corps humain ne peut pas s'acclimater complètement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بالای ۸۰۰۰ متر بدن نمی‌تواند کاملاً سازگار شود و به منطقه مرگ معروف است."
+      }
+    ]
+  }
+}
