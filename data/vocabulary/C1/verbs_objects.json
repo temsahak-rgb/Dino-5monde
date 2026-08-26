@@ -1,0 +1,526 @@
+{
+  "id": "verbs_objects",
+  "level": "C1",
+  "theme": "Verbes, objets et divers",
+  "theme_fa": "افعال، اشیاء و متفرقه",
+  "icon": "🔄",
+  "inspiration": "Le Fabuleux Destin d'Amélie Poulain (Jean-Pierre Jeunet, 2001)",
+  "words": [
+    {
+      "fr": "le brouhaha",
+      "fa": "هیاهو، همهمه",
+      "emoji": "🔊",
+      "difficulty": 4,
+      "ex": "Le brouhaha de la gare rendait toute conversation impossible.",
+      "ex_fa": "هیاهوی ایستگاه قطار هرگونه گفتگویی را غیرممکن می‌کرد."
+    },
+    {
+      "fr": "le fatras",
+      "fa": "انبوهی از چیزهای بی‌ارزش و نامرتب",
+      "emoji": "🗑️",
+      "difficulty": 5,
+      "ex": "Il a dû trier le fatras accumulé dans le grenier depuis des années.",
+      "ex_fa": "او مجبور شد انبوهی از وسایل بی‌ارزش انباشته‌شده در اتاق زیرشیروانی را مرتب کند."
+    },
+    {
+      "fr": "le capharnaüm",
+      "fa": "اتاق یا جای بسیار نامرتب و شلوغ",
+      "emoji": "🏚️",
+      "difficulty": 4,
+      "ex": "La chambre de l'adolescent était un véritable capharnaüm.",
+      "ex_fa": "اتاق نوجوان یک کابوس واقعی از بی‌نظمی بود."
+    },
+    {
+      "fr": "le tintamarre",
+      "fa": "سروصدای کرکننده و آزاردهنده",
+      "emoji": "🥁",
+      "difficulty": 5,
+      "ex": "Le tintamarre des casseroles dans la cuisine nous a réveillés.",
+      "ex_fa": "سروصدای کرکننده قابلمه‌ها در آشپزخانه ما را بیدار کرد."
+    },
+    {
+      "fr": "le bric-à-brac",
+      "fa": "خرت و پرت، وسایل متفرقه و قدیمی",
+      "emoji": "🏺",
+      "difficulty": 4,
+      "ex": "Le brocanteur vendait un bric-à-brac fascinant sur le trottoir.",
+      "ex_fa": "دست‌فروش، خرت‌وپرت‌های جذابی را روی پیاده‌رو می‌فروخت."
+    },
+    {
+      "fr": "s'empêtrer",
+      "fa": "گرفتار شدن، دست و پاگیر شدن (در مشکلات یا دروغ)",
+      "emoji": "🕸️",
+      "difficulty": 5,
+      "ex": "Plus il essayait de justifier son retard, plus il s'empêtrait dans ses mensonges.",
+      "ex_fa": "هرچه بیشتر سعی می‌کرد تاخیرش را توجیه کند، بیشتر در دروغ‌هایش گرفتار می‌شد."
+    },
+    {
+      "fr": "s'échiner",
+      "fa": "تلاش سخت و بیهوده کردن، خود را به زحمت انداختن",
+      "emoji": "💦",
+      "difficulty": 5,
+      "ex": "Il s'échine à réparer cette vieille montre sans aucun succès.",
+      "ex_fa": "او بیهوده خود را به زحمت می‌اندازد تا این ساعت قدیمی را تعمیر کند."
+    },
+    {
+      "fr": "s'esquiver",
+      "fa": "یواشکی فرار کردن، طفره رفتن",
+      "emoji": "🏃",
+      "difficulty": 4,
+      "ex": "Dès que les invités arrivèrent, le chat s'esquiva sous le lit.",
+      "ex_fa": "به محض رسیدن مهمان‌ها، گربه یواشکی به زیر تخت فرار کرد."
+    },
+    {
+      "fr": "s'émanciper",
+      "fa": "رهایی یافتن، مستقل شدن (از قید و بند)",
+      "emoji": "🕊️",
+      "difficulty": 4,
+      "ex": "L'adolescente cherchait à s'émanciper de l'autorité parentale.",
+      "ex_fa": "نوجوان به دنبال رهایی از اقتدار والدین و استقلال بود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le déménagement",
+      "title_fa": "اسباب‌کشی",
+      "text": "Aujourd'hui, Marc déménage. Son ancien appartement est un vrai {{BLANK_1}} : des livres partout, des vêtements sur les chaises. Il doit emballer tout ce {{BLANK_2}} de souvenirs inutiles. Dehors, on entend le {{BLANK_3}} de la rue et le {{BLANK_4}} des travaux du voisin. C'est épuisant. Dans les cartons, il jette un vieux {{BLANK_5}} d'objets cassés qu'il gardait sans raison. Parfois, il {{BLANK_6}} dans les fils électriques en déplaçant les meubles. Il {{BLANK_7}} à tout nettoyer avant la nuit, mais le temps passe trop vite. Quand le propriétaire arrive pour l'état des lieux, Marc essaie de {{BLANK_8}} pour éviter les critiques sur les murs tachés. Finalement, il signe les papiers. En fermant la porte, il a l'impression de {{BLANK_9}} enfin de ce lieu trop petit pour lui. Il est libre.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "capharnaüm",
+          "options": [
+            "capharnaüm",
+            "brouhaha",
+            "tintamarre",
+            "bric-à-brac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fatras",
+          "options": [
+            "fatras",
+            "capharnaüm",
+            "brouhaha",
+            "tintamarre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "brouhaha",
+          "options": [
+            "brouhaha",
+            "fatras",
+            "bric-à-brac",
+            "capharnaüm"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tintamarre",
+          "options": [
+            "tintamarre",
+            "brouhaha",
+            "fatras",
+            "bric-à-brac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "bric-à-brac",
+          "options": [
+            "bric-à-brac",
+            "capharnaüm",
+            "tintamarre",
+            "fatras"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "s'empêtre",
+          "options": [
+            "s'empêtre",
+            "s'échine",
+            "s'esquive",
+            "s'émancipe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "s'échine",
+          "options": [
+            "s'échine",
+            "s'empêtre",
+            "s'esquive",
+            "s'émancipe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "s'esquiver",
+          "options": [
+            "s'esquiver",
+            "s'émanciper",
+            "s'échiner",
+            "s'empêtrer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "s'émanciper",
+          "options": [
+            "s'émanciper",
+            "s'esquiver",
+            "s'échiner",
+            "s'empêtrer"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le marché aux puces de Saint-Ouen",
+      "title_fa": "بازار کک‌های سنت-اوئن",
+      "inspiration": "Le Fabuleux Destin d'Amélie Poulain (Jean-Pierre Jeunet, 2001)",
+      "text": "À peine Amélie eut-elle franchi les grilles rouillées du marché aux puces qu'un {{BLANK_1}} indescriptible l'enveloppa. C'était un dimanche matin, et les chineurs du monde entier se pressaient dans les allées étroites, marchandant avec une ardeur qui tenait de la survie. Amélie, elle, ne cherchait rien de précis. Elle aimait se perdre dans ce {{BLANK_2}} monumental, véritable musée à ciel ouvert de l'obsolescence humaine. Sous une bâche déchirée, un vieil homme aux doigts tachés de nicotine défendait son territoire, un {{BLANK_3}} invraisemblable de poupées de porcelaine éborgnées et de réveils sans aiguilles. « Approchez, mademoiselle ! » criait-il pour couvrir le {{BLANK_4}} des camelots voisins. Plus loin, un accordéoniste égrenait une valse musette, mais sa mélodie était noyée sous le {{BLANK_5}} métallique d'un ferrailleur qui broyait des carcasses de vélos. Amélie s'arrêta devant une malle en cuir éventrée. À l'intérieur, un {{BLANK_6}} de lettres d'amour jaunies et de photographies oubliées attendait qu'on s'y intéresse. Elle y plongea la main, mais son bras {{BLANK_7}} dans un enchevêtrement de rubans et de dentelles pourries. Elle tira, non sans peine, et extirpa un petit carnet à couverture rouge. Tandis qu'elle le feuilletait, un antiquaire bedonnant s'approcha, tentant de lui vanter les mérites d'une lampe Art déco. Amélie, n'ayant nulle envie d'acheter, prétexta un rendez-vous urgent pour {{BLANK_8}} dans la foule compacte. Elle marchait vite, serrant le carnet contre son cœur. Dans ce monde où les objets passaient de main en main sans jamais trouver de repos, elle avait l'impression, en sauvant ces pages de l'oubli, de {{BLANK_9}} un fragment d'âme prisonnier de la matière. Le soleil perçait enfin les nuages, éclairant les toitures de zinc, et Amélie sourit, certaine que ce dimanche, comme tous les autres, cacherait son lot de petits miracles.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "brouhaha",
+          "options": [
+            "brouhaha",
+            "capharnaüm",
+            "tintamarre",
+            "fatras"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "capharnaüm",
+          "options": [
+            "capharnaüm",
+            "bric-à-brac",
+            "brouhaha",
+            "tintamarre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "bric-à-brac",
+          "options": [
+            "bric-à-brac",
+            "fatras",
+            "capharnaüm",
+            "brouhaha"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tintamarre",
+          "options": [
+            "tintamarre",
+            "brouhaha",
+            "fatras",
+            "bric-à-brac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "brouhaha",
+          "options": [
+            "brouhaha",
+            "tintamarre",
+            "capharnaüm",
+            "fatras"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "fatras",
+          "options": [
+            "fatras",
+            "bric-à-brac",
+            "tintamarre",
+            "capharnaüm"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "s'empêtra",
+          "options": [
+            "s'empêtra",
+            "s'échina",
+            "s'esquiva",
+            "s'émancipa"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "s'esquiver",
+          "options": [
+            "s'esquiver",
+            "s'émanciper",
+            "s'échiner",
+            "s'empêtrer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "s'émanciper",
+          "options": [
+            "s'émanciper",
+            "s'esquiver",
+            "s'échiner",
+            "s'empêtrer"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Objets, désordre et mouvements",
+    "title_fa": "آزمون : اشیاء، بی‌نظمی و حرکات",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Dans la cour de récréation, les enfants crient et courent dans tous les sens, créant un ____ indescriptible.",
+        "options": [
+          "brouhaha",
+          "fatras",
+          "capharnaüm",
+          "bric-à-brac"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "همهمه و صدای مبهم جمعیت = brouhaha."
+      },
+      {
+        "type": "mcq",
+        "question": "Sur le bureau de cet écrivain s'accumulent des papiers, des tasses sales et des livres ouverts. C'est un ____ innommable.",
+        "options": [
+          "fatras",
+          "brouhaha",
+          "tintamarre",
+          "bric-à-brac"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انبوهی نامرتب از چیزهای بی‌ارزش یا کاغذها = fatras."
+      },
+      {
+        "type": "mcq",
+        "question": "La chambre d'étudiant est remplie de vêtements par terre, de vaisselle sale et de cartons non ouverts. C'est un vrai ____.",
+        "options": [
+          "capharnaüm",
+          "tintamarre",
+          "brouhaha",
+          "fatras"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکان بسیار نامرتب و شلوغ = capharnaüm."
+      },
+      {
+        "type": "mcq",
+        "question": "Les voisins du dessus ont organisé une fête avec de la musique très forte et des casseroles. Quel ____ insupportable !",
+        "options": [
+          "tintamarre",
+          "brouhaha",
+          "capharnaüm",
+          "bric-à-brac"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سروصدای کرکننده، بلند و آزاردهنده = tintamarre."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans cette boutique d'antiquités, on trouve pêle-mêle des vieilles horloges, des assiettes peintes et des statuettes. C'est un ____ charmant.",
+        "options": [
+          "bric-à-brac",
+          "capharnaüm",
+          "fatras",
+          "tintamarre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه‌ای از اشیاء متفرقه، قدیمی و خرت‌وپرت = bric-à-brac."
+      },
+      {
+        "type": "mcq",
+        "question": "Le politicien a menti à la presse, puis a menti à nouveau pour couvrir son premier mensonge. Il ____ dans ses propres contradictions.",
+        "options": [
+          "s'empêtre",
+          "s'échine",
+          "s'esquive",
+          "s'émancipe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گرفتار شدن در مشکل یا دروغ (مثل گیر کردن در تار) = s'empêtrer."
+      },
+      {
+        "type": "mcq",
+        "question": "Depuis des heures, le mécanicien ____ à réparer ce vieux moteur qui refuse obstinément de démarrer.",
+        "options": [
+          "s'échine",
+          "s'empêtre",
+          "s'esquive",
+          "s'émancipe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تلاش سخت، طاقت‌فرسا و اغلب بیهوده کردن = s'échiner."
+      },
+      {
+        "type": "mcq",
+        "question": "Dès que le patron a commencé à parler des heures supplémentaires non payées, le manager a trouvé une excuse pour ____ de la réunion.",
+        "options": [
+          "s'esquiver",
+          "s'émanciper",
+          "s'échiner",
+          "s'empêtrer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یواشکی و با زرنگی فرار کردن یا طفره رفتن = s'esquiver."
+      },
+      {
+        "type": "mcq",
+        "question": "À dix-huit ans, elle a quitté la maison familiale et trouvé un travail pour ____ financièrement et moralement.",
+        "options": [
+          "s'émanciper",
+          "s'esquiver",
+          "s'échiner",
+          "s'empêtrer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آزاد شدن از قید و بند و مستقل شدن = s'émanciper."
+      },
+      {
+        "type": "mcq",
+        "question": "Le soir du réveillon, on entendait au loin le ____ des klaxons et des cris de joie dans les rues de la capitale.",
+        "options": [
+          "brouhaha",
+          "fatras",
+          "capharnaüm",
+          "bric-à-brac"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صدای مبهم و همهمه جمعیت یا خیابان = brouhaha."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour retrouver ses clés dans ce ____ de papiers administratifs et de factures, il lui faudra des heures.",
+        "options": [
+          "fatras",
+          "tintamarre",
+          "brouhaha",
+          "capharnaüm"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انبوهی نامرتب از کاغذها یا اشیاء = fatras."
+      },
+      {
+        "type": "binary",
+        "question": "Le mot 'capharnaüm' désigne exclusivement un lieu de culte ancien.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. capharnaüm در زبان فرانسه به معنای اتاق یا مکان بسیار نامرتب و شلوغ است."
+      },
+      {
+        "type": "binary",
+        "question": "Le 'tintamarre' implique un bruit très fort, souvent métallique ou perçant, qui dérange.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، tintamarre به سروصدای کرکننده و آزاردهنده اشاره دارد."
+      },
+      {
+        "type": "binary",
+        "question": "S'échiner signifie se reposer profondément après un long effort.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. s'échiner یعنی خود را به زحمت انداختن و تلاش سخت (و اغلب بیهوده) کردن."
+      },
+      {
+        "type": "binary",
+        "question": "S'émanciper peut s'utiliser pour une personne qui se libère d'une tutelle juridique ou sociale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، s'émanciper به معنای رهایی از قید و بند و کسب استقلال است."
+      },
+      {
+        "type": "binary",
+        "question": "Un 'bric-à-brac' désigne une collection d'objets de très grande valeur financière.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. bric-à-brac به اشیاء متفرقه، قدیمی و خرت‌وپرت (معمولاً کم‌ارزش) گفته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "S'empêtrer s'utilise souvent au sens figuré pour quelqu'un qui s'enfonce dans une situation compliquée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، s'empêtrer یعنی گرفتار شدن (مثل گیر کردن در تار عنکبوت یا دروغ‌های خود)."
+      },
+      {
+        "type": "binary",
+        "question": "Le 'brouhaha' est un silence de mort qui règne dans une bibliothèque.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. brouhaha دقیقاً برعکس است و به معنای همهمه و شلوغی صوتی است."
+      },
+      {
+        "type": "binary",
+        "question": "S'esquiver implique de partir discrètement, sans se faire remarquer, pour éviter une situation.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، s'esquiver به معنای یواشکی فرار کردن یا طفره رفتن است."
+      },
+      {
+        "type": "binary",
+        "question": "Le 'fatras' et le 'bric-à-brac' sont des synonymes parfaits et interchangeables dans tous les contextes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. fatras بیشتر برای انبوهی از کاغذها یا چیزهای بی‌ارزش و کثیف است، اما bric-à-brac برای اشیاء قدیمی و خرت‌وپرت (گاهی با ارزش نوستالژیک) استفاده می‌شود."
+      }
+    ]
+  }
+}
