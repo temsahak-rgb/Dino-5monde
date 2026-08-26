@@ -1,7 +1,6 @@
-
-
+این فایل هست :
 // ===============================
-// صفحات مسیرها (paths.js) - نسخه اصلی
+// صفحات مسیرها (paths.js)
 // ===============================
 async function showDailyHome() {
     const lang = localStorage.getItem("language") || "fr";
@@ -25,6 +24,9 @@ async function showTravelHome() {
     app.innerHTML = html;
 }
 
+// ===============================
+// درس‌های روزمره و سفر
+// ===============================
 async function showDailyLesson(lessonId) {
     app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">⏳ ...</p></div>`;
     const lessonData = await loadSpecificLesson("daily", lessonId);
@@ -36,13 +38,15 @@ async function showDailyLesson(lessonId) {
 }
 
 async function showTravelLesson(lessonId) {
-    // هدایت مستقیم به موتور اختصاصی travel.js
-    if (typeof renderTravelLessonPage === 'function') {
-        await renderTravelLessonPage(lessonId);
-    } else {
-        app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p>⚠️ travel.js بارگذاری نشده است.</p></div>`;
+    app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">⏳ ...</p></div>`;
+    const lessonData = await loadSpecificLesson("travel", lessonId);
+    if (!lessonData) { 
+        app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">🚧 به زودی</p><button onclick="showHome()" style="margin-top:15px;padding:10px 20px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;">بازگشت</button></div>`; 
+        return; 
     }
+    showLessonContent(lessonId, lessonData.miniLessons[0]);
 }
+
 // ===============================
 // موتور تمرین (مشترک بین گرامر، سفر و روزمره)
 // ===============================
