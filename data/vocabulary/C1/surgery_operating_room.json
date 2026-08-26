@@ -1,0 +1,680 @@
+{
+  "id": "surgery_operating_room",
+  "level": "C1",
+  "theme": "Chirurgie, bloc opératoire et intervention médicale",
+  "theme_fa": "جراحی، اتاق عمل و مداخله پزشکی",
+  "icon": "🏥",
+  "inspiration": "Something the Lord Made (Joseph Sargent, 2004)",
+  "words": [
+    {
+      "fr": "la chirurgie",
+      "fa": "جراحی",
+      "emoji": "🔪",
+      "difficulty": 3,
+      "ex": "La chirurgie cardiaque a fait des progrès immenses au XXe siècle.",
+      "ex_fa": "جراحی قلب در قرن بیستم پیشرفت‌های عظیمی کرده است."
+    },
+    {
+      "fr": "le bloc opératoire",
+      "fa": "اتاق عمل",
+      "emoji": "🏥",
+      "difficulty": 4,
+      "ex": "Le bloc opératoire est un environnement stérile et hautement contrôlé.",
+      "ex_fa": "اتاق عمل محیطی استریل و به شدت کنترل‌شده است."
+    },
+    {
+      "fr": "le chirurgien",
+      "fa": "جراح",
+      "emoji": "👨‍⚕️",
+      "difficulty": 3,
+      "ex": "Le chirurgien a réalisé une opération de six heures sans pause.",
+      "ex_fa": "جراح یک عمل شش‌ساعته را بدون وقفه انجام داد."
+    },
+    {
+      "fr": "l'anesthésie",
+      "fa": "بیهوشی",
+      "emoji": "💉",
+      "difficulty": 4,
+      "ex": "L'anesthésie générale plonge le patient dans un sommeil artificiel.",
+      "ex_fa": "بیهوشی عمومی بیمار را در خواب مصنوعی فرو می‌برد."
+    },
+    {
+      "fr": "le scalpel",
+      "fa": "تیغ جراحی (اسکالپل)",
+      "emoji": "🔪",
+      "difficulty": 4,
+      "ex": "Le scalpel doit être parfaitement aiguisé pour une incision nette.",
+      "ex_fa": "تیغ جراحی باید کاملاً تیز باشد برای برش تمیز."
+    },
+    {
+      "fr": "la suture",
+      "fa": "بخیه",
+      "emoji": "🧵",
+      "difficulty": 4,
+      "ex": "La suture doit être précise pour éviter les infections.",
+      "ex_fa": "بخیه باید دقیق باشد تا از عفونت جلوگیری شود."
+    },
+    {
+      "fr": "le bistouri",
+      "fa": "چاقوی جراحی",
+      "emoji": "🔪",
+      "difficulty": 4,
+      "ex": "Le bistouri électrique cautérise les vaisseaux en coupant.",
+      "ex_fa": "چاقوی الکتریکی هنگام برش، رگ‌ها را می‌سوزاند."
+    },
+    {
+      "fr": "l'incision",
+      "fa": "برش جراحی",
+      "emoji": "🔪",
+      "difficulty": 4,
+      "ex": "L'incision doit être minimale pour réduire les cicatrices.",
+      "ex_fa": "برش باید حداقل باشد تا زخم کاهش یابد."
+    },
+    {
+      "fr": "la greffe",
+      "fa": "پیوند",
+      "emoji": "🫀",
+      "difficulty": 4,
+      "ex": "La greffe de cœur a sauvé la vie du patient.",
+      "ex_fa": "پیوند قلب جان بیمار را نجات داد."
+    },
+    {
+      "fr": "l'hémorragie",
+      "fa": "خونریزی",
+      "emoji": "🩸",
+      "difficulty": 4,
+      "ex": "L'hémorragie interne nécessitait une intervention d'urgence.",
+      "ex_fa": "خونریزی داخلی به مداخله فوری نیاز داشت."
+    },
+    {
+      "fr": "le pronostic",
+      "fa": "پیش‌آگهی",
+      "emoji": "📊",
+      "difficulty": 5,
+      "ex": "Le pronostic vital est engagé après l'accident.",
+      "ex_fa": "پیش‌آگهی حیاتی پس از حادثه در خطر است."
+    },
+    {
+      "fr": "la convalescence",
+      "fa": "دوره نقاهت",
+      "emoji": "🛏️",
+      "difficulty": 4,
+      "ex": "La convalescence peut durer plusieurs mois après une chirurgie lourde.",
+      "ex_fa": "دوره نقاهت پس از جراحی سنگین می‌تواند ماه‌ها طول بکشد."
+    },
+    {
+      "fr": "l'asepsie",
+      "fa": "ضدعفونی، آسپسی",
+      "emoji": "🧼",
+      "difficulty": 5,
+      "ex": "L'asepsie rigoureuse prévient les infections postopératoires.",
+      "ex_fa": "ضدعفونی دقیق از عفونت‌های پس از عمل جلوگیری می‌کند."
+    },
+    {
+      "fr": "la laparoscopie",
+      "fa": "لاپاراسکوپی (جراحی کم‌تهاجمی)",
+      "emoji": "📹",
+      "difficulty": 5,
+      "ex": "La laparoscopie permet des interventions avec des incisions minimes.",
+      "ex_fa": "لاپاراسکوپی امکان جراحی با برش‌های حداقل را می‌دهد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les pionniers du cœur bleu",
+      "text": "Vivien Thomas est un technicien de laboratoire noir dans les années 1940. Il travaille avec le Dr Alfred Blalock, un {{BLANK_3}} ambitieux. Ensemble, ils tentent de résoudre un mystère médical : les bébés bleus, ces nouveau-nés dont le cœur malformé ne pompe pas assez d'oxygène. Dans le {{BLANK_2}} improvisé, Vivien développe des techniques révolutionnaires sur des chiens. Il maîtrise l'{{BLANK_4}} pour endormir les animaux sans risque. Il utilise le {{BLANK_5}} et le {{BLANK_7}} pour des {{BLANK_8}}s précises. Il réalise des {{BLANK_6}}s microscopiques sur des vaisseaux minuscules. Quand une {{BLANK_10}} menace l'animal, il sait la contrôler instantanément. Après des années d'expérimentation, ils tentent la première {{BLANK_9}} cardiaque sur un bébé. Le {{BLANK_11}} est réservé mais l'opération réussit. L'enfant entre en {{BLANK_12}} et retrouve des couleurs normales. L'{{BLANK_13}} stricte du bloc opératoire a permis cette prouesse. Plus tard, la {{BLANK_14}} révolutionnera la {{BLANK_1}} en permettant des interventions moins invasives. Vivien, malgré son génie, ne sera reconnu que des décennies plus tard à cause de la ségrégation raciale.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "chirurgie",
+          "options": [
+            "chirurgie",
+            "bloc opératoire",
+            "chirurgien",
+            "anesthésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bloc opératoire",
+          "options": [
+            "bloc opératoire",
+            "scalpel",
+            "suture",
+            "bistouri"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "chirurgien",
+          "options": [
+            "chirurgien",
+            "incision",
+            "greffe",
+            "hémorragie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "anesthésie",
+          "options": [
+            "anesthésie",
+            "pronostic",
+            "convalescence",
+            "asepsie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "scalpel",
+          "options": [
+            "scalpel",
+            "laparoscopie",
+            "chirurgie",
+            "bloc opératoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "sutures",
+          "options": [
+            "sutures",
+            "chirurgien",
+            "anesthésie",
+            "scalpel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "bistouri",
+          "options": [
+            "bistouri",
+            "incision",
+            "greffe",
+            "hémorragie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "incisions",
+          "options": [
+            "incisions",
+            "pronostic",
+            "convalescence",
+            "asepsie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "greffe",
+          "options": [
+            "greffe",
+            "laparoscopie",
+            "chirurgie",
+            "bloc opératoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "hémorragie",
+          "options": [
+            "hémorragie",
+            "chirurgien",
+            "anesthésie",
+            "scalpel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pronostic",
+          "options": [
+            "pronostic",
+            "suture",
+            "bistouri",
+            "incision"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "convalescence",
+          "options": [
+            "convalescence",
+            "greffe",
+            "hémorragie",
+            "pronostic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "asepsie",
+          "options": [
+            "asepsie",
+            "laparoscopie",
+            "chirurgie",
+            "bloc opératoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "laparoscopie",
+          "options": [
+            "laparoscopie",
+            "chirurgien",
+            "anesthésie",
+            "scalpel"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les mains invisibles",
+      "inspiration": "Something the Lord Made (Joseph Sargent, 2004)",
+      "text": "À peine Vivien eut-il pénétré dans le {{BLANK_2}} qu'il sentit le poids de l'histoire peser sur ses épaules. En ces années 1940, un technicien noir n'avait pas sa place parmi les blouses blanches, mais ses mains possédaient une intelligence que nul diplôme ne pouvait égaler. Le Dr Blalock, ce {{BLANK_3}} visionnaire mais prisonnier des préjugés de son époque, avait compris que Vivien détenait la clé d'un mystère médical qui hantait les maternités : ces bébés bleus que la {{BLANK_1}} n'avait jamais su sauver. Dans le secret du laboratoire, Vivien opérait des chiens avec une précision surnaturelle. Il maîtrisait l'{{BLANK_4}} comme un artiste dompte sa palette, trouvant la dose exacte qui plongeait l'animal dans un sommeil sans douleur. Son {{BLANK_5}} dansait sur les tissus avec la grâce d'un calligraphe, et son {{BLANK_7}} électrique cautérisait les vaisseaux avant même que le sang ne perle. Chaque {{BLANK_8}} était une œuvre d'art minimale, chaque {{BLANK_6}} un point de broderie sur la toile vivante. Quand une {{BLANK_10}} menaçait de tout emporter, ses doigts trouvaient instantanément le vaisseau rompu, comme s'il lisait la carte secrète du corps. Après mille tentatives, mille échecs, mille nuits blanches, ils osèrent l'impossible : une {{BLANK_9}} cardiaque sur un nourrisson de quelques semaines. Le {{BLANK_11}} était sombre, les statistiques impitoyables, mais les mains de Vivien guidèrent celles de Blalock avec une certitude absolue. Quand l'enfant ouvrit les yeux, ses lèvres avaient retrouvé la rose du vivant. La {{BLANK_12}} fut longue, mais chaque jour confirmait le miracle. L'{{BLANK_13}} fanatique que Vivien imposait au bloc avait transformé un laboratoire de fortune en sanctuaire de la vie. Des décennies plus tard, quand la {{BLANK_14}} révolutionnerait la {{BLANK_1}} en permettant d'opérer par le trou d'une serrure, personne ne se souviendrait que tout avait commencé avec les mains invisibles d'un homme que l'Amérique refusait de voir.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "chirurgie",
+          "options": [
+            "chirurgie",
+            "bloc opératoire",
+            "chirurgien",
+            "anesthésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bloc opératoire",
+          "options": [
+            "bloc opératoire",
+            "scalpel",
+            "suture",
+            "bistouri"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "chirurgien",
+          "options": [
+            "chirurgien",
+            "incision",
+            "greffe",
+            "hémorragie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "anesthésie",
+          "options": [
+            "anesthésie",
+            "pronostic",
+            "convalescence",
+            "asepsie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "scalpel",
+          "options": [
+            "scalpel",
+            "laparoscopie",
+            "chirurgie",
+            "bloc opératoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "suture",
+          "options": [
+            "suture",
+            "chirurgien",
+            "anesthésie",
+            "scalpel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "bistouri",
+          "options": [
+            "bistouri",
+            "incision",
+            "greffe",
+            "hémorragie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "incision",
+          "options": [
+            "incision",
+            "pronostic",
+            "convalescence",
+            "asepsie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "greffe",
+          "options": [
+            "greffe",
+            "laparoscopie",
+            "chirurgie",
+            "bloc opératoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "hémorragie",
+          "options": [
+            "hémorragie",
+            "chirurgien",
+            "anesthésie",
+            "scalpel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pronostic",
+          "options": [
+            "pronostic",
+            "suture",
+            "bistouri",
+            "incision"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "convalescence",
+          "options": [
+            "convalescence",
+            "greffe",
+            "hémorragie",
+            "pronostic"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "asepsie",
+          "options": [
+            "asepsie",
+            "laparoscopie",
+            "chirurgie",
+            "bloc opératoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "laparoscopie",
+          "options": [
+            "laparoscopie",
+            "chirurgien",
+            "anesthésie",
+            "scalpel"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Chirurgie et bloc opératoire",
+    "title_fa": "آزمون : جراحی و اتاق عمل",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La branche de la médecine qui traite les maladies par des interventions manuelles et instrumentales est la ____.",
+        "options": [
+          "chirurgie",
+          "bloc opératoire",
+          "chirurgien",
+          "anesthésie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شاخه‌ای از پزشکی با مداخله دستی = chirurgie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des salles stériles et équipées où se déroulent les interventions chirurgicales est le ____.",
+        "options": [
+          "bloc opératoire",
+          "scalpel",
+          "suture",
+          "bistouri"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه اتاق‌های عمل = bloc opératoire."
+      },
+      {
+        "type": "mcq",
+        "question": "Le médecin spécialisé qui réalise les opérations chirurgicales est le ____.",
+        "options": [
+          "chirurgien",
+          "incision",
+          "greffe",
+          "hémorragie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پزشک متخصص جراحی = chirurgien."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique médicale qui supprime la douleur et la conscience pendant une opération est l'____.",
+        "options": [
+          "anesthésie",
+          "pronostic",
+          "convalescence",
+          "asepsie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک حذف درد و هوشیاری = anesthésie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument tranchant à lame fine utilisé pour faire des incisions précises est le ____.",
+        "options": [
+          "scalpel",
+          "laparoscopie",
+          "chirurgie",
+          "bloc opératoire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار برش دقیق = scalpel."
+      },
+      {
+        "type": "mcq",
+        "question": "L'acte de recoudre les tissus avec du fil chirurgical pour refermer une plaie est la ____.",
+        "options": [
+          "suture",
+          "chirurgien",
+          "anesthésie",
+          "scalpel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوختن بافت با نخ جراحی = suture."
+      },
+      {
+        "type": "mcq",
+        "question": "Le couteau chirurgical, souvent électrique, qui coupe et cautérise simultanément est le ____.",
+        "options": [
+          "bistouri",
+          "incision",
+          "greffe",
+          "hémorragie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چاقوی جراحی = bistouri."
+      },
+      {
+        "type": "mcq",
+        "question": "La coupure chirurgicale faite dans les tissus pour accéder à la zone à opérer est l'____.",
+        "options": [
+          "incision",
+          "pronostic",
+          "convalescence",
+          "asepsie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برش جراحی = incision."
+      },
+      {
+        "type": "mcq",
+        "question": "L'opération qui consiste à transplanter un organe ou un tissu d'un donneur à un receveur est la ____.",
+        "options": [
+          "greffe",
+          "laparoscopie",
+          "chirurgie",
+          "bloc opératoire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل پیوند عضو = greffe."
+      },
+      {
+        "type": "mcq",
+        "question": "L'écoulement de sang hors des vaisseaux, pouvant être interne ou externe, est l'____.",
+        "options": [
+          "hémorragie",
+          "chirurgien",
+          "anesthésie",
+          "scalpel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خونریزی = hémorragie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'évaluation médicale des chances de guérison et de l'évolution probable de la maladie est le ____.",
+        "options": [
+          "pronostic",
+          "suture",
+          "bistouri",
+          "incision"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارزیابی احتمال بهبود = pronostic."
+      },
+      {
+        "type": "mcq",
+        "question": "La période de récupération et de soins après une maladie ou une opération est la ____.",
+        "options": [
+          "convalescence",
+          "greffe",
+          "hémorragie",
+          "pronostic"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره بهبودی = convalescence."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des mesures qui visent à éliminer les microbes et prévenir les infections est l'____.",
+        "options": [
+          "asepsie",
+          "laparoscopie",
+          "chirurgie",
+          "bloc opératoire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اقدامات ضدعفونی = asepsie."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique chirurgicale mini-invasive qui utilise une caméra et de petites incisions est la ____.",
+        "options": [
+          "laparoscopie",
+          "chirurgien",
+          "anesthésie",
+          "scalpel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جراحی کم‌تهاجمی با دوربین = laparoscopie."
+      },
+      {
+        "type": "binary",
+        "question": "L'anesthésie locale endort uniquement la zone à opérer, tandis que l'anesthésie générale plonge le patient dans l'inconscience.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. بیهوشی موضعی فقط ناحیه را بی‌حس می‌کند، بیهوشی عمومی هوشیاری را حذف می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le scalpel et le bistouri désignent exactement le même instrument chirurgical.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. scalpel تیغ ظریف است، bistouri می‌تواند الکتریکی و بزرگتر باشد."
+      },
+      {
+        "type": "binary",
+        "question": "L'asepsie vise à éliminer les micro-organismes pour prévenir les infections.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. آسپسی هدفش حذف میکروب‌ها برای پیشگیری از عفونت است."
+      },
+      {
+        "type": "binary",
+        "question": "La laparoscopie nécessite de grandes incisions pour accéder aux organes internes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. لاپاراسکوپی با برش‌های کوچک و دوربین انجام می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le pronostic est l'évaluation par le médecin de l'évolution probable d'une maladie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پیش‌آگهی ارزیابی سیر احتمالی بیماری است."
+      },
+      {
+        "type": "binary",
+        "question": "La convalescence est la période immédiate pendant l'opération chirurgicale.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. نقاهت دوره پس از عمل است، نه حین عمل."
+      }
+    ]
+  }
+}
