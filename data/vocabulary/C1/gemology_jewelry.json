@@ -1,0 +1,680 @@
+{
+  "id": "gemology_jewelry",
+  "level": "C1",
+  "theme": "Gemmologie, joaillerie et pierres précieuses",
+  "theme_fa": "جواهرشناسی، جواهرسازی و سنگ‌های قیمتی",
+  "icon": "💎",
+  "inspiration": "Blood Diamond (Edward Zwick, 2006)",
+  "words": [
+    {
+      "fr": "la gemmologie",
+      "fa": "جواهرشناسی",
+      "emoji": "🔬",
+      "difficulty": 5,
+      "ex": "La gemmologie permet d'identifier l'origine et l'authenticité des pierres.",
+      "ex_fa": "جواهرشناسی امکان شناسایی منشأ و اصالت سنگ‌ها را می‌دهد."
+    },
+    {
+      "fr": "le diamant",
+      "fa": "الماس",
+      "emoji": "💎",
+      "difficulty": 2,
+      "ex": "Le diamant est le minéral naturel le plus dur connu sur Terre.",
+      "ex_fa": "الماس سخت‌ترین کانی طبیعی شناخته‌شده روی زمین است."
+    },
+    {
+      "fr": "le rubis",
+      "fa": "یاقوت سرخ",
+      "emoji": "🔴",
+      "difficulty": 3,
+      "ex": "Le rubis sang-de-pigeon est la variété la plus précieuse et recherchée.",
+      "ex_fa": "یاقوت خون‌کبوتری ارزشمندترین و پرجستجوترین گونه است."
+    },
+    {
+      "fr": "le saphir",
+      "fa": "یاقوت کبود",
+      "emoji": "🔵",
+      "difficulty": 3,
+      "ex": "Le saphir du Cachemire possède un bleu velouté incomparable.",
+      "ex_fa": "یاقوت کشمیر آبی مخملی بی‌نظیری دارد."
+    },
+    {
+      "fr": "l'émeraude",
+      "fa": "زمرد",
+      "emoji": "🟢",
+      "difficulty": 3,
+      "ex": "L'émeraude colombienne est prisée pour son vert profond et intense.",
+      "ex_fa": "زمرد کلمبیایی به خاطر سبز عمیق و شدیدش ارزشمند است."
+    },
+    {
+      "fr": "la facette",
+      "fa": "تراش، وجه",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "Chaque facette est polie pour maximiser la réflexion de la lumière.",
+      "ex_fa": "هر وجه برای به حداکثر رساندن بازتاب نور صیقل داده می‌شود."
+    },
+    {
+      "fr": "le lapidaire",
+      "fa": "سنگ‌تراش، جواهرتراش",
+      "emoji": "👨‍🔧",
+      "difficulty": 4,
+      "ex": "Le lapidaire examine la pierre brute pour décider de sa taille idéale.",
+      "ex_fa": "سنگ‌تراش سنگ خام را برای تصمیم‌گیری درباره تراش ایده‌آل بررسی می‌کند."
+    },
+    {
+      "fr": "le carat",
+      "fa": "قیراط",
+      "emoji": "⚖️",
+      "difficulty": 3,
+      "ex": "Le poids des pierres précieuses se mesure en carat.",
+      "ex_fa": "وزن سنگ‌های قیمتی بر حسب قیراط اندازه‌گیری می‌شود."
+    },
+    {
+      "fr": "la taille",
+      "fa": "تراش (عمل برش)",
+      "emoji": "💠",
+      "difficulty": 3,
+      "ex": "La taille brillante donne au diamant son feu et son éclat.",
+      "ex_fa": "تراش برلیان به الماس آتش و درخشش می‌دهد."
+    },
+    {
+      "fr": "l'inclusion",
+      "fa": "ناخالصی درونی",
+      "emoji": "🔍",
+      "difficulty": 5,
+      "ex": "Une inclusion peut réduire la valeur d'un diamant, mais prouve son origine naturelle.",
+      "ex_fa": "ناخالصی ممکن است ارزش الماس را کم کند، اما طبیعی بودن آن را ثابت می‌کند."
+    },
+    {
+      "fr": "le polissage",
+      "fa": "پرداخت، صیقل‌کاری",
+      "emoji": "🪞",
+      "difficulty": 4,
+      "ex": "Le polissage final sur une roue de plomb révèle la brillance ultime.",
+      "ex_fa": "پرداخت نهایی روی چرخ سربی، درخشش غایی را آشکار می‌کند."
+    },
+    {
+      "fr": "la joaillerie",
+      "fa": "جواهرسازی هنری",
+      "emoji": "💍",
+      "difficulty": 4,
+      "ex": "La haute joaillerie parisienne crée des pièces uniques et somptueuses.",
+      "ex_fa": "جواهرسازی عالی پاریس قطعات منحصربه‌فرد و باشکوهی خلق می‌کند."
+    },
+    {
+      "fr": "la gemme",
+      "fa": "سنگ قیمتی",
+      "emoji": "💠",
+      "difficulty": 4,
+      "ex": "Cette gemme rare sera montée sur une bague en platine.",
+      "ex_fa": "این سنگ قیمتی نادر روی یک حلقه پلاتین سوار خواهد شد."
+    },
+    {
+      "fr": "la réfraction",
+      "fa": "شکست نور",
+      "emoji": "🌈",
+      "difficulty": 5,
+      "ex": "La réfraction de la lumière à l'intérieur de la pierre crée les arcs-en-ciel.",
+      "ex_fa": "شکست نور در داخل سنگ، رنگین‌کمان‌ها را ایجاد می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le secret d'Anvers",
+      "text": "Elias est un vieux {{BLANK_7}} qui travaille dans le quartier diamantaire d'Anvers. Sa connaissance de la {{BLANK_1}} est légendaire. Un jour, un marchand lui apporte une {{BLANK_13}} brute exceptionnelle. Elias met sa loupe pour examiner la pierre. Il cherche la moindre {{BLANK_10}} qui pourrait trahir une imperfection. C'est un {{BLANK_2}} pur de plusieurs dizaines de {{BLANK_8}}s. Il imagine déjà la {{BLANK_9}} parfaite qui maximisera la {{BLANK_14}} de la lumière. Sur son établi, il travaille aussi un {{BLANK_3}} rouge sang, un {{BLANK_4}} bleu de Ceylan et une magnifique {{BLANK_5}} verte. Avec une précision extrême, il coupe chaque {{BLANK_6}} une par une. Le {{BLANK_11}} sur la roue de diamant rend la surface comme un miroir. Ces pierres seront bientôt vendues aux plus grandes maisons de {{BLANK_12}} pour orner les couronnes et les colliers des rois et des stars du monde entier.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "gemmologie",
+          "options": [
+            "gemmologie",
+            "diamant",
+            "rubis",
+            "saphir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "diamant",
+          "options": [
+            "diamant",
+            "émeraude",
+            "facette",
+            "lapidaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "rubis",
+          "options": [
+            "rubis",
+            "carat",
+            "taille",
+            "inclusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "saphir",
+          "options": [
+            "saphir",
+            "polissage",
+            "joaillerie",
+            "gemme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "émeraude",
+          "options": [
+            "émeraude",
+            "réfraction",
+            "gemmologie",
+            "diamant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "facette",
+          "options": [
+            "facette",
+            "rubis",
+            "saphir",
+            "émeraude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "lapidaire",
+          "options": [
+            "lapidaire",
+            "carat",
+            "taille",
+            "inclusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "carats",
+          "options": [
+            "carats",
+            "polissage",
+            "joaillerie",
+            "gemme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "taille",
+          "options": [
+            "taille",
+            "réfraction",
+            "gemmologie",
+            "diamant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "inclusion",
+          "options": [
+            "inclusion",
+            "facette",
+            "lapidaire",
+            "carat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "polissage",
+          "options": [
+            "polissage",
+            "taille",
+            "inclusion",
+            "rubis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "joaillerie",
+          "options": [
+            "joaillerie",
+            "saphir",
+            "émeraude",
+            "réfraction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "gemme",
+          "options": [
+            "gemme",
+            "gemmologie",
+            "diamant",
+            "facette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "réfraction",
+          "options": [
+            "réfraction",
+            "lapidaire",
+            "carat",
+            "taille"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le cœur de l'étoile",
+      "inspiration": "Blood Diamond (Edward Zwick, 2006)",
+      "text": "À peine le {{BLANK_7}} eut-il approché la {{BLANK_13}} brute de la lumière que l'histoire sanglante du monde sembla scintiller dans ses yeux. Cet homme ne taillait pas de simples cailloux, il sculptait le cœur gelé des étoiles. Grâce à la {{BLANK_1}}, il savait lire les secrets enfouis : chaque {{BLANK_10}} était la cicatrice d'une guerre oubliée, chaque voile la mémoire d'un volcan éteint. Ce {{BLANK_2}} maudit, lourd de cent {{BLANK_8}}s, exigeait la {{BLANK_9}} d'un maître pour ne pas éclater. Autour de lui dormaient le {{BLANK_3}} de la passion, le {{BLANK_4}} des océans célestes et l'{{BLANK_5}} des jardins interdits. D'un geste chirurgical, il créait la première {{BLANK_6}}, libérant la {{BLANK_14}} prisonnière qui décomposait la lumière blanche en mille arcs-en-ciel. Le {{BLANK_11}} final effaçait les larmes de la terre pour ne laisser qu'un miroir de feu. Bientôt, les grandes maisons de {{BLANK_12}} s'arracheraient ce miracle, ignorant que la beauté absolue naît toujours de la pression et de la douleur, et que chaque bijou porté sur une peau nue est un fragment d'éternité arraché aux ténèbres.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "gemmologie",
+          "options": [
+            "gemmologie",
+            "diamant",
+            "rubis",
+            "saphir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "diamant",
+          "options": [
+            "diamant",
+            "émeraude",
+            "facette",
+            "lapidaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "rubis",
+          "options": [
+            "rubis",
+            "carat",
+            "taille",
+            "inclusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "saphir",
+          "options": [
+            "saphir",
+            "polissage",
+            "joaillerie",
+            "gemme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "émeraude",
+          "options": [
+            "émeraude",
+            "réfraction",
+            "gemmologie",
+            "diamant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "facette",
+          "options": [
+            "facette",
+            "rubis",
+            "saphir",
+            "émeraude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "lapidaire",
+          "options": [
+            "lapidaire",
+            "carat",
+            "taille",
+            "inclusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "carats",
+          "options": [
+            "carats",
+            "polissage",
+            "joaillerie",
+            "gemme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "taille",
+          "options": [
+            "taille",
+            "réfraction",
+            "gemmologie",
+            "diamant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "inclusion",
+          "options": [
+            "inclusion",
+            "facette",
+            "lapidaire",
+            "carat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "polissage",
+          "options": [
+            "polissage",
+            "taille",
+            "inclusion",
+            "rubis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "joaillerie",
+          "options": [
+            "joaillerie",
+            "saphir",
+            "émeraude",
+            "réfraction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "gemme",
+          "options": [
+            "gemme",
+            "gemmologie",
+            "diamant",
+            "facette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "réfraction",
+          "options": [
+            "réfraction",
+            "lapidaire",
+            "carat",
+            "taille"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Gemmologie et joaillerie",
+    "title_fa": "آزمون : جواهرشناسی و سنگ‌های قیمتی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie les pierres précieuses, leur origine, leurs propriétés et leur authentification est la ____.",
+        "options": [
+          "gemmologie",
+          "diamant",
+          "rubis",
+          "saphir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه سنگ‌های قیمتی = gemmologie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le minéral le plus dur de la Terre, composé de carbone pur et très prisé en joaillerie, est le ____.",
+        "options": [
+          "diamant",
+          "émeraude",
+          "facette",
+          "lapidaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سخت‌ترین کانی از کربن خالص = diamant."
+      },
+      {
+        "type": "mcq",
+        "question": "La pierre précieuse rouge, variété du corindon, symbole de passion, est le ____.",
+        "options": [
+          "rubis",
+          "carat",
+          "taille",
+          "inclusion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سنگ قیمتی سرخ‌رنگ = rubis."
+      },
+      {
+        "type": "mcq",
+        "question": "La pierre précieuse bleue, également une variété de corindon, très appréciée des rois, est le ____.",
+        "options": [
+          "saphir",
+          "polissage",
+          "joaillerie",
+          "gemme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سنگ قیمتی آبی‌رنگ = saphir."
+      },
+      {
+        "type": "mcq",
+        "question": "La pierre fine verte, variété du béryl, souvent incluse de 'jardins' internes, est l'____.",
+        "options": [
+          "émeraude",
+          "réfraction",
+          "gemmologie",
+          "diamant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سنگ قیمتی سبزرنگ = émeraude."
+      },
+      {
+        "type": "mcq",
+        "question": "Chacune des petites surfaces planes et polies taillées sur une pierre pour réfléchir la lumière est la ____.",
+        "options": [
+          "facette",
+          "rubis",
+          "saphir",
+          "émeraude"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطوح صیقلی و چندضلعی سنگ = facette."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artisan spécialiste qui taille, polit et met en valeur les pierres précieuses est le ____.",
+        "options": [
+          "lapidaire",
+          "carat",
+          "taille",
+          "inclusion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استاد سنگ‌تراش = lapidaire."
+      },
+      {
+        "type": "mcq",
+        "question": "L'unité de masse spécifique utilisée pour peser les pierres précieuses (équivalant à 0,2 gramme) est le ____.",
+        "options": [
+          "carat",
+          "polissage",
+          "joaillerie",
+          "gemme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واحد وزن سنگ‌های قیمتی = carat."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action et l'art de couper et façonner une pierre brute pour révéler son éclat est la ____.",
+        "options": [
+          "taille",
+          "réfraction",
+          "gemmologie",
+          "diamant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل برش و شکل‌دهی سنگ = taille."
+      },
+      {
+        "type": "mcq",
+        "question": "Le défaut interne, la bulle ou le cristal étranger emprisonné dans une pierre naturelle est l'____.",
+        "options": [
+          "inclusion",
+          "facette",
+          "lapidaire",
+          "carat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ناخالصی یا نقص درونی سنگ = inclusion."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étape finale qui consiste à frotter la pierre pour la rendre lisse et parfaitement brillante est le ____.",
+        "options": [
+          "polissage",
+          "taille",
+          "inclusion",
+          "rubis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مرحله نهایی براق کردن = polissage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de créer des bijoux précieux et des parures uniques de très haute qualité est la ____.",
+        "options": [
+          "joaillerie",
+          "saphir",
+          "émeraude",
+          "réfraction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر ساخت جواهرات لوکس = joaillerie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le terme général et noble désignant une pierre précieuse ou fine taillée est la ____.",
+        "options": [
+          "gemme",
+          "gemmologie",
+          "diamant",
+          "facette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واژه عمومی برای سنگ قیمتی = gemme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le phénomène optique où la lumière change de direction et se disperse en entrant dans la pierre est la ____.",
+        "options": [
+          "réfraction",
+          "lapidaire",
+          "carat",
+          "taille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پدیده شکست و پراکندگی نور = réfraction."
+      },
+      {
+        "type": "binary",
+        "question": "Le lapidaire est le mineur qui extrait les pierres précieuses des profondeurs de la terre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. لاپیدر (lapidaire) هنرمند سنگ‌تراش است؛ معدنچی mineur نامیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le carat est une unité de mesure utilisée pour évaluer la pureté de l'or dans un bijou.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. در سنگ‌های قیمتی، قیراط (carat) واحد *وزن* است. (برای طلا از عیار یا karat استفاده می‌شود که ریشه یکسان دارند اما کاربرد متفاوت)."
+      },
+      {
+        "type": "binary",
+        "question": "Une inclusion est une imperfection interne (cristal, gaz) qui prouve souvent l'origine naturelle de la pierre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. ناخالصی (inclusion) مانند اثر انگشت، طبیعی بودن سنگ را ثابت می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La réfraction est la capacité d'une pierre précieuse à absorber toute la lumière sans la refléter.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. شکست نور (réfraction) به خم شدن و تجزیه نور در داخل سنگ گفته می‌شود که باعث درخشش آن می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le rubis et le saphir appartiennent tous les deux à la même famille minérale : le corindon.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هر دو از کانی کوراندوم هستند؛ فقط عناصر رنگ‌دهنده آن‌ها متفاوت است."
+      },
+      {
+        "type": "binary",
+        "question": "La joaillerie désigne la fabrication industrielle de bijoux en métaux communs et en plastique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. جواهرسازی (joaillerie) هنر ظریف و لوکس کار با فلزات گرانبها و سنگ‌های قیمتی است."
+      }
+    ]
+  }
+}
