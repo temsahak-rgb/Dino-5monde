@@ -1,0 +1,680 @@
+{
+  "id": "graffiti_street_art",
+  "level": "C1",
+  "theme": "Graffiti, art urbain et culture underground",
+  "theme_fa": "گرافیتی، هنر خیابانی و فرهنگ زیرزمینی",
+  "icon": "🎨",
+  "inspiration": "Exit Through the Gift Shop (Banksy, 2010)",
+  "words": [
+    {
+      "fr": "le graffiti",
+      "fa": "گرافیتی",
+      "emoji": "🎨",
+      "difficulty": 3,
+      "ex": "Le graffiti est né dans les rues de New York dans les années 1970.",
+      "ex_fa": "گرافیتی در دهه ۱۹۷۰ در خیابان‌های نیویورک متولد شد."
+    },
+    {
+      "fr": "le pochoir",
+      "fa": "استنسیل (شابلون)",
+      "emoji": "📋",
+      "difficulty": 4,
+      "ex": "Banksy utilise le pochoir pour créer ses œuvres rapidement.",
+      "ex_fa": "بنکسی از استنسیل برای خلق سریع آثارش استفاده می‌کند."
+    },
+    {
+      "fr": "la bombe",
+      "fa": "اسپری رنگ",
+      "emoji": "🎨",
+      "difficulty": 3,
+      "ex": "L'artiste secoue la bombe avant de peindre.",
+      "ex_fa": "هنرمند قبل از نقاشی اسپری را تکان می‌دهد."
+    },
+    {
+      "fr": "le tag",
+      "fa": "تگ (امضای هنرمند)",
+      "emoji": "✍️",
+      "difficulty": 4,
+      "ex": "Chaque graffeur a son tag unique qui le distingue.",
+      "ex_fa": "هر گرافیتی‌کار تگ منحصربه‌فرد خود را دارد."
+    },
+    {
+      "fr": "le mural",
+      "fa": "نقاشی دیواری",
+      "emoji": "🖼️",
+      "difficulty": 4,
+      "ex": "Le mural de 50 mètres orne la façade de l'immeuble.",
+      "ex_fa": "نقاشی دیواری ۵۰ متری نمای ساختمان را تزیین می‌کند."
+    },
+    {
+      "fr": "le collage",
+      "fa": "کلاژ (چسباندن تصاویر)",
+      "emoji": "📰",
+      "difficulty": 4,
+      "ex": "Le collage d'affiches est une technique courante de l'art urbain.",
+      "ex_fa": "کلاژ پوسترها تکنیک رایجی در هنر خیابانی است."
+    },
+    {
+      "fr": "l'installation",
+      "fa": "اینستالیشن (چیدمان هنری)",
+      "emoji": "🏗️",
+      "difficulty": 5,
+      "ex": "L'installation interactive invite les passants à participer.",
+      "ex_fa": "چیدمان تعاملی عابران را به مشارکت دعوت می‌کند."
+    },
+    {
+      "fr": "le vandale",
+      "fa": "خرابکار",
+      "emoji": "🚫",
+      "difficulty": 4,
+      "ex": "La police considère les graffeurs illégaux comme des vandales.",
+      "ex_fa": "پلیس گرافیتی‌کاران غیرقانونی را خرابکار می‌داند."
+    },
+    {
+      "fr": "l'illégal",
+      "fa": "غیرقانونی",
+      "emoji": "⚖️",
+      "difficulty": 3,
+      "ex": "Le graffiti illégal peut entraîner des amendes et des peines de prison.",
+      "ex_fa": "گرافیتی غیرقانونی می‌تواند جریمه و حبس در پی داشته باشد."
+    },
+    {
+      "fr": "le crew",
+      "fa": "گروه گرافیتی‌کاران",
+      "emoji": "👥",
+      "difficulty": 5,
+      "ex": "Le crew se réunit pour peindre ensemble la nuit.",
+      "ex_fa": "گروه شب‌ها برای نقاشی با هم جمع می‌شوند."
+    },
+    {
+      "fr": "le spot",
+      "fa": "مکان مناسب برای نقاشی",
+      "emoji": "📍",
+      "difficulty": 5,
+      "ex": "Les graffeurs cherchent toujours de nouveaux spots.",
+      "ex_fa": "گرافیتی‌کاران همیشه به دنبال اسپات‌های جدید هستند."
+    },
+    {
+      "fr": "la galerie",
+      "fa": "گالری هنری",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "La galerie expose des œuvres d'artistes urbains reconnus.",
+      "ex_fa": "گالری آثار هنرمندان شهری شناخته‌شده را نمایش می‌دهد."
+    },
+    {
+      "fr": "l'éphémère",
+      "fa": "زودگذر، موقتی",
+      "emoji": "⏳",
+      "difficulty": 4,
+      "ex": "L'art urbain est souvent éphémère, effacé par le temps ou les autorités.",
+      "ex_fa": "هنر خیابانی اغلب زودگذر است و با زمان یا مقامات پاک می‌شود."
+    },
+    {
+      "fr": "la subversion",
+      "fa": "براندازی، ساختارشکنی",
+      "emoji": "✊",
+      "difficulty": 5,
+      "ex": "L'art urbain porte souvent un message de subversion politique.",
+      "ex_fa": "هنر خیابانی اغلب پیام براندازی سیاسی دارد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le mystère de Banksy",
+      "text": "Thierry est un commerçant français qui s'intéresse au {{BLANK_1}}. Il commence à filmer des artistes de rue à Los Angeles. Il rencontre Shepard Fairey et d'autres graffeurs célèbres. Thierry apprend les techniques : le {{BLANK_2}} pour reproduire des images rapidement, la {{BLANK_3}} de peinture pour couvrir de grandes surfaces, le {{BLANK_4}} pour signer ses œuvres. Il découvre les {{BLANK_5}}s géants qui transforment des façades entières, les {{BLANK_6}}s d'affiches qui détournent la publicité. Les artistes créent des {{BLANK_7}}s interactives dans l'espace public. Mais il y a un risque : être considéré comme un {{BLANK_8}} et affronter des conséquences {{BLANK_9}}es. Les graffeurs travaillent souvent en {{BLANK_10}}, s'entraidant pour peindre la nuit. Ils cherchent le meilleur {{BLANK_11}} pour exposer leur art. Certains finissent dans une {{BLANK_12}} reconnue, d'autres restent dans l'ombre. Leur art est {{BLANK_13}}, souvent effacé le lendemain. Thierry comprend que cet art porte un message de {{BLANK_14}} contre le système. Finalement, il décide de devenir artiste lui-même, sous le nom de Mr. Brainwash.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "graffiti",
+          "options": [
+            "graffiti",
+            "pochoir",
+            "bombe",
+            "tag"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pochoir",
+          "options": [
+            "pochoir",
+            "mural",
+            "collage",
+            "installation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "bombe",
+          "options": [
+            "bombe",
+            "vandale",
+            "illégal",
+            "crew"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tag",
+          "options": [
+            "tag",
+            "spot",
+            "galerie",
+            "éphémère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "murals",
+          "options": [
+            "murals",
+            "subversions",
+            "graffitis",
+            "pochoirs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "collages",
+          "options": [
+            "collages",
+            "installations",
+            "bombes",
+            "tags"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "installations",
+          "options": [
+            "installations",
+            "vandales",
+            "illégaux",
+            "crews"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "vandale",
+          "options": [
+            "vandale",
+            "spots",
+            "galeries",
+            "éphémères"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "illégal",
+          "options": [
+            "illégal",
+            "subversions",
+            "graffitis",
+            "pochoirs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "crew",
+          "options": [
+            "crew",
+            "murals",
+            "collages",
+            "installations"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "spot",
+          "options": [
+            "spot",
+            "vandales",
+            "illégaux",
+            "éphémères"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "galerie",
+          "options": [
+            "galerie",
+            "subversions",
+            "graffitis",
+            "pochoirs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "éphémère",
+          "options": [
+            "éphémère",
+            "bombes",
+            "tags",
+            "spots"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "subversion",
+          "options": [
+            "subversion",
+            "galeries",
+            "vandales",
+            "illégaux"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'art du silence",
+      "inspiration": "Exit Through the Gift Shop (Banksy, 2010)",
+      "text": "À peine Thierry eut-il allumé sa caméra dans la nuit los-angéline qu'il comprit qu'il pénétrait dans un monde parallèle, celui où les murs parlent quand les hommes se taisent. Ce commerçant français, fasciné par le {{BLANK_1}}, avait quitté sa boutique pour suivre les ombres qui peignaient la ville endormie. Il découvrit le {{BLANK_2}}, cette technique de l'ombre qui permet de reproduire une image en quelques secondes, avant que les sirènes de police ne hurlent. Il apprit à secouer la {{BLANK_3}} comme on secoue une grenade, à tracer son {{BLANK_4}} comme on signe un pacte avec la nuit. Les artistes qu'il filmait transformaient des façades entières en {{BLANK_5}}s monumentaux, détournant les publicités par des {{BLANK_6}}s subversifs. Ils créaient des {{BLANK_7}}s qui interrogeaient les passants, les forçaient à voir ce qu'ils ignoraient. Mais ce monde avait ses règles : être traité de {{BLANK_8}}, risquer des peines {{BLANK_9}}es, travailler en {{BLANK_10}} pour survivre. Ils cherchaient le {{BLANK_11}} parfait, ce mur invisible aux caméras, ce recoin où l'art pourrait respirer quelques heures. Certains finissaient dans une {{BLANK_12}} new-yorkaise, vendus à prix d'or, d'autres restaient dans l'anonymat des rues. Leur art était {{BLANK_13}}, voué à disparaître sous la peinture municipale ou les intempéries. Thierry comprit alors que cet art n'était pas décoration, mais {{BLANK_14}}, un cri silencieux contre l'ordre établi, une manière de dire que l'espace public appartient à tous, pas seulement à ceux qui peuvent l'acheter. Et quand il décida de devenir Mr. Brainwash, il comprit aussi que l'art urbain, en entrant dans les galeries, perdait peut-être son âme, cette rage qui le faisait naître dans l'illégalité et le danger.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "graffiti",
+          "options": [
+            "graffiti",
+            "pochoir",
+            "bombe",
+            "tag"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pochoir",
+          "options": [
+            "pochoir",
+            "mural",
+            "collage",
+            "installation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "bombe",
+          "options": [
+            "bombe",
+            "vandale",
+            "illégal",
+            "crew"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tag",
+          "options": [
+            "tag",
+            "spot",
+            "galerie",
+            "éphémère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "murals",
+          "options": [
+            "murals",
+            "subversions",
+            "graffitis",
+            "pochoirs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "collages",
+          "options": [
+            "collages",
+            "installations",
+            "bombes",
+            "tags"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "installations",
+          "options": [
+            "installations",
+            "vandales",
+            "illégaux",
+            "crews"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "vandale",
+          "options": [
+            "vandale",
+            "spots",
+            "galeries",
+            "éphémères"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "illégales",
+          "options": [
+            "illégales",
+            "subversions",
+            "graffitis",
+            "pochoirs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "crew",
+          "options": [
+            "crew",
+            "murals",
+            "collages",
+            "installations"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "spot",
+          "options": [
+            "spot",
+            "vandales",
+            "illégaux",
+            "éphémères"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "galerie",
+          "options": [
+            "galerie",
+            "subversions",
+            "graffitis",
+            "pochoirs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "éphémère",
+          "options": [
+            "éphémère",
+            "bombes",
+            "tags",
+            "spots"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "subversion",
+          "options": [
+            "subversion",
+            "galeries",
+            "vandales",
+            "illégaux"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Graffiti et art urbain",
+    "title_fa": "آزمون : گرافیتی و هنر خیابانی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art de peindre ou d'écrire sur les murs et les surfaces publiques, souvent de manière illégale, est le ____.",
+        "options": [
+          "graffiti",
+          "pochoir",
+          "bombe",
+          "tag"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر نقاشی روی دیوارها = graffiti."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique qui utilise un gabarit découpé pour reproduire rapidement une image est le ____.",
+        "options": [
+          "pochoir",
+          "mural",
+          "collage",
+          "installation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک استفاده از شابلون = pochoir."
+      },
+      {
+        "type": "mcq",
+        "question": "L'aérosol de peinture utilisé par les graffeurs pour couvrir de grandes surfaces est la ____.",
+        "options": [
+          "bombe",
+          "vandale",
+          "illégal",
+          "crew"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اسپری رنگ = bombe."
+      },
+      {
+        "type": "mcq",
+        "question": "La signature stylisée qu'un graffeur appose sur ses œuvres pour les identifier est le ____.",
+        "options": [
+          "tag",
+          "spot",
+          "galerie",
+          "éphémère"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "امضای هنرمند = tag."
+      },
+      {
+        "type": "mcq",
+        "question": "La peinture de grande dimension qui couvre toute une façade ou un mur est le ____.",
+        "options": [
+          "mural",
+          "subversion",
+          "graffiti",
+          "pochoir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نقاشی دیواری بزرگ = mural."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique qui consiste à assembler et coller différents éléments (affiches, photos) sur une surface est le ____.",
+        "options": [
+          "collage",
+          "installation",
+          "bombe",
+          "tag"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک چسباندن تصاویر = collage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'œuvre d'art en trois dimensions installée dans l'espace public, souvent interactive, est l'____.",
+        "options": [
+          "installation",
+          "vandale",
+          "illégal",
+          "crew"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چیدمان هنری سه‌بعدی = installation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le terme péjoratif utilisé pour désigner celui qui dégrade les propriétés publiques est le ____.",
+        "options": [
+          "vandale",
+          "spot",
+          "galerie",
+          "éphémère"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خرابکار = vandale."
+      },
+      {
+        "type": "mcq",
+        "question": "Le caractère de ce qui est contraire à la loi et peut entraîner des sanctions pénales est ____.",
+        "options": [
+          "illégal",
+          "subversion",
+          "graffiti",
+          "pochoir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "غیرقانونی = illégal."
+      },
+      {
+        "type": "mcq",
+        "question": "Le groupe de graffeurs qui travaillent ensemble et se soutiennent mutuellement est le ____.",
+        "options": [
+          "crew",
+          "mural",
+          "collage",
+          "installation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گروه گرافیتی‌کاران = crew."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu choisi par les graffeurs pour réaliser leurs œuvres, souvent discret et stratégique, est le ____.",
+        "options": [
+          "spot",
+          "vandale",
+          "illégal",
+          "éphémère"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکان مناسب برای نقاشی = spot."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu d'exposition officiel où les œuvres d'art sont présentées au public et vendues est la ____.",
+        "options": [
+          "galerie",
+          "subversion",
+          "graffiti",
+          "pochoir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گالری هنری = galerie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le caractère de ce qui ne dure pas, qui est destiné à disparaître rapidement, est ____.",
+        "options": [
+          "éphémère",
+          "bombe",
+          "tag",
+          "spot"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زودگذر و موقتی = éphémère."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de contester et de renverser l'ordre établi, souvent par des moyens artistiques, est la ____.",
+        "options": [
+          "subversion",
+          "galerie",
+          "vandale",
+          "illégal"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "براندازی و ساختارشکنی = subversion."
+      },
+      {
+        "type": "binary",
+        "question": "Le graffiti est toujours considéré comme un art légitime et jamais comme du vandalisme.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. گرافیتی غیرقانونی اغلب به عنوان خرابکاری تلقی می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le pochoir permet de reproduire rapidement la même image sur plusieurs surfaces.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. استنسیل امکان تکرار سریع تصویر را می‌دهد."
+      },
+      {
+        "type": "binary",
+        "question": "Le tag est une œuvre complexe et élaborée qui prend des heures à réaliser.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. تگ معمولاً امضای ساده و سریعی است."
+      },
+      {
+        "type": "binary",
+        "question": "Un crew est un groupe de graffeurs qui travaillent ensemble et se protègent mutuellement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. crew گروهی از گرافیتی‌کاران همکار است."
+      },
+      {
+        "type": "binary",
+        "question": "L'art urbain est souvent éphémère car il peut être effacé par les autorités ou détérioré par le temps.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. هنر خیابانی اغلب زودگذر است."
+      },
+      {
+        "type": "binary",
+        "question": "La subversion dans l'art urbain consiste à renforcer et soutenir l'ordre établi.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. براندازی به معنای به چالش کشیدن و مخالفت با نظم موجود است."
+      }
+    ]
+  }
+}
