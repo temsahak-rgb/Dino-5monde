@@ -1,0 +1,680 @@
+{
+  "id": "underwater_archaeology",
+  "level": "C1",
+  "theme": "Archéologie sous-marine, épaves et exploration océanique",
+  "theme_fa": "باستان‌شناسی زیر آب، لاشه کشتی‌ها و اکتشافات اقیانوسی",
+  "icon": "🚢",
+  "inspiration": "Titanic (James Cameron, 1997)",
+  "words": [
+    {
+      "fr": "l'épave",
+      "fa": "لاشه کشتی",
+      "emoji": "🚢",
+      "difficulty": 4,
+      "ex": "L'épave du Titanic repose à 3 800 mètres de profondeur.",
+      "ex_fa": "لاشه تایتانیک در عمق ۳۸۰۰ متری آرمیده است."
+    },
+    {
+      "fr": "la plongée",
+      "fa": "غواصی",
+      "emoji": "🤿",
+      "difficulty": 3,
+      "ex": "La plongée profonde nécessite un équipement spécialisé.",
+      "ex_fa": "غواصی عمیق به تجهیزات تخصصی نیاز دارد."
+    },
+    {
+      "fr": "le trésor",
+      "fa": "گنج",
+      "emoji": "💎",
+      "difficulty": 3,
+      "ex": "Les chasseurs d'épaves rêvent de découvrir un trésor perdu.",
+      "ex_fa": "کاوشگران لاشه کشتی‌ها رؤیای کشف گنج گمشده را دارند."
+    },
+    {
+      "fr": "le submersible",
+      "fa": "زیردریایی اکتشافی",
+      "emoji": "🛸",
+      "difficulty": 5,
+      "ex": "Le submersible peut atteindre les profondeurs extrêmes.",
+      "ex_fa": "زیردریایی اکتشافی می‌تواند به اعماق شدید برسد."
+    },
+    {
+      "fr": "l'archéologie sous-marine",
+      "fa": "باستان‌شناسی زیر آب",
+      "emoji": "🏛️",
+      "difficulty": 5,
+      "ex": "L'archéologie sous-marine révèle les secrets des civilisations englouties.",
+      "ex_fa": "باستان‌شناسی زیر آب، اسرار تمدن‌های غرق‌شده را آشکار می‌کند."
+    },
+    {
+      "fr": "la corrosion",
+      "fa": "خوردگی",
+      "emoji": "🔩",
+      "difficulty": 4,
+      "ex": "La corrosion marine détruit lentement les métaux immergés.",
+      "ex_fa": "خوردگی دریایی فلزات غوطه‌ور را آرام‌آرام نابود می‌کند."
+    },
+    {
+      "fr": "l'ancre",
+      "fa": "لنگر",
+      "emoji": "⚓",
+      "difficulty": 3,
+      "ex": "L'ancre rouillée gît sur le fond sablonneux depuis des siècles.",
+      "ex_fa": "لنگر زنگ‌زده قرن‌هاست که روی بستر شنی افتاده است."
+    },
+    {
+      "fr": "le hublot",
+      "fa": "دریچه کوچک",
+      "emoji": "🪟",
+      "difficulty": 4,
+      "ex": "À travers le hublot, on aperçoit la salle des machines.",
+      "ex_fa": "از دریچه کوچک می‌توان اتاق موتور را دید."
+    },
+    {
+      "fr": "l'iceberg",
+      "fa": "کوه یخ",
+      "emoji": "🧊",
+      "difficulty": 3,
+      "ex": "Le navire a heurté un iceberg dans la nuit du 14 avril 1912.",
+      "ex_fa": "کشتی در شب ۱۴ آوریل ۱۹۱۲ به کوه یخ برخورد کرد."
+    },
+    {
+      "fr": "le naufrage",
+      "fa": "غرق شدن کشتی",
+      "emoji": "⚓",
+      "difficulty": 4,
+      "ex": "Le naufrage a fait plus de 1 500 victimes.",
+      "ex_fa": "غرق شدن کشتی بیش از ۱۵۰۰ قربانی گرفت."
+    },
+    {
+      "fr": "la coque",
+      "fa": "بدنه کشتی",
+      "emoji": "🚢",
+      "difficulty": 4,
+      "ex": "La coque métallique se désintègre sous l'action des bactéries.",
+      "ex_fa": "بدنه فلزی تحت تأثیر باکتری‌ها متلاشی می‌شود."
+    },
+    {
+      "fr": "l'exploration",
+      "fa": "اکتشاف",
+      "emoji": "🔦",
+      "difficulty": 3,
+      "ex": "L'exploration des abysses reste un défi technologique majeur.",
+      "ex_fa": "اکتشاف اعماق همچنان یک چالش بزرگ فناوری است."
+    },
+    {
+      "fr": "la conservation",
+      "fa": "حفاظت، نگهداری",
+      "emoji": "🏺",
+      "difficulty": 4,
+      "ex": "La conservation des objets remontés exige des traitements chimiques délicats.",
+      "ex_fa": "حفاظت از اشیاء بیرون‌آورده‌شده به درمان‌های شیمیایی ظریف نیاز دارد."
+    },
+    {
+      "fr": "le sonar",
+      "fa": "سونار",
+      "emoji": "📡",
+      "difficulty": 4,
+      "ex": "Le sonar a permis de localiser l'épave après des décennies de recherche.",
+      "ex_fa": "سونار امکان مکان‌یابی لاشه را پس از دهه‌ها جستجو فراهم کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le secret de l'Atlantique",
+      "text": "Brock Lovett est un chasseur de trésors qui mène une {{BLANK_12}} dans l'océan Atlantique. Son objectif : retrouver le « Cœur de l'Océan », un diamant légendaire perdu dans le {{BLANK_10}} du Titanic. Son équipe utilise un {{BLANK_4}} de haute technologie pour atteindre l'{{BLANK_1}} à 3 800 mètres de profondeur. Grâce au {{BLANK_14}}, ils ont localisé la position exacte après des années de recherche. Lors de chaque {{BLANK_2}}, les chercheurs filment la {{BLANK_11}} du navire. Ils examinent la {{BLANK_6}} qui ronge lentement le métal depuis plus d'un siècle. Ils pénètrent dans la salle des machines par un {{BLANK_8}} brisé. Ils découvrent l'{{BLANK_7}} géante posée sur le fond marin. La {{BLANK_13}} des objets remontés exige des mois de traitement en laboratoire. Chaque découverte révèle un fragment de l'histoire tragique de ce {{BLANK_9}} qui a choqué le monde entier. Les chercheurs comprennent que le véritable {{BLANK_3}} n'est pas le diamant, mais les histoires humaines préservées dans les profondeurs. L'{{BLANK_5}} permet de reconstituer le passé à partir de ces vestiges silencieux.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "épave",
+          "options": [
+            "épave",
+            "plongée",
+            "trésor",
+            "submersible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "plongée",
+          "options": [
+            "plongée",
+            "archéologie sous-marine",
+            "corrosion",
+            "ancre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "trésor",
+          "options": [
+            "trésor",
+            "hublot",
+            "iceberg",
+            "naufrage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "submersible",
+          "options": [
+            "submersible",
+            "coque",
+            "exploration",
+            "conservation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "archéologie sous-marine",
+          "options": [
+            "archéologie sous-marine",
+            "sonar",
+            "épave",
+            "plongée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "corrosion",
+          "options": [
+            "corrosion",
+            "trésor",
+            "submersible",
+            "hublot"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "ancre",
+          "options": [
+            "ancre",
+            "iceberg",
+            "naufrage",
+            "coque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "hublot",
+          "options": [
+            "hublot",
+            "exploration",
+            "conservation",
+            "sonar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "naufrage",
+          "options": [
+            "naufrage",
+            "épave",
+            "plongée",
+            "trésor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "naufrage",
+          "options": [
+            "naufrage",
+            "submersible",
+            "archéologie sous-marine",
+            "corrosion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "coque",
+          "options": [
+            "coque",
+            "ancre",
+            "hublot",
+            "iceberg"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "exploration",
+          "options": [
+            "exploration",
+            "conservation",
+            "sonar",
+            "épave"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "conservation",
+          "options": [
+            "conservation",
+            "plongée",
+            "trésor",
+            "submersible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "sonar",
+          "options": [
+            "sonar",
+            "archéologie sous-marine",
+            "corrosion",
+            "ancre"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les fantômes de l'abîme",
+      "inspiration": "Titanic (James Cameron, 1997)",
+      "text": "À peine Brock eut-il fixé son regard sur les écrans du {{BLANK_4}} qu'il sentit le poids des siècles peser sur ses épaules. Ce chasseur de {{BLANK_3}}s moderne, qui avait troqué les cartes au trésor contre les sonars, descendait dans les abysses comme on descend dans une crypte. L'{{BLANK_1}} du Titanic l'attendait à 3 800 mètres, cathédrale rouillée où dormaient les fantômes de 1 500 âmes. Chaque {{BLANK_2}} était une descente aux enfers, une immersion dans les ténèbres glacées où la lumière du soleil n'avait jamais pénétré. Grâce au {{BLANK_14}}, son équipe avait localisé le tombeau après des décennies de quête obsessionnelle. Les projecteurs révélaient la {{BLANK_11}} éventrée, cette peau d'acier que la {{BLANK_6}} rongeait patiemment, comme un cancer minéral qui dévorait l'histoire. Un {{BLANK_8}} brisé laissait entrevoir l'intimité figée d'une cabine de première classe, où des chaussures de femme attendaient encore leurs propriétaires disparues. Dehors, l'{{BLANK_7}} massive reposait sur le sable comme un monument funéraire, rappelant que même les plus grands navires finissent par s'agenouiller devant l'océan. Brock savait que ce {{BLANK_9}} n'était pas un simple accident maritime, mais le symbole d'une époque où l'orgueil humain avait cru pouvoir défier les éléments. En remontant les objets pour leur {{BLANK_13}} délicate en laboratoire, il comprenait que l'{{BLANK_5}} n'était pas une science de pillage, mais un dialogue avec les morts, une manière de leur redonner voix. Le véritable trésor n'était pas le diamant qu'il cherchait, mais les histoires humaines qui palpitaient encore dans chaque assiette, chaque lettre, chaque peigne oublié. Et quand l'{{BLANK_12}} s'achevait, Brock remontait vers la surface avec la certitude que les océans gardaient plus de secrets que toutes les bibliothèques du monde, et que chaque épave était un livre fermé qu'il fallait apprendre à lire avec humilité.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "épave",
+          "options": [
+            "épave",
+            "plongée",
+            "trésor",
+            "submersible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "plongée",
+          "options": [
+            "plongée",
+            "archéologie sous-marine",
+            "corrosion",
+            "ancre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "trésor",
+          "options": [
+            "trésor",
+            "hublot",
+            "iceberg",
+            "naufrage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "submersible",
+          "options": [
+            "submersible",
+            "coque",
+            "exploration",
+            "conservation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "archéologie sous-marine",
+          "options": [
+            "archéologie sous-marine",
+            "sonar",
+            "épave",
+            "plongée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "corrosion",
+          "options": [
+            "corrosion",
+            "trésor",
+            "submersible",
+            "hublot"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "ancre",
+          "options": [
+            "ancre",
+            "iceberg",
+            "naufrage",
+            "coque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "hublot",
+          "options": [
+            "hublot",
+            "exploration",
+            "conservation",
+            "sonar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "naufrage",
+          "options": [
+            "naufrage",
+            "épave",
+            "plongée",
+            "trésor"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "iceberg",
+          "options": [
+            "iceberg",
+            "submersible",
+            "archéologie sous-marine",
+            "corrosion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "coque",
+          "options": [
+            "coque",
+            "ancre",
+            "hublot",
+            "iceberg"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "exploration",
+          "options": [
+            "exploration",
+            "conservation",
+            "sonar",
+            "épave"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "conservation",
+          "options": [
+            "conservation",
+            "plongée",
+            "trésor",
+            "submersible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "sonar",
+          "options": [
+            "sonar",
+            "archéologie sous-marine",
+            "corrosion",
+            "ancre"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Archéologie sous-marine",
+    "title_fa": "آزمون : باستان‌شناسی زیر آب",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Les restes d'un navire coulé qui reposent au fond de l'eau sont l'____.",
+        "options": [
+          "épave",
+          "plongée",
+          "trésor",
+          "submersible"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بقایای کشتی غرق‌شده = épave."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de descendre sous l'eau avec un équipement respiratoire pour explorer est la ____.",
+        "options": [
+          "plongée",
+          "archéologie sous-marine",
+          "corrosion",
+          "ancre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "غوطه‌ور شدن زیر آب = plongée."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des objets précieux cachés ou perdus que l'on cherche à découvrir est le ____.",
+        "options": [
+          "trésor",
+          "hublot",
+          "iceberg",
+          "naufrage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اشیاء قیمتی گمشده = trésor."
+      },
+      {
+        "type": "mcq",
+        "question": "L'engin capable de naviguer sous l'eau pour explorer les grandes profondeurs est le ____.",
+        "options": [
+          "submersible",
+          "coque",
+          "exploration",
+          "conservation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شناور زیرآبی اکتشافی = submersible."
+      },
+      {
+        "type": "mcq",
+        "question": "La discipline scientifique qui étudie les vestiges humains immergés (épaves, ports engloutis) est l'____.",
+        "options": [
+          "archéologie sous-marine",
+          "sonar",
+          "épave",
+          "plongée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه آثار غرق‌شده = archéologie sous-marine."
+      },
+      {
+        "type": "mcq",
+        "question": "La dégradation chimique des métaux au contact de l'eau de mer est la ____.",
+        "options": [
+          "corrosion",
+          "trésor",
+          "submersible",
+          "hublot"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تخریب شیمیایی فلزات = corrosion."
+      },
+      {
+        "type": "mcq",
+        "question": "La lourde pièce de métal qui sert à immobiliser un navire au fond de l'eau est l'____.",
+        "options": [
+          "ancre",
+          "iceberg",
+          "naufrage",
+          "coque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله تثبیت کشتی = ancre."
+      },
+      {
+        "type": "mcq",
+        "question": "La petite fenêtre ronde et étanche percée dans la coque d'un navire est le ____.",
+        "options": [
+          "hublot",
+          "exploration",
+          "conservation",
+          "sonar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پنجره کوچک دایره‌ای = hublot."
+      },
+      {
+        "type": "mcq",
+        "question": "La masse de glace détachée d'un glacier qui flotte sur la mer est l'____.",
+        "options": [
+          "iceberg",
+          "naufrage",
+          "épave",
+          "plongée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توده یخ شناور = iceberg."
+      },
+      {
+        "type": "mcq",
+        "question": "L'accident maritime au cours duquel un bateau coule est le ____.",
+        "options": [
+          "naufrage",
+          "submersible",
+          "archéologie sous-marine",
+          "corrosion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حادثه غرق شدن کشتی = naufrage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'enveloppe extérieure du navire qui assure sa flottabilité et sa protection est la ____.",
+        "options": [
+          "coque",
+          "ancre",
+          "hublot",
+          "iceberg"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پوسته بیرونی کشتی = coque."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de parcourir une zone inconnue pour y faire des découvertes est l'____.",
+        "options": [
+          "exploration",
+          "conservation",
+          "sonar",
+          "épave"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کاوش ناحیه ناشناخته = exploration."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des techniques qui visent à préserver un objet du temps et de la dégradation est la ____.",
+        "options": [
+          "conservation",
+          "plongée",
+          "trésor",
+          "submersible"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک‌های حفاظت از اشیاء = conservation."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système qui utilise les ondes sonores pour détecter des objets sous l'eau est le ____.",
+        "options": [
+          "sonar",
+          "archéologie sous-marine",
+          "corrosion",
+          "ancre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم ردیابی صوتی زیر آب = sonar."
+      },
+      {
+        "type": "binary",
+        "question": "L'archéologie sous-marine étudie uniquement les trésors en or trouvés dans les épaves.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. باستان‌شناسی زیر آب همه جنبه‌های تاریخی و فرهنگی را مطالعه می‌کند، نه فقط طلا."
+      },
+      {
+        "type": "binary",
+        "question": "La corrosion marine est accélérée par la salinité et les micro-organismes de l'eau de mer.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. نمک و میکروارگانیسم‌ها خوردگی دریایی را تسریع می‌کنند."
+      },
+      {
+        "type": "binary",
+        "question": "Un submersible est un navire qui navigue exclusivement à la surface de l'océan.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. زیردریایی اکتشافی (submersible) برای حرکت در اعماق طراحی شده است."
+      },
+      {
+        "type": "binary",
+        "question": "Le hublot est une ouverture vitrée qui permet d'observer l'extérieur depuis l'intérieur d'un navire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دریچه کوچک پنجره‌ای برای دیدن بیرون است."
+      },
+      {
+        "type": "binary",
+        "question": "La conservation des objets archéologiques remontés à la surface nécessite des traitements chimiques spécifiques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. حفاظت از اشیاء باستانی بیرون‌آورده‌شده نیاز به درمان‌های خاص دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le sonar utilise des ondes sonores pour localiser des objets sous l'eau.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سونار از امواج صوتی برای مکان‌یابی استفاده می‌کند."
+      }
+    ]
+  }
+}
