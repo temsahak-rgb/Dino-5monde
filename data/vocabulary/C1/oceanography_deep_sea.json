@@ -1,0 +1,680 @@
+{
+  "id": "oceanography_deep_sea",
+  "level": "C1",
+  "theme": "Océanographie, abysses et exploration sous-marine",
+  "theme_fa": "اقیانوس‌شناسی، اعماق دریا و اکتشافات زیرآبی",
+  "icon": "🌊",
+  "inspiration": "Abyss (James Cameron, 1989)",
+  "words": [
+    {
+      "fr": "l'océanographie",
+      "fa": "اقیانوس‌شناسی",
+      "emoji": "🌊",
+      "difficulty": 4,
+      "ex": "L'océanographie étudie les mers, leurs courants et leurs écosystèmes.",
+      "ex_fa": "اقیانوس‌شناسی دریاها، جریان‌ها و اکوسیستم‌های آن‌ها را مطالعه می‌کند."
+    },
+    {
+      "fr": "les abysses",
+      "fa": "اعماق دریا",
+      "emoji": "🕳️",
+      "difficulty": 4,
+      "ex": "Les abysses restent l'une des zones les plus inexplorées de la Terre.",
+      "ex_fa": "اعماق دریا همچنان یکی از کاوش‌نشده‌ترین مناطق زمین است."
+    },
+    {
+      "fr": "le sous-marin",
+      "fa": "زیردریایی",
+      "emoji": "🚤",
+      "difficulty": 3,
+      "ex": "Le sous-marin nucléaire peut rester en immersion pendant des mois.",
+      "ex_fa": "زیردریایی هسته‌ای می‌تواند ماه‌ها زیر آب بماند."
+    },
+    {
+      "fr": "la pression",
+      "fa": "فشار",
+      "emoji": "⬇️",
+      "difficulty": 3,
+      "ex": "La pression hydrostatique augmente d'un bar tous les dix mètres.",
+      "ex_fa": "فشار هیدرواستاتیک به ازای هر ده متر یک بار افزایش می‌یابد."
+    },
+    {
+      "fr": "le sonar",
+      "fa": "سونار",
+      "emoji": "📡",
+      "difficulty": 4,
+      "ex": "Le sonar utilise les ondes acoustiques pour cartographier les fonds marins.",
+      "ex_fa": "سونار از امواج صوتی برای نقشه‌برداری از بستر دریا استفاده می‌کند."
+    },
+    {
+      "fr": "la bioluminescence",
+      "fa": "زیست‌تابی",
+      "emoji": "✨",
+      "difficulty": 5,
+      "ex": "La bioluminescence permet aux créatures des profondeurs de communiquer.",
+      "ex_fa": "زیست‌تابی به موجودات اعماق اجازه ارتباط می‌دهد."
+    },
+    {
+      "fr": "le courant marin",
+      "fa": "جریان دریایی",
+      "emoji": "🌀",
+      "difficulty": 4,
+      "ex": "Le Gulf Stream est un courant marin chaud qui adoucit le climat européen.",
+      "ex_fa": "گلف استریم یک جریان دریایی گرم است که آب و هوای اروپا را ملایم می‌کند."
+    },
+    {
+      "fr": "la fosse",
+      "fa": "گودال اقیانوسی",
+      "emoji": "🕳️",
+      "difficulty": 4,
+      "ex": "La fosse des Mariannes est le point le plus profond des océans.",
+      "ex_fa": "گودال ماریانا عمیق‌ترین نقطه اقیانوس‌هاست."
+    },
+    {
+      "fr": "le scaphandre",
+      "fa": "لباس غواصی",
+      "emoji": "🤿",
+      "difficulty": 4,
+      "ex": "Le scaphandre rigide protège le plongeur des pressions extrêmes.",
+      "ex_fa": "لباس غواصی صلب، غواص را از فشارهای شدید محافظت می‌کند."
+    },
+    {
+      "fr": "la source hydrothermale",
+      "fa": "چشمه آبگرمایی (دریچه حرارتی)",
+      "emoji": "🌋",
+      "difficulty": 5,
+      "ex": "Une source hydrothermale abrite une vie bactérienne unique.",
+      "ex_fa": "چشمه آبگرمایی میزبان حیات باکتریایی منحصربه‌فردی است."
+    },
+    {
+      "fr": "le plancton",
+      "fa": "پلانکتون",
+      "emoji": "🦠",
+      "difficulty": 3,
+      "ex": "Le plancton produit plus de la moitié de l'oxygène terrestre.",
+      "ex_fa": "پلانکتون بیش از نیمی از اکسیژن زمین را تولید می‌کند."
+    },
+    {
+      "fr": "le récif",
+      "fa": "آب‌سنگ، صخره مرجانی",
+      "emoji": "🪸",
+      "difficulty": 4,
+      "ex": "Le récif corallien est un écosystème d'une biodiversité exceptionnelle.",
+      "ex_fa": "آب‌سنگ مرجانی یک اکوسیستم با تنوع زیستی فوق‌العاده است."
+    },
+    {
+      "fr": "l'immersion",
+      "fa": "غوطه‌وری، فرورفتن",
+      "emoji": "💧",
+      "difficulty": 4,
+      "ex": "L'immersion du bathyscaphe a duré plusieurs heures.",
+      "ex_fa": "غوطه‌وری باتیسکاف چندین ساعت طول کشید."
+    },
+    {
+      "fr": "l'écosystème",
+      "fa": "اکوسیستم",
+      "emoji": "🌍",
+      "difficulty": 3,
+      "ex": "L'écosystème marin est fragilisé par la pollution plastique.",
+      "ex_fa": "اکوسیستم دریایی با آلودگی پلاستیکی تضعیف شده است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le secret des profondeurs",
+      "text": "Bud Brigman est un expert en {{BLANK_1}} et chef d'une équipe de sauvetage sous-marin. Il pilote un {{BLANK_3}} de haute technologie pour explorer {{BLANK_2}}. À plus de six cents mètres, la {{BLANK_4}} de l'eau est écrasante et menace d'écraser la coque. Le {{BLANK_5}} de bord détecte un obstacle massif sur le fond. En s'approchant de la {{BLANK_8}} océanique, l'obscurité est totale. Soudain, une lumière bleue apparaît : c'est la {{BLANK_6}} d'une créature inconnue. Le {{BLANK_7}} glacial de la zone rend la navigation difficile. Bud enfile un {{BLANK_9}} expérimental à respiration liquide pour sortir du vaisseau. Il découvre une {{BLANK_10}} où l'eau bout à plus de trois cents degrés. Autour de cette chaleur, un {{BLANK_14}} unique et inconnu de la science s'est développé. Le {{BLANK_11}} microscopique sert de base à cette chaîne alimentaire. Plus loin, un ancien {{BLANK_12}} corallien fossilisé témoigne d'une vie passée. L'{{BLANK_13}} de Bud dans ce monde alien dure des heures. Il réalise que l'humanité ne connaît qu'une infime partie de sa propre planète.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "océanographie",
+          "options": [
+            "océanographie",
+            "abysses",
+            "sous-marin",
+            "pression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "les abysses",
+          "options": [
+            "les abysses",
+            "sonar",
+            "bioluminescence",
+            "courant marin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "sous-marin",
+          "options": [
+            "sous-marin",
+            "fosse",
+            "scaphandre",
+            "source hydrothermale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "pression",
+          "options": [
+            "pression",
+            "plancton",
+            "récif",
+            "immersion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sonar",
+          "options": [
+            "sonar",
+            "écosystème",
+            "océanographie",
+            "abysses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "bioluminescence",
+          "options": [
+            "bioluminescence",
+            "sous-marin",
+            "pression",
+            "sonar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "courant marin",
+          "options": [
+            "courant marin",
+            "fosse",
+            "scaphandre",
+            "source hydrothermale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "fosse",
+          "options": [
+            "fosse",
+            "plancton",
+            "récif",
+            "immersion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "scaphandre",
+          "options": [
+            "scaphandre",
+            "écosystème",
+            "océanographie",
+            "abysses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "source hydrothermale",
+          "options": [
+            "source hydrothermale",
+            "sous-marin",
+            "pression",
+            "sonar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "plancton",
+          "options": [
+            "plancton",
+            "bioluminescence",
+            "courant marin",
+            "fosse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "récif",
+          "options": [
+            "récif",
+            "scaphandre",
+            "source hydrothermale",
+            "plancton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "immersion",
+          "options": [
+            "immersion",
+            "récif",
+            "écosystème",
+            "océanographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "écosystème",
+          "options": [
+            "écosystème",
+            "immersion",
+            "abysses",
+            "pression"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le silence des abysses",
+      "inspiration": "Abyss (James Cameron, 1989)",
+      "text": "À peine Bud Brigman eut-il franchi le sas de son {{BLANK_3}} que le monde de la surface cessa d'exister pour laisser place au royaume du silence. Cet expert en {{BLANK_1}}, habitué aux tempêtes et aux vagues, plongeait désormais vers l'inconnu, là où la lumière du soleil n'avait jamais osé s'aventurer. Autour de lui, {{BLANK_2}} exerçaient leur domination absolue, un empire de ténèbres et de froid. La {{BLANK_4}} de l'eau écrasait la coque de titane dans des gémissements sinistres, rappelant à chaque instant la fragilité de l'intrus humain. Le {{BLANK_5}} traçait des fantômes sur les écrans, cherchant une épave perdue dans l'immensité de la {{BLANK_8}} océanique, cette cicatrice béante de la croûte terrestre. Soudain, dans l'obscurité éternelle, une lueur spectrale dansa : la {{BLANK_6}} d'une méduse géante pulsait comme un cœur de néon. Le {{BLANK_7}} invisible frappait le vaisseau comme un vent glacé, charriant les secrets des pôles. Bud dut revêtir un {{BLANK_9}} monstrueux, rempli d'un liquide respirable, pour s'extraire de sa prison de métal et marcher sur le fond. Là, il découvrit une {{BLANK_10}} crachant une fumée noire et brûlante, une oasis de chaleur au milieu du désert gelé. Autour de cette fournaise, un {{BLANK_14}} impossible s'épanouissait, défiant toutes les lois de la biologie. Le {{BLANK_11}} microscopique dansait dans les faisceaux des projecteurs, base invisible de cette cathédrale sous-marine. Plus loin, les squelettes blancs d'un ancien {{BLANK_12}} témoignaient d'un temps où ces profondeurs étaient baignées de lumière. L'{{BLANK_13}} de Bud dans ce ventre liquide dura une éternité. Quand il remonta vers la surface, il sut que l'homme ne serait plus jamais le même, car il avait regardé dans les yeux les véritables maîtres de la Terre.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "océanographie",
+          "options": [
+            "océanographie",
+            "abysses",
+            "sous-marin",
+            "pression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "les abysses",
+          "options": [
+            "les abysses",
+            "sonar",
+            "bioluminescence",
+            "courant marin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "sous-marin",
+          "options": [
+            "sous-marin",
+            "fosse",
+            "scaphandre",
+            "source hydrothermale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "pression",
+          "options": [
+            "pression",
+            "plancton",
+            "récif",
+            "immersion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sonar",
+          "options": [
+            "sonar",
+            "écosystème",
+            "océanographie",
+            "abysses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "bioluminescence",
+          "options": [
+            "bioluminescence",
+            "sous-marin",
+            "pression",
+            "sonar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "courant marin",
+          "options": [
+            "courant marin",
+            "fosse",
+            "scaphandre",
+            "source hydrothermale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "fosse",
+          "options": [
+            "fosse",
+            "plancton",
+            "récif",
+            "immersion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "scaphandre",
+          "options": [
+            "scaphandre",
+            "écosystème",
+            "océanographie",
+            "abysses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "source hydrothermale",
+          "options": [
+            "source hydrothermale",
+            "sous-marin",
+            "pression",
+            "sonar"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "plancton",
+          "options": [
+            "plancton",
+            "bioluminescence",
+            "courant marin",
+            "fosse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "récif",
+          "options": [
+            "récif",
+            "scaphandre",
+            "source hydrothermale",
+            "plancton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "immersion",
+          "options": [
+            "immersion",
+            "récif",
+            "écosystème",
+            "océanographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "écosystème",
+          "options": [
+            "écosystème",
+            "immersion",
+            "abysses",
+            "pression"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Océanographie et abysses",
+    "title_fa": "آزمون : اقیانوس‌شناسی و اعماق دریا",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie les océans, leurs courants, leur géologie et les organismes qui y vivent est l'____.",
+        "options": [
+          "océanographie",
+          "abysses",
+          "sous-marin",
+          "pression"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه اقیانوس‌ها = océanographie."
+      },
+      {
+        "type": "mcq",
+        "question": "Les zones les plus profondes des océans, caractérisées par l'obscurité totale et des pressions extrêmes, sont ____.",
+        "options": [
+          "les abysses",
+          "sonar",
+          "bioluminescence",
+          "courant marin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمیق‌ترین و تاریک‌ترین مناطق دریا = les abysses."
+      },
+      {
+        "type": "mcq",
+        "question": "Le navire ou l'engin conçu pour naviguer sous la surface de l'eau est le ____.",
+        "options": [
+          "sous-marin",
+          "fosse",
+          "scaphandre",
+          "source hydrothermale"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شناور زیرآبی = sous-marin."
+      },
+      {
+        "type": "mcq",
+        "question": "La force physique exercée par le poids de l'eau, qui augmente considérablement avec la profondeur, est la ____.",
+        "options": [
+          "pression",
+          "plancton",
+          "récif",
+          "immersion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نیروی وزن آب = pression."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système de détection qui utilise la propagation du son pour naviguer ou localiser des objets sous l'eau est le ____.",
+        "options": [
+          "sonar",
+          "écosystème",
+          "océanographie",
+          "abysses"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم ردیابی صوتی زیر آب = sonar."
+      },
+      {
+        "type": "mcq",
+        "question": "La production et l'émission de lumière par des organismes vivants, fréquentes dans les profondeurs marines, est la ____.",
+        "options": [
+          "bioluminescence",
+          "sous-marin",
+          "pression",
+          "sonar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تولید نور توسط موجودات زنده = bioluminescence."
+      },
+      {
+        "type": "mcq",
+        "question": "Le déplacement massif et continu d'eau dans les océans, influençant le climat mondial, est le ____.",
+        "options": [
+          "courant marin",
+          "fosse",
+          "scaphandre",
+          "source hydrothermale"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جریان عظیم آب در دریا = courant marin."
+      },
+      {
+        "type": "mcq",
+        "question": "La dépression très profonde et étroite du fond sous-marin, souvent située près des zones de subduction, est la ____.",
+        "options": [
+          "fosse",
+          "plancton",
+          "récif",
+          "immersion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گودال عمیق بستر دریا = fosse."
+      },
+      {
+        "type": "mcq",
+        "question": "L'équipement individuel étanche et résistant qui permet à un plongeur d'évoluer sous l'eau est le ____.",
+        "options": [
+          "scaphandre",
+          "écosystème",
+          "océanographie",
+          "abysses"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لباس و تجهیزات غواصی = scaphandre."
+      },
+      {
+        "type": "mcq",
+        "question": "L'émanation d'eau très chaude et riche en minéraux sur le fond océanique, abritant une vie spécifique, est la ____.",
+        "options": [
+          "source hydrothermale",
+          "sous-marin",
+          "pression",
+          "sonar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چشمه آب گرم و معدنی کف اقیانوس = source hydrothermale."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des organismes microscopiques en suspension dans l'eau, base des chaînes alimentaires marines, est le ____.",
+        "options": [
+          "plancton",
+          "bioluminescence",
+          "courant marin",
+          "fosse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "موجودات میکروسکوپی شناور = plancton."
+      },
+      {
+        "type": "mcq",
+        "question": "La structure rocheuse sous-marine, souvent construite par des coraux, abritant une grande biodiversité est le ____.",
+        "options": [
+          "récif",
+          "scaphandre",
+          "source hydrothermale",
+          "plancton"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صخره یا آب‌سنگ دریایی = récif."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de plonger ou de s'enfoncer complètement dans un liquide, comme un engin sous la mer, est l'____.",
+        "options": [
+          "immersion",
+          "récif",
+          "écosystème",
+          "océanographie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرو رفتن و غوطه‌وری = immersion."
+      },
+      {
+        "type": "mcq",
+        "question": "Le système formé par un ensemble d'organismes vivants et leur environnement physique interagissant entre eux est l'____.",
+        "options": [
+          "écosystème",
+          "immersion",
+          "abysses",
+          "pression"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سیستم تعامل موجودات و محیط = écosystème."
+      },
+      {
+        "type": "binary",
+        "question": "La pression hydrostatique diminue à mesure que l'on descend plus profondément dans l'océan.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. فشار آب با افزایش عمق به شدت افزایش می‌یابد."
+      },
+      {
+        "type": "binary",
+        "question": "Le sonar fonctionne en émettant des ondes sonores qui rebondissent sur les obstacles sous-marins.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. سونار با بازتاب امواج صوتی از موانع کار می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La bioluminescence est la capacité de certains animaux marins à produire leur propre lumière.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. زیست‌تابی توانایی تولید نور توسط موجودات زنده است."
+      },
+      {
+        "type": "binary",
+        "question": "Une fosse océanique est une zone de hauts-fonds peu profonds où la lumière du soleil pénètre facilement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. fosse گودال بسیار عمیق و تاریک اقیانوسی است."
+      },
+      {
+        "type": "binary",
+        "question": "Les sources hydrothermales abritent des écosystèmes qui survivent sans lumière solaire grâce à la chimiosynthèse.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. حیات در چشمه‌های آبگرمایی به جای نور خورشید بر پایه واکنش‌های شیمیایی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le plancton végétal (phytoplancton) produit une part significative de l'oxygène que nous respirons sur Terre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. فیتوپلانکتون‌ها بخش عظیمی از اکسیژن کره زمین را تولید می‌کنند."
+      }
+    ]
+  }
+}
