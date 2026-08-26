@@ -1,0 +1,680 @@
+{
+  "id": "paleontology_dinosaurs",
+  "level": "C1",
+  "theme": "Paléontologie, dinosaures et ères géologiques",
+  "theme_fa": "دیرینه‌شناسی، دایناسورها و دوره‌های زمین‌شناسی",
+  "icon": "🦖",
+  "inspiration": "Jurassic Park (Steven Spielberg, 1993)",
+  "words": [
+    {
+      "fr": "la paléontologie",
+      "fa": "دیرینه‌شناسی",
+      "emoji": "🦴",
+      "difficulty": 5,
+      "ex": "La paléontologie étudie les formes de vie disparues grâce aux fossiles.",
+      "ex_fa": "دیرینه‌شناسی اشکال حیات منقرض‌شده را از طریق فسیل‌ها مطالعه می‌کند."
+    },
+    {
+      "fr": "le fossile",
+      "fa": "فسیل",
+      "emoji": "🪨",
+      "difficulty": 3,
+      "ex": "Le fossile de trilobite date de plus de 500 millions d'années.",
+      "ex_fa": "فسیل تریلوبیت به بیش از ۵۰۰ میلیون سال پیش برمی‌گردد."
+    },
+    {
+      "fr": "le dinosaure",
+      "fa": "دایناسور",
+      "emoji": "🦖",
+      "difficulty": 2,
+      "ex": "Le Tyrannosaure rex était l'un des plus grands prédateurs terrestres.",
+      "ex_fa": "تیرانوسوروس رکس یکی از بزرگترین شکارچیان خشکی بود."
+    },
+    {
+      "fr": "l'ambre",
+      "fa": "کهربا",
+      "emoji": "🟠",
+      "difficulty": 4,
+      "ex": "L'ambre peut conserver des insectes intacts pendant des millions d'années.",
+      "ex_fa": "کهربا می‌تواند حشرات را برای میلیون‌ها سال سالم حفظ کند."
+    },
+    {
+      "fr": "l'ADN",
+      "fa": "دی‌ان‌ای (ماده ژنتیکی)",
+      "emoji": "🧬",
+      "difficulty": 4,
+      "ex": "L'extraction d'ADN ancien permet d'étudier l'évolution des espèces.",
+      "ex_fa": "استخراج DNA باستانی امکان مطالعه تکامل گونه‌ها را می‌دهد."
+    },
+    {
+      "fr": "la fouille",
+      "fa": "کاوش، حفاری",
+      "emoji": "⛏️",
+      "difficulty": 4,
+      "ex": "La fouille archéologique a révélé un campement préhistorique.",
+      "ex_fa": "کاوش باستان‌شناسی یک اردوگاه پیشاتاریخی را آشکار کرد."
+    },
+    {
+      "fr": "le squelette",
+      "fa": "اسکلت",
+      "emoji": "💀",
+      "difficulty": 3,
+      "ex": "Le squelette complet a été reconstitué dans le musée d'histoire naturelle.",
+      "ex_fa": "اسکلت کامل در موزه تاریخ طبیعی بازسازی شد."
+    },
+    {
+      "fr": "le carnivore",
+      "fa": "گوشت‌خوار",
+      "emoji": "🥩",
+      "difficulty": 3,
+      "ex": "Le lion est un mammifère carnivore au sommet de la chaîne alimentaire.",
+      "ex_fa": "شیر یک پستاندار گوشت‌خوار در رأس زنجیره غذایی است."
+    },
+    {
+      "fr": "l'herbivore",
+      "fa": "گیاه‌خوار",
+      "emoji": "🌿",
+      "difficulty": 3,
+      "ex": "L'éléphant est un herbivore qui consomme des centaines de kilos de végétation.",
+      "ex_fa": "فیل گیاه‌خواری است که صدها کیلو گیاه مصرف می‌کند."
+    },
+    {
+      "fr": "la griffe",
+      "fa": "پنجه، چنگال",
+      "emoji": "🦞",
+      "difficulty": 4,
+      "ex": "La griffe rétractile du faucon lui permet de saisir ses proies en vol.",
+      "ex_fa": "چنگال باز شونده شاهین به او اجازه می‌دهد طعمه‌اش را در هوا بقاپد."
+    },
+    {
+      "fr": "le jurassique",
+      "fa": "دوره ژوراسیک",
+      "emoji": "🌋",
+      "difficulty": 4,
+      "ex": "Le jurassique est une période géologique marquée par la domination des dinosaures.",
+      "ex_fa": "ژوراسیک دوره‌ای زمین‌شناسی است که با سلطه دایناسورها مشخص می‌شود."
+    },
+    {
+      "fr": "l'extinction",
+      "fa": "انقراض",
+      "emoji": "☄️",
+      "difficulty": 4,
+      "ex": "La cinquième extinction massive a éliminé les dinosaures non-aviens.",
+      "ex_fa": "پنجمین انقراض بزرگ، دایناسورهای غیرپرنده را از بین برد."
+    },
+    {
+      "fr": "le paléontologue",
+      "fa": "دیرینه‌شناس",
+      "emoji": "🧑‍🔬",
+      "difficulty": 5,
+      "ex": "Le paléontologue analyse les ossements pour comprendre le comportement animal.",
+      "ex_fa": "دیرینه‌شناس استخوان‌ها را برای درک رفتار حیوانات تحلیل می‌کند."
+    },
+    {
+      "fr": "la résine",
+      "fa": "صمغ، شیره درخت",
+      "emoji": "🌲",
+      "difficulty": 4,
+      "ex": "La résine de pin durcit avec le temps pour se transformer en ambre.",
+      "ex_fa": "صمغ کاج با گذشت زمان سخت شده و به کهربا تبدیل می‌شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le parc des merveilles",
+      "text": "Alan Grant est un {{BLANK_13}} passionné qui dirige une {{BLANK_6}} dans le Montana. Il met au jour le {{BLANK_2}} d'un énorme {{BLANK_3}} prédateur. Son équipe dégage délicatement le {{BLANK_7}} enfoui sous la roche depuis des millions d'années. Un jour, il est invité dans un parc à thème révolutionnaire où des créatures disparues ont été recréées. Les scientifiques ont extrait de l'{{BLANK_5}} ancien d'un moustique conservé dans de l'{{BLANK_4}} fossilisé. La {{BLANK_14}} des arbres préhistoriques a piégé l'insecte et son sang. Dans le parc, Alan observe un {{BLANK_9}} géant qui broute les cimes des arbres, tandis qu'un redoutable {{BLANK_8}} chasse en meute. Il remarque la {{BLANK_10}} rétractile d'un raptor qui dépasse de la terre. Ces créatures de l'ère {{BLANK_11}} sont revenues à la vie, ignorant qu'une nouvelle {{BLANK_12}} les menace à cause de l'orgueil humain. La {{BLANK_1}} vient de basculer de l'étude du passé à la survie au présent.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "paléontologie",
+          "options": [
+            "paléontologie",
+            "fossile",
+            "dinosaure",
+            "ambre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fossile",
+          "options": [
+            "fossile",
+            "ADN",
+            "fouille",
+            "squelette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "dinosaure",
+          "options": [
+            "dinosaure",
+            "carnivore",
+            "herbivore",
+            "griffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "ambre",
+          "options": [
+            "ambre",
+            "jurassique",
+            "extinction",
+            "paléontologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "ADN",
+          "options": [
+            "ADN",
+            "résine",
+            "paléontologie",
+            "fossile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "fouille",
+          "options": [
+            "fouille",
+            "dinosaure",
+            "ambre",
+            "ADN"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "squelette",
+          "options": [
+            "squelette",
+            "carnivore",
+            "herbivore",
+            "griffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "carnivore",
+          "options": [
+            "carnivore",
+            "jurassique",
+            "extinction",
+            "paléontologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "herbivore",
+          "options": [
+            "herbivore",
+            "résine",
+            "paléontologie",
+            "fossile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "griffe",
+          "options": [
+            "griffe",
+            "dinosaure",
+            "ambre",
+            "ADN"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "jurassique",
+          "options": [
+            "jurassique",
+            "fouille",
+            "squelette",
+            "carnivore"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "extinction",
+          "options": [
+            "extinction",
+            "herbivore",
+            "griffe",
+            "jurassique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "paléontologue",
+          "options": [
+            "paléontologue",
+            "résine",
+            "paléontologie",
+            "fossile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "résine",
+          "options": [
+            "résine",
+            "dinosaure",
+            "ambre",
+            "ADN"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le sang de l'oubli",
+      "inspiration": "Jurassic Park (Steven Spielberg, 1993)",
+      "text": "À peine Alan eut-il effleuré la goutte d'{{BLANK_4}} translucide que soixante-cinq millions d'années se réveillèrent sous ses doigts tremblants. Ce {{BLANK_13}} endurci, qui avait passé sa vie à gratter la poussière des âges révolus, se tenait maintenant face à l'impossible. Dans cette {{BLANK_6}} stérile du Montana, il ne cherchait que l'ombre d'un {{BLANK_2}}, le fragment d'un {{BLANK_7}} brisé par le temps, mais on l'avait amené sur une île où la science avait commis le péché ultime. Ici, la {{BLANK_1}} n'était plus une science de la mort, mais une fabrique de monstres. En observant le brachiosaure, ce doux {{BLANK_9}} qui mâchonnait les nuages, il comprit que l'homme avait volé le feu des dieux. Les généticiens avaient percé les secrets de l'{{BLANK_5}} endormi dans la {{BLANK_14}} fossilisée, arrachant la vie à un moustique prisonnier de l'{{BLANK_4}} éternel. Mais la nature ne se laisse pas dompter. Dans la jungle électrique, le {{BLANK_8}} suprême testait les clôtures, et chaque {{BLANK_10}} acérée frappait le métal avec une intelligence glaciale. Ces rois du {{BLANK_11}}, ressuscités par l'orgueil d'un milliardaire, ne tarderaient pas à réclamer leur territoire, transformant le parc d'attractions en un théâtre sanglant où l'humanité elle-même risquait de connaître sa propre {{BLANK_12}}, dévorée par les fantômes qu'elle avait eu l'audace de ranimer.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "paléontologie",
+          "options": [
+            "paléontologie",
+            "fossile",
+            "dinosaure",
+            "ambre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fossile",
+          "options": [
+            "fossile",
+            "ADN",
+            "fouille",
+            "squelette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "dinosaure",
+          "options": [
+            "dinosaure",
+            "carnivore",
+            "herbivore",
+            "griffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "ambre",
+          "options": [
+            "ambre",
+            "jurassique",
+            "extinction",
+            "paléontologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "ADN",
+          "options": [
+            "ADN",
+            "résine",
+            "paléontologie",
+            "fossile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "fouille",
+          "options": [
+            "fouille",
+            "dinosaure",
+            "ambre",
+            "ADN"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "squelette",
+          "options": [
+            "squelette",
+            "carnivore",
+            "herbivore",
+            "griffe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "carnivore",
+          "options": [
+            "carnivore",
+            "jurassique",
+            "extinction",
+            "paléontologue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "herbivore",
+          "options": [
+            "herbivore",
+            "résine",
+            "paléontologie",
+            "fossile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "griffe",
+          "options": [
+            "griffe",
+            "dinosaure",
+            "ambre",
+            "ADN"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "jurassique",
+          "options": [
+            "jurassique",
+            "fouille",
+            "squelette",
+            "carnivore"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "extinction",
+          "options": [
+            "extinction",
+            "herbivore",
+            "griffe",
+            "jurassique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "paléontologue",
+          "options": [
+            "paléontologue",
+            "résine",
+            "paléontologie",
+            "fossile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "résine",
+          "options": [
+            "résine",
+            "dinosaure",
+            "ambre",
+            "ADN"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Paléontologie et dinosaures",
+    "title_fa": "آزمون : دیرینه‌شناسی و دایناسورها",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science qui étudie les organismes vivants disparus grâce à l'analyse des fossiles est la ____.",
+        "options": [
+          "paléontologie",
+          "fossile",
+          "dinosaure",
+          "ambre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه موجودات منقرض‌شده = paléontologie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le reste ou l'empreinte minéralisée d'un organisme vivant ayant existé dans un passé géologique est le ____.",
+        "options": [
+          "fossile",
+          "ADN",
+          "fouille",
+          "squelette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بقایای سنگ‌شده موجودات زنده = fossile."
+      },
+      {
+        "type": "mcq",
+        "question": "Le reptile préhistorique géant qui a dominé la Terre pendant l'ère mésozoïque est le ____.",
+        "options": [
+          "dinosaure",
+          "carnivore",
+          "herbivore",
+          "griffe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خزنده غول‌پیکر پیشاتاریخی = dinosaure."
+      },
+      {
+        "type": "mcq",
+        "question": "La résine d'arbre fossilisée, souvent transparente et jaune, qui peut piéger des insectes est l'____.",
+        "options": [
+          "ambre",
+          "jurassique",
+          "extinction",
+          "paléontologue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صمغ فسیل‌شده درخت = ambre."
+      },
+      {
+        "type": "mcq",
+        "question": "La molécule complexe présente dans toutes les cellules vivantes qui porte l'information génétique est l'____.",
+        "options": [
+          "ADN",
+          "résine",
+          "paléontologie",
+          "fossile"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مولکول حامل اطلاعات ژنتیکی = ADN."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de creuser méthodiquement le sol pour découvrir des vestiges archéologiques ou fossiles est la ____.",
+        "options": [
+          "fouille",
+          "dinosaure",
+          "ambre",
+          "ADN"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کاوش و حفاری علمی = fouille."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des os qui forment la charpente solide du corps d'un vertébré est le ____.",
+        "options": [
+          "squelette",
+          "carnivore",
+          "herbivore",
+          "griffe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه استخوان‌های بدن = squelette."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal qui se nourrit exclusivement ou principalement de chair et de viande est le ____.",
+        "options": [
+          "carnivore",
+          "jurassique",
+          "extinction",
+          "paléontologue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوان گوشت‌خوار = carnivore."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal qui se nourrit de végétaux (herbes, feuilles, fruits) est l'____.",
+        "options": [
+          "herbivore",
+          "résine",
+          "paléontologie",
+          "fossile"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوان گیاه‌خوار = herbivore."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ongle pointu, recourbé et acéré des animaux prédateurs ou des oiseaux de proie est la ____.",
+        "options": [
+          "griffe",
+          "dinosaure",
+          "ambre",
+          "ADN"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ناخن تیز و برنده حیوانات = griffe."
+      },
+      {
+        "type": "mcq",
+        "question": "La période géologique (environ -201 à -145 millions d'années) célèbre pour l'apogée des grands reptiles est le ____.",
+        "options": [
+          "jurassique",
+          "fouille",
+          "squelette",
+          "carnivore"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره زمین‌شناسی اوج دایناسورها = jurassique."
+      },
+      {
+        "type": "mcq",
+        "question": "La disparition totale et définitive d'une espèce ou d'un groupe d'espèces vivantes est l'____.",
+        "options": [
+          "extinction",
+          "herbivore",
+          "griffe",
+          "jurassique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نابودی کامل یک گونه = extinction."
+      },
+      {
+        "type": "mcq",
+        "question": "Le scientifique spécialisé dans l'étude des fossiles et de l'histoire de la vie sur Terre est le ____.",
+        "options": [
+          "paléontologue",
+          "résine",
+          "paléontologie",
+          "fossile"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دانشمند متخصص فسیل‌ها = paléontologue."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance visqueuse et collante sécrétée par certains arbres pour se protéger, qui peut se fossiliser, est la ____.",
+        "options": [
+          "résine",
+          "dinosaure",
+          "ambre",
+          "ADN"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیره چسبناک درخت = résine."
+      },
+      {
+        "type": "binary",
+        "question": "La paléontologie étudie uniquement les dinosaures et ignore les autres formes de vie préhistoriques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. دیرینه‌شناسی تمام اشکال حیات باستانی از جمله گیاهان و بی‌مهرگان را مطالعه می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "L'ambre peut parfois contenir des insectes ou des petits animaux parfaitement conservés depuis des millions d'années.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. کهربا می‌تواند حشرات را برای میلیون‌ها سال به صورت سالم در خود نگه دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le jurassique est une époque géologique où les dinosaures étaient particulièrement abondants et diversifiés.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. دوره ژوراسیک زمان تنوع و فراوانی دایناسورها بود."
+      },
+      {
+        "type": "binary",
+        "question": "Un animal herbivore chasse d'autres animaux pour se nourrir de viande.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. حیوان گیاه‌خوار (herbivore) فقط از گیاهان تغذیه می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Une extinction massive est un événement où une grande majorité des espèces vivantes disparaît rapidement à l'échelle géologique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. انقراض بزرگ به نابودی سریع درصد بالایی از گونه‌های زمین گفته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La résine d'arbre est une substance solide et minérale que l'on extrait des profondeurs de la Terre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. صمغ (résine) ماده‌ای آلی و چسبناک است که توسط خود درختان ترشح می‌شود."
+      }
+    ]
+  }
+}
