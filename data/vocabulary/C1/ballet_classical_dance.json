@@ -1,0 +1,680 @@
+{
+  "id": "ballet_classical_dance",
+  "level": "C1",
+  "theme": "Ballet, danse classique et opéra",
+  "theme_fa": "باله، رقص کلاسیک و اپرا",
+  "icon": "🩰",
+  "inspiration": "Black Swan (Darren Aronofsky, 2010)",
+  "words": [
+    {
+      "fr": "la danse",
+      "fa": "رقص",
+      "emoji": "💃",
+      "difficulty": 2,
+      "ex": "La danse est un langage universel qui transcende les mots.",
+      "ex_fa": "رقص زبانی جهانی است که از واژگان فراتر می‌رود."
+    },
+    {
+      "fr": "le ballet",
+      "fa": "باله",
+      "emoji": "🩰",
+      "difficulty": 3,
+      "ex": "Le ballet classique exige des années de discipline rigoureuse.",
+      "ex_fa": "باله کلاسیک به سال‌ها انضباط سخت نیاز دارد."
+    },
+    {
+      "fr": "la ballerine",
+      "fa": "بالرین (رقصنده باله)",
+      "emoji": "👯",
+      "difficulty": 4,
+      "ex": "La ballerine principale incarne le rôle du cygne blanc.",
+      "ex_fa": "بالرین اصلی نقش قوی سفید را ایفا می‌کند."
+    },
+    {
+      "fr": "le tutu",
+      "fa": "توتو (دامن باله)",
+      "emoji": "👗",
+      "difficulty": 4,
+      "ex": "Le tutu romantique descend jusqu'aux genoux, contrairement au tutu classique.",
+      "ex_fa": "توتو رومانتیک تا زانو می‌رسد، برخلاف توتو کلاسیک."
+    },
+    {
+      "fr": "la pointe",
+      "fa": "نوک پا (پوینت)",
+      "emoji": "🦶",
+      "difficulty": 4,
+      "ex": "Danser sur la pointe des pieds exige une force extrême.",
+      "ex_fa": "رقصیدن روی نوک پا به قدرت فوق‌العاده نیاز دارد."
+    },
+    {
+      "fr": "la chorégraphie",
+      "fa": "رقص‌پردازی",
+      "emoji": "🎭",
+      "difficulty": 5,
+      "ex": "La chorégraphie de Petipa reste la référence du Lac des cygnes.",
+      "ex_fa": "رقص‌پردازی پتیپا همچنان مرجع دریاچه قوهاست."
+    },
+    {
+      "fr": "le pas de deux",
+      "fa": "پا دو دو (رقص دو نفره)",
+      "emoji": "👥",
+      "difficulty": 5,
+      "ex": "Le pas de deux final exige une confiance absolue entre les partenaires.",
+      "ex_fa": "رقص دو نفره پایانی به اعتماد مطلق بین شرکا نیاز دارد."
+    },
+    {
+      "fr": "la pirouette",
+      "fa": "چرخش",
+      "emoji": "🌀",
+      "difficulty": 4,
+      "ex": "La pirouette double doit être parfaitement maîtrisée en équilibre.",
+      "ex_fa": "چرخش دوبل باید کاملاً در حالت تعادل مسلط باشد."
+    },
+    {
+      "fr": "l'arabesque",
+      "fa": "آرابسک (حالت ایستاده)",
+      "emoji": "🦢",
+      "difficulty": 5,
+      "ex": "L'arabesque allonge le corps en une ligne élégante et pure.",
+      "ex_fa": "آرابسک بدن را در خطی ظریف و خالص می‌کشد."
+    },
+    {
+      "fr": "la répétition",
+      "fa": "تمرین",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "La répétition générale a lieu la veille de la première.",
+      "ex_fa": "تمرین عمومی شب قبل از اولین اجرا برگزار می‌شود."
+    },
+    {
+      "fr": "la scène",
+      "fa": "صحنه",
+      "emoji": "🎬",
+      "difficulty": 2,
+      "ex": "La scène de l'Opéra de Paris est l'une des plus prestigieuses au monde.",
+      "ex_fa": "صحنه اپرای پاریس یکی از معتبرترین‌های جهان است."
+    },
+    {
+      "fr": "le danseur étoile",
+      "fa": "رقصنده ستاره",
+      "emoji": "⭐",
+      "difficulty": 4,
+      "ex": "Le titre de danseur étoile est la plus haute distinction à l'Opéra.",
+      "ex_fa": "عنوان رقصنده ستاره بالاترین افتخار در اپرا است."
+    },
+    {
+      "fr": "l'opéra",
+      "fa": "اپرا",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "L'opéra Garnier accueille les plus grands ballets classiques.",
+      "ex_fa": "اپرا گارنیه میزبان بزرگترین باله‌های کلاسیک است."
+    },
+    {
+      "fr": "le lac",
+      "fa": "دریاچه (اشاره به باله دریاچه قوها)",
+      "emoji": "🦢",
+      "difficulty": 3,
+      "ex": "Le lac enchanté est le cadre mystérieux du ballet le plus célèbre.",
+      "ex_fa": "دریاچه جادویی صحنه مرموز مشهورترین باله است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le cygne noir",
+      "text": "Nina Sayers est une jeune {{BLANK_3}} talentueuse mais fragile. Elle rêve de devenir {{BLANK_12}} dans la compagnie de l'{{BLANK_13}} de New York. Le directeur lui confie le double rôle du cygne blanc et du cygne noir dans {{BLANK_14}} des cygnes. Chaque jour, elle passe des heures en {{BLANK_10}} devant le miroir. Elle enfile son {{BLANK_4}} immaculé et chausse ses chaussons de {{BLANK_5}} pour danser sur les pointes. La {{BLANK_6}} complexe exige une précision absolue. Elle exécute une {{BLANK_8}} parfaite et maintient une {{BLANK_9}} impeccable pendant plusieurs secondes. Le {{BLANK_7}} avec son partenaire doit être d'une grâce infinie. Sur la grande {{BLANK_11}} illuminée, elle incarne la pureté du cygne blanc, mais doit aussi libérer la sensualité sombre du cygne noir. Cette {{BLANK_1}} classique devient un combat intérieur, une quête obsessionnelle de la perfection absolue. Peu à peu, la frontière entre la réalité et la fiction s'effondre, menaçant sa santé mentale.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "danse",
+          "options": [
+            "danse",
+            "ballet",
+            "ballerine",
+            "tutu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ballet",
+          "options": [
+            "ballet",
+            "pointe",
+            "chorégraphie",
+            "pas de deux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "ballerine",
+          "options": [
+            "ballerine",
+            "pirouette",
+            "arabesque",
+            "répétition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tutu",
+          "options": [
+            "tutu",
+            "scène",
+            "danseur étoile",
+            "opéra"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pointe",
+          "options": [
+            "pointe",
+            "lac",
+            "danse",
+            "ballet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "chorégraphie",
+          "options": [
+            "chorégraphie",
+            "ballerine",
+            "tutu",
+            "pointe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pas de deux",
+          "options": [
+            "pas de deux",
+            "pirouette",
+            "arabesque",
+            "répétition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "pirouette",
+          "options": [
+            "pirouette",
+            "scène",
+            "danseur étoile",
+            "opéra"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "arabesque",
+          "options": [
+            "arabesque",
+            "lac",
+            "danse",
+            "ballet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "répétition",
+          "options": [
+            "répétition",
+            "ballerine",
+            "tutu",
+            "pointe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "scène",
+          "options": [
+            "scène",
+            "chorégraphie",
+            "pas de deux",
+            "pirouette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "danseur étoile",
+          "options": [
+            "danseur étoile",
+            "arabesque",
+            "répétition",
+            "scène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "opéra",
+          "options": [
+            "opéra",
+            "lac",
+            "danse",
+            "ballet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "le lac",
+          "options": [
+            "le lac",
+            "ballerine",
+            "tutu",
+            "pointe"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La métamorphose de l'âme",
+      "inspiration": "Black Swan (Darren Aronofsky, 2010)",
+      "text": "À peine Nina eut-elle lacé ses chaussons de satin rose que le miroir de la salle de {{BLANK_10}} lui renvoya le reflet d'une étrangère. Cette {{BLANK_3}} fragile, élevée dans l'ombre étouffante d'une mère possessive, allait bientôt incarner les deux visages du destin sur la {{BLANK_11}} sacrée de l'{{BLANK_13}}. Vêtue de son {{BLANK_4}} immaculé comme une mariée de la mort, elle se hissait sur la {{BLANK_5}} douloureuse, transformant la souffrance en grâce. La {{BLANK_6}} de Tchaïkovski exigeait d'elle la pureté cristalline du cygne blanc et la fureur sensuelle du cygne noir. Chaque {{BLANK_8}} était une prière, chaque {{BLANK_9}} une ligne tracée vers l'infini. Dans le {{BLANK_7}} avec son partenaire, elle devait abandonner le contrôle pour toucher la vérité. Le {{BLANK_14}} enchanté de son imagination devenait le théâtre de ses peurs les plus sombres. Elle aspirait au titre suprême de {{BLANK_12}}, mais ce {{BLANK_2}} classique n'était plus un simple spectacle, c'était un sacrifice. Peu à peu, son corps se couvrait de plumes imaginaires, et la {{BLANK_1}} qu'elle avait adorée depuis l'enfance devenait une malédiction, un pacte faustien où la perfection absolue exigeait en retour l'âme tout entière de l'artiste.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "danse",
+          "options": [
+            "danse",
+            "ballet",
+            "ballerine",
+            "tutu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ballet",
+          "options": [
+            "ballet",
+            "pointe",
+            "chorégraphie",
+            "pas de deux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "ballerine",
+          "options": [
+            "ballerine",
+            "pirouette",
+            "arabesque",
+            "répétition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tutu",
+          "options": [
+            "tutu",
+            "scène",
+            "danseur étoile",
+            "opéra"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pointe",
+          "options": [
+            "pointe",
+            "lac",
+            "danse",
+            "ballet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "chorégraphie",
+          "options": [
+            "chorégraphie",
+            "ballerine",
+            "tutu",
+            "pointe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pas de deux",
+          "options": [
+            "pas de deux",
+            "pirouette",
+            "arabesque",
+            "répétition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "pirouette",
+          "options": [
+            "pirouette",
+            "scène",
+            "danseur étoile",
+            "opéra"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "arabesque",
+          "options": [
+            "arabesque",
+            "lac",
+            "danse",
+            "ballet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "répétition",
+          "options": [
+            "répétition",
+            "ballerine",
+            "tutu",
+            "pointe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "scène",
+          "options": [
+            "scène",
+            "chorégraphie",
+            "pas de deux",
+            "pirouette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "danseur étoile",
+          "options": [
+            "danseur étoile",
+            "arabesque",
+            "répétition",
+            "scène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "opéra",
+          "options": [
+            "opéra",
+            "lac",
+            "danse",
+            "ballet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "lac",
+          "options": [
+            "lac",
+            "ballerine",
+            "tutu",
+            "pointe"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Ballet et danse classique",
+    "title_fa": "آزمون : باله و رقص کلاسیک",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art du mouvement corporel rythmé, souvent accompagné de musique, est la ____.",
+        "options": [
+          "danse",
+          "ballet",
+          "ballerine",
+          "tutu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر حرکت موزون بدن = danse."
+      },
+      {
+        "type": "mcq",
+        "question": "La forme de danse classique codifiée, née en Italie et développée en France et en Russie, est le ____.",
+        "options": [
+          "ballet",
+          "pointe",
+          "chorégraphie",
+          "pas de deux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شکل کلاسیک رقص = ballet."
+      },
+      {
+        "type": "mcq",
+        "question": "La danseuse professionnelle spécialisée dans la danse classique est la ____.",
+        "options": [
+          "ballerine",
+          "pirouette",
+          "arabesque",
+          "répétition"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رقصنده حرفه‌ای باله = ballerine."
+      },
+      {
+        "type": "mcq",
+        "question": "Le jupon court et léger, souvent en tulle, porté par les danseuses classiques est le ____.",
+        "options": [
+          "tutu",
+          "scène",
+          "danseur étoile",
+          "opéra"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دامن کوتاه باله = tutu."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique qui consiste à danser sur l'extrémité des orteils dans des chaussons renforcés est la ____.",
+        "options": [
+          "pointe",
+          "lac",
+          "danse",
+          "ballet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک رقص روی نوک انگشتان = pointe."
+      },
+      {
+        "type": "mcq",
+        "question": "L'art de composer et d'organiser les mouvements de danse dans un spectacle est la ____.",
+        "options": [
+          "chorégraphie",
+          "ballerine",
+          "tutu",
+          "pointe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر طراحی رقص = chorégraphie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le numéro dansé par deux partenaires, généralement un homme et une femme, est le ____.",
+        "options": [
+          "pas de deux",
+          "pirouette",
+          "arabesque",
+          "répétition"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رقص دو نفره = pas de deux."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mouvement de rotation rapide du corps sur un pied est la ____.",
+        "options": [
+          "pirouette",
+          "scène",
+          "danseur étoile",
+          "opéra"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چرخش سریع بدن = pirouette."
+      },
+      {
+        "type": "mcq",
+        "question": "La pose classique où le danseur se tient sur une jambe, l'autre étant levée en arrière, est l'____.",
+        "options": [
+          "arabesque",
+          "lac",
+          "danse",
+          "ballet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حالت ایستاده با یک پا بالا = arabesque."
+      },
+      {
+        "type": "mcq",
+        "question": "La séance de travail où les danseurs préparent un spectacle est la ____.",
+        "options": [
+          "répétition",
+          "ballerine",
+          "tutu",
+          "pointe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جلسه تمرین = répétition."
+      },
+      {
+        "type": "mcq",
+        "question": "L'espace surélevé où se produisent les artistes devant le public est la ____.",
+        "options": [
+          "scène",
+          "chorégraphie",
+          "pas de deux",
+          "pirouette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فضای اجرای هنرمندان = scène."
+      },
+      {
+        "type": "mcq",
+        "question": "Le titre suprême accordé aux meilleurs danseurs de l'Opéra de Paris est celui de ____.",
+        "options": [
+          "danseur étoile",
+          "arabesque",
+          "répétition",
+          "scène"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بالاترین عنوان رقصنده = danseur étoile."
+      },
+      {
+        "type": "mcq",
+        "question": "Le théâtre prestigieux où se donnent les représentations lyriques et chorégraphiques est l'____.",
+        "options": [
+          "opéra",
+          "lac",
+          "danse",
+          "ballet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تئاتر معتبر = opéra."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étendue d'eau qui sert de cadre mystérieux au célèbre ballet de Tchaïkovski est le ____.",
+        "options": [
+          "lac",
+          "ballerine",
+          "tutu",
+          "pointe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دریاچه (اشاره به باله دریاچه قوها) = lac."
+      },
+      {
+        "type": "binary",
+        "question": "Le tutu est un costume traditionnel masculin porté par les danseurs de ballet.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. توتو (tutu) لباس دامن‌دار مخصوص بالرین‌های زن است."
+      },
+      {
+        "type": "binary",
+        "question": "Danser sur la pointe signifie se tenir en équilibre sur l'extrémité des orteils.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. pointe به معنای ایستادن روی نوک انگشتان پا است."
+      },
+      {
+        "type": "binary",
+        "question": "Le pas de deux est un numéro exécuté par trois danseurs simultanément.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. pas de deux به معنای رقص دو نفره است (نه سه نفر)."
+      },
+      {
+        "type": "binary",
+        "question": "La pirouette est un mouvement de rotation du corps sur lui-même.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. پیروت (pirouette) چرخش بدن روی یک پا است."
+      },
+      {
+        "type": "binary",
+        "question": "L'arabesque est une position où le danseur se tient sur une jambe avec l'autre levée derrière.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. آرابسک حالتی با یک پا روی زمین و پای دیگر بلند شده به عقب است."
+      },
+      {
+        "type": "binary",
+        "question": "Le titre de danseur étoile est la plus haute distinction à l'Opéra de Paris.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. رقصنده ستاره بالاترین عنوان در باله اپرای پاریس است."
+      }
+    ]
+  }
+}
