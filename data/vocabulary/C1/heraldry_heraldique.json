@@ -1,0 +1,680 @@
+{
+  "id": "heraldry_heraldique",
+  "level": "C1",
+  "theme": "Héraldique, blasons et symbolique médiévale",
+  "theme_fa": "نشان‌شناسی، سپرهای خانوادگی و نمادشناسی قرون وسطی",
+  "icon": "🛡️",
+  "inspiration": "Le Lion en hiver (The Lion in Winter - Anthony Harvey, 1968)",
+  "words": [
+    {
+      "fr": "l'héraldique",
+      "fa": "نشان‌شناسی",
+      "emoji": "🛡️",
+      "difficulty": 5,
+      "ex": "L'héraldique est la science des blasons et des armoiries familiales.",
+      "ex_fa": "نشان‌شناسی علم مطالعه سپرها و نشان‌های خانوادگی است."
+    },
+    {
+      "fr": "le blason",
+      "fa": "نشان، سپر",
+      "emoji": "🛡️",
+      "difficulty": 3,
+      "ex": "Le blason de la famille royale est brodé sur les bannières.",
+      "ex_fa": "نشان خاندان سلطنتی روی پرچم‌ها گلدوزی شده است."
+    },
+    {
+      "fr": "l'écu",
+      "fa": "سپر (فرم هندسی نشان)",
+      "emoji": "🛡️",
+      "difficulty": 4,
+      "ex": "L'écu est la surface principale sur laquelle sont peints les symboles.",
+      "ex_fa": "سپر، سطح اصلی‌ای است که نمادها روی آن نقاشی می‌شوند."
+    },
+    {
+      "fr": "le cimier",
+      "fa": "تاج روی کلاه‌خود",
+      "emoji": "👑",
+      "difficulty": 5,
+      "ex": "Le cimier en forme de dragon surmonte le casque du chevalier.",
+      "ex_fa": "تاج اژدهاشکل روی کلاه‌خود شوالیه قرار دارد."
+    },
+    {
+      "fr": "la devise",
+      "fa": "شعار خانوادگی",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "La devise 'Honneur et Patrie' est gravée sous le blason.",
+      "ex_fa": "شعار 'افتخار و میهن' زیر نشان حک شده است."
+    },
+    {
+      "fr": "le lion",
+      "fa": "شیر (نماد شجاعت)",
+      "emoji": "🦁",
+      "difficulty": 2,
+      "ex": "Le lion rampant est l'animal le plus fréquent dans les armoiries.",
+      "ex_fa": "شیرِ خیزران شایع‌ترین حیوان در نشان‌های خانوادگی است."
+    },
+    {
+      "fr": "la licorne",
+      "fa": "تک‌شاخ (نماد پاکی)",
+      "emoji": "🦄",
+      "difficulty": 3,
+      "ex": "La licorne blanche soutient l'écu royal de ses sabots.",
+      "ex_fa": "تک‌شاخ سفید سپر سلطنتی را با سم‌هایش نگه داشته است."
+    },
+    {
+      "fr": "le champ",
+      "fa": "زمینه سپر",
+      "emoji": "🎨",
+      "difficulty": 4,
+      "ex": "Le champ de l'écu est divisé en quatre quartiers distincts.",
+      "ex_fa": "زمینه سپر به چهار بخش مجزا تقسیم شده است."
+    },
+    {
+      "fr": "l'azur",
+      "fa": "رنگ آبی در نشان‌شناسی",
+      "emoji": "🔵",
+      "difficulty": 5,
+      "ex": "L'azur représente la loyauté et le ciel dégagé.",
+      "ex_fa": "رنگ آبی نشان‌دهنده وفاداری و آسمان صاف است."
+    },
+    {
+      "fr": "le gueules",
+      "fa": "رنگ قرمز در نشان‌شناسی",
+      "emoji": "🔴",
+      "difficulty": 5,
+      "ex": "Le gueules symbolise le courage, le sang versé et la force.",
+      "ex_fa": "رنگ قرمز نماد شجاعت، خون ریخته‌شده و قدرت است."
+    },
+    {
+      "fr": "le sinople",
+      "fa": "رنگ سبز در نشان‌شناسی",
+      "emoji": "🟢",
+      "difficulty": 5,
+      "ex": "Le sinople est associé à la nature, la liberté et l'espoir.",
+      "ex_fa": "رنگ سبز با طبیعت، آزادی و امید مرتبط است."
+    },
+    {
+      "fr": "l'or",
+      "fa": "رنگ طلایی (زرد)",
+      "emoji": "🟡",
+      "difficulty": 3,
+      "ex": "L'or est le métal le plus noble, représentant la richesse et la foi.",
+      "ex_fa": "طلا نجیب‌ترین فلز و نماد ثروت و ایمان است."
+    },
+    {
+      "fr": "l'argent",
+      "fa": "رنگ نقره‌ای (سفید)",
+      "emoji": "⚪",
+      "difficulty": 3,
+      "ex": "L'argent incarne la pureté, la sagesse et la clarté d'âme.",
+      "ex_fa": "نقره تجسم پاکی، خرد و روشنی روح است."
+    },
+    {
+      "fr": "le sable",
+      "fa": "رنگ سیاه",
+      "emoji": "⬛",
+      "difficulty": 4,
+      "ex": "Le sable évoque le deuil, la constance et parfois la tristesse.",
+      "ex_fa": "رنگ سیاه یادآور سوگواری، پایداری و گاهی اندوه است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le tournoi des royaumes",
+      "text": "Geoffroy est un jeune héraut chargé de lire les {{BLANK_2}}s des chevaliers avant le grand tournoi. Il doit connaître parfaitement les règles de l'{{BLANK_1}}. Quand un chevalier s'avance, Geoffroy observe d'abord l'{{BLANK_3}} de bois peint. Il décrit le {{BLANK_8}} divisé en plusieurs couleurs. Il annonce un magnifique {{BLANK_6}} rouge sur fond d'{{BLANK_9}} profond. Parfois, il voit une rare {{BLANK_7}} blanche, signe de grande pureté. Les couleurs ont des noms précis : le rouge s'appelle le {{BLANK_10}}, le bleu est l'{{BLANK_9}}, le vert est le {{BLANK_11}}. Les métaux sont aussi présents : l'{{BLANK_12}} brille au soleil, et l'{{BLANK_13}} reflète la lumière, tandis que le {{BLANK_14}} noir rappelle les batailles passées. Au sommet du casque, le {{BLANK_4}} en forme d'aigle impressionne la foule. Sous l'écu, la {{BLANK_5}} en latin crie la fierté de la lignée. Geoffroy sait que chaque détail raconte l'histoire sanglante et glorieuse d'une famille.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "héraldique",
+          "options": [
+            "héraldique",
+            "blason",
+            "écu",
+            "cimier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "blasons",
+          "options": [
+            "blasons",
+            "devise",
+            "lion",
+            "licorne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "écu",
+          "options": [
+            "écu",
+            "champ",
+            "azur",
+            "gueules"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cimier",
+          "options": [
+            "cimier",
+            "sinople",
+            "or",
+            "argent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "devise",
+          "options": [
+            "devise",
+            "sable",
+            "héraldique",
+            "blason"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "lion",
+          "options": [
+            "lion",
+            "écu",
+            "cimier",
+            "devise"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "licorne",
+          "options": [
+            "licorne",
+            "lion",
+            "champ",
+            "azur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "champ",
+          "options": [
+            "champ",
+            "gueules",
+            "sinople",
+            "or"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "azur",
+          "options": [
+            "azur",
+            "argent",
+            "sable",
+            "héraldique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "gueules",
+          "options": [
+            "gueules",
+            "blason",
+            "écu",
+            "cimier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "sinople",
+          "options": [
+            "sinople",
+            "devise",
+            "lion",
+            "licorne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "or",
+          "options": [
+            "or",
+            "champ",
+            "azur",
+            "gueules"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "argent",
+          "options": [
+            "argent",
+            "sinople",
+            "or",
+            "sable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "sable",
+          "options": [
+            "sable",
+            "héraldique",
+            "blason",
+            "écu"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le sang des ancêtres",
+      "inspiration": "Le Lion en hiver (Anthony Harvey, 1968)",
+      "text": "À peine le vieux héraut eut-il déployé la bannière que le poids de l'{{BLANK_1}} lui écrasa la poitrine. Ce n'était pas qu'un simple {{BLANK_2}} de tissu, mais le linceul des ancêtres. Il caressa l'{{BLANK_3}} écaillé, ce {{BLANK_8}} de bataille où le sang s'était mêlé à la peinture. Le {{BLANK_6}} de {{BLANK_10}} hurlait sa soif de conquête, tandis que la {{BLANK_7}} d'{{BLANK_13}} pleurait les vierges sacrifiées. Sur le casque rouillé, le {{BLANK_4}} brisé ne regardait plus les cieux. La {{BLANK_5}} latine, gravée dans le fer, n'était plus qu'un murmure de vanité. Il se souvenait que l'{{BLANK_9}} avait été teinté par le ciel d'été, le {{BLANK_11}} par les forêts brûlées, et le {{BLANK_14}} par la nuit des défaites. L'{{BLANK_12}} pur avait été souillé par la trahison, et le {{BLANK_13}} virginal par la vengeance. Quand le roi légitime entrerait dans la lice, Geoffroy annoncerait non pas des couleurs, mais les cicatrices d'une lignée qui avait troqué son âme pour un morceau de fer et un cri de guerre.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "héraldique",
+          "options": [
+            "héraldique",
+            "blason",
+            "écu",
+            "cimier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "blason",
+          "options": [
+            "blason",
+            "devise",
+            "lion",
+            "licorne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "écu",
+          "options": [
+            "écu",
+            "champ",
+            "azur",
+            "gueules"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cimier",
+          "options": [
+            "cimier",
+            "sinople",
+            "or",
+            "argent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "devise",
+          "options": [
+            "devise",
+            "sable",
+            "héraldique",
+            "blason"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "lion",
+          "options": [
+            "lion",
+            "écu",
+            "cimier",
+            "devise"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "licorne",
+          "options": [
+            "licorne",
+            "lion",
+            "champ",
+            "azur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "champ",
+          "options": [
+            "champ",
+            "gueules",
+            "sinople",
+            "or"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "azur",
+          "options": [
+            "azur",
+            "argent",
+            "sable",
+            "héraldique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "gueules",
+          "options": [
+            "gueules",
+            "blason",
+            "écu",
+            "cimier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "sinople",
+          "options": [
+            "sinople",
+            "devise",
+            "lion",
+            "licorne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "or",
+          "options": [
+            "or",
+            "champ",
+            "azur",
+            "gueules"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "argent",
+          "options": [
+            "argent",
+            "sinople",
+            "or",
+            "sable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "sable",
+          "options": [
+            "sable",
+            "héraldique",
+            "blason",
+            "écu"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Héraldique et blasons",
+    "title_fa": "آزمون : نشان‌شناسی و سپرها",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La science historique qui étudie les armoiries, les blasons et leurs symboles est l'____.",
+        "options": [
+          "héraldique",
+          "blason",
+          "écu",
+          "cimier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه نشان‌ها و سپرها = héraldique."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des signes et couleurs qui identifient une famille, une ville ou une corporation est le ____.",
+        "options": [
+          "blason",
+          "devise",
+          "lion",
+          "licorne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه علائم شناسایی خانوادگی = blason."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bouclier ou la surface géométrique sur laquelle sont représentées les armoiries est l'____.",
+        "options": [
+          "écu",
+          "champ",
+          "azur",
+          "gueules"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطح هندسی نمایش نشان = écu."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ornement qui surmonte le casque et le blason, souvent sous forme d'animal ou de monstre, est le ____.",
+        "options": [
+          "cimier",
+          "sinople",
+          "or",
+          "argent"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تزیین بالای کلاه‌خود = cimier."
+      },
+      {
+        "type": "mcq",
+        "question": "La phrase courte, souvent en latin, qui exprime la ligne de conduite ou l'idéal d'une famille est la ____.",
+        "options": [
+          "devise",
+          "sable",
+          "héraldique",
+          "blason"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شعار کوتاه خانوادگی = devise."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal noble, symbole de bravoure et de force, le plus fréquemment représenté sur les écus est le ____.",
+        "options": [
+          "lion",
+          "écu",
+          "cimier",
+          "devise"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوان نجیب و نماد شجاعت = lion."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal fabuleux, symbole de pureté et de chasteté, souvent utilisé comme support du blason est la ____.",
+        "options": [
+          "licorne",
+          "lion",
+          "champ",
+          "azur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوان افسانه‌ای نماد پاکی = licorne."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fond de l'écu sur lequel se détachent les figures et les couleurs est le ____.",
+        "options": [
+          "champ",
+          "gueules",
+          "sinople",
+          "or"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پس‌زمینه سپر = champ."
+      },
+      {
+        "type": "mcq",
+        "question": "Le terme héraldique désignant la couleur bleue, symbole de loyauté, est l'____.",
+        "options": [
+          "azur",
+          "argent",
+          "sable",
+          "héraldique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اصطلاح رنگ آبی در نشان‌شناسی = azur."
+      },
+      {
+        "type": "mcq",
+        "question": "Le terme héraldique désignant la couleur rouge, symbole de courage et de sang versé, est le ____.",
+        "options": [
+          "gueules",
+          "blason",
+          "écu",
+          "cimier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اصطلاح رنگ قرمز در نشان‌شناسی = gueules."
+      },
+      {
+        "type": "mcq",
+        "question": "Le terme héraldique désignant la couleur verte, associée à la nature et l'espoir, est le ____.",
+        "options": [
+          "sinople",
+          "devise",
+          "lion",
+          "licorne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اصطلاح رنگ سبز در نشان‌شناسی = sinople."
+      },
+      {
+        "type": "mcq",
+        "question": "Le métal héraldique représenté par la couleur jaune, symbole de richesse et de noblesse, est l'____.",
+        "options": [
+          "or",
+          "champ",
+          "azur",
+          "gueules"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فلز زردرنگ نشان‌شناسی = or."
+      },
+      {
+        "type": "mcq",
+        "question": "Le métal héraldique représenté par la couleur blanche, symbole de pureté, est l'____.",
+        "options": [
+          "argent",
+          "sinople",
+          "or",
+          "sable"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فلز سفیدرنگ نشان‌شناسی = argent."
+      },
+      {
+        "type": "mcq",
+        "question": "Le terme héraldique désignant la couleur noire, évoquant le deuil ou la constance, est le ____.",
+        "options": [
+          "sable",
+          "héraldique",
+          "blason",
+          "écu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اصطلاح رنگ سیاه در نشان‌شناسی = sable."
+      },
+      {
+        "type": "binary",
+        "question": "En héraldique, le terme 'gueules' désigne la couleur verte des forêts et des prairies.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. gueules به رنگ قرمز اشاره دارد؛ رنگ سبز sinople نامیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "L'écu désigne la surface principale, souvent en forme de bouclier, sur laquelle sont peintes les armoiries.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. écu همان سطح سپر است که نشان روی آن نقش می‌بندد."
+      },
+      {
+        "type": "binary",
+        "question": "La devise est une phrase courte qui exprime l'idéal ou le cri de guerre d'une famille noble.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. شعار (devise) جمله‌ای کوتاه و نمادین برای خاندان است."
+      },
+      {
+        "type": "binary",
+        "question": "Le 'sable' en héraldique désigne une poudre de diamant utilisée pour polir les armures.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر. sable در این علم به معنای رنگ سیاه است."
+      },
+      {
+        "type": "binary",
+        "question": "Le cimier est l'ornement (souvent un animal) placé au sommet du casque, au-dessus de l'écu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. تاج (cimier) در بالاترین نقطه کلاه‌خود و نشان قرار می‌گیرد."
+      },
+      {
+        "type": "binary",
+        "question": "L'or et l'argent sont considérés comme des 'métaux', tandis que l'azur et le gueules sont des 'émaux' (couleurs).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله. در قوانین نشان‌شناسی، طلا و نقره فلز (métaux) و بقیه رنگ‌ها مینا (émaux) نامیده می‌شوند."
+      }
+    ]
+  }
+}
