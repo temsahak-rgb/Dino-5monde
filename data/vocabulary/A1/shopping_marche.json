@@ -1,0 +1,674 @@
+{
+  "id": "shopping_marche",
+  "level": "A1",
+  "theme": "Shopping et Marché Quotidien",
+  "theme_fa": "خرید روزانه و بازار",
+  "icon": "🛒",
+  "inspiration": "Le Petit Nicolas / Amélie Poulain",
+  "words": [
+    {
+      "fr": "acheter",
+      "fa": "خریدن",
+      "emoji": "🛍️",
+      "difficulty": 1,
+      "ex": "Je vais acheter du pain à la boulangerie.",
+      "ex_fa": "من می‌روم از نانوایی نان بخرم."
+    },
+    {
+      "fr": "l'argent",
+      "fa": "پول",
+      "emoji": "💶",
+      "difficulty": 1,
+      "ex": "Je n'ai pas d'argent aujourd'hui.",
+      "ex_fa": "امروز پول ندارم."
+    },
+    {
+      "fr": "bio",
+      "fa": "ارگانیک",
+      "emoji": "🌿",
+      "difficulty": 2,
+      "ex": "J'achète des légumes bio au marché.",
+      "ex_fa": "من در بازار سبزیجات ارگانیک می‌خرم."
+    },
+    {
+      "fr": "bon",
+      "fa": "خوب / باکیفیت",
+      "emoji": "✅",
+      "difficulty": 1,
+      "ex": "Ce fromage est très bon.",
+      "ex_fa": "این پنیر خیلی خوب است."
+    },
+    {
+      "fr": "la boucherie",
+      "fa": "قصابی",
+      "emoji": "🥩",
+      "difficulty": 2,
+      "ex": "Je vais à la boucherie acheter du poulet.",
+      "ex_fa": "من به قصابی می‌روم تا مرغ بخرم."
+    },
+    {
+      "fr": "la boulangerie",
+      "fa": "نانوایی",
+      "emoji": "🥖",
+      "difficulty": 2,
+      "ex": "La boulangerie ouvre à sept heures.",
+      "ex_fa": "نانوایی ساعت هفت باز می‌شود."
+    },
+    {
+      "fr": "la caisse",
+      "fa": "صندوق پرداخت",
+      "emoji": "💳",
+      "difficulty": 2,
+      "ex": "On paie à la caisse, s'il vous plaît.",
+      "ex_fa": "لطفاً در صندوق پرداخت کنید."
+    },
+    {
+      "fr": "la cantine",
+      "fa": "غذاخوری",
+      "emoji": "🍱",
+      "difficulty": 2,
+      "ex": "Les élèves mangent à la cantine.",
+      "ex_fa": "دانش‌آموزان در غذاخوری غذا می‌خورند."
+    },
+    {
+      "fr": "le centime",
+      "fa": "سنتیم",
+      "emoji": "🪙",
+      "difficulty": 2,
+      "ex": "Ça coûte cinquante centimes.",
+      "ex_fa": "این پنجاه سنتیم قیمت دارد."
+    },
+    {
+      "fr": "le centre commercial",
+      "fa": "مرکز خرید",
+      "emoji": "🏬",
+      "difficulty": 2,
+      "ex": "On va au centre commercial ce samedi.",
+      "ex_fa": "این شنبه به مرکز خرید می‌رویم."
+    },
+    {
+      "fr": "cher",
+      "fa": "گران",
+      "emoji": "💸",
+      "difficulty": 1,
+      "ex": "Ce sac est trop cher pour moi.",
+      "ex_fa": "این کیف برای من خیلی گران است."
+    },
+    {
+      "fr": "les courses",
+      "fa": "خرید روزمره",
+      "emoji": "🛒",
+      "difficulty": 2,
+      "ex": "Maman fait les courses au supermarché.",
+      "ex_fa": "مامان در سوپرمارکت خرید روزمره می‌کند."
+    },
+    {
+      "fr": "coûter",
+      "fa": "قیمت داشتن",
+      "emoji": "💰",
+      "difficulty": 2,
+      "ex": "Combien ça coûte ? - Dix euros.",
+      "ex_fa": "این چقدر قیمت دارد؟ - ده یورو."
+    },
+    {
+      "fr": "délicieux",
+      "fa": "خوشمزه",
+      "emoji": "😋",
+      "difficulty": 2,
+      "ex": "Ce gâteau est délicieux !",
+      "ex_fa": "این کیک خوشمزه است!"
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les courses avec maman",
+      "title_fa": "خرید با مامان",
+      "text": "Aujourd'hui, maman fait ____ (13) au supermarché. Elle veut ____ (1) des légumes ____ (3) et du bon fromage. D'abord, elle va à ____ (6) pour acheter des croissants. Ensuite, elle va à ____ (5) pour du poulet. Au supermarché, elle ____ (14) les prix. « Ce gâteau ____ (12) dix euros, c'est un peu ____ (11) », dit-elle. Mais le gâteau est ____ (14) ! À la ____ (7), elle paie avec de l'____ (2). « Ça fait vingt euros et cinquante ____ (9) », dit la caissière. Maman dit : « Ce fromage est vraiment ____ (4) ! » Le soir, toute la famille mange à ____ (8). On va aussi au ____ (10) ce samedi pour acheter des vêtements.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "les courses",
+          "options": [
+            "les courses",
+            "le travail",
+            "la sieste",
+            "le sport"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "acheter",
+          "options": [
+            "acheter",
+            "vendre",
+            "manger",
+            "dormir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "bio",
+          "options": [
+            "bio",
+            "chers",
+            "mauvais",
+            "vieux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "boulangerie",
+          "options": [
+            "boulangerie",
+            "boucherie",
+            "pharmacie",
+            "librairie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "boucherie",
+          "options": [
+            "boucherie",
+            "boulangerie",
+            "pharmacie",
+            "librairie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "regarde",
+          "options": [
+            "regarde",
+            "jette",
+            "perd",
+            "oublie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "coûte",
+          "options": [
+            "coûte",
+            "mange",
+            "dort",
+            "lit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "cher",
+          "options": [
+            "cher",
+            "bon",
+            "bio",
+            "délicieux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "délicieux",
+          "options": [
+            "délicieux",
+            "mauvais",
+            "cher",
+            "vieux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "caisse",
+          "options": [
+            "caisse",
+            "porte",
+            "fenêtre",
+            "table"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "argent",
+          "options": [
+            "argent",
+            "or",
+            "papier",
+            "carte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "centimes",
+          "options": [
+            "centimes",
+            "euros",
+            "dollars",
+            "livres"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "bon",
+          "options": [
+            "bon",
+            "mauvais",
+            "cher",
+            "vieux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "cantine",
+          "options": [
+            "cantine",
+            "magasin",
+            "école",
+            "bureau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "centre commercial",
+          "options": [
+            "centre commercial",
+            "hôpital",
+            "aéroport",
+            "gare"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Un samedi au marché",
+      "title_fa": "یک شنبه در بازار",
+      "inspiration": "Le Petit Nicolas",
+      "text": "C'était un samedi matin ensoleillé. Maman ____ (1) les ____ (2) au marché. Elle ____ (3) des légumes ____ (4) chez le maraîcher. « Ces tomates sont vraiment ____ (5) ! » dit-elle. Puis elle ____ (6) à la ____ (7) pour acheter du pain frais. À la ____ (8), elle choisit un beau poulet. Au supermarché, elle ____ (9) les prix avec attention. « Ce gâteau ____ (10) trop ____ (11) », dit-elle. Mais il était ____ (12) ! À la ____ (13), elle paya avec de l'____ (14). « Ça fait vingt euros et cinquante ____ (15) », dit la caissière. Le soir, toute la famille mangea à la ____ (16). Papa dit : « Ce samedi, on va au ____ (17) ! »",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "faisait",
+          "options": [
+            "faisait",
+            "dormait",
+            "lisait",
+            "chantait"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "courses",
+          "options": [
+            "courses",
+            "devoirs",
+            "leçons",
+            "tâches"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "acheta",
+          "options": [
+            "acheta",
+            "vendit",
+            "perdit",
+            "oublia"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "bio",
+          "options": [
+            "bio",
+            "chers",
+            "mauvais",
+            "vieux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "bonnes",
+          "options": [
+            "bonnes",
+            "mauvaises",
+            "chères",
+            "vieilles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "alla",
+          "options": [
+            "alla",
+            "dormit",
+            "lut",
+            "chanta"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "boulangerie",
+          "options": [
+            "boulangerie",
+            "boucherie",
+            "pharmacie",
+            "librairie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "boucherie",
+          "options": [
+            "boucherie",
+            "boulangerie",
+            "pharmacie",
+            "librairie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "regarda",
+          "options": [
+            "regarda",
+            "jeta",
+            "perdit",
+            "oublia"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "coûte",
+          "options": [
+            "coûte",
+            "mange",
+            "dort",
+            "lit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "cher",
+          "options": [
+            "cher",
+            "bon",
+            "bio",
+            "délicieux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "délicieux",
+          "options": [
+            "délicieux",
+            "mauvais",
+            "cher",
+            "vieux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "caisse",
+          "options": [
+            "caisse",
+            "porte",
+            "fenêtre",
+            "table"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "argent",
+          "options": [
+            "argent",
+            "or",
+            "papier",
+            "carte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "centimes",
+          "options": [
+            "centimes",
+            "euros",
+            "dollars",
+            "livres"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "cantine",
+          "options": [
+            "cantine",
+            "magasin",
+            "école",
+            "bureau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 17,
+          "answer": "centre commercial",
+          "options": [
+            "centre commercial",
+            "hôpital",
+            "aéroport",
+            "gare"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Shopping et Marché Quotidien",
+    "title_fa": "آزمون: خرید روزانه و بازار",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Pour obtenir du pain, on va à la ____.",
+        "options": [
+          "boulangerie",
+          "boucherie",
+          "pharmacie",
+          "librairie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای خرید نان به نانوایی (boulangerie) می‌رویم."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour obtenir de la viande, on va à la ____.",
+        "options": [
+          "boucherie",
+          "boulangerie",
+          "pharmacie",
+          "librairie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای خرید گوشت به قصابی (boucherie) می‌رویم."
+      },
+      {
+        "type": "mcq",
+        "question": "On paie au magasin à la ____.",
+        "options": [
+          "caisse",
+          "porte",
+          "fenêtre",
+          "table"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "در فروشگاه در صندوق (caisse) پرداخت می‌کنیم."
+      },
+      {
+        "type": "mcq",
+        "question": "Les élèves mangent à la ____ de l'école.",
+        "options": [
+          "cantine",
+          "classe",
+          "bibliothèque",
+          "cour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دانش‌آموزان در غذاخوری مدرسه (cantine) غذا می‌خورند."
+      },
+      {
+        "type": "mcq",
+        "question": "On va au ____ pour faire tous les magasins.",
+        "options": [
+          "centre commercial",
+          "hôpital",
+          "aéroport",
+          "gare"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای خرید از همه فروشگاه‌ها به مرکز خرید (centre commercial) می‌رویم."
+      },
+      {
+        "type": "mcq",
+        "question": "Maman fait ____ au supermarché chaque semaine.",
+        "options": [
+          "les courses",
+          "le sport",
+          "la sieste",
+          "le ménage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مامان هر هفته خرید روزمره (les courses) می‌کند."
+      },
+      {
+        "type": "mcq",
+        "question": "« Combien ça ____ ? » signifie « قیمتش چقدر است؟ »",
+        "options": [
+          "coûte",
+          "mange",
+          "dort",
+          "lit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Coûter به معنای قیمت داشتن است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un euro = 100 ____.",
+        "options": [
+          "centimes",
+          "euros",
+          "dollars",
+          "livres"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هر یورو برابر ۱۰۰ سنتیم است."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce sac est trop ____ pour moi, je n'ai pas assez d'argent.",
+        "options": [
+          "cher",
+          "bon",
+          "petit",
+          "vieux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Cher به معنای گران است."
+      },
+      {
+        "type": "mcq",
+        "question": "J'aime acheter des légumes ____ au marché.",
+        "options": [
+          "bio",
+          "chers",
+          "mauvais",
+          "vieux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Bio به معنای ارگانیک است."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce gâteau est ____ ! Je veux une autre part.",
+        "options": [
+          "délicieux",
+          "mauvais",
+          "cher",
+          "vieux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Délicieux به معنای خوشمزه است."
+      },
+      {
+        "type": "mcq",
+        "question": "Je vais ____ du pain à la boulangerie.",
+        "options": [
+          "acheter",
+          "vendre",
+          "manger",
+          "dormir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Acheter به معنای خریدن است."
+      },
+      {
+        "type": "mcq",
+        "question": "Je n'ai pas d'____ aujourd'hui, je ne peux rien acheter.",
+        "options": [
+          "argent",
+          "or",
+          "papier",
+          "carte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Argent به معنای پول است."
+      },
+      {
+        "type": "binary",
+        "question": "« Bon » et « bonne » sont des adjectifs qui signifient « خوب » en persan.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، bon (مذکر) و bonne (مؤنث) هر دو به معنای خوب هستند."
+      },
+      {
+        "type": "binary",
+        "question": "« Cher » signifie « bon marché » ou « pas cher ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، cher به معنای گران است، نه ارزان."
+      }
+    ]
+  }
+}
