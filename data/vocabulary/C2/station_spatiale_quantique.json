@@ -1,0 +1,924 @@
+{
+  "id": "station_spatiale_quantique",
+  "level": "C2",
+  "theme": "Station Spatiale et Physique Quantique",
+  "theme_fa": "ایستگاه فضایی و فیزیک کوانتوم",
+  "icon": "🚀",
+  "inspiration": "Star Trek / Interstellar",
+  "words": [
+    {
+      "fr": "le vaisseau",
+      "fa": "فضاپیما",
+      "emoji": "🛸",
+      "difficulty": 2,
+      "ex": "Le vaisseau spatial a décollé avec succès malgré la tempête solaire.",
+      "ex_fa": "فضاپیما با وجود طوفان خورشیدی با موفقیت پرتاب شد."
+    },
+    {
+      "fr": "l'atterrissage",
+      "fa": "فرود",
+      "emoji": "🛬",
+      "difficulty": 3,
+      "ex": "L'atterrissage sur Mars s'est effectué en douceur grâce au système automatisé.",
+      "ex_fa": "فرود روی مریخ به لطف سیستم خودکار به آرامی انجام شد."
+    },
+    {
+      "fr": "l'astéroïde",
+      "fa": "سیارک",
+      "emoji": "☄️",
+      "difficulty": 3,
+      "ex": "Un astéroïde de grande taille frôlera la Terre demain à minuit.",
+      "ex_fa": "یک سیارک بزرگ فردا نیمه‌شب از کنار زمین عبور خواهد کرد."
+    },
+    {
+      "fr": "le cosmos",
+      "fa": "کیهان",
+      "emoji": "🌌",
+      "difficulty": 3,
+      "ex": "Les secrets du cosmos nous échappent encore malgré nos avancées technologiques.",
+      "ex_fa": "با وجود پیشرفت‌های فناوری، رازهای کیهان هنوز از دسترس ما خارج است."
+    },
+    {
+      "fr": "l'hyperespace",
+      "fa": "ابر فضا",
+      "emoji": "🌀",
+      "difficulty": 4,
+      "ex": "Pour atteindre Alpha Centauri en temps raisonnable, le vaisseau a sauté dans l'hyperespace.",
+      "ex_fa": "برای رسیدن به آلفا سنتاوری در زمان معقول، فضاپیما وارد ابرفضا شد."
+    },
+    {
+      "fr": "l'interstellaire",
+      "fa": "بین ستاره‌ای",
+      "emoji": "⭐",
+      "difficulty": 4,
+      "ex": "Ce voyage interstellaire durera plus de dix ans à vitesse subluminique.",
+      "ex_fa": "این سفر بین ستاره‌ای بیش از ده سال با سرعت زیر نور طول خواهد کشید."
+    },
+    {
+      "fr": "le propulseur",
+      "fa": "پیشران",
+      "emoji": "🚀",
+      "difficulty": 4,
+      "ex": "Le propulseur principal est en panne ; nous devons utiliser les rétrofusées.",
+      "ex_fa": "موتور اصلی پیشران خراب است؛ باید از راکت‌های عقب‌گرد استفاده کنیم."
+    },
+    {
+      "fr": "le vortex",
+      "fa": "گرداب فضایی",
+      "emoji": "🌀",
+      "difficulty": 5,
+      "ex": "Le vaisseau a été aspiré par un vortex gravitationnel près du trou noir.",
+      "ex_fa": "فضاپیما توسط یک گرداب گرانشی نزدیک سیاه‌چاله مکش شد."
+    },
+    {
+      "fr": "le transpondeur",
+      "fa": "ترانسپوندر",
+      "emoji": "📡",
+      "difficulty": 5,
+      "ex": "Le transpondeur de l'avion a cessé d'émettre, rendant l'appareil invisible au radar.",
+      "ex_fa": "ترانسپوندر هواپیما از کار افتاد و هواپیما را برای رادار نامرئی کرد."
+    },
+    {
+      "fr": "le phaseur",
+      "fa": "فیزر",
+      "emoji": "🔫",
+      "difficulty": 5,
+      "ex": "Sortez vos phaseurs et mettez-les en position de neutralisation !",
+      "ex_fa": "فیزرهای خود را بیرون بیاورید و روی حالت خنثی‌سازی تنظیم کنید!"
+    },
+    {
+      "fr": "le romulien",
+      "fa": "رومولیایی",
+      "emoji": "👽",
+      "difficulty": 5,
+      "ex": "Un vaisseau romulien a franchi la frontière neutre sans autorisation.",
+      "ex_fa": "یک فضاپیمای رومولیایی بدون مجوز از مرز خنثی عبور کرد."
+    },
+    {
+      "fr": "l'antimatière",
+      "fa": "پادماده",
+      "emoji": "⚛️",
+      "difficulty": 5,
+      "ex": "L'antimatière, en contact avec la matière, provoque une annihilation totale.",
+      "ex_fa": "پادماده در تماس با ماده باعث نابودی کامل می‌شود."
+    },
+    {
+      "fr": "la particule",
+      "fa": "ذره",
+      "emoji": "🔬",
+      "difficulty": 3,
+      "ex": "Les accélérateurs de particules permettent d'étudier la structure fondamentale de la matière.",
+      "ex_fa": "شتاب‌دهنده‌های ذرات امکان مطالعه ساختار بنیادی ماده را فراهم می‌کنند."
+    },
+    {
+      "fr": "le quark",
+      "fa": "کوارک",
+      "emoji": "🔬",
+      "difficulty": 5,
+      "ex": "Le quark est l'une des particules élémentaires constitutives des protons et neutrons.",
+      "ex_fa": "کوارک یکی از ذرات بنیادی تشکیل‌دهنده پروتون‌ها و نوترون‌هاست."
+    },
+    {
+      "fr": "le niveau quantique",
+      "fa": "سطح کوانتومی",
+      "emoji": "🔬",
+      "difficulty": 5,
+      "ex": "La physique au niveau quantique défie notre intuition classique de la réalité.",
+      "ex_fa": "فیزیک در سطح کوانتومی بر درک کلاسیک ما از واقعیت چیره می‌شود."
+    },
+    {
+      "fr": "le gamma",
+      "fa": "پرتو گاما",
+      "emoji": "☢️",
+      "difficulty": 4,
+      "ex": "Les rayons gamma, émis par les supernovae, sont extrêmement dangereux pour la vie.",
+      "ex_fa": "پرتوهای گاما که توسط ابرنواخترها ساطع می‌شوند، برای حیات بسیار خطرناک هستند."
+    },
+    {
+      "fr": "la distorsion",
+      "fa": "اعوجاج فضا-زمان",
+      "emoji": "🌀",
+      "difficulty": 5,
+      "ex": "Une distorsion spatio-temporelle a été détectée près de l'horizon des événements.",
+      "ex_fa": "یک اعوجاج فضا-زمان نزدیک افق رویداد شناسایی شد."
+    },
+    {
+      "fr": "le niveau moléculaire",
+      "fa": "سطح مولکولی",
+      "emoji": "🔬",
+      "difficulty": 4,
+      "ex": "Certaines réactions chimiques ne peuvent être observées qu'au niveau moléculaire.",
+      "ex_fa": "برخی واکنش‌های شیمیایی فقط در سطح مولکولی قابل مشاهده‌اند."
+    },
+    {
+      "fr": "le plutonium",
+      "fa": "پلوتونیوم",
+      "emoji": "☢️",
+      "difficulty": 4,
+      "ex": "Le cœur du réacteur nucléaire contient du plutonium hautement enrichi.",
+      "ex_fa": "هسته رآکتور هسته‌ای حاوی پلوتونیوم با غنی‌سازی بالا است."
+    },
+    {
+      "fr": "le phosphore",
+      "fa": "فسفر",
+      "emoji": "💡",
+      "difficulty": 4,
+      "ex": "Le phosphore, utilisé dans les allumettes, brille dans l'obscurité.",
+      "ex_fa": "فسفر که در کبریت‌ها استفاده می‌شود، در تاریکی می‌درخشد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Mission vers Proxima Centauri",
+      "title_fa": "ماموریت به پروکسیما سنتاوری",
+      "text": "Notre {{BLANK_41}} spatial quitte l'orbite terrestre. L'objectif est d'étudier un {{BLANK_43}} géant. L'{{BLANK_42}} sur la lune de Titan s'est bien passé. Nous naviguons dans le {{BLANK_44}} infini. Pour gagner du temps, nous entrons dans l'{{BLANK_45}}. C'est un voyage {{BLANK_46}} de dix ans. Soudain, le {{BLANK_47}} principal tombe en panne. Le {{BLANK_48}} spatial nous attire. Le {{BLANK_49}} ne répond plus. Des {{BLANK_51}} hostiles approchent. Ils tirent avec des {{BLANK_50}}. Nous activons nos boucliers. L'{{BLANK_52}} est stockée dans la soute. Les {{BLANK_53}} sont analysées dans le labo. Les {{BLANK_54}} composent la matière. La physique au {{BLANK_55}} est étrange. Les rayons {{BLANK_56}} sont bloqués par le blindage. Une {{BLANK_57}} spatio-temporelle apparaît. Nos instruments mesurent au {{BLANK_58}}. Le réacteur utilise du {{BLANK_59}}. Les réserves de {{BLANK_60}} brillent dans l'obscurité.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "vaisseau",
+          "options": [
+            "vaisseau",
+            "camion",
+            "train",
+            "bateau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "astéroïde",
+          "options": [
+            "astéroïde",
+            "planète",
+            "étoile",
+            "comète"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "atterrissage",
+          "options": [
+            "atterrissage",
+            "décollage",
+            "vol",
+            "navigation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cosmos",
+          "options": [
+            "cosmos",
+            "océan",
+            "forêt",
+            "désert"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "hyperespace",
+          "options": [
+            "hyperespace",
+            "atmosphère",
+            "stratosphère",
+            "troposphère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "interstellaire",
+          "options": [
+            "interstellaire",
+            "international",
+            "intergalactique",
+            "interplanétaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "propulseur",
+          "options": [
+            "propulseur",
+            "volant",
+            "moteur",
+            "hélice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "vortex",
+          "options": [
+            "vortex",
+            "tornade",
+            "ouragan",
+            "tempête"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "transpondeur",
+          "options": [
+            "transpondeur",
+            "téléphone",
+            "radio",
+            "ordinateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "romuliens",
+          "options": [
+            "romuliens",
+            "humains",
+            "robots",
+            "animaux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "phaseurs",
+          "options": [
+            "phaseurs",
+            "pistolets",
+            "fusils",
+            "bombes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "antimatière",
+          "options": [
+            "antimatière",
+            "matière",
+            "énergie",
+            "plasma"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "particules",
+          "options": [
+            "particules",
+            "atomes",
+            "molécules",
+            "cellules"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "quarks",
+          "options": [
+            "quarks",
+            "protons",
+            "neutrons",
+            "électrons"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "niveau quantique",
+          "options": [
+            "niveau quantique",
+            "niveau atomique",
+            "niveau cellulaire",
+            "niveau moléculaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "gamma",
+          "options": [
+            "gamma",
+            "alpha",
+            "bêta",
+            "X"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 17,
+          "answer": "distorsion",
+          "options": [
+            "distorsion",
+            "explosion",
+            "implosion",
+            "collision"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 18,
+          "answer": "niveau moléculaire",
+          "options": [
+            "niveau moléculaire",
+            "niveau atomique",
+            "niveau quantique",
+            "niveau cellulaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 19,
+          "answer": "plutonium",
+          "options": [
+            "plutonium",
+            "uranium",
+            "titane",
+            "fer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 20,
+          "answer": "phosphore",
+          "options": [
+            "phosphore",
+            "soufre",
+            "carbone",
+            "oxygène"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le dernier saut",
+      "title_fa": "آخرین پرش",
+      "inspiration": "Star Trek / Interstellar",
+      "text": "Le {{BLANK_41}} USS Horizon fendait le {{BLANK_44}} silencieux, ses coques scintillant sous la lueur lointaine d'Orion. Après un {{BLANK_42}} parfait sur Encelade, l'équipage scrutait les données d'un {{BLANK_43}} errant, potentiellement riche en {{BLANK_60}}. « Capitaine, » annonça l'officier scientifique, « pour atteindre Proxima en temps utile, je recommande un saut en {{BLANK_45}}. » L'ordre fut donné. Le vaisseau vibra, puis disparut dans le néant. Ce {{BLANK_46}} voyage les plongea dans une routine fragile. Jusqu'à ce que le {{BLANK_47}} principal rende l'âme. « Alerte ! » cria le timonier. « Un {{BLANK_48}} gravitationnel nous attire vers un trou noir ! » Le {{BLANK_49}} était muet, rendant le vaisseau invisible aux alliés. Soudain, des points lumineux apparurent sur les écrans tactiques. « {{BLANK_51}} ! » hurla la chef de la sécurité. « Ils ouvrent le feu avec des {{BLANK_50}} ! » L'{{BLANK_52}}, stockée dans la soute blindée, représentait à la fois leur espoir et leur plus grande menace. Dans le laboratoire, les {{BLANK_53}} étaient bombardées, révélant leurs {{BLANK_54}} constitutifs. « La physique au {{BLANK_55}} défie toute logique, » murmura le physicien, fasciné. Les rayons {{BLANK_56}} émis par le trou noir étaient heureusement filtrés par le blindage. Mais une {{BLANK_57}} spatio-temporelle se forma, déformant la réalité. Toutes les mesures étaient prises au {{BLANK_58}} le plus précis. Le cœur du réacteur, alimenté au {{BLANK_59}}, pulsait doucement, dernier rempart contre le chaos.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "vaisseau",
+          "options": [
+            "vaisseau",
+            "camion",
+            "train",
+            "bateau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "cosmos",
+          "options": [
+            "cosmos",
+            "océan",
+            "forêt",
+            "désert"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "atterrissage",
+          "options": [
+            "atterrissage",
+            "décollage",
+            "vol",
+            "navigation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "astéroïde",
+          "options": [
+            "astéroïde",
+            "planète",
+            "étoile",
+            "comète"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "phosphore",
+          "options": [
+            "phosphore",
+            "soufre",
+            "carbone",
+            "oxygène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "hyperespace",
+          "options": [
+            "hyperespace",
+            "atmosphère",
+            "stratosphère",
+            "troposphère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "interstellaire",
+          "options": [
+            "interstellaire",
+            "international",
+            "intergalactique",
+            "interplanétaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "propulseur",
+          "options": [
+            "propulseur",
+            "volant",
+            "moteur",
+            "hélice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "vortex",
+          "options": [
+            "vortex",
+            "tornade",
+            "ouragan",
+            "tempête"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "transpondeur",
+          "options": [
+            "transpondeur",
+            "téléphone",
+            "radio",
+            "ordinateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "romuliens",
+          "options": [
+            "romuliens",
+            "humains",
+            "robots",
+            "animaux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "phaseurs",
+          "options": [
+            "phaseurs",
+            "pistolets",
+            "fusils",
+            "bombes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "antimatière",
+          "options": [
+            "antimatière",
+            "matière",
+            "énergie",
+            "plasma"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "particules",
+          "options": [
+            "particules",
+            "atomes",
+            "molécules",
+            "cellules"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "quarks",
+          "options": [
+            "quarks",
+            "protons",
+            "neutrons",
+            "électrons"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "niveau quantique",
+          "options": [
+            "niveau quantique",
+            "niveau atomique",
+            "niveau cellulaire",
+            "niveau moléculaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 17,
+          "answer": "gamma",
+          "options": [
+            "gamma",
+            "alpha",
+            "bêta",
+            "X"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 18,
+          "answer": "distorsion",
+          "options": [
+            "distorsion",
+            "explosion",
+            "implosion",
+            "collision"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 19,
+          "answer": "niveau moléculaire",
+          "options": [
+            "niveau moléculaire",
+            "niveau atomique",
+            "niveau quantique",
+            "niveau cellulaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 20,
+          "answer": "plutonium",
+          "options": [
+            "plutonium",
+            "uranium",
+            "titane",
+            "fer"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Station Spatiale et Physique Quantique",
+    "title_fa": "آزمون: ایستگاه فضایی و فیزیک کوانتوم",
+    "displayCount": 25,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'engin conçu pour voyager dans l'espace est un ____.",
+        "options": [
+          "vaisseau",
+          "camion",
+          "train",
+          "bateau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله طراحی‌شده برای سفر در فضا = فضاپیما (vaisseau)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de poser un engin spatial sur une surface céleste est l'____.",
+        "options": [
+          "atterrissage",
+          "décollage",
+          "vol",
+          "navigation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرود فضاپیما روی سطح آسمانی = atterrissage."
+      },
+      {
+        "type": "mcq",
+        "question": "Un corps rocheux orbitant autour du soleil, plus petit qu'une planète, est un ____.",
+        "options": [
+          "astéroïde",
+          "comète",
+          "satellite",
+          "météore"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جسم سنگی کوچک‌تر از سیاره که به دور خورشید می‌چرخد = سیارک (astéroïde)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble de tout ce qui existe, incluant l'espace, le temps et la matière, est le ____.",
+        "options": [
+          "cosmos",
+          "univers",
+          "galaxie",
+          "système solaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموع همه چیز که شامل فضا، زمان و ماده می‌شود = کیهان (cosmos)."
+      },
+      {
+        "type": "mcq",
+        "question": "Le domaine théorique permettant des voyages plus rapides que la lumière est l'____.",
+        "options": [
+          "hyperespace",
+          "hypersomnie",
+          "hypertension",
+          "hyperactivité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حوزه نظری برای سفرهای سریع‌تر از نور = ابرفضا (hyperespace)."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce qui concerne l'espace entre les étoiles est qualifié d'____.",
+        "options": [
+          "interstellaire",
+          "intergalactique",
+          "interplanétaire",
+          "international"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مربوط به فضای بین ستاره‌ها = بین ستاره‌ای (interstellaire)."
+      },
+      {
+        "type": "mcq",
+        "question": "Le moteur qui propulse un vaisseau spatial est le ____.",
+        "options": [
+          "propulseur",
+          "volant",
+          "hélice",
+          "turbine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "موتور پیشران فضاپیما = propulseur."
+      },
+      {
+        "type": "mcq",
+        "question": "Un tourbillon d'énergie ou de matière dans l'espace est un ____.",
+        "options": [
+          "vortex",
+          "tornade",
+          "ouragan",
+          "typhon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گرداب انرژی یا ماده در فضا = وورتکس (vortex)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil qui émet un signal de réponse à un radar est le ____.",
+        "options": [
+          "transpondeur",
+          "émetteur",
+          "récepteur",
+          "modulateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه پاسخگو به رادار = ترانسپوندر (transpondeur)."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans l'univers de Star Trek, l'arme énergétique standard est le ____.",
+        "options": [
+          "phaseur",
+          "laser",
+          "plasma",
+          "photon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سلاح انرژی استاندارد در استارترک = فیزر (phaseur)."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans Star Trek, l'espèce extraterrestre hostile issue de Romulus est les ____.",
+        "options": [
+          "romuliens",
+          "klingons",
+          "borgs",
+          "ferengis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نژاد فضایی دشمن از رومولوس در استارترک = رومولیایی‌ها (romuliens)."
+      },
+      {
+        "type": "mcq",
+        "question": "La substance dont la rencontre avec la matière provoque une annihilation est l'____.",
+        "options": [
+          "antimatière",
+          "matière noire",
+          "énergie sombre",
+          "plasma"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده‌ای که در تماس با ماده معمولی نابود می‌شود = پادماده (antimatière)."
+      },
+      {
+        "type": "mcq",
+        "question": "Les constituants fondamentaux de la matière étudiés en physique sont les ____.",
+        "options": [
+          "particules",
+          "atomes",
+          "molécules",
+          "cellules"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اجزای بنیادی ماده که در فیزیک مطالعه می‌شوند = ذرات (particules)."
+      },
+      {
+        "type": "mcq",
+        "question": "Les particules élémentaires qui composent les protons et neutrons sont les ____.",
+        "options": [
+          "quarks",
+          "électrons",
+          "neutrinos",
+          "photons"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ذرات بنیادی تشکیل‌دهنده پروتون و نوترون = کوارک‌ها (quarks)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'échelle à laquelle les lois de la physique quantique prédominent est le ____.",
+        "options": [
+          "niveau quantique",
+          "niveau atomique",
+          "niveau moléculaire",
+          "niveau cellulaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مقیاسی که قوانین فیزیک کوانتومی در آن حاکم است = سطح کوانتومی (niveau quantique)."
+      },
+      {
+        "type": "mcq",
+        "question": "Le type de rayonnement électromagnétique le plus énergétique et pénétrant est le rayon ____.",
+        "options": [
+          "gamma",
+          "X",
+          "ultraviolet",
+          "infrarouge"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پرتو الکترومغناطیسی با بیشترین انرژی و نفوذپذیری = گاما (gamma)."
+      },
+      {
+        "type": "mcq",
+        "question": "La déformation de l'espace-temps causée par une masse importante est une ____.",
+        "options": [
+          "distorsion",
+          "expansion",
+          "contraction",
+          "oscillation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تغییر شکل فضا-زمان به دلیل جرم زیاد = اعوجاج (distorsion)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'échelle à laquelle les interactions chimiques sont observées est le ____.",
+        "options": [
+          "niveau moléculaire",
+          "niveau atomique",
+          "niveau quantique",
+          "niveau cellulaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مقیاسی که واکنش‌های شیمیایی در آن مشاهده می‌شوند = سطح مولکولی (niveau moléculaire)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'élément radioactif utilisé comme combustible dans certains réacteurs nucléaires est le ____.",
+        "options": [
+          "plutonium",
+          "uranium",
+          "radium",
+          "thorium"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عنصر رادیواکتیو استفاده‌شده به عنوان سوخت در برخی رآکتورها = پلوتونیوم (plutonium)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'élément chimique qui émet une lueur dans l'obscurité est le ____.",
+        "options": [
+          "phosphore",
+          "soufre",
+          "iode",
+          "brome"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عنصر شیمیایی که در تاریکی نور می‌دهد = فسفر (phosphore)."
+      },
+      {
+        "type": "binary",
+        "question": "Le terme \"vaisseau\" peut désigner à la fois un bateau et un engin spatial.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، vaisseau هم کشتی و هم فضاپیما را می‌تواند برساند."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"hyperespace\" est un concept scientifique prouvé et utilisé dans les missions spatiales réelles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، ابرفضا یک مفهوم تخیلی در داستان‌های علمی-تخیلی است."
+      },
+      {
+        "type": "binary",
+        "question": "Les \"phaseurs\" existent dans la technologie militaire actuelle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، فیزرها سلاح‌های تخیلی در استارترک هستند."
+      },
+      {
+        "type": "binary",
+        "question": "Le \"plutonium\" est un élément naturel couramment trouvé dans la croûte terrestre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، پلوتونیوم عمدتاً مصنوعی است و به ندرت در طبیعت یافت می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le \"phosphore\" est utilisé dans la fabrication des allumettes modernes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، فسفر جزء مهمی از کبریت‌های مدرن است."
+      }
+    ]
+  }
+}
