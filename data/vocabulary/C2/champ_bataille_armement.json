@@ -1,0 +1,504 @@
+{
+  "id": "champ_bataille_armement",
+  "level": "C2",
+  "theme": "Champ de Bataille et Armement",
+  "theme_fa": "میدان نبرد و تسلیحات",
+  "icon": "⚔️",
+  "inspiration": "Game of Thrones / Le Dernier Samouraï",
+  "words": [
+    {
+      "fr": "le mousquet",
+      "fa": "تفنگ فتیله‌ای",
+      "emoji": "🔫",
+      "difficulty": 4,
+      "ex": "Les soldats du XVIIIe siècle chargeaient leur mousquet avec poudre et plomb.",
+      "ex_fa": "سربازان قرن هجدهم تفنگ فتیله‌ای خود را با باروت و سرب شارژ می‌کردند."
+    },
+    {
+      "fr": "l'ogive",
+      "fa": "کلاهک موشک",
+      "emoji": "💣",
+      "difficulty": 4,
+      "ex": "L'ogive nucléaire a été désamorcée in extremis par l'équipe de démineurs.",
+      "ex_fa": "کلاهک هسته‌ای در لحظه آخر توسط تیم خنثی‌کنندگان بمب غیرفعال شد."
+    },
+    {
+      "fr": "la mitrailleuse",
+      "fa": "مسلسل",
+      "emoji": "🔫",
+      "difficulty": 2,
+      "ex": "La mitrailleuse crépitait sans arrêt, couvrant la retraite des troupes.",
+      "ex_fa": "مسلسل بدون وقفه می‌تافت و عقب‌نشینی نیروها را پوشش می‌داد."
+    },
+    {
+      "fr": "la baïonnette",
+      "fa": "سرنیزه",
+      "emoji": "🗡️",
+      "difficulty": 4,
+      "ex": "Ils ont chargé à la baïonnette dans un cri de guerre terrifiant.",
+      "ex_fa": "آن‌ها با سرنیزه در دهان یک فریاد جنگی وحشتناک به حمله برخاستند."
+    },
+    {
+      "fr": "le glaive",
+      "fa": "شمشیر رومی",
+      "emoji": "⚔️",
+      "difficulty": 5,
+      "ex": "Le gladiateur leva son glaive vers le ciel en signe de défi.",
+      "ex_fa": "گلادیاتور شمشیر رومی‌اش را به آسمان در نشانه‌ی چالش بلند کرد."
+    },
+    {
+      "fr": "l'abordage",
+      "fa": "حمله دریایی",
+      "emoji": "🚢",
+      "difficulty": 5,
+      "ex": "Le capitaine pirate hurla : « À l'abordage ! » et sauta sur le pont ennemi.",
+      "ex_fa": "کاپیتان دزد دریایی فریاد زد: «به حمله!» و روی عرشه دشمن پرید."
+    },
+    {
+      "fr": "le tribord",
+      "fa": "سمت راست کشتی",
+      "emoji": "➡️",
+      "difficulty": 4,
+      "ex": "Regardez par le hublot à tribord : une baleine vient d'apparaître !",
+      "ex_fa": "از دریچه سمت راست کشتی نگاه کنید: یک نهنگ همین الان ظاهر شد!"
+    },
+    {
+      "fr": "la reddition",
+      "fa": "تسلیم نظامی",
+      "emoji": "🏳️",
+      "difficulty": 3,
+      "ex": "La reddition de l'armée adverse a mis fin à trois ans de conflit.",
+      "ex_fa": "تسلیم ارتش دشمن سه سال جنگ را پایان داد."
+    },
+    {
+      "fr": "l'exécuteur",
+      "fa": "جلاد",
+      "emoji": "🪓",
+      "difficulty": 4,
+      "ex": "L'exécuteur des hautes œuvres accomplissait sa sinistre tâche en silence.",
+      "ex_fa": "جلاد وظیفه تاریک خود را در سکوت انجام می‌داد."
+    },
+    {
+      "fr": "le collimateur",
+      "fa": "کولیماتور",
+      "emoji": "🎯",
+      "difficulty": 5,
+      "ex": "Le sniper ajusta minutieusement son collimateur avant de tirer.",
+      "ex_fa": "تک‌تیرانداز قبل از شلیک، کولیماتور خود را با دقت تنظیم کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La bataille navale",
+      "title_fa": "نبرد دریایی",
+      "text": "Sur le pont du navire, le capitaine ordonne : « À l'{{BLANK_36}} ! ». Les pirates sautent sur le bateau ennemi. Un soldat brandit son {{BLANK_35}} et crie. Un autre fixe sa {{BLANK_34}} sur son fusil. La {{BLANK_33}} tire sans interruption. Les canons visent l'{{BLANK_32}} du missile ennemi. Les artilleurs utilisent encore des {{BLANK_31}} anciens. Le commandant regarde par le hublot à {{BLANK_37}}. Il voit l'ennemi lever le drapeau blanc : c'est la {{BLANK_38}}. L'{{BLANK_39}} attend les prisonniers. Le tireur d'élite règle son {{BLANK_40}} pour la dernière cible.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "abordage",
+          "options": [
+            "abordage",
+            "accostage",
+            "amarrage",
+            "débarquement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "glaive",
+          "options": [
+            "glaive",
+            "poignard",
+            "hache",
+            "massue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "baïonnette",
+          "options": [
+            "baïonnette",
+            "lame",
+            "pointe",
+            "dague"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "mitrailleuse",
+          "options": [
+            "mitrailleuse",
+            "canon",
+            "fusil",
+            "pistolet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "ogive",
+          "options": [
+            "ogive",
+            "fusée",
+            "roquette",
+            "projectile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "mousquet",
+          "options": [
+            "mousquet",
+            "arbalète",
+            "arc",
+            "lance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tribord",
+          "options": [
+            "tribord",
+            "bâbord",
+            "avant",
+            "arrière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "reddition",
+          "options": [
+            "reddition",
+            "victoire",
+            "défaite",
+            "trêve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "exécuteur",
+          "options": [
+            "exécuteur",
+            "gardien",
+            "officier",
+            "médecin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "collimateur",
+          "options": [
+            "collimateur",
+            "télescope",
+            "microscope",
+            "jumelles"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'aube sanglante",
+      "title_fa": "طلوع خونین",
+      "inspiration": "Game of Thrones / Le Dernier Samouraï",
+      "text": "L'aube se levait, teintant l'horizon d'un rouge sinistre, lorsque le cri retentit : « À l'{{BLANK_36}} ! » Le capitaine Blackwood, sabre entre les dents, sauta sur le pont ennemi. Autour de lui, ses hommes, armés de {{BLANK_31}} antiques mais fidèles, chargeaient à la {{BLANK_34}} en poussant des hurlements gutturaux. Sur la dunette, un mercenaire brandissait un {{BLANK_35}} romain, trophée d'une vie de pillage. La {{BLANK_33}} crépitait sans relâche, balayant les rangs adverses. Soudain, une explosion sourde : l'{{BLANK_32}} du missile avait été touchée. « Regardez à {{BLANK_37}} ! » hurla un matelot. Là-bas, le pavillon blanc flottait. La {{BLANK_38}} était proche. Dans l'ombre du gaillard d'avant, l'{{BLANK_39}}, vêtu de noir, affûtait sa hache. Et perchée sur le grand mât, une silhouette immobile : le tireur d'élite, qui ajustait son {{BLANK_40}} avec une patience de fauve, attendant l'ordre final.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "abordage",
+          "options": [
+            "abordage",
+            "accostage",
+            "amarrage",
+            "débarquement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "mousquet",
+          "options": [
+            "mousquet",
+            "arbalète",
+            "arc",
+            "lance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "baïonnette",
+          "options": [
+            "baïonnette",
+            "lame",
+            "pointe",
+            "dague"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "glaive",
+          "options": [
+            "glaive",
+            "poignard",
+            "hache",
+            "massue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mitrailleuse",
+          "options": [
+            "mitrailleuse",
+            "canon",
+            "fusil",
+            "pistolet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "ogive",
+          "options": [
+            "ogive",
+            "fusée",
+            "roquette",
+            "projectile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "tribord",
+          "options": [
+            "tribord",
+            "bâbord",
+            "avant",
+            "arrière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "reddition",
+          "options": [
+            "reddition",
+            "victoire",
+            "défaite",
+            "trêve"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "exécuteur",
+          "options": [
+            "exécuteur",
+            "gardien",
+            "officier",
+            "médecin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "collimateur",
+          "options": [
+            "collimateur",
+            "télescope",
+            "microscope",
+            "jumelles"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Champ de Bataille et Armement",
+    "title_fa": "آزمون: میدان نبرد و تسلیحات",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'arme à feu ancienne, utilisée avant le fusil moderne, est le ____.",
+        "options": [
+          "mousquet",
+          "pistolet",
+          "revolver",
+          "fusil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تفنگ فتیله‌ای سلاح قدیمی قبل از اختراع تفنگ مدرن است."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie explosive située à l'avant d'un missile s'appelle l'____.",
+        "options": [
+          "ogive",
+          "empennage",
+          "propulseur",
+          "guidage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قسمت انفجاری جلوی موشک = ogive (کلاهک)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arme automatique capable de tirer en rafales continues est la ____.",
+        "options": [
+          "mitrailleuse",
+          "carabine",
+          "fusil",
+          "pistolet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سلاح خودکار با شلیک پیوسته = مسلسل (mitrailleuse)."
+      },
+      {
+        "type": "mcq",
+        "question": "La lame fixée à l'extrémité d'un fusil pour le combat rapproché est la ____.",
+        "options": [
+          "baïonnette",
+          "lame",
+          "pointe",
+          "dague"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تیغه متصل به سر تفنگ برای نبرد نزدیک = سرنیزه (baïonnette)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'épée courte et large utilisée par les légionnaires romains est le ____.",
+        "options": [
+          "glaive",
+          "sabre",
+          "épée",
+          "rapière"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شمشیر کوتاه و پهن رومیان = glaive."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de monter à l'assaut d'un navire ennemi est l'____.",
+        "options": [
+          "abordage",
+          "accostage",
+          "amarrage",
+          "débarquement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حمله به کشتی دشمن = abordage."
+      },
+      {
+        "type": "mcq",
+        "question": "Le côté droit d'un navire, vu de la poupe vers la proue, est le ____.",
+        "options": [
+          "tribord",
+          "bâbord",
+          "avant",
+          "arrière"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سمت راست کشتی از دید عقب به جلو = tribord."
+      },
+      {
+        "type": "mcq",
+        "question": "L'acte par lequel une armée cesse le combat et se soumet à l'ennemi est la ____.",
+        "options": [
+          "reddition",
+          "victoire",
+          "défaite",
+          "trêve"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تسلیم نظامی = reddition."
+      },
+      {
+        "type": "mcq",
+        "question": "Celui qui exécute les condamnations à mort est l'____.",
+        "options": [
+          "exécuteur",
+          "gardien",
+          "officier",
+          "médecin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اجراکننده حکم اعدام = جلاد (exécuteur)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil optique permettant de viser avec précision sur une arme est le ____.",
+        "options": [
+          "collimateur",
+          "télescope",
+          "microscope",
+          "jumelles"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله نشانه‌روی اپتیکی = کولیماتور (collimateur)."
+      },
+      {
+        "type": "binary",
+        "question": "Le terme \"mousquet\" désigne une arme à feu moderne utilisée par les armées actuelles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، mousquet سلاح تاریخی است و در ارتش‌های مدرن استفاده نمی‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Une \"ogive\" peut contenir une charge conventionnelle, chimique ou nucléaire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، کلاهک موشک می‌تواند حاوی انواع بار انفجاری باشد."
+      },
+      {
+        "type": "binary",
+        "question": "Le \"glaive\" est une arme typique des samouraïs japonais.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، glaive متعلق به رومیان است. سلاح سامورایی‌ها کاتانا است."
+      },
+      {
+        "type": "binary",
+        "question": "\"À l'abordage !\" est une expression utilisée lors des combats navals historiques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، این عبارت در نبردهای دریایی قدیم برای حمله به کشتی دشمن استفاده می‌شد."
+      },
+      {
+        "type": "binary",
+        "question": "Le \"tribord\" et le \"bâbord\" sont des termes utilisés uniquement dans l'aviation.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، این اصطلاحات مربوط به دریانوردی و کشتی‌ها هستند، نه هوانوردی."
+      }
+    ]
+  }
+}
