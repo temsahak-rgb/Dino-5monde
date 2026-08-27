@@ -1,0 +1,658 @@
+{
+  "id": "corps_vetements_apparence",
+  "level": "A1",
+  "theme": "Corps, Vêtements et Apparence",
+  "theme_fa": "بدن، لباس و ظاهر",
+  "icon": "👕",
+  "inspiration": "Le Petit Nicolas / Mode et Vie Quotidienne",
+  "words": [
+    {
+      "fr": "beau / belle",
+      "fa": "زیبا",
+      "emoji": "✨",
+      "difficulty": 1,
+      "ex": "Elle porte une belle robe.",
+      "ex_fa": "او یک لباس زیبا می‌پوشد."
+    },
+    {
+      "fr": "la botte",
+      "fa": "چکمه",
+      "emoji": "👢",
+      "difficulty": 2,
+      "ex": "En hiver, je porte des bottes.",
+      "ex_fa": "در زمستان، من چکمه می‌پوشم."
+    },
+    {
+      "fr": "la bouche",
+      "fa": "دهان",
+      "emoji": "👄",
+      "difficulty": 1,
+      "ex": "Ouvre la bouche pour dire « A ».",
+      "ex_fa": "دهانت را باز کن تا بگویی «آ»."
+    },
+    {
+      "fr": "le bras",
+      "fa": "بازو",
+      "emoji": "💪",
+      "difficulty": 1,
+      "ex": "J'ai mal au bras droit.",
+      "ex_fa": "من در بازوی راستم درد دارم."
+    },
+    {
+      "fr": "le casque",
+      "fa": "کلاه ایمنی / هدفون",
+      "emoji": "⛑️",
+      "difficulty": 2,
+      "ex": "Il faut mettre un casque à vélo.",
+      "ex_fa": "باید با دوچرخه کلاه ایمنی بگذاری."
+    },
+    {
+      "fr": "la casquette",
+      "fa": "کلاه لبه‌دار",
+      "emoji": "🧢",
+      "difficulty": 2,
+      "ex": "Il porte une casquette rouge.",
+      "ex_fa": "او یک کلاه لبه‌دار قرمز می‌پوشد."
+    },
+    {
+      "fr": "le chapeau",
+      "fa": "کلاه",
+      "emoji": "🎩",
+      "difficulty": 1,
+      "ex": "Le soleil est fort, mets un chapeau.",
+      "ex_fa": "خورشید شدید است، یک کلاه بگذار."
+    },
+    {
+      "fr": "chaud(e)",
+      "fa": "گرم",
+      "emoji": "🔥",
+      "difficulty": 1,
+      "ex": "Ce pull est très chaud.",
+      "ex_fa": "این پلیور بسیار گرم است."
+    },
+    {
+      "fr": "la chaussette",
+      "fa": "جوراب",
+      "emoji": "🧦",
+      "difficulty": 1,
+      "ex": "J'ai perdu une chaussette.",
+      "ex_fa": "من یک جوراب گم کرده‌ام."
+    },
+    {
+      "fr": "la chaussure",
+      "fa": "کفش",
+      "emoji": "👟",
+      "difficulty": 1,
+      "ex": "Ces chaussures sont confortables.",
+      "ex_fa": "این کفش‌ها راحت هستند."
+    },
+    {
+      "fr": "la chemise",
+      "fa": "پیراهن مردانه",
+      "emoji": "👔",
+      "difficulty": 1,
+      "ex": "Il porte une chemise blanche.",
+      "ex_fa": "او یک پیراهن سفید می‌پوشد."
+    },
+    {
+      "fr": "les cheveux",
+      "fa": "مو",
+      "emoji": "💇",
+      "difficulty": 1,
+      "ex": "Elle a les cheveux longs.",
+      "ex_fa": "او موهای بلند دارد."
+    },
+    {
+      "fr": "les collants",
+      "fa": "جوراب شلواری",
+      "emoji": "👖",
+      "difficulty": 2,
+      "ex": "Elle porte des collants noirs.",
+      "ex_fa": "او جوراب شلواری سیاه می‌پوشد."
+    },
+    {
+      "fr": "la couleur",
+      "fa": "رنگ",
+      "emoji": "🎨",
+      "difficulty": 1,
+      "ex": "Quelle est la couleur de tes yeux ?",
+      "ex_fa": "رنگ چشمان تو چیست؟"
+    },
+    {
+      "fr": "la cravate",
+      "fa": "کراوات",
+      "emoji": "👔",
+      "difficulty": 2,
+      "ex": "Le directeur porte toujours une cravate.",
+      "ex_fa": "مدیر همیشه کراوات می‌پوشد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Préparatifs pour une sortie",
+      "title_fa": "آماده‌سازی برای بیرون رفتن",
+      "text": "Aujourd'hui, il fait froid. Je dois mettre des vêtements ____ (8). Je mets un pull et une ____ (11) blanche. Pour aller à la montagne, je mets des ____ (2) et des ____ (9). Je n'oublie pas mon ____ (5) pour le vélo. Mon frère met une ____ (6) et un ____ (7) pour le soleil. Il a les ____ (12) blonds et une ____ (3) souriante. Il a mal au ____ (4) à cause du sac. Nous regardons la ____ (14) du ciel. Nous mettons aussi des ____ (13) sous le pantalon. Mon père met une ____ (15) pour le travail. Nous sommes ____ (1) et prêts à partir. Nous mettons nos ____ (10) et nous partons.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "beaux",
+          "options": [
+            "beaux",
+            "laids",
+            "tristes",
+            "méchants"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bottes",
+          "options": [
+            "bottes",
+            "chaussettes",
+            "cheveux",
+            "bras"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "bouche",
+          "options": [
+            "bouche",
+            "bras",
+            "couleur",
+            "cravate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "bras",
+          "options": [
+            "bras",
+            "bouche",
+            "cheveux",
+            "couleur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "casque",
+          "options": [
+            "casque",
+            "chapeau",
+            "casquette",
+            "cravate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "casquette",
+          "options": [
+            "casquette",
+            "chaussure",
+            "chemise",
+            "collant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "chapeau",
+          "options": [
+            "chapeau",
+            "chaussure",
+            "chemise",
+            "collant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "chauds",
+          "options": [
+            "chauds",
+            "froids",
+            "petits",
+            "courts"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "chaussettes",
+          "options": [
+            "chaussettes",
+            "cheveux",
+            "bras",
+            "bouches"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "chaussures",
+          "options": [
+            "chaussures",
+            "cheveux",
+            "bras",
+            "bouches"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "chemise",
+          "options": [
+            "chemise",
+            "chaussure",
+            "collant",
+            "cravate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "cheveux",
+          "options": [
+            "cheveux",
+            "bras",
+            "bouches",
+            "couleurs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "collants",
+          "options": [
+            "collants",
+            "cheveux",
+            "bras",
+            "bouches"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "couleur",
+          "options": [
+            "couleur",
+            "bras",
+            "bouche",
+            "cravate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "cravate",
+          "options": [
+            "cravate",
+            "chapeau",
+            "casquette",
+            "chaussure"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le portrait de Sophie",
+      "title_fa": "پرتره سوفی",
+      "inspiration": "Le Petit Nicolas",
+      "text": "Sophie est une fille très ____ (1). Elle a les ____ (12) bruns et une petite ____ (3). Aujourd'hui, elle a choisi une ____ (14) bleue pour sa robe. Il fait un peu frais, alors elle a mis un pull ____ (8). Pour protéger sa tête du soleil, elle a mis une ____ (6) à la place d'un grand ____ (7). Elle porte des ____ (9) blanches et des ____ (10) noires très confortables. Pour faire du vélo, elle n'oublie jamais son ____ (5). Son frère, lui, porte une ____ (11) et une ____ (15) pour aller au bureau. Il a eu mal au ____ (4) hier. Sophie a aussi mis des ____ (13) pour avoir plus ____ (8). Elle est prête pour une belle journée.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "belle",
+          "options": [
+            "belle",
+            "laide",
+            "triste",
+            "méchante"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bottes",
+          "options": [
+            "bottes",
+            "chaussettes",
+            "cheveux",
+            "bras"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "bouche",
+          "options": [
+            "bouche",
+            "bras",
+            "couleur",
+            "cravate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "bras",
+          "options": [
+            "bras",
+            "bouche",
+            "cheveux",
+            "couleur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "casque",
+          "options": [
+            "casque",
+            "chapeau",
+            "casquette",
+            "cravate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "casquette",
+          "options": [
+            "casquette",
+            "chaussure",
+            "chemise",
+            "collant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "chapeau",
+          "options": [
+            "chapeau",
+            "chaussure",
+            "chemise",
+            "collant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "chaud",
+          "options": [
+            "chaud",
+            "froid",
+            "petit",
+            "court"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "chaussettes",
+          "options": [
+            "chaussettes",
+            "cheveux",
+            "bras",
+            "bouches"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "chaussures",
+          "options": [
+            "chaussures",
+            "cheveux",
+            "bras",
+            "bouches"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "chemise",
+          "options": [
+            "chemise",
+            "chaussure",
+            "collant",
+            "cravate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "cheveux",
+          "options": [
+            "cheveux",
+            "bras",
+            "bouches",
+            "couleurs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "collants",
+          "options": [
+            "collants",
+            "cheveux",
+            "bras",
+            "bouches"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "couleur",
+          "options": [
+            "couleur",
+            "bras",
+            "bouche",
+            "cravate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "cravate",
+          "options": [
+            "cravate",
+            "chapeau",
+            "casquette",
+            "chaussure"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Corps, Vêtements et Apparence",
+    "title_fa": "آزمون: بدن، لباس و ظاهر",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Ce qu'on met sur la tête pour se protéger du soleil est un ____.",
+        "options": [
+          "chapeau",
+          "chaussure",
+          "chemise",
+          "collant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چیزی که برای محافظت از سر در برابر خورشید می‌گذاریم کلاه (chapeau) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie du corps qu'on utilise pour parler et manger est la ____.",
+        "options": [
+          "bouche",
+          "bras",
+          "cheveux",
+          "couleur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قسمتی از بدن که برای صحبت کردن و غذا خوردن استفاده می‌شود، دهان (bouche) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour protéger la tête en faisant du vélo, on met un ____.",
+        "options": [
+          "casque",
+          "chapeau",
+          "casquette",
+          "cravate"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای محافظت از سر هنگام دوچرخه‌سواری، کلاه ایمنی (casque) می‌گذاریم."
+      },
+      {
+        "type": "mcq",
+        "question": "Les vêtements qu'on met aux pieds avant les chaussures sont les ____.",
+        "options": [
+          "chaussettes",
+          "cheveux",
+          "bras",
+          "bouches"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لباس‌هایی که قبل از کفش به پا می‌کنیم، جوراب (chaussettes) هستند."
+      },
+      {
+        "type": "mcq",
+        "question": "Un vêtement élégant pour les hommes, souvent porté avec un costume, est la ____.",
+        "options": [
+          "cravate",
+          "chaussure",
+          "chemise",
+          "collant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یک لباس شیک برای مردان که اغلب با کت و شلوار پوشیده می‌شود، کراوات (cravate) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce qu'on porte aux pieds pour marcher confortablement est une ____.",
+        "options": [
+          "chaussure",
+          "cheveux",
+          "bras",
+          "bouche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چیزی که برای راه رفتن راحت به پا می‌کنیم، کفش (chaussure) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie du corps qui relie la main à l'épaule est le ____.",
+        "options": [
+          "bras",
+          "bouche",
+          "cheveux",
+          "couleur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قسمتی از بدن که دست را به شانه وصل می‌کند، بازو (bras) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce qui pousse sur la tête et qu'on peut couper ou colorier sont les ____.",
+        "options": [
+          "cheveux",
+          "bras",
+          "bouches",
+          "couleurs"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چیزی که روی سر رشد می‌کند و می‌توان آن را کوتاه یا رنگی کرد، مو (cheveux) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un vêtement qui couvre les jambes et le bas du corps, souvent porté par les femmes sous une jupe, est un ____.",
+        "options": [
+          "collant",
+          "cheveu",
+          "bras",
+          "bouche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لباسی که پاها و پایین بدن را می‌پوشاند و اغلب زنان زیر دامن می‌پوشند، جوراب شلواری (collant) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La caractéristique visuelle d'un objet (rouge, bleu, vert) est sa ____.",
+        "options": [
+          "couleur",
+          "bras",
+          "bouche",
+          "cravate"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ویژگی بصری یک شیء (قرمز، آبی، سبز) رنگ (couleur) آن است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un vêtement avec des boutons, souvent porté par les hommes au travail, est une ____.",
+        "options": [
+          "chemise",
+          "chaussure",
+          "collant",
+          "cravate"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لباسی با دکمه که اغلب مردان در محل کار می‌پوشند، پیراهن (chemise) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Des chaussures hautes qui couvrent la cheville et une partie de la jambe sont des ____.",
+        "options": [
+          "bottes",
+          "chaussettes",
+          "cheveux",
+          "bras"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کفش‌های بلندی که مچ پا و بخشی از ساق پا را می‌پوشانند، چکمه (bottes) هستند."
+      },
+      {
+        "type": "binary",
+        "question": "« Beau » et « belle » sont des adjectifs qui signifient « زیبا ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، beau (مذکر) و belle (مؤنث) هر دو به معنای زیبا هستند."
+      },
+      {
+        "type": "binary",
+        "question": "Une « casquette » est un grand chapeau avec un large bord tout autour.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، casquette کلاه لبه‌دار (مثل کلاه بیسبال) است، نه کلاه با لبه پهن در همه اطراف."
+      },
+      {
+        "type": "binary",
+        "question": "Quand il fait froid, on cherche des vêtements « chauds ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، وقتی هوا سرد است، به دنبال لباس‌های گرم (chauds) می‌گردیم."
+      }
+    ]
+  }
+}
