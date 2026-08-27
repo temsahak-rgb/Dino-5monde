@@ -1,0 +1,659 @@
+{
+  "id": "tribunal_historique_complots",
+  "level": "C2",
+  "theme": "Tribunal Historique et Complots Royaux",
+  "theme_fa": "دادگاه تاریخی و توطئه‌های سلطنتی",
+  "icon": "🏰",
+  "inspiration": "Game of Thrones / Wolf Hall",
+  "words": [
+    {
+      "fr": "l'impératrice",
+      "fa": "امپراتریس",
+      "emoji": "👑",
+      "difficulty": 3,
+      "ex": "L'impératrice a gouverné avec une main de fer durant trois décennies.",
+      "ex_fa": "امپراتریس به مدت سه دهه با مشت آهنین حکومت کرد."
+    },
+    {
+      "fr": "le chambellan",
+      "fa": "اتاق‌دار / پیشخدمت مخصوص",
+      "emoji": "🔑",
+      "difficulty": 5,
+      "ex": "Le chambellan a annoncé l'arrivée du roi avec une révérence profonde.",
+      "ex_fa": "اتاق‌دار با تعظیمی عمیق ورود پادشاه را اعلام کرد."
+    },
+    {
+      "fr": "le comte",
+      "fa": "کنت",
+      "emoji": "🏰",
+      "difficulty": 3,
+      "ex": "Le comte possède un vaste domaine agricole en province.",
+      "ex_fa": "کنت یک املاک کشاورزی وسیع در استان دارد."
+    },
+    {
+      "fr": "le gentilhomme",
+      "fa": "نجیب‌زاده / مرد بااصالت",
+      "emoji": "🎩",
+      "difficulty": 4,
+      "ex": "Malgré sa ruine, il s'est comporté comme un vrai gentilhomme.",
+      "ex_fa": "با وجود ورشکستگی، او همچون یک مرد بااصالت واقعی رفتار کرد."
+    },
+    {
+      "fr": "le messire",
+      "fa": "سرور (عنوان قدیمی)",
+      "emoji": "📜",
+      "difficulty": 5,
+      "ex": "« Oui, messire », répondit le paysan en s'inclinant humblement.",
+      "ex_fa": "دهقان با فروتنی تعظیم کرد و گفت: «بله، سرورم»."
+    },
+    {
+      "fr": "le trône",
+      "fa": "تخت پادشاهی",
+      "emoji": "🪑",
+      "difficulty": 2,
+      "ex": "Le prince héritier montera bientôt sur le trône de ses ancêtres.",
+      "ex_fa": "شاهزاده ولیعهد به‌زودی بر تخت پادشاهی اجدادش خواهد نشست."
+    },
+    {
+      "fr": "la conspiration",
+      "fa": "توطئه",
+      "emoji": "🗡️",
+      "difficulty": 4,
+      "ex": "La police royale a déjoué une conspiration visant à assassiner le duc.",
+      "ex_fa": "پلیس سلطنتی توطئه‌ای را که قصد ترور دوک را داشت، خنثی کرد."
+    },
+    {
+      "fr": "le renégat",
+      "fa": "مرتد / خائن",
+      "emoji": "🏴‍☠️",
+      "difficulty": 5,
+      "ex": "Le renégat a vendu les secrets militaires de son pays à l'ennemi.",
+      "ex_fa": "خائن اسرار نظامی کشورش را به دشمن فروخت."
+    },
+    {
+      "fr": "le pacte",
+      "fa": "پیمان",
+      "emoji": "🤝",
+      "difficulty": 4,
+      "ex": "Les deux royaumes ont signé un pacte de non-agression pour un siècle.",
+      "ex_fa": "دو پادشاهی پیمان عدم تجاوزی را برای یک قرن امضا کردند."
+    },
+    {
+      "fr": "le serment",
+      "fa": "سوگند",
+      "emoji": "✋",
+      "difficulty": 3,
+      "ex": "Il a prêté serment de fidélité sur la constitution du royaume.",
+      "ex_fa": "او بر روی قانون اساسی پادشاهی سوگند وفاداری یاد کرد."
+    },
+    {
+      "fr": "le sceau",
+      "fa": "مهر / نشان رسمی",
+      "emoji": "🔏",
+      "ex": "Le document officiel porte le sceau royal en cire rouge.",
+      "ex_fa": "سند رسمی دارای مهر سلطنتی از جنس موم قرمز است."
+    },
+    {
+      "fr": "la sécession",
+      "fa": "جدایی‌طلبی",
+      "emoji": "✂️",
+      "difficulty": 5,
+      "ex": "La guerre de Sécession a durablement divisé la nation en deux camps.",
+      "ex_fa": "جنگ داخلی (جدایی‌طلبی) ملت را برای همیشه به دو اردوگاه تقسیم کرد."
+    },
+    {
+      "fr": "le tribut",
+      "fa": "باج / خراج",
+      "emoji": "💰",
+      "difficulty": 4,
+      "ex": "Les peuples vaincus devaient payer un lourd tribut annuel au conquérant.",
+      "ex_fa": "مردمان شکست‌خورده مجبور بودند خراج سالانه سنگینی به فاتح بپردازند."
+    },
+    {
+      "fr": "l'inquisiteur",
+      "fa": "بازپرس تفتیش عقاید",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "L'inquisiteur interrogeait les suspects d'hérésie avec une froideur glaciale.",
+      "ex_fa": "بازپرس تفتیش عقاید مظنونان به بدعت‌گذاری را با سردی یخ‌زده بازجویی می‌کرد."
+    },
+    {
+      "fr": "l'inquisition",
+      "fa": "تفتیش عقاید",
+      "emoji": "🔥",
+      "difficulty": 4,
+      "ex": "L'inquisition sévissait avec une cruauté méthodique au Moyen Âge.",
+      "ex_fa": "تفتیش عقاید در قرون وسطی با بی‌رحمی روش‌مندی اعمال می‌شد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le complot du château",
+      "title_fa": "توطئه قلعه",
+      "text": "L'{{BLANK_1}} régnait sur le royaume depuis des années. Son {{BLANK_2}} fidèle annonçait chaque visite. Un {{BLANK_3}} puissant et un {{BLANK_4}} respecté vivaient à la cour. Le roi les appelait souvent « {{BLANK_5}} ». Un jour, une {{BLANK_7}} fut découverte. Un {{BLANK_8}} avait trahi le royaume. Il avait rompu le {{BLANK_9}} de paix et violé son {{BLANK_10}}. Un document avec le {{BLANK_11}} du roi fut volé, menaçant de provoquer une {{BLANK_12}}. Les provinces devaient payer un {{BLANK_13}} lourd. Un {{BLANK_14}} fut envoyé pour enquêter. L'{{BLANK_15}} commença immédiatement pour punir les coupables qui voulaient voler le {{BLANK_6}}.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "impératrice",
+          "options": [
+            "impératrice",
+            "servante",
+            "paysanne",
+            "marchande"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "chambellan",
+          "options": [
+            "chambellan",
+            "jardinier",
+            "cuisinier",
+            "forgeron"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "comte",
+          "options": [
+            "comte",
+            "esclave",
+            "vagabond",
+            "bandit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "gentilhomme",
+          "options": [
+            "gentilhomme",
+            "brigand",
+            "pirate",
+            "mercenaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "messire",
+          "options": [
+            "messire",
+            "gars",
+            "type",
+            "individu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "trône",
+          "options": [
+            "trône",
+            "tabouret",
+            "chaise",
+            "banc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "conspiration",
+          "options": [
+            "conspiration",
+            "fête",
+            "cérémonie",
+            "réunion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "renégat",
+          "options": [
+            "renégat",
+            "héros",
+            "sauveur",
+            "protecteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "pacte",
+          "options": [
+            "pacte",
+            "hasard",
+            "accident",
+            "oubli"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "serment",
+          "options": [
+            "serment",
+            "silence",
+            "sommeil",
+            "repos"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "sceau",
+          "options": [
+            "sceau",
+            "tache",
+            "trou",
+            "déchirure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "sécession",
+          "options": [
+            "sécession",
+            "union",
+            "fusion",
+            "alliance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "tribut",
+          "options": [
+            "tribut",
+            "cadeau",
+            "don",
+            "récompense"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "inquisiteur",
+          "options": [
+            "inquisiteur",
+            "comédien",
+            "chanteur",
+            "danseur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "inquisition",
+          "options": [
+            "inquisition",
+            "célébration",
+            "vacances",
+            "festival"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'ombre du pouvoir",
+      "title_fa": "سایه قدرت",
+      "inspiration": "Game of Thrones / Wolf Hall",
+      "text": "À peine le {{BLANK_2}} eut-il annoncé la venue de l'{{BLANK_1}} que le silence tomba sur la grande salle. Nonobstant les apparences, une {{BLANK_7}} sourde minait les fondements du royaume. Le {{BLANK_3}}, jadis loyal, n'était plus que l'ombre d'un {{BLANK_4}} d'antan, corrompu par l'ambition. « Oui, {{BLANK_5}}, murmura-t-il, le {{BLANK_6}} m'appelle. » Mais ce n'était qu'un leurre. Ce {{BLANK_8}} avait secrètement rompu le {{BLANK_9}} sacré, foulant aux pieds le {{BLANK_10}} qu'il avait prononcé. Un parchemin, portant encore le {{BLANK_11}} de cire rouge, attestait de sa trahison et menaçait de plonger le pays dans une {{BLANK_12}} sanglante. Les provinces, écrasées sous le poids d'un {{BLANK_13}} exorbitant, grondaient. C'est alors que l'{{BLANK_14}} fit son entrée, tel un spectre de la justice. L'{{BLANK_15}} ne tarderait pas à s'abattre, implacable, sur ceux qui osa défier l'ordre établi.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "impératrice",
+          "options": [
+            "impératrice",
+            "servante",
+            "hôtesse",
+            "invitée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "chambellan",
+          "options": [
+            "chambellan",
+            "bouffon",
+            "écuyer",
+            "page"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "comte",
+          "options": [
+            "comte",
+            "serf",
+            "vilain",
+            "manant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "gentilhomme",
+          "options": [
+            "gentilhomme",
+            "vaurien",
+            "fripon",
+            "canaille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "messire",
+          "options": [
+            "messire",
+            "camarade",
+            "compère",
+            "compagnon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "trône",
+          "options": [
+            "trône",
+            "siège",
+            "fauteuil",
+            "escabeau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "conspiration",
+          "options": [
+            "conspiration",
+            "réjouissance",
+            "festin",
+            "tournoi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "renégat",
+          "options": [
+            "renégat",
+            "paladin",
+            "champion",
+            "défenseur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "pacte",
+          "options": [
+            "pacte",
+            "hasard",
+            "oubli",
+            "néant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "serment",
+          "options": [
+            "serment",
+            "silence",
+            "sommeil",
+            "délire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "sceau",
+          "options": [
+            "sceau",
+            "tache",
+            "empreinte",
+            "trace"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "sécession",
+          "options": [
+            "sécession",
+            "réconciliation",
+            "harmonie",
+            "paix"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "tribut",
+          "options": [
+            "tribut",
+            "bienfait",
+            "aumône",
+            "largesse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "inquisiteur",
+          "options": [
+            "inquisiteur",
+            "ménestrel",
+            "jongleur",
+            "acrobate"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "inquisition",
+          "options": [
+            "inquisition",
+            "absolution",
+            "clémence",
+            "grâce"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Tribunal Historique et Complots Royaux",
+    "title_fa": "آزمون: دادگاه تاریخی و توطئه‌های سلطنتی",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La souveraine qui dirige un empire est désignée par le titre d'____.",
+        "options": [
+          "impératrice",
+          "duchesse",
+          "baronne",
+          "vicomtesse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حاکم زن یک امپراتوری = امپراتریس (impératrice)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'officier de la maison royale chargé de l'intendance et des audiences est le ____.",
+        "options": [
+          "chambellan",
+          "écuyer",
+          "héraut",
+          "intendant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسئول تشریفات و اتاق پادشاه = chambellan."
+      },
+      {
+        "type": "mcq",
+        "question": "Un noble dont le titre se situe entre le duc et le vicomte est un ____.",
+        "options": [
+          "comte",
+          "marquis",
+          "baron",
+          "seigneur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عنوان نجیب‌زادگی بین دوک و کنت = comte (در سیستم فرانسوی کنت معادل Earl است)."
+      },
+      {
+        "type": "mcq",
+        "question": "Un homme qui se distingue par sa politesse et son code d'honneur est un ____.",
+        "options": [
+          "gentilhomme",
+          "bourgeois",
+          "artisan",
+          "marchand"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مرد بااصالت و خوش‌رفتار = gentilhomme."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appellation respectueuse et archaïque pour s'adresser à un noble est ____.",
+        "options": [
+          "messire",
+          "monsieur",
+          "citoyen",
+          "camarade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عنوان احترام‌آمیز قدیمی برای نجیب‌زادگان = messire."
+      },
+      {
+        "type": "mcq",
+        "question": "Le siège symbolique du pouvoir monarchique est le ____.",
+        "options": [
+          "trône",
+          "tabouret",
+          "banc",
+          "fauteuil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تخت پادشاهی = trône."
+      },
+      {
+        "type": "mcq",
+        "question": "Une entente secrète dans le but de renverser le pouvoir est une ____.",
+        "options": [
+          "conspiration",
+          "négociation",
+          "délibération",
+          "consultation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "توطئه برای سرنگونی قدرت = conspiration."
+      },
+      {
+        "type": "mcq",
+        "question": "Celui qui abandonne sa foi ou trahit sa patrie est un ____.",
+        "options": [
+          "renégat",
+          "patriote",
+          "héros",
+          "martyr"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خائن یا مرتد = renégat."
+      },
+      {
+        "type": "mcq",
+        "question": "Un accord formel et solennel entre deux parties est un ____.",
+        "options": [
+          "pacte",
+          "hasard",
+          "conflit",
+          "désaccord"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیمان یا توافق رسمی = pacte."
+      },
+      {
+        "type": "mcq",
+        "question": "La promesse solennelle, souvent faite devant une autorité ou un objet sacré, est un ____.",
+        "options": [
+          "serment",
+          "mensonge",
+          "oubli",
+          "silence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سوگند رسمی = serment."
+      },
+      {
+        "type": "mcq",
+        "question": "L'empreinte de cire ou de métal authentifiant un document officiel est le ____.",
+        "options": [
+          "sceau",
+          "tampon",
+          "cachet",
+          "signature"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مهر یا نشان رسمی روی سند = sceau."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de se séparer d'un État pour former une entité indépendante est la ____.",
+        "options": [
+          "sécession",
+          "annexion",
+          "fusion",
+          "intégration"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جدایی‌طلبی از یک کشور = sécession."
+      },
+      {
+        "type": "mcq",
+        "question": "Le paiement imposé par un vainqueur aux vaincus est un ____.",
+        "options": [
+          "tribut",
+          "cadeau",
+          "don",
+          "héritage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باج یا خراج پرداختی توسط شکست‌خوردگان = tribut."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"inquisition\" désigne une période de tolérance religieuse et de liberté d'expression.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، inquisition دوره‌ای از سرکوب و تفتیش عقاید بود."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"inquisiteur\" est un juge ecclésiastique chargé de réprimer l'hérésie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، بازپرس تفتیش عقاید مسئول سرکوب بدعت‌گذاری بود."
+      }
+    ]
+  }
+}
