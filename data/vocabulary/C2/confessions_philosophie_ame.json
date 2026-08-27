@@ -1,0 +1,504 @@
+{
+  "id": "confessions_philosophie_ame",
+  "level": "C2",
+  "theme": "Confessions et Philosophie de l'Âme",
+  "theme_fa": "اعترافات، اسرار روح و فلسفه",
+  "icon": "📖",
+  "inspiration": "Les Confessions (Rousseau) / Thus Spoke Zarathustra",
+  "words": [
+    {
+      "fr": "l'intimité",
+      "fa": "صمیمیت / حریم خصوصی",
+      "emoji": "🔒",
+      "difficulty": 3,
+      "ex": "Le journal intime est le gardien ultime de l'intimité d'une personne.",
+      "ex_fa": "دفتر خاطرات، نگهبان نهایی حریم خصوصی یک فرد است."
+    },
+    {
+      "fr": "la pureté",
+      "fa": "پاکی / خلوص",
+      "emoji": "💧",
+      "difficulty": 3,
+      "ex": "La pureté de ses intentions a fini par convaincre les plus sceptiques.",
+      "ex_fa": "خلوص نیت او سرانجام شکاک‌ترین افراد را متقاعد کرد."
+    },
+    {
+      "fr": "la sagesse",
+      "fa": "خرد / حکمت",
+      "emoji": "🦉",
+      "difficulty": 3,
+      "ex": "La sagesse populaire recommande la prudence avant de juger autrui.",
+      "ex_fa": "خرد عمومی پیش از قضاوت درباره دیگران، احتیاط را توصیه می‌کند."
+    },
+    {
+      "fr": "le romantisme",
+      "fa": "رمانتیسم",
+      "emoji": "🌹",
+      "difficulty": 4,
+      "ex": "Le romantisme du XIXe siècle privilégiait l'émotion et l'imagination.",
+      "ex_fa": "رمانتیسم قرن نوزدهم به احساس و تخیل اولویت می‌داد."
+    },
+    {
+      "fr": "impardonnable",
+      "fa": "نابخشودنی",
+      "emoji": "❌",
+      "difficulty": 4,
+      "ex": "Trahir la confiance de ceux qui vous aiment est une faute impardonnable.",
+      "ex_fa": "خیانت به اعتماد کسانی که دوستتان دارند، خطایی نابخشودنی است."
+    },
+    {
+      "fr": "impénétrable",
+      "fa": "نفوذناپذیر / غیرقابل درک",
+      "emoji": "🧱",
+      "difficulty": 5,
+      "ex": "Le regard de cet homme restait impénétrable, ne trahissant aucune émotion.",
+      "ex_fa": "نگاه این مرد نفوذناپذیر باقی ماند و هیچ احساسی را فاش نکرد."
+    },
+    {
+      "fr": "le fantaisiste",
+      "fa": "خیال‌پرداز / فرد دمدمی‌مزاج",
+      "emoji": "🎨",
+      "difficulty": 5,
+      "ex": "Cet écrivain fantaisiste refuse de se conformer aux règles de la grammaire.",
+      "ex_fa": "این نویسنده خیال‌پرداز از پیروی از قواعد دستور زبان امتناع می‌ورزد."
+    },
+    {
+      "fr": "l'érudit",
+      "fa": "فرهیخته / دانشمند",
+      "emoji": "📚",
+      "difficulty": 4,
+      "ex": "L'érudit a consacré sa vie à l'étude des manuscrits anciens.",
+      "ex_fa": "این فرهیخته زندگی خود را وقف مطالعه نسخه‌های خطی باستانی کرد."
+    },
+    {
+      "fr": "la maxime",
+      "fa": "پند / کلام قصار",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "Il termine toujours ses lettres par une maxime de La Rochefoucauld.",
+      "ex_fa": "او همیشه نامه‌هایش را با کلام قصاری از لاروشفوکو به پایان می‌رساند."
+    },
+    {
+      "fr": "l'euphémisme",
+      "fa": "حسن تعبیر / تلطیف بیان",
+      "emoji": "🕊️",
+      "difficulty": 5,
+      "ex": "Utiliser un euphémisme permet d'adoucir une réalité brutale ou désagréable.",
+      "ex_fa": "استفاده از حسن تعبیر، واقعیتی خشن یا ناخوشایند را تلطیف می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le vieux philosophe",
+      "title_fa": "فیلسوف پیر",
+      "text": "Un vieux {{BLANK_8}} vit seul dans une grande bibliothèque. Il cherche la {{BLANK_3}} dans les livres anciens. Il valorise l'{{BLANK_1}} et la {{BLANK_2}} de l'esprit. Il n'aime pas le {{BLANK_4}} exagéré des jeunes. Pour lui, trahir un ami est {{BLANK_5}}. Il trouve les motivations des gens souvent {{BLANK_6}}. Il n'est pas un {{BLANK_7}} qui vit dans les nuages. Il cite souvent une {{BLANK_9}} pour expliquer la vie. Par exemple, il utilise un {{BLANK_10}} pour parler de la mort avec douceur.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "intimité",
+          "options": [
+            "intimité",
+            "publicité",
+            "exposition",
+            "vulgarité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pureté",
+          "options": [
+            "pureté",
+            "corruption",
+            "souillure",
+            "vice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "sagesse",
+          "options": [
+            "sagesse",
+            "folie",
+            "ignorance",
+            "stupidité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "romantisme",
+          "options": [
+            "romantisme",
+            "réalisme",
+            "pragmatisme",
+            "logicisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "impardonnable",
+          "options": [
+            "impardonnable",
+            "excusable",
+            "véniel",
+            "acceptable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "impénétrables",
+          "options": [
+            "impénétrables",
+            "claires",
+            "évidentes",
+            "limpides"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "fantaisiste",
+          "options": [
+            "fantaisiste",
+            "rigoureux",
+            "sérieux",
+            "méthodique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "érudit",
+          "options": [
+            "érudit",
+            "ignorant",
+            "illettré",
+            "novice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "maxime",
+          "options": [
+            "maxime",
+            "insulte",
+            "mensonge",
+            "divagation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "euphémisme",
+          "options": [
+            "euphémisme",
+            "insulte",
+            "vulgarité",
+            "cri"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Méditations au crépuscule",
+      "title_fa": "تأملات در گرگ‌ومیش",
+      "inspiration": "Les Confessions (Rousseau) / Thus Spoke Zarathustra",
+      "text": "Dans le silence ouaté de son cabinet, l'{{BLANK_8}} méditait sur la condition humaine. Il avait jadis sacrifié son {{BLANK_1}} sur l'autel de la gloire, une faute qu'il jugeait désormais {{BLANK_5}}. Le {{BLANK_4}}, avec ses excès sentimentaux et sa quête de l'idéal, lui semblait bien loin. Il cherchait la {{BLANK_3}} dans des textes anciens, citant une {{BLANK_9}} stoïcienne pour apaiser son âme. Pourtant, les motivations de ses contemporains lui restaient {{BLANK_6}}, comme un mur de brume. Était-il devenu ce {{BLANK_7}} qu'il méprisait tant, perdu dans ses propres chimères ? Seule la {{BLANK_2}} de ses intentions le rassurait, même si l'usage d'un {{BLANK_10}} pour décrire sa propre faillite morale lui arrachait un sourire amer.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "intimité",
+          "options": [
+            "intimité",
+            "publicité",
+            "exposition",
+            "vulgarité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pureté",
+          "options": [
+            "pureté",
+            "corruption",
+            "souillure",
+            "vice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "sagesse",
+          "options": [
+            "sagesse",
+            "folie",
+            "ignorance",
+            "stupidité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "romantisme",
+          "options": [
+            "romantisme",
+            "réalisme",
+            "pragmatisme",
+            "logicisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "impardonnable",
+          "options": [
+            "impardonnable",
+            "excusable",
+            "véniel",
+            "acceptable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "impénétrables",
+          "options": [
+            "impénétrables",
+            "claires",
+            "évidentes",
+            "limpides"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "fantaisiste",
+          "options": [
+            "fantaisiste",
+            "rigoureux",
+            "sérieux",
+            "méthodique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "érudit",
+          "options": [
+            "érudit",
+            "ignorant",
+            "illettré",
+            "novice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "maxime",
+          "options": [
+            "maxime",
+            "insulte",
+            "mensonge",
+            "divagation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "euphémisme",
+          "options": [
+            "euphémisme",
+            "insulte",
+            "vulgarité",
+            "cri"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Confessions et Philosophie de l'Âme",
+    "title_fa": "آزمون: اعترافات و فلسفه روح",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La sphère privée et personnelle d'un individu, protégée des regards extérieurs, est son ____.",
+        "options": [
+          "intimité",
+          "publicité",
+          "exposition",
+          "vulgarité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حریم خصوصی و شخصی فرد = intimité."
+      },
+      {
+        "type": "mcq",
+        "question": "L'état de ce qui n'est mélangé à aucun élément étranger ou corrompu est la ____.",
+        "options": [
+          "pureté",
+          "corruption",
+          "souillure",
+          "vice"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حالت چیزی که با عنصر بیگانه یا فاسد آمیخته نشده = pureté."
+      },
+      {
+        "type": "mcq",
+        "question": "La connaissance profonde des choses et la capacité de bien juger constituent la ____.",
+        "options": [
+          "sagesse",
+          "folie",
+          "ignorance",
+          "stupidité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دانش عمیق و توانایی قضاوت درست = sagesse."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mouvement artistique et littéraire qui privilégie l'émotion, l'imagination et le moi est le ____.",
+        "options": [
+          "romantisme",
+          "réalisme",
+          "pragmatisme",
+          "logicisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جنبشی که به احساس و تخیل اولویت می‌دهد = romantisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Une faute si grave qu'elle ne peut être excusée ni pardonnée est ____.",
+        "options": [
+          "impardonnable",
+          "excusable",
+          "vénielle",
+          "acceptable"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خطایی آنقدر بزرگ که قابل بخشش نیست = impardonnable."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce qui ne peut être compris, analysé ou traversé par l'esprit est qualifié d'____.",
+        "options": [
+          "impénétrable",
+          "clair",
+          "évident",
+          "limpide"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چیزی که قابل درک یا تحلیل توسط ذهن نیست = impénétrable."
+      },
+      {
+        "type": "mcq",
+        "question": "Une personne qui agit de manière imprévisible, originale et parfois irréaliste est un ____.",
+        "options": [
+          "fantaisiste",
+          "rigoureux",
+          "sérieux",
+          "méthodique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که غیرقابل پیش‌بینی، اصلی و گاهی غیرواقعی عمل می‌کند = fantaisiste."
+      },
+      {
+        "type": "mcq",
+        "question": "Un savant qui possède de vastes connaissances, notamment dans les domaines littéraires ou historiques, est un ____.",
+        "options": [
+          "érudit",
+          "ignorant",
+          "illettré",
+          "novice"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دانشمندی با دانش وسیع، به ویژه در زمینه‌های ادبی یا تاریخی = érudit."
+      },
+      {
+        "type": "mcq",
+        "question": "Une règle de conduite ou un principe moral exprimé de manière concise est une ____.",
+        "options": [
+          "maxime",
+          "insulte",
+          "mensonge",
+          "divagation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قاعده رفتاری یا اصل اخلاقی بیان‌شده به صورت مختصر = maxime."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fait d'utiliser un mot ou une expression pour adoucir une réalité brutale est un ____.",
+        "options": [
+          "euphémisme",
+          "insulte",
+          "vulgarité",
+          "cri"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استفاده از کلمه یا عبارتی برای تلطیف یک واقعیت خشن = euphémisme."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"érudit\" est une personne qui a reçu très peu d'éducation formelle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، érudit به فردی بسیار دانا و تحصیل‌کرده اشاره دارد."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"impénétrable\" décrit quelque chose de très facile à comprendre et à analyser.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، impénétrable به معنای غیرقابل درک یا نفوذناپذیر است."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"euphémisme\" est utilisé pour rendre une déclaration plus choquante ou directe.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، euphémisme برای ملایم‌تر کردن یا تلطیف یک بیان به کار می‌رود."
+      },
+      {
+        "type": "binary",
+        "question": "La \"sagesse\" implique souvent l'expérience et la réflexion, et non seulement l'intelligence brute.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، خرد معمولاً مستلزم تجربه و تأمل است، نه فقط هوش خالص."
+      },
+      {
+        "type": "binary",
+        "question": "Une action \"impardonnable\" est une petite erreur que l'on oublie facilement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، impardonnable به خطای بزرگی اشاره دارد که قابل بخشش نیست."
+      }
+    ]
+  }
+}
