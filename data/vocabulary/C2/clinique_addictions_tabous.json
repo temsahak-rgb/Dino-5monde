@@ -1,0 +1,504 @@
+{
+  "id": "clinique_addictions_tabous",
+  "level": "C2",
+  "theme": "Clinique des Addictions et Tabous",
+  "theme_fa": "کلینیک اعتیاد، تابوها و آناتومی",
+  "icon": "💊",
+  "inspiration": "Requiem for a Dream / Dopesick",
+  "words": [
+    {
+      "fr": "la pathologie",
+      "fa": "آسیب‌شناسی / بیماری",
+      "emoji": "🦠",
+      "difficulty": 4,
+      "ex": "Cette pathologie cardiaque nécessite une intervention chirurgicale rapide.",
+      "ex_fa": "این بیماری قلبی نیازمند مداخله جراحی سریع است."
+    },
+    {
+      "fr": "la pénicilline",
+      "fa": "پنی‌سیلین",
+      "emoji": "💉",
+      "difficulty": 3,
+      "ex": "La découverte de la pénicilline a révolutionné la médecine moderne.",
+      "ex_fa": "کشف پنی‌سیلین پزشکی مدرن را متحول کرد."
+    },
+    {
+      "fr": "le lithium",
+      "fa": "لیتیوم",
+      "emoji": "🔋",
+      "difficulty": 4,
+      "ex": "Le psychiatre lui a prescrit du lithium pour stabiliser son humeur.",
+      "ex_fa": "روانپزشک برای تثبیت خلق‌وخوی او، لیتیوم تجویز کرد."
+    },
+    {
+      "fr": "l'euthanasie",
+      "fa": "اتانازی / مرگ آسان",
+      "emoji": "🕊️",
+      "difficulty": 5,
+      "ex": "Le débat législatif sur l'euthanasie divise profondément la société.",
+      "ex_fa": "بحث قانونی درباره اتانازی جامعه را به شدت دوقطبی کرده است."
+    },
+    {
+      "fr": "le pontage",
+      "fa": "بای‌پس",
+      "emoji": "❤️",
+      "difficulty": 4,
+      "ex": "Il a subi un pontage coronarien pour rétablir la circulation sanguine.",
+      "ex_fa": "او برای بازگرداندن جریان خون، تحت عمل بای‌پس عروق قرار گرفت."
+    },
+    {
+      "fr": "la carotide",
+      "fa": "شریان کاروتید",
+      "emoji": "🩺",
+      "difficulty": 4,
+      "ex": "Le médecin palpe la carotide pour vérifier le pouls du patient.",
+      "ex_fa": "پزشک برای بررسی ضربان بیمار، شریان کاروتید را لمس می‌کند."
+    },
+    {
+      "fr": "l'amphétamine",
+      "fa": "آمفتامین",
+      "emoji": "💊",
+      "difficulty": 5,
+      "ex": "L'usage d'amphétamine était malheureusement courant parmi les soldats.",
+      "ex_fa": "مصرف آمفتامین متأسفانه در میان سربازان رایج بود."
+    },
+    {
+      "fr": "la méthamphétamine",
+      "fa": "مت‌آمفتامین",
+      "emoji": "⚠️",
+      "difficulty": 5,
+      "ex": "La méthamphétamine provoque une dépendance physique et psychologique dévastatrice.",
+      "ex_fa": "مت‌آمفتامین وابستگی جسمی و روانی ویرانگری ایجاد می‌کند."
+    },
+    {
+      "fr": "la virginité",
+      "fa": "بکارت",
+      "emoji": "🕊️",
+      "difficulty": 4,
+      "ex": "Le concept social de virginité varie considérablement selon les cultures.",
+      "ex_fa": "مفهوم اجتماعی بکارت بسته به فرهنگ‌ها به طور قابل توجهی متفاوت است."
+    },
+    {
+      "fr": "l'érection",
+      "fa": "نعوظ",
+      "emoji": "📈",
+      "difficulty": 4,
+      "ex": "Ce médicament vasodilatateur traite efficacement les troubles de l'érection.",
+      "ex_fa": "این داروی گشادکننده عروق، اختلالات نعوظ را به طور موثر درمان می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le dossier médical",
+      "title_fa": "پرونده پزشکی",
+      "text": "Le Dr Aris examine un nouveau patient. L'homme souffre d'une grave {{BLANK_1}} cardiaque. Il a besoin d'un {{BLANK_5}} urgent. Avant l'opération, l'infirmière vérifie le pouls au niveau de la {{BLANK_6}}. Le patient a des antécédents de troubles bipolaires traités au {{BLANK_3}}. Pour prévenir toute infection postopératoire, on lui administre de la {{BLANK_2}}. Le médecin note aussi des problèmes de {{BLANK_10}} et une obsession maladive pour la {{BLANK_9}}. Malheureusement, son état s'aggrave à cause de sa consommation passée d'{{BLANK_7}} et de {{BLANK_8}}. Face à cette déchéance, la question de l'{{BLANK_4}} est même évoquée par la famille.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "pathologie",
+          "options": [
+            "pathologie",
+            "anatomie",
+            "thérapie",
+            "hygiène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pénicilline",
+          "options": [
+            "pénicilline",
+            "placebo",
+            "vitamine",
+            "homéopathie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "lithium",
+          "options": [
+            "lithium",
+            "calcium",
+            "magnésium",
+            "potassium"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "euthanasie",
+          "options": [
+            "euthanasie",
+            "réanimation",
+            "guérison",
+            "convalescence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pontage",
+          "options": [
+            "pontage",
+            "suture",
+            "greffe",
+            "pansement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "carotide",
+          "options": [
+            "carotide",
+            "clavicule",
+            "omoplate",
+            "rotule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "amphétamine",
+          "options": [
+            "amphétamine",
+            "aspirine",
+            "ibuprofène",
+            "paracétamol"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "méthamphétamine",
+          "options": [
+            "méthamphétamine",
+            "pénicilline",
+            "insuline",
+            "adrénaline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "virginité",
+          "options": [
+            "virginité",
+            "fécondité",
+            "maternité",
+            "stérilité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "érection",
+          "options": [
+            "érection",
+            "digestion",
+            "respiration",
+            "circulation"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les ombres de la clinique",
+      "title_fa": "سایه‌های کلینیک",
+      "inspiration": "Requiem for a Dream / Dopesick",
+      "text": "Nonobstant les débats éthiques houleux entourant l'{{BLANK_1}}, le Dr Aris observait avec une froideur clinique la dégradation inexorable de son patient. Jadis vibrant, cet homme n'était plus que l'ombre de lui-même, consumé par une dépendance dévastatrice à l'{{BLANK_2}} et à la {{BLANK_3}} qui avaient anéanti ses fonctions cognitives. Son dossier médical, véritable catalogue des misères humaines, regorgeait de tabous : des troubles de l'{{BLANK_4}} traités par des inhibiteurs de dernière génération, et une obsession névrotique pour la {{BLANK_5}} qui contrastait violemment avec sa déchéance morale. Une {{BLANK_6}} cardiaque sévère nécessitait un {{BLANK_7}} urgent, mais la {{BLANK_8}} du patient s'effondrait. En palpant sa {{BLANK_9}}, le médecin ne sentit qu'un pouls faible et irrégulier. Aucune {{BLANK_10}} ne pourrait désormais inverser le cours de cette tragédie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "euthanasie",
+          "options": [
+            "euthanasie",
+            "réanimation",
+            "guérison",
+            "convalescence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "amphétamine",
+          "options": [
+            "amphétamine",
+            "aspirine",
+            "ibuprofène",
+            "paracétamol"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "méthamphétamine",
+          "options": [
+            "méthamphétamine",
+            "pénicilline",
+            "insuline",
+            "adrénaline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "érection",
+          "options": [
+            "érection",
+            "digestion",
+            "respiration",
+            "circulation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "virginité",
+          "options": [
+            "virginité",
+            "fécondité",
+            "maternité",
+            "stérilité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pathologie",
+          "options": [
+            "pathologie",
+            "anatomie",
+            "thérapie",
+            "hygiène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pontage",
+          "options": [
+            "pontage",
+            "suture",
+            "greffe",
+            "pansement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "pénicilline",
+          "options": [
+            "pénicilline",
+            "placebo",
+            "vitamine",
+            "homéopathie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "carotide",
+          "options": [
+            "carotide",
+            "clavicule",
+            "omoplate",
+            "rotule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "lithium",
+          "options": [
+            "lithium",
+            "calcium",
+            "magnésium",
+            "potassium"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Clinique des Addictions et Tabous",
+    "title_fa": "آزمون: کلینیک اعتیاد و تابوها",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'étude scientifique des maladies et de leurs effets sur l'organisme est la ____.",
+        "options": [
+          "pathologie",
+          "anatomie",
+          "physiologie",
+          "épidémiologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آسیب‌شناسی یا مطالعه بیماری‌ها = pathologie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le premier antibiotique découvert, qui a révolutionné la médecine, est la ____.",
+        "options": [
+          "pénicilline",
+          "insuline",
+          "aspirine",
+          "morphine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اولین آنتی‌بیوتیک کشف شده = pénicilline."
+      },
+      {
+        "type": "mcq",
+        "question": "Le métal alcalin utilisé comme régulateur de l'humeur dans les troubles bipolaires est le ____.",
+        "options": [
+          "lithium",
+          "calcium",
+          "magnésium",
+          "potassium"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "داروی تثبیت‌کننده خلق از جنس فلز قلیایی = lithium."
+      },
+      {
+        "type": "mcq",
+        "question": "L'acte de provoquer volontairement la mort d'un patient atteint d'une maladie incurable pour abréger ses souffrances est l'____.",
+        "options": [
+          "euthanasie",
+          "homicide",
+          "suicide",
+          "assassinat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مرگ آسان یا اتانازی = euthanasie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'intervention chirurgicale consistant à créer un nouveau trajet pour le sang afin de contourner une artère bouchée est un ____.",
+        "options": [
+          "pontage",
+          "suture",
+          "greffe",
+          "ablation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل جراحی بای‌پس عروق = pontage."
+      },
+      {
+        "type": "mcq",
+        "question": "L'artère principale du cou, dont on peut sentir le pouls, est la ____.",
+        "options": [
+          "carotide",
+          "aorte",
+          "jugulaire",
+          "fémorale"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شریان اصلی گردن = carotide."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette substance stimulante du système nerveux central était largement utilisée par les soldats pendant la Seconde Guerre mondiale.",
+        "options": [
+          "amphétamine",
+          "pénicilline",
+          "insuline",
+          "paracétamol"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده محرک مورد استفاده در جنگ = amphétamine."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette drogue de synthèse, dérivée de l'amphétamine, est connue pour sa capacité de dépendance extrême et ses effets neurotoxiques.",
+        "options": [
+          "méthamphétamine",
+          "caféine",
+          "nicotine",
+          "théophylline"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده مخدر صنعتی بسیار اعتیادآور = méthamphétamine."
+      },
+      {
+        "type": "mcq",
+        "question": "L'état d'une personne n'ayant jamais eu de relations sexuelles est désigné par le terme de ____.",
+        "options": [
+          "virginité",
+          "fécondité",
+          "maternité",
+          "stérilité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وضعیت نداشتن رابطه جنسی = virginité."
+      },
+      {
+        "type": "mcq",
+        "question": "Le phénomène physiologique de rigidification des tissus érectiles est l'____.",
+        "options": [
+          "érection",
+          "éjaculation",
+          "ovulation",
+          "menstruation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برافراشتگی یا نعوظ = érection."
+      },
+      {
+        "type": "binary",
+        "question": "Le \"lithium\" est principalement utilisé pour traiter les infections bactériennes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، لیتیوم برای تثبیت خلق در اختلالات دوقطبی استفاده می‌شود، نه عفونت."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"pontage\" coronarien vise à rétablir la circulation sanguine vers le muscle cardiaque.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، هدف بای‌پس قلبی بازگرداندن جریان خون به عضله قلب است."
+      },
+      {
+        "type": "binary",
+        "question": "La \"méthamphétamine\" est un médicament sans danger et non addictif.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، مت‌آمفتامین به شدت اعتیادآور و خطرناک است."
+      },
+      {
+        "type": "binary",
+        "question": "La \"carotide\" est une veine qui ramène le sang vers le cœur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، کاروتید یک شریان (سرخرگ) است که خون را از قلب به مغز می‌برد."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"euthanasie\" est un sujet qui fait l'objet de débats éthiques et juridiques intenses dans de nombreux pays.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، اتانازی موضوع بحث‌های عمیق اخلاقی و حقوقی است."
+      }
+    ]
+  }
+}
