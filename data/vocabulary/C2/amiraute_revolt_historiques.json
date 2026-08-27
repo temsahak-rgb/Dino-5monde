@@ -1,0 +1,471 @@
+{
+  "id": "amiraute_revolt_historiques",
+  "level": "C2",
+  "theme": "Amirauté et Révoltes Historiques",
+  "theme_fa": "دریاسالاری و شورش‌های تاریخی",
+  "icon": "⚓",
+  "inspiration": "Master and Commander / Star Trek: Deep Space Nine",
+  "words": [
+    {
+      "fr": "l'amiral",
+      "fa": "دریاسالار",
+      "emoji": "⭐",
+      "difficulty": 3,
+      "ex": "L'amiral a ordonné à toute la flotte de lever l'ancre immédiatement.",
+      "ex_fa": "دریاسالار به کل ناوگان دستور داد فوراً لنگر بردارند."
+    },
+    {
+      "fr": "la balistique",
+      "fa": "بالستیک",
+      "emoji": "🎯",
+      "difficulty": 4,
+      "ex": "Les experts en balistique ont calculé la trajectoire exacte du projectile.",
+      "ex_fa": "کارشناسان بالستیک مسیر دقیق پرتابه را محاسبه کردند."
+    },
+    {
+      "fr": "l'accrochage",
+      "fa": "درگیری مختصر",
+      "emoji": "💥",
+      "difficulty": 5,
+      "ex": "Un simple accrochage frontalier a dégénéré en conflit ouvert.",
+      "ex_fa": "یک درگیری مختصر مرزی به یک جنگ تمام‌عیار تبدیل شد."
+    },
+    {
+      "fr": "le cardassien",
+      "fa": "کارداسیایی",
+      "emoji": "👽",
+      "difficulty": 5,
+      "ex": "La technologie cardassienne est réputée pour être à la fois élégante et impitoyable.",
+      "ex_fa": "فناوری کارداسیایی به دلیل زیبایی و بی‌رحمی همزمان شهرت دارد."
+    },
+    {
+      "fr": "la renaissance",
+      "fa": "رنسانس / تولد دوباره",
+      "emoji": "🌅",
+      "difficulty": 4,
+      "ex": "La renaissance des arts a transformé la culture européenne du XVe siècle.",
+      "ex_fa": "رنسانس هنر، فرهنگ اروپای قرن پانزدهم را متحول کرد."
+    },
+    {
+      "fr": "le libérateur",
+      "fa": "آزادی‌بخش / منجی",
+      "emoji": "🕊️",
+      "difficulty": 4,
+      "ex": "Le général fut acclamé par la foule comme le libérateur de la nation.",
+      "ex_fa": "ژنرال توسط مردم به عنوان آزادی‌بخش ملت تشویق شد."
+    },
+    {
+      "fr": "révolutionnaire",
+      "fa": "انقلابی",
+      "emoji": "✊",
+      "difficulty": 3,
+      "ex": "Cette théorie révolutionnaire a bouleversé les fondements de la physique classique.",
+      "ex_fa": "این نظریه انقلابی بنیان‌های فیزیک کلاسیک را دگرگون کرد."
+    },
+    {
+      "fr": "l'anarchie",
+      "fa": "هرج‌ومرج / آنارشی",
+      "emoji": "🔥",
+      "difficulty": 4,
+      "ex": "La chute du régime a plongé le pays dans une anarchie totale.",
+      "ex_fa": "سقوط رژیم، کشور را در هرج‌ومرج کامل فرو برد."
+    },
+    {
+      "fr": "la dynastie",
+      "fa": "دودمان / سلسله",
+      "emoji": "👑",
+      "difficulty": 4,
+      "ex": "La dynastie des Ming a laissé un héritage architectural remarquable en Chine.",
+      "ex_fa": "دودمان مینگ میراث معماری قابل توجهی در چین به جا گذاشت."
+    },
+    {
+      "fr": "le joug",
+      "fa": "یوغ / سلطه",
+      "emoji": "⛓️",
+      "difficulty": 5,
+      "ex": "Le peuple s'est soulevé pour secouer le joug de l'oppresseur colonial.",
+      "ex_fa": "مردم قیام کردند تا یوغ استعمارگر را از دوش خود بردارند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La révolte de la flotte",
+      "title_fa": "شورش ناوگان",
+      "text": "L'{{BLANK_1}} de la flotte royale était un homme craint. Sous son commandement, la {{BLANK_9}} régnait depuis des siècles. Mais le peuple voulait se libérer du {{BLANK_10}} oppressif. Un jour, un petit {{BLANK_3}} naval a mis le feu aux poudres. Un capitaine charismatique est devenu le {{BLANK_6}} des opprimés. Son idée {{BLANK_7}} a inspiré des milliers de marins. Ils voulaient éviter l'{{BLANK_8}} après la chute du roi. Leur objectif était une véritable {{BLANK_5}} de la société, loin de la tyrannie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "amiral",
+          "options": [
+            "amiral",
+            "matelot",
+            "cuisinier",
+            "passager"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "dynastie",
+          "options": [
+            "dynastie",
+            "république",
+            "démocratie",
+            "anarchie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "accrochage",
+          "options": [
+            "accrochage",
+            "célébration",
+            "festin",
+            "mariage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "libérateur",
+          "options": [
+            "libérateur",
+            "tyran",
+            "esclave",
+            "prisonnier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "révolutionnaire",
+          "options": [
+            "révolutionnaire",
+            "traditionnel",
+            "conservateur",
+            "ordinaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "anarchie",
+          "options": [
+            "anarchie",
+            "ordre",
+            "paix",
+            "harmonie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "renaissance",
+          "options": [
+            "renaissance",
+            "déclin",
+            "chute",
+            "destruction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "joug",
+          "options": [
+            "joug",
+            "liberté",
+            "indépendance",
+            "autonomie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le crépuscule de l'empire",
+      "title_fa": "غروب امپراتوری",
+      "inspiration": "Master and Commander / Star Trek: Deep Space Nine",
+      "text": "Les calculs de {{BLANK_1}} étaient d'une précision mortelle. Ce qui débuta comme un modeste {{BLANK_2}} aux confins de l'espace connu dégénéra rapidement en un conflit sans merci. La faction {{BLANK_3}}, réputée pour sa cruauté méthodique et sa technologie implacable, ne s'attendait pas à cette riposte. Pourtant, l'étincelle était jetée : un soulèvement {{BLANK_4}} embrasa les colonies périphériques. La crainte de l'{{BLANK_5}} totale poussait les modérés à l'action, tandis que les radicaux exigeaient la chute immédiate du régime. On acclama le commandant rebelle comme un {{BLANK_6}}, celui qui avait enfin brisé le {{BLANK_7}} séculaire de la vieille {{BLANK_8}}. Seul un véritable âge d'or, une {{BLANK_9}}, pourrait désormais panser les plaies béantes de l'empire déchu.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "balistique",
+          "options": [
+            "balistique",
+            "botanique",
+            "géologie",
+            "linguistique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "accrochage",
+          "options": [
+            "accrochage",
+            "traité",
+            "alliance",
+            "cérémonie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "cardassienne",
+          "options": [
+            "cardassienne",
+            "pacifique",
+            "démocratique",
+            "humanitaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "révolutionnaire",
+          "options": [
+            "révolutionnaire",
+            "monarchique",
+            "passif",
+            "conformiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "anarchie",
+          "options": [
+            "anarchie",
+            "prospérité",
+            "stabilité",
+            "sérénité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "libérateur",
+          "options": [
+            "libérateur",
+            "oppresseur",
+            "bourreau",
+            "usurpateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "joug",
+          "options": [
+            "joug",
+            "bienfait",
+            "protection",
+            "bienveillance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dynastie",
+          "options": [
+            "dynastie",
+            "république",
+            "fédération",
+            "commune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "renaissance",
+          "options": [
+            "renaissance",
+            "décadence",
+            "agonie",
+            "anéantissement"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Amirauté et Révoltes Historiques",
+    "title_fa": "آزمون: دریاسالاری و شورش‌های تاریخی",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le grade militaire le plus élevé dans la marine, commandant une flotte, est celui d'____.",
+        "options": [
+          "amiral",
+          "capitaine",
+          "lieutenant",
+          "enseigne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بالاترین درجه نظامی در نیروی دریایی = amiral."
+      },
+      {
+        "type": "mcq",
+        "question": "La science qui étudie le mouvement des projectiles et leurs effets est la ____.",
+        "options": [
+          "balistique",
+          "aérodynamique",
+          "cinématique",
+          "statique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "علم مطالعه حرکت پرتابه‌ها = balistique."
+      },
+      {
+        "type": "mcq",
+        "question": "Une confrontation mineure et brève, souvent à la frontière, est un ____.",
+        "options": [
+          "accrochage",
+          "traité",
+          "armistice",
+          "négociation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درگیری مختصر و کوتاه = accrochage."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans l'univers de Star Trek, cette espèce est connue pour son régime autoritaire et sa ruse.",
+        "options": [
+          "cardassien",
+          "vulcain",
+          "bajoran",
+          "ferengi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نژاد فضایی با رژیم استبدادی در استارترک = cardassien."
+      },
+      {
+        "type": "mcq",
+        "question": "La période de renouveau culturel et artistique en Europe aux XVe et XVIe siècles est la ____.",
+        "options": [
+          "renaissance",
+          "moyen âge",
+          "antiquité",
+          "révolution industrielle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره شکوفایی فرهنگی و هنری اروپا = renaissance."
+      },
+      {
+        "type": "mcq",
+        "question": "Celui qui libère un peuple de l'oppression ou de la captivité est un ____.",
+        "options": [
+          "libérateur",
+          "tyran",
+          "oppresseur",
+          "conquérant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کسی که مردم را از ستم آزاد می‌کند = libérateur."
+      },
+      {
+        "type": "mcq",
+        "question": "Une idée ou une méthode qui change radicalement l'ordre établi est qualifiée de ____.",
+        "options": [
+          "révolutionnaire",
+          "traditionnelle",
+          "conservatrice",
+          "conventionnelle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ایده یا روشی که نظم موجود را به طور رادیکال تغییر می‌دهد = révolutionnaire."
+      },
+      {
+        "type": "mcq",
+        "question": "L'absence totale d'autorité politique, menant au désordre, est l'____.",
+        "options": [
+          "anarchie",
+          "démocratie",
+          "monarchie",
+          "oligarchie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فقدان کامل اقتدار سیاسی و هرج‌ومرج = anarchie."
+      },
+      {
+        "type": "mcq",
+        "question": "Une suite de souverains issus de la même famille qui règnent sur un pays est une ____.",
+        "options": [
+          "dynastie",
+          "république",
+          "fédération",
+          "confédération"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سلسله پادشاهان از یک خانواده = dynastie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le symbole de l'oppression et de la domination pesante que l'on cherche à rejeter est le ____.",
+        "options": [
+          "joug",
+          "bienfait",
+          "protection",
+          "bouclier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نماد ستم و سلطه سنگین = joug."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"accrochage\" militaire désigne généralement une guerre mondiale de longue durée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، accrochage به یک درگیری کوچک و مختصر اشاره دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le terme \"révolutionnaire\" peut s'appliquer aussi bien à une révolte politique qu'à une découverte scientifique majeure.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، این کلمه هم در سیاست و هم در علم برای تغییرات بنیادین استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"anarchie\" est un système politique caractérisé par un gouvernement central fort et organisé.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، آنارشی به معنای فقدان حکومت و هرج‌ومرج است."
+      },
+      {
+        "type": "binary",
+        "question": "Secouer le \"joug\" signifie accepter volontairement la domination d'un autre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، secouer le joug به معنای رها کردن و مبارزه با سلطه است."
+      },
+      {
+        "type": "binary",
+        "question": "La \"balistique\" est essentielle pour calculer la trajectoire des missiles et des obus d'artillerie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، بالستیک علم محاسبه مسیر پرتابه‌ها است."
+      }
+    ]
+  }
+}
