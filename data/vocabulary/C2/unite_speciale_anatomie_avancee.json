@@ -1,0 +1,660 @@
+{
+  "id": "unite_speciale_anatomie_avancee",
+  "level": "C2",
+  "theme": "Unité Spéciale et Anatomie Avancée",
+  "theme_fa": "بخش ویژه بیمارستان و آناتومی پیشرفته",
+  "icon": "🧬",
+  "inspiration": "House M.D. / The Knick",
+  "words": [
+    {
+      "fr": "l'amputation",
+      "fa": "قطع عضو",
+      "emoji": "🦿",
+      "difficulty": 4,
+      "ex": "L'amputation de la jambe était malheureusement inévitable pour sauver le patient.",
+      "ex_fa": "قطع پا برای نجات جان بیمار متأسفانه اجتناب‌ناپذیر بود."
+    },
+    {
+      "fr": "l'estropié",
+      "fa": "معلول / فرد قطع عضو شده",
+      "emoji": "🦽",
+      "difficulty": 5,
+      "ex": "Le vétéran estropié mendiait sur le parvis de l'église après la guerre.",
+      "ex_fa": "سرباز کهنه‌کار معلول پس از جنگ در حیاط کلیسا گدایی می‌کرد."
+    },
+    {
+      "fr": "l'anévrisme",
+      "fa": "آنوریسم",
+      "emoji": "🫀",
+      "difficulty": 5,
+      "ex": "Il est mort subitement d'une rupture d'anévrisme cérébral non diagnostiqué.",
+      "ex_fa": "او ناگهان بر اثر پارگی آنوریسم مغزی تشخیص‌داده‌نشده درگذشت."
+    },
+    {
+      "fr": "la coagulation",
+      "fa": "لخته شدن خون",
+      "emoji": "🩸",
+      "difficulty": 4,
+      "ex": "Ce médicament accélère la coagulation pour stopper l'hémorragie interne.",
+      "ex_fa": "این دارو لخته شدن خون را تسریع می‌کند تا خونریزی داخلی متوقف شود."
+    },
+    {
+      "fr": "artériel",
+      "fa": "شریانی",
+      "emoji": "🩺",
+      "difficulty": 4,
+      "ex": "La pression artérielle du patient doit être surveillée en continu.",
+      "ex_fa": "فشار شریانی بیمار باید به طور مداوم تحت نظر باشد."
+    },
+    {
+      "fr": "le ventricule",
+      "fa": "بطن",
+      "emoji": "❤️",
+      "difficulty": 4,
+      "ex": "L'IRM a révélé une anomalie structurelle dans le ventricule gauche du cœur.",
+      "ex_fa": "ام‌آر‌آی یک ناهنجاری ساختاری در بطن چپ قلب را نشان داد."
+    },
+    {
+      "fr": "la dialyse",
+      "fa": "دیالیز",
+      "emoji": "💧",
+      "difficulty": 3,
+      "ex": "Il suit des séances de dialyse rénale trois fois par semaine.",
+      "ex_fa": "او سه بار در هفته تحت جلسات دیالیز کلیوی قرار می‌گیرد."
+    },
+    {
+      "fr": "l'électrochoc",
+      "fa": "شوک الکتریکی",
+      "emoji": "⚡",
+      "difficulty": 5,
+      "ex": "La thérapie par électrochoc est aujourd'hui strictement encadrée et rare.",
+      "ex_fa": "درمان با شوک الکتریکی امروزه به شدت کنترل‌شده و نادر است."
+    },
+    {
+      "fr": "l'anatomie",
+      "fa": "کالبدشناسی",
+      "emoji": "🦴",
+      "difficulty": 3,
+      "ex": "Les étudiants en médecine passent des heures à disséquer pour comprendre l'anatomie.",
+      "ex_fa": "دانشجویان پزشکی ساعت‌ها به تشریح می‌پردازند تا کالبدشناسی را درک کنند."
+    },
+    {
+      "fr": "épinière",
+      "fa": "نخاعی",
+      "emoji": "🦴",
+      "difficulty": 4,
+      "ex": "La moelle épinière transmet les signaux nerveux entre le cerveau et le corps.",
+      "ex_fa": "نخاع سیگنال‌های عصبی را بین مغز و بدن منتقل می‌کند."
+    },
+    {
+      "fr": "l'épilation",
+      "fa": "اپیلاسیون / مو زدایی",
+      "emoji": "✨",
+      "difficulty": 3,
+      "ex": "Une épilation complète de la zone opératoire est requise avant l'intervention.",
+      "ex_fa": "مو زدایی کامل ناحیه عمل قبل از مداخله جراحی الزامی است."
+    },
+    {
+      "fr": "l'agonie",
+      "fa": "احتضار / لحظات پیش از مرگ",
+      "emoji": "🕯️",
+      "difficulty": 4,
+      "ex": "Le malade en phase terminale est entré en agonie dans la nuit.",
+      "ex_fa": "بیمار در مرحله پایانی بیماری، در طول شب وارد مراحل احتضار شد."
+    },
+    {
+      "fr": "mortuaire",
+      "fa": "مربوط به مردگان",
+      "emoji": "⚰️",
+      "difficulty": 4,
+      "ex": "La chambre mortuaire se trouve au sous-sol de l'hôpital, loin des regards.",
+      "ex_fa": "سردخانه در زیرزمین بیمارستان، دور از دیدگان قرار دارد."
+    },
+    {
+      "fr": "la désintoxication",
+      "fa": "سم‌زدایی",
+      "emoji": "🚭",
+      "difficulty": 4,
+      "ex": "Il est actuellement en cure de désintoxication dans une clinique spécialisée.",
+      "ex_fa": "او در حال حاضر تحت دوره سم‌زدایی در یک کلینیک تخصصی است."
+    },
+    {
+      "fr": "biliaire",
+      "fa": "صفراوی",
+      "emoji": "🟢",
+      "difficulty": 4,
+      "ex": "Il a été opéré d'urgence pour retirer des calculs biliaires douloureux.",
+      "ex_fa": "او برای خارج کردن سنگ‌های صفراوی دردناک به‌صورت اورژانسی جراحی شد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Garde aux urgences",
+      "title_fa": "شیفت در اورژانس",
+      "text": "Le Dr House examine un nouveau patient. C'est un vétéran {{BLANK_2}}. Il risque une rupture d'{{BLANK_3}}. La pression {{BLANK_5}} est instable. Le sang a du mal avec la {{BLANK_4}}. Une anomalie est visible dans le {{BLANK_6}}. Le patient a besoin de {{BLANK_7}} pour ses reins. Son histoire inclut des antécédents d'{{BLANK_8}} et de {{BLANK_14}}. L'infirmière prépare une {{BLANK_11}} de la zone avant l'opération. Le Dr House étudie l'{{BLANK_9}} complexe du corps. Une lésion de la moelle {{BLANK_10}} est suspectée. Le patient a aussi des calculs {{BLANK_15}}. Malheureusement, une {{BLANK_1}} est nécessaire. Le patient entre en {{BLANK_12}}. Il est finalement transféré à la chambre {{BLANK_13}}.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "amputation",
+          "options": [
+            "amputation",
+            "greffe",
+            "suture",
+            "rééducation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "estropié",
+          "options": [
+            "estropié",
+            "athlète",
+            "enfant",
+            "touriste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "anévrisme",
+          "options": [
+            "anévrisme",
+            "fracture",
+            "entorse",
+            "coupure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "coagulation",
+          "options": [
+            "coagulation",
+            "digestion",
+            "respiration",
+            "circulation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "artérielle",
+          "options": [
+            "artérielle",
+            "veineuse",
+            "capillaire",
+            "lymphatique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "ventricule",
+          "options": [
+            "ventricule",
+            "oreillette",
+            "valve",
+            "aorte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "dialyse",
+          "options": [
+            "dialyse",
+            "chimiothérapie",
+            "radiothérapie",
+            "kinésithérapie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "électrochoc",
+          "options": [
+            "électrochoc",
+            "massage",
+            "acupuncture",
+            "homéopathie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "anatomie",
+          "options": [
+            "anatomie",
+            "géographie",
+            "astronomie",
+            "botanique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "épinière",
+          "options": [
+            "épinière",
+            "cérébrale",
+            "musculaire",
+            "osseuse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "épilation",
+          "options": [
+            "épilation",
+            "injection",
+            "incision",
+            "inhalation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "agonie",
+          "options": [
+            "agonie",
+            "euphorie",
+            "sommeil",
+            "réveil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "mortuaire",
+          "options": [
+            "mortuaire",
+            "d'opération",
+            "de réveil",
+            "d'attente"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "désintoxication",
+          "options": [
+            "désintoxication",
+            "vaccination",
+            "hydration",
+            "nutrition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "biliaires",
+          "options": [
+            "biliaires",
+            "rénaux",
+            "urinaires",
+            "dentaires"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le dernier souffle",
+      "title_fa": "آخرین نفس",
+      "inspiration": "House M.D. / The Knick",
+      "text": "Dans la pénombre de l'unité de soins intensifs, le Dr Aris disséquait du regard l'{{BLANK_9}} défaillante de son patient. Ce vétéran {{BLANK_2}}, dont le corps portait les stigmates d'une {{BLANK_1}} ancienne, luttait désormais contre une menace plus insidieuse : un {{BLANK_3}} cérébral prêt à rompre. La tension {{BLANK_5}} chutait, tandis que la {{BLANK_4}} sanguine s'effondrait, rendant vaine toute tentative de stabilisation. L'échographie révélait un liquide anormal dans le {{BLANK_6}} gauche, et les antécédents de {{BLANK_7}} chronique compliquaient le tableau. Jadis, on lui avait administré des {{BLANK_8}} pour des troubles psychiatriques, et il sortait tout juste d'une cure de {{BLANK_14}}. Une colique {{BLANK_15}} avait été notée la veille. Même le protocole trivial d'{{BLANK_11}} préopératoire semblait désormais dérisoire face à l'ampleur du désastre. Une lésion de la moelle {{BLANK_10}} fut confirmée. Bientôt, le râle de l'{{BLANK_12}} emplit la pièce. Le transfert vers la chambre {{BLANK_13}} n'était plus qu'une question d'heures.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "amputation",
+          "options": [
+            "amputation",
+            "guérison",
+            "rémission",
+            "convalescence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "estropié",
+          "options": [
+            "estropié",
+            " valide",
+            "vigoureux",
+            "robuste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "anévrisme",
+          "options": [
+            "anévrisme",
+            "kyste",
+            "tumeur",
+            "abcès"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "coagulation",
+          "options": [
+            "coagulation",
+            "fluidification",
+            "oxygénation",
+            "purification"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "artérielle",
+          "options": [
+            "artérielle",
+            "veineuse",
+            "capillaire",
+            "lymphatique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "ventricule",
+          "options": [
+            "ventricule",
+            "atrium",
+            "tronc",
+            "canal"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "dialyse",
+          "options": [
+            "dialyse",
+            "greffe",
+            "transfusion",
+            "perfusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "électrochocs",
+          "options": [
+            "électrochocs",
+            "placebos",
+            "vitamines",
+            "antibiotiques"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "anatomie",
+          "options": [
+            "anatomie",
+            "psychologie",
+            "sociologie",
+            "philosophie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "épinière",
+          "options": [
+            "épinière",
+            "cérébrale",
+            "médullaire",
+            "corticale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "épilation",
+          "options": [
+            "épilation",
+            "incision",
+            "suture",
+            "désinfection"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "agonie",
+          "options": [
+            "agonie",
+            "euphorie",
+            "sérénité",
+            "quiétude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "mortuaire",
+          "options": [
+            "mortuaire",
+            "d'isolement",
+            "de réanimation",
+            "d'observation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "désintoxication",
+          "options": [
+            "désintoxication",
+            "vaccination",
+            "hydratation",
+            "nutrition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "biliaire",
+          "options": [
+            "biliaire",
+            "rénale",
+            "pulmonaire",
+            "cardiaque"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Unité Spéciale et Anatomie Avancée",
+    "title_fa": "آزمون: بخش ویژه و آناتومی پیشرفته",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'acte chirurgical consistant à retirer un membre du corps est l'____.",
+        "options": [
+          "amputation",
+          "greffe",
+          "suture",
+          "résection"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل جراحی برای برداشتن یک عضو = amputation."
+      },
+      {
+        "type": "mcq",
+        "question": "Une personne qui a perdu l'usage d'un membre ou qui est gravement handicapée est un ____.",
+        "options": [
+          "estropié",
+          "athlète",
+          "bien-portant",
+          "vigoureux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرد معلول یا قطع عضو شده = estropié."
+      },
+      {
+        "type": "mcq",
+        "question": "Une dilatation anormale et localisée d'une artère, risquant la rupture, est un ____.",
+        "options": [
+          "anévrisme",
+          "kyste",
+          "tumeur",
+          "abcès"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گشادشدگی غیرطبیعی شریان = anévrisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus par lequel le sang se solidifie pour arrêter un saignement est la ____.",
+        "options": [
+          "coagulation",
+          "fluidification",
+          "oxygénation",
+          "purification"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فرایند لخته شدن خون = coagulation."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce qui concerne les artères est qualifié d'____.",
+        "options": [
+          "artériel",
+          "veineux",
+          "capillaire",
+          "lymphatique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مربوط به شریان‌ها = artériel."
+      },
+      {
+        "type": "mcq",
+        "question": "Chacune des deux cavités inférieures du cœur est un ____.",
+        "options": [
+          "ventricule",
+          "atrium",
+          "valve",
+          "nœud"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حفره‌های پایینی قلب = ventricule (بطن)."
+      },
+      {
+        "type": "mcq",
+        "question": "Le traitement médical qui filtre le sang en remplaçant la fonction des reins est la ____.",
+        "options": [
+          "dialyse",
+          "greffe",
+          "transfusion",
+          "chimiothérapie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درمان تصفیه خون به جای کلیه = dialyse."
+      },
+      {
+        "type": "mcq",
+        "question": "L'application d'un courant électrique à des fins thérapeutiques est l'____.",
+        "options": [
+          "électrochoc",
+          "électrocardiogramme",
+          "électrophorèse",
+          "électrolyse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استفاده درمانی از جریان الکتریکی = électrochoc."
+      },
+      {
+        "type": "mcq",
+        "question": "L'étude de la structure du corps humain et de ses organes est l'____.",
+        "options": [
+          "anatomie",
+          "physiologie",
+          "pathologie",
+          "épidémiologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مطالعه ساختار بدن = anatomie."
+      },
+      {
+        "type": "mcq",
+        "question": "La moelle qui court à l'intérieur de la colonne vertébrale est dite ____.",
+        "options": [
+          "épinière",
+          "cérébrale",
+          "corticale",
+          "musculaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نخاع = moelle épinière."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action d'enlever les poils du corps, souvent avant une opération, est l'____.",
+        "options": [
+          "épilation",
+          "incision",
+          "suture",
+          "désinfection"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مو زدایی = épilation."
+      },
+      {
+        "type": "mcq",
+        "question": "La période de souffrance intense précédant immédiatement la mort est l'____.",
+        "options": [
+          "agonie",
+          "euphorie",
+          "sérénité",
+          "quiétude"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لحظات احتضار و پیش از مرگ = agonie."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce qui est relatif aux morts, comme une chambre ou un registre, est ____.",
+        "options": [
+          "mortuaire",
+          "natal",
+          "vital",
+          "funèbre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مربوط به مردگان = mortuaire."
+      },
+      {
+        "type": "binary",
+        "question": "La \"désintoxication\" est un processus visant à éliminer les substances toxiques ou les drogues de l'organisme.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، désintoxication به معنای سم‌زدایی از بدن است."
+      },
+      {
+        "type": "binary",
+        "question": "Les calculs \"biliaires\" se forment dans les reins et provoquent des douleurs urinaires.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، calculs biliaires در کیسه صفرا تشکیل می‌شوند، نه در کلیه."
+      }
+    ]
+  }
+}
