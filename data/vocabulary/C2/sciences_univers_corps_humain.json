@@ -1,0 +1,594 @@
+{
+  "id": "sciences_univers_corps_humain",
+  "level": "C2",
+  "theme": "Sciences Avancées, Univers et Corps Humain",
+  "theme_fa": "علوم پیشرفته، کیهان و کالبد انسان",
+  "icon": "🧬",
+  "inspiration": "Tenet (Nolan) / Star Trek: Voyager",
+  "words": [
+    {
+      "fr": "quantique",
+      "fa": "کوانتومی",
+      "emoji": "⚛️",
+      "difficulty": 4,
+      "ex": "L'ordinateur quantique révolutionnera à jamais la cryptographie moderne.",
+      "ex_fa": "رایانه کوانتومی برای همیشه رمزنگاری مدرن را متحول خواهد کرد."
+    },
+    {
+      "fr": "le quadrant",
+      "fa": "ربع / ربع‌دایره نجومی",
+      "emoji": "🧭",
+      "difficulty": 5,
+      "ex": "Les navigateurs célestes utilisaient le quadrant pour déterminer leur position.",
+      "ex_fa": "ناوبران آسمانی از ربع‌دایره برای تعیین موقعیت خود استفاده می‌کردند."
+    },
+    {
+      "fr": "la télépathie",
+      "fa": "تله‌پاتی / ذهن‌خوانی",
+      "emoji": "🧠",
+      "difficulty": 4,
+      "ex": "Certains jumeaux monozygotes semblent communiquer par télépathie.",
+      "ex_fa": "برخی دوقلوهای همسان به نظر می‌رسد از طریق تله‌پاتی ارتباط برقرار می‌کنند."
+    },
+    {
+      "fr": "télépathique",
+      "fa": "تله‌پاتیک",
+      "emoji": "🔮",
+      "difficulty": 4,
+      "ex": "Leur lien télépathique était si intense qu'il en devenait presque effrayant.",
+      "ex_fa": "پیوند تله‌پاتیک آن‌ها آنقدر شدید بود که تقریباً ترسناک می‌شد."
+    },
+    {
+      "fr": "l'holographie",
+      "fa": "هولوگرافی",
+      "emoji": "🌐",
+      "difficulty": 5,
+      "ex": "L'holographie médicale permet aujourd'hui des diagnostics d'une précision inouïe.",
+      "ex_fa": "هولوگرافی پزشکی امروزه امکان تشخیص با دقتی بی‌سابقه را فراهم می‌کند."
+    },
+    {
+      "fr": "le symbiote",
+      "fa": "همزیست",
+      "emoji": "🦠",
+      "difficulty": 5,
+      "ex": "Ce microbe agit comme un symbiote essentiel dans notre flore intestinale.",
+      "ex_fa": "این میکروب به عنوان یک همزیست ضروری در فلور روده ما عمل می‌کند."
+    },
+    {
+      "fr": "le syndrome",
+      "fa": "سندرم / نشانگان",
+      "emoji": "🩺",
+      "difficulty": 3,
+      "ex": "Le syndrome de Stockholm fascine encore les psychologues cliniciens.",
+      "ex_fa": "سندرم استکهلم همچنان روانشناسان بالینی را مجذوب خود می‌کند."
+    },
+    {
+      "fr": "l'immunité",
+      "fa": "ایمنی / مصونیت",
+      "emoji": "🛡️",
+      "difficulty": 3,
+      "ex": "Son immunité diplomatique le protégeait de toute poursuite judiciaire.",
+      "ex_fa": "مصونیت دیپلماتیکش او را از هرگونه پیگرد قضایی محافظت می‌کرد."
+    },
+    {
+      "fr": "la vulnérabilité",
+      "fa": "آسیب‌پذیری",
+      "emoji": "🎯",
+      "difficulty": 4,
+      "ex": "La vulnérabilité critique du système a été corrigée dans la dernière mise à jour.",
+      "ex_fa": "آسیب‌پذیری بحرانی سیستم در آخرین به‌روزرسانی برطرف شد."
+    },
+    {
+      "fr": "l'amygdale",
+      "fa": "لوزه / آمیگدال",
+      "emoji": "🧠",
+      "difficulty": 4,
+      "ex": "L'amygdale cérébrale joue un rôle central dans la gestion de la peur.",
+      "ex_fa": "آمیگدال مغزی نقش محوری در مدیریت ترس ایفا می‌کند."
+    },
+    {
+      "fr": "la coagulation",
+      "fa": "لخته شدن خون",
+      "emoji": "🩸",
+      "difficulty": 4,
+      "ex": "Un trouble de la coagulation peut s'avérer fatal en cas de blessure.",
+      "ex_fa": "اختلال در انعقاد خون می‌تواند در صورت جراحت کشنده باشد."
+    },
+    {
+      "fr": "le cortex",
+      "fa": "قشر مغز",
+      "emoji": "🧠",
+      "difficulty": 4,
+      "ex": "Le cortex préfrontal est le siège de la prise de décision rationnelle.",
+      "ex_fa": "قشر پیش‌پیشانی مرکز تصمیم‌گیری منطقی است."
+    },
+    {
+      "fr": "la physiologie",
+      "fa": "فیزیولوژی",
+      "emoji": "🫀",
+      "difficulty": 4,
+      "ex": "La physiologie de l'effort est cruciale pour la performance des athlètes de haut niveau.",
+      "ex_fa": "فیزیولوژی تلاش برای عملکرد ورزشکاران سطح بالا حیاتی است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le laboratoire du futur",
+      "title_fa": "آزمایشگاه آینده",
+      "text": "Le Dr Aris travaille sur un projet {{BLANK_1}} révolutionnaire. Il utilise un {{BLANK_2}} pour localiser les anomalies spatiales. Deux patients jumeaux présentent un lien {{BLANK_4}} troublant. Grâce à l'{{BLANK_5}}, il visualise leurs cerveaux en 3D. Un {{BLANK_6}} microbien a été identifié dans leur intestin. Ils souffrent d'un {{BLANK_7}} psychologique rare. Leur {{BLANK_8}} diplomatique les protège. Mais une {{BLANK_9}} du système les expose. L'{{BLANK_10}} cérébrale réagit fortement à la peur. Leur {{BLANK_11}} sanguine est anormale. Le {{BLANK_12}} préfrontal montre des anomalies. La {{BLANK_13}} de l'effort est étudiée en détail.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "quantique",
+          "options": [
+            "quantique",
+            "classique",
+            "mécanique",
+            "thermique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "quadrant",
+          "options": [
+            "quadrant",
+            "compas",
+            "boussole",
+            "astrolabe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "télépathie",
+          "options": [
+            "télépathie",
+            "téléphonie",
+            "télégraphie",
+            "radiographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "télépathique",
+          "options": [
+            "télépathique",
+            "téléphonique",
+            "pathologique",
+            "symbolique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "holographie",
+          "options": [
+            "holographie",
+            "photographie",
+            "radiographie",
+            "calligraphie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "symbiote",
+          "options": [
+            "symbiote",
+            "parasite",
+            "prédateur",
+            "virus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "syndrome",
+          "options": [
+            "syndrome",
+            "symptôme",
+            "signe",
+            "signal"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "immunité",
+          "options": [
+            "immunité",
+            "impunité",
+            "amnistie",
+            "grâce"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "vulnérabilité",
+          "options": [
+            "vulnérabilité",
+            "solidité",
+            "robustesse",
+            "résistance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "amygdale",
+          "options": [
+            "amygdale",
+            "hypothalamus",
+            "cervelet",
+            "thalamus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "coagulation",
+          "options": [
+            "coagulation",
+            "circulation",
+            "oxygénation",
+            "digestion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "cortex",
+          "options": [
+            "cortex",
+            "tronc",
+            "noyau",
+            "bulbe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "physiologie",
+          "options": [
+            "physiologie",
+            "anatomie",
+            "pathologie",
+            "biologie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les frontières de l'esprit",
+      "title_fa": "مرزهای ذهن",
+      "inspiration": "Tenet (Nolan) / Star Trek: Voyager",
+      "text": "Nonobstant les certitudes de la science {{BLANK_1}} classique, le Dr Aris s'aventurait dans les confins d'une physique où le temps lui-même semblait se déliter. Muni d'un {{BLANK_2}} antique, héritage des navigateurs célestes, il scrutait les anomalies spatio-temporelles. Deux jumeaux, liés par un don {{BLANK_4}} quasi effrayant, défiaient toutes les lois connues. L'{{BLANK_5}} projetait leurs consciences entrelacées dans un ballet tridimensionnel. Au plus profond de leur intestin, un {{BLANK_6}} microbien, à la fois parasite et allié, orchestrait une symphonie biologique inouïe. Ils souffraient d'un {{BLANK_7}} psychologique que nul manuel ne répertoriait. Leur {{BLANK_8}} diplomatique, jadis bouclier inviolable, ne les protégeait plus des expériences. Une {{BLANK_9}} critique du système les exposait désormais à tous les regards. L'{{BLANK_10}} cérébrale, siège archaïque de la peur, s'embrasait à chaque stimulation. Leur {{BLANK_11}} sanguine, déréglée, menaçait de les emporter. Le {{BLANK_12}} préfrontal, ult rempart de la raison, vacillait. Seule la {{BLANK_13}} de l'effort, patiemment décortiquée, offrait encore un fil d'Ariane dans ce labyrinthe du vivant.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "quantique",
+          "options": [
+            "quantique",
+            "classique",
+            "mécanique",
+            "thermodynamique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "quadrant",
+          "options": [
+            "quadrant",
+            "sextant",
+            "astrolabe",
+            "goniomètre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "télépathie",
+          "options": [
+            "télépathie",
+            "clairvoyance",
+            "précognition",
+            "télékinésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "télépathique",
+          "options": [
+            "télépathique",
+            "empathique",
+            "sympathique",
+            "pathologique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "holographie",
+          "options": [
+            "holographie",
+            "tomographie",
+            "radioscopie",
+            "échographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "symbiote",
+          "options": [
+            "symbiote",
+            "pathogène",
+            "saprophyte",
+            "commensal"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "syndrome",
+          "options": [
+            "syndrome",
+            "catarrhe",
+            "paroxysme",
+            "délire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "immunité",
+          "options": [
+            "immunité",
+            "impunité",
+            "prérogative",
+            "prerogative"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "vulnérabilité",
+          "options": [
+            "vulnérabilité",
+            "invulnérabilité",
+            "opacité",
+            "herméticité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "amygdale",
+          "options": [
+            "amygdale",
+            "hippocampe",
+            "cervelet",
+            "hypophyse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "coagulation",
+          "options": [
+            "coagulation",
+            "fibrinolyse",
+            "hématopoïèse",
+            "vasodilatation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "cortex",
+          "options": [
+            "cortex",
+            "tronc",
+            "noyau",
+            "bulbe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "physiologie",
+          "options": [
+            "physiologie",
+            "anatomie",
+            "morphologie",
+            "ontogenèse"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Sciences Avancées, Univers et Corps Humain",
+    "title_fa": "آزمون: علوم پیشرفته، کیهان و کالبد انسان",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La branche de la physique qui étudie les phénomènes à l'échelle des atomes et des particules est dite ____.",
+        "options": [
+          "quantique",
+          "classique",
+          "relativiste",
+          "newtonienne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شاخه‌ای از فیزیک که پدیده‌ها را در مقیاس اتمی و ذرات مطالعه می‌کند = quantique."
+      },
+      {
+        "type": "mcq",
+        "question": "L'instrument ancien, divisé en quatre parties, utilisé pour mesurer les angles célestes est le ____.",
+        "options": [
+          "quadrant",
+          "sextant",
+          "astrolabe",
+          "goniomètre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار قدیمی چهار قسمتی برای اندازه‌گیری زوایای آسمانی = quadrant."
+      },
+      {
+        "type": "mcq",
+        "question": "La transmission de pensées d'un esprit à un autre sans support matériel est la ____.",
+        "options": [
+          "télépathie",
+          "télékinésie",
+          "précognition",
+          "clairvoyance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انتقال افکار از یک ذهن به ذهن دیگر بدون ابزار = télépathie."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce qui relève de la communication mentale directe entre individus est qualifié de ____.",
+        "options": [
+          "télépathique",
+          "empathique",
+          "sympathique",
+          "pathologique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مربوط به ارتباط ذهنی مستقیم بین افراد = télépathique."
+      },
+      {
+        "type": "mcq",
+        "question": "La technique permettant de créer des images tridimensionnelles par interférence lumineuse est l'____.",
+        "options": [
+          "holographie",
+          "tomographie",
+          "radioscopie",
+          "calligraphie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تکنیک ایجاد تصاویر سه‌بعدی از طریق تداخل نور = holographie."
+      },
+      {
+        "type": "mcq",
+        "question": "Un organisme qui vit en association mutuellement bénéfique avec un autre est un ____.",
+        "options": [
+          "symbiote",
+          "parasite",
+          "prédateur",
+          "commensal"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "موجودی که در همزیستی سودمند با موجود دیگر زندگی می‌کند = symbiote."
+      },
+      {
+        "type": "mcq",
+        "question": "Un ensemble de symptômes caractéristiques formant un tableau clinique défini est un ____.",
+        "options": [
+          "syndrome",
+          "symptôme",
+          "signe",
+          "catarrhe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموعه‌ای از علائم که یک الگوی بالینی مشخص را تشکیل می‌دهند = syndrome."
+      },
+      {
+        "type": "mcq",
+        "question": "La protection légale dont bénéficient certains diplomates contre les poursuites est l'____.",
+        "options": [
+          "immunité",
+          "impunité",
+          "amnistie",
+          "prérogative"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محافظت قانونی دیپلمات‌ها در برابر پیگرد = immunité."
+      },
+      {
+        "type": "mcq",
+        "question": "La faiblesse structurelle d'un système qui peut être exploitée est sa ____.",
+        "options": [
+          "vulnérabilité",
+          "robustesse",
+          "invulnérabilité",
+          "résistance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نقطه ضعف ساختاری یک سیستم که قابل بهره‌برداری است = vulnérabilité."
+      },
+      {
+        "type": "mcq",
+        "question": "La structure cérébrale en forme d'amande, impliquée dans la gestion des émotions, est l'____.",
+        "options": [
+          "amygdale",
+          "hippocampe",
+          "thalamus",
+          "hypothalamus"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ساختار مغزی به شکل بادام، درگیر در مدیریت احساسات = amygdale."
+      },
+      {
+        "type": "binary",
+        "question": "Le \"cortex\" préfrontal est principalement responsable de la régulation des fonctions motrices basiques.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، قشر پیش‌پیشانی مسئول تصمیم‌گیری، برنامه‌ریزی و عملکردهای شناختی عالی است."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"symbiote\" est toujours un organisme nuisible pour son hôte.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، همزیست معمولاً رابطه‌ای سودمند متقابل با میزبان دارد."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"holographie\" permet de créer des images en trois dimensions à partir d'interférences lumineuses.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، هولوگرافی بر اساس تداخل نور، تصاویر سه‌بعدی ایجاد می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "La \"physiologie\" étudie la structure anatomique des organes plutôt que leur fonctionnement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، فیزیولوژی به عملکرد اندام‌ها می‌پردازد، نه ساختار آن‌ها (که آناتومی است)."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"immunité\" diplomatique protège un diplomate de toute poursuite judiciaire dans le pays hôte.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، مصونیت دیپلماتیک از پیگرد قضایی در کشور میزبان محافظت می‌کند."
+      }
+    ]
+  }
+}
