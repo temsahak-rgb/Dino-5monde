@@ -1,0 +1,658 @@
+{
+  "id": "transport_voyage_route",
+  "level": "A1",
+  "theme": "Transport, Voyage et Route",
+  "theme_fa": "حمل و نقل، سفر و جاده",
+  "icon": "✈️",
+  "inspiration": "Le Petit Nicolas / Tintin",
+  "words": [
+    {
+      "fr": "à l'étranger",
+      "fa": "خارج از کشور",
+      "emoji": "🌍",
+      "difficulty": 2,
+      "ex": "J'aime voyager à l'étranger.",
+      "ex_fa": "من دوست دارم به خارج از کشور سفر کنم."
+    },
+    {
+      "fr": "à pied",
+      "fa": "پیاده",
+      "emoji": "🚶",
+      "difficulty": 1,
+      "ex": "Je vais à l'école à pied.",
+      "ex_fa": "من پیاده به مدرسه می‌روم."
+    },
+    {
+      "fr": "l'accueil",
+      "fa": "پذیرش",
+      "emoji": "🛎️",
+      "difficulty": 2,
+      "ex": "Je demande les clés à l'accueil.",
+      "ex_fa": "من کلیدها را از پذیرش می‌خواهم."
+    },
+    {
+      "fr": "l'aéroport",
+      "fa": "فرودگاه",
+      "emoji": "✈️",
+      "difficulty": 1,
+      "ex": "Nous arrivons à l'aéroport à 6h.",
+      "ex_fa": "ما ساعت ۶ به فرودگاه می‌رسیم."
+    },
+    {
+      "fr": "arrêter",
+      "fa": "متوقف کردن / ایستادن",
+      "emoji": "🛑",
+      "difficulty": 2,
+      "ex": "Le bus s'arrête ici.",
+      "ex_fa": "اتوبوس اینجا می‌ایستد."
+    },
+    {
+      "fr": "arriver",
+      "fa": "رسیدن",
+      "emoji": "📍",
+      "difficulty": 1,
+      "ex": "Le train arrive à midi.",
+      "ex_fa": "قطار ظهر می‌رسد."
+    },
+    {
+      "fr": "l'autoroute",
+      "fa": "بزرگراه",
+      "emoji": "🛣️",
+      "difficulty": 2,
+      "ex": "Nous roulons sur l'autoroute.",
+      "ex_fa": "ما در بزرگراه رانندگی می‌کنیم."
+    },
+    {
+      "fr": "l'avion",
+      "fa": "هواپیما",
+      "emoji": "🛫",
+      "difficulty": 1,
+      "ex": "Je prends l'avion pour aller à Paris.",
+      "ex_fa": "من برای رفتن به پاریس هواپیما می‌گیرم."
+    },
+    {
+      "fr": "les bagages",
+      "fa": "چمدان‌ها",
+      "emoji": "🧳",
+      "difficulty": 2,
+      "ex": "Je fais mes bagages pour le voyage.",
+      "ex_fa": "من برای سفر چمدان‌هایم را می‌بندم."
+    },
+    {
+      "fr": "le bateau",
+      "fa": "کشتی / قایق",
+      "emoji": "🚢",
+      "difficulty": 1,
+      "ex": "Nous traversons la mer en bateau.",
+      "ex_fa": "ما با کشتی از دریا عبور می‌کنیم."
+    },
+    {
+      "fr": "le billet",
+      "fa": "بلیط",
+      "emoji": "🎫",
+      "difficulty": 1,
+      "ex": "J'achète un billet de train.",
+      "ex_fa": "من یک بلیط قطار می‌خرم."
+    },
+    {
+      "fr": "le bus",
+      "fa": "اتوبوس",
+      "emoji": "🚌",
+      "difficulty": 1,
+      "ex": "J'attends le bus à l'arrêt.",
+      "ex_fa": "من در ایستگاه منتظر اتوبوس هستم."
+    },
+    {
+      "fr": "le cadeau",
+      "fa": "هدیه",
+      "emoji": "🎁",
+      "difficulty": 1,
+      "ex": "J'offre un cadeau à mon ami.",
+      "ex_fa": "من به دوستم هدیه می‌دهم."
+    },
+    {
+      "fr": "la carte",
+      "fa": "نقشه / کارت",
+      "emoji": "🗺️",
+      "difficulty": 1,
+      "ex": "Je regarde la carte pour trouver le chemin.",
+      "ex_fa": "من برای پیدا کردن مسیر به نقشه نگاه می‌کنم."
+    },
+    {
+      "fr": "conduire",
+      "fa": "رانندگی کردن",
+      "emoji": "🚗",
+      "difficulty": 2,
+      "ex": "Mon père aime conduire la voiture.",
+      "ex_fa": "پدر من دوست دارد رانندگی کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un grand voyage",
+      "title_fa": "یک سفر بزرگ",
+      "text": "Demain, je pars ____ (1). Je vais à l'____ (4) très tôt. Je prends un ____ (8) pour Londres. Je fais mes ____ (9) ce soir. J'ai un ____ (11) pour l'avion. À Londres, je vais ____ (15) une voiture. Je roule sur l'____ (7). Parfois, je m'____ (5) pour regarder la ____ (14). Si je ne trouve pas le chemin, je demande à l'____ (3) de l'hôtel. Le soir, je rentre à l'hôtel ____ (2) parce que c'est près. J'____ (6) à l'hôtel et je donne un petit ____ (13) au réceptionniste. J'adore voyager en ____ (10) aussi, mais aujourd'hui c'est l'avion.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "à l'étranger",
+          "options": [
+            "à l'étranger",
+            "à la maison",
+            "au lit",
+            "au travail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "aéroport",
+          "options": [
+            "aéroport",
+            "gare",
+            "port",
+            "hôpital"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "avion",
+          "options": [
+            "avion",
+            "bus",
+            "vélo",
+            "moto"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "bagages",
+          "options": [
+            "bagages",
+            "devoirs",
+            "leçons",
+            "tâches"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "billet",
+          "options": [
+            "billet",
+            "journal",
+            "livre",
+            "stylo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "conduire",
+          "options": [
+            "conduire",
+            "manger",
+            "dormir",
+            "lire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "autoroute",
+          "options": [
+            "autoroute",
+            "rue",
+            "chemin",
+            "sentier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "arrête",
+          "options": [
+            "arrête",
+            "mange",
+            "dort",
+            "lit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "carte",
+          "options": [
+            "carte",
+            "table",
+            "chaise",
+            "lit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "accueil",
+          "options": [
+            "accueil",
+            "cuisine",
+            "chambre",
+            "salle de bain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "à pied",
+          "options": [
+            "à pied",
+            "en voiture",
+            "en avion",
+            "en train"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "arrive",
+          "options": [
+            "arrive",
+            "pars",
+            "dors",
+            "manges"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "cadeau",
+          "options": [
+            "cadeau",
+            "problème",
+            "travail",
+            "devoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "bateau",
+          "options": [
+            "bateau",
+            "avion",
+            "train",
+            "bus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "bus",
+          "options": [
+            "bus",
+            "avion",
+            "bateau",
+            "hélicoptère"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'aventure commence",
+      "title_fa": "ماجراجویی آغاز می‌شود",
+      "inspiration": "Tintin",
+      "text": "C'était le grand jour. Lucas voulait voyager ____ (1). Il est allé à l'____ (4) de bonne heure. Il a pris un ____ (8) pour Rome. La veille, il avait fait ses ____ (9) avec soin. Il a montré son ____ (11) à l'employé. À Rome, il a décidé de ne pas ____ (15). Il a préféré marcher ____ (2) pour découvrir la ville. Il a regardé la ____ (14) de la ville sur son téléphone. Parfois, il s'____ (5) pour admirer les monuments. Il a pris un ____ (12) pour aller au musée. Le soir, il est ____ (6) à l'hôtel. Il a demandé la clé à l'____ (3). Il a offert un petit ____ (13) à sa famille depuis là-bas. Il rêve déjà de voyager en ____ (10) la prochaine fois.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "à l'étranger",
+          "options": [
+            "à l'étranger",
+            "à la maison",
+            "au lit",
+            "au travail"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "aéroport",
+          "options": [
+            "aéroport",
+            "gare",
+            "port",
+            "hôpital"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "avion",
+          "options": [
+            "avion",
+            "bus",
+            "vélo",
+            "moto"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "bagages",
+          "options": [
+            "bagages",
+            "devoirs",
+            "leçons",
+            "tâches"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "billet",
+          "options": [
+            "billet",
+            "journal",
+            "livre",
+            "stylo"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "conduire",
+          "options": [
+            "conduire",
+            "manger",
+            "dormir",
+            "lire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "à pied",
+          "options": [
+            "à pied",
+            "en voiture",
+            "en avion",
+            "en train"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "carte",
+          "options": [
+            "carte",
+            "table",
+            "chaise",
+            "lit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "arrête",
+          "options": [
+            "arrête",
+            "mange",
+            "dort",
+            "lit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "bus",
+          "options": [
+            "bus",
+            "avion",
+            "bateau",
+            "hélicoptère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "arrive",
+          "options": [
+            "arrive",
+            "pars",
+            "dors",
+            "manges"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "accueil",
+          "options": [
+            "accueil",
+            "cuisine",
+            "chambre",
+            "salle de bain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "cadeau",
+          "options": [
+            "cadeau",
+            "problème",
+            "travail",
+            "devoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "bateau",
+          "options": [
+            "bateau",
+            "avion",
+            "train",
+            "bus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "autoroute",
+          "options": [
+            "autoroute",
+            "rue",
+            "chemin",
+            "sentier"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Transport, Voyage et Route",
+    "title_fa": "آزمون: حمل و نقل، سفر و جاده",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Pour aller dans un autre pays, on voyage ____.",
+        "options": [
+          "à l'étranger",
+          "à la maison",
+          "au lit",
+          "au travail"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای رفتن به کشور دیگر، به خارج از کشور (à l'étranger) سفر می‌کنیم."
+      },
+      {
+        "type": "mcq",
+        "question": "Si tu ne prends pas de voiture ou de bus, tu vas ____.",
+        "options": [
+          "à pied",
+          "en avion",
+          "en train",
+          "en bateau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اگر وسیله نقلیه سوار نشوید، پیاده (à pied) می‌روید."
+      },
+      {
+        "type": "mcq",
+        "question": "L'endroit où on prend un avion est l'____.",
+        "options": [
+          "aéroport",
+          "gare",
+          "port",
+          "hôpital"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکان سوار شدن به هواپیما فرودگاه (aéroport) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Quand le bus ne bouge plus, il s'____.",
+        "options": [
+          "arrête",
+          "mange",
+          "dort",
+          "lit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وقتی اتوبوس حرکت نمی‌کند، می‌ایستد (s'arrête)."
+      },
+      {
+        "type": "mcq",
+        "question": "Quand le train vient à la gare, on dit qu'il ____.",
+        "options": [
+          "arrive",
+          "part",
+          "dort",
+          "mange"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وقتی قطار به ایستگاه می‌آید، می‌گوییم می‌رسد (arrive)."
+      },
+      {
+        "type": "mcq",
+        "question": "La grande route pour les voitures rapides est l'____.",
+        "options": [
+          "autoroute",
+          "rue",
+          "chemin",
+          "sentier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جاده بزرگ برای خودروهای سریع، بزرگراه (autoroute) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour traverser la mer, on prend un ____.",
+        "options": [
+          "bateau",
+          "avion",
+          "train",
+          "bus"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای عبور از دریا از کشتی یا قایق (bateau) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le papier qui te permet de monter dans le train est le ____.",
+        "options": [
+          "billet",
+          "journal",
+          "livre",
+          "stylo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کاغذی که اجازه سوار شدن به قطار را می‌دهد بلیط (billet) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Les valises que tu emportes en voyage sont les ____.",
+        "options": [
+          "bagages",
+          "devoirs",
+          "leçons",
+          "tâches"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چمدان‌هایی که در سفر می‌بری bagages نامیده می‌شوند."
+      },
+      {
+        "type": "mcq",
+        "question": "Le véhicule à moteur pour transporter beaucoup de passagers en ville est le ____.",
+        "options": [
+          "bus",
+          "avion",
+          "bateau",
+          "hélicoptère"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خودروی موتوری برای حمل مسافران زیاد در شهر اتوبوس (bus) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Quand tu donnes quelque chose pour faire plaisir, c'est un ____.",
+        "options": [
+          "cadeau",
+          "problème",
+          "travail",
+          "devoir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وقتی چیزی برای خوشحال کردن کسی می‌دهی، هدیه (cadeau) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour savoir où aller, on regarde la ____.",
+        "options": [
+          "carte",
+          "table",
+          "chaise",
+          "lit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای دانستن مسیر، به نقشه (carte) نگاه می‌کنیم."
+      },
+      {
+        "type": "binary",
+        "question": "« Conduire » signifie « marcher à pied ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، conduire به معنای رانندگی کردن است."
+      },
+      {
+        "type": "binary",
+        "question": "On demande les informations ou les clés à l'« accueil » d'un hôtel.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، accueil به معنای پذیرش هتل است."
+      },
+      {
+        "type": "binary",
+        "question": "Un « billet » est la même chose qu'un « cadeau ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، billet بلیط است و cadeau هدیه."
+      }
+    ]
+  }
+}
