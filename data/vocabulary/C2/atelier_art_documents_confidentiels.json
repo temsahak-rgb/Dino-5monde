@@ -1,0 +1,658 @@
+{
+  "id": "atelier_art_documents_confidentiels",
+  "level": "C2",
+  "theme": "Atelier d'Art et Documents Confidentiels",
+  "theme_fa": "کارگاه هنر، ادبیات و اسناد محرمانه",
+  "icon": "🎨",
+  "inspiration": "The Da Vinci Code / Le Nom de la Rose",
+  "words": [
+    {
+      "fr": "la calligraphie",
+      "fa": "خوشنویسی",
+      "emoji": "✒️",
+      "difficulty": 4,
+      "ex": "La calligraphie de ce manuscrit médiéval est d'une finesse remarquable.",
+      "ex_fa": "خوشنویسی این دست‌نوشته قرون وسطایی ظرافتی قابل توجه دارد."
+    },
+    {
+      "fr": "la fresque",
+      "fa": "نقاشی دیواری",
+      "emoji": "🖼️",
+      "difficulty": 3,
+      "ex": "La fresque de la chapelle a été minutieusement restaurée par des experts.",
+      "ex_fa": "نقاشی دیواری کلیسا توسط کارشناسان به دقت مرمت شد."
+    },
+    {
+      "fr": "le cristal",
+      "fa": "بلور / کریستال",
+      "emoji": "💎",
+      "difficulty": 3,
+      "ex": "Le grand lustre du salon est en cristal de Bohême authentique.",
+      "ex_fa": "لوستر بزرگ اتاق نشیمن از کریستال اصل بوهم است."
+    },
+    {
+      "fr": "factice",
+      "fa": "مصنوعی / جعلی",
+      "emoji": "🎭",
+      "difficulty": 5,
+      "ex": "Son enthousiasme était purement factice pour impressionner les investisseurs.",
+      "ex_fa": "اشتیاق او کاملاً مصنوعی بود تا سرمایه‌گذاران را تحت تأثیر قرار دهد."
+    },
+    {
+      "fr": "l'empreinte",
+      "fa": "اثر انگشت / ردپا",
+      "emoji": "👣",
+      "difficulty": 3,
+      "ex": "La police scientifique a relevé une empreinte digitale sur le verre.",
+      "ex_fa": "پلیس علمی یک اثر انگشت روی لیوان پیدا کرد."
+    },
+    {
+      "fr": "le cryptage",
+      "fa": "رمزگذاری",
+      "emoji": "🔐",
+      "difficulty": 4,
+      "ex": "Le cryptage de vos données bancaires est une mesure de sécurité indispensable.",
+      "ex_fa": "رمزگذاری داده‌های بانکی شما یک اقدام امنیتی ضروری است."
+    },
+    {
+      "fr": "l'artefact",
+      "fa": "مصنوعه باستان‌شناسی",
+      "emoji": "🏺",
+      "difficulty": 5,
+      "ex": "Les archéologues ont découvert un artefact en or datant de l'Antiquité.",
+      "ex_fa": "باستان‌شناسان یک مصنوعه طلایی متعلق به دوران باستان کشف کردند."
+    },
+    {
+      "fr": "la configuration",
+      "fa": "پیکربندی",
+      "emoji": "⚙️",
+      "difficulty": 4,
+      "ex": "La configuration du réseau informatique a été modifiée par un pirate.",
+      "ex_fa": "پیکربندی شبکه رایانه‌ای توسط یک هکر تغییر داده شد."
+    },
+    {
+      "fr": "le poète",
+      "fa": "شاعر",
+      "emoji": "📜",
+      "difficulty": 2,
+      "ex": "Le poète a écrit des vers immortels célébrant la beauté de la nature.",
+      "ex_fa": "شاعر ابیات جاودانه‌ای در ستایش زیبایی طبیعت سرود."
+    },
+    {
+      "fr": "l'autobiographie",
+      "fa": "خودزندگی‌نامه",
+      "emoji": "📖",
+      "difficulty": 3,
+      "ex": "Son autobiographie controversée est devenue un best-seller mondial.",
+      "ex_fa": "خودزندگی‌نامه جنجالی او به یک پرفروش جهانی تبدیل شد."
+    },
+    {
+      "fr": "la confidentialité",
+      "fa": "محرمانگی",
+      "emoji": "🤫",
+      "difficulty": 4,
+      "ex": "La confidentialité des sources journalistiques doit être absolument protégée.",
+      "ex_fa": "محرمانگی منابع روزنامه‌نگاری باید به طور مطلق محافظت شود."
+    },
+    {
+      "fr": "l'éloquence",
+      "fa": "فصاحت / قدرت سخنوری",
+      "emoji": "🗣️",
+      "difficulty": 5,
+      "ex": "Son éloquence naturelle a fini par convaincre le jury populaire.",
+      "ex_fa": "فصاحت طبیعی او سرانجام هیئت منصفه را متقاعد کرد."
+    },
+    {
+      "fr": "éloquent",
+      "fa": "فصیح / رسا / گویا",
+      "emoji": "💬",
+      "difficulty": 4,
+      "ex": "Son silence face aux accusations était plus éloquent que n'importe quel discours.",
+      "ex_fa": "سکوت او در برابر اتهامات، گویاتر از هر سخنرانی بود."
+    },
+    {
+      "fr": "la splendeur",
+      "fa": "شکوه / جلال",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "La splendeur du palais de Versailles continue d'éblouir les visiteurs.",
+      "ex_fa": "شکوه کاخ ورسای همچنان بازدیدکنندگان را خیره می‌کند."
+    },
+    {
+      "fr": "resplendissant",
+      "fa": "درخشان / تابان",
+      "emoji": "🌟",
+      "difficulty": 4,
+      "ex": "Elle est entrée dans la salle de bal, resplendissante dans sa robe de soie.",
+      "ex_fa": "او در حالی که در لباس ابریشمی‌اش می‌درخشید، وارد تالار رقص شد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le mystère du manuscrit",
+      "title_fa": "راز دست‌نوشته",
+      "text": "L'inspecteur entre dans le bureau {{BLANK_14}} du directeur. Il admire la {{BLANK_13}} des lieux. Un {{BLANK_9}} célèbre est suspecté. Il a écrit une {{BLANK_10}} révélatrice. Mais son alibi semble {{BLANK_4}}. Sur le bureau, il y a un {{BLANK_7}} ancien. L'inspecteur remarque une {{BLANK_5}} sur un verre en {{BLANK_3}}. Le fichier informatique a une {{BLANK_8}} étrange et un {{BLANK_6}} complexe. Derrière une {{BLANK_2}} au mur, on trouve un rouleau avec une {{BLANK_1}} magnifique. L'avocat du suspect parle avec beaucoup d'{{BLANK_12}}. Son argument est très {{BLANK_11}}. Cependant, la {{BLANK_15}} de l'enquête doit être maintenue.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "calligraphie",
+          "options": [
+            "calligraphie",
+            "typographie",
+            "lithographie",
+            "photographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fresque",
+          "options": [
+            "fresque",
+            "toile",
+            "esquisse",
+            "aquarelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "cristal",
+          "options": [
+            "cristal",
+            "plastique",
+            "bois",
+            "carton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "factice",
+          "options": [
+            "factice",
+            "authentique",
+            "sincère",
+            "véritable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "empreinte",
+          "options": [
+            "empreinte",
+            "tache",
+            "rayure",
+            "fissure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "cryptage",
+          "options": [
+            "cryptage",
+            "stockage",
+            "affichage",
+            "impression"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "artefact",
+          "options": [
+            "artefact",
+            "déchet",
+            "outil",
+            "meuble"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "configuration",
+          "options": [
+            "configuration",
+            "décoration",
+            "couleur",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "poète",
+          "options": [
+            "poète",
+            "banquier",
+            "mécanicien",
+            "boulanger"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "autobiographie",
+          "options": [
+            "autobiographie",
+            "encyclopédie",
+            "dictionnaire",
+            "manuel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "éloquent",
+          "options": [
+            "éloquent",
+            "muet",
+            "confus",
+            "illogique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "éloquence",
+          "options": [
+            "éloquence",
+            "bégaiement",
+            "silence",
+            "hésitation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "splendeur",
+          "options": [
+            "splendeur",
+            "laideur",
+            "pauvreté",
+            "modestie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "resplendissant",
+          "options": [
+            "resplendissant",
+            "sombre",
+            "délabré",
+            "terne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "confidentialité",
+          "options": [
+            "confidentialité",
+            "publicité",
+            "transparence",
+            "divulgation"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les secrets de la bibliothèque",
+      "title_fa": "اسرار کتابخانه",
+      "inspiration": "The Da Vinci Code / Le Nom de la Rose",
+      "text": "À peine eut-il franchi le seuil de la bibliothèque que l'inspecteur fut saisi par la {{BLANK_13}} des lieux. Les lustres en {{BLANK_3}} de Bohême diffusaient une lumière tamisée sur les rayonnages. Au centre, un {{BLANK_9}} réputé pour ses vers sombres l'attendait. Cet homme, dont l'{{BLANK_10}} avait récemment scandalisé la haute société, affichait un sourire {{BLANK_4}}. « Vous cherchez un {{BLANK_7}} ? » demanda-t-il avec une {{BLANK_12}} désarmante. Son silence subsequent fut plus {{BLANK_11}} que mille aveux. L'inspecteur, tel un limier, ignora la provocation et examina le bureau. Une {{BLANK_5}} digitale maculait un verre. L'ordinateur présentait une {{BLANK_8}} réseau altérée, protégée par un {{BLANK_6}} militaire. Derrière une {{BLANK_2}} du XVIe siècle, il découvrit un parchemin orné d'une {{BLANK_1}} gothique. « La {{BLANK_15}} de cette affaire est absolue, » murmura-t-il, tandis que le suspect, jadis {{BLANK_14}} d'arrogance, semblait soudain se flétrir.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "calligraphie",
+          "options": [
+            "calligraphie",
+            "imprimerie",
+            "lithographie",
+            "sténographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fresque",
+          "options": [
+            "fresque",
+            "tapisserie",
+            "tenture",
+            "mosaïque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "cristal",
+          "options": [
+            "cristal",
+            "verre",
+            "plastique",
+            "acier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "factice",
+          "options": [
+            "factice",
+            "sincère",
+            "spontané",
+            "naturel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "empreinte",
+          "options": [
+            "empreinte",
+            "rayure",
+            "éclaboussure",
+            "poussière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "cryptage",
+          "options": [
+            "cryptage",
+            "stockage",
+            "archivage",
+            "classement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "artefact",
+          "options": [
+            "artefact",
+            "bibelot",
+            "camelote",
+            "babiole"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "configuration",
+          "options": [
+            "configuration",
+            "apparence",
+            "esthétique",
+            "décoration"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "poète",
+          "options": [
+            "poète",
+            "comptable",
+            "artisan",
+            "négociant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "autobiographie",
+          "options": [
+            "autobiographie",
+            "biographie",
+            "roman",
+            "nouvelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "éloquent",
+          "options": [
+            "éloquent",
+            "obscur",
+            "ambigu",
+            "évasif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "éloquence",
+          "options": [
+            "éloquence",
+            "mutisme",
+            "bredouillement",
+            "aphasie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "splendeur",
+          "options": [
+            "splendeur",
+            "vétusté",
+            "exiguïté",
+            "austérité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "resplendissant",
+          "options": [
+            "resplendissant",
+            "décati",
+            "effacé",
+            "sombre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "confidentialité",
+          "options": [
+            "confidentialité",
+            "divulgation",
+            "publicité",
+            "exposition"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Atelier d'Art et Documents Confidentiels",
+    "title_fa": "آزمون: کارگاه هنر و اسناد محرمانه",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art d'écrire de manière belle et stylisée à la main est la ____.",
+        "options": [
+          "calligraphie",
+          "typographie",
+          "lithographie",
+          "sténographie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر زیبانویسی با دست = calligraphie."
+      },
+      {
+        "type": "mcq",
+        "question": "Une peinture réalisée directement sur un mur ou un plafond est une ____.",
+        "options": [
+          "fresque",
+          "toile",
+          "esquisse",
+          "aquarelle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نقاشی دیواری = fresque."
+      },
+      {
+        "type": "mcq",
+        "question": "Un matériau transparent et brillant, souvent utilisé pour les lustres de luxe, est le ____.",
+        "options": [
+          "cristal",
+          "plastique",
+          "verre ordinaire",
+          "plexiglas"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده شفاف و درخشان برای لوسترهای لوکس = cristal."
+      },
+      {
+        "type": "mcq",
+        "question": "Une attitude ou une émotion qui n'est pas sincère est qualifiée de ____.",
+        "options": [
+          "factice",
+          "authentique",
+          "spontanée",
+          "véritable"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مصنوعی یا غیرواقعی = factice."
+      },
+      {
+        "type": "mcq",
+        "question": "La marque laissée par un doigt sur une surface est une ____.",
+        "options": [
+          "empreinte",
+          "rayure",
+          "tache",
+          "fissure"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اثر انگشت = empreinte."
+      },
+      {
+        "type": "mcq",
+        "question": "Le processus de transformation d'informations en code secret est le ____.",
+        "options": [
+          "cryptage",
+          "stockage",
+          "archivage",
+          "classement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رمزگذاری اطلاعات = cryptage."
+      },
+      {
+        "type": "mcq",
+        "question": "Un objet ancien fabriqué par l'homme, ayant une valeur historique, est un ____.",
+        "options": [
+          "artefact",
+          "déchet",
+          "camelote",
+          "babiole"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مصنوعه باستانی یا تاریخی = artefact."
+      },
+      {
+        "type": "mcq",
+        "question": "L'arrangement spécifique des éléments d'un système informatique est sa ____.",
+        "options": [
+          "configuration",
+          "apparence",
+          "esthétique",
+          "décoration"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیکربندی یا تنظیمات سیستم = configuration."
+      },
+      {
+        "type": "mcq",
+        "question": "Un écrivain qui compose des poèmes est un ____.",
+        "options": [
+          "poète",
+          "romancier",
+          "dramaturge",
+          "essayiste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سراینده شعر = poète."
+      },
+      {
+        "type": "mcq",
+        "question": "Le récit de sa propre vie écrit par soi-même est une ____.",
+        "options": [
+          "autobiographie",
+          "biographie",
+          "fiction",
+          "chronique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "داستان زندگی خود شخص = autobiographie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'obligation de garder un secret, surtout dans le journalisme ou la médecine, est la ____.",
+        "options": [
+          "confidentialité",
+          "divulgation",
+          "publicité",
+          "transparence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محرمانگی = confidentialité."
+      },
+      {
+        "type": "mcq",
+        "question": "La capacité à s'exprimer avec fluidité et persuasion est l'____.",
+        "options": [
+          "éloquence",
+          "mutisme",
+          "bredouillement",
+          "aphasie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فصاحت و قدرت سخنوری = éloquence."
+      },
+      {
+        "type": "binary",
+        "question": "Le terme \"resplendissant\" décrit quelque chose de sombre et sans éclat.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، resplendissant به معنای درخشان و تابان است."
+      },
+      {
+        "type": "binary",
+        "question": "Un argument \"éloquent\" est un argument clair, convaincant et expressif.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، éloquent به معنای گویا و رسا است."
+      },
+      {
+        "type": "binary",
+        "question": "La \"splendeur\" fait référence à la pauvreté ou à la simplicité extrême.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، splendeur به معنای شکوه و جلال است."
+      }
+    ]
+  }
+}
