@@ -1,0 +1,643 @@
+{
+  "id": "ecole_etudes_apprentissage",
+  "level": "A1",
+  "theme": "École, Études et Apprentissage",
+  "theme_fa": "مدرسه، تحصیل و یادگیری",
+  "icon": "🎒",
+  "inspiration": "Le Petit Nicolas / Extra French",
+  "words": [
+    {
+      "fr": "l'anglais",
+      "fa": "زبان انگلیسی",
+      "emoji": "🇬🇧",
+      "difficulty": 1,
+      "ex": "J'apprends l'anglais à l'école.",
+      "ex_fa": "من در مدرسه زبان انگلیسی یاد می‌گیرم."
+    },
+    {
+      "fr": "anglais",
+      "fa": "انگلیسی (صفت)",
+      "emoji": "🇬🇧",
+      "difficulty": 1,
+      "ex": "Je regarde un film anglais.",
+      "ex_fa": "من یک فیلم انگلیسی تماشا می‌کنم."
+    },
+    {
+      "fr": "l'appli",
+      "fa": "اپلیکیشن",
+      "emoji": "📱",
+      "difficulty": 2,
+      "ex": "Je télécharge une nouvelle appli.",
+      "ex_fa": "من یک اپلیکیشن جدید دانلود می‌کنم."
+    },
+    {
+      "fr": "apprendre",
+      "fa": "یاد گرفتن",
+      "emoji": "📚",
+      "difficulty": 1,
+      "ex": "J'aime apprendre le français.",
+      "ex_fa": "من دوست دارم فرانسوی یاد بگیرم."
+    },
+    {
+      "fr": "l'art",
+      "fa": "هنر",
+      "emoji": "🎨",
+      "difficulty": 2,
+      "ex": "Nous visitons un musée d'art.",
+      "ex_fa": "ما از یک موزه هنر بازدید می‌کنیم."
+    },
+    {
+      "fr": "le cahier",
+      "fa": "دفتر",
+      "emoji": "📓",
+      "difficulty": 1,
+      "ex": "J'écris mes leçons dans le cahier.",
+      "ex_fa": "من درس‌هایم را در دفتر می‌نویسم."
+    },
+    {
+      "fr": "le chinois",
+      "fa": "زبان چینی",
+      "emoji": "🇨🇳",
+      "difficulty": 2,
+      "ex": "Le chinois est une langue difficile.",
+      "ex_fa": "چینی زبان دشواری است."
+    },
+    {
+      "fr": "chinois",
+      "fa": "چینی (صفت)",
+      "emoji": "🇨🇳",
+      "difficulty": 2,
+      "ex": "J'aime la nourriture chinoise.",
+      "ex_fa": "من غذای چینی دوست دارم."
+    },
+    {
+      "fr": "la classe",
+      "fa": "کلاس",
+      "emoji": "🏫",
+      "difficulty": 1,
+      "ex": "Les élèves entrent dans la classe.",
+      "ex_fa": "دانش‌آموزان وارد کلاس می‌شوند."
+    },
+    {
+      "fr": "le collège",
+      "fa": "مدرسه راهنمایی",
+      "emoji": "🏫",
+      "difficulty": 2,
+      "ex": "Mon frère va au collège.",
+      "ex_fa": "برادرم به مدرسه راهنمایی می‌رود."
+    },
+    {
+      "fr": "commencer",
+      "fa": "شروع کردن",
+      "emoji": "▶️",
+      "difficulty": 2,
+      "ex": "Le cours commence à huit heures.",
+      "ex_fa": "کلاس ساعت هشت شروع می‌شود."
+    },
+    {
+      "fr": "commenter",
+      "fa": "نظر دادن",
+      "emoji": "💬",
+      "difficulty": 3,
+      "ex": "Je vais commenter cette photo.",
+      "ex_fa": "من قصد دارم زیر این عکس نظر بدهم."
+    },
+    {
+      "fr": "comprendre",
+      "fa": "فهمیدن",
+      "emoji": "💡",
+      "difficulty": 2,
+      "ex": "Désolé, je ne comprends pas.",
+      "ex_fa": "ببخشید، من متوجه نمی‌شوم."
+    },
+    {
+      "fr": "le contrôle",
+      "fa": "امتحان / آزمون",
+      "emoji": "📝",
+      "difficulty": 2,
+      "ex": "Nous avons un contrôle de maths demain.",
+      "ex_fa": "ما فردا امتحان ریاضی داریم."
+    },
+    {
+      "fr": "le cours",
+      "fa": "درس / کلاس",
+      "emoji": "📖",
+      "difficulty": 1,
+      "ex": "Je suis un cours de musique.",
+      "ex_fa": "من در یک کلاس موسیقی شرکت می‌کنم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une journée à l'école",
+      "title_fa": "یک روز در مدرسه",
+      "text": "Aujourd'hui, je vais au ____ (10). Le premier ____ (15) ____ (11) à 8h00. C'est un ____ (1) de langue. J'adore ____ (4) l'____ (1). J'ouvre mon ____ (6) et j'écris. Le professeur parle ____ (2), mais parfois je ne ____ (13) pas tout. À 10h, nous avons un ____ (14) de grammaire. C'est difficile ! À midi, je mange avec mes amis. L'après-midi, c'est le ____ (5). Nous dessinons et nous créons. Ce soir, je vais télécharger une ____ (3) pour ____ (12) mes devoirs. J'aime beaucoup la ____ (9) et mes camarades.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cours",
+          "options": [
+            "cours",
+            "repas",
+            "lit",
+            "jeu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "commence",
+          "options": [
+            "commence",
+            "finit",
+            "dort",
+            "mange"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "anglais",
+          "options": [
+            "anglais",
+            "français",
+            "espagnol",
+            "italien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "apprendre",
+          "options": [
+            "apprendre",
+            "oublier",
+            "perdre",
+            "casser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "cahier",
+          "options": [
+            "cahier",
+            "stylo",
+            "gomme",
+            "règle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "comprends",
+          "options": [
+            "comprends",
+            "mange",
+            "dors",
+            "pars"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "contrôle",
+          "options": [
+            "contrôle",
+            "jeu",
+            "fête",
+            "voyage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "art",
+          "options": [
+            "art",
+            "sport",
+            "musique",
+            "danse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "appli",
+          "options": [
+            "appli",
+            "livre",
+            "journal",
+            "lettre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "commenter",
+          "options": [
+            "commenter",
+            "effacer",
+            "détruire",
+            "oublier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "classe",
+          "options": [
+            "classe",
+            "rue",
+            "magasin",
+            "hôpital"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "collège",
+          "options": [
+            "collège",
+            "université",
+            "hôpital",
+            "aéroport"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "chinois",
+          "options": [
+            "chinois",
+            "anglais",
+            "français",
+            "arabe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "chinoise",
+          "options": [
+            "chinoise",
+            "anglaise",
+            "française",
+            "italienne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "cours",
+          "options": [
+            "cours",
+            "repas",
+            "lit",
+            "jeu"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le défi des langues",
+      "title_fa": "چالش زبان‌ها",
+      "inspiration": "Le Petit Nicolas",
+      "text": "Lucas est un élève de ____ (1). Ce matin, il entre dans la ____ (2) avec son ____ (3) neuf. Le ____ (4) de langues ____ (5) à 9h00. Aujourd'hui, ils étudient le ____ (6). Lucas trouve cette langue très difficile. Il n'____ (7) pas les règles de grammaire. Le professeur parle trop vite. Lucas décide de télécharger une ____ (8) sur son téléphone pour l'____ (9). Il ____ (10) aussi ses exercices en ligne. L'après-midi, c'est le ____ (11) d'____ (12). Lucas adore dessiner. Il fait un beau tableau ____ (13). Le soir, il révise pour le ____ (14) de demain. Il espère avoir une bonne note.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "collège",
+          "options": [
+            "collège",
+            "hôpital",
+            "aéroport",
+            "gare"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "classe",
+          "options": [
+            "classe",
+            "rue",
+            "magasin",
+            "hôpital"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "cahier",
+          "options": [
+            "cahier",
+            "stylo",
+            "gomme",
+            "règle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cours",
+          "options": [
+            "cours",
+            "repas",
+            "lit",
+            "jeu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "commence",
+          "options": [
+            "commence",
+            "finit",
+            "dort",
+            "mange"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "chinois",
+          "options": [
+            "chinois",
+            "anglais",
+            "français",
+            "arabe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "comprend",
+          "options": [
+            "comprend",
+            "mange",
+            "dort",
+            "part"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "appli",
+          "options": [
+            "appli",
+            "livre",
+            "journal",
+            "lettre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "apprendre",
+          "options": [
+            "apprendre",
+            "oublier",
+            "perdre",
+            "casser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "commente",
+          "options": [
+            "commente",
+            "efface",
+            "détruit",
+            "oublie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "cours",
+          "options": [
+            "cours",
+            "repas",
+            "lit",
+            "jeu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "art",
+          "options": [
+            "art",
+            "sport",
+            "musique",
+            "danse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "chinois",
+          "options": [
+            "chinois",
+            "anglais",
+            "français",
+            "arabe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "contrôle",
+          "options": [
+            "contrôle",
+            "jeu",
+            "fête",
+            "voyage"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : École, Études et Apprentissage",
+    "title_fa": "آزمون: مدرسه، تحصیل و یادگیری",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'endroit où les élèves vont pour étudier est l'____ ou le ____.",
+        "options": [
+          "école / collège",
+          "hôpital / gare",
+          "aéroport / gare",
+          "magasin / rue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکان تحصیل مدرسه (école) یا راهنمایی (collège) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour écrire tes notes, tu utilises un ____.",
+        "options": [
+          "cahier",
+          "stylo",
+          "gomme",
+          "règle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای نوشتن یادداشت‌ها از دفتر (cahier) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le verbe qui signifie « یاد گرفتن » est ____.",
+        "options": [
+          "apprendre",
+          "comprendre",
+          "commenter",
+          "commencer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Apprendre به معنای یاد گرفتن است."
+      },
+      {
+        "type": "mcq",
+        "question": "Si tu ne sais pas quelque chose, tu dis : Je ne ____ pas.",
+        "options": [
+          "comprends",
+          "mange",
+          "dors",
+          "pars"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای بیان نفهمیدن از Je ne comprends pas استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Un examen à l'école s'appelle un ____.",
+        "options": [
+          "contrôle",
+          "jeu",
+          "fête",
+          "voyage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "امتحان یا آزمون مدرسه‌ای contrôle نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ de maths commence à 8h00.",
+        "options": [
+          "cours",
+          "repas",
+          "lit",
+          "jeu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلاس یا درس ریاضی cours نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour donner ton opinion sur une photo sur Internet, tu vas la ____.",
+        "options": [
+          "commenter",
+          "effacer",
+          "détruire",
+          "oublier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای نظر دادن زیر عکس از commenter استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Un programme sur ton téléphone pour apprendre s'appelle une ____.",
+        "options": [
+          "appli",
+          "livre",
+          "journal",
+          "lettre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برنامه تلفن همراه appli (مخفف application) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "La matière où l'on dessine et peint est l'____.",
+        "options": [
+          "art",
+          "sport",
+          "musique",
+          "danse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مادری که در آن نقاشی می‌کشند art (هنر) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le contraire de « commencer » est ____.",
+        "options": [
+          "finir",
+          "manger",
+          "dormir",
+          "partir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متضاد شروع کردن (commencer)، تمام کردن (finir) است."
+      },
+      {
+        "type": "binary",
+        "question": "« L'anglais » et « anglais » sont la même chose (nom et adjectif).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، یکی اسم زبان و دیگری صفت است، اما ریشه یکسانی دارند."
+      },
+      {
+        "type": "binary",
+        "question": "Le « chinois » est une langue facile à apprendre pour tout le monde.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، چینی معمولاً به عنوان یک زبان دشوار شناخته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Un « collège » en France est pour les enfants de 11 à 15 ans environ.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، collège معادل مدرسه راهنمایی یا متوسطه اول است."
+      },
+      {
+        "type": "binary",
+        "question": "« Comprendre » signifie « parler très vite ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، comprendre به معنای فهمیدن است."
+      },
+      {
+        "type": "binary",
+        "question": "On écrit dans un « cahier » avec un stylo ou un crayon.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، در دفتر با خودکار یا مداد می‌نویسند."
+      }
+    ]
+  }
+}
