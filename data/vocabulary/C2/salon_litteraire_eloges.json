@@ -1,0 +1,504 @@
+{
+  "id": "salon_litteraire_eloges",
+  "level": "C2",
+  "theme": "Salon Littéraire et Éloges",
+  "theme_fa": "محفل ادبی و ستایش نوابغ",
+  "icon": "🎭",
+  "inspiration": "Le Portrait de Dorian Gray / Les Misérables",
+  "words": [
+    {
+      "fr": "le justicier",
+      "fa": "دادگر / انتقام‌جو",
+      "emoji": "⚖️",
+      "difficulty": 4,
+      "ex": "Ce justicier masqué opère en dehors de la loi pour protéger les faibles.",
+      "ex_fa": "این دادگر نقاب‌دار خارج از چارچوب قانون برای محافظت از ضعیفان عمل می‌کند."
+    },
+    {
+      "fr": "la marionnette",
+      "fa": "عروسک خیمه‌شب‌بازی / فرد بی‌اراده",
+      "emoji": "🎪",
+      "difficulty": 4,
+      "ex": "Le ministre n'est qu'une marionnette entre les mains des lobbyistes.",
+      "ex_fa": "وزیر تنها یک عروسک خیمه‌شب‌بازی در دستان لابی‌گرها است."
+    },
+    {
+      "fr": "le prodige",
+      "fa": "نابغه / اعجوبه",
+      "emoji": "🌟",
+      "difficulty": 3,
+      "ex": "Ce jeune violoniste est un véritable prodige de la musique classique.",
+      "ex_fa": "این نوازنده جوان ویولن، یک اعجوبه واقعی در موسیقی کلاسیک است."
+    },
+    {
+      "fr": "la prouesse",
+      "fa": "شاهکار / دلاوری",
+      "emoji": "🏆",
+      "difficulty": 4,
+      "ex": "Traverser l'océan Atlantique à la rame constitue une prouesse physique remarquable.",
+      "ex_fa": "عبور از اقیانوس اطلس با قایق پارویی، یک دلاوری فیزیکی قابل توجه است."
+    },
+    {
+      "fr": "le summum",
+      "fa": "اوج / نهایت",
+      "emoji": "⛰️",
+      "difficulty": 4,
+      "ex": "Pour les critiques, ce film représente le summum du cinéma d'auteur.",
+      "ex_fa": "به عقیده منتقدان، این فیلم اوج سینمای مولف است."
+    },
+    {
+      "fr": "la supériorité",
+      "fa": "برتری",
+      "emoji": "👑",
+      "difficulty": 3,
+      "ex": "Il affiche constamment un air de supériorité qui agace son entourage.",
+      "ex_fa": "او دائماً حالتی از برتری به خود می‌گیرد که اطرافیانش را آزار می‌دهد."
+    },
+    {
+      "fr": "inestimable",
+      "fa": "بها ندادنی / بی‌ارزش‌نشدنی",
+      "emoji": "💎",
+      "difficulty": 4,
+      "ex": "Les conseils de ce mentor ont été d'une valeur inestimable pour ma carrière.",
+      "ex_fa": "نصایح این استاد برای حرفه من ارزشی بها ندادنی داشت."
+    },
+    {
+      "fr": "inébranlable",
+      "fa": "تزلزل‌ناپذیر / استوار",
+      "emoji": "🪨",
+      "difficulty": 5,
+      "ex": "Malgré les calomnies, elle a conservé une confiance inébranlable en ses amis.",
+      "ex_fa": "علی‌رغم تهمت‌ها، او اعتمادی تزلزل‌ناپذیر به دوستانش حفظ کرد."
+    },
+    {
+      "fr": "inéluctable",
+      "fa": "اجتناب‌ناپذیر / حتمی",
+      "emoji": "⏳",
+      "difficulty": 5,
+      "ex": "Le déclin de cet empire semblait une conséquence inéluctable de son arrogance.",
+      "ex_fa": "زوال این امپراتوری پیامدی اجتناب‌ناپذیر از غرور آن به نظر می‌رسید."
+    },
+    {
+      "fr": "innombrable",
+      "fa": "بی‌شمار / غیرقابل شمارش",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "L'univers contient des innombrables galaxies encore inexplorées.",
+      "ex_fa": "کیهان دارای کهکشان‌های بی‌شمار و هنوز اکتشاف‌نشده است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le génie du salon",
+      "title_fa": "نابغه محفل",
+      "text": "Dans ce salon littéraire, tout le monde admire un jeune {{BLANK_3}} de la peinture. Sa dernière toile est une véritable {{BLANK_4}}. Pour les critiques, c'est le {{BLANK_5}} de l'art moderne. Pourtant, certains murmurent qu'il n'est qu'une {{BLANK_2}} contrôlée par son mécène. Ce dernier affiche une {{BLANK_6}} arrogante. Un {{BLANK_1}} masqué tente de révéler la vérité. Il sait que la valeur de cet artiste est {{BLANK_7}}. Mais sa résolution reste {{BLANK_8}}. Il sait que la chute est {{BLANK_9}}. Les obstacles sont {{BLANK_10}}, mais il ne renoncera pas.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "justicier",
+          "options": [
+            "justicier",
+            "bourreau",
+            "complice",
+            "spectateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "marionnette",
+          "options": [
+            "marionnette",
+            "maître",
+            "génie",
+            "leader"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "prodige",
+          "options": [
+            "prodige",
+            "amateur",
+            "novice",
+            "imitateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "prouesse",
+          "options": [
+            "prouesse",
+            "erreur",
+            "faute",
+            "méprise"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "summum",
+          "options": [
+            "summum",
+            "début",
+            "fin",
+            "base"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "supériorité",
+          "options": [
+            "supériorité",
+            "infériorité",
+            "modestie",
+            "humilité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "inestimable",
+          "options": [
+            "inestimable",
+            "négligeable",
+            "dérisoire",
+            "banale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "inébranlable",
+          "options": [
+            "inébranlable",
+            "fragile",
+            "douteuse",
+            "changeante"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "inéluctable",
+          "options": [
+            "inéluctable",
+            "évitable",
+            "improbable",
+            "douteuse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "innombrables",
+          "options": [
+            "innombrables",
+            "rares",
+            "uniques",
+            "limités"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les masques de la gloire",
+      "title_fa": "نقاب‌های شکوه",
+      "inspiration": "Le Portrait de Dorian Gray / Les Misérables",
+      "text": "À peine les lourdes portes du salon eurent-elles été closes que les murmures s'éteignirent. On y encensait un {{BLANK_3}} des lettres, dont la dernière {{BLANK_4}} stylistique avait conquis la haute société. Pour les dandys, cet ouvrage incarnait le {{BLANK_5}} du raffinement. Nonobstant les acclamations, une vérité sordide se dissimulait : le jeune auteur n'était qu'une {{BLANK_2}} docile, manipulée par un éditeur affichant une {{BLANK_6}} méprisante. Seul un {{BLANK_1}} solitaire, œuvrant dans l'ombre, connaissait l'ampleur du scandale. La valeur artistique du jeune homme était certes {{BLANK_7}}, mais la détermination du justicier demeurait {{BLANK_8}}. Il savait que la révélation de cette supercherie était {{BLANK_9}}, malgré les {{BLANK_10}} obstacles dressés par les puissants.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "justicier",
+          "options": [
+            "justicier",
+            "mécréant",
+            "lâche",
+            "bourreau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "marionnette",
+          "options": [
+            "marionnette",
+            "souverain",
+            "architecte",
+            "visionnaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "prodige",
+          "options": [
+            "prodige",
+            "plagiaire",
+            "charlatan",
+            "ignorant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "prouesse",
+          "options": [
+            "prouesse",
+            "bévue",
+            "faillite",
+            "méfait"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "summum",
+          "options": [
+            "summum",
+            "nadir",
+            "antichambre",
+            "vestige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "supériorité",
+          "options": [
+            "supériorité",
+            "infériorité",
+            "déférence",
+            "soumission"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "inestimable",
+          "options": [
+            "inestimable",
+            "futile",
+            "insignifiante",
+            "nulle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "inébranlable",
+          "options": [
+            "inébranlable",
+            "vacillante",
+            "hésitante",
+            "éphémère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "inéluctable",
+          "options": [
+            "inéluctable",
+            "contingente",
+            "évitable",
+            "aléatoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "innombrables",
+          "options": [
+            "innombrables",
+            "rares",
+            "singuliers",
+            "négligeables"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Salon Littéraire et Éloges",
+    "title_fa": "آزمون: محفل ادبی و ستایش نوابغ",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Une personne qui rend la justice en dehors des cadres légaux, souvent de manière héroïque, est un ____.",
+        "options": [
+          "justicier",
+          "bourreau",
+          "complice",
+          "témoin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کسی که خارج از چارچوب قانون عدالت را اجرا می‌کند = justicier."
+      },
+      {
+        "type": "mcq",
+        "question": "Un individu qui agit sans volonté propre, manipulé par autrui, est comparé à une ____.",
+        "options": [
+          "marionnette",
+          "souveraine",
+          "architecte",
+          "visionnaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که بدون اراده خود و تحت کنترل دیگران عمل می‌کند = marionnette."
+      },
+      {
+        "type": "mcq",
+        "question": "Un enfant ou un jeune qui démontre des capacités exceptionnelles et précoces est un ____.",
+        "options": [
+          "prodige",
+          "amateur",
+          "novice",
+          "imitateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کودک یا جوانی با توانایی‌های استثنایی و زودرس = prodige."
+      },
+      {
+        "type": "mcq",
+        "question": "Un exploit remarquable, souvent physique ou intellectuel, qui suscite l'admiration est une ____.",
+        "options": [
+          "prouesse",
+          "bévue",
+          "faillite",
+          "méfait"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستاورد یا کار خارق‌العاده که تحسین برمی‌انگیزد = prouesse."
+      },
+      {
+        "type": "mcq",
+        "question": "Le point le plus élevé, le degré maximal de perfection ou de qualité, est le ____.",
+        "options": [
+          "summum",
+          "nadir",
+          "antichambre",
+          "vestige"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بالاترین نقطه یا اوج کمال = summum."
+      },
+      {
+        "type": "mcq",
+        "question": "L'attitude de celui qui se croit meilleur que les autres et le montre ostensiblement est la ____.",
+        "options": [
+          "supériorité",
+          "infériorité",
+          "déférence",
+          "modestie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حالت یا نگرش کسی که خود را برتر می‌داند = supériorité."
+      },
+      {
+        "type": "mcq",
+        "question": "Une valeur si grande qu'il est impossible de la chiffrer ou de l'évaluer est dite ____.",
+        "options": [
+          "inestimable",
+          "futile",
+          "insignifiante",
+          "dérisoire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ارزشی که نمی‌توان آن را قیمت‌گذاری یا ارزیابی کرد = inestimable."
+      },
+      {
+        "type": "mcq",
+        "question": "Une conviction ou une foi qui ne peut être affaiblie par aucune épreuve est ____.",
+        "options": [
+          "inébranlable",
+          "vacillante",
+          "hésitante",
+          "éphémère"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "باور یا ایمانی که با هیچ آزمایشی تضعیف نمی‌شود = inébranlable."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce qui ne peut être évité, quel que soit l'effort fourni pour y échapper, est ____.",
+        "options": [
+          "inéluctable",
+          "contingent",
+          "évitable",
+          "aléatoire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چیزی که بدون توجه به تلاش برای فرار از آن، غیرقابل اجتناب است = inéluctable."
+      },
+      {
+        "type": "mcq",
+        "question": "Une quantité si vaste qu'il est impossible de la compter ou de la nommer est ____.",
+        "options": [
+          "innombrable",
+          "rare",
+          "singulière",
+          "négligeable"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مقداری آنقدر زیاد که نمی‌توان آن را شمرد یا نام برد = innombrable."
+      },
+      {
+        "type": "binary",
+        "question": "Le terme \"justicier\" a toujours une connotation strictement légale et officielle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، justicier معمولاً به کسی اشاره دارد که خارج از چارچوب رسمی قانون عمل می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Une \"prouesse\" désigne généralement une action banale et sans effort.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، prouesse به کاری خارق‌العاده و نیازمند تلاش یا مهارت اشاره دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Quelque chose d'\"inestimable\" a une valeur financière très faible.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، inestimable به معنای بسیار باارزش و غیرقابل قیمت‌گذاری است."
+      },
+      {
+        "type": "binary",
+        "question": "Le \"summum\" représente le point le plus bas ou le plus médiocre d'une échelle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، summum به اوج یا بالاترین نقطه اشاره دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Un événement \"inéluctable\" est celui que l'on peut facilement éviter avec un peu de planification.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، inéluctable به معنای حتمی و غیرقابل اجتناب است."
+      }
+    ]
+  }
+}
