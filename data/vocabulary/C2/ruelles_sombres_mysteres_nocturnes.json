@@ -1,0 +1,378 @@
+{
+  "id": "ruelles_sombres_mysteres_nocturnes",
+  "level": "C2",
+  "theme": "Ruelles Sombres et Mystères Nocturnes",
+  "theme_fa": "کوچه‌های تاریک و اسرار شبانه",
+  "icon": "🌑",
+  "inspiration": "Les Misérables (égouts de Paris) / Sherlock Holmes",
+  "words": [
+    {
+      "fr": "l'obscurité",
+      "fa": "تاریکی",
+      "emoji": "🌑",
+      "difficulty": 3,
+      "ex": "L'obscurité totale régnait dans la cave abandonnée.",
+      "ex_fa": "تاریکی مطلق در زیرزمین متروکه حکم‌فرما بود."
+    },
+    {
+      "fr": "la pénombre",
+      "fa": "نیم‌سایه / گرگ‌ومیش",
+      "emoji": "🌘",
+      "difficulty": 4,
+      "ex": "Une silhouette inquiétante se dessinait lentement dans la pénombre.",
+      "ex_fa": "یک سایه نگران‌کننده به آرامی در نیم‌سایه شکل می‌گرفت."
+    },
+    {
+      "fr": "l'abîme",
+      "fa": "ورطه / پرتگاه عمیق",
+      "emoji": "🕳️",
+      "difficulty": 5,
+      "ex": "Il a regardé au fond de l'abîme avec un vertige intense.",
+      "ex_fa": "او با سرگیجه‌ای شدید به ته پرتگاه نگاه کرد."
+    },
+    {
+      "fr": "la noirceur",
+      "fa": "تیرگی / شرارت ذاتی",
+      "emoji": "🖤",
+      "difficulty": 4,
+      "ex": "La noirceur de son âme transparaît dans chacun de ses écrits.",
+      "ex_fa": "تیرگی و شرارت روح او در تک‌تک نوشته‌هایش نمایان است."
+    },
+    {
+      "fr": "funeste",
+      "fa": "شوم / مرگبار",
+      "emoji": "💀",
+      "difficulty": 5,
+      "ex": "Cette décision hâtive a eu des conséquences funestes pour l'entreprise.",
+      "ex_fa": "این تصمیم شتاب‌زده پیامدهای شومی برای شرکت داشت."
+    },
+    {
+      "fr": "le dédale",
+      "fa": "هزارتو / پیچیدگی گیج‌کننده",
+      "emoji": "🌀",
+      "difficulty": 5,
+      "ex": "Il s'est perdu dans le dédale des ruelles de la vieille ville médiévale.",
+      "ex_fa": "او در هزارتوی کوچه‌های شهر قدیمی قرون وسطایی گم شد."
+    },
+    {
+      "fr": "la pénétration",
+      "fa": "نفوذ / ورود",
+      "emoji": "🚪",
+      "difficulty": 4,
+      "ex": "La pénétration de l'eau dans les fondations a fragilisé tout le bâtiment.",
+      "ex_fa": "نفوذ آب به پی‌ها، کل ساختمان را سست کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La poursuite nocturne",
+      "title_fa": "تعقیب شبانه",
+      "text": "Le détective marche dans l'{{BLANK_1}} totale. Soudain, il voit une forme dans la {{BLANK_2}}. Il sait que cet endroit a une {{BLANK_4}} cachée. C'est un lieu {{BLANK_5}} pour les imprudents. Il entre dans le {{BLANK_6}} des petites rues. Il fait attention à la {{BLANK_7}} de l'humidité dans les murs. Au bord d'un {{BLANK_3}}, il comprend le danger.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "obscurité",
+          "options": [
+            "obscurité",
+            "lumière",
+            "clarté",
+            "aube"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pénombre",
+          "options": [
+            "pénombre",
+            "midi",
+            "éclat",
+            "soleil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "abîme",
+          "options": [
+            "abîme",
+            "sommet",
+            "colline",
+            "plateau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "noirceur",
+          "options": [
+            "noirceur",
+            "lumière",
+            "joie",
+            "pureté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "funeste",
+          "options": [
+            "funeste",
+            "bénéfique",
+            "chanceux",
+            "heureux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "dédale",
+          "options": [
+            "dédale",
+            "ligne droite",
+            "autoroute",
+            "chemin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pénétration",
+          "options": [
+            "pénétration",
+            "sortie",
+            "évaporation",
+            "sécheresse"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Descente aux enfers",
+      "title_fa": "سفر به اعماق جهنم",
+      "inspiration": "Les Misérables (égouts de Paris) / Sherlock Holmes",
+      "text": "Il s'enfonça résolument dans le {{BLANK_6}} des ruelles, fuyant la lumière crue des boulevards. L'{{BLANK_1}} absolue l'enveloppait bientôt, remplacée par une {{BLANK_2}} inquiétante où dansaient des ombres difformes. Il sentait la {{BLANK_4}} de cet endroit, un mal {{BLANK_5}} qui rongeait les âmes des perdus. Au bord de l'{{BLANK_3}}, il comprit que toute {{BLANK_7}} dans ces bas-fonds signifiait la perte irrémédiable de soi.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "obscurité",
+          "options": [
+            "obscurité",
+            "lumière",
+            "clarté",
+            "aube"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pénombre",
+          "options": [
+            "pénombre",
+            "midi",
+            "éclat",
+            "soleil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "abîme",
+          "options": [
+            "abîme",
+            "sommet",
+            "colline",
+            "plateau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "noirceur",
+          "options": [
+            "noirceur",
+            "lumière",
+            "joie",
+            "pureté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "funeste",
+          "options": [
+            "funeste",
+            "bénéfique",
+            "chanceux",
+            "heureux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "dédale",
+          "options": [
+            "dédale",
+            "ligne droite",
+            "autoroute",
+            "chemin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pénétration",
+          "options": [
+            "pénétration",
+            "sortie",
+            "évaporation",
+            "sécheresse"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Ruelles Sombres et Mystères Nocturnes",
+    "title_fa": "آزمون: کوچه‌های تاریک و اسرار شبانه",
+    "displayCount": 12,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'absence totale de lumière est désignée par le terme d'____.",
+        "options": [
+          "obscurité",
+          "clarté",
+          "aube",
+          "lumière"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فقدان کامل نور = obscurité."
+      },
+      {
+        "type": "mcq",
+        "question": "Une lumière très faible, créant des demi-teintes, souvent au crépuscule, est la ____.",
+        "options": [
+          "pénombre",
+          "midi",
+          "éclat",
+          "soleil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نور بسیار کم و نیم‌سایه = pénombre."
+      },
+      {
+        "type": "mcq",
+        "question": "Un gouffre profond et sans fond, souvent utilisé au sens figuré pour le désespoir, est un ____.",
+        "options": [
+          "abîme",
+          "sommet",
+          "colline",
+          "plateau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پرتگاه عمیق یا ورطه = abîme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le caractère sombre, malveillant ou corrompu d'une personne ou d'une situation est sa ____.",
+        "options": [
+          "noirceur",
+          "lumière",
+          "joie",
+          "pureté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تیرگی یا شرارت ذاتی = noirceur."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce qui apporte le malheur, la ruine ou la mort est qualifié de ____.",
+        "options": [
+          "funeste",
+          "bénéfique",
+          "chanceux",
+          "heureux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شوم یا مرگبار = funeste."
+      },
+      {
+        "type": "mcq",
+        "question": "Un ensemble de rues ou de passages si complexes qu'on s'y perd facilement est un ____.",
+        "options": [
+          "dédale",
+          "ligne droite",
+          "autoroute",
+          "chemin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هزارتو یا پیچیدگی گیج‌کننده = dédale."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action d'entrer ou de s'infiltrer dans un espace ou un milieu est la ____.",
+        "options": [
+          "pénétration",
+          "sortie",
+          "évaporation",
+          "sécheresse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل ورود یا نفوذ = pénétration."
+      },
+      {
+        "type": "binary",
+        "question": "Le terme \"funeste\" est utilisé pour décrire un événement très heureux et bénéfique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، funeste به معنای شوم، مرگبار یا فاجعه‌بار است."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"dédale\" est un chemin simple et direct, facile à naviguer.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، dédale به مسیری پیچیده و هزارتو اشاره دارد که گم شدن در آن آسان است."
+      },
+      {
+        "type": "binary",
+        "question": "La \"pénombre\" offre une visibilité parfaite, identique à celle du plein midi.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، pénombre به معنای نور کم و نیم‌سایه است، نه روشنایی کامل."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"abîme\" peut être utilisé au sens figuré pour décrire une chute morale ou financière.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، abîme اغلب به صورت استعاری برای توصیف سقوط یا ناامیدی عمیق استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La \"noirceur\" d'âme fait référence à la bonté et à la générosité d'une personne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، noirceur d'âme به شرارت، بدجنسی یا فساد اخلاقی اشاره دارد."
+      }
+    ]
+  }
+}
