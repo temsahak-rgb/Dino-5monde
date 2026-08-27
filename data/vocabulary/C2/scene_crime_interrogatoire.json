@@ -1,0 +1,714 @@
+{
+  "id": "scene_crime_interrogatoire",
+  "level": "C2",
+  "theme": "Scène de Crime et Interrogatoire",
+  "theme_fa": "صحنه جرم و بازجویی",
+  "icon": "🚓",
+  "inspiration": "True Detective / Les Misérables",
+  "words": [
+    {
+      "fr": "la meurtrière",
+      "fa": "قاتل (زن) / روزنه تیراندازی",
+      "emoji": "🔫",
+      "difficulty": 4,
+      "ex": "La meurtrière a été arrêtée par la police après une longue traque.",
+      "ex_fa": "قاتل زن پس از یک تعقیب طولانی توسط پلیس دستگیر شد."
+    },
+    {
+      "fr": "le légiste",
+      "fa": "پزشک قانونی",
+      "emoji": "🩺",
+      "difficulty": 3,
+      "ex": "Le légiste a déterminé l'heure exacte du décès.",
+      "ex_fa": "پزشک قانونی ساعت دقیق مرگ را تعیین کرد."
+    },
+    {
+      "fr": "la perquisition",
+      "fa": "تفتیش منزل",
+      "emoji": "🔍",
+      "difficulty": 3,
+      "ex": "La police a effectué une perquisition à l'aube chez le suspect.",
+      "ex_fa": "پلیس در سپیده‌دم در منزل مظنون تفتیش انجام داد."
+    },
+    {
+      "fr": "le récidiviste",
+      "fa": "مجرم سابقه‌دار",
+      "emoji": "⛓️",
+      "difficulty": 4,
+      "ex": "Ce récidiviste risque une lourde peine en raison de ses antécédents.",
+      "ex_fa": "این مجرم سابقه‌دار به دلیل سوابقش خطر مجازات سنگینی را تحمل می‌کند."
+    },
+    {
+      "fr": "le limier",
+      "fa": "کارآگاه / سگ شکاری",
+      "emoji": "🐕",
+      "difficulty": 5,
+      "ex": "Ce vieux limier a résolu l'affaire grâce à son instinct.",
+      "ex_fa": "این کارآگاه کهنه‌کار به لطف غریزه‌اش پرونده را حل کرد."
+    },
+    {
+      "fr": "l'effraction",
+      "fa": "ورود به عنف",
+      "emoji": "🚪",
+      "difficulty": 4,
+      "ex": "Les voleurs sont entrés par effraction en forçant la serrure.",
+      "ex_fa": "دزدها با شکستن قفل به عنف وارد شدند."
+    },
+    {
+      "fr": "la salve",
+      "fa": "رگبار گلوله",
+      "emoji": "💥",
+      "difficulty": 4,
+      "ex": "Une salve de coups de feu a retenti dans la ruelle sombre.",
+      "ex_fa": "رگباری از گلوله در کوچه تاریک به صدا درآمد."
+    },
+    {
+      "fr": "le macchabée",
+      "fa": "جسد (عامیانه)",
+      "emoji": "🧟",
+      "difficulty": 5,
+      "ex": "Les flics ont trouvé un macchabée dans la ruelle.",
+      "ex_fa": "پلیس‌ها یک جسد در کوچه پیدا کردند."
+    },
+    {
+      "fr": "un suspect intraçable",
+      "fa": "مظنون غیرقابل ردیابی",
+      "emoji": "👤",
+      "difficulty": 5,
+      "ex": "Ce tueur en série reste un suspect intraçable pour les autorités.",
+      "ex_fa": "این قاتل زنجیره‌ای همچنان برای مقامات یک مظنون غیرقابل ردیابی است."
+    },
+    {
+      "fr": "le scélérat",
+      "fa": "شرور / تبهکار (ادبی)",
+      "emoji": "😈",
+      "difficulty": 5,
+      "ex": "Ce scélérat a trahi tout le monde pour s'enrichir.",
+      "ex_fa": "این تبهکار برای ثروتمند شدن به همه خیانت کرد."
+    },
+    {
+      "fr": "la pendaison",
+      "fa": "اعدام با طناب دار",
+      "emoji": "🪢",
+      "difficulty": 4,
+      "ex": "La pendaison était une punition courante au Moyen Âge.",
+      "ex_fa": "اعدام با طناب دار در قرون وسطی مجازات رایجی بود."
+    },
+    {
+      "fr": "la perpétuité",
+      "fa": "حبس ابد",
+      "emoji": "🔒",
+      "difficulty": 3,
+      "ex": "Il a été condamné à la perpétuité sans possibilité de libération.",
+      "ex_fa": "او بدون امکان آزادی به حبس ابد محکوم شد."
+    },
+    {
+      "fr": "l'insubordination",
+      "fa": "نافرمانی",
+      "emoji": "🛑",
+      "difficulty": 4,
+      "ex": "Le soldat a été puni pour insubordination envers son supérieur.",
+      "ex_fa": "سرباز به دلیل نافرمانی از مافوق خود تنبیه شد."
+    },
+    {
+      "fr": "le parjure",
+      "fa": "سوگندشکنی",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "Le témoin a commis un parjure devant le tribunal.",
+      "ex_fa": "شاهد در دادگاه مرتکب سوگندشکنی شد."
+    },
+    {
+      "fr": "le proxénète",
+      "fa": "دلال محبت",
+      "emoji": "💰",
+      "difficulty": 4,
+      "ex": "Le proxénète exploitait plusieurs femmes dans ce réseau.",
+      "ex_fa": "دلال محبت در این شبکه از چندین زن سوءاستفاده می‌کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Enquête au quai des Orfèvres",
+      "title_fa": "تحقیق در اسکله اورفور",
+      "text": "L'inspecteur arrive sur les lieux du crime. Une {{BLANK_18}} a été menée chez le suspect, mais sans résultat. Le {{BLANK_17}} examine le corps et note une {{BLANK_21}} sur la porte. C'est le travail d'un {{BLANK_19}} expérimenté. Un vieux {{BLANK_20}} de la brigade criminelle analyse la scène. Il y a une {{BLANK_22}} de balles sur le mur. Le {{BLANK_23}} a été abandonné dans la ruelle. La {{BLANK_16}} principale est interrogée, mais le commanditaire est un {{BLANK_24}}. C'est un véritable {{BLANK_25}} qui manipule tout le monde. S'il est pris, il risque la {{BLANK_26}} ou la {{BLANK_27}}. Son avocat est connu pour son {{BLANK_30}} et son manque de morale. Si un témoin ment sous serment, c'est un {{BLANK_29}}. Et si un policier désobéit, c'est de l'{{BLANK_28}}.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "perquisition",
+          "options": [
+            "perquisition",
+            "inspection",
+            "visite",
+            "surveillance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "légiste",
+          "options": [
+            "légiste",
+            "chirurgien",
+            "infirmier",
+            "secouriste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "effraction",
+          "options": [
+            "effraction",
+            "intrusion",
+            "visite",
+            "ouverture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "récidiviste",
+          "options": [
+            "récidiviste",
+            "amateur",
+            "débutant",
+            "touriste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "limier",
+          "options": [
+            "limier",
+            "novice",
+            "stagiaire",
+            "civil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "salve",
+          "options": [
+            "salve",
+            "bruit",
+            "silence",
+            "écho"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "macchabée",
+          "options": [
+            "macchabée",
+            "patient",
+            "blessé",
+            "survivant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "meurtrière",
+          "options": [
+            "meurtrière",
+            "victime",
+            "témoin",
+            "passante"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "suspect intraçable",
+          "options": [
+            "suspect intraçable",
+            "témoin clé",
+            "victime collatérale",
+            "informateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "scélérat",
+          "options": [
+            "scélérat",
+            "héros",
+            "bienfaiteur",
+            "mécène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pendaison",
+          "options": [
+            "pendaison",
+            "libération",
+            "amende",
+            "avertissement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "perpétuité",
+          "options": [
+            "perpétuité",
+            "libération conditionnelle",
+            "sursis",
+            "amende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "proxénète",
+          "options": [
+            "proxénète",
+            "protecteur",
+            "témoin",
+            "juge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "parjure",
+          "options": [
+            "parjure",
+            "témoignage",
+            "déclaration",
+            "aveu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "insubordination",
+          "options": [
+            "insubordination",
+            "obéissance",
+            "loyauté",
+            "discipline"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'ombre du quai",
+      "title_fa": "سایه اسکله",
+      "inspiration": "True Detective / Les Misérables",
+      "text": "L'aube se levait à peine sur le quai des Orfèvres lorsque l'inspecteur Valjean pénétra dans le bureau. Une {{BLANK_1}} avait été menée à l'aube chez le suspect, mais n'avait rien donné. Sur le bureau, le rapport du {{BLANK_2}} confirmait l'heure du décès, tandis que les photos de la scène révélaient une {{BLANK_3}} caractéristique : la serrure avait été forcée avec une expertise rare. « Ce n'est pas un amateur, » grommela Valjean. « C'est un {{BLANK_4}} qui connaît les failles du système. » Son adjoint, un vieux {{BLANK_5}} à la retraite rappelé pour l'occasion, hocha la tête. « Regardez cette {{BLANK_6}} de balles sur le mur. Et ce corps... un véritable {{BLANK_7}} abandonné comme une poupée de chiffon. » L'inspecteur plissa les yeux. « La {{BLANK_8}} a été retrouvée avec une arme encore fumante, mais elle prétend n'avoir agi que par légitime défense. Quant au commanditaire, c'est un {{BLANK_9}}. Un véritable {{BLANK_10}} qui manigance dans l'ombre. » Il se tourna vers le juge. « Si nous ne le confondons pas, il risque l'{{BLANK_11}} ou, au mieux, la {{BLANK_12}}. Mais attention, son avocat est un {{BLANK_13}} notoire qui n'hésitera pas à nous accuser d'{{BLANK_14}}. Et si un témoin ment sous serment, ce sera un {{BLANK_15}} caractérisé. »",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "perquisition",
+          "options": [
+            "perquisition",
+            "inspection",
+            "visite",
+            "surveillance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "légiste",
+          "options": [
+            "légiste",
+            "chirurgien",
+            "infirmier",
+            "secouriste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "effraction",
+          "options": [
+            "effraction",
+            "intrusion",
+            "visite",
+            "ouverture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "récidiviste",
+          "options": [
+            "récidiviste",
+            "amateur",
+            "débutant",
+            "touriste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "limier",
+          "options": [
+            "limier",
+            "novice",
+            "stagiaire",
+            "civil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "salve",
+          "options": [
+            "salve",
+            "bruit",
+            "silence",
+            "écho"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "macchabée",
+          "options": [
+            "macchabée",
+            "patient",
+            "blessé",
+            "survivant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "meurtrière",
+          "options": [
+            "meurtrière",
+            "victime",
+            "témoin",
+            "passante"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "suspect intraçable",
+          "options": [
+            "suspect intraçable",
+            "témoin clé",
+            "victime collatérale",
+            "informateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "scélérat",
+          "options": [
+            "scélérat",
+            "héros",
+            "bienfaiteur",
+            "mécène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pendaison",
+          "options": [
+            "pendaison",
+            "libération",
+            "amende",
+            "avertissement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "perpétuité",
+          "options": [
+            "perpétuité",
+            "libération conditionnelle",
+            "sursis",
+            "amende"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "proxénète",
+          "options": [
+            "proxénète",
+            "protecteur",
+            "témoin",
+            "juge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "insubordination",
+          "options": [
+            "insubordination",
+            "obéissance",
+            "loyauté",
+            "discipline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "parjure",
+          "options": [
+            "parjure",
+            "témoignage",
+            "déclaration",
+            "aveu"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Scène de Crime et Interrogatoire",
+    "title_fa": "آزمون: صحنه جرم و بازجویی",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Les forces de l'ordre ont fouillé le domicile du suspect à l'aube lors d'une ____.",
+        "options": [
+          "perquisition",
+          "inspection",
+          "visite",
+          "surveillance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تفتیش قانونی منزل توسط پلیس = perquisition."
+      },
+      {
+        "type": "mcq",
+        "question": "Le médecin chargé de déterminer la cause et l'heure du décès est le ____.",
+        "options": [
+          "légiste",
+          "chirurgien",
+          "infirmier",
+          "secouriste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پزشک قانونی که علت مرگ را تعیین می‌کند = légiste."
+      },
+      {
+        "type": "mcq",
+        "question": "L'entrée illégale dans un domicile en forçant la serrure constitue une ____.",
+        "options": [
+          "effraction",
+          "intrusion",
+          "visite",
+          "ouverture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورود به عنف با شکستن قفل = effraction."
+      },
+      {
+        "type": "mcq",
+        "question": "Une personne ayant déjà été condamnée et qui recommence à commettre des délits est un ____.",
+        "options": [
+          "récidiviste",
+          "amateur",
+          "débutant",
+          "touriste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجرم سابقه‌دار که دوباره جرم مرتکب می‌شود = récidiviste."
+      },
+      {
+        "type": "mcq",
+        "question": "Un enquêteur expérimenté et tenace, capable de flairer la vérité, est surnommé un ____.",
+        "options": [
+          "limier",
+          "novice",
+          "stagiaire",
+          "civil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کارآگاه زیرک و پیگیر (اصطلاحاً سگ شکاری) = limier."
+      },
+      {
+        "type": "mcq",
+        "question": "Une série de coups de feu tirés simultanément est appelée une ____.",
+        "options": [
+          "salve",
+          "détonation",
+          "silence",
+          "écho"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رگبار یا شلیک همزمان چند گلوله = salve."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans l'argot policier, un cadavre est parfois désigné de manière macabre par le terme ____.",
+        "options": [
+          "macchabée",
+          "patient",
+          "blessé",
+          "survivant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اصطلاح عامیانه و کوچه بازاری برای جسد = macchabée."
+      },
+      {
+        "type": "mcq",
+        "question": "Une femme qui a commis un meurtre est désignée comme une ____.",
+        "options": [
+          "meurtrière",
+          "victime",
+          "témoin",
+          "passante"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قاتل زن = meurtrière."
+      },
+      {
+        "type": "mcq",
+        "question": "Un criminel qui parvient à échapper à toutes les méthodes de localisation est un ____.",
+        "options": [
+          "suspect intraçable",
+          "témoin clé",
+          "victime collatérale",
+          "informateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مظنونی که قابل ردیابی نیست = suspect intraçable."
+      },
+      {
+        "type": "mcq",
+        "question": "Un individu d'une méchanceté extrême, digne des romans classiques, est un ____.",
+        "options": [
+          "scélérat",
+          "héros",
+          "bienfaiteur",
+          "mécène"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تبهکار یا شرور (با لحن ادبی) = scélérat."
+      },
+      {
+        "type": "mcq",
+        "question": "L'exécution capitale par suspension au cou avec une corde est la ____.",
+        "options": [
+          "pendaison",
+          "libération",
+          "amende",
+          "avertissement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اعدام با طناب دار = pendaison."
+      },
+      {
+        "type": "mcq",
+        "question": "La peine d'emprisonnement à vie sans possibilité de libération est la ____.",
+        "options": [
+          "perpétuité",
+          "libération conditionnelle",
+          "sursis",
+          "amende"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حبس ابد = perpétuité."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui gère et exploite la prostitution d'autrui est un ____.",
+        "options": [
+          "proxénète",
+          "protecteur",
+          "témoin",
+          "juge"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دلال محبت یا قواد = proxénète."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fait de mentir sous serment devant un tribunal constitue un ____.",
+        "options": [
+          "parjure",
+          "témoignage",
+          "déclaration",
+          "aveu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سوگندشکنی یا شهادت دروغ زیر قسم = parjure."
+      },
+      {
+        "type": "mcq",
+        "question": "Le refus d'obéir aux ordres d'un supérieur hiérarchique, surtout dans l'armée, est une ____.",
+        "options": [
+          "insubordination",
+          "obéissance",
+          "loyauté",
+          "discipline"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نافرمانی از مافوق = insubordination."
+      },
+      {
+        "type": "binary",
+        "question": "Le terme \"limier\" est utilisé de manière péjorative pour insulter un policier incompétent.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، limier اصطلاحی تحسین‌آمیز برای کارآگاه زیرک و پیگیر است."
+      },
+      {
+        "type": "binary",
+        "question": "Une \"effraction\" implique nécessairement l'utilisation de la force ou d'outils pour pénétrer dans un lieu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، effraction به معنای شکستن قفل یا ورود با زور است."
+      },
+      {
+        "type": "binary",
+        "question": "Le \"parjure\" est considéré comme une infraction grave car il porte atteinte à la justice.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، شهادت دروغ زیر قسم جرمی جدی علیه سیستم قضایی است."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"récidiviste\" est quelqu'un qui commet un délit pour la première fois.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، récidiviste کسی است که قبلاً محکوم شده و دوباره جرم مرتکب می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le mot \"scélérat\" appartient au registre familier et est principalement utilisé dans les conversations de rue.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، scélérat واژه‌ای با ثبت ادبی و کلاسیک است، نه عامیانه."
+      }
+    ]
+  }
+}
