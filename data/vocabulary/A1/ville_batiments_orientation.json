@@ -1,0 +1,654 @@
+{
+  "id": "ville_batiments_orientation",
+  "level": "A1",
+  "theme": "Ville, Bâtiments et Orientation",
+  "theme_fa": "در شهر، ساختمان‌ها و مسیریابی",
+  "icon": "🏙️",
+  "inspiration": "Le Petit Nicolas / Tintin",
+  "words": [
+    {
+      "fr": "l'église",
+      "fa": "کلیسا",
+      "emoji": "⛪",
+      "difficulty": 1,
+      "ex": "L'église est au centre du village.",
+      "ex_fa": "کلیسا در مرکز روستا است."
+    },
+    {
+      "fr": "l'endroit",
+      "fa": "مکان / جا",
+      "emoji": "📍",
+      "difficulty": 2,
+      "ex": "C'est un endroit magnifique pour des vacances.",
+      "ex_fa": "این مکان فوق‌العاده‌ای برای تعطیلات است."
+    },
+    {
+      "fr": "l'entrée",
+      "fa": "ورودی",
+      "emoji": "🚪",
+      "difficulty": 1,
+      "ex": "L'entrée du musée est gratuite le dimanche.",
+      "ex_fa": "ورودی موزه یکشنبه‌ها رایگان است."
+    },
+    {
+      "fr": "l'épicerie",
+      "fa": "خواربارفروشی",
+      "emoji": "🛒",
+      "difficulty": 1,
+      "ex": "Je vais acheter du pain et du lait à l'épicerie.",
+      "ex_fa": "من می‌روم از خواربارفروشی نان و شیر بخرم."
+    },
+    {
+      "fr": "l'étage",
+      "fa": "طبقه",
+      "emoji": "🏢",
+      "difficulty": 1,
+      "ex": "J'habite au troisième étage de cet immeuble.",
+      "ex_fa": "من در طبقه سوم این ساختمان زندگی می‌کنم."
+    },
+    {
+      "fr": "l'extérieur",
+      "fa": "خارج / فضای بیرونی",
+      "emoji": "🌳",
+      "difficulty": 2,
+      "ex": "À l'extérieur, il fait très froid en hiver.",
+      "ex_fa": "بیرون، در زمستان هوا خیلی سرد است."
+    },
+    {
+      "fr": "la fenêtre",
+      "fa": "پنجره",
+      "emoji": "🪟",
+      "difficulty": 1,
+      "ex": "Ouvre la fenêtre, il fait trop chaud ici.",
+      "ex_fa": "پنجره را باز کن، اینجا خیلی گرم است."
+    },
+    {
+      "fr": "la ferme",
+      "fa": "مزرعه",
+      "emoji": "🚜",
+      "difficulty": 1,
+      "ex": "Les enfants adorent visiter la ferme pendant les vacances.",
+      "ex_fa": "بچه‌ها عاشق بازدید از مزرعه در طول تعطیلات هستند."
+    },
+    {
+      "fr": "ici",
+      "fa": "اینجا",
+      "emoji": "📌",
+      "difficulty": 1,
+      "ex": "Je suis très heureux d'être ici avec toi.",
+      "ex_fa": "من خیلی خوشحالم که اینجا با تو هستم."
+    },
+    {
+      "fr": "l'immeuble",
+      "fa": "ساختمان (چندطبقه)",
+      "emoji": "🏬",
+      "difficulty": 2,
+      "ex": "Nous habitons dans un grand immeuble moderne.",
+      "ex_fa": "ما در یک ساختمان بزرگ مدرن زندگی می‌کنیم."
+    },
+    {
+      "fr": "l'intérieur",
+      "fa": "داخل / فضای داخلی",
+      "emoji": "🏠",
+      "difficulty": 2,
+      "ex": "À l'intérieur de la maison, il fait bon et chaud.",
+      "ex_fa": "داخل خانه، هوا خوب و گرم است."
+    },
+    {
+      "fr": "là",
+      "fa": "آنجا",
+      "emoji": "👉",
+      "difficulty": 1,
+      "ex": "Je vais là pour acheter des livres.",
+      "ex_fa": "من آنجا می‌روم تا کتاب بخرم."
+    },
+    {
+      "fr": "là-bas",
+      "fa": "آن دور / آن پایین",
+      "emoji": "👈",
+      "difficulty": 2,
+      "ex": "Regarde là-bas, il y a un beau château !",
+      "ex_fa": "آن دور را نگاه کن، یک قلعه زیبا وجود دارد!"
+    },
+    {
+      "fr": "le lit",
+      "fa": "تخت‌خواب",
+      "emoji": "🛏️",
+      "difficulty": 1,
+      "ex": "Je suis fatigué, je vais me coucher dans mon lit.",
+      "ex_fa": "من خسته‌ام، می‌روم در تختم بخوابم."
+    },
+    {
+      "fr": "la librairie",
+      "fa": "کتاب‌فروشی",
+      "emoji": "📚",
+      "difficulty": 1,
+      "ex": "J'aime acheter un nouveau roman à la librairie.",
+      "ex_fa": "من دوست دارم از کتاب‌فروشی یک رمان جدید بخرم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une promenade en ville",
+      "title_fa": "پیاده‌روی در شهر",
+      "text": "Je suis ____ (9) dans mon quartier. C'est un ____ (2) très calme. J'habite dans un grand ____ (10) au deuxième ____ (5). ____ (11), il fait chaud, mais ____ (6), il fait froid. Je regarde par la ____ (7) et je vois une vieille ____ (8) au loin, ____ (13). Je descends pour aller à l'____ (4) acheter des fruits. Ensuite, je vais à la ____ (15) près de l'____ (1). L'____ (3) de la librairie est ouverte. J'achète un livre et je rentre chez moi. Je suis très fatigué, je me couche dans mon ____ (14).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "église",
+          "options": [
+            "église",
+            "hôpital",
+            "aéroport",
+            "gare"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "endroit",
+          "options": [
+            "endroit",
+            "temps",
+            "jour",
+            "heure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "entrée",
+          "options": [
+            "entrée",
+            "sortie",
+            "fenêtre",
+            "porte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "épicerie",
+          "options": [
+            "épicerie",
+            "pharmacie",
+            "boulangerie",
+            "banque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "étage",
+          "options": [
+            "étage",
+            "rue",
+            "toit",
+            "sol"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "à l'extérieur",
+          "options": [
+            "à l'extérieur",
+            "à l'intérieur",
+            "ici",
+            "là"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "fenêtre",
+          "options": [
+            "fenêtre",
+            "porte",
+            "mur",
+            "toit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "ferme",
+          "options": [
+            "ferme",
+            "usine",
+            "école",
+            "magasin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ici",
+          "options": [
+            "ici",
+            "là-bas",
+            "loin",
+            "partout"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "immeuble",
+          "options": [
+            "immeuble",
+            "maison",
+            "château",
+            "village"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "À l'intérieur",
+          "options": [
+            "À l'intérieur",
+            "À l'extérieur",
+            "Loin",
+            "Haut"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "là",
+          "options": [
+            "là",
+            "ici",
+            "dedans",
+            "dessous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "là-bas",
+          "options": [
+            "là-bas",
+            "ici",
+            "dedans",
+            "dessus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "lit",
+          "options": [
+            "lit",
+            "bureau",
+            "fauteuil",
+            "canapé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "librairie",
+          "options": [
+            "librairie",
+            "boucherie",
+            "pharmacie",
+            "banque"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le refuge du lecteur",
+      "title_fa": "پناهگاه خواننده",
+      "inspiration": "Le Petit Nicolas",
+      "text": "Je me tiens ____ (9), au cœur de la ville. Cet ____ (2) a toujours eu un charme particulier. Mon ____ (10) est ancien, mais mon ____ (5) offre une vue imprenable. ____ (11), tout est calme et douillet, tandis qu'____ (6), le vent souffle fort. J'ouvre la ____ (7) pour observer le paysage. Au loin, ____ (13), on devine les contours d'une vieille ____ (8) et le clocher de l'____ (1). Je descends chercher un livre à la ____ (15). L'____ (3) est accueillante et chaleureuse. Après avoir passé du temps ____ (12), je remonte dans ma chambre. La nuit tombe, et je me glisse enfin dans mon ____ (14), l'esprit apaisé.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "église",
+          "options": [
+            "église",
+            "hôpital",
+            "aéroport",
+            "gare"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "endroit",
+          "options": [
+            "endroit",
+            "temps",
+            "moment",
+            "instant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "entrée",
+          "options": [
+            "entrée",
+            "sortie",
+            "fenêtre",
+            "couloir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "épicerie",
+          "options": [
+            "épicerie",
+            "pharmacie",
+            "boulangerie",
+            "banque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "étage",
+          "options": [
+            "étage",
+            "rue",
+            "toit",
+            "sol"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "à l'extérieur",
+          "options": [
+            "à l'extérieur",
+            "à l'intérieur",
+            "ici",
+            "là"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "fenêtre",
+          "options": [
+            "fenêtre",
+            "porte",
+            "mur",
+            "toit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "ferme",
+          "options": [
+            "ferme",
+            "usine",
+            "école",
+            "magasin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ici",
+          "options": [
+            "ici",
+            "là-bas",
+            "loin",
+            "partout"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "immeuble",
+          "options": [
+            "immeuble",
+            "maison",
+            "château",
+            "village"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "À l'intérieur",
+          "options": [
+            "À l'intérieur",
+            "À l'extérieur",
+            "Loin",
+            "Haut"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "là",
+          "options": [
+            "là",
+            "ici",
+            "dedans",
+            "dessous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "là-bas",
+          "options": [
+            "là-bas",
+            "ici",
+            "dedans",
+            "dessus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "lit",
+          "options": [
+            "lit",
+            "bureau",
+            "fauteuil",
+            "canapé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "librairie",
+          "options": [
+            "librairie",
+            "boucherie",
+            "pharmacie",
+            "banque"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Ville, Bâtiments et Orientation",
+    "title_fa": "آزمون: شهر، ساختمان‌ها و مسیریابی",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le lieu où l'on va pour acheter des produits alimentaires de base est l'____.",
+        "options": [
+          "épicerie",
+          "librairie",
+          "pharmacie",
+          "banque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که برای خرید مواد غذایی پایه می‌رویم، خواربارفروشی (épicerie) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le niveau d'un bâtiment où se trouve un appartement s'appelle l'____.",
+        "options": [
+          "étage",
+          "rue",
+          "toit",
+          "sol"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطحی از ساختمان که آپارتمان در آن قرار دارد، طبقه (étage) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ouverture dans un mur pour laisser entrer la lumière est la ____.",
+        "options": [
+          "fenêtre",
+          "porte",
+          "mur",
+          "toit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بازشویی در دیوار برای ورود نور، پنجره (fenêtre) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un grand bâtiment avec plusieurs logements s'appelle un ____.",
+        "options": [
+          "immeuble",
+          "château",
+          "village",
+          "ferme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یک ساختمان بزرگ با چندین واحد مسکونی، ساختمان چندطبقه (immeuble) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le meuble où l'on dort la nuit est le ____.",
+        "options": [
+          "lit",
+          "bureau",
+          "fauteuil",
+          "canapé"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مبلمانی که شب‌ها در آن می‌خوابیم، تخت‌خواب (lit) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu où l'on achète des livres est la ____.",
+        "options": [
+          "librairie",
+          "boucherie",
+          "pharmacie",
+          "banque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که در آن کتاب می‌خریم، کتاب‌فروشی (librairie) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le contraire de « l'intérieur » est l'____.",
+        "options": [
+          "extérieur",
+          "dedans",
+          "centre",
+          "milieu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متضاد داخل، خارج یا فضای بیرونی (extérieur) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour indiquer un lieu proche de toi, tu dis : Je suis ____.",
+        "options": [
+          "ici",
+          "là-bas",
+          "loin",
+          "partout"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای اشاره به مکانی نزدیک به خودت، می‌گویی: من اینجا هستم (ici)."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour indiquer un lieu éloigné, tu montres du doigt et tu dis : Regarde ____ !",
+        "options": [
+          "là-bas",
+          "ici",
+          "dedans",
+          "dessus"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای اشاره به مکانی دور، با انگشت اشاره می‌کنی و می‌گویی: آن دور را نگاه کن (là-bas)!"
+      },
+      {
+        "type": "mcq",
+        "question": "Un lieu où l'on élève des animaux et cultive des plantes est une ____.",
+        "options": [
+          "ferme",
+          "usine",
+          "école",
+          "magasin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که در آن حیوانات پرورش داده شده و گیاهان کشت می‌شوند، مزرعه (ferme) است."
+      },
+      {
+        "type": "binary",
+        "question": "« L'entrée » désigne l'endroit par lequel on sort d'un bâtiment.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، entrée به معنای ورودی است، نه خروجی."
+      },
+      {
+        "type": "binary",
+        "question": "« L'église » est un bâtiment religieux chrétien.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، église به معنای کلیسا است."
+      },
+      {
+        "type": "binary",
+        "question": "On utilise « l'endroit » pour parler d'un lieu ou d'une place spécifique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، endroit به معنای مکان یا جای خاص است."
+      },
+      {
+        "type": "binary",
+        "question": "« Là » et « ici » signifient exactement la même chose.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، ici به معنای «اینجا» (نزدیک) و là به معنای «آنجا» (کمی دورتر) است."
+      },
+      {
+        "type": "binary",
+        "question": "À l'intérieur d'une maison en hiver, il fait généralement chaud.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، در داخل خانه در زمستان معمولاً گرم است."
+      }
+    ]
+  }
+}
