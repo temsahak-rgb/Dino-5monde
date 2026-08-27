@@ -1,0 +1,593 @@
+{
+  "id": "sanatorium_pathologies_etranges",
+  "level": "C2",
+  "theme": "Sanatorium et pathologies complexes",
+  "theme_fa": "آسایشگاه و بیماری‌های پیچیده",
+  "icon": "🏥",
+  "inspiration": "The Knick",
+  "words": [
+    {
+      "fr": "le sanatorium",
+      "fa": "آسایشگاه، معمولاً برای بیماران ریوی",
+      "emoji": "🏔️",
+      "difficulty": 2,
+      "ex": "Il a passé l'hiver dans un sanatorium en montagne.",
+      "ex_fa": "او زمستان را در یک آسایشگاه کوهستانی گذراند."
+    },
+    {
+      "fr": "la leucémie",
+      "fa": "سرطان خون",
+      "emoji": "🩸",
+      "difficulty": 3,
+      "ex": "Le traitement contre la leucémie a beaucoup évolué.",
+      "ex_fa": "درمان سرطان خون بسیار پیشرفت کرده است."
+    },
+    {
+      "fr": "le lymphome",
+      "fa": "لنفوم",
+      "emoji": "🔬",
+      "difficulty": 3,
+      "ex": "Le lymphome de Hodgkin se soigne aujourd'hui très bien.",
+      "ex_fa": "لنفوم هوچکین امروزه به‌خوبی قابل درمان است."
+    },
+    {
+      "fr": "la sclérose",
+      "fa": "اسکلروز / تصلب بافت",
+      "emoji": "🧠",
+      "difficulty": 4,
+      "ex": "La sclérose en plaques affecte le système nerveux.",
+      "ex_fa": "ام‌اس بر دستگاه عصبی تأثیر می‌گذارد."
+    },
+    {
+      "fr": "l'urticaire",
+      "fa": "کهیر",
+      "emoji": "🩹",
+      "difficulty": 3,
+      "ex": "Cette allergie alimentaire provoque de l'urticaire.",
+      "ex_fa": "این حساسیت غذایی باعث کهیر می‌شود."
+    },
+    {
+      "fr": "la gangrène",
+      "fa": "قانقاریا، بافت‌مردگی",
+      "emoji": "⚕️",
+      "difficulty": 4,
+      "ex": "La blessure s'est infectée et a tourné à la gangrène.",
+      "ex_fa": "زخم عفونی شد و به قانقاریا تبدیل شد."
+    },
+    {
+      "fr": "hépatique",
+      "fa": "کبدی",
+      "emoji": "🫀",
+      "difficulty": 4,
+      "ex": "Il a été hospitalisé pour une colique hépatique.",
+      "ex_fa": "او به دلیل قولنج کبدی در بیمارستان بستری شد."
+    },
+    {
+      "fr": "la vésicule",
+      "fa": "کیسه، معمولاً کیسه صفرا",
+      "emoji": "🫧",
+      "difficulty": 3,
+      "ex": "On lui a enlevé la vésicule biliaire par laparoscopie.",
+      "ex_fa": "کیسه صفرا را با لاپاراسکوپی از بدن او خارج کردند."
+    },
+    {
+      "fr": "le testicule",
+      "fa": "بیضه",
+      "emoji": "🧬",
+      "difficulty": 3,
+      "ex": "Le dépistage du cancer du testicule est important.",
+      "ex_fa": "غربالگری سرطان بیضه اهمیت دارد."
+    },
+    {
+      "fr": "la vasectomie",
+      "fa": "وازکتومی",
+      "emoji": "🩺",
+      "difficulty": 4,
+      "ex": "Il a opté pour la vasectomie comme moyen de contraception.",
+      "ex_fa": "او وازکتومی را به‌عنوان روش پیشگیری از بارداری انتخاب کرد."
+    },
+    {
+      "fr": "ombilical",
+      "fa": "نافی",
+      "emoji": "👶",
+      "difficulty": 3,
+      "ex": "Le cordon ombilical relie le fœtus à la mère.",
+      "ex_fa": "بند ناف جنین را به مادر متصل می‌کند."
+    },
+    {
+      "fr": "l'obstétrique",
+      "fa": "مامایی / پزشکی زایمان",
+      "emoji": "🤰",
+      "difficulty": 4,
+      "ex": "Elle se spécialise en gynécologie et en obstétrique.",
+      "ex_fa": "او در زنان و زایمان تخصص می‌گیرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le dossier de la chambre 17",
+      "title_fa": "پرونده اتاق ۱۷",
+      "text": "À l'hôpital, le docteur Morel reçut une patiente dont l'état semblait difficile à expliquer. Elle avait des plaques rouges sur les bras et le dos, ainsi qu'une forte fatigue. Après l'examen, le médecin nota que {{BLANK_1}} pouvait expliquer une partie de ses symptômes. Quelques jours plus tard, un autre patient fut admis avec une maladie du sang. Les analyses orientèrent l'équipe vers {{BLANK_2}}. Morel demanda alors des examens complémentaires. Dans un troisième dossier, il remarqua une douleur abdominale liée à un organe situé près du foie. Le chirurgien soupçonna un problème de {{BLANK_3}}. Pendant la réunion, une interne rappela qu'une infection mal contrôlée pouvait provoquer {{BLANK_4}}. La discussion devint plus grave. Dans une autre salle, une femme enceinte était suivie par le service d'{{BLANK_5}}. Son dossier indiquait que le cordon {{BLANK_6}} devait être surveillé avant l'accouchement. Les médecins décidèrent de rester prudents et de vérifier chaque hypothèse avant de choisir un traitement.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "l'urticaire",
+          "options": [
+            "l'urticaire",
+            "la vasectomie",
+            "le lymphome",
+            "le testicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "la leucémie",
+          "options": [
+            "la sclérose",
+            "la leucémie",
+            "la vésicule",
+            "l'obstétrique"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 3,
+          "answer": "la vésicule",
+          "options": [
+            "la vésicule",
+            "la gangrène",
+            "le sanatorium",
+            "le testicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "la gangrène",
+          "options": [
+            "la gangrène",
+            "l'urticaire",
+            "la leucémie",
+            "la vasectomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "l'obstétrique",
+          "options": [
+            "l'obstétrique",
+            "la sclérose",
+            "le lymphome",
+            "la vasectomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "ombilical",
+          "options": [
+            "ombilical",
+            "hépatique",
+            "cérébral",
+            "vasculaire"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les chambres du dernier étage",
+      "title_fa": "اتاق‌های طبقه آخر",
+      "inspiration": "The Knick",
+      "text": "La nuit avait recouvert l'hôpital d'une obscurité presque métallique. Dans les couloirs, les lampes électriques découpaient des îlots de lumière autour des portes entrouvertes. Le docteur Morel montait lentement vers les chambres du dernier étage, là où l'on envoyait les malades dont le diagnostic résistait aux certitudes ordinaires. Une femme âgée, revenue d'un ancien établissement de montagne, lui raconta qu'elle avait passé plusieurs mois dans {{BLANK_1}} lorsqu'elle était jeune. Elle toussait encore, mais ce n'était plus son poumon qui inquiétait le médecin. Une série d'examens révéla une maladie neurologique dont l'évolution demeurait imprévisible : la {{BLANK_2}} semblait déjà avoir atteint plusieurs fonctions essentielles. Dans la chambre voisine, un homme amaigri attendait les résultats d'une biopsie. Le médecin soupçonnait {{BLANK_3}}, mais il refusait de transformer une hypothèse en verdict. Plus loin, un jeune patient souffrait d'une infection sévère à la jambe. La peau avait changé de couleur et les tissus semblaient perdre leur vitalité. Morel comprit que la {{BLANK_4}} menaçait désormais le membre tout entier. Au même moment, une autre patiente se plaignait d'une douleur profonde sous les côtes. Les examens indiquèrent une inflammation d'origine {{BLANK_5}}, probablement liée à une atteinte de {{BLANK_6}}. Dans la salle d'opération, le chirurgien préparait son instrument tandis que l'interne vérifiait les dossiers. Chaque geste devait être précis, car une erreur minuscule pouvait devenir irréparable. Dans une chambre plus calme, un homme discutait avec le médecin d'une intervention qu'il avait choisie après plusieurs années de réflexion. Il expliqua qu'il souhaitait une {{BLANK_7}} afin de ne plus avoir d'enfant. Morel prit le temps de lui exposer les conséquences de cette décision. À l'étage inférieur, une jeune femme enceinte venait d'être admise. Le service d'{{BLANK_8}} suivait attentivement l'évolution de sa grossesse. Sur l'écran, les mouvements du fœtus apparaissaient comme des signes minuscules dans une mer de gris. Le cordon {{BLANK_9}} était correctement positionné, mais l'équipe demeurait vigilante. Avant l'aube, Morel relut les dossiers une dernière fois. Il savait que la médecine ne progressait pas seulement grâce aux découvertes éclatantes, mais aussi grâce à la patience avec laquelle on acceptait de ne pas savoir. Au matin, il retourna auprès du patient atteint d'une maladie des ganglions. Les nouveaux résultats confirmaient finalement le {{BLANK_10}}. Dans la dernière chambre, un jeune homme se plaignait d'une douleur persistante au niveau d'un organe reproducteur. Morel ordonna un examen du {{BLANK_11}} avant de prendre toute décision. Il referma ensuite son dossier. Dehors, la ville commençait à se réveiller. Dans l'hôpital, une autre journée de diagnostics, d'hésitations et de décisions allait commencer.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "le sanatorium",
+          "options": [
+            "le sanatorium",
+            "la vasectomie",
+            "la vésicule",
+            "le testicule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "la sclérose",
+          "options": [
+            "la sclérose",
+            "la leucémie",
+            "l'urticaire",
+            "la gangrène"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "la leucémie",
+          "options": [
+            "la leucémie",
+            "l'obstétrique",
+            "la vésicule",
+            "la vasectomie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "la gangrène",
+          "options": [
+            "la gangrène",
+            "la sclérose",
+            "l'urticaire",
+            "le lymphome"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "hépatique",
+          "options": [
+            "hépatique",
+            "ombilical",
+            "neurologique",
+            "infectieuse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "la vésicule",
+          "options": [
+            "la vésicule",
+            "le sanatorium",
+            "le testicule",
+            "la leucémie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "la vasectomie",
+          "options": [
+            "la vasectomie",
+            "la sclérose",
+            "la gangrène",
+            "l'urticaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "l'obstétrique",
+          "options": [
+            "l'obstétrique",
+            "la leucémie",
+            "la vasectomie",
+            "la sclérose"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ombilical",
+          "options": [
+            "ombilical",
+            "hépatique",
+            "digestif",
+            "vasculaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "le lymphome",
+          "options": [
+            "le lymphome",
+            "le testicule",
+            "le sanatorium",
+            "l'urticaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "le testicule",
+          "options": [
+            "le testicule",
+            "la vésicule",
+            "le lymphome",
+            "le sanatorium"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Sanatorium et pathologies complexes",
+    "title_fa": "آزمون : آسایشگاه و بیماری‌های پیچیده",
+    "displayCount": 24,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Au début du XXe siècle, certains patients atteints de maladies pulmonaires étaient envoyés dans ____ situés en montagne.",
+        "options": [
+          "des sanatoriums",
+          "des maternités",
+          "des laboratoires",
+          "des dispensaires"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Sanatorium به آسایشگاهی گفته می‌شود که به‌ویژه در گذشته برای درمان یا مراقبت از بیماران، خصوصاً بیماران ریوی، استفاده می‌شد."
+      },
+      {
+        "type": "mcq",
+        "question": "Une maladie qui touche les cellules sanguines et la moelle osseuse peut être une ____.",
+        "options": [
+          "leucémie",
+          "urticaire",
+          "vasectomie",
+          "gangrène"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Leucémie به سرطان خون گفته می‌شود که با تولید غیرطبیعی سلول‌های خونی ارتباط دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Une tumeur maligne touchant notamment les ganglions peut être un ____.",
+        "options": [
+          "lymphome",
+          "testicule",
+          "sanatorium",
+          "ombilical"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Lymphome نوعی سرطان مرتبط با دستگاه لنفاوی است و می‌تواند غدد لنفاوی را درگیر کند."
+      },
+      {
+        "type": "mcq",
+        "question": "La sclérose en plaques est une maladie qui affecte principalement ____.",
+        "options": [
+          "le système nerveux",
+          "la vésicule biliaire",
+          "le cordon ombilical",
+          "les voies spermatiques"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Sclérose در ترکیب sclérose en plaques به بیماری‌ای اشاره دارد که دستگاه عصبی مرکزی را درگیر می‌کند."
+      },
+      {
+        "type": "mcq",
+        "question": "Après avoir mangé un aliment allergène, le patient a développé des plaques rouges et des démangeaisons : il souffre d'____.",
+        "options": [
+          "urticaire",
+          "leucémie",
+          "gangrène",
+          "obstétrique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Urticaire همان کهیر است؛ واکنشی پوستی که می‌تواند با قرمزی و خارش همراه باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "Une infection sévère peut entraîner la destruction progressive des tissus et provoquer ____.",
+        "options": [
+          "la gangrène",
+          "la vasectomie",
+          "la sclérose",
+          "l'obstétrique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Gangrène به مرگ و تخریب بافت، معمولاً در اثر اختلال خون‌رسانی یا عفونت شدید، گفته می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Une douleur ou une maladie liée au foie peut être qualifiée de ____.",
+        "options": [
+          "hépatique",
+          "ombilicale",
+          "neurologique",
+          "articulaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Hépatique صفتی به معنای «کبدی» است."
+      },
+      {
+        "type": "mcq",
+        "question": "Quel petit organe stocke la bile et peut être retiré lors d'une intervention abdominale ?",
+        "options": [
+          "la vésicule",
+          "le testicule",
+          "le lymphome",
+          "le sanatorium"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "La vésicule در این بافت کوتاه‌شدهٔ la vésicule biliaire است؛ کیسه‌ای که صفرا را ذخیره می‌کند."
+      },
+      {
+        "type": "mcq",
+        "question": "Le médecin examine un homme qui présente une masse inhabituelle dans l'un des deux organes reproducteurs masculins : il examine le ____.",
+        "options": [
+          "testicule",
+          "foie",
+          "poumon",
+          "pancréas"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Testicule به بیضه، یکی از اندام‌های تولیدمثل مردانه، گفته می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Un homme choisit une intervention chirurgicale définitive comme méthode de contraception : il opte pour ____.",
+        "options": [
+          "la vasectomie",
+          "la radiothérapie",
+          "la biopsie",
+          "la transfusion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vasectomie یک روش جراحی پیشگیری از بارداری مردانه است."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans le dossier obstétrical, le médecin vérifie que le cordon ____ est correctement positionné.",
+        "options": [
+          "ombilical",
+          "hépatique",
+          "pulmonaire",
+          "digestif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Ombilical یعنی «نافی» و cordon ombilical همان بند ناف است."
+      },
+      {
+        "type": "mcq",
+        "question": "La branche médicale consacrée notamment au suivi de la grossesse et de l'accouchement est ____.",
+        "options": [
+          "l'obstétrique",
+          "la neurologie",
+          "la radiologie",
+          "la dermatologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Obstétrique شاخه‌ای از پزشکی است که با بارداری، زایمان و مراقبت‌های مرتبط سروکار دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le patient atteint d'une maladie chronique a été envoyé dans un établissement isolé où il devait rester plusieurs mois pour se reposer et recevoir des soins.",
+        "options": [
+          "le sanatorium",
+          "le bloc opératoire",
+          "le cabinet",
+          "le laboratoire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Sanatorium در این بافت به آسایشگاهی با اقامت طولانی‌مدت، به‌ویژه برای بیماران ریوی، اشاره دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Les analyses révèlent une prolifération anormale de certaines cellules du sang : le diagnostic retenu est ____.",
+        "options": [
+          "la leucémie",
+          "l'urticaire",
+          "la gangrène",
+          "la vasectomie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Leucémie بیماری سرطانی مرتبط با سلول‌های خونی و مغز استخوان است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une biopsie révèle une tumeur maligne du système lymphatique : il s'agit d'____.",
+        "options": [
+          "un lymphome",
+          "une vésicule",
+          "un sanatorium",
+          "un testicule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Lymphome به سرطان‌های منشأگرفته از دستگاه لنفاوی گفته می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le neurologue explique que la maladie entraîne des lésions progressives du système nerveux : il parle de ____.",
+        "options": [
+          "sclérose",
+          "urticaire",
+          "gangrène",
+          "vasectomie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Sclérose در اینجا به معنای بیماری یا فرایند تصلب بافت است و در ترکیبات پزشکی متعددی به کار می‌رود."
+      },
+      {
+        "type": "mcq",
+        "question": "Après une réaction allergique, des plaques gonflées apparaissent soudainement sur la peau : le médecin diagnostique ____.",
+        "options": [
+          "de l'urticaire",
+          "de la leucémie",
+          "de la sclérose",
+          "de la gangrène"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Urticaire همان کهیر است و معمولاً به شکل ضایعات برجسته و خارش‌دار پوستی ظاهر می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "La plaie nécrosée s'étend rapidement et compromet les tissus environnants : le chirurgien craint ____.",
+        "options": [
+          "la gangrène",
+          "l'obstétrique",
+          "la vasectomie",
+          "l'urticaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Gangrène زمانی به کار می‌رود که بافت دچار مرگ و تخریب شدید شده باشد."
+      },
+      {
+        "type": "binary",
+        "question": "Le terme hépatique signifie « qui concerne le foie ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درست است؛ hépatique صفتی به معنای «مربوط به کبد» است."
+      },
+      {
+        "type": "binary",
+        "question": "La vésicule biliaire est un organe qui participe au stockage de la bile.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درست است؛ کیسه صفرا محل ذخیره صفرا است."
+      },
+      {
+        "type": "binary",
+        "question": "Le testicule est un organe reproducteur masculin.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درست است؛ testicule یکی از اندام‌های اصلی دستگاه تولیدمثل مردانه است."
+      },
+      {
+        "type": "binary",
+        "question": "La vasectomie est une intervention utilisée comme méthode de contraception masculine.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درست است؛ vasectomie یک روش جراحی پیشگیری از بارداری مردانه است."
+      },
+      {
+        "type": "binary",
+        "question": "Le cordon ombilical relie le fœtus au placenta pendant la grossesse.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درست است؛ بند ناف ارتباط فیزیولوژیک جنین با جفت را برقرار می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "L'obstétrique est une discipline médicale qui s'intéresse notamment à la grossesse et à l'accouchement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درست است؛ obstétrique شاخه پزشکی مرتبط با بارداری، زایمان و مراقبت‌های مربوط به آن است."
+      }
+    ]
+  }
+}
