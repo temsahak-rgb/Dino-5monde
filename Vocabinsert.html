@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 واردکننده JSON (بدون نیاز به بلوک کد)</title>
+    <style>
+        body { font-family: Tahoma, Arial; padding: 20px; background: linear-gradient(135deg, #087F5B 0%, #065f46 100%); min-height: 100vh; margin: 0; color: #333; }
+        .container { max-width: 950px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+        h1 { color: #087F5B; text-align: center; margin-bottom: 10px; }
+        .subtitle { text-align: center; color: #777; margin-bottom: 25px; font-size: 14px; }
+        .setup { background: #f0f9ff; border: 2px solid #087F5B; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        label { display: block; margin: 12px 0 6px; font-weight: bold; color: #333; }
+        input, textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; font-family: inherit; box-sizing: border-box; }
+        textarea { min-height: 250px; font-family: monospace; font-size: 12px; resize: vertical; }
+        .btn { background: #087F5B; color: white; border: none; padding: 14px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; width: 100%; margin-top: 15px; transition: 0.2s; }
+        .btn:hover:not(:disabled) { background: #066b4c; transform: translateY(-2px); }
+        .btn:disabled { background: #ccc; cursor: not-allowed; }
+        .log { background: #1a1a1a; color: #00ff00; padding: 15px; border-radius: 8px; margin-top: 20px; max-height: 350px; overflow-y: auto; font-family: monospace; font-size: 13px; line-height: 1.6; }
+        .log-success { color: #00ff00; } .log-error { color: #ff4444; } .log-info { color: #44aaff; } .log-warning { color: #ffaa00; }
+        .preview { background: #fffbeb; border: 1px solid #fde68a; padding: 15px; border-radius: 8px; margin-top: 15px; display: none; }
+        .preview-item { background: #fff; padding: 14px; border-radius: 6px; margin-bottom: 10px; border-right: 4px solid #087F5B; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .summary { background: #d1fae5; border: 2px solid #087F5B; padding: 15px; border-radius: 8px; margin: 15px 0; text-align: center; }
+        .summary strong { color: #065f46; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 واردکننده JSON (بدون نیاز به بلوک کد)</h1>
+        <p class="subtitle">ربات مستقیماً هر JSON را در متن پیدا می‌کند، حتی بدون ```</p>
+
+        <div class="setup">
+            <label>GitHub Token:</label>
+            <input type="password" id="token" placeholder="ghp_...">
+            
+            <label>متن کامل پیام Qwen را اینجا پیست کنید:</label>
+            <textarea id="qwenText" placeholder="کل پیام را اینجا پیست کنید..."></textarea>
+
+            <button class="btn" id="processBtn" onclick="processText()">🔍 استخراج و نمایش پیش‌نمایش</button>
+        </div>
+
+        <div class="preview" id="previewBox">
+            <div class="summary">
+                <strong>📦 <span id="packCount">0</span> پک معتبر پیدا شد</strong>
+            </div>
+            <div id="previewList"></div>
+            <button class="btn" id="confirmBtn" onclick="confirmUpload()" style="background:#d97706; margin-top:15px;">✅ تأیید و آپلود همه پک‌ها</button>
+        </div>
+
+        <div class="log" id="log"></div>
+    </div>
+
+    <script>
+        let foundPacks = [];
+
+        function log(msg, type = 'info') {
+            const logDiv = document.getElementById('log');
+            const time = new Date().toLocaleTimeString('fa-IR');
+            logDiv.innerHTML += `<div class="log-${type}">[${time}] ${msg}</div>`;
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+
+        // 🎯 تابع استخراج JSON با شمارنده پرانتز
+        function extractAllJSON(text) {
+            const results = [];
+            let i = 0;
+            
+            while (i < text.length) {
+                // پیدا کردن { بعدی
+                if (text[i] === '{') {
+                    let braceCount = 0;
+                    let inString = false;
+                    let escape = false;
+                    let start = i;
+                    
+                    // شمارش پرانتزها تا بسته شدن کامل
+                    for (let j = i; j < text.length; j++) {
+                        const char = text[j];
+                        
+                        if (escape) {
+                            escape = false;
+                            continue;
+                        }
+                        
+                        if (char === '\\') {
+                            escape = true;
+                            continue;
+                        }
+                        
+                        if (char === '"') {
+                            inString = !inString;
+                            continue;
+                        }
+                        
+                        if (!inString) {
+                            if (char === '{') braceCount++;
+                            if (char === '}') {
+                                braceCount--;
+                                if (braceCount === 0) {
+                                    // یک شیء JSON کامل پیدا شد
+                                    const jsonStr = text.substring(start, j + 1);
+                                    results.push(jsonStr);
+                                    i = j + 1;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    i++;
+                }
+            }
+            
+            return results;
+        }
+
+        async function githubGet(path, token, user, repo) {
+            const res = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/${path}`, { 
+                headers: { 'Authorization': `token ${token}` } 
+            });
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return await res.json();
+        }
+
+        async function githubPut(path, content, sha, token, user, repo, message) {
+            const body = { message, content: btoa(unescape(encodeURIComponent(content))) };
+            if (sha) body.sha = sha;
+            
+            const res = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/${path}`, {
+                method: 'PUT',
+                headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+                body: JSON.stringify(body)
+            });
+            if (!res.ok) {
+                const err = await res.text();
+                throw new Error(`PUT failed: ${err}`);
+            }
+        }
+
+        async function processText() {
+            const text = document.getElementById('qwenText').value;
+            if (!text.trim()) {
+                log('❌ کادر متن خالی است', 'error');
+                return;
+            }
+
+            log('🔍 در حال جستجوی همه اشیاء JSON در متن...', 'info');
+            foundPacks = [];
+            
+            // 🎯 استخراج همه JSONها با شمارنده پرانتز
+            const jsonStrings = extractAllJSON(text);
+            log(`📊 ${jsonStrings.length} شیء JSON پیدا شد.`, 'info');
+            
+            let validCount = 0;
+            
+            jsonStrings.forEach((jsonStr, index) => {
+                try {
+                    const pack = JSON.parse(jsonStr);
+
+                    // فقط پک‌هایی که id و level دارند را بپذیر
+                    if (!pack.id || !pack.level) {
+                        return;
+                    }
+
+                    // 🧹 تمیزسازی ID
+                    const originalId = pack.id;
+                    const cleanId = originalId.replace(/_\d+$/, ''); 
+                    
+                    pack.id = cleanId;
+                    
+                    foundPacks.push({
+                        originalId: originalId,
+                        cleanId: cleanId,
+                        level: pack.level,
+                        data: pack,
+                        targetPath: `data/vocabulary/${pack.level}/${cleanId}.json`,
+                        indexPath: `data/vocabulary/vocab-${pack.level}.json`,
+                        wordsCount: pack.words ? pack.words.length : 0
+                    });
+                    validCount++;
+                    log(`✅ پک ${validCount}: ${originalId} ➔ ${cleanId} (${pack.level}, ${pack.words.length} کلمه)`, 'success');
+
+                } catch (e) {
+                    // JSON معتبر نبود، نادیده بگیر
+                }
+            });
+
+            log(`\n📊 نتیجه: ${validCount} پک معتبر از ${jsonStrings.length} شیء JSON.`, validCount > 0 ? 'success' : 'error');
+
+            if (foundPacks.length === 0) {
+                log('❌ هیچ پک معتبری پیدا نشد.', 'error');
+                return;
+            }
+
+            // نمایش پیش‌نمایش
+            const previewList = document.getElementById('previewList');
+            previewList.innerHTML = '';
+            document.getElementById('packCount').textContent = validCount;
+
+            foundPacks.forEach((p, index) => {
+                previewList.innerHTML += `
+                    <div class="preview-item">
+                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                            <strong style="font-size:16px;color:#087F5B;">${index + 1}. ${p.data.icon || '📦'} ${p.data.theme || p.cleanId}</strong>
+                            <span style="background:#087F5B;color:#fff;padding:4px 10px;border-radius:4px;font-size:12px;font-weight:700;">${p.level}</span>
+                        </div>
+                        <div style="font-size:13px;color:#555;margin-bottom:8px;">
+                            <span style="text-decoration:line-through;color:#999;">${p.originalId}</span> 
+                            <span style="color:#087F5B;font-weight:bold;">➔ ${p.cleanId}</span>
+                            <span style="margin-right:15px;">(${p.wordsCount} کلمه)</span>
+                        </div>
+                        <div style="font-size:11px;color:#777;background:#f9fafb;padding:8px;border-radius:4px;font-family:monospace;">
+                            📁 ${p.targetPath}<br>
+                            📑 ${p.indexPath}
+                        </div>
+                    </div>
+                `;
+            });
+
+            document.getElementById('previewBox').style.display = 'block';
+        }
+
+        async function confirmUpload() {
+            if (foundPacks.length === 0) return;
+
+            const token = document.getElementById('token').value.trim();
+            const user = "temsahak-rgb";
+            const repo = "Dino-5monde";
+
+            if (!token) {
+                log('❌ لطفاً GitHub Token را وارد کنید', 'error');
+                return;
+            }
+
+            localStorage.setItem('dino_token', token);
+            document.getElementById('processBtn').disabled = true;
+            document.getElementById('confirmBtn').disabled = true;
+            document.getElementById('confirmBtn').textContent = '⏳ در حال آپلود...';
+
+            try {
+                for (let i = 0; i < foundPacks.length; i++) {
+                    const p = foundPacks[i];
+                    log(`\n📤 [${i + 1}/${foundPacks.length}] پردازش: ${p.cleanId}`, 'info');
+
+                    // ۱. آپلود فایل JSON
+                    let existingSha = null;
+                    try {
+                        const existing = await githubGet(p.targetPath, token, user, repo);
+                        existingSha = existing.sha;
+                    } catch (e) { /* فایل جدید */ }
+
+                    await githubPut(
+                        p.targetPath, 
+                        JSON.stringify(p.data, null, 2), 
+                        existingSha, 
+                        token, 
+                        user, 
+                        repo, 
+                        `🤖 Auto-import: ${p.cleanId}`
+                    );
+                    log(`  ✅ فایل آپلود شد: ${p.targetPath}`, 'success');
+
+                    // ۲. به‌روزرسانی فهرست
+                    try {
+                        const listFile = await githubGet(p.indexPath, token, user, repo);
+                        const list = JSON.parse(decodeURIComponent(escape(atob(listFile.content))));
+                        
+                        const oldIndex = list.findIndex(item => item.id === p.originalId || item.id === p.cleanId);
+                        if (oldIndex >= 0) list.splice(oldIndex, 1);
+                        
+                        list.push({
+                            id: p.cleanId,
+                            title: p.data.theme || p.data.title,
+                            title_fa: p.data.theme_fa || p.data.title_fa,
+                            icon: p.data.icon,
+                            words: p.wordsCount
+                        });
+                        
+                        await githubPut(p.indexPath, JSON.stringify(list, null, 2), listFile.sha, token, user, repo, `📝 Update ${p.indexPath}`);
+                        log(`  ✅ فهرست به‌روز شد: ${p.indexPath}`, 'success');
+                    } catch (e) {
+                        log(`  ⚠️ خطا در فهرست: ${e.message}`, 'warning');
+                    }
+                    
+                    await new Promise(r => setTimeout(r, 800));
+                }
+
+                log(`\n🎉 پایان! ${foundPacks.length} پک با موفقیت آپلود شد.`, 'success');
+                
+                // 🧹 پاک کردن خودکار متن پیست شده پس از اتمام موفقیت‌آمیز
+                document.getElementById('qwenText').value = '';
+                log('🧹 کادر متن ورودی به‌طور خودکار پاک شد تا برای دفعه بعد آماده باشد.', 'info');
+
+                document.getElementById('previewBox').style.display = 'none';
+                document.getElementById('confirmBtn').textContent = '✅ تأیید و آپلود همه پک‌ها';
+
+            } catch (e) {
+                log(`\n❌ خطای کلی: ${e.message}`, 'error');
+            }
+
+            document.getElementById('processBtn').disabled = false;
+            document.getElementById('confirmBtn').disabled = false;
+        }
+
+        window.onload = function() {
+            if (localStorage.getItem('dino_token')) document.getElementById('token').value = localStorage.getItem('dino_token');
+        };
+        document.getElementById('token').addEventListener('change', function(e) {
+            localStorage.setItem('dino_token', e.target.value.trim());
+        });
+    </script>
+</body>
+</html>
