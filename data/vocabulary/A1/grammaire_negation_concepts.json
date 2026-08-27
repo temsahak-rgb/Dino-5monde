@@ -1,0 +1,511 @@
+{
+  "id": "grammaire_negation_concepts",
+  "level": "A1",
+  "theme": "Grammaire, Négation et Concepts Structurels",
+  "theme_fa": "گرامر، منفی کردن و مفاهیم ساختاری",
+  "icon": "⚖️",
+  "inspiration": "Grammaire Progressive / French in Action",
+  "words": [
+    {
+      "fr": "l'euro",
+      "fa": "یورو",
+      "emoji": "💶",
+      "difficulty": 1,
+      "ex": "Ce livre coûte dix euros.",
+      "ex_fa": "این کتاب ده یورو قیمت دارد."
+    },
+    {
+      "fr": "l'idée",
+      "fa": "ایده / فکر",
+      "emoji": "💡",
+      "difficulty": 1,
+      "ex": "C'est une très bonne idée !",
+      "ex_fa": "این یک ایده بسیار خوب است!"
+    },
+    {
+      "fr": "les informations",
+      "fa": "اخبار",
+      "emoji": "📺",
+      "difficulty": 1,
+      "ex": "Je regarde les informations à la télé le soir.",
+      "ex_fa": "من شب‌ها اخبار را در تلویزیون تماشا می‌کنم."
+    },
+    {
+      "fr": "ne...pas",
+      "fa": "نه (منفی‌ساز ساده)",
+      "emoji": "🚫",
+      "difficulty": 1,
+      "ex": "Je ne veux pas sortir ce soir.",
+      "ex_fa": "من امشب نمی‌خواهم بیرون بروم."
+    },
+    {
+      "fr": "ne...personne",
+      "fa": "هیچ‌کس (منفی)",
+      "emoji": "🚶‍♂️",
+      "difficulty": 2,
+      "ex": "Il n'y a personne dans la rue.",
+      "ex_fa": "هیچ‌کس در خیابان نیست."
+    },
+    {
+      "fr": "ne...plus",
+      "fa": "دیگر نه (منفی)",
+      "emoji": "⏹️",
+      "difficulty": 2,
+      "ex": "Je ne fume plus depuis un an.",
+      "ex_fa": "من از یک سال پیش دیگر سیگار نمی‌کشم."
+    },
+    {
+      "fr": "ne...jamais",
+      "fa": "هرگز (منفی)",
+      "emoji": "⛔",
+      "difficulty": 2,
+      "ex": "Je ne mange jamais de viande le lundi.",
+      "ex_fa": "من دوشنبه‌ها هرگز گوشت نمی‌خورم."
+    },
+    {
+      "fr": "ne...rien",
+      "fa": "هیچ‌چیز (منفی)",
+      "emoji": "🚷",
+      "difficulty": 2,
+      "ex": "Je ne dis rien, je garde le secret.",
+      "ex_fa": "من هیچ‌چیزی نمی‌گویم، راز را نگه می‌دارم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une soirée à la maison",
+      "title_fa": "یک شب در خانه",
+      "text": "Ce soir, je regarde ____ (3) à la télévision. J'ai une ____ (2) pour changer de chaîne. Le journal coûte deux ____ (1), mais je ne l'achète ____ (4). Je ____ (5) vois ____ (6) dans la rue, il est tard. Je ____ (7) dis ____ (8) à ma famille, je suis fatigué. Je ____ (9) fume ____ (10), c'est mauvais pour la santé. Et je ____ (11) mange ____ (12) de sucre. C'est une soirée calme.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "euros",
+          "options": [
+            "euros",
+            "idées",
+            "informations",
+            "personnes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "idée",
+          "options": [
+            "idée",
+            "euro",
+            "information",
+            "rien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "les informations",
+          "options": [
+            "les informations",
+            "les euros",
+            "les idées",
+            "les personnes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "pas",
+          "options": [
+            "pas",
+            "personne",
+            "plus",
+            "jamais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "ne",
+          "options": [
+            "ne",
+            "pas",
+            "plus",
+            "jamais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "personne",
+          "options": [
+            "personne",
+            "pas",
+            "plus",
+            "rien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "ne",
+          "options": [
+            "ne",
+            "pas",
+            "plus",
+            "jamais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "rien",
+          "options": [
+            "rien",
+            "personne",
+            "pas",
+            "plus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ne",
+          "options": [
+            "ne",
+            "pas",
+            "plus",
+            "jamais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "plus",
+          "options": [
+            "plus",
+            "pas",
+            "personne",
+            "rien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "ne",
+          "options": [
+            "ne",
+            "pas",
+            "plus",
+            "jamais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "jamais",
+          "options": [
+            "jamais",
+            "pas",
+            "personne",
+            "rien"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le silence de la nuit",
+      "title_fa": "سکوت شب",
+      "inspiration": "Le Petit Prince",
+      "text": "La nuit tombait. Je n'avais ____ (1) ____ (2) d'argent, seulement quelques ____ (3) en poche. Je n'ai eu ____ (4) ____ (5) bonne idée pour résoudre ce problème. À la télévision, ____ (6) ne passaient ____ (7) que des publicités. Je ne voyais ____ (8) ____ (9) dehors, la ville dormait. Je ne disais ____ (10) ____ (11), perdu dans mes pensées. Je ne fumais ____ (12) ____ (13), j'avais arrêté l'année dernière. Et je ne mangeais ____ (14) ____ (15) après minuit. Le calme était absolu.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "pas",
+          "options": [
+            "pas",
+            "personne",
+            "plus",
+            "jamais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "d'euros",
+          "options": [
+            "d'euros",
+            "d'idées",
+            "d'informations",
+            "de personnes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "euros",
+          "options": [
+            "euros",
+            "idées",
+            "informations",
+            "personnes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "pas",
+          "options": [
+            "pas",
+            "personne",
+            "plus",
+            "jamais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "d'idée",
+          "options": [
+            "d'idée",
+            "d'euro",
+            "d'information",
+            "de personne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "les informations",
+          "options": [
+            "les informations",
+            "les euros",
+            "les idées",
+            "les personnes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pas",
+          "options": [
+            "pas",
+            "personne",
+            "plus",
+            "jamais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "ne",
+          "options": [
+            "ne",
+            "pas",
+            "plus",
+            "jamais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "personne",
+          "options": [
+            "personne",
+            "pas",
+            "plus",
+            "rien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "ne",
+          "options": [
+            "ne",
+            "pas",
+            "plus",
+            "jamais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "rien",
+          "options": [
+            "rien",
+            "personne",
+            "pas",
+            "plus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ne",
+          "options": [
+            "ne",
+            "pas",
+            "plus",
+            "jamais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "plus",
+          "options": [
+            "plus",
+            "pas",
+            "personne",
+            "rien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "ne",
+          "options": [
+            "ne",
+            "pas",
+            "plus",
+            "jamais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "jamais",
+          "options": [
+            "jamais",
+            "pas",
+            "personne",
+            "rien"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Grammaire, Négation et Concepts",
+    "title_fa": "آزمون: گرامر، منفی کردن و مفاهیم",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La monnaie utilisée en France est l'____.",
+        "options": [
+          "euro",
+          "idée",
+          "information",
+          "équipe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واحد پول مورد استفاده در فرانسه یورو (euro) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « من نمی‌خواهم », on dit : Je ____ veux ____.",
+        "options": [
+          "ne...pas",
+          "ne...personne",
+          "ne...plus",
+          "ne...jamais"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای منفی کردن ساده از ساختار ne...pas استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Si la rue est vide, tu dis : Je ne vois ____.",
+        "options": [
+          "personne",
+          "pas",
+          "plus",
+          "jamais"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وقتی خیابان خالی است، می‌گوییم هیچ‌کس را نمی‌بینم (ne vois personne)."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « دیگر نه » (مثلاً دیگر سیگار نمی‌کشم), on utilise ____.",
+        "options": [
+          "ne...plus",
+          "ne...pas",
+          "ne...jamais",
+          "ne...rien"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای بیان «دیگر نه» یا توقف یک عادت از ne...plus استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « هرگز » (مثلاً هرگز گوشت نمی‌خورم), on utilise ____.",
+        "options": [
+          "ne...jamais",
+          "ne...pas",
+          "ne...plus",
+          "ne...personne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای بیان «هرگز» از ne...jamais استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « هیچ‌چیز » (مثلاً هیچ‌چیزی نمی‌گویم), on utilise ____.",
+        "options": [
+          "ne...rien",
+          "ne...pas",
+          "ne...plus",
+          "ne...personne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای بیان «هیچ‌چیز» در جملات منفی از ne...rien استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le programme télévisé qui donne les nouvelles du jour s'appelle les ____.",
+        "options": [
+          "informations",
+          "idées",
+          "euros",
+          "livres"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برنامه تلویزیونی که اخبار روز را می‌دهد، informations نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Une pensée ou un projet dans la tête est une ____.",
+        "options": [
+          "idée",
+          "information",
+          "euro",
+          "lettre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یک فکر یا طرح در ذهن، ایده (idée) نامیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Dans la négation « ne...personne », le mot « personne » signifie « somebody ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، personne در ساختار منفی به معنای «هیچ‌کس» است."
+      },
+      {
+        "type": "binary",
+        "question": "« Je ne fume plus » signifie que j'ai arrêté de fumer.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، ne...plus به معنای ترک یک عادت یا «دیگر نه» است."
+      }
+    ]
+  }
+}
