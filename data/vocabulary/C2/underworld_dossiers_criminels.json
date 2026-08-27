@@ -1,0 +1,639 @@
+{
+  "id": "underworld_dossiers_criminels",
+  "level": "C2",
+  "theme": "Underworld et dossiers criminels",
+  "theme_fa": "دنیای زیرزمینی و پرونده‌های جنایی تاریک",
+  "icon": "🕵️",
+  "inspiration": "Gangs of London",
+  "words": [
+    {
+      "fr": "l'extradition",
+      "fa": "استرداد مجرم به کشور دیگر",
+      "emoji": "⚖️",
+      "difficulty": 4,
+      "ex": "Le traité d'extradition a enfin été signé entre les deux pays.",
+      "ex_fa": "معاهده استرداد سرانجام میان دو کشور امضا شد."
+    },
+    {
+      "fr": "la fusillade",
+      "fa": "تیراندازی، معمولاً شدید و گروهی",
+      "emoji": "🚨",
+      "difficulty": 3,
+      "ex": "Une fusillade a éclaté en plein centre-ville.",
+      "ex_fa": "یک تیراندازی شدید در مرکز شهر رخ داد."
+    },
+    {
+      "fr": "le génocide",
+      "fa": "نسل‌کشی",
+      "emoji": "🕯️",
+      "difficulty": 4,
+      "ex": "Le génocide est considéré comme l'un des crimes les plus graves contre l'humanité.",
+      "ex_fa": "نسل‌کشی یکی از جدی‌ترین جنایت‌ها علیه بشریت محسوب می‌شود."
+    },
+    {
+      "fr": "la décapitation",
+      "fa": "سر بریدن",
+      "emoji": "⚔️",
+      "difficulty": 5,
+      "ex": "La décapitation fut autrefois utilisée comme peine capitale.",
+      "ex_fa": "سر بریدن در گذشته به‌عنوان مجازات اعدام استفاده می‌شد."
+    },
+    {
+      "fr": "l'embuscade",
+      "fa": "کمین",
+      "emoji": "🌑",
+      "difficulty": 4,
+      "ex": "Les soldats sont tombés dans une embuscade mortelle.",
+      "ex_fa": "سربازان در یک کمین مرگبار گرفتار شدند."
+    },
+    {
+      "fr": "le bourbier",
+      "fa": "لجن‌زار / مخمصه و بحران پیچیده",
+      "emoji": "🕳️",
+      "difficulty": 4,
+      "ex": "Cette guerre est devenue un véritable bourbier politique.",
+      "ex_fa": "این جنگ به یک مخمصه سیاسی واقعی تبدیل شده است."
+    },
+    {
+      "fr": "le dépotoir",
+      "fa": "زباله‌دانی / محل دفن زباله",
+      "emoji": "🗑️",
+      "difficulty": 3,
+      "ex": "Cette région est malheureusement devenue le dépotoir de plusieurs industries.",
+      "ex_fa": "این منطقه متأسفانه به زباله‌دانی چندین صنعت تبدیل شده است."
+    },
+    {
+      "fr": "l'assignation",
+      "fa": "احضاریه دادگاه",
+      "emoji": "📜",
+      "difficulty": 5,
+      "ex": "Il a reçu une assignation à comparaître devant le juge.",
+      "ex_fa": "او احضاریه‌ای برای حضور در برابر قاضی دریافت کرد."
+    },
+    {
+      "fr": "le consortium",
+      "fa": "کنسرسیوم، اتحاد چند شرکت یا نهاد",
+      "emoji": "🏢",
+      "difficulty": 4,
+      "ex": "Un consortium international a remporté l'appel d'offres.",
+      "ex_fa": "یک کنسرسیوم بین‌المللی برنده مناقصه شد."
+    },
+    {
+      "fr": "la sodomie",
+      "fa": "لواط / رابطه جنسی مقعدی",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "Dans certains textes juridiques anciens, la sodomie était sévèrement réprimée.",
+      "ex_fa": "در برخی متون حقوقی قدیمی، لواط به‌شدت مجازات می‌شد."
+    },
+    {
+      "fr": "la fellation",
+      "fa": "رابطه جنسی دهانی",
+      "emoji": "📖",
+      "difficulty": 5,
+      "ex": "Le terme médical fellation apparaît dans de nombreux ouvrages de médecine légale.",
+      "ex_fa": "اصطلاح پزشکی fellation در بسیاری از کتاب‌های پزشکی قانونی دیده می‌شود."
+    },
+    {
+      "fr": "le prostitué",
+      "fa": "فرد تن‌فروش / کارگر جنسی مرد",
+      "emoji": "🚪",
+      "difficulty": 4,
+      "ex": "Le réseau exploitait de jeunes prostitués clandestins.",
+      "ex_fa": "این شبکه از جوانان تن‌فروش غیرقانونی بهره‌کشی می‌کرد."
+    },
+    {
+      "fr": "l'éventreur",
+      "fa": "شکافنده؛ عنوانی برای قاتلانی مانند جک شکافنده",
+      "emoji": "🔪",
+      "difficulty": 5,
+      "ex": "L'Éventreur de Whitechapel terrorisait Londres au XIXe siècle.",
+      "ex_fa": "شکافنده وایت‌چپل در قرن نوزدهم لندن را به وحشت انداخته بود."
+    },
+    {
+      "fr": "la beuverie",
+      "fa": "می‌گساری / باده‌گساری افراطی",
+      "emoji": "🥂",
+      "difficulty": 4,
+      "ex": "La soirée s'est terminée dans une beuverie générale.",
+      "ex_fa": "مهمانی با یک می‌گساری افراطی و همگانی به پایان رسید."
+    },
+    {
+      "fr": "foutrement",
+      "fa": "به‌شدت / خیلی زیاد، به‌صورت عامیانه و رکیک",
+      "emoji": "💢",
+      "difficulty": 5,
+      "ex": "Ce quartier est foutrement dangereux la nuit.",
+      "ex_fa": "این محله شب‌ها واقعاً به‌شدت خطرناک است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le dossier noir",
+      "title_fa": "پرونده سیاه",
+      "text": "La police enquêtait depuis plusieurs mois sur un réseau international. Le chef présumé avait quitté le pays après une {{BLANK_1}} au cours de laquelle plusieurs personnes avaient été blessées. Les enquêteurs pensaient qu'il avait organisé une {{BLANK_2}} contre un témoin avant de disparaître. Une semaine plus tard, le suspect fut arrêté à l'étranger. Le parquet demanda son {{BLANK_3}} afin qu'il puisse être jugé dans son pays d'origine. Au même moment, les enquêteurs découvrirent qu'une grande entreprise avait travaillé avec un {{BLANK_4}} de sociétés écrans pour transférer de l'argent. Le dossier contenait aussi une {{BLANK_5}} envoyée par un juge, obligeant un ancien associé à comparaître. Plus l'enquête avançait, plus les policiers avaient l'impression d'entrer dans un véritable {{BLANK_6}}. Les preuves semblaient nombreuses, mais les liens entre les différentes personnes restaient difficiles à établir. Un ancien entrepôt servait même de {{BLANK_7}} clandestin pour des documents et du matériel abandonnés. Le procureur savait que l'affaire serait longue et politiquement sensible.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "la fusillade",
+          "options": [
+            "la fusillade",
+            "l'embuscade",
+            "l'extradition",
+            "l'assignation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "l'embuscade",
+          "options": [
+            "le consortium",
+            "l'embuscade",
+            "le bourbier",
+            "le dépotoir"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 3,
+          "answer": "l'extradition",
+          "options": [
+            "la décapitation",
+            "l'extradition",
+            "la beuverie",
+            "l'assignation"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 4,
+          "answer": "le consortium",
+          "options": [
+            "le génocide",
+            "le consortium",
+            "l'éventreur",
+            "le dépotoir"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 5,
+          "answer": "l'assignation",
+          "options": [
+            "l'assignation",
+            "l'embuscade",
+            "la fusillade",
+            "le bourbier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "le bourbier",
+          "options": [
+            "le dépotoir",
+            "le bourbier",
+            "le consortium",
+            "l'extradition"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 7,
+          "answer": "le dépotoir",
+          "options": [
+            "le dépotoir",
+            "l'assignation",
+            "la fusillade",
+            "l'embuscade"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La ville sous la ville",
+      "title_fa": "شهر زیر شهر",
+      "inspiration": "Gangs of London",
+      "text": "La pluie tombait sur Londres lorsque l'inspecteur Vale reçut le dossier que personne dans la brigade ne voulait ouvrir. Sur la première page figurait le nom d'un réseau qui contrôlait des sociétés de transport, des clubs privés et plusieurs entreprises parfaitement légales. Derrière ces façades respectables se cachait une organisation dont les ramifications semblaient s'étendre à plusieurs continents. Vale avait déjà vu des affaires complexes, mais celle-ci ressemblait moins à une enquête qu'à une descente dans un labyrinthe. Le dossier commençait par un crime ancien : un massacre que les historiens qualifiaient de {{BLANK_1}}. Les enquêteurs avaient découvert que certains responsables du réseau avaient utilisé cette tragédie pour justifier des opérations clandestines pendant des décennies. Plus loin, les archives mentionnaient une série de meurtres attribués à un mystérieux {{BLANK_2}}, surnom donné à un assassin dont l'identité n'avait jamais été établie avec certitude. Vale comprit rapidement que cette vieille affaire n'était pas indépendante du présent. Plusieurs témoins avaient disparu après avoir accepté de parler. L'un d'eux avait été retrouvé après une {{BLANK_3}} particulièrement violente, sans qu'aucun suspect ne fût immédiatement identifié. Un autre avait raconté avoir été conduit dans un bâtiment abandonné où les criminels avaient procédé à une {{BLANK_4}} destinée à terroriser les membres d'un groupe rival. Les dossiers judiciaires contenaient également des références à des violences sexuelles. Vale ne s'attarda pas sur les détails sordides, mais nota que certains rapports mentionnaient la {{BLANK_5}} et la {{BLANK_6}} dans le cadre d'affaires examinées par la médecine légale. D'autres documents décrivaient l'exploitation de personnes vulnérables, parmi lesquelles plusieurs hommes contraints de travailler comme {{BLANK_7}} pour rembourser des dettes imposées par le réseau. Ce qui inquiétait surtout Vale était la manière dont ces crimes étaient protégés par une structure financière complexe. Un {{BLANK_8}} de sociétés écrans transférait les bénéfices d'un pays à l'autre, rendant presque impossible toute saisie immédiate. Quand Vale présenta ses conclusions au procureur, celui-ci parla d'un véritable {{BLANK_9}} politique : chaque tentative de démantèlement semblait ouvrir une nouvelle crise. Puis arriva une information venue d'une prison étrangère. Le principal suspect pouvait être transféré, mais uniquement si les autorités obtenaient son {{BLANK_10}}. La procédure promettait d'être longue. Pendant ce temps, les membres du réseau continuaient leurs activités. Une nuit, Vale reçut un message anonyme : « Vous cherchez sous la ville, mais la ville vous regarde. » Il comprit alors que quelqu'un connaissait chaque mouvement de l'enquête. L'homme qui avait envoyé le message fut finalement retrouvé dans un ancien entrepôt, devenu un lieu de réunion après une {{BLANK_11}} organisée par les dirigeants du réseau. Il était terrifié et répétait que toute l'affaire était {{BLANK_12}} plus vaste que ce que les policiers imaginaient. Vale ne répondit pas. Il regarda les lumières de Londres à travers la fenêtre. Sous les rues éclairées, une autre ville respirait encore. Il savait désormais que l'enquête ne se terminerait pas avec une arrestation. Pour atteindre le sommet, il faudrait traverser chaque couche de ce monde clandestin sans se laisser absorber par lui.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "le génocide",
+          "options": [
+            "le génocide",
+            "le consortium",
+            "le bourbier",
+            "le dépotoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "l'éventreur",
+          "options": [
+            "l'éventreur",
+            "le prostitué",
+            "le consortium",
+            "le bourbier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "la fusillade",
+          "options": [
+            "la fusillade",
+            "l'extradition",
+            "l'assignation",
+            "la beuverie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "la décapitation",
+          "options": [
+            "la décapitation",
+            "la sodomie",
+            "la fellation",
+            "l'embuscade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "la sodomie",
+          "options": [
+            "la sodomie",
+            "la décapitation",
+            "la beuverie",
+            "l'extradition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "la fellation",
+          "options": [
+            "la fellation",
+            "la fusillade",
+            "l'embuscade",
+            "le dépotoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "le prostitué",
+          "options": [
+            "le prostitué",
+            "l'éventreur",
+            "le consortium",
+            "le bourbier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "le consortium",
+          "options": [
+            "le consortium",
+            "l'assignation",
+            "la beuverie",
+            "la fusillade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "le bourbier",
+          "options": [
+            "le bourbier",
+            "le dépotoir",
+            "l'extradition",
+            "l'éventreur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "l'extradition",
+          "options": [
+            "l'extradition",
+            "la décapitation",
+            "l'embuscade",
+            "l'assignation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "la beuverie",
+          "options": [
+            "la beuverie",
+            "la sodomie",
+            "la fellation",
+            "le génocide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "foutrement",
+          "options": [
+            "foutrement",
+            "officiellement",
+            "paisiblement",
+            "partiellement"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Underworld et dossiers criminels",
+    "title_fa": "آزمون : دنیای زیرزمینی و پرونده‌های جنایی تاریک",
+    "displayCount": 24,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Lorsqu'un État demande qu'une personne recherchée dans un autre pays lui soit remise afin d'y être jugée, il s'agit d'une ____.",
+        "options": [
+          "extradition",
+          "assignation",
+          "embuscade",
+          "fusion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Extradition به فرایند استرداد فرد تحت تعقیب از یک کشور به کشور دیگری برای محاکمه یا اجرای مجازات گفته می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Plusieurs individus armés ouvrent soudainement le feu dans une rue très fréquentée : une ____ vient d'avoir lieu.",
+        "options": [
+          "fusillade",
+          "assignation",
+          "extradition",
+          "beuverie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Fusillade به تیراندازی شدید، معمولاً با استفاده از سلاح گرم و گاهی میان چند نفر، گفته می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "La destruction intentionnelle d'un groupe humain en raison de son appartenance nationale, ethnique ou religieuse peut constituer un ____.",
+        "options": [
+          "génocide",
+          "bourbier",
+          "consortium",
+          "dépotoir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Génocide به نابودی عمدی یک گروه ملی، قومی، نژادی یا دینی به‌عنوان چنین گروهی اشاره دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans certains récits historiques, l'exécution consistant à séparer la tête du corps est appelée ____.",
+        "options": [
+          "décapitation",
+          "extradition",
+          "assignation",
+          "embuscade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Décapitation به عمل جدا کردن سر از بدن گفته می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Des criminels se cachent près d'une route et attendent l'arrivée de leur cible avant de l'attaquer : ils ont préparé une ____.",
+        "options": [
+          "embuscade",
+          "beuverie",
+          "assignation",
+          "extradition"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Embuscade یعنی کمین؛ یعنی پنهان‌شدن برای حمله ناگهانی به هدف."
+      },
+      {
+        "type": "mcq",
+        "question": "Après plusieurs années d'intervention militaire, le pays se retrouve dans une situation politique dont il semble impossible de sortir.",
+        "options": [
+          "un bourbier",
+          "un consortium",
+          "un dépotoir",
+          "un tribunal"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Bourbier در معنای استعاری به وضعیت بسیار پیچیده و دشواری گفته می‌شود که خروج از آن سخت است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une ancienne zone industrielle est devenue un immense lieu où l'on déverse des déchets.",
+        "options": [
+          "un dépotoir",
+          "un consortium",
+          "un bourbier",
+          "un parquet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Dépotoir به محل انباشت یا دفن زباله و پسماند گفته می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Un document officiel ordonne à une personne de se présenter devant un tribunal à une date précise : il s'agit d'une ____.",
+        "options": [
+          "assignation",
+          "extradition",
+          "fusillade",
+          "embuscade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Assignation در این بافت به احضاریه رسمی برای حضور در دادگاه گفته می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Plusieurs grandes entreprises s'unissent temporairement afin de répondre ensemble à un appel d'offres international. Elles forment un ____.",
+        "options": [
+          "consortium",
+          "dépotoir",
+          "bourbier",
+          "tribunal"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Consortium به اتحاد چند شرکت یا نهاد برای اجرای یک پروژه یا هدف مشترک گفته می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans un document de médecine légale, quel terme désigne une pratique sexuelle impliquant une pénétration anale ?",
+        "options": [
+          "la sodomie",
+          "la décapitation",
+          "l'extradition",
+          "la fusillade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Sodomie اصطلاحی برای رابطه جنسی مقعدی است و در متون حقوقی و پزشکی نیز ممکن است به کار رود."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans un rapport médico-légal, quel terme désigne une pratique sexuelle consistant en une stimulation orale des organes génitaux ?",
+        "options": [
+          "la fellation",
+          "la décapitation",
+          "l'embuscade",
+          "l'assignation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Fellation اصطلاحی پزشکی برای رابطه جنسی دهانی با اندام تناسلی مردانه است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un homme exploité sexuellement par un réseau criminel est décrit dans le dossier comme un ____.",
+        "options": [
+          "prostitué",
+          "procureur",
+          "consortium",
+          "éventreur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Prostitué به فردی گفته می‌شود که در ازای دریافت پول یا منفعت، خدمات جنسی ارائه می‌دهد؛ در این جمله فرد قربانی بهره‌کشی است."
+      },
+      {
+        "type": "mcq",
+        "question": "Quel surnom historique désigne le meurtrier inconnu qui terrorisa le quartier de Whitechapel à Londres à la fin du XIXe siècle ?",
+        "options": [
+          "l'Éventreur",
+          "le Titan",
+          "le Messie",
+          "le Consort"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "L'Éventreur همان عنوان مشهور قاتل ناشناس Whitechapel است که معمولاً با نام Jack the Ripper شناخته می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Une fête dégénère lorsque les participants consomment de l'alcool de manière excessive pendant toute la nuit. La soirée tourne à ____.",
+        "options": [
+          "la beuverie",
+          "l'extradition",
+          "l'assignation",
+          "l'embuscade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Beuverie به می‌گساری یا نوشیدن افراطی مشروبات الکلی، معمولاً در یک مهمانی یا جمع، گفته می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Un personnage s'exclame : « Ce type est ____ dangereux ! » Quel adverbe familier et vulgaire renforce fortement l'adjectif ?",
+        "options": [
+          "foutrement",
+          "prudemment",
+          "officiellement",
+          "lentement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Foutrement یک قید عامیانه و رکیک است که برای تشدید معنا، تقریباً در مفهوم «خیلی زیاد / به‌شدت» به کار می‌رود."
+      },
+      {
+        "type": "mcq",
+        "question": "Un suspect arrêté à Madrid doit être remis aux autorités françaises pour être jugé à Paris. Quelle procédure est nécessaire ?",
+        "options": [
+          "une extradition",
+          "une assignation",
+          "une embuscade",
+          "une fusion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وقتی فرد در کشور دیگری بازداشت شده و قرار است برای محاکمه به کشور درخواست‌کننده تحویل داده شود، extradition مطرح است."
+      },
+      {
+        "type": "mcq",
+        "question": "Des hommes attendent leur cible derrière des véhicules avant de l'attaquer par surprise.",
+        "options": [
+          "Ils organisent une embuscade.",
+          "Ils organisent une extradition.",
+          "Ils déposent une assignation.",
+          "Ils constituent un consortium."
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حمله ناگهانی از موضع پنهان همان embuscade یا کمین است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une entreprise de transport s'associe avec quatre groupes industriels pour présenter une offre commune à un gouvernement.",
+        "options": [
+          "Ils forment un consortium.",
+          "Ils créent un dépotoir.",
+          "Ils provoquent une fusillade.",
+          "Ils organisent une beuverie."
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اتحاد چند شرکت برای ارائه پیشنهاد یا اجرای پروژه مشترک consortium نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Une assignation à comparaître oblige généralement une personne à se présenter devant une juridiction selon les modalités indiquées.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درست است؛ assignation در این کاربرد یک احضاریه رسمی برای حضور در دادگاه است."
+      },
+      {
+        "type": "binary",
+        "question": "Le mot bourbier désigne uniquement un lieu physique rempli de boue et ne peut jamais avoir de sens figuré.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "غلط است؛ bourbier در معنای استعاری نیز برای یک وضعیت پیچیده و دشوار به کار می‌رود."
+      },
+      {
+        "type": "binary",
+        "question": "Un dépotoir peut désigner un lieu destiné à l'accumulation ou au dépôt de déchets.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درست است؛ dépotoir محل انباشت یا دفع زباله و پسماند است."
+      },
+      {
+        "type": "binary",
+        "question": "Le génocide désigne nécessairement un simple conflit commercial entre plusieurs entreprises.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "غلط است؛ génocide به نابودی عمدی یک گروه انسانی به دلایل هویتی مشخص مربوط است و ارتباطی با اختلاف تجاری ندارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le terme foutrement appartient à un registre familier et vulgaire et peut servir à renforcer fortement une expression.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درست است؛ foutrement واژه‌ای عامیانه و رکیک است که برای تأکید شدید بر معنا استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le mot beuverie désigne une consommation modérée et raffinée de boissons lors d'un dîner officiel.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "غلط است؛ beuverie به نوشیدن افراطی و می‌گساری اشاره دارد، نه مصرف متعادل و رسمی."
+      }
+    ]
+  }
+}
