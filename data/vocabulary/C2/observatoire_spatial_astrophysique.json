@@ -1,0 +1,504 @@
+{
+  "id": "observatoire_spatial_astrophysique",
+  "level": "C2",
+  "theme": "Observatoire Spatial et Astrophysique",
+  "theme_fa": "رصدخانه فضایی و اخترفیزیک",
+  "icon": "🔭",
+  "inspiration": "Interstellar / 2001: A Space Odyssey",
+  "words": [
+    {
+      "fr": "la nébuleuse",
+      "fa": "سحابی",
+      "emoji": "🌌",
+      "difficulty": 4,
+      "ex": "Le télescope spatial a capté l'image détaillée d'une nébuleuse en formation.",
+      "ex_fa": "تلسکوپ فضایی تصویر دقیقی از یک سحابی در حال شکل‌گیری را ثبت کرد."
+    },
+    {
+      "fr": "le cratère",
+      "fa": "دهانه آتشفشان / گودال",
+      "emoji": "🕳️",
+      "difficulty": 3,
+      "ex": "Les astronautes ont prélevé des échantillons de roche au fond du cratère lunaire.",
+      "ex_fa": "فضانوردان از ته گودال ماه نمونه‌های سنگ برداشتند."
+    },
+    {
+      "fr": "l'éther",
+      "fa": "اتر",
+      "emoji": "💨",
+      "difficulty": 5,
+      "ex": "La physique classique postulait l'existence de l'éther pour expliquer la propagation de la lumière.",
+      "ex_fa": "فیزیک کلاسیک برای توضیح انتشار نور، وجود اتر را فرض می‌کرد."
+    },
+    {
+      "fr": "électromagnétique",
+      "fa": "الکترومغناطیسی",
+      "emoji": "⚡",
+      "difficulty": 4,
+      "ex": "Le spectre électromagnétique s'étend des ondes radio aux rayons gamma.",
+      "ex_fa": "طیف الکترومغناطیسی از امواج رادیویی تا پرتوهای گاما گسترده است."
+    },
+    {
+      "fr": "le réacteur",
+      "fa": "راکتور",
+      "emoji": "☢️",
+      "difficulty": 3,
+      "ex": "Le réacteur à fusion est considéré comme le saint graal de l'énergie propre.",
+      "ex_fa": "راکتور همجوشی به عنوان جام مقدس انرژی پاک در نظر گرفته می‌شود."
+    },
+    {
+      "fr": "le nobel",
+      "fa": "جایزه نوبل",
+      "emoji": "🏅",
+      "difficulty": 3,
+      "ex": "Ce physicien théorique a reçu le nobel pour ses travaux sur les trous noirs.",
+      "ex_fa": "این فیزیکدان نظری به خاطر پژوهش‌هایش درباره سیاه‌چاله‌ها جایزه نوبل دریافت کرد."
+    },
+    {
+      "fr": "le sapiens",
+      "fa": "انسان خردمند",
+      "emoji": "🧍",
+      "difficulty": 4,
+      "ex": "L'homo sapiens a développé des capacités cognitives uniques dans le règne animal.",
+      "ex_fa": "انسان خردمند توانایی‌های شناختی منحصر به فردی در قلمرو حیوانات توسعه داده است."
+    },
+    {
+      "fr": "la physiologie",
+      "fa": "فیزیولوژی",
+      "emoji": "🫀",
+      "difficulty": 4,
+      "ex": "La physiologie spatiale étudie les effets de l'apesanteur sur le corps humain.",
+      "ex_fa": "فیزیولوژی فضایی اثرات بی‌وزنی را بر بدن انسان مطالعه می‌کند."
+    },
+    {
+      "fr": "le zéppelin",
+      "fa": "زپلین",
+      "emoji": "🎈",
+      "difficulty": 5,
+      "ex": "Le zéppelin Hindenburg a marqué l'histoire de l'aviation par sa fin tragique.",
+      "ex_fa": "زپلین هیندنبورگ با پایان تراژیک خود تاریخ هوانوردی را تحت تأثیر قرار داد."
+    },
+    {
+      "fr": "l'aérodrome",
+      "fa": "فرودگاه کوچک",
+      "emoji": "🛩️",
+      "difficulty": 3,
+      "ex": "L'avion de brousse s'est posé en douceur sur la piste en terre de l'aérodrome.",
+      "ex_fa": "هواپیمای محلی به آرامی روی باند خاکی فرودگاه کوچک فرود آمد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La mission stellaire",
+      "title_fa": "ماموریت ستاره‌ای",
+      "text": "Le vaisseau quitte l'{{BLANK_10}} pour une mission lointaine. Son {{BLANK_5}} nucléaire fournit toute l'énergie. Les scientifiques étudient une {{BLANK_1}} colorée. Ils analysent le rayonnement {{BLANK_4}}. Sur une planète, ils explorent un immense {{BLANK_2}}. Ils étudient comment l'absence de gravité affecte la {{BLANK_8}} des astronautes. Ces derniers sont des représentants de l'homo {{BLANK_7}}. Cette découverte vaut bien un {{BLANK_6}}. Jadis, l'homme rêvait de voler en {{BLANK_9}} ou de croire que la lumière voyageait dans l'{{BLANK_3}}. Aujourd'hui, la science a remplacé ces mythes.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "aérodrome",
+          "options": [
+            "aérodrome",
+            "aéroport",
+            "gare",
+            "port"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "réacteur",
+          "options": [
+            "réacteur",
+            "moteur",
+            "générateur",
+            "turbine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "nébuleuse",
+          "options": [
+            "nébuleuse",
+            "galaxie",
+            "étoile",
+            "planète"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "électromagnétique",
+          "options": [
+            "électromagnétique",
+            "acoustique",
+            "thermique",
+            "mécanique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "cratère",
+          "options": [
+            "cratère",
+            "volcan",
+            "canyon",
+            "vallée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "physiologie",
+          "options": [
+            "physiologie",
+            "psychologie",
+            "sociologie",
+            "géologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "sapiens",
+          "options": [
+            "sapiens",
+            "neanderthalensis",
+            "erectus",
+            "habilis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "nobel",
+          "options": [
+            "nobel",
+            "oscar",
+            "grammy",
+            "emmy"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "zéppelin",
+          "options": [
+            "zéppelin",
+            "hélicoptère",
+            "drone",
+            "sous-marin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "éther",
+          "options": [
+            "éther",
+            "vide",
+            "eau",
+            "air"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'écho du cosmos",
+      "title_fa": "پژواک کیهان",
+      "inspiration": "Interstellar / 2001: A Space Odyssey",
+      "text": "Nonobstant les siècles où l'on postulait que les ondes se propageaient dans l'{{BLANK_10}}, la science moderne a dévoilé la splendeur du spectre {{BLANK_4}}. Depuis l'observatoire, le regard se perdait dans les volutes d'une {{BLANK_1}} lointaine, berceau d'étoiles naissantes. Le {{BLANK_2}} du vaisseau pulsait d'une énergie sourde, propulsant l'humanité, cet humble homo {{BLANK_7}}, vers des horizons inouïs. Sur des mondes désolés, l'exploration d'un {{BLANK_5}} lunaire rappelait la violence des origines. Comprendre la {{BLANK_8}} humaine face à l'immensité était devenu une quête aussi noble qu'un {{BLANK_6}}. Les rêves d'antan, de traverser les cieux en {{BLANK_9}} ou de décoller d'un modeste {{BLANK_1}}, semblaient bien dérisoires face à la conquête des astres.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "aérodrome",
+          "options": [
+            "aérodrome",
+            "aéroport",
+            "gare",
+            "port"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "réacteur",
+          "options": [
+            "réacteur",
+            "moteur",
+            "générateur",
+            "turbine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "nébuleuse",
+          "options": [
+            "nébuleuse",
+            "galaxie",
+            "étoile",
+            "planète"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "électromagnétique",
+          "options": [
+            "électromagnétique",
+            "acoustique",
+            "thermique",
+            "mécanique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "cratère",
+          "options": [
+            "cratère",
+            "volcan",
+            "canyon",
+            "vallée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "physiologie",
+          "options": [
+            "physiologie",
+            "psychologie",
+            "sociologie",
+            "géologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "sapiens",
+          "options": [
+            "sapiens",
+            "neanderthalensis",
+            "erectus",
+            "habilis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "nobel",
+          "options": [
+            "nobel",
+            "oscar",
+            "grammy",
+            "emmy"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "zéppelin",
+          "options": [
+            "zéppelin",
+            "hélicoptère",
+            "drone",
+            "sous-marin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "éther",
+          "options": [
+            "éther",
+            "vide",
+            "eau",
+            "air"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Observatoire Spatial et Astrophysique",
+    "title_fa": "آزمون: رصدخانه فضایی و اخترفیزیک",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Un nuage interstellaire de poussière et de gaz, souvent lieu de formation d'étoiles, est une ____.",
+        "options": [
+          "nébuleuse",
+          "galaxie",
+          "comète",
+          "météorite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابر میان‌ستاره‌ای از غبار و گاز = nébuleuse."
+      },
+      {
+        "type": "mcq",
+        "question": "Une dépression circulaire à la surface d'un astre, souvent d'origine volcanique ou météoritique, est un ____.",
+        "options": [
+          "cratère",
+          "canyon",
+          "fossé",
+          "plateau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گودال دایره‌ای شکل در سطح سیارات = cratère."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans la physique classique, le milieu hypothétique censé remplir l'espace et permettre la propagation de la lumière était l'____.",
+        "options": [
+          "éther",
+          "vide",
+          "plasma",
+          "aether"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماده فرضی در فیزیک کلاسیک برای انتشار نور = éther."
+      },
+      {
+        "type": "mcq",
+        "question": "Le spectre qui inclut les ondes radio, la lumière visible et les rayons X est le spectre ____.",
+        "options": [
+          "électromagnétique",
+          "acoustique",
+          "thermique",
+          "mécanique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "طیفی که امواج رادیویی، نور مرئی و اشعه ایکس را شامل می‌شود = électromagnétique."
+      },
+      {
+        "type": "mcq",
+        "question": "L'installation où se produit une réaction en chaîne contrôlée pour produire de l'énergie est un ____.",
+        "options": [
+          "réacteur",
+          "accélérateur",
+          "condensateur",
+          "transformateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تأسیسات تولید انرژی از طریق واکنش زنجیره‌ای = réacteur."
+      },
+      {
+        "type": "mcq",
+        "question": "La plus haute distinction internationale décernée pour des réalisations exceptionnelles en physique, chimie ou médecine est le prix ____.",
+        "options": [
+          "nobel",
+          "pulitzer",
+          "oscar",
+          "turing"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "معتبرترین جایزه علمی بین‌المللی = nobel."
+      },
+      {
+        "type": "mcq",
+        "question": "L'espèce humaine actuelle, caractérisée par ses capacités cognitives avancées, est l'homo ____.",
+        "options": [
+          "sapiens",
+          "erectus",
+          "neanderthalensis",
+          "habilis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نام علمی انسان خردمند = sapiens."
+      },
+      {
+        "type": "mcq",
+        "question": "La branche de la biologie qui étudie le fonctionnement des organes et des systèmes du corps est la ____.",
+        "options": [
+          "physiologie",
+          "anatomie",
+          "génétique",
+          "écologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شاخه‌ای از زیست‌شناسی که به عملکرد اندام‌ها می‌پردازد = physiologie."
+      },
+      {
+        "type": "mcq",
+        "question": "Un aéronef plus léger que l'air, de forme allongée et rigide, est un ____.",
+        "options": [
+          "zéppelin",
+          "montgolfière",
+          "hélicoptère",
+          "planeur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشتی هوایی سخت و بیضی‌شکل = zéppelin."
+      },
+      {
+        "type": "mcq",
+        "question": "Un terrain équipé pour le décollage et l'atterrissage d'aéronefs, souvent de petite taille, est un ____.",
+        "options": [
+          "aérodrome",
+          "aéroport",
+          "héliport",
+          "hangar"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محل فرود و برخاست هواپیما، معمولاً کوچک = aérodrome."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"éther\" a été confirmé comme un élément physique réel par la théorie de la relativité.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، وجود اتر توسط نظریه نسبیت رد شد و به عنوان یک مفهوم منسوخ شناخته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "La \"physiologie\" se concentre sur la structure des organes plutôt que sur leur fonctionnement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، آناتومی به ساختار و فیزیولوژی به عملکرد اندام‌ها می‌پردازد."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"cratère\" peut être formé par l'impact d'une météorite ou par une éruption volcanique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، گودال‌ها می‌توانند منشأ برخوردی یا آتشفشانی داشته باشند."
+      },
+      {
+        "type": "binary",
+        "question": "Le terme \"sapiens\" signifie \"intelligent\" ou \"sage\" en latin.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، homo sapiens به معنای انسان خردمند یا دانا است."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"réacteur\" nucléaire fonctionne sur le principe de la fusion froide, une technologie largement maîtrisée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، رآکتورهای فعلی بر اساس شکافت هسته‌ای کار می‌کنند، نه همجوشی سرد."
+      }
+    ]
+  }
+}
