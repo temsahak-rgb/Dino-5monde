@@ -1,0 +1,660 @@
+{
+  "id": "moyen_age_sorcellerie_epopees",
+  "level": "C2",
+  "theme": "Moyen Âge, Sorcellerie et Épopées",
+  "theme_fa": "قرون وسطی، جادوگران و اساطیر حماسی",
+  "icon": "🗡️",
+  "inspiration": "The Witcher / Le Seigneur des Anneaux",
+  "words": [
+    {
+      "fr": "le grimoire",
+      "fa": "کتاب جادو",
+      "emoji": "📖",
+      "difficulty": 4,
+      "ex": "Le vieux sorcier a ouvert son grimoire poussiéreux pour invoquer l'esprit.",
+      "ex_fa": "جادوگر پیر کتاب جادوی غبارگرفته‌اش را برای احضار روح باز کرد."
+    },
+    {
+      "fr": "le druide",
+      "fa": "دروئید",
+      "emoji": "🌳",
+      "difficulty": 5,
+      "ex": "Le druide a cueilli du gui sacré sur le chêne lors du solstice.",
+      "ex_fa": "دروئید در انقلاب تابستانی، گیاه مقدس دارواش را از روی درخت بلوط چید."
+    },
+    {
+      "fr": "Excalibur",
+      "fa": "اکسکالیبور",
+      "emoji": "⚔️",
+      "difficulty": 4,
+      "ex": "Selon la légende, le roi Arthur a tiré Excalibur du rocher magique.",
+      "ex_fa": "طبق افسانه، شاه آرتور شمشیر اکسکالیبور را از سنگ جادویی بیرون کشید."
+    },
+    {
+      "fr": "le cannibale",
+      "fa": "آدم‌خوار",
+      "emoji": "🍖",
+      "difficulty": 4,
+      "ex": "Les explorateurs craignaient de tomber sur une tribu de cannibales dans la jungle.",
+      "ex_fa": "کاوشگران از مواجهه با قبیله‌ای از آدم‌خواران در جنگل هراس داشتند."
+    },
+    {
+      "fr": "la chevalerie",
+      "fa": "دلاوری / آیین سواره‌نظام",
+      "emoji": "🛡️",
+      "difficulty": 4,
+      "ex": "Les codes de la chevalerie imposaient le respect des faibles et la loyauté.",
+      "ex_fa": "آیین دلاوری، احترام به ضعیفان و وفاداری را الزامی می‌کرد."
+    },
+    {
+      "fr": "preux",
+      "fa": "دلاور / شجاع",
+      "emoji": "🦁",
+      "difficulty": 5,
+      "ex": "Le preux chevalier a juré de protéger le royaume jusqu'à son dernier souffle.",
+      "ex_fa": "شوالیه دلاور سوگند یاد کرد که تا آخرین نفس از پادشاهی محافظت کند."
+    },
+    {
+      "fr": "la métamorphose",
+      "fa": "دگردیسی",
+      "emoji": "🦋",
+      "difficulty": 4,
+      "ex": "La métamorphose de la chenille en papillon est un miracle de la nature.",
+      "ex_fa": "دگردیسی کرم ابریشم به پروانه، معجزه‌ای در طبیعت است."
+    },
+    {
+      "fr": "le crépuscule",
+      "fa": "گرگ‌ومیش / شفق",
+      "emoji": "🌆",
+      "difficulty": 3,
+      "ex": "Les chauves-souris sortent de leur grotte dès que tombe le crépuscule.",
+      "ex_fa": "خفاش‌ها به محض فرا رسیدن گرگ‌ومیش از غار خود خارج می‌شوند."
+    },
+    {
+      "fr": "le charognard",
+      "fa": "لاشخور",
+      "emoji": "🦅",
+      "difficulty": 5,
+      "ex": "Le vautour est un charognard essentiel à l'équilibre de l'écosystème.",
+      "ex_fa": "کرکس یک لاشخور ضروری برای تعادل اکوسیستم است."
+    },
+    {
+      "fr": "la charogne",
+      "fa": "لاشه / مردار",
+      "emoji": "💀",
+      "difficulty": 5,
+      "ex": "L'odeur nauséabonde de la charogne attirait une nuée de mouches.",
+      "ex_fa": "بوی تعفن لاشه، دسته‌ای از مگس‌ها را جذب می‌کرد."
+    },
+    {
+      "fr": "le courroux",
+      "fa": "خشم / قهر",
+      "emoji": "⚡",
+      "difficulty": 5,
+      "ex": "Le paysan tremblait face au courroux divin après la sécheresse.",
+      "ex_fa": "دهقان در برابر خشم الهی پس از خشکسالی می‌لرزید."
+    },
+    {
+      "fr": "l'eunuque",
+      "fa": "خواجه",
+      "emoji": "🔒",
+      "difficulty": 5,
+      "ex": "Dans les cours orientales, l'eunuque gardait souvent l'entrée du harem.",
+      "ex_fa": "در دربارهای شرقی، خواجه اغلب نگهبان ورودی حرمسرا بود."
+    },
+    {
+      "fr": "le bercail",
+      "fa": "آغوش / پناه",
+      "emoji": "🏠",
+      "difficulty": 5,
+      "ex": "Après des années d'errance, le fils prodigue a enfin regagné le bercail.",
+      "ex_fa": "پسر گمشده پس از سال‌ها سرگردانی، سرانجام به آغوش خانواده بازگشت."
+    },
+    {
+      "fr": "la miséricorde",
+      "fa": "رحمت / بخشش",
+      "emoji": "🕊️",
+      "difficulty": 4,
+      "ex": "Le juge, touché par les circonstances, a fait preuve de miséricorde.",
+      "ex_fa": "قاضی تحت تأثیر شرایط قرار گرفت و رحمت به خرج داد."
+    },
+    {
+      "fr": "l'évangile",
+      "fa": "انجیل",
+      "emoji": "✝️",
+      "difficulty": 3,
+      "ex": "Le moine a copié un passage de l'évangile avec une calligraphie minutieuse.",
+      "ex_fa": "راهب بخشی از انجیل را با خوشنویسی دقیق رونویسی کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La quête du chevalier",
+      "title_fa": "ماجراجویی شوالیه",
+      "text": "Au {{BLANK_8}}, un {{BLANK_6}} chevalier part en quête. Il cherche l'épée légendaire {{BLANK_3}}. Il consulte un vieux {{BLANK_2}} de la forêt et son {{BLANK_1}} magique. Il doit éviter un {{BLANK_4}} et les {{BLANK_9}} qui mangent de la {{BLANK_10}}. Le roi, dans son {{BLANK_11}}, menace les traîtres. Mais un {{BLANK_12}} apporte un message de paix. Le chevalier doit revenir au {{BLANK_13}} familial. La {{BLANK_14}} et la lecture de l'{{BLANK_15}} apaisent les âmes. La {{BLANK_7}} de la nature est un mystère, tout comme les codes de la {{BLANK_5}}.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "grimoire",
+          "options": [
+            "grimoire",
+            "journal",
+            "roman",
+            "manuel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "druide",
+          "options": [
+            "druide",
+            "roi",
+            "paysan",
+            "marchand"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Excalibur",
+          "options": [
+            "Excalibur",
+            "Durandal",
+            "Joyeuse",
+            "Nothung"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cannibale",
+          "options": [
+            "cannibale",
+            "herbivore",
+            "végétarien",
+            "agriculteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "chevalerie",
+          "options": [
+            "chevalerie",
+            "lâcheté",
+            "trahison",
+            "vol"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "preux",
+          "options": [
+            "preux",
+            "lâche",
+            "craintif",
+            "traître"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "métamorphose",
+          "options": [
+            "métamorphose",
+            "stagnation",
+            "immobilité",
+            "fixité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "crépuscule",
+          "options": [
+            "crépuscule",
+            "midi",
+            "aube",
+            "matin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "charognard",
+          "options": [
+            "charognard",
+            "prédateur",
+            "chasseur",
+            "gardien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "charogne",
+          "options": [
+            "charogne",
+            "festin",
+            "régal",
+            "banquet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "courroux",
+          "options": [
+            "courroux",
+            "joie",
+            "bonheur",
+            "sérénité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "eunuque",
+          "options": [
+            "eunuque",
+            "guerrier",
+            "général",
+            "capitaine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "bercail",
+          "options": [
+            "bercail",
+            "exil",
+            "voyage",
+            "aventure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "miséricorde",
+          "options": [
+            "miséricorde",
+            "cruauté",
+            "vengeance",
+            "haine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "évangile",
+          "options": [
+            "évangile",
+            "coran",
+            "talmud",
+            "veda"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'ombre des anciens âges",
+      "title_fa": "سایه اعصار کهن",
+      "inspiration": "The Witcher / Le Seigneur des Anneaux",
+      "text": "Tandis que le {{BLANK_8}} étendait son voile pourpre sur le royaume, un {{BLANK_6}} chevalier, fidèle aux codes de la {{BLANK_5}}, s'enfonçait dans la forêt interdite. Il quêtait l'épée {{BLANK_3}}, seule capable de contrer le {{BLANK_11}} des dieux oubliés. Sur son chemin, il croisa un {{BLANK_2}} solitaire, gardien d'un {{BLANK_1}} aux pages jaunies, qui lui révéla les secrets d'une étrange {{BLANK_7}}. Loin des sentiers battus, il dut esquiver un {{BLANK_4}} affamé et des {{BLANK_9}} s'acharnant sur une {{BLANK_10}} putréfiée. Un {{BLANK_12}} silencieux lui offrit l'hospitalité, lui murmurant que la véritable force résidait dans la {{BLANK_14}} et non dans la violence. À l'aube, en lisant un passage de l'{{BLANK_15}}, le guerrier comprit qu'il était temps de regagner le {{BLANK_13}}, l'âme apaisée.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "grimoire",
+          "options": [
+            "grimoire",
+            "journal",
+            "roman",
+            "manuel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "druide",
+          "options": [
+            "druide",
+            "roi",
+            "paysan",
+            "marchand"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Excalibur",
+          "options": [
+            "Excalibur",
+            "Durandal",
+            "Joyeuse",
+            "Nothung"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cannibale",
+          "options": [
+            "cannibale",
+            "herbivore",
+            "végétarien",
+            "agriculteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "chevalerie",
+          "options": [
+            "chevalerie",
+            "lâcheté",
+            "trahison",
+            "vol"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "preux",
+          "options": [
+            "preux",
+            "lâche",
+            "craintif",
+            "traître"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "métamorphose",
+          "options": [
+            "métamorphose",
+            "stagnation",
+            "immobilité",
+            "fixité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "crépuscule",
+          "options": [
+            "crépuscule",
+            "midi",
+            "aube",
+            "matin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "charognard",
+          "options": [
+            "charognard",
+            "prédateur",
+            "chasseur",
+            "gardien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "charogne",
+          "options": [
+            "charogne",
+            "festin",
+            "régal",
+            "banquet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "courroux",
+          "options": [
+            "courroux",
+            "joie",
+            "bonheur",
+            "sérénité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "eunuque",
+          "options": [
+            "eunuque",
+            "guerrier",
+            "général",
+            "capitaine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "bercail",
+          "options": [
+            "bercail",
+            "exil",
+            "voyage",
+            "aventure"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "miséricorde",
+          "options": [
+            "miséricorde",
+            "cruauté",
+            "vengeance",
+            "haine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "évangile",
+          "options": [
+            "évangile",
+            "coran",
+            "talmud",
+            "veda"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Moyen Âge, Sorcellerie et Épopées",
+    "title_fa": "آزمون: قرون وسطی، جادو و اساطیر",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Un livre ancien contenant des formules magiques et des incantations est un ____.",
+        "options": [
+          "grimoire",
+          "manuel",
+          "traité",
+          "codex"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کتاب حاوی فرمول‌های جادویی = grimoire."
+      },
+      {
+        "type": "mcq",
+        "question": "Un prêtre et savant des anciennes tribus celtiques, souvent associé à la nature, est un ____.",
+        "options": [
+          "druide",
+          "shaman",
+          "prophète",
+          "ermite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روحانی و دانشمند سلتی باستان = druide."
+      },
+      {
+        "type": "mcq",
+        "question": "L'épée légendaire du roi Arthur, retirée du rocher ou du lac, est ____.",
+        "options": [
+          "Excalibur",
+          "Durandal",
+          "Joyeuse",
+          "Gram"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شمشیر افسانه‌ای شاه آرتور = Excalibur."
+      },
+      {
+        "type": "mcq",
+        "question": "Un individu qui pratique l'anthropophagie, c'est-à-dire manger de la chair humaine, est un ____.",
+        "options": [
+          "cannibale",
+          "carnivore",
+          "prédateur",
+          "scavenger"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کسی که گوشت انسان می‌خورد = cannibale."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble des valeurs et des codes de conduite des chevaliers au Moyen Âge est la ____.",
+        "options": [
+          "chevalerie",
+          "féodalité",
+          "noblesse",
+          "royauté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آیین و ارزش‌های شوالیه‌ها = chevalerie."
+      },
+      {
+        "type": "mcq",
+        "question": "Un terme littéraire et archaïque pour désigner un guerrier brave et vaillant est un homme ____.",
+        "options": [
+          "preux",
+          "lâche",
+          "craintif",
+          "couard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واژه‌ای ادبی برای شوالیه شجاع و دلاور = preux."
+      },
+      {
+        "type": "mcq",
+        "question": "Une transformation profonde et radicale de l'apparence ou de la nature d'un être est une ____.",
+        "options": [
+          "métamorphose",
+          "mutation",
+          "évolution",
+          "régression"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تغییر شکل یا دگردیسی عمیق = métamorphose."
+      },
+      {
+        "type": "mcq",
+        "question": "Le moment de la journée où le jour décline et la nuit commence à tomber est le ____.",
+        "options": [
+          "crépuscule",
+          "aube",
+          "zénith",
+          "midi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زمان غروب و آغاز شب = crépuscule."
+      },
+      {
+        "type": "mcq",
+        "question": "Un animal qui se nourrit exclusivement ou principalement d'animaux morts est un ____.",
+        "options": [
+          "charognard",
+          "prédateur",
+          "herbivore",
+          "omnivore"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوانی که از لاشه حیوانات مرده تغذیه می‌کند = charognard."
+      },
+      {
+        "type": "mcq",
+        "question": "Le cadavre en décomposition d'un animal, servant de nourriture aux charognards, est une ____.",
+        "options": [
+          "charogne",
+          "dépouille",
+          "reste",
+          "carcasse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لاشه یا مردار حیوان = charogne."
+      },
+      {
+        "type": "mcq",
+        "question": "Une colère violente, souvent divine ou royale, est désignée par le terme de ____.",
+        "options": [
+          "courroux",
+          "joie",
+          "sérénité",
+          "indifférence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خشم شدید، به ویژه خشم الهی یا پادشاهی = courroux."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans les cours historiques orientales, un serviteur castré chargé de garder le harem était un ____.",
+        "options": [
+          "eunuque",
+          "vizir",
+          "sultan",
+          "janissaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خواجه یا نگهبان حرمسرا = eunuque."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu de refuge, le foyer ou le groupe auquel on appartient et où l'on se sent en sécurité est le ____.",
+        "options": [
+          "bercail",
+          "exil",
+          "désert",
+          "labyrinthe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکان پناه یا آغوش امن = bercail."
+      },
+      {
+        "type": "binary",
+        "question": "La \"miséricorde\" implique une punition sévère et sans pitié pour les fautes commises.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، miséricorde به معنای رحم، بخشش و شفقت است."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"évangile\" est un texte sacré chrétien relatant la vie et les enseignements de Jésus.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، انجیل متن مقدس مسیحیان درباره زندگی عیسی است."
+      }
+    ]
+  }
+}
