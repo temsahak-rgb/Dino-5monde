@@ -1,0 +1,640 @@
+{
+  "id": "ville_batiments_nature",
+  "level": "A1",
+  "theme": "Ville, Bâtiments et Nature Environnante",
+  "theme_fa": "شهر، ساختمان‌ها و طبیعت اطراف",
+  "icon": "🏙️",
+  "inspiration": "Le Petit Prince / Tintin",
+  "words": [
+    {
+      "fr": "l'arbre",
+      "fa": "درخت",
+      "emoji": "🌳",
+      "difficulty": 1,
+      "ex": "Il y a un grand arbre dans le jardin.",
+      "ex_fa": "یک درخت بزرگ در باغ وجود دارد."
+    },
+    {
+      "fr": "la banque",
+      "fa": "بانک",
+      "emoji": "🏦",
+      "difficulty": 1,
+      "ex": "Je vais à la banque pour retirer de l'argent.",
+      "ex_fa": "من برای برداشت پول به بانک می‌روم."
+    },
+    {
+      "fr": "le bâtiment",
+      "fa": "ساختمان",
+      "emoji": "🏢",
+      "difficulty": 2,
+      "ex": "C'est un bâtiment très moderne.",
+      "ex_fa": "این یک ساختمان بسیار مدرن است."
+    },
+    {
+      "fr": "la bête",
+      "fa": "حیوان / احمق",
+      "emoji": "🐾",
+      "difficulty": 3,
+      "ex": "Attention, il y a une bête sauvage dans la forêt.",
+      "ex_fa": "مراقب باش، یک حیوان وحشی در جنگل وجود دارد."
+    },
+    {
+      "fr": "la bibliothèque",
+      "fa": "کتابخانه",
+      "emoji": "📚",
+      "difficulty": 1,
+      "ex": "J'aime étudier à la bibliothèque.",
+      "ex_fa": "من دوست دارم در کتابخانه درس بخوانم."
+    },
+    {
+      "fr": "le brouillard",
+      "fa": "مه",
+      "emoji": "🌫️",
+      "difficulty": 2,
+      "ex": "Il y a beaucoup de brouillard ce matin.",
+      "ex_fa": "امروز صبح مه زیادی وجود دارد."
+    },
+    {
+      "fr": "le bruit",
+      "fa": "سروصدا",
+      "emoji": "🔊",
+      "difficulty": 2,
+      "ex": "Le bruit des voitures me dérange.",
+      "ex_fa": "سروصدای ماشین‌ها مرا اذیت می‌کند."
+    },
+    {
+      "fr": "le bureau",
+      "fa": "اداره / میز",
+      "emoji": "💼",
+      "difficulty": 1,
+      "ex": "Mon père travaille au bureau.",
+      "ex_fa": "پدر من در اداره کار می‌کند."
+    },
+    {
+      "fr": "la campagne",
+      "fa": "روستا / حومه",
+      "emoji": "🌾",
+      "difficulty": 1,
+      "ex": "J'adore vivre à la campagne.",
+      "ex_fa": "من عاشق زندگی در روستا هستم."
+    },
+    {
+      "fr": "le château",
+      "fa": "قلعه",
+      "emoji": "🏰",
+      "difficulty": 2,
+      "ex": "Nous visitons un vieux château.",
+      "ex_fa": "ما از یک قلعه قدیمی بازدید می‌کنیم."
+    },
+    {
+      "fr": "le ciel",
+      "fa": "آسمان",
+      "emoji": "☁️",
+      "difficulty": 1,
+      "ex": "Le ciel est bleu et clair.",
+      "ex_fa": "آسمان آبی و صاف است."
+    },
+    {
+      "fr": "la colline",
+      "fa": "تپه",
+      "emoji": "⛰️",
+      "difficulty": 2,
+      "ex": "Les enfants montent sur la colline.",
+      "ex_fa": "بچه‌ها از تپه بالا می‌روند."
+    },
+    {
+      "fr": "la côte",
+      "fa": "ساحل",
+      "emoji": "🏖️",
+      "difficulty": 2,
+      "ex": "Nous nous promenons sur la côte.",
+      "ex_fa": "ما در ساحل پیاده‌روی می‌کنیم."
+    },
+    {
+      "fr": "la cour",
+      "fa": "حیاط",
+      "emoji": "🏡",
+      "difficulty": 2,
+      "ex": "Les élèves jouent dans la cour de l'école.",
+      "ex_fa": "دانش‌آموزان در حیاط مدرسه بازی می‌کنند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une promenade en ville et à la campagne",
+      "title_fa": "پیاده‌روی در شهر و روستا",
+      "text": "Aujourd'hui, je vais d'____ (1) à la ____ (2) pour travailler. Après le travail, je vais à la ____ (3) pour prendre de l'argent. Ensuite, je marche dans la ville. Je vois un grand ____ (4) moderne. Il y a beaucoup de ____ (5) dans la rue. Je préfère ____ (6). Là-bas, il y a un grand ____ (7) vert et un beau ____ (8) bleu. Parfois, il y a du ____ (9) le matin. J'aime monter sur la ____ (10) pour voir la vue. Près de la mer, je marche sur la ____ (11). Dans mon village, il y a une vieille ____ (12) et une ____ (13) pour lire des livres. Les enfants jouent dans la ____ (14). Attention à ne pas rencontrer une ____ (15) sauvage dans la forêt !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "abord",
+          "options": [
+            "abord",
+            "cause",
+            "milieu",
+            "côté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bureau",
+          "options": [
+            "bureau",
+            "campagne",
+            "château",
+            "cour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "banque",
+          "options": [
+            "banque",
+            "bibliothèque",
+            "colline",
+            "côte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "bâtiment",
+          "options": [
+            "bâtiment",
+            "arbre",
+            "ciel",
+            "brouillard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "bruit",
+          "options": [
+            "bruit",
+            "bien-être",
+            "brouillard",
+            "beauté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "la campagne",
+          "options": [
+            "la campagne",
+            "le bureau",
+            "la banque",
+            "le bâtiment"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "arbre",
+          "options": [
+            "arbre",
+            "ciel",
+            "brouillard",
+            "bruit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "ciel",
+          "options": [
+            "ciel",
+            "cour",
+            "côte",
+            "colline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "brouillard",
+          "options": [
+            "brouillard",
+            "bruit",
+            "bureau",
+            "banque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "colline",
+          "options": [
+            "colline",
+            "cour",
+            "côte",
+            "château"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "côte",
+          "options": [
+            "côte",
+            "cour",
+            "colline",
+            "ciel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "château",
+          "options": [
+            "château",
+            "bureau",
+            "banque",
+            "bâtiment"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "bibliothèque",
+          "options": [
+            "bibliothèque",
+            "cour",
+            "côte",
+            "colline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "cour",
+          "options": [
+            "cour",
+            "ciel",
+            "côte",
+            "campagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "bête",
+          "options": [
+            "bête",
+            "boîte",
+            "banque",
+            "bureau"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le voyage du Petit Nicolas",
+      "title_fa": "سفر پتی نیکولا",
+      "inspiration": "Le Petit Nicolas",
+      "text": "Ce matin, le ____ (1) était gris à cause du ____ (2). Nicolas est sorti de son ____ (3) en ville. Il a marché vers la ____ (4) pour voir son père. Il n'aime pas le ____ (5) des voitures. Alors, il a décidé d'aller à la ____ (6). Là-bas, il a vu un grand ____ (7) avec des feuilles vertes. Plus tard, il est allé à la ____ (8) pour lire des histoires. L'après-midi, sa famille est allée à la ____ (9). Ils ont pique-niqué près d'un vieux ____ (10). Les enfants ont joué dans la ____ (11) du château. Nicolas a grimpé sur la ____ (12) pour regarder la mer. Il a marché sur la ____ (13) et a regardé le ____ (14) devenir bleu. C'était une belle journée, loin de la ville et de ses ____ (15) modernes.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "ciel",
+          "options": [
+            "ciel",
+            "cour",
+            "côte",
+            "colline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "brouillard",
+          "options": [
+            "brouillard",
+            "bruit",
+            "bureau",
+            "bâtiment"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "bâtiment",
+          "options": [
+            "bâtiment",
+            "arbre",
+            "bête",
+            "bibliothèque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "banque",
+          "options": [
+            "banque",
+            "campagne",
+            "château",
+            "cour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "bruit",
+          "options": [
+            "bruit",
+            "bien-être",
+            "brouillard",
+            "beauté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "campagne",
+          "options": [
+            "campagne",
+            "bureau",
+            "banque",
+            "bâtiment"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "arbre",
+          "options": [
+            "arbre",
+            "ciel",
+            "brouillard",
+            "bruit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "bibliothèque",
+          "options": [
+            "bibliothèque",
+            "cour",
+            "côte",
+            "colline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "côte",
+          "options": [
+            "côte",
+            "cour",
+            "colline",
+            "ciel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "château",
+          "options": [
+            "château",
+            "bureau",
+            "banque",
+            "bâtiment"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "cour",
+          "options": [
+            "cour",
+            "ciel",
+            "côte",
+            "campagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "colline",
+          "options": [
+            "colline",
+            "cour",
+            "côte",
+            "ciel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "côte",
+          "options": [
+            "côte",
+            "cour",
+            "colline",
+            "ciel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "ciel",
+          "options": [
+            "ciel",
+            "cour",
+            "côte",
+            "colline"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "bâtiments",
+          "options": [
+            "bâtiments",
+            "arbres",
+            "ciels",
+            "côtes"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Ville, Bâtiments et Nature",
+    "title_fa": "آزمون: شهر، ساختمان‌ها و طبیعت",
+    "displayCount": 14,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'endroit où on garde et retire de l'argent est la ____.",
+        "options": [
+          "banque",
+          "bibliothèque",
+          "cour",
+          "côte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که در آن پول نگهداری و برداشت می‌شود بانک (banque) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une construction avec des murs et un toit est un ____.",
+        "options": [
+          "bâtiment",
+          "arbre",
+          "ciel",
+          "brouillard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازه‌ای با دیوار و سقف، ساختمان (bâtiment) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu calme avec beaucoup de livres est la ____.",
+        "options": [
+          "bibliothèque",
+          "banque",
+          "cour",
+          "côte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکان آرام با کتاب‌های زیاد، کتابخانه (bibliothèque) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Quand on ne voit pas clair à cause de l'humidité dans l'air, il y a du ____.",
+        "options": [
+          "brouillard",
+          "bruit",
+          "ciel",
+          "arbre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وقتی به خاطر رطوبت هوا دید کم می‌شود، مه (brouillard) وجود دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Les sons forts et désagréables s'appellent le ____.",
+        "options": [
+          "bruit",
+          "bien-être",
+          "brouillard",
+          "beauté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صداهای بلند و ناخوشایند سروصدا (bruit) نامیده می‌شوند."
+      },
+      {
+        "type": "mcq",
+        "question": "L'endroit où on travaille avec un ordinateur et un bureau est le ____.",
+        "options": [
+          "bureau",
+          "château",
+          "cour",
+          "côte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که در آن با کامپیوتر و میز کار می‌کنیم، اداره (bureau) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'opposé de la ville, avec des champs et des fermes, est la ____.",
+        "options": [
+          "campagne",
+          "banque",
+          "bâtiment",
+          "bibliothèque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متضاد شهر، با مزارع و دامداری‌ها، روستا یا حومه (campagne) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une grande maison forte des rois et des reines est un ____.",
+        "options": [
+          "château",
+          "bureau",
+          "banque",
+          "bâtiment"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خانه بزرگ و مستحکم پادشاهان و ملکه‌ها قلعه (château) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce qu'on voit au-dessus de nos têtes, bleu ou gris, est le ____.",
+        "options": [
+          "ciel",
+          "cour",
+          "côte",
+          "colline"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چیزی که بالای سر خود می‌بینیم، آبی یا خاکستری، آسمان (ciel) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une petite montagne ronde est une ____.",
+        "options": [
+          "colline",
+          "cour",
+          "côte",
+          "ciel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یک کوه گرد کوچک، تپه (colline) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "L'endroit où la terre rencontre la mer est la ____.",
+        "options": [
+          "côte",
+          "cour",
+          "colline",
+          "ciel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که زمین به دریا می‌رسد، ساحل (côte) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'espace ouvert à l'intérieur d'une école ou d'une maison est la ____.",
+        "options": [
+          "cour",
+          "ciel",
+          "côte",
+          "campagne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فضای باز در داخل مدرسه یا خانه، حیاط (cour) نامیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« La bête » peut désigner un animal, surtout un animal sauvage.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، bête می‌تواند به معنای حیوان، به ویژه حیوان وحشی باشد."
+      },
+      {
+        "type": "binary",
+        "question": "« L'arbre » est une construction en béton et en verre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، arbre به معنای درخت است، نه ساختمان."
+      }
+    ]
+  }
+}
