@@ -1,0 +1,662 @@
+{
+  "id": "meteo_nature_saisons",
+  "level": "A1",
+  "theme": "Météo, Nature et Saisons",
+  "theme_fa": "آب و هوا، طبیعت و فصل‌ها",
+  "icon": "☀️",
+  "inspiration": "Le Petit Prince / Tintin",
+  "words": [
+    {
+      "fr": "l'été",
+      "fa": "تابستان",
+      "emoji": "☀️",
+      "difficulty": 1,
+      "ex": "En été, il fait très chaud et on va à la plage.",
+      "ex_fa": "در تابستان، هوا خیلی گرم است و به ساحل می‌رویم."
+    },
+    {
+      "fr": "le feu",
+      "fa": "آتش",
+      "emoji": "🔥",
+      "difficulty": 2,
+      "ex": "Nous avons allumé un feu pour nous réchauffer.",
+      "ex_fa": "ما برای گرم شدن آتش روشن کردیم."
+    },
+    {
+      "fr": "froid(e)",
+      "fa": "سرد",
+      "emoji": "🥶",
+      "difficulty": 1,
+      "ex": "L'eau de la rivière est trop froide pour nager.",
+      "ex_fa": "آب رودخانه برای شنا کردن خیلی سرد است."
+    },
+    {
+      "fr": "l'hiver",
+      "fa": "زمستان",
+      "emoji": "❄️",
+      "difficulty": 1,
+      "ex": "En hiver, il neige souvent et il fait froid.",
+      "ex_fa": "در زمستان، اغلب برف می‌بارد و هوا سرد است."
+    },
+    {
+      "fr": "il fait beau",
+      "fa": "هوا خوب/آفتابی است",
+      "emoji": "🌤️",
+      "difficulty": 1,
+      "ex": "Aujourd'hui, il fait beau, on peut sortir.",
+      "ex_fa": "امروز هوا خوب است، می‌توانیم بیرون برویم."
+    },
+    {
+      "fr": "il fait chaud",
+      "fa": "هوا گرم است",
+      "emoji": "🌡️",
+      "difficulty": 1,
+      "ex": "En août, il fait chaud dans le sud de la France.",
+      "ex_fa": "در آگوست، در جنوب فرانسه هوا گرم است."
+    },
+    {
+      "fr": "il fait froid",
+      "fa": "هوا سرد است",
+      "emoji": "🧣",
+      "difficulty": 1,
+      "ex": "En janvier, il fait froid, mets ton manteau.",
+      "ex_fa": "در ژانویه، هوا سرد است، کتت را بپوش."
+    },
+    {
+      "fr": "il fait mauvais",
+      "fa": "هوا بد است",
+      "emoji": "🌧️",
+      "difficulty": 1,
+      "ex": "Reste à la maison, il fait mauvais dehors.",
+      "ex_fa": "در خانه بمان، بیرون هوا بد است."
+    },
+    {
+      "fr": "il y a",
+      "fa": "وجود دارد / هست",
+      "emoji": "📍",
+      "difficulty": 1,
+      "ex": "Il y a un problème avec mon ordinateur.",
+      "ex_fa": "یک مشکل با کامپیوتر من وجود دارد."
+    },
+    {
+      "fr": "il y a du soleil",
+      "fa": "آفتابی است",
+      "emoji": "☀️",
+      "difficulty": 2,
+      "ex": "Demain, il y a du soleil, ce sera une belle journée.",
+      "ex_fa": "فردا آفتابی است، روز زیبایی خواهد بود."
+    },
+    {
+      "fr": "il y a du vent",
+      "fa": "باد می‌وزد",
+      "emoji": "🌬️",
+      "difficulty": 2,
+      "ex": "Attention, il y a du vent, tiens bien ton chapeau.",
+      "ex_fa": "مراقب باش، باد می‌وزد، کلاhet را محکم نگه دار."
+    },
+    {
+      "fr": "l'île",
+      "fa": "جزیره",
+      "emoji": "🏝️",
+      "difficulty": 2,
+      "ex": "Nous avons visité une belle île tropicale.",
+      "ex_fa": "ما از یک جزیره استوایی زیبا بازدید کردیم."
+    },
+    {
+      "fr": "le jardin",
+      "fa": "باغ / حیاط",
+      "emoji": "🌻",
+      "difficulty": 1,
+      "ex": "Les enfants jouent dans le jardin de la maison.",
+      "ex_fa": "بچه‌ها در باغ خانه بازی می‌کنند."
+    },
+    {
+      "fr": "le lac",
+      "fa": "دریاچه",
+      "emoji": "🏞️",
+      "difficulty": 2,
+      "ex": "Nous aimons nous promener autour du lac.",
+      "ex_fa": "ما دوست داریم دور دریاچه قدم بزنیم."
+    },
+    {
+      "fr": "les légumes",
+      "fa": "سبزیجات",
+      "emoji": "🥦",
+      "difficulty": 1,
+      "ex": "Il est important de manger des légumes frais.",
+      "ex_fa": "خوردن سبزیجات تازه مهم است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une journée au jardin",
+      "title_fa": "یک روز در باغ",
+      "text": "Aujourd'hui, ____ (5) ! Nous allons dans le ____ (13) de la maison. En ____ (1), ____ (6) et ____ (10). Mais en ____ (4), ____ (7) et ____ (8). Aujourd'hui, ____ (9) des nuages, mais aussi ____ (11). Nous faisons un ____ (2) pour nous réchauffer car l'eau du ____ (14) est trop ____ (3). Nous mangeons des sandwichs avec des ____ (15) du jardin. C'est une belle journée, ____ (12) une petite ____ (12) au milieu du lac !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "été",
+          "options": [
+            "été",
+            "hiver",
+            "automne",
+            "printemps"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "feu",
+          "options": [
+            "feu",
+            "eau",
+            "vent",
+            "soleil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "froide",
+          "options": [
+            "froide",
+            "chaude",
+            "tiède",
+            "douce"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "hiver",
+          "options": [
+            "hiver",
+            "été",
+            "automne",
+            "printemps"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "il fait beau",
+          "options": [
+            "il fait beau",
+            "il fait mauvais",
+            "il neige",
+            "il pleut"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "il fait chaud",
+          "options": [
+            "il fait chaud",
+            "il fait froid",
+            "il neige",
+            "il gèle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "il fait froid",
+          "options": [
+            "il fait froid",
+            "il fait chaud",
+            "il fait beau",
+            "il fait bon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "il fait mauvais",
+          "options": [
+            "il fait mauvais",
+            "il fait beau",
+            "il fait chaud",
+            "il fait bon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "il y a",
+          "options": [
+            "il y a",
+            "il est",
+            "elle a",
+            "nous avons"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "il y a du soleil",
+          "options": [
+            "il y a du soleil",
+            "il y a de la neige",
+            "il y a du brouillard",
+            "il y a de la pluie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "il y a du vent",
+          "options": [
+            "il y a du vent",
+            "il y a du soleil",
+            "il y a de la chaleur",
+            "il y a du calme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "île",
+          "options": [
+            "île",
+            "montagne",
+            "forêt",
+            "désert"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "jardin",
+          "options": [
+            "jardin",
+            "bureau",
+            "magasin",
+            "hôpital"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "lac",
+          "options": [
+            "lac",
+            "ciel",
+            "nuage",
+            "vent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "légumes",
+          "options": [
+            "légumes",
+            "gâteaux",
+            "bonbons",
+            "glaces"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les saisons du petit prince",
+      "title_fa": "فصل‌های شازده کوچولو",
+      "inspiration": "Le Petit Prince",
+      "text": "Sur ma petite planète, ____ (5) la plupart du temps. Mais parfois, les saisons changent. En ____ (1), ____ (6) et ____ (10). Je cultive des ____ (15) dans mon petit ____ (13). En ____ (4), ____ (7) et ____ (8). ____ (9) de la neige et ____ (11) très fort. Je dois allumer un petit ____ (2) près du ____ (14) car l'eau devient trop ____ (3). Heureusement, au centre de mon lac, ____ (12) une petite ____ (12) où je peux me reposer au soleil.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "été",
+          "options": [
+            "été",
+            "hiver",
+            "automne",
+            "printemps"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "feu",
+          "options": [
+            "feu",
+            "eau",
+            "vent",
+            "soleil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "froide",
+          "options": [
+            "froide",
+            "chaude",
+            "tiède",
+            "douce"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "hiver",
+          "options": [
+            "hiver",
+            "été",
+            "automne",
+            "printemps"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "il fait beau",
+          "options": [
+            "il fait beau",
+            "il fait mauvais",
+            "il neige",
+            "il pleut"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "il fait chaud",
+          "options": [
+            "il fait chaud",
+            "il fait froid",
+            "il neige",
+            "il gèle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "il fait froid",
+          "options": [
+            "il fait froid",
+            "il fait chaud",
+            "il fait beau",
+            "il fait bon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "il fait mauvais",
+          "options": [
+            "il fait mauvais",
+            "il fait beau",
+            "il fait chaud",
+            "il fait bon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "il y a",
+          "options": [
+            "il y a",
+            "il est",
+            "elle a",
+            "nous avons"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "il y a du soleil",
+          "options": [
+            "il y a du soleil",
+            "il y a de la neige",
+            "il y a du brouillard",
+            "il y a de la pluie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "il y a du vent",
+          "options": [
+            "il y a du vent",
+            "il y a du soleil",
+            "il y a de la chaleur",
+            "il y a du calme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "île",
+          "options": [
+            "île",
+            "montagne",
+            "forêt",
+            "désert"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "jardin",
+          "options": [
+            "jardin",
+            "bureau",
+            "magasin",
+            "hôpital"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "lac",
+          "options": [
+            "lac",
+            "ciel",
+            "nuage",
+            "vent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "légumes",
+          "options": [
+            "légumes",
+            "gâteaux",
+            "bonbons",
+            "glaces"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Météo, Nature et Saisons",
+    "title_fa": "آزمون: آب و هوا، طبیعت و فصل‌ها",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La saison où il fait très chaud et on va à la plage est l'____.",
+        "options": [
+          "été",
+          "hiver",
+          "automne",
+          "printemps"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فصلی که هوا خیلی گرم است و به ساحل می‌رویم، تابستان (été) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce qu'on allume pour se réchauffer dans la nature est un ____.",
+        "options": [
+          "feu",
+          "eau",
+          "vent",
+          "soleil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چیزی که برای گرم شدن در طبیعت روشن می‌کنیم، آتش (feu) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le contraire de « chaud » est ____.",
+        "options": [
+          "froid",
+          "tiède",
+          "doux",
+          "chaud"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متضاد گرم، سرد (froid) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La saison où il neige souvent est l'____.",
+        "options": [
+          "hiver",
+          "été",
+          "automne",
+          "printemps"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فصلی که اغلب برف می‌بارد، زمستان (hiver) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire que le temps est ensoleillé et agréable, on dit : ____.",
+        "options": [
+          "il fait beau",
+          "il fait mauvais",
+          "il pleut",
+          "il neige"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای گفتن اینکه هوا آفتابی و مطبوع است، می‌گوییم il fait beau."
+      },
+      {
+        "type": "mcq",
+        "question": "En août, en général, ____.",
+        "options": [
+          "il fait chaud",
+          "il fait froid",
+          "il neige",
+          "il gèle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "در ماه آگوست، به طور کلی هوا گرم است (il fait chaud)."
+      },
+      {
+        "type": "mcq",
+        "question": "En janvier, il faut mettre un manteau car ____.",
+        "options": [
+          "il fait froid",
+          "il fait chaud",
+          "il fait beau",
+          "il fait bon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "در ماه ژانویه باید کت پوشید چون هوا سرد است (il fait froid)."
+      },
+      {
+        "type": "mcq",
+        "question": "Quand il pleut et qu'il y a des nuages gris, on dit : ____.",
+        "options": [
+          "il fait mauvais",
+          "il fait beau",
+          "il fait chaud",
+          "il fait bon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وقتی باران می‌بارد و ابرهای خاکستری وجود دارد، می‌گوییم هوا بد است (il fait mauvais)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'expression pour dire « وجود دارد » ou « هست » est ____.",
+        "options": [
+          "il y a",
+          "il est",
+          "elle a",
+          "nous avons"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عبارتی که برای گفتن «وجود دارد» یا «هست» استفاده می‌شود، il y a است."
+      },
+      {
+        "type": "mcq",
+        "question": "Quand le ciel est bleu et sans nuages, ____.",
+        "options": [
+          "il y a du soleil",
+          "il y a de la neige",
+          "il y a du brouillard",
+          "il y a de la pluie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وقتی آسمان آبی و بدون ابر است، آفتابی است (il y a du soleil)."
+      },
+      {
+        "type": "mcq",
+        "question": "Quand l'air bouge fort et peut emporter ton chapeau, ____.",
+        "options": [
+          "il y a du vent",
+          "il y a du soleil",
+          "il y a de la chaleur",
+          "il y a du calme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وقتی هوا به شدت حرکت می‌کند و می‌تواند کلاهت را ببرد، باد می‌وزد (il y a du vent)."
+      },
+      {
+        "type": "mcq",
+        "question": "Une terre entourée d'eau de tous les côtés est une ____.",
+        "options": [
+          "île",
+          "montagne",
+          "forêt",
+          "désert"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زمینی که از همه طرف با آب احاطه شده است، جزیره (île) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "L'endroit près de la maison où on plante des fleurs et où les enfants jouent est le ____.",
+        "options": [
+          "jardin",
+          "bureau",
+          "magasin",
+          "hôpital"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی نزدیک خانه که در آن گل می‌کاریم و بچه‌ها بازی می‌کنند، باغ یا حیاط (jardin) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une grande étendue d'eau douce entourée de terre est un ____.",
+        "options": [
+          "lac",
+          "ciel",
+          "nuage",
+          "vent"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پهنه بزرگی از آب شیرین که با خشکی احاطه شده است، دریاچه (lac) نامیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« Les légumes » comme les carottes et les épinards sont bons pour la santé.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، سبزیجاتی مانند هویج و اسفناج برای سلامتی مفید هستند."
+      }
+    ]
+  }
+}
