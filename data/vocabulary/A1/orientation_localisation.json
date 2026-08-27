@@ -1,0 +1,658 @@
+{
+  "id": "orientation_localisation",
+  "level": "A1",
+  "theme": "Orientation et Localisation",
+  "theme_fa": "مسیریابی و موقعیت مکانی",
+  "icon": "🗺️",
+  "inspiration": "Le Petit Nicolas / Tintin",
+  "words": [
+    {
+      "fr": "à",
+      "fa": "به / در",
+      "emoji": "📍",
+      "difficulty": 1,
+      "ex": "Je vais à Paris.",
+      "ex_fa": "من به پاریس می‌روم."
+    },
+    {
+      "fr": "à cause de",
+      "fa": "به خاطرِ",
+      "emoji": "⚠️",
+      "difficulty": 2,
+      "ex": "Je suis en retard à cause du trafic.",
+      "ex_fa": "من به خاطر ترافیک دیر کردم."
+    },
+    {
+      "fr": "à côté de",
+      "fa": "کنارِ / بغلِ",
+      "emoji": "↔️",
+      "difficulty": 1,
+      "ex": "La banque est à côté de la poste.",
+      "ex_fa": "بانک کنار اداره پست است."
+    },
+    {
+      "fr": "à droite",
+      "fa": "سمت راست",
+      "emoji": "➡️",
+      "difficulty": 1,
+      "ex": "Tourne à droite au feu rouge.",
+      "ex_fa": "در چراغ قرمز به راست بپیچ."
+    },
+    {
+      "fr": "à gauche",
+      "fa": "سمت چپ",
+      "emoji": "⬅️",
+      "difficulty": 1,
+      "ex": "La pharmacie est à gauche.",
+      "ex_fa": "داروخانه سمت چپ است."
+    },
+    {
+      "fr": "à l'extérieur",
+      "fa": "خارج / بیرون",
+      "emoji": "🌳",
+      "difficulty": 2,
+      "ex": "Nous mangeons à l'extérieur aujourd'hui.",
+      "ex_fa": "امروز ما بیرون غذا می‌خوریم."
+    },
+    {
+      "fr": "à l'intérieur",
+      "fa": "داخل",
+      "emoji": "🏠",
+      "difficulty": 2,
+      "ex": "Il fait froid, entre à l'intérieur.",
+      "ex_fa": "هوا سرد است، داخل بیا."
+    },
+    {
+      "fr": "à mon avis",
+      "fa": "به نظر من",
+      "emoji": "💭",
+      "difficulty": 2,
+      "ex": "À mon avis, ce film est très bon.",
+      "ex_fa": "به نظر من، این فیلم خیلی خوب است."
+    },
+    {
+      "fr": "au milieu de",
+      "fa": "وسطِ",
+      "emoji": "🎯",
+      "difficulty": 2,
+      "ex": "La fontaine est au milieu de la place.",
+      "ex_fa": "فواره وسط میدان است."
+    },
+    {
+      "fr": "autour de",
+      "fa": "اطرافِ / دورِ",
+      "emoji": "🔄",
+      "difficulty": 2,
+      "ex": "Les enfants jouent autour de la table.",
+      "ex_fa": "بچه‌ها دور میز بازی می‌کنند."
+    },
+    {
+      "fr": "le centre-ville",
+      "fa": "مرکز شهر",
+      "emoji": "🏙️",
+      "difficulty": 2,
+      "ex": "J'habite en centre-ville.",
+      "ex_fa": "من در مرکز شهر زندگی می‌کنم."
+    },
+    {
+      "fr": "le chemin",
+      "fa": "راه / مسیر",
+      "emoji": "🛤️",
+      "difficulty": 2,
+      "ex": "Peux-tu me montrer le chemin ?",
+      "ex_fa": "می‌توانی راه را به من نشان دهی؟"
+    },
+    {
+      "fr": "le coin",
+      "fa": "گوشه / نبش",
+      "emoji": "📐",
+      "difficulty": 2,
+      "ex": "Le café est au coin de la rue.",
+      "ex_fa": "کافه در نبش خیابان است."
+    },
+    {
+      "fr": "dans",
+      "fa": "در (داخل)",
+      "emoji": "📦",
+      "difficulty": 1,
+      "ex": "Le livre est dans le sac.",
+      "ex_fa": "کتاب درون کیف است."
+    },
+    {
+      "fr": "dehors",
+      "fa": "بیرون",
+      "emoji": "🌬️",
+      "difficulty": 1,
+      "ex": "Il pleut, ne sors pas dehors.",
+      "ex_fa": "باران می‌بارد، بیرون نرو."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Où est la boulangerie ?",
+      "title_fa": "نانوایی کجاست؟",
+      "text": "Excusez-moi, je cherche la boulangerie. Elle est ____ (1) le ____ (11) ? - Oui, elle est ____ (14) le ____ (12), près du parc. - Est-ce qu'elle est ____ (3) de la banque ? - Non, elle est ____ (5) de la banque. Vous devez aller tout droit, puis tourner ____ (4). La boulangerie est ____ (13) de la rue. - Merci ! - ____ (8), elle est très bonne. - Je vais y aller ____ (2) parce que j'aime marcher. - Attention, il y a beaucoup de monde ____ (10) de la fontaine. - Je vais entrer ____ (15) pour acheter du pain. - Non, on peut acheter ____ (6) aussi. - D'____ (1), merci !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "dans",
+          "options": [
+            "dans",
+            "sur",
+            "sous",
+            "devant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "centre-ville",
+          "options": [
+            "centre-ville",
+            "campagne",
+            "forêt",
+            "montagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "à côté",
+          "options": [
+            "à côté",
+            "loin",
+            "haut",
+            "bas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "à droite",
+          "options": [
+            "à droite",
+            "à gauche",
+            "en haut",
+            "en bas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "à gauche",
+          "options": [
+            "à gauche",
+            "à droite",
+            "en haut",
+            "en bas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "dehors",
+          "options": [
+            "dehors",
+            "dedans",
+            "haut",
+            "bas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "à mon avis",
+          "options": [
+            "à mon avis",
+            "à cause de",
+            "au milieu de",
+            "autour de"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "à pied",
+          "options": [
+            "à pied",
+            "en avion",
+            "en train",
+            "en bateau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "autour",
+          "options": [
+            "autour",
+            "dedans",
+            "dessus",
+            "dessous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "à l'intérieur",
+          "options": [
+            "à l'intérieur",
+            "à l'extérieur",
+            "haut",
+            "bas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "chemin",
+          "options": [
+            "chemin",
+            "ciel",
+            "mer",
+            "air"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "coin",
+          "options": [
+            "coin",
+            "milieu",
+            "haut",
+            "bas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "cause",
+          "options": [
+            "cause",
+            "effet",
+            "raison",
+            "but"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "milieu",
+          "options": [
+            "milieu",
+            "bord",
+            "haut",
+            "bas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "à",
+          "options": [
+            "à",
+            "de",
+            "par",
+            "pour"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Promenade en ville",
+      "title_fa": "پیاده‌روی در شهر",
+      "inspiration": "Le Petit Nicolas",
+      "text": "Ce matin, je suis allé ____ (1) le ____ (11). J'ai marché ____ (2) parce qu'il faisait beau. J'ai vu une belle fontaine ____ (14) de la place. Les pigeons volaient ____ (10) de l'eau. J'ai demandé mon ____ (12) à un passant. Il m'a dit : « Allez tout droit, puis tournez ____ (4). Le musée est ____ (3) de la poste, au ____ (13) de la rue. » J'ai suivi ses conseils. ____ (8), c'était une bonne idée. J'ai évité la foule ____ (15) du bruit. J'ai préféré rester ____ (6) du musée pour prendre des photos. Finalement, je suis entré ____ (1) le musée. C'était magnifique.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "dans",
+          "options": [
+            "dans",
+            "sur",
+            "sous",
+            "devant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "centre-ville",
+          "options": [
+            "centre-ville",
+            "campagne",
+            "forêt",
+            "montagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "à pied",
+          "options": [
+            "à pied",
+            "en avion",
+            "en train",
+            "en bateau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "au milieu",
+          "options": [
+            "au milieu",
+            "au bord",
+            "en haut",
+            "en bas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "autour",
+          "options": [
+            "autour",
+            "dedans",
+            "dessus",
+            "dessous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "chemin",
+          "options": [
+            "chemin",
+            "ciel",
+            "mer",
+            "air"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "à droite",
+          "options": [
+            "à droite",
+            "à gauche",
+            "en haut",
+            "en bas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "à côté",
+          "options": [
+            "à côté",
+            "loin",
+            "haut",
+            "bas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "coin",
+          "options": [
+            "coin",
+            "milieu",
+            "haut",
+            "bas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "À mon avis",
+          "options": [
+            "À mon avis",
+            "À cause de",
+            "Au milieu de",
+            "Autour de"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "à cause",
+          "options": [
+            "à cause",
+            "à force",
+            "à l'aide",
+            "à la place"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "à l'extérieur",
+          "options": [
+            "à l'extérieur",
+            "à l'intérieur",
+            "haut",
+            "bas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "dehors",
+          "options": [
+            "dehors",
+            "dedans",
+            "haut",
+            "bas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "à",
+          "options": [
+            "à",
+            "de",
+            "par",
+            "pour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "à gauche",
+          "options": [
+            "à gauche",
+            "à droite",
+            "en haut",
+            "en bas"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Orientation et Localisation",
+    "title_fa": "آزمون: مسیریابی و موقعیت مکانی",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Pour dire que tu vas à Paris, tu dis : Je vais ____ Paris.",
+        "options": [
+          "à",
+          "de",
+          "par",
+          "pour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای شهرها از حرف اضافه à استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Si tu es en retard à cause du trafic, la raison est le ____.",
+        "options": [
+          "trafic",
+          "beau temps",
+          "calme",
+          "silence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عبارت à cause de برای بیان دلیل منفی (مثل ترافیک) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "La banque est juste à côté. On dit : Elle est ____ de la poste.",
+        "options": [
+          "à côté",
+          "loin",
+          "haut",
+          "bas"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "À côté de به معنای کنار یا بغل است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour aller à droite, on dit : Tourne ____.",
+        "options": [
+          "à droite",
+          "à gauche",
+          "en haut",
+          "en bas"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "À droite به معنای سمت راست است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le contraire de « à droite » est ____.",
+        "options": [
+          "à gauche",
+          "en haut",
+          "en bas",
+          "devant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متضاد سمت راست، سمت چپ (à gauche) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Si tu n'es pas dans la maison, tu es ____.",
+        "options": [
+          "à l'extérieur",
+          "à l'intérieur",
+          "haut",
+          "bas"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بیرون از خانه به معنای à l'extérieur است."
+      },
+      {
+        "type": "mcq",
+        "question": "Quand il pleut, il faut entrer ____.",
+        "options": [
+          "à l'intérieur",
+          "à l'extérieur",
+          "haut",
+          "bas"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وقتی باران می‌بارد باید به داخل (à l'intérieur) رفت."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour donner ton opinion, tu commences par : ____.",
+        "options": [
+          "À mon avis",
+          "À cause de",
+          "Au milieu de",
+          "Autour de"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای بیان نظر شخصی از À mon avis استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "La fontaine est exactement au centre de la place. Elle est ____ de la place.",
+        "options": [
+          "au milieu",
+          "au bord",
+          "en haut",
+          "en bas"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Au milieu de به معنای در وسط چیزی است."
+      },
+      {
+        "type": "mcq",
+        "question": "Les enfants jouent ____ la table. (autour)",
+        "options": [
+          "autour de",
+          "dedans",
+          "dessus",
+          "dessous"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Autour de به معنای در اطراف یا دور چیزی است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le cœur de la ville, avec les magasins et les restaurants, est le ____.",
+        "options": [
+          "centre-ville",
+          "campagne",
+          "forêt",
+          "montagne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مرکز شهر centre-ville نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour demander la direction, on dit : Peux-tu me montrer le ____ ?",
+        "options": [
+          "chemin",
+          "ciel",
+          "mer",
+          "air"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای پرسیدن مسیر از chemin استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« Le coin » de la rue signifie le milieu de la rue.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، coin به معنای گوشه یا نبش خیابان است."
+      },
+      {
+        "type": "binary",
+        "question": "On utilise « dans » pour dire qu'un objet est à l'intérieur d'un autre (ex: dans le sac).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، dans برای بیان قرار گرفتن در داخل چیزی استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« Dehors » est le contraire de « dedans ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، dehors (بیرون) متضاد dedans (داخل) است."
+      }
+    ]
+  }
+}
