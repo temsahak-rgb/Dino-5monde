@@ -1,0 +1,714 @@
+{
+  "id": "urgences_salle_operation",
+  "level": "C2",
+  "theme": "Urgences et Salle d'Opération",
+  "theme_fa": "اورژانس و اتاق عمل",
+  "icon": "🏥",
+  "inspiration": "Grey's Anatomy / House M.D.",
+  "words": [
+    {
+      "fr": "l'hémorragie",
+      "fa": "خونریزی",
+      "emoji": "🩸",
+      "difficulty": 2,
+      "ex": "Il faut juguler cette hémorragie avant qu'il ne perde un deuxième litre.",
+      "ex_fa": "باید این خونریزی را متوقف کنیم قبل از اینکه یک لیتر دیگر خون از دست بدهد."
+    },
+    {
+      "fr": "l'infarctus",
+      "fa": "سکته قلبی",
+      "emoji": "💔",
+      "difficulty": 3,
+      "ex": "Eu égard au sus-décalage ST, le patient fait un infarctus.",
+      "ex_fa": "با توجه به بالا رفتن قطعه ST، بیمار دچار سکته قلبی شده است."
+    },
+    {
+      "fr": "le scalpel",
+      "fa": "تیغ جراحی",
+      "emoji": "🔪",
+      "difficulty": 3,
+      "ex": "Le chirurgien saisit son scalpel avec une précision quasi rituelle.",
+      "ex_fa": "جراح با دقتی تقریباً آیینی تیغ جراحی‌اش را برمی‌دارد."
+    },
+    {
+      "fr": "la biopsie",
+      "fa": "نمونه‌برداری بافتی",
+      "emoji": "🔬",
+      "difficulty": 3,
+      "ex": "Avant de refermer, je veux une biopsie du tissu hépatique.",
+      "ex_fa": "قبل از بستن زخم، یک نمونه‌برداری از بافت کبد می‌خواهم."
+    },
+    {
+      "fr": "l'anesthésie",
+      "fa": "بیهوشی",
+      "emoji": "💉",
+      "difficulty": 3,
+      "ex": "L'anesthésiste maintient une anesthésie générale profonde.",
+      "ex_fa": "متخصص بیهوشی یک بیهوشی عمومی عمیق را حفظ می‌کند."
+    },
+    {
+      "fr": "l'analgésique",
+      "fa": "مسکن",
+      "emoji": "💊",
+      "difficulty": 3,
+      "ex": "Administrez un analgésique puissant pour la douleur thoracique.",
+      "ex_fa": "یک مسکن قوی برای درد قفسه سینه تجویز کنید."
+    },
+    {
+      "fr": "le cortex",
+      "fa": "قشر مغز",
+      "emoji": "🧠",
+      "difficulty": 4,
+      "ex": "Si l'irrigation cérébrale est compromise, c'est le cortex qui trinque.",
+      "ex_fa": "اگر خون‌رسانی مغزی مختل شود، این قشر مغز است که آسیب می‌بیند."
+    },
+    {
+      "fr": "la fibrillation",
+      "fa": "فیبریلاسیون",
+      "emoji": "📈",
+      "difficulty": 4,
+      "ex": "La fibrillation auriculaire est stabilisée après la décharge.",
+      "ex_fa": "فیبریلاسیون دهلیزی پس از شوک الکتریکی پایدار شد."
+    },
+    {
+      "fr": "la tachycardie",
+      "fa": "تاکی‌کاردی",
+      "emoji": "💓",
+      "difficulty": 3,
+      "ex": "Une tachycardie sévère a été enregistrée sur le moniteur.",
+      "ex_fa": "یک تاکی‌کاردی شدید روی مانیتور ثبت شد."
+    },
+    {
+      "fr": "le défibrillateur",
+      "fa": "دستگاه شوک قلبی",
+      "emoji": "⚡",
+      "difficulty": 3,
+      "ex": "Préparez le défibrillateur à deux cents joules immédiatement.",
+      "ex_fa": "فورا دستگاه شوک قلبی را روی دویست ژول آماده کنید."
+    },
+    {
+      "fr": "la stase",
+      "fa": "رکود (جریان خون)",
+      "emoji": "🩸",
+      "difficulty": 5,
+      "ex": "La stase sanguine pendant l'arrêt a formé des micro-caillots.",
+      "ex_fa": "رکود خون در حین ایست قلبی باعث تشکیل لخته‌های ریز شده است."
+    },
+    {
+      "fr": "la pression systolique",
+      "fa": "فشار سیستولیک",
+      "emoji": "🩺",
+      "difficulty": 4,
+      "ex": "Sa pression systolique est à deux cent dix, ce qui est critique.",
+      "ex_fa": "فشار سیستولیک او روی دویست و ده است که بحرانی محسوب می‌شود."
+    },
+    {
+      "fr": "le pneumothorax",
+      "fa": "پنوموتوراکس",
+      "emoji": "🫁",
+      "difficulty": 5,
+      "ex": "Le scanner objective un pneumothorax spontané du côté droit.",
+      "ex_fa": "سی‌تی اسکن یک پنوموتوراکس خودبه‌خودی در سمت راست را نشان می‌دهد."
+    },
+    {
+      "fr": "la ponction",
+      "fa": "پونکسیون",
+      "emoji": "💉",
+      "difficulty": 4,
+      "ex": "Faites une ponction lombaire pour exclure une hémorragie méningée.",
+      "ex_fa": "یک پونکسیون کمری انجام دهید تا خونریزی مننژ رد شود."
+    },
+    {
+      "fr": "la neurochirurgie",
+      "fa": "جراحی مغز و اعصاب",
+      "emoji": "🧠",
+      "difficulty": 4,
+      "ex": "Appelez le service de neurochirurgie en urgence absolue.",
+      "ex_fa": "با قید فوریت با بخش جراحی مغز و اعصاب تماس بگیرید."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Garde de nuit à l'hôpital",
+      "title_fa": "شیفت شب در بیمارستان",
+      "text": "Il est trois heures du matin. Un patient arrive aux urgences avec une douleur thoracique. Le médecin pense qu'il fait un {{BLANK_2}}. En même temps, une blessure au bras provoque une {{BLANK_1}} importante. Au bloc opératoire, le chirurgien utilise un {{BLANK_3}} pour faire une incision et demande une {{BLANK_4}} du foie. L'anesthésiste gère l'{{BLANK_5}} générale. Pour la douleur, on donne un {{BLANK_6}}. Si le cerveau manque d'oxygène, le {{BLANK_7}} est endommagé. Soudain, le moniteur montre une {{BLANK_9}} et une {{BLANK_8}} auriculaire. L'infirmière prépare le {{BLANK_10}}. Après le choc, on craint une {{BLANK_11}} sanguine. La {{BLANK_12}} du patient est très élevée. Le scanner révèle un {{BLANK_13}}. Le médecin décide de faire une {{BLANK_14}} lombaire et appelle la {{BLANK_15}}.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "hémorragie",
+          "options": [
+            "hémorragie",
+            "ecchymose",
+            "allergie",
+            "inflammation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "infarctus",
+          "options": [
+            "infarctus",
+            "asthme",
+            "ulcère",
+            "abcès"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "scalpel",
+          "options": [
+            "scalpel",
+            "stéthoscope",
+            "cathéter",
+            "garrot"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "biopsie",
+          "options": [
+            "biopsie",
+            "dialyse",
+            "transfusion",
+            "radiographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "anesthésie",
+          "options": [
+            "anesthésie",
+            "sédation",
+            "hypnose",
+            "intubation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "analgésique",
+          "options": [
+            "analgésique",
+            "antibiotique",
+            "anticoagulant",
+            "antiémétique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "cortex",
+          "options": [
+            "cortex",
+            "ventricule",
+            "fémur",
+            "thorax"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "fibrillation",
+          "options": [
+            "fibrillation",
+            "coagulation",
+            "vasoconstriction",
+            "inflammation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "tachycardie",
+          "options": [
+            "tachycardie",
+            "bradycardie",
+            "hémophilie",
+            "anémie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "défibrillateur",
+          "options": [
+            "défibrillateur",
+            "respirateur",
+            "électrocardiographe",
+            "pousse-seringue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "stase",
+          "options": [
+            "stase",
+            "syncope",
+            "septicémie",
+            "sclérose"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "pression systolique",
+          "options": [
+            "pression systolique",
+            "température corporelle",
+            "glycémie",
+            "saturation en O2"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "pneumothorax",
+          "options": [
+            "pneumothorax",
+            "pneumonie",
+            "bronchite",
+            "emphysème"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "ponction",
+          "options": [
+            "ponction",
+            "amputation",
+            "intubation",
+            "suture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "neurochirurgie",
+          "options": [
+            "neurochirurgie",
+            "cardiologie",
+            "dermatologie",
+            "pédiatrie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Nuit de garde à Saint-Louis",
+      "title_fa": "شیفت شب در سن‌لویی",
+      "inspiration": "Grey's Anatomy / House M.D.",
+      "text": "Il était trois heures passées, et le silence qui régnait dans les couloirs de l'hôpital n'était troublé que par le bourdonnement sourd des néons. Le Dr Moreau, les traits tirés, contemplait d'un regard vide son café tiède quand les portes s'ouvrirent à la volée. Un homme au teint cadavérique fut déposé sur un brancard. L'interne, jetant un coup d'œil au moniteur dont le tracé chaotique ne laissait guère de place à l'équivoque, murmura : « Docteur, eu égard au sus-décalage ST, je crois qu'il fait un {{BLANK_2}}. » Moreau n'eut pas le loisir d'acquiescer : une entaille béante au bras du patient laissait s'échapper un flot vermeil. « Il faut juguler cette {{BLANK_1}} avant qu'il ne perde un deuxième litre ! » ordonna-t-elle. Au bloc voisin, le chirurgien, le regard rivé sur le champ opératoire, saisit avec une précision quasi rituelle son {{BLANK_3}} et pratiqua une incision nette. « Avant de refermer, je veux une {{BLANK_4}} du tissu hépatique, » articula-t-il sans lever les yeux, tandis que l'anesthésiste maintenait une {{BLANK_5}} générale profonde. De retour aux urgences, Moreau serra les mâchoires. « Administrez un {{BLANK_6}} puissant. Si l'irrigation cérébrale a été compromise, c'est le {{BLANK_7}} qui trinque en premier. » Soudain, le moniteur crépita : « {{BLANK_9}} sévère ! » cria l'infirmière. « Préparez le {{BLANK_10}} ! » La décharge fit sursauter le corps. « La {{BLANK_8}} auriculaire est stabilisée, mais la {{BLANK_11}} sanguine a probablement formé des micro-caillots. Sa {{BLANK_12}} est à deux cent dix. Et le scanner montre un {{BLANK_13}} spontané. » Elle soupira. « Faites une {{BLANK_14}} lombaire. Et appelez la {{BLANK_15}}. »",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "hémorragie",
+          "options": [
+            "hémorragie",
+            "suppuration",
+            "transsudation",
+            "ecchymose"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "infarctus",
+          "options": [
+            "infarctus",
+            "anévrisme",
+            "embolie",
+            "ulcère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "scalpel",
+          "options": [
+            "scalpel",
+            "spéculum",
+            "cathéter",
+            "stéthoscope"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "biopsie",
+          "options": [
+            "biopsie",
+            "dialyse",
+            "transfusion",
+            "radiographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "anesthésie",
+          "options": [
+            "anesthésie",
+            "sédation",
+            "hypnose",
+            "analgésie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "analgésique",
+          "options": [
+            "analgésique",
+            "antibiotique",
+            "anticoagulant",
+            "antiémétique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "cortex",
+          "options": [
+            "cortex",
+            "cervelet",
+            "moelle épinière",
+            "hypothalamus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "fibrillation",
+          "options": [
+            "fibrillation",
+            "coagulation",
+            "vasoconstriction",
+            "inflammation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "tachycardie",
+          "options": [
+            "tachycardie",
+            "bradycardie",
+            "hémophilie",
+            "hypotension"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "défibrillateur",
+          "options": [
+            "défibrillateur",
+            "respirateur",
+            "électrocardiographe",
+            "pousse-seringue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "stase",
+          "options": [
+            "stase",
+            "syncope",
+            "septicémie",
+            "sclérose"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "pression systolique",
+          "options": [
+            "pression systolique",
+            "température corporelle",
+            "glycémie",
+            "saturation en O2"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "pneumothorax",
+          "options": [
+            "pneumothorax",
+            "pneumonie",
+            "bronchite",
+            "œdème pulmonaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "ponction",
+          "options": [
+            "ponction",
+            "amputation",
+            "intubation",
+            "suture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "neurochirurgie",
+          "options": [
+            "neurochirurgie",
+            "cardiologie",
+            "dermatologie",
+            "ophtalmologie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Urgences et Salle d'Opération",
+    "title_fa": "آزمون: اورژانس و اتاق عمل",
+    "displayCount": 20,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le muscle cardiaque a cessé de recevoir de l'oxygène, provoquant un ____.",
+        "options": [
+          "infarctus",
+          "AVC",
+          "embolie",
+          "anévrisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قطع اکسیژن‌رسانی به عضله قلب = سکته قلبی (infarctus)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'outil tranchant utilisé par le chirurgien pour pratiquer une incision est un ____.",
+        "options": [
+          "scalpel",
+          "stéthoscope",
+          "cathéter",
+          "garrot"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار برش جراحی = تیغ جراحی (scalpel)."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour analyser un tissu suspect, le médecin prélève un échantillon lors d'une ____.",
+        "options": [
+          "biopsie",
+          "dialyse",
+          "transfusion",
+          "radiographie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نمونه‌برداری از بافت برای آزمایش = biopsie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le patient ne ressent rien pendant l'opération grâce à l'____ générale.",
+        "options": [
+          "anesthésie",
+          "intubation",
+          "sédation",
+          "hypnose"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "از بین بردن کامل حس درد و هوشیاری در جراحی = بیهوشی (anesthésie)."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour soulager une douleur thoracique intense, on administre un ____ puissant.",
+        "options": [
+          "analgésique",
+          "antibiotique",
+          "anticoagulant",
+          "antiémétique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "داروی کاهش‌دهنده درد = مسکن (analgésique)."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie du cerveau responsable des fonctions cognitives supérieures est le ____.",
+        "options": [
+          "cortex",
+          "cervelet",
+          "tronc cérébral",
+          "hypothalamus"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قشر مغز که مسئول عملکردهای شناختی است = cortex."
+      },
+      {
+        "type": "mcq",
+        "question": "Un rythme cardiaque irrégulier et rapide des oreillettes est appelé une ____ auriculaire.",
+        "options": [
+          "fibrillation",
+          "coagulation",
+          "vasoconstriction",
+          "inflammation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لرزش نامنظم و سریع دهلیزهای قلب = فیبریلاسیون (fibrillation)."
+      },
+      {
+        "type": "mcq",
+        "question": "Un rythme cardiaque anormalement rapide au repos est une ____.",
+        "options": [
+          "tachycardie",
+          "bradycardie",
+          "hémophilie",
+          "hypotension"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضربان قلب بسیار تند = تاکی‌کاردی (tachycardie)."
+      },
+      {
+        "type": "mcq",
+        "question": "En cas d'arrêt cardiaque, l'équipe médicale utilise un ____ pour rétablir le rythme.",
+        "options": [
+          "défibrillateur",
+          "respirateur",
+          "électrocardiographe",
+          "pousse-seringue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دستگاه شوک الکتریکی قلب = défibrillateur."
+      },
+      {
+        "type": "mcq",
+        "question": "L'immobilité du sang dans les veines, favorisant les caillots, est une ____.",
+        "options": [
+          "stase",
+          "syncope",
+          "septicémie",
+          "sclérose"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رکود و ایست جریان خون = stase."
+      },
+      {
+        "type": "mcq",
+        "question": "La valeur maximale de la tension artérielle lors de la contraction du cœur est la ____.",
+        "options": [
+          "pression systolique",
+          "pression diastolique",
+          "fréquence cardiaque",
+          "saturation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فشار خون در هنگام انقباض قلب = فشار سیستولیک (pression systolique)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'air s'est introduit dans la cavité pleurale, provoquant un ____ spontané.",
+        "options": [
+          "pneumothorax",
+          "pneumonie",
+          "bronchite",
+          "emphysème"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روی هم خوابیدن ریه به دلیل ورود هوا = پنوموتوراکس (pneumothorax)."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour analyser le liquide céphalorachidien, le médecin réalise une ____ lombaire.",
+        "options": [
+          "ponction",
+          "amputation",
+          "intubation",
+          "suture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نمونه‌برداری از مایع نخاعی = پونکسیون (ponction)."
+      },
+      {
+        "type": "mcq",
+        "question": "La spécialité médicale qui opère le système nerveux central est la ____.",
+        "options": [
+          "neurochirurgie",
+          "cardiologie",
+          "dermatologie",
+          "ophtalmologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جراحی مغز و اعصاب = neurochirurgie."
+      },
+      {
+        "type": "mcq",
+        "question": "Une perte de sang abondante et continue nécessite une intervention immédiate pour stopper l'____.",
+        "options": [
+          "hémorragie",
+          "ecchymose",
+          "allergie",
+          "inflammation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خونریزی شدید و فعال = hémorragie."
+      },
+      {
+        "type": "binary",
+        "question": "Le scalpel et le bistouri sont des synonymes dans le langage médical courant.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، هر دو به تیغ یا چاقوی جراحی اشاره دارند."
+      },
+      {
+        "type": "binary",
+        "question": "La bradycardie désigne un rythme cardiaque anormalement rapide.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، bradycardie کندی ضربان قلب است. tachycardie تندی ضربان است."
+      },
+      {
+        "type": "binary",
+        "question": "Une biopsie consiste à prélever un échantillon de tissu pour examen microscopique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، این تعریف دقیق biopsie است."
+      },
+      {
+        "type": "binary",
+        "question": "Le cortex est situé dans la moelle épinière.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، cortex لایه بیرونی مغز است، نه نخاع."
+      },
+      {
+        "type": "binary",
+        "question": "Un pneumothorax implique un affaissement du poumon.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، ورود هوا به فضای پلور باعث روی هم خوابیدن ریه می‌شود."
+      }
+    ]
+  }
+}
