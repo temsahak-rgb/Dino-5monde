@@ -1,0 +1,660 @@
+{
+  "id": "exploration_psychologique_asile",
+  "level": "C2",
+  "theme": "Exploration Psychologique et Asile",
+  "theme_fa": "کاوش در اعماق روان و تیمارستان",
+  "icon": "🧠",
+  "inspiration": "Shutter Island / Hannibal",
+  "words": [
+    {
+      "fr": "la psychiatrie",
+      "fa": "روانپزشکی",
+      "emoji": "🧠",
+      "difficulty": 3,
+      "ex": "Il étudie la psychiatrie à l'université pour comprendre les troubles mentaux.",
+      "ex_fa": "او برای درک اختلالات روانی، روانپزشکی می‌خواند."
+    },
+    {
+      "fr": "la schizophrénie",
+      "fa": "اسکیزوفرنی",
+      "emoji": "🌀",
+      "difficulty": 4,
+      "ex": "La schizophrénie nécessite un suivi médical et thérapeutique rigoureux.",
+      "ex_fa": "اسکیزوفرنی نیازمند پیگیری پزشکی و درمانی دقیق است."
+    },
+    {
+      "fr": "le sociopathe",
+      "fa": "جامعه‌ستیز",
+      "emoji": "🎭",
+      "difficulty": 5,
+      "ex": "Le sociopathe manipule son entourage sans ressentir la moindre culpabilité.",
+      "ex_fa": "فرد جامعه‌ستیز اطرافیانش را بدون کوچک‌ترین احساس گناه دستکاری می‌کند."
+    },
+    {
+      "fr": "psychotique",
+      "fa": "روان‌پریش",
+      "emoji": "👁️",
+      "difficulty": 4,
+      "ex": "Le patient a fait une crise psychotique après l'arrêt brutal de son traitement.",
+      "ex_fa": "بیمار پس از قطع ناگهانی درمانش دچار حمله روان‌پریشی شد."
+    },
+    {
+      "fr": "le traumatisme",
+      "fa": "تروما / ضربه روانی",
+      "emoji": "💔",
+      "difficulty": 3,
+      "ex": "Ce traumatisme d'enfance l'a marqué à vie et influence ses relations.",
+      "ex_fa": "این ضربه روانی کودکی او را برای همیشه نشان کرده و بر روابطش تأثیر می‌گذارد."
+    },
+    {
+      "fr": "l'amertume",
+      "fa": "تلخی / کینه",
+      "emoji": "🍋",
+      "difficulty": 4,
+      "ex": "Il garde une profonde amertume envers ceux qui l'ont trahi.",
+      "ex_fa": "او کینه‌ای عمیق نسبت به کسانی که به او خیانت کردند در دل دارد."
+    },
+    {
+      "fr": "l'orgueil",
+      "fa": "غرور / تکبر",
+      "emoji": "🦚",
+      "difficulty": 3,
+      "ex": "L'orgueil démesuré l'a empêché de demander pardon.",
+      "ex_fa": "غرور بی‌اندازه مانع از آن شد که او عذرخواهی کند."
+    },
+    {
+      "fr": "la luxure",
+      "fa": "شهوت",
+      "emoji": "🔥",
+      "difficulty": 4,
+      "ex": "Le tableau de l'époque baroque illustre la luxure de manière frappante.",
+      "ex_fa": "نقاشی دوره باروک شهوت را به شکلی تکان‌دهنده به تصویر می‌کشد."
+    },
+    {
+      "fr": "fantasmer",
+      "fa": "تخیل کردن / توهم زدن",
+      "emoji": "💭",
+      "difficulty": 4,
+      "ex": "Il passe son temps à fantasmer sur une vie de richesse et de pouvoir.",
+      "ex_fa": "او وقتش را صرف تخیل کردن درباره زندگی ثروتمند و پرقدرت می‌کند."
+    },
+    {
+      "fr": "l'extase",
+      "fa": "خلسه / از خود بی‌خود شدن",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "La musique sacrée l'a plongé dans une extase mystique profonde.",
+      "ex_fa": "موسیقی مقدس او را در یک خلسه عرفانی عمیق فرو برد."
+    },
+    {
+      "fr": "insaisissable",
+      "fa": "غیرقابل دستگیری / غیرقابل درک",
+      "emoji": "🌫️",
+      "difficulty": 5,
+      "ex": "La véritable nature de ses motivations reste insaisissable pour les enquêteurs.",
+      "ex_fa": "ماهیت واقعی انگیزه‌های او برای بازجویان غیرقابل درک باقی مانده است."
+    },
+    {
+      "fr": "le néant",
+      "fa": "نیستی / هیچ",
+      "emoji": "🕳️",
+      "difficulty": 5,
+      "ex": "La philosophie existentialiste s'interroge sur le sens de la vie face au néant.",
+      "ex_fa": "فلسفه اگزیستانسیالیستی در مواجهه با نیستی، درباره معنای زندگی پرسش می‌کند."
+    },
+    {
+      "fr": "le spectre",
+      "fa": "شبح / طیف آزاردهنده",
+      "emoji": "👻",
+      "difficulty": 4,
+      "ex": "Le spectre de la guerre civile hante encore les mémoires collectives.",
+      "ex_fa": "شبح جنگ داخلی هنوز هم حافظه جمعی را تسخیر کرده است."
+    },
+    {
+      "fr": "le martyr",
+      "fa": "شهید / قربانی",
+      "emoji": "🕊️",
+      "difficulty": 4,
+      "ex": "Il est mort en martyr pour défendre ses convictions politiques.",
+      "ex_fa": "او برای دفاع از باورهای سیاسی‌اش مانند یک شهید جان باخت."
+    },
+    {
+      "fr": "le supplice",
+      "fa": "شکنجه / عذاب",
+      "emoji": "⛓️",
+      "difficulty": 4,
+      "ex": "L'attente interminable des résultats était un véritable supplice.",
+      "ex_fa": "انتظار بی‌پایان برای نتایج، عذابی واقعی بود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le dossier du docteur",
+      "title_fa": "پرونده دکتر",
+      "text": "Le docteur est spécialiste en {{BLANK_1}}. Son nouveau patient souffre de {{BLANK_2}} et présente un comportement de {{BLANK_3}}. Il a eu une crise {{BLANK_4}} hier. Tout cela vient d'un {{BLANK_5}} d'enfance. Le patient ressent beaucoup d'{{BLANK_6}} et d'{{BLANK_7}}. Il ne peut pas contrôler ses pulsions de {{BLANK_8}}. Il aime {{BLANK_9}} sur un monde parfait. Parfois, il tombe en {{BLANK_10}}. Mais son esprit reste {{BLANK_11}} pour les médecins. Il a peur du {{BLANK_12}} absolu. Le {{BLANK_13}} du passé le hante. Il se voit comme un {{BLANK_14}} de la science. Pour lui, chaque séance est un {{BLANK_15}}.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "psychiatrie",
+          "options": [
+            "psychiatrie",
+            "cardiologie",
+            "dermatologie",
+            "ophtalmologie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "schizophrénie",
+          "options": [
+            "schizophrénie",
+            "grippe",
+            "diabète",
+            "asthme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "sociopathe",
+          "options": [
+            "sociopathe",
+            "philanthrope",
+            "bienfaiteur",
+            "altruiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "psychotique",
+          "options": [
+            "psychotique",
+            "logique",
+            "rationnel",
+            "sain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "traumatisme",
+          "options": [
+            "traumatisme",
+            "bonheur",
+            "joie",
+            "succès"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "amertume",
+          "options": [
+            "amertume",
+            "douceur",
+            "gentillesse",
+            "bonté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "orgueil",
+          "options": [
+            "orgueil",
+            "humilité",
+            "modestie",
+            "simplicité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "luxure",
+          "options": [
+            "luxure",
+            "chasteté",
+            "tempérance",
+            "sobriété"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "fantasmer",
+          "options": [
+            "fantasmer",
+            "travailler",
+            "dormir",
+            "manger"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "extase",
+          "options": [
+            "extase",
+            "ennui",
+            "tristesse",
+            "colère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "insaisissable",
+          "options": [
+            "insaisissable",
+            "évident",
+            "clair",
+            "simple"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "néant",
+          "options": [
+            "néant",
+            "tout",
+            "univers",
+            "existence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "spectre",
+          "options": [
+            "spectre",
+            "réalité",
+            "certitude",
+            "fait"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "martyr",
+          "options": [
+            "martyr",
+            "bourreau",
+            "tortionnaire",
+            "agresseur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "supplice",
+          "options": [
+            "supplice",
+            "plaisir",
+            "détente",
+            "repos"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les abysses de l'âme",
+      "title_fa": "گرداب‌های روح",
+      "inspiration": "Shutter Island / Hannibal",
+      "text": "Le docteur Aris, éminent praticien en {{BLANK_1}}, observait son patient avec une froideur clinique. Ce dernier, diagnostiqué {{BLANK_2}} à tendance {{BLANK_3}}, venait de subir une décompensation {{BLANK_4}} sévère. À l'origine de ce chaos mental gisait un {{BLANK_5}} refoulé, source d'une {{BLANK_6}} corrosive. Nonobstant son {{BLANK_7}} démesuré, il se laissait consumer par la {{BLANK_8}}, préférant {{BLANK_9}} éperdument sur un idéal inaccessible plutôt que d'affronter la réalité. Par instants, une {{BLANK_10}} mystique semblait le transfigurer, mais sa véritable nature demeurait {{BLANK_11}}, glissant entre les mailles du filet diagnostique. Il redoutait par-dessus tout le {{BLANK_12}}, ce vide abyssal qui menace d'engloutir la conscience. Le {{BLANK_13}} de ses erreurs passées le hantait nuit et jour. Il se posait en {{BLANK_14}} de la vérité, alors que chaque séance n'était pour lui qu'un nouveau {{BLANK_15}}, une torture morale infligée par sa propre conscience.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "psychiatrie",
+          "options": [
+            "psychiatrie",
+            "chirurgie",
+            "pédiatrie",
+            "gériatrie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "schizophrène",
+          "options": [
+            "schizophrène",
+            "athlète",
+            "artiste",
+            "érudit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "sociopathe",
+          "options": [
+            "sociopathe",
+            "humaniste",
+            "philosophe",
+            "humanitaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "psychotique",
+          "options": [
+            "psychotique",
+            "neurologique",
+            "cardiaque",
+            "respiratoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "traumatisme",
+          "options": [
+            "traumatisme",
+            "triomphe",
+            "succès",
+            "victoire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "amertume",
+          "options": [
+            "amertume",
+            "euphorie",
+            "béatitude",
+            "sérénité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "orgueil",
+          "options": [
+            "orgueil",
+            "humilité",
+            "modestie",
+            "effacement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "luxure",
+          "options": [
+            "luxure",
+            "ascétisme",
+            "frugalité",
+            "retenue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "fantasmer",
+          "options": [
+            "fantasmer",
+            "rationnaliser",
+            "analyser",
+            "documenter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "extase",
+          "options": [
+            "extase",
+            "torpeur",
+            "léthargie",
+            "apathie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "insaisissable",
+          "options": [
+            "insaisissable",
+            "manifeste",
+            "patent",
+            "limpide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "néant",
+          "options": [
+            "néant",
+            "plénitude",
+            "abondance",
+            "totalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "spectre",
+          "options": [
+            "spectre",
+            "certitude",
+            "évidence",
+            "réalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "martyr",
+          "options": [
+            "martyr",
+            "bourreau",
+            "persécuteur",
+            "inquisiteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "supplice",
+          "options": [
+            "supplice",
+            "délice",
+            "réconfort",
+            "soulagement"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Exploration Psychologique et Asile",
+    "title_fa": "آزمون: کاوش در اعماق روان و تیمارستان",
+    "displayCount": 15,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La branche de la médecine dédiée aux troubles mentaux est la ____.",
+        "options": [
+          "psychiatrie",
+          "neurologie",
+          "cardiologie",
+          "dermatologie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شاخه‌ای از پزشکی که به اختلالات روانی می‌پردازد = psychiatrie."
+      },
+      {
+        "type": "mcq",
+        "question": "Le trouble mental caractérisé par des hallucinations et des délires est la ____.",
+        "options": [
+          "schizophrénie",
+          "myopie",
+          "asthme",
+          "diabète"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اختلال روانی با توهم و هذیان = schizophrénie."
+      },
+      {
+        "type": "mcq",
+        "question": "L'individu qui méprise les normes sociales et manque d'empathie est un ____.",
+        "options": [
+          "sociopathe",
+          "philanthrope",
+          "altruiste",
+          "humaniste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که هنجارهای اجتماعی را نادیده گرفته و همدلی ندارد = sociopathe."
+      },
+      {
+        "type": "mcq",
+        "question": "Un épisode de perte de contact avec la réalité est une crise ____.",
+        "options": [
+          "psychotique",
+          "cardiaque",
+          "allergique",
+          "asthmatique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حمله از دست دادن تماس با واقعیت = روان‌پریشی (psychotique)."
+      },
+      {
+        "type": "mcq",
+        "question": "Un choc émotionnel violent laissant des séquelles durables est un ____.",
+        "options": [
+          "traumatisme",
+          "bonheur",
+          "succès",
+          "triomphe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضربه عاطفی شدید با عواقب ماندگار = traumatisme."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sentiment de rancœur et de ressentiment durable est l'____.",
+        "options": [
+          "amertume",
+          "euphorie",
+          "béatitude",
+          "joie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "احساس کینه و رنجش ماندگار = amertume."
+      },
+      {
+        "type": "mcq",
+        "question": "La satisfaction excessive de soi, souvent considérée comme un défaut, est l'____.",
+        "options": [
+          "orgueil",
+          "humilité",
+          "modestie",
+          "simplicité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خودپسندی یا غرور بیش از حد = orgueil."
+      },
+      {
+        "type": "mcq",
+        "question": "Le désir sexuel intense et débridé, l'un des péchés capitaux, est la ____.",
+        "options": [
+          "luxure",
+          "chasteté",
+          "tempérance",
+          "sobriété"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "میل جنسی شدید و مهارنشدنی = luxure."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fait de se créer des scénarios imaginaires et irréalistes est de ____.",
+        "options": [
+          "fantasmer",
+          "rationnaliser",
+          "documenter",
+          "archiver"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ساختن سناریوهای خیالی و غیرواقعی = fantasmer."
+      },
+      {
+        "type": "mcq",
+        "question": "Un état de bonheur intense et de perte de conscience de soi est l'____.",
+        "options": [
+          "extase",
+          "torpeur",
+          "léthargie",
+          "apathie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حالت شادی شدید و از خود بی‌خود شدن = extase."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce qui échappe à la compréhension ou à la capture est qualifié d'____.",
+        "options": [
+          "insaisissable",
+          "évident",
+          "patent",
+          "limpide"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چیزی که از درک یا دسترس خارج است = insaisissable."
+      },
+      {
+        "type": "mcq",
+        "question": "L'absence totale d'existence ou de sens est le ____.",
+        "options": [
+          "néant",
+          "plénitude",
+          "abondance",
+          "totalité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فقدان کامل وجود یا معنا = néant."
+      },
+      {
+        "type": "mcq",
+        "question": "Une image mentale persistante et inquiétante du passé est un ____.",
+        "options": [
+          "spectre",
+          "certitude",
+          "évidence",
+          "réalité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تصویر ذهنی آزاردهنده و ماندگار از گذشته = spectre."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"martyr\" est une personne qui inflige des souffrances aux autres pour son plaisir.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، martyr کسی است که برای باورهایش رنج می‌کشد یا جان می‌دهد."
+      },
+      {
+        "type": "binary",
+        "question": "Le terme \"supplice\" désigne une souffrance physique ou morale intense.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، supplice به معنای رنج یا شکنجه شدید جسمی یا روحی است."
+      }
+    ]
+  }
+}
