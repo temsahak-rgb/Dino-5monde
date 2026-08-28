@@ -1,0 +1,480 @@
+{
+  "id": "nature_meteo_environnement",
+  "level": "A1",
+  "theme": "Nature, Météo et Environnement",
+  "theme_fa": "طبیعت، آب‌وهوا و محیط زیست",
+  "icon": "🌳",
+  "inspiration": "Le Petit Prince / La Belle et la Bête",
+  "words": [
+    {
+      "fr": "la rivière",
+      "fa": "رودخانه",
+      "emoji": "🏞️",
+      "difficulty": 1,
+      "ex": "Nous nous promenons au bord de la rivière.",
+      "ex_fa": "ما در کنار رودخانه پیاده‌روی می‌کنیم."
+    },
+    {
+      "fr": "le soleil",
+      "fa": "خورشید",
+      "emoji": "☀️",
+      "difficulty": 1,
+      "ex": "Le soleil brille dans le ciel bleu.",
+      "ex_fa": "خورشید در آسمان آبی می‌درخشد."
+    },
+    {
+      "fr": "la terre",
+      "fa": "زمین",
+      "emoji": "🌍",
+      "difficulty": 1,
+      "ex": "Les plantes poussent sur la terre.",
+      "ex_fa": "گیاهان روی زمین رشد می‌کنند."
+    },
+    {
+      "fr": "le vent",
+      "fa": "باد",
+      "emoji": "💨",
+      "difficulty": 1,
+      "ex": "Attention, il y a beaucoup de vent aujourd'hui.",
+      "ex_fa": "مراقب باشید، امروز باد زیادی می‌وزد."
+    },
+    {
+      "fr": "la vue",
+      "fa": "منظره",
+      "emoji": "👁️",
+      "difficulty": 2,
+      "ex": "Depuis la montagne, la vue est magnifique.",
+      "ex_fa": "از بالای کوه، منظره فوق‌العاده است."
+    },
+    {
+      "fr": "tomber",
+      "fa": "افتادن",
+      "emoji": "🍂",
+      "difficulty": 1,
+      "ex": "Attention de ne pas tomber sur la glace.",
+      "ex_fa": "مراقب باش روی یخ نیفتی."
+    },
+    {
+      "fr": "la vache",
+      "fa": "گاو",
+      "emoji": "🐄",
+      "difficulty": 1,
+      "ex": "La vache donne du lait frais.",
+      "ex_fa": "گاو شیر تازه می‌دهد."
+    },
+    {
+      "fr": "toujours",
+      "fa": "همیشه",
+      "emoji": "♾️",
+      "difficulty": 1,
+      "ex": "Je serai toujours ton ami.",
+      "ex_fa": "من همیشه دوست تو خواهم بود."
+    },
+    {
+      "fr": "vieux",
+      "fa": "پیر / قدیمی",
+      "emoji": "👴",
+      "difficulty": 1,
+      "ex": "C'est un vieux château au milieu de la forêt.",
+      "ex_fa": "این یک قلعه قدیمی در وسط جنگل است."
+    },
+    {
+      "fr": "y",
+      "fa": "آنجا / به آنجا",
+      "emoji": "📍",
+      "difficulty": 2,
+      "ex": "Ce village est beau, j'y vais souvent.",
+      "ex_fa": "این روستا زیبا است، من اغلب به آنجا می‌روم."
+    },
+    {
+      "fr": "soudain",
+      "fa": "ناگهان",
+      "emoji": "⚡",
+      "difficulty": 2,
+      "ex": "Nous marchions, et soudain, il a commencé à pleuvoir.",
+      "ex_fa": "ما در حال پیاده‌روی بودیم و ناگهان، باران شروع به باریدن کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Promenade à la campagne",
+      "title_fa": "پیاده‌روی در حومه شهر",
+      "text": "Aujourd'hui, ____ (2) brille et il n'y a pas de ____ (4). Je vais ____ (10) avec mon grand-père. C'est un ____ (9) homme, mais il marche bien. Nous allons au bord de la ____ (1). La ____ (7) mange de l'herbe verte. ____ (11), un oiseau tombe de l'arbre, mais il ne se fait pas mal. La ____ (5) sur la colline est superbe. J'aime ____ (8) venir ici. La ____ (3) est belle et calme.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "rivière",
+          "options": [
+            "rivière",
+            "vache",
+            "vue",
+            "terre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "le soleil",
+          "options": [
+            "le soleil",
+            "le vent",
+            "soudain",
+            "toujours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "terre",
+          "options": [
+            "terre",
+            "vue",
+            "rivière",
+            "vache"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "vent",
+          "options": [
+            "vent",
+            "soleil",
+            "vache",
+            "vue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "vue",
+          "options": [
+            "vue",
+            "terre",
+            "rivière",
+            "vache"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "tomber",
+          "options": [
+            "tomber",
+            "y",
+            "soudain",
+            "toujours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "vache",
+          "options": [
+            "vache",
+            "rivière",
+            "vue",
+            "terre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "toujours",
+          "options": [
+            "toujours",
+            "soudain",
+            "y",
+            "vieux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "vieux",
+          "options": [
+            "vieux",
+            "toujours",
+            "soudain",
+            "y"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "y",
+          "options": [
+            "y",
+            "toujours",
+            "soudain",
+            "vieux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "soudain",
+          "options": [
+            "soudain",
+            "toujours",
+            "y",
+            "vieux"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le charme de la nature",
+      "title_fa": "افسون طبیعت",
+      "inspiration": "Le Petit Prince",
+      "text": "Ce matin, ____ (2) illumine la ____ (3) de ses rayons dorés. Je décide d'____ (10) aller pour respirer l'air frais. Près de la ____ (1), une ____ (7) paisible broute l'herbe. ____ (11), le ____ (4) se lève et fait danser les feuilles. Il ne faut pas ____ (6) en marchant sur les cailloux. Depuis le sommet, la ____ (5) est à couper le souffle. Je reviendrai ____ (8) dans ce lieu magique, même quand je serai un ____ (9) monsieur.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "rivière",
+          "options": [
+            "rivière",
+            "vache",
+            "vue",
+            "terre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "le soleil",
+          "options": [
+            "le soleil",
+            "le vent",
+            "soudain",
+            "toujours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "terre",
+          "options": [
+            "terre",
+            "vue",
+            "rivière",
+            "vache"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "vent",
+          "options": [
+            "vent",
+            "soleil",
+            "vache",
+            "vue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "vue",
+          "options": [
+            "vue",
+            "terre",
+            "rivière",
+            "vache"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "tomber",
+          "options": [
+            "tomber",
+            "y",
+            "soudain",
+            "toujours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "vache",
+          "options": [
+            "vache",
+            "rivière",
+            "vue",
+            "terre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "toujours",
+          "options": [
+            "toujours",
+            "soudain",
+            "y",
+            "vieux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "vieux",
+          "options": [
+            "vieux",
+            "toujours",
+            "soudain",
+            "y"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "y",
+          "options": [
+            "y",
+            "toujours",
+            "soudain",
+            "vieux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "soudain",
+          "options": [
+            "soudain",
+            "toujours",
+            "y",
+            "vieux"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Nature, Météo et Environnement",
+    "title_fa": "آزمون: طبیعت، آب‌وهوا و محیط زیست",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'astre qui nous éclaire et nous réchauffe le jour est ____.",
+        "options": [
+          "le soleil",
+          "le vent",
+          "la rivière",
+          "la terre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ستاره‌ای که در روز به ما نور و گرما می‌دهد، خورشید (le soleil) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'eau qui coule dans la nature s'appelle une ____.",
+        "options": [
+          "rivière",
+          "vache",
+          "vue",
+          "terre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آبی که در طبیعت جریان دارد، رودخانه (rivière) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal qui donne du lait est ____.",
+        "options": [
+          "la vache",
+          "le vent",
+          "la vue",
+          "la terre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوانی که شیر می‌دهد، گاو (la vache) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le contraire de « jeune » est ____.",
+        "options": [
+          "vieux",
+          "toujours",
+          "soudain",
+          "y"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متضاد جوان، پیر یا قدیمی (vieux) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le verbe qui signifie « افتادن » est ____.",
+        "options": [
+          "tomber",
+          "y",
+          "soudain",
+          "toujours"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعلی که به معنای افتادن است، tomber می‌باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mot qui signifie « منظره » est ____.",
+        "options": [
+          "la vue",
+          "la terre",
+          "la rivière",
+          "la vache"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه‌ای که به معنای منظره است، la vue می‌باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "L'adverbe qui signifie « همیشه » est ____.",
+        "options": [
+          "toujours",
+          "soudain",
+          "y",
+          "vieux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قیدی که به معنای همیشه است، toujours می‌باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mot qui signifie « ناگهان » est ____.",
+        "options": [
+          "soudain",
+          "toujours",
+          "y",
+          "vieux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه‌ای که به معنای ناگهان است، soudain می‌باشد."
+      },
+      {
+        "type": "binary",
+        "question": "Devant un mot masculin commençant par une voyelle, « vieux » devient « vieil » (ex: un vieil ami).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، قبل از اسم مذکر شروع‌شده با حرف صدادار، vieux به vieil تغییر می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le pronom « y » remplace généralement un lieu (مثلاً: جایی).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، ضمیر y معمولاً جایگزین یک مکان می‌شود."
+      }
+    ]
+  }
+}
