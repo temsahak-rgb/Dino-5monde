@@ -1,0 +1,151 @@
+{
+  "id": "meteo_et_vetements",
+  "level": "A1",
+  "theme": "Météo et Vêtements",
+  "theme_fa": "آب و هوا و لباس",
+  "icon": "☔",
+  "inspiration": "Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "pleuvoir",
+      "fa": "باران باریدن",
+      "emoji": "🌧️",
+      "difficulty": 1,
+      "ex": "Il va pleuvoir cet après-midi, prends un parapluie.",
+      "ex_fa": "امروز بعدازظهر باران خواهد بارید، چتر بردار."
+    },
+    {
+      "fr": "la pluie",
+      "fa": "باران",
+      "emoji": "💧",
+      "difficulty": 1,
+      "ex": "Je n'aime pas marcher sous la pluie.",
+      "ex_fa": "من دوست ندارم زیر باران پیاده‌روی کنم."
+    },
+    {
+      "fr": "le pull",
+      "fa": "پلیور / ژاکت",
+      "emoji": "🧶",
+      "difficulty": 1,
+      "ex": "Il fait froid, je vais mettre un pull chaud.",
+      "ex_fa": "هوا سرد است، من یک پلیور گرم می‌پوشم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un jour de pluie",
+      "title_fa": "یک روز بارانی",
+      "text": "Regarde le ciel, il va ____ (1). Je n'aime pas ____ (2). Il fait froid, alors je vais mettre un ____ (3) en laine. Je reste à la maison.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "pleuvoir",
+          "options": [
+            "pleuvoir",
+            "la pluie",
+            "le pull"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "la pluie",
+          "options": [
+            "la pluie",
+            "pleuvoir",
+            "le pull"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "pull",
+          "options": [
+            "pull",
+            "pleuvoir",
+            "la pluie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La mélancolie de l'averse",
+      "title_fa": "اندوه بارش",
+      "inspiration": "Le Petit Prince",
+      "text": "On dit qu'il va ____ (1) sans arrêt aujourd'hui. La ____ (2) frappe doucement contre la vitre. Pour combattre le froid, j'enfile mon ____ (3) préféré, celui qui me réchauffe le cœur autant que le corps.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "pleuvoir",
+          "options": [
+            "pleuvoir",
+            "la pluie",
+            "le pull"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pluie",
+          "options": [
+            "pluie",
+            "pleuvoir",
+            "pull"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "pull",
+          "options": [
+            "pull",
+            "pleuvoir",
+            "pluie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Météo et Vêtements",
+    "title_fa": "آزمون: آب و هوا و لباس",
+    "displayCount": 3,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le verbe impersonnel pour dire « باران باریدن » est ____.",
+        "options": [
+          "pleuvoir",
+          "la pluie",
+          "le pull"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعل غیرشخصی برای گفتن باران باریدن، pleuvoir است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'eau qui tombe du ciel s'appelle ____.",
+        "options": [
+          "la pluie",
+          "pleuvoir",
+          "le pull"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آبی که از آسمان می‌بارد، باران (la pluie) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le vêtement chaud qu'on met en hiver est ____.",
+        "options": [
+          "le pull",
+          "pleuvoir",
+          "la pluie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لباس گرمی که در زمستان می‌پوشیم، پلیور یا ژاکت (le pull) است."
+      }
+    ]
+  }
+}
