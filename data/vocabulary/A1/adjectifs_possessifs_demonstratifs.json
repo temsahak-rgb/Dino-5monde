@@ -1,0 +1,450 @@
+{
+  "id": "adjectifs_possessifs_demonstratifs",
+  "level": "A1",
+  "theme": "Adjectifs Possessifs et Démonstratifs",
+  "theme_fa": "صفات ملکی و اشاره",
+  "icon": "🏷️",
+  "inspiration": "Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "mon / ma / mes",
+      "fa": "مال من",
+      "emoji": "🙋",
+      "difficulty": 1,
+      "ex": "C'est mon livre et mes stylos.",
+      "ex_fa": "این کتاب من و خودکارهای من است."
+    },
+    {
+      "fr": "ton / ta / tes",
+      "fa": "مال تو",
+      "emoji": "👉",
+      "difficulty": 1,
+      "ex": "Où est ta maison et tes clés ?",
+      "ex_fa": "خانه و کلیدهای تو کجاست؟"
+    },
+    {
+      "fr": "son / sa / ses",
+      "fa": "مال او",
+      "emoji": "👤",
+      "difficulty": 1,
+      "ex": "Il aime son travail et ses collègues.",
+      "ex_fa": "او کار و همکارانش را دوست دارد."
+    },
+    {
+      "fr": "notre / nos",
+      "fa": "مال ما",
+      "emoji": "🫵",
+      "difficulty": 1,
+      "ex": "Notre professeur est sympa, nos cours sont intéressants.",
+      "ex_fa": "معلم ما مهربان است، کلاس‌های ما جالب هستند."
+    },
+    {
+      "fr": "votre / vos",
+      "fa": "مال شما",
+      "emoji": "🫵🫵",
+      "difficulty": 1,
+      "ex": "Votre voiture est rapide, vos enfants sont sages.",
+      "ex_fa": "ماشین شما سریع است، بچه‌های شما مؤدب هستند."
+    },
+    {
+      "fr": "leur / leurs",
+      "fa": "مال آن‌ها",
+      "emoji": "👥",
+      "difficulty": 2,
+      "ex": "Leur maison est grande, leurs jardins sont beaux.",
+      "ex_fa": "خانه آن‌ها بزرگ است، باغ‌های آن‌ها زیبا هستند."
+    },
+    {
+      "fr": "ce / cet / cette / ces",
+      "fa": "این / آن",
+      "emoji": "👆",
+      "difficulty": 1,
+      "ex": "Ce garçon, cet homme, cette fille et ces fleurs.",
+      "ex_fa": "این پسر، این مرد، این دختر و این گل‌ها."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "À qui est-ce ?",
+      "title_fa": "این مال کیست؟",
+      "text": "Regarde ____ (7) sac ! C'est ____ (1) sac, pas le tien. Où est ____ (2) cahier ? Ah, le voilà sur ____ (3) bureau. Paul cherche ____ (4) chien. ____ (5) chien s'appelle Max. Nous cherchons ____ (6) ballons. Est-ce que ____ (8) ballons sont ici ? Non, ____ (9) ballons sont dans le jardin. Et les enfants ? ____ (10) jouets sont partout !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "mon",
+          "options": [
+            "mon",
+            "ton",
+            "son",
+            "notre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ton",
+          "options": [
+            "ton",
+            "mon",
+            "son",
+            "votre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "ton",
+          "options": [
+            "ton",
+            "mon",
+            "son",
+            "votre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "son",
+          "options": [
+            "son",
+            "sa",
+            "ses",
+            "leur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Son",
+          "options": [
+            "Son",
+            "Sa",
+            "Ses",
+            "Leur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "nos",
+          "options": [
+            "nos",
+            "mes",
+            "tes",
+            "ses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "ce",
+          "options": [
+            "ce",
+            "cet",
+            "cette",
+            "ces"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "vos",
+          "options": [
+            "vos",
+            "nos",
+            "leurs",
+            "mes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "nos",
+          "options": [
+            "nos",
+            "vos",
+            "leurs",
+            "tes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Leurs",
+          "options": [
+            "Leurs",
+            "Leur",
+            "Nos",
+            "Vos"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les trésors de la famille",
+      "title_fa": "گنجینه‌های خانواده",
+      "inspiration": "Le Petit Prince",
+      "text": "Chaque famille a ses secrets. ____ (1) grand-père garde ____ (2) vieux souvenirs dans ____ (3) coffre. ____ (4) mère prépare ____ (5) fameux gâteau dans ____ (6) cuisine. Nous aimons ____ (7) maison et ____ (8) jardin. Vous aimez ____ (9) tranquillité et ____ (10) paix. Et les voisins ? ____ (11) chat vient souvent chez nous. ____ (12) matin est toujours spécial.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Mon",
+          "options": [
+            "Mon",
+            "Ton",
+            "Son",
+            "Notre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ses",
+          "options": [
+            "ses",
+            "son",
+            "sa",
+            "leurs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "son",
+          "options": [
+            "son",
+            "sa",
+            "ses",
+            "leur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Ma",
+          "options": [
+            "Ma",
+            "Mon",
+            "Mes",
+            "Ta"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "son",
+          "options": [
+            "son",
+            "sa",
+            "ses",
+            "leur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "sa",
+          "options": [
+            "sa",
+            "son",
+            "ses",
+            "leur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "notre",
+          "options": [
+            "notre",
+            "mon",
+            "ton",
+            "leur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "notre",
+          "options": [
+            "notre",
+            "mon",
+            "ton",
+            "leur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "votre",
+          "options": [
+            "votre",
+            "notre",
+            "leur",
+            "mon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "votre",
+          "options": [
+            "votre",
+            "notre",
+            "leur",
+            "mon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "Leur",
+          "options": [
+            "Leur",
+            "Leurs",
+            "Notre",
+            "Votre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "Ce",
+          "options": [
+            "Ce",
+            "Cet",
+            "Cette",
+            "Ces"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Adjectifs Possessifs et Démonstratifs",
+    "title_fa": "آزمون: صفات ملکی و اشاره",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Pour dire « کتاب من » (livre est masculin), on dit : ____ livre.",
+        "options": [
+          "mon",
+          "ma",
+          "mes",
+          "ton"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای گفتن «کتاب من» (livre مذکر است)، از mon استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « خانه تو » (maison est féminin), on dit : ____ maison.",
+        "options": [
+          "ta",
+          "ton",
+          "tes",
+          "mon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای گفتن «خانه تو» (maison مؤنث است)، از ta استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « سگ او » (chien est masculin), on dit : ____ chien.",
+        "options": [
+          "son",
+          "sa",
+          "ses",
+          "leur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای گفتن «سگ او» (chien مذکر است)، از son استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « معلم ما » (professeur est masculin), on dit : ____ professeur.",
+        "options": [
+          "notre",
+          "nos",
+          "mon",
+          "votre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای گفتن «معلم ما»، از notre استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « کلیدهای شما » (clés est pluriel), on dit : ____ clés.",
+        "options": [
+          "vos",
+          "votre",
+          "tes",
+          "leur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای گفتن «کلیدهای شما» (جمع)، از vos استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « ماشین آن‌ها » (voiture est féminin), on dit : ____ voiture.",
+        "options": [
+          "leur",
+          "leurs",
+          "sa",
+          "nos"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای گفتن «ماشین آن‌ها» (مفرد)، از leur استفاده می‌شود (صرف‌نظر از جنسیت مالک، فقط تعداد مالکیت مهم است)."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour désigner un objet masculin proche : « ____ garçon ».",
+        "options": [
+          "Ce",
+          "Cet",
+          "Cette",
+          "Ces"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای اشاره به یک اسم مذکر نزدیک که با صامت شروع می‌شود، از Ce استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour désigner un objet masculin commençant par une voyelle : « ____ homme ».",
+        "options": [
+          "Cet",
+          "Ce",
+          "Cette",
+          "Ces"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای اشاره به یک اسم مذکر که با حرف صدادار شروع می‌شود، از Cet استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour désigner un objet féminin : « ____ fille ».",
+        "options": [
+          "Cette",
+          "Ce",
+          "Cet",
+          "Ces"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای اشاره به یک اسم مؤنث، از Cette استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "On dit « mes amis » pour le pluriel de « mon ami ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، جمع mon ami می‌شود mes amis."
+      }
+    ]
+  }
+}
