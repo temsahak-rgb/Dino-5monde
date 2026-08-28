@@ -1,0 +1,540 @@
+{
+  "id": "ecole_batiment_installations",
+  "level": "A1",
+  "theme": "École : Bâtiment et Installations",
+  "theme_fa": "امکانات مدرسه و ساختمان",
+  "icon": "🏫",
+  "inspiration": "Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "le pupitre",
+      "fa": "میز تحریر مدرسه",
+      "emoji": "🪑",
+      "difficulty": 2,
+      "ex": "Chaque élève a son propre pupitre.",
+      "ex_fa": "هر دانش‌آموز میز تحریر خودش را دارد."
+    },
+    {
+      "fr": "le placard",
+      "fa": "کمد دیواری",
+      "emoji": "🚪",
+      "difficulty": 2,
+      "ex": "Range tes livres dans le placard.",
+      "ex_fa": "کتاب‌هایت را در کمد دیواری بگذار."
+    },
+    {
+      "fr": "l'armoire",
+      "fa": "کمد لباس",
+      "emoji": "👔",
+      "difficulty": 2,
+      "ex": "Les manteaux sont suspendus dans l'armoire.",
+      "ex_fa": "پالتوها در کمد لباس آویزان هستند."
+    },
+    {
+      "fr": "le vestiaire",
+      "fa": "رختکن",
+      "emoji": "🧥",
+      "difficulty": 2,
+      "ex": "Laisse ta veste au vestiaire avant le cours de sport.",
+      "ex_fa": "قبل از کلاس ورزش، کتت را در رختکن بگذار."
+    },
+    {
+      "fr": "le mur",
+      "fa": "دیوار",
+      "emoji": "🧱",
+      "difficulty": 1,
+      "ex": "Nous avons affiché les dessins sur le mur.",
+      "ex_fa": "ما نقاشی‌ها را روی دیوار نصب کردیم."
+    },
+    {
+      "fr": "le plafond",
+      "fa": "سقف",
+      "emoji": "⬆️",
+      "difficulty": 2,
+      "ex": "Le plafond de cette salle est très haut.",
+      "ex_fa": "سقف این اتاق بسیار بلند است."
+    },
+    {
+      "fr": "le sol",
+      "fa": "کف / زمین",
+      "emoji": "⬇️",
+      "difficulty": 1,
+      "ex": "Ne marche pas sur le sol mouillé.",
+      "ex_fa": "روی زمین خیس راه نرو."
+    },
+    {
+      "fr": "l'escalier",
+      "fa": "پله‌ها",
+      "emoji": "🪜",
+      "difficulty": 1,
+      "ex": "Il faut monter l'escalier pour aller au deuxième étage.",
+      "ex_fa": "برای رفتن به طبقه دوم باید از پله‌ها بالا رفت."
+    },
+    {
+      "fr": "l'ascenseur",
+      "fa": "آسانسور",
+      "emoji": "🛗",
+      "difficulty": 1,
+      "ex": "Les personnes âgées prennent l'ascenseur.",
+      "ex_fa": "افراد مسن از آسانسور استفاده می‌کنند."
+    },
+    {
+      "fr": "les toilettes",
+      "fa": "سرویس بهداشتی",
+      "emoji": "🚻",
+      "difficulty": 1,
+      "ex": "Je peux aller aux toilettes, s'il vous plaît ?",
+      "ex_fa": "لطفاً می‌توانم به سرویس بهداشتی بروم؟"
+    },
+    {
+      "fr": "le gymnase",
+      "fa": "سالن ورزشی",
+      "emoji": "🏀",
+      "difficulty": 2,
+      "ex": "Nous jouons au basket dans le gymnase.",
+      "ex_fa": "ما در سالن ورزشی بسکتبال بازی می‌کنیم."
+    },
+    {
+      "fr": "le terrain de sport",
+      "fa": "زمین ورزشی",
+      "emoji": "⚽",
+      "difficulty": 2,
+      "ex": "Les élèves courent sur le terrain de sport.",
+      "ex_fa": "دانش‌آموزان در زمین ورزشی می‌دوند."
+    },
+    {
+      "fr": "la cour de récréation",
+      "fa": "حیاط مدرسه",
+      "emoji": "🏃",
+      "difficulty": 2,
+      "ex": "Les enfants jouent dans la cour de récréation.",
+      "ex_fa": "بچه‌ها در حیاط مدرسه بازی می‌کنند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Visite de l'école",
+      "title_fa": "بازدید از مدرسه",
+      "text": "Bienvenue dans notre école ! Regarde le ____ (6) haut et le ____ (7) propre. Pour aller en classe, nous montons l'____ (8) ou nous prenons l'____ (9). Dans la classe, chaque élève s'assoit à son ____ (1). Au fond, il y a un grand ____ (2) pour les livres et une ____ (3) pour les manteaux. Pendant la pause, nous allons dans la ____ (13) pour jouer. Si nous avons cours de sport, nous allons au ____ (11) ou sur le ____ (12). N'oublie pas de demander la permission pour aller aux ____ (10) ! Et n'affiche rien sur le ____ (5) sans permission.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "pupitre",
+          "options": [
+            "pupitre",
+            "placard",
+            "armoire",
+            "vestiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "placard",
+          "options": [
+            "placard",
+            "pupitre",
+            "mur",
+            "sol"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "armoire",
+          "options": [
+            "armoire",
+            "placard",
+            "vestiaire",
+            "pupitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "vestiaire",
+          "options": [
+            "vestiaire",
+            "gymnase",
+            "cour",
+            "toilettes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mur",
+          "options": [
+            "mur",
+            "plafond",
+            "sol",
+            "escalier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "plafond",
+          "options": [
+            "plafond",
+            "sol",
+            "mur",
+            "escalier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "sol",
+          "options": [
+            "sol",
+            "plafond",
+            "mur",
+            "escalier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "escalier",
+          "options": [
+            "escalier",
+            "ascenseur",
+            "gymnase",
+            "terrain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ascenseur",
+          "options": [
+            "ascenseur",
+            "escalier",
+            "gymnase",
+            "terrain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "toilettes",
+          "options": [
+            "toilettes",
+            "gymnase",
+            "cour",
+            "vestiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "gymnase",
+          "options": [
+            "gymnase",
+            "terrain",
+            "cour",
+            "vestiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "terrain de sport",
+          "options": [
+            "terrain de sport",
+            "gymnase",
+            "cour",
+            "vestiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "cour de récréation",
+          "options": [
+            "cour de récréation",
+            "gymnase",
+            "terrain",
+            "vestiaire"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'architecture des souvenirs",
+      "title_fa": "معماری خاطرات",
+      "inspiration": "Le Petit Nicolas",
+      "text": "L'école est un monde en soi. En entrant, on remarque d'abord le ____ (6) imposant et le ____ (7) qui résonne sous nos pas. On gravit l'____ (8) en bois, car l'____ (9) est souvent en panne. Dans la salle de classe, le ____ (1) en bois massif porte les traces des générations passées. Au fond, le ____ (2) et l'____ (3) gardent nos secrets et nos affaires. Les murs de la ____ (13) ont entendu nos rires et nos cris. Le ____ (11) sent la sueur et l'effort, tandis que le ____ (12) est le théâtre de nos victoires. Même les ____ (10) ont leurs histoires. Et sur le ____ (5), les vieilles affiches témoignent du temps qui passe.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "pupitre",
+          "options": [
+            "pupitre",
+            "placard",
+            "armoire",
+            "vestiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "placard",
+          "options": [
+            "placard",
+            "pupitre",
+            "mur",
+            "sol"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "armoire",
+          "options": [
+            "armoire",
+            "placard",
+            "vestiaire",
+            "pupitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "vestiaire",
+          "options": [
+            "vestiaire",
+            "gymnase",
+            "cour",
+            "toilettes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mur",
+          "options": [
+            "mur",
+            "plafond",
+            "sol",
+            "escalier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "plafond",
+          "options": [
+            "plafond",
+            "sol",
+            "mur",
+            "escalier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "sol",
+          "options": [
+            "sol",
+            "plafond",
+            "mur",
+            "escalier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "escalier",
+          "options": [
+            "escalier",
+            "ascenseur",
+            "gymnase",
+            "terrain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ascenseur",
+          "options": [
+            "ascenseur",
+            "escalier",
+            "gymnase",
+            "terrain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "toilettes",
+          "options": [
+            "toilettes",
+            "gymnase",
+            "cour",
+            "vestiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "gymnase",
+          "options": [
+            "gymnase",
+            "terrain",
+            "cour",
+            "vestiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "terrain de sport",
+          "options": [
+            "terrain de sport",
+            "gymnase",
+            "cour",
+            "vestiaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "cour de récréation",
+          "options": [
+            "cour de récréation",
+            "gymnase",
+            "terrain",
+            "vestiaire"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : École, Bâtiment et Installations",
+    "title_fa": "آزمون: مدرسه، ساختمان و امکانات",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le meuble individuel où l'élève s'assoit et écrit s'appelle le ____.",
+        "options": [
+          "pupitre",
+          "placard",
+          "armoire",
+          "vestiaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مبلمان انفرادی که دانش‌آموز پشت آن می‌نشیند و می‌نویسد، میز تحریر (pupitre) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'endroit où l'on accroche son manteau avant le sport est le ____.",
+        "options": [
+          "vestiaire",
+          "gymnase",
+          "cour",
+          "toilettes"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که قبل از ورزش پالتو را در آن آویزان می‌کنیم، رختکن (vestiaire) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La surface sur laquelle on marche dans une pièce est le ____.",
+        "options": [
+          "sol",
+          "plafond",
+          "mur",
+          "escalier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطحی که در یک اتاق روی آن راه می‌رویم، کف یا زمین (sol) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour monter au premier étage sans utiliser les marches, on prend l'____.",
+        "options": [
+          "ascenseur",
+          "escalier",
+          "gymnase",
+          "terrain"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای بالا رفتن به طبقه اول بدون استفاده از پله‌ها، از آسانسور (ascenseur) استفاده می‌کنیم."
+      },
+      {
+        "type": "mcq",
+        "question": "L'endroit extérieur où les élèves jouent pendant la pause est la ____.",
+        "options": [
+          "cour de récréation",
+          "gymnase",
+          "terrain de sport",
+          "vestiaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکان بیرونی که دانش‌آموزان در زنگ تفریح بازی می‌کنند، حیاط مدرسه (cour de récréation) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La salle couverte où l'on fait du sport (comme le basket) est le ____.",
+        "options": [
+          "gymnase",
+          "terrain de sport",
+          "cour",
+          "vestiaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سالن سرپوشیده‌ای که در آن ورزش می‌کنیم، سالن ورزشی (gymnase) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le grand meuble fermé pour ranger des objets ou des vêtements est l'____.",
+        "options": [
+          "armoire",
+          "pupitre",
+          "mur",
+          "plafond"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مبلمان بزرگ و دربسته برای نگهداری اشیاء یا لباس، کمد (armoire) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La surface verticale qui sépare les pièces est le ____.",
+        "options": [
+          "mur",
+          "sol",
+          "plafond",
+          "escalier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سطح عمودی که اتاق‌ها را از هم جدا می‌کند، دیوار (mur) است."
+      },
+      {
+        "type": "binary",
+        "question": "On dit « les toilettes » au pluriel en français pour désigner les WC.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، در فرانسوی برای اشاره به سرویس بهداشتی همیشه از شکل جمع (les toilettes) استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« Le plafond » est la partie basse d'une pièce, sous nos pieds.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، plafond به معنای سقف (بالاترین قسمت اتاق) است، نه کف اتاق."
+      }
+    ]
+  }
+}
