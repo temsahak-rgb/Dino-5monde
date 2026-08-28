@@ -1,0 +1,534 @@
+{
+  "id": "cuisine_repas",
+  "level": "A1",
+  "theme": "Cuisine et Repas",
+  "theme_fa": "آشپزخانه و وعده‌های غذایی",
+  "icon": "🍽️",
+  "inspiration": "Ratatouille / Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "les pâtes",
+      "fa": "پاستا / ماکارونی",
+      "emoji": "🍝",
+      "difficulty": 1,
+      "ex": "Je mange des pâtes au fromage ce soir.",
+      "ex_fa": "امشب پاستا با پنیر می‌خورم."
+    },
+    {
+      "fr": "la pâtisserie",
+      "fa": "شیرینی‌فروشی / شیرینی",
+      "emoji": "🍰",
+      "difficulty": 2,
+      "ex": "J'adore acheter des éclairs à la pâtisserie.",
+      "ex_fa": "من عاشق خریدن نان خامه‌ای از شیرینی‌فروشی هستم."
+    },
+    {
+      "fr": "le petit déjeuner",
+      "fa": "صبحانه",
+      "emoji": "🥐",
+      "difficulty": 1,
+      "ex": "Je prends mon petit déjeuner à 8 heures.",
+      "ex_fa": "من صبحانه‌ام را ساعت ۸ می‌خورم."
+    },
+    {
+      "fr": "le plat",
+      "fa": "بشقاب / غذا",
+      "emoji": "🍲",
+      "difficulty": 1,
+      "ex": "Ce plat est très épicé et délicieux.",
+      "ex_fa": "این غذا خیلی تند و خوشمزه است."
+    },
+    {
+      "fr": "le plat principal",
+      "fa": "غذای اصلی",
+      "emoji": "🥩",
+      "difficulty": 2,
+      "ex": "Le plat principal est du poulet rôti.",
+      "ex_fa": "غذای اصلی، مرغ بریان است."
+    },
+    {
+      "fr": "le poisson",
+      "fa": "ماهی",
+      "emoji": "🐟",
+      "difficulty": 1,
+      "ex": "J'aime manger du poisson grillé.",
+      "ex_fa": "من دوست دارم ماهی کبابی بخورم."
+    },
+    {
+      "fr": "le poivre",
+      "fa": "فلفل",
+      "emoji": "🌶️",
+      "difficulty": 1,
+      "ex": "Passe-moi le sel et le poivre, s'il te plaît.",
+      "ex_fa": "لطفاً نمک و فلفل را به من بده."
+    },
+    {
+      "fr": "la pomme",
+      "fa": "سیب",
+      "emoji": "🍎",
+      "difficulty": 1,
+      "ex": "Je mange une pomme rouge chaque matin.",
+      "ex_fa": "من هر صبح یک سیب قرمز می‌خورم."
+    },
+    {
+      "fr": "la pomme de terre",
+      "fa": "سیب‌زمینی",
+      "emoji": "🥔",
+      "difficulty": 1,
+      "ex": "J'adore les pommes de terre rôties.",
+      "ex_fa": "من عاشق سیب‌زمینی‌های بریان هستم."
+    },
+    {
+      "fr": "le poulet",
+      "fa": "مرغ",
+      "emoji": "🍗",
+      "difficulty": 1,
+      "ex": "Nous avons mangé un rôti de poulet.",
+      "ex_fa": "ما یک مرغ بریان خوردیم."
+    },
+    {
+      "fr": "le prix",
+      "fa": "قیمت",
+      "emoji": "💰",
+      "difficulty": 1,
+      "ex": "Quel est le prix de ce plat ?",
+      "ex_fa": "قیمت این غذا چقدر است؟"
+    },
+    {
+      "fr": "le repas",
+      "fa": "وعده غذایی",
+      "emoji": "🍽️",
+      "difficulty": 1,
+      "ex": "Le repas de ce soir était vraiment délicieux.",
+      "ex_fa": "وعده غذایی امشب واقعاً خوشمزه بود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un repas en famille",
+      "title_fa": "یک وعده غذایی خانوادگی",
+      "text": "Ce matin, je prends mon ____ (1) avec une ____ (2) et du café. À midi, je vais au restaurant. Je regarde le ____ (3) sur le menu. Je commande un ____ (4) de ____ (5) avec des ____ (6). Le ____ (7) est vraiment délicieux. Le soir, je prépare des ____ (8) avec du ____ (9) et un peu de ____ (10). Après le dîner, je vais à la ____ (11) pour acheter un gâteau. Ce ____ (12) était parfait et nous étions tous heureux.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "petit déjeuner",
+          "options": [
+            "petit déjeuner",
+            "plat",
+            "repas",
+            "prix"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pomme",
+          "options": [
+            "pomme",
+            "pomme de terre",
+            "pâtisserie",
+            "poulet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "prix",
+          "options": [
+            "prix",
+            "poivre",
+            "plat",
+            "pâtes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "plat",
+          "options": [
+            "plat",
+            "pays",
+            "pied",
+            "pont"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "poulet",
+          "options": [
+            "poulet",
+            "poisson",
+            "pomme",
+            "pâtisserie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pommes de terre",
+          "options": [
+            "pommes de terre",
+            "pâtes",
+            "poivrons",
+            "pâtisseries"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "plat principal",
+          "options": [
+            "plat principal",
+            "petit déjeuner",
+            "prix",
+            "poivre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "pâtes",
+          "options": [
+            "pâtes",
+            "pays",
+            "pieds",
+            "ports"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "poisson",
+          "options": [
+            "poisson",
+            "poulet",
+            "pomme",
+            "plat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "poivre",
+          "options": [
+            "poivre",
+            "prix",
+            "plat",
+            "pâtisserie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pâtisserie",
+          "options": [
+            "pâtisserie",
+            "piscine",
+            "plage",
+            "place"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "repas",
+          "options": [
+            "repas",
+            "région",
+            "rendez-vous",
+            "père"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le festin du dimanche",
+      "title_fa": "ضیافت یکشنبه",
+      "inspiration": "Ratatouille",
+      "text": "Le ____ (1) était servi dans la véranda ensoleillée. Sur la table, un ____ (2) fumant attendait les convives. Le ____ (3) était un magnifique ____ (4) grillé, accompagné de ____ (5) dorées et d'une sauce relevée au ____ (6). Pour le dessert, une visite à la ____ (7) du quartier s'imposait, pour y choisir une tarte aux ____ (8) fraîche. Le ____ (9) était très raisonnable pour un tel festin. Ce ____ (10) restera gravé dans nos mémoires, bien loin des simples ____ (11) rapides du quotidien. C'était bien plus qu'un simple ____ (12), c'était un moment de pur bonheur.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "petit déjeuner",
+          "options": [
+            "petit déjeuner",
+            "plat",
+            "repas",
+            "prix"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "plat",
+          "options": [
+            "plat",
+            "pays",
+            "pied",
+            "pont"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "plat principal",
+          "options": [
+            "plat principal",
+            "petit déjeuner",
+            "prix",
+            "poivre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "poisson",
+          "options": [
+            "poisson",
+            "poulet",
+            "pomme",
+            "pâtisserie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pommes de terre",
+          "options": [
+            "pommes de terre",
+            "pâtes",
+            "poivrons",
+            "pâtisseries"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "poivre",
+          "options": [
+            "poivre",
+            "prix",
+            "plat",
+            "pâtisserie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pâtisserie",
+          "options": [
+            "pâtisserie",
+            "piscine",
+            "plage",
+            "place"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "pommes",
+          "options": [
+            "pommes",
+            "pâtes",
+            "poulets",
+            "poissons"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "prix",
+          "options": [
+            "prix",
+            "poivre",
+            "plat",
+            "pâtes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "repas",
+          "options": [
+            "repas",
+            "région",
+            "rendez-vous",
+            "père"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pâtes",
+          "options": [
+            "pâtes",
+            "pays",
+            "pieds",
+            "ports"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "plat",
+          "options": [
+            "plat",
+            "pays",
+            "pied",
+            "pont"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Cuisine et Repas",
+    "title_fa": "آزمون: آشپزخانه و وعده‌های غذایی",
+    "displayCount": 12,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le premier repas de la journée s'appelle le ____.",
+        "options": [
+          "petit déjeuner",
+          "déjeuner",
+          "dîner",
+          "goûter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اولین وعده غذایی روز، صبحانه (petit déjeuner) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Les spaghettis et les macaronis sont des ____.",
+        "options": [
+          "pâtes",
+          "pommes",
+          "poissons",
+          "poulets"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اسپاگتی و ماکارونی انواع پاستا (pâtes) هستند."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal aquatique que l'on mange s'appelle le ____.",
+        "options": [
+          "poisson",
+          "poulet",
+          "pigeon",
+          "porc"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوان آبزی که خورده می‌شود، ماهی (poisson) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "L'épice noire que l'on ajoute avec le sel est le ____.",
+        "options": [
+          "poivre",
+          "sucre",
+          "miel",
+          "beurre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ادویه سیاهی که همراه نمک اضافه می‌شود، فلفل (poivre) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le légume-racine que l'on fait frire ou rôtir est la ____.",
+        "options": [
+          "pomme de terre",
+          "pomme",
+          "pâtisserie",
+          "place"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سبزیجات ریشه‌ای که سرخ یا بریان می‌شود، سیب‌زمینی (pomme de terre) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le magasin où l'on achète des gâteaux et des tartes est la ____.",
+        "options": [
+          "pâtisserie",
+          "boucherie",
+          "pharmacie",
+          "bibliothèque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فروشگاهی که در آن کیک و تارت می‌خریم، شیرینی‌فروشی (pâtisserie) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La somme d'argent à payer pour un article est le ____.",
+        "options": [
+          "prix",
+          "plat",
+          "repas",
+          "poids"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مبلغ پولی که برای یک کالا پرداخت می‌شود، قیمت (prix) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le repas du soir ou l'ensemble des mets servis s'appelle le ____.",
+        "options": [
+          "repas",
+          "rendez-vous",
+          "région",
+          "père"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وعده شام یا مجموعه غذاهای سرو شده، وعده غذایی (repas) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mets le plus important d'un repas, souvent à base de viande, est le ____.",
+        "options": [
+          "plat principal",
+          "petit déjeuner",
+          "poivre",
+          "pâtisserie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مهم‌ترین بخش یک وعده غذایی که اغلب گوشتی است، غذای اصلی (plat principal) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le fruit rouge ou vert qui croque sous la dent est la ____.",
+        "options": [
+          "pomme",
+          "pomme de terre",
+          "pâtisserie",
+          "place"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "میوه قرمز یا سبزی که زیر دندان صدا می‌دهد، سیب (pomme) است."
+      },
+      {
+        "type": "binary",
+        "question": "« Le poulet » est une viande blanche très courante en France.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، مرغ (poulet) یک گوشت سفید بسیار رایج در فرانسه است."
+      },
+      {
+        "type": "binary",
+        "question": "On met du « poivre » pour rendre un plat plus sucré.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، فلفل (poivre) برای تند یا معطر کردن غذا استفاده می‌شود، نه شیرین کردن."
+      }
+    ]
+  }
+}
