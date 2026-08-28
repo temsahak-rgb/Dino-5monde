@@ -1,0 +1,518 @@
+{
+  "id": "maison_pieces_environnement_interieur",
+  "level": "A1",
+  "theme": "Maison, Pièces et Environnement Intérieur",
+  "theme_fa": "خانه، اتاق‌ها و محیط داخلی",
+  "icon": "🏠",
+  "inspiration": "Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "la salle",
+      "fa": "سالن / اتاق بزرگ",
+      "emoji": "🏛️",
+      "difficulty": 1,
+      "ex": "La fête a lieu dans une grande salle.",
+      "ex_fa": "مهمانی در یک سالن بزرگ برگزار می‌شود."
+    },
+    {
+      "fr": "la salle à manger",
+      "fa": "اتاق ناهارخوری",
+      "emoji": "🍽️",
+      "difficulty": 1,
+      "ex": "Nous mangeons ensemble dans la salle à manger.",
+      "ex_fa": "ما با هم در اتاق ناهارخوری غذا می‌خوریم."
+    },
+    {
+      "fr": "le salon",
+      "fa": "اتاق نشیمن",
+      "emoji": "🛋️",
+      "difficulty": 1,
+      "ex": "Je regarde la télévision au salon.",
+      "ex_fa": "من در اتاق نشیمن تلویزیون تماشا می‌کنم."
+    },
+    {
+      "fr": "vide",
+      "fa": "خالی",
+      "emoji": "📦",
+      "difficulty": 1,
+      "ex": "La bouteille est vide, il n'y a plus d'eau.",
+      "ex_fa": "بطری خالی است، دیگر آبی در آن نیست."
+    },
+    {
+      "fr": "sur",
+      "fa": "رویِ",
+      "emoji": "⬆️",
+      "difficulty": 1,
+      "ex": "Le livre est sur la table.",
+      "ex_fa": "کتاب روی میز است."
+    },
+    {
+      "fr": "sous",
+      "fa": "زیرِ",
+      "emoji": "⬇️",
+      "difficulty": 1,
+      "ex": "Le chat dort sous le lit.",
+      "ex_fa": "گربه زیر تخت خوابیده است."
+    },
+    {
+      "fr": "la sortie",
+      "fa": "خروجی",
+      "emoji": "🚪",
+      "difficulty": 1,
+      "ex": "Où est la sortie de ce bâtiment ?",
+      "ex_fa": "خروجی این ساختمان کجاست؟"
+    },
+    {
+      "fr": "sortir",
+      "fa": "بیرون رفتن",
+      "emoji": "🚶",
+      "difficulty": 1,
+      "ex": "J'aime sortir avec mes amis le week-end.",
+      "ex_fa": "من دوست دارم آخر هفته‌ها با دوستانم بیرون بروم."
+    },
+    {
+      "fr": "rester",
+      "fa": "ماندن",
+      "emoji": "🏠",
+      "difficulty": 1,
+      "ex": "Je vais rester à la maison ce soir.",
+      "ex_fa": "من امشب در خانه می‌مانم."
+    },
+    {
+      "fr": "tranquille",
+      "fa": "آرام",
+      "emoji": "😌",
+      "difficulty": 2,
+      "ex": "J'habite dans un quartier très tranquille.",
+      "ex_fa": "من در یک محله بسیار آرام زندگی می‌کنم."
+    },
+    {
+      "fr": "la vie",
+      "fa": "زندگی",
+      "emoji": "🌱",
+      "difficulty": 1,
+      "ex": "La vie est belle quand on est en bonne santé.",
+      "ex_fa": "زندگی وقتی سالم هستیم زیباست."
+    },
+    {
+      "fr": "tourner",
+      "fa": "چرخیدن / پیچیدن",
+      "emoji": "🔄",
+      "difficulty": 1,
+      "ex": "Il faut tourner à gauche au prochain feu.",
+      "ex_fa": "باید در چراغ بعدی به چپ بپیچید."
+    },
+    {
+      "fr": "sans",
+      "fa": "بدون",
+      "emoji": "🚫",
+      "difficulty": 1,
+      "ex": "Je prends mon café sans sucre.",
+      "ex_fa": "من قهوه‌ام را بدون شکر می‌خورم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un dimanche à la maison",
+      "title_fa": "یک یکشنبه در خانه",
+      "text": "Aujourd'hui, je décide de ____ (9) à la maison. La ____ (3) est ____ (4) et calme. Je mets mes livres ____ (5) la table. Mon chat est caché ____ (6) le canapé. À midi, nous allons dans la ____ (2) pour déjeuner. Après le repas, je veux ____ (8) au parc, mais il pleut. Alors, je ____ (9) ici. La ____ (17) est simple mais belle. Ce soir, je ne vais pas ____ (8), je vais ____ (12) un film. La ____ (1) de secours est près de la porte. J'aime ma vie ____ (10), ____ (13) stress.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "rester",
+          "options": [
+            "rester",
+            "sortir",
+            "tourner",
+            "sentir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "salle à manger",
+          "options": [
+            "salle à manger",
+            "salon",
+            "sortie",
+            "salle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "salle",
+          "options": [
+            "salle",
+            "sortie",
+            "vie",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tranquille",
+          "options": [
+            "tranquille",
+            "vide",
+            "sale",
+            "rousse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sur",
+          "options": [
+            "sur",
+            "sous",
+            "sans",
+            "si"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "sous",
+          "options": [
+            "sous",
+            "sur",
+            "sans",
+            "si"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "sortie",
+          "options": [
+            "sortie",
+            "salle",
+            "vie",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "sortir",
+          "options": [
+            "sortir",
+            "rester",
+            "tourner",
+            "sentir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "vie",
+          "options": [
+            "vie",
+            "salle",
+            "sortie",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "tourner",
+          "options": [
+            "tourner",
+            "sortir",
+            "rester",
+            "sentir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "tranquille",
+          "options": [
+            "tranquille",
+            "vide",
+            "sale",
+            "rousse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "sans",
+          "options": [
+            "sans",
+            "sur",
+            "sous",
+            "si"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le refuge silencieux",
+      "title_fa": "پناهگاه ساکت",
+      "inspiration": "Le Petit Prince",
+      "text": "Il a décidé de ____ (1) ici, loin du bruit. Le ____ (3) est spacieux mais étrangement ____ (4). Il pose ses affaires ____ (5) la vieille commode. Le chat, fidèle, dort ____ (6) la chaise. À l'heure du repas, la ____ (2) s'anime. Plus tard, l'envie de ____ (8) le prend, mais la pluie le retient. Il regarde la ____ (7) avec mélancolie. La ____ (11) est faite de ces petits moments. Il ne veut pas ____ (10) en rond dans ses pensées. Il préfère une existence ____ (10), ____ (13) complications.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "rester",
+          "options": [
+            "rester",
+            "sortir",
+            "tourner",
+            "sentir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "salle à manger",
+          "options": [
+            "salle à manger",
+            "salon",
+            "sortie",
+            "salle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "salle",
+          "options": [
+            "salle",
+            "sortie",
+            "vie",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "vide",
+          "options": [
+            "vide",
+            "tranquille",
+            "sale",
+            "rousse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sur",
+          "options": [
+            "sur",
+            "sous",
+            "sans",
+            "si"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "sous",
+          "options": [
+            "sous",
+            "sur",
+            "sans",
+            "si"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "sortie",
+          "options": [
+            "sortie",
+            "salle",
+            "vie",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "sortir",
+          "options": [
+            "sortir",
+            "rester",
+            "tourner",
+            "sentir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "vie",
+          "options": [
+            "vie",
+            "salle",
+            "sortie",
+            "taille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "tourner",
+          "options": [
+            "tourner",
+            "sortir",
+            "rester",
+            "sentir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "tranquille",
+          "options": [
+            "tranquille",
+            "vide",
+            "sale",
+            "rousse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "sans",
+          "options": [
+            "sans",
+            "sur",
+            "sous",
+            "si"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Maison, Pièces et Environnement Intérieur",
+    "title_fa": "آزمون: خانه، اتاق‌ها و محیط داخلی",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La pièce où l'on regarde la télévision et reçoit des invités est le ____.",
+        "options": [
+          "salon",
+          "salle de bains",
+          "salle à manger",
+          "sortie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اتاقی که در آن تلویزیون تماشا می‌کنیم و مهمان می‌پذیریم، salon (اتاق نشیمن) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le contraire de « plein » est ____.",
+        "options": [
+          "vide",
+          "tranquille",
+          "sale",
+          "roux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متضاد پر، خالی (vide) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La préposition pour dire « رویِ » est ____.",
+        "options": [
+          "sur",
+          "sous",
+          "sans",
+          "si"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرف اضافه برای بیان «رویِ»، sur است."
+      },
+      {
+        "type": "mcq",
+        "question": "La préposition pour dire « زیرِ » est ____.",
+        "options": [
+          "sous",
+          "sur",
+          "sans",
+          "si"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرف اضافه برای بیان «زیرِ»، sous است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le verbe qui signifie « بیرون رفتن » est ____.",
+        "options": [
+          "sortir",
+          "rester",
+          "tourner",
+          "sentir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعلی که به معنای بیرون رفتن است، sortir می‌باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le verbe qui signifie « ماندن » est ____.",
+        "options": [
+          "rester",
+          "sortir",
+          "tourner",
+          "sentir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعلی که به معنای ماندن است، rester می‌باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "Un endroit calme, sans bruit, est dit ____.",
+        "options": [
+          "tranquille",
+          "vide",
+          "sale",
+          "roux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی آرام و بدون سر و صدا، tranquille (آرام) توصیف می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mot qui signifie « زندگی » est ____.",
+        "options": [
+          "la vie",
+          "la sortie",
+          "la salle",
+          "la taille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه‌ای که به معنای زندگی است، la vie می‌باشد."
+      },
+      {
+        "type": "binary",
+        "question": "« Tourner » signifie changer de direction (مثل پیچیدن در رانندگی).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، tourner به معنای چرخیدن یا پیچیدن است."
+      },
+      {
+        "type": "binary",
+        "question": "« Sans » signifie « با » en persan.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، sans به معنای «بدون» است، نه «با»."
+      }
+    ]
+  }
+}
