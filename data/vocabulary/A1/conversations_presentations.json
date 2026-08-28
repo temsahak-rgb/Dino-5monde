@@ -1,0 +1,537 @@
+{
+  "id": "conversations_presentations",
+  "level": "A1",
+  "theme": "Conversations Quotidiennes et Présentations",
+  "theme_fa": "مکالمات روزمره و معرفی",
+  "icon": "💬",
+  "inspiration": "French in Action",
+  "words": [
+    {
+      "fr": "Ça va ?",
+      "fa": "خوبی؟ / حالت چطوره؟",
+      "emoji": "👋",
+      "difficulty": 1,
+      "ex": "Salut Paul, ça va ?",
+      "ex_fa": "سلام پل، حالت چطوره؟"
+    },
+    {
+      "fr": "Ça va bien, merci",
+      "fa": "خوبم، ممنون",
+      "emoji": "😊",
+      "difficulty": 1,
+      "ex": "Ça va bien, merci. Et toi ?",
+      "ex_fa": "خوبم، ممنون. و تو؟"
+    },
+    {
+      "fr": "Ça va mal",
+      "fa": "حالم بد است",
+      "emoji": "😔",
+      "difficulty": 1,
+      "ex": "Aujourd'hui, ça va mal, je suis fatigué.",
+      "ex_fa": "امروز حالم بد است، خسته‌ام."
+    },
+    {
+      "fr": "comme ci, comme ça",
+      "fa": "نه خوبم نه بد / این‌طور و آن‌طور",
+      "emoji": "🤷",
+      "difficulty": 2,
+      "ex": "Bof, comme ci, comme ça.",
+      "ex_fa": "اِه، نه خوبم نه بد (این‌طور و آن‌طور)."
+    },
+    {
+      "fr": "Comment tu t'appelles ?",
+      "fa": "اسمت چیه؟",
+      "emoji": "🏷️",
+      "difficulty": 1,
+      "ex": "Bonjour, comment tu t'appelles ?",
+      "ex_fa": "سلام، اسمت چیه؟"
+    },
+    {
+      "fr": "Je m'appelle...",
+      "fa": "اسم من ... است",
+      "emoji": "🙋",
+      "difficulty": 1,
+      "ex": "Je m'appelle Sophie.",
+      "ex_fa": "اسم من سوفی است."
+    },
+    {
+      "fr": "Quel âge as-tu ?",
+      "fa": "چند سالته؟",
+      "emoji": "🎂",
+      "difficulty": 1,
+      "ex": "Quel âge as-tu cette année ?",
+      "ex_fa": "امسال چند سالته؟"
+    },
+    {
+      "fr": "J'ai ... ans",
+      "fa": "... سالمه",
+      "emoji": "🎈",
+      "difficulty": 1,
+      "ex": "J'ai vingt-cinq ans.",
+      "ex_fa": "من بیست و پنج سالمه."
+    },
+    {
+      "fr": "D'où viens-tu ?",
+      "fa": "اهل کجایی؟",
+      "emoji": "🌍",
+      "difficulty": 1,
+      "ex": "D'où viens-tu ? Tu es français ?",
+      "ex_fa": "اهل کجایی؟ فرانسوی هستی؟"
+    },
+    {
+      "fr": "Je viens de...",
+      "fa": "اهل ... هستم / از ... می‌آیم",
+      "emoji": "✈️",
+      "difficulty": 1,
+      "ex": "Je viens d'Iran.",
+      "ex_fa": "من اهل ایران هستم."
+    },
+    {
+      "fr": "Qu'est-ce que tu fais ?",
+      "fa": "چیکار می‌کنی؟ / شغلت چیه؟",
+      "emoji": "💼",
+      "difficulty": 1,
+      "ex": "Qu'est-ce que tu fais dans la vie ?",
+      "ex_fa": "در زندگی چه کار می‌کنی؟ (شغلت چیه؟)"
+    },
+    {
+      "fr": "Où habites-tu ?",
+      "fa": "کجا زندگی می‌کنی؟",
+      "emoji": "🏠",
+      "difficulty": 1,
+      "ex": "Où habites-tu à Paris ?",
+      "ex_fa": "کجای پاریس زندگی می‌کنی؟"
+    },
+    {
+      "fr": "Tu aimes ... ?",
+      "fa": "... را دوست داری؟",
+      "emoji": "❤️",
+      "difficulty": 1,
+      "ex": "Tu aimes le chocolat ?",
+      "ex_fa": "شکلات را دوست داری؟"
+    },
+    {
+      "fr": "Quel est ton numéro ?",
+      "fa": "شماره‌ات چنده؟",
+      "emoji": "📱",
+      "difficulty": 1,
+      "ex": "Quel est ton numéro de téléphone ?",
+      "ex_fa": "شماره تلفنت چنده؟"
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une nouvelle rencontre",
+      "title_fa": "یک آشنایی جدید",
+      "text": "Salut ! ____ (1) ? ____ (2), et toi ? Bof, ____ (4), je suis un peu fatigué. ____ (5) ? Je m'appelle Léa. Et toi ? ____ (6) Thomas. ____ (7) ? ____ (8) vingt ans. Et toi ? J'ai vingt-deux ans. ____ (9) ? ____ (10) Lyon. ____ (12) ? J'habite dans le centre-ville. ____ (11) ? Je suis étudiant. ____ (13) la musique ? Oui, j'adore ! ____ (14) ? C'est le 06 12 34 56 78.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Ça va",
+          "options": [
+            "Ça va",
+            "Comment tu t'appelles",
+            "Quel âge as-tu",
+            "D'où viens-tu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "Ça va bien, merci",
+          "options": [
+            "Ça va bien, merci",
+            "Ça va mal",
+            "comme ci, comme ça",
+            "Je m'appelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Ça va mal",
+          "options": [
+            "Ça va mal",
+            "Ça va bien",
+            "Je viens de",
+            "J'ai"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "comme ci, comme ça",
+          "options": [
+            "comme ci, comme ça",
+            "Ça va bien",
+            "Ça va mal",
+            "Je suis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Comment tu t'appelles",
+          "options": [
+            "Comment tu t'appelles",
+            "Quel âge as-tu",
+            "Où habites-tu",
+            "Qu'est-ce que tu fais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Je m'appelle",
+          "options": [
+            "Je m'appelle",
+            "Je viens de",
+            "J'ai",
+            "J'habite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Quel âge as-tu",
+          "options": [
+            "Quel âge as-tu",
+            "D'où viens-tu",
+            "Tu aimes",
+            "Quel est ton numéro"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "J'ai",
+          "options": [
+            "J'ai",
+            "Je suis",
+            "Je viens",
+            "J'habite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "D'où viens-tu",
+          "options": [
+            "D'où viens-tu",
+            "Où habites-tu",
+            "Qu'est-ce que tu fais",
+            "Tu aimes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Je viens de",
+          "options": [
+            "Je viens de",
+            "J'habite à",
+            "Je suis",
+            "J'aime"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "Qu'est-ce que tu fais",
+          "options": [
+            "Qu'est-ce que tu fais",
+            "Où habites-tu",
+            "Tu aimes",
+            "Quel est ton numéro"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "Où habites-tu",
+          "options": [
+            "Où habites-tu",
+            "D'où viens-tu",
+            "Qu'est-ce que tu fais",
+            "Comment tu t'appelles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "Tu aimes",
+          "options": [
+            "Tu aimes",
+            "Tu fais",
+            "Tu habites",
+            "Tu viens"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "Quel est ton numéro",
+          "options": [
+            "Quel est ton numéro",
+            "Quel est ton âge",
+            "Où est ta maison",
+            "Quel est ton nom"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le café des voyageurs",
+      "title_fa": "کافه مسافران",
+      "inspiration": "Amélie Poulain",
+      "text": "Dans ce petit café, les regards se croisent. « ____ (1) ? » demande le serveur avec un sourire. « ____ (2), » répond le voyageur, « mais mon cœur est un peu lourd, alors disons ____ (4). » « ____ (5) ? » « ____ (6) l'Étranger. » « ____ (9) avant de poser tes valises ici ? » « ____ (10) loin, d'un pays de montagnes. » « Et maintenant, ____ (12) ? » « Juste au coin de la rue. » « ____ (11) dans la vie ? » « Je cherche des histoires. » « ____ (13) les raconter ? » « Plus que tout. » « Alors, ____ (14), pour qu'on se revoie. »",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Ça va",
+          "options": [
+            "Ça va",
+            "Comment tu t'appelles",
+            "Quel âge as-tu",
+            "D'où viens-tu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "Ça va bien, merci",
+          "options": [
+            "Ça va bien, merci",
+            "Ça va mal",
+            "comme ci, comme ça",
+            "Je m'appelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "comme ci, comme ça",
+          "options": [
+            "comme ci, comme ça",
+            "Ça va bien",
+            "Ça va mal",
+            "Je suis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Comment tu t'appelles",
+          "options": [
+            "Comment tu t'appelles",
+            "Quel âge as-tu",
+            "Où habites-tu",
+            "Qu'est-ce que tu fais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Je m'appelle",
+          "options": [
+            "Je m'appelle",
+            "Je viens de",
+            "J'ai",
+            "J'habite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "D'où viens-tu",
+          "options": [
+            "D'où viens-tu",
+            "Où habites-tu",
+            "Qu'est-ce que tu fais",
+            "Tu aimes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Je viens de",
+          "options": [
+            "Je viens de",
+            "J'habite à",
+            "Je suis",
+            "J'aime"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "Qu'est-ce que tu fais",
+          "options": [
+            "Qu'est-ce que tu fais",
+            "Où habites-tu",
+            "Tu aimes",
+            "Quel est ton numéro"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "Où habites-tu",
+          "options": [
+            "Où habites-tu",
+            "D'où viens-tu",
+            "Qu'est-ce que tu fais",
+            "Comment tu t'appelles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "Tu aimes",
+          "options": [
+            "Tu aimes",
+            "Tu fais",
+            "Tu habites",
+            "Tu viens"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "Quel est ton numéro",
+          "options": [
+            "Quel est ton numéro",
+            "Quel est ton âge",
+            "Où est ta maison",
+            "Quel est ton nom"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Conversations et Présentations",
+    "title_fa": "آزمون: مکالمات و معرفی",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Pour demander « حالت چطوره؟ » de manière informelle, on dit ____.",
+        "options": [
+          "Ça va ?",
+          "Comment tu t'appelles ?",
+          "Quel âge as-tu ?",
+          "D'où viens-tu ?"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای پرسیدن «حالت چطوره؟» به صورت غیررسمی، از Ça va ? استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Si tu ne te sens pas très bien, tu peux répondre ____.",
+        "options": [
+          "Ça va mal",
+          "Ça va bien",
+          "Je m'appelle",
+          "J'ai vingt ans"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اگر حالت خیلی خوب نیست، می‌توانی پاسخ دهی Ça va mal (حالم بد است)."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « اسم من مریم است », on dit ____.",
+        "options": [
+          "Je m'appelle Maryam",
+          "Je viens de Maryam",
+          "J'ai Maryam",
+          "Je suis Maryam ans"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای گفتن اسم خود، از فعل s'appeler استفاده می‌شود: Je m'appelle Maryam."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour demander l'âge de quelqu'un, on dit ____.",
+        "options": [
+          "Quel âge as-tu ?",
+          "Quel est ton nom ?",
+          "D'où viens-tu ?",
+          "Que fais-tu ?"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای پرسیدن سن کسی، می‌گوییم Quel âge as-tu ?"
+      },
+      {
+        "type": "mcq",
+        "question": "Pour répondre à la question de l'âge, on utilise le verbe avoir : « ____ 20 ans. »",
+        "options": [
+          "J'ai",
+          "Je suis",
+          "Je fais",
+          "J'appelle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "در فرانسوی برای بیان سن از فعل avoir (داشتن) استفاده می‌شود: J'ai 20 ans."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour demander l'origine de quelqu'un (اهل کجایی؟), on dit ____.",
+        "options": [
+          "D'où viens-tu ?",
+          "Où habites-tu ?",
+          "Où vas-tu ?",
+          "Où travailles-tu ?"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای پرسیدن اینکه کسی اهل کجاست، می‌گوییم D'où viens-tu ?"
+      },
+      {
+        "type": "mcq",
+        "question": "Si tu veux dire « اهل تهران هستم », tu dis ____.",
+        "options": [
+          "Je viens de Téhéran",
+          "J'habite de Téhéran",
+          "Je suis de Téhéran ans",
+          "Je m'appelle Téhéran"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای گفتن اهل جایی بودن، از Je viens de + نام شهر استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "L'expression « comme ci, comme ça » signifie ____.",
+        "options": [
+          "نه خوبم نه بد",
+          "خیلی عالی",
+          "خیلی بد",
+          "نمی‌دانم"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عبارت comme ci, comme ça به معنای «نه خوبم نه بد» یا «این‌طور و آن‌طور» است."
+      },
+      {
+        "type": "binary",
+        "question": "Pour demander la profession de quelqu'un, on peut dire « Qu'est-ce que tu fais dans la vie ? ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، این عبارت راهی رایج برای پرسیدن شغل فرد است."
+      },
+      {
+        "type": "binary",
+        "question": "On utilise le verbe « être » pour dire son âge (ex: Je suis 20 ans).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، در فرانسوی برای سن از فعل avoir استفاده می‌شود (J'ai 20 ans)، نه être."
+      }
+    ]
+  }
+}
