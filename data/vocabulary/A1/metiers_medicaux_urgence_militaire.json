@@ -1,0 +1,326 @@
+{
+  "id": "metiers_medicaux_urgence_militaire",
+  "level": "A1",
+  "theme": "Métiers Médicaux, d'Urgence et Militaires",
+  "theme_fa": "مشاغل پزشکی، اورژانسی و نظامی",
+  "icon": "🚑",
+  "inspiration": "Urgences (ER)",
+  "words": [
+    {
+      "fr": "le médecin",
+      "fa": "دکتر / پزشک",
+      "emoji": "👨‍⚕️",
+      "difficulty": 1,
+      "ex": "Je dois aller chez le médecin pour un contrôle.",
+      "ex_fa": "من باید برای چکاپ به نزد پزشک بروم."
+    },
+    {
+      "fr": "l'infirmier",
+      "fa": "پرستار (مرد)",
+      "emoji": "👨‍⚕️",
+      "difficulty": 1,
+      "ex": "L'infirmier prend ma tension artérielle.",
+      "ex_fa": "پرستار فشار خون من را اندازه می‌گیرد."
+    },
+    {
+      "fr": "le dentiste",
+      "fa": "دندان‌پزشک",
+      "emoji": "🦷",
+      "difficulty": 1,
+      "ex": "J'ai un rendez-vous chez le dentiste demain.",
+      "ex_fa": "من فردا وقت دندان‌پزشکی دارم."
+    },
+    {
+      "fr": "l'avocat",
+      "fa": "وکیل",
+      "emoji": "⚖️",
+      "difficulty": 2,
+      "ex": "Il faut consulter un avocat pour ce problème juridique.",
+      "ex_fa": "برای این مشکل حقوقی باید با یک وکیل مشورت کرد."
+    },
+    {
+      "fr": "le policier",
+      "fa": "پلیس",
+      "emoji": "👮",
+      "difficulty": 1,
+      "ex": "Le policier aide les gens dans la rue.",
+      "ex_fa": "پلیس به مردم در خیابان کمک می‌کند."
+    },
+    {
+      "fr": "le pompier",
+      "fa": "آتش‌نشان",
+      "emoji": "🚒",
+      "difficulty": 1,
+      "ex": "Les pompiers ont éteint l'incendie rapidement.",
+      "ex_fa": "آتش‌نشانان به سرعت آتش را خاموش کردند."
+    },
+    {
+      "fr": "le soldat",
+      "fa": "سرباز",
+      "emoji": "🎖️",
+      "difficulty": 2,
+      "ex": "Le soldat protège son pays avec courage.",
+      "ex_fa": "سرباز با شجاعت از کشورش محافظت می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les héros du quotidien",
+      "title_fa": "قهرمانان روزمره",
+      "text": "Dans ma ville, il y a beaucoup de gens qui nous aident. Quand je suis malade, je vais chez le ____ (1). À l'hôpital, l'____ (2) est très gentil. Pour mes dents, je vois le ____ (3). Si j'ai un problème légal, je parle à un ____ (4). En cas de danger, on appelle le ____ (5) ou les ____ (6) pour le feu. Et pour protéger notre pays, il y a le ____ (7). Merci à tous !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "médecin",
+          "options": [
+            "médecin",
+            "dentiste",
+            "avocat",
+            "pompier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "infirmier",
+          "options": [
+            "infirmier",
+            "soldat",
+            "policier",
+            "avocat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "dentiste",
+          "options": [
+            "dentiste",
+            "médecin",
+            "pompier",
+            "soldat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "avocat",
+          "options": [
+            "avocat",
+            "policier",
+            "infirmier",
+            "médecin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "policier",
+          "options": [
+            "policier",
+            "dentiste",
+            "avocat",
+            "infirmier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pompiers",
+          "options": [
+            "pompiers",
+            "soldats",
+            "avocats",
+            "médecins"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "soldat",
+          "options": [
+            "soldat",
+            "dentiste",
+            "pompier",
+            "infirmier"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les gardiens de la société",
+      "title_fa": "نگهبانان جامعه",
+      "inspiration": "Les Misérables",
+      "text": "La société repose sur des piliers de dévouement. Le ____ (1) soigne les corps avec science. L'____ (2) apporte le réconfort et les soins quotidiens. Le ____ (3) veille sur nos sourires. Quand la justice est en jeu, l'____ (4) défend la vérité. Dans l'ombre de la nuit, le ____ (5) veille sur notre sécurité. Face au feu dévastateur, le ____ (6) affronte le danger sans hésiter. Et aux frontières, le ____ (7) incarne le sacrifice pour la patrie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "médecin",
+          "options": [
+            "médecin",
+            "dentiste",
+            "avocat",
+            "pompier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "infirmier",
+          "options": [
+            "infirmier",
+            "soldat",
+            "policier",
+            "avocat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "dentiste",
+          "options": [
+            "dentiste",
+            "médecin",
+            "pompier",
+            "soldat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "avocat",
+          "options": [
+            "avocat",
+            "policier",
+            "infirmier",
+            "médecin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "policier",
+          "options": [
+            "policier",
+            "dentiste",
+            "avocat",
+            "infirmier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pompier",
+          "options": [
+            "pompier",
+            "soldat",
+            "avocat",
+            "médecin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "soldat",
+          "options": [
+            "soldat",
+            "dentiste",
+            "pompier",
+            "infirmier"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Métiers Médicaux, d'Urgence et Militaires",
+    "title_fa": "آزمون: مشاغل پزشکی، اورژانسی و نظامی",
+    "displayCount": 7,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La personne qui soigne les maladies et les blessures est le ____.",
+        "options": [
+          "médecin",
+          "dentiste",
+          "avocat",
+          "pompier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که بیماری‌ها و زخم‌ها را درمان می‌کند، پزشک (médecin) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel qui s'occupe spécifiquement de la santé des dents est le ____.",
+        "options": [
+          "dentiste",
+          "médecin",
+          "infirmier",
+          "avocat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصصی که به طور خاص مراقب سلامت دندان‌ها است، دندان‌پزشک (dentiste) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui aide le médecin et donne des soins aux patients est l'____.",
+        "options": [
+          "infirmier",
+          "avocat",
+          "soldat",
+          "pompier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که به پزشک کمک می‌کند و به بیماران مراقبت می‌دهد، پرستار (infirmier) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel qui défend les gens devant un tribunal est l'____.",
+        "options": [
+          "avocat",
+          "policier",
+          "médecin",
+          "soldat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصصی که از مردم در دادگاه دفاع می‌کند، وکیل (avocat) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui maintient l'ordre et la sécurité dans la rue est le ____.",
+        "options": [
+          "policier",
+          "pompier",
+          "dentiste",
+          "infirmier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که نظم و امنیت را در خیابان حفظ می‌کند، پلیس (policier) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le héros qui éteint les incendies et sauve des vies est le ____.",
+        "options": [
+          "pompier",
+          "soldat",
+          "avocat",
+          "médecin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قهرمانی که آتش را خاموش می‌کند و جان مردم را نجات می‌دهد، آتش‌نشان (pompier) است."
+      },
+      {
+        "type": "binary",
+        "question": "Un « soldat » est une personne qui sert dans l'armée pour protéger le pays.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، سرباز (soldat) کسی است که در ارتش برای محافظت از کشور خدمت می‌کند."
+      }
+    ]
+  }
+}
