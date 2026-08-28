@@ -1,0 +1,600 @@
+{
+  "id": "electromenager_entretien_nettoyage",
+  "level": "A1",
+  "theme": "Électroménager, Produits d'Entretien et Nettoyage",
+  "theme_fa": "لوازم خانگی، شوینده و نظافت",
+  "icon": "🧹",
+  "inspiration": "Marie Kondo",
+  "words": [
+    {
+      "fr": "le radiateur",
+      "fa": "رادیاتور / شوفاژ",
+      "emoji": "🔥",
+      "difficulty": 2,
+      "ex": "Il fait froid, j'allume le radiateur.",
+      "ex_fa": "هوا سرد است، من رادیاتور را روشن می‌کنم."
+    },
+    {
+      "fr": "la climatisation",
+      "fa": "کولر / تهویه مطبوع",
+      "emoji": "❄️",
+      "difficulty": 2,
+      "ex": "En été, nous mettons la climatisation.",
+      "ex_fa": "در تابستان، ما کولر را روشن می‌کنیم."
+    },
+    {
+      "fr": "le réfrigérateur",
+      "fa": "یخچال",
+      "emoji": "🧊",
+      "difficulty": 1,
+      "ex": "Je mets le lait dans le réfrigérateur.",
+      "ex_fa": "من شیر را در یخچال می‌گذارم."
+    },
+    {
+      "fr": "la cuisinière",
+      "fa": "اجاق گاز",
+      "emoji": "🍳",
+      "difficulty": 2,
+      "ex": "Elle prépare le dîner sur la cuisinière.",
+      "ex_fa": "او شام را روی اجاق گاز آماده می‌کند."
+    },
+    {
+      "fr": "le four",
+      "fa": "فر",
+      "emoji": "🥖",
+      "difficulty": 1,
+      "ex": "Je mets le gâteau au four pour le cuire.",
+      "ex_fa": "من کیک را برای پختن در فر می‌گذارم."
+    },
+    {
+      "fr": "le lave-vaisselle",
+      "fa": "ماشین ظرفشویی",
+      "emoji": "🍽️",
+      "difficulty": 2,
+      "ex": "Je remplis le lave-vaisselle après le repas.",
+      "ex_fa": "من بعد از غذا ماشین ظرفشویی را پر می‌کنم."
+    },
+    {
+      "fr": "la machine à laver",
+      "fa": "ماشین لباسشویی",
+      "emoji": "👕",
+      "difficulty": 2,
+      "ex": "J'utilise la machine à laver pour mes vêtements.",
+      "ex_fa": "من از ماشین لباسشویی برای لباس‌هایم استفاده می‌کنم."
+    },
+    {
+      "fr": "le sèche-linge",
+      "fa": "ماشین خشک‌کن",
+      "emoji": "🌀",
+      "difficulty": 2,
+      "ex": "Je mets les vêtements mouillés dans le sèche-linge.",
+      "ex_fa": "من لباس‌های خیس را در ماشین خشک‌کن می‌گذارم."
+    },
+    {
+      "fr": "l'aspirateur",
+      "fa": "جاروبرقی",
+      "emoji": "🔌",
+      "difficulty": 2,
+      "ex": "Je passe l'aspirateur dans le salon.",
+      "ex_fa": "من در اتاق نشیمن جاروبرقی می‌کشم."
+    },
+    {
+      "fr": "le balai",
+      "fa": "جارو (دستی)",
+      "emoji": "🧹",
+      "difficulty": 2,
+      "ex": "Je donne un coup de balai sur le sol.",
+      "ex_fa": "من کف زمین را با جارو دستی تمیز می‌کنم."
+    },
+    {
+      "fr": "la pelle",
+      "fa": "خاک‌انداز",
+      "emoji": "🥄",
+      "difficulty": 2,
+      "ex": "J'utilise la pelle pour ramasser la poussière.",
+      "ex_fa": "من از خاک‌انداز برای جمع کردن گرد و غبار استفاده می‌کنم."
+    },
+    {
+      "fr": "le torchon",
+      "fa": "دستمال ظرفشویی",
+      "emoji": "🧽",
+      "difficulty": 2,
+      "ex": "J'essuie la table avec un torchon propre.",
+      "ex_fa": "من میز را با یک دستمال ظرفشویی تمیز پاک می‌کنم."
+    },
+    {
+      "fr": "l'éponge",
+      "fa": "اسفنج / ابر",
+      "emoji": "🧽",
+      "difficulty": 2,
+      "ex": "Je frotte la vaisselle avec l'éponge.",
+      "ex_fa": "من ظرف‌ها را با اسفنج می‌سابم."
+    },
+    {
+      "fr": "le savon",
+      "fa": "صابون",
+      "emoji": "🧼",
+      "difficulty": 1,
+      "ex": "Je me lave les mains avec du savon.",
+      "ex_fa": "من دست‌هایم را با صابون می‌شویم."
+    },
+    {
+      "fr": "le shampoing",
+      "fa": "شامپو",
+      "emoji": "🧴",
+      "difficulty": 1,
+      "ex": "J'utilise du shampoing pour laver mes cheveux.",
+      "ex_fa": "من برای شستن موهایم از شامپو استفاده می‌کنم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le grand ménage du samedi",
+      "title_fa": "نظافت بزرگ روز شنبه",
+      "text": "Le samedi, je fais le ménage. D'abord, je mets les vêtements sales dans la ____ (7), puis je les passe au ____ (8). En cuisine, je range les restes dans le ____ (3). Je cuisine sur la ____ (4) ou je mets un plat au ____ (5). Après le repas, je charge le ____ (6). Pour nettoyer, je passe l'____ (9) partout. Pour les petits coins, j'utilise le ____ (10) et la ____ (11). J'essuie les surfaces avec un ____ (12) et je frotte l'évier avec une ____ (13). Je me lave les mains au ____ (14) et je lave mes cheveux au ____ (15). S'il fait froid, j'allume le ____ (1), et s'il fait chaud, la ____ (2).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "radiateur",
+          "options": [
+            "radiateur",
+            "climatisation",
+            "réfrigérateur",
+            "cuisinière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "climatisation",
+          "options": [
+            "climatisation",
+            "radiateur",
+            "four",
+            "lave-vaisselle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "réfrigérateur",
+          "options": [
+            "réfrigérateur",
+            "machine à laver",
+            "sèche-linge",
+            "aspirateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cuisinière",
+          "options": [
+            "cuisinière",
+            "four",
+            "balai",
+            "pelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "four",
+          "options": [
+            "four",
+            "cuisinière",
+            "torchon",
+            "éponge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "lave-vaisselle",
+          "options": [
+            "lave-vaisselle",
+            "savon",
+            "shampoing",
+            "radiateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "machine à laver",
+          "options": [
+            "machine à laver",
+            "sèche-linge",
+            "aspirateur",
+            "balai"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "sèche-linge",
+          "options": [
+            "sèche-linge",
+            "machine à laver",
+            "pelle",
+            "torchon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "aspirateur",
+          "options": [
+            "aspirateur",
+            "éponge",
+            "savon",
+            "shampoing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "balai",
+          "options": [
+            "balai",
+            "pelle",
+            "torchon",
+            "éponge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pelle",
+          "options": [
+            "pelle",
+            "balai",
+            "savon",
+            "shampoing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "torchon",
+          "options": [
+            "torchon",
+            "éponge",
+            "savon",
+            "shampoing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "éponge",
+          "options": [
+            "éponge",
+            "torchon",
+            "savon",
+            "shampoing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "savon",
+          "options": [
+            "savon",
+            "shampoing",
+            "torchon",
+            "éponge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "shampoing",
+          "options": [
+            "shampoing",
+            "savon",
+            "radiateur",
+            "climatisation"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La danse du foyer",
+      "title_fa": "رقص کانون خانواده",
+      "inspiration": "Le Petit Prince",
+      "text": "Entretenir sa maison est un acte d'amour. Quand l'hiver serre son étreinte, le ____ (1) diffuse une chaleur douce. L'été, la ____ (2) apporte la fraîcheur. Dans la cuisine, le ____ (3) garde les trésors frais, tandis que la ____ (4) et le ____ (5) transforment les ingrédients en festins. Après le repas, le ____ (6) travaille en silence. Le linge danse dans la ____ (7) et se repose dans le ____ (8). Pour purifier l'espace, l'____ (9) avale la poussière, aidé par le modeste ____ (10) et la ____ (11). Le ____ (12) essuie les traces du temps, et l'____ (13) frotte avec zèle. Les mains se purifient au ____ (14), et la chevelure au ____ (15). La maison respire, nette et sereine.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "radiateur",
+          "options": [
+            "radiateur",
+            "climatisation",
+            "réfrigérateur",
+            "cuisinière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "climatisation",
+          "options": [
+            "climatisation",
+            "radiateur",
+            "four",
+            "lave-vaisselle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "réfrigérateur",
+          "options": [
+            "réfrigérateur",
+            "machine à laver",
+            "sèche-linge",
+            "aspirateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cuisinière",
+          "options": [
+            "cuisinière",
+            "four",
+            "balai",
+            "pelle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "four",
+          "options": [
+            "four",
+            "cuisinière",
+            "torchon",
+            "éponge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "lave-vaisselle",
+          "options": [
+            "lave-vaisselle",
+            "savon",
+            "shampoing",
+            "radiateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "machine à laver",
+          "options": [
+            "machine à laver",
+            "sèche-linge",
+            "aspirateur",
+            "balai"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "sèche-linge",
+          "options": [
+            "sèche-linge",
+            "machine à laver",
+            "pelle",
+            "torchon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "aspirateur",
+          "options": [
+            "aspirateur",
+            "éponge",
+            "savon",
+            "shampoing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "balai",
+          "options": [
+            "balai",
+            "pelle",
+            "torchon",
+            "éponge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pelle",
+          "options": [
+            "pelle",
+            "balai",
+            "savon",
+            "shampoing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "torchon",
+          "options": [
+            "torchon",
+            "éponge",
+            "savon",
+            "shampoing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "éponge",
+          "options": [
+            "éponge",
+            "torchon",
+            "savon",
+            "shampoing"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "savon",
+          "options": [
+            "savon",
+            "shampoing",
+            "torchon",
+            "éponge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "shampoing",
+          "options": [
+            "shampoing",
+            "savon",
+            "radiateur",
+            "climatisation"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Électroménager, Entretien et Nettoyage",
+    "title_fa": "آزمون: لوازم خانگی، شوینده و نظافت",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'appareil électrique qui garde les aliments au frais est le ____.",
+        "options": [
+          "réfrigérateur",
+          "four",
+          "cuisinière",
+          "lave-vaisselle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله برقی که مواد غذایی را خنک نگه می‌دارد، یخچال (réfrigérateur) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil utilisé pour cuire un gâteau ou un rôti est le ____.",
+        "options": [
+          "four",
+          "réfrigérateur",
+          "machine à laver",
+          "aspirateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله‌ای که برای پختن کیک یا گوشت استفاده می‌شود، فر (four) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La machine qui lave la vaisselle automatiquement est le ____.",
+        "options": [
+          "lave-vaisselle",
+          "machine à laver",
+          "sèche-linge",
+          "radiateur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماشینی که به طور خودکار ظرف‌ها را می‌شوید، ماشین ظرفشویی (lave-vaisselle) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil qui aspire la poussière du sol est l'____.",
+        "options": [
+          "aspirateur",
+          "balai",
+          "pelle",
+          "sèche-linge"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله‌ای که گرد و غبار کف زمین را می‌مکد، جاروبرقی (aspirateur) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'outil manuel composé d'un manche et de poils pour balayer est le ____.",
+        "options": [
+          "balai",
+          "pelle",
+          "torchon",
+          "éponge"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار دستی متشکل از دسته و مو برای جارو کردن، جارو دستی (balai) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le produit moussant utilisé pour laver le corps ou les mains est le ____.",
+        "options": [
+          "savon",
+          "shampoing",
+          "torchon",
+          "éponge"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محصول کف‌کننده‌ای که برای شستن بدن یا دست‌ها استفاده می‌شود، صابون (savon) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le produit liquide spécifique pour laver les cheveux est le ____.",
+        "options": [
+          "shampoing",
+          "savon",
+          "éponge",
+          "torchon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محصول مایع مخصوص شستن موها، شامپو (shampoing) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil qui refroidit l'air intérieur en été est la ____.",
+        "options": [
+          "climatisation",
+          "radiateur",
+          "cuisinière",
+          "machine à laver"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله‌ای که هوای داخل را در تابستان خنک می‌کند، کولر یا تهویه مطبوع (climatisation) است."
+      },
+      {
+        "type": "binary",
+        "question": "On utilise une « éponge » pour frotter et nettoyer la vaisselle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، از اسفنج یا ابر (éponge) برای سابیدن و تمیز کردن ظرف‌ها استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le « sèche-linge » est une machine qui sert à repasser les vêtements.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، sèche-linge ماشین خشک‌کن است، نه وسیله اتو کردن لباس."
+      }
+    ]
+  }
+}
