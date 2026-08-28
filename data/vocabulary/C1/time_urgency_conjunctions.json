@@ -1,0 +1,522 @@
+{
+  "id": "time_urgency_conjunctions",
+  "level": "C1",
+  "theme": "Gestion du Temps et Urgence",
+  "theme_fa": "مدیریت زمان و فوریت",
+  "icon": "⏱️",
+  "inspiration": "Inception de Christopher Nolan",
+  "words": [
+    {
+      "fr": "le délai (m)",
+      "fa": "مهلت، تأخیر",
+      "emoji": "📅",
+      "difficulty": 3,
+      "ex": "Nous devons respecter le délai de livraison.",
+      "ex_fa": "ما باید مهلت تحویل را رعایت کنیم."
+    },
+    {
+      "fr": "l'échéance (f)",
+      "fa": "سررسید، مهلت نهایی",
+      "emoji": "📆",
+      "difficulty": 4,
+      "ex": "L'échéance du projet est fixée à vendredi.",
+      "ex_fa": "سررسید پروژه برای جمعه تعیین شده است."
+    },
+    {
+      "fr": "l'urgence (f)",
+      "fa": "فوریت",
+      "emoji": "🚨",
+      "difficulty": 3,
+      "ex": "Face à l'urgence, il a pris une décision rapide.",
+      "ex_fa": "در برابر فوریت، او تصمیم سریعی گرفت."
+    },
+    {
+      "fr": "urgent(e)",
+      "fa": "فوری",
+      "emoji": "⚠️",
+      "difficulty": 2,
+      "ex": "C'est une affaire urgente qui nécessite votre attention.",
+      "ex_fa": "این یک موضوع فوری است که به توجه شما نیاز دارد."
+    },
+    {
+      "fr": "la précipitation (f)",
+      "fa": "عجله، شتاب‌زدگی",
+      "emoji": "🏃",
+      "difficulty": 4,
+      "ex": "La précipitation est souvent source d'erreurs.",
+      "ex_fa": "شتاب‌زدگی اغلب منشأ اشتباهات است."
+    },
+    {
+      "fr": "se précipiter",
+      "fa": "عجله کردن، شتافتن",
+      "emoji": "💨",
+      "difficulty": 3,
+      "ex": "Il ne faut pas se précipiter pour prendre une décision.",
+      "ex_fa": "برای تصمیم‌گیری نباید عجله کرد."
+    },
+    {
+      "fr": "hâtif/ve",
+      "fa": "شتاب‌زده",
+      "emoji": "⏩",
+      "difficulty": 5,
+      "ex": "C'est une conclusion hâtive sans preuve.",
+      "ex_fa": "این یک نتیجه‌گیری شتاب‌زده بدون مدرک است."
+    },
+    {
+      "fr": "la promptitude (f)",
+      "fa": "سرعت عمل، چابکی",
+      "emoji": "⚡",
+      "difficulty": 5,
+      "ex": "Nous apprécions votre promptitude à répondre.",
+      "ex_fa": "ما از سرعت عمل شما در پاسخگویی قدردانی می‌کنیم."
+    },
+    {
+      "fr": "prompt(e)",
+      "fa": "سریع، فوری",
+      "emoji": "🚀",
+      "difficulty": 4,
+      "ex": "Il a apporté une aide prompte et efficace.",
+      "ex_fa": "او کمک سریع و مؤثری ارائه داد."
+    },
+    {
+      "fr": "l'immédiateté (f)",
+      "fa": "بی‌درنگی، فوریت مطلق",
+      "emoji": "🎯",
+      "difficulty": 5,
+      "ex": "L'immédiateté de l'information est cruciale.",
+      "ex_fa": "بی‌درنگی اطلاعات حیاتی است."
+    },
+    {
+      "fr": "immédiat(e)",
+      "fa": "فوری، بی‌درنگ",
+      "emoji": "⏱️",
+      "difficulty": 3,
+      "ex": "Nous avons besoin d'une solution immédiate.",
+      "ex_fa": "ما به یک راه‌حل فوری نیاز داریم."
+    },
+    {
+      "fr": "la simultanéité (f)",
+      "fa": "همزمانی",
+      "emoji": "⏸️",
+      "difficulty": 5,
+      "ex": "La simultanéité des événements a causé la confusion.",
+      "ex_fa": "همزمانی رویدادها باعث سردرگمی شد."
+    },
+    {
+      "fr": "simultané(e)",
+      "fa": "همزمان",
+      "emoji": "🔄",
+      "difficulty": 4,
+      "ex": "Les deux attaques ont été simultanées.",
+      "ex_fa": "دو حمله همزمان بودند."
+    },
+    {
+      "fr": "la chronologie (f)",
+      "fa": "گاه‌شماری، ترتیب زمانی",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "Il faut respecter la chronologie des faits.",
+      "ex_fa": "باید ترتیب زمانی وقایع را رعایت کرد."
+    },
+    {
+      "fr": "chronologique",
+      "fa": "گاه‌شماری، به ترتیب زمان",
+      "emoji": "📊",
+      "difficulty": 3,
+      "ex": "Classez ces documents par ordre chronologique.",
+      "ex_fa": "این اسناد را به ترتیب زمانی مرتب کنید."
+    },
+    {
+      "fr": "intemporel/le",
+      "fa": "فراتر از زمان، کلاسیک",
+      "emoji": "🕰️",
+      "difficulty": 5,
+      "ex": "La beauté de cette œuvre est intemporelle.",
+      "ex_fa": "زیبایی این اثر فراتر از زمان است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La Course Contre la Montre",
+      "title_fa": "مسابقه با زمان",
+      "text": "Le projet approchait dangereusement de sa date limite. Nous ne pouvions plus accepter aucun {{BLANK_1}} supplémentaire. L'{{BLANK_2}} finale était fixée à vendredi midi, sans aucune possibilité de report. Face à cette {{BLANK_3}} absolue, toute l'équipe devait agir de manière coordonnée. Il était {{BLANK_4}} de finaliser le rapport avant la réunion du conseil. Cependant, la {{BLANK_5}} mène souvent à des erreurs coûteuses et irréparables. Il ne fallait surtout pas {{BLANK_6}} sans vérifier minutieusement les données chiffrées. Une décision {{BLANK_7}} pourrait compromettre des mois de travail acharné. Le client appréciait avant tout la {{BLANK_8}} de nos réponses, mais il exigeait aussi une qualité irréprochable. Nous devions donc trouver l'équilibre parfait entre vitesse et précision.",
+      "text_fa": "پروژه به‌طور خطرناکی به تاریخ نهایی خود نزدیک می‌شد. ما دیگر نمی‌توانستیم هیچ مهلت اضافی را بپذیریم. سررسید نهایی برای ظهر جمعه تعیین شده بود، بدون هیچ امکان تعویقی. در برابر این فوریت مطلق، کل تیم باید به‌صورت هماهنگ عمل می‌کرد. نهایی کردن گزارش قبل از جلسه هیئت‌مدیره فوری بود. با این حال، شتاب‌زدگی اغلب منجر به اشتباهات پرهزینه و جبران‌ناپذیر می‌شود. اصلاً نباید بدون بررسی دقیق داده‌های عددی عجله می‌کردیم. یک تصمیم شتاب‌زده می‌توانست ماه‌ها کار سخت را به خطر بیندازد. مشتری پیش از هر چیز از سرعت عمل ما در پاسخگویی قدردانی می‌کرد، اما کیفیت بی‌نقصی را نیز مطالبه می‌کرد. بنابراین ما باید تعادل کاملی بین سرعت و دقت پیدا می‌کردیم.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "délai",
+          "options": [
+            "délai",
+            "plaisir",
+            "loisir",
+            "désir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "échéance",
+          "options": [
+            "échéance",
+            "chance",
+            "danse",
+            "avance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "urgence",
+          "options": [
+            "urgence",
+            "élégance",
+            "arrogance",
+            "espérance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "urgent",
+          "options": [
+            "urgent",
+            "lent",
+            "distant",
+            "bruyant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "précipitation",
+          "options": [
+            "précipitation",
+            "application",
+            "création",
+            "admiration"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "se précipiter",
+          "options": [
+            "se reposer",
+            "se précipiter",
+            "se promener",
+            "se cacher"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 7,
+          "answer": "hâtive",
+          "options": [
+            "hâtive",
+            "réfléchie",
+            "lente",
+            "détaillée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "promptitude",
+          "options": [
+            "promptitude",
+            "lassitude",
+            "habitudes",
+            "solitude"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les Mécanismes du Rêve",
+      "title_fa": "سازوکارهای رویا",
+      "inspiration": "Inception de Christopher Nolan",
+      "text": "Dans ce rêve profondément imbriqué, le temps lui-même se distordait et perdait ses repères habituels. Une action {{BLANK_9}} pouvait sauver des années de vie éveillée, tandis qu'une seconde d'hésitation condamnait l'esprit à l'oubli éternel. Il cherchait désespérément à saisir l'{{BLANK_10}} du moment présent, cet instant {{BLANK_11}} qui glisse entre les doigts comme du sable fin. La beauté terrifiante de cet univers onirique résidait dans la {{BLANK_12}} des événements : tout se produisait {{BLANK_13}}, défiant les lois les plus fondamentales de la physique newtonienne. Pour comprendre ce chaos apparent, il fallait en reconstruire patiemment la {{BLANK_14}}. Chaque indice, placé dans un ordre {{BLANK_15}} précis et rigoureux, révélait un fragment de la vérité cachée. Seuls les souvenirs authentiques sont {{BLANK_16}}, échappant à jamais à l'emprise destructrice des aiguilles d'une montre.",
+      "text_fa": "در این رویای به‌شدت در هم تنیده، خود زمان نیز پیچ می‌خورد و نقاط مرجع همیشگی‌اش را از دست می‌داد. یک اقدام سریع می‌توانست سال‌ها از زندگی بیداری را نجات دهد، در حالی که یک ثانیه تردید، ذهن را به فراموشی ابدی محکوم می‌کرد. او با ناامیدی تلاش می‌کرد تا بی‌درنگی لحظه حال را درک کند، این لحظه فوری که مانند شن‌های ریز از لای انگشتان می‌لغزد. زیبایی ترسناک این جهان رویایی در همزمانی رویدادها نهفته بود: همه چیز به‌طور همزمان رخ می‌داد و بنیادی‌ترین قوانین فیزیک نیوتنی را به چالش می‌کشید. برای درک این آشوب ظاهری، باید به‌صورت صبورانه گاه‌شماری آن را بازسازی می‌کرد. هر نشانه‌ای که در یک ترتیب زمانی دقیق و سخت‌گیرانه قرار می‌گرفت، تکه‌ای از حقیقت پنهان را آشکار می‌ساخت. تنها خاطرات اصیل هستند که فراتر از زمان‌اند و برای همیشه از چنگال ویرانگر عقربه‌های ساعت می‌گریزند.",
+      "blanks": [
+        {
+          "id": 9,
+          "answer": "prompte",
+          "options": [
+            "prompte",
+            "lente",
+            "tardive",
+            "hésitante"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "immédiateté",
+          "options": [
+            "immédiateté",
+            "éternité",
+            "lenteur",
+            "passivité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "immédiat",
+          "options": [
+            "lointain",
+            "immédiat",
+            "futur",
+            "ancien"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 12,
+          "answer": "simultanéité",
+          "options": [
+            "simultanéité",
+            "succession",
+            "séparation",
+            "immobilité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "simultanément",
+          "options": [
+            "successivement",
+            "simultanément",
+            "rarement",
+            "lentement"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 14,
+          "answer": "chronologie",
+          "options": [
+            "géographie",
+            "chronologie",
+            "biologie",
+            "anthologie"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 15,
+          "answer": "chronologique",
+          "options": [
+            "aléatoire",
+            "chronologique",
+            "poétique",
+            "mystique"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 16,
+          "answer": "intemporels",
+          "options": [
+            "éphémères",
+            "intemporels",
+            "fragiles",
+            "temporaires"
+          ],
+          "correctIndex": 1
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Gestion du Temps et Urgence",
+    "title_fa": "آزمون : مدیریت زمان و فوریت",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Nous devons livrer ce projet avant la date limite, nous ne pouvons prendre aucun ____.",
+        "options": [
+          "délai",
+          "plaisir",
+          "loisir",
+          "désir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه 'délai' به معنای مهلت یا تأخیر زمانی است."
+      },
+      {
+        "type": "mcq",
+        "question": "La date de ____ du contrat est fixée au 31 décembre.",
+        "options": [
+          "échéance",
+          "chance",
+          "danse",
+          "avance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه 'échéance' به معنای سررسید یا مهلت نهایی انجام کار است."
+      },
+      {
+        "type": "binary",
+        "question": "Le mot 'urgence' désigne une situation qui nécessite une action rapide.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه 'urgence' به معنای فوریت و نیاز به اقدام سریع است."
+      },
+      {
+        "type": "mcq",
+        "question": "C'est une affaire ____ qui nécessite votre attention immédiate.",
+        "options": [
+          "urgente",
+          "lente",
+          "distante",
+          "bruyante"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه 'urgente' به معنای فوری است."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ mène souvent à des erreurs coûteuses qu'il faut éviter.",
+        "options": [
+          "précipitation",
+          "application",
+          "création",
+          "admiration"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه 'précipitation' به معنای شتاب‌زدگی و عجله بی‌مورد است."
+      },
+      {
+        "type": "binary",
+        "question": "'Se précipiter' signifie prendre son temps et réfléchir longuement avant d'agir.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "عبارت 'se précipiter' به معنای عجله کردن و شتافتن است، نه آرام فکر کردن."
+      },
+      {
+        "type": "mcq",
+        "question": "Ne tirez pas de conclusions ____ sans avoir analysé toutes les données.",
+        "options": [
+          "hâtives",
+          "réfléchies",
+          "lentes",
+          "détaillées"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه 'hâtives' به معنای شتاب‌زده و بدون تفکر کافی است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le client a apprécié la ____ avec laquelle nous avons traité sa demande.",
+        "options": [
+          "promptitude",
+          "lassitude",
+          "habitudes",
+          "solitude"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه 'promptitude' به معنای سرعت عمل و چابکی در پاسخگویی است."
+      },
+      {
+        "type": "binary",
+        "question": "Un secours 'prompt' arrive avec beaucoup de retard.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "کلمه 'prompt' به معنای سریع و فوری است، نه با تأخیر."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans le journalisme moderne, l'____ de l'information est souvent privilégiée au détriment de la vérification.",
+        "options": [
+          "immédiateté",
+          "éternité",
+          "lenteur",
+          "passivité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه 'immédiateté' به معنای بی‌درنگی و فوریت مطلق است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il faut apporter une solution ____ à ce problème technique critique.",
+        "options": [
+          "lointaine",
+          "immédiate",
+          "future",
+          "ancienne"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "کلمه 'immédiate' به معنای فوری و بی‌درنگ است."
+      },
+      {
+        "type": "binary",
+        "question": "La 'simultanéité' désigne le fait que des événements se produisent les uns après les autres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "کلمه 'simultanéité' به معنای همزمانی است، نه پشت سر هم."
+      },
+      {
+        "type": "mcq",
+        "question": "Les deux explosions ont été ____ , ce qui a compliqué les secours.",
+        "options": [
+          "successives",
+          "simultanées",
+          "rares",
+          "lentes"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "کلمه 'simultanées' به معنای همزمان است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour comprendre l'histoire, il faut respecter la ____ des événements.",
+        "options": [
+          "géographie",
+          "chronologie",
+          "biologie",
+          "anthologie"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "کلمه 'chronologie' به معنای ترتیب زمانی وقایع است."
+      },
+      {
+        "type": "binary",
+        "question": "Un ordre 'chronologique' classe les éléments du plus récent au plus ancien, ou inversement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه 'chronologique' به معنای مرتبط با ترتیب زمانی است."
+      },
+      {
+        "type": "mcq",
+        "question": "Les grandes œuvres d'art ont une beauté ____ qui traverse les siècles.",
+        "options": [
+          "éphémère",
+          "intemporelle",
+          "fragile",
+          "temporaire"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "کلمه 'intemporelle' به معنای فراتر از زمان و کلاسیک است."
+      }
+    ]
+  }
+}
