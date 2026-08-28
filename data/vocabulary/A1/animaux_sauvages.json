@@ -1,0 +1,384 @@
+{
+  "id": "animaux_sauvages",
+  "level": "A1",
+  "theme": "Animaux Sauvages et Forêt",
+  "theme_fa": "حیوانات وحشی و جنگل",
+  "icon": "🦁",
+  "inspiration": "Le Livre de la Jungle",
+  "words": [
+    {
+      "fr": "le lion",
+      "fa": "شیر",
+      "emoji": "🦁",
+      "difficulty": 1,
+      "ex": "Le lion est le roi de la jungle.",
+      "ex_fa": "شیر پادشاه جنگل است."
+    },
+    {
+      "fr": "le tigre",
+      "fa": "ببر",
+      "emoji": "🐅",
+      "difficulty": 1,
+      "ex": "Le tigre a des rayures noires.",
+      "ex_fa": "ببر راه‌راه‌های سیاه دارد."
+    },
+    {
+      "fr": "l'éléphant",
+      "fa": "فیل",
+      "emoji": "🐘",
+      "difficulty": 1,
+      "ex": "L'éléphant a une longue trompe.",
+      "ex_fa": "فیل خرطوم بلندی دارد."
+    },
+    {
+      "fr": "la girafe",
+      "fa": "زرافه",
+      "emoji": "🦒",
+      "difficulty": 1,
+      "ex": "La girafe a un très long cou.",
+      "ex_fa": "زرافه گردن بسیار بلندی دارد."
+    },
+    {
+      "fr": "le singe",
+      "fa": "میمون",
+      "emoji": "🐒",
+      "difficulty": 1,
+      "ex": "Le singe aime manger des bananes.",
+      "ex_fa": "میمون دوست دارد موز بخورد."
+    },
+    {
+      "fr": "l'ours",
+      "fa": "خرس",
+      "emoji": "🐻",
+      "difficulty": 1,
+      "ex": "L'ours dort pendant tout l'hiver.",
+      "ex_fa": "خرس در تمام طول زمستان می‌خوابد."
+    },
+    {
+      "fr": "le loup",
+      "fa": "گرگ",
+      "emoji": "🐺",
+      "difficulty": 1,
+      "ex": "Le loup hurle à la lune.",
+      "ex_fa": "گرگ رو به ماه زوزه می‌کشد."
+    },
+    {
+      "fr": "le renard",
+      "fa": "روباه",
+      "emoji": "🦊",
+      "difficulty": 1,
+      "ex": "Le renard est un animal très rusé.",
+      "ex_fa": "روباه حیوان بسیار زیرکی است."
+    },
+    {
+      "fr": "le cerf",
+      "fa": "گوزن",
+      "emoji": "🦌",
+      "difficulty": 2,
+      "ex": "Le cerf a de grandes cornes.",
+      "ex_fa": "گوزن شاخ‌های بزرگی دارد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une journée dans la jungle",
+      "title_fa": "یک روز در جنگل",
+      "text": "Dans la jungle, le ____ (1) dort au soleil. À côté, un ____ (3) mange des feuilles avec sa longue trompe. Une ____ (4) observe le monde d'en haut. Soudain, un ____ (7) hurle dans la forêt. Le ____ (8) rusé observe en silence. Un ____ (5) mange des bananes dans les arbres. L'____ (6) cherche du miel. Le ____ (2) marche doucement. Et le ____ (9) court dans les bois. J'adore les animaux sauvages !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "lion",
+          "options": [
+            "lion",
+            "tigre",
+            "singe",
+            "ours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "tigre",
+          "options": [
+            "tigre",
+            "lion",
+            "loup",
+            "renard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "éléphant",
+          "options": [
+            "éléphant",
+            "cerf",
+            "ours",
+            "lapin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "girafe",
+          "options": [
+            "girafe",
+            "tortue",
+            "souris",
+            "grenouille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "singe",
+          "options": [
+            "singe",
+            "rat",
+            "écureuil",
+            "hérisson"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "ours",
+          "options": [
+            "ours",
+            "lion",
+            "tigre",
+            "loup"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "loup",
+          "options": [
+            "loup",
+            "renard",
+            "cerf",
+            "lapin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "renard",
+          "options": [
+            "renard",
+            "loup",
+            "cerf",
+            "ours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cerf",
+          "options": [
+            "cerf",
+            "lapin",
+            "souris",
+            "rat"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'harmonie de la nature",
+      "title_fa": "هماهنگی طبیعت",
+      "inspiration": "Le Livre de la Jungle",
+      "text": "La nature est un théâtre vivant. Dans la savane, le ____ (1) règne en maître, tandis que l'____ (3) marche avec majesté. La ____ (4) observe le monde d'en haut. Dans la forêt, le ____ (7) chante la nuit et le ____ (8) rusé observe en silence. Le ____ (5) joue dans les branches. L'____ (6) cherche sa nourriture. Le ____ (2) est le roi de l'ombre. Et le ____ (9) bondit avec élégance. Tout est connecté.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "lion",
+          "options": [
+            "lion",
+            "tigre",
+            "singe",
+            "ours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "tigre",
+          "options": [
+            "tigre",
+            "lion",
+            "loup",
+            "renard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "éléphant",
+          "options": [
+            "éléphant",
+            "cerf",
+            "ours",
+            "lapin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "girafe",
+          "options": [
+            "girafe",
+            "tortue",
+            "souris",
+            "grenouille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "singe",
+          "options": [
+            "singe",
+            "rat",
+            "écureuil",
+            "hérisson"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "ours",
+          "options": [
+            "ours",
+            "lion",
+            "tigre",
+            "loup"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "loup",
+          "options": [
+            "loup",
+            "renard",
+            "cerf",
+            "lapin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "renard",
+          "options": [
+            "renard",
+            "loup",
+            "cerf",
+            "ours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cerf",
+          "options": [
+            "cerf",
+            "lapin",
+            "souris",
+            "rat"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Animaux Sauvages",
+    "title_fa": "آزمون: حیوانات وحشی",
+    "displayCount": 7,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le roi de la jungle est le ____.",
+        "options": [
+          "lion",
+          "tigre",
+          "ours",
+          "loup"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پادشاه جنگل، شیر (lion) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal qui a un long cou et mange les feuilles des arbres est la ____.",
+        "options": [
+          "girafe",
+          "tortue",
+          "grenouille",
+          "souris"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوانی که گردن بلند دارد و برگ درختان را می‌خورد، زرافه (girafe) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal avec une longue trompe est l'____.",
+        "options": [
+          "éléphant",
+          "cerf",
+          "ours",
+          "lapin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوانی با خرطوم بلند، فیل (éléphant) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal qui hurle à la lune est le ____.",
+        "options": [
+          "loup",
+          "renard",
+          "cerf",
+          "lapin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوانی که رو به ماه زوزه می‌کشد، گرگ (loup) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal très rusé avec une queue touffue est le ____.",
+        "options": [
+          "renard",
+          "loup",
+          "cerf",
+          "ours"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوان بسیار زیرک با دم پشمالو، روباه (renard) است."
+      },
+      {
+        "type": "binary",
+        "question": "« Le singe » aime manger des bananes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، میمون (singe) موز دوست دارد."
+      },
+      {
+        "type": "binary",
+        "question": "« Le cerf » est un petit animal qui vit dans l'eau.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، cerf (گوزن) یک حیوان خشکی‌زی با شاخ‌های بزرگ است."
+      }
+    ]
+  }
+}
