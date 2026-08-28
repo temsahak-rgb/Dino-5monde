@@ -1,0 +1,410 @@
+{
+  "id": "pronoms_sujets",
+  "level": "A1",
+  "theme": "Pronoms Sujets",
+  "theme_fa": "ضمایر فاعلی",
+  "icon": "🗣️",
+  "inspiration": "French in Action",
+  "words": [
+    {
+      "fr": "je",
+      "fa": "من",
+      "emoji": "🙋",
+      "difficulty": 1,
+      "ex": "Je parle français.",
+      "ex_fa": "من فرانسوی صحبت می‌کنم."
+    },
+    {
+      "fr": "tu",
+      "fa": "تو",
+      "emoji": "👉",
+      "difficulty": 1,
+      "ex": "Tu écoutes la musique.",
+      "ex_fa": "تو به موسیقی گوش می‌دهی."
+    },
+    {
+      "fr": "il",
+      "fa": "او (مذکر)",
+      "emoji": "👨",
+      "difficulty": 1,
+      "ex": "Il mange une pomme.",
+      "ex_fa": "او یک سیب می‌خورد."
+    },
+    {
+      "fr": "elle",
+      "fa": "او (مؤنث)",
+      "emoji": "👩",
+      "difficulty": 1,
+      "ex": "Elle lit un livre intéressant.",
+      "ex_fa": "او یک کتاب جالب می‌خواند."
+    },
+    {
+      "fr": "on",
+      "fa": "ما / مردم (عامیانه)",
+      "emoji": "👥",
+      "difficulty": 2,
+      "ex": "On y va ensemble ?",
+      "ex_fa": "با هم می‌رویم؟"
+    },
+    {
+      "fr": "nous",
+      "fa": "ما",
+      "emoji": "🫵",
+      "difficulty": 1,
+      "ex": "Nous partons en vacances.",
+      "ex_fa": "ما به تعطیلات می‌رویم."
+    },
+    {
+      "fr": "vous",
+      "fa": "شما",
+      "emoji": "🫵🫵",
+      "difficulty": 1,
+      "ex": "Vous dansez très bien.",
+      "ex_fa": "شما خیلی خوب می‌رقصید."
+    },
+    {
+      "fr": "ils",
+      "fa": "آن‌ها (مذکر یا مختلط)",
+      "emoji": "👨‍👨‍👦",
+      "difficulty": 1,
+      "ex": "Ils jouent au football.",
+      "ex_fa": "آن‌ها فوتبال بازی می‌کنند."
+    },
+    {
+      "fr": "elles",
+      "fa": "آن‌ها (مؤنث)",
+      "emoji": "👩‍👩‍👧",
+      "difficulty": 1,
+      "ex": "Elles chantent une belle chanson.",
+      "ex_fa": "آن‌ها یک آهنگ زیبا می‌خوانند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Qui fait quoi ?",
+      "title_fa": "چه کسی چه کاری انجام می‌دهد؟",
+      "text": "Bonjour ! ____ (1) m'appelle Sophie. ____ (2) t'appelles comment ? Regarde, ____ (3) est mon frère Paul. ____ (4) est ma sœur Marie. ____ (5) va souvent au cinéma le week-end. ____ (6) aimons beaucoup voyager. Est-ce que ____ (7) voulez venir avec nous ? Paul et Marie sont contents, ____ (8) adorent les voyages. Et mes amies ? ____ (9) sont déjà prêtes !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Je",
+          "options": [
+            "Je",
+            "Tu",
+            "Il",
+            "Elle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "Tu",
+          "options": [
+            "Tu",
+            "Je",
+            "Il",
+            "On"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "il",
+          "options": [
+            "il",
+            "elle",
+            "on",
+            "nous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Elle",
+          "options": [
+            "Elle",
+            "Il",
+            "On",
+            "Nous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "On",
+          "options": [
+            "On",
+            "Nous",
+            "Vous",
+            "Ils"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Nous",
+          "options": [
+            "Nous",
+            "On",
+            "Vous",
+            "Ils"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "vous",
+          "options": [
+            "vous",
+            "nous",
+            "ils",
+            "elles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "ils",
+          "options": [
+            "ils",
+            "elles",
+            "nous",
+            "vous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Elles",
+          "options": [
+            "Elles",
+            "Ils",
+            "Nous",
+            "Vous"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le chœur des amis",
+      "title_fa": "هم‌سرایی دوستان",
+      "inspiration": "Les Misérables",
+      "text": "____ (1) observe le monde avec curiosité. ____ (2), mon ami, tu le regardes avec espoir. Lui, ____ (3) rêve de liberté. Elle, ____ (4) chante pour la paix. ____ (5) dit souvent que l'union fait la force. ____ (6) marchons ensemble vers l'avenir. ____ (7) savez que le chemin est long, mais ____ (8), les hommes, et ____ (9), les femmes, nous croyons en un monde meilleur.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Je",
+          "options": [
+            "Je",
+            "Tu",
+            "Il",
+            "Elle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "Toi",
+          "options": [
+            "Toi",
+            "Moi",
+            "Lui",
+            "Elle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "il",
+          "options": [
+            "il",
+            "elle",
+            "on",
+            "nous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "elle",
+          "options": [
+            "elle",
+            "il",
+            "on",
+            "nous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "On",
+          "options": [
+            "On",
+            "Nous",
+            "Vous",
+            "Ils"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Nous",
+          "options": [
+            "Nous",
+            "On",
+            "Vous",
+            "Ils"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Vous",
+          "options": [
+            "Vous",
+            "Nous",
+            "Ils",
+            "Elles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "eux",
+          "options": [
+            "eux",
+            "elles",
+            "nous",
+            "vous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "elles",
+          "options": [
+            "elles",
+            "eux",
+            "nous",
+            "vous"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Pronoms Sujets",
+    "title_fa": "آزمون: ضمایر فاعلی",
+    "displayCount": 9,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le pronom pour parler de soi-même est ____.",
+        "options": [
+          "je",
+          "tu",
+          "il",
+          "elle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضمیر برای صحبت کردن درباره خود، je (من) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pronom pour parler à une personne que tu tutoies est ____.",
+        "options": [
+          "tu",
+          "je",
+          "il",
+          "on"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضمیر برای صحبت با کسی که با او صمیمی هستی، tu (تو) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour remplacer « Pierre » (un homme), on utilise ____.",
+        "options": [
+          "il",
+          "elle",
+          "on",
+          "nous"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای جایگزینی نام یک مرد، از il (او مذکر) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour remplacer « Marie » (une femme), on utilise ____.",
+        "options": [
+          "elle",
+          "il",
+          "on",
+          "nous"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای جایگزینی نام یک زن، از elle (او مؤنث) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pronom indéfini qui signifie « nous » ou « les gens » dans le langage courant est ____.",
+        "options": [
+          "on",
+          "nous",
+          "vous",
+          "ils"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضمیر نامعینی که در زبان عامیانه به معنای «ما» یا «مردم» است، on می‌باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pronom pour inclure la personne qui parle et d'autres personnes est ____.",
+        "options": [
+          "nous",
+          "vous",
+          "ils",
+          "elles"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضمیری که گوینده و افراد دیگر را شامل می‌شود، nous (ما) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pronom pour s'adresser à plusieurs personnes ou à une personne avec respect (vouvoiement) est ____.",
+        "options": [
+          "vous",
+          "nous",
+          "ils",
+          "tu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضمیر برای خطاب قرار دادن چند نفر یا یک نفر با احترام، vous (شما) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour remplacer un groupe d'hommes ou un groupe mixte, on utilise ____.",
+        "options": [
+          "ils",
+          "elles",
+          "nous",
+          "vous"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای جایگزینی گروهی از مردان یا یک گروه مختلط، از ils استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« Elles » est utilisé uniquement pour un groupe composé exclusivement de femmes ou d'objets féminins.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، elles فقط برای گروهی که کاملاً از زنان یا اسامی مؤنث تشکیل شده باشد، استفاده می‌شود."
+      }
+    ]
+  }
+}
