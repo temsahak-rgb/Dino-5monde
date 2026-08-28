@@ -1,0 +1,446 @@
+{
+  "id": "etapes_vie_professions_medicales",
+  "level": "A2",
+  "theme": "Étapes de la Vie et Professions Médicales",
+  "theme_fa": "مراحل زندگی و مشاغل پزشکی",
+  "icon": "👶",
+  "inspiration": "Le Petit Prince",
+  "words": [
+    {
+      "fr": "la naissance",
+      "fa": "تولد",
+      "emoji": "👶",
+      "difficulty": 1,
+      "ex": "La naissance d'un enfant est un moment magique.",
+      "ex_fa": "تولد یک کودک لحظه‌ای جادویی است."
+    },
+    {
+      "fr": "l'enfance",
+      "fa": "کودکی",
+      "emoji": "🧸",
+      "difficulty": 1,
+      "ex": "Les souvenirs d'enfance sont souvent les plus doux.",
+      "ex_fa": "خاطرات کودکی اغلب شیرین‌ترین خاطرات هستند."
+    },
+    {
+      "fr": "l'adolescence",
+      "fa": "نوجوانی",
+      "emoji": "🛹",
+      "difficulty": 2,
+      "ex": "L'adolescence est une période de grands changements.",
+      "ex_fa": "نوجوانی دوره‌ای از تغییرات بزرگ است."
+    },
+    {
+      "fr": "l'âge adulte",
+      "fa": "بزرگسالی",
+      "emoji": "💼",
+      "difficulty": 2,
+      "ex": "L'âge adulte apporte de nouvelles responsabilités.",
+      "ex_fa": "بزرگسالی مسئولیت‌های جدیدی به همراه دارد."
+    },
+    {
+      "fr": "la vieillesse",
+      "fa": "پیری",
+      "emoji": "👴",
+      "difficulty": 2,
+      "ex": "Il faut respecter la vieillesse et la sagesse qu'elle apporte.",
+      "ex_fa": "باید به پیری و خردی که به همراه دارد احترام گذاشت."
+    },
+    {
+      "fr": "la maladie",
+      "fa": "بیماری",
+      "emoji": "🤒",
+      "difficulty": 1,
+      "ex": "La médecine moderne aide à combattre la maladie.",
+      "ex_fa": "پزشکی مدرن به مبارزه با بیماری کمک می‌کند."
+    },
+    {
+      "fr": "le pharmacien",
+      "fa": "داروساز",
+      "emoji": "💊",
+      "difficulty": 1,
+      "ex": "Je vais demander conseil au pharmacien pour ce médicament.",
+      "ex_fa": "من برای این دارو از داروساز مشاوره می‌گیرم."
+    },
+    {
+      "fr": "le vétérinaire",
+      "fa": "دامپزشک",
+      "emoji": "🐾",
+      "difficulty": 2,
+      "ex": "Il faut emmener le chien chez le vétérinaire pour un contrôle.",
+      "ex_fa": "باید سگ را برای چکاپ نزد دامپزشک برد."
+    },
+    {
+      "fr": "la douleur",
+      "fa": "درد",
+      "emoji": "😣",
+      "difficulty": 1,
+      "ex": "Le médecin prescrit des médicaments pour calmer la douleur.",
+      "ex_fa": "پزشک برای تسکین درد دارو تجویز می‌کند."
+    },
+    {
+      "fr": "la fièvre",
+      "fa": "تب",
+      "emoji": "🌡️",
+      "difficulty": 1,
+      "ex": "L'enfant a de la fièvre, il faut consulter un docteur.",
+      "ex_fa": "کودک تب دارد، باید با یک دکتر مشورت کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le cycle de la vie",
+      "title_fa": "چرخه زندگی",
+      "text": "La vie est un long voyage. Tout commence par une ____ (1) pleine de joie. Ensuite vient l'____ (2), une période de jeux et de découvertes. Puis arrive l'____ (3), avec ses défis et ses émotions fortes. Enfin, on atteint l'____ (4), où l'on travaille et fonde une famille. Avec le temps, on entre dans la ____ (5), une étape qui mérite du respect. Parfois, la ____ (6) nous rend visite. On ressent une ____ (9) ou on a de la ____ (10). Dans ce cas, on va voir un médecin ou un ____ (7) pour les médicaments. Si c'est notre animal qui est malade, on consulte le ____ (8).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "naissance",
+          "options": [
+            "naissance",
+            "enfance",
+            "vieillesse",
+            "maladie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "enfance",
+          "options": [
+            "enfance",
+            "adolescence",
+            "âge adulte",
+            "naissance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "adolescence",
+          "options": [
+            "adolescence",
+            "enfance",
+            "vieillesse",
+            "âge adulte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "âge adulte",
+          "options": [
+            "âge adulte",
+            "adolescence",
+            "enfance",
+            "vieillesse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "vieillesse",
+          "options": [
+            "vieillesse",
+            "âge adulte",
+            "enfance",
+            "naissance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "maladie",
+          "options": [
+            "maladie",
+            "naissance",
+            "enfance",
+            "vieillesse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pharmacien",
+          "options": [
+            "pharmacien",
+            "vétérinaire",
+            "enfant",
+            "adolescent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "vétérinaire",
+          "options": [
+            "vétérinaire",
+            "pharmacien",
+            "médecin",
+            "adulte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "douleur",
+          "options": [
+            "douleur",
+            "fièvre",
+            "joie",
+            "enfance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "fièvre",
+          "options": [
+            "fièvre",
+            "douleur",
+            "naissance",
+            "vieillesse"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les saisons de l'existence",
+      "title_fa": "فصل‌های وجود",
+      "inspiration": "Les Âges de la Vie",
+      "text": "L'existence humaine est une symphonie en plusieurs mouvements. Le premier accord est la ____ (1), un cri de vie. Suit le printemps de l'____ (2), pur et insouciant. L'été de l'____ (3) brûle de passions et de révoltes. L'automne de l'____ (4) apporte la maturité et les charges du monde. Enfin, l'hiver de la ____ (5) couronne la tête de cheveux blancs et de sagesse. Parfois, le corps faiblit sous le poids de la ____ (6). La ____ (9) nous rappelle notre fragilité, et la ____ (10) nous consume. Heureusement, le ____ (7) soulage nos maux, et le ____ (8) veille sur nos compagnons à quatre pattes.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "naissance",
+          "options": [
+            "naissance",
+            "enfance",
+            "vieillesse",
+            "maladie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "enfance",
+          "options": [
+            "enfance",
+            "adolescence",
+            "âge adulte",
+            "naissance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "adolescence",
+          "options": [
+            "adolescence",
+            "enfance",
+            "vieillesse",
+            "âge adulte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "âge adulte",
+          "options": [
+            "âge adulte",
+            "adolescence",
+            "enfance",
+            "vieillesse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "vieillesse",
+          "options": [
+            "vieillesse",
+            "âge adulte",
+            "enfance",
+            "naissance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "maladie",
+          "options": [
+            "maladie",
+            "naissance",
+            "enfance",
+            "vieillesse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pharmacien",
+          "options": [
+            "pharmacien",
+            "vétérinaire",
+            "enfant",
+            "adolescent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "vétérinaire",
+          "options": [
+            "vétérinaire",
+            "pharmacien",
+            "médecin",
+            "adulte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "douleur",
+          "options": [
+            "douleur",
+            "fièvre",
+            "joie",
+            "enfance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "fièvre",
+          "options": [
+            "fièvre",
+            "douleur",
+            "naissance",
+            "vieillesse"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Étapes de la Vie et Professions Médicales",
+    "title_fa": "آزمون: مراحل زندگی و مشاغل پزشکی",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le moment où un bébé vient au monde s'appelle la ____.",
+        "options": [
+          "naissance",
+          "enfance",
+          "vieillesse",
+          "mort"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لحظه‌ای که نوزاد به دنیا می‌آید، تولد (naissance) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "La période de la vie entre l'enfance et l'âge adulte est l'____.",
+        "options": [
+          "adolescence",
+          "vieillesse",
+          "enfance",
+          "naissance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره‌ای از زندگی بین کودکی و بزرگسالی، نوجوانی (adolescence) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel de santé qui prépare et vend les médicaments est le ____.",
+        "options": [
+          "pharmacien",
+          "vétérinaire",
+          "infirmier",
+          "dentiste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصص سلامت که داروها را آماده و عرضه می‌کند، داروساز (pharmacien) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le médecin spécialisé dans la santé des animaux est le ____.",
+        "options": [
+          "vétérinaire",
+          "pharmacien",
+          "pédiatre",
+          "chirurgien"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پزشک متخصص در سلامت حیوانات، دامپزشک (vétérinaire) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une sensation physique désagréable causée par une blessure ou une maladie est la ____.",
+        "options": [
+          "douleur",
+          "fièvre",
+          "joie",
+          "enfance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "احساس فیزیکی ناخوشایند ناشی از زخم یا بیماری، درد (douleur) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'élévation anormale de la température du corps s'appelle la ____.",
+        "options": [
+          "fièvre",
+          "douleur",
+          "fatigue",
+          "maladie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "افزایش غیرطبیعی دمای بدن، تب (fièvre) نامیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« L'enfance » est la première étape de la vie après la naissance.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، کودکی (enfance) اولین مرحله زندگی پس از تولد است."
+      },
+      {
+        "type": "binary",
+        "question": "« La vieillesse » est une étape de la vie qui ne mérite aucun respect.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، پیری (vieillesse) مرحله‌ای است که به دلیل خرد همراهش، شایسته احترام است."
+      },
+      {
+        "type": "binary",
+        "question": "On va chez le « vétérinaire » quand on a un mal de tête.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، برای سردرد به پزشک عمومی یا متخصص مراجعه می‌کنیم، نه دامپزشک."
+      },
+      {
+        "type": "binary",
+        "question": "« L'âge adulte » est généralement associé à l'indépendance et aux responsabilités.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، بزرگسالی (âge adulte) معمولاً با استقلال و مسئولیت‌پذیری همراه است."
+      }
+    ]
+  }
+}
