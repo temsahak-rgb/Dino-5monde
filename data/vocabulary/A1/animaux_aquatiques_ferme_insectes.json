@@ -1,0 +1,426 @@
+{
+  "id": "animaux_aquatiques_ferme_insectes",
+  "level": "A1",
+  "theme": "Animaux Aquatiques, de la Ferme et Insectes",
+  "theme_fa": "آبزیان، حیوانات مزرعه و حشرات",
+  "icon": "🦅",
+  "inspiration": "La Ferme de Beaumont",
+  "words": [
+    {
+      "fr": "la baleine",
+      "fa": "نهنگ",
+      "emoji": "🐋",
+      "difficulty": 1,
+      "ex": "La baleine est le plus grand animal.",
+      "ex_fa": "نهنگ بزرگترین حیوان است."
+    },
+    {
+      "fr": "l'aigle",
+      "fa": "عقاب",
+      "emoji": "🦅",
+      "difficulty": 2,
+      "ex": "L'aigle vole très haut dans le ciel.",
+      "ex_fa": "عقاب بسیار بلند در آسمان پرواز می‌کند."
+    },
+    {
+      "fr": "le perroquet",
+      "fa": "طوطی",
+      "emoji": "🦜",
+      "difficulty": 1,
+      "ex": "Le perroquet peut imiter la voix.",
+      "ex_fa": "طوطی می‌تواند صدا را تقلید کند."
+    },
+    {
+      "fr": "la poule",
+      "fa": "مرغ",
+      "emoji": "🐔",
+      "difficulty": 1,
+      "ex": "La poule pond des œufs.",
+      "ex_fa": "مرغ تخم می‌گذارد."
+    },
+    {
+      "fr": "le coq",
+      "fa": "خروس",
+      "emoji": "🐓",
+      "difficulty": 1,
+      "ex": "Le coq chante tôt le matin.",
+      "ex_fa": "خروس صبح زود آواز می‌خواند."
+    },
+    {
+      "fr": "le canard",
+      "fa": "اردک",
+      "emoji": "🦆",
+      "difficulty": 1,
+      "ex": "Le canard nage dans l'étang.",
+      "ex_fa": "اردک در برکه شنا می‌کند."
+    },
+    {
+      "fr": "l'oie",
+      "fa": "غاز",
+      "emoji": "🪿",
+      "difficulty": 2,
+      "ex": "L'oie est plus grande que le canard.",
+      "ex_fa": "غاز از اردک بزرگتر است."
+    },
+    {
+      "fr": "le cygne",
+      "fa": "قو",
+      "emoji": "🦢",
+      "difficulty": 2,
+      "ex": "Le cygne est un oiseau très élégant.",
+      "ex_fa": "قو پرنده‌ای بسیار زیبا و باوقار است."
+    },
+    {
+      "fr": "l'abeille",
+      "fa": "زنبور عسل",
+      "emoji": "🐝",
+      "difficulty": 1,
+      "ex": "L'abeille produit du miel.",
+      "ex_fa": "زنبور عسل، عسل تولید می‌کند."
+    },
+    {
+      "fr": "le papillon",
+      "fa": "پروانه",
+      "emoji": "🦋",
+      "difficulty": 1,
+      "ex": "Le papillon a de belles ailes.",
+      "ex_fa": "پروانه بال‌های زیبایی دارد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une journée à la ferme et à la mer",
+      "title_fa": "یک روز در مزرعه و دریا",
+      "text": "À la ferme, la ____ (4) pond un œuf et le ____ (5) chante. Un ____ (6) nage dans la mare avec une ____ (7) et un beau ____ (8). Dans le ciel, l'____ (2) vole très haut et un ____ (3) coloré parle. Dans le jardin, une ____ (9) vole vers une fleur et un ____ (10) se pose sur une feuille. Loin d'ici, dans l'océan, la ____ (1) nage paisiblement. J'adore tous ces animaux !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "baleine",
+          "options": [
+            "baleine",
+            "requin",
+            "cygne",
+            "oie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "aigle",
+          "options": [
+            "aigle",
+            "perroquet",
+            "poule",
+            "coq"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "perroquet",
+          "options": [
+            "perroquet",
+            "aigle",
+            "canard",
+            "oie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "poule",
+          "options": [
+            "poule",
+            "coq",
+            "canard",
+            "oie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "coq",
+          "options": [
+            "coq",
+            "poule",
+            "cygne",
+            "canard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "canard",
+          "options": [
+            "canard",
+            "oie",
+            "cygne",
+            "poule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "oie",
+          "options": [
+            "oie",
+            "canard",
+            "cygne",
+            "poule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "cygne",
+          "options": [
+            "cygne",
+            "oie",
+            "canard",
+            "poule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "abeille",
+          "options": [
+            "abeille",
+            "papillon",
+            "souris",
+            "rat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "papillon",
+          "options": [
+            "papillon",
+            "abeille",
+            "grenouille",
+            "tortue"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le chant de la nature",
+      "title_fa": "آواز طبیعت",
+      "inspiration": "La Ferme de Beaumont",
+      "text": "La nature est un orchestre. À la ferme, le ____ (5) réveille le monde, et la ____ (4) veille sur ses petits. Le ____ (6) nage avec grâce, accompagné de l'____ (7) majestueuse et du ____ (8) élégant. Dans les airs, l'____ (2) plane et le ____ (3) répète des mots. Près des fleurs, l'____ (9) travaille et le ____ (10) danse avec le vent. Et au fond des mers, la ____ (1) chante sa mélodie ancienne. Tout est en harmonie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "baleine",
+          "options": [
+            "baleine",
+            "requin",
+            "cygne",
+            "oie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "aigle",
+          "options": [
+            "aigle",
+            "perroquet",
+            "poule",
+            "coq"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "perroquet",
+          "options": [
+            "perroquet",
+            "aigle",
+            "canard",
+            "oie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "poule",
+          "options": [
+            "poule",
+            "coq",
+            "canard",
+            "oie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "coq",
+          "options": [
+            "coq",
+            "poule",
+            "cygne",
+            "canard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "canard",
+          "options": [
+            "canard",
+            "oie",
+            "cygne",
+            "poule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "oie",
+          "options": [
+            "oie",
+            "canard",
+            "cygne",
+            "poule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "cygne",
+          "options": [
+            "cygne",
+            "oie",
+            "canard",
+            "poule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "abeille",
+          "options": [
+            "abeille",
+            "papillon",
+            "souris",
+            "rat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "papillon",
+          "options": [
+            "papillon",
+            "abeille",
+            "grenouille",
+            "tortue"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Animaux Aquatiques, Ferme et Insectes",
+    "title_fa": "آزمون: آبزیان، مزرعه و حشرات",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le plus grand animal marin, qui n'est pas un poisson, est la ____.",
+        "options": [
+          "baleine",
+          "requin",
+          "oie",
+          "tortue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بزرگترین حیوان دریایی که ماهی نیست، نهنگ (baleine) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'oiseau de proie qui vole très haut est l'____.",
+        "options": [
+          "aigle",
+          "perroquet",
+          "poule",
+          "coq"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پرنده شکاری که بسیار بلند پرواز می‌کند، عقاب (aigle) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'insecte qui produit du miel est l'____.",
+        "options": [
+          "abeille",
+          "papillon",
+          "souris",
+          "rat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حشره‌ای که عسل تولید می‌کند، زنبور عسل (abeille) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mâle de la poule, qui chante le matin, est le ____.",
+        "options": [
+          "coq",
+          "poule",
+          "cygne",
+          "canard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جنس نر مرغ که صبح‌ها آواز می‌خواند، خروس (coq) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'oiseau très élégant qui nage sur l'eau est le ____.",
+        "options": [
+          "cygne",
+          "oie",
+          "canard",
+          "poule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پرنده بسیار زیبا و باوقاری که روی آب شنا می‌کند، قو (cygne) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'oiseau qui peut imiter la voix humaine est le ____.",
+        "options": [
+          "perroquet",
+          "aigle",
+          "canard",
+          "oie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پرنده‌ای که می‌تواند صدای انسان را تقلید کند، طوطی (perroquet) است."
+      },
+      {
+        "type": "binary",
+        "question": "« L'oie » est généralement plus grande que le canard.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، غاز (oie) معمولاً از اردک بزرگتر است."
+      },
+      {
+        "type": "binary",
+        "question": "« Le papillon » est un insecte qui vit sous l'eau.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، papillon (پروانه) یک حشره پروازی است، نه آبزی."
+      }
+    ]
+  }
+}
