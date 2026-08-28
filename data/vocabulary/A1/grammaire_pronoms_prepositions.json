@@ -1,0 +1,452 @@
+{
+  "id": "grammaire_pronoms_prepositions",
+  "level": "A1",
+  "theme": "Grammaire, Pronoms et Prépositions",
+  "theme_fa": "گرامر، ضمایر و حروف اضافه",
+  "icon": "🧩",
+  "inspiration": "French in Action / Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "par",
+      "fa": "توسط / از طریق",
+      "emoji": "📬",
+      "difficulty": 1,
+      "ex": "J'envoie ce colis par avion.",
+      "ex_fa": "من این بسته را از طریق هواپیما می‌فرستم."
+    },
+    {
+      "fr": "partout",
+      "fa": "همه‌جا",
+      "emoji": "🌍",
+      "difficulty": 1,
+      "ex": "Il y a des fleurs partout dans le jardin.",
+      "ex_fa": "همه‌جای باغ گل وجود دارد."
+    },
+    {
+      "fr": "personne",
+      "fa": "شخص / هیچ‌کس (منفی)",
+      "emoji": "🚶‍♂️",
+      "difficulty": 2,
+      "ex": "Il n'y a personne dans la maison.",
+      "ex_fa": "هیچ‌کس در خانه نیست."
+    },
+    {
+      "fr": "peu (de)",
+      "fa": "کم",
+      "emoji": "🤏",
+      "difficulty": 1,
+      "ex": "J'ai peu de temps aujourd'hui.",
+      "ex_fa": "من امروز وقت کمی دارم."
+    },
+    {
+      "fr": "plein de",
+      "fa": "پر از / کلی",
+      "emoji": "🎈",
+      "difficulty": 2,
+      "ex": "Il a plein de bonnes idées.",
+      "ex_fa": "او کلی ایده خوب دارد."
+    },
+    {
+      "fr": "plus",
+      "fa": "بیشتر",
+      "emoji": "➕",
+      "difficulty": 1,
+      "ex": "Je veux plus d'informations sur ce sujet.",
+      "ex_fa": "من اطلاعات بیشتری درباره این موضوع می‌خواهم."
+    },
+    {
+      "fr": "pour",
+      "fa": "برای",
+      "emoji": "🎁",
+      "difficulty": 1,
+      "ex": "J'ai acheté un cadeau pour toi.",
+      "ex_fa": "من یک هدیه برای تو خریدم."
+    },
+    {
+      "fr": "pourquoi",
+      "fa": "چرا",
+      "emoji": "❓",
+      "difficulty": 1,
+      "ex": "Pourquoi es-tu en retard ce matin ?",
+      "ex_fa": "چرا امروز صبح تأخیر داری؟"
+    },
+    {
+      "fr": "quelqu'un",
+      "fa": "کسی",
+      "emoji": "👤",
+      "difficulty": 1,
+      "ex": "Il y a quelqu'un qui frappe à la porte.",
+      "ex_fa": "کسی دارد در می‌زند."
+    },
+    {
+      "fr": "quelque chose",
+      "fa": "چیزی",
+      "emoji": "📦",
+      "difficulty": 1,
+      "ex": "Je veux te dire quelque chose d'important.",
+      "ex_fa": "می‌خواهم چیز مهمی به تو بگویم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une question importante",
+      "title_fa": "یک سؤال مهم",
+      "text": "____ (8) tu ne réponds pas ? Je cherche ____ (9) qui peut m'aider. Je dois dire ____ (10) d'urgent. J'ai ____ (4) de temps, alors dépêche-toi ! J'ai regardé ____ (2), mais je ne trouve rien. ____ (3) n'est ici. Je veux ____ (6) de détails. Ce message est ____ (7) toi. Je l'envoie ____ (1) la poste.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "par",
+          "options": [
+            "par",
+            "pour",
+            "plus",
+            "peu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "partout",
+          "options": [
+            "partout",
+            "personne",
+            "quelqu'un",
+            "pourquoi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Personne",
+          "options": [
+            "Personne",
+            "Quelqu'un",
+            "Quelque chose",
+            "Plus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "peu",
+          "options": [
+            "peu",
+            "plus",
+            "plein",
+            "par"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "plein de",
+          "options": [
+            "plein de",
+            "peu de",
+            "par",
+            "pour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "plus",
+          "options": [
+            "plus",
+            "peu",
+            "par",
+            "pour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pour",
+          "options": [
+            "pour",
+            "par",
+            "plus",
+            "peu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Pourquoi",
+          "options": [
+            "Pourquoi",
+            "Parce que",
+            "Pour",
+            "Partout"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "quelqu'un",
+          "options": [
+            "quelqu'un",
+            "personne",
+            "quelque chose",
+            "partout"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "quelque chose",
+          "options": [
+            "quelque chose",
+            "quelqu'un",
+            "personne",
+            "partout"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La quête du mot perdu",
+      "title_fa": "جست‌وجوی کلمه گمشده",
+      "inspiration": "Le Petit Prince",
+      "text": "____ (8) le silence règne-t-il ici ? Je cherche ____ (9) capable de comprendre. Je dois partager ____ (10) de précieux. Il reste ____ (4) d'espoir, mais mon cœur est ____ (5) de rêves. Je veux ____ (6) de lumière. Cette lettre est écrite ____ (7) toi. Elle voyagera ____ (1) les vents. ____ (3) ne peut arrêter ce message, il ira ____ (2) où tu es.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "par",
+          "options": [
+            "par",
+            "pour",
+            "plus",
+            "peu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "partout",
+          "options": [
+            "partout",
+            "personne",
+            "quelqu'un",
+            "pourquoi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Personne",
+          "options": [
+            "Personne",
+            "Quelqu'un",
+            "Quelque chose",
+            "Plus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "peu",
+          "options": [
+            "peu",
+            "plus",
+            "plein",
+            "par"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "plein",
+          "options": [
+            "plein",
+            "peu",
+            "par",
+            "pour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "plus",
+          "options": [
+            "plus",
+            "peu",
+            "par",
+            "pour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pour",
+          "options": [
+            "pour",
+            "par",
+            "plus",
+            "peu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Pourquoi",
+          "options": [
+            "Pourquoi",
+            "Parce que",
+            "Pour",
+            "Partout"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "quelqu'un",
+          "options": [
+            "quelqu'un",
+            "personne",
+            "quelque chose",
+            "partout"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "quelque chose",
+          "options": [
+            "quelque chose",
+            "quelqu'un",
+            "personne",
+            "partout"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Grammaire, Pronoms et Prépositions",
+    "title_fa": "آزمون: گرامر، ضمایر و حروف اضافه",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Pour demander la raison d'une action, on utilise le mot ____.",
+        "options": [
+          "pourquoi",
+          "parce que",
+          "pour",
+          "par"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای پرسیدن دلیل یک عمل، از pourquoi (چرا) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour indiquer le destinataire d'un cadeau, on dit : C'est ____ toi.",
+        "options": [
+          "pour",
+          "par",
+          "plus",
+          "peu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای نشان دادن گیرنده هدیه، از pour (برای) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pronom indéfini pour désigner une personne non identifiée est ____.",
+        "options": [
+          "quelqu'un",
+          "personne",
+          "quelque chose",
+          "partout"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضمیر نامعین برای اشاره به یک شخص ناشناس، quelqu'un (کسی) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « هیچ‌کس » dans une phrase négative, on utilise ____.",
+        "options": [
+          "personne",
+          "quelqu'un",
+          "quelque chose",
+          "partout"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای گفتن «هیچ‌کس» در جمله منفی، از personne استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour exprimer une petite quantité, on dit : J'ai ____ de temps.",
+        "options": [
+          "peu",
+          "plus",
+          "plein",
+          "par"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای بیان مقدار کم، از peu (کم) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « پر از » ou « کلی », on utilise l'expression ____.",
+        "options": [
+          "plein de",
+          "peu de",
+          "plus de",
+          "par"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای گفتن «پر از» یا «کلی»، از عبارت plein de استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mot pour dire « بیشتر » (quantité) est ____.",
+        "options": [
+          "plus",
+          "peu",
+          "par",
+          "pour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه‌ای برای بیان «بیشتر» از نظر کمیت، plus است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour indiquer le moyen de transport ou d'envoi, on utilise la préposition ____.",
+        "options": [
+          "par",
+          "pour",
+          "plus",
+          "peu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای نشان دادن وسیله حمل‌ونقل یا ارسال، از حرف اضافه par (از طریق/با) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pronom pour désigner une chose non identifiée est ____.",
+        "options": [
+          "quelque chose",
+          "quelqu'un",
+          "personne",
+          "partout"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضمیر برای اشاره به یک شیء ناشناس، quelque chose (چیزی) است."
+      },
+      {
+        "type": "binary",
+        "question": "« Partout » signifie « dans tous les lieux ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، partout به معنای همه‌جا یا در تمام مکان‌ها است."
+      }
+    ]
+  }
+}
