@@ -1,0 +1,528 @@
+{
+  "id": "restaurant_cafe_interactions",
+  "level": "A1",
+  "theme": "Restaurant, Café et Interactions",
+  "theme_fa": "رستوران، کافه و تعاملات",
+  "icon": "🍽️",
+  "inspiration": "Amélie Poulain",
+  "words": [
+    {
+      "fr": "le serveur",
+      "fa": "گارسون",
+      "emoji": "🤵",
+      "difficulty": 1,
+      "ex": "Le serveur apporte le menu à la table.",
+      "ex_fa": "گارسون منو را به میز می‌آورد."
+    },
+    {
+      "fr": "répondre",
+      "fa": "پاسخ دادن",
+      "emoji": "💬",
+      "difficulty": 1,
+      "ex": "Je vais répondre à ta question tout de suite.",
+      "ex_fa": "من فوراً به سؤال تو پاسخ خواهم داد."
+    },
+    {
+      "fr": "la réponse",
+      "fa": "پاسخ",
+      "emoji": "📩",
+      "difficulty": 1,
+      "ex": "J'attends la réponse de mon ami.",
+      "ex_fa": "من منتظر پاسخ دوستم هستم."
+    },
+    {
+      "fr": "sentir",
+      "fa": "حس کردن / بوییدن",
+      "emoji": "👃",
+      "difficulty": 2,
+      "ex": "Ça sent très bon dans cette cuisine !",
+      "ex_fa": "بوی خیلی خوبی در این آشپزخانه می‌آید!"
+    },
+    {
+      "fr": "ridicule",
+      "fa": "مسخره",
+      "emoji": "🤡",
+      "difficulty": 2,
+      "ex": "Ne sois pas ridicule, c'est une bonne idée.",
+      "ex_fa": "مسخره بازی در نیاور، این ایده خوبی است."
+    },
+    {
+      "fr": "super",
+      "fa": "عالی",
+      "emoji": "👍",
+      "difficulty": 1,
+      "ex": "Ce film était vraiment super !",
+      "ex_fa": "این فیلم واقعاً عالی بود!"
+    },
+    {
+      "fr": "sympa",
+      "fa": "باحال / مهربان",
+      "emoji": "😎",
+      "difficulty": 1,
+      "ex": "Le nouveau voisin est très sympa.",
+      "ex_fa": "همسایه جدید خیلی مهربان/باحال است."
+    },
+    {
+      "fr": "très",
+      "fa": "خیلی",
+      "emoji": "⬆️",
+      "difficulty": 1,
+      "ex": "Il fait très chaud aujourd'hui.",
+      "ex_fa": "امروز هوا خیلی گرم است."
+    },
+    {
+      "fr": "trop",
+      "fa": "خیلی زیاد",
+      "emoji": "🚫",
+      "difficulty": 1,
+      "ex": "Ce sac est trop cher pour moi.",
+      "ex_fa": "این کیف برای من خیلی زیاد گران است."
+    },
+    {
+      "fr": "s'il vous plaît",
+      "fa": "لطفاً",
+      "emoji": "🙏",
+      "difficulty": 1,
+      "ex": "Un café, s'il vous plaît.",
+      "ex_fa": "یک قهوه، لطفاً."
+    },
+    {
+      "fr": "seulement",
+      "fa": "فقط",
+      "emoji": "1️⃣",
+      "difficulty": 1,
+      "ex": "Je veux seulement de l'eau, merci.",
+      "ex_fa": "من فقط آب می‌خواهم، ممنون."
+    },
+    {
+      "fr": "si",
+      "fa": "اگر",
+      "emoji": "❓",
+      "difficulty": 1,
+      "ex": "Si tu viens, nous serons heureux.",
+      "ex_fa": "اگر بیایی، ما خوشحال خواهیم شد."
+    },
+    {
+      "fr": "sûr",
+      "fa": "مطمئن",
+      "emoji": "✅",
+      "difficulty": 1,
+      "ex": "Je suis sûr de mon choix.",
+      "ex_fa": "من از انتخابم مطمئن هستم."
+    },
+    {
+      "fr": "surtout",
+      "fa": "مخصوصاً",
+      "emoji": "⭐",
+      "difficulty": 2,
+      "ex": "J'aime les fruits, surtout les fraises.",
+      "ex_fa": "من میوه‌ها را دوست دارم، مخصوصاً توت‌فرنگی را."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Au café du coin",
+      "title_fa": "در کافه محله",
+      "text": "J'entre dans un café ____ (7). Le ____ (1) arrive et je dis : « Un thé, ____ (10). » Il va ____ (2) à ma commande. J'attends la ____ (3). Le café ____ (4) bon. Ce n'est pas ____ (5) cher, c'est ____ (6) ! Je ne veux ____ (11) du sucre. ____ (12) tu aimes le thé, tu vas adorer. Je suis ____ (13) que c'est le meilleur café. J'aime tout ici, ____ (14) les gâteaux.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "sympa",
+          "options": [
+            "sympa",
+            "ridicule",
+            "trop",
+            "seulement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "serveur",
+          "options": [
+            "serveur",
+            "réponse",
+            "si",
+            "sûr"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "répondre",
+          "options": [
+            "répondre",
+            "sentir",
+            "super",
+            "surtout"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "réponse",
+          "options": [
+            "réponse",
+            "serveur",
+            "si",
+            "sûr"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sent",
+          "options": [
+            "sent",
+            "répondre",
+            "super",
+            "surtout"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "trop",
+          "options": [
+            "trop",
+            "très",
+            "si",
+            "seulement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "super",
+          "options": [
+            "super",
+            "ridicule",
+            "sûr",
+            "surtout"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "seulement",
+          "options": [
+            "seulement",
+            "si",
+            "sûr",
+            "surtout"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Si",
+          "options": [
+            "Si",
+            "Sûr",
+            "Surtout",
+            "Seulement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sûr",
+          "options": [
+            "sûr",
+            "si",
+            "surtout",
+            "seulement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "surtout",
+          "options": [
+            "surtout",
+            "sûr",
+            "si",
+            "seulement"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Une rencontre inattendue",
+      "title_fa": "یک ملاقات غیرمنتظره",
+      "inspiration": "Amélie Poulain",
+      "text": "Le bistro était ____ (1) et chaleureux. Le ____ (2) s'approcha avec un sourire. « Que désirez-vous ? » J'allais ____ (3), mais j'ai hésité. J'attendais une ____ (4) importante. L'odeur du café ____ (5) divin. Ce n'était pas ____ (6) cher, c'était ____ (7). « Un café, ____ (8), et ____ (9) vous venez, ce sera parfait. » Je suis ____ (10) que ce moment est spécial. J'aime cet endroit, ____ (11) le matin.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "sympa",
+          "options": [
+            "sympa",
+            "ridicule",
+            "trop",
+            "seulement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "serveur",
+          "options": [
+            "serveur",
+            "réponse",
+            "si",
+            "sûr"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "répondre",
+          "options": [
+            "répondre",
+            "sentir",
+            "super",
+            "surtout"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "réponse",
+          "options": [
+            "réponse",
+            "serveur",
+            "si",
+            "sûr"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sent",
+          "options": [
+            "sent",
+            "répondre",
+            "super",
+            "surtout"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "trop",
+          "options": [
+            "trop",
+            "très",
+            "si",
+            "seulement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "super",
+          "options": [
+            "super",
+            "ridicule",
+            "sûr",
+            "surtout"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "s'il vous plaît",
+          "options": [
+            "s'il vous plaît",
+            "seulement",
+            "si",
+            "sûr"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "si",
+          "options": [
+            "si",
+            "sûr",
+            "surtout",
+            "seulement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "sûr",
+          "options": [
+            "sûr",
+            "si",
+            "surtout",
+            "seulement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "surtout",
+          "options": [
+            "surtout",
+            "sûr",
+            "si",
+            "seulement"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Restaurant, Café et Interactions",
+    "title_fa": "آزمون: رستوران، کافه و تعاملات",
+    "displayCount": 12,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La personne qui sert les clients au restaurant est le ____.",
+        "options": [
+          "serveur",
+          "réponse",
+          "si",
+          "sûr"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که در رستوران به مشتریان سرویس می‌دهد، گارسون (serveur) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le verbe qui signifie « پاسخ دادن » est ____.",
+        "options": [
+          "répondre",
+          "sentir",
+          "super",
+          "surtout"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعلی که به معنای پاسخ دادن است، répondre می‌باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le nom qui signifie « پاسخ » est ____.",
+        "options": [
+          "réponse",
+          "serveur",
+          "si",
+          "sûr"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اسمی که به معنای پاسخ است، réponse می‌باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le verbe pour dire « بوییدن » ou « حس کردن » une odeur est ____.",
+        "options": [
+          "sentir",
+          "répondre",
+          "super",
+          "surtout"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعلی که برای بیان بوییدن یا حس کردن یک بو استفاده می‌شود، sentir است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un adjectif pour dire que quelque chose est absurde ou stupide est ____.",
+        "options": [
+          "ridicule",
+          "sympa",
+          "trop",
+          "seulement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صفتی برای بیان اینکه چیزی احمقانه یا مضحک است، ridicule (مسخره) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un mot familier pour dire « عالی » ou « génial » est ____.",
+        "options": [
+          "super",
+          "ridicule",
+          "sûr",
+          "surtout"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یک کلمه عامیانه برای گفتن عالی یا فوق‌العاده، super است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un adjectif familier pour dire « مهربان » ou « باحال » est ____.",
+        "options": [
+          "sympa",
+          "ridicule",
+          "trop",
+          "seulement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یک صفت عامیانه برای بیان مهربان یا باحال بودن، sympa است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'adverbe pour dire « خیلی » (intensité) est ____.",
+        "options": [
+          "très",
+          "trop",
+          "si",
+          "seulement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قیدی برای بیان «خیلی» (شدت)، très است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'adverbe pour dire « خیلی زیاد » (avec une idée d'excès) est ____.",
+        "options": [
+          "trop",
+          "très",
+          "si",
+          "seulement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قیدی برای بیان «خیلی زیاد» (با ایده افراط)، trop است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'expression de politesse pour dire « لطفاً » est ____.",
+        "options": [
+          "s'il vous plaît",
+          "seulement",
+          "si",
+          "sûr"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عبارت مؤدبانه برای گفتن لطفاً، s'il vous plaît است."
+      },
+      {
+        "type": "binary",
+        "question": "« Seulement » signifie « فقط ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، seulement به معنای فقط است."
+      },
+      {
+        "type": "binary",
+        "question": "« Surtout » signifie « به خصوص » ou « مخصوصاً ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، surtout به معنای به خصوص یا مخصوصاً است."
+      }
+    ]
+  }
+}
