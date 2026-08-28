@@ -1,0 +1,468 @@
+{
+  "id": "pays_amerique_asie_afrique",
+  "level": "A1",
+  "theme": "Pays du Monde (Europe, Asie, Afrique, Amériques)",
+  "theme_fa": "کشورهای جهان (اروپا، آسیا، آفریقا، قاره آمریکا)",
+  "icon": "🌍",
+  "inspiration": "Le Petit Prince (Voyage entre les planètes/pays)",
+  "words": [
+    {
+      "fr": "la Belgique",
+      "fa": "بلژیک",
+      "emoji": "🇧🇪",
+      "difficulty": 1,
+      "ex": "La Belgique est célèbre pour son chocolat.",
+      "ex_fa": "بلژیک به خاطر شکلاتش مشهور است."
+    },
+    {
+      "fr": "la Suisse",
+      "fa": "سوئیس",
+      "emoji": "🇨🇭",
+      "difficulty": 1,
+      "ex": "Les Alpes sont magnifiques en Suisse.",
+      "ex_fa": "کوه‌های آلپ در سوئیس فوق‌العاده هستند."
+    },
+    {
+      "fr": "le Portugal",
+      "fa": "پرتغال",
+      "emoji": "🇵🇹",
+      "difficulty": 1,
+      "ex": "J'aimerais visiter les plages du Portugal.",
+      "ex_fa": "من دوست دارم از سواحل پرتغال دیدن کنم."
+    },
+    {
+      "fr": "la Russie",
+      "fa": "روسیه",
+      "emoji": "🇷🇺",
+      "difficulty": 1,
+      "ex": "Il peut faire très froid en Russie en hiver.",
+      "ex_fa": "در زمستان ممکن است در روسیه هوا بسیار سرد باشد."
+    },
+    {
+      "fr": "la Chine",
+      "fa": "چین",
+      "emoji": "🇨🇳",
+      "difficulty": 1,
+      "ex": "La Grande Muraille est en Chine.",
+      "ex_fa": "دیوار بزرگ در چین قرار دارد."
+    },
+    {
+      "fr": "l'Inde",
+      "fa": "هند",
+      "emoji": "🇮🇳",
+      "difficulty": 1,
+      "ex": "La cuisine de l'Inde utilise beaucoup d'épices.",
+      "ex_fa": "آشپزی هند از ادویه‌های زیادی استفاده می‌کند."
+    },
+    {
+      "fr": "l'Australie",
+      "fa": "استرالیا",
+      "emoji": "🇦🇺",
+      "difficulty": 1,
+      "ex": "On peut voir des kangourous en Australie.",
+      "ex_fa": "در استرالیا می‌توان کانگورو دید."
+    },
+    {
+      "fr": "les États-Unis",
+      "fa": "ایالات متحده آمریکا",
+      "emoji": "🇺🇸",
+      "difficulty": 1,
+      "ex": "New York est une ville célèbre aux États-Unis.",
+      "ex_fa": "نیویورک شهری معروف در ایالات متحده است."
+    },
+    {
+      "fr": "le Brésil",
+      "fa": "برزیل",
+      "emoji": "🇧🇷",
+      "difficulty": 1,
+      "ex": "Le carnaval au Brésil est très coloré.",
+      "ex_fa": "کارناوال در برزیل بسیار رنگارنگ است."
+    },
+    {
+      "fr": "l'Égypte",
+      "fa": "مصر",
+      "emoji": "🇪🇬",
+      "difficulty": 1,
+      "ex": "Les pyramides d'Égypte sont très anciennes.",
+      "ex_fa": "اهرام مصر بسیار قدیمی هستند."
+    },
+    {
+      "fr": "le Maroc",
+      "fa": "مراکش",
+      "emoji": "🇲🇦",
+      "difficulty": 1,
+      "ex": "Le Maroc est un pays magnifique en Afrique du Nord.",
+      "ex_fa": "مراکش کشوری زیبا در شمال آفریقا است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Mon rêve de voyage",
+      "title_fa": "رویای سفر من",
+      "text": "Je rêve de faire le tour du monde. D'abord, j'irai en ____ (1) pour manger du bon chocolat, puis en ____ (2) pour voir les montagnes. J'aimerais aller au ____ (3) pour le soleil, et en ____ (4) pour voir la neige. En Asie, je veux voir la Grande Muraille en ____ (5) et goûter aux épices de l'____ (6). Ensuite, je volerai vers l'____ (7) pour voir les kangourous, et aux ____ (8) pour voir les gratte-ciel. En Amérique du Sud, je danserai au carnaval du ____ (9). Enfin, j'irai en Afrique pour voir les pyramides d'____ (10) et les souks du ____ (11).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Belgique",
+          "options": [
+            "Belgique",
+            "Suisse",
+            "Portugal",
+            "Russie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "Suisse",
+          "options": [
+            "Suisse",
+            "Belgique",
+            "Portugal",
+            "Russie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Portugal",
+          "options": [
+            "Portugal",
+            "Russie",
+            "Chine",
+            "Inde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Russie",
+          "options": [
+            "Russie",
+            "Portugal",
+            "Brésil",
+            "Maroc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Chine",
+          "options": [
+            "Chine",
+            "Inde",
+            "Australie",
+            "États-Unis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Inde",
+          "options": [
+            "Inde",
+            "Chine",
+            "Japon",
+            "Brésil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Australie",
+          "options": [
+            "Australie",
+            "États-Unis",
+            "Brésil",
+            "Égypte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "États-Unis",
+          "options": [
+            "États-Unis",
+            "Australie",
+            "Brésil",
+            "Maroc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Brésil",
+          "options": [
+            "Brésil",
+            "Maroc",
+            "Égypte",
+            "Portugal"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Égypte",
+          "options": [
+            "Égypte",
+            "Maroc",
+            "Brésil",
+            "Inde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "Maroc",
+          "options": [
+            "Maroc",
+            "Égypte",
+            "Portugal",
+            "Suisse"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La carte aux trésors",
+      "title_fa": "نقشه گنج",
+      "inspiration": "L'Île au trésor",
+      "text": "Le monde est une immense carte aux trésors. Chaque pays offre un cadeau unique. La ____ (1) offre la douceur du chocolat, tandis que la ____ (2) offre la majesté des Alpes. Le ____ (3) chante avec l'océan, et la ____ (4) murmure avec ses hivers glacés. L'Orient nous appelle avec la grandeur de la ____ (5) et les parfums de l'____ (6). Plus loin, l'____ (7) nous montre ses animaux uniques, et les ____ (8) nous éblouissent avec leurs villes lumineuses. Le ____ (9) nous invite à la fête, l'____ (10) nous parle d'histoire millénaire, et le ____ (11) nous enchante avec ses couleurs et ses épices.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Belgique",
+          "options": [
+            "Belgique",
+            "Suisse",
+            "Portugal",
+            "Russie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "Suisse",
+          "options": [
+            "Suisse",
+            "Belgique",
+            "Portugal",
+            "Russie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Portugal",
+          "options": [
+            "Portugal",
+            "Russie",
+            "Chine",
+            "Inde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Russie",
+          "options": [
+            "Russie",
+            "Portugal",
+            "Brésil",
+            "Maroc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Chine",
+          "options": [
+            "Chine",
+            "Inde",
+            "Australie",
+            "États-Unis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Inde",
+          "options": [
+            "Inde",
+            "Chine",
+            "Japon",
+            "Brésil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Australie",
+          "options": [
+            "Australie",
+            "États-Unis",
+            "Brésil",
+            "Égypte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "États-Unis",
+          "options": [
+            "États-Unis",
+            "Australie",
+            "Brésil",
+            "Maroc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Brésil",
+          "options": [
+            "Brésil",
+            "Maroc",
+            "Égypte",
+            "Portugal"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Égypte",
+          "options": [
+            "Égypte",
+            "Maroc",
+            "Brésil",
+            "Inde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "Maroc",
+          "options": [
+            "Maroc",
+            "Égypte",
+            "Portugal",
+            "Suisse"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Pays du Monde",
+    "title_fa": "آزمون: کشورهای جهان",
+    "displayCount": 9,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le pays célèbre pour son chocolat et ses gaufres est la ____.",
+        "options": [
+          "Belgique",
+          "Suisse",
+          "Portugal",
+          "Russie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشوری که به خاطر شکلات و وافل معروف است، بلژیک (Belgique) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays connu pour ses montagnes (les Alpes) et son fromage est la ____.",
+        "options": [
+          "Suisse",
+          "Belgique",
+          "Portugal",
+          "Russie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشوری که به کوه‌های آلپ و پنیرش معروف است، سوئیس (Suisse) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays asiatique connu pour la Grande Muraille est la ____.",
+        "options": [
+          "Chine",
+          "Inde",
+          "Japon",
+          "Australie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشور آسیایی معروف به دیوار بزرگ، چین (Chine) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays où l'on peut voir des kangourous est l'____.",
+        "options": [
+          "Australie",
+          "États-Unis",
+          "Brésil",
+          "Égypte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشوری که می‌توان در آن کانگورو دید، استرالیا (Australie) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays d'Afrique du Nord connu pour ses pyramides est l'____.",
+        "options": [
+          "Égypte",
+          "Maroc",
+          "Sénégal",
+          "Tunisie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشور شمال آفریقا که به اهرامش معروف است، مصر (Égypte) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays d'Amérique du Sud célèbre pour son carnaval est le ____.",
+        "options": [
+          "Brésil",
+          "Portugal",
+          "Maroc",
+          "Canada"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشور آمریکای جنوبی که به کارناوالش معروف است، برزیل (Brésil) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le grand pays d'Amérique du Nord où se trouve New York est les ____.",
+        "options": [
+          "États-Unis",
+          "Canada",
+          "Brésil",
+          "Mexique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشور بزرگ آمریکای شمالی که نیویورک در آن قرار دارد، ایالات متحده (États-Unis) است."
+      },
+      {
+        "type": "binary",
+        "question": "« L'Inde » est connue pour sa cuisine très épicée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، هند (Inde) به خاطر آشپزی پرادویه‌اش شناخته شده است."
+      },
+      {
+        "type": "binary",
+        "question": "« La Russie » est un pays connu pour son climat tropical et chaud.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، روسیه (Russie) به خاطر زمستان‌های سرد و طولانی‌اش معروف است."
+      }
+    ]
+  }
+}
