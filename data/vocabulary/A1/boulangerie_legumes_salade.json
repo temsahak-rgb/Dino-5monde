@@ -1,0 +1,589 @@
+{
+  "id": "boulangerie_legumes_salade",
+  "level": "A1",
+  "theme": "Boulangerie, Légumes et Salade",
+  "theme_fa": "نانوایی، سبزیجات و سالاد",
+  "icon": "🥖",
+  "inspiration": "Le Petit Prince (Le renard et le blé)",
+  "words": [
+    {
+      "fr": "la baguette",
+      "fa": "نان باگت",
+      "emoji": "🥖",
+      "difficulty": 1,
+      "ex": "J'achète une baguette fraîche chaque matin.",
+      "ex_fa": "من هر صبح یک باگت تازه می‌خرم."
+    },
+    {
+      "fr": "le croissant",
+      "fa": "کروسان",
+      "emoji": "🥐",
+      "difficulty": 1,
+      "ex": "Je mange un croissant au beurre au petit-déjeuner.",
+      "ex_fa": "من در صبحانه یک کروسان کره‌ای می‌خورم."
+    },
+    {
+      "fr": "la tarte",
+      "fa": "تارت / پای",
+      "emoji": "🥧",
+      "difficulty": 1,
+      "ex": "Ma grand-mère fait une tarte aux pommes.",
+      "ex_fa": "مادربزرگم یک تارت سیب درست می‌کند."
+    },
+    {
+      "fr": "le biscuit",
+      "fa": "بیسکویت / کلوچه",
+      "emoji": "🍪",
+      "difficulty": 1,
+      "ex": "Les enfants adorent manger un biscuit.",
+      "ex_fa": "بچه‌ها عاشق خوردن بیسکویت هستند."
+    },
+    {
+      "fr": "le chocolat",
+      "fa": "شکلات",
+      "emoji": "🍫",
+      "difficulty": 1,
+      "ex": "Je voudrais une tablette de chocolat noir.",
+      "ex_fa": "من یک تخته شکلات تلخ می‌خواهم."
+    },
+    {
+      "fr": "la pâte",
+      "fa": "خمیر / پاستا",
+      "emoji": "🥟",
+      "difficulty": 2,
+      "ex": "Il faut pétrir la pâte pour faire du pain.",
+      "ex_fa": "برای درست کردن نان باید خمیر را ورز داد."
+    },
+    {
+      "fr": "la soupe",
+      "fa": "سوپ",
+      "emoji": "🍲",
+      "difficulty": 1,
+      "ex": "Une soupe chaude est parfaite en hiver.",
+      "ex_fa": "یک سوپ گرم در زمستان عالی است."
+    },
+    {
+      "fr": "la tomate",
+      "fa": "گوجه‌فرنگی",
+      "emoji": "🍅",
+      "difficulty": 1,
+      "ex": "Je prépare une salade de tomates.",
+      "ex_fa": "من یک سالاد گوجه‌فرنگی آماده می‌کنم."
+    },
+    {
+      "fr": "le concombre",
+      "fa": "خیار",
+      "emoji": "🥒",
+      "difficulty": 1,
+      "ex": "Il faut couper le concombre en rondelles.",
+      "ex_fa": "باید خیار را حلقه حلقه برش داد."
+    },
+    {
+      "fr": "la carotte",
+      "fa": "هویج",
+      "emoji": "🥕",
+      "difficulty": 1,
+      "ex": "Le lapin mange une carotte.",
+      "ex_fa": "خرگوش یک هویج می‌خورد."
+    },
+    {
+      "fr": "l'oignon",
+      "fa": "پیاز",
+      "emoji": "🧅",
+      "difficulty": 2,
+      "ex": "Il faut émincer l'oignon finement.",
+      "ex_fa": "باید پیاز را به طور نازک خرد کرد."
+    },
+    {
+      "fr": "l'ail",
+      "fa": "سیر",
+      "emoji": "🧄",
+      "difficulty": 2,
+      "ex": "J'ajoute une gousse d'ail dans la sauce.",
+      "ex_fa": "من یک حبه سیر به سس اضافه می‌کنم."
+    },
+    {
+      "fr": "le poivron",
+      "fa": "فلفل دلمه‌ای",
+      "emoji": "🫑",
+      "difficulty": 2,
+      "ex": "J'aime le poivron rouge dans mes salades.",
+      "ex_fa": "من فلفل دلمه‌ای قرمز را در سالادهایم دوست دارم."
+    },
+    {
+      "fr": "la laitue",
+      "fa": "کاهو",
+      "emoji": "🥬",
+      "difficulty": 2,
+      "ex": "Il faut bien laver la laitue avant de la manger.",
+      "ex_fa": "باید قبل از خوردن، کاهو را خوب شست."
+    },
+    {
+      "fr": "l'épinard",
+      "fa": "اسفناج",
+      "emoji": "🍃",
+      "difficulty": 2,
+      "ex": "Manger des épinards donne de la force.",
+      "ex_fa": "خوردن اسفناج به انسان قدرت می‌دهد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La préparation du dîner",
+      "title_fa": "آماده‌سازی شام",
+      "text": "Ce soir, je prépare un bon repas. D'abord, je vais à la boulangerie acheter une ____ (1) et un ____ (2). Pour le dessert, je prends une ____ (3) aux fruits et un ____ (4) au ____ (5). En cuisine, je prépare une ____ (8) de ____ (14) et de ____ (9). J'ajoute des ____ (10) râpées, un peu d'____ (11) et d'____ (12) pour le goût, et des morceaux de ____ (13) vert. Je fais aussi une ____ (7) chaude. Pour faire le pain, il faut travailler la ____ (6).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "baguette",
+          "options": [
+            "baguette",
+            "croissant",
+            "tarte",
+            "biscuit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "croissant",
+          "options": [
+            "croissant",
+            "baguette",
+            "chocolat",
+            "soupe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tarte",
+          "options": [
+            "tarte",
+            "pâte",
+            "laitue",
+            "épinard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "biscuit",
+          "options": [
+            "biscuit",
+            "oignon",
+            "ail",
+            "poivron"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "chocolat",
+          "options": [
+            "chocolat",
+            "concombre",
+            "tomate",
+            "carotte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pâte",
+          "options": [
+            "pâte",
+            "soupe",
+            "laitue",
+            "épinard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "soupe",
+          "options": [
+            "soupe",
+            "pâte",
+            "laitue",
+            "épinard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "salade",
+          "options": [
+            "salade",
+            "soupe",
+            "pâte",
+            "chocolat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "tomates",
+          "options": [
+            "tomates",
+            "concombres",
+            "carottes",
+            "oignons"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "carottes",
+          "options": [
+            "carottes",
+            "tomates",
+            "concombres",
+            "oignons"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "oignon",
+          "options": [
+            "oignon",
+            "ail",
+            "poivron",
+            "laitue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ail",
+          "options": [
+            "ail",
+            "oignon",
+            "poivron",
+            "laitue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "poivron",
+          "options": [
+            "poivron",
+            "ail",
+            "oignon",
+            "laitue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "laitue",
+          "options": [
+            "laitue",
+            "épinard",
+            "pâte",
+            "soupe"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le jardin du cuisinier",
+      "title_fa": "باغ آشپز",
+      "inspiration": "Ratatouille",
+      "text": "L'art culinaire commence par de bons ingrédients. Le boulanger pétrit la ____ (6) avec amour pour en faire une ____ (1) dorée ou un ____ (2) feuilleté. Dans le potager, la ____ (14) croque sous la dent, la ____ (9) est juteuse et le ____ (13) apporte de la couleur. L'____ (11) et l'____ (12) donnent du caractère, tandis que la ____ (10) apporte de la douceur. Avec de la ____ (7) et des ____ (15), on crée des merveilles. Pour finir, une ____ (3) sucrée ou un ____ (4) au ____ (5) ravit les palais les plus exigeants.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "baguette",
+          "options": [
+            "baguette",
+            "croissant",
+            "tarte",
+            "biscuit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "croissant",
+          "options": [
+            "croissant",
+            "baguette",
+            "chocolat",
+            "soupe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tarte",
+          "options": [
+            "tarte",
+            "pâte",
+            "laitue",
+            "épinard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "biscuit",
+          "options": [
+            "biscuit",
+            "oignon",
+            "ail",
+            "poivron"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "chocolat",
+          "options": [
+            "chocolat",
+            "concombre",
+            "tomate",
+            "carotte"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pâte",
+          "options": [
+            "pâte",
+            "soupe",
+            "laitue",
+            "épinard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "soupe",
+          "options": [
+            "soupe",
+            "pâte",
+            "laitue",
+            "épinard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "salade",
+          "options": [
+            "salade",
+            "soupe",
+            "pâte",
+            "chocolat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "tomate",
+          "options": [
+            "tomate",
+            "concombre",
+            "carotte",
+            "oignon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "carotte",
+          "options": [
+            "carotte",
+            "tomate",
+            "concombre",
+            "oignon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "oignon",
+          "options": [
+            "oignon",
+            "ail",
+            "poivron",
+            "laitue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ail",
+          "options": [
+            "ail",
+            "oignon",
+            "poivron",
+            "laitue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "poivron",
+          "options": [
+            "poivron",
+            "ail",
+            "oignon",
+            "laitue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "laitue",
+          "options": [
+            "laitue",
+            "épinard",
+            "pâte",
+            "soupe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "épinards",
+          "options": [
+            "épinards",
+            "laitue",
+            "pâte",
+            "soupe"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Boulangerie, Légumes et Salade",
+    "title_fa": "آزمون: نانوایی، سبزیجات و سالاد",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le pain long et fin typiquement français s'appelle la ____.",
+        "options": [
+          "baguette",
+          "tarte",
+          "soupe",
+          "pâte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نان بلند و نازک که به طور معمول فرانسوی است، باگت (baguette) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "La viennoiserie en forme de croissant de lune est le ____.",
+        "options": [
+          "croissant",
+          "biscuit",
+          "chocolat",
+          "oignon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیرینی به شکل هلال ماه، کروسان (croissant) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le légume rouge et juteux souvent utilisé dans les salades est la ____.",
+        "options": [
+          "tomate",
+          "carotte",
+          "laitue",
+          "épinard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سبزی قرمز و آبداری که اغلب در سالاد استفاده می‌شود، گوجه‌فرنگی (tomate) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le légume vert et allongé, souvent mangé cru en salade, est le ____.",
+        "options": [
+          "concombre",
+          "poivron",
+          "oignon",
+          "ail"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سبزی سبز و کشیده‌ای که اغلب خام در سالاد خورده می‌شود، خیار (concombre) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le légume orange que les lapins adorent manger est la ____.",
+        "options": [
+          "carotte",
+          "tomate",
+          "laitue",
+          "épinard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سبزی نارنجی رنگی که خرگوش‌ها عاشق خوردن آن هستند، هویج (carotte) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le condiment fort qui fait pleurer quand on le coupe est l'____.",
+        "options": [
+          "oignon",
+          "ail",
+          "poivron",
+          "laitue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "چاشنی قوی که هنگام خرد کردن باعث گریه می‌شود، پیاز (oignon) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le plat liquide et chaud que l'on mange souvent en entrée est la ____.",
+        "options": [
+          "soupe",
+          "pâte",
+          "tarte",
+          "salade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "غذای مایع و گرمی که اغلب به عنوان پیش‌غذا خورده می‌شود، سوپ (soupe) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mélange de farine et d'eau que l'on pétrit pour faire du pain s'appelle la ____.",
+        "options": [
+          "pâte",
+          "soupe",
+          "salade",
+          "crème"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مخلوط آرد و آب که برای درست کردن نان ورز داده می‌شود، خمیر (pâte) نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "« L'ail » est un légume qui donne beaucoup de saveur aux plats.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، سیر (ail) سبزی/چاشنی است که طعم زیادی به غذاها می‌دهد."
+      },
+      {
+        "type": "binary",
+        "question": "« La laitue » est une viande que l'on fait griller.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، laitue (کاهو) یک سبزی برگ‌دار است، نه گوشت."
+      }
+    ]
+  }
+}
