@@ -1,0 +1,324 @@
+{
+  "id": "ciel_nuit_meteo",
+  "level": "A1",
+  "theme": "Ciel, Nuit et Phénomènes Météorologiques",
+  "theme_fa": "آسمان، شب و پدیده‌های جوی",
+  "icon": "🌩️",
+  "inspiration": "Le Petit Prince",
+  "words": [
+    {
+      "fr": "la neige",
+      "fa": "برف",
+      "emoji": "❄️",
+      "difficulty": 1,
+      "ex": "Les enfants jouent dans la neige.",
+      "ex_fa": "بچه‌ها در برف بازی می‌کنند."
+    },
+    {
+      "fr": "la lune",
+      "fa": "ماه",
+      "emoji": "🌙",
+      "difficulty": 1,
+      "ex": "La lune brille dans le ciel nocturne.",
+      "ex_fa": "ماه در آسمان شب می‌درخشد."
+    },
+    {
+      "fr": "l'étoile",
+      "fa": "ستاره",
+      "emoji": "⭐",
+      "difficulty": 1,
+      "ex": "On peut voir des milliers d'étoiles la nuit.",
+      "ex_fa": "شب‌ها می‌توان هزاران ستاره دید."
+    },
+    {
+      "fr": "l'arc-en-ciel",
+      "fa": "رنگین‌کمان",
+      "emoji": "🌈",
+      "difficulty": 2,
+      "ex": "Un bel arc-en-ciel apparaît après la pluie.",
+      "ex_fa": "یک رنگین‌کمان زیبا بعد از باران ظاهر می‌شود."
+    },
+    {
+      "fr": "l'orage",
+      "fa": "طوفان / رعد و برق",
+      "emoji": "⛈️",
+      "difficulty": 2,
+      "ex": "Il faut rentrer à cause de l'orage.",
+      "ex_fa": "به خاطر طوفان باید به داخل برگردیم."
+    },
+    {
+      "fr": "le tonnerre",
+      "fa": "رعد",
+      "emoji": "🔊",
+      "difficulty": 2,
+      "ex": "Le tonnerre fait un bruit très fort.",
+      "ex_fa": "رعد صدای بسیار بلندی ایجاد می‌کند."
+    },
+    {
+      "fr": "l'éclair",
+      "fa": "برق (آسمان)",
+      "emoji": "⚡",
+      "difficulty": 2,
+      "ex": "Un éclair a illuminé le ciel noir.",
+      "ex_fa": "یک برق آسمان سیاه را روشن کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une nuit magique",
+      "title_fa": "یک شب جادویی",
+      "text": "Hier soir, le ciel était magnifique. J'ai regardé par la fenêtre. J'ai vu la ____ (2) et beaucoup d'____ (3). Soudain, le temps a changé. Il y a eu un ____ (5) avec du ____ (6) et un grand ____ (7). J'ai eu un peu peur. Mais ce matin, le soleil est revenu et j'ai vu un magnifique ____ (4) dans le ciel. En hiver, j'espère qu'il y aura de la ____ (1) pour faire un bonhomme de neige.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "neige",
+          "options": [
+            "neige",
+            "lune",
+            "étoile",
+            "arc-en-ciel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "lune",
+          "options": [
+            "lune",
+            "neige",
+            "orage",
+            "tonnerre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "étoiles",
+          "options": [
+            "étoiles",
+            "éclairs",
+            "orages",
+            "neige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "arc-en-ciel",
+          "options": [
+            "arc-en-ciel",
+            "tonnerre",
+            "étoile",
+            "lune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "orage",
+          "options": [
+            "orage",
+            "arc-en-ciel",
+            "lune",
+            "neige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "tonnerre",
+          "options": [
+            "tonnerre",
+            "arc-en-ciel",
+            "lune",
+            "étoile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "éclair",
+          "options": [
+            "éclair",
+            "neige",
+            "lune",
+            "arc-en-ciel"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le théâtre du ciel",
+      "title_fa": "تئاتر آسمان",
+      "inspiration": "Le Petit Prince",
+      "text": "Le ciel est un théâtre changeant. La nuit, la ____ (2) veille sur le monde, accompagnée par le scintillement des ____ (3). Parfois, la nature montre sa puissance : un ____ (5) éclate, le ____ (6) gronde et un ____ (7) rapide fend les nuages. Mais après la colère du ciel, la paix revient. Un ____ (4) multicolore traverse l'horizon. Et quand l'hiver arrive, la douce ____ (1) recouvre la terre d'un manteau blanc et silencieux.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "neige",
+          "options": [
+            "neige",
+            "lune",
+            "étoile",
+            "arc-en-ciel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "lune",
+          "options": [
+            "lune",
+            "neige",
+            "orage",
+            "tonnerre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "étoiles",
+          "options": [
+            "étoiles",
+            "éclairs",
+            "orages",
+            "neige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "arc-en-ciel",
+          "options": [
+            "arc-en-ciel",
+            "tonnerre",
+            "étoile",
+            "lune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "orage",
+          "options": [
+            "orage",
+            "arc-en-ciel",
+            "lune",
+            "neige"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "tonnerre",
+          "options": [
+            "tonnerre",
+            "arc-en-ciel",
+            "lune",
+            "étoile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "éclair",
+          "options": [
+            "éclair",
+            "neige",
+            "lune",
+            "arc-en-ciel"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Ciel, Nuit et Météo",
+    "title_fa": "آزمون: آسمان، شب و آب‌وهوا",
+    "displayCount": 7,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le phénomène blanc et froid qui tombe du ciel en hiver est la ____.",
+        "options": [
+          "neige",
+          "lune",
+          "étoile",
+          "arc-en-ciel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پدیده سفید و سردی که در زمستان از آسمان می‌بارد، برف (neige) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'astre qui éclaire la nuit et change de forme est la ____.",
+        "options": [
+          "lune",
+          "étoile",
+          "soleil",
+          "nuage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جرمی که شب‌ها می‌درخشد و شکلش تغییر می‌کند، ماه (lune) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Les petits points lumineux dans le ciel nocturne sont les ____.",
+        "options": [
+          "étoiles",
+          "orages",
+          "éclairs",
+          "neige"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نقاط کوچک نورانی در آسمان شب، ستاره‌ها (étoiles) هستند."
+      },
+      {
+        "type": "mcq",
+        "question": "Le phénomène coloré qui apparaît après la pluie est l'____.",
+        "options": [
+          "arc-en-ciel",
+          "orage",
+          "tonnerre",
+          "éclair"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پدیده رنگارنگی که بعد از باران ظاهر می‌شود، رنگین‌کمان (arc-en-ciel) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bruit très fort qui accompagne la pluie et les éclairs est le ____.",
+        "options": [
+          "tonnerre",
+          "arc-en-ciel",
+          "lune",
+          "neige"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صدای بسیار بلندی که همراه باران و برق است، رعد (tonnerre) نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Un « éclair » est une lumière vive et rapide dans le ciel pendant un orage.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، éclair به معنای برق آسمان در حین طوفان است."
+      },
+      {
+        "type": "binary",
+        "question": "Un « orage » est un temps calme et ensoleillé.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، orage به معنای طوفان و رعد و برق است، نه هوای آرام و آفتابی."
+      }
+    ]
+  }
+}
