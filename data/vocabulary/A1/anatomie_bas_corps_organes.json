@@ -1,0 +1,486 @@
+{
+  "id": "anatomie_bas_corps_organes",
+  "level": "A1",
+  "theme": "Anatomie : Bas du corps et Organes",
+  "theme_fa": "آناتومی: پایین‌تنه و اعضای داخلی",
+  "icon": "🦵",
+  "inspiration": "Le Petit Prince",
+  "words": [
+    {
+      "fr": "le ventre",
+      "fa": "شکم",
+      "emoji": "🤰",
+      "difficulty": 1,
+      "ex": "Le bébé donne des coups dans le ventre.",
+      "ex_fa": "نوزاد در شکم لگد می‌زند."
+    },
+    {
+      "fr": "la hanche",
+      "fa": "لگن / باسن",
+      "emoji": "🦴",
+      "difficulty": 2,
+      "ex": "Elle a les mains sur les hanches.",
+      "ex_fa": "او دستانش را روی لگن گذاشته است."
+    },
+    {
+      "fr": "la cuisse",
+      "fa": "ران",
+      "emoji": "🦵",
+      "difficulty": 2,
+      "ex": "Il s'est fait mal à la cuisse.",
+      "ex_fa": "او به رانش آسیب زد."
+    },
+    {
+      "fr": "le genou",
+      "fa": "زانو",
+      "emoji": "🦵",
+      "difficulty": 1,
+      "ex": "Il est tombé et s'est écorché le genou.",
+      "ex_fa": "او افتاد و زانویش زخمی شد."
+    },
+    {
+      "fr": "la cheville",
+      "fa": "مچ پا",
+      "emoji": "🦶",
+      "difficulty": 2,
+      "ex": "Je me suis foulé la cheville hier.",
+      "ex_fa": "من دیروز مچ پایم را پیچاندم."
+    },
+    {
+      "fr": "l'orteil",
+      "fa": "انگشت پا",
+      "emoji": "🦶",
+      "difficulty": 2,
+      "ex": "J'ai cogné mon gros orteil.",
+      "ex_fa": "انگشت شست پایم به جایی برخورد کرد."
+    },
+    {
+      "fr": "la peau",
+      "fa": "پوست",
+      "emoji": "🧴",
+      "difficulty": 1,
+      "ex": "Il faut protéger sa peau du soleil.",
+      "ex_fa": "باید از پوست خود در برابر آفتاب محافظت کرد."
+    },
+    {
+      "fr": "l'os",
+      "fa": "استخوان",
+      "emoji": "🦴",
+      "difficulty": 1,
+      "ex": "Le médecin a dit que l'os est cassé.",
+      "ex_fa": "پزشک گفت که استخوان شکسته است."
+    },
+    {
+      "fr": "le muscle",
+      "fa": "ماهیچه / عضله",
+      "emoji": "💪",
+      "difficulty": 1,
+      "ex": "Le sport développe les muscles.",
+      "ex_fa": "ورزش ماهیچه‌ها را تقویت می‌کند."
+    },
+    {
+      "fr": "le cœur",
+      "fa": "قلب",
+      "emoji": "❤️",
+      "difficulty": 1,
+      "ex": "Le cœur bat régulièrement.",
+      "ex_fa": "قلب به طور منظم می‌تپد."
+    },
+    {
+      "fr": "le poumon",
+      "fa": "ریه",
+      "emoji": "🫁",
+      "difficulty": 2,
+      "ex": "Il faut respirer pour remplir les poumons.",
+      "ex_fa": "برای پر کردن ریه‌ها باید نفس کشید."
+    },
+    {
+      "fr": "l'estomac",
+      "fa": "معده",
+      "emoji": "🤢",
+      "difficulty": 2,
+      "ex": "J'ai mal à l'estomac après avoir mangé.",
+      "ex_fa": "بعد از غذا خوردن، معده‌ام درد می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une visite chez le docteur",
+      "title_fa": "مراجعه به پزشک",
+      "text": "J'ai mal au ____ (12) et au ____ (1). Le docteur écoute mon ____ (10) et mes ____ (11). Il dit que tout va bien. Ensuite, il regarde mon ____ (4) et ma ____ (5) car je suis tombé. Il dit que l'____ (8) n'est pas cassé. Je dois aussi mettre de la crème sur ma ____ (7). J'ai une petite douleur à la ____ (2) et à la ____ (3). Heureusement, je peux bouger chaque ____ (6).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "ventre",
+          "options": [
+            "ventre",
+            "cœur",
+            "pouce",
+            "genou"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "hanche",
+          "options": [
+            "hanche",
+            "cœur",
+            "pouce",
+            "ventre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "cuisse",
+          "options": [
+            "cuisse",
+            "hanche",
+            "genou",
+            "cheville"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "genou",
+          "options": [
+            "genou",
+            "cœur",
+            "pouce",
+            "gorge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "cheville",
+          "options": [
+            "cheville",
+            "cœur",
+            "pouce",
+            "estomac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "orteil",
+          "options": [
+            "orteil",
+            "cœur",
+            "pouce",
+            "hanche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "peau",
+          "options": [
+            "peau",
+            "os",
+            "muscle",
+            "orteil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "os",
+          "options": [
+            "os",
+            "muscle",
+            "peau",
+            "ventre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "muscle",
+          "options": [
+            "muscle",
+            "os",
+            "peau",
+            "cœur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "cœur",
+          "options": [
+            "cœur",
+            "estomac",
+            "genou",
+            "coude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "poumons",
+          "options": [
+            "poumons",
+            "doigts",
+            "orteils",
+            "hanches"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "estomac",
+          "options": [
+            "estomac",
+            "cœur",
+            "pouce",
+            "genou"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La machine merveilleuse",
+      "title_fa": "ماشین شگفت‌انگیز",
+      "inspiration": "Le Petit Prince",
+      "text": "Le corps est une machine parfaite. Tout commence par le ____ (10) qui pompe la vie. L'air entre dans les ____ (11) et nourrit le sang. La nourriture descend dans l'____ (12) pour devenir de l'énergie. Cette énergie fait bouger les ____ (9) attachés aux ____ (8). Nous marchons grâce à nos ____ (4) et nos ____ (5), protégés par la ____ (7). Parfois, nous ressentons une douleur dans le ____ (1) ou la ____ (2), nous rappelant que nous sommes vivants.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "ventre",
+          "options": [
+            "ventre",
+            "cœur",
+            "pouce",
+            "genou"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "hanche",
+          "options": [
+            "hanche",
+            "cœur",
+            "pouce",
+            "ventre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "cuisse",
+          "options": [
+            "cuisse",
+            "hanche",
+            "genou",
+            "cheville"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "genou",
+          "options": [
+            "genou",
+            "cœur",
+            "pouce",
+            "gorge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "cheville",
+          "options": [
+            "cheville",
+            "cœur",
+            "pouce",
+            "estomac"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "orteil",
+          "options": [
+            "orteil",
+            "cœur",
+            "pouce",
+            "hanche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "peau",
+          "options": [
+            "peau",
+            "os",
+            "muscle",
+            "orteil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "os",
+          "options": [
+            "os",
+            "muscle",
+            "peau",
+            "ventre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "muscles",
+          "options": [
+            "muscles",
+            "os",
+            "peau",
+            "cœur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "cœur",
+          "options": [
+            "cœur",
+            "poumon",
+            "estomac",
+            "cerveau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "poumons",
+          "options": [
+            "poumons",
+            "cœur",
+            "estomac",
+            "muscles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "estomac",
+          "options": [
+            "estomac",
+            "cœur",
+            "poumons",
+            "ventre"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Anatomie Bas du Corps et Organes",
+    "title_fa": "آزمون: آناتومی پایین‌تنه و اعضا",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'organe qui pompe le sang dans tout le corps est le ____.",
+        "options": [
+          "cœur",
+          "poumon",
+          "estomac",
+          "muscle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اندامی که خون را در سراسر بدن پمپاژ می‌کند، قلب (cœur) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie du corps qui contient les aliments après les avoir avalés est l'____.",
+        "options": [
+          "estomac",
+          "cœur",
+          "poumon",
+          "gorge"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قسمتی از بدن که غذا پس از بلعیدن در آن قرار می‌گیرد، معده (estomac) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'articulation qui relie la cuisse à la jambe est le ____.",
+        "options": [
+          "genou",
+          "coude",
+          "poignet",
+          "cheville"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مفصلی که ران را به ساق پا متصل می‌کند، زانو (genou) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La couche externe qui recouvre tout le corps est la ____.",
+        "options": [
+          "peau",
+          "os",
+          "muscle",
+          "poitrine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لایه بیرونی که تمام بدن را می‌پوشاند، پوست (peau) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'articulation du pied qui se foule souvent en courant est la ____.",
+        "options": [
+          "cheville",
+          "genou",
+          "orteil",
+          "hanche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مفصل پا که اغلب هنگام دویدن پیچ می‌خورد، مچ پا (cheville) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie supérieure de la jambe s'appelle la ____.",
+        "options": [
+          "cuisse",
+          "hanche",
+          "genou",
+          "cheville"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قسمت بالایی پا، ران (cuisse) نامیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« L'orteil » est le nom des doigts du pied.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، orteil به معنای انگشت پا است."
+      },
+      {
+        "type": "binary",
+        "question": "« La hanche » est située dans le haut du bras.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، hanche (لگن) در قسمت پایین تنه قرار دارد، نه بازو."
+      }
+    ]
+  }
+}
