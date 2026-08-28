@@ -1,0 +1,622 @@
+{
+  "id": "ville_navigation_lieux_publics",
+  "level": "A1",
+  "theme": "Ville, Navigation et Lieux Publics",
+  "theme_fa": "شهر، مسیریابی و مکان‌های عمومی",
+  "icon": "🏙️",
+  "inspiration": "Tintin / Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "la rue",
+      "fa": "خیابان",
+      "emoji": "🛣️",
+      "difficulty": 1,
+      "ex": "Il y a beaucoup de monde dans la rue.",
+      "ex_fa": "آدم‌های زیادی در خیابان هستند."
+    },
+    {
+      "fr": "le stade",
+      "fa": "استادیوم",
+      "emoji": "🏟️",
+      "difficulty": 1,
+      "ex": "Nous allons au stade pour voir le match.",
+      "ex_fa": "ما برای دیدن مسابقه به استادیوم می‌رویم."
+    },
+    {
+      "fr": "les sciences",
+      "fa": "علوم",
+      "emoji": "🔬",
+      "difficulty": 2,
+      "ex": "J'aime étudier les sciences à l'école.",
+      "ex_fa": "من دوست دارم در مدرسه علوم بخوانم."
+    },
+    {
+      "fr": "visiter",
+      "fa": "بازدید کردن",
+      "emoji": "🏛️",
+      "difficulty": 1,
+      "ex": "Nous allons visiter le musée du Louvre.",
+      "ex_fa": "ما می‌رویم از موزه لوور بازدید کنیم."
+    },
+    {
+      "fr": "traverser",
+      "fa": "عبور کردن",
+      "emoji": "🚶",
+      "difficulty": 2,
+      "ex": "Il faut traverser la rue au passage piéton.",
+      "ex_fa": "باید در خط عابر پیاده از خیابان عبور کرد."
+    },
+    {
+      "fr": "se retrouver",
+      "fa": "همدیگر را ملاقات کردن",
+      "emoji": "🤝",
+      "difficulty": 2,
+      "ex": "On se retrouve devant le cinéma à 20h.",
+      "ex_fa": "ساعت ۸ شب جلوی سینما همدیگر را ملاقات می‌کنیم."
+    },
+    {
+      "fr": "vers",
+      "fa": "به سمتِ",
+      "emoji": "➡️",
+      "difficulty": 2,
+      "ex": "Nous marchons vers la gare.",
+      "ex_fa": "ما به سمت ایستگاه قطار پیاده‌روی می‌کنیم."
+    },
+    {
+      "fr": "souvent",
+      "fa": "اغلب",
+      "emoji": "🔄",
+      "difficulty": 1,
+      "ex": "Je vais souvent à la bibliothèque.",
+      "ex_fa": "من اغلب به کتابخانه می‌روم."
+    },
+    {
+      "fr": "tard",
+      "fa": "دیر",
+      "emoji": "🌙",
+      "difficulty": 1,
+      "ex": "Il est tard, je dois rentrer.",
+      "ex_fa": "دیر است، من باید برگردم."
+    },
+    {
+      "fr": "tôt",
+      "fa": "زود",
+      "emoji": "🌅",
+      "difficulty": 1,
+      "ex": "Je me lève tôt le matin.",
+      "ex_fa": "من صبح زود بیدار می‌شوم."
+    },
+    {
+      "fr": "tout de suite",
+      "fa": "همین الان",
+      "emoji": "⚡",
+      "difficulty": 2,
+      "ex": "Viens tout de suite, c'est urgent !",
+      "ex_fa": "همین الان بیا، فوریت دارد!"
+    },
+    {
+      "fr": "la ville",
+      "fa": "شهر",
+      "emoji": "🏢",
+      "difficulty": 1,
+      "ex": "Paris est une très grande ville.",
+      "ex_fa": "پاریس شهر بسیار بزرگی است."
+    },
+    {
+      "fr": "le sud",
+      "fa": "جنوب",
+      "emoji": "⬇️",
+      "difficulty": 2,
+      "ex": "Il fait plus chaud dans le sud de la France.",
+      "ex_fa": "در جنوب فرانسه هوا گرم‌تر است."
+    },
+    {
+      "fr": "venir de",
+      "fa": "به تازگی ... کردن",
+      "emoji": "🕰️",
+      "difficulty": 3,
+      "ex": "Je viens de finir mon travail.",
+      "ex_fa": "من به تازگی کارم را تمام کرده‌ام."
+    },
+    {
+      "fr": "téléphoner",
+      "fa": "تلفن زدن",
+      "emoji": "📞",
+      "difficulty": 1,
+      "ex": "Je vais téléphoner à ma mère ce soir.",
+      "ex_fa": "من امشب به مادرم تلفن می‌زنم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une journée en ville",
+      "title_fa": "یک روز در شهر",
+      "text": "Aujourd'hui, je visite une grande ____ (12). Je me lève ____ (10) pour profiter de la journée. Je vais ____ (4) le musée d'histoire et des ____ (3). Ensuite, je dois ____ (5) la ____ (1) principale. Je vais ____ (15) à mon ami pour ____ (6) avec lui au ____ (2). Nous marchons ____ (7) le centre-ville. J'aime ____ (8) venir ici. Mais attention, il ne faut pas arriver ____ (9). Si tu es en retard, viens ____ (11) ! Nous habitons dans le ____ (13) de la France. Je ____ (14) d'arriver, donc je suis prêt.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "ville",
+          "options": [
+            "ville",
+            "rue",
+            "stade",
+            "sud"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "tôt",
+          "options": [
+            "tôt",
+            "tard",
+            "souvent",
+            "vers"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "visiter",
+          "options": [
+            "visiter",
+            "traverser",
+            "téléphoner",
+            "venir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "sciences",
+          "options": [
+            "sciences",
+            "stade",
+            "sud",
+            "rue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "traverser",
+          "options": [
+            "traverser",
+            "visiter",
+            "téléphoner",
+            "venir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "rue",
+          "options": [
+            "rue",
+            "ville",
+            "stade",
+            "sud"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "téléphoner",
+          "options": [
+            "téléphoner",
+            "traverser",
+            "visiter",
+            "venir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "se retrouver",
+          "options": [
+            "se retrouver",
+            "venir de",
+            "tout de suite",
+            "tard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "stade",
+          "options": [
+            "stade",
+            "sud",
+            "rue",
+            "ville"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "vers",
+          "options": [
+            "vers",
+            "tôt",
+            "tard",
+            "souvent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "souvent",
+          "options": [
+            "souvent",
+            "tôt",
+            "tard",
+            "vers"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "tard",
+          "options": [
+            "tard",
+            "tôt",
+            "souvent",
+            "vers"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "tout de suite",
+          "options": [
+            "tout de suite",
+            "venir de",
+            "se retrouver",
+            "tard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "sud",
+          "options": [
+            "sud",
+            "stade",
+            "rue",
+            "ville"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "viens de",
+          "options": [
+            "viens de",
+            "téléphoner",
+            "traverser",
+            "visiter"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les secrets de la métropole",
+      "title_fa": "رازهای کلان‌شهر",
+      "inspiration": "Tintin",
+      "text": "Cette ____ (1) ne dort jamais. Je sors ____ (2) le matin pour ____ (3) ses monuments historiques. J'adore ____ (4) les vieilles ____ (6) pavées. Parfois, je vais ____ (5) le musée des ____ (13). Je ____ (15) d'arriver au ____ (12) pour un match important. Je dois ____ (7) mon ami pour ____ (8) avec lui. Nous marchons ____ (9) la place centrale. J'y vais ____ (10), c'est mon endroit préféré. Mais il ne faut pas rentrer trop ____ (11). En cas de problème, appelle-moi ____ (14). Nous vivons heureux dans le ____ (1) de ce beau pays.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "ville",
+          "options": [
+            "ville",
+            "rue",
+            "stade",
+            "sud"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "tôt",
+          "options": [
+            "tôt",
+            "tard",
+            "souvent",
+            "vers"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "visiter",
+          "options": [
+            "visiter",
+            "traverser",
+            "téléphoner",
+            "venir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "traverser",
+          "options": [
+            "traverser",
+            "visiter",
+            "téléphoner",
+            "venir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "rue",
+          "options": [
+            "rue",
+            "ville",
+            "stade",
+            "sud"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "sciences",
+          "options": [
+            "sciences",
+            "stade",
+            "sud",
+            "rue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "téléphoner",
+          "options": [
+            "téléphoner",
+            "traverser",
+            "visiter",
+            "venir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "se retrouver",
+          "options": [
+            "se retrouver",
+            "venir de",
+            "tout de suite",
+            "tard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "vers",
+          "options": [
+            "vers",
+            "tôt",
+            "tard",
+            "souvent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "souvent",
+          "options": [
+            "souvent",
+            "tôt",
+            "tard",
+            "vers"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "tard",
+          "options": [
+            "tard",
+            "tôt",
+            "souvent",
+            "vers"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "stade",
+          "options": [
+            "stade",
+            "sud",
+            "rue",
+            "ville"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "tout de suite",
+          "options": [
+            "tout de suite",
+            "venir de",
+            "se retrouver",
+            "tard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "sud",
+          "options": [
+            "sud",
+            "stade",
+            "rue",
+            "ville"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "viens de",
+          "options": [
+            "viens de",
+            "téléphoner",
+            "traverser",
+            "visiter"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Ville, Navigation et Lieux Publics",
+    "title_fa": "آزمون: شهر، مسیریابی و مکان‌های عمومی",
+    "displayCount": 12,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le lieu où l'on joue au football s'appelle le ____.",
+        "options": [
+          "stade",
+          "rue",
+          "ville",
+          "sud"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که در آن فوتبال بازی می‌کنیم، استادیوم (stade) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le verbe qui signifie « بازدید کردن » un lieu touristique est ____.",
+        "options": [
+          "visiter",
+          "traverser",
+          "téléphoner",
+          "venir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعلی که به معنای بازدید کردن از یک مکان توریستی است، visiter می‌باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour aller d'un côté à l'autre de la rue, il faut la ____.",
+        "options": [
+          "traverser",
+          "visiter",
+          "téléphoner",
+          "venir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای رفتن از یک طرف به طرف دیگر خیابان، باید از آن عبور کرد (traverser)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'expression pour dire « همدیگر را ملاقات کردن » à un endroit est ____.",
+        "options": [
+          "se retrouver",
+          "venir de",
+          "tout de suite",
+          "tard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عبارتی برای گفتن ملاقات کردن همدیگر در یک مکان، se retrouver است."
+      },
+      {
+        "type": "mcq",
+        "question": "La préposition qui indique la direction (« به سمتِ ») est ____.",
+        "options": [
+          "vers",
+          "tôt",
+          "tard",
+          "souvent"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرف اضافه‌ای که جهت را نشان می‌دهد، vers (به سمتِ) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'adverbe qui signifie « اغلب » est ____.",
+        "options": [
+          "souvent",
+          "tôt",
+          "tard",
+          "vers"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قیدی که به معنای اغلب است، souvent می‌باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le contraire de « tôt » est ____.",
+        "options": [
+          "tard",
+          "souvent",
+          "vers",
+          "tôt"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متضاد زود (tôt)، دیر (tard) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'expression qui signifie « همین الان » est ____.",
+        "options": [
+          "tout de suite",
+          "venir de",
+          "se retrouver",
+          "tard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عبارتی که به معنای همین الان است، tout de suite می‌باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "La structure « venir de + infinitif » signifie « به تازگی ... کردن ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، ساختار venir de + مصدر به معنای انجام کاری در همین اواخر است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le point cardinal opposé au nord est le ____.",
+        "options": [
+          "sud",
+          "stade",
+          "rue",
+          "ville"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جهت جغرافیایی مقابل شمال، جنوب (sud) است."
+      },
+      {
+        "type": "binary",
+        "question": "« Les sciences » incluent des matières comme la physique et la chimie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، sciences شامل علومی مانند فیزیک و شیمی می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« La rue » est un grand bâtiment où habitent beaucoup de gens.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، rue به معنای خیابان است، نه ساختمان."
+      }
+    ]
+  }
+}
