@@ -1,0 +1,538 @@
+{
+  "id": "espace_ciel_temps",
+  "level": "A2",
+  "theme": "Espace, Ciel et Moments de la Journée",
+  "theme_fa": "فضا، آسمان و زمان‌های روز",
+  "icon": "🌌",
+  "inspiration": "Le Petit Prince",
+  "words": [
+    {
+      "fr": "la planète",
+      "fa": "سیاره",
+      "emoji": "🪐",
+      "difficulty": 1,
+      "ex": "La planète Terre est notre maison.",
+      "ex_fa": "سیاره زمین خانه ما است."
+    },
+    {
+      "fr": "l'horizon",
+      "fa": "افق",
+      "emoji": "🌅",
+      "difficulty": 2,
+      "ex": "Le soleil disparaît lentement à l'horizon.",
+      "ex_fa": "خورشید به آرامی در افق ناپدید می‌شود."
+    },
+    {
+      "fr": "le lever du soleil",
+      "fa": "طلوع خورشید",
+      "emoji": "🌄",
+      "difficulty": 1,
+      "ex": "J'aime admirer le lever du soleil sur la mer.",
+      "ex_fa": "من دوست دارم طلوع خورشید را روی دریا تماشا کنم."
+    },
+    {
+      "fr": "le coucher du soleil",
+      "fa": "غروب خورشید",
+      "emoji": "🌇",
+      "difficulty": 1,
+      "ex": "Nous avons pris un beau coucher du soleil en photo.",
+      "ex_fa": "ما از یک غروب خورشید زیبا عکس گرفتیم."
+    },
+    {
+      "fr": "le crépuscule",
+      "fa": "گرگ‌ومیش",
+      "emoji": "🌆",
+      "difficulty": 2,
+      "ex": "Il est dangereux de se promener seul au crépuscule.",
+      "ex_fa": "پیاده‌روی تنها در گرگ‌ومیش خطرناک است."
+    },
+    {
+      "fr": "l'aube",
+      "fa": "سحرگاه",
+      "emoji": "🌅",
+      "difficulty": 2,
+      "ex": "Les fermiers se réveillent souvent à l'aube.",
+      "ex_fa": "کشاورزان اغلب در سحرگاه بیدار می‌شوند."
+    },
+    {
+      "fr": "l'aurore",
+      "fa": "سپیده‌دم",
+      "emoji": "🌄",
+      "difficulty": 2,
+      "ex": "Les couleurs de l'aurore sont magnifiques.",
+      "ex_fa": "رنگ‌های سپیده‌دم فوق‌العاده زیبا هستند."
+    },
+    {
+      "fr": "le siècle",
+      "fa": "قرن",
+      "emoji": "💯",
+      "difficulty": 1,
+      "ex": "Nous vivons au vingt-et-unième siècle.",
+      "ex_fa": "ما در قرن بیست و یکم زندگی می‌کنیم."
+    },
+    {
+      "fr": "le millénaire",
+      "fa": "هزاره",
+      "emoji": "1️⃣0️⃣0️⃣0️⃣",
+      "difficulty": 2,
+      "ex": "Le troisième millénaire a commencé en l'an 2001.",
+      "ex_fa": "هزاره سوم در سال ۲۰۰۱ آغاز شد."
+    },
+    {
+      "fr": "la date",
+      "fa": "تاریخ (روز و ماه)",
+      "emoji": "📅",
+      "difficulty": 1,
+      "ex": "Quelle est la date de ton anniversaire ?",
+      "ex_fa": "تاریخ تولد تو چه روزی است؟"
+    },
+    {
+      "fr": "le calendrier",
+      "fa": "تقویم",
+      "emoji": "🗓️",
+      "difficulty": 1,
+      "ex": "Je regarde le calendrier pour vérifier les jours fériés.",
+      "ex_fa": "من تقویم را نگاه می‌کنم تا روزهای تعطیل را بررسی کنم."
+    },
+    {
+      "fr": "la minute",
+      "fa": "دقیقه",
+      "emoji": "⏱️",
+      "difficulty": 1,
+      "ex": "Attends une minute, j'arrive !",
+      "ex_fa": "یک دقیقه صبر کن، دارم می‌آیم!"
+    },
+    {
+      "fr": "la seconde",
+      "fa": "ثانیه",
+      "emoji": "⏱️",
+      "difficulty": 1,
+      "ex": "L'accident s'est produit en une fraction de seconde.",
+      "ex_fa": "تصادف در کسری از ثانیه رخ داد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le temps qui passe",
+      "title_fa": "زمانی که می‌گذرد",
+      "text": "Notre ____ (1), la Terre, tourne sans s'arrêter. Chaque jour commence à l'____ (6) ou à l'____ (7), avec un magnifique ____ (3). Pendant la journée, je regarde souvent l'____ (2) pour voir les bateaux. Le soir, j'adore regarder le ____ (4) avec ses couleurs chaudes, juste avant le ____ (5). Je vérifie la ____ (10) sur mon ____ (11) pour ne pas oublier mes rendez-vous. Une heure a soixante ____ (12), et une minute a soixante ____ (13). Nous vivons actuellement au vingt-et-unième ____ (8), et bientôt nous fêterons un nouveau ____ (9). Le temps est précieux !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "planète",
+          "options": [
+            "planète",
+            "siècle",
+            "millénaire",
+            "date"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "horizon",
+          "options": [
+            "horizon",
+            "aube",
+            "aurore",
+            "crépuscule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "lever du soleil",
+          "options": [
+            "lever du soleil",
+            "coucher du soleil",
+            "crépuscule",
+            "aube"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "coucher du soleil",
+          "options": [
+            "coucher du soleil",
+            "lever du soleil",
+            "aurore",
+            "aube"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "crépuscule",
+          "options": [
+            "crépuscule",
+            "aube",
+            "aurore",
+            "horizon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "aube",
+          "options": [
+            "aube",
+            "aurore",
+            "crépuscule",
+            "horizon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "aurore",
+          "options": [
+            "aurore",
+            "aube",
+            "crépuscule",
+            "horizon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "siècle",
+          "options": [
+            "siècle",
+            "millénaire",
+            "date",
+            "calendrier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "millénaire",
+          "options": [
+            "millénaire",
+            "siècle",
+            "date",
+            "calendrier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "date",
+          "options": [
+            "date",
+            "calendrier",
+            "minute",
+            "seconde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "calendrier",
+          "options": [
+            "calendrier",
+            "date",
+            "minute",
+            "seconde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "minutes",
+          "options": [
+            "minutes",
+            "secondes",
+            "heures",
+            "jours"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "secondes",
+          "options": [
+            "secondes",
+            "minutes",
+            "heures",
+            "jours"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La symphonie du temps",
+      "title_fa": "سمفونی زمان",
+      "inspiration": "Le Petit Prince",
+      "text": "Sur notre petite ____ (1), le temps danse une valse éternelle. Tout commence dans la pénombre de l'____ (6), quand les premières lueurs de l'____ (7) peignent le ciel. C'est l'heure du ____ (3), un spectacle qui se reflète sur l'____ (2) lointain. Des heures plus tard, le ____ (4) nous offre ses adieux flamboyants, laissant place au ____ (5) mystérieux. L'homme tente de capturer ce flux en regardant la ____ (10) sur un ____ (11), en comptant chaque ____ (12) et chaque ____ (13). Pourtant, l'histoire nous enseigne que chaque ____ (8) et chaque ____ (9) ne sont que des chapitres dans le grand livre de l'univers.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "planète",
+          "options": [
+            "planète",
+            "siècle",
+            "millénaire",
+            "date"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "horizon",
+          "options": [
+            "horizon",
+            "aube",
+            "aurore",
+            "crépuscule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "lever du soleil",
+          "options": [
+            "lever du soleil",
+            "coucher du soleil",
+            "crépuscule",
+            "aube"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "coucher du soleil",
+          "options": [
+            "coucher du soleil",
+            "lever du soleil",
+            "aurore",
+            "aube"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "crépuscule",
+          "options": [
+            "crépuscule",
+            "aube",
+            "aurore",
+            "horizon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "aube",
+          "options": [
+            "aube",
+            "aurore",
+            "crépuscule",
+            "horizon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "aurore",
+          "options": [
+            "aurore",
+            "aube",
+            "crépuscule",
+            "horizon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "siècle",
+          "options": [
+            "siècle",
+            "millénaire",
+            "date",
+            "calendrier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "millénaire",
+          "options": [
+            "millénaire",
+            "siècle",
+            "date",
+            "calendrier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "date",
+          "options": [
+            "date",
+            "calendrier",
+            "minute",
+            "seconde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "calendrier",
+          "options": [
+            "calendrier",
+            "date",
+            "minute",
+            "seconde"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "minute",
+          "options": [
+            "minute",
+            "seconde",
+            "heure",
+            "jour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "seconde",
+          "options": [
+            "seconde",
+            "minute",
+            "heure",
+            "jour"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Espace, Ciel et Temps",
+    "title_fa": "آزمون: فضا، آسمان و زمان",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le moment où le soleil apparaît le matin s'appelle le ____.",
+        "options": [
+          "lever du soleil",
+          "coucher du soleil",
+          "crépuscule",
+          "aube"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "لحظه‌ای که خورشید صبحگاه ظاهر می‌شود، طلوع خورشید (lever du soleil) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "La ligne apparente où la terre et le ciel semblent se rencontrer est l'____.",
+        "options": [
+          "horizon",
+          "aube",
+          "aurore",
+          "crépuscule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خط ظاهری که در آن زمین و آسمان به نظر می‌رسد به هم می‌رسند، افق (horizon) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La période de transition entre le jour et la nuit, avec une faible lumière, est le ____.",
+        "options": [
+          "crépuscule",
+          "aube",
+          "aurore",
+          "horizon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره گذار بین روز و شب با نور کم، گرگ‌ومیش (crépuscule) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une période de cent ans s'appelle un ____.",
+        "options": [
+          "siècle",
+          "millénaire",
+          "an",
+          "décennie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره‌ای صد ساله، قرن (siècle) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Une période de mille ans s'appelle un ____.",
+        "options": [
+          "millénaire",
+          "siècle",
+          "an",
+          "décennie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره‌ای هزار ساله، هزاره (millénaire) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "L'outil qui montre les jours, les mois et les années est le ____.",
+        "options": [
+          "calendrier",
+          "date",
+          "minute",
+          "seconde"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزاری که روزها، ماه‌ها و سال‌ها را نشان می‌دهد، تقویم (calendrier) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une unité de temps égale à 60 secondes est une ____.",
+        "options": [
+          "minute",
+          "seconde",
+          "heure",
+          "jour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واحد زمانی برابر با ۶۰ ثانیه، دقیقه (minute) است."
+      },
+      {
+        "type": "binary",
+        "question": "« L'aube » et « l'aurore » désignent toutes deux le début de la journée, juste avant ou pendant le lever du soleil.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، aube (سحرگاه) و aurore (سپیده‌دم) هر دو به آغاز روز اشاره دارند."
+      },
+      {
+        "type": "binary",
+        "question": "La Terre est une étoile dans l'univers.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، زمین یک سیاره (planète) است، نه یک ستاره."
+      },
+      {
+        "type": "binary",
+        "question": "Une « seconde » est une unité de temps plus longue qu'une « minute ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، ثانیه (seconde) کوتاه‌تر از دقیقه (minute) است."
+      }
+    ]
+  }
+}
