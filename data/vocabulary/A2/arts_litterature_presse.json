@@ -1,0 +1,322 @@
+{
+  "id": "arts_litterature_presse",
+  "level": "A2",
+  "theme": "Arts, Littérature et Presse",
+  "theme_fa": "هنرهای زیبا، ادبیات و چاپ",
+  "icon": "🎨",
+  "inspiration": "Le Petit Prince",
+  "words": [
+    {
+      "fr": "le chant",
+      "fa": "آواز / آواز خواندن",
+      "emoji": "🎵",
+      "difficulty": 1,
+      "ex": "Le chant des oiseaux me réveille le matin.",
+      "ex_fa": "آواز پرندگان مرا صبح بیدار می‌کند."
+    },
+    {
+      "fr": "la peinture",
+      "fa": "نقاشی / رنگ",
+      "emoji": "🎨",
+      "difficulty": 1,
+      "ex": "Elle a exposé sa peinture au musée.",
+      "ex_fa": "او نقاشی‌اش را در موزه به نمایش گذاشت."
+    },
+    {
+      "fr": "la sculpture",
+      "fa": "مجسمه‌سازی",
+      "emoji": "🗿",
+      "difficulty": 2,
+      "ex": "Cette sculpture en marbre est magnifique.",
+      "ex_fa": "این مجسمه مرمرین فوق‌العاده زیبا است."
+    },
+    {
+      "fr": "la photographie",
+      "fa": "عکاسی",
+      "emoji": "📷",
+      "difficulty": 1,
+      "ex": "Il suit un cours de photographie artistique.",
+      "ex_fa": "او در یک دوره عکاسی هنری شرکت می‌کند."
+    },
+    {
+      "fr": "la littérature",
+      "fa": "ادبیات",
+      "emoji": "📚",
+      "difficulty": 2,
+      "ex": "J'adore étudier la littérature française du 19e siècle.",
+      "ex_fa": "من عاشق مطالعه ادبیات فرانسه قرن نوزدهم هستم."
+    },
+    {
+      "fr": "la poésie",
+      "fa": "شعر",
+      "emoji": "📜",
+      "difficulty": 2,
+      "ex": "Lire de la poésie apaise l'esprit.",
+      "ex_fa": "خواندن شعر ذهن را آرام می‌کند."
+    },
+    {
+      "fr": "le roman",
+      "fa": "رمان",
+      "emoji": "📖",
+      "difficulty": 1,
+      "ex": "Il est en train d'écrire un roman policier.",
+      "ex_fa": "او در حال نوشتن یک رمان جنایی است."
+    },
+    {
+      "fr": "la nouvelle",
+      "fa": "داستان کوتاه",
+      "emoji": "📄",
+      "difficulty": 2,
+      "ex": "J'ai lu un recueil de nouvelles de Maupassant.",
+      "ex_fa": "من مجموعه‌ای از داستان‌های کوتاه موپاسان را خواندم."
+    },
+    {
+      "fr": "la bande dessinée",
+      "fa": "کتاب کمیک",
+      "emoji": "💬",
+      "difficulty": 2,
+      "ex": "Les enfants adorent lire une bande dessinée.",
+      "ex_fa": "بچه‌ها عاشق خواندن کتاب کمیک هستند."
+    },
+    {
+      "fr": "le magazine",
+      "fa": "مجله",
+      "emoji": "📰",
+      "difficulty": 1,
+      "ex": "Je feuillette un magazine de mode.",
+      "ex_fa": "من یک مجله مد را ورق می‌زنم."
+    },
+    {
+      "fr": "l'article",
+      "fa": "مقاله",
+      "emoji": "📝",
+      "difficulty": 2,
+      "ex": "Le journaliste va publier un article demain.",
+      "ex_fa": "خبرنگار فردا یک مقاله منتشر خواهد کرد."
+    },
+    {
+      "fr": "la publicité",
+      "fa": "تبلیغات",
+      "emoji": "📢",
+      "difficulty": 2,
+      "ex": "Cette publicité télévisée est très créative.",
+      "ex_fa": "این تبلیغ تلویزیونی بسیار خلاقانه است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un dimanche culturel",
+      "title_fa": "یک یکشنبه فرهنگی",
+      "text": "Dimanche, je me consacre à l'art. Le matin, j'écoute le ____ (1) des oiseaux. Ensuite, je visite une exposition de ____ (2) et j'admire une ____ (3) en bronze. L'après-midi, je m'inscris à un cours de ____ (4). De retour chez moi, je lis un ____ (7) passionnant et un recueil de ____ (8). Mon frère, lui, préfère lire une ____ (9) ou feuilleter un ____ (10). Avant de dormir, j'écris un petit texte, peut-être un début de ____ (6), et je lis un ____ (11) dans le journal. Je coupe toujours la ____ (12) pendant les films !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "chant",
+          "options": [
+            "chant",
+            "peinture",
+            "roman",
+            "publicité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "peinture",
+          "options": [
+            "peinture",
+            "littérature",
+            "nouvelle",
+            "magazine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "sculpture",
+          "options": [
+            "sculpture",
+            "photographie",
+            "poésie",
+            "article"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "photographie",
+          "options": [
+            "photographie",
+            "littérature",
+            "bande dessinée",
+            "publicité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "littérature",
+          "options": [
+            "littérature",
+            "chant",
+            "sculpture",
+            "publicité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "poésie",
+          "options": [
+            "poésie",
+            "magazine",
+            "article",
+            "bande dessinée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "roman",
+          "options": [
+            "roman",
+            "publicité",
+            "chant",
+            "sculpture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "nouvelles",
+          "options": [
+            "nouvelles",
+            "publicités",
+            "magazines",
+            "photographies"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "bande dessinée",
+          "options": [
+            "bande dessinée",
+            "littérature",
+            "poésie",
+            "sculpture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "magazine",
+          "options": [
+            "magazine",
+            "roman",
+            "poésie",
+            "sculpture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "article",
+          "options": [
+            "article",
+            "roman",
+            "bande dessinée",
+            "sculpture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "publicité",
+          "options": [
+            "publicité",
+            "poésie",
+            "littérature",
+            "photographie"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Arts, Littérature et Presse",
+    "title_fa": "آزمون: هنر، ادبیات و مطبوعات",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'art de créer des œuvres en trois dimensions (comme en pierre) est la ____.",
+        "options": [
+          "sculpture",
+          "peinture",
+          "photographie",
+          "poésie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "هنر خلق آثار سه‌بعدی (مانند سنگ)، مجسمه‌سازی (sculpture) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un livre long qui raconte une histoire fictive est un ____.",
+        "options": [
+          "roman",
+          "article",
+          "magazine",
+          "poésie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کتاب بلندی که یک داستان خیالی را روایت می‌کند، رمان (roman) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une histoire courte, plus courte qu'un roman, s'appelle une ____.",
+        "options": [
+          "nouvelle",
+          "publicité",
+          "bande dessinée",
+          "sculpture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "داستانی کوتاه، کوتاه‌تر از رمان، داستان کوتاه (nouvelle) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le support d'information imprimé périodiquement avec des images est un ____.",
+        "options": [
+          "magazine",
+          "roman",
+          "poésie",
+          "sculpture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رسانه اطلاعاتی چاپی دوره‌ای با تصاویر، مجله (magazine) است."
+      },
+      {
+        "type": "binary",
+        "question": "« La bande dessinée » combine des illustrations et du texte pour raconter une histoire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، کتاب کمیک (bande dessinée) تصاویر و متن را برای روایت داستان ترکیب می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "« La publicité » a pour but d'informer de manière neutre sans chercher à vendre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، هدف تبلیغات (publicité) متقاعد کردن و فروش است، نه اطلاع‌رسانی بی‌طرفانه."
+      }
+    ]
+  }
+}
