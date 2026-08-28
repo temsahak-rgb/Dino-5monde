@@ -1,0 +1,522 @@
+{
+  "id": "gestion_projet_strategie",
+  "level": "B2",
+  "theme": "Gestion de projet et stratégie organisationnelle",
+  "theme_fa": "مدیریت پروژه و استراتژی سازمانی",
+  "icon": "📊",
+  "inspiration": "Succession",
+  "words": [
+    {
+      "fr": "la planification (f)",
+      "fa": "برنامه‌ریزی",
+      "emoji": "📅",
+      "difficulty": 2,
+      "ex": "La planification de ce projet prendra deux semaines.",
+      "ex_fa": "برنامه‌ریزی این پروژه دو هفته طول می‌کشد."
+    },
+    {
+      "fr": "planifier",
+      "fa": "برنامه‌ریزی کردن",
+      "emoji": "🗓️",
+      "difficulty": 2,
+      "ex": "Nous devons planifier la réunion de demain.",
+      "ex_fa": "ما باید جلسه فردا را برنامه‌ریزی کنیم."
+    },
+    {
+      "fr": "le processus (m)",
+      "fa": "فرآیند",
+      "emoji": "⚙️",
+      "difficulty": 3,
+      "ex": "Le processus de validation est trop long.",
+      "ex_fa": "فرآیند تأیید بسیار طولانی است."
+    },
+    {
+      "fr": "la procédure (f)",
+      "fa": "رویه، روش",
+      "emoji": "📋",
+      "difficulty": 3,
+      "ex": "Il faut suivre la procédure de sécurité.",
+      "ex_fa": "باید رویه ایمنی را دنبال کرد."
+    },
+    {
+      "fr": "procéder",
+      "fa": "اقدام کردن",
+      "emoji": "🚀",
+      "difficulty": 3,
+      "ex": "Nous allons procéder à une enquête interne.",
+      "ex_fa": "ما قصد داریم یک تحقیق داخلی انجام دهیم."
+    },
+    {
+      "fr": "proactif/ve",
+      "fa": "پیش‌قدم، کنش‌گر",
+      "emoji": "💡",
+      "difficulty": 4,
+      "ex": "Il s'est montré proactif dans la résolution du problème.",
+      "ex_fa": "او در حل مشکل رویکرد پیش‌قدمی داشت."
+    },
+    {
+      "fr": "prioriser",
+      "fa": "اولویت‌بندی کردن",
+      "emoji": "🎯",
+      "difficulty": 3,
+      "ex": "Je dois prioriser mes tâches pour la semaine.",
+      "ex_fa": "من باید وظایفم را برای هفته اولویت‌بندی کنم."
+    },
+    {
+      "fr": "prioritaire",
+      "fa": "اولویت‌دار",
+      "emoji": "⚠️",
+      "difficulty": 3,
+      "ex": "La sécurité des employés est prioritaire.",
+      "ex_fa": "ایمنی کارکنان اولویت‌دار است."
+    },
+    {
+      "fr": "privilégier",
+      "fa": "ترجیح دادن",
+      "emoji": "👍",
+      "difficulty": 3,
+      "ex": "Nous allons privilégier la qualité à la quantité.",
+      "ex_fa": "ما قصد داریم کیفیت را به کمیت ترجیح دهیم."
+    },
+    {
+      "fr": "le positionnement (m)",
+      "fa": "موضع‌گیری",
+      "emoji": "🧭",
+      "difficulty": 4,
+      "ex": "Le positionnement de l'entreprise sur le marché a changé.",
+      "ex_fa": "موضع‌گیری شرکت در بازار تغییر کرده است."
+    },
+    {
+      "fr": "optimal(e)",
+      "fa": "بهینه",
+      "emoji": "✨",
+      "difficulty": 3,
+      "ex": "Nous cherchons un résultat optimal.",
+      "ex_fa": "ما به دنبال یک نتیجه بهینه هستیم."
+    },
+    {
+      "fr": "optimiser",
+      "fa": "بهینه‌سازی کردن",
+      "emoji": "📈",
+      "difficulty": 3,
+      "ex": "Il faut optimiser nos ressources financières.",
+      "ex_fa": "باید منابع مالی‌مان را بهینه‌سازی کنیم."
+    },
+    {
+      "fr": "orchestrer",
+      "fa": "رهبری کردن",
+      "emoji": "🎼",
+      "difficulty": 4,
+      "ex": "Elle a orchestré la fusion des deux entreprises.",
+      "ex_fa": "او ادغام دو شرکت را رهبری کرد."
+    },
+    {
+      "fr": "opérationnel/le",
+      "fa": "عملیاتی",
+      "emoji": "🛠️",
+      "difficulty": 3,
+      "ex": "Le nouveau système est enfin opérationnel.",
+      "ex_fa": "سیستم جدید بالاخره عملیاتی شد."
+    },
+    {
+      "fr": "le paramètre (m)",
+      "fa": "پارامتر",
+      "emoji": "📐",
+      "difficulty": 4,
+      "ex": "Nous devons ajuster ce paramètre technique.",
+      "ex_fa": "ما باید این پارامتر فنی را تنظیم کنیم."
+    },
+    {
+      "fr": "la mise en œuvre (f)",
+      "fa": "اجرا",
+      "emoji": "🏗️",
+      "difficulty": 4,
+      "ex": "La mise en œuvre de cette stratégie sera difficile.",
+      "ex_fa": "اجرای این استراتژی دشوار خواهد بود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La réunion de crise",
+      "title_fa": "جلسه بحران",
+      "text": "L'entreprise Waystar traversait une crise sans précédent. Le conseil d'administration avait convoqué une réunion d'urgence dans la salle de conférence principale. Avant tout, la {{BLANK_1}} des actions futures était cruciale pour survivre à cette tempête financière. Chaque directeur devait analyser le {{BLANK_2}} de décision qui semblait beaucoup trop lent pour les enjeux actuels. Selon la {{BLANK_3}} interne strictement appliquée, il fallait obtenir l'accord unanime du comité. Face à l'urgence de la situation, Kendall s'est montré particulièrement {{BLANK_4}} en proposant une solution audacieuse et risquée. Il a fallu immédiatement {{BLANK_5}} les urgences financières les plus pressantes. Il a ensuite décidé de {{BLANK_6}} la communication externe pour calmer les investisseurs paniqués. Enfin, le {{BLANK_7}} de l'entreprise sur le marché devait rester stable et le nouveau plan devait être rapidement {{BLANK_8}} sur le terrain.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "planification",
+          "options": [
+            "planification",
+            "processus",
+            "procédure",
+            "paramètre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "processus",
+          "options": [
+            "planification",
+            "processus",
+            "procédure",
+            "paramètre"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 3,
+          "answer": "procédure",
+          "options": [
+            "planification",
+            "processus",
+            "procédure",
+            "paramètre"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": 4,
+          "answer": "proactif",
+          "options": [
+            "proactif",
+            "opérationnel",
+            "optimal",
+            "prioritaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "prioriser",
+          "options": [
+            "prioriser",
+            "privilégier",
+            "planifier",
+            "procéder"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "privilégier",
+          "options": [
+            "prioriser",
+            "privilégier",
+            "planifier",
+            "procéder"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 7,
+          "answer": "positionnement",
+          "options": [
+            "positionnement",
+            "paramètre",
+            "processus",
+            "mise en œuvre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "opérationnel",
+          "options": [
+            "proactif",
+            "opérationnel",
+            "optimal",
+            "prioritaire"
+          ],
+          "correctIndex": 1
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les ombres du pouvoir",
+      "title_fa": "سایه‌های قدرت",
+      "inspiration": "Succession",
+      "text": "Dans les couloirs feutrés et sombres de la multinationale, Logan Roy chercha à {{BLANK_1}} chaque mouvement de ses héritiers avec une méfiance glaciale et calculée. Il ne se contenta pas de simplement diriger ; il aima à {{BLANK_2}} avec une rapidité implacable, sans jamais laisser place à la moindre hésitation ou à la pitié. Pour lui, toute action {{BLANK_3}} devait être exécutée immédiatement, reléguant les autres préoccupations humaines au second plan. Seul un résultat {{BLANK_4}} pouvait justifier les sacrifices humains et financiers qu'il imposait à sa propre famille. Il cherchait constemment à {{BLANK_5}} les moindres ressources de son empire, même au prix de conflits internes destructeurs et de trahisons. Chaque {{BLANK_6}} économique était pesé avec une précision chirurgicale, transformant les vies en simples chiffres sur un tableau. Il décida de {{BLANK_7}} sa stratégie avec une autorité absolue, manipulant les esprits les plus brillants de l'entreprise pour son propre profit. Finalement, la {{BLANK_8}} de ses décisions les plus sombres ne laissait aucun survivant indigne, effaçant toute trace de compassion et d'humanité.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "planifier",
+          "options": [
+            "planifier",
+            "procéder",
+            "orchestrer",
+            "optimiser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "procéder",
+          "options": [
+            "planifier",
+            "procéder",
+            "orchestrer",
+            "optimiser"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 3,
+          "answer": "prioritaire",
+          "options": [
+            "prioritaire",
+            "opérationnel",
+            "optimal",
+            "proactif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "optimal",
+          "options": [
+            "prioritaire",
+            "opérationnel",
+            "optimal",
+            "proactif"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": 5,
+          "answer": "optimiser",
+          "options": [
+            "planifier",
+            "procéder",
+            "orchestrer",
+            "optimiser"
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": 6,
+          "answer": "paramètre",
+          "options": [
+            "paramètre",
+            "positionnement",
+            "processus",
+            "mise en œuvre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "orchestrer",
+          "options": [
+            "planifier",
+            "procéder",
+            "orchestrer",
+            "optimiser"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": 8,
+          "answer": "mise en œuvre",
+          "options": [
+            "paramètre",
+            "positionnement",
+            "processus",
+            "mise en œuvre"
+          ],
+          "correctIndex": 3
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Gestion de projet et stratégie",
+    "title_fa": "آزمون : مدیریت پروژه و استراتژی",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La ____ de ce projet prendra deux semaines.",
+        "options": [
+          "planification",
+          "procédure",
+          "mise en œuvre",
+          "paramètre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "planification به معنای برنامه‌ریزی است که برای مدت زمان پروژه مناسب است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ de validation est trop long.",
+        "options": [
+          "positionnement",
+          "processus",
+          "paramètre",
+          "planification"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "processus به معنای فرآیند است که برای مراحل تأیید استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Il faut suivre la ____ de sécurité.",
+        "options": [
+          "planification",
+          "processus",
+          "procédure",
+          "mise en œuvre"
+        ],
+        "correctIndex": 2,
+        "explanation_fa": "procédure به معنای رویه یا روش رسمی است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il s'est montré ____ dans la résolution du problème.",
+        "options": [
+          "proactif",
+          "opérationnel",
+          "optimal",
+          "prioritaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "proactif به معنای پیش‌قدم و کنش‌گر است."
+      },
+      {
+        "type": "mcq",
+        "question": "Je dois ____ mes tâches pour la semaine.",
+        "options": [
+          "prioriser",
+          "privilégier",
+          "planifier",
+          "procéder"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "prioriser به معنای اولویت‌بندی کردن است."
+      },
+      {
+        "type": "mcq",
+        "question": "Nous allons ____ la qualité à la quantité.",
+        "options": [
+          "prioriser",
+          "privilégier",
+          "planifier",
+          "procéder"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "privilégier به معنای ترجیح دادن یک چیز به چیز دیگر است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ de l'entreprise sur le marché a changé.",
+        "options": [
+          "positionnement",
+          "paramètre",
+          "processus",
+          "mise en œuvre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "positionnement به معنای موضع‌گیری یا جایگاه در بازار است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le nouveau système est enfin ____.",
+        "options": [
+          "proactif",
+          "opérationnel",
+          "optimal",
+          "prioritaire"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "opérationnel به معنای عملیاتی و آماده استفاده است."
+      },
+      {
+        "type": "mcq",
+        "question": "Nous devons ____ la réunion de demain.",
+        "options": [
+          "planifier",
+          "procéder",
+          "orchestrer",
+          "optimiser"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "planifier به معنای برنامه‌ریزی کردن است."
+      },
+      {
+        "type": "mcq",
+        "question": "Nous allons ____ à une enquête interne.",
+        "options": [
+          "planifier",
+          "procéder",
+          "orchestrer",
+          "optimiser"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "procéder à به معنای اقدام کردن یا دست زدن به کاری است."
+      },
+      {
+        "type": "mcq",
+        "question": "La sécurité des employés est ____.",
+        "options": [
+          "prioritaire",
+          "opérationnelle",
+          "optimale",
+          "proactive"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "prioritaire به معنای اولویت‌دار است."
+      },
+      {
+        "type": "mcq",
+        "question": "Nous cherchons un résultat ____.",
+        "options": [
+          "prioritaire",
+          "opérationnel",
+          "optimal",
+          "proactif"
+        ],
+        "correctIndex": 2,
+        "explanation_fa": "optimal به معنای بهینه و بهترین حالت ممکن است."
+      },
+      {
+        "type": "binary",
+        "question": "Optimiser nos ressources signifie les gaspiller.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "غلط است. optimiser به معنای بهینه‌سازی و استفاده بهتر است، نه هدر دادن."
+      },
+      {
+        "type": "binary",
+        "question": "Orchestrer un événement signifie le diriger et l'organiser.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درست است. orchestrer به معنای رهبری کردن و سازماندهی دقیق است."
+      },
+      {
+        "type": "binary",
+        "question": "Un paramètre est une variable qui influence un système.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درست است. paramètre به معنای پارامتر یا متغیر تأثیرگذار است."
+      },
+      {
+        "type": "binary",
+        "question": "La mise en œuvre est la phase de conception théorique d'un projet.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "غلط است. la mise en œuvre به معنای اجرا و عملی کردن است، نه طراحی تئوری."
+      }
+    ]
+  }
+}
