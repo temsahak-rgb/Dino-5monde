@@ -1,0 +1,516 @@
+{
+  "id": "anatomie_haut_du_corps",
+  "level": "A1",
+  "theme": "Anatomie : Haut du corps et Mains",
+  "theme_fa": "آناتومی: بالاتنه و دست‌ها",
+  "icon": "🦴",
+  "inspiration": "Le Petit Prince",
+  "words": [
+    {
+      "fr": "le doigt",
+      "fa": "انگشت دست",
+      "emoji": "👆",
+      "difficulty": 1,
+      "ex": "J'ai cinq doigts à chaque main.",
+      "ex_fa": "من در هر دست پنج انگشت دارم."
+    },
+    {
+      "fr": "le pouce",
+      "fa": "شست",
+      "emoji": "👍",
+      "difficulty": 2,
+      "ex": "Il lève le pouce pour dire oui.",
+      "ex_fa": "او برای گفتن بله، شست خود را بالا می‌برد."
+    },
+    {
+      "fr": "l'index",
+      "fa": "انگشت اشاره",
+      "emoji": "☝️",
+      "difficulty": 2,
+      "ex": "Montre-moi la carte avec ton index.",
+      "ex_fa": "با انگشت اشاره‌ات نقشه را به من نشان بده."
+    },
+    {
+      "fr": "le majeur",
+      "fa": "انگشت وسط",
+      "emoji": "🖕",
+      "difficulty": 2,
+      "ex": "Le majeur est le doigt le plus long.",
+      "ex_fa": "انگشت وسط، بلندترین انگشت است."
+    },
+    {
+      "fr": "l'annulaire",
+      "fa": "انگشت حلقه",
+      "emoji": "💍",
+      "difficulty": 2,
+      "ex": "On porte la bague à l'annulaire.",
+      "ex_fa": "حلقه را در انگشت حلقه می‌اندازند."
+    },
+    {
+      "fr": "l'auriculaire",
+      "fa": "انگشت کوچک",
+      "emoji": "🤙",
+      "difficulty": 2,
+      "ex": "L'auriculaire est le plus petit doigt.",
+      "ex_fa": "انگشت کوچک، کوچکترین انگشت است."
+    },
+    {
+      "fr": "la paume",
+      "fa": "کف دست",
+      "emoji": "🖐️",
+      "difficulty": 2,
+      "ex": "Il a écrit dans la paume de sa main.",
+      "ex_fa": "او در کف دستش نوشت."
+    },
+    {
+      "fr": "le poignet",
+      "fa": "مچ دست",
+      "emoji": "⌚",
+      "difficulty": 2,
+      "ex": "Je porte ma montre au poignet.",
+      "ex_fa": "من ساعت مچی‌ام را در مچ دست می‌بندم."
+    },
+    {
+      "fr": "le coude",
+      "fa": "آرنج",
+      "emoji": "💪",
+      "difficulty": 2,
+      "ex": "Ne pose pas tes coudes sur la table.",
+      "ex_fa": "آرنج‌هایت را روی میز نگذار."
+    },
+    {
+      "fr": "l'épaule",
+      "fa": "شانه",
+      "emoji": "🤷",
+      "difficulty": 1,
+      "ex": "Il a mal à l'épaule droite.",
+      "ex_fa": "او در شانه راستش درد دارد."
+    },
+    {
+      "fr": "le cou",
+      "fa": "گردن",
+      "emoji": "🦒",
+      "difficulty": 1,
+      "ex": "Elle porte un foulard autour du cou.",
+      "ex_fa": "او یک شال دور گردنش می‌بندد."
+    },
+    {
+      "fr": "la gorge",
+      "fa": "گلو",
+      "emoji": "🗣️",
+      "difficulty": 1,
+      "ex": "J'ai mal à la gorge, je tousse.",
+      "ex_fa": "گلویم درد می‌کند، سرفه می‌کنم."
+    },
+    {
+      "fr": "la poitrine",
+      "fa": "سینه / قفسه سینه",
+      "emoji": "🫁",
+      "difficulty": 2,
+      "ex": "Il ressent une douleur dans la poitrine.",
+      "ex_fa": "او در قفسه سینه‌اش احساس درد می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Chez le médecin",
+      "title_fa": "پیش پزشک",
+      "text": "Le docteur examine mon corps. Il écoute ma ____ (13) et regarde ma ____ (12). J'ai mal au ____ (11) et à l'____ (10) droite. Je lève le ____ (2) et l'____ (3) pour montrer où j'ai mal. Le médecin touche mon ____ (9) et mon ____ (8). Il dit que la ____ (7) de ma main est douce. Je dois faire attention à mes cinq ____ (1), surtout au ____ (4) et à l'____ (6).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "doigts",
+          "options": [
+            "doigts",
+            "pieds",
+            "genoux",
+            "coudes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pouce",
+          "options": [
+            "pouce",
+            "index",
+            "majeur",
+            "annulaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "index",
+          "options": [
+            "index",
+            "pouce",
+            "majeur",
+            "auriculaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "majeur",
+          "options": [
+            "majeur",
+            "index",
+            "pouce",
+            "annulaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "annulaire",
+          "options": [
+            "annulaire",
+            "majeur",
+            "index",
+            "auriculaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "auriculaire",
+          "options": [
+            "auriculaire",
+            "annulaire",
+            "majeur",
+            "index"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "paume",
+          "options": [
+            "paume",
+            "poignet",
+            "coude",
+            "épaule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "poignet",
+          "options": [
+            "poignet",
+            "paume",
+            "coude",
+            "épaule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "coude",
+          "options": [
+            "coude",
+            "poignet",
+            "épaule",
+            "genou"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "épaule",
+          "options": [
+            "épaule",
+            "cou",
+            "poitrine",
+            "hanche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "cou",
+          "options": [
+            "cou",
+            "gorge",
+            "poitrine",
+            "ventre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "gorge",
+          "options": [
+            "gorge",
+            "cou",
+            "poitrine",
+            "ventre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "poitrine",
+          "options": [
+            "poitrine",
+            "ventre",
+            "hanche",
+            "cuisse"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La machine merveilleuse",
+      "title_fa": "ماشین شگفت‌انگیز",
+      "inspiration": "Le Petit Prince",
+      "text": "Le corps est une machine parfaite. L'air entre et nourrit la ____ (13). Nous touchons le monde avec nos ____ (1), guidés par l'____ (3). Nous portons une bague à l'____ (5). La ____ (7) de la main est douce, tandis que le ____ (8) soutient la montre. Nous levons le ____ (2) pour dire oui. Parfois, nous ressentons une douleur dans la ____ (12) ou le ____ (11), nous rappelant que nous sommes vivants. C'est un miracle fragile.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "doigts",
+          "options": [
+            "doigts",
+            "orteils",
+            "genoux",
+            "coudes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pouce",
+          "options": [
+            "pouce",
+            "index",
+            "majeur",
+            "annulaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "index",
+          "options": [
+            "index",
+            "pouce",
+            "majeur",
+            "auriculaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "majeur",
+          "options": [
+            "majeur",
+            "index",
+            "pouce",
+            "annulaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "annulaire",
+          "options": [
+            "annulaire",
+            "majeur",
+            "index",
+            "auriculaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "auriculaire",
+          "options": [
+            "auriculaire",
+            "annulaire",
+            "majeur",
+            "index"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "paume",
+          "options": [
+            "paume",
+            "poignet",
+            "coude",
+            "épaule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "poignet",
+          "options": [
+            "poignet",
+            "paume",
+            "coude",
+            "épaule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "coude",
+          "options": [
+            "coude",
+            "poignet",
+            "épaule",
+            "genou"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "épaule",
+          "options": [
+            "épaule",
+            "cou",
+            "poitrine",
+            "hanche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "cou",
+          "options": [
+            "cou",
+            "gorge",
+            "poitrine",
+            "ventre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "gorge",
+          "options": [
+            "gorge",
+            "cou",
+            "poitrine",
+            "ventre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "poitrine",
+          "options": [
+            "poitrine",
+            "ventre",
+            "hanche",
+            "cuisse"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Anatomie Haut du Corps",
+    "title_fa": "آزمون: آناتومی بالاتنه",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le doigt sur lequel on met une bague de mariage est l'____.",
+        "options": [
+          "annulaire",
+          "index",
+          "majeur",
+          "pouce"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انگشتی که حلقه ازدواج در آن انداخته می‌شود، انگشت حلقه (annulaire) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'articulation du bras qui permet de le plier est le ____.",
+        "options": [
+          "coude",
+          "poignet",
+          "épaule",
+          "genou"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مفصل بازو که امکان خم کردن آن را می‌دهد، آرنج (coude) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie du corps qui permet de respirer et d'avaler est la ____.",
+        "options": [
+          "gorge",
+          "cou",
+          "poitrine",
+          "ventre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قسمتی از بدن که امکان تنفس و بلع را فراهم می‌کند، گلو (gorge) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le plus gros doigt de la main s'appelle le ____.",
+        "options": [
+          "pouce",
+          "index",
+          "majeur",
+          "auriculaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بزرگترین انگشت دست، شست (pouce) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie interne de la main s'appelle la ____.",
+        "options": [
+          "paume",
+          "poignet",
+          "coude",
+          "épaule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قسمت داخلی دست، کف دست (paume) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "L'articulation qui relie le bras au corps est l'____.",
+        "options": [
+          "épaule",
+          "cou",
+          "poitrine",
+          "hanche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مفصلی که بازو را به بدن متصل می‌کند، شانه (épaule) است."
+      },
+      {
+        "type": "binary",
+        "question": "« L'auriculaire » est le nom du petit doigt de la main.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، auriculaire به معنای انگشت کوچک دست است."
+      },
+      {
+        "type": "binary",
+        "question": "« Le majeur » est le doigt à côté du pouce.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، انگشت کنار شست، index (انگشت اشاره) است. majeur انگشت وسط است."
+      }
+    ]
+  }
+}
