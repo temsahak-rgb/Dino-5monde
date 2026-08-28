@@ -1,0 +1,510 @@
+{
+  "id": "fournitures_scolaires_classe",
+  "level": "A1",
+  "theme": "Fournitures Scolaires et Classe",
+  "theme_fa": "لوازم‌التحریر و کلاس درس",
+  "icon": "🧑‍🏫",
+  "inspiration": "Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "le tableau",
+      "fa": "تخته (سیاه/سفید)",
+      "emoji": "⬛",
+      "difficulty": 1,
+      "ex": "Le professeur écrit au tableau.",
+      "ex_fa": "معلم روی تخته می‌نویسد."
+    },
+    {
+      "fr": "la craie",
+      "fa": "گچ",
+      "emoji": "🖍️",
+      "difficulty": 1,
+      "ex": "Il reste un petit morceau de craie.",
+      "ex_fa": "یک تکه کوچک گچ باقی مانده است."
+    },
+    {
+      "fr": "le feutre",
+      "fa": "ماژیک",
+      "emoji": "🖊️",
+      "difficulty": 1,
+      "ex": "J'ai besoin d'un feutre rouge.",
+      "ex_fa": "من به یک ماژیک قرمز نیاز دارم."
+    },
+    {
+      "fr": "l'effaceur",
+      "fa": "تخته‌پاک‌کن",
+      "emoji": "🧽",
+      "difficulty": 2,
+      "ex": "Utilise l'effaceur pour nettoyer le tableau.",
+      "ex_fa": "برای تمیز کردن تخته از تخته‌پاک‌کن استفاده کن."
+    },
+    {
+      "fr": "la gomme",
+      "fa": "پاک‌کن",
+      "emoji": "🧼",
+      "difficulty": 1,
+      "ex": "Peux-tu me prêter ta gomme ?",
+      "ex_fa": "می‌توانی پاک‌کنت را به من قرض بدهی؟"
+    },
+    {
+      "fr": "le taille-crayon",
+      "fa": "تراش",
+      "emoji": "✏️",
+      "difficulty": 2,
+      "ex": "Le taille-crayon est plein de mine.",
+      "ex_fa": "مخزن تراش پر از مغز مداد است."
+    },
+    {
+      "fr": "le crayon de couleur",
+      "fa": "مداد رنگی",
+      "emoji": "🖍️",
+      "difficulty": 1,
+      "ex": "Nous dessinons avec des crayons de couleur.",
+      "ex_fa": "ما با مداد رنگی نقاشی می‌کنیم."
+    },
+    {
+      "fr": "le crayon à papier",
+      "fa": "مداد",
+      "emoji": "✏️",
+      "difficulty": 1,
+      "ex": "Écris ton nom au crayon à papier.",
+      "ex_fa": "اسمت را با مداد بنویس."
+    },
+    {
+      "fr": "la règle",
+      "fa": "خط‌کش",
+      "emoji": "📏",
+      "difficulty": 1,
+      "ex": "Trace une ligne droite avec la règle.",
+      "ex_fa": "با خط‌کش یک خط صاف بکش."
+    },
+    {
+      "fr": "l'équerre",
+      "fa": "گونیا",
+      "emoji": "📐",
+      "difficulty": 2,
+      "ex": "L'équerre sert à tracer des angles droits.",
+      "ex_fa": "از گونیا برای کشیدن زوایای قائمه استفاده می‌شود."
+    },
+    {
+      "fr": "le compas",
+      "fa": "پرگار",
+      "emoji": "📐",
+      "difficulty": 2,
+      "ex": "Dessine un cercle parfait avec le compas.",
+      "ex_fa": "با پرگار یک دایره کامل بکش."
+    },
+    {
+      "fr": "le rapporteur",
+      "fa": "نقاله",
+      "emoji": "📏",
+      "difficulty": 2,
+      "ex": "Mesure l'angle avec le rapporteur.",
+      "ex_fa": "زاویه را با نقاله اندازه‌گیری کن."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La trousse magique",
+      "title_fa": "جامدادی جادویی",
+      "text": "C'est l'heure du cours de géométrie. J'ouvre ma trousse. Je prends mon ____ (9) pour tracer une ligne. J'utilise l'____ (10) pour faire un angle droit. Pour dessiner un cercle, j'ai besoin du ____ (11). Et pour mesurer l'angle, j'utilise le ____ (12). Si je me trompe avec mon ____ (8), j'utilise la ____ (5). Le professeur écrit la leçon au ____ (1) avec de la ____ (2). Ensuite, il utilise l'____ (4) pour effacer. J'aime bien colorier mon dessin avec un ____ (7) bleu et un ____ (3) rouge.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "tableau",
+          "options": [
+            "tableau",
+            "gomme",
+            "règle",
+            "compas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "craie",
+          "options": [
+            "craie",
+            "feutre",
+            "gomme",
+            "règle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "feutre",
+          "options": [
+            "feutre",
+            "craie",
+            "gomme",
+            "compas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "effaceur",
+          "options": [
+            "effaceur",
+            "taille-crayon",
+            "rapporteur",
+            "équerre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "gomme",
+          "options": [
+            "gomme",
+            "craie",
+            "feutre",
+            "règle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "taille-crayon",
+          "options": [
+            "taille-crayon",
+            "gomme",
+            "compas",
+            "rapporteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "crayon de couleur",
+          "options": [
+            "crayon de couleur",
+            "crayon à papier",
+            "feutre",
+            "craie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "crayon à papier",
+          "options": [
+            "crayon à papier",
+            "crayon de couleur",
+            "feutre",
+            "craie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "règle",
+          "options": [
+            "règle",
+            "gomme",
+            "compas",
+            "rapporteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "équerre",
+          "options": [
+            "équerre",
+            "règle",
+            "compas",
+            "rapporteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "compas",
+          "options": [
+            "compas",
+            "règle",
+            "équerre",
+            "rapporteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "rapporteur",
+          "options": [
+            "rapporteur",
+            "compas",
+            "équerre",
+            "règle"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les outils du créateur",
+      "title_fa": "ابزارهای خالق",
+      "inspiration": "Le Petit Prince",
+      "text": "Sur le grand ____ (1) blanc, tout est possible. La ____ (2) blanche laisse une trace éphémère, tandis que le ____ (3) coloré laisse une marque durable. Si l'erreur se glisse, la douce ____ (5) l'efface sans laisser de trace, et l'____ (4) nettoie le grand espace. Pour créer l'ordre, la ____ (9) impose la droiture. L'____ (10) impose la rigueur des angles. Le ____ (11) trace des mondes ronds et infinis. Et le ____ (12) mesure la courbure de nos rêves. Même le modeste ____ (8) et son fidèle ____ (6) ont leur rôle dans cette magie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "tableau",
+          "options": [
+            "tableau",
+            "gomme",
+            "règle",
+            "compas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "craie",
+          "options": [
+            "craie",
+            "feutre",
+            "gomme",
+            "règle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "feutre",
+          "options": [
+            "feutre",
+            "craie",
+            "gomme",
+            "compas"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "effaceur",
+          "options": [
+            "effaceur",
+            "taille-crayon",
+            "rapporteur",
+            "équerre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "gomme",
+          "options": [
+            "gomme",
+            "craie",
+            "feutre",
+            "règle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "taille-crayon",
+          "options": [
+            "taille-crayon",
+            "gomme",
+            "compas",
+            "rapporteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "crayon de couleur",
+          "options": [
+            "crayon de couleur",
+            "crayon à papier",
+            "feutre",
+            "craie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "crayon à papier",
+          "options": [
+            "crayon à papier",
+            "crayon de couleur",
+            "feutre",
+            "craie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "règle",
+          "options": [
+            "règle",
+            "gomme",
+            "compas",
+            "rapporteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "équerre",
+          "options": [
+            "équerre",
+            "règle",
+            "compas",
+            "rapporteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "compas",
+          "options": [
+            "compas",
+            "règle",
+            "équerre",
+            "rapporteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "rapporteur",
+          "options": [
+            "rapporteur",
+            "compas",
+            "équerre",
+            "règle"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Fournitures Scolaires et Classe",
+    "title_fa": "آزمون: لوازم‌التحریر و کلاس درس",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'objet sur lequel le professeur écrit s'appelle le ____.",
+        "options": [
+          "tableau",
+          "bureau",
+          "mur",
+          "sol"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیئی که معلم روی آن می‌نویسد، تخته (tableau) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour effacer ce qui est écrit au crayon à papier, on utilise une ____.",
+        "options": [
+          "gomme",
+          "craie",
+          "règle",
+          "équerre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای پاک کردن نوشته مداد، از پاک‌کن (gomme) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "L'outil pour tracer une ligne droite est la ____.",
+        "options": [
+          "règle",
+          "gomme",
+          "compas",
+          "craie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار کشیدن خط صاف، خط‌کش (règle) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dessiner un cercle parfait, on utilise un ____.",
+        "options": [
+          "compas",
+          "rapporteur",
+          "équerre",
+          "feutre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای کشیدن یک دایره کامل، از پرگار (compas) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "L'outil pour mesurer les angles s'appelle le ____.",
+        "options": [
+          "rapporteur",
+          "compas",
+          "équerre",
+          "taille-crayon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار اندازه‌گیری زاویه، نقاله (rapporteur) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit outil pour rendre la mine du crayon pointue est le ____.",
+        "options": [
+          "taille-crayon",
+          "gomme",
+          "effaceur",
+          "feutre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ابزار کوچک برای تیز کردن نوک مداد، تراش (taille-crayon) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour écrire de manière permanente et colorée, on utilise un ____.",
+        "options": [
+          "feutre",
+          "crayon à papier",
+          "craie",
+          "gomme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای نوشتن دائمی و رنگی، از ماژیک (feutre) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objet géométrique pour tracer des angles droits (90 degrés) est l'____.",
+        "options": [
+          "équerre",
+          "règle",
+          "compas",
+          "rapporteur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شکل هندسی برای کشیدن زوایای قائمه، گونیا (équerre) است."
+      },
+      {
+        "type": "binary",
+        "question": "« La craie » est utilisée pour écrire sur un tableau noir ou vert.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، گچ (craie) برای نوشتن روی تخته سیاه یا سبز استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« L'effaceur » sert à effacer l'encre d'un stylo.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، effaceur (تخته‌پاک‌کن) برای پاک کردن تخته است، نه جوهر خودکار."
+      }
+    ]
+  }
+}
