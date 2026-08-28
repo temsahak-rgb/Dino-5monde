@@ -1,0 +1,540 @@
+{
+  "id": "metiers_techniques_batiment_services",
+  "level": "A1",
+  "theme": "Métiers Techniques, Bâtiment et Services",
+  "theme_fa": "مشاغل فنی، ساخت‌وساز و خدمات",
+  "icon": "👷",
+  "inspiration": "Les Compagnons du Devoir",
+  "words": [
+    {
+      "fr": "l'agriculteur",
+      "fa": "کشاورز",
+      "emoji": "👨‍🌾",
+      "difficulty": 2,
+      "ex": "L'agriculteur cultive des légumes frais.",
+      "ex_fa": "کشاورز سبزیجات تازه پرورش می‌دهد."
+    },
+    {
+      "fr": "le boucher",
+      "fa": "قصاب",
+      "emoji": "🥩",
+      "difficulty": 2,
+      "ex": "J'achète de la viande chez le boucher.",
+      "ex_fa": "من از قصابی گوشت می‌خرم."
+    },
+    {
+      "fr": "le boulanger",
+      "fa": "نانوا",
+      "emoji": "🥖",
+      "difficulty": 1,
+      "ex": "Le boulanger se lève très tôt le matin.",
+      "ex_fa": "نانوا صبح خیلی زود بیدار می‌شود."
+    },
+    {
+      "fr": "le coiffeur",
+      "fa": "آرایشگر",
+      "emoji": "💇",
+      "difficulty": 1,
+      "ex": "Je vais chez le coiffeur pour couper mes cheveux.",
+      "ex_fa": "من برای کوتاه کردن موهایم به آرایشگاه می‌روم."
+    },
+    {
+      "fr": "le plombier",
+      "fa": "لوله‌کش",
+      "emoji": "🔧",
+      "difficulty": 2,
+      "ex": "Le plombier répare la fuite d'eau.",
+      "ex_fa": "لوله‌کش نشتی آب را تعمیر می‌کند."
+    },
+    {
+      "fr": "l'électricien",
+      "fa": "برق‌کار",
+      "emoji": "⚡",
+      "difficulty": 2,
+      "ex": "L'électricien installe les nouvelles prises.",
+      "ex_fa": "برق‌کار پریزهای جدید را نصب می‌کند."
+    },
+    {
+      "fr": "le charpentier",
+      "fa": "نجار / چوب‌تراش",
+      "emoji": "🪚",
+      "difficulty": 2,
+      "ex": "Le charpentier fabrique des meubles en bois.",
+      "ex_fa": "نجار مبلمان چوبی می‌سازد."
+    },
+    {
+      "fr": "l'architecte",
+      "fa": "معمار",
+      "emoji": "📐",
+      "difficulty": 2,
+      "ex": "L'architecte dessine les plans de la maison.",
+      "ex_fa": "معمار نقشه‌های خانه را طراحی می‌کند."
+    },
+    {
+      "fr": "l'ingénieur",
+      "fa": "مهندس",
+      "emoji": "👷",
+      "difficulty": 2,
+      "ex": "L'ingénieur conçoit des ponts solides.",
+      "ex_fa": "مهندس پل‌های محکم طراحی می‌کند."
+    },
+    {
+      "fr": "le programmeur",
+      "fa": "برنامه‌نویس",
+      "emoji": "💻",
+      "difficulty": 2,
+      "ex": "Le programmeur crée des applications utiles.",
+      "ex_fa": "برنامه‌نویس اپلیکیشن‌های مفید می‌سازد."
+    },
+    {
+      "fr": "le journaliste",
+      "fa": "خبرنگار",
+      "emoji": "🎤",
+      "difficulty": 2,
+      "ex": "Le journaliste écrit des articles pour le journal.",
+      "ex_fa": "خبرنگار برای روزنامه مقاله می‌نویسد."
+    },
+    {
+      "fr": "l'écrivain",
+      "fa": "نویسنده",
+      "emoji": "✍️",
+      "difficulty": 2,
+      "ex": "L'écrivain publie un nouveau roman.",
+      "ex_fa": "نویسنده رمان جدیدی منتشر می‌کند."
+    },
+    {
+      "fr": "l'artiste",
+      "fa": "هنرمند",
+      "emoji": "🎨",
+      "difficulty": 1,
+      "ex": "L'artiste peint des tableaux magnifiques.",
+      "ex_fa": "هنرمند تابلوهای باشکوهی نقاشی می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La construction d'une maison",
+      "title_fa": "ساخت یک خانه",
+      "text": "Pour construire une maison, il faut beaucoup de professionnels. D'abord, l'____ (8) dessine les plans. Ensuite, l'____ (9) calcule la structure. Le ____ (7) fabrique les portes en bois. L'____ (6) installe la lumière et le ____ (5) répare les tuyaux. Pour manger, l'____ (1) cultive les légumes, le ____ (3) fait le pain et le ____ (2) vend la viande. Pour se détendre, on va chez le ____ (4). Pour lire les nouvelles, on lit l'article du ____ (11) ou le livre de l'____ (12). Et pour décorer, on appelle un ____ (13).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "agriculteur",
+          "options": [
+            "agriculteur",
+            "boucher",
+            "boulanger",
+            "coiffeur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "boucher",
+          "options": [
+            "boucher",
+            "agriculteur",
+            "plombier",
+            "écrivain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "boulanger",
+          "options": [
+            "boulanger",
+            "boucher",
+            "charpentier",
+            "artiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "coiffeur",
+          "options": [
+            "coiffeur",
+            "journaliste",
+            "programmeur",
+            "ingénieur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "plombier",
+          "options": [
+            "plombier",
+            "électricien",
+            "architecte",
+            "artiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "électricien",
+          "options": [
+            "électricien",
+            "plombier",
+            "charpentier",
+            "journaliste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "charpentier",
+          "options": [
+            "charpentier",
+            "électricien",
+            "programmeur",
+            "écrivain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "architecte",
+          "options": [
+            "architecte",
+            "ingénieur",
+            "programmeur",
+            "artiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ingénieur",
+          "options": [
+            "ingénieur",
+            "architecte",
+            "journaliste",
+            "écrivain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "programmeur",
+          "options": [
+            "programmeur",
+            "artiste",
+            "écrivain",
+            "journaliste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "journaliste",
+          "options": [
+            "journaliste",
+            "écrivain",
+            "artiste",
+            "programmeur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "écrivain",
+          "options": [
+            "écrivain",
+            "journaliste",
+            "artiste",
+            "programmeur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "artiste",
+          "options": [
+            "artiste",
+            "écrivain",
+            "journaliste",
+            "programmeur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les créateurs du monde moderne",
+      "title_fa": "آفرینندگان دنیای مدرن",
+      "inspiration": "Les Misérables",
+      "text": "Le monde fonctionne grâce à des mains habiles. L'____ (8) imagine l'avenir en dessin. L'____ (9) transforme ce rêve en réalité solide. Le ____ (7) sculpte la matière noble. L'____ (6) dompte l'énergie et le ____ (5) maîtrise l'eau. À la base de tout, l'____ (1) nourrit la terre, le ____ (3) nous donne le pain quotidien et le ____ (2) la force. Le ____ (4) nous embellit. Le ____ (10) code le futur numérique. Le ____ (11) raconte le présent, l'____ (12) invente des mondes, et l'____ (13) capture la beauté de l'âme.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "agriculteur",
+          "options": [
+            "agriculteur",
+            "boucher",
+            "boulanger",
+            "coiffeur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "boucher",
+          "options": [
+            "boucher",
+            "agriculteur",
+            "plombier",
+            "écrivain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "boulanger",
+          "options": [
+            "boulanger",
+            "boucher",
+            "charpentier",
+            "artiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "coiffeur",
+          "options": [
+            "coiffeur",
+            "journaliste",
+            "programmeur",
+            "ingénieur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "plombier",
+          "options": [
+            "plombier",
+            "électricien",
+            "architecte",
+            "artiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "électricien",
+          "options": [
+            "électricien",
+            "plombier",
+            "charpentier",
+            "journaliste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "charpentier",
+          "options": [
+            "charpentier",
+            "électricien",
+            "programmeur",
+            "écrivain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "architecte",
+          "options": [
+            "architecte",
+            "ingénieur",
+            "programmeur",
+            "artiste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ingénieur",
+          "options": [
+            "ingénieur",
+            "architecte",
+            "journaliste",
+            "écrivain"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "programmeur",
+          "options": [
+            "programmeur",
+            "artiste",
+            "écrivain",
+            "journaliste"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "journaliste",
+          "options": [
+            "journaliste",
+            "écrivain",
+            "artiste",
+            "programmeur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "écrivain",
+          "options": [
+            "écrivain",
+            "journaliste",
+            "artiste",
+            "programmeur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "artiste",
+          "options": [
+            "artiste",
+            "écrivain",
+            "journaliste",
+            "programmeur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Métiers Techniques, Bâtiment et Services",
+    "title_fa": "آزمون: مشاغل فنی، ساخت‌وساز و خدمات",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La personne qui cultive la terre et élève des animaux est l'____.",
+        "options": [
+          "agriculteur",
+          "boucher",
+          "boulanger",
+          "coiffeur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که زمین را کشت می‌کند و حیوانات را پرورش می‌دهد، کشاورز (agriculteur) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel qui vend de la viande est le ____.",
+        "options": [
+          "boucher",
+          "boulanger",
+          "plombier",
+          "électricien"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصصی که گوشت می‌فروشد، قصاب (boucher) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui fabrique et vend du pain est le ____.",
+        "options": [
+          "boulanger",
+          "boucher",
+          "charpentier",
+          "artiste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که نان می‌پزد و می‌فروشد، نانوا (boulanger) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le spécialiste qui coupe et coiffe les cheveux est le ____.",
+        "options": [
+          "coiffeur",
+          "journaliste",
+          "programmeur",
+          "ingénieur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصصی که موها را کوتاه و مرتب می‌کند، آرایشگر (coiffeur) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui répare les fuites d'eau et les tuyaux est le ____.",
+        "options": [
+          "plombier",
+          "électricien",
+          "architecte",
+          "artiste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که نشتی آب و لوله‌ها را تعمیر می‌کند، لوله‌کش (plombier) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel qui travaille avec le bois pour faire des meubles est le ____.",
+        "options": [
+          "charpentier",
+          "électricien",
+          "programmeur",
+          "écrivain"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصصی که با چوب کار می‌کند تا مبلمان بسازد، نجار (charpentier) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui dessine les plans des bâtiments est l'____.",
+        "options": [
+          "architecte",
+          "ingénieur",
+          "journaliste",
+          "écrivain"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که نقشه‌های ساختمان‌ها را طراحی می‌کند، معمار (architecte) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel qui écrit des logiciels et des applications est le ____.",
+        "options": [
+          "programmeur",
+          "artiste",
+          "écrivain",
+          "journaliste"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصصی که نرم‌افزار و اپلیکیشن می‌نویسد، برنامه‌نویس (programmeur) است."
+      },
+      {
+        "type": "binary",
+        "question": "Un « journaliste » est une personne qui rapporte les nouvelles et les événements.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، خبرنگار (journaliste) کسی است که اخبار و رویدادها را گزارش می‌دهد."
+      },
+      {
+        "type": "binary",
+        "question": "Un « électricien » s'occupe de réparer les fuites d'eau dans la maison.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، برق‌کار (électricien) با سیستم‌های الکتریکی کار می‌کند، نه لوله‌کشی."
+      }
+    ]
+  }
+}
