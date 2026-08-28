@@ -1,0 +1,404 @@
+{
+  "id": "famille_etendue",
+  "level": "A1",
+  "theme": "Famille Élargie",
+  "theme_fa": "اعضای گسترده خانواده",
+  "icon": "👨‍👩‍👧‍👦",
+  "inspiration": "Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "la cousine",
+      "fa": "دخترعمو/دخترخاله",
+      "emoji": "👧",
+      "difficulty": 1,
+      "ex": "Ma cousine habite à Lyon.",
+      "ex_fa": "دخترعموی من در لیون زندگی می‌کند."
+    },
+    {
+      "fr": "le cousin",
+      "fa": "پسرعمو/پسرخاله",
+      "emoji": "👦",
+      "difficulty": 1,
+      "ex": "Mon cousin joue au football.",
+      "ex_fa": "پسرعموی من فوتبال بازی می‌کند."
+    },
+    {
+      "fr": "la nièce",
+      "fa": "برادرزاده/خواهرزاده (دختر)",
+      "emoji": "👶",
+      "difficulty": 2,
+      "ex": "Ma nièce a trois ans.",
+      "ex_fa": "برادرزاده من سه سال دارد."
+    },
+    {
+      "fr": "le neveu",
+      "fa": "برادرزاده/خواهرزاده (پسر)",
+      "emoji": "👦",
+      "difficulty": 2,
+      "ex": "Mon neveu est très intelligent.",
+      "ex_fa": "خواهرزاده من بسیار باهوش است."
+    },
+    {
+      "fr": "le fils",
+      "fa": "پسر (فرزند)",
+      "emoji": "👦",
+      "difficulty": 1,
+      "ex": "Mon fils aime lire des livres.",
+      "ex_fa": "پسرم دوست دارد کتاب بخواند."
+    },
+    {
+      "fr": "les parents",
+      "fa": "والدین",
+      "emoji": "👨‍👩‍👧",
+      "difficulty": 1,
+      "ex": "Mes parents sont très gentils.",
+      "ex_fa": "والدین من بسیار مهربان هستند."
+    },
+    {
+      "fr": "la belle-mère",
+      "fa": "نامادری / مادرزن / مادرشوهر",
+      "emoji": "👩",
+      "difficulty": 2,
+      "ex": "Ma belle-mère cuisine très bien.",
+      "ex_fa": "مادرشوهر من خیلی خوب آشپزی می‌کند."
+    },
+    {
+      "fr": "le beau-père",
+      "fa": "ناپدری / پدرزن / پدرشوهر",
+      "emoji": "👨",
+      "difficulty": 2,
+      "ex": "Mon beau-père travaille dans une banque.",
+      "ex_fa": "پدرزن من در یک بانک کار می‌کند."
+    },
+    {
+      "fr": "la belle-sœur",
+      "fa": "خواهرزن / خواهرشوهر / زن‌برادر",
+      "emoji": "👩",
+      "difficulty": 2,
+      "ex": "Ma belle-sœur est médecin.",
+      "ex_fa": "زن‌برادر من پزشک است."
+    },
+    {
+      "fr": "le beau-frère",
+      "fa": "برادرزن / برادرشوهر / شوهرخواهر",
+      "emoji": "👨",
+      "difficulty": 2,
+      "ex": "Mon beau-frère habite à Paris.",
+      "ex_fa": "شوهرخواهر من در پاریس زندگی می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le repas de famille",
+      "title_fa": "وعده غذایی خانوادگی",
+      "text": "Dimanche, toute la famille est réunie. Mes ____ (6) sont très heureux. Mon ____ (5) joue avec sa ____ (3) dans le jardin. Mon ____ (4) regarde la télévision avec son ____ (9). Ma ____ (1) et mon ____ (2) arrivent avec leurs enfants. Mon ____ (8) apporte un gâteau délicieux. Ma ____ (7) prépare le café. C'est un moment magique.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cousine",
+          "options": [
+            "cousine",
+            "nièce",
+            "belle-mère",
+            "belle-sœur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "cousin",
+          "options": [
+            "cousin",
+            "neveu",
+            "beau-père",
+            "beau-frère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "nièce",
+          "options": [
+            "nièce",
+            "cousine",
+            "belle-sœur",
+            "parents"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "neveu",
+          "options": [
+            "neveu",
+            "fils",
+            "cousin",
+            "beau-frère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "fils",
+          "options": [
+            "fils",
+            "neveu",
+            "cousin",
+            "beau-père"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "parents",
+          "options": [
+            "parents",
+            "cousins",
+            "neveux",
+            "beaux-frères"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "belle-mère",
+          "options": [
+            "belle-mère",
+            "cousine",
+            "nièce",
+            "belle-sœur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "beau-père",
+          "options": [
+            "beau-père",
+            "fils",
+            "neveu",
+            "cousin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "beau-frère",
+          "options": [
+            "beau-frère",
+            "beau-père",
+            "fils",
+            "neveu"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les racines de l'arbre",
+      "title_fa": "ریشه‌های درخت خانوادگی",
+      "inspiration": "Les Rougon-Macquart",
+      "text": "La famille est un arbre aux nombreuses branches. Les ____ (6) en sont le tronc solide. Le ____ (5) a hérité du regard de son grand-père. Sa ____ (3) et son ____ (4) jouent avec insouciance. La ____ (1) et le ____ (2) partagent des secrets. L'arrivée de la ____ (7) et du ____ (8) a apporté une nouvelle chaleur. Et quand le ____ (9) raconte ses histoires, tout le monde écoute.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "cousine",
+          "options": [
+            "cousine",
+            "nièce",
+            "belle-mère",
+            "belle-sœur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "cousin",
+          "options": [
+            "cousin",
+            "neveu",
+            "beau-père",
+            "beau-frère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "nièce",
+          "options": [
+            "nièce",
+            "cousine",
+            "belle-sœur",
+            "parents"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "neveu",
+          "options": [
+            "neveu",
+            "fils",
+            "cousin",
+            "beau-frère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "fils",
+          "options": [
+            "fils",
+            "neveu",
+            "cousin",
+            "beau-père"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "parents",
+          "options": [
+            "parents",
+            "cousins",
+            "neveux",
+            "beaux-frères"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "belle-mère",
+          "options": [
+            "belle-mère",
+            "cousine",
+            "nièce",
+            "belle-sœur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "beau-père",
+          "options": [
+            "beau-père",
+            "fils",
+            "neveu",
+            "cousin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "beau-frère",
+          "options": [
+            "beau-frère",
+            "beau-père",
+            "fils",
+            "neveu"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Famille Élargie",
+    "title_fa": "آزمون: اعضای گسترده خانواده",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le fils de ton oncle ou de ta tante est ton ____.",
+        "options": [
+          "cousin",
+          "neveu",
+          "beau-frère",
+          "fils"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پسر عمو یا دایی شما، پسرعمو/پسرخاله (cousin) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "La fille de ton frère ou de ta sœur est ta ____.",
+        "options": [
+          "nièce",
+          "cousine",
+          "belle-sœur",
+          "fille"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دختر برادر یا خواهر شما، برادرزاده/خواهرزاده (nièce) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mari de ta sœur est ton ____.",
+        "options": [
+          "beau-frère",
+          "beau-père",
+          "cousin",
+          "neveu"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شوهر خواهر شما، شوهرخواهر (beau-frère) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le père de ton conjoint est ton ____.",
+        "options": [
+          "beau-père",
+          "père",
+          "oncle",
+          "grand-père"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پدر همسر شما، پدرزن یا پدرشوهر (beau-père) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ensemble de ton père et de ta mère s'appelle les ____.",
+        "options": [
+          "parents",
+          "cousins",
+          "beaux-parents",
+          "grands-parents"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مجموع پدر و مادر شما، والدین (parents) نامیده می‌شوند."
+      },
+      {
+        "type": "mcq",
+        "question": "La femme de ton frère est ta ____.",
+        "options": [
+          "belle-sœur",
+          "belle-mère",
+          "cousine",
+          "nièce"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "همسر برادر شما، زن‌برادر (belle-sœur) نامیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« Le neveu » est le fils de ton frère ou de ta sœur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، neveu به معنای برادرزاده یا خواهرزاده پسر است."
+      },
+      {
+        "type": "binary",
+        "question": "« Le fils » signifie la fille de quelqu'un.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، fils به معنای پسر است. دختر، fille نامیده می‌شود."
+      }
+    ]
+  }
+}
