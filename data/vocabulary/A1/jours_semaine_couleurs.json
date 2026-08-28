@@ -1,0 +1,510 @@
+{
+  "id": "jours_semaine_couleurs",
+  "level": "A1",
+  "theme": "Jours de la Semaine et Couleurs",
+  "theme_fa": "روزهای هفته و رنگ‌ها",
+  "icon": "📆",
+  "inspiration": "Le Petit Prince",
+  "words": [
+    {
+      "fr": "lundi",
+      "fa": "دوشنبه",
+      "emoji": "1️⃣",
+      "difficulty": 1,
+      "ex": "Le lundi, je vais au travail.",
+      "ex_fa": "دوشنبه، من به سر کار می‌روم."
+    },
+    {
+      "fr": "mardi",
+      "fa": "سه‌شنبه",
+      "emoji": "2️⃣",
+      "difficulty": 1,
+      "ex": "Mardi, nous avons un cours de français.",
+      "ex_fa": "سه‌شنبه، ما کلاس فرانسوی داریم."
+    },
+    {
+      "fr": "mercredi",
+      "fa": "چهارشنبه",
+      "emoji": "3️⃣",
+      "difficulty": 1,
+      "ex": "Le mercredi après-midi, les enfants ne vont pas à l'école.",
+      "ex_fa": "بعدازظهر چهارشنبه، بچه‌ها به مدرسه نمی‌روند."
+    },
+    {
+      "fr": "jeudi",
+      "fa": "پنج‌شنبه",
+      "emoji": "4️⃣",
+      "difficulty": 1,
+      "ex": "Jeudi soir, je regarde un film.",
+      "ex_fa": "پنج‌شنبه شب، من یک فیلم تماشا می‌کنم."
+    },
+    {
+      "fr": "vendredi",
+      "fa": "جمعه",
+      "emoji": "5️⃣",
+      "difficulty": 1,
+      "ex": "Vendredi, c'est le dernier jour de la semaine de travail.",
+      "ex_fa": "جمعه، آخرین روز هفته کاری است."
+    },
+    {
+      "fr": "samedi",
+      "fa": "شنبه",
+      "emoji": "6️⃣",
+      "difficulty": 1,
+      "ex": "Le samedi, je fais les courses.",
+      "ex_fa": "شنبه، من خرید می‌کنم."
+    },
+    {
+      "fr": "dimanche",
+      "fa": "یکشنبه",
+      "emoji": "7️⃣",
+      "difficulty": 1,
+      "ex": "Le dimanche, on se repose en famille.",
+      "ex_fa": "یکشنبه، ما در کنار خانواده استراحت می‌کنیم."
+    },
+    {
+      "fr": "rouge",
+      "fa": "قرمز",
+      "emoji": "🔴",
+      "difficulty": 1,
+      "ex": "J'aime les pommes rouges.",
+      "ex_fa": "من سیب‌های قرمز را دوست دارم."
+    },
+    {
+      "fr": "bleu",
+      "fa": "آبی",
+      "emoji": "🔵",
+      "difficulty": 1,
+      "ex": "Le ciel est bleu aujourd'hui.",
+      "ex_fa": "آسمان امروز آبی است."
+    },
+    {
+      "fr": "vert",
+      "fa": "سبز",
+      "emoji": "🟢",
+      "difficulty": 1,
+      "ex": "L'herbe est verte au printemps.",
+      "ex_fa": "چمن در بهار سبز است."
+    },
+    {
+      "fr": "jaune",
+      "fa": "زرد",
+      "emoji": "🟡",
+      "difficulty": 1,
+      "ex": "Le soleil est jaune et brillant.",
+      "ex_fa": "خورشید زرد و درخشان است."
+    },
+    {
+      "fr": "noir",
+      "fa": "سیاه",
+      "emoji": "⚫",
+      "difficulty": 1,
+      "ex": "Mon chat est noir comme la nuit.",
+      "ex_fa": "گربه من به شب سیاه است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Ma semaine colorée",
+      "title_fa": "هفته رنگارنگ من",
+      "text": "Ma semaine commence le ____ (1). Je porte une chemise ____ (8). Le ____ (2), je mets un pull ____ (9). Le ____ (3), je vais au parc et je vois l'herbe ____ (10). Le ____ (4), je dessine un soleil ____ (11). Le ____ (5), je suis content car le week-end arrive ! Le ____ (6), je fais du sport en short ____ (12). Et le ____ (7), je me repose à la maison. J'adore ma semaine !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "lundi",
+          "options": [
+            "lundi",
+            "mardi",
+            "mercredi",
+            "jeudi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "mardi",
+          "options": [
+            "mardi",
+            "lundi",
+            "mercredi",
+            "vendredi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "mercredi",
+          "options": [
+            "mercredi",
+            "mardi",
+            "jeudi",
+            "vendredi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "jeudi",
+          "options": [
+            "jeudi",
+            "mercredi",
+            "vendredi",
+            "samedi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "vendredi",
+          "options": [
+            "vendredi",
+            "jeudi",
+            "samedi",
+            "dimanche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "samedi",
+          "options": [
+            "samedi",
+            "vendredi",
+            "dimanche",
+            "lundi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "dimanche",
+          "options": [
+            "dimanche",
+            "samedi",
+            "lundi",
+            "mardi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "rouge",
+          "options": [
+            "rouge",
+            "bleu",
+            "vert",
+            "jaune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "bleu",
+          "options": [
+            "bleu",
+            "rouge",
+            "vert",
+            "noir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "verte",
+          "options": [
+            "verte",
+            "rouge",
+            "bleue",
+            "jaune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "jaune",
+          "options": [
+            "jaune",
+            "vert",
+            "noir",
+            "bleu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "noir",
+          "options": [
+            "noir",
+            "rouge",
+            "vert",
+            "jaune"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les couleurs du temps",
+      "title_fa": "رنگ‌های زمان",
+      "inspiration": "Le Petit Prince",
+      "text": "Le ____ (1) arrive toujours avec une énergie ____ (8). Le ____ (2) apporte un ciel ____ (9) et serein. Le ____ (3), la nature nous offre ses paysages ____ (10). Le ____ (4) nous réchauffe avec sa lumière ____ (11). Le ____ (5) nous prépare au repos. Le ____ (6), nous explorons le monde en tenue ____ (12). Et le ____ (7), tout devient calme et paisible. Chaque jour a sa propre couleur.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "lundi",
+          "options": [
+            "lundi",
+            "mardi",
+            "mercredi",
+            "jeudi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "mardi",
+          "options": [
+            "mardi",
+            "lundi",
+            "mercredi",
+            "vendredi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "mercredi",
+          "options": [
+            "mercredi",
+            "mardi",
+            "jeudi",
+            "vendredi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "jeudi",
+          "options": [
+            "jeudi",
+            "mercredi",
+            "vendredi",
+            "samedi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "vendredi",
+          "options": [
+            "vendredi",
+            "jeudi",
+            "samedi",
+            "dimanche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "samedi",
+          "options": [
+            "samedi",
+            "vendredi",
+            "dimanche",
+            "lundi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "dimanche",
+          "options": [
+            "dimanche",
+            "samedi",
+            "lundi",
+            "mardi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "rouge",
+          "options": [
+            "rouge",
+            "bleu",
+            "vert",
+            "jaune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "bleu",
+          "options": [
+            "bleu",
+            "rouge",
+            "vert",
+            "noir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "verts",
+          "options": [
+            "verts",
+            "rouges",
+            "bleus",
+            "jaunes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "jaune",
+          "options": [
+            "jaune",
+            "vert",
+            "noir",
+            "bleu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "noire",
+          "options": [
+            "noire",
+            "rouge",
+            "verte",
+            "jaune"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Jours de la Semaine et Couleurs",
+    "title_fa": "آزمون: روزهای هفته و رنگ‌ها",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le premier jour de la semaine de travail est ____.",
+        "options": [
+          "lundi",
+          "mardi",
+          "dimanche",
+          "samedi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اولین روز هفته کاری، دوشنبه (lundi) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le jour entre mardi et jeudi est ____.",
+        "options": [
+          "mercredi",
+          "lundi",
+          "vendredi",
+          "samedi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روز بین سه‌شنبه و پنج‌شنبه، چهارشنبه (mercredi) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dernier jour de la semaine est ____.",
+        "options": [
+          "dimanche",
+          "samedi",
+          "vendredi",
+          "lundi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آخرین روز هفته، یکشنبه (dimanche) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La couleur du ciel par temps clair est ____.",
+        "options": [
+          "bleu",
+          "rouge",
+          "vert",
+          "noir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رنگ آسمان در هوای صاف، آبی (bleu) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La couleur des feuilles des arbres au printemps est ____.",
+        "options": [
+          "vert",
+          "rouge",
+          "jaune",
+          "noir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رنگ برگ درختان در بهار، سبز (vert) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La couleur du soleil est généralement représentée en ____.",
+        "options": [
+          "jaune",
+          "bleu",
+          "vert",
+          "noir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رنگ خورشید معمولاً زرد (jaune) نمایش داده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "La couleur opposée au blanc est ____.",
+        "options": [
+          "noir",
+          "rouge",
+          "bleu",
+          "vert"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "رنگ متضاد سفید، سیاه (noir) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le jour de la semaine qui s'appelle « vendredi » est le ____ jour de travail.",
+        "options": [
+          "cinquième",
+          "quatrième",
+          "sixième",
+          "troisième"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روز جمعه (vendredi) پنجمین روز کاری است."
+      },
+      {
+        "type": "binary",
+        "question": "Les jours de la semaine en français commencent par une majuscule (حرف بزرگ).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، روزهای هفته در زبان فرانسوی با حرف کوچک نوشته می‌شوند."
+      },
+      {
+        "type": "binary",
+        "question": "« Rouge » est la couleur des pommes mûres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، rouge (قرمز) رنگ سیب‌های رسیده است."
+      }
+    ]
+  }
+}
