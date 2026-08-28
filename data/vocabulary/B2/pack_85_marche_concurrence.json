@@ -1,0 +1,520 @@
+{
+  "id": "pack_85_marche_concurrence",
+  "level": "B2",
+  "theme": "Marché, concurrence et commerce",
+  "theme_fa": "بازار، رقابت و تجارت",
+  "icon": "💼",
+  "inspiration": "Succession",
+  "words": [
+    {
+      "fr": "le marché (m)",
+      "fa": "بازار",
+      "emoji": "🏪",
+      "difficulty": 2,
+      "ex": "Le marché est très instable en ce moment.",
+      "ex_fa": "بازار در حال حاضر بسیار بی‌ثبات است."
+    },
+    {
+      "fr": "la concurrence (f)",
+      "fa": "رقابت",
+      "emoji": "🏁",
+      "difficulty": 2,
+      "ex": "La concurrence est rude dans ce secteur.",
+      "ex_fa": "رقابت در این بخش شدید است."
+    },
+    {
+      "fr": "concurrentiel/le",
+      "fa": "رقابتی",
+      "emoji": "⚔️",
+      "difficulty": 3,
+      "ex": "C'est un environnement très concurrentiel.",
+      "ex_fa": "این یک محیط بسیار رقابتی است."
+    },
+    {
+      "fr": "l'offre et la demande",
+      "fa": "عرضه و تقاضا",
+      "emoji": "⚖️",
+      "difficulty": 3,
+      "ex": "Les prix dépendent de l'offre et la demande.",
+      "ex_fa": "قیمت‌ها به عرضه و تقاضا بستگی دارند."
+    },
+    {
+      "fr": "la pénurie (f)",
+      "fa": "کمبود شدید",
+      "emoji": "📉",
+      "difficulty": 4,
+      "ex": "Une pénurie de matières premières a éclaté.",
+      "ex_fa": "کمبود شدیدی در مواد اولیه رخ داد."
+    },
+    {
+      "fr": "la surproduction (f)",
+      "fa": "تولید مازاد",
+      "emoji": "📦",
+      "difficulty": 4,
+      "ex": "La surproduction a fait chuter les prix.",
+      "ex_fa": "تولید مازاد باعث سقوط قیمت‌ها شد."
+    },
+    {
+      "fr": "le monopole (m)",
+      "fa": "انحصار",
+      "emoji": "👑",
+      "difficulty": 4,
+      "ex": "Cette entreprise détient un monopole.",
+      "ex_fa": "این شرکت یک انحصار در اختیار دارد."
+    },
+    {
+      "fr": "monopoliser",
+      "fa": "انحصار کردن",
+      "emoji": "🔒",
+      "difficulty": 5,
+      "ex": "Ils cherchent à monopoliser le secteur.",
+      "ex_fa": "آن‌ها به دنبال انحصار کردن این بخش هستند."
+    },
+    {
+      "fr": "la faillite (f)",
+      "fa": "ورشکستگی",
+      "emoji": "💥",
+      "difficulty": 3,
+      "ex": "La faillite de la société a surpris tout le monde.",
+      "ex_fa": "ورشکستگی شرکت همه را غافلگیر کرد."
+    },
+    {
+      "fr": "faire faillite",
+      "fa": "ورشکست شدن",
+      "emoji": "📉",
+      "difficulty": 3,
+      "ex": "Sans aide, ils vont faire faillite.",
+      "ex_fa": "بدون کمک، آن‌ها ورشکست خواهند شد."
+    },
+    {
+      "fr": "le chiffre d'affaires (m)",
+      "fa": "حجم فروش",
+      "emoji": "💰",
+      "difficulty": 3,
+      "ex": "Le chiffre d'affaires a augmenté de 10%.",
+      "ex_fa": "حجم فروش ۱۰ درصد افزایش یافت."
+    },
+    {
+      "fr": "la marge (f)",
+      "fa": "حاشیه (سود)",
+      "emoji": "📊",
+      "difficulty": 4,
+      "ex": "La marge bénéficiaire est trop faible.",
+      "ex_fa": "حاشیه سود بسیار کم است."
+    },
+    {
+      "fr": "rentable",
+      "fa": "سودآور",
+      "emoji": "💵",
+      "difficulty": 3,
+      "ex": "Ce projet n'est pas encore rentable.",
+      "ex_fa": "این پروژه هنوز سودآور نیست."
+    },
+    {
+      "fr": "la rentabilité (f)",
+      "fa": "سودآوری",
+      "emoji": "📈",
+      "difficulty": 4,
+      "ex": "La rentabilité de l'investissement est assurée.",
+      "ex_fa": "سودآوری سرمایه‌گذاری تضمین شده است."
+    },
+    {
+      "fr": "le déficit (m)",
+      "fa": "کسری",
+      "emoji": "🔻",
+      "difficulty": 3,
+      "ex": "Le déficit budgétaire s'est creusé.",
+      "ex_fa": "کسری بودجه عمیق‌تر شد."
+    },
+    {
+      "fr": "l'excédent (m)",
+      "fa": "مازاد",
+      "emoji": "🔺",
+      "difficulty": 4,
+      "ex": "L'excédent commercial a atteint un record.",
+      "ex_fa": "مازاد تجاری به یک رکورد رسید."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La chute de l'entreprise",
+      "title_fa": "سقوط شرکت",
+      "text": "Dans un secteur très compétitif, le {{BLANK_1}} était impitoyable. La jeune start-up faisait face à une rude {{BLANK_2}}. À cause d'une {{BLANK_3}} de matières premières, les coûts ont explosé. Le directeur craignait la {{BLANK_4}} si les ventes ne décollaient pas. Heureusement, le {{BLANK_5}} a augmenté de 20 % ce trimestre. Cependant, la {{BLANK_6}} bénéficiaire restait trop faible pour couvrir les frais. Pour que l'investissement soit {{BLANK_7}}, il fallait réduire les dépenses. Sinon, l'entreprise finirait avec un {{BLANK_8}} insurmontable à la fin de l'année.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "marché",
+          "options": [
+            "marché",
+            "jardin",
+            "silence",
+            "hasard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "concurrence",
+          "options": [
+            "concurrence",
+            "indifférence",
+            "tranquillité",
+            "amitié"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "pénurie",
+          "options": [
+            "pénurie",
+            "abondance",
+            "richesse",
+            "excédent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "faillite",
+          "options": [
+            "faillite",
+            "réussite",
+            "croissance",
+            "expansion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "chiffre d'affaires",
+          "options": [
+            "chiffre d'affaires",
+            "nombre d'employés",
+            "taille des bureaux",
+            "âge des dirigeants"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "marge",
+          "options": [
+            "marge",
+            "couleur",
+            "longueur",
+            "largeur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "rentable",
+          "options": [
+            "rentable",
+            "dangereux",
+            "inutile",
+            "coûteux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "déficit",
+          "options": [
+            "déficit",
+            "bénéfice",
+            "succès",
+            "gain"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les ombres du capitalisme",
+      "title_fa": "سایه‌های سرمایه‌داری",
+      "inspiration": "Succession",
+      "text": "Dans les hautes sphères de la finance, l'environnement était intrinsèquement {{BLANK_9}}. Les dirigeants manipulaient habilement les lois de {{BLANK_10}} pour maximiser leurs gains. Face à une {{BLANK_11}} de produits invendus, ils décidèrent de licencier des centaines d'employés. Leur objectif ultime était d'établir un {{BLANK_12}} sur le secteur technologique. Ils cherchaient à {{BLANK_13}} l'ensemble des chaînes d'approvisionnement, écrasant ainsi toute opposition. Ils savaient qu'une mauvaise décision pouvait les amener à {{BLANK_14}} en quelques mois. La quête effrénée de {{BLANK_15}} les aveuglait sur les conséquences humaines. Finalement, ils affichèrent un {{BLANK_16}} commercial record, mais au prix de leur intégrité.",
+      "blanks": [
+        {
+          "id": 9,
+          "answer": "concurrentiel",
+          "options": [
+            "concurrentiel",
+            "paisible",
+            "généreux",
+            "lent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "l'offre et la demande",
+          "options": [
+            "l'offre et la demande",
+            "la chance et le destin",
+            "l'amitié et la loyauté",
+            "le hasard et la fortune"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "surproduction",
+          "options": [
+            "surproduction",
+            "pénurie",
+            "rareté",
+            "absence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "monopole",
+          "options": [
+            "monopole",
+            "partenariat",
+            "échange",
+            "dialogue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "monopoliser",
+          "options": [
+            "monopoliser",
+            "partager",
+            "distribuer",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "faire faillite",
+          "options": [
+            "faire faillite",
+            "réussir brillamment",
+            "s'enrichir",
+            "se développer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "rentabilité",
+          "options": [
+            "rentabilité",
+            "charité",
+            "générosité",
+            "altruisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "excédent",
+          "options": [
+            "excédent",
+            "déficit",
+            "manque",
+            "perte"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Marché et concurrence",
+    "title_fa": "آزمون : بازار و رقابت",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Les entreprises se battent pour obtenir des parts de ____ dans ce secteur.",
+        "options": [
+          "marché",
+          "jardin",
+          "silence",
+          "hasard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Marché به معنای بازار و فضای فعالیت اقتصادی است."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ entre les deux marques a fait baisser les prix pour les consommateurs.",
+        "options": [
+          "concurrence",
+          "indifférence",
+          "tranquillité",
+          "amitié"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Concurrence یعنی رقابت بین بازیگران یک حوزه."
+      },
+      {
+        "type": "binary",
+        "question": "Un environnement \"concurrentiel\" est un milieu où les acteurs coopèrent sans se soucier des résultats.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، concurrentiel به معنای رقابتی و پرچالش است."
+      },
+      {
+        "type": "mcq",
+        "question": "Les prix des logements dépendent principalement de ____.",
+        "options": [
+          "l'offre et la demande",
+          "la chance et le destin",
+          "l'amitié et la loyauté",
+          "le hasard et la fortune"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "L'offre et la demande اصل بنیادین تعیین قیمت در اقتصاد است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une ____ de semi-conducteurs a ralenti la production mondiale de voitures.",
+        "options": [
+          "pénurie",
+          "abondance",
+          "richesse",
+          "excédent"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Pénurie به معنای کمبود شدید و ناگهانی یک منبع است."
+      },
+      {
+        "type": "binary",
+        "question": "La \"surproduction\" se produit lorsque la quantité de biens fabriqués dépasse largement les besoins des acheteurs.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، surproduction یعنی تولید بیش از حد نیاز بازار."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette multinationale cherche à établir un ____ sur la distribution d'eau potable.",
+        "options": [
+          "monopole",
+          "partenariat",
+          "échange",
+          "dialogue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Monopole یعنی انحصار کامل یک فعالیت اقتصادی توسط یک نهاد."
+      },
+      {
+        "type": "mcq",
+        "question": "Ils tentent de ____ le marché en rachetant tous leurs petits concurrents.",
+        "options": [
+          "monopoliser",
+          "partager",
+          "distribuer",
+          "abandonner"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Monopoliser یعنی در انحصار گرفتن یک بازار یا منبع."
+      },
+      {
+        "type": "binary",
+        "question": "La \"faillite\" est une situation où une entreprise réalise des bénéfices records.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، faillite به معنای ورشکستگی و ناتوانی در پرداخت بدهی‌هاست."
+      },
+      {
+        "type": "mcq",
+        "question": "Sans injection de capitaux, cette startup va ____ d'ici la fin du mois.",
+        "options": [
+          "faire faillite",
+          "réussir brillamment",
+          "s'enrichir",
+          "se développer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Faire faillite یعنی ورشکست شدن."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ de l'entreprise a doublé grâce à la nouvelle gamme de produits.",
+        "options": [
+          "chiffre d'affaires",
+          "nombre d'employés",
+          "taille des bureaux",
+          "âge des dirigeants"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Chiffre d'affaires مجموع فروش یا درآمد یک شرکت است."
+      },
+      {
+        "type": "binary",
+        "question": "La \"marge\" bénéficiaire représente la différence entre le prix de vente et le coût de production.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، marge به معنای حاشیه سود است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour qu'une entreprise survive à long terme, son modèle économique doit être ____.",
+        "options": [
+          "rentable",
+          "dangereux",
+          "inutile",
+          "coûteux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Rentable یعنی سودآور و توجیه‌پذیر از نظر مالی."
+      },
+      {
+        "type": "mcq",
+        "question": "Les investisseurs analysent la ____ du projet avant d'y injecter des fonds.",
+        "options": [
+          "rentabilité",
+          "charité",
+          "générosité",
+          "altruisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Rentabilité یعنی توانایی یک سرمایه‌گذاری در ایجاد سود."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"déficit\" budgétaire signifie que les recettes de l'État sont supérieures à ses dépenses.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، déficit یعنی کسری، جایی که هزینه‌ها از درآمدها بیشتر است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays a enregistré un ____ commercial important grâce à ses exportations.",
+        "options": [
+          "excédent",
+          "déficit",
+          "manque",
+          "perte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Excédent به معنای مازاد، جایی که درآمدها از هزینه‌ها بیشتر است."
+      }
+    ]
+  }
+}
