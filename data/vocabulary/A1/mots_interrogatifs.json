@@ -1,0 +1,410 @@
+{
+  "id": "mots_interrogatifs",
+  "level": "A1",
+  "theme": "Mots Interrogatifs",
+  "theme_fa": "کلمات پرسشی",
+  "icon": "❓",
+  "inspiration": "Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "qui",
+      "fa": "چه کسی",
+      "emoji": "👤",
+      "difficulty": 1,
+      "ex": "Qui est à la porte ?",
+      "ex_fa": "چه کسی پشت در است؟"
+    },
+    {
+      "fr": "quoi",
+      "fa": "چه چیز",
+      "emoji": "🤔",
+      "difficulty": 1,
+      "ex": "Tu fais quoi ce week-end ?",
+      "ex_fa": "این آخر هفته چه کار می‌کنی؟"
+    },
+    {
+      "fr": "quel",
+      "fa": "کدام / چه",
+      "emoji": "❓",
+      "difficulty": 1,
+      "ex": "Quel âge as-tu ?",
+      "ex_fa": "چند سال داری؟"
+    },
+    {
+      "fr": "combien",
+      "fa": "چقدر / چند",
+      "emoji": "💰",
+      "difficulty": 1,
+      "ex": "Combien ça coûte ?",
+      "ex_fa": "این چقدر قیمت دارد؟"
+    },
+    {
+      "fr": "comment",
+      "fa": "چطور",
+      "emoji": "🛠️",
+      "difficulty": 1,
+      "ex": "Comment vas-tu aujourd'hui ?",
+      "ex_fa": "امروز حالت چطور است؟"
+    },
+    {
+      "fr": "où",
+      "fa": "کجا",
+      "emoji": "📍",
+      "difficulty": 1,
+      "ex": "Où habites-tu ?",
+      "ex_fa": "کجا زندگی می‌کنی؟"
+    },
+    {
+      "fr": "quand",
+      "fa": "چه زمانی",
+      "emoji": "🕰️",
+      "difficulty": 1,
+      "ex": "Quand pars-tu en vacances ?",
+      "ex_fa": "چه زمانی به تعطیلات می‌روی؟"
+    },
+    {
+      "fr": "pourquoi",
+      "fa": "چرا",
+      "emoji": "🧐",
+      "difficulty": 1,
+      "ex": "Pourquoi tu pleures ?",
+      "ex_fa": "چرا گریه می‌کنی؟"
+    },
+    {
+      "fr": "lequel",
+      "fa": "کدام‌یک",
+      "emoji": "👉",
+      "difficulty": 2,
+      "ex": "Lequel de ces livres tu préfères ?",
+      "ex_fa": "کدام‌یک از این کتاب‌ها را ترجیح می‌دهی؟"
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les questions de Nicolas",
+      "title_fa": "سؤالات نیکولا",
+      "text": "Aujourd'hui, j'ai beaucoup de questions ! ____ (1) est mon nouveau professeur ? ____ (6) est l'école ? ____ (8) est-ce que les vacances commencent ? ____ (4) coûte un nouveau ballon ? ____ (5) on joue au football ? ____ (2) tu manges à la cantine ? ____ (3) est ton plat préféré ? ____ (7) tu ne manges pas de légumes ? Et ____ (9) de ces desserts tu choisis ? J'espère avoir les réponses bientôt !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Qui",
+          "options": [
+            "Qui",
+            "Quoi",
+            "Où",
+            "Quand"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "Où",
+          "options": [
+            "Où",
+            "Qui",
+            "Comment",
+            "Pourquoi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Quand",
+          "options": [
+            "Quand",
+            "Où",
+            "Qui",
+            "Lequel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Combien",
+          "options": [
+            "Combien",
+            "Comment",
+            "Quoi",
+            "Quel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Comment",
+          "options": [
+            "Comment",
+            "Pourquoi",
+            "Quand",
+            "Qui"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Quoi",
+          "options": [
+            "Quoi",
+            "Qui",
+            "Lequel",
+            "Combien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Quel",
+          "options": [
+            "Quel",
+            "Quoi",
+            "Lequel",
+            "Où"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Pourquoi",
+          "options": [
+            "Pourquoi",
+            "Comment",
+            "Quand",
+            "Qui"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "lequel",
+          "options": [
+            "lequel",
+            "quoi",
+            "qui",
+            "où"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La quête des réponses",
+      "title_fa": "جست‌وجوی پاسخ‌ها",
+      "inspiration": "Le Petit Prince",
+      "text": "La vie est pleine de mystères. ____ (1) sommes-nous vraiment ? ____ (6) allons-nous après ce voyage ? ____ (8) le soleil se couche-t-il chaque soir ? ____ (4) d'étoiles brillent dans le ciel ? ____ (5) trouve-t-on le bonheur ? Parfois, on ne sait pas ____ (2) dire. ____ (3) est le chemin le plus sûr ? ____ (7) tant de gens sont pressés ? Et finalement, ____ (9) de ces chemins mène à la vérité ?",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Qui",
+          "options": [
+            "Qui",
+            "Quoi",
+            "Où",
+            "Quand"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "quoi",
+          "options": [
+            "quoi",
+            "qui",
+            "lequel",
+            "où"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Quel",
+          "options": [
+            "Quel",
+            "Quoi",
+            "Lequel",
+            "Où"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Combien",
+          "options": [
+            "Combien",
+            "Comment",
+            "Quoi",
+            "Quel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Comment",
+          "options": [
+            "Comment",
+            "Pourquoi",
+            "Quand",
+            "Qui"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Où",
+          "options": [
+            "Où",
+            "Qui",
+            "Comment",
+            "Pourquoi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Pourquoi",
+          "options": [
+            "Pourquoi",
+            "Comment",
+            "Quand",
+            "Qui"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Quand",
+          "options": [
+            "Quand",
+            "Où",
+            "Qui",
+            "Lequel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "lequel",
+          "options": [
+            "lequel",
+            "quoi",
+            "qui",
+            "où"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Mots Interrogatifs",
+    "title_fa": "آزمون: کلمات پرسشی",
+    "displayCount": 9,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Pour demander l'identité d'une personne, on utilise ____.",
+        "options": [
+          "qui",
+          "quoi",
+          "où",
+          "quand"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای پرسیدن هویت یک شخص، از qui (چه کسی) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour demander un objet ou une chose, on utilise ____.",
+        "options": [
+          "quoi",
+          "qui",
+          "où",
+          "quand"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای پرسیدن درباره یک شیء یا چیز، از quoi (چه چیز) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour demander un prix ou une quantité, on utilise ____.",
+        "options": [
+          "combien",
+          "comment",
+          "pourquoi",
+          "quel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای پرسیدن قیمت یا مقدار، از combien (چقدر/چند) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour demander une manière ou une méthode, on utilise ____.",
+        "options": [
+          "comment",
+          "pourquoi",
+          "quand",
+          "où"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای پرسیدن روش یا چگونگی، از comment (چطور) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour demander un lieu, on utilise ____.",
+        "options": [
+          "où",
+          "quand",
+          "qui",
+          "quoi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای پرسیدن مکان، از où (کجا) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour demander un moment ou une date, on utilise ____.",
+        "options": [
+          "quand",
+          "où",
+          "qui",
+          "quoi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای پرسیدن زمان یا تاریخ، از quand (چه زمانی) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour demander une raison, on utilise ____.",
+        "options": [
+          "pourquoi",
+          "comment",
+          "quand",
+          "où"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای پرسیدن دلیل یا علت، از pourquoi (چرا) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour choisir entre plusieurs options, on utilise ____.",
+        "options": [
+          "lequel",
+          "qui",
+          "quoi",
+          "où"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای انتخاب بین چند گزینه، از lequel (کدام‌یک) استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« Quel » s'accorde en genre et en nombre avec le nom qu'il accompagne (quel, quelle, quels, quelles).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، quel از نظر جنسیت و تعداد با اسمی که همراه آن می‌آید مطابقت دارد."
+      }
+    ]
+  }
+}
