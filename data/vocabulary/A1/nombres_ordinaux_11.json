@@ -1,13 +1,13 @@
 {
   "id": "nombres_ordinaux_11",
   "level": "A1",
-  "theme": "Nombres Ordinaux (11e à 16e)",
-  "theme_fa": "اعداد ترتیبی (یازدهم تا شانزدهم)",
+  "theme": "Nombres Ordinaux (11e à 20e)",
+  "theme_fa": "اعداد ترتیبی (یازدهم تا بیستم)",
   "icon": "🥇",
   "inspiration": "Le Petit Nicolas",
   "words": [
     {
-      "fr": "onzième",
+      "fr": "le onzième",
       "fa": "یازدهم",
       "emoji": "1️⃣1️⃣",
       "difficulty": 2,
@@ -15,7 +15,7 @@
       "ex_fa": "این یازدهمین روز ماه است."
     },
     {
-      "fr": "douzième",
+      "fr": "le douzième",
       "fa": "دوازدهم",
       "emoji": "1️⃣2️⃣",
       "difficulty": 2,
@@ -23,7 +23,7 @@
       "ex_fa": "دسامبر دوازدهمین ماه سال است."
     },
     {
-      "fr": "treizième",
+      "fr": "le treizième",
       "fa": "سیزدهم",
       "emoji": "1️⃣3️⃣",
       "difficulty": 2,
@@ -31,15 +31,15 @@
       "ex_fa": "قرن سیزدهم شگفت‌انگیز بود."
     },
     {
-      "fr": "quatorzième",
+      "fr": "le quatorzième",
       "fa": "چهاردهم",
       "emoji": "1️⃣4️⃣",
       "difficulty": 2,
-      "ex": "Le quatorze juillet est la fête nationale.",
-      "ex_fa": "چهارده ژوئیه جشن ملی است."
+      "ex": "Le quatorzième juillet est la fête nationale.",
+      "ex_fa": "چهاردهم ژوئیه جشن ملی است."
     },
     {
-      "fr": "quinzième",
+      "fr": "le quinzième",
       "fa": "پانزدهم",
       "emoji": "1️⃣5️⃣",
       "difficulty": 2,
@@ -47,19 +47,51 @@
       "ex_fa": "این پانزدهمین سالگرد تولد من است!"
     },
     {
-      "fr": "seizième",
+      "fr": "le seizième",
       "fa": "شانزدهم",
       "emoji": "1️⃣6️⃣",
       "difficulty": 2,
       "ex": "Il habite dans le seizième arrondissement de Paris.",
       "ex_fa": "او در منطقه شانزدهم پاریس زندگی می‌کند."
+    },
+    {
+      "fr": "le dix-septième",
+      "fa": "هفدهم",
+      "emoji": "1️⃣7️⃣",
+      "difficulty": 2,
+      "ex": "Nous sommes au dix-septième étage.",
+      "ex_fa": "ما در طبقه هفدهم هستیم."
+    },
+    {
+      "fr": "le dix-huitième",
+      "fa": "هجدهم",
+      "emoji": "1️⃣8️⃣",
+      "difficulty": 2,
+      "ex": "Le dix-huitième siècle est le siècle des Lumières.",
+      "ex_fa": "قرن هجدهم، قرن روشنگری است."
+    },
+    {
+      "fr": "le dix-neuvième",
+      "fa": "نوزدهم",
+      "emoji": "1️⃣9️⃣",
+      "difficulty": 2,
+      "ex": "C'est la dix-neuvième fois que je te le dis.",
+      "ex_fa": "این نوزدهمین باری است که به تو می‌گویم."
+    },
+    {
+      "fr": "le vingtième",
+      "fa": "بیستم",
+      "emoji": "2️⃣0️⃣",
+      "difficulty": 2,
+      "ex": "Le vingtième siècle a connu deux guerres mondiales.",
+      "ex_fa": "قرن بیستم دو جنگ جهانی را به خود دیده است."
     }
   ],
   "stories": {
     "simple": {
-      "title": "Un long voyage",
-      "title_fa": "یک سفر طولانی",
-      "text": "Notre voyage a duré longtemps. Le ____ (1) jour, il a plu. Le ____ (2) jour, nous avons vu la mer. Le ____ (3) jour, nous avons visité un vieux château du ____ (4) siècle. Le ____ (5) jour, c'était mon anniversaire, j'ai eu 15 ans ! Et enfin, le ____ (6) jour, nous sommes rentrés à la maison, fatigués mais heureux.",
+      "title": "Un long voyage en train",
+      "title_fa": "یک سفر طولانی با قطار",
+      "text": "Notre voyage en train a duré longtemps. Le ____ (1) jour, il a plu. Le ____ (2) jour, nous avons vu la mer. Le ____ (3) jour, nous avons visité un vieux château du ____ (4) siècle. Le ____ (5) jour, c'était mon anniversaire, j'ai eu 15 ans ! Le ____ (6) jour, nous étions au ____ (7) étage de l'hôtel. Le ____ (8) jour, nous avons appris l'histoire du ____ (9) siècle. Le ____ (10) jour, nous sommes enfin rentrés à la maison, fatigués mais heureux.",
       "blanks": [
         {
           "id": 1,
@@ -122,18 +154,62 @@
           "options": [
             "seizième",
             "quinzième",
-            "dixième",
+            "dix-septième",
             "sixième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "dix-septième",
+          "options": [
+            "dix-septième",
+            "dix-huitième",
+            "dix-neuvième",
+            "vingtième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dix-huitième",
+          "options": [
+            "dix-huitième",
+            "dix-septième",
+            "dix-neuvième",
+            "huitième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "dix-neuvième",
+          "options": [
+            "dix-neuvième",
+            "dix-huitième",
+            "vingtième",
+            "neuvième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "vingtième",
+          "options": [
+            "vingtième",
+            "dix-neuvième",
+            "dixième",
+            "deuxième"
           ],
           "correctIndex": 0
         }
       ]
     },
     "literary": {
-      "title": "Les marches du palais",
-      "title_fa": "پله‌های قصر",
+      "title": "Les marches du temps",
+      "title_fa": "پله‌های زمان",
       "inspiration": "Le Comte de Monte-Cristo",
-      "text": "Pour atteindre le sommet de la tour, il fallait gravir de nombreuses marches. Jusqu'à la dixième, c'était facile. Mais à la ____ (1) marche, le souffle commençait à manquer. À la ____ (2), les jambes tremblaient un peu. En atteignant la ____ (3) marche, j'ai regardé par la fenêtre et vu le monde d'en haut. La ____ (4) marche était ornée d'une vieille sculpture. La ____ (5) marche grinçait sous mes pas. Et enfin, la ____ (6) marche m'a conduit à la porte du trésor, là où le secret était gardé depuis des siècles.",
+      "text": "L'histoire est un escalier infini. Au ____ (1) siècle, les chevaliers régnaient. Au ____ (2) siècle, les cathédrales touchaient le ciel. Au ____ (3) siècle, la peste a frappé l'Europe. Au ____ (4) siècle, la France a célébré sa révolution. Au ____ (5) siècle, les rois absolus ont construit Versailles. Au ____ (6) siècle, l'industrialisation a changé le monde. Au ____ (7) siècle, les romantiques ont pleuré et aimé. Au ____ (8) siècle, les inventions ont accéléré le temps. Au ____ (9) siècle, les empires sont tombés. Et enfin, au ____ (10) siècle, nous avons appris à voyager dans l'espace.",
       "blanks": [
         {
           "id": 1,
@@ -196,8 +272,52 @@
           "options": [
             "seizième",
             "quinzième",
-            "dixième",
+            "dix-septième",
             "sixième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "dix-septième",
+          "options": [
+            "dix-septième",
+            "dix-huitième",
+            "dix-neuvième",
+            "huitième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dix-huitième",
+          "options": [
+            "dix-huitième",
+            "dix-septième",
+            "dix-neuvième",
+            "huitième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "dix-neuvième",
+          "options": [
+            "dix-neuvième",
+            "dix-huitième",
+            "vingtième",
+            "neuvième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "vingtième",
+          "options": [
+            "vingtième",
+            "dix-neuvième",
+            "dixième",
+            "deuxième"
           ],
           "correctIndex": 0
         }
@@ -205,9 +325,9 @@
     }
   },
   "quiz": {
-    "title": "Quiz : Nombres Ordinaux (11e à 16e)",
-    "title_fa": "آزمون: اعداد ترتیبی (یازدهم تا شانزدهم)",
-    "displayCount": 6,
+    "title": "Quiz : Nombres Ordinaux (11e à 20e)",
+    "title_fa": "آزمون: اعداد ترتیبی (یازدهم تا بیستم)",
+    "displayCount": 8,
     "questions": [
       {
         "type": "mcq",
@@ -249,13 +369,13 @@
         "type": "mcq",
         "question": "La fête nationale française est le ____ juillet.",
         "options": [
-          "quatorze (quatorzième)",
+          "quatorzième",
           "quatre",
           "quatrième",
-          "quinze"
+          "quinzième"
         ],
         "correctIndex": 0,
-        "explanation_fa": "جشن ملی فرانسه در چهاردهم (quatorze / quatorzième) ژوئیه است."
+        "explanation_fa": "جشن ملی فرانسه در چهاردهم (quatorzième) ژوئیه است."
       },
       {
         "type": "mcq",
@@ -270,6 +390,18 @@
         "explanation_fa": "برای گفتن پانزدهمین سالگرد، از quinzième استفاده می‌شود."
       },
       {
+        "type": "mcq",
+        "question": "Le siècle des Lumières (قرن روشنگری) est le ____ siècle.",
+        "options": [
+          "dix-huitième",
+          "dix-septième",
+          "dix-neuvième",
+          "vingtième"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قرن روشنگری، قرن هجدهم (dix-huitième) است."
+      },
+      {
         "type": "binary",
         "question": "Le mot « seizième » correspond au nombre 16.",
         "options": [
@@ -278,6 +410,16 @@
         ],
         "correctIndex": 0,
         "explanation_fa": "بله، seizième صفت ترتیبی برای عدد ۱۶ است."
+      },
+      {
+        "type": "binary",
+        "question": "« Vingtième » signifie 100e.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، vingtième به معنای بیستم (20e) است. صدیم centième است."
       }
     ]
   }
