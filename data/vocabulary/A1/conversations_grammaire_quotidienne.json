@@ -1,0 +1,576 @@
+{
+  "id": "conversations_grammaire_quotidienne",
+  "level": "A1",
+  "theme": "Conversations Quotidiennes et Structures Grammaticales",
+  "theme_fa": "مکالمات روزمره و ساختارهای گرامری",
+  "icon": "🗣️",
+  "inspiration": "French in Action / Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "mais",
+      "fa": "اما / ولی",
+      "emoji": "⛔",
+      "difficulty": 1,
+      "ex": "Je veux venir, mais je suis fatigué.",
+      "ex_fa": "می‌خواهم بیایم، ولی خسته‌ام."
+    },
+    {
+      "fr": "ne...pas",
+      "fa": "نه (منفی‌ساز ساده)",
+      "emoji": "🚫",
+      "difficulty": 1,
+      "ex": "Je ne veux pas sortir ce soir.",
+      "ex_fa": "من امشب نمی‌خواهم بیرون بروم."
+    },
+    {
+      "fr": "ne...personne",
+      "fa": "هیچ‌کس (منفی)",
+      "emoji": "🚶‍♂️",
+      "difficulty": 2,
+      "ex": "Il n'y a personne dans la rue.",
+      "ex_fa": "هیچ‌کس در خیابان نیست."
+    },
+    {
+      "fr": "ne...plus",
+      "fa": "دیگر نه (منفی)",
+      "emoji": "⏹️",
+      "difficulty": 2,
+      "ex": "Je ne fume plus depuis un an.",
+      "ex_fa": "من از یک سال پیش دیگر سیگار نمی‌کشم."
+    },
+    {
+      "fr": "ne...jamais",
+      "fa": "هرگز (منفی)",
+      "emoji": "⛔",
+      "difficulty": 2,
+      "ex": "Je ne mange jamais de viande le lundi.",
+      "ex_fa": "من دوشنبه‌ها هرگز گوشت نمی‌خورم."
+    },
+    {
+      "fr": "ne...rien",
+      "fa": "هیچ‌چیز (منفی)",
+      "emoji": "🚷",
+      "difficulty": 2,
+      "ex": "Je ne dis rien, je garde le secret.",
+      "ex_fa": "من هیچ‌چیزی نمی‌گویم، راز را نگه می‌دارم."
+    },
+    {
+      "fr": "n'importe quoi",
+      "fa": "چرت و پرت / هرچیزی",
+      "emoji": "🤪",
+      "difficulty": 3,
+      "ex": "Tu dis n'importe quoi, ce n'est pas vrai !",
+      "ex_fa": "تو داری چرت و پرت می‌گویی، این درست نیست!"
+    },
+    {
+      "fr": "non",
+      "fa": "نه",
+      "emoji": "❌",
+      "difficulty": 1,
+      "ex": "Non, merci, je n'ai pas faim.",
+      "ex_fa": "نه، ممنون، من گرسنه نیستم."
+    },
+    {
+      "fr": "ou",
+      "fa": "یا",
+      "emoji": "🔀",
+      "difficulty": 1,
+      "ex": "Tu veux du thé ou du café ?",
+      "ex_fa": "چای می‌خواهی یا قهوه؟"
+    },
+    {
+      "fr": "où",
+      "fa": "کجا",
+      "emoji": "📍",
+      "difficulty": 1,
+      "ex": "Où habites-tu ?",
+      "ex_fa": "کجا زندگی می‌کنی؟"
+    },
+    {
+      "fr": "ouais",
+      "fa": "آره (عامیانه)",
+      "emoji": "👍",
+      "difficulty": 2,
+      "ex": "Ouais, je viens avec toi !",
+      "ex_fa": "آره، من با تو می‌آیم!"
+    },
+    {
+      "fr": "oublier",
+      "fa": "فراموش کردن",
+      "emoji": "🧠",
+      "difficulty": 1,
+      "ex": "J'ai oublié mes clés à la maison.",
+      "ex_fa": "من کلیدهایم را در خانه فراموش کردم."
+    },
+    {
+      "fr": "oui",
+      "fa": "بله",
+      "emoji": "✅",
+      "difficulty": 1,
+      "ex": "Oui, bien sûr, je t'aide.",
+      "ex_fa": "بله، حتماً، من به تو کمک می‌کنم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une conversation au café",
+      "title_fa": "یک مکالمه در کافه",
+      "text": "– Salut ! Tu veux aller au cinéma ?\n– ____ (13), je suis désolé, ____ (1) je suis très fatigué.\n– Ah, d'accord. Tu veux du café ____ (9) du thé ?\n– ____ (8), merci. Je ____ (2) bois pas de café le soir.\n– Tu ne manges ____ (5) de chocolat ?\n– Non, je ne mange ____ (6) de sucré après 20h. Et je ne parle ____ (4) de régime, c'est fini !\n– Tu dis ____ (7) !\n– Je te jure ! Au fait, ____ (10) est mon téléphone ?\n– Tu l'as ____ (12) sur la table.\n– Ah, ____ (11), le voilà ! Il n'y a ____ (3) d'autre ici pour m'aider à chercher.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "mais",
+          "options": [
+            "mais",
+            "ou",
+            "où",
+            "oui"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ne...pas",
+          "options": [
+            "ne...pas",
+            "ne...jamais",
+            "ne...plus",
+            "ne...rien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "personne",
+          "options": [
+            "personne",
+            "rien",
+            "jamais",
+            "plus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "plus",
+          "options": [
+            "plus",
+            "pas",
+            "jamais",
+            "rien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "jamais",
+          "options": [
+            "jamais",
+            "pas",
+            "plus",
+            "rien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "rien",
+          "options": [
+            "rien",
+            "personne",
+            "jamais",
+            "plus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "n'importe quoi",
+          "options": [
+            "n'importe quoi",
+            "oui",
+            "non",
+            "ouais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Non",
+          "options": [
+            "Non",
+            "Oui",
+            "Ouais",
+            "Mais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ou",
+          "options": [
+            "ou",
+            "où",
+            "mais",
+            "oui"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "où",
+          "options": [
+            "où",
+            "ou",
+            "oui",
+            "non"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "ouais",
+          "options": [
+            "ouais",
+            "non",
+            "mais",
+            "où"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "oublié",
+          "options": [
+            "oublié",
+            "mangé",
+            "bu",
+            "vu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "Non",
+          "options": [
+            "Non",
+            "Oui",
+            "Ouais",
+            "Mais"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les doutes de la mémoire",
+      "title_fa": "شک‌های حافظه",
+      "inspiration": "Le Petit Prince",
+      "text": "Je voulais partir, ____ (1) mes jambes refusaient de bouger. Je ____ (2) savais ____ (2) où aller. La rue était déserte, il n'y avait ____ (3) pour m'indiquer le chemin. Je ____ (4) croyais ____ (4) aux cartes, elles m'avaient déjà trompé. Je ne disais ____ (6), de peur de dire ____ (7). \"____ (8),\" murmurai-je, \"ce n'est pas la bonne direction.\" Devais-je tourner à gauche ____ (9) à droite ? ____ (10) étais-je vraiment ? J'avais ____ (12) mon destin quelque part entre les étoiles. \"____ (11),\" soupira une voix intérieure, \"tu as tout ____ (12).\" Et pourtant, au fond de moi, une petite voix répondait : \"____ (13), tout est encore possible.\"",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "mais",
+          "options": [
+            "mais",
+            "ou",
+            "où",
+            "oui"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ne...pas",
+          "options": [
+            "ne...pas",
+            "ne...jamais",
+            "ne...plus",
+            "ne...rien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "personne",
+          "options": [
+            "personne",
+            "rien",
+            "jamais",
+            "plus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "ne...croyais plus",
+          "options": [
+            "ne...croyais plus",
+            "ne...croyais pas",
+            "ne...croyais jamais",
+            "ne...croyais rien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "jamais",
+          "options": [
+            "jamais",
+            "pas",
+            "plus",
+            "rien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "rien",
+          "options": [
+            "rien",
+            "personne",
+            "jamais",
+            "plus"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "n'importe quoi",
+          "options": [
+            "n'importe quoi",
+            "oui",
+            "non",
+            "ouais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Non",
+          "options": [
+            "Non",
+            "Oui",
+            "Ouais",
+            "Mais"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "ou",
+          "options": [
+            "ou",
+            "où",
+            "mais",
+            "oui"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Où",
+          "options": [
+            "Où",
+            "Ou",
+            "Oui",
+            "Non"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "Ouais",
+          "options": [
+            "Ouais",
+            "Non",
+            "Mais",
+            "Où"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "oublié",
+          "options": [
+            "oublié",
+            "mangé",
+            "bu",
+            "vu"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "Oui",
+          "options": [
+            "Oui",
+            "Non",
+            "Ouais",
+            "Mais"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Conversations Quotidiennes et Grammaire",
+    "title_fa": "آزمون: مکالمات روزمره و گرامر",
+    "displayCount": 13,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le mot pour introduire une opposition (but) est ____.",
+        "options": [
+          "mais",
+          "ou",
+          "où",
+          "oui"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه‌ای برای معرفی تضاد، mais (اما/ولی) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour faire une phrase négative simple, on utilise ____.",
+        "options": [
+          "ne...pas",
+          "ne...jamais",
+          "ne...plus",
+          "ne...rien"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای منفی کردن ساده جمله از ne...pas استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « هیچ‌کس » dans une phrase négative, on utilise ____.",
+        "options": [
+          "ne...personne",
+          "ne...rien",
+          "ne...jamais",
+          "ne...plus"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای گفتن «هیچ‌کس» در جمله منفی از ne...personne استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire que tu as arrêté une habitude (« دیگر نه »), tu utilises ____.",
+        "options": [
+          "ne...plus",
+          "ne...pas",
+          "ne...jamais",
+          "ne...rien"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای بیان ترک یک عادت (دیگر نه) از ne...plus استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « هرگز », on utilise ____.",
+        "options": [
+          "ne...jamais",
+          "ne...pas",
+          "ne...plus",
+          "ne...rien"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای بیان «هرگز» از ne...jamais استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « هیچ‌چیز » dans une négation, on utilise ____.",
+        "options": [
+          "ne...rien",
+          "ne...personne",
+          "ne...jamais",
+          "ne...plus"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای بیان «هیچ‌چیز» در منفی کردن از ne...rien استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Une expression familière pour dire que quelqu'un dit des absurdités est : Tu dis ____ !",
+        "options": [
+          "n'importe quoi",
+          "oui",
+          "non",
+          "ouais"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یک عبارت عامیانه برای گفتن اینکه کسی حرف‌های بی‌ربط می‌زند: Tu dis n'importe quoi!"
+      },
+      {
+        "type": "mcq",
+        "question": "La réponse négative simple à une question est ____.",
+        "options": [
+          "non",
+          "oui",
+          "ouais",
+          "mais"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پاسخ منفی ساده به یک سؤال، non (نه) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour proposer un choix entre deux choses, on utilise ____.",
+        "options": [
+          "ou",
+          "où",
+          "oui",
+          "non"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای پیشنهاد انتخاب بین دو چیز از ou (یا) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mot pour demander un lieu (« کجا ») est ____.",
+        "options": [
+          "où",
+          "ou",
+          "oui",
+          "non"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه‌ای برای پرسیدن مکان (کجا)، où است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le verbe qui signifie « فراموش کردن » est ____.",
+        "options": [
+          "oublier",
+          "ouvrir",
+          "monter",
+          "montrer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعلی که به معنای فراموش کردن است، oublier می‌باشد."
+      },
+      {
+        "type": "binary",
+        "question": "« Ouais » est une façon familière et décontractée de dire « oui ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، ouais شکل عامیانه و غیررسمی oui است."
+      },
+      {
+        "type": "binary",
+        "question": "Dans la négation, « ne...personne » s'utilise pour les objets, et « ne...rien » pour les personnes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، برعکس است: ne...personne برای افراد و ne...rien برای اشیاء استفاده می‌شود."
+      }
+    ]
+  }
+}
