@@ -1,0 +1,377 @@
+{
+  "id": "pronoms_toniques",
+  "level": "A1",
+  "theme": "Pronoms Toniques",
+  "theme_fa": "ضمایر تأکیدی",
+  "icon": "👆",
+  "inspiration": "Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "moi",
+      "fa": "من",
+      "emoji": "🙋",
+      "difficulty": 1,
+      "ex": "C'est moi qui ai gagné !",
+      "ex_fa": "این من هستم که برنده شدم!"
+    },
+    {
+      "fr": "toi",
+      "fa": "تو",
+      "emoji": "👉",
+      "difficulty": 1,
+      "ex": "Je viens avec toi.",
+      "ex_fa": "من با تو می‌آیم."
+    },
+    {
+      "fr": "lui",
+      "fa": "او (مذکر)",
+      "emoji": "👨",
+      "difficulty": 1,
+      "ex": "Je pense souvent à lui.",
+      "ex_fa": "من اغلب به او فکر می‌کنم."
+    },
+    {
+      "fr": "elle",
+      "fa": "او (مؤنث)",
+      "emoji": "👩",
+      "difficulty": 1,
+      "ex": "Ce cadeau est pour elle.",
+      "ex_fa": "این هدیه برای اوست."
+    },
+    {
+      "fr": "nous",
+      "fa": "ما",
+      "emoji": "🫵",
+      "difficulty": 1,
+      "ex": "Le professeur est fier de nous.",
+      "ex_fa": "معلم از ما افتخار می‌کند."
+    },
+    {
+      "fr": "vous",
+      "fa": "شما",
+      "emoji": "🫵🫵",
+      "difficulty": 1,
+      "ex": "Je suis d'accord avec vous.",
+      "ex_fa": "من با شما موافقم."
+    },
+    {
+      "fr": "eux",
+      "fa": "آن‌ها (مذکر)",
+      "emoji": "👨‍👨‍👦",
+      "difficulty": 2,
+      "ex": "Regarde-les, ce sont eux !",
+      "ex_fa": "به آن‌ها نگاه کن، آن‌ها هستند!"
+    },
+    {
+      "fr": "elles",
+      "fa": "آن‌ها (مؤنث)",
+      "emoji": "👩‍👩‍👧",
+      "difficulty": 2,
+      "ex": "Je vais au cinéma avec elles.",
+      "ex_fa": "من با آن‌ها به سینما می‌روم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "C'est pour qui ?",
+      "title_fa": "این برای کیست؟",
+      "text": "Nous organisons une fête. Ce gâteau est pour ____ (1). Les bonbons sont pour ____ (2). Paul est timide, mais ce cadeau est pour ____ (3). Marie est contente, la fleur est pour ____ (4). Le professeur parle à ____ (5) et à ____ (6). Les garçons jouent dehors, je joue avec ____ (7). Les filles chantent, je chante avec ____ (8). C'est une super fête pour tout le monde !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "moi",
+          "options": [
+            "moi",
+            "toi",
+            "lui",
+            "elle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "toi",
+          "options": [
+            "toi",
+            "moi",
+            "lui",
+            "elle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "lui",
+          "options": [
+            "lui",
+            "elle",
+            "nous",
+            "vous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "elle",
+          "options": [
+            "elle",
+            "lui",
+            "nous",
+            "vous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "nous",
+          "options": [
+            "nous",
+            "vous",
+            "eux",
+            "elles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "vous",
+          "options": [
+            "vous",
+            "nous",
+            "eux",
+            "elles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "eux",
+          "options": [
+            "eux",
+            "elles",
+            "nous",
+            "vous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "elles",
+          "options": [
+            "elles",
+            "eux",
+            "nous",
+            "vous"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les liens du cœur",
+      "title_fa": "پیوندهای قلب",
+      "inspiration": "Le Petit Prince",
+      "text": "Dans la vie, tout est question de liens. Ce secret, je le garde pour ____ (1). Et toi, tu le gardes pour ____ (2) ? Lui, ____ (3), il préfère le silence. Elle, ____ (4), elle préfère les mots. Le destin nous unit, ____ (5) et ____ (6). Nous pensons à ____ (7) qui sont loin, et ____ (8) qui nous ont quittés. Mais l'amour reste, pour ____ (9) tous.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "moi",
+          "options": [
+            "moi",
+            "toi",
+            "lui",
+            "elle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "toi",
+          "options": [
+            "toi",
+            "moi",
+            "lui",
+            "elle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "lui",
+          "options": [
+            "lui",
+            "elle",
+            "nous",
+            "vous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "elle",
+          "options": [
+            "elle",
+            "lui",
+            "nous",
+            "vous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "nous",
+          "options": [
+            "nous",
+            "vous",
+            "eux",
+            "elles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "vous",
+          "options": [
+            "vous",
+            "nous",
+            "eux",
+            "elles"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "eux",
+          "options": [
+            "eux",
+            "elles",
+            "nous",
+            "vous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "elles",
+          "options": [
+            "elles",
+            "eux",
+            "nous",
+            "vous"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "nous",
+          "options": [
+            "nous",
+            "vous",
+            "eux",
+            "elles"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Pronoms Toniques",
+    "title_fa": "آزمون: ضمایر تأکیدی",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Après une préposition (avec, pour, chez), on utilise les pronoms toniques. Ex: Je viens avec ____ (من).",
+        "options": [
+          "moi",
+          "je",
+          "me",
+          "mon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بعد از حروف اضافه، از ضمایر تأکیدی استفاده می‌شود. با من = avec moi."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour insister : « ____، je n'aime pas le chocolat. » (من)",
+        "options": [
+          "Moi",
+          "Je",
+          "Me",
+          "Mon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای تأکید در ابتدای جمله، از Moi استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pronom tonique pour « tu » est ____.",
+        "options": [
+          "toi",
+          "tu",
+          "te",
+          "ton"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضمیر تأکیدی برای tu، کلمه toi است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pronom tonique pour « il » est ____.",
+        "options": [
+          "lui",
+          "il",
+          "le",
+          "son"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضمیر تأکیدی برای il، کلمه lui است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pronom tonique pour « ils » est ____.",
+        "options": [
+          "eux",
+          "ils",
+          "les",
+          "leurs"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضمیر تأکیدی برای ils، کلمه eux است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pronom tonique pour « elles » est ____.",
+        "options": [
+          "elles",
+          "elles-mêmes",
+          "les",
+          "leurs"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ضمیر تأکیدی برای elles، خود elles است."
+      },
+      {
+        "type": "binary",
+        "question": "On peut dire « C'est moi » pour répondre à la question « Qui est là ? ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، برای پاسخ به سؤال «کی اونجاست؟» می‌توان گفت C'est moi (من هستم)."
+      },
+      {
+        "type": "binary",
+        "question": "Le pronom tonique de « nous » est « vous ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، ضمیر تأکیدی nous، خود nous باقی می‌ماند."
+      }
+    ]
+  }
+}
