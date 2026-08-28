@@ -1,0 +1,448 @@
+{
+  "id": "ponctuation_ecriture",
+  "level": "A2",
+  "theme": "Ponctuation et Écriture",
+  "theme_fa": "علائم نگارشی و نوشتار",
+  "icon": "✍️",
+  "inspiration": "Le Petit Prince",
+  "words": [
+    {
+      "fr": "le point",
+      "fa": "نقطه",
+      "emoji": "⏺️",
+      "difficulty": 1,
+      "ex": "Il faut mettre un point à la fin de la phrase.",
+      "ex_fa": "باید در پایان جمله نقطه گذاشت."
+    },
+    {
+      "fr": "la virgule",
+      "fa": "ویرگول",
+      "emoji": "🔻",
+      "difficulty": 1,
+      "ex": "Ajouter une virgule pour séparer les éléments.",
+      "ex_fa": "برای جدا کردن اجزا یک ویرگول اضافه کنید."
+    },
+    {
+      "fr": "le point-virgule",
+      "fa": "نقطه ویرگول",
+      "emoji": "⏸️",
+      "difficulty": 2,
+      "ex": "Le point-virgule sépare deux propositions liées.",
+      "ex_fa": "نقطه ویرگول دو عبارت مرتبط را از هم جدا می‌کند."
+    },
+    {
+      "fr": "les deux-points",
+      "fa": "دو نقطه",
+      "emoji": "⏹️",
+      "difficulty": 1,
+      "ex": "Les deux-points introduisent une explication.",
+      "ex_fa": "دو نقطه یک توضیح یا فهرست را معرفی می‌کنند."
+    },
+    {
+      "fr": "le point d'exclamation",
+      "fa": "علامت تعجب",
+      "emoji": "❗",
+      "difficulty": 1,
+      "ex": "On met un point d'exclamation pour crier.",
+      "ex_fa": "برای فریاد زدن یا تعجب از علامت تعجب استفاده می‌کنیم."
+    },
+    {
+      "fr": "le point d'interrogation",
+      "fa": "علامت سؤال",
+      "emoji": "❓",
+      "difficulty": 1,
+      "ex": "Chaque question finit par un point d'interrogation.",
+      "ex_fa": "هر سؤال با یک علامت سؤال تمام می‌شود."
+    },
+    {
+      "fr": "les guillemets",
+      "fa": "گیومه",
+      "emoji": "❝❞",
+      "difficulty": 2,
+      "ex": "Les paroles du personnage sont entre guillemets.",
+      "ex_fa": "حرف‌های شخصیت داخل گیومه قرار می‌گیرند."
+    },
+    {
+      "fr": "l'apostrophe",
+      "fa": "آپاستروف",
+      "emoji": "🔤",
+      "difficulty": 2,
+      "ex": "L'apostrophe remplace une voyelle élidée (ex: l'arbre).",
+      "ex_fa": "آپاستروف جایگزین یک حرف صدادار حذف‌شده می‌شود."
+    },
+    {
+      "fr": "le tiret",
+      "fa": "خط تیره",
+      "emoji": "➖",
+      "difficulty": 1,
+      "ex": "Un tiret indique le changement d'interlocuteur.",
+      "ex_fa": "خط تیره نشان‌دهنده تغییر گوینده در گفت‌وگو است."
+    },
+    {
+      "fr": "les parenthèses",
+      "fa": "پرانتز",
+      "emoji": "()",
+      "difficulty": 2,
+      "ex": "On ajoute un détail discret entre parenthèses.",
+      "ex_fa": "یک جزئیات آرام و جانبی را داخل پرانتز اضافه می‌کنیم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "J'apprends à écrire",
+      "title_fa": "من نوشتن را یاد می‌گیرم",
+      "text": "Aujourd'hui, j'apprends la ponctuation. À la fin de ma phrase, je mets un ____ (1). Pour séparer les mots dans une liste, j'utilise une ____ (2). Avant d'expliquer quelque chose, je mets ____ (4). Quand je suis très surpris, j'ajoute un ____ (5) ! Quand je ne sais pas la réponse, je mets un ____ (6) ? Pour montrer ce que quelqu'un dit, j'utilise les ____ (7). J'utilise l'____ (8) pour écrire « l'école ». Dans un dialogue, chaque nouvelle personne parle après un ____ (9). Et pour un secret, je le cache entre ____ (10). Parfois, pour une pause moyenne, j'utilise le ____ (3).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "point",
+          "options": [
+            "point",
+            "virgule",
+            "tiret",
+            "apostrophe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "virgule",
+          "options": [
+            "virgule",
+            "point",
+            "guillemets",
+            "parenthèses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "point-virgule",
+          "options": [
+            "point-virgule",
+            "deux-points",
+            "point",
+            "virgule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "deux-points",
+          "options": [
+            "deux-points",
+            "guillemets",
+            "parenthèses",
+            "tiret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "point d'exclamation",
+          "options": [
+            "point d'exclamation",
+            "point d'interrogation",
+            "point",
+            "virgule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "point d'interrogation",
+          "options": [
+            "point d'interrogation",
+            "point d'exclamation",
+            "guillemets",
+            "tiret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "guillemets",
+          "options": [
+            "guillemets",
+            "parenthèses",
+            "tirets",
+            "virgules"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "apostrophe",
+          "options": [
+            "apostrophe",
+            "virgule",
+            "point",
+            "tiret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "tiret",
+          "options": [
+            "tiret",
+            "point",
+            "guillemet",
+            "parenthèse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "parenthèses",
+          "options": [
+            "parenthèses",
+            "guillemets",
+            "tirets",
+            "virgules"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La lettre du Petit Prince",
+      "title_fa": "نامه شازده کوچولو",
+      "inspiration": "Le Petit Prince",
+      "text": "Le Petit Prince écrit à sa rose. Il commence par ____ (7) Chère Rose ____ (5) ____ (4) Tu me manques ____ (1). ____ (10) même si tu es capricieuse ____ (10) ____ (2) je pense à toi ____ (3) tes épines me protègent ____ (9) ou du moins ____ (2) c'est ce que tu crois ____ (1). ____ (8) L'important est invisible pour les yeux ____ (7). Pourquoi les hommes cultivent-ils cinq mille roses dans le même jardin ____ (6) ____ (1). Et pourtant ____ (2) ce qu'ils cherchent pourrait être trouvé dans une seule rose ____ (1).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "point",
+          "options": [
+            "point",
+            "virgule",
+            "tiret",
+            "apostrophe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "virgule",
+          "options": [
+            "virgule",
+            "point",
+            "guillemets",
+            "parenthèses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "point-virgule",
+          "options": [
+            "point-virgule",
+            "deux-points",
+            "point",
+            "virgule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "deux-points",
+          "options": [
+            "deux-points",
+            "guillemets",
+            "parenthèses",
+            "tiret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "point d'exclamation",
+          "options": [
+            "point d'exclamation",
+            "point d'interrogation",
+            "point",
+            "virgule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "point d'interrogation",
+          "options": [
+            "point d'interrogation",
+            "point d'exclamation",
+            "guillemets",
+            "tiret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "guillemets",
+          "options": [
+            "guillemets",
+            "parenthèses",
+            "tirets",
+            "virgules"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "apostrophe",
+          "options": [
+            "apostrophe",
+            "virgule",
+            "point",
+            "tiret"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "tiret",
+          "options": [
+            "tiret",
+            "point",
+            "guillemet",
+            "parenthèse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "parenthèses",
+          "options": [
+            "parenthèses",
+            "guillemets",
+            "tirets",
+            "virgules"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Ponctuation et Écriture",
+    "title_fa": "آزمون: علائم نگارشی و نوشتار",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le symbole (.) à la fin d'une phrase s'appelle ____.",
+        "options": [
+          "le point",
+          "la virgule",
+          "le tiret",
+          "l'apostrophe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نماد (.) در پایان جمله، نقطه (le point) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour séparer des éléments dans une énumération, on utilise ____.",
+        "options": [
+          "la virgule",
+          "le point",
+          "les guillemets",
+          "les parenthèses"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای جدا کردن اجزا در یک شمارش، از ویرگول (la virgule) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Les symboles (« ») en français s'appellent ____.",
+        "options": [
+          "les guillemets",
+          "les parenthèses",
+          "les tirets",
+          "les virgules"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نمادهای (« ») در فرانسوی گیومه (les guillemets) نامیده می‌شوند."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour indiquer une question, on met à la fin ____.",
+        "options": [
+          "un point d'interrogation",
+          "un point d'exclamation",
+          "un point",
+          "une virgule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای نشان دادن سؤال، در پایان از علامت سؤال (point d'interrogation) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le symbole (!) exprime ____.",
+        "options": [
+          "une forte émotion ou un ordre",
+          "une question",
+          "une pause",
+          "une énumération"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نماد (!) احساسات قوی، تعجب یا دستور را بیان می‌کند."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans « l'arbre », le symbole (') s'appelle ____.",
+        "options": [
+          "l'apostrophe",
+          "la virgule",
+          "le tiret",
+          "le point"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "در کلمه «l'arbre»، نماد (') آپاستروف (l'apostrophe) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour introduire une explication ou une citation, on utilise ____.",
+        "options": [
+          "les deux-points",
+          "le point-virgule",
+          "la virgule",
+          "le point"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای معرفی یک توضیح یا نقل‌قول، از دو نقطه (les deux-points) استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le « tiret » est souvent utilisé dans les dialogues pour montrer qui parle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، خط تیره (tiret) اغلب در گفت‌وگوها برای نشان دادن تغییر گوینده استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Les « parenthèses » servent à ajouter une information secondaire ou un détail.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، پرانتزها برای افزودن اطلاعات ثانویه یا یک جزئیات استفاده می‌شوند."
+      },
+      {
+        "type": "binary",
+        "question": "En français, il n'y a pas d'espace avant le point d'interrogation (?).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، در نگارش فرانسوی، قبل از علائم دو قسمتی مثل ؟ ، ! و : حتماً یک فاصله (espace) قرار می‌گیرد."
+      }
+    ]
+  }
+}
