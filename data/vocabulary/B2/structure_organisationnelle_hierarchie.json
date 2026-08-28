@@ -1,0 +1,511 @@
+{
+  "id": "structure_organisationnelle_hierarchie",
+  "level": "B2",
+  "theme": "Structure organisationnelle et hiérarchie",
+  "theme_fa": "ساختار سازمانی و سلسله‌مراتب",
+  "icon": "🏢",
+  "inspiration": "The Office (US)",
+  "words": [
+    {
+      "fr": "la hiérarchie (f)",
+      "fa": "سلسله‌مراتب",
+      "emoji": "🪜",
+      "difficulty": 3,
+      "ex": "Il faut respecter la hiérarchie dans l'entreprise.",
+      "ex_fa": "باید به سلسله‌مراتب در شرکت احترام گذاشت."
+    },
+    {
+      "fr": "hiérarchique",
+      "fa": "سلسله‌مراتبی",
+      "emoji": "📊",
+      "difficulty": 3,
+      "ex": "La structure hiérarchique est très stricte ici.",
+      "ex_fa": "ساختار سلسله‌مراتبی در اینجا بسیار سخت‌گیرانه است."
+    },
+    {
+      "fr": "le supérieur (m)",
+      "fa": "مافوق",
+      "emoji": "👔",
+      "difficulty": 2,
+      "ex": "Je dois en parler à mon supérieur.",
+      "ex_fa": "من باید این موضوع را با مافوق خود در میان بگذارم."
+    },
+    {
+      "fr": "subordonné(e)",
+      "fa": "زیردست",
+      "emoji": "👥",
+      "difficulty": 3,
+      "ex": "Il traite ses subordonnés avec respect.",
+      "ex_fa": "او با زیردستان خود با احترام رفتار می‌کند."
+    },
+    {
+      "fr": "la fonction (f)",
+      "fa": "عملکرد، شغل",
+      "emoji": "💼",
+      "difficulty": 3,
+      "ex": "Il occupe une fonction de direction.",
+      "ex_fa": "او یک سمت مدیریتی را اشغال می‌کند."
+    },
+    {
+      "fr": "fonctionnel/le",
+      "fa": "عملکردی",
+      "emoji": "⚙️",
+      "difficulty": 4,
+      "ex": "Le département fonctionnel est bien organisé.",
+      "ex_fa": "بخش عملکردی به خوبی سازماندهی شده است."
+    },
+    {
+      "fr": "le fonctionnement (m)",
+      "fa": "طرز کار",
+      "emoji": "🔄",
+      "difficulty": 3,
+      "ex": "Le fonctionnement de ce service est mystérieux.",
+      "ex_fa": "طرز کار این بخش مرموز است."
+    },
+    {
+      "fr": "la structure (f)",
+      "fa": "ساختار",
+      "emoji": "🏗️",
+      "difficulty": 2,
+      "ex": "Nous devons revoir la structure de l'équipe.",
+      "ex_fa": "ما باید ساختار تیم را بازبینی کنیم."
+    },
+    {
+      "fr": "structurer",
+      "fa": "ساختار دادن",
+      "emoji": "🧱",
+      "difficulty": 3,
+      "ex": "Il faut structurer ce projet avant de commencer.",
+      "ex_fa": "قبل از شروع، باید به این پروژه ساختار داد."
+    },
+    {
+      "fr": "centraliser",
+      "fa": "متمرکز کردن",
+      "emoji": "🎯",
+      "difficulty": 4,
+      "ex": "L'entreprise a décidé de centraliser ses achats.",
+      "ex_fa": "شرکت تصمیم گرفت خریدهای خود را متمرکز کند."
+    },
+    {
+      "fr": "le centralisme (m)",
+      "fa": "تمرکزگرایی",
+      "emoji": "🏛️",
+      "difficulty": 5,
+      "ex": "Le centralisme excessif ralentit les décisions.",
+      "ex_fa": "تمرکزگرایی بیش از حد، تصمیم‌گیری‌ها را کند می‌کند."
+    },
+    {
+      "fr": "décentraliser",
+      "fa": "غیرمتمرکز کردن",
+      "emoji": "🌐",
+      "difficulty": 4,
+      "ex": "Nous allons décentraliser la prise de décision.",
+      "ex_fa": "ما قصد داریم فرآیند تصمیم‌گیری را غیرمتمرکز کنیم."
+    },
+    {
+      "fr": "coordonner",
+      "fa": "هماهنگ کردن",
+      "emoji": "🤝",
+      "difficulty": 3,
+      "ex": "Elle doit coordonner les efforts de toutes les équipes.",
+      "ex_fa": "او باید تلاش‌های همه تیم‌ها را هماهنگ کند."
+    },
+    {
+      "fr": "la coordination (f)",
+      "fa": "هماهنگی",
+      "emoji": "🔗",
+      "difficulty": 3,
+      "ex": "La coordination entre les services est essentielle.",
+      "ex_fa": "هماهنگی بین بخش‌ها ضروری است."
+    },
+    {
+      "fr": "intégrer",
+      "fa": "ادغام کردن",
+      "emoji": "🧩",
+      "difficulty": 3,
+      "ex": "Nous devons intégrer les nouveaux logiciels.",
+      "ex_fa": "ما باید نرم‌افزارهای جدید را ادغام کنیم."
+    },
+    {
+      "fr": "l'intégration (f)",
+      "fa": "ادغام",
+      "emoji": "🧩",
+      "difficulty": 3,
+      "ex": "L'intégration des nouveaux employés prend du temps.",
+      "ex_fa": "ادغام کارکنان جدید زمان می‌برد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le nouveau organigramme",
+      "title_fa": "چارت سازمانی جدید",
+      "text": "Michael a découvert que la {{BLANK_1}} de l'entreprise était beaucoup plus complexe qu'il ne le pensait. Il trouvait le système {{BLANK_2}} trop rigide et étouffant. Il voulait discuter d'une idée brillante avec son {{BLANK_3}}, mais il avait trop peur. Il estimait que chaque employé {{BLANK_4}} méritait d'être écouté, peu importe son rang. Le {{BLANK_5}} quotidien du bureau de Scranton était souvent chaotique et imprévisible. Michael a essayé de {{BLANK_6}} une fête surprise pour Dwight, mais cela a tourné au désastre. L'{{BLANK_7}} de Jim dans l'équipe de vente a été une grande réussite. Enfin, Michael a tenté d'{{BLANK_8}} le département du comptoir avec celui de la vente, sans grand succès.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "structure",
+          "options": [
+            "structure",
+            "hiérarchie",
+            "fonction",
+            "coordination"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "hiérarchique",
+          "options": [
+            "hiérarchique",
+            "fonctionnel",
+            "subordonné",
+            "centralisé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "supérieur",
+          "options": [
+            "supérieur",
+            "subordonné",
+            "collègue",
+            "directeur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "subordonné",
+          "options": [
+            "supérieur",
+            "subordonné",
+            "hiérarchique",
+            "fonctionnel"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 5,
+          "answer": "fonctionnement",
+          "options": [
+            "fonctionnement",
+            "intégration",
+            "centralisme",
+            "coordination"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "structurer",
+          "options": [
+            "structurer",
+            "intégrer",
+            "coordonner",
+            "décentraliser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "intégration",
+          "options": [
+            "fonctionnement",
+            "intégration",
+            "centralisme",
+            "coordination"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 8,
+          "answer": "intégrer",
+          "options": [
+            "structurer",
+            "intégrer",
+            "coordonner",
+            "décentraliser"
+          ],
+          "correctIndex": 1
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les rouages de l'empire",
+      "title_fa": "چرخ‌دنده‌های امپراتوری",
+      "inspiration": "The Office (US)",
+      "text": "Dans les couloirs feutrés du siège social, la logique {{BLANK_1}} dictait chaque mouvement des employés. Chaque division {{BLANK_2}} agissait comme un silo isolé, protégeant jalousement ses prérogatives. Le directeur général cherchait à {{BLANK_3}} l'ensemble des opérations d'une main de fer. Cependant, ce {{BLANK_4}} exacerbé empêchait toute réactivité face aux changements du marché. Il était devenu impératif de redistribuer le pouvoir vers les succursales régionales. Une meilleure {{BLANK_6}} entre les différentes divisions s'imposait pour éviter l'effondrement. Il fallait désormais {{BLANK_7}} les nouvelles acquisitions sans créer de heurts culturels. L'objectif ultime restait de {{BLANK_8}} une culture d'entreprise unifiée et résiliente.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "hiérarchique",
+          "options": [
+            "hiérarchique",
+            "fonctionnel",
+            "subordonné",
+            "centralisé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fonctionnel",
+          "options": [
+            "hiérarchique",
+            "fonctionnel",
+            "subordonné",
+            "centralisé"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": 3,
+          "answer": "centraliser",
+          "options": [
+            "centraliser",
+            "décentraliser",
+            "coordonner",
+            "structurer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "centralisme",
+          "options": [
+            "fonctionnement",
+            "intégration",
+            "centralisme",
+            "coordination"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": 6,
+          "answer": "coordination",
+          "options": [
+            "fonctionnement",
+            "intégration",
+            "centralisme",
+            "coordination"
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": 7,
+          "answer": "intégrer",
+          "options": [
+            "centraliser",
+            "décentraliser",
+            "coordonner",
+            "intégrer"
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": 8,
+          "answer": "structurer",
+          "options": [
+            "centraliser",
+            "décentraliser",
+            "coordonner",
+            "structurer"
+          ],
+          "correctIndex": 3
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Structure organisationnelle",
+    "title_fa": "آزمون : ساختار سازمانی",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Il faut respecter la ____ dans l'entreprise.",
+        "options": [
+          "hiérarchie",
+          "structure",
+          "fonction",
+          "coordination"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "hiérarchie به معنای سلسله‌مراتب و ترتیب رتبه‌ها است."
+      },
+      {
+        "type": "mcq",
+        "question": "Je dois en parler à mon ____.",
+        "options": [
+          "subordonné",
+          "supérieur",
+          "collègue",
+          "hiérarchie"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "supérieur به معنای مافوق یا فرد بالاتر از نظر رتبه است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il traite ses ____ avec respect.",
+        "options": [
+          "supérieurs",
+          "subordonnés",
+          "hiérarchies",
+          "fonctions"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "subordonnés به معنای زیردستان است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il occupe une ____ de direction.",
+        "options": [
+          "structure",
+          "hiérarchie",
+          "fonction",
+          "coordination"
+        ],
+        "correctIndex": 2,
+        "explanation_fa": "fonction در اینجا به معنای سمت یا شغل است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ de ce service est mystérieux.",
+        "options": [
+          "centralisme",
+          "fonctionnement",
+          "intégration",
+          "coordination"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "fonctionnement به معنای طرز کار یا نحوه فعالیت است."
+      },
+      {
+        "type": "mcq",
+        "question": "Nous devons revoir la ____ de l'équipe.",
+        "options": [
+          "hiérarchie",
+          "structure",
+          "fonction",
+          "coordination"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "structure به معنای ساختار و چیدمان است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'entreprise a décidé de ____ ses achats.",
+        "options": [
+          "centraliser",
+          "décentraliser",
+          "coordonner",
+          "structurer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "centraliser به معنای متمرکز کردن در یک نقطه است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ excessif ralentit les décisions.",
+        "options": [
+          "centralisme",
+          "fonctionnement",
+          "intégration",
+          "coordination"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "centralisme به معنای تمرکزگرایی و سیستم متمرکز است."
+      },
+      {
+        "type": "mcq",
+        "question": "Nous allons ____ la prise de décision.",
+        "options": [
+          "centraliser",
+          "décentraliser",
+          "coordonner",
+          "structurer"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "décentraliser به معنای غیرمتمرکز کردن و پخش کردن اختیار است."
+      },
+      {
+        "type": "mcq",
+        "question": "Elle doit ____ les efforts de toutes les équipes.",
+        "options": [
+          "centraliser",
+          "décentraliser",
+          "coordonner",
+          "structurer"
+        ],
+        "correctIndex": 2,
+        "explanation_fa": "coordonner به معنای هماهنگ کردن فعالیت‌ها است."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ entre les services est essentielle.",
+        "options": [
+          "hiérarchie",
+          "structure",
+          "fonction",
+          "coordination"
+        ],
+        "correctIndex": 3,
+        "explanation_fa": "coordination به معنای هماهنگی بین بخش‌ها است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ des nouveaux employés prend du temps.",
+        "options": [
+          "centralisme",
+          "fonctionnement",
+          "intégration",
+          "coordination"
+        ],
+        "correctIndex": 2,
+        "explanation_fa": "intégration به معنای ادغام یا هماهنگ شدن با محیط جدید است."
+      },
+      {
+        "type": "binary",
+        "question": "Un subordonné est une personne qui a une autorité sur les autres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "غلط است. subordonné به معنای زیردست است، نه فرد دارای اختیار."
+      },
+      {
+        "type": "binary",
+        "question": "Décentraliser signifie transférer le pouvoir vers les niveaux inférieurs.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درست است. décentraliser به معنای واگذاری اختیار به سطوح پایین‌تر است."
+      },
+      {
+        "type": "binary",
+        "question": "La hiérarchie désigne l'absence totale d'ordre dans une entreprise.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "غلط است. hiérarchie به معنای وجود نظم و ترتیب رتبه‌ها است."
+      },
+      {
+        "type": "binary",
+        "question": "Structurer un projet signifie lui donner une organisation claire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "درست است. structurer به معنای سازماندهی و ساختار دادن است."
+      }
+    ]
+  }
+}
