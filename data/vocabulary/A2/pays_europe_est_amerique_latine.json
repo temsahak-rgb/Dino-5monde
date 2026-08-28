@@ -1,0 +1,484 @@
+{
+  "id": "pays_europe_est_amerique_latine",
+  "level": "A2",
+  "theme": "Pays d'Europe de l'Est, d'Amérique Latine et des Caraïbes",
+  "theme_fa": "کشورهای اروپای شرقی، آمریکای لاتین و کارائیب",
+  "icon": "🌍",
+  "inspiration": "Voyage autour du monde",
+  "words": [
+    {
+      "fr": "la Pologne",
+      "fa": "لهستان",
+      "emoji": "🇵🇱",
+      "difficulty": 2,
+      "ex": "J'aimerais beaucoup voyager en Pologne.",
+      "ex_fa": "من خیلی دوست دارم به لهستان سفر کنم."
+    },
+    {
+      "fr": "l'Ukraine",
+      "fa": "اوکراین",
+      "emoji": "🇺🇦",
+      "difficulty": 2,
+      "ex": "La culture de l'Ukraine est très riche.",
+      "ex_fa": "فرهنگ اوکراین بسیار غنی است."
+    },
+    {
+      "fr": "le Mexique",
+      "fa": "مکزیک",
+      "emoji": "🇲🇽",
+      "difficulty": 1,
+      "ex": "Nous allons manger des tacos au Mexique.",
+      "ex_fa": "ما می‌رویم در مکزیک تاکو بخوریم."
+    },
+    {
+      "fr": "l'Argentine",
+      "fa": "آرژانتین",
+      "emoji": "🇦🇷",
+      "difficulty": 2,
+      "ex": "Le tango est une danse traditionnelle en Argentine.",
+      "ex_fa": "تانگو یک رقص سنتی در آرژانتین است."
+    },
+    {
+      "fr": "le Chili",
+      "fa": "شیلی",
+      "emoji": "🇨🇱",
+      "difficulty": 2,
+      "ex": "Les montagnes des Andes traversent le Chili.",
+      "ex_fa": "کوه‌های آند از شیلی عبور می‌کنند."
+    },
+    {
+      "fr": "la Colombie",
+      "fa": "کلمبیا",
+      "emoji": "🇨🇴",
+      "difficulty": 2,
+      "ex": "Le café de Colombie est réputé dans le monde entier.",
+      "ex_fa": "قهوه کلمبیا در سراسر جهان شهرت دارد."
+    },
+    {
+      "fr": "le Pérou",
+      "fa": "پرو",
+      "emoji": "🇵🇪",
+      "difficulty": 2,
+      "ex": "Visiter le Machu Picchu au Pérou est un rêve.",
+      "ex_fa": "بازدید از ماچو پیچو در پرو یک رویا است."
+    },
+    {
+      "fr": "le Venezuela",
+      "fa": "ونزوئلا",
+      "emoji": "🇻🇪",
+      "difficulty": 2,
+      "ex": "Les plages du Venezuela sont magnifiques.",
+      "ex_fa": "سواحل ونزوئلا فوق‌العاده زیبا هستند."
+    },
+    {
+      "fr": "Cuba",
+      "fa": "کوبا",
+      "emoji": "🇨🇺",
+      "difficulty": 1,
+      "ex": "La musique et les cigares de Cuba sont célèbres.",
+      "ex_fa": "موسیقی و سیگارهای کوبا مشهور هستند."
+    },
+    {
+      "fr": "Porto Rico",
+      "fa": "پورتوریکو",
+      "emoji": "🇵🇷",
+      "difficulty": 2,
+      "ex": "Il fait beau toute l'année à Porto Rico.",
+      "ex_fa": "در پورتوریکو در تمام طول سال هوا خوب است."
+    },
+    {
+      "fr": "la République dominicaine",
+      "fa": "جمهوری دومینیکن",
+      "emoji": "🇩🇴",
+      "difficulty": 3,
+      "ex": "Les resorts de la République dominicaine attirent les touristes.",
+      "ex_fa": "استراحتگاه‌های جمهوری دومینیکن توریست‌ها را جذب می‌کنند."
+    },
+    {
+      "fr": "Haïti",
+      "fa": "هائیتی",
+      "emoji": "🇭🇹",
+      "difficulty": 2,
+      "ex": "L'histoire d'Haïti est marquée par la révolution.",
+      "ex_fa": "تاریخ هائیتی با انقلاب رقم خورده است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un voyage en Amérique et en Europe",
+      "title_fa": "سفری به آمریکا و اروپا",
+      "text": "Je prépare un grand voyage. D'abord, je vais en ____ (1) pour voir les châteaux, puis en ____ (2) pour découvrir son histoire. Ensuite, direction l'Amérique latine ! Je vais manger au ____ (3), danser le tango en ____ (4) et voir les montagnes du ____ (5). Je boirai un bon café de ____ (6) et je visiterai les ruines du ____ (7). Je profiterai des plages du ____ (8), j'écouterai la musique de ____ (9) et je me détendrai à ____ (10). Je finirai par les resorts de la ____ (11) et j'apprendrai l'histoire d'____ (12).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Pologne",
+          "options": [
+            "Pologne",
+            "Ukraine",
+            "Mexique",
+            "Argentine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "Ukraine",
+          "options": [
+            "Ukraine",
+            "Pologne",
+            "Chili",
+            "Colombie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Mexique",
+          "options": [
+            "Mexique",
+            "Pérou",
+            "Venezuela",
+            "Cuba"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Argentine",
+          "options": [
+            "Argentine",
+            "Mexique",
+            "Porto Rico",
+            "Haïti"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Chili",
+          "options": [
+            "Chili",
+            "Colombie",
+            "Venezuela",
+            "Cuba"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Colombie",
+          "options": [
+            "Colombie",
+            "Pérou",
+            "Venezuela",
+            "Haïti"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Pérou",
+          "options": [
+            "Pérou",
+            "Colombie",
+            "Chili",
+            "Argentine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Venezuela",
+          "options": [
+            "Venezuela",
+            "Cuba",
+            "Porto Rico",
+            "Haïti"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Cuba",
+          "options": [
+            "Cuba",
+            "Venezuela",
+            "Mexique",
+            "Argentine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Porto Rico",
+          "options": [
+            "Porto Rico",
+            "Cuba",
+            "Haïti",
+            "République dominicaine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "République dominicaine",
+          "options": [
+            "République dominicaine",
+            "Porto Rico",
+            "Haïti",
+            "Cuba"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "Haïti",
+          "options": [
+            "Haïti",
+            "République dominicaine",
+            "Porto Rico",
+            "Venezuela"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'écho des continents",
+      "title_fa": "پژواک قاره‌ها",
+      "inspiration": "Voyage au bout de la nuit",
+      "text": "Le monde est un livre ouvert. Les plaines de la ____ (1) et les steppes de l'____ (2) racontent des histoires de résilience. Plus loin, les saveurs épicées du ____ (3) éveillent les sens, tandis que la passion de l'____ (4) résonne dans chaque pas de danse. Les cimes du ____ (5) touchent le ciel, et l'arôme du ____ (6) embaume l'air. Les mystères du ____ (7) attirent les explorateurs, tandis que les eaux du ____ (8) apaisent l'âme. Les rythmes de ____ (9) et le soleil de ____ (10) invitent à la fête. Entre les plages de la ____ (11) et la mémoire d'____ (12), chaque pays est un chapitre vibrant de l'humanité.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Pologne",
+          "options": [
+            "Pologne",
+            "Ukraine",
+            "Mexique",
+            "Argentine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "Ukraine",
+          "options": [
+            "Ukraine",
+            "Pologne",
+            "Chili",
+            "Colombie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Mexique",
+          "options": [
+            "Mexique",
+            "Pérou",
+            "Venezuela",
+            "Cuba"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Argentine",
+          "options": [
+            "Argentine",
+            "Mexique",
+            "Porto Rico",
+            "Haïti"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Chili",
+          "options": [
+            "Chili",
+            "Colombie",
+            "Venezuela",
+            "Cuba"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Colombie",
+          "options": [
+            "Colombie",
+            "Pérou",
+            "Venezuela",
+            "Haïti"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Pérou",
+          "options": [
+            "Pérou",
+            "Colombie",
+            "Chili",
+            "Argentine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Venezuela",
+          "options": [
+            "Venezuela",
+            "Cuba",
+            "Porto Rico",
+            "Haïti"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Cuba",
+          "options": [
+            "Cuba",
+            "Venezuela",
+            "Mexique",
+            "Argentine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Porto Rico",
+          "options": [
+            "Porto Rico",
+            "Cuba",
+            "Haïti",
+            "République dominicaine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "République dominicaine",
+          "options": [
+            "République dominicaine",
+            "Porto Rico",
+            "Haïti",
+            "Cuba"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "Haïti",
+          "options": [
+            "Haïti",
+            "République dominicaine",
+            "Porto Rico",
+            "Venezuela"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Europe de l'Est et Amérique Latine",
+    "title_fa": "آزمون: اروپای شرقی و آمریکای لاتین",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le pays célèbre pour le tango est l'____.",
+        "options": [
+          "Argentine",
+          "Mexique",
+          "Chili",
+          "Colombie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشوری که به رقص تانگو معروف است، آرژانتین (Argentine) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le Machu Picchu est un site archéologique situé au ____.",
+        "options": [
+          "Pérou",
+          "Mexique",
+          "Chili",
+          "Venezuela"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماچو پیچو یک سایت باستان‌شناسی واقع در پرو (Pérou) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le café de ce pays est réputé dans le monde entier : la ____.",
+        "options": [
+          "Colombie",
+          "Cuba",
+          "Haïti",
+          "République dominicaine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قهوه این کشور در سراسر جهان شهرت دارد: کلمبیا (Colombie)."
+      },
+      {
+        "type": "mcq",
+        "question": "L'île connue pour sa musique et ses cigares est ____.",
+        "options": [
+          "Cuba",
+          "Porto Rico",
+          "Haïti",
+          "Jamaïque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جزیره‌ای که به موسیقی و سیگارهایش معروف است، کوبا (Cuba) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Les montagnes des Andes traversent notamment le ____.",
+        "options": [
+          "Chili",
+          "Mexique",
+          "Venezuela",
+          "Haïti"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کوه‌های آند از جمله از شیلی (Chili) عبور می‌کنند."
+      },
+      {
+        "type": "binary",
+        "question": "« La Pologne » et « l'Ukraine » sont des pays d'Europe de l'Est.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، لهستان و اوکراین کشورهایی در اروپای شرقی هستند."
+      },
+      {
+        "type": "binary",
+        "question": "« Haïti » est situé en Europe.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، هائیتی (Haïti) کشوری در منطقه کارائیب (آمریکا) است."
+      },
+      {
+        "type": "binary",
+        "question": "« Porto Rico » est un territoire des Caraïbes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، پورتوریکو (Porto Rico) یک قلمرو در منطقه کارائیب است."
+      }
+    ]
+  }
+}
