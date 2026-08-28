@@ -1,0 +1,426 @@
+{
+  "id": "arts_divertissement_gestion_travail",
+  "level": "A1",
+  "theme": "Arts, Divertissement, Gestion et Travail",
+  "theme_fa": "هنر، سرگرمی، مدیریت و کار",
+  "icon": "🎭",
+  "inspiration": "La La Land",
+  "words": [
+    {
+      "fr": "le musicien",
+      "fa": "نوازنده / موسیقیدان",
+      "emoji": "🎵",
+      "difficulty": 2,
+      "ex": "Le musicien joue du piano avec passion.",
+      "ex_fa": "نوازنده با اشتیاق پیانو می‌نوازد."
+    },
+    {
+      "fr": "l'acteur",
+      "fa": "بازیگر",
+      "emoji": "🎬",
+      "difficulty": 1,
+      "ex": "L'acteur joue un rôle dans un film.",
+      "ex_fa": "بازیگر نقشی در یک فیلم بازی می‌کند."
+    },
+    {
+      "fr": "le chanteur",
+      "fa": "خواننده",
+      "emoji": "🎤",
+      "difficulty": 1,
+      "ex": "Le chanteur a une voix magnifique.",
+      "ex_fa": "خواننده صدای فوق‌العاده‌ای دارد."
+    },
+    {
+      "fr": "le danseur",
+      "fa": "رقاص",
+      "emoji": "🕺",
+      "difficulty": 2,
+      "ex": "Le danseur se déplace avec grâce.",
+      "ex_fa": "رقصنده با ظرافت حرکت می‌کند."
+    },
+    {
+      "fr": "le sportif",
+      "fa": "ورزشکار",
+      "emoji": "🏅",
+      "difficulty": 1,
+      "ex": "Le sportif s'entraîne tous les jours.",
+      "ex_fa": "ورزشکار هر روز تمرین می‌کند."
+    },
+    {
+      "fr": "l'entraîneur",
+      "fa": "مربی",
+      "emoji": "📋",
+      "difficulty": 2,
+      "ex": "L'entraîneur donne des conseils à l'équipe.",
+      "ex_fa": "مربی به تیم مشاوره می‌دهد."
+    },
+    {
+      "fr": "le cuisinier",
+      "fa": "آشپز",
+      "emoji": "👨‍🍳",
+      "difficulty": 1,
+      "ex": "Le cuisinier prépare un repas délicieux.",
+      "ex_fa": "آشپز یک غذای خوشمزه آماده می‌کند."
+    },
+    {
+      "fr": "l'employé de bureau",
+      "fa": "کارمند اداره",
+      "emoji": "💼",
+      "difficulty": 2,
+      "ex": "L'employé de bureau travaille sur son ordinateur.",
+      "ex_fa": "کارمند اداره روی کامپیوترش کار می‌کند."
+    },
+    {
+      "fr": "le patron",
+      "fa": "رئیس / کارفرما",
+      "emoji": "👔",
+      "difficulty": 2,
+      "ex": "Le patron prend les décisions importantes.",
+      "ex_fa": "رئیس تصمیمات مهم را می‌گیرد."
+    },
+    {
+      "fr": "l'ouvrier",
+      "fa": "کارگر",
+      "emoji": "👷",
+      "difficulty": 2,
+      "ex": "L'ouvrier construit des routes et des bâtiments.",
+      "ex_fa": "کارگر جاده‌ها و ساختمان‌ها را می‌سازد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le spectacle de la ville",
+      "title_fa": "نمایش شهر",
+      "text": "Dans ma ville, tout le monde travaille dur. Le matin, l'____ (8) va au bureau et le ____ (10) va sur le chantier. Le ____ (9) dirige l'entreprise. À midi, le ____ (7) prépare un bon déjeuner. L'après-midi, le ____ (5) fait du sport et écoute son ____ (6). Le soir, c'est l'heure du divertissement : le ____ (1) joue de la guitare, le ____ (3) chante une belle chanson, le ____ (2) joue dans un film et le ____ (4) nous fait rire avec ses mouvements. La vie est belle !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "musicien",
+          "options": [
+            "musicien",
+            "acteur",
+            "chanteur",
+            "danseur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "acteur",
+          "options": [
+            "acteur",
+            "musicien",
+            "chanteur",
+            "sportif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "chanteur",
+          "options": [
+            "chanteur",
+            "danseur",
+            "acteur",
+            "cuisinier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "danseur",
+          "options": [
+            "danseur",
+            "sportif",
+            "entraîneur",
+            "patron"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sportif",
+          "options": [
+            "sportif",
+            "danseur",
+            "ouvrier",
+            "employé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "entraîneur",
+          "options": [
+            "entraîneur",
+            "patron",
+            "cuisinier",
+            "musicien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "cuisinier",
+          "options": [
+            "cuisinier",
+            "ouvrier",
+            "patron",
+            "employé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "employé de bureau",
+          "options": [
+            "employé de bureau",
+            "ouvrier",
+            "patron",
+            "cuisinier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "patron",
+          "options": [
+            "patron",
+            "employé de bureau",
+            "ouvrier",
+            "sportif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "ouvrier",
+          "options": [
+            "ouvrier",
+            "patron",
+            "employé de bureau",
+            "cuisinier"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La symphonie du travail",
+      "title_fa": "سمفونی کار",
+      "inspiration": "Les Temps Modernes",
+      "text": "La société est une grande orchestre. À l'aube, l'____ (8) s'installe à son bureau, tandis que l'____ (10) bâtit les fondations du monde. Le ____ (9) trace la direction à suivre. Le ____ (7) transforme les ingrédients en art culinaire. Sur le terrain, le ____ (5) repousse ses limites, guidé par la sagesse de l'____ (6). Et lorsque le rideau tombe, le ____ (1) nous émeut avec ses notes, le ____ (3) nous transporte avec sa voix, le ____ (2) nous fait vivre mille vies, et le ____ (4) peint l'air avec son corps. Chaque métier est une note essentielle.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "musicien",
+          "options": [
+            "musicien",
+            "acteur",
+            "chanteur",
+            "danseur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "acteur",
+          "options": [
+            "acteur",
+            "musicien",
+            "chanteur",
+            "sportif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "chanteur",
+          "options": [
+            "chanteur",
+            "danseur",
+            "acteur",
+            "cuisinier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "danseur",
+          "options": [
+            "danseur",
+            "sportif",
+            "entraîneur",
+            "patron"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sportif",
+          "options": [
+            "sportif",
+            "danseur",
+            "ouvrier",
+            "employé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "entraîneur",
+          "options": [
+            "entraîneur",
+            "patron",
+            "cuisinier",
+            "musicien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "cuisinier",
+          "options": [
+            "cuisinier",
+            "ouvrier",
+            "patron",
+            "employé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "employé de bureau",
+          "options": [
+            "employé de bureau",
+            "ouvrier",
+            "patron",
+            "cuisinier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "patron",
+          "options": [
+            "patron",
+            "employé de bureau",
+            "ouvrier",
+            "sportif"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "ouvrier",
+          "options": [
+            "ouvrier",
+            "patron",
+            "employé de bureau",
+            "cuisinier"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Arts, Divertissement, Gestion et Travail",
+    "title_fa": "آزمون: هنر، سرگرمی، مدیریت و کار",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La personne qui joue d'un instrument de musique est le ____.",
+        "options": [
+          "musicien",
+          "acteur",
+          "chanteur",
+          "danseur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که ساز موسیقی می‌نوازد، نوازنده یا موسیقیدان (musicien) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel qui interprète des rôles au cinéma ou au théâtre est l'____.",
+        "options": [
+          "acteur",
+          "chanteur",
+          "danseur",
+          "sportif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصصی که در سینما یا تئاتر نقش بازی می‌کند، بازیگر (acteur) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui prépare et cuit les repas dans un restaurant est le ____.",
+        "options": [
+          "cuisinier",
+          "patron",
+          "employé de bureau",
+          "ouvrier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که غذاها را در رستوران آماده و پخت می‌کند، آشپز (cuisinier) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le responsable qui dirige une entreprise et prend les décisions est le ____.",
+        "options": [
+          "patron",
+          "employé de bureau",
+          "ouvrier",
+          "entraîneur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مسئولی که یک شرکت را اداره می‌کند و تصمیم می‌گیرد، رئیس یا کارفرما (patron) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui travaille manuellement, souvent dans la construction ou l'usine, est l'____.",
+        "options": [
+          "ouvrier",
+          "patron",
+          "employé de bureau",
+          "sportif"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که کار یدی انجام می‌دهد، اغلب در ساخت‌وساز یا کارخانه، کارگر (ouvrier) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le professionnel qui guide et forme une équipe sportive est l'____.",
+        "options": [
+          "entraîneur",
+          "sportif",
+          "danseur",
+          "patron"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متخصصی که یک تیم ورزشی را هدایت و آموزش می‌دهد، مربی (entraîneur) است."
+      },
+      {
+        "type": "binary",
+        "question": "Un « employé de bureau » travaille généralement assis à un bureau avec un ordinateur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، کارمند اداره (employé de bureau) معمولاً پشت میز و با کامپیوتر کار می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Un « danseur » est une personne qui chante des chansons à la radio.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، danseur (رقصنده) با بدن و حرکت هنرنمایی می‌کند، نه با خوانندگی."
+      }
+    ]
+  }
+}
