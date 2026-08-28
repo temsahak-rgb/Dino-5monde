@@ -1,0 +1,384 @@
+{
+  "id": "petits_animaux_reptiles",
+  "level": "A1",
+  "theme": "Petits Animaux, Oiseaux et Reptiles",
+  "theme_fa": "حیوانات کوچک، پرندگان و خزندگان",
+  "icon": "🐿️",
+  "inspiration": "Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "le lapin",
+      "fa": "خرگوش",
+      "emoji": "🐇",
+      "difficulty": 1,
+      "ex": "Le lapin mange des carottes.",
+      "ex_fa": "خرگوش هویج می‌خورد."
+    },
+    {
+      "fr": "la souris",
+      "fa": "موش کوچک",
+      "emoji": "🐭",
+      "difficulty": 1,
+      "ex": "La souris a peur du chat.",
+      "ex_fa": "موش کوچک از گربه می‌ترسد."
+    },
+    {
+      "fr": "le rat",
+      "fa": "موش بزرگ",
+      "emoji": "🐀",
+      "difficulty": 1,
+      "ex": "Le rat vit souvent dans les égouts.",
+      "ex_fa": "موش بزرگ اغلب در فاضلاب زندگی می‌کند."
+    },
+    {
+      "fr": "l'écureuil",
+      "fa": "سنجاب",
+      "emoji": "🐿️",
+      "difficulty": 2,
+      "ex": "L'écureuil cache des noisettes.",
+      "ex_fa": "سنجاب فندق پنهان می‌کند."
+    },
+    {
+      "fr": "le hérisson",
+      "fa": "جوجه‌تیغی",
+      "emoji": "🦔",
+      "difficulty": 2,
+      "ex": "Le hérisson se met en boule.",
+      "ex_fa": "جوجه‌تیغی خود را گلوله می‌کند."
+    },
+    {
+      "fr": "la tortue",
+      "fa": "لاک‌پشت",
+      "emoji": "🐢",
+      "difficulty": 1,
+      "ex": "La tortue se déplace très lentement.",
+      "ex_fa": "لاک‌پشت بسیار آهسته حرکت می‌کند."
+    },
+    {
+      "fr": "le serpent",
+      "fa": "مار",
+      "emoji": "🐍",
+      "difficulty": 1,
+      "ex": "Le serpent n'a pas de pattes.",
+      "ex_fa": "مار پایی ندارد."
+    },
+    {
+      "fr": "la grenouille",
+      "fa": "قورباغه",
+      "emoji": "🐸",
+      "difficulty": 1,
+      "ex": "La grenouille coasse près de la mare.",
+      "ex_fa": "قورباغه نزدیک برکه قورقور می‌کند."
+    },
+    {
+      "fr": "le requin",
+      "fa": "کوسه",
+      "emoji": "🦈",
+      "difficulty": 1,
+      "ex": "Le requin est un prédateur marin.",
+      "ex_fa": "کوسه یک شکارچی دریایی است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les amis du jardin et de la mer",
+      "title_fa": "دوستان باغ و دریا",
+      "text": "Dans le jardin, un ____ (1) mange une carotte. Une petite ____ (2) court vite. Un ____ (4) cache des noisettes dans l'arbre. Le ____ (5) se met en boule quand il a peur. Près de l'eau, la ____ (8) saute et le ____ (7) glisse sans bruit. La ____ (6) marche très lentement. Dans l'océan, le ____ (9) nage avec ses grandes dents. Attention au gros ____ (3) dans la ville !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "lapin",
+          "options": [
+            "lapin",
+            "souris",
+            "rat",
+            "écureuil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "souris",
+          "options": [
+            "souris",
+            "rat",
+            "hérisson",
+            "tortue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "rat",
+          "options": [
+            "rat",
+            "souris",
+            "écureuil",
+            "hérisson"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "écureuil",
+          "options": [
+            "écureuil",
+            "hérisson",
+            "tortue",
+            "serpent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "hérisson",
+          "options": [
+            "hérisson",
+            "écureuil",
+            "tortue",
+            "serpent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "tortue",
+          "options": [
+            "tortue",
+            "grenouille",
+            "serpent",
+            "requin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "serpent",
+          "options": [
+            "serpent",
+            "tortue",
+            "grenouille",
+            "requin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "grenouille",
+          "options": [
+            "grenouille",
+            "tortue",
+            "serpent",
+            "requin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "requin",
+          "options": [
+            "requin",
+            "baleine",
+            "aigle",
+            "perroquet"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les secrets de la nature",
+      "title_fa": "رازهای طبیعت",
+      "inspiration": "Le Petit Prince",
+      "text": "La nature est pleine de surprises. Le ____ (1) bondit dans l'herbe verte. La ____ (2) observe le monde avec ses petits yeux. Le ____ (4) prépare l'hiver avec ses noisettes. Le ____ (5) se protège avec ses épines. La ____ (6) porte sa maison sur son dos. Le ____ (7) glisse en silence. La ____ (8) chante près de l'eau. Et au fond de l'océan, le ____ (9) règne en maître. Même le ____ (3) des villes a sa place dans ce monde.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "lapin",
+          "options": [
+            "lapin",
+            "souris",
+            "rat",
+            "écureuil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "souris",
+          "options": [
+            "souris",
+            "rat",
+            "hérisson",
+            "tortue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "rat",
+          "options": [
+            "rat",
+            "souris",
+            "écureuil",
+            "hérisson"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "écureuil",
+          "options": [
+            "écureuil",
+            "hérisson",
+            "tortue",
+            "serpent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "hérisson",
+          "options": [
+            "hérisson",
+            "écureuil",
+            "tortue",
+            "serpent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "tortue",
+          "options": [
+            "tortue",
+            "grenouille",
+            "serpent",
+            "requin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "serpent",
+          "options": [
+            "serpent",
+            "tortue",
+            "grenouille",
+            "requin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "grenouille",
+          "options": [
+            "grenouille",
+            "tortue",
+            "serpent",
+            "requin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "requin",
+          "options": [
+            "requin",
+            "baleine",
+            "aigle",
+            "perroquet"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Petits Animaux et Reptiles",
+    "title_fa": "آزمون: حیوانات کوچک و خزندگان",
+    "displayCount": 7,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le petit animal avec de longues oreilles qui aime les carottes est le ____.",
+        "options": [
+          "lapin",
+          "souris",
+          "rat",
+          "écureuil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوان کوچک با گوش‌های بلند که هویج دوست دارد، خرگوش (lapin) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal qui a peur du chat et qui est très petit est la ____.",
+        "options": [
+          "souris",
+          "rat",
+          "hérisson",
+          "tortue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوانی که از گربه می‌ترسد و خیلی کوچک است، موش کوچک (souris) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal qui cache des noisettes pour l'hiver est l'____.",
+        "options": [
+          "écureuil",
+          "hérisson",
+          "tortue",
+          "serpent"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوانی که برای زمستان فندق پنهان می‌کند، سنجاب (écureuil) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le reptile sans pattes qui rampe est le ____.",
+        "options": [
+          "serpent",
+          "tortue",
+          "grenouille",
+          "requin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خزنده‌ای بدون پا که می‌خزد، مار (serpent) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'animal qui porte sa maison sur son dos et qui est lent est la ____.",
+        "options": [
+          "tortue",
+          "grenouille",
+          "serpent",
+          "requin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوانی که خانه‌اش را روی پشتش حمل می‌کند و کند است، لاک‌پشت (tortue) است."
+      },
+      {
+        "type": "binary",
+        "question": "« Le hérisson » se met en boule quand il a peur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، جوجه‌تیغی (hérisson) هنگام ترس خود را گلوله می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "« Le requin » est un petit animal qui vit dans les jardins.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، requin (کوسه) یک حیوان بزرگ دریایی است."
+      }
+    ]
+  }
+}
