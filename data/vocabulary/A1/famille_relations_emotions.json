@@ -1,0 +1,410 @@
+{
+  "id": "famille_relations_emotions",
+  "level": "A1",
+  "theme": "Famille, Relations et Émotions",
+  "theme_fa": "خانواده، روابط و احساسات",
+  "icon": "❤️",
+  "inspiration": "Le Petit Nicolas / Amélie Poulain",
+  "words": [
+    {
+      "fr": "pardon",
+      "fa": "ببخشید / عذر می‌خواهم",
+      "emoji": "🙏",
+      "difficulty": 1,
+      "ex": "Pardon, je ne l'ai pas fait exprès.",
+      "ex_fa": "ببخشید، من این کار را عمدی انجام ندادم."
+    },
+    {
+      "fr": "pauvre",
+      "fa": "فقیر",
+      "emoji": "🪙",
+      "difficulty": 2,
+      "ex": "Il faut aider les gens pauvres.",
+      "ex_fa": "باید به مردم فقیر کمک کنیم."
+    },
+    {
+      "fr": "le père",
+      "fa": "پدر",
+      "emoji": "👨",
+      "difficulty": 1,
+      "ex": "Mon père travaille beaucoup pour nous.",
+      "ex_fa": "پدرم برای ما زیاد کار می‌کند."
+    },
+    {
+      "fr": "pleurer",
+      "fa": "گریه کردن",
+      "emoji": "😢",
+      "difficulty": 1,
+      "ex": "L'enfant pleure parce qu'il a perdu son jouet.",
+      "ex_fa": "بچه گریه می‌کند چون اسباب‌بازی‌اش را گم کرده است."
+    },
+    {
+      "fr": "la prière",
+      "fa": "دعا / خواهش",
+      "emoji": "🤲",
+      "difficulty": 2,
+      "ex": "Il dit une prière avant de dormir.",
+      "ex_fa": "او قبل از خواب دعا می‌کند."
+    },
+    {
+      "fr": "regretter",
+      "fa": "پشیمان بودن / حسرت خوردن",
+      "emoji": "😔",
+      "difficulty": 2,
+      "ex": "Je regrette ma décision de partir.",
+      "ex_fa": "من از تصمیمم برای رفتن پشیمانم."
+    },
+    {
+      "fr": "rencontrer",
+      "fa": "ملاقات کردن",
+      "emoji": "🤝",
+      "difficulty": 2,
+      "ex": "J'aimerais rencontrer de nouvelles personnes.",
+      "ex_fa": "دوست دارم آدم‌های جدیدی را ملاقات کنم."
+    },
+    {
+      "fr": "le rendez-vous",
+      "fa": "قرار ملاقات",
+      "emoji": "📅",
+      "difficulty": 1,
+      "ex": "J'ai un rendez-vous chez le médecin à 10h.",
+      "ex_fa": "من ساعت ۱۰ وقت دکتر دارم."
+    },
+    {
+      "fr": "rendre visite à",
+      "fa": "دیدن کسی / عیادت کردن",
+      "emoji": "🏠",
+      "difficulty": 2,
+      "ex": "Je vais rendre visite à mes grands-parents ce week-end.",
+      "ex_fa": "من این آخر هفته به دیدن پدربزرگ و مادربزرگم می‌روم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une journée en famille",
+      "title_fa": "یک روز خانوادگی",
+      "text": "Mon ____ (1) est un homme très gentil. Il aide souvent les gens ____ (2). Hier, j'ai eu un ____ (3) avec lui. Nous avons décidé d'aller ____ (4) ma grand-mère. En chemin, j'ai vu un enfant ____ (5) dans la rue. J'ai dit « ____ (6) » car je l'ai bousculé par erreur. Le soir, j'ai fait une ____ (7) pour ma famille. Je ne vais pas ____ (8) cette journée. J'espère ____ (9) mes amis demain.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "père",
+          "options": [
+            "père",
+            "pardon",
+            "pauvre",
+            "pleurer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pauvres",
+          "options": [
+            "pauvres",
+            "père",
+            "pardon",
+            "prière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "rendez-vous",
+          "options": [
+            "rendez-vous",
+            "regretter",
+            "rencontrer",
+            "rendre visite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "rendre visite à",
+          "options": [
+            "rendre visite à",
+            "rencontrer",
+            "regretter",
+            "pleurer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pleurer",
+          "options": [
+            "pleurer",
+            "pardon",
+            "pauvre",
+            "père"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Pardon",
+          "options": [
+            "Pardon",
+            "Pauvre",
+            "Père",
+            "Prière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "prière",
+          "options": [
+            "prière",
+            "pardon",
+            "pauvre",
+            "père"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "regretter",
+          "options": [
+            "regretter",
+            "rencontrer",
+            "rendre visite",
+            "pleurer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "rencontrer",
+          "options": [
+            "rencontrer",
+            "regretter",
+            "rendre visite",
+            "pleurer"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les liens du cœur",
+      "title_fa": "پیوندهای قلب",
+      "inspiration": "Amélie Poulain",
+      "text": "Le ____ (1) regardait son fils avec tendresse. Il avait toujours enseigné à aider les plus ____ (2). Ce matin-là, il avait un ____ (3) important. Avant de partir, il fit une courte ____ (4) pour demander la force. Il devait ____ (5) son vieux ami à l'hôpital. En route, il entendit quelqu'un ____ (6) de chagrin. « ____ (7) », murmura-t-il en passant, le cœur serré. Il ne voulait pas ____ (8) d'avoir été trop dur autrefois. Il espérait ____ (9) la paix intérieure ce jour-là.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "père",
+          "options": [
+            "père",
+            "pardon",
+            "pauvre",
+            "pleurer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pauvres",
+          "options": [
+            "pauvres",
+            "père",
+            "pardon",
+            "prière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "rendez-vous",
+          "options": [
+            "rendez-vous",
+            "regretter",
+            "rencontrer",
+            "rendre visite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "prière",
+          "options": [
+            "prière",
+            "pardon",
+            "pauvre",
+            "père"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "rendre visite à",
+          "options": [
+            "rendre visite à",
+            "rencontrer",
+            "regretter",
+            "pleurer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "pleurer",
+          "options": [
+            "pleurer",
+            "pardon",
+            "pauvre",
+            "père"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Pardon",
+          "options": [
+            "Pardon",
+            "Pauvre",
+            "Père",
+            "Prière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "regretter",
+          "options": [
+            "regretter",
+            "rencontrer",
+            "rendre visite",
+            "pleurer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "rencontrer",
+          "options": [
+            "rencontrer",
+            "regretter",
+            "rendre visite",
+            "pleurer"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Famille, Relations et Émotions",
+    "title_fa": "آزمون: خانواده، روابط و احساسات",
+    "displayCount": 9,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le mot poli pour s'excuser d'une petite faute est ____.",
+        "options": [
+          "pardon",
+          "pauvre",
+          "père",
+          "prière"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه مؤدبانه برای عذرخواهی به خاطر یک اشتباه کوچک، pardon (ببخشید) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une personne qui n'a pas d'argent est dite ____.",
+        "options": [
+          "pauvre",
+          "père",
+          "pardon",
+          "prière"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که پول ندارد، فقیر (pauvre) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le papa d'un enfant s'appelle le ____.",
+        "options": [
+          "père",
+          "pardon",
+          "pauvre",
+          "prière"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پدر یک کودک، père (پدر) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Verser des larmes quand on est triste, c'est ____.",
+        "options": [
+          "pleurer",
+          "pardon",
+          "pauvre",
+          "père"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ریختن اشک هنگام غمگین بودن، گریه کردن (pleurer) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Parler à Dieu ou demander quelque chose avec ferveur est une ____.",
+        "options": [
+          "prière",
+          "pardon",
+          "pauvre",
+          "père"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "صحبت با خدا یا درخواست چیزی با شور و شوق، دعا (prière) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Avoir des remords après une action, c'est ____.",
+        "options": [
+          "regretter",
+          "rencontrer",
+          "rendre visite",
+          "pleurer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "داشتن عذاب وجدان پس از یک عمل، پشیمان بودن (regretter) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Faire la connaissance de quelqu'un pour la première fois, c'est le ____.",
+        "options": [
+          "rencontrer",
+          "regretter",
+          "rendre visite",
+          "pleurer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آشنا شدن با کسی برای اولین بار، ملاقات کردن (rencontrer) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un moment fixé pour voir quelqu'un (médecin, ami) est un ____.",
+        "options": [
+          "rendez-vous",
+          "regretter",
+          "rencontrer",
+          "rendre visite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زمانی تعیین‌شده برای دیدن کسی (پزشک، دوست)، قرار ملاقات (rendez-vous) است."
+      },
+      {
+        "type": "binary",
+        "question": "« Rendre visite à » signifie aller voir quelqu'un chez lui ou à l'hôpital.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، rendre visite à به معنای دیدن کسی در خانه یا بیمارستان است."
+      }
+    ]
+  }
+}
