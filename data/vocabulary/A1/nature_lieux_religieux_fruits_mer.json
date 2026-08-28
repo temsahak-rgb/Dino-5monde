@@ -1,0 +1,510 @@
+{
+  "id": "nature_lieux_religieux_fruits_mer",
+  "level": "A1",
+  "theme": "Nature, Lieux Religieux et Fruits de Mer",
+  "theme_fa": "طبیعت، مکان‌های مذهبی و غذاهای دریایی",
+  "icon": "🌲",
+  "inspiration": "Le Tour du Monde en 80 Jours",
+  "words": [
+    {
+      "fr": "le temple",
+      "fa": "معبد",
+      "emoji": "⛩️",
+      "difficulty": 2,
+      "ex": "Nous allons visiter un temple ancien.",
+      "ex_fa": "ما می‌رویم از یک معبد قدیمی بازدید کنیم."
+    },
+    {
+      "fr": "la forêt",
+      "fa": "جنگل",
+      "emoji": "🌲",
+      "difficulty": 1,
+      "ex": "Il fait frais et sombre dans la forêt.",
+      "ex_fa": "در جنگل هوا خنک و تاریک است."
+    },
+    {
+      "fr": "l'océan",
+      "fa": "اقیانوس",
+      "emoji": "🌊",
+      "difficulty": 1,
+      "ex": "Nous aimons nager dans l'océan.",
+      "ex_fa": "ما دوست داریم در اقیانوس شنا کنیم."
+    },
+    {
+      "fr": "le bœuf",
+      "fa": "گوشت گاو",
+      "emoji": "🥩",
+      "difficulty": 1,
+      "ex": "Je vais commander un steak de bœuf.",
+      "ex_fa": "من یک استیک گوشت گاو سفارش می‌دهم."
+    },
+    {
+      "fr": "le porc",
+      "fa": "گوشت خوک",
+      "emoji": "🐖",
+      "difficulty": 1,
+      "ex": "Il mange une côtelette de porc.",
+      "ex_fa": "او یک شمشاد گوشت خوک می‌خورد."
+    },
+    {
+      "fr": "l'agneau",
+      "fa": "گوشت بره",
+      "emoji": "🐑",
+      "difficulty": 2,
+      "ex": "Nous avons mangé de l'agneau rôti.",
+      "ex_fa": "ما گوشت بره بریان خوردیم."
+    },
+    {
+      "fr": "le saumon",
+      "fa": "ماهی سالمون",
+      "emoji": "🐟",
+      "difficulty": 2,
+      "ex": "J'adore le saumon fumé.",
+      "ex_fa": "من عاشق ماهی سالمون دودی هستم."
+    },
+    {
+      "fr": "la truite",
+      "fa": "ماهی قزل‌آلا",
+      "emoji": "🐟",
+      "difficulty": 2,
+      "ex": "Il aime pêcher la truite en montagne.",
+      "ex_fa": "او دوست دارد در کوهستان ماهی قزل‌آلا صید کند."
+    },
+    {
+      "fr": "la crevette",
+      "fa": "میگو",
+      "emoji": "🦐",
+      "difficulty": 2,
+      "ex": "Nous avons préparé des crevettes grillées.",
+      "ex_fa": "ما میگوهای کبابی آماده کردیم."
+    },
+    {
+      "fr": "le crabe",
+      "fa": "خرچنگ",
+      "emoji": "🦀",
+      "difficulty": 2,
+      "ex": "Il est difficile de manger du crabe.",
+      "ex_fa": "خوردن خرچنگ دشوار است."
+    },
+    {
+      "fr": "l'huître",
+      "fa": "صدف خوراکی",
+      "emoji": "🦪",
+      "difficulty": 2,
+      "ex": "Il faut savoir ouvrir des huîtres.",
+      "ex_fa": "باید بلد بود چگونه صدف‌ها را باز کرد."
+    },
+    {
+      "fr": "la crème",
+      "fa": "خامه",
+      "emoji": "🥛",
+      "difficulty": 1,
+      "ex": "J'ajoute de la crème fraîche dans la soupe.",
+      "ex_fa": "من مقداری خامه تازه به سوپ اضافه می‌کنم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un repas au bord de l'eau",
+      "title_fa": "یک وعده غذایی در کنار آب",
+      "text": "Aujourd'hui, nous sommes près de l'____ (3). Après une promenade dans la ____ (2), nous avons faim. Au restaurant, mon frère mange du ____ (4) et ma sœur mange du ____ (6). Moi, je préfère les fruits de mer : des ____ (9) grillées, un peu de ____ (10) et des ____ (11) fraîches. Mon père prend un beau ____ (7) et ma mère une ____ (8). Pour le dessert, nous prenons une soupe avec de la ____ (12). Demain, nous visiterons un ____ (1) magnifique.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "temple",
+          "options": [
+            "temple",
+            "forêt",
+            "océan",
+            "bœuf"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "forêt",
+          "options": [
+            "forêt",
+            "temple",
+            "océan",
+            "crème"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "océan",
+          "options": [
+            "océan",
+            "forêt",
+            "temple",
+            "agneau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "bœuf",
+          "options": [
+            "bœuf",
+            "porc",
+            "agneau",
+            "saumon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "porc",
+          "options": [
+            "porc",
+            "bœuf",
+            "agneau",
+            "truite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "agneau",
+          "options": [
+            "agneau",
+            "bœuf",
+            "porc",
+            "crabe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "saumon",
+          "options": [
+            "saumon",
+            "truite",
+            "crevette",
+            "huître"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "truite",
+          "options": [
+            "truite",
+            "saumon",
+            "crabe",
+            "crevette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "crevettes",
+          "options": [
+            "crevettes",
+            "huîtres",
+            "crabes",
+            "truites"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "crabe",
+          "options": [
+            "crabe",
+            "crevette",
+            "huître",
+            "saumon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "huîtres",
+          "options": [
+            "huîtres",
+            "crevettes",
+            "crabes",
+            "truites"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "crème",
+          "options": [
+            "crème",
+            "forêt",
+            "océan",
+            "temple"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les trésors de la terre et de la mer",
+      "title_fa": "گنجینه‌های زمین و دریا",
+      "inspiration": "Vingt Mille Lieues sous les mers",
+      "text": "La nature offre ses dons avec générosité. L'immensité de l'____ (3) nous appelle, tandis que le mystère de la ____ (2) nous apaise. L'homme y trouve sa nourriture : la force du ____ (4), la tendresse de l'____ (6), ou la chair du ____ (5). Les eaux profondes offrent le ____ (7) délicat, la ____ (8) des rivières claires, la ____ (9) rosée, le ____ (10) patient et l'____ (11) mystérieuse. Une touche de ____ (12) sublime le tout. Et pour l'esprit, la sérénité d'un ____ (1) ancien complète ce tableau parfait.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "temple",
+          "options": [
+            "temple",
+            "forêt",
+            "océan",
+            "bœuf"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "forêt",
+          "options": [
+            "forêt",
+            "temple",
+            "océan",
+            "crème"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "océan",
+          "options": [
+            "océan",
+            "forêt",
+            "temple",
+            "agneau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "bœuf",
+          "options": [
+            "bœuf",
+            "porc",
+            "agneau",
+            "saumon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "porc",
+          "options": [
+            "porc",
+            "bœuf",
+            "agneau",
+            "truite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "agneau",
+          "options": [
+            "agneau",
+            "bœuf",
+            "porc",
+            "crabe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "saumon",
+          "options": [
+            "saumon",
+            "truite",
+            "crevette",
+            "huître"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "truite",
+          "options": [
+            "truite",
+            "saumon",
+            "crabe",
+            "crevette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "crevette",
+          "options": [
+            "crevette",
+            "huître",
+            "crabe",
+            "saumon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "crabe",
+          "options": [
+            "crabe",
+            "crevette",
+            "huître",
+            "saumon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "huître",
+          "options": [
+            "huître",
+            "crevette",
+            "crabe",
+            "truite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "crème",
+          "options": [
+            "crème",
+            "forêt",
+            "océan",
+            "temple"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Nature, Lieux Religieux et Fruits de Mer",
+    "title_fa": "آزمون: طبیعت، مکان‌های مذهبی و غذاهای دریایی",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le grand étendue d'eau salée qui couvre la majeure partie de la Terre est l'____.",
+        "options": [
+          "océan",
+          "forêt",
+          "temple",
+          "crème"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پهنه بزرگ آب شور که بخش عمده زمین را می‌پوشاند، اقیانوس (océan) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La viande rouge qui vient de la vache s'appelle le ____.",
+        "options": [
+          "bœuf",
+          "porc",
+          "agneau",
+          "saumon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گوشت قرمزی که از گاو به دست می‌آید، گوشت گاو (bœuf) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit animal marin rose que l'on mange souvent grillé est la ____.",
+        "options": [
+          "crevette",
+          "huître",
+          "crabe",
+          "truite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوان کوچک دریایی صورتی که اغلب کبابی خورده می‌شود، میگو (crevette) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mollusque que l'on ouvre et mange cru avec du citron est l'____.",
+        "options": [
+          "huître",
+          "crevette",
+          "crabe",
+          "saumon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "نرم‌تنی که آن را باز کرده و خام با لیمو می‌خورند، صدف خوراکی (huître) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu de culte des religions comme le bouddhisme ou l'hindouisme est le ____.",
+        "options": [
+          "temple",
+          "forêt",
+          "océan",
+          "hôpital"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکان عبادت ادیانی مانند بودیسم یا هندوئیسم، معبد (temple) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le produit laitier gras et onctueux qu'on ajoute aux sauces ou desserts est la ____.",
+        "options": [
+          "crème",
+          "forêt",
+          "océan",
+          "truite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محصول لبنی چرب و نرمی که به سس‌ها یا دسرها اضافه می‌شود، خامه (crème) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le poisson d'eau douce souvent pêché en rivière ou en montagne est la ____.",
+        "options": [
+          "truite",
+          "saumon",
+          "crevette",
+          "huître"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماهی آب شیرینی که اغلب در رودخانه یا کوهستان صید می‌شود، قزل‌آلا (truite) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La viande qui vient du jeune mouton s'appelle l'____.",
+        "options": [
+          "agneau",
+          "bœuf",
+          "porc",
+          "crabe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گوشتی که از بره جوان به دست می‌آید، گوشت بره (agneau) نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Une « forêt » est un grand espace couvert d'arbres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، forêt به معنای جنگل یا فضای بزرگ پوشیده از درخت است."
+      },
+      {
+        "type": "binary",
+        "question": "Le « crabe » est un fruit qui pousse sur les arbres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، crabe (خرچنگ) یک حیوان دریایی است، نه میوه."
+      }
+    ]
+  }
+}
