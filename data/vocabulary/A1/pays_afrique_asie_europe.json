@@ -1,0 +1,428 @@
+{
+  "id": "pays_afrique_asie_europe",
+  "level": "A1",
+  "theme": "Pays d'Afrique, d'Asie et d'Europe",
+  "theme_fa": "کشورهای آفریقایی، آسیایی و اروپایی",
+  "icon": "🗺️",
+  "inspiration": "Le Petit Prince (Voyage entre les planètes/pays)",
+  "words": [
+    {
+      "fr": "la Tunisie",
+      "fa": "تونس",
+      "emoji": "🇹🇳",
+      "difficulty": 1,
+      "ex": "Les plages de Tunisie sont magnifiques.",
+      "ex_fa": "سواحل تونس فوق‌العاده هستند."
+    },
+    {
+      "fr": "l'Algérie",
+      "fa": "الجزایر",
+      "emoji": "🇩🇿",
+      "difficulty": 1,
+      "ex": "Le désert du Sahara se trouve en partie en Algérie.",
+      "ex_fa": "بیابان صحرا تا حدی در الجزایر قرار دارد."
+    },
+    {
+      "fr": "le Sénégal",
+      "fa": "سنگال",
+      "emoji": "🇸🇳",
+      "difficulty": 2,
+      "ex": "J'adore écouter la musique traditionnelle du Sénégal.",
+      "ex_fa": "من عاشق گوش دادن به موسیقی سنتی سنگال هستم."
+    },
+    {
+      "fr": "le Vietnam",
+      "fa": "ویتنام",
+      "emoji": "🇻🇳",
+      "difficulty": 1,
+      "ex": "La cuisine du Vietnam est très légère et savoureuse.",
+      "ex_fa": "آشپزی ویتنام بسیار سبک و خوشمزه است."
+    },
+    {
+      "fr": "la Thaïlande",
+      "fa": "تایلند",
+      "emoji": "🇹🇭",
+      "difficulty": 1,
+      "ex": "Nous avons visité les beaux temples de Thaïlande.",
+      "ex_fa": "ما از معبدهای زیبای تایلند دیدن کردیم."
+    },
+    {
+      "fr": "la Turquie",
+      "fa": "ترکیه",
+      "emoji": "🇹🇷",
+      "difficulty": 1,
+      "ex": "Istanbul est une ville fascinante en Turquie.",
+      "ex_fa": "استانبول شهری شگفت‌انگیز در ترکیه است."
+    },
+    {
+      "fr": "la Grèce",
+      "fa": "یونان",
+      "emoji": "🇬🇷",
+      "difficulty": 1,
+      "ex": "Les îles de Grèce sont parfaites pour les vacances.",
+      "ex_fa": "جزایر یونان برای تعطیلات عالی هستند."
+    },
+    {
+      "fr": "les Pays-Bas",
+      "fa": "هلند",
+      "emoji": "🇳🇱",
+      "difficulty": 2,
+      "ex": "On peut voir des champs de tulipes aux Pays-Bas.",
+      "ex_fa": "می‌توان مزارع لاله را در هلند دید."
+    },
+    {
+      "fr": "la Suède",
+      "fa": "سوئد",
+      "emoji": "🇸🇪",
+      "difficulty": 2,
+      "ex": "Le design et les meubles de la Suède sont célèbres.",
+      "ex_fa": "طراحی و مبلمان سوئد مشهور است."
+    },
+    {
+      "fr": "la Norvège",
+      "fa": "نروژ",
+      "emoji": "🇳🇴",
+      "difficulty": 2,
+      "ex": "Les fjords de Norvège sont des paysages naturels incroyables.",
+      "ex_fa": "فیوردهای نروژ مناظر طبیعی باورنکردنی هستند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Des cartes postales du monde",
+      "title_fa": "کارت‌پستال‌هایی از جهان",
+      "text": "J'adore collectionner les cartes postales. J'en ai une de la ____ (1) avec ses belles plages. Une autre du ____ (2) avec le grand désert. J'ai aussi une carte du ____ (3) pour sa musique joyeuse. En Asie, j'ai une carte de la ____ (5) avec ses temples dorés, et une du ____ (4) pour ses nouilles délicieuses. J'ai une carte de la ____ (6) pour voir Istanbul, et une de la ____ (7) pour ses îles bleues. En Europe, j'ai une carte des ____ (8) avec des fleurs colorées, une de la ____ (9) pour son style moderne, et une de la ____ (10) pour ses montagnes et ses fjords.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Tunisie",
+          "options": [
+            "Tunisie",
+            "Algérie",
+            "Sénégal",
+            "Vietnam"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "Sahara",
+          "options": [
+            "Sahara",
+            "Tunisie",
+            "Sénégal",
+            "Vietnam"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Sénégal",
+          "options": [
+            "Sénégal",
+            "Algérie",
+            "Tunisie",
+            "Thaïlande"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Vietnam",
+          "options": [
+            "Vietnam",
+            "Thaïlande",
+            "Turquie",
+            "Grèce"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Thaïlande",
+          "options": [
+            "Thaïlande",
+            "Vietnam",
+            "Turquie",
+            "Grèce"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Turquie",
+          "options": [
+            "Turquie",
+            "Grèce",
+            "Pays-Bas",
+            "Suède"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Grèce",
+          "options": [
+            "Grèce",
+            "Turquie",
+            "Norvège",
+            "Suède"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Pays-Bas",
+          "options": [
+            "Pays-Bas",
+            "Suède",
+            "Norvège",
+            "Grèce"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Suède",
+          "options": [
+            "Suède",
+            "Pays-Bas",
+            "Norvège",
+            "Turquie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Norvège",
+          "options": [
+            "Norvège",
+            "Suède",
+            "Pays-Bas",
+            "Grèce"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'atlas des merveilles",
+      "title_fa": "اطلس شگفتی‌ها",
+      "inspiration": "Voyages de Gulliver",
+      "text": "Chaque pays est une page colorée dans l'atlas du monde. La ____ (1) nous offre le soleil et la mer, tandis que le vaste ____ (2) nous raconte des histoires de sable et de vent. Le ____ (3) nous fait danser avec ses rythmes. L'Asie nous émerveille avec la ____ (5) spirituelle et les saveurs du ____ (4). La ____ (6) relie deux continents avec élégance, et la ____ (7) nous invite à rêver sur ses îles blanches. Au nord, les ____ (8) nous offrent un tableau de tulipes, la ____ (9) nous inspire avec son minimalisme, et la ____ (10) nous impressionne avec ses fjords majestueux.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Tunisie",
+          "options": [
+            "Tunisie",
+            "Algérie",
+            "Sénégal",
+            "Vietnam"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "Sahara",
+          "options": [
+            "Sahara",
+            "Tunisie",
+            "Sénégal",
+            "Vietnam"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Sénégal",
+          "options": [
+            "Sénégal",
+            "Algérie",
+            "Tunisie",
+            "Thaïlande"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Vietnam",
+          "options": [
+            "Vietnam",
+            "Thaïlande",
+            "Turquie",
+            "Grèce"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Thaïlande",
+          "options": [
+            "Thaïlande",
+            "Vietnam",
+            "Turquie",
+            "Grèce"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Turquie",
+          "options": [
+            "Turquie",
+            "Grèce",
+            "Pays-Bas",
+            "Suède"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Grèce",
+          "options": [
+            "Grèce",
+            "Turquie",
+            "Norvège",
+            "Suède"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Pays-Bas",
+          "options": [
+            "Pays-Bas",
+            "Suède",
+            "Norvège",
+            "Grèce"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Suède",
+          "options": [
+            "Suède",
+            "Pays-Bas",
+            "Norvège",
+            "Turquie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Norvège",
+          "options": [
+            "Norvège",
+            "Suède",
+            "Pays-Bas",
+            "Grèce"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Pays d'Afrique, d'Asie et d'Europe",
+    "title_fa": "آزمون: کشورهای آفریقایی، آسیایی و اروپایی",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le pays d'Afrique du Nord connu pour ses belles plages méditerranéennes est la ____.",
+        "options": [
+          "Tunisie",
+          "Algérie",
+          "Sénégal",
+          "Maroc"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشور شمال آفریقا که به سواحل زیبای مدیترانه‌ای‌اش معروف است، تونس (Tunisie) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le grand désert qui couvre une partie de l'Algérie est le ____.",
+        "options": [
+          "Sahara",
+          "Kalahari",
+          "Gobi",
+          "Sahel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بیابان بزرگی که بخشی از الجزایر را می‌پوشاند، صحرا (Sahara) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays d'Afrique de l'Ouest connu pour sa musique et sa culture est le ____.",
+        "options": [
+          "Sénégal",
+          "Tunisie",
+          "Égypte",
+          "Maroc"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشور غرب آفریقا که به موسیقی و فرهنگش معروف است، سنگال (Sénégal) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays asiatique célèbre pour ses temples bouddhistes est la ____.",
+        "options": [
+          "Thaïlande",
+          "Turquie",
+          "Grèce",
+          "Suède"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشور آسیایی معروف به معبدهای بودایی، تایلند (Thaïlande) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays qui possède la ville d'Istanbul, à cheval sur deux continents, est la ____.",
+        "options": [
+          "Turquie",
+          "Grèce",
+          "Russie",
+          "Égypte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشوری که شهر استانبول را در خود دارد و بین دو قاره قرار گرفته، ترکیه (Turquie) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays européen célèbre pour ses champs de tulipes et ses vélos est les ____.",
+        "options": [
+          "Pays-Bas",
+          "Suède",
+          "Norvège",
+          "Belgique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشور اروپایی معروف به مزارع لاله و دوچرخه‌ها، هلند (Pays-Bas) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays scandinave connu pour ses paysages de fjords est la ____.",
+        "options": [
+          "Norvège",
+          "Suède",
+          "Grèce",
+          "Turquie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشور اسکاندیناوی که به مناظر فیوردی‌اش معروف است، نروژ (Norvège) است."
+      },
+      {
+        "type": "binary",
+        "question": "« La Grèce » est célèbre pour ses nombreuses îles et son histoire antique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، یونان (Grèce) به خاطر جزایر متعدد و تاریخ باستانی‌اش مشهور است."
+      }
+    ]
+  }
+}
