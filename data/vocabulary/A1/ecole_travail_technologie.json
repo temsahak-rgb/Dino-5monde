@@ -1,0 +1,284 @@
+{
+  "id": "ecole_travail_technologie",
+  "level": "A1",
+  "theme": "École, Travail et Technologie",
+  "theme_fa": "مدرسه، کار و فناوری",
+  "icon": "🏫",
+  "inspiration": "Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "savoir",
+      "fa": "دانستن",
+      "emoji": "🧠",
+      "difficulty": 1,
+      "ex": "Je ne sais pas la réponse à cette question.",
+      "ex_fa": "من جواب این سؤال را نمی‌دانم."
+    },
+    {
+      "fr": "la série",
+      "fa": "سریال",
+      "emoji": "📺",
+      "difficulty": 1,
+      "ex": "J'adore regarder une série le week-end.",
+      "ex_fa": "من عاشق تماشای سریال در آخر هفته هستم."
+    },
+    {
+      "fr": "le stylo",
+      "fa": "خودکار",
+      "emoji": "🖊️",
+      "difficulty": 1,
+      "ex": "Peux-tu me prêter ton stylo bleu ?",
+      "ex_fa": "می‌توانی خودکار آبی‌ات را به من قرض بدهی؟"
+    },
+    {
+      "fr": "télécharger",
+      "fa": "دانلود کردن",
+      "emoji": "⬇️",
+      "difficulty": 2,
+      "ex": "Je vais télécharger une nouvelle application.",
+      "ex_fa": "من می‌خواهم یک برنامه جدید دانلود کنم."
+    },
+    {
+      "fr": "le texto",
+      "fa": "پیامک",
+      "emoji": "💬",
+      "difficulty": 1,
+      "ex": "J'envoie un texto à mon ami.",
+      "ex_fa": "من یک پیامک به دوستم می‌فرستم."
+    },
+    {
+      "fr": "travailler",
+      "fa": "کار کردن",
+      "emoji": "💼",
+      "difficulty": 1,
+      "ex": "Je travaille dur pour réussir mes examens.",
+      "ex_fa": "من سخت کار می‌کنم تا در امتحاناتم موفق شوم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une journée d'étudiant",
+      "title_fa": "یک روز دانشجویی",
+      "text": "Je dois beaucoup ____ (6) pour mes examens. Je ne ____ (1) pas tout, alors je demande de l'aide. J'écris mes notes avec un ____ (3). Après les cours, je rentre chez moi. J'aime ____ (4) une nouvelle musique sur mon téléphone. Ensuite, j'envoie un ____ (5) à mon ami pour discuter. Le soir, je me détends en regardant une ____ (2) à la télévision.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "sais",
+          "options": [
+            "sais",
+            "travaille",
+            "télécharge",
+            "envoie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "série",
+          "options": [
+            "série",
+            "stylo",
+            "texto",
+            "savoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "stylo",
+          "options": [
+            "stylo",
+            "série",
+            "texto",
+            "savoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "télécharger",
+          "options": [
+            "télécharger",
+            "travailler",
+            "savoir",
+            "texto"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "texto",
+          "options": [
+            "texto",
+            "série",
+            "stylo",
+            "savoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "travailler",
+          "options": [
+            "travailler",
+            "télécharger",
+            "savoir",
+            "texto"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'ère numérique",
+      "title_fa": "عصر دیجیتال",
+      "inspiration": "Le Petit Nicolas",
+      "text": "Pour ____ (6) efficacement, il faut de la concentration. Parfois, on ne ____ (1) pas par où commencer. On prend un ____ (3) et on note ses idées. La technologie aide : on peut ____ (4) des documents utiles en un clic. Un rapide ____ (5) suffit pour organiser un rendez-vous. Et pour se récompenser après l'effort, rien de tel qu'un épisode d'une bonne ____ (2).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "sait",
+          "options": [
+            "sait",
+            "travaille",
+            "télécharge",
+            "envoie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "série",
+          "options": [
+            "série",
+            "stylo",
+            "texto",
+            "savoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "stylo",
+          "options": [
+            "stylo",
+            "série",
+            "texto",
+            "savoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "télécharger",
+          "options": [
+            "télécharger",
+            "travailler",
+            "savoir",
+            "texto"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "texto",
+          "options": [
+            "texto",
+            "série",
+            "stylo",
+            "savoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "travailler",
+          "options": [
+            "travailler",
+            "télécharger",
+            "savoir",
+            "texto"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : École, Travail et Technologie",
+    "title_fa": "آزمون: مدرسه، کار و فناوری",
+    "displayCount": 6,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le verbe qui signifie « دانستن » (یک حقیقت یا مهارت) est ____.",
+        "options": [
+          "savoir",
+          "travailler",
+          "télécharger",
+          "envoyer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعلی که به معنای دانستن (یک حقیقت یا مهارت) است، savoir می‌باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "Un programme télévisé avec plusieurs épisodes s'appelle une ____.",
+        "options": [
+          "série",
+          "stylo",
+          "texto",
+          "savoir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برنامه تلویزیونی با چندین قسمت، سریال (série) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objet qu'on utilise pour écrire à l'encre est le ____.",
+        "options": [
+          "stylo",
+          "série",
+          "texto",
+          "savoir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیئی که با آن با جوهر می‌نویسیم، خودکار (stylo) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de transférer un fichier depuis internet vers son appareil est ____.",
+        "options": [
+          "télécharger",
+          "travailler",
+          "savoir",
+          "texto"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل انتقال فایل از اینترنت به دستگاه، دانلود کردن (télécharger) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un message court envoyé par téléphone est un ____.",
+        "options": [
+          "texto",
+          "série",
+          "stylo",
+          "savoir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پیام کوتاهی که با تلفن ارسال می‌شود، پیامک (texto) است."
+      },
+      {
+        "type": "binary",
+        "question": "« Travailler » signifie faire un effort pour accomplir une tâche.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، travailler به معنای تلاش برای انجام یک وظیفه یا کار کردن است."
+      }
+    ]
+  }
+}
