@@ -1,0 +1,520 @@
+{
+  "id": "pack_82_malentendu_ambiguite",
+  "level": "B2",
+  "theme": "Malentendu et ambiguïté dans la communication",
+  "theme_fa": "سوءتفاهم و ابهام در ارتباطات",
+  "icon": "🎭",
+  "inspiration": "Les Liaisons dangereuses de Choderlos de Laclos",
+  "words": [
+    {
+      "fr": "le quiproquo (m)",
+      "fa": "سوءتفاهم (اشتباه گرفتن چیزی به جای چیز دیگر)",
+      "emoji": "🔄",
+      "difficulty": 5,
+      "ex": "Un quiproquo a éclaté quand il a pris son frère pour son cousin.",
+      "ex_fa": "یک سوءتفاهم رخ داد وقتی او برادرش را با پسرعمویش اشتباه گرفت."
+    },
+    {
+      "fr": "le malentendu (m)",
+      "fa": "سوءتفاهم",
+      "emoji": "💭",
+      "difficulty": 3,
+      "ex": "Ce malentendu a causé une dispute inutile.",
+      "ex_fa": "این سوءتفاهم باعث یک دعوای بیهوده شد."
+    },
+    {
+      "fr": "l'ambiguïté (f)",
+      "fa": "ابهام",
+      "emoji": "🌫️",
+      "difficulty": 4,
+      "ex": "L'ambiguïté de sa réponse m'a troublé.",
+      "ex_fa": "ابهام پاسخ او مرا آشفته کرد."
+    },
+    {
+      "fr": "ambigu(e)",
+      "fa": "مبهم، دوپهلو",
+      "emoji": "🔀",
+      "difficulty": 3,
+      "ex": "Sa conduite était ambiguë.",
+      "ex_fa": "رفتار او دوپهلو بود."
+    },
+    {
+      "fr": "l'équivoque (f)",
+      "fa": "ایهام، ابهام",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "Il a parlé avec une équivoque calculée.",
+      "ex_fa": "او با ایهامی حساب‌شده سخن گفت."
+    },
+    {
+      "fr": "équivoque",
+      "fa": "مبهم، دوپهلو",
+      "emoji": "🎲",
+      "difficulty": 4,
+      "ex": "Ses paroles étaient équivoques.",
+      "ex_fa": "سخنان او مبهم بودند."
+    },
+    {
+      "fr": "l'implicite (m)",
+      "fa": "مفهوم ضمنی",
+      "emoji": "🕵️",
+      "difficulty": 4,
+      "ex": "L'implicite du message était clair pour tous.",
+      "ex_fa": "مفهوم ضمنی پیام برای همه روشن بود."
+    },
+    {
+      "fr": "le sous-entendu (m)",
+      "fa": "کنایه، مفهوم پنهان",
+      "emoji": "🤫",
+      "difficulty": 4,
+      "ex": "Ses sous-entendus étaient blessants.",
+      "ex_fa": "کنایه‌های او آزاردهنده بودند."
+    },
+    {
+      "fr": "sous-entendre",
+      "fa": "به کنایه گفتن",
+      "emoji": "💬",
+      "difficulty": 4,
+      "ex": "Que sous-entends-tu par cette remarque ?",
+      "ex_fa": "از این اشاره چه کنایه‌ای می‌زنی؟"
+    },
+    {
+      "fr": "l'interprétation (f)",
+      "fa": "تفسیر",
+      "emoji": "🔍",
+      "difficulty": 3,
+      "ex": "Son interprétation du texte était originale.",
+      "ex_fa": "تفسیر او از متن اصلی بود."
+    },
+    {
+      "fr": "interpréter",
+      "fa": "تفسیر کردن",
+      "emoji": "📖",
+      "difficulty": 2,
+      "ex": "Comment dois-je interpréter ce silence ?",
+      "ex_fa": "چگونه باید این سکوت را تفسیر کنم؟"
+    },
+    {
+      "fr": "déformer",
+      "fa": "تحریف کردن",
+      "emoji": "🔧",
+      "difficulty": 3,
+      "ex": "Il a déformé mes propos.",
+      "ex_fa": "او سخنان مرا تحریف کرد."
+    },
+    {
+      "fr": "la déformation (f)",
+      "fa": "تحریف",
+      "emoji": "🪞",
+      "difficulty": 4,
+      "ex": "La déformation de la vérité est inacceptable.",
+      "ex_fa": "تحریف حقیقت غیرقابل قبول است."
+    },
+    {
+      "fr": "tronquer",
+      "fa": "ناقص نقل کردن، سانسور کردن",
+      "emoji": "✂️",
+      "difficulty": 5,
+      "ex": "Le journaliste a tronqué ses déclarations.",
+      "ex_fa": "روزنامه‌نگار اظهارات او را ناقص نقل کرد."
+    },
+    {
+      "fr": "l'omission (f)",
+      "fa": "حذف، سهو",
+      "emoji": "🚫",
+      "difficulty": 4,
+      "ex": "L'omission de ce détail a tout changé.",
+      "ex_fa": "حذف این جزئیات همه چیز را تغییر داد."
+    },
+    {
+      "fr": "omettre",
+      "fa": "از قلم انداختن",
+      "emoji": "⚠️",
+      "difficulty": 3,
+      "ex": "Il a omis de mentionner son nom.",
+      "ex_fa": "او از ذکر نامش خودداری کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le message mal compris",
+      "title_fa": "پیام بدفهمیده",
+      "text": "Lundi matin, un {{BLANK_1}} éclata au bureau. La directrice avait envoyé un courriel dont le ton était {{BLANK_2}}. Chacun l'{{BLANK_3}} à sa manière : certains crurent à une menace, d'autres à une simple plaisanterie. En réalité, elle voulait {{BLANK_4}} une critique indirecte, mais personne ne le comprit. Son assistant, mal à l'aise, décida de ne rien {{BLANK_5}} dans son rapport, de peur d'aggraver la situation. Plus tard, un collègue {{BLANK_6}} volontairement les faits pour se protéger. Cette {{BLANK_7}} de la réalité provoqua une réunion tendue. Finalement, on découvrit que tout était parti d'un {{BLANK_8}} : la directrice avait confondu deux dossiers différents.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "malentendu",
+          "options": [
+            "malentendu",
+            "accord",
+            "projet",
+            "succès"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ambigu",
+          "options": [
+            "ambigu",
+            "clair",
+            "simple",
+            "direct"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "interpréta",
+          "options": [
+            "interpréta",
+            "effaça",
+            "apprit",
+            "refusa"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "sous-entendre",
+          "options": [
+            "sous-entendre",
+            "crier",
+            "écrire",
+            "chanter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "omettre",
+          "options": [
+            "omettre",
+            "ajouter",
+            "lire",
+            "copier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "déforma",
+          "options": [
+            "déforma",
+            "répéta",
+            "corrigea",
+            "publia"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "déformation",
+          "options": [
+            "déformation",
+            "traduction",
+            "lecture",
+            "écriture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "quiproquo",
+          "options": [
+            "quiproquo",
+            "marché",
+            "contrat",
+            "voyage"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les jeux de l'ombre",
+      "title_fa": "بازی‌های سایه",
+      "inspiration": "Les Liaisons dangereuses de Choderlos de Laclos",
+      "text": "Dans les salons parisiens du XVIIIe siècle, l'art de la conversation était un champ de bataille. La marquise de Merteuil y excellait. Elle maniait {{BLANK_9}} avec une virtuosité rare, laissant ses interlocuteurs dans le doute. Chaque phrase qu'elle prononçait était volontairement {{BLANK_10}}, chargée de plusieurs sens possibles. Ses {{BLANK_11}} blessaient plus sûrement qu'une épée. Personne n'osait affronter directement cette {{BLANK_12}} savante. Le vicomte de Valmont, son complice, {{BLANK_13}} les lettres de leurs victimes pour mieux les manipuler. Il ne supportait aucune {{BLANK_14}} dans ses propres messages : chaque mot devait porter un seul sens, mais calculé. Un jour, une jeune femme osa {{BLANK_15}} une de ses lettres. Elle y découvrit la vérité : des années de mensonges. L'{{BLANK_16}} de certains noms dans les documents scella leur chute. Ainsi, dans ce monde de masques, la parole n'était qu'une arme déguisée.",
+      "blanks": [
+        {
+          "id": 9,
+          "answer": "l'équivoque",
+          "options": [
+            "l'équivoque",
+            "la clarté",
+            "la franchise",
+            "la simplicité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "équivoque",
+          "options": [
+            "équivoque",
+            "évidente",
+            "honnête",
+            "brutale"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "sous-entendus",
+          "options": [
+            "sous-entendus",
+            "compliments",
+            "silences",
+            "rires"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ambiguïté",
+          "options": [
+            "ambiguïté",
+            "transparence",
+            "franchise",
+            "honnêteté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "interprétait",
+          "options": [
+            "interprétait",
+            "brûlait",
+            "ignorait",
+            "publiait"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "équivoque",
+          "options": [
+            "équivoque",
+            "clarté",
+            "simplicité",
+            "franchise"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "omettre",
+          "options": [
+            "omettre",
+            "ajouter",
+            "copier",
+            "citer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "omission",
+          "options": [
+            "omission",
+            "répétition",
+            "lecture",
+            "écriture"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Malentendu et ambiguïté",
+    "title_fa": "آزمون : سوءتفاهم و ابهام",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Il a pris son voisin pour le facteur : quel ____ s'est produit !",
+        "options": [
+          "quiproquo",
+          "accord",
+          "contrat",
+          "voyage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Quiproquo زمانی رخ می‌دهد که شخصی یا چیزی با شخص یا چیز دیگری اشتباه گرفته شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Tout ce conflit n'est né que d'un simple ____ entre amis.",
+        "options": [
+          "malentendu",
+          "projet",
+          "marché",
+          "succès"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Malentendu یعنی سوءتفاهم، اشتباه در فهمیدن منظور طرف مقابل."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"ambiguïté\" d'une phrase signifie qu'elle peut être comprise de plusieurs façons différentes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، ابهام یعنی امکان برداشت‌های متعدد از یک جمله."
+      },
+      {
+        "type": "mcq",
+        "question": "Sa réponse était volontairement ____ pour ne pas s'engager.",
+        "options": [
+          "ambiguë",
+          "claire",
+          "simple",
+          "directe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Ambigu به معنای دوپهلو است، یعنی فرد عمداً موضع مشخصی نمی‌گیرد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le diplomate a répondu avec une ____ calculée pour gagner du temps.",
+        "options": [
+          "équivoque",
+          "franchise",
+          "clarté",
+          "honnêteté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Équivoque یعنی ایهام، پاسخی که معانی متعدد دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Une parole \"équivoque\" est toujours claire et sans ambiguïté.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، équivoque دقیقاً به معنای مبهم و دوپهلو است."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans son discours, il n'a rien dit explicitement, tout restait dans ____.",
+        "options": [
+          "l'implicite",
+          "l'évidence",
+          "la clarté",
+          "la franchise"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Implicite یعنی مفهوم ضمنی، چیزی که گفته نشده ولی قابل فهم است."
+      },
+      {
+        "type": "mcq",
+        "question": "Ses ____ étaient si blessants que personne n'osait lui répondre.",
+        "options": [
+          "sous-entendus",
+          "compliments",
+          "rires",
+          "silences"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Sous-entendu یعنی کنایه، حرفی که مستقیماً زده نمی‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "\"Sous-entendre\" signifie dire quelque chose clairement et directement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، sous-entendre یعنی به طور غیرمستقیم و با کنایه منظور را رساندن."
+      },
+      {
+        "type": "mcq",
+        "question": "Chaque lecteur a sa propre ____ de ce roman complexe.",
+        "options": [
+          "interprétation",
+          "copie",
+          "traduction",
+          "lecture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Interprétation یعنی تفسیر شخصی از یک متن یا رویداد."
+      },
+      {
+        "type": "mcq",
+        "question": "Comment dois-je ____ ce long silence après ma question ?",
+        "options": [
+          "interpréter",
+          "effacer",
+          "oublier",
+          "copier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Interpréter یعنی معنا کردن و فهمیدن منظور یک رفتار یا گفتار."
+      },
+      {
+        "type": "binary",
+        "question": "\"Déformer\" les propos de quelqu'un signifie les rapporter fidèlement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، déformer یعنی تحریف کردن و تغییر دادن معنای اصلی."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ des faits par certains médias est souvent dénoncée.",
+        "options": [
+          "déformation",
+          "traduction",
+          "lecture",
+          "écriture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Déformation یعنی تحریف واقعیت و ارائه نادرست آن."
+      },
+      {
+        "type": "mcq",
+        "question": "Le monteur a décidé de ____ la scène pour raccourcir le film.",
+        "options": [
+          "tronquer",
+          "allonger",
+          "copier",
+          "répéter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Tronquer یعنی ناقص کردن، بریدن بخشی از یک متن یا فیلم."
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ de son nom dans la liste officielle a causé sa colère.",
+        "options": [
+          "omission",
+          "répétition",
+          "lecture",
+          "écriture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Omission یعنی از قلم انداختن و ذکر نکردن چیزی که باید گفته می‌شد."
+      },
+      {
+        "type": "binary",
+        "question": "\"Omettre\" de faire quelque chose signifie le faire avec beaucoup d'attention.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، omettre یعنی فراموش کردن یا عمداً انجام ندادن کاری."
+      }
+    ]
+  }
+}
