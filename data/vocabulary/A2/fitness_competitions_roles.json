@@ -1,0 +1,542 @@
+{
+  "id": "fitness_competitions_roles",
+  "level": "A2",
+  "theme": "Fitness, Compétitions et Rôles Sportifs",
+  "theme_fa": "تناسب اندام، مسابقات و نقش‌های ورزشی",
+  "icon": "🧘‍♀️",
+  "inspiration": "Champions",
+  "words": [
+    {
+      "fr": "le yoga",
+      "fa": "یوگا",
+      "emoji": "🧘",
+      "difficulty": 1,
+      "ex": "Elle fait du yoga pour se détendre.",
+      "ex_fa": "او برای آرامش یوگا انجام می‌دهد."
+    },
+    {
+      "fr": "le pilates",
+      "fa": "پیلاتس",
+      "emoji": "🤸",
+      "difficulty": 2,
+      "ex": "Le pilates renforce les muscles profonds.",
+      "ex_fa": "پیلاتس عضلات عمقی را تقویت می‌کند."
+    },
+    {
+      "fr": "le stretching",
+      "fa": "حرکات کششی",
+      "emoji": "🧘‍♂️",
+      "difficulty": 2,
+      "ex": "Le stretching est essentiel après l'effort.",
+      "ex_fa": "حرکات کششی بعد از تلاش ضروری است."
+    },
+    {
+      "fr": "l'échauffement",
+      "fa": "گرم کردن",
+      "emoji": "🔥",
+      "difficulty": 2,
+      "ex": "L'échauffement évite les blessures.",
+      "ex_fa": "گرم کردن از آسیب‌دیدگی جلوگیری می‌کند."
+    },
+    {
+      "fr": "l'entraînement",
+      "fa": "تمرین",
+      "emoji": "💪",
+      "difficulty": 1,
+      "ex": "Son entraînement est très intensif.",
+      "ex_fa": "تمرین او بسیار فشرده است."
+    },
+    {
+      "fr": "la compétition",
+      "fa": "مسابقه",
+      "emoji": "🏆",
+      "difficulty": 1,
+      "ex": "Il rêve de gagner une compétition.",
+      "ex_fa": "او رویای بردن یک مسابقه را در سر دارد."
+    },
+    {
+      "fr": "le championnat",
+      "fa": "قهرمانی",
+      "emoji": "🥇",
+      "difficulty": 2,
+      "ex": "Le championnat de France commence en septembre.",
+      "ex_fa": "قهرمانی فرانسه در سپتامبر شروع می‌شود."
+    },
+    {
+      "fr": "la coupe",
+      "fa": "جام",
+      "emoji": "🏆",
+      "difficulty": 1,
+      "ex": "L'équipe a soulevé la coupe avec fierté.",
+      "ex_fa": "تیم با افتخار جام را بالا برد."
+    },
+    {
+      "fr": "la médaille",
+      "fa": "مدال",
+      "emoji": "🥇",
+      "difficulty": 1,
+      "ex": "Elle a remporté une médaille d'or.",
+      "ex_fa": "او یک مدال طلا به دست آورد."
+    },
+    {
+      "fr": "le trophée",
+      "fa": "جام / تندیس",
+      "emoji": "🏆",
+      "difficulty": 2,
+      "ex": "Remporter le trophée est son objectif.",
+      "ex_fa": "به دست آوردن جام هدف اوست."
+    },
+    {
+      "fr": "le joueur",
+      "fa": "بازیکن",
+      "emoji": "⚽",
+      "difficulty": 1,
+      "ex": "C'est un excellent joueur de tennis.",
+      "ex_fa": "او یک بازیکن تنیس عالی است."
+    },
+    {
+      "fr": "l'arbitre",
+      "fa": "داور",
+      "emoji": "🦓",
+      "difficulty": 2,
+      "ex": "Il faut toujours écouter les décisions de l'arbitre.",
+      "ex_fa": "همیشه باید به تصمیمات داور گوش داد."
+    },
+    {
+      "fr": "le spectateur",
+      "fa": "تماشاگر",
+      "emoji": "👀",
+      "difficulty": 2,
+      "ex": "Les spectateurs applaudissent à la fin du match.",
+      "ex_fa": "تماشاگران در پایان مسابقه تشویق می‌کنند."
+    },
+    {
+      "fr": "le supporter",
+      "fa": "هوادار",
+      "emoji": "📣",
+      "difficulty": 2,
+      "ex": "Le supporter encourage son équipe avec passion.",
+      "ex_fa": "هوادار با اشتیاق از تیمش حمایت می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le chemin de la victoire",
+      "title_fa": "مسیر پیروزی",
+      "text": "Pour réussir dans le sport, tout commence par un bon ____ (4) avant chaque séance. Ensuite, vient l'____ (5) quotidien. Certains préfèrent le ____ (1) ou le ____ (2) pour la souplesse, suivi de ____ (3). Le but ultime est la ____ (6). Dans un grand ____ (7), chaque ____ (11) donne le meilleur de lui-même sous le regard de l'____ (12). Dans les gradins, chaque ____ (13) et ____ (14) crie de joie. Si l'équipe gagne, elle soulève la ____ (8) ou le ____ (10), et chaque membre reçoit une ____ (9).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "yoga",
+          "options": [
+            "yoga",
+            "pilates",
+            "stretching",
+            "compétition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pilates",
+          "options": [
+            "pilates",
+            "yoga",
+            "championnat",
+            "médaille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "stretching",
+          "options": [
+            "stretching",
+            "coupe",
+            "trophée",
+            "arbitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "échauffement",
+          "options": [
+            "échauffement",
+            "spectateur",
+            "supporter",
+            "joueur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "entraînement",
+          "options": [
+            "entraînement",
+            "médaille",
+            "coupe",
+            "trophée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "compétition",
+          "options": [
+            "compétition",
+            "yoga",
+            "pilates",
+            "stretching"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "championnat",
+          "options": [
+            "championnat",
+            "échauffement",
+            "entraînement",
+            "arbitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "coupe",
+          "options": [
+            "coupe",
+            "trophée",
+            "médaille",
+            "joueur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "médaille",
+          "options": [
+            "médaille",
+            "coupe",
+            "trophée",
+            "spectateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "trophée",
+          "options": [
+            "trophée",
+            "médaille",
+            "coupe",
+            "supporter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "joueur",
+          "options": [
+            "joueur",
+            "arbitre",
+            "spectateur",
+            "supporter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "arbitre",
+          "options": [
+            "arbitre",
+            "joueur",
+            "spectateur",
+            "supporter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "spectateur",
+          "options": [
+            "spectateur",
+            "supporter",
+            "joueur",
+            "arbitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "supporter",
+          "options": [
+            "supporter",
+            "spectateur",
+            "joueur",
+            "arbitre"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La gloire éphémère",
+      "title_fa": "شکوه زودگذر",
+      "inspiration": "Les Chariots de feu",
+      "text": "La sueur de l'____ (5) forge le destin. Avant l'effort, le rituel du ____ (4) prépare le corps, tandis que le ____ (1) et le ____ (2) apaisent l'esprit. Le ____ (3) étire les muscles vers l'infini. Sur le terrain de la ____ (6), lors d'un ____ (7) décisif, le ____ (11) devient un guerrier. L'____ (12) veille au grain. Dans les tribunes, le ____ (13) retient son souffle, et le ____ (14) exulte. Au sommet, ce n'est pas seulement la ____ (8) ou le ____ (10) qui compte, mais la ____ (9) qui brille sur la poitrine, symbole d'un dépassement absolu.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "yoga",
+          "options": [
+            "yoga",
+            "pilates",
+            "stretching",
+            "compétition"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pilates",
+          "options": [
+            "pilates",
+            "yoga",
+            "championnat",
+            "médaille"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "stretching",
+          "options": [
+            "stretching",
+            "coupe",
+            "trophée",
+            "arbitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "échauffement",
+          "options": [
+            "échauffement",
+            "spectateur",
+            "supporter",
+            "joueur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "entraînement",
+          "options": [
+            "entraînement",
+            "médaille",
+            "coupe",
+            "trophée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "compétition",
+          "options": [
+            "compétition",
+            "yoga",
+            "pilates",
+            "stretching"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "championnat",
+          "options": [
+            "championnat",
+            "échauffement",
+            "entraînement",
+            "arbitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "coupe",
+          "options": [
+            "coupe",
+            "trophée",
+            "médaille",
+            "joueur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "médaille",
+          "options": [
+            "médaille",
+            "coupe",
+            "trophée",
+            "spectateur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "trophée",
+          "options": [
+            "trophée",
+            "médaille",
+            "coupe",
+            "supporter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "joueur",
+          "options": [
+            "joueur",
+            "arbitre",
+            "spectateur",
+            "supporter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "arbitre",
+          "options": [
+            "arbitre",
+            "joueur",
+            "spectateur",
+            "supporter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "spectateur",
+          "options": [
+            "spectateur",
+            "supporter",
+            "joueur",
+            "arbitre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "supporter",
+          "options": [
+            "supporter",
+            "spectateur",
+            "joueur",
+            "arbitre"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Fitness et Compétitions",
+    "title_fa": "آزمون: تناسب اندام و مسابقات",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La séance préparatoire pour éviter les blessures avant le sport est l'____.",
+        "options": [
+          "échauffement",
+          "stretching",
+          "yoga",
+          "compétition"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جلسه آماده‌سازی برای جلوگیری از آسیب قبل از ورزش، گرم کردن (échauffement) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui veille au respect des règles pendant un match est l'____.",
+        "options": [
+          "arbitre",
+          "joueur",
+          "spectateur",
+          "supporter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که بر رعایت قوانین در طول مسابقه نظارت می‌کند، داور (arbitre) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'objet en métal qu'on reçoit pour une première place est une ____.",
+        "options": [
+          "médaille",
+          "coupe",
+          "trophée",
+          "entraînement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شیء فلزی که برای مقام اول دریافت می‌شود، مدال (médaille) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui regarde un spectacle sportif dans les gradins est un ____.",
+        "options": [
+          "spectateur",
+          "joueur",
+          "arbitre",
+          "entraîneur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که یک رویداد ورزشی را از سکوهای تماشا می‌کند، تماشاگر (spectateur) است."
+      },
+      {
+        "type": "binary",
+        "question": "« Le stretching » désigne les étirements musculaires.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، stretching به معنای حرکات کششی عضلانی است."
+      },
+      {
+        "type": "binary",
+        "question": "Un « supporter » est une personne neutre qui n'encourage aucune équipe.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، هوادار (supporter) کسی است که با اشتیاق از یک تیم خاص حمایت می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "« Le championnat » est une série de matchs pour déterminer le meilleur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، قهرمانی (championnat) سری از مسابقات برای تعیین بهترین است."
+      },
+      {
+        "type": "binary",
+        "question": "« Le pilates » et « le yoga » sont des activités qui favorisent la souplesse et le calme.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، پیلاتس و یوگا فعالیت‌هایی هستند که انعطاف‌پذیری و آرامش را تقویت می‌کنند."
+      }
+    ]
+  }
+}
