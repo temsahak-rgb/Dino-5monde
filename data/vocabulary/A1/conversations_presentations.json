@@ -4,7 +4,7 @@
   "theme": "Conversations Quotidiennes et Présentations",
   "theme_fa": "مکالمات روزمره و معرفی",
   "icon": "💬",
-  "inspiration": "French in Action",
+  "inspiration": "French in Action / Le Petit Nicolas",
   "words": [
     {
       "fr": "Ça va ?",
@@ -32,11 +32,11 @@
     },
     {
       "fr": "comme ci, comme ça",
-      "fa": "نه خوبم نه بد / این‌طور و آن‌طور",
+      "fa": "نه خوبم نه بد",
       "emoji": "🤷",
       "difficulty": 2,
       "ex": "Bof, comme ci, comme ça.",
-      "ex_fa": "اِه، نه خوبم نه بد (این‌طور و آن‌طور)."
+      "ex_fa": "اِه، نه خوبم نه بد."
     },
     {
       "fr": "Comment tu t'appelles ?",
@@ -67,8 +67,8 @@
       "fa": "... سالمه",
       "emoji": "🎈",
       "difficulty": 1,
-      "ex": "J'ai vingt-cinq ans.",
-      "ex_fa": "من بیست و پنج سالمه."
+      "ex": "J'ai vingt ans.",
+      "ex_fa": "من بیست سالمه."
     },
     {
       "fr": "D'où viens-tu ?",
@@ -80,7 +80,7 @@
     },
     {
       "fr": "Je viens de...",
-      "fa": "اهل ... هستم / از ... می‌آیم",
+      "fa": "اهل ... هستم",
       "emoji": "✈️",
       "difficulty": 1,
       "ex": "Je viens d'Iran.",
@@ -88,11 +88,11 @@
     },
     {
       "fr": "Qu'est-ce que tu fais ?",
-      "fa": "چیکار می‌کنی؟ / شغلت چیه؟",
+      "fa": "چیکار می‌کنی؟ (شغل)",
       "emoji": "💼",
-      "difficulty": 1,
+      "difficulty": 2,
       "ex": "Qu'est-ce que tu fais dans la vie ?",
-      "ex_fa": "در زندگی چه کار می‌کنی؟ (شغلت چیه؟)"
+      "ex_fa": "در زندگی چه کار می‌کنی؟"
     },
     {
       "fr": "Où habites-tu ?",
@@ -123,7 +123,7 @@
     "simple": {
       "title": "Une nouvelle rencontre",
       "title_fa": "یک آشنایی جدید",
-      "text": "Salut ! ____ (1) ? ____ (2), et toi ? Bof, ____ (4), je suis un peu fatigué. ____ (5) ? Je m'appelle Léa. Et toi ? ____ (6) Thomas. ____ (7) ? ____ (8) vingt ans. Et toi ? J'ai vingt-deux ans. ____ (9) ? ____ (10) Lyon. ____ (12) ? J'habite dans le centre-ville. ____ (11) ? Je suis étudiant. ____ (13) la musique ? Oui, j'adore ! ____ (14) ? C'est le 06 12 34 56 78.",
+      "text": "Salut ! ____ (1) ? ____ (2). Et toi ? Bof, ____ (4), je suis un peu fatigué. ____ (5) ? Je m'appelle Léa. Et toi ? ____ (6) Thomas. ____ (7) ? ____ (8) vingt ans. Et toi ? J'ai vingt-deux ans. ____ (9) ? ____ (10) Lyon. ____ (12) ? J'habite dans le centre-ville. ____ (11) ? Je suis étudiant. ____ (13) la musique ? Oui, j'adore ! ____ (14) ? C'est le 06 12 34 56 78.",
       "blanks": [
         {
           "id": 1,
@@ -285,7 +285,7 @@
       "title": "Le café des voyageurs",
       "title_fa": "کافه مسافران",
       "inspiration": "Amélie Poulain",
-      "text": "Dans ce petit café, les regards se croisent. « ____ (1) ? » demande le serveur avec un sourire. « ____ (2), » répond le voyageur, « mais mon cœur est un peu lourd, alors disons ____ (4). » « ____ (5) ? » « ____ (6) l'Étranger. » « ____ (9) avant de poser tes valises ici ? » « ____ (10) loin, d'un pays de montagnes. » « Et maintenant, ____ (12) ? » « Juste au coin de la rue. » « ____ (11) dans la vie ? » « Je cherche des histoires. » « ____ (13) les raconter ? » « Plus que tout. » « Alors, ____ (14), pour qu'on se revoie. »",
+      "text": "Dans ce petit café, les regards se croisent. « ____ (1) ? » demande le serveur avec un sourire. « ____ (2), » répond le voyageur, « mais mon cœur est un peu lourd, alors disons ____ (4). » « ____ (5) ? » « ____ (6) l'Étranger. » « ____ (9) avant de poser tes valises ici ? » « ____ (10) de loin, d'un pays de montagnes. » « Et maintenant, ____ (12) ? » « Juste au coin de la rue. » « ____ (11) dans la vie ? » « Je cherche des histoires. » « ____ (13) les raconter ? » « Plus que tout. » « Alors, donne-moi ton ____ (14), pour qu'on se revoie. »",
       "blanks": [
         {
           "id": 1,
@@ -355,10 +355,10 @@
         },
         {
           "id": 10,
-          "answer": "Je viens de",
+          "answer": "Je viens",
           "options": [
-            "Je viens de",
-            "J'habite à",
+            "Je viens",
+            "J'habite",
             "Je suis",
             "J'aime"
           ],
@@ -399,12 +399,12 @@
         },
         {
           "id": 14,
-          "answer": "Quel est ton numéro",
+          "answer": "numéro",
           "options": [
-            "Quel est ton numéro",
-            "Quel est ton âge",
-            "Où est ta maison",
-            "Quel est ton nom"
+            "numéro",
+            "âge",
+            "nom",
+            "pays"
           ],
           "correctIndex": 0
         }
