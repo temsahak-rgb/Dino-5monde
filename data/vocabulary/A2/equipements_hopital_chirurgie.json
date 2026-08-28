@@ -1,0 +1,550 @@
+{
+  "id": "equipements_hopital_chirurgie",
+  "level": "A2",
+  "theme": "Équipements Médicaux, Hôpital et Chirurgie",
+  "theme_fa": "تجهیزات پزشکی، بیمارستان و جراحی",
+  "icon": "🏥",
+  "inspiration": "Urgences (ER)",
+  "words": [
+    {
+      "fr": "le plâtre",
+      "fa": "گچ (عضو شکسته)",
+      "emoji": "🦴",
+      "difficulty": 2,
+      "ex": "Il a un plâtre au bras suite à sa chute.",
+      "ex_fa": "او پس از سقوط، دستش گچ گرفته است."
+    },
+    {
+      "fr": "la chaise roulante",
+      "fa": "صندلی چرخدار / ویلچر",
+      "emoji": "🦽",
+      "difficulty": 2,
+      "ex": "Le patient se déplace en chaise roulante.",
+      "ex_fa": "بیمار با ویلچر جابه‌جا می‌شود."
+    },
+    {
+      "fr": "les béquilles",
+      "fa": "عصای زیر بغل",
+      "emoji": "🩼",
+      "difficulty": 2,
+      "ex": "Elle marche avec des béquilles après l'opération.",
+      "ex_fa": "او بعد از عمل با عصای زیر بغل راه می‌رود."
+    },
+    {
+      "fr": "l'ambulance",
+      "fa": "آمبولانس",
+      "emoji": "🚑",
+      "difficulty": 1,
+      "ex": "Il faut appeler une ambulance en cas d'urgence.",
+      "ex_fa": "در موارد اضطراری باید با آمبولانس تماس گرفت."
+    },
+    {
+      "fr": "les urgences",
+      "fa": "اورژانس",
+      "emoji": "🚨",
+      "difficulty": 1,
+      "ex": "Il a été transporté aux urgences immédiatement.",
+      "ex_fa": "او فوراً به اورژانس منتقل شد."
+    },
+    {
+      "fr": "la consultation",
+      "fa": "ویزیت / مشاوره",
+      "emoji": "🩺",
+      "difficulty": 2,
+      "ex": "La consultation chez le spécialiste dure 30 minutes.",
+      "ex_fa": "ویزیت نزد متخصص ۳۰ دقیقه طول می‌کشد."
+    },
+    {
+      "fr": "le rendez-vous médical",
+      "fa": "وقت دکتر",
+      "emoji": "📅",
+      "difficulty": 2,
+      "ex": "J'ai pris un rendez-vous médical pour demain.",
+      "ex_fa": "من برای فردا وقت دکتر گرفته‌ام."
+    },
+    {
+      "fr": "la prise de sang",
+      "fa": "آزمایش خون",
+      "emoji": "🩸",
+      "difficulty": 2,
+      "ex": "L'infirmière va faire une prise de sang.",
+      "ex_fa": "پرستار قرار است آزمایش خون بگیرد."
+    },
+    {
+      "fr": "la radiographie",
+      "fa": "رادیولوژی / عکس‌برداری",
+      "emoji": "🩻",
+      "difficulty": 2,
+      "ex": "La radiographie a montré une fracture.",
+      "ex_fa": "عکس رادیولوژی شکستگی را نشان داد."
+    },
+    {
+      "fr": "l'échographie",
+      "fa": "سونوگرافی",
+      "emoji": "👶",
+      "difficulty": 2,
+      "ex": "L'échographie permet de voir le bébé.",
+      "ex_fa": "سونوگرافی امکان دیدن نوزاد را فراهم می‌کند."
+    },
+    {
+      "fr": "le scanner",
+      "fa": "سی‌تی اسکن",
+      "emoji": "💻",
+      "difficulty": 3,
+      "ex": "Le scanner donne des images détaillées du corps.",
+      "ex_fa": "سی‌تی اسکن تصاویر دقیقی از بدن ارائه می‌دهد."
+    },
+    {
+      "fr": "l'IRM",
+      "fa": "ام‌آر‌آی (MRI)",
+      "emoji": "🧲",
+      "difficulty": 3,
+      "ex": "Le médecin a prescrit une IRM cérébrale.",
+      "ex_fa": "پزشک ام‌آر‌آی مغز تجویز کرد."
+    },
+    {
+      "fr": "la chirurgie",
+      "fa": "جراحی",
+      "emoji": "🔪",
+      "difficulty": 2,
+      "ex": "La chirurgie cardiaque est une spécialité complexe.",
+      "ex_fa": "جراحی قلب یک تخصص پیچیده است."
+    },
+    {
+      "fr": "l'opération",
+      "fa": "عمل جراحی",
+      "emoji": "🏥",
+      "difficulty": 2,
+      "ex": "Il doit subir une opération demain matin.",
+      "ex_fa": "او باید فردا صبح تحت عمل جراحی قرار گیرد."
+    },
+    {
+      "fr": "l'anesthésie",
+      "fa": "بیهوشی",
+      "emoji": "💉",
+      "difficulty": 3,
+      "ex": "Le patient est sous anesthésie générale.",
+      "ex_fa": "بیمار تحت بیهوشی عمومی است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une visite à l'hôpital",
+      "title_fa": "یک بازدید از بیمارستان",
+      "text": "J'ai eu un accident de vélo. J'ai dû appeler une ____ (4) pour m'emmener aux ____ (5). À l'hôpital, j'ai eu une ____ (6) avec le médecin. Il a demandé une ____ (9) pour vérifier mes os, et peut-être un ____ (11) ou une ____ (12) pour plus de détails. J'ai aussi dû faire une ____ (8). Le diagnostic est une fracture : j'aurai besoin d'une ____ (14) sous ____ (15). Après, je porterai un ____ (1) et je marcherai avec des ____ (3). Si c'est plus grave, j'utiliserai une ____ (2). J'ai déjà un ____ (7) pour le suivi.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "plâtre",
+          "options": [
+            "plâtre",
+            "chaise roulante",
+            "béquilles",
+            "scanner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "chaise roulante",
+          "options": [
+            "chaise roulante",
+            "plâtre",
+            "béquilles",
+            "ambulance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "béquilles",
+          "options": [
+            "béquilles",
+            "plâtre",
+            "chaise roulante",
+            "pansement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "ambulance",
+          "options": [
+            "ambulance",
+            "urgences",
+            "consultation",
+            "radiographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "urgences",
+          "options": [
+            "urgences",
+            "ambulance",
+            "consultation",
+            "opération"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "consultation",
+          "options": [
+            "consultation",
+            "opération",
+            "anesthésie",
+            "prise de sang"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "rendez-vous médical",
+          "options": [
+            "rendez-vous médical",
+            "échographie",
+            "scanner",
+            "IRM"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "prise de sang",
+          "options": [
+            "prise de sang",
+            "chirurgie",
+            "anesthésie",
+            "plâtre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "radiographie",
+          "options": [
+            "radiographie",
+            "échographie",
+            "scanner",
+            "IRM"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "scanner",
+          "options": [
+            "scanner",
+            "échographie",
+            "IRM",
+            "radiographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "IRM",
+          "options": [
+            "IRM",
+            "scanner",
+            "échographie",
+            "radiographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "opération",
+          "options": [
+            "opération",
+            "chirurgie",
+            "anesthésie",
+            "consultation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "anesthésie",
+          "options": [
+            "anesthésie",
+            "opération",
+            "chirurgie",
+            "consultation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "chaise roulante",
+          "options": [
+            "chaise roulante",
+            "plâtre",
+            "béquilles",
+            "ambulance"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les mains qui soignent",
+      "title_fa": "دستانی که شفا می‌دهند",
+      "inspiration": "Le Médecin malgré lui",
+      "text": "L'hôpital est un lieu de combat et d'espoir. Dès l'arrivée en ____ (5), une ____ (4) transporte les cas graves. Après une rapide ____ (6) et une ____ (8), les médecins décident du protocole. Une simple ____ (9) peut révéler un mal profond, nécessitant un ____ (11) ou une ____ (12) plus poussée. Parfois, seule la ____ (13) ou une ____ (14) délicate peut sauver le patient. Sous ____ (15), les chirurgiens opèrent avec précision. Après l'effort, le repos arrive, parfois avec un ____ (1), des ____ (3) ou une ____ (2), en attendant un prochain ____ (7) pour vérifier la ____ (15: guérison - *note: adjusted for flow*).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "plâtre",
+          "options": [
+            "plâtre",
+            "chaise roulante",
+            "béquilles",
+            "scanner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "chaise roulante",
+          "options": [
+            "chaise roulante",
+            "plâtre",
+            "béquilles",
+            "ambulance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "béquilles",
+          "options": [
+            "béquilles",
+            "plâtre",
+            "chaise roulante",
+            "pansement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "ambulance",
+          "options": [
+            "ambulance",
+            "urgences",
+            "consultation",
+            "radiographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "urgences",
+          "options": [
+            "urgences",
+            "ambulance",
+            "consultation",
+            "opération"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "consultation",
+          "options": [
+            "consultation",
+            "opération",
+            "anesthésie",
+            "prise de sang"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "rendez-vous médical",
+          "options": [
+            "rendez-vous médical",
+            "échographie",
+            "scanner",
+            "IRM"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "prise de sang",
+          "options": [
+            "prise de sang",
+            "chirurgie",
+            "anesthésie",
+            "plâtre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "radiographie",
+          "options": [
+            "radiographie",
+            "échographie",
+            "scanner",
+            "IRM"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "scanner",
+          "options": [
+            "scanner",
+            "échographie",
+            "IRM",
+            "radiographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "IRM",
+          "options": [
+            "IRM",
+            "scanner",
+            "échographie",
+            "radiographie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "opération",
+          "options": [
+            "opération",
+            "chirurgie",
+            "anesthésie",
+            "consultation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "chirurgie",
+          "options": [
+            "chirurgie",
+            "opération",
+            "anesthésie",
+            "consultation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "anesthésie",
+          "options": [
+            "anesthésie",
+            "opération",
+            "chirurgie",
+            "consultation"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Hôpital et Chirurgie",
+    "title_fa": "آزمون: بیمارستان و جراحی",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le véhicule d'urgence qui transporte les malades est l'____.",
+        "options": [
+          "ambulance",
+          "chaise roulante",
+          "béquilles",
+          "scanner"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله نقلیه اضطراری که بیماران را جابه‌جا می‌کند، آمبولانس (ambulance) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'examen qui utilise des rayons X pour voir les os est la ____.",
+        "options": [
+          "radiographie",
+          "échographie",
+          "IRM",
+          "prise de sang"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آزمایشی که از اشعه ایکس برای دیدن استخوان‌ها استفاده می‌کند، رادیولوژی (radiographie) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'état d'insensibilité à la douleur pendant une opération s'appelle l'____.",
+        "options": [
+          "anesthésie",
+          "chirurgie",
+          "consultation",
+          "guérison"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حالت بی‌حسی نسبت به درد در حین عمل، بیهوشی (anesthésie) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "L'appareil qui aide une personne à marcher quand elle a une jambe blessée est des ____.",
+        "options": [
+          "béquilles",
+          "plâtre",
+          "chaise roulante",
+          "pansement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله‌ای که به فرد با پای آسیب‌دیده کمک می‌کند راه برود، عصای زیر بغل (béquilles) است."
+      },
+      {
+        "type": "binary",
+        "question": "« Les urgences » est le service de l'hôpital pour les cas graves et immédiats.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، اورژانس (urgences) بخش بیمارستان برای موارد شدید و فوری است."
+      },
+      {
+        "type": "binary",
+        "question": "Une « échographie » utilise des ondes sonores pour voir l'intérieur du corps, comme un bébé.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، سونوگرافی (échographie) از امواج صوتی برای دیدن داخل بدن استفاده می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "Le « plâtre » est utilisé pour soigner une fièvre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، گچ (plâtre) برای ثابت نگه داشتن استخوان شکسته استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« La chirurgie » et « l'opération » sont des termes très proches désignant un acte médical invasif.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، جراحی و عمل جراحی اصطلاحاتی بسیار نزدیک به هم هستند."
+      }
+    ]
+  }
+}
