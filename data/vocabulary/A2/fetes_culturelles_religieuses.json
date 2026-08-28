@@ -1,0 +1,253 @@
+{
+  "id": "fetes_culturelles_religieuses",
+  "level": "A2",
+  "theme": "Fêtes Culturelles, Religieuses et Mondiales",
+  "theme_fa": "جشن‌های فرهنگی، مذهبی و جهانی",
+  "icon": "🎊",
+  "inspiration": "Le Tour du Monde en 80 Jours",
+  "words": [
+    {
+      "fr": "le carnaval",
+      "fa": "کارناوال",
+      "emoji": "🎭",
+      "difficulty": 1,
+      "ex": "Les gens aiment danser et se déguiser au carnaval.",
+      "ex_fa": "مردم دوست دارند در کارناوال برقصند و لباس مبدل بپوشند."
+    },
+    {
+      "fr": "la Halloween",
+      "fa": "هالووین",
+      "emoji": "🎃",
+      "difficulty": 1,
+      "ex": "Les enfants se déguisent pour la Halloween.",
+      "ex_fa": "بچه‌ها برای هالووین لباس مبدل می‌پوشند."
+    },
+    {
+      "fr": "Thanksgiving",
+      "fa": "روز شکرگزاری",
+      "emoji": "🦃",
+      "difficulty": 2,
+      "ex": "La dinde est le plat traditionnel de Thanksgiving.",
+      "ex_fa": "بوقلمون غذای سنتی روز شکرگزاری است."
+    },
+    {
+      "fr": "le Ramadan",
+      "fa": "ماه رمضان",
+      "emoji": "🌙",
+      "difficulty": 2,
+      "ex": "Les musulmans jeûnent pendant le Ramadan.",
+      "ex_fa": "مسلمانان در طول ماه رمضان روزه می‌گیرند."
+    },
+    {
+      "fr": "l'Aïd",
+      "fa": "عید (فطر/قربان)",
+      "emoji": "🕌",
+      "difficulty": 2,
+      "ex": "On célèbre l'Aïd en famille avec de bons repas.",
+      "ex_fa": "عید را در کنار خانواده با غذاهای خوب جشن می‌گیرند."
+    },
+    {
+      "fr": "Hanoukka",
+      "fa": "حنوکا",
+      "emoji": "🕎",
+      "difficulty": 3,
+      "ex": "On allume les bougies de la menorah pendant Hanoukka.",
+      "ex_fa": "در طول حنوکا شمع‌های منورا را روشن می‌کنند."
+    },
+    {
+      "fr": "le Yom Kippour",
+      "fa": "یوم کیپور",
+      "emoji": "🕍",
+      "difficulty": 3,
+      "ex": "Le Yom Kippour est le jour du grand pardon.",
+      "ex_fa": "یوم کیپور روز آمرزش بزرگ است."
+    },
+    {
+      "fr": "le Diwali",
+      "fa": "دیوالی (جشن نور)",
+      "emoji": "🪔",
+      "difficulty": 3,
+      "ex": "Le Diwali est célébré avec des milliers de lumières.",
+      "ex_fa": "دیوالی با هزاران نور جشن گرفته می‌شود."
+    },
+    {
+      "fr": "le Nouvel An chinois",
+      "fa": "سال نوی چینی",
+      "emoji": "🐉",
+      "difficulty": 2,
+      "ex": "Le dragon est un symbole du Nouvel An chinois.",
+      "ex_fa": "اژدها نماد سال نوی چینی است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les fêtes du monde",
+      "title_fa": "جشن‌های جهان",
+      "text": "Le monde est riche en célébrations. En automne, on fête ____ (2) avec des costumes effrayants. Aux États-Unis, on mange de la dinde pour ____ (3). En hiver, les musulmans observent le jeûne du ____ (4) avant de célébrer l'____ (5). Les juifs célèbrent ____ (6) et le ____ (7). En Inde, le ____ (8) illumine les nuits. En Asie, le ____ (9) est marqué par des défilés de dragons. Et partout, le ____ (1) de Rio ou de Venise attire les foules avec ses couleurs.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "carnaval",
+          "options": [
+            "carnaval",
+            "Halloween",
+            "Ramadan",
+            "Diwali"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "la Halloween",
+          "options": [
+            "la Halloween",
+            "Thanksgiving",
+            "l'Aïd",
+            "Hanoukka"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Thanksgiving",
+          "options": [
+            "Thanksgiving",
+            "Nouvel An chinois",
+            "Yom Kippour",
+            "carnaval"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Ramadan",
+          "options": [
+            "Ramadan",
+            "Aïd",
+            "Diwali",
+            "Hanoukka"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Aïd",
+          "options": [
+            "Aïd",
+            "Ramadan",
+            "Yom Kippour",
+            "Halloween"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Hanoukka",
+          "options": [
+            "Hanoukka",
+            "Diwali",
+            "Nouvel An chinois",
+            "carnaval"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Yom Kippour",
+          "options": [
+            "Yom Kippour",
+            "Hanoukka",
+            "Aïd",
+            "Ramadan"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Diwali",
+          "options": [
+            "Diwali",
+            "Nouvel An chinois",
+            "Halloween",
+            "Thanksgiving"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Nouvel An chinois",
+          "options": [
+            "Nouvel An chinois",
+            "Diwali",
+            "Yom Kippour",
+            "carnaval"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Fêtes Culturelles et Religieuses",
+    "title_fa": "آزمون: جشن‌های فرهنگی و مذهبی",
+    "displayCount": 6,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La fête où l'on se déguise en monstres le 31 octobre est ____.",
+        "options": [
+          "la Halloween",
+          "le carnaval",
+          "Thanksgiving",
+          "le Diwali"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جشنی که در ۳۱ اکتبر لباس هیولا می‌پوشند، هالووین (la Halloween) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mois de jeûne observé par les musulmans est le ____.",
+        "options": [
+          "Ramadan",
+          "Aïd",
+          "Hanoukka",
+          "Yom Kippour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماه روزه‌داری مسلمانان، رمضان (Ramadan) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La fête des lumières célébrée en Inde s'appelle le ____.",
+        "options": [
+          "Diwali",
+          "Nouvel An chinois",
+          "carnaval",
+          "Thanksgiving"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جشن نور که در هند برگزار می‌شود، دیوالی (Diwali) نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "« Thanksgiving » est une fête traditionnelle aux États-Unis et au Canada.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، روز شکرگزاری یک جشن سنتی در آمریکا و کانادا است."
+      },
+      {
+        "type": "binary",
+        "question": "« Hanoukka » est une fête chrétienne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، حنوکا یک جشن یهودی است."
+      }
+    ]
+  }
+}
