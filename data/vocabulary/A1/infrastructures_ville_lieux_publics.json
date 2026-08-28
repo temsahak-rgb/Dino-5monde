@@ -1,0 +1,570 @@
+{
+  "id": "infrastructures_ville_lieux_publics",
+  "level": "A1",
+  "theme": "Infrastructures de la Ville et Lieux Publics",
+  "theme_fa": "زیرساخت‌های شهر و مکان‌های عمومی",
+  "icon": "🏙️",
+  "inspiration": "Un jour à Paris",
+  "words": [
+    {
+      "fr": "l'avenue",
+      "fa": "خیابان اصلی / بلوار",
+      "emoji": "🛣️",
+      "difficulty": 1,
+      "ex": "Nous marchons sur l'avenue principale.",
+      "ex_fa": "ما در بلوار اصلی پیاده‌روی می‌کنیم."
+    },
+    {
+      "fr": "le boulevard",
+      "fa": "بلوار",
+      "emoji": "🌳",
+      "difficulty": 1,
+      "ex": "Il y a de beaux arbres sur ce boulevard.",
+      "ex_fa": "درختان زیبایی در این بلوار وجود دارد."
+    },
+    {
+      "fr": "le parc",
+      "fa": "پارک",
+      "emoji": "🌳",
+      "difficulty": 1,
+      "ex": "Les enfants jouent dans le parc.",
+      "ex_fa": "بچه‌ها در پارک بازی می‌کنند."
+    },
+    {
+      "fr": "la gare",
+      "fa": "ایستگاه قطار",
+      "emoji": "🚉",
+      "difficulty": 1,
+      "ex": "Le train arrive à la gare à midi.",
+      "ex_fa": "قطار ظهر به ایستگاه می‌رسد."
+    },
+    {
+      "fr": "l'hôtel",
+      "fa": "هتل",
+      "emoji": "🏨",
+      "difficulty": 1,
+      "ex": "Nous avons réservé une chambre d'hôtel.",
+      "ex_fa": "ما یک اتاق هتل رزرو کرده‌ایم."
+    },
+    {
+      "fr": "le restaurant",
+      "fa": "رستوران",
+      "emoji": "🍽️",
+      "difficulty": 1,
+      "ex": "Nous dînons au restaurant ce soir.",
+      "ex_fa": "امشب در رستوران شام می‌خوریم."
+    },
+    {
+      "fr": "la galerie d'art",
+      "fa": "گالری هنری",
+      "emoji": "🖼️",
+      "difficulty": 2,
+      "ex": "J'aime visiter la galerie d'art le dimanche.",
+      "ex_fa": "من دوست دارم یکشنبه‌ها از گالری هنری بازدید کنم."
+    },
+    {
+      "fr": "le théâtre",
+      "fa": "تئاتر",
+      "emoji": "🎭",
+      "difficulty": 1,
+      "ex": "Nous allons au théâtre pour voir une pièce.",
+      "ex_fa": "ما برای دیدن یک نمایش به تئاتر می‌رویم."
+    },
+    {
+      "fr": "le cinéma",
+      "fa": "سینما",
+      "emoji": "🎬",
+      "difficulty": 1,
+      "ex": "Il y a une nouvelle séance de cinéma.",
+      "ex_fa": "یک سانس جدید سینما وجود دارد."
+    },
+    {
+      "fr": "l'université",
+      "fa": "دانشگاه",
+      "emoji": "🎓",
+      "difficulty": 1,
+      "ex": "Elle étudie la médecine à l'université.",
+      "ex_fa": "او در دانشگاه پزشکی می‌خواند."
+    },
+    {
+      "fr": "l'hôpital",
+      "fa": "بیمارستان",
+      "emoji": "🏥",
+      "difficulty": 1,
+      "ex": "Il faut aller à l'hôpital en cas d'urgence.",
+      "ex_fa": "در موارد اضطراری باید به بیمارستان رفت."
+    },
+    {
+      "fr": "la pharmacie",
+      "fa": "داروخانه",
+      "emoji": "💊",
+      "difficulty": 1,
+      "ex": "J'achète des médicaments à la pharmacie.",
+      "ex_fa": "من داروها را از داروخانه می‌خرم."
+    },
+    {
+      "fr": "la police",
+      "fa": "کلانتری / پلیس",
+      "emoji": "🚔",
+      "difficulty": 1,
+      "ex": "En cas de problème, allez au commissariat de police.",
+      "ex_fa": "در صورت مشکل، به کلانتری بروید."
+    },
+    {
+      "fr": "la synagogue",
+      "fa": "کنیسه",
+      "emoji": "✡️",
+      "difficulty": 2,
+      "ex": "Les fidèles vont prier à la synagogue.",
+      "ex_fa": "مؤمنان برای نماز به کنیسه می‌روند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une journée en ville",
+      "title_fa": "یک روز در شهر",
+      "text": "Aujourd'hui, je me promène en ville. Je marche sur un grand ____ (2) puis sur une ____ (1). Je vais au ____ (3) pour voir les enfants jouer. Ensuite, je vais à la ____ (4) pour prendre mon train. Après le voyage, je vais à l'____ (5) pour dormir. Le soir, je mange au ____ (6). Demain, je vais visiter une ____ (7), puis aller au ____ (8) et au ____ (9). Si je suis malade, je vais à l'____ (10) ou à la ____ (11). En cas de danger, j'appelle la ____ (12). Le dimanche, je vais aussi à l'____ (13) ou à la ____ (14) pour me recueillir.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "avenue",
+          "options": [
+            "avenue",
+            "gare",
+            "hôpital",
+            "police"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "boulevard",
+          "options": [
+            "boulevard",
+            "parc",
+            "cinéma",
+            "théâtre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "parc",
+          "options": [
+            "parc",
+            "hôtel",
+            "restaurant",
+            "université"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "gare",
+          "options": [
+            "gare",
+            "pharmacie",
+            "synagogue",
+            "police"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "hôtel",
+          "options": [
+            "hôtel",
+            "hôpital",
+            "université",
+            "galerie d'art"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "restaurant",
+          "options": [
+            "restaurant",
+            "cinéma",
+            "théâtre",
+            "parc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "galerie d'art",
+          "options": [
+            "galerie d'art",
+            "pharmacie",
+            "police",
+            "gare"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "théâtre",
+          "options": [
+            "théâtre",
+            "hôpital",
+            "université",
+            "synagogue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cinéma",
+          "options": [
+            "cinéma",
+            "pharmacie",
+            "police",
+            "gare"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "hôpital",
+          "options": [
+            "hôpital",
+            "université",
+            "hôtel",
+            "restaurant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pharmacie",
+          "options": [
+            "pharmacie",
+            "police",
+            "synagogue",
+            "gare"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "police",
+          "options": [
+            "police",
+            "pharmacie",
+            "hôpital",
+            "université"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "université",
+          "options": [
+            "université",
+            "gare",
+            "hôtel",
+            "restaurant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "synagogue",
+          "options": [
+            "synagogue",
+            "police",
+            "pharmacie",
+            "hôpital"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le cœur de la métropole",
+      "title_fa": "قلب کلان‌شهر",
+      "inspiration": "Les Misérables",
+      "text": "La ville est un organisme vivant. On flâne le long du ____ (2) bordé d'arbres, ou sur l'____ (1) animée. Le ____ (3) offre un poumon vert aux habitants. La ____ (4) est le point de départ de mille voyages. Le voyageur fatigué trouve refuge à l'____ (5), tandis que les gourmands se régalent au ____ (6). L'esprit se nourrit à la ____ (7), au ____ (8) ou au ____ (9). Le savoir se transmet à l'____ (13). En cas de souffrance, l'____ (10) et la ____ (11) veillent. Pour l'ordre, il y a la ____ (12), et pour l'âme, la ____ (14).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "avenue",
+          "options": [
+            "avenue",
+            "gare",
+            "hôpital",
+            "police"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "boulevard",
+          "options": [
+            "boulevard",
+            "parc",
+            "cinéma",
+            "théâtre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "parc",
+          "options": [
+            "parc",
+            "hôtel",
+            "restaurant",
+            "université"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "gare",
+          "options": [
+            "gare",
+            "pharmacie",
+            "synagogue",
+            "police"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "hôtel",
+          "options": [
+            "hôtel",
+            "hôpital",
+            "université",
+            "galerie d'art"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "restaurant",
+          "options": [
+            "restaurant",
+            "cinéma",
+            "théâtre",
+            "parc"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "galerie d'art",
+          "options": [
+            "galerie d'art",
+            "pharmacie",
+            "police",
+            "gare"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "théâtre",
+          "options": [
+            "théâtre",
+            "hôpital",
+            "université",
+            "synagogue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "cinéma",
+          "options": [
+            "cinéma",
+            "pharmacie",
+            "police",
+            "gare"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "hôpital",
+          "options": [
+            "hôpital",
+            "université",
+            "hôtel",
+            "restaurant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "pharmacie",
+          "options": [
+            "pharmacie",
+            "police",
+            "synagogue",
+            "gare"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "police",
+          "options": [
+            "police",
+            "pharmacie",
+            "hôpital",
+            "université"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "université",
+          "options": [
+            "université",
+            "gare",
+            "hôtel",
+            "restaurant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "synagogue",
+          "options": [
+            "synagogue",
+            "police",
+            "pharmacie",
+            "hôpital"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Infrastructures de la Ville et Lieux Publics",
+    "title_fa": "آزمون: زیرساخت‌های شهر و مکان‌های عمومی",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'endroit où l'on prend le train s'appelle la ____.",
+        "options": [
+          "gare",
+          "pharmacie",
+          "police",
+          "synagogue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که در آن سوار قطار می‌شویم، ایستگاه قطار (gare) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu où l'on dort quand on voyage s'appelle l'____.",
+        "options": [
+          "hôtel",
+          "hôpital",
+          "université",
+          "galerie d'art"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که هنگام سفر در آن می‌خوابیم، هتل (hôtel) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu où l'on achète des médicaments est la ____.",
+        "options": [
+          "pharmacie",
+          "police",
+          "synagogue",
+          "gare"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که در آن دارو می‌خریم، داروخانه (pharmacie) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu où l'on va pour étudier après le lycée est l'____.",
+        "options": [
+          "université",
+          "gare",
+          "hôtel",
+          "restaurant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که برای تحصیل بعد از دبیرستان به آنجا می‌رویم، دانشگاه (université) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu où l'on va en cas de maladie grave ou d'accident est l'____.",
+        "options": [
+          "hôpital",
+          "université",
+          "hôtel",
+          "restaurant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که در صورت بیماری شدید یا تصادف به آنجا می‌رویم، بیمارستان (hôpital) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu où l'on va pour signaler un crime ou un délit est le commissariat de ____.",
+        "options": [
+          "police",
+          "pharmacie",
+          "synagogue",
+          "gare"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که برای گزارش جرم یا بزهکاری به آنجا می‌رویم، کلانتری پلیس (police) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu de culte de la religion juive est la ____.",
+        "options": [
+          "synagogue",
+          "police",
+          "pharmacie",
+          "hôpital"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکان عبادت دین یهود، کنیسه (synagogue) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le lieu où l'on peut voir des expositions de peinture et de sculpture est la ____.",
+        "options": [
+          "galerie d'art",
+          "pharmacie",
+          "police",
+          "gare"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که می‌توان در آن نمایشگاه‌های نقاشی و مجسمه‌سازی را دید، گالری هنری (galerie d'art) است."
+      },
+      {
+        "type": "binary",
+        "question": "Un « boulevard » est généralement une rue large, souvent bordée d'arbres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، boulevard به معنای بلوار یا خیابان عریض و اغلب درخت‌کاری شده است."
+      },
+      {
+        "type": "binary",
+        "question": "On va au « théâtre » pour regarder un film sur grand écran.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، برای دیدن فیلم روی پرده بزرگ به سینما (cinéma) می‌رویم، نه تئاتر."
+      }
+    ]
+  }
+}
