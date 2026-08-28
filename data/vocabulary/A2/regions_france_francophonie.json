@@ -1,0 +1,576 @@
+{
+  "id": "regions_france_francophonie",
+  "level": "A2",
+  "theme": "Régions de France, Francophonie et Petits Pays",
+  "theme_fa": "مناطق فرانسه، فرانکوفونی و کشورهای کوچک",
+  "icon": "🏰",
+  "inspiration": "Le Tour de la France par deux enfants",
+  "words": [
+    {
+      "fr": "la Normandie",
+      "fa": "نرماندی",
+      "emoji": "🧀",
+      "difficulty": 1,
+      "ex": "Le camembert est un fromage célèbre de Normandie.",
+      "ex_fa": "کامامبر یک پنیر معروف اهل نرماندی است."
+    },
+    {
+      "fr": "l'Alsace",
+      "fa": "آلزاس",
+      "emoji": "🎄",
+      "difficulty": 1,
+      "ex": "Les marchés de Noël en Alsace sont magiques.",
+      "ex_fa": "بازارهای کریسمس در آلزاس جادویی هستند."
+    },
+    {
+      "fr": "la Bourgogne",
+      "fa": "بورگوین",
+      "emoji": "🍷",
+      "difficulty": 2,
+      "ex": "La Bourgogne est réputée pour ses grands vins.",
+      "ex_fa": "بورگوین به خاطر شراب‌های عالی‌اش شهرت دارد."
+    },
+    {
+      "fr": "la Champagne",
+      "fa": "شامپاین",
+      "emoji": "🥂",
+      "difficulty": 1,
+      "ex": "Le vrai champagne vient de la région Champagne.",
+      "ex_fa": "شامپاین واقعی از منطقه شامپاین می‌آید."
+    },
+    {
+      "fr": "la Savoie",
+      "fa": "ساووا",
+      "emoji": "⛷️",
+      "difficulty": 2,
+      "ex": "On va faire du ski dans les Alpes, en Savoie.",
+      "ex_fa": "ما برای اسکی به آلپ، در ساووا می‌رویم."
+    },
+    {
+      "fr": "la Côte d'Azur",
+      "fa": "کوت دازور (ریویرا)",
+      "emoji": "🏖️",
+      "difficulty": 1,
+      "ex": "Le soleil brille toute l'année sur la Côte d'Azur.",
+      "ex_fa": "خورشید در تمام طول سال در کوت دازور می‌درخشد."
+    },
+    {
+      "fr": "le Pays basque",
+      "fa": "باسک",
+      "emoji": "🌶️",
+      "difficulty": 2,
+      "ex": "La gastronomie du Pays basque est très épicée.",
+      "ex_fa": "آشپزی منطقه باسک بسیار پرادویه است."
+    },
+    {
+      "fr": "le Québec",
+      "fa": "کبک",
+      "emoji": "🍁",
+      "difficulty": 1,
+      "ex": "L'hiver au Québec est long et enneigé.",
+      "ex_fa": "زمستان در کبک طولانی و برفی است."
+    },
+    {
+      "fr": "l'Acadie",
+      "fa": "آکادی",
+      "emoji": "🌊",
+      "difficulty": 3,
+      "ex": "L'histoire de l'Acadie est marquée par le Grand Dérangement.",
+      "ex_fa": "تاریخ آکادی با «اخراج بزرگ» رقم خورده است."
+    },
+    {
+      "fr": "la Louisiane",
+      "fa": "لوئیزیانا",
+      "emoji": "🎷",
+      "difficulty": 2,
+      "ex": "La Nouvelle-Orléans en Louisiane est le berceau du jazz.",
+      "ex_fa": "نیواورلئان در لوئیزیانا زادگاه جاز است."
+    },
+    {
+      "fr": "la Belgique francophone",
+      "fa": "بلژیک فرانسوی‌زبان",
+      "emoji": "📖",
+      "difficulty": 2,
+      "ex": "La Belgique francophone est célèbre pour ses bandes dessinées.",
+      "ex_fa": "بلژیک فرانسوی‌زبان به خاطر کمیک‌استریپ‌هایش مشهور است."
+    },
+    {
+      "fr": "la Suisse romande",
+      "fa": "سوئیس فرانسوی‌زبان",
+      "emoji": "🏔️",
+      "difficulty": 2,
+      "ex": "Les lacs et les montagnes de la Suisse romande sont superbes.",
+      "ex_fa": "دریاچه‌ها و کوه‌های سوئیس فرانسوی‌زبان فوق‌العاده هستند."
+    },
+    {
+      "fr": "le Luxembourg",
+      "fa": "لوکزامبورگ",
+      "emoji": "🏰",
+      "difficulty": 1,
+      "ex": "Les châteaux du Luxembourg attirent de nombreux visiteurs.",
+      "ex_fa": "قلعه‌های لوکزامبورگ بازدیدکنندگان زیادی را جذب می‌کنند."
+    },
+    {
+      "fr": "Monaco",
+      "fa": "موناکو",
+      "emoji": "🎰",
+      "difficulty": 1,
+      "ex": "Le casino de Monaco est mondialement connu.",
+      "ex_fa": "کازینوی موناکو در سراسر جهان شناخته شده است."
+    },
+    {
+      "fr": "Andorre",
+      "fa": "آندورا",
+      "emoji": "🎿",
+      "difficulty": 2,
+      "ex": "Andorre est une petite principauté idéale pour le ski.",
+      "ex_fa": "آندورا یک شاهزاده‌نشین کوچک ایده‌آل برای اسکی است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un voyage culinaire et culturel",
+      "title_fa": "یک سفر آشپزی و فرهنگی",
+      "text": "J'adore voyager pour découvrir les cultures. En France, je mange du camembert en ____ (1), je visite les marchés de Noël en ____ (2) et je bois du vin de ____ (3). Je fête avec du ____ (4), je fais du ski en ____ (5) et je profite du soleil de la ____ (6). J'aime aussi la cuisine du ____ (7). Hors de France, je vais au ____ (8) pour la neige, j'apprends l'histoire de l'____ (9) et j'écoute du jazz en ____ (10). En Europe, je lis des BD en ____ (11), je admire les lacs de la ____ (12), je visite les châteaux du ____ (13), je joue à ____ (14) et je fais du ski à ____ (15).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Normandie",
+          "options": [
+            "Normandie",
+            "Alsace",
+            "Bourgogne",
+            "Champagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "Alsace",
+          "options": [
+            "Alsace",
+            "Normandie",
+            "Savoie",
+            "Côte d'Azur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Bourgogne",
+          "options": [
+            "Bourgogne",
+            "Champagne",
+            "Pays basque",
+            "Savoie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Champagne",
+          "options": [
+            "Champagne",
+            "Bourgogne",
+            "Normandie",
+            "Alsace"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Savoie",
+          "options": [
+            "Savoie",
+            "Côte d'Azur",
+            "Pays basque",
+            "Normandie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Côte d'Azur",
+          "options": [
+            "Côte d'Azur",
+            "Savoie",
+            "Alsace",
+            "Bourgogne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Pays basque",
+          "options": [
+            "Pays basque",
+            "Côte d'Azur",
+            "Savoie",
+            "Champagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Québec",
+          "options": [
+            "Québec",
+            "Acadie",
+            "Louisiane",
+            "Belgique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Acadie",
+          "options": [
+            "Acadie",
+            "Québec",
+            "Louisiane",
+            "Suisse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Louisiane",
+          "options": [
+            "Louisiane",
+            "Acadie",
+            "Québec",
+            "Luxembourg"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "Belgique francophone",
+          "options": [
+            "Belgique francophone",
+            "Suisse romande",
+            "Luxembourg",
+            "Monaco"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "Suisse romande",
+          "options": [
+            "Suisse romande",
+            "Belgique francophone",
+            "Andorre",
+            "Monaco"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "Luxembourg",
+          "options": [
+            "Luxembourg",
+            "Suisse romande",
+            "Belgique",
+            "Andorre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "Monaco",
+          "options": [
+            "Monaco",
+            "Luxembourg",
+            "Andorre",
+            "Suisse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "Andorre",
+          "options": [
+            "Andorre",
+            "Monaco",
+            "Luxembourg",
+            "Belgique"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'hexagone et ses cousins",
+      "title_fa": "شش‌ضلعی و پسرعموهایش",
+      "inspiration": "Géographie de la France",
+      "text": "La France est un mosaic de terroirs. Le beurre et le camembert de la ____ (1) contrastent avec les épices du ____ (7). Les fêtes de l'____ (2) réchauffent l'hiver, tandis que les bulles de la ____ (4) célèbrent la joie. Les vignobles de la ____ (3) et les pistes de la ____ (5) attirent les connaisseurs, tout comme le soleil éternel de la ____ (6). Au-delà des mers, la neige du ____ (8) et les mélodies de l'____ (9) ou de la ____ (10) rappellent l'histoire commune. En Europe, la ____ (11) dessine des rêves, la ____ (12) reflète le ciel, le ____ (13) protège ses forteresses, ____ (14) brille de mille feux, et ____ (15) domine les sommets.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Normandie",
+          "options": [
+            "Normandie",
+            "Alsace",
+            "Bourgogne",
+            "Champagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "Alsace",
+          "options": [
+            "Alsace",
+            "Normandie",
+            "Savoie",
+            "Côte d'Azur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "Bourgogne",
+          "options": [
+            "Bourgogne",
+            "Champagne",
+            "Pays basque",
+            "Savoie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Champagne",
+          "options": [
+            "Champagne",
+            "Bourgogne",
+            "Normandie",
+            "Alsace"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Savoie",
+          "options": [
+            "Savoie",
+            "Côte d'Azur",
+            "Pays basque",
+            "Normandie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Côte d'Azur",
+          "options": [
+            "Côte d'Azur",
+            "Savoie",
+            "Alsace",
+            "Bourgogne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Pays basque",
+          "options": [
+            "Pays basque",
+            "Côte d'Azur",
+            "Savoie",
+            "Champagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Québec",
+          "options": [
+            "Québec",
+            "Acadie",
+            "Louisiane",
+            "Belgique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Acadie",
+          "options": [
+            "Acadie",
+            "Québec",
+            "Louisiane",
+            "Suisse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Louisiane",
+          "options": [
+            "Louisiane",
+            "Acadie",
+            "Québec",
+            "Luxembourg"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "Belgique francophone",
+          "options": [
+            "Belgique francophone",
+            "Suisse romande",
+            "Luxembourg",
+            "Monaco"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "Suisse romande",
+          "options": [
+            "Suisse romande",
+            "Belgique francophone",
+            "Andorre",
+            "Monaco"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "Luxembourg",
+          "options": [
+            "Luxembourg",
+            "Suisse romande",
+            "Belgique",
+            "Andorre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "Monaco",
+          "options": [
+            "Monaco",
+            "Luxembourg",
+            "Andorre",
+            "Suisse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "Andorre",
+          "options": [
+            "Andorre",
+            "Monaco",
+            "Luxembourg",
+            "Belgique"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Régions de France et Francophonie",
+    "title_fa": "آزمون: مناطق فرانسه و فرانکوفونی",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La région française célèbre pour ses marchés de Noël est l'____.",
+        "options": [
+          "Alsace",
+          "Normandie",
+          "Bourgogne",
+          "Provence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "منطقه‌ای از فرانسه که به بازارهای کریسمسش معروف است، آلزاس (Alsace) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La région montagneuse française idéale pour le ski est la ____.",
+        "options": [
+          "Savoie",
+          "Côte d'Azur",
+          "Bretagne",
+          "Normandie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "منطقه کوهستانی فرانسه که برای اسکی ایده‌آل است، ساووا (Savoie) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La province canadienne francophone connue pour ses hivers rigoureux est le ____.",
+        "options": [
+          "Québec",
+          "Louisiane",
+          "Acadie",
+          "Ontario"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استان فرانسوی‌زبان کانادا که به زمستان‌های سختش معروف است، کبک (Québec) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La ville américaine célèbre pour le jazz et située en territoire francophone historique est en ____.",
+        "options": [
+          "Louisiane",
+          "Acadie",
+          "Québec",
+          "Belgique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "شهر آمریکایی معروف به جاز که در قلمرو تاریخی فرانسوی‌زبان قرار دارد، در لوئیزیانا (Louisiane) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le petit pays européen célèbre pour ses casinos et son Grand Prix est ____.",
+        "options": [
+          "Monaco",
+          "Luxembourg",
+          "Andorre",
+          "Liechtenstein"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشور کوچک اروپایی معروف به کازینوها و گراند پری، موناکو (Monaco) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La région française réputée pour ses grands vins rouges est la ____.",
+        "options": [
+          "Bourgogne",
+          "Champagne",
+          "Normandie",
+          "Côte d'Azur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "منطقه‌ای از فرانسه که به شراب‌های قرمز عالی‌اش معروف است، بورگوین (Bourgogne) است."
+      },
+      {
+        "type": "binary",
+        "question": "« La Belgique francophone » est célèbre pour sa tradition de bandes dessinées (Tintin, Spirou).",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، بلژیک فرانسوی‌زبان به خاطر سنت کمیک‌استریپ‌هایش (مثل تن‌تن و اشپیر) مشهور است."
+      },
+      {
+        "type": "binary",
+        "question": "« Andorre » est une grande nation située en Europe de l'Est.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، آندورا (Andorre) یک شاهزاده‌نشین بسیار کوچک در کوه‌های پیرنه (بین فرانسه و اسپانیا) است."
+      }
+    ]
+  }
+}
