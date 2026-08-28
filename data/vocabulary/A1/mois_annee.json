@@ -1,0 +1,510 @@
+{
+  "id": "mois_annee",
+  "level": "A1",
+  "theme": "Les Mois de l'Année",
+  "theme_fa": "ماه‌های سال",
+  "icon": "📅",
+  "inspiration": "Les Douze Mois (Conte)",
+  "words": [
+    {
+      "fr": "janvier",
+      "fa": "ژانویه",
+      "emoji": "❄️",
+      "difficulty": 1,
+      "ex": "Le nouvel an commence en janvier.",
+      "ex_fa": "سال نو در ژانویه شروع می‌شود."
+    },
+    {
+      "fr": "février",
+      "fa": "فوریه",
+      "emoji": "💝",
+      "difficulty": 1,
+      "ex": "Février est le mois le plus court.",
+      "ex_fa": "فوریه کوتاه‌ترین ماه سال است."
+    },
+    {
+      "fr": "mars",
+      "fa": "مارس",
+      "emoji": "🌱",
+      "difficulty": 1,
+      "ex": "Le printemps commence en mars.",
+      "ex_fa": "بهار در مارس شروع می‌شود."
+    },
+    {
+      "fr": "avril",
+      "fa": "آوریل",
+      "emoji": "🌧️",
+      "difficulty": 1,
+      "ex": "En avril, il pleut souvent.",
+      "ex_fa": "در آوریل، اغلب باران می‌بارد."
+    },
+    {
+      "fr": "mai",
+      "fa": "مه",
+      "emoji": "🌸",
+      "difficulty": 1,
+      "ex": "Le premier mai est la fête du travail.",
+      "ex_fa": "اول مه روز کارگر است."
+    },
+    {
+      "fr": "juin",
+      "fa": "ژوئن",
+      "emoji": "☀️",
+      "difficulty": 1,
+      "ex": "L'été commence en juin.",
+      "ex_fa": "تابستان در ژوئن شروع می‌شود."
+    },
+    {
+      "fr": "juillet",
+      "fa": "ژوئیه",
+      "emoji": "🎆",
+      "difficulty": 1,
+      "ex": "Le 14 juillet est la fête nationale française.",
+      "ex_fa": "۱۴ ژوئیه جشن ملی فرانسه است."
+    },
+    {
+      "fr": "août",
+      "fa": "اوت",
+      "emoji": "🏖️",
+      "difficulty": 1,
+      "ex": "Beaucoup de Français partent en vacances en août.",
+      "ex_fa": "بسیاری از فرانسوی‌ها در اوت به تعطیلات می‌روند."
+    },
+    {
+      "fr": "septembre",
+      "fa": "سپتامبر",
+      "emoji": "🎒",
+      "difficulty": 1,
+      "ex": "La rentrée des classes est en septembre.",
+      "ex_fa": "بازگشایی مدارس در سپتامبر است."
+    },
+    {
+      "fr": "octobre",
+      "fa": "اکتبر",
+      "emoji": "🍂",
+      "difficulty": 1,
+      "ex": "Les feuilles tombent en octobre.",
+      "ex_fa": "برگ‌ها در اکتبر می‌ریزند."
+    },
+    {
+      "fr": "novembre",
+      "fa": "نوامبر",
+      "emoji": "🌧️",
+      "difficulty": 1,
+      "ex": "Il fait froid en novembre.",
+      "ex_fa": "در نوامبر هوا سرد است."
+    },
+    {
+      "fr": "décembre",
+      "fa": "دسامبر",
+      "emoji": "🎄",
+      "difficulty": 1,
+      "ex": "Noël est fêté en décembre.",
+      "ex_fa": "کریسمس در دسامبر جشن گرفته می‌شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le cycle de l'année",
+      "title_fa": "چرخه سال",
+      "text": "L'année commence en ____ (1). Il fait très froid. En ____ (2), il y a la Saint-Valentin. En ____ (3), les fleurs commencent à pousser. En ____ (4), les oiseaux chantent. En ____ (5), il fait déjà beau. En ____ (6), l'école finit et l'été arrive. En ____ (7), c'est la fête nationale. En ____ (8), tout le monde est à la plage. En ____ (9), les enfants retournent à l'école. En ____ (10), les arbres perdent leurs feuilles. En ____ (11), il commence à neiger. Et en ____ (12), on fête Noël et le Nouvel An !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "janvier",
+          "options": [
+            "janvier",
+            "février",
+            "mars",
+            "avril"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "février",
+          "options": [
+            "février",
+            "janvier",
+            "mars",
+            "mai"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "mars",
+          "options": [
+            "mars",
+            "avril",
+            "mai",
+            "juin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "avril",
+          "options": [
+            "avril",
+            "mars",
+            "mai",
+            "juin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mai",
+          "options": [
+            "mai",
+            "avril",
+            "juin",
+            "juillet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "juin",
+          "options": [
+            "juin",
+            "mai",
+            "juillet",
+            "août"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "juillet",
+          "options": [
+            "juillet",
+            "juin",
+            "août",
+            "septembre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "août",
+          "options": [
+            "août",
+            "juillet",
+            "septembre",
+            "octobre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "septembre",
+          "options": [
+            "septembre",
+            "août",
+            "octobre",
+            "novembre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "octobre",
+          "options": [
+            "octobre",
+            "septembre",
+            "novembre",
+            "décembre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "novembre",
+          "options": [
+            "novembre",
+            "octobre",
+            "décembre",
+            "janvier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "décembre",
+          "options": [
+            "décembre",
+            "novembre",
+            "janvier",
+            "février"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La danse des saisons",
+      "title_fa": "رقص فصل‌ها",
+      "inspiration": "Les Douze Mois (Conte)",
+      "text": "Tout commence doucement en ____ (1), sous la neige. ____ (2) apporte un peu de douceur. En ____ (3), la terre se réveille. ____ (4) nous offre ses averses bienfaisantes. ____ (5) emplit les jardins de couleurs. En ____ (6), le soleil règne en maître. ____ (7) illumine le ciel de ses feux d'artifice. ____ (8) nous invite à la paresse estivale. En ____ (9), les cartables se remplissent à nouveau. ____ (10) peint les forêts en or et rouge. ____ (11) nous enveloppe de sa brume mystérieuse. Et enfin, ____ (12) referme la boucle avec ses lumières magiques.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "janvier",
+          "options": [
+            "janvier",
+            "février",
+            "mars",
+            "avril"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "Février",
+          "options": [
+            "Février",
+            "Janvier",
+            "Mars",
+            "Mai"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "mars",
+          "options": [
+            "mars",
+            "avril",
+            "mai",
+            "juin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Avril",
+          "options": [
+            "Avril",
+            "Mars",
+            "Mai",
+            "Juin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Mai",
+          "options": [
+            "Mai",
+            "Avril",
+            "Juin",
+            "Juillet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "juin",
+          "options": [
+            "juin",
+            "mai",
+            "juillet",
+            "août"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "Juillet",
+          "options": [
+            "Juillet",
+            "Juin",
+            "Août",
+            "Septembre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Août",
+          "options": [
+            "Août",
+            "Juillet",
+            "Septembre",
+            "Octobre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "septembre",
+          "options": [
+            "septembre",
+            "août",
+            "octobre",
+            "novembre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Octobre",
+          "options": [
+            "Octobre",
+            "Septembre",
+            "Novembre",
+            "Décembre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "Novembre",
+          "options": [
+            "Novembre",
+            "Octobre",
+            "Décembre",
+            "Janvier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "décembre",
+          "options": [
+            "décembre",
+            "novembre",
+            "janvier",
+            "février"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Les Mois de l'Année",
+    "title_fa": "آزمون: ماه‌های سال",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le premier mois de l'année est ____.",
+        "options": [
+          "janvier",
+          "février",
+          "mars",
+          "décembre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اولین ماه سال، ژانویه (janvier) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mois de la Saint-Valentin est ____.",
+        "options": [
+          "février",
+          "janvier",
+          "mars",
+          "avril"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماه ولنتاین، فوریه (février) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mois où commence le printemps est ____.",
+        "options": [
+          "mars",
+          "avril",
+          "mai",
+          "juin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماهی که بهار شروع می‌شود، مارس (mars) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mois de la fête nationale française (14 juillet) est ____.",
+        "options": [
+          "juillet",
+          "juin",
+          "août",
+          "mai"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماه جشن ملی فرانسه، ژوئیه (juillet) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mois des grandes vacances d'été est souvent ____.",
+        "options": [
+          "août",
+          "juillet",
+          "septembre",
+          "juin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماه تعطیلات بزرگ تابستانی اغلب اوت (août) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mois de la rentrée des classes est ____.",
+        "options": [
+          "septembre",
+          "août",
+          "octobre",
+          "novembre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماه بازگشایی مدارس، سپتامبر (septembre) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dernier mois de l'année est ____.",
+        "options": [
+          "décembre",
+          "novembre",
+          "janvier",
+          "octobre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آخرین ماه سال، دسامبر (décembre) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Combien de mois y a-t-il dans une année ?",
+        "options": [
+          "douze",
+          "dix",
+          "onze",
+          "treize"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یک سال دوازده (douze) ماه دارد."
+      },
+      {
+        "type": "binary",
+        "question": "« Mai » s'écrit avec un « y » à la fin.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، mai با «i» تمام می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« Octobre » est le dixième mois de l'année.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، اکتبر دهمین ماه سال است."
+      }
+    ]
+  }
+}
