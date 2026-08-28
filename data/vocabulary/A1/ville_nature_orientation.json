@@ -1,0 +1,492 @@
+{
+  "id": "ville_nature_orientation",
+  "level": "A1",
+  "theme": "Ville, Nature et Orientation",
+  "theme_fa": "شهر، طبیعت و مسیریابی",
+  "icon": "🏙️",
+  "inspiration": "Le Petit Prince / Tintin",
+  "words": [
+    {
+      "fr": "le parking",
+      "fa": "پارکینگ",
+      "emoji": "🅿️",
+      "difficulty": 1,
+      "ex": "Je cherche un parking gratuit en ville.",
+      "ex_fa": "من در شهر دنبال یک پارکینگ رایگان می‌گردم."
+    },
+    {
+      "fr": "le pays",
+      "fa": "کشور",
+      "emoji": "🗺️",
+      "difficulty": 1,
+      "ex": "La France est un beau pays d'Europe.",
+      "ex_fa": "فرانسه یک کشور زیبا در اروپا است."
+    },
+    {
+      "fr": "le paysage",
+      "fa": "چشم‌انداز / منظره",
+      "emoji": "🏞️",
+      "difficulty": 2,
+      "ex": "Le paysage de montagne est magnifique.",
+      "ex_fa": "منظره کوهستان فوق‌العاده است."
+    },
+    {
+      "fr": "le pied",
+      "fa": "پا",
+      "emoji": "🦶",
+      "difficulty": 1,
+      "ex": "Je vais au travail à pied, c'est bon pour la santé.",
+      "ex_fa": "من پیاده به سر کار می‌روم، برای سلامتی خوب است."
+    },
+    {
+      "fr": "la piscine",
+      "fa": "استخر",
+      "emoji": "🏊",
+      "difficulty": 1,
+      "ex": "Les enfants adorent nager à la piscine.",
+      "ex_fa": "بچه‌ها عاشق شنا کردن در استخر هستند."
+    },
+    {
+      "fr": "la place",
+      "fa": "میدان / جا",
+      "emoji": "📍",
+      "difficulty": 1,
+      "ex": "Nous nous retrouvons sur la place centrale.",
+      "ex_fa": "ما در میدان مرکزی همدیگر را ملاقات می‌کنیم."
+    },
+    {
+      "fr": "la plage",
+      "fa": "ساحل",
+      "emoji": "🏖️",
+      "difficulty": 1,
+      "ex": "J'aime me promener sur la plage en été.",
+      "ex_fa": "دوست دارم در تابستان در ساحل پیاده‌روی کنم."
+    },
+    {
+      "fr": "le pont",
+      "fa": "پل",
+      "emoji": "🌉",
+      "difficulty": 1,
+      "ex": "Nous traversons le pont pour aller à l'autre rive.",
+      "ex_fa": "ما برای رفتن به آن سوی رودخانه از پل عبور می‌کنیم."
+    },
+    {
+      "fr": "le port",
+      "fa": "بندر",
+      "emoji": "⚓",
+      "difficulty": 2,
+      "ex": "Il y a beaucoup de bateaux dans le port.",
+      "ex_fa": "قایق‌های زیادی در بندر وجود دارد."
+    },
+    {
+      "fr": "près (de)",
+      "fa": "نزدیکِ",
+      "emoji": "📏",
+      "difficulty": 1,
+      "ex": "Mon hôtel est près de la gare.",
+      "ex_fa": "هتل من نزدیک ایستگاه است."
+    },
+    {
+      "fr": "la région",
+      "fa": "منطقه",
+      "emoji": "🌍",
+      "difficulty": 2,
+      "ex": "La région de Bordeaux est célèbre pour son vin.",
+      "ex_fa": "منطقه بوردو به خاطر شرابش مشهور است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une promenade en ville",
+      "title_fa": "یک پیاده‌روی در شهر",
+      "text": "J'habite dans une belle ____ (1). Mon ____ (2) est la France. Près de chez moi, il y a un ____ (3) gratuit pour ma voiture. Je vais souvent à la ____ (4) centrale pour me promener. Parfois, je vais à la ____ (5) pour nager, ou à la ____ (6) municipale. Le ____ (7) traverse la rivière et mène au ____ (8). J'aime regarder le ____ (9) depuis ma fenêtre. Je vais au travail à ____ (10), car mon bureau est tout ____ (11) de chez moi.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "région",
+          "options": [
+            "région",
+            "pied",
+            "pont",
+            "port"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pays",
+          "options": [
+            "pays",
+            "parking",
+            "place",
+            "plage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "parking",
+          "options": [
+            "parking",
+            "pays",
+            "pied",
+            "pont"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "place",
+          "options": [
+            "place",
+            "plage",
+            "piscine",
+            "pays"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "plage",
+          "options": [
+            "plage",
+            "place",
+            "piscine",
+            "pays"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "piscine",
+          "options": [
+            "piscine",
+            "plage",
+            "place",
+            "pays"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pont",
+          "options": [
+            "pont",
+            "port",
+            "pied",
+            "parking"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "port",
+          "options": [
+            "port",
+            "pont",
+            "pied",
+            "parking"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "paysage",
+          "options": [
+            "paysage",
+            "pays",
+            "parking",
+            "place"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "pied",
+          "options": [
+            "pied",
+            "pont",
+            "port",
+            "parking"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "près",
+          "options": [
+            "près",
+            "pied",
+            "pont",
+            "port"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'appel de l'horizon",
+      "title_fa": "ندای افق",
+      "inspiration": "Le Petit Prince",
+      "text": "Cette ____ (1) est réputée pour ses paysages. Le ____ (2) y est à couper le souffle, surtout depuis le vieux ____ (3) qui enjambe la rivière. En contrebas, le ____ (4) accueille les bateaux de pêcheurs. L'été, la ____ (5) se remplit de monde, tandis que la ____ (6) du village reste un lieu de rencontre paisible. Pour éviter la foule, je préfère me baigner à la ____ (7) privée. Mon ____ (8) est fier de cette nature. Je me rends toujours là-bas à ____ (9), car mon hôtel est situé tout ____ (10) du centre, avec un ____ (11) sécurisé.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "région",
+          "options": [
+            "région",
+            "pied",
+            "pont",
+            "port"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "paysage",
+          "options": [
+            "paysage",
+            "pays",
+            "parking",
+            "place"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "pont",
+          "options": [
+            "pont",
+            "port",
+            "pied",
+            "parking"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "port",
+          "options": [
+            "port",
+            "pont",
+            "pied",
+            "parking"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "plage",
+          "options": [
+            "plage",
+            "place",
+            "piscine",
+            "pays"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "place",
+          "options": [
+            "place",
+            "plage",
+            "piscine",
+            "pays"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "piscine",
+          "options": [
+            "piscine",
+            "plage",
+            "place",
+            "pays"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "pays",
+          "options": [
+            "pays",
+            "parking",
+            "place",
+            "plage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "pied",
+          "options": [
+            "pied",
+            "pont",
+            "port",
+            "parking"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "près",
+          "options": [
+            "près",
+            "pied",
+            "pont",
+            "port"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "parking",
+          "options": [
+            "parking",
+            "pays",
+            "pied",
+            "pont"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Ville, Nature et Orientation",
+    "title_fa": "آزمون: شهر، طبیعت و مسیریابی",
+    "displayCount": 11,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Un territoire avec des frontières et un gouvernement est un ____.",
+        "options": [
+          "pays",
+          "parking",
+          "pied",
+          "pont"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سرزمینی با مرزها و دولت، کشور (pays) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "La vue que l'on a sur la nature s'appelle le ____.",
+        "options": [
+          "paysage",
+          "pays",
+          "parking",
+          "place"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "منظری که از طبیعت داریم، چشم‌انداز یا منظره (paysage) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "L'endroit où l'on peut garer sa voiture est le ____.",
+        "options": [
+          "parking",
+          "pays",
+          "pied",
+          "pont"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که می‌توانیم ماشین خود را پارک کنیم، پارکینگ (parking) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La partie du corps qui touche le sol quand on marche est le ____.",
+        "options": [
+          "pied",
+          "pont",
+          "port",
+          "parking"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قسمتی از بدن که هنگام راه رفتن با زمین تماس دارد، پا (pied) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un bassin artificiel pour nager s'appelle la ____.",
+        "options": [
+          "piscine",
+          "plage",
+          "place",
+          "pays"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حوض مصنوعی برای شنا، استخر (piscine) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Un espace ouvert au centre d'une ville est la ____.",
+        "options": [
+          "place",
+          "plage",
+          "piscine",
+          "pays"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فضای باز در مرکز یک شهر، میدان (place) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le bord de la mer où il y a du sable est la ____.",
+        "options": [
+          "plage",
+          "place",
+          "piscine",
+          "pays"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کنار دریا که شن دارد، ساحل (plage) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Une construction qui permet de traverser une rivière est un ____.",
+        "options": [
+          "pont",
+          "port",
+          "pied",
+          "parking"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "سازه‌ای که امکان عبور از رودخانه را می‌دهد، پل (pont) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'endroit où les bateaux s'arrêtent et chargent est le ____.",
+        "options": [
+          "port",
+          "pont",
+          "pied",
+          "parking"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مکانی که قایق‌ها توقف می‌کنند و بارگیری می‌شوند، بندر (port) است."
+      },
+      {
+        "type": "binary",
+        "question": "« Près de » signifie que deux choses sont éloignées l'une de l'autre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، près de به معنای نزدیک بودن است، نه دور بودن."
+      },
+      {
+        "type": "binary",
+        "question": "Une « région » est une partie d'un pays avec des caractéristiques propres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، région به معنای منطقه یا ناحیه‌ای از یک کشور با ویژگی‌های خاص است."
+      }
+    ]
+  }
+}
