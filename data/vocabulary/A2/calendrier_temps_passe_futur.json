@@ -1,0 +1,506 @@
+{
+  "id": "calendrier_temps_passe_futur",
+  "level": "A2",
+  "theme": "Calendrier, Passé, Présent et Futur",
+  "theme_fa": "تقویم، گذشته، حال و آینده",
+  "icon": "⏳",
+  "inspiration": "Le Petit Prince",
+  "words": [
+    {
+      "fr": "après-demain",
+      "fa": "پس‌فردا",
+      "emoji": "⏭️",
+      "difficulty": 1,
+      "ex": "On se voit après-demain pour le projet.",
+      "ex_fa": "ما پس‌فردا برای پروژه همدیگر را می‌بینیم."
+    },
+    {
+      "fr": "avant-hier",
+      "fa": "پیش‌دیروز / پریروز",
+      "emoji": "⏮️",
+      "difficulty": 1,
+      "ex": "Je l'ai rencontré avant-hier au marché.",
+      "ex_fa": "من پیش‌دیروز او را در بازار ملاقات کردم."
+    },
+    {
+      "fr": "la semaine prochaine",
+      "fa": "هفته آینده",
+      "emoji": "📅",
+      "difficulty": 1,
+      "ex": "La semaine prochaine, je pars en vacances.",
+      "ex_fa": "هفته آینده، من به تعطیلات می‌روم."
+    },
+    {
+      "fr": "la semaine dernière",
+      "fa": "هفته گذشته",
+      "emoji": "📆",
+      "difficulty": 1,
+      "ex": "La semaine dernière, il a beaucoup plu.",
+      "ex_fa": "هفته گذشته، باران زیادی بارید."
+    },
+    {
+      "fr": "le mois prochain",
+      "fa": "ماه آینده",
+      "emoji": "🗓️",
+      "difficulty": 1,
+      "ex": "Le mois prochain, c'est mon anniversaire.",
+      "ex_fa": "ماه آینده، تولد من است."
+    },
+    {
+      "fr": "le mois dernier",
+      "fa": "ماه گذشته",
+      "emoji": "🗓️",
+      "difficulty": 1,
+      "ex": "Le mois dernier, j'étais malade pendant une semaine.",
+      "ex_fa": "ماه گذشته، من یک هفته بیمار بودم."
+    },
+    {
+      "fr": "l'année prochaine",
+      "fa": "سال آینده",
+      "emoji": "🎆",
+      "difficulty": 1,
+      "ex": "L'année prochaine, je vais apprendre l'espagnol.",
+      "ex_fa": "سال آینده، من اسپانیایی یاد خواهم گرفت."
+    },
+    {
+      "fr": "l'année dernière",
+      "fa": "سال گذشته",
+      "emoji": "🎇",
+      "difficulty": 1,
+      "ex": "L'année dernière, j'ai visité l'Italie.",
+      "ex_fa": "سال گذشته، من از ایتالیا بازدید کردم."
+    },
+    {
+      "fr": "le futur",
+      "fa": "آینده",
+      "emoji": "🔮",
+      "difficulty": 1,
+      "ex": "Il faut penser au futur avec espoir.",
+      "ex_fa": "باید با امید به آینده فکر کرد."
+    },
+    {
+      "fr": "le passé",
+      "fa": "گذشته",
+      "emoji": "⏪",
+      "difficulty": 1,
+      "ex": "Il est important d'apprendre du passé.",
+      "ex_fa": "یادگیری از گذشته مهم است."
+    },
+    {
+      "fr": "le présent",
+      "fa": "حال / اکنون",
+      "emoji": "⏱️",
+      "difficulty": 1,
+      "ex": "Il faut savoir vivre au présent.",
+      "ex_fa": "باید بلد بود در حال زندگی کرد."
+    },
+    {
+      "fr": "la mort",
+      "fa": "مرگ",
+      "emoji": "🥀",
+      "difficulty": 2,
+      "ex": "La vie et la mort sont des mystères de la nature.",
+      "ex_fa": "زندگی و مرگ رازهای طبیعت هستند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le voyage dans le temps",
+      "title_fa": "سفر در زمان",
+      "text": "J'aime réfléchir au temps. ____ (10), j'étais à l'école primaire. ____ (8), j'ai commencé à apprendre le français. ____ (4), j'ai eu mon premier travail. Aujourd'hui, je vis au ____ (11) et je profite de chaque instant. ____ (3), je vais changer de maison. ____ (5), ce sera mon anniversaire. Et ____ (1), j'irai voir ma famille. Nous ne devons pas avoir peur de ____ (12), car elle fait partie de la vie. L'important est de construire un bon ____ (9).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "après-demain",
+          "options": [
+            "après-demain",
+            "avant-hier",
+            "le passé",
+            "le présent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "avant-hier",
+          "options": [
+            "avant-hier",
+            "après-demain",
+            "le futur",
+            "le présent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "La semaine prochaine",
+          "options": [
+            "La semaine prochaine",
+            "La semaine dernière",
+            "L'année dernière",
+            "Le mois dernier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "La semaine dernière",
+          "options": [
+            "La semaine dernière",
+            "La semaine prochaine",
+            "Le mois prochain",
+            "L'année prochaine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Le mois prochain",
+          "options": [
+            "Le mois prochain",
+            "Le mois dernier",
+            "La semaine prochaine",
+            "L'année dernière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Le mois dernier",
+          "options": [
+            "Le mois dernier",
+            "Le mois prochain",
+            "La semaine dernière",
+            "L'année prochaine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "L'année prochaine",
+          "options": [
+            "L'année prochaine",
+            "L'année dernière",
+            "Le mois prochain",
+            "La semaine prochaine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "L'année dernière",
+          "options": [
+            "L'année dernière",
+            "L'année prochaine",
+            "Le mois dernier",
+            "La semaine dernière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "futur",
+          "options": [
+            "futur",
+            "passé",
+            "présent",
+            "mort"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Le passé",
+          "options": [
+            "Le passé",
+            "Le futur",
+            "Le présent",
+            "La mort"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "présent",
+          "options": [
+            "présent",
+            "passé",
+            "futur",
+            "mort"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "la mort",
+          "options": [
+            "la mort",
+            "le présent",
+            "le futur",
+            "le passé"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les trois visages du temps",
+      "title_fa": "سه چهره زمان",
+      "inspiration": "Le Petit Prince",
+      "text": "Le temps est un fleuve qui ne s'arrête jamais. Nous portons tous le poids du ____ (10), avec ses joies et ses regrets. ____ (8), nous étions insouciants. ____ (4), nous avons fait des choix qui nous ont façonnés. Mais la vraie vie se trouve dans le ____ (11). C'est ici et maintenant qu'il faut agir. ____ (3), de nouveaux défis nous attendent. ____ (5), nous célébrerons nos victoires. Et ____ (1), nous irons de l'avant. Le ____ (9) est une page blanche à écrire. Seule ____ (12) est certaine, mais jusqu'à ce jour, chaque seconde est un cadeau.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "après-demain",
+          "options": [
+            "après-demain",
+            "avant-hier",
+            "le passé",
+            "le présent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "avant-hier",
+          "options": [
+            "avant-hier",
+            "après-demain",
+            "le futur",
+            "le présent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "La semaine prochaine",
+          "options": [
+            "La semaine prochaine",
+            "La semaine dernière",
+            "L'année dernière",
+            "Le mois dernier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "La semaine dernière",
+          "options": [
+            "La semaine dernière",
+            "La semaine prochaine",
+            "Le mois prochain",
+            "L'année prochaine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Le mois prochain",
+          "options": [
+            "Le mois prochain",
+            "Le mois dernier",
+            "La semaine prochaine",
+            "L'année dernière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Le mois dernier",
+          "options": [
+            "Le mois dernier",
+            "Le mois prochain",
+            "La semaine dernière",
+            "L'année prochaine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "L'année prochaine",
+          "options": [
+            "L'année prochaine",
+            "L'année dernière",
+            "Le mois prochain",
+            "La semaine prochaine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "L'année dernière",
+          "options": [
+            "L'année dernière",
+            "L'année prochaine",
+            "Le mois dernier",
+            "La semaine dernière"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "futur",
+          "options": [
+            "futur",
+            "passé",
+            "présent",
+            "mort"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "passé",
+          "options": [
+            "passé",
+            "futur",
+            "présent",
+            "mort"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "présent",
+          "options": [
+            "présent",
+            "passé",
+            "futur",
+            "mort"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "la mort",
+          "options": [
+            "la mort",
+            "le présent",
+            "le futur",
+            "le passé"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Calendrier, Passé, Présent et Futur",
+    "title_fa": "آزمون: تقویم، گذشته، حال و آینده",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le jour qui suit demain s'appelle ____.",
+        "options": [
+          "après-demain",
+          "avant-hier",
+          "la semaine prochaine",
+          "le mois prochain"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روزی که بعد از فردا می‌آید، پس‌فردا (après-demain) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le jour qui précède hier s'appelle ____.",
+        "options": [
+          "avant-hier",
+          "après-demain",
+          "la semaine dernière",
+          "le mois dernier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "روزی که قبل از دیروز می‌آید، پیش‌دیروز (avant-hier) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Si nous sommes en octobre, ____ nous serons en novembre.",
+        "options": [
+          "le mois prochain",
+          "le mois dernier",
+          "l'année prochaine",
+          "la semaine dernière"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اگر اکنون اکتبر باشیم، ماه آینده (le mois prochain) نوامبر خواهیم بود."
+      },
+      {
+        "type": "mcq",
+        "question": "L'opposé du « futur » est le ____.",
+        "options": [
+          "passé",
+          "présent",
+          "mort",
+          "après-demain"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "متضاد آینده، گذشته (passé) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Vivre dans l'instant, c'est vivre au ____.",
+        "options": [
+          "présent",
+          "passé",
+          "futur",
+          "avant-hier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "زندگی در لحظه، زندگی در حال (présent) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La fin inévitable de la vie s'appelle la ____.",
+        "options": [
+          "mort",
+          "naissance",
+          "vieillesse",
+          "maladie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پایان اجتناب‌ناپذیر زندگی، مرگ (mort) نامیده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« La semaine dernière » fait référence à la semaine qui vient après celle en cours.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، la semaine dernière به هفته‌ای اشاره دارد که قبل از هفته جاری گذشته است."
+      },
+      {
+        "type": "binary",
+        "question": "« L'année prochaine » signifie l'année qui suit l'année actuelle.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، l'année prochaine به معنای سالی است که بعد از سال جاری می‌آید."
+      },
+      {
+        "type": "binary",
+        "question": "On utilise « avant-hier » pour parler de deux jours avant aujourd'hui.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، avant-hier به معنای دو روز قبل از امروز (پریروز) است."
+      },
+      {
+        "type": "binary",
+        "question": "Le « futur » est le temps qui est déjà arrivé.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، futur به زمانی اشاره دارد که هنوز نیامده است (آینده)."
+      }
+    ]
+  }
+}
