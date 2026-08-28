@@ -1,0 +1,446 @@
+{
+  "id": "maladies_symptomes_physiques",
+  "level": "A2",
+  "theme": "Maladies et Symptômes Physiques",
+  "theme_fa": "بیماری‌ها و علائم جسمی",
+  "icon": "🤒",
+  "inspiration": "Le Malade Imaginaire (Molière)",
+  "words": [
+    {
+      "fr": "le rhume",
+      "fa": "سرماخوردگی",
+      "emoji": "🤧",
+      "difficulty": 1,
+      "ex": "J'ai attrapé un rhume à cause du froid.",
+      "ex_fa": "من به خاطر سرما سرماخورده‌ام."
+    },
+    {
+      "fr": "la grippe",
+      "fa": "آنفولانزا",
+      "emoji": "🤒",
+      "difficulty": 1,
+      "ex": "Il est resté au lit toute la semaine à cause de la grippe.",
+      "ex_fa": "او به خاطر آنفولانزا تمام هفته در رختخواب ماند."
+    },
+    {
+      "fr": "le mal de tête",
+      "fa": "سردرد",
+      "emoji": "🤕",
+      "difficulty": 1,
+      "ex": "J'ai un terrible mal de tête, j'ai besoin de repos.",
+      "ex_fa": "من سردرد شدیدی دارم، به استراحت نیاز دارم."
+    },
+    {
+      "fr": "le mal de ventre",
+      "fa": "دل‌درد",
+      "emoji": "🤢",
+      "difficulty": 1,
+      "ex": "L'enfant souffre d'un mal de ventre après avoir trop mangé.",
+      "ex_fa": "کودک پس از پرخوری دچار دل‌درد شده است."
+    },
+    {
+      "fr": "le mal de dents",
+      "fa": "دندان‌درد",
+      "emoji": "🦷",
+      "difficulty": 1,
+      "ex": "Il a pris rendez-vous chez le dentiste à cause d'un mal de dents.",
+      "ex_fa": "او به خاطر دندان‌درد وقت دندان‌پزشکی گرفته است."
+    },
+    {
+      "fr": "le mal de gorge",
+      "fa": "گلودرد",
+      "emoji": "🗣️",
+      "difficulty": 1,
+      "ex": "Boire du thé chaud aide à soulager le mal de gorge.",
+      "ex_fa": "نوشیدن چای داغ به تسکین گلودرد کمک می‌کند."
+    },
+    {
+      "fr": "la toux",
+      "fa": "سرفه",
+      "emoji": "😷",
+      "difficulty": 1,
+      "ex": "Il a une toux sèche qui dure depuis trois jours.",
+      "ex_fa": "او سرفه خشکی دارد که سه روز است ادامه دارد."
+    },
+    {
+      "fr": "l'éternuement",
+      "fa": "عطسه",
+      "emoji": "🤧",
+      "difficulty": 2,
+      "ex": "Un fort éternuement a réveillé le bébé.",
+      "ex_fa": "یک عطسه شدید نوزاد را بیدار کرد."
+    },
+    {
+      "fr": "la fatigue",
+      "fa": "خستگی",
+      "emoji": "😴",
+      "difficulty": 1,
+      "ex": "Après cette longue journée, je ressens une grande fatigue.",
+      "ex_fa": "پس از این روز طولانی، من خستگی شدیدی احساس می‌کنم."
+    },
+    {
+      "fr": "le stress",
+      "fa": "استرس",
+      "emoji": "😰",
+      "difficulty": 1,
+      "ex": "Il est important d'apprendre à gérer le stress au travail.",
+      "ex_fa": "یادگیری مدیریت استرس در محل کار مهم است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une journée difficile",
+      "title_fa": "یک روز سخت",
+      "text": "Aujourd'hui, je ne me sens pas bien. Ce matin, je me suis réveillé avec un ____ (3) et un ____ (6). J'ai aussi une ____ (7) sèche qui m'empêche de dormir. Je pense que j'ai attrapé un ____ (1) ou peut-être même la ____ (2). En plus, j'ai un peu de ____ (4) parce que j'ai mal mangé hier. Je ressens une grande ____ (9) et beaucoup de ____ (10) à cause de mon travail. Heureusement, je n'ai pas de ____ (5), sinon je devrais aller chez le dentiste. J'espère que cet ____ (8) passera vite et que je pourrai me reposer.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "rhume",
+          "options": [
+            "rhume",
+            "grippe",
+            "stress",
+            "fatigue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "grippe",
+          "options": [
+            "grippe",
+            "rhume",
+            "toux",
+            "éternuement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "mal de tête",
+          "options": [
+            "mal de tête",
+            "mal de ventre",
+            "mal de dents",
+            "mal de gorge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "mal de ventre",
+          "options": [
+            "mal de ventre",
+            "mal de tête",
+            "mal de dents",
+            "mal de gorge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mal de dents",
+          "options": [
+            "mal de dents",
+            "mal de ventre",
+            "mal de tête",
+            "mal de gorge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "mal de gorge",
+          "options": [
+            "mal de gorge",
+            "mal de dents",
+            "mal de ventre",
+            "mal de tête"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "toux",
+          "options": [
+            "toux",
+            "éternuement",
+            "fatigue",
+            "stress"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "éternuement",
+          "options": [
+            "éternuement",
+            "toux",
+            "rhume",
+            "grippe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "fatigue",
+          "options": [
+            "fatigue",
+            "stress",
+            "grippe",
+            "rhume"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "stress",
+          "options": [
+            "stress",
+            "fatigue",
+            "toux",
+            "éternuement"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le corps en révolte",
+      "title_fa": "طغیان بدن",
+      "inspiration": "Le Malade Imaginaire",
+      "text": "Parfois, le corps décide de faire entendre sa voix. Tout commence par une ____ (9) sourde, un poids sur les épaules que le ____ (10) moderne ne peut expliquer. Puis, les symptômes s'enchaînent : un ____ (3) lancinant, un ____ (6) qui brûle à chaque déglutition, et une ____ (7) qui secoue la poitrine. Est-ce un simple ____ (1) ou la redoutable ____ (2) ? Le ____ (4) nous rappelle nos excès, tandis qu'un ____ (5) aigu nous rappelle de prendre soin de nous. Chaque ____ (8) est un rappel de notre fragilité. Le repos est le seul remède.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "rhume",
+          "options": [
+            "rhume",
+            "grippe",
+            "stress",
+            "fatigue"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "grippe",
+          "options": [
+            "grippe",
+            "rhume",
+            "toux",
+            "éternuement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "mal de tête",
+          "options": [
+            "mal de tête",
+            "mal de ventre",
+            "mal de dents",
+            "mal de gorge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "mal de ventre",
+          "options": [
+            "mal de ventre",
+            "mal de tête",
+            "mal de dents",
+            "mal de gorge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "mal de dents",
+          "options": [
+            "mal de dents",
+            "mal de ventre",
+            "mal de tête",
+            "mal de gorge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "mal de gorge",
+          "options": [
+            "mal de gorge",
+            "mal de dents",
+            "mal de ventre",
+            "mal de tête"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "toux",
+          "options": [
+            "toux",
+            "éternuement",
+            "fatigue",
+            "stress"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "éternuement",
+          "options": [
+            "éternuement",
+            "toux",
+            "rhume",
+            "grippe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "fatigue",
+          "options": [
+            "fatigue",
+            "stress",
+            "grippe",
+            "rhume"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "stress",
+          "options": [
+            "stress",
+            "fatigue",
+            "toux",
+            "éternuement"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Maladies et Symptômes Physiques",
+    "title_fa": "آزمون: بیماری‌ها و علائم جسمی",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Une infection virale courante qui cause de la fièvre et des courbatures est la ____.",
+        "options": [
+          "grippe",
+          "toux",
+          "fatigue",
+          "stress"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عفونت ویروسی رایجی که باعث تب و بدن‌درد می‌شود، آنفولانزا (grippe) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une sensation douloureuse dans la tête s'appelle un ____.",
+        "options": [
+          "mal de tête",
+          "mal de ventre",
+          "mal de dents",
+          "mal de gorge"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "احساس درد در سر، سردرد (mal de tête) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "L'expulsion brusque d'air par le nez et la bouche s'appelle un ____.",
+        "options": [
+          "éternuement",
+          "toux",
+          "rhume",
+          "grippe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "خروج ناگهانی هوا از بینی و دهان، عطسه (éternuement) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Une infection des voies respiratoires supérieures, souvent avec le nez qui coule, est un ____.",
+        "options": [
+          "rhume",
+          "grippe",
+          "stress",
+          "fatigue"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عفونت دستگاه تنفسی فوقانی، اغلب با آبریزش بینی، سرماخوردگی (rhume) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un état de tension mentale ou émotionnelle s'appelle le ____.",
+        "options": [
+          "stress",
+          "fatigue",
+          "toux",
+          "rhume"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وضعیت تنش ذهنی یا عاطفی، استرس (stress) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Une sensation de brûlure dans la gorge, surtout en avalant, est un ____.",
+        "options": [
+          "mal de gorge",
+          "mal de dents",
+          "mal de ventre",
+          "mal de tête"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "احساس سوزش در گلو، به ویژه هنگام بلع، گلودرد (mal de gorge) است."
+      },
+      {
+        "type": "binary",
+        "question": "« La fatigue » est un symptôme qui indique souvent le besoin de repos.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، خستگی (fatigue) علامتی است که اغلب نشان‌دهنده نیاز به استراحت است."
+      },
+      {
+        "type": "binary",
+        "question": "On va chez le dentiste pour soigner un « mal de ventre ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، برای دل‌درد به پزشک عمومی مراجعه می‌کنیم، نه دندان‌پزشک."
+      },
+      {
+        "type": "binary",
+        "question": "« La toux » peut être sèche ou grasse.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، سرفه (toux) می‌تواند خشک یا خلط‌دار باشد."
+      },
+      {
+        "type": "binary",
+        "question": "« Le mal de dents » est une douleur agréable.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، دندان‌درد (mal de dents) یک درد ناخوشایند است."
+      }
+    ]
+  }
+}
