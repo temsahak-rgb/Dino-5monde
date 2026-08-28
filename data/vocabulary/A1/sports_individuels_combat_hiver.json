@@ -1,0 +1,408 @@
+{
+  "id": "sports_individuels_combat_hiver",
+  "level": "A1",
+  "theme": "Sports Individuels, de Combat et d'Hiver",
+  "theme_fa": "ورزش‌های انفرادی، رزمی و زمستانی",
+  "icon": "🤸‍♂️",
+  "inspiration": "Jeux Olympiques",
+  "words": [
+    {
+      "fr": "le patinage",
+      "fa": "اسکیت / پاتیناژ",
+      "emoji": "⛸️",
+      "difficulty": 2,
+      "ex": "Le patinage artistique est très élégant.",
+      "ex_fa": "پاتیناژ نمایشی بسیار زیبا و باوقار است."
+    },
+    {
+      "fr": "l'équitation",
+      "fa": "سوارکاری",
+      "emoji": "🐎",
+      "difficulty": 2,
+      "ex": "Elle fait de l'équitation tous les weekends.",
+      "ex_fa": "او آخر هفته‌ها سوارکاری می‌کند."
+    },
+    {
+      "fr": "le cyclisme",
+      "fa": "دوچرخه‌سواری",
+      "emoji": "🚴",
+      "difficulty": 2,
+      "ex": "Le cyclisme est bon pour la santé et l'environnement.",
+      "ex_fa": "دوچرخه‌سواری برای سلامتی و محیط زیست خوب است."
+    },
+    {
+      "fr": "la boxe",
+      "fa": "بوکس",
+      "emoji": "🥊",
+      "difficulty": 2,
+      "ex": "Il prend des cours de boxe pour se défendre.",
+      "ex_fa": "او برای دفاع از خود کلاس بوکس می‌رود."
+    },
+    {
+      "fr": "la lutte",
+      "fa": "کشتی",
+      "emoji": "🤼",
+      "difficulty": 2,
+      "ex": "La lutte est un sport olympique très ancien.",
+      "ex_fa": "کشتی یک ورزش المپیکی بسیار قدیمی است."
+    },
+    {
+      "fr": "la danse",
+      "fa": "رقص",
+      "emoji": "💃",
+      "difficulty": 1,
+      "ex": "La danse est un excellent moyen de s'exprimer.",
+      "ex_fa": "رقص راهی عالی برای ابراز احساسات است."
+    },
+    {
+      "fr": "la gymnastique",
+      "fa": "ژیمناستیک",
+      "emoji": "🤸",
+      "difficulty": 2,
+      "ex": "La gymnastique demande beaucoup de souplesse.",
+      "ex_fa": "ژیمناستیک به انعطاف‌پذیری زیادی نیاز دارد."
+    },
+    {
+      "fr": "le judo",
+      "fa": "جودو",
+      "emoji": "🥋",
+      "difficulty": 2,
+      "ex": "Le judo enseigne le respect et la discipline.",
+      "ex_fa": "جودو احترام و نظم را آموزش می‌دهد."
+    },
+    {
+      "fr": "le karaté",
+      "fa": "کاراته",
+      "emoji": "🥋",
+      "difficulty": 2,
+      "ex": "Il a une ceinture noire de karaté.",
+      "ex_fa": "او کمربند مشکی کاراته دارد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Mes hobbies préférés",
+      "title_fa": "سرگرمی‌های مورد علاقه من",
+      "text": "J'adore le sport ! Le samedi, je fais du ____ (3) dans le parc. Le dimanche, je vais au club pour faire de l'____ (2). En hiver, j'adore le ____ (1) sur la glace. Pour me défouler, je fais de la ____ (4) ou du ____ (8). Ma sœur préfère la ____ (6) et la ____ (7), elle est très souple. Mon frère pratique la ____ (5) et le ____ (9). Le sport, c'est la santé !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "patinage",
+          "options": [
+            "patinage",
+            "équitation",
+            "cyclisme",
+            "boxe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "équitation",
+          "options": [
+            "équitation",
+            "patinage",
+            "lutte",
+            "danse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "cyclisme",
+          "options": [
+            "cyclisme",
+            "gymnastique",
+            "judo",
+            "karaté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "boxe",
+          "options": [
+            "boxe",
+            "danse",
+            "gymnastique",
+            "équitation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "judo",
+          "options": [
+            "judo",
+            "patinage",
+            "cyclisme",
+            "danse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "danse",
+          "options": [
+            "danse",
+            "boxe",
+            "lutte",
+            "karaté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "gymnastique",
+          "options": [
+            "gymnastique",
+            "cyclisme",
+            "équitation",
+            "patinage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "lutte",
+          "options": [
+            "lutte",
+            "danse",
+            "gymnastique",
+            "patinage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "karaté",
+          "options": [
+            "karaté",
+            "cyclisme",
+            "équitation",
+            "judo"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La discipline du corps",
+      "title_fa": "نظم و انضباط بدن",
+      "inspiration": "Les Chariots de feu",
+      "text": "Le sport est une école de vie. Le ____ (3) nous apprend l'endurance sur de longues distances. L'____ (2) forge un lien unique entre l'homme et l'animal. Sur la glace, le ____ (1) défie la gravité avec grâce. Dans le dojo, le ____ (8) et le ____ (9) enseignent le contrôle de soi. Sur le ring, la ____ (4) et la ____ (5) testent le courage. Enfin, la ____ (6) et la ____ (7) transforment le corps en une œuvre d'art vivante.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "patinage",
+          "options": [
+            "patinage",
+            "équitation",
+            "cyclisme",
+            "boxe"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "équitation",
+          "options": [
+            "équitation",
+            "patinage",
+            "lutte",
+            "danse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "cyclisme",
+          "options": [
+            "cyclisme",
+            "gymnastique",
+            "judo",
+            "karaté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "boxe",
+          "options": [
+            "boxe",
+            "danse",
+            "gymnastique",
+            "équitation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "lutte",
+          "options": [
+            "lutte",
+            "danse",
+            "gymnastique",
+            "patinage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "danse",
+          "options": [
+            "danse",
+            "boxe",
+            "lutte",
+            "karaté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "gymnastique",
+          "options": [
+            "gymnastique",
+            "cyclisme",
+            "équitation",
+            "patinage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "judo",
+          "options": [
+            "judo",
+            "patinage",
+            "cyclisme",
+            "danse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "karaté",
+          "options": [
+            "karaté",
+            "cyclisme",
+            "équitation",
+            "judo"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Sports Individuels et de Combat",
+    "title_fa": "آزمون: ورزش‌های انفرادی و رزمی",
+    "displayCount": 9,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le sport qui se pratique à cheval s'appelle l'____.",
+        "options": [
+          "équitation",
+          "cyclisme",
+          "patinage",
+          "gymnastique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزشی که روی اسب انجام می‌شود، سوارکاری (équitation) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sport de combat japonais où l'on porte un kimono et une ceinture est le ____.",
+        "options": [
+          "judo",
+          "boxe",
+          "lutte",
+          "karaté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزش رزمی ژاپنی با کیمونو و کمربند، جودو است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'activité artistique qui consiste à bouger en rythme avec la musique est la ____.",
+        "options": [
+          "danse",
+          "gymnastique",
+          "lutte",
+          "boxe"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعالیت هنری حرکت با ریتم موسیقی، رقص (danse) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sport où l'on utilise un vélo s'appelle le ____.",
+        "options": [
+          "cyclisme",
+          "patinage",
+          "équitation",
+          "judo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزشی که با دوچرخه انجام می‌شود، دوچرخه‌سواری (cyclisme) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sport de combat où l'on frappe avec des gants est la ____.",
+        "options": [
+          "boxe",
+          "lutte",
+          "karaté",
+          "gymnastique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزش رزمی که در آن با دستکش ضربه می‌زنند، بوکس (boxe) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sport qui demande beaucoup de souplesse et d'équilibre, souvent avec des agrès, est la ____.",
+        "options": [
+          "gymnastique",
+          "danse",
+          "patinage",
+          "lutte"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزشی که به انعطاف و تعادل زیاد نیاز دارد، ژیمناستیک (gymnastique) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sport de glisse sur la glace avec des lames aux pieds est le ____.",
+        "options": [
+          "patinage",
+          "cyclisme",
+          "judo",
+          "karaté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزش سر خوردن روی یخ با تیغه روی پا، پاتیناژ یا اسکیت (patinage) است."
+      },
+      {
+        "type": "binary",
+        "question": "La « lutte » est un sport de combat où l'on essaie de faire tomber l'adversaire au sol.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، کشتی (lutte) ورزشی است که هدف آن انداختن حریف به زمین است."
+      },
+      {
+        "type": "binary",
+        "question": "Le « karaté » se pratique principalement dans l'eau.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، کاراته یک ورزش رزمی خشکی‌زی است."
+      }
+    ]
+  }
+}
