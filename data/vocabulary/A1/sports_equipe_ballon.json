@@ -1,0 +1,366 @@
+{
+  "id": "sports_equipe_ballon",
+  "level": "A1",
+  "theme": "Sports d'Équipe et de Ballon",
+  "theme_fa": "ورزش‌های تیمی و توپی",
+  "icon": "⚽",
+  "inspiration": "Coupe du Monde",
+  "words": [
+    {
+      "fr": "le football",
+      "fa": "فوتبال",
+      "emoji": "⚽",
+      "difficulty": 1,
+      "ex": "J'adore jouer au football avec mes amis.",
+      "ex_fa": "من عاشق فوتبال بازی کردن با دوستانم هستم."
+    },
+    {
+      "fr": "le basket-ball",
+      "fa": "بسکتبال",
+      "emoji": "🏀",
+      "difficulty": 1,
+      "ex": "Il fait du basket-ball tous les mercredis.",
+      "ex_fa": "او چهارشنبه‌ها بسکتبال بازی می‌کند."
+    },
+    {
+      "fr": "le tennis",
+      "fa": "تنیس",
+      "emoji": "🎾",
+      "difficulty": 1,
+      "ex": "Nous jouons au tennis sur le court en terre battue.",
+      "ex_fa": "ما در زمین خاکی تنیس بازی می‌کنیم."
+    },
+    {
+      "fr": "le volleyball",
+      "fa": "والیبال",
+      "emoji": "🏐",
+      "difficulty": 1,
+      "ex": "Le volleyball est un sport très populaire à la plage.",
+      "ex_fa": "والیبال ورزش بسیار محبوبی در ساحل است."
+    },
+    {
+      "fr": "le badminton",
+      "fa": "بدمینتون",
+      "emoji": "🏸",
+      "difficulty": 2,
+      "ex": "Le badminton est un sport rapide et amusant.",
+      "ex_fa": "بدمینتون ورزشی سریع و سرگرم‌کننده است."
+    },
+    {
+      "fr": "le ping-pong",
+      "fa": "پینگ‌پنگ",
+      "emoji": "🏓",
+      "difficulty": 1,
+      "ex": "Il y a une table de ping-pong dans le sous-sol.",
+      "ex_fa": "یک میز پینگ‌پنگ در زیرزمین وجود دارد."
+    },
+    {
+      "fr": "l'athlétisme",
+      "fa": "دو و میدانی",
+      "emoji": "🏃",
+      "difficulty": 2,
+      "ex": "Elle fait de l'athlétisme et court très vite.",
+      "ex_fa": "او دو و میدانی کار می‌کند و خیلی سریع می‌دود."
+    },
+    {
+      "fr": "le ski",
+      "fa": "اسکی",
+      "emoji": "⛷️",
+      "difficulty": 1,
+      "ex": "Nous allons au ski dans les Alpes en hiver.",
+      "ex_fa": "ما در زمستان برای اسکی به آلپ می‌رویم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une journée sportive",
+      "title_fa": "یک روز ورزشی",
+      "text": "Aujourd'hui, c'est une grande journée de sport ! Le matin, je joue au ____ (1) avec mon équipe. L'après-midi, je fais du ____ (8) à la montagne. Mon frère préfère le ____ (2), il est très grand. Ma sœur joue au ____ (3) avec sa raquette. Dans le jardin, nous installons une table de ____ (6). Parfois, nous jouons au ____ (4) ou au ____ (5) en famille. Le dimanche, je regarde les compétitions d'____ (7) à la télévision. J'adore le sport !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "football",
+          "options": [
+            "football",
+            "ski",
+            "tennis",
+            "ping-pong"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "basket-ball",
+          "options": [
+            "basket-ball",
+            "volleyball",
+            "badminton",
+            "athlétisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tennis",
+          "options": [
+            "tennis",
+            "football",
+            "ski",
+            "ping-pong"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "volleyball",
+          "options": [
+            "volleyball",
+            "athlétisme",
+            "ski",
+            "basket-ball"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "badminton",
+          "options": [
+            "badminton",
+            "football",
+            "tennis",
+            "ski"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "ping-pong",
+          "options": [
+            "ping-pong",
+            "volleyball",
+            "athlétisme",
+            "basket-ball"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "athlétisme",
+          "options": [
+            "athlétisme",
+            "badminton",
+            "tennis",
+            "football"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "ski",
+          "options": [
+            "ski",
+            "football",
+            "ping-pong",
+            "volleyball"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La passion du mouvement",
+      "title_fa": "شور و شوق حرکت",
+      "inspiration": "Les Chariots de feu",
+      "text": "Le sport est une poésie du corps. Sur le terrain vert, le ____ (1) unit les cœurs. Sur le parquet, le ____ (2) exige précision et hauteur. Le ____ (3) est un duel élégant de réflexes. Le ____ (4) et le ____ (5) apportent la joie des jeux d'été. Dans le garage, le ____ (6) résonne joyeusement. Sur la piste, l'____ (7) repousse les limites humaines. Et lorsque l'hiver arrive, le ____ (8) nous fait glisser avec grâce sur la neige blanche. Chaque sport est une aventure.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "football",
+          "options": [
+            "football",
+            "ski",
+            "tennis",
+            "ping-pong"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "basket-ball",
+          "options": [
+            "basket-ball",
+            "volleyball",
+            "badminton",
+            "athlétisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tennis",
+          "options": [
+            "tennis",
+            "football",
+            "ski",
+            "ping-pong"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "volleyball",
+          "options": [
+            "volleyball",
+            "athlétisme",
+            "ski",
+            "basket-ball"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "badminton",
+          "options": [
+            "badminton",
+            "football",
+            "tennis",
+            "ski"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "ping-pong",
+          "options": [
+            "ping-pong",
+            "volleyball",
+            "athlétisme",
+            "basket-ball"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "athlétisme",
+          "options": [
+            "athlétisme",
+            "badminton",
+            "tennis",
+            "football"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "ski",
+          "options": [
+            "ski",
+            "football",
+            "ping-pong",
+            "volleyball"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Sports d'Équipe et de Ballon",
+    "title_fa": "آزمون: ورزش‌های تیمی و توپی",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le sport le plus populaire au monde, joué avec un ballon rond, est le ____.",
+        "options": [
+          "football",
+          "basket-ball",
+          "tennis",
+          "volleyball"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محبوب‌ترین ورزش جهان که با توپ گرد بازی می‌شود، فوتبال است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sport où l'on marque des points en lançant un ballon dans un panier est le ____.",
+        "options": [
+          "basket-ball",
+          "football",
+          "badminton",
+          "ping-pong"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزشی که در آن با پرتاب توپ در سبد امتیاز می‌گیرند، بسکتبال است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sport qui se joue avec une raquette et une petite balle jaune est le ____.",
+        "options": [
+          "tennis",
+          "volleyball",
+          "athlétisme",
+          "ski"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزشی که با راکت و توپ کوچک زرد بازی می‌شود، تنیس است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sport d'hiver où l'on glisse sur la neige avec des planches est le ____.",
+        "options": [
+          "ski",
+          "athlétisme",
+          "badminton",
+          "ping-pong"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزش زمستانی که روی برف با صفحات سر می‌خورند، اسکی است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le sport qui comprend la course à pied, le saut et le lancer est l'____.",
+        "options": [
+          "athlétisme",
+          "football",
+          "tennis",
+          "volleyball"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ورزشی که شامل دو، پرش و پرتاب است، دو و میدانی است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le jeu de raquette qui se joue sur une table s'appelle le ____.",
+        "options": [
+          "ping-pong",
+          "badminton",
+          "tennis",
+          "basket-ball"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بازی راکتی که روی میز انجام می‌شود، پینگ‌پنگ نام دارد."
+      },
+      {
+        "type": "binary",
+        "question": "Le « volleyball » se joue généralement avec un filet au milieu du terrain.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، والیبال معمولاً با تور در وسط زمین بازی می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "Le « badminton » se joue avec un ballon de football.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، بدمینتون با توپ پردار (volant) و راکت بازی می‌شود."
+      }
+    ]
+  }
+}
