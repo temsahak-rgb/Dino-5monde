@@ -1,0 +1,446 @@
+{
+  "id": "emotions_psychologie_etats_esprit",
+  "level": "A2",
+  "theme": "Émotions, Psychologie et États d'Esprit",
+  "theme_fa": "احساسات، روانشناسی و حالات روحی",
+  "icon": "❤️",
+  "inspiration": "Le Petit Prince",
+  "words": [
+    {
+      "fr": "la dépression",
+      "fa": "افسردگی",
+      "emoji": "🌧️",
+      "difficulty": 2,
+      "ex": "Il est important de parler de la dépression pour la combattre.",
+      "ex_fa": "صحبت کردن درباره افسردگی برای مبارزه با آن مهم است."
+    },
+    {
+      "fr": "l'anxiété",
+      "fa": "اضطراب",
+      "emoji": "😰",
+      "difficulty": 2,
+      "ex": "La méditation aide à calmer l'anxiété.",
+      "ex_fa": "مدیتیشن به آرام کردن اضطراب کمک می‌کند."
+    },
+    {
+      "fr": "la peur",
+      "fa": "ترس",
+      "emoji": "😨",
+      "difficulty": 1,
+      "ex": "Il faut du courage pour surmonter la peur.",
+      "ex_fa": "برای غلبه بر ترس به شجاعت نیاز است."
+    },
+    {
+      "fr": "la colère",
+      "fa": "خشم / عصبانیت",
+      "emoji": "😡",
+      "difficulty": 1,
+      "ex": "Il a du mal à exprimer sa colère calmement.",
+      "ex_fa": "او به سختی می‌تواند خشم خود را به آرامی بیان کند."
+    },
+    {
+      "fr": "la joie",
+      "fa": "شادی",
+      "emoji": "😄",
+      "difficulty": 1,
+      "ex": "Les enfants sautent de joie en voyant les cadeaux.",
+      "ex_fa": "بچه‌ها با دیدن هدایا از شادی بالا و پایین می‌پرند."
+    },
+    {
+      "fr": "la tristesse",
+      "fa": "غم",
+      "emoji": "😢",
+      "difficulty": 1,
+      "ex": "Elle n'arrive pas à cacher sa tristesse.",
+      "ex_fa": "او نمی‌تواند غم خود را پنهان کند."
+    },
+    {
+      "fr": "la surprise",
+      "fa": "تعجب / شگفتی",
+      "emoji": "😲",
+      "difficulty": 1,
+      "ex": "Son arrivée inattendue a été une bonne surprise.",
+      "ex_fa": "حضور غیرمنتظره او یک تعجب خوب بود."
+    },
+    {
+      "fr": "le dégoût",
+      "fa": "تنفر / بیزاری",
+      "emoji": "🤢",
+      "difficulty": 2,
+      "ex": "Il a ressenti du dégoût en voyant cette scène.",
+      "ex_fa": "او با دیدن این صحنه احساس تنفر کرد."
+    },
+    {
+      "fr": "l'amour",
+      "fa": "عشق",
+      "emoji": "❤️",
+      "difficulty": 1,
+      "ex": "L'amour est aveugle, dit-on souvent.",
+      "ex_fa": "می‌گویند عشق کور است."
+    },
+    {
+      "fr": "la haine",
+      "fa": "نفرت",
+      "emoji": "💔",
+      "difficulty": 2,
+      "ex": "La haine détruit les relations et les cœurs.",
+      "ex_fa": "نفرت روابط و قلب‌ها را نابود می‌کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le jardin des émotions",
+      "title_fa": "باغ احساسات",
+      "text": "Les émotions sont comme la météo de notre esprit. Parfois, il y a du soleil et on ressent de la ____ (5). On peut sauter de ____ (5) quand on reçoit une bonne ____ (7). Mais parfois, des nuages arrivent. On peut ressentir de la ____ (6) ou même de la ____ (1) si les choses vont mal. Il est normal d'avoir de la ____ (3) face à l'inconnu, ou de la ____ (4) quand on est injustement traité. L'____ (2) peut nous empêcher de dormir. Il ne faut pas laisser la ____ (10) prendre le contrôle, car elle empoisonne l'âme. Au contraire, cultivons l'____ (9), car c'est la plus belle des fleurs. Même face au ____ (8), on peut trouver de l'espoir.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "dépression",
+          "options": [
+            "dépression",
+            "anxiété",
+            "peur",
+            "colère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "anxiété",
+          "options": [
+            "anxiété",
+            "dépression",
+            "joie",
+            "amour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "peur",
+          "options": [
+            "peur",
+            "colère",
+            "joie",
+            "surprise"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "colère",
+          "options": [
+            "colère",
+            "peur",
+            "tristesse",
+            "dégoût"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "joie",
+          "options": [
+            "joie",
+            "tristesse",
+            "haine",
+            "dégoût"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "tristesse",
+          "options": [
+            "tristesse",
+            "joie",
+            "surprise",
+            "amour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "surprise",
+          "options": [
+            "surprise",
+            "dégoût",
+            "haine",
+            "peur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dégoût",
+          "options": [
+            "dégoût",
+            "amour",
+            "joie",
+            "surprise"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "amour",
+          "options": [
+            "amour",
+            "haine",
+            "colère",
+            "peur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "haine",
+          "options": [
+            "haine",
+            "amour",
+            "joie",
+            "surprise"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La symphonie de l'âme",
+      "title_fa": "سمفونی روح",
+      "inspiration": "Les Souffrances du jeune Werther",
+      "text": "L'âme humaine est un théâtre où les émotions se succèdent sans relâche. Parfois, l'____ (9) inonde le cœur d'une lumière douce, nous faisant oublier la ____ (1) qui guette dans l'ombre. D'autres fois, la ____ (6) nous enveloppe de son manteau gris. La ____ (4) peut brûler comme un incendie, tandis que l'____ (2) nous serre la gorge. Face à l'inconnu, la ____ (3) nous paralyse, et face à l'injustice, le ____ (8) nous soulève le cœur. Il ne faut jamais laisser la ____ (10) s'installer, car elle est un poison lent. Apprenons à accueillir chaque ____ (7), bonne ou mauvaise, car c'est le signe que nous sommes vivants.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "dépression",
+          "options": [
+            "dépression",
+            "anxiété",
+            "peur",
+            "colère"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "anxiété",
+          "options": [
+            "anxiété",
+            "dépression",
+            "joie",
+            "amour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "peur",
+          "options": [
+            "peur",
+            "colère",
+            "joie",
+            "surprise"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "colère",
+          "options": [
+            "colère",
+            "peur",
+            "tristesse",
+            "dégoût"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "joie",
+          "options": [
+            "joie",
+            "tristesse",
+            "haine",
+            "dégoût"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "tristesse",
+          "options": [
+            "tristesse",
+            "joie",
+            "surprise",
+            "amour"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "surprise",
+          "options": [
+            "surprise",
+            "dégoût",
+            "haine",
+            "peur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "dégoût",
+          "options": [
+            "dégoût",
+            "amour",
+            "joie",
+            "surprise"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "amour",
+          "options": [
+            "amour",
+            "haine",
+            "colère",
+            "peur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "haine",
+          "options": [
+            "haine",
+            "amour",
+            "joie",
+            "surprise"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Émotions, Psychologie et États d'Esprit",
+    "title_fa": "آزمون: احساسات، روانشناسی و حالات روحی",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Un sentiment de grand bonheur et de plaisir s'appelle la ____.",
+        "options": [
+          "joie",
+          "tristesse",
+          "colère",
+          "peur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "احساس شادی و لذت بزرگ، شادی (joie) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Une réaction émotionnelle intense face à un danger réel ou imaginaire est la ____.",
+        "options": [
+          "peur",
+          "joie",
+          "surprise",
+          "amour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واکنش احساسی شدید در برابر خطر واقعی یا خیالی، ترس (peur) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un sentiment d'hostilité et de volonté de faire du mal à quelqu'un est la ____.",
+        "options": [
+          "haine",
+          "amour",
+          "joie",
+          "surprise"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "احساس خصومت و تمایل به آسیب رساندن به کسی، نفرت (haine) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un trouble de l'humeur caractérisé par une tristesse profonde et durable est la ____.",
+        "options": [
+          "dépression",
+          "joie",
+          "surprise",
+          "amour"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اختلال خلقی مشخص‌شده با غم عمیق و پایدار، افسردگی (dépression) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un sentiment d'inquiétude et de tension face à l'avenir est l'____.",
+        "options": [
+          "anxiété",
+          "joie",
+          "amour",
+          "surprise"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "احساس نگرانی و تنش در برابر آینده، اضطراب (anxiété) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une réaction vive et inattendue face à un événement soudain est la ____.",
+        "options": [
+          "surprise",
+          "dégoût",
+          "haine",
+          "tristesse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "واکنش شدید و غیرمنتظره در برابر یک رویداد ناگهانی، تعجب (surprise) است."
+      },
+      {
+        "type": "binary",
+        "question": "« La colère » est une émotion qui peut être exprimée de manière constructive ou destructive.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، خشم (colère) احساسی است که می‌تواند به صورت سازنده یا مخرب بیان شود."
+      },
+      {
+        "type": "binary",
+        "question": "« Le dégoût » est un sentiment de plaisir et d'attraction.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، dégoût به معنای تنفر یا بیزاری است، نه لذت."
+      },
+      {
+        "type": "binary",
+        "question": "« L'amour » est souvent considéré comme l'opposé de la haine.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، عشق (amour) اغلب متضاد نفرت (haine) در نظر گرفته می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« La tristesse » est une émotion qui ne doit jamais être ressentie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، غم (tristesse) یک احساس طبیعی و انسانی است که همه آن را تجربه می‌کنند."
+      }
+    ]
+  }
+}
