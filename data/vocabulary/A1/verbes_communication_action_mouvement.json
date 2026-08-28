@@ -1,0 +1,556 @@
+{
+  "id": "verbes_communication_action_mouvement",
+  "level": "A1",
+  "theme": "Verbes de Communication, d'Action et de Mouvement",
+  "theme_fa": "افعال ارتباطی، حرکتی و انجام کارها",
+  "icon": "🏃‍♂️",
+  "inspiration": "Le Petit Nicolas / French in Action",
+  "words": [
+    {
+      "fr": "parler",
+      "fa": "صحبت کردن",
+      "emoji": "🗣️",
+      "difficulty": 1,
+      "ex": "Je parle français avec mes amis.",
+      "ex_fa": "من با دوستانم فرانسوی صحبت می‌کنم."
+    },
+    {
+      "fr": "partager",
+      "fa": "به اشتراک گذاشتن",
+      "emoji": "🤝",
+      "difficulty": 2,
+      "ex": "J'aime partager mes repas avec ma famille.",
+      "ex_fa": "دوست دارم غذاهایم را با خانواده‌ام به اشتراک بگذارم."
+    },
+    {
+      "fr": "payer",
+      "fa": "پرداخت کردن",
+      "emoji": "💳",
+      "difficulty": 1,
+      "ex": "Je vais payer l'addition au restaurant.",
+      "ex_fa": "من صورت‌حساب را در رستوران پرداخت می‌کنم."
+    },
+    {
+      "fr": "penser",
+      "fa": "فکر کردن",
+      "emoji": "💭",
+      "difficulty": 1,
+      "ex": "Je pense à mes vacances d'été.",
+      "ex_fa": "من به تعطیلات تابستانی‌ام فکر می‌کنم."
+    },
+    {
+      "fr": "perdre",
+      "fa": "از دست دادن / گم کردن",
+      "emoji": "📉",
+      "difficulty": 1,
+      "ex": "Ne perds pas tes clés, s'il te plaît.",
+      "ex_fa": "لطفاً کلیدهایت را گم نکن."
+    },
+    {
+      "fr": "porter",
+      "fa": "پوشیدن / حمل کردن",
+      "emoji": "👕",
+      "difficulty": 1,
+      "ex": "Je porte des lunettes et un manteau noir.",
+      "ex_fa": "من عینک و یک پالتوی مشکی می‌پوشم."
+    },
+    {
+      "fr": "pouvoir",
+      "fa": "توانستن",
+      "emoji": "💪",
+      "difficulty": 1,
+      "ex": "Tu peux m'aider avec ce dossier ?",
+      "ex_fa": "می‌توانی با این پرونده به من کمک کنی؟"
+    },
+    {
+      "fr": "préférer",
+      "fa": "ترجیح دادن",
+      "emoji": "⭐",
+      "difficulty": 1,
+      "ex": "Je préfère le thé au café le matin.",
+      "ex_fa": "من صبح‌ها چای را به قهوه ترجیح می‌دهم."
+    },
+    {
+      "fr": "prendre",
+      "fa": "گرفتن / برداشتن",
+      "emoji": "✋",
+      "difficulty": 1,
+      "ex": "Je vais prendre le bus pour aller au travail.",
+      "ex_fa": "من برای رفتن به سر کار اتوبوس می‌گیرم."
+    },
+    {
+      "fr": "présenter",
+      "fa": "معرفی کردن",
+      "emoji": "👋",
+      "difficulty": 2,
+      "ex": "Je te présente mon nouveau collègue.",
+      "ex_fa": "همکار جدیدم را به تو معرفی می‌کنم."
+    },
+    {
+      "fr": "recevoir",
+      "fa": "دریافت کردن",
+      "emoji": "📥",
+      "difficulty": 2,
+      "ex": "Je vais recevoir un colis demain matin.",
+      "ex_fa": "من فردا صبح یک بسته دریافت خواهم کرد."
+    },
+    {
+      "fr": "regarder",
+      "fa": "نگاه کردن",
+      "emoji": "👀",
+      "difficulty": 1,
+      "ex": "Regarde cette belle voiture rouge !",
+      "ex_fa": "این ماشین قرمز زیبا را نگاه کن!"
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une rencontre au café",
+      "title_fa": "ملاقات در کافه",
+      "text": "Je vais ____ (9) un café avec mon ami. Je vais te le ____ (10). Il aime ____ (1) en français. Nous allons ____ (2) un gâteau. Je vais ____ (3) l'addition. Je ____ (4) que c'est une bonne idée. Ne va pas ____ (5) ton portefeuille ! Je vais ____ (6) mon nouveau manteau. Tu ____ (7) venir avec nous ? Je ____ (8) le thé, mais aujourd'hui je prends un café. Je vais ____ (11) des photos. Ce soir, je vais ____ (12) un film et ____ (13) un paquet de ma mère.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "parler",
+          "options": [
+            "parler",
+            "payer",
+            "perdre",
+            "porter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "partager",
+          "options": [
+            "partager",
+            "penser",
+            "pouvoir",
+            "préférer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "payer",
+          "options": [
+            "payer",
+            "parler",
+            "perdre",
+            "porter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "pense",
+          "options": [
+            "pense",
+            "perds",
+            "porte",
+            "peux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "perdre",
+          "options": [
+            "perdre",
+            "payer",
+            "porter",
+            "pouvoir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "porter",
+          "options": [
+            "porter",
+            "perdre",
+            "payer",
+            "penser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "peux",
+          "options": [
+            "peux",
+            "préfère",
+            "prends",
+            "présente"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "préfère",
+          "options": [
+            "préfère",
+            "peux",
+            "prends",
+            "présente"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "prendre",
+          "options": [
+            "prendre",
+            "présenter",
+            "recevoir",
+            "regarder"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "présenter",
+          "options": [
+            "présenter",
+            "prendre",
+            "recevoir",
+            "regarder"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "prendre",
+          "options": [
+            "prendre",
+            "présenter",
+            "recevoir",
+            "regarder"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "regarder",
+          "options": [
+            "regarder",
+            "recevoir",
+            "prendre",
+            "présenter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "recevoir",
+          "options": [
+            "recevoir",
+            "regarder",
+            "prendre",
+            "présenter"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les souvenirs d'un voyage",
+      "title_fa": "خاطرات یک سفر",
+      "inspiration": "Le Petit Prince",
+      "text": "J'aime ____ (1) de mes rêves avec ceux que j'aime. Hier, j'ai dû ____ (3) un repas cher, mais je ne ____ (5) pas mon sourire. Je ____ (4) souvent à ce jour-là. Je vais ____ (6) ce vieux chapeau avec fierté. Est-ce que tu ____ (7) m'accompagner ? Je ____ (8) la solitude, mais ta présence est un cadeau. Je vais ____ (9) le train de minuit. Laisse-moi te ____ (10) mon monde intérieur. J'espère ____ (13) une lettre de toi bientôt. En attendant, je vais ____ (12) les étoiles et ____ (11) des souvenirs inoubliables.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "partager",
+          "options": [
+            "partager",
+            "payer",
+            "perdre",
+            "porter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "parler",
+          "options": [
+            "parler",
+            "payer",
+            "perdre",
+            "porter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "payer",
+          "options": [
+            "payer",
+            "parler",
+            "perdre",
+            "porter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "pense",
+          "options": [
+            "pense",
+            "perds",
+            "porte",
+            "peux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "perds",
+          "options": [
+            "perds",
+            "paye",
+            "porte",
+            "peux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "porter",
+          "options": [
+            "porter",
+            "perdre",
+            "payer",
+            "penser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "peux",
+          "options": [
+            "peux",
+            "préfères",
+            "prends",
+            "présentes"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "préfère",
+          "options": [
+            "préfère",
+            "peux",
+            "prends",
+            "présente"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "prendre",
+          "options": [
+            "prendre",
+            "présenter",
+            "recevoir",
+            "regarder"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "présenter",
+          "options": [
+            "présenter",
+            "prendre",
+            "recevoir",
+            "regarder"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "prendre",
+          "options": [
+            "prendre",
+            "présenter",
+            "recevoir",
+            "regarder"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "regarder",
+          "options": [
+            "regarder",
+            "recevoir",
+            "prendre",
+            "présenter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "recevoir",
+          "options": [
+            "recevoir",
+            "regarder",
+            "prendre",
+            "présenter"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Verbes de Communication, d'Action et de Mouvement",
+    "title_fa": "آزمون: افعال ارتباطی، حرکتی و انجام کارها",
+    "displayCount": 12,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le verbe pour dire « صحبت کردن » une langue est ____.",
+        "options": [
+          "parler",
+          "payer",
+          "perdre",
+          "porter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعلی که برای گفتن صحبت کردن به یک زبان استفاده می‌شود، parler است."
+      },
+      {
+        "type": "mcq",
+        "question": "Donner une partie de ce qu'on a à d'autres, c'est ____.",
+        "options": [
+          "partager",
+          "penser",
+          "pouvoir",
+          "préférer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دادن بخشی از آنچه داریم به دیگران، به اشتراک گذاشتن (partager) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Donner de l'argent en échange d'un service ou d'un produit, c'est ____.",
+        "options": [
+          "payer",
+          "parler",
+          "perdre",
+          "porter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دادن پول در ازای یک خدمت یا محصول، پرداخت کردن (payer) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Avoir une idée ou un souvenir dans l'esprit, c'est ____.",
+        "options": [
+          "penser",
+          "perdre",
+          "porter",
+          "pouvoir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "داشتن یک ایده یا خاطره در ذهن، فکر کردن (penser) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Ne plus avoir un objet qu'on avait, c'est le ____.",
+        "options": [
+          "perdre",
+          "payer",
+          "porter",
+          "penser"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دیگر نداشتن شیئی که قبلاً داشتیم، از دست دادن یا گم کردن (perdre) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Avoir un vêtement sur soi ou transporter un objet, c'est le ____.",
+        "options": [
+          "porter",
+          "perdre",
+          "payer",
+          "penser"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "داشتن لباس بر تن یا حمل یک شیء، porter (پوشیدن/حمل کردن) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le verbe qui exprime la capacité ou la permission est ____.",
+        "options": [
+          "pouvoir",
+          "préférer",
+          "prendre",
+          "présenter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعلی که توانایی یا اجازه را بیان می‌کند، pouvoir (توانستن) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Aimer une chose plus qu'une autre, c'est la ____.",
+        "options": [
+          "préférer",
+          "pouvoir",
+          "prendre",
+          "présenter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوست داشتن یک چیز بیشتر از چیز دیگر، ترجیح دادن (préférer) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Saisir un objet ou utiliser un moyen de transport, c'est le ____.",
+        "options": [
+          "prendre",
+          "présenter",
+          "recevoir",
+          "regarder"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گرفتن یک شیء یا استفاده از وسیله نقلیه، prendre (گرفتن/برداشتن) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Faire connaître une personne à une autre, c'est la ____.",
+        "options": [
+          "présenter",
+          "prendre",
+          "recevoir",
+          "regarder"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آشنا کردن یک شخص با شخص دیگر، معرفی کردن (présenter) است."
+      },
+      {
+        "type": "binary",
+        "question": "« Recevoir » signifie donner quelque chose à quelqu'un.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، recevoir به معنای دریافت کردن است، نه دادن."
+      },
+      {
+        "type": "binary",
+        "question": "On utilise « regarder » pour dire qu'on dirige ses yeux vers quelque chose.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، regarder به معنای نگاه کردن یا جهت دادن چشم‌ها به چیزی است."
+      }
+    ]
+  }
+}
