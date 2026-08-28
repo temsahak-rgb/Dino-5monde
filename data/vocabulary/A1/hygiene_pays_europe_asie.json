@@ -1,0 +1,426 @@
+{
+  "id": "hygiene_pays_europe_asie",
+  "level": "A1",
+  "theme": "Hygiène Personnelle et Pays (Europe, Asie, Amérique)",
+  "theme_fa": "بهداشت فردی و کشورها (اروپا، آسیا، آمریکا)",
+  "icon": "🪥",
+  "inspiration": "Un matin avant un grand voyage",
+  "words": [
+    {
+      "fr": "la brosse à dents",
+      "fa": "مسواک",
+      "emoji": "🪥",
+      "difficulty": 1,
+      "ex": "Je me brosse les dents avec ma brosse à dents.",
+      "ex_fa": "من دندان‌هایم را با مسواک مسواک می‌زنم."
+    },
+    {
+      "fr": "le dentifrice",
+      "fa": "خمیردندان",
+      "emoji": "🧴",
+      "difficulty": 1,
+      "ex": "Il faut mettre un peu de dentifrice sur la brosse.",
+      "ex_fa": "باید کمی خمیردندان روی مسواک گذاشت."
+    },
+    {
+      "fr": "le papier toilette",
+      "fa": "دستمال توالت",
+      "emoji": "🧻",
+      "difficulty": 1,
+      "ex": "N'oublie pas d'acheter du papier toilette au supermarché.",
+      "ex_fa": "فراموش نکن در سوپرمارکت دستمال توالت بخری."
+    },
+    {
+      "fr": "l'Allemagne",
+      "fa": "آلمان",
+      "emoji": "🇩🇪",
+      "difficulty": 1,
+      "ex": "J'aimerais beaucoup voyager en Allemagne.",
+      "ex_fa": "من خیلی دوست دارم به آلمان سفر کنم."
+    },
+    {
+      "fr": "l'Angleterre",
+      "fa": "انگلستان",
+      "emoji": "🇬🇧",
+      "difficulty": 1,
+      "ex": "Il pleut souvent en Angleterre.",
+      "ex_fa": "در انگلستان اغلب باران می‌بارد."
+    },
+    {
+      "fr": "l'Espagne",
+      "fa": "اسپانیا",
+      "emoji": "🇪🇸",
+      "difficulty": 1,
+      "ex": "Nous allons visiter l'Espagne cet été.",
+      "ex_fa": "ما امسال تابستان به اسپانیا سفر خواهیم کرد."
+    },
+    {
+      "fr": "la France",
+      "fa": "فرانسه",
+      "emoji": "🇫🇷",
+      "difficulty": 1,
+      "ex": "La Tour Eiffel est le symbole de la France.",
+      "ex_fa": "برج ایفل نماد فرانسه است."
+    },
+    {
+      "fr": "l'Italie",
+      "fa": "ایتالیا",
+      "emoji": "🇮🇹",
+      "difficulty": 1,
+      "ex": "J'adore manger des pizzas en Italie.",
+      "ex_fa": "من عاشق خوردن پیتزا در ایتالیا هستم."
+    },
+    {
+      "fr": "le Japon",
+      "fa": "ژاپن",
+      "emoji": "🇯🇵",
+      "difficulty": 1,
+      "ex": "Le Japon est un pays fascinant avec une culture riche.",
+      "ex_fa": "ژاپن کشوری شگفت‌انگیز با فرهنگی غنی است."
+    },
+    {
+      "fr": "le Canada",
+      "fa": "کانادا",
+      "emoji": "🇨🇦",
+      "difficulty": 1,
+      "ex": "Il fait très froid en hiver au Canada.",
+      "ex_fa": "زمستان‌ها در کانادا هوا بسیار سرد است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Préparatifs de voyage",
+      "title_fa": "مقدمات سفر",
+      "text": "Ce matin, je me réveille et je vais à la salle de bains. Je mets du ____ (2) sur ma ____ (1) pour me laver les dents. Je vérifie aussi s'il reste du ____ (3). Aujourd'hui, je rêve de voyager. J'aimerais visiter la ____ (7) pour voir la Tour Eiffel, ou l'____ (8) pour manger des pâtes. J'aimerais aussi aller en ____ (5) pour voir le Big Ben, ou en ____ (4) pour découvrir les châteaux. Peut-être que l'année prochaine, j'irai en ____ (9) pour voir les cerisiers en fleurs, ou au ____ (10) pour voir les grandes forêts. Et bien sûr, l'____ (6) pour le soleil et la plage !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "brosse à dents",
+          "options": [
+            "brosse à dents",
+            "dentifrice",
+            "papier toilette",
+            "France"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "dentifrice",
+          "options": [
+            "dentifrice",
+            "brosse à dents",
+            "papier toilette",
+            "Italie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "papier toilette",
+          "options": [
+            "papier toilette",
+            "dentifrice",
+            "brosse à dents",
+            "Japon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Allemagne",
+          "options": [
+            "Allemagne",
+            "Angleterre",
+            "Espagne",
+            "Canada"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Angleterre",
+          "options": [
+            "Angleterre",
+            "Allemagne",
+            "Espagne",
+            "Japon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Espagne",
+          "options": [
+            "Espagne",
+            "France",
+            "Italie",
+            "Canada"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "France",
+          "options": [
+            "France",
+            "Italie",
+            "Japon",
+            "Canada"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Italie",
+          "options": [
+            "Italie",
+            "France",
+            "Allemagne",
+            "Angleterre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Japon",
+          "options": [
+            "Japon",
+            "Canada",
+            "Espagne",
+            "Allemagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Canada",
+          "options": [
+            "Canada",
+            "Japon",
+            "Italie",
+            "France"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'appel du monde",
+      "title_fa": "ندای جهان",
+      "inspiration": "Le Tour du Monde en 80 Jours",
+      "text": "La journée commence par des gestes simples : le ____ (2) frais et la ____ (1) qui nettoie le sourire. Un rouleau de ____ (3) nous rappelle les besoins quotidiens. Mais l'esprit, lui, vagabonde déjà loin. Il imagine les rues de l'____ (8), le charme de l'____ (5), ou le soleil de l'____ (6). Il rêve des montagnes de l'____ (4), des canaux de l'____ (7), des saveurs de l'____ (8), de la modernité du ____ (9) et des grands espaces du ____ (10). Le monde est un livre, et chaque pays en est une page magnifique.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "brosse à dents",
+          "options": [
+            "brosse à dents",
+            "dentifrice",
+            "papier toilette",
+            "France"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "dentifrice",
+          "options": [
+            "dentifrice",
+            "brosse à dents",
+            "papier toilette",
+            "Italie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "papier toilette",
+          "options": [
+            "papier toilette",
+            "dentifrice",
+            "brosse à dents",
+            "Japon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "Allemagne",
+          "options": [
+            "Allemagne",
+            "Angleterre",
+            "Espagne",
+            "Canada"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "Angleterre",
+          "options": [
+            "Angleterre",
+            "Allemagne",
+            "Espagne",
+            "Japon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Espagne",
+          "options": [
+            "Espagne",
+            "France",
+            "Italie",
+            "Canada"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "France",
+          "options": [
+            "France",
+            "Italie",
+            "Japon",
+            "Canada"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "Italie",
+          "options": [
+            "Italie",
+            "France",
+            "Allemagne",
+            "Angleterre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Japon",
+          "options": [
+            "Japon",
+            "Canada",
+            "Espagne",
+            "Allemagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "Canada",
+          "options": [
+            "Canada",
+            "Japon",
+            "Italie",
+            "France"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Hygiène et Pays",
+    "title_fa": "آزمون: بهداشت و کشورها",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'objet qu'on utilise avec du dentifrice pour nettoyer ses dents est la ____.",
+        "options": [
+          "brosse à dents",
+          "serviette",
+          "savon",
+          "peigne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله‌ای که با خمیردندان برای تمیز کردن دندان استفاده می‌شود، مسواک (brosse à dents) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le produit qu'on met sur la brosse à dents s'appelle le ____.",
+        "options": [
+          "dentifrice",
+          "shampooing",
+          "savon",
+          "papier toilette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "محصولی که روی مسواک گذاشته می‌شود، خمیردندان (dentifrice) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays connu pour la Tour Eiffel et les croissants est la ____.",
+        "options": [
+          "France",
+          "Italie",
+          "Espagne",
+          "Allemagne"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشوری که به برج ایفل و کروسان معروف است، فرانسه (France) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays célèbre pour ses pizzas et ses pâtes est l'____.",
+        "options": [
+          "Italie",
+          "France",
+          "Espagne",
+          "Japon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشوری که به پیتزا و پاستا معروف است، ایتالیا (Italie) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays insulaire d'Asie connu pour ses cerisiers en fleurs est le ____.",
+        "options": [
+          "Japon",
+          "Canada",
+          "Allemagne",
+          "Angleterre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشور جزیره‌ای آسیا که به شکوفه‌های گیلاس معروف است، ژاپن (Japon) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le grand pays d'Amérique du Nord connu pour ses hivers froids est le ____.",
+        "options": [
+          "Canada",
+          "Espagne",
+          "Italie",
+          "Japon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کشور بزرگ آمریکای شمالی که به زمستان‌های سردش معروف است، کانادا (Canada) است."
+      },
+      {
+        "type": "binary",
+        "question": "On utilise du « papier toilette » dans la salle de bains.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، دستمال توالت (papier toilette) در حمام/دستشویی استفاده می‌شود."
+      },
+      {
+        "type": "binary",
+        "question": "« L'Allemagne » est un pays situé en Amérique du Sud.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، آلمان (Allemagne) کشوری در اروپا است."
+      }
+    ]
+  }
+}
