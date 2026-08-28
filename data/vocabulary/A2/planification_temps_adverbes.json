@@ -1,0 +1,534 @@
+{
+  "id": "planification_temps_adverbes",
+  "level": "A2",
+  "theme": "Planification, Temps et Adverbes",
+  "theme_fa": "برنامه‌ریزی، زمان و قیدها",
+  "icon": "⏳",
+  "inspiration": "Le Petit Prince / French in Action",
+  "words": [
+    {
+      "fr": "Pâques",
+      "fa": "عید پاک",
+      "emoji": "🐣",
+      "difficulty": 2,
+      "ex": "Joyeuses Pâques à toute la famille !",
+      "ex_fa": "عید پاک به تمام خانواده مبارک!"
+    },
+    {
+      "fr": "par conséquent",
+      "fa": "در نتیجه",
+      "emoji": "➡️",
+      "difficulty": 3,
+      "ex": "Il a beaucoup plu, par conséquent le match est annulé.",
+      "ex_fa": "باران زیادی بارید، در نتیجه مسابقه لغو شد."
+    },
+    {
+      "fr": "parce que",
+      "fa": "زیرا / چون",
+      "emoji": "❓",
+      "difficulty": 1,
+      "ex": "Je reste à la maison parce que je suis malade.",
+      "ex_fa": "در خانه می‌مانم چون بیمارم."
+    },
+    {
+      "fr": "parfois",
+      "fa": "گاهی اوقات",
+      "emoji": "🎲",
+      "difficulty": 1,
+      "ex": "Je vais au cinéma parfois, le week-end.",
+      "ex_fa": "من گاهی اوقات، آخر هفته‌ها به سینما می‌روم."
+    },
+    {
+      "fr": "pendant",
+      "fa": "در طولِ",
+      "emoji": "⏱️",
+      "difficulty": 1,
+      "ex": "J'aime lire pendant le voyage en train.",
+      "ex_fa": "دوست دارم در طول سفر با قطار کتاب بخوانم."
+    },
+    {
+      "fr": "peut-être",
+      "fa": "شاید",
+      "emoji": "🤔",
+      "difficulty": 1,
+      "ex": "Peut-être qu'il viendra nous voir demain.",
+      "ex_fa": "شاید او فردا به دیدن ما بیاید."
+    },
+    {
+      "fr": "pourtant",
+      "fa": "با این حال",
+      "emoji": "🔄",
+      "difficulty": 2,
+      "ex": "Il est très intelligent, pourtant il a échoué à l'examen.",
+      "ex_fa": "او بسیار باهوش است، با این حال در امتحان شکست خورد."
+    },
+    {
+      "fr": "presque",
+      "fa": "تقریباً",
+      "emoji": "📏",
+      "difficulty": 1,
+      "ex": "J'ai presque fini mes devoirs.",
+      "ex_fa": "من تقریباً تکالیفم را تمام کرده‌ام."
+    },
+    {
+      "fr": "le printemps",
+      "fa": "بهار",
+      "emoji": "🌸",
+      "difficulty": 1,
+      "ex": "Les fleurs fleurissent magnifiquement au printemps.",
+      "ex_fa": "گل‌ها در بهار به شکلی زیبا شکوفه می‌دهند."
+    },
+    {
+      "fr": "puis",
+      "fa": "سپس",
+      "emoji": "⏭️",
+      "difficulty": 1,
+      "ex": "Je mange mon dîner, puis je me couche.",
+      "ex_fa": "من شام می‌خورم، سپس می‌خوابم."
+    },
+    {
+      "fr": "quand",
+      "fa": "وقتی / چه زمانی",
+      "emoji": "🕰️",
+      "difficulty": 1,
+      "ex": "Quand pars-tu en vacances cette année ?",
+      "ex_fa": "امسال چه زمانی به تعطیلات می‌روی؟"
+    },
+    {
+      "fr": "quelquefois",
+      "fa": "گاهی",
+      "emoji": "🎯",
+      "difficulty": 2,
+      "ex": "Il m'appelle quelquefois pour prendre des nouvelles.",
+      "ex_fa": "او گاهی برای احوالپرسی به من زنگ می‌زند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un projet de printemps",
+      "title_fa": "یک پروژه بهاری",
+      "text": "C'est bientôt ____ (9) et les fleurs sont belles. ____ (11) je pars en voyage, ____ (3) j'adore la nature. ____ (6), je visiterai la campagne. ____ (4) ou ____ (12), je me repose. Je lis un livre ____ (5) le trajet. ____ (10), je dors un peu. ____ (7), je suis un peu fatigué, je suis content. ____ (2), je serai en forme pour ____ (1). Je dis : « ____ (1), c'est la saison du renouveau ! »",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Pâques",
+          "options": [
+            "Pâques",
+            "printemps",
+            "parfois",
+            "quand"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "par conséquent",
+          "options": [
+            "par conséquent",
+            "parce que",
+            "pourtant",
+            "presque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "parce que",
+          "options": [
+            "parce que",
+            "puis",
+            "pendant",
+            "peut-être"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "parfois",
+          "options": [
+            "parfois",
+            "premier",
+            "prochain",
+            "pire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pendant",
+          "options": [
+            "pendant",
+            "puis",
+            "quand",
+            "parce que"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "peut-être",
+          "options": [
+            "peut-être",
+            "presque",
+            "pourtant",
+            "par conséquent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pourtant",
+          "options": [
+            "pourtant",
+            "puis",
+            "parce que",
+            "pendant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "presque",
+          "options": [
+            "presque",
+            "parfois",
+            "peut-être",
+            "pourtant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "le printemps",
+          "options": [
+            "le printemps",
+            "Pâques",
+            "parfois",
+            "puis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "puis",
+          "options": [
+            "puis",
+            "parce que",
+            "pendant",
+            "quand"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "quand",
+          "options": [
+            "quand",
+            "quelquefois",
+            "parfois",
+            "pourtant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "quelquefois",
+          "options": [
+            "quelquefois",
+            "parfois",
+            "puis",
+            "quand"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les caprices du temps",
+      "title_fa": "نوسانات زمان",
+      "inspiration": "Le Petit Prince",
+      "text": "Lorsque ____ (9) arrive, tout s'éveille. ____ (11) je marche dans les bois, ____ (3) la solitude m'apaise. ____ (6), il pleut soudainement. ____ (8), je suis trempé, ____ (7) je continue ma route. Je réfléchis ____ (5) ce long chemin. ____ (10), je m'assois pour me reposer. Je ne sais pas ____ (11) exact je rentrerai. ____ (4), je me sens seul, mais ____ (12), un ami m'appelle. ____ (2), je ne suis jamais vraiment seul. C'est ____ (8) la fin de la journée, et ____ (1) approche avec ses joies simples.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Pâques",
+          "options": [
+            "Pâques",
+            "printemps",
+            "parfois",
+            "quand"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "par conséquent",
+          "options": [
+            "par conséquent",
+            "parce que",
+            "pourtant",
+            "presque"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "parce que",
+          "options": [
+            "parce que",
+            "puis",
+            "pendant",
+            "peut-être"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "parfois",
+          "options": [
+            "parfois",
+            "premier",
+            "prochain",
+            "pire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pendant",
+          "options": [
+            "pendant",
+            "puis",
+            "quand",
+            "parce que"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "peut-être",
+          "options": [
+            "peut-être",
+            "presque",
+            "pourtant",
+            "par conséquent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "pourtant",
+          "options": [
+            "pourtant",
+            "puis",
+            "parce que",
+            "pendant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "presque",
+          "options": [
+            "presque",
+            "parfois",
+            "peut-être",
+            "pourtant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "le printemps",
+          "options": [
+            "le printemps",
+            "Pâques",
+            "parfois",
+            "puis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "puis",
+          "options": [
+            "puis",
+            "parce que",
+            "pendant",
+            "quand"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "quand",
+          "options": [
+            "quand",
+            "quelquefois",
+            "parfois",
+            "pourtant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "quelquefois",
+          "options": [
+            "quelquefois",
+            "parfois",
+            "puis",
+            "quand"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Planification, Temps et Adverbes",
+    "title_fa": "آزمون: برنامه‌ریزی، زمان و قیدها",
+    "displayCount": 12,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La fête chrétienne célébrée au printemps avec des œufs est ____.",
+        "options": [
+          "Pâques",
+          "le printemps",
+          "parfois",
+          "quand"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جشن مسیحی که در بهار با تخم‌مرغ جشن گرفته می‌شود، عید پاک (Pâques) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour exprimer une conséquence logique de manière formelle, on utilise ____.",
+        "options": [
+          "par conséquent",
+          "parce que",
+          "pourtant",
+          "presque"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای بیان نتیجه منطقی به صورت رسمی از par conséquent (در نتیجه) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mot pour introduire une cause ou une raison est ____.",
+        "options": [
+          "parce que",
+          "puis",
+          "pendant",
+          "peut-être"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه‌ای برای معرفی علت یا دلیل، parce que (زیرا/چون) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un synonyme de « de temps en temps » est ____.",
+        "options": [
+          "parfois",
+          "premier",
+          "prochain",
+          "pire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "مترادفی برای «گاهی اوقات»، parfois است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour indiquer la durée d'une action, on utilise la préposition ____.",
+        "options": [
+          "pendant",
+          "puis",
+          "quand",
+          "parce que"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای نشان دادن مدت زمان یک عمل، از حرف اضافه pendant (در طولِ) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour exprimer une incertitude ou une possibilité, on dit ____.",
+        "options": [
+          "peut-être",
+          "presque",
+          "pourtant",
+          "par conséquent"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای بیان عدم قطعیت یا امکان، از peut-être (شاید) استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mot qui introduit une opposition ou une concession est ____.",
+        "options": [
+          "pourtant",
+          "puis",
+          "parce que",
+          "pendant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه‌ای که تقابل یا امتیاز را معرفی می‌کند، pourtant (با این حال) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « تقریباً » ou « quasiment », on utilise ____.",
+        "options": [
+          "presque",
+          "parfois",
+          "peut-être",
+          "pourtant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای گفتن «تقریباً» از presque استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "La saison qui suit l'hiver et précède l'été est ____.",
+        "options": [
+          "le printemps",
+          "Pâques",
+          "parfois",
+          "puis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فصلی که بعد از زمستان و قبل از تابستان می‌آید، بهار (le printemps) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un mot pour dire « سپس » ou « ensuite » dans une énumération est ____.",
+        "options": [
+          "puis",
+          "parce que",
+          "pendant",
+          "quand"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "کلمه‌ای برای گفتن «سپس» در یک فهرست، puis است."
+      },
+      {
+        "type": "binary",
+        "question": "« Quand » est utilisé pour poser une question sur le lieu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، quand برای پرسیدن درباره زمان استفاده می‌شود، نه مکان."
+      },
+      {
+        "type": "binary",
+        "question": "« Quelquefois » et « parfois » ont exactement le même sens.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، quelquefois و parfois هر دو به معنای گاهی اوقات هستند."
+      }
+    ]
+  }
+}
