@@ -1,0 +1,534 @@
+{
+  "id": "voyage_mouvement_maison",
+  "level": "A1",
+  "theme": "Voyage, Mouvement et Maison",
+  "theme_fa": "سفر، حرکت و خانه",
+  "icon": "✈️",
+  "inspiration": "Tintin / Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "le paquet",
+      "fa": "بسته",
+      "emoji": "📦",
+      "difficulty": 1,
+      "ex": "J'ai reçu un paquet par la poste aujourd'hui.",
+      "ex_fa": "من امروز یک بسته از طریق پست دریافت کردم."
+    },
+    {
+      "fr": "partir",
+      "fa": "ترک کردن / رفتن",
+      "emoji": "🚶",
+      "difficulty": 1,
+      "ex": "Je dois partir maintenant, il est tard.",
+      "ex_fa": "من باید الان بروم، دیر است."
+    },
+    {
+      "fr": "passer",
+      "fa": "عبور کردن / گذراندن",
+      "emoji": "⏳",
+      "difficulty": 1,
+      "ex": "Nous allons passer un bon week-end ensemble.",
+      "ex_fa": "ما قرار است یک آخر هفته خوب را با هم بگذرانیم."
+    },
+    {
+      "fr": "la pièce",
+      "fa": "اتاق / قطعه",
+      "emoji": "🚪",
+      "difficulty": 1,
+      "ex": "Mon appartement a trois pièces et une cuisine.",
+      "ex_fa": "آپارتمان من سه اتاق و یک آشپزخانه دارد."
+    },
+    {
+      "fr": "le portable",
+      "fa": "موبایل / لپ‌تاپ",
+      "emoji": "📱",
+      "difficulty": 1,
+      "ex": "J'ai oublié mon portable à la maison.",
+      "ex_fa": "من موبایلم را در خانه فراموش کردم."
+    },
+    {
+      "fr": "la porte",
+      "fa": "در",
+      "emoji": "🚪",
+      "difficulty": 1,
+      "ex": "N'oublie pas de fermer la porte à clé.",
+      "ex_fa": "فراموش نکن در را با کلید قفل کنی."
+    },
+    {
+      "fr": "poster",
+      "fa": "پست کردن",
+      "emoji": "✉️",
+      "difficulty": 1,
+      "ex": "Je vais poster cette lettre à la boîte aux lettres.",
+      "ex_fa": "من این نامه را در صندوق پست می‌اندازم."
+    },
+    {
+      "fr": "se promener",
+      "fa": "قدم زدن",
+      "emoji": "🚶‍♂️",
+      "difficulty": 1,
+      "ex": "J'aime me promener dans le parc le soir.",
+      "ex_fa": "دوست دارم عصرها در پارک قدم بزنم."
+    },
+    {
+      "fr": "se promener en bateau",
+      "fa": "گردش کردن با قایق",
+      "emoji": "⛵",
+      "difficulty": 2,
+      "ex": "Dimanche, nous allons nous promener en bateau sur le lac.",
+      "ex_fa": "یکشنبه، ما می‌رویم با قایق در دریاچه گردش کنیم."
+    },
+    {
+      "fr": "quitter",
+      "fa": "ترک کردن (جایی/کسی را)",
+      "emoji": "👋",
+      "difficulty": 2,
+      "ex": "Il a quitté Paris pour vivre à la campagne.",
+      "ex_fa": "او پاریس را ترک کرد تا در روستا زندگی کند."
+    },
+    {
+      "fr": "ranger",
+      "fa": "مرتب کردن",
+      "emoji": "🧹",
+      "difficulty": 1,
+      "ex": "Il faut ranger sa chambre avant de sortir.",
+      "ex_fa": "قبل از بیرون رفتن باید اتاقت را مرتب کنی."
+    },
+    {
+      "fr": "rentrer",
+      "fa": "برگشتن (به خانه)",
+      "emoji": "🏠",
+      "difficulty": 1,
+      "ex": "Je rentre à la maison après le travail.",
+      "ex_fa": "من بعد از کار به خانه برمی‌گردم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Retour à la maison",
+      "title_fa": "بازگشت به خانه",
+      "text": "Je dois ____ (2) du bureau. Avant de ____ (11), je vais ____ (10) mon bureau. J'ai quatre ____ (4) dans mon appartement. Je ferme la ____ (6) à clé. Je vais à la poste pour ____ (7) un ____ (1). J'ai oublié mon ____ (5), tant pis. Ce soir, je vais ____ (8) dans le quartier. Demain, je vais ____ (9) sur le lac. J'aime ____ (3) le temps avec ma famille. Je ne veux pas ____ (12) ma ville, elle est belle.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "paquet",
+          "options": [
+            "paquet",
+            "portable",
+            "porte",
+            "pièce"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "partir",
+          "options": [
+            "partir",
+            "passer",
+            "poster",
+            "promener"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "passer",
+          "options": [
+            "passer",
+            "partir",
+            "poster",
+            "quitter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "pièces",
+          "options": [
+            "pièces",
+            "portes",
+            "paquets",
+            "portables"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "portable",
+          "options": [
+            "portable",
+            "paquet",
+            "porte",
+            "pièce"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "porte",
+          "options": [
+            "porte",
+            "pièce",
+            "paquet",
+            "portable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "poster",
+          "options": [
+            "poster",
+            "partir",
+            "passer",
+            "quitter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "me promener",
+          "options": [
+            "me promener",
+            "me lever",
+            "me coucher",
+            "me laver"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "me promener en bateau",
+          "options": [
+            "me promener en bateau",
+            "me promener à pied",
+            "me promener en voiture",
+            "me promener en train"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "ranger",
+          "options": [
+            "ranger",
+            "rentrer",
+            "quitter",
+            "rater"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "rentrer",
+          "options": [
+            "rentrer",
+            "ranger",
+            "quitter",
+            "partir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "quitter",
+          "options": [
+            "quitter",
+            "rentrer",
+            "ranger",
+            "partir"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le voyageur fatigué",
+      "title_fa": "مسافر خسته",
+      "inspiration": "Tintin",
+      "text": "Il était temps de ____ (2). Avant de ____ (12) la ville pour toujours, il devait ____ (10) ses dernières affaires. Son appartement de deux ____ (4) semblait vide. Il ferma la ____ (6) derrière lui. Il alla au bureau de poste pour ____ (7) un dernier ____ (1) à sa famille. Son ____ (5) vibrait, mais il ne répondit pas. Il décida de ____ (8) le long de la rivière. Peut-être qu'un jour, il irait ____ (9) sur l'océan. Il voulait juste ____ (3) une dernière soirée tranquille avant de ____ (11) chez lui.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "paquet",
+          "options": [
+            "paquet",
+            "portable",
+            "porte",
+            "pièce"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "partir",
+          "options": [
+            "partir",
+            "passer",
+            "poster",
+            "promener"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "passer",
+          "options": [
+            "passer",
+            "partir",
+            "poster",
+            "quitter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "pièces",
+          "options": [
+            "pièces",
+            "portes",
+            "paquets",
+            "portables"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "portable",
+          "options": [
+            "portable",
+            "paquet",
+            "porte",
+            "pièce"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "porte",
+          "options": [
+            "porte",
+            "pièce",
+            "paquet",
+            "portable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "poster",
+          "options": [
+            "poster",
+            "partir",
+            "passer",
+            "quitter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "se promener",
+          "options": [
+            "se promener",
+            "se lever",
+            "se coucher",
+            "se laver"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "se promener en bateau",
+          "options": [
+            "se promener en bateau",
+            "se promener à pied",
+            "se promener en voiture",
+            "se promener en train"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "ranger",
+          "options": [
+            "ranger",
+            "rentrer",
+            "quitter",
+            "rater"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "rentrer",
+          "options": [
+            "rentrer",
+            "ranger",
+            "quitter",
+            "partir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "quitter",
+          "options": [
+            "quitter",
+            "rentrer",
+            "ranger",
+            "partir"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Voyage, Mouvement et Maison",
+    "title_fa": "آزمون: سفر، حرکت و خانه",
+    "displayCount": 12,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Un colis envoyé par la poste s'appelle un ____.",
+        "options": [
+          "paquet",
+          "portable",
+          "porte",
+          "pièce"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بسته‌ای که از طریق پست ارسال می‌شود، paquet (بسته) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le verbe qui signifie « رفتن » ou « ترک کردن » un lieu est ____.",
+        "options": [
+          "partir",
+          "passer",
+          "poster",
+          "promener"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعلی که به معنای رفتن یا ترک کردن یک مکان است، partir می‌باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "Pour dire « گذراندن » du temps, on utilise le verbe ____.",
+        "options": [
+          "passer",
+          "partir",
+          "poster",
+          "quitter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "برای گفتن گذراندن زمان، از فعل passer استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Une division d'un appartement ou d'une maison est une ____.",
+        "options": [
+          "pièce",
+          "porte",
+          "paquet",
+          "portable"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بخشی از یک آپارتمان یا خانه، اتاق (pièce) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le téléphone mobile que l'on emporte partout est le ____.",
+        "options": [
+          "portable",
+          "paquet",
+          "porte",
+          "pièce"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تلفن همراهی که همه جا با خود می‌بریم، portable (موبایل) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'ouverture dans un mur pour entrer ou sortir est la ____.",
+        "options": [
+          "porte",
+          "pièce",
+          "paquet",
+          "portable"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بازشویی در دیوار برای ورود یا خروج، در (porte) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action d'envoyer une lettre par la poste est de la ____.",
+        "options": [
+          "poster",
+          "partir",
+          "passer",
+          "quitter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل ارسال نامه از طریق پست، poster (پست کردن) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Marcher pour le plaisir ou la détente, c'est ____.",
+        "options": [
+          "se promener",
+          "se lever",
+          "se coucher",
+          "se laver"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "راه رفتن برای لذت یا استراحت، قدم زدن (se promener) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Faire un tour sur l'eau dans une embarcation, c'est ____.",
+        "options": [
+          "se promener en bateau",
+          "se promener à pied",
+          "se promener en voiture",
+          "se promener en train"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "گشت زدن روی آب در یک قایق، گردش با قایق (se promener en bateau) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le verbe qui signifie « مرتب کردن » une chambre est ____.",
+        "options": [
+          "ranger",
+          "rentrer",
+          "quitter",
+          "rater"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعلی که به معنای مرتب کردن یک اتاق است، ranger می‌باشد."
+      },
+      {
+        "type": "binary",
+        "question": "« Rentrer » signifie retourner à la maison ou au point de départ.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، rentrer به معنای بازگشتن به خانه یا نقطه شروع است."
+      },
+      {
+        "type": "binary",
+        "question": "« Quitter » est utilisé pour dire qu'on arrive dans un nouveau lieu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، quitter به معنای ترک کردن یا رفتن از یک مکان است، نه رسیدن به آن."
+      }
+    ]
+  }
+}
