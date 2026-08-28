@@ -1,0 +1,520 @@
+{
+  "id": "pack_88_complexite_details",
+  "level": "B2",
+  "theme": "Complexité, subtilité et détails",
+  "theme_fa": "پیچیدگی، ظرافت و جزئیات",
+  "icon": "🔍",
+  "inspiration": "Le Nom de la rose (Umberto Eco)",
+  "words": [
+    {
+      "fr": "la complexité (f)",
+      "fa": "پیچیدگی",
+      "emoji": "🕸️",
+      "difficulty": 3,
+      "ex": "La complexité du problème nécessite une analyse approfondie.",
+      "ex_fa": "پیچیدگی مشکل نیازمند تحلیل عمیق است."
+    },
+    {
+      "fr": "complexe",
+      "fa": "پیچیده",
+      "emoji": "🧩",
+      "difficulty": 2,
+      "ex": "C'est une situation très complexe.",
+      "ex_fa": "این یک وضعیت بسیار پیچیده است."
+    },
+    {
+      "fr": "la nuance (f)",
+      "fa": "ظرافت، تفاوت جزئی",
+      "emoji": "🎨",
+      "difficulty": 4,
+      "ex": "Il faut comprendre la nuance entre ces deux mots.",
+      "ex_fa": "باید تفاوت جزئی بین این دو کلمه را درک کرد."
+    },
+    {
+      "fr": "nuancer",
+      "fa": "با ظرافت بیان کردن",
+      "emoji": "🖌️",
+      "difficulty": 4,
+      "ex": "Il faut nuancer ce propos pour être juste.",
+      "ex_fa": "باید این سخن را با ظرافت بیان کرد تا منصفانه باشد."
+    },
+    {
+      "fr": "la subtilité (f)",
+      "fa": "ظرافت، باریک‌بینی",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "La subtilité de son raisonnement m'a impressionné.",
+      "ex_fa": "ظرافت استدلال او مرا تحت تأثیر قرار داد."
+    },
+    {
+      "fr": "subtil(e)",
+      "fa": "ظریف، باریک‌بین",
+      "emoji": "🔬",
+      "difficulty": 4,
+      "ex": "C'est une distinction très subtile.",
+      "ex_fa": "این یک تمایز بسیار ظریف است."
+    },
+    {
+      "fr": "le détail (m)",
+      "fa": "جزئیات",
+      "emoji": "🔎",
+      "difficulty": 2,
+      "ex": "Le détail est important dans ce travail.",
+      "ex_fa": "جزئیات در این کار مهم است."
+    },
+    {
+      "fr": "détaillé(e)",
+      "fa": "با جزئیات",
+      "emoji": "📋",
+      "difficulty": 3,
+      "ex": "Il a fourni un rapport très détaillé.",
+      "ex_fa": "او یک گزارش بسیار پرجزئیات ارائه داد."
+    },
+    {
+      "fr": "minutieux/se",
+      "fa": "موشکافانه",
+      "emoji": "⏱️",
+      "difficulty": 4,
+      "ex": "Elle est très minutieuse dans son travail.",
+      "ex_fa": "او در کارش بسیار موشکافانه عمل می‌کند."
+    },
+    {
+      "fr": "la minutie (f)",
+      "fa": "دقت در جزئیات",
+      "emoji": "🔎",
+      "difficulty": 5,
+      "ex": "Il a examiné le document avec une grande minutie.",
+      "ex_fa": "او سند را با دقت زیادی در جزئیات بررسی کرد."
+    },
+    {
+      "fr": "l'ambivalence (f)",
+      "fa": "دوگانگی احساس",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "Son ambivalence rend la décision difficile.",
+      "ex_fa": "دوگانگی احساس او تصمیم‌گیری را دشوار می‌کند."
+    },
+    {
+      "fr": "ambivalent(e)",
+      "fa": "دوگانه، مردد",
+      "emoji": "🎭",
+      "difficulty": 5,
+      "ex": "Il a une attitude ambivalente face à ce projet.",
+      "ex_fa": "او نگرشی دوگانه نسبت به این پروژه دارد."
+    },
+    {
+      "fr": "le paradoxe (m)",
+      "fa": "پارادوکس",
+      "emoji": "🔄",
+      "difficulty": 4,
+      "ex": "C'est un paradoxe intéressant à étudier.",
+      "ex_fa": "این یک پارادوکس جالب برای مطالعه است."
+    },
+    {
+      "fr": "paradoxal(e)",
+      "fa": "متناقض‌نما",
+      "emoji": "🌀",
+      "difficulty": 4,
+      "ex": "Il est paradoxal de travailler pour gagner du temps.",
+      "ex_fa": "کار کردن برای به دست آوردن زمان، متناقض‌نما است."
+    },
+    {
+      "fr": "l'antinomie (f)",
+      "fa": "تضاد قوانین یا اصول",
+      "emoji": "⚔️",
+      "difficulty": 6,
+      "ex": "Il y a une antinomie entre ces deux règles.",
+      "ex_fa": "بین این دو قانون تضاد وجود دارد."
+    },
+    {
+      "fr": "l'abstraction (f)",
+      "fa": "انتزاع",
+      "emoji": "☁️",
+      "difficulty": 5,
+      "ex": "L'abstraction est nécessaire en mathématiques.",
+      "ex_fa": "انتزاع در ریاضیات ضروری است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'enquête du professeur",
+      "title_fa": "پژوهش استاد",
+      "text": "Le professeur faisait face à la {{BLANK_1}} d'un manuscrit ancien. Le texte était si {{BLANK_2}} qu'il nécessitait des mois de recherche. Il aimait apporter une {{BLANK_3}} à chaque affirmation pour éviter les généralisations hâtives. Il savait qu'il fallait {{BLANK_4}} ses propos pour être parfaitement juste. La {{BLANK_5}} de la situation lui échappait parfois, mais il ne baissait pas les bras. Il cherchait un indice {{BLANK_6}} que ses collègues avaient manqué. Dans ce domaine, chaque {{BLANK_7}} comptait. Il a donc rédigé un rapport très {{BLANK_8}} pour la direction de l'université.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "complexité",
+          "options": [
+            "complexité",
+            "simplicité",
+            "facilité",
+            "évidence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "complexe",
+          "options": [
+            "complexe",
+            "simple",
+            "évident",
+            "clair"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "nuance",
+          "options": [
+            "nuance",
+            "erreur",
+            "faute",
+            "mensonge"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "nuancer",
+          "options": [
+            "nuancer",
+            "exagérer",
+            "simplifier",
+            "détruire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "subtilité",
+          "options": [
+            "subtilité",
+            "brutalité",
+            "évidence",
+            "simplicité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "subtil",
+          "options": [
+            "subtil",
+            "évident",
+            "grossier",
+            "visible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "détail",
+          "options": [
+            "détail",
+            "ensemble",
+            "totalité",
+            "généralité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "détaillé",
+          "options": [
+            "détaillé",
+            "vague",
+            "sommaire",
+            "incomplet"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les labyrinthes de l'esprit",
+      "title_fa": "هزارتوهای ذهن",
+      "inspiration": "Le Nom de la rose (Umberto Eco)",
+      "text": "Le vieux moine examinait le monde avec un regard {{BLANK_9}}. Cette {{BLANK_10}} dans l'observation des choses lui révélait des vérités cachées aux yeux du commun. Il ressentait une certaine {{BLANK_11}} face à la nature humaine, partagée entre la foi et le doute. L'homme est un être {{BLANK_12}}, capable du meilleur comme du pire, de la lumière comme des ténèbres. Il méditait longuement sur un {{BLANK_13}} ancien : plus on acquiert de savoir, plus on mesure son ignorance. Cette situation {{BLANK_14}} fascinait ses jeunes disciples. Il leur expliqua qu'il existe parfois une {{BLANK_15}} irréductible entre la loi divine et la justice terrestre. Finalement, son esprit s'éleva vers {{BLANK_16}} pure, loin des contingences matérielles de la bibliothèque.",
+      "blanks": [
+        {
+          "id": 9,
+          "answer": "minutieux",
+          "options": [
+            "minutieux",
+            "superficiel",
+            "rapide",
+            "négligent"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "minutie",
+          "options": [
+            "minutie",
+            "négligence",
+            "ignorance",
+            "rapidité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "ambivalence",
+          "options": [
+            "ambivalence",
+            "certitude",
+            "assurance",
+            "clarté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ambivalent",
+          "options": [
+            "ambivalent",
+            "univoque",
+            "simple",
+            "décidé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "paradoxe",
+          "options": [
+            "paradoxe",
+            "évidence",
+            "certitude",
+            "fait"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "paradoxale",
+          "options": [
+            "paradoxale",
+            "logique",
+            "simple",
+            "linéaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "antinomie",
+          "options": [
+            "antinomie",
+            "harmonie",
+            "accord",
+            "similitude"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "l'abstraction",
+          "options": [
+            "l'abstraction",
+            "la matérialité",
+            "la concrétude",
+            "la réalité"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Complexité et détails",
+    "title_fa": "آزمون : پیچیدگی و جزئیات",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La ____ de ce dossier exige une analyse approfondie par des experts.",
+        "options": [
+          "complexité",
+          "simplicité",
+          "facilité",
+          "évidence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Complexité به معنای پیچیدگی و داشتن اجزای متعدد و درهم‌تنیده است."
+      },
+      {
+        "type": "mcq",
+        "question": "C'est une situation très ____ qui ne peut pas être résolue en cinq minutes.",
+        "options": [
+          "complexe",
+          "simple",
+          "évidente",
+          "claire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Complexe یعنی پیچیده و دشوار برای درک یا حل."
+      },
+      {
+        "type": "binary",
+        "question": "Une \"nuance\" est une différence très marquée et évidente entre deux choses.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، nuance به معنای تفاوت بسیار جزئی و ظریف است، نه تفاوت آشکار."
+      },
+      {
+        "type": "mcq",
+        "question": "Il faut ____ ce jugement pour tenir compte des circonstances atténuantes.",
+        "options": [
+          "nuancer",
+          "exagérer",
+          "simplifier",
+          "détruire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Nuancer یعنی با ظرافت و در نظر گرفتن جزئیات بیان کردن، تا از قضاوت مطلق پرهیز شود."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ de son argumentation a convaincu même les plus sceptiques.",
+        "options": [
+          "subtilité",
+          "brutalité",
+          "évidence",
+          "simplicité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Subtilité به معنای باریک‌بینی و ظرافت در استدلال است."
+      },
+      {
+        "type": "binary",
+        "question": "Une distinction \"subtile\" est facile à percevoir pour tout le monde sans effort.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، subtil به معنای چیزی است که درک آن نیازمند دقت و باریک‌بینی است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le diable se cache souvent dans le ____.",
+        "options": [
+          "détail",
+          "ensemble",
+          "totalité",
+          "généralité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "این یک اصطلاح رایج است: شیطان در جزئیات پنهان است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'architecte a présenté un plan très ____ de la future maison.",
+        "options": [
+          "détaillé",
+          "vague",
+          "sommaire",
+          "incomplet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Détaillé یعنی همراه با جزئیات کامل و دقیق."
+      },
+      {
+        "type": "binary",
+        "question": "Une personne \"minutieuse\" accorde une attention particulière aux plus petits éléments d'une tâche.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، minutieux به معنای موشکافانه و دقیق در جزئیات است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'horloger a réparé la montre avec une grande ____.",
+        "options": [
+          "minutie",
+          "négligence",
+          "ignorance",
+          "rapidité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Minutie به معنای دقت وسواس‌گونه و توجه به ریزه‌کاری‌هاست."
+      },
+      {
+        "type": "mcq",
+        "question": "Son ____ face à cette offre d'emploi s'explique par le salaire bas mais les avantages intéressants.",
+        "options": [
+          "ambivalence",
+          "certitude",
+          "assurance",
+          "clarté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Ambivalence به معنای داشتن احساسات یا افکار متضاد همزمان نسبت به یک موضوع است."
+      },
+      {
+        "type": "binary",
+        "question": "Être \"ambivalent\" signifie avoir une opinion unique et fermement établie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، ambivalent به معنای دوگانه‌اندیشی یا مردد بودن است."
+      },
+      {
+        "type": "mcq",
+        "question": "C'est un ____ que les gens travaillent dur pour gagner du temps, puis utilisent ce temps pour travailler davantage.",
+        "options": [
+          "paradoxe",
+          "évidence",
+          "certitude",
+          "fait"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Paradoxe به معنای وضعیتی است که در ظاهر متناقض یا غیرمنطقی به نظر می‌رسد."
+      },
+      {
+        "type": "mcq",
+        "question": "Il est ____ de devoir dépenser de l'argent pour économiser de l'argent.",
+        "options": [
+          "paradoxal",
+          "logique",
+          "simple",
+          "linéaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Paradoxal یعنی متناقض‌نما، چیزی که با منطق اولیه در تضاد است."
+      },
+      {
+        "type": "binary",
+        "question": "Une \"antinomie\" désigne une contradiction entre deux lois, principes ou raisonnements qui semblent tous deux valables.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، antinomie به معنای تضاد غیرقابل حل بین دو اصل یا قانون است."
+      },
+      {
+        "type": "mcq",
+        "question": "En philosophie, on étudie souvent le passage du concret vers ____.",
+        "options": [
+          "l'abstraction",
+          "la matérialité",
+          "la concrétude",
+          "la réalité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Abstraction به معنای انتزاع، یعنی جدا کردن ویژگی‌های کلی از مصادیق عینی است."
+      }
+    ]
+  }
+}
