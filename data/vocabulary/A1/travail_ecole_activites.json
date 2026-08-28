@@ -1,0 +1,368 @@
+{
+  "id": "travail_ecole_activites",
+  "level": "A1",
+  "theme": "Travail, École et Activités",
+  "theme_fa": "کار، مدرسه و فعالیت‌ها",
+  "icon": "🏫",
+  "inspiration": "Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "le petit boulot",
+      "fa": "کار پاره‌وقت / کار موقت",
+      "emoji": "💼",
+      "difficulty": 2,
+      "ex": "Je cherche un petit boulot pour l'été.",
+      "ex_fa": "من دنبال یک کار پاره‌وقت برای تابستان می‌گردم."
+    },
+    {
+      "fr": "pratiquer",
+      "fa": "تمرین کردن",
+      "emoji": "🎾",
+      "difficulty": 2,
+      "ex": "Je pratique le tennis tous les samedis.",
+      "ex_fa": "من هر شنبه تنیس تمرین می‌کنم."
+    },
+    {
+      "fr": "le professeur",
+      "fa": "معلم",
+      "emoji": "👨‍🏫",
+      "difficulty": 1,
+      "ex": "Le professeur explique la leçon clairement.",
+      "ex_fa": "معلم درس را به وضوح توضیح می‌دهد."
+    },
+    {
+      "fr": "publier",
+      "fa": "منتشر کردن",
+      "emoji": "📖",
+      "difficulty": 3,
+      "ex": "L'écrivain va publier un nouveau livre bientôt.",
+      "ex_fa": "نویسنده به‌زودی یک کتاب جدید منتشر خواهد کرد."
+    },
+    {
+      "fr": "rater",
+      "fa": "از دست دادن / خراب کردن",
+      "emoji": "🚂",
+      "difficulty": 2,
+      "ex": "Je me suis réveillé tard et j'ai raté mon train.",
+      "ex_fa": "من دیر بیدار شدم و قطارم را از دست دادم."
+    },
+    {
+      "fr": "la récréation",
+      "fa": "زنگ تفریح",
+      "emoji": "🔔",
+      "difficulty": 1,
+      "ex": "Les enfants jouent avec leurs amis pendant la récréation.",
+      "ex_fa": "بچه‌ها در زنگ تفریح با دوستانشان بازی می‌کنند."
+    },
+    {
+      "fr": "la règle",
+      "fa": "قانون / خط‌کش",
+      "emoji": "📏",
+      "difficulty": 1,
+      "ex": "Il faut toujours respecter les règles du jeu.",
+      "ex_fa": "همیشه باید قوانین بازی را رعایت کرد."
+    },
+    {
+      "fr": "réparer",
+      "fa": "تعمیر کردن",
+      "emoji": "🔧",
+      "difficulty": 2,
+      "ex": "Je dois faire réparer mon vélo ce week-end.",
+      "ex_fa": "من باید این آخر هفته دوچرخه‌ام را تعمیر کنم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une journée d'écolier",
+      "title_fa": "یک روز مدرسه‌ای",
+      "text": "Mon ____ (3) est très gentil. Pendant la ____ (6), je joue au football avec mes amis. Il y a une ____ (7) importante : ne pas courir dans les couloirs. Le week-end, j'ai un ____ (1) dans un café pour gagner un peu d'argent. Avec cet argent, je veux ____ (8) mon vieux vélo. J'aime aussi ____ (2) le basket. Je ne veux pas ____ (5) mes cours. Un jour, je voudrais ____ (4) mon propre roman.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "petit boulot",
+          "options": [
+            "petit boulot",
+            "professeur",
+            "récréation",
+            "règle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pratiquer",
+          "options": [
+            "pratiquer",
+            "publier",
+            "rater",
+            "réparer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "professeur",
+          "options": [
+            "professeur",
+            "petit boulot",
+            "récréation",
+            "règle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "publier",
+          "options": [
+            "publier",
+            "pratiquer",
+            "rater",
+            "réparer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "rater",
+          "options": [
+            "rater",
+            "publier",
+            "pratiquer",
+            "réparer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "récréation",
+          "options": [
+            "récréation",
+            "règle",
+            "professeur",
+            "petit boulot"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "règle",
+          "options": [
+            "règle",
+            "récréation",
+            "professeur",
+            "petit boulot"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "réparer",
+          "options": [
+            "réparer",
+            "rater",
+            "publier",
+            "pratiquer"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les ambitions du jeune écrivain",
+      "title_fa": "جاه‌طلبی‌های نویسنده جوان",
+      "inspiration": "Le Petit Nicolas",
+      "text": "Lucas écoutait attentivement son ____ (3). La ____ (6) sonnait enfin, libérant les élèves dans la cour. Il y avait une ____ (7) non écrite : profiter de chaque instant. Lucas avait un ____ (1) le samedi, mais son vrai rêve était ailleurs. Il voulait ____ (4) un livre de science-fiction. Pour cela, il devait ____ (2) son écriture chaque jour. Il ne pouvait pas se permettre de ____ (5) cette opportunité. Un jour, il devra ____ (8) son vieux ordinateur pour écrire plus vite.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "petit boulot",
+          "options": [
+            "petit boulot",
+            "professeur",
+            "récréation",
+            "règle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pratiquer",
+          "options": [
+            "pratiquer",
+            "publier",
+            "rater",
+            "réparer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "professeur",
+          "options": [
+            "professeur",
+            "petit boulot",
+            "récréation",
+            "règle"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "publier",
+          "options": [
+            "publier",
+            "pratiquer",
+            "rater",
+            "réparer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "rater",
+          "options": [
+            "rater",
+            "publier",
+            "pratiquer",
+            "réparer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "récréation",
+          "options": [
+            "récréation",
+            "règle",
+            "professeur",
+            "petit boulot"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "règle",
+          "options": [
+            "règle",
+            "récréation",
+            "professeur",
+            "petit boulot"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "réparer",
+          "options": [
+            "réparer",
+            "rater",
+            "publier",
+            "pratiquer"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Travail, École et Activités",
+    "title_fa": "آزمون: کار، مدرسه و فعالیت‌ها",
+    "displayCount": 8,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Un emploi à temps partiel pour les étudiants s'appelle un ____.",
+        "options": [
+          "petit boulot",
+          "professeur",
+          "récréation",
+          "règle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "یک شغل پاره‌وقت برای دانش‌آموزان، کار موقت (petit boulot) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Faire du sport ou de la musique de manière régulière, c'est ____.",
+        "options": [
+          "pratiquer",
+          "publier",
+          "rater",
+          "réparer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "انجام منظم ورزش یا موسیقی، تمرین کردن (pratiquer) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La personne qui enseigne dans une école est le ____.",
+        "options": [
+          "professeur",
+          "petit boulot",
+          "récréation",
+          "règle"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فردی که در مدرسه تدریس می‌کند، معلم (professeur) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Rendre un livre ou un article disponible au public, c'est le ____.",
+        "options": [
+          "publier",
+          "pratiquer",
+          "rater",
+          "réparer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "در دسترس قرار دادن یک کتاب یا مقاله برای عموم، منتشر کردن (publier) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Ne pas attraper son train ou échouer à un examen, c'est le ____.",
+        "options": [
+          "rater",
+          "publier",
+          "pratiquer",
+          "réparer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "از دست دادن قطار یا شکست در امتحان، rater (از دست دادن/خراب کردن) است."
+      },
+      {
+        "type": "mcq",
+        "question": "La pause entre deux cours à l'école est la ____.",
+        "options": [
+          "récréation",
+          "règle",
+          "professeur",
+          "petit boulot"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "استراحت بین دو کلاس در مدرسه، زنگ تفریح (récréation) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un principe qu'il faut suivre ou un instrument pour tracer des lignes droites est la ____.",
+        "options": [
+          "règle",
+          "récréation",
+          "professeur",
+          "petit boulot"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اصلی که باید دنبال شود یا ابزاری برای کشیدن خطوط صاف، قانون/خط‌کش (règle) است."
+      },
+      {
+        "type": "binary",
+        "question": "« Réparer » signifie casser quelque chose volontairement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، réparer به معنای تعمیر کردن است، نه شکستن."
+      }
+    ]
+  }
+}
