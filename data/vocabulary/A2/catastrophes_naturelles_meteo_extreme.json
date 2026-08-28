@@ -1,0 +1,538 @@
+{
+  "id": "catastrophes_naturelles_meteo_extreme",
+  "level": "A2",
+  "theme": "Catastrophes Naturelles et Phénomènes Météorologiques Extrêmes",
+  "theme_fa": "بلایای طبیعی و پدیده‌های جوی شدید",
+  "icon": "🌪️",
+  "inspiration": "Le Jour d'Après (The Day After Tomorrow)",
+  "words": [
+    {
+      "fr": "la rosée",
+      "fa": "شبنم",
+      "emoji": "💧",
+      "difficulty": 2,
+      "ex": "La rosée du matin brille sur l'herbe.",
+      "ex_fa": "شبنم صبحگاهی روی چمن می‌درخشد."
+    },
+    {
+      "fr": "la sécheresse",
+      "fa": "خشکسالی",
+      "emoji": "🏜️",
+      "difficulty": 2,
+      "ex": "La sécheresse détruit les récoltes des agriculteurs.",
+      "ex_fa": "خشکسالی محصولات کشاورزان را نابود می‌کند."
+    },
+    {
+      "fr": "l'inondation",
+      "fa": "سیل",
+      "emoji": "🌊",
+      "difficulty": 2,
+      "ex": "Une grave inondation a touché la ville après les pluies.",
+      "ex_fa": "یک سیل شدید پس از باران‌ها شهر را درنوردید."
+    },
+    {
+      "fr": "la tempête",
+      "fa": "طوفان",
+      "emoji": "⛈️",
+      "difficulty": 1,
+      "ex": "Les marins doivent être prudents pendant une tempête en mer.",
+      "ex_fa": "ملوانان باید در هنگام طوفان در دریا مراقب باشند."
+    },
+    {
+      "fr": "le tsunami",
+      "fa": "سونامی",
+      "emoji": "🌊",
+      "difficulty": 2,
+      "ex": "Les dégâts du tsunami ont été dévastateurs pour la côte.",
+      "ex_fa": "خسارات سونامی برای ساحل ویرانگر بود."
+    },
+    {
+      "fr": "le tremblement de terre",
+      "fa": "زلزله",
+      "emoji": "🏚️",
+      "difficulty": 2,
+      "ex": "Un fort tremblement de terre a secoué la région hier.",
+      "ex_fa": "یک زلزله شدید دیروز منطقه را لرزاند."
+    },
+    {
+      "fr": "l'éruption volcanique",
+      "fa": "فوران آتشفشان",
+      "emoji": "🌋",
+      "difficulty": 3,
+      "ex": "L'éruption volcanique a couvert le village de cendres.",
+      "ex_fa": "فوران آتشفشان روستا را با خاکستر پوشاند."
+    },
+    {
+      "fr": "l'avalanche",
+      "fa": "بهمن",
+      "emoji": "🏔️",
+      "difficulty": 2,
+      "ex": "Les skieurs doivent faire attention à l'avalanche en montagne.",
+      "ex_fa": "اسکی‌بازان باید در کوهستان مراقب بهمن باشند."
+    },
+    {
+      "fr": "la canicule",
+      "fa": "موج گرما",
+      "emoji": "🥵",
+      "difficulty": 2,
+      "ex": "Il faut boire beaucoup d'eau pendant la canicule.",
+      "ex_fa": "در طول موج گرما باید آب زیادی نوشید."
+    },
+    {
+      "fr": "le gel",
+      "fa": "یخبندان",
+      "emoji": "❄️",
+      "difficulty": 2,
+      "ex": "Le gel nocturne peut détruire les jeunes plantes.",
+      "ex_fa": "یخبندان شبانه می‌تواند گیاهان جوان را نابود کند."
+    },
+    {
+      "fr": "le dégel",
+      "fa": "آب شدن یخ",
+      "emoji": "🫠",
+      "difficulty": 2,
+      "ex": "Le dégel au printemps rend les routes glissantes.",
+      "ex_fa": "آب شدن یخ در بهار جاده‌ها را لغزنده می‌کند."
+    },
+    {
+      "fr": "la fonte des neiges",
+      "fa": "ذوب برف‌ها",
+      "emoji": "🌨️",
+      "difficulty": 3,
+      "ex": "La fonte des neiges gonfle les rivières et les lacs.",
+      "ex_fa": "ذوب برف‌ها باعث طغیان رودخانه‌ها و دریاچه‌ها می‌شود."
+    },
+    {
+      "fr": "l'éclipse",
+      "fa": "خورشیدگرفتگی / ماه‌گرفتگی",
+      "emoji": "🌑",
+      "difficulty": 2,
+      "ex": "Il est dangereux de regarder une éclipse solaire sans protection.",
+      "ex_fa": "نگاه کردن به خورشیدگرفتگی بدون محافظ خطرناک است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les colères de la nature",
+      "title_fa": "خشم‌های طبیعت",
+      "text": "La nature peut être douce, comme la ____ (1) sur l'herbe le matin. Mais elle peut aussi être très dangereuse. En été, une ____ (9) peut rendre la vie difficile, et parfois une ____ (2) longue détruit tout. Quand il pleut trop, il y a une ____ (3). En mer, une ____ (4) peut être terrible, et sous l'eau, un ____ (5) peut tout emporter. Sur la terre ferme, un ____ (6) fait trembler les maisons, et une ____ (7) couvre tout de cendre. En montagne, il faut craindre l'____ (8). En hiver, on craint le ____ (10), mais au printemps, le ____ (11) et la ____ (12) apportent de l'eau. Enfin, dans le ciel, on peut observer une ____ (13).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "rosée",
+          "options": [
+            "rosée",
+            "sécheresse",
+            "inondation",
+            "tempête"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "sécheresse",
+          "options": [
+            "sécheresse",
+            "rosée",
+            "canicule",
+            "gel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "inondation",
+          "options": [
+            "inondation",
+            "sécheresse",
+            "tempête",
+            "avalanche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tempête",
+          "options": [
+            "tempête",
+            "inondation",
+            "tsunami",
+            "éclipse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "tsunami",
+          "options": [
+            "tsunami",
+            "tempête",
+            "tremblement de terre",
+            "éruption volcanique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "tremblement de terre",
+          "options": [
+            "tremblement de terre",
+            "tsunami",
+            "avalanche",
+            "gel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "éruption volcanique",
+          "options": [
+            "éruption volcanique",
+            "tremblement de terre",
+            "avalanche",
+            "inondation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "avalanche",
+          "options": [
+            "avalanche",
+            "éruption volcanique",
+            "tempête",
+            "gel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "canicule",
+          "options": [
+            "canicule",
+            "gel",
+            "dégel",
+            "rosée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "gel",
+          "options": [
+            "gel",
+            "dégel",
+            "canicule",
+            "sécheresse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "dégel",
+          "options": [
+            "dégel",
+            "gel",
+            "fonte des neiges",
+            "éclipse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "fonte des neiges",
+          "options": [
+            "fonte des neiges",
+            "dégel",
+            "gel",
+            "rosée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "éclipse",
+          "options": [
+            "éclipse",
+            "tempête",
+            "canicule",
+            "avalanche"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le visage changeant de la Terre",
+      "title_fa": "چهره دگرگون‌شونده زمین",
+      "inspiration": "La Peste (Camus) - adapté",
+      "text": "La Terre possède un double visage. Parfois, elle offre la douceur de la ____ (1) matinale. Mais elle cache aussi une puissance destructrice. La ____ (2) assoiffe la terre, tandis que l'____ (3) noie les espoirs. L'océan se déchaîne en ____ (4) ou en ____ (5) silencieux. Le sol lui-même se révolte par un ____ (6) ou une ____ (7) de feu. En altitude, l'____ (8) menace les imprudents. Le cycle des saisons apporte son lot de défis : le ____ (9) qui fige la vie, suivi du ____ (10) et de la ____ (11) qui libèrent les eaux. Même le ciel participe à ce théâtre avec une ____ (12) mystique, et les étés nous éprouvent avec une ____ (13) étouffante.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "rosée",
+          "options": [
+            "rosée",
+            "sécheresse",
+            "inondation",
+            "tempête"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "sécheresse",
+          "options": [
+            "sécheresse",
+            "rosée",
+            "canicule",
+            "gel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "inondation",
+          "options": [
+            "inondation",
+            "sécheresse",
+            "tempête",
+            "avalanche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tempête",
+          "options": [
+            "tempête",
+            "inondation",
+            "tsunami",
+            "éclipse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "tsunami",
+          "options": [
+            "tsunami",
+            "tempête",
+            "tremblement de terre",
+            "éruption volcanique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "tremblement de terre",
+          "options": [
+            "tremblement de terre",
+            "tsunami",
+            "avalanche",
+            "gel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "éruption volcanique",
+          "options": [
+            "éruption volcanique",
+            "tremblement de terre",
+            "avalanche",
+            "inondation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "avalanche",
+          "options": [
+            "avalanche",
+            "éruption volcanique",
+            "tempête",
+            "gel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "gel",
+          "options": [
+            "gel",
+            "dégel",
+            "canicule",
+            "sécheresse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "dégel",
+          "options": [
+            "dégel",
+            "gel",
+            "fonte des neiges",
+            "éclipse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "fonte des neiges",
+          "options": [
+            "fonte des neiges",
+            "dégel",
+            "gel",
+            "rosée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "éclipse",
+          "options": [
+            "éclipse",
+            "tempête",
+            "canicule",
+            "avalanche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "canicule",
+          "options": [
+            "canicule",
+            "gel",
+            "dégel",
+            "rosée"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Catastrophes Naturelles et Météo Extrême",
+    "title_fa": "آزمون: بلایای طبیعی و آب‌وهوای شدید",
+    "displayCount": 10,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Une longue période sans pluie qui assèche les terres est la ____.",
+        "options": [
+          "sécheresse",
+          "inondation",
+          "canicule",
+          "gel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره طولانی بدون باران که زمین را خشک می‌کند، خشکسالی (sécheresse) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une montée soudaine et importante du niveau de l'eau est une ____.",
+        "options": [
+          "inondation",
+          "sécheresse",
+          "tempête",
+          "avalanche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بالا آمدن ناگهانی و زیاد سطح آب، سیل (inondation) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une vague géante provoquée par un séisme sous-marin est un ____.",
+        "options": [
+          "tsunami",
+          "tempête",
+          "ouragan",
+          "tornado"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "موج عظیمی که توسط زلزله زیردریایی ایجاد می‌شود، سونامی (tsunami) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un mouvement brutal du sol qui secoue les bâtiments est un ____.",
+        "options": [
+          "tremblement de terre",
+          "tsunami",
+          "éruption volcanique",
+          "gel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حرکت ناگهانی زمین که ساختمان‌ها را می‌لرزاند، زلزله (tremblement de terre) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Une période de chaleur excessive et prolongée s'appelle une ____.",
+        "options": [
+          "canicule",
+          "sécheresse",
+          "tempête",
+          "dégel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "دوره‌ای از گرمای بیش از حد و طولانی، موج گرما (canicule) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "La transformation de la glace ou de la neige en eau s'appelle le ____.",
+        "options": [
+          "dégel",
+          "gel",
+          "fonte des neiges",
+          "rosée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "تبدیل یخ یا برف به آب، آب شدن یخ (dégel) نام دارد."
+      },
+      {
+        "type": "mcq",
+        "question": "Le phénomène où la Lune cache le Soleil s'appelle une ____.",
+        "options": [
+          "éclipse",
+          "tempête",
+          "aurore",
+          "brume"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پدیده‌ای که در آن ماه جلوی خورشید را می‌گیرد، خورشیدگرفتگی (éclipse) است."
+      },
+      {
+        "type": "binary",
+        "question": "« L'avalanche » est une chute massive de neige sur une pente de montagne.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، بهمن (avalanche) سقوط توده بزرگی از برف در شیب کوه است."
+      },
+      {
+        "type": "binary",
+        "question": "« La rosée » est un phénomène météorologique violent et destructeur.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، rosée (شبنم) یک پدیده آرام و طبیعی صبحگاهی است، نه یک بلای ویرانگر."
+      },
+      {
+        "type": "binary",
+        "question": "« Le gel » peut endommager les cultures agricoles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، یخبندان (gel) می‌تواند به محصولات کشاورزی آسیب برساند."
+      }
+    ]
+  }
+}
