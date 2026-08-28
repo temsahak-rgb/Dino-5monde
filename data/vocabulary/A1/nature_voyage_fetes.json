@@ -1,0 +1,576 @@
+{
+  "id": "nature_voyage_fetes",
+  "level": "A1",
+  "theme": "Nature, Voyage et Fêtes",
+  "theme_fa": "طبیعت، سفر و جشن‌ها",
+  "icon": "🚇",
+  "inspiration": "Le Petit Prince / Tintin",
+  "words": [
+    {
+      "fr": "la mer",
+      "fa": "دریا",
+      "emoji": "🌊",
+      "difficulty": 1,
+      "ex": "J'aime me baigner dans la mer en été.",
+      "ex_fa": "دوست دارم در تابستان در دریا شنا کنم."
+    },
+    {
+      "fr": "le métro",
+      "fa": "مترو",
+      "emoji": "🚇",
+      "difficulty": 1,
+      "ex": "Je prends le métro pour aller au travail.",
+      "ex_fa": "من برای رفتن به سر کار مترو می‌گیرم."
+    },
+    {
+      "fr": "midi",
+      "fa": "ظهر",
+      "emoji": "🕛",
+      "difficulty": 1,
+      "ex": "Le train part exactement à midi.",
+      "ex_fa": "قطار دقیقاً ساعت ظهر حرکت می‌کند."
+    },
+    {
+      "fr": "minuit",
+      "fa": "نیمه‌شب",
+      "emoji": "🌙",
+      "difficulty": 1,
+      "ex": "Le dernier bus passe à minuit.",
+      "ex_fa": "آخرین اتوبوس نیمه‌شب عبور می‌کند."
+    },
+    {
+      "fr": "la montagne",
+      "fa": "کوه",
+      "emoji": "🏔️",
+      "difficulty": 1,
+      "ex": "Nous faisons une randonnée en montagne.",
+      "ex_fa": "ما در کوهستان پیاده‌روی می‌کنیم."
+    },
+    {
+      "fr": "le mouton",
+      "fa": "گوسفند",
+      "emoji": "🐑",
+      "difficulty": 1,
+      "ex": "Il y a des moutons qui paissent dans le champ.",
+      "ex_fa": "گوسفندانی در مزرعه در حال چرا هستند."
+    },
+    {
+      "fr": "nager",
+      "fa": "شنا کردن",
+      "emoji": "🏊",
+      "difficulty": 1,
+      "ex": "Sais-tu nager ?",
+      "ex_fa": "آیا بلدی شنا کنی؟"
+    },
+    {
+      "fr": "naître",
+      "fa": "متولد شدن",
+      "emoji": "👶",
+      "difficulty": 2,
+      "ex": "Je suis né au mois de mai.",
+      "ex_fa": "من در ماه مه متولد شدم."
+    },
+    {
+      "fr": "Noël",
+      "fa": "کریسمس",
+      "emoji": "🎄",
+      "difficulty": 1,
+      "ex": "Nous décorons le sapin pour Noël.",
+      "ex_fa": "ما درخت کاج را برای کریسمس تزئین می‌کنیم."
+    },
+    {
+      "fr": "le nord",
+      "fa": "شمال",
+      "emoji": "⬆️",
+      "difficulty": 2,
+      "ex": "Il fait plus froid dans le nord de la France.",
+      "ex_fa": "در شمال فرانسه هوا سردتر است."
+    },
+    {
+      "fr": "l'oiseau",
+      "fa": "پرنده",
+      "emoji": "🐦",
+      "difficulty": 1,
+      "ex": "J'entends chanter les oiseaux le matin.",
+      "ex_fa": "من صبح‌ها صدای آواز پرندگان را می‌شنوم."
+    },
+    {
+      "fr": "l'ouest",
+      "fa": "غرب",
+      "emoji": "⬅️",
+      "difficulty": 2,
+      "ex": "Le soleil se couche à l'ouest.",
+      "ex_fa": "خورشید در غرب غروب می‌کند."
+    },
+    {
+      "fr": "ouvrir",
+      "fa": "باز کردن",
+      "emoji": "🔓",
+      "difficulty": 1,
+      "ex": "Peux-tu ouvrir la fenêtre, s'il te plaît ?",
+      "ex_fa": "لطفاً می‌توانی پنجره را باز کنی؟"
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un voyage en famille",
+      "title_fa": "یک سفر خانوادگی",
+      "text": "L'été dernier, nous sommes allés au ____ (1). J'adore ____ (7) dans l'eau salée. Le matin, j'aime regarder les ____ (11) voler dans le ciel. Nous avons pris le ____ (2) pour aller à la plage. Le départ était à ____ (3) pile. De retour à la maison, nous avons regardé vers l'____ (12) pour voir le coucher du soleil. L'hiver, nous allons à la ____ (5) pour voir la neige. Mon petit frère est ____ (8) en hiver, donc il adore la neige. À ____ (9), nous décorons le sapin. Mon oncle habite dans le ____ (10), où il fait très froid. Il a un ____ (6) dans son jardin. Il faut toujours ____ (13) la porte doucement pour ne pas le réveiller. Parfois, nous rentrons très tard, vers ____ (4).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "mer",
+          "options": [
+            "mer",
+            "métro",
+            "montagne",
+            "mouton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "métro",
+          "options": [
+            "métro",
+            "mer",
+            "midi",
+            "minuit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "midi",
+          "options": [
+            "midi",
+            "minuit",
+            "nager",
+            "naître"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "minuit",
+          "options": [
+            "minuit",
+            "midi",
+            "nord",
+            "ouest"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "montagne",
+          "options": [
+            "montagne",
+            "mer",
+            "métro",
+            "mouton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "mouton",
+          "options": [
+            "mouton",
+            "oiseau",
+            "métro",
+            "midi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "nager",
+          "options": [
+            "nager",
+            "naître",
+            "ouvrir",
+            "monter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "né",
+          "options": [
+            "né",
+            "nager",
+            "nord",
+            "Noël"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Noël",
+          "options": [
+            "Noël",
+            "nord",
+            "ouest",
+            "oiseau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "nord",
+          "options": [
+            "nord",
+            "ouest",
+            "midi",
+            "minuit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "oiseaux",
+          "options": [
+            "oiseaux",
+            "moutons",
+            "métros",
+            "mers"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ouest",
+          "options": [
+            "ouest",
+            "nord",
+            "midi",
+            "minuit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "ouvrir",
+          "options": [
+            "ouvrir",
+            "nager",
+            "naître",
+            "monter"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'appel de l'horizon",
+      "title_fa": "ندای افق",
+      "inspiration": "Le Petit Prince",
+      "text": "Je suis ____ (8) près de la ____ (1), là où le ciel touche l'eau. J'ai toujours aimé ____ (7) dans ses vagues infinies. Le matin, le chant d'un ____ (11) solitaire m'éveille. Pour explorer le monde, je prends souvent le ____ (2), ce serpent de fer qui file sous la terre. Mon dernier voyage m'a mené vers l'____ (12), où le soleil meurt chaque soir dans un spectacle ____ (2) de couleurs. J'ai aussi gravi la ____ (5), où le silence est roi et où j'ai croisé un ____ (6) perdu dans le brouillard. On dit que dans le ____ (10), les hivers sont éternels. Mais peu importe la direction, il faut savoir ____ (13) son cœur aux nouvelles expériences. Que ce soit à ____ (3) sous un soleil de plomb ou à ____ (4) sous un ciel étoilé, chaque instant est un cadeau, surtout à l'approche de ____ (9).",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "mer",
+          "options": [
+            "mer",
+            "métro",
+            "montagne",
+            "mouton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "métro",
+          "options": [
+            "métro",
+            "mer",
+            "midi",
+            "minuit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "midi",
+          "options": [
+            "midi",
+            "minuit",
+            "nager",
+            "naître"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "minuit",
+          "options": [
+            "minuit",
+            "midi",
+            "nord",
+            "ouest"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "montagne",
+          "options": [
+            "montagne",
+            "mer",
+            "métro",
+            "mouton"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "mouton",
+          "options": [
+            "mouton",
+            "oiseau",
+            "métro",
+            "midi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "nager",
+          "options": [
+            "nager",
+            "naître",
+            "ouvrir",
+            "monter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "né",
+          "options": [
+            "né",
+            "nager",
+            "nord",
+            "Noël"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "Noël",
+          "options": [
+            "Noël",
+            "nord",
+            "ouest",
+            "oiseau"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "nord",
+          "options": [
+            "nord",
+            "ouest",
+            "midi",
+            "minuit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "oiseau",
+          "options": [
+            "oiseau",
+            "mouton",
+            "métro",
+            "midi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "ouest",
+          "options": [
+            "ouest",
+            "nord",
+            "midi",
+            "minuit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "ouvrir",
+          "options": [
+            "ouvrir",
+            "nager",
+            "naître",
+            "monter"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Nature, Voyage et Fêtes",
+    "title_fa": "آزمون: طبیعت، سفر و جشن‌ها",
+    "displayCount": 13,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le grand étendue d'eau salée où l'on peut se baigner est la ____.",
+        "options": [
+          "mer",
+          "montagne",
+          "métro",
+          "mouton"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پهنه بزرگ آب شور که می‌توان در آن شنا کرد، دریا (mer) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le moyen de transport souterrain dans les grandes villes est le ____.",
+        "options": [
+          "métro",
+          "mer",
+          "midi",
+          "minuit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "وسیله نقلیه زیرزمینی در شهرهای بزرگ، مترو (métro) است."
+      },
+      {
+        "type": "mcq",
+        "question": "12h00 en journée s'appelle ____.",
+        "options": [
+          "midi",
+          "minuit",
+          "nager",
+          "naître"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ساعت ۱۲ ظهر، midi نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "12h00 la nuit s'appelle ____.",
+        "options": [
+          "minuit",
+          "midi",
+          "nord",
+          "ouest"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ساعت ۱۲ شب، minuit (نیمه‌شب) نامیده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Un relief très élevé, souvent couvert de neige en hiver, est une ____.",
+        "options": [
+          "montagne",
+          "mer",
+          "métro",
+          "mouton"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "پستی و بلندی بسیار بلند که اغلب در زمستان برفی است، کوه (montagne) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un animal de la ferme qui donne de la laine est le ____.",
+        "options": [
+          "mouton",
+          "oiseau",
+          "métro",
+          "midi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوان مزرعه‌ای که پشم می‌دهد، گوسفند (mouton) است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'action de se déplacer dans l'eau en utilisant ses bras et ses jambes est ____.",
+        "options": [
+          "nager",
+          "naître",
+          "ouvrir",
+          "monter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عمل حرکت در آب با استفاده از دست و پا، شنا کردن (nager) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le verbe qui signifie « به دنیا آمدن » est ____.",
+        "options": [
+          "naître",
+          "nager",
+          "nord",
+          "Noël"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "فعلی که به معنای به دنیا آمدن است، naître می‌باشد."
+      },
+      {
+        "type": "mcq",
+        "question": "La fête célébrée le 25 décembre est ____.",
+        "options": [
+          "Noël",
+          "nord",
+          "ouest",
+          "oiseau"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جشنی که در ۲۵ دسامبر برگزار می‌شود، کریسمس (Noël) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le point cardinal opposé au sud est le ____.",
+        "options": [
+          "nord",
+          "ouest",
+          "midi",
+          "minuit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "جهت جغرافیایی مقابل جنوب، شمال (nord) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Un petit animal qui vole et qui chante est un ____.",
+        "options": [
+          "oiseau",
+          "mouton",
+          "métro",
+          "midi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "حیوان کوچکی که پرواز می‌کند و آواز می‌خواند، پرنده (oiseau) است."
+      },
+      {
+        "type": "binary",
+        "question": "Le soleil se lève à l'« ouest ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، خورشید در شرق طلوع و در غرب (ouest) غروب می‌کند."
+      },
+      {
+        "type": "binary",
+        "question": "« Ouvrir » est le contraire de « fermer ».",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، ouvrir (باز کردن) متضاد fermer (بستن) است."
+      }
+    ]
+  }
+}
