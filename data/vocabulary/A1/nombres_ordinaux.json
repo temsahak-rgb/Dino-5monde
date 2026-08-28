@@ -1,0 +1,408 @@
+{
+  "id": "nombres_ordinaux",
+  "level": "A1",
+  "theme": "Nombres Ordinaux (2e à 10e)",
+  "theme_fa": "اعداد ترتیبی (دوم تا دهم)",
+  "icon": "🥇",
+  "inspiration": "Le Petit Nicolas",
+  "words": [
+    {
+      "fr": "deuxième",
+      "fa": "دوم",
+      "emoji": "2️⃣",
+      "difficulty": 1,
+      "ex": "C'est le deuxième jour de mes vacances.",
+      "ex_fa": "این دومین روز تعطیلات من است."
+    },
+    {
+      "fr": "troisième",
+      "fa": "سوم",
+      "emoji": "3️⃣",
+      "difficulty": 1,
+      "ex": "J'habite au troisième étage de l'immeuble.",
+      "ex_fa": "من در طبقه سوم ساختمان زندگی می‌کنم."
+    },
+    {
+      "fr": "quatrième",
+      "fa": "چهارم",
+      "emoji": "4️⃣",
+      "difficulty": 1,
+      "ex": "C'est la quatrième fois que je visite Paris.",
+      "ex_fa": "این چهارمین باری است که از پاریس بازدید می‌کنم."
+    },
+    {
+      "fr": "cinquième",
+      "fa": "پنجم",
+      "emoji": "5️⃣",
+      "difficulty": 1,
+      "ex": "Nous sommes arrivés au cinquième mois de l'année.",
+      "ex_fa": "ما به پنجمین ماه سال رسیده‌ایم."
+    },
+    {
+      "fr": "sixième",
+      "fa": "ششم",
+      "emoji": "6️⃣",
+      "difficulty": 1,
+      "ex": "Il habite au sixième étage sans ascenseur.",
+      "ex_fa": "او در طبقه ششم بدون آسانسور زندگی می‌کند."
+    },
+    {
+      "fr": "septième",
+      "fa": "هفتم",
+      "emoji": "7️⃣",
+      "difficulty": 1,
+      "ex": "C'est le septième jour de la semaine.",
+      "ex_fa": "این هفتمین روز هفته است."
+    },
+    {
+      "fr": "huitième",
+      "fa": "هشتم",
+      "emoji": "8️⃣",
+      "difficulty": 1,
+      "ex": "Elle est arrivée en huitième position à la course.",
+      "ex_fa": "او در مسابقه در جایگاه هشتم قرار گرفت."
+    },
+    {
+      "fr": "neuvième",
+      "fa": "نهم",
+      "emoji": "9️⃣",
+      "difficulty": 1,
+      "ex": "Nous vivons au neuvième siècle avant notre ère.",
+      "ex_fa": "ما در قرن نهم قبل از میلاد زندگی می‌کنیم."
+    },
+    {
+      "fr": "dixième",
+      "fa": "دهم",
+      "emoji": "🔟",
+      "difficulty": 1,
+      "ex": "C'est son dixième anniversaire aujourd'hui.",
+      "ex_fa": "امروز دهمین سالگرد تولد اوست."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La course de l'école",
+      "title_fa": "مسابقه مدرسه",
+      "text": "Aujourd'hui, c'est la grande course de l'école. Je suis arrivé ____ (1) ! Mon ami est arrivé ____ (2). La fille de ma classe est arrivée ____ (3). Nous avons couru très vite. C'était la ____ (4) fois que je participais à cette course. L'année dernière, j'étais ____ (5). Cette année, c'est mieux. Le ____ (6) coureur est arrivé juste après moi. Le ____ (7) coureur était très fatigué. Le ____ (8) coureur a trébuché, mais il a continué. Le ____ (9) coureur a applaudi tout le monde. C'était une super journée !",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "deuxième",
+          "options": [
+            "deuxième",
+            "troisième",
+            "quatrième",
+            "cinquième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "troisième",
+          "options": [
+            "troisième",
+            "deuxième",
+            "sixième",
+            "septième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "quatrième",
+          "options": [
+            "quatrième",
+            "cinquième",
+            "sixième",
+            "septième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cinquième",
+          "options": [
+            "cinquième",
+            "quatrième",
+            "sixième",
+            "septième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sixième",
+          "options": [
+            "sixième",
+            "cinquième",
+            "septième",
+            "huitième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "septième",
+          "options": [
+            "septième",
+            "sixième",
+            "huitième",
+            "neuvième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "huitième",
+          "options": [
+            "huitième",
+            "septième",
+            "neuvième",
+            "dixième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "neuvième",
+          "options": [
+            "neuvième",
+            "huitième",
+            "dixième",
+            "premier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "dixième",
+          "options": [
+            "dixième",
+            "neuvième",
+            "huitième",
+            "septième"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les étages de la vie",
+      "title_fa": "طبقات زندگی",
+      "inspiration": "Le Petit Prince",
+      "text": "La vie est comme un grand immeuble. Au ____ (1) étage, on apprend à marcher. Au ____ (2) étage, on découvre l'école. Au ____ (3) étage, on se fait des amis pour la vie. Au ____ (4) étage, on rêve de grands voyages. Au ____ (5) étage, on commence à travailler. Au ____ (6) étage, on construit sa famille. Au ____ (7) étage, on profite de la sagesse. Au ____ (8) étage, on regarde le passé avec douceur. Et au ____ (9) étage, on célèbre chaque petit bonheur. Chaque étage est précieux.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "deuxième",
+          "options": [
+            "deuxième",
+            "troisième",
+            "quatrième",
+            "cinquième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "troisième",
+          "options": [
+            "troisième",
+            "deuxième",
+            "sixième",
+            "septième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "quatrième",
+          "options": [
+            "quatrième",
+            "cinquième",
+            "sixième",
+            "septième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "cinquième",
+          "options": [
+            "cinquième",
+            "quatrième",
+            "sixième",
+            "septième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sixième",
+          "options": [
+            "sixième",
+            "cinquième",
+            "septième",
+            "huitième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "septième",
+          "options": [
+            "septième",
+            "sixième",
+            "huitième",
+            "neuvième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "huitième",
+          "options": [
+            "huitième",
+            "septième",
+            "neuvième",
+            "dixième"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "neuvième",
+          "options": [
+            "neuvième",
+            "huitième",
+            "dixième",
+            "premier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "dixième",
+          "options": [
+            "dixième",
+            "neuvième",
+            "huitième",
+            "septième"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Nombres Ordinaux",
+    "title_fa": "آزمون: اعداد ترتیبی",
+    "displayCount": 9,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Après le premier, on dit le ____.",
+        "options": [
+          "deuxième",
+          "troisième",
+          "quatrième",
+          "cinquième"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بعد از اولین، دومین (deuxième) گفته می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le mois de mai est le ____ mois de l'année.",
+        "options": [
+          "cinquième",
+          "quatrième",
+          "sixième",
+          "troisième"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ماه مه پنجمین (cinquième) ماه سال است."
+      },
+      {
+        "type": "mcq",
+        "question": "Si tu habites au-dessus du cinquième étage, tu es au ____.",
+        "options": [
+          "sixième",
+          "septième",
+          "huitième",
+          "quatrième"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "اگر بالاتر از طبقه پنجم زندگی می‌کنی، در طبقه ششم (sixième) هستی."
+      },
+      {
+        "type": "mcq",
+        "question": "Le dernier jour de la semaine (selon le calendrier) est le ____.",
+        "options": [
+          "septième",
+          "sixième",
+          "huitième",
+          "cinquième"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "آخرین روز هفته (طبق تقویم)، هفتمین (septième) روز است."
+      },
+      {
+        "type": "mcq",
+        "question": "10e s'écrit en toutes lettres : ____.",
+        "options": [
+          "dixième",
+          "neuvième",
+          "huitième",
+          "onzième"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "عدد ترتیبی 10 به صورت حروف، dixième نوشته می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Le siècle après le huitième est le ____.",
+        "options": [
+          "neuvième",
+          "dixième",
+          "septième",
+          "sixième"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "قرن بعد از هشتم، نهم (neuvième) است."
+      },
+      {
+        "type": "mcq",
+        "question": "« Quatrième » signifie le numéro ____.",
+        "options": [
+          "4",
+          "3",
+          "5",
+          "6"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Quatrième به معنای شماره ۴ است."
+      },
+      {
+        "type": "binary",
+        "question": "« Troisième » signifie 3e.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، troisième به معنای سومین است."
+      },
+      {
+        "type": "binary",
+        "question": "« Huitième » s'écrit avec un « x » à la fin.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، huitième با «e» تمام می‌شود، نه «x»."
+      }
+    ]
+  }
+}
