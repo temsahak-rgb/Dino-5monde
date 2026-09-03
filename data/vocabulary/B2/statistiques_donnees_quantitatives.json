@@ -1,0 +1,522 @@
+{
+  "id": "statistiques_donnees_quantitatives",
+  "level": "B2",
+  "theme": "Les statistiques et les données quantitatives",
+  "theme_fa": "آمار و داده‌های کمی",
+  "icon": "📊",
+  "inspiration": "Le Fabuleux Destin d'Amélie Poulain",
+  "words": [
+    {
+      "fr": "l'indicateur (m)",
+      "fa": "شاخص",
+      "emoji": "📈",
+      "difficulty": 4,
+      "ex": "Le taux de chômage est un indicateur économique important.",
+      "ex_fa": "نرخ بیکاری یک شاخص اقتصادی مهم است."
+    },
+    {
+      "fr": "le paramètre (m)",
+      "fa": "پارامتر",
+      "emoji": "⚙️",
+      "difficulty": 4,
+      "ex": "Nous devons modifier ce paramètre pour améliorer les résultats.",
+      "ex_fa": "ما باید این پارامتر را برای بهبود نتایج تغییر دهیم."
+    },
+    {
+      "fr": "la proportion (f)",
+      "fa": "نسبت",
+      "emoji": "⚖️",
+      "difficulty": 4,
+      "ex": "Une grande proportion des étudiants réussit l'examen.",
+      "ex_fa": "نسبت بزرگی از دانشجویان در امتحان موفق می‌شوند."
+    },
+    {
+      "fr": "proportionnel/le",
+      "fa": "تناسبی",
+      "emoji": "📐",
+      "difficulty": 5,
+      "ex": "Le salaire est proportionnel à l'expérience du candidat.",
+      "ex_fa": "حقوق با تجربه کاندیدا تناسب دارد."
+    },
+    {
+      "fr": "le pourcentage (m)",
+      "fa": "درصد",
+      "emoji": "％",
+      "difficulty": 3,
+      "ex": "Quel est le pourcentage de réduction sur cet article ?",
+      "ex_fa": "درصد تخفیف روی این کالا چقدر است؟"
+    },
+    {
+      "fr": "la statistique (f)",
+      "fa": "آمار (علم یا عدد)",
+      "emoji": "📉",
+      "difficulty": 4,
+      "ex": "La statistique nous aide à comprendre les tendances sociales.",
+      "ex_fa": "آمار به ما کمک می‌کند تا روندهای اجتماعی را درک کنیم."
+    },
+    {
+      "fr": "statistique",
+      "fa": "آماری (صفت)",
+      "emoji": "📊",
+      "difficulty": 4,
+      "ex": "Ces données statistiques sont très fiables.",
+      "ex_fa": "این داده‌های آماری بسیار قابل اعتماد هستند."
+    },
+    {
+      "fr": "l'échantillon (m)",
+      "fa": "نمونه",
+      "emoji": "🧪",
+      "difficulty": 5,
+      "ex": "L'échantillon de population est représentatif de la société.",
+      "ex_fa": "نمونه جامعه نماینده‌ای از کل جامعه است."
+    },
+    {
+      "fr": "la moyenne (f)",
+      "fa": "میانگین",
+      "emoji": "➗",
+      "difficulty": 3,
+      "ex": "La moyenne des notes de la classe est de 15 sur 20.",
+      "ex_fa": "میانگین نمرات کلاس ۱۵ از ۲۰ است."
+    },
+    {
+      "fr": "la médiane (f)",
+      "fa": "میانه",
+      "emoji": "📏",
+      "difficulty": 5,
+      "ex": "La médiane des salaires est plus faible que la moyenne.",
+      "ex_fa": "میانه حقوق‌ها پایین‌تر از میانگین است."
+    },
+    {
+      "fr": "l'écart (m)",
+      "fa": "شکاف، انحراف",
+      "emoji": "↔️",
+      "difficulty": 5,
+      "ex": "Il y a un grand écart entre les riches et les pauvres.",
+      "ex_fa": "شکاف بزرگی بین ثروتمندان و فقرا وجود دارد."
+    },
+    {
+      "fr": "significatif/ve",
+      "fa": "معنادار، قابل توجه",
+      "emoji": "💡",
+      "difficulty": 5,
+      "ex": "Nous avons observé une amélioration significative des résultats.",
+      "ex_fa": "ما بهبود معناداری در نتایج مشاهده کردیم."
+    },
+    {
+      "fr": "significativement",
+      "fa": "به‌طور قابل توجهی",
+      "emoji": "📈",
+      "difficulty": 5,
+      "ex": "Les ventes ont augmenté significativement ce mois-ci.",
+      "ex_fa": "فروش‌ها این ماه به‌طور قابل توجهی افزایش یافته‌اند."
+    },
+    {
+      "fr": "quantitatif/ve",
+      "fa": "کمی",
+      "emoji": "🔢",
+      "difficulty": 5,
+      "ex": "L'étude repose sur une analyse quantitative des données.",
+      "ex_fa": "این مطالعه بر اساس تحلیل کمی داده‌ها استوار است."
+    },
+    {
+      "fr": "qualitatif/ve",
+      "fa": "کیفی",
+      "emoji": "🎨",
+      "difficulty": 5,
+      "ex": "Nous privilégions une approche qualitative pour comprendre les émotions.",
+      "ex_fa": "ما برای درک احساسات، رویکرد کیفی را ترجیح می‌دهیم."
+    },
+    {
+      "fr": "mesurable",
+      "fa": "قابل اندازه‌گیری",
+      "emoji": "📏",
+      "difficulty": 4,
+      "ex": "Le progrès doit être mesurable pour être évalué correctement.",
+      "ex_fa": "پیشرفت باید قابل اندازه‌گیری باشد تا به درستی ارزیابی شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Les petits calculs d'Amélie",
+      "title_fa": "محاسبات کوچک آمیلی",
+      "text": "Amélie aimait observer les détails du monde qui l'entourait. Chaque matin, elle notait un {{BLANK_1}} précis : le nombre de personnes qui trébuchaient sur le même pavé de la rue. Elle calculait ensuite le {{BLANK_2}} de ces chutes par rapport au nombre total de passants. Pour elle, cet {{BLANK_3}} de population était suffisant pour tirer des conclusions amusantes. Elle trouvait que la {{BLANK_4}} d'âge de ces personnes était souvent la même. Ce qui la fascinait, c'était l'{{BLANK_5}} immense entre la façon dont les gens marchaient le matin et le soir. Pour Amélie, le bonheur n'était pas toujours {{BLANK_6}} avec des chiffres, mais elle aimait quand même compter les petites joies de la vie.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "indicateur",
+          "options": [
+            "indicateur",
+            "hasard",
+            "bruit",
+            "silence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "pourcentage",
+          "options": [
+            "pourcentage",
+            "couleur",
+            "goût",
+            "odeur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "échantillon",
+          "options": [
+            "échantillon",
+            "univers",
+            "totalité",
+            "infini"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "moyenne",
+          "options": [
+            "moyenne",
+            "exception",
+            "règle",
+            "loi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "écart",
+          "options": [
+            "écart",
+            "ressemblance",
+            "union",
+            "fusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "mesurable",
+          "options": [
+            "mesurable",
+            "invisible",
+            "imaginaire",
+            "abstrait"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La géométrie des âmes",
+      "title_fa": "هندسه روح‌ها",
+      "inspiration": "Le Fabuleux Destin d'Amélie Poulain",
+      "text": "Dans son petit appartement de Montmartre, Amélie observait le monde à travers un prisme singulier et poétique. Pour elle, chaque instant possédait un {{BLANK_1}} invisible que la plupart des gens, pressés et distraits, ignoraient totalement. Elle passait des heures à calculer la {{BLANK_2}} exacte des passants qui esquissaient un sourire dans le métro, convaincue que ce chiffre n'était pas {{BLANK_3}} à la météo, mais bien à une magie intérieure insoupçonnée. Une simple {{BLANK_4}} froide ne pouvait jamais résumer toute la beauté complexe de l'existence humaine. Un après-midi pluvieux, elle nota la {{BLANK_5}} des âges des clients habituels du café, ainsi que l'{{BLANK_6}} immense et mélancolique entre leurs rêves d'enfance et leur réalité actuelle. Elle comprit alors, avec une clarté soudaine, qu'un changement {{BLANK_7}} dans la vie d'une personne ne se mesurait pas uniquement avec des graphiques. Il fallait {{BLANK_8}} nuancer ces données brutes par une approche {{BLANK_9}}, en prenant le temps d'écouter les histoires et les silences derrière les nombres. Ainsi, les mathématiques devenaient pour elle un langage de l'âme, un outil pour réparer les cœurs brisés et rendre chaque interaction {{BLANK_10}} uniquement par la joie pure qu'elle parvenait à procurer.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "paramètre",
+          "options": [
+            "paramètre",
+            "hasard",
+            "bruit",
+            "silence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "proportion",
+          "options": [
+            "proportion",
+            "exception",
+            "règle",
+            "loi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "proportionnelle",
+          "options": [
+            "proportionnelle",
+            "identique",
+            "égale",
+            "similaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "statistique",
+          "options": [
+            "statistique",
+            "poésie",
+            "musique",
+            "peinture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "médiane",
+          "options": [
+            "médiane",
+            "moyenne",
+            "somme",
+            "total"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "écart",
+          "options": [
+            "écart",
+            "ressemblance",
+            "union",
+            "fusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "significatif",
+          "options": [
+            "significatif",
+            "insignifiant",
+            "mineur",
+            "négligeable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "significativement",
+          "options": [
+            "significativement",
+            "légèrement",
+            "faiblement",
+            "rarement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "qualitative",
+          "options": [
+            "qualitative",
+            "quantitative",
+            "mathématique",
+            "chiffrée"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "mesurable",
+          "options": [
+            "mesurable",
+            "invisible",
+            "imaginaire",
+            "abstraite"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Statistiques et données quantitatives",
+    "title_fa": "آزمون : آمار و داده‌های کمی",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le taux de chômage est un ____ économique très surveillé.",
+        "options": [
+          "indicateur",
+          "hasard",
+          "bruit",
+          "silence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "indicateur = شاخص"
+      },
+      {
+        "type": "mcq",
+        "question": "Nous devons ajuster ce ____ pour améliorer la performance du moteur.",
+        "options": [
+          "paramètre",
+          "couleur",
+          "goût",
+          "odeur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "paramètre = پارامتر"
+      },
+      {
+        "type": "mcq",
+        "question": "Une grande ____ des étudiants a réussi l'examen final.",
+        "options": [
+          "proportion",
+          "exception",
+          "règle",
+          "loi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "proportion = نسبت"
+      },
+      {
+        "type": "mcq",
+        "question": "Quel est le ____ de réduction sur cet article en solde ?",
+        "options": [
+          "pourcentage",
+          "poids",
+          "volume",
+          "longueur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "pourcentage = درصد"
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ de population étudié est représentatif de la société française.",
+        "options": [
+          "échantillon",
+          "univers",
+          "totalité",
+          "infini"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "échantillon = نمونه"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ des notes de la classe est de 14 sur 20.",
+        "options": [
+          "moyenne",
+          "exception",
+          "règle",
+          "loi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "moyenne = میانگین"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ des salaires est souvent plus faible que la moyenne dans ce secteur.",
+        "options": [
+          "médiane",
+          "somme",
+          "total",
+          "addition"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "médiane = میانه"
+      },
+      {
+        "type": "mcq",
+        "question": "Il existe un grand ____ entre les revenus des cadres et ceux des ouvriers.",
+        "options": [
+          "écart",
+          "ressemblance",
+          "union",
+          "fusion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "écart = شکاف، انحراف"
+      },
+      {
+        "type": "mcq",
+        "question": "Cette étude repose sur une analyse ____ des données recueillies.",
+        "options": [
+          "quantitative",
+          "qualitative",
+          "poétique",
+          "artistique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "quantitatif = کمی"
+      },
+      {
+        "type": "mcq",
+        "question": "Nous privilégions une approche ____ pour comprendre les émotions des patients.",
+        "options": [
+          "qualitative",
+          "quantitative",
+          "mathématique",
+          "chiffrée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "qualitatif = کیفی"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ nous aide à comprendre les tendances et les évolutions de la société.",
+        "options": [
+          "statistique",
+          "poésie",
+          "musique",
+          "peinture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "statistique = آمار (علم)"
+      },
+      {
+        "type": "mcq",
+        "question": "Ces données ____ sont très fiables et proviennent d'une source officielle.",
+        "options": [
+          "statistiques",
+          "poétiques",
+          "musicales",
+          "artistiques"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "statistique = آماری (صفت)"
+      },
+      {
+        "type": "binary",
+        "question": "Si deux grandeurs sont proportionnelles, cela signifie que lorsque l'une augmente, l'autre augmente dans les mêmes proportions.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - proportionnel = تناسبی"
+      },
+      {
+        "type": "binary",
+        "question": "Un résultat significatif est un résultat sans importance et qui peut être ignoré.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - significatif به معنای معنادار و قابل توجه است."
+      },
+      {
+        "type": "binary",
+        "question": "Si les ventes augmentent significativement, cela signifie que la hausse est faible et négligeable.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - significativement به معنای به‌طور قابل توجهی و چشمگیر است."
+      },
+      {
+        "type": "binary",
+        "question": "Pour qu'un progrès soit évalué correctement, il doit être mesurable.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - mesurable = قابل اندازه‌گیری"
+      }
+    ]
+  }
+}
