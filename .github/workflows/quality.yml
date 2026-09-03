@@ -14,15 +14,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # ------------------------------------------------------------
-      # Setup
-      # ------------------------------------------------------------
-
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
@@ -33,83 +29,62 @@ jobs:
       - name: Prepare reports directory
         run: mkdir -p reports
 
-      # ------------------------------------------------------------
-      # Tests
-      # ------------------------------------------------------------
-
       - name: Data consistency tests
         id: tests
         shell: bash
         run: |
           set +e
-
           npm test > reports/tests.txt 2>&1
           STATUS=$?
-
           echo "status=$STATUS" >> "$GITHUB_OUTPUT"
-
           exit 0
 
-      # ------------------------------------------------------------
-      # TypeScript checkJs
-      # ------------------------------------------------------------
-
-      - name: JavaScript typecheck
+      - name: TypeScript typecheck
         id: typecheck
         shell: bash
         run: |
           set +e
-
           npm run typecheck > reports/typecheck.txt 2>&1
           STATUS=$?
-
           echo "status=$STATUS" >> "$GITHUB_OUTPUT"
-
           exit 0
 
-      # ------------------------------------------------------------
-      # Knip
-      # ------------------------------------------------------------
+      - name: Production build
+        id: build
+        shell: bash
+        run: |
+          set +e
+          npm run build > reports/build.txt 2>&1
+          STATUS=$?
+          echo "status=$STATUS" >> "$GITHUB_OUTPUT"
+          exit 0
 
       - name: Dead code analysis
         id: knip
         shell: bash
         run: |
           set +e
-
           npm run knip > reports/knip.txt 2>&1
           STATUS=$?
-
           echo "status=$STATUS" >> "$GITHUB_OUTPUT"
-
           exit 0
-
-      # ------------------------------------------------------------
-      # Duplication
-      # ------------------------------------------------------------
 
       - name: Duplication analysis
         id: duplication
         shell: bash
         run: |
           set +e
-
           npm run duplication > reports/duplication.txt 2>&1
           STATUS=$?
-
           echo "status=$STATUS" >> "$GITHUB_OUTPUT"
-
           exit 0
-
-      # ------------------------------------------------------------
-      # GitHub Summary
-      # ------------------------------------------------------------
 
       - name: Build quality summary
         shell: bash
         env:
           TEST_STATUS: ${{ steps.tests.outputs.status }}
           TYPECHECK_STATUS: ${{ steps.typecheck.outputs.status }}
+          BUILD_STATUS: ${{ steps.build.outputs.status }}
           KNIP_STATUS: ${{ steps.knip.outputs.status }}
           DUPLICATION_STATUS: ${{ steps.duplication.outputs.status }}
         run: |
@@ -121,55 +96,42 @@ jobs:
             fi
           }
 
+          append_report() {
+            local title="$1"
+            local file="$2"
+            local lines="$3"
+            echo "## $title"
+            echo
+            echo '```text'
+            sed -n "1,${lines}p" "$file"
+            echo '```'
+            echo
+          }
+
           {
             echo "# Code quality report"
             echo
-            echo "Cette CI est actuellement informative et non bloquante."
+            echo "This workflow is currently informative and non-blocking after dependency installation."
             echo
-            echo "| Analyse | Résultat |"
+            echo "| Analysis | Result |"
             echo "| --- | --- |"
             echo "| Data consistency | $(status_label "$TEST_STATUS") |"
-            echo "| JavaScript typecheck | $(status_label "$TYPECHECK_STATUS") |"
+            echo "| TypeScript typecheck | $(status_label "$TYPECHECK_STATUS") |"
+            echo "| Production build | $(status_label "$BUILD_STATUS") |"
             echo "| Dead code / Knip | $(status_label "$KNIP_STATUS") |"
             echo "| Duplication | $(status_label "$DUPLICATION_STATUS") |"
             echo
 
-            echo "## Data consistency"
-            echo
-            echo '```text'
-            sed -n '1,200p' reports/tests.txt
-            echo '```'
-            echo
-
-            echo "## JavaScript typecheck"
-            echo
-            echo '```text'
-            sed -n '1,250p' reports/typecheck.txt
-            echo '```'
-            echo
-
-            echo "## Knip"
-            echo
-            echo '```text'
-            sed -n '1,250p' reports/knip.txt
-            echo '```'
-            echo
-
-            echo "## Duplication"
-            echo
-            echo '```text'
-            sed -n '1,250p' reports/duplication.txt
-            echo '```'
-            echo
+            append_report "Data consistency" reports/tests.txt 200
+            append_report "TypeScript typecheck" reports/typecheck.txt 300
+            append_report "Production build" reports/build.txt 200
+            append_report "Knip" reports/knip.txt 300
+            append_report "Duplication" reports/duplication.txt 300
 
             echo "---"
             echo
-            echo "Les rapports complets sont disponibles dans l'artifact \`quality-reports\`."
+            echo "Full reports are available in the \`quality-reports\` artifact."
           } >> "$GITHUB_STEP_SUMMARY"
-
-      # ------------------------------------------------------------
-      # Full reports
-      # ------------------------------------------------------------
 
       - name: Upload full quality reports
         uses: actions/upload-artifact@v4
@@ -177,3 +139,11 @@ jobs:
           name: quality-reports
           path: reports/
           retention-days: 14
+
+      - name: Upload production build
+        if: steps.build.outputs.status == '0'
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+          retention-days: 7
