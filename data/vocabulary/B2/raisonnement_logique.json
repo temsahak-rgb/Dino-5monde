@@ -1,0 +1,522 @@
+{
+  "id": "raisonnement_logique",
+  "level": "B2",
+  "theme": "Le raisonnement et la logique",
+  "theme_fa": "استدلال و منطق",
+  "icon": "🧠",
+  "inspiration": "Le Nom de la rose",
+  "words": [
+    {
+      "fr": "le raisonnement (m)",
+      "fa": "استدلال",
+      "emoji": "🧩",
+      "difficulty": 4,
+      "ex": "Son raisonnement est difficile à suivre.",
+      "ex_fa": "استدلال او به سختی قابل پیگیری است."
+    },
+    {
+      "fr": "raisonner",
+      "fa": "استدلال کردن",
+      "emoji": "💭",
+      "difficulty": 3,
+      "ex": "Il faut raisonner avec calme et objectivité.",
+      "ex_fa": "باید با آرامش و بی‌طرفی استدلال کرد."
+    },
+    {
+      "fr": "logique",
+      "fa": "منطقی",
+      "emoji": "📐",
+      "difficulty": 3,
+      "ex": "C'est une conclusion tout à fait logique.",
+      "ex_fa": "این یک نتیجه‌گیری کاملاً منطقی است."
+    },
+    {
+      "fr": "logiquement",
+      "fa": "منطقاً",
+      "emoji": "✅",
+      "difficulty": 4,
+      "ex": "Logiquement, il devrait arriver en retard.",
+      "ex_fa": "منطقاً، او باید دیر برسد."
+    },
+    {
+      "fr": "la logique (f)",
+      "fa": "منطق",
+      "emoji": "⚖️",
+      "difficulty": 3,
+      "ex": "La logique de son argument est imparable.",
+      "ex_fa": "منطق استدلال او غیرقابل توقف است."
+    },
+    {
+      "fr": "cohérent(e)",
+      "fa": "منسجم",
+      "emoji": "🔗",
+      "difficulty": 4,
+      "ex": "Ton discours doit être cohérent du début à la fin.",
+      "ex_fa": "سخنرانی تو باید از ابتدا تا انتها منسجم باشد."
+    },
+    {
+      "fr": "la cohérence (f)",
+      "fa": "انسجام",
+      "emoji": "🏗️",
+      "difficulty": 5,
+      "ex": "Il manque de cohérence dans ce projet.",
+      "ex_fa": "در این پروژه انسجام وجود ندارد."
+    },
+    {
+      "fr": "argumenter",
+      "fa": "استدلال کردن، برهان آوردن",
+      "emoji": "🗣️",
+      "difficulty": 4,
+      "ex": "Elle sait argumenter ses choix avec précision.",
+      "ex_fa": "او می‌داند چگونه انتخاب‌هایش را با دقت استدلال کند."
+    },
+    {
+      "fr": "l'argument (m)",
+      "fa": "استدلال، برهان",
+      "emoji": "💬",
+      "difficulty": 3,
+      "ex": "C'est un argument de poids en sa faveur.",
+      "ex_fa": "این یک برهان قوی به نفع اوست."
+    },
+    {
+      "fr": "l'argumentation (f)",
+      "fa": "استدلال‌پردازی",
+      "emoji": "📝",
+      "difficulty": 5,
+      "ex": "Son argumentation est solide et bien structurée.",
+      "ex_fa": "استدلال‌پردازی او محکم و به‌خوبی ساختار یافته است."
+    },
+    {
+      "fr": "convaincant(e)",
+      "fa": "متقاعدکننده",
+      "emoji": "🎯",
+      "difficulty": 4,
+      "ex": "Il a présenté des preuves très convaincantes.",
+      "ex_fa": "او مدارک بسیار متقاعدکننده‌ای ارائه داد."
+    },
+    {
+      "fr": "convaincre",
+      "fa": "متقاعد کردن",
+      "emoji": "🤝",
+      "difficulty": 3,
+      "ex": "Je vais le convaincre de changer d'avis.",
+      "ex_fa": "من او را متقاعد خواهم کرد که نظرش را تغییر دهد."
+    },
+    {
+      "fr": "la conviction (f)",
+      "fa": "باور عمیق",
+      "emoji": "🔥",
+      "difficulty": 5,
+      "ex": "Il parle avec une grande conviction.",
+      "ex_fa": "او با باور عمیقی صحبت می‌کند."
+    },
+    {
+      "fr": "persuasif/ve",
+      "fa": "متقاعدکننده، نفوذکننده",
+      "emoji": "✨",
+      "difficulty": 5,
+      "ex": "Elle a un ton de voix très persuasif.",
+      "ex_fa": "او لحن صدای بسیار نفوذکننده‌ای دارد."
+    },
+    {
+      "fr": "persuader",
+      "fa": "متقاعد کردن",
+      "emoji": "💡",
+      "difficulty": 4,
+      "ex": "Il a réussi à persuader le jury de son innocence.",
+      "ex_fa": "او موفق شد هیئت داوران را از بی‌گناهی خود متقاعد کند."
+    },
+    {
+      "fr": "démontrer",
+      "fa": "اثبات کردن",
+      "emoji": "🔬",
+      "difficulty": 4,
+      "ex": "Les chiffres démontrent clairement cette tendance.",
+      "ex_fa": "اعداد به وضوح این روند را اثبات می‌کنند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une réunion décisive",
+      "title_fa": "یک جلسه سرنوشت‌ساز",
+      "text": "Lors de la réunion stratégique de lundi matin, Marc a essayé de {{BLANK_1}} calmement pour expliquer son point de vue à l'ensemble du comité. Il a présenté une idée très {{BLANK_2}} que tout le monde pouvait comprendre sans difficulté. Pour {{BLANK_3}} sa théorie, il a utilisé des faits précis et des chiffres récents tirés du dernier rapport annuel. Son {{BLANK_4}} principal était que les coûts opérationnels allaient considérablement baisser d'ici la fin de l'année. Bien qu'il ait dû {{BLANK_5}} pendant plus d'une heure face à des collègues sceptiques, son discours était tellement {{BLANK_6}} que le directeur a immédiatement accepté la proposition. La clarté de son exposé a impressionné toute l'équipe et a permis de débloquer la situation complexe qui durait depuis des mois.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "raisonner",
+          "options": [
+            "raisonner",
+            "manger",
+            "dormir",
+            "chanter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "cohérente",
+          "options": [
+            "cohérente",
+            "incohérente",
+            "absurde",
+            "confuse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "démontrer",
+          "options": [
+            "démontrer",
+            "cacher",
+            "détruire",
+            "ignorer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "argument",
+          "options": [
+            "argument",
+            "repas",
+            "voyage",
+            "sommeil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "argumenter",
+          "options": [
+            "argumenter",
+            "se taire",
+            "fuir",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "convaincant",
+          "options": [
+            "convaincant",
+            "faible",
+            "douteux",
+            "ennuyeux"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les ombres de la vérité",
+      "title_fa": "سایه‌های حقیقت",
+      "inspiration": "Le Nom de la rose",
+      "text": "Dans l'abbaye isolée et brumeuse, frère Guillaume appliquait un {{BLANK_7}} rigoureux pour résoudre les mystères sanglants qui secouaient le monastère. Un jour, il découvrit un manuscrit ancien qui révéla la clé de l'énigme. Il possédait un esprit éminemment {{BLANK_9}} et savait que chaque détail devait s'inscrire dans {{BLANK_8}} implacable de l'univers. Pour {{BLANK_13}} les moines de son innocence, il ne se contentait jamais de simples affirmations dogmatiques. Son {{BLANK_10}} était toujours bâti sur des preuves tangibles et une {{BLANK_11}} parfaite entre les événements. Il possédait une {{BLANK_12}} naturelle qui rendait ses discours irréfutables, même face aux inquisiteurs les plus sévères. Lorsqu'il devait {{BLANK_15}} un suspect réticent, il utilisait un ton {{BLANK_14}} et mesuré, évitant toute colère inutile. Enfin, il vérifiait {{BLANK_16}} la validité de chaque déduction avant de la présenter au tribunal ecclésiastique, car la vérité ne supporte aucune approximation.",
+      "blanks": [
+        {
+          "id": 7,
+          "answer": "raisonnement",
+          "options": [
+            "raisonnement",
+            "repas",
+            "voyage",
+            "sommeil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "la logique",
+          "options": [
+            "la logique",
+            "le hasard",
+            "l'erreur",
+            "la chance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "logique",
+          "options": [
+            "logique",
+            "distrait",
+            "lent",
+            "faible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "argumentation",
+          "options": [
+            "argumentation",
+            "fête",
+            "pause",
+            "erreur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "cohérence",
+          "options": [
+            "cohérence",
+            "confusion",
+            "chaos",
+            "désordre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "conviction",
+          "options": [
+            "conviction",
+            "doute",
+            "hésitation",
+            "peur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "convaincre",
+          "options": [
+            "convaincre",
+            "tromper",
+            "fuir",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "persuasif",
+          "options": [
+            "persuasif",
+            "agressif",
+            "faible",
+            "indécis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "persuader",
+          "options": [
+            "persuader",
+            "effrayer",
+            "fuir",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "logiquement",
+          "options": [
+            "logiquement",
+            "rapidement",
+            "bêtement",
+            "faussement"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Raisonnement et logique",
+    "title_fa": "آزمون : استدلال و منطق",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Il faut ____ calmement pour trouver une solution.",
+        "options": [
+          "raisonner",
+          "manger",
+          "dormir",
+          "courir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "raisonner = استدلال کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Son explication est très ____, on comprend tout de suite.",
+        "options": [
+          "logique",
+          "absurde",
+          "confuse",
+          "douteuse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "logique = منطقی"
+      },
+      {
+        "type": "mcq",
+        "question": "Les chiffres permettent de ____ la validité du projet.",
+        "options": [
+          "démontrer",
+          "cacher",
+          "détruire",
+          "ignorer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "démontrer = اثبات کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Quel est votre ____ principal pour défendre cette idée ?",
+        "options": [
+          "argument",
+          "repas",
+          "voyage",
+          "sommeil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "argument = برهان، استدلال"
+      },
+      {
+        "type": "mcq",
+        "question": "Il sait ____ avec précision et clarté.",
+        "options": [
+          "argumenter",
+          "se taire",
+          "fuir",
+          "abandonner"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "argumenter = استدلال کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Son discours était si ____ que tout le monde a voté pour lui.",
+        "options": [
+          "convaincant",
+          "faible",
+          "douteux",
+          "ennuyeux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "convaincant = متقاعدکننده"
+      },
+      {
+        "type": "mcq",
+        "question": "Un bon ____ repose sur des faits vérifiables.",
+        "options": [
+          "raisonnement",
+          "repas",
+          "voyage",
+          "sommeil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "raisonnement = استدلال"
+      },
+      {
+        "type": "mcq",
+        "question": "Cela va à l'encontre de toute ____.",
+        "options": [
+          "logique",
+          "chance",
+          "erreur",
+          "hasard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "logique = منطق"
+      },
+      {
+        "type": "mcq",
+        "question": "Il manque de ____ dans ton raisonnement.",
+        "options": [
+          "cohérence",
+          "confusion",
+          "chaos",
+          "désordre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "cohérence = انسجام"
+      },
+      {
+        "type": "mcq",
+        "question": "Son ____ était solide et bien structurée.",
+        "options": [
+          "argumentation",
+          "fête",
+          "pause",
+          "erreur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "argumentation = استدلال‌پردازی"
+      },
+      {
+        "type": "mcq",
+        "question": "Il parle avec une grande ____ de ses idées.",
+        "options": [
+          "conviction",
+          "doute",
+          "hésitation",
+          "peur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "conviction = باور عمیق"
+      },
+      {
+        "type": "mcq",
+        "question": "C'est un orateur très ____, il sait toucher les cœurs.",
+        "options": [
+          "persuasif",
+          "agressif",
+          "faible",
+          "indécis"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "persuasif = متقاعدکننده، نفوذکننده"
+      },
+      {
+        "type": "binary",
+        "question": "Convaincre quelqu'un signifie le faire changer d'avis par des preuves et des faits.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - convaincre = متقاعد کردن (با تکیه بر منطق و شواهد)"
+      },
+      {
+        "type": "binary",
+        "question": "Agir logiquement signifie prendre des décisions basées uniquement sur les émotions.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - agir logiquement یعنی تصمیم‌گیری بر اساس عقل و منطق، نه احساسات."
+      },
+      {
+        "type": "binary",
+        "question": "Une idée cohérente est une idée qui contient des contradictions internes.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - cohérent به معنای منسجم و بدون تناقض است."
+      },
+      {
+        "type": "binary",
+        "question": "Persuader et convaincre sont des actions qui visent à obtenir l'adhésion d'autrui.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - هر دو به معنای متقاعد کردن هستند، اگرچه با ظرافت‌های معنایی متفاوت."
+      }
+    ]
+  }
+}
