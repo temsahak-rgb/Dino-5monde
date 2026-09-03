@@ -12,17 +12,6 @@ async function showDailyHome() {
     app.innerHTML = html;
 }
 
-async function showTravelHome() {
-    const lang = localStorage.getItem("language") || "fr";
-    let html = renderNavbar();
-    html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 50px;">
-        <h1 style="font-size:22px;font-weight:700;color:#1a1a1a;margin:0 0 4px;">${lang === "fa" ? "✈️ فرانسوی در سفر" : "✈️ Français voyage"}</h1>
-        <p style="font-size:13px;color:#777;margin:0 0 30px;">${lang === "fa" ? "۱۸ درس برای سفری بی‌نقص" : "18 leçons pour un voyage parfait"}</p>
-        <p style="font-size:14px;color:#777;text-align:center;padding:40px 0;">🏗️🦖 ${lang === "fa" ? "دایناسورها مشغول ساخت این بخش هستند!" : "Les dinosaures sont au travail !"}</p>
-    </div>`;
-    app.innerHTML = html;
-}
-
 // ===============================
 // درس‌های روزمره
 // ===============================
