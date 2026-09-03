@@ -1,0 +1,533 @@
+{
+  "id": "environnement_naturel_geographie",
+  "level": "B2",
+  "theme": "L'environnement naturel et la géographie",
+  "theme_fa": "محیط طبیعی و جغرافیایی",
+  "icon": "🏔️",
+  "inspiration": "Robinson Crusoé",
+  "words": [
+    {
+      "fr": "le versant (m)",
+      "fa": "دامنه کوه، جنبه",
+      "emoji": "🏔️",
+      "difficulty": 4,
+      "ex": "Le village est situé sur le versant nord de la montagne.",
+      "ex_fa": "روستا در دامنه شمالی کوه واقع شده است."
+    },
+    {
+      "fr": "le zénith (m)",
+      "fa": "اوج",
+      "emoji": "☀️",
+      "difficulty": 5,
+      "ex": "Le soleil était au zénith quand nous sommes arrivés.",
+      "ex_fa": "وقتی رسیدیم، خورشید در اوج آسمان بود."
+    },
+    {
+      "fr": "verdoyant(e)",
+      "fa": "سرسبز",
+      "emoji": "🌿",
+      "difficulty": 4,
+      "ex": "La vallée est verdoyante au printemps.",
+      "ex_fa": "دره در بهار سرسبز است."
+    },
+    {
+      "fr": "luxuriant(e)",
+      "fa": "انبوه و سرسبز",
+      "emoji": "🌴",
+      "difficulty": 5,
+      "ex": "La jungle est une végétation luxuriante.",
+      "ex_fa": "جنگل پوشش گیاهی انبوه و سرسبزی دارد."
+    },
+    {
+      "fr": "le viaduc (m)",
+      "fa": "پل بزرگ",
+      "emoji": "🌉",
+      "difficulty": 5,
+      "ex": "Le train traverse le viaduc au-dessus de la vallée.",
+      "ex_fa": "قطار از پل بزرگ بالای دره عبور می‌کند."
+    },
+    {
+      "fr": "le volcan (m)",
+      "fa": "آتشفشان",
+      "emoji": "🌋",
+      "difficulty": 4,
+      "ex": "Ce volcan est entré en éruption l'année dernière.",
+      "ex_fa": "این آتشفشان سال گذشته فوران کرد."
+    },
+    {
+      "fr": "le littoral (m)",
+      "fa": "ساحل",
+      "emoji": "🏖️",
+      "difficulty": 4,
+      "ex": "Le littoral méditerranéen attire de nombreux touristes.",
+      "ex_fa": "ساحل مدیترانه گردشگران زیادی را جذب می‌کند."
+    },
+    {
+      "fr": "la forêt (f)",
+      "fa": "جنگل",
+      "emoji": "🌲",
+      "difficulty": 3,
+      "ex": "Nous nous sommes perdus dans la forêt.",
+      "ex_fa": "ما در جنگل گم شدیم."
+    },
+    {
+      "fr": "la campagne (f)",
+      "fa": "حومه، روستا",
+      "emoji": "🚜",
+      "difficulty": 3,
+      "ex": "Il préfère vivre à la campagne plutôt qu'en ville.",
+      "ex_fa": "او ترجیح می‌دهد به جای شهر، در روستا زندگی کند."
+    },
+    {
+      "fr": "urbain(e)",
+      "fa": "شهری",
+      "emoji": "🏙️",
+      "difficulty": 3,
+      "ex": "La pollution urbaine est un problème majeur.",
+      "ex_fa": "آلودگی شهری یک مشکل عمده است."
+    },
+    {
+      "fr": "la banlieue (f)",
+      "fa": "حومه شهر",
+      "emoji": "🏘️",
+      "difficulty": 4,
+      "ex": "Ils habitent dans la banlieue parisienne.",
+      "ex_fa": "آن‌ها در حومه پاریس زندگی می‌کنند."
+    },
+    {
+      "fr": "le territoire (m)",
+      "fa": "قلمرو",
+      "emoji": "🗺️",
+      "difficulty": 4,
+      "ex": "Les animaux défendent leur territoire.",
+      "ex_fa": "حیوانات از قلمرو خود دفاع می‌کنند."
+    },
+    {
+      "fr": "l'habitat (m)",
+      "fa": "زیستگاه",
+      "emoji": "🏡",
+      "difficulty": 4,
+      "ex": "La destruction de l'habitat naturel menace les espèces.",
+      "ex_fa": "تخریب زیستگاه طبیعی گونه‌ها را تهدید می‌کند."
+    },
+    {
+      "fr": "le paysage (m)",
+      "fa": "چشم‌انداز",
+      "emoji": "🖼️",
+      "difficulty": 4,
+      "ex": "Le paysage montagneux est à couper le souffle.",
+      "ex_fa": "چشم‌انداز کوهستانی نفس‌گیر است."
+    },
+    {
+      "fr": "la région (f)",
+      "fa": "منطقه",
+      "emoji": "📍",
+      "difficulty": 3,
+      "ex": "Cette région est connue pour ses fromages.",
+      "ex_fa": "این منطقه به خاطر پنیرهایش شناخته می‌شود."
+    },
+    {
+      "fr": "régional(e)",
+      "fa": "منطقه‌ای",
+      "emoji": "🏷️",
+      "difficulty": 4,
+      "ex": "Nous avons goûté une spécialité régionale délicieuse.",
+      "ex_fa": "ما یک غذای محلی منطقه‌ای خوشمزه را چشیدیم."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un nouveau départ à la campagne",
+      "title_fa": "یک شروع جدید در روستا",
+      "text": "Après des années passées dans un environnement {{BLANK_1}} bruyant et pollué, Marc a finalement décidé de quitter la {{BLANK_2}} pour s'installer durablement à la {{BLANK_3}}. Il rêvait depuis longtemps d'un cadre de vie plus calme, naturel et {{BLANK_4}}. Sa nouvelle maison se trouve juste à l'orée d'une grande {{BLANK_5}}, ce qui lui offre un {{BLANK_6}} magnifique et apaisant chaque matin au réveil. Il apprécie particulièrement cette région pour son climat doux et ses habitants très accueillants. De plus, les produits {{BLANK_7}} vendus au marché local sont bien meilleurs et plus frais que ceux des grands supermarchés.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "urbain",
+          "options": [
+            "urbain",
+            "naturel",
+            "calme",
+            "paisible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "banlieue",
+          "options": [
+            "banlieue",
+            "montagne",
+            "forêt",
+            "désert"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "campagne",
+          "options": [
+            "campagne",
+            "métropole",
+            "centre-ville",
+            "usine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "verdoyant",
+          "options": [
+            "verdoyant",
+            "aride",
+            "pollué",
+            "bruyant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "forêt",
+          "options": [
+            "forêt",
+            "autoroute",
+            "aéroport",
+            "centre commercial"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "paysage",
+          "options": [
+            "paysage",
+            "bruit",
+            "trafic",
+            "stress"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "régionaux",
+          "options": [
+            "régionaux",
+            "industriels",
+            "importés",
+            "artificiels"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'île mystérieuse",
+      "title_fa": "جزیره مرموز",
+      "inspiration": "Robinson Crusoé",
+      "text": "Depuis son naufrage tragique, Robinson observait avec une fascination mêlée de crainte ce nouveau {{BLANK_1}} inexploré qui était désormais le sien. L'île semblait mystérieusement divisée en deux mondes distincts et opposés. D'un côté, le {{BLANK_2}} s'étendait à perte de vue, offrant des plages de sable fin et des eaux cristallines qui bruissaient doucement au rythme des marées. De l'autre, une végétation {{BLANK_3}} et impénétrable grimpait le long du {{BLANK_4}} abrupt d'une montagne imposante, dissimulant d'innombrables secrets et des dangers potentiels. Au loin, la silhouette menaçante d'un ancien {{BLANK_5}} éteint dominait l'horizon brumeux, rappelant sans cesse la puissance brute et indomptable de la nature. \n\nLorsqu'il atteignit le {{BLANK_6}} de son périple d'exploration, perché sur un promontoire rocheux, il aperçut soudain une structure qui ne pouvait absolument pas être d'origine naturelle : les ruines majestueuses d'un vieux {{BLANK_7}} de pierre, vestige silencieux d'une civilisation oubliée. Cet ouvrage colossal témoignait indéniablement d'un {{BLANK_8}} humain passé, bien plus organisé et avancé que ce qu'il avait osé imaginer dans ses pires cauchemars. Il réalisa alors, avec un frisson d'excitation, que cette {{BLANK_9}} isolée n'avait pas toujours été aussi sauvage et inhospitalière. Les traces indélébiles d'une spécificité {{BLANK_10}} ancienne, peut-être agricole ou artisanale, étaient encore visibles, gravées à même les rochers moussus.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "territoire",
+          "options": [
+            "territoire",
+            "supermarché",
+            "aéroport",
+            "désert"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "littoral",
+          "options": [
+            "littoral",
+            "sommet",
+            "désert",
+            "volcan"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "luxuriante",
+          "options": [
+            "luxuriante",
+            "aride",
+            "sèche",
+            "stérile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "versant",
+          "options": [
+            "versant",
+            "sommet",
+            "fond",
+            "plaine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "volcan",
+          "options": [
+            "volcan",
+            "viaduc",
+            "château",
+            "village"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "zénith",
+          "options": [
+            "zénith",
+            "début",
+            "fin",
+            "nadir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "viaduc",
+          "options": [
+            "viaduc",
+            "sentier",
+            "ruisseau",
+            "arbre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "habitat",
+          "options": [
+            "habitat",
+            "désert",
+            "chaos",
+            "vide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "région",
+          "options": [
+            "région",
+            "planète",
+            "galaxie",
+            "univers"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "régionale",
+          "options": [
+            "régionale",
+            "universelle",
+            "globale",
+            "mondiale"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Environnement naturel et géographie",
+    "title_fa": "آزمون : محیط طبیعی و جغرافیایی",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le village est situé sur le ____ nord de la montagne.",
+        "options": [
+          "versant",
+          "sommet",
+          "fond",
+          "plaine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "versant = دامنه کوه، جنبه"
+      },
+      {
+        "type": "mcq",
+        "question": "Le soleil était au ____ quand nous sommes arrivés au sommet.",
+        "options": [
+          "zénith",
+          "début",
+          "fin",
+          "nadir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "zénith = اوج"
+      },
+      {
+        "type": "mcq",
+        "question": "La vallée est très ____ au printemps, couverte d'herbe et de fleurs.",
+        "options": [
+          "verdoyante",
+          "aride",
+          "sèche",
+          "stérile"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "verdoyant = سرسبز"
+      },
+      {
+        "type": "mcq",
+        "question": "La jungle amazonienne est une végétation ____ et impénétrable.",
+        "options": [
+          "luxuriante",
+          "aride",
+          "sèche",
+          "stérile"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "luxuriant = انبوه و سرسبز"
+      },
+      {
+        "type": "mcq",
+        "question": "Le train traverse le ____ au-dessus de la vallée profonde.",
+        "options": [
+          "viaduc",
+          "sentier",
+          "ruisseau",
+          "arbre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "viaduc = پل بزرگ"
+      },
+      {
+        "type": "mcq",
+        "question": "Ce ____ est entré en éruption l'année dernière, couvrant la région de cendres.",
+        "options": [
+          "volcan",
+          "château",
+          "village",
+          "lac"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "volcan = آتشفشان"
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ méditerranéen attire de nombreux touristes en été.",
+        "options": [
+          "littoral",
+          "sommet",
+          "désert",
+          "volcan"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "littoral = ساحل"
+      },
+      {
+        "type": "mcq",
+        "question": "Nous nous sommes perdus dans la ____ en cherchant des champignons.",
+        "options": [
+          "forêt",
+          "autoroute",
+          "aéroport",
+          "centre commercial"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "forêt = جنگل"
+      },
+      {
+        "type": "mcq",
+        "question": "Il préfère vivre à la ____ plutôt qu'en ville pour profiter du calme.",
+        "options": [
+          "campagne",
+          "métropole",
+          "centre-ville",
+          "usine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "campagne = حومه، روستا"
+      },
+      {
+        "type": "mcq",
+        "question": "La pollution ____ est un problème majeur dans les grandes métropoles.",
+        "options": [
+          "urbaine",
+          "naturelle",
+          "calme",
+          "paisible"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "urbain = شهری"
+      },
+      {
+        "type": "mcq",
+        "question": "Ils habitent dans la ____ parisienne pour éviter le bruit du centre.",
+        "options": [
+          "banlieue",
+          "montagne",
+          "forêt",
+          "désert"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "banlieue = حومه شهر"
+      },
+      {
+        "type": "mcq",
+        "question": "Les animaux sauvages défendent farouchement leur ____ contre les intrus.",
+        "options": [
+          "territoire",
+          "supermarché",
+          "aéroport",
+          "désert"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "territoire = قلمرو"
+      },
+      {
+        "type": "binary",
+        "question": "L'habitat naturel désigne l'environnement dans lequel une espèce vit et se développe normalement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - habitat = زیستگاه"
+      },
+      {
+        "type": "binary",
+        "question": "Un paysage urbain est caractérisé par des étendues vastes de forêts et de champs agricoles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - paysage urbain مربوط به شهر است، نه جنگل و مزرعه."
+      },
+      {
+        "type": "binary",
+        "question": "Une spécialité régionale est un produit ou un plat typique d'une zone géographique spécifique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - régional = منطقه‌ای، محلی"
+      },
+      {
+        "type": "binary",
+        "question": "La région désigne une vaste zone géographique sans aucune caractéristique commune.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - région معمولاً دارای ویژگی‌های جغرافیایی، فرهنگی یا اداری مشترک است."
+      }
+    ]
+  }
+}
