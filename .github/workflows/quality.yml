@@ -1,0 +1,179 @@
+name: Code quality
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    name: Quality report
+    runs-on: ubuntu-latest
+
+    steps:
+      # ------------------------------------------------------------
+      # Setup
+      # ------------------------------------------------------------
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Prepare reports directory
+        run: mkdir -p reports
+
+      # ------------------------------------------------------------
+      # Tests
+      # ------------------------------------------------------------
+
+      - name: Data consistency tests
+        id: tests
+        shell: bash
+        run: |
+          set +e
+
+          npm test > reports/tests.txt 2>&1
+          STATUS=$?
+
+          echo "status=$STATUS" >> "$GITHUB_OUTPUT"
+
+          exit 0
+
+      # ------------------------------------------------------------
+      # TypeScript checkJs
+      # ------------------------------------------------------------
+
+      - name: JavaScript typecheck
+        id: typecheck
+        shell: bash
+        run: |
+          set +e
+
+          npm run typecheck > reports/typecheck.txt 2>&1
+          STATUS=$?
+
+          echo "status=$STATUS" >> "$GITHUB_OUTPUT"
+
+          exit 0
+
+      # ------------------------------------------------------------
+      # Knip
+      # ------------------------------------------------------------
+
+      - name: Dead code analysis
+        id: knip
+        shell: bash
+        run: |
+          set +e
+
+          npm run knip > reports/knip.txt 2>&1
+          STATUS=$?
+
+          echo "status=$STATUS" >> "$GITHUB_OUTPUT"
+
+          exit 0
+
+      # ------------------------------------------------------------
+      # Duplication
+      # ------------------------------------------------------------
+
+      - name: Duplication analysis
+        id: duplication
+        shell: bash
+        run: |
+          set +e
+
+          npm run duplication > reports/duplication.txt 2>&1
+          STATUS=$?
+
+          echo "status=$STATUS" >> "$GITHUB_OUTPUT"
+
+          exit 0
+
+      # ------------------------------------------------------------
+      # GitHub Summary
+      # ------------------------------------------------------------
+
+      - name: Build quality summary
+        shell: bash
+        env:
+          TEST_STATUS: ${{ steps.tests.outputs.status }}
+          TYPECHECK_STATUS: ${{ steps.typecheck.outputs.status }}
+          KNIP_STATUS: ${{ steps.knip.outputs.status }}
+          DUPLICATION_STATUS: ${{ steps.duplication.outputs.status }}
+        run: |
+          status_label() {
+            if [ "$1" = "0" ]; then
+              echo "✅ OK"
+            else
+              echo "⚠️ À corriger"
+            fi
+          }
+
+          {
+            echo "# Code quality report"
+            echo
+            echo "Cette CI est actuellement informative et non bloquante."
+            echo
+            echo "| Analyse | Résultat |"
+            echo "| --- | --- |"
+            echo "| Data consistency | $(status_label "$TEST_STATUS") |"
+            echo "| JavaScript typecheck | $(status_label "$TYPECHECK_STATUS") |"
+            echo "| Dead code / Knip | $(status_label "$KNIP_STATUS") |"
+            echo "| Duplication | $(status_label "$DUPLICATION_STATUS") |"
+            echo
+
+            echo "## Data consistency"
+            echo
+            echo '```text'
+            sed -n '1,200p' reports/tests.txt
+            echo '```'
+            echo
+
+            echo "## JavaScript typecheck"
+            echo
+            echo '```text'
+            sed -n '1,250p' reports/typecheck.txt
+            echo '```'
+            echo
+
+            echo "## Knip"
+            echo
+            echo '```text'
+            sed -n '1,250p' reports/knip.txt
+            echo '```'
+            echo
+
+            echo "## Duplication"
+            echo
+            echo '```text'
+            sed -n '1,250p' reports/duplication.txt
+            echo '```'
+            echo
+
+            echo "---"
+            echo
+            echo "Les rapports complets sont disponibles dans l'artifact \`quality-reports\`."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # ------------------------------------------------------------
+      # Full reports
+      # ------------------------------------------------------------
+
+      - name: Upload full quality reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: quality-reports
+          path: reports/
+          retention-days: 14
