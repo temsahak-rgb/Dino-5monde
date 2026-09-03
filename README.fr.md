@@ -1,10 +1,10 @@
 # 🦖 Français avec Dino
 
-[← README principal](README.md) · **🇫🇷 Français** · [🇬🇧 English](README.en.md)
+[← README principal](README.md) · **🇫🇷 Français** · [🇬🇧 English](README.en.md) · [🇮🇷 فارسی](README.fa.md)
 
 > Une application web d'apprentissage du français, pensée pour faire progresser l'apprenant par des **cours courts, du vocabulaire, des exercices et des situations concrètes**.
 
-**Navigation :** [Le projet](#le-projet) · [Fonctionnalités](#fonctionnalités) · [Installation](#installation) · [Architecture](#architecture) · [Contribuer](#contribuer)
+**Navigation :** [Le projet](#le-projet) · [MVP actuel](#mvp-actuel) · [Fonctionnalités](#fonctionnalités) · [i18n](#internationalisation-i18n) · [Architecture](#architecture) · [Tests](#tests-et-qualité) · [Installation](#installation) · [Contribuer](#contribuer)
 
 ---
 
@@ -14,9 +14,9 @@
 
 **Français avec Dino est une plateforme web qui organise l'apprentissage du français en parcours progressifs plutôt qu'en une simple collection de fiches.**
 
-L'utilisateur peut travailler la grammaire, le vocabulaire ou des situations pratiques comme l'aéroport, l'hôtel, le restaurant ou les urgences.
+L'utilisateur peut travailler la grammaire, le vocabulaire, des exercices et des situations pratiques comme l'aéroport, l'hôtel, le restaurant ou les urgences.
 
-Le projet est particulièrement adapté aux **apprenants persanophones** : l'interface et de nombreux contenus peuvent utiliser le persan comme langue d'accompagnement, tout en gardant le français comme langue étudiée.
+Le projet est particulièrement adapté aux **apprenants persanophones** : le français reste la langue étudiée, tandis que l'interface et de nombreux contenus pédagogiques peuvent utiliser le persan comme langue d'accompagnement.
 
 ### Pour quelqu'un qui ne connaît pas les applications d'apprentissage
 
@@ -25,88 +25,62 @@ On peut voir Dino comme la combinaison de :
 - un manuel de français ;
 - un cahier d'exercices ;
 - des cartes de vocabulaire ;
-- un parcours organisé par niveau ;
-- un suivi de progression.
+- plusieurs parcours pédagogiques ;
+- un test de placement ;
+- un suivi de progression local.
 
-Le principe est simple :
+Le parcours utilisateur général est simple :
 
 ```text
-Je choisis comment je veux apprendre
+Je choisis la langue de l'interface
+            ↓
+Je choisis un parcours
             ↓
 Je définis ou estime mon niveau
             ↓
-Je choisis un thème
+Je choisis un thème ou une leçon
             ↓
-Je consulte une leçon
+Je consulte le contenu
             ↓
 Je pratique
             ↓
 Dino mémorise ma progression
 ```
 
-### À qui s'adresse Dino ?
+Les contenus utilisent les niveaux du **CECRL** : A1, A2, B1, B2, C1 et, selon les modules, C2.
 
-Dino vise plusieurs usages :
-
-- **débuter en français** ;
-- **structurer un apprentissage déjà commencé** ;
-- **réviser du vocabulaire** ;
-- **comprendre la grammaire** ;
-- **préparer un voyage ou une situation réelle** ;
-- apprendre avec une **aide en persan** lorsque cela est utile.
-
-Les contenus utilisent les niveaux du **CECRL** : A1, A2, B1, B2, C1 et, pour certains modules, C2.
-
-> La couverture n'est pas encore identique partout : le vocabulaire possède des données A1 à C2, tandis que la grammaire et le placement sont actuellement principalement organisés jusqu'à C1.
+> La couverture n'est pas uniforme : le vocabulaire possède notamment des données jusqu'à C2, tandis que d'autres parcours sont actuellement davantage concentrés sur les niveaux inférieurs.
 
 ---
 
-## Expérience d'apprentissage
+## MVP actuel
 
-### 1. Choisir la langue d'interface
+Le but du MVP n'est pas encore de fournir toutes les fonctions d'une plateforme éducative complète. Il vise d'abord à disposer d'un **cœur pédagogique réellement utilisable, extensible et testable**.
 
-Au premier lancement, l'application permet de choisir entre :
+| Zone | État actuel |
+|---|---|
+| Onboarding | ✅ Présent |
+| Test de placement | ✅ Présent |
+| Grammaire | ✅ Fonctionnelle |
+| Vocabulaire | ✅ Fonctionnel |
+| Voyage | ✅ Fonctionnel |
+| Exercices / quiz intégrés | ✅ Fonctionnels selon les contenus |
+| Recherche | ✅ Présente |
+| Actualités | ✅ Présentes |
+| Sondages | ✅ Fonction présente |
+| Quotidien | 🚧 Partiellement construit |
+| Jeux | 🚧 Placeholder |
+| Page générale Exercices | 🚧 Placeholder |
+| Profil | 🚧 Placeholder |
+| Compte utilisateur distant | ❌ Non implémenté |
+| Synchronisation multi-appareils | ❌ Non implémentée |
 
-- français ;
-- persan.
+La progression repose aujourd'hui principalement sur `localStorage`.
 
-Le projet gère également l'affichage **RTL** nécessaire au persan.
+Cela garde le MVP simple, mais implique que :
 
-### 2. Choisir un parcours
-
-L'onboarding propose actuellement trois orientations :
-
-- **Français général** ;
-- **Français Voyage** ;
-- **Français Quotidien**.
-
-Le parcours général peut proposer un test de placement. Le niveau peut aussi être choisi manuellement.
-
-### 3. Apprendre par sections
-
-Une leçon peut être divisée en plusieurs parties :
-
-```text
-Leçon
-├── explication
-├── tableau ou exemples
-├── vocabulaire
-├── dialogue
-├── exercice
-└── quiz
-```
-
-Le moteur mémorise les sections terminées et les erreurs lorsque les exercices le permettent.
-
-### 4. Revenir plus tard
-
-La progression est sauvegardée dans le navigateur avec `localStorage`.
-
-Cela permet d'utiliser l'application sans serveur de compte utilisateur, mais il faut connaître la limite :
-
-> **La progression n'est pas encore synchronisée entre plusieurs appareils ou navigateurs.**
-
-Supprimer les données locales du site peut également supprimer cette progression.
+- la progression n'est pas synchronisée entre plusieurs navigateurs ou appareils ;
+- supprimer les données locales du site peut supprimer la progression.
 
 ---
 
@@ -114,7 +88,7 @@ Supprimer les données locales du site peut également supprimer cette progressi
 
 ### 📚 Grammaire
 
-Le module Grammaire propose des catalogues par niveau et de vraies leçons structurées.
+Le module Grammaire propose des catalogues par niveau et des leçons structurées.
 
 Une leçon peut contenir :
 
@@ -126,22 +100,22 @@ Une leçon peut contenir :
 - une progression par section ;
 - un favori / marque-page.
 
-Les données de grammaire sont actuellement organisées principalement de **A1 à C1**.
+La logique de chargement et de progression est séparée de la présentation HTML.
 
 ### 🧠 Vocabulaire
 
-Le module Vocabulaire possède une quantité importante de contenus organisés par niveau et par thème.
+Le module Vocabulaire organise une quantité importante de contenu par niveau et par thème.
 
-Les activités prévues par le moteur incluent notamment :
+Les activités incluent notamment :
 
-- **flashcards** ;
+- flashcards ;
 - histoires simples ;
 - histoires plus avancées ;
 - quiz ;
 - mémorisation des mots difficiles ;
 - révision spécifique des mots faibles.
 
-Les données de vocabulaire couvrent actuellement **A1 à C2**, avec une couverture très variable selon le niveau et le thème.
+Les données couvrent actuellement plusieurs niveaux jusqu'à **C2**, avec une couverture très variable selon les thèmes.
 
 ### ✈️ Voyage
 
@@ -166,38 +140,379 @@ Parmi les thèmes présents :
 - santé et urgences ;
 - départ et au revoir.
 
-Les leçons peuvent associer :
+Les données peuvent associer :
 
 ```text
-français + persan + aide phonétique + contexte + exercice
+français
++
+persan
++
+aide phonétique
++
+contexte
++
+exercice
 ```
 
-L'objectif est que l'apprenant puisse **réutiliser immédiatement une phrase dans une situation réelle**.
+### 🔎 Recherche, actualités et sondages
 
-### 🔎 Recherche, actualités et contenus complémentaires
+Le dépôt contient également des fonctionnalités de recherche, d'actualités et de sondages. Elles complètent le cœur pédagogique mais ne constituent pas actuellement les parcours principaux du MVP.
 
-Le dépôt contient également des fonctionnalités de recherche, d'actualités et de sondages. Elles complètent le cœur pédagogique sans constituer actuellement les parcours principaux.
+---
 
-### 🚧 Parties encore en construction
+## Internationalisation (i18n)
 
-L'interface contient déjà des entrées pour plusieurs zones qui ne sont pas encore finalisées :
+Dino possède désormais une couche d'internationalisation dédiée.
 
-| Zone | État actuel |
-|---|---|
-| Grammaire | ✅ Fonctionnelle |
-| Vocabulaire | ✅ Fonctionnel |
-| Voyage | ✅ Fonctionnel |
-| Exercices intégrés aux leçons | ✅ Fonctionnels selon le contenu |
-| Recherche | ✅ Présente |
-| Actualités | ✅ Présentes |
-| Quotidien | 🚧 Écran principal encore en construction |
-| Jeux | 🚧 Placeholder |
-| Page générale Exercices | 🚧 Placeholder |
-| Profil | 🚧 Placeholder |
-| Compte utilisateur distant | ❌ Non implémenté |
-| Synchronisation multi-appareils | ❌ Non implémentée |
+```text
+src/i18n/
+├── fr.ts
+├── fa.ts
+└── i18n.ts
+```
 
-Dino doit donc être considéré comme **une base pédagogique déjà utilisable, mais encore en développement**.
+### Deux langues d'interface
+
+Les langues actuellement supportées sont :
+
+```text
+fr → français
+fa → persan
+```
+
+Le choix est enregistré dans :
+
+```text
+localStorage["language"]
+```
+
+Le runtime synchronise également :
+
+- `document.documentElement.lang` ;
+- `document.documentElement.dir` ;
+- le titre de la page.
+
+Le français utilise `ltr`, le persan utilise `rtl`.
+
+### `fr.ts` : catalogue de référence
+
+Le catalogue français définit les clés canoniques de l'interface.
+
+Conceptuellement :
+
+```ts
+const frMessages = {
+    "common.back": "Retour",
+    "common.continue": "Continuer",
+    "navbar.grammar": "Grammaire"
+} as const;
+
+type TranslationKey = keyof typeof frMessages;
+```
+
+Le type `TranslationKey` est donc dérivé du catalogue de référence.
+
+### `fa.ts` : même contrat, autre langue
+
+Le catalogue persan doit implémenter les mêmes clés :
+
+```ts
+const faMessages: Record<TranslationKey, string> = {
+    "common.back": "بازگشت",
+    "common.continue": "ادامه",
+    "navbar.grammar": "دستور زبان"
+};
+```
+
+Une clé absente ou incorrecte devient ainsi détectable par TypeScript.
+
+### `i18n.ts` : runtime
+
+Le runtime fournit notamment :
+
+```text
+t(...)
+getI18nLanguage()
+setI18nLanguage(...)
+applyDocumentLanguage(...)
+localizedValue(...)
+localizedTextClass()
+```
+
+Pour les textes d'interface :
+
+```ts
+t("common.back")
+```
+
+Pour un contenu pédagogique bilingue déjà stocké dans un JSON :
+
+```ts
+localizedValue(
+    item.title,
+    item.title_fa
+)
+```
+
+### Interface et contenu pédagogique sont deux choses différentes
+
+La règle importante est :
+
+```text
+src/i18n/*.ts
+    =
+textes de l'interface
+
+data/**/*.json
+    =
+contenu pédagogique
+```
+
+Il ne faut donc pas recopier toutes les leçons dans les catalogues i18n.
+
+### Pas de branchement de langue dans le métier
+
+Les contrôleurs et moteurs ne doivent pas recréer des conditions comme :
+
+```ts
+if (lang === "fa") {
+    ...
+}
+```
+
+Les textes d'interface passent par `t()` et les valeurs pédagogiques bilingues passent par `localizedValue()`.
+
+Cette règle est protégée par les tests d'architecture.
+
+---
+
+## Architecture
+
+### Structure principale
+
+```text
+Dino-5monde/
+├── app.ts
+├── index.html
+├── package.json
+├── tsconfig.json
+│
+├── src/
+│   ├── core/
+│   │   ├── exerciseEngine.ts
+│   │   ├── lessonEngine.ts
+│   │   ├── pathEngine.ts
+│   │   ├── placementEngine.ts
+│   │   ├── progressEngine.ts
+│   │   └── router.ts
+│   │
+│   ├── features/
+│   │   ├── grammar/
+│   │   ├── news/
+│   │   ├── onboarding/
+│   │   ├── polls/
+│   │   ├── search/
+│   │   ├── travel/
+│   │   └── vocabulary/
+│   │
+│   ├── i18n/
+│   │   ├── fr.ts
+│   │   ├── fa.ts
+│   │   └── i18n.ts
+│   │
+│   ├── pages/
+│   ├── ui/
+│   │   ├── ui.ts
+│   │   └── views/
+│   ├── styles/
+│   └── types/
+│
+├── data/
+├── tests/
+│   ├── architecture/
+│   └── data/
+├── tools/
+└── .github/workflows/
+```
+
+### Responsabilités
+
+Le MVP converge vers les responsabilités suivantes :
+
+```text
+app.ts / router.ts
+    → bootstrap et navigation
+
+pages/ + features/* controllers
+    → orchestration, événements, état d'écran
+
+core/*Engine.ts + feature engines
+    → logique métier et état réutilisable
+
+ui/views/*.ts
+    → HTML et présentation
+
+i18n/*.ts
+    → textes d'interface et direction LTR/RTL
+
+data/**/*.json
+    → contenu pédagogique
+
+types/
+    → contrats TypeScript globaux
+```
+
+### Contrôleurs / pages
+
+Ils peuvent :
+
+- recevoir les interactions utilisateur ;
+- appeler les moteurs ;
+- coordonner les états transitoires ;
+- appeler les Views ;
+- manipuler un DOM déjà rendu lorsque nécessaire.
+
+Ils ne doivent pas recommencer à contenir les gros templates HTML des écrans.
+
+### Engines
+
+Ils portent la logique réutilisable :
+
+- chargement des données ;
+- calculs ;
+- sélection de questions ;
+- validation ;
+- progression ;
+- placement ;
+- état métier.
+
+Ils ne doivent pas produire les templates de l'interface.
+
+### Views
+
+Les Views de `src/ui/views/` possèdent la présentation :
+
+- structure HTML ;
+- labels ;
+- layout spécifique à l'écran ;
+- attributs `data-*` utiles aux contrôleurs ;
+- appels à l'i18n.
+
+### `data/`
+
+Principe important :
+
+```text
+src/  = comment l'application fonctionne
+data/ = ce que l'application enseigne
+```
+
+Les leçons et packs sont majoritairement décrits en JSON afin que l'ajout de contenu pédagogique n'oblige pas à réécrire le moteur.
+
+### Scripts classiques : état transitoire assumé
+
+Dino n'utilise actuellement ni React ni Vue.
+
+Le TypeScript applicatif est encore compilé en **scripts navigateur classiques** avec `module: none`. `index.html` impose donc un ordre de chargement explicite.
+
+> L'ordre des scripts est aujourd'hui une dépendance réelle de l'application.
+
+La prochaine étape structurelle prévue est la migration vers des `import` / `export` explicites.
+
+### Graphe de dépendances
+
+Le graphe de dépendances automatique est volontairement **reporté après la migration vers les imports explicites**.
+
+Pourquoi ?
+
+Avant cette migration, un outil devrait déduire les dépendances à partir des symboles globaux et de l'ordre des scripts. Après la migration, il pourra lire directement les imports TypeScript et produire un graphe fiable.
+
+L'objectif est ensuite de pouvoir générer automatiquement une documentation du type :
+
+```text
+page / controller
+        ↓
+engine(s)
+        ↓
+view
+        ↓
+DOM
+```
+
+avec les vraies dépendances du dépôt, et non un schéma maintenu manuellement.
+
+---
+
+## Tests et qualité
+
+### Commandes
+
+```bash
+npm test
+npm run test:data
+npm run test:architecture
+npm run typecheck
+npm run build
+npm run knip
+npm run duplication
+```
+
+`npm test` prend automatiquement tous les fichiers :
+
+```text
+tests/**/*.test.ts
+```
+
+Il n'est donc pas nécessaire de modifier `package.json` lorsqu'un nouveau test est ajouté.
+
+### Tests de données
+
+Les tests sous :
+
+```text
+tests/data/
+```
+
+protègent la cohérence des données pédagogiques.
+
+Le dépôt possède notamment un contrôle des identifiants du parcours Voyage.
+
+### Tests d'architecture
+
+Les tests sous :
+
+```text
+tests/architecture/
+```
+
+servent à empêcher les régressions structurelles.
+
+Le test `ui-boundaries.test.ts` protège notamment contre :
+
+- le retour de gros templates HTML dans les contrôleurs, pages ou moteurs ;
+- les handlers DOM inline comme `onclick="..."` ;
+- le retour des branchements directs de langue dans le métier ;
+- la disparition des Views migrées ;
+- le retour de l'ancien renderer Travel ;
+- la casse de l'ordre des scripts classiques dans `index.html`.
+
+Autrement dit, la séparation actuelle n'est plus seulement une convention écrite : elle possède un garde-fou exécutable.
+
+### CI
+
+Le workflow GitHub Actions exécute :
+
+```text
+tests             → bloquant pour le job
+TypeScript        → bloquant pour le job
+production build  → bloquant pour le job
+Knip              → informatif
+jscpd             → informatif
+```
+
+Cela signifie qu'une régression de compilation, de test ou de build rend le job CI rouge.
+
+La configuration des règles de protection GitHub elles-mêmes reste indépendante de ce code.
 
 ---
 
@@ -208,7 +523,7 @@ Dino doit donc être considéré comme **une base pédagogique déjà utilisable
 Le projet demande :
 
 - Git ;
-- **Node.js 22 ou supérieur** ;
+- **Node.js 22.6 ou supérieur** ;
 - npm.
 
 Vérification :
@@ -233,31 +548,39 @@ git checkout increment
 npm ci
 ```
 
+### Vérifier le projet
+
+```bash
+npm test
+npm run typecheck
+npm run build
+```
+
 ### Construire l'application
 
 ```bash
 npm run build
 ```
 
-Le build TypeScript est généré dans :
+Le build est généré dans :
 
 ```text
 dist/
 ```
 
-Le script de build copie également dans `dist/` les éléments statiques nécessaires, notamment `index.html`, les données pédagogiques et les styles.
+Le script de build copie également les ressources statiques nécessaires, notamment `index.html`, les données pédagogiques et les styles.
 
 ### Lancer localement
 
-Dino charge ses fichiers JSON avec `fetch()`. Il vaut donc mieux servir `dist/` avec un serveur HTTP plutôt que d'ouvrir directement `index.html` en `file://`.
+Dino charge ses fichiers JSON avec `fetch()`. Il faut donc servir `dist/` avec HTTP plutôt que d'ouvrir directement `index.html` en `file://`.
 
-Avec Python, par exemple :
+Exemple :
 
 ```bash
 python -m http.server 8080 --directory dist
 ```
 
-Puis ouvrir :
+Puis :
 
 ```text
 http://localhost:8080
@@ -265,168 +588,37 @@ http://localhost:8080
 
 ---
 
-## Commandes utiles
-
-```bash
-npm run build
-npm run typecheck
-npm test
-npm run knip
-npm run duplication
-```
-
-| Commande | Rôle |
-|---|---|
-| `npm run build` | Compile TypeScript et prépare `dist/` |
-| `npm run typecheck` | Vérifie les types TypeScript sans générer de fichiers |
-| `npm test` | Lance les tests actuels |
-| `npm run knip` | Analyse le code potentiellement inutilisé |
-| `npm run duplication` | Recherche la duplication avec jscpd |
-
-La suite de tests est encore limitée ; elle vérifie notamment actuellement la cohérence des identifiants du parcours Voyage.
-
----
-
-## Architecture
-
-### Vue rapide
-
-```text
-Dino-5monde/
-├── app.ts
-├── index.html
-├── package.json
-├── tsconfig.json
-│
-├── src/
-│   ├── core/
-│   ├── features/
-│   │   ├── grammar/
-│   │   ├── news/
-│   │   ├── onboarding/
-│   │   ├── polls/
-│   │   ├── search/
-│   │   ├── travel/
-│   │   └── vocabulary/
-│   ├── pages/
-│   ├── styles/
-│   ├── types/
-│   └── ui/
-│
-├── data/
-│   ├── daily/
-│   ├── exercises/
-│   ├── lessons/
-│   ├── news/
-│   ├── polls/
-│   ├── travel/
-│   └── vocabulary/
-│
-├── tests/
-├── tools/
-└── .github/workflows/
-```
-
-### `src/` : comment Dino fonctionne
-
-`src/` contient le comportement de l'application.
-
-Les responsabilités sont progressivement séparées :
-
-- `core/` : moteurs partagés, routing, progression, placement, exercices ;
-- `features/` : fonctionnalités pédagogiques ;
-- `pages/` : écrans généraux ;
-- `ui/` : helpers et chaînes d'interface ;
-- `types/` : types TypeScript globaux ;
-- `styles/` : CSS.
-
-### `data/` : ce que Dino enseigne
-
-Le principe architectural important est :
-
-```text
-src/  = le moteur
-
-data/ = le contenu pédagogique
-```
-
-Les leçons, listes de vocabulaire et parcours Voyage sont majoritairement décrits en JSON.
-
-Cela permet d'ajouter du contenu sans devoir réécrire toute l'application.
-
-### Une architecture TypeScript volontairement simple
-
-Dino n'utilise actuellement ni React ni Vue.
-
-Le TypeScript est compilé en **scripts navigateur classiques** (`module: none`). `index.html` charge ensuite les fichiers JavaScript dans un ordre explicite.
-
-Conséquence importante pour un développeur :
-
-> **L'ordre des scripts dans `index.html` compte**, car plusieurs fonctions sont partagées globalement entre les fichiers.
-
-La migration vers TypeScript améliore la sécurité des types, mais l'application conserve pour le moment cette architecture globale afin de rester compatible avec son fonctionnement historique.
-
-### Pas de backend actuellement
-
-Il n'y a pas aujourd'hui de backend applicatif chargé de gérer :
-
-- les comptes ;
-- l'authentification ;
-- la progression distante ;
-- la synchronisation cloud.
-
-La plupart de l'état utilisateur est conservée localement dans le navigateur.
-
----
-
 ## Ajouter du contenu pédagogique
 
-L'objectif est de garder les contenus aussi indépendants que possible du moteur.
+Les contenus doivent rester aussi indépendants que possible du code.
 
 Exemples :
 
 ```text
-data/lessons/       → cours généraux / grammaire
+data/lessons/       → leçons générales / grammaire
 data/vocabulary/    → packs de vocabulaire
 data/travel/        → parcours Voyage
 ```
 
-Pour Voyage, l'index se trouve dans :
+Pour Voyage :
 
 ```text
 data/travel/lessons.json
 ```
 
-et les leçons détaillées sont séparées dans :
+contient l'index, tandis que les fichiers détaillés se trouvent dans :
 
 ```text
 data/travel/lessons/
 ```
 
-Ce découpage évite de concentrer des milliers de lignes de contenu dans un seul fichier.
+Avant de contribuer du contenu, vérifier :
 
-Lorsqu'un nouveau contenu est ajouté, il faut surtout vérifier :
-
-1. que son identifiant est unique ;
-2. que son format correspond au type attendu par le moteur ;
-3. que les liens entre index et fichier détaillé sont cohérents ;
-4. que le build et les tests passent.
-
----
-
-## Qualité du code
-
-Le dépôt contient un workflow GitHub Actions de contrôle qualité.
-
-Il exécute notamment :
-
-- les tests de cohérence des données ;
-- le typecheck TypeScript ;
-- le build de production ;
-- Knip ;
-- jscpd pour la duplication.
-
-Le workflow actuel produit surtout un **rapport informatif** : après l'installation des dépendances, plusieurs contrôles ne bloquent volontairement pas immédiatement le job afin de rendre la dette visible avant de rendre les règles plus strictes.
+1. que l'identifiant est stable et unique ;
+2. que la structure correspond au contrat attendu ;
+3. que l'index et les fichiers détaillés restent cohérents ;
+4. que les traductions pédagogiques nécessaires sont présentes ;
+5. que `npm test` passe.
 
 ---
 
@@ -437,8 +629,8 @@ Le workflow actuel produit surtout un **rapport informatif** : après l'installa
 Au minimum :
 
 ```bash
-npm run typecheck
 npm test
+npm run typecheck
 npm run build
 ```
 
@@ -449,48 +641,56 @@ npm run knip
 npm run duplication
 ```
 
-### Principes recommandés
+### Principes
 
 - faire des modifications ciblées ;
-- éviter de recréer un moteur lorsqu'un moteur commun existe déjà ;
-- préférer plusieurs fichiers cohérents à un fichier monolithique ;
+- ne pas recréer un moteur lorsqu'un moteur commun existe ;
+- garder le HTML structurel dans `src/ui/views/` ;
+- utiliser `t()` pour les textes d'interface ;
+- utiliser `localizedValue()` pour les données pédagogiques bilingues ;
 - garder les données pédagogiques dans `data/` autant que possible ;
-- conserver des identifiants stables et uniques ;
-- tester les parcours impactés dans le navigateur.
+- éviter les fichiers monolithiques ;
+- préserver les identifiants stables ;
+- ajouter un test lorsqu'un invariant mérite d'être protégé.
 
-### Pourquoi cette discipline ?
+### Direction architecturale
 
-Dino contient déjà beaucoup plus de **données pédagogiques** que de code applicatif. Le risque principal à long terme n'est donc pas seulement d'ajouter des fonctionnalités : c'est de laisser apparaître plusieurs implémentations concurrentes du même comportement.
-
-L'objectif de l'architecture actuelle est de converger progressivement vers :
+L'objectif est de converger vers :
 
 ```text
-un moteur commun
+contrôleurs simples
         +
-plusieurs types de contenus
+moteurs réutilisables
         +
-plusieurs parcours pédagogiques
+views dédiées
+        +
+contenus JSON
+        +
+i18n centralisé
+        +
+dépendances explicites
 ```
 
-plutôt que vers une collection de pages indépendantes qui réimplémentent chacune leurs propres règles.
+La migration future vers les imports explicites permettra ensuite de générer automatiquement le graphe d'architecture et de détecter plus précisément les dépendances indésirables.
 
 ---
 
-## Direction du projet
+## Direction produit
 
-Les prochaines évolutions naturelles sont notamment :
+Les prochaines évolutions naturelles comprennent notamment :
 
 - terminer le parcours Quotidien ;
 - développer les Jeux ;
-- construire la page générale Exercices ;
+- compléter la page générale Exercices ;
 - construire le Profil ;
-- renforcer les exercices et les tests ;
-- exploiter davantage les erreurs de l'apprenant pour recommander des révisions ;
-- améliorer la cohérence entre les niveaux ;
+- renforcer les exercices ;
+- ajouter davantage de tests de données ;
+- améliorer les recommandations de révision à partir des erreurs ;
+- harmoniser la couverture des niveaux CECRL ;
 - éventuellement ajouter plus tard des comptes et une synchronisation multi-appareils.
 
 Ces éléments décrivent une **direction**, pas des fonctionnalités déjà livrées.
 
 ---
 
-[← README principal](README.md) · [🇬🇧 English](README.en.md)
+[← README principal](README.md) · [🇬🇧 English](README.en.md) · [🇮🇷 فارسی](README.fa.md)
