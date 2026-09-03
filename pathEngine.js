@@ -30,8 +30,7 @@ async function loadPathContent(pathId) {
 // ۳. 🆕 بارگذاری محتوای کامل یک درس خاص (مثلاً DL-001.json)
 async function loadSpecificLesson(pathId, lessonId) {
     try {
-        // مسیر فایل به این شکل است: data/daily/lessons/DL-001/DL-001.json
-        const response = await fetch(`./data/${pathId}/lessons/${lessonId}/${lessonId}.json`);
+        const response = await fetch(`./data/${pathId}/lessons/${lessonId}.json`);
         const lessonData = await response.json();
         console.log(`✅ محتوای درس ${lessonId} با موفقیت بارگذاری شد`);
         return lessonData;
