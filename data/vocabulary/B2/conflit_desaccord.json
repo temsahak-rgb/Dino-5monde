@@ -1,0 +1,526 @@
+{
+  "id": "conflit_desaccord",
+  "level": "B2",
+  "theme": "Le conflit et le désaccord",
+  "theme_fa": "تعارض و اختلاف",
+  "icon": "⚔️",
+  "inspiration": "Le Comte de Monte-Cristo",
+  "words": [
+    {
+      "fr": "le conflit (m)",
+      "fa": "تعارض",
+      "emoji": "⚔️",
+      "difficulty": 3,
+      "ex": "Le conflit entre les deux départements est évident.",
+      "ex_fa": "تعارض بین دو بخش واضح است."
+    },
+    {
+      "fr": "conflictuel/le",
+      "fa": "تعارض‌آمیز",
+      "emoji": "🌪️",
+      "difficulty": 4,
+      "ex": "Leur relation est devenue très conflictuelle.",
+      "ex_fa": "رابطه آن‌ها بسیار تعارض‌آمیز شده است."
+    },
+    {
+      "fr": "la dispute (f)",
+      "fa": "دعوا",
+      "emoji": "🗣️",
+      "difficulty": 3,
+      "ex": "Une dispute a éclaté pendant la réunion.",
+      "ex_fa": "یک دعوا در طول جلسه رخ داد."
+    },
+    {
+      "fr": "se disputer",
+      "fa": "دعوا کردن",
+      "emoji": "🤬",
+      "difficulty": 3,
+      "ex": "Ils ont tendance à se disputer pour des détails.",
+      "ex_fa": "آن‌ها تمایل دارند بر سر جزئیات دعوا کنند."
+    },
+    {
+      "fr": "la querelle (f)",
+      "fa": "مشاجره",
+      "emoji": "🥊",
+      "difficulty": 5,
+      "ex": "Cette querelle dure depuis des années.",
+      "ex_fa": "این مشاجره سال‌هاست که ادامه دارد."
+    },
+    {
+      "fr": "se quereller",
+      "fa": "مشاجره کردن",
+      "emoji": "⚡",
+      "difficulty": 5,
+      "ex": "Les voisins se querellent souvent.",
+      "ex_fa": "همسایه‌ها اغلب مشاجره می‌کنند."
+    },
+    {
+      "fr": "le désaccord (m)",
+      "fa": "اختلاف نظر",
+      "emoji": "🤷",
+      "difficulty": 4,
+      "ex": "Il y a un profond désaccord sur cette question.",
+      "ex_fa": "اختلاف نظر عمیقی در این مورد وجود دارد."
+    },
+    {
+      "fr": "être en désaccord",
+      "fa": "اختلاف داشتن",
+      "emoji": "🚫",
+      "difficulty": 4,
+      "ex": "Nous sommes en désaccord sur la stratégie.",
+      "ex_fa": "ما در مورد استراتژی اختلاف نظر داریم."
+    },
+    {
+      "fr": "l'opposition (f)",
+      "fa": "مخالفت",
+      "emoji": "🛑",
+      "difficulty": 4,
+      "ex": "L'opposition au projet est forte.",
+      "ex_fa": "مخالفت با پروژه قوی است."
+    },
+    {
+      "fr": "s'opposer",
+      "fa": "مخالفت کردن",
+      "emoji": "✋",
+      "difficulty": 4,
+      "ex": "Je dois m'opposer à cette décision injuste.",
+      "ex_fa": "من باید با این تصمیم ناعادلانه مخالفت کنم."
+    },
+    {
+      "fr": "la contradiction (f)",
+      "fa": "تضاد",
+      "emoji": "🔄",
+      "difficulty": 5,
+      "ex": "Il y a une contradiction dans son témoignage.",
+      "ex_fa": "تضادی در شهادت او وجود دارد."
+    },
+    {
+      "fr": "contradictoire",
+      "fa": "متناقض",
+      "emoji": "🤯",
+      "difficulty": 5,
+      "ex": "Ses propos sont totalement contradictoires.",
+      "ex_fa": "اظهارات او کاملاً متناقض است."
+    },
+    {
+      "fr": "la friction (f)",
+      "fa": "اصطکاک",
+      "emoji": "🔥",
+      "difficulty": 5,
+      "ex": "Des frictions sont apparues au sein de l'équipe.",
+      "ex_fa": "اصطکاک‌هایی درون تیم پدیدار شده است."
+    },
+    {
+      "fr": "la tension (f)",
+      "fa": "تنش",
+      "emoji": "⚡",
+      "difficulty": 4,
+      "ex": "La tension monte avant la négociation.",
+      "ex_fa": "تنش قبل از مذاکره بالا می‌رود."
+    },
+    {
+      "fr": "tendu(e)",
+      "fa": "پرتنش",
+      "emoji": "😬",
+      "difficulty": 3,
+      "ex": "L'atmosphère est très tendue ce matin.",
+      "ex_fa": "جوّ امروز صبح بسیار پرتنش است."
+    },
+    {
+      "fr": "la rupture (f)",
+      "fa": "گسست",
+      "emoji": "💔",
+      "difficulty": 4,
+      "ex": "Cette dispute a mené à la rupture de leur partenariat.",
+      "ex_fa": "این دعوا منجر به گسست شراکت آن‌ها شد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un malentendu au bureau",
+      "title_fa": "یک سوءتفاهم در دفتر",
+      "text": "Un {{BLANK_1}} a éclaté hier au bureau. Une simple {{BLANK_2}} sur les horaires a créé beaucoup de {{BLANK_3}} dans l'équipe. L'atmosphère est devenue très {{BLANK_4}}. Maintenant, il y a un {{BLANK_5}} majeur entre les managers. Certains employés décident de {{BLANK_6}} ouvertement à ces nouvelles règles.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "conflit",
+          "options": [
+            "conflit",
+            "accord",
+            "paix",
+            "harmonie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "dispute",
+          "options": [
+            "dispute",
+            "célébration",
+            "réunion",
+            "fête"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "tension",
+          "options": [
+            "tension",
+            "détente",
+            "joie",
+            "calme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "tendue",
+          "options": [
+            "tendue",
+            "détendue",
+            "joyeuse",
+            "paisible"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "désaccord",
+          "options": [
+            "désaccord",
+            "accord",
+            "consensus",
+            "union"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "s'opposer",
+          "options": [
+            "s'opposer",
+            "adhérer",
+            "accepter",
+            "approuver"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'ombre de la discorde",
+      "title_fa": "سایه نفاق",
+      "inspiration": "Le Comte de Monte-Cristo",
+      "text": "Dans les salons sombres du château, la relation entre les deux frères était devenue profondément {{BLANK_1}}. Une vieille {{BLANK_2}} d'héritage les divisait depuis l'enfance. Ils ne cessaient de {{BLANK_3}} pour des détails futiles, incapables de trouver un terrain d'entente. Ils étaient constamment {{BLANK_4}} sur l'avenir du domaine. Cette {{BLANK_5}} farouche du cadet irritait l'aîné. Chaque parole de l'un semblait une {{BLANK_6}} des valeurs de l'autre. Leurs discours étaient devenus si {{BLANK_7}} qu'aucune discussion n'était plus possible. Les {{BLANK_8}} silencieuses s'accumulaient jour après jour. Finalement, cette hostilité conduisit à la {{BLANK_9}} définitive de leur lien familial, laissant l'aîné seul pour {{BLANK_10}} à toute tentative de réconciliation.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "conflictuelle",
+          "options": [
+            "conflictuelle",
+            "harmonieuse",
+            "pacifique",
+            "sereine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "querelle",
+          "options": [
+            "querelle",
+            "alliance",
+            "amitié",
+            "paix"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "se quereller",
+          "options": [
+            "se quereller",
+            "s'entendre",
+            "collaborer",
+            "s'aimer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "en désaccord",
+          "options": [
+            "en désaccord",
+            "d'accord",
+            "satisfaits",
+            "heureux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "opposition",
+          "options": [
+            "opposition",
+            "adhésion",
+            "soutien",
+            "approbation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "contradiction",
+          "options": [
+            "contradiction",
+            "confirmation",
+            "validation",
+            "approbation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "contradictoires",
+          "options": [
+            "contradictoires",
+            "cohérents",
+            "logiques",
+            "clairs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "frictions",
+          "options": [
+            "frictions",
+            "harmonies",
+            "accords",
+            "paix"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "rupture",
+          "options": [
+            "rupture",
+            "union",
+            "réconciliation",
+            "fusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "s'opposer",
+          "options": [
+            "s'opposer",
+            "adhérer",
+            "consentir",
+            "obéir"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Conflit et désaccord",
+    "title_fa": "آزمون : تعارض و اختلاف",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le ____ entre les deux pays a duré des décennies.",
+        "options": [
+          "conflit",
+          "accord",
+          "paix",
+          "harmonie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "conflit = تعارض"
+      },
+      {
+        "type": "mcq",
+        "question": "Leur relation est devenue très ____ ces derniers mois.",
+        "options": [
+          "conflictuelle",
+          "harmonieuse",
+          "pacifique",
+          "sereine"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "conflictuelle = تعارض‌آمیز"
+      },
+      {
+        "type": "mcq",
+        "question": "Une ____ a éclaté pendant la réunion de famille.",
+        "options": [
+          "dispute",
+          "célébration",
+          "réunion",
+          "fête"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "dispute = دعوا"
+      },
+      {
+        "type": "mcq",
+        "question": "Ils ont tendance à ____ pour des détails sans importance.",
+        "options": [
+          "se disputer",
+          "s'entendre",
+          "collaborer",
+          "s'aimer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "se disputer = دعوا کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Cette ____ juridique dure depuis des années.",
+        "options": [
+          "querelle",
+          "alliance",
+          "amitié",
+          "paix"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "querelle = مشاجره"
+      },
+      {
+        "type": "mcq",
+        "question": "Les voisins ont l'habitude de ____ bruyamment.",
+        "options": [
+          "se quereller",
+          "s'entendre",
+          "collaborer",
+          "se reposer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "se quereller = مشاجره کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Il y a un profond ____ sur cette question politique.",
+        "options": [
+          "désaccord",
+          "accord",
+          "consensus",
+          "union"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "désaccord = اختلاف نظر"
+      },
+      {
+        "type": "mcq",
+        "question": "Nous sommes ____ sur la stratégie à adopter.",
+        "options": [
+          "en désaccord",
+          "d'accord",
+          "satisfaits",
+          "heureux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "en désaccord = اختلاف داشتن"
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ au nouveau projet est très forte dans le comité.",
+        "options": [
+          "opposition",
+          "adhésion",
+          "soutien",
+          "approbation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "opposition = مخالفت"
+      },
+      {
+        "type": "mcq",
+        "question": "Je dois ____ à cette décision qui me semble injuste.",
+        "options": [
+          "s'opposer",
+          "adhérer",
+          "accepter",
+          "approuver"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "s'opposer = مخالفت کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Il y a une ____ flagrante dans son témoignage.",
+        "options": [
+          "contradiction",
+          "confirmation",
+          "validation",
+          "approbation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "contradiction = تضاد"
+      },
+      {
+        "type": "mcq",
+        "question": "Ses propos sont totalement ____ d'un jour à l'autre.",
+        "options": [
+          "contradictoires",
+          "cohérents",
+          "logiques",
+          "clairs"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "contradictoires = متناقض"
+      },
+      {
+        "type": "mcq",
+        "question": "Des ____ sont apparues au sein de l'équipe de direction.",
+        "options": [
+          "frictions",
+          "harmonies",
+          "accords",
+          "paix"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "frictions = اصطکاک"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ monte considérablement avant la négociation.",
+        "options": [
+          "tension",
+          "détente",
+          "joie",
+          "calme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "tension = تنش"
+      },
+      {
+        "type": "binary",
+        "question": "Une atmosphère tendue est généralement calme et détendue.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - tendu(e) به معنای پرتنش و پر از استرس است."
+      },
+      {
+        "type": "binary",
+        "question": "La rupture d'un partenariat signifie la fin officielle de آن همکاری.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - la rupture = گسست، قطع رابطه"
+      }
+    ]
+  }
+}
