@@ -1,0 +1,520 @@
+{
+  "id": "pack_73_urbanisme_environnement",
+  "level": "B2",
+  "theme": "Urbanisme et environnement urbain",
+  "theme_fa": "شهرسازی و محیط شهری",
+  "icon": "🏙️",
+  "inspiration": "Le Père Goriot d'Honoré de Balzac",
+  "words": [
+    {
+      "fr": "l'urbanisme (m)",
+      "fa": "شهرسازی",
+      "emoji": "🏗️",
+      "difficulty": 3,
+      "ex": "L'urbanisme moderne privilégie les espaces verts.",
+      "ex_fa": "شهرسازی مدرن فضاهای سبز را در اولویت قرار می‌دهد."
+    },
+    {
+      "fr": "urbain(e)",
+      "fa": "شهری",
+      "emoji": "🏢",
+      "difficulty": 2,
+      "ex": "La vie urbaine peut être très stressante.",
+      "ex_fa": "زندگی شهری می‌تواند بسیار پراسترس باشد."
+    },
+    {
+      "fr": "la métropole (f)",
+      "fa": "کلان‌شهر",
+      "emoji": "🌆",
+      "difficulty": 3,
+      "ex": "Paris est une métropole dynamique.",
+      "ex_fa": "پاریس یک کلان‌شهر پویا است."
+    },
+    {
+      "fr": "métropolitain(e)",
+      "fa": "کلان‌شهری",
+      "emoji": "🚇",
+      "difficulty": 4,
+      "ex": "Le réseau métropolitain est très étendu.",
+      "ex_fa": "شبکه کلان‌شهری بسیار گسترده است."
+    },
+    {
+      "fr": "la banlieue (f)",
+      "fa": "حومه شهر",
+      "emoji": "🏘️",
+      "difficulty": 3,
+      "ex": "Il habite en banlieue pour avoir plus d'espace.",
+      "ex_fa": "او برای داشتن فضای بیشتر در حومه شهر زندگی می‌کند."
+    },
+    {
+      "fr": "le quartier (m)",
+      "fa": "محله",
+      "emoji": "📍",
+      "difficulty": 2,
+      "ex": "C'est un quartier très animé et convivial.",
+      "ex_fa": "این یک محله بسیار زنده و صمیمی است."
+    },
+    {
+      "fr": "l'aménagement (m)",
+      "fa": "ساماندهی",
+      "emoji": "📐",
+      "difficulty": 4,
+      "ex": "L'aménagement du territoire est une priorité.",
+      "ex_fa": "ساماندهی سرزمین یک اولویت است."
+    },
+    {
+      "fr": "aménager",
+      "fa": "سامان دادن، تجهیز کردن",
+      "emoji": "🛠️",
+      "difficulty": 3,
+      "ex": "Il faut aménager cette pièce pour en faire un bureau.",
+      "ex_fa": "باید این اتاق را برای تبدیل شدن به یک دفتر سامان داد."
+    },
+    {
+      "fr": "la densité (f)",
+      "fa": "تراکم",
+      "emoji": "📊",
+      "difficulty": 4,
+      "ex": "La densité de population est élevée dans cette zone.",
+      "ex_fa": "تراکم جمعیت در این منطقه بالا است."
+    },
+    {
+      "fr": "dense",
+      "fa": "متراکم",
+      "emoji": "🌲",
+      "difficulty": 3,
+      "ex": "La forêt est très dense et difficile à traverser.",
+      "ex_fa": "جنگل بسیار متراکم و عبور از آن دشوار است."
+    },
+    {
+      "fr": "le béton (m)",
+      "fa": "بتن (نماد شهرسازی مدرن)",
+      "emoji": "🧱",
+      "difficulty": 3,
+      "ex": "La ville est devenue une jungle de béton.",
+      "ex_fa": "شهر به یک جنگل بتنی تبدیل شده است."
+    },
+    {
+      "fr": "la périphérie (f)",
+      "fa": "حاشیه، پیرامون",
+      "emoji": "⭕",
+      "difficulty": 4,
+      "ex": "Les centres commerciaux sont souvent en périphérie.",
+      "ex_fa": "مراکز خرید اغلب در حاشیه شهر قرار دارند."
+    },
+    {
+      "fr": "périphérique",
+      "fa": "حاشیه‌ای",
+      "emoji": "🛣️",
+      "difficulty": 4,
+      "ex": "Les zones périphériques manquent parfois de services.",
+      "ex_fa": "مناطق حاشیه‌ای گاهی از خدمات کمبود دارند."
+    },
+    {
+      "fr": "l'infrastructure (f)",
+      "fa": "زیرساخت",
+      "emoji": "🌉",
+      "difficulty": 4,
+      "ex": "Les infrastructures de transport doivent être modernisées.",
+      "ex_fa": "زیرساخت‌های حمل‌ونقل باید مدرن شوند."
+    },
+    {
+      "fr": "le réseau (m)",
+      "fa": "شبکه (حمل‌ونقل)",
+      "emoji": "🕸️",
+      "difficulty": 3,
+      "ex": "Le réseau de bus couvre toute la ville.",
+      "ex_fa": "شبکه اتوبوسرانی کل شهر را پوشش می‌دهد."
+    },
+    {
+      "fr": "la circulation (f)",
+      "fa": "تردد",
+      "emoji": "🚦",
+      "difficulty": 2,
+      "ex": "La circulation est fluide en dehors des heures de pointe.",
+      "ex_fa": "تردد در خارج از ساعات اوج روان است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une ville plus verte",
+      "title_fa": "شهری سبزتر",
+      "text": "Dans cette grande ville, l'{{BLANK_1}} a été repensé pour améliorer la vie des habitants. Le centre {{BLANK_2}} est devenu plus vert grâce à la création de nouveaux parcs. Cependant, la {{BLANK_3}} de population reste très élevée, ce qui rend certains endroits extrêmement {{BLANK_4}}. Pour résoudre ce problème, la municipalité a décidé d'{{BLANK_5}} les espaces publics abandonnés. L'objectif principal est de réduire la {{BLANK_6}} automobile et de favoriser les transports doux. Un nouveau {{BLANK_7}} de tramway a été construit pour relier le centre-ville à la {{BLANK_8}}, permettant aux habitants de se déplacer plus facilement et rapidement.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "urbanisme",
+          "options": [
+            "urbanisme",
+            "gastronomie",
+            "tourisme",
+            "artisanat"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "urbain",
+          "options": [
+            "urbain",
+            "rural",
+            "agricole",
+            "sauvage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "densité",
+          "options": [
+            "densité",
+            "rareté",
+            "fluidité",
+            "vacuité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "dense",
+          "options": [
+            "dense",
+            "clairsemé",
+            "vide",
+            "aéré"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "aménager",
+          "options": [
+            "aménager",
+            "détruire",
+            "abandonner",
+            "négliger"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "circulation",
+          "options": [
+            "circulation",
+            "immobilité",
+            "stagnation",
+            "arrêt"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "réseau",
+          "options": [
+            "réseau",
+            "isolement",
+            "vide",
+            "trou"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "banlieue",
+          "options": [
+            "banlieue",
+            "centre",
+            "sommet",
+            "cœur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les ombres de la ville",
+      "title_fa": "سایه‌های شهر",
+      "inspiration": "Le Père Goriot d'Honoré de Balzac",
+      "text": "Au cœur de la {{BLANK_9}} étouffante du XIXe siècle, les rues étaient un labyrinthe de pierre et de {{BLANK_10}}. Les habitants de la {{BLANK_11}} vivaient dans une misère crasse, loin des fastes du centre. L'{{BLANK_12}} de la ville fut conçu pour séparer les classes sociales, créant un fossé invisible mais infranchissable. Chaque {{BLANK_13}} avait ses propres règles et ses secrets inavouables. Les autorités tentèrent de moderniser l'{{BLANK_14}} pour contrôler les foules, mais la pauvreté restait ancrée dans les zones {{BLANK_15}}. Seuls les plus riches purent s'offrir le luxe d'échapper à ce monde {{BLANK_16}}, préférant la tranquillité de leurs domaines à la campagne.",
+      "blanks": [
+        {
+          "id": 9,
+          "answer": "métropole",
+          "options": [
+            "métropole",
+            "village",
+            "hameau",
+            "campagne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "béton",
+          "options": [
+            "béton",
+            "bois",
+            "paille",
+            "terre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "périphérie",
+          "options": [
+            "périphérie",
+            "centre",
+            "cœur",
+            "sommet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "aménagement",
+          "options": [
+            "aménagement",
+            "désordre",
+            "chaos",
+            "hasard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "quartier",
+          "options": [
+            "quartier",
+            "pays",
+            "continent",
+            "univers"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "infrastructure",
+          "options": [
+            "infrastructure",
+            "destruction",
+            "abandon",
+            "ruine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "périphériques",
+          "options": [
+            "périphériques",
+            "centrales",
+            "principales",
+            "vitales"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "métropolitain",
+          "options": [
+            "métropolitain",
+            "champêtre",
+            "pastoral",
+            "rustique"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Urbanisme et ville",
+    "title_fa": "آزمون : شهرسازی و شهر",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "L'____ moderne tente de créer plus d'espaces verts pour les citoyens.",
+        "options": [
+          "urbanisme",
+          "gastronomie",
+          "tourisme",
+          "artisanat"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Urbanisme به معنای شهرسازی و برنامه‌ریزی توسعه شهری است."
+      },
+      {
+        "type": "mcq",
+        "question": "La vie ____ est souvent associée au bruit et à la rapidité.",
+        "options": [
+          "urbaine",
+          "rurale",
+          "agricole",
+          "sauvage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Urbain به معنای مربوط به شهر و محیط شهری است."
+      },
+      {
+        "type": "binary",
+        "question": "Une \"métropole\" est une petite ville de campagne sans importance économique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، métropole به معنای کلان‌شهر یا شهر بزرگ و مهم است."
+      },
+      {
+        "type": "mcq",
+        "question": "De nombreuses personnes préfèrent vivre en ____ pour avoir un jardin et plus de calme.",
+        "options": [
+          "banlieue",
+          "centre",
+          "sommet",
+          "cœur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Banlieue به معنای حومه شهر است."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce ____ est très animé le week-end avec ses nombreux cafés et boutiques.",
+        "options": [
+          "quartier",
+          "pays",
+          "continent",
+          "univers"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Quartier به معنای محله یا بخش خاصی از یک شهر است."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"aménagement\" du territoire consiste à organiser l'espace pour améliorer les conditions de vie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، aménagement به معنای ساماندهی و سازماندهی فضا است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il faut ____ cette pièce mansardée pour en faire un bureau fonctionnel.",
+        "options": [
+          "aménager",
+          "détruire",
+          "abandonner",
+          "négliger"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Aménager به معنای سامان دادن، تجهیز کردن یا چیدمان فضا است."
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ de population dans ce quartier est l'une des plus élevées du pays.",
+        "options": [
+          "densité",
+          "rareté",
+          "fluidité",
+          "vacuité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Densité به معنای تراکم یا فشردگی جمعیت یا اشیاء است."
+      },
+      {
+        "type": "binary",
+        "question": "Une forêt \"dense\" est une forêt où les arbres sont très éloignés les uns des autres.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، dense به معنای متراکم و فشرده است."
+      },
+      {
+        "type": "mcq",
+        "question": "La ville est devenue une véritable jungle de ____ avec ses nombreux gratte-ciel.",
+        "options": [
+          "béton",
+          "bois",
+          "paille",
+          "terre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Béton به معنای بتن است و نماد ساخت‌وساز مدرن شهری است."
+      },
+      {
+        "type": "mcq",
+        "question": "Les grands centres commerciaux sont souvent construits en ____ de la ville.",
+        "options": [
+          "périphérie",
+          "centre",
+          "cœur",
+          "sommet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Périphérie به معنای حاشیه، پیرامون یا اطراف شهر است."
+      },
+      {
+        "type": "binary",
+        "question": "Les zones \"périphériques\" sont situées au centre exact d'une métropole.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، périphérique به معنای حاشیه‌ای و مربوط به اطراف است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le gouvernement investit massivement dans les ____ de transport pour réduire les embouteillages.",
+        "options": [
+          "infrastructures",
+          "destructions",
+          "abandons",
+          "ruines"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Infrastructure به معنای زیرساخت‌های پایه‌ای مانند جاده‌ها و پل‌ها است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ de métro de cette capitale est l'un des plus anciens et des plus efficaces du monde.",
+        "options": [
+          "réseau",
+          "isolement",
+          "vide",
+          "trou"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Réseau به معنای شبکه یا سیستم به هم پیوسته (مانند حمل‌ونقل) است."
+      },
+      {
+        "type": "binary",
+        "question": "La \"circulation\" désigne le mouvement des véhicules et des piétons dans les rues.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، circulation به معنای تردد و رفت‌وآمد است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il est interdit de stationner ici pour ne pas gêner la ____ des véhicules d'urgence.",
+        "options": [
+          "circulation",
+          "immobilité",
+          "stagnation",
+          "arrêt"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Circulation در اینجا به معنای روان بودن حرکت و تردد است."
+      }
+    ]
+  }
+}
