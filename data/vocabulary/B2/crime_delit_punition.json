@@ -1,0 +1,522 @@
+{
+  "id": "crime_delit_punition",
+  "level": "B2",
+  "theme": "Le crime, le délit et la punition",
+  "theme_fa": "جرم، تخلف و مجازات",
+  "icon": "⚖️",
+  "inspiration": "Les Misérables",
+  "words": [
+    {
+      "fr": "le crime (m)",
+      "fa": "جنایت",
+      "emoji": "🔪",
+      "difficulty": 3,
+      "ex": "Le crime a été élucidé par la police en quelques heures.",
+      "ex_fa": "جنایت توسط پلیس در عرض چند ساعت حل شد."
+    },
+    {
+      "fr": "le délit (m)",
+      "fa": "جرم، تخلف",
+      "emoji": "🚨",
+      "difficulty": 4,
+      "ex": "Le vol à l'étalage est considéré comme un délit.",
+      "ex_fa": "دزدی از فروشگاه به عنوان یک تخلف در نظر گرفته می‌شود."
+    },
+    {
+      "fr": "l'infraction (f)",
+      "fa": "نقض قانون",
+      "emoji": "🚫",
+      "difficulty": 4,
+      "ex": "Toute infraction au code de la route est passible d'une amende.",
+      "ex_fa": "هرگونه نقض قانون راهنمایی و رانندگی مشمول جریمه است."
+    },
+    {
+      "fr": "commettre",
+      "fa": "مرتکب شدن",
+      "emoji": "👤",
+      "difficulty": 4,
+      "ex": "Il ne faut jamais commettre d'actes violents.",
+      "ex_fa": "هرگز نباید مرتکب اعمال خشونت‌آمیز شد."
+    },
+    {
+      "fr": "la récidive (f)",
+      "fa": "تکرار جرم",
+      "emoji": "🔄",
+      "difficulty": 5,
+      "ex": "En cas de récidive, la peine sera doublée.",
+      "ex_fa": "در صورت تکرار جرم، مجازات دو برابر خواهد شد."
+    },
+    {
+      "fr": "récidiver",
+      "fa": "تکرار جرم کردن",
+      "emoji": "🔁",
+      "difficulty": 5,
+      "ex": "Il a promis de ne plus récidiver à l'avenir.",
+      "ex_fa": "او قول داد که در آینده دیگر تکرار جرم نکند."
+    },
+    {
+      "fr": "la peine (f)",
+      "fa": "مجازات",
+      "emoji": "⛓️",
+      "difficulty": 4,
+      "ex": "Le juge a prononcé une peine de cinq ans de prison.",
+      "ex_fa": "قاضی حکم پنج سال زندان را صادر کرد."
+    },
+    {
+      "fr": "punir",
+      "fa": "تنبیه کردن",
+      "emoji": "👎",
+      "difficulty": 3,
+      "ex": "La société doit punir les comportements dangereux.",
+      "ex_fa": "جامعه باید رفتارهای خطرناک را تنبیه کند."
+    },
+    {
+      "fr": "la sanction (f)",
+      "fa": "تحریم، مجازات",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "La sanction pour ce comportement est l'exclusion définitive.",
+      "ex_fa": "مجازات این رفتار، اخراج دائمی است."
+    },
+    {
+      "fr": "sanctionner",
+      "fa": "مجازات کردن",
+      "emoji": "👨‍⚖️",
+      "difficulty": 5,
+      "ex": "L'État doit sanctionner toute forme de corruption.",
+      "ex_fa": "دولت باید هرگونه فساد را مجازات کند."
+    },
+    {
+      "fr": "l'impunité (f)",
+      "fa": "مصونیت از مجازات",
+      "emoji": "🛡️",
+      "difficulty": 6,
+      "ex": "Les criminels ne doivent pas agir en toute impunité.",
+      "ex_fa": "مجرمان نباید با مصونیت کامل از مجازات عمل کنند."
+    },
+    {
+      "fr": "la culpabilité (f)",
+      "fa": "گناهکاری",
+      "emoji": "😔",
+      "difficulty": 5,
+      "ex": "Il a avoué sa culpabilité devant le tribunal.",
+      "ex_fa": "او گناهکاری خود را در دادگاه اعتراف کرد."
+    },
+    {
+      "fr": "coupable",
+      "fa": "گناهکار",
+      "emoji": "👉",
+      "difficulty": 3,
+      "ex": "Le jury l'a déclaré coupable de tous les chefs d'accusation.",
+      "ex_fa": "هیئت داوران او را در تمام اتهامات گناهکار اعلام کرد."
+    },
+    {
+      "fr": "innocent(e)",
+      "fa": "بی‌گناه",
+      "emoji": "🕊️",
+      "difficulty": 3,
+      "ex": "Toute personne est présumée innocente jusqu'à preuve du contraire.",
+      "ex_fa": "هر فرد تا زمانی که خلاف آن ثابت نشود، بی‌گناه فرض می‌شود."
+    },
+    {
+      "fr": "le châtiment (m)",
+      "fa": "کیفر",
+      "emoji": "⚡",
+      "difficulty": 5,
+      "ex": "Il considérait cette maladie comme un châtiment divin.",
+      "ex_fa": "او این بیماری را یک کیفر الهی می‌دانست."
+    },
+    {
+      "fr": "la prison (f)",
+      "fa": "زندان",
+      "emoji": "🏢",
+      "difficulty": 3,
+      "ex": "Il a passé dix ans derrière les barreaux de la prison.",
+      "ex_fa": "او ده سال را پشت میله‌های زندان گذراند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une erreur de jeunesse",
+      "title_fa": "یک اشتباه جوانی",
+      "text": "Dans une petite ville tranquille, un jeune homme a été accusé d'avoir commis un {{BLANK_1}} grave. Cependant, les preuves montraient clairement qu'il n'avait fait que commettre un simple {{BLANK_2}} de la route, sans aucune intention malveillante. Il était totalement {{BLANK_3}} du vol qui avait eu lieu la veille. Malgré cela, le juge a décidé de le {{BLANK_4}} sévèrement pour donner l'exemple à la communauté. Cette décision injuste l'a conduit directement en {{BLANK_5}}, loin de sa famille et de ses amis. Il a appris à ses dépens qu'il ne devait plus jamais {{BLANK_6}} une telle erreur, même involontairement, car la justice peut parfois être impitoyable et ne pas distinguer la maladresse de la malveillance.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "crime",
+          "options": [
+            "crime",
+            "bienfait",
+            "honneur",
+            "récompense"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "délit",
+          "options": [
+            "délit",
+            "vertu",
+            "exploit",
+            "mérite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "innocent",
+          "options": [
+            "innocent",
+            "coupable",
+            "responsable",
+            "complice"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "punir",
+          "options": [
+            "punir",
+            "récompenser",
+            "féliciter",
+            "aider"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "prison",
+          "options": [
+            "prison",
+            "université",
+            "hôpital",
+            "paradis"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "commettre",
+          "options": [
+            "commettre",
+            "éviter",
+            "réparer",
+            "oublier"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le fardeau du passé",
+      "title_fa": "بار گذشته",
+      "inspiration": "Les Misérables",
+      "text": "Dans les ombres humides de Paris, Jean Valjean portait le fardeau d'une {{BLANK_1}} éternelle, bien qu'il eût purgé sa {{BLANK_2}} avec une résignation silencieuse et digne. La société, aveugle et cruelle, refusait de lui pardonner, le traitant systématiquement comme un {{BLANK_3}} sans aucune possibilité de rédemption ou de seconde chance. Chaque pas qu'il faisait était surveillé, car la moindre {{BLANK_4}} aux règles imposées par son passeport jaune pouvait entraîner une {{BLANK_5}} immédiate et brutale de la part des autorités. Il savait pertinemment que s'il osait {{BLANK_6}}, la loi ne lui montrerait absolument aucune pitié. La justice de cette époque ne cherchait pas à réhabiliter les âmes perdues, mais uniquement à {{BLANK_7}} ceux qui avaient osé défier l'ordre établi. Cette {{BLANK_8}} implacable pesait lourdement sur son esprit, nourrissant une souffrance profonde, même lorsqu'il agissait avec la plus grande noblesse et générosité. Il comprenait avec amertume que les puissants jouissaient souvent d'une {{BLANK_9}} totale, tandis que les misérables étaient écrasés par un {{BLANK_10}} disproportionné pour des fautes mineures, scellant ainsi leur destin dans l'oubli.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "culpabilité",
+          "options": [
+            "culpabilité",
+            "innocence",
+            "joie",
+            "liberté"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "peine",
+          "options": [
+            "peine",
+            "récompense",
+            "vacances",
+            "promenade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "coupable",
+          "options": [
+            "coupable",
+            "saint",
+            "héros",
+            "bienfaiteur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "infraction",
+          "options": [
+            "infraction",
+            "obéissance",
+            "respect",
+            "soumission"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "sanction",
+          "options": [
+            "sanction",
+            "promotion",
+            "félicitation",
+            "récompense"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "récidiver",
+          "options": [
+            "récidiver",
+            "s'amender",
+            "progresser",
+            "réussir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "sanctionner",
+          "options": [
+            "sanctionner",
+            "pardonner",
+            "aider",
+            "protéger"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "récidive",
+          "options": [
+            "récidive",
+            "réussite",
+            "vertu",
+            "clémence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "impunité",
+          "options": [
+            "impunité",
+            "justice",
+            "équité",
+            "responsabilité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "châtiment",
+          "options": [
+            "châtiment",
+            "honneur",
+            "cadeau",
+            "bénédiction"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Crime, délit et punition",
+    "title_fa": "آزمون : جرم، تخلف و مجازات",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le ____ a été élucidé par la police en quelques heures grâce aux caméras.",
+        "options": [
+          "crime",
+          "bienfait",
+          "honneur",
+          "récompense"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "crime = جنایت"
+      },
+      {
+        "type": "mcq",
+        "question": "Le vol à l'étalage est généralement considéré comme un simple ____.",
+        "options": [
+          "délit",
+          "vertu",
+          "exploit",
+          "mérite"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "délit = جرم، تخلف"
+      },
+      {
+        "type": "mcq",
+        "question": "Toute ____ au code de la route est passible d'une amende.",
+        "options": [
+          "infraction",
+          "obéissance",
+          "respect",
+          "soumission"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "infraction = نقض قانون"
+      },
+      {
+        "type": "mcq",
+        "question": "Il ne faut jamais ____ d'actes violents ou dangereux.",
+        "options": [
+          "commettre",
+          "éviter",
+          "réparer",
+          "oublier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "commettre = مرتکب شدن"
+      },
+      {
+        "type": "mcq",
+        "question": "En cas de ____, la peine de prison sera automatiquement doublée.",
+        "options": [
+          "récidive",
+          "réussite",
+          "vertu",
+          "clémence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "récidive = تکرار جرم"
+      },
+      {
+        "type": "mcq",
+        "question": "Le juge a prononcé une ____ de cinq ans de prison ferme.",
+        "options": [
+          "peine",
+          "récompense",
+          "vacances",
+          "promenade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "peine = مجازات"
+      },
+      {
+        "type": "mcq",
+        "question": "La société doit ____ les comportements qui mettent les autres en danger.",
+        "options": [
+          "punir",
+          "récompenser",
+          "féliciter",
+          "aider"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "punir = تنبیه کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ pour ce comportement inacceptable est l'exclusion définitive.",
+        "options": [
+          "sanction",
+          "promotion",
+          "félicitation",
+          "récompense"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "sanction = تحریم، مجازات"
+      },
+      {
+        "type": "mcq",
+        "question": "L'État doit ____ toute forme de corruption au sein des institutions.",
+        "options": [
+          "sanctionner",
+          "pardonner",
+          "aider",
+          "protéger"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "sanctionner = مجازات کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Les criminels puissants ne doivent pas agir en toute ____.",
+        "options": [
+          "impunité",
+          "justice",
+          "équité",
+          "responsabilité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "impunité = مصونیت از مجازات"
+      },
+      {
+        "type": "mcq",
+        "question": "Il a avoué sa ____ devant le tribunal avec beaucoup de remords.",
+        "options": [
+          "culpabilité",
+          "innocence",
+          "joie",
+          "liberté"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "culpabilité = گناهکاری"
+      },
+      {
+        "type": "mcq",
+        "question": "Toute personne est présumée ____ jusqu'à preuve du contraire.",
+        "options": [
+          "innocente",
+          "coupable",
+          "responsable",
+          "complice"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "innocent = بی‌گناه"
+      },
+      {
+        "type": "binary",
+        "question": "Un 'châtiment' est une punition sévère infligée en réponse à une faute ou un crime.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - châtiment = کیفر"
+      },
+      {
+        "type": "binary",
+        "question": "La 'prison' est un lieu de récompense et de détente pour les citoyens modèles.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - prison به معنای زندان و محل نگهداری مجرمان است."
+      },
+      {
+        "type": "binary",
+        "question": "Récidiver signifie commettre une nouvelle infraction après avoir déjà été condamné.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - récidiver = تکرار جرم کردن"
+      },
+      {
+        "type": "binary",
+        "question": "Être 'coupable' signifie être reconnu responsable d'une faute ou d'un crime.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - coupable = گناهکار"
+      }
+    ]
+  }
+}
