@@ -1,0 +1,522 @@
+{
+  "id": "reconstruction_reforme",
+  "level": "B2",
+  "theme": "La reconstruction et la réforme",
+  "theme_fa": "بازسازی و اصلاح",
+  "icon": "🛠️",
+  "inspiration": "Les Misérables",
+  "words": [
+    {
+      "fr": "la reconstruction (f)",
+      "fa": "بازسازی",
+      "emoji": "🏗️",
+      "difficulty": 4,
+      "ex": "La reconstruction de la ville a pris plusieurs années.",
+      "ex_fa": "بازسازی شهر چندین سال طول کشید."
+    },
+    {
+      "fr": "reconstruire",
+      "fa": "بازسازی کردن",
+      "emoji": "🧱",
+      "difficulty": 4,
+      "ex": "Il faut reconstruire les ponts détruits par la guerre.",
+      "ex_fa": "باید پل‌های نابود شده توسط جنگ را بازسازی کرد."
+    },
+    {
+      "fr": "redéfinir",
+      "fa": "بازتعریف کردن",
+      "emoji": "📝",
+      "difficulty": 5,
+      "ex": "L'entreprise doit redéfinir sa stratégie pour survivre.",
+      "ex_fa": "شرکت باید برای بقا استراتژی خود را بازتعریف کند."
+    },
+    {
+      "fr": "rectifier",
+      "fa": "اصلاح کردن، تصحیح کردن",
+      "emoji": "✅",
+      "difficulty": 4,
+      "ex": "Veuillez rectifier cette erreur dans le rapport.",
+      "ex_fa": "لطفاً این خطا را در گزارش اصلاح کنید."
+    },
+    {
+      "fr": "réévaluer",
+      "fa": "باز ارزیابی کردن",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "Nous devons réévaluer les risques de ce projet.",
+      "ex_fa": "ما باید خطرات این پروژه را باز ارزیابی کنیم."
+    },
+    {
+      "fr": "remédier (à)",
+      "fa": "چاره‌اندیشی کردن",
+      "emoji": "💊",
+      "difficulty": 5,
+      "ex": "Il faut remédier à cette situation au plus vite.",
+      "ex_fa": "باید هرچه سریع‌تر به این وضعیت چاره‌اندیشی کرد."
+    },
+    {
+      "fr": "résoudre",
+      "fa": "حل کردن",
+      "emoji": "🧩",
+      "difficulty": 4,
+      "ex": "Nous allons résoudre ce problème ensemble.",
+      "ex_fa": "ما این مشکل را با هم حل خواهیم کرد."
+    },
+    {
+      "fr": "la résolution (f)",
+      "fa": "حل (مشکل)",
+      "emoji": "🎯",
+      "difficulty": 4,
+      "ex": "La résolution du conflit nécessite de la diplomatie.",
+      "ex_fa": "حل تعارض نیازمند دیپلماسی است."
+    },
+    {
+      "fr": "rétablir",
+      "fa": "بازگرداندن، احیا کردن",
+      "emoji": "🔄",
+      "difficulty": 5,
+      "ex": "Le médecin a réussi à rétablir la santé du patient.",
+      "ex_fa": "پزشک موفق شد سلامت بیمار را احیا کند."
+    },
+    {
+      "fr": "restaurer",
+      "fa": "مرمت کردن، احیا کردن",
+      "emoji": "🖼️",
+      "difficulty": 4,
+      "ex": "Des experts vont restaurer ce tableau ancien.",
+      "ex_fa": "کارشناسان این تابلوی قدیمی را مرمت خواهند کرد."
+    },
+    {
+      "fr": "régénérer",
+      "fa": "نوسازی کردن، احیا کردن",
+      "emoji": "🌱",
+      "difficulty": 6,
+      "ex": "La nature peut régénérer les sols épuisés.",
+      "ex_fa": "طبیعت می‌تواند خاک‌های فرسوده را احیا کند."
+    },
+    {
+      "fr": "la régénération (f)",
+      "fa": "نوسازی، احیا",
+      "emoji": "🌿",
+      "difficulty": 6,
+      "ex": "La régénération de la forêt prendra des décennies.",
+      "ex_fa": "احیای جنگل دهه‌ها طول خواهد کشید."
+    },
+    {
+      "fr": "restructurer",
+      "fa": "بازسازی ساختاری کردن",
+      "emoji": "🏢",
+      "difficulty": 5,
+      "ex": "Le groupe a décidé de restructurer ses filiales.",
+      "ex_fa": "گروه تصمیم گرفت شعب خود را بازسازی ساختاری کند."
+    },
+    {
+      "fr": "la restructuration (f)",
+      "fa": "بازسازی ساختاری",
+      "emoji": "📊",
+      "difficulty": 5,
+      "ex": "La restructuration de l'entreprise a sauvé des emplois.",
+      "ex_fa": "بازسازی ساختاری شرکت مشاغل را نجات داد."
+    },
+    {
+      "fr": "la transformation (f)",
+      "fa": "تحول، دگرگونی",
+      "emoji": "🦋",
+      "difficulty": 4,
+      "ex": "La transformation numérique change notre façon de travailler.",
+      "ex_fa": "تحول دیجیتال نحوه کار ما را تغییر می‌دهد."
+    },
+    {
+      "fr": "transformer",
+      "fa": "دگرگون کردن، تبدیل کردن",
+      "emoji": "✨",
+      "difficulty": 4,
+      "ex": "Il a réussi à transformer sa passion en métier.",
+      "ex_fa": "او موفق شد علاقه خود را به شغل تبدیل کند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Après la tempête",
+      "title_fa": "پس از طوفان",
+      "text": "Après la grande tempête, la ville a dû {{BLANK_1}} tous les bâtiments détruits par les vents violents. Le maire a promis de {{BLANK_2}} les problèmes d'infrastructure rapidement pour rassurer les habitants. Pour {{BLANK_3}} l'ordre public, la police a augmenté ses patrouilles dans les rues. Des artisans qualifiés sont venus pour {{BLANK_4}} les vieux monuments historiques endommés. Il a fallu {{BLANK_5}} les erreurs commises lors de la première phase des travaux d'urgence. Finalement, cette {{BLANK_6}} a rendu la ville plus belle, plus sûre et plus moderne qu'avant la catastrophe.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "reconstruire",
+          "options": [
+            "reconstruire",
+            "détruire",
+            "abandonner",
+            "ignorer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "résoudre",
+          "options": [
+            "résoudre",
+            "créer",
+            "aggraver",
+            "oublier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "rétablir",
+          "options": [
+            "rétablir",
+            "perturber",
+            "détruire",
+            "annuler"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "restaurer",
+          "options": [
+            "restaurer",
+            "démolir",
+            "endommager",
+            "vendre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "rectifier",
+          "options": [
+            "rectifier",
+            "répéter",
+            "ignorer",
+            "cacher"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "transformation",
+          "options": [
+            "transformation",
+            "destruction",
+            "régression",
+            "stagnation"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les cendres et l'espoir",
+      "title_fa": "خاکستر و امید",
+      "inspiration": "Les Misérables",
+      "text": "Dans les ruines de l'ancienne capitale, le nouveau gouverneur comprit que la simple {{BLANK_1}} des murs ne suffirait pas à sauver le pays. Il fallait absolument {{BLANK_2}} les valeurs fondamentales de la société pour éviter de répéter les erreurs du passé. Pour cela, il décida de {{BLANK_3}} les priorités du budget national, en mettant l'humain au centre des préoccupations. Son premier objectif était de {{BLANK_4}} aux maux sociaux qui rongeaient le peuple depuis des décennies de négligence. La {{BLANK_5}} de ces conflits profonds exigeait du courage, de la patience et une volonté de fer. Il fallait également {{BLANK_6}} les terres agricoles abandonnées pour nourrir une population affamée. Cette {{BLANK_7}} de la nature prendrait du temps, mais elle était vitale pour l'avenir. Le gouverneur ordonna ensuite de {{BLANK_8}} l'administration corrompue qui avait plongé la nation dans le chaos. Cette {{BLANK_9}} radicale fut accueillie avec méfiance par les élites, mais elle devint rapidement nécessaire. Son but ultime était de {{BLANK_10}} la souffrance en espoir, prouvant que même après le désastre, la vie pouvait reprendre son cours avec dignité.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "reconstruction",
+          "options": [
+            "reconstruction",
+            "destruction",
+            "abandon",
+            "oubli"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "redéfinir",
+          "options": [
+            "redéfinir",
+            "oublier",
+            "détruire",
+            "ignorer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "réévaluer",
+          "options": [
+            "réévaluer",
+            "gaspiller",
+            "détruire",
+            "ignorer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "remédier",
+          "options": [
+            "remédier",
+            "contribuer",
+            "ajouter",
+            "ignorer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "résolution",
+          "options": [
+            "résolution",
+            "aggravation",
+            "destruction",
+            "abandon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "régénérer",
+          "options": [
+            "régénérer",
+            "détruire",
+            "épuiser",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "régénération",
+          "options": [
+            "régénération",
+            "destruction",
+            "épuisement",
+            "abandon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "restructurer",
+          "options": [
+            "restructurer",
+            "démanteler",
+            "détruire",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "restructuration",
+          "options": [
+            "restructuration",
+            "destruction",
+            "démantèlement",
+            "abandon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "transformer",
+          "options": [
+            "transformer",
+            "détruire",
+            "ignorer",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Reconstruction et réforme",
+    "title_fa": "آزمون : بازسازی و اصلاح",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Après le tremblement de terre, la ____ des bâtiments a pris plusieurs années.",
+        "options": [
+          "reconstruction",
+          "destruction",
+          "abandon",
+          "oubli"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "reconstruction = بازسازی"
+      },
+      {
+        "type": "mcq",
+        "question": "Nous devons ____ cette maison qui a été endommagée par le feu.",
+        "options": [
+          "reconstruire",
+          "démolir",
+          "abandonner",
+          "ignorer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "reconstruire = بازسازی کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "L'entreprise a dû ____ sa mission pour s'adapter au nouveau marché.",
+        "options": [
+          "redéfinir",
+          "oublier",
+          "détruire",
+          "ignorer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "redéfinir = بازتعریف کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Il est important de ____ les erreurs dans le rapport avant de l'envoyer.",
+        "options": [
+          "rectifier",
+          "répéter",
+          "ignorer",
+          "cacher"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "rectifier = اصلاح کردن، تصحیح کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Le comité va ____ le projet pour voir s'il est toujours viable financièrement.",
+        "options": [
+          "réévaluer",
+          "gaspiller",
+          "détruire",
+          "ignorer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "réévaluer = باز ارزیابی کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Le médecin a prescrit un traitement pour ____ à la douleur du patient.",
+        "options": [
+          "remédier",
+          "contribuer",
+          "ajouter",
+          "ignorer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "remédier = چاره‌اندیشی کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Nous devons ____ ce problème technique avant la fin de la journée.",
+        "options": [
+          "résoudre",
+          "créer",
+          "aggraver",
+          "oublier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "résoudre = حل کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ du conflit a nécessité de longues et difficiles négociations.",
+        "options": [
+          "résolution",
+          "aggravation",
+          "destruction",
+          "abandon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "résolution = حل (مشکل)"
+      },
+      {
+        "type": "mcq",
+        "question": "Le nouveau directeur a réussi à ____ l'ordre dans l'entreprise après la crise.",
+        "options": [
+          "rétablir",
+          "perturber",
+          "détruire",
+          "annuler"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "rétablir = بازگرداندن، احیا کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Des experts vont ____ les fresques du plafond de la chapelle.",
+        "options": [
+          "restaurer",
+          "démolir",
+          "endommager",
+          "vendre"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "restaurer = مرمت کردن، احیا کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Il faut ____ les sols épuisés en utilisant des engrais naturels.",
+        "options": [
+          "régénérer",
+          "détruire",
+          "épuiser",
+          "abandonner"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "régénérer = نوسازی کردن، احیا کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Le gouvernement prévoit de ____ le système de santé pour le rendre plus efficace.",
+        "options": [
+          "restructurer",
+          "démanteler",
+          "détruire",
+          "abandonner"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "restructurer = بازسازی ساختاری کردن"
+      },
+      {
+        "type": "binary",
+        "question": "La régénération d'une forêt après un incendie est un processus naturel qui peut prendre des décennies.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - régénération = نوسازی، احیا"
+      },
+      {
+        "type": "binary",
+        "question": "Une restructuration d'entreprise signifie généralement que l'organisation reste exactement la même sans aucun changement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - restructuration به معنای تغییر و بازسازی ساختاری است، نه حفظ وضع موجود."
+      },
+      {
+        "type": "binary",
+        "question": "Une transformation numérique implique l'intégration de la technologie dans tous les aspects d'une entreprise.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - transformation = تحول، دگرگونی"
+      },
+      {
+        "type": "binary",
+        "question": "Transformer un problème en opportunité signifie ignorer complètement les difficultés.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - transformer به معنای تغییر ماهیت چیزی برای بهره‌برداری مثبت است، نه نادیده گرفتن آن."
+      }
+    ]
+  }
+}
