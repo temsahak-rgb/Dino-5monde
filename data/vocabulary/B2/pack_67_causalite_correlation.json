@@ -1,0 +1,520 @@
+{
+  "id": "pack_67_causalite_correlation",
+  "level": "B2",
+  "theme": "Causalité, effet et corrélation",
+  "theme_fa": "علت، معلول و همبستگی",
+  "icon": "🔗",
+  "inspiration": "Sherlock Holmes",
+  "words": [
+    {
+      "fr": "la causalité (f)",
+      "fa": "علیت",
+      "emoji": "⛓️",
+      "difficulty": 4,
+      "ex": "La causalité entre les deux événements est évidente.",
+      "ex_fa": "علیت بین دو رویداد آشکار است."
+    },
+    {
+      "fr": "le lien (m)",
+      "fa": "پیوند، ارتباط",
+      "emoji": "🔗",
+      "difficulty": 2,
+      "ex": "Il existe un lien fort entre eux.",
+      "ex_fa": "یک پیوند قوی بین آن‌ها وجود دارد."
+    },
+    {
+      "fr": "relier",
+      "fa": "مرتبط کردن",
+      "emoji": "🔌",
+      "difficulty": 2,
+      "ex": "Ce pont relie les deux villes.",
+      "ex_fa": "این پل دو شهر را به هم مرتبط می‌کند."
+    },
+    {
+      "fr": "corréler",
+      "fa": "همبستگی داشتن",
+      "emoji": "📊",
+      "difficulty": 5,
+      "ex": "Il faut corréler ces données avec les résultats.",
+      "ex_fa": "باید این داده‌ها را با نتایج همبستگی داد."
+    },
+    {
+      "fr": "la corrélation (f)",
+      "fa": "همبستگی",
+      "emoji": "📈",
+      "difficulty": 4,
+      "ex": "La corrélation entre les variables est positive.",
+      "ex_fa": "همبستگی بین متغیرها مثبت است."
+    },
+    {
+      "fr": "l'interdépendance (f)",
+      "fa": "وابستگی متقابل",
+      "emoji": "🔄",
+      "difficulty": 5,
+      "ex": "L'interdépendance des économies mondiales est réelle.",
+      "ex_fa": "وابستگی متقابل اقتصادهای جهانی واقعی است."
+    },
+    {
+      "fr": "interdépendant(e)",
+      "fa": "وابسته به هم",
+      "emoji": "🤝",
+      "difficulty": 5,
+      "ex": "Ces deux systèmes sont interdépendants.",
+      "ex_fa": "این دو سیستم به هم وابسته‌اند."
+    },
+    {
+      "fr": "la conséquence (f)",
+      "fa": "پیامد",
+      "emoji": "⚠️",
+      "difficulty": 3,
+      "ex": "Il doit assumer les conséquences de ses actes.",
+      "ex_fa": "او باید پیامدهای اعمالش را بپذیرد."
+    },
+    {
+      "fr": "conséquent(e)",
+      "fa": "منطقی، قابل توجه",
+      "emoji": "💡",
+      "difficulty": 4,
+      "ex": "L'impact de cette décision est conséquent.",
+      "ex_fa": "تأثیر این تصمیم قابل توجه است."
+    },
+    {
+      "fr": "le corollaire (m)",
+      "fa": "نتیجه منطقی",
+      "emoji": "🧮",
+      "difficulty": 5,
+      "ex": "Le corollaire de cette théorie est fascinant.",
+      "ex_fa": "نتیجه منطقی این نظریه شگفت‌انگیز است."
+    },
+    {
+      "fr": "découler (de)",
+      "fa": "ناشی شدن از",
+      "emoji": "💧",
+      "difficulty": 4,
+      "ex": "Cela découle directement de son principe.",
+      "ex_fa": "این مستقیماً از اصل او ناشی می‌شود."
+    },
+    {
+      "fr": "l'origine (f)",
+      "fa": "خاستگاه، مبدأ",
+      "emoji": "📍",
+      "difficulty": 3,
+      "ex": "L'origine du problème reste inconnue.",
+      "ex_fa": "خاستگاه مشکل ناشناخته باقی مانده است."
+    },
+    {
+      "fr": "la source (f)",
+      "fa": "منبع، سرچشمه",
+      "emoji": "⛲",
+      "difficulty": 3,
+      "ex": "La source de l'information est fiable.",
+      "ex_fa": "منبع اطلاعات قابل اعتماد است."
+    },
+    {
+      "fr": "engendrer",
+      "fa": "به وجود آوردن",
+      "emoji": "🌱",
+      "difficulty": 4,
+      "ex": "La violence ne peut qu'engendrer la violence.",
+      "ex_fa": "خشونت فقط می‌تواند خشونت به وجود آورد."
+    },
+    {
+      "fr": "provoquer",
+      "fa": "باعث شدن",
+      "emoji": "💥",
+      "difficulty": 3,
+      "ex": "Cette nouvelle va provoquer un scandale.",
+      "ex_fa": "این خبر باعث یک رسوایی خواهد شد."
+    },
+    {
+      "fr": "susciter",
+      "fa": "برانگیختن، ایجاد کردن",
+      "emoji": "🔥",
+      "difficulty": 4,
+      "ex": "Son discours a su susciter l'espoir.",
+      "ex_fa": "سخنرانی او توانست امید را برانگیزد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "L'enquête logique",
+      "title_fa": "پژوهش منطقی",
+      "text": "L'inspecteur cherchait à établir la {{BLANK_1}} entre les différents indices trouvés sur la scène du crime. Il tenta de {{BLANK_2}} les événements de la nuit précédente pour comprendre la chronologie exacte. Un {{BLANK_3}} invisible semblait unir le suspect principal à la victime. En analysant les faits, il comprit que cette action allait {{BLANK_4}} une réaction en chaîne inévitable. Il fallait anticiper chaque {{BLANK_5}} possible de son intervention. Pour résoudre l'affaire, il devait remonter à l'{{BLANK_6}} du conflit. La {{BLANK_7}} de la rumeur était un simple malentendu, mais cela avait suffi à {{BLANK_8}} une panique générale dans le quartier.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "causalité",
+          "options": [
+            "causalité",
+            "hasard",
+            "chance",
+            "illusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "relier",
+          "options": [
+            "relier",
+            "séparer",
+            "effacer",
+            "ignorer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "lien",
+          "options": [
+            "lien",
+            "fossé",
+            "rupture",
+            "distance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "provoquer",
+          "options": [
+            "provoquer",
+            "empêcher",
+            "éviter",
+            "annuler"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "conséquence",
+          "options": [
+            "conséquence",
+            "cause",
+            "origine",
+            "début"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "origine",
+          "options": [
+            "origine",
+            "fin",
+            "aboutissement",
+            "conclusion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "source",
+          "options": [
+            "source",
+            "destination",
+            "arrivée",
+            "fin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "susciter",
+          "options": [
+            "susciter",
+            "apaiser",
+            "calmer",
+            "étouffer"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le réseau du vivant",
+      "title_fa": "شبکه حیات",
+      "inspiration": "Sherlock Holmes",
+      "text": "Dans son laboratoire, le savant tenta de {{BLANK_9}} ces nouvelles observations avec les archives anciennes. La {{BLANK_10}} entre les deux phénomènes apparut soudainement évidente. Cette révélation mit en lumière l'{{BLANK_11}} profonde des éléments naturels. Chaque maillon de cette chaîne était {{BLANK_12}} des autres, formant un réseau d'une fragilité extrême. L'impact de cette théorie fut {{BLANK_13}} pour la communauté scientifique de l'époque. Le {{BLANK_14}} logique de ce principe est que rien dans la nature n'est véritablement isolé. De nombreuses innovations allaient {{BLANK_15}} de cette nouvelle compréhension du monde vivant. Une telle rupture d'équilibre pouvait {{BLANK_16}} des catastrophes en chaîne imprévisibles.",
+      "blanks": [
+        {
+          "id": 9,
+          "answer": "corréler",
+          "options": [
+            "corréler",
+            "dissocier",
+            "séparer",
+            "isoler"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "corrélation",
+          "options": [
+            "corrélation",
+            "indépendance",
+            "séparation",
+            "rupture"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "interdépendance",
+          "options": [
+            "interdépendance",
+            "autonomie",
+            "indépendance",
+            "isolement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "interdépendant",
+          "options": [
+            "interdépendant",
+            "autonome",
+            "indépendant",
+            "isolé"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "conséquent",
+          "options": [
+            "conséquent",
+            "négligeable",
+            "mineur",
+            "insignifiant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "corollaire",
+          "options": [
+            "corollaire",
+            "contradiction",
+            "paradoxe",
+            "exception"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "découler",
+          "options": [
+            "découler",
+            "s'écarter",
+            "diverger",
+            "s'éloigner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "engendrer",
+          "options": [
+            "engendrer",
+            "supprimer",
+            "effacer",
+            "annihiler"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Causalité et corrélation",
+    "title_fa": "آزمون : علیت و همبستگی",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Il est difficile de prouver la ____ entre ces deux événements sans preuves solides.",
+        "options": [
+          "causalité",
+          "hasard",
+          "chance",
+          "illusion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Causalité به معنای رابطه علت و معلولی بین دو پدیده است."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce nouveau pont va ____ les deux rives de la rivière.",
+        "options": [
+          "relier",
+          "séparer",
+          "effacer",
+          "ignorer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Relier به معنای مرتبط کردن یا به هم وصل کردن است."
+      },
+      {
+        "type": "binary",
+        "question": "Un 'lien' peut être à la fois physique ou abstrait, comme un lien d'amitié.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، lien به معنای پیوند یا ارتباط فیزیکی یا معنوی است."
+      },
+      {
+        "type": "mcq",
+        "question": "Cette action imprudente risque de ____ des dommages irréparables.",
+        "options": [
+          "provoquer",
+          "empêcher",
+          "éviter",
+          "annuler"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Provoquer به معنای باعث شدن یا ایجاد کردن یک اتفاق (معمولاً منفی) است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il doit maintenant assumer les ____ de ses choix passés.",
+        "options": [
+          "conséquences",
+          "causes",
+          "origines",
+          "débuts"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Conséquence به معنای پیامد یا نتیجه یک عمل است."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"origine\" d'un problème désigne le moment final où il est résolu.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، origine به معنای خاستگاه، مبدأ یا نقطه شروع است."
+      },
+      {
+        "type": "mcq",
+        "question": "Nous devons vérifier la ____ de cette information avant de la publier.",
+        "options": [
+          "source",
+          "destination",
+          "arrivée",
+          "fin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Source به معنای منبع یا سرچشمه اطلاعات است."
+      },
+      {
+        "type": "mcq",
+        "question": "La haine ne fait que ____ la haine, créant un cycle sans fin.",
+        "options": [
+          "engendrer",
+          "supprimer",
+          "effacer",
+          "annihiler"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Engendrer به معنای به وجود آوردن یا زایش دادن است."
+      },
+      {
+        "type": "binary",
+        "question": "\"Susciter\" signifie éveiller ou provoquer un sentiment, une réaction ou un intérêt.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، susciter به معنای برانگیختن یا ایجاد کردن یک حس یا واکنش است."
+      },
+      {
+        "type": "mcq",
+        "question": "Le statisticien a cherché à ____ les ventes avec les dépenses publicitaires.",
+        "options": [
+          "corréler",
+          "dissocier",
+          "séparer",
+          "isoler"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Corréler به معنای بررسی همبستگی یا ارتباط آماری بین دو متغیر است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il existe une forte ____ entre le tabagisme et les maladies respiratoires.",
+        "options": [
+          "corrélation",
+          "indépendance",
+          "séparation",
+          "rupture"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Corrélation به معنای همبستگی یا رابطه متقابل بین دو پدیده است."
+      },
+      {
+        "type": "binary",
+        "question": "L'\"interdépendance\" signifie que deux éléments peuvent fonctionner parfaitement l'un sans l'autre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، interdépendance به معنای وابستگی متقابل است، جایی که هر دو به هم نیاز دارند."
+      },
+      {
+        "type": "mcq",
+        "question": "Dans un écosystème, toutes les espèces sont ____ les unes des autres.",
+        "options": [
+          "interdépendantes",
+          "autonomes",
+          "indépendantes",
+          "isolées"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Interdépendant به معنای وابسته به هم و نیازمند یکدیگر است."
+      },
+      {
+        "type": "mcq",
+        "question": "L'investissement dans ce projet est ____ et nécessite une réflexion approfondie.",
+        "options": [
+          "conséquent",
+          "négligeable",
+          "mineur",
+          "insignifiant"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Conséquent (صفت) به معنای قابل توجه، مهم یا منطقی است."
+      },
+      {
+        "type": "binary",
+        "question": "Un \"corollaire\" est une vérité qui découle naturellement et logiquement d'une autre vérité déjà établie.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، corollaire به معنای نتیجه منطقی و مستقیم یک اصل یا نظریه است."
+      },
+      {
+        "type": "mcq",
+        "question": "De nombreux droits sociaux ____ des luttes historiques des travailleurs.",
+        "options": [
+          "découlent",
+          "s'écartent",
+          "divergent",
+          "s'éloignent"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Découler (de) به معنای ناشی شدن یا سرچشمه گرفتن از چیزی است."
+      }
+    ]
+  }
+}
