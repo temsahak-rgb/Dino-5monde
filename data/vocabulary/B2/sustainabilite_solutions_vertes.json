@@ -1,0 +1,522 @@
+{
+  "id": "sustainabilite_solutions_vertes",
+  "level": "B2",
+  "theme": "La durabilité et les solutions vertes",
+  "theme_fa": "پایداری و راه‌حل‌های سبز",
+  "icon": "🌱",
+  "inspiration": "Demain",
+  "words": [
+    {
+      "fr": "durable",
+      "fa": "پایدار",
+      "emoji": "♾️",
+      "difficulty": 4,
+      "ex": "Nous devons trouver des solutions durables pour l'avenir.",
+      "ex_fa": "ما باید راه‌حل‌های پایداری برای آینده پیدا کنیم."
+    },
+    {
+      "fr": "le développement durable",
+      "fa": "توسعه پایدار",
+      "emoji": "🌍",
+      "difficulty": 4,
+      "ex": "Le développement durable est au cœur des politiques modernes.",
+      "ex_fa": "توسعه پایدار در قلب سیاست‌های مدرن قرار دارد."
+    },
+    {
+      "fr": "la sobriété (f)",
+      "fa": "پرهیزکاری، مصرف بهینه",
+      "emoji": "💧",
+      "difficulty": 5,
+      "ex": "La sobriété énergétique est essentielle pour réduire notre impact.",
+      "ex_fa": "مصرف بهینه انرژی برای کاهش تأثیر ما ضروری است."
+    },
+    {
+      "fr": "le recyclage (m)",
+      "fa": "بازیافت",
+      "emoji": "♻️",
+      "difficulty": 3,
+      "ex": "Le recyclage du plastique permet de réduire les déchets.",
+      "ex_fa": "بازیافت پلاستیک امکان کاهش زباله‌ها را فراهم می‌کند."
+    },
+    {
+      "fr": "recycler",
+      "fa": "بازیافت کردن",
+      "emoji": "🔄",
+      "difficulty": 4,
+      "ex": "Il est important de recycler le papier et le verre.",
+      "ex_fa": "بازیافت کاغذ و شیشه مهم است."
+    },
+    {
+      "fr": "préserver",
+      "fa": "حفظ کردن، محافظت کردن",
+      "emoji": "🛡️",
+      "difficulty": 4,
+      "ex": "Nous devons préserver les forêts pour les générations futures.",
+      "ex_fa": "ما باید جنگل‌ها را برای نسل‌های آینده حفظ کنیم."
+    },
+    {
+      "fr": "la préservation (f)",
+      "fa": "حفظ، محافظت",
+      "emoji": "🏞️",
+      "difficulty": 5,
+      "ex": "La préservation des océans est une priorité mondiale.",
+      "ex_fa": "حفظ اقیانوس‌ها یک اولویت جهانی است."
+    },
+    {
+      "fr": "protéger",
+      "fa": "محافظت کردن",
+      "emoji": "🤲",
+      "difficulty": 3,
+      "ex": "Il faut protéger les espèces animales en danger.",
+      "ex_fa": "باید از گونه‌های حیوانی در معرض خطر محافظت کرد."
+    },
+    {
+      "fr": "la protection (f)",
+      "fa": "محافظت",
+      "emoji": "🏰",
+      "difficulty": 4,
+      "ex": "La protection de l'environnement nécessite l'action de tous.",
+      "ex_fa": "محافظت از محیط زیست نیازمند اقدام همه است."
+    },
+    {
+      "fr": "l'écologie (f)",
+      "fa": "بوم‌شناسی",
+      "emoji": "🌿",
+      "difficulty": 4,
+      "ex": "L'écologie étudie les relations entre les êtres vivants et leur milieu.",
+      "ex_fa": "بوم‌شناسی روابط بین موجودات زنده و محیط آن‌ها را مطالعه می‌کند."
+    },
+    {
+      "fr": "écologique",
+      "fa": "زیست‌محیطی",
+      "emoji": "🍃",
+      "difficulty": 4,
+      "ex": "C'est un produit écologique qui respecte la nature.",
+      "ex_fa": "این یک محصول زیست‌محیطی است که به طبیعت احترام می‌گذارد."
+    },
+    {
+      "fr": "la biodiversité (f)",
+      "fa": "تنوع زیستی",
+      "emoji": "🦋",
+      "difficulty": 5,
+      "ex": "La biodiversité est menacée par la destruction des habitats.",
+      "ex_fa": "تنوع زیستی توسط تخریب زیستگاه‌ها تهدید می‌شود."
+    },
+    {
+      "fr": "l'empreinte (f)",
+      "fa": "ردپا (مثلاً کربنی)",
+      "emoji": "👣",
+      "difficulty": 5,
+      "ex": "Nous devons réduire notre empreinte carbone au quotidien.",
+      "ex_fa": "ما باید ردپای کربنی خود را در زندگی روزمره کاهش دهیم."
+    },
+    {
+      "fr": "renouvelable",
+      "fa": "تجدیدپذیر",
+      "emoji": "☀️",
+      "difficulty": 4,
+      "ex": "L'énergie solaire est une source d'énergie renouvelable.",
+      "ex_fa": "انرژی خورشیدی یک منبع انرژی تجدیدپذیر است."
+    },
+    {
+      "fr": "la transition (f)",
+      "fa": "گذار (مثلاً انرژی)",
+      "emoji": "🌉",
+      "difficulty": 5,
+      "ex": "La transition énergétique est un défi majeur du XXIe siècle.",
+      "ex_fa": "گذار انرژی یک چالش عمده قرن بیست و یکم است."
+    },
+    {
+      "fr": "verdir",
+      "fa": "سبز کردن، زیست‌محیطی کردن",
+      "emoji": "🌳",
+      "difficulty": 5,
+      "ex": "Les municipalités cherchent à verdir les centres-villes.",
+      "ex_fa": "شهرداری‌ها به دنبال سبز کردن مراکز شهرها هستند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un quartier écoresponsable",
+      "title_fa": "یک محله سازگار با محیط زیست",
+      "text": "Dans notre ville, nous avons décidé de promouvoir le {{BLANK_1}} pour construire un avenir meilleur et plus responsable. Chaque habitant est fortement encouragé à adopter une {{BLANK_2}} énergétique au quotidien, en réduisant sa consommation d'électricité et d'eau. De plus, il est désormais obligatoire de {{BLANK_3}} les déchets plastiques, le verre et le papier au lieu de les jeter dans la nature. La municipalité a également lancé un vaste projet pour {{BLANK_4}} les espaces verts et la faune locale des nuisances urbaines. Grâce à ces efforts collectifs, nous entamons une {{BLANK_5}} profonde vers une société plus respectueuse de l'environnement. Nous utilisons maintenant des sources d'énergie {{BLANK_6}}, comme le solaire et l'éolien, pour alimenter nos bâtiments publics.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "développement durable",
+          "options": [
+            "développement durable",
+            "gaspillage",
+            "pollution",
+            "destruction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "sobriété",
+          "options": [
+            "sobriété",
+            "dépense",
+            "consommation",
+            "gaspillage"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "recycler",
+          "options": [
+            "recycler",
+            "jeter",
+            "brûler",
+            "ignorer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "protéger",
+          "options": [
+            "protéger",
+            "détruire",
+            "polluer",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "transition",
+          "options": [
+            "transition",
+            "régression",
+            "stagnation",
+            "immobilisme"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "renouvelable",
+          "options": [
+            "renouvelable",
+            "fossile",
+            "polluante",
+            "épuisée"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'aube d'un nouveau monde",
+      "title_fa": "سپیده‌دم یک جهان جدید",
+      "inspiration": "Demain",
+      "text": "Dans un monde autrefois dominé par l'exploitation aveugle et insatiable des ressources naturelles, une prise de conscience collective a enfin émergé au tournant du siècle. Les citoyens, autrefois indifférents aux signaux d'alarme, ont compris que la {{BLANK_1}} de notre planète exigeait des actions concrètes et immédiates, bien loin des simples promesses politiques. Ils ont donc choisi de modifier radicalement leurs habitudes de consommation pour {{BLANK_2}} les écosystèmes fragiles qui entouraient leurs communautés respectives. Cette volonté farouche de {{BLANK_3}} de la nature s'est rapidement traduite par l'adoption de lois strictes et de réglementations environnementales ambitieuses à l'échelle mondiale. L'{{BLANK_4}} est devenue la priorité absolue des gouvernements, qui ont investi massivement dans des technologies propres. Peu à peu, les métropoles ont commencé à {{BLANK_5}}, remplaçant le béton gris et froid par des toits végétalisés et des parcs urbains luxuriants. Cette transformation profonde a permis de réduire drastiquement l'{{BLANK_6}} carbone de l'humanité, offrant un souffle nouveau à la Terre meurtrie. Le {{BLANK_7}} des matériaux est devenu une norme sociale incontournable, et non plus une simple option marginale. Grâce à cette démarche globale, la {{BLANK_8}} a pu lentement se régénérer, offrant un espoir tangible aux générations futures. Il ne s'agissait plus seulement de survivre, mais de vivre en parfaite harmonie avec un environnement {{BLANK_9}} sain, garantissant ainsi un avenir {{BLANK_10}} pour les siècles à venir.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "préservation",
+          "options": [
+            "préservation",
+            "destruction",
+            "exploitation",
+            "abandon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "préserver",
+          "options": [
+            "préserver",
+            "détruire",
+            "polluer",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "protection",
+          "options": [
+            "protection",
+            "destruction",
+            "négligence",
+            "indifférence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "écologie",
+          "options": [
+            "écologie",
+            "pollution",
+            "destruction",
+            "indifférence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "verdir",
+          "options": [
+            "verdir",
+            "bétonner",
+            "détruire",
+            "polluer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "empreinte",
+          "options": [
+            "empreinte",
+            "abondance",
+            "richesse",
+            "excès"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "recyclage",
+          "options": [
+            "recyclage",
+            "gaspillage",
+            "destruction",
+            "abandon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "biodiversité",
+          "options": [
+            "biodiversité",
+            "destruction",
+            "pollution",
+            "stagnation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "écologique",
+          "options": [
+            "écologique",
+            "toxique",
+            "pollué",
+            "dangereux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "durable",
+          "options": [
+            "durable",
+            "éphémère",
+            "fragile",
+            "précaire"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Durabilité et solutions vertes",
+    "title_fa": "آزمون : پایداری و راه‌حل‌های سبز",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le ____ est au cœur des politiques modernes pour protéger la planète.",
+        "options": [
+          "développement durable",
+          "gaspillage",
+          "pollution",
+          "destruction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "développement durable = توسعه پایدار"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ énergétique est essentielle pour réduire notre impact sur l'environnement.",
+        "options": [
+          "sobriété",
+          "dépense",
+          "consommation",
+          "gaspillage"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "sobriété = پرهیزکاری، مصرف بهینه"
+      },
+      {
+        "type": "mcq",
+        "question": "Il est important de ____ le papier et le verre au lieu de les jeter.",
+        "options": [
+          "recycler",
+          "brûler",
+          "ignorer",
+          "gaspiller"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "recycler = بازیافت کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Nous devons ____ les forêts pour les générations futures.",
+        "options": [
+          "préserver",
+          "détruire",
+          "polluer",
+          "abandonner"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "préserver = حفظ کردن، محافظت کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Il faut ____ les espèces animales en danger d'extinction.",
+        "options": [
+          "protéger",
+          "détruire",
+          "chasser",
+          "ignorer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "protéger = محافظت کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Nous entamons une ____ profonde vers une société plus respectueuse de l'environnement.",
+        "options": [
+          "transition",
+          "régression",
+          "stagnation",
+          "immobilisme"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "transition = گذار"
+      },
+      {
+        "type": "mcq",
+        "question": "L'énergie solaire est une source d'énergie ____ et propre.",
+        "options": [
+          "renouvelable",
+          "fossile",
+          "polluante",
+          "épuisée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "renouvelable = تجدیدپذیر"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ des océans est une priorité mondiale face à la pollution.",
+        "options": [
+          "préservation",
+          "destruction",
+          "exploitation",
+          "abandon"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "préservation = حفظ، محافظت"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ de la nature nécessite l'action et l'engagement de tous.",
+        "options": [
+          "protection",
+          "destruction",
+          "négligence",
+          "indifférence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "protection = محافظت"
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ étudie les relations entre les êtres vivants et leur milieu.",
+        "options": [
+          "écologie",
+          "pollution",
+          "destruction",
+          "indifférence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "écologie = بوم‌شناسی"
+      },
+      {
+        "type": "mcq",
+        "question": "C'est un produit ____ qui respecte la nature et l'environnement.",
+        "options": [
+          "écologique",
+          "toxique",
+          "pollué",
+          "dangereux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "écologique = زیست‌محیطی"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ est menacée par la destruction des habitats naturels.",
+        "options": [
+          "biodiversité",
+          "destruction",
+          "pollution",
+          "stagnation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "biodiversité = تنوع زیستی"
+      },
+      {
+        "type": "binary",
+        "question": "L'empreinte carbone mesure la quantité de gaz à effet de serre émise par une activité humaine.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - empreinte = ردپا (کربنی)"
+      },
+      {
+        "type": "binary",
+        "question": "Le recyclage consiste à jeter les déchets dans la nature sans aucun traitement préalable.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - recyclage به معنای بازیافت و پردازش مجدد مواد است، نه رها کردن آن‌ها."
+      },
+      {
+        "type": "binary",
+        "question": "Verdir une ville signifie augmenter les espaces verts et la végétation en milieu urbain.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - verdir = سبز کردن"
+      },
+      {
+        "type": "binary",
+        "question": "Un développement 'durable' est un développement qui épuise rapidement les ressources au détriment des générations futures.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - durable به معنای پایدار است، یعنی حفظ منابع برای نسل‌های آینده."
+      }
+    ]
+  }
+}
