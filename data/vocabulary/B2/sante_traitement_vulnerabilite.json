@@ -1,0 +1,522 @@
+{
+  "id": "sante_traitement_vulnerabilite",
+  "level": "B2",
+  "theme": "La santé, le traitement et la vulnérabilité",
+  "theme_fa": "سلامت، درمان و آسیب‌پذیری",
+  "icon": "🏥",
+  "inspiration": "Le Scaphandre et le Papillon",
+  "words": [
+    {
+      "fr": "la chirurgie (f)",
+      "fa": "جراحی",
+      "emoji": "🏥",
+      "difficulty": 4,
+      "ex": "Le patient doit subir une chirurgie demain matin.",
+      "ex_fa": "بیمار باید فردا صبح تحت جراحی قرار گیرد."
+    },
+    {
+      "fr": "guérir",
+      "fa": "شفا دادن، درمان کردن",
+      "emoji": "💊",
+      "difficulty": 3,
+      "ex": "Le temps aide à guérir les blessures émotionnelles.",
+      "ex_fa": "زمان به درمان زخم‌های عاطفی کمک می‌کند."
+    },
+    {
+      "fr": "la guérison (f)",
+      "fa": "بهبودی",
+      "emoji": "🌱",
+      "difficulty": 4,
+      "ex": "La guérison complète prendra plusieurs semaines.",
+      "ex_fa": "بهبودی کامل چندین هفته طول خواهد کشید."
+    },
+    {
+      "fr": "le diagnostic (m)",
+      "fa": "تشخیص",
+      "emoji": "🩺",
+      "difficulty": 4,
+      "ex": "Le médecin a posé un diagnostic précis après les analyses.",
+      "ex_fa": "پزشک پس از آزمایش‌ها یک تشخیص دقیق ارائه داد."
+    },
+    {
+      "fr": "le traitement (m)",
+      "fa": "درمان",
+      "emoji": "💉",
+      "difficulty": 3,
+      "ex": "Il faut suivre le traitement jusqu'au bout.",
+      "ex_fa": "باید درمان را تا انتها ادامه داد."
+    },
+    {
+      "fr": "la rémission (f)",
+      "fa": "فروکش کردن (بیماری)",
+      "emoji": "📉",
+      "difficulty": 6,
+      "ex": "Le cancer est entré en phase de rémission.",
+      "ex_fa": "سرطان وارد مرحله فروکش کردن شد."
+    },
+    {
+      "fr": "vulnérable",
+      "fa": "آسیب‌پذیر",
+      "emoji": "🛡️",
+      "difficulty": 4,
+      "ex": "Les personnes âgées sont plus vulnérables aux virus.",
+      "ex_fa": "سالمندان در برابر ویروس‌ها آسیب‌پذیرتر هستند."
+    },
+    {
+      "fr": "fragile",
+      "fa": "شکننده",
+      "emoji": "🥚",
+      "difficulty": 3,
+      "ex": "Sa santé est restée fragile après l'accident.",
+      "ex_fa": "سلامتی او پس از تصادف شکننده باقی ماند."
+    },
+    {
+      "fr": "fragiliser",
+      "fa": "سست کردن، آسیب‌پذیر کردن",
+      "emoji": "⚠️",
+      "difficulty": 5,
+      "ex": "Le manque de sommeil peut fragiliser le système immunitaire.",
+      "ex_fa": "کمبود خواب می‌تواند سیستم ایمنی را آسیب‌پذیر کند."
+    },
+    {
+      "fr": "bénin/gne",
+      "fa": "بی‌آزار، خوش‌خیم",
+      "emoji": "🕊️",
+      "difficulty": 5,
+      "ex": "Heureusement, la tumeur s'est révélée bénigne.",
+      "ex_fa": "خوشبختانه، تومور خوش‌خیم از آب درآمد."
+    },
+    {
+      "fr": "le symptôme (m)",
+      "fa": "علامت، نشانه",
+      "emoji": "🤒",
+      "difficulty": 4,
+      "ex": "La fièvre est un symptôme courant de la grippe.",
+      "ex_fa": "تب یک علامت شایع آنفولانزا است."
+    },
+    {
+      "fr": "l'épidémie (f)",
+      "fa": "همه‌گیری",
+      "emoji": "🦠",
+      "difficulty": 4,
+      "ex": "L'épidémie de grippe a touché toute la région.",
+      "ex_fa": "همه‌گیری آنفولانزا کل منطقه را تحت تأثیر قرار داد."
+    },
+    {
+      "fr": "la pandémie (f)",
+      "fa": "بیماری جهانی",
+      "emoji": "🌍",
+      "difficulty": 4,
+      "ex": "La pandémie a changé nos habitudes de vie.",
+      "ex_fa": "بیماری جهانی عادات زندگی ما را تغییر داد."
+    },
+    {
+      "fr": "le bien-être (m)",
+      "fa": "رفاه، سلامت",
+      "emoji": "🧘‍♂️",
+      "difficulty": 3,
+      "ex": "Le yoga favorise le bien-être physique et mental.",
+      "ex_fa": "یوگا رفاه جسمی و روانی را تقویت می‌کند."
+    },
+    {
+      "fr": "la santé (f)",
+      "fa": "سلامت",
+      "emoji": "❤️",
+      "difficulty": 2,
+      "ex": "La santé est le bien le plus précieux.",
+      "ex_fa": "سلامت ارزشمندترین دارایی است."
+    },
+    {
+      "fr": "le soin (m)",
+      "fa": "مراقبت، درمان",
+      "emoji": "🩹",
+      "difficulty": 3,
+      "ex": "Les infirmières prodiguent des soins de qualité.",
+      "ex_fa": "پرستاران مراقبت‌های باکیفیتی ارائه می‌دهند."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un nouveau départ",
+      "title_fa": "یک شروع جدید",
+      "text": "Après des mois d'attente et d'inquiétude, le médecin a enfin posé un {{BLANK_1}} clair et précis. Heureusement, les résultats ont montré que la tumeur était {{BLANK_2}}, ce qui est une excellente nouvelle pour toute la famille. Le {{BLANK_3}} proposé consiste en une {{BLANK_4}} mineure suivie de quelques semaines de repos à la maison. L'objectif principal de l'équipe médicale est de {{BLANK_5}} le patient le plus rapidement possible. Les infirmières prodiguent des {{BLANK_6}} attentifs et doux chaque jour pour assurer une {{BLANK_7}} complète et sans complication. Malgré la fatigue, le moral du patient reste bon, car il sait que sa {{BLANK_8}} est entre de bonnes mains et qu'il pourra bientôt reprendre une vie normale.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "diagnostic",
+          "options": [
+            "diagnostic",
+            "problème",
+            "hasard",
+            "erreur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "bénigne",
+          "options": [
+            "bénigne",
+            "dangereuse",
+            "mortelle",
+            "grave"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "traitement",
+          "options": [
+            "traitement",
+            "abandon",
+            "échec",
+            "oubli"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "chirurgie",
+          "options": [
+            "chirurgie",
+            "fête",
+            "voyage",
+            "réunion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "guérir",
+          "options": [
+            "guérir",
+            "blesser",
+            "ignorer",
+            "abandonner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "soins",
+          "options": [
+            "soins",
+            "coups",
+            "critiques",
+            "punitions"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "guérison",
+          "options": [
+            "guérison",
+            "chute",
+            "aggravation",
+            "destruction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "santé",
+          "options": [
+            "santé",
+            "maladie",
+            "faiblesse",
+            "douleur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le poids du corps",
+      "title_fa": "سنگینی جسم",
+      "inspiration": "Le Scaphandre et le Papillon",
+      "text": "Dans la chambre d'hôpital baignée d'une lumière pâle et froide, Jean prenait lentement conscience de sa condition profondément {{BLANK_1}}. La maladie soudaine l'avait rendu incroyablement {{BLANK_2}}, brisant cette illusion d'invincibilité que nous chérissons tous dans notre jeunesse insouciante. Les premiers {{BLANK_3}} avaient été étrangement ignorés, jusqu'à ce que la fièvre ne devienne insupportable et ne l'oblige à consulter en urgence. À l'époque, une {{BLANK_4}} locale avait déjà commencé à inquiéter sérieusement les autorités sanitaires, bien avant que le monde entier ne bascule dans une {{BLANK_5}} mondiale aux conséquences dévastatrices. Les médecins avaient dû agir avec une rapidité exemplaire pour éviter que son état de santé ne se {{BLANK_6}} davantage sous le poids écrasant de l'infection. Après des mois de lutte acharnée et de doutes, une lueur d'espoir apparut enfin à l'horizon : la {{BLANK_7}} totale des symptômes était officiellement confirmée par les spécialistes. Ce long et douloureux parcours vers le {{BLANK_8}} physique et mental lui avait appris à apprécier chaque souffle, chaque rayon de soleil, et la simple beauté miraculeuse d'être en vie. Il comprit alors que la vraie richesse ne résidait pas dans les biens matériels, mais dans la capacité de se lever chaque matin.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "vulnérable",
+          "options": [
+            "vulnérable",
+            "invincible",
+            "fort",
+            "puissant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fragile",
+          "options": [
+            "fragile",
+            "solide",
+            "robuste",
+            "résistant"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "symptômes",
+          "options": [
+            "symptômes",
+            "joies",
+            "succès",
+            "cadeaux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "épidémie",
+          "options": [
+            "épidémie",
+            "fête",
+            "célébration",
+            "prospérité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "pandémie",
+          "options": [
+            "pandémie",
+            "paix",
+            "harmonie",
+            "tranquillité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "fragilise",
+          "options": [
+            "fragilise",
+            "renforce",
+            "améliore",
+            "protège"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "rémission",
+          "options": [
+            "rémission",
+            "aggravation",
+            "chute",
+            "destruction"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "bien-être",
+          "options": [
+            "bien-être",
+            "mal-être",
+            "souffrance",
+            "douleur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Santé, traitement et vulnérabilité",
+    "title_fa": "آزمون : سلامت، درمان و آسیب‌پذیری",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le patient doit subir une ____ demain matin à la première heure.",
+        "options": [
+          "chirurgie",
+          "fête",
+          "voyage",
+          "réunion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "chirurgie = جراحی"
+      },
+      {
+        "type": "mcq",
+        "question": "Le temps et la patience aident souvent à ____ les blessures émotionnelles.",
+        "options": [
+          "guérir",
+          "blesser",
+          "ignorer",
+          "abandonner"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "guérir = شفا دادن، درمان کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ complète de la fracture prendra plusieurs semaines.",
+        "options": [
+          "guérison",
+          "chute",
+          "aggravation",
+          "destruction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "guérison = بهبودی"
+      },
+      {
+        "type": "mcq",
+        "question": "Le médecin a posé un ____ précis après avoir étudié les résultats des analyses.",
+        "options": [
+          "diagnostic",
+          "problème",
+          "hasard",
+          "erreur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "diagnostic = تشخیص"
+      },
+      {
+        "type": "mcq",
+        "question": "Il est crucial de suivre le ____ jusqu'au bout pour éviter les rechutes.",
+        "options": [
+          "traitement",
+          "abandon",
+          "échec",
+          "oubli"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "traitement = درمان"
+      },
+      {
+        "type": "mcq",
+        "question": "Les nouvelles sont bonnes : le cancer est entré en phase de ____.",
+        "options": [
+          "rémission",
+          "aggravation",
+          "chute",
+          "destruction"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "rémission = فروکش کردن (بیماری)"
+      },
+      {
+        "type": "mcq",
+        "question": "Les personnes âgées et les enfants sont plus ____ aux virus hivernaux.",
+        "options": [
+          "vulnérables",
+          "invincibles",
+          "forts",
+          "puissants"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "vulnérable = آسیب‌پذیر"
+      },
+      {
+        "type": "mcq",
+        "question": "Sa santé est restée ____ après l'accident de voiture.",
+        "options": [
+          "fragile",
+          "solide",
+          "robuste",
+          "résistante"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "fragile = شکننده"
+      },
+      {
+        "type": "binary",
+        "question": "Le manque de sommeil et une mauvaise alimentation peuvent fragiliser le système immunitaire.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - fragiliser = سست کردن، آسیب‌پذیر کردن"
+      },
+      {
+        "type": "binary",
+        "question": "Une tumeur bénigne est une tumeur dangereuse qui se propage rapidement dans tout le corps.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - bénin به معنای بی‌آزار و خوش‌خیم است، نه خطرناک."
+      },
+      {
+        "type": "mcq",
+        "question": "La fièvre et la toux sont des ____ courants de la grippe.",
+        "options": [
+          "symptômes",
+          "joies",
+          "succès",
+          "cadeaux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "symptôme = علامت، نشانه"
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ de grippe a touché toute la région cet hiver.",
+        "options": [
+          "épidémie",
+          "fête",
+          "célébration",
+          "prospérité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "épidémie = همه‌گیری"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ mondiale a changé nos habitudes de vie et de travail pour toujours.",
+        "options": [
+          "pandémie",
+          "paix",
+          "harmonie",
+          "tranquillité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "pandémie = بیماری جهانی"
+      },
+      {
+        "type": "mcq",
+        "question": "La méditation et le sport favorisent le ____ physique et mental.",
+        "options": [
+          "bien-être",
+          "mal-être",
+          "souffrance",
+          "douleur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "bien-être = رفاه، سلامت"
+      },
+      {
+        "type": "binary",
+        "question": "La santé est souvent considérée comme le bien le plus précieux de l'être humain.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - santé = سلامت"
+      },
+      {
+        "type": "binary",
+        "question": "Les infirmiers et les médecins prodiguent des soins pour aider les patients à aller mieux.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - soin = مراقبت، درمان"
+      }
+    ]
+  }
+}
