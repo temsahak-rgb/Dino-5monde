@@ -1,0 +1,522 @@
+{
+  "id": "droits_justice",
+  "level": "B2",
+  "theme": "Les droits et la justice",
+  "theme_fa": "حقوق و عدالت",
+  "icon": "⚖️",
+  "inspiration": "Le Comte de Monte-Cristo",
+  "words": [
+    {
+      "fr": "le droit (m)",
+      "fa": "حق، قانون",
+      "emoji": "📜",
+      "difficulty": 3,
+      "ex": "Chacun a le droit d'être entendu équitablement.",
+      "ex_fa": "هر کس حق دارد به‌طور عادلانه شنیده شود."
+    },
+    {
+      "fr": "les droits (m.pl)",
+      "fa": "حقوق",
+      "emoji": "🕊️",
+      "difficulty": 3,
+      "ex": "Les droits de l'homme sont universels.",
+      "ex_fa": "حقوق بشر جهانی هستند."
+    },
+    {
+      "fr": "la justice (f)",
+      "fa": "عدالت",
+      "emoji": "⚖️",
+      "difficulty": 3,
+      "ex": "La justice doit être aveugle et impartiale.",
+      "ex_fa": "عدالت باید کور و بی‌طرف باشد."
+    },
+    {
+      "fr": "juste",
+      "fa": "عادلانه",
+      "emoji": "✅",
+      "difficulty": 3,
+      "ex": "C'est une décision juste et méritée.",
+      "ex_fa": "این یک تصمیم عادلانه و شایسته است."
+    },
+    {
+      "fr": "injuste",
+      "fa": "ناعادلانه",
+      "emoji": "❌",
+      "difficulty": 3,
+      "ex": "Il est injuste de le punir sans preuve.",
+      "ex_fa": "تنبیه او بدون مدرک ناعادلانه است."
+    },
+    {
+      "fr": "l'injustice (f)",
+      "fa": "بی‌عدالتی",
+      "emoji": "⚠️",
+      "difficulty": 4,
+      "ex": "Il ne peut pas tolérer cette injustice flagrante.",
+      "ex_fa": "او نمی‌تواند این بی‌عدالتی آشکار را تحمل کند."
+    },
+    {
+      "fr": "le tribunal (m)",
+      "fa": "دادگاه",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "L'affaire sera jugée devant le tribunal.",
+      "ex_fa": "پرونده در دادگاه قضاوت خواهد شد."
+    },
+    {
+      "fr": "judiciaire",
+      "fa": "قضایی",
+      "emoji": "👨‍⚖️",
+      "difficulty": 4,
+      "ex": "Le système judiciaire doit être réformé.",
+      "ex_fa": "سیستم قضایی باید اصلاح شود."
+    },
+    {
+      "fr": "le juge (m)",
+      "fa": "قاضی",
+      "emoji": "🧑‍⚖️",
+      "difficulty": 3,
+      "ex": "Le juge a rendu son verdict ce matin.",
+      "ex_fa": "قاضی حکم خود را صبح امروز صادر کرد."
+    },
+    {
+      "fr": "juger",
+      "fa": "قضاوت کردن",
+      "emoji": "🔨",
+      "difficulty": 3,
+      "ex": "Il ne faut pas juger les gens sur leur apparence.",
+      "ex_fa": "نباید مردم را بر اساس ظاهرشان قضاوت کرد."
+    },
+    {
+      "fr": "l'avocat (m)",
+      "fa": "وکیل",
+      "emoji": "💼",
+      "difficulty": 3,
+      "ex": "L'avocat a présenté une défense brillante.",
+      "ex_fa": "وکیل یک دفاع درخشان ارائه داد."
+    },
+    {
+      "fr": "la défense (f)",
+      "fa": "دفاع",
+      "emoji": "🛡️",
+      "difficulty": 4,
+      "ex": "La défense a appelé un témoin à la barre.",
+      "ex_fa": "دفاع یک شاهد را به پای میز احضار کرد."
+    },
+    {
+      "fr": "défendre",
+      "fa": "دفاع کردن",
+      "emoji": "🤺",
+      "difficulty": 3,
+      "ex": "Son rôle est de défendre les intérêts de son client.",
+      "ex_fa": "نقش او دفاع از منافع موکلش است."
+    },
+    {
+      "fr": "l'accusation (f)",
+      "fa": "اتهام",
+      "emoji": "👉",
+      "difficulty": 4,
+      "ex": "L'accusation repose sur des preuves solides.",
+      "ex_fa": "اتهام بر اساس مدارک محکم استوار است."
+    },
+    {
+      "fr": "accuser",
+      "fa": "متهم کردن",
+      "emoji": "🚨",
+      "difficulty": 4,
+      "ex": "On ne peut pas l'accuser sans preuves.",
+      "ex_fa": "نمی‌توان او را بدون مدرک متهم کرد."
+    },
+    {
+      "fr": "innocent(e)",
+      "fa": "بی‌گناه",
+      "emoji": "🕊️",
+      "difficulty": 3,
+      "ex": "Le jury a déclaré l'accusé innocent.",
+      "ex_fa": "هیئت داوران متهم را بی‌گناه اعلام کرد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un procès équitable",
+      "title_fa": "یک دادرسی عادلانه",
+      "text": "Devant le {{BLANK_1}}, tout le monde attendait la décision finale avec impatience. L'{{BLANK_2}} a pris la parole pour organiser la {{BLANK_3}} de son client avec beaucoup de professionnalisme et de calme. Il était absolument crucial de prouver que l'homme était {{BLANK_4}} et n'avait commis aucun délit dans cette affaire. Il est totalement {{BLANK_5}} de condamner quelqu'un sans preuves solides et vérifiables. En France, chacun a le droit fondamental d'être entendu équitablement, et il est interdit de {{BLANK_6}} une personne uniquement sur la base de rumeurs ou de préjugés.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "tribunal",
+          "options": [
+            "tribunal",
+            "hôpital",
+            "école",
+            "magasin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "avocat",
+          "options": [
+            "avocat",
+            "médecin",
+            "professeur",
+            "vendeur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "défense",
+          "options": [
+            "défense",
+            "attaque",
+            "fuite",
+            "silence"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "innocent",
+          "options": [
+            "innocent",
+            "coupable",
+            "dangereux",
+            "coupable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "injuste",
+          "options": [
+            "injuste",
+            "juste",
+            "logique",
+            "normal"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "juger",
+          "options": [
+            "juger",
+            "aider",
+            "écouter",
+            "protéger"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le poids de la culpabilité",
+      "title_fa": "سنگینی گناه",
+      "inspiration": "Le Comte de Monte-Cristo",
+      "text": "Dans la salle d'audience sombre, l'ombre de l'{{BLANK_1}} pesa lourdement sur l'accusé. Depuis des mois, il subissait une {{BLANK_2}} flagrante, car on avait osé l'{{BLANK_3}} d'un crime qu'il n'avait pas commis. Son représentant se leva pour le {{BLANK_4}} avec une éloquence remarquable et une conviction inébranlable. Il démontra que les charges reposaient sur des preuves fragiles et des témoignages contradictoires. Le {{BLANK_5}}, assis derrière son pupitre en bois massif, écouta chaque mot avec une attention soutenue. Il savait que son rôle n'était pas seulement d'appliquer la loi, mais de rendre une décision {{BLANK_6}}. Chaque citoyen possède des {{BLANK_7}} fondamentaux que le système {{BLANK_8}} doit protéger à tout prix. Finalement, le verdict fut rendu : l'homme était libre, et la {{BLANK_9}} avait triomphé de l'obscurité, rappelant à tous que le {{BLANK_10}} à un procès équitable est sacré.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "injustice",
+          "options": [
+            "injustice",
+            "justice",
+            "chance",
+            "bonheur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "accusation",
+          "options": [
+            "accusation",
+            "défense",
+            "récompense",
+            "vérité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "accuser",
+          "options": [
+            "accuser",
+            "défendre",
+            "aider",
+            "protéger"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "défendre",
+          "options": [
+            "défendre",
+            "accuser",
+            "abandonner",
+            "trahir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "juge",
+          "options": [
+            "juge",
+            "avocat",
+            "témoin",
+            "coupable"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "juste",
+          "options": [
+            "juste",
+            "injuste",
+            "rapide",
+            "secrète"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "droits",
+          "options": [
+            "droits",
+            "devoirs",
+            "rêves",
+            "peurs"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "judiciaire",
+          "options": [
+            "judiciaire",
+            "médical",
+            "scolaire",
+            "militaire"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "justice",
+          "options": [
+            "justice",
+            "injustice",
+            "corruption",
+            "vengeance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "droit",
+          "options": [
+            "droit",
+            "devoir",
+            "hasard",
+            "secret"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Droits et justice",
+    "title_fa": "آزمون : حقوق و عدالت",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Chacun a le ____ d'être entendu équitablement par la loi.",
+        "options": [
+          "droit",
+          "devoir",
+          "hasard",
+          "secret"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "le droit = حق، قانون"
+      },
+      {
+        "type": "mcq",
+        "question": "Les ____ de l'homme sont universels et inaliénables.",
+        "options": [
+          "droits",
+          "devoirs",
+          "rêves",
+          "peurs"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "les droits = حقوق"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ doit être aveugle et impartiale pour être efficace.",
+        "options": [
+          "justice",
+          "injustice",
+          "corruption",
+          "vengeance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "la justice = عدالت"
+      },
+      {
+        "type": "mcq",
+        "question": "C'est une décision ____ et méritée après un long débat.",
+        "options": [
+          "juste",
+          "injuste",
+          "rapide",
+          "secrète"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "juste = عادلانه"
+      },
+      {
+        "type": "mcq",
+        "question": "Il est ____ de punir quelqu'un sans preuves solides.",
+        "options": [
+          "injuste",
+          "juste",
+          "logique",
+          "normal"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "injuste = ناعادلانه"
+      },
+      {
+        "type": "mcq",
+        "question": "Il ne peut pas tolérer cette ____ flagrante dans son entreprise.",
+        "options": [
+          "injustice",
+          "justice",
+          "chance",
+          "bonheur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "l'injustice = بی‌عدالتی"
+      },
+      {
+        "type": "mcq",
+        "question": "L'affaire sera jugée devant le ____ de grande instance.",
+        "options": [
+          "tribunal",
+          "hôpital",
+          "école",
+          "magasin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "le tribunal = دادگاه"
+      },
+      {
+        "type": "mcq",
+        "question": "Le système ____ doit être réformé pour plus d'efficacité.",
+        "options": [
+          "judiciaire",
+          "médical",
+          "scolaire",
+          "militaire"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "judiciaire = قضایی"
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ a rendu son verdict ce matin après délibération.",
+        "options": [
+          "juge",
+          "avocat",
+          "témoin",
+          "coupable"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "le juge = قاضی"
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ a présenté une défense brillante et convaincante.",
+        "options": [
+          "avocat",
+          "médecin",
+          "professeur",
+          "vendeur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "l'avocat = وکیل"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ a appelé un nouveau témoin à la barre aujourd'hui.",
+        "options": [
+          "défense",
+          "attaque",
+          "fuite",
+          "silence"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "la défense = دفاع"
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ repose sur des preuves solides et des témoignages.",
+        "options": [
+          "accusation",
+          "défense",
+          "récompense",
+          "vérité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "l'accusation = اتهام"
+      },
+      {
+        "type": "binary",
+        "question": "Défendre quelqu'un signifie protéger ses intérêts et ses droits.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - défendre = دفاع کردن"
+      },
+      {
+        "type": "binary",
+        "question": "Accuser une personne sans preuve est une pratique légale et encouragée.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - accuser بدون مدرک ناعادلانه و غیرقانونی است."
+      },
+      {
+        "type": "binary",
+        "question": "Une personne innocente est quelqu'un qui n'a pas commis le crime dont on l'accuse.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - innocent = بی‌گناه"
+      },
+      {
+        "type": "binary",
+        "question": "Juger les gens uniquement sur leur apparence est une méthode fiable et objective.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - juger بر اساس ظاهر، ناعادلانه و غیرمنطقی است."
+      }
+    ]
+  }
+}
