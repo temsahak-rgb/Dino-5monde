@@ -1,206 +1,507 @@
 /**
- * Initial language, learning-path, and adaptive placement onboarding flow.
+ * Onboarding and placement-test controller.
+ *
+ * This file owns:
+ * - interface-language selection
+ * - learning-path selection
+ * - placement-test orchestration
+ * - placement answer interaction
+ * - CEFR result persistence
+ *
+ * All HTML generation is delegated to
+ * `src/ui/views/onboardingView.ts`.
  */
 
-/** Displays the interface-language selection page. */
+/**
+ * Displays the interface-language selection page.
+ */
 function showLanguage(): void {
-    const lang = getLanguage();
-    const t = texts[lang];
+    app.innerHTML =
+        renderLanguageSelectionView();
 
-    app.innerHTML = `<div style="max-width:400px;margin:80px auto;padding:0 16px;text-align:center;">
-        <div style="font-size:64px;margin-bottom:20px;">🦖</div>
-        <h1 style="font-size:24px;color:#1a1a1a;margin-bottom:8px;">${t.title}</h1>
-        <p style="font-size:14px;color:#777;margin-bottom:30px;">${t.chooseLanguage}</p>
-        <button id="fr" style="width:100%;padding:14px;margin-bottom:10px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:16px;color:#1a1a1a;cursor:pointer;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#ddd'">${t.french}</button>
-        <button id="fa" style="width:100%;padding:14px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:16px;color:#1a1a1a;cursor:pointer;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#ddd'">${t.persian}</button>
-    </div>`;
-
-    getRequiredElement<HTMLButtonElement>("fr").onclick = () => {
-        localStorage.setItem("language", "fr");
-        showPath();
+    getRequiredElement<HTMLButtonElement>(
+        "fr"
+    ).onclick = () => {
+        selectInterfaceLanguage(
+            "fr"
+        );
     };
-    getRequiredElement<HTMLButtonElement>("fa").onclick = () => {
-        localStorage.setItem("language", "fa");
-        showPath();
+
+    getRequiredElement<HTMLButtonElement>(
+        "fa"
+    ).onclick = () => {
+        selectInterfaceLanguage(
+            "fa"
+        );
     };
 }
 
-/** Displays the learning-path selection page. */
+/**
+ * Applies the selected interface language and continues onboarding.
+ *
+ * `setI18nLanguage()` synchronizes localStorage, the HTML `lang` attribute,
+ * writing direction and document title.
+ *
+ * @param language - Selected interface language.
+ */
+function selectInterfaceLanguage(
+    language: Language
+): void {
+    setI18nLanguage(
+        language
+    );
+
+    showPath();
+}
+
+/**
+ * Displays the learning-path selection page.
+ */
 function showPath(): void {
-    const lang = getLanguage();
-    const t = texts[lang];
+    app.innerHTML =
+        renderPathSelectionView();
 
-    app.innerHTML = `<div style="max-width:400px;margin:60px auto;padding:0 16px;">
-        <div style="font-size:48px;margin-bottom:16px;text-align:center;">🦖</div>
-        <button id="back" class="back-btn" style="background:none;border:none;color:#087F5B;font-size:13px;cursor:pointer;padding:0;margin-bottom:16px;">← ${t.back}</button>
-        <h1 style="font-size:22px;color:#1a1a1a;margin-bottom:20px;">${t.choosePath}</h1>
-        <button id="general" style="width:100%;padding:14px;margin-bottom:10px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:15px;color:#1a1a1a;cursor:pointer;text-align:left;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#ddd'">🇫🇷 ${t.general}</button>
-        <button id="travel" style="width:100%;padding:14px;margin-bottom:10px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:15px;color:#1a1a1a;cursor:pointer;text-align:left;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#ddd'">✈️ ${t.travel}</button>
-        <button id="daily" style="width:100%;padding:14px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:15px;color:#1a1a1a;cursor:pointer;text-align:left;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#ddd'">🏘️ ${t.daily}</button>
-    </div>`;
-
-    getRequiredElement<HTMLButtonElement>("back").onclick = showLanguage;
-    getRequiredElement<HTMLButtonElement>("general").onclick = showPlacementChoice;
-    getRequiredElement<HTMLButtonElement>("travel").onclick = () => {
-        localStorage.setItem("currentPath", "travel");
-        void showHome();
+    getRequiredElement<HTMLButtonElement>(
+        "back"
+    ).onclick = () => {
+        showLanguage();
     };
-    getRequiredElement<HTMLButtonElement>("daily").onclick = () => {
-        localStorage.setItem("currentPath", "daily");
-        void showHome();
+
+    getRequiredElement<HTMLButtonElement>(
+        "general"
+    ).onclick = () => {
+        showPlacementChoice();
+    };
+
+    getRequiredElement<HTMLButtonElement>(
+        "travel"
+    ).onclick = () => {
+        selectLearningPath(
+            "travel"
+        );
+    };
+
+    getRequiredElement<HTMLButtonElement>(
+        "daily"
+    ).onclick = () => {
+        selectLearningPath(
+            "daily"
+        );
     };
 }
 
-/** Asks whether the user wants to run the adaptive placement test. */
+/**
+ * Persists a non-general learning path and opens the application Home page.
+ *
+ * The General path preserves the historical onboarding behavior and continues
+ * through the placement flow instead.
+ *
+ * @param path - Learning path identifier.
+ */
+function selectLearningPath(
+    path: PathId
+): void {
+    localStorage.setItem(
+        "currentPath",
+        path
+    );
+
+    void showHome();
+}
+
+/**
+ * Asks whether the learner wants to run the adaptive placement test.
+ */
 function showPlacementChoice(): void {
-    const lang = getLanguage();
-    const t = texts[lang];
+    app.innerHTML =
+        renderPlacementChoiceView();
 
-    app.innerHTML = `<div style="max-width:400px;margin:60px auto;padding:0 16px;">
-        <div style="font-size:48px;margin-bottom:16px;text-align:center;">🦖</div>
-        <button id="back" class="back-btn" style="background:none;border:none;color:#087F5B;font-size:13px;cursor:pointer;padding:0;margin-bottom:16px;">← ${t.back}</button>
-        <h1 style="font-size:22px;color:#1a1a1a;margin-bottom:10px;">${t.general}</h1>
-        <p style="font-size:14px;color:#777;margin-bottom:25px;">${t.levelQuestion}</p>
-        <button id="yes" style="width:100%;padding:14px;margin-bottom:10px;border:none;border-radius:6px;background:#087F5B;color:#fff;font-size:15px;cursor:pointer;">${t.yes}</button>
-        <button id="later" style="width:100%;padding:14px;border:1px solid #ddd;border-radius:6px;background:#fff;font-size:15px;color:#1a1a1a;cursor:pointer;">${t.later}</button>
-    </div>`;
+    getRequiredElement<HTMLButtonElement>(
+        "back"
+    ).onclick = () => {
+        showPath();
+    };
 
-    getRequiredElement<HTMLButtonElement>("back").onclick = showPath;
-    getRequiredElement<HTMLButtonElement>("later").onclick = () => { void showHome(); };
-    getRequiredElement<HTMLButtonElement>("yes").onclick = () => {
+    getRequiredElement<HTMLButtonElement>(
+        "later"
+    ).onclick = () => {
+        void showHome();
+    };
+
+    getRequiredElement<HTMLButtonElement>(
+        "yes"
+    ).onclick = () => {
         resetPlacementState();
         showQuestion();
     };
 }
 
-/** Displays and wires the current adaptive placement question. */
+/**
+ * Displays and wires the current adaptive placement question.
+ *
+ * When the placement engine reports that no further question is required,
+ * the final estimated CEFR result is displayed.
+ */
 function showQuestion(): void {
-    const question = getNextQuestion();
+    const question =
+        getNextQuestion();
+
     if (!question) {
         showFinalResult();
         return;
     }
 
-    const lang = getLanguage();
-    const t = texts[lang];
-    const progress = (getPlacementState().asked.length / 15) * 100;
+    const progressPercent =
+        (
+            getPlacementState()
+                .asked
+                .length
+            / 15
+        ) * 100;
 
-    let html = `<div style="max-width:600px;margin:0 auto;padding:30px 16px;">
-        <div style="text-align:center;font-size:32px;margin-bottom:16px;">🦖</div>
-        <div style="background:#e0e0e0;height:4px;border-radius:2px;margin-bottom:25px;overflow:hidden;">
-            <div style="background:#087F5B;height:100%;width:${progress}%;transition:width 0.3s;"></div>
-        </div>
-        <div style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:30px;">
-            <p class="ltr-lock" style="font-size:18px;margin:0 0 25px;line-height:1.6;color:#1a1a1a;font-weight:500;">${question.question}</p>
-            <div style="display:flex;flex-direction:column;gap:10px;">`;
+    app.innerHTML =
+        renderPlacementQuestionView(
+            question,
+            progressPercent
+        );
 
-    question.options.forEach((option, index) => {
-        html += `<button class="option-btn ltr-lock" data-index="${index}" style="width:100%;padding:14px;font-size:15px;border:1px solid #e0e0e0;border-radius:6px;background:#fafafa;color:#1a1a1a;cursor:pointer;text-align:left;transition:all 0.15s;font-weight:500;">${option}</button>`;
-    });
+    bindPlacementQuestionEvents(
+        question
+    );
+}
 
-    html += `</div><button id="dont-know" style="width:100%;margin-top:15px;padding:12px;font-size:14px;border:1px solid #dc2626;border-radius:6px;background:#fff;color:#dc2626;cursor:pointer;font-weight:600;">${t.dontKnow}</button></div></div>`;
-    app.innerHTML = html;
+/**
+ * Binds answer interactions for one placement question.
+ *
+ * @param question - Currently displayed placement question.
+ */
+function bindPlacementQuestionEvents(
+    question: PlacementQuestion
+): void {
+    const optionButtons =
+        queryElements<HTMLButtonElement>(
+            ".option-btn"
+        );
 
-    const optionButtons = queryElements<HTMLButtonElement>(".option-btn");
-    const dontKnowButton = getRequiredElement<HTMLButtonElement>("dont-know");
+    const dontKnowButton =
+        getRequiredElement<HTMLButtonElement>(
+            "dont-know"
+        );
 
     optionButtons.forEach(button => {
         button.onclick = () => {
-            const selectedIndex = Number.parseInt(button.dataset.index || "-1", 10);
-            const correct = selectedIndex === question.correctIndex;
-            answerPlacement(correct);
+            const selectedIndex =
+                Number.parseInt(
+                    button.dataset.index
+                    ?? "-1",
+                    10
+                );
 
-            if (correct) {
-                button.style.background = "#d4edda";
-                button.style.borderColor = "#28a745";
-                button.style.color = "#155724";
-            } else {
-                button.style.background = "#f8d7da";
-                button.style.borderColor = "#dc3545";
-                button.style.color = "#721c24";
-                const correctButton = optionButtons[question.correctIndex];
-                if (correctButton) {
-                    correctButton.style.background = "#d4edda";
-                    correctButton.style.borderColor = "#28a745";
-                    correctButton.style.color = "#155724";
-                }
+            if (
+                selectedIndex < 0
+                || selectedIndex
+                    >= question.options.length
+            ) {
+                return;
             }
 
-            optionButtons.forEach(candidate => {
-                candidate.onclick = null;
-                candidate.style.cursor = "default";
-            });
-            dontKnowButton.onclick = null;
-            dontKnowButton.style.cursor = "default";
-            window.setTimeout(showQuestion, 1500);
+            handlePlacementAnswer(
+                question,
+                selectedIndex,
+                button,
+                optionButtons,
+                dontKnowButton
+            );
         };
     });
 
     dontKnowButton.onclick = () => {
-        answerPlacement(null);
-        dontKnowButton.style.backgroundColor = "#f8d7da";
-        dontKnowButton.style.color = "#721c24";
-
-        const correctButton = optionButtons[question.correctIndex];
-        if (correctButton) {
-            correctButton.style.backgroundColor = "#d4edda";
-            correctButton.style.color = "#155724";
-            correctButton.style.borderColor = "#28a745";
-        }
-
-        optionButtons.forEach(button => {
-            button.onclick = null;
-            button.style.cursor = "default";
-        });
-        dontKnowButton.onclick = null;
-        dontKnowButton.style.cursor = "default";
-        window.setTimeout(showQuestion, 1500);
+        handleUnknownPlacementAnswer(
+            question,
+            optionButtons,
+            dontKnowButton
+        );
     };
 }
 
-/** Displays the adaptive placement result. */
+/**
+ * Handles a concrete placement answer.
+ *
+ * @param question - Active placement question.
+ * @param selectedIndex - Selected answer index.
+ * @param selectedButton - Selected option button.
+ * @param optionButtons - All answer buttons.
+ * @param dontKnowButton - "I don't know" button.
+ */
+function handlePlacementAnswer(
+    question: PlacementQuestion,
+    selectedIndex: number,
+    selectedButton: HTMLButtonElement,
+    optionButtons: NodeListOf<HTMLButtonElement>,
+    dontKnowButton: HTMLButtonElement
+): void {
+    const correct =
+        selectedIndex
+        === question.correctIndex;
+
+    answerPlacement(
+        correct
+    );
+
+    applyPlacementAnswerStyles(
+        selectedButton,
+        optionButtons,
+        question.correctIndex,
+        correct
+    );
+
+    disablePlacementQuestionControls(
+        optionButtons,
+        dontKnowButton
+    );
+
+    scheduleNextPlacementQuestion();
+}
+
+/**
+ * Handles the learner choosing "I don't know".
+ *
+ * The placement engine treats this as an unsuccessful answer while the UI
+ * highlights the expected answer for learning feedback.
+ *
+ * @param question - Active placement question.
+ * @param optionButtons - All answer buttons.
+ * @param dontKnowButton - "I don't know" button.
+ */
+function handleUnknownPlacementAnswer(
+    question: PlacementQuestion,
+    optionButtons: NodeListOf<HTMLButtonElement>,
+    dontKnowButton: HTMLButtonElement
+): void {
+    answerPlacement(
+        null
+    );
+
+    dontKnowButton.style.backgroundColor =
+        "#f8d7da";
+
+    dontKnowButton.style.color =
+        "#721c24";
+
+    const correctButton =
+        optionButtons[
+            question.correctIndex
+        ];
+
+    if (correctButton) {
+        applyPlacementCorrectStyle(
+            correctButton
+        );
+    }
+
+    disablePlacementQuestionControls(
+        optionButtons,
+        dontKnowButton
+    );
+
+    scheduleNextPlacementQuestion();
+}
+
+/**
+ * Applies feedback styles after a concrete answer.
+ *
+ * @param selectedButton - Selected answer button.
+ * @param optionButtons - All available answer buttons.
+ * @param correctIndex - Correct answer index.
+ * @param correct - Whether the learner answered correctly.
+ */
+function applyPlacementAnswerStyles(
+    selectedButton: HTMLButtonElement,
+    optionButtons: NodeListOf<HTMLButtonElement>,
+    correctIndex: number,
+    correct: boolean
+): void {
+    if (correct) {
+        applyPlacementCorrectStyle(
+            selectedButton
+        );
+
+        return;
+    }
+
+    applyPlacementIncorrectStyle(
+        selectedButton
+    );
+
+    const correctButton =
+        optionButtons[
+            correctIndex
+        ];
+
+    if (correctButton) {
+        applyPlacementCorrectStyle(
+            correctButton
+        );
+    }
+}
+
+/**
+ * Applies the visual state of a correct placement answer.
+ *
+ * @param button - Answer button.
+ */
+function applyPlacementCorrectStyle(
+    button: HTMLButtonElement
+): void {
+    button.style.background =
+        "#d4edda";
+
+    button.style.borderColor =
+        "#28a745";
+
+    button.style.color =
+        "#155724";
+}
+
+/**
+ * Applies the visual state of an incorrect placement answer.
+ *
+ * @param button - Answer button.
+ */
+function applyPlacementIncorrectStyle(
+    button: HTMLButtonElement
+): void {
+    button.style.background =
+        "#f8d7da";
+
+    button.style.borderColor =
+        "#dc3545";
+
+    button.style.color =
+        "#721c24";
+}
+
+/**
+ * Disables placement controls once an answer has been submitted.
+ *
+ * @param optionButtons - Placement option buttons.
+ * @param dontKnowButton - "I don't know" button.
+ */
+function disablePlacementQuestionControls(
+    optionButtons: NodeListOf<HTMLButtonElement>,
+    dontKnowButton: HTMLButtonElement
+): void {
+    optionButtons.forEach(button => {
+        button.onclick = null;
+        button.style.cursor =
+            "default";
+    });
+
+    dontKnowButton.onclick = null;
+    dontKnowButton.style.cursor =
+        "default";
+}
+
+/**
+ * Opens the next placement question after the feedback delay.
+ */
+function scheduleNextPlacementQuestion(): void {
+    window.setTimeout(
+        showQuestion,
+        1500
+    );
+}
+
+/**
+ * Displays the adaptive placement result.
+ */
 function showFinalResult(): void {
-    const levelInfo = getEstimatedLevelRange();
-    const lang = getLanguage();
-    const t = texts[lang];
+    const levelInfo =
+        getEstimatedLevelRange();
 
-    app.innerHTML = `<div style="text-align:center;padding:50px 16px;max-width:500px;margin:0 auto;">
-        <div style="font-size:48px;margin-bottom:16px;">🦖</div>
-        <h1 style="font-size:24px;color:#1a1a1a;margin-bottom:16px;">🎉 ${t.finalResult}</h1>
-        <p style="font-size:14px;color:#777;margin-bottom:8px;">${t.yourLevel} :</p>
-        <h2 style="font-size:48px;color:#087F5B;margin:15px 0;font-weight:800;">${levelInfo.range}</h2>
-        <p style="font-size:14px;color:#777;margin:20px 0;line-height:1.6;">${t.canModify}</p>
-        <button id="accept-level" style="width:100%;padding:14px;border:none;border-radius:6px;background:#087F5B;color:#fff;font-size:15px;cursor:pointer;margin-bottom:10px;font-weight:600;">${t.acceptLevel}</button>
-        <button id="change-level" style="width:100%;padding:14px;border:1px solid #087F5B;border-radius:6px;background:#fff;color:#087F5B;font-size:15px;cursor:pointer;font-weight:600;">${t.changeLevel}</button>
-    </div>`;
+    app.innerHTML =
+        renderPlacementResultView(
+            levelInfo
+        );
 
-    getRequiredElement<HTMLButtonElement>("accept-level").onclick = () => {
-        savePlacementResult(levelInfo.level);
+    getRequiredElement<HTMLButtonElement>(
+        "accept-level"
+    ).onclick = () => {
+        savePlacementResult(
+            levelInfo.level
+        );
+
         void showHome();
     };
-    getRequiredElement<HTMLButtonElement>("change-level").onclick = showLevelSelection;
+
+    getRequiredElement<HTMLButtonElement>(
+        "change-level"
+    ).onclick = () => {
+        showLevelSelection();
+    };
 }
 
-/** Displays a manual CEFR level selector. */
+/**
+ * Displays the manual CEFR level selector.
+ *
+ * C2 remains excluded here to preserve the historical onboarding behavior.
+ */
 function showLevelSelection(): void {
-    const lang = getLanguage();
-    const t = texts[lang];
-    const levels: Level[] = ["A1", "A2", "B1", "B2", "C1"];
+    const levels: readonly Level[] = [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1"
+    ];
 
-    app.innerHTML = `<div style="text-align:center;padding:50px 16px;max-width:500px;margin:0 auto;">
-        <div style="font-size:48px;margin-bottom:16px;">🦖</div>
-        <h1 style="font-size:22px;color:#1a1a1a;margin-bottom:30px;">${t.chooseYourLevel}</h1>
-        <div style="display:flex;flex-direction:column;gap:10px;">
-            ${levels.map(level => `<button class="level-btn" data-level="${level}" style="padding:14px;font-size:18px;border:1px solid #ddd;border-radius:6px;background:#fff;color:#1a1a1a;cursor:pointer;font-weight:600;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#087F5B'" onmouseout="this.style.borderColor='#ddd'">${level}</button>`).join("")}
-        </div>
-    </div>`;
+    app.innerHTML =
+        renderLevelSelectionView(
+            levels
+        );
 
-    queryElements<HTMLButtonElement>(".level-btn").forEach(button => {
+    const levelButtons =
+        queryElements<HTMLButtonElement>(
+            ".level-btn"
+        );
+
+    levelButtons.forEach(button => {
         button.onclick = () => {
-            const level = button.dataset.level as Level | undefined;
-            if (!level) return;
-            savePlacementResult(level);
+            const level =
+                button.dataset.level;
+
+            if (
+                !isSelectablePlacementLevel(
+                    level
+                )
+            ) {
+                return;
+            }
+
+            savePlacementResult(
+                level
+            );
+
             void showHome();
         };
     });
+}
+
+/**
+ * Validates a DOM value before using it as a CEFR level.
+ *
+ * @param level - Raw level value.
+ * @returns Whether the value is a supported CEFR level.
+ */
+function isSelectablePlacementLevel(
+    level: string | undefined
+): level is Level {
+    return (
+        level === "A1"
+        || level === "A2"
+        || level === "B1"
+        || level === "B2"
+        || level === "C1"
+        || level === "C2"
+    );
 }

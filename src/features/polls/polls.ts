@@ -1,104 +1,366 @@
 /**
- * Weekly poll renderer and local vote persistence.
+ * Weekly poll controller and local vote persistence.
+ *
+ * This file owns:
+ * - poll loading
+ * - local vote persistence
+ * - result aggregation
+ * - poll interaction events
+ *
+ * HTML generation is delegated to `src/ui/views/pollsView.ts`.
  */
 
-/** Renders the active weekly poll, when available. */
+let pollDelegatedEventsBound = false;
+
+/**
+ * Loads and renders the active weekly poll.
+ *
+ * The returned HTML can be embedded into another page, such as the Home page.
+ *
+ * @returns Active poll HTML, or an empty string when no poll is available.
+ */
 async function renderPollSection(): Promise<string> {
-    const lang = getLanguage();
-
     try {
-        const response = await fetch(`./data/polls/polls.json?v=${Date.now()}`);
+        const response = await fetch(
+            `./data/polls/polls.json?v=${Date.now()}`
+        );
+
         if (!response.ok) {
-            console.warn("Polls file not found");
+            console.warn(
+                "Polls file not found."
+            );
+
             return "";
         }
 
-        const pollsData = await response.json() as PollFile;
-        const poll = pollsData.activePoll;
+        const pollsData =
+            await response.json()
+                as PollFile;
+
+        const poll =
+            pollsData.activePoll;
+
         if (!poll) {
-            console.warn("No active poll");
             return "";
         }
 
-        const pollVoted = localStorage.getItem(`dino_poll_voted_${poll.id}`);
-        const pollChoice = localStorage.getItem(`dino_poll_choice_${poll.id}`);
-        let html = "";
+        const state =
+            getPollViewState(
+                poll
+            );
 
-        html += `<div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.1);margin-bottom:30px;">`;
-        html += `<div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);padding:24px 30px;">`;
-        html += `<h2 style="font-size:22px;font-weight:700;color:#fff;margin:0 0 8px;">📊 ${lang === "fa" ? "نظرسنجی هفته" : "Sondage de la semaine"}</h2>`;
-        html += `<p style="font-size:14px;color:rgba(255,255,255,0.9);margin:0;">${lang === "fa" ? "نظر شما برای ما مهم است!" : "Votre avis compte pour nous!"}</p>`;
-        html += `</div>`;
-        html += `<div style="padding:30px;">`;
-        html += `<p style="font-size:18px;font-weight:700;color:#1a1a1a;margin:0 0 24px;line-height:1.5;">${lang === "fa" ? poll.question : poll.question_fr}</p>`;
-
-        if (pollVoted && pollChoice) {
-            html += `<div style="background:#f0f9ff;border:2px solid #087F5B;border-radius:8px;padding:20px;margin-bottom:16px;">`;
-            const totalVotes = Number.parseInt(localStorage.getItem(`dino_poll_total_${poll.id}`) || "0", 10);
-
-            poll.options.forEach(option => {
-                const optionVotes = Number.parseInt(localStorage.getItem(`dino_poll_${poll.id}_${option.id}`) || "0", 10);
-                const percentage = totalVotes > 0 ? Math.round((optionVotes / totalVotes) * 100) : 0;
-                const selected = option.id === pollChoice;
-
-                html += `<div style="margin-bottom:16px;">`;
-                html += `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">`;
-                html += `<span style="font-weight:${selected ? "700" : "500"};color:${selected ? "#087F5B" : "#1a1a1a"};">`;
-                html += lang === "fa" ? option.labelFa : option.labelFr;
-                if (selected) html += " ✅";
-                html += `</span>`;
-                html += `<span style="font-weight:700;color:#087F5B;">${percentage}%</span>`;
-                html += `</div>`;
-                html += `<div style="background:#e0e0e0;border-radius:4px;height:8px;overflow:hidden;">`;
-                html += `<div style="background:${selected ? "#087F5B" : "#a7f3d0"};height:100%;width:${percentage}%;transition:width 0.5s;"></div>`;
-                html += `</div></div>`;
-            });
-
-            html += `<p style="font-size:13px;color:#777;margin:16px 0 0;text-align:center;">${lang === "fa" ? `مجموع آرا: ${totalVotes}` : `Total des votes: ${totalVotes}`}</p>`;
-            html += `</div>`;
-            html += `<button onclick="resetPoll('${poll.id}')" style="width:100%;padding:12px;font-size:14px;font-weight:600;border:1px solid #e0e0e0;border-radius:6px;background:#fff;color:#777;cursor:pointer;">🔄 ${lang === "fa" ? "تغییر رای" : "Changer mon vote"}</button>`;
-        } else {
-            poll.options.forEach(option => {
-                const label = lang === "fa" ? option.labelFa : option.labelFr;
-                html += `<button onclick="votePoll('${poll.id}', '${option.id}')" style="width:100%;padding:16px 20px;font-size:15px;font-weight:600;border:2px solid #e0e0e0;border-radius:8px;background:#fff;color:#1a1a1a;cursor:pointer;margin-bottom:12px;text-align:left;">${label}</button>`;
-            });
-        }
-
-        html += `</div></div>`;
-        return html;
+        return renderPollView(
+            poll,
+            state
+        );
     } catch (error) {
-        console.error("Poll error:", error);
+        console.error(
+            "Poll loading error:",
+            error
+        );
+
         return "";
     }
 }
 
-/** Persists a poll vote and refreshes the home page. */
-function votePoll(pollId: string, choice: string): void {
-    localStorage.setItem(`dino_poll_voted_${pollId}`, "true");
-    localStorage.setItem(`dino_poll_choice_${pollId}`, choice);
+/**
+ * Builds the presentation state of a poll from locally persisted vote data.
+ *
+ * @param poll - Active poll definition.
+ * @returns Current vote and result state.
+ */
+function getPollViewState(
+    poll: Poll
+): PollViewState {
+    const voted =
+        localStorage.getItem(
+            `dino_poll_voted_${poll.id}`
+        ) === "true";
 
-    const currentCount = Number.parseInt(localStorage.getItem(`dino_poll_${pollId}_${choice}`) || "0", 10);
-    localStorage.setItem(`dino_poll_${pollId}_${choice}`, String(currentCount + 1));
+    const selectedOptionId =
+        localStorage.getItem(
+            `dino_poll_choice_${poll.id}`
+        );
 
-    const totalVotes = Number.parseInt(localStorage.getItem(`dino_poll_total_${pollId}`) || "0", 10);
-    localStorage.setItem(`dino_poll_total_${pollId}`, String(totalVotes + 1));
+    const totalVotes =
+        Number.parseInt(
+            localStorage.getItem(
+                `dino_poll_total_${poll.id}`
+            )
+            || "0",
+            10
+        );
+
+    const optionVotes =
+        poll.options.reduce<
+            Record<string, number>
+        >(
+            (
+                votes,
+                option
+            ) => {
+                votes[option.id] =
+                    Number.parseInt(
+                        localStorage.getItem(
+                            `dino_poll_${poll.id}_${option.id}`
+                        )
+                        || "0",
+                        10
+                    );
+
+                return votes;
+            },
+            {}
+        );
+
+    return {
+        voted,
+        selectedOptionId,
+        totalVotes,
+        optionVotes
+    };
+}
+
+/**
+ * Persists one vote and refreshes the Home page.
+ *
+ * @param pollId - Poll identifier.
+ * @param choice - Selected option identifier.
+ */
+function votePoll(
+    pollId: string,
+    choice: string
+): void {
+    localStorage.setItem(
+        `dino_poll_voted_${pollId}`,
+        "true"
+    );
+
+    localStorage.setItem(
+        `dino_poll_choice_${pollId}`,
+        choice
+    );
+
+    const currentCount =
+        Number.parseInt(
+            localStorage.getItem(
+                `dino_poll_${pollId}_${choice}`
+            )
+            || "0",
+            10
+        );
+
+    localStorage.setItem(
+        `dino_poll_${pollId}_${choice}`,
+        String(
+            currentCount + 1
+        )
+    );
+
+    const totalVotes =
+        Number.parseInt(
+            localStorage.getItem(
+                `dino_poll_total_${pollId}`
+            )
+            || "0",
+            10
+        );
+
+    localStorage.setItem(
+        `dino_poll_total_${pollId}`,
+        String(
+            totalVotes + 1
+        )
+    );
 
     void showHome();
 }
 
-/** Removes the previous poll vote so the user can vote again. */
-function resetPoll(pollId: string): void {
-    const previousChoice = localStorage.getItem(`dino_poll_choice_${pollId}`);
+/**
+ * Removes the learner's previous vote so another option can be selected.
+ *
+ * The locally aggregated counters are decremented consistently before the vote
+ * marker is removed.
+ *
+ * @param pollId - Poll identifier.
+ */
+function resetPoll(
+    pollId: string
+): void {
+    const previousChoice =
+        localStorage.getItem(
+            `dino_poll_choice_${pollId}`
+        );
 
     if (previousChoice) {
-        const previousCount = Number.parseInt(localStorage.getItem(`dino_poll_${pollId}_${previousChoice}`) || "1", 10);
-        localStorage.setItem(`dino_poll_${pollId}_${previousChoice}`, String(Math.max(0, previousCount - 1)));
+        decrementPollOptionVote(
+            pollId,
+            previousChoice
+        );
 
-        const totalVotes = Number.parseInt(localStorage.getItem(`dino_poll_total_${pollId}`) || "1", 10);
-        localStorage.setItem(`dino_poll_total_${pollId}`, String(Math.max(0, totalVotes - 1)));
+        decrementPollTotal(
+            pollId
+        );
     }
 
-    localStorage.removeItem(`dino_poll_voted_${pollId}`);
-    localStorage.removeItem(`dino_poll_choice_${pollId}`);
+    localStorage.removeItem(
+        `dino_poll_voted_${pollId}`
+    );
+
+    localStorage.removeItem(
+        `dino_poll_choice_${pollId}`
+    );
+
     void showHome();
 }
+
+/**
+ * Decrements a persisted option counter without allowing negative values.
+ *
+ * @param pollId - Poll identifier.
+ * @param optionId - Option identifier.
+ */
+function decrementPollOptionVote(
+    pollId: string,
+    optionId: string
+): void {
+    const storageKey =
+        `dino_poll_${pollId}_${optionId}`;
+
+    const currentCount =
+        Number.parseInt(
+            localStorage.getItem(
+                storageKey
+            )
+            || "0",
+            10
+        );
+
+    localStorage.setItem(
+        storageKey,
+        String(
+            Math.max(
+                0,
+                currentCount - 1
+            )
+        )
+    );
+}
+
+/**
+ * Decrements the persisted total-vote counter without allowing negative
+ * values.
+ *
+ * @param pollId - Poll identifier.
+ */
+function decrementPollTotal(
+    pollId: string
+): void {
+    const storageKey =
+        `dino_poll_total_${pollId}`;
+
+    const totalVotes =
+        Number.parseInt(
+            localStorage.getItem(
+                storageKey
+            )
+            || "0",
+            10
+        );
+
+    localStorage.setItem(
+        storageKey,
+        String(
+            Math.max(
+                0,
+                totalVotes - 1
+            )
+        )
+    );
+}
+
+/**
+ * Installs delegated poll interaction handlers.
+ *
+ * Poll HTML may be rendered as part of another page after this script has
+ * loaded. Delegation on the persistent application root therefore avoids
+ * inline HTML handlers and remains valid after `app.innerHTML` changes.
+ */
+function bindPollDelegatedEvents(): void {
+    if (pollDelegatedEventsBound) {
+        return;
+    }
+
+    app.addEventListener(
+        "click",
+        event => {
+            const target =
+                event.target;
+
+            if (
+                !(target instanceof Element)
+            ) {
+                return;
+            }
+
+            const optionButton =
+                target.closest<HTMLButtonElement>(
+                    ".poll-option-btn"
+                );
+
+            if (
+                optionButton
+                && app.contains(
+                    optionButton
+                )
+            ) {
+                const pollId =
+                    optionButton.dataset.pollId;
+
+                const optionId =
+                    optionButton.dataset.optionId;
+
+                if (
+                    pollId
+                    && optionId
+                ) {
+                    votePoll(
+                        pollId,
+                        optionId
+                    );
+                }
+
+                return;
+            }
+
+            const resetButton =
+                target.closest<HTMLButtonElement>(
+                    "#poll-reset-btn"
+                );
+
+            if (
+                !resetButton
+                || !app.contains(
+                    resetButton
+                )
+            ) {
+                return;
+            }
+
+            const pollId =
+                resetButton.dataset.pollId;
+
+            if (!pollId) {
+                return;
+            }
+
+            resetPoll(
+                pollId
+            );
+        }
+    );
+
+    pollDelegatedEventsBound = true;
+}
+
+bindPollDelegatedEvents();

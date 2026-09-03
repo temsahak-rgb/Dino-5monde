@@ -1,0 +1,361 @@
+/**
+ * Presentation layer for the application home page.
+ *
+ * This file owns the HTML structure of the home screen. Application state,
+ * data loading and navigation remain outside the view layer.
+ */
+
+/**
+ * Renders the personalized home page.
+ *
+ * @param level - Current CEFR level of the learner.
+ * @param newsHtml - Pre-rendered dynamic news section.
+ * @returns Complete home-page HTML.
+ */
+function renderHomeView(
+    level: Level,
+    newsHtml: string
+): string {
+    return `
+        ${renderNavbar()}
+
+        <div style="
+            max-width:960px;
+            margin:0 auto;
+            padding:32px 20px 60px;
+        ">
+            ${renderHomeHeader(level)}
+
+            ${newsHtml}
+
+            ${renderHomeHighlights()}
+        </div>
+    `;
+}
+
+/**
+ * Renders the greeting and current learner level.
+ *
+ * @param level - Current CEFR level.
+ * @returns Home header HTML.
+ */
+function renderHomeHeader(
+    level: Level
+): string {
+    return `
+        <div style="
+            display:flex;
+            align-items:center;
+            gap:16px;
+            margin-bottom:8px;
+        ">
+            <span style="
+                font-size:48px;
+                line-height:1;
+            ">
+                🦖
+            </span>
+
+            <h1 style="
+                font-size:30px;
+                font-weight:700;
+                color:#1a1a1a;
+                margin:0;
+            ">
+                ${t("home.greeting")}
+            </h1>
+        </div>
+
+        <p style="
+            font-size:17px;
+            color:#777;
+            margin:0 0 36px;
+        ">
+            ${level} · ${t("home.currentLevel")}
+        </p>
+    `;
+}
+
+/**
+ * Renders the static editorial highlights displayed under the news section.
+ *
+ * @returns Highlight section HTML.
+ */
+function renderHomeHighlights(): string {
+    return `
+        <div style="margin-bottom:45px;">
+            ${sectionHeader(
+                t("home.newsAdvice"),
+                "",
+                getLanguage()
+            )}
+
+            <div style="
+                display:grid;
+                grid-template-columns:repeat(
+                    auto-fill,
+                    minmax(280px, 1fr)
+                );
+                gap:14px;
+            ">
+                ${renderHomeGrammarCard()}
+                ${renderHomeDailyCard()}
+                ${renderHomeTravelCard()}
+                ${renderHomeTipCard()}
+            </div>
+        </div>
+    `;
+}
+
+/**
+ * Renders the grammar editorial card.
+ *
+ * @returns Grammar highlight HTML.
+ */
+function renderHomeGrammarCard(): string {
+    return `
+        <article style="
+            background:#fff;
+            border:1px solid #e0e0e0;
+            border-radius:8px;
+            overflow:hidden;
+            cursor:pointer;
+            grid-column:span 2;
+        ">
+            <div style="
+                height:180px;
+                background:linear-gradient(
+                    135deg,
+                    #e8f5f0,
+                    #d0ebe1
+                );
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                font-size:64px;
+            ">
+                📖
+            </div>
+
+            <div style="padding:18px;">
+                <p style="
+                    font-size:12px;
+                    font-weight:700;
+                    color:#087F5B;
+                    text-transform:uppercase;
+                    letter-spacing:1px;
+                    margin:0 0 10px;
+                ">
+                    ${t("home.grammarLabel")}
+                </p>
+
+                <h3 style="
+                    font-size:18px;
+                    font-weight:600;
+                    color:#1a1a1a;
+                    margin:0 0 10px;
+                    line-height:1.4;
+                ">
+                    ${t("home.grammarTitle")}
+                </h3>
+
+                <p style="
+                    font-size:13px;
+                    color:#888;
+                    margin:0;
+                ">
+                    ${t("home.grammarMeta")}
+                </p>
+            </div>
+        </article>
+    `;
+}
+
+/**
+ * Renders the daily-life editorial card.
+ *
+ * @returns Daily-life highlight HTML.
+ */
+function renderHomeDailyCard(): string {
+    return `
+        <article style="
+            background:#fff;
+            border:1px solid #e0e0e0;
+            border-radius:8px;
+            overflow:hidden;
+            cursor:pointer;
+        ">
+            <div style="
+                height:120px;
+                background:linear-gradient(
+                    135deg,
+                    #fef3e2,
+                    #fde5c8
+                );
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                font-size:48px;
+            ">
+                🏦
+            </div>
+
+            <div style="padding:16px;">
+                <p style="
+                    font-size:12px;
+                    font-weight:700;
+                    color:#d97706;
+                    text-transform:uppercase;
+                    letter-spacing:1px;
+                    margin:0 0 8px;
+                ">
+                    ${t("home.dailyLabel")}
+                </p>
+
+                <h3 style="
+                    font-size:16px;
+                    font-weight:600;
+                    color:#1a1a1a;
+                    margin:0 0 8px;
+                    line-height:1.4;
+                ">
+                    ${t("home.dailyTitle")}
+                </h3>
+
+                <p style="
+                    font-size:13px;
+                    color:#888;
+                    margin:0;
+                ">
+                    ${t("home.dailyMeta")}
+                </p>
+            </div>
+        </article>
+    `;
+}
+
+/**
+ * Renders the travel editorial card.
+ *
+ * @returns Travel highlight HTML.
+ */
+function renderHomeTravelCard(): string {
+    return `
+        <article style="
+            background:#fff;
+            border:1px solid #e0e0e0;
+            border-radius:8px;
+            overflow:hidden;
+            cursor:pointer;
+        ">
+            <div style="
+                height:120px;
+                background:linear-gradient(
+                    135deg,
+                    #e8f0fe,
+                    #d5e5fc
+                );
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                font-size:48px;
+            ">
+                ✈️
+            </div>
+
+            <div style="padding:16px;">
+                <p style="
+                    font-size:12px;
+                    font-weight:700;
+                    color:#2563eb;
+                    text-transform:uppercase;
+                    letter-spacing:1px;
+                    margin:0 0 8px;
+                ">
+                    ${t("home.travelLabel")}
+                </p>
+
+                <h3 style="
+                    font-size:16px;
+                    font-weight:600;
+                    color:#1a1a1a;
+                    margin:0 0 8px;
+                    line-height:1.4;
+                ">
+                    ${t("home.travelTitle")}
+                </h3>
+
+                <p style="
+                    font-size:13px;
+                    color:#888;
+                    margin:0;
+                ">
+                    ${t("home.travelMeta")}
+                </p>
+            </div>
+        </article>
+    `;
+}
+
+/**
+ * Renders the daily-tip editorial card.
+ *
+ * @returns Tip highlight HTML.
+ */
+function renderHomeTipCard(): string {
+    return `
+        <article style="
+            background:#fffbeb;
+            border:1px solid #fde68a;
+            border-radius:8px;
+            overflow:hidden;
+            cursor:pointer;
+        ">
+            <div style="
+                height:120px;
+                background:linear-gradient(
+                    135deg,
+                    #fef9c3,
+                    #fde68a
+                );
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                font-size:48px;
+            ">
+                ✨
+            </div>
+
+            <div style="padding:16px;">
+                <p style="
+                    font-size:12px;
+                    font-weight:700;
+                    color:#b45309;
+                    text-transform:uppercase;
+                    letter-spacing:1px;
+                    margin:0 0 8px;
+                ">
+                    ✨ ${t("home.tipLabel")}
+                </p>
+
+                <h3 style="
+                    font-size:16px;
+                    font-weight:600;
+                    color:#1a1a1a;
+                    margin:0 0 8px;
+                    line-height:1.4;
+                ">
+                    ${t("home.tipTitle")}
+                </h3>
+
+                <p style="
+                    font-size:13px;
+                    color:#888;
+                    margin:0;
+                ">
+                    ${t("home.tipMeta")}
+                </p>
+            </div>
+        </article>
+    `;
+}

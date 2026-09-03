@@ -1,126 +1,270 @@
 /**
- * Travel lesson pages and navigation flow.
+ * Travel feature controller.
+ *
+ * This file owns:
+ * - Travel lesson loading
+ * - navigation
+ * - active lesson state
+ * - section selection
+ * - exercise delegation
+ * - completion persistence
+ *
+ * All HTML rendering is delegated to `src/ui/views/travelView.ts`.
  */
 
-/** Displays the complete Travel lesson catalog. */
+/**
+ * Displays the complete Travel lesson catalog.
+ */
 async function showTravelPage(): Promise<void> {
-    const lang = getLanguage();
-    const lessons = await loadTravelIndex();
-    let html = renderNavbar();
+    const lessons =
+        await loadTravelIndex();
 
-    html += `<div style="max-width:960px;margin:0 auto;padding:32px 20px 60px;">
-        <h1>✈️ ${lang === "fa" ? `سفر (${lessons.length} درس)` : `Voyage (${lessons.length} leçons)`}</h1>`;
+    app.innerHTML =
+        renderTravelCatalogView(
+            lessons
+        );
 
-    if (lessons.length === 0) {
-        html += `<p style="color:#777;">${lang === "fa" ? "هیچ درسی پیدا نشد." : "Aucune leçon trouvée."}</p>`;
-    } else {
-        html += `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:15px;">`;
-        lessons.forEach(lesson => {
-            const title = lang === "fa"
-                ? lesson.title_fa || lesson.title
-                : lesson.title || lesson.title_fa;
-
-            html += `<div onclick="showTravelLesson('${lesson.id}')" style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:20px;cursor:pointer;">
-                <div style="display:flex;align-items:center;gap:12px;">
-                    <span style="font-size:36px;">${lesson.icon || "📝"}</span>
-                    <div>
-                        <h3 style="margin:0;">${title}</h3>
-                        <p style="color:#777;font-size:13px;margin:5px 0 0;">⏱ ${lesson.estimatedTime || 25} min</p>
-                    </div>
-                </div>
-            </div>`;
-        });
-        html += `</div>`;
-    }
-
-    html += `</div>`;
-    app.innerHTML = html;
+    bindTravelCatalogEvents();
 }
 
-/** Displays one Travel lesson and its section cards. */
-async function showTravelLesson(lessonId: string): Promise<void> {
-    const lang = getLanguage();
+/**
+ * Binds navigation events to Travel lesson cards.
+ */
+function bindTravelCatalogEvents(): void {
+    const lessonCards =
+        queryElements<HTMLButtonElement>(
+            ".travel-lesson-card"
+        );
 
-    app.innerHTML = renderNavbar() + `<div style="text-align:center;padding:60px 16px;"><p style="font-size:14px;color:#777;">⏳ ...</p></div>`;
+    lessonCards.forEach(card => {
+        card.onclick = () => {
+            const lessonId =
+                card.dataset.lessonId;
 
-    const lesson = await loadTravelLesson(lessonId);
-    if (!lesson) {
-        app.innerHTML = renderNavbar() + `<div style="padding:40px;text-align:center;">
-            <p style="color:#777;">${lang === "fa" ? "درس پیدا نشد." : "Leçon introuvable."}</p>
-            <button onclick="showTravelPage()" class="back-btn">← ${lang === "fa" ? "بازگشت" : "Retour"}</button>
-        </div>`;
-        return;
-    }
+            if (!lessonId) {
+                return;
+            }
 
-    const sections = getTravelSections(lesson);
-    window.currentTravelLesson = lesson;
-    window.currentTravelLessonId = lessonId;
-
-    const title = lang === "fa"
-        ? lesson.title_fa || lesson.title
-        : lesson.title || lesson.title_fa;
-
-    let html = renderNavbar();
-    html += `<div style="max-width:900px;margin:0 auto;padding:24px 16px 60px;">
-        <button onclick="showTravelPage()" class="back-btn">← ${lang === "fa" ? "بازگشت" : "Retour"}</button>
-        <h1 style="font-size:22px;margin-bottom:6px;">${lesson.icon || "📝"} ${title}</h1>
-        <p style="color:#777;font-size:13px;margin:0 0 25px;">${sections.length}${lang === "fa" ? " بخش" : " sections"}</p>`;
-
-    sections.forEach((section, index) => {
-        const sectionTitle = (lang === "fa"
-            ? section.title_fa || section.title
-            : section.title || section.title_fa) || getTravelSectionLabel(section, lang);
-
-        const count = getTravelSectionCount(section);
-        html += `<div onclick="showMiniLesson('${lessonId}', ${index})" style="background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:16px;margin:10px 0;cursor:pointer;">
-            <span style="font-size:20px;">${getTravelSectionIcon(section)}</span>
-            <b>${sectionTitle}</b>
-            <p style="color:#777;font-size:13px;margin:4px 0 0;">${getTravelSectionLabel(section, lang)}${count > 0 ? ` · ${count}` : ""}</p>
-        </div>`;
+            void showTravelLesson(
+                lessonId
+            );
+        };
     });
-
-    html += `<div id="mini-lesson-content"></div></div>`;
-    app.innerHTML = html;
 }
 
-/** Opens a single Travel section or delegates exercises to the shared engine. */
-function showMiniLesson(lessonId: string, sectionIndex: number): void {
-    const lang = getLanguage();
-    const lesson = window.currentTravelLesson;
+/**
+ * Displays one Travel lesson and its section cards.
+ *
+ * @param lessonId - Canonical Travel lesson identifier.
+ */
+async function showTravelLesson(
+    lessonId: string
+): Promise<void> {
+    app.innerHTML =
+        renderTravelLessonLoadingView();
 
-    if (!lesson || window.currentTravelLessonId !== lessonId) {
-        void showTravelLesson(lessonId);
+    const lesson =
+        await loadTravelLesson(
+            lessonId
+        );
+
+    if (!lesson) {
+        app.innerHTML =
+            renderTravelLessonNotFoundView();
+
+        getRequiredElement<HTMLButtonElement>(
+            "travel-error-back"
+        ).onclick = () => {
+            void showTravelPage();
+        };
+
         return;
     }
 
-    const section = getTravelSections(lesson)[sectionIndex];
+    const sections =
+        getTravelSections(
+            lesson
+        );
+
+    /*
+     * Keep the active Travel lesson globally accessible while the application
+     * still runs as classic browser scripts.
+     */
+    window.currentTravelLesson =
+        lesson;
+
+    window.currentTravelLessonId =
+        lessonId;
+
+    app.innerHTML =
+        renderTravelLessonView(
+            lesson,
+            lessonId,
+            sections
+        );
+
+    bindTravelLessonEvents(
+        lessonId
+    );
+}
+
+/**
+ * Binds navigation events for a rendered Travel lesson.
+ *
+ * @param lessonId - Currently displayed lesson identifier.
+ */
+function bindTravelLessonEvents(
+    lessonId: string
+): void {
+    getRequiredElement<HTMLButtonElement>(
+        "travel-back"
+    ).onclick = () => {
+        void showTravelPage();
+    };
+
+    const sectionCards =
+        queryElements<HTMLButtonElement>(
+            ".travel-section-card"
+        );
+
+    sectionCards.forEach(card => {
+        card.onclick = () => {
+            const cardLessonId =
+                card.dataset.lessonId
+                || lessonId;
+
+            const rawIndex =
+                card.dataset.sectionIndex;
+
+            if (rawIndex === undefined) {
+                return;
+            }
+
+            const sectionIndex =
+                Number.parseInt(
+                    rawIndex,
+                    10
+                );
+
+            if (
+                !Number.isInteger(
+                    sectionIndex
+                )
+            ) {
+                return;
+            }
+
+            showMiniLesson(
+                cardLessonId,
+                sectionIndex
+            );
+        };
+    });
+}
+
+/**
+ * Opens one Travel section.
+ *
+ * Exercise sections are delegated to the shared exercise controller. Other
+ * section types are rendered inside the current Travel lesson page.
+ *
+ * @param lessonId - Parent Travel lesson identifier.
+ * @param sectionIndex - Section index inside the active lesson.
+ */
+function showMiniLesson(
+    lessonId: string,
+    sectionIndex: number
+): void {
+    const lesson =
+        window.currentTravelLesson;
+
+    if (
+        !lesson
+        || window.currentTravelLessonId
+            !== lessonId
+    ) {
+        void showTravelLesson(
+            lessonId
+        );
+
+        return;
+    }
+
+    const sections =
+        getTravelSections(
+            lesson
+        );
+
+    const section =
+        sections[sectionIndex];
+
     if (!section) {
-        console.error("Travel section not found:", lessonId, sectionIndex);
+        console.error(
+            "Travel section not found:",
+            lessonId,
+            sectionIndex
+        );
+
         return;
     }
 
-    if (section.type === "exercise") {
-        showExerciseContent(lessonId, section, () => showTravelLesson(lessonId));
+    if (
+        section.type
+        === "exercise"
+    ) {
+        showExerciseContent(
+            lessonId,
+            section,
+            () =>
+                showTravelLesson(
+                    lessonId
+                )
+        );
+
         return;
     }
 
-    const title = (lang === "fa"
-        ? section.title_fa || section.title
-        : section.title || section.title_fa) || getTravelSectionLabel(section, lang);
+    const container =
+        getRequiredElement<HTMLElement>(
+            "mini-lesson-content"
+        );
 
-    const container = getRequiredElement<HTMLElement>("mini-lesson-content");
-    container.innerHTML = `<div style="background:#fff;border:2px solid #087F5B;border-radius:8px;padding:20px;margin:20px 0;">
-        <p style="font-size:11px;color:#777;text-transform:uppercase;letter-spacing:1px;margin:0 0 6px;">${getTravelSectionLabel(section, lang)}</p>
-        <h2 style="color:#087F5B;margin:0 0 20px;">${title}</h2>
-        ${renderTravelSection(section, lang)}
-        <button onclick="markTravelMiniLessonCompleted('${lessonId}', '${section.id}')" style="width:100%;margin-top:20px;padding:12px;background:#087F5B;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700;">${lang === "fa" ? "✓ ادامه" : "✓ Continuer"}</button>
-    </div>`;
+    container.innerHTML =
+        renderTravelMiniLessonView(
+            section
+        );
 
-    container.scrollIntoView({ behavior: "smooth", block: "start" });
+    getRequiredElement<HTMLButtonElement>(
+        "travel-complete-btn"
+    ).onclick = () => {
+        markTravelMiniLessonCompleted(
+            lessonId,
+            section.id
+        );
+    };
+
+    container.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
 }
 
-/** Persists Travel section completion and returns to the lesson overview. */
-function markTravelMiniLessonCompleted(lessonId: string, sectionId: string): void {
-    markSectionCompleted(lessonId, sectionId);
-    void showTravelLesson(lessonId);
+/**
+ * Persists Travel section completion and returns to the lesson overview.
+ *
+ * @param lessonId - Parent Travel lesson identifier.
+ * @param sectionId - Completed Travel section identifier.
+ */
+function markTravelMiniLessonCompleted(
+    lessonId: string,
+    sectionId: string
+): void {
+    markSectionCompleted(
+        lessonId,
+        sectionId
+    );
+
+    void showTravelLesson(
+        lessonId
+    );
 }

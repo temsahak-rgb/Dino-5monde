@@ -1,51 +1,116 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Français avec Dino</title>
-  <link rel="stylesheet" href="src/styles/style.css">
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Français avec Dino</title>
+
+    <link
+        rel="stylesheet"
+        href="src/styles/style.css"
+    >
 </head>
+
 <body>
-  <div id="app"></div>
+    <div id="app"></div>
 
-<script>
-window.onerror = function(msg, url, line) {
-    document.body.innerHTML = '<div style="padding:30px;font-family:monospace;direction:ltr;background:#fff3cd;color:#856404;border:2px solid #ffc107;border-radius:8px;margin:20px;">' +
-        '<h3>❌ خطا در خط ' + line + ':</h3>' +
-        '<p style="word-break:break-all;">' + msg + '</p>' +
-        '<p style="font-size:12px;">فایل: ' + url + '</p>' +
-        '</div>';
-    return true;
-};
-</script>
+    <!-- ================================================================ -->
+    <!-- i18n                                                            -->
+    <!-- ================================================================ -->
 
-  <script src="src/ui/ui.js"></script>
+    <script src="src/i18n/fr.js"></script>
+    <script src="src/i18n/fa.js"></script>
+    <script src="src/i18n/i18n.js"></script>
 
-  <script src="src/core/placementEngine.js"></script>
-  <script src="src/features/grammar/grammarEngine.js"></script>
-  <script src="src/core/pathEngine.js"></script>
-  <script src="src/core/lessonEngine.js"></script>
-  <script src="src/core/exerciseEngine.js"></script>
-  <script src="src/core/progressEngine.js"></script>
 
-  <script src="src/features/vocabulary/vocabulary.js"></script>
-  <script src="src/features/grammar/grammar.js"></script>
-  <script src="src/features/onboarding/onboarding.js"></script>
-  <script src="src/features/polls/polls.js?v=67"></script>
+    <!-- ================================================================ -->
+    <!-- Shared UI helpers                                                -->
+    <!-- ================================================================ -->
 
-  <script src="src/features/travel/travelEngine.js?v=67"></script>
-  <script src="src/features/travel/travelRenderers.js?v=67"></script>
-  <script src="src/features/travel/travel.js?v=67"></script>
+    <script src="src/ui/ui.js"></script>
 
-  <script src="src/features/news/news.js"></script>
-  <script src="src/pages/home.js"></script>
-  <script src="src/pages/misc.js"></script>
-  <script src="src/pages/paths.js"></script>
 
-  <script src="src/core/router.js"></script>
-  <script src="src/features/search/search.js?v=67"></script>
-  <script src="app.js?v=67"></script>
+    <!-- ================================================================ -->
+    <!-- Views                                                            -->
+    <!-- ================================================================ -->
 
+    <script src="src/ui/views/navbarView.js"></script>
+
+    <script src="src/ui/views/homeView.js"></script>
+    <script src="src/ui/views/miscView.js"></script>
+    <script src="src/ui/views/pathsView.js"></script>
+
+    <script src="src/ui/views/grammarView.js"></script>
+    <script src="src/ui/views/travelView.js"></script>
+    <script src="src/ui/views/vocabularyView.js"></script>
+
+    <script src="src/ui/views/newsView.js"></script>
+    <script src="src/ui/views/pollsView.js"></script>
+
+    <script src="src/ui/views/onboardingView.js"></script>
+    <script src="src/ui/views/searchView.js"></script>
+
+
+    <!-- ================================================================ -->
+    <!-- Core engines                                                     -->
+    <!-- ================================================================ -->
+
+    <script src="src/core/placementEngine.js"></script>
+    <script src="src/core/pathEngine.js"></script>
+    <script src="src/core/lessonEngine.js"></script>
+    <script src="src/core/exerciseEngine.js"></script>
+    <script src="src/core/progressEngine.js"></script>
+
+
+    <!-- ================================================================ -->
+    <!-- Feature engines                                                  -->
+    <!-- ================================================================ -->
+
+    <script src="src/features/grammar/grammarEngine.js"></script>
+    <script src="src/features/travel/travelEngine.js"></script>
+
+
+    <!-- ================================================================ -->
+    <!-- Feature controllers                                              -->
+    <!-- ================================================================ -->
+
+    <script src="src/features/vocabulary/vocabulary.js"></script>
+
+    <script src="src/features/grammar/grammar.js"></script>
+    <script src="src/features/travel/travel.js"></script>
+
+    <script src="src/features/onboarding/onboarding.js"></script>
+
+    <script src="src/features/polls/polls.js"></script>
+    <script src="src/features/news/news.js"></script>
+
+    <script src="src/features/search/search.js"></script>
+
+
+    <!-- ================================================================ -->
+    <!-- Page controllers                                                 -->
+    <!-- ================================================================ -->
+
+    <script src="src/pages/home.js"></script>
+    <script src="src/pages/misc.js"></script>
+    <script src="src/pages/paths.js"></script>
+
+
+    <!-- ================================================================ -->
+    <!-- Navigation                                                       -->
+    <!-- ================================================================ -->
+
+    <script src="src/core/router.js"></script>
+
+
+    <!-- ================================================================ -->
+    <!-- Bootstrap                                                        -->
+    <!-- ================================================================ -->
+
+    <script src="app.js"></script>
 </body>
 </html>

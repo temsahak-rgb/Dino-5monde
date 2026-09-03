@@ -1,5 +1,14 @@
 /**
- * Cross-feature search over vocabulary packs, grammar indexes, and news.
+ * Cross-feature search controller.
+ *
+ * This file owns:
+ * - search data loading and caching
+ * - query matching
+ * - modal lifecycle
+ * - keyboard interaction
+ * - result navigation
+ *
+ * All HTML generation is delegated to `src/ui/views/searchView.ts`.
  */
 
 interface SearchCache {
@@ -14,251 +23,766 @@ const searchCache: SearchCache = {
     news: null
 };
 
-/** Returns a readable message for an unknown caught value. */
-function searchErrorMessage(error: unknown): string {
-    return error instanceof Error ? error.message : String(error);
+let searchKeydownHandler:
+    ((event: KeyboardEvent) => void)
+    | null = null;
+
+/**
+ * Returns a readable message for an unknown caught value.
+ *
+ * @param error - Unknown caught value.
+ * @returns Human-readable error message.
+ */
+function searchErrorMessage(
+    error: unknown
+): string {
+    return error instanceof Error
+        ? error.message
+        : String(error);
 }
 
-/** Opens the site-wide search modal. */
+/**
+ * Opens the site-wide search modal.
+ *
+ * Calling this function while the modal is already open simply restores focus
+ * to the search input.
+ */
 function openSearch(): void {
-    const lang = getLanguage();
-    const existingModal = document.getElementById("search-modal");
+    const existingModal =
+        document.getElementById(
+            "search-modal"
+        );
+
     if (existingModal) {
-        getRequiredElement<HTMLInputElement>("search-input").focus();
+        getRequiredElement<HTMLInputElement>(
+            "search-input"
+        ).focus();
+
         return;
     }
 
-    const modal = document.createElement("div");
-    modal.id = "search-modal";
-    modal.style.cssText = "position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.85);z-index:9999;display:flex;align-items:flex-start;justify-content:center;padding:40px 16px;overflow-y:auto;";
-    modal.onclick = event => {
-        if (event.target === modal) closeSearch();
-    };
+    const modal =
+        document.createElement(
+            "div"
+        );
 
-    modal.innerHTML = `
-        <div style="background:#fff;border-radius:12px;width:100%;max-width:800px;box-shadow:0 10px 40px rgba(0,0,0,0.3);overflow:hidden;">
-            <div style="background:#087F5B;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;">
-                <h2 style="color:#fff;margin:0;font-size:18px;">🔍 ${lang === "fa" ? "جستجو در سایت" : "Rechercher"}</h2>
-                <button onclick="closeSearch()" style="background:rgba(255,255,255,0.2);border:none;border-radius:6px;padding:6px 12px;color:#fff;cursor:pointer;font-size:16px;">✕</button>
-            </div>
-            <div style="padding:20px;border-bottom:1px solid #e0e0e0;">
-                <input type="text" id="search-input" placeholder="${lang === "fa" ? "کلمه یا عبارت..." : "Mot ou expression..."}"
-                    style="width:100%;padding:14px 18px;font-size:16px;border:2px solid #e0e0e0;border-radius:8px;box-sizing:border-box;outline:none;"
-                    onfocus="this.style.borderColor='#087F5B'" onblur="this.style.borderColor='#e0e0e0'">
-            </div>
-            <div id="search-results" style="padding:20px;max-height:60vh;overflow-y:auto;">
-                <p style="text-align:center;color:#999;padding:30px;">${lang === "fa" ? "حداقل ۲ حرف تایپ کنید..." : "Tapez au moins 2 caractères..."}</p>
-            </div>
-        </div>`;
+    modal.id =
+        "search-modal";
 
-    document.body.appendChild(modal);
+    modal.style.cssText =
+        getSearchModalStyle();
 
-    const input = getRequiredElement<HTMLInputElement>("search-input");
+    modal.innerHTML =
+        renderSearchModalView();
+
+    document.body.appendChild(
+        modal
+    );
+
+    bindSearchModalEvents(
+        modal
+    );
+
+    const input =
+        getRequiredElement<HTMLInputElement>(
+            "search-input"
+        );
+
     input.focus();
-    input.oninput = () => { void performSearch(input.value); };
+}
 
-    document.onkeydown = event => {
-        if (event.key === "Escape") closeSearch();
+/**
+ * Binds search-modal interaction.
+ *
+ * @param modal - Search modal backdrop element.
+ */
+function bindSearchModalEvents(
+    modal: HTMLDivElement
+): void {
+    const input =
+        getRequiredElement<HTMLInputElement>(
+            "search-input"
+        );
+
+    const closeButton =
+        getRequiredElement<HTMLButtonElement>(
+            "search-close"
+        );
+
+    const results =
+        getRequiredElement<HTMLElement>(
+            "search-results"
+        );
+
+    closeButton.onclick = () => {
+        closeSearch();
     };
+
+    modal.onclick = event => {
+        if (
+            event.target
+            === modal
+        ) {
+            closeSearch();
+        }
+    };
+
+    input.oninput = () => {
+        void performSearch(
+            input.value
+        );
+    };
+
+    input.onfocus = () => {
+        input.style.borderColor =
+            "#087F5B";
+    };
+
+    input.onblur = () => {
+        input.style.borderColor =
+            "#e0e0e0";
+    };
+
+    results.onclick = event => {
+        handleSearchResultClick(
+            event
+        );
+    };
+
+    searchKeydownHandler =
+        event => {
+            if (
+                event.key
+                === "Escape"
+            ) {
+                closeSearch();
+            }
+        };
+
+    document.addEventListener(
+        "keydown",
+        searchKeydownHandler
+    );
 }
 
-/** Closes the search modal and removes its keyboard listener. */
+/**
+ * Closes the search modal and removes the temporary keyboard listener.
+ */
 function closeSearch(): void {
-    document.getElementById("search-modal")?.remove();
-    document.onkeydown = null;
+    document.getElementById(
+        "search-modal"
+    )?.remove();
+
+    if (
+        searchKeydownHandler
+    ) {
+        document.removeEventListener(
+            "keydown",
+            searchKeydownHandler
+        );
+
+        searchKeydownHandler =
+            null;
+    }
 }
 
-/** Searches every indexed content family and renders matching results. */
-async function performSearch(query: string): Promise<void> {
-    const resultsDiv = getRequiredElement<HTMLElement>("search-results");
-    const lang = getLanguage();
+/**
+ * Searches every indexed content family and renders matching results.
+ *
+ * @param query - User-provided search query.
+ */
+async function performSearch(
+    query: string
+): Promise<void> {
+    const resultsDiv =
+        getRequiredElement<HTMLElement>(
+            "search-results"
+        );
 
-    if (query.length < 2) {
-        resultsDiv.innerHTML = `<p style="text-align:center;color:#999;padding:30px;">${lang === "fa" ? "حداقل ۲ حرف تایپ کنید..." : "Tapez au moins 2 caractères..."}</p>`;
+    const normalizedQuery =
+        query.trim();
+
+    if (
+        normalizedQuery.length < 2
+    ) {
+        resultsDiv.innerHTML =
+            renderSearchMinimumCharactersView();
+
         return;
     }
 
-    resultsDiv.innerHTML = `<p style="text-align:center;color:#999;padding:30px;">🔄 ${lang === "fa" ? "در حال جستجو..." : "Recherche..."}</p>`;
+    resultsDiv.innerHTML =
+        renderSearchLoadingView();
 
     try {
-        const [vocabData, grammarData, newsData] = await Promise.all([
-            loadAllVocab().catch(error => { console.warn("Vocab load error:", error); return []; }),
-            loadAllGrammar().catch(error => { console.warn("Grammar load error:", error); return []; }),
-            loadAllNews().catch(error => { console.warn("News load error:", error); return []; })
+        const [
+            vocabData,
+            grammarData,
+            newsData
+        ] = await Promise.all([
+            loadAllVocab()
+                .catch(
+                    error => {
+                        console.warn(
+                            "Vocab load error:",
+                            error
+                        );
+
+                        return [];
+                    }
+                ),
+
+            loadAllGrammar()
+                .catch(
+                    error => {
+                        console.warn(
+                            "Grammar load error:",
+                            error
+                        );
+
+                        return [];
+                    }
+                ),
+
+            loadAllNews()
+                .catch(
+                    error => {
+                        console.warn(
+                            "News load error:",
+                            error
+                        );
+
+                        return [];
+                    }
+                )
         ]);
 
-        const lowerQuery = query.toLowerCase();
-        const vocabResults: SearchVocabWord[] = [];
-        const grammarResults: SearchGrammarItem[] = [];
-        const newsResults: NewsIndexItem[] = [];
+        const lowerQuery =
+            normalizedQuery
+                .toLowerCase();
 
-        vocabData.forEach(pack => {
-            pack.words.forEach(word => {
-                const searchable = [word.fr, word.fa, word.ex, word.ex_fa].filter(Boolean).join(" ").toLowerCase();
-                if (searchable.includes(lowerQuery)) {
-                    vocabResults.push({ ...word, level: pack.level, packId: pack.id });
-                }
-            });
-        });
+        const vocabResults =
+            searchVocabulary(
+                vocabData,
+                lowerQuery
+            );
 
-        grammarData.forEach(lesson => {
-            const searchable = [lesson.title, lesson.title_fa, lesson.content, lesson.example].filter(Boolean).join(" ").toLowerCase();
-            if (searchable.includes(lowerQuery)) grammarResults.push(lesson);
-        });
+        const grammarResults =
+            searchGrammar(
+                grammarData,
+                lowerQuery
+            );
 
-        newsData.forEach(news => {
-            const searchable = [news.title, news.title_fa, news.subtitle, news.subtitle_fa].filter(Boolean).join(" ").toLowerCase();
-            if (searchable.includes(lowerQuery)) newsResults.push(news);
-        });
+        const newsResults =
+            searchNews(
+                newsData,
+                lowerQuery
+            );
 
-        if (vocabResults.length + grammarResults.length + newsResults.length === 0) {
-            resultsDiv.innerHTML = `<p style="text-align:center;color:#999;padding:40px;">${lang === "fa" ? "نتیجه‌ای پیدا نشد." : "Aucun résultat."}</p>`;
+        if (
+            vocabResults.length
+            + grammarResults.length
+            + newsResults.length
+            === 0
+        ) {
+            resultsDiv.innerHTML =
+                renderSearchNoResultsView();
+
             return;
         }
 
-        let html = "";
+        resultsDiv.innerHTML =
+            renderSearchResultsView(
+                {
+                    vocab:
+                        vocabResults,
 
-        if (vocabResults.length) {
-            html += `<h3 style="font-size:15px;font-weight:700;color:#087F5B;margin:0 0 10px;padding-bottom:8px;border-bottom:2px solid #087F5B;">📖 ${lang === "fa" ? "واژگان" : "Vocabulaire"} (${vocabResults.length})</h3>`;
-            vocabResults.slice(0, 15).forEach(item => {
-                html += `<div onclick="goToVocab('${item.level}','${item.packId}')" style="background:#f9fafb;border:1px solid #e0e0e0;border-radius:8px;padding:12px;margin-bottom:8px;cursor:pointer;transition:all 0.15s;" onmouseover="this.style.background='#f0f9ff';this.style.borderColor='#087F5B'" onmouseout="this.style.background='#f9fafb';this.style.borderColor='#e0e0e0'">
-                    <div style="display:flex;justify-content:space-between;align-items:start;gap:10px;">
-                        <div style="flex:1;">
-                            <p class="ltr-lock" style="font-weight:700;color:#1a1a1a;margin:0 0 3px;font-size:15px;">${hl(item.fr, query)}</p>
-                            <p class="persian-text" style="font-size:13px;color:#777;margin:0;">${hl(item.fa, query)}</p>
-                            ${item.ex ? `<p class="ltr-lock" style="font-size:12px;color:#888;margin:6px 0 0;font-style:italic;">${hl(item.ex, query)}</p>` : ""}
-                        </div>
-                        <span style="background:#e8f5f0;color:#087F5B;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:700;white-space:nowrap;">${item.level}</span>
-                    </div>
-                </div>`;
-            });
-        }
+                    grammar:
+                        grammarResults,
 
-        if (grammarResults.length) {
-            html += `<h3 style="font-size:15px;font-weight:700;color:#087F5B;margin:20px 0 10px;padding-bottom:8px;border-bottom:2px solid #087F5B;">📚 ${lang === "fa" ? "گرامر" : "Grammaire"} (${grammarResults.length})</h3>`;
-            grammarResults.slice(0, 15).forEach(item => {
-                html += `<div onclick="goToGrammar('${item.id}')" style="background:#f9fafb;border:1px solid #e0e0e0;border-radius:8px;padding:12px;margin-bottom:8px;cursor:pointer;transition:all 0.15s;" onmouseover="this.style.background='#f0f9ff';this.style.borderColor='#087F5B'" onmouseout="this.style.background='#f9fafb';this.style.borderColor='#e0e0e0'">
-                    <div style="display:flex;justify-content:space-between;align-items:start;gap:10px;">
-                        <div style="flex:1;">
-                            <p style="font-weight:700;color:#1a1a1a;margin:0 0 3px;font-size:15px;">${hl(item.title, query)}</p>
-                            ${item.example ? `<p class="ltr-lock" style="font-size:12px;color:#888;margin:6px 0 0;font-style:italic;">${hl(item.example, query)}</p>` : ""}
-                        </div>
-                        <span style="background:#fef3c7;color:#d97706;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:700;white-space:nowrap;">${item.level}</span>
-                    </div>
-                </div>`;
-            });
-        }
-
-        if (newsResults.length) {
-            html += `<h3 style="font-size:15px;font-weight:700;color:#087F5B;margin:20px 0 10px;padding-bottom:8px;border-bottom:2px solid #087F5B;">📰 ${lang === "fa" ? "اخبار" : "Actualités"} (${newsResults.length})</h3>`;
-            newsResults.slice(0, 10).forEach(item => {
-                html += `<div onclick="goToNews('${item.id}')" style="background:#f9fafb;border:1px solid #e0e0e0;border-radius:8px;padding:12px;margin-bottom:8px;cursor:pointer;transition:all 0.15s;" onmouseover="this.style.background='#f0f9ff';this.style.borderColor='#087F5B'" onmouseout="this.style.background='#f9fafb';this.style.borderColor='#e0e0e0'">
-                    <p style="font-weight:700;color:#1a1a1a;margin:0 0 3px;font-size:15px;">${hl(lang === "fa" ? item.title_fa || item.title : item.title, query)}</p>
-                    <p style="font-size:12px;color:#777;margin:0;">${item.publishedDate} · ${item.level}</p>
-                </div>`;
-            });
-        }
-
-        resultsDiv.innerHTML = html;
+                    news:
+                        newsResults
+                },
+                normalizedQuery
+            );
     } catch (error) {
-        console.error("Search error:", error);
-        resultsDiv.innerHTML = `<p style="text-align:center;color:#dc2626;padding:30px;">❌ ${lang === "fa" ? "خطا در جستجو" : "Erreur de recherche"}: ${searchErrorMessage(error)}</p>`;
+        console.error(
+            "Search error:",
+            error
+        );
+
+        resultsDiv.innerHTML =
+            renderSearchErrorView(
+                searchErrorMessage(
+                    error
+                )
+            );
     }
 }
 
-/** Navigates from a search result to a vocabulary pack. */
-function goToVocab(level: Level, packId: string): void {
+/**
+ * Searches vocabulary packs.
+ *
+ * @param packs - Loaded vocabulary packs.
+ * @param lowerQuery - Lower-cased query.
+ * @returns Matching vocabulary words.
+ */
+function searchVocabulary(
+    packs: VocabPack[],
+    lowerQuery: string
+): SearchVocabWord[] {
+    const results:
+        SearchVocabWord[] = [];
+
+    packs.forEach(pack => {
+        pack.words.forEach(
+            word => {
+                const searchable =
+                    [
+                        word.fr,
+                        word.fa,
+                        word.ex,
+                        word.ex_fa
+                    ]
+                        .filter(
+                            Boolean
+                        )
+                        .join(" ")
+                        .toLowerCase();
+
+                if (
+                    !searchable.includes(
+                        lowerQuery
+                    )
+                ) {
+                    return;
+                }
+
+                results.push({
+                    ...word,
+                    level:
+                        pack.level,
+                    packId:
+                        pack.id
+                });
+            }
+        );
+    });
+
+    return results;
+}
+
+/**
+ * Searches grammar metadata.
+ *
+ * @param lessons - Searchable grammar lessons.
+ * @param lowerQuery - Lower-cased query.
+ * @returns Matching grammar lessons.
+ */
+function searchGrammar(
+    lessons: SearchGrammarItem[],
+    lowerQuery: string
+): SearchGrammarItem[] {
+    return lessons.filter(
+        lesson => {
+            const searchable =
+                [
+                    lesson.title,
+                    lesson.title_fa,
+                    lesson.content,
+                    lesson.example
+                ]
+                    .filter(
+                        Boolean
+                    )
+                    .join(" ")
+                    .toLowerCase();
+
+            return searchable.includes(
+                lowerQuery
+            );
+        }
+    );
+}
+
+/**
+ * Searches News metadata.
+ *
+ * @param newsItems - Searchable News index.
+ * @param lowerQuery - Lower-cased query.
+ * @returns Matching News articles.
+ */
+function searchNews(
+    newsItems: NewsIndexItem[],
+    lowerQuery: string
+): NewsIndexItem[] {
+    return newsItems.filter(
+        news => {
+            const searchable =
+                [
+                    news.title,
+                    news.title_fa,
+                    news.subtitle,
+                    news.subtitle_fa
+                ]
+                    .filter(
+                        Boolean
+                    )
+                    .join(" ")
+                    .toLowerCase();
+
+            return searchable.includes(
+                lowerQuery
+            );
+        }
+    );
+}
+
+/**
+ * Handles navigation from a rendered search result.
+ *
+ * Result type and destination metadata are provided by the Search view through
+ * CSS classes and data attributes.
+ *
+ * @param event - Search-results click event.
+ */
+function handleSearchResultClick(
+    event: MouseEvent
+): void {
+    const target =
+        event.target;
+
+    if (
+        !(target instanceof Element)
+    ) {
+        return;
+    }
+
+    const result =
+        target.closest<HTMLButtonElement>(
+            ".search-result-item"
+        );
+
+    if (!result) {
+        return;
+    }
+
+    if (
+        result.classList.contains(
+            "search-vocab-result"
+        )
+    ) {
+        const level =
+            parseSearchLevel(
+                result.dataset.level
+            );
+
+        const packId =
+            result.dataset.packId;
+
+        if (
+            level
+            && packId
+        ) {
+            goToVocab(
+                level,
+                packId
+            );
+        }
+
+        return;
+    }
+
+    if (
+        result.classList.contains(
+            "search-grammar-result"
+        )
+    ) {
+        const grammarId =
+            result.dataset.grammarId;
+
+        if (grammarId) {
+            goToGrammar(
+                grammarId
+            );
+        }
+
+        return;
+    }
+
+    if (
+        result.classList.contains(
+            "search-news-result"
+        )
+    ) {
+        const newsId =
+            result.dataset.newsId;
+
+        if (newsId) {
+            goToNews(
+                newsId
+            );
+        }
+    }
+}
+
+/**
+ * Validates a search-result CEFR level before using it for navigation.
+ *
+ * @param value - Raw DOM data attribute.
+ * @returns Valid CEFR level or null.
+ */
+function parseSearchLevel(
+    value: string | undefined
+): Level | null {
+    switch (value) {
+        case "A1":
+        case "A2":
+        case "B1":
+        case "B2":
+        case "C1":
+        case "C2":
+            return value;
+
+        default:
+            return null;
+    }
+}
+
+/**
+ * Navigates from a search result to a vocabulary pack.
+ *
+ * @param level - Vocabulary level.
+ * @param packId - Vocabulary pack identifier.
+ */
+function goToVocab(
+    level: Level,
+    packId: string
+): void {
     closeSearch();
-    void showVocabPack(level, packId);
+
+    void showVocabPack(
+        level,
+        packId
+    );
 }
 
-/** Navigates from a search result to a grammar lesson. */
-function goToGrammar(id: string): void {
+/**
+ * Navigates from a search result to a grammar lesson.
+ *
+ * @param id - Grammar lesson identifier.
+ */
+function goToGrammar(
+    id: string
+): void {
     closeSearch();
-    void showGrammarLesson(id);
+
+    void showGrammarLesson(
+        id
+    );
 }
 
-/** Navigates from a search result to a news article. */
-function goToNews(id: string): void {
+/**
+ * Navigates from a search result to a News article.
+ *
+ * @param id - News article identifier.
+ */
+function goToNews(
+    id: string
+): void {
     closeSearch();
-    void showNewsDetail(id);
+
+    void showNewsDetail(
+        id
+    );
 }
 
-/** Highlights a case-insensitive query inside a result string. */
-function hl(text: string | undefined, query: string): string {
-    if (!text) return "";
-    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    return text.replace(new RegExp(`(${escaped})`, "gi"), '<mark style="background:#fef08a;padding:0 2px;border-radius:2px;">$1</mark>');
-}
-
-/** Loads every vocabulary pack used by search. */
+/**
+ * Loads every vocabulary pack used by global search.
+ *
+ * Results are cached for the current browser session.
+ *
+ * @returns All searchable vocabulary packs.
+ */
 async function loadAllVocab(): Promise<VocabPack[]> {
-    if (searchCache.vocab) return searchCache.vocab;
+    if (searchCache.vocab) {
+        return searchCache.vocab;
+    }
 
-    const levels: Level[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
-    const allPacks: VocabPack[] = [];
+    const levels: Level[] = [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+    ];
 
-    for (const level of levels) {
+    const allPacks:
+        VocabPack[] = [];
+
+    for (
+        const level
+        of levels
+    ) {
         try {
-            const indexResponse = await fetch(`./data/vocabulary/vocab-${level}.json`);
-            if (!indexResponse.ok) continue;
-            const index = await indexResponse.json() as VocabPackIndex[];
+            const indexResponse =
+                await fetch(
+                    `./data/vocabulary/vocab-${level}.json`
+                );
 
-            for (const pack of index) {
+            if (
+                !indexResponse.ok
+            ) {
+                continue;
+            }
+
+            const index =
+                await indexResponse.json()
+                    as VocabPackIndex[];
+
+            for (
+                const pack
+                of index
+            ) {
                 try {
-                    const packResponse = await fetch(`./data/vocabulary/${level}/${pack.id}.json`);
-                    if (!packResponse.ok) continue;
-                    const packData = await packResponse.json() as VocabPack;
-                    packData.level = level;
-                    allPacks.push(packData);
+                    const packResponse =
+                        await fetch(
+                            `./data/vocabulary/${level}/${pack.id}.json`
+                        );
+
+                    if (
+                        !packResponse.ok
+                    ) {
+                        continue;
+                    }
+
+                    const packData =
+                        await packResponse.json()
+                            as VocabPack;
+
+                    packData.level =
+                        level;
+
+                    allPacks.push(
+                        packData
+                    );
                 } catch {
-                    // One invalid pack must not disable global search.
+                    /*
+                     * One invalid pack must not disable global search.
+                     */
                 }
             }
         } catch {
-            // One unavailable level must not disable global search.
+            /*
+             * One unavailable level must not disable global search.
+             */
         }
     }
 
-    searchCache.vocab = allPacks;
+    searchCache.vocab =
+        allPacks;
+
     return allPacks;
 }
 
-/** Loads grammar indexes from the actual level-based catalog files. */
+/**
+ * Loads grammar indexes from the level-based catalog files.
+ *
+ * @returns All searchable grammar metadata.
+ */
 async function loadAllGrammar(): Promise<SearchGrammarItem[]> {
-    if (searchCache.grammar) return searchCache.grammar;
+    if (
+        searchCache.grammar
+    ) {
+        return searchCache.grammar;
+    }
 
-    const levels: Level[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
-    const allLessons: SearchGrammarItem[] = [];
+    const levels: Level[] = [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+    ];
 
-    for (const level of levels) {
+    const allLessons:
+        SearchGrammarItem[] = [];
+
+    for (
+        const level
+        of levels
+    ) {
         try {
-            const response = await fetch(`./data/grammar-${level}.json`);
-            if (!response.ok) continue;
-            const lessons = await response.json() as GrammarLessonIndex[];
-            allLessons.push(...lessons);
+            const response =
+                await fetch(
+                    `./data/grammar-${level}.json`
+                );
+
+            if (
+                !response.ok
+            ) {
+                continue;
+            }
+
+            const lessons =
+                await response.json()
+                    as GrammarLessonIndex[];
+
+            allLessons.push(
+                ...lessons
+            );
         } catch {
-            // Missing grammar levels are ignored by search.
+            /*
+             * Missing grammar levels are ignored by global search.
+             */
         }
     }
 
-    searchCache.grammar = allLessons;
+    searchCache.grammar =
+        allLessons;
+
     return allLessons;
 }
 
-/** Loads the complete news index used by search. */
+/**
+ * Loads the complete News index used by global search.
+ *
+ * @returns Searchable News metadata.
+ */
 async function loadAllNews(): Promise<NewsIndexItem[]> {
-    if (searchCache.news) return searchCache.news;
+    if (searchCache.news) {
+        return searchCache.news;
+    }
 
     try {
-        const response = await fetch("./data/news/news-index.json");
-        if (!response.ok) return [];
-        const news = await response.json() as NewsIndexItem[];
-        searchCache.news = news;
+        const response =
+            await fetch(
+                "./data/news/news-index.json"
+            );
+
+        if (!response.ok) {
+            searchCache.news = [];
+            return [];
+        }
+
+        const news =
+            await response.json()
+                as NewsIndexItem[];
+
+        searchCache.news =
+            news;
+
         return news;
     } catch (error) {
-        console.warn("News load failed:", error);
+        console.warn(
+            "News load failed:",
+            error
+        );
+
         searchCache.news = [];
+
         return [];
     }
 }
