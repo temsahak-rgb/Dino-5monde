@@ -1,0 +1,522 @@
+{
+  "id": "fluctuations_crises_economiques",
+  "level": "B2",
+  "theme": "Les fluctuations et les crises économiques",
+  "theme_fa": "نوسانات و بحران‌های اقتصادی",
+  "icon": "📉",
+  "inspiration": "Le Big Short",
+  "words": [
+    {
+      "fr": "le krach (m)",
+      "fa": "سقوط بازار",
+      "emoji": "💥",
+      "difficulty": 4,
+      "ex": "Le krach boursier de 1929 a changé l'économie mondiale.",
+      "ex_fa": "سقوط بازار بورس سال ۱۹۲۹ اقتصاد جهانی را تغییر داد."
+    },
+    {
+      "fr": "la crise (f)",
+      "fa": "بحران",
+      "emoji": "🌪️",
+      "difficulty": 3,
+      "ex": "La crise financière a touché de nombreux pays.",
+      "ex_fa": "بحران مالی بسیاری از کشورها را تحت تأثیر قرار داد."
+    },
+    {
+      "fr": "la récession (f)",
+      "fa": "رکود",
+      "emoji": "📉",
+      "difficulty": 4,
+      "ex": "Le pays est entré dans une période de récession.",
+      "ex_fa": "کشور وارد یک دوره رکود شد."
+    },
+    {
+      "fr": "la stagnation (f)",
+      "fa": "رکود، ایستایی",
+      "emoji": "🐌",
+      "difficulty": 5,
+      "ex": "La stagnation économique empêche toute croissance.",
+      "ex_fa": "رکود اقتصادی مانع هرگونه رشد می‌شود."
+    },
+    {
+      "fr": "la léthargie (f)",
+      "fa": "رخوت اقتصادی",
+      "emoji": "😴",
+      "difficulty": 6,
+      "ex": "La léthargie du marché inquiète les investisseurs.",
+      "ex_fa": "رخوت بازار سرمایه‌گذاران را نگران می‌کند."
+    },
+    {
+      "fr": "fluctuant(e)",
+      "fa": "در نوسان",
+      "emoji": "📈📉",
+      "difficulty": 4,
+      "ex": "Les prix du pétrole sont très fluctuants.",
+      "ex_fa": "قیمت‌های نفت بسیار در نوسان هستند."
+    },
+    {
+      "fr": "la fluctuation (f)",
+      "fa": "نوسان",
+      "emoji": "🔄",
+      "difficulty": 5,
+      "ex": "La fluctuation des devises complique le commerce.",
+      "ex_fa": "نوسان ارزها تجارت را پیچیده می‌کند."
+    },
+    {
+      "fr": "fluctuer",
+      "fa": "نوسان داشتن",
+      "emoji": "📊",
+      "difficulty": 4,
+      "ex": "Les actions ont tendance à fluctuer quotidiennement.",
+      "ex_fa": "سهام تمایل دارد روزانه نوسان داشته باشد."
+    },
+    {
+      "fr": "volatil(e)",
+      "fa": "فرار، پرنوسان",
+      "emoji": "🌪️",
+      "difficulty": 5,
+      "ex": "Le marché des cryptomonnaies est extrêmement volatil.",
+      "ex_fa": "بازار ارزهای دیجیتال بسیار پرنوسان است."
+    },
+    {
+      "fr": "le chômage (m)",
+      "fa": "بیکاری",
+      "emoji": "👤",
+      "difficulty": 3,
+      "ex": "Le chômage a augmenté suite à la fermeture des usines.",
+      "ex_fa": "بیکاری پس از تعطیلی کارخانه‌ها افزایش یافت."
+    },
+    {
+      "fr": "licencier",
+      "fa": "اخراج کردن",
+      "emoji": "🚪",
+      "difficulty": 4,
+      "ex": "L'entreprise a dû licencier cinquante employés.",
+      "ex_fa": "شرکت مجبور شد پنجاه کارمند را اخراج کند."
+    },
+    {
+      "fr": "le licenciement (m)",
+      "fa": "اخراج",
+      "emoji": "📄",
+      "difficulty": 4,
+      "ex": "Le licenciement économique est une procédure difficile.",
+      "ex_fa": "اخراج اقتصادی یک رویه دشوار است."
+    },
+    {
+      "fr": "la faillite (f)",
+      "fa": "ورشکستگی",
+      "emoji": "🏚️",
+      "difficulty": 4,
+      "ex": "La faillite de cette banque a surpris tout le monde.",
+      "ex_fa": "ورشکستگی این بانک همه را غافلگیر کرد."
+    },
+    {
+      "fr": "faire faillite",
+      "fa": "ورشکست شدن",
+      "emoji": "💸",
+      "difficulty": 4,
+      "ex": "Sans aide, cette start-up risque de faire faillite.",
+      "ex_fa": "بدون کمک، این استارتاپ خطر ورشکستگی دارد."
+    },
+    {
+      "fr": "la dépréciation (f)",
+      "fa": "کاهش ارزش",
+      "emoji": "📉",
+      "difficulty": 5,
+      "ex": "La dépréciation de la monnaie rend les importations chères.",
+      "ex_fa": "کاهش ارزش پول واردات را گران می‌کند."
+    },
+    {
+      "fr": "déprécier",
+      "fa": "بی‌ارزش کردن، کاهش ارزش دادن",
+      "emoji": "👎",
+      "difficulty": 5,
+      "ex": "Les investisseurs craignent que l'euro ne se déprécie.",
+      "ex_fa": "سرمایه‌گذاران نگرانند که یورو بی‌ارزش شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une période difficile",
+      "title_fa": "یک دوره دشوار",
+      "text": "L'entreprise traverse une grave {{BLANK_1}} financière cette année. À cause de la {{BLANK_2}} constante du marché, les prix des matières premières ne cessent de {{BLANK_3}} de manière imprévisible. Cette situation {{BLANK_4}} rend la planification très difficile pour les dirigeants qui doivent prendre des décisions rapides et efficaces. Pour réduire les coûts opérationnels et sauver les comptes, la direction a malheureusement dû {{BLANK_5}} plusieurs employés fidèles qui travaillaient ici depuis des années. Ce {{BLANK_6}} massif a immédiatement créé un climat de peur et d'incertitude dans tous les bureaux de l'usine. Beaucoup de salariés craignent maintenant pour leur propre avenir et se demandent qui sera la prochaine victime de ces coupes budgétaires sévères.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "crise",
+          "options": [
+            "crise",
+            "fête",
+            "succès",
+            "croissance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "fluctuation",
+          "options": [
+            "fluctuation",
+            "stabilité",
+            "certitude",
+            "harmonie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "fluctuer",
+          "options": [
+            "fluctuer",
+            "stagner",
+            "dormir",
+            "disparaître"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "volatile",
+          "options": [
+            "volatile",
+            "stable",
+            "prévisible",
+            "sereine"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "licencier",
+          "options": [
+            "licencier",
+            "embaucher",
+            "promouvoir",
+            "récompenser"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "licenciement",
+          "options": [
+            "licenciement",
+            "recrutement",
+            "embauche",
+            "promotion"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "L'effondrement silencieux",
+      "title_fa": "فروپاشی خاموش",
+      "inspiration": "Le Big Short",
+      "text": "Dans les couloirs feutrés de Wall Street, l'ombre du {{BLANK_1}} de 2008 planait encore lourdement sur les esprits les plus avertis de la finance. Personne n'aurait pu prédire l'ampleur de la {{BLANK_2}} qui allait frapper l'économie mondiale avec une violence inouïe et dévastatrice. Les marchés, autrefois si dynamiques et prometteurs, sombraient désormais dans une {{BLANK_3}} inquiétante, paralysant toute nouvelle initiative d'investissement ou de croissance. Les analystes observaient avec effroi comment un environnement {{BLANK_4}} perdait soudainement toute sa stabilité, emportant des fortunes entières en quelques heures à peine. La {{BLANK_5}} rapide et continue de la monnaie nationale aggravait encore ce tableau déjà sombre, rendant chaque importation prohibitivement chère pour les entreprises locales qui luttaient pour survivre. Face à cette {{BLANK_6}} prolongée, les dirigeants paniquèrent et durent prendre des mesures drastiques pour éviter que leur empire ne vienne à {{BLANK_7}}. Malheureusement, la {{BLANK_8}} devint inévitable pour plusieurs concurrents moins préparés, tandis que le {{BLANK_9}} explosait de manière spectaculaire, touchant des milliers de familles qui se retrouvèrent du jour au lendemain sans aucun revenu. Les investisseurs, totalement impuissants, craignaient de voir leurs derniers avoirs se {{BLANK_10}} davantage dans ce tourbillon économique incontrôlable.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "krach",
+          "options": [
+            "krach",
+            "succès",
+            "boom",
+            "expansion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "récession",
+          "options": [
+            "récession",
+            "croissance",
+            "prospérité",
+            "expansion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "léthargie",
+          "options": [
+            "léthargie",
+            "dynamisme",
+            "énergie",
+            "vitalité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "fluctuant",
+          "options": [
+            "fluctuant",
+            "stable",
+            "prévisible",
+            "serein"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "dépréciation",
+          "options": [
+            "dépréciation",
+            "appréciation",
+            "valorisation",
+            "enrichissement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "stagnation",
+          "options": [
+            "stagnation",
+            "croissance",
+            "expansion",
+            "développement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "faire faillite",
+          "options": [
+            "faire faillite",
+            "s'enrichir",
+            "prospérer",
+            "grandir"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "faillite",
+          "options": [
+            "faillite",
+            "réussite",
+            "victoire",
+            "succès"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "chômage",
+          "options": [
+            "chômage",
+            "emploi",
+            "recrutement",
+            "embauche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "déprécier",
+          "options": [
+            "déprécier",
+            "apprécier",
+            "valoriser",
+            "enrichir"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Fluctuations et crises économiques",
+    "title_fa": "آزمون : نوسانات و بحران‌های اقتصادی",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le ____ boursier de 1929 a changé l'économie mondiale.",
+        "options": [
+          "krach",
+          "succès",
+          "boom",
+          "expansion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "krach = سقوط بازار"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ financière a touché de nombreux pays simultanément.",
+        "options": [
+          "crise",
+          "fête",
+          "succès",
+          "croissance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "crise = بحران"
+      },
+      {
+        "type": "mcq",
+        "question": "Le pays est entré dans une période de ____ économique.",
+        "options": [
+          "récession",
+          "croissance",
+          "prospérité",
+          "expansion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "récession = رکود"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ empêche toute forme de croissance durable.",
+        "options": [
+          "stagnation",
+          "dynamisme",
+          "énergie",
+          "vitalité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "stagnation = رکود، ایستایی"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ du marché inquiète profondément les investisseurs.",
+        "options": [
+          "léthargie",
+          "dynamisme",
+          "énergie",
+          "vitalité"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "léthargie = رخوت اقتصادی"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ des devises complique considérablement le commerce international.",
+        "options": [
+          "fluctuation",
+          "stabilité",
+          "certitude",
+          "harmonie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "fluctuation = نوسان"
+      },
+      {
+        "type": "mcq",
+        "question": "Le marché des cryptomonnaies est connu pour être extrêmement ____.",
+        "options": [
+          "volatil",
+          "stable",
+          "prévisible",
+          "serein"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "volatil = فرار، پرنوسان"
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ a augmenté suite à la fermeture massive des usines.",
+        "options": [
+          "chômage",
+          "emploi",
+          "recrutement",
+          "embauche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "chômage = بیکاری"
+      },
+      {
+        "type": "mcq",
+        "question": "L'entreprise a dû ____ cinquante employés pour réduire ses coûts.",
+        "options": [
+          "licencier",
+          "embaucher",
+          "promouvoir",
+          "récompenser"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "licencier = اخراج کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ de cette banque a surpris tout le monde.",
+        "options": [
+          "faillite",
+          "réussite",
+          "victoire",
+          "succès"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "faillite = ورشکستگی"
+      },
+      {
+        "type": "mcq",
+        "question": "Sans aide financière, cette start-up risque de ____.",
+        "options": [
+          "faire faillite",
+          "s'enrichir",
+          "prospérer",
+          "grandir"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "faire faillite = ورشکست شدن"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ de la monnaie rend les importations beaucoup plus chères.",
+        "options": [
+          "dépréciation",
+          "appréciation",
+          "valorisation",
+          "enrichissement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "dépréciation = کاهش ارزش"
+      },
+      {
+        "type": "binary",
+        "question": "Fluctuer signifie varier de manière irrégulière et imprévisible.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - fluctuer = نوسان داشتن"
+      },
+      {
+        "type": "binary",
+        "question": "Un environnement fluctuant est un environnement stable et prévisible.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - fluctuant به معنای در نوسان و غیرقابل پیش‌بینی است."
+      },
+      {
+        "type": "binary",
+        "question": "Le licenciement est l'action de mettre fin au contrat de travail d'un employé.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - licenciement = اخراج"
+      },
+      {
+        "type": "binary",
+        "question": "Déprécier signifie augmenter la valeur ou le prix de quelque chose.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - déprécier به معنای کاهش ارزش دادن است (نقطه مقابل apprécier)."
+      }
+    ]
+  }
+}
