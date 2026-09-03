@@ -16,10 +16,15 @@
     "noImplicitAny": false,
     "skipLibCheck": true
   },
+
   "include": [
-    "*.js"
-, "src/features/polls/polls.js", "src/ui/ui.js", "tools/legacy/script-backup.js", "src/features/onboarding/onboarding.js", "src/features/news/news.js", "src/features/travel/travelRenderers.js", "src/features/travel/travelEngine.js", "src/features/travel/travel.js", "src/features/search/search.js", "src/pages/home.js", "src/features/grammar/grammarEngine.js", "src/features/grammar/grammar.js", "src/features/vocabulary/vocabularyEngine.js", "src/features/vocabulary/vocabulary.js", "src/pages/paths.js", "src/pages/misc.js", "src/core/router.js", "src/core/progressEngine.js", "src/core/pathEngine.js", "src/core/lessonEngine.js", "src/core/exerciseEngine.js", "src/core/placementEngine.js"  ],
+    "app.js",
+    "src/**/*.js"
+  ],
+
   "exclude": [
-    "tools/legacy/script-backup.js"
+    "node_modules",
+    "tools",
+    "tests"
   ]
 }

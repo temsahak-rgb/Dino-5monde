@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Français avec Dino</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="src/styles/style.css">
 </head>
 <body>
   <div id="app"></div>
@@ -20,25 +20,31 @@ window.onerror = function(msg, url, line) {
 };
 </script>
   
-  <script src="placementEngine.js"></script>
-  <script src="grammarEngine.js"></script>
-  <script src="pathEngine.js"></script>
-  <script src="lessonEngine.js"></script>
-  <script src="exerciseEngine.js"></script>
-  <script src="progressEngine.js"></script>
-  <script src="vocabulary.js"></script>
-  <script src="grammar.js"></script>
-  <script src="onboarding.js"></script>
-  <script src="polls.js?v=64"></script>
-  <script src="travelEngine.js?v=66"></script>
-  <script src="travelRenderers.js?v=66"></script>
-  <script src="travel.js?v=66"></script>  
-  <script src="home.js"></script>
-  <script src="misc.js"></script>
-  <script src="paths.js"></script>
-  <script src="ui.js"></script>
-  <script src="router.js"></script>
-  <script src="search.js?v=62"></script> 
+  <script src="src/core/placementEngine.js"></script>
+  <script src="src/features/grammar/grammarEngine.js"></script>
+  <script src="src/core/pathEngine.js"></script>
+  <script src="src/core/lessonEngine.js"></script>
+  <script src="src/core/exerciseEngine.js"></script>
+  <script src="src/core/progressEngine.js"></script>
+
+  <script src="src/features/vocabulary/vocabulary.js"></script>
+  <script src="src/features/grammar/grammar.js"></script>
+  <script src="src/features/onboarding/onboarding.js"></script>
+  <script src="src/features/polls/polls.js?v=64"></script>
+
+  <script src="src/features/travel/travelEngine.js?v=66"></script>
+  <script src="src/features/travel/travelRenderers.js?v=66"></script>
+  <script src="src/features/travel/travel.js?v=66"></script>
+
+  <script src="src/pages/home.js"></script>
+  <script src="src/pages/misc.js"></script>
+  <script src="src/pages/paths.js"></script>
+
+  <script src="src/ui/ui.js"></script>
+  <script src="src/core/router.js"></script>
+
+  <script src="src/features/search/search.js?v=62"></script>
+
   <script src="app.js?v=50"></script>
 
 </body>
