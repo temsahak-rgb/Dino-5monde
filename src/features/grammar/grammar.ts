@@ -1,3 +1,50 @@
+import {
+    getSection,
+    loadLessonWithExercises
+} from "../../core/lessonEngine.js";
+import { getPlacementResult } from "../../core/placementEngine.js";
+import {
+    getLessonProgress,
+    markSectionCompleted
+} from "../../core/progressEngine.js";
+import {
+    getGrammar,
+    getLessonStatus,
+    getRecommendedGrammar,
+    getStatusIcon,
+    isBookmarked,
+    loadGrammar,
+    setLessonStatus,
+    toggleBookmark
+} from "./grammarEngine.js";
+import { t } from "../../i18n/i18n.js";
+import { showExerciseContent } from "../exercises/exercises.js";
+import type {
+    GrammarLessonIndex,
+    LessonContentSection,
+    LessonData,
+    Level
+} from "../../types/global.js";
+import {
+    app,
+    getRequiredElement,
+    queryElements
+} from "../../ui/ui.js";
+import {
+    type GrammarCatalogCardViewModel,
+    renderGrammarCatalogView,
+    renderGrammarLessonContentView,
+    renderGrammarLessonNotFoundView,
+    renderGrammarLessonView,
+    renderGrammarLoadingView
+} from "../../ui/views/grammarView.js";
+
+export {
+    showGrammarLesson,
+    showGrammarPage,
+    showLessonContent
+};
+
 /**
  * Grammar feature controller.
  *
@@ -24,14 +71,45 @@ async function showGrammarPage(): Promise<void> {
     const recommended =
         getRecommendedGrammar(level);
 
+    const allLessonCards =
+        createGrammarCatalogCards(
+            allLessons
+        );
+
+    const recommendedCards =
+        recommended.map(
+            lesson => ({
+                lesson,
+                statusIcon: "🦖"
+            })
+        );
+
     app.innerHTML =
         renderGrammarCatalogView(
             level,
-            allLessons,
-            recommended
+            allLessonCards,
+            recommendedCards
         );
 
     bindGrammarCatalogEvents();
+}
+
+/**
+ * Prepares persisted lesson state for the presentation layer.
+ */
+function createGrammarCatalogCards(
+    lessons: GrammarLessonIndex[]
+): GrammarCatalogCardViewModel[] {
+    return lessons.map(
+        lesson => ({
+            lesson,
+            statusIcon: getStatusIcon(
+                getLessonStatus(
+                    lesson.id
+                )
+            )
+        })
+    );
 }
 
 /**
@@ -225,7 +303,11 @@ async function showLessonSection(
 
     showExerciseContent(
         lessonId,
-        section
+        section,
+        () =>
+            showGrammarLesson(
+                lessonId
+            )
     );
 }
 
@@ -264,21 +346,4 @@ function showLessonContent(
             lessonId
         );
     };
-}
-
-/**
- * Temporary compatibility wrapper.
- *
- * Some classic browser scripts may still refer to the historical `renderTable`
- * helper while the view-layer migration is in progress.
- *
- * @param table - Lesson table data.
- * @returns Rendered table HTML from the grammar view.
- */
-function renderTable(
-    table: LessonTable | null | undefined
-): string {
-    return renderGrammarTableView(
-        table
-    );
 }

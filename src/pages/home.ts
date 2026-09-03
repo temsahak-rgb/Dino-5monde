@@ -1,3 +1,12 @@
+import { getPlacementResult } from "../core/placementEngine.js";
+import { renderNewsSection } from "../features/news/news.js";
+import { app } from "../ui/ui.js";
+import { renderHomeView } from "../ui/views/homeView.js";
+
+export {
+    showHome
+};
+
 /**
  * Application home-page controller.
  *

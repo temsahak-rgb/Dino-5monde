@@ -1,3 +1,42 @@
+import { renderNavbar } from "./navbarView.js";
+import {
+    localizedTextClass,
+    localizedValue,
+    t
+} from "../../i18n/i18n.js";
+import type {
+    GrammarLessonIndex,
+    LessonContentSection,
+    LessonData,
+    LessonExample,
+    LessonProgress,
+    LessonSection,
+    LessonTable,
+    Level
+} from "../../types/global.js";
+import {
+    getLanguage,
+    renderMarkdown,
+    sectionHeader
+} from "../ui.js";
+
+export {
+    renderGrammarCatalogView,
+    renderGrammarLessonContentView,
+    renderGrammarLessonNotFoundView,
+    renderGrammarLessonView,
+    renderGrammarLoadingView,
+    renderGrammarTableView
+};
+export type {
+    GrammarCatalogCardViewModel
+};
+
+interface GrammarCatalogCardViewModel {
+    lesson: GrammarLessonIndex;
+    statusIcon: string;
+}
+
 /**
  * Presentation layer for the grammar feature.
  *
@@ -66,14 +105,14 @@ function renderGrammarLoadingView(): string {
  * Navigation handlers are attached by the grammar controller.
  *
  * @param level - Active CEFR level.
- * @param allLessons - Complete grammar catalog for the level.
- * @param recommended - Recommended grammar lessons.
+ * @param allLessons - Prepared grammar cards for the level.
+ * @param recommended - Prepared recommended grammar cards.
  * @returns Complete grammar catalog HTML.
  */
 function renderGrammarCatalogView(
     level: Level,
-    allLessons: GrammarLessonIndex[],
-    recommended: GrammarLessonIndex[]
+    allLessons: GrammarCatalogCardViewModel[],
+    recommended: GrammarCatalogCardViewModel[]
 ): string {
     return `
         ${renderNavbar()}
@@ -120,7 +159,7 @@ function renderGrammarCatalogView(
  * @returns Recommended-section HTML.
  */
 function renderRecommendedGrammarView(
-    lessons: GrammarLessonIndex[]
+    lessons: GrammarCatalogCardViewModel[]
 ): string {
     return `
         <div style="margin-bottom:35px;">
@@ -141,10 +180,10 @@ function renderRecommendedGrammarView(
             >
                 ${lessons
                     .map(
-                        lesson =>
+                        item =>
                             renderGrammarCatalogCardView(
-                                lesson,
-                                "🦖"
+                                item.lesson,
+                                item.statusIcon
                             )
                     )
                     .join("")}
@@ -160,7 +199,7 @@ function renderRecommendedGrammarView(
  * @returns Lesson-catalog HTML.
  */
 function renderAllGrammarLessonsView(
-    lessons: GrammarLessonIndex[]
+    lessons: GrammarCatalogCardViewModel[]
 ): string {
     return `
         <div>
@@ -181,14 +220,10 @@ function renderAllGrammarLessonsView(
             >
                 ${lessons
                     .map(
-                        lesson =>
+                        item =>
                             renderGrammarCatalogCardView(
-                                lesson,
-                                getStatusIcon(
-                                    getLessonStatus(
-                                        lesson.id
-                                    )
-                                )
+                                item.lesson,
+                                item.statusIcon
                             )
                     )
                     .join("")}
@@ -261,7 +296,7 @@ function renderGrammarCatalogCardView(
                 ⏱ ${lesson.estimatedTime} min
                 ·
                 ${lesson.exercises}
-                ${t("navbar.exercises")}
+                ${t("grammar.exercises")}
             </p>
         </button>
     `;

@@ -1,3 +1,21 @@
+import { loadPlacementQuestions } from "./src/core/placementEngine.js";
+import { navigateToSection } from "./src/core/navigation.js";
+import { initializeRouter } from "./src/core/router.js";
+import { initializeNews } from "./src/features/news/news.js";
+import {
+    showLanguage,
+    showPath
+} from "./src/features/onboarding/onboarding.js";
+import { initializePolls } from "./src/features/polls/polls.js";
+import {
+    applyDocumentLanguage,
+    getI18nLanguage
+} from "./src/i18n/i18n.js";
+import type {
+    Language,
+    PathId
+} from "./src/types/global.js";
+
 /**
  * Browser application bootstrap.
  *
@@ -20,6 +38,18 @@ function isPersistedLanguage(
     return (
         value === "fr"
         || value === "fa"
+    );
+}
+
+/**
+ * Returns whether a persisted value is a shipped MVP learning path.
+ */
+function isPersistedPath(
+    value: string | null
+): value is PathId {
+    return (
+        value === "general"
+        || value === "travel"
     );
 }
 
@@ -62,9 +92,9 @@ async function bootstrap(): Promise<void> {
 
     if (
         hasLanguage
-        && savedPath
+        && isPersistedPath(savedPath)
     ) {
-        await switchSection(
+        await navigateToSection(
             "home"
         );
 
@@ -83,5 +113,9 @@ async function bootstrap(): Promise<void> {
 
     showLanguage();
 }
+
+initializeRouter();
+initializeNews();
+initializePolls();
 
 void bootstrap();

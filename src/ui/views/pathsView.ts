@@ -1,117 +1,27 @@
+import { renderNavbar } from "./navbarView.js";
+import {
+    localizedTextClass,
+    localizedValue,
+    t
+} from "../../i18n/i18n.js";
+import type {
+    ExerciseQuestion,
+    ExerciseSectionInput
+} from "../../types/global.js";
+import { renderMarkdown } from "../ui.js";
+
+export {
+    renderExerciseFeedbackView,
+    renderExerciseQuestionView,
+    renderExerciseResultView
+};
+
 /**
- * Presentation layer for Daily lessons and shared exercise flows.
+ * Presentation layer for shared exercise flows.
  *
- * This file owns the HTML structure used by `src/pages/paths.ts`.
  * Exercise state, scoring, persistence and event orchestration remain in the
- * controller.
+ * feature controller.
  */
-
-/**
- * Renders the Daily French landing page.
- *
- * @returns Complete Daily landing-page HTML.
- */
-function renderDailyHomeView(): string {
-    return `
-        ${renderNavbar()}
-
-        <div style="
-            max-width:900px;
-            margin:0 auto;
-            padding:24px 16px 50px;
-        ">
-            <h1 style="
-                font-size:22px;
-                font-weight:700;
-                color:#1a1a1a;
-                margin:0 0 4px;
-            ">
-                ${t("daily.title")}
-            </h1>
-
-            <p style="
-                font-size:13px;
-                color:#777;
-                margin:0 0 30px;
-            ">
-                ${t("daily.subtitle")}
-            </p>
-
-            <p style="
-                font-size:14px;
-                color:#777;
-                text-align:center;
-                padding:40px 0;
-            ">
-                🏗️🦖 ${t("daily.underConstruction")}
-            </p>
-        </div>
-    `;
-}
-
-/**
- * Renders the loading state displayed while a Daily lesson is fetched.
- *
- * @returns Complete loading-page HTML.
- */
-function renderDailyLessonLoadingView(): string {
-    return `
-        ${renderNavbar()}
-
-        <div style="
-            text-align:center;
-            padding:60px 16px;
-        ">
-            <p style="
-                font-size:14px;
-                color:#777;
-            ">
-                ⏳ ${t("common.loading")}
-            </p>
-        </div>
-    `;
-}
-
-/**
- * Renders the state displayed when a Daily lesson is unavailable.
- *
- * The controller binds the return action to `#daily-return-btn`.
- *
- * @returns Complete unavailable-lesson HTML.
- */
-function renderDailyLessonUnavailableView(): string {
-    return `
-        ${renderNavbar()}
-
-        <div style="
-            text-align:center;
-            padding:60px 16px;
-        ">
-            <p style="
-                font-size:14px;
-                color:#777;
-            ">
-                🚧 ${t("daily.lessonSoon")}
-            </p>
-
-            <button
-                id="daily-return-btn"
-                type="button"
-                style="
-                    margin-top:15px;
-                    padding:10px 20px;
-                    border:1px solid #ddd;
-                    border-radius:6px;
-                    background:#fff;
-                    color:#1a1a1a;
-                    cursor:pointer;
-                "
-            >
-                ${t("common.back")}
-            </button>
-        </div>
-    `;
-}
 
 /**
  * Renders one exercise question.

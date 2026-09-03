@@ -68,10 +68,7 @@ Le but du MVP n'est pas encore de fournir toutes les fonctions d'une plateforme 
 | Recherche | ✅ Présente |
 | Actualités | ✅ Présentes |
 | Sondages | ✅ Fonction présente |
-| Quotidien | 🚧 Partiellement construit |
-| Jeux | 🚧 Placeholder |
-| Page générale Exercices | 🚧 Placeholder |
-| Profil | 🚧 Placeholder |
+| Quotidien, Jeux, page générale Exercices, Profil | Hors du périmètre publié ; aucune route factice exposée |
 | Compte utilisateur distant | ❌ Non implémenté |
 | Synchronisation multi-appareils | ❌ Non implémentée |
 
@@ -359,7 +356,7 @@ data/**/*.json
     → contenu pédagogique
 
 types/
-    → contrats TypeScript globaux
+    → contrats TypeScript exportés
 ```
 
 ### Contrôleurs / pages
@@ -409,37 +406,25 @@ data/ = ce que l'application enseigne
 
 Les leçons et packs sont majoritairement décrits en JSON afin que l'ajout de contenu pédagogique n'oblige pas à réécrire le moteur.
 
-### Scripts classiques : état transitoire assumé
+### ES modules et dépendances explicites
 
 Dino n'utilise actuellement ni React ni Vue.
 
-Le TypeScript applicatif est encore compilé en **scripts navigateur classiques** avec `module: none`. `index.html` impose donc un ordre de chargement explicite.
+Le TypeScript applicatif est compilé en **ES modules**. `index.html` ne connaît qu'un seul entry point, `app.js`, chargé avec `type="module"`. Les dépendances d'exécution et de types sont déclarées dans chaque fichier avec des `import`, et les API partagées avec des `export` explicites.
 
-> L'ordre des scripts est aujourd'hui une dépendance réelle de l'application.
-
-La prochaine étape structurelle prévue est la migration vers des `import` / `export` explicites.
+L'ordre de chargement est désormais calculé par le navigateur depuis ce graphe de modules ; il n'est plus maintenu à la main dans le HTML.
 
 ### Graphe de dépendances
 
-Le graphe de dépendances automatique est volontairement **reporté après la migration vers les imports explicites**.
+Le [graphe applicatif généré](docs/dependency-graph.md) représente toutes les dépendances locales atteignables depuis `app.ts`. Il présente une vue d'ensemble agrégée par couche et des cartes repliables par domaine. Les imports de types sont suivis mais masqués dans les diagrammes afin de préserver leur lisibilité.
 
-Pourquoi ?
-
-Avant cette migration, un outil devrait déduire les dépendances à partir des symboles globaux et de l'ordre des scripts. Après la migration, il pourra lire directement les imports TypeScript et produire un graphe fiable.
-
-L'objectif est ensuite de pouvoir générer automatiquement une documentation du type :
-
-```text
-page / controller
-        ↓
-engine(s)
-        ↓
-view
-        ↓
-DOM
+```bash
+npm run graph:dependencies
+npm run graph:dependencies:check
 ```
 
-avec les vraies dépendances du dépôt, et non un schéma maintenu manuellement.
+Le fichier est déterministe : la première commande le régénère, la seconde vérifie qu'il est à jour sans l'écrire.
+Le générateur rejette également tout cycle de dépendances d'exécution. Les tests d'architecture complètent cette garantie en interdisant notamment les dépendances Vue → Feature/Page, Feature → Page et Engine → UI/Controller.
 
 ---
 
@@ -455,6 +440,7 @@ npm run typecheck
 npm run build
 npm run knip
 npm run duplication
+npm run graph:dependencies:check
 ```
 
 `npm test` prend automatiquement tous les fichiers :
@@ -494,13 +480,13 @@ Le test `ui-boundaries.test.ts` protège notamment contre :
 - le retour des branchements directs de langue dans le métier ;
 - la disparition des Views migrées ;
 - le retour de l'ancien renderer Travel ;
-- la casse de l'ordre des scripts classiques dans `index.html`.
+- le retour de scripts classiques ou de plusieurs entry points dans `index.html`.
 
 Autrement dit, la séparation actuelle n'est plus seulement une convention écrite : elle possède un garde-fou exécutable.
 
 ### CI
 
-Le workflow GitHub Actions exécute :
+Le workflow GitHub Actions de qualité exécute :
 
 ```text
 tests             → bloquant pour le job
@@ -511,6 +497,8 @@ jscpd             → informatif
 ```
 
 Cela signifie qu'une régression de compilation, de test ou de build rend le job CI rouge.
+
+Le workflow dédié **Dependency graph** exécute `npm run graph:dependencies`, puis compare le résultat à `docs/dependency-graph.md`. Une dépendance modifiée sans régénération du graphe rend ce job rouge.
 
 La configuration des règles de protection GitHub elles-mêmes reste indépendante de ce code.
 
@@ -671,7 +659,7 @@ i18n centralisé
 dépendances explicites
 ```
 
-La migration future vers les imports explicites permettra ensuite de générer automatiquement le graphe d'architecture et de détecter plus précisément les dépendances indésirables.
+Les imports explicites alimentent désormais automatiquement le graphe d'architecture et rendent les dépendances indésirables visibles dans les revues de code.
 
 ---
 

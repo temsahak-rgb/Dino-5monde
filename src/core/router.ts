@@ -1,3 +1,20 @@
+import {
+    parseAppSection,
+    registerNavigationHandler
+} from "./navigation.js";
+import { showGrammarPage } from "../features/grammar/grammar.js";
+import { openSearch } from "../features/search/search.js";
+import { showTravelPage } from "../features/travel/travel.js";
+import { showVocabularyPage } from "../features/vocabulary/vocabulary.js";
+import { showHome } from "../pages/home.js";
+import type { AppSection } from "../types/global.js";
+import { app } from "../ui/ui.js";
+
+export {
+    initializeRouter,
+    switchSection
+};
+
 /**
  * Application top-level router and navbar interaction controller.
  *
@@ -5,28 +22,6 @@
  */
 
 let navbarDelegatedEventsBound = false;
-
-/**
- * Renders the shared application navigation bar.
- *
- * This compatibility facade is intentionally kept because page views already
- * call `renderNavbar()`.
- *
- * @returns Complete navbar HTML.
- */
-function renderNavbar(): string {
-    const currentSection =
-        parseAppSection(
-            localStorage.getItem(
-                "currentSection"
-            )
-        )
-        ?? "home";
-
-    return renderNavbarView(
-        currentSection
-    );
-}
 
 /**
  * Opens or closes the responsive navigation menu.
@@ -111,24 +106,8 @@ async function switchSection(
             await showVocabularyPage();
             break;
 
-        case "daily":
-            await showDailyHome();
-            break;
-
         case "travel":
             await showTravelPage();
-            break;
-
-        case "games":
-            showGamesPage();
-            break;
-
-        case "exercises":
-            showExercisesPage();
-            break;
-
-        case "profile":
-            showProfile();
             break;
     }
 }
@@ -217,28 +196,11 @@ function bindNavbarDelegatedEvents(): void {
 }
 
 /**
- * Validates a value before using it as an application section.
- *
- * @param value - Raw persisted or DOM value.
- * @returns Valid application section or null.
+ * Installs the application-wide navigation event delegation once.
  */
-function parseAppSection(
-    value: string | null | undefined
-): AppSection | null {
-    switch (value) {
-        case "home":
-        case "grammar":
-        case "vocabulary":
-        case "daily":
-        case "travel":
-        case "games":
-        case "exercises":
-        case "profile":
-            return value;
-
-        default:
-            return null;
-    }
+function initializeRouter(): void {
+    registerNavigationHandler(
+        switchSection
+    );
+    bindNavbarDelegatedEvents();
 }
-
-bindNavbarDelegatedEvents();

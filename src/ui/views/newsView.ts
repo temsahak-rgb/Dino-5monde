@@ -1,3 +1,23 @@
+import { renderNavbar } from "./navbarView.js";
+import {
+    localizedTextClass,
+    localizedValue,
+    t
+} from "../../i18n/i18n.js";
+import type {
+    NewsArticle,
+    NewsGrammarItem,
+    NewsIndexItem,
+    NewsSource,
+    NewsVocabularyItem
+} from "../../types/global.js";
+
+export {
+    renderNewsDetailView,
+    renderNewsHomeCardView,
+    renderNewsNotFoundView
+};
+
 /**
  * Presentation layer for the News feature.
  *

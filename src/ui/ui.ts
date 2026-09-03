@@ -1,3 +1,18 @@
+import {
+    getI18nLanguage,
+    t
+} from "../i18n/i18n.js";
+import type { Language } from "../types/global.js";
+
+export {
+    app,
+    getLanguage,
+    getRequiredElement,
+    queryElements,
+    renderMarkdown,
+    sectionHeader
+};
+
 /**
  * Shared browser helpers.
  *

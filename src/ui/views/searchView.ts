@@ -1,3 +1,24 @@
+import {
+    localizedTextClass,
+    localizedValue,
+    t
+} from "../../i18n/i18n.js";
+import type {
+    NewsIndexItem,
+    SearchGrammarItem,
+    SearchVocabWord
+} from "../../types/global.js";
+
+export {
+    getSearchModalStyle,
+    renderSearchErrorView,
+    renderSearchLoadingView,
+    renderSearchMinimumCharactersView,
+    renderSearchModalView,
+    renderSearchNoResultsView,
+    renderSearchResultsView
+};
+
 /**
  * Presentation layer for site-wide search.
  *

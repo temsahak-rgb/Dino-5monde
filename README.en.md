@@ -68,10 +68,7 @@ The MVP is not intended to provide every feature of a complete learning platform
 | Search | ✅ Present |
 | News | ✅ Present |
 | Polls | ✅ Feature present |
-| Daily | 🚧 Partially built |
-| Games | 🚧 Placeholder |
-| Global Exercises page | 🚧 Placeholder |
-| Profile | 🚧 Placeholder |
+| Daily, Games, global Exercises, Profile | Outside the published scope; no placeholder route is exposed |
 | Remote user accounts | ❌ Not implemented |
 | Cross-device sync | ❌ Not implemented |
 
@@ -359,7 +356,7 @@ data/**/*.json
     → educational content
 
 types/
-    → global TypeScript contracts
+    → exported TypeScript contracts
 ```
 
 ### Controllers / pages
@@ -409,35 +406,25 @@ data/ = what the application teaches
 
 Lessons and packs are mostly represented as JSON so educational content can grow independently from the application engine.
 
-### Classic scripts are an explicit transitional state
+### ES modules and explicit dependencies
 
 Dino currently uses neither React nor Vue.
 
-Application TypeScript is still compiled to **classic browser scripts** using `module: none`. `index.html` therefore defines an explicit loading order.
+Application TypeScript is compiled as **ES modules**. `index.html` knows a single entry point, `app.js`, loaded with `type="module"`. Every runtime and type dependency is declared with an `import`, and shared APIs use explicit `export` declarations.
 
-> Script order is currently a real application dependency.
-
-The next structural migration is to explicit `import` / `export` dependencies.
+The browser now derives loading order from the module graph instead of a hand-maintained script list.
 
 ### Dependency graph
 
-The automatically generated dependency graph is intentionally **postponed until the explicit-import migration is complete**.
+The [generated application graph](docs/dependency-graph.md) contains every local dependency reachable from `app.ts`. It provides an aggregated layer overview and collapsible maps for each domain. Type-only imports are tracked but hidden from the diagrams to keep them readable.
 
-Before that migration, a tool would need to infer relationships from globals and script order. After it, a generator can read the TypeScript imports directly and produce a reliable graph.
-
-The intended future output will document the real relationships between:
-
-```text
-page / controller
-        ↓
-engine(s)
-        ↓
-view
-        ↓
-DOM
+```bash
+npm run graph:dependencies
+npm run graph:dependencies:check
 ```
 
-without maintaining a hand-written dependency graph.
+The file is deterministic: the first command regenerates it, while the second verifies it without writing.
+The generator also rejects every runtime dependency cycle. Architecture tests reinforce that guarantee by forbidding View → Feature/Page, Feature → Page, and Engine → UI/Controller dependencies.
 
 ---
 
@@ -453,6 +440,7 @@ npm run typecheck
 npm run build
 npm run knip
 npm run duplication
+npm run graph:dependencies:check
 ```
 
 `npm test` automatically runs files matching:
@@ -492,13 +480,13 @@ protect structural invariants.
 - direct interface-language branching returning to business logic;
 - migrated Views disappearing;
 - the legacy Travel renderer returning;
-- classic script dependency order being broken in `index.html`.
+- classic scripts or multiple entry points returning to `index.html`.
 
 The architecture is therefore no longer only a written convention: it has an executable regression guard.
 
 ### CI
 
-GitHub Actions currently runs:
+The code-quality GitHub Actions workflow runs:
 
 ```text
 tests             → blocking for the job
@@ -509,6 +497,8 @@ jscpd             → informative
 ```
 
 A test, typecheck or build regression therefore makes the CI job fail.
+
+The dedicated **Dependency graph** workflow runs `npm run graph:dependencies`, then compares the result with `docs/dependency-graph.md`. Changing an import without regenerating the graph makes this job fail.
 
 GitHub branch/ruleset configuration remains separate from this repository code.
 
@@ -669,7 +659,7 @@ centralised i18n
 explicit dependencies
 ```
 
-The future explicit-import migration will then make it possible to generate the architecture dependency graph automatically and detect unwanted dependencies more precisely.
+Explicit imports now feed the architecture graph automatically and make unwanted dependencies visible during code review.
 
 ---
 

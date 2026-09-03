@@ -1,3 +1,35 @@
+import { renderNavbar } from "./navbarView.js";
+import {
+    localizedTextClass,
+    localizedValue,
+    t
+} from "../../i18n/i18n.js";
+import type {
+    Level,
+    StoryDifficulty,
+    VocabPack,
+    VocabPackIndex,
+    VocabStory,
+    VocabStoryBlank,
+    VocabStoryQuestion,
+    VocabWord
+} from "../../types/global.js";
+
+export {
+    getVocabScorePresentation,
+    renderBlankVocabStoryView,
+    renderFlashcardReviewPromptView,
+    renderFlashcardView,
+    renderLegacyVocabStoryView,
+    renderVocabLevelView,
+    renderVocabPackUnavailableView,
+    renderVocabPackView,
+    renderVocabQuizFeedbackView,
+    renderVocabQuizQuestionView,
+    renderVocabResultView,
+    renderVocabularyPageView
+};
+
 /**
  * Presentation layer for the Vocabulary feature.
  *

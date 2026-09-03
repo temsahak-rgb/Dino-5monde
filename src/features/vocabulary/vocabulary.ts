@@ -1,3 +1,44 @@
+import {
+    localizedValue,
+    t
+} from "../../i18n/i18n.js";
+import type {
+    Level,
+    StoryDifficulty,
+    VocabExercise,
+    VocabExerciseQuestion,
+    VocabPack,
+    VocabPackIndex,
+    VocabStory,
+    VocabStoryBlank,
+    VocabWeakMap,
+    VocabWord
+} from "../../types/global.js";
+import {
+    app,
+    getRequiredElement,
+    queryElements
+} from "../../ui/ui.js";
+import {
+    getVocabScorePresentation,
+    renderBlankVocabStoryView,
+    renderFlashcardReviewPromptView,
+    renderFlashcardView,
+    renderLegacyVocabStoryView,
+    renderVocabLevelView,
+    renderVocabPackUnavailableView,
+    renderVocabPackView,
+    renderVocabQuizFeedbackView,
+    renderVocabQuizQuestionView,
+    renderVocabResultView,
+    renderVocabularyPageView
+} from "../../ui/views/vocabularyView.js";
+
+export {
+    showVocabPack,
+    showVocabularyPage
+};
+
 /**
  * Vocabulary catalog, flashcards, stories, weak-word review, and quizzes.
  *
@@ -15,12 +56,6 @@
  * `src/ui/views/vocabularyView.ts`.
  */
 
-type StoryDifficulty =
-    | "simple"
-    | "literary"
-    | "easy"
-    | "hard";
-
 interface PreparedVocabQuestion {
     question: string;
     options: string[];
@@ -33,6 +68,8 @@ const vocabCache:
         string,
         VocabPackIndex[] | VocabPack
     > = {};
+let currentPack:
+    VocabPack | undefined;
 
 /**
  * Returns persisted weak words for a vocabulary pack.
@@ -222,7 +259,7 @@ async function loadVocabPack(
  */
 function getCurrentVocabPack(): VocabPack {
     const pack =
-        window.currentPack;
+        currentPack;
 
     if (!pack) {
         throw new Error(
@@ -359,7 +396,7 @@ async function showVocabPack(
         return;
     }
 
-    window.currentPack =
+    currentPack =
         pack;
 
     const weakCount =

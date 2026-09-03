@@ -1,3 +1,21 @@
+import type {
+    Level,
+    PlacementLevelEstimate,
+    PlacementQuestion,
+    PlacementState
+} from "../types/global.js";
+
+export {
+    answerPlacement,
+    getEstimatedLevelRange,
+    getNextQuestion,
+    getPlacementResult,
+    getPlacementState,
+    loadPlacementQuestions,
+    resetPlacementState,
+    savePlacementResult
+};
+
 /**
  * Adaptive placement-test state and scoring engine.
  */

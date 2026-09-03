@@ -1,3 +1,15 @@
+import type {
+    ExerciseAnswer,
+    LessonProgress,
+    MistakeRecord
+} from "../types/global.js";
+
+export {
+    getLessonProgress,
+    markSectionCompleted,
+    saveMistake
+};
+
 /**
  * Local persistence for lesson progress and user mistakes.
  */

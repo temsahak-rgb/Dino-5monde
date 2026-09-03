@@ -1,3 +1,29 @@
+import { parseAppSection } from "../../core/navigation.js";
+import { t } from "../../i18n/i18n.js";
+import type { AppSection } from "../../types/global.js";
+
+export {
+    renderNavbar,
+    renderNavbarView
+};
+
+/**
+ * Renders the shared navigation using the persisted active section.
+ */
+function renderNavbar(): string {
+    const currentSection =
+        parseAppSection(
+            localStorage.getItem(
+                "currentSection"
+            )
+        )
+        ?? "home";
+
+    return renderNavbarView(
+        currentSection
+    );
+}
+
 /**
  * Presentation layer for the shared application navigation bar.
  *
@@ -83,34 +109,12 @@ function renderNavbarView(
                 )}
 
                 ${renderNavbarSectionItemView(
-                    "daily",
-                    t("navbar.daily"),
-                    currentSection
-                )}
-
-                ${renderNavbarSectionItemView(
                     "travel",
                     t("navbar.travel"),
                     currentSection
                 )}
 
-                ${renderNavbarSectionItemView(
-                    "games",
-                    t("navbar.games"),
-                    currentSection
-                )}
-
-                ${renderNavbarSectionItemView(
-                    "exercises",
-                    t("navbar.exercises"),
-                    currentSection
-                )}
-
                 ${renderNavbarSearchView()}
-
-                ${renderNavbarProfileView(
-                    currentSection
-                )}
             </div>
         </nav>
 
@@ -234,44 +238,6 @@ function renderNavbarSearchView(): string {
             "
         >
             🔍
-        </button>
-    `;
-}
-
-/**
- * Renders the profile navigation action.
- *
- * @param currentSection - Current application section.
- * @returns Profile button HTML.
- */
-function renderNavbarProfileView(
-    currentSection: AppSection
-): string {
-    const active =
-        currentSection === "profile";
-
-    return `
-        <button
-            type="button"
-            class="navbar-icon-action"
-            data-nav-section="profile"
-            data-active="${active ? "true" : "false"}"
-            title="${t("navbar.profile")}"
-            aria-label="${t("navbar.profile")}"
-            ${active ? 'aria-current="page"' : ""}
-            style="
-                background:none;
-                border:none;
-                color:#fff;
-                font-size:18px;
-                cursor:pointer;
-                padding:0 0 0 4px;
-                margin:0;
-                line-height:48px;
-                opacity:${active ? "1" : "0.9"};
-            "
-        >
-            👤
         </button>
     `;
 }

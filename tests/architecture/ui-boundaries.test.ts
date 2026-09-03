@@ -9,7 +9,7 @@
  * - interface-language branching must not return to business/controller code
  * - required view files must remain present
  * - the legacy Travel renderer must not return
- * - index.html must preserve the dependency-oriented script loading order
+ * - index.html must expose one ES-module entry point and no classic scripts
  */
 
 import assert from "node:assert/strict";
@@ -114,7 +114,6 @@ const languageNeutralRoots = [
 const requiredViews = [
     "navbarView.ts",
     "homeView.ts",
-    "miscView.ts",
     "pathsView.ts",
     "grammarView.ts",
     "travelView.ts",
@@ -123,57 +122,6 @@ const requiredViews = [
     "pollsView.ts",
     "onboardingView.ts",
     "searchView.ts"
-];
-
-/**
- * Script dependency chain required by classic global browser scripts.
- *
- * Additional scripts may be inserted in the future, but these scripts must
- * keep this relative order.
- */
-const requiredScriptOrder = [
-    "src/i18n/fr.js",
-    "src/i18n/fa.js",
-    "src/i18n/i18n.js",
-
-    "src/ui/ui.js",
-
-    "src/ui/views/navbarView.js",
-    "src/ui/views/homeView.js",
-    "src/ui/views/miscView.js",
-    "src/ui/views/pathsView.js",
-    "src/ui/views/grammarView.js",
-    "src/ui/views/travelView.js",
-    "src/ui/views/vocabularyView.js",
-    "src/ui/views/newsView.js",
-    "src/ui/views/pollsView.js",
-    "src/ui/views/onboardingView.js",
-    "src/ui/views/searchView.js",
-
-    "src/core/placementEngine.js",
-    "src/core/pathEngine.js",
-    "src/core/lessonEngine.js",
-    "src/core/exerciseEngine.js",
-    "src/core/progressEngine.js",
-
-    "src/features/grammar/grammarEngine.js",
-    "src/features/travel/travelEngine.js",
-
-    "src/features/vocabulary/vocabulary.js",
-    "src/features/grammar/grammar.js",
-    "src/features/travel/travel.js",
-    "src/features/onboarding/onboarding.js",
-    "src/features/polls/polls.js",
-    "src/features/news/news.js",
-    "src/features/search/search.js",
-
-    "src/pages/home.js",
-    "src/pages/misc.js",
-    "src/pages/paths.js",
-
-    "src/core/router.js",
-
-    "app.js"
 ];
 
 /**
@@ -733,7 +681,7 @@ test(
 );
 
 test(
-    "index.html preserves classic-script dependency order",
+    "index.html exposes a single ES-module entry point",
     async () => {
         const indexHtml =
             await readFile(
@@ -752,51 +700,18 @@ test(
                         .split("?")[0]
             );
 
-        for (
-            const requiredScript
-            of requiredScriptOrder
-        ) {
-            assert.ok(
-                scriptSources.includes(
-                    requiredScript
-                ),
-                `Missing required script in index.html: ${requiredScript}`
-            );
-        }
-
-        let previousIndex = -1;
-
-        for (
-            const requiredScript
-            of requiredScriptOrder
-        ) {
-            const currentIndex =
-                scriptSources.indexOf(
-                    requiredScript
-                );
-
-            assert.ok(
-                currentIndex
-                    > previousIndex,
-                [
-                    "Invalid classic-script dependency order.",
-                    `${requiredScript} is loaded too early.`,
-                    `Observed scripts: ${scriptSources.join(", ")}`
-                ].join(
-                    "\n"
-                )
-            );
-
-            previousIndex =
-                currentIndex;
-        }
-
-        assert.equal(
-            scriptSources[
-                scriptSources.length - 1
+        assert.deepEqual(
+            scriptSources,
+            [
+                "app.js"
             ],
-            "app.js",
-            "app.js must remain the final external script"
+            "index.html must load only the application entry point"
+        );
+
+        assert.match(
+            indexHtml,
+            /<script\s+type=["']module["']\s+src=["']app\.js["']><\/script>/i,
+            "app.js must be loaded as an ES module"
         );
 
         assert.equal(

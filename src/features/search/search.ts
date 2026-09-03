@@ -1,3 +1,30 @@
+import { showGrammarLesson } from "../grammar/grammar.js";
+import { showNewsDetail } from "../news/news.js";
+import { showVocabPack } from "../vocabulary/vocabulary.js";
+import type {
+    GrammarLessonIndex,
+    Level,
+    NewsIndexItem,
+    SearchGrammarItem,
+    SearchVocabWord,
+    VocabPack,
+    VocabPackIndex
+} from "../../types/global.js";
+import { getRequiredElement } from "../../ui/ui.js";
+import {
+    getSearchModalStyle,
+    renderSearchErrorView,
+    renderSearchLoadingView,
+    renderSearchMinimumCharactersView,
+    renderSearchModalView,
+    renderSearchNoResultsView,
+    renderSearchResultsView
+} from "../../ui/views/searchView.js";
+
+export {
+    openSearch
+};
+
 /**
  * Cross-feature search controller.
  *

@@ -61,10 +61,7 @@ A1 → A2 → B1 → B2 → C1 → C2
 | جستجو | ✅ موجود |
 | اخبار | ✅ موجود |
 | نظرسنجی | ✅ قابلیت موجود |
-| مسیر روزمره | 🚧 بخشی از آن ساخته شده |
-| بازی‌ها | 🚧 Placeholder |
-| صفحه عمومی تمرین‌ها | 🚧 Placeholder |
-| پروفایل | 🚧 Placeholder |
+| Daily، Games، صفحه عمومی Exercises و Profile | خارج از محدوده منتشرشده؛ هیچ مسیر نمایشی ناقصی ارائه نمی‌شود |
 | حساب کاربری آنلاین | ❌ پیاده‌سازی نشده |
 | همگام‌سازی بین دستگاه‌ها | ❌ پیاده‌سازی نشده |
 
@@ -402,35 +399,25 @@ data/ = برنامه چه چیزی آموزش می‌دهد
 
 درس‌ها و Packها عمدتاً در JSON نگهداری می‌شوند تا محتوای آموزشی بتواند مستقل از Engine رشد کند.
 
-### Classic scripts یک وضعیت موقت و آگاهانه است
+### ES modules و Dependencyهای صریح
 
 Dino فعلاً از React یا Vue استفاده نمی‌کند.
 
-TypeScript برنامه هنوز با `module: none` به **classic browser scripts** کامپایل می‌شود. در نتیجه `index.html` ترتیب بارگذاری فایل‌ها را مشخص می‌کند.
+TypeScript برنامه به‌صورت **ES modules** کامپایل می‌شود. `index.html` فقط یک entry point به نام `app.js` را با `type="module"` بارگذاری می‌کند. هر Dependency اجرایی یا نوعی با `import` و APIهای مشترک با `export` صریح تعریف می‌شوند.
 
-> در وضعیت فعلی، ترتیب Scriptها یک Dependency واقعی برنامه است.
-
-مرحله ساختاری بعدی، مهاجرت به `import` / `export` صریح است.
+مرورگر اکنون ترتیب بارگذاری را از روی گراف Moduleها تعیین می‌کند و این ترتیب دیگر به‌صورت دستی در HTML نگهداری نمی‌شود.
 
 ### گراف Dependency
 
-تولید خودکار گراف Dependency عمداً تا پایان مهاجرت به Importهای صریح **به تعویق افتاده است**.
+[گراف تولیدشده برنامه](docs/dependency-graph.md) همه Dependencyهای محلی قابل دسترس از `app.ts` را نشان می‌دهد. ابتدا نمای کلی لایه‌ها و سپس نقشه‌های بازشونده هر دامنه را ارائه می‌کند. Importهای type-only ردیابی می‌شوند، اما برای خوانایی در نمودارها نمایش داده نمی‌شوند.
 
-قبل از آن مهاجرت، ابزار مجبور است Dependencyها را از Global symbolها و ترتیب Scriptها حدس بزند. بعد از مهاجرت می‌توان Importهای واقعی TypeScript را مستقیماً خواند و گراف قابل اعتماد ساخت.
-
-خروجی آینده باید ارتباط واقعی بین این لایه‌ها را نشان دهد:
-
-```text
-page / controller
-        ↓
-engine(s)
-        ↓
-view
-        ↓
-DOM
+```bash
+npm run graph:dependencies
+npm run graph:dependencies:check
 ```
 
-بدون اینکه گراف به‌صورت دستی نگهداری شود.
+خروجی قطعی است: فرمان اول گراف را دوباره تولید می‌کند و فرمان دوم بدون نوشتن فایل، به‌روز بودن آن را بررسی می‌کند.
+Generator هر چرخه Dependency اجرایی را رد می‌کند. تست‌های معماری نیز Dependencyهای View → Feature/Page، Feature → Page و Engine → UI/Controller را ممنوع می‌کنند.
 
 ---
 
@@ -446,6 +433,7 @@ npm run typecheck
 npm run build
 npm run knip
 npm run duplication
+npm run graph:dependencies:check
 ```
 
 `npm test` به‌صورت خودکار تمام فایل‌های مطابق این الگو را اجرا می‌کند:
@@ -485,7 +473,7 @@ tests/architecture/
 - بازگشت شرط مستقیم زبان به Business logic؛
 - حذف Viewهای مهاجرت‌داده‌شده؛
 - بازگشت renderer قدیمی Travel؛
-- خراب شدن ترتیب Scriptهای classic در `index.html`.
+- بازگشت classic scriptها یا چند entry point به `index.html`.
 
 بنابراین معماری فقط یک Convention متنی نیست؛ یک Regression guard قابل اجرا دارد.
 
@@ -502,6 +490,8 @@ jscpd             → فقط گزارش
 ```
 
 تنظیم Branch protection یا Ruleset در GitHub موضوعی جدا از کد مخزن است.
+
+Workflow اختصاصی **Dependency graph** فرمان `npm run graph:dependencies` را اجرا و نتیجه را با `docs/dependency-graph.md` مقایسه می‌کند. تغییر Import بدون تولید دوباره گراف، این Job را ناموفق می‌کند.
 
 ---
 
@@ -660,7 +650,7 @@ i18n متمرکز
 Dependencyهای صریح
 ```
 
-بعد از مهاجرت به Importهای صریح می‌توان گراف Dependency معماری را به‌صورت خودکار تولید کرد و Dependencyهای نامطلوب را دقیق‌تر تشخیص داد.
+Importهای صریح اکنون گراف معماری را به‌صورت خودکار تغذیه می‌کنند و Dependencyهای نامطلوب را در Code review قابل مشاهده می‌سازند.
 
 ---
 

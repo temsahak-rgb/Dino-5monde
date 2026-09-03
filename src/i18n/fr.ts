@@ -1,3 +1,10 @@
+export {
+    frMessages
+};
+export type {
+    TranslationKey
+};
+
 /**
  * French interface translations.
  *
@@ -24,12 +31,8 @@ const frMessages = {
 
     "navbar.grammar": "Grammaire",
     "navbar.vocabulary": "Vocabulaire",
-    "navbar.daily": "Quotidien",
     "navbar.travel": "Voyage",
-    "navbar.games": "Jeux",
-    "navbar.exercises": "Exercices",
     "navbar.search": "Rechercher dans le site",
-    "navbar.profile": "Profil",
 
     "onboarding.chooseLanguage": "Choisissez la langue",
     "onboarding.french": "Français",
@@ -37,7 +40,6 @@ const frMessages = {
     "onboarding.choosePath": "Choisissez votre parcours",
     "onboarding.general": "Français général",
     "onboarding.travel": "Français Voyage",
-    "onboarding.daily": "Français Quotidien",
     "onboarding.levelQuestion": "Souhaitez-vous passer un test de niveau ?",
     "onboarding.startTest": "Passer le test",
     "onboarding.later": "Plus tard",
@@ -65,16 +67,6 @@ const frMessages = {
     "home.tipTitle": "En France, dites toujours Bonjour en premier !",
     "home.tipMeta": "Politesse française",
 
-    "placeholder.underConstruction": "Les dinosaures sont au travail — bientôt !",
-    "placeholder.games": "Jeux éducatifs",
-    "placeholder.exercises": "Exercices et tests",
-    "placeholder.profile": "Mon profil",
-
-    "daily.title": "🏘️ Français quotidien",
-    "daily.subtitle": "Pour vivre en France",
-    "daily.underConstruction": "Les dinosaures sont au travail !",
-    "daily.lessonSoon": "Bientôt",
-
     "exercise.defaultTitle": "Exercice",
     "exercise.unsupportedQuestion": "Ce type de question n'est pas encore pris en charge dans l'interface.",
     "exercise.correct": "Bravo!",
@@ -89,6 +81,7 @@ const frMessages = {
     "grammar.level.C2": "Maîtrise",
     "grammar.recommended": "Recommandé 🦖",
     "grammar.allLessons": "Toutes les leçons",
+    "grammar.exercises": "Exercices",
     "grammar.lessonNotFound": "Impossible de trouver cette leçon.",
     "grammar.sectionNotFound": "Impossible de trouver cette section.",
     "grammar.type.lesson": "Leçon",

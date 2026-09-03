@@ -1,15 +1,15 @@
 /**
- * Shared application data contracts used by classic browser scripts.
+ * Shared application data contracts.
  *
- * These declarations intentionally stay global until the application moves to
- * ES modules in a later architectural change.
+ * Every contract is exported explicitly so application modules declare their
+ * type dependencies just like their runtime dependencies.
  */
 
-type Language =
+export type Language =
     | "fr"
     | "fa";
 
-type Level =
+export type Level =
     | "A1"
     | "A2"
     | "B1"
@@ -17,28 +17,22 @@ type Level =
     | "C1"
     | "C2";
 
-type AppSection =
+export type AppSection =
     | "home"
     | "grammar"
     | "vocabulary"
-    | "daily"
-    | "travel"
-    | "games"
-    | "exercises"
-    | "profile";
+    | "travel";
 
-type LessonStatus =
+export type LessonStatus =
     | "not_started"
     | "in_progress"
     | "completed";
 
-type PathId =
+export type PathId =
     | "general"
-    | "travel"
-    | "daily"
-    | string;
+    | "travel";
 
-type BackHandler =
+export type BackHandler =
     () => void | Promise<void>;
 
 
@@ -46,23 +40,23 @@ type BackHandler =
 /* Lessons                                                                    */
 /* -------------------------------------------------------------------------- */
 
-interface LessonTable {
+export interface LessonTable {
     headers: string[];
     rows: string[][];
 }
 
-interface LessonExample {
+export interface LessonExample {
     fr: string;
     fa?: string;
 }
 
-interface BaseExerciseQuestion {
+export interface BaseExerciseQuestion {
     question: string;
     explanation?: string;
     explanation_fa?: string;
 }
 
-interface ChoiceExerciseQuestion
+export interface ChoiceExerciseQuestion
     extends BaseExerciseQuestion {
     type:
         | "mcq"
@@ -72,30 +66,30 @@ interface ChoiceExerciseQuestion
     correct: number;
 }
 
-interface FillBlankExerciseQuestion
+export interface FillBlankExerciseQuestion
     extends BaseExerciseQuestion {
     type: "fill_blank";
     correct: string;
 }
 
-interface OrderingExerciseQuestion
+export interface OrderingExerciseQuestion
     extends BaseExerciseQuestion {
     type: "ordering";
     words: string[];
     correct: string[];
 }
 
-type ExerciseQuestion =
+export type ExerciseQuestion =
     | ChoiceExerciseQuestion
     | FillBlankExerciseQuestion
     | OrderingExerciseQuestion;
 
-type ExerciseAnswer =
+export type ExerciseAnswer =
     | number
     | string
     | string[];
 
-interface LessonContentSection {
+export interface LessonContentSection {
     id: string;
     type: "lesson";
 
@@ -113,7 +107,7 @@ interface LessonContentSection {
     note_fa?: string;
 }
 
-interface ExerciseSection {
+export interface ExerciseSection {
     id: string;
 
     type:
@@ -128,11 +122,11 @@ interface ExerciseSection {
     displayCount?: number;
 }
 
-type LessonSection =
+export type LessonSection =
     | LessonContentSection
     | ExerciseSection;
 
-interface LessonData {
+export interface LessonData {
     id: string;
 
     level?: Level;
@@ -151,7 +145,7 @@ interface LessonData {
 /* Grammar                                                                    */
 /* -------------------------------------------------------------------------- */
 
-interface GrammarLessonIndex {
+export interface GrammarLessonIndex {
     id: string;
     level: Level;
 
@@ -174,7 +168,7 @@ interface GrammarLessonIndex {
     exercises: number;
 }
 
-interface GrammarModule {
+export interface GrammarModule {
     icon: string;
     items: GrammarLessonIndex[];
 }
@@ -184,7 +178,7 @@ interface GrammarModule {
 /* Progress                                                                   */
 /* -------------------------------------------------------------------------- */
 
-interface LessonProgress {
+export interface LessonProgress {
     status: LessonStatus;
 
     completedSections: string[];
@@ -194,7 +188,7 @@ interface LessonProgress {
     lastAccessed: string | null;
 }
 
-interface MistakeRecord {
+export interface MistakeRecord {
     lessonId: string;
     sectionId: string;
 
@@ -215,7 +209,7 @@ interface MistakeRecord {
 /* Placement                                                                  */
 /* -------------------------------------------------------------------------- */
 
-interface PlacementQuestion {
+export interface PlacementQuestion {
     id: string;
     level: Level;
 
@@ -234,7 +228,7 @@ interface PlacementQuestion {
     correctIndex: number;
 }
 
-interface PlacementState {
+export interface PlacementState {
     asked: string[];
 
     currentDifficulty: number;
@@ -247,7 +241,7 @@ interface PlacementState {
     finishReason: string | null;
 }
 
-interface PlacementLevelEstimate {
+export interface PlacementLevelEstimate {
     level: Level;
     range: string;
 }
@@ -257,7 +251,7 @@ interface PlacementLevelEstimate {
 /* Travel                                                                     */
 /* -------------------------------------------------------------------------- */
 
-interface TravelLessonIndex {
+export interface TravelLessonIndex {
     id: string;
 
     title: string;
@@ -270,7 +264,7 @@ interface TravelLessonIndex {
     order?: number;
 }
 
-interface TravelVocabWord {
+export interface TravelVocabWord {
     fr: string;
     fa?: string;
 
@@ -278,7 +272,7 @@ interface TravelVocabWord {
     emoji?: string;
 }
 
-interface TravelTip {
+export interface TravelTip {
     title_fr?: string;
     title_fa?: string;
 
@@ -288,7 +282,7 @@ interface TravelTip {
     icon?: string;
 }
 
-interface TravelBaseSection {
+export interface TravelBaseSection {
     id: string;
 
     title?: string;
@@ -298,19 +292,19 @@ interface TravelBaseSection {
     note_fa?: string;
 }
 
-interface TravelVocabSection
+export interface TravelVocabSection
     extends TravelBaseSection {
     type: "vocab";
     words: TravelVocabWord[];
 }
 
-interface TravelTipsSection
+export interface TravelTipsSection
     extends TravelBaseSection {
     type: "tips";
     tips: TravelTip[];
 }
 
-interface TravelLessonContentSection
+export interface TravelLessonContentSection
     extends TravelBaseSection {
     type: "lesson";
 
@@ -322,7 +316,7 @@ interface TravelLessonContentSection
     table2?: LessonTable;
 }
 
-interface TravelExerciseSection
+export interface TravelExerciseSection
     extends TravelBaseSection {
     type: "exercise";
 
@@ -331,17 +325,17 @@ interface TravelExerciseSection
     displayCount?: number;
 }
 
-type TravelSection =
+export type TravelSection =
     | TravelVocabSection
     | TravelTipsSection
     | TravelLessonContentSection
     | TravelExerciseSection;
 
-type ExerciseSectionInput =
+export type ExerciseSectionInput =
     | ExerciseSection
     | TravelExerciseSection;
 
-interface TravelLesson {
+export interface TravelLesson {
     id: string;
 
     path?: string;
@@ -363,7 +357,13 @@ interface TravelLesson {
 /* Vocabulary                                                                 */
 /* -------------------------------------------------------------------------- */
 
-interface VocabPackIndex {
+export type StoryDifficulty =
+    | "simple"
+    | "literary"
+    | "easy"
+    | "hard";
+
+export interface VocabPackIndex {
     id: string;
 
     title: string;
@@ -374,7 +374,7 @@ interface VocabPackIndex {
     words: number;
 }
 
-interface VocabWord {
+export interface VocabWord {
     fr: string;
     fa: string;
 
@@ -387,7 +387,7 @@ interface VocabWord {
     ex_fa?: string;
 }
 
-interface VocabStoryBlank {
+export interface VocabStoryBlank {
     id: number;
 
     options: string[];
@@ -395,12 +395,12 @@ interface VocabStoryBlank {
     correctIndex: number;
 }
 
-interface VocabStoryParagraph {
+export interface VocabStoryParagraph {
     fr: string;
     fa: string;
 }
 
-interface VocabStoryQuestion {
+export interface VocabStoryQuestion {
     question: string;
 
     options: string[];
@@ -408,7 +408,7 @@ interface VocabStoryQuestion {
     correct: number;
 }
 
-interface VocabStory {
+export interface VocabStory {
     title: string;
     title_fa?: string;
 
@@ -424,7 +424,7 @@ interface VocabStory {
     questions?: VocabStoryQuestion[];
 }
 
-interface VocabStories {
+export interface VocabStories {
     simple?: VocabStory;
     easy?: VocabStory;
 
@@ -436,7 +436,7 @@ interface VocabStories {
         | undefined;
 }
 
-interface VocabExerciseQuestion {
+export interface VocabExerciseQuestion {
     question: string;
 
     options: string[];
@@ -448,13 +448,13 @@ interface VocabExerciseQuestion {
     explanation_fa?: string;
 }
 
-interface VocabExercise {
+export interface VocabExercise {
     questions: VocabExerciseQuestion[];
 
     displayCount?: number;
 }
 
-interface VocabPack {
+export interface VocabPack {
     id: string;
 
     level: Level;
@@ -475,7 +475,7 @@ interface VocabPack {
     exercise?: VocabExercise;
 }
 
-interface VocabWeakMap {
+export interface VocabWeakMap {
     [packId: string]: string[];
 }
 
@@ -484,7 +484,7 @@ interface VocabWeakMap {
 /* News                                                                       */
 /* -------------------------------------------------------------------------- */
 
-interface NewsIndexItem {
+export interface NewsIndexItem {
     id: string;
 
     title: string;
@@ -500,14 +500,14 @@ interface NewsIndexItem {
     publishedDate: string;
 }
 
-interface NewsVocabularyItem {
+export interface NewsVocabularyItem {
     fr: string;
     fa: string;
 
     level?: Level;
 }
 
-interface NewsGrammarItem {
+export interface NewsGrammarItem {
     title: string;
 
     level?: Level;
@@ -520,12 +520,12 @@ interface NewsGrammarItem {
     explanation?: string;
 }
 
-interface NewsSource {
+export interface NewsSource {
     title: string;
     url: string;
 }
 
-interface NewsArticle
+export interface NewsArticle
     extends NewsIndexItem {
     imageAlt?: string;
 
@@ -548,14 +548,14 @@ interface NewsArticle
 /* Polls                                                                      */
 /* -------------------------------------------------------------------------- */
 
-interface PollOption {
+export interface PollOption {
     id: string;
 
     labelFa: string;
     labelFr: string;
 }
 
-interface Poll {
+export interface Poll {
     id: string;
 
     question: string;
@@ -567,7 +567,7 @@ interface Poll {
     endDate?: string;
 }
 
-interface PollFile {
+export interface PollFile {
     activePoll?: Poll;
 }
 
@@ -576,26 +576,14 @@ interface PollFile {
 /* Search                                                                     */
 /* -------------------------------------------------------------------------- */
 
-interface SearchGrammarItem
+export interface SearchGrammarItem
     extends GrammarLessonIndex {
     content?: string;
     example?: string;
 }
 
-interface SearchVocabWord
+export interface SearchVocabWord
     extends VocabWord {
     level: Level;
     packId: string;
-}
-
-
-/* -------------------------------------------------------------------------- */
-/* Global browser state                                                       */
-/* -------------------------------------------------------------------------- */
-
-interface Window {
-    currentTravelLesson?: TravelLesson;
-    currentTravelLessonId?: string;
-
-    currentPack?: VocabPack;
 }

@@ -1,3 +1,23 @@
+import { t } from "../../i18n/i18n.js";
+import type {
+    GrammarLessonIndex,
+    GrammarModule,
+    Language,
+    LessonStatus,
+    Level
+} from "../../types/global.js";
+
+export {
+    getGrammar,
+    getLessonStatus,
+    getRecommendedGrammar,
+    getStatusIcon,
+    isBookmarked,
+    loadGrammar,
+    setLessonStatus,
+    toggleBookmark
+};
+
 /**
  * Grammar catalog loading, progress state, and bookmark persistence.
  */

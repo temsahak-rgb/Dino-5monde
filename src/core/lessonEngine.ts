@@ -1,3 +1,16 @@
+import type {
+    ExerciseSection,
+    LessonContentSection,
+    LessonData,
+    LessonSection,
+    Level
+} from "../types/global.js";
+
+export {
+    getSection,
+    loadLessonWithExercises
+};
+
 /**
  * Grammar lesson loader with automatic exercise and quiz discovery.
  */

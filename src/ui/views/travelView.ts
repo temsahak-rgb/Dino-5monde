@@ -1,3 +1,29 @@
+import { renderNavbar } from "./navbarView.js";
+import {
+    localizedTextClass,
+    localizedValue,
+    t
+} from "../../i18n/i18n.js";
+import type {
+    LessonExample,
+    LessonTable,
+    TravelLesson,
+    TravelLessonContentSection,
+    TravelLessonIndex,
+    TravelSection,
+    TravelTipsSection,
+    TravelVocabSection
+} from "../../types/global.js";
+import { renderMarkdown } from "../ui.js";
+
+export {
+    renderTravelCatalogView,
+    renderTravelLessonLoadingView,
+    renderTravelLessonNotFoundView,
+    renderTravelLessonView,
+    renderTravelMiniLessonView
+};
+
 /**
  * Presentation layer for the Travel feature.
  *
@@ -13,6 +39,48 @@
  * Loading, caching, navigation, progress and exercise orchestration remain
  * outside this file.
  */
+
+/**
+ * Returns the presentation icon associated with a Travel section.
+ */
+function getTravelSectionIcon(
+    section: TravelSection
+): string {
+    switch (section.type) {
+        case "vocab":
+            return "📖";
+
+        case "tips":
+            return "💡";
+
+        case "lesson":
+            return "📚";
+
+        case "exercise":
+            return "✏️";
+    }
+}
+
+/**
+ * Returns the primary content count displayed for a Travel section.
+ */
+function getTravelSectionCount(
+    section: TravelSection
+): number {
+    switch (section.type) {
+        case "vocab":
+            return section.words.length;
+
+        case "tips":
+            return section.tips.length;
+
+        case "lesson":
+            return section.examples?.length ?? 0;
+
+        case "exercise":
+            return section.questions.length;
+    }
+}
 
 /**
  * Returns the localized display label for a Travel section type.

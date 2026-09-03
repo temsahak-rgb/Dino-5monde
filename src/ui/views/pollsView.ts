@@ -1,3 +1,20 @@
+import {
+    localizedTextClass,
+    localizedValue,
+    t
+} from "../../i18n/i18n.js";
+import type {
+    Poll,
+    PollOption
+} from "../../types/global.js";
+
+export {
+    renderPollView
+};
+export type {
+    PollViewState
+};
+
 /**
  * Presentation layer for weekly polls.
  *

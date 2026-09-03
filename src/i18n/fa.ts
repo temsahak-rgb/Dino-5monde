@@ -1,3 +1,9 @@
+import type { TranslationKey } from "./fr.js";
+
+export {
+    faMessages
+};
+
 /**
  * Persian interface translations.
  *
@@ -25,12 +31,8 @@ const faMessages: Record<TranslationKey, string> = {
 
     "navbar.grammar": "گرامر",
     "navbar.vocabulary": "واژگان",
-    "navbar.daily": "روزمره",
     "navbar.travel": "سفر",
-    "navbar.games": "بازی‌ها",
-    "navbar.exercises": "تمرین‌ها",
     "navbar.search": "جستجو در سایت",
-    "navbar.profile": "پروفایل",
 
     "onboarding.chooseLanguage": "زبان خود را انتخاب کنید",
     "onboarding.french": "Français",
@@ -38,7 +40,6 @@ const faMessages: Record<TranslationKey, string> = {
     "onboarding.choosePath": "مسیر یادگیری خود را انتخاب کنید",
     "onboarding.general": "فرانسوی عمومی",
     "onboarding.travel": "فرانسوی در سفر",
-    "onboarding.daily": "فرانسوی روزمره",
     "onboarding.levelQuestion": "آیا می‌خواهید ابتدا تعیین سطح انجام دهید؟",
     "onboarding.startTest": "انجام تعیین سطح",
     "onboarding.later": "بعداً",
@@ -66,16 +67,6 @@ const faMessages: Record<TranslationKey, string> = {
     "home.tipTitle": "در فرانسه همیشه اول Bonjour بگویید!",
     "home.tipMeta": "ادب فرانسوی",
 
-    "placeholder.underConstruction": "دایناسورها مشغول کارند — به زودی!",
-    "placeholder.games": "بازی‌های آموزشی",
-    "placeholder.exercises": "تمرین‌ها و آزمون‌ها",
-    "placeholder.profile": "پروفایل من",
-
-    "daily.title": "🏘️ فرانسوی روزمره",
-    "daily.subtitle": "برای زندگی در فرانسه",
-    "daily.underConstruction": "دایناسورها مشغول ساخت این بخش هستند!",
-    "daily.lessonSoon": "به زودی",
-
     "exercise.defaultTitle": "تمرین",
     "exercise.unsupportedQuestion": "این نوع سؤال هنوز در رابط کاربری پشتیبانی نمی‌شود.",
     "exercise.correct": "آفرین!",
@@ -90,6 +81,7 @@ const faMessages: Record<TranslationKey, string> = {
     "grammar.level.C2": "تسلط کامل",
     "grammar.recommended": "پیشنهاد دینو 🦖",
     "grammar.allLessons": "همه درس‌ها",
+    "grammar.exercises": "تمرین‌ها",
     "grammar.lessonNotFound": "این درس پیدا نشد.",
     "grammar.sectionNotFound": "این بخش پیدا نشد.",
     "grammar.type.lesson": "درسنامه",

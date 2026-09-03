@@ -1,3 +1,28 @@
+import { getPlacementResult } from "../../core/placementEngine.js";
+import { navigateToSection } from "../../core/navigation.js";
+import { showGrammarLesson } from "../grammar/grammar.js";
+import type {
+    Level,
+    NewsArticle,
+    NewsIndexItem
+} from "../../types/global.js";
+import {
+    app,
+    getRequiredElement,
+    queryElements
+} from "../../ui/ui.js";
+import {
+    renderNewsDetailView,
+    renderNewsHomeCardView,
+    renderNewsNotFoundView
+} from "../../ui/views/newsView.js";
+
+export {
+    initializeNews,
+    renderNewsSection,
+    showNewsDetail
+};
+
 /**
  * News feature controller.
  *
@@ -174,7 +199,7 @@ async function showNewsDetail(
         getRequiredElement<HTMLButtonElement>(
             "news-error-back"
         ).onclick = () => {
-            void showHome();
+            void navigateToSection("home");
         };
     }
 }
@@ -186,7 +211,7 @@ function bindNewsDetailEvents(): void {
     getRequiredElement<HTMLButtonElement>(
         "news-back"
     ).onclick = () => {
-        void showHome();
+        void navigateToSection("home");
     };
 
     getRequiredElement<HTMLButtonElement>(
@@ -353,4 +378,9 @@ function bindNewsDelegatedEvents(): void {
     newsDelegatedEventsBound = true;
 }
 
-bindNewsDelegatedEvents();
+/**
+ * Installs delegated interactions used by news cards and articles.
+ */
+function initializeNews(): void {
+    bindNewsDelegatedEvents();
+}

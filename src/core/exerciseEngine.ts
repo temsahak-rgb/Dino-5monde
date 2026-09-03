@@ -1,3 +1,15 @@
+import type {
+    ExerciseAnswer,
+    ExerciseQuestion,
+    ExerciseSectionInput
+} from "../types/global.js";
+
+export {
+    checkAnswer,
+    getRandomQuestions,
+    prepareQuestion
+};
+
 /**
  * Exercise preparation and answer-validation utilities shared by grammar,
  * travel, and daily lessons.

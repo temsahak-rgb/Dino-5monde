@@ -14,7 +14,9 @@
     "test:architecture": "tsx --test \"tests/architecture/**/*.test.ts\"",
 
     "knip": "knip --config knip.json",
-    "duplication": "jscpd --config .jscpd.json"
+    "duplication": "jscpd --config .jscpd.json",
+    "graph:dependencies": "tsx tools/generate-dependency-graph.ts",
+    "graph:dependencies:check": "tsx tools/generate-dependency-graph.ts --check"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",

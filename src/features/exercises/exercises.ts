@@ -1,60 +1,36 @@
+import {
+    checkAnswer,
+    getRandomQuestions,
+    prepareQuestion
+} from "../../core/exerciseEngine.js";
+import {
+    markSectionCompleted,
+    saveMistake
+} from "../../core/progressEngine.js";
+import type {
+    BackHandler,
+    ExerciseSectionInput
+} from "../../types/global.js";
+import {
+    app,
+    getRequiredElement,
+    queryElements
+} from "../../ui/ui.js";
+import {
+    renderExerciseFeedbackView,
+    renderExerciseQuestionView,
+    renderExerciseResultView
+} from "../../ui/views/pathsView.js";
+
+export {
+    showExerciseContent
+};
+
 /**
- * Daily-path controllers and shared exercise orchestration.
+ * Shared exercise orchestration used by learning features.
  *
  * HTML rendering is delegated to `src/ui/views/pathsView.ts`.
  */
-
-/**
- * Displays the Daily French landing page.
- */
-async function showDailyHome(): Promise<void> {
-    app.innerHTML = renderDailyHomeView();
-}
-
-/**
- * Loads and displays the first instructional section of a Daily lesson.
- *
- * @param lessonId - Daily lesson identifier.
- */
-async function showDailyLesson(
-    lessonId: string
-): Promise<void> {
-    app.innerHTML = renderDailyLessonLoadingView();
-
-    const lessonData =
-        await loadSpecificLesson<LessonData>(
-            "daily",
-            lessonId
-        );
-
-    if (!lessonData) {
-        app.innerHTML =
-            renderDailyLessonUnavailableView();
-
-        getRequiredElement<HTMLButtonElement>(
-            "daily-return-btn"
-        ).onclick = () => {
-            void showHome();
-        };
-
-        return;
-    }
-
-    const firstLessonSection =
-        lessonData.sections.find(
-            (
-                section
-            ): section is LessonContentSection =>
-                section.type === "lesson"
-        );
-
-    if (firstLessonSection) {
-        showLessonContent(
-            lessonId,
-            firstLessonSection
-        );
-    }
-}
 
 /**
  * Displays an exercise section and manages question-by-question interaction.
@@ -64,21 +40,17 @@ async function showDailyLesson(
  *
  * @param lessonId - Parent lesson identifier.
  * @param section - Exercise or quiz section to render.
- * @param onBack - Optional callback used by non-grammar flows.
+ * @param onBack - Return callback owned by the calling feature.
  */
 function showExerciseContent(
     lessonId: string,
     section: ExerciseSectionInput,
-    onBack: BackHandler | null = null
+    onBack: BackHandler
 ): void {
     const questions = getRandomQuestions(
         section,
         section.displayCount ?? null
     );
-
-    const goBack: BackHandler =
-        onBack
-        || (() => showGrammarLesson(lessonId));
 
     let currentQuestionIndex = 0;
     let correctCount = 0;
@@ -96,7 +68,7 @@ function showExerciseContent(
                 section,
                 correctCount,
                 questions.length,
-                goBack
+                onBack
             );
 
             return;
@@ -117,7 +89,7 @@ function showExerciseContent(
         getRequiredElement<HTMLButtonElement>(
             "back"
         ).onclick = () => {
-            void goBack();
+            void onBack();
         };
 
         /*
@@ -280,12 +252,8 @@ function showExerciseResult(
     section: ExerciseSectionInput,
     correctCount: number,
     totalCount: number,
-    onBack: BackHandler | null = null
+    onBack: BackHandler
 ): void {
-    const goBack: BackHandler =
-        onBack
-        || (() => showGrammarLesson(lessonId));
-
     markSectionCompleted(
         lessonId,
         section.id
@@ -300,6 +268,6 @@ function showExerciseResult(
     getRequiredElement<HTMLButtonElement>(
         "exercise-return-btn"
     ).onclick = () => {
-        void goBack();
+        void onBack();
     };
 }

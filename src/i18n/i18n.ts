@@ -1,3 +1,20 @@
+import { faMessages } from "./fa.js";
+import {
+    frMessages,
+    type TranslationKey
+} from "./fr.js";
+import type { Language } from "../types/global.js";
+
+export {
+    applyDocumentLanguage,
+    getI18nLanguage,
+    getTextDirection,
+    localizedTextClass,
+    localizedValue,
+    setI18nLanguage,
+    t
+};
+
 /**
  * Central internationalization runtime.
  *

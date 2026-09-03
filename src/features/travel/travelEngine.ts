@@ -1,3 +1,16 @@
+import { loadSpecificLesson } from "../../core/pathEngine.js";
+import type {
+    TravelLesson,
+    TravelLessonIndex,
+    TravelSection
+} from "../../types/global.js";
+
+export {
+    getTravelSections,
+    loadTravelIndex,
+    loadTravelLesson
+};
+
 /**
  * Travel lesson loading, caching, and section metadata helpers.
  */
@@ -133,96 +146,4 @@ function getTravelSections(
     }
 
     return [];
-}
-
-/**
- * Returns the icon associated with a Travel section type.
- *
- * @param section - Travel section.
- * @returns Section icon.
- */
-function getTravelSectionIcon(
-    section: TravelSection
-): string {
-    switch (section.type) {
-        case "vocab":
-            return "📖";
-
-        case "tips":
-            return "💡";
-
-        case "lesson":
-            return "📚";
-
-        case "exercise":
-            return "✏️";
-    }
-}
-
-/**
- * Returns the most useful content count for a Travel section.
- *
- * @param section - Travel section.
- * @returns Number of primary content items.
- */
-function getTravelSectionCount(
-    section: TravelSection
-): number {
-    switch (section.type) {
-        case "vocab":
-            return section.words.length;
-
-        case "tips":
-            return section.tips.length;
-
-        case "lesson":
-            return (
-                section.examples
-                    ?.length
-                ?? 0
-            );
-
-        case "exercise":
-            return section.questions.length;
-    }
-}
-
-/**
- * Returns the localized display label associated with a Travel section type.
- *
- * The optional language argument is retained temporarily for compatibility
- * with older callers. Translation now comes exclusively from the central
- * i18n runtime.
- *
- * New view code should normally use `getTravelSectionTypeLabelView()`.
- *
- * @param section - Travel section.
- * @param _lang - Deprecated compatibility parameter.
- * @returns Localized section label.
- */
-function getTravelSectionLabel(
-    section: TravelSection,
-    _lang?: Language
-): string {
-    switch (section.type) {
-        case "vocab":
-            return t(
-                "travel.type.vocab"
-            );
-
-        case "tips":
-            return t(
-                "travel.type.tips"
-            );
-
-        case "lesson":
-            return t(
-                "travel.type.lesson"
-            );
-
-        case "exercise":
-            return t(
-                "travel.type.exercise"
-            );
-    }
 }

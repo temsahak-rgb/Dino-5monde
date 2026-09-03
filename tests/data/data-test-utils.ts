@@ -2,8 +2,7 @@ import assert from "node:assert/strict";
 import {
     access,
     readFile,
-    readdir,
-    stat
+    readdir
 } from "node:fs/promises";
 import {
     basename,
@@ -36,7 +35,7 @@ export const dataDirectory =
         "data"
     );
 
-export const cefrLevels = [
+const cefrLevels = [
     "A1",
     "A2",
     "B1",
@@ -45,7 +44,7 @@ export const cefrLevels = [
     "C2"
 ] as const;
 
-export type CefrLevel =
+type CefrLevel =
     typeof cefrLevels[number];
 
 export function repositoryPath(
@@ -250,7 +249,7 @@ export function assertUnique(
     );
 }
 
-export function isCefrLevel(
+function isCefrLevel(
     value: unknown
 ): value is CefrLevel {
     return (
@@ -274,33 +273,6 @@ export function assertCefrLevel(
         `${context} must be one of ${cefrLevels.join(", ")}`
     );
 }
-
-export interface ChoiceQuestionLike {
-    type:
-        | "mcq"
-        | "binary";
-    question: string;
-    options: string[];
-    correct: number;
-}
-
-export interface FillBlankQuestionLike {
-    type: "fill_blank";
-    question: string;
-    correct: string;
-}
-
-export interface OrderingQuestionLike {
-    type: "ordering";
-    question: string;
-    words: string[];
-    correct: string[];
-}
-
-export type ExerciseQuestionLike =
-    | ChoiceQuestionLike
-    | FillBlankQuestionLike
-    | OrderingQuestionLike;
 
 export function assertExerciseQuestion(
     value: unknown,
@@ -526,27 +498,5 @@ export function fileStem(
         extname(
             filePath
         )
-    );
-}
-
-export async function assertRegularFile(
-    filePath: string,
-    context: string
-): Promise<void> {
-    assert.ok(
-        await fileExists(
-            filePath
-        ),
-        `${context}: missing file ${repositoryPath(filePath)}`
-    );
-
-    const metadata =
-        await stat(
-            filePath
-        );
-
-    assert.ok(
-        metadata.isFile(),
-        `${context}: ${repositoryPath(filePath)} must be a file`
     );
 }

@@ -1,3 +1,19 @@
+import { navigateToSection } from "../../core/navigation.js";
+import type {
+    Poll,
+    PollFile
+} from "../../types/global.js";
+import { app } from "../../ui/ui.js";
+import {
+    renderPollView,
+    type PollViewState
+} from "../../ui/views/pollsView.js";
+
+export {
+    initializePolls
+};
+
+
 /**
  * Weekly poll controller and local vote persistence.
  *
@@ -171,7 +187,7 @@ function votePoll(
         )
     );
 
-    void showHome();
+    void navigateToSection("home");
 }
 
 /**
@@ -209,7 +225,7 @@ function resetPoll(
         `dino_poll_choice_${pollId}`
     );
 
-    void showHome();
+    void navigateToSection("home");
 }
 
 /**
@@ -361,4 +377,9 @@ function bindPollDelegatedEvents(): void {
     pollDelegatedEventsBound = true;
 }
 
-bindPollDelegatedEvents();
+/**
+ * Installs delegated interactions used by the poll rendered on the home page.
+ */
+function initializePolls(): void {
+    bindPollDelegatedEvents();
+}

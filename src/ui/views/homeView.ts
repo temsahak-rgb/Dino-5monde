@@ -1,3 +1,15 @@
+import { renderNavbar } from "./navbarView.js";
+import { t } from "../../i18n/i18n.js";
+import type { Level } from "../../types/global.js";
+import {
+    getLanguage,
+    sectionHeader
+} from "../ui.js";
+
+export {
+    renderHomeView
+};
+
 /**
  * Presentation layer for the application home page.
  *

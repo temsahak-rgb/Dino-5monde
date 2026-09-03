@@ -1,3 +1,19 @@
+import { t } from "../../i18n/i18n.js";
+import type {
+    Level,
+    PlacementLevelEstimate,
+    PlacementQuestion
+} from "../../types/global.js";
+
+export {
+    renderLanguageSelectionView,
+    renderLevelSelectionView,
+    renderPathSelectionView,
+    renderPlacementChoiceView,
+    renderPlacementQuestionView,
+    renderPlacementResultView
+};
+
 /**
  * Presentation layer for the onboarding and placement flow.
  *
@@ -189,12 +205,6 @@ function renderPathSelectionView(): string {
                     "travel",
                     "✈️",
                     t("onboarding.travel")
-                )}
-
-                ${renderOnboardingPathButtonView(
-                    "daily",
-                    "🏘️",
-                    t("onboarding.daily")
                 )}
             </div>
         </div>

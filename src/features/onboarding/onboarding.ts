@@ -1,3 +1,38 @@
+import { navigateToSection } from "../../core/navigation.js";
+import {
+    answerPlacement,
+    getEstimatedLevelRange,
+    getNextQuestion,
+    getPlacementState,
+    resetPlacementState,
+    savePlacementResult
+} from "../../core/placementEngine.js";
+import { setI18nLanguage } from "../../i18n/i18n.js";
+import type {
+    Language,
+    Level,
+    PathId,
+    PlacementQuestion
+} from "../../types/global.js";
+import {
+    app,
+    getRequiredElement,
+    queryElements
+} from "../../ui/ui.js";
+import {
+    renderLanguageSelectionView,
+    renderLevelSelectionView,
+    renderPathSelectionView,
+    renderPlacementChoiceView,
+    renderPlacementQuestionView,
+    renderPlacementResultView
+} from "../../ui/views/onboardingView.js";
+
+export {
+    showLanguage,
+    showPath
+};
+
 /**
  * Onboarding and placement-test controller.
  *
@@ -81,13 +116,6 @@ function showPath(): void {
         );
     };
 
-    getRequiredElement<HTMLButtonElement>(
-        "daily"
-    ).onclick = () => {
-        selectLearningPath(
-            "daily"
-        );
-    };
 }
 
 /**
@@ -106,7 +134,7 @@ function selectLearningPath(
         path
     );
 
-    void showHome();
+    void navigateToSection("home");
 }
 
 /**
@@ -125,7 +153,7 @@ function showPlacementChoice(): void {
     getRequiredElement<HTMLButtonElement>(
         "later"
     ).onclick = () => {
-        void showHome();
+        selectLearningPath("general");
     };
 
     getRequiredElement<HTMLButtonElement>(
@@ -431,7 +459,7 @@ function showFinalResult(): void {
             levelInfo.level
         );
 
-        void showHome();
+        selectLearningPath("general");
     };
 
     getRequiredElement<HTMLButtonElement>(
@@ -482,7 +510,7 @@ function showLevelSelection(): void {
                 level
             );
 
-            void showHome();
+            selectLearningPath("general");
         };
     });
 }

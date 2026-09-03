@@ -40,7 +40,7 @@ MVP overview, installation, i18n, architecture, tests and contribution rules.
 - 💾 progression enregistrée localement ;
 - 🧪 TypeScript + JSON + tests d'architecture.
 
-> **État / Status:** projet en développement. Grammaire, Vocabulaire et Voyage constituent actuellement le cœur utilisable du MVP. Quotidien, Jeux, la page générale Exercices et Profil restent à compléter.
+> **État / Status:** projet en développement. La navigation publique est resserrée sur Accueil, Grammaire, Vocabulaire, Voyage et Recherche. Les routes factices Quotidien, Jeux, Exercices et Profil ont été retirées du MVP publié.
 
 ---
 
@@ -56,9 +56,9 @@ i18n                 → textes d'interface et direction
 data                 → contenu pédagogique JSON
 ```
 
-L'application utilise encore des **scripts navigateur classiques** (`module: none`). La migration vers des `import` / `export` explicites est une étape structurelle prévue.
+L'application est compilée en **ES modules**. `index.html` charge uniquement `app.js` avec `type="module"` ; chaque dépendance applicative ou de type est déclarée par un `import`, et les API partagées sont exportées explicitement.
 
-Le **graphe de dépendances généré automatiquement** sera ajouté après cette migration, afin qu'il soit calculé à partir des imports réels plutôt que déduit des symboles globaux.
+Le [graphe de dépendances](docs/dependency-graph.md) est généré depuis ces imports réels avec `npm run graph:dependencies`. Il fournit une vue agrégée par couche puis des cartes repliables par domaine ; les imports de types sont suivis mais masqués pour conserver un dessin lisible. Le générateur rejette tout cycle d'exécution, les tests verrouillent les frontières entre couches, et un workflow CI dédié échoue si le graphe suivi par Git n'est plus à jour.
 
 ---
 
@@ -72,6 +72,7 @@ npm run typecheck
 npm run build
 npm run knip
 npm run duplication
+npm run graph:dependencies:check
 ```
 
 Les tests, le typecheck TypeScript et le build font échouer le job en cas d'erreur. Les analyses Knip et duplication restent informatives.

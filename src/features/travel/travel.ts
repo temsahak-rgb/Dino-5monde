@@ -1,3 +1,28 @@
+import { markSectionCompleted } from "../../core/progressEngine.js";
+import {
+    getTravelSections,
+    loadTravelIndex,
+    loadTravelLesson
+} from "./travelEngine.js";
+import { showExerciseContent } from "../exercises/exercises.js";
+import type { TravelLesson } from "../../types/global.js";
+import {
+    app,
+    getRequiredElement,
+    queryElements
+} from "../../ui/ui.js";
+import {
+    renderTravelCatalogView,
+    renderTravelLessonLoadingView,
+    renderTravelLessonNotFoundView,
+    renderTravelLessonView,
+    renderTravelMiniLessonView
+} from "../../ui/views/travelView.js";
+
+export {
+    showTravelPage
+};
+
 /**
  * Travel feature controller.
  *
@@ -11,6 +36,11 @@
  *
  * All HTML rendering is delegated to `src/ui/views/travelView.ts`.
  */
+
+let currentTravelLesson:
+    TravelLesson | undefined;
+let currentTravelLessonId:
+    string | undefined;
 
 /**
  * Displays the complete Travel lesson catalog.
@@ -86,14 +116,10 @@ async function showTravelLesson(
             lesson
         );
 
-    /*
-     * Keep the active Travel lesson globally accessible while the application
-     * still runs as classic browser scripts.
-     */
-    window.currentTravelLesson =
+    currentTravelLesson =
         lesson;
 
-    window.currentTravelLessonId =
+    currentTravelLessonId =
         lessonId;
 
     app.innerHTML =
@@ -176,11 +202,11 @@ function showMiniLesson(
     sectionIndex: number
 ): void {
     const lesson =
-        window.currentTravelLesson;
+        currentTravelLesson;
 
     if (
         !lesson
-        || window.currentTravelLessonId
+        || currentTravelLessonId
             !== lessonId
     ) {
         void showTravelLesson(
