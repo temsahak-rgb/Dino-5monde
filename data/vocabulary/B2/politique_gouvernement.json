@@ -1,0 +1,526 @@
+{
+  "id": "politique_gouvernement",
+  "level": "B2",
+  "theme": "La politique et le gouvernement",
+  "theme_fa": "سیاست و حکومت",
+  "icon": "🏛️",
+  "inspiration": "House of Cards",
+  "words": [
+    {
+      "fr": "la politique (f)",
+      "fa": "سیاست",
+      "emoji": "🗳️",
+      "difficulty": 3,
+      "ex": "La politique influence notre vie quotidienne.",
+      "ex_fa": "سیاست بر زندگی روزمره ما تأثیر می‌گذارد."
+    },
+    {
+      "fr": "politique",
+      "fa": "سیاسی",
+      "emoji": "🏛️",
+      "difficulty": 3,
+      "ex": "C'est une décision purement politique.",
+      "ex_fa": "این یک تصمیم کاملاً سیاسی است."
+    },
+    {
+      "fr": "le gouvernement (m)",
+      "fa": "دولت",
+      "emoji": "🏢",
+      "difficulty": 3,
+      "ex": "Le gouvernement a annoncé de nouvelles réformes.",
+      "ex_fa": "دولت اصلاحات جدیدی را اعلام کرد."
+    },
+    {
+      "fr": "gouvernemental(e)",
+      "fa": "دولتی",
+      "emoji": "📜",
+      "difficulty": 4,
+      "ex": "Les aides gouvernementales sont limitées cette année.",
+      "ex_fa": "کمک‌های دولتی امسال محدود هستند."
+    },
+    {
+      "fr": "l'État (m)",
+      "fa": "دولت، کشور",
+      "emoji": "🌍",
+      "difficulty": 4,
+      "ex": "L'État doit garantir la sécurité de tous.",
+      "ex_fa": "دولت باید امنیت همه را تضمین کند."
+    },
+    {
+      "fr": "étatique",
+      "fa": "دولتی، مربوط به دولت",
+      "emoji": "🏛️",
+      "difficulty": 5,
+      "ex": "Le secteur étatique emploie des milliers de personnes.",
+      "ex_fa": "بخش دولتی هزاران نفر را استخدام می‌کند."
+    },
+    {
+      "fr": "le régime (m)",
+      "fa": "نظام، رژیم",
+      "emoji": "⚖️",
+      "difficulty": 4,
+      "ex": "Ce régime politique a duré plusieurs décennies.",
+      "ex_fa": "این نظام سیاسی چندین دهه دوام آورد."
+    },
+    {
+      "fr": "le pouvoir (m)",
+      "fa": "قدرت",
+      "emoji": "👑",
+      "difficulty": 3,
+      "ex": "Il cherche à obtenir le pouvoir à tout prix.",
+      "ex_fa": "او به هر قیمتی به دنبال کسب قدرت است."
+    },
+    {
+      "fr": "autoritaire",
+      "fa": "مستبدانه، اقتدارگرا",
+      "emoji": "👮",
+      "difficulty": 5,
+      "ex": "Le dirigeant a pris des mesures autoritaires.",
+      "ex_fa": "رهبر اقدامات مستبدانه‌ای را اتخاذ کرد."
+    },
+    {
+      "fr": "démocratique",
+      "fa": "دموکراتیک",
+      "emoji": "🕊️",
+      "difficulty": 4,
+      "ex": "Nous vivons dans un système démocratique.",
+      "ex_fa": "ما در یک سیستم دموکراتیک زندگی می‌کنیم."
+    },
+    {
+      "fr": "la démocratie (f)",
+      "fa": "دموکراسی",
+      "emoji": "🗽",
+      "difficulty": 4,
+      "ex": "La démocratie repose sur la participation des citoyens.",
+      "ex_fa": "دموکراسی بر مشارکت شهروندان استوار است."
+    },
+    {
+      "fr": "le parlement (m)",
+      "fa": "پارلمان",
+      "emoji": "🏛️",
+      "difficulty": 4,
+      "ex": "Le parlement a voté la nouvelle loi hier.",
+      "ex_fa": "پارلمان دیروز قانون جدید را تصویب کرد."
+    },
+    {
+      "fr": "parlementaire",
+      "fa": "پارلمانی",
+      "emoji": "📋",
+      "difficulty": 5,
+      "ex": "Les débats parlementaires sont souvent très animés.",
+      "ex_fa": "مناظرات پارلمانی اغلب بسیار پرجنب‌وجوش هستند."
+    },
+    {
+      "fr": "l'élection (f)",
+      "fa": "انتخابات",
+      "emoji": "🗳️",
+      "difficulty": 3,
+      "ex": "La prochaine élection présidentielle aura lieu dans un an.",
+      "ex_fa": "انتخابات ریاست‌جمهوری بعدی یک سال دیگر برگزار خواهد شد."
+    },
+    {
+      "fr": "voter",
+      "fa": "رأی دادن",
+      "emoji": "✅",
+      "difficulty": 3,
+      "ex": "Chaque citoyen a le droit de voter librement.",
+      "ex_fa": "هر شهروند حق دارد آزادانه رأی دهد."
+    },
+    {
+      "fr": "le scrutin (m)",
+      "fa": "رأی‌گیری، انتخابات",
+      "emoji": "📥",
+      "difficulty": 5,
+      "ex": "Le scrutin a été marqué par une forte abstention.",
+      "ex_fa": "این رأی‌گیری با امتناع بالای رأی‌دهندگان همراه بود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un choix important",
+      "title_fa": "یک انتخاب مهم",
+      "text": "L'année prochaine, une grande {{BLANK_1}} présidentielle aura lieu dans notre pays. C'est un moment crucial pour la {{BLANK_2}}, car chaque citoyen doit décider de l'avenir de la nation. Le {{BLANK_3}} actuel a proposé plusieurs réformes économiques, mais l'opposition critique ses méthodes. Il est essentiel que chaque personne inscrite sur les listes aille {{BLANK_4}} pour exprimer son choix. Ce {{BLANK_5}} déterminera qui dirigera le pays pour les cinq prochaines années. Participer à ce processus est la base de toute {{BLANK_6}} saine et fonctionnelle.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "élection",
+          "options": [
+            "élection",
+            "fête",
+            "vacances",
+            "réunion"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "démocratie",
+          "options": [
+            "démocratie",
+            "dictature",
+            "anarchie",
+            "monarchie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "gouvernement",
+          "options": [
+            "gouvernement",
+            "voisinage",
+            "quartier",
+            "magasin"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "voter",
+          "options": [
+            "voter",
+            "manger",
+            "dormir",
+            "chanter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "scrutin",
+          "options": [
+            "scrutin",
+            "repas",
+            "voyage",
+            "sommeil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "politique",
+          "options": [
+            "politique",
+            "cuisine",
+            "musique",
+            "météo"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les coulisses du pouvoir",
+      "title_fa": "پشت پرده قدرت",
+      "inspiration": "House of Cards",
+      "text": "Dans les couloirs feutrés du palais, le ministre savait que le {{BLANK_1}} qu'il exerçait était fragile. Le {{BLANK_2}} en place, bien que se voulant {{BLANK_3}}, montrait parfois des tendances {{BLANK_4}} inquiétantes. Les débats {{BLANK_5}} de la veille avaient révélé des fractures profondes au sein de la majorité. Il fallait absolument que l'{{BLANK_6}} intervienne pour calmer les esprits et proposer un compromis. Une réforme {{BLANK_7}} majeure était en discussion, et le {{BLANK_8}} devait la valider avant la fin du mois. Le ministre craignait que cette décision ne soit perçue comme une atteinte aux valeurs {{BLANK_9}} du pays. Pourtant, il devait agir, car l'histoire jugerait sévèrement ceux qui auraient laissé le {{BLANK_10}} sombrer dans le chaos. Il se rappela alors que la véritable force d'un État ne résidait pas dans la contrainte, mais dans la confiance de son peuple.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "pouvoir",
+          "options": [
+            "pouvoir",
+            "repas",
+            "voyage",
+            "sommeil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "régime",
+          "options": [
+            "régime",
+            "menu",
+            "habitude",
+            "diète"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "démocratique",
+          "options": [
+            "démocratique",
+            "autoritaire",
+            "dictatorial",
+            "tyrannique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "autoritaires",
+          "options": [
+            "autoritaires",
+            "libéraux",
+            "démocratiques",
+            "tolérants"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "parlementaires",
+          "options": [
+            "parlementaires",
+            "familiaux",
+            "sportifs",
+            "artistiques"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "État",
+          "options": [
+            "État",
+            "individu",
+            "voisin",
+            "étranger"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "gouvernementale",
+          "options": [
+            "gouvernementale",
+            "personnelle",
+            "privée",
+            "intime"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "parlement",
+          "options": [
+            "parlement",
+            "supermarché",
+            "cinéma",
+            "stade"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "démocratiques",
+          "options": [
+            "démocratiques",
+            "autoritaires",
+            "dictatoriales",
+            "tyranniques"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "pouvoir",
+          "options": [
+            "pouvoir",
+            "repas",
+            "voyage",
+            "sommeil"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Politique et gouvernement",
+    "title_fa": "آزمون : سیاست و حکومت",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La ____ influence directement notre vie quotidienne et nos droits.",
+        "options": [
+          "politique",
+          "cuisine",
+          "musique",
+          "météo"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "politique = سیاست"
+      },
+      {
+        "type": "mcq",
+        "question": "C'est une décision purement ____, prise pour des raisons stratégiques.",
+        "options": [
+          "politique",
+          "personnelle",
+          "privée",
+          "intime"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "politique = سیاسی"
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ a annoncé de nouvelles réformes économiques ce matin.",
+        "options": [
+          "gouvernement",
+          "voisinage",
+          "quartier",
+          "magasin"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "gouvernement = دولت"
+      },
+      {
+        "type": "mcq",
+        "question": "Les aides ____ sont destinées à soutenir les familles en difficulté.",
+        "options": [
+          "gouvernementales",
+          "personnelles",
+          "privées",
+          "intimes"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "gouvernemental = دولتی"
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ doit garantir la sécurité et les droits fondamentaux de tous.",
+        "options": [
+          "État",
+          "individu",
+          "voisin",
+          "étranger"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "État = دولت، کشور"
+      },
+      {
+        "type": "mcq",
+        "question": "Le secteur ____ emploie des millions de fonctionnaires dans le pays.",
+        "options": [
+          "étatique",
+          "personnel",
+          "privé",
+          "intime"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "étatique = دولتی"
+      },
+      {
+        "type": "mcq",
+        "question": "Ce ____ politique a duré plusieurs décennies avant de tomber.",
+        "options": [
+          "régime",
+          "menu",
+          "habitude",
+          "diète"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "régime = نظام، رژیم"
+      },
+      {
+        "type": "mcq",
+        "question": "Il cherche à obtenir le ____ à tout prix, même au détriment de ses alliés.",
+        "options": [
+          "pouvoir",
+          "repas",
+          "voyage",
+          "sommeil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "pouvoir = قدرت"
+      },
+      {
+        "type": "mcq",
+        "question": "Le dirigeant a pris des mesures ____ pour réprimer l'opposition.",
+        "options": [
+          "autoritaires",
+          "libérales",
+          "démocratiques",
+          "tolérantes"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "autoritaire = مستبدانه، اقتدارگرا"
+      },
+      {
+        "type": "mcq",
+        "question": "Nous vivons dans un système ____ où les citoyens élisent leurs représentants.",
+        "options": [
+          "démocratique",
+          "autoritaire",
+          "dictatorial",
+          "tyrannique"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "démocratique = دموکراتیک"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ repose sur la participation active et éclairée des citoyens.",
+        "options": [
+          "démocratie",
+          "dictature",
+          "anarchie",
+          "monarchie"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "démocratie = دموکراسی"
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ a voté la nouvelle loi sur l'éducation hier après-midi.",
+        "options": [
+          "parlement",
+          "supermarché",
+          "cinéma",
+          "stade"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "parlement = پارلمان"
+      },
+      {
+        "type": "mcq",
+        "question": "Les débats ____ sont souvent très animés et passionnés.",
+        "options": [
+          "parlementaires",
+          "familiaux",
+          "sportifs",
+          "artistiques"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "parlementaire = پارلمانی"
+      },
+      {
+        "type": "mcq",
+        "question": "La prochaine ____ présidentielle aura lieu dans moins d'un an.",
+        "options": [
+          "élection",
+          "fête",
+          "vacances",
+          "réunion"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "élection = انتخابات"
+      },
+      {
+        "type": "binary",
+        "question": "Voter est un droit fondamental dans un État de droit.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - voter = رأی دادن"
+      },
+      {
+        "type": "binary",
+        "question": "Un scrutin avec une forte abstention montre généralement un fort engagement des citoyens.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - abstention بالا نشان‌دهنده عدم مشارکت یا بی‌تفاوتی است، نه تعهد."
+      }
+    ]
+  }
+}
