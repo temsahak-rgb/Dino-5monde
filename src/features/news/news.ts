@@ -66,9 +66,7 @@ async function renderNewsSection(): Promise<string> {
             return "";
         }
 
-        const allNews =
-            await response.json()
-                as NewsIndexItem[];
+        const allNews = (await response.json()) as NewsIndexItem[];
 
         const currentNews =
             allNews[0];
@@ -119,9 +117,7 @@ async function showNewsDetail(
             );
         }
 
-        const news =
-            await response.json()
-                as NewsArticle;
+        const news = (await response.json()) as NewsArticle;
 
         const vocabulary =
             (

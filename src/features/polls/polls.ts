@@ -33,9 +33,7 @@ async function renderPollSection(): Promise<string> {
             return "";
         }
 
-        const pollsData =
-            await response.json()
-                as PollFile;
+        const pollsData = (await response.json()) as PollFile;
 
         const poll =
             pollsData.activePoll;

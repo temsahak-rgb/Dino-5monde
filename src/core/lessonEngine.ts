@@ -54,8 +54,7 @@ async function loadLessonWithExercises(
         }
 
         const lessonData =
-            await lessonResponse.json()
-                as LessonData;
+            (await lessonResponse.json()) as LessonData;
 
         const exercises:
             ExerciseSection[] = [];
@@ -81,8 +80,7 @@ async function loadLessonWithExercises(
                 }
 
                 const exercise =
-                    await response.json()
-                        as ExerciseSection;
+                    (await response.json()) as ExerciseSection;
 
                 exercises.push(
                     exercise
@@ -163,8 +161,7 @@ async function loadOptionalLessonQuiz(
         }
 
         const quiz =
-            await response.json()
-                as ExerciseSection;
+            (await response.json()) as ExerciseSection;
 
         exercisesCache[
             quizId

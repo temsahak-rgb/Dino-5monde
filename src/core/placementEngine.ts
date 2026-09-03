@@ -51,9 +51,7 @@ async function loadPlacementQuestions(): Promise<void> {
             );
         }
 
-        placementQuestions =
-            await response.json()
-                as PlacementQuestion[];
+        placementQuestions = (await response.json()) as PlacementQuestion[];
 
         console.log(
             `Placement questions loaded: ${placementQuestions.length}`

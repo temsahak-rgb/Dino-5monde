@@ -36,9 +36,7 @@ async function loadTravelIndex(): Promise<TravelLessonIndex[]> {
             );
         }
 
-        const lessons =
-            await response.json()
-                as unknown;
+        const lessons = (await response.json()) as unknown;
 
         travelDataCache.index =
             Array.isArray(lessons)

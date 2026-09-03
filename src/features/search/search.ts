@@ -637,9 +637,7 @@ async function loadAllVocab(): Promise<VocabPack[]> {
                 continue;
             }
 
-            const index =
-                await indexResponse.json()
-                    as VocabPackIndex[];
+            const index = (await indexResponse.json()) as VocabPackIndex[];
 
             for (
                 const pack
@@ -657,9 +655,7 @@ async function loadAllVocab(): Promise<VocabPack[]> {
                         continue;
                     }
 
-                    const packData =
-                        await packResponse.json()
-                            as VocabPack;
+                    const packData = (await packResponse.json()) as VocabPack;
 
                     packData.level =
                         level;
@@ -726,9 +722,7 @@ async function loadAllGrammar(): Promise<SearchGrammarItem[]> {
                 continue;
             }
 
-            const lessons =
-                await response.json()
-                    as GrammarLessonIndex[];
+            const lessons = (await response.json()) as GrammarLessonIndex[];
 
             allLessons.push(
                 ...lessons
@@ -767,9 +761,7 @@ async function loadAllNews(): Promise<NewsIndexItem[]> {
             return [];
         }
 
-        const news =
-            await response.json()
-                as NewsIndexItem[];
+        const news = (await response.json()) as NewsIndexItem[];
 
         searchCache.news =
             news;

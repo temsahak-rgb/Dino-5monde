@@ -26,9 +26,7 @@ async function loadGrammar(
             );
         }
 
-        const data =
-            await response.json()
-                as GrammarLessonIndex[];
+        const data = (await response.json()) as GrammarLessonIndex[];
 
         grammarData[level] = data;
 

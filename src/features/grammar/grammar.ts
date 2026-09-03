@@ -85,9 +85,7 @@ async function showGrammarLesson(
             );
         }
 
-        lesson =
-            await response.json()
-                as LessonData;
+        lesson = (await response.json()) as LessonData;
     } catch {
         app.innerHTML =
             renderGrammarLessonNotFoundView();

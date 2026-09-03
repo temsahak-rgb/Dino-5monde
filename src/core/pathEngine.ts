@@ -24,9 +24,7 @@ async function loadPaths(): Promise<void> {
             );
         }
 
-        const data =
-            await response.json()
-                as Record<string, unknown>;
+        const data = (await response.json()) as Record<string, unknown>;
 
         Object.assign(
             pathsData,
@@ -67,9 +65,7 @@ async function loadPathContent<
             );
         }
 
-        const data =
-            await response.json()
-                as T[];
+        const data = (await response.json()) as T[];
 
         currentPathData[pathId] =
             data as unknown[];
@@ -112,9 +108,7 @@ async function loadSpecificLesson<T>(
             );
         }
 
-        const lessonData =
-            await response.json()
-                as T;
+        const lessonData = (await response.json()) as T;
 
         console.log(
             `Learning-path lesson loaded: ${pathId}/${lessonId}`

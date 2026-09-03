@@ -138,9 +138,7 @@ async function loadVocabIndex(
             );
         }
 
-        const data =
-            await response.json()
-                as VocabPackIndex[];
+        const data = (await response.json()) as VocabPackIndex[];
 
         vocabCache[key] =
             data;
@@ -197,9 +195,7 @@ async function loadVocabPack(
             );
         }
 
-        const data =
-            await response.json()
-                as VocabPack;
+        const data = (await response.json()) as VocabPack;
 
         data.level =
             level;
