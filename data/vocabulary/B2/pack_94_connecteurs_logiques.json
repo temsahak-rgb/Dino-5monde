@@ -1,0 +1,522 @@
+{
+  "id": "pack_94_connecteurs_logiques",
+  "level": "B2",
+  "theme": "Connecteurs et adverbes vitaux pour l'écrit",
+  "theme_fa": "کلمات ربط و قیدهای حیاتی برای نوشتار",
+  "icon": "🔗",
+  "inspiration": "Le Comte de Monte-Cristo",
+  "words": [
+    {
+      "fr": "néanmoins",
+      "fa": "با این وجود",
+      "emoji": "⚖️",
+      "difficulty": 3,
+      "ex": "Il est fatigué, néanmoins il continue.",
+      "ex_fa": "او خسته است، با این وجود ادامه می‌دهد."
+    },
+    {
+      "fr": "toutefois",
+      "fa": "با این حال",
+      "emoji": "🔄",
+      "difficulty": 3,
+      "ex": "C'est difficile, toutefois c'est possible.",
+      "ex_fa": "این دشوار است، با این حال ممکن است."
+    },
+    {
+      "fr": "cependant",
+      "fa": "با این وجود",
+      "emoji": "🛑",
+      "difficulty": 3,
+      "ex": "Il pleut, cependant nous sortons.",
+      "ex_fa": "باران می‌بارد، با این وجود ما بیرون می‌رویم."
+    },
+    {
+      "fr": "d'ailleurs",
+      "fa": "تازه، گذشته از این",
+      "emoji": "➕",
+      "difficulty": 3,
+      "ex": "Je n'y vais pas ; d'ailleurs, je suis occupé.",
+      "ex_fa": "من نمی‌روم؛ تازه، من مشغول هستم."
+    },
+    {
+      "fr": "en outre",
+      "fa": "علاوه بر این",
+      "emoji": "📌",
+      "difficulty": 4,
+      "ex": "Il est intelligent, en outre il est travailleur.",
+      "ex_fa": "او باهوش است، علاوه بر این سخت‌کوش است."
+    },
+    {
+      "fr": "par ailleurs",
+      "fa": "از سوی دیگر",
+      "emoji": "↔️",
+      "difficulty": 4,
+      "ex": "Le projet est bon. Par ailleurs, il est coûteux.",
+      "ex_fa": "پروژه خوب است. از سوی دیگر، پرهزینه است."
+    },
+    {
+      "fr": "en revanche",
+      "fa": "در مقابل",
+      "emoji": "⚖️",
+      "difficulty": 4,
+      "ex": "Il n'est pas grand, en revanche il est fort.",
+      "ex_fa": "او قدبلند نیست، در مقابل قوی است."
+    },
+    {
+      "fr": "par contre",
+      "fa": "در عوض",
+      "emoji": "🔄",
+      "difficulty": 3,
+      "ex": "Je n'aime pas le café, par contre j'adore le thé.",
+      "ex_fa": "من قهوه دوست ندارم، در عوض چای را عاشقانه دوست دارم."
+    },
+    {
+      "fr": "en effet",
+      "fa": "در واقع",
+      "emoji": "✅",
+      "difficulty": 3,
+      "ex": "Il va pleuvoir, en effet le ciel est sombre.",
+      "ex_fa": "باران خواهد بارید، در واقع آسمان تیره است."
+    },
+    {
+      "fr": "à savoir",
+      "fa": "یعنی، به عبارت دیگر",
+      "emoji": "💡",
+      "difficulty": 4,
+      "ex": "Il a un seul hobby, à savoir la lecture.",
+      "ex_fa": "او یک سرگرمی دارد، یعنی مطالعه."
+    },
+    {
+      "fr": "c'est-à-dire",
+      "fa": "یعنی",
+      "emoji": "📝",
+      "difficulty": 3,
+      "ex": "Il est végétarien, c'est-à-dire qu'il ne mange pas de viande.",
+      "ex_fa": "او گیاه‌خوار است، یعنی گوشت نمی‌خورد."
+    },
+    {
+      "fr": "d'une part... d'autre part",
+      "fa": "از یک سو... از سوی دیگر",
+      "emoji": "🔀",
+      "difficulty": 5,
+      "ex": "Il a deux raisons : d'une part le coût, d'autre part le temps.",
+      "ex_fa": "او دو دلیل دارد: از یک سو هزینه، از سوی دیگر زمان."
+    },
+    {
+      "fr": "non seulement... mais aussi",
+      "fa": "نه تنها... بلکه",
+      "emoji": "➕",
+      "difficulty": 4,
+      "ex": "Il est non seulement riche, mais aussi généreux.",
+      "ex_fa": "او نه تنها ثروتمند است، بلکه سخاوتمند نیز هست."
+    },
+    {
+      "fr": "bien que",
+      "fa": "اگرچه",
+      "emoji": "🛡️",
+      "difficulty": 4,
+      "ex": "Bien qu'il soit tard, nous continuons.",
+      "ex_fa": "اگرچه دیر است، ما ادامه می‌دهیم."
+    },
+    {
+      "fr": "afin de",
+      "fa": "به منظورِ",
+      "emoji": "🎯",
+      "difficulty": 3,
+      "ex": "Il travaille dur afin de réussir.",
+      "ex_fa": "او سخت کار می‌کند به منظور موفقیت."
+    },
+    {
+      "fr": "en vue de",
+      "fa": "با دیدگاهِ، به منظورِ",
+      "emoji": "👁️",
+      "difficulty": 4,
+      "ex": "Des mesures sont prises en vue de la sécurité.",
+      "ex_fa": "اقداماتی به منظور امنیت انجام می‌شود."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Le retour du comte",
+      "title_fa": "بازگشت کنت",
+      "text": "Le comte Edmond Dantès avait tout perdu lors de son emprisonnement injuste et prolongé. {{BLANK_1}}, il gardait une lueur d'espoir au fond de son cœur meurtri. Il savait pertinemment qu'il était innocent, {{BLANK_2}} personne dans la haute société n'était prêt à le croire ou à l'écouter. Il devait absolument prouver la vérité, {{BLANK_3}} cette tâche semblait presque impossible à accomplir sans aide extérieure. Il faisait face à des ennemis très puissants et influents, {{BLANK_4}} ces derniers contrôlaient désormais tous les leviers du pouvoir judiciaire. {{BLANK_5}}, il manquait cruellement de preuves matérielles concrètes pour les confondre publiquement. {{BLANK_6}}, le temps pressait dangereusement et chaque jour comptait pour sa propre survie. Il restait pourtant incroyablement déterminé, {{BLANK_7}} il avait fait un serment sacré dans l'obscurité totale de sa cellule. Son objectif final était parfaitement clair pour lui, {{BLANK_8}} rétablir la justice divine et se venger méthodiquement de ceux qui l'avaient lâchement trahi.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "Néanmoins",
+          "options": [
+            "Néanmoins",
+            "Car",
+            "Donc",
+            "Ainsi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "cependant",
+          "options": [
+            "cependant",
+            "car",
+            "donc",
+            "ainsi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "toutefois",
+          "options": [
+            "toutefois",
+            "parce que",
+            "donc",
+            "en effet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "d'ailleurs",
+          "options": [
+            "d'ailleurs",
+            "car",
+            "donc",
+            "ainsi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "En outre",
+          "options": [
+            "En outre",
+            "Cependant",
+            "Par contre",
+            "Néanmoins"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "Par ailleurs",
+          "options": [
+            "Par ailleurs",
+            "Donc",
+            "Car",
+            "En effet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "en effet",
+          "options": [
+            "en effet",
+            "cependant",
+            "donc",
+            "ainsi"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "à savoir",
+          "options": [
+            "à savoir",
+            "cependant",
+            "par contre",
+            "en revanche"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "La toile de l'araignée",
+      "title_fa": "تار عنکبوت",
+      "inspiration": "Le Comte de Monte-Cristo",
+      "text": "Le comte avait élaboré un plan d'une complexité diabolique et d'une patience infinie, digne des plus grands stratèges de l'histoire. {{BLANK_9}}, il ne s'agissait pas d'une simple vengeance mesquine ou passagère, mais d'une véritable justice divine et implacable destinée à rétablir l'ordre moral. Il savait pertinemment que ses ennemis étaient, {{BLANK_10}}, immensément riches et extrêmement influents au sein de la haute société parisienne corrompue. {{BLANK_11}} leur puissance sociale semblât à première vue inébranlable et absolue, il avait méthodiquement découvert leurs failles secrètes et leurs vices cachés derrière leurs façades respectables. Il a donc orchestré chaque détail de son retour triomphal {{BLANK_12}} les piéger irrémédiablement dans leur propre arrogance et leur cupidité insatiable. Toutes ses manœuvres souterraines étaient froidement calculées {{BLANK_13}} leur ruine totale, à la fois financière et morale, qui devait être inévitable et spectaculaire. Ses rares alliés doutaient parfois de la moralité de sa méthode obscure, {{BLANK_14}}, lui ne vacillait jamais dans sa conviction profonde et sa détermination de fer. Le monde extérieur le voyait comme un simple noble excentrique et généreux, {{BLANK_15}}, il était en réalité le maître d'orchestre invisible et impitoyable de leur chute définitive. Finalement, il poursuivait deux objectifs inséparables : {{BLANK_16}}, la réparation absolue de l'injustice subie, et la punition exemplaire des coupables.",
+      "blanks": [
+        {
+          "id": 9,
+          "answer": "C'est-à-dire",
+          "options": [
+            "C'est-à-dire",
+            "Cependant",
+            "Par contre",
+            "En revanche"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "non seulement... mais aussi",
+          "options": [
+            "non seulement... mais aussi",
+            "cependant",
+            "par contre",
+            "en effet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "Bien que",
+          "options": [
+            "Bien que",
+            "Parce que",
+            "Donc",
+            "Car"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "afin de",
+          "options": [
+            "afin de",
+            "cependant",
+            "par contre",
+            "en effet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "en vue de",
+          "options": [
+            "en vue de",
+            "cependant",
+            "par contre",
+            "en effet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "en revanche",
+          "options": [
+            "en revanche",
+            "car",
+            "donc",
+            "en effet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "par contre",
+          "options": [
+            "par contre",
+            "car",
+            "donc",
+            "en effet"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "d'une part... d'autre part",
+          "options": [
+            "d'une part... d'autre part",
+            "cependant",
+            "par contre",
+            "en effet"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Connecteurs logiques",
+    "title_fa": "آزمون : کلمات ربط منطقی",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Il était extrêmement fatigué, ____ il a continué à travailler jusqu'à minuit.",
+        "options": [
+          "néanmoins",
+          "car",
+          "donc",
+          "ainsi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Néanmoins یک قید تقابلی است به معنای 'با این وجود'."
+      },
+      {
+        "type": "mcq",
+        "question": "Le projet est très ambitieux, ____ il reste tout à fait réalisable avec une bonne équipe.",
+        "options": [
+          "toutefois",
+          "parce que",
+          "donc",
+          "en effet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Toutefois به معنای 'با این حال' برای بیان یک محدودیت یا تقابل است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il a beaucoup étudié pour cet examen, ____ il n'a pas obtenu la note attendue.",
+        "options": [
+          "cependant",
+          "car",
+          "donc",
+          "ainsi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Cependant یک قید تقابلی قوی به معنای 'با این وجود' است."
+      },
+      {
+        "type": "binary",
+        "question": "\"D'ailleurs\" est utilisé pour ajouter une information qui renforce ou précise ce qui vient d'être dit.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، d'ailleurs برای افزودن نکته‌ای تأییدکننده یا تکمیلی استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce poste offre un excellent salaire. ____, les avantages sociaux sont très généreux.",
+        "options": [
+          "En outre",
+          "Cependant",
+          "Par contre",
+          "Néanmoins"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "En outre به معنای 'علاوه بر این' برای افزودن یک نکته هم‌جهت است."
+      },
+      {
+        "type": "mcq",
+        "question": "La situation économique mondiale est difficile. ____, le taux de chômage dans ce pays reste stable.",
+        "options": [
+          "Par ailleurs",
+          "Donc",
+          "Car",
+          "En effet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Par ailleurs به معنای 'از سوی دیگر' برای معرفی یک جنبه جدید از بحث است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il n'est pas très grand physiquement, ____ il est extrêmement fort et résistant.",
+        "options": [
+          "en revanche",
+          "car",
+          "donc",
+          "en effet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "En revanche به معنای 'در مقابل' برای بیان یک تضاد مستقیم است."
+      },
+      {
+        "type": "binary",
+        "question": "\"Par contre\" est un connecteur qui marque une opposition ou un contraste, similaire à \"en revanche\".",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، par contre برای بیان تقابل یا تضاد استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Il va pleuvoir cet après-midi, ____ le ciel est déjà très sombre et couvert de nuages.",
+        "options": [
+          "en effet",
+          "cependant",
+          "donc",
+          "ainsi"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "En effet به معنای 'در واقع' برای تأیید یا توضیح جمله قبل است."
+      },
+      {
+        "type": "mcq",
+        "question": "Il a un seul et unique hobby, ____ la collection de timbres anciens.",
+        "options": [
+          "à savoir",
+          "cependant",
+          "par contre",
+          "en revanche"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "À savoir به معنای 'یعنی' یا 'به عبارت دیگر' برای مشخص کردن دقیق چیزی است."
+      },
+      {
+        "type": "binary",
+        "question": "\"C'est-à-dire\" est utilisé pour introduire une explication ou une reformulation de ce qui précède.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "بله، c'est-à-dire برای توضیح یا بازگویی مفهوم قبلی به کار می‌رود."
+      },
+      {
+        "type": "mcq",
+        "question": "Il a avancé deux arguments principaux : ____, le manque de temps, et le budget limité.",
+        "options": [
+          "d'une part... d'autre part",
+          "cependant",
+          "par contre",
+          "en effet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "این ساختار برای ارائه دو جنبه یا دلیل متمایز استفاده می‌شود."
+      },
+      {
+        "type": "mcq",
+        "question": "Ce logiciel est ____ rapide, il est également très sécurisé et facile à utiliser.",
+        "options": [
+          "non seulement",
+          "cependant",
+          "par contre",
+          "en effet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "این ساختار برای تأکید بر انباشت ویژگی‌های مثبت (نه تنها... بلکه) است."
+      },
+      {
+        "type": "binary",
+        "question": "\"Bien que\" est toujours suivi de l'indicatif en français standard.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "خیر، bien que همیشه با حالت التزامی (subjonctif) می‌آید."
+      },
+      {
+        "type": "mcq",
+        "question": "Il économise chaque mois ____ acheter une maison dans les prochaines années.",
+        "options": [
+          "afin de",
+          "cependant",
+          "par contre",
+          "en effet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Afin de به معنای 'به منظورِ' است و با مصدر می‌آید."
+      },
+      {
+        "type": "mcq",
+        "question": "Des mesures strictes ont été prises par la mairie ____ la sécurité publique.",
+        "options": [
+          "en vue de",
+          "cependant",
+          "par contre",
+          "en effet"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "En vue de به معنای 'با دیدگاهِ' یا 'به منظورِ' است و با اسم می‌آید."
+      }
+    ]
+  }
+}
