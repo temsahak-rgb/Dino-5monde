@@ -1,0 +1,16 @@
+{
+  "name": "dino-5monde",
+  "private": true,
+  "scripts": {
+    "test": "npm run test:data",
+    "test:data": "node --test tests/data/travel-ids.test.js",
+    "typecheck": "tsc -p jsconfig.json",
+    "knip": "knip",
+    "duplication": "jscpd --min-lines 10 --min-tokens 70 --reporters console ."
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "knip": "^5.0.0",
+    "jscpd": "^4.0.0"
+  }
+}
