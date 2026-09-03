@@ -1,0 +1,522 @@
+{
+  "id": "espace_dimensions_structure",
+  "level": "B2",
+  "theme": "L'espace, les dimensions et la structure physique",
+  "theme_fa": "فضا، ابعاد و ساختار فیزیکی",
+  "icon": "📐",
+  "inspiration": "Inception",
+  "words": [
+    {
+      "fr": "la dimension (f)",
+      "fa": "بُعد، اندازه",
+      "emoji": "📏",
+      "difficulty": 4,
+      "ex": "Cette pièce a de grandes dimensions.",
+      "ex_fa": "این اتاق ابعاد بزرگی دارد."
+    },
+    {
+      "fr": "dimensionner",
+      "fa": "تنظیم ابعاد",
+      "emoji": "📐",
+      "difficulty": 5,
+      "ex": "L'architecte doit dimensionner les poutres avec précision.",
+      "ex_fa": "معمار باید تیرها را با دقت ابعادبندی کند."
+    },
+    {
+      "fr": "l'étendue (f)",
+      "fa": "وسعت",
+      "emoji": "🌊",
+      "difficulty": 5,
+      "ex": "L'étendue du désert est impressionnante.",
+      "ex_fa": "وسعت صحرا چشمگیر است."
+    },
+    {
+      "fr": "étendu(e)",
+      "fa": "گسترده",
+      "emoji": "🌍",
+      "difficulty": 4,
+      "ex": "Le parc a une superficie très étendue.",
+      "ex_fa": "پارک مساحت بسیار گسترده‌ای دارد."
+    },
+    {
+      "fr": "vaste",
+      "fa": "وسیع، گسترده",
+      "emoji": "🏜️",
+      "difficulty": 4,
+      "ex": "Ils habitent dans une vaste maison.",
+      "ex_fa": "آن‌ها در یک خانه وسیع زندگی می‌کنند."
+    },
+    {
+      "fr": "l'ampleur (f)",
+      "fa": "گستردگی، وسعت",
+      "emoji": "🌌",
+      "difficulty": 5,
+      "ex": "L'ampleur du projet dépasse nos attentes.",
+      "ex_fa": "گستردگی پروژه فراتر از انتظارات ماست."
+    },
+    {
+      "fr": "ample",
+      "fa": "وسیع، کافی",
+      "emoji": "👕",
+      "difficulty": 4,
+      "ex": "Il porte un manteau ample pour l'hiver.",
+      "ex_fa": "او یک پالتوی گشاد برای زمستان می‌پوشد."
+    },
+    {
+      "fr": "le périmètre (m)",
+      "fa": "محیط، محدوده",
+      "emoji": "⭕",
+      "difficulty": 4,
+      "ex": "Le périmètre de sécurité a été établi.",
+      "ex_fa": "محدوده امنیتی تعیین شده است."
+    },
+    {
+      "fr": "délimiter",
+      "fa": "مرزبندی کردن",
+      "emoji": "📍",
+      "difficulty": 5,
+      "ex": "Il faut délimiter les zones de travail.",
+      "ex_fa": "باید مناطق کاری را مرزبندی کرد."
+    },
+    {
+      "fr": "l'espace (m)",
+      "fa": "فضا",
+      "emoji": "🚀",
+      "difficulty": 2,
+      "ex": "Les astronautes explorent l'espace.",
+      "ex_fa": "فضانوردان فضا را کاوش می‌کنند."
+    },
+    {
+      "fr": "le volume (m)",
+      "fa": "حجم",
+      "emoji": "📦",
+      "difficulty": 3,
+      "ex": "Le volume de la salle est de 500 mètres cubes.",
+      "ex_fa": "حجم سالن ۵۰۰ متر مکعب است."
+    },
+    {
+      "fr": "la superficie (f)",
+      "fa": "مساحت",
+      "emoji": "🗺️",
+      "difficulty": 4,
+      "ex": "La superficie de ce terrain est de deux hectares.",
+      "ex_fa": "مساحت این زمین دو هکتار است."
+    },
+    {
+      "fr": "la configuration (f)",
+      "fa": "پیکربندی",
+      "emoji": "🔧",
+      "difficulty": 4,
+      "ex": "La configuration du logiciel a été modifiée.",
+      "ex_fa": "پیکربندی نرم‌افزار تغییر داده شده است."
+    },
+    {
+      "fr": "configurer",
+      "fa": "پیکربندی کردن",
+      "emoji": "⚙️",
+      "difficulty": 5,
+      "ex": "Il faut configurer le système avant utilisation.",
+      "ex_fa": "باید سیستم را قبل از استفاده پیکربندی کرد."
+    },
+    {
+      "fr": "l'architecture (f)",
+      "fa": "معماری",
+      "emoji": "🏛️",
+      "difficulty": 4,
+      "ex": "L'architecture de ce bâtiment est remarquable.",
+      "ex_fa": "معماری این ساختمان قابل توجه است."
+    },
+    {
+      "fr": "architectural(e)",
+      "fa": "معماری (صفت)",
+      "emoji": "🏗️",
+      "difficulty": 5,
+      "ex": "Le style architectural est unique dans cette région.",
+      "ex_fa": "سبک معماری در این منطقه منحصر به فرد است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "La construction d'un nouveau bureau",
+      "title_fa": "ساخت یک دفتر جدید",
+      "text": "L'entreprise a décidé de construire un nouveau siège social. Le terrain disponible est très {{BLANK_1}}, avec une superficie de plus de cinq hectares. Les architectes doivent {{BLANK_2}} chaque pièce selon les besoins spécifiques des différents services. Avant de commencer les travaux, il est essentiel de {{BLANK_3}} précisément les zones de construction et les espaces verts. L'{{BLANK_4}} intérieure du bâtiment doit favoriser la collaboration entre les employés tout en offrant des espaces de travail silencieux. La {{BLANK_5}} des bureaux permettra à chaque équipe de disposer de suffisamment de place pour ses activités quotidiennes. Finalement, l'{{BLANK_6}} moderne du bâtiment combinera esthétique et fonctionnalité, créant un environnement de travail agréable et efficace pour tous.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "vaste",
+          "options": [
+            "vaste",
+            "étroit",
+            "petit",
+            "minuscule"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "dimensionner",
+          "options": [
+            "dimensionner",
+            "ignorer",
+            "détruire",
+            "oublier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "délimiter",
+          "options": [
+            "délimiter",
+            "confondre",
+            "mélanger",
+            "fusionner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "espace",
+          "options": [
+            "espace",
+            "bruit",
+            "chaos",
+            "désordre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "configuration",
+          "options": [
+            "configuration",
+            "destruction",
+            "confusion",
+            "erreur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "architecture",
+          "options": [
+            "architecture",
+            "ruine",
+            "destruction",
+            "abandon"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les rêves architecturaux",
+      "title_fa": "رویاهای معماری",
+      "inspiration": "Inception",
+      "text": "Dans le laboratoire souterrain, Dom manipulait les lois de la physique pour créer des mondes impossibles. Chaque rêve qu'il concevait possédait sa propre {{BLANK_1}}, une géométrie qui défiait toute logique terrestre. L'{{BLANK_2}} des villes qu'il bâtissait dans l'esprit de ses sujets était absolument vertigineuse, avec des gratte-ciels qui s'étiraient à l'infini vers un ciel artificiel. Il savait {{BLANK_3}} parfaitement les structures mentales pour qu'elles semblent réelles et tangibles aux dormeurs. La {{BLANK_4}} de son projet dépassait largement les frontières conventionnelles de l'imagination humaine. Chaque bâtiment avait un {{BLANK_5}} intérieur savamment calculé pour accueillir des milliers de projections inconscientes. Il devait également {{BLANK_6}} précisément le {{BLANK_7}} de sécurité autour de chaque zone sensible, afin d'éviter que les rêves ne s'effondrent sous leur propre poids. Le {{BLANK_8}} du style qu'il choisissait était toujours audacieux, mélangeant des éléments classiques et futuristes dans une harmonie surréaliste. Cette conception {{BLANK_9}} révolutionnaire lui avait valu une réputation légendaire dans le monde secret des extracteurs de rêves. Pourtant, au fond de son subconscient, une {{BLANK_10}} infinie l'attendait toujours : celle de retrouver sa femme perdue dans les limbes de sa propre mémoire.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "architecture",
+          "options": [
+            "architecture",
+            "ruine",
+            "destruction",
+            "abandon"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "étendue",
+          "options": [
+            "étendue",
+            "petitesse",
+            "étroitesse",
+            "limitation"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "configurer",
+          "options": [
+            "configurer",
+            "détruire",
+            "ignorer",
+            "oublier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "ampleur",
+          "options": [
+            "ampleur",
+            "petitesse",
+            "faiblesse",
+            "insignifiance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "volume",
+          "options": [
+            "volume",
+            "vide",
+            "silence",
+            "bruit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "délimiter",
+          "options": [
+            "délimiter",
+            "confondre",
+            "mélanger",
+            "fusionner"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "périmètre",
+          "options": [
+            "périmètre",
+            "centre",
+            "milieu",
+            "intérieur"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "style architectural",
+          "options": [
+            "style architectural",
+            "chaos",
+            "désordre",
+            "anarchie"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "dimension",
+          "options": [
+            "dimension",
+            "erreur",
+            "faute",
+            "mistake"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "superficie",
+          "options": [
+            "superficie",
+            "profondeur",
+            "hauteur",
+            "largeur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Espace, dimensions et structure",
+    "title_fa": "آزمون : فضا، ابعاد و ساختار فیزیکی",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Cette pièce a de grandes ____ qui permettent d'y installer beaucoup de meubles.",
+        "options": [
+          "dimensions",
+          "erreurs",
+          "fautes",
+          "problèmes"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "dimension = بُعد، اندازه"
+      },
+      {
+        "type": "mcq",
+        "question": "L'architecte doit ____ les poutres avec une précision extrême.",
+        "options": [
+          "dimensionner",
+          "ignorer",
+          "détruire",
+          "oublier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "dimensionner = تنظیم ابعاد"
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ du désert est vraiment impressionnante à perte de vue.",
+        "options": [
+          "étendue",
+          "petitesse",
+          "étroitesse",
+          "limitation"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "étendue = وسعت"
+      },
+      {
+        "type": "mcq",
+        "question": "Le parc a une superficie très ____ qui couvre plusieurs hectares.",
+        "options": [
+          "étendue",
+          "petite",
+          "étroite",
+          "limitée"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "étendu = گسترده"
+      },
+      {
+        "type": "mcq",
+        "question": "Ils habitent dans une ____ maison avec un grand jardin.",
+        "options": [
+          "vaste",
+          "étroite",
+          "petite",
+          "minuscule"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "vaste = وسیع، گسترده"
+      },
+      {
+        "type": "mcq",
+        "question": "L'____ du projet dépasse largement nos attentes initiales.",
+        "options": [
+          "ampleur",
+          "petitesse",
+          "faiblesse",
+          "insignifiance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ampleur = گستردگی، وسعت"
+      },
+      {
+        "type": "mcq",
+        "question": "Il porte un manteau ____ pour l'hiver rigoureux.",
+        "options": [
+          "ample",
+          "étroit",
+          "serré",
+          "petit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ample = وسیع، کافی"
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ de sécurité a été établi autour de la zone dangereuse.",
+        "options": [
+          "périmètre",
+          "centre",
+          "milieu",
+          "intérieur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "périmètre = محیط، محدوده"
+      },
+      {
+        "type": "mcq",
+        "question": "Il faut ____ les zones de travail et les espaces de repos.",
+        "options": [
+          "délimiter",
+          "confondre",
+          "mélanger",
+          "fusionner"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "délimiter = مرزبندی کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Les astronautes explorent ____ depuis des décennies.",
+        "options": [
+          "l'espace",
+          "l'erreur",
+          "le problème",
+          "la faute"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "espace = فضا"
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ de la salle est de 500 mètres cubes.",
+        "options": [
+          "volume",
+          "vide",
+          "silence",
+          "bruit"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "volume = حجم"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ de ce terrain est de deux hectares exactement.",
+        "options": [
+          "superficie",
+          "profondeur",
+          "hauteur",
+          "largeur"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "superficie = مساحت"
+      },
+      {
+        "type": "binary",
+        "question": "La configuration d'un logiciel détermine comment il fonctionne et s'affiche.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - configuration = پیکربندی"
+      },
+      {
+        "type": "binary",
+        "question": "Configurer un système signifie le détruire complètement.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - configurer به معنای پیکربندی کردن و تنظیم کردن است، نه نابود کردن."
+      },
+      {
+        "type": "binary",
+        "question": "L'architecture d'un bâtiment désigne sa conception et son style de construction.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - architecture = معماری"
+      },
+      {
+        "type": "binary",
+        "question": "Le style architectural gothique se caractérise par des arcs brisés et des vitraux colorés.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - architectural = مربوط به معماری"
+      }
+    ]
+  }
+}
