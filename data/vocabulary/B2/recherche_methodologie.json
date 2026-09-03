@@ -1,0 +1,632 @@
+{
+  "id": "recherche_methodologie",
+  "level": "B2",
+  "theme": "La recherche et la méthodologie",
+  "theme_fa": "پژوهش و روش‌شناسی",
+  "icon": "🔬",
+  "inspiration": "Premier Contact",
+  "words": [
+    {
+      "fr": "la recherche (f)",
+      "fa": "پژوهش",
+      "emoji": "🔍",
+      "difficulty": 3,
+      "ex": "La recherche scientifique nécessite de la patience.",
+      "ex_fa": "پژوهش علمی نیازمند صبر است."
+    },
+    {
+      "fr": "chercher",
+      "fa": "جستجو کردن",
+      "emoji": "🔎",
+      "difficulty": 2,
+      "ex": "Nous devons chercher des solutions innovantes.",
+      "ex_fa": "ما باید راه‌حل‌های نوآورانه جستجو کنیم."
+    },
+    {
+      "fr": "le chercheur",
+      "fa": "محقق",
+      "emoji": "👨‍🔬",
+      "difficulty": 3,
+      "ex": "Le chercheur a publié ses résultats dans une revue célèbre.",
+      "ex_fa": "محقق نتایج خود را در یک مجله معروف منتشر کرد."
+    },
+    {
+      "fr": "la méthode (f)",
+      "fa": "روش",
+      "emoji": "📐",
+      "difficulty": 3,
+      "ex": "Cette méthode d'apprentissage est très efficace.",
+      "ex_fa": "این روش یادگیری بسیار مؤثر است."
+    },
+    {
+      "fr": "méthodique",
+      "fa": "روش‌مند",
+      "emoji": "📋",
+      "difficulty": 4,
+      "ex": "Il est très méthodique dans son travail quotidien.",
+      "ex_fa": "او در کار روزمره‌اش بسیار روش‌مند است."
+    },
+    {
+      "fr": "rigoureux/se",
+      "fa": "دقیق، سخت‌گیر",
+      "emoji": "⚖️",
+      "difficulty": 5,
+      "ex": "L'analyse doit être rigoureuse pour éviter les erreurs.",
+      "ex_fa": "تحلیل باید دقیق باشد تا از خطاها جلوگیری شود."
+    },
+    {
+      "fr": "la rigueur (f)",
+      "fa": "دقت، سخت‌گیری",
+      "emoji": "📏",
+      "difficulty": 5,
+      "ex": "La rigueur scientifique est fondamentale dans ce domaine.",
+      "ex_fa": "دقت علمی در این حوزه بنیادی است."
+    },
+    {
+      "fr": "minutieux/se",
+      "fa": "موشکافانه، با جزئیات دقیق",
+      "emoji": "🔎",
+      "difficulty": 5,
+      "ex": "Elle a effectué un contrôle minutieux du document.",
+      "ex_fa": "او کنترل موشکافانه‌ای از سند انجام داد."
+    },
+    {
+      "fr": "méticuleux/se",
+      "fa": "بسیار دقیق، وسواسی",
+      "emoji": "🧐",
+      "difficulty": 6,
+      "ex": "C'est un artisan méticuleux qui ne laisse rien au hasard.",
+      "ex_fa": "او صنعتگری بسیار دقیق است که هیچ چیز را به شانس واگذار نمی‌کند."
+    },
+    {
+      "fr": "précis(e)",
+      "fa": "دقیق",
+      "emoji": "🎯",
+      "difficulty": 3,
+      "ex": "Donnez-moi des informations précises sur ce projet.",
+      "ex_fa": "اطلاعات دقیقی در مورد این پروژه به من بدهید."
+    },
+    {
+      "fr": "précisément",
+      "fa": "دقیقاً",
+      "emoji": "✅",
+      "difficulty": 4,
+      "ex": "C'est précisément ce que je voulais dire.",
+      "ex_fa": "این دقیقاً همان چیزی است که می‌خواستم بگویم."
+    },
+    {
+      "fr": "préciser",
+      "fa": "دقیق کردن، مشخص کردن",
+      "emoji": "📌",
+      "difficulty": 4,
+      "ex": "Je dois préciser que cette règle s'applique à tous.",
+      "ex_fa": "باید مشخص کنم که این قانون برای همه اعمال می‌شود."
+    },
+    {
+      "fr": "l'exactitude (f)",
+      "fa": "دقت، صحت",
+      "emoji": "🎯",
+      "difficulty": 5,
+      "ex": "L'exactitude des données est cruciale pour l'étude.",
+      "ex_fa": "صحت داده‌ها برای مطالعه حیاتی است."
+    },
+    {
+      "fr": "exact(e)",
+      "fa": "دقیق، صحیح",
+      "emoji": "✔️",
+      "difficulty": 3,
+      "ex": "Votre réponse est tout à fait exacte.",
+      "ex_fa": "پاسخ شما کاملاً صحیح است."
+    },
+    {
+      "fr": "fiable",
+      "fa": "قابل اعتماد",
+      "emoji": "🤝",
+      "difficulty": 4,
+      "ex": "C'est une source d'information très fiable.",
+      "ex_fa": "این یک منبع اطلاعاتی بسیار قابل اعتماد است."
+    },
+    {
+      "fr": "la fiabilité (f)",
+      "fa": "قابلیت اطمینان",
+      "emoji": "🛡️",
+      "difficulty": 5,
+      "ex": "La fiabilité de ce système a été prouvée.",
+      "ex_fa": "قابلیت اطمینان این سیستم اثبات شده است."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Une découverte importante",
+      "title_fa": "یک کشف مهم",
+      "text": "Pour réussir son projet de fin d'études, Marie doit faire une bonne {{BLANK_1}} sur le sujet. Elle commence par {{BLANK_2}} des informations dans la bibliothèque universitaire. En tant que {{BLANK_3}} sérieuse, elle suit une {{BLANK_4}} très claire et structurée. Elle est très {{BLANK_5}} dans son travail et vérifie chaque détail. Sa {{BLANK_6}} lui permet de ne rien oublier d'important. Elle note {{BLANK_7}} les résultats de ses expériences dans son cahier. Il est important de {{BLANK_8}} ses hypothèses pour éviter les malentendus. Les données doivent être {{BLANK_9}} pour que l'étude soit valide. Enfin, elle vérifie la {{BLANK_10}} de ses sources avant de publier son article scientifique.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "recherche",
+          "options": [
+            "recherche",
+            "cuisine",
+            "promenade",
+            "vacances"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "chercher",
+          "options": [
+            "chercher",
+            "manger",
+            "dormir",
+            "chanter"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "chercheuse",
+          "options": [
+            "chercheuse",
+            "touriste",
+            "artiste",
+            "musicienne"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "méthode",
+          "options": [
+            "méthode",
+            "erreur",
+            "hasard",
+            "chance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "méthodique",
+          "options": [
+            "méthodique",
+            "désordonnée",
+            "paresseuse",
+            "distraite"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "rigueur",
+          "options": [
+            "rigueur",
+            "négligence",
+            "paresse",
+            "oubli"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "précisément",
+          "options": [
+            "précisément",
+            "vaguement",
+            "approximativement",
+            "rarement"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "préciser",
+          "options": [
+            "préciser",
+            "cacher",
+            "détruire",
+            "ignorer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "exactes",
+          "options": [
+            "exactes",
+            "fausses",
+            "imaginaires",
+            "douteuses"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "fiabilité",
+          "options": [
+            "fiabilité",
+            "danger",
+            "instabilité",
+            "fragilité"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Le langage des étoiles",
+      "title_fa": "زبان ستارگان",
+      "inspiration": "Premier Contact",
+      "text": "Dans le laboratoire souterrain et feutré, le professeur Aris menait une {{BLANK_1}} sans précédent sur les signaux extraterrestres. Il ne se contentait pas de {{BLANK_2}} des réponses superficielles ; il exigeait une approche profondément {{BLANK_3}}. Chaque membre de l'équipe, qu'il soit {{BLANK_4}} confirmé ou jeune assistant, devait appliquer la même {{BLANK_5}} scientifique avec une discipline de fer. La {{BLANK_6}} des calculs était primordiale, car une seule erreur minime pouvait fausser l'interprétation du message cosmique. Aris était connu pour être {{BLANK_7}}, voire {{BLANK_8}}, dans l'analyse des données brutes. Il demandait à ses collaborateurs de {{BLANK_9}} chaque variable, aussi infime fût-elle, pour éliminer toute ambiguïté. Pour lui, seule une information {{BLANK_10}} et rigoureusement vérifiée méritait d'être présentée au comité international. La {{BLANK_11}} de ses conclusions reposait sur des faits {{BLANK_12}} et non sur de simples intuitions ou des hypothèses fragiles. Il savait que pour décoder un langage inconnu, la {{BLANK_13}} linguistique devait être absolue et sans faille. C'est ainsi que, grâce à une {{BLANK_14}} inébranlable et un travail d'équipe {{BLANK_15}}, ils parvinrent enfin à traduire le premier mot. Ce moment de vérité historique changea à jamais notre compréhension de l'univers, prouvant que la {{BLANK_16}} humaine, lorsqu'elle est guidée par la raison, peut transcender les étoiles.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "recherche",
+          "options": [
+            "recherche",
+            "fête",
+            "promenade",
+            "vacances"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "chercher",
+          "options": [
+            "chercher",
+            "ignorer",
+            "détruire",
+            "oublier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "méthodique",
+          "options": [
+            "méthodique",
+            "désordonnée",
+            "chaotique",
+            "rapide"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "chercheur",
+          "options": [
+            "chercheur",
+            "touriste",
+            "artiste",
+            "musicien"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "méthode",
+          "options": [
+            "méthode",
+            "erreur",
+            "hasard",
+            "chance"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "exactitude",
+          "options": [
+            "exactitude",
+            "approximation",
+            "négligence",
+            "imprécision"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "rigoureux",
+          "options": [
+            "rigoureux",
+            "négligent",
+            "paresseux",
+            "doux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "méticuleux",
+          "options": [
+            "méticuleux",
+            "brouillon",
+            "rapide",
+            "superficiel"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "préciser",
+          "options": [
+            "préciser",
+            "cacher",
+            "détruire",
+            "ignorer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "exacte",
+          "options": [
+            "exacte",
+            "fausse",
+            "imaginaire",
+            "douteuse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "fiabilité",
+          "options": [
+            "fiabilité",
+            "danger",
+            "instabilité",
+            "fragilité"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 12,
+          "answer": "précis",
+          "options": [
+            "précis",
+            "vagues",
+            "approximatifs",
+            "douteux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 13,
+          "answer": "rigueur",
+          "options": [
+            "rigueur",
+            "négligence",
+            "paresse",
+            "oubli"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 14,
+          "answer": "minutie",
+          "options": [
+            "minutie",
+            "négligence",
+            "paresse",
+            "désordre"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 15,
+          "answer": "fiable",
+          "options": [
+            "fiable",
+            "dangereux",
+            "instable",
+            "fragile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 16,
+          "answer": "recherche",
+          "options": [
+            "recherche",
+            "ignorance",
+            "paresse",
+            "peur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Recherche et méthodologie",
+    "title_fa": "آزمون : پژوهش و روش‌شناسی",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "La ____ scientifique nécessite beaucoup de patience et de temps.",
+        "options": [
+          "recherche",
+          "cuisine",
+          "promenade",
+          "vacances"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "recherche = پژوهش"
+      },
+      {
+        "type": "mcq",
+        "question": "Nous devons ____ des solutions innovantes pour ce problème.",
+        "options": [
+          "chercher",
+          "manger",
+          "dormir",
+          "chanter"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "chercher = جستجو کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ a publié ses résultats dans une revue internationale.",
+        "options": [
+          "chercheur",
+          "touriste",
+          "artiste",
+          "musicien"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "chercheur = محقق"
+      },
+      {
+        "type": "mcq",
+        "question": "Cette ____ d'apprentissage est reconnue pour son efficacité.",
+        "options": [
+          "méthode",
+          "erreur",
+          "hasard",
+          "chance"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "méthode = روش"
+      },
+      {
+        "type": "mcq",
+        "question": "Il est très ____ dans son travail et suit toujours un plan.",
+        "options": [
+          "méthodique",
+          "désordonné",
+          "paresseux",
+          "distrait"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "méthodique = روش‌مند"
+      },
+      {
+        "type": "mcq",
+        "question": "L'analyse doit être ____ pour éviter les erreurs d'interprétation.",
+        "options": [
+          "rigoureuse",
+          "négligente",
+          "paresseuse",
+          "douce"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "rigoureux = دقیق، سخت‌گیر"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ scientifique est fondamentale dans ce domaine d'étude.",
+        "options": [
+          "rigueur",
+          "négligence",
+          "paresse",
+          "oubli"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "rigueur = دقت، سخت‌گیری"
+      },
+      {
+        "type": "mcq",
+        "question": "Elle a effectué un contrôle ____ du document avant de le signer.",
+        "options": [
+          "minutieux",
+          "brouillon",
+          "rapide",
+          "superficiel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "minutieux = موشکافانه"
+      },
+      {
+        "type": "mcq",
+        "question": "C'est un artisan ____ qui ne laisse rien au hasard.",
+        "options": [
+          "méticuleux",
+          "désordonné",
+          "rapide",
+          "superficiel"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "méticuleux = بسیار دقیق، وسواسی"
+      },
+      {
+        "type": "mcq",
+        "question": "Donnez-moi des informations ____ sur l'avancement du projet.",
+        "options": [
+          "précises",
+          "vagues",
+          "approximatives",
+          "douteuses"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "précis = دقیق"
+      },
+      {
+        "type": "mcq",
+        "question": "C'est ____ ce que je voulais dire depuis le début.",
+        "options": [
+          "précisément",
+          "vaguement",
+          "approximativement",
+          "rarement"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "précisément = دقیقاً"
+      },
+      {
+        "type": "mcq",
+        "question": "Je dois ____ que cette règle s'applique à tous les employés.",
+        "options": [
+          "préciser",
+          "cacher",
+          "détruire",
+          "ignorer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "préciser = دقیق کردن، مشخص کردن"
+      },
+      {
+        "type": "binary",
+        "question": "L'exactitude des données est cruciale pour la validité d'une étude.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - exactitude = دقت، صحت"
+      },
+      {
+        "type": "binary",
+        "question": "Une source fiable est une source qui donne souvent des informations fausses.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - fiable به معنای قابل اعتماد است."
+      },
+      {
+        "type": "binary",
+        "question": "La fiabilité d'un système mesure sa capacité à fonctionner sans défaillance.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - fiabilité = قابلیت اطمینان"
+      },
+      {
+        "type": "binary",
+        "question": "Être méthodique signifie travailler de manière désorganisée et chaotique.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - méthodique به معنای روش‌مند و منظم است."
+      }
+    ]
+  }
+}
