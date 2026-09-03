@@ -1,0 +1,544 @@
+{
+  "id": "gestion_financiere_budget",
+  "level": "B2",
+  "theme": "La gestion financière et le budget",
+  "theme_fa": "مدیریت مالی و بودجه",
+  "icon": "💰",
+  "inspiration": "Succession",
+  "words": [
+    {
+      "fr": "le budget (m)",
+      "fa": "بودجه",
+      "emoji": "📊",
+      "difficulty": 3,
+      "ex": "Le budget de l'entreprise a été approuvé par le conseil.",
+      "ex_fa": "بودجه شرکت توسط شورا تصویب شد."
+    },
+    {
+      "fr": "budgétaire",
+      "fa": "بودجه‌ای",
+      "emoji": "📉",
+      "difficulty": 4,
+      "ex": "Les contraintes budgétaires limitent nos projets.",
+      "ex_fa": "محدودیت‌های بودجه‌ای پروژه‌های ما را محدود می‌کند."
+    },
+    {
+      "fr": "budgétiser",
+      "fa": "بودجه‌بندی کردن",
+      "emoji": "📝",
+      "difficulty": 5,
+      "ex": "Nous devons budgétiser chaque dépense avec soin.",
+      "ex_fa": "ما باید هر هزینه را با دقت بودجه‌بندی کنیم."
+    },
+    {
+      "fr": "le financement (m)",
+      "fa": "تأمین مالی",
+      "emoji": "💵",
+      "difficulty": 4,
+      "ex": "Le financement de ce projet est assuré par la banque.",
+      "ex_fa": "تأمین مالی این پروژه توسط بانک تضمین شده است."
+    },
+    {
+      "fr": "financer",
+      "fa": "تأمین مالی کردن",
+      "emoji": "🏦",
+      "difficulty": 4,
+      "ex": "L'État a décidé de financer la recherche médicale.",
+      "ex_fa": "دولت تصمیم گرفت تحقیقات پزشکی را تأمین مالی کند."
+    },
+    {
+      "fr": "le revenu (m)",
+      "fa": "درآمد",
+      "emoji": "💰",
+      "difficulty": 3,
+      "ex": "Son revenu mensuel lui permet de vivre confortablement.",
+      "ex_fa": "درآمد ماهانه او به او اجازه می‌دهد راحت زندگی کند."
+    },
+    {
+      "fr": "la ressource (f)",
+      "fa": "منبع، سرمایه",
+      "emoji": "🌿",
+      "difficulty": 4,
+      "ex": "L'eau est une ressource naturelle précieuse.",
+      "ex_fa": "آب یک منبع طبیعی ارزشمند است."
+    },
+    {
+      "fr": "le déficit (m)",
+      "fa": "کسری، زیان",
+      "emoji": "📉",
+      "difficulty": 4,
+      "ex": "Le déficit public a augmenté cette année.",
+      "ex_fa": "کسری بودجه عمومی امسال افزایش یافته است."
+    },
+    {
+      "fr": "la rentabilité (f)",
+      "fa": "سودآوری",
+      "emoji": "📈",
+      "difficulty": 4,
+      "ex": "La rentabilité de cette usine est en baisse.",
+      "ex_fa": "سودآوری این کارخانه در حال کاهش است."
+    },
+    {
+      "fr": "rentable",
+      "fa": "سودآور",
+      "emoji": "💸",
+      "difficulty": 3,
+      "ex": "Cet investissement n'est pas rentable à court terme.",
+      "ex_fa": "این سرمایه‌گذاری در کوتاه‌مدت سودآور نیست."
+    },
+    {
+      "fr": "le bénéfice (m)",
+      "fa": "سود",
+      "emoji": "🏆",
+      "difficulty": 3,
+      "ex": "L'entreprise a réalisé un bénéfice record.",
+      "ex_fa": "شرکت به سود رکوردشکنی دست یافت."
+    },
+    {
+      "fr": "lucratif/ve",
+      "fa": "سودآور، پرسود",
+      "emoji": "💎",
+      "difficulty": 5,
+      "ex": "Le commerce en ligne est devenu très lucratif.",
+      "ex_fa": "تجارت آنلاین بسیار پرسود شده است."
+    },
+    {
+      "fr": "fructifier",
+      "fa": "به ثمر نشاندن، رشد دادن",
+      "emoji": "🌱",
+      "difficulty": 6,
+      "ex": "Il espère que son argent va fructifier rapidement.",
+      "ex_fa": "او امیدوار است که پولش به سرعت به ثمر بنشیند."
+    },
+    {
+      "fr": "fructueux/se",
+      "fa": "پربار، سودمند",
+      "emoji": "🌾",
+      "difficulty": 5,
+      "ex": "Cette collaboration s'est avérée très fructueuse.",
+      "ex_fa": "این همکاری بسیار پربار ثابت شد."
+    },
+    {
+      "fr": "le coût (m)",
+      "fa": "هزینه",
+      "emoji": "🏷️",
+      "difficulty": 3,
+      "ex": "Le coût de la vie a augmenté dans la capitale.",
+      "ex_fa": "هزینه زندگی در پایتخت افزایش یافته است."
+    },
+    {
+      "fr": "la dépense (f)",
+      "fa": "مخارج",
+      "emoji": "💳",
+      "difficulty": 3,
+      "ex": "Il faut réduire les dépenses superflues.",
+      "ex_fa": "باید مخارج غیرضروری را کاهش داد."
+    }
+  ],
+  "stories": {
+    "simple": {
+      "title": "Un projet ambitieux",
+      "title_fa": "یک پروژه جاه‌طلبانه",
+      "text": "L'entreprise prépare son nouveau {{BLANK_1}} pour l'année prochaine. Le directeur financier doit {{BLANK_2}} chaque poste avec une grande précision. Actuellement, le {{BLANK_3}} public de la société est trop élevé, ce qui inquiète les actionnaires. Pour assurer le {{BLANK_4}} du projet, ils ont dû faire des choix difficiles. L'objectif principal est d'augmenter le {{BLANK_5}} global de chaque employé pour qu'ils puissent mieux gérer leur vie personnelle. Si l'investissement est bien géré, il devrait devenir {{BLANK_6}} dans quelques années. En attendant, il faut contrôler strictement chaque {{BLANK_7}} inutile. Une gestion rigoureuse est la clé de la survie de l'entreprise.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "budget",
+          "options": [
+            "budget",
+            "menu",
+            "voyage",
+            "sommeil"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "budgétiser",
+          "options": [
+            "budgétiser",
+            "ignorer",
+            "détruire",
+            "oublier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "déficit",
+          "options": [
+            "déficit",
+            "bénéfice",
+            "succès",
+            "richesse"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "financement",
+          "options": [
+            "financement",
+            "gaspillage",
+            "destruction",
+            "échec"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "revenu",
+          "options": [
+            "revenu",
+            "coût",
+            "perte",
+            "dette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "rentable",
+          "options": [
+            "rentable",
+            "dangereux",
+            "inutile",
+            "coûteux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "dépense",
+          "options": [
+            "dépense",
+            "économie",
+            "gain",
+            "profit"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    "literary": {
+      "title": "Les comptes de l'ombre",
+      "title_fa": "حساب‌های پنهان",
+      "inspiration": "Succession",
+      "text": "Dans les bureaux feutrés de la holding, l'atmosphère était glaciale. Le PDG savait que la situation {{BLANK_1}} de l'entreprise était critique. Les années précédentes, ils avaient épuisé chaque {{BLANK_2}} disponible sans compter, ce qui avait creusé un trou financier abyssal. Pour redresser la barre, il fallait absolument {{BLANK_3}} les moindres centimes avec une rigueur militaire. Il convoqua son directeur financier et lui ordonna de trouver un moyen de {{BLANK_4}} la restructuration, sinon ils couraient droit à la faillite. L'objectif n'était plus seulement de survivre, mais de restaurer la {{BLANK_5}} globale du groupe. Il exigea que chaque {{BLANK_6}} superflue soit immédiatement supprimée. Il ne tolérait plus les projets qui n'étaient pas clairement {{BLANK_7}}. Il voulait que le capital {{BLANK_8}} rapidement et produise des résultats tangibles. Cette période de restriction, bien que douloureuse, s'avéra finalement très {{BLANK_9}}. Grâce à une discipline de fer, l'entreprise parvint à dégager un {{BLANK_10}} net inespéré à la fin de l'exercice. Le {{BLANK_11}} d'une seule erreur de gestion dans ce milieu des affaires pouvait anéantir des années de travail.",
+      "blanks": [
+        {
+          "id": 1,
+          "answer": "budgétaire",
+          "options": [
+            "budgétaire",
+            "familiale",
+            "sportive",
+            "artistique"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 2,
+          "answer": "ressource",
+          "options": [
+            "ressource",
+            "problème",
+            "erreur",
+            "hasard"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 3,
+          "answer": "budgétiser",
+          "options": [
+            "budgétiser",
+            "gaspiller",
+            "détruire",
+            "ignorer"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 4,
+          "answer": "financer",
+          "options": [
+            "financer",
+            "abandonner",
+            "détruire",
+            "oublier"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 5,
+          "answer": "rentabilité",
+          "options": [
+            "rentabilité",
+            "pauvreté",
+            "faillite",
+            "dette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 6,
+          "answer": "dépense",
+          "options": [
+            "dépense",
+            "économie",
+            "gain",
+            "profit"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 7,
+          "answer": "lucratifs",
+          "options": [
+            "lucratifs",
+            "dangereux",
+            "inutiles",
+            "coûteux"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 8,
+          "answer": "fructifie",
+          "options": [
+            "fructifie",
+            "dormir",
+            "stagner",
+            "disparaître"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 9,
+          "answer": "fructueuse",
+          "options": [
+            "fructueuse",
+            "désastreuse",
+            "inutile",
+            "stérile"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 10,
+          "answer": "bénéfice",
+          "options": [
+            "bénéfice",
+            "déficit",
+            "perte",
+            "dette"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": 11,
+          "answer": "coût",
+          "options": [
+            "coût",
+            "plaisir",
+            "joie",
+            "bonheur"
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  "quiz": {
+    "title": "Quiz : Gestion financière et budget",
+    "title_fa": "آزمون : مدیریت مالی و بودجه",
+    "displayCount": 16,
+    "questions": [
+      {
+        "type": "mcq",
+        "question": "Le ____ de l'entreprise a été approuvé par le conseil d'administration.",
+        "options": [
+          "budget",
+          "menu",
+          "voyage",
+          "sommeil"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "budget = بودجه"
+      },
+      {
+        "type": "mcq",
+        "question": "Les contraintes ____ limitent nos projets d'expansion.",
+        "options": [
+          "budgétaires",
+          "familiales",
+          "sportives",
+          "artistiques"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "budgétaire = بودجه‌ای"
+      },
+      {
+        "type": "mcq",
+        "question": "Nous devons ____ chaque poste de dépense avec une grande précision.",
+        "options": [
+          "budgétiser",
+          "gaspiller",
+          "détruire",
+          "ignorer"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "budgétiser = بودجه‌بندی کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ de ce projet est assuré par une banque internationale.",
+        "options": [
+          "financement",
+          "gaspillage",
+          "destruction",
+          "échec"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "financement = تأمین مالی"
+      },
+      {
+        "type": "mcq",
+        "question": "L'État a décidé de ____ la recherche médicale cette année.",
+        "options": [
+          "financer",
+          "abandonner",
+          "détruire",
+          "oublier"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "financer = تأمین مالی کردن"
+      },
+      {
+        "type": "mcq",
+        "question": "Son ____ mensuel lui permet de vivre confortablement en ville.",
+        "options": [
+          "revenu",
+          "coût",
+          "perte",
+          "dette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "revenu = درآمد"
+      },
+      {
+        "type": "mcq",
+        "question": "L'eau est une ____ naturelle précieuse qu'il faut protéger.",
+        "options": [
+          "ressource",
+          "problème",
+          "erreur",
+          "hasard"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "ressource = منبع، سرمایه"
+      },
+      {
+        "type": "mcq",
+        "question": "Le ____ public a augmenté de manière inquiétante cette année.",
+        "options": [
+          "déficit",
+          "bénéfice",
+          "succès",
+          "richesse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "déficit = کسری، زیان"
+      },
+      {
+        "type": "mcq",
+        "question": "La ____ de cette usine est en baisse à cause de la concurrence.",
+        "options": [
+          "rentabilité",
+          "pauvreté",
+          "faillite",
+          "dette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "rentabilité = سودآوری"
+      },
+      {
+        "type": "mcq",
+        "question": "Cet investissement n'est pas ____ à court terme.",
+        "options": [
+          "rentable",
+          "dangereux",
+          "inutile",
+          "coûteux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "rentable = سودآور"
+      },
+      {
+        "type": "mcq",
+        "question": "L'entreprise a réalisé un ____ record au dernier trimestre.",
+        "options": [
+          "bénéfice",
+          "déficit",
+          "perte",
+          "dette"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "bénéfice = سود"
+      },
+      {
+        "type": "mcq",
+        "question": "Le commerce en ligne est devenu une activité très ____.",
+        "options": [
+          "lucrative",
+          "dangereuse",
+          "inutile",
+          "coûteuse"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "lucratif = سودآور، پرسود"
+      },
+      {
+        "type": "binary",
+        "question": "Fructifier signifie faire produire des fruits ou des bénéfices à un capital.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - fructifier = به ثمر نشاندن، رشد دادن"
+      },
+      {
+        "type": "binary",
+        "question": "Une collaboration fructueuse est une collaboration qui n'apporte aucun résultat positif.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - fructueuse به معنای پربار و سودمند است."
+      },
+      {
+        "type": "binary",
+        "question": "Le coût de la vie désigne l'ensemble des dépenses nécessaires pour vivre.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 0,
+        "explanation_fa": "Vrai - coût = هزینه"
+      },
+      {
+        "type": "binary",
+        "question": "Une dépense superflue est une dépense absolument nécessaire et indispensable.",
+        "options": [
+          "Vrai",
+          "Faux"
+        ],
+        "correctIndex": 1,
+        "explanation_fa": "Faux - dépense superflue به معنای مخارج غیرضروری و زائد است."
+      }
+    ]
+  }
+}
