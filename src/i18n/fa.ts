@@ -79,6 +79,8 @@ const faMessages: Record<TranslationKey, string> = {
     "grammar.level.B2": "پیشرفته",
     "grammar.level.C1": "مستقل",
     "grammar.level.C2": "تسلط کامل",
+    "grammar.chooseLevel": "سطح دستور زبان خود را انتخاب کنید.",
+    "grammar.levelMeta": "مشاهده درس‌ها",
     "grammar.recommended": "پیشنهاد دینو 🦖",
     "grammar.allLessons": "همه درس‌ها",
     "grammar.exercises": "تمرین‌ها",

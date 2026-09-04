@@ -26,6 +26,7 @@ export {
     renderGrammarLessonNotFoundView,
     renderGrammarLessonView,
     renderGrammarLoadingView,
+    renderGrammarPageView,
     renderGrammarTableView
 };
 export type {
@@ -76,6 +77,115 @@ function getGrammarLevelName(
 }
 
 /**
+ * Renders the Grammar CEFR-level selector using the same interaction model as
+ * the Vocabulary landing page.
+ */
+function renderGrammarPageView(
+    levels: readonly Level[]
+): string {
+    return `
+        ${renderNavbar()}
+
+        <div style="
+            max-width:960px;
+            margin:0 auto;
+            padding:32px 20px 60px;
+        ">
+            <h1 style="
+                font-size:26px;
+                font-weight:700;
+                color:#1a1a1a;
+                margin:0 0 6px;
+            ">
+                ${t("navbar.grammar")}
+            </h1>
+
+            <p style="
+                font-size:15px;
+                color:#777;
+                margin:0 0 30px;
+            ">
+                ${t("grammar.chooseLevel")}
+            </p>
+
+            <div style="
+                display:grid;
+                grid-template-columns:
+                    repeat(auto-fill,minmax(140px,1fr));
+                gap:12px;
+            ">
+                ${levels
+                    .map(
+                        level =>
+                            renderGrammarLevelCardView(
+                                level
+                            )
+                    )
+                    .join("")}
+            </div>
+        </div>
+    `;
+}
+
+/** Renders one accessible Grammar level card. */
+function renderGrammarLevelCardView(
+    level: Level
+): string {
+    return `
+        <button
+            type="button"
+            class="grammar-level-card"
+            data-level="${level}"
+            style="
+                width:100%;
+                background:#fff;
+                border:1px solid #e0e0e0;
+                border-radius:8px;
+                padding:16px;
+                cursor:pointer;
+                text-align:inherit;
+                font:inherit;
+            "
+        >
+            <div style="
+                display:flex;
+                align-items:center;
+                gap:10px;
+                margin-bottom:8px;
+            ">
+                <span aria-hidden="true" style="font-size:22px;">
+                    📚
+                </span>
+
+                <span style="
+                    font-size:16px;
+                    font-weight:600;
+                    color:#1a1a1a;
+                ">
+                    ${level}
+                </span>
+            </div>
+
+            <p style="
+                margin:0 0 4px;
+                font-size:13px;
+                color:#555;
+            ">
+                ${getGrammarLevelName(level)}
+            </p>
+
+            <p style="
+                margin:0;
+                font-size:12px;
+                color:#777;
+            ">
+                ${t("grammar.levelMeta")}
+            </p>
+        </button>
+    `;
+}
+
+/**
  * Renders the grammar loading state.
  *
  * @returns Complete loading-page HTML.
@@ -122,6 +232,14 @@ function renderGrammarCatalogView(
             margin:0 auto;
             padding:24px 16px 50px;
         ">
+            <button
+                id="grammar-level-back"
+                type="button"
+                class="back-btn"
+            >
+                ← ${t("common.back")}
+            </button>
+
             <h1 style="
                 font-size:22px;
                 font-weight:700;

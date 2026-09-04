@@ -79,6 +79,8 @@ const frMessages = {
     "grammar.level.B2": "Avancé",
     "grammar.level.C1": "Autonome",
     "grammar.level.C2": "Maîtrise",
+    "grammar.chooseLevel": "Choisissez votre niveau de grammaire.",
+    "grammar.levelMeta": "Voir les leçons",
     "grammar.recommended": "Recommandé 🦖",
     "grammar.allLessons": "Toutes les leçons",
     "grammar.exercises": "Exercices",
