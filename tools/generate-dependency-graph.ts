@@ -742,6 +742,7 @@ function renderGraph(
         ...[
             "exercises",
             "grammar",
+            "institutional",
             "news",
             "onboarding",
             "polls",

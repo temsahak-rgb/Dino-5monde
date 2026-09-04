@@ -15,6 +15,7 @@ import type {
 export {
     renderNewsDetailView,
     renderNewsHomeCardView,
+    renderNewsJournalView,
     renderNewsNotFoundView
 };
 
@@ -183,6 +184,57 @@ function renderNewsHomeCardView(
 }
 
 /**
+ * Renders the editorial Journal index.
+ *
+ * @param news - Published News index entries.
+ * @returns Complete Journal page HTML.
+ */
+function renderNewsJournalView(
+    news: NewsIndexItem[]
+): string {
+    return `
+        ${renderNavbar()}
+
+        <main class="journal-page">
+            <header class="journal-header">
+                <span
+                    class="journal-header-icon"
+                    aria-hidden="true"
+                >
+                    📰
+                </span>
+
+                <div>
+                    <h1>${t("news.journalTitle")}</h1>
+                    <p>${t("news.journalSubtitle")}</p>
+                </div>
+            </header>
+
+            ${
+                news.length > 0
+                    ? `
+                        <div class="journal-list">
+                            ${news
+                                .map(
+                                    renderNewsHomeCardView
+                                )
+                                .join("")}
+                        </div>
+                    `
+                    : `
+                        <p
+                            class="journal-empty"
+                            role="status"
+                        >
+                            ${t("news.journalEmpty")}
+                        </p>
+                    `
+            }
+        </main>
+    `;
+}
+
+/**
  * Renders one complete News article.
  *
  * Vocabulary and grammar have already been filtered according to the
@@ -224,7 +276,7 @@ function renderNewsDetailView(
                 class="back-btn"
                 style="margin-bottom:20px;"
             >
-                ← ${t("news.backHome")}
+                ← ${t("common.back")}
             </button>
 
             <img

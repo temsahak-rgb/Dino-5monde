@@ -21,7 +21,13 @@ export type AppSection =
     | "home"
     | "grammar"
     | "vocabulary"
-    | "travel";
+    | "travel"
+    | "journal";
+
+export type InstitutionalPage =
+    | "about"
+    | "contact"
+    | "work-with-us";
 
 export type LessonStatus =
     | "not_started"
@@ -591,4 +597,21 @@ export interface SearchVocabWord
     extends VocabWord {
     level: Level;
     packId: string;
+
+    packTitle?: string;
+    packTitleFa?: string;
+}
+
+export interface SearchIndex {
+    version: 1;
+
+    vocab: SearchVocabWord[];
+    grammar: SearchGrammarItem[];
+    news: NewsIndexItem[];
+}
+
+export interface SearchResults {
+    vocab: SearchVocabWord[];
+    grammar: SearchGrammarItem[];
+    news: NewsIndexItem[];
 }

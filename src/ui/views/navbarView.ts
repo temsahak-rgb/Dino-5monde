@@ -8,8 +8,13 @@ export {
 };
 
 /**
- * Renders the shared navigation using the persisted active section.
+ * Shared application navigation.
+ *
+ * Only shipped destinations are interactive. Roadmap entries remain visible
+ * and explicitly unavailable, so the information architecture can grow
+ * without sending learners to empty placeholder screens.
  */
+
 function renderNavbar(): string {
     const currentSection =
         parseAppSection(
@@ -25,153 +30,219 @@ function renderNavbar(): string {
 }
 
 /**
- * Presentation layer for the shared application navigation bar.
+ * Renders the shared application header.
  *
- * This file owns:
- * - navbar HTML
- * - active-section presentation
- * - responsive navbar CSS
- * - localized labels and accessibility titles
+ * Interaction is exposed through data attributes and owned by the router.
  *
- * Routing, mobile-menu interaction and search opening remain in
- * `src/core/router.ts`.
- */
-
-/**
- * Renders the shared application navigation bar.
- *
- * Navigation actions are exposed through data attributes. The router installs
- * one delegated event listener on the persistent application root.
- *
- * @param currentSection - Currently active top-level application section.
- * @returns Complete navbar HTML.
+ * @param currentSection - Current application section.
+ * @returns Complete header HTML.
  */
 function renderNavbarView(
-    currentSection: AppSection
+    currentSection: AppSection | null
 ): string {
     return `
-        <nav
+        <header
             id="main-navbar"
-            style="
-                background:#087F5B;
-                height:48px;
-                display:flex;
-                align-items:center;
-                justify-content:space-between;
-                padding:0 16px;
-                position:sticky;
-                top:0;
-                z-index:1000;
-            "
+            class="navbar"
         >
-            ${renderNavbarBrandView()}
-
-            <button
-                id="menu-toggle"
-                type="button"
-                data-nav-action="toggle-menu"
-                aria-label="Menu"
-                aria-controls="nav-links"
-                aria-expanded="false"
-                style="
-                    display:none;
-                    background:none;
-                    border:none;
-                    color:#fff;
-                    font-size:20px;
-                    cursor:pointer;
-                    padding:4px 8px;
-                    margin:0;
-                    line-height:1;
-                "
+            <nav
+                class="navbar-bar"
+                aria-label="${t("navbar.primaryNavigation")}"
             >
-                ☰
-            </button>
-
-            <div
-                id="nav-links"
-                style="
-                    display:flex;
-                    align-items:center;
-                    gap:0;
-                "
-            >
-                ${renderNavbarSectionItemView(
-                    "grammar",
-                    t("navbar.grammar"),
+                ${renderNavbarBrandView(
                     currentSection
                 )}
 
-                ${renderNavbarSectionItemView(
-                    "vocabulary",
-                    t("navbar.vocabulary"),
-                    currentSection
-                )}
+                <div class="navbar-actions">
+                    ${renderNavbarSearchView()}
 
-                ${renderNavbarSectionItemView(
-                    "travel",
-                    t("navbar.travel"),
-                    currentSection
-                )}
+                    <button
+                        id="menu-toggle"
+                        type="button"
+                        class="navbar-menu-toggle"
+                        data-nav-action="toggle-menu"
+                        aria-controls="nav-links"
+                        aria-expanded="false"
+                    >
+                        <span aria-hidden="true">☰</span>
+                        <span>${t("navbar.menu")}</span>
+                    </button>
+                </div>
 
-                ${renderNavbarSearchView()}
-            </div>
-        </nav>
+                <div
+                    id="nav-links"
+                    class="navbar-menu-panel"
+                    hidden
+                >
+                    ${renderLearningGroupView(
+                        currentSection
+                    )}
 
-        ${renderNavbarResponsiveStyleView()}
+                    ${renderDiscoveryGroupView(
+                        currentSection
+                    )}
+                    ${renderServicesGroupView()}
+                    ${renderAccountGroupView()}
+                </div>
+            </nav>
+        </header>
     `;
 }
 
-/**
- * Renders the application brand displayed at the beginning of the navbar.
- *
- * @returns Brand button HTML.
- */
-function renderNavbarBrandView(): string {
+function renderNavbarBrandView(
+    currentSection: AppSection | null
+): string {
+    const active =
+        currentSection === "home";
+
     return `
         <button
             type="button"
             class="navbar-brand"
             data-nav-section="home"
-            style="
-                background:none;
-                border:none;
-                cursor:pointer;
-                display:flex;
-                align-items:center;
-                gap:6px;
-                padding:0;
-                margin:0;
-                font:inherit;
-            "
+            data-active="${active ? "true" : "false"}"
+            ${active ? 'aria-current="page"' : ""}
         >
-            <span style="font-size:16px;">
-                🦖
-            </span>
-
-            <span style="
-                color:#fff;
-                font-size:14px;
-                font-weight:700;
-            ">
-                ${t("app.title")}
-            </span>
+            <span aria-hidden="true">🦖</span>
+            <span>${t("app.title")}</span>
         </button>
     `;
 }
 
-/**
- * Renders one top-level application section.
- *
- * @param section - Destination application section.
- * @param label - Localized section label.
- * @param currentSection - Current application section.
- * @returns Navigation item HTML.
- */
+function renderLearningGroupView(
+    currentSection: AppSection | null
+): string {
+    return `
+        <section
+            class="navbar-menu-group navbar-menu-group-learning"
+            aria-labelledby="navbar-learning-title"
+        >
+            <h2
+                id="navbar-learning-title"
+                class="navbar-menu-group-title"
+            >
+                ${t("navbar.group.learning")}
+            </h2>
+
+            <p
+                id="navbar-games-title"
+                class="navbar-menu-subtitle"
+            >
+                ${t("navbar.gamesExercises")}
+            </p>
+
+            <div
+                class="navbar-menu-subitems"
+                role="group"
+                aria-labelledby="navbar-games-title"
+            >
+                ${renderNavbarSectionItemView(
+                    "grammar",
+                    t("navbar.grammar"),
+                    currentSection,
+                    "📐"
+                )}
+
+                ${renderNavbarSectionItemView(
+                    "vocabulary",
+                    t("navbar.vocabulary"),
+                    currentSection,
+                    "📖"
+                )}
+            </div>
+
+            ${renderNavbarSectionItemView(
+                "travel",
+                t("navbar.travel"),
+                currentSection,
+                "✈️"
+            )}
+        </section>
+    `;
+}
+
+function renderDiscoveryGroupView(
+    currentSection: AppSection | null
+): string {
+    return `
+        <section
+            class="navbar-menu-group"
+            aria-labelledby="navbar-discovery-title"
+        >
+            <h2
+                id="navbar-discovery-title"
+                class="navbar-menu-group-title"
+            >
+                ${t("navbar.group.discovery")}
+            </h2>
+
+            ${renderPlannedNavbarItemView(
+                t("navbar.music"),
+                "🎵"
+            )}
+
+            ${renderNavbarSectionItemView(
+                "journal",
+                t("navbar.journal"),
+                currentSection,
+                "📰"
+            )}
+        </section>
+    `;
+}
+
+function renderServicesGroupView(): string {
+    return `
+        <section
+            class="navbar-menu-group"
+            aria-labelledby="navbar-services-title"
+        >
+            <h2
+                id="navbar-services-title"
+                class="navbar-menu-group-title"
+            >
+                ${t("navbar.group.services")}
+            </h2>
+
+            ${renderPlannedNavbarItemView(
+                t("navbar.shop"),
+                "🛍️"
+            )}
+        </section>
+    `;
+}
+
+function renderAccountGroupView(): string {
+    return `
+        <section
+            class="navbar-menu-group"
+            aria-labelledby="navbar-account-title"
+        >
+            <h2
+                id="navbar-account-title"
+                class="navbar-menu-group-title"
+            >
+                ${t("navbar.group.account")}
+            </h2>
+
+            ${renderPlannedNavbarItemView(
+                t("navbar.archive"),
+                "🗂️"
+            )}
+
+            ${renderPlannedNavbarItemView(
+                t("navbar.profile"),
+                "👤"
+            )}
+        </section>
+    `;
+}
+
 function renderNavbarSectionItemView(
     section: AppSection,
     label: string,
-    currentSection: AppSection
+    currentSection: AppSection | null,
+    icon: string
 ): string {
     const active =
         currentSection === section;
@@ -179,122 +250,64 @@ function renderNavbarSectionItemView(
     return `
         <button
             type="button"
-            class="navbar-section-item"
+            class="navbar-menu-item"
             data-nav-section="${section}"
             data-active="${active ? "true" : "false"}"
             ${active ? 'aria-current="page"' : ""}
-            style="
-                background:none;
-                border:none;
-                border-bottom:2px solid ${
-                    active
-                        ? "#fff"
-                        : "transparent"
-                };
-                color:${
-                    active
-                        ? "#fff"
-                        : "rgba(255,255,255,0.7)"
-                };
-                font-size:13px;
-                font-weight:${
-                    active
-                        ? "700"
-                        : "500"
-                };
-                cursor:pointer;
-                padding:0 12px;
-                line-height:48px;
-                margin:0;
-            "
         >
-            ${label}
+            <span
+                class="navbar-menu-item-icon"
+                aria-hidden="true"
+            >
+                ${icon}
+            </span>
+
+            <span>${label}</span>
         </button>
     `;
 }
 
-/**
- * Renders the global search action.
- *
- * @returns Search button HTML.
- */
+function renderPlannedNavbarItemView(
+    label: string,
+    icon: string
+): string {
+    return `
+        <button
+            type="button"
+            class="navbar-menu-item navbar-menu-item-planned"
+            data-nav-status="planned"
+            aria-disabled="true"
+            disabled
+            title="${t("navbar.unavailable")}"
+        >
+            <span
+                class="navbar-menu-item-icon"
+                aria-hidden="true"
+            >
+                ${icon}
+            </span>
+
+            <span class="navbar-menu-item-label">
+                ${label}
+            </span>
+
+            <span class="navbar-menu-item-badge">
+                ${t("navbar.soon")}
+            </span>
+        </button>
+    `;
+}
+
 function renderNavbarSearchView(): string {
     return `
         <button
             type="button"
-            class="navbar-icon-action"
+            class="navbar-search"
             data-nav-action="search"
             title="${t("navbar.search")}"
             aria-label="${t("navbar.search")}"
-            style="
-                background:none;
-                border:none;
-                color:#fff;
-                font-size:16px;
-                cursor:pointer;
-                padding:0 10px;
-                margin:0;
-                line-height:48px;
-            "
         >
-            🔍
+            <span aria-hidden="true">🔍</span>
         </button>
-    `;
-}
-
-/**
- * Renders the temporary responsive CSS required by the classic-script navbar.
- *
- * This can later move to `src/styles/style.css` once the HTML extraction pass
- * is complete.
- *
- * @returns Responsive navbar style block.
- */
-function renderNavbarResponsiveStyleView(): string {
-    return `
-        <style>
-            .navbar-section-item:hover,
-            .navbar-icon-action:hover,
-            .navbar-brand:hover {
-                color: #fff !important;
-                opacity: 0.8;
-            }
-
-            @media (max-width: 768px) {
-                #menu-toggle {
-                    display: block !important;
-                }
-
-                #nav-links {
-                    display: none !important;
-                    position: absolute;
-                    top: 48px;
-                    left: 0;
-                    right: 0;
-                    background: #087F5B;
-                    flex-direction: column;
-                    padding: 4px 0;
-                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-                }
-
-                #nav-links.open {
-                    display: flex !important;
-                }
-
-                #nav-links button {
-                    width: 100%;
-                    text-align: left;
-                    padding: 12px 16px !important;
-                    line-height: 1.4 !important;
-                    border-bottom:
-                        1px solid rgba(255, 255, 255, 0.1) !important;
-                    border-left: none !important;
-                }
-
-                .navbar-brand {
-                    width: auto !important;
-                }
-            }
-        </style>
     `;
 }

@@ -168,6 +168,17 @@ function setI18nLanguage(
     );
 
     applyDocumentLanguage(language);
+
+    window.dispatchEvent(
+        new CustomEvent(
+            "dino:languagechange",
+            {
+                detail: {
+                    language
+                }
+            }
+        )
+    );
 }
 
 /**
