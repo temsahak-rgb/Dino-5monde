@@ -529,7 +529,7 @@ jscpd             → فقط گزارش
 
 تنظیم Branch protection یا Ruleset در GitHub موضوعی جدا از کد مخزن است.
 
-Workflow اختصاصی **Dependency graph** فرمان `npm run graph:dependencies` را اجرا و نتیجه را با `docs/dependency-graph.md` مقایسه می‌کند. تغییر Import بدون تولید دوباره گراف، این Job را ناموفق می‌کند.
+Workflow اختصاصی **Dependency graph** به‌صورت دستی اجرا می‌شود، فرمان `npm run graph:dependencies` را اجرا می‌کند و در صورت تغییر فقط `docs/dependency-graph.md` را روی Branch انتخاب‌شده Commit می‌کند. Commit دارای `[skip ci]` نه کنترل‌های برنامه را دوباره اجرا می‌کند و نه Deployment را.
 Workflow اختصاصی **Corpus quality** فرمان `npm run test:data` را اجرا می‌کند، خطاهای خوانا را به تفکیک فایل و فیلد منتشر می‌کند و یک گزارش ماندگار را در Pull Request به‌روز نگه می‌دارد.
 Workflow اختصاصی **Browser E2E** فقط Chromium را نصب می‌کند، Build محلی را اجرا می‌کند و در صورت Regression راه‌اندازی یا i18n، CI را ناموفق می‌کند.
 
