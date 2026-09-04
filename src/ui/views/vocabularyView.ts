@@ -9,9 +9,9 @@ import type {
     StoryDifficulty,
     VocabPack,
     VocabPackIndex,
-    VocabStory,
     VocabStoryBlank,
     VocabStoryQuestion,
+    VocabStoryWithTitle,
     VocabWord
 } from "../../types/global.js";
 
@@ -1063,7 +1063,7 @@ function renderVocabResultView(
  */
 function renderVocabStoryHeaderView(
     pack: VocabPack,
-    story: VocabStory,
+    story: VocabStoryWithTitle,
     difficulty: StoryDifficulty
 ): string {
     const simple =
@@ -1171,7 +1171,7 @@ function renderVocabStoryHeaderView(
  */
 function renderLegacyVocabStoryView(
     pack: VocabPack,
-    story: VocabStory,
+    story: VocabStoryWithTitle,
     difficulty: StoryDifficulty
 ): string {
     return `
@@ -1387,7 +1387,7 @@ function renderVocabStoryQuestionsView(
  */
 function renderBlankVocabStoryView(
     pack: VocabPack,
-    story: VocabStory,
+    story: VocabStoryWithTitle,
     difficulty: StoryDifficulty,
     blanks: VocabStoryBlank[]
 ): string {

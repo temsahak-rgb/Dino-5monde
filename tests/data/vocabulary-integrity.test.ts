@@ -174,11 +174,20 @@ function assertVocabQuiz(
 
 function assertStory(
     story: VocabStory,
+    pack: VocabPack,
     context: string
 ): void {
     assertOptionalNonEmptyString(
         story.title,
         `${context}.title`
+    );
+
+    assertNonEmptyString(
+        story.title
+        || pack.title
+        || pack.theme
+        || pack.id,
+        `${context}.effective title`
     );
 
     if (
@@ -558,6 +567,7 @@ test(
 
                         assertStory(
                             story,
+                            pack,
                             `${repositoryPath(packPath)}.stories.${storyKey}`
                         );
                     }

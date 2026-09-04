@@ -409,7 +409,7 @@ export interface VocabStoryQuestion {
 }
 
 export interface VocabStory {
-    title: string;
+    title?: string;
     title_fa?: string;
 
     text?: string;
@@ -422,6 +422,11 @@ export interface VocabStory {
     keyWords?: string[];
 
     questions?: VocabStoryQuestion[];
+}
+
+export interface VocabStoryWithTitle
+    extends VocabStory {
+    title: string;
 }
 
 export interface VocabStories {

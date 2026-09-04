@@ -11,6 +11,7 @@ import type {
     VocabPackIndex,
     VocabStory,
     VocabStoryBlank,
+    VocabStoryWithTitle,
     VocabWeakMap,
     VocabWord
 } from "../../types/global.js";
@@ -33,6 +34,7 @@ import {
     renderVocabResultView,
     renderVocabularyPageView
 } from "../../ui/views/vocabularyView.js";
+import { prepareVocabStory } from "./vocabularyEngine.js";
 
 export {
     showVocabPack,
@@ -792,13 +794,19 @@ function startStory(
         return;
     }
 
+    const preparedStory =
+        prepareVocabStory(
+            pack,
+            story
+        );
+
     if (
-        story.text
-        && story.blanks?.length
+        preparedStory.text
+        && preparedStory.blanks?.length
     ) {
         showBlankStory(
             pack,
-            story,
+            preparedStory,
             difficulty
         );
 
@@ -808,7 +816,7 @@ function startStory(
     app.innerHTML =
         renderLegacyVocabStoryView(
             pack,
-            story,
+            preparedStory,
             difficulty
         );
 
@@ -817,7 +825,7 @@ function startStory(
     );
 
     bindLegacyStoryQuestions(
-        story
+        preparedStory
     );
 }
 
@@ -860,7 +868,7 @@ function bindVocabStoryCommonEvents(
  */
 function showBlankStory(
     pack: VocabPack,
-    story: VocabStory,
+    story: VocabStoryWithTitle,
     difficulty: StoryDifficulty
 ): void {
     const sortedBlanks =
