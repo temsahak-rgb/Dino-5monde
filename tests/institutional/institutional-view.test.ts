@@ -108,21 +108,25 @@ test(
                 renderInstitutionalPageView(
                     page
                 );
+            const mainContent =
+                html.match(
+                    /<main class="institutional-page">[\s\S]*<\/main>/
+                )?.[0];
 
-            assert.match(
-                html,
-                /<main class="institutional-page">/
+            assert.ok(
+                mainContent,
+                `${page} must render its institutional content`
             );
             assert.match(
-                html,
+                mainContent,
                 /data-institutional-action="home"/
             );
             assert.match(
-                html,
+                mainContent,
                 /<h1>[^<]+<\/h1>/
             );
             assert.doesNotMatch(
-                html,
+                mainContent,
                 /Bientôt|placeholder|undefined/i
             );
         }

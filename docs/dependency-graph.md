@@ -2,7 +2,7 @@
 
 # Application dependency maps
 
-The application contains 45 reachable modules, 100 runtime imports and 51 type-only imports.
+The application contains 47 reachable modules, 107 runtime imports and 53 type-only imports.
 The generator rejects runtime dependency cycles.
 
 ## Architecture overview
@@ -25,19 +25,19 @@ flowchart LR
     G0 -->|1| G1
     G0 -->|1| G2
     G0 -->|1| G3
-    G0 -->|3| G5
+    G0 -->|4| G5
     G0 -->|1| G9
     G1 -->|1| G2
-    G1 -->|4| G5
+    G1 -->|5| G5
     G1 -->|1| G6
     G1 -->|1| G8
     G4 -->|1| G3
     G4 -->|1| G9
-    G5 -->|3| G2
+    G5 -->|4| G2
     G5 -->|7| G3
     G5 -->|6| G4
-    G5 -->|9| G7
-    G5 -->|9| G8
+    G5 -->|10| G7
+    G5 -->|10| G8
     G5 -->|4| G9
     G6 -->|1| G3
     G6 -->|1| G5
@@ -45,7 +45,7 @@ flowchart LR
     G6 -->|1| G8
     G7 -->|1| G2
     G7 -->|4| G8
-    G7 -->|11| G9
+    G7 -->|12| G9
     G8 -->|1| G9
 ```
 
@@ -66,15 +66,16 @@ flowchart LR
     subgraph D["Direct dependencies"]
         M3["core/placementEngine"]
         M4["features/grammar/grammar"]
-        M5["features/news/news"]
-        M6["features/onboarding/onboarding"]
-        M7["features/polls/polls"]
-        M8["features/search/search"]
-        M9["features/travel/travel"]
-        M10["features/vocabulary/vocabulary"]
-        M11["i18n/i18n"]
-        M12["pages/home"]
-        M13["ui/ui"]
+        M5["features/institutional/institutional"]
+        M6["features/news/news"]
+        M7["features/onboarding/onboarding"]
+        M8["features/polls/polls"]
+        M9["features/search/search"]
+        M10["features/travel/travel"]
+        M11["features/vocabulary/vocabulary"]
+        M12["i18n/i18n"]
+        M13["pages/home"]
+        M14["ui/ui"]
     end
     M0 --> M1
     M0 --> M3
@@ -82,14 +83,16 @@ flowchart LR
     M0 --> M5
     M0 --> M6
     M0 --> M7
-    M0 --> M11
+    M0 --> M8
+    M0 --> M12
     M2 --> M1
     M2 --> M4
-    M2 --> M8
+    M2 --> M6
     M2 --> M9
     M2 --> M10
-    M2 --> M12
+    M2 --> M11
     M2 --> M13
+    M2 --> M14
 ```
 
 </details>
@@ -147,6 +150,30 @@ flowchart LR
     M3 --> M7
     M3 --> M8
     M3 --> M9
+```
+
+</details>
+
+<details>
+<summary>Institutional</summary>
+
+```mermaid
+flowchart LR
+    subgraph S["Selected area"]
+        M0["features/institutional/institutional"]
+        M1["views/institutionalView"]
+    end
+    subgraph D["Direct dependencies"]
+        M2["core/navigation"]
+        M3["i18n/i18n"]
+        M4["ui/ui"]
+        M5["views/navbarView"]
+    end
+    M0 --> M2
+    M0 --> M4
+    M0 --> M1
+    M1 --> M3
+    M1 --> M5
 ```
 
 </details>
@@ -371,5 +398,5 @@ flowchart LR
 ## Enforced invariants
 
 - No runtime dependency cycle.
-- 51 type-only imports are tracked but hidden from diagrams to avoid visual noise.
+- 53 type-only imports are tracked but hidden from diagrams to avoid visual noise.
 - Every module and edge is derived from the imports reachable from `app.ts`.
