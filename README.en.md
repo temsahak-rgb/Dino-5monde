@@ -85,7 +85,7 @@ This keeps the MVP simple, but it means:
 
 ### 📚 Grammar
 
-The Grammar module provides level-based catalogues and structured lessons.
+The Grammar module provides an **A1 to C1** level selector, level-based catalogues and structured lessons.
 
 A lesson can contain:
 
@@ -109,6 +109,7 @@ Activities include:
 - simple stories;
 - more advanced stories;
 - quizzes;
+- pack-powered mini-games: Hangman, Word Search and Crosswords;
 - weak-word tracking;
 - dedicated weak-word review.
 

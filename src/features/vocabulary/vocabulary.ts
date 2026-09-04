@@ -35,6 +35,8 @@ import {
     renderVocabularyPageView
 } from "../../ui/views/vocabularyView.js";
 import { prepareVocabStory } from "./vocabularyEngine.js";
+import { getAvailableVocabularyGames } from "./vocabularyGameEngine.js";
+import { startVocabularyMiniGame } from "./vocabularyGames.js";
 
 export {
     showVocabPack,
@@ -424,13 +426,19 @@ async function showVocabPack(
             || pack.exercise
         );
 
+    const availableGames =
+        getAvailableVocabularyGames(
+            pack.words
+        );
+
     app.innerHTML =
         renderVocabPackView(
             pack,
             weakCount,
             hasSimple,
             hasLiterary,
-            hasQuiz
+            hasQuiz,
+            availableGames
         );
 
     bindVocabPackEvents(
@@ -488,6 +496,20 @@ function bindVocabPackEvents(
 
                     case "exercise":
                         startVocabExercise();
+                        break;
+
+                    case "hangman":
+                    case "word-search":
+                    case "crossword":
+                        startVocabularyMiniGame(
+                            pack,
+                            action,
+                            () =>
+                                showVocabPack(
+                                    pack.level,
+                                    pack.id
+                                )
+                        );
                         break;
                 }
             };

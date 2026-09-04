@@ -2,7 +2,7 @@
 
 # Application dependency maps
 
-The application contains 36 reachable modules, 83 runtime imports and 32 type-only imports.
+The application contains 43 reachable modules, 98 runtime imports and 49 type-only imports.
 The generator rejects runtime dependency cycles.
 
 ## Architecture overview
@@ -35,17 +35,17 @@ flowchart LR
     G4 -->|1| G9
     G5 -->|3| G2
     G5 -->|7| G3
-    G5 -->|3| G4
-    G5 -->|8| G7
-    G5 -->|8| G8
-    G5 -->|3| G9
+    G5 -->|5| G4
+    G5 -->|9| G7
+    G5 -->|9| G8
+    G5 -->|4| G9
     G6 -->|1| G3
     G6 -->|1| G5
     G6 -->|1| G7
     G6 -->|1| G8
     G7 -->|1| G2
     G7 -->|4| G8
-    G7 -->|10| G9
+    G7 -->|11| G9
     G8 -->|1| G9
 ```
 
@@ -289,21 +289,41 @@ flowchart LR
 ```mermaid
 flowchart LR
     subgraph S["Selected area"]
-        M0["features/vocabulary/vocabulary"]
-        M1["features/vocabulary/vocabularyEngine"]
-        M2["views/vocabularyView"]
+        M0["features/vocabulary/games/crosswordEngine"]
+        M1["features/vocabulary/games/gameWordsEngine"]
+        M2["features/vocabulary/games/hangmanEngine"]
+        M3["features/vocabulary/games/wordSearchEngine"]
+        M4["features/vocabulary/vocabulary"]
+        M5["features/vocabulary/vocabularyEngine"]
+        M6["features/vocabulary/vocabularyGameEngine"]
+        M7["features/vocabulary/vocabularyGames"]
+        M8["views/vocabularyView"]
     end
     subgraph D["Direct dependencies"]
-        M3["i18n/i18n"]
-        M4["ui/ui"]
-        M5["views/navbarView"]
+        M9["i18n/i18n"]
+        M10["ui/ui"]
+        M11["views/navbarView"]
+        M12["views/vocabularyGamesView"]
     end
     M0 --> M1
-    M0 --> M3
-    M0 --> M4
-    M0 --> M2
-    M2 --> M3
-    M2 --> M5
+    M2 --> M1
+    M3 --> M1
+    M4 --> M5
+    M4 --> M6
+    M4 --> M7
+    M4 --> M9
+    M4 --> M10
+    M4 --> M8
+    M6 --> M0
+    M6 --> M1
+    M6 --> M2
+    M6 --> M3
+    M7 --> M6
+    M7 --> M9
+    M7 --> M10
+    M7 --> M12
+    M8 --> M9
+    M8 --> M11
 ```
 
 </details>
@@ -347,5 +367,5 @@ flowchart LR
 ## Enforced invariants
 
 - No runtime dependency cycle.
-- 32 type-only imports are tracked but hidden from diagrams to avoid visual noise.
+- 49 type-only imports are tracked but hidden from diagrams to avoid visual noise.
 - Every module and edge is derived from the imports reachable from `app.ts`.

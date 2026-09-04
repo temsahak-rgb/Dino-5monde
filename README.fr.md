@@ -85,7 +85,7 @@ Cela garde le MVP simple, mais implique que :
 
 ### 📚 Grammaire
 
-Le module Grammaire propose des catalogues par niveau et des leçons structurées.
+Le module Grammaire propose un sélecteur de niveaux **A1 à C1**, des catalogues par niveau et des leçons structurées.
 
 Une leçon peut contenir :
 
@@ -109,6 +109,7 @@ Les activités incluent notamment :
 - histoires simples ;
 - histoires plus avancées ;
 - quiz ;
+- mini-jeux construits depuis les mots du pack : Pendu, Grille de lettres et Mots croisés ;
 - mémorisation des mots difficiles ;
 - révision spécifique des mots faibles.
 

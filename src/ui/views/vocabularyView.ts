@@ -5,6 +5,9 @@ import {
     t
 } from "../../i18n/i18n.js";
 import type {
+    VocabularyGameKind
+} from "../../features/vocabulary/vocabularyGameEngine.js";
+import type {
     Level,
     StoryDifficulty,
     VocabPack,
@@ -371,6 +374,7 @@ function renderVocabPackUnavailableView(): string {
  * @param hasSimple - Whether a simple story exists.
  * @param hasLiterary - Whether a literary story exists.
  * @param hasQuiz - Whether an exercise or quiz exists.
+ * @param availableGames - Mini-games supported by this pack's words.
  * @returns Complete pack page HTML.
  */
 function renderVocabPackView(
@@ -378,7 +382,8 @@ function renderVocabPackView(
     weakCount: number,
     hasSimple: boolean,
     hasLiterary: boolean,
-    hasQuiz: boolean
+    hasQuiz: boolean,
+    availableGames: readonly VocabularyGameKind[]
 ): string {
     const title =
         getVocabPackTitleView(
@@ -453,6 +458,36 @@ function renderVocabPackView(
                     "flashcards"
                 )}
 
+                ${availableGames.includes("hangman")
+                    ? renderVocabActivityCardView(
+                        "🦖",
+                        t("vocab.game.hangman"),
+                        t("vocab.game.hangmanMeta"),
+                        "hangman"
+                    )
+                    : ""
+                }
+
+                ${availableGames.includes("word-search")
+                    ? renderVocabActivityCardView(
+                        "🔎",
+                        t("vocab.game.wordSearch"),
+                        t("vocab.game.wordSearchMeta"),
+                        "word-search"
+                    )
+                    : ""
+                }
+
+                ${availableGames.includes("crossword")
+                    ? renderVocabActivityCardView(
+                        "✏️",
+                        t("vocab.game.crossword"),
+                        t("vocab.game.crosswordMeta"),
+                        "crossword"
+                    )
+                    : ""
+                }
+
                 ${
                     hasSimple
                         ? renderVocabActivityCardView(
@@ -520,7 +555,11 @@ function renderVocabActivityCardView(
     icon: string,
     title: string,
     meta: string,
-    action: "flashcards" | "story" | "exercise",
+    action:
+        | "flashcards"
+        | "story"
+        | "exercise"
+        | VocabularyGameKind,
     difficulty?: StoryDifficulty,
     reviewMode = false
 ): string {
