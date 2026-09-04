@@ -1,0 +1,224 @@
+name: Code quality
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    name: Quality report
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Prepare reports directory
+        run: mkdir -p reports
+
+      # -------------------------------------------------------------------
+      # Blocking quality gates
+      # -------------------------------------------------------------------
+
+      - name: Automated tests
+        id: tests
+        shell: bash
+        run: |
+          set -o pipefail
+          npm test 2>&1 | tee reports/tests.txt
+
+      - name: TypeScript typecheck
+        id: typecheck
+        if: always()
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run typecheck 2>&1 | tee reports/typecheck.txt
+
+      - name: Production build
+        id: build
+        if: always()
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run build 2>&1 | tee reports/build.txt
+
+      # -------------------------------------------------------------------
+      # Informative quality analyses
+      # -------------------------------------------------------------------
+
+      - name: Dead code analysis
+        id: knip
+        if: always()
+        shell: bash
+        run: |
+          set +e
+          set -o pipefail
+
+          npm run knip 2>&1 | tee reports/knip.txt
+          STATUS=${PIPESTATUS[0]}
+
+          echo "status=$STATUS" >> "$GITHUB_OUTPUT"
+
+          exit 0
+
+      - name: Duplication analysis
+        id: duplication
+        if: always()
+        shell: bash
+        run: |
+          set +e
+          set -o pipefail
+
+          npm run duplication 2>&1 | tee reports/duplication.txt
+          STATUS=${PIPESTATUS[0]}
+
+          echo "status=$STATUS" >> "$GITHUB_OUTPUT"
+
+          exit 0
+
+      # -------------------------------------------------------------------
+      # Human-readable report
+      # -------------------------------------------------------------------
+
+      - name: Build quality summary
+        if: always()
+        shell: bash
+        env:
+          TEST_OUTCOME: ${{ steps.tests.outcome }}
+          TYPECHECK_OUTCOME: ${{ steps.typecheck.outcome }}
+          BUILD_OUTCOME: ${{ steps.build.outcome }}
+          KNIP_STATUS: ${{ steps.knip.outputs.status }}
+          DUPLICATION_STATUS: ${{ steps.duplication.outputs.status }}
+        run: |
+          blocking_status_label() {
+            case "$1" in
+              success)
+                echo "✅ OK"
+                ;;
+              failure)
+                echo "❌ Échec bloquant"
+                ;;
+              cancelled)
+                echo "⛔ Annulé"
+                ;;
+              skipped)
+                echo "⏭️ Ignoré"
+                ;;
+              *)
+                echo "⚠️ $1"
+                ;;
+            esac
+          }
+
+          informative_status_label() {
+            if [ "$1" = "0" ]; then
+              echo "✅ OK"
+            elif [ -z "$1" ]; then
+              echo "⏭️ Non exécuté"
+            else
+              echo "⚠️ À examiner"
+            fi
+          }
+
+          append_report() {
+            local title="$1"
+            local file="$2"
+            local lines="$3"
+
+            echo "## $title"
+            echo
+
+            if [ -f "$file" ]; then
+              echo '```text'
+              sed -n "1,${lines}p" "$file"
+              echo '```'
+            else
+              echo "_No report produced._"
+            fi
+
+            echo
+          }
+
+          {
+            echo "# Code quality report"
+            echo
+            echo "Tests, TypeScript typecheck and production build are blocking quality gates."
+            echo
+            echo "The automated test suite includes the architecture regression guards."
+            echo
+            echo "Knip and duplication analyses remain informative."
+            echo
+
+            echo "| Analysis | Policy | Result |"
+            echo "| --- | --- | --- |"
+            echo "| Automated tests | Blocking | $(blocking_status_label "$TEST_OUTCOME") |"
+            echo "| TypeScript typecheck | Blocking | $(blocking_status_label "$TYPECHECK_OUTCOME") |"
+            echo "| Production build | Blocking | $(blocking_status_label "$BUILD_OUTCOME") |"
+            echo "| Dead code / Knip | Informative | $(informative_status_label "$KNIP_STATUS") |"
+            echo "| Duplication | Informative | $(informative_status_label "$DUPLICATION_STATUS") |"
+            echo
+
+            append_report \
+              "Automated tests" \
+              reports/tests.txt \
+              400
+
+            append_report \
+              "TypeScript typecheck" \
+              reports/typecheck.txt \
+              300
+
+            append_report \
+              "Production build" \
+              reports/build.txt \
+              200
+
+            append_report \
+              "Knip" \
+              reports/knip.txt \
+              300
+
+            append_report \
+              "Duplication" \
+              reports/duplication.txt \
+              300
+
+            echo "---"
+            echo
+            echo "Full reports are available in the \`quality-reports\` artifact."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # -------------------------------------------------------------------
+      # Artifacts
+      # -------------------------------------------------------------------
+
+      - name: Upload full quality reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quality-reports
+          path: reports/
+          retention-days: 14
+          if-no-files-found: warn
+
+      - name: Upload production build
+        if: always() && steps.build.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+          retention-days: 7

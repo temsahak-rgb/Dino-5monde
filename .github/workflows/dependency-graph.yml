@@ -1,0 +1,49 @@
+name: Dependency graph
+
+on:
+  push:
+    paths:
+      - "app.ts"
+      - "src/**/*.ts"
+      - "tools/generate-dependency-graph.ts"
+      - "docs/dependency-graph.md"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/dependency-graph.yml"
+  pull_request:
+    paths:
+      - "app.ts"
+      - "src/**/*.ts"
+      - "tools/generate-dependency-graph.ts"
+      - "docs/dependency-graph.md"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/dependency-graph.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dependency-graph:
+    name: Generate dependency graph
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate graph from TypeScript imports
+        run: npm run graph:dependencies
+
+      - name: Verify committed graph is current
+        run: git diff --exit-code -- docs/dependency-graph.md

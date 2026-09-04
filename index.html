@@ -1,43 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Français avec Dino</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="app"></div>
-  
-<script>
-window.onerror = function(msg, url, line) {
-    document.body.innerHTML = '<div style="padding:30px;font-family:monospace;direction:ltr;background:#fff3cd;color:#856404;border:2px solid #ffc107;border-radius:8px;margin:20px;">' +
-        '<h3>❌ خطا در خط ' + line + ':</h3>' +
-        '<p style="word-break:break-all;">' + msg + '</p>' +
-        '<p style="font-size:12px;">فایل: ' + url + '</p>' +
-        '</div>';
-    return true;
-};
-</script>
-  
-  <script src="placementEngine.js"></script>
-  <script src="grammarEngine.js"></script>
-  <script src="pathEngine.js"></script>
-  <script src="lessonEngine.js"></script>
-  <script src="exerciseEngine.js"></script>
-  <script src="progressEngine.js"></script>
-  <script src="vocabulary.js"></script>
-  <script src="grammar.js"></script>
-  <script src="onboarding.js"></script>
-  <script src="polls.js?v=64"></script>
-  <script src="travel.js?v=65"></script>
-  <script src="home.js"></script>
-  <script src="misc.js"></script>
-  <script src="paths.js"></script>
-  <script src="ui.js"></script>
-  <script src="router.js"></script>
-  <script src="search.js?v=62"></script> 
-  <script src="app.js?v=50"></script>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
+    <title>Français avec Dino</title>
+
+    <link
+        rel="stylesheet"
+        href="src/styles/style.css"
+    >
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script type="module" src="app.js"></script>
 </body>
 </html>
