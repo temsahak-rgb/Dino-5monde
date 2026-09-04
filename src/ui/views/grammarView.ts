@@ -16,7 +16,6 @@ import type {
     Level
 } from "../../types/global.js";
 import {
-    getLanguage,
     renderMarkdown,
     sectionHeader
 } from "../ui.js";
@@ -283,9 +282,7 @@ function renderRecommendedGrammarView(
     return `
         <div style="margin-bottom:35px;">
             ${sectionHeader(
-                t("grammar.recommended"),
-                "",
-                getLanguage()
+                t("grammar.recommended")
             )}
 
             <div
@@ -323,9 +320,7 @@ function renderAllGrammarLessonsView(
     return `
         <div>
             ${sectionHeader(
-                t("grammar.allLessons"),
-                "",
-                getLanguage()
+                t("grammar.allLessons")
             )}
 
             <div

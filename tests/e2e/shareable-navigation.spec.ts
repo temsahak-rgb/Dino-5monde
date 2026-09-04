@@ -57,6 +57,58 @@ test.describe(
         );
 
         test(
+            "exposes real home links and navigates without a reload",
+            async ({ page }) => {
+                await seedCompletedOnboarding(page);
+                await page.goto("/?view=home");
+
+                const articleLink = page.locator(
+                    "a.news-home-card"
+                ).first();
+                await expect(articleLink).toHaveAttribute(
+                    "href",
+                    "?view=journal&article=2026-w34-azadi-tower"
+                );
+                await articleLink.click();
+                await expect(page).toHaveURL(
+                    /\?view=journal&article=2026-w34-azadi-tower$/
+                );
+
+                await page.goBack();
+                const sectionLink = page.getByRole(
+                    "link",
+                    { name: /Actualités & conseils/ }
+                ).first();
+                await expect(sectionLink).toHaveAttribute(
+                    "href",
+                    "?view=journal"
+                );
+
+                const expectedLinks = [
+                    ["grammar", "?view=grammar"],
+                    ["vocabulary", "?view=vocabulary"],
+                    ["travel", "?view=travel"],
+                    ["journal", "?view=journal"]
+                ] as const;
+
+                for (const [highlight, href] of expectedLinks) {
+                    await expect(
+                        page.locator(
+                            `[data-home-highlight="${highlight}"]`
+                        )
+                    ).toHaveAttribute("href", href);
+                }
+
+                await page.locator(
+                    '[data-home-highlight="grammar"]'
+                ).click();
+                await expect(page).toHaveURL(
+                    /\?view=grammar$/
+                );
+            }
+        );
+
+        test(
             "does not duplicate the active destination in browser history",
             async ({ page }) => {
                 await seedCompletedOnboarding(page);

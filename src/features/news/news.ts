@@ -1,7 +1,8 @@
 import { getPlacementResult } from "../../core/placementEngine.js";
 import {
     navigateBack,
-    navigateToRoute
+    navigateToRoute,
+    shouldHandleAppLink
 } from "../../core/navigation.js";
 import type {
     Level,
@@ -391,7 +392,7 @@ function bindNewsDelegatedEvents(): void {
             }
 
             const card =
-                target.closest<HTMLButtonElement>(
+                target.closest<HTMLAnchorElement>(
                     ".news-home-card"
                 );
 
@@ -401,6 +402,12 @@ function bindNewsDelegatedEvents(): void {
             ) {
                 return;
             }
+
+            if (!shouldHandleAppLink(event)) {
+                return;
+            }
+
+            event.preventDefault();
 
             const newsId =
                 card.dataset.newsId;

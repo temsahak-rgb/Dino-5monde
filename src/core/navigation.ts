@@ -105,13 +105,28 @@ function parseAppSection(
     }
 }
 
+/** Returns whether a real app link should use client-side navigation. */
+function shouldHandleAppLink(
+    event: MouseEvent
+): boolean {
+    return (
+        !event.defaultPrevented
+        && event.button === 0
+        && !event.altKey
+        && !event.ctrlKey
+        && !event.metaKey
+        && !event.shiftKey
+    );
+}
+
 export {
     navigateBack,
     navigateToRoute,
     navigateToSection,
     parseAppSection,
     registerNavigationHandlers,
-    restoreRequestedRoute
+    restoreRequestedRoute,
+    shouldHandleAppLink
 };
 
 export type {

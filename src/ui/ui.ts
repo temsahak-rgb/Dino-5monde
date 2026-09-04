@@ -1,12 +1,8 @@
-import {
-    getI18nLanguage,
-    t
-} from "../i18n/i18n.js";
-import type { Language } from "../types/global.js";
+import { t } from "../i18n/i18n.js";
+import type { AppSection } from "../types/global.js";
 
 export {
     app,
-    getLanguage,
     getRequiredElement,
     queryElements,
     renderMarkdown,
@@ -36,18 +32,6 @@ if (!appElement) {
 
 const app: HTMLElement =
     appElement;
-
-/**
- * Returns the currently selected interface language.
- *
- * Kept as a compatibility facade while existing application code still calls
- * `getLanguage()`. The canonical language source is the i18n runtime.
- *
- * @returns Active interface language.
- */
-function getLanguage(): Language {
-    return getI18nLanguage();
-}
 
 /**
  * Returns a required DOM element and fails fast when the expected element is
@@ -181,19 +165,29 @@ function renderMarkdown(
  * This is the only presentation helper temporarily retained in `ui.ts`
  * because existing Home and Grammar views already depend on it.
  *
- * The historical `lang` argument is retained to avoid forcing another change
- * in those views during this step.
- *
  * @param title - Localized section title.
- * @param moreOnclick - Legacy optional action expression.
- * @param _lang - Deprecated compatibility argument.
+ * @param options - Optional real-link destination for the title and CTA.
  * @returns Section-header HTML.
  */
 function sectionHeader(
     title: string,
-    moreOnclick: string,
-    _lang: Language
+    options: Readonly<{
+        destination?: AppSection;
+    }> = {}
 ): string {
+    const destination = options.destination;
+    const heading = destination
+        ? `
+            <a
+                href="?view=${destination}"
+                data-nav-section="${destination}"
+                class="section-heading-link"
+            >
+                ${title}
+            </a>
+        `
+        : title;
+
     return `
         <div style="
             display:flex;
@@ -209,27 +203,19 @@ function sectionHeader(
                 font-weight:700;
                 color:#1a1a1a;
             ">
-                ${title}
+                ${heading}
             </h2>
 
             ${
-                moreOnclick
+                destination
                     ? `
-                        <button
-                            type="button"
-                            data-section-action="${moreOnclick}"
-                            style="
-                                background:none;
-                                border:none;
-                                padding:0;
-                                font-size:14px;
-                                color:#087F5B;
-                                cursor:pointer;
-                                font-weight:600;
-                            "
+                        <a
+                            href="?view=${destination}"
+                            data-nav-section="${destination}"
+                            class="section-more-link"
                         >
                             ${t("common.all")}
-                        </button>
+                        </a>
                     `
                     : ""
             }
