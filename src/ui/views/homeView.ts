@@ -1,10 +1,7 @@
 import { renderNavbar } from "./navbarView.js";
 import { t } from "../../i18n/i18n.js";
 import type { Level } from "../../types/global.js";
-import {
-    getLanguage,
-    sectionHeader
-} from "../ui.js";
+import { sectionHeader } from "../ui.js";
 
 export {
     renderHomeView
@@ -98,8 +95,7 @@ function renderHomeHighlights(): string {
         <div style="margin-bottom:45px;">
             ${sectionHeader(
                 t("home.newsAdvice"),
-                "",
-                getLanguage()
+                { destination: "journal" }
             )}
 
             <div style="
@@ -126,13 +122,20 @@ function renderHomeHighlights(): string {
  */
 function renderHomeGrammarCard(): string {
     return `
-        <article style="
+        <a
+            href="?view=grammar"
+            data-nav-section="grammar"
+            data-home-highlight="grammar"
+            class="home-highlight-card"
+            style="
             background:#fff;
             border:1px solid #e0e0e0;
             border-radius:8px;
             overflow:hidden;
             cursor:pointer;
             grid-column:span 2;
+            text-decoration:none;
+            color:inherit;
         ">
             <div style="
                 height:180px;
@@ -179,7 +182,7 @@ function renderHomeGrammarCard(): string {
                     ${t("home.grammarMeta")}
                 </p>
             </div>
-        </article>
+        </a>
     `;
 }
 
@@ -190,12 +193,19 @@ function renderHomeGrammarCard(): string {
  */
 function renderHomeDailyCard(): string {
     return `
-        <article style="
+        <a
+            href="?view=vocabulary"
+            data-nav-section="vocabulary"
+            data-home-highlight="vocabulary"
+            class="home-highlight-card"
+            style="
             background:#fff;
             border:1px solid #e0e0e0;
             border-radius:8px;
             overflow:hidden;
             cursor:pointer;
+            text-decoration:none;
+            color:inherit;
         ">
             <div style="
                 height:120px;
@@ -242,7 +252,7 @@ function renderHomeDailyCard(): string {
                     ${t("home.dailyMeta")}
                 </p>
             </div>
-        </article>
+        </a>
     `;
 }
 
@@ -253,12 +263,19 @@ function renderHomeDailyCard(): string {
  */
 function renderHomeTravelCard(): string {
     return `
-        <article style="
+        <a
+            href="?view=travel"
+            data-nav-section="travel"
+            data-home-highlight="travel"
+            class="home-highlight-card"
+            style="
             background:#fff;
             border:1px solid #e0e0e0;
             border-radius:8px;
             overflow:hidden;
             cursor:pointer;
+            text-decoration:none;
+            color:inherit;
         ">
             <div style="
                 height:120px;
@@ -305,7 +322,7 @@ function renderHomeTravelCard(): string {
                     ${t("home.travelMeta")}
                 </p>
             </div>
-        </article>
+        </a>
     `;
 }
 
@@ -316,12 +333,19 @@ function renderHomeTravelCard(): string {
  */
 function renderHomeTipCard(): string {
     return `
-        <article style="
+        <a
+            href="?view=journal"
+            data-nav-section="journal"
+            data-home-highlight="journal"
+            class="home-highlight-card"
+            style="
             background:#fffbeb;
             border:1px solid #fde68a;
             border-radius:8px;
             overflow:hidden;
             cursor:pointer;
+            text-decoration:none;
+            color:inherit;
         ">
             <div style="
                 height:120px;
@@ -368,6 +392,6 @@ function renderHomeTipCard(): string {
                     ${t("home.tipMeta")}
                 </p>
             </div>
-        </article>
+        </a>
     `;
 }

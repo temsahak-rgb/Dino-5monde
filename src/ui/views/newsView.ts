@@ -51,8 +51,8 @@ function renderNewsHomeCardView(
     );
 
     return `
-        <button
-            type="button"
+        <a
+            href="?view=journal&amp;article=${encodeURIComponent(news.id)}"
             class="news-home-card"
             data-news-id="${news.id}"
             style="
@@ -68,6 +68,8 @@ function renderNewsHomeCardView(
                 cursor:pointer;
                 text-align:inherit;
                 font:inherit;
+                text-decoration:none;
+                color:inherit;
             "
         >
             <div style="
@@ -134,6 +136,7 @@ function renderNewsHomeCardView(
                             font-size:24px;
                             font-weight:700;
                             margin:0 0 8px;
+                            color:#fff;
                         "
                     >
                         ${title}
@@ -148,6 +151,7 @@ function renderNewsHomeCardView(
                                         font-size:15px;
                                         margin:0;
                                         opacity:0.9;
+                                        color:#fff;
                                     "
                                 >
                                     ${subtitle}
@@ -155,13 +159,25 @@ function renderNewsHomeCardView(
                             `
                             : ""
                     }
+
+                    <span style="
+                        display:inline-block;
+                        margin-top:14px;
+                        color:#fff;
+                        font-size:14px;
+                        font-weight:700;
+                        text-decoration:underline;
+                        text-underline-offset:3px;
+                    ">
+                        ${t("news.readMore")}
+                    </span>
                 </div>
             </div>
 
             <div style="
                 padding:15px 25px;
                 display:flex;
-                justify-content:space-between;
+                justify-content:flex-start;
                 align-items:center;
                 border-top:1px solid #f0f0f0;
             ">
@@ -171,16 +187,8 @@ function renderNewsHomeCardView(
                 ">
                     📅 ${news.publishedDate}
                 </span>
-
-                <span style="
-                    font-size:14px;
-                    font-weight:700;
-                    color:#087F5B;
-                ">
-                    ${t("news.readMore")}
-                </span>
             </div>
-        </button>
+        </a>
     `;
 }
 

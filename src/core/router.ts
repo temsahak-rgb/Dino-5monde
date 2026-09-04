@@ -1,6 +1,7 @@
 import {
     parseAppSection,
     registerNavigationHandlers,
+    shouldHandleAppLink,
     type NavigationOptions
 } from "./navigation.js";
 import {
@@ -312,6 +313,16 @@ function bindNavbarDelegatedEvents(): void {
                     sectionButton
                 )
             ) {
+                if (
+                    sectionButton instanceof HTMLAnchorElement
+                ) {
+                    if (!shouldHandleAppLink(event)) {
+                        return;
+                    }
+
+                    event.preventDefault();
+                }
+
                 const section =
                     parseAppSection(
                         sectionButton.dataset.navSection
