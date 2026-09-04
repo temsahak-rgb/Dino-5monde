@@ -1,12 +1,17 @@
 name: Deploy GitHub Pages
 
 on:
-  push:
+  workflow_run:
+    workflows:
+      - Browser E2E
+    types:
+      - completed
     branches:
       - develop
   workflow_dispatch:
 
 permissions:
+  checks: read
   contents: read
   pages: write
   id-token: write
@@ -16,12 +21,112 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  gate:
+    name: Release gate
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.event == 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    outputs:
+      commit_sha: ${{ steps.commit.outputs.sha }}
+
+    steps:
+      - name: Resolve commit to deploy
+        id: commit
+        shell: bash
+        env:
+          WORKFLOW_RUN_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          COMMIT_SHA="${WORKFLOW_RUN_SHA:-$GITHUB_SHA}"
+          echo "sha=$COMMIT_SHA" >> "$GITHUB_OUTPUT"
+
+      - name: Require successful E2E trigger
+        if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion != 'success'
+        shell: bash
+        env:
+          E2E_CONCLUSION: ${{ github.event.workflow_run.conclusion }}
+        run: |
+          echo "::error::Browser E2E ended with: $E2E_CONCLUSION"
+          exit 1
+
+      - name: Await successful CI checks
+        uses: actions/github-script@v8
+        env:
+          COMMIT_SHA: ${{ steps.commit.outputs.sha }}
+          REQUIRE_E2E_CHECK: ${{ github.event_name == 'workflow_dispatch' }}
+        with:
+          script: |
+            const requiredChecks = ['Quality report'];
+            if (process.env.REQUIRE_E2E_CHECK === 'true') {
+              requiredChecks.push('Startup and i18n (Chromium)');
+            }
+
+            const optionalChecks = ['Validate educational corpus'];
+            const attempts = 60;
+            const waitMs = 10_000;
+
+            const latestByName = (checks, name) => checks
+              .filter((check) => check.name === name)
+              .sort((left, right) => Date.parse(right.started_at ?? 0) - Date.parse(left.started_at ?? 0))[0];
+
+            for (let attempt = 1; attempt <= attempts; attempt += 1) {
+              const { data } = await github.rest.checks.listForRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: process.env.COMMIT_SHA,
+                per_page: 100,
+              });
+
+              const required = requiredChecks.map((name) => ({
+                name,
+                check: latestByName(data.check_runs, name),
+              }));
+              const missing = required.filter(({ check }) => !check);
+              const running = required.filter(({ check }) => check && check.status !== 'completed');
+              const failed = required.filter(({ check }) => check?.status === 'completed' && check.conclusion !== 'success');
+
+              const optional = optionalChecks
+                .map((name) => ({ name, check: latestByName(data.check_runs, name) }))
+                .filter(({ check }) => check);
+              const optionalRunning = optional.filter(({ check }) => check.status !== 'completed');
+              const optionalFailed = optional.filter(({ check }) => check.status === 'completed' && check.conclusion !== 'success');
+
+              if (failed.length || optionalFailed.length) {
+                const failures = [...failed, ...optionalFailed]
+                  .map(({ name, check }) => `${name}: ${check.conclusion}`)
+                  .join(', ');
+                core.setFailed(`Deployment blocked by CI — ${failures}`);
+                return;
+              }
+
+              if (!missing.length && !running.length && !optionalRunning.length) {
+                const passed = [...required, ...optional]
+                  .map(({ name }) => name)
+                  .join(', ');
+                core.info(`Deployment unlocked for ${process.env.COMMIT_SHA}: ${passed}`);
+                return;
+              }
+
+              const pending = [
+                ...missing.map(({ name }) => `${name} (not started)`),
+                ...running.map(({ name }) => `${name} (running)`),
+                ...optionalRunning.map(({ name }) => `${name} (running)`),
+              ].join(', ');
+              core.info(`Waiting for CI (${attempt}/${attempts}): ${pending}`);
+              await new Promise((resolve) => setTimeout(resolve, waitMs));
+            }
+
+            core.setFailed(`Timed out waiting for CI checks on ${process.env.COMMIT_SHA}`);
+
   build:
+    needs: gate
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          ref: ${{ needs.gate.outputs.commit_sha }}
 
       - name: Setup Node
         uses: actions/setup-node@v7

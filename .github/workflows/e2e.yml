@@ -5,6 +5,8 @@ on:
     branches:
       - main
       - develop
+    paths-ignore:
+      - docs/dependency-graph.md
   pull_request:
   workflow_dispatch:
 
@@ -30,7 +32,22 @@ jobs:
       - name: Install project dependencies
         run: npm ci
 
-      - name: Install Chromium and system dependencies
+      - name: Resolve Playwright version
+        id: playwright-version
+        shell: bash
+        run: |
+          PLAYWRIGHT_VERSION="$(node -p "require('@playwright/test/package.json').version")"
+          echo "version=$PLAYWRIGHT_VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Restore Playwright browser cache
+        id: playwright-cache
+        uses: actions/cache@v6
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-chromium-${{ steps.playwright-version.outputs.version }}
+
+      - name: Install Chromium and system dependencies on cache miss
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
         run: npx playwright install --with-deps chromium
 
       - name: Run browser end-to-end tests
