@@ -129,6 +129,7 @@ const faMessages: Record<TranslationKey, string> = {
     "news.notFound": "این خبر پیدا نشد.",
 
     "search.title": "جستجو در سایت",
+    "search.close": "بستن جستجو",
     "search.placeholder": "کلمه یا عبارت...",
     "search.minCharacters": "حداقل ۲ حرف تایپ کنید...",
     "search.loading": "در حال جستجو...",

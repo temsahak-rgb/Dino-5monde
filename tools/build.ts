@@ -11,6 +11,10 @@ import { cp, mkdir, rm } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { resolve } from "node:path";
 
+import {
+    writeSearchIndex
+} from "./build-search-index.js";
+
 const require = createRequire(import.meta.url);
 
 const root = resolve(import.meta.dirname, "..");
@@ -102,6 +106,18 @@ async function build(): Promise<void> {
 
     await copyStaticAssets();
 
+    const searchIndex =
+        await writeSearchIndex(
+            root,
+            resolve(
+                dist,
+                "search-index.json"
+            )
+        );
+
+    console.log(
+        `Search index generated: ${searchIndex.vocab.length} vocabulary words, ${searchIndex.grammar.length} grammar lessons, ${searchIndex.news.length} news articles.`
+    );
     console.log("Build completed: dist/");
 }
 

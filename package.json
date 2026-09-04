@@ -10,7 +10,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.tools.json --noEmit",
 
     "test": "tsx --test \"tests/**/*.test.ts\"",
-    "test:app": "tsx --test \"tests/architecture/**/*.test.ts\" \"tests/grammar/**/*.test.ts\" \"tests/tools/**/*.test.ts\" \"tests/vocabulary/**/*.test.ts\"",
+    "test:app": "tsx --test \"tests/architecture/**/*.test.ts\" \"tests/grammar/**/*.test.ts\" \"tests/search/**/*.test.ts\" \"tests/tools/**/*.test.ts\" \"tests/vocabulary/**/*.test.ts\"",
     "test:data": "tsx --test \"tests/data/**/*.test.ts\"",
     "test:architecture": "tsx --test \"tests/architecture/**/*.test.ts\"",
     "corpus:report": "tsx tools/build-corpus-report.ts",

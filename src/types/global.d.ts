@@ -591,4 +591,21 @@ export interface SearchVocabWord
     extends VocabWord {
     level: Level;
     packId: string;
+
+    packTitle?: string;
+    packTitleFa?: string;
+}
+
+export interface SearchIndex {
+    version: 1;
+
+    vocab: SearchVocabWord[];
+    grammar: SearchGrammarItem[];
+    news: NewsIndexItem[];
+}
+
+export interface SearchResults {
+    vocab: SearchVocabWord[];
+    grammar: SearchGrammarItem[];
+    news: NewsIndexItem[];
 }
