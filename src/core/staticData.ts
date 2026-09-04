@@ -22,36 +22,64 @@
  * browser application: they would resolve relative to the active route rather
  * than the deployed application root.
  *
- * Tests and other non-Vite consumers keep a relative URL contract so injected
+ * Tests and other Node consumers keep a relative URL contract so injected
  * fetchers remain deterministic and do not depend on a browser origin.
  */
 
 /**
- * Detects whether the module is currently executed through Vite.
- *
- * `import.meta.env` is injected by Vite but does not exist when the same
- * TypeScript module is executed directly by Node through `tsx`.
+ * Returns the current module URL.
  */
-function hasViteEnvironment():
-    boolean {
-    return (
-        typeof import.meta.env
-        !== "undefined"
+function getModuleUrl():
+    URL {
+    return new URL(
+        import.meta.url
     );
 }
 
 /**
- * Returns whether the current Vite environment is development.
+ * Detects whether this module is executing as a browser-served module.
  *
- * The explicit environment guard is important: accessing
- * `import.meta.env.DEV` directly crashes in Node because `env` is undefined.
+ * Vite development and production deployments use http/https module URLs.
+ * Direct execution through Node/tsx uses a file:// URL.
+ *
+ * Keeping this detection based on standard import.meta.url means this module
+ * does not depend on Vite-specific ImportMeta extensions.
  */
-function isViteDevelopment():
+function hasViteEnvironment():
     boolean {
+    const protocol =
+        getModuleUrl()
+            .protocol;
+
     return (
-        hasViteEnvironment()
-        && import.meta.env.DEV
-            === true
+        protocol === "http:"
+        || protocol === "https:"
+    );
+}
+
+/**
+ * Detects whether import.meta.url still points to the original source module.
+ *
+ * Development:
+ *
+ *   http://localhost:5173/src/core/staticData.ts
+ *
+ * Node tests:
+ *
+ *   file:///repo/src/core/staticData.ts
+ *
+ * Production bundles instead execute from something similar to:
+ *
+ *   https://example.com/Dino-5monde/assets/index-xxx.js
+ */
+function isSourceModule():
+    boolean {
+    const pathname =
+        getModuleUrl()
+            .pathname;
+
+    return pathname.includes(
+        "/src/core/"
     );
 }
 
@@ -85,19 +113,15 @@ function isViteDevelopment():
  *   =>
  *   file:///repo/
  *
- * This also keeps GitHub Pages repository deployments compatible without
- * hard-coding `/Dino-5monde/`.
+ * This keeps repository deployments compatible without hard-coding a
+ * deployment directory such as `/Dino-5monde/`.
  */
 function getApplicationBaseUrl():
     URL {
     const relativeBase =
-        hasViteEnvironment()
-            ? (
-                isViteDevelopment()
-                    ? "../../"
-                    : "../"
-            )
-            : "../../";
+        isSourceModule()
+            ? "../../"
+            : "../";
 
     return new URL(
         relativeBase,
@@ -109,7 +133,7 @@ function getApplicationBaseUrl():
  * Resolves one static application resource independently from the current
  * browser route.
  *
- * Browser / Vite:
+ * Browser:
  *
  * getStaticDataUrl(
  *     "data/placement.json"
@@ -137,8 +161,8 @@ function getStaticDataUrl(
     /*
      * Direct Node execution has no browser deployment root.
      *
-     * Returning a stable relative path also preserves the historical contract
-     * expected by injected test fetchers.
+     * Returning a stable relative path preserves the contract expected by
+     * injected test fetchers.
      */
     if (
         !hasViteEnvironment()
@@ -174,10 +198,8 @@ function getFreshStaticDataUrl(
             .toString();
 
     /*
-     * `new URL("./file.json")` requires an explicit base in Node.
-     *
-     * For the non-Vite relative contract, appending the query parameter
-     * directly keeps the result portable.
+     * Relative Node/test URLs cannot be passed directly to new URL() without
+     * an explicit base.
      */
     if (
         staticUrl.startsWith(
