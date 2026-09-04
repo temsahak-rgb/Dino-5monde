@@ -2,6 +2,9 @@ name: Corpus quality
 
 on:
   push:
+    branches:
+      - main
+      - develop
     paths:
       - "data/**"
       - "tests/data/**"

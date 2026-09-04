@@ -7,6 +7,7 @@ import { pathToFileURL } from "node:url";
 
 export {
     buildCorpusReport,
+    extractCorpusCounts,
     extractCorpusDetails,
     stripAnsi
 };
@@ -21,6 +22,12 @@ interface CliOptions {
     input: string;
     output: string;
     passed: boolean;
+}
+
+interface CorpusCounts {
+    tests: number | null;
+    passed: number | null;
+    failed: number | null;
 }
 
 /** Removes terminal color sequences before text is embedded in Markdown. */
@@ -69,6 +76,37 @@ function extractCorpusDetails(
     return `${details.slice(0, maxLength).trim()}\n\n… report truncated; download the artifact for the complete output.`;
 }
 
+/** Reads test totals from either the local or GitHub Actions TAP reporter. */
+function extractCorpusCounts(
+    output: string
+): CorpusCounts {
+    const clean = stripAnsi(output);
+
+    const readCount = (
+        label: "tests" | "pass" | "fail"
+    ): number | null => {
+        const match = clean.match(
+            new RegExp(
+                `(?:ℹ|#)\\s*${label}\\s+(\\d+)`,
+                "m"
+            )
+        );
+
+        return match
+            ? Number.parseInt(
+                match[1],
+                10
+            )
+            : null;
+    };
+
+    return {
+        tests: readCount("tests"),
+        passed: readCount("pass"),
+        failed: readCount("fail")
+    };
+}
+
 /** Builds the sticky PR comment and GitHub Actions step summary. */
 function buildCorpusReport(
     output: string,
@@ -76,8 +114,8 @@ function buildCorpusReport(
     runUrl?: string
 ): string {
     const result = passed
-        ? "✅ Corpus valide"
-        : "❌ Corpus invalide";
+        ? "✅ Prêt à fusionner"
+        : "❌ Corrections requises";
 
     const execution = runUrl
         ? `[GitHub Actions](${runUrl})`
@@ -92,24 +130,45 @@ function buildCorpusReport(
             "``​`"
         );
 
+    const counts =
+        extractCorpusCounts(output);
+
+    const score =
+        counts.tests !== null
+        && counts.passed !== null
+            ? `${counts.passed}/${counts.tests} réussis`
+            : "Voir le journal";
+
+    const lead = passed
+        ? "🌿 **Tout est propre.** Les contenus pédagogiques sont cohérents et prêts à embarquer."
+        : "🚨 **Quelques fossiles dépassent.** Le corpus a besoin d'une retouche avant fusion.";
+
+    const action = passed
+        ? "### 🎉 Feu vert\n\nAucune anomalie de structure ou de cohérence détectée."
+        : `### 🧭 À corriger\n\n${counts.failed ?? "Des"} test(s) signalent les fichiers et champs à reprendre ci-dessous.`;
+
     return [
         reportMarker,
-        "## Rapport qualité du corpus",
+        "## 🦕 Vigie du corpus",
         "",
-        "| Commande | Résultat | Exécution |",
-        "| --- | --- | --- |",
-        `| \`npm run test:data\` | ${result} | ${execution} |`,
+        `> ${lead}`,
         "",
-        "Les erreurs ci-dessous identifient le fichier et le champ concernés.",
+        "| Contrôle | Statut | Score | Exécution |",
+        "| --- | --- | ---: | --- |",
+        `| \`npm run test:data\` | ${result} | **${score}** | ${execution} |`,
+        "",
+        action,
         "",
         "<details>",
-        `<summary>${passed ? "Détails de la validation" : "Erreurs du corpus"}</summary>`,
+        `<summary>${passed ? "🔎 Voir le journal de validation" : "🧩 Voir les erreurs par fichier et champ"}</summary>`,
         "",
         "```text",
         details || "Aucun détail disponible.",
         "```",
         "",
         "</details>",
+        "",
+        "_🤖 Ce commentaire est mis à jour automatiquement : une PR, un seul rapport, toujours à jour._",
         ""
     ].join(
         "\n"
