@@ -13,6 +13,8 @@ body {
     color: #1a1a1a;
     min-height: 100vh;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
 }
 
 /* =============================== */
@@ -305,7 +307,223 @@ button.navbar-menu-item-planned {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    min-height: 100vh;
+    flex: 1 0 auto;
+}
+
+#site-footer-root {
+    flex: 0 0 auto;
+}
+
+/* =============================== */
+/* Institutional footer and pages */
+/* =============================== */
+.site-footer {
+    border-top: 1px solid #dce8e3;
+    background: #eff8f4;
+    color: #21483b;
+}
+
+.site-footer__inner {
+    width: min(900px, 100%);
+    margin: 0 auto;
+    padding: 26px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.site-footer__brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.site-footer__brand > span {
+    font-size: 28px;
+}
+
+.site-footer__brand strong {
+    display: block;
+    font-size: 14px;
+}
+
+.site-footer__brand p {
+    margin: 2px 0 0;
+    color: #557267;
+    font-size: 12px;
+}
+
+.site-footer__navigation {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px 22px;
+}
+
+.site-footer__navigation a {
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+    color: #245c4a;
+    font-size: 13px;
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.site-footer__navigation a:hover,
+.site-footer__navigation a:focus-visible,
+.site-footer__navigation a[aria-current="page"] {
+    border-color: #087f5b;
+    color: #075c43;
+}
+
+.site-footer__navigation a:focus-visible,
+.institutional-action a:focus-visible {
+    outline: 3px solid #f4b942;
+    outline-offset: 3px;
+}
+
+.institutional-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 34px 20px 64px;
+}
+
+.institutional-page__header {
+    max-width: 720px;
+    margin-bottom: 30px;
+}
+
+.institutional-page__header h1 {
+    margin-bottom: 12px;
+    font-size: clamp(28px, 5vw, 42px);
+}
+
+.institutional-page__header > p:last-child {
+    color: #4e665d;
+    font-size: 17px;
+}
+
+.institutional-page__eyebrow {
+    margin: 0 0 8px;
+    color: #087f5b !important;
+    font-size: 12px !important;
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.institutional-page__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.institutional-card,
+.institutional-page__section,
+.institutional-page__notice,
+.institutional-action {
+    border: 1px solid #dce8e3;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.institutional-card {
+    padding: 22px;
+}
+
+.institutional-card__icon {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 28px;
+}
+
+.institutional-card h2,
+.institutional-page__section h2,
+.institutional-page__notice h2 {
+    font-size: 17px;
+}
+
+.institutional-card p,
+.institutional-page__notice p {
+    margin: 0;
+}
+
+.institutional-page__notice,
+.institutional-page__section {
+    margin-top: 18px;
+    padding: 22px;
+}
+
+.institutional-page__notice {
+    border-color: #cbe4d9;
+    background: #f3faf7;
+}
+
+.institutional-page__list {
+    display: grid;
+    gap: 10px;
+    margin: 12px 0 0;
+    padding-inline-start: 22px;
+    color: #465e55;
+    font-size: 14px;
+}
+
+.institutional-action {
+    margin-top: 18px;
+    padding: 20px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+.institutional-action p {
+    max-width: 570px;
+    margin: 4px 0 0;
+}
+
+.institutional-action a {
+    flex: 0 0 auto;
+    padding: 10px 14px;
+    border-radius: 6px;
+    background: #087f5b;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.institutional-action a:hover {
+    background: #066b4c;
+}
+
+.institutional-page__fine-print {
+    margin-top: 14px;
+    color: #6a7772;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .site-footer__inner,
+    .institutional-action {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .site-footer__navigation {
+        justify-content: flex-start;
+    }
+
+    .institutional-page__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .institutional-action a {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* =============================== */

@@ -24,6 +24,11 @@ export type AppSection =
     | "travel"
     | "journal";
 
+export type InstitutionalPage =
+    | "about"
+    | "contact"
+    | "work-with-us";
+
 export type LessonStatus =
     | "not_started"
     | "in_progress"

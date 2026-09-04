@@ -38,7 +38,7 @@ function renderNavbar(): string {
  * @returns Complete header HTML.
  */
 function renderNavbarView(
-    currentSection: AppSection
+    currentSection: AppSection | null
 ): string {
     return `
         <header
@@ -90,7 +90,7 @@ function renderNavbarView(
 }
 
 function renderNavbarBrandView(
-    currentSection: AppSection
+    currentSection: AppSection | null
 ): string {
     const active =
         currentSection === "home";
@@ -110,7 +110,7 @@ function renderNavbarBrandView(
 }
 
 function renderLearningGroupView(
-    currentSection: AppSection
+    currentSection: AppSection | null
 ): string {
     return `
         <section
@@ -162,7 +162,7 @@ function renderLearningGroupView(
 }
 
 function renderDiscoveryGroupView(
-    currentSection: AppSection
+    currentSection: AppSection | null
 ): string {
     return `
         <section
@@ -241,7 +241,7 @@ function renderAccountGroupView(): string {
 function renderNavbarSectionItemView(
     section: AppSection,
     label: string,
-    currentSection: AppSection,
+    currentSection: AppSection | null,
     icon: string
 ): string {
     const active =

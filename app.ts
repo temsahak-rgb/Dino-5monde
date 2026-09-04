@@ -2,6 +2,7 @@ import { loadPlacementQuestions } from "./src/core/placementEngine.js";
 import { navigateToSection } from "./src/core/navigation.js";
 import { initializeRouter } from "./src/core/router.js";
 import { initializeNews } from "./src/features/news/news.js";
+import { initializeInstitutionalNavigation } from "./src/features/institutional/institutional.js";
 import {
     showLanguage,
     showPath
@@ -115,6 +116,7 @@ async function bootstrap(): Promise<void> {
 }
 
 initializeRouter();
+initializeInstitutionalNavigation();
 initializeNews();
 initializePolls();
 
