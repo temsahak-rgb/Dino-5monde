@@ -1,8 +1,16 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import {
+    StrictMode
+} from "react";
 
-import { App } from "./app/App";
-import "./styles/app.css";
+import {
+    createRoot
+} from "react-dom/client";
+
+import {
+    App
+} from "./app/App.js";
+
+import "./styles/style.css";
 
 const rootElement =
     document.getElementById(
