@@ -742,9 +742,16 @@ test(
             "index.html must load only the React application entry point"
         );
 
+        /*
+         * Attribute order and formatting are intentionally ignored here.
+         *
+         * index.html currently formats the script element across several
+         * lines, which is valid HTML and must not make the architecture test
+         * depend on whitespace.
+         */
         assert.match(
             indexHtml,
-            /<script\s+type=["']module["']\s+src=["']\/src\/main\.tsx["']><\/script>/i,
+            /<script\b(?=[^>]*\btype=["']module["'])(?=[^>]*\bsrc=["']\/src\/main\.tsx["'])[^>]*>\s*<\/script>/i,
             "/src/main.tsx must be loaded as an ES module"
         );
 
