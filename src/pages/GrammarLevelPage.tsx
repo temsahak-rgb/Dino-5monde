@@ -92,14 +92,7 @@ function GrammarLevelPage() {
 
     useEffect(
         () => {
-            /*
-             * Copying the nullable route value into a local constant allows
-             * TypeScript to preserve the narrowing inside the async closure.
-             */
-            const grammarLevel =
-                level;
-
-            if (!grammarLevel) {
+            if (!level) {
                 setLessons(
                     []
                 );
@@ -118,8 +111,10 @@ function GrammarLevelPage() {
             let active =
                 true;
 
-            async function load():
-                Promise<void> {
+            async function load(
+                grammarLevel:
+                    GrammarLevel
+            ): Promise<void> {
                 setLoading(
                     true
                 );
@@ -158,7 +153,9 @@ function GrammarLevelPage() {
                 );
             }
 
-            void load();
+            void load(
+                level
+            );
 
             return () => {
                 active =

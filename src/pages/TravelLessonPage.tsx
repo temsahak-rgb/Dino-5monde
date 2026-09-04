@@ -88,14 +88,7 @@ function TravelLessonPage() {
 
     useEffect(
         () => {
-            /*
-             * Keep the validated route identifier in a local constant so
-             * TypeScript preserves its non-null type inside the async closure.
-             */
-            const routeLessonId =
-                lessonId;
-
-            if (!routeLessonId) {
+            if (!lessonId) {
                 setLesson(
                     null
                 );
@@ -110,8 +103,10 @@ function TravelLessonPage() {
             let active =
                 true;
 
-            async function load():
-                Promise<void> {
+            async function load(
+                routeLessonId:
+                    string
+            ): Promise<void> {
                 setLoading(
                     true
                 );
@@ -138,7 +133,9 @@ function TravelLessonPage() {
                 );
             }
 
-            void load();
+            void load(
+                lessonId
+            );
 
             return () => {
                 active =

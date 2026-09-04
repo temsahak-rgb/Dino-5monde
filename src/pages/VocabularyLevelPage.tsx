@@ -95,14 +95,7 @@ function VocabularyLevelPage() {
 
     useEffect(
         () => {
-            /*
-             * Preserve the validated route value inside the asynchronous
-             * closure.
-             */
-            const vocabularyLevel =
-                level;
-
-            if (!vocabularyLevel) {
+            if (!level) {
                 setPacks(
                     []
                 );
@@ -117,8 +110,10 @@ function VocabularyLevelPage() {
             let active =
                 true;
 
-            async function load():
-                Promise<void> {
+            async function load(
+                vocabularyLevel:
+                    Level
+            ): Promise<void> {
                 setLoading(
                     true
                 );
@@ -141,7 +136,9 @@ function VocabularyLevelPage() {
                 );
             }
 
-            void load();
+            void load(
+                level
+            );
 
             return () => {
                 active =

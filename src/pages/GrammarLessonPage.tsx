@@ -85,7 +85,8 @@ function GrammarLessonPage() {
         setLesson
     ] =
         useState<
-            LessonData | null
+            LessonData
+            | null
         >(
             null
         );
@@ -116,20 +117,9 @@ function GrammarLessonPage() {
 
     useEffect(
         () => {
-            /*
-             * Preserve the validated route values for the asynchronous
-             * operation. TypeScript cannot safely assume component-local
-             * nullable values remain narrowed inside a nested async closure.
-             */
-            const routeLessonId =
-                lessonId;
-
-            const grammarLevel =
-                level;
-
             if (
-                !routeLessonId
-                || !grammarLevel
+                !lessonId
+                || !level
             ) {
                 setLesson(
                     null
@@ -149,8 +139,13 @@ function GrammarLessonPage() {
             let active =
                 true;
 
-            async function load():
-                Promise<void> {
+            async function load(
+                grammarLevel:
+                    GrammarLevel,
+
+                routeLessonId:
+                    string
+            ): Promise<void> {
                 setLoading(
                     true
                 );
@@ -206,7 +201,10 @@ function GrammarLessonPage() {
                 );
             }
 
-            void load();
+            void load(
+                level,
+                lessonId
+            );
 
             return () => {
                 active =

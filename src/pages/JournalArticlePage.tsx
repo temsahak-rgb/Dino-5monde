@@ -120,14 +120,7 @@ function JournalArticlePage() {
 
     useEffect(
         () => {
-            /*
-             * Keep the validated route value in a local constant so its
-             * non-null type is preserved inside the asynchronous closure.
-             */
-            const routeArticleId =
-                articleId;
-
-            if (!routeArticleId) {
+            if (!articleId) {
                 setArticle(
                     null
                 );
@@ -146,8 +139,10 @@ function JournalArticlePage() {
             let active =
                 true;
 
-            async function load():
-                Promise<void> {
+            async function load(
+                routeArticleId:
+                    string
+            ): Promise<void> {
                 setState(
                     "loading"
                 );
@@ -219,7 +214,9 @@ function JournalArticlePage() {
                 }
             }
 
-            void load();
+            void load(
+                articleId
+            );
 
             return () => {
                 active =
