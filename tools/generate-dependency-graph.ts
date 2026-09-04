@@ -108,6 +108,16 @@ function repositoryPath(
     );
 }
 
+/** Makes generated-text comparisons independent from Git's checkout EOLs. */
+function normalizeLineEndings(
+    value: string
+): string {
+    return value.replace(
+        /\r\n/g,
+        "\n"
+    );
+}
+
 async function fileExists(
     filePath: string
 ): Promise<boolean> {
@@ -861,7 +871,8 @@ async function main(): Promise<void> {
             );
 
         if (
-            currentOutput !== output
+            normalizeLineEndings(currentOutput)
+            !== normalizeLineEndings(output)
         ) {
             console.error(
                 "Dependency graph is out of date. Run npm run graph:dependencies."
