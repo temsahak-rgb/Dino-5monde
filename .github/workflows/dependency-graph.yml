@@ -1,27 +1,6 @@
 name: Dependency graph
 
 on:
-  push:
-    branches:
-      - main
-      - develop
-    paths:
-      - "app.ts"
-      - "src/**/*.ts"
-      - "tools/generate-dependency-graph.ts"
-      - "docs/dependency-graph.md"
-      - "package.json"
-      - "package-lock.json"
-      - ".github/workflows/dependency-graph.yml"
-  pull_request:
-    paths:
-      - "app.ts"
-      - "src/**/*.ts"
-      - "tools/generate-dependency-graph.ts"
-      - "docs/dependency-graph.md"
-      - "package.json"
-      - "package-lock.json"
-      - ".github/workflows/dependency-graph.yml"
   workflow_dispatch:
 
 permissions:
