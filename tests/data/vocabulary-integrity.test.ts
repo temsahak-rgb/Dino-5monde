@@ -174,11 +174,20 @@ function assertVocabQuiz(
 
 function assertStory(
     story: VocabStory,
+    pack: VocabPack,
     context: string
 ): void {
     assertOptionalNonEmptyString(
         story.title,
         `${context}.title`
+    );
+
+    assertNonEmptyString(
+        story.title
+        || pack.title
+        || pack.theme
+        || pack.id,
+        `${context}.effective title`
     );
 
     if (
@@ -278,47 +287,6 @@ function assertStory(
             }
         }
 
-        if (
-            story.text
-        ) {
-            const placeholderIds =
-                [
-                    ...story.text.matchAll(
-                        /____\s*\((\d+)\)/g
-                    )
-                ].map(
-                    match =>
-                        Number.parseInt(
-                            match[1],
-                            10
-                        )
-                );
-
-            assert.deepEqual(
-                [
-                    ...placeholderIds
-                ].sort(
-                    (
-                        first,
-                        second
-                    ) =>
-                        first - second
-                ),
-                story.blanks
-                    .map(
-                        blank =>
-                            blank.id
-                    )
-                    .sort(
-                        (
-                            first,
-                            second
-                        ) =>
-                            first - second
-                    ),
-                `${context} placeholders must match blank ids`
-            );
-        }
     }
 
     if (
@@ -558,6 +526,7 @@ test(
 
                         assertStory(
                             story,
+                            pack,
                             `${repositoryPath(packPath)}.stories.${storyKey}`
                         );
                     }

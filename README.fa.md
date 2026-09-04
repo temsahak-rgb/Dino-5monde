@@ -78,7 +78,7 @@ A1 → A2 → B1 → B2 → C1 → C2
 
 ### 📚 دستور زبان
 
-بخش Grammar درس‌ها را بر اساس سطح سازمان‌دهی می‌کند.
+بخش Grammar یک انتخابگر سطح از **A1 تا C1** و درس‌های سازمان‌دهی‌شده بر اساس سطح ارائه می‌کند.
 
 یک درس می‌تواند شامل این موارد باشد:
 
@@ -102,6 +102,7 @@ A1 → A2 → B1 → B2 → C1 → C2
 - داستان ساده؛
 - داستان پیشرفته‌تر؛
 - Quiz؛
+- بازی‌های ساخته‌شده از واژه‌های هر بسته: حدس کلمه، جستجوی کلمات و جدول کلمات متقاطع؛
 - ثبت کلمات دشوار؛
 - مرور اختصاصی کلمات ضعیف.
 
@@ -427,6 +428,7 @@ Generator هر چرخه Dependency اجرایی را رد می‌کند. تست�
 
 ```bash
 npm test
+npm run test:app
 npm run test:data
 npm run test:architecture
 npm run typecheck
@@ -443,6 +445,7 @@ tests/**/*.test.ts
 ```
 
 بنابراین با اضافه کردن تست جدید لازم نیست `package.json` تغییر کند.
+فرمان `npm run test:app` زیرمجموعه مسدودکننده خط کیفیت کد است؛ تست‌های داده عمداً در `npm run test:data` و Workflow اختصاصی خود جدا می‌مانند.
 
 ### تست داده
 
@@ -482,7 +485,7 @@ tests/architecture/
 GitHub Actions در حال حاضر این سیاست را دارد:
 
 ```text
-tests             → شکست آن Job را قرمز می‌کند
+application tests → شکست آن Job را قرمز می‌کند
 TypeScript        → شکست آن Job را قرمز می‌کند
 production build  → شکست آن Job را قرمز می‌کند
 Knip              → فقط گزارش
@@ -492,6 +495,7 @@ jscpd             → فقط گزارش
 تنظیم Branch protection یا Ruleset در GitHub موضوعی جدا از کد مخزن است.
 
 Workflow اختصاصی **Dependency graph** فرمان `npm run graph:dependencies` را اجرا و نتیجه را با `docs/dependency-graph.md` مقایسه می‌کند. تغییر Import بدون تولید دوباره گراف، این Job را ناموفق می‌کند.
+Workflow اختصاصی **Corpus quality** فرمان `npm run test:data` را اجرا می‌کند، خطاهای خوانا را به تفکیک فایل و فیلد منتشر می‌کند و یک گزارش ماندگار را در Pull Request به‌روز نگه می‌دارد.
 
 ---
 

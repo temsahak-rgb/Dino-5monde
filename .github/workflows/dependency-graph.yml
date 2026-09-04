@@ -2,6 +2,9 @@ name: Dependency graph
 
 on:
   push:
+    branches:
+      - main
+      - develop
     paths:
       - "app.ts"
       - "src/**/*.ts"

@@ -2,7 +2,6 @@ import {
     getSection,
     loadLessonWithExercises
 } from "../../core/lessonEngine.js";
-import { getPlacementResult } from "../../core/placementEngine.js";
 import {
     getLessonProgress,
     markSectionCompleted
@@ -17,6 +16,10 @@ import {
     setLessonStatus,
     toggleBookmark
 } from "./grammarEngine.js";
+import {
+    getGrammarLevelFromLessonId,
+    getGrammarLevels
+} from "./grammarLevels.js";
 import { t } from "../../i18n/i18n.js";
 import { showExerciseContent } from "../exercises/exercises.js";
 import type {
@@ -33,6 +36,7 @@ import {
 import {
     type GrammarCatalogCardViewModel,
     renderGrammarCatalogView,
+    renderGrammarPageView,
     renderGrammarLessonContentView,
     renderGrammarLessonNotFoundView,
     renderGrammarLessonView,
@@ -55,10 +59,40 @@ export {
  */
 
 /**
- * Displays the grammar catalog for the learner's current CEFR level.
+ * Displays the Grammar CEFR-level selector.
  */
 async function showGrammarPage(): Promise<void> {
-    const level = getPlacementResult() || "A1";
+    app.innerHTML =
+        renderGrammarPageView(
+            getGrammarLevels()
+        );
+
+    queryElements<HTMLButtonElement>(
+        ".grammar-level-card"
+    ).forEach(
+        button => {
+            button.onclick = () => {
+                const level =
+                    parseGrammarLevel(
+                        button.dataset.level
+                    );
+
+                if (!level) {
+                    return;
+                }
+
+                void showGrammarLevel(
+                    level
+                );
+            };
+        }
+    );
+}
+
+/** Displays the grammar catalog for one selected CEFR level. */
+async function showGrammarLevel(
+    level: Level
+): Promise<void> {
 
     app.innerHTML =
         renderGrammarLoadingView();
@@ -90,6 +124,12 @@ async function showGrammarPage(): Promise<void> {
             allLessonCards,
             recommendedCards
         );
+
+    getRequiredElement<HTMLButtonElement>(
+        "grammar-level-back"
+    ).onclick = () => {
+        void showGrammarPage();
+    };
 
     bindGrammarCatalogEvents();
 }
@@ -148,7 +188,22 @@ async function showGrammarLesson(
     lessonId: string
 ): Promise<void> {
     const level =
-        getPlacementResult() || "A1";
+        getGrammarLevelFromLessonId(
+            lessonId
+        );
+
+    if (!level) {
+        app.innerHTML =
+            renderGrammarLessonNotFoundView();
+
+        getRequiredElement<HTMLButtonElement>(
+            "grammar-error-back"
+        ).onclick = () => {
+            void showGrammarPage();
+        };
+
+        return;
+    }
 
     let lesson: LessonData;
 
@@ -171,7 +226,9 @@ async function showGrammarLesson(
         getRequiredElement<HTMLButtonElement>(
             "grammar-error-back"
         ).onclick = () => {
-            void showGrammarPage();
+            void showGrammarLevel(
+                level
+            );
         };
 
         return;
@@ -203,7 +260,8 @@ async function showGrammarLesson(
         );
 
     bindGrammarLessonEvents(
-        lessonId
+        lessonId,
+        level
     );
 }
 
@@ -213,12 +271,15 @@ async function showGrammarLesson(
  * @param lessonId - Currently displayed lesson identifier.
  */
 function bindGrammarLessonEvents(
-    lessonId: string
+    lessonId: string,
+    level: Level
 ): void {
     getRequiredElement<HTMLButtonElement>(
         "back"
     ).onclick = () => {
-        void showGrammarPage();
+        void showGrammarLevel(
+            level
+        );
     };
 
     const bookmarkButton =
@@ -270,7 +331,17 @@ async function showLessonSection(
     sectionId: string
 ): Promise<void> {
     const level =
-        lessonId.split("-")[0] as Level;
+        getGrammarLevelFromLessonId(
+            lessonId
+        );
+
+    if (!level) {
+        alert(
+            t("grammar.lessonNotFound")
+        );
+
+        return;
+    }
 
     const lessonData =
         await loadLessonWithExercises(
@@ -309,6 +380,23 @@ async function showLessonSection(
                 lessonId
             )
     );
+}
+
+/** Validates a CEFR level received from a Grammar level card. */
+function parseGrammarLevel(
+    value: string | undefined
+): Level | null {
+    switch (value) {
+        case "A1":
+        case "A2":
+        case "B1":
+        case "B2":
+        case "C1":
+            return value;
+
+        default:
+            return null;
+    }
 }
 
 /**

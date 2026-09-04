@@ -85,7 +85,7 @@ This keeps the MVP simple, but it means:
 
 ### 📚 Grammar
 
-The Grammar module provides level-based catalogues and structured lessons.
+The Grammar module provides an **A1 to C1** level selector, level-based catalogues and structured lessons.
 
 A lesson can contain:
 
@@ -109,6 +109,7 @@ Activities include:
 - simple stories;
 - more advanced stories;
 - quizzes;
+- pack-powered mini-games: Hangman, Word Search and Crosswords;
 - weak-word tracking;
 - dedicated weak-word review.
 
@@ -434,6 +435,7 @@ The generator also rejects every runtime dependency cycle. Architecture tests re
 
 ```bash
 npm test
+npm run test:app
 npm run test:data
 npm run test:architecture
 npm run typecheck
@@ -450,6 +452,7 @@ tests/**/*.test.ts
 ```
 
 Adding another test therefore does not require editing `package.json`.
+`npm run test:app` is the blocking code-quality subset; corpus tests are intentionally isolated in `npm run test:data` and their dedicated workflow.
 
 ### Data tests
 
@@ -489,7 +492,7 @@ The architecture is therefore no longer only a written convention: it has an exe
 The code-quality GitHub Actions workflow runs:
 
 ```text
-tests             → blocking for the job
+application tests → blocking for the job
 TypeScript        → blocking for the job
 production build  → blocking for the job
 Knip              → informative
@@ -499,6 +502,7 @@ jscpd             → informative
 A test, typecheck or build regression therefore makes the CI job fail.
 
 The dedicated **Dependency graph** workflow runs `npm run graph:dependencies`, then compares the result with `docs/dependency-graph.md`. Changing an import without regenerating the graph makes this job fail.
+The dedicated **Corpus quality** workflow runs `npm run test:data`, publishes readable file/field errors, and maintains one persistent report comment on pull requests.
 
 GitHub branch/ruleset configuration remains separate from this repository code.
 
