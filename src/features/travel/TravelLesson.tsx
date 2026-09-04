@@ -41,7 +41,9 @@ import {
 } from "./travelEngine.js";
 
 interface TravelLessonProps {
-    lessonId: string;
+    lessonId:
+        string;
+
     lesson:
         TravelLessonData;
 }
@@ -182,7 +184,11 @@ function TravelLesson({
             <BackButton
                 fallback="/travel"
             >
-                ← {t("common.back")}
+                ←
+                {" "}
+                {t(
+                    "common.back"
+                )}
             </BackButton>
 
             <PageHeader
@@ -475,11 +481,12 @@ function TravelSectionCard({
                 "
                 aria-hidden="true"
             >
-                {completed
-                    ? "✅"
-                    : getTravelSectionIcon(
-                        section
-                    )
+                {
+                    completed
+                        ? "✅"
+                        : getTravelSectionIcon(
+                            section
+                        )
                 }
             </span>
 
@@ -678,8 +685,8 @@ function getTravelSectionCountLabel(
 
         case "exercise":
             return (
-                `${count} ${t(
-                    "common.questions"
+                `${count} · ${t(
+                    "travel.type.exercise"
                 )}`
             );
 

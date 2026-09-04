@@ -84,7 +84,9 @@ function GrammarLessonPage() {
         lesson,
         setLesson
     ] =
-        useState<LessonData | null>(
+        useState<
+            LessonData | null
+        >(
             null
         );
 
@@ -92,25 +94,42 @@ function GrammarLessonPage() {
         loading,
         setLoading
     ] =
-        useState(true);
+        useState(
+            true
+        );
 
     const [
         failed,
         setFailed
     ] =
-        useState(false);
+        useState(
+            false
+        );
 
     const [
         retryCount,
         setRetryCount
     ] =
-        useState(0);
+        useState(
+            0
+        );
 
     useEffect(
         () => {
+            /*
+             * Preserve the validated route values for the asynchronous
+             * operation. TypeScript cannot safely assume component-local
+             * nullable values remain narrowed inside a nested async closure.
+             */
+            const routeLessonId =
+                lessonId;
+
+            const grammarLevel =
+                level;
+
             if (
-                !lessonId
-                || !level
+                !routeLessonId
+                || !grammarLevel
             ) {
                 setLesson(
                     null
@@ -142,8 +161,8 @@ function GrammarLessonPage() {
 
                 const loadedLesson =
                     await loadLessonWithExercises(
-                        level,
-                        lessonId
+                        grammarLevel,
+                        routeLessonId
                     );
 
                 if (!active) {
@@ -168,12 +187,12 @@ function GrammarLessonPage() {
 
                 if (
                     getLessonStatus(
-                        lessonId
+                        routeLessonId
                     )
                     === "not_started"
                 ) {
                     setLessonStatus(
-                        lessonId,
+                        routeLessonId,
                         "in_progress"
                     );
                 }
@@ -190,7 +209,8 @@ function GrammarLessonPage() {
             void load();
 
             return () => {
-                active = false;
+                active =
+                    false;
             };
         },
         [
@@ -206,8 +226,12 @@ function GrammarLessonPage() {
     ) {
         return (
             <GrammarLessonError
-                level={null}
-                onRetry={null}
+                level={
+                    null
+                }
+                onRetry={
+                    null
+                }
             />
         );
     }
@@ -252,7 +276,11 @@ function GrammarLessonPage() {
                     `/grammar/${level}`
                 }
             >
-                ← {t("common.back")}
+                ←
+                {" "}
+                {t(
+                    "common.back"
+                )}
             </BackButton>
 
             <GrammarLesson
@@ -272,7 +300,8 @@ function GrammarLessonPage() {
 
 interface GrammarLessonErrorProps {
     level:
-        GrammarLevel | null;
+        GrammarLevel
+        | null;
 
     onRetry:
         (() => void)
@@ -296,7 +325,11 @@ function GrammarLessonError({
                         : "/grammar"
                 }
             >
-                ← {t("common.back")}
+                ←
+                {" "}
+                {t(
+                    "common.back"
+                )}
             </BackButton>
 
             <ErrorState
@@ -328,7 +361,9 @@ function GrammarLessonError({
  * Normalizes the optional route parameter before it reaches Grammar engines.
  */
 function normalizeLessonId(
-    value: string | undefined
+    value:
+        string
+        | undefined
 ): string | null {
     const normalized =
         value?.trim();

@@ -54,7 +54,8 @@ import {
  */
 function VocabularyLevelPage() {
     const {
-        level: levelParameter
+        level:
+            levelParameter
     } = useParams();
 
     const {
@@ -70,7 +71,9 @@ function VocabularyLevelPage() {
         packs,
         setPacks
     ] =
-        useState<VocabPackIndex[]>(
+        useState<
+            VocabPackIndex[]
+        >(
             []
         );
 
@@ -78,17 +81,32 @@ function VocabularyLevelPage() {
         loading,
         setLoading
     ] =
-        useState(true);
+        useState(
+            true
+        );
 
     const [
         retryCount,
         setRetryCount
     ] =
-        useState(0);
+        useState(
+            0
+        );
 
     useEffect(
         () => {
-            if (!level) {
+            /*
+             * Preserve the validated route value inside the asynchronous
+             * closure.
+             */
+            const vocabularyLevel =
+                level;
+
+            if (!vocabularyLevel) {
+                setPacks(
+                    []
+                );
+
                 setLoading(
                     false
                 );
@@ -107,7 +125,7 @@ function VocabularyLevelPage() {
 
                 const loadedPacks =
                     await loadVocabularyIndex(
-                        level
+                        vocabularyLevel
                     );
 
                 if (!active) {
@@ -126,7 +144,8 @@ function VocabularyLevelPage() {
             void load();
 
             return () => {
-                active = false;
+                active =
+                    false;
             };
         },
         [
@@ -141,7 +160,11 @@ function VocabularyLevelPage() {
                 <BackButton
                     fallback="/vocabulary"
                 >
-                    ← {t("common.back")}
+                    ←
+                    {" "}
+                    {t(
+                        "common.back"
+                    )}
                 </BackButton>
 
                 <ErrorState
@@ -179,7 +202,11 @@ function VocabularyLevelPage() {
             <BackButton
                 fallback="/vocabulary"
             >
-                ← {t("common.back")}
+                ←
+                {" "}
+                {t(
+                    "common.back"
+                )}
             </BackButton>
 
             <PageHeader
@@ -248,7 +275,9 @@ function VocabularyLevelPage() {
  * Re-exported only for route-related consumers during the migration.
  */
 function isVocabularyLevel(
-    value: string | undefined
+    value:
+        string
+        | undefined
 ): value is Level {
     return (
         parseVocabularyLevel(

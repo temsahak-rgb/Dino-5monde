@@ -51,7 +51,8 @@ import {
  */
 function GrammarLevelPage() {
     const {
-        level: levelParameter
+        level:
+            levelParameter
     } = useParams();
 
     const {
@@ -67,7 +68,9 @@ function GrammarLevelPage() {
         lessons,
         setLessons
     ] =
-        useState<GrammarLessonIndex[]>(
+        useState<
+            GrammarLessonIndex[]
+        >(
             []
         );
 
@@ -75,32 +78,59 @@ function GrammarLevelPage() {
         loading,
         setLoading
     ] =
-        useState(true);
+        useState(
+            true
+        );
 
     const [
         failed,
         setFailed
     ] =
-        useState(false);
+        useState(
+            false
+        );
 
     useEffect(
         () => {
-            if (!level) {
-                setLoading(false);
+            /*
+             * Copying the nullable route value into a local constant allows
+             * TypeScript to preserve the narrowing inside the async closure.
+             */
+            const grammarLevel =
+                level;
+
+            if (!grammarLevel) {
+                setLessons(
+                    []
+                );
+
+                setFailed(
+                    false
+                );
+
+                setLoading(
+                    false
+                );
 
                 return;
             }
 
-            let active = true;
+            let active =
+                true;
 
             async function load():
                 Promise<void> {
-                setLoading(true);
-                setFailed(false);
+                setLoading(
+                    true
+                );
+
+                setFailed(
+                    false
+                );
 
                 const loaded =
                     await loadGrammar(
-                        level
+                        grammarLevel
                     );
 
                 if (!active) {
@@ -111,7 +141,7 @@ function GrammarLevelPage() {
                     loaded.length > 0
                         ? loaded
                         : getGrammar(
-                            level
+                            grammarLevel
                         );
 
                 setLessons(
@@ -119,16 +149,20 @@ function GrammarLevelPage() {
                 );
 
                 setFailed(
-                    catalog.length === 0
+                    catalog.length
+                    === 0
                 );
 
-                setLoading(false);
+                setLoading(
+                    false
+                );
             }
 
             void load();
 
             return () => {
-                active = false;
+                active =
+                    false;
             };
         },
         [
@@ -155,7 +189,11 @@ function GrammarLevelPage() {
                 <BackButton
                     fallback="/grammar"
                 >
-                    ← {t("common.back")}
+                    ←
+                    {" "}
+                    {t(
+                        "common.back"
+                    )}
                 </BackButton>
 
                 <ErrorState
@@ -194,7 +232,11 @@ function GrammarLevelPage() {
                 <BackButton
                     fallback="/grammar"
                 >
-                    ← {t("common.back")}
+                    ←
+                    {" "}
+                    {t(
+                        "common.back"
+                    )}
                 </BackButton>
 
                 <ErrorState
@@ -209,7 +251,8 @@ function GrammarLevelPage() {
                         )
                     }
                     onRetry={() => {
-                        window.location.reload();
+                        window.location
+                            .reload();
                     }}
                     retryLabel={
                         t(
@@ -226,7 +269,11 @@ function GrammarLevelPage() {
             <BackButton
                 fallback="/grammar"
             >
-                ← {t("common.back")}
+                ←
+                {" "}
+                {t(
+                    "common.back"
+                )}
             </BackButton>
 
             <PageHeader
@@ -250,8 +297,12 @@ function GrammarLevelPage() {
             />
 
             <GrammarCatalog
-                level={level}
-                lessons={lessons}
+                level={
+                    level
+                }
+                lessons={
+                    lessons
+                }
                 recommended={
                     recommended
                 }
@@ -264,7 +315,9 @@ function GrammarLevelPage() {
  * Validates a Grammar CEFR route parameter.
  */
 function parseGrammarLevel(
-    value: string | undefined
+    value:
+        string
+        | undefined
 ): GrammarLevel | null {
     switch (value) {
         case "A1":
@@ -285,19 +338,32 @@ type TranslationFunction =
     >["t"];
 
 function getGrammarLevelLabel(
-    level: GrammarLevel,
-    t: TranslationFunction
+    level:
+        GrammarLevel,
+    t:
+        TranslationFunction
 ): string {
     const keys = {
-        A1: "grammar.level.A1",
-        A2: "grammar.level.A2",
-        B1: "grammar.level.B1",
-        B2: "grammar.level.B2",
-        C1: "grammar.level.C1"
+        A1:
+            "grammar.level.A1",
+
+        A2:
+            "grammar.level.A2",
+
+        B1:
+            "grammar.level.B1",
+
+        B2:
+            "grammar.level.B2",
+
+        C1:
+            "grammar.level.C1"
     } as const;
 
     return t(
-        keys[level]
+        keys[
+            level
+        ]
     );
 }
 

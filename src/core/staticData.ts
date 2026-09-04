@@ -18,10 +18,42 @@
  * /grammar/lesson/A1-G-001
  * /vocabulary/B1/travel
  *
- * Therefore browser-relative URLs such as `./data/...` can no longer be used:
- * they would resolve relative to the active route rather than the deployed
- * application root.
+ * Therefore browser-relative URLs such as `./data/...` cannot be used in the
+ * browser application: they would resolve relative to the active route rather
+ * than the deployed application root.
+ *
+ * Tests and other non-Vite consumers keep a relative URL contract so injected
+ * fetchers remain deterministic and do not depend on a browser origin.
  */
+
+/**
+ * Detects whether the module is currently executed through Vite.
+ *
+ * `import.meta.env` is injected by Vite but does not exist when the same
+ * TypeScript module is executed directly by Node through `tsx`.
+ */
+function hasViteEnvironment():
+    boolean {
+    return (
+        typeof import.meta.env
+        !== "undefined"
+    );
+}
+
+/**
+ * Returns whether the current Vite environment is development.
+ *
+ * The explicit environment guard is important: accessing
+ * `import.meta.env.DEV` directly crashes in Node because `env` is undefined.
+ */
+function isViteDevelopment():
+    boolean {
+    return (
+        hasViteEnvironment()
+        && import.meta.env.DEV
+            === true
+    );
+}
 
 /**
  * Returns the application root URL.
@@ -44,15 +76,31 @@
  *   =>
  *   https://example.com/Dino-5monde/
  *
+ * Node / tests:
+ *
+ *   module:
+ *   file:///repo/src/core/staticData.ts
+ *
+ *   ../../
+ *   =>
+ *   file:///repo/
+ *
  * This also keeps GitHub Pages repository deployments compatible without
  * hard-coding `/Dino-5monde/`.
  */
 function getApplicationBaseUrl():
     URL {
+    const relativeBase =
+        hasViteEnvironment()
+            ? (
+                isViteDevelopment()
+                    ? "../../"
+                    : "../"
+            )
+            : "../../";
+
     return new URL(
-        import.meta.env.DEV
-            ? "../../"
-            : "../",
+        relativeBase,
         import.meta.url
     );
 }
@@ -61,19 +109,44 @@ function getApplicationBaseUrl():
  * Resolves one static application resource independently from the current
  * browser route.
  *
- * Example:
+ * Browser / Vite:
  *
  * getStaticDataUrl(
  *     "data/placement.json"
  * )
+ *
+ * =>
+ *
+ * http://localhost:5173/data/placement.json
+ *
+ * Node / tests:
+ *
+ * =>
+ *
+ * ./data/placement.json
  */
 function getStaticDataUrl(
-    path: string
+    path:
+        string
 ): string {
     const normalizedPath =
         normalizeStaticPath(
             path
         );
+
+    /*
+     * Direct Node execution has no browser deployment root.
+     *
+     * Returning a stable relative path also preserves the historical contract
+     * expected by injected test fetchers.
+     */
+    if (
+        !hasViteEnvironment()
+    ) {
+        return (
+            `./${normalizedPath}`
+        );
+    }
 
     return new URL(
         normalizedPath,
@@ -88,19 +161,49 @@ function getStaticDataUrl(
  * immediately.
  */
 function getFreshStaticDataUrl(
-    path: string
+    path:
+        string
 ): string {
+    const staticUrl =
+        getStaticDataUrl(
+            path
+        );
+
+    const version =
+        Date.now()
+            .toString();
+
+    /*
+     * `new URL("./file.json")` requires an explicit base in Node.
+     *
+     * For the non-Vite relative contract, appending the query parameter
+     * directly keeps the result portable.
+     */
+    if (
+        staticUrl.startsWith(
+            "./"
+        )
+    ) {
+        const separator =
+            staticUrl.includes(
+                "?"
+            )
+                ? "&"
+                : "?";
+
+        return (
+            `${staticUrl}${separator}v=${version}`
+        );
+    }
+
     const url =
         new URL(
-            getStaticDataUrl(
-                path
-            )
+            staticUrl
         );
 
     url.searchParams.set(
         "v",
-        Date.now()
-            .toString()
+        version
     );
 
     return url.href;
@@ -112,7 +215,8 @@ function getFreshStaticDataUrl(
  * All returned paths remain relative to the application root.
  */
 function normalizeStaticPath(
-    path: string
+    path:
+        string
 ): string {
     return path
         .trim()
@@ -130,5 +234,6 @@ export {
     getApplicationBaseUrl,
     getFreshStaticDataUrl,
     getStaticDataUrl,
+    hasViteEnvironment,
     normalizeStaticPath
 };

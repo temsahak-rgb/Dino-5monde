@@ -13,21 +13,26 @@
  */
 
 import assert from "node:assert/strict";
+
 import {
     readdir,
     readFile,
     stat
 } from "node:fs/promises";
+
 import test from "node:test";
+
 import {
     dirname,
     join,
     relative,
     resolve
 } from "node:path";
+
 import {
     fileURLToPath
 } from "node:url";
+
 import ts from "typescript";
 
 const currentDirectory =
@@ -145,7 +150,8 @@ const inlineHandlerPattern =
  * messages on Windows, Linux and macOS.
  */
 function repositoryPath(
-    filePath: string
+    filePath:
+        string
 ): string {
     return relative(
         root,
@@ -160,7 +166,8 @@ function repositoryPath(
  * Recursively returns TypeScript source files.
  */
 async function collectTypeScriptFiles(
-    entryPath: string
+    entryPath:
+        string
 ): Promise<string[]> {
     const entryStats =
         await stat(
@@ -186,12 +193,14 @@ async function collectTypeScriptFiles(
         await readdir(
             entryPath,
             {
-                withFileTypes: true
+                withFileTypes:
+                    true
             }
         );
 
     const files:
-        string[] = [];
+        string[] =
+            [];
 
     for (
         const entry
@@ -237,10 +246,12 @@ async function collectTypeScriptFiles(
  * Returns every TypeScript file contained in a collection of roots.
  */
 async function collectFromRoots(
-    roots: string[]
+    roots:
+        string[]
 ): Promise<string[]> {
     const files:
-        string[] = [];
+        string[] =
+            [];
 
     for (
         const sourceRoot
@@ -260,10 +271,14 @@ async function collectFromRoots(
  * Parses a TypeScript file.
  */
 async function parseTypeScriptFile(
-    filePath: string
+    filePath:
+        string
 ): Promise<{
-    source: string;
-    sourceFile: ts.SourceFile;
+    source:
+        string;
+
+    sourceFile:
+        ts.SourceFile;
 }> {
     const source =
         await readFile(
@@ -273,6 +288,7 @@ async function parseTypeScriptFile(
 
     return {
         source,
+
         sourceFile:
             ts.createSourceFile(
                 filePath,
@@ -288,7 +304,8 @@ async function parseTypeScriptFile(
  * Returns textual content carried by a string/template AST node.
  */
 function getLiteralFragment(
-    node: ts.Node
+    node:
+        ts.Node
 ): string | null {
     if (
         ts.isStringLiteral(
@@ -308,7 +325,8 @@ function getLiteralFragment(
         case ts.SyntaxKind.TemplateMiddle:
         case ts.SyntaxKind.TemplateTail:
             return (
-                node as ts.TemplateLiteralLikeNode
+                node as
+                    ts.TemplateLiteralLikeNode
             ).text;
 
         default:
@@ -320,9 +338,12 @@ function getLiteralFragment(
  * Walks every node in a TypeScript AST.
  */
 function walkAst(
-    node: ts.Node,
+    node:
+        ts.Node,
+
     visitor: (
-        node: ts.Node
+        node:
+            ts.Node
     ) => void
 ): void {
     visitor(
@@ -342,7 +363,8 @@ function walkAst(
  * Returns whether a node is the string literal "fa".
  */
 function isPersianLanguageLiteral(
-    node: ts.Node
+    node:
+        ts.Node
 ): boolean {
     return (
         ts.isStringLiteral(
@@ -358,7 +380,8 @@ function isPersianLanguageLiteral(
  * interface-language code.
  */
 function isDirectPersianLanguageBranch(
-    node: ts.Node
+    node:
+        ts.Node
 ): boolean {
     if (
         !ts.isBinaryExpression(
@@ -369,17 +392,22 @@ function isDirectPersianLanguageBranch(
     }
 
     const operator =
-        node.operatorToken.kind;
+        node.operatorToken
+            .kind;
 
     if (
         operator
-            !== ts.SyntaxKind.EqualsEqualsEqualsToken
+            !== ts.SyntaxKind
+                .EqualsEqualsEqualsToken
         && operator
-            !== ts.SyntaxKind.ExclamationEqualsEqualsToken
+            !== ts.SyntaxKind
+                .ExclamationEqualsEqualsToken
         && operator
-            !== ts.SyntaxKind.EqualsEqualsToken
+            !== ts.SyntaxKind
+                .EqualsEqualsToken
         && operator
-            !== ts.SyntaxKind.ExclamationEqualsToken
+            !== ts.SyntaxKind
+                .ExclamationEqualsToken
     ) {
         return false;
     }
@@ -438,7 +466,8 @@ test(
             );
 
         const violations:
-            string[] = [];
+            string[] =
+                [];
 
         for (
             const filePath
@@ -509,7 +538,8 @@ test(
             );
 
         const violations:
-            string[] = [];
+            string[] =
+                [];
 
         for (
             const filePath
@@ -580,7 +610,8 @@ test(
             );
 
         const violations:
-            string[] = [];
+            string[] =
+                [];
 
         for (
             const filePath
@@ -682,7 +713,7 @@ test(
 );
 
 test(
-    "index.html exposes a single ES-module entry point",
+    "index.html exposes a single React ES-module entry point",
     async () => {
         const indexHtml =
             await readFile(
@@ -698,21 +729,23 @@ test(
             ].map(
                 match =>
                     match[1]
-                        .split("?")[0]
+                        .split(
+                            "?"
+                        )[0]
             );
 
         assert.deepEqual(
             scriptSources,
             [
-                "app.js"
+                "/src/main.tsx"
             ],
-            "index.html must load only the application entry point"
+            "index.html must load only the React application entry point"
         );
 
         assert.match(
             indexHtml,
-            /<script\s+type=["']module["']\s+src=["']app\.js["']><\/script>/i,
-            "app.js must be loaded as an ES module"
+            /<script\s+type=["']module["']\s+src=["']\/src\/main\.tsx["']><\/script>/i,
+            "/src/main.tsx must be loaded as an ES module"
         );
 
         assert.equal(
@@ -721,6 +754,12 @@ test(
             ),
             false,
             "Inline <script> blocks are forbidden in index.html"
+        );
+
+        assert.doesNotMatch(
+            indexHtml,
+            /\bapp\.js\b/i,
+            "The legacy app.js entry point must not return"
         );
     }
 );

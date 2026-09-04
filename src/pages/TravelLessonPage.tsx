@@ -88,7 +88,14 @@ function TravelLessonPage() {
 
     useEffect(
         () => {
-            if (!lessonId) {
+            /*
+             * Keep the validated route identifier in a local constant so
+             * TypeScript preserves its non-null type inside the async closure.
+             */
+            const routeLessonId =
+                lessonId;
+
+            if (!routeLessonId) {
                 setLesson(
                     null
                 );
@@ -115,7 +122,7 @@ function TravelLessonPage() {
 
                 const loadedLesson =
                     await loadTravelLesson(
-                        lessonId
+                        routeLessonId
                     );
 
                 if (!active) {
@@ -167,7 +174,11 @@ function TravelLessonPage() {
                 <BackButton
                     fallback="/travel"
                 >
-                    ← {t("common.back")}
+                    ←
+                    {" "}
+                    {t(
+                        "common.back"
+                    )}
                 </BackButton>
 
                 <ErrorState
@@ -178,7 +189,7 @@ function TravelLessonPage() {
                     }
                     description={
                         lessonId
-                            ?? ""
+                        ?? ""
                     }
                     action={
                         lessonId ? (

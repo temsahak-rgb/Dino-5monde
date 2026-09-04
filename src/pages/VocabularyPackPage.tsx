@@ -52,8 +52,10 @@ import {
  */
 function VocabularyPackPage() {
     const {
-        level: levelParameter,
-        packId: packIdParameter
+        level:
+            levelParameter,
+        packId:
+            packIdParameter
     } = useParams();
 
     const {
@@ -74,7 +76,9 @@ function VocabularyPackPage() {
         pack,
         setPack
     ] =
-        useState<VocabPack | null>(
+        useState<
+            VocabPack | null
+        >(
             null
         );
 
@@ -82,19 +86,32 @@ function VocabularyPackPage() {
         loading,
         setLoading
     ] =
-        useState(true);
+        useState(
+            true
+        );
 
     const [
         retryCount,
         setRetryCount
     ] =
-        useState(0);
+        useState(
+            0
+        );
 
     useEffect(
         () => {
+            /*
+             * Preserve the validated route values inside the async closure.
+             */
+            const vocabularyLevel =
+                level;
+
+            const routePackId =
+                packId;
+
             if (
-                !level
-                || !packId
+                !vocabularyLevel
+                || !routePackId
             ) {
                 setPack(
                     null
@@ -122,8 +139,8 @@ function VocabularyPackPage() {
 
                 const loadedPack =
                     await loadVocabularyPack(
-                        level,
-                        packId
+                        vocabularyLevel,
+                        routePackId
                     );
 
                 if (!active) {
@@ -142,7 +159,8 @@ function VocabularyPackPage() {
             void load();
 
             return () => {
-                active = false;
+                active =
+                    false;
             };
         },
         [
@@ -161,7 +179,11 @@ function VocabularyPackPage() {
                 <BackButton
                     fallback="/vocabulary"
                 >
-                    ← {t("common.back")}
+                    ←
+                    {" "}
+                    {t(
+                        "common.back"
+                    )}
                 </BackButton>
 
                 <ErrorState
@@ -202,7 +224,11 @@ function VocabularyPackPage() {
                         `/vocabulary/${level}`
                     }
                 >
-                    ← {t("common.back")}
+                    ←
+                    {" "}
+                    {t(
+                        "common.back"
+                    )}
                 </BackButton>
 
                 <EmptyState
@@ -260,7 +286,9 @@ function VocabularyPackPage() {
  * the whole route.
  */
 function normalizePackId(
-    value: string | undefined
+    value:
+        string
+        | undefined
 ): string | null {
     if (!value) {
         return null;
@@ -272,8 +300,10 @@ function normalizePackId(
                 value
             ).trim();
 
-        return decoded
-            || null;
+        return (
+            decoded
+            || null
+        );
     } catch {
         return null;
     }

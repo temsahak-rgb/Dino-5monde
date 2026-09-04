@@ -120,7 +120,14 @@ function JournalArticlePage() {
 
     useEffect(
         () => {
-            if (!articleId) {
+            /*
+             * Keep the validated route value in a local constant so its
+             * non-null type is preserved inside the asynchronous closure.
+             */
+            const routeArticleId =
+                articleId;
+
+            if (!routeArticleId) {
                 setArticle(
                     null
                 );
@@ -156,7 +163,7 @@ function JournalArticlePage() {
                 try {
                     const loadedArticle =
                         await loadNewsArticle(
-                            articleId
+                            routeArticleId
                         );
 
                     if (!active) {

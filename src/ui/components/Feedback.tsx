@@ -14,8 +14,14 @@ type FeedbackVariant =
     | "danger"
     | "info";
 
+type DivAttributesWithoutTitle =
+    Omit<
+        HTMLAttributes<HTMLDivElement>,
+        "title"
+    >;
+
 interface FeedbackPanelProps
-    extends HTMLAttributes<HTMLDivElement> {
+    extends DivAttributesWithoutTitle {
     icon?: ReactNode;
     title: ReactNode;
     description?: ReactNode;
@@ -44,7 +50,7 @@ interface ErrorStateProps {
 }
 
 interface AlertProps
-    extends HTMLAttributes<HTMLDivElement> {
+    extends DivAttributesWithoutTitle {
     children: ReactNode;
     title?: ReactNode;
     variant?: FeedbackVariant;

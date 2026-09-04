@@ -4,6 +4,10 @@ import {
     useState
 } from "react";
 
+import type {
+    KeyboardEvent as ReactKeyboardEvent
+} from "react";
+
 import {
     useI18n
 } from "../../i18n/I18nProvider.js";
@@ -34,8 +38,11 @@ import {
 } from "./VocabularyGame.js";
 
 interface VocabularyCrosswordProps {
-    pack: VocabPack;
-    onBack: () => void;
+    pack:
+        VocabPack;
+
+    onBack:
+        () => void;
 }
 
 type CrosswordAnswers =
@@ -86,14 +93,18 @@ function VocabularyCrossword({
         setEvaluation
     ] =
         useState<
-            CrosswordEvaluation | undefined
+            CrosswordEvaluation
+            | undefined
         >(
             undefined
         );
 
     const inputRefs =
         useRef<
-            Array<HTMLInputElement | null>
+            Array<
+                HTMLInputElement
+                | null
+            >
         >(
             []
         );
@@ -129,8 +140,11 @@ function VocabularyCrossword({
 
                 const cells:
                     Array<{
-                        row: number;
-                        column: number;
+                        row:
+                            number;
+
+                        column:
+                            number;
                     }> = [];
 
                 for (
@@ -199,6 +213,16 @@ function VocabularyCrossword({
         );
     }
 
+    /*
+     * `game` is React state and therefore remains nullable from TypeScript's
+     * point of view inside nested callbacks/functions.
+     *
+     * This constant captures the validated game for the current render and
+     * gives those functions a stable non-null CrosswordGame.
+     */
+    const playableGame =
+        game;
+
     const correctCells =
         new Set(
             evaluation?.correctCells
@@ -212,14 +236,14 @@ function VocabularyCrossword({
         );
 
     const across =
-        game.entries.filter(
+        playableGame.entries.filter(
             entry =>
                 entry.direction
                 === "across"
         );
 
     const down =
-        game.entries.filter(
+        playableGame.entries.filter(
             entry =>
                 entry.direction
                 === "down"
@@ -284,7 +308,7 @@ function VocabularyCrossword({
                         "
                         style={{
                             gridTemplateColumns:
-                                `repeat(${game.columns}, 42px)`
+                                `repeat(${playableGame.columns}, 42px)`
                         }}
                     >
                         {renderGrid()}
@@ -380,12 +404,12 @@ function VocabularyCrossword({
 
         for (
             let row = 0;
-            row < game.rows;
+            row < playableGame.rows;
             row++
         ) {
             for (
                 let column = 0;
-                column < game.columns;
+                column < playableGame.columns;
                 column++
             ) {
                 const key =
@@ -515,9 +539,9 @@ function VocabularyCrossword({
                                     {
                                         row:
                                             row + 1,
+
                                         column:
-                                            column
-                                            + 1
+                                            column + 1
                                     }
                                 )
                             }
@@ -568,9 +592,12 @@ function VocabularyCrossword({
      * Normalizes one cell to a single A-Z character and moves focus forward.
      */
     function updateAnswer(
-        key: string,
-        inputIndex: number,
-        rawValue: string
+        key:
+            string,
+        inputIndex:
+            number,
+        rawValue:
+            string
     ): void {
         const letter =
             normalizeGameAnswer(
@@ -583,6 +610,7 @@ function VocabularyCrossword({
         setAnswers(
             current => ({
                 ...current,
+
                 [
                     key
                 ]:
@@ -623,11 +651,13 @@ function VocabularyCrossword({
      */
     function handleKeyDown(
         event:
-            React.KeyboardEvent<
+            ReactKeyboardEvent<
                 HTMLInputElement
             >,
-        key: string,
-        inputIndex: number
+        key:
+            string,
+        inputIndex:
+            number
     ): void {
         if (
             event.key
@@ -664,7 +694,7 @@ function VocabularyCrossword({
         void {
         setEvaluation(
             checkCrosswordAnswers(
-                game,
+                playableGame,
                 answers
             )
         );
@@ -692,11 +722,13 @@ function VocabularyCrossword({
 }
 
 /* -------------------------------------------------------------------------- */
-/* Clues                                                                       */
+/* Clues                                                                      */
 /* -------------------------------------------------------------------------- */
 
 interface CrosswordClueListProps {
-    title: string;
+    title:
+        string;
+
     entries:
         CrosswordGame["entries"];
 }
@@ -706,7 +738,8 @@ function CrosswordClueList({
     entries
 }: CrosswordClueListProps) {
     if (
-        entries.length === 0
+        entries.length
+        === 0
     ) {
         return null;
     }
@@ -791,12 +824,14 @@ function CrosswordClueList({
 }
 
 /* -------------------------------------------------------------------------- */
-/* Utilities                                                                   */
+/* Utilities                                                                  */
 /* -------------------------------------------------------------------------- */
 
 function crosswordCellKey(
-    row: number,
-    column: number
+    row:
+        number,
+    column:
+        number
 ): string {
     return `${row}:${column}`;
 }
