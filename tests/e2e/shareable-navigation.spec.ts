@@ -57,6 +57,81 @@ test.describe(
         );
 
         test(
+            "does not duplicate the active destination in browser history",
+            async ({ page }) => {
+                await seedCompletedOnboarding(page);
+                await page.goto("/?view=home");
+
+                await page.getByRole(
+                    "button",
+                    {
+                        name: "Menu",
+                        exact: true
+                    }
+                ).click();
+                await page.getByRole(
+                    "button",
+                    {
+                        name: "Grammaire",
+                        exact: true
+                    }
+                ).click();
+                await expect(page).toHaveURL(
+                    /\?view=grammar$/
+                );
+
+                const historyLength =
+                    await page.evaluate(
+                        () => history.length
+                    );
+
+                await page.getByRole(
+                    "button",
+                    {
+                        name: "Menu",
+                        exact: true
+                    }
+                ).click();
+                await page.getByRole(
+                    "button",
+                    {
+                        name: "Grammaire",
+                        exact: true
+                    }
+                ).click();
+                await expect(
+                    page.getByRole(
+                        "heading",
+                        {
+                            name: "Grammaire",
+                            exact: true
+                        }
+                    )
+                ).toBeVisible();
+                expect(
+                    await page.evaluate(
+                        () => history.length
+                    )
+                ).toBe(historyLength);
+
+                await page.goBack();
+
+                await expect(page).toHaveURL(
+                    /\?view=home$/
+                );
+                await expect(
+                    page.getByRole(
+                        "heading",
+                        {
+                            name: "Bonjour, continuez !",
+                            exact: true
+                        }
+                    )
+                ).toBeVisible();
+            }
+        );
+
+        test(
             "keeps catalog history and excludes lesson-local state from the URL",
             async ({ page }) => {
                 await seedCompletedOnboarding(page);

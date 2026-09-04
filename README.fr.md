@@ -373,7 +373,7 @@ Chaque écran durable possède une query string canonique, par exemple :
 ?view=info&page=about
 ```
 
-Ces URLs supportent l’ouverture directe, le rechargement et l’historique arrière/avant. Le routeur est le seul propriétaire de `location` et `history`, valide les identifiants avant le rendu et conserve le deep-link pendant l’onboarding. Les états temporaires — question courante, score, carte retournée, plateau de jeu ou sous-section — restent hors URL.
+Ces URLs supportent l’ouverture directe, le rechargement et l’historique arrière/avant. Le routeur est le seul propriétaire de `location` et `history`, valide la forme sûre des identifiants avant le rendu et conserve le deep-link pendant l’onboarding. Les états temporaires — question courante, score, carte retournée, plateau de jeu ou sous-section — restent hors URL.
 
 ### Contrôleurs / pages
 

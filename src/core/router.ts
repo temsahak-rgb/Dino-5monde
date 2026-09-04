@@ -89,15 +89,21 @@ async function performNavigation(
             requestedRoute
         )
     ) ?? { view: "home" };
+    const routeUrl = getRouteUrl(route);
+    const currentUrl =
+        `${window.location.pathname}${window.location.search}`;
 
-    if (options.replace) {
+    if (
+        options.replace
+        || routeUrl === currentUrl
+    ) {
         window.history.replaceState(
             {
                 dinoRoute: true,
                 index: historyIndex
             } satisfies DinoHistoryState,
             "",
-            getRouteUrl(route)
+            routeUrl
         );
     } else {
         historyIndex += 1;
@@ -107,7 +113,7 @@ async function performNavigation(
                 index: historyIndex
             } satisfies DinoHistoryState,
             "",
-            getRouteUrl(route)
+            routeUrl
         );
     }
 

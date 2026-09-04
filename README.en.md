@@ -373,7 +373,7 @@ Every durable screen has a canonical query string, for example:
 ?view=info&page=about
 ```
 
-These URLs support direct opening, reload, and browser Back/Forward. The router is the only owner of `location` and `history`, validates identifiers before rendering, and preserves a deep link throughout onboarding. Transient state—current question, score, flipped card, game board, or subsection—intentionally stays out of the URL.
+These URLs support direct opening, reload, and browser Back/Forward. The router is the only owner of `location` and `history`, validates the safe shape of identifiers before rendering, and preserves a deep link throughout onboarding. Transient state—current question, score, flipped card, game board, or subsection—intentionally stays out of the URL.
 
 ### Controllers / pages
 
