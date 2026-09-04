@@ -24,6 +24,7 @@ import {
 } from "../i18n/I18nProvider.js";
 
 import type {
+    Level,
     VocabPack
 } from "../types/global.js";
 
@@ -100,18 +101,9 @@ function VocabularyPackPage() {
 
     useEffect(
         () => {
-            /*
-             * Preserve the validated route values inside the async closure.
-             */
-            const vocabularyLevel =
-                level;
-
-            const routePackId =
-                packId;
-
             if (
-                !vocabularyLevel
-                || !routePackId
+                !level
+                || !packId
             ) {
                 setPack(
                     null
@@ -127,8 +119,13 @@ function VocabularyPackPage() {
             let active =
                 true;
 
-            async function load():
-                Promise<void> {
+            async function load(
+                vocabularyLevel:
+                    Level,
+
+                routePackId:
+                    string
+            ): Promise<void> {
                 setLoading(
                     true
                 );
@@ -156,7 +153,10 @@ function VocabularyPackPage() {
                 );
             }
 
-            void load();
+            void load(
+                level,
+                packId
+            );
 
             return () => {
                 active =
