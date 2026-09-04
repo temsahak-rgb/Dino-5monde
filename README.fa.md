@@ -353,6 +353,21 @@ types/
     → قراردادهای TypeScript
 ```
 
+### Navigation قابل اشتراک‌گذاری
+
+هر صفحه پایدار یک Query String استاندارد دارد؛ برای نمونه:
+
+```text
+?view=grammar&level=A1
+?view=grammar&lesson=A1-G-001
+?view=vocabulary&level=B1&pack=arrival-office
+?view=travel&lesson=TR-006
+?view=journal&article=2026-w34-azadi-tower
+?view=info&page=about
+```
+
+این URLها بازشدن مستقیم، Reload و دکمه‌های Back/Forward مرورگر را پشتیبانی می‌کنند. Router تنها مالک `location` و `history` است، شناسه‌ها را پیش از نمایش اعتبارسنجی می‌کند و Deep Link را در تمام مراحل Onboarding نگه می‌دارد. Stateهای موقت—سؤال جاری، امتیاز، کارت برگردانده‌شده، صفحه بازی یا زیربخش—عمداً وارد URL نمی‌شوند.
+
 ### Controller / Page
 
 Controller می‌تواند:

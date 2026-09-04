@@ -1,5 +1,5 @@
 import { loadPlacementQuestions } from "./src/core/placementEngine.js";
-import { navigateToSection } from "./src/core/navigation.js";
+import { restoreRequestedRoute } from "./src/core/navigation.js";
 import { initializeRouter } from "./src/core/router.js";
 import { initializeNews } from "./src/features/news/news.js";
 import { initializeInstitutionalNavigation } from "./src/features/institutional/institutional.js";
@@ -95,9 +95,7 @@ async function bootstrap(): Promise<void> {
         hasLanguage
         && isPersistedPath(savedPath)
     ) {
-        await navigateToSection(
-            "home"
-        );
+        await restoreRequestedRoute();
 
         return;
     }

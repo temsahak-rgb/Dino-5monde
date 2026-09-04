@@ -360,6 +360,21 @@ types/
     → contrats TypeScript exportés
 ```
 
+### Navigation partageable
+
+Chaque écran durable possède une query string canonique, par exemple :
+
+```text
+?view=grammar&level=A1
+?view=grammar&lesson=A1-G-001
+?view=vocabulary&level=B1&pack=arrival-office
+?view=travel&lesson=TR-006
+?view=journal&article=2026-w34-azadi-tower
+?view=info&page=about
+```
+
+Ces URLs supportent l’ouverture directe, le rechargement et l’historique arrière/avant. Le routeur est le seul propriétaire de `location` et `history`, valide les identifiants avant le rendu et conserve le deep-link pendant l’onboarding. Les états temporaires — question courante, score, carte retournée, plateau de jeu ou sous-section — restent hors URL.
+
 ### Contrôleurs / pages
 
 Ils peuvent :

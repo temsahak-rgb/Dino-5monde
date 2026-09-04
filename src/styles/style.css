@@ -526,6 +526,45 @@ button.navbar-menu-item-planned {
     }
 }
 
+/* Route changes stay legible without making motion a requirement. */
+#app {
+    view-transition-name: app-content;
+}
+
+#app h1[tabindex="-1"]:focus-visible {
+    outline: 3px solid #087f5b;
+    outline-offset: 6px;
+}
+
+::view-transition-old(app-content) {
+    animation: route-view-out 120ms ease-out both;
+}
+
+::view-transition-new(app-content) {
+    animation: route-view-in 180ms ease-out both;
+}
+
+@keyframes route-view-out {
+    to {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes route-view-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    ::view-transition-old(app-content),
+    ::view-transition-new(app-content) {
+        animation: none;
+    }
+}
+
 /* =============================== */
 /* تایپوگرافی مینیمال */
 /* =============================== */

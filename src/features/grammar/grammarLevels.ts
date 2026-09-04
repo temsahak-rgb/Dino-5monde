@@ -1,4 +1,4 @@
-import type { Level } from "../../types/global.js";
+import type { GrammarLevel } from "../../types/global.js";
 
 export {
     getGrammarLevelFromLessonId,
@@ -6,7 +6,7 @@ export {
 };
 
 const grammarLevels:
-    readonly Level[] = [
+    readonly GrammarLevel[] = [
         "A1",
         "A2",
         "B1",
@@ -15,7 +15,7 @@ const grammarLevels:
     ];
 
 /** Returns the CEFR levels currently exposed by the Grammar catalog. */
-function getGrammarLevels(): readonly Level[] {
+function getGrammarLevels(): readonly GrammarLevel[] {
     return grammarLevels;
 }
 
@@ -27,13 +27,13 @@ function getGrammarLevels(): readonly Level[] {
  */
 function getGrammarLevelFromLessonId(
     lessonId: string
-): Level | null {
+): GrammarLevel | null {
     const match =
         /^(A1|A2|B1|B2|C1)-G-/.exec(
             lessonId
         );
 
     return match
-        ? match[1] as Level
+        ? match[1] as GrammarLevel
         : null;
 }

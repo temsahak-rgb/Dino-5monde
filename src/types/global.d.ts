@@ -17,6 +17,9 @@ export type Level =
     | "C1"
     | "C2";
 
+export type GrammarLevel =
+    Exclude<Level, "C2">;
+
 export type AppSection =
     | "home"
     | "grammar"
