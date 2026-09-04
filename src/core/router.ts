@@ -3,7 +3,12 @@ import {
     registerNavigationHandler
 } from "./navigation.js";
 import { showGrammarPage } from "../features/grammar/grammar.js";
-import { openSearch } from "../features/search/search.js";
+import {
+    showJournalPage
+} from "../features/news/news.js";
+import {
+    openSearch
+} from "../features/search/search.js";
 import { showTravelPage } from "../features/travel/travel.js";
 import { showVocabularyPage } from "../features/vocabulary/vocabulary.js";
 import { showHome } from "../pages/home.js";
@@ -24,10 +29,16 @@ export {
 let navbarDelegatedEventsBound = false;
 
 /**
- * Opens or closes the responsive navigation menu.
+ * Applies one consistent visual and accessibility state to the header menu.
+ *
+ * @param open - Whether the menu must be visible.
+ * @param restoreFocus - Whether focus should return to its trigger.
  */
-function toggleMobileMenu(): void {
-    const links =
+function setNavigationMenuOpen(
+    open: boolean,
+    restoreFocus = false
+): void {
+    const menu =
         document.getElementById(
             "nav-links"
         );
@@ -37,44 +48,52 @@ function toggleMobileMenu(): void {
             "menu-toggle"
         ) as HTMLButtonElement | null;
 
-    if (!links) {
+    if (!menu) {
         return;
     }
 
-    const open =
-        links.classList.toggle(
-            "open"
-        );
+    menu.hidden = !open;
 
-    if (toggle) {
-        toggle.setAttribute(
-            "aria-expanded",
-            String(open)
-        );
+    toggle?.setAttribute(
+        "aria-expanded",
+        String(open)
+    );
+
+    if (
+        restoreFocus
+        && toggle
+    ) {
+        toggle.focus();
     }
 }
 
 /**
- * Closes the responsive navigation menu when currently open.
+ * Opens or closes the main navigation menu.
  */
-function closeMobileMenu(): void {
-    const links =
+function toggleNavigationMenu(): void {
+    const menu =
         document.getElementById(
             "nav-links"
         );
 
-    const toggle =
-        document.getElementById(
-            "menu-toggle"
-        ) as HTMLButtonElement | null;
+    if (!menu) {
+        return;
+    }
 
-    links?.classList.remove(
-        "open"
+    setNavigationMenuOpen(
+        menu.hidden
     );
+}
 
-    toggle?.setAttribute(
-        "aria-expanded",
-        "false"
+/**
+ * Closes the main navigation menu.
+ */
+function closeNavigationMenu(
+    restoreFocus = false
+): void {
+    setNavigationMenuOpen(
+        false,
+        restoreFocus
     );
 }
 
@@ -91,7 +110,7 @@ async function switchSection(
         section
     );
 
-    closeMobileMenu();
+    closeNavigationMenu();
 
     switch (section) {
         case "home":
@@ -108,6 +127,10 @@ async function switchSection(
 
         case "travel":
             await showTravelPage();
+            break;
+
+        case "journal":
+            await showJournalPage();
             break;
     }
 }
@@ -181,13 +204,46 @@ function bindNavbarDelegatedEvents(): void {
                 actionButton.dataset.navAction
             ) {
                 case "toggle-menu":
-                    toggleMobileMenu();
+                    toggleNavigationMenu();
                     break;
 
                 case "search":
-                    closeMobileMenu();
+                    closeNavigationMenu();
                     openSearch();
                     break;
+            }
+        }
+    );
+
+    document.addEventListener(
+        "click",
+        event => {
+            const target =
+                event.target;
+
+            if (
+                target instanceof Element
+                && !target.closest(
+                    "#main-navbar"
+                )
+            ) {
+                closeNavigationMenu();
+            }
+        }
+    );
+
+    document.addEventListener(
+        "keydown",
+        event => {
+            if (
+                event.key === "Escape"
+                && document.getElementById(
+                    "nav-links"
+                )?.hidden === false
+            ) {
+                closeNavigationMenu(
+                    true
+                );
             }
         }
     );

@@ -54,6 +54,7 @@ function parseAppSection(
         case "grammar":
         case "vocabulary":
         case "travel":
+        case "journal":
             return value;
 
         default:
