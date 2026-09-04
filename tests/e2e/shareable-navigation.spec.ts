@@ -264,7 +264,7 @@ test.describe(
         );
 
         test(
-            "replaces an invalid identifier with the canonical Home route",
+            "distinguishes unsafe identifiers from missing safe resources",
             async ({ page }) => {
                 await seedCompletedOnboarding(page);
                 await page.goto(
@@ -277,6 +277,17 @@ test.describe(
                 await expect(
                     page.locator("#main-navbar")
                 ).toBeVisible();
+
+                await page.goto(
+                    "/?view=travel&lesson=TR-999"
+                );
+
+                await expect(
+                    page.locator("#travel-error-back")
+                ).toBeVisible();
+                await expect(page).toHaveURL(
+                    /\?view=travel&lesson=TR-999$/
+                );
             }
         );
 
