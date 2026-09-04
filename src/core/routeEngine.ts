@@ -69,7 +69,7 @@ export {
 };
 
 const grammarLessonIdPattern =
-    /^(?:A1|A2|B1|B2|C1)-G-[0-9]{3}(?:-[A-Z])?$/;
+    /^(?=.{1,160}$)(?:(?:A1|A2|B1|B2|C1)-G-[0-9]{3}(?:-[A-Z])?|(?:a1|a2|b1|b2|c1)-[a-z0-9]+(?:-[a-z0-9]+)*)$/;
 const vocabularyPackIdPattern =
     /^(?=.{1,120}$)[A-Za-z0-9]+(?:[_-][A-Za-z0-9]+)*$/;
 const travelLessonIdPattern =

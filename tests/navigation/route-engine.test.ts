@@ -29,6 +29,11 @@ test(
                 lessonId: "A1-G-003-B"
             },
             {
+                view: "grammar",
+                target: "lesson",
+                lessonId: "a1-se-trouver"
+            },
+            {
                 view: "vocabulary",
                 target: "index"
             },
@@ -159,6 +164,9 @@ test(
             const search
             of [
                 "?view=grammar&lesson=..%2Fsecret",
+                "?view=grammar&lesson=-a1-se-trouver",
+                "?view=grammar&lesson=a1--se-trouver",
+                "?view=grammar&lesson=a1-se-trouver-",
                 "?view=grammar&lesson=C2-G-001",
                 "?view=vocabulary&level=A1&pack=..%2Fsecret",
                 `?view=vocabulary&level=A1&pack=${"a".repeat(121)}`,

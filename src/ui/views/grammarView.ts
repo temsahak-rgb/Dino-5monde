@@ -1,4 +1,5 @@
 import { renderNavbar } from "./navbarView.js";
+import { renderNotFoundView } from "./notFoundView.js";
 import {
     localizedTextClass,
     localizedValue,
@@ -428,32 +429,10 @@ function renderGrammarCatalogCardView(
  * @returns Error-page HTML.
  */
 function renderGrammarLessonNotFoundView(): string {
-    return `
-        <div style="
-            padding:40px 16px;
-            text-align:center;
-        ">
-            <p style="color:#1a1a1a;">
-                ${t("grammar.lessonNotFound")}
-            </p>
-
-            <button
-                id="grammar-error-back"
-                type="button"
-                style="
-                    margin-top:15px;
-                    padding:10px 20px;
-                    border:1px solid #ddd;
-                    border-radius:6px;
-                    background:#fff;
-                    color:#1a1a1a;
-                    cursor:pointer;
-                "
-            >
-                ${t("common.back")}
-            </button>
-        </div>
-    `;
+    return renderNotFoundView({
+        backButtonId: "grammar-error-back",
+        message: t("grammar.lessonNotFound")
+    });
 }
 
 /**

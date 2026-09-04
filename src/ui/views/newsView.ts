@@ -1,4 +1,5 @@
 import { renderNavbar } from "./navbarView.js";
+import { renderNotFoundView } from "./notFoundView.js";
 import {
     localizedTextClass,
     localizedValue,
@@ -974,34 +975,8 @@ function renderNewsSourceView(
  * @returns Complete error-page HTML.
  */
 function renderNewsNotFoundView(): string {
-    return `
-        ${renderNavbar()}
-
-        <div style="
-            text-align:center;
-            padding:60px 16px;
-        ">
-            <p style="
-                font-size:18px;
-                color:#777;
-            ">
-                ❌ ${t("news.notFound")}
-            </p>
-
-            <button
-                id="news-error-back"
-                type="button"
-                style="
-                    margin-top:15px;
-                    padding:10px 20px;
-                    border:1px solid #ddd;
-                    border-radius:6px;
-                    background:#fff;
-                    cursor:pointer;
-                "
-            >
-                ${t("common.back")}
-            </button>
-        </div>
-    `;
+    return renderNotFoundView({
+        backButtonId: "news-error-back",
+        message: t("news.notFound")
+    });
 }

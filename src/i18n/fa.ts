@@ -29,6 +29,8 @@ const faMessages: Record<TranslationKey, string> = {
     "common.moreEffort": "بیشتر تلاش کن!",
     "common.morePractice": "باید بیشتر تمرین کنی!",
 
+    "error.notFound.title": "محتوا پیدا نشد",
+
     "navbar.grammar": "گرامر",
     "navbar.vocabulary": "واژگان",
     "navbar.travel": "سفر",

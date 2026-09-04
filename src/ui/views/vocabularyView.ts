@@ -1,4 +1,5 @@
 import { renderNavbar } from "./navbarView.js";
+import { renderNotFoundView } from "./notFoundView.js";
 import {
     localizedTextClass,
     localizedValue,
@@ -329,39 +330,10 @@ function renderVocabPackCardView(
  * @returns Complete unavailable-pack HTML.
  */
 function renderVocabPackUnavailableView(): string {
-    return `
-        ${renderNavbar()}
-
-        <div style="
-            max-width:500px;
-            margin:0 auto;
-            padding:60px 16px;
-            text-align:center;
-        ">
-            <p style="
-                font-size:14px;
-                color:#777;
-            ">
-                🚧 ${t("vocab.packSoon")}
-            </p>
-
-            <button
-                id="vocab-unavailable-back"
-                type="button"
-                style="
-                    margin-top:15px;
-                    padding:10px 20px;
-                    border:1px solid #ddd;
-                    border-radius:6px;
-                    background:#fff;
-                    color:#1a1a1a;
-                    cursor:pointer;
-                "
-            >
-                ${t("common.back")}
-            </button>
-        </div>
-    `;
+    return renderNotFoundView({
+        backButtonId: "vocab-unavailable-back",
+        message: t("vocab.packSoon")
+    });
 }
 
 /**
