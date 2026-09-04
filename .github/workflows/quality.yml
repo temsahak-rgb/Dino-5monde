@@ -33,12 +33,12 @@ jobs:
       # Blocking quality gates
       # -------------------------------------------------------------------
 
-      - name: Automated tests
+      - name: Application tests
         id: tests
         shell: bash
         run: |
           set -o pipefail
-          npm test 2>&1 | tee reports/tests.txt
+          npm run test:app 2>&1 | tee reports/tests.txt
 
       - name: TypeScript typecheck
         id: typecheck
@@ -158,7 +158,7 @@ jobs:
             echo
             echo "Tests, TypeScript typecheck and production build are blocking quality gates."
             echo
-            echo "The automated test suite includes the architecture regression guards."
+            echo "Application tests include the architecture regression guards; corpus tests run in their dedicated workflow."
             echo
             echo "Knip and duplication analyses remain informative."
             echo

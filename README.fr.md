@@ -434,6 +434,7 @@ Le générateur rejette également tout cycle de dépendances d'exécution. Les 
 
 ```bash
 npm test
+npm run test:app
 npm run test:data
 npm run test:architecture
 npm run typecheck
@@ -450,6 +451,7 @@ tests/**/*.test.ts
 ```
 
 Il n'est donc pas nécessaire de modifier `package.json` lorsqu'un nouveau test est ajouté.
+`npm run test:app` est le sous-ensemble bloquant du pipeline de qualité du code ; les tests corpus restent volontairement isolés dans `npm run test:data` et leur workflow dédié.
 
 ### Tests de données
 
@@ -489,7 +491,7 @@ Autrement dit, la séparation actuelle n'est plus seulement une convention écri
 Le workflow GitHub Actions de qualité exécute :
 
 ```text
-tests             → bloquant pour le job
+tests applicatifs → bloquant pour le job
 TypeScript        → bloquant pour le job
 production build  → bloquant pour le job
 Knip              → informatif
@@ -499,6 +501,7 @@ jscpd             → informatif
 Cela signifie qu'une régression de compilation, de test ou de build rend le job CI rouge.
 
 Le workflow dédié **Dependency graph** exécute `npm run graph:dependencies`, puis compare le résultat à `docs/dependency-graph.md`. Une dépendance modifiée sans régénération du graphe rend ce job rouge.
+Le workflow dédié **Corpus quality** exécute `npm run test:data`, publie des erreurs lisibles par fichier et champ, puis maintient un commentaire de rapport persistant sur les pull requests.
 
 La configuration des règles de protection GitHub elles-mêmes reste indépendante de ce code.
 
