@@ -2,7 +2,7 @@
 
 # Application dependency maps
 
-The application contains 47 reachable modules, 107 runtime imports and 53 type-only imports.
+The application contains 50 reachable modules, 119 runtime imports and 54 type-only imports.
 The generator rejects runtime dependency cycles.
 
 ## Architecture overview
@@ -28,12 +28,16 @@ flowchart LR
     G0 -->|4| G5
     G0 -->|1| G9
     G1 -->|1| G2
-    G1 -->|5| G5
-    G1 -->|1| G6
+    G1 -->|2| G3
+    G1 -->|1| G5
     G1 -->|1| G8
+    G2 -->|1| G3
+    G3 -->|5| G5
+    G3 -->|1| G6
+    G3 -->|1| G8
     G4 -->|1| G3
     G4 -->|1| G9
-    G5 -->|4| G2
+    G5 -->|8| G2
     G5 -->|7| G3
     G5 -->|6| G4
     G5 -->|10| G7
@@ -45,7 +49,7 @@ flowchart LR
     G6 -->|1| G8
     G7 -->|1| G2
     G7 -->|4| G8
-    G7 -->|12| G9
+    G7 -->|13| G9
     G8 -->|1| G9
 ```
 
@@ -65,34 +69,30 @@ flowchart LR
     end
     subgraph D["Direct dependencies"]
         M3["core/placementEngine"]
-        M4["features/grammar/grammar"]
-        M5["features/institutional/institutional"]
-        M6["features/news/news"]
-        M7["features/onboarding/onboarding"]
-        M8["features/polls/polls"]
-        M9["features/search/search"]
-        M10["features/travel/travel"]
-        M11["features/vocabulary/vocabulary"]
-        M12["i18n/i18n"]
-        M13["pages/home"]
-        M14["ui/ui"]
+        M4["core/routeEngine"]
+        M5["core/routePresentation"]
+        M6["features/institutional/institutional"]
+        M7["features/news/news"]
+        M8["features/onboarding/onboarding"]
+        M9["features/polls/polls"]
+        M10["features/search/search"]
+        M11["i18n/i18n"]
+        M12["ui/ui"]
     end
     M0 --> M1
     M0 --> M3
     M0 --> M2
-    M0 --> M5
     M0 --> M6
     M0 --> M7
     M0 --> M8
-    M0 --> M12
+    M0 --> M9
+    M0 --> M11
+    M1 --> M4
     M2 --> M1
     M2 --> M4
-    M2 --> M6
-    M2 --> M9
+    M2 --> M5
     M2 --> M10
-    M2 --> M11
-    M2 --> M13
-    M2 --> M14
+    M2 --> M12
 ```
 
 </details>
@@ -132,24 +132,28 @@ flowchart LR
     end
     subgraph D["Direct dependencies"]
         M4["core/lessonEngine"]
-        M5["core/progressEngine"]
-        M6["features/exercises/exercises"]
-        M7["i18n/i18n"]
-        M8["ui/ui"]
-        M9["views/navbarView"]
+        M5["core/navigation"]
+        M6["core/progressEngine"]
+        M7["features/exercises/exercises"]
+        M8["i18n/i18n"]
+        M9["ui/ui"]
+        M10["views/navbarView"]
+        M11["views/notFoundView"]
     end
     M0 --> M4
     M0 --> M5
     M0 --> M6
+    M0 --> M7
     M0 --> M1
     M0 --> M2
-    M0 --> M7
     M0 --> M8
+    M0 --> M9
     M0 --> M3
-    M1 --> M7
-    M3 --> M7
+    M1 --> M8
     M3 --> M8
     M3 --> M9
+    M3 --> M10
+    M3 --> M11
 ```
 
 </details>
@@ -190,17 +194,17 @@ flowchart LR
     subgraph D["Direct dependencies"]
         M2["core/navigation"]
         M3["core/placementEngine"]
-        M4["features/grammar/grammar"]
-        M5["i18n/i18n"]
-        M6["ui/ui"]
-        M7["views/navbarView"]
+        M4["i18n/i18n"]
+        M5["ui/ui"]
+        M6["views/navbarView"]
+        M7["views/notFoundView"]
     end
     M0 --> M2
     M0 --> M3
-    M0 --> M4
-    M0 --> M6
+    M0 --> M5
     M0 --> M1
-    M1 --> M5
+    M1 --> M4
+    M1 --> M6
     M1 --> M7
 ```
 
@@ -265,20 +269,16 @@ flowchart LR
         M3["views/searchView"]
     end
     subgraph D["Direct dependencies"]
-        M4["features/grammar/grammar"]
-        M5["features/news/news"]
-        M6["features/vocabulary/vocabulary"]
-        M7["i18n/i18n"]
-        M8["ui/ui"]
+        M4["core/navigation"]
+        M5["i18n/i18n"]
+        M6["ui/ui"]
     end
     M0 --> M4
-    M0 --> M5
     M0 --> M1
     M0 --> M2
     M0 --> M6
-    M0 --> M8
     M0 --> M3
-    M3 --> M7
+    M3 --> M5
 ```
 
 </details>
@@ -294,22 +294,26 @@ flowchart LR
         M2["views/travelView"]
     end
     subgraph D["Direct dependencies"]
-        M3["core/pathEngine"]
-        M4["core/progressEngine"]
-        M5["features/exercises/exercises"]
-        M6["i18n/i18n"]
-        M7["ui/ui"]
-        M8["views/navbarView"]
+        M3["core/navigation"]
+        M4["core/pathEngine"]
+        M5["core/progressEngine"]
+        M6["features/exercises/exercises"]
+        M7["i18n/i18n"]
+        M8["ui/ui"]
+        M9["views/navbarView"]
+        M10["views/notFoundView"]
     end
-    M0 --> M4
+    M0 --> M3
     M0 --> M5
+    M0 --> M6
     M0 --> M1
-    M0 --> M7
+    M0 --> M8
     M0 --> M2
-    M1 --> M3
-    M2 --> M6
+    M1 --> M4
     M2 --> M7
     M2 --> M8
+    M2 --> M9
+    M2 --> M10
 ```
 
 </details>
@@ -331,30 +335,34 @@ flowchart LR
         M8["views/vocabularyView"]
     end
     subgraph D["Direct dependencies"]
-        M9["i18n/i18n"]
-        M10["ui/ui"]
-        M11["views/navbarView"]
-        M12["views/vocabularyGamesView"]
+        M9["core/navigation"]
+        M10["i18n/i18n"]
+        M11["ui/ui"]
+        M12["views/navbarView"]
+        M13["views/notFoundView"]
+        M14["views/vocabularyGamesView"]
     end
     M0 --> M1
     M2 --> M1
     M3 --> M1
+    M4 --> M9
     M4 --> M5
     M4 --> M6
     M4 --> M7
-    M4 --> M9
     M4 --> M10
+    M4 --> M11
     M4 --> M8
     M6 --> M0
     M6 --> M1
     M6 --> M2
     M6 --> M3
     M7 --> M6
-    M7 --> M9
     M7 --> M10
-    M7 --> M12
-    M8 --> M9
-    M8 --> M11
+    M7 --> M11
+    M7 --> M14
+    M8 --> M10
+    M8 --> M12
+    M8 --> M13
 ```
 
 </details>
@@ -370,27 +378,41 @@ flowchart LR
         M2["core/pathEngine"]
         M3["core/placementEngine"]
         M4["core/progressEngine"]
-        M5["i18n/fa"]
-        M6["i18n/fr"]
-        M7["i18n/i18n"]
-        M8["pages/home"]
-        M9["ui/ui"]
-        M10["views/navbarView"]
+        M5["core/routeEngine"]
+        M6["core/routePresentation"]
+        M7["i18n/fa"]
+        M8["i18n/fr"]
+        M9["i18n/i18n"]
+        M10["pages/home"]
+        M11["ui/ui"]
+        M12["views/navbarView"]
     end
     subgraph D["Direct dependencies"]
-        M11["core/navigation"]
-        M12["features/news/news"]
-        M13["views/homeView"]
+        M13["core/navigation"]
+        M14["features/grammar/grammar"]
+        M15["features/institutional/institutional"]
+        M16["features/news/news"]
+        M17["features/travel/travel"]
+        M18["features/vocabulary/vocabulary"]
+        M19["views/homeView"]
     end
-    M7 --> M5
-    M7 --> M6
-    M8 --> M3
-    M8 --> M12
-    M8 --> M9
-    M8 --> M13
+    M6 --> M5
+    M6 --> M14
+    M6 --> M15
+    M6 --> M16
+    M6 --> M17
+    M6 --> M18
+    M6 --> M10
+    M6 --> M11
     M9 --> M7
+    M9 --> M8
+    M10 --> M3
+    M10 --> M16
     M10 --> M11
-    M10 --> M7
+    M10 --> M19
+    M11 --> M9
+    M12 --> M13
+    M12 --> M9
 ```
 
 </details>
@@ -398,5 +420,5 @@ flowchart LR
 ## Enforced invariants
 
 - No runtime dependency cycle.
-- 53 type-only imports are tracked but hidden from diagrams to avoid visual noise.
+- 54 type-only imports are tracked but hidden from diagrams to avoid visual noise.
 - Every module and edge is derived from the imports reachable from `app.ts`.
