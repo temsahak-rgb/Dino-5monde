@@ -1,16 +1,28 @@
 {
   "name": "dino-5monde",
   "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.6.0"
+  },
   "scripts": {
-    "test": "npm run test:data",
-    "test:data": "node --test tests/data/travel-ids.test.js",
-    "typecheck": "tsc -p jsconfig.json",
-    "knip": "knip",
-    "duplication": "jscpd --min-lines 10 --min-tokens 70 --reporters console ."
+    "build": "tsx tools/build.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.tools.json --noEmit",
+
+    "test": "tsx --test \"tests/**/*.test.ts\"",
+    "test:data": "tsx --test \"tests/data/**/*.test.ts\"",
+    "test:architecture": "tsx --test \"tests/architecture/**/*.test.ts\"",
+
+    "knip": "knip --config knip.json",
+    "duplication": "jscpd --config .jscpd.json",
+    "graph:dependencies": "tsx tools/generate-dependency-graph.ts",
+    "graph:dependencies:check": "tsx tools/generate-dependency-graph.ts --check"
   },
   "devDependencies": {
-    "typescript": "^5.9.0",
+    "@types/node": "^24.0.0",
+    "jscpd": "^4.0.0",
     "knip": "^5.0.0",
-    "jscpd": "^4.0.0"
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
   }
 }
