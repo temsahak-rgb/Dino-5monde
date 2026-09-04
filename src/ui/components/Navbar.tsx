@@ -12,12 +12,12 @@ import {
 } from "react-router";
 
 import {
-    useI18n
-} from "../../i18n/I18nProvider.js";
-
-import {
     SearchDialog
 } from "../../features/search/SearchDialog.js";
+
+import {
+    useI18n
+} from "../../i18n/I18nProvider.js";
 
 interface NavigationItem {
     to: string;
@@ -51,13 +51,14 @@ interface PlannedNavigationLinkProps
  * Main React application navigation.
  *
  * Responsibilities:
+ *
  * - persistent top-level navigation
  * - responsive navigation menu
  * - active-route presentation
- * - search dialog
- * - keyboard/outside-click menu closing
+ * - global search dialog
+ * - keyboard and outside-click closing
  *
- * Feature routing itself remains owned by React Router.
+ * Feature routing remains owned by React Router.
  */
 function Navbar() {
     const {
@@ -80,48 +81,66 @@ function Navbar() {
     const [
         menuOpen,
         setMenuOpen
-    ] = useState(false);
+    ] =
+        useState(
+            false
+        );
 
     const [
         searchOpen,
         setSearchOpen
-    ] = useState(false);
+    ] =
+        useState(
+            false
+        );
 
-    /*
-     * Any completed route transition closes the navigation menu.
-     */
+    /* ---------------------------------------------------------------------- */
+    /* Route transitions                                                      */
+    /* ---------------------------------------------------------------------- */
+
     useEffect(
         () => {
-            setMenuOpen(false);
+            /*
+             * A completed navigation makes the old mobile/dropdown menu
+             * irrelevant.
+             */
+            setMenuOpen(
+                false
+            );
         },
         [
             location.pathname
         ]
     );
 
-    /*
-     * Escape closes the menu and restores focus to its trigger.
-     */
+    /* ---------------------------------------------------------------------- */
+    /* Escape                                                                 */
+    /* ---------------------------------------------------------------------- */
+
     useEffect(
         () => {
             if (!menuOpen) {
                 return;
             }
 
-            const handleKeyDown =
-                (
-                    event: KeyboardEvent
-                ): void => {
-                    if (
-                        event.key !== "Escape"
-                    ) {
-                        return;
-                    }
+            function handleKeyDown(
+                event:
+                    KeyboardEvent
+            ): void {
+                if (
+                    event.key
+                    !== "Escape"
+                ) {
+                    return;
+                }
 
-                    setMenuOpen(false);
+                setMenuOpen(
+                    false
+                );
 
-                    toggleRef.current?.focus();
-                };
+                toggleRef.current
+                    ?.focus();
+            }
 
             document.addEventListener(
                 "keydown",
@@ -140,41 +159,46 @@ function Navbar() {
         ]
     );
 
-    /*
-     * Clicking anywhere outside the navigation panel closes it.
-     */
+    /* ---------------------------------------------------------------------- */
+    /* Outside click                                                          */
+    /* ---------------------------------------------------------------------- */
+
     useEffect(
         () => {
             if (!menuOpen) {
                 return;
             }
 
-            const handlePointerDown =
-                (
-                    event: PointerEvent
-                ): void => {
-                    const target =
-                        event.target;
+            function handlePointerDown(
+                event:
+                    PointerEvent
+            ): void {
+                const target =
+                    event.target;
 
-                    if (
-                        !(target instanceof Node)
-                    ) {
-                        return;
-                    }
+                if (
+                    !(target instanceof Node)
+                ) {
+                    return;
+                }
 
-                    if (
-                        menuRef.current?.contains(
+                if (
+                    menuRef.current
+                        ?.contains(
                             target
                         )
-                        || toggleRef.current?.contains(
+                    || toggleRef.current
+                        ?.contains(
                             target
                         )
-                    ) {
-                        return;
-                    }
+                ) {
+                    return;
+                }
 
-                    setMenuOpen(false);
-                };
+                setMenuOpen(
+                    false
+                );
+            }
 
             document.addEventListener(
                 "pointerdown",
@@ -193,10 +217,12 @@ function Navbar() {
         ]
     );
 
-    const closeMenu =
-        (): void => {
-            setMenuOpen(false);
-        };
+    function closeMenu():
+        void {
+        setMenuOpen(
+            false
+        );
+    }
 
     return (
         <>
@@ -230,8 +256,15 @@ function Navbar() {
                         )
                     }
                 >
+                    {/* ------------------------------------------------------ */}
+                    {/* Brand                                                  */}
+                    {/* ------------------------------------------------------ */}
+
                     <Link
                         to="/"
+                        onClick={
+                            closeMenu
+                        }
                         className="
                             inline-flex
                             min-w-0
@@ -246,9 +279,10 @@ function Navbar() {
                             no-underline
                             transition
                             hover:bg-white/15
-                            focus-visible:outline-warning
+                            focus-visible:outline-none
+                            focus-visible:ring-2
+                            focus-visible:ring-white
                         "
-                        onClick={closeMenu}
                     >
                         <span
                             aria-hidden="true"
@@ -266,9 +300,15 @@ function Navbar() {
                                 max-[560px]:max-w-[150px]
                             "
                         >
-                            {t("app.title")}
+                            {t(
+                                "app.title"
+                            )}
                         </span>
                     </Link>
+
+                    {/* ------------------------------------------------------ */}
+                    {/* Actions                                                */}
+                    {/* ------------------------------------------------------ */}
 
                     <div
                         className="
@@ -279,18 +319,6 @@ function Navbar() {
                     >
                         <button
                             type="button"
-                            className="
-                                inline-grid
-                                size-[38px]
-                                place-items-center
-                                rounded-control
-                                border-0
-                                bg-white/10
-                                text-base
-                                text-white
-                                transition
-                                hover:bg-white/20
-                            "
                             aria-label={
                                 t(
                                     "navbar.search"
@@ -302,18 +330,52 @@ function Navbar() {
                                 )
                             }
                             onClick={() => {
-                                setMenuOpen(false);
-                                setSearchOpen(true);
+                                setMenuOpen(
+                                    false
+                                );
+
+                                setSearchOpen(
+                                    true
+                                );
                             }}
+                            className="
+                                inline-grid
+                                size-[38px]
+                                place-items-center
+                                rounded-control
+                                border-0
+                                bg-white/10
+                                text-base
+                                text-white
+                                transition
+                                hover:bg-white/20
+                                focus-visible:outline-none
+                                focus-visible:ring-2
+                                focus-visible:ring-white
+                            "
                         >
-                            <span aria-hidden="true">
+                            <span
+                                aria-hidden="true"
+                            >
                                 🔍
                             </span>
                         </button>
 
                         <button
-                            ref={toggleRef}
+                            ref={
+                                toggleRef
+                            }
                             type="button"
+                            aria-controls="main-navigation-menu"
+                            aria-expanded={
+                                menuOpen
+                            }
+                            onClick={() => {
+                                setMenuOpen(
+                                    current =>
+                                        !current
+                                );
+                            }}
                             className="
                                 inline-flex
                                 min-h-[38px]
@@ -329,34 +391,39 @@ function Navbar() {
                                 text-white
                                 transition
                                 hover:bg-white/20
+                                focus-visible:outline-none
+                                focus-visible:ring-2
+                                focus-visible:ring-white
                             "
-                            aria-controls="main-navigation-menu"
-                            aria-expanded={menuOpen}
-                            onClick={() => {
-                                setMenuOpen(
-                                    current =>
-                                        !current
-                                );
-                            }}
                         >
-                            <span aria-hidden="true">
+                            <span
+                                aria-hidden="true"
+                            >
                                 ☰
                             </span>
 
                             <span>
-                                {t("navbar.menu")}
+                                {t(
+                                    "navbar.menu"
+                                )}
                             </span>
                         </button>
                     </div>
 
+                    {/* ------------------------------------------------------ */}
+                    {/* Menu                                                   */}
+                    {/* ------------------------------------------------------ */}
+
                     {menuOpen ? (
                         <div
-                            ref={menuRef}
+                            ref={
+                                menuRef
+                            }
                             id="main-navigation-menu"
                             className="
                                 absolute
+                                end-3
                                 top-[calc(100%+8px)]
-                                right-3
                                 grid
                                 max-h-[calc(100vh-76px)]
                                 w-[min(620px,calc(100vw-24px))]
@@ -365,7 +432,7 @@ function Navbar() {
                                 overflow-y-auto
                                 rounded-panel
                                 border
-                                border-dino-100
+                                border-line
                                 bg-surface
                                 p-3
                                 text-ink
@@ -376,6 +443,10 @@ function Navbar() {
                                 max-[560px]:grid-cols-1
                             "
                         >
+                            {/* ---------------------------------------------- */}
+                            {/* Learning                                       */}
+                            {/* ---------------------------------------------- */}
+
                             <NavigationGroup
                                 title={
                                     t(
@@ -449,6 +520,10 @@ function Navbar() {
                                 />
                             </NavigationGroup>
 
+                            {/* ---------------------------------------------- */}
+                            {/* Discovery                                      */}
+                            {/* ---------------------------------------------- */}
+
                             <NavigationGroup
                                 title={
                                     t(
@@ -489,6 +564,10 @@ function Navbar() {
                                 />
                             </NavigationGroup>
 
+                            {/* ---------------------------------------------- */}
+                            {/* Services                                       */}
+                            {/* ---------------------------------------------- */}
+
                             <NavigationGroup
                                 title={
                                     t(
@@ -515,6 +594,10 @@ function Navbar() {
                                     }
                                 />
                             </NavigationGroup>
+
+                            {/* ---------------------------------------------- */}
+                            {/* Account                                        */}
+                            {/* ---------------------------------------------- */}
 
                             <NavigationGroup
                                 title={
@@ -567,14 +650,22 @@ function Navbar() {
             </header>
 
             <SearchDialog
-                open={searchOpen}
+                open={
+                    searchOpen
+                }
                 onClose={() => {
-                    setSearchOpen(false);
+                    setSearchOpen(
+                        false
+                    );
                 }}
             />
         </>
     );
 }
+
+/* -------------------------------------------------------------------------- */
+/* Group                                                                      */
+/* -------------------------------------------------------------------------- */
 
 function NavigationGroup({
     title,
@@ -586,8 +677,8 @@ function NavigationGroup({
             className={`
                 rounded-card
                 border
-                border-line-soft
-                bg-surface-soft
+                border-line
+                bg-neutral-50
                 p-3
                 ${className}
             `}
@@ -600,7 +691,7 @@ function NavigationGroup({
                     uppercase
                     leading-tight
                     tracking-[0.08em]
-                    text-ink-soft
+                    text-muted
                 "
             >
                 {title}
@@ -611,10 +702,12 @@ function NavigationGroup({
     );
 }
 
+/* -------------------------------------------------------------------------- */
+/* Active navigation                                                          */
+/* -------------------------------------------------------------------------- */
+
 /**
  * Shipped navigation destination.
- *
- * NavLink provides active route state without duplicating route parsing.
  */
 function NavigationLink({
     to,
@@ -624,11 +717,15 @@ function NavigationLink({
 }: NavigationLinkProps) {
     return (
         <NavLink
-            to={to}
+            to={
+                to
+            }
             end={
                 to === "/"
             }
-            onClick={onNavigate}
+            onClick={
+                onNavigate
+            }
             className={
                 ({
                     isActive
@@ -645,6 +742,9 @@ function NavigationLink({
                     font-semibold
                     no-underline
                     transition
+                    focus-visible:outline-none
+                    focus-visible:ring-2
+                    focus-visible:ring-dino-500
                     ${
                         isActive
                             ? `
@@ -653,7 +753,7 @@ function NavigationLink({
                                 shadow-[inset_3px_0_0_var(--color-dino-600)]
                             `
                             : `
-                                text-ink-soft
+                                text-ink
                                 hover:bg-dino-50
                                 hover:text-dino-700
                             `
@@ -673,12 +773,20 @@ function NavigationLink({
                 {icon}
             </span>
 
-            <span className="min-w-0">
+            <span
+                className="
+                    min-w-0
+                "
+            >
                 {label}
             </span>
         </NavLink>
     );
 }
+
+/* -------------------------------------------------------------------------- */
+/* Planned destinations                                                       */
+/* -------------------------------------------------------------------------- */
 
 /**
  * Roadmap destination visible in the information architecture but not shipped.
@@ -691,6 +799,10 @@ function PlannedNavigationLink({
 }: PlannedNavigationLinkProps) {
     return (
         <div
+            aria-disabled="true"
+            title={
+                unavailableLabel
+            }
             className="
                 flex
                 min-h-[42px]
@@ -704,8 +816,6 @@ function PlannedNavigationLink({
                 text-muted
                 opacity-75
             "
-            aria-disabled="true"
-            title={unavailableLabel}
         >
             <span
                 className="
@@ -732,7 +842,7 @@ function PlannedNavigationLink({
                 className="
                     shrink-0
                     rounded-full
-                    bg-line-soft
+                    bg-neutral-200
                     px-1.5
                     py-0.5
                     text-[10px]
