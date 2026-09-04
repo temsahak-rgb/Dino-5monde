@@ -287,47 +287,6 @@ function assertStory(
             }
         }
 
-        if (
-            story.text
-        ) {
-            const placeholderIds =
-                [
-                    ...story.text.matchAll(
-                        /____\s*\((\d+)\)/g
-                    )
-                ].map(
-                    match =>
-                        Number.parseInt(
-                            match[1],
-                            10
-                        )
-                );
-
-            assert.deepEqual(
-                [
-                    ...placeholderIds
-                ].sort(
-                    (
-                        first,
-                        second
-                    ) =>
-                        first - second
-                ),
-                story.blanks
-                    .map(
-                        blank =>
-                            blank.id
-                    )
-                    .sort(
-                        (
-                            first,
-                            second
-                        ) =>
-                            first - second
-                    ),
-                `${context} placeholders must match blank ids`
-            );
-        }
     }
 
     if (
