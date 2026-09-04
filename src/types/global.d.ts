@@ -23,6 +23,11 @@ export type AppSection =
     | "vocabulary"
     | "travel";
 
+export type InstitutionalPage =
+    | "about"
+    | "contact"
+    | "work-with-us";
+
 export type LessonStatus =
     | "not_started"
     | "in_progress"

@@ -47,7 +47,7 @@ function renderNavbar(): string {
  * @returns Complete navbar HTML.
  */
 function renderNavbarView(
-    currentSection: AppSection
+    currentSection: AppSection | null
 ): string {
     return `
         <nav
@@ -171,7 +171,7 @@ function renderNavbarBrandView(): string {
 function renderNavbarSectionItemView(
     section: AppSection,
     label: string,
-    currentSection: AppSection
+    currentSection: AppSection | null
 ): string {
     const active =
         currentSection === section;
