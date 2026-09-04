@@ -1,3 +1,7 @@
+import {
+    getStaticDataUrl
+} from "../../core/staticData.js";
+
 import type {
     SearchIndex
 } from "../../types/global.js";
@@ -14,13 +18,19 @@ type SearchFetch =
 
 let searchIndexPromise:
     Promise<SearchIndex>
-    | null = null;
+    | null =
+    null;
+
+/* -------------------------------------------------------------------------- */
+/* Validation                                                                 */
+/* -------------------------------------------------------------------------- */
 
 function isSearchIndex(
     value: unknown
 ): value is SearchIndex {
     if (
-        typeof value !== "object"
+        typeof value
+            !== "object"
         || value === null
     ) {
         return false;
@@ -29,7 +39,9 @@ function isSearchIndex(
     const candidate =
         value as Partial<SearchIndex>;
 
-    return candidate.version === 1
+    return (
+        candidate.version
+            === 1
         && Array.isArray(
             candidate.vocab
         )
@@ -38,15 +50,37 @@ function isSearchIndex(
         )
         && Array.isArray(
             candidate.news
-        );
+        )
+    );
 }
 
+/* -------------------------------------------------------------------------- */
+/* Loading                                                                    */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Fetches the generated application-wide search index.
+ *
+ * `search-index.json` is emitted at the application root during the Vite
+ * build. Resolving it through staticData prevents nested React routes such as:
+ *
+ * /journal/:articleId
+ * /grammar/lesson/:lessonId
+ *
+ * from incorrectly requesting:
+ *
+ * /journal/search-index.json
+ * /grammar/lesson/search-index.json
+ */
 async function fetchSearchIndex(
-    fetcher: SearchFetch
+    fetcher:
+        SearchFetch
 ): Promise<SearchIndex> {
     const response =
         await fetcher(
-            "./search-index.json"
+            getStaticDataUrl(
+                "search-index.json"
+            )
         );
 
     if (!response.ok) {
@@ -55,10 +89,15 @@ async function fetchSearchIndex(
         );
     }
 
-    const index: unknown =
+    const index:
+        unknown =
         await response.json();
 
-    if (!isSearchIndex(index)) {
+    if (
+        !isSearchIndex(
+            index
+        )
+    ) {
         throw new Error(
             "Search index payload is invalid."
         );
@@ -68,12 +107,17 @@ async function fetchSearchIndex(
 }
 
 /**
- * Loads the generated search index once per page, including while the first
- * request is still pending. Failed requests are evicted so a retry can heal a
- * transient network error.
+ * Loads the generated search index once per application session.
+ *
+ * Concurrent callers share the same pending Promise.
+ *
+ * Failed requests are removed from the cache so a later search can retry
+ * without requiring a page reload.
  */
 function loadSearchIndex(
-    fetcher: SearchFetch = fetch
+    fetcher:
+        SearchFetch =
+        fetch
 ): Promise<SearchIndex> {
     if (!searchIndexPromise) {
         searchIndexPromise =
@@ -92,10 +136,17 @@ function loadSearchIndex(
     return searchIndexPromise;
 }
 
+/* -------------------------------------------------------------------------- */
+/* Cache                                                                      */
+/* -------------------------------------------------------------------------- */
+
 /**
- * Clears the in-memory cache. Exposed for deterministic tests only.
+ * Clears the in-memory index cache.
+ *
+ * Primarily useful for deterministic tests.
  */
-function resetSearchIndexCache(): void {
+function resetSearchIndexCache():
+    void {
     searchIndexPromise =
         null;
 }

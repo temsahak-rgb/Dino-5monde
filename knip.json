@@ -1,14 +1,18 @@
 {
   "entry": [
-    "app.ts",
+    "src/main.tsx",
     "src/**/*.ts",
+    "src/**/*.tsx",
     "tests/**/*.test.ts",
     "tests/e2e/**/*.spec.ts",
-    "tools/**/*.ts"
+    "tools/**/*.ts",
+    "vite.config.ts"
   ],
   "project": [
     "src/**/*.ts",
+    "src/**/*.tsx",
     "tests/**/*.ts",
-    "tools/**/*.ts"
+    "tools/**/*.ts",
+    "vite.config.ts"
   ]
 }

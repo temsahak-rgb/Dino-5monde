@@ -1,3 +1,7 @@
+import {
+    getStaticDataUrl
+} from "./staticData.js";
+
 import type {
     Level,
     PlacementLevelEstimate,
@@ -41,7 +45,8 @@ let placementState:
  *
  * @returns Fresh placement state.
  */
-function createInitialPlacementState(): PlacementState {
+function createInitialPlacementState():
+    PlacementState {
     return {
         asked: [],
         currentDifficulty:
@@ -56,11 +61,14 @@ function createInitialPlacementState(): PlacementState {
 /**
  * Loads placement questions from the static data repository.
  */
-async function loadPlacementQuestions(): Promise<void> {
+async function loadPlacementQuestions():
+    Promise<void> {
     try {
         const response =
             await fetch(
-                "./data/placement.json"
+                getStaticDataUrl(
+                    "data/placement.json"
+                )
             );
 
         if (!response.ok) {
@@ -69,7 +77,10 @@ async function loadPlacementQuestions(): Promise<void> {
             );
         }
 
-        placementQuestions = (await response.json()) as PlacementQuestion[];
+        placementQuestions =
+            (
+                await response.json()
+            ) as PlacementQuestion[];
 
         console.log(
             `Placement questions loaded: ${placementQuestions.length}`
@@ -89,7 +100,8 @@ async function loadPlacementQuestions(): Promise<void> {
  *
  * @returns Placement question collection.
  */
-function getPlacementQuestions(): PlacementQuestion[] {
+function getPlacementQuestions():
+    PlacementQuestion[] {
     return placementQuestions;
 }
 
@@ -101,7 +113,8 @@ function getPlacementQuestions(): PlacementQuestion[] {
  *
  * @returns Next placement question, or null when the test has finished.
  */
-function getNextQuestion(): PlacementQuestion | null {
+function getNextQuestion():
+    PlacementQuestion | null {
     if (
         placementState.finished
     ) {
@@ -276,11 +289,12 @@ function finishPlacement(
 }
 
 /**
- * Returns the mutable placement state used by the onboarding controller.
+ * Returns the mutable placement state used by the onboarding flow.
  *
  * @returns Current placement state.
  */
-function getPlacementState(): PlacementState {
+function getPlacementState():
+    PlacementState {
     return placementState;
 }
 
@@ -289,7 +303,8 @@ function getPlacementState(): PlacementState {
  *
  * @returns Current question or null.
  */
-function getCurrentQuestion(): PlacementQuestion | null {
+function getCurrentQuestion():
+    PlacementQuestion | null {
     return currentQuestion;
 }
 
@@ -301,7 +316,8 @@ function getCurrentQuestion(): PlacementQuestion | null {
  *
  * @returns Estimated CEFR level and range.
  */
-function getEstimatedLevelRange(): PlacementLevelEstimate {
+function getEstimatedLevelRange():
+    PlacementLevelEstimate {
     const difficulty =
         placementState.currentDifficulty;
 
@@ -368,7 +384,8 @@ function getEstimatedLevelRange(): PlacementLevelEstimate {
 /**
  * Resets the placement test to its initial state.
  */
-function resetPlacementState(): void {
+function resetPlacementState():
+    void {
     placementState =
         createInitialPlacementState();
 
@@ -400,7 +417,8 @@ function savePlacementResult(
  *
  * @returns Persisted CEFR level or null.
  */
-function getPlacementResult(): Level | null {
+function getPlacementResult():
+    Level | null {
     const level =
         localStorage.getItem(
             "placementResult"

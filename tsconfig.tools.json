@@ -3,16 +3,25 @@
     "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+    "moduleDetection": "force",
+    "verbatimModuleSyntax": true,
     "strict": true,
+    "noImplicitAny": true,
     "noEmit": true,
     "skipLibCheck": true,
+    "resolveJsonModule": true,
     "types": [
       "node"
     ]
   },
   "include": [
+    "vite.config.ts",
     "playwright.config.ts",
     "tools/**/*.ts",
     "tests/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }

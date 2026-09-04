@@ -1,4 +1,7 @@
-import { loadSpecificLesson } from "../../core/pathEngine.js";
+import {
+    getStaticDataUrl
+} from "../../core/staticData.js";
+
 import type {
     TravelLesson,
     TravelLessonIndex,
@@ -13,35 +16,71 @@ export {
 
 /**
  * Travel lesson loading, caching, and section metadata helpers.
+ *
+ * Travel is now independent from the historical pathEngine. Static resources
+ * are resolved from the application root so nested React routes such as:
+ *
+ * /travel/TRAVEL-001
+ *
+ * never affect data loading.
  */
 
 interface TravelDataCache {
-    index: TravelLessonIndex[] | null;
-    lessons: Record<string, TravelLesson>;
+    index:
+        TravelLessonIndex[]
+        | null;
+
+    lessons:
+        Record<
+            string,
+            TravelLesson
+        >;
 }
 
-const travelDataCache: TravelDataCache = {
-    index: null,
-    lessons: {}
-};
+const travelDataCache:
+    TravelDataCache = {
+        index:
+            null,
+
+        lessons:
+            {}
+    };
+
+/* -------------------------------------------------------------------------- */
+/* Catalog                                                                     */
+/* -------------------------------------------------------------------------- */
 
 /**
  * Loads and caches the Travel lesson index.
  *
+ * Corpus location:
+ *
+ * data/travel/lessons.json
+ *
  * @returns Travel lesson index.
  */
-async function loadTravelIndex(): Promise<TravelLessonIndex[]> {
-    if (travelDataCache.index) {
-        return travelDataCache.index;
+async function loadTravelIndex():
+    Promise<TravelLessonIndex[]> {
+    if (
+        travelDataCache.index
+        !== null
+    ) {
+        return (
+            travelDataCache.index
+        );
     }
 
     try {
-        const response = await fetch(
-            "./data/travel/lessons.json",
-            {
-                cache: "no-store"
-            }
-        );
+        const response =
+            await fetch(
+                getStaticDataUrl(
+                    "data/travel/lessons.json"
+                ),
+                {
+                    cache:
+                        "no-store"
+                }
+            );
 
         if (!response.ok) {
             throw new Error(
@@ -49,14 +88,22 @@ async function loadTravelIndex(): Promise<TravelLessonIndex[]> {
             );
         }
 
-        const lessons = (await response.json()) as unknown;
+        const data =
+            (
+                await response.json()
+            ) as unknown;
 
-        travelDataCache.index =
-            Array.isArray(lessons)
-                ? lessons as TravelLessonIndex[]
+        const lessons =
+            Array.isArray(
+                data
+            )
+                ? data as TravelLessonIndex[]
                 : [];
 
-        return travelDataCache.index;
+        travelDataCache.index =
+            lessons;
+
+        return lessons;
     } catch (error) {
         console.error(
             "Error loading Travel index:",
@@ -67,8 +114,16 @@ async function loadTravelIndex(): Promise<TravelLessonIndex[]> {
     }
 }
 
+/* -------------------------------------------------------------------------- */
+/* Lesson                                                                      */
+/* -------------------------------------------------------------------------- */
+
 /**
- * Loads and caches one Travel lesson by its canonical index id.
+ * Loads and caches one Travel lesson by its canonical index identifier.
+ *
+ * Corpus location:
+ *
+ * data/travel/lessons/{lessonId}.json
  *
  * @param lessonId - Canonical Travel lesson identifier.
  * @returns Loaded Travel lesson, or null when unavailable.
@@ -76,54 +131,105 @@ async function loadTravelIndex(): Promise<TravelLessonIndex[]> {
 async function loadTravelLesson(
     lessonId: string
 ): Promise<TravelLesson | null> {
+    const normalizedLessonId =
+        lessonId.trim();
+
+    if (!normalizedLessonId) {
+        return null;
+    }
+
     const cached =
         travelDataCache.lessons[
-            lessonId
+            normalizedLessonId
         ];
 
     if (cached) {
         return cached;
     }
 
-    const lesson =
-        await loadSpecificLesson<TravelLesson>(
-            "travel",
-            lessonId
+    try {
+        const response =
+            await fetch(
+                getStaticDataUrl(
+                    `data/travel/lessons/${encodeURIComponent(
+                        normalizedLessonId
+                    )}.json`
+                )
+            );
+
+        if (!response.ok) {
+            throw new Error(
+                `HTTP ${response.status}`
+            );
+        }
+
+        const lesson =
+            (
+                await response.json()
+            ) as TravelLesson;
+
+        if (
+            lesson.id
+            !== normalizedLessonId
+        ) {
+            console.warn(
+                "Travel lesson id mismatch:",
+                normalizedLessonId,
+                lesson.id
+            );
+        }
+
+        travelDataCache.lessons[
+            normalizedLessonId
+        ] = lesson;
+
+        console.log(
+            `Travel lesson loaded: ${normalizedLessonId}`
         );
 
-    if (!lesson) {
+        return lesson;
+    } catch (error) {
+        console.error(
+            `Failed to load Travel lesson: ${normalizedLessonId}`,
+            error
+        );
+
         return null;
     }
-
-    if (
-        lesson.id !== lessonId
-    ) {
-        console.warn(
-            "Travel lesson id mismatch:",
-            lessonId,
-            lesson.id
-        );
-    }
-
-    travelDataCache.lessons[
-        lessonId
-    ] = lesson;
-
-    return lesson;
 }
+
+/* -------------------------------------------------------------------------- */
+/* Sections                                                                    */
+/* -------------------------------------------------------------------------- */
 
 /**
  * Normalizes supported Travel section containers to a single array.
  *
- * Some Travel data uses `miniLessons`, while other files use `sections`.
- * Consumers should use this helper instead of depending on either storage
- * shape directly.
+ * Historical Travel data exists in two compatible shapes:
+ *
+ * {
+ *     miniLessons: [...]
+ * }
+ *
+ * and:
+ *
+ * {
+ *     sections: [...]
+ * }
+ *
+ * Consumers must use this function rather than depending directly on either
+ * corpus representation.
+ *
+ * `miniLessons` keeps priority to preserve the historical behavior.
  *
  * @param lesson - Travel lesson.
  * @returns Normalized Travel sections.
  */
 function getTravelSections(
-    lesson: TravelLesson | null | undefined
+    lesson:
+        TravelLesson
+        | null
+        | undefined
 ): TravelSection[] {
     if (!lesson) {
         return [];
@@ -134,7 +240,9 @@ function getTravelSections(
             lesson.miniLessons
         )
     ) {
-        return lesson.miniLessons;
+        return (
+            lesson.miniLessons
+        );
     }
 
     if (
@@ -142,7 +250,9 @@ function getTravelSections(
             lesson.sections
         )
     ) {
-        return lesson.sections;
+        return (
+            lesson.sections
+        );
     }
 
     return [];
