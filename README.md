@@ -58,6 +58,8 @@ data                 → contenu pédagogique JSON
 
 L'application est compilée en **ES modules**. `index.html` charge uniquement `app.js` avec `type="module"` ; chaque dépendance applicative ou de type est déclarée par un `import`, et les API partagées sont exportées explicitement.
 
+Les écrans durables ont une URL canonique en query string (`?view=grammar&level=A1`, `?view=travel&lesson=TR-006`, etc.). Ces liens supportent l’ouverture directe, le rechargement et l’historique arrière/avant ; l’état temporaire d’un exercice ou d’un jeu reste volontairement hors URL.
+
 Le [graphe de dépendances](docs/dependency-graph.md) est généré depuis ces imports réels avec `npm run graph:dependencies`. Il fournit une vue agrégée par couche puis des cartes repliables par domaine ; les imports de types sont suivis mais masqués pour conserver un dessin lisible. Le générateur rejette tout cycle d'exécution et les tests verrouillent les frontières entre couches. Le workflow GitHub Actions **Dependency graph** est volontairement indépendant de la CI des PR : il se lance manuellement avec `workflow_dispatch` pour régénérer le graphe et vérifier que la version suivie par Git est à jour.
 
 ---

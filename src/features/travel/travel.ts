@@ -1,5 +1,9 @@
 import { markSectionCompleted } from "../../core/progressEngine.js";
 import {
+    navigateBack,
+    navigateToRoute
+} from "../../core/navigation.js";
+import {
     getTravelSections,
     loadTravelIndex,
     loadTravelLesson
@@ -20,6 +24,7 @@ import {
 } from "../../ui/views/travelView.js";
 
 export {
+    showTravelLesson,
     showTravelPage
 };
 
@@ -75,9 +80,11 @@ function bindTravelCatalogEvents(): void {
                 return;
             }
 
-            void showTravelLesson(
+            void navigateToRoute({
+                view: "travel",
+                target: "lesson",
                 lessonId
-            );
+            });
         };
     });
 }
@@ -105,7 +112,10 @@ async function showTravelLesson(
         getRequiredElement<HTMLButtonElement>(
             "travel-error-back"
         ).onclick = () => {
-            void showTravelPage();
+            void navigateBack({
+                view: "travel",
+                target: "index"
+            });
         };
 
         return;
@@ -145,7 +155,10 @@ function bindTravelLessonEvents(
     getRequiredElement<HTMLButtonElement>(
         "travel-back"
     ).onclick = () => {
-        void showTravelPage();
+        void navigateBack({
+            view: "travel",
+            target: "index"
+        });
     };
 
     const sectionCards =

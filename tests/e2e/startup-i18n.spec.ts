@@ -243,11 +243,20 @@ test.describe(
                     page.getByRole(
                         "heading",
                         {
-                            name:
-                                "سلام، ادامه بده!"
+                            name: "گرامر",
+                            exact: true
                         }
                     )
                 ).toBeVisible();
+                await expect(
+                    page.getByText(
+                        "سطح دستور زبان خود را انتخاب کنید.",
+                        { exact: true }
+                    )
+                ).toBeVisible();
+                await expect(page).toHaveURL(
+                    /\?view=grammar$/
+                );
 
                 await page.getByRole(
                     "button",

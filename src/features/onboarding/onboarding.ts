@@ -1,4 +1,4 @@
-import { navigateToSection } from "../../core/navigation.js";
+import { restoreRequestedRoute } from "../../core/navigation.js";
 import {
     answerPlacement,
     getEstimatedLevelRange,
@@ -134,7 +134,9 @@ function selectLearningPath(
         path
     );
 
-    void navigateToSection("home");
+    void restoreRequestedRoute({
+        focus: true
+    });
 }
 
 /**

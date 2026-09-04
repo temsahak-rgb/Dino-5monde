@@ -69,7 +69,7 @@ function renderFooterLink(
 
     return `
         <a
-            href="#${page}"
+            href="?view=info&amp;page=${page}"
             data-institutional-page="${page}"
             ${active ? 'aria-current="page"' : ""}
         >

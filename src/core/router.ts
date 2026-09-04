@@ -1,17 +1,16 @@
 import {
     parseAppSection,
-    registerNavigationHandler
+    registerNavigationHandlers,
+    type NavigationOptions
 } from "./navigation.js";
-import { showGrammarPage } from "../features/grammar/grammar.js";
 import {
-    showJournalPage
-} from "../features/news/news.js";
-import {
-    openSearch
-} from "../features/search/search.js";
-import { showTravelPage } from "../features/travel/travel.js";
-import { showVocabularyPage } from "../features/vocabulary/vocabulary.js";
-import { showHome } from "../pages/home.js";
+    createSectionRoute,
+    parseAppRoute,
+    serializeAppRoute,
+    type AppRoute
+} from "./routeEngine.js";
+import { presentRoute } from "./routePresentation.js";
+import { openSearch } from "../features/search/search.js";
 import type { AppSection } from "../types/global.js";
 import { app } from "../ui/ui.js";
 
@@ -21,12 +20,176 @@ export {
 };
 
 /**
- * Application top-level router and navbar interaction controller.
+ * Application router and navbar interaction controller.
  *
- * Navigation HTML is delegated to `src/ui/views/navbarView.ts`.
+ * This module is the sole owner of browser URL and history mutations.
+ * Route rendering and visual transitions are delegated to
+ * `routePresentation.ts`.
  */
 
+interface DinoHistoryState {
+    dinoRoute: true;
+    index: number;
+}
+
 let navbarDelegatedEventsBound = false;
+let routerStarted = false;
+let historyIndex = 0;
+let navigationQueue = Promise.resolve();
+
+function isDinoHistoryState(
+    value: unknown
+): value is DinoHistoryState {
+    if (
+        typeof value !== "object"
+        || value === null
+    ) {
+        return false;
+    }
+
+    const candidate = value as Partial<DinoHistoryState>;
+
+    return (
+        candidate.dinoRoute === true
+        && typeof candidate.index === "number"
+        && Number.isSafeInteger(candidate.index)
+        && candidate.index >= 0
+    );
+}
+
+/** Serializes rendering so async data loads cannot overtake a route. */
+function enqueueNavigation(
+    task: () => Promise<void>
+): Promise<void> {
+    const result = navigationQueue.then(
+        task,
+        task
+    );
+
+    navigationQueue = result.catch(
+        () => undefined
+    );
+
+    return result;
+}
+
+function getRouteUrl(
+    route: AppRoute
+): string {
+    return `${window.location.pathname}${serializeAppRoute(route)}`;
+}
+
+async function performNavigation(
+    requestedRoute: AppRoute,
+    options: NavigationOptions = {}
+): Promise<void> {
+    routerStarted = true;
+    const route = parseAppRoute(
+        serializeAppRoute(
+            requestedRoute
+        )
+    ) ?? { view: "home" };
+    const routeUrl = getRouteUrl(route);
+    const currentUrl =
+        `${window.location.pathname}${window.location.search}`;
+
+    if (
+        options.replace
+        || routeUrl === currentUrl
+    ) {
+        window.history.replaceState(
+            {
+                dinoRoute: true,
+                index: historyIndex
+            } satisfies DinoHistoryState,
+            "",
+            routeUrl
+        );
+    } else {
+        historyIndex += 1;
+        window.history.pushState(
+            {
+                dinoRoute: true,
+                index: historyIndex
+            } satisfies DinoHistoryState,
+            "",
+            routeUrl
+        );
+    }
+
+    closeNavigationMenu();
+    await presentRoute(
+        route,
+        options.focus ?? true
+    );
+}
+
+/** Restores, validates and canonicalizes the current query string. */
+async function restoreRequestedRoute(
+    options: Pick<NavigationOptions, "focus"> = {}
+): Promise<void> {
+    routerStarted = true;
+
+    const parsed = parseAppRoute(
+        window.location.search
+    );
+    const route: AppRoute = parsed ?? { view: "home" };
+    const state = window.history.state;
+
+    historyIndex = isDinoHistoryState(state)
+        ? state.index
+        : 0;
+
+    window.history.replaceState(
+        {
+            dinoRoute: true,
+            index: historyIndex
+        } satisfies DinoHistoryState,
+        "",
+        getRouteUrl(route)
+    );
+
+    closeNavigationMenu();
+    await presentRoute(
+        route,
+        options.focus ?? false
+    );
+}
+
+/** Uses in-app history when available and a stable parent otherwise. */
+async function navigateBack(
+    fallback: AppRoute
+): Promise<void> {
+    if (historyIndex > 0) {
+        window.history.back();
+        return;
+    }
+
+    await performNavigation(
+        fallback,
+        {
+            replace: true,
+            focus: true
+        }
+    );
+}
+
+function handlePopState(
+    event: PopStateEvent
+): void {
+    if (!routerStarted) {
+        return;
+    }
+
+    const state = event.state;
+    historyIndex = isDinoHistoryState(state)
+        ? state.index
+        : 0;
+
+    void enqueueNavigation(
+        () => restoreRequestedRoute({ focus: true })
+    );
+}
 
 /**
  * Applies one consistent visual and accessibility state to the header menu.
@@ -105,34 +268,11 @@ function closeNavigationMenu(
 async function switchSection(
     section: AppSection
 ): Promise<void> {
-    localStorage.setItem(
-        "currentSection",
-        section
+    await enqueueNavigation(
+        () => performNavigation(
+            createSectionRoute(section)
+        )
     );
-
-    closeNavigationMenu();
-
-    switch (section) {
-        case "home":
-            await showHome();
-            break;
-
-        case "grammar":
-            await showGrammarPage();
-            break;
-
-        case "vocabulary":
-            await showVocabularyPage();
-            break;
-
-        case "travel":
-            await showTravelPage();
-            break;
-
-        case "journal":
-            await showJournalPage();
-            break;
-    }
 }
 
 /**
@@ -251,12 +391,23 @@ function bindNavbarDelegatedEvents(): void {
     navbarDelegatedEventsBound = true;
 }
 
-/**
- * Installs the application-wide navigation event delegation once.
- */
+/** Installs navigation without rendering before onboarding has completed. */
 function initializeRouter(): void {
-    registerNavigationHandler(
-        switchSection
-    );
+    registerNavigationHandlers({
+        navigate: (route, options) => enqueueNavigation(
+            () => performNavigation(route, options)
+        ),
+        restore: options => enqueueNavigation(
+            () => restoreRequestedRoute(options)
+        ),
+        back: fallback => enqueueNavigation(
+            () => navigateBack(fallback)
+        )
+    });
     bindNavbarDelegatedEvents();
+    window.addEventListener(
+        "popstate",
+        handlePopState
+    );
+    window.history.scrollRestoration = "manual";
 }

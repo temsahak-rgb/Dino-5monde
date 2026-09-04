@@ -7,6 +7,10 @@ import {
     markSectionCompleted
 } from "../../core/progressEngine.js";
 import {
+    navigateBack,
+    navigateToRoute
+} from "../../core/navigation.js";
+import {
     getGrammar,
     getLessonStatus,
     getRecommendedGrammar,
@@ -23,10 +27,10 @@ import {
 import { t } from "../../i18n/i18n.js";
 import { showExerciseContent } from "../exercises/exercises.js";
 import type {
+    GrammarLevel,
     GrammarLessonIndex,
     LessonContentSection,
-    LessonData,
-    Level
+    LessonData
 } from "../../types/global.js";
 import {
     app,
@@ -45,6 +49,7 @@ import {
 
 export {
     showGrammarLesson,
+    showGrammarLevel,
     showGrammarPage,
     showLessonContent
 };
@@ -81,9 +86,11 @@ async function showGrammarPage(): Promise<void> {
                     return;
                 }
 
-                void showGrammarLevel(
+                void navigateToRoute({
+                    view: "grammar",
+                    target: "level",
                     level
-                );
+                });
             };
         }
     );
@@ -91,7 +98,7 @@ async function showGrammarPage(): Promise<void> {
 
 /** Displays the grammar catalog for one selected CEFR level. */
 async function showGrammarLevel(
-    level: Level
+    level: GrammarLevel
 ): Promise<void> {
 
     app.innerHTML =
@@ -128,7 +135,10 @@ async function showGrammarLevel(
     getRequiredElement<HTMLButtonElement>(
         "grammar-level-back"
     ).onclick = () => {
-        void showGrammarPage();
+        void navigateBack({
+            view: "grammar",
+            target: "index"
+        });
     };
 
     bindGrammarCatalogEvents();
@@ -172,9 +182,11 @@ function bindGrammarCatalogEvents(): void {
                 return;
             }
 
-            void showGrammarLesson(
+            void navigateToRoute({
+                view: "grammar",
+                target: "lesson",
                 lessonId
-            );
+            });
         };
     });
 }
@@ -199,7 +211,10 @@ async function showGrammarLesson(
         getRequiredElement<HTMLButtonElement>(
             "grammar-error-back"
         ).onclick = () => {
-            void showGrammarPage();
+            void navigateBack({
+                view: "grammar",
+                target: "index"
+            });
         };
 
         return;
@@ -226,9 +241,11 @@ async function showGrammarLesson(
         getRequiredElement<HTMLButtonElement>(
             "grammar-error-back"
         ).onclick = () => {
-            void showGrammarLevel(
+            void navigateBack({
+                view: "grammar",
+                target: "level",
                 level
-            );
+            });
         };
 
         return;
@@ -272,14 +289,16 @@ async function showGrammarLesson(
  */
 function bindGrammarLessonEvents(
     lessonId: string,
-    level: Level
+    level: GrammarLevel
 ): void {
     getRequiredElement<HTMLButtonElement>(
         "back"
     ).onclick = () => {
-        void showGrammarLevel(
+        void navigateBack({
+            view: "grammar",
+            target: "level",
             level
-        );
+        });
     };
 
     const bookmarkButton =
@@ -385,7 +404,7 @@ async function showLessonSection(
 /** Validates a CEFR level received from a Grammar level card. */
 function parseGrammarLevel(
     value: string | undefined
-): Level | null {
+): GrammarLevel | null {
     switch (value) {
         case "A1":
         case "A2":

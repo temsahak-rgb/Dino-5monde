@@ -1,8 +1,9 @@
 import { getPlacementResult } from "../../core/placementEngine.js";
-import { navigateToSection } from "../../core/navigation.js";
-import { showGrammarLesson } from "../grammar/grammar.js";
+import {
+    navigateBack,
+    navigateToRoute
+} from "../../core/navigation.js";
 import type {
-    AppSection,
     Level,
     NewsArticle,
     NewsIndexItem
@@ -147,22 +148,6 @@ async function showJournalPage(): Promise<void> {
         renderNewsJournalView(
             news
         );
-
-    window.scrollTo(
-        0,
-        0
-    );
-}
-
-/**
- * Resolves the meaningful parent screen of a News detail.
- */
-function getNewsReturnSection(): AppSection {
-    return localStorage.getItem(
-        "currentSection"
-    ) === "journal"
-        ? "journal"
-        : "home";
 }
 
 /**
@@ -234,11 +219,6 @@ async function showNewsDetail(
             );
 
         bindNewsDetailEvents();
-
-        window.scrollTo(
-            0,
-            0
-        );
     } catch (error) {
         console.error(
             "News detail error:",
@@ -251,9 +231,10 @@ async function showNewsDetail(
         getRequiredElement<HTMLButtonElement>(
             "news-error-back"
         ).onclick = () => {
-            void navigateToSection(
-                getNewsReturnSection()
-            );
+            void navigateBack({
+                view: "journal",
+                target: "index"
+            });
         };
     }
 }
@@ -265,9 +246,10 @@ function bindNewsDetailEvents(): void {
     getRequiredElement<HTMLButtonElement>(
         "news-back"
     ).onclick = () => {
-        void navigateToSection(
-            getNewsReturnSection()
-        );
+        void navigateBack({
+            view: "journal",
+            target: "index"
+        });
     };
 
     getRequiredElement<HTMLButtonElement>(
@@ -300,9 +282,11 @@ function bindNewsDetailEvents(): void {
                 return;
             }
 
-            void showGrammarLesson(
-                grammarId
-            );
+            void navigateToRoute({
+                view: "grammar",
+                target: "lesson",
+                lessonId: grammarId
+            });
         };
     });
 }
@@ -425,9 +409,11 @@ function bindNewsDelegatedEvents(): void {
                 return;
             }
 
-            void showNewsDetail(
-                newsId
-            );
+            void navigateToRoute({
+                view: "journal",
+                target: "article",
+                articleId: newsId
+            });
         }
     );
 

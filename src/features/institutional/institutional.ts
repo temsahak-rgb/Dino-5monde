@@ -1,4 +1,7 @@
-import { navigateToSection } from "../../core/navigation.js";
+import {
+    navigateBack,
+    navigateToRoute
+} from "../../core/navigation.js";
 import type { InstitutionalPage } from "../../types/global.js";
 import { app } from "../../ui/ui.js";
 import {
@@ -9,6 +12,7 @@ import {
 export {
     initializeInstitutionalNavigation,
     parseInstitutionalPage,
+    setInstitutionalActivePage,
     showInstitutionalPage
 };
 
@@ -52,22 +56,24 @@ function renderFooter(): void {
         );
 }
 
+/** Synchronizes the persistent footer with the router-owned active route. */
+function setInstitutionalActivePage(
+    page: InstitutionalPage | null
+): void {
+    activePage = page;
+    renderFooter();
+}
+
 /**
  * Displays one institutional information page.
  */
 function showInstitutionalPage(
     page: InstitutionalPage
 ): void {
-    activePage = page;
     app.innerHTML =
         renderInstitutionalPageView(
             page
         );
-    renderFooter();
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
 }
 
 /**
@@ -94,13 +100,26 @@ function handleFooterClick(
         return;
     }
 
+    if (
+        event.defaultPrevented
+        || event.button !== 0
+        || event.metaKey
+        || event.ctrlKey
+        || event.shiftKey
+        || event.altKey
+    ) {
+        return;
+    }
+
     event.preventDefault();
-    showInstitutionalPage(page);
+    void navigateToRoute({
+        view: "info",
+        page
+    });
 }
 
 /**
- * Handles page actions and clears footer state when top-level navigation is
- * used from an institutional page.
+ * Handles navigation actions inside an institutional page.
  */
 function handleAppClick(
     event: MouseEvent
@@ -119,20 +138,9 @@ function handleAppClick(
         action?.dataset.institutionalAction
         === "home"
     ) {
-        activePage = null;
-        renderFooter();
-        void navigateToSection("home");
-        return;
-    }
-
-    if (
-        activePage
-        && target.closest(
-            "[data-nav-section]"
-        )
-    ) {
-        activePage = null;
-        renderFooter();
+        void navigateBack({
+            view: "home"
+        });
     }
 }
 

@@ -2,6 +2,10 @@ import {
     localizedValue,
     t
 } from "../../i18n/i18n.js";
+import {
+    navigateBack,
+    navigateToRoute
+} from "../../core/navigation.js";
 import type {
     Level,
     StoryDifficulty,
@@ -39,6 +43,7 @@ import { getAvailableVocabularyGames } from "./vocabularyGameEngine.js";
 import { startVocabularyMiniGame } from "./vocabularyGames.js";
 
 export {
+    showVocabLevel,
     showVocabPack,
     showVocabularyPage
 };
@@ -307,9 +312,11 @@ async function showVocabularyPage(): Promise<void> {
                     return;
                 }
 
-                void showVocabLevel(
+                void navigateToRoute({
+                    view: "vocabulary",
+                    target: "level",
                     level
-                );
+                });
             };
         }
     );
@@ -337,7 +344,10 @@ async function showVocabLevel(
     getRequiredElement<HTMLButtonElement>(
         "vocab-level-back"
     ).onclick = () => {
-        void showVocabularyPage();
+        void navigateBack({
+            view: "vocabulary",
+            target: "index"
+        });
     };
 
     queryElements<HTMLButtonElement>(
@@ -360,10 +370,12 @@ async function showVocabLevel(
                     return;
                 }
 
-                void showVocabPack(
-                    cardLevel,
+                void navigateToRoute({
+                    view: "vocabulary",
+                    target: "pack",
+                    level: cardLevel,
                     packId
-                );
+                });
             };
         }
     );
@@ -392,9 +404,11 @@ async function showVocabPack(
         getRequiredElement<HTMLButtonElement>(
             "vocab-unavailable-back"
         ).onclick = () => {
-            void showVocabLevel(
+            void navigateBack({
+                view: "vocabulary",
+                target: "level",
                 level
-            );
+            });
         };
 
         return;
@@ -457,9 +471,11 @@ function bindVocabPackEvents(
     getRequiredElement<HTMLButtonElement>(
         "vocab-pack-back"
     ).onclick = () => {
-        void showVocabLevel(
-            pack.level
-        );
+        void navigateBack({
+            view: "vocabulary",
+            target: "level",
+            level: pack.level
+        });
     };
 
     queryElements<HTMLButtonElement>(

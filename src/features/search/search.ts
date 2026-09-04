@@ -1,6 +1,4 @@
-import { showGrammarLesson } from "../grammar/grammar.js";
-import { showNewsDetail } from "../news/news.js";
-import { showVocabPack } from "../vocabulary/vocabulary.js";
+import { navigateToRoute } from "../../core/navigation.js";
 import {
     isSearchQueryReady,
     searchContent
@@ -412,10 +410,12 @@ function handleSearchResultClick(
             && packId
         ) {
             closeSearch();
-            void showVocabPack(
+            void navigateToRoute({
+                view: "vocabulary",
+                target: "pack",
                 level,
                 packId
-            );
+            });
         }
         return;
     }
@@ -427,9 +427,11 @@ function handleSearchResultClick(
         && result.dataset.grammarId
     ) {
         closeSearch();
-        void showGrammarLesson(
-            result.dataset.grammarId
-        );
+        void navigateToRoute({
+            view: "grammar",
+            target: "lesson",
+            lessonId: result.dataset.grammarId
+        });
         return;
     }
 
@@ -440,9 +442,11 @@ function handleSearchResultClick(
         && result.dataset.newsId
     ) {
         closeSearch();
-        void showNewsDetail(
-            result.dataset.newsId
-        );
+        void navigateToRoute({
+            view: "journal",
+            target: "article",
+            articleId: result.dataset.newsId
+        });
     }
 }
 
