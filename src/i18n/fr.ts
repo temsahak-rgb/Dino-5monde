@@ -129,6 +129,7 @@ const frMessages = {
     "news.notFound": "Cet article est introuvable.",
 
     "search.title": "Rechercher",
+    "search.close": "Fermer la recherche",
     "search.placeholder": "Mot ou expression...",
     "search.minCharacters": "Tapez au moins 2 caractères...",
     "search.loading": "Recherche...",

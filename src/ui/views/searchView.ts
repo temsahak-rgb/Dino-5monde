@@ -54,7 +54,11 @@ function renderSearchModalView(): string {
             max-width:800px;
             box-shadow:0 10px 40px rgba(0,0,0,0.3);
             overflow:hidden;
-        ">
+        "
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="search-dialog-title"
+        >
             <div style="
                 background:#087F5B;
                 padding:16px 20px;
@@ -62,7 +66,9 @@ function renderSearchModalView(): string {
                 justify-content:space-between;
                 align-items:center;
             ">
-                <h2 style="
+                <h2
+                    id="search-dialog-title"
+                    style="
                     color:#fff;
                     margin:0;
                     font-size:18px;
@@ -73,7 +79,7 @@ function renderSearchModalView(): string {
                 <button
                     id="search-close"
                     type="button"
-                    aria-label="${t("common.back")}"
+                    aria-label="${t("search.close")}"
                     style="
                         background:rgba(255,255,255,0.2);
                         border:none;
@@ -97,6 +103,9 @@ function renderSearchModalView(): string {
                     id="search-input"
                     placeholder="${t("search.placeholder")}"
                     autocomplete="off"
+                    aria-label="${t("search.title")}"
+                    aria-controls="search-results"
+                    aria-autocomplete="list"
                     style="
                         width:100%;
                         padding:14px 18px;
@@ -111,6 +120,8 @@ function renderSearchModalView(): string {
 
             <div
                 id="search-results"
+                aria-live="polite"
+                aria-busy="false"
                 style="
                     padding:20px;
                     max-height:60vh;
@@ -202,19 +213,16 @@ function renderSearchNoResultsView(): string {
 /**
  * Renders a search error.
  *
- * @param message - Technical error detail.
  * @returns Search-error HTML.
  */
-function renderSearchErrorView(
-    message: string
-): string {
+function renderSearchErrorView(): string {
     return `
         <p style="
             text-align:center;
             color:#dc2626;
             padding:30px;
         ">
-            ❌ ${t("search.error")}: ${message}
+            ❌ ${t("search.error")}
         </p>
     `;
 }
@@ -305,8 +313,8 @@ function renderSearchVocabularyItemView(
         <button
             type="button"
             class="search-result-item search-vocab-result"
-            data-level="${item.level}"
-            data-pack-id="${item.packId}"
+            data-level="${escapeSearchHtml(item.level)}"
+            data-pack-id="${escapeSearchHtml(item.packId)}"
             style="
                 width:100%;
                 background:#f9fafb;
@@ -386,7 +394,7 @@ function renderSearchVocabularyItemView(
                     font-weight:700;
                     white-space:nowrap;
                 ">
-                    ${item.level}
+                    ${escapeSearchHtml(item.level)}
                 </span>
             </div>
         </button>
@@ -445,7 +453,7 @@ function renderSearchGrammarItemView(
         <button
             type="button"
             class="search-result-item search-grammar-result"
-            data-grammar-id="${item.id}"
+            data-grammar-id="${escapeSearchHtml(item.id)}"
             style="
                 width:100%;
                 background:#f9fafb;
@@ -511,7 +519,7 @@ function renderSearchGrammarItemView(
                     font-weight:700;
                     white-space:nowrap;
                 ">
-                    ${item.level}
+                    ${escapeSearchHtml(item.level)}
                 </span>
             </div>
         </button>
@@ -570,7 +578,7 @@ function renderSearchNewsItemView(
         <button
             type="button"
             class="search-result-item search-news-result"
-            data-news-id="${item.id}"
+            data-news-id="${escapeSearchHtml(item.id)}"
             style="
                 width:100%;
                 background:#f9fafb;
@@ -603,9 +611,9 @@ function renderSearchNewsItemView(
                 color:#777;
                 margin:0;
             ">
-                ${item.publishedDate}
+                ${escapeSearchHtml(item.publishedDate)}
                 ·
-                ${item.level}
+                ${escapeSearchHtml(item.level)}
             </p>
         </button>
     `;
@@ -635,7 +643,7 @@ function renderSearchGroupHeaderView(
             padding-bottom:8px;
             border-bottom:2px solid #087F5B;
         ">
-            ${icon} ${title} (${count})
+            ${escapeSearchHtml(icon)} ${escapeSearchHtml(title)} (${count})
         </h3>
     `;
 }
@@ -656,7 +664,9 @@ function highlightSearchMatch(
     }
 
     if (!query) {
-        return text;
+        return escapeSearchHtml(
+            text
+        );
     }
 
     const escapedQuery =
@@ -665,11 +675,67 @@ function highlightSearchMatch(
             "\\$&"
         );
 
-    return text.replace(
-        new RegExp(
-            `(${escapedQuery})`,
-            "gi"
-        ),
-        '<mark style="background:#fef08a;padding:0 2px;border-radius:2px;">$1</mark>'
+    const matches =
+        text.matchAll(
+            new RegExp(
+                escapedQuery,
+                "gi"
+            )
+        );
+    let html = "";
+    let previousEnd = 0;
+
+    for (
+        const match
+        of matches
+    ) {
+        const start =
+            match.index;
+        const value =
+            match[0];
+
+        html += escapeSearchHtml(
+            text.slice(
+                previousEnd,
+                start
+            )
+        );
+        html += `<mark style="background:#fef08a;padding:0 2px;border-radius:2px;">${escapeSearchHtml(value)}</mark>`;
+        previousEnd =
+            start + value.length;
+    }
+
+    html += escapeSearchHtml(
+        text.slice(
+            previousEnd
+        )
     );
+
+    return html;
+}
+
+function escapeSearchHtml(
+    value: string
+): string {
+    return value
+        .replace(
+            /&/g,
+            "&amp;"
+        )
+        .replace(
+            /</g,
+            "&lt;"
+        )
+        .replace(
+            />/g,
+            "&gt;"
+        )
+        .replace(
+            /"/g,
+            "&quot;"
+        )
+        .replace(
+            /'/g,
+            "&#039;"
+        );
 }

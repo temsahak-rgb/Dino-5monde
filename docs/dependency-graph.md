@@ -2,7 +2,7 @@
 
 # Application dependency maps
 
-The application contains 43 reachable modules, 98 runtime imports and 49 type-only imports.
+The application contains 45 reachable modules, 100 runtime imports and 51 type-only imports.
 The generator rejects runtime dependency cycles.
 
 ## Architecture overview
@@ -35,7 +35,7 @@ flowchart LR
     G4 -->|1| G9
     G5 -->|3| G2
     G5 -->|7| G3
-    G5 -->|5| G4
+    G5 -->|6| G4
     G5 -->|9| G7
     G5 -->|9| G8
     G5 -->|4| G9
@@ -233,21 +233,25 @@ flowchart LR
 flowchart LR
     subgraph S["Selected area"]
         M0["features/search/search"]
-        M1["views/searchView"]
+        M1["features/search/searchEngine"]
+        M2["features/search/searchRepository"]
+        M3["views/searchView"]
     end
     subgraph D["Direct dependencies"]
-        M2["features/grammar/grammar"]
-        M3["features/news/news"]
-        M4["features/vocabulary/vocabulary"]
-        M5["i18n/i18n"]
-        M6["ui/ui"]
+        M4["features/grammar/grammar"]
+        M5["features/news/news"]
+        M6["features/vocabulary/vocabulary"]
+        M7["i18n/i18n"]
+        M8["ui/ui"]
     end
-    M0 --> M2
-    M0 --> M3
     M0 --> M4
-    M0 --> M6
+    M0 --> M5
     M0 --> M1
-    M1 --> M5
+    M0 --> M2
+    M0 --> M6
+    M0 --> M8
+    M0 --> M3
+    M3 --> M7
 ```
 
 </details>
@@ -367,5 +371,5 @@ flowchart LR
 ## Enforced invariants
 
 - No runtime dependency cycle.
-- 49 type-only imports are tracked but hidden from diagrams to avoid visual noise.
+- 51 type-only imports are tracked but hidden from diagrams to avoid visual noise.
 - Every module and edge is derived from the imports reachable from `app.ts`.
