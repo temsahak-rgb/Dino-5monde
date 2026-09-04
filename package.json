@@ -8,19 +8,22 @@
   "scripts": {
     "build": "tsx tools/build.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.tools.json --noEmit",
-
     "test": "tsx --test \"tests/**/*.test.ts\"",
     "test:app": "tsx --test \"tests/architecture/**/*.test.ts\" \"tests/grammar/**/*.test.ts\" \"tests/tools/**/*.test.ts\" \"tests/vocabulary/**/*.test.ts\"",
     "test:data": "tsx --test \"tests/data/**/*.test.ts\"",
     "test:architecture": "tsx --test \"tests/architecture/**/*.test.ts\"",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:install": "playwright install chromium",
+    "serve:e2e": "tsx tools/serve-dist.ts",
     "corpus:report": "tsx tools/build-corpus-report.ts",
-
     "knip": "knip --config knip.json",
     "duplication": "jscpd --config .jscpd.json",
     "graph:dependencies": "tsx tools/generate-dependency-graph.ts",
     "graph:dependencies:check": "tsx tools/generate-dependency-graph.ts --check"
   },
   "devDependencies": {
+    "@playwright/test": "^1.62.1",
     "@types/node": "^24.0.0",
     "jscpd": "^4.0.0",
     "knip": "^5.0.0",
