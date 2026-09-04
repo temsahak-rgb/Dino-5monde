@@ -21,7 +21,8 @@ export type AppSection =
     | "home"
     | "grammar"
     | "vocabulary"
-    | "travel";
+    | "travel"
+    | "journal";
 
 export type LessonStatus =
     | "not_started"

@@ -2,7 +2,7 @@
 
 # Application dependency maps
 
-The application contains 43 reachable modules, 98 runtime imports and 49 type-only imports.
+The application contains 43 reachable modules, 99 runtime imports and 49 type-only imports.
 The generator rejects runtime dependency cycles.
 
 ## Architecture overview
@@ -28,7 +28,7 @@ flowchart LR
     G0 -->|3| G5
     G0 -->|1| G9
     G1 -->|1| G2
-    G1 -->|4| G5
+    G1 -->|5| G5
     G1 -->|1| G6
     G1 -->|1| G8
     G4 -->|1| G3
@@ -85,6 +85,7 @@ flowchart LR
     M0 --> M11
     M2 --> M1
     M2 --> M4
+    M2 --> M5
     M2 --> M8
     M2 --> M9
     M2 --> M10

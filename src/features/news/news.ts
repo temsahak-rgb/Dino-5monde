@@ -2,6 +2,7 @@ import { getPlacementResult } from "../../core/placementEngine.js";
 import { navigateToSection } from "../../core/navigation.js";
 import { showGrammarLesson } from "../grammar/grammar.js";
 import type {
+    AppSection,
     Level,
     NewsArticle,
     NewsIndexItem
@@ -14,12 +15,14 @@ import {
 import {
     renderNewsDetailView,
     renderNewsHomeCardView,
+    renderNewsJournalView,
     renderNewsNotFoundView
 } from "../../ui/views/newsView.js";
 
 export {
     initializeNews,
     renderNewsSection,
+    showJournalPage,
     showNewsDetail
 };
 
@@ -114,6 +117,55 @@ async function renderNewsSection(): Promise<string> {
 }
 
 /**
+ * Displays the complete editorial journal using the existing news index.
+ */
+async function showJournalPage(): Promise<void> {
+    let news:
+        NewsIndexItem[] = [];
+
+    try {
+        const response = await fetch(
+            `./data/news/news-index.json?v=${Date.now()}`
+        );
+
+        if (!response.ok) {
+            throw new Error(
+                `News index failed with status ${response.status}`
+            );
+        }
+
+        news =
+            (await response.json()) as NewsIndexItem[];
+    } catch (error) {
+        console.error(
+            "Journal loading error:",
+            error
+        );
+    }
+
+    app.innerHTML =
+        renderNewsJournalView(
+            news
+        );
+
+    window.scrollTo(
+        0,
+        0
+    );
+}
+
+/**
+ * Resolves the meaningful parent screen of a News detail.
+ */
+function getNewsReturnSection(): AppSection {
+    return localStorage.getItem(
+        "currentSection"
+    ) === "journal"
+        ? "journal"
+        : "home";
+}
+
+/**
  * Loads and displays a complete News article.
  *
  * Vocabulary and grammar content are filtered according to the learner's CEFR
@@ -199,7 +251,9 @@ async function showNewsDetail(
         getRequiredElement<HTMLButtonElement>(
             "news-error-back"
         ).onclick = () => {
-            void navigateToSection("home");
+            void navigateToSection(
+                getNewsReturnSection()
+            );
         };
     }
 }
@@ -211,7 +265,9 @@ function bindNewsDetailEvents(): void {
     getRequiredElement<HTMLButtonElement>(
         "news-back"
     ).onclick = () => {
-        void navigateToSection("home");
+        void navigateToSection(
+            getNewsReturnSection()
+        );
     };
 
     getRequiredElement<HTMLButtonElement>(
