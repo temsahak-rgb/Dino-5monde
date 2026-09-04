@@ -438,6 +438,8 @@ npm test
 npm run test:app
 npm run test:data
 npm run test:architecture
+npm run test:e2e:install
+npm run test:e2e
 npm run typecheck
 npm run build
 npm run knip
@@ -453,6 +455,24 @@ tests/**/*.test.ts
 
 Adding another test therefore does not require editing `package.json`.
 `npm run test:app` is the blocking code-quality subset; corpus tests are intentionally isolated in `npm run test:data` and their dedicated workflow.
+
+### Browser E2E tests
+
+The Playwright suite exercises the real application startup, the French ↔ Persian interface switch (visible copy, `lang`, and `dir`), and language persistence after navigation and a full reload.
+
+Install Chromium once before the first local run:
+
+```bash
+npm run test:e2e:install
+```
+
+Then run the scenarios against a production build served automatically on a deterministic local port:
+
+```bash
+npm run test:e2e
+```
+
+Installing Chromium requires network access. No manually managed server or reference screenshot is required.
 
 ### Data tests
 
@@ -503,6 +523,7 @@ A test, typecheck or build regression therefore makes the CI job fail.
 
 The dedicated **Dependency graph** workflow runs `npm run graph:dependencies`, then compares the result with `docs/dependency-graph.md`. Changing an import without regenerating the graph makes this job fail.
 The dedicated **Corpus quality** workflow runs `npm run test:data`, publishes readable file/field errors, and maintains one persistent report comment on pull requests.
+The dedicated **Browser E2E** workflow installs Chromium only, starts the local build, and blocks CI when startup or i18n regresses.
 
 GitHub branch/ruleset configuration remains separate from this repository code.
 

@@ -431,6 +431,8 @@ npm test
 npm run test:app
 npm run test:data
 npm run test:architecture
+npm run test:e2e:install
+npm run test:e2e
 npm run typecheck
 npm run build
 npm run knip
@@ -446,6 +448,24 @@ tests/**/*.test.ts
 
 بنابراین با اضافه کردن تست جدید لازم نیست `package.json` تغییر کند.
 فرمان `npm run test:app` زیرمجموعه مسدودکننده خط کیفیت کد است؛ تست‌های داده عمداً در `npm run test:data` و Workflow اختصاصی خود جدا می‌مانند.
+
+### تست E2E مرورگر
+
+مجموعه Playwright راه‌اندازی واقعی برنامه، تغییر رابط فرانسوی ↔ فارسی (متن قابل مشاهده، `lang` و `dir`) و ماندگاری زبان پس از Navigation و Reload کامل را بررسی می‌کند.
+
+پیش از نخستین اجرای محلی، فقط Chromium را نصب کنید:
+
+```bash
+npm run test:e2e:install
+```
+
+سپس سناریوها را روی Build تولیدی اجرا کنید؛ سرور به‌صورت خودکار روی یک Port محلی ثابت شروع می‌شود:
+
+```bash
+npm run test:e2e
+```
+
+نصب Chromium به دسترسی شبکه نیاز دارد. هیچ سرور دستی یا Screenshot مرجع لازم نیست.
 
 ### تست داده
 
@@ -496,6 +516,7 @@ jscpd             → فقط گزارش
 
 Workflow اختصاصی **Dependency graph** فرمان `npm run graph:dependencies` را اجرا و نتیجه را با `docs/dependency-graph.md` مقایسه می‌کند. تغییر Import بدون تولید دوباره گراف، این Job را ناموفق می‌کند.
 Workflow اختصاصی **Corpus quality** فرمان `npm run test:data` را اجرا می‌کند، خطاهای خوانا را به تفکیک فایل و فیلد منتشر می‌کند و یک گزارش ماندگار را در Pull Request به‌روز نگه می‌دارد.
+Workflow اختصاصی **Browser E2E** فقط Chromium را نصب می‌کند، Build محلی را اجرا می‌کند و در صورت Regression راه‌اندازی یا i18n، CI را ناموفق می‌کند.
 
 ---
 

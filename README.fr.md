@@ -438,6 +438,8 @@ npm test
 npm run test:app
 npm run test:data
 npm run test:architecture
+npm run test:e2e:install
+npm run test:e2e
 npm run typecheck
 npm run build
 npm run knip
@@ -453,6 +455,24 @@ tests/**/*.test.ts
 
 Il n'est donc pas nécessaire de modifier `package.json` lorsqu'un nouveau test est ajouté.
 `npm run test:app` est le sous-ensemble bloquant du pipeline de qualité du code ; les tests corpus restent volontairement isolés dans `npm run test:data` et leur workflow dédié.
+
+### Tests E2E navigateur
+
+La suite Playwright vérifie le démarrage réel de l'application, la bascule d'interface français ↔ persan (`lang`, `dir` et textes visibles), puis la persistance de la langue après navigation et rechargement.
+
+À la première utilisation locale, installer uniquement Chromium :
+
+```bash
+npm run test:e2e:install
+```
+
+Puis lancer les scénarios contre un build de production servi automatiquement sur un port local déterministe :
+
+```bash
+npm run test:e2e
+```
+
+L'installation de Chromium nécessite un accès réseau. Aucun serveur manuel ni capture d'écran de référence n'est requis.
 
 ### Tests de données
 
@@ -503,6 +523,7 @@ Cela signifie qu'une régression de compilation, de test ou de build rend le job
 
 Le workflow dédié **Dependency graph** exécute `npm run graph:dependencies`, puis compare le résultat à `docs/dependency-graph.md`. Une dépendance modifiée sans régénération du graphe rend ce job rouge.
 Le workflow dédié **Corpus quality** exécute `npm run test:data`, publie des erreurs lisibles par fichier et champ, puis maintient un commentaire de rapport persistant sur les pull requests.
+Le workflow dédié **Browser E2E** installe uniquement Chromium, démarre le build local et bloque la CI si le démarrage ou l'i18n régressent.
 
 La configuration des règles de protection GitHub elles-mêmes reste indépendante de ce code.
 
