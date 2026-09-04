@@ -58,7 +58,14 @@ export type {
 function getAvailableVocabularyGames(
     words: readonly VocabWord[]
 ): VocabularyGameKind[] {
-    const prepared =
+    const hangmanWords =
+        prepareVocabularyGameWords(
+            words,
+            2,
+            18
+        );
+
+    const gridWords =
         prepareVocabularyGameWords(
             words
         );
@@ -66,11 +73,11 @@ function getAvailableVocabularyGames(
     const games:
         VocabularyGameKind[] = [];
 
-    if (prepared.length >= 1) {
+    if (hangmanWords.length >= 1) {
         games.push("hangman");
     }
 
-    if (prepared.length >= 3) {
+    if (gridWords.length >= 3) {
         games.push("word-search");
 
         if (createCrosswordGame(words)) {

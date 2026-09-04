@@ -147,6 +147,10 @@ test(
             html,
             /class="word-search-cell"/
         );
+        assert.match(
+            html,
+            /class="word-search-grid-wrap"/
+        );
     }
 );
 

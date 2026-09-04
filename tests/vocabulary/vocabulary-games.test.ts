@@ -65,13 +65,25 @@ function seededRandom(
 }
 
 test(
-    "letter games normalize accents and punctuation",
+    "letter games normalize accents, ligatures and punctuation",
     () => {
         assert.equal(
             normalizeGameAnswer(
                 "l'été !"
             ),
             "LETE"
+        );
+        assert.equal(
+            normalizeGameAnswer(
+                "nœud et œuvre"
+            ),
+            "NOEUDETOEUVRE"
+        );
+        assert.equal(
+            normalizeGameAnswer(
+                "cæcum"
+            ),
+            "CAECUM"
         );
     }
 );
@@ -303,6 +315,20 @@ test(
         assert.deepEqual(
             getAvailableVocabularyGames(
                 [words[0]]
+            ),
+            [
+                "hangman"
+            ]
+        );
+
+        assert.deepEqual(
+            getAvailableVocabularyGames(
+                [
+                    {
+                        fr: "or",
+                        fa: "طلا"
+                    }
+                ]
             ),
             [
                 "hangman"

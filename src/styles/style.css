@@ -282,10 +282,19 @@ button.vocab-game-action {
     align-items: start;
 }
 
+.word-search-grid-wrap {
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding-bottom: 4px;
+}
+
 .word-search-grid {
     display: grid;
     grid-template-columns: repeat(var(--word-search-size), minmax(28px, 1fr));
     gap: 3px;
+    min-width: calc(var(--word-search-size) * 31px);
 }
 
 button.word-search-cell {

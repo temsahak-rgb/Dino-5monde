@@ -87,6 +87,64 @@ function bindGameChrome(
     ).onclick = onRestart;
 }
 
+function focusRestartButton(): void {
+    getRequiredElement<HTMLButtonElement>(
+        "vocab-game-restart"
+    ).focus();
+}
+
+function focusNextHangmanButton(
+    buttons: NodeListOf<HTMLButtonElement>,
+    previousLetter: string
+): void {
+    const keyboard =
+        Array.from(buttons);
+
+    const previousIndex =
+        keyboard.findIndex(
+            button =>
+                button.dataset.letter
+                === previousLetter
+        );
+
+    const nextButton =
+        keyboard
+            .slice(previousIndex + 1)
+            .find(button => !button.disabled)
+        ?? keyboard.find(
+            button => !button.disabled
+        );
+
+    if (nextButton) {
+        nextButton.focus();
+        return;
+    }
+
+    focusRestartButton();
+}
+
+function focusWordSearchCell(
+    buttons: NodeListOf<HTMLButtonElement>,
+    coordinate: GridCoordinate
+): void {
+    const cell =
+        Array.from(buttons).find(
+            button =>
+                Number(button.dataset.row)
+                    === coordinate.row
+                && Number(button.dataset.column)
+                    === coordinate.column
+                && !button.disabled
+        );
+
+    if (cell) {
+        cell.focus();
+        return;
+    }
+
+    focusRestartButton();
+}
+
 function startHangman(
     pack: VocabPack,
     onBack: BackHandler
@@ -102,7 +160,9 @@ function startHangman(
         return;
     }
 
-    const render = (): void => {
+    const render = (
+        previousLetter?: string
+    ): void => {
         if (!game) {
             return;
         }
@@ -125,9 +185,12 @@ function startHangman(
                 )
         );
 
-        queryElements<HTMLButtonElement>(
-            ".vocab-game-key"
-        ).forEach(
+        const keyboardButtons =
+            queryElements<HTMLButtonElement>(
+                ".vocab-game-key"
+            );
+
+        keyboardButtons.forEach(
             button => {
                 button.onclick = () => {
                     const letter =
@@ -142,10 +205,17 @@ function startHangman(
                         letter
                     );
 
-                    render();
+                    render(letter);
                 };
             }
         );
+
+        if (previousLetter) {
+            focusNextHangmanButton(
+                keyboardButtons,
+                previousLetter
+            );
+        }
     };
 
     render();
@@ -198,7 +268,9 @@ function startWordSearch(
         | null
         | undefined;
 
-    const render = (): void => {
+    const render = (
+        focusCoordinate?: GridCoordinate
+    ): void => {
         if (!game) {
             return;
         }
@@ -220,9 +292,12 @@ function startWordSearch(
                 )
         );
 
-        queryElements<HTMLButtonElement>(
-            ".word-search-cell"
-        ).forEach(
+        const gridButtons =
+            queryElements<HTMLButtonElement>(
+                ".word-search-cell"
+            );
+
+        gridButtons.forEach(
             button => {
                 button.onclick = () => {
                     const coordinate =
@@ -237,7 +312,7 @@ function startWordSearch(
                     if (!selectedStart) {
                         selectedStart = coordinate;
                         lastMatch = undefined;
-                        render();
+                        render(coordinate);
                         return;
                     }
 
@@ -253,10 +328,17 @@ function startWordSearch(
                         selection.matchedWord;
                     selectedStart = null;
 
-                    render();
+                    render(coordinate);
                 };
             }
         );
+
+        if (focusCoordinate) {
+            focusWordSearchCell(
+                gridButtons,
+                focusCoordinate
+            );
+        }
     };
 
     render();

@@ -31,6 +31,10 @@ function normalizeGameAnswer(
     value: string
 ): string {
     return value
+        .replace(/œ/g, "oe")
+        .replace(/Œ/g, "OE")
+        .replace(/æ/g, "ae")
+        .replace(/Æ/g, "AE")
         .normalize("NFD")
         .replace(
             /[\u0300-\u036f]/g,

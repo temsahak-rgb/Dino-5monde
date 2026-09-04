@@ -270,12 +270,13 @@ function renderWordSearchGameView(
 
     const content = `
         <section class="vocab-game-panel word-search-layout">
-            <div
-                class="word-search-grid ltr-lock"
-                style="--word-search-size:${game.size}"
-                aria-label="${t("vocab.game.wordSearch")}"
-            >
-                ${game.grid
+            <div class="word-search-grid-wrap">
+                <div
+                    class="word-search-grid ltr-lock"
+                    style="--word-search-size:${game.size}"
+                    aria-label="${t("vocab.game.wordSearch")}"
+                >
+                    ${game.grid
                     .flatMap(
                         (
                             row,
@@ -314,7 +315,8 @@ function renderWordSearchGameView(
                                 }
                             )
                     )
-                    .join("")}
+                        .join("")}
+                </div>
             </div>
 
             <aside class="word-search-words">
