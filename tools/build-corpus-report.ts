@@ -9,6 +9,7 @@ export {
     buildCorpusReport,
     extractCorpusCounts,
     extractCorpusDetails,
+    extractCorpusLinkDebt,
     stripAnsi
 };
 
@@ -107,6 +108,21 @@ function extractCorpusCounts(
     };
 }
 
+/** Extracts the explicit known-link debt emitted by relational corpus tests. */
+function extractCorpusLinkDebt(
+    output: string
+): string | null {
+    const clean = stripAnsi(output).replace(
+        /^#\s?/gm,
+        ""
+    );
+    const match = clean.match(
+        /^DINO_LINK_DEBT_BEGIN\r?\n([\s\S]*?)\r?\nDINO_LINK_DEBT_END$/m
+    );
+
+    return match?.[1]?.trim() || null;
+}
+
 /** Builds the sticky PR comment and GitHub Actions step summary. */
 function buildCorpusReport(
     output: string,
@@ -132,6 +148,8 @@ function buildCorpusReport(
 
     const counts =
         extractCorpusCounts(output);
+    const linkDebt =
+        extractCorpusLinkDebt(output);
 
     const score =
         counts.tests !== null
@@ -144,7 +162,17 @@ function buildCorpusReport(
         : "🚨 **Quelques fossiles dépassent.** Le corpus a besoin d'une retouche avant fusion.";
 
     const action = passed
-        ? "### 🎉 Feu vert\n\nAucune anomalie de structure ou de cohérence détectée."
+        ? linkDebt
+            ? [
+                "### 🎉 Feu vert",
+                "",
+                "Aucune nouvelle anomalie. La dette historique ci-dessous est figée : tout nouveau lien orphelin fera échouer la CI.",
+                "",
+                "### 🔗 Liens à créer",
+                "",
+                linkDebt
+            ].join("\n")
+            : "### 🎉 Feu vert\n\nAucune anomalie de structure ou de cohérence détectée."
         : `### 🧭 À corriger\n\n${counts.failed ?? "Des"} test(s) signalent les fichiers et champs à reprendre ci-dessous.`;
 
     return [

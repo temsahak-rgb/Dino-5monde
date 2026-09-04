@@ -5,6 +5,7 @@ import {
     buildCorpusReport,
     extractCorpusCounts,
     extractCorpusDetails,
+    extractCorpusLinkDebt,
     stripAnsi
 } from "../../tools/build-corpus-report.js";
 
@@ -71,10 +72,32 @@ test(
 );
 
 test(
+    "extractCorpusLinkDebt reads TAP-prefixed relational warnings",
+    () => {
+        assert.equal(
+            extractCorpusLinkDebt([
+                "# DINO_LINK_DEBT_BEGIN",
+                "# - data/news/demo.json — `a1-demo`",
+                "# DINO_LINK_DEBT_END"
+            ].join("\n")),
+            "- data/news/demo.json — `a1-demo`"
+        );
+    }
+);
+
+test(
     "buildCorpusReport produces one identifiable sticky comment",
     () => {
         const report = buildCorpusReport(
-            "all corpus tests passed\n# tests 15\n# pass 15\n# fail 0",
+            [
+                "all corpus tests passed",
+                "# DINO_LINK_DEBT_BEGIN",
+                "# - data/news/demo.json — `a1-demo`",
+                "# DINO_LINK_DEBT_END",
+                "# tests 15",
+                "# pass 15",
+                "# fail 0"
+            ].join("\n"),
             true,
             "https://github.com/example/repo/actions/runs/42"
         );
@@ -98,6 +121,14 @@ test(
         assert.match(
             report,
             /un seul rapport/
+        );
+        assert.match(
+            report,
+            /Liens à créer/
+        );
+        assert.match(
+            report,
+            /a1-demo/
         );
         assert.match(
             report,
