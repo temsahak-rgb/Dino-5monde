@@ -121,7 +121,8 @@ const requiredViews = [
     "newsView.ts",
     "pollsView.ts",
     "onboardingView.ts",
-    "searchView.ts"
+    "searchView.ts",
+    "notFoundView.ts"
 ];
 
 /**

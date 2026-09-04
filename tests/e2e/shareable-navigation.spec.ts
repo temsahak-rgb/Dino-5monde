@@ -292,6 +292,51 @@ test.describe(
         );
 
         test(
+            "keeps a missing grammar link from an article on an explicit 404",
+            async ({ page }) => {
+                await seedCompletedOnboarding(page);
+                await page.goto(
+                    "/?view=journal&article=2026-w34-azadi-tower"
+                );
+
+                await page.locator("summary").filter({
+                    hasText: "Points de grammaire"
+                }).click();
+                await page.locator(
+                    ".news-grammar-link"
+                ).first().click();
+
+                await expect(page).toHaveURL(
+                    /\?view=grammar&lesson=a1-se-trouver$/
+                );
+                await expect(
+                    page.locator(
+                        '[data-error-page="not-found"]'
+                    )
+                ).toBeVisible();
+                await expect(
+                    page.getByRole(
+                        "heading",
+                        {
+                            name: "Contenu introuvable",
+                            exact: true
+                        }
+                    )
+                ).toBeVisible();
+
+                await page.locator(
+                    "#grammar-error-back"
+                ).click();
+                await expect(page).toHaveURL(
+                    /\?view=journal&article=2026-w34-azadi-tower$/
+                );
+                await expect(
+                    page.locator("#news-back")
+                ).toBeVisible();
+            }
+        );
+
+        test(
             "reloads an institutional route in Persian",
             async ({ page }) => {
                 await seedCompletedOnboarding(

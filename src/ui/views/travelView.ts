@@ -1,4 +1,5 @@
 import { renderNavbar } from "./navbarView.js";
+import { renderNotFoundView } from "./notFoundView.js";
 import {
     localizedTextClass,
     localizedValue,
@@ -314,29 +315,10 @@ function renderTravelLessonLoadingView(): string {
  * @returns Complete error-page HTML.
  */
 function renderTravelLessonNotFoundView(): string {
-    return `
-        ${renderNavbar()}
-
-        <div style="
-            padding:40px;
-            text-align:center;
-        ">
-            <p style="
-                color:#777;
-                margin-bottom:15px;
-            ">
-                ${t("travel.lessonNotFound")}
-            </p>
-
-            <button
-                id="travel-error-back"
-                type="button"
-                class="back-btn"
-            >
-                ← ${t("common.back")}
-            </button>
-        </div>
-    `;
+    return renderNotFoundView({
+        backButtonId: "travel-error-back",
+        message: t("travel.lessonNotFound")
+    });
 }
 
 /**

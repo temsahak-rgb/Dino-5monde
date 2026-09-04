@@ -29,6 +29,8 @@ const frMessages = {
     "common.moreEffort": "Plus d'effort !",
     "common.morePractice": "Plus d'entraînement !",
 
+    "error.notFound.title": "Contenu introuvable",
+
     "navbar.grammar": "Grammaire",
     "navbar.vocabulary": "Vocabulaire",
     "navbar.travel": "Voyage",
