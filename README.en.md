@@ -536,7 +536,7 @@ jscpd             → informative
 
 A test, typecheck or build regression therefore makes the CI job fail.
 
-The dedicated **Dependency graph** workflow runs `npm run graph:dependencies`, then compares the result with `docs/dependency-graph.md`. Changing an import without regenerating the graph makes this job fail.
+The dedicated **Dependency graph** workflow runs manually, executes `npm run graph:dependencies`, and commits only `docs/dependency-graph.md` to the selected branch when it changes. Its `[skip ci]` commit triggers neither application checks nor deployment.
 The dedicated **Corpus quality** workflow runs `npm run test:data`, publishes readable file/field errors, and maintains one persistent report comment on pull requests.
 The dedicated **Browser E2E** workflow installs Chromium only, starts the local build, and blocks CI when startup or i18n regresses.
 
