@@ -68,6 +68,22 @@ test(
             workflow,
             /npm run vigie:report/
         );
+        assert.match(
+            workflow,
+            /Executable feature contracts/
+        );
+        assert.match(
+            workflow,
+            /Materialize PR feature files as untrusted data/
+        );
+        assert.match(
+            workflow,
+            /Measure feature progress without executing PR code/
+        );
+        assert.doesNotMatch(
+            workflow,
+            /npm run test:features|cucumber-js/
+        );
     }
 );
 
@@ -76,7 +92,8 @@ test(
     async () => {
         const [
             qualityWorkflow,
-            corpusWorkflow
+            corpusWorkflow,
+            featureWorkflow
         ] = await Promise.all([
             readFile(
                 resolve(
@@ -91,6 +108,13 @@ test(
                     ".github/workflows/corpus-quality.yml"
                 ),
                 "utf8"
+            ),
+            readFile(
+                resolve(
+                    root,
+                    ".github/workflows/feature-contracts.yml"
+                ),
+                "utf8"
             )
         ]);
 
@@ -98,7 +122,8 @@ test(
             const workflow
             of [
                 qualityWorkflow,
-                corpusWorkflow
+                corpusWorkflow,
+                featureWorkflow
             ]
         ) {
             assert.doesNotMatch(
@@ -110,6 +135,18 @@ test(
         assert.doesNotMatch(
             corpusWorkflow,
             /Update sticky pull request report/
+        );
+        assert.match(
+            featureWorkflow,
+            /name: Executable feature contracts/
+        );
+        assert.match(
+            featureWorkflow,
+            /npm run test:features/
+        );
+        assert.match(
+            featureWorkflow,
+            /cache: npm/
         );
     }
 );

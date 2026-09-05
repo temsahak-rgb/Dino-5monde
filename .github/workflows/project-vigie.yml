@@ -99,6 +99,7 @@ jobs:
             let quality;
             let e2e;
             let corpus;
+            let feature;
 
             for (let attempt = 1; attempt <= 60; attempt += 1) {
               const { data } = await github.rest.checks.listForRef({
@@ -119,10 +120,15 @@ jobs:
                     'Validate educational corpus'
                   )
                 : undefined;
+              feature = latestByName(
+                data.check_runs,
+                'Executable feature contracts'
+              );
 
               const expected = [
                 quality,
                 e2e,
+                feature,
                 ...(corpusRequired ? [corpus] : []),
               ];
 
@@ -151,6 +157,8 @@ jobs:
             core.setOutput('quality_url', quality?.details_url ?? '');
             core.setOutput('e2e_state', state(e2e));
             core.setOutput('e2e_url', e2e?.details_url ?? workflowRun?.html_url ?? '');
+            core.setOutput('feature_state', state(feature));
+            core.setOutput('feature_url', feature?.details_url ?? '');
             core.setOutput('corpus_required', String(corpusRequired));
             core.setOutput(
               'corpus_state',
@@ -176,6 +184,79 @@ jobs:
         if: steps.snapshot.outputs.should_report == 'true'
         run: npm ci
 
+      - name: Materialize PR feature files as untrusted data
+        if: steps.snapshot.outputs.should_report == 'true'
+        uses: actions/github-script@v8
+        env:
+          FEATURE_REF: ${{ steps.snapshot.outputs.sha }}
+        with:
+          script: |
+            const fs = require('node:fs/promises');
+            const path = require('node:path');
+            const { owner, repo } = context.repo;
+            const ref = process.env.FEATURE_REF;
+            const { data: tree } = await github.rest.git.getTree({
+              owner,
+              repo,
+              tree_sha: ref,
+              recursive: 'true',
+            });
+
+            if (tree.truncated) {
+              throw new Error('The repository tree was truncated.');
+            }
+
+            const entries = tree.tree.filter((entry) =>
+              entry.type === 'blob'
+              && entry.path?.startsWith('features/')
+              && entry.path.endsWith('.feature')
+            );
+            const root = path.resolve('reports/pr-features');
+            await fs.mkdir(root, { recursive: true });
+
+            for (const entry of entries) {
+              const relative = entry.path.slice('features/'.length);
+              const segments = relative.split('/');
+
+              if (
+                !relative
+                || segments.some((segment) =>
+                  !segment || segment === '.' || segment === '..'
+                )
+              ) {
+                throw new Error(`Unsafe feature path: ${entry.path}`);
+              }
+
+              const target = path.resolve(root, ...segments);
+
+              if (!target.startsWith(`${root}${path.sep}`)) {
+                throw new Error(`Feature path escaped report root: ${entry.path}`);
+              }
+
+              const { data: blob } = await github.rest.git.getBlob({
+                owner,
+                repo,
+                file_sha: entry.sha,
+              });
+              const source = Buffer.from(
+                blob.content.replace(/\n/g, ''),
+                blob.encoding
+              ).toString('utf8');
+
+              await fs.mkdir(path.dirname(target), { recursive: true });
+              await fs.writeFile(target, source, 'utf8');
+            }
+
+      - name: Measure feature progress without executing PR code
+        if: steps.snapshot.outputs.should_report == 'true'
+        shell: bash
+        run: |
+          npm run features:report -- \
+            --features "reports/pr-features/**/*.feature" \
+            --output reports/pr-feature-progress.json \
+            --markdown reports/pr-feature-progress.md \
+            --allow-invalid
+
       - name: Build the three-panel dashboard
         if: steps.snapshot.outputs.should_report == 'true'
         shell: bash
@@ -185,12 +266,16 @@ jobs:
           VIGIE_QUALITY_URL: ${{ steps.snapshot.outputs.quality_url }}
           VIGIE_E2E_STATE: ${{ steps.snapshot.outputs.e2e_state }}
           VIGIE_E2E_URL: ${{ steps.snapshot.outputs.e2e_url }}
+          VIGIE_FEATURE_STATE: ${{ steps.snapshot.outputs.feature_state }}
+          VIGIE_FEATURE_URL: ${{ steps.snapshot.outputs.feature_url }}
           VIGIE_CORPUS_REQUIRED: ${{ steps.snapshot.outputs.corpus_required }}
           VIGIE_CORPUS_STATE: ${{ steps.snapshot.outputs.corpus_state }}
           VIGIE_CORPUS_URL: ${{ steps.snapshot.outputs.corpus_url }}
         run: |
           mkdir -p reports
-          npm run vigie:report -- --output reports/project-vigie.md
+          npm run vigie:report -- \
+            --feature-report reports/pr-feature-progress.json \
+            --output reports/project-vigie.md
           cat reports/project-vigie.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Update the sticky PR Vigie

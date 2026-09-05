@@ -1,4 +1,5 @@
 import {
+    readFile,
     writeFile
 } from "node:fs/promises";
 import { resolve } from "node:path";
@@ -30,19 +31,16 @@ interface ProjectVigieInput {
     };
     technical: VigieCheck[];
     feature: {
-        completed: number;
+        check: VigieCheck;
+        implemented: number;
+        planned: number;
+        invalid: number;
         total: number;
     };
 }
 
 const reportMarker =
     "<!-- dino-project-vigie -->";
-
-const featureMilestones = [
-    "Installer le runner Cucumber et ses rapports",
-    "Formaliser la politique des scénarios `@planned`",
-    "Mesurer automatiquement la couverture fonctionnelle"
-];
 
 function normalizeCheckState(
     value: string | undefined
@@ -235,8 +233,14 @@ function buildProjectVigieReport(
             )
             : "not_required";
 
+    const featureState =
+        worstBlockingState([
+            input.feature.check
+        ]);
+
     const requiredChecks = [
         ...input.technical,
+        input.feature.check,
         ...(
             input.data.required
                 ? dataChecks
@@ -267,7 +271,7 @@ function buildProjectVigieReport(
 
     const featureProgress =
         progressBar(
-            input.feature.completed,
+            input.feature.implemented,
             input.feature.total
         );
 
@@ -293,7 +297,7 @@ function buildProjectVigieReport(
         "| --- | --- | --- | --- |",
         `| 🧬 **Data** | ${stateLabel(dataState)} | ${dataProgress} | ${input.data.required ? "Corpus contrôlé" : "Hors périmètre de cette PR"} |`,
         `| ⚙️ **Technique** | ${stateLabel(technicalState)} | ${progressBar(technicalProgress.completed, technicalProgress.total)} | ${technicalProgress.completed}/${technicalProgress.total} portes bloquantes validées |`,
-        `| 🥒 **Features** | 🟣 Planifiée | ${featureProgress} | Cucumber et \`@planned\` arrivent au prochain chantier |`,
+        `| 🥒 **Features** | ${stateLabel(featureState)} | ${featureProgress} | ${input.feature.implemented} livrés · ${input.feature.planned} planifiés |`,
         "",
         `<details${input.data.required ? " open" : ""}>`,
         '<summary><strong>🧬 Vigie Data</strong> — cohérence du corpus et des liens</summary>',
@@ -319,19 +323,22 @@ function buildProjectVigieReport(
         "",
         "</details>",
         "",
-        "<details>",
+        `<details${featureState === "failure" ? " open" : ""}>`,
         '<summary><strong>🥒 Vigie Features</strong> — avancement fonctionnel exécutable</summary>',
         "",
         `**Progression actuelle :** ${featureProgress}`,
         "",
-        "| Jalon | État |",
-        "| --- | --- |",
-        ...featureMilestones.map(
-            milestone =>
-                `| ${milestone} | 🟣 Planifié |`
-        ),
+        checkTable([
+            input.feature.check
+        ]),
         "",
-        "Les scénarios marqués `@planned` seront visibles dans l’avancement mais exclus des portes bloquantes jusqu’à leur activation.",
+        "| Cycle de vie | Scénarios | Lecture |",
+        "| --- | ---: | --- |",
+        `| ✅ \`@implemented\` | ${input.feature.implemented} | Exécutés et bloquants |`,
+        `| 🟣 \`@planned\` | ${input.feature.planned} | Visibles, non exécutés |`,
+        `| ${input.feature.invalid === 0 ? "🟢" : "🔴"} Contrats invalides | ${input.feature.invalid} | Chaque scénario doit avoir un seul état |`,
+        "",
+        "Cucumber vérifie les contrats métier. Playwright reste seul responsable des parcours dans le navigateur.",
         "",
         "</details>",
         "",
@@ -384,7 +391,12 @@ function checkFromEnvironment(
     };
 }
 
-function projectVigieFromEnvironment():
+function projectVigieFromEnvironment(
+    measuredFeature?: Pick<
+        ProjectVigieInput["feature"],
+        "implemented" | "planned" | "invalid" | "total"
+    >
+):
     ProjectVigieInput {
     const corpusRequired =
         process.env.VIGIE_CORPUS_REQUIRED
@@ -443,27 +455,172 @@ function projectVigieFromEnvironment():
             }
         ],
         feature: {
-            completed: 0,
+            check:
+                checkFromEnvironment(
+                    "Contrats Cucumber",
+                    process.env.VIGIE_FEATURE_STATE,
+                    "blocking",
+                    process.env.VIGIE_FEATURE_URL
+                ),
+            implemented:
+                measuredFeature?.implemented
+                ?? environmentCount(
+                    "VIGIE_FEATURE_IMPLEMENTED"
+                ),
+            planned:
+                measuredFeature?.planned
+                ?? environmentCount(
+                    "VIGIE_FEATURE_PLANNED"
+                ),
+            invalid:
+                measuredFeature?.invalid
+                ?? environmentCount(
+                    "VIGIE_FEATURE_INVALID"
+                ),
             total:
-                featureMilestones.length
+                measuredFeature?.total
+                ?? environmentCount(
+                    "VIGIE_FEATURE_TOTAL"
+                )
         }
     };
 }
 
+function environmentCount(
+    name: string
+): number {
+    const value =
+        Number(
+            process.env[name]
+            ?? 0
+        );
+
+    return Number.isSafeInteger(value)
+        && value >= 0
+        ? value
+        : 0;
+}
+
+async function readFeatureMeasurement(
+    path: string | undefined
+): Promise<Pick<
+    ProjectVigieInput["feature"],
+    "implemented" | "planned" | "invalid" | "total"
+> | undefined> {
+    if (!path) {
+        return undefined;
+    }
+
+    const parsed = JSON.parse(
+        await readFile(
+            resolve(path),
+            "utf8"
+        )
+    ) as Record<string, unknown>;
+
+    const implemented =
+        measuredCount(
+            parsed,
+            "implemented",
+            true
+        );
+
+    const planned =
+        measuredCount(
+            parsed,
+            "planned",
+            true
+        );
+
+    return {
+        implemented,
+        planned,
+        invalid:
+            measuredCount(
+                parsed,
+                "invalid",
+                true
+            )
+            + measuredCount(
+                parsed,
+                "errors",
+                true
+            ),
+        total:
+            measuredCount(
+                parsed,
+                "total"
+            )
+    };
+}
+
+function measuredCount(
+    value: Record<string, unknown>,
+    name: string,
+    array = false
+): number {
+    const candidate =
+        value[name];
+
+    if (
+        array
+        && Array.isArray(candidate)
+    ) {
+        return candidate.length;
+    }
+
+    if (
+        typeof candidate === "number"
+        && Number.isSafeInteger(candidate)
+        && candidate >= 0
+    ) {
+        return candidate;
+    }
+
+    throw new TypeError(
+        `Invalid feature report field: ${name}`
+    );
+}
+
 async function main(): Promise<void> {
+    const args =
+        process.argv.slice(2);
+
     const output =
         readOption(
-            process.argv.slice(2),
+            args,
             "--output"
+        );
+
+    const featureReport =
+        await readFeatureMeasurement(
+            optionalOption(
+                args,
+                "--feature-report"
+            )
         );
 
     await writeFile(
         resolve(output),
         buildProjectVigieReport(
-            projectVigieFromEnvironment()
+            projectVigieFromEnvironment(
+                featureReport
+            )
         ),
         "utf8"
     );
+}
+
+function optionalOption(
+    args: string[],
+    name: string
+): string | undefined {
+    const index =
+        args.lastIndexOf(name);
+
+    return index >= 0
+        ? args[index + 1]
+        : undefined;
 }
 
 const entryPoint =
@@ -481,9 +638,11 @@ if (
 
 export {
     buildProjectVigieReport,
+    environmentCount,
     normalizeCheckState,
     progressBar,
-    projectVigieFromEnvironment
+    projectVigieFromEnvironment,
+    readFeatureMeasurement
 };
 
 export type {

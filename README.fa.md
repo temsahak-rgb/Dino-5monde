@@ -439,6 +439,7 @@ Generator هر چرخه Dependency اجرایی را رد می‌کند. تست�
 npm test
 npm run test:app
 npm run test:data
+npm run test:features
 npm run test:architecture
 npm run test:e2e:install
 npm run test:e2e
@@ -457,6 +458,10 @@ tests/**/*.test.ts
 
 بنابراین با اضافه کردن تست جدید لازم نیست `package.json` تغییر کند.
 فرمان `npm run test:app` زیرمجموعه مسدودکننده خط کیفیت کد است؛ تست‌های داده عمداً در `npm run test:data` و Workflow اختصاصی خود جدا می‌مانند.
+
+### قراردادهای Feature با Cucumber
+
+سناریوهای مسیر `features/` به انگلیسی نوشته می‌شوند. هر سناریو دقیقاً یک وضعیت دارد: `@implemented` اجرا می‌شود و مسدودکننده است؛ `@planned` در پیشرفت دیده می‌شود اما اجرا نمی‌شود. Cucumber قراردادهای خالص محصول را پوشش می‌دهد و Playwright تنها مسئول مسیرهای واقعی مرورگر باقی می‌ماند.
 
 ### تست E2E مرورگر
 
@@ -525,7 +530,8 @@ jscpd             → فقط گزارش
 Workflow اختصاصی **Dependency graph** به‌صورت دستی اجرا می‌شود، فرمان `npm run graph:dependencies` را اجرا می‌کند و در صورت تغییر فقط `docs/dependency-graph.md` را روی Branch انتخاب‌شده Commit می‌کند. Commit دارای `[skip ci]` نه کنترل‌های برنامه را دوباره اجرا می‌کند و نه Deployment را.
 Workflow اختصاصی **Corpus quality** فرمان `npm run test:data` را اجرا می‌کند و خطاهای خوانا را به تفکیک فایل و فیلد در خلاصه و Artifact خود منتشر می‌کند.
 Workflow اختصاصی **Browser E2E** فقط Chromium را نصب می‌کند، Build محلی را اجرا می‌کند و در صورت Regression راه‌اندازی یا i18n، CI را ناموفق می‌کند.
-Workflow امن **Project Vigie** سپس فقط از Branch قابل اعتماد `develop` اجرا می‌شود، کد Pull Request را Checkout نمی‌کند و تست‌ها را دوباره اجرا نمی‌کند. نتیجه‌های موجود را در یک Comment ماندگار با سه Panel بازشدنی **Data**، **Technical** و **Features** همراه با چراغ وضعیت و نوار پیشرفت جمع می‌کند.
+Workflow اختصاصی **Feature contracts** سناریوهای Cucumber دارای `@implemented` را اجرا می‌کند، سیاست Tagها را بررسی می‌کند و گزارش‌های HTML/JUnit را منتشر می‌کند.
+Workflow امن **Project Vigie** سپس فقط از Branch قابل اعتماد `develop` اجرا می‌شود، کد Pull Request را Checkout نمی‌کند و تست‌ها را دوباره اجرا نمی‌کند. نتیجه‌های موجود را در یک Comment ماندگار با سه Panel بازشدنی **Data**، **Technical** و **Features** همراه با چراغ وضعیت و نوار پیشرفت جمع می‌کند. پیشرفت Featureها از سناریوهای تحویل‌شده، برنامه‌ریزی‌شده و نامعتبر به‌صورت خودکار اندازه‌گیری می‌شود و فایل‌های `.feature` در Pull Request فقط به‌عنوان داده غیرقابل‌اجرا خوانده می‌شوند.
 
 ---
 

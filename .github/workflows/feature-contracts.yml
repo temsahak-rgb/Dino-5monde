@@ -1,0 +1,57 @@
+name: Feature contracts
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+    paths-ignore:
+      - docs/dependency-graph.md
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cucumber:
+    name: Executable feature contracts
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run implemented feature contracts
+        run: npm run test:features
+
+      - name: Publish feature progress summary
+        if: always()
+        shell: bash
+        run: |
+          if [ -f reports/feature-progress.md ]; then
+            cat reports/feature-progress.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "# 🥒 Feature contract report" >> "$GITHUB_STEP_SUMMARY"
+            echo >> "$GITHUB_STEP_SUMMARY"
+            echo "No feature report was produced." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload Cucumber reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cucumber-reports
+          path: reports/
+          retention-days: 14
+          if-no-files-found: warn

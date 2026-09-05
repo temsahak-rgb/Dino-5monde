@@ -5,8 +5,23 @@ import {
     buildProjectVigieReport,
     normalizeCheckState,
     progressBar,
+    readFeatureMeasurement,
     type ProjectVigieInput
 } from "../../tools/build-project-vigie.js";
+import {
+    dirname,
+    resolve
+} from "node:path";
+import {
+    fileURLToPath
+} from "node:url";
+
+const currentDirectory =
+    dirname(
+        fileURLToPath(
+            import.meta.url
+        )
+    );
 
 function createInput():
     ProjectVigieInput {
@@ -54,8 +69,20 @@ function createInput():
             }
         ],
         feature: {
-            completed: 0,
-            total: 3
+            check: {
+                label:
+                    "Contrats Cucumber",
+                state:
+                    "success",
+                policy:
+                    "blocking",
+                url:
+                    "https://example.test/features"
+            },
+            implemented: 9,
+            planned: 5,
+            invalid: 0,
+            total: 14
         }
     };
 }
@@ -100,7 +127,15 @@ test(
         );
         assert.match(
             report,
-            /Cucumber et `@planned`/
+            /9 livrés · 5 planifiés/
+        );
+        assert.match(
+            report,
+            /Cucumber vérifie les contrats métier/
+        );
+        assert.match(
+            report,
+            /\[🟢 OK\]\(https:\/\/example\.test\/features\)/
         );
         assert.match(
             report,
@@ -138,6 +173,10 @@ test(
             url:
                 "https://example.test/quality"
         };
+        input.feature.check.state =
+            "failure";
+        input.feature.invalid =
+            1;
 
         const report =
             buildProjectVigieReport(
@@ -158,11 +197,19 @@ test(
         );
         assert.match(
             report,
+            /<details open>\n<summary><strong>🥒 Vigie Features/
+        );
+        assert.match(
+            report,
             /\[🔴 À corriger\]\(https:\/\/example\.test\/corpus\)/
         );
         assert.match(
             report,
             /1\/2 portes bloquantes validées/
+        );
+        assert.match(
+            report,
+            /🔴 Contrats invalides \| 1/
         );
     }
 );
@@ -200,6 +247,29 @@ test(
                 2
             ),
             "🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜ **50%**"
+        );
+    }
+);
+
+test(
+    "Vigie reads measured feature counts without executing feature code",
+    async () => {
+        const measurement =
+            await readFeatureMeasurement(
+                resolve(
+                    currentDirectory,
+                    "../fixtures/features/progress.json"
+                )
+            );
+
+        assert.deepEqual(
+            measurement,
+            {
+                implemented: 2,
+                planned: 1,
+                invalid: 2,
+                total: 4
+            }
         );
     }
 );
