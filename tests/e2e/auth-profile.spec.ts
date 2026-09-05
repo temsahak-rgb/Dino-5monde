@@ -214,6 +214,61 @@ test.describe(
                     }
                 );
 
+                await page.route(
+                    "**/rest/v1/shop_lessons**",
+                    async route => {
+                        if (await fulfillPreflight(route)) {
+                            return;
+                        }
+
+                        await route.fulfill({
+                            headers: jsonHeaders(),
+                            json: [],
+                            status: 200
+                        });
+                    }
+                );
+
+                await page.route(
+                    "**/rest/v1/learner_wallets**",
+                    async route => {
+                        if (await fulfillPreflight(route)) {
+                            return;
+                        }
+
+                        const now =
+                            new Date().toISOString();
+
+                        await route.fulfill({
+                            headers: jsonHeaders(),
+                            json: [
+                                {
+                                    created_at: now,
+                                    credits: 100,
+                                    updated_at: now,
+                                    user_id: learnerId
+                                }
+                            ],
+                            status: 200
+                        });
+                    }
+                );
+
+                await page.route(
+                    "**/rest/v1/lesson_entitlements**",
+                    async route => {
+                        if (await fulfillPreflight(route)) {
+                            return;
+                        }
+
+                        await route.fulfill({
+                            headers: jsonHeaders(),
+                            json: [],
+                            status: 200
+                        });
+                    }
+                );
+
                 await page.goto("/profile");
                 await expect(page).toHaveURL(
                     /\/auth\?returnTo=%2Fprofile$/
@@ -248,6 +303,9 @@ test.describe(
                         name: "Mon profil"
                     })
                 ).toBeVisible();
+                await expect(
+                    page.getByLabel("Mes crédits")
+                ).toContainText("100 crédits");
 
                 await page.getByLabel("Nom affiché").fill("Mina");
                 await expect(

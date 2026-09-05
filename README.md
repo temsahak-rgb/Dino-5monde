@@ -35,12 +35,14 @@ MVP overview, installation, i18n, architecture, tests and contribution rules.
 - 📝 exercices et quiz intégrés aux contenus ;
 - 🧭 onboarding et test de placement ;
 - 🔎 recherche et contenus complémentaires ;
+- 🛍️ boutique de leçons sur `/shop`, avec 100 crédits de bienvenue ;
+- 👤 compte sans mot de passe et profil privé `Saurus` ;
 - 🇫🇷🇮🇷 interface français / persan ;
 - ↔️ gestion LTR / RTL ;
 - 💾 progression enregistrée localement ;
 - 🧪 TypeScript + JSON + tests d'architecture.
 
-> **État / Status:** projet en développement. La navigation publique est resserrée sur Accueil, Grammaire, Vocabulaire, Voyage et Recherche. Les routes factices Quotidien, Jeux, Exercices et Profil ont été retirées du MVP publié.
+> **État / Status:** projet en développement. Le Profil et la Boutique sont désormais livrés ; les routes factices Quotidien, Jeux et page générale Exercices restent hors du MVP publié.
 
 ---
 
@@ -63,7 +65,9 @@ supabase/            → configuration et migrations du backend versionnées
 
 L'application est une SPA **React + TypeScript** construite par Vite. `index.html` charge uniquement `src/main.tsx` ; `AppRouter` et `AppLayout` structurent ensuite les routes, les pages et les composants.
 
-Le premier backend repose sur **Supabase**. Il est optionnel tant que les variables `VITE_SUPABASE_URL` et `VITE_SUPABASE_PUBLISHABLE_KEY` ne sont pas définies, ce qui préserve le site statique actuel. Le corpus pédagogique reste dans `data/` et n’est ni migré ni injecté dans PostgreSQL. La base accueille uniquement les futures données privées de compte et de profil, protégées dès la première migration par Row Level Security.
+Le premier backend repose sur **Supabase**. Il est optionnel tant que les variables `VITE_SUPABASE_URL` et `VITE_SUPABASE_PUBLISHABLE_KEY` ne sont pas définies, ce qui préserve le site statique actuel. Il porte les comptes, les profils, le portefeuille de crédits et les droits d'accès privés, tous protégés par Row Level Security. Chaque compte reçoit 100 crédits au départ ; l'achat d'une leçon est atomique côté PostgreSQL et laisse une trace dans un registre append-only.
+
+La boutique est disponible sur `/shop`. Elle utilise aujourd'hui uniquement des crédits virtuels : aucun paiement en argent réel n'est encore raccordé. Le corpus pédagogique reste dans `data/`, sans migration ni modification, et demeure donc publiquement téléchargeable avec le site GitHub Pages. Avant toute vente réelle, les contenus payants devront être servis par une frontière backend privée ; les droits Supabase seuls ne constituent pas une protection du JSON public.
 
 Le déploiement GitHub Pages injecte ces valeurs depuis les variables de dépôt `SUPABASE_URL` et `SUPABASE_PUBLISHABLE_KEY`. Le projet Supabase n’est donc jamais codé en dur : passer à l’environnement du client consiste à remplacer ces deux variables puis à rejouer les migrations versionnées.
 
@@ -77,7 +81,7 @@ npm run backend:test
 npm run backend:types
 ```
 
-`npm run backend:stop` arrête ensuite l’environnement local. Phone OTP reste volontairement désactivé tant qu’un fournisseur SMS payant et ses protections anti-abus ne sont pas configurés.
+`npm run backend:test` exécute notamment les contrôles SQL pgTAP de la boutique. `npm run backend:stop` arrête ensuite l’environnement local. Phone OTP reste volontairement désactivé tant qu’un fournisseur SMS payant et ses protections anti-abus ne sont pas configurés.
 
 Le parcours de compte utilise une **connexion email sans mot de passe** : `/auth` envoie un lien sécurisé vers la destination demandée et sait aussi vérifier un OTP à 6 chiffres, puis `/profile` crée ou modifie le profil privé et sa préférence d’affichage `Saurus`. Sur le plan gratuit, le modèle d’email Supabase par défaut est conservé ; le modèle OTP bilingue prêt dans `supabase/templates/` sera activé après raccordement d’un SMTP dédié. L’expéditeur intégré ne dessert que les adresses autorisées de l’équipe : un SMTP dédié reste donc obligatoire avant l’ouverture aux apprenants.
 
@@ -99,10 +103,11 @@ npm run typecheck
 npm run build
 npm run knip
 npm run duplication
-npm run graph:dependencies:check
 ```
 
 Les tests, le typecheck TypeScript et le build font échouer le job en cas d'erreur. Les analyses Knip et duplication restent informatives.
+
+`npm run graph:dependencies:check` reste une vérification locale. Le workflow **Dependency graph** est exclusivement manuel ; son commit `[skip ci]` ne lance ni la CI ordinaire ni le déploiement.
 
 Les contrats produit Cucumber vivent dans `features/` et sont rédigés en anglais. Chaque scénario hérite exactement d’un état : `@implemented` est exécuté et bloquant, tandis que `@planned` est compté dans l’avancement sans être exécuté. Ces contrats testent la logique métier ; Playwright conserve seul la responsabilité des parcours réels dans Chromium.
 

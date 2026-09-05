@@ -4,6 +4,7 @@ import {
     useState
 } from "react";
 import {
+    Link,
     Navigate
 } from "react-router";
 
@@ -16,6 +17,9 @@ import {
 import {
     useLearnerProfile
 } from "../services/backend/LearnerProfileProvider.js";
+import {
+    useShopWallet
+} from "../services/backend/ShopProvider.js";
 import {
     formatLearnerDisplayName,
     isLearnerAvatarKey,
@@ -69,6 +73,10 @@ function ProfilePage() {
         saveProfile,
         status: profileStatus
     } = useLearnerProfile();
+    const {
+        balance,
+        status: shopStatus
+    } = useShopWallet();
 
     const [displayName, setDisplayName] =
         useState("");
@@ -333,6 +341,35 @@ function ProfilePage() {
                             <strong className="mt-3 block break-words text-lg text-dino-800">
                                 {preview}
                             </strong>
+                        </Card>
+
+                        <Card
+                            className="p-5 text-center"
+                            aria-label={t("profile.credits")}
+                            aria-live="polite"
+                        >
+                            <p className="text-xs font-bold uppercase tracking-[0.08em] text-muted">
+                                {t("profile.credits")}
+                            </p>
+                            <strong className="mt-3 block text-2xl text-dino-800">
+                                {shopStatus === "loading"
+                                    ? t("common.loading")
+                                    : shopStatus === "ready"
+                                        && balance !== null
+                                        ? t(
+                                            balance === 1
+                                                ? "shop.credit"
+                                                : "shop.credits",
+                                            { count: balance }
+                                        )
+                                        : t("profile.creditsUnavailable")}
+                            </strong>
+                            <Link
+                                to="/shop"
+                                className="mt-4 inline-flex min-h-11 items-center justify-center rounded-control border border-dino-600 px-4 py-2 text-sm font-bold text-dino-700 no-underline transition hover:bg-dino-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dino-500 focus-visible:ring-offset-2"
+                            >
+                                {t("profile.openShop")}
+                            </Link>
                         </Card>
 
                         <Button

@@ -10,6 +10,7 @@ const appRoutePatterns = {
     onboarding: "/onboarding",
     home: "/",
     profile: "/profile",
+    shop: "/shop",
     grammarIndex: "/grammar",
     grammarLevel: "/grammar/:level",
     grammarLesson: "/grammar/lesson/:lessonId",
@@ -50,6 +51,7 @@ type AppRoute =
     | { name: "onboarding" }
     | { name: "home" }
     | { name: "profile" }
+    | { name: "shop" }
     | { name: "grammar-index" }
     | { name: "grammar-level"; level: GrammarLevel }
     | { name: "grammar-lesson"; lessonId: string }
@@ -70,6 +72,7 @@ type AppRoute =
 
 type AppRouteSection =
     | "home"
+    | "shop"
     | "grammar"
     | "vocabulary"
     | "travel"
@@ -88,6 +91,8 @@ function createAppPath(
             return appRoutePatterns.home;
         case "profile":
             return appRoutePatterns.profile;
+        case "shop":
+            return appRoutePatterns.shop;
         case "grammar-index":
             return appRoutePatterns.grammarIndex;
         case "grammar-level":
@@ -146,6 +151,8 @@ function matchAppPath(
                 return { name: "onboarding" };
             case "profile":
                 return { name: "profile" };
+            case "shop":
+                return { name: "shop" };
             case "grammar":
                 return { name: "grammar-index" };
             case "vocabulary":
@@ -246,6 +253,10 @@ function getAppRouteSection(
 ): AppRouteSection | null {
     if (route.name === "home") {
         return "home";
+    }
+
+    if (route.name === "shop") {
+        return "shop";
     }
 
     for (

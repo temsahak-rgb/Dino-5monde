@@ -32,6 +32,7 @@ const requiredReactSurfaces = [
     "src/ui/components/Navbar.tsx",
     "src/ui/components/Footer.tsx",
     "src/ui/components/Layout.tsx",
+    "src/features/shop/LessonAccessBoundary.tsx",
     "src/features/search/SearchDialog.tsx",
     "src/pages/HomePage.tsx",
     "src/pages/GrammarIndexPage.tsx",
@@ -45,7 +46,8 @@ const requiredReactSurfaces = [
     "src/pages/JournalIndexPage.tsx",
     "src/pages/JournalArticlePage.tsx",
     "src/pages/OnboardingPage.tsx",
-    "src/pages/NotFoundPage.tsx"
+    "src/pages/NotFoundPage.tsx",
+    "src/pages/ShopPage.tsx"
 ] as const;
 
 const forbiddenLegacySurfaces = [

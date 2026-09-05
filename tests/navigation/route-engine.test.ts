@@ -21,6 +21,7 @@ test(
                 onboarding: "/onboarding",
                 home: "/",
                 profile: "/profile",
+                shop: "/shop",
                 grammarIndex: "/grammar",
                 grammarLevel: "/grammar/:level",
                 grammarLesson: "/grammar/lesson/:lessonId",
@@ -62,6 +63,7 @@ test(
             { name: "onboarding" },
             { name: "home" },
             { name: "profile" },
+            { name: "shop" },
             { name: "grammar-index" },
             { name: "grammar-level", level: "B1" },
             { name: "grammar-lesson", lessonId: "A1-G-003-B" },
@@ -202,6 +204,10 @@ test(
         assert.equal(
             getAppRouteSection({ name: "profile" }),
             null
+        );
+        assert.equal(
+            getAppRouteSection({ name: "shop" }),
+            "shop"
         );
     }
 );

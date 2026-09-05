@@ -26,6 +26,16 @@ interface ProductWorld extends IWorld {
     email?: string;
     learnerProfile?: LearnerProfileDraft;
     displayedLearnerName?: string;
+    shopAuthenticated?: boolean;
+    shopCredits?: number;
+    shopLessonId?: string;
+    shopLessonPrice?: number;
+    shopOwnedLessonIds?: string[];
+    shopPurchaseStatus?:
+        | "already-owned"
+        | "insufficient-credits"
+        | "purchased"
+        | "sign-in-required";
 }
 
 function splitList(

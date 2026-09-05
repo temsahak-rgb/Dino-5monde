@@ -1,7 +1,8 @@
 import {
     createBrowserRouter,
     redirect,
-    type LoaderFunctionArgs
+    type LoaderFunctionArgs,
+    useParams
 } from "react-router";
 
 import {
@@ -19,6 +20,10 @@ import {
 import {
     getSafeReturnTo as getSafeInternalReturnTo
 } from "../core/returnTo.js";
+
+import {
+    LessonAccessBoundary
+} from "../features/shop/LessonAccessBoundary.js";
 
 import {
     AuthPage
@@ -59,6 +64,10 @@ import {
 import {
     ProfilePage
 } from "../pages/ProfilePage.js";
+
+import {
+    ShopPage
+} from "../pages/ShopPage.js";
 
 import {
     AboutPage
@@ -125,6 +134,7 @@ import {
  * /info/contact
  * /info/work-with-us
  * /profile
+ * /shop
  */
 const routerBasename =
     import.meta.env.BASE_URL;
@@ -177,6 +187,14 @@ const router =
                         ProfilePage
                 },
 
+                {
+                    path:
+                        appRoutePatterns.shop,
+
+                    Component:
+                        ShopPage
+                },
+
                 /* ---------------------------------------------------------- */
                 /* Grammar                                                    */
                 /* ---------------------------------------------------------- */
@@ -202,7 +220,7 @@ const router =
                         appRoutePatterns.grammarLesson,
 
                     Component:
-                        GrammarLessonPage
+                        PurchasableGrammarLessonPage
                 },
 
                 /* ---------------------------------------------------------- */
@@ -230,7 +248,7 @@ const router =
                         appRoutePatterns.vocabularyPack,
 
                     Component:
-                        VocabularyPackPage
+                        PurchasableVocabularyPackPage
                 },
 
                 /* ---------------------------------------------------------- */
@@ -486,6 +504,38 @@ function AppRouter() {
                 router
             }
         />
+    );
+}
+
+function PurchasableGrammarLessonPage() {
+    const {
+        lessonId = ""
+    } = useParams();
+
+    return (
+        <LessonAccessBoundary
+            contentId={lessonId}
+            contentType="grammar"
+        >
+            <GrammarLessonPage />
+        </LessonAccessBoundary>
+    );
+}
+
+function PurchasableVocabularyPackPage() {
+    const {
+        level,
+        packId = ""
+    } = useParams();
+
+    return (
+        <LessonAccessBoundary
+            contentId={packId}
+            contentType="vocabulary"
+            level={level}
+        >
+            <VocabularyPackPage />
+        </LessonAccessBoundary>
     );
 }
 

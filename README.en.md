@@ -68,11 +68,12 @@ The MVP is not intended to provide every feature of a complete learning platform
 | Search | ✅ Present |
 | News | ✅ Present |
 | Polls | ✅ Feature present |
-| Daily, Games, global Exercises, Profile | Outside the published scope; no placeholder route is exposed |
-| Remote user accounts | ❌ Not implemented |
+| Lesson shop and credits | ✅ `/shop`, catalogue and virtual-credit purchases |
+| Account and Profile | ✅ Passwordless email sign-in and private `Saurus` profile |
+| Daily, Games, global Exercises | Outside the published scope; no placeholder route is exposed |
 | Cross-device sync | ❌ Not implemented |
 
-Progress currently relies mainly on `localStorage`.
+Learning progress still relies mainly on `localStorage`. Accounts, profiles, credit balances and lesson entitlements are stored in Supabase and tied to the signed-in user.
 
 This keeps the MVP simple, but it means:
 
@@ -155,6 +156,14 @@ exercise
 ### 🔎 Search, news and polls
 
 The repository also contains search, news and poll features. They complement the educational core but are not currently the primary learning paths of the MVP.
+
+### 🛍️ Shop, credits and profile
+
+The shareable `/shop` route lists available lessons. Every new account starts with **100 credits** and can spend them to acquire a lesson; the balance is also visible under `/profile`. Credits are currently an internal virtual currency: no real-money payment provider is connected yet.
+
+Supabase stores wallets, acquired entitlements and an append-only transaction ledger. Row Level Security isolates each account, while a PostgreSQL function performs purchases atomically to prevent double charges and negative balances.
+
+The learning corpus deliberately remains under `data/` and is public in the GitHub Pages build. Selling content for real money will therefore require private backend delivery; hiding a lesson in React or storing only its entitlement in the database does not protect publicly shipped JSON.
 
 ---
 
@@ -325,11 +334,13 @@ Dino-5monde/
 │   │   └── i18n.ts
 │   │
 │   ├── pages/          # route components
+│   ├── services/backend/ # Auth, profiles, shop and PostgreSQL
 │   ├── ui/components/  # shared React components
 │   ├── styles/
 │   └── types/
 │
 ├── data/
+├── supabase/           # configuration, migrations and pgTAP tests
 ├── tests/
 │   ├── architecture/
 │   └── data/
@@ -363,6 +374,9 @@ i18n/*.ts
 data/**/*.json
     → educational content
 
+services/backend/ + supabase/
+    → private accounts, profiles, wallets, entitlements and PostgreSQL migrations
+
 types/
     → exported TypeScript contracts
 ```
@@ -377,6 +391,8 @@ Every durable screen has a canonical React Router path, for example:
 /vocabulary/B1/arrival-office
 /travel/TR-006
 /journal/2026-w34-azadi-tower
+/shop
+/profile
 /info/about
 ```
 
@@ -436,6 +452,8 @@ npm run graph:dependencies:check
 The file is deterministic: the first command regenerates it, while the second verifies it without writing.
 The generator also rejects every runtime dependency cycle. Architecture tests reinforce that guarantee by preventing the legacy bootstrap, router and Views from returning, and by keeping engines independent from React and UI components.
 
+`graph:dependencies:check` is a local command; it does not run in ordinary CI. The **Dependency graph** workflow is manual-only, and its `[skip ci]` commit triggers neither application checks nor deployment.
+
 ---
 
 ## Tests and quality
@@ -465,6 +483,14 @@ tests/**/*.test.ts
 
 Adding another test therefore does not require editing `package.json`.
 `npm run test:app` is the blocking code-quality subset; corpus tests are intentionally isolated in `npm run test:data` and their dedicated workflow.
+
+The shop's PostgreSQL contracts are covered by pgTAP. With Docker and the local backend running:
+
+```bash
+npm run backend:start
+npm run backend:reset
+npm run backend:test
+```
 
 ### Cucumber feature contracts
 
@@ -710,12 +736,12 @@ Natural next steps include:
 - completing the Daily path;
 - building Games;
 - completing the global Exercises area;
-- building the Profile area;
 - strengthening exercises;
 - adding more data-consistency tests;
 - using learner mistakes to recommend reviews;
 - improving consistency across CEFR levels;
-- eventually adding accounts and cross-device synchronisation.
+- synchronising learning progress across devices;
+- privately serving future paid content before enabling real-money payments.
 
 These items describe **direction**, not already delivered functionality.
 

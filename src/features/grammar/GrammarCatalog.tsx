@@ -11,6 +11,10 @@ import {
     useI18n
 } from "../../i18n/I18nProvider.js";
 
+import {
+    findShopOffer
+} from "../shop/shopOfferManifest.js";
+
 import type {
     GrammarLessonIndex,
     GrammarLevel,
@@ -162,6 +166,13 @@ function GrammarLessonCard({
             lesson.id
         );
 
+    const shopOffer =
+        findShopOffer(
+            "grammar",
+            lesson.id,
+            level
+        );
+
     return (
         <Link
             to={
@@ -250,6 +261,20 @@ function GrammarLessonCard({
                             variant="success"
                         >
                             🦖
+                        </Badge>
+                    ) : null}
+
+                    {shopOffer ? (
+                        <Badge
+                            variant="info"
+                        >
+                            {t(
+                                "shop.catalogPrice",
+                                {
+                                    price:
+                                        shopOffer.priceCredits
+                                }
+                            )}
                         </Badge>
                     ) : null}
                 </div>

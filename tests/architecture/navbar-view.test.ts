@@ -118,6 +118,7 @@ test(
                 "/vocabulary",
                 "/travel",
                 "/journal",
+                "/shop",
                 "/profile"
             ]
         );
@@ -126,14 +127,13 @@ test(
             html.match(
                 /aria-disabled="true"/g
             )?.length,
-            3
+            2
         );
 
         for (
             const label
             of [
                 "Musique",
-                "Boutique",
                 "Archive"
             ]
         ) {
@@ -144,6 +144,11 @@ test(
                 )
             );
         }
+
+        assert.match(
+            html,
+            /href="\/shop"[^>]*>[\s\S]*?Boutique/
+        );
 
         assert.match(
             html,

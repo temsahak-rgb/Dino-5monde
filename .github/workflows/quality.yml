@@ -227,3 +227,74 @@ jobs:
           name: dist
           path: dist/
           retention-days: 7
+
+  backend:
+    name: Backend schema
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository history
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Detect backend changes
+        id: backend-changes
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          if [[ "$EVENT_NAME" == "workflow_dispatch" || -z "$BASE_SHA" || "$BASE_SHA" =~ ^0+$ ]]; then
+            CHANGED=true
+          elif git diff --quiet "$BASE_SHA" "$HEAD_SHA" -- +            supabase/ +            package.json +            package-lock.json +            .github/workflows/quality.yml; then
+            CHANGED=false
+          else
+            CHANGED=true
+          fi
+
+          echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
+          echo "Backend validation required: $CHANGED" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Setup Node.js
+        if: steps.backend-changes.outputs.changed == 'true'
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        if: steps.backend-changes.outputs.changed == 'true'
+        run: npm ci
+
+      - name: Start minimal Supabase
+        if: steps.backend-changes.outputs.changed == 'true'
+        run: >-
+          npx supabase start
+          --exclude gotrue,realtime,storage-api,imgproxy,kong,mailpit,postgrest,postgres-meta,studio,edge-runtime,logflare,vector,supavisor
+          --yes
+          --agent no
+
+      - name: Rebuild database from migrations
+        if: steps.backend-changes.outputs.changed == 'true'
+        run: npm run backend:reset
+
+      - name: Lint PostgreSQL schema
+        if: steps.backend-changes.outputs.changed == 'true'
+        run: >-
+          npx supabase db lint
+          --local
+          --schema public
+          --level warning
+          --fail-on error
+          --agent no
+
+      - name: Run pgTAP contracts
+        if: steps.backend-changes.outputs.changed == 'true'
+        run: npm run backend:test
+
+      - name: Stop local Supabase
+        if: always() && steps.backend-changes.outputs.changed == 'true'
+        run: npm run backend:stop

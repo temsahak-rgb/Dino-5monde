@@ -586,22 +586,16 @@ function Navbar({
                                     )
                                 }
                             >
-                                <PlannedNavigationLink
+                                <NavigationLink
+                                    to="/shop"
                                     icon="🛍️"
                                     label={
                                         t(
                                             "navbar.shop"
                                         )
                                     }
-                                    soonLabel={
-                                        t(
-                                            "navbar.soon"
-                                        )
-                                    }
-                                    unavailableLabel={
-                                        t(
-                                            "navbar.unavailable"
-                                        )
+                                    onNavigate={
+                                        closeMenu
                                     }
                                 />
                             </NavigationGroup>
