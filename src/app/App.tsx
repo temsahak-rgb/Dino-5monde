@@ -15,6 +15,10 @@ import {
 } from "../services/backend/LearnerProfileProvider.js";
 
 import {
+    ShopProvider
+} from "../services/backend/ShopProvider.js";
+
+import {
     AppRouter
 } from "./AppRouter.js";
 
@@ -28,11 +32,13 @@ function App() {
     return (
         <BackendProvider>
             <AuthProvider>
-                <LearnerProfileProvider>
-                    <I18nProvider>
-                        <AppRouter />
-                    </I18nProvider>
-                </LearnerProfileProvider>
+                <ShopProvider>
+                    <LearnerProfileProvider>
+                        <I18nProvider>
+                            <AppRouter />
+                        </I18nProvider>
+                    </LearnerProfileProvider>
+                </ShopProvider>
             </AuthProvider>
         </BackendProvider>
     );

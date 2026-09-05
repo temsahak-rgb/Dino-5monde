@@ -68,11 +68,12 @@ Le but du MVP n'est pas encore de fournir toutes les fonctions d'une plateforme 
 | Recherche | ✅ Présente |
 | Actualités | ✅ Présentes |
 | Sondages | ✅ Fonction présente |
-| Quotidien, Jeux, page générale Exercices, Profil | Hors du périmètre publié ; aucune route factice exposée |
-| Compte utilisateur distant | ❌ Non implémenté |
+| Boutique et crédits | ✅ `/shop`, catalogue et achats en crédits virtuels |
+| Compte et Profil | ✅ Connexion email sans mot de passe et profil privé `Saurus` |
+| Quotidien, Jeux, page générale Exercices | Hors du périmètre publié ; aucune route factice exposée |
 | Synchronisation multi-appareils | ❌ Non implémentée |
 
-La progression repose aujourd'hui principalement sur `localStorage`.
+La progression pédagogique repose encore principalement sur `localStorage`. Le compte, le profil, le solde de crédits et les droits sur les leçons sont en revanche enregistrés dans Supabase et rattachés à l'utilisateur connecté.
 
 Cela garde le MVP simple, mais implique que :
 
@@ -155,6 +156,14 @@ exercice
 ### 🔎 Recherche, actualités et sondages
 
 Le dépôt contient également des fonctionnalités de recherche, d'actualités et de sondages. Elles complètent le cœur pédagogique mais ne constituent pas actuellement les parcours principaux du MVP.
+
+### 🛍️ Boutique, crédits et profil
+
+La route partageable `/shop` présente les leçons disponibles. Chaque nouveau compte reçoit **100 crédits** et peut les dépenser pour acquérir une leçon ; le solde est également visible dans `/profile`. Il s'agit pour l'instant d'une monnaie virtuelle interne : aucun paiement en argent réel n'est raccordé.
+
+Supabase conserve le portefeuille, les droits acquis et un registre append-only des mouvements. Les politiques Row Level Security isolent chaque compte, et une fonction PostgreSQL effectue l'achat de façon atomique afin d'empêcher les doubles débits et les soldes négatifs.
+
+Le corpus reste volontairement dans `data/` et demeure public dans le build GitHub Pages. Une commercialisation réelle exigera donc de déplacer la livraison des contenus payants derrière une API privée ; masquer une leçon dans React ou stocker uniquement son droit d'accès en base ne protège pas son JSON public.
 
 ---
 
@@ -325,11 +334,13 @@ Dino-5monde/
 │   │   └── i18n.ts
 │   │
 │   ├── pages/          # composants associés aux routes
+│   ├── services/backend/ # Auth, profil, boutique et PostgreSQL
 │   ├── ui/components/  # composants React partagés
 │   ├── styles/
 │   └── types/
 │
 ├── data/
+├── supabase/           # configuration, migrations et tests pgTAP
 ├── tests/
 │   ├── architecture/
 │   └── data/
@@ -363,6 +374,9 @@ i18n/*.ts
 data/**/*.json
     → contenu pédagogique
 
+services/backend/ + supabase/
+    → comptes privés, profils, portefeuilles, droits et migrations PostgreSQL
+
 types/
     → contrats TypeScript exportés
 ```
@@ -377,6 +391,8 @@ Chaque écran durable possède un chemin React Router canonique, par exemple :
 /vocabulary/B1/arrival-office
 /travel/TR-006
 /journal/2026-w34-azadi-tower
+/shop
+/profile
 /info/about
 ```
 
@@ -436,6 +452,8 @@ npm run graph:dependencies:check
 Le fichier est déterministe : la première commande le régénère, la seconde vérifie qu'il est à jour sans l'écrire.
 Le générateur rejette également tout cycle de dépendances d'exécution. Les tests d'architecture complètent cette garantie en empêchant le retour du bootstrap, du routeur et des Views legacy, ainsi que les dépendances de moteurs vers React ou l'UI.
 
+`graph:dependencies:check` est une commande locale ; elle ne s'exécute pas dans la CI ordinaire. Le workflow **Dependency graph** se lance uniquement à la demande et son commit `[skip ci]` ne déclenche ni contrôles applicatifs ni déploiement.
+
 ---
 
 ## Tests et qualité
@@ -465,6 +483,14 @@ tests/**/*.test.ts
 
 Il n'est donc pas nécessaire de modifier `package.json` lorsqu'un nouveau test est ajouté.
 `npm run test:app` est le sous-ensemble bloquant du pipeline de qualité du code ; les tests corpus restent volontairement isolés dans `npm run test:data` et leur workflow dédié.
+
+Les contrats PostgreSQL de la boutique sont couverts par pgTAP. Avec Docker et le backend local démarré :
+
+```bash
+npm run backend:start
+npm run backend:reset
+npm run backend:test
+```
 
 ### Contrats fonctionnels Cucumber
 
@@ -710,12 +736,12 @@ Les prochaines évolutions naturelles comprennent notamment :
 - terminer le parcours Quotidien ;
 - développer les Jeux ;
 - compléter la page générale Exercices ;
-- construire le Profil ;
 - renforcer les exercices ;
 - ajouter davantage de tests de données ;
 - améliorer les recommandations de révision à partir des erreurs ;
 - harmoniser la couverture des niveaux CECRL ;
-- éventuellement ajouter plus tard des comptes et une synchronisation multi-appareils.
+- synchroniser la progression pédagogique entre appareils ;
+- servir les futurs contenus payants depuis une frontière backend privée avant d'activer un paiement réel.
 
 Ces éléments décrivent une **direction**, pas des fonctionnalités déjà livrées.
 

@@ -58,6 +58,7 @@ jobs:
           script: |
             const requiredChecks = [
               'Quality report',
+              'Backend schema',
               'Executable feature contracts',
             ];
             if (process.env.REQUIRE_E2E_CHECK === 'true') {

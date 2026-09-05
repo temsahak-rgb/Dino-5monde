@@ -4,6 +4,41 @@ import {
     type Page
 } from "@playwright/test";
 
+test.beforeEach(
+    async ({ context }) => {
+        await context.route(
+            "https://supabase.test/rest/v1/shop_lessons**",
+            async route => {
+                if (
+                    route.request().method()
+                    === "OPTIONS"
+                ) {
+                    await route.fulfill({
+                        body: "",
+                        headers: {
+                            "access-control-allow-origin":
+                                "*"
+                        },
+                        status: 204
+                    });
+                    return;
+                }
+
+                await route.fulfill({
+                    headers: {
+                        "access-control-allow-origin":
+                            "*",
+                        "content-type":
+                            "application/json"
+                    },
+                    json: [],
+                    status: 200
+                });
+            }
+        );
+    }
+);
+
 async function seedCompletedOnboarding(
     page: Page,
     language: "fr" | "fa" = "fr"

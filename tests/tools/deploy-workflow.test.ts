@@ -25,7 +25,7 @@ const root =
     );
 
 test(
-    "deployment waits for quality, Cucumber and the successful E2E trigger",
+    "deployment waits for quality, backend, Cucumber and the successful E2E trigger",
     async () => {
         const workflow =
             await readFile(
@@ -46,7 +46,7 @@ test(
         );
         assert.match(
             workflow,
-            /requiredChecks = \[\s*'Quality report',\s*'Executable feature contracts'/
+            /requiredChecks = \[\s*'Quality report',\s*'Backend schema',\s*'Executable feature contracts'/
         );
         assert.match(
             workflow,
@@ -59,6 +59,37 @@ test(
         assert.doesNotMatch(
             workflow,
             /npm run test:features|cucumber-js/
+        );
+    }
+);
+
+test(
+    "backend CI rebuilds migrations only when backend inputs change",
+    async () => {
+        const workflow =
+            await readFile(
+                resolve(
+                    root,
+                    ".github/workflows/quality.yml"
+                ),
+                "utf8"
+            );
+
+        assert.match(
+            workflow,
+            /name: Backend schema/
+        );
+        assert.match(
+            workflow,
+            /git diff --quiet[\s\S]*supabase\//
+        );
+        assert.match(
+            workflow,
+            /supabase start[\s\S]*backend:reset[\s\S]*supabase db lint[\s\S]*backend:test/
+        );
+        assert.match(
+            workflow,
+            /if: always\(\)[\s\S]*backend:stop/
         );
     }
 );

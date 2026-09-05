@@ -6,6 +6,10 @@ import {
     useI18n
 } from "../../i18n/I18nProvider.js";
 
+import {
+    findShopOffer
+} from "../shop/shopOfferManifest.js";
+
 import type {
     Level,
     VocabPackIndex
@@ -80,6 +84,13 @@ function VocabularyPackCard({
             pack.title,
             pack.title_fa,
             pack.id
+        );
+
+    const shopOffer =
+        findShopOffer(
+            "vocabulary",
+            pack.id,
+            level
         );
 
     return (
@@ -170,6 +181,20 @@ function VocabularyPackCard({
                             "common.words"
                         )}
                     </Badge>
+
+                    {shopOffer ? (
+                        <Badge
+                            variant="info"
+                        >
+                            {t(
+                                "shop.catalogPrice",
+                                {
+                                    price:
+                                        shopOffer.priceCredits
+                                }
+                            )}
+                        </Badge>
+                    ) : null}
                 </div>
             </Card>
         </Link>

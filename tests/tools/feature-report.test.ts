@@ -121,11 +121,17 @@ test(
 
         assert.match(
             markdown,
-            /Implemented \| 12/
+            new RegExp(
+                `Implemented \\| ${progress.implemented.length}`,
+                "u"
+            )
         );
         assert.match(
             markdown,
-            /Planned \| 4/
+            new RegExp(
+                `Planned \\| ${progress.planned.length}`,
+                "u"
+            )
         );
         assert.match(
             markdown,
