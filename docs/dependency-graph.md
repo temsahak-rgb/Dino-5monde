@@ -2,7 +2,7 @@
 
 # React application dependency maps
 
-The application contains 74 local modules reachable from `src/main.tsx`, 208 runtime imports and 66 type-only imports.
+The application contains 78 local modules reachable from `src/main.tsx`, 211 runtime imports and 68 type-only imports.
 The generator rejects runtime dependency cycles.
 
 ## React architecture overview
@@ -16,41 +16,43 @@ flowchart TB
         direction TB
         G0["Entry point"]
         G1["App"]
-        G2["React router and routes"]
-        G3["App layout"]
-        G4["Route pages"]
-        G5["Shared React components"]
-        G6["Feature React components"]
+        G2["Backend boundary (React + Supabase)"]
+        G3["React router and routes"]
+        G4["App layout"]
+        G5["Route pages"]
+        G6["Shared React components"]
+        G7["Feature React components"]
     end
     subgraph L["Engines and source modules"]
         direction TB
-        G7["Feature engines and modules"]
-        G8["Core engines and modules"]
+        G8["Feature engines and modules"]
+        G9["Core engines and modules"]
     end
     subgraph C["Cross-cutting modules"]
         direction TB
-        G9["Internationalization"]
-        G11["Styles"]
+        G10["Internationalization"]
+        G12["Styles"]
     end
     G0 --> G1
-    G0 --> G11
+    G0 --> G12
     G1 --> G2
-    G1 --> G9
-    G2 --> G3
-    G2 -->|16 imports| G4
-    G3 -->|2 imports| G5
-    G4 -->|35 imports| G5
-    G4 -->|10 imports| G6
-    G4 -->|13 imports| G7
-    G4 -->|3 imports| G8
-    G4 -->|15 imports| G9
-    G5 --> G6
-    G5 -->|2 imports| G9
-    G6 -->|32 imports| G5
-    G6 -->|12 imports| G7
-    G6 -->|7 imports| G8
-    G6 -->|20 imports| G9
-    G7 -->|5 imports| G8
+    G1 --> G3
+    G1 --> G10
+    G3 --> G4
+    G3 -->|16 imports| G5
+    G4 -->|2 imports| G6
+    G5 -->|35 imports| G6
+    G5 -->|10 imports| G7
+    G5 -->|13 imports| G8
+    G5 -->|3 imports| G9
+    G5 -->|15 imports| G10
+    G6 --> G7
+    G6 -->|2 imports| G10
+    G7 -->|32 imports| G6
+    G7 -->|12 imports| G8
+    G7 -->|7 imports| G9
+    G7 -->|20 imports| G10
+    G8 -->|5 imports| G9
 ```
 
 ## React root and route tree
@@ -69,71 +71,76 @@ flowchart TB
         direction TB
         M1["app/App"]:::focus
     end
-    subgraph S2["React router and routes"]
+    subgraph S2["Backend boundary (React + Supabase)"]
         direction TB
-        M2["app/AppRouter"]:::focus
-        M3["app/routes"]:::focus
+        M2["services/backend/BackendProvider"]
     end
-    subgraph S3["App layout"]
+    subgraph S3["React router and routes"]
         direction TB
-        M4["app/AppLayout"]:::focus
+        M3["app/AppRouter"]:::focus
+        M4["app/routes"]:::focus
     end
-    subgraph S4["Route pages"]
+    subgraph S4["App layout"]
         direction TB
-        M5["pages/AboutPage"]
-        M6["pages/ContactPage"]
-        M7["pages/GrammarIndexPage"]
-        M8["pages/GrammarLessonPage"]
-        M9["pages/GrammarLevelPage"]
-        M10["pages/HomePage"]
-        M11["pages/JournalArticlePage"]
-        M12["pages/JournalIndexPage"]
-        M13["pages/NotFoundPage"]
-        M14["pages/OnboardingPage"]
-        M15["pages/TravelIndexPage"]
-        M16["pages/TravelLessonPage"]
-        M17["pages/VocabularyIndexPage"]
-        M18["pages/VocabularyLevelPage"]
-        M19["pages/VocabularyPackPage"]
-        M20["pages/WorkWithUsPage"]
+        M5["app/AppLayout"]:::focus
     end
-    subgraph S5["Shared React components"]
+    subgraph S5["Route pages"]
         direction TB
-        M21["components/Footer"]
-        M22["components/Navbar"]
+        M6["pages/AboutPage"]
+        M7["pages/ContactPage"]
+        M8["pages/GrammarIndexPage"]
+        M9["pages/GrammarLessonPage"]
+        M10["pages/GrammarLevelPage"]
+        M11["pages/HomePage"]
+        M12["pages/JournalArticlePage"]
+        M13["pages/JournalIndexPage"]
+        M14["pages/NotFoundPage"]
+        M15["pages/OnboardingPage"]
+        M16["pages/TravelIndexPage"]
+        M17["pages/TravelLessonPage"]
+        M18["pages/VocabularyIndexPage"]
+        M19["pages/VocabularyLevelPage"]
+        M20["pages/VocabularyPackPage"]
+        M21["pages/WorkWithUsPage"]
     end
-    subgraph S9["Internationalization"]
+    subgraph S6["Shared React components"]
         direction TB
-        M23["i18n/I18nProvider"]
+        M22["components/Footer"]
+        M23["components/Navbar"]
     end
-    subgraph S11["Styles"]
+    subgraph S10["Internationalization"]
         direction TB
-        M24["styles/style"]
+        M24["i18n/I18nProvider"]
     end
+    subgraph S12["Styles"]
+        direction TB
+        M25["styles/style"]
+    end
+    M1 --> M3
+    M1 --> M24
     M1 --> M2
-    M1 --> M23
-    M4 --> M21
-    M4 --> M22
-    M2 --> M4
-    M2 --> M3
-    M2 --> M5
-    M2 --> M6
-    M2 --> M7
-    M2 --> M8
-    M2 --> M9
-    M2 --> M10
-    M2 --> M11
-    M2 --> M12
-    M2 --> M13
-    M2 --> M14
-    M2 --> M15
-    M2 --> M16
-    M2 --> M17
-    M2 --> M18
-    M2 --> M19
-    M2 --> M20
+    M5 --> M22
+    M5 --> M23
+    M3 --> M5
+    M3 --> M4
+    M3 --> M6
+    M3 --> M7
+    M3 --> M8
+    M3 --> M9
+    M3 --> M10
+    M3 --> M11
+    M3 --> M12
+    M3 --> M13
+    M3 --> M14
+    M3 --> M15
+    M3 --> M16
+    M3 --> M17
+    M3 --> M18
+    M3 --> M19
+    M3 --> M20
+    M3 --> M21
     M0 --> M1
-    M0 --> M24
+    M0 --> M25
 ```
 
 ## Focused route branches
@@ -147,11 +154,11 @@ Open only the branch you need. Each map follows outgoing runtime imports from it
 %%{init: {"flowchart": {"curve": "stepAfter", "nodeSpacing": 24, "rankSpacing": 42}}}%%
 flowchart TB
     classDef focus stroke-width:2px
-    subgraph S4["Route pages"]
+    subgraph S5["Route pages"]
         direction TB
         M0["pages/HomePage"]:::focus
     end
-    subgraph S5["Shared React components"]
+    subgraph S6["Shared React components"]
         direction TB
         M1["components/Controls"]:::focus
         M2["components/DinoMascot"]:::focus
@@ -161,23 +168,23 @@ flowchart TB
         M6["components/Navbar"]:::focus
         M7["components/RichText"]:::focus
     end
-    subgraph S6["Feature React components"]
+    subgraph S7["Feature React components"]
         direction TB
         M8["features/news/NewsCatalog"]
         M9["features/search/SearchDialog"]:::focus
     end
-    subgraph S7["Feature engines and modules"]
+    subgraph S8["Feature engines and modules"]
         direction TB
         M10["features/news/newsRepository"]
         M11["features/search/searchEngine"]:::focus
         M12["features/search/searchRepository"]:::focus
     end
-    subgraph S8["Core engines and modules"]
+    subgraph S9["Core engines and modules"]
         direction TB
         M13["core/placementEngine"]
         M14["core/staticData"]
     end
-    subgraph S9["Internationalization"]
+    subgraph S10["Internationalization"]
         direction TB
         M15["i18n/I18nProvider"]
     end
@@ -206,39 +213,39 @@ flowchart TB
 %%{init: {"flowchart": {"curve": "stepAfter", "nodeSpacing": 24, "rankSpacing": 42}}}%%
 flowchart TB
     classDef focus stroke-width:2px
-    subgraph S4["Route pages"]
+    subgraph S5["Route pages"]
         direction TB
         M0["pages/GrammarIndexPage"]:::focus
         M1["pages/GrammarLessonPage"]:::focus
         M2["pages/GrammarLevelPage"]:::focus
     end
-    subgraph S5["Shared React components"]
+    subgraph S6["Shared React components"]
         direction TB
         M3["components/Controls"]
         M4["components/Feedback"]
         M5["components/Layout"]
         M6["components/RichText"]
     end
-    subgraph S6["Feature React components"]
+    subgraph S7["Feature React components"]
         direction TB
         M7["features/exercises/Exercise"]:::focus
         M8["features/grammar/GrammarCatalog"]:::focus
         M9["features/grammar/GrammarLesson"]:::focus
         M10["features/grammar/GrammarLessonContent"]:::focus
     end
-    subgraph S7["Feature engines and modules"]
+    subgraph S8["Feature engines and modules"]
         direction TB
         M11["features/grammar/grammarEngine"]:::focus
         M12["features/grammar/grammarLevels"]:::focus
     end
-    subgraph S8["Core engines and modules"]
+    subgraph S9["Core engines and modules"]
         direction TB
         M13["core/exerciseEngine"]
         M14["core/lessonEngine"]
         M15["core/progressEngine"]
         M16["core/staticData"]
     end
-    subgraph S9["Internationalization"]
+    subgraph S10["Internationalization"]
         direction TB
         M17["i18n/I18nProvider"]
     end
@@ -294,24 +301,24 @@ flowchart TB
 %%{init: {"flowchart": {"curve": "stepAfter", "nodeSpacing": 24, "rankSpacing": 42}}}%%
 flowchart TB
     classDef focus stroke-width:2px
-    subgraph S4["Route pages"]
+    subgraph S5["Route pages"]
         direction TB
         M0["pages/OnboardingPage"]:::focus
     end
-    subgraph S5["Shared React components"]
+    subgraph S6["Shared React components"]
         direction TB
         M1["components/Controls"]
         M2["components/Feedback"]
     end
-    subgraph S6["Feature React components"]
+    subgraph S7["Feature React components"]
         direction TB
         M3["features/onboarding/OnboardingFlow"]:::focus
     end
-    subgraph S8["Core engines and modules"]
+    subgraph S9["Core engines and modules"]
         direction TB
         M4["core/placementEngine"]
     end
-    subgraph S9["Internationalization"]
+    subgraph S10["Internationalization"]
         direction TB
         M5["i18n/I18nProvider"]
     end
@@ -331,36 +338,36 @@ flowchart TB
 %%{init: {"flowchart": {"curve": "stepAfter", "nodeSpacing": 24, "rankSpacing": 42}}}%%
 flowchart TB
     classDef focus stroke-width:2px
-    subgraph S4["Route pages"]
+    subgraph S5["Route pages"]
         direction TB
         M0["pages/TravelIndexPage"]:::focus
         M1["pages/TravelLessonPage"]:::focus
     end
-    subgraph S5["Shared React components"]
+    subgraph S6["Shared React components"]
         direction TB
         M2["components/Controls"]
         M3["components/Feedback"]
         M4["components/Layout"]
         M5["components/RichText"]
     end
-    subgraph S6["Feature React components"]
+    subgraph S7["Feature React components"]
         direction TB
         M6["features/exercises/Exercise"]:::focus
         M7["features/travel/TravelCatalog"]:::focus
         M8["features/travel/TravelLesson"]:::focus
         M9["features/travel/TravelSectionContent"]:::focus
     end
-    subgraph S7["Feature engines and modules"]
+    subgraph S8["Feature engines and modules"]
         direction TB
         M10["features/travel/travelEngine"]:::focus
     end
-    subgraph S8["Core engines and modules"]
+    subgraph S9["Core engines and modules"]
         direction TB
         M11["core/exerciseEngine"]
         M12["core/progressEngine"]
         M13["core/staticData"]
     end
-    subgraph S9["Internationalization"]
+    subgraph S10["Internationalization"]
         direction TB
         M14["i18n/I18nProvider"]
     end
@@ -408,20 +415,20 @@ flowchart TB
 %%{init: {"flowchart": {"curve": "stepAfter", "nodeSpacing": 24, "rankSpacing": 42}}}%%
 flowchart TB
     classDef focus stroke-width:2px
-    subgraph S4["Route pages"]
+    subgraph S5["Route pages"]
         direction TB
         M0["pages/VocabularyIndexPage"]:::focus
         M1["pages/VocabularyLevelPage"]:::focus
         M2["pages/VocabularyPackPage"]:::focus
     end
-    subgraph S5["Shared React components"]
+    subgraph S6["Shared React components"]
         direction TB
         M3["components/Controls"]
         M4["components/Feedback"]
         M5["components/Layout"]
         M6["components/RichText"]
     end
-    subgraph S6["Feature React components"]
+    subgraph S7["Feature React components"]
         direction TB
         M7["features/vocabulary/VocabularyCatalog"]:::focus
         M8["features/vocabulary/VocabularyCrossword"]:::focus
@@ -434,7 +441,7 @@ flowchart TB
         M15["features/vocabulary/VocabularyStory"]:::focus
         M16["features/vocabulary/VocabularyWordSearch"]:::focus
     end
-    subgraph S7["Feature engines and modules"]
+    subgraph S8["Feature engines and modules"]
         direction TB
         M17["features/vocabulary/games/crosswordEngine"]:::focus
         M18["features/vocabulary/games/gameWordsEngine"]:::focus
@@ -445,11 +452,11 @@ flowchart TB
         M23["features/vocabulary/vocabularyLevels"]:::focus
         M24["features/vocabulary/vocabularyRepository"]:::focus
     end
-    subgraph S8["Core engines and modules"]
+    subgraph S9["Core engines and modules"]
         direction TB
         M25["core/staticData"]
     end
-    subgraph S9["Internationalization"]
+    subgraph S10["Internationalization"]
         direction TB
         M26["i18n/I18nProvider"]
     end
@@ -527,32 +534,32 @@ flowchart TB
 %%{init: {"flowchart": {"curve": "stepAfter", "nodeSpacing": 24, "rankSpacing": 42}}}%%
 flowchart TB
     classDef focus stroke-width:2px
-    subgraph S4["Route pages"]
+    subgraph S5["Route pages"]
         direction TB
         M0["pages/JournalArticlePage"]:::focus
         M1["pages/JournalIndexPage"]:::focus
     end
-    subgraph S5["Shared React components"]
+    subgraph S6["Shared React components"]
         direction TB
         M2["components/Controls"]
         M3["components/Feedback"]
         M4["components/Layout"]
     end
-    subgraph S6["Feature React components"]
+    subgraph S7["Feature React components"]
         direction TB
         M5["features/news/NewsArticle"]:::focus
         M6["features/news/NewsCatalog"]:::focus
     end
-    subgraph S7["Feature engines and modules"]
+    subgraph S8["Feature engines and modules"]
         direction TB
         M7["features/news/newsRepository"]:::focus
     end
-    subgraph S8["Core engines and modules"]
+    subgraph S9["Core engines and modules"]
         direction TB
         M8["core/placementEngine"]
         M9["core/staticData"]
     end
-    subgraph S9["Internationalization"]
+    subgraph S10["Internationalization"]
         direction TB
         M10["i18n/I18nProvider"]
     end
@@ -585,19 +592,19 @@ flowchart TB
 %%{init: {"flowchart": {"curve": "stepAfter", "nodeSpacing": 24, "rankSpacing": 42}}}%%
 flowchart TB
     classDef focus stroke-width:2px
-    subgraph S4["Route pages"]
+    subgraph S5["Route pages"]
         direction TB
         M0["pages/AboutPage"]:::focus
         M1["pages/ContactPage"]:::focus
         M2["pages/NotFoundPage"]:::focus
         M3["pages/WorkWithUsPage"]:::focus
     end
-    subgraph S5["Shared React components"]
+    subgraph S6["Shared React components"]
         direction TB
         M4["components/Controls"]
         M5["components/Layout"]
     end
-    subgraph S9["Internationalization"]
+    subgraph S10["Internationalization"]
         direction TB
         M6["i18n/I18nProvider"]
     end
@@ -620,6 +627,6 @@ flowchart TB
 ## Enforced invariants
 
 - No runtime dependency cycle.
-- 66 type-only imports are tracked but hidden from diagrams to avoid visual noise.
+- 68 type-only imports are tracked but hidden from diagrams to avoid visual noise.
 - Every module and edge is derived from the local imports reachable from `src/main.tsx`.
 - External packages are intentionally excluded so the diagrams stay focused on application architecture.
