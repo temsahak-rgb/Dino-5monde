@@ -446,6 +446,7 @@ The generator also rejects every runtime dependency cycle. Architecture tests re
 npm test
 npm run test:app
 npm run test:data
+npm run test:features
 npm run test:architecture
 npm run test:e2e:install
 npm run test:e2e
@@ -464,6 +465,10 @@ tests/**/*.test.ts
 
 Adding another test therefore does not require editing `package.json`.
 `npm run test:app` is the blocking code-quality subset; corpus tests are intentionally isolated in `npm run test:data` and their dedicated workflow.
+
+### Cucumber feature contracts
+
+Scenarios under `features/` are written in English. Every scenario inherits exactly one lifecycle state: `@implemented` is executed and blocking; `@planned` remains visible in progress without being executed. Cucumber covers pure product contracts, while Playwright remains solely responsible for browser journeys.
 
 ### Browser E2E tests
 
@@ -532,7 +537,8 @@ A test, typecheck or build regression therefore makes the CI job fail.
 The dedicated **Dependency graph** workflow runs manually, executes `npm run graph:dependencies`, and commits only `docs/dependency-graph.md` to the selected branch when it changes. Its `[skip ci]` commit triggers neither application checks nor deployment.
 The dedicated **Corpus quality** workflow runs `npm run test:data` and publishes readable file/field errors in its summary and artifact.
 The dedicated **Browser E2E** workflow installs Chromium only, starts the local build, and blocks CI when startup or i18n regresses.
-The secured **Project Vigie** workflow then runs from the trusted `develop` branch, never checks out pull-request code, and never replays the test suites. It consolidates existing results into one persistent comment with three collapsible panels — **Data**, **Technical**, and **Features** — plus status lights and progress bars.
+The dedicated **Feature contracts** workflow executes `@implemented` Cucumber scenarios, enforces the lifecycle-tag policy, and publishes HTML/JUnit reports.
+The secured **Project Vigie** workflow then runs from the trusted `develop` branch, never checks out pull-request code, and never replays the test suites. It consolidates existing results into one persistent comment with three collapsible panels — **Data**, **Technical**, and **Features** — plus status lights and progress bars. Feature progress is measured automatically from delivered, planned, and invalid scenarios while pull-request `.feature` files are handled only as non-executable data.
 
 GitHub branch/ruleset configuration remains separate from this repository code.
 
