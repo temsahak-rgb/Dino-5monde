@@ -270,7 +270,7 @@ Il ne faut donc pas recopier toutes les leçons dans les catalogues i18n.
 
 ### Pas de branchement de langue dans le métier
 
-Les contrôleurs et moteurs ne doivent pas recréer des conditions comme :
+Les composants et moteurs ne doivent pas recréer des conditions comme :
 
 ```ts
 if (lang === "fa") {
@@ -290,25 +290,31 @@ Cette règle est protégée par les tests d'architecture.
 
 ```text
 Dino-5monde/
-├── app.ts
 ├── index.html
 ├── package.json
 ├── tsconfig.json
+├── vite.config.ts
 │
 ├── src/
+│   ├── main.tsx
+│   ├── app/
+│   │   ├── App.tsx
+│   │   ├── AppRouter.tsx
+│   │   ├── AppLayout.tsx
+│   │   └── routes.ts
+│   │
 │   ├── core/
 │   │   ├── exerciseEngine.ts
 │   │   ├── lessonEngine.ts
-│   │   ├── pathEngine.ts
 │   │   ├── placementEngine.ts
 │   │   ├── progressEngine.ts
-│   │   └── router.ts
+│   │   └── staticData.ts
 │   │
 │   ├── features/
+│   │   ├── exercises/
 │   │   ├── grammar/
 │   │   ├── news/
 │   │   ├── onboarding/
-│   │   ├── polls/
 │   │   ├── search/
 │   │   ├── travel/
 │   │   └── vocabulary/
@@ -318,10 +324,8 @@ Dino-5monde/
 │   │   ├── fa.ts
 │   │   └── i18n.ts
 │   │
-│   ├── pages/
-│   ├── ui/
-│   │   ├── ui.ts
-│   │   └── views/
+│   ├── pages/          # composants associés aux routes
+│   ├── ui/components/  # composants React partagés
 │   ├── styles/
 │   └── types/
 │
@@ -338,17 +342,20 @@ Dino-5monde/
 Le MVP converge vers les responsabilités suivantes :
 
 ```text
-app.ts / router.ts
-    → bootstrap et navigation
+src/main.tsx
+    → montage de la racine React
 
-pages/ + features/* controllers
-    → orchestration, événements, état d'écran
+app/App.tsx + AppRouter.tsx + AppLayout.tsx + routes.ts
+    → providers globaux, routes et shell partagé
 
-core/*Engine.ts + feature engines
-    → logique métier et état réutilisable
+pages/*.tsx
+    → écrans de route et orchestration
 
-ui/views/*.ts
-    → HTML et présentation
+ui/components/*.tsx + features/**/*.tsx
+    → présentation déclarative, interactions et état local
+
+features/**/*.ts + core/*.ts
+    → moteurs, repositories et logique indépendante de React
 
 i18n/*.ts
     → textes d'interface et direction LTR/RTL
@@ -362,30 +369,29 @@ types/
 
 ### Navigation partageable
 
-Chaque écran durable possède une query string canonique, par exemple :
+Chaque écran durable possède un chemin React Router canonique, par exemple :
 
 ```text
-?view=grammar&level=A1
-?view=grammar&lesson=A1-G-001
-?view=vocabulary&level=B1&pack=arrival-office
-?view=travel&lesson=TR-006
-?view=journal&article=2026-w34-azadi-tower
-?view=info&page=about
+/grammar/A1
+/grammar/lesson/A1-G-001
+/vocabulary/B1/arrival-office
+/travel/TR-006
+/journal/2026-w34-azadi-tower
+/info/about
 ```
 
-Ces URLs supportent l’ouverture directe, le rechargement et l’historique arrière/avant. Le routeur est le seul propriétaire de `location` et `history`, valide la forme sûre des identifiants avant le rendu et conserve le deep-link pendant l’onboarding. Les états temporaires — question courante, score, carte retournée, plateau de jeu ou sous-section — restent hors URL.
+Ces URLs supportent l’ouverture directe, le rechargement et l’historique arrière/avant. React Router possède la navigation, `routes.ts` centralise le contrat des chemins durables et le loader d’onboarding conserve la destination demandée. Les états temporaires — question courante, score, carte retournée, plateau de jeu ou sous-section — restent hors URL.
 
-### Contrôleurs / pages
+### Pages et composants React
 
-Ils peuvent :
+Les pages de `src/pages/` :
 
-- recevoir les interactions utilisateur ;
-- appeler les moteurs ;
-- coordonner les états transitoires ;
-- appeler les Views ;
-- manipuler un DOM déjà rendu lorsque nécessaire.
+- lisent les paramètres de route ;
+- appellent les moteurs ;
+- chargent et coordonnent les données d’un écran ;
+- composent les composants de feature et les composants partagés.
 
-Ils ne doivent pas recommencer à contenir les gros templates HTML des écrans.
+Les composants de `src/features/` portent les interactions et l’état propres à un domaine. Les composants de `src/ui/components/` fournissent les briques et le shell partagés. Le rendu reste déclaratif en JSX ; aucun de ces niveaux ne doit réintroduire une orchestration DOM impérative.
 
 ### Engines
 
@@ -399,17 +405,7 @@ Ils portent la logique réutilisable :
 - placement ;
 - état métier.
 
-Ils ne doivent pas produire les templates de l'interface.
-
-### Views
-
-Les Views de `src/ui/views/` possèdent la présentation :
-
-- structure HTML ;
-- labels ;
-- layout spécifique à l'écran ;
-- attributs `data-*` utiles aux contrôleurs ;
-- appels à l'i18n.
+Ils ne doivent ni importer React ni produire des composants d'interface.
 
 ### `data/`
 
@@ -422,17 +418,15 @@ data/ = ce que l'application enseigne
 
 Les leçons et packs sont majoritairement décrits en JSON afin que l'ajout de contenu pédagogique n'oblige pas à réécrire le moteur.
 
-### ES modules et dépendances explicites
+### React, Vite et dépendances explicites
 
-Dino n'utilise actuellement ni React ni Vue.
+Dino est une SPA **React + TypeScript**. Vite transforme `src/main.tsx`, le seul entry point déclaré par `index.html`, puis produit le build ES modules optimisé. Les dépendances d'exécution et de types sont déclarées dans chaque fichier avec des `import`, et les API partagées avec des `export` explicites.
 
-Le TypeScript applicatif est compilé en **ES modules**. `index.html` ne connaît qu'un seul entry point, `app.js`, chargé avec `type="module"`. Les dépendances d'exécution et de types sont déclarées dans chaque fichier avec des `import`, et les API partagées avec des `export` explicites.
-
-L'ordre de chargement est désormais calculé par le navigateur depuis ce graphe de modules ; il n'est plus maintenu à la main dans le HTML.
+React Router gère les écrans et l'historique ; le navigateur et Vite dérivent l'ordre de chargement depuis le graphe de modules.
 
 ### Graphe de dépendances
 
-Le [graphe applicatif généré](docs/dependency-graph.md) représente toutes les dépendances locales atteignables depuis `app.ts`. Il présente une vue d'ensemble agrégée par couche et des cartes repliables par domaine. Les imports de types sont suivis mais masqués dans les diagrammes afin de préserver leur lisibilité.
+Le [graphe applicatif généré](docs/dependency-graph.md) représente toutes les dépendances locales atteignables depuis `src/main.tsx`. Sa vue principale suit l'arbre React — App, routeur, layout, pages, composants et features — avant les moteurs et modules. Des branches repliables détaillent ensuite chaque domaine. Les imports de types sont suivis mais masqués dans les diagrammes afin de préserver leur lisibilité.
 
 ```bash
 npm run graph:dependencies
@@ -440,7 +434,7 @@ npm run graph:dependencies:check
 ```
 
 Le fichier est déterministe : la première commande le régénère, la seconde vérifie qu'il est à jour sans l'écrire.
-Le générateur rejette également tout cycle de dépendances d'exécution. Les tests d'architecture complètent cette garantie en interdisant notamment les dépendances Vue → Feature/Page, Feature → Page et Engine → UI/Controller.
+Le générateur rejette également tout cycle de dépendances d'exécution. Les tests d'architecture complètent cette garantie en empêchant le retour du bootstrap, du routeur et des Views legacy, ainsi que les dépendances de moteurs vers React ou l'UI.
 
 ---
 
@@ -511,13 +505,12 @@ tests/architecture/
 
 servent à empêcher les régressions structurelles.
 
-Le test `ui-boundaries.test.ts` protège notamment contre :
+Les tests d'architecture protègent notamment contre :
 
-- le retour de gros templates HTML dans les contrôleurs, pages ou moteurs ;
-- les handlers DOM inline comme `onclick="..."` ;
+- le retour des fichiers de bootstrap, routeur et Views legacy ;
+- la disparition du montage React ou de routes déclarées ;
 - le retour des branchements directs de langue dans le métier ;
-- la disparition des Views migrées ;
-- le retour de l'ancien renderer Travel ;
+- les dépendances des moteurs vers React ou les composants d'interface ;
 - le retour de scripts classiques ou de plusieurs entry points dans `index.html`.
 
 Autrement dit, la séparation actuelle n'est plus seulement une convention écrite : elle possède un garde-fou exécutable.
@@ -596,22 +589,21 @@ Le build est généré dans :
 dist/
 ```
 
-Le script de build copie également les ressources statiques nécessaires, notamment `index.html`, les données pédagogiques et les styles.
+Vite compile React et Tailwind, produit les assets optimisés, copie les données pédagogiques avec le plugin du projet et régénère l'index de recherche.
 
 ### Lancer localement
 
-Dino charge ses fichiers JSON avec `fetch()`. Il faut donc servir `dist/` avec HTTP plutôt que d'ouvrir directement `index.html` en `file://`.
-
-Exemple :
+Démarrer le serveur de développement Vite :
 
 ```bash
-python -m http.server 8080 --directory dist
+npm run dev
 ```
 
-Puis :
+Pour vérifier le build de production localement :
 
-```text
-http://localhost:8080
+```bash
+npm run build
+npm run preview
 ```
 
 ---
@@ -673,7 +665,8 @@ npm run duplication
 
 - faire des modifications ciblées ;
 - ne pas recréer un moteur lorsqu'un moteur commun existe ;
-- garder le HTML structurel dans `src/ui/views/` ;
+- garder les écrans dans `src/pages/`, les composants métier dans `src/features/` et les briques partagées dans `src/ui/components/` ;
+- conserver les moteurs et repositories indépendants de React ;
 - utiliser `t()` pour les textes d'interface ;
 - utiliser `localizedValue()` pour les données pédagogiques bilingues ;
 - garder les données pédagogiques dans `data/` autant que possible ;
@@ -686,11 +679,11 @@ npm run duplication
 L'objectif est de converger vers :
 
 ```text
-contrôleurs simples
+pages de route simples
         +
 moteurs réutilisables
         +
-views dédiées
+composants React dédiés
         +
 contenus JSON
         +

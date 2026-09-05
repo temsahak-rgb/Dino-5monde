@@ -1,8 +1,10 @@
-import { t } from "../../i18n/i18n.js";
+import {
+    getStaticDataUrl
+} from "../../core/staticData.js";
+
 import type {
     GrammarLessonIndex,
     GrammarModule,
-    Language,
     LessonStatus,
     Level
 } from "../../types/global.js";
@@ -22,9 +24,13 @@ export {
  * Grammar catalog loading, progress state, and bookmark persistence.
  */
 
-const grammarData: Partial<
-    Record<Level, GrammarLessonIndex[]>
-> = {};
+const grammarData:
+    Partial<
+        Record<
+            Level,
+            GrammarLessonIndex[]
+        >
+    > = {};
 
 /**
  * Loads the grammar catalog for a CEFR level.
@@ -36,9 +42,12 @@ async function loadGrammar(
     level: Level
 ): Promise<GrammarLessonIndex[]> {
     try {
-        const response = await fetch(
-            `./data/grammar-${level}.json`
-        );
+        const response =
+            await fetch(
+                getStaticDataUrl(
+                    `data/grammar-${level}.json`
+                )
+            );
 
         if (!response.ok) {
             throw new Error(
@@ -46,9 +55,14 @@ async function loadGrammar(
             );
         }
 
-        const data = (await response.json()) as GrammarLessonIndex[];
+        const data =
+            (
+                await response.json()
+            ) as GrammarLessonIndex[];
 
-        grammarData[level] = data;
+        grammarData[
+            level
+        ] = data;
 
         return data;
     } catch (error) {
@@ -70,7 +84,12 @@ async function loadGrammar(
 function getGrammar(
     level: Level
 ): GrammarLessonIndex[] {
-    return grammarData[level] ?? [];
+    return (
+        grammarData[
+            level
+        ]
+        ?? []
+    );
 }
 
 /**
@@ -82,11 +101,13 @@ function getGrammar(
 function getRecommendedGrammar(
     level: Level
 ): GrammarLessonIndex[] {
-    return getGrammar(level)
-        .filter(
-            item =>
-                item.recommended === true
-        );
+    return getGrammar(
+        level
+    ).filter(
+        item =>
+            item.recommended
+            === true
+    );
 }
 
 /**
@@ -97,28 +118,40 @@ function getRecommendedGrammar(
  */
 function getGrammarByModule(
     level: Level
-): Record<string, GrammarModule> {
-    return getGrammar(level)
-        .reduce<
-            Record<string, GrammarModule>
-        >(
-            (
-                modules,
+): Record<
+    string,
+    GrammarModule
+> {
+    return getGrammar(
+        level
+    ).reduce<
+        Record<
+            string,
+            GrammarModule
+        >
+    >(
+        (
+            modules,
+            item
+        ) => {
+            modules[
+                item.module
+            ] ??= {
+                icon:
+                    item.icon,
+                items: []
+            };
+
+            modules[
+                item.module
+            ].items.push(
                 item
-            ) => {
-                modules[item.module] ??= {
-                    icon: item.icon,
-                    items: []
-                };
+            );
 
-                modules[item.module]
-                    .items
-                    .push(item);
-
-                return modules;
-            },
-            {}
-        );
+            return modules;
+        },
+        {}
+    );
 }
 
 /**
@@ -141,8 +174,12 @@ function getLessonStatus(
             LessonStatus
         >;
 
-    return progress[lessonId]
-        ?? "not_started";
+    return (
+        progress[
+            lessonId
+        ]
+        ?? "not_started"
+    );
 }
 
 /**
@@ -166,11 +203,15 @@ function setLessonStatus(
             LessonStatus
         >;
 
-    progress[lessonId] = status;
+    progress[
+        lessonId
+    ] = status;
 
     localStorage.setItem(
         "dino_progress",
-        JSON.stringify(progress)
+        JSON.stringify(
+            progress
+        )
     );
 }
 
@@ -192,9 +233,13 @@ function toggleBookmark(
         ) as string[];
 
     bookmarks =
-        bookmarks.includes(lessonId)
+        bookmarks.includes(
+            lessonId
+        )
             ? bookmarks.filter(
-                id => id !== lessonId
+                id =>
+                    id
+                    !== lessonId
             )
             : [
                 ...bookmarks,
@@ -203,7 +248,9 @@ function toggleBookmark(
 
     localStorage.setItem(
         "dino_bookmarks",
-        JSON.stringify(bookmarks)
+        JSON.stringify(
+            bookmarks
+        )
     );
 
     return bookmarks.includes(
@@ -242,46 +289,17 @@ function isBookmarked(
 function getStatusIcon(
     status: LessonStatus
 ): string {
-    if (status === "completed") {
+    if (
+        status === "completed"
+    ) {
         return "✅";
     }
 
-    if (status === "in_progress") {
+    if (
+        status === "in_progress"
+    ) {
         return "⏳";
     }
 
     return "▶️";
-}
-
-/**
- * Returns the localized label associated with a lesson status.
- *
- * The optional language parameter is kept temporarily for backward
- * compatibility with callers using the historical function signature.
- * Translation itself now comes exclusively from the central i18n runtime.
- *
- * @param status - Lesson progress status.
- * @param _lang - Deprecated compatibility parameter.
- * @returns Localized status label.
- */
-function getStatusText(
-    status: LessonStatus,
-    _lang?: Language
-): string {
-    switch (status) {
-        case "completed":
-            return t(
-                "grammar.status.completed"
-            );
-
-        case "in_progress":
-            return t(
-                "grammar.status.inProgress"
-            );
-
-        case "not_started":
-            return t(
-                "grammar.status.notStarted"
-            );
-    }
 }

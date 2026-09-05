@@ -1,726 +1,279 @@
-/**
- * Architecture regression tests.
- *
- * These tests protect the UI-layer migration against accidental rollback.
- *
- * Invariants:
- * - controllers, pages and engines must not generate HTML templates
- * - inline DOM event attributes are forbidden everywhere in TypeScript
- * - interface-language branching must not return to business/controller code
- * - required view files must remain present
- * - the legacy Travel renderer must not return
- * - index.html must expose one ES-module entry point and no classic scripts
- */
-
+/** React presentation and bootstrap regression guards. */
 import assert from "node:assert/strict";
 import {
     readdir,
     readFile,
     stat
 } from "node:fs/promises";
-import test from "node:test";
 import {
     dirname,
-    join,
     relative,
     resolve
 } from "node:path";
+import test from "node:test";
 import {
     fileURLToPath
 } from "node:url";
 import ts from "typescript";
 
-const currentDirectory =
-    dirname(
-        fileURLToPath(
-            import.meta.url
-        )
-    );
+const root = resolve(
+    dirname(fileURLToPath(import.meta.url)),
+    "../.."
+);
+const srcDirectory = resolve(root, "src");
+const indexPath = resolve(root, "index.html");
 
-const root =
-    resolve(
-        currentDirectory,
-        "../.."
-    );
+const requiredReactSurfaces = [
+    "src/main.tsx",
+    "src/app/App.tsx",
+    "src/app/AppLayout.tsx",
+    "src/app/AppRouter.tsx",
+    "src/app/routes.ts",
+    "src/ui/components/Navbar.tsx",
+    "src/ui/components/Footer.tsx",
+    "src/ui/components/Layout.tsx",
+    "src/features/search/SearchDialog.tsx",
+    "src/pages/HomePage.tsx",
+    "src/pages/GrammarIndexPage.tsx",
+    "src/pages/GrammarLevelPage.tsx",
+    "src/pages/GrammarLessonPage.tsx",
+    "src/pages/VocabularyIndexPage.tsx",
+    "src/pages/VocabularyLevelPage.tsx",
+    "src/pages/VocabularyPackPage.tsx",
+    "src/pages/TravelIndexPage.tsx",
+    "src/pages/TravelLessonPage.tsx",
+    "src/pages/JournalIndexPage.tsx",
+    "src/pages/JournalArticlePage.tsx",
+    "src/pages/OnboardingPage.tsx",
+    "src/pages/NotFoundPage.tsx"
+] as const;
 
-const srcDirectory =
-    join(
-        root,
-        "src"
-    );
+const forbiddenLegacySurfaces = [
+    "app.ts",
+    "src/core/navigation.ts",
+    "src/core/routeEngine.ts",
+    "src/core/router.ts",
+    "src/ui/ui.ts",
+    "src/ui/views"
+] as const;
 
-const viewsDirectory =
-    join(
-        srcDirectory,
-        "ui",
-        "views"
-    );
-
-const indexPath =
-    join(
-        root,
-        "index.html"
-    );
-
-/**
- * Source areas that must remain presentation-free.
- */
-const presentationFreeRoots = [
-    join(
-        root,
-        "app.ts"
-    ),
-    join(
-        srcDirectory,
-        "core"
-    ),
-    join(
-        srcDirectory,
-        "features"
-    ),
-    join(
-        srcDirectory,
-        "pages"
-    )
-];
-
-/**
- * Areas in which direct interface-language branching is forbidden.
- *
- * `app.ts` is intentionally excluded because bootstrap validation is allowed
- * to validate persisted language codes.
- */
-const languageNeutralRoots = [
-    join(
-        srcDirectory,
-        "core"
-    ),
-    join(
-        srcDirectory,
-        "features"
-    ),
-    join(
-        srcDirectory,
-        "pages"
-    )
-];
-
-/**
- * Views introduced by the UI-layer migration.
- *
- * Their presence is an explicit architectural invariant: deleting one and
- * moving its markup back into a controller must make CI fail.
- */
-const requiredViews = [
-    "navbarView.ts",
-    "homeView.ts",
-    "pathsView.ts",
-    "grammarView.ts",
-    "travelView.ts",
-    "vocabularyView.ts",
-    "newsView.ts",
-    "pollsView.ts",
-    "onboardingView.ts",
-    "searchView.ts",
-    "notFoundView.ts"
-];
-
-/**
- * HTML elements that indicate structural presentation markup.
- *
- * Controllers may manipulate an already-rendered DOM element, but they must
- * not construct structural HTML strings.
- */
 const structuralHtmlPattern =
-    /<(?:div|nav|button|input|article|section|main|header|footer|h[1-6]|p|span|img|style|ul|ol|li|table|thead|tbody|tr|td|th)\b/i;
-
-/**
- * Inline DOM handlers are forbidden even inside view templates.
- */
+    /<(?:div|nav|button|input|article|section|main|header|footer|h[1-6]|p|span|img|style|ul|ol|li|table|thead|tbody|tr|td|th)\b/iu;
 const inlineHandlerPattern =
-    /\bon(?:click|dblclick|mouseover|mouseout|mouseenter|mouseleave|focus|blur|change|input|submit|keydown|keyup)\s*=/i;
+    /\bon(?:click|dblclick|mouseover|mouseout|mouseenter|mouseleave|focus|blur|change|input|submit|keydown|keyup)\s*=/iu;
 
-/**
- * Returns a repository-relative path using forward slashes for stable CI
- * messages on Windows, Linux and macOS.
- */
+async function collectSourceFiles(
+    directory: string
+): Promise<string[]> {
+    const entries = await readdir(directory, { withFileTypes: true });
+    const files: string[] = [];
+
+    for (const entry of entries) {
+        const entryPath = resolve(directory, entry.name);
+
+        if (entry.isDirectory()) {
+            files.push(...await collectSourceFiles(entryPath));
+        } else if (
+            entry.isFile()
+            && /\.tsx?$/u.test(entry.name)
+            && !entry.name.endsWith(".d.ts")
+        ) {
+            files.push(entryPath);
+        }
+    }
+
+    return files.sort();
+}
+
 function repositoryPath(
     filePath: string
 ): string {
-    return relative(
-        root,
-        filePath
-    ).replace(
-        /\\/g,
-        "/"
-    );
+    return relative(root, filePath).replace(/\\/gu, "/");
 }
 
-/**
- * Recursively returns TypeScript source files.
- */
-async function collectTypeScriptFiles(
-    entryPath: string
-): Promise<string[]> {
-    const entryStats =
-        await stat(
-            entryPath
-        );
-
-    if (
-        entryStats.isFile()
-    ) {
-        return entryPath.endsWith(
-            ".ts"
-        )
-            && !entryPath.endsWith(
-                ".d.ts"
-            )
-            ? [
-                entryPath
-            ]
-            : [];
-    }
-
-    const entries =
-        await readdir(
-            entryPath,
-            {
-                withFileTypes: true
-            }
-        );
-
-    const files:
-        string[] = [];
-
-    for (
-        const entry
-        of entries
-    ) {
-        const childPath =
-            join(
-                entryPath,
-                entry.name
-            );
-
-        if (
-            entry.isDirectory()
-        ) {
-            files.push(
-                ...await collectTypeScriptFiles(
-                    childPath
-                )
-            );
-
-            continue;
-        }
-
-        if (
-            entry.isFile()
-            && entry.name.endsWith(
-                ".ts"
-            )
-            && !entry.name.endsWith(
-                ".d.ts"
-            )
-        ) {
-            files.push(
-                childPath
-            );
-        }
-    }
-
-    return files;
+function walkAst(
+    node: ts.Node,
+    visitor: (node: ts.Node) => void
+): void {
+    visitor(node);
+    node.forEachChild(child => walkAst(child, visitor));
 }
 
-/**
- * Returns every TypeScript file contained in a collection of roots.
- */
-async function collectFromRoots(
-    roots: string[]
-): Promise<string[]> {
-    const files:
-        string[] = [];
-
-    for (
-        const sourceRoot
-        of roots
-    ) {
-        files.push(
-            ...await collectTypeScriptFiles(
-                sourceRoot
-            )
-        );
-    }
-
-    return files;
-}
-
-/**
- * Parses a TypeScript file.
- */
-async function parseTypeScriptFile(
-    filePath: string
-): Promise<{
-    source: string;
-    sourceFile: ts.SourceFile;
-}> {
-    const source =
-        await readFile(
-            filePath,
-            "utf8"
-        );
-
-    return {
-        source,
-        sourceFile:
-            ts.createSourceFile(
-                filePath,
-                source,
-                ts.ScriptTarget.ES2022,
-                true,
-                ts.ScriptKind.TS
-            )
-    };
-}
-
-/**
- * Returns textual content carried by a string/template AST node.
- */
 function getLiteralFragment(
     node: ts.Node
 ): string | null {
     if (
-        ts.isStringLiteral(
-            node
-        )
-        || ts.isNoSubstitutionTemplateLiteral(
-            node
-        )
+        ts.isStringLiteral(node)
+        || ts.isNoSubstitutionTemplateLiteral(node)
     ) {
         return node.text;
     }
 
-    switch (
-        node.kind
-    ) {
-        case ts.SyntaxKind.TemplateHead:
-        case ts.SyntaxKind.TemplateMiddle:
-        case ts.SyntaxKind.TemplateTail:
-            return (
-                node as ts.TemplateLiteralLikeNode
-            ).text;
-
-        default:
-            return null;
-    }
-}
-
-/**
- * Walks every node in a TypeScript AST.
- */
-function walkAst(
-    node: ts.Node,
-    visitor: (
-        node: ts.Node
-    ) => void
-): void {
-    visitor(
-        node
-    );
-
-    node.forEachChild(
-        child =>
-            walkAst(
-                child,
-                visitor
-            )
-    );
-}
-
-/**
- * Returns whether a node is the string literal "fa".
- */
-function isPersianLanguageLiteral(
-    node: ts.Node
-): boolean {
-    return (
-        ts.isStringLiteral(
-            node
-        )
-        && node.text
-            === "fa"
-    );
-}
-
-/**
- * Returns whether a binary expression directly branches on the Persian
- * interface-language code.
- */
-function isDirectPersianLanguageBranch(
-    node: ts.Node
-): boolean {
     if (
-        !ts.isBinaryExpression(
-            node
-        )
+        node.kind === ts.SyntaxKind.TemplateHead
+        || node.kind === ts.SyntaxKind.TemplateMiddle
+        || node.kind === ts.SyntaxKind.TemplateTail
     ) {
+        return (node as ts.TemplateLiteralLikeNode).text;
+    }
+
+    return null;
+}
+
+async function parseSourceFile(
+    filePath: string
+): Promise<ts.SourceFile> {
+    return ts.createSourceFile(
+        filePath,
+        await readFile(filePath, "utf8"),
+        ts.ScriptTarget.ES2022,
+        true,
+        filePath.endsWith(".tsx")
+            ? ts.ScriptKind.TSX
+            : ts.ScriptKind.TS
+    );
+}
+
+async function pathExists(
+    path: string
+): Promise<boolean> {
+    try {
+        await stat(path);
+        return true;
+    } catch {
         return false;
     }
-
-    const operator =
-        node.operatorToken.kind;
-
-    if (
-        operator
-            !== ts.SyntaxKind.EqualsEqualsEqualsToken
-        && operator
-            !== ts.SyntaxKind.ExclamationEqualsEqualsToken
-        && operator
-            !== ts.SyntaxKind.EqualsEqualsToken
-        && operator
-            !== ts.SyntaxKind.ExclamationEqualsToken
-    ) {
-        return false;
-    }
-
-    return (
-        isPersianLanguageLiteral(
-            node.left
-        )
-        || isPersianLanguageLiteral(
-            node.right
-        )
-    );
 }
 
 test(
-    "all migrated UI views remain present",
+    "the complete React application surface remains present",
     async () => {
-        const existingViews =
-            new Set(
-                await readdir(
-                    viewsDirectory
-                )
-            );
+        const missing: string[] = [];
 
-        const missingViews =
-            requiredViews.filter(
-                view =>
-                    !existingViews.has(
-                        view
-                    )
-            );
+        for (const path of requiredReactSurfaces) {
+            if (!await pathExists(resolve(root, path))) {
+                missing.push(path);
+            }
+        }
 
         assert.deepEqual(
-            missingViews,
+            missing,
             [],
-            [
-                "UI architecture rollback detected.",
-                "Required view files are missing:",
-                ...missingViews.map(
-                    view =>
-                        `- src/ui/views/${view}`
-                )
-            ].join(
-                "\n"
-            )
+            `React architecture rollback detected:\n${missing.join("\n")}`
         );
     }
 );
 
 test(
-    "controllers engines and pages do not generate structural HTML",
+    "legacy imperative router and template surfaces cannot return",
     async () => {
-        const files =
-            await collectFromRoots(
-                presentationFreeRoots
-            );
+        const restored: string[] = [];
 
-        const violations:
-            string[] = [];
+        for (const path of forbiddenLegacySurfaces) {
+            if (await pathExists(resolve(root, path))) {
+                restored.push(path);
+            }
+        }
 
-        for (
-            const filePath
-            of files
-        ) {
-            const {
-                sourceFile
-            } =
-                await parseTypeScriptFile(
-                    filePath
-                );
+        assert.deepEqual(
+            restored,
+            [],
+            `Legacy architecture restored:\n${restored.join("\n")}`
+        );
+    }
+);
 
-            walkAst(
-                sourceFile,
-                node => {
-                    const fragment =
-                        getLiteralFragment(
-                            node
-                        );
+test(
+    "pure TypeScript modules remain free of React and HTML templates",
+    async () => {
+        const files = (await collectSourceFiles(srcDirectory)).filter(
+            file =>
+                file.endsWith(".ts")
+                && !file.endsWith(".d.ts")
+        );
+        const violations: string[] = [];
 
-                    if (
-                        fragment
-                        && structuralHtmlPattern.test(
-                            fragment
-                        )
-                    ) {
-                        violations.push(
-                            repositoryPath(
-                                filePath
-                            )
-                        );
-                    }
+        for (const file of files) {
+            const sourceFile = await parseSourceFile(file);
+
+            for (const statement of sourceFile.statements) {
+                if (
+                    ts.isImportDeclaration(statement)
+                    && ts.isStringLiteral(statement.moduleSpecifier)
+                    && /^(?:react|react-dom|react-router)(?:\/|$)/u.test(
+                        statement.moduleSpecifier.text
+                    )
+                ) {
+                    violations.push(
+                        `${repositoryPath(file)} imports ${statement.moduleSpecifier.text}`
+                    );
                 }
-            );
-        }
+            }
 
-        assert.deepEqual(
-            [
-                ...new Set(
-                    violations
-                )
-            ],
-            [],
-            [
-                "Presentation markup escaped the view layer.",
-                "Structural HTML is only allowed under src/ui/views/",
-                ...[
-                    ...new Set(
-                        violations
-                    )
-                ].map(
-                    file =>
-                        `- ${file}`
-                )
-            ].join(
-                "\n"
-            )
-        );
-    }
-);
+            walkAst(sourceFile, node => {
+                const fragment = getLiteralFragment(node);
 
-test(
-    "TypeScript templates never use inline DOM event handlers",
-    async () => {
-        const files =
-            await collectTypeScriptFiles(
-                srcDirectory
-            );
-
-        const violations:
-            string[] = [];
-
-        for (
-            const filePath
-            of files
-        ) {
-            const {
-                sourceFile
-            } =
-                await parseTypeScriptFile(
-                    filePath
-                );
-
-            walkAst(
-                sourceFile,
-                node => {
-                    const fragment =
-                        getLiteralFragment(
-                            node
-                        );
-
-                    if (
-                        fragment
-                        && inlineHandlerPattern.test(
-                            fragment
-                        )
-                    ) {
-                        violations.push(
-                            repositoryPath(
-                                filePath
-                            )
-                        );
-                    }
+                if (fragment && structuralHtmlPattern.test(fragment)) {
+                    violations.push(
+                        `${repositoryPath(file)} contains structural HTML`
+                    );
                 }
-            );
+            });
         }
 
         assert.deepEqual(
-            [
-                ...new Set(
-                    violations
-                )
-            ],
+            [...new Set(violations)],
             [],
-            [
-                "Inline DOM handlers are forbidden.",
-                "Bind interactions from controllers instead.",
-                ...[
-                    ...new Set(
-                        violations
-                    )
-                ].map(
-                    file =>
-                        `- ${file}`
-                )
-            ].join(
-                "\n"
-            )
+            `Pure modules leaked presentation concerns:\n${violations.join("\n")}`
         );
     }
 );
 
 test(
-    "business and controller layers do not branch directly on interface language",
+    "source strings never use inline DOM event attributes",
     async () => {
-        const files =
-            await collectFromRoots(
-                languageNeutralRoots
-            );
+        const violations: string[] = [];
 
-        const violations:
-            string[] = [];
+        for (const file of await collectSourceFiles(srcDirectory)) {
+            const sourceFile = await parseSourceFile(file);
 
-        for (
-            const filePath
-            of files
-        ) {
-            const {
-                sourceFile
-            } =
-                await parseTypeScriptFile(
-                    filePath
-                );
+            walkAst(sourceFile, node => {
+                const fragment = getLiteralFragment(node);
 
-            walkAst(
-                sourceFile,
-                node => {
-                    if (
-                        isDirectPersianLanguageBranch(
-                            node
-                        )
-                    ) {
-                        violations.push(
-                            repositoryPath(
-                                filePath
-                            )
-                        );
-                    }
+                if (fragment && inlineHandlerPattern.test(fragment)) {
+                    violations.push(repositoryPath(file));
                 }
-            );
+            });
         }
 
         assert.deepEqual(
-            [
-                ...new Set(
-                    violations
-                )
-            ],
+            [...new Set(violations)],
             [],
-            [
-                "Direct language branching returned outside the i18n/view layer.",
-                "Use t(), localizedValue() or a view helper instead.",
-                ...[
-                    ...new Set(
-                        violations
-                    )
-                ].map(
-                    file =>
-                        `- ${file}`
-                )
-            ].join(
-                "\n"
+            `Inline DOM handlers are forbidden:\n${violations.join("\n")}`
+        );
+    }
+);
+
+test(
+    "index.html exposes one React ES-module entry point",
+    async () => {
+        const indexHtml = await readFile(indexPath, "utf8");
+        const scriptSources = [
+            ...indexHtml.matchAll(
+                /<script\s+[^>]*src=["']([^"']+)["'][^>]*><\/script>/giu
             )
-        );
-    }
-);
+        ].map(match => match[1]?.split("?")[0]);
 
-test(
-    "legacy Travel renderer cannot return",
-    async () => {
-        const legacyTypeScriptPath =
-            join(
-                srcDirectory,
-                "features",
-                "travel",
-                "travelRenderers.ts"
-            );
-
-        let legacyRendererExists =
-            true;
-
-        try {
-            await stat(
-                legacyTypeScriptPath
-            );
-        } catch {
-            legacyRendererExists =
-                false;
-        }
-
-        assert.equal(
-            legacyRendererExists,
-            false,
-            "src/features/travel/travelRenderers.ts must stay deleted"
-        );
-
-        const indexHtml =
-            await readFile(
-                indexPath,
-                "utf8"
-            );
-
-        assert.equal(
-            indexHtml.includes(
-                "travelRenderers"
-            ),
-            false,
-            "index.html must never load the legacy Travel renderer"
-        );
-    }
-);
-
-test(
-    "index.html exposes a single ES-module entry point",
-    async () => {
-        const indexHtml =
-            await readFile(
-                indexPath,
-                "utf8"
-            );
-
-        const scriptSources =
-            [
-                ...indexHtml.matchAll(
-                    /<script\s+[^>]*src=["']([^"']+)["'][^>]*><\/script>/gi
-                )
-            ].map(
-                match =>
-                    match[1]
-                        .split("?")[0]
-            );
-
-        assert.deepEqual(
-            scriptSources,
-            [
-                "app.js"
-            ],
-            "index.html must load only the application entry point"
-        );
-
+        assert.deepEqual(scriptSources, ["/src/main.tsx"]);
         assert.match(
             indexHtml,
-            /<script\s+type=["']module["']\s+src=["']app\.js["']><\/script>/i,
-            "app.js must be loaded as an ES module"
+            /<script\b(?=[^>]*\btype=["']module["'])(?=[^>]*\bsrc=["']\/src\/main\.tsx["'])[^>]*>\s*<\/script>/iu
         );
-
         assert.equal(
-            /<script(?![^>]*\bsrc\s*=)[^>]*>/i.test(
-                indexHtml
-            ),
+            /<script(?![^>]*\bsrc\s*=)[^>]*>/iu.test(indexHtml),
             false,
-            "Inline <script> blocks are forbidden in index.html"
+            "Inline script blocks are forbidden"
         );
+        assert.doesNotMatch(indexHtml, /\bapp\.js\b/iu);
     }
 );

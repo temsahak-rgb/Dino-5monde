@@ -49,18 +49,21 @@ MVP overview, installation, i18n, architecture, tests and contribution rules.
 Le MVP sépare désormais explicitement :
 
 ```text
-controllers / pages  → orchestration et événements
-engines              → logique et état
-ui/views             → HTML et présentation
-i18n                 → textes d'interface et direction
-data                 → contenu pédagogique JSON
+src/main.tsx         → montage React
+app/                 → providers, routeur et layout
+pages/               → écrans associés aux routes
+ui/components/       → composants React partagés
+features/            → composants métier, moteurs et repositories
+core/                → logique réutilisable indépendante de React
+i18n/                → textes d'interface et direction
+data/                → contenu pédagogique JSON
 ```
 
-L'application est compilée en **ES modules**. `index.html` charge uniquement `app.js` avec `type="module"` ; chaque dépendance applicative ou de type est déclarée par un `import`, et les API partagées sont exportées explicitement.
+L'application est une SPA **React + TypeScript** construite par Vite. `index.html` charge uniquement `src/main.tsx` ; `AppRouter` et `AppLayout` structurent ensuite les routes, les pages et les composants.
 
-Les écrans durables ont une URL canonique en query string (`?view=grammar&level=A1`, `?view=travel&lesson=TR-006`, etc.). Ces liens supportent l’ouverture directe, le rechargement et l’historique arrière/avant ; l’état temporaire d’un exercice ou d’un jeu reste volontairement hors URL.
+Les écrans durables ont un chemin React Router canonique (`/grammar/A1`, `/grammar/lesson/A1-G-001`, `/travel/TR-006`, etc.). Ces liens supportent l’ouverture directe, le rechargement et l’historique arrière/avant ; l’état temporaire d’un exercice ou d’un jeu reste volontairement hors URL.
 
-Le [graphe de dépendances](docs/dependency-graph.md) est généré depuis ces imports réels avec `npm run graph:dependencies`. Il fournit une vue agrégée par couche puis des cartes repliables par domaine ; les imports de types sont suivis mais masqués pour conserver un dessin lisible. Le générateur rejette tout cycle d'exécution et les tests verrouillent les frontières entre couches. Le workflow GitHub Actions **Dependency graph** est volontairement indépendant de la CI des PR : lancé manuellement avec `workflow_dispatch`, il régénère le graphe puis commit uniquement `docs/dependency-graph.md` sur la branche choisie. Son commit `[skip ci]` ne relance ni les contrôles applicatifs ni le déploiement.
+Le [graphe de dépendances](docs/dependency-graph.md) est généré depuis les imports réels atteignables à partir de `src/main.tsx` avec `npm run graph:dependencies`. Il suit l'arbre React — application, routeur, layout, pages, composants, features, puis moteurs et modules — et propose des branches repliables par domaine. Les imports de types sont suivis mais masqués pour conserver un dessin lisible. Le générateur rejette tout cycle d'exécution et les tests verrouillent les frontières entre couches. Le workflow GitHub Actions **Dependency graph** est volontairement indépendant de la CI des PR : lancé manuellement avec `workflow_dispatch`, il régénère le graphe puis commit uniquement `docs/dependency-graph.md` sur la branche choisie. Son commit `[skip ci]` ne relance ni les contrôles applicatifs ni le déploiement.
 
 ---
 
@@ -79,7 +82,7 @@ npm run graph:dependencies:check
 
 Les tests, le typecheck TypeScript et le build font échouer le job en cas d'erreur. Les analyses Knip et duplication restent informatives.
 
-La suite de tests contient également des **tests d'architecture** destinés à empêcher le retour de HTML dans les contrôleurs/moteurs et d'autres régressions de séparation des responsabilités.
+La suite de tests contient également des **tests d'architecture** destinés à empêcher le retour du DOM impératif et les dépendances de moteurs vers React ou l'UI.
 
 ---
 

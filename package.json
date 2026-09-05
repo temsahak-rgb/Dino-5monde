@@ -3,10 +3,12 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=22.6.0"
+    "node": ">=22.12.0"
   },
   "scripts": {
-    "build": "tsx tools/build.ts",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.tools.json --noEmit",
     "test": "tsx --test \"tests/**/*.test.ts\"",
     "test:app": "tsx --test \"tests/architecture/**/*.test.ts\" \"tests/grammar/**/*.test.ts\" \"tests/institutional/**/*.test.ts\" \"tests/navigation/**/*.test.ts\" \"tests/search/**/*.test.ts\" \"tests/tools/**/*.test.ts\" \"tests/vocabulary/**/*.test.ts\"",
@@ -15,19 +17,29 @@
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",
     "test:e2e:install": "playwright install chromium",
-    "serve:e2e": "tsx tools/serve-dist.ts",
+    "serve:e2e": "vite preview --host 127.0.0.1 --port 4173",
     "corpus:report": "tsx tools/build-corpus-report.ts",
     "knip": "knip --config knip.json",
     "duplication": "jscpd --config .jscpd.json",
     "graph:dependencies": "tsx tools/generate-dependency-graph.ts",
     "graph:dependencies:check": "tsx tools/generate-dependency-graph.ts --check"
   },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router": "^8.2.0"
+  },
   "devDependencies": {
     "@playwright/test": "^1.62.1",
+    "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^24.0.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
     "jscpd": "^4.0.0",
     "knip": "^5.0.0",
     "tsx": "^4.20.0",
-    "typescript": "^5.9.0"
+    "typescript": "^5.9.0",
+    "vite": "^8.2.2"
   }
 }

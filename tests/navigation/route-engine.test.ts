@@ -2,214 +2,193 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
-    createSectionRoute,
-    getRouteSection,
-    parseAppRoute,
-    serializeAppRoute
-} from "../../src/core/routeEngine.js";
-import type { AppRoute } from "../../src/core/routeEngine.js";
+    appRoutePatterns,
+    createAppPath,
+    getAppRouteSection,
+    matchAppPath
+} from "../../src/app/routes.js";
+import type {
+    AppRoute
+} from "../../src/app/routes.js";
 
 test(
-    "route codec round-trips every durable view with stable parameter order",
+    "the route schema describes every React Router branch once",
+    () => {
+        assert.deepEqual(
+            appRoutePatterns,
+            {
+                onboarding: "/onboarding",
+                home: "/",
+                grammarIndex: "/grammar",
+                grammarLevel: "/grammar/:level",
+                grammarLesson: "/grammar/lesson/:lessonId",
+                vocabularyIndex: "/vocabulary",
+                vocabularyLevel: "/vocabulary/:level",
+                vocabularyPack: "/vocabulary/:level/:packId",
+                travelIndex: "/travel",
+                travelLesson: "/travel/:lessonId",
+                journalIndex: "/journal",
+                journalArticle: "/journal/:articleId",
+                about: "/info/about",
+                contact: "/info/contact",
+                workWithUs: "/info/work-with-us",
+                notFound: "*"
+            }
+        );
+
+        const durablePatterns = Object.values(appRoutePatterns).filter(
+            path => path !== "*"
+        );
+        assert.equal(
+            new Set(durablePatterns).size,
+            durablePatterns.length,
+            "React route patterns must be unique"
+        );
+        assert.equal(
+            durablePatterns.every(path => path.startsWith("/")),
+            true,
+            "Durable React routes must be absolute"
+        );
+    }
+);
+
+test(
+    "canonical React locations round-trip through the pure route contract",
     () => {
         const routes: AppRoute[] = [
-            { view: "home" },
+            { name: "onboarding" },
+            { name: "home" },
+            { name: "grammar-index" },
+            { name: "grammar-level", level: "B1" },
+            { name: "grammar-lesson", lessonId: "A1-G-003-B" },
+            { name: "vocabulary-index" },
+            { name: "vocabulary-level", level: "C2" },
             {
-                view: "grammar",
-                target: "index"
-            },
-            {
-                view: "grammar",
-                target: "level",
-                level: "B1"
-            },
-            {
-                view: "grammar",
-                target: "lesson",
-                lessonId: "A1-G-003-B"
-            },
-            {
-                view: "grammar",
-                target: "lesson",
-                lessonId: "a1-se-trouver"
-            },
-            {
-                view: "vocabulary",
-                target: "index"
-            },
-            {
-                view: "vocabulary",
-                target: "level",
-                level: "C2"
-            },
-            {
-                view: "vocabulary",
-                target: "pack",
+                name: "vocabulary-pack",
                 level: "A1",
                 packId: "salutations_expressions_quotidiennes"
             },
+            { name: "travel-index" },
+            { name: "travel-lesson", lessonId: "suite 13 shopping" },
+            { name: "journal-index" },
             {
-                view: "vocabulary",
-                target: "pack",
-                level: "B1",
-                packId: "arrival-office"
-            },
-            {
-                view: "vocabulary",
-                target: "pack",
-                level: "C1",
-                packId: "societe-debats"
-            },
-            {
-                view: "vocabulary",
-                target: "pack",
-                level: "C2",
-                packId: "pensee_critique"
-            },
-            {
-                view: "travel",
-                target: "index"
-            },
-            {
-                view: "travel",
-                target: "lesson",
-                lessonId: "suite 13 shopping"
-            },
-            {
-                view: "journal",
-                target: "index"
-            },
-            {
-                view: "journal",
-                target: "article",
+                name: "journal-article",
                 articleId: "2026-w34-azadi-tower"
             },
-            {
-                view: "info",
-                page: "work-with-us"
-            }
+            { name: "about" },
+            { name: "contact" },
+            { name: "work-with-us" }
         ];
 
         for (const route of routes) {
             assert.deepEqual(
-                parseAppRoute(
-                    serializeAppRoute(
-                        route
-                    )
-                ),
+                matchAppPath(createAppPath(route)),
                 route
             );
         }
 
         assert.equal(
-            serializeAppRoute({
-                view: "vocabulary",
-                target: "pack",
-                level: "A1",
-                packId: "salutations_expressions_quotidiennes"
+            createAppPath({
+                name: "travel-lesson",
+                lessonId: "suite 13 shopping"
             }),
-            "?view=vocabulary&level=A1&pack=salutations_expressions_quotidiennes"
+            "/travel/suite%2013%20shopping"
         );
     }
 );
 
 test(
-    "route parser accepts a bare entry point and canonicalizes extra parameters",
+    "pathname matching ignores location search and hash state",
     () => {
         assert.deepEqual(
-            parseAppRoute(""),
-            { view: "home" }
-        );
-        assert.deepEqual(
-            parseAppRoute(
-                "?campaign=client&view=grammar&level=A2"
-            ),
+            matchAppPath("/grammar/A2?campaign=client#lesson-list"),
             {
-                view: "grammar",
-                target: "level",
+                name: "grammar-level",
                 level: "A2"
             }
         );
-    }
-);
-
-test(
-    "route parser rejects ambiguous and incomplete route combinations",
-    () => {
-        for (
-            const search
-            of [
-                "?campaign=client",
-                "?view=grammar&view=travel",
-                "?view=grammar&level=A1&lesson=A1-G-001",
-                "?view=vocabulary&pack=salutations",
-                "?view=info",
-                "?view=info&page=profile",
-                "?view=unknown"
-            ]
-        ) {
-            assert.equal(
-                parseAppRoute(search),
-                null,
-                search
-            );
-        }
-    }
-);
-
-test(
-    "route parser strictly rejects identifiers that could escape data paths",
-    () => {
-        for (
-            const search
-            of [
-                "?view=grammar&lesson=..%2Fsecret",
-                "?view=grammar&lesson=-a1-se-trouver",
-                "?view=grammar&lesson=a1--se-trouver",
-                "?view=grammar&lesson=a1-se-trouver-",
-                "?view=grammar&lesson=C2-G-001",
-                "?view=vocabulary&level=A1&pack=..%2Fsecret",
-                `?view=vocabulary&level=A1&pack=${"a".repeat(121)}`,
-                "?view=travel&lesson=..%5Csecret",
-                "?view=travel&lesson=%2Fabsolute",
-                "?view=travel&lesson=%20TR-006",
-                "?view=travel&lesson=TR-006%20",
-                "?view=journal&article=..%2Fsecret",
-                `?view=journal&article=2026-w34-${"a".repeat(152)}`
-            ]
-        ) {
-            assert.equal(
-                parseAppRoute(search),
-                null,
-                search
-            );
-        }
-    }
-);
-
-test(
-    "route helpers map navbar sections and institutional state",
-    () => {
         assert.deepEqual(
-            createSectionRoute("journal"),
-            {
-                view: "journal",
-                target: "index"
-            }
+            matchAppPath("/"),
+            { name: "home" }
+        );
+    }
+);
+
+test(
+    "route matching rejects unknown, malformed, and unsafe paths",
+    () => {
+        for (
+            const pathname
+            of [
+                "",
+                "grammar/A1",
+                "//example.test/grammar/A1",
+                "/grammar/C2",
+                "/grammar/lesson/..%2Fsecret",
+                "/grammar/lesson/%20A1-G-001",
+                "/vocabulary/A1/..%5Csecret",
+                "/vocabulary/Z9/pack",
+                "/travel/%2Fabsolute",
+                "/journal/..",
+                "/info/profile",
+                "/grammar/A1/",
+                "/unknown"
+            ]
+        ) {
+            assert.equal(
+                matchAppPath(pathname),
+                null,
+                pathname
+            );
+        }
+    }
+);
+
+test(
+    "path builders reject values that could escape a route segment",
+    () => {
+        for (
+            const lessonId
+            of [
+                "",
+                "../secret",
+                "..\\secret",
+                " lesson",
+                "lesson ",
+                "a".repeat(161)
+            ]
+        ) {
+            assert.throws(
+                () => createAppPath({
+                    name: "grammar-lesson",
+                    lessonId
+                }),
+                TypeError
+            );
+        }
+    }
+);
+
+test(
+    "route helpers map React locations to primary navigation sections",
+    () => {
+        assert.equal(
+            getAppRouteSection({ name: "journal-index" }),
+            "journal"
         );
         assert.equal(
-            getRouteSection({
-                view: "grammar",
-                target: "lesson",
+            getAppRouteSection({
+                name: "grammar-lesson",
                 lessonId: "B1-G-001"
             }),
             "grammar"
         );
         assert.equal(
-            getRouteSection({
-                view: "info",
-                page: "contact"
-            }),
+            getAppRouteSection({ name: "contact" }),
+            null
+        );
+        assert.equal(
+            getAppRouteSection({ name: "onboarding" }),
             null
         );
     }

@@ -6,7 +6,10 @@ import {
 } from "node:path";
 import test from "node:test";
 
-import { parseAppRoute } from "../../src/core/routeEngine.js";
+import {
+    createAppPath,
+    matchAppPath
+} from "../../src/app/routes.js";
 import {
     knownNewsContentLinkDebt,
     type NewsContentLinkDebt
@@ -54,20 +57,13 @@ function normalizeFrenchTerm(
 
 async function loadGrammarLessonIds(): Promise<Set<string>> {
     const ids = new Set<string>();
-    const files = (
-        await collectFiles(dataDirectory)
-    ).filter(
+    const files = (await collectFiles(dataDirectory)).filter(
         filePath =>
-            /^grammar-[A-C][12]\.json$/.test(
-                basename(filePath)
-            )
+            /^grammar-[A-C][12]\.json$/.test(basename(filePath))
     );
 
     for (const filePath of files) {
-        const entries = await readJson<GrammarIndexEntry[]>(
-            filePath
-        );
-
+        const entries = await readJson<GrammarIndexEntry[]>(filePath);
         entries.forEach(entry => ids.add(entry.id));
     }
 
@@ -75,14 +71,9 @@ async function loadGrammarLessonIds(): Promise<Set<string>> {
 }
 
 async function loadVocabularyTerms(): Promise<Set<string>> {
-    const vocabularyDirectory = join(
-        dataDirectory,
-        "vocabulary"
-    );
+    const vocabularyDirectory = join(dataDirectory, "vocabulary");
     const terms = new Set<string>();
-    const packFiles = (
-        await collectFiles(vocabularyDirectory)
-    ).filter(
+    const packFiles = (await collectFiles(vocabularyDirectory)).filter(
         filePath =>
             /^(?:A1|A2|B1|B2|C1|C2)$/.test(
                 basename(dirname(filePath))
@@ -90,9 +81,7 @@ async function loadVocabularyTerms(): Promise<Set<string>> {
     );
 
     for (const filePath of packFiles) {
-        const pack = await readJson<VocabularyPack>(
-            filePath
-        );
+        const pack = await readJson<VocabularyPack>(filePath);
 
         for (const word of pack.words ?? []) {
             terms.add(normalizeFrenchTerm(word.fr));
@@ -105,21 +94,25 @@ async function loadVocabularyTerms(): Promise<Set<string>> {
 function isSafeGrammarReference(
     grammarId: string
 ): boolean {
-    const route = parseAppRoute(
-        `?view=grammar&lesson=${encodeURIComponent(grammarId)}`
-    );
+    try {
+        const route = matchAppPath(
+            createAppPath({
+                name: "grammar-lesson",
+                lessonId: grammarId
+            })
+        );
 
-    return route?.view === "grammar"
-        && route.target === "lesson"
-        && route.lessonId === grammarId;
+        return route?.name === "grammar-lesson"
+            && route.lessonId === grammarId;
+    } catch {
+        return false;
+    }
 }
 
 function printKnownDebt(
     debt: Readonly<Record<string, NewsContentLinkDebt>>
 ): void {
-    const lines = [
-        "DINO_LINK_DEBT_BEGIN"
-    ];
+    const lines = ["DINO_LINK_DEBT_BEGIN"];
 
     for (const [articleId, links] of Object.entries(debt)) {
         lines.push(
@@ -133,7 +126,7 @@ function printKnownDebt(
 }
 
 test(
-    "news cross-content links match real grammar lessons and vocabulary words",
+    "news cross-content links match React routes and real corpus targets",
     async () => {
         const grammarLessonIds = await loadGrammarLessonIds();
         const vocabularyTerms = await loadVocabularyTerms();
@@ -144,10 +137,7 @@ test(
         const actualDebt: Record<string, NewsContentLinkDebt> = {};
 
         for (const entry of newsIndex) {
-            const articlePath = join(
-                newsDirectory,
-                `${entry.id}.json`
-            );
+            const articlePath = join(newsDirectory, `${entry.id}.json`);
             const article = await readJson<NewsArticle>(articlePath);
             const missingGrammar: string[] = [];
             const missingVocabulary: string[] = [];
@@ -161,7 +151,7 @@ test(
 
                 assert.ok(
                     isSafeGrammarReference(item.grammarId),
-                    `${repositoryPath(articlePath)}.content.grammar[${index}].grammarId is not a safe route reference`
+                    `${repositoryPath(articlePath)}.content.grammar[${index}].grammarId is not a safe React route reference`
                 );
 
                 if (!grammarLessonIds.has(item.grammarId)) {
@@ -170,11 +160,7 @@ test(
             }
 
             for (const item of article.content.vocabulary ?? []) {
-                if (
-                    !vocabularyTerms.has(
-                        normalizeFrenchTerm(item.fr)
-                    )
-                ) {
+                if (!vocabularyTerms.has(normalizeFrenchTerm(item.fr))) {
                     missingVocabulary.push(item.fr);
                 }
             }
@@ -193,7 +179,7 @@ test(
         assert.deepEqual(
             actualDebt,
             knownNewsContentLinkDebt,
-            "Cross-content debt changed. Create the missing targets, remove resolved entries, or document every new orphan explicitly."
+            "Cross-content debt changed. Create missing targets, remove resolved entries, or document every new orphan explicitly."
         );
 
         printKnownDebt(actualDebt);

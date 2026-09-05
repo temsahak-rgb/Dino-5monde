@@ -1,13 +1,12 @@
 {
   "entry": [
-    "app.ts",
-    "src/**/*.ts",
     "tests/**/*.test.ts",
-    "tests/e2e/**/*.spec.ts",
-    "tools/**/*.ts"
+    "tests/e2e/**/*.spec.ts"
   ],
+  "ignoreExportsUsedInFile": true,
   "project": [
     "src/**/*.ts",
+    "src/**/*.tsx",
     "tests/**/*.ts",
     "tools/**/*.ts"
   ]

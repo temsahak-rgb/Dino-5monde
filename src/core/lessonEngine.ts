@@ -1,3 +1,7 @@
+import {
+    getStaticDataUrl
+} from "./staticData.js";
+
 import type {
     ExerciseSection,
     LessonContentSection,
@@ -57,7 +61,11 @@ async function loadLessonWithExercises(
     try {
         const lessonResponse =
             await fetch(
-                `./data/lessons/${level}/${lessonId}.json`
+                getStaticDataUrl(
+                    `data/lessons/${level}/${encodeURIComponent(
+                        lessonId
+                    )}.json`
+                )
             );
 
         if (!lessonResponse.ok) {
@@ -67,7 +75,9 @@ async function loadLessonWithExercises(
         }
 
         const lessonData =
-            (await lessonResponse.json()) as LessonData;
+            (
+                await lessonResponse.json()
+            ) as LessonData;
 
         const exercises:
             ExerciseSection[] = [];
@@ -84,16 +94,23 @@ async function loadLessonWithExercises(
             try {
                 const response =
                     await fetch(
-                        `./data/exercises/${level}/${exerciseId}.json`
+                        getStaticDataUrl(
+                            `data/exercises/${level}/${encodeURIComponent(
+                                exerciseId
+                            )}.json`
+                        )
                     );
 
                 if (!response.ok) {
                     keepLooking = false;
+
                     continue;
                 }
 
                 const exercise =
-                    (await response.json()) as ExerciseSection;
+                    (
+                        await response.json()
+                    ) as ExerciseSection;
 
                 exercises.push(
                     exercise
@@ -166,7 +183,11 @@ async function loadOptionalLessonQuiz(
     try {
         const response =
             await fetch(
-                `./data/exercises/${level}/${quizId}.json`
+                getStaticDataUrl(
+                    `data/exercises/${level}/${encodeURIComponent(
+                        quizId
+                    )}.json`
+                )
             );
 
         if (!response.ok) {
@@ -174,7 +195,9 @@ async function loadOptionalLessonQuiz(
         }
 
         const quiz =
-            (await response.json()) as ExerciseSection;
+            (
+                await response.json()
+            ) as ExerciseSection;
 
         exercisesCache[
             quizId

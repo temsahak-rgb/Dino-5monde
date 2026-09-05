@@ -2,25 +2,59 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+    createElement,
+    type ReactElement
+} from "react";
+
+import {
     createCrosswordGame,
     createHangmanGame,
-    createWordSearchGame,
-    getHangmanMaskedLetters
+    createWordSearchGame
 } from "../../src/features/vocabulary/vocabularyGameEngine.js";
+
 import type {
     VocabPack,
     VocabWord
 } from "../../src/types/global.js";
 
+import {
+    installReactTestBrowser,
+    renderReactView
+} from "../react/renderReactView.js";
+
 const words: VocabWord[] = [
-    { fr: "château", fa: "قلعه" },
-    { fr: "table", fa: "میز" },
-    { fr: "bateau", fa: "قایق" },
-    { fr: "école", fa: "مدرسه" },
-    { fr: "lecture", fa: "مطالعه" },
-    { fr: "route", fa: "جاده" },
-    { fr: "lettre", fa: "نامه" },
-    { fr: "terre", fa: "زمین" }
+    {
+        fr: "château",
+        fa: "قلعه"
+    },
+    {
+        fr: "table",
+        fa: "میز"
+    },
+    {
+        fr: "bateau",
+        fa: "قایق"
+    },
+    {
+        fr: "école",
+        fa: "مدرسه"
+    },
+    {
+        fr: "lecture",
+        fa: "مطالعه"
+    },
+    {
+        fr: "route",
+        fa: "جاده"
+    },
+    {
+        fr: "lettre",
+        fa: "نامه"
+    },
+    {
+        fr: "terre",
+        fa: "زمین"
+    }
 ];
 
 const pack: VocabPack = {
@@ -30,8 +64,10 @@ const pack: VocabPack = {
     words
 };
 
-function seededRandom(): () => number {
-    let seed = 31;
+function seededRandom():
+    () => number {
+    let seed =
+        31;
 
     return () => {
         seed = (
@@ -39,76 +75,97 @@ function seededRandom(): () => number {
             + 12_345
         ) % 2_147_483_648;
 
-        return seed / 2_147_483_648;
+        return seed
+            / 2_147_483_648;
     };
 }
 
-async function loadViews() {
-    Object.defineProperty(
-        globalThis,
-        "localStorage",
-        {
-            configurable: true,
-            value: {
-                getItem: () => null,
-                setItem: () => undefined
-            }
-        }
-    );
+installReactTestBrowser();
 
-    Object.defineProperty(
-        globalThis,
-        "document",
-        {
-            configurable: true,
-            value: {
-                documentElement: {
-                    dir: "ltr",
-                    lang: "fr"
-                },
-                getElementById: (
-                    id: string
-                ) => id === "app"
-                    ? {}
-                    : null,
-                title: ""
-            }
-        }
-    );
+const [
+    {
+        I18nProvider
+    },
+    {
+        VocabularyHangman
+    },
+    {
+        VocabularyWordSearch
+    },
+    {
+        VocabularyCrossword
+    }
+] = await Promise.all([
+    import(
+        "../../src/i18n/I18nProvider.js"
+    ),
+    import(
+        "../../src/features/vocabulary/VocabularyHangman.js"
+    ),
+    import(
+        "../../src/features/vocabulary/VocabularyWordSearch.js"
+    ),
+    import(
+        "../../src/features/vocabulary/VocabularyCrossword.js"
+    )
+]);
 
-    return import(
-        "../../src/ui/views/vocabularyGamesView.js"
-    );
+function renderGame(
+    element: ReactElement,
+    random = seededRandom()
+): string {
+    const originalRandom =
+        Math.random;
+
+    Math.random =
+        random;
+
+    try {
+        return renderReactView(
+            element,
+            I18nProvider,
+            "/vocabulary/A1/demo"
+        );
+    } finally {
+        Math.random =
+            originalRandom;
+    }
 }
 
 test(
-    "Hangman view renders its keyboard and never leaks undefined",
-    async () => {
-        const game = createHangmanGame(
-            words,
-            () => 0
-        );
-
-        assert.ok(game);
-
-        const {
-            renderHangmanGameView
-        } = await loadViews();
-
-        const html = renderHangmanGameView(
-            pack,
-            game,
-            getHangmanMaskedLetters(
-                game
+    "React Hangman renders its complete keyboard and never leaks undefined",
+    () => {
+        assert.ok(
+            createHangmanGame(
+                words,
+                () => 0
             )
         );
 
+        const html =
+            renderGame(
+                createElement(
+                    VocabularyHangman,
+                    {
+                        pack,
+                        onBack: () =>
+                            undefined
+                    }
+                )
+            );
+
         assert.equal(
             html.match(
-                /class="vocab-game-key"/g
+                /<button[^>]*class="[^"]*aspect-square[^"]*"/g
             )?.length,
             26
         );
+
+        assert.match(
+            html,
+            /aria-live="polite"/
+        );
+
         assert.doesNotMatch(
             html,
             />\s*undefined\s*</
@@ -117,75 +174,95 @@ test(
 );
 
 test(
-    "Word-search view renders a complete selectable grid",
-    async () => {
-        const game = createWordSearchGame(
-            words,
-            seededRandom()
+    "React word search renders a complete selectable grid",
+    () => {
+        const expectedGame =
+            createWordSearchGame(
+                words,
+                seededRandom()
+            );
+
+        assert.ok(
+            expectedGame
         );
 
-        assert.ok(game);
-
-        const {
-            renderWordSearchGameView
-        } = await loadViews();
-
-        const html = renderWordSearchGameView(
-            pack,
-            game,
-            null,
-            undefined
-        );
+        const html =
+            renderGame(
+                createElement(
+                    VocabularyWordSearch,
+                    {
+                        pack,
+                        onBack: () =>
+                            undefined
+                    }
+                ),
+                seededRandom()
+            );
 
         assert.equal(
             html.match(
-                /data-row="\d+"/g
+                /aria-pressed="false"/g
             )?.length,
-            game.size * game.size
+            expectedGame.size
+                * expectedGame.size
         );
+
         assert.match(
             html,
-            /class="word-search-cell"/
+            /Mots à trouver/
         );
+
         assert.match(
             html,
-            /class="word-search-grid-wrap"/
+            /aria-live="polite"/
         );
     }
 );
 
 test(
-    "Crossword view renders one input per playable cell and clue lists",
-    async () => {
-        const game = createCrosswordGame(
-            words
+    "React crossword renders one input per playable cell and both clue lists",
+    () => {
+        const expectedGame =
+            createCrosswordGame(
+                words
+            );
+
+        assert.ok(
+            expectedGame
         );
 
-        assert.ok(game);
-
-        const {
-            renderCrosswordGameView
-        } = await loadViews();
-
-        const html = renderCrosswordGameView(
-            pack,
-            game,
-            {}
-        );
+        const html =
+            renderGame(
+                createElement(
+                    VocabularyCrossword,
+                    {
+                        pack,
+                        onBack: () =>
+                            undefined
+                    }
+                )
+            );
 
         assert.equal(
             html.match(
-                /class="crossword-input ltr-lock"/g
+                /<input[^>]*type="text"/g
             )?.length,
-            game.cells.length
+            expectedGame.cells.length
         );
+
         assert.match(
             html,
-            /id="crossword-check"/
+            />\s*Horizontal\s*</
         );
+
         assert.match(
             html,
-            /class="crossword-clue-list"/
+            />\s*Vertical\s*</
+        );
+
+        assert.match(
+            html,
+            /Vérifier la grille/
         );
     }
 );

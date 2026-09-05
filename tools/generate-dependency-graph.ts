@@ -1,14 +1,14 @@
 /**
- * Generates the application dependency graph from explicit TypeScript imports.
+ * Generates the application dependency graph from explicit local imports.
  *
  * The output is deterministic and rendered natively by GitHub through Mermaid.
  * Both runtime and type-only dependencies are represented.
  */
 
 import {
-    access,
     mkdir,
     readFile,
+    stat,
     writeFile
 } from "node:fs/promises";
 import {
@@ -39,7 +39,8 @@ const root = resolve(
 );
 const entryPath = resolve(
     root,
-    "app.ts"
+    "src",
+    "main.tsx"
 );
 const outputPath = resolve(
     root,
@@ -49,42 +50,44 @@ const outputPath = resolve(
 
 const graphGroups: GraphGroup[] = [
     {
-        label: "Bootstrap",
-        matches: modulePath => modulePath === "app.ts"
+        label: "Entry point",
+        matches: modulePath => modulePath === "src/main.tsx"
     },
     {
-        label: "Router",
-        matches: modulePath => modulePath === "src/core/router.ts"
+        label: "App",
+        matches: modulePath => modulePath === "src/app/App.tsx"
     },
     {
-        label: "Navigation API",
-        matches: modulePath => modulePath === "src/core/navigation.ts"
-    },
-    {
-        label: "Core engines",
-        matches: modulePath => modulePath.startsWith("src/core/")
-    },
-    {
-        label: "Feature engines",
+        label: "React router and routes",
         matches: modulePath =>
-            modulePath.startsWith("src/features/")
-            && modulePath.endsWith("Engine.ts")
+            modulePath === "src/app/AppRouter.tsx"
+            || modulePath === "src/app/routes.ts"
     },
     {
-        label: "Feature controllers",
-        matches: modulePath => modulePath.startsWith("src/features/")
+        label: "App layout",
+        matches: modulePath => modulePath === "src/app/AppLayout.tsx"
     },
     {
-        label: "Pages",
+        label: "Route pages",
         matches: modulePath => modulePath.startsWith("src/pages/")
     },
     {
-        label: "Views",
-        matches: modulePath => modulePath.startsWith("src/ui/views/")
+        label: "Shared React components",
+        matches: modulePath => modulePath.startsWith("src/ui/components/")
     },
     {
-        label: "Shared UI",
-        matches: modulePath => modulePath === "src/ui/ui.ts"
+        label: "Feature React components",
+        matches: modulePath =>
+            modulePath.startsWith("src/features/")
+            && modulePath.endsWith(".tsx")
+    },
+    {
+        label: "Feature engines and modules",
+        matches: modulePath => modulePath.startsWith("src/features/")
+    },
+    {
+        label: "Core engines and modules",
+        matches: modulePath => modulePath.startsWith("src/core/")
     },
     {
         label: "Internationalization",
@@ -93,6 +96,10 @@ const graphGroups: GraphGroup[] = [
     {
         label: "Types",
         matches: modulePath => modulePath.startsWith("src/types/")
+    },
+    {
+        label: "Styles",
+        matches: modulePath => modulePath.startsWith("src/styles/")
     }
 ];
 
@@ -122,10 +129,11 @@ async function fileExists(
     filePath: string
 ): Promise<boolean> {
     try {
-        await access(
-            filePath
-        );
-        return true;
+        const fileStat =
+            await stat(
+                filePath
+            );
+        return fileStat.isFile();
     } catch {
         return false;
     }
@@ -150,11 +158,17 @@ async function resolveLocalImport(
         ""
     );
     const candidates = [
+        absoluteSpecifier,
         `${extensionlessPath}.ts`,
+        `${extensionlessPath}.tsx`,
         `${extensionlessPath}.d.ts`,
         resolve(
             extensionlessPath,
             "index.ts"
+        ),
+        resolve(
+            extensionlessPath,
+            "index.tsx"
         )
     ];
 
@@ -232,6 +246,14 @@ async function collectGraph(): Promise<{
             sourcePath
         );
 
+        if (
+            sourcePath.endsWith(
+                ".css"
+            )
+        ) {
+            return;
+        }
+
         const source =
             await readFile(
                 sourcePath,
@@ -243,7 +265,9 @@ async function collectGraph(): Promise<{
                 source,
                 ts.ScriptTarget.ES2022,
                 true,
-                ts.ScriptKind.TS
+                sourcePath.endsWith(".tsx")
+                    ? ts.ScriptKind.TSX
+                    : ts.ScriptKind.TS
             );
 
         for (
@@ -328,15 +352,19 @@ function getModuleLabel(
 ): string {
     return modulePath
         .replace(
-            /^src\/ui\/views\//,
-            "views/"
+            /^src\/ui\/components\//,
+            "components/"
         )
         .replace(
             /^src\//,
             ""
         )
         .replace(
-            /(?:\.d)?\.ts$/,
+            /(?:\.d)?\.tsx?$/,
+            ""
+        )
+        .replace(
+            /\.css$/,
             ""
         );
 }
@@ -521,19 +549,6 @@ function renderArchitectureOverview(
     modules: string[],
     dependencies: Dependency[]
 ): string[] {
-    const activeGroupIndexes =
-        graphGroups
-            .map(
-                (_, index) => index
-            )
-            .filter(
-                groupIndex =>
-                    modules.some(
-                        modulePath =>
-                            getGraphGroupIndex(modulePath)
-                            === groupIndex
-                    )
-            );
     const edgeCounts =
         new Map<string, number>();
 
@@ -570,28 +585,132 @@ function renderArchitectureOverview(
         );
     }
 
+    const connectedGroupIndexes =
+        new Set<number>();
+
+    for (
+        const key
+        of edgeCounts.keys()
+    ) {
+        const [
+            sourceGroup,
+            targetGroup
+        ] = key
+            .split(":")
+            .map(Number);
+
+        connectedGroupIndexes.add(
+            sourceGroup
+        );
+        connectedGroupIndexes.add(
+            targetGroup
+        );
+    }
+
+    const sections = [
+        {
+            id: "R",
+            label: "React application tree",
+            groupIndexes: [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        },
+        {
+            id: "L",
+            label: "Engines and source modules",
+            groupIndexes: [
+                7,
+                8
+            ]
+        },
+        {
+            id: "C",
+            label: "Cross-cutting modules",
+            groupIndexes: [
+                9,
+                11
+            ]
+        }
+    ];
+
     const lines = [
         "```mermaid",
-        "flowchart LR"
+        "%%{init: {\"flowchart\": {\"curve\": \"stepAfter\", \"nodeSpacing\": 28, \"rankSpacing\": 48}}}%%",
+        "flowchart TB"
     ];
 
     for (
-        const groupIndex
-        of activeGroupIndexes
+        const section
+        of sections
     ) {
+        const activeGroupIndexes =
+            section.groupIndexes.filter(
+                groupIndex =>
+                    connectedGroupIndexes.has(
+                        groupIndex
+                    )
+                    && modules.some(
+                        modulePath =>
+                            getGraphGroupIndex(modulePath)
+                            === groupIndex
+                    )
+            );
+
+        if (
+            activeGroupIndexes.length === 0
+        ) {
+            continue;
+        }
+
         lines.push(
-            `    G${groupIndex}["${graphGroups[groupIndex].label}"]`
+            `    subgraph ${section.id}["${section.label}"]`,
+            "        direction TB"
+        );
+
+        for (
+            const groupIndex
+            of activeGroupIndexes
+        ) {
+            lines.push(
+                `        G${groupIndex}["${graphGroups[groupIndex].label}"]`
+            );
+        }
+
+        lines.push(
+            "    end"
         );
     }
 
     for (
-        const [key, count]
-        of [...edgeCounts].sort()
+        const [
+            key,
+            count
+        ]
+        of [...edgeCounts].sort(
+            (
+                [left],
+                [right]
+            ) => left.localeCompare(
+                right,
+                undefined,
+                {
+                    numeric: true
+                }
+            )
+        )
     ) {
         const [sourceGroup, targetGroup] =
             key.split(":");
         lines.push(
-            `    G${sourceGroup} -->|${count}| G${targetGroup}`
+            count > 1
+                ? `    G${sourceGroup} -->|${count} imports| G${targetGroup}`
+                : `    G${sourceGroup} --> G${targetGroup}`
         );
     }
 
@@ -639,7 +758,14 @@ function renderFocusedGraph(
     const graphModules = [
         ...focusModules,
         ...dependencyModules
-    ];
+    ].sort(
+        (left, right) =>
+            getGraphGroupIndex(left)
+            - getGraphGroupIndex(right)
+            || left.localeCompare(
+                right
+            )
+    );
     const nodeIds =
         new Map(
             graphModules.map(
@@ -651,36 +777,47 @@ function renderFocusedGraph(
         );
     const lines = [
         "```mermaid",
-        "flowchart LR",
-        "    subgraph S[\"Selected area\"]"
+        "%%{init: {\"flowchart\": {\"curve\": \"stepAfter\", \"nodeSpacing\": 24, \"rankSpacing\": 42}}}%%",
+        "flowchart TB",
+        "    classDef focus stroke-width:2px"
     ];
 
     for (
-        const modulePath
-        of focusModules
+        let groupIndex = 0;
+        groupIndex < graphGroups.length;
+        groupIndex++
     ) {
-        lines.push(
-            `        ${nodeIds.get(modulePath)}["${getModuleLabel(modulePath)}"]`
-        );
-    }
+        const groupModules =
+            graphModules.filter(
+                modulePath =>
+                    getGraphGroupIndex(modulePath)
+                    === groupIndex
+            );
 
-    lines.push(
-        "    end"
-    );
+        if (
+            groupModules.length === 0
+        ) {
+            continue;
+        }
 
-    if (
-        dependencyModules.length > 0
-    ) {
         lines.push(
-            "    subgraph D[\"Direct dependencies\"]"
+            `    subgraph S${groupIndex}["${graphGroups[groupIndex].label}"]`,
+            "        direction TB"
         );
 
         for (
             const modulePath
-            of dependencyModules
+            of groupModules
         ) {
+            const focusClass =
+                focusSet.has(
+                    modulePath
+                )
+                    ? ":::focus"
+                    : "";
+
             lines.push(
-                `        ${nodeIds.get(modulePath)}["${getModuleLabel(modulePath)}"]`
+                `        ${nodeIds.get(modulePath)}["${getModuleLabel(modulePath)}"]${focusClass}`
             );
         }
 
@@ -738,25 +875,20 @@ function renderGraph(
         );
     }
 
-    const slices: Array<{
+    const routeSlices: Array<{
         label: string;
         matches: (modulePath: string) => boolean;
     }> = [
         {
-            label: "Bootstrap and navigation",
+            label: "Home, navigation and search",
             matches: modulePath =>
-                modulePath === "app.ts"
-                || modulePath === "src/core/navigation.ts"
-                || modulePath === "src/core/router.ts"
+                modulePath === "src/pages/HomePage.tsx"
+                || modulePath.startsWith("src/ui/components/")
+                || modulePath.startsWith("src/features/search/")
         },
         ...[
-            "exercises",
             "grammar",
-            "institutional",
-            "news",
             "onboarding",
-            "polls",
-            "search",
             "travel",
             "vocabulary"
         ].map(
@@ -768,51 +900,74 @@ function renderGraph(
                     modulePath.startsWith(
                         `src/features/${feature}/`
                     )
-                    || modulePath.endsWith(
-                        `/views/${feature}View.ts`
+                    || modulePath.startsWith(
+                        `src/pages/${feature[0].toUpperCase()}${feature.slice(1)}`
+                    )
+                    || (
+                        (
+                            feature === "grammar"
+                            || feature === "travel"
+                        )
+                        && modulePath.startsWith("src/features/exercises/")
                     )
             })
         ),
         {
-            label: "Pages and shared services",
+            label: "Journal",
             matches: modulePath =>
-                modulePath.startsWith("src/pages/")
-                || (
-                    modulePath.startsWith("src/core/")
-                    && modulePath !== "src/core/navigation.ts"
-                    && modulePath !== "src/core/router.ts"
-                )
-                || modulePath === "src/ui/ui.ts"
-                || modulePath === "src/ui/views/navbarView.ts"
-                || modulePath.startsWith("src/i18n/")
+                modulePath.startsWith("src/pages/Journal")
+                || modulePath.startsWith("src/features/news/")
+        },
+        {
+            label: "Institutional pages",
+            matches: modulePath => [
+                "src/pages/AboutPage.tsx",
+                "src/pages/ContactPage.tsx",
+                "src/pages/NotFoundPage.tsx",
+                "src/pages/WorkWithUsPage.tsx"
+            ].includes(
+                modulePath
+            )
         }
     ];
     const lines = [
         "<!-- This file is generated by npm run graph:dependencies. Do not edit manually. -->",
         "",
-        "# Application dependency maps",
+        "# React application dependency maps",
         "",
-        `The application contains ${modules.length} reachable modules, ${runtimeDependencies.length} runtime imports and ${typeDependencyCount} type-only imports.`,
+        `The application contains ${modules.length} local modules reachable from \`src/main.tsx\`, ${runtimeDependencies.length} runtime imports and ${typeDependencyCount} type-only imports.`,
         "The generator rejects runtime dependency cycles.",
         "",
-        "## Architecture overview",
+        "## React architecture overview",
         "",
-        "Numbers on arrows are runtime import counts between layers. Imports inside one layer are collapsed.",
+        "Arrows follow runtime imports from the React entry point down to routes, layouts, pages, components, features, engines and source modules. Counts are shown only when several imports cross the same two layers; imports inside one layer are collapsed.",
         "",
         ...renderArchitectureOverview(
             modules,
             dependencies
         ),
         "",
-        "## Focused maps",
+        "## React root and route tree",
         "",
-        "Open only the area you need. Each map shows outgoing runtime imports; type-only imports are intentionally omitted.",
+        "This is the concrete top of the import tree. A thicker node border marks the files selected for this view; their direct local dependencies remain visible in the layer where they belong.",
+        "",
+        ...renderFocusedGraph(
+            modules,
+            dependencies,
+            modulePath =>
+                modulePath === "src/main.tsx"
+                || modulePath.startsWith("src/app/")
+        ),
+        "",
+        "## Focused route branches",
+        "",
+        "Open only the branch you need. Each map follows outgoing runtime imports from its highlighted React pages and feature components into shared components, engines and modules. Type-only imports are intentionally omitted.",
         ""
     ];
 
     for (
         const slice
-        of slices
+        of routeSlices
     ) {
         lines.push(
             "<details>",
@@ -834,7 +989,8 @@ function renderGraph(
         "",
         "- No runtime dependency cycle.",
         `- ${typeDependencyCount} type-only imports are tracked but hidden from diagrams to avoid visual noise.`,
-        "- Every module and edge is derived from the imports reachable from `app.ts`.",
+        "- Every module and edge is derived from the local imports reachable from `src/main.tsx`.",
+        "- External packages are intentionally excluded so the diagrams stay focused on application architecture.",
         ""
     );
 
