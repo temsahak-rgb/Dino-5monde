@@ -523,8 +523,9 @@ jscpd             → فقط گزارش
 تنظیم Branch protection یا Ruleset در GitHub موضوعی جدا از کد مخزن است.
 
 Workflow اختصاصی **Dependency graph** به‌صورت دستی اجرا می‌شود، فرمان `npm run graph:dependencies` را اجرا می‌کند و در صورت تغییر فقط `docs/dependency-graph.md` را روی Branch انتخاب‌شده Commit می‌کند. Commit دارای `[skip ci]` نه کنترل‌های برنامه را دوباره اجرا می‌کند و نه Deployment را.
-Workflow اختصاصی **Corpus quality** فرمان `npm run test:data` را اجرا می‌کند، خطاهای خوانا را به تفکیک فایل و فیلد منتشر می‌کند و یک گزارش ماندگار را در Pull Request به‌روز نگه می‌دارد.
+Workflow اختصاصی **Corpus quality** فرمان `npm run test:data` را اجرا می‌کند و خطاهای خوانا را به تفکیک فایل و فیلد در خلاصه و Artifact خود منتشر می‌کند.
 Workflow اختصاصی **Browser E2E** فقط Chromium را نصب می‌کند، Build محلی را اجرا می‌کند و در صورت Regression راه‌اندازی یا i18n، CI را ناموفق می‌کند.
+Workflow امن **Project Vigie** سپس فقط از Branch قابل اعتماد `develop` اجرا می‌شود، کد Pull Request را Checkout نمی‌کند و تست‌ها را دوباره اجرا نمی‌کند. نتیجه‌های موجود را در یک Comment ماندگار با سه Panel بازشدنی **Data**، **Technical** و **Features** همراه با چراغ وضعیت و نوار پیشرفت جمع می‌کند.
 
 ---
 

@@ -530,8 +530,9 @@ jscpd             → informative
 A test, typecheck or build regression therefore makes the CI job fail.
 
 The dedicated **Dependency graph** workflow runs manually, executes `npm run graph:dependencies`, and commits only `docs/dependency-graph.md` to the selected branch when it changes. Its `[skip ci]` commit triggers neither application checks nor deployment.
-The dedicated **Corpus quality** workflow runs `npm run test:data`, publishes readable file/field errors, and maintains one persistent report comment on pull requests.
+The dedicated **Corpus quality** workflow runs `npm run test:data` and publishes readable file/field errors in its summary and artifact.
 The dedicated **Browser E2E** workflow installs Chromium only, starts the local build, and blocks CI when startup or i18n regresses.
+The secured **Project Vigie** workflow then runs from the trusted `develop` branch, never checks out pull-request code, and never replays the test suites. It consolidates existing results into one persistent comment with three collapsible panels — **Data**, **Technical**, and **Features** — plus status lights and progress bars.
 
 GitHub branch/ruleset configuration remains separate from this repository code.
 
