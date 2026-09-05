@@ -94,15 +94,11 @@ test(
         );
         assert.match(
             workflow,
-            /issues: write/
-        );
-        assert.match(
-            workflow,
-            /pull-requests: read/
+            /pull-requests: write/
         );
         assert.doesNotMatch(
             workflow,
-            /pull-requests: write|contents: write|actions: write/
+            /issues: write|contents: write|actions: write/
         );
         assert.match(
             workflow,
