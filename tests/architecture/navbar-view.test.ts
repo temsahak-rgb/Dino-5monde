@@ -117,7 +117,8 @@ test(
                 "/grammar",
                 "/vocabulary",
                 "/travel",
-                "/journal"
+                "/journal",
+                "/profile"
             ]
         );
 
@@ -125,7 +126,7 @@ test(
             html.match(
                 /aria-disabled="true"/g
             )?.length,
-            4
+            3
         );
 
         for (
@@ -133,8 +134,7 @@ test(
             of [
                 "Musique",
                 "Boutique",
-                "Archive",
-                "Profil"
+                "Archive"
             ]
         ) {
             assert.match(
@@ -144,6 +144,11 @@ test(
                 )
             );
         }
+
+        assert.match(
+            html,
+            /href="\/profile"[^>]*>[\s\S]*?Profil/
+        );
 
         assert.equal(
             html.match(

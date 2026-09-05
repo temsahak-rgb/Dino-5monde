@@ -37,8 +37,9 @@ enabled = false
 
 [auth]
 enabled = true
-site_url = "http://127.0.0.1:5173"
+site_url = "https://temsahak-rgb.github.io/Dino-5monde/"
 additional_redirect_urls = [
+  "http://127.0.0.1:5173",
   "http://localhost:5173",
   "https://temsahak-rgb.github.io/Dino-5monde/"
 ]
@@ -48,33 +49,43 @@ refresh_token_reuse_interval = 10
 enable_signup = true
 enable_anonymous_sign_ins = false
 enable_manual_linking = false
-minimum_password_length = 8
+minimum_password_length = 6
 
 [auth.rate_limit]
 email_sent = 2
-sms_sent = 0
-anonymous_users = 0
+sms_sent = 30
+anonymous_users = 30
 token_refresh = 150
 sign_in_sign_ups = 30
 token_verifications = 30
-web3 = 0
+web3 = 30
+
+[auth.mfa.totp]
+enroll_enabled = true
+verify_enabled = true
 
 [auth.email]
 enable_signup = true
 double_confirm_changes = true
 enable_confirmations = true
-secure_password_change = true
+secure_password_change = false
 max_frequency = "1m0s"
 otp_length = 6
 otp_expiry = 600
+
+# The free hosted mail provider rejects custom templates. Once a dedicated
+# SMTP provider is connected, enable the template below and push this config:
+# [auth.email.template.magic_link]
+# subject = "Votre code Dino · کد ورود دینو"
+# content_path = "./supabase/templates/magic_link.html"
 
 # Phone OTP stays disabled until a paid SMS provider and anti-abuse controls
 # are configured. The backend environment itself therefore remains free.
 [auth.sms]
 enable_signup = false
 enable_confirmations = false
-template = "Your Dino code is {{ .Code }}"
-max_frequency = "1m0s"
+template = "Your code is {{ .Code }}"
+max_frequency = "5s"
 
 # Google is wired through environment variables but remains disabled locally
 # until an OAuth client is attached to the hosted project.

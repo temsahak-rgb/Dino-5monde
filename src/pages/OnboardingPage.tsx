@@ -11,23 +11,9 @@ import {
     OnboardingFlow
 } from "../features/onboarding/OnboardingFlow.js";
 
-/**
- * Restricts onboarding return destinations to internal application routes.
- */
-function getSafeReturnTo(
-    value: string | null
-): string {
-    if (
-        !value
-        || !value.startsWith("/")
-        || value.startsWith("//")
-        || value.includes("\\")
-    ) {
-        return "/";
-    }
-
-    return value;
-}
+import {
+    getSafeReturnTo
+} from "../core/returnTo.js";
 
 /**
  * Route-level onboarding page.
@@ -47,7 +33,12 @@ function OnboardingPage() {
         getSafeReturnTo(
             searchParams.get(
                 "returnTo"
-            )
+            ),
+            {
+                blockedPaths: [
+                    "/onboarding"
+                ]
+            }
         );
 
     const handleComplete =

@@ -41,6 +41,12 @@ export default defineConfig({
     webServer: {
         command:
             "npm run build && npm run serve:e2e",
+        env: {
+            VITE_SUPABASE_PUBLISHABLE_KEY:
+                "sb_publishable_playwright_backend_key",
+            VITE_SUPABASE_URL:
+                "https://supabase.test"
+        },
         url: e2eBaseUrl,
         reuseExistingServer:
             !process.env.CI,

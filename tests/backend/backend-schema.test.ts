@@ -94,3 +94,45 @@ test(
         );
     }
 );
+
+test(
+    "email authentication keeps a production return URL and a staged OTP template",
+    async () => {
+        const [
+            configuration,
+            template
+        ] = await Promise.all([
+            readFile(
+                resolve(
+                    root,
+                    "supabase/config.toml"
+                ),
+                "utf8"
+            ),
+            readFile(
+                resolve(
+                    root,
+                    "supabase/templates/magic_link.html"
+                ),
+                "utf8"
+            )
+        ]);
+
+        assert.match(
+            configuration,
+            /site_url = "https:\/\/temsahak-rgb\.github\.io\/Dino-5monde\/"/u
+        );
+        assert.doesNotMatch(
+            configuration,
+            /^\[auth\.email\.template\.magic_link\]/mu
+        );
+        assert.match(
+            template,
+            /\{\{ \.Token \}\}/u
+        );
+        assert.doesNotMatch(
+            template,
+            /ConfirmationURL/u
+        );
+    }
+);

@@ -17,6 +17,14 @@ import {
 } from "./routes.js";
 
 import {
+    getSafeReturnTo as getSafeInternalReturnTo
+} from "../core/returnTo.js";
+
+import {
+    AuthPage
+} from "../pages/AuthPage.js";
+
+import {
     GrammarIndexPage
 } from "../pages/GrammarIndexPage.js";
 
@@ -47,6 +55,10 @@ import {
 import {
     OnboardingPage
 } from "../pages/OnboardingPage.js";
+
+import {
+    ProfilePage
+} from "../pages/ProfilePage.js";
 
 import {
     AboutPage
@@ -88,6 +100,7 @@ import {
  *
  * Public route:
  *
+ * /auth
  * /onboarding
  *
  * Application routes:
@@ -111,12 +124,21 @@ import {
  * /info/about
  * /info/contact
  * /info/work-with-us
+ * /profile
  */
 const routerBasename =
     import.meta.env.BASE_URL;
 
 const router =
     createBrowserRouter([
+        {
+            path:
+                appRoutePatterns.auth,
+
+            Component:
+                AuthPage
+        },
+
         {
             path:
                 appRoutePatterns.onboarding,
@@ -145,6 +167,14 @@ const router =
 
                     Component:
                         HomePage
+                },
+
+                {
+                    path:
+                        appRoutePatterns.profile,
+
+                    Component:
+                        ProfilePage
                 },
 
                 /* ---------------------------------------------------------- */
@@ -439,67 +469,14 @@ function getSafeReturnTo(
     value:
         string | null
 ): string {
-    if (!value) {
-        return "/";
-    }
-
-    let decoded =
-        value;
-
-    try {
-        decoded =
-            decodeURIComponent(
-                value
-            );
-    } catch {
-        /*
-         * React Router / URLSearchParams normally already provides a decoded
-         * value. A malformed manual URL simply falls back to the home page.
-         */
-        return "/";
-    }
-
-    if (
-        !decoded.startsWith(
-            "/"
-        )
-        || decoded.startsWith(
-            "//"
-        )
-        || decoded.includes(
-            "\\"
-        )
-    ) {
-        return "/";
-    }
-
-    try {
-        const candidate =
-            new URL(
-                decoded,
-                window.location.origin
-            );
-
-        if (
-            candidate.origin
-            !== window.location.origin
-        ) {
-            return "/";
+    return getSafeInternalReturnTo(
+        value,
+        {
+            blockedPaths: [
+                "/onboarding"
+            ]
         }
-
-        if (
-            candidate.pathname
-            === "/onboarding"
-        ) {
-            return "/";
-        }
-
-        return (
-            `${candidate.pathname}${candidate.search}${candidate.hash}`
-        );
-    } catch {
-        return "/";
-    }
+    );
 }
 
 function AppRouter() {

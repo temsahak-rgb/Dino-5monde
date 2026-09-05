@@ -9,6 +9,10 @@ import type {
     VocabWord
 } from "../../src/types/global.js";
 
+import type {
+    LearnerProfileDraft
+} from "../../src/services/backend/learnerProfileRepository.js";
+
 interface ProductWorld extends IWorld {
     grammarLevels?: readonly string[];
     grammarLessonId?: string;
@@ -18,6 +22,10 @@ interface ProductWorld extends IWorld {
     resolvedDestination?: AppRoute | null;
     vocabularyWords?: VocabWord[];
     availableGames?: string[];
+    authenticatedUserId?: string;
+    email?: string;
+    learnerProfile?: LearnerProfileDraft;
+    displayedLearnerName?: string;
 }
 
 function splitList(

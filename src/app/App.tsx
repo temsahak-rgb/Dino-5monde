@@ -3,8 +3,16 @@ import {
 } from "../i18n/I18nProvider.js";
 
 import {
+    AuthProvider
+} from "../services/backend/AuthProvider.js";
+
+import {
     BackendProvider
 } from "../services/backend/BackendProvider.js";
+
+import {
+    LearnerProfileProvider
+} from "../services/backend/LearnerProfileProvider.js";
 
 import {
     AppRouter
@@ -19,9 +27,13 @@ import {
 function App() {
     return (
         <BackendProvider>
-            <I18nProvider>
-                <AppRouter />
-            </I18nProvider>
+            <AuthProvider>
+                <LearnerProfileProvider>
+                    <I18nProvider>
+                        <AppRouter />
+                    </I18nProvider>
+                </LearnerProfileProvider>
+            </AuthProvider>
         </BackendProvider>
     );
 }

@@ -135,15 +135,14 @@ function readBackendConfiguration(
 
 function readRuntimeBackendConfiguration():
     BackendConfiguration {
-    const runtimeMeta =
-        import.meta as ImportMeta & {
-            readonly env?: BackendEnvironmentSource;
-        };
-
-    const runtimeEnvironment =
-        typeof runtimeMeta.env === "object"
-            ? runtimeMeta.env
-            : {};
+    // Keep these accesses explicit: Vite replaces import.meta.env keys at
+    // build time and cannot reliably discover them through an alias.
+    const runtimeEnvironment: BackendEnvironmentSource = {
+        VITE_SUPABASE_URL:
+            import.meta.env.VITE_SUPABASE_URL,
+        VITE_SUPABASE_PUBLISHABLE_KEY:
+            import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
+    };
 
     return readBackendConfiguration(
         runtimeEnvironment

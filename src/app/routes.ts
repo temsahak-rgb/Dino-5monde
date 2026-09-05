@@ -6,8 +6,10 @@
  * without reintroducing the historical query-string router.
  */
 const appRoutePatterns = {
+    auth: "/auth",
     onboarding: "/onboarding",
     home: "/",
+    profile: "/profile",
     grammarIndex: "/grammar",
     grammarLevel: "/grammar/:level",
     grammarLesson: "/grammar/lesson/:lessonId",
@@ -44,8 +46,10 @@ type VocabularyLevel =
     typeof vocabularyLevels[number];
 
 type AppRoute =
+    | { name: "auth" }
     | { name: "onboarding" }
     | { name: "home" }
+    | { name: "profile" }
     | { name: "grammar-index" }
     | { name: "grammar-level"; level: GrammarLevel }
     | { name: "grammar-lesson"; lessonId: string }
@@ -76,10 +80,14 @@ function createAppPath(
     route: AppRoute
 ): string {
     switch (route.name) {
+        case "auth":
+            return appRoutePatterns.auth;
         case "onboarding":
             return appRoutePatterns.onboarding;
         case "home":
             return appRoutePatterns.home;
+        case "profile":
+            return appRoutePatterns.profile;
         case "grammar-index":
             return appRoutePatterns.grammarIndex;
         case "grammar-level":
@@ -132,8 +140,12 @@ function matchAppPath(
 
     if (segments.length === 1) {
         switch (segments[0]) {
+            case "auth":
+                return { name: "auth" };
             case "onboarding":
                 return { name: "onboarding" };
+            case "profile":
+                return { name: "profile" };
             case "grammar":
                 return { name: "grammar-index" };
             case "vocabulary":
