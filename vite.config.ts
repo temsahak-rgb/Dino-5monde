@@ -12,6 +12,7 @@ import {
 } from "vite";
 
 import {
+    buildSearchIndex,
     writeSearchIndex
 } from "./tools/build-search-index.js";
 
@@ -42,7 +43,66 @@ function dinoStaticDataPlugin(): Plugin {
     return {
         name: "dino-static-data",
 
-        apply: "build",
+        configureServer(server): void {
+            server.middlewares.use(
+                (
+                    request,
+                    response,
+                    next
+                ) => {
+                    const pathname =
+                        new URL(
+                            request.url
+                            ?? "/",
+                            "http://localhost"
+                        ).pathname;
+
+                    if (
+                        !pathname.endsWith(
+                            "/search-index.json"
+                        )
+                    ) {
+                        next();
+                        return;
+                    }
+
+                    void buildSearchIndex(
+                        rootDirectory
+                    ).then(
+                        index => {
+                            response.statusCode =
+                                200;
+                            response.setHeader(
+                                "Content-Type",
+                                "application/json; charset=utf-8"
+                            );
+                            response.setHeader(
+                                "Cache-Control",
+                                "no-store"
+                            );
+                            response.end(
+                                `${JSON.stringify(
+                                    index
+                                )}\n`
+                            );
+                        }
+                    ).catch(
+                        error => {
+                            server.config.logger.error(
+                                `Unable to build the development search index: ${String(
+                                    error
+                                )}`
+                            );
+                            response.statusCode =
+                                500;
+                            response.end(
+                                "Search index generation failed."
+                            );
+                        }
+                    );
+                }
+            );
+        },
 
         async closeBundle(): Promise<void> {
             await mkdir(

@@ -30,12 +30,15 @@ function Footer() {
                     w-full
                     max-w-[900px]
                     flex-col
-                    gap-6
-                    px-5
-                    py-6
+                    gap-4
+                    px-4
+                    py-5
                     sm:flex-row
                     sm:items-center
                     sm:justify-between
+                    sm:gap-6
+                    sm:px-5
+                    sm:py-6
                 "
             >
                 <div
@@ -135,8 +138,11 @@ function FooterLink({
                     isActive
                 }) => `
                     border-b-2
-                    px-0
-                    py-1
+                    inline-flex
+                    min-h-11
+                    items-center
+                    px-1.5
+                    py-2
                     text-sm
                     font-semibold
                     no-underline

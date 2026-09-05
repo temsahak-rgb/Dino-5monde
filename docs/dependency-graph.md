@@ -2,7 +2,7 @@
 
 # React application dependency maps
 
-The application contains 73 local modules reachable from `src/main.tsx`, 207 runtime imports and 66 type-only imports.
+The application contains 74 local modules reachable from `src/main.tsx`, 208 runtime imports and 66 type-only imports.
 The generator rejects runtime dependency cycles.
 
 ## React architecture overview
@@ -154,45 +154,47 @@ flowchart TB
     subgraph S5["Shared React components"]
         direction TB
         M1["components/Controls"]:::focus
-        M2["components/Feedback"]:::focus
-        M3["components/Footer"]:::focus
-        M4["components/Layout"]:::focus
-        M5["components/Navbar"]:::focus
-        M6["components/RichText"]:::focus
+        M2["components/DinoMascot"]:::focus
+        M3["components/Feedback"]:::focus
+        M4["components/Footer"]:::focus
+        M5["components/Layout"]:::focus
+        M6["components/Navbar"]:::focus
+        M7["components/RichText"]:::focus
     end
     subgraph S6["Feature React components"]
         direction TB
-        M7["features/news/NewsCatalog"]
-        M8["features/search/SearchDialog"]:::focus
+        M8["features/news/NewsCatalog"]
+        M9["features/search/SearchDialog"]:::focus
     end
     subgraph S7["Feature engines and modules"]
         direction TB
-        M9["features/news/newsRepository"]
-        M10["features/search/searchEngine"]:::focus
-        M11["features/search/searchRepository"]:::focus
+        M10["features/news/newsRepository"]
+        M11["features/search/searchEngine"]:::focus
+        M12["features/search/searchRepository"]:::focus
     end
     subgraph S8["Core engines and modules"]
         direction TB
-        M12["core/placementEngine"]
-        M13["core/staticData"]
+        M13["core/placementEngine"]
+        M14["core/staticData"]
     end
     subgraph S9["Internationalization"]
         direction TB
-        M14["i18n/I18nProvider"]
+        M15["i18n/I18nProvider"]
     end
-    M8 --> M10
-    M8 --> M11
-    M8 --> M14
-    M11 --> M13
-    M0 --> M12
-    M0 --> M7
-    M0 --> M9
-    M0 --> M14
-    M0 --> M4
-    M2 --> M1
-    M3 --> M14
-    M5 --> M8
-    M5 --> M14
+    M9 --> M11
+    M9 --> M12
+    M9 --> M15
+    M12 --> M14
+    M0 --> M13
+    M0 --> M8
+    M0 --> M10
+    M0 --> M15
+    M0 --> M5
+    M3 --> M1
+    M4 --> M15
+    M6 --> M9
+    M6 --> M15
+    M6 --> M2
 ```
 
 </details>

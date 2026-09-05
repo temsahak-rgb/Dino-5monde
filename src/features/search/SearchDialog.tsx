@@ -303,6 +303,7 @@ function SearchDialog({
                 px-4
                 py-10
                 backdrop-blur-sm
+                max-[560px]:p-3
             "
             onMouseDown={
                 event => {
@@ -333,6 +334,9 @@ function SearchDialog({
                     rounded-card
                     bg-surface
                     shadow-2xl
+                    max-[560px]:flex
+                    max-[560px]:min-h-[calc(100dvh-1.5rem)]
+                    max-[560px]:flex-col
                 "
             >
                 {/* ---------------------------------------------------------- */}
@@ -348,6 +352,8 @@ function SearchDialog({
                         bg-dino-600
                         px-5
                         py-4
+                        max-[560px]:px-4
+                        max-[560px]:py-3
                     "
                 >
                     <h2
@@ -377,8 +383,7 @@ function SearchDialog({
                         }
                         className="
                             flex
-                            h-9
-                            w-9
+                            size-11
                             items-center
                             justify-center
                             rounded-control
@@ -406,6 +411,7 @@ function SearchDialog({
                         border-b
                         border-line
                         p-5
+                        max-[560px]:p-4
                     "
                 >
                     <input
@@ -473,6 +479,9 @@ function SearchDialog({
                         max-h-[60vh]
                         overflow-y-auto
                         p-5
+                        max-[560px]:max-h-none
+                        max-[560px]:flex-1
+                        max-[560px]:p-4
                     "
                 >
                     {!queryReady ? (
