@@ -24,16 +24,9 @@ const outputDirectory =
         "dist"
     );
 
-const repositoryName =
-    process.env.GITHUB_REPOSITORY
-        ?.split("/")
-        .at(-1);
-
 const publicBase =
-    process.env.GITHUB_ACTIONS === "true"
-    && repositoryName
-        ? `/${repositoryName}/`
-        : "/";
+    process.env.DINO_PUBLIC_BASE
+    ?? "/";
 
 /**
  * Preserves the existing Dino static-data contract.
@@ -103,9 +96,9 @@ function dinoStaticDataPlugin(): Plugin {
 
 export default defineConfig({
     /*
-     * Local builds run at the host root. GitHub Actions builds use the
-     * repository name as the GitHub Pages base path. React Router consumes
-     * the same Vite BASE_URL as its basename.
+     * Local and verification builds run at the host root. The Pages workflow
+     * explicitly supplies the repository base path. React Router consumes the
+     * same Vite BASE_URL as its basename.
      */
     base: publicBase,
 
