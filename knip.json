@@ -1,12 +1,19 @@
 {
   "entry": [
     "tests/**/*.test.ts",
-    "tests/e2e/**/*.spec.ts"
+    "tests/e2e/**/*.spec.ts",
+    "features/step-definitions/**/*.ts"
+  ],
+  "ignoreUnresolved": [
+    "progress",
+    "html:reports/cucumber.html",
+    "junit:reports/cucumber.xml"
   ],
   "ignoreExportsUsedInFile": true,
   "project": [
     "src/**/*.ts",
     "src/**/*.tsx",
+    "features/**/*.ts",
     "tests/**/*.ts",
     "tools/**/*.ts"
   ]
