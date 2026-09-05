@@ -3,6 +3,10 @@ import {
 } from "../i18n/I18nProvider.js";
 
 import {
+    BackendProvider
+} from "../services/backend/BackendProvider.js";
+
+import {
     AppRouter
 } from "./AppRouter.js";
 
@@ -14,9 +18,11 @@ import {
  */
 function App() {
     return (
-        <I18nProvider>
-            <AppRouter />
-        </I18nProvider>
+        <BackendProvider>
+            <I18nProvider>
+                <AppRouter />
+            </I18nProvider>
+        </BackendProvider>
     );
 }
 

@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.tools.json --noEmit",
     "test": "tsx --test \"tests/**/*.test.ts\"",
-    "test:app": "tsx --test \"tests/architecture/**/*.test.ts\" \"tests/grammar/**/*.test.ts\" \"tests/institutional/**/*.test.ts\" \"tests/navigation/**/*.test.ts\" \"tests/search/**/*.test.ts\" \"tests/tools/**/*.test.ts\" \"tests/vocabulary/**/*.test.ts\"",
+    "test:app": "tsx --test \"tests/architecture/**/*.test.ts\" \"tests/backend/**/*.test.ts\" \"tests/grammar/**/*.test.ts\" \"tests/institutional/**/*.test.ts\" \"tests/navigation/**/*.test.ts\" \"tests/search/**/*.test.ts\" \"tests/tools/**/*.test.ts\" \"tests/vocabulary/**/*.test.ts\"",
     "test:data": "tsx --test \"tests/data/**/*.test.ts\"",
     "test:features": "npm run features:report && cucumber-js",
     "test:architecture": "tsx --test \"tests/architecture/**/*.test.ts\"",
@@ -19,6 +19,11 @@
     "test:e2e:headed": "playwright test --headed",
     "test:e2e:install": "playwright install chromium",
     "serve:e2e": "vite preview --host 127.0.0.1 --port 4173",
+    "backend:start": "supabase start",
+    "backend:stop": "supabase stop",
+    "backend:reset": "supabase db reset",
+    "backend:test": "supabase test db",
+    "backend:types": "supabase gen types typescript --local --schema public > src/services/backend/database.types.ts",
     "corpus:report": "tsx tools/build-corpus-report.ts",
     "features:report": "tsx tools/build-feature-report.ts --output reports/feature-progress.json --markdown reports/feature-progress.md",
     "vigie:report": "tsx tools/build-project-vigie.ts",
@@ -28,6 +33,7 @@
     "graph:dependencies:check": "tsx tools/generate-dependency-graph.ts --check"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.115.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-router": "^8.2.0"
@@ -42,6 +48,7 @@
     "@vitejs/plugin-react": "^6.1.1",
     "jscpd": "^4.0.0",
     "knip": "^5.0.0",
+    "supabase": "^2.116.0",
     "tsx": "^4.20.0",
     "typescript": "^5.9.0",
     "vite": "^8.2.2"

@@ -252,6 +252,15 @@ test(
                 }
 
                 if (
+                    sourceModule.startsWith("src/services/")
+                    && /src\/(?:app|pages|features|ui)\//u.test(targetModule)
+                ) {
+                    reasons.push(
+                        "services cannot depend on application or presentation modules"
+                    );
+                }
+
+                if (
                     isPureDomainModule(sourceModule)
                     && targetModule.endsWith(".tsx")
                 ) {
