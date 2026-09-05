@@ -56,7 +56,10 @@ jobs:
           REQUIRE_E2E_CHECK: ${{ github.event_name == 'workflow_dispatch' }}
         with:
           script: |
-            const requiredChecks = ['Quality report'];
+            const requiredChecks = [
+              'Quality report',
+              'Executable feature contracts',
+            ];
             if (process.env.REQUIRE_E2E_CHECK === 'true') {
               requiredChecks.push('Startup and i18n (Chromium)');
             }
