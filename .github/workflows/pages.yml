@@ -144,6 +144,8 @@ jobs:
         run: npm run build
         env:
           DINO_PUBLIC_BASE: /${{ github.event.repository.name }}/
+          VITE_SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.SUPABASE_PUBLISHABLE_KEY }}
 
       - name: Configure Pages
         uses: actions/configure-pages@v6

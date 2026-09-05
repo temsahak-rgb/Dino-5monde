@@ -55,11 +55,29 @@ pages/               → écrans associés aux routes
 ui/components/       → composants React partagés
 features/            → composants métier, moteurs et repositories
 core/                → logique réutilisable indépendante de React
+services/backend/    → frontière TypeScript vers Auth et PostgreSQL
 i18n/                → textes d'interface et direction
 data/                → contenu pédagogique JSON
+supabase/            → configuration et migrations du backend versionnées
 ```
 
 L'application est une SPA **React + TypeScript** construite par Vite. `index.html` charge uniquement `src/main.tsx` ; `AppRouter` et `AppLayout` structurent ensuite les routes, les pages et les composants.
+
+Le premier backend repose sur **Supabase**. Il est optionnel tant que les variables `VITE_SUPABASE_URL` et `VITE_SUPABASE_PUBLISHABLE_KEY` ne sont pas définies, ce qui préserve le site statique actuel. Le corpus pédagogique reste dans `data/` et n’est ni migré ni injecté dans PostgreSQL. La base accueille uniquement les futures données privées de compte et de profil, protégées dès la première migration par Row Level Security.
+
+Le déploiement GitHub Pages injecte ces valeurs depuis les variables de dépôt `SUPABASE_URL` et `SUPABASE_PUBLISHABLE_KEY`. Le projet Supabase n’est donc jamais codé en dur : passer à l’environnement du client consiste à remplacer ces deux variables puis à rejouer les migrations versionnées.
+
+Le développement local du backend nécessite Docker Desktop :
+
+```bash
+cp .env.example .env.local
+npm run backend:start
+npm run backend:reset
+npm run backend:test
+npm run backend:types
+```
+
+`npm run backend:stop` arrête ensuite l’environnement local. Phone OTP reste volontairement désactivé tant qu’un fournisseur SMS payant et ses protections anti-abus ne sont pas configurés.
 
 Les écrans durables ont un chemin React Router canonique (`/grammar/A1`, `/grammar/lesson/A1-G-001`, `/travel/TR-006`, etc.). Ces liens supportent l’ouverture directe, le rechargement et l’historique arrière/avant ; l’état temporaire d’un exercice ou d’un jeu reste volontairement hors URL.
 

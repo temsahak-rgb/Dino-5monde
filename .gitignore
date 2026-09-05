@@ -3,3 +3,11 @@ dist/
 reports/
 playwright-report/
 test-results/
+tmp/
+
+.env
+.env.*
+!.env.example
+
+supabase/.branches/
+supabase/.temp/

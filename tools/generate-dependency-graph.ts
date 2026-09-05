@@ -58,6 +58,10 @@ const graphGroups: GraphGroup[] = [
         matches: modulePath => modulePath === "src/app/App.tsx"
     },
     {
+        label: "Backend boundary (React + Supabase)",
+        matches: modulePath => modulePath.startsWith("src/services/backend/")
+    },
+    {
         label: "React router and routes",
         matches: modulePath =>
             modulePath === "src/app/AppRouter.tsx"
@@ -618,23 +622,24 @@ function renderArchitectureOverview(
                 3,
                 4,
                 5,
-                6
+                6,
+                7
             ]
         },
         {
             id: "L",
             label: "Engines and source modules",
             groupIndexes: [
-                7,
-                8
+                8,
+                9
             ]
         },
         {
             id: "C",
             label: "Cross-cutting modules",
             groupIndexes: [
-                9,
-                11
+                10,
+                12
             ]
         }
     ];
