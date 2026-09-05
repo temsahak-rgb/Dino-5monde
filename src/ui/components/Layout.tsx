@@ -53,27 +53,6 @@ function Page({
 }
 
 /**
- * Narrower container intended for lesson, article and story reading.
- */
-function ReadingPage({
-    children,
-    className = "",
-    ...props
-}: PageProps) {
-    return (
-        <div
-            className={`
-                dino-reading-page
-                ${className}
-            `}
-            {...props}
-        >
-            {children}
-        </div>
-    );
-}
-
-/**
  * Main heading block for a routed page.
  */
 function PageHeader({
@@ -311,7 +290,6 @@ export {
     Grid,
     Page,
     PageHeader,
-    ReadingPage,
     Section,
     SectionHeader
 };

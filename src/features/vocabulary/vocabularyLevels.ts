@@ -2,24 +2,6 @@ import type {
     Level
 } from "../../types/global.js";
 
-const vocabularyLevels:
-    readonly Level[] = [
-        "A1",
-        "A2",
-        "B1",
-        "B2",
-        "C1",
-        "C2"
-    ];
-
-/**
- * Returns every CEFR level exposed by the Vocabulary feature.
- */
-function getVocabularyLevels():
-    readonly Level[] {
-    return vocabularyLevels;
-}
-
 /**
  * Validates a Vocabulary CEFR value coming from a route, DOM state or stored
  * application state.
@@ -42,6 +24,5 @@ function parseVocabularyLevel(
 }
 
 export {
-    getVocabularyLevels,
     parseVocabularyLevel
 };

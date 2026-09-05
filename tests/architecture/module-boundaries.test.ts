@@ -1,10 +1,11 @@
 /**
- * Module dependency boundary guards.
+ * Dependency guards for the React application.
  *
- * These rules keep the explicit import graph directional and prevent the
- * controller/view/router cycles that existed before the ES-module migration.
+ * The graph is expected to flow from the entry point and app composition
+ * toward route pages, reusable UI/features, and finally pure domain/data
+ * modules. Runtime cycles and upward dependencies make that graph unreadable
+ * and are rejected here.
  */
-
 import assert from "node:assert/strict";
 import {
     readdir,
@@ -21,60 +22,29 @@ import {
 } from "node:url";
 import ts from "typescript";
 
-const root =
-    resolve(
-        dirname(
-            fileURLToPath(
-                import.meta.url
-            )
-        ),
-        "../.."
-    );
-const srcDirectory =
-    resolve(
-        root,
-        "src"
-    );
+const root = resolve(
+    dirname(fileURLToPath(import.meta.url)),
+    "../.."
+);
+const srcDirectory = resolve(root, "src");
 
-async function collectTypeScriptFiles(
+async function collectSourceFiles(
     directory: string
 ): Promise<string[]> {
-    const entries =
-        await readdir(
-            directory,
-            {
-                withFileTypes: true
-            }
-        );
-    const files:
-        string[] = [];
+    const entries = await readdir(directory, { withFileTypes: true });
+    const files: string[] = [];
 
-    for (
-        const entry
-        of entries
-    ) {
-        const entryPath =
-            resolve(
-                directory,
-                entry.name
-            );
+    for (const entry of entries) {
+        const entryPath = resolve(directory, entry.name);
 
-        if (
-            entry.isDirectory()
-        ) {
-            files.push(
-                ...await collectTypeScriptFiles(
-                    entryPath
-                )
-            );
+        if (entry.isDirectory()) {
+            files.push(...await collectSourceFiles(entryPath));
         } else if (
             entry.isFile()
-            && entry.name.endsWith(".ts")
+            && /\.tsx?$/u.test(entry.name)
             && !entry.name.endsWith(".d.ts")
         ) {
-            files.push(
-                entryPath
-            );
+            files.push(entryPath);
         }
     }
 
@@ -84,20 +54,19 @@ async function collectTypeScriptFiles(
 function repositoryPath(
     filePath: string
 ): string {
-    return relative(
-        root,
-        filePath
-    ).replace(
-        /\\/g,
-        "/"
-    );
+    return relative(root, filePath).replace(/\\/gu, "/");
+}
+
+function moduleStem(
+    filePath: string
+): string {
+    return repositoryPath(filePath).replace(/\.tsx?$/u, "");
 }
 
 function isTypeOnlyImport(
     declaration: ts.ImportDeclaration
 ): boolean {
-    const clause =
-        declaration.importClause;
+    const clause = declaration.importClause;
 
     return Boolean(
         clause?.isTypeOnly
@@ -105,9 +74,7 @@ function isTypeOnlyImport(
             clause
             && !clause.name
             && clause.namedBindings
-            && ts.isNamedImports(
-                clause.namedBindings
-            )
+            && ts.isNamedImports(clause.namedBindings)
             && clause.namedBindings.elements.length > 0
             && clause.namedBindings.elements.every(
                 element => element.isTypeOnly
@@ -116,151 +83,188 @@ function isTypeOnlyImport(
     );
 }
 
-function isFeatureController(
-    modulePath: string
-): boolean {
-    return modulePath.startsWith(
-        "src/features/"
-    )
-        && !modulePath.endsWith(
-            "Engine.ts"
-        );
-}
-
-function isEngine(
-    modulePath: string
-): boolean {
-    return modulePath.endsWith(
-        "Engine.ts"
+function parseSource(
+    filePath: string,
+    source: string
+): ts.SourceFile {
+    return ts.createSourceFile(
+        filePath,
+        source,
+        ts.ScriptTarget.ES2022,
+        true,
+        filePath.endsWith(".tsx")
+            ? ts.ScriptKind.TSX
+            : ts.ScriptKind.TS
     );
 }
 
+function isPureDomainModule(
+    sourceModule: string
+): boolean {
+    return sourceModule.endsWith(".ts")
+        && (
+            sourceModule.startsWith("src/core/")
+            || sourceModule.startsWith("src/features/")
+        );
+}
+
+function resolveImportedModule(
+    sourcePath: string,
+    specifier: string,
+    modulesByStem: ReadonlyMap<string, string>
+): string | null {
+    const resolvedStem = repositoryPath(
+        resolve(
+            dirname(sourcePath),
+            specifier.replace(/\.(?:js|jsx)$/u, "")
+        )
+    );
+
+    return modulesByStem.get(resolvedStem)
+        ?? modulesByStem.get(`${resolvedStem}/index`)
+        ?? null;
+}
+
+function collectCycles(
+    graph: ReadonlyMap<string, ReadonlySet<string>>
+): string[] {
+    const state = new Map<string, "visiting" | "visited">();
+    const stack: string[] = [];
+    const cycles = new Set<string>();
+
+    function visit(modulePath: string): void {
+        state.set(modulePath, "visiting");
+        stack.push(modulePath);
+
+        for (const target of graph.get(modulePath) ?? []) {
+            if (state.get(target) === "visiting") {
+                const start = stack.indexOf(target);
+                cycles.add(
+                    [
+                        ...stack.slice(start),
+                        target
+                    ].join(" -> ")
+                );
+            } else if (!state.has(target)) {
+                visit(target);
+            }
+        }
+
+        stack.pop();
+        state.set(modulePath, "visited");
+    }
+
+    for (const modulePath of graph.keys()) {
+        if (!state.has(modulePath)) {
+            visit(modulePath);
+        }
+    }
+
+    return [...cycles].sort();
+}
+
 test(
-    "runtime imports respect module boundaries",
+    "runtime imports follow the React application layers",
     async () => {
-        const sourcePaths = [
-            resolve(
-                root,
-                "app.ts"
-            ),
-            ...await collectTypeScriptFiles(
-                srcDirectory
-            )
-        ];
-        const violations:
-            string[] = [];
+        const sourcePaths = await collectSourceFiles(srcDirectory);
+        const modulesByStem = new Map(
+            sourcePaths.map(path => [moduleStem(path), repositoryPath(path)])
+        );
+        const graph = new Map<string, Set<string>>();
+        const violations: string[] = [];
 
-        for (
-            const sourcePath
-            of sourcePaths
-        ) {
-            const sourceModule =
-                repositoryPath(
-                    sourcePath
-                );
-            const source =
-                await readFile(
-                    sourcePath,
-                    "utf8"
-                );
-            const sourceFile =
-                ts.createSourceFile(
-                    sourcePath,
-                    source,
-                    ts.ScriptTarget.ES2022,
-                    true,
-                    ts.ScriptKind.TS
-                );
+        for (const sourcePath of sourcePaths) {
+            const sourceModule = repositoryPath(sourcePath);
+            const source = await readFile(sourcePath, "utf8");
+            const sourceFile = parseSource(sourcePath, source);
+            const edges = new Set<string>();
+            graph.set(sourceModule, edges);
 
-            for (
-                const statement
-                of sourceFile.statements
-            ) {
+            for (const statement of sourceFile.statements) {
                 if (
-                    !ts.isImportDeclaration(
-                        statement
-                    )
-                    || isTypeOnlyImport(
-                        statement
-                    )
-                    || !ts.isStringLiteral(
-                        statement.moduleSpecifier
-                    )
-                    || !statement.moduleSpecifier.text.startsWith(
-                        "."
-                    )
+                    !ts.isImportDeclaration(statement)
+                    || isTypeOnlyImport(statement)
+                    || !ts.isStringLiteral(statement.moduleSpecifier)
                 ) {
                     continue;
                 }
 
-                const targetModule =
-                    repositoryPath(
-                        resolve(
-                            dirname(
-                                sourcePath
-                            ),
-                            statement.moduleSpecifier.text.replace(
-                                /\.js$/,
-                                ".ts"
-                            )
-                        )
-                    );
-                const reasons:
-                    string[] = [];
+                const specifier = statement.moduleSpecifier.text;
 
                 if (
-                    targetModule === "src/core/router.ts"
-                    && sourceModule !== "app.ts"
+                    isPureDomainModule(sourceModule)
+                    && /^(?:react|react-dom|react-router)(?:\/|$)/u.test(
+                        specifier
+                    )
+                ) {
+                    violations.push(
+                        `${sourceModule} -> ${specifier}: pure domain/data modules cannot depend on React`
+                    );
+                }
+
+                if (!specifier.startsWith(".")) {
+                    continue;
+                }
+
+                const targetModule = resolveImportedModule(
+                    sourcePath,
+                    specifier,
+                    modulesByStem
+                );
+
+                if (!targetModule) {
+                    continue;
+                }
+
+                edges.add(targetModule);
+                const reasons: string[] = [];
+
+                if (
+                    sourceModule.startsWith("src/core/")
+                    && /src\/(?:app|pages|features|ui|i18n)\//u.test(
+                        targetModule
+                    )
                 ) {
                     reasons.push(
-                        "only app.ts may depend on the concrete router"
+                        "core cannot depend on application, presentation, feature, or i18n modules"
                     );
                 }
 
                 if (
-                    sourceModule.startsWith("src/ui/views/")
-                    && (
-                        targetModule.startsWith("src/pages/")
-                        || targetModule.startsWith("src/features/")
-                    )
+                    sourceModule.startsWith("src/features/")
+                    && /src\/(?:app|pages)\//u.test(targetModule)
                 ) {
-                    reasons.push(
-                        "views cannot depend on pages or feature modules"
-                    );
+                    reasons.push("features cannot depend on route composition or pages");
                 }
 
                 if (
-                    isFeatureController(
-                        sourceModule
-                    )
-                    && targetModule.startsWith("src/pages/")
+                    sourceModule.startsWith("src/ui/")
+                    && /src\/(?:app|pages)\//u.test(targetModule)
                 ) {
-                    reasons.push(
-                        "feature controllers cannot depend on pages"
-                    );
+                    reasons.push("shared UI cannot depend on route composition or pages");
                 }
 
                 if (
-                    isEngine(
-                        sourceModule
-                    )
-                    && (
-                        targetModule.startsWith("src/pages/")
-                        || targetModule.startsWith("src/ui/")
-                        || isFeatureController(
-                            targetModule
-                        )
-                    )
+                    sourceModule.startsWith("src/pages/")
+                    && targetModule.startsWith("src/app/")
                 ) {
-                    reasons.push(
-                        "engines cannot depend on pages, UI, or controllers"
-                    );
+                    reasons.push("pages cannot depend upward on application composition");
                 }
 
-                for (
-                    const reason
-                    of reasons
+                if (
+                    isPureDomainModule(sourceModule)
+                    && targetModule.endsWith(".tsx")
                 ) {
+                    reasons.push("pure domain/data modules cannot depend on React components");
+                }
+
+                if (
+                    sourceModule === "src/app/routes.ts"
+                ) {
+                    reasons.push("the durable route contract must remain dependency-free");
+                }
+
+                for (const reason of reasons) {
                     violations.push(
                         `${sourceModule} -> ${targetModule}: ${reason}`
                     );
@@ -272,14 +276,19 @@ test(
             violations,
             [],
             [
-                "Module boundary violations detected:",
-                ...violations.map(
-                    violation =>
-                        `- ${violation}`
-                )
-            ].join(
-                "\n"
-            )
+                "React module boundary violations detected:",
+                ...violations.map(violation => `- ${violation}`)
+            ].join("\n")
+        );
+
+        const cycles = collectCycles(graph);
+        assert.deepEqual(
+            cycles,
+            [],
+            [
+                "Runtime import cycles make the React dependency graph ambiguous:",
+                ...cycles.map(cycle => `- ${cycle}`)
+            ].join("\n")
         );
     }
 );

@@ -2,14 +2,9 @@ import {
     getStaticDataUrl
 } from "../../core/staticData.js";
 
-import {
-    t
-} from "../../i18n/i18n.js";
-
 import type {
     GrammarLessonIndex,
     GrammarModule,
-    Language,
     LessonStatus,
     Level
 } from "../../types/global.js";
@@ -307,35 +302,4 @@ function getStatusIcon(
     }
 
     return "▶️";
-}
-
-/**
- * Returns the localized label associated with a lesson status.
- *
- * The optional language parameter is temporarily preserved for legacy callers.
- *
- * @param status - Lesson progress status.
- * @param _lang - Deprecated compatibility parameter.
- * @returns Localized status label.
- */
-function getStatusText(
-    status: LessonStatus,
-    _lang?: Language
-): string {
-    switch (status) {
-        case "completed":
-            return t(
-                "grammar.status.completed"
-            );
-
-        case "in_progress":
-            return t(
-                "grammar.status.inProgress"
-            );
-
-        case "not_started":
-            return t(
-                "grammar.status.notStarted"
-            );
-    }
 }

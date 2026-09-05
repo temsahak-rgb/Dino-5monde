@@ -25,7 +25,7 @@ import type {
 import {
     VocabularyGameShell,
     VocabularyGameUnavailable
-} from "./VocabularyGame.js";
+} from "./VocabularyGameShell.js";
 
 interface VocabularyWordSearchProps {
     pack: VocabPack;

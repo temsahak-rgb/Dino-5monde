@@ -47,6 +47,14 @@ interface PlannedNavigationLinkProps
     soonLabel: string;
 }
 
+interface NavbarProps {
+    /**
+     * Allows deterministic server rendering of the expanded navigation.
+     * The application keeps the menu closed by default.
+     */
+    initialMenuOpen?: boolean;
+}
+
 /**
  * Main React application navigation.
  *
@@ -60,7 +68,9 @@ interface PlannedNavigationLinkProps
  *
  * Feature routing remains owned by React Router.
  */
-function Navbar() {
+function Navbar({
+    initialMenuOpen = false
+}: NavbarProps) {
     const {
         t
     } = useI18n();
@@ -83,7 +93,7 @@ function Navbar() {
         setMenuOpen
     ] =
         useState(
-            false
+            initialMenuOpen
         );
 
     const [

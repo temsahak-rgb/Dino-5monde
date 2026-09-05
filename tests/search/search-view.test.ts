@@ -1,67 +1,89 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import type {
-    Language,
-    SearchResults
-} from "../../src/types/global.js";
+import {
+    createElement
+} from "react";
+import {
+    renderToStaticMarkup
+} from "react-dom/server";
 
-let language: Language =
-    "fr";
+import {
+    installReactTestBrowser,
+    renderReactView
+} from "../react/renderReactView.js";
 
-Object.defineProperty(
-    globalThis,
-    "localStorage",
+const browser =
+    installReactTestBrowser();
+
+const [
     {
-        configurable: true,
-        value: {
-            getItem: () => language,
-            setItem: () => undefined
-        }
-    }
-);
-
-Object.defineProperty(
-    globalThis,
-    "document",
+        HighlightedText,
+        SearchDialog
+    },
     {
-        configurable: true,
-        value: {
-            documentElement: {
-                dir: "ltr",
-                lang: "fr"
-            },
-            title: ""
-        }
+        I18nProvider
     }
-);
+] = await Promise.all([
+    import(
+        "../../src/features/search/SearchDialog.js"
+    ),
+    import(
+        "../../src/i18n/I18nProvider.js"
+    )
+]);
 
-const searchView =
-    await import(
-        "../../src/ui/views/searchView.js"
+function renderSearchDialog():
+    string {
+    return renderReactView(
+        createElement(
+            SearchDialog,
+            {
+                open: true,
+                onClose: () =>
+                    undefined,
+                renderInline: true
+            }
+        ),
+        I18nProvider
     );
+}
 
 test(
-    "Search modal exposes accessible dialog and live-result semantics",
+    "React Search dialog exposes accessible dialog and live-result semantics",
     () => {
-        language =
-            "fr";
+        browser.setLanguage(
+            "fr"
+        );
 
         const html =
-            searchView.renderSearchModalView();
+            renderSearchDialog();
 
         assert.match(
             html,
             /role="dialog"/
         );
+
         assert.match(
             html,
             /aria-modal="true"/
         );
+
+        assert.match(
+            html,
+            /aria-labelledby="search-dialog-title"/
+        );
+
+        assert.match(
+            html,
+            /role="region"/
+        );
+
         assert.match(
             html,
             /aria-live="polite"/
         );
+
         assert.match(
             html,
             /aria-label="Fermer la recherche"/
@@ -70,59 +92,58 @@ test(
 );
 
 test(
-    "Search modal localizes its controls in Persian",
+    "React Search dialog localizes its controls in Persian",
     () => {
-        language =
-            "fa";
+        browser.setLanguage(
+            "fa"
+        );
 
         const html =
-            searchView.renderSearchModalView();
+            renderSearchDialog();
 
         assert.match(
             html,
             /بستن جستجو/
         );
+
         assert.match(
             html,
             /کلمه یا عبارت/
+        );
+
+        assert.doesNotMatch(
+            html,
+            /Fermer la recherche|Mot ou expression/
         );
     }
 );
 
 test(
-    "Search results escape corpus HTML while preserving highlighting",
+    "React Search highlighting escapes corpus HTML while preserving its match",
     () => {
-        language =
-            "fr";
-
-        const results: SearchResults = {
-            vocab: [],
-            grammar: [],
-            news: [
-                {
-                    id: "unsafe",
-                    title: "Paris <img src=x>",
-                    image: "demo.jpg",
-                    level: "A1",
-                    publishedDate: "2026-09-01"
-                }
-            ]
-        };
-
         const html =
-            searchView.renderSearchResultsView(
-                results,
-                "Paris"
+            renderToStaticMarkup(
+                createElement(
+                    HighlightedText,
+                    {
+                        text:
+                            "Paris <img src=x>",
+                        query:
+                            "Paris"
+                    }
+                )
             );
 
         assert.doesNotMatch(
             html,
             /<img src=x>/
         );
+
         assert.match(
             html,
-            /Paris<\/mark>/
+            /<mark[^>]*>Paris<\/mark>/
         );
+
         assert.match(
             html,
             /&lt;img src=x&gt;/

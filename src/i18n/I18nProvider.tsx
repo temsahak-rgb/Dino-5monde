@@ -159,6 +159,9 @@ function I18nProvider({
                 if (
                     nextLanguage
                     === getI18nLanguage()
+                    && localStorage.getItem(
+                        "language"
+                    ) === nextLanguage
                 ) {
                     applyDocumentLanguage(
                         nextLanguage

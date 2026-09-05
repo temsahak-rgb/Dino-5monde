@@ -268,23 +268,6 @@ function VocabularyLevelPage() {
     );
 }
 
-/**
- * Re-exported only for route-related consumers during the migration.
- */
-function isVocabularyLevel(
-    value:
-        string
-        | undefined
-): value is Level {
-    return (
-        parseVocabularyLevel(
-            value
-        )
-        !== null
-    );
-}
-
 export {
-    VocabularyLevelPage,
-    isVocabularyLevel
+    VocabularyLevelPage
 };

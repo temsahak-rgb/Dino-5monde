@@ -263,7 +263,7 @@ data/**/*.json
 
 ### شرط زبان نباید وارد منطق برنامه شود
 
-Controller و Engine نباید دوباره چنین الگویی داشته باشند:
+Component و Engine نباید دوباره چنین الگویی داشته باشند:
 
 ```ts
 if (lang === "fa") {
@@ -283,25 +283,31 @@ if (lang === "fa") {
 
 ```text
 Dino-5monde/
-├── app.ts
 ├── index.html
 ├── package.json
 ├── tsconfig.json
+├── vite.config.ts
 │
 ├── src/
+│   ├── main.tsx
+│   ├── app/
+│   │   ├── App.tsx
+│   │   ├── AppRouter.tsx
+│   │   ├── AppLayout.tsx
+│   │   └── routes.ts
+│   │
 │   ├── core/
 │   │   ├── exerciseEngine.ts
 │   │   ├── lessonEngine.ts
-│   │   ├── pathEngine.ts
 │   │   ├── placementEngine.ts
 │   │   ├── progressEngine.ts
-│   │   └── router.ts
+│   │   └── staticData.ts
 │   │
 │   ├── features/
+│   │   ├── exercises/
 │   │   ├── grammar/
 │   │   ├── news/
 │   │   ├── onboarding/
-│   │   ├── polls/
 │   │   ├── search/
 │   │   ├── travel/
 │   │   └── vocabulary/
@@ -311,10 +317,8 @@ Dino-5monde/
 │   │   ├── fa.ts
 │   │   └── i18n.ts
 │   │
-│   ├── pages/
-│   ├── ui/
-│   │   ├── ui.ts
-│   │   └── views/
+│   ├── pages/          # کامپوننت‌های Route
+│   ├── ui/components/  # کامپوننت‌های مشترک React
 │   ├── styles/
 │   └── types/
 │
@@ -331,17 +335,20 @@ Dino-5monde/
 MVP به سمت این جداسازی حرکت کرده است:
 
 ```text
-app.ts / router.ts
-    → راه‌اندازی و Navigation اصلی
+src/main.tsx
+    → Mount کردن ریشه React
 
-pages/ + feature controllers
-    → هماهنگ‌سازی، Eventها و State صفحه
+app/App.tsx + AppRouter.tsx + AppLayout.tsx + routes.ts
+    → Providerهای سراسری، Routeها و Shell مشترک
 
-core/*Engine.ts + feature engines
-    → منطق و State قابل استفاده مجدد
+pages/*.tsx
+    → صفحه‌های Route و هماهنگ‌سازی
 
-ui/views/*.ts
-    → HTML و Presentation
+ui/components/*.tsx + features/**/*.tsx
+    → Presentation اعلانی، تعامل‌ها و State محلی
+
+features/**/*.ts + core/*.ts
+    → Engineها، Repositoryها و منطق مستقل از React
 
 i18n/*.ts
     → متن رابط و LTR/RTL
@@ -355,30 +362,29 @@ types/
 
 ### Navigation قابل اشتراک‌گذاری
 
-هر صفحه پایدار یک Query String استاندارد دارد؛ برای نمونه:
+هر صفحه پایدار یک Path استاندارد React Router دارد؛ برای نمونه:
 
 ```text
-?view=grammar&level=A1
-?view=grammar&lesson=A1-G-001
-?view=vocabulary&level=B1&pack=arrival-office
-?view=travel&lesson=TR-006
-?view=journal&article=2026-w34-azadi-tower
-?view=info&page=about
+/grammar/A1
+/grammar/lesson/A1-G-001
+/vocabulary/B1/arrival-office
+/travel/TR-006
+/journal/2026-w34-azadi-tower
+/info/about
 ```
 
-این URLها بازشدن مستقیم، Reload و دکمه‌های Back/Forward مرورگر را پشتیبانی می‌کنند. Router تنها مالک `location` و `history` است، شکل امن شناسه‌ها را پیش از نمایش اعتبارسنجی می‌کند و Deep Link را در تمام مراحل Onboarding نگه می‌دارد. Stateهای موقت—سؤال جاری، امتیاز، کارت برگردانده‌شده، صفحه بازی یا زیربخش—عمداً وارد URL نمی‌شوند.
+این URLها بازشدن مستقیم، Reload و دکمه‌های Back/Forward مرورگر را پشتیبانی می‌کنند. React Router مسئول Navigation است، `routes.ts` قرارداد Pathهای پایدار را متمرکز می‌کند و Loader مربوط به Onboarding مقصد درخواستی را نگه می‌دارد. Stateهای موقت—سؤال جاری، امتیاز، کارت برگردانده‌شده، صفحه بازی یا زیربخش—عمداً وارد URL نمی‌شوند.
 
-### Controller / Page
+### Pageها و کامپوننت‌های React
 
-Controller می‌تواند:
+Pageهای `src/pages/`:
 
-- رویداد کاربر را دریافت کند؛
-- Engine را صدا بزند؛
-- State موقت صفحه را مدیریت کند؛
-- View را صدا بزند؛
-- در صورت نیاز DOM از قبل ساخته‌شده را مدیریت کند.
+- پارامترهای Route را می‌خوانند؛
+- Engine را صدا می‌زنند؛
+- داده‌های هر صفحه را بارگذاری و هماهنگ می‌کنند؛
+- کامپوننت‌های Feature و کامپوننت‌های مشترک را ترکیب می‌کنند.
 
-اما نباید دوباره Templateهای بزرگ HTML را در خود نگه دارد.
+کامپوننت‌های `src/features/` تعامل‌ها و State هر دامنه را نگه می‌دارند و `src/ui/components/` اجزای مشترک و Shell برنامه را فراهم می‌کند. Render باید در JSX اعلانی باقی بماند و نباید مدیریت Imperative DOM دوباره وارد این لایه‌ها شود.
 
 ### Engine
 
@@ -392,17 +398,7 @@ Engine مسئول منطق قابل استفاده مجدد است:
 - Placement؛
 - State منطقی.
 
-Engine نباید Template رابط بسازد.
-
-### View
-
-فایل‌های `src/ui/views/` مسئول Presentation هستند:
-
-- HTML ساختاری؛
-- Labelها؛
-- Layout هر صفحه؛
-- Attributeهای `data-*` برای اتصال Eventها؛
-- استفاده از i18n.
+Engine نباید React را Import کند یا کامپوننت رابط بسازد.
 
 ### `data/`
 
@@ -415,17 +411,15 @@ data/ = برنامه چه چیزی آموزش می‌دهد
 
 درس‌ها و Packها عمدتاً در JSON نگهداری می‌شوند تا محتوای آموزشی بتواند مستقل از Engine رشد کند.
 
-### ES modules و Dependencyهای صریح
+### React، Vite و Dependencyهای صریح
 
-Dino فعلاً از React یا Vue استفاده نمی‌کند.
+Dino یک SPA با **React + TypeScript** است. Vite فایل `src/main.tsx`، یعنی تنها Entry point معرفی‌شده در `index.html`، را Transform می‌کند و Build بهینه ES modules را می‌سازد. هر Dependency اجرایی یا نوعی با `import` و APIهای مشترک با `export` صریح تعریف می‌شوند.
 
-TypeScript برنامه به‌صورت **ES modules** کامپایل می‌شود. `index.html` فقط یک entry point به نام `app.js` را با `type="module"` بارگذاری می‌کند. هر Dependency اجرایی یا نوعی با `import` و APIهای مشترک با `export` صریح تعریف می‌شوند.
-
-مرورگر اکنون ترتیب بارگذاری را از روی گراف Moduleها تعیین می‌کند و این ترتیب دیگر به‌صورت دستی در HTML نگهداری نمی‌شود.
+React Router صفحه‌ها و History مرورگر را مدیریت می‌کند؛ مرورگر و Vite ترتیب بارگذاری را از روی گراف Moduleها به دست می‌آورند.
 
 ### گراف Dependency
 
-[گراف تولیدشده برنامه](docs/dependency-graph.md) همه Dependencyهای محلی قابل دسترس از `app.ts` را نشان می‌دهد. ابتدا نمای کلی لایه‌ها و سپس نقشه‌های بازشونده هر دامنه را ارائه می‌کند. Importهای type-only ردیابی می‌شوند، اما برای خوانایی در نمودارها نمایش داده نمی‌شوند.
+[گراف تولیدشده برنامه](docs/dependency-graph.md) همه Dependencyهای محلی قابل دسترس از `src/main.tsx` را نشان می‌دهد. نمای اصلی درخت React—App، Router، Layout، Pageها، کامپوننت‌ها و Featureها—را تا Engineها و Moduleها دنبال می‌کند و شاخه‌های بازشونده جزئیات هر دامنه را نشان می‌دهند. Importهای type-only ردیابی می‌شوند، اما برای خوانایی در نمودارها نمایش داده نمی‌شوند.
 
 ```bash
 npm run graph:dependencies
@@ -433,7 +427,7 @@ npm run graph:dependencies:check
 ```
 
 خروجی قطعی است: فرمان اول گراف را دوباره تولید می‌کند و فرمان دوم بدون نوشتن فایل، به‌روز بودن آن را بررسی می‌کند.
-Generator هر چرخه Dependency اجرایی را رد می‌کند. تست‌های معماری نیز Dependencyهای View → Feature/Page، Feature → Page و Engine → UI/Controller را ممنوع می‌کنند.
+Generator هر چرخه Dependency اجرایی را رد می‌کند. تست‌های معماری نیز از بازگشت Bootstrap، Router و Viewهای Legacy جلوگیری می‌کنند و Engineها را از React و کامپوننت‌های UI مستقل نگه می‌دارند.
 
 ---
 
@@ -504,13 +498,12 @@ tests/architecture/
 
 برای جلوگیری از Regression ساختاری هستند.
 
-`ui-boundaries.test.ts` از موارد زیر محافظت می‌کند:
+تست‌های معماری از موارد زیر محافظت می‌کنند:
 
-- بازگشت HTML ساختاری به Controller، Page یا Engine؛
-- بازگشت Handlerهای inline مانند `onclick="..."`؛
+- بازگشت فایل‌های Bootstrap، Router و Viewهای Legacy؛
+- حذف Mount اصلی React یا Routeهای تعریف‌شده؛
 - بازگشت شرط مستقیم زبان به Business logic؛
-- حذف Viewهای مهاجرت‌داده‌شده؛
-- بازگشت renderer قدیمی Travel؛
+- وابسته شدن Engineها به React یا کامپوننت‌های رابط؛
 - بازگشت classic scriptها یا چند entry point به `index.html`.
 
 بنابراین معماری فقط یک Convention متنی نیست؛ یک Regression guard قابل اجرا دارد.
@@ -587,22 +580,21 @@ npm run build
 dist/
 ```
 
-Build همچنین فایل‌های استاتیک لازم مانند `index.html`، داده‌های آموزشی و Styleها را کپی می‌کند.
+Vite کد React و Tailwind را کامپایل و Assetهای بهینه را تولید می‌کند؛ Plugin پروژه نیز داده‌های آموزشی را کپی و Index جستجو را دوباره ایجاد می‌کند.
 
 ### اجرای محلی
 
-Dino داده‌های JSON را با `fetch()` بارگذاری می‌کند، بنابراین بهتر است `dist/` با HTTP سرو شود و `index.html` مستقیماً با `file://` باز نشود.
-
-مثال:
+سرور توسعه Vite را اجرا کنید:
 
 ```bash
-python -m http.server 8080 --directory dist
+npm run dev
 ```
 
-سپس:
+برای بررسی Build تولیدی به‌صورت محلی:
 
-```text
-http://localhost:8080
+```bash
+npm run build
+npm run preview
 ```
 
 ---
@@ -664,7 +656,8 @@ npm run duplication
 
 - تغییرات را محدود و هدفمند نگه دارید؛
 - اگر Engine مشترک وجود دارد، Engine جدید و تکراری نسازید؛
-- HTML ساختاری را در `src/ui/views/` نگه دارید؛
+- صفحه‌های Route را در `src/pages/`، کامپوننت‌های دامنه را در `src/features/` و اجزای مشترک را در `src/ui/components/` نگه دارید؛
+- Engineها و Repositoryها را از React مستقل نگه دارید؛
 - برای متن رابط از `t()` استفاده کنید؛
 - برای داده آموزشی دو‌زبانه از `localizedValue()` استفاده کنید؛
 - محتوای آموزشی را تا حد ممکن در `data/` نگه دارید؛
@@ -677,11 +670,11 @@ npm run duplication
 هدف این است که پروژه به این ساختار نزدیک‌تر شود:
 
 ```text
-Controllerهای ساده
+Pageهای Route ساده
         +
 Engineهای قابل استفاده مجدد
         +
-Viewهای اختصاصی
+کامپوننت‌های اختصاصی React
         +
 محتوای JSON
         +

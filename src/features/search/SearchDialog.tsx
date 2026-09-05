@@ -40,6 +40,13 @@ interface SearchDialogProps {
 
     onClose:
         () => void;
+
+    /**
+     * Keeps the dialog in the current React tree for deterministic server
+     * rendering. Browser usage continues to render through document.body.
+     */
+    renderInline?:
+        boolean;
 }
 
 type SearchLoadState =
@@ -65,7 +72,8 @@ const emptySearchResults:
  */
 function SearchDialog({
     open,
-    onClose
+    onClose,
+    renderInline = false
 }: SearchDialogProps) {
     const {
         t
@@ -520,10 +528,12 @@ function SearchDialog({
         </div>
     );
 
-    return createPortal(
-        dialog,
-        document.body
-    );
+    return renderInline
+        ? dialog
+        : createPortal(
+            dialog,
+            document.body
+        );
 
     /* ---------------------------------------------------------------------- */
     /* Keyboard navigation                                                    */

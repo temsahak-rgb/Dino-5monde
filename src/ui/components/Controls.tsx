@@ -37,12 +37,6 @@ interface BackButtonProps
     fallback?: string;
 }
 
-interface IconButtonProps
-    extends ButtonHTMLAttributes<HTMLButtonElement> {
-    children: ReactNode;
-    label: string;
-}
-
 interface CardProps
     extends HTMLAttributes<HTMLDivElement> {
     children: ReactNode;
@@ -206,44 +200,6 @@ function BackButton({
                     );
                 }
             }
-            {...props}
-        >
-            {children}
-        </button>
-    );
-}
-
-/**
- * Accessible icon-only button.
- */
-function IconButton({
-    children,
-    label,
-    className = "",
-    type = "button",
-    ...props
-}: IconButtonProps) {
-    return (
-        <button
-            type={type}
-            aria-label={label}
-            title={label}
-            className={`
-                inline-grid
-                size-10
-                shrink-0
-                place-items-center
-                rounded-control
-                border
-                border-transparent
-                bg-transparent
-                text-lg
-                transition
-                hover:bg-dino-50
-                disabled:pointer-events-none
-                disabled:opacity-50
-                ${className}
-            `}
             {...props}
         >
             {children}
@@ -455,7 +411,6 @@ export {
     Badge,
     Button,
     Card,
-    IconButton,
     ProgressBar
 };
 

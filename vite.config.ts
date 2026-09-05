@@ -24,6 +24,17 @@ const outputDirectory =
         "dist"
     );
 
+const repositoryName =
+    process.env.GITHUB_REPOSITORY
+        ?.split("/")
+        .at(-1);
+
+const publicBase =
+    process.env.GITHUB_ACTIONS === "true"
+    && repositoryName
+        ? `/${repositoryName}/`
+        : "/";
+
 /**
  * Preserves the existing Dino static-data contract.
  *
@@ -69,17 +80,34 @@ function dinoStaticDataPlugin(): Plugin {
                     "search-index.json"
                 )
             );
+
+            /*
+             * GitHub Pages has no configurable SPA rewrite. Serving the
+             * bundled application as 404.html lets React Router recover a
+             * directly opened nested URL while keeping assets rooted at the
+             * repository base.
+             */
+            await cp(
+                resolve(
+                    outputDirectory,
+                    "index.html"
+                ),
+                resolve(
+                    outputDirectory,
+                    "404.html"
+                )
+            );
         }
     };
 }
 
 export default defineConfig({
     /*
-     * Dino is deployed on GitHub Pages and currently uses query-string routes.
-     * Relative asset URLs therefore keep the build portable both at the domain
-     * root and below a repository path such as `/Dino-5monde/`.
+     * Local builds run at the host root. GitHub Actions builds use the
+     * repository name as the GitHub Pages base path. React Router consumes
+     * the same Vite BASE_URL as its basename.
      */
-    base: "./",
+    base: publicBase,
 
     plugins: [
         react(),

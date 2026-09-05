@@ -2,9 +2,36 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+    createElement
+} from "react";
+
+import {
     getGrammarLevelFromLessonId,
     getGrammarLevels
 } from "../../src/features/grammar/grammarLevels.js";
+
+import {
+    installReactTestBrowser,
+    renderReactView
+} from "../react/renderReactView.js";
+
+installReactTestBrowser();
+
+const [
+    {
+        GrammarIndexPage
+    },
+    {
+        I18nProvider
+    }
+] = await Promise.all([
+    import(
+        "../../src/pages/GrammarIndexPage.js"
+    ),
+    import(
+        "../../src/i18n/I18nProvider.js"
+    )
+]);
 
 test(
     "Grammar exposes the available A1 through C1 levels",
@@ -31,18 +58,21 @@ test(
             ),
             "A1"
         );
+
         assert.equal(
             getGrammarLevelFromLessonId(
                 "C1-G-010"
             ),
             "C1"
         );
+
         assert.equal(
             getGrammarLevelFromLessonId(
                 "C2-G-001"
             ),
             null
         );
+
         assert.equal(
             getGrammarLevelFromLessonId(
                 "invalid"
@@ -53,68 +83,45 @@ test(
 );
 
 test(
-    "Grammar level selector renders five navigable cards and excludes C2",
-    async () => {
-        Object.defineProperty(
-            globalThis,
-            "localStorage",
-            {
-                configurable: true,
-                value: {
-                    getItem: () => null,
-                    setItem: () => undefined
-                }
-            }
-        );
-
-        Object.defineProperty(
-            globalThis,
-            "document",
-            {
-                configurable: true,
-                value: {
-                    documentElement: {
-                        dir: "ltr",
-                        lang: "fr"
-                    },
-                    getElementById: (
-                        id: string
-                    ) => id === "app"
-                        ? {}
-                        : null,
-                    title: ""
-                }
-            }
-        );
-
-        const {
-            renderGrammarPageView
-        } = await import(
-            "../../src/ui/views/grammarView.js"
-        );
-
+    "React Grammar level selector renders five navigable cards and excludes C2",
+    () => {
         const html =
-            renderGrammarPageView(
-                getGrammarLevels()
+            renderReactView(
+                createElement(
+                    GrammarIndexPage
+                ),
+                I18nProvider,
+                "/grammar"
             );
 
-        assert.equal(
-            html.match(
-                /class="grammar-level-card"/g
-            )?.length,
-            5
+        const destinations = [
+            ...html.matchAll(
+                /href="(\/grammar\/[A-Z]\d)"/g
+            )
+        ].map(
+            match =>
+                match[1]
         );
+
+        assert.deepEqual(
+            destinations,
+            [
+                "/grammar/A1",
+                "/grammar/A2",
+                "/grammar/B1",
+                "/grammar/B2",
+                "/grammar/C1"
+            ]
+        );
+
         assert.match(
             html,
-            /data-level="A1"/
+            /Choisissez votre niveau de grammaire/
         );
-        assert.match(
-            html,
-            /data-level="C1"/
-        );
+
         assert.doesNotMatch(
             html,
-            /data-level="C2"/
+            /href="\/grammar\/C2"/
         );
     }
 );

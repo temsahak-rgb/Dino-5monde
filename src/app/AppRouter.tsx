@@ -13,6 +13,10 @@ import {
 } from "./AppLayout.js";
 
 import {
+    appRoutePatterns
+} from "./routes.js";
+
+import {
     GrammarIndexPage
 } from "../pages/GrammarIndexPage.js";
 
@@ -108,11 +112,14 @@ import {
  * /info/contact
  * /info/work-with-us
  */
+const routerBasename =
+    import.meta.env.BASE_URL;
+
 const router =
     createBrowserRouter([
         {
             path:
-                "/onboarding",
+                appRoutePatterns.onboarding,
 
             loader:
                 onboardingLoader,
@@ -123,7 +130,7 @@ const router =
 
         {
             path:
-                "/",
+                appRoutePatterns.home,
 
             loader:
                 requireCompletedOnboarding,
@@ -146,7 +153,7 @@ const router =
 
                 {
                     path:
-                        "grammar",
+                        appRoutePatterns.grammarIndex,
 
                     Component:
                         GrammarIndexPage
@@ -154,7 +161,7 @@ const router =
 
                 {
                     path:
-                        "grammar/:level",
+                        appRoutePatterns.grammarLevel,
 
                     Component:
                         GrammarLevelPage
@@ -162,7 +169,7 @@ const router =
 
                 {
                     path:
-                        "grammar/lesson/:lessonId",
+                        appRoutePatterns.grammarLesson,
 
                     Component:
                         GrammarLessonPage
@@ -174,7 +181,7 @@ const router =
 
                 {
                     path:
-                        "vocabulary",
+                        appRoutePatterns.vocabularyIndex,
 
                     Component:
                         VocabularyIndexPage
@@ -182,7 +189,7 @@ const router =
 
                 {
                     path:
-                        "vocabulary/:level",
+                        appRoutePatterns.vocabularyLevel,
 
                     Component:
                         VocabularyLevelPage
@@ -190,7 +197,7 @@ const router =
 
                 {
                     path:
-                        "vocabulary/:level/:packId",
+                        appRoutePatterns.vocabularyPack,
 
                     Component:
                         VocabularyPackPage
@@ -202,7 +209,7 @@ const router =
 
                 {
                     path:
-                        "travel",
+                        appRoutePatterns.travelIndex,
 
                     Component:
                         TravelIndexPage
@@ -210,7 +217,7 @@ const router =
 
                 {
                     path:
-                        "travel/:lessonId",
+                        appRoutePatterns.travelLesson,
 
                     Component:
                         TravelLessonPage
@@ -222,7 +229,7 @@ const router =
 
                 {
                     path:
-                        "journal",
+                        appRoutePatterns.journalIndex,
 
                     Component:
                         JournalIndexPage
@@ -230,7 +237,7 @@ const router =
 
                 {
                     path:
-                        "journal/:articleId",
+                        appRoutePatterns.journalArticle,
 
                     Component:
                         JournalArticlePage
@@ -242,7 +249,7 @@ const router =
 
                 {
                     path:
-                        "info/about",
+                        appRoutePatterns.about,
 
                     Component:
                         AboutPage
@@ -250,7 +257,7 @@ const router =
 
                 {
                     path:
-                        "info/contact",
+                        appRoutePatterns.contact,
 
                     Component:
                         ContactPage
@@ -258,7 +265,7 @@ const router =
 
                 {
                     path:
-                        "info/work-with-us",
+                        appRoutePatterns.workWithUs,
 
                     Component:
                         WorkWithUsPage
@@ -270,14 +277,17 @@ const router =
 
                 {
                     path:
-                        "*",
+                        appRoutePatterns.notFound,
 
                     Component:
                         NotFoundPage
                 }
             ]
         }
-    ]);
+    ], {
+        basename:
+            routerBasename
+    });
 
 /**
  * Protects the learning application until onboarding has enough persisted
@@ -305,13 +315,47 @@ function requireCompletedOnboarding({
         );
 
     const returnTo =
-        `${url.pathname}${url.search}${url.hash}`;
+        getRouterRelativeLocation(
+            url
+        );
 
     return redirect(
         `/onboarding?returnTo=${encodeURIComponent(
             returnTo
         )}`
     );
+}
+
+/**
+ * Removes the deployment basename from a browser URL before persisting an
+ * onboarding return target. React Router adds the basename back when it
+ * navigates, preventing duplicated `/Dino-5monde` segments on GitHub Pages.
+ */
+function getRouterRelativeLocation(
+    url: URL
+): string {
+    const normalizedBasename =
+        routerBasename === "/"
+            ? ""
+            : routerBasename.replace(
+                /\/$/,
+                ""
+            );
+
+    const pathname =
+        normalizedBasename
+        && (
+            url.pathname === normalizedBasename
+            || url.pathname.startsWith(
+                `${normalizedBasename}/`
+            )
+        )
+            ? url.pathname.slice(
+                normalizedBasename.length
+            ) || "/"
+            : url.pathname;
+
+    return `${pathname}${url.search}${url.hash}`;
 }
 
 /**

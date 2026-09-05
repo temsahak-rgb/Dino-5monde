@@ -19,7 +19,7 @@ async function seedCompletedOnboarding(
                 "travel"
             );
             localStorage.setItem(
-                "level",
+                "placementResult",
                 "A1"
             );
         },
@@ -28,138 +28,131 @@ async function seedCompletedOnboarding(
 }
 
 test.describe(
-    "shareable application navigation",
+    "shareable React Router navigation",
     () => {
         test(
-            "opens and reloads a real deep link",
+            "opens and reloads a real Travel deep link",
             async ({ page }) => {
                 await seedCompletedOnboarding(page);
-                await page.goto(
-                    "/?view=travel&lesson=TR-006"
-                );
+                await page.goto("/travel/TR-006");
 
                 await expect(
-                    page.locator("#travel-back")
+                    page.getByRole("heading", {
+                        name: "À l'hôtel",
+                        exact: true
+                    })
                 ).toBeVisible();
                 await expect(page).toHaveURL(
-                    /\?view=travel&lesson=TR-006$/
+                    /\/travel\/TR-006$/
                 );
 
                 await page.reload();
 
                 await expect(
-                    page.locator("#travel-back")
+                    page.getByRole("heading", {
+                        name: "À l'hôtel",
+                        exact: true
+                    })
                 ).toBeVisible();
                 await expect(page).toHaveURL(
-                    /\?view=travel&lesson=TR-006$/
+                    /\/travel\/TR-006$/
                 );
             }
         );
 
         test(
-            "exposes real home links and navigates without a reload",
+            "exposes real Home links and navigates without reload",
             async ({ page }) => {
                 await seedCompletedOnboarding(page);
-                await page.goto("/?view=home");
+                await page.goto("/");
 
-                const articleLink = page.locator(
-                    "a.news-home-card"
-                ).first();
-                await expect(articleLink).toHaveAttribute(
-                    "href",
-                    "?view=journal&article=2026-w34-azadi-tower"
-                );
+                const articleLink =
+                    page.locator(
+                        'a[href="/journal/2026-w34-azadi-tower"]'
+                    );
+
+                await expect(articleLink).toBeVisible();
                 await articleLink.click();
                 await expect(page).toHaveURL(
-                    /\?view=journal&article=2026-w34-azadi-tower$/
+                    /\/journal\/2026-w34-azadi-tower$/
                 );
 
                 await page.goBack();
-                const sectionLink = page.getByRole(
-                    "link",
-                    { name: /Actualités & conseils/ }
-                ).first();
-                await expect(sectionLink).toHaveAttribute(
-                    "href",
-                    "?view=journal"
-                );
+
+                await expect(
+                    page.getByRole("link", {
+                        name: "Journal →",
+                        exact: true
+                    })
+                ).toHaveAttribute("href", "/journal");
 
                 const expectedLinks = [
-                    ["grammar", "?view=grammar"],
-                    ["vocabulary", "?view=vocabulary"],
-                    ["travel", "?view=travel"],
-                    ["journal", "?view=journal"]
+                    [
+                        "Comment bien utiliser le passé composé ?",
+                        "/grammar"
+                    ],
+                    [
+                        "10 expressions pour ouvrir un compte bancaire",
+                        "/vocabulary"
+                    ],
+                    [
+                        "Guide complet de l'aéroport CDG",
+                        "/travel"
+                    ],
+                    [
+                        "En France, dites toujours Bonjour en premier !",
+                        "/journal"
+                    ]
                 ] as const;
 
-                for (const [highlight, href] of expectedLinks) {
+                for (
+                    const [name, href]
+                    of expectedLinks
+                ) {
                     await expect(
-                        page.locator(
-                            `[data-home-highlight="${highlight}"]`
-                        )
+                        page.getByRole("link", {
+                            name: new RegExp(name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+                        })
                     ).toHaveAttribute("href", href);
                 }
 
-                await page.locator(
-                    '[data-home-highlight="grammar"]'
-                ).click();
-                await expect(page).toHaveURL(
-                    /\?view=grammar$/
-                );
+                await page.getByRole("link", {
+                    name: /Comment bien utiliser le passé composé/
+                }).click();
+                await expect(page).toHaveURL(/\/grammar$/);
             }
         );
 
         test(
-            "does not duplicate the active destination in browser history",
+            "does not duplicate an active destination in browser history",
             async ({ page }) => {
                 await seedCompletedOnboarding(page);
-                await page.goto("/?view=home");
+                await page.goto("/");
 
-                await page.getByRole(
-                    "button",
-                    {
-                        name: "Menu",
-                        exact: true
-                    }
-                ).click();
-                await page.getByRole(
-                    "button",
-                    {
-                        name: "Grammaire",
-                        exact: true
-                    }
-                ).click();
-                await expect(page).toHaveURL(
-                    /\?view=grammar$/
-                );
+                await page.getByRole("button", {
+                    name: "Menu",
+                    exact: true
+                }).click();
+                await page.getByRole("link", {
+                    name: "Grammaire",
+                    exact: true
+                }).click();
+                await expect(page).toHaveURL(/\/grammar$/);
 
                 const historyLength =
                     await page.evaluate(
                         () => history.length
                     );
 
-                await page.getByRole(
-                    "button",
-                    {
-                        name: "Menu",
-                        exact: true
-                    }
-                ).click();
-                await page.getByRole(
-                    "button",
-                    {
-                        name: "Grammaire",
-                        exact: true
-                    }
-                ).click();
-                await expect(
-                    page.getByRole(
-                        "heading",
-                        {
-                            name: "Grammaire",
-                            exact: true
-                        }
-                    )
-                ).toBeVisible();
+                await page.getByRole("button", {
+                    name: "Menu",
+                    exact: true
+                }).click();
+                await page.getByRole("link", {
+                    name: "Grammaire",
+                    exact: true
+                }).click();
+
                 expect(
                     await page.evaluate(
                         () => history.length
@@ -167,267 +160,208 @@ test.describe(
                 ).toBe(historyLength);
 
                 await page.goBack();
-
-                await expect(page).toHaveURL(
-                    /\?view=home$/
-                );
-                await expect(
-                    page.getByRole(
-                        "heading",
-                        {
-                            name: "Bonjour, continuez !",
-                            exact: true
-                        }
-                    )
-                ).toBeVisible();
+                await expect(page).toHaveURL(/\/$/);
             }
         );
 
         test(
-            "keeps catalog history and excludes lesson-local state from the URL",
+            "keeps catalog history and lesson-local state outside the URL",
             async ({ page }) => {
                 await seedCompletedOnboarding(page);
-                await page.goto("/?view=grammar");
+                await page.goto("/grammar");
 
                 await page.locator(
-                    '.grammar-level-card[data-level="A1"]'
+                    'a[href="/grammar/A1"]'
                 ).click();
-                await expect(page).toHaveURL(
-                    /\?view=grammar&level=A1$/
-                );
+                await expect(page).toHaveURL(/\/grammar\/A1$/);
                 await expect(
-                    page.locator("#app h1")
+                    page.locator("#main-content")
                 ).toBeFocused();
 
                 await page.locator(
-                    '.grammar-lesson-card[data-lesson-id="A1-G-001"]'
+                    'a[href="/grammar/lesson/A1-G-001"]'
                 ).first().click();
                 await expect(page).toHaveURL(
-                    /\?view=grammar&lesson=A1-G-001$/
+                    /\/grammar\/lesson\/A1-G-001$/
                 );
-                await expect(
-                    page.locator("#back")
-                ).toBeVisible();
 
                 const lessonUrl = page.url();
 
                 await page.locator(
-                    ".grammar-section-card"
+                    "main button:has(h2)"
                 ).first().click();
-                await expect(page).toHaveURL(
-                    lessonUrl
-                );
+                await expect(page).toHaveURL(lessonUrl);
 
-                await page.locator("#back").click();
-                await expect(page).toHaveURL(
-                    lessonUrl
-                );
-                await page.locator("#back").click();
-                await expect(page).toHaveURL(
-                    /\?view=grammar&level=A1$/
-                );
-                await expect(
-                    page.locator("#grammar-level-back")
-                ).toBeVisible();
+                await page.getByRole("button", {
+                    name: /Retour/
+                }).last().click();
+                await expect(page).toHaveURL(lessonUrl);
+
+                await page.getByRole("button", {
+                    name: /Retour/
+                }).first().click();
+                await expect(page).toHaveURL(/\/grammar\/A1$/);
 
                 await page.goBack();
+                await expect(page).toHaveURL(/\/grammar$/);
+                await page.goForward();
+                await expect(page).toHaveURL(/\/grammar\/A1$/);
+                await page.goForward();
                 await expect(page).toHaveURL(
-                    /\?view=grammar$/
+                    /\/grammar\/lesson\/A1-G-001$/
+                );
+            }
+        );
+
+        test(
+            "preserves a requested deep link until onboarding completes",
+            async ({ page }) => {
+                await page.goto("/travel/TR-006");
+
+                await expect(page).toHaveURL(
+                    /\/onboarding\?returnTo=%2Ftravel%2FTR-006$/
+                );
+                await page.getByRole("button", {
+                    name: /Français/
+                }).click();
+                await page.getByRole("button", {
+                    name: /Français Voyage/
+                }).click();
+
+                await expect(page).toHaveURL(
+                    /\/travel\/TR-006$/
                 );
                 await expect(
-                    page.locator(
-                        '.grammar-level-card[data-level="A1"]'
+                    page.getByRole("heading", {
+                        name: "À l'hôtel",
+                        exact: true
+                    })
+                ).toBeVisible();
+            }
+        );
+
+        test(
+            "opens Vocabulary and Journal detail URLs directly",
+            async ({ page }) => {
+                await seedCompletedOnboarding(page);
+                await page.goto(
+                    "/vocabulary/B1/arrival-office"
+                );
+
+                await expect(page).toHaveURL(
+                    /\/vocabulary\/B1\/arrival-office$/
+                );
+                await expect(
+                    page.getByRole("button", {
+                        name: /Retour/
+                    }).first()
+                ).toBeVisible();
+
+                await page.goto(
+                    "/journal/2026-w34-azadi-tower"
+                );
+
+                await expect(page).toHaveURL(
+                    /\/journal\/2026-w34-azadi-tower$/
+                );
+                await expect(
+                    page.getByRole("heading", {
+                        name: /La tour Azadi/
+                    })
+                ).toBeVisible();
+            }
+        );
+
+        test(
+            "keeps invalid and missing resources on explicit error pages",
+            async ({ page }) => {
+                await seedCompletedOnboarding(page);
+                await page.goto("/travel/%20");
+
+                await expect(
+                    page.getByText(
+                        "Leçon introuvable.",
+                        { exact: true }
                     )
                 ).toBeVisible();
+                await expect(page).toHaveURL(/\/travel\/%20$/);
 
-                await page.goForward();
-                await expect(page).toHaveURL(
-                    /\?view=grammar&level=A1$/
-                );
-                await page.goForward();
-                await expect(page).toHaveURL(
-                    /\?view=grammar&lesson=A1-G-001$/
-                );
-                await expect(
-                    page.locator("#back")
-                ).toBeVisible();
-            }
-        );
-
-        test(
-            "preserves the requested deep link until onboarding completes",
-            async ({ page }) => {
-                await page.goto(
-                    "/?view=travel&lesson=TR-006"
-                );
-
-                await expect(page).toHaveURL(
-                    /\?view=travel&lesson=TR-006$/
-                );
-                await page.getByRole(
-                    "button",
-                    { name: /Français/ }
-                ).click();
-                await expect(page).toHaveURL(
-                    /\?view=travel&lesson=TR-006$/
-                );
-                await page.getByRole(
-                    "button",
-                    {
-                        name: /Français Voyage/
-                    }
-                ).click();
+                await page.goto("/travel/TR-999");
 
                 await expect(
-                    page.locator("#travel-back")
+                    page.getByText(
+                        "Leçon introuvable.",
+                        { exact: true }
+                    )
                 ).toBeVisible();
-                await expect(page).toHaveURL(
-                    /\?view=travel&lesson=TR-006$/
-                );
-            }
-        );
+                await expect(page).toHaveURL(/\/travel\/TR-999$/);
 
-        test(
-            "opens vocabulary and journal detail URLs directly",
-            async ({ page }) => {
-                await seedCompletedOnboarding(page);
-                await page.goto(
-                    "/?view=vocabulary&level=B1&pack=arrival-office"
-                );
+                await page.goto("/route-inconnue");
 
-                await expect(
-                    page.locator("#vocab-pack-back")
-                ).toBeVisible();
-                await expect(page).toHaveURL(
-                    /\?view=vocabulary&level=B1&pack=arrival-office$/
-                );
-
-                await page.goto(
-                    "/?view=journal&article=2026-w34-azadi-tower"
-                );
-
-                await expect(
-                    page.locator("#news-back")
-                ).toBeVisible();
-                await expect(page).toHaveURL(
-                    /\?view=journal&article=2026-w34-azadi-tower$/
-                );
-            }
-        );
-
-        test(
-            "distinguishes unsafe identifiers from missing safe resources",
-            async ({ page }) => {
-                await seedCompletedOnboarding(page);
-                await page.goto(
-                    "/?view=travel&lesson=%20TR-006"
-                );
-
-                await expect(page).toHaveURL(
-                    /\?view=home$/
-                );
-                await expect(
-                    page.locator("#main-navbar")
-                ).toBeVisible();
-
-                await page.goto(
-                    "/?view=travel&lesson=TR-999"
-                );
-
-                await expect(
-                    page.locator("#travel-error-back")
-                ).toBeVisible();
-                await expect(page).toHaveURL(
-                    /\?view=travel&lesson=TR-999$/
-                );
-            }
-        );
-
-        test(
-            "keeps a missing grammar link from an article on an explicit 404",
-            async ({ page }) => {
-                await seedCompletedOnboarding(page);
-                await page.goto(
-                    "/?view=journal&article=2026-w34-azadi-tower"
-                );
-
-                await page.locator("summary").filter({
-                    hasText: "Points de grammaire"
-                }).click();
-                await page.locator(
-                    ".news-grammar-link"
-                ).first().click();
-
-                await expect(page).toHaveURL(
-                    /\?view=grammar&lesson=a1-se-trouver$/
-                );
                 await expect(
                     page.locator(
                         '[data-error-page="not-found"]'
                     )
                 ).toBeVisible();
-                await expect(
-                    page.getByRole(
-                        "heading",
-                        {
-                            name: "Contenu introuvable",
-                            exact: true
-                        }
-                    )
-                ).toBeVisible();
-
-                await page.locator(
-                    "#grammar-error-back"
-                ).click();
-                await expect(page).toHaveURL(
-                    /\?view=journal&article=2026-w34-azadi-tower$/
-                );
-                await expect(
-                    page.locator("#news-back")
-                ).toBeVisible();
+                await expect(page).toHaveURL(/\/route-inconnue$/);
             }
         );
 
         test(
-            "reloads an institutional route in Persian",
+            "keeps a missing Grammar link from an article on an explicit error",
             async ({ page }) => {
-                await seedCompletedOnboarding(
-                    page,
-                    "fa"
-                );
+                await seedCompletedOnboarding(page);
                 await page.goto(
-                    "/?view=info&page=about"
+                    "/journal/2026-w34-azadi-tower"
                 );
 
-                await expect(
-                    page.locator("html")
-                ).toHaveAttribute("lang", "fa");
-                await expect(
-                    page.getByRole(
-                        "heading",
-                        {
-                            name: "درباره ما",
-                            exact: true
-                        }
-                    )
-                ).toBeVisible();
-                await expect(
-                    page.locator(
-                        '[data-institutional-page="about"]'
-                    )
-                ).toHaveAttribute(
-                    "href",
-                    "?view=info&page=about"
+                await page.locator("summary").filter({
+                    hasText: "Points de grammaire"
+                }).click();
+                await page.getByRole("link", {
+                    name: /Voir la leçon de grammaire/
+                }).first().click();
+
+                await expect(page).toHaveURL(
+                    /\/grammar\/lesson\/a1-se-trouver$/
                 );
+                await expect(
+                    page.getByRole("heading", {
+                        name: "Contenu introuvable",
+                        exact: true
+                    })
+                ).toBeVisible();
+
+                await page.getByRole("button", {
+                    name: /Retour/
+                }).click();
+                await expect(page).toHaveURL(
+                    /\/journal\/2026-w34-azadi-tower$/
+                );
+            }
+        );
+
+        test(
+            "reloads an institutional React route in Persian",
+            async ({ page }) => {
+                await seedCompletedOnboarding(page, "fa");
+                await page.goto("/info/about");
+
+                await expect(page.locator("html"))
+                    .toHaveAttribute("lang", "fa");
+                await expect(
+                    page.getByRole("heading", {
+                        name: "درباره ما",
+                        exact: true
+                    })
+                ).toBeVisible();
+                await expect(page).toHaveURL(/\/info\/about$/);
 
                 await page.reload();
 
-                await expect(
-                    page.locator("html")
-                ).toHaveAttribute("dir", "rtl");
-                await expect(page).toHaveURL(
-                    /\?view=info&page=about$/
-                );
+                await expect(page.locator("html"))
+                    .toHaveAttribute("dir", "rtl");
+                await expect(page).toHaveURL(/\/info\/about$/);
             }
         );
     }

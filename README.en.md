@@ -270,7 +270,7 @@ Lessons should therefore not be duplicated into the i18n catalogues.
 
 ### No language branching in business logic
 
-Controllers and engines should not reintroduce conditions such as:
+Components and engines should not reintroduce conditions such as:
 
 ```ts
 if (lang === "fa") {
@@ -290,25 +290,31 @@ This rule is protected by architecture tests.
 
 ```text
 Dino-5monde/
-├── app.ts
 ├── index.html
 ├── package.json
 ├── tsconfig.json
+├── vite.config.ts
 │
 ├── src/
+│   ├── main.tsx
+│   ├── app/
+│   │   ├── App.tsx
+│   │   ├── AppRouter.tsx
+│   │   ├── AppLayout.tsx
+│   │   └── routes.ts
+│   │
 │   ├── core/
 │   │   ├── exerciseEngine.ts
 │   │   ├── lessonEngine.ts
-│   │   ├── pathEngine.ts
 │   │   ├── placementEngine.ts
 │   │   ├── progressEngine.ts
-│   │   └── router.ts
+│   │   └── staticData.ts
 │   │
 │   ├── features/
+│   │   ├── exercises/
 │   │   ├── grammar/
 │   │   ├── news/
 │   │   ├── onboarding/
-│   │   ├── polls/
 │   │   ├── search/
 │   │   ├── travel/
 │   │   └── vocabulary/
@@ -318,10 +324,8 @@ Dino-5monde/
 │   │   ├── fa.ts
 │   │   └── i18n.ts
 │   │
-│   ├── pages/
-│   ├── ui/
-│   │   ├── ui.ts
-│   │   └── views/
+│   ├── pages/          # route components
+│   ├── ui/components/  # shared React components
 │   ├── styles/
 │   └── types/
 │
@@ -338,17 +342,20 @@ Dino-5monde/
 The MVP is converging on these responsibilities:
 
 ```text
-app.ts / router.ts
-    → bootstrap and top-level navigation
+src/main.tsx
+    → mounts the React root
 
-pages/ + features/* controllers
-    → orchestration, events and screen state
+app/App.tsx + AppRouter.tsx + AppLayout.tsx + routes.ts
+    → global providers, routes and shared shell
 
-core/*Engine.ts + feature engines
-    → reusable logic and state
+pages/*.tsx
+    → route screens and orchestration
 
-ui/views/*.ts
-    → HTML and presentation
+ui/components/*.tsx + features/**/*.tsx
+    → declarative presentation, interactions and local state
+
+features/**/*.ts + core/*.ts
+    → framework-independent engines, repositories and logic
 
 i18n/*.ts
     → interface copy and LTR/RTL direction
@@ -362,30 +369,29 @@ types/
 
 ### Shareable navigation
 
-Every durable screen has a canonical query string, for example:
+Every durable screen has a canonical React Router path, for example:
 
 ```text
-?view=grammar&level=A1
-?view=grammar&lesson=A1-G-001
-?view=vocabulary&level=B1&pack=arrival-office
-?view=travel&lesson=TR-006
-?view=journal&article=2026-w34-azadi-tower
-?view=info&page=about
+/grammar/A1
+/grammar/lesson/A1-G-001
+/vocabulary/B1/arrival-office
+/travel/TR-006
+/journal/2026-w34-azadi-tower
+/info/about
 ```
 
-These URLs support direct opening, reload, and browser Back/Forward. The router is the only owner of `location` and `history`, validates the safe shape of identifiers before rendering, and preserves a deep link throughout onboarding. Transient state—current question, score, flipped card, game board, or subsection—intentionally stays out of the URL.
+These URLs support direct opening, reload, and browser Back/Forward. React Router owns navigation, `routes.ts` centralises the durable path contract, and the onboarding loader preserves the requested destination. Transient state—current question, score, flipped card, game board, or subsection—intentionally stays out of the URL.
 
-### Controllers / pages
+### Pages and React components
 
-They may:
+Pages under `src/pages/`:
 
-- receive user interactions;
+- read route parameters;
 - call engines;
-- coordinate transient screen state;
-- call Views;
-- manipulate already-rendered DOM when required.
+- load and coordinate screen data;
+- compose feature components and shared components.
 
-They should not grow large structural HTML templates again.
+Components under `src/features/` own domain interactions and local state. Components under `src/ui/components/` provide shared building blocks and the application shell. Rendering stays declarative in JSX; these layers must not reintroduce imperative DOM orchestration.
 
 ### Engines
 
@@ -399,17 +405,7 @@ Engines own reusable logic such as:
 - placement;
 - domain state.
 
-They should not generate interface templates.
-
-### Views
-
-Files under `src/ui/views/` own presentation:
-
-- structural HTML;
-- labels;
-- screen-specific layout;
-- `data-*` attributes used by controllers;
-- i18n calls.
+They should neither import React nor produce interface components.
 
 ### `data/`
 
@@ -422,17 +418,15 @@ data/ = what the application teaches
 
 Lessons and packs are mostly represented as JSON so educational content can grow independently from the application engine.
 
-### ES modules and explicit dependencies
+### React, Vite and explicit dependencies
 
-Dino currently uses neither React nor Vue.
+Dino is a **React + TypeScript** SPA. Vite transforms `src/main.tsx`, the only entry point declared by `index.html`, and produces the optimised ES module build. Every runtime and type dependency is declared with an `import`, and shared APIs use explicit `export` declarations.
 
-Application TypeScript is compiled as **ES modules**. `index.html` knows a single entry point, `app.js`, loaded with `type="module"`. Every runtime and type dependency is declared with an `import`, and shared APIs use explicit `export` declarations.
-
-The browser now derives loading order from the module graph instead of a hand-maintained script list.
+React Router owns screens and browser history; the browser and Vite derive loading order from the module graph.
 
 ### Dependency graph
 
-The [generated application graph](docs/dependency-graph.md) contains every local dependency reachable from `app.ts`. It provides an aggregated layer overview and collapsible maps for each domain. Type-only imports are tracked but hidden from the diagrams to keep them readable.
+The [generated application graph](docs/dependency-graph.md) contains every local dependency reachable from `src/main.tsx`. Its main view follows the React tree—App, router, layout, pages, components and features—before engines and source modules. Collapsible branches then detail each domain. Type-only imports are tracked but hidden from the diagrams to keep them readable.
 
 ```bash
 npm run graph:dependencies
@@ -440,7 +434,7 @@ npm run graph:dependencies:check
 ```
 
 The file is deterministic: the first command regenerates it, while the second verifies it without writing.
-The generator also rejects every runtime dependency cycle. Architecture tests reinforce that guarantee by forbidding View → Feature/Page, Feature → Page, and Engine → UI/Controller dependencies.
+The generator also rejects every runtime dependency cycle. Architecture tests reinforce that guarantee by preventing the legacy bootstrap, router and Views from returning, and by keeping engines independent from React and UI components.
 
 ---
 
@@ -511,13 +505,12 @@ tests/architecture/
 
 protect structural invariants.
 
-`ui-boundaries.test.ts` notably protects against:
+Architecture tests notably protect against:
 
-- structural HTML returning to controllers, pages or engines;
-- inline DOM handlers such as `onclick="..."`;
+- the legacy bootstrap, router and View files returning;
+- the React mount or declared routes disappearing;
 - direct interface-language branching returning to business logic;
-- migrated Views disappearing;
-- the legacy Travel renderer returning;
+- engines depending on React or interface components;
 - classic scripts or multiple entry points returning to `index.html`.
 
 The architecture is therefore no longer only a written convention: it has an executable regression guard.
@@ -596,22 +589,21 @@ The build is generated in:
 dist/
 ```
 
-The build script also copies required static assets, including `index.html`, educational data and styles.
+Vite compiles React and Tailwind, emits optimised assets, copies educational data through the project plugin, and regenerates the search index.
 
 ### Run locally
 
-Dino loads JSON data through `fetch()`, so `dist/` should be served through HTTP instead of opening `index.html` directly using `file://`.
-
-Example:
+Start the Vite development server:
 
 ```bash
-python -m http.server 8080 --directory dist
+npm run dev
 ```
 
-Then open:
+To inspect the production build locally:
 
-```text
-http://localhost:8080
+```bash
+npm run build
+npm run preview
 ```
 
 ---
@@ -673,7 +665,8 @@ npm run duplication
 
 - keep changes focused;
 - do not recreate an engine when a shared engine already exists;
-- keep structural HTML under `src/ui/views/`;
+- keep route screens under `src/pages/`, domain components under `src/features/`, and shared building blocks under `src/ui/components/`;
+- keep engines and repositories independent from React;
 - use `t()` for interface copy;
 - use `localizedValue()` for bilingual educational data;
 - keep educational data under `data/` whenever possible;
@@ -686,11 +679,11 @@ npm run duplication
 The target is to converge towards:
 
 ```text
-simple controllers
+simple route pages
         +
 reusable engines
         +
-dedicated views
+dedicated React components
         +
 JSON content
         +

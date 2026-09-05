@@ -316,18 +316,6 @@ function getVisibleNewsLearningContent(
 }
 
 /* -------------------------------------------------------------------------- */
-/* Cache                                                                       */
-/* -------------------------------------------------------------------------- */
-
-function clearNewsCache():
-    void {
-    newsIndexCache =
-        null;
-
-    newsArticleCache.clear();
-}
-
-/* -------------------------------------------------------------------------- */
 /* Utilities                                                                   */
 /* -------------------------------------------------------------------------- */
 
@@ -352,7 +340,6 @@ function normalizeNewsId(
 
 export {
     cefrRank,
-    clearNewsCache,
     getVisibleNewsLearningContent,
     isNewsContentVisible,
     loadCurrentNews,

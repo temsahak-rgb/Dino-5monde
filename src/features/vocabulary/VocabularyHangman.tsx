@@ -26,7 +26,7 @@ import type {
 import {
     VocabularyGameShell,
     VocabularyGameUnavailable
-} from "./VocabularyGame.js";
+} from "./VocabularyGameShell.js";
 
 interface VocabularyHangmanProps {
     pack: VocabPack;

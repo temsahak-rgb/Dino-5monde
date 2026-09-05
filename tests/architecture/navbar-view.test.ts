@@ -1,27 +1,28 @@
 import assert from "node:assert/strict";
-
 import {
     readFile
 } from "node:fs/promises";
-
 import test from "node:test";
-
 import {
     dirname,
     resolve
 } from "node:path";
-
 import {
     fileURLToPath
 } from "node:url";
 
 import {
-    parseAppSection
-} from "../../src/core/navigation.js";
+    createElement
+} from "react";
 
 import type {
     NewsIndexItem
 } from "../../src/types/global.js";
+
+import {
+    installReactTestBrowser,
+    renderReactView
+} from "../react/renderReactView.js";
 
 const currentDirectory =
     dirname(
@@ -36,81 +37,73 @@ const root =
         "../.."
     );
 
-let language:
-    "fr" | "fa" =
-        "fr";
+const browser =
+    installReactTestBrowser();
 
-async function loadNavbarView() {
-    Object.defineProperty(
-        globalThis,
-        "localStorage",
-        {
-            configurable:
-                true,
+const [
+    {
+        Navbar
+    },
+    {
+        I18nProvider
+    },
+    {
+        NewsCatalog
+    },
+    {
+        EmptyState
+    },
+    {
+        t
+    }
+] = await Promise.all([
+    import(
+        "../../src/ui/components/Navbar.js"
+    ),
+    import(
+        "../../src/i18n/I18nProvider.js"
+    ),
+    import(
+        "../../src/features/news/NewsCatalog.js"
+    ),
+    import(
+        "../../src/ui/components/Feedback.js"
+    ),
+    import(
+        "../../src/i18n/i18n.js"
+    )
+]);
 
-            value: {
-                getItem: (
-                    key:
-                        string
-                ) =>
-                    key
-                    === "language"
-                        ? language
-                        : null,
-
-                setItem:
-                    () =>
-                        undefined
+function renderNavbar(
+    route: string
+): string {
+    return renderReactView(
+        createElement(
+            Navbar,
+            {
+                initialMenuOpen: true
             }
-        }
-    );
-
-    Object.defineProperty(
-        globalThis,
-        "document",
-        {
-            configurable:
-                true,
-
-            value: {
-                documentElement: {
-                    dir:
-                        "ltr",
-
-                    lang:
-                        "fr"
-                },
-
-                title:
-                    ""
-            }
-        }
-    );
-
-    return import(
-        "../../src/ui/views/navbarView.js"
+        ),
+        I18nProvider,
+        route
     );
 }
 
 test(
-    "header menu exposes only shipped destinations as navigation actions",
-    async () => {
-        language =
-            "fr";
-
-        const {
-            renderNavbarView
-        } =
-            await loadNavbarView();
+    "React header exposes only shipped destinations as navigation actions",
+    () => {
+        browser.setLanguage(
+            "fr"
+        );
 
         const html =
-            renderNavbarView(
-                "grammar"
+            renderNavbar(
+                "/grammar"
             );
 
         const destinations = [
             ...html.matchAll(
-                /data-nav-section="([^"]+)"/g
+                /<a[^>]+href="([^"]+)"/g
             )
         ].map(
             match =>
@@ -120,17 +113,17 @@ test(
         assert.deepEqual(
             destinations,
             [
-                "home",
-                "grammar",
-                "vocabulary",
-                "travel",
-                "journal"
+                "/",
+                "/grammar",
+                "/vocabulary",
+                "/travel",
+                "/journal"
             ]
         );
 
         assert.equal(
             html.match(
-                /data-nav-status="planned"/g
+                /aria-disabled="true"/g
             )?.length,
             4
         );
@@ -161,7 +154,7 @@ test(
 
         assert.match(
             html,
-            /data-nav-section="grammar"[\s\S]*?aria-current="page"/
+            /aria-current="page"[^>]*href="\/grammar"|href="\/grammar"[^>]*aria-current="page"/
         );
 
         assert.doesNotMatch(
@@ -177,19 +170,15 @@ test(
 );
 
 test(
-    "header menu keeps the requested hierarchy and accessible disclosure",
-    async () => {
-        language =
-            "fr";
-
-        const {
-            renderNavbarView
-        } =
-            await loadNavbarView();
+    "React header keeps the requested hierarchy and accessible disclosure",
+    () => {
+        browser.setLanguage(
+            "fr"
+        );
 
         const html =
-            renderNavbarView(
-                "home"
+            renderNavbar(
+                "/"
             );
 
         const learningIndex =
@@ -239,129 +228,104 @@ test(
 
         assert.match(
             html,
-            /id="menu-toggle"[\s\S]*?aria-controls="nav-links"[\s\S]*?aria-expanded="false"/
+            /aria-controls="main-navigation-menu"/
         );
 
         assert.match(
             html,
-            /id="nav-links"[\s\S]*?hidden/
-        );
-
-        assert.equal(
-            html.match(
-                /aria-current="page"/g
-            )?.length,
-            1
+            /aria-expanded="true"/
         );
 
         assert.match(
             html,
-            /data-nav-section="home"[\s\S]*?aria-current="page"/
+            /id="main-navigation-menu"/
         );
 
-        assert.equal(
-            html.match(
-                /aria-disabled="true"/g
-            )?.length,
-            4
+        /*
+         * Home is represented by the brand link rather than duplicated in
+         * the expanded feature menu. Feature routes still expose
+         * aria-current, as covered by the Grammar assertion above.
+         */
+        assert.doesNotMatch(
+            html,
+            /aria-current="page"/
+        );
+
+        assert.match(
+            html,
+            /<a[^>]*href="\/"/
         );
     }
 );
 
 test(
-    "navigation parser accepts Journal but rejects unshipped destinations",
+    "React Journal catalog renders real article links and its localized empty state",
     () => {
-        assert.equal(
-            parseAppSection(
-                "journal"
-            ),
-            "journal"
+        browser.setLanguage(
+            "fr"
         );
-
-        assert.equal(
-            parseAppSection(
-                "music"
-            ),
-            null
-        );
-    }
-);
-
-test(
-    "Journal view renders the real article index and a localized empty state",
-    async () => {
-        language =
-            "fr";
-
-        const {
-            renderNewsJournalView
-        } =
-            await import(
-                "../../src/ui/views/newsView.js"
-            );
 
         const news:
             NewsIndexItem[] = [
                 {
-                    id:
-                        "article-1",
-
-                    title:
-                        "Premier article",
-
-                    image:
-                        "./image-1.jpg",
-
-                    level:
-                        "A1",
-
-                    publishedDate:
-                        "2026-09-01"
+                    id: "article-1",
+                    title: "Premier article",
+                    image: "./image-1.jpg",
+                    level: "A1",
+                    publishedDate: "2026-09-01"
                 },
-
                 {
-                    id:
-                        "article-2",
-
-                    title:
-                        "Deuxième article",
-
-                    image:
-                        "./image-2.jpg",
-
-                    level:
-                        "B1",
-
-                    publishedDate:
-                        "2026-09-02"
+                    id: "article-2",
+                    title: "Deuxième article",
+                    image: "./image-2.jpg",
+                    level: "B1",
+                    publishedDate: "2026-09-02"
                 }
             ];
 
         const journalHtml =
-            renderNewsJournalView(
-                news
+            renderReactView(
+                createElement(
+                    NewsCatalog,
+                    {
+                        articles:
+                            news
+                    }
+                ),
+                I18nProvider,
+                "/journal"
             );
 
         assert.equal(
             journalHtml.match(
-                /class="news-home-card"/g
+                /<article>/g
             )?.length,
             2
         );
 
         assert.match(
             journalHtml,
-            /data-news-id="article-1"/
+            /href="\/journal\/article-1"/
         );
 
         assert.match(
             journalHtml,
-            /data-news-id="article-2"/
+            /href="\/journal\/article-2"/
         );
 
         const emptyHtml =
-            renderNewsJournalView(
-                []
+            renderReactView(
+                createElement(
+                    EmptyState,
+                    {
+                        title:
+                            t(
+                                "news.journalEmpty"
+                            )
+                    }
+                ),
+                I18nProvider,
+                "/journal"
             );
 
         assert.match(
@@ -372,19 +336,15 @@ test(
 );
 
 test(
-    "header navigation remains fully localized in Persian",
-    async () => {
-        language =
-            "fa";
-
-        const {
-            renderNavbarView
-        } =
-            await loadNavbarView();
+    "React header navigation remains fully localized in Persian",
+    () => {
+        browser.setLanguage(
+            "fa"
+        );
 
         const html =
-            renderNavbarView(
-                "travel"
+            renderNavbar(
+                "/travel"
             );
 
         assert.match(
@@ -415,29 +375,23 @@ test(
         const [
             navbarSource,
             css
-        ] =
-            await Promise.all([
-                readFile(
-                    resolve(
-                        root,
-                        "src/ui/components/Navbar.tsx"
-                    ),
-                    "utf8"
+        ] = await Promise.all([
+            readFile(
+                resolve(
+                    root,
+                    "src/ui/components/Navbar.tsx"
                 ),
+                "utf8"
+            ),
+            readFile(
+                resolve(
+                    root,
+                    "src/styles/style.css"
+                ),
+                "utf8"
+            )
+        ]);
 
-                readFile(
-                    resolve(
-                        root,
-                        "src/styles/style.css"
-                    ),
-                    "utf8"
-                )
-            ]);
-
-        /*
-         * The React navbar conditionally renders its menu instead of relying
-         * on the legacy `[hidden]` CSS selector.
-         */
         assert.match(
             navbarSource,
             /aria-expanded=\{/
@@ -453,10 +407,6 @@ test(
             /id="main-navigation-menu"/
         );
 
-        /*
-         * Mobile layout is now expressed through Tailwind responsive
-         * utilities directly on the React menu.
-         */
         assert.match(
             navbarSource,
             /max-\[560px\]:grid-cols-1/
@@ -467,10 +417,6 @@ test(
             /max-\[560px\]:inset-x-2/
         );
 
-        /*
-         * Interactive navbar controls expose explicit keyboard focus rings,
-         * while the global stylesheet keeps a visible fallback focus outline.
-         */
         assert.match(
             navbarSource,
             /focus-visible:ring-2/
