@@ -19,8 +19,9 @@ on:
 permissions:
   checks: read
   contents: read
-  issues: write
-  pull-requests: read
+  # PR comments accept pull-requests: write. Keeping issues read-only avoids
+  # granting the trusted workflow write access to the repository issue tracker.
+  pull-requests: write
 
 concurrency:
   group: project-vigie-${{ github.event.pull_request.number || inputs.pull_request || github.run_id }}
