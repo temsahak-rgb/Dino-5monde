@@ -1,11 +1,14 @@
 name: Project Vigie
 
 on:
-  workflow_run:
-    workflows:
-      - Browser E2E
+  pull_request_target:
     types:
-      - completed
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+    paths-ignore:
+      - docs/dependency-graph.md
   workflow_dispatch:
     inputs:
       pull_request:
@@ -14,27 +17,26 @@ on:
         type: number
 
 permissions:
-  actions: read
   checks: read
   contents: read
   issues: write
   pull-requests: read
 
 concurrency:
-  group: project-vigie-${{ github.event.workflow_run.head_sha || inputs.pull_request || github.run_id }}
+  group: project-vigie-${{ github.event.pull_request.number || inputs.pull_request || github.run_id }}
   cancel-in-progress: true
 
 jobs:
   report:
     name: Refresh PR dashboard
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.event == 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 8
 
     steps:
       # This workflow deliberately never checks out the pull request head.
-      # workflow_run has a write token, so every executable file must come
-      # from the trusted default branch.
+      # pull_request_target can write the sticky comment, so every executable
+      # file must come from the trusted develop branch. PR feature files are
+      # downloaded later as untrusted data and are never executed.
       - name: Resolve pull request and reusable checks
         id: snapshot
         uses: actions/github-script@v8
@@ -43,28 +45,14 @@ jobs:
         with:
           script: |
             const { owner, repo } = context.repo;
-            const workflowRun = context.payload.workflow_run;
-            const headSha = workflowRun?.head_sha;
-            let pullNumber = Number(
+            const pullNumber = Number(
               process.env.MANUAL_PULL_REQUEST
-              || workflowRun?.pull_requests?.[0]?.number
+              || context.payload.pull_request?.number
               || 0
             );
 
-            if (!pullNumber && headSha) {
-              const { data: associated } = await github.rest.repos
-                .listPullRequestsAssociatedWithCommit({
-                  owner,
-                  repo,
-                  commit_sha: headSha,
-                });
-              pullNumber = associated.find(
-                (pull) => pull.state === 'open'
-              )?.number ?? 0;
-            }
-
             if (!pullNumber) {
-              core.notice('No open pull request is associated with this run.');
+              core.notice('No pull request was selected for this report.');
               core.setOutput('should_report', 'false');
               return;
             }
@@ -156,7 +144,7 @@ jobs:
             core.setOutput('quality_state', state(quality));
             core.setOutput('quality_url', quality?.details_url ?? '');
             core.setOutput('e2e_state', state(e2e));
-            core.setOutput('e2e_url', e2e?.details_url ?? workflowRun?.html_url ?? '');
+            core.setOutput('e2e_url', e2e?.details_url ?? '');
             core.setOutput('feature_state', state(feature));
             core.setOutput('feature_url', feature?.details_url ?? '');
             core.setOutput('corpus_required', String(corpusRequired));
