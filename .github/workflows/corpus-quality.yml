@@ -35,8 +35,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      issues: write
-      pull-requests: write
 
     steps:
       - name: Checkout repository
@@ -77,51 +75,6 @@ jobs:
             --status "$CORPUS_STATUS"
 
           cat reports/corpus-pr-report.md >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Update sticky pull request report
-        if: always() && github.event_name == 'pull_request'
-        continue-on-error: true
-        uses: actions/github-script@v8
-        with:
-          script: |
-            const fs = require("node:fs");
-            const marker = "<!-- dino-corpus-quality-report -->";
-            const body = fs.readFileSync(
-              "reports/corpus-pr-report.md",
-              "utf8"
-            );
-            const { owner, repo } = context.repo;
-            const issue_number = context.issue.number;
-            const comments = await github.paginate(
-              github.rest.issues.listComments,
-              {
-                owner,
-                repo,
-                issue_number,
-                per_page: 100
-              }
-            );
-            const previous = comments.find(
-              comment =>
-                comment.user?.type === "Bot"
-                && comment.body?.includes(marker)
-            );
-
-            if (previous) {
-              await github.rest.issues.updateComment({
-                owner,
-                repo,
-                comment_id: previous.id,
-                body
-              });
-            } else {
-              await github.rest.issues.createComment({
-                owner,
-                repo,
-                issue_number,
-                body
-              });
-            }
 
       - name: Upload corpus report
         if: always()
