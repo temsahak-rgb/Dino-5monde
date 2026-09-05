@@ -38,11 +38,15 @@ test(
 
         assert.match(
             workflow,
-            /workflow_run:/
+            /pull_request_target:/
         );
         assert.match(
             workflow,
-            /workflows:\s*\n\s*- Browser E2E/
+            /types:\s*\n\s*- opened\s*\n\s*- synchronize\s*\n\s*- reopened\s*\n\s*- ready_for_review/
+        );
+        assert.doesNotMatch(
+            workflow,
+            /workflow_run:/
         );
         assert.match(
             workflow,
@@ -55,6 +59,10 @@ test(
         assert.match(
             workflow,
             /never checks out the pull request head/
+        );
+        assert.match(
+            workflow,
+            /PR feature files are\s*\n\s*# downloaded later as untrusted data and are never executed/
         );
         assert.doesNotMatch(
             workflow,
@@ -83,6 +91,26 @@ test(
         assert.doesNotMatch(
             workflow,
             /npm run test:features|cucumber-js/
+        );
+        assert.match(
+            workflow,
+            /issues: write/
+        );
+        assert.match(
+            workflow,
+            /pull-requests: read/
+        );
+        assert.doesNotMatch(
+            workflow,
+            /pull-requests: write|contents: write|actions: write/
+        );
+        assert.match(
+            workflow,
+            /context\.payload\.pull_request\?\.number/
+        );
+        assert.doesNotMatch(
+            workflow,
+            /pull\.head\.ref|github\.head_ref|github\.event\.pull_request\.head\.ref/
         );
     }
 );
