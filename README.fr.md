@@ -530,8 +530,9 @@ jscpd             → informatif
 Cela signifie qu'une régression de compilation, de test ou de build rend le job CI rouge.
 
 Le workflow dédié **Dependency graph** se lance manuellement, exécute `npm run graph:dependencies`, puis commit uniquement `docs/dependency-graph.md` sur la branche choisie lorsqu'il change. Le commit `[skip ci]` ne relance ni les contrôles applicatifs ni le déploiement.
-Le workflow dédié **Corpus quality** exécute `npm run test:data`, publie des erreurs lisibles par fichier et champ, puis maintient un commentaire de rapport persistant sur les pull requests.
+Le workflow dédié **Corpus quality** exécute `npm run test:data` et publie les erreurs lisibles par fichier et champ dans son résumé et son artefact.
 Le workflow dédié **Browser E2E** installe uniquement Chromium, démarre le build local et bloque la CI si le démarrage ou l'i18n régressent.
+Le workflow sécurisé **Project Vigie** démarre ensuite depuis la branche de confiance `develop`, sans checkout du code de la pull request et sans rejouer les tests. Il regroupe les résultats existants dans un commentaire persistant composé de trois panneaux repliables — **Vigie Data**, **Vigie Technique** et **Vigie Features** — avec voyants et barres de progression.
 
 La configuration des règles de protection GitHub elles-mêmes reste indépendante de ce code.
 

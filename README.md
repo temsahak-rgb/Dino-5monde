@@ -82,6 +82,8 @@ npm run graph:dependencies:check
 
 Les tests, le typecheck TypeScript et le build font échouer le job en cas d'erreur. Les analyses Knip et duplication restent informatives.
 
+Après les contrôles d’une pull request, le workflow sécurisé **Project Vigie** réutilise leurs résultats sans relancer les tests. Depuis la branche de confiance `develop` — jamais depuis le code proposé par la PR — il maintient un seul commentaire avec trois panneaux repliables : **Data**, **Technique** et **Features**, accompagnés de voyants et de barres de progression.
+
 La suite de tests contient également des **tests d'architecture** destinés à empêcher le retour du DOM impératif et les dépendances de moteurs vers React ou l'UI.
 
 ---

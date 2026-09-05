@@ -19,6 +19,7 @@
     "test:e2e:install": "playwright install chromium",
     "serve:e2e": "vite preview --host 127.0.0.1 --port 4173",
     "corpus:report": "tsx tools/build-corpus-report.ts",
+    "vigie:report": "tsx tools/build-project-vigie.ts",
     "knip": "knip --config knip.json",
     "duplication": "jscpd --config .jscpd.json",
     "graph:dependencies": "tsx tools/generate-dependency-graph.ts",
