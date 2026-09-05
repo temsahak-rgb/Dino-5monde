@@ -636,22 +636,16 @@ function Navbar({
                                     }
                                 />
 
-                                <PlannedNavigationLink
+                                <NavigationLink
+                                    to="/profile"
                                     icon="👤"
                                     label={
                                         t(
                                             "navbar.profile"
                                         )
                                     }
-                                    soonLabel={
-                                        t(
-                                            "navbar.soon"
-                                        )
-                                    }
-                                    unavailableLabel={
-                                        t(
-                                            "navbar.unavailable"
-                                        )
+                                    onNavigate={
+                                        closeMenu
                                     }
                                 />
                             </NavigationGroup>

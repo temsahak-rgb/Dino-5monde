@@ -6,7 +6,7 @@ type Json =
     | { [key: string]: Json | undefined }
     | Json[];
 
-interface LearnerProfileRow {
+type LearnerProfileRow = {
     assigned_saurus: string | null;
     avatar_key: string;
     created_at: string;
@@ -14,9 +14,9 @@ interface LearnerProfileRow {
     show_saurus_suffix: boolean;
     updated_at: string;
     user_id: string;
-}
+};
 
-interface LearnerProfileInsert {
+type LearnerProfileInsert = {
     assigned_saurus?: never;
     avatar_key?: string;
     created_at?: never;
@@ -24,9 +24,9 @@ interface LearnerProfileInsert {
     show_saurus_suffix?: boolean;
     updated_at?: never;
     user_id: string;
-}
+};
 
-interface LearnerProfileUpdate {
+type LearnerProfileUpdate = {
     assigned_saurus?: never;
     avatar_key?: string;
     created_at?: never;
@@ -34,9 +34,9 @@ interface LearnerProfileUpdate {
     show_saurus_suffix?: boolean;
     updated_at?: never;
     user_id?: never;
-}
+};
 
-interface Database {
+type Database = {
     public: {
         Tables: {
             learner_profiles: {
@@ -51,7 +51,7 @@ interface Database {
         Enums: Record<string, never>;
         CompositeTypes: Record<string, never>;
     };
-}
+};
 
 export {
     type Database,

@@ -121,11 +121,11 @@ test(
 
         assert.match(
             markdown,
-            /Implemented \| 9/
+            /Implemented \| 12/
         );
         assert.match(
             markdown,
-            /Planned \| 5/
+            /Planned \| 4/
         );
         assert.match(
             markdown,

@@ -17,8 +17,10 @@ test(
         assert.deepEqual(
             appRoutePatterns,
             {
+                auth: "/auth",
                 onboarding: "/onboarding",
                 home: "/",
+                profile: "/profile",
                 grammarIndex: "/grammar",
                 grammarLevel: "/grammar/:level",
                 grammarLesson: "/grammar/lesson/:lessonId",
@@ -56,8 +58,10 @@ test(
     "canonical React locations round-trip through the pure route contract",
     () => {
         const routes: AppRoute[] = [
+            { name: "auth" },
             { name: "onboarding" },
             { name: "home" },
+            { name: "profile" },
             { name: "grammar-index" },
             { name: "grammar-level", level: "B1" },
             { name: "grammar-lesson", lessonId: "A1-G-003-B" },
@@ -189,6 +193,14 @@ test(
         );
         assert.equal(
             getAppRouteSection({ name: "onboarding" }),
+            null
+        );
+        assert.equal(
+            getAppRouteSection({ name: "auth" }),
+            null
+        );
+        assert.equal(
+            getAppRouteSection({ name: "profile" }),
             null
         );
     }
