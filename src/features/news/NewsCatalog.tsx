@@ -127,7 +127,7 @@ function NewsCard({
                         ${
                             compact
                                 ? "h-[230px]"
-                                : "h-[300px] sm:h-[350px]"
+                                : "h-[280px] sm:h-[350px]"
                         }
                     `}
                 >
@@ -156,8 +156,8 @@ function NewsCard({
                     <div
                         className="
                             absolute
-                            end-4
-                            top-4
+                            end-3
+                            top-3
                             flex
                             flex-wrap
                             justify-end
@@ -169,7 +169,7 @@ function NewsCard({
                                 className="
                                     rounded-control
                                     bg-dino-600
-                                    px-3
+                                    px-2.5
                                     py-1.5
                                     text-xs
                                     font-bold
@@ -185,7 +185,7 @@ function NewsCard({
                             className="
                                 rounded-control
                                 bg-black/70
-                                px-3
+                                px-2.5
                                 py-1.5
                                 text-xs
                                 font-bold
@@ -214,9 +214,9 @@ function NewsCard({
                             from-black/90
                             via-black/55
                             to-transparent
-                            px-5
-                            pb-5
-                            pt-20
+                            px-4
+                            pb-4
+                            pt-16
                             text-white
                             sm:px-6
                             sm:pb-6
@@ -285,8 +285,8 @@ function NewsCard({
                         gap-y-2
                         border-t
                         border-line
-                        px-5
-                        py-4
+                        px-4
+                        py-3
                         text-sm
                         text-muted
                         sm:px-6

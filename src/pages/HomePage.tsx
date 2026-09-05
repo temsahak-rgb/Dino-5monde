@@ -113,20 +113,24 @@ function HomePage() {
 
             <header
                 className="
-                    mb-9
+                    mb-7
+                    sm:mb-9
                 "
             >
                 <div
                     className="
                         flex
-                        items-center
-                        gap-4
+                        items-start
+                        gap-3
+                        sm:items-center
+                        sm:gap-4
                     "
                 >
                     <span
                         className="
-                            text-5xl
+                            text-4xl
                             leading-none
+                            sm:text-5xl
                         "
                         aria-hidden="true"
                     >
@@ -135,9 +139,11 @@ function HomePage() {
 
                     <h1
                         className="
-                            text-3xl
+                            text-2xl
                             font-bold
+                            leading-tight
                             text-ink
+                            sm:text-3xl
                         "
                     >
                         {t(
@@ -204,9 +210,10 @@ function HomePage() {
                 >
                     <h2
                         className="
-                            text-xl
+                            text-lg
                             font-bold
                             text-ink
+                            sm:text-xl
                         "
                     >
                         {t(
@@ -219,6 +226,9 @@ function HomePage() {
                         className="
                             text-sm
                             font-bold
+                            inline-flex
+                            min-h-11
+                            items-center
                             text-dino-700
                             no-underline
                             hover:underline
@@ -396,8 +406,8 @@ function HomeHighlightCard({
                     bg-dino-50
                     ${
                         featured
-                            ? "h-44"
-                            : "h-28"
+                            ? "h-36 sm:h-44"
+                            : "h-24 sm:h-28"
                     }
                 `}
             >
@@ -420,7 +430,8 @@ function HomeHighlightCard({
 
             <div
                 className="
-                    p-5
+                    p-4
+                    sm:p-5
                 "
             >
                 <p

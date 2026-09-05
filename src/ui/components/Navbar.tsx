@@ -19,6 +19,10 @@ import {
     useI18n
 } from "../../i18n/I18nProvider.js";
 
+import {
+    DinoMascot
+} from "./DinoMascot.js";
+
 interface NavigationItem {
     to: string;
     label: string;
@@ -277,12 +281,13 @@ function Navbar({
                         }
                         className="
                             inline-flex
+                            min-h-11
                             min-w-0
                             items-center
-                            gap-2
+                            gap-1.5
                             rounded-control
-                            px-2
-                            py-1.5
+                            px-1.5
+                            py-1
                             text-sm
                             font-bold
                             text-white
@@ -294,20 +299,15 @@ function Navbar({
                             focus-visible:ring-white
                         "
                     >
-                        <span
-                            aria-hidden="true"
-                            className="
-                                shrink-0
-                                text-lg
-                            "
-                        >
-                            🦖
-                        </span>
+                        <DinoMascot
+                            size={34}
+                        />
 
                         <span
                             className="
                                 truncate
-                                max-[560px]:max-w-[150px]
+                                max-[560px]:max-w-[132px]
+                                max-[380px]:max-w-[88px]
                             "
                         >
                             {t(
@@ -350,7 +350,7 @@ function Navbar({
                             }}
                             className="
                                 inline-grid
-                                size-[38px]
+                                size-11
                                 place-items-center
                                 rounded-control
                                 border-0
@@ -388,7 +388,7 @@ function Navbar({
                             }}
                             className="
                                 inline-flex
-                                min-h-[38px]
+                                min-h-11
                                 items-center
                                 gap-2
                                 rounded-control
@@ -451,6 +451,7 @@ function Navbar({
                                 max-[560px]:top-[calc(100%+6px)]
                                 max-[560px]:w-auto
                                 max-[560px]:grid-cols-1
+                                max-[560px]:overscroll-contain
                             "
                         >
                             {/* ---------------------------------------------- */}
@@ -741,7 +742,7 @@ function NavigationLink({
                     isActive
                 }) => `
                     flex
-                    min-h-[42px]
+                    min-h-11
                     w-full
                     items-center
                     gap-2
@@ -815,7 +816,7 @@ function PlannedNavigationLink({
             }
             className="
                 flex
-                min-h-[42px]
+                min-h-11
                 w-full
                 items-center
                 gap-2

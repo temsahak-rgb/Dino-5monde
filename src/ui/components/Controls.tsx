@@ -159,18 +159,22 @@ function BackButton({
         <button
             type="button"
             className={`
-                mb-6
+                mb-4
                 inline-flex
+                min-h-11
                 items-center
                 gap-2
+                -ms-2
                 border-0
                 bg-transparent
-                p-0
+                px-2
+                py-1.5
                 text-sm
                 font-bold
                 text-dino-700
                 hover:underline
                 hover:underline-offset-4
+                sm:mb-6
                 ${className}
             `}
             onClick={

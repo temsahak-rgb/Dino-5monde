@@ -255,6 +255,16 @@ test(
             html,
             /<a[^>]*href="\/"/
         );
+
+        assert.match(
+            html,
+            /data-dino-mascot="true"/
+        );
+
+        assert.match(
+            html,
+            /data-dino-mascot="true"[^>]*aria-hidden="true"|aria-hidden="true"[^>]*data-dino-mascot="true"/
+        );
     }
 );
 
@@ -420,6 +430,16 @@ test(
         assert.match(
             navbarSource,
             /focus-visible:ring-2/
+        );
+
+        assert.match(
+            navbarSource,
+            /size-11/
+        );
+
+        assert.match(
+            navbarSource,
+            /min-h-11/
         );
 
         assert.match(
