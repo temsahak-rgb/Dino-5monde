@@ -189,8 +189,6 @@ function SearchDialog({
             if (
                 !open
                 || index
-                || loadState
-                    === "loading"
             ) {
                 return;
             }
@@ -242,7 +240,6 @@ function SearchDialog({
         },
         [
             index,
-            loadState,
             open
         ]
     );

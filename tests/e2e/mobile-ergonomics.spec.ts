@@ -245,7 +245,7 @@ test.describe(
 
                 await expect(
                     page.locator(
-                        "a[href='/journal/2026-w34-azadi-tower']"
+                        "a[data-search-result][href='/journal/2026-w34-azadi-tower']"
                     )
                 ).toBeVisible();
             }
