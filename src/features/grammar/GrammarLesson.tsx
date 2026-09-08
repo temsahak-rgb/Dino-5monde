@@ -1,11 +1,18 @@
 import {
+    useEffect,
     useState
 } from "react";
 
 import {
     getLessonProgress,
+    LESSON_PROGRESS_ACCOUNT_EVENT,
+    LESSON_PROGRESS_IMPORTED_EVENT,
     markLessonCompleted,
     markSectionCompleted
+} from "../../core/progressEngine.js";
+
+import type {
+    LessonProgressChangeDetail
 } from "../../core/progressEngine.js";
 
 import {
@@ -98,6 +105,47 @@ function GrammarLesson({
             null
         );
 
+    useEffect(
+        () => {
+            const handleImportedProgress = (event: Event): void => {
+                const detail = (
+                    event as CustomEvent<LessonProgressChangeDetail>
+                ).detail;
+
+                if (
+                    detail?.contentType === "grammar"
+                    && detail.lessonId === lessonId
+                ) {
+                    setProgress(detail.progress);
+                }
+            };
+
+            window.addEventListener(
+                LESSON_PROGRESS_IMPORTED_EVENT,
+                handleImportedProgress
+            );
+            const handleAccountChange = (): void => {
+                setProgress(getLessonProgress(lessonId));
+            };
+            window.addEventListener(
+                LESSON_PROGRESS_ACCOUNT_EVENT,
+                handleAccountChange
+            );
+
+            return () => {
+                window.removeEventListener(
+                    LESSON_PROGRESS_IMPORTED_EVENT,
+                    handleImportedProgress
+                );
+                window.removeEventListener(
+                    LESSON_PROGRESS_ACCOUNT_EVENT,
+                    handleAccountChange
+                );
+            };
+        },
+        [lessonId]
+    );
+
     const sections =
         lesson.sections;
 
@@ -145,6 +193,7 @@ function GrammarLesson({
     ) {
         return (
             <Exercise
+                contentType="grammar"
                 lessonId={
                     lessonId
                 }
@@ -385,7 +434,8 @@ function GrammarLesson({
     ): void {
         markSectionCompleted(
             lessonId,
-            sectionId
+            sectionId,
+            "grammar"
         );
 
         let updatedProgress =
@@ -411,7 +461,8 @@ function GrammarLesson({
              * dino_lessons_progress
              */
             markLessonCompleted(
-                lessonId
+                lessonId,
+                "grammar"
             );
 
             /*

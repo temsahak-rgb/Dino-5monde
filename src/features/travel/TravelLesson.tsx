@@ -6,8 +6,14 @@ import {
 
 import {
     getLessonProgress,
+    LESSON_PROGRESS_ACCOUNT_EVENT,
+    LESSON_PROGRESS_IMPORTED_EVENT,
     markLessonCompleted,
     markSectionCompleted
+} from "../../core/progressEngine.js";
+
+import type {
+    LessonProgressChangeDetail
 } from "../../core/progressEngine.js";
 
 import {
@@ -96,6 +102,47 @@ function TravelLesson({
         useState<number | null>(
             null
         );
+
+    useEffect(
+        () => {
+            const handleImportedProgress = (event: Event): void => {
+                const detail = (
+                    event as CustomEvent<LessonProgressChangeDetail>
+                ).detail;
+
+                if (
+                    detail?.contentType === "travel"
+                    && detail.lessonId === lessonId
+                ) {
+                    setProgress(detail.progress);
+                }
+            };
+
+            window.addEventListener(
+                LESSON_PROGRESS_IMPORTED_EVENT,
+                handleImportedProgress
+            );
+            const handleAccountChange = (): void => {
+                setProgress(getLessonProgress(lessonId));
+            };
+            window.addEventListener(
+                LESSON_PROGRESS_ACCOUNT_EVENT,
+                handleAccountChange
+            );
+
+            return () => {
+                window.removeEventListener(
+                    LESSON_PROGRESS_IMPORTED_EVENT,
+                    handleImportedProgress
+                );
+                window.removeEventListener(
+                    LESSON_PROGRESS_ACCOUNT_EVENT,
+                    handleAccountChange
+                );
+            };
+        },
+        [lessonId]
+    );
 
     const {
         awardedCredits,
@@ -201,6 +248,7 @@ function TravelLesson({
         ) {
             return (
                 <Exercise
+                    contentType="travel"
                     lessonId={
                         lessonId
                     }
@@ -488,7 +536,8 @@ function TravelLesson({
     ): void {
         markSectionCompleted(
             lessonId,
-            section.id
+            section.id,
+            "travel"
         );
 
         refreshAndFinalizeProgress();
@@ -557,7 +606,8 @@ function TravelLesson({
                 !== "completed"
         ) {
             markLessonCompleted(
-                lessonId
+                lessonId,
+                "travel"
             );
 
             updatedProgress =

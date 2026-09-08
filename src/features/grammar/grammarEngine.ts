@@ -9,6 +9,10 @@ import type {
     Level
 } from "../../types/global.js";
 
+import {
+    getAccountScopedStorageKey
+} from "../../core/progressEngine.js";
+
 export {
     getGrammar,
     getLessonStatus,
@@ -166,7 +170,7 @@ function getLessonStatus(
     const progress =
         JSON.parse(
             localStorage.getItem(
-                "dino_progress"
+                getAccountScopedStorageKey("dino_progress")
             )
             || "{}"
         ) as Record<
@@ -195,7 +199,7 @@ function setLessonStatus(
     const progress =
         JSON.parse(
             localStorage.getItem(
-                "dino_progress"
+                getAccountScopedStorageKey("dino_progress")
             )
             || "{}"
         ) as Record<
@@ -208,7 +212,7 @@ function setLessonStatus(
     ] = status;
 
     localStorage.setItem(
-        "dino_progress",
+        getAccountScopedStorageKey("dino_progress"),
         JSON.stringify(
             progress
         )

@@ -384,6 +384,21 @@ test.describe(
                     }
                 );
 
+                await page.route(
+                    "**/rest/v1/learner_lesson_progress**",
+                    async route => {
+                        if (await fulfillPreflight(route)) {
+                            return;
+                        }
+
+                        await route.fulfill({
+                            headers: jsonHeaders(),
+                            json: [],
+                            status: 200
+                        });
+                    }
+                );
+
                 await page.goto("/profile");
                 await expect(page).toHaveURL(
                     /\/auth\?returnTo=%2Fprofile$/
@@ -428,6 +443,13 @@ test.describe(
                 ).toContainText(
                     "Terminez une leçon Voyage"
                 );
+                await expect(
+                    page.getByLabel(
+                        "Progression multi-appareils"
+                    )
+                ).toContainText(
+                    "synchronisées sur ce compte"
+                );
 
                 await page.getByLabel("Nom affiché").fill("Mina");
                 await expect(
@@ -464,10 +486,14 @@ test.describe(
                 let balance = 100;
                 let claimed = false;
                 let rpcCalls = 0;
+                let progressRpcCalls = 0;
                 const unexpectedRequests:
                     string[] = [];
                 const awardedAt =
                     "2026-09-08T10:00:00.000Z";
+                const remoteSections = new Set([
+                    "TR-006-1"
+                ]);
 
                 await page.route(
                     "https://supabase.test/**",
@@ -505,6 +531,89 @@ test.describe(
                                 headers:
                                     jsonHeaders(),
                                 json: [],
+                                status: 200
+                            });
+                            return;
+                        }
+
+                        if (
+                            path
+                            === "/rest/v1/learner_lesson_progress"
+                        ) {
+                            await route.fulfill({
+                                headers:
+                                    jsonHeaders(),
+                                json: [
+                                    {
+                                        completed_sections: [
+                                            ...remoteSections
+                                        ],
+                                        content_type:
+                                            "travel",
+                                        current_section:
+                                            1,
+                                        last_accessed:
+                                            awardedAt,
+                                        lesson_id:
+                                            "TR-006",
+                                        status:
+                                            "completed",
+                                        updated_at:
+                                            awardedAt
+                                    }
+                                ],
+                                status: 200
+                            });
+                            return;
+                        }
+
+                        if (
+                            path
+                            === "/rest/v1/rpc/sync_lesson_progress"
+                        ) {
+                            progressRpcCalls += 1;
+                            const body = request.postDataJSON() as Record<
+                                string,
+                                unknown
+                            >;
+
+                            expect(body).toMatchObject({
+                                p_content_type:
+                                    "travel",
+                                p_lesson_id:
+                                    "TR-006",
+                                p_status:
+                                    "completed"
+                            });
+                            for (
+                                const section
+                                of body.p_completed_sections as string[]
+                            ) {
+                                remoteSections.add(section);
+                            }
+
+                            await route.fulfill({
+                                headers:
+                                    jsonHeaders(),
+                                json: [
+                                    {
+                                        completed_sections: [
+                                            ...remoteSections
+                                        ],
+                                        content_type:
+                                            "travel",
+                                        current_section:
+                                            1,
+                                        last_accessed:
+                                            awardedAt,
+                                        lesson_id:
+                                            "TR-006",
+                                        status:
+                                            "completed",
+                                        updated_at:
+                                            awardedAt
+                                    }
+                                ],
                                 status: 200
                             });
                             return;
@@ -644,8 +753,12 @@ test.describe(
                         "🎉 5 crédits gagnés"
                     )
                 ).toBeVisible();
+                await expect(
+                    page.getByText("1 / 4")
+                ).toBeVisible();
                 expect(balance).toBe(105);
                 expect(rpcCalls).toBe(1);
+                expect(progressRpcCalls).toBe(1);
 
                 await page.reload();
                 await expect(
@@ -655,6 +768,24 @@ test.describe(
                 ).toBeVisible();
                 expect(balance).toBe(105);
                 expect(rpcCalls).toBe(1);
+                expect(progressRpcCalls).toBe(2);
+
+                await page.getByRole(
+                    "button",
+                    {
+                        name: /Mini-Dialogue : À la réception/u
+                    }
+                ).click();
+                await page.getByRole(
+                    "button",
+                    { name: /Continuer/u }
+                ).click();
+                await expect(
+                    page.getByText("2 / 4")
+                ).toBeVisible();
+                await expect.poll(
+                    () => progressRpcCalls
+                ).toBe(3);
 
                 await page.goto("/profile");
                 await expect(
@@ -674,6 +805,13 @@ test.describe(
                 ).toHaveAttribute(
                     "href",
                     "/travel/TR-006"
+                );
+                await expect(
+                    page.getByLabel(
+                        "Progression multi-appareils"
+                    )
+                ).toContainText(
+                    "synchronisées sur ce compte"
                 );
                 expect(
                     unexpectedRequests

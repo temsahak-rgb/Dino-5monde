@@ -141,6 +141,10 @@ const faMessages: Record<TranslationKey, string> = {
     "profile.rewardsUnavailable": "تاریخچه پاداش‌ها موقتاً در دسترس نیست.",
     "profile.rewardFallback": "درس سفر",
     "profile.rewardCredits": "+{count} اعتبار",
+    "profile.progressSyncTitle": "پیشرفت در چند دستگاه",
+    "profile.progressSyncReady": "درس‌های دستور زبان و سفر شما با این حساب همگام هستند.",
+    "profile.progressSyncing": "در حال همگام‌سازی پیشرفت شما…",
+    "profile.progressSyncError": "پیشرفت روی این دستگاه می‌ماند و در شروع بعدی یا ادامه یادگیری دوباره همگام می‌شود.",
 
     "rewards.available": "🎁 این درس را کامل کنید: +{count} اعتبار",
     "rewards.claiming": "🎁 اعتبارهای شما در حال ثبت است…",

@@ -42,7 +42,7 @@ MVP overview, installation, i18n, architecture, tests and contribution rules.
 - 👤 compte sans mot de passe et profil privé `Saurus` ;
 - 🇫🇷🇮🇷 interface français / persan ;
 - ↔️ gestion LTR / RTL ;
-- 💾 progression enregistrée localement ;
+- 💾 progression Grammaire et Voyage locale-first, synchronisée pour les comptes connectés ;
 - 🧪 TypeScript + JSON + tests d'architecture.
 
 > **État / Status:** projet en développement. Le Profil, la Boutique et le hub Jeux & exercices sont livrés ; le parcours Quotidien reste hors du MVP publié.
@@ -68,9 +68,9 @@ supabase/            → configuration et migrations du backend versionnées
 
 L'application est une SPA **React + TypeScript** construite par Vite. `index.html` charge uniquement `src/main.tsx` ; `AppRouter` et `AppLayout` structurent ensuite les routes, les pages et les composants.
 
-Le premier backend repose sur **Supabase**. Il est optionnel tant que les variables `VITE_SUPABASE_URL` et `VITE_SUPABASE_PUBLISHABLE_KEY` ne sont pas définies, ce qui préserve le site statique actuel. Il porte les comptes, les profils, le portefeuille de crédits et les droits d'accès privés, tous protégés par Row Level Security. Chaque compte reçoit 100 crédits au départ ; les achats et les récompenses d'apprentissage sont atomiques côté PostgreSQL et laissent une trace dans un registre append-only. Chaque leçon Voyage terminée rapporte 5 crédits une seule fois.
+Le premier backend repose sur **Supabase**. Il est optionnel tant que les variables `VITE_SUPABASE_URL` et `VITE_SUPABASE_PUBLISHABLE_KEY` ne sont pas définies, ce qui préserve le site statique actuel. Il porte les comptes, les profils, le portefeuille de crédits, les droits d'accès privés et la progression Grammaire/Voyage, tous protégés par Row Level Security. Chaque compte reçoit 100 crédits au départ ; les achats et les récompenses d'apprentissage sont atomiques côté PostgreSQL et laissent une trace dans un registre append-only. Chaque leçon Voyage terminée rapporte 5 crédits une seule fois.
 
-La progression étant encore locale, le navigateur signale actuellement la fin d'une leçon au backend. PostgreSQL empêche les montants arbitraires et les doubles récompenses, mais la preuve de complétion deviendra entièrement serveur lors du chantier de synchronisation multi-appareils.
+La progression Grammaire et Voyage reste d'abord enregistrée localement pour fonctionner sans compte, puis elle est fusionnée dans PostgreSQL dès la connexion et après chaque section terminée. Cette fusion est monotone : un appareil en retard ne peut ni effacer une section, ni faire régresser une leçon terminée. Les erreurs, mots faibles et recommandations de révision restent locaux pour l'instant ; leur future synchronisation nécessite une sémantique de suppression dédiée. Le navigateur signale encore la complétion au backend : une preuve entièrement calculée côté serveur reste un chantier distinct.
 
 La boutique est disponible sur `/shop`. Elle utilise aujourd'hui uniquement des crédits virtuels : aucun paiement en argent réel n'est encore raccordé. Le corpus pédagogique reste dans `data/`, sans migration ni modification, et demeure donc publiquement téléchargeable avec le site GitHub Pages. Avant toute vente réelle, les contenus payants devront être servis par une frontière backend privée ; les droits Supabase seuls ne constituent pas une protection du JSON public.
 

@@ -12,6 +12,9 @@ import type {
     MistakeRecord
 } from "../../src/types/global.js";
 import type {
+    LessonProgress
+} from "../../src/types/global.js";
+import type {
     MistakeReviewItem
 } from "../../src/core/reviewEngine.js";
 
@@ -43,6 +46,9 @@ interface ProductWorld extends IWorld {
     learningRewardCredits?: number;
     learningRewardGranted?: boolean;
     learningRewardLedgerEntries?: number;
+    localLessonProgress?: LessonProgress;
+    remoteLessonProgress?: LessonProgress;
+    mergedLessonProgress?: LessonProgress;
     shopPurchaseStatus?:
         | "already-owned"
         | "insufficient-credits"

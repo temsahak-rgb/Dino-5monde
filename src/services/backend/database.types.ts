@@ -98,6 +98,43 @@ type LearnerActivityRewardInsert = {
 type LearnerActivityRewardUpdate =
     LearnerActivityRewardInsert;
 
+type LessonProgressContentType =
+    | "grammar"
+    | "travel";
+
+type LearnerLessonProgressRow = {
+    completed_sections: string[];
+    content_type: LessonProgressContentType;
+    current_section: number;
+    last_accessed: string;
+    lesson_id: string;
+    status:
+        | "not_started"
+        | "in_progress"
+        | "completed";
+    updated_at: string;
+    user_id: string;
+};
+
+type LearnerLessonProgressInsert = {
+    completed_sections?: never;
+    content_type?: never;
+    current_section?: never;
+    last_accessed?: never;
+    lesson_id?: never;
+    status?: never;
+    updated_at?: never;
+    user_id?: never;
+};
+
+type LearnerLessonProgressUpdate =
+    LearnerLessonProgressInsert;
+
+type SyncLessonProgressRpcRow = Omit<
+    LearnerLessonProgressRow,
+    "user_id"
+>;
+
 type ShopLessonContentType =
     | "grammar"
     | "vocabulary";
@@ -236,6 +273,12 @@ type Database = {
                 Update: LearnerCreditTransactionUpdate;
                 Relationships: [];
             };
+            learner_lesson_progress: {
+                Row: LearnerLessonProgressRow;
+                Insert: LearnerLessonProgressInsert;
+                Update: LearnerLessonProgressUpdate;
+                Relationships: [];
+            };
             lesson_entitlements: {
                 Row: LessonEntitlementRow;
                 Insert: LessonEntitlementInsert;
@@ -264,6 +307,17 @@ type Database = {
                 };
                 Returns: PurchaseShopLessonRpcRow[];
             };
+            sync_lesson_progress: {
+                Args: {
+                    p_completed_sections: string[];
+                    p_content_type: LessonProgressContentType;
+                    p_current_section: number;
+                    p_last_accessed: string;
+                    p_lesson_id: string;
+                    p_status: LearnerLessonProgressRow["status"];
+                };
+                Returns: SyncLessonProgressRpcRow[];
+            };
         };
         Enums: Record<string, never>;
         CompositeTypes: Record<string, never>;
@@ -276,9 +330,11 @@ export {
     type Json,
     type LearnerActivityRewardRow,
     type LearnerCreditTransactionRow,
+    type LearnerLessonProgressRow,
     type LearnerWalletRow,
     type LearningActivityType,
     type LearningRewardRuleRow,
+    type LessonProgressContentType,
     type LessonEntitlementRow,
     type LearnerProfileInsert,
     type LearnerProfileRow,
@@ -286,5 +342,6 @@ export {
     type PurchaseShopLessonRpcRow,
     type ShopLessonContentType,
     type ShopLessonLevel,
-    type ShopLessonRow
+    type ShopLessonRow,
+    type SyncLessonProgressRpcRow
 };

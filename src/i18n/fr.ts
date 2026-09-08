@@ -141,6 +141,10 @@ const frMessages = {
     "profile.rewardsUnavailable": "Historique temporairement indisponible.",
     "profile.rewardFallback": "Leçon Voyage",
     "profile.rewardCredits": "+{count} crédits",
+    "profile.progressSyncTitle": "Progression multi-appareils",
+    "profile.progressSyncReady": "Vos leçons de Grammaire et de Voyage sont synchronisées sur ce compte.",
+    "profile.progressSyncing": "Synchronisation de votre progression en cours…",
+    "profile.progressSyncError": "La progression reste enregistrée sur cet appareil. Le prochain démarrage ou apprentissage relancera la synchronisation.",
 
     "rewards.available": "🎁 Terminez cette leçon : +{count} crédits",
     "rewards.claiming": "🎁 Attribution de vos crédits…",
