@@ -1,5 +1,6 @@
 import {
     useEffect,
+    useMemo,
     useState
 } from "react";
 
@@ -10,6 +11,7 @@ import {
 import {
     clearMistakesForLesson,
     getAllMistakes,
+    getAllWeakWords,
     REVIEW_SIGNAL_IMPORTED_EVENT
 } from "../core/reviewSignalEngine.js";
 import {
@@ -17,38 +19,16 @@ import {
 } from "../core/learnerStorage.js";
 
 import {
+    buildExerciseScoreReviewItems,
     buildMistakeReviewItems,
     buildWeakWordReviewItems
 } from "../core/reviewEngine.js";
 
 import type {
+    ExerciseScoreReviewCatalogItem,
     MistakeReviewItem,
-    ReviewCatalogItem,
     WeakWordReviewItem
 } from "../core/reviewEngine.js";
-
-import {
-    getGrammarLevels
-} from "../features/grammar/grammarLevels.js";
-
-import {
-    loadGrammar
-} from "../features/grammar/grammarEngine.js";
-
-import {
-    loadTravelIndex
-} from "../features/travel/travelEngine.js";
-
-import {
-    loadVocabularyIndex
-} from "../features/vocabulary/vocabularyRepository.js";
-import {
-    getAllWeakWords
-} from "../core/reviewSignalEngine.js";
-
-import {
-    practiceLevels
-} from "../core/practiceRoutes.js";
 
 import {
     useI18n
@@ -56,6 +36,15 @@ import {
 import {
     useReviewSignalsSync
 } from "../services/backend/ReviewSignalsSyncProvider.js";
+import {
+    useExerciseTracking
+} from "../services/backend/ExerciseTrackingProvider.js";
+import {
+    ExerciseScoreRecommendations
+} from "../features/practice/ExerciseScoreRecommendations.js";
+import {
+    loadReviewCatalog
+} from "../features/practice/reviewCatalog.js";
 
 import {
     Badge,
@@ -75,7 +64,7 @@ import {
     SectionHeader
 } from "../ui/components/Layout.js";
 
-/** Turns synchronized mistakes and weak words into concrete next actions. */
+/** Turns synchronized difficulties and scores into concrete next actions. */
 function PracticeReviewPage() {
     const {
         language,
@@ -86,11 +75,17 @@ function PracticeReviewPage() {
     const {
         status: reviewSyncStatus
     } = useReviewSignalsSync();
+    const {
+        attempts,
+        status: exerciseSyncStatus
+    } = useExerciseTracking();
 
     const [mistakes, setMistakes] =
         useState<MistakeReviewItem[]>([]);
     const [weakWords, setWeakWords] =
         useState<WeakWordReviewItem[]>([]);
+    const [exerciseCatalog, setExerciseCatalog] =
+        useState<ExerciseScoreReviewCatalogItem[]>([]);
     const [loading, setLoading] =
         useState(true);
 
@@ -117,6 +112,9 @@ function PracticeReviewPage() {
                         getAllWeakWords(),
                         catalogs.vocabulary
                     )
+                );
+                setExerciseCatalog(
+                    catalogs.exercises
                 );
                 setLoading(false);
             };
@@ -163,6 +161,23 @@ function PracticeReviewPage() {
         (total, item) => total + item.words.length,
         0
     );
+    const exerciseReviews =
+        useMemo(
+            () =>
+                buildExerciseScoreReviewItems(
+                    attempts,
+                    exerciseCatalog
+                ),
+            [
+                attempts,
+                exerciseCatalog
+            ]
+        );
+    const syncStatus =
+        combineReviewSyncStatus(
+            reviewSyncStatus,
+            exerciseSyncStatus
+        );
 
     return (
         <Page>
@@ -180,22 +195,25 @@ function PracticeReviewPage() {
                             <Badge variant={weakWordCount ? "info" : "success"}>
                                 {t("review.wordCount", { count: weakWordCount })}
                             </Badge>
+                            <Badge variant={exerciseReviews.length ? "warning" : "success"}>
+                                {t("review.scoreCount", { count: exerciseReviews.length })}
+                            </Badge>
                         </div>
                     ) : null
                 }
             />
 
             <Card
-                className={`mb-7 p-4 text-sm leading-6 ${reviewSyncStatus === "ready" ? "border-emerald-200 bg-emerald-50 text-emerald-950" : reviewSyncStatus === "syncing" ? "border-amber-200 bg-amber-50 text-amber-950" : reviewSyncStatus === "error" ? "border-rose-200 bg-rose-50 text-rose-950" : "border-sky-200 bg-info-soft text-sky-950"}`}
+                className={`mb-7 p-4 text-sm leading-6 ${syncStatus === "ready" ? "border-emerald-200 bg-emerald-50 text-emerald-950" : syncStatus === "syncing" ? "border-amber-200 bg-amber-50 text-amber-950" : syncStatus === "error" ? "border-rose-200 bg-rose-50 text-rose-950" : "border-sky-200 bg-info-soft text-sky-950"}`}
                 role="status"
                 aria-live="polite"
             >
                 {t(
-                    reviewSyncStatus === "ready"
+                    syncStatus === "ready"
                         ? "review.syncReady"
-                        : reviewSyncStatus === "syncing"
+                        : syncStatus === "syncing"
                             ? "review.syncing"
-                            : reviewSyncStatus === "error"
+                            : syncStatus === "error"
                                 ? "review.syncError"
                                 : "review.localNotice"
                 )}
@@ -203,7 +221,9 @@ function PracticeReviewPage() {
 
             {loading ? (
                 <LoadingState label={t("common.loading")} />
-            ) : mistakes.length === 0 && weakWords.length === 0 ? (
+            ) : mistakes.length === 0
+                && weakWords.length === 0
+                && exerciseReviews.length === 0 ? (
                 <EmptyState
                     icon="🎉"
                     title={t("review.emptyTitle")}
@@ -219,6 +239,10 @@ function PracticeReviewPage() {
                 />
             ) : (
                 <>
+                    <ExerciseScoreRecommendations
+                        items={exerciseReviews}
+                    />
+
                     <Section>
                         <SectionHeader
                             title={t("review.mistakesTitle")}
@@ -315,51 +339,40 @@ function PracticeReviewPage() {
     );
 }
 
-async function loadReviewCatalog(): Promise<{
-    lessons: ReviewCatalogItem[];
-    vocabulary: ReviewCatalogItem[];
-}> {
-    const [grammarCatalogs, travel, vocabularyCatalogs] =
-        await Promise.all([
-            Promise.all(getGrammarLevels().map(level => loadGrammar(level))),
-            loadTravelIndex(),
-            Promise.all(practiceLevels.map(level => loadVocabularyIndex(level)))
-        ]);
+type ReviewSyncStatus =
+    | "error"
+    | "local"
+    | "ready"
+    | "syncing";
 
-    return {
-        lessons: [
-            ...grammarCatalogs.flat().map(lesson => ({
-                href: `/grammar/lesson/${encodeURIComponent(lesson.id)}`,
-                icon: lesson.icon || "📐",
-                id: lesson.id,
-                title: lesson.title,
-                titleFa: lesson.title_fa
-            })),
-            ...travel.map(lesson => ({
-                href: `/travel/${encodeURIComponent(lesson.id)}`,
-                icon: lesson.icon || "✈️",
-                id: lesson.id,
-                title: lesson.title,
-                titleFa: lesson.title_fa
-            }))
-        ],
-        vocabulary: vocabularyCatalogs.flatMap((packs, index) => {
-            const level = practiceLevels[index];
+function combineReviewSyncStatus(
+    reviewStatus: string,
+    exerciseStatus: string
+): ReviewSyncStatus {
+    if (
+        reviewStatus === "error"
+        || exerciseStatus === "error"
+    ) {
+        return "error";
+    }
 
-            return level
-                ? packs.map(pack => ({
-                    href: `/vocabulary/${level}/${encodeURIComponent(pack.id)}/review`,
-                    icon: pack.icon || "📖",
-                    id: pack.id,
-                    title: pack.title,
-                    titleFa: pack.title_fa
-                }))
-                : [];
-        })
-    };
+    if (
+        reviewStatus === "syncing"
+        || exerciseStatus === "syncing"
+    ) {
+        return "syncing";
+    }
+
+    if (
+        reviewStatus === "ready"
+        && exerciseStatus === "ready"
+    ) {
+        return "ready";
+    }
+
+    return "local";
 }
 
 export {
-    loadReviewCatalog,
     PracticeReviewPage
 };

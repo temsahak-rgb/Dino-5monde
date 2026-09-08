@@ -30,6 +30,9 @@ import type {
     ExerciseAttemptSummary
 } from "../../src/features/profile/exerciseAttemptSummary.js";
 import type {
+    ExerciseScoreReviewItem
+} from "../../src/core/reviewEngine.js";
+import type {
     ExerciseAttempt
 } from "../../src/types/global.js";
 import type {
@@ -75,6 +78,7 @@ interface ProductWorld extends IWorld {
     exerciseAttempt?: ExerciseAttempt;
     exerciseAttemptHistory?: ExerciseAttempt[];
     exerciseAttemptSummary?: ExerciseAttemptSummary;
+    exerciseScoreRecommendations?: ExerciseScoreReviewItem[];
     localLessonProgress?: LessonProgress;
     remoteLessonProgress?: LessonProgress;
     mergedLessonProgress?: LessonProgress;

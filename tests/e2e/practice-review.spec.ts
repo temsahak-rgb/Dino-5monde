@@ -119,6 +119,20 @@ test(
                     salutations_expressions_quotidiennes: ["à bientôt"]
                 })
             );
+            localStorage.setItem(
+                "dino_exercise_attempts",
+                JSON.stringify([{
+                    activityId: "TR-006",
+                    attemptId:
+                        "11111111-1111-4111-8111-111111111111",
+                    completedAt:
+                        "2026-09-08T11:00:00.000Z",
+                    contentType: "travel",
+                    correctAnswers: 1,
+                    exerciseId: "TR-006-4",
+                    totalQuestions: 3
+                }])
+            );
         });
 
         await page.goto("/practice/review");
@@ -130,6 +144,22 @@ test(
         await expect(
             page.getByText("Salutations et Expressions Quotidiennes")
         ).toBeVisible();
+        const scoreRecommendation =
+            page.locator(
+                '[data-review-score="33"]'
+            );
+        await expect(
+            scoreRecommendation
+        ).toContainText("À l'hôtel");
+        await expect(
+            scoreRecommendation
+        ).toContainText("1/3 · 33%");
+        await expect(
+            scoreRecommendation
+        ).toHaveAttribute(
+            "href",
+            "/travel/TR-006"
+        );
 
         await page.getByRole("link", { name: "Réviser 1 mot(s) →" }).click();
 
