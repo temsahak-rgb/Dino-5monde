@@ -34,6 +34,7 @@ MVP overview, installation, i18n, architecture, tests and contribution rules.
 - ✈️ parcours Français Voyage ;
 - 📝 exercices et quiz intégrés aux contenus ;
 - 🎮 hub Jeux & exercices sur `/practice`, avec parties partageables ;
+- 🔁 révisions actionnables sur `/practice/review` à partir des erreurs et mots faibles ;
 - 🧭 onboarding et test de placement ;
 - 🔎 recherche et contenus complémentaires ;
 - 🛍️ boutique de leçons sur `/shop`, avec 100 crédits de bienvenue ;

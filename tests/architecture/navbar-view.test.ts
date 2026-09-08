@@ -115,6 +115,7 @@ test(
             [
                 "/",
                 "/practice",
+                "/practice/review",
                 "/grammar",
                 "/vocabulary",
                 "/travel",

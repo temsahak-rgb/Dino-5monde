@@ -23,6 +23,7 @@ test(
                 profile: "/profile",
                 shop: "/shop",
                 practiceIndex: "/practice",
+                practiceReview: "/practice/review",
                 practiceCatalog: "/practice/:game/:level",
                 practiceGame: "/practice/:game/:level/:packId",
                 grammarIndex: "/grammar",
@@ -31,6 +32,7 @@ test(
                 vocabularyIndex: "/vocabulary",
                 vocabularyLevel: "/vocabulary/:level",
                 vocabularyPack: "/vocabulary/:level/:packId",
+                vocabularyReview: "/vocabulary/:level/:packId/review",
                 travelIndex: "/travel",
                 travelLesson: "/travel/:lessonId",
                 journalIndex: "/journal",
@@ -68,6 +70,7 @@ test(
             { name: "profile" },
             { name: "shop" },
             { name: "practice-index" },
+            { name: "practice-review" },
             {
                 name: "practice-catalog",
                 game: "word-search",
@@ -86,6 +89,11 @@ test(
             { name: "vocabulary-level", level: "C2" },
             {
                 name: "vocabulary-pack",
+                level: "A1",
+                packId: "salutations_expressions_quotidiennes"
+            },
+            {
+                name: "vocabulary-review",
                 level: "A1",
                 packId: "salutations_expressions_quotidiennes"
             },

@@ -8,6 +8,12 @@ import type {
 import type {
     VocabWord
 } from "../../src/types/global.js";
+import type {
+    MistakeRecord
+} from "../../src/types/global.js";
+import type {
+    MistakeReviewItem
+} from "../../src/core/reviewEngine.js";
 
 import type {
     LearnerProfileDraft
@@ -22,6 +28,8 @@ interface ProductWorld extends IWorld {
     resolvedDestination?: AppRoute | null;
     vocabularyWords?: VocabWord[];
     availableGames?: string[];
+    reviewMistakes?: MistakeRecord[];
+    reviewItems?: MistakeReviewItem[];
     authenticatedUserId?: string;
     email?: string;
     learnerProfile?: LearnerProfileDraft;

@@ -12,6 +12,7 @@ const appRoutePatterns = {
     profile: "/profile",
     shop: "/shop",
     practiceIndex: "/practice",
+    practiceReview: "/practice/review",
     practiceCatalog: "/practice/:game/:level",
     practiceGame: "/practice/:game/:level/:packId",
     grammarIndex: "/grammar",
@@ -20,6 +21,7 @@ const appRoutePatterns = {
     vocabularyIndex: "/vocabulary",
     vocabularyLevel: "/vocabulary/:level",
     vocabularyPack: "/vocabulary/:level/:packId",
+    vocabularyReview: "/vocabulary/:level/:packId/review",
     travelIndex: "/travel",
     travelLesson: "/travel/:lessonId",
     journalIndex: "/journal",
@@ -61,6 +63,7 @@ type AppRoute =
     | { name: "profile" }
     | { name: "shop" }
     | { name: "practice-index" }
+    | { name: "practice-review" }
     | {
         name: "practice-catalog";
         game: PracticeGameKind;
@@ -79,6 +82,11 @@ type AppRoute =
     | { name: "vocabulary-level"; level: VocabularyLevel }
     | {
         name: "vocabulary-pack";
+        level: VocabularyLevel;
+        packId: string;
+    }
+    | {
+        name: "vocabulary-review";
         level: VocabularyLevel;
         packId: string;
     }
@@ -116,6 +124,8 @@ function createAppPath(
             return appRoutePatterns.shop;
         case "practice-index":
             return appRoutePatterns.practiceIndex;
+        case "practice-review":
+            return appRoutePatterns.practiceReview;
         case "practice-catalog":
             return `/practice/${route.game}/${route.level}`;
         case "practice-game":
@@ -132,6 +142,8 @@ function createAppPath(
             return `/vocabulary/${route.level}`;
         case "vocabulary-pack":
             return `/vocabulary/${route.level}/${encodeRouteSegment(route.packId)}`;
+        case "vocabulary-review":
+            return `/vocabulary/${route.level}/${encodeRouteSegment(route.packId)}/review`;
         case "travel-index":
             return appRoutePatterns.travelIndex;
         case "travel-lesson":
@@ -147,6 +159,7 @@ function createAppPath(
         case "work-with-us":
             return appRoutePatterns.workWithUs;
     }
+
 }
 
 /**
@@ -194,6 +207,14 @@ function matchAppPath(
     }
 
     if (
+        segments.length === 2
+        && segments[0] === "practice"
+        && segments[1] === "review"
+    ) {
+        return { name: "practice-review" };
+    }
+
+    if (
         segments.length === 3
         && segments[0] === "practice"
         && isPracticeGameKind(segments[1])
@@ -204,6 +225,24 @@ function matchAppPath(
             game: segments[1],
             level: segments[2]
         };
+    }
+
+    if (
+        segments.length === 4
+        && segments[0] === "vocabulary"
+        && isVocabularyLevel(segments[1])
+        && segments[3] === "review"
+    ) {
+        const level = segments[1];
+
+        return decodedRoute(
+            segments[2],
+            packId => ({
+                name: "vocabulary-review",
+                level,
+                packId
+            })
+        );
     }
 
     if (

@@ -121,6 +121,8 @@ Les données couvrent actuellement plusieurs niveaux jusqu'à **C2**, avec une c
 
 Le hub `/practice` rassemble les activités réellement disponibles : Pendu, Grille de lettres, Mots croisés et les parcours d’exercices Grammaire, Vocabulaire et Voyage. Un jeu se choisit par niveau puis par thème. Sa route `/practice/:game/:level/:packId` peut être copiée, rechargée et partagée sans perdre l’activité sélectionnée.
 
+La page `/practice/review` transforme les réponses incorrectes et les mots marqués comme difficiles sur l’appareil en actions concrètes : reprendre une leçon, effacer une série d’erreurs revue ou lancer directement les flashcards faibles d’un thème.
+
 ### ✈️ Voyage
 
 Le parcours Voyage est orienté vers des situations concrètes plutôt que vers des règles isolées.
@@ -746,7 +748,7 @@ Les prochaines évolutions naturelles comprennent notamment :
 - unifier davantage le suivi des exercices ;
 - renforcer les exercices ;
 - ajouter davantage de tests de données ;
-- améliorer les recommandations de révision à partir des erreurs ;
+- synchroniser les recommandations de révision actuellement locales ;
 - harmoniser la couverture des niveaux CECRL ;
 - synchroniser la progression pédagogique entre appareils ;
 - servir les futurs contenus payants depuis une frontière backend privée avant d'activer un paiement réel.

@@ -78,6 +78,10 @@ import {
 } from "../pages/PracticeIndexPage.js";
 
 import {
+    PracticeReviewPage
+} from "../pages/PracticeReviewPage.js";
+
+import {
     ShopPage
 } from "../pages/ShopPage.js";
 
@@ -113,6 +117,10 @@ import {
     VocabularyPackPage
 } from "../pages/VocabularyPackPage.js";
 
+import {
+    VocabularyReviewPage
+} from "../pages/VocabularyReviewPage.js";
+
 /**
  * Dino application router.
  *
@@ -137,8 +145,10 @@ import {
  * /vocabulary/:level/:packId
  *
  * /practice
+ * /practice/review
  * /practice/:game/:level
  * /practice/:game/:level/:packId
+ * /vocabulary/:level/:packId/review
  *
  * /travel
  * /travel/:lessonId
@@ -233,6 +243,14 @@ const router =
 
                 {
                     path:
+                        appRoutePatterns.practiceReview,
+
+                    Component:
+                        PracticeReviewPage
+                },
+
+                {
+                    path:
                         appRoutePatterns.practiceGame,
 
                     Component:
@@ -293,6 +311,14 @@ const router =
 
                     Component:
                         PurchasableVocabularyPackPage
+                },
+
+                {
+                    path:
+                        appRoutePatterns.vocabularyReview,
+
+                    Component:
+                        PurchasableVocabularyReviewPage
                 },
 
                 /* ---------------------------------------------------------- */
@@ -596,6 +622,23 @@ function PurchasablePracticeGamePage() {
             level={level}
         >
             <PracticeGamePage />
+        </LessonAccessBoundary>
+    );
+}
+
+function PurchasableVocabularyReviewPage() {
+    const {
+        level,
+        packId = ""
+    } = useParams();
+
+    return (
+        <LessonAccessBoundary
+            contentId={packId}
+            contentType="vocabulary"
+            level={level}
+        >
+            <VocabularyReviewPage />
         </LessonAccessBoundary>
     );
 }

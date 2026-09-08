@@ -121,6 +121,8 @@ Vocabulary data currently spans several levels up to **C2**, with highly variabl
 
 The `/practice` hub brings together the activities that are actually shipped: Hangman, Word Search, Crosswords, and the Grammar, Vocabulary and Travel exercise paths. Learners choose a game, level and topic. The `/practice/:game/:level/:packId` route can be copied, reloaded and shared without losing the selected activity.
 
+The `/practice/review` page turns incorrect answers and words marked as difficult on this device into concrete actions: retry a lesson, clear a reviewed mistake set, or launch a topic's weak-word flashcards directly.
+
 ### ✈️ Travel
 
 The Travel path is built around practical situations rather than isolated rules.
@@ -746,7 +748,7 @@ Natural next steps include:
 - further unifying exercise tracking;
 - strengthening exercises;
 - adding more data-consistency tests;
-- using learner mistakes to recommend reviews;
+- synchronising the review recommendations that are currently local;
 - improving consistency across CEFR levels;
 - synchronising learning progress across devices;
 - privately serving future paid content before enabling real-money payments.
