@@ -71,7 +71,7 @@ The MVP is not intended to provide every feature of a complete learning platform
 | Lesson shop and credits | ✅ `/shop`, purchases, Travel and mini-game rewards |
 | Account and Profile | ✅ Email sign-in, private `Saurus` profile and progress dashboard |
 | Games & exercises hub | ✅ `/practice`, game/level catalogues and shareable sessions |
-| Daily | Outside the published scope; no placeholder route is exposed |
+| Daily | ✅ \`/daily\`, three personalized actions and a shareable URL |
 | Cross-device sync | ✅ Progress, mistakes and weak words for signed-in learners |
 
 Grammar and Travel progress is local-first: it remains available without an account in `localStorage`, then synchronises to Supabase when a learner signs in. The server merges devices without removing a completed section or regressing a completed lesson.
@@ -182,6 +182,8 @@ Completed **Grammar, Travel and Vocabulary** exercises now feed one score histor
 The `/practice/review` centre turns this history into actions: the latest attempt for each exercise below **80%** is offered again with its result, progress bar and direct link. A later attempt at 80% or above automatically removes the recommendation; no parallel state is stored.
 
 The profile also makes learning rhythm visible: a **three-exercise daily goal**, today's progress, the current streak, and seven calendar status lights. These indicators are derived from the same synchronized history, follow the learner's local calendar, and update when the day changes.
+
+The shareable \`/daily\` route turns those signals into a three-step session. It prioritizes the latest score below 80%, mistakes, then weak words, deduplicates activities, and fills remaining slots with free level-aware content. The selection stays stable for the day and creates no additional business state.
 
 The learning corpus deliberately remains under `data/` and is public in the GitHub Pages build. Selling content for real money will therefore require private backend delivery; hiding a lesson in React or storing only its entitlement in the database does not protect publicly shipped JSON.
 
@@ -409,6 +411,7 @@ Every durable screen has a canonical React Router path, for example:
 /grammar/A1
 /grammar/lesson/A1-G-001
 /vocabulary/B1/arrival-office
+/daily
 /practice/hangman/A1/salutations_expressions_quotidiennes
 /travel/TR-006
 /journal/2026-w34-azadi-tower
@@ -754,7 +757,6 @@ Explicit imports now feed the architecture graph automatically and make unwanted
 
 Natural next steps include:
 
-- completing the Daily path;
 - connecting Games more deeply with progress tracking and review;
 - strengthening exercises;
 - adding more data-consistency tests;

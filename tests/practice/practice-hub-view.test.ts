@@ -39,6 +39,7 @@ test(
                 "Pendu",
                 "Grille de lettres",
                 "Mots croisés",
+                "Ma session du jour",
                 "Grammaire",
                 "Vocabulaire",
                 "Voyage"
@@ -60,6 +61,7 @@ test(
             /href="\/practice\/crossword\/B2"/
         );
         assert.match(html, /href="\/grammar"/);
+        assert.match(html, /href="\/daily"/);
         assert.match(html, /href="\/vocabulary"/);
         assert.match(html, /href="\/travel"/);
         assert.doesNotMatch(html, />\s*undefined\s*</);

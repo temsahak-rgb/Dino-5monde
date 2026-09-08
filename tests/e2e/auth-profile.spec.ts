@@ -1030,7 +1030,7 @@ test.describe(
                     )
                 ).toHaveAttribute(
                     "href",
-                    "/practice"
+                    "/daily"
                 );
                 const progressDashboard =
                     page.getByLabel(

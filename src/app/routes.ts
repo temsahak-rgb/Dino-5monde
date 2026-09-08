@@ -11,6 +11,7 @@ const appRoutePatterns = {
     home: "/",
     profile: "/profile",
     shop: "/shop",
+    daily: "/daily",
     practiceIndex: "/practice",
     practiceReview: "/practice/review",
     practiceCatalog: "/practice/:game/:level",
@@ -62,6 +63,7 @@ type AppRoute =
     | { name: "home" }
     | { name: "profile" }
     | { name: "shop" }
+    | { name: "daily" }
     | { name: "practice-index" }
     | { name: "practice-review" }
     | {
@@ -122,6 +124,8 @@ function createAppPath(
             return appRoutePatterns.profile;
         case "shop":
             return appRoutePatterns.shop;
+        case "daily":
+            return appRoutePatterns.daily;
         case "practice-index":
             return appRoutePatterns.practiceIndex;
         case "practice-review":
@@ -193,6 +197,8 @@ function matchAppPath(
                 return { name: "profile" };
             case "shop":
                 return { name: "shop" };
+            case "daily":
+                return { name: "daily" };
             case "practice":
                 return { name: "practice-index" };
             case "grammar":
@@ -360,7 +366,10 @@ function getAppRouteSection(
         return "shop";
     }
 
-    if (route.name.startsWith("practice-")) {
+    if (
+        route.name === "daily"
+        || route.name.startsWith("practice-")
+    ) {
         return "practice";
     }
 

@@ -491,6 +491,19 @@ function Navbar({
                                     "
                                 >
                                     <NavigationLink
+                                        to="/daily"
+                                        icon="☀️"
+                                        label={
+                                            t(
+                                                "navbar.daily"
+                                            )
+                                        }
+                                        onNavigate={
+                                            closeMenu
+                                        }
+                                    />
+
+                                    <NavigationLink
                                         to="/practice/review"
                                         icon="🔁"
                                         label={
