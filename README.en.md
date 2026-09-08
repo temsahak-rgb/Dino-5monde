@@ -72,13 +72,14 @@ The MVP is not intended to provide every feature of a complete learning platform
 | Account and Profile | ✅ Passwordless email sign-in and private `Saurus` profile |
 | Games & exercises hub | ✅ `/practice`, game/level catalogues and shareable sessions |
 | Daily | Outside the published scope; no placeholder route is exposed |
-| Cross-device sync | ✅ Grammar and Travel progress for signed-in learners |
+| Cross-device sync | ✅ Progress, mistakes and weak words for signed-in learners |
 
 Grammar and Travel progress is local-first: it remains available without an account in `localStorage`, then synchronises to Supabase when a learner signs in. The server merges devices without removing a completed section or regressing a completed lesson.
 
+Mistakes and weak words are also synchronised. Deletions are versioned, so an older device cannot resurrect a difficulty that has already been reviewed. Recommendations are recomputed from those sources instead of being stored twice.
+
 The current boundary is explicit:
 
-- mistakes, weak words and review recommendations remain browser-local;
 - without a signed-in account, clearing local site data can remove saved progress.
 
 ---
@@ -121,7 +122,7 @@ Vocabulary data currently spans several levels up to **C2**, with highly variabl
 
 The `/practice` hub brings together the activities that are actually shipped: Hangman, Word Search, Crosswords, and the Grammar, Vocabulary and Travel exercise paths. Learners choose a game, level and topic. The `/practice/:game/:level/:packId` route can be copied, reloaded and shared without losing the selected activity.
 
-The `/practice/review` page turns incorrect answers and words marked as difficult on this device into concrete actions: retry a lesson, clear a reviewed mistake set, or launch a topic's weak-word flashcards directly.
+The `/practice/review` page turns incorrect answers and difficult words into concrete actions: retry a lesson, mark a mistake set as reviewed, or launch a topic's weak-word flashcards directly. With a signed-in account, these sources follow the learner across devices and tombstones protect deletions.
 
 ### ✈️ Travel
 
@@ -748,9 +749,8 @@ Natural next steps include:
 - further unifying exercise tracking;
 - strengthening exercises;
 - adding more data-consistency tests;
-- synchronising the review recommendations that are currently local;
 - improving consistency across CEFR levels;
-- extending sync to mistakes, weak words and review recommendations with explicit deletion semantics;
+- computing rewarded-activity completion proof entirely on the server;
 - privately serving future paid content before enabling real-money payments.
 
 These items describe **direction**, not already delivered functionality.

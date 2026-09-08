@@ -8,3 +8,9 @@ Feature: Actionable review recommendations
     When review recommendations are prepared
     Then one recommendation links to "/grammar/lesson/A1-G-001"
     And the recommendation reports 2 mistakes
+
+  Scenario: A reviewed difficulty stays removed on a stale device
+    Given a weak word was recorded on an older device
+    And the weak word was reviewed on a newer device
+    When both review signals are merged
+    Then the review signal remains inactive

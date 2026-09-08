@@ -1,7 +1,5 @@
 import type {
-    ExerciseAnswer,
-    LessonProgress,
-    MistakeRecord
+    LessonProgress
 } from "../types/global.js";
 
 import {
@@ -9,16 +7,12 @@ import {
 } from "./learnerStorage.js";
 
 export {
-    clearMistakesForLesson,
     getAllLessonProgress,
-    getAllMistakes,
     getLessonProgress,
-    getMistakesForLesson,
     markLessonCompleted,
     markSectionCompleted,
     mergeLessonProgress,
-    mergeRemoteLessonProgress,
-    saveMistake
+    mergeRemoteLessonProgress
 };
 
 type LessonContentType =
@@ -50,9 +44,6 @@ const LESSON_PROGRESS_CONTENT_TYPES_STORAGE_KEY =
 
 const LESSON_PROGRESS_STORAGE_KEY =
     "dino_lessons_progress";
-
-const MISTAKES_STORAGE_KEY =
-    "dino_mistakes";
 
 /* -------------------------------------------------------------------------- */
 /* Lesson progress                                                             */
@@ -400,94 +391,6 @@ function readStringMap(
 }
 
 /* -------------------------------------------------------------------------- */
-/* Mistakes                                                                    */
-/* -------------------------------------------------------------------------- */
-
-/**
- * Stores an incorrect answer for later review.
- */
-function saveMistake(
-    lessonId: string,
-    sectionId: string,
-    questionIndex: number,
-    userAnswer:
-        ExerciseAnswer,
-    correctAnswer:
-        number
-        | string
-        | string[]
-): void {
-    const allMistakes =
-        readMistakes();
-
-    allMistakes.push({
-        lessonId,
-        sectionId,
-        questionIndex,
-        userAnswer,
-        correctAnswer,
-        timestamp:
-            new Date()
-                .toISOString()
-    });
-
-    localStorage.setItem(
-        getAccountScopedStorageKey(
-            MISTAKES_STORAGE_KEY
-        ),
-        JSON.stringify(
-            allMistakes
-        )
-    );
-}
-
-/**
- * Returns mistakes associated with one lesson.
- */
-function getMistakesForLesson(
-    lessonId: string
-): MistakeRecord[] {
-    return readMistakes()
-        .filter(
-            mistake =>
-                mistake.lessonId
-                === lessonId
-        );
-}
-
-/**
- * Returns every persisted mistake.
- */
-function getAllMistakes():
-    MistakeRecord[] {
-    return readMistakes();
-}
-
-/**
- * Removes every persisted mistake associated with one lesson.
- */
-function clearMistakesForLesson(
-    lessonId: string
-): void {
-    const remainingMistakes =
-        readMistakes()
-            .filter(
-                mistake =>
-                    mistake.lessonId
-                    !== lessonId
-            );
-
-    localStorage.setItem(
-        getAccountScopedStorageKey(
-            MISTAKES_STORAGE_KEY
-        ),
-        JSON.stringify(
-            remainingMistakes
-        )
-    );
-}
-
-/* -------------------------------------------------------------------------- */
 /* Persistence readers                                                         */
 /* -------------------------------------------------------------------------- */
 
@@ -530,35 +433,6 @@ function readLessonProgress():
         >;
     } catch {
         return {};
-    }
-}
-
-function readMistakes():
-    MistakeRecord[] {
-    const raw =
-        localStorage.getItem(
-            getAccountScopedStorageKey(
-                MISTAKES_STORAGE_KEY
-            )
-        );
-
-    if (!raw) {
-        return [];
-    }
-
-    try {
-        const parsed =
-            JSON.parse(
-                raw
-            ) as unknown;
-
-        return Array.isArray(
-            parsed
-        )
-            ? parsed as MistakeRecord[]
-            : [];
-    } catch {
-        return [];
     }
 }
 

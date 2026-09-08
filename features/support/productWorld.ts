@@ -17,6 +17,9 @@ import type {
 import type {
     MistakeReviewItem
 } from "../../src/core/reviewEngine.js";
+import type {
+    ReviewSignal
+} from "../../src/core/reviewSignalEngine.js";
 
 import type {
     LearnerProfileDraft
@@ -49,6 +52,9 @@ interface ProductWorld extends IWorld {
     localLessonProgress?: LessonProgress;
     remoteLessonProgress?: LessonProgress;
     mergedLessonProgress?: LessonProgress;
+    olderReviewSignal?: ReviewSignal;
+    newerReviewSignal?: ReviewSignal;
+    mergedReviewSignal?: ReviewSignal;
     shopPurchaseStatus?:
         | "already-owned"
         | "insufficient-credits"

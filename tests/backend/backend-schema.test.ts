@@ -584,3 +584,45 @@ test(
         );
     }
 );
+
+test(
+    "review signals preserve private tombstones against stale devices",
+    async () => {
+        const migration = await readFile(
+            resolve(
+                root,
+                "supabase/migrations/20260908170000_sync_review_signals.sql"
+            ),
+            "utf8"
+        );
+
+        assert.match(
+            migration,
+            /primary key \(user_id, signal_type, subject_id, signal_key\)/u
+        );
+        assert.match(
+            migration,
+            /alter table public\.learner_review_signals force row level security/u
+        );
+        assert.match(
+            migration,
+            /using \(\(select auth\.uid\(\)\) = user_id\)/u
+        );
+        assert.match(
+            migration,
+            /else signals\.active and excluded\.active/u
+        );
+        assert.match(
+            migration,
+            /changed_at = greatest/u
+        );
+        assert.doesNotMatch(
+            migration,
+            /grant (?:insert|update|delete)[\s\S]*public\.learner_review_signals[\s\S]*to authenticated/u
+        );
+        assert.match(
+            migration,
+            /grant execute on function public\.sync_review_signal\([\s\S]*\)\s+to authenticated/u
+        );
+    }
+);

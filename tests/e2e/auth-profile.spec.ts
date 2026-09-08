@@ -399,6 +399,21 @@ test.describe(
                     }
                 );
 
+                await page.route(
+                    "**/rest/v1/learner_review_signals**",
+                    async route => {
+                        if (await fulfillPreflight(route)) {
+                            return;
+                        }
+
+                        await route.fulfill({
+                            headers: jsonHeaders(),
+                            json: [],
+                            status: 200
+                        });
+                    }
+                );
+
                 await page.goto("/profile");
                 await expect(page).toHaveURL(
                     /\/auth\?returnTo=%2Fprofile$/
@@ -562,6 +577,19 @@ test.describe(
                                             awardedAt
                                     }
                                 ],
+                                status: 200
+                            });
+                            return;
+                        }
+
+                        if (
+                            path
+                            === "/rest/v1/learner_review_signals"
+                        ) {
+                            await route.fulfill({
+                                headers:
+                                    jsonHeaders(),
+                                json: [],
                                 status: 200
                             });
                             return;

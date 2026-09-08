@@ -1,34 +1,27 @@
 import {
     getStaticDataUrl
 } from "../../core/staticData.js";
-import {
-    getAccountScopedStorageKey
-} from "../../core/learnerStorage.js";
 
 import type {
     Level,
     VocabPack,
-    VocabPackIndex,
-    VocabWeakMap
+    VocabPackIndex
 } from "../../types/global.js";
 
 export {
     clearVocabularyCache,
-    getAllWeakWords,
-    getWeakWords,
     loadVocabularyIndex,
-    loadVocabularyPack,
-    setWeakWord
+    loadVocabularyPack
 };
 
 /**
- * Vocabulary data access and local persistence.
+ * Vocabulary data access.
  *
  * This module replaces the data-management responsibilities previously mixed
  * into `vocabulary.ts`.
  *
- * React components should not perform direct Vocabulary fetches or manipulate
- * the weak-word localStorage structure themselves.
+ * React components should not perform direct Vocabulary fetches. Weak-word
+ * persistence belongs to the review-signal engine.
  */
 
 type VocabularyCacheEntry =
@@ -40,9 +33,6 @@ const vocabularyCache =
         string,
         VocabularyCacheEntry
     >();
-
-const WEAK_WORDS_STORAGE_KEY =
-    "dino_vocab_weak";
 
 /* -------------------------------------------------------------------------- */
 /* Vocabulary index                                                           */
@@ -206,155 +196,6 @@ async function loadVocabularyPack(
 }
 
 /* -------------------------------------------------------------------------- */
-/* Weak-word persistence                                                       */
-/* -------------------------------------------------------------------------- */
-
-/**
- * Returns the persisted French words currently marked as weak for a pack.
- *
- * A copy is returned so consumers cannot mutate storage-backed state
- * accidentally.
- */
-function getWeakWords(
-    packId: string
-): string[] {
-    const weakMap =
-        readWeakWordMap();
-
-    return [
-        ...(
-            weakMap[
-                packId
-            ]
-            ?? []
-        )
-    ];
-}
-
-/**
- * Adds or removes one French word from the persisted weak-word collection.
- *
- * This intentionally preserves the historical storage schema:
- *
- * {
- *   "pack-id": ["mot", "autre mot"]
- * }
- */
-function setWeakWord(
-    packId: string,
-    frenchWord: string,
-    weak: boolean
-): void {
-    const weakMap =
-        readWeakWordMap();
-
-    const current =
-        (
-            weakMap[
-                packId
-            ]
-            ?? []
-        ).filter(
-            word =>
-                word
-                !== frenchWord
-        );
-
-    weakMap[
-        packId
-    ] =
-        weak
-            ? [
-                ...current,
-                frenchWord
-            ]
-            : current;
-
-    localStorage.setItem(
-        getAccountScopedStorageKey(
-            WEAK_WORDS_STORAGE_KEY
-        ),
-        JSON.stringify(
-            weakMap
-        )
-    );
-}
-
-/**
- * Reads weak-word persistence defensively.
- *
- * A malformed localStorage value should not prevent the Vocabulary feature
- * from opening.
- */
-function readWeakWordMap():
-    VocabWeakMap {
-    const raw =
-        localStorage.getItem(
-            getAccountScopedStorageKey(
-                WEAK_WORDS_STORAGE_KEY
-            )
-        );
-
-    if (!raw) {
-        return {};
-    }
-
-    try {
-        const parsed =
-            JSON.parse(
-                raw
-            ) as unknown;
-
-        if (
-            !parsed
-            || typeof parsed
-                !== "object"
-            || Array.isArray(
-                parsed
-            )
-        ) {
-            return {};
-        }
-
-        const safeMap:
-            VocabWeakMap = {};
-
-        for (
-            const [
-                packId,
-                value
-            ]
-            of Object.entries(
-                parsed
-            )
-        ) {
-            if (
-                !Array.isArray(
-                    value
-                )
-            ) {
-                continue;
-            }
-
-            safeMap[
-                packId
-            ] =
-                value.filter(
-                    (
-                        word
-                    ): word is string =>
-                        typeof word
-                            === "string"
-                );
-        }
-
-        return safeMap;
-    } catch {
-        return {};
-    }
-}
-
-/* -------------------------------------------------------------------------- */
 /* Cache                                                                       */
 /* -------------------------------------------------------------------------- */
 
@@ -409,20 +250,4 @@ function createFreshDataUrl(
     );
 
     return url.href;
-}
-
-/** Returns a defensive snapshot of every pack's weak-word collection. */
-function getAllWeakWords():
-    VocabWeakMap {
-    const weakMap =
-        readWeakWordMap();
-
-    return Object.fromEntries(
-        Object.entries(weakMap).map(
-            ([packId, words]) => [
-                packId,
-                [...words]
-            ]
-        )
-    );
 }

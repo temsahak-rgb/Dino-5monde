@@ -13,7 +13,7 @@ import type {
 
 import {
     getWeakWords
-} from "./vocabularyRepository.js";
+} from "../../core/reviewSignalEngine.js";
 
 import {
     VocabularyFlashcards
