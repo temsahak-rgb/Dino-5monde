@@ -70,6 +70,10 @@ import {
 } from "../pages/ProfilePage.js";
 
 import {
+    SaurusPage
+} from "../pages/SaurusPage.js";
+
+import {
     PracticeCatalogPage
 } from "../pages/PracticeCatalogPage.js";
 
@@ -170,6 +174,7 @@ import {
  * /info/work-with-us
  * /archive
  * /profile
+ * /saurus
  * /shop
  */
 const routerBasename =
@@ -221,6 +226,14 @@ const router =
 
                     Component:
                         ProfilePage
+                },
+
+                {
+                    path:
+                        appRoutePatterns.saurus,
+
+                    Component:
+                        SaurusPage
                 },
 
                 {

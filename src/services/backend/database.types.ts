@@ -11,6 +11,11 @@ type LearnerProfileRow = {
     avatar_key: string;
     created_at: string;
     display_name: string;
+    saurus_assigned_at: string | null;
+    saurus_assignment_source:
+        SaurusAssignmentSource | null;
+    saurus_quiz_answers: string[] | null;
+    saurus_recommendation: string | null;
     show_saurus_suffix: boolean;
     updated_at: string;
     user_id: string;
@@ -21,6 +26,10 @@ type LearnerProfileInsert = {
     avatar_key?: string;
     created_at?: never;
     display_name: string;
+    saurus_assigned_at?: never;
+    saurus_assignment_source?: never;
+    saurus_quiz_answers?: never;
+    saurus_recommendation?: never;
     show_saurus_suffix?: boolean;
     updated_at?: never;
     user_id: string;
@@ -31,10 +40,18 @@ type LearnerProfileUpdate = {
     avatar_key?: string;
     created_at?: never;
     display_name?: string;
+    saurus_assigned_at?: never;
+    saurus_assignment_source?: never;
+    saurus_quiz_answers?: never;
+    saurus_recommendation?: never;
     show_saurus_suffix?: boolean;
     updated_at?: never;
     user_id?: never;
 };
+
+type SaurusAssignmentSource =
+    | "recommendation"
+    | "learner-choice";
 
 type LearnerWalletRow = {
     created_at: string;
@@ -443,6 +460,13 @@ type Database = {
         };
         Views: Record<string, never>;
         Functions: {
+            assign_learner_saurus: {
+                Args: {
+                    p_answers: string[];
+                    p_selected_saurus: string | null;
+                };
+                Returns: LearnerProfileRow[];
+            };
             claim_learning_reward: {
                 Args: {
                     p_activity_id: string;
@@ -538,6 +562,7 @@ export {
     type LearnerProfileUpdate,
     type PurchaseShopLessonRpcRow,
     type ReviewSignalType,
+    type SaurusAssignmentSource,
     type ShopLessonContentType,
     type ShopLessonLevel,
     type ShopLessonRow,

@@ -178,6 +178,7 @@ test.describe(
 
                 let requestedEmail = "";
                 let savedDisplayName = "";
+                let selectedSaurus = "";
 
                 await page.route(
                     "**/auth/v1/**",
@@ -293,11 +294,70 @@ test.describe(
                                 avatar_key: body.avatar_key,
                                 created_at: now,
                                 display_name: body.display_name,
+                                saurus_assigned_at: null,
+                                saurus_assignment_source: null,
+                                saurus_quiz_answers: null,
+                                saurus_recommendation: null,
                                 show_saurus_suffix:
                                     body.show_saurus_suffix,
                                 updated_at: now,
                                 user_id: learnerId
                             },
+                            status: 200
+                        });
+                    }
+                );
+
+                await page.route(
+                    "**/rest/v1/rpc/assign_learner_saurus",
+                    async route => {
+                        if (await fulfillPreflight(route)) {
+                            return;
+                        }
+
+                        const body =
+                            route.request()
+                                .postDataJSON() as {
+                                    p_answers: string[];
+                                    p_selected_saurus:
+                                        string;
+                                };
+                        selectedSaurus =
+                            body.p_selected_saurus;
+                        const now =
+                            new Date().toISOString();
+
+                        expect(body.p_answers).toEqual([
+                            "velociraptor-explorer",
+                            "triceratops-perseverant",
+                            "brachiosaurus-curious"
+                        ]);
+
+                        await route.fulfill({
+                            headers: jsonHeaders(),
+                            json: [
+                                {
+                                    assigned_saurus:
+                                        body.p_selected_saurus,
+                                    avatar_key:
+                                        "dino-green",
+                                    created_at: now,
+                                    display_name:
+                                        "Mina",
+                                    saurus_assigned_at:
+                                        now,
+                                    saurus_assignment_source:
+                                        "learner-choice",
+                                    saurus_quiz_answers:
+                                        body.p_answers,
+                                    saurus_recommendation:
+                                        "brachiosaurus-curious",
+                                    show_saurus_suffix:
+                                        true,
+                                    updated_at: now,
+                                    user_id: learnerId
+                                }
+                            ],
                             status: 200
                         });
                     }
@@ -496,10 +556,60 @@ test.describe(
                     name: "Créer mon profil"
                 }).click();
 
+                await expect(page).toHaveURL(
+                    /\/saurus$/
+                );
+                await page.getByRole("button", {
+                    name: "Explorer rapidement et essayer plusieurs pistes"
+                }).click();
+                await page.getByRole("button", {
+                    name: "Progresser étape par étape sans abandonner"
+                }).click();
+                await page.getByRole("button", {
+                    name: "Curieuse, approfondie et riche en explications"
+                }).click();
                 await expect(
-                    page.getByRole("status")
-                ).toHaveText("Profil enregistré.");
+                    page.getByText(
+                        "Brachiosaure curieux",
+                        { exact: true }
+                    ).first()
+                ).toBeVisible();
+                await page.getByText(
+                    "Tricératops persévérant",
+                    { exact: true }
+                ).click();
+                await page.getByRole("button", {
+                    name: "Confirmer mon Saurus"
+                }).click();
+
+                await expect(
+                    page.getByRole("heading", {
+                        name: "Ton Saurus est prêt !"
+                    })
+                ).toBeVisible();
+                await expect(
+                    page.getByLabel(
+                        "Identité Saurus"
+                    )
+                ).toContainText(
+                    "Tricératops persévérant"
+                );
+                await expect(
+                    page.getByRole("link", {
+                        name: "Entrer dans Dino →"
+                    })
+                ).toHaveAttribute("href", "/");
                 expect(savedDisplayName).toBe("Mina");
+                expect(selectedSaurus).toBe(
+                    "triceratops-perseverant"
+                );
+
+                await page.getByRole("link", {
+                    name: "Voir mon profil"
+                }).click();
+                await expect(page).toHaveURL(
+                    /\/profile$/
+                );
 
                 await page.getByLabel(
                     "Ajouter « Saurus » à mon nom"

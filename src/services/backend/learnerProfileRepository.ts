@@ -6,6 +6,11 @@ import type {
     DinoBackendClient
 } from "./supabaseClient.js";
 
+import {
+    isSaurusKey,
+    type SaurusKey
+} from "../../core/saurusAllocation.js";
+
 const learnerAvatarKeys = [
     "dino-green",
     "dino-blue",
@@ -19,6 +24,11 @@ interface LearnerProfileDraft {
     avatarKey: LearnerAvatarKey;
     displayName: string;
     showSaurusSuffix: boolean;
+}
+
+interface SaurusAssignmentDraft {
+    answers: readonly SaurusKey[];
+    selectedSaurus: SaurusKey | null;
 }
 
 function isLearnerAvatarKey(
@@ -161,7 +171,65 @@ async function saveLearnerProfile(
     return data;
 }
 
+async function assignLearnerSaurus(
+    client: DinoBackendClient,
+    draft: SaurusAssignmentDraft
+): Promise<LearnerProfileRow> {
+    if (
+        draft.answers.length !== 3
+        || draft.answers.some(
+            answer => !isSaurusKey(answer)
+        )
+        || (
+            draft.selectedSaurus !== null
+            && !isSaurusKey(
+                draft.selectedSaurus
+            )
+        )
+    ) {
+        throw new TypeError(
+            "A complete Saurus assignment is required"
+        );
+    }
+
+    const {
+        data,
+        error
+    } = await client.rpc(
+        "assign_learner_saurus",
+        {
+            p_answers: [
+                ...draft.answers
+            ],
+            p_selected_saurus:
+                draft.selectedSaurus
+        }
+    );
+
+    if (error) {
+        throw error;
+    }
+
+    const assignedProfile =
+        data[0];
+
+    if (
+        !assignedProfile
+        || !assignedProfile.assigned_saurus
+        || !isSaurusKey(
+            assignedProfile.assigned_saurus
+        )
+    ) {
+        throw new Error(
+            "Saurus assignment returned no supported species"
+        );
+    }
+
+    return assignedProfile;
+}
+
 export {
+    assignLearnerSaurus,
     formatLearnerDisplayName,
     isLearnerAvatarKey,
     learnerAvatarKeys,
@@ -169,5 +237,6 @@ export {
     normalizeLearnerProfileDraft,
     saveLearnerProfile,
     type LearnerAvatarKey,
-    type LearnerProfileDraft
+    type LearnerProfileDraft,
+    type SaurusAssignmentDraft
 };

@@ -21,9 +21,11 @@ import type {
 } from "./database.types.js";
 
 import {
+    assignLearnerSaurus,
     loadLearnerProfile,
     saveLearnerProfile,
-    type LearnerProfileDraft
+    type LearnerProfileDraft,
+    type SaurusAssignmentDraft
 } from "./learnerProfileRepository.js";
 
 type LearnerProfileStatus =
@@ -35,6 +37,9 @@ type LearnerProfileStatus =
     | "error";
 
 interface LearnerProfileContextValue {
+    assignSaurus: (
+        draft: SaurusAssignmentDraft
+    ) => Promise<LearnerProfileRow>;
     error: Error | null;
     profile: LearnerProfileRow | null;
     saveProfile: (
@@ -212,6 +217,46 @@ function LearnerProfileProvider({
             ]
         );
 
+    const assignSaurus =
+        useCallback(
+            async (
+                draft: SaurusAssignmentDraft
+            ): Promise<LearnerProfileRow> => {
+                if (
+                    !client
+                    || !user
+                    || authStatus !== "signed-in"
+                ) {
+                    throw new Error(
+                        "An authenticated learner is required"
+                    );
+                }
+
+                const assignedProfile =
+                    await assignLearnerSaurus(
+                        client,
+                        draft
+                    );
+
+                setProfile(
+                    assignedProfile
+                );
+                setLoadStatus(
+                    "ready"
+                );
+                setError(
+                    null
+                );
+
+                return assignedProfile;
+            },
+            [
+                authStatus,
+                client,
+                user
+            ]
+        );
+
     const status:
         LearnerProfileStatus =
         connectionStatus === "disabled"
@@ -231,12 +276,14 @@ function LearnerProfileProvider({
     const value =
         useMemo<LearnerProfileContextValue>(
             () => ({
+                assignSaurus,
                 error,
                 profile,
                 saveProfile,
                 status
             }),
             [
+                assignSaurus,
                 error,
                 profile,
                 saveProfile,

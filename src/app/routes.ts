@@ -10,6 +10,7 @@ const appRoutePatterns = {
     onboarding: "/onboarding",
     home: "/",
     profile: "/profile",
+    saurus: "/saurus",
     archive: "/archive",
     shop: "/shop",
     daily: "/daily",
@@ -63,6 +64,7 @@ type AppRoute =
     | { name: "onboarding" }
     | { name: "home" }
     | { name: "profile" }
+    | { name: "saurus" }
     | { name: "archive" }
     | { name: "shop" }
     | { name: "daily" }
@@ -125,6 +127,8 @@ function createAppPath(
             return appRoutePatterns.home;
         case "profile":
             return appRoutePatterns.profile;
+        case "saurus":
+            return appRoutePatterns.saurus;
         case "archive":
             return appRoutePatterns.archive;
         case "shop":
@@ -200,6 +204,8 @@ function matchAppPath(
                 return { name: "onboarding" };
             case "profile":
                 return { name: "profile" };
+            case "saurus":
+                return { name: "saurus" };
             case "archive":
                 return { name: "archive" };
             case "shop":

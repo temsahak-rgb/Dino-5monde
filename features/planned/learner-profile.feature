@@ -1,7 +1,7 @@
 @profile @saurus
 Feature: Learner profile and Saurus
-  A first-time learner will create one durable learning profile before the
-  product applies the future Saurus allocation rules.
+  A first-time learner creates one durable identity and receives a Saurus
+  recommendation before entering the learning experience.
 
   @implemented
   Scenario: Create a profile after the first authentication
@@ -15,8 +15,11 @@ Feature: Learner profile and Saurus
     When the learner keeps the Saurus display suffix enabled
     Then the displayed learner name is "Mina Saurus"
 
-  @planned
-  Scenario: Allocate a Saurus from explicit product rules
+  @implemented
+  Scenario: Recommend a Saurus before the learner makes the final choice
     Given a learner has completed the required profile information
+    And the learner answers the Saurus quiz as "velociraptor-explorer, triceratops-perseverant, brachiosaurus-curious"
     When the documented Saurus allocation rules are applied
-    Then the allocated Saurus is stored on the learner profile
+    Then "brachiosaurus-curious" is recommended
+    And the learner can choose "triceratops-perseverant" instead
+    And "triceratops-perseverant" is stored as the stable Saurus species
