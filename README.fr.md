@@ -27,7 +27,7 @@ On peut voir Dino comme la combinaison de :
 - des cartes de vocabulaire ;
 - plusieurs parcours pédagogiques ;
 - un test de placement ;
-- un suivi de progression local.
+- un suivi de progression locale-first et multi-appareils avec un compte.
 
 Le parcours utilisateur général est simple :
 
@@ -72,14 +72,14 @@ Le but du MVP n'est pas encore de fournir toutes les fonctions d'une plateforme 
 | Compte et Profil | ✅ Connexion email sans mot de passe et profil privé `Saurus` |
 | Hub Jeux & exercices | ✅ `/practice`, catalogues par jeu/niveau et parties partageables |
 | Quotidien | Hors du périmètre publié ; aucune route factice exposée |
-| Synchronisation multi-appareils | ❌ Non implémentée |
+| Synchronisation multi-appareils | ✅ Progression Grammaire et Voyage pour les comptes connectés |
 
-La progression pédagogique repose encore principalement sur `localStorage`. Le compte, le profil, le solde de crédits et les droits sur les leçons sont en revanche enregistrés dans Supabase et rattachés à l'utilisateur connecté.
+La progression Grammaire et Voyage est locale-first : elle reste utilisable sans compte dans `localStorage`, puis se synchronise dans Supabase dès qu'un apprenant se connecte. Le serveur fusionne les appareils sans jamais retirer une section terminée ni faire régresser le statut d'une leçon.
 
-Cela garde le MVP simple, mais implique que :
+La limite actuelle est explicite :
 
-- la progression n'est pas synchronisée entre plusieurs navigateurs ou appareils ;
-- supprimer les données locales du site peut supprimer la progression.
+- les erreurs, mots faibles et recommandations de révision restent propres au navigateur ;
+- sans compte connecté, supprimer les données locales du site peut supprimer la progression.
 
 ---
 
@@ -170,7 +170,7 @@ La route partageable `/shop` présente les leçons disponibles. Chaque nouveau c
 
 Supabase conserve le portefeuille, les droits acquis et un registre append-only des mouvements. Les politiques Row Level Security isolent chaque compte. Les achats et les récompenses sont atomiques : terminer une leçon Voyage crédite **5 crédits une seule fois**, même après un rechargement ou une nouvelle demande. Le montant et la liste des activités éligibles restent contrôlés par PostgreSQL, jamais par le navigateur. Les dernières récompenses sont visibles et cliquables dans le profil.
 
-La progression pédagogique restant locale pour ce premier environnement, le navigateur signale encore la complétion. Le backend empêche déjà tout montant arbitraire et toute double récompense ; la synchronisation multi-appareils ajoutera ensuite une preuve de complétion entièrement persistée côté serveur.
+La progression Grammaire et Voyage est persistée par compte et fusionnée de façon monotone entre appareils. Le navigateur signale encore la complétion ; le backend empêche déjà tout montant arbitraire et toute double récompense, mais une preuve entièrement calculée côté serveur reste une étape distincte.
 
 Le corpus reste volontairement dans `data/` et demeure public dans le build GitHub Pages. Une commercialisation réelle exigera donc de déplacer la livraison des contenus payants derrière une API privée ; masquer une leçon dans React ou stocker uniquement son droit d'accès en base ne protège pas son JSON public.
 
@@ -750,7 +750,7 @@ Les prochaines évolutions naturelles comprennent notamment :
 - ajouter davantage de tests de données ;
 - synchroniser les recommandations de révision actuellement locales ;
 - harmoniser la couverture des niveaux CECRL ;
-- synchroniser la progression pédagogique entre appareils ;
+- étendre la synchronisation aux erreurs, mots faibles et recommandations de révision avec une vraie sémantique de suppression ;
 - servir les futurs contenus payants depuis une frontière backend privée avant d'activer un paiement réel.
 
 Ces éléments décrivent une **direction**, pas des fonctionnalités déjà livrées.

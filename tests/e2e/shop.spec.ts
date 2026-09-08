@@ -219,6 +219,15 @@ async function installShopBackendMock(
                 return;
             }
 
+            if (path === "/rest/v1/learner_lesson_progress") {
+                await route.fulfill({
+                    headers: jsonHeaders(),
+                    json: [],
+                    status: 200
+                });
+                return;
+            }
+
             if (path === "/rest/v1/learner_wallets") {
                 state.walletReads += 1;
 

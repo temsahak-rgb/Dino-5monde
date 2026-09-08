@@ -45,6 +45,9 @@ import {
 } from "../../ui/components/RichText.js";
 
 interface ExerciseProps {
+    contentType:
+        | "grammar"
+        | "travel";
     lessonId: string;
     section: ExerciseSectionInput;
     onBack: () => void;
@@ -65,6 +68,7 @@ interface ExerciseProps {
  * - ordering
  */
 function Exercise({
+    contentType,
     lessonId,
     section,
     onBack,
@@ -193,10 +197,12 @@ function Exercise({
 
             markSectionCompleted(
                 lessonId,
-                section.id
+                section.id,
+                contentType
             );
         },
         [
+            contentType,
             finished,
             lessonId,
             section.id

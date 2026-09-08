@@ -24,6 +24,9 @@ import {
     useLearningRewardHistory
 } from "../services/backend/LearningRewardsProvider.js";
 import {
+    useLessonProgressSync
+} from "../services/backend/LessonProgressSyncProvider.js";
+import {
     useShopWallet
 } from "../services/backend/ShopProvider.js";
 import {
@@ -92,6 +95,9 @@ function ProfilePage() {
         rewards,
         status: rewardsStatus
     } = useLearningRewardHistory();
+    const {
+        status: lessonProgressSyncStatus
+    } = useLessonProgressSync();
 
     const [displayName, setDisplayName] =
         useState("");
@@ -392,6 +398,33 @@ function ProfilePage() {
                             <strong className="mt-3 block break-words text-lg text-dino-800">
                                 {preview}
                             </strong>
+                        </Card>
+
+                        <Card
+                            className="p-5"
+                            aria-label={t("profile.progressSyncTitle")}
+                            aria-live="polite"
+                        >
+                            <div className="flex items-start gap-3">
+                                <span
+                                    className={`mt-1 size-3 shrink-0 rounded-full ${lessonProgressSyncStatus === "ready" ? "bg-emerald-500" : lessonProgressSyncStatus === "syncing" ? "animate-pulse bg-amber-400" : "bg-rose-500"}`}
+                                    aria-hidden="true"
+                                />
+                                <div>
+                                    <p className="text-xs font-bold uppercase tracking-[0.08em] text-muted">
+                                        {t("profile.progressSyncTitle")}
+                                    </p>
+                                    <p className="mt-2 text-sm leading-6 text-ink-soft">
+                                        {t(
+                                            lessonProgressSyncStatus === "ready"
+                                                ? "profile.progressSyncReady"
+                                                : lessonProgressSyncStatus === "syncing"
+                                                    ? "profile.progressSyncing"
+                                                    : "profile.progressSyncError"
+                                        )}
+                                    </p>
+                                </div>
+                            </div>
                         </Card>
 
                         <Card

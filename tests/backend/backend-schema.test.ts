@@ -534,3 +534,53 @@ test(
         );
     }
 );
+
+test(
+    "lesson progress is private and merged monotonically by one RPC",
+    async () => {
+        const migration = await readFile(
+            resolve(
+                root,
+                "supabase/migrations/20260908150000_sync_lesson_progress.sql"
+            ),
+            "utf8"
+        );
+
+        assert.match(
+            migration,
+            /primary key \(user_id, content_type, lesson_id\)/u
+        );
+        assert.match(
+            migration,
+            /alter table public\.learner_lesson_progress force row level security/u
+        );
+        assert.match(
+            migration,
+            /using \(\(select auth\.uid\(\)\) = user_id\)/u
+        );
+        assert.match(
+            migration,
+            /on conflict on constraint learner_lesson_progress_pkey/u
+        );
+        assert.match(
+            migration,
+            /completed_sections = array\([\s\S]*progress\.completed_sections[\s\S]*excluded\.completed_sections/u
+        );
+        assert.match(
+            migration,
+            /current_section = greatest/u
+        );
+        assert.match(
+            migration,
+            /last_accessed = greatest/u
+        );
+        assert.doesNotMatch(
+            migration,
+            /grant (?:insert|update|delete)[\s\S]*public\.learner_lesson_progress[\s\S]*to authenticated/u
+        );
+        assert.match(
+            migration,
+            /grant execute on function public\.sync_lesson_progress\([\s\S]*\)\s+to authenticated/u
+        );
+    }
+);

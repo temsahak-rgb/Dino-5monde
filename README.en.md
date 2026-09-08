@@ -27,7 +27,7 @@ Dino can be understood as a combination of:
 - vocabulary flashcards;
 - several learning paths;
 - a placement test;
-- local progress tracking.
+- local-first progress tracking with account-based device sync.
 
 The general user flow is:
 
@@ -72,14 +72,14 @@ The MVP is not intended to provide every feature of a complete learning platform
 | Account and Profile | ✅ Passwordless email sign-in and private `Saurus` profile |
 | Games & exercises hub | ✅ `/practice`, game/level catalogues and shareable sessions |
 | Daily | Outside the published scope; no placeholder route is exposed |
-| Cross-device sync | ❌ Not implemented |
+| Cross-device sync | ✅ Grammar and Travel progress for signed-in learners |
 
-Learning progress still relies mainly on `localStorage`. Accounts, profiles, credit balances and lesson entitlements are stored in Supabase and tied to the signed-in user.
+Grammar and Travel progress is local-first: it remains available without an account in `localStorage`, then synchronises to Supabase when a learner signs in. The server merges devices without removing a completed section or regressing a completed lesson.
 
-This keeps the MVP simple, but it means:
+The current boundary is explicit:
 
-- progress is not synchronised between browsers or devices;
-- clearing local site data can remove saved progress.
+- mistakes, weak words and review recommendations remain browser-local;
+- without a signed-in account, clearing local site data can remove saved progress.
 
 ---
 
@@ -170,7 +170,7 @@ The shareable `/shop` route lists available lessons. Every new account starts wi
 
 Supabase stores wallets, acquired entitlements and an append-only transaction ledger. Row Level Security isolates each account. Purchases and learning rewards are atomic: completing a Travel lesson grants **five credits exactly once**, including after reloads or repeated requests. PostgreSQL—not the browser—owns the eligible activity list and reward amount. Recent rewards remain visible and clickable in the learner profile.
 
-Because learning progress is still local in this first environment, the browser currently reports completion. The backend already prevents arbitrary amounts and duplicate rewards; cross-device progress synchronisation will later add fully server-persisted completion proof.
+Grammar and Travel progress is persisted per account and merged monotonically across devices. The browser still reports completion. The backend already prevents arbitrary amounts and duplicate rewards, while fully server-computed completion proof remains a separate step.
 
 The learning corpus deliberately remains under `data/` and is public in the GitHub Pages build. Selling content for real money will therefore require private backend delivery; hiding a lesson in React or storing only its entitlement in the database does not protect publicly shipped JSON.
 
@@ -750,7 +750,7 @@ Natural next steps include:
 - adding more data-consistency tests;
 - synchronising the review recommendations that are currently local;
 - improving consistency across CEFR levels;
-- synchronising learning progress across devices;
+- extending sync to mistakes, weak words and review recommendations with explicit deletion semantics;
 - privately serving future paid content before enabling real-money payments.
 
 These items describe **direction**, not already delivered functionality.
