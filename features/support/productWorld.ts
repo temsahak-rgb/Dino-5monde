@@ -54,6 +54,9 @@ import type {
 import type {
     LearnerProfileDraft
 } from "../../src/services/backend/learnerProfileRepository.js";
+import type {
+    SaurusKey
+} from "../../src/core/saurusAllocation.js";
 
 interface ProductWorld extends IWorld {
     grammarLevels?: readonly string[];
@@ -70,6 +73,9 @@ interface ProductWorld extends IWorld {
     email?: string;
     learnerProfile?: LearnerProfileDraft;
     displayedLearnerName?: string;
+    saurusAnswers?: SaurusKey[];
+    saurusRecommendation?: SaurusKey;
+    assignedSaurus?: SaurusKey;
     shopAuthenticated?: boolean;
     shopCredits?: number;
     shopLessonId?: string;

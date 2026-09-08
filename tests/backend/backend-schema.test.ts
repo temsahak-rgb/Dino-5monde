@@ -110,6 +110,56 @@ test(
 );
 
 test(
+    "Saurus allocation is validated, auditable and immutable on the server",
+    async () => {
+        const migration = await readFile(
+            resolve(
+                root,
+                "supabase/migrations/20260908250000_allocate_learner_saurus.sql"
+            ),
+            "utf8"
+        );
+
+        assert.match(
+            migration,
+            /create function public\.assign_learner_saurus\(\s*p_answers text\[\],\s*p_selected_saurus text default null\s*\)/u
+        );
+        assert.match(
+            migration,
+            /security definer\s+set search_path = ''/u
+        );
+        assert.match(
+            migration,
+            /cardinality\(p_answers\) <> 3/u
+        );
+        assert.match(
+            migration,
+            /scored\.score desc,\s*scored\.final_answer desc/u
+        );
+        assert.match(
+            migration,
+            /saurus_assignment_source = case[\s\S]*'recommendation'[\s\S]*'learner-choice'/u
+        );
+        assert.match(
+            migration,
+            /create trigger learner_profiles_prevent_saurus_reassignment/u
+        );
+        assert.match(
+            migration,
+            /message = 'saurus_species_is_stable'/u
+        );
+        assert.match(
+            migration,
+            /grant execute on function public\.assign_learner_saurus\(text\[\], text\)\s+to authenticated/u
+        );
+        assert.doesNotMatch(
+            migration,
+            /grant (?:insert|update) \([\s\S]*assigned_saurus[\s\S]*\) on public\.learner_profiles/u
+        );
+    }
+);
+
+test(
     "local backend keeps corpus seeding and paid phone OTP disabled",
     async () => {
         const configuration =

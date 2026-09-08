@@ -13,6 +13,10 @@ import {
     formatLearnerDisplayName,
     normalizeLearnerProfileDraft
 } from "../../src/services/backend/learnerProfileRepository.js";
+import {
+    isSaurusKey,
+    recommendSaurus
+} from "../../src/core/saurusAllocation.js";
 import type {
     ProductWorld
 } from "../support/productWorld.js";
@@ -135,6 +139,84 @@ Then(
         assert.equal(
             this.displayedLearnerName,
             expectedName
+        );
+    }
+);
+
+Given(
+    "a learner has completed the required profile information",
+    function (this: ProductWorld): void {
+        this.learnerProfile =
+            normalizeLearnerProfileDraft({
+                avatarKey: "dino-green",
+                displayName: "Mina",
+                showSaurusSuffix: true
+            });
+    }
+);
+
+Given(
+    "the learner answers the Saurus quiz as {string}",
+    function (
+        this: ProductWorld,
+        answerList: string
+    ): void {
+        const answers = answerList
+            .split(",")
+            .map(answer => answer.trim());
+
+        assert.ok(
+            answers.every(isSaurusKey)
+        );
+        this.saurusAnswers = answers;
+    }
+);
+
+When(
+    "the documented Saurus allocation rules are applied",
+    function (this: ProductWorld): void {
+        assert.ok(this.saurusAnswers);
+        this.saurusRecommendation =
+            recommendSaurus(
+                this.saurusAnswers
+            );
+    }
+);
+
+Then(
+    "{string} is recommended",
+    function (
+        this: ProductWorld,
+        expectedSaurus: string
+    ): void {
+        assert.equal(
+            this.saurusRecommendation,
+            expectedSaurus
+        );
+    }
+);
+
+Then(
+    "the learner can choose {string} instead",
+    function (
+        this: ProductWorld,
+        chosenSaurus: string
+    ): void {
+        assert.ok(isSaurusKey(chosenSaurus));
+        this.assignedSaurus =
+            chosenSaurus;
+    }
+);
+
+Then(
+    "{string} is stored as the stable Saurus species",
+    function (
+        this: ProductWorld,
+        expectedSaurus: string
+    ): void {
+        assert.equal(
+            this.assignedSaurus,
+            expectedSaurus
         );
     }
 );

@@ -5,7 +5,8 @@ import {
 } from "react";
 import {
     Link,
-    Navigate
+    Navigate,
+    useNavigate
 } from "react-router";
 
 import {
@@ -30,6 +31,15 @@ import {
 import {
     DailyPracticeCard
 } from "../features/profile/DailyPracticeCard.js";
+import {
+    SaurusIdentityCard
+} from "../features/profile/SaurusIdentityCard.js";
+import {
+    countCompletedSaurusActivities
+} from "../features/profile/saurusProgress.js";
+import {
+    isSaurusKey
+} from "../core/saurusAllocation.js";
 import {
     useAuth
 } from "../services/backend/AuthProvider.js";
@@ -88,6 +98,8 @@ const inputClassName = `
 `;
 
 function ProfilePage() {
+    const navigate =
+        useNavigate();
     const {
         language,
         localizedValue,
@@ -201,12 +213,25 @@ function ProfilePage() {
         setSaved(false);
         setError(null);
 
+        const creatingProfile =
+            !profile;
+
         try {
-            await saveProfile({
+            const savedProfile =
+                await saveProfile({
                 avatarKey,
                 displayName,
                 showSaurusSuffix
             });
+
+            if (
+                creatingProfile
+                && !savedProfile.assigned_saurus
+            ) {
+                navigate("/saurus");
+                return;
+            }
+
             setSaved(true);
         } catch (reason) {
             setError(
@@ -234,6 +259,18 @@ function ProfilePage() {
                 show_saurus_suffix: showSaurusSuffix
             })
             : t("profile.previewPlaceholder");
+    const assignedSaurus =
+        profile?.assigned_saurus
+        && isSaurusKey(
+            profile.assigned_saurus
+        )
+            ? profile.assigned_saurus
+            : null;
+    const completedSaurusActivities =
+        countCompletedSaurusActivities(
+            progress,
+            rewards
+        );
 
     return (
         <Page>
@@ -255,6 +292,40 @@ function ProfilePage() {
                 progress={progress}
                 rewards={rewards}
             />
+
+            {assignedSaurus ? (
+                <div className="mb-5">
+                    <SaurusIdentityCard
+                        completedActivities={
+                            completedSaurusActivities
+                        }
+                        species={assignedSaurus}
+                    />
+                </div>
+            ) : profile ? (
+                <Card className="mb-5 flex flex-col items-start justify-between gap-4 border-dino-300 bg-dino-50 p-5 sm:flex-row sm:items-center sm:p-6">
+                    <div>
+                        <h2 className="text-lg font-bold text-ink">
+                            {t(
+                                "profile.saurusRequiredTitle"
+                            )}
+                        </h2>
+                        <p className="mt-1 text-sm leading-6 text-muted">
+                            {t(
+                                "profile.saurusRequiredBody"
+                            )}
+                        </p>
+                    </div>
+                    <Link
+                        className="inline-flex min-h-11 shrink-0 items-center justify-center rounded-control bg-dino-600 px-4 py-2.5 text-sm font-bold text-white no-underline hover:bg-dino-700"
+                        to="/saurus"
+                    >
+                        {t(
+                            "profile.saurusRequiredAction"
+                        )}
+                    </Link>
+                </Card>
+            ) : null}
 
             {loading ? (
                 <Card className="p-6" role="status">

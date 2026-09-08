@@ -21,6 +21,7 @@ test(
                 onboarding: "/onboarding",
                 home: "/",
                 profile: "/profile",
+                saurus: "/saurus",
                 archive: "/archive",
                 shop: "/shop",
                 daily: "/daily",
@@ -70,6 +71,7 @@ test(
             { name: "onboarding" },
             { name: "home" },
             { name: "profile" },
+            { name: "saurus" },
             { name: "archive" },
             { name: "shop" },
             { name: "daily" },
@@ -233,6 +235,10 @@ test(
         );
         assert.equal(
             getAppRouteSection({ name: "profile" }),
+            null
+        );
+        assert.equal(
+            getAppRouteSection({ name: "saurus" }),
             null
         );
         assert.equal(
