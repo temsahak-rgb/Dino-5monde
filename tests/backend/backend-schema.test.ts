@@ -794,3 +794,53 @@ test(
         );
     }
 );
+
+test(
+    "exercise scores are private, append-only and idempotent",
+    async () => {
+        const migration = await readFile(
+            resolve(
+                root,
+                "supabase/migrations/20260908230000_track_exercise_attempts.sql"
+            ),
+            "utf8"
+        );
+
+        assert.match(
+            migration,
+            /create table public\.learner_exercise_attempts/u
+        );
+        assert.match(
+            migration,
+            /references auth\.users \(id\) on delete cascade/u
+        );
+        assert.match(
+            migration,
+            /alter table public\.learner_exercise_attempts force row level security/u
+        );
+        assert.match(
+            migration,
+            /using \(\(select auth\.uid\(\)\) = user_id\)/u
+        );
+        assert.match(
+            migration,
+            /on conflict \(id\) do nothing/u
+        );
+        assert.match(
+            migration,
+            /message = 'exercise_attempt_conflict'/u
+        );
+        assert.doesNotMatch(
+            migration,
+            /grant (?:insert|update|delete)[\s\S]*public\.learner_exercise_attempts[\s\S]*to authenticated/u
+        );
+        assert.match(
+            migration,
+            /grant execute on function public\.record_exercise_attempt\([\s\S]*\)\s+to authenticated/u
+        );
+        assert.doesNotMatch(
+            migration,
+            /learner_(?:wallets|credit_transactions)|claim_learning_reward/u
+        );
+    }
+);

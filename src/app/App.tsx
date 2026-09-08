@@ -28,6 +28,9 @@ import {
 import {
     ReviewSignalsSyncProvider
 } from "../services/backend/ReviewSignalsSyncProvider.js";
+import {
+    ExerciseTrackingProvider
+} from "../services/backend/ExerciseTrackingProvider.js";
 
 import {
     AppRouter
@@ -45,15 +48,17 @@ function App() {
             <AuthProvider>
                 <ShopProvider>
                     <LessonProgressSyncProvider>
-                        <ReviewSignalsSyncProvider>
-                            <LearningRewardsProvider>
-                                <LearnerProfileProvider>
-                                    <I18nProvider>
-                                        <AppRouter />
-                                    </I18nProvider>
-                                </LearnerProfileProvider>
-                            </LearningRewardsProvider>
-                        </ReviewSignalsSyncProvider>
+                        <ExerciseTrackingProvider>
+                            <ReviewSignalsSyncProvider>
+                                <LearningRewardsProvider>
+                                    <LearnerProfileProvider>
+                                        <I18nProvider>
+                                            <AppRouter />
+                                        </I18nProvider>
+                                    </LearnerProfileProvider>
+                                </LearningRewardsProvider>
+                            </ReviewSignalsSyncProvider>
+                        </ExerciseTrackingProvider>
                     </LessonProgressSyncProvider>
                 </ShopProvider>
             </AuthProvider>

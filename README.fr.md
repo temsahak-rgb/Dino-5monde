@@ -175,7 +175,9 @@ Supabase conserve le portefeuille, les droits acquis et un registre append-only 
 
 La progression Grammaire et Voyage est persistée par compte et fusionnée de façon monotone entre appareils. Pour une leçon récompensée, le backend compare les sections synchronisées à la règle de complétion qu’il possède avant de créditer le portefeuille. Un statut `completed` envoyé par le navigateur ne suffit pas ; le montant reste fixé côté serveur et chaque récompense demeure unique.
 
-Le profil réunit également un tableau de progression visuel pour **Grammaire, Voyage et Jeux**. Chaque carte affiche un voyant, le nombre d’éléments terminés, un pourcentage et un lien direct vers le parcours. Les totaux proviennent des catalogues existants ; les accomplissements utilisent la progression locale fusionnée avec le compte et les récompenses serveur, sans dupliquer les données.
+Le profil réunit également un tableau de progression visuel pour **Grammaire, Voyage et Jeux**. Chaque carte affiche un voyant, le nombre d'éléments terminés, un pourcentage et un lien direct vers le parcours. Les totaux proviennent des catalogues existants ; les accomplissements utilisent la progression locale fusionnée avec le compte et les récompenses serveur, sans dupliquer les données.
+
+Les exercices terminés en **Grammaire, Voyage et Vocabulaire** alimentent désormais un historique de scores unique dans le profil. Chaque tentative possède un identifiant immuable, une date, son résultat et un lien vers l'activité. Elle est enregistrée localement sans compte, adoptée à la première connexion puis synchronisée entre appareils sans renvoyer les tentatives déjà connues. Les scores sont privés et ne génèrent aucun crédit.
 
 Le corpus reste volontairement dans `data/` et demeure public dans le build GitHub Pages. Une commercialisation réelle exigera donc de déplacer la livraison des contenus payants derrière une API privée ; masquer une leçon dans React ou stocker uniquement son droit d'accès en base ne protège pas son JSON public.
 
@@ -750,7 +752,7 @@ Les prochaines évolutions naturelles comprennent notamment :
 
 - terminer le parcours Quotidien ;
 - relier davantage les Jeux au suivi de progression et aux révisions ;
-- unifier davantage le suivi des exercices ;
+- exploiter l'historique d'exercices dans les recommandations personnalisées ;
 - renforcer les exercices ;
 - ajouter davantage de tests de données ;
 - harmoniser la couverture des niveaux CECRL ;

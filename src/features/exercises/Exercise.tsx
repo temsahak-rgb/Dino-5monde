@@ -1,6 +1,7 @@
 import {
     useEffect,
     useMemo,
+    useRef,
     useState
 } from "react";
 
@@ -16,6 +17,9 @@ import {
 import {
     saveMistake
 } from "../../core/reviewSignalEngine.js";
+import {
+    useExerciseTracking
+} from "../../services/backend/ExerciseTrackingProvider.js";
 
 import {
     useI18n
@@ -81,6 +85,11 @@ function Exercise({
         localizedValue,
         t
     } = useI18n();
+    const {
+        recordAttempt
+    } = useExerciseTracking();
+    const resultRecorded =
+        useRef(false);
 
     /*
      * Question selection and option randomization are performed once for the
@@ -174,6 +183,8 @@ function Exercise({
             setOrderingSelection(
                 []
             );
+            resultRecorded.current =
+                false;
         },
         [
             section.id
@@ -202,11 +213,32 @@ function Exercise({
                 section.id,
                 contentType
             );
+
+            if (
+                questions.length > 0
+                && !resultRecorded.current
+            ) {
+                resultRecorded.current = true;
+                recordAttempt({
+                    activityId:
+                        lessonId,
+                    contentType,
+                    correctAnswers:
+                        correctCount,
+                    exerciseId:
+                        section.id,
+                    totalQuestions:
+                        questions.length
+                });
+            }
         },
         [
             contentType,
+            correctCount,
             finished,
             lessonId,
+            questions.length,
+            recordAttempt,
             section.id
         ]
     );

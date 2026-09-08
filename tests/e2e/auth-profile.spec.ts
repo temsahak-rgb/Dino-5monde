@@ -131,8 +131,8 @@ async function prepareSignedInTravelLesson(
                     "TR-006": {
                         completedSections: [
                             "TR-006-1",
+                            "TR-006-2",
                             "TR-006-3",
-                            "TR-006-4"
                         ],
                         currentSection: 0,
                         lastAccessed:
@@ -418,6 +418,21 @@ test.describe(
                     }
                 );
 
+                await page.route(
+                    "**/rest/v1/learner_exercise_attempts**",
+                    async route => {
+                        if (await fulfillPreflight(route)) {
+                            return;
+                        }
+
+                        await route.fulfill({
+                            headers: jsonHeaders(),
+                            json: [],
+                            status: 200
+                        });
+                    }
+                );
+
                 await page.goto("/profile");
                 await expect(page).toHaveURL(
                     /\/auth\?returnTo=%2Fprofile$/
@@ -506,15 +521,26 @@ test.describe(
                 let claimed = false;
                 let rpcCalls = 0;
                 let progressRpcCalls = 0;
+                let attemptRpcCalls = 0;
                 const unexpectedRequests:
                     string[] = [];
                 const awardedAt =
                     "2026-09-08T10:00:00.000Z";
                 const remoteSections = new Set([
                     "TR-006-1",
+                    "TR-006-2",
                     "TR-006-3",
-                    "TR-006-4"
                 ]);
+                const remoteAttempts: Array<{
+                    activity_id: string;
+                    completed_at: string;
+                    content_type: "travel";
+                    correct_answers: number;
+                    exercise_id: string;
+                    id: string;
+                    level: null;
+                    total_questions: number;
+                }> = [];
 
                 await page.route(
                     "https://supabase.test/**",
@@ -596,6 +622,81 @@ test.describe(
                                 headers:
                                     jsonHeaders(),
                                 json: [],
+                                status: 200
+                            });
+                            return;
+                        }
+
+                        if (
+                            path
+                            === "/rest/v1/learner_exercise_attempts"
+                        ) {
+                            await route.fulfill({
+                                headers:
+                                    jsonHeaders(),
+                                json:
+                                    remoteAttempts,
+                                status: 200
+                            });
+                            return;
+                        }
+
+                        if (
+                            path
+                            === "/rest/v1/rpc/record_exercise_attempt"
+                        ) {
+                            attemptRpcCalls += 1;
+                            const body = request.postDataJSON() as Record<
+                                string,
+                                unknown
+                            >;
+
+                            expect(body).toMatchObject({
+                                p_activity_id:
+                                    "TR-006",
+                                p_content_type:
+                                    "travel",
+                                p_correct_answers: 3,
+                                p_exercise_id:
+                                    "TR-006-4",
+                                p_level: null,
+                                p_total_questions: 3
+                            });
+                            const attempt = {
+                                activity_id:
+                                    String(body.p_activity_id),
+                                completed_at:
+                                    String(body.p_completed_at),
+                                content_type:
+                                    "travel" as const,
+                                correct_answers:
+                                    Number(body.p_correct_answers),
+                                exercise_id:
+                                    String(body.p_exercise_id),
+                                id:
+                                    String(body.p_attempt_id),
+                                level: null,
+                                total_questions:
+                                    Number(body.p_total_questions)
+                            };
+
+                            if (
+                                !remoteAttempts.some(
+                                    current =>
+                                        current.id === attempt.id
+                                )
+                            ) {
+                                remoteAttempts.push(attempt);
+                            }
+
+                            await route.fulfill({
+                                headers:
+                                    jsonHeaders(),
+                                json: [{
+                                    ...attempt,
+                                    attempt_id:
+                                        attempt.id
+                                }],
                                 status: 200
                             });
                             return;
@@ -802,12 +903,34 @@ test.describe(
                 await page.getByRole(
                     "button",
                     {
-                        name: /Mini-Dialogue : À la réception/u
+                        name: /Quiz Rapide : À l'hôtel/u
                     }
                 ).click();
+
+                for (let question = 0; question < 3; question += 1) {
+                    await page.getByRole(
+                        "button",
+                        {
+                            name: /Le petit-déjeuner est-il inclus \?|❌ غلط|من یک رزرو دارم\./u
+                        }
+                    ).click();
+                    await page.getByRole(
+                        "button",
+                        {
+                            name: /Question suivante|Terminer/u
+                        }
+                    ).click();
+                }
+
+                await expect(
+                    page.getByText("3/3")
+                ).toBeVisible();
+                await expect.poll(
+                    () => attemptRpcCalls
+                ).toBe(1);
                 await page.getByRole(
                     "button",
-                    { name: /Continuer/u }
+                    { name: "Retour à la leçon" }
                 ).click();
                 await expect(
                     page.getByText("4 / 4")
@@ -832,6 +955,7 @@ test.describe(
                 expect(balance).toBe(105);
                 expect(rpcCalls).toBe(1);
                 expect(progressRpcCalls).toBe(3);
+                expect(attemptRpcCalls).toBe(1);
 
                 await page.goto("/profile");
                 await expect(
@@ -858,6 +982,27 @@ test.describe(
                     )
                 ).toContainText(
                     "synchronisées sur ce compte"
+                );
+                const exerciseHistory =
+                    page.getByLabel(
+                        "Mes exercices"
+                    );
+                await expect(
+                    exerciseHistory
+                ).toContainText("1");
+                await expect(
+                    exerciseHistory
+                ).toContainText("100%");
+                await expect(
+                    exerciseHistory.getByRole(
+                        "link",
+                        {
+                            name: "Voyage · TR-006"
+                        }
+                    )
+                ).toHaveAttribute(
+                    "href",
+                    "/travel/TR-006"
                 );
                 const progressDashboard =
                     page.getByLabel(

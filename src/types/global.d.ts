@@ -197,6 +197,26 @@ export interface LessonProgress {
     lastAccessed: string | null;
 }
 
+export type ExerciseAttemptContentType =
+    | "grammar"
+    | "travel"
+    | "vocabulary";
+
+export interface ExerciseAttemptDraft {
+    activityId: string;
+    contentType: ExerciseAttemptContentType;
+    correctAnswers: number;
+    exerciseId: string;
+    level?: Level;
+    totalQuestions: number;
+}
+
+export interface ExerciseAttempt
+    extends ExerciseAttemptDraft {
+    attemptId: string;
+    completedAt: string;
+}
+
 export interface MistakeRecord {
     id?: string;
     lessonId: string;
