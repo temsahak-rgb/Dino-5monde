@@ -64,6 +64,28 @@ function PracticeIndexPage() {
             />
 
             <Section>
+                <Link
+                    to="/practice/review"
+                    className="block text-inherit no-underline"
+                >
+                    <Card
+                        interactive
+                        className="flex items-center gap-4 border-dino-200 bg-dino-50 p-5"
+                    >
+                        <span className="text-3xl" aria-hidden="true">🔁</span>
+                        <div>
+                            <h2 className="text-lg font-bold text-dino-900">
+                                {t("review.title")}
+                            </h2>
+                            <p className="mt-1 text-sm leading-5 text-dino-800">
+                                {t("review.cardDescription")}
+                            </p>
+                        </div>
+                    </Card>
+                </Link>
+            </Section>
+
+            <Section>
                 <SectionHeader
                     title={t("practice.gamesTitle")}
                     description={t("practice.gamesDescription")}

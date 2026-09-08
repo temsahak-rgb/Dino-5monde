@@ -11,6 +11,7 @@ import type {
 
 export {
     clearVocabularyCache,
+    getAllWeakWords,
     getWeakWords,
     loadVocabularyIndex,
     loadVocabularyPack,
@@ -401,4 +402,20 @@ function createFreshDataUrl(
     );
 
     return url.href;
+}
+
+/** Returns a defensive snapshot of every pack's weak-word collection. */
+function getAllWeakWords():
+    VocabWeakMap {
+    const weakMap =
+        readWeakWordMap();
+
+    return Object.fromEntries(
+        Object.entries(weakMap).map(
+            ([packId, words]) => [
+                packId,
+                [...words]
+            ]
+        )
+    );
 }

@@ -2,7 +2,7 @@
 
 # React application dependency maps
 
-The application contains 99 local modules reachable from `src/main.tsx`, 297 runtime imports and 86 type-only imports.
+The application contains 102 local modules reachable from `src/main.tsx`, 316 runtime imports and 89 type-only imports.
 The generator rejects runtime dependency cycles.
 
 ## React architecture overview
@@ -39,16 +39,16 @@ flowchart TB
     G1 --> G3
     G1 --> G10
     G3 --> G4
-    G3 -->|22 imports| G5
+    G3 -->|24 imports| G5
     G3 --> G7
     G3 --> G9
     G4 -->|2 imports| G6
     G5 -->|9 imports| G2
-    G5 -->|50 imports| G6
-    G5 -->|13 imports| G7
-    G5 -->|20 imports| G8
-    G5 -->|8 imports| G9
-    G5 -->|21 imports| G10
+    G5 -->|55 imports| G6
+    G5 -->|14 imports| G7
+    G5 -->|26 imports| G8
+    G5 -->|11 imports| G9
+    G5 -->|23 imports| G10
     G6 --> G7
     G6 -->|2 imports| G10
     G7 -->|3 imports| G2
@@ -108,49 +108,51 @@ flowchart TB
         M21["pages/PracticeCatalogPage"]
         M22["pages/PracticeGamePage"]
         M23["pages/PracticeIndexPage"]
-        M24["pages/ProfilePage"]
-        M25["pages/ShopPage"]
-        M26["pages/TravelIndexPage"]
-        M27["pages/TravelLessonPage"]
-        M28["pages/VocabularyIndexPage"]
-        M29["pages/VocabularyLevelPage"]
-        M30["pages/VocabularyPackPage"]
-        M31["pages/WorkWithUsPage"]
+        M24["pages/PracticeReviewPage"]
+        M25["pages/ProfilePage"]
+        M26["pages/ShopPage"]
+        M27["pages/TravelIndexPage"]
+        M28["pages/TravelLessonPage"]
+        M29["pages/VocabularyIndexPage"]
+        M30["pages/VocabularyLevelPage"]
+        M31["pages/VocabularyPackPage"]
+        M32["pages/VocabularyReviewPage"]
+        M33["pages/WorkWithUsPage"]
     end
     subgraph S6["Shared React components"]
         direction TB
-        M32["components/Footer"]
-        M33["components/Navbar"]
+        M34["components/Footer"]
+        M35["components/Navbar"]
     end
     subgraph S7["Feature React components"]
         direction TB
-        M34["features/shop/LessonAccessBoundary"]
+        M36["features/shop/LessonAccessBoundary"]
     end
     subgraph S9["Core engines and modules"]
         direction TB
-        M35["core/returnTo"]
+        M37["core/returnTo"]
     end
     subgraph S10["Internationalization"]
         direction TB
-        M36["i18n/I18nProvider"]
+        M38["i18n/I18nProvider"]
     end
     subgraph S12["Styles"]
         direction TB
-        M37["styles/style"]
+        M39["styles/style"]
     end
     M1 --> M7
-    M1 --> M36
+    M1 --> M38
     M1 --> M2
     M1 --> M3
     M1 --> M4
     M1 --> M5
     M1 --> M6
-    M9 --> M32
-    M9 --> M33
+    M9 --> M34
+    M9 --> M35
     M7 --> M9
     M7 --> M8
-    M7 --> M35
-    M7 --> M34
+    M7 --> M37
+    M7 --> M36
     M7 --> M10
     M7 --> M11
     M7 --> M12
@@ -173,8 +175,10 @@ flowchart TB
     M7 --> M29
     M7 --> M30
     M7 --> M31
+    M7 --> M32
+    M7 --> M33
     M0 --> M1
-    M0 --> M37
+    M0 --> M39
 ```
 
 ## Focused route branches
@@ -463,111 +467,118 @@ flowchart TB
         M0["pages/VocabularyIndexPage"]:::focus
         M1["pages/VocabularyLevelPage"]:::focus
         M2["pages/VocabularyPackPage"]:::focus
+        M3["pages/VocabularyReviewPage"]:::focus
     end
     subgraph S6["Shared React components"]
         direction TB
-        M3["components/Controls"]
-        M4["components/Feedback"]
-        M5["components/Layout"]
-        M6["components/RichText"]
+        M4["components/Controls"]
+        M5["components/Feedback"]
+        M6["components/Layout"]
+        M7["components/RichText"]
     end
     subgraph S7["Feature React components"]
         direction TB
-        M7["features/vocabulary/VocabularyCatalog"]:::focus
-        M8["features/vocabulary/VocabularyCrossword"]:::focus
-        M9["features/vocabulary/VocabularyFlashcards"]:::focus
-        M10["features/vocabulary/VocabularyGame"]:::focus
-        M11["features/vocabulary/VocabularyGameShell"]:::focus
-        M12["features/vocabulary/VocabularyHangman"]:::focus
-        M13["features/vocabulary/VocabularyPack"]:::focus
-        M14["features/vocabulary/VocabularyQuiz"]:::focus
-        M15["features/vocabulary/VocabularyStory"]:::focus
-        M16["features/vocabulary/VocabularyWordSearch"]:::focus
+        M8["features/vocabulary/VocabularyCatalog"]:::focus
+        M9["features/vocabulary/VocabularyCrossword"]:::focus
+        M10["features/vocabulary/VocabularyFlashcards"]:::focus
+        M11["features/vocabulary/VocabularyGame"]:::focus
+        M12["features/vocabulary/VocabularyGameShell"]:::focus
+        M13["features/vocabulary/VocabularyHangman"]:::focus
+        M14["features/vocabulary/VocabularyPack"]:::focus
+        M15["features/vocabulary/VocabularyQuiz"]:::focus
+        M16["features/vocabulary/VocabularyStory"]:::focus
+        M17["features/vocabulary/VocabularyWordSearch"]:::focus
     end
     subgraph S8["Feature engines and modules"]
         direction TB
-        M17["features/shop/shopOfferManifest"]
-        M18["features/vocabulary/games/crosswordEngine"]:::focus
-        M19["features/vocabulary/games/gameWordsEngine"]:::focus
-        M20["features/vocabulary/games/hangmanEngine"]:::focus
-        M21["features/vocabulary/games/wordSearchEngine"]:::focus
-        M22["features/vocabulary/vocabularyEngine"]:::focus
-        M23["features/vocabulary/vocabularyGameEngine"]:::focus
-        M24["features/vocabulary/vocabularyLevels"]:::focus
-        M25["features/vocabulary/vocabularyRepository"]:::focus
+        M18["features/shop/shopOfferManifest"]
+        M19["features/vocabulary/games/crosswordEngine"]:::focus
+        M20["features/vocabulary/games/gameWordsEngine"]:::focus
+        M21["features/vocabulary/games/hangmanEngine"]:::focus
+        M22["features/vocabulary/games/wordSearchEngine"]:::focus
+        M23["features/vocabulary/vocabularyEngine"]:::focus
+        M24["features/vocabulary/vocabularyGameEngine"]:::focus
+        M25["features/vocabulary/vocabularyLevels"]:::focus
+        M26["features/vocabulary/vocabularyRepository"]:::focus
     end
     subgraph S9["Core engines and modules"]
         direction TB
-        M26["core/staticData"]
+        M27["core/staticData"]
     end
     subgraph S10["Internationalization"]
         direction TB
-        M27["i18n/I18nProvider"]
+        M28["i18n/I18nProvider"]
     end
-    M18 --> M19
-    M20 --> M19
-    M21 --> M19
-    M7 --> M17
-    M7 --> M27
-    M7 --> M3
-    M7 --> M5
-    M8 --> M23
-    M8 --> M11
-    M8 --> M27
-    M8 --> M3
-    M9 --> M26
-    M9 --> M25
-    M9 --> M27
-    M9 --> M3
-    M9 --> M5
-    M10 --> M8
-    M10 --> M12
-    M10 --> M16
-    M23 --> M18
-    M23 --> M19
-    M23 --> M20
-    M23 --> M21
-    M11 --> M27
-    M11 --> M3
-    M12 --> M23
-    M12 --> M11
-    M12 --> M27
-    M13 --> M9
-    M13 --> M10
-    M13 --> M23
-    M13 --> M14
-    M13 --> M25
-    M13 --> M15
-    M13 --> M27
-    M13 --> M3
-    M13 --> M5
-    M14 --> M27
-    M14 --> M3
+    M19 --> M20
+    M21 --> M20
+    M22 --> M20
+    M8 --> M18
+    M8 --> M28
+    M8 --> M4
+    M8 --> M6
+    M9 --> M24
+    M9 --> M12
+    M9 --> M28
+    M9 --> M4
+    M10 --> M27
+    M10 --> M26
+    M10 --> M28
+    M10 --> M4
+    M10 --> M6
+    M11 --> M9
+    M11 --> M13
+    M11 --> M17
+    M24 --> M19
+    M24 --> M20
+    M24 --> M21
+    M24 --> M22
+    M12 --> M28
+    M12 --> M4
+    M13 --> M24
+    M13 --> M12
+    M13 --> M28
+    M14 --> M10
+    M14 --> M11
+    M14 --> M24
+    M14 --> M15
+    M14 --> M26
+    M14 --> M16
+    M14 --> M28
+    M14 --> M4
     M14 --> M6
-    M25 --> M26
-    M15 --> M22
-    M15 --> M27
-    M15 --> M3
+    M15 --> M28
+    M15 --> M4
+    M15 --> M7
+    M26 --> M27
     M16 --> M23
-    M16 --> M11
-    M16 --> M27
-    M0 --> M27
-    M0 --> M3
-    M0 --> M5
-    M1 --> M7
-    M1 --> M24
+    M16 --> M28
+    M16 --> M4
+    M17 --> M24
+    M17 --> M12
+    M17 --> M28
+    M0 --> M28
+    M0 --> M4
+    M0 --> M6
+    M1 --> M8
     M1 --> M25
-    M1 --> M27
-    M1 --> M3
+    M1 --> M26
+    M1 --> M28
     M1 --> M4
     M1 --> M5
-    M2 --> M24
-    M2 --> M13
+    M1 --> M6
     M2 --> M25
-    M2 --> M27
-    M2 --> M3
+    M2 --> M14
+    M2 --> M26
+    M2 --> M28
     M2 --> M4
     M2 --> M5
+    M2 --> M6
+    M3 --> M10
+    M3 --> M25
+    M3 --> M26
+    M3 --> M28
+    M3 --> M5
+    M3 --> M6
 ```
 
 </details>
@@ -672,6 +683,6 @@ flowchart TB
 ## Enforced invariants
 
 - No runtime dependency cycle.
-- 86 type-only imports are tracked but hidden from diagrams to avoid visual noise.
+- 89 type-only imports are tracked but hidden from diagrams to avoid visual noise.
 - Every module and edge is derived from the local imports reachable from `src/main.tsx`.
 - External packages are intentionally excluded so the diagrams stay focused on application architecture.

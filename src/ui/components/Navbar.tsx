@@ -491,6 +491,19 @@ function Navbar({
                                     "
                                 >
                                     <NavigationLink
+                                        to="/practice/review"
+                                        icon="🔁"
+                                        label={
+                                            t(
+                                                "navbar.review"
+                                            )
+                                        }
+                                        onNavigate={
+                                            closeMenu
+                                        }
+                                    />
+
+                                    <NavigationLink
                                         to="/grammar"
                                         icon="📐"
                                         label={
