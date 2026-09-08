@@ -30,6 +30,9 @@ import {
 import {
     useLearningReward
 } from "../../services/backend/LearningRewardsProvider.js";
+import {
+    useLessonProgressSync
+} from "../../services/backend/LessonProgressSyncProvider.js";
 
 import type {
     LessonProgress,
@@ -158,6 +161,9 @@ function TravelLesson({
         "travel_lesson",
         lessonId
     );
+    const {
+        status: progressSyncStatus
+    } = useLessonProgressSync();
 
     const [
         rewardClaimFailed,
@@ -178,17 +184,15 @@ function TravelLesson({
 
     const lessonComplete =
         sections.length > 0
-        && (
-            progress.status
-                === "completed"
-            || completedCount
-                === sections.length
-        );
+        && completedCount
+            === sections.length;
 
     useEffect(
         () => {
             if (
                 !lessonComplete
+                || progressSyncStatus
+                    !== "ready"
                 || rewardStatus
                     !== "ready"
                 || eligibleCredits
@@ -209,8 +213,6 @@ function TravelLesson({
             void claimReward()
                 .catch(
                     () => {
-                        attemptedReward.current =
-                            null;
                         setRewardClaimFailed(
                             true
                         );
@@ -223,6 +225,7 @@ function TravelLesson({
             eligibleCredits,
             lessonComplete,
             lessonId,
+            progressSyncStatus,
             rewardClaiming,
             rewardStatus
         ]
@@ -537,6 +540,8 @@ function TravelLesson({
         section:
             TravelSection
     ): void {
+        resetRewardAttempt();
+
         markSectionCompleted(
             lessonId,
             section.id,
@@ -558,6 +563,8 @@ function TravelLesson({
      */
     function completeExercise():
         void {
+        resetRewardAttempt();
+
         refreshAndFinalizeProgress();
 
         setSelectedSectionIndex(
@@ -622,6 +629,11 @@ function TravelLesson({
         setProgress(
             updatedProgress
         );
+    }
+
+    function resetRewardAttempt(): void {
+        attemptedReward.current = null;
+        setRewardClaimFailed(false);
     }
 }
 

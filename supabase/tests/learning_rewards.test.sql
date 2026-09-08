@@ -3,7 +3,7 @@ begin;
 create extension if not exists pgtap
 with schema extensions;
 
-select plan(26);
+select plan(33);
 
 select has_table(
     'public',
@@ -21,6 +21,12 @@ select has_function(
     array['text', 'text'],
     'the atomic reward function exists'
 );
+select has_column(
+    'public',
+    'learning_reward_rules',
+    'required_sections',
+    'reward rules own their completion requirements'
+);
 select is(
     (
         select count(*)
@@ -31,6 +37,25 @@ select is(
     ),
     31::bigint,
     'all launch Travel rewards are active and server-priced'
+);
+select results_eq(
+    $$
+        select required_sections
+        from public.learning_reward_rules
+        where activity_type = 'travel_lesson'
+          and activity_id = 'TR-006'
+    $$,
+    $$
+        values (
+            array[
+                'TR-006-1',
+                'TR-006-2',
+                'TR-006-3',
+                'TR-006-4'
+            ]::text[]
+        )
+    $$,
+    'the completion rule contains every real TR-006 section'
 );
 
 insert into auth.users (
@@ -110,6 +135,67 @@ select is(
     ),
     0::bigint,
     'a learner initially sees no reward claim'
+);
+select lives_ok(
+    $$
+        select *
+        from public.sync_lesson_progress(
+            'travel',
+            'TR-006',
+            'completed',
+            array['TR-006-1'],
+            1,
+            now()
+        )
+    $$,
+    'a browser may synchronize partial Travel progress'
+);
+select throws_ok(
+    $$
+        select *
+        from public.claim_learning_reward(
+            'travel_lesson',
+            'TR-006'
+        )
+    $$,
+    'P0001',
+    'learning_activity_incomplete',
+    'a browser-computed completed status cannot unlock a reward'
+);
+select is(
+    (
+        select credits
+        from public.learner_wallets
+    ),
+    100,
+    'an incomplete activity leaves the wallet untouched'
+);
+select is(
+    (
+        select count(*)
+        from public.learner_activity_rewards
+    ),
+    0::bigint,
+    'an incomplete activity creates no reward proof'
+);
+select lives_ok(
+    $$
+        select *
+        from public.sync_lesson_progress(
+            'travel',
+            'TR-006',
+            'completed',
+            array[
+                'TR-006-1',
+                'TR-006-2',
+                'TR-006-3',
+                'TR-006-4'
+            ],
+            4,
+            now()
+        )
+    $$,
+    'all required sections can be synchronized before claiming'
 );
 select results_eq(
     $$

@@ -45,6 +45,26 @@ async function readShopMigrations():
     ).join("\n");
 }
 
+async function readLearningRewardMigrations():
+    Promise<string> {
+    const paths = [
+        "supabase/migrations/20260908110000_create_learning_rewards.sql",
+        "supabase/migrations/20260908190000_verify_learning_reward_completion.sql"
+    ];
+
+    return (
+        await Promise.all(
+            paths.map(
+                path =>
+                    readFile(
+                        resolve(root, path),
+                        "utf8"
+                    )
+            )
+        )
+    ).join("\n");
+}
+
 test(
     "learner profiles are private and Saurus allocation is server-managed",
     async () => {
@@ -399,13 +419,7 @@ test(
     "learning rewards are server-priced, private and idempotent",
     async () => {
         const migration =
-            await readFile(
-                resolve(
-                    root,
-                    "supabase/migrations/20260908110000_create_learning_rewards.sql"
-                ),
-                "utf8"
-            );
+            await readLearningRewardMigrations();
 
         for (
             const table
@@ -437,6 +451,18 @@ test(
         assert.match(
             migration,
             /select rules\.reward_credits[\s\S]*from public\.learning_reward_rules/u
+        );
+        assert.match(
+            migration,
+            /required_sections text\[\]/u
+        );
+        assert.match(
+            migration,
+            /progress\.completed_sections @> required_section_ids/u
+        );
+        assert.match(
+            migration,
+            /message = 'learning_activity_incomplete'/u
         );
         assert.match(
             migration,
@@ -478,6 +504,87 @@ test(
             migration,
             /claim_learning_reward[\s\S]*p_(?:credits|amount|reward)/u
         );
+    }
+);
+
+test(
+    "Travel reward completion rules mirror the real lesson sections",
+    async () => {
+        const [
+            migration,
+            travelCatalogSource
+        ] = await Promise.all([
+            readFile(
+                resolve(
+                    root,
+                    "supabase/migrations/20260908190000_verify_learning_reward_completion.sql"
+                ),
+                "utf8"
+            ),
+            readFile(
+                resolve(
+                    root,
+                    "data/travel/lessons.json"
+                ),
+                "utf8"
+            )
+        ]);
+        const travelCatalog =
+            JSON.parse(
+                travelCatalogSource
+            ) as Array<{
+                id: string;
+            }>;
+        const completionRules = new Map(
+            [
+                ...migration.matchAll(
+                    /\('([^']+)',\s*array\[([^\]]+)\]::text\[\]\)/gu
+                )
+            ].map(match => [
+                match[1],
+                [
+                    ...match[2].matchAll(
+                        /'([^']+)'/gu
+                    )
+                ].map(
+                    sectionMatch =>
+                        sectionMatch[1]
+                )
+            ])
+        );
+
+        assert.equal(
+            completionRules.size,
+            travelCatalog.length,
+            "Each Travel lesson must have exactly one completion rule"
+        );
+
+        for (const { id } of travelCatalog) {
+            const lessonSource = await readFile(
+                resolve(
+                    root,
+                    "data/travel/lessons",
+                    `${id}.json`
+                ),
+                "utf8"
+            );
+            const lesson = JSON.parse(
+                lessonSource
+            ) as {
+                miniLessons?: Array<{ id: string }>;
+                sections?: Array<{ id: string }>;
+            };
+            const sections =
+                lesson.miniLessons
+                ?? lesson.sections
+                ?? [];
+
+            assert.deepEqual(
+                completionRules.get(id),
+                sections.map(section => section.id),
+                `Completion rule drift for Travel lesson ${id}`
+            );
+        }
     }
 );
 
