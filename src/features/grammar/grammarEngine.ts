@@ -11,7 +11,7 @@ import type {
 
 import {
     getAccountScopedStorageKey
-} from "../../core/progressEngine.js";
+} from "../../core/learnerStorage.js";
 
 export {
     getGrammar,

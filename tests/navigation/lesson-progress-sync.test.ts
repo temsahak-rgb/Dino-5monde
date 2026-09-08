@@ -3,11 +3,19 @@ import test from "node:test";
 
 import {
     getAllLessonProgress,
+    getAllMistakes,
     markSectionCompleted,
     mergeLessonProgress,
     mergeRemoteLessonProgress,
-    setLessonProgressAccount
+    saveMistake
 } from "../../src/core/progressEngine.js";
+import {
+    setActiveLearnerAccount
+} from "../../src/core/learnerStorage.js";
+import {
+    getAllWeakWords,
+    setWeakWord
+} from "../../src/features/vocabulary/vocabularyRepository.js";
 
 class MemoryStorage {
     private readonly values = new Map<string, string>();
@@ -117,18 +125,18 @@ test(
         memoryStorage.clear();
         markSectionCompleted("TR-006", "arrival", "travel");
 
-        setLessonProgressAccount("learner-one");
+        setActiveLearnerAccount("learner-one");
         assert.equal(
             getAllLessonProgress()[0]?.lessonId,
             "TR-006"
         );
         markSectionCompleted("A1-G-001", "intro", "grammar");
 
-        setLessonProgressAccount("learner-two");
+        setActiveLearnerAccount("learner-two");
         assert.deepEqual(getAllLessonProgress(), []);
         markSectionCompleted("TR-010", "menu", "travel");
 
-        setLessonProgressAccount("learner-one");
+        setActiveLearnerAccount("learner-one");
         assert.deepEqual(
             getAllLessonProgress().map(record => record.lessonId),
             ["TR-006", "A1-G-001"]
@@ -159,6 +167,40 @@ test(
         assert.equal(
             getAllLessonProgress()[0]?.progress.status,
             "completed"
+        );
+    }
+);
+
+test(
+    "mistakes and weak words stay isolated between local accounts",
+    () => {
+        memoryStorage.clear();
+        saveMistake(
+            "A1-G-001",
+            "exercise",
+            0,
+            1,
+            0
+        );
+        setWeakWord("pack-one", "bonjour", true);
+
+        setActiveLearnerAccount("learner-one");
+        assert.equal(getAllMistakes().length, 1);
+        assert.deepEqual(
+            getAllWeakWords(),
+            { "pack-one": ["bonjour"] }
+        );
+
+        setActiveLearnerAccount("learner-two");
+        assert.deepEqual(getAllMistakes(), []);
+        assert.deepEqual(getAllWeakWords(), {});
+        setWeakWord("pack-two", "merci", true);
+
+        setActiveLearnerAccount("learner-one");
+        assert.equal(getAllMistakes().length, 1);
+        assert.deepEqual(
+            getAllWeakWords(),
+            { "pack-one": ["bonjour"] }
         );
     }
 );

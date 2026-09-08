@@ -4,6 +4,10 @@ import type {
     MistakeRecord
 } from "../types/global.js";
 
+import {
+    getAccountScopedStorageKey
+} from "./learnerStorage.js";
+
 export {
     clearMistakesForLesson,
     getAllLessonProgress,
@@ -14,7 +18,6 @@ export {
     markSectionCompleted,
     mergeLessonProgress,
     mergeRemoteLessonProgress,
-    setLessonProgressAccount,
     saveMistake
 };
 
@@ -38,14 +41,8 @@ const LESSON_PROGRESS_CHANGE_EVENT =
     "dino:lessonprogresschange";
 const LESSON_PROGRESS_IMPORTED_EVENT =
     "dino:lessonprogressimported";
-const LESSON_PROGRESS_ACCOUNT_EVENT =
-    "dino:lessonprogressaccountchange";
 const LESSON_PROGRESS_CONTENT_TYPES_STORAGE_KEY =
     "dino_lesson_progress_content_types";
-const LESSON_PROGRESS_ACTIVE_ACCOUNT_STORAGE_KEY =
-    "dino_lesson_progress_active_account";
-const LESSON_PROGRESS_ANONYMOUS_ADOPTED_STORAGE_KEY =
-    "dino_lesson_progress_anonymous_adopted";
 
 /**
  * Local persistence for lesson progress and user mistakes.
@@ -370,103 +367,6 @@ function saveLessonContentType(
     );
 }
 
-/** Selects one private local progress namespace for the active account. */
-function setLessonProgressAccount(
-    accountId: string | null
-): void {
-    if (
-        accountId !== null
-        && (
-            !accountId
-            || accountId.trim() !== accountId
-            || accountId.length > 160
-        )
-    ) {
-        throw new TypeError("Invalid lesson progress account");
-    }
-
-    const previousAccount = localStorage.getItem(
-        LESSON_PROGRESS_ACTIVE_ACCOUNT_STORAGE_KEY
-    );
-
-    if (accountId === null) {
-        localStorage.removeItem(
-            LESSON_PROGRESS_ACTIVE_ACCOUNT_STORAGE_KEY
-        );
-    } else {
-        adoptAnonymousProgress(accountId);
-        localStorage.setItem(
-            LESSON_PROGRESS_ACTIVE_ACCOUNT_STORAGE_KEY,
-            accountId
-        );
-    }
-
-    if (previousAccount !== accountId) {
-        dispatchLessonProgressAccountChange();
-    }
-}
-
-function dispatchLessonProgressAccountChange(): void {
-    if (
-        typeof window === "undefined"
-        || typeof Event === "undefined"
-    ) {
-        return;
-    }
-
-    window.dispatchEvent(
-        new Event(LESSON_PROGRESS_ACCOUNT_EVENT)
-    );
-}
-
-function adoptAnonymousProgress(
-    accountId: string
-): void {
-    if (
-        localStorage.getItem(
-            LESSON_PROGRESS_ANONYMOUS_ADOPTED_STORAGE_KEY
-        ) === "true"
-    ) {
-        return;
-    }
-
-    for (
-        const baseKey
-        of [
-            LESSON_PROGRESS_STORAGE_KEY,
-            LESSON_PROGRESS_CONTENT_TYPES_STORAGE_KEY,
-            "dino_progress"
-        ]
-    ) {
-        const anonymousValue = localStorage.getItem(baseKey);
-
-        if (anonymousValue !== null) {
-            localStorage.setItem(
-                `${baseKey}:${accountId}`,
-                anonymousValue
-            );
-            localStorage.removeItem(baseKey);
-        }
-    }
-
-    localStorage.setItem(
-        LESSON_PROGRESS_ANONYMOUS_ADOPTED_STORAGE_KEY,
-        "true"
-    );
-}
-
-function getAccountScopedStorageKey(
-    baseKey: string
-): string {
-    const accountId = localStorage.getItem(
-        LESSON_PROGRESS_ACTIVE_ACCOUNT_STORAGE_KEY
-    );
-
-    return accountId
-        ? `${baseKey}:${accountId}`
-        : baseKey;
-}
-
 function resolveLessonContentType(
     lessonId: string,
     storedContentType: string | undefined
@@ -532,7 +432,9 @@ function saveMistake(
     });
 
     localStorage.setItem(
-        MISTAKES_STORAGE_KEY,
+        getAccountScopedStorageKey(
+            MISTAKES_STORAGE_KEY
+        ),
         JSON.stringify(
             allMistakes
         )
@@ -576,7 +478,9 @@ function clearMistakesForLesson(
             );
 
     localStorage.setItem(
-        MISTAKES_STORAGE_KEY,
+        getAccountScopedStorageKey(
+            MISTAKES_STORAGE_KEY
+        ),
         JSON.stringify(
             remainingMistakes
         )
@@ -633,7 +537,9 @@ function readMistakes():
     MistakeRecord[] {
     const raw =
         localStorage.getItem(
-            MISTAKES_STORAGE_KEY
+            getAccountScopedStorageKey(
+                MISTAKES_STORAGE_KEY
+            )
         );
 
     if (!raw) {
@@ -657,10 +563,8 @@ function readMistakes():
 }
 
 export {
-    LESSON_PROGRESS_ACCOUNT_EVENT,
     LESSON_PROGRESS_CHANGE_EVENT,
-    LESSON_PROGRESS_IMPORTED_EVENT,
-    getAccountScopedStorageKey
+    LESSON_PROGRESS_IMPORTED_EVENT
 };
 
 export type {
