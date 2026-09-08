@@ -68,7 +68,7 @@ The MVP is not intended to provide every feature of a complete learning platform
 | Search | ✅ Present |
 | News | ✅ Present |
 | Polls | ✅ Feature present |
-| Lesson shop and credits | ✅ `/shop`, catalogue and virtual-credit purchases |
+| Lesson shop and credits | ✅ `/shop`, purchases and five-credit Travel rewards |
 | Account and Profile | ✅ Passwordless email sign-in and private `Saurus` profile |
 | Daily, Games, global Exercises | Outside the published scope; no placeholder route is exposed |
 | Cross-device sync | ❌ Not implemented |
@@ -161,7 +161,9 @@ The repository also contains search, news and poll features. They complement the
 
 The shareable `/shop` route lists available lessons. Every new account starts with **100 credits** and can spend them to acquire a lesson; the balance is also visible under `/profile`. Credits are currently an internal virtual currency: no real-money payment provider is connected yet.
 
-Supabase stores wallets, acquired entitlements and an append-only transaction ledger. Row Level Security isolates each account, while a PostgreSQL function performs purchases atomically to prevent double charges and negative balances.
+Supabase stores wallets, acquired entitlements and an append-only transaction ledger. Row Level Security isolates each account. Purchases and learning rewards are atomic: completing a Travel lesson grants **five credits exactly once**, including after reloads or repeated requests. PostgreSQL—not the browser—owns the eligible activity list and reward amount. Recent rewards remain visible and clickable in the learner profile.
+
+Because learning progress is still local in this first environment, the browser currently reports completion. The backend already prevents arbitrary amounts and duplicate rewards; cross-device progress synchronisation will later add fully server-persisted completion proof.
 
 The learning corpus deliberately remains under `data/` and is public in the GitHub Pages build. Selling content for real money will therefore require private backend delivery; hiding a lesson in React or storing only its entitlement in the database does not protect publicly shipped JSON.
 

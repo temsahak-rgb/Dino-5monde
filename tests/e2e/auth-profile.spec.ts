@@ -79,6 +79,91 @@ async function prepareCompletedOnboarding(
     );
 }
 
+function createUser() {
+    const now =
+        "2026-09-08T10:00:00.000Z";
+
+    return {
+        app_metadata: {
+            provider: "email",
+            providers: [
+                "email"
+            ]
+        },
+        aud: "authenticated",
+        confirmed_at: now,
+        created_at: now,
+        email: "learner@example.com",
+        email_confirmed_at: now,
+        id: learnerId,
+        identities: [],
+        is_anonymous: false,
+        role: "authenticated",
+        updated_at: now,
+        user_metadata: {}
+    };
+}
+
+async function prepareSignedInCompletedTravelLesson(
+    page: Page
+): Promise<void> {
+    const accessToken =
+        createAccessToken();
+    const user =
+        createUser();
+
+    await page.addInitScript(
+        ({
+            sessionToken,
+            sessionUser
+        }) => {
+            localStorage.setItem(
+                "language",
+                "fr"
+            );
+            localStorage.setItem(
+                "currentPath",
+                "travel"
+            );
+            localStorage.setItem(
+                "dino_lessons_progress",
+                JSON.stringify({
+                    "TR-006": {
+                        completedSections: [],
+                        currentSection: 0,
+                        lastAccessed:
+                            "2026-09-08T10:00:00.000Z",
+                        status: "completed"
+                    }
+                })
+            );
+            localStorage.setItem(
+                "sb-supabase-auth-token",
+                JSON.stringify({
+                    access_token:
+                        sessionToken,
+                    expires_at:
+                        Math.floor(
+                            Date.now()
+                            / 1000
+                        ) + 3600,
+                    expires_in: 3600,
+                    refresh_token:
+                        "playwright-refresh-token",
+                    token_type: "bearer",
+                    user: sessionUser
+                })
+            );
+        },
+        {
+            sessionToken:
+                accessToken,
+            sessionUser:
+                user
+        }
+    );
+}
+
 test.describe(
     "email authentication and learner profile",
     () => {
@@ -269,6 +354,36 @@ test.describe(
                     }
                 );
 
+                await page.route(
+                    "**/rest/v1/learning_reward_rules**",
+                    async route => {
+                        if (await fulfillPreflight(route)) {
+                            return;
+                        }
+
+                        await route.fulfill({
+                            headers: jsonHeaders(),
+                            json: [],
+                            status: 200
+                        });
+                    }
+                );
+
+                await page.route(
+                    "**/rest/v1/learner_activity_rewards**",
+                    async route => {
+                        if (await fulfillPreflight(route)) {
+                            return;
+                        }
+
+                        await route.fulfill({
+                            headers: jsonHeaders(),
+                            json: [],
+                            status: 200
+                        });
+                    }
+                );
+
                 await page.goto("/profile");
                 await expect(page).toHaveURL(
                     /\/auth\?returnTo=%2Fprofile$/
@@ -306,6 +421,13 @@ test.describe(
                 await expect(
                     page.getByLabel("Mes crédits")
                 ).toContainText("100 crédits");
+                await expect(
+                    page.getByLabel(
+                        "Récompenses obtenues"
+                    )
+                ).toContainText(
+                    "Terminez une leçon Voyage"
+                );
 
                 await page.getByLabel("Nom affiché").fill("Mina");
                 await expect(
@@ -329,6 +451,233 @@ test.describe(
                 await expect(
                     page.getByText("Mina", { exact: true })
                 ).toBeVisible();
+            }
+        );
+
+        test(
+            "awards one completed Travel lesson once and lists it in the profile",
+            async ({ page }) => {
+                await prepareSignedInCompletedTravelLesson(
+                    page
+                );
+
+                let balance = 100;
+                let claimed = false;
+                let rpcCalls = 0;
+                const unexpectedRequests:
+                    string[] = [];
+                const awardedAt =
+                    "2026-09-08T10:00:00.000Z";
+
+                await page.route(
+                    "https://supabase.test/**",
+                    async route => {
+                        if (await fulfillPreflight(route)) {
+                            return;
+                        }
+
+                        const request =
+                            route.request();
+                        const path =
+                            new URL(
+                                request.url()
+                            ).pathname;
+
+                        if (
+                            path
+                            === "/auth/v1/user"
+                        ) {
+                            await route.fulfill({
+                                headers:
+                                    jsonHeaders(),
+                                json:
+                                    createUser(),
+                                status: 200
+                            });
+                            return;
+                        }
+
+                        if (
+                            path
+                            === "/rest/v1/learner_profiles"
+                        ) {
+                            await route.fulfill({
+                                headers:
+                                    jsonHeaders(),
+                                json: [],
+                                status: 200
+                            });
+                            return;
+                        }
+
+                        if (
+                            path
+                            === "/rest/v1/learning_reward_rules"
+                        ) {
+                            await route.fulfill({
+                                headers:
+                                    jsonHeaders(),
+                                json: [
+                                    {
+                                        activity_id:
+                                            "TR-006",
+                                        activity_type:
+                                            "travel_lesson",
+                                        reward_credits:
+                                            5
+                                    }
+                                ],
+                                status: 200
+                            });
+                            return;
+                        }
+
+                        if (
+                            path
+                            === "/rest/v1/learner_activity_rewards"
+                        ) {
+                            await route.fulfill({
+                                headers:
+                                    jsonHeaders(),
+                                json:
+                                    claimed
+                                        ? [
+                                            {
+                                                activity_id:
+                                                    "TR-006",
+                                                activity_type:
+                                                    "travel_lesson",
+                                                awarded_at:
+                                                    awardedAt,
+                                                credits_awarded:
+                                                    5
+                                            }
+                                        ]
+                                        : [],
+                                status: 200
+                            });
+                            return;
+                        }
+
+                        if (
+                            path
+                            === "/rest/v1/learner_wallets"
+                        ) {
+                            await route.fulfill({
+                                headers:
+                                    jsonHeaders(),
+                                json: [
+                                    {
+                                        created_at:
+                                            awardedAt,
+                                        credits:
+                                            balance,
+                                        updated_at:
+                                            awardedAt,
+                                        user_id:
+                                            learnerId
+                                    }
+                                ],
+                                status: 200
+                            });
+                            return;
+                        }
+
+                        if (
+                            path
+                            === "/rest/v1/rpc/claim_learning_reward"
+                        ) {
+                            rpcCalls += 1;
+
+                            expect(
+                                request.postDataJSON()
+                            ).toEqual({
+                                p_activity_id:
+                                    "TR-006",
+                                p_activity_type:
+                                    "travel_lesson"
+                            });
+
+                            const awarded =
+                                !claimed;
+
+                            if (awarded) {
+                                claimed = true;
+                                balance += 5;
+                            }
+
+                            await route.fulfill({
+                                headers:
+                                    jsonHeaders(),
+                                json: [
+                                    {
+                                        activity_id:
+                                            "TR-006",
+                                        activity_type:
+                                            "travel_lesson",
+                                        awarded,
+                                        awarded_at:
+                                            awardedAt,
+                                        credits_awarded:
+                                            5,
+                                        credits_remaining:
+                                            balance
+                                    }
+                                ],
+                                status: 200
+                            });
+                            return;
+                        }
+
+                        unexpectedRequests.push(
+                            `${request.method()} ${path}`
+                        );
+                        await route.abort();
+                    }
+                );
+
+                await page.goto(
+                    "/travel/TR-006"
+                );
+                await expect(
+                    page.getByText(
+                        "🎉 5 crédits gagnés"
+                    )
+                ).toBeVisible();
+                expect(balance).toBe(105);
+                expect(rpcCalls).toBe(1);
+
+                await page.reload();
+                await expect(
+                    page.getByText(
+                        "🎉 5 crédits gagnés"
+                    )
+                ).toBeVisible();
+                expect(balance).toBe(105);
+                expect(rpcCalls).toBe(1);
+
+                await page.goto("/profile");
+                await expect(
+                    page.getByLabel("Mes crédits")
+                ).toContainText(
+                    "105 crédits"
+                );
+                await expect(
+                    page.getByLabel(
+                        "Récompenses obtenues"
+                    ).getByRole(
+                        "link",
+                        {
+                            name: "À l'hôtel"
+                        }
+                    )
+                ).toHaveAttribute(
+                    "href",
+                    "/travel/TR-006"
+                );
+                expect(
+                    unexpectedRequests
+                ).toEqual([]);
             }
         );
 

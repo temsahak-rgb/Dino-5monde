@@ -12,11 +12,17 @@ import {
     useI18n
 } from "../i18n/I18nProvider.js";
 import {
+    loadTravelIndex
+} from "../features/travel/travelEngine.js";
+import {
     useAuth
 } from "../services/backend/AuthProvider.js";
 import {
     useLearnerProfile
 } from "../services/backend/LearnerProfileProvider.js";
+import {
+    useLearningRewardHistory
+} from "../services/backend/LearningRewardsProvider.js";
 import {
     useShopWallet
 } from "../services/backend/ShopProvider.js";
@@ -25,6 +31,9 @@ import {
     isLearnerAvatarKey,
     type LearnerAvatarKey
 } from "../services/backend/learnerProfileRepository.js";
+import type {
+    TravelLessonIndex
+} from "../types/global.js";
 import {
     BackButton,
     Button,
@@ -61,6 +70,8 @@ const inputClassName = `
 
 function ProfilePage() {
     const {
+        language,
+        localizedValue,
         t
     } = useI18n();
     const {
@@ -77,6 +88,10 @@ function ProfilePage() {
         balance,
         status: shopStatus
     } = useShopWallet();
+    const {
+        rewards,
+        status: rewardsStatus
+    } = useLearningRewardHistory();
 
     const [displayName, setDisplayName] =
         useState("");
@@ -90,6 +105,10 @@ function ProfilePage() {
         useState(false);
     const [error, setError] =
         useState<string | null>(null);
+    const [
+        travelLessons,
+        setTravelLessons
+    ] = useState<TravelLessonIndex[]>([]);
 
     useEffect(
         () => {
@@ -108,6 +127,38 @@ function ProfilePage() {
             );
         },
         [profile]
+    );
+
+    useEffect(
+        () => {
+            let active = true;
+
+            if (rewards.length === 0) {
+                setTravelLessons([]);
+
+                return () => {
+                    active = false;
+                };
+            }
+
+            void loadTravelIndex()
+                .then(
+                    lessons => {
+                        if (active) {
+                            setTravelLessons(
+                                lessons
+                            );
+                        }
+                    }
+                );
+
+            return () => {
+                active = false;
+            };
+        },
+        [
+            rewards.length
+        ]
     );
 
     if (authStatus === "signed-out") {
@@ -372,6 +423,121 @@ function ProfilePage() {
                             </Link>
                         </Card>
 
+                        <Card
+                            className="p-5"
+                            aria-label={t(
+                                "profile.rewardsTitle"
+                            )}
+                        >
+                            <p className="text-xs font-bold uppercase tracking-[0.08em] text-muted">
+                                {t(
+                                    "profile.rewardsTitle"
+                                )}
+                            </p>
+                            <p className="mt-2 text-sm text-muted">
+                                {t(
+                                    "profile.rewardsDescription"
+                                )}
+                            </p>
+
+                            {rewardsStatus
+                                === "loading"
+                                ? (
+                                    <p
+                                        className="mt-4 text-sm font-semibold"
+                                        role="status"
+                                    >
+                                        {t(
+                                            "common.loading"
+                                        )}
+                                    </p>
+                                )
+                                : rewardsStatus
+                                    === "ready"
+                                    && rewards.length
+                                        === 0
+                                    ? (
+                                        <p className="mt-4 text-sm text-muted">
+                                            {t(
+                                                "profile.rewardsEmpty"
+                                            )}
+                                        </p>
+                                    )
+                                    : rewardsStatus
+                                        === "ready"
+                                        ? (
+                                            <ul className="mt-4 grid gap-3">
+                                                {rewards
+                                                    .slice(
+                                                        0,
+                                                        5
+                                                    )
+                                                    .map(
+                                                        reward => {
+                                                            const lesson =
+                                                                travelLessons.find(
+                                                                    candidate =>
+                                                                        candidate.id
+                                                                            === reward.activity_id
+                                                                );
+                                                            const title =
+                                                                localizedValue(
+                                                                    lesson?.title,
+                                                                    lesson?.title_fa,
+                                                                    t(
+                                                                        "profile.rewardFallback"
+                                                                    )
+                                                                );
+
+                                                            return (
+                                                                <li
+                                                                    key={
+                                                                        `${reward.activity_type}:${reward.activity_id}`
+                                                                    }
+                                                                    className="rounded-control border border-line bg-canvas p-3"
+                                                                >
+                                                                    <Link
+                                                                        to={
+                                                                            `/travel/${encodeURIComponent(
+                                                                                reward.activity_id
+                                                                            )}`
+                                                                        }
+                                                                        className="font-bold text-dino-800 no-underline hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dino-500"
+                                                                    >
+                                                                        {title}
+                                                                    </Link>
+                                                                    <span className="mt-1 flex flex-wrap items-center justify-between gap-2 text-xs text-muted">
+                                                                        <span>
+                                                                            {formatRewardDate(
+                                                                                reward.awarded_at,
+                                                                                language
+                                                                            )}
+                                                                        </span>
+                                                                        <strong className="text-emerald-700">
+                                                                            {t(
+                                                                                "profile.rewardCredits",
+                                                                                {
+                                                                                    count:
+                                                                                        reward.credits_awarded
+                                                                                }
+                                                                            )}
+                                                                        </strong>
+                                                                    </span>
+                                                                </li>
+                                                            );
+                                                        }
+                                                    )}
+                                            </ul>
+                                        )
+                                        : (
+                                            <p className="mt-4 text-sm text-muted">
+                                                {t(
+                                                    "profile.rewardsUnavailable"
+                                                )}
+                                            </p>
+                                        )}
+                        </Card>
+
                         <Button
                             variant="secondary"
                             fullWidth
@@ -398,6 +564,31 @@ function ProfilePage() {
             )}
         </Page>
     );
+}
+
+function formatRewardDate(
+    value: string,
+    language: "fa" | "fr"
+): string {
+    const date =
+        new Date(value);
+
+    if (
+        Number.isNaN(
+            date.getTime()
+        )
+    ) {
+        return "";
+    }
+
+    return new Intl.DateTimeFormat(
+        language === "fa"
+            ? "fa-IR"
+            : "fr-FR",
+        {
+            dateStyle: "medium"
+        }
+    ).format(date);
 }
 
 export {

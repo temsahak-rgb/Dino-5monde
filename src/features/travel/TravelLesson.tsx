@@ -1,4 +1,6 @@
 import {
+    useEffect,
+    useRef,
     useState
 } from "react";
 
@@ -15,6 +17,10 @@ import {
 import {
     useI18n
 } from "../../i18n/I18nProvider.js";
+
+import {
+    useLearningReward
+} from "../../services/backend/LearningRewardsProvider.js";
 
 import type {
     LessonProgress,
@@ -91,6 +97,87 @@ function TravelLesson({
             null
         );
 
+    const {
+        awardedCredits,
+        claim: claimReward,
+        claiming: rewardClaiming,
+        eligibleCredits,
+        retry: retryReward,
+        status: rewardStatus
+    } = useLearningReward(
+        "travel_lesson",
+        lessonId
+    );
+
+    const [
+        rewardClaimFailed,
+        setRewardClaimFailed
+    ] = useState(false);
+    const displayedRewardCredits =
+        awardedCredits
+        ?? eligibleCredits
+        ?? 0;
+    const attemptedReward =
+        useRef<string | null>(null);
+
+    const completedCount =
+        getCompletedSectionCount(
+            sections,
+            progress
+        );
+
+    const lessonComplete =
+        sections.length > 0
+        && (
+            progress.status
+                === "completed"
+            || completedCount
+                === sections.length
+        );
+
+    useEffect(
+        () => {
+            if (
+                !lessonComplete
+                || rewardStatus
+                    !== "ready"
+                || eligibleCredits
+                    === null
+                || awardedCredits
+                    !== null
+                || rewardClaiming
+                || attemptedReward.current
+                    === lessonId
+            ) {
+                return;
+            }
+
+            attemptedReward.current =
+                lessonId;
+            setRewardClaimFailed(false);
+
+            void claimReward()
+                .catch(
+                    () => {
+                        attemptedReward.current =
+                            null;
+                        setRewardClaimFailed(
+                            true
+                        );
+                    }
+                );
+        },
+        [
+            awardedCredits,
+            claimReward,
+            eligibleCredits,
+            lessonComplete,
+            lessonId,
+            rewardClaiming,
+            rewardStatus
+        ]
+    );
+
     const selectedSection =
         selectedSectionIndex
         !== null
@@ -162,21 +249,6 @@ function TravelLesson({
             lesson.title,
             lesson.title_fa,
             lesson.id
-        );
-
-    const completedCount =
-        getCompletedSectionCount(
-            sections,
-            progress
-        );
-
-    const lessonComplete =
-        sections.length > 0
-        && (
-            progress.status
-                === "completed"
-            || completedCount
-                === sections.length
         );
 
     return (
@@ -262,6 +334,107 @@ function TravelLesson({
                             sections.length
                         }
                     />
+                </div>
+            ) : null}
+
+            {(
+                eligibleCredits
+                    !== null
+                || awardedCredits
+                    !== null
+                || rewardClaimFailed
+            ) ? (
+                <div
+                    className="
+                        mb-6
+                        flex
+                        flex-wrap
+                        items-center
+                        justify-between
+                        gap-3
+                        rounded-card
+                        border
+                        border-amber-200
+                        bg-amber-50
+                        px-4
+                        py-3
+                        text-sm
+                        text-amber-950
+                    "
+                    role="status"
+                    aria-live="polite"
+                >
+                    <strong>
+                        {awardedCredits
+                            !== null
+                            ? t(
+                                "rewards.awarded",
+                                {
+                                    count:
+                                        displayedRewardCredits
+                                }
+                            )
+                            : rewardClaiming
+                                ? t(
+                                    "rewards.claiming"
+                                )
+                                : rewardClaimFailed
+                                    ? t(
+                                        "rewards.claimError"
+                                    )
+                                    : rewardStatus
+                                        === "signed-out"
+                                        && lessonComplete
+                                        ? t(
+                                            "rewards.signIn",
+                                            {
+                                                count:
+                                                    displayedRewardCredits
+                                            }
+                                        )
+                                        : t(
+                                            "rewards.available",
+                                            {
+                                                count:
+                                                    displayedRewardCredits
+                                            }
+                                        )}
+                    </strong>
+
+                    {rewardClaimFailed ? (
+                        <button
+                            type="button"
+                            className="
+                                min-h-11
+                                rounded-control
+                                border
+                                border-amber-500
+                                bg-white
+                                px-4
+                                py-2
+                                font-bold
+                                text-amber-950
+                                transition
+                                hover:bg-amber-100
+                                focus-visible:outline-none
+                                focus-visible:ring-2
+                                focus-visible:ring-amber-500
+                                focus-visible:ring-offset-2
+                            "
+                            onClick={() => {
+                                attemptedReward.current =
+                                    null;
+                                setRewardClaimFailed(
+                                    false
+                                );
+                                retryReward();
+                            }}
+                        >
+                            {t(
+                                "common.retry"
+                            )}
+                        </button>
+                    ) : null}
                 </div>
             ) : null}
 
