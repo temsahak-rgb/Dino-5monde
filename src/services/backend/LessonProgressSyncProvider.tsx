@@ -10,9 +10,12 @@ import {
 import {
     getAllLessonProgress,
     LESSON_PROGRESS_CHANGE_EVENT,
-    mergeRemoteLessonProgress,
-    setLessonProgressAccount
+    mergeRemoteLessonProgress
 } from "../../core/progressEngine.js";
+
+import {
+    setActiveLearnerAccount
+} from "../../core/learnerStorage.js";
 
 import type {
     LessonContentType,
@@ -84,7 +87,7 @@ function LessonProgressSyncProvider({
 
         if (authStatus !== "signed-in" || !user) {
             if (authStatus === "signed-out") {
-                setLessonProgressAccount(null);
+                setActiveLearnerAccount(null);
             }
             setStatus(
                 authStatus === "loading"
@@ -98,7 +101,7 @@ function LessonProgressSyncProvider({
 
         setStatus("syncing");
         setError(null);
-        setLessonProgressAccount(user.id);
+        setActiveLearnerAccount(user.id);
         const syncClient = client;
         const userId = user.id;
 

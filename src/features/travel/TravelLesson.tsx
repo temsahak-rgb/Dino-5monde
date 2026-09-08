@@ -6,11 +6,14 @@ import {
 
 import {
     getLessonProgress,
-    LESSON_PROGRESS_ACCOUNT_EVENT,
     LESSON_PROGRESS_IMPORTED_EVENT,
     markLessonCompleted,
     markSectionCompleted
 } from "../../core/progressEngine.js";
+
+import {
+    LEARNER_ACCOUNT_CHANGE_EVENT
+} from "../../core/learnerStorage.js";
 
 import type {
     LessonProgressChangeDetail
@@ -126,7 +129,7 @@ function TravelLesson({
                 setProgress(getLessonProgress(lessonId));
             };
             window.addEventListener(
-                LESSON_PROGRESS_ACCOUNT_EVENT,
+                LEARNER_ACCOUNT_CHANGE_EVENT,
                 handleAccountChange
             );
 
@@ -136,7 +139,7 @@ function TravelLesson({
                     handleImportedProgress
                 );
                 window.removeEventListener(
-                    LESSON_PROGRESS_ACCOUNT_EVENT,
+                    LEARNER_ACCOUNT_CHANGE_EVENT,
                     handleAccountChange
                 );
             };

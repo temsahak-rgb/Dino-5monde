@@ -1,6 +1,9 @@
 import {
     getStaticDataUrl
 } from "../../core/staticData.js";
+import {
+    getAccountScopedStorageKey
+} from "../../core/learnerStorage.js";
 
 import type {
     Level,
@@ -268,7 +271,9 @@ function setWeakWord(
             : current;
 
     localStorage.setItem(
-        WEAK_WORDS_STORAGE_KEY,
+        getAccountScopedStorageKey(
+            WEAK_WORDS_STORAGE_KEY
+        ),
         JSON.stringify(
             weakMap
         )
@@ -285,7 +290,9 @@ function readWeakWordMap():
     VocabWeakMap {
     const raw =
         localStorage.getItem(
-            WEAK_WORDS_STORAGE_KEY
+            getAccountScopedStorageKey(
+                WEAK_WORDS_STORAGE_KEY
+            )
         );
 
     if (!raw) {
