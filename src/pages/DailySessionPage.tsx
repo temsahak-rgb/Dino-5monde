@@ -3,6 +3,9 @@ import {
     useMemo,
     useState
 } from "react";
+import {
+    Link
+} from "react-router";
 
 import {
     LEARNER_ACCOUNT_CHANGE_EVENT
@@ -19,6 +22,7 @@ import {
     DailyPracticeCard
 } from "../features/profile/DailyPracticeCard.js";
 import {
+    summarizeDailyPractice,
     toLocalDateKey
 } from "../features/profile/dailyPracticeSummary.js";
 import {
@@ -45,7 +49,8 @@ import {
 import {
     EmptyState,
     ErrorState,
-    LoadingState
+    LoadingState,
+    ResultState
 } from "../ui/components/Feedback.js";
 import {
     Page,
@@ -139,10 +144,29 @@ function DailySessionPage() {
     const learnerLevel =
         getPlacementResult()
         ?? "A1";
+    const dailySummary =
+        useMemo(
+            () =>
+                summarizeDailyPractice(
+                    attempts,
+                    today
+                ),
+            [
+                attempts,
+                today
+            ]
+        );
+    const remainingTasks =
+        Math.max(
+            0,
+            dailySummary.goal
+            - dailySummary.todayAttempts
+        );
     const tasks =
         useMemo(
             () =>
                 catalogs
+                && remainingTasks > 0
                     ? createDailySessionPlan({
                         attempts,
                         catalog:
@@ -154,6 +178,8 @@ function DailySessionPage() {
                         learnerLevel,
                         mistakes:
                             getAllMistakes(),
+                        limit:
+                            remainingTasks,
                         weakWords:
                             getAllWeakWords()
                     })
@@ -162,6 +188,7 @@ function DailySessionPage() {
                 attempts,
                 catalogs,
                 learnerLevel,
+                remainingTasks,
                 signalRevision,
                 today
             ]
@@ -193,7 +220,22 @@ function DailySessionPage() {
                 />
             </div>
 
-            {loadError ? (
+            {dailySummary.todayAttempts
+                >= dailySummary.goal ? (
+                <ResultState
+                    icon="🎉"
+                    title={t("daily.completeTitle")}
+                    description={t("daily.completeDescription")}
+                    actions={
+                        <Link
+                            to="/practice/review"
+                            className="inline-flex min-h-11 items-center rounded-control border border-dino-600 px-4 py-2 text-sm font-bold text-dino-700 no-underline hover:bg-dino-50"
+                        >
+                            {t("daily.openReview")}
+                        </Link>
+                    }
+                />
+            ) : loadError ? (
                 <ErrorState
                     title={t("daily.loadErrorTitle")}
                     description={t("daily.loadErrorDescription")}

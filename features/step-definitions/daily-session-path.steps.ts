@@ -50,7 +50,7 @@ Given(
             attemptId:
                 "11111111-1111-4111-8111-111111111111",
             completedAt:
-                "2026-09-08T10:00:00.000Z",
+                "2026-09-07T10:00:00.000Z",
             contentType: "grammar",
             correctAnswers: 2,
             exerciseId: "quiz",

@@ -53,7 +53,10 @@ test(
                         attemptId:
                             "11111111-1111-4111-8111-111111111111",
                         completedAt:
-                            "2026-09-08T11:00:00.000Z",
+                            new Date(
+                                Date.now()
+                                - 86_400_000
+                            ).toISOString(),
                         contentType:
                             "travel",
                         correctAnswers:
@@ -169,5 +172,117 @@ test(
         expect(
             hasHorizontalOverflow
         ).toBe(false);
+    }
+);
+
+test(
+    "daily session stops proposing tasks once today's goal is reached",
+    async ({ page }) => {
+        await page.addInitScript(
+            () => {
+                const completedAt =
+                    new Date().toISOString();
+
+                localStorage.setItem(
+                    "language",
+                    "fr"
+                );
+                localStorage.setItem(
+                    "currentPath",
+                    "general"
+                );
+                localStorage.setItem(
+                    "placementResult",
+                    "A1"
+                );
+                localStorage.setItem(
+                    "dino_exercise_attempts",
+                    JSON.stringify(
+                        [
+                            [
+                                "grammar",
+                                "A1-G-001"
+                            ],
+                            [
+                                "travel",
+                                "TR-006"
+                            ],
+                            [
+                                "vocabulary",
+                                "salutations_expressions_quotidiennes"
+                            ]
+                        ].map(
+                            (
+                                [
+                                    contentType,
+                                    activityId
+                                ],
+                                index
+                            ) => ({
+                                activityId,
+                                attemptId:
+                                    "33333333-3333-4333-8333-33333333333"
+                                    + index,
+                                completedAt,
+                                contentType,
+                                correctAnswers:
+                                    4,
+                                exerciseId:
+                                    "daily-"
+                                    + index,
+                                level:
+                                    contentType
+                                    === "vocabulary"
+                                        ? "A1"
+                                        : undefined,
+                                totalQuestions:
+                                    5
+                            })
+                        )
+                    )
+                );
+            }
+        );
+
+        await page.goto("/daily");
+
+        await expect(
+            page.getByRole(
+                "heading",
+                {
+                    name:
+                        "Objectif du jour atteint !"
+                }
+            )
+        ).toBeVisible();
+        await expect(
+            page.locator(
+                "[data-daily-task]"
+            )
+        ).toHaveCount(0);
+        await expect(
+            page.getByRole(
+                "progressbar",
+                {
+                    name:
+                        "Objectif quotidien"
+                }
+            )
+        ).toHaveAttribute(
+            "aria-valuenow",
+            "3"
+        );
+        await expect(
+            page.getByRole(
+                "link",
+                {
+                    name:
+                        "Voir mes révisions →"
+                }
+            )
+        ).toHaveAttribute(
+            "href",
+            "/practice/review"
+        );
     }
 );

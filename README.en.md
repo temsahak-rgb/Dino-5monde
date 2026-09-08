@@ -183,7 +183,7 @@ The `/practice/review` centre turns this history into actions: the latest attemp
 
 The profile also makes learning rhythm visible: a **three-exercise daily goal**, today's progress, the current streak, and seven calendar status lights. These indicators are derived from the same synchronized history, follow the learner's local calendar, and update when the day changes.
 
-The shareable \`/daily\` route turns those signals into a three-step session. It prioritizes the latest score below 80%, mistakes, then weak words, deduplicates activities, and fills remaining slots with free level-aware content. The selection stays stable for the day and creates no additional business state.
+The shareable \`/daily\` route turns those signals into a three-step session. It prioritizes the latest score below 80%, mistakes, then weak words, deduplicates activities, and fills remaining slots with free level-aware content. An activity completed today disappears from suggestions; after three exercises, a completion state replaces the path. No additional business state is created.
 
 The learning corpus deliberately remains under `data/` and is public in the GitHub Pages build. Selling content for real money will therefore require private backend delivery; hiding a lesson in React or storing only its entitlement in the database does not protect publicly shipped JSON.
 
