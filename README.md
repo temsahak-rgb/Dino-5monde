@@ -49,7 +49,7 @@ MVP overview, installation, i18n, architecture, tests and contribution rules.
 - 💾 progression Grammaire et Voyage locale-first, synchronisée pour les comptes connectés ;
 - 🧪 TypeScript + JSON + tests d'architecture.
 
-> **État / Status:** projet en développement. Le Profil, la Boutique, le hub Jeux & exercices et la session Quotidien sont livrés.
+> **État / Status:** projet en développement. Le Profil, la Boutique, le hub Jeux & exercices, la session Quotidien et l’Archive sont livrés.
 
 ---
 

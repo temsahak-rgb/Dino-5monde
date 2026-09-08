@@ -30,6 +30,10 @@ import {
 } from "../pages/AuthPage.js";
 
 import {
+    ArchivePage
+} from "../pages/ArchivePage.js";
+
+import {
     GrammarIndexPage
 } from "../pages/GrammarIndexPage.js";
 
@@ -164,6 +168,7 @@ import {
  * /info/about
  * /info/contact
  * /info/work-with-us
+ * /archive
  * /profile
  * /shop
  */
@@ -216,6 +221,14 @@ const router =
 
                     Component:
                         ProfilePage
+                },
+
+                {
+                    path:
+                        appRoutePatterns.archive,
+
+                    Component:
+                        ArchivePage
                 },
 
                 {

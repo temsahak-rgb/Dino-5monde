@@ -19,7 +19,13 @@ import {
     toPercentage
 } from "./exerciseAttemptSummary.js";
 
-function ExerciseHistoryCard() {
+interface ExerciseHistoryCardProps {
+    recentLimit?: number;
+}
+
+function ExerciseHistoryCard({
+    recentLimit = 3
+}: ExerciseHistoryCardProps) {
     const {
         language,
         t
@@ -30,7 +36,8 @@ function ExerciseHistoryCard() {
     } = useExerciseTracking();
     const summary =
         summarizeExerciseAttempts(
-            attempts
+            attempts,
+            recentLimit
         );
 
     return (

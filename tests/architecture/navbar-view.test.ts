@@ -122,6 +122,7 @@ test(
                 "/travel",
                 "/journal",
                 "/shop",
+                "/archive",
                 "/profile"
             ]
         );
@@ -130,14 +131,13 @@ test(
             html.match(
                 /aria-disabled="true"/g
             )?.length,
-            2
+            1
         );
 
         for (
             const label
             of [
-                "Musique",
-                "Archive"
+                "Musique"
             ]
         ) {
             assert.match(
@@ -166,6 +166,11 @@ test(
         assert.match(
             html,
             /href="\/profile"[^>]*>[\s\S]*?Profil/
+        );
+
+        assert.match(
+            html,
+            /href="\/archive"[^>]*>[\s\S]*?Archive/
         );
 
         assert.equal(

@@ -71,7 +71,8 @@ The MVP is not intended to provide every feature of a complete learning platform
 | Lesson shop and credits | ✅ `/shop`, purchases, Travel and mini-game rewards |
 | Account and Profile | ✅ Email sign-in, private `Saurus` profile and progress dashboard |
 | Games & exercises hub | ✅ `/practice`, game/level catalogues and shareable sessions |
-| Daily | ✅ \`/daily\`, three personalized actions and a shareable URL |
+| Daily | ✅ **/daily**, three personalized actions and a shareable URL |
+| Archive | ✅ **/archive**, completed lessons and exercise history |
 | Cross-device sync | ✅ Progress, mistakes and weak words for signed-in learners |
 
 Grammar and Travel progress is local-first: it remains available without an account in `localStorage`, then synchronises to Supabase when a learner signs in. The server merges devices without removing a completed section or regressing a completed lesson.
@@ -183,7 +184,9 @@ The `/practice/review` centre turns this history into actions: the latest attemp
 
 The profile also makes learning rhythm visible: a **three-exercise daily goal**, today's progress, the current streak, and seven calendar status lights. These indicators are derived from the same synchronized history, follow the learner's local calendar, and update when the day changes.
 
-The shareable \`/daily\` route turns those signals into a three-step session. It prioritizes the latest score below 80%, mistakes, then weak words, deduplicates activities, and fills remaining slots with free level-aware content. An activity completed today disappears from suggestions; after three exercises, a completion state replaces the path. No additional business state is created.
+The shareable **/daily** route turns those signals into a three-step session. It prioritizes the latest score below 80%, mistakes, then weak words, deduplicates activities, and fills remaining slots with free level-aware content. An activity completed today disappears from suggestions; after three exercises, a completion state replaces the path. No additional business state is created.
+
+The **/archive** route groups completed lessons with up to the twenty latest exercise results. It resolves progress against the current catalog so every item has a readable title and a real React link. It remains useful without an account and follows the learner namespace automatically after sign-in.
 
 The learning corpus deliberately remains under `data/` and is public in the GitHub Pages build. Selling content for real money will therefore require private backend delivery; hiding a lesson in React or storing only its entitlement in the database does not protect publicly shipped JSON.
 
@@ -412,6 +415,7 @@ Every durable screen has a canonical React Router path, for example:
 /grammar/lesson/A1-G-001
 /vocabulary/B1/arrival-office
 /daily
+/archive
 /practice/hangman/A1/salutations_expressions_quotidiennes
 /travel/TR-006
 /journal/2026-w34-azadi-tower
