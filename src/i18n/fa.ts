@@ -360,6 +360,9 @@ const faMessages: Record<TranslationKey, string> = {
     "daily.loadErrorDescription": "پیشرفت شما محفوظ است. برای بارگذاری دوباره فعالیت‌ها تلاش کنید.",
     "daily.emptyTitle": "امروز فعالیتی در دسترس نیست",
     "daily.emptyDescription": "به‌محض آماده‌شدن محتوای سازگار، فعالیت‌های بعدی اینجا نمایش داده می‌شوند.",
+    "daily.completeTitle": "هدف امروز کامل شد!",
+    "daily.completeDescription": "سه تمرین امروز تمام شده‌اند و زنجیره و نتیجه‌های شما به‌روز هستند.",
+    "daily.openReview": "مشاهده مرورها ←",
 
     "review.eyebrow": "تمرین شخصی‌سازی‌شده",
     "review.title": "مرورهای من",

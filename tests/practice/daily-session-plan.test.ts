@@ -59,7 +59,7 @@ test(
                     attemptId:
                         "11111111-1111-4111-8111-111111111111",
                     completedAt:
-                        "2026-09-08T10:00:00.000Z",
+                        "2026-09-07T10:00:00.000Z",
                     contentType:
                         "grammar",
                     correctAnswers: 2,
@@ -168,6 +168,56 @@ test(
                     === "discovery"
             ),
             true
+        );
+    }
+);
+
+test(
+    "daily session skips activities already completed on the selected local day",
+    () => {
+        const tasks =
+            createDailySessionPlan({
+                attempts: [{
+                    activityId:
+                        "A1-G-001",
+                    attemptId:
+                        "22222222-2222-4222-8222-222222222222",
+                    completedAt:
+                        new Date(
+                            2026,
+                            8,
+                            8,
+                            12
+                        ).toISOString(),
+                    contentType:
+                        "grammar",
+                    correctAnswers:
+                        2,
+                    exerciseId:
+                        "quiz",
+                    totalQuestions:
+                        5
+                }],
+                catalog,
+                dayKey:
+                    "2026-09-08",
+                learnerLevel:
+                    "A1",
+                mistakes: [],
+                weakWords: {}
+            });
+
+        assert.equal(
+            tasks.some(
+                task =>
+                    task.id
+                    === "A1-G-001"
+            ),
+            false
+        );
+        assert.equal(
+            tasks.length,
+            3
         );
     }
 );

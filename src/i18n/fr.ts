@@ -360,6 +360,9 @@ const frMessages = {
     "daily.loadErrorDescription": "Votre progression reste intacte. Réessayez pour recharger les activités disponibles.",
     "daily.emptyTitle": "Aucune activité disponible aujourd’hui",
     "daily.emptyDescription": "Les prochaines activités apparaîtront ici dès qu’un contenu compatible sera disponible.",
+    "daily.completeTitle": "Objectif du jour atteint !",
+    "daily.completeDescription": "Vos trois exercices sont terminés. Votre série et vos résultats sont déjà à jour.",
+    "daily.openReview": "Voir mes révisions →",
 
     "review.eyebrow": "Entraînement personnalisé",
     "review.title": "Mes révisions",

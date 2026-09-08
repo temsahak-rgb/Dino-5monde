@@ -64,6 +64,36 @@ function createDailySessionPlan({
         );
     }
 
+    const attemptedToday =
+        new Set(
+            attempts
+                .filter(
+                    attempt =>
+                        toLocalDayKey(
+                            attempt.completedAt
+                        ) === dayKey
+                )
+                .map(
+                    attempt =>
+                        createActivityIdentity({
+                            contentType:
+                                attempt.contentType,
+                            id:
+                                attempt.activityId,
+                            level:
+                                attempt.level
+                        })
+                )
+        );
+    const availableCatalog =
+        catalog.filter(
+            item =>
+                !attemptedToday.has(
+                    createActivityIdentity(
+                        item
+                    )
+                )
+        );
     const tasks: DailySessionTask[] = [];
     const selectedActivities =
         new Set<string>();
@@ -90,7 +120,7 @@ function createDailySessionPlan({
         const item
         of buildExerciseScoreReviewItems(
             attempts,
-            catalog
+            availableCatalog
         )
     ) {
         addTask({
@@ -100,7 +130,7 @@ function createDailySessionPlan({
     }
 
     const lessonCatalog =
-        catalog.filter(
+        availableCatalog.filter(
             item =>
                 item.contentType
                 !== "vocabulary"
@@ -131,7 +161,7 @@ function createDailySessionPlan({
     }
 
     const vocabularyCatalog =
-        catalog
+        availableCatalog
             .filter(
                 item =>
                     item.contentType
@@ -170,7 +200,7 @@ function createDailySessionPlan({
         for (
             const item
             of selectDailyDiscoveries(
-                catalog,
+                availableCatalog,
                 learnerLevel,
                 dayKey
             )
@@ -183,6 +213,31 @@ function createDailySessionPlan({
     }
 
     return tasks;
+}
+
+function toLocalDayKey(
+    value: string
+): string | null {
+    const date =
+        new Date(value);
+
+    if (
+        !Number.isFinite(
+            date.getTime()
+        )
+    ) {
+        return null;
+    }
+
+    return [
+        date.getFullYear(),
+        String(
+            date.getMonth() + 1
+        ).padStart(2, "0"),
+        String(
+            date.getDate()
+        ).padStart(2, "0")
+    ].join("-");
 }
 
 function selectDailyDiscoveries(
