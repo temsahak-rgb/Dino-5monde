@@ -3,19 +3,19 @@ import test from "node:test";
 
 import {
     getAllLessonProgress,
-    getAllMistakes,
     markSectionCompleted,
     mergeLessonProgress,
-    mergeRemoteLessonProgress,
-    saveMistake
+    mergeRemoteLessonProgress
 } from "../../src/core/progressEngine.js";
 import {
     setActiveLearnerAccount
 } from "../../src/core/learnerStorage.js";
 import {
     getAllWeakWords,
+    getAllMistakes,
+    saveMistake,
     setWeakWord
-} from "../../src/features/vocabulary/vocabularyRepository.js";
+} from "../../src/core/reviewSignalEngine.js";
 
 class MemoryStorage {
     private readonly values = new Map<string, string>();

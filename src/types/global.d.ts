@@ -198,6 +198,7 @@ export interface LessonProgress {
 }
 
 export interface MistakeRecord {
+    id?: string;
     lessonId: string;
     sectionId: string;
 

@@ -135,6 +135,40 @@ type SyncLessonProgressRpcRow = Omit<
     "user_id"
 >;
 
+type ReviewSignalType =
+    | "mistake"
+    | "weak_word";
+
+type LearnerReviewSignalRow = {
+    active: boolean;
+    changed_at: string;
+    payload: Json;
+    signal_key: string;
+    signal_type: ReviewSignalType;
+    subject_id: string;
+    updated_at: string;
+    user_id: string;
+};
+
+type LearnerReviewSignalInsert = {
+    active?: never;
+    changed_at?: never;
+    payload?: never;
+    signal_key?: never;
+    signal_type?: never;
+    subject_id?: never;
+    updated_at?: never;
+    user_id?: never;
+};
+
+type LearnerReviewSignalUpdate =
+    LearnerReviewSignalInsert;
+
+type SyncReviewSignalRpcRow = Omit<
+    LearnerReviewSignalRow,
+    "user_id"
+>;
+
 type ShopLessonContentType =
     | "grammar"
     | "vocabulary";
@@ -279,6 +313,12 @@ type Database = {
                 Update: LearnerLessonProgressUpdate;
                 Relationships: [];
             };
+            learner_review_signals: {
+                Row: LearnerReviewSignalRow;
+                Insert: LearnerReviewSignalInsert;
+                Update: LearnerReviewSignalUpdate;
+                Relationships: [];
+            };
             lesson_entitlements: {
                 Row: LessonEntitlementRow;
                 Insert: LessonEntitlementInsert;
@@ -318,6 +358,17 @@ type Database = {
                 };
                 Returns: SyncLessonProgressRpcRow[];
             };
+            sync_review_signal: {
+                Args: {
+                    p_active: boolean;
+                    p_changed_at: string;
+                    p_payload: Json;
+                    p_signal_key: string;
+                    p_signal_type: ReviewSignalType;
+                    p_subject_id: string;
+                };
+                Returns: SyncReviewSignalRpcRow[];
+            };
         };
         Enums: Record<string, never>;
         CompositeTypes: Record<string, never>;
@@ -331,6 +382,7 @@ export {
     type LearnerActivityRewardRow,
     type LearnerCreditTransactionRow,
     type LearnerLessonProgressRow,
+    type LearnerReviewSignalRow,
     type LearnerWalletRow,
     type LearningActivityType,
     type LearningRewardRuleRow,
@@ -340,8 +392,10 @@ export {
     type LearnerProfileRow,
     type LearnerProfileUpdate,
     type PurchaseShopLessonRpcRow,
+    type ReviewSignalType,
     type ShopLessonContentType,
     type ShopLessonLevel,
     type ShopLessonRow,
-    type SyncLessonProgressRpcRow
+    type SyncLessonProgressRpcRow,
+    type SyncReviewSignalRpcRow
 };

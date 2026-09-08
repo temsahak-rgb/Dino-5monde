@@ -11,9 +11,11 @@ import {
 } from "../../core/exerciseEngine.js";
 
 import {
-    markSectionCompleted,
-    saveMistake
+    markSectionCompleted
 } from "../../core/progressEngine.js";
+import {
+    saveMistake
+} from "../../core/reviewSignalEngine.js";
 
 import {
     useI18n

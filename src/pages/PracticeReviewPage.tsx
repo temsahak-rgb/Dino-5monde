@@ -9,8 +9,12 @@ import {
 
 import {
     clearMistakesForLesson,
-    getAllMistakes
-} from "../core/progressEngine.js";
+    getAllMistakes,
+    REVIEW_SIGNAL_IMPORTED_EVENT
+} from "../core/reviewSignalEngine.js";
+import {
+    LEARNER_ACCOUNT_CHANGE_EVENT
+} from "../core/learnerStorage.js";
 
 import {
     buildMistakeReviewItems,
@@ -36,9 +40,11 @@ import {
 } from "../features/travel/travelEngine.js";
 
 import {
-    getAllWeakWords,
     loadVocabularyIndex
 } from "../features/vocabulary/vocabularyRepository.js";
+import {
+    getAllWeakWords
+} from "../core/reviewSignalEngine.js";
 
 import {
     practiceLevels
@@ -47,6 +53,9 @@ import {
 import {
     useI18n
 } from "../i18n/I18nProvider.js";
+import {
+    useReviewSignalsSync
+} from "../services/backend/ReviewSignalsSyncProvider.js";
 
 import {
     Badge,
@@ -66,7 +75,7 @@ import {
     SectionHeader
 } from "../ui/components/Layout.js";
 
-/** Turns locally recorded mistakes and weak words into concrete next actions. */
+/** Turns synchronized mistakes and weak words into concrete next actions. */
 function PracticeReviewPage() {
     const {
         language,
@@ -74,6 +83,9 @@ function PracticeReviewPage() {
         localizedValue,
         t
     } = useI18n();
+    const {
+        status: reviewSyncStatus
+    } = useReviewSignalsSync();
 
     const [mistakes, setMistakes] =
         useState<MistakeReviewItem[]>([]);
@@ -85,30 +97,59 @@ function PracticeReviewPage() {
     useEffect(
         () => {
             let active = true;
+            let catalogs: Awaited<
+                ReturnType<typeof loadReviewCatalog>
+            > | null = null;
+
+            const refreshReviewItems = (): void => {
+                if (!active || !catalogs) {
+                    return;
+                }
+
+                setMistakes(
+                    buildMistakeReviewItems(
+                        getAllMistakes(),
+                        catalogs.lessons
+                    )
+                );
+                setWeakWords(
+                    buildWeakWordReviewItems(
+                        getAllWeakWords(),
+                        catalogs.vocabulary
+                    )
+                );
+                setLoading(false);
+            };
+
+            const handleReviewChange = (): void => {
+                refreshReviewItems();
+            };
+
+            window.addEventListener(
+                REVIEW_SIGNAL_IMPORTED_EVENT,
+                handleReviewChange
+            );
+            window.addEventListener(
+                LEARNER_ACCOUNT_CHANGE_EVENT,
+                handleReviewChange
+            );
 
             void loadReviewCatalog()
-                .then(catalogs => {
-                    if (!active) {
-                        return;
-                    }
-
-                    setMistakes(
-                        buildMistakeReviewItems(
-                            getAllMistakes(),
-                            catalogs.lessons
-                        )
-                    );
-                    setWeakWords(
-                        buildWeakWordReviewItems(
-                            getAllWeakWords(),
-                            catalogs.vocabulary
-                        )
-                    );
-                    setLoading(false);
+                .then(loadedCatalogs => {
+                    catalogs = loadedCatalogs;
+                    refreshReviewItems();
                 });
 
             return () => {
                 active = false;
+                window.removeEventListener(
+                    REVIEW_SIGNAL_IMPORTED_EVENT,
+                    handleReviewChange
+                );
+                window.removeEventListener(
+                    LEARNER_ACCOUNT_CHANGE_EVENT,
+                    handleReviewChange
+                );
             };
         },
         []
@@ -144,8 +185,20 @@ function PracticeReviewPage() {
                 }
             />
 
-            <Card className="mb-7 border-sky-200 bg-info-soft p-4 text-sm leading-6 text-sky-950">
-                {t("review.localNotice")}
+            <Card
+                className={`mb-7 p-4 text-sm leading-6 ${reviewSyncStatus === "ready" ? "border-emerald-200 bg-emerald-50 text-emerald-950" : reviewSyncStatus === "syncing" ? "border-amber-200 bg-amber-50 text-amber-950" : reviewSyncStatus === "error" ? "border-rose-200 bg-rose-50 text-rose-950" : "border-sky-200 bg-info-soft text-sky-950"}`}
+                role="status"
+                aria-live="polite"
+            >
+                {t(
+                    reviewSyncStatus === "ready"
+                        ? "review.syncReady"
+                        : reviewSyncStatus === "syncing"
+                            ? "review.syncing"
+                            : reviewSyncStatus === "error"
+                                ? "review.syncError"
+                                : "review.localNotice"
+                )}
             </Card>
 
             {loading ? (

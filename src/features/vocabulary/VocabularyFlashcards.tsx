@@ -28,7 +28,7 @@ import {
 import {
     getWeakWords,
     setWeakWord
-} from "./vocabularyRepository.js";
+} from "../../core/reviewSignalEngine.js";
 
 interface VocabularyFlashcardsProps {
     pack: VocabPack;
