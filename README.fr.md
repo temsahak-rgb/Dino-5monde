@@ -71,7 +71,8 @@ Le but du MVP n'est pas encore de fournir toutes les fonctions d'une plateforme 
 | Boutique et crédits | ✅ `/shop`, achats et récompenses Voyage/mini-jeux |
 | Compte et Profil | ✅ Connexion email, profil privé `Saurus` et tableau de progression |
 | Hub Jeux & exercices | ✅ `/practice`, catalogues par jeu/niveau et parties partageables |
-| Quotidien | ✅ \`/daily\`, trois actions personnalisées et URL partageable |
+| Quotidien | ✅ **/daily**, trois actions personnalisées et URL partageable |
+| Archive | ✅ **/archive**, leçons terminées et historique des exercices |
 | Synchronisation multi-appareils | ✅ Progression, erreurs et mots faibles pour les comptes connectés |
 
 La progression Grammaire et Voyage est locale-first : elle reste utilisable sans compte dans `localStorage`, puis se synchronise dans Supabase dès qu'un apprenant se connecte. Le serveur fusionne les appareils sans jamais retirer une section terminée ni faire régresser le statut d'une leçon.
@@ -183,7 +184,9 @@ Le centre `/practice/review` transforme cet historique en actions : le dernier e
 
 Le profil matérialise aussi le rythme d’apprentissage : objectif de **trois exercices par jour**, progression du jour, série en cours et sept voyants calendaires. Ces indicateurs sont calculés depuis le même historique synchronisé, respectent le calendrier local de l’apprenant et se mettent à jour au changement de journée.
 
-La route partageable \`/daily\` transforme ces signaux en une session de trois étapes. Elle priorise le dernier score sous 80 %, les erreurs puis les mots faibles, déduplique les activités et complète avec des contenus gratuits adaptés au niveau. Une activité déjà faite dans la journée disparaît des suggestions ; à trois exercices, un état de réussite remplace le parcours. Aucun nouvel état métier n’est créé.
+La route partageable **/daily** transforme ces signaux en une session de trois étapes. Elle priorise le dernier score sous 80 %, les erreurs puis les mots faibles, déduplique les activités et complète avec des contenus gratuits adaptés au niveau. Une activité déjà faite dans la journée disparaît des suggestions ; à trois exercices, un état de réussite remplace le parcours. Aucun nouvel état métier n’est créé.
+
+La route **/archive** regroupe les leçons terminées et jusqu’aux vingt derniers résultats d’exercice. Elle résout chaque progression vers le catalogue actuel pour garantir un titre lisible et un lien React réel. Elle reste utile sans compte et suit automatiquement le namespace du learner après connexion.
 
 Le corpus reste volontairement dans `data/` et demeure public dans le build GitHub Pages. Une commercialisation réelle exigera donc de déplacer la livraison des contenus payants derrière une API privée ; masquer une leçon dans React ou stocker uniquement son droit d'accès en base ne protège pas son JSON public.
 
@@ -412,6 +415,7 @@ Chaque écran durable possède un chemin React Router canonique, par exemple :
 /grammar/lesson/A1-G-001
 /vocabulary/B1/arrival-office
 /daily
+/archive
 /practice/hangman/A1/salutations_expressions_quotidiennes
 /travel/TR-006
 /journal/2026-w34-azadi-tower

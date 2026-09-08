@@ -36,6 +36,9 @@ import type {
     DailySessionTask
 } from "../../src/features/practice/dailySessionPlan.js";
 import type {
+    CompletedLessonArchiveItem
+} from "../../src/features/archive/archiveEngine.js";
+import type {
     ExerciseScoreReviewItem
 } from "../../src/core/reviewEngine.js";
 import type {
@@ -89,6 +92,7 @@ interface ProductWorld extends IWorld {
     exerciseAttemptSummary?: ExerciseAttemptSummary;
     dailyPracticeSummary?: DailyPracticeSummary;
     dailySessionTasks?: DailySessionTask[];
+    completedLessonArchive?: CompletedLessonArchiveItem[];
     reviewWeakWords?: VocabWeakMap;
     exerciseScoreRecommendations?: ExerciseScoreReviewItem[];
     localLessonProgress?: LessonProgress;

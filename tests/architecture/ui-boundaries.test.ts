@@ -45,6 +45,7 @@ const requiredReactSurfaces = [
     "src/pages/PracticeCatalogPage.tsx",
     "src/pages/PracticeGamePage.tsx",
     "src/pages/PracticeReviewPage.tsx",
+    "src/pages/ArchivePage.tsx",
     "src/pages/VocabularyReviewPage.tsx",
     "src/pages/TravelIndexPage.tsx",
     "src/pages/TravelLessonPage.tsx",

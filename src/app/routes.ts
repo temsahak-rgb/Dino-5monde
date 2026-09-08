@@ -10,6 +10,7 @@ const appRoutePatterns = {
     onboarding: "/onboarding",
     home: "/",
     profile: "/profile",
+    archive: "/archive",
     shop: "/shop",
     daily: "/daily",
     practiceIndex: "/practice",
@@ -62,6 +63,7 @@ type AppRoute =
     | { name: "onboarding" }
     | { name: "home" }
     | { name: "profile" }
+    | { name: "archive" }
     | { name: "shop" }
     | { name: "daily" }
     | { name: "practice-index" }
@@ -101,6 +103,7 @@ type AppRoute =
     | { name: "work-with-us" };
 
 type AppRouteSection =
+    | "archive"
     | "home"
     | "shop"
     | "practice"
@@ -122,6 +125,8 @@ function createAppPath(
             return appRoutePatterns.home;
         case "profile":
             return appRoutePatterns.profile;
+        case "archive":
+            return appRoutePatterns.archive;
         case "shop":
             return appRoutePatterns.shop;
         case "daily":
@@ -195,6 +200,8 @@ function matchAppPath(
                 return { name: "onboarding" };
             case "profile":
                 return { name: "profile" };
+            case "archive":
+                return { name: "archive" };
             case "shop":
                 return { name: "shop" };
             case "daily":
@@ -360,6 +367,10 @@ function getAppRouteSection(
 ): AppRouteSection | null {
     if (route.name === "home") {
         return "home";
+    }
+
+    if (route.name === "archive") {
+        return "archive";
     }
 
     if (route.name === "shop") {

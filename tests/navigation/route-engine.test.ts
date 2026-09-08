@@ -21,6 +21,7 @@ test(
                 onboarding: "/onboarding",
                 home: "/",
                 profile: "/profile",
+                archive: "/archive",
                 shop: "/shop",
                 daily: "/daily",
                 practiceIndex: "/practice",
@@ -69,6 +70,7 @@ test(
             { name: "onboarding" },
             { name: "home" },
             { name: "profile" },
+            { name: "archive" },
             { name: "shop" },
             { name: "daily" },
             { name: "practice-index" },
@@ -236,6 +238,10 @@ test(
         assert.equal(
             getAppRouteSection({ name: "shop" }),
             "shop"
+        );
+        assert.equal(
+            getAppRouteSection({ name: "archive" }),
+            "archive"
         );
         assert.equal(
             getAppRouteSection({ name: "daily" }),

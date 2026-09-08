@@ -637,22 +637,16 @@ function Navbar({
                                     )
                                 }
                             >
-                                <PlannedNavigationLink
+                                <NavigationLink
+                                    to="/archive"
                                     icon="🗂️"
                                     label={
                                         t(
                                             "navbar.archive"
                                         )
                                     }
-                                    soonLabel={
-                                        t(
-                                            "navbar.soon"
-                                        )
-                                    }
-                                    unavailableLabel={
-                                        t(
-                                            "navbar.unavailable"
-                                        )
+                                    onNavigate={
+                                        closeMenu
                                     }
                                 />
 
