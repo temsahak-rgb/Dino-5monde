@@ -47,11 +47,12 @@ Feature: Lesson Shop
     Then the Shop purchase requires sign-in
     And no credit wallet is debited
 
-  @planned
+  @implemented
   Scenario: Earn additional credits through learning
     Given an authenticated learner completes a credit-bearing activity
-    When the activity reward is granted
+    When the activity reward is requested twice
     Then the learner wallet receives the earned credits exactly once
+    And one immutable reward claim is recorded
 
   @planned
   Scenario: Buy a credit pack through a real payment provider

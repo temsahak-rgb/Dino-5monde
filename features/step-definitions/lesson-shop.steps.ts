@@ -210,6 +210,49 @@ Then(
     }
 );
 
+Given(
+    "an authenticated learner completes a credit-bearing activity",
+    function (this: ProductWorld): void {
+        this.shopAuthenticated = true;
+        this.shopCredits = 100;
+        this.learningActivityId =
+            "travel_lesson:TR-006";
+        this.learningRewardCredits = 5;
+        this.learningRewardGranted =
+            false;
+        this.learningRewardLedgerEntries =
+            0;
+    }
+);
+
+When(
+    "the activity reward is requested twice",
+    function (this: ProductWorld): void {
+        grantLearningReward.call(this);
+        grantLearningReward.call(this);
+    }
+);
+
+Then(
+    "the learner wallet receives the earned credits exactly once",
+    function (this: ProductWorld): void {
+        assert.equal(
+            this.shopCredits,
+            105
+        );
+    }
+);
+
+Then(
+    "one immutable reward claim is recorded",
+    function (this: ProductWorld): void {
+        assert.equal(
+            this.learningRewardLedgerEntries,
+            1
+        );
+    }
+);
+
 function purchaseShopLesson(
     this: ProductWorld
 ): void {
@@ -288,4 +331,38 @@ function requiredLessonId(
     );
 
     return lessonId;
+}
+
+function grantLearningReward(
+    this: ProductWorld
+): void {
+    assert.equal(
+        this.shopAuthenticated,
+        true
+    );
+    assert.ok(
+        this.learningActivityId
+    );
+    assert.ok(
+        typeof this.shopCredits
+            === "number"
+    );
+    assert.ok(
+        typeof this.learningRewardCredits
+            === "number"
+    );
+
+    if (this.learningRewardGranted) {
+        return;
+    }
+
+    this.shopCredits +=
+        this.learningRewardCredits;
+    this.learningRewardGranted =
+        true;
+    this.learningRewardLedgerEntries =
+        (
+            this.learningRewardLedgerEntries
+            ?? 0
+        ) + 1;
 }

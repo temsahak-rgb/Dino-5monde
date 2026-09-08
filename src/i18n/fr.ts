@@ -134,6 +134,18 @@ const frMessages = {
     "profile.credits": "Mes crédits",
     "profile.creditsUnavailable": "Crédits indisponibles",
     "profile.openShop": "Ouvrir la boutique",
+    "profile.rewardsTitle": "Récompenses obtenues",
+    "profile.rewardsDescription": "Vos dernières leçons Voyage récompensées.",
+    "profile.rewardsEmpty": "Terminez une leçon Voyage pour gagner vos premiers crédits.",
+    "profile.rewardsUnavailable": "Historique temporairement indisponible.",
+    "profile.rewardFallback": "Leçon Voyage",
+    "profile.rewardCredits": "+{count} crédits",
+
+    "rewards.available": "🎁 Terminez cette leçon : +{count} crédits",
+    "rewards.claiming": "🎁 Attribution de vos crédits…",
+    "rewards.awarded": "🎉 {count} crédits gagnés",
+    "rewards.signIn": "🎁 Leçon terminée : connectez-vous pour recevoir {count} crédits",
+    "rewards.claimError": "La récompense n’a pas pu être confirmée.",
 
     "shop.eyebrow": "Services",
     "shop.title": "Boutique",

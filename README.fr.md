@@ -68,7 +68,7 @@ Le but du MVP n'est pas encore de fournir toutes les fonctions d'une plateforme 
 | Recherche | ✅ Présente |
 | Actualités | ✅ Présentes |
 | Sondages | ✅ Fonction présente |
-| Boutique et crédits | ✅ `/shop`, catalogue et achats en crédits virtuels |
+| Boutique et crédits | ✅ `/shop`, achats et récompenses Voyage de 5 crédits |
 | Compte et Profil | ✅ Connexion email sans mot de passe et profil privé `Saurus` |
 | Quotidien, Jeux, page générale Exercices | Hors du périmètre publié ; aucune route factice exposée |
 | Synchronisation multi-appareils | ❌ Non implémentée |
@@ -161,7 +161,9 @@ Le dépôt contient également des fonctionnalités de recherche, d'actualités 
 
 La route partageable `/shop` présente les leçons disponibles. Chaque nouveau compte reçoit **100 crédits** et peut les dépenser pour acquérir une leçon ; le solde est également visible dans `/profile`. Il s'agit pour l'instant d'une monnaie virtuelle interne : aucun paiement en argent réel n'est raccordé.
 
-Supabase conserve le portefeuille, les droits acquis et un registre append-only des mouvements. Les politiques Row Level Security isolent chaque compte, et une fonction PostgreSQL effectue l'achat de façon atomique afin d'empêcher les doubles débits et les soldes négatifs.
+Supabase conserve le portefeuille, les droits acquis et un registre append-only des mouvements. Les politiques Row Level Security isolent chaque compte. Les achats et les récompenses sont atomiques : terminer une leçon Voyage crédite **5 crédits une seule fois**, même après un rechargement ou une nouvelle demande. Le montant et la liste des activités éligibles restent contrôlés par PostgreSQL, jamais par le navigateur. Les dernières récompenses sont visibles et cliquables dans le profil.
+
+La progression pédagogique restant locale pour ce premier environnement, le navigateur signale encore la complétion. Le backend empêche déjà tout montant arbitraire et toute double récompense ; la synchronisation multi-appareils ajoutera ensuite une preuve de complétion entièrement persistée côté serveur.
 
 Le corpus reste volontairement dans `data/` et demeure public dans le build GitHub Pages. Une commercialisation réelle exigera donc de déplacer la livraison des contenus payants derrière une API privée ; masquer une leçon dans React ou stocker uniquement son droit d'accès en base ne protège pas son JSON public.
 

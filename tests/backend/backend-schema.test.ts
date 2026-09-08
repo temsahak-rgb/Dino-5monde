@@ -394,3 +394,143 @@ test(
         }
     }
 );
+
+test(
+    "learning rewards are server-priced, private and idempotent",
+    async () => {
+        const migration =
+            await readFile(
+                resolve(
+                    root,
+                    "supabase/migrations/20260908110000_create_learning_rewards.sql"
+                ),
+                "utf8"
+            );
+
+        for (
+            const table
+            of [
+                "learning_reward_rules",
+                "learner_activity_rewards"
+            ]
+        ) {
+            assert.match(
+                migration,
+                new RegExp(
+                    `alter table public\\.${table} enable row level security`,
+                    "u"
+                )
+            );
+            assert.match(
+                migration,
+                new RegExp(
+                    `alter table public\\.${table} force row level security`,
+                    "u"
+                )
+            );
+        }
+
+        assert.match(
+            migration,
+            /primary key \(user_id, activity_type, activity_id\)/u
+        );
+        assert.match(
+            migration,
+            /select rules\.reward_credits[\s\S]*from public\.learning_reward_rules/u
+        );
+        assert.match(
+            migration,
+            /from public\.learner_wallets[\s\S]*for update/u
+        );
+        assert.match(
+            migration,
+            /update public\.learner_wallets[\s\S]*credits = credits \+ reward_amount/u
+        );
+        assert.match(
+            migration,
+            /'learning_reward'/u
+        );
+        assert.match(
+            migration,
+            /create trigger learner_activity_rewards_append_only\s+before update on/u
+        );
+        assert.match(
+            migration,
+            /grant select on table public\.learning_reward_rules\s+to anon, authenticated/u
+        );
+        assert.match(
+            migration,
+            /grant select on table public\.learner_activity_rewards\s+to authenticated/u
+        );
+        assert.doesNotMatch(
+            migration,
+            /grant (?:insert|update|delete)[\s\S]*public\.learner_activity_rewards[\s\S]*to (?:anon|authenticated)/u
+        );
+        assert.match(
+            migration,
+            /revoke all on function public\.claim_learning_reward\(text, text\)\s+from public, anon, authenticated/u
+        );
+        assert.match(
+            migration,
+            /grant execute on function public\.claim_learning_reward\(text, text\)\s+to authenticated/u
+        );
+        assert.doesNotMatch(
+            migration,
+            /claim_learning_reward[\s\S]*p_(?:credits|amount|reward)/u
+        );
+    }
+);
+
+test(
+    "every current Travel lesson has one five-credit server rule",
+    async () => {
+        const [
+            migration,
+            travelCatalogSource
+        ] = await Promise.all([
+            readFile(
+                resolve(
+                    root,
+                    "supabase/migrations/20260908110000_create_learning_rewards.sql"
+                ),
+                "utf8"
+            ),
+            readFile(
+                resolve(
+                    root,
+                    "data/travel/lessons.json"
+                ),
+                "utf8"
+            )
+        ]);
+        const travelCatalog =
+            JSON.parse(
+                travelCatalogSource
+            ) as Array<{
+                id: string;
+            }>;
+        const rewardIds = [
+            ...migration.matchAll(
+                /\('travel_lesson',\s*'([^']+)',\s*5\)/gu
+            )
+        ].map(
+            match =>
+                match[1]
+        );
+
+        assert.deepEqual(
+            new Set(rewardIds),
+            new Set(
+                travelCatalog.map(
+                    lesson =>
+                        lesson.id
+                )
+            )
+        );
+        assert.equal(
+            rewardIds.length,
+            travelCatalog.length,
+            "Each Travel lesson must have exactly one reward rule"
+        );
+    }
+);

@@ -31,6 +31,10 @@ interface ProductWorld extends IWorld {
     shopLessonId?: string;
     shopLessonPrice?: number;
     shopOwnedLessonIds?: string[];
+    learningActivityId?: string;
+    learningRewardCredits?: number;
+    learningRewardGranted?: boolean;
+    learningRewardLedgerEntries?: number;
     shopPurchaseStatus?:
         | "already-owned"
         | "insufficient-credits"

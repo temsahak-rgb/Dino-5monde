@@ -15,6 +15,10 @@ import {
 } from "../services/backend/LearnerProfileProvider.js";
 
 import {
+    LearningRewardsProvider
+} from "../services/backend/LearningRewardsProvider.js";
+
+import {
     ShopProvider
 } from "../services/backend/ShopProvider.js";
 
@@ -33,11 +37,13 @@ function App() {
         <BackendProvider>
             <AuthProvider>
                 <ShopProvider>
-                    <LearnerProfileProvider>
-                        <I18nProvider>
-                            <AppRouter />
-                        </I18nProvider>
-                    </LearnerProfileProvider>
+                    <LearningRewardsProvider>
+                        <LearnerProfileProvider>
+                            <I18nProvider>
+                                <AppRouter />
+                            </I18nProvider>
+                        </LearnerProfileProvider>
+                    </LearningRewardsProvider>
                 </ShopProvider>
             </AuthProvider>
         </BackendProvider>

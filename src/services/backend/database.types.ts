@@ -57,6 +57,47 @@ type LearnerWalletUpdate = {
     user_id?: never;
 };
 
+type LearningActivityType =
+    "travel_lesson";
+
+type LearningRewardRuleRow = {
+    active: boolean;
+    activity_id: string;
+    activity_type: LearningActivityType;
+    created_at: string;
+    reward_credits: number;
+};
+
+type LearningRewardRuleInsert = {
+    active?: never;
+    activity_id?: never;
+    activity_type?: never;
+    created_at?: never;
+    reward_credits?: never;
+};
+
+type LearningRewardRuleUpdate =
+    LearningRewardRuleInsert;
+
+type LearnerActivityRewardRow = {
+    activity_id: string;
+    activity_type: LearningActivityType;
+    awarded_at: string;
+    credits_awarded: number;
+    user_id: string;
+};
+
+type LearnerActivityRewardInsert = {
+    activity_id?: never;
+    activity_type?: never;
+    awarded_at?: never;
+    credits_awarded?: never;
+    user_id?: never;
+};
+
+type LearnerActivityRewardUpdate =
+    LearnerActivityRewardInsert;
+
 type ShopLessonContentType =
     | "grammar"
     | "vocabulary";
@@ -128,7 +169,8 @@ type LearnerCreditTransactionRow = {
     id: number;
     reason:
         | "starter_grant"
-        | "lesson_purchase";
+        | "lesson_purchase"
+        | "learning_reward";
     reference_id: string | null;
     user_id: string;
 };
@@ -152,6 +194,15 @@ type PurchaseShopLessonRpcRow = {
     shop_lesson_id: string;
 };
 
+type ClaimLearningRewardRpcRow = {
+    activity_id: string;
+    activity_type: LearningActivityType;
+    awarded: boolean;
+    awarded_at: string;
+    credits_awarded: number;
+    credits_remaining: number;
+};
+
 type Database = {
     public: {
         Tables: {
@@ -165,6 +216,18 @@ type Database = {
                 Row: LearnerWalletRow;
                 Insert: LearnerWalletInsert;
                 Update: LearnerWalletUpdate;
+                Relationships: [];
+            };
+            learning_reward_rules: {
+                Row: LearningRewardRuleRow;
+                Insert: LearningRewardRuleInsert;
+                Update: LearningRewardRuleUpdate;
+                Relationships: [];
+            };
+            learner_activity_rewards: {
+                Row: LearnerActivityRewardRow;
+                Insert: LearnerActivityRewardInsert;
+                Update: LearnerActivityRewardUpdate;
                 Relationships: [];
             };
             learner_credit_transactions: {
@@ -188,6 +251,13 @@ type Database = {
         };
         Views: Record<string, never>;
         Functions: {
+            claim_learning_reward: {
+                Args: {
+                    p_activity_id: string;
+                    p_activity_type: LearningActivityType;
+                };
+                Returns: ClaimLearningRewardRpcRow[];
+            };
             purchase_shop_lesson: {
                 Args: {
                     p_shop_lesson_id: string;
@@ -201,10 +271,14 @@ type Database = {
 };
 
 export {
+    type ClaimLearningRewardRpcRow,
     type Database,
     type Json,
+    type LearnerActivityRewardRow,
     type LearnerCreditTransactionRow,
     type LearnerWalletRow,
+    type LearningActivityType,
+    type LearningRewardRuleRow,
     type LessonEntitlementRow,
     type LearnerProfileInsert,
     type LearnerProfileRow,

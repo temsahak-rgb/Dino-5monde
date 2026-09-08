@@ -134,6 +134,18 @@ const faMessages: Record<TranslationKey, string> = {
     "profile.credits": "اعتبارهای من",
     "profile.creditsUnavailable": "اعتبارها در دسترس نیستند",
     "profile.openShop": "باز کردن فروشگاه",
+    "profile.rewardsTitle": "پاداش‌های دریافت‌شده",
+    "profile.rewardsDescription": "آخرین درس‌های سفر که برای آن‌ها پاداش گرفته‌اید.",
+    "profile.rewardsEmpty": "یک درس سفر را کامل کنید تا نخستین اعتبارهای خود را بگیرید.",
+    "profile.rewardsUnavailable": "تاریخچه پاداش‌ها موقتاً در دسترس نیست.",
+    "profile.rewardFallback": "درس سفر",
+    "profile.rewardCredits": "+{count} اعتبار",
+
+    "rewards.available": "🎁 این درس را کامل کنید: +{count} اعتبار",
+    "rewards.claiming": "🎁 اعتبارهای شما در حال ثبت است…",
+    "rewards.awarded": "🎉 {count} اعتبار دریافت شد",
+    "rewards.signIn": "🎁 درس کامل شد؛ برای دریافت {count} اعتبار وارد شوید",
+    "rewards.claimError": "تأیید پاداش ممکن نشد.",
 
     "shop.eyebrow": "خدمات",
     "shop.title": "فروشگاه درس‌ها",
