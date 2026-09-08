@@ -188,6 +188,7 @@ as $$
 declare
     learner_id uuid := auth.uid();
     reward_amount integer;
+    existing_reward_amount integer;
     reward_awarded_at timestamptz;
     wallet_credits integer;
     reward_reference text;
@@ -240,7 +241,7 @@ begin
         rewards.credits_awarded,
         rewards.awarded_at
     into
-        reward_amount,
+        existing_reward_amount,
         reward_awarded_at
     from public.learner_activity_rewards as rewards
     where rewards.user_id = learner_id
@@ -252,7 +253,7 @@ begin
         select
             p_activity_type,
             p_activity_id,
-            reward_amount,
+            existing_reward_amount,
             wallet_credits,
             reward_awarded_at,
             false;
