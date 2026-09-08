@@ -28,6 +28,9 @@ import {
     ExerciseHistoryCard
 } from "../features/profile/ExerciseHistoryCard.js";
 import {
+    DailyPracticeCard
+} from "../features/profile/DailyPracticeCard.js";
+import {
     useAuth
 } from "../services/backend/AuthProvider.js";
 import {
@@ -474,6 +477,8 @@ function ProfilePage() {
                                 {t("profile.openShop")}
                             </Link>
                         </Card>
+
+                        <DailyPracticeCard />
 
                         <ExerciseHistoryCard />
 
