@@ -1,5 +1,7 @@
 import {
+    useEffect,
     useMemo,
+    useRef,
     useState
 } from "react";
 
@@ -30,6 +32,7 @@ import {
 interface VocabularyWordSearchProps {
     pack: VocabPack;
     onBack: () => void;
+    onComplete: () => void;
 }
 
 /**
@@ -51,7 +54,8 @@ interface VocabularyWordSearchProps {
  */
 function VocabularyWordSearch({
     pack,
-    onBack
+    onBack,
+    onComplete
 }: VocabularyWordSearchProps) {
     const {
         t
@@ -87,6 +91,8 @@ function VocabularyWordSearch({
         >(
             undefined
         );
+    const completionNotified =
+        useRef(false);
 
     const foundCells =
         useMemo(
@@ -101,6 +107,29 @@ function VocabularyWordSearch({
             ]
         );
 
+    const completed =
+        Boolean(
+            game
+            && game.foundAnswers.length
+                === game.placements.length
+        );
+
+    useEffect(
+        () => {
+            if (
+                completed
+                && !completionNotified.current
+            ) {
+                completionNotified.current = true;
+                onComplete();
+            }
+        },
+        [
+            completed,
+            onComplete
+        ]
+    );
+
     if (!game) {
         return (
             <VocabularyGameUnavailable
@@ -110,10 +139,6 @@ function VocabularyWordSearch({
             />
         );
     }
-
-    const completed =
-        game.foundAnswers.length
-        === game.placements.length;
 
     const feedback =
         getWordSearchFeedback(
@@ -462,6 +487,8 @@ function VocabularyWordSearch({
      */
     function restart():
         void {
+        completionNotified.current = false;
+
         setGame(
             createWordSearchGame(
                 pack.words

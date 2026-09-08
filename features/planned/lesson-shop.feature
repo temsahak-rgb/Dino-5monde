@@ -61,6 +61,19 @@ Feature: Lesson Shop
     Then no learning credits are awarded
     And no immutable reward claim is recorded
 
+  @implemented
+  Scenario Outline: Reward the first game win per CEFR level
+    Given an authenticated learner starts a rewarded "<game>" game at level "<level>" worth <credits> credits
+    When the learner completes the game attempt and requests its reward twice
+    Then the learner has <balance> credits
+    And one immutable reward claim is recorded
+
+    Examples:
+      | game        | level | credits | balance |
+      | Hangman     | A1    | 1       | 101     |
+      | Word Search | B1    | 3       | 103     |
+      | Crossword   | C2    | 5       | 105     |
+
   @planned
   Scenario: Buy a credit pack through a real payment provider
     Given an authenticated learner selects a credit pack

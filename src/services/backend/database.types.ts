@@ -58,14 +58,36 @@ type LearnerWalletUpdate = {
 };
 
 type LearningActivityType =
-    "travel_lesson";
+    | "travel_lesson"
+    | "hangman_game"
+    | "word_search_game"
+    | "crossword_game";
+
+type LearningGameActivityType =
+    Exclude<
+        LearningActivityType,
+        "travel_lesson"
+    >;
+
+type LearningGameLevel =
+    | "A1"
+    | "A2"
+    | "B1"
+    | "B2"
+    | "C1"
+    | "C2";
+
+type LearningRewardCompletionKind =
+    | "lesson_sections"
+    | "game_attempt";
 
 type LearningRewardRuleRow = {
     active: boolean;
     activity_id: string;
     activity_type: LearningActivityType;
+    completion_kind: LearningRewardCompletionKind;
     created_at: string;
-    required_sections: string[];
+    required_sections: string[] | null;
     reward_credits: number;
 };
 
@@ -73,6 +95,7 @@ type LearningRewardRuleInsert = {
     active?: never;
     activity_id?: never;
     activity_type?: never;
+    completion_kind?: never;
     created_at?: never;
     required_sections?: never;
     reward_credits?: never;
@@ -99,6 +122,37 @@ type LearnerActivityRewardInsert = {
 
 type LearnerActivityRewardUpdate =
     LearnerActivityRewardInsert;
+
+type LearnerGameAttemptRow = {
+    activity_id: LearningGameLevel;
+    activity_type: LearningGameActivityType;
+    completed_at: string | null;
+    id: string;
+    pack_id: string;
+    started_at: string;
+    user_id: string;
+};
+
+type LearnerGameAttemptInsert = {
+    activity_id?: never;
+    activity_type?: never;
+    completed_at?: never;
+    id?: never;
+    pack_id?: never;
+    started_at?: never;
+    user_id?: never;
+};
+
+type LearnerGameAttemptUpdate =
+    LearnerGameAttemptInsert;
+
+type LearningGameAttemptRpcRow = Omit<
+    LearnerGameAttemptRow,
+    | "id"
+    | "user_id"
+> & {
+    attempt_id: string;
+};
 
 type LessonProgressContentType =
     | "grammar"
@@ -303,6 +357,12 @@ type Database = {
                 Update: LearnerActivityRewardUpdate;
                 Relationships: [];
             };
+            learner_game_attempts: {
+                Row: LearnerGameAttemptRow;
+                Insert: LearnerGameAttemptInsert;
+                Update: LearnerGameAttemptUpdate;
+                Relationships: [];
+            };
             learner_credit_transactions: {
                 Row: LearnerCreditTransactionRow;
                 Insert: LearnerCreditTransactionInsert;
@@ -343,11 +403,25 @@ type Database = {
                 };
                 Returns: ClaimLearningRewardRpcRow[];
             };
+            complete_learning_game: {
+                Args: {
+                    p_attempt_id: string;
+                };
+                Returns: LearningGameAttemptRpcRow[];
+            };
             purchase_shop_lesson: {
                 Args: {
                     p_shop_lesson_id: string;
                 };
                 Returns: PurchaseShopLessonRpcRow[];
+            };
+            start_learning_game: {
+                Args: {
+                    p_activity_id: LearningGameLevel;
+                    p_activity_type: LearningGameActivityType;
+                    p_pack_id: string;
+                };
+                Returns: LearningGameAttemptRpcRow[];
             };
             sync_lesson_progress: {
                 Args: {
@@ -383,10 +457,15 @@ export {
     type Json,
     type LearnerActivityRewardRow,
     type LearnerCreditTransactionRow,
+    type LearnerGameAttemptRow,
     type LearnerLessonProgressRow,
     type LearnerReviewSignalRow,
     type LearnerWalletRow,
     type LearningActivityType,
+    type LearningGameActivityType,
+    type LearningGameAttemptRpcRow,
+    type LearningGameLevel,
+    type LearningRewardCompletionKind,
     type LearningRewardRuleRow,
     type LessonProgressContentType,
     type LessonEntitlementRow,

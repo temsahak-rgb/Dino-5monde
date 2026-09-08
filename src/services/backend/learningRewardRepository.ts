@@ -156,15 +156,33 @@ function assertLearningActivity(
     activityType: LearningActivityType,
     activityId: string
 ): void {
+    const gameActivity =
+        activityType === "hangman_game"
+        || activityType === "word_search_game"
+        || activityType === "crossword_game";
+
     if (
-        activityType
-            !== "travel_lesson"
+        (
+            activityType !== "travel_lesson"
+            && !gameActivity
+        )
         || activityId.length === 0
         || activityId.length > 160
         || activityId.trim()
             !== activityId
         || /[\u0000-\u001f\u007f]/u.test(
             activityId
+        )
+        || (
+            gameActivity
+            && ![
+                "A1",
+                "A2",
+                "B1",
+                "B2",
+                "C1",
+                "C2"
+            ].includes(activityId)
         )
     ) {
         throw new TypeError(

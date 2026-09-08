@@ -68,7 +68,7 @@ Le but du MVP n'est pas encore de fournir toutes les fonctions d'une plateforme 
 | Recherche | ✅ Présente |
 | Actualités | ✅ Présentes |
 | Sondages | ✅ Fonction présente |
-| Boutique et crédits | ✅ `/shop`, achats et récompenses Voyage de 5 crédits |
+| Boutique et crédits | ✅ `/shop`, achats et récompenses Voyage/mini-jeux |
 | Compte et Profil | ✅ Connexion email sans mot de passe et profil privé `Saurus` |
 | Hub Jeux & exercices | ✅ `/practice`, catalogues par jeu/niveau et parties partageables |
 | Quotidien | Hors du périmètre publié ; aucune route factice exposée |
@@ -122,6 +122,8 @@ Les données couvrent actuellement plusieurs niveaux jusqu'à **C2**, avec une c
 
 Le hub `/practice` rassemble les activités réellement disponibles : Pendu, Grille de lettres, Mots croisés et les parcours d’exercices Grammaire, Vocabulaire et Voyage. Un jeu se choisit par niveau puis par thème. Sa route `/practice/:game/:level/:packId` peut être copiée, rechargée et partagée sans perdre l’activité sélectionnée.
 
+Avec un compte connecté, la première victoire de chaque jeu à chaque niveau CECRL est récompensée : **1 crédit au Pendu, 3 à la Grille de lettres et 5 aux Mots croisés**. Le gain reste unique après un rechargement et apparaît dans l’historique cliquable du profil.
+
 La page `/practice/review` transforme les réponses incorrectes et les mots marqués comme difficiles en actions concrètes : reprendre une leçon, marquer une série d’erreurs comme revue ou lancer directement les flashcards faibles d’un thème. Avec un compte connecté, ces sources suivent l’apprenant sur ses appareils et une suppression reste protégée par un tombstone.
 
 ### ✈️ Voyage
@@ -169,7 +171,7 @@ Le dépôt contient également des fonctionnalités de recherche, d'actualités 
 
 La route partageable `/shop` présente les leçons disponibles. Chaque nouveau compte reçoit **100 crédits** et peut les dépenser pour acquérir une leçon ; le solde est également visible dans `/profile`. Il s'agit pour l'instant d'une monnaie virtuelle interne : aucun paiement en argent réel n'est raccordé.
 
-Supabase conserve le portefeuille, les droits acquis et un registre append-only des mouvements. Les politiques Row Level Security isolent chaque compte. Les achats et les récompenses sont atomiques : terminer une leçon Voyage crédite **5 crédits une seule fois**, même après un rechargement ou une nouvelle demande. Le montant et la liste des activités éligibles restent contrôlés par PostgreSQL, jamais par le navigateur. Les dernières récompenses sont visibles et cliquables dans le profil.
+Supabase conserve le portefeuille, les droits acquis et un registre append-only des mouvements. Les politiques Row Level Security isolent chaque compte. Les achats et les récompenses sont atomiques : terminer une leçon Voyage crédite **5 crédits une seule fois** ; gagner un mini-jeu crédite une seule fois le couple jeu/niveau (**1 / 3 / 5 crédits** selon le jeu). PostgreSQL contrôle les montants et exige, pour un jeu, une tentative privée émise puis terminée côté serveur. Le navigateur ne peut ni choisir la somme ni fabriquer directement une récompense. Les dernières récompenses sont visibles et cliquables dans le profil.
 
 La progression Grammaire et Voyage est persistée par compte et fusionnée de façon monotone entre appareils. Pour une leçon récompensée, le backend compare les sections synchronisées à la règle de complétion qu’il possède avant de créditer le portefeuille. Un statut `completed` envoyé par le navigateur ne suffit pas ; le montant reste fixé côté serveur et chaque récompense demeure unique.
 
@@ -745,7 +747,7 @@ Les imports explicites alimentent désormais automatiquement le graphe d'archite
 Les prochaines évolutions naturelles comprennent notamment :
 
 - terminer le parcours Quotidien ;
-- enrichir les Jeux et leurs récompenses de progression ;
+- relier davantage les Jeux au suivi de progression et aux révisions ;
 - unifier davantage le suivi des exercices ;
 - renforcer les exercices ;
 - ajouter davantage de tests de données ;

@@ -1,4 +1,5 @@
 import {
+    useCallback,
     useEffect,
     useState
 } from "react";
@@ -17,6 +18,9 @@ import {
 import {
     VocabularyGame
 } from "../features/vocabulary/VocabularyGame.js";
+import {
+    PracticeGameReward
+} from "../features/practice/PracticeGameReward.js";
 
 import {
     getAvailableVocabularyGames
@@ -93,9 +97,22 @@ function PracticeGamePage() {
         retryCount,
         setRetryCount
     ] = useState(0);
+    const [
+        gameCompleted,
+        setGameCompleted
+    ] = useState(false);
+    const completeGame =
+        useCallback(
+            () => {
+                setGameCompleted(true);
+            },
+            []
+        );
 
     useEffect(
         () => {
+            setGameCompleted(false);
+
             if (!game || !level || !packId) {
                 setPack(null);
                 setLoading(false);
@@ -215,9 +232,17 @@ function PracticeGamePage() {
 
     return (
         <Page>
+            <PracticeGameReward
+                completed={gameCompleted}
+                game={game}
+                level={level}
+                packId={packId}
+            />
+
             <VocabularyGame
                 pack={pack}
                 game={game}
+                onComplete={completeGame}
                 onBack={() => {
                     navigate(catalogPath);
                 }}

@@ -49,7 +49,8 @@ async function readLearningRewardMigrations():
     Promise<string> {
     const paths = [
         "supabase/migrations/20260908110000_create_learning_rewards.sql",
-        "supabase/migrations/20260908190000_verify_learning_reward_completion.sql"
+        "supabase/migrations/20260908190000_verify_learning_reward_completion.sql",
+        "supabase/migrations/20260908210000_reward_practice_games.sql"
     ];
 
     return (
@@ -585,6 +586,66 @@ test(
                 `Completion rule drift for Travel lesson ${id}`
             );
         }
+    }
+);
+
+test(
+    "practice game rewards require private server-issued attempts",
+    async () => {
+        const migration = await readFile(
+            resolve(
+                root,
+                "supabase/migrations/20260908210000_reward_practice_games.sql"
+            ),
+            "utf8"
+        );
+        const gameRules = [
+            ...migration.matchAll(
+                /\('(hangman_game|word_search_game|crossword_game)',\s*'(A1|A2|B1|B2|C1|C2)',\s*(1|3|5),\s*'game_attempt',\s*null\)/gu
+            )
+        ];
+
+        assert.equal(
+            gameRules.length,
+            18,
+            "Each game and CEFR level must have one rule"
+        );
+        assert.match(
+            migration,
+            /create table public\.learner_game_attempts/u
+        );
+        assert.match(
+            migration,
+            /alter table public\.learner_game_attempts force row level security/u
+        );
+        assert.match(
+            migration,
+            /using \(\(select auth\.uid\(\)\) = user_id\)/u
+        );
+        assert.match(
+            migration,
+            /create unique index learner_game_attempts_one_open_attempt/u
+        );
+        assert.match(
+            migration,
+            /pg_advisory_xact_lock/u
+        );
+        assert.match(
+            migration,
+            /attempts\.completed_at is not null/u
+        );
+        assert.match(
+            migration,
+            /revoke all on function public\.start_learning_game\(text, text, text\)[\s\S]*from public, anon, authenticated/u
+        );
+        assert.match(
+            migration,
+            /revoke all on function public\.complete_learning_game\(uuid\)[\s\S]*from public, anon, authenticated/u
+        );
+        assert.doesNotMatch(
+            migration,
+            /grant (?:insert|update|delete)[\s\S]*public\.learner_game_attempts[\s\S]*to (?:anon|authenticated)/u
+        );
     }
 );
 
