@@ -66,6 +66,18 @@ import {
 } from "../pages/ProfilePage.js";
 
 import {
+    PracticeCatalogPage
+} from "../pages/PracticeCatalogPage.js";
+
+import {
+    PracticeGamePage
+} from "../pages/PracticeGamePage.js";
+
+import {
+    PracticeIndexPage
+} from "../pages/PracticeIndexPage.js";
+
+import {
     ShopPage
 } from "../pages/ShopPage.js";
 
@@ -123,6 +135,10 @@ import {
  * /vocabulary
  * /vocabulary/:level
  * /vocabulary/:level/:packId
+ *
+ * /practice
+ * /practice/:game/:level
+ * /practice/:game/:level/:packId
  *
  * /travel
  * /travel/:lessonId
@@ -193,6 +209,34 @@ const router =
 
                     Component:
                         ShopPage
+                },
+
+                /* ---------------------------------------------------------- */
+                /* Games and exercises                                        */
+                /* ---------------------------------------------------------- */
+
+                {
+                    path:
+                        appRoutePatterns.practiceIndex,
+
+                    Component:
+                        PracticeIndexPage
+                },
+
+                {
+                    path:
+                        appRoutePatterns.practiceCatalog,
+
+                    Component:
+                        PracticeCatalogPage
+                },
+
+                {
+                    path:
+                        appRoutePatterns.practiceGame,
+
+                    Component:
+                        PurchasablePracticeGamePage
                 },
 
                 /* ---------------------------------------------------------- */
@@ -535,6 +579,23 @@ function PurchasableVocabularyPackPage() {
             level={level}
         >
             <VocabularyPackPage />
+        </LessonAccessBoundary>
+    );
+}
+
+function PurchasablePracticeGamePage() {
+    const {
+        level,
+        packId = ""
+    } = useParams();
+
+    return (
+        <LessonAccessBoundary
+            contentId={packId}
+            contentType="vocabulary"
+            level={level}
+        >
+            <PracticeGamePage />
         </LessonAccessBoundary>
     );
 }

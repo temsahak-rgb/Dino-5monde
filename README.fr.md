@@ -70,7 +70,8 @@ Le but du MVP n'est pas encore de fournir toutes les fonctions d'une plateforme 
 | Sondages | ✅ Fonction présente |
 | Boutique et crédits | ✅ `/shop`, achats et récompenses Voyage de 5 crédits |
 | Compte et Profil | ✅ Connexion email sans mot de passe et profil privé `Saurus` |
-| Quotidien, Jeux, page générale Exercices | Hors du périmètre publié ; aucune route factice exposée |
+| Hub Jeux & exercices | ✅ `/practice`, catalogues par jeu/niveau et parties partageables |
+| Quotidien | Hors du périmètre publié ; aucune route factice exposée |
 | Synchronisation multi-appareils | ❌ Non implémentée |
 
 La progression pédagogique repose encore principalement sur `localStorage`. Le compte, le profil, le solde de crédits et les droits sur les leçons sont en revanche enregistrés dans Supabase et rattachés à l'utilisateur connecté.
@@ -115,6 +116,10 @@ Les activités incluent notamment :
 - révision spécifique des mots faibles.
 
 Les données couvrent actuellement plusieurs niveaux jusqu'à **C2**, avec une couverture très variable selon les thèmes.
+
+### 🎮 Jeux et exercices
+
+Le hub `/practice` rassemble les activités réellement disponibles : Pendu, Grille de lettres, Mots croisés et les parcours d’exercices Grammaire, Vocabulaire et Voyage. Un jeu se choisit par niveau puis par thème. Sa route `/practice/:game/:level/:packId` peut être copiée, rechargée et partagée sans perdre l’activité sélectionnée.
 
 ### ✈️ Voyage
 
@@ -391,6 +396,7 @@ Chaque écran durable possède un chemin React Router canonique, par exemple :
 /grammar/A1
 /grammar/lesson/A1-G-001
 /vocabulary/B1/arrival-office
+/practice/hangman/A1/salutations_expressions_quotidiennes
 /travel/TR-006
 /journal/2026-w34-azadi-tower
 /shop
@@ -736,8 +742,8 @@ Les imports explicites alimentent désormais automatiquement le graphe d'archite
 Les prochaines évolutions naturelles comprennent notamment :
 
 - terminer le parcours Quotidien ;
-- développer les Jeux ;
-- compléter la page générale Exercices ;
+- enrichir les Jeux et leurs récompenses de progression ;
+- unifier davantage le suivi des exercices ;
 - renforcer les exercices ;
 - ajouter davantage de tests de données ;
 - améliorer les recommandations de révision à partir des erreurs ;

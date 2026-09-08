@@ -11,6 +11,9 @@ const appRoutePatterns = {
     home: "/",
     profile: "/profile",
     shop: "/shop",
+    practiceIndex: "/practice",
+    practiceCatalog: "/practice/:game/:level",
+    practiceGame: "/practice/:game/:level/:packId",
     grammarIndex: "/grammar",
     grammarLevel: "/grammar/:level",
     grammarLesson: "/grammar/lesson/:lessonId",
@@ -46,12 +49,29 @@ type GrammarLevel =
 type VocabularyLevel =
     typeof vocabularyLevels[number];
 
+type PracticeGameKind =
+    | "hangman"
+    | "word-search"
+    | "crossword";
+
 type AppRoute =
     | { name: "auth" }
     | { name: "onboarding" }
     | { name: "home" }
     | { name: "profile" }
     | { name: "shop" }
+    | { name: "practice-index" }
+    | {
+        name: "practice-catalog";
+        game: PracticeGameKind;
+        level: VocabularyLevel;
+    }
+    | {
+        name: "practice-game";
+        game: PracticeGameKind;
+        level: VocabularyLevel;
+        packId: string;
+    }
     | { name: "grammar-index" }
     | { name: "grammar-level"; level: GrammarLevel }
     | { name: "grammar-lesson"; lessonId: string }
@@ -73,6 +93,7 @@ type AppRoute =
 type AppRouteSection =
     | "home"
     | "shop"
+    | "practice"
     | "grammar"
     | "vocabulary"
     | "travel"
@@ -93,6 +114,12 @@ function createAppPath(
             return appRoutePatterns.profile;
         case "shop":
             return appRoutePatterns.shop;
+        case "practice-index":
+            return appRoutePatterns.practiceIndex;
+        case "practice-catalog":
+            return `/practice/${route.game}/${route.level}`;
+        case "practice-game":
+            return `/practice/${route.game}/${route.level}/${encodeRouteSegment(route.packId)}`;
         case "grammar-index":
             return appRoutePatterns.grammarIndex;
         case "grammar-level":
@@ -153,6 +180,8 @@ function matchAppPath(
                 return { name: "profile" };
             case "shop":
                 return { name: "shop" };
+            case "practice":
+                return { name: "practice-index" };
             case "grammar":
                 return { name: "grammar-index" };
             case "vocabulary":
@@ -162,6 +191,39 @@ function matchAppPath(
             case "journal":
                 return { name: "journal-index" };
         }
+    }
+
+    if (
+        segments.length === 3
+        && segments[0] === "practice"
+        && isPracticeGameKind(segments[1])
+        && isVocabularyLevel(segments[2])
+    ) {
+        return {
+            name: "practice-catalog",
+            game: segments[1],
+            level: segments[2]
+        };
+    }
+
+    if (
+        segments.length === 4
+        && segments[0] === "practice"
+        && isPracticeGameKind(segments[1])
+        && isVocabularyLevel(segments[2])
+    ) {
+        const game = segments[1];
+        const level = segments[2];
+
+        return decodedRoute(
+            segments[3],
+            packId => ({
+                name: "practice-game",
+                game,
+                level,
+                packId
+            })
+        );
     }
 
     if (
@@ -257,6 +319,10 @@ function getAppRouteSection(
 
     if (route.name === "shop") {
         return "shop";
+    }
+
+    if (route.name.startsWith("practice-")) {
+        return "practice";
     }
 
     for (
@@ -356,6 +422,16 @@ function isVocabularyLevel(
     value: string | undefined
 ): value is VocabularyLevel {
     return vocabularyLevels.some(level => level === value);
+}
+
+function isPracticeGameKind(
+    value: string | undefined
+): value is PracticeGameKind {
+    return (
+        value === "hangman"
+        || value === "word-search"
+        || value === "crossword"
+    );
 }
 
 export {

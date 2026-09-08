@@ -469,18 +469,18 @@ function Navbar({
                                     max-[560px]:row-auto
                                 "
                             >
-                                <p
-                                    className="
-                                        mb-2
-                                        text-sm
-                                        font-extrabold
-                                        text-ink
-                                    "
-                                >
-                                    {t(
-                                        "navbar.gamesExercises"
-                                    )}
-                                </p>
+                                <NavigationLink
+                                    to="/practice"
+                                    icon="🎮"
+                                    label={
+                                        t(
+                                            "navbar.gamesExercises"
+                                        )
+                                    }
+                                    onNavigate={
+                                        closeMenu
+                                    }
+                                />
 
                                 <div
                                     className="

@@ -114,6 +114,7 @@ test(
             destinations,
             [
                 "/",
+                "/practice",
                 "/grammar",
                 "/vocabulary",
                 "/travel",
@@ -144,6 +145,11 @@ test(
                 )
             );
         }
+
+        assert.match(
+            html,
+            /href="\/practice"[^>]*>[\s\S]*?Jeux et exercices/
+        );
 
         assert.match(
             html,

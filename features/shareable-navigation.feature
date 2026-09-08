@@ -14,6 +14,7 @@ Feature: Shareable application navigation
       | grammar lesson  | A1-G-003-B           | /grammar/lesson/A1-G-003-B     |
       | journal article | 2026-w34-azadi-tower | /journal/2026-w34-azadi-tower  |
       | travel lesson   | suite 13 shopping    | /travel/suite%2013%20shopping  |
+      | vocabulary game | hangman\|A1\|salutations_expressions_quotidiennes | /practice/hangman/A1/salutations_expressions_quotidiennes |
 
   Scenario: An unknown public path is rejected
     Given the public path "/missing-content"

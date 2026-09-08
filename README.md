@@ -33,6 +33,7 @@ MVP overview, installation, i18n, architecture, tests and contribution rules.
 - 🧠 vocabulaire par niveau et thème ;
 - ✈️ parcours Français Voyage ;
 - 📝 exercices et quiz intégrés aux contenus ;
+- 🎮 hub Jeux & exercices sur `/practice`, avec parties partageables ;
 - 🧭 onboarding et test de placement ;
 - 🔎 recherche et contenus complémentaires ;
 - 🛍️ boutique de leçons sur `/shop`, avec 100 crédits de bienvenue ;
@@ -43,7 +44,7 @@ MVP overview, installation, i18n, architecture, tests and contribution rules.
 - 💾 progression enregistrée localement ;
 - 🧪 TypeScript + JSON + tests d'architecture.
 
-> **État / Status:** projet en développement. Le Profil et la Boutique sont désormais livrés ; les routes factices Quotidien, Jeux et page générale Exercices restent hors du MVP publié.
+> **État / Status:** projet en développement. Le Profil, la Boutique et le hub Jeux & exercices sont livrés ; le parcours Quotidien reste hors du MVP publié.
 
 ---
 

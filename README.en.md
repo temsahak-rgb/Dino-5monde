@@ -70,7 +70,8 @@ The MVP is not intended to provide every feature of a complete learning platform
 | Polls | ✅ Feature present |
 | Lesson shop and credits | ✅ `/shop`, purchases and five-credit Travel rewards |
 | Account and Profile | ✅ Passwordless email sign-in and private `Saurus` profile |
-| Daily, Games, global Exercises | Outside the published scope; no placeholder route is exposed |
+| Games & exercises hub | ✅ `/practice`, game/level catalogues and shareable sessions |
+| Daily | Outside the published scope; no placeholder route is exposed |
 | Cross-device sync | ❌ Not implemented |
 
 Learning progress still relies mainly on `localStorage`. Accounts, profiles, credit balances and lesson entitlements are stored in Supabase and tied to the signed-in user.
@@ -115,6 +116,10 @@ Activities include:
 - dedicated weak-word review.
 
 Vocabulary data currently spans several levels up to **C2**, with highly variable coverage depending on topic.
+
+### 🎮 Games and exercises
+
+The `/practice` hub brings together the activities that are actually shipped: Hangman, Word Search, Crosswords, and the Grammar, Vocabulary and Travel exercise paths. Learners choose a game, level and topic. The `/practice/:game/:level/:packId` route can be copied, reloaded and shared without losing the selected activity.
 
 ### ✈️ Travel
 
@@ -391,6 +396,7 @@ Every durable screen has a canonical React Router path, for example:
 /grammar/A1
 /grammar/lesson/A1-G-001
 /vocabulary/B1/arrival-office
+/practice/hangman/A1/salutations_expressions_quotidiennes
 /travel/TR-006
 /journal/2026-w34-azadi-tower
 /shop
@@ -736,8 +742,8 @@ Explicit imports now feed the architecture graph automatically and make unwanted
 Natural next steps include:
 
 - completing the Daily path;
-- building Games;
-- completing the global Exercises area;
+- enriching Games and their progress rewards;
+- further unifying exercise tracking;
 - strengthening exercises;
 - adding more data-consistency tests;
 - using learner mistakes to recommend reviews;
