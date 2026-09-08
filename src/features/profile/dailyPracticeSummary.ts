@@ -186,7 +186,8 @@ export {
     DAILY_EXERCISE_GOAL,
     DAILY_PRACTICE_WINDOW,
     MAX_EXERCISE_CLOCK_SKEW_MS,
-    summarizeDailyPractice
+    summarizeDailyPractice,
+    toLocalDateKey
 };
 
 export type {

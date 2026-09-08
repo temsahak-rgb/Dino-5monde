@@ -94,6 +94,10 @@ import {
 } from "../pages/ContactPage.js";
 
 import {
+    DailySessionPage
+} from "../pages/DailySessionPage.js";
+
+import {
     WorkWithUsPage
 } from "../pages/WorkWithUsPage.js";
 
@@ -145,6 +149,7 @@ import {
  * /vocabulary/:level/:packId
  *
  * /practice
+ * /daily
  * /practice/review
  * /practice/:game/:level
  * /practice/:game/:level/:packId
@@ -231,6 +236,14 @@ const router =
 
                     Component:
                         PracticeIndexPage
+                },
+
+                {
+                    path:
+                        appRoutePatterns.daily,
+
+                    Component:
+                        DailySessionPage
                 },
 
                 {

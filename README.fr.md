@@ -71,7 +71,7 @@ Le but du MVP n'est pas encore de fournir toutes les fonctions d'une plateforme 
 | Boutique et crédits | ✅ `/shop`, achats et récompenses Voyage/mini-jeux |
 | Compte et Profil | ✅ Connexion email, profil privé `Saurus` et tableau de progression |
 | Hub Jeux & exercices | ✅ `/practice`, catalogues par jeu/niveau et parties partageables |
-| Quotidien | Hors du périmètre publié ; aucune route factice exposée |
+| Quotidien | ✅ \`/daily\`, trois actions personnalisées et URL partageable |
 | Synchronisation multi-appareils | ✅ Progression, erreurs et mots faibles pour les comptes connectés |
 
 La progression Grammaire et Voyage est locale-first : elle reste utilisable sans compte dans `localStorage`, puis se synchronise dans Supabase dès qu'un apprenant se connecte. Le serveur fusionne les appareils sans jamais retirer une section terminée ni faire régresser le statut d'une leçon.
@@ -182,6 +182,8 @@ Les exercices terminés en **Grammaire, Voyage et Vocabulaire** alimentent déso
 Le centre `/practice/review` transforme cet historique en actions : le dernier essai de chaque exercice sous **80 %** est proposé à nouveau, avec son résultat, une barre de progression et un lien direct. Un nouvel essai à 80 % ou plus retire automatiquement la recommandation ; aucun état parallèle n’est stocké.
 
 Le profil matérialise aussi le rythme d’apprentissage : objectif de **trois exercices par jour**, progression du jour, série en cours et sept voyants calendaires. Ces indicateurs sont calculés depuis le même historique synchronisé, respectent le calendrier local de l’apprenant et se mettent à jour au changement de journée.
+
+La route partageable \`/daily\` transforme ces signaux en une session de trois étapes. Elle priorise le dernier score sous 80 %, les erreurs puis les mots faibles, déduplique les activités et complète avec des contenus gratuits adaptés au niveau. La sélection reste stable pendant la journée et ne crée aucun nouvel état métier.
 
 Le corpus reste volontairement dans `data/` et demeure public dans le build GitHub Pages. Une commercialisation réelle exigera donc de déplacer la livraison des contenus payants derrière une API privée ; masquer une leçon dans React ou stocker uniquement son droit d'accès en base ne protège pas son JSON public.
 
@@ -409,6 +411,7 @@ Chaque écran durable possède un chemin React Router canonique, par exemple :
 /grammar/A1
 /grammar/lesson/A1-G-001
 /vocabulary/B1/arrival-office
+/daily
 /practice/hangman/A1/salutations_expressions_quotidiennes
 /travel/TR-006
 /journal/2026-w34-azadi-tower
@@ -754,7 +757,6 @@ Les imports explicites alimentent désormais automatiquement le graphe d'archite
 
 Les prochaines évolutions naturelles comprennent notamment :
 
-- terminer le parcours Quotidien ;
 - relier davantage les Jeux au suivi de progression et aux révisions ;
 - renforcer les exercices ;
 - ajouter davantage de tests de données ;

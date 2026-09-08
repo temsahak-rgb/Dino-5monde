@@ -115,6 +115,7 @@ test(
             [
                 "/",
                 "/practice",
+                "/daily",
                 "/practice/review",
                 "/grammar",
                 "/vocabulary",
@@ -150,6 +151,11 @@ test(
         assert.match(
             html,
             /href="\/practice"[^>]*>[\s\S]*?Jeux et exercices/
+        );
+
+        assert.match(
+            html,
+            /href="\/daily"[^>]*>[\s\S]*?Ma session du jour/
         );
 
         assert.match(
@@ -381,6 +387,11 @@ test(
 
         assert.match(
             html,
+            /جلسه امروز من/
+        );
+
+        assert.match(
+            html,
             /موسیقی/
         );
 
@@ -391,7 +402,7 @@ test(
 
         assert.doesNotMatch(
             html,
-            /Jeux et exercices|Musique|Profil/
+            /Jeux et exercices|Ma session du jour|Musique|Profil/
         );
     }
 );

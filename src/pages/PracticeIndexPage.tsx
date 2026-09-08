@@ -64,25 +64,47 @@ function PracticeIndexPage() {
             />
 
             <Section>
-                <Link
-                    to="/practice/review"
-                    className="block text-inherit no-underline"
-                >
-                    <Card
-                        interactive
-                        className="flex items-center gap-4 border-dino-200 bg-dino-50 p-5"
+                <div className="grid gap-3 sm:grid-cols-2">
+                    <Link
+                        to="/daily"
+                        className="block h-full text-inherit no-underline"
                     >
-                        <span className="text-3xl" aria-hidden="true">🔁</span>
-                        <div>
-                            <h2 className="text-lg font-bold text-dino-900">
-                                {t("review.title")}
-                            </h2>
-                            <p className="mt-1 text-sm leading-5 text-dino-800">
-                                {t("review.cardDescription")}
-                            </p>
-                        </div>
-                    </Card>
-                </Link>
+                        <Card
+                            interactive
+                            className="flex h-full items-center gap-4 border-amber-200 bg-amber-50 p-5"
+                        >
+                            <span className="text-3xl" aria-hidden="true">☀️</span>
+                            <div>
+                                <h2 className="text-lg font-bold text-amber-950">
+                                    {t("daily.title")}
+                                </h2>
+                                <p className="mt-1 text-sm leading-5 text-amber-900">
+                                    {t("daily.cardDescription")}
+                                </p>
+                            </div>
+                        </Card>
+                    </Link>
+
+                    <Link
+                        to="/practice/review"
+                        className="block h-full text-inherit no-underline"
+                    >
+                        <Card
+                            interactive
+                            className="flex h-full items-center gap-4 border-dino-200 bg-dino-50 p-5"
+                        >
+                            <span className="text-3xl" aria-hidden="true">🔁</span>
+                            <div>
+                                <h2 className="text-lg font-bold text-dino-900">
+                                    {t("review.title")}
+                                </h2>
+                                <p className="mt-1 text-sm leading-5 text-dino-800">
+                                    {t("review.cardDescription")}
+                                </p>
+                            </div>
+                        </Card>
+                    </Link>
+                </div>
             </Section>
 
             <Section>

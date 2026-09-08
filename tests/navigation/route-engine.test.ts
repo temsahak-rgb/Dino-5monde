@@ -22,6 +22,7 @@ test(
                 home: "/",
                 profile: "/profile",
                 shop: "/shop",
+                daily: "/daily",
                 practiceIndex: "/practice",
                 practiceReview: "/practice/review",
                 practiceCatalog: "/practice/:game/:level",
@@ -69,6 +70,7 @@ test(
             { name: "home" },
             { name: "profile" },
             { name: "shop" },
+            { name: "daily" },
             { name: "practice-index" },
             { name: "practice-review" },
             {
@@ -234,6 +236,10 @@ test(
         assert.equal(
             getAppRouteSection({ name: "shop" }),
             "shop"
+        );
+        assert.equal(
+            getAppRouteSection({ name: "daily" }),
+            "practice"
         );
         assert.equal(
             getAppRouteSection({

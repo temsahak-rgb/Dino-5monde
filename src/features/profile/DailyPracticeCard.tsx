@@ -1,7 +1,5 @@
 import {
-    useEffect,
-    useMemo,
-    useState
+    useMemo
 } from "react";
 import {
     Link
@@ -19,10 +17,19 @@ import {
     ProgressBar
 } from "../../ui/components/Controls.js";
 import {
+    useCurrentLocalDay
+} from "../../ui/hooks/useCurrentLocalDay.js";
+import {
     summarizeDailyPractice
 } from "./dailyPracticeSummary.js";
 
-function DailyPracticeCard() {
+interface DailyPracticeCardProps {
+    showAction?: boolean;
+}
+
+function DailyPracticeCard({
+    showAction = true
+}: DailyPracticeCardProps) {
     const {
         language,
         t
@@ -173,57 +180,18 @@ function DailyPracticeCard() {
                 })}
             </ol>
 
-            <Link
-                to="/practice"
-                className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-control border border-dino-600 px-4 py-2 text-sm font-bold text-dino-700 no-underline transition hover:bg-dino-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dino-500 focus-visible:ring-offset-2"
-            >
-                {t(
-                    "profile.dailyPracticeAction"
-                )}
-            </Link>
+            {showAction ? (
+                <Link
+                    to="/daily"
+                    className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-control border border-dino-600 px-4 py-2 text-sm font-bold text-dino-700 no-underline transition hover:bg-dino-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dino-500 focus-visible:ring-offset-2"
+                >
+                    {t(
+                        "profile.dailyPracticeAction"
+                    )}
+                </Link>
+            ) : null}
         </Card>
     );
-}
-
-function useCurrentLocalDay(): Date {
-    const [today, setToday] =
-        useState(
-            () => new Date()
-        );
-
-    useEffect(
-        () => {
-            const current =
-                new Date();
-            const nextDay =
-                new Date(
-                    current.getFullYear(),
-                    current.getMonth(),
-                    current.getDate() + 1
-                );
-            const timer =
-                window.setTimeout(
-                    () => {
-                        setToday(
-                            new Date()
-                        );
-                    },
-                    Math.max(
-                        1_000,
-                        nextDay.getTime()
-                        - current.getTime()
-                        + 100
-                    )
-                );
-
-            return () => {
-                window.clearTimeout(timer);
-            };
-        },
-        [today]
-    );
-
-    return today;
 }
 
 function parseLocalDateKey(
@@ -260,4 +228,8 @@ function formatDay(
 
 export {
     DailyPracticeCard
+};
+
+export type {
+    DailyPracticeCardProps
 };
