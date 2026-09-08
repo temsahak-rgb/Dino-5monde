@@ -54,6 +54,13 @@ Feature: Lesson Shop
     Then the learner wallet receives the earned credits exactly once
     And one immutable reward claim is recorded
 
+  @implemented
+  Scenario: Refuse a reward until every required lesson section is synchronized
+    Given an authenticated learner is missing one required lesson section
+    When the activity reward is requested
+    Then no learning credits are awarded
+    And no immutable reward claim is recorded
+
   @planned
   Scenario: Buy a credit pack through a real payment provider
     Given an authenticated learner selects a credit pack

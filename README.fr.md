@@ -171,7 +171,7 @@ La route partageable `/shop` présente les leçons disponibles. Chaque nouveau c
 
 Supabase conserve le portefeuille, les droits acquis et un registre append-only des mouvements. Les politiques Row Level Security isolent chaque compte. Les achats et les récompenses sont atomiques : terminer une leçon Voyage crédite **5 crédits une seule fois**, même après un rechargement ou une nouvelle demande. Le montant et la liste des activités éligibles restent contrôlés par PostgreSQL, jamais par le navigateur. Les dernières récompenses sont visibles et cliquables dans le profil.
 
-La progression Grammaire et Voyage est persistée par compte et fusionnée de façon monotone entre appareils. Le navigateur signale encore la complétion ; le backend empêche déjà tout montant arbitraire et toute double récompense, mais une preuve entièrement calculée côté serveur reste une étape distincte.
+La progression Grammaire et Voyage est persistée par compte et fusionnée de façon monotone entre appareils. Pour une leçon récompensée, le backend compare les sections synchronisées à la règle de complétion qu’il possède avant de créditer le portefeuille. Un statut `completed` envoyé par le navigateur ne suffit pas ; le montant reste fixé côté serveur et chaque récompense demeure unique.
 
 Le corpus reste volontairement dans `data/` et demeure public dans le build GitHub Pages. Une commercialisation réelle exigera donc de déplacer la livraison des contenus payants derrière une API privée ; masquer une leçon dans React ou stocker uniquement son droit d'accès en base ne protège pas son JSON public.
 
@@ -750,7 +750,6 @@ Les prochaines évolutions naturelles comprennent notamment :
 - renforcer les exercices ;
 - ajouter davantage de tests de données ;
 - harmoniser la couverture des niveaux CECRL ;
-- calculer entièrement côté serveur la preuve de complétion des activités récompensées ;
 - servir les futurs contenus payants depuis une frontière backend privée avant d'activer un paiement réel.
 
 Ces éléments décrivent une **direction**, pas des fonctionnalités déjà livrées.

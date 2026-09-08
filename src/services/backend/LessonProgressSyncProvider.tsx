@@ -176,6 +176,8 @@ function LessonProgressSyncProvider({
                 return;
             }
 
+            setStatus("syncing");
+
             void synchronize(
                 detail.contentType,
                 detail.lessonId,

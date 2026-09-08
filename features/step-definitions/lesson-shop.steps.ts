@@ -217,11 +217,26 @@ Given(
         this.shopCredits = 100;
         this.learningActivityId =
             "travel_lesson:TR-006";
+        this.learningActivityComplete = true;
         this.learningRewardCredits = 5;
         this.learningRewardGranted =
             false;
         this.learningRewardLedgerEntries =
             0;
+    }
+);
+
+Given(
+    "an authenticated learner is missing one required lesson section",
+    function (this: ProductWorld): void {
+        this.shopAuthenticated = true;
+        this.shopCredits = 100;
+        this.learningActivityId =
+            "travel_lesson:TR-006";
+        this.learningActivityComplete = false;
+        this.learningRewardCredits = 5;
+        this.learningRewardGranted = false;
+        this.learningRewardLedgerEntries = 0;
     }
 );
 
@@ -233,12 +248,40 @@ When(
     }
 );
 
+When(
+    "the activity reward is requested",
+    function (this: ProductWorld): void {
+        grantLearningReward.call(this);
+    }
+);
+
 Then(
     "the learner wallet receives the earned credits exactly once",
     function (this: ProductWorld): void {
         assert.equal(
             this.shopCredits,
             105
+        );
+    }
+);
+
+Then(
+    "no learning credits are awarded",
+    function (this: ProductWorld): void {
+        assert.equal(this.shopCredits, 100);
+        assert.equal(
+            this.learningRewardStatus,
+            "incomplete"
+        );
+    }
+);
+
+Then(
+    "no immutable reward claim is recorded",
+    function (this: ProductWorld): void {
+        assert.equal(
+            this.learningRewardLedgerEntries,
+            0
         );
     }
 );
@@ -352,6 +395,12 @@ function grantLearningReward(
             === "number"
     );
 
+    if (!this.learningActivityComplete) {
+        this.learningRewardStatus =
+            "incomplete";
+        return;
+    }
+
     if (this.learningRewardGranted) {
         return;
     }
@@ -360,6 +409,8 @@ function grantLearningReward(
         this.learningRewardCredits;
     this.learningRewardGranted =
         true;
+    this.learningRewardStatus =
+        "awarded";
     this.learningRewardLedgerEntries =
         (
             this.learningRewardLedgerEntries

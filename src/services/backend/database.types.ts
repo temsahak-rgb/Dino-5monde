@@ -65,6 +65,7 @@ type LearningRewardRuleRow = {
     activity_id: string;
     activity_type: LearningActivityType;
     created_at: string;
+    required_sections: string[];
     reward_credits: number;
 };
 
@@ -73,6 +74,7 @@ type LearningRewardRuleInsert = {
     activity_id?: never;
     activity_type?: never;
     created_at?: never;
+    required_sections?: never;
     reward_credits?: never;
 };
 

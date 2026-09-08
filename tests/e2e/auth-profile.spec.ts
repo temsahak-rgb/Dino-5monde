@@ -104,7 +104,7 @@ function createUser() {
     };
 }
 
-async function prepareSignedInCompletedTravelLesson(
+async function prepareSignedInTravelLesson(
     page: Page
 ): Promise<void> {
     const accessToken =
@@ -129,7 +129,11 @@ async function prepareSignedInCompletedTravelLesson(
                 "dino_lessons_progress",
                 JSON.stringify({
                     "TR-006": {
-                        completedSections: [],
+                        completedSections: [
+                            "TR-006-1",
+                            "TR-006-3",
+                            "TR-006-4"
+                        ],
                         currentSection: 0,
                         lastAccessed:
                             "2026-09-08T10:00:00.000Z",
@@ -494,7 +498,7 @@ test.describe(
         test(
             "awards one completed Travel lesson once and lists it in the profile",
             async ({ page }) => {
-                await prepareSignedInCompletedTravelLesson(
+                await prepareSignedInTravelLesson(
                     page
                 );
 
@@ -507,7 +511,9 @@ test.describe(
                 const awardedAt =
                     "2026-09-08T10:00:00.000Z";
                 const remoteSections = new Set([
-                    "TR-006-1"
+                    "TR-006-1",
+                    "TR-006-3",
+                    "TR-006-4"
                 ]);
 
                 await page.route(
@@ -734,6 +740,14 @@ test.describe(
                                 p_activity_type:
                                     "travel_lesson"
                             });
+                            expect(
+                                [...remoteSections].sort()
+                            ).toEqual([
+                                "TR-006-1",
+                                "TR-006-2",
+                                "TR-006-3",
+                                "TR-006-4"
+                            ]);
 
                             const awarded =
                                 !claimed;
@@ -777,26 +791,13 @@ test.describe(
                     "/travel/TR-006"
                 );
                 await expect(
-                    page.getByText(
-                        "🎉 5 crédits gagnés"
-                    )
+                    page.getByText("3 / 4")
                 ).toBeVisible();
-                await expect(
-                    page.getByText("1 / 4")
-                ).toBeVisible();
-                expect(balance).toBe(105);
-                expect(rpcCalls).toBe(1);
-                expect(progressRpcCalls).toBe(1);
-
-                await page.reload();
-                await expect(
-                    page.getByText(
-                        "🎉 5 crédits gagnés"
-                    )
-                ).toBeVisible();
-                expect(balance).toBe(105);
-                expect(rpcCalls).toBe(1);
-                expect(progressRpcCalls).toBe(2);
+                expect(balance).toBe(100);
+                expect(rpcCalls).toBe(0);
+                await expect.poll(
+                    () => progressRpcCalls
+                ).toBe(1);
 
                 await page.getByRole(
                     "button",
@@ -809,11 +810,28 @@ test.describe(
                     { name: /Continuer/u }
                 ).click();
                 await expect(
-                    page.getByText("2 / 4")
+                    page.getByText("4 / 4")
                 ).toBeVisible();
+                await expect(
+                    page.getByText(
+                        "🎉 5 crédits gagnés"
+                    )
+                ).toBeVisible();
+                expect(balance).toBe(105);
+                expect(rpcCalls).toBe(1);
                 await expect.poll(
                     () => progressRpcCalls
-                ).toBe(3);
+                ).toBe(2);
+
+                await page.reload();
+                await expect(
+                    page.getByText(
+                        "🎉 5 crédits gagnés"
+                    )
+                ).toBeVisible();
+                expect(balance).toBe(105);
+                expect(rpcCalls).toBe(1);
+                expect(progressRpcCalls).toBe(3);
 
                 await page.goto("/profile");
                 await expect(

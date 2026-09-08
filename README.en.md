@@ -171,7 +171,7 @@ The shareable `/shop` route lists available lessons. Every new account starts wi
 
 Supabase stores wallets, acquired entitlements and an append-only transaction ledger. Row Level Security isolates each account. Purchases and learning rewards are atomic: completing a Travel lesson grants **five credits exactly once**, including after reloads or repeated requests. PostgreSQL—not the browser—owns the eligible activity list and reward amount. Recent rewards remain visible and clickable in the learner profile.
 
-Grammar and Travel progress is persisted per account and merged monotonically across devices. The browser still reports completion. The backend already prevents arbitrary amounts and duplicate rewards, while fully server-computed completion proof remains a separate step.
+Grammar and Travel progress is persisted per account and merged monotonically across devices. Before crediting a rewarded lesson, the backend compares its synchronized sections with the server-owned completion rule. A browser-provided `completed` status is not sufficient; the amount remains server-priced and every reward stays unique.
 
 The learning corpus deliberately remains under `data/` and is public in the GitHub Pages build. Selling content for real money will therefore require private backend delivery; hiding a lesson in React or storing only its entitlement in the database does not protect publicly shipped JSON.
 
@@ -750,7 +750,6 @@ Natural next steps include:
 - strengthening exercises;
 - adding more data-consistency tests;
 - improving consistency across CEFR levels;
-- computing rewarded-activity completion proof entirely on the server;
 - privately serving future paid content before enabling real-money payments.
 
 These items describe **direction**, not already delivered functionality.
