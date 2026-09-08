@@ -22,6 +22,9 @@ test(
                 home: "/",
                 profile: "/profile",
                 shop: "/shop",
+                practiceIndex: "/practice",
+                practiceCatalog: "/practice/:game/:level",
+                practiceGame: "/practice/:game/:level/:packId",
                 grammarIndex: "/grammar",
                 grammarLevel: "/grammar/:level",
                 grammarLesson: "/grammar/lesson/:lessonId",
@@ -64,6 +67,18 @@ test(
             { name: "home" },
             { name: "profile" },
             { name: "shop" },
+            { name: "practice-index" },
+            {
+                name: "practice-catalog",
+                game: "word-search",
+                level: "B1"
+            },
+            {
+                name: "practice-game",
+                game: "hangman",
+                level: "A1",
+                packId: "salutations expressions"
+            },
             { name: "grammar-index" },
             { name: "grammar-level", level: "B1" },
             { name: "grammar-lesson", lessonId: "A1-G-003-B" },
@@ -134,6 +149,9 @@ test(
                 "/grammar/lesson/%20A1-G-001",
                 "/vocabulary/A1/..%5Csecret",
                 "/vocabulary/Z9/pack",
+                "/practice/memory/A1",
+                "/practice/hangman/Z9",
+                "/practice/crossword/A1/..%2Fsecret",
                 "/travel/%2Fabsolute",
                 "/journal/..",
                 "/info/profile",
@@ -208,6 +226,15 @@ test(
         assert.equal(
             getAppRouteSection({ name: "shop" }),
             "shop"
+        );
+        assert.equal(
+            getAppRouteSection({
+                name: "practice-game",
+                game: "crossword",
+                level: "A2",
+                packId: "food"
+            }),
+            "practice"
         );
     }
 );

@@ -20,7 +20,8 @@ import type {
 type PublicDestinationKind =
     | "grammar lesson"
     | "journal article"
-    | "travel lesson";
+    | "travel lesson"
+    | "vocabulary game";
 
 Given(
     "a {string} destination identified by {string}",
@@ -143,6 +144,35 @@ function createDestination(
                 name: "travel-lesson",
                 lessonId: identifier
             };
+        case "vocabulary game": {
+            const [
+                game,
+                level,
+                packId
+            ] = identifier.split("|");
+
+            assert.ok(
+                game === "hangman"
+                || game === "word-search"
+                || game === "crossword"
+            );
+            assert.ok(
+                level === "A1"
+                || level === "A2"
+                || level === "B1"
+                || level === "B2"
+                || level === "C1"
+                || level === "C2"
+            );
+            assert.ok(packId);
+
+            return {
+                name: "practice-game",
+                game,
+                level,
+                packId
+            };
+        }
         default:
             throw new TypeError(
                 `Unknown public destination: ${String(kind)}`

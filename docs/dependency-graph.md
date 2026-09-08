@@ -2,7 +2,7 @@
 
 # React application dependency maps
 
-The application contains 90 local modules reachable from `src/main.tsx`, 256 runtime imports and 76 type-only imports.
+The application contains 99 local modules reachable from `src/main.tsx`, 297 runtime imports and 86 type-only imports.
 The generator rejects runtime dependency cycles.
 
 ## React architecture overview
@@ -35,27 +35,27 @@ flowchart TB
     end
     G0 --> G1
     G0 --> G12
-    G1 -->|4 imports| G2
+    G1 -->|5 imports| G2
     G1 --> G3
     G1 --> G10
     G3 --> G4
-    G3 -->|19 imports| G5
+    G3 -->|22 imports| G5
     G3 --> G7
     G3 --> G9
     G4 -->|2 imports| G6
-    G5 -->|8 imports| G2
-    G5 -->|42 imports| G6
-    G5 -->|10 imports| G7
-    G5 -->|13 imports| G8
-    G5 -->|5 imports| G9
-    G5 -->|18 imports| G10
+    G5 -->|9 imports| G2
+    G5 -->|50 imports| G6
+    G5 -->|13 imports| G7
+    G5 -->|20 imports| G8
+    G5 -->|8 imports| G9
+    G5 -->|21 imports| G10
     G6 --> G7
     G6 -->|2 imports| G10
-    G7 -->|2 imports| G2
-    G7 -->|35 imports| G6
-    G7 -->|15 imports| G8
-    G7 -->|7 imports| G9
-    G7 -->|21 imports| G10
+    G7 -->|3 imports| G2
+    G7 -->|38 imports| G6
+    G7 -->|16 imports| G8
+    G7 -->|9 imports| G9
+    G7 -->|23 imports| G10
     G8 -->|5 imports| G9
 ```
 
@@ -80,93 +80,101 @@ flowchart TB
         M2["services/backend/AuthProvider"]
         M3["services/backend/BackendProvider"]
         M4["services/backend/LearnerProfileProvider"]
-        M5["services/backend/ShopProvider"]
+        M5["services/backend/LearningRewardsProvider"]
+        M6["services/backend/ShopProvider"]
     end
     subgraph S3["React router and routes"]
         direction TB
-        M6["app/AppRouter"]:::focus
-        M7["app/routes"]:::focus
+        M7["app/AppRouter"]:::focus
+        M8["app/routes"]:::focus
     end
     subgraph S4["App layout"]
         direction TB
-        M8["app/AppLayout"]:::focus
+        M9["app/AppLayout"]:::focus
     end
     subgraph S5["Route pages"]
         direction TB
-        M9["pages/AboutPage"]
-        M10["pages/AuthPage"]
-        M11["pages/ContactPage"]
-        M12["pages/GrammarIndexPage"]
-        M13["pages/GrammarLessonPage"]
-        M14["pages/GrammarLevelPage"]
-        M15["pages/HomePage"]
-        M16["pages/JournalArticlePage"]
-        M17["pages/JournalIndexPage"]
-        M18["pages/NotFoundPage"]
-        M19["pages/OnboardingPage"]
-        M20["pages/ProfilePage"]
-        M21["pages/ShopPage"]
-        M22["pages/TravelIndexPage"]
-        M23["pages/TravelLessonPage"]
-        M24["pages/VocabularyIndexPage"]
-        M25["pages/VocabularyLevelPage"]
-        M26["pages/VocabularyPackPage"]
-        M27["pages/WorkWithUsPage"]
+        M10["pages/AboutPage"]
+        M11["pages/AuthPage"]
+        M12["pages/ContactPage"]
+        M13["pages/GrammarIndexPage"]
+        M14["pages/GrammarLessonPage"]
+        M15["pages/GrammarLevelPage"]
+        M16["pages/HomePage"]
+        M17["pages/JournalArticlePage"]
+        M18["pages/JournalIndexPage"]
+        M19["pages/NotFoundPage"]
+        M20["pages/OnboardingPage"]
+        M21["pages/PracticeCatalogPage"]
+        M22["pages/PracticeGamePage"]
+        M23["pages/PracticeIndexPage"]
+        M24["pages/ProfilePage"]
+        M25["pages/ShopPage"]
+        M26["pages/TravelIndexPage"]
+        M27["pages/TravelLessonPage"]
+        M28["pages/VocabularyIndexPage"]
+        M29["pages/VocabularyLevelPage"]
+        M30["pages/VocabularyPackPage"]
+        M31["pages/WorkWithUsPage"]
     end
     subgraph S6["Shared React components"]
         direction TB
-        M28["components/Footer"]
-        M29["components/Navbar"]
+        M32["components/Footer"]
+        M33["components/Navbar"]
     end
     subgraph S7["Feature React components"]
         direction TB
-        M30["features/shop/LessonAccessBoundary"]
+        M34["features/shop/LessonAccessBoundary"]
     end
     subgraph S9["Core engines and modules"]
         direction TB
-        M31["core/returnTo"]
+        M35["core/returnTo"]
     end
     subgraph S10["Internationalization"]
         direction TB
-        M32["i18n/I18nProvider"]
+        M36["i18n/I18nProvider"]
     end
     subgraph S12["Styles"]
         direction TB
-        M33["styles/style"]
+        M37["styles/style"]
     end
-    M1 --> M6
-    M1 --> M32
+    M1 --> M7
+    M1 --> M36
     M1 --> M2
     M1 --> M3
     M1 --> M4
     M1 --> M5
-    M8 --> M28
-    M8 --> M29
-    M6 --> M8
-    M6 --> M7
-    M6 --> M31
-    M6 --> M30
-    M6 --> M9
-    M6 --> M10
-    M6 --> M11
-    M6 --> M12
-    M6 --> M13
-    M6 --> M14
-    M6 --> M15
-    M6 --> M16
-    M6 --> M17
-    M6 --> M18
-    M6 --> M19
-    M6 --> M20
-    M6 --> M21
-    M6 --> M22
-    M6 --> M23
-    M6 --> M24
-    M6 --> M25
-    M6 --> M26
-    M6 --> M27
+    M1 --> M6
+    M9 --> M32
+    M9 --> M33
+    M7 --> M9
+    M7 --> M8
+    M7 --> M35
+    M7 --> M34
+    M7 --> M10
+    M7 --> M11
+    M7 --> M12
+    M7 --> M13
+    M7 --> M14
+    M7 --> M15
+    M7 --> M16
+    M7 --> M17
+    M7 --> M18
+    M7 --> M19
+    M7 --> M20
+    M7 --> M21
+    M7 --> M22
+    M7 --> M23
+    M7 --> M24
+    M7 --> M25
+    M7 --> M26
+    M7 --> M27
+    M7 --> M28
+    M7 --> M29
+    M7 --> M30
+    M7 --> M31
     M0 --> M1
-    M0 --> M33
+    M0 --> M37
 ```
 
 ## Focused route branches
@@ -368,72 +376,77 @@ flowchart TB
 %%{init: {"flowchart": {"curve": "stepAfter", "nodeSpacing": 24, "rankSpacing": 42}}}%%
 flowchart TB
     classDef focus stroke-width:2px
+    subgraph S2["Backend boundary (React + Supabase)"]
+        direction TB
+        M0["services/backend/LearningRewardsProvider"]
+    end
     subgraph S5["Route pages"]
         direction TB
-        M0["pages/TravelIndexPage"]:::focus
-        M1["pages/TravelLessonPage"]:::focus
+        M1["pages/TravelIndexPage"]:::focus
+        M2["pages/TravelLessonPage"]:::focus
     end
     subgraph S6["Shared React components"]
         direction TB
-        M2["components/Controls"]
-        M3["components/Feedback"]
-        M4["components/Layout"]
-        M5["components/RichText"]
+        M3["components/Controls"]
+        M4["components/Feedback"]
+        M5["components/Layout"]
+        M6["components/RichText"]
     end
     subgraph S7["Feature React components"]
         direction TB
-        M6["features/exercises/Exercise"]:::focus
-        M7["features/travel/TravelCatalog"]:::focus
-        M8["features/travel/TravelLesson"]:::focus
-        M9["features/travel/TravelSectionContent"]:::focus
+        M7["features/exercises/Exercise"]:::focus
+        M8["features/travel/TravelCatalog"]:::focus
+        M9["features/travel/TravelLesson"]:::focus
+        M10["features/travel/TravelSectionContent"]:::focus
     end
     subgraph S8["Feature engines and modules"]
         direction TB
-        M10["features/travel/travelEngine"]:::focus
+        M11["features/travel/travelEngine"]:::focus
     end
     subgraph S9["Core engines and modules"]
         direction TB
-        M11["core/exerciseEngine"]
-        M12["core/progressEngine"]
-        M13["core/staticData"]
+        M12["core/exerciseEngine"]
+        M13["core/progressEngine"]
+        M14["core/staticData"]
     end
     subgraph S10["Internationalization"]
         direction TB
-        M14["i18n/I18nProvider"]
+        M15["i18n/I18nProvider"]
     end
-    M6 --> M11
-    M6 --> M12
-    M6 --> M14
-    M6 --> M2
-    M6 --> M3
-    M6 --> M4
-    M6 --> M5
-    M7 --> M14
-    M7 --> M2
+    M7 --> M12
+    M7 --> M13
+    M7 --> M15
+    M7 --> M3
     M7 --> M4
-    M10 --> M13
-    M8 --> M12
-    M8 --> M6
-    M8 --> M10
-    M8 --> M9
-    M8 --> M14
-    M8 --> M2
-    M8 --> M4
-    M9 --> M14
-    M9 --> M2
-    M9 --> M4
+    M7 --> M5
+    M7 --> M6
+    M8 --> M15
+    M8 --> M3
+    M8 --> M5
+    M11 --> M14
+    M9 --> M13
+    M9 --> M7
+    M9 --> M11
+    M9 --> M10
+    M9 --> M15
+    M9 --> M0
+    M9 --> M3
     M9 --> M5
-    M0 --> M7
-    M0 --> M10
-    M0 --> M14
-    M0 --> M3
-    M0 --> M4
-    M1 --> M10
+    M10 --> M15
+    M10 --> M3
+    M10 --> M5
+    M10 --> M6
     M1 --> M8
-    M1 --> M14
-    M1 --> M2
-    M1 --> M3
+    M1 --> M11
+    M1 --> M15
     M1 --> M4
+    M1 --> M5
+    M2 --> M11
+    M2 --> M9
+    M2 --> M15
+    M2 --> M3
+    M2 --> M4
+    M2 --> M5
 ```
 
 </details>
@@ -659,6 +672,6 @@ flowchart TB
 ## Enforced invariants
 
 - No runtime dependency cycle.
-- 76 type-only imports are tracked but hidden from diagrams to avoid visual noise.
+- 86 type-only imports are tracked but hidden from diagrams to avoid visual noise.
 - Every module and edge is derived from the local imports reachable from `src/main.tsx`.
 - External packages are intentionally excluded so the diagrams stay focused on application architecture.
