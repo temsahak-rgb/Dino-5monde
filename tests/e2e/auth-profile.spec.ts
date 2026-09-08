@@ -859,6 +859,63 @@ test.describe(
                 ).toContainText(
                     "synchronisées sur ce compte"
                 );
+                const progressDashboard =
+                    page.getByLabel(
+                        "Ma progression"
+                    );
+                await expect(
+                    progressDashboard
+                ).toContainText(
+                    "1 /"
+                );
+                await expect(
+                    progressDashboard.getByRole(
+                        "progressbar",
+                        {
+                            name: "Voyage"
+                        }
+                    )
+                ).toHaveAttribute(
+                    "aria-valuenow",
+                    "1"
+                );
+                await expect(
+                    progressDashboard.getByRole(
+                        "progressbar",
+                        {
+                            name: "Jeux"
+                        }
+                    )
+                ).toHaveAttribute(
+                    "aria-valuemax",
+                    "18"
+                );
+                await expect(
+                    progressDashboard.locator(
+                        '[data-progress-area="travel"]'
+                    )
+                ).toHaveAttribute(
+                    "href",
+                    "/travel"
+                );
+                await page.setViewportSize({
+                    height: 844,
+                    width: 390
+                });
+                const profileWidths =
+                    await page.evaluate(
+                        () => ({
+                            content:
+                                document.documentElement.scrollWidth,
+                            viewport:
+                                document.documentElement.clientWidth
+                        })
+                    );
+                expect(
+                    profileWidths.content
+                ).toBeLessThanOrEqual(
+                    profileWidths.viewport
+                );
                 expect(
                     unexpectedRequests
                 ).toEqual([]);

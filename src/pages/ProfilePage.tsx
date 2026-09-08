@@ -22,6 +22,9 @@ import {
     loadTravelIndex
 } from "../features/travel/travelEngine.js";
 import {
+    LearningProgressDashboard
+} from "../features/profile/LearningProgressDashboard.js";
+import {
     useAuth
 } from "../services/backend/AuthProvider.js";
 import {
@@ -103,6 +106,7 @@ function ProfilePage() {
         status: rewardsStatus
     } = useLearningRewardHistory();
     const {
+        progress,
         status: lessonProgressSyncStatus
     } = useLessonProgressSync();
 
@@ -239,6 +243,11 @@ function ProfilePage() {
                         ? "profile.editIntroduction"
                         : "profile.createIntroduction"
                 )}
+            />
+
+            <LearningProgressDashboard
+                progress={progress}
+                rewards={rewards}
             />
 
             {loading ? (

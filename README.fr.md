@@ -69,7 +69,7 @@ Le but du MVP n'est pas encore de fournir toutes les fonctions d'une plateforme 
 | Actualités | ✅ Présentes |
 | Sondages | ✅ Fonction présente |
 | Boutique et crédits | ✅ `/shop`, achats et récompenses Voyage/mini-jeux |
-| Compte et Profil | ✅ Connexion email sans mot de passe et profil privé `Saurus` |
+| Compte et Profil | ✅ Connexion email, profil privé `Saurus` et tableau de progression |
 | Hub Jeux & exercices | ✅ `/practice`, catalogues par jeu/niveau et parties partageables |
 | Quotidien | Hors du périmètre publié ; aucune route factice exposée |
 | Synchronisation multi-appareils | ✅ Progression, erreurs et mots faibles pour les comptes connectés |
@@ -174,6 +174,8 @@ La route partageable `/shop` présente les leçons disponibles. Chaque nouveau c
 Supabase conserve le portefeuille, les droits acquis et un registre append-only des mouvements. Les politiques Row Level Security isolent chaque compte. Les achats et les récompenses sont atomiques : terminer une leçon Voyage crédite **5 crédits une seule fois** ; gagner un mini-jeu crédite une seule fois le couple jeu/niveau (**1 / 3 / 5 crédits** selon le jeu). PostgreSQL contrôle les montants et exige, pour un jeu, une tentative privée émise puis terminée côté serveur. Le navigateur ne peut ni choisir la somme ni fabriquer directement une récompense. Les dernières récompenses sont visibles et cliquables dans le profil.
 
 La progression Grammaire et Voyage est persistée par compte et fusionnée de façon monotone entre appareils. Pour une leçon récompensée, le backend compare les sections synchronisées à la règle de complétion qu’il possède avant de créditer le portefeuille. Un statut `completed` envoyé par le navigateur ne suffit pas ; le montant reste fixé côté serveur et chaque récompense demeure unique.
+
+Le profil réunit également un tableau de progression visuel pour **Grammaire, Voyage et Jeux**. Chaque carte affiche un voyant, le nombre d’éléments terminés, un pourcentage et un lien direct vers le parcours. Les totaux proviennent des catalogues existants ; les accomplissements utilisent la progression locale fusionnée avec le compte et les récompenses serveur, sans dupliquer les données.
 
 Le corpus reste volontairement dans `data/` et demeure public dans le build GitHub Pages. Une commercialisation réelle exigera donc de déplacer la livraison des contenus payants derrière une API privée ; masquer une leçon dans React ou stocker uniquement son droit d'accès en base ne protège pas son JSON public.
 

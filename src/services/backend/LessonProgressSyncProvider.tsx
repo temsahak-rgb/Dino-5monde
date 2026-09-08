@@ -19,7 +19,8 @@ import {
 
 import type {
     LessonContentType,
-    LessonProgressChangeDetail
+    LessonProgressChangeDetail,
+    LessonProgressSnapshot
 } from "../../core/progressEngine.js";
 
 import {
@@ -45,6 +46,7 @@ type LessonProgressSyncStatus =
 
 interface LessonProgressSyncValue {
     error: Error | null;
+    progress: readonly LessonProgressSnapshot[];
     status: LessonProgressSyncStatus;
 }
 
@@ -68,11 +70,14 @@ function LessonProgressSyncProvider({
         useState<LessonProgressSyncStatus>("signed-out");
     const [error, setError] =
         useState<Error | null>(null);
+    const [progress, setProgress] =
+        useState<LessonProgressSnapshot[]>([]);
 
     useEffect(() => {
         let active = true;
 
         if (!client) {
+            setProgress([]);
             setStatus(
                 connectionStatus === "disabled"
                     ? "backend-disabled"
@@ -89,6 +94,7 @@ function LessonProgressSyncProvider({
             if (authStatus === "signed-out") {
                 setActiveLearnerAccount(null);
             }
+            setProgress([]);
             setStatus(
                 authStatus === "loading"
                     ? "syncing"
@@ -102,6 +108,7 @@ function LessonProgressSyncProvider({
         setStatus("syncing");
         setError(null);
         setActiveLearnerAccount(user.id);
+        setProgress(getAllLessonProgress());
         const syncClient = client;
         const userId = user.id;
 
@@ -121,6 +128,9 @@ function LessonProgressSyncProvider({
                 remote.lesson_id,
                 toLocalLessonProgress(remote)
             );
+            if (active) {
+                setProgress(getAllLessonProgress());
+            }
         };
 
         void bootstrap().catch(reason => {
@@ -163,6 +173,7 @@ function LessonProgressSyncProvider({
             }
 
             if (active) {
+                setProgress(getAllLessonProgress());
                 setStatus("ready");
             }
         }
@@ -176,6 +187,7 @@ function LessonProgressSyncProvider({
                 return;
             }
 
+            setProgress(getAllLessonProgress());
             setStatus("syncing");
 
             void synchronize(
@@ -218,8 +230,16 @@ function LessonProgressSyncProvider({
     ]);
 
     const value = useMemo(
-        () => ({ error, status }),
-        [error, status]
+        () => ({
+            error,
+            progress,
+            status
+        }),
+        [
+            error,
+            progress,
+            status
+        ]
     );
 
     return (
