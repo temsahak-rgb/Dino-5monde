@@ -1,4 +1,5 @@
 import {
+    useEffect,
     useMemo,
     useRef,
     useState
@@ -43,6 +44,9 @@ interface VocabularyCrosswordProps {
 
     onBack:
         () => void;
+
+    onComplete:
+        () => void;
 }
 
 type CrosswordAnswers =
@@ -63,7 +67,8 @@ type CrosswordAnswers =
  */
 function VocabularyCrossword({
     pack,
-    onBack
+    onBack,
+    onComplete
 }: VocabularyCrosswordProps) {
     const {
         t
@@ -108,6 +113,8 @@ function VocabularyCrossword({
         >(
             []
         );
+    const completionNotified =
+        useRef(false);
 
     const cellsByKey =
         useMemo(
@@ -202,6 +209,26 @@ function VocabularyCrossword({
                 orderedPlayableCells
             ]
         );
+
+    const completed =
+        evaluation?.completed
+        === true;
+
+    useEffect(
+        () => {
+            if (
+                completed
+                && !completionNotified.current
+            ) {
+                completionNotified.current = true;
+                onComplete();
+            }
+        },
+        [
+            completed,
+            onComplete
+        ]
+    );
 
     if (!game) {
         return (
@@ -702,6 +729,8 @@ function VocabularyCrossword({
 
     function restart():
         void {
+        completionNotified.current = false;
+
         setGame(
             createCrosswordGame(
                 pack.words

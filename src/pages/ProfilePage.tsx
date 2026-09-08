@@ -12,6 +12,13 @@ import {
     useI18n
 } from "../i18n/I18nProvider.js";
 import {
+    createPracticeCatalogPath,
+    practiceLevels
+} from "../core/practiceRoutes.js";
+import type {
+    PracticeGameKind
+} from "../core/practiceRoutes.js";
+import {
     loadTravelIndex
 } from "../features/travel/travelEngine.js";
 import {
@@ -508,19 +515,46 @@ function ProfilePage() {
                                                     .map(
                                                         reward => {
                                                             const lesson =
-                                                                travelLessons.find(
-                                                                    candidate =>
-                                                                        candidate.id
-                                                                            === reward.activity_id
+                                                                reward.activity_type
+                                                                    === "travel_lesson"
+                                                                    ? travelLessons.find(
+                                                                        candidate =>
+                                                                            candidate.id
+                                                                                === reward.activity_id
+                                                                    )
+                                                                    : undefined;
+                                                            const game =
+                                                                getRewardGameKind(
+                                                                    reward.activity_type
                                                                 );
-                                                            const title =
-                                                                localizedValue(
+                                                            const title = game
+                                                                ? getRewardGameTitle(
+                                                                    game,
+                                                                    reward.activity_id,
+                                                                    t
+                                                                )
+                                                                : localizedValue(
                                                                     lesson?.title,
                                                                     lesson?.title_fa,
                                                                     t(
                                                                         "profile.rewardFallback"
                                                                     )
                                                                 );
+                                                            const rewardPath =
+                                                                game
+                                                                && isPracticeLevel(
+                                                                    reward.activity_id
+                                                                )
+                                                                    ? createPracticeCatalogPath(
+                                                                        game,
+                                                                        reward.activity_id
+                                                                    )
+                                                                    : reward.activity_type
+                                                                        === "travel_lesson"
+                                                                        ? `/travel/${encodeURIComponent(
+                                                                            reward.activity_id
+                                                                        )}`
+                                                                        : "/practice";
 
                                                             return (
                                                                 <li
@@ -531,9 +565,7 @@ function ProfilePage() {
                                                                 >
                                                                     <Link
                                                                         to={
-                                                                            `/travel/${encodeURIComponent(
-                                                                                reward.activity_id
-                                                                            )}`
+                                                                            rewardPath
                                                                         }
                                                                         className="font-bold text-dino-800 no-underline hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dino-500"
                                                                     >
@@ -596,6 +628,56 @@ function ProfilePage() {
                 </form>
             )}
         </Page>
+    );
+}
+
+type TranslationFunction =
+    ReturnType<typeof useI18n>["t"];
+
+function getRewardGameKind(
+    activityType: string
+): PracticeGameKind | null {
+    switch (activityType) {
+        case "hangman_game":
+            return "hangman";
+        case "word_search_game":
+            return "word-search";
+        case "crossword_game":
+            return "crossword";
+        default:
+            return null;
+    }
+}
+
+function getRewardGameTitle(
+    game: PracticeGameKind,
+    level: string,
+    t: TranslationFunction
+): string {
+    switch (game) {
+        case "hangman":
+            return t(
+                "profile.rewardHangman",
+                { level }
+            );
+        case "word-search":
+            return t(
+                "profile.rewardWordSearch",
+                { level }
+            );
+        case "crossword":
+            return t(
+                "profile.rewardCrossword",
+                { level }
+            );
+    }
+}
+
+function isPracticeLevel(
+    value: string
+): value is typeof practiceLevels[number] {
+    return practiceLevels.some(
+        level => level === value
     );
 }
 

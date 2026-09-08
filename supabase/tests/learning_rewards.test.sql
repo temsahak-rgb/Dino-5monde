@@ -107,7 +107,7 @@ select is(
         select count(*)
         from public.learning_reward_rules
     ),
-    31::bigint,
+    49::bigint,
     'anonymous visitors may read active reward rules'
 );
 select throws_ok(

@@ -23,7 +23,11 @@ interface VocabularyGameProps {
     game:
         VocabularyGameKind;
     onBack: () => void;
+    onComplete?: () => void;
 }
+
+const ignoreCompletion =
+    (): void => undefined;
 
 /**
  * React entry point for Vocabulary mini-games.
@@ -34,7 +38,8 @@ interface VocabularyGameProps {
 function VocabularyGame({
     pack,
     game,
-    onBack
+    onBack,
+    onComplete = ignoreCompletion
 }: VocabularyGameProps) {
     switch (game) {
         case "hangman":
@@ -45,6 +50,9 @@ function VocabularyGame({
                     }
                     onBack={
                         onBack
+                    }
+                    onComplete={
+                        onComplete
                     }
                 />
             );
@@ -58,6 +66,9 @@ function VocabularyGame({
                     onBack={
                         onBack
                     }
+                    onComplete={
+                        onComplete
+                    }
                 />
             );
 
@@ -69,6 +80,9 @@ function VocabularyGame({
                     }
                     onBack={
                         onBack
+                    }
+                    onComplete={
+                        onComplete
                     }
                 />
             );

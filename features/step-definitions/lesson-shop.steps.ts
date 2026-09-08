@@ -240,6 +240,33 @@ Given(
     }
 );
 
+Given(
+    "an authenticated learner starts a rewarded {string} game at level {string} worth {int} credits",
+    function (
+        this: ProductWorld,
+        game: string,
+        level: string,
+        credits: number
+    ): void {
+        assert.ok(game.trim());
+        assert.match(
+            level,
+            /^(?:A1|A2|B1|B2|C1|C2)$/u
+        );
+        assert.ok(credits > 0);
+
+        this.shopAuthenticated = true;
+        this.shopCredits = 100;
+        this.learningActivityId =
+            `${game}:${level}`;
+        this.learningActivityComplete = false;
+        this.learningGameAttemptStarted = true;
+        this.learningRewardCredits = credits;
+        this.learningRewardGranted = false;
+        this.learningRewardLedgerEntries = 0;
+    }
+);
+
 When(
     "the activity reward is requested twice",
     function (this: ProductWorld): void {
@@ -251,6 +278,19 @@ When(
 When(
     "the activity reward is requested",
     function (this: ProductWorld): void {
+        grantLearningReward.call(this);
+    }
+);
+
+When(
+    "the learner completes the game attempt and requests its reward twice",
+    function (this: ProductWorld): void {
+        assert.equal(
+            this.learningGameAttemptStarted,
+            true
+        );
+        this.learningActivityComplete = true;
+        grantLearningReward.call(this);
         grantLearningReward.call(this);
     }
 );

@@ -1,6 +1,7 @@
 import {
     useCallback,
     useEffect,
+    useRef,
     useState
 } from "react";
 
@@ -31,6 +32,7 @@ import {
 interface VocabularyHangmanProps {
     pack: VocabPack;
     onBack: () => void;
+    onComplete: () => void;
 }
 
 const alphabet =
@@ -44,7 +46,8 @@ const alphabet =
  */
 function VocabularyHangman({
     pack,
-    onBack
+    onBack,
+    onComplete
 }: VocabularyHangmanProps) {
     const {
         t
@@ -60,6 +63,8 @@ function VocabularyHangman({
                     pack.words
                 )
         );
+    const completionNotified =
+        useRef(false);
 
     const guessLetter =
         useCallback(
@@ -132,6 +137,22 @@ function VocabularyHangman({
         },
         [
             guessLetter
+        ]
+    );
+
+    useEffect(
+        () => {
+            if (
+                game?.status === "won"
+                && !completionNotified.current
+            ) {
+                completionNotified.current = true;
+                onComplete();
+            }
+        },
+        [
+            game?.status,
+            onComplete
         ]
     );
 
@@ -409,6 +430,8 @@ function VocabularyHangman({
 
     function restart():
         void {
+        completionNotified.current = false;
+
         setGame(
             createHangmanGame(
                 pack.words

@@ -39,6 +39,7 @@ MVP overview, installation, i18n, architecture, tests and contribution rules.
 - 🔎 recherche et contenus complémentaires ;
 - 🛍️ boutique de leçons sur `/shop`, avec 100 crédits de bienvenue ;
 - 🎁 5 crédits attribués une seule fois pour chaque leçon Voyage terminée ;
+- 🏆 récompenses de jeu uniques par niveau : Pendu +1, Grille de lettres +3, Mots croisés +5 ;
 - 👤 compte sans mot de passe et profil privé `Saurus` ;
 - 🇫🇷🇮🇷 interface français / persan ;
 - ↔️ gestion LTR / RTL ;
@@ -68,7 +69,7 @@ supabase/            → configuration et migrations du backend versionnées
 
 L'application est une SPA **React + TypeScript** construite par Vite. `index.html` charge uniquement `src/main.tsx` ; `AppRouter` et `AppLayout` structurent ensuite les routes, les pages et les composants.
 
-Le premier backend repose sur **Supabase**. Il est optionnel tant que les variables `VITE_SUPABASE_URL` et `VITE_SUPABASE_PUBLISHABLE_KEY` ne sont pas définies, ce qui préserve le site statique actuel. Il porte les comptes, les profils, le portefeuille de crédits, les droits d'accès privés et la progression Grammaire/Voyage, tous protégés par Row Level Security. Chaque compte reçoit 100 crédits au départ ; les achats et les récompenses d'apprentissage sont atomiques côté PostgreSQL et laissent une trace dans un registre append-only. Chaque leçon Voyage terminée rapporte 5 crédits une seule fois.
+Le premier backend repose sur **Supabase**. Il est optionnel tant que les variables `VITE_SUPABASE_URL` et `VITE_SUPABASE_PUBLISHABLE_KEY` ne sont pas définies, ce qui préserve le site statique actuel. Il porte les comptes, les profils, le portefeuille de crédits, les droits d'accès privés et la progression Grammaire/Voyage, tous protégés par Row Level Security. Chaque compte reçoit 100 crédits au départ ; les achats et les récompenses d'apprentissage sont atomiques côté PostgreSQL et laissent une trace dans un registre append-only. Chaque leçon Voyage terminée rapporte 5 crédits une seule fois. Une première victoire par jeu et niveau rapporte aussi 1 crédit au Pendu, 3 à la Grille de lettres et 5 aux Mots croisés. Le navigateur ne fixe jamais le montant : une tentative privée émise puis validée par le serveur précède chaque attribution.
 
 La progression Grammaire et Voyage reste d'abord enregistrée localement pour fonctionner sans compte, puis elle est fusionnée dans PostgreSQL dès la connexion et après chaque section terminée. Cette fusion est monotone : un appareil en retard ne peut ni effacer une section, ni faire régresser une leçon terminée. Les erreurs et mots faibles suivent le même compte avec des tombstones versionnés : une suppression reste prioritaire face à l'état plus ancien d'un autre appareil. Les recommandations sont recalculées depuis ces sources, elles ne dupliquent donc aucune donnée. Pour une leçon récompensée, PostgreSQL compare les sections synchronisées à sa propre règle de complétion avant de créditer le portefeuille : un simple statut `completed` fourni par le navigateur ne suffit plus.
 

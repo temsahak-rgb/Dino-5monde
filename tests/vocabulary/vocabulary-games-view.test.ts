@@ -149,6 +149,8 @@ test(
                     {
                         pack,
                         onBack: () =>
+                            undefined,
+                        onComplete: () =>
                             undefined
                     }
                 )
@@ -193,6 +195,8 @@ test(
                     {
                         pack,
                         onBack: () =>
+                            undefined,
+                        onComplete: () =>
                             undefined
                     }
                 ),
@@ -238,6 +242,8 @@ test(
                     {
                         pack,
                         onBack: () =>
+                            undefined,
+                        onComplete: () =>
                             undefined
                     }
                 )

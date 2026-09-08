@@ -68,7 +68,7 @@ The MVP is not intended to provide every feature of a complete learning platform
 | Search | ✅ Present |
 | News | ✅ Present |
 | Polls | ✅ Feature present |
-| Lesson shop and credits | ✅ `/shop`, purchases and five-credit Travel rewards |
+| Lesson shop and credits | ✅ `/shop`, purchases, Travel and mini-game rewards |
 | Account and Profile | ✅ Passwordless email sign-in and private `Saurus` profile |
 | Games & exercises hub | ✅ `/practice`, game/level catalogues and shareable sessions |
 | Daily | Outside the published scope; no placeholder route is exposed |
@@ -122,6 +122,8 @@ Vocabulary data currently spans several levels up to **C2**, with highly variabl
 
 The `/practice` hub brings together the activities that are actually shipped: Hangman, Word Search, Crosswords, and the Grammar, Vocabulary and Travel exercise paths. Learners choose a game, level and topic. The `/practice/:game/:level/:packId` route can be copied, reloaded and shared without losing the selected activity.
 
+For signed-in learners, the first win in each game at each CEFR level grants a reward: **one credit for Hangman, three for Word Search and five for Crosswords**. Reloading cannot award it twice, and the result appears in the profile's linked reward history.
+
 The `/practice/review` page turns incorrect answers and difficult words into concrete actions: retry a lesson, mark a mistake set as reviewed, or launch a topic's weak-word flashcards directly. With a signed-in account, these sources follow the learner across devices and tombstones protect deletions.
 
 ### ✈️ Travel
@@ -169,7 +171,7 @@ The repository also contains search, news and poll features. They complement the
 
 The shareable `/shop` route lists available lessons. Every new account starts with **100 credits** and can spend them to acquire a lesson; the balance is also visible under `/profile`. Credits are currently an internal virtual currency: no real-money payment provider is connected yet.
 
-Supabase stores wallets, acquired entitlements and an append-only transaction ledger. Row Level Security isolates each account. Purchases and learning rewards are atomic: completing a Travel lesson grants **five credits exactly once**, including after reloads or repeated requests. PostgreSQL—not the browser—owns the eligible activity list and reward amount. Recent rewards remain visible and clickable in the learner profile.
+Supabase stores wallets, acquired entitlements and an append-only transaction ledger. Row Level Security isolates each account. Purchases and learning rewards are atomic: completing a Travel lesson grants **five credits exactly once**; winning a mini-game grants its game/level pair once (**1 / 3 / 5 credits** depending on the game). PostgreSQL owns the amounts and requires a private, server-issued game attempt to be completed before a claim. The browser can neither choose the amount nor insert a reward directly. Recent rewards remain visible and clickable in the learner profile.
 
 Grammar and Travel progress is persisted per account and merged monotonically across devices. Before crediting a rewarded lesson, the backend compares its synchronized sections with the server-owned completion rule. A browser-provided `completed` status is not sufficient; the amount remains server-priced and every reward stays unique.
 
@@ -745,7 +747,7 @@ Explicit imports now feed the architecture graph automatically and make unwanted
 Natural next steps include:
 
 - completing the Daily path;
-- enriching Games and their progress rewards;
+- connecting Games more deeply with progress tracking and review;
 - further unifying exercise tracking;
 - strengthening exercises;
 - adding more data-consistency tests;
