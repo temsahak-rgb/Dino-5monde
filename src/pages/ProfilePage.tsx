@@ -25,6 +25,9 @@ import {
     LearningProgressDashboard
 } from "../features/profile/LearningProgressDashboard.js";
 import {
+    ExerciseHistoryCard
+} from "../features/profile/ExerciseHistoryCard.js";
+import {
     useAuth
 } from "../services/backend/AuthProvider.js";
 import {
@@ -471,6 +474,8 @@ function ProfilePage() {
                                 {t("profile.openShop")}
                             </Link>
                         </Card>
+
+                        <ExerciseHistoryCard />
 
                         <Card
                             className="p-5"

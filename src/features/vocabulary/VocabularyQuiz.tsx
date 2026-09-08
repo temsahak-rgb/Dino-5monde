@@ -1,11 +1,16 @@
 import {
+    useEffect,
     useMemo,
+    useRef,
     useState
 } from "react";
 
 import {
     useI18n
 } from "../../i18n/I18nProvider.js";
+import {
+    useExerciseTracking
+} from "../../services/backend/ExerciseTrackingProvider.js";
 
 import type {
     VocabExercise,
@@ -62,6 +67,9 @@ function VocabularyQuiz({
         localizedValue,
         t
     } = useI18n();
+    const {
+        recordAttempt
+    } = useExerciseTracking();
 
     const exercise =
         pack.exercise
@@ -115,6 +123,57 @@ function VocabularyQuiz({
         useState<number | null>(
             null
         );
+    const recordedSession =
+        useRef<string | null>(
+            null
+        );
+    const finished =
+        Boolean(
+            exercise
+            && questions.length > 0
+            && questionIndex
+                >= questions.length
+        );
+    const sessionKey =
+        `${pack.id}:${sessionId}`;
+
+    useEffect(
+        () => {
+            if (
+                !finished
+                || recordedSession.current
+                    === sessionKey
+            ) {
+                return;
+            }
+
+            recordedSession.current =
+                sessionKey;
+            recordAttempt({
+                activityId:
+                    pack.id,
+                contentType:
+                    "vocabulary",
+                correctAnswers:
+                    correctCount,
+                exerciseId:
+                    "quiz",
+                level:
+                    pack.level,
+                totalQuestions:
+                    questions.length
+            });
+        },
+        [
+            correctCount,
+            finished,
+            pack.id,
+            pack.level,
+            questions.length,
+            recordAttempt,
+            sessionKey
+        ]
+    );
 
     if (
         !exercise

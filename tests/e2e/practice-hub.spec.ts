@@ -235,6 +235,8 @@ test(
                     === "/rest/v1/learner_lesson_progress"
                     || path
                     === "/rest/v1/learner_review_signals"
+                    || path
+                    === "/rest/v1/learner_exercise_attempts"
                 ) {
                     await route.fulfill({
                         headers: jsonHeaders(),

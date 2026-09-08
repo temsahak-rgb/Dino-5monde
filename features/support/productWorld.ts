@@ -27,6 +27,12 @@ import type {
     LearningProgressOverview
 } from "../../src/features/profile/learningProgressOverview.js";
 import type {
+    ExerciseAttemptSummary
+} from "../../src/features/profile/exerciseAttemptSummary.js";
+import type {
+    ExerciseAttempt
+} from "../../src/types/global.js";
+import type {
     LearnerActivityReward
 } from "../../src/services/backend/learningRewardRepository.js";
 
@@ -66,6 +72,9 @@ interface ProductWorld extends IWorld {
     learningProgressRecords?: LessonProgressSnapshot[];
     learningProgressRewards?: LearnerActivityReward[];
     learningProgressOverview?: LearningProgressOverview;
+    exerciseAttempt?: ExerciseAttempt;
+    exerciseAttemptHistory?: ExerciseAttempt[];
+    exerciseAttemptSummary?: ExerciseAttemptSummary;
     localLessonProgress?: LessonProgress;
     remoteLessonProgress?: LessonProgress;
     mergedLessonProgress?: LessonProgress;

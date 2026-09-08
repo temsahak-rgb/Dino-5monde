@@ -158,6 +158,47 @@ type LessonProgressContentType =
     | "grammar"
     | "travel";
 
+type ExerciseAttemptContentType =
+    | "grammar"
+    | "travel"
+    | "vocabulary";
+
+type LearnerExerciseAttemptRow = {
+    activity_id: string;
+    completed_at: string;
+    content_type: ExerciseAttemptContentType;
+    correct_answers: number;
+    created_at: string;
+    exercise_id: string;
+    id: string;
+    level: LearningGameLevel | null;
+    total_questions: number;
+    user_id: string;
+};
+
+type LearnerExerciseAttemptInsert = {
+    activity_id: string;
+    completed_at: string;
+    content_type: ExerciseAttemptContentType;
+    correct_answers: number;
+    created_at?: string;
+    exercise_id: string;
+    id: string;
+    level?: LearningGameLevel | null;
+    total_questions: number;
+    user_id: string;
+};
+
+type LearnerExerciseAttemptUpdate =
+    never;
+
+type RecordExerciseAttemptRpcRow = Omit<
+    LearnerExerciseAttemptRow,
+    "created_at" | "id" | "user_id"
+> & {
+    attempt_id: string;
+};
+
 type LearnerLessonProgressRow = {
     completed_sections: string[];
     content_type: LessonProgressContentType;
@@ -363,6 +404,12 @@ type Database = {
                 Update: LearnerGameAttemptUpdate;
                 Relationships: [];
             };
+            learner_exercise_attempts: {
+                Row: LearnerExerciseAttemptRow;
+                Insert: LearnerExerciseAttemptInsert;
+                Update: LearnerExerciseAttemptUpdate;
+                Relationships: [];
+            };
             learner_credit_transactions: {
                 Row: LearnerCreditTransactionRow;
                 Insert: LearnerCreditTransactionInsert;
@@ -408,6 +455,19 @@ type Database = {
                     p_attempt_id: string;
                 };
                 Returns: LearningGameAttemptRpcRow[];
+            };
+            record_exercise_attempt: {
+                Args: {
+                    p_activity_id: string;
+                    p_attempt_id: string;
+                    p_completed_at: string;
+                    p_content_type: ExerciseAttemptContentType;
+                    p_correct_answers: number;
+                    p_exercise_id: string;
+                    p_level: LearningGameLevel | null;
+                    p_total_questions: number;
+                };
+                Returns: RecordExerciseAttemptRpcRow[];
             };
             purchase_shop_lesson: {
                 Args: {
@@ -466,6 +526,10 @@ export {
     type LearningGameAttemptRpcRow,
     type LearningGameLevel,
     type LearningRewardCompletionKind,
+    type ExerciseAttemptContentType,
+    type LearnerExerciseAttemptInsert,
+    type LearnerExerciseAttemptRow,
+    type LearnerExerciseAttemptUpdate,
     type LearningRewardRuleRow,
     type LessonProgressContentType,
     type LessonEntitlementRow,
@@ -478,5 +542,6 @@ export {
     type ShopLessonLevel,
     type ShopLessonRow,
     type SyncLessonProgressRpcRow,
+    type RecordExerciseAttemptRpcRow,
     type SyncReviewSignalRpcRow
 };

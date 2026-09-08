@@ -11,7 +11,8 @@ const accountScopedStorageKeys = [
     "dino_progress",
     "dino_mistakes",
     "dino_vocab_weak",
-    "dino_review_signal_changes"
+    "dino_review_signal_changes",
+    "dino_exercise_attempts"
 ] as const;
 
 /** Returns the private localStorage key for the active learner account. */
