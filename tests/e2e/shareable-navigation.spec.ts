@@ -121,6 +121,18 @@ test.describe(
                     })
                 ).toHaveAttribute("href", "/journal");
 
+                await expect(
+                    page.getByRole("link", {
+                        name:
+                            "Ouvrir ma session du jour",
+                        exact:
+                            true
+                    })
+                ).toHaveAttribute(
+                    "href",
+                    "/daily"
+                );
+
                 const expectedLinks = [
                     [
                         "Comment bien utiliser le passé composé ?",

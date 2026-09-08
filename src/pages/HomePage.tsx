@@ -16,6 +16,10 @@ import {
 } from "../features/news/NewsCatalog.js";
 
 import {
+    DailySessionCallout
+} from "../features/practice/DailySessionCallout.js";
+
+import {
     loadCurrentNews
 } from "../features/news/newsRepository.js";
 
@@ -175,6 +179,8 @@ function HomePage() {
                     )}
                 </p>
             </header>
+
+            <DailySessionCallout />
 
             {/* -------------------------------------------------------------- */}
             {/* Current article                                                */}

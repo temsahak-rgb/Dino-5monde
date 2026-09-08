@@ -256,6 +256,8 @@ const faMessages: Record<TranslationKey, string> = {
 
     "home.greeting": "سلام، ادامه بده!",
     "home.currentLevel": "سطح فعلی شما",
+    "home.dailySessionOpen": "باز کردن جلسه امروز من",
+    "home.dailySessionProgress": "{completed}/{total} امروز",
     "home.newsAdvice": "📰 اخبار و نکات",
     "home.grammarLabel": "گرامر",
     "home.grammarTitle": "چگونه passé composé را درست استفاده کنیم؟",

@@ -184,7 +184,7 @@ The `/practice/review` centre turns this history into actions: the latest attemp
 
 The profile also makes learning rhythm visible: a **three-exercise daily goal**, today's progress, the current streak, and seven calendar status lights. These indicators are derived from the same synchronized history, follow the learner's local calendar, and update when the day changes.
 
-The shareable **/daily** route turns those signals into a three-step session. It prioritizes the latest score below 80%, mistakes, then weak words, deduplicates activities, and fills remaining slots with free level-aware content. An activity completed today disappears from suggestions; after three exercises, a completion state replaces the path. No additional business state is created.
+The shareable **/daily** route turns those signals into a three-step session. It prioritizes the latest score below 80%, mistakes, then weak words, deduplicates activities, and fills remaining slots with free level-aware content. Home displays today’s progress directly and opens the exact number of remaining steps. A completed activity disappears from suggestions; after three exercises, a completion state replaces the path. No additional business state is created.
 
 The **/archive** route groups completed lessons with up to the twenty latest exercise results. It resolves progress against the current catalog so every item has a readable title and a real React link. It remains useful without an account and follows the learner namespace automatically after sign-in.
 

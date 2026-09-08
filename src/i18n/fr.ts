@@ -256,6 +256,8 @@ const frMessages = {
 
     "home.greeting": "Bonjour, continuez !",
     "home.currentLevel": "Votre niveau actuel",
+    "home.dailySessionOpen": "Ouvrir ma session du jour",
+    "home.dailySessionProgress": "{completed}/{total} aujourd’hui",
     "home.newsAdvice": "📰 Actualités & conseils",
     "home.grammarLabel": "GRAMMAIRE",
     "home.grammarTitle": "Comment bien utiliser le passé composé ?",
