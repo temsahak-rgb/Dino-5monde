@@ -184,7 +184,7 @@ Le centre `/practice/review` transforme cet historique en actions : le dernier e
 
 Le profil matérialise aussi le rythme d’apprentissage : objectif de **trois exercices par jour**, progression du jour, série en cours et sept voyants calendaires. Ces indicateurs sont calculés depuis le même historique synchronisé, respectent le calendrier local de l’apprenant et se mettent à jour au changement de journée.
 
-La route partageable **/daily** transforme ces signaux en une session de trois étapes. Elle priorise le dernier score sous 80 %, les erreurs puis les mots faibles, déduplique les activités et complète avec des contenus gratuits adaptés au niveau. Une activité déjà faite dans la journée disparaît des suggestions ; à trois exercices, un état de réussite remplace le parcours. Aucun nouvel état métier n’est créé.
+La route partageable **/daily** transforme ces signaux en une session de trois étapes. Elle priorise le dernier score sous 80 %, les erreurs puis les mots faibles, déduplique les activités et complète avec des contenus gratuits adaptés au niveau. L’accueil affiche directement l’avancement du jour et ouvre le nombre exact d’étapes restantes. Une activité déjà faite disparaît des suggestions ; à trois exercices, un état de réussite remplace le parcours. Aucun nouvel état métier n’est créé.
 
 La route **/archive** regroupe les leçons terminées et jusqu’aux vingt derniers résultats d’exercice. Elle résout chaque progression vers le catalogue actuel pour garantir un titre lisible et un lien React réel. Elle reste utile sans compte et suit automatiquement le namespace du learner après connexion.
 

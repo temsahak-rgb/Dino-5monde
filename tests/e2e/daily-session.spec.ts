@@ -286,3 +286,103 @@ test(
         );
     }
 );
+
+test(
+    "Home shows today's progress and opens only the remaining daily step",
+    async ({ page }) => {
+        await page.addInitScript(
+            () => {
+                const completedAt =
+                    new Date().toISOString();
+
+                localStorage.setItem(
+                    "language",
+                    "fr"
+                );
+                localStorage.setItem(
+                    "currentPath",
+                    "general"
+                );
+                localStorage.setItem(
+                    "placementResult",
+                    "A1"
+                );
+                localStorage.setItem(
+                    "dino_exercise_attempts",
+                    JSON.stringify([
+                        {
+                            activityId:
+                                "A1-G-001",
+                            attemptId:
+                                "55555555-5555-4555-8555-555555555551",
+                            completedAt,
+                            contentType:
+                                "grammar",
+                            correctAnswers:
+                                4,
+                            exerciseId:
+                                "grammar-daily",
+                            totalQuestions:
+                                5
+                        },
+                        {
+                            activityId:
+                                "TR-006",
+                            attemptId:
+                                "55555555-5555-4555-8555-555555555552",
+                            completedAt,
+                            contentType:
+                                "travel",
+                            correctAnswers:
+                                5,
+                            exerciseId:
+                                "travel-daily",
+                            totalQuestions:
+                                5
+                        }
+                    ])
+                );
+            }
+        );
+
+        await page.goto("/");
+
+        const callout =
+            page.getByRole(
+                "link",
+                {
+                    name:
+                        "Ouvrir ma session du jour"
+                }
+            );
+
+        await expect(
+            callout
+        ).toContainText(
+            "2/3 aujourd’hui"
+        );
+        await expect(
+            callout.getByRole(
+                "progressbar",
+                {
+                    name:
+                        "Objectif quotidien"
+                }
+            )
+        ).toHaveAttribute(
+            "aria-valuenow",
+            "2"
+        );
+
+        await callout.click();
+
+        await expect(page).toHaveURL(
+            /\/daily$/u
+        );
+        await expect(
+            page.locator(
+                "[data-daily-task]"
+            )
+        ).toHaveCount(1);
+    }
+);
