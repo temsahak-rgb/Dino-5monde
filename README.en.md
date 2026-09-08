@@ -181,6 +181,8 @@ Completed **Grammar, Travel and Vocabulary** exercises now feed one score histor
 
 The `/practice/review` centre turns this history into actions: the latest attempt for each exercise below **80%** is offered again with its result, progress bar and direct link. A later attempt at 80% or above automatically removes the recommendation; no parallel state is stored.
 
+The profile also makes learning rhythm visible: a **three-exercise daily goal**, today's progress, the current streak, and seven calendar status lights. These indicators are derived from the same synchronized history, follow the learner's local calendar, and update when the day changes.
+
 The learning corpus deliberately remains under `data/` and is public in the GitHub Pages build. Selling content for real money will therefore require private backend delivery; hiding a lesson in React or storing only its entitlement in the database does not protect publicly shipped JSON.
 
 ---

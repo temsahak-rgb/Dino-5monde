@@ -1004,6 +1004,34 @@ test.describe(
                     "href",
                     "/travel/TR-006"
                 );
+                const dailyPractice =
+                    page.getByLabel(
+                        "Mon rythme"
+                    );
+                await expect(
+                    dailyPractice.getByRole(
+                        "progressbar",
+                        {
+                            name:
+                                "Objectif quotidien"
+                        }
+                    )
+                ).toHaveAttribute(
+                    "aria-valuenow",
+                    "1"
+                );
+                await expect(
+                    dailyPractice.getByRole(
+                        "link",
+                        {
+                            name:
+                                "Faire ma session →"
+                        }
+                    )
+                ).toHaveAttribute(
+                    "href",
+                    "/practice"
+                );
                 const progressDashboard =
                     page.getByLabel(
                         "Ma progression"

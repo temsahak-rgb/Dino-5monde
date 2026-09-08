@@ -181,6 +181,8 @@ Les exercices terminés en **Grammaire, Voyage et Vocabulaire** alimentent déso
 
 Le centre `/practice/review` transforme cet historique en actions : le dernier essai de chaque exercice sous **80 %** est proposé à nouveau, avec son résultat, une barre de progression et un lien direct. Un nouvel essai à 80 % ou plus retire automatiquement la recommandation ; aucun état parallèle n’est stocké.
 
+Le profil matérialise aussi le rythme d’apprentissage : objectif de **trois exercices par jour**, progression du jour, série en cours et sept voyants calendaires. Ces indicateurs sont calculés depuis le même historique synchronisé, respectent le calendrier local de l’apprenant et se mettent à jour au changement de journée.
+
 Le corpus reste volontairement dans `data/` et demeure public dans le build GitHub Pages. Une commercialisation réelle exigera donc de déplacer la livraison des contenus payants derrière une API privée ; masquer une leçon dans React ou stocker uniquement son droit d'accès en base ne protège pas son JSON public.
 
 ---

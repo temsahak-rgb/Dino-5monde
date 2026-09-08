@@ -43,6 +43,7 @@ MVP overview, installation, i18n, architecture, tests and contribution rules.
 - 👤 compte sans mot de passe et profil privé `Saurus` ;
 - 📊 tableau de progression Grammaire, Voyage et Jeux dans le profil ;
 - 🎯 historique de scores Grammaire, Voyage et Vocabulaire, local-first et multi-appareils ;
+- 🔥 objectif de trois exercices par jour et série hebdomadaire visible dans le profil ;
 - 🇫🇷🇮🇷 interface français / persan ;
 - ↔️ gestion LTR / RTL ;
 - 💾 progression Grammaire et Voyage locale-first, synchronisée pour les comptes connectés ;
