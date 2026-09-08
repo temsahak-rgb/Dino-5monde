@@ -179,6 +179,8 @@ The profile also provides a visual progress dashboard for **Grammar, Travel and 
 
 Completed **Grammar, Travel and Vocabulary** exercises now feed one score history in the learner profile. Every immutable attempt includes its date, result and a direct link back to the activity. It is stored locally without an account, adopted on first sign-in, and synchronized across devices without resending attempts already known to the server. Scores remain private and never grant credits.
 
+The `/practice/review` centre turns this history into actions: the latest attempt for each exercise below **80%** is offered again with its result, progress bar and direct link. A later attempt at 80% or above automatically removes the recommendation; no parallel state is stored.
+
 The learning corpus deliberately remains under `data/` and is public in the GitHub Pages build. Selling content for real money will therefore require private backend delivery; hiding a lesson in React or storing only its entitlement in the database does not protect publicly shipped JSON.
 
 ---
@@ -752,7 +754,6 @@ Natural next steps include:
 
 - completing the Daily path;
 - connecting Games more deeply with progress tracking and review;
-- using exercise history for personalised recommendations;
 - strengthening exercises;
 - adding more data-consistency tests;
 - improving consistency across CEFR levels;

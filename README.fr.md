@@ -179,6 +179,8 @@ Le profil réunit également un tableau de progression visuel pour **Grammaire, 
 
 Les exercices terminés en **Grammaire, Voyage et Vocabulaire** alimentent désormais un historique de scores unique dans le profil. Chaque tentative possède un identifiant immuable, une date, son résultat et un lien vers l'activité. Elle est enregistrée localement sans compte, adoptée à la première connexion puis synchronisée entre appareils sans renvoyer les tentatives déjà connues. Les scores sont privés et ne génèrent aucun crédit.
 
+Le centre `/practice/review` transforme cet historique en actions : le dernier essai de chaque exercice sous **80 %** est proposé à nouveau, avec son résultat, une barre de progression et un lien direct. Un nouvel essai à 80 % ou plus retire automatiquement la recommandation ; aucun état parallèle n’est stocké.
+
 Le corpus reste volontairement dans `data/` et demeure public dans le build GitHub Pages. Une commercialisation réelle exigera donc de déplacer la livraison des contenus payants derrière une API privée ; masquer une leçon dans React ou stocker uniquement son droit d'accès en base ne protège pas son JSON public.
 
 ---
@@ -752,7 +754,6 @@ Les prochaines évolutions naturelles comprennent notamment :
 
 - terminer le parcours Quotidien ;
 - relier davantage les Jeux au suivi de progression et aux révisions ;
-- exploiter l'historique d'exercices dans les recommandations personnalisées ;
 - renforcer les exercices ;
 - ajouter davantage de tests de données ;
 - harmoniser la couverture des niveaux CECRL ;
