@@ -69,7 +69,7 @@ The MVP is not intended to provide every feature of a complete learning platform
 | News | ✅ Present |
 | Polls | ✅ Feature present |
 | Lesson shop and credits | ✅ `/shop`, purchases, Travel and mini-game rewards |
-| Account and Profile | ✅ Passwordless email sign-in and private `Saurus` profile |
+| Account and Profile | ✅ Email sign-in, private `Saurus` profile and progress dashboard |
 | Games & exercises hub | ✅ `/practice`, game/level catalogues and shareable sessions |
 | Daily | Outside the published scope; no placeholder route is exposed |
 | Cross-device sync | ✅ Progress, mistakes and weak words for signed-in learners |
@@ -174,6 +174,8 @@ The shareable `/shop` route lists available lessons. Every new account starts wi
 Supabase stores wallets, acquired entitlements and an append-only transaction ledger. Row Level Security isolates each account. Purchases and learning rewards are atomic: completing a Travel lesson grants **five credits exactly once**; winning a mini-game grants its game/level pair once (**1 / 3 / 5 credits** depending on the game). PostgreSQL owns the amounts and requires a private, server-issued game attempt to be completed before a claim. The browser can neither choose the amount nor insert a reward directly. Recent rewards remain visible and clickable in the learner profile.
 
 Grammar and Travel progress is persisted per account and merged monotonically across devices. Before crediting a rewarded lesson, the backend compares its synchronized sections with the server-owned completion rule. A browser-provided `completed` status is not sufficient; the amount remains server-priced and every reward stays unique.
+
+The profile also provides a visual progress dashboard for **Grammar, Travel and Games**. Each card combines a status light, completed count, percentage and direct path link. Totals come from the existing catalogues; completion uses account-merged local progress and server reward history without duplicating data.
 
 The learning corpus deliberately remains under `data/` and is public in the GitHub Pages build. Selling content for real money will therefore require private backend delivery; hiding a lesson in React or storing only its entitlement in the database does not protect publicly shipped JSON.
 

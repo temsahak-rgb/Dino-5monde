@@ -20,6 +20,15 @@ import type {
 import type {
     ReviewSignal
 } from "../../src/core/reviewSignalEngine.js";
+import type {
+    LessonProgressSnapshot
+} from "../../src/core/progressEngine.js";
+import type {
+    LearningProgressOverview
+} from "../../src/features/profile/learningProgressOverview.js";
+import type {
+    LearnerActivityReward
+} from "../../src/services/backend/learningRewardRepository.js";
 
 import type {
     LearnerProfileDraft
@@ -54,6 +63,9 @@ interface ProductWorld extends IWorld {
     learningRewardStatus?:
         | "awarded"
         | "incomplete";
+    learningProgressRecords?: LessonProgressSnapshot[];
+    learningProgressRewards?: LearnerActivityReward[];
+    learningProgressOverview?: LearningProgressOverview;
     localLessonProgress?: LessonProgress;
     remoteLessonProgress?: LessonProgress;
     mergedLessonProgress?: LessonProgress;

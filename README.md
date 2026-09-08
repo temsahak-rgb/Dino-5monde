@@ -41,6 +41,7 @@ MVP overview, installation, i18n, architecture, tests and contribution rules.
 - 🎁 5 crédits attribués une seule fois pour chaque leçon Voyage terminée ;
 - 🏆 récompenses de jeu uniques par niveau : Pendu +1, Grille de lettres +3, Mots croisés +5 ;
 - 👤 compte sans mot de passe et profil privé `Saurus` ;
+- 📊 tableau de progression Grammaire, Voyage et Jeux dans le profil ;
 - 🇫🇷🇮🇷 interface français / persan ;
 - ↔️ gestion LTR / RTL ;
 - 💾 progression Grammaire et Voyage locale-first, synchronisée pour les comptes connectés ;
