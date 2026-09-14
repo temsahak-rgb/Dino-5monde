@@ -5,6 +5,19 @@ import {
     type Route
 } from "@playwright/test";
 
+import {
+    fulfillContentBackendRequest,
+    installContentBackendMock
+} from "./content-backend-mock.js";
+
+test.beforeEach(
+    async ({ page }) => {
+        await installContentBackendMock(
+            page
+        );
+    }
+);
+
 const learnerId =
     "11111111-1111-4111-8111-111111111111";
 
@@ -219,6 +232,14 @@ test(
             "https://supabase.test/**",
             async route => {
                 if (await fulfillPreflight(route)) {
+                    return;
+                }
+
+                if (
+                    await fulfillContentBackendRequest(
+                        route
+                    )
+                ) {
                     return;
                 }
 

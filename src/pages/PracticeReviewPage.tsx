@@ -40,6 +40,9 @@ import {
     useExerciseTracking
 } from "../services/backend/ExerciseTrackingProvider.js";
 import {
+    useContent
+} from "../services/content/ContentProvider.js";
+import {
     ExerciseScoreRecommendations
 } from "../features/practice/ExerciseScoreRecommendations.js";
 import {
@@ -54,6 +57,7 @@ import {
 
 import {
     EmptyState,
+    ErrorState,
     LoadingState
 } from "../ui/components/Feedback.js";
 
@@ -79,6 +83,11 @@ function PracticeReviewPage() {
         attempts,
         status: exerciseSyncStatus
     } = useExerciseTracking();
+    const {
+        repository,
+        status:
+            contentStatus
+    } = useContent();
 
     const [mistakes, setMistakes] =
         useState<MistakeReviewItem[]>([]);
@@ -88,13 +97,34 @@ function PracticeReviewPage() {
         useState<ExerciseScoreReviewCatalogItem[]>([]);
     const [loading, setLoading] =
         useState(true);
+    const [loadError, setLoadError] =
+        useState(false);
+    const [loadRevision, setLoadRevision] =
+        useState(0);
 
     useEffect(
         () => {
+            if (
+                contentStatus
+                !== "ready"
+                || !repository
+            ) {
+                setLoading(true);
+                setLoadError(
+                    contentStatus
+                    === "error"
+                );
+
+                return;
+            }
+
             let active = true;
             let catalogs: Awaited<
                 ReturnType<typeof loadReviewCatalog>
             > | null = null;
+
+            setLoading(true);
+            setLoadError(false);
 
             const refreshReviewItems = (): void => {
                 if (!active || !catalogs) {
@@ -132,10 +162,18 @@ function PracticeReviewPage() {
                 handleReviewChange
             );
 
-            void loadReviewCatalog()
+            void loadReviewCatalog(
+                repository
+            )
                 .then(loadedCatalogs => {
                     catalogs = loadedCatalogs;
                     refreshReviewItems();
+                })
+                .catch(() => {
+                    if (active) {
+                        setLoadError(true);
+                        setLoading(false);
+                    }
                 });
 
             return () => {
@@ -150,7 +188,11 @@ function PracticeReviewPage() {
                 );
             };
         },
-        []
+        [
+            contentStatus,
+            loadRevision,
+            repository
+        ]
     );
 
     const mistakeCount = mistakes.reduce(
@@ -187,7 +229,8 @@ function PracticeReviewPage() {
                 title={t("review.title")}
                 description={t("review.introduction")}
                 actions={
-                    !loading ? (
+                    !loading
+                    && !loadError ? (
                         <div className="flex gap-2">
                             <Badge variant={mistakeCount ? "warning" : "success"}>
                                 {t("review.mistakeCount", { count: mistakeCount })}
@@ -219,7 +262,31 @@ function PracticeReviewPage() {
                 )}
             </Card>
 
-            {loading ? (
+            {loadError ? (
+                <ErrorState
+                    title={
+                        t(
+                            "error.unavailable.title"
+                        )
+                    }
+                    description={
+                        t(
+                            "error.unavailable.body"
+                        )
+                    }
+                    onRetry={() => {
+                        setLoadRevision(
+                            current =>
+                                current + 1
+                        );
+                    }}
+                    retryLabel={
+                        t(
+                            "common.retry"
+                        )
+                    }
+                />
+            ) : loading ? (
                 <LoadingState label={t("common.loading")} />
             ) : mistakes.length === 0
                 && weakWords.length === 0

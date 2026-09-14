@@ -30,6 +30,8 @@ const frMessages = {
     "common.morePractice": "Plus d'entraînement !",
 
     "error.notFound.title": "Contenu introuvable",
+    "error.unavailable.title": "Contenu temporairement indisponible",
+    "error.unavailable.body": "Le serveur pédagogique ne répond pas. Réessayez dans quelques instants.",
 
     "navbar.grammar": "Grammaire",
     "navbar.vocabulary": "Vocabulaire",

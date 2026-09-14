@@ -9,11 +9,14 @@ import type {
     Level
 } from "../../types/global.js";
 import {
-    loadGrammar
-} from "../grammar/grammarEngine.js";
+    loadGrammarCatalog
+} from "../grammar/grammarRepository.js";
 import {
     getGrammarLevels
 } from "../grammar/grammarLevels.js";
+import type {
+    ContentRepository
+} from "../../services/content/contentRepository.js";
 import {
     loadTravelIndex
 } from "../travel/travelEngine.js";
@@ -32,7 +35,10 @@ interface LevelledReviewCatalogItem
     level: Level;
 }
 
-async function loadReviewCatalog():
+async function loadReviewCatalog(
+    contentRepository:
+        ContentRepository
+):
     Promise<ReviewCatalogs> {
     const [
         grammarCatalogs,
@@ -41,7 +47,11 @@ async function loadReviewCatalog():
     ] = await Promise.all([
         Promise.all(
             getGrammarLevels().map(
-                level => loadGrammar(level)
+                level =>
+                    loadGrammarCatalog(
+                        contentRepository,
+                        level
+                    )
             )
         ),
         loadTravelIndex(),

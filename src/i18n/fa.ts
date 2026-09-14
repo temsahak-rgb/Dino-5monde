@@ -30,6 +30,8 @@ const faMessages: Record<TranslationKey, string> = {
     "common.morePractice": "باید بیشتر تمرین کنی!",
 
     "error.notFound.title": "محتوا پیدا نشد",
+    "error.unavailable.title": "محتوا موقتاً در دسترس نیست",
+    "error.unavailable.body": "سرور آموزشی پاسخ نمی‌دهد. چند لحظه دیگر دوباره تلاش کنید.",
 
     "navbar.grammar": "گرامر",
     "navbar.vocabulary": "واژگان",

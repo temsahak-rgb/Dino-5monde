@@ -1,12 +1,5 @@
-import {
-    getStaticDataUrl
-} from "../../core/staticData.js";
-
 import type {
-    GrammarLessonIndex,
-    GrammarModule,
-    LessonStatus,
-    Level
+    LessonStatus
 } from "../../types/global.js";
 
 import {
@@ -14,149 +7,16 @@ import {
 } from "../../core/learnerStorage.js";
 
 export {
-    getGrammar,
     getLessonStatus,
-    getRecommendedGrammar,
     getStatusIcon,
     isBookmarked,
-    loadGrammar,
     setLessonStatus,
     toggleBookmark
 };
 
 /**
- * Grammar catalog loading, progress state, and bookmark persistence.
+ * Grammar progress state and bookmark persistence.
  */
-
-const grammarData:
-    Partial<
-        Record<
-            Level,
-            GrammarLessonIndex[]
-        >
-    > = {};
-
-/**
- * Loads the grammar catalog for a CEFR level.
- *
- * @param level - CEFR level to load.
- * @returns Loaded grammar lessons, or an empty array on failure.
- */
-async function loadGrammar(
-    level: Level
-): Promise<GrammarLessonIndex[]> {
-    try {
-        const response =
-            await fetch(
-                getStaticDataUrl(
-                    `data/grammar-${level}.json`
-                )
-            );
-
-        if (!response.ok) {
-            throw new Error(
-                `HTTP ${response.status}`
-            );
-        }
-
-        const data =
-            (
-                await response.json()
-            ) as GrammarLessonIndex[];
-
-        grammarData[
-            level
-        ] = data;
-
-        return data;
-    } catch (error) {
-        console.error(
-            `Failed to load grammar catalog ${level}:`,
-            error
-        );
-
-        return [];
-    }
-}
-
-/**
- * Returns the cached grammar catalog for a CEFR level.
- *
- * @param level - CEFR level.
- * @returns Cached grammar lessons.
- */
-function getGrammar(
-    level: Level
-): GrammarLessonIndex[] {
-    return (
-        grammarData[
-            level
-        ]
-        ?? []
-    );
-}
-
-/**
- * Returns grammar lessons explicitly marked as recommended.
- *
- * @param level - CEFR level.
- * @returns Recommended grammar lessons.
- */
-function getRecommendedGrammar(
-    level: Level
-): GrammarLessonIndex[] {
-    return getGrammar(
-        level
-    ).filter(
-        item =>
-            item.recommended
-            === true
-    );
-}
-
-/**
- * Groups cached grammar lessons by their module name.
- *
- * @param level - CEFR level.
- * @returns Grammar modules keyed by module name.
- */
-function getGrammarByModule(
-    level: Level
-): Record<
-    string,
-    GrammarModule
-> {
-    return getGrammar(
-        level
-    ).reduce<
-        Record<
-            string,
-            GrammarModule
-        >
-    >(
-        (
-            modules,
-            item
-        ) => {
-            modules[
-                item.module
-            ] ??= {
-                icon:
-                    item.icon,
-                items: []
-            };
-
-            modules[
-                item.module
-            ].items.push(
-                item
-            );
-
-            return modules;
-        },
-        {}
-    );
-}
 
 /**
  * Returns the persisted learning status of a grammar lesson.

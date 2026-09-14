@@ -4,8 +4,12 @@ import {
     type Page
 } from "@playwright/test";
 
+import {
+    installContentBackendMock
+} from "./content-backend-mock.js";
+
 test.beforeEach(
-    async ({ context }) => {
+    async ({ context, page }) => {
         await context.route(
             "https://supabase.test/rest/v1/shop_lessons**",
             async route => {
@@ -35,6 +39,10 @@ test.beforeEach(
                     status: 200
                 });
             }
+        );
+
+        await installContentBackendMock(
+            page
         );
     }
 );
@@ -257,6 +265,65 @@ test.describe(
                 await expect(page).toHaveURL(
                     /\/grammar\/lesson\/A1-G-001$/
                 );
+            }
+        );
+
+        test(
+            "keeps a configured content outage visible instead of falling back silently",
+            async ({ page }) => {
+                await seedCompletedOnboarding(page);
+                await page.route(
+                    "https://supabase.test/rest/v1/rpc/get_published_content_catalog",
+                    async route => {
+                        if (
+                            route.request().method()
+                            === "OPTIONS"
+                        ) {
+                            await route.fulfill({
+                                body: "",
+                                headers: {
+                                    "access-control-allow-origin":
+                                        "*"
+                                },
+                                status: 204
+                            });
+                            return;
+                        }
+
+                        await route.fulfill({
+                            headers: {
+                                "access-control-allow-origin":
+                                    "*",
+                                "content-type":
+                                    "application/json"
+                            },
+                            json: {
+                                message:
+                                    "content service unavailable"
+                            },
+                            status: 503
+                        });
+                    }
+                );
+
+                await page.goto("/grammar/A1");
+
+                await expect(page).toHaveURL(
+                    /\/grammar\/A1$/
+                );
+                await expect(
+                    page.getByRole("heading", {
+                        name:
+                            "Contenu temporairement indisponible",
+                        exact: true
+                    })
+                ).toBeVisible();
+                await expect(
+                    page.getByRole("button", {
+                        name: "Recommencer",
+                        exact: true
+                    })
+                ).toBeVisible();
             }
         );
 

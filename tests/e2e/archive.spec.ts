@@ -3,6 +3,18 @@ import {
     test
 } from "@playwright/test";
 
+import {
+    installContentBackendMock
+} from "./content-backend-mock.js";
+
+test.beforeEach(
+    async ({ page }) => {
+        await installContentBackendMock(
+            page
+        );
+    }
+);
+
 test(
     "archive reopens completed local lessons and scored exercises after reload",
     async ({ page }) => {

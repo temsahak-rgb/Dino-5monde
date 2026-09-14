@@ -3,6 +3,18 @@ import {
     test
 } from "@playwright/test";
 
+import {
+    installContentBackendMock
+} from "./content-backend-mock.js";
+
+test.beforeEach(
+    async ({ page }) => {
+        await installContentBackendMock(
+            page
+        );
+    }
+);
+
 test(
     "daily session keeps its shareable URL and prioritizes recent learning signals",
     async ({ page }) => {
