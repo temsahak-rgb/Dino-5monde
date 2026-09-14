@@ -42,6 +42,7 @@ MVP overview, installation, i18n, architecture, tests and contribution rules.
 - 🏆 récompenses de jeu uniques par niveau : Pendu +1, Grille de lettres +3, Mots croisés +5 ;
 - 👤 compte sans mot de passe et profil privé `Saurus` ;
 - 📊 tableau de progression Grammaire, Voyage et Jeux dans le profil ;
+- 🛠️ atelier éditorial versionné pour les Actualités, la Grammaire et le Vocabulaire ;
 - 🎯 historique de scores Grammaire, Voyage et Vocabulaire, local-first et multi-appareils ;
 - 🔥 objectif de trois exercices par jour et série hebdomadaire visible dans le profil ;
 - 🇫🇷🇮🇷 interface français / persan ;
@@ -49,7 +50,7 @@ MVP overview, installation, i18n, architecture, tests and contribution rules.
 - 💾 progression Grammaire et Voyage locale-first, synchronisée pour les comptes connectés ;
 - 🧪 TypeScript + JSON + tests d'architecture.
 
-> **État / Status:** projet en développement. Le Profil, la Boutique, le hub Jeux & exercices, la session Quotidien et l’Archive sont livrés.
+> **État / Status:** projet en développement. Le Profil, la Boutique, le hub Jeux & exercices, la session Quotidien, l’Archive et le premier atelier éditorial sont livrés.
 
 ---
 
@@ -81,11 +82,28 @@ Chaque exercice terminé en Grammaire, Voyage ou Vocabulaire ajoute aussi un ré
 
 La boutique est disponible sur `/shop`. Elle utilise aujourd'hui uniquement des crédits virtuels : aucun paiement en argent réel n'est encore raccordé. Le catalogue pédagogique cible désormais Supabase comme source canonique : une identité stable pointe vers une révision JSONB immuable et chaque import ou publication est audité. Un contrat `ContentRepository` isole React de la source réelle. La Grammaire est le premier domaine raccordé : ses listes téléchargent uniquement les métadonnées publiées par `get_published_content_catalog`, puis la page d'une leçon demande son document et ses exercices par identifiant avec `get_published_content`. Les tables, les brouillons et la provenance d'import restent privés.
 
-L’atelier éditorial est disponible sur `/admin/content`. Il permet de rechercher les contenus du serveur, consulter leurs révisions, créer ou modifier un contenu, importer l’export Grammaire en brouillons et publier une révision choisie. Les Actualités disposent d’un éditeur guidé : titres et chapôs bilingues, niveau, date, illustration accessible, textes complet et simplifié, sources, vocabulaire et connexions vers les leçons de grammaire. La Grammaire dispose maintenant du même niveau d’outillage : carte de catalogue et en-tête de leçon distincts, prérequis, sections en mini-Markdown, exemples, tableaux, notes bilingues, quiz et exercices `mcq`, vrai/faux, texte à compléter ou remise en ordre. Un tableau à voyants et un aperçu fidèle rendent les erreurs visibles avant la sauvegarde ; le JSON canonique et ses éventuelles extensions restent accessibles dans un panneau avancé.
+L’atelier éditorial est disponible sur `/admin/content`. Il permet de rechercher les contenus du serveur, consulter leurs révisions, créer ou modifier un contenu, analyser les exports Grammaire et Vocabulaire, les importer en brouillons puis publier explicitement une révision choisie.
 
-Enregistrer et publier sont deux actions séparées : aucune sauvegarde ne devient publique implicitement. Une Actualité ou une leçon de Grammaire incomplète peut rester en brouillon, mais sa publication est refusée à la fois dans l’interface et par PostgreSQL. Pour la Grammaire, le serveur contrôle notamment l’identité et le niveau, les métadonnées du catalogue, les prérequis, les sections, les tableaux et chaque format de question. Les identifiants de sections déjà publiées sont verrouillés dans l’éditeur pour protéger les progressions existantes. Le tableau de bord affiche les contenus publiés, les brouillons en attente et la couverture de publication ; il reste utilisable sur mobile.
+Les trois domaines éditables disposent d’une interface guidée :
 
-La bascule reste volontairement progressive. Le corpus complet de `data/` n'est pas modifié : il sert d'export historique pour l'import initial et de repli explicite quand aucun backend n'est configuré. Dès qu'un backend est configuré, la Grammaire ne masque jamais une panne serveur par un retour silencieux au JSON : l'interface montre un état de chargement, une erreur réessayable ou une ressource introuvable. Voyage, Vocabulaire et Journal restent encore sur leurs lecteurs statiques et migreront derrière le même contrat, domaine par domaine. Docker ne charge jamais le corpus complet ; `supabase/seeds/uat-content.sql` contient seulement quatre fixtures réservées aux tests, une par famille de contenu.
+- **Actualités** : titres et chapôs bilingues, niveau, date, illustration accessible, textes complet et simplifié, sources et connexions vers les leçons de Grammaire et les packs de Vocabulaire ;
+- **Grammaire** : carte de catalogue et en-tête de leçon distincts, prérequis, sections en mini-Markdown, exemples, tableaux, notes bilingues, quiz et exercices `mcq`, vrai/faux, texte à compléter ou remise en ordre ;
+- **Vocabulaire** : carte de catalogue et détail distincts, mots bilingues, difficulté, exemples, média, histoires simples ou littéraires, textes à trous et quiz à choix multiple ou vrai/faux.
+
+Chaque éditeur affiche un tableau à voyants, une barre de complétion et un aperçu sans effet de bord avant la sauvegarde. Le JSON canonique et ses éventuelles extensions restent accessibles dans un panneau avancé. L’aperçu Vocabulaire ne modifie ni les mots faibles, ni les scores, ni les récompenses de l’apprenant.
+
+Enregistrer et publier sont deux actions séparées : aucune sauvegarde ne devient publique implicitement. Un contenu incomplet peut rester en brouillon, mais la publication d’une Actualité, d’une leçon de Grammaire ou d’un pack de Vocabulaire invalide est refusée à la fois dans l’interface et par PostgreSQL. Pour la Grammaire, le serveur contrôle notamment l’identité et le niveau, les métadonnées du catalogue, les prérequis, les sections, les tableaux et chaque format de question. Pour le Vocabulaire, il contrôle l’identité, le niveau, les mots bilingues, leur unicité, les histoires et les réponses du quiz. Les identifiants de sections Grammaire et les mots français déjà publiés sont verrouillés afin de protéger les progressions existantes. Le tableau de bord affiche les contenus publiés, les brouillons en attente et la couverture de publication ; il reste utilisable sur mobile.
+
+La bascule reste volontairement progressive. Le corpus complet de `data/` n'est pas modifié : il sert d'export historique pour l'import initial et de repli explicite quand aucun backend n'est configuré. Dès qu'un backend est configuré, la Grammaire ne masque jamais une panne serveur par un retour silencieux au JSON : l'interface montre un état de chargement, une erreur réessayable ou une ressource introuvable. Docker ne charge jamais le corpus complet ; `supabase/seeds/uat-content.sql` contient seulement quatre fixtures réservées aux tests, une par famille de contenu.
+
+| Domaine | Lecture publique actuelle | Administration serveur |
+| --- | --- | --- |
+| Grammaire | Supabase si configuré, sinon export JSON explicite | Éditeur structuré + import + publication |
+| Actualités | Export JSON | Éditeur structuré + publication |
+| Vocabulaire | Export JSON | Éditeur structuré + import + publication |
+| Voyage | Export JSON | Éditeur JSON générique, migration structurée à venir |
+
+Les 516 packs de Vocabulaire indexés passent un test automatique de lecture puis reconstruction JSON exacte. Les alias et extensions historiques restent donc conservés sans réécriture silencieuse. La prochaine étape de ce chantier sera de raccorder le lecteur public Vocabulaire à la projection publiée, puis de faire de même pour les Actualités et Voyage.
 
 Le déploiement GitHub Pages injecte ces valeurs depuis les variables de dépôt `SUPABASE_URL` et `SUPABASE_PUBLISHABLE_KEY`. Le projet Supabase n’est donc jamais codé en dur : passer à l’environnement du client consiste à remplacer ces deux variables puis à rejouer les migrations versionnées.
 
@@ -100,7 +118,7 @@ npm run backend:types
 npm run content:inventory
 ```
 
-`npm run backend:test` exécute notamment les contrôles SQL pgTAP de la boutique et du catalogue versionné. `npm run content:inventory` vérifie en lecture seule que les index et documents JSON forment un inventaire complet, unique et reproductible. `npm run backend:stop` arrête ensuite l’environnement local. Phone OTP reste volontairement désactivé tant qu’un fournisseur SMS payant et ses protections anti-abus ne sont pas configurés.
+`npm run backend:test` exécute notamment les contrôles SQL pgTAP de la boutique, du catalogue versionné et des contrats de publication Actualités, Grammaire et Vocabulaire. `npm run content:inventory` vérifie en lecture seule que les index et documents JSON forment un inventaire complet, unique et reproductible. `npm run backend:stop` arrête ensuite l’environnement local. Phone OTP reste volontairement désactivé tant qu’un fournisseur SMS payant et ses protections anti-abus ne sont pas configurés.
 
 Le premier administrateur doit se connecter une fois, ouvrir `/admin/content`, puis copier l’identifiant de compte affiché sur l’écran d’accès refusé. Un propriétaire du projet l’ajoute ensuite à l’allowlist depuis le SQL Editor Supabase :
 
@@ -110,7 +128,7 @@ values ('UUID_DU_COMPTE')
 on conflict (user_id) do nothing;
 ```
 
-Après rechargement, le cycle normal est : **analyser l’export → importer en brouillons → relire → publier explicitement**. L’analyse et l’import ne modifient jamais les fichiers de `data/`. Le navigateur utilise uniquement la clé publique et les RPC vérifient l’allowlist avec l’identité authentifiée ; aucune clé `service_role` n’est nécessaire dans le panel. Le script `npm run content:import` reste un outil de maintenance hors navigateur, mais n’est plus le parcours éditorial normal. Une clé `SUPABASE_SERVICE_ROLE_KEY` ne doit jamais être préfixée par `VITE_`, stockée dans Git ou envoyée au navigateur.
+Après rechargement, le cycle normal est : **analyser l’export → importer en brouillons → relire → publier explicitement**. Ce parcours est disponible séparément pour la Grammaire et le Vocabulaire. L’analyse et l’import ne modifient jamais les fichiers de `data/`. Le navigateur utilise uniquement la clé publique et les RPC vérifient l’allowlist avec l’identité authentifiée ; aucune clé `service_role` n’est nécessaire dans le panel. Le script `npm run content:import` reste un outil de maintenance hors navigateur, mais n’est plus le parcours éditorial normal. Une clé `SUPABASE_SERVICE_ROLE_KEY` ne doit jamais être préfixée par `VITE_`, stockée dans Git ou envoyée au navigateur.
 
 Le parcours de compte utilise une **connexion email sans mot de passe** : `/auth` envoie un lien sécurisé vers la destination demandée et sait aussi vérifier un OTP à 6 chiffres, puis `/profile` crée ou modifie le profil privé et sa préférence d’affichage `Saurus`. Sur le plan gratuit, le modèle d’email Supabase par défaut est conservé ; le modèle OTP bilingue prêt dans `supabase/templates/` sera activé après raccordement d’un SMTP dédié. L’expéditeur intégré ne dessert que les adresses autorisées de l’équipe : un SMTP dédié reste donc obligatoire avant l’ouverture aux apprenants.
 
