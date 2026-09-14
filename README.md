@@ -66,8 +66,8 @@ features/            → composants métier, moteurs et repositories
 core/                → logique réutilisable indépendante de React
 services/backend/    → frontière TypeScript vers Auth et PostgreSQL
 i18n/                → textes d'interface et direction
-data/                → contenu pédagogique JSON
-supabase/            → configuration et migrations du backend versionnées
+data/                → export JSON historique, conservé pendant la bascule
+supabase/            → backend canonique, migrations et mini-corpus UAT
 ```
 
 L'application est une SPA **React + TypeScript** construite par Vite. `index.html` charge uniquement `src/main.tsx` ; `AppRouter` et `AppLayout` structurent ensuite les routes, les pages et les composants.
@@ -78,7 +78,9 @@ La progression Grammaire et Voyage reste d'abord enregistrée localement pour fo
 
 Chaque exercice terminé en Grammaire, Voyage ou Vocabulaire ajoute aussi un résultat immuable au profil. L'historique conserve le score, la date et un lien de retour vers l'activité ; il fonctionne hors connexion puis se synchronise par compte sans renvoyer les tentatives déjà présentes. Ces scores n'accordent aucun crédit et sont isolés par Row Level Security.
 
-La boutique est disponible sur `/shop`. Elle utilise aujourd'hui uniquement des crédits virtuels : aucun paiement en argent réel n'est encore raccordé. Le corpus pédagogique reste dans `data/`, sans migration ni modification, et demeure donc publiquement téléchargeable avec le site GitHub Pages. Avant toute vente réelle, les contenus payants devront être servis par une frontière backend privée ; les droits Supabase seuls ne constituent pas une protection du JSON public.
+La boutique est disponible sur `/shop`. Elle utilise aujourd'hui uniquement des crédits virtuels : aucun paiement en argent réel n'est encore raccordé. Le catalogue pédagogique cible désormais Supabase comme source canonique : une identité stable pointe vers une révision JSONB immuable et chaque import ou publication est audité. Le navigateur ne reçoit que la révision publiée par `get_published_content` ; les tables, les brouillons et la provenance d'import restent privés.
+
+La bascule reste volontairement progressive. Le corpus complet de `data/` n'est pas modifié : il sert d'export historique pour l'import initial et continue d'alimenter le frontend tant que la parité serveur n'a pas été validée. Docker ne charge jamais ce corpus complet ; `supabase/seeds/uat-content.sql` contient seulement quatre fixtures réservées aux tests, une par famille de contenu. Après l'import et le raccordement des repositories React, seuls ces exemples UAT resteront en local et le serveur fera foi pour le produit.
 
 Le déploiement GitHub Pages injecte ces valeurs depuis les variables de dépôt `SUPABASE_URL` et `SUPABASE_PUBLISHABLE_KEY`. Le projet Supabase n’est donc jamais codé en dur : passer à l’environnement du client consiste à remplacer ces deux variables puis à rejouer les migrations versionnées.
 
@@ -90,9 +92,20 @@ npm run backend:start
 npm run backend:reset
 npm run backend:test
 npm run backend:types
+npm run content:inventory
 ```
 
-`npm run backend:test` exécute notamment les contrôles SQL pgTAP de la boutique. `npm run backend:stop` arrête ensuite l’environnement local. Phone OTP reste volontairement désactivé tant qu’un fournisseur SMS payant et ses protections anti-abus ne sont pas configurés.
+`npm run backend:test` exécute notamment les contrôles SQL pgTAP de la boutique et du catalogue versionné. `npm run content:inventory` vérifie en lecture seule que les index et documents JSON forment un inventaire complet, unique et reproductible. `npm run backend:stop` arrête ensuite l’environnement local. Phone OTP reste volontairement désactivé tant qu’un fournisseur SMS payant et ses protections anti-abus ne sont pas configurés.
+
+L'import complet est une opération serveur explicite et idempotente :
+
+```bash
+SUPABASE_URL=https://example.supabase.co \
+SUPABASE_SERVICE_ROLE_KEY=server-only-secret \
+npm run content:import
+```
+
+La clé `SUPABASE_SERVICE_ROLE_KEY` ne doit jamais être préfixée par `VITE_`, stockée dans Git ou envoyée au navigateur. Relancer l'import avec un document inchangé réutilise sa révision ; une modification crée une nouvelle révision et conserve l'ancienne.
 
 Le parcours de compte utilise une **connexion email sans mot de passe** : `/auth` envoie un lien sécurisé vers la destination demandée et sait aussi vérifier un OTP à 6 chiffres, puis `/profile` crée ou modifie le profil privé et sa préférence d’affichage `Saurus`. Sur le plan gratuit, le modèle d’email Supabase par défaut est conservé ; le modèle OTP bilingue prêt dans `supabase/templates/` sera activé après raccordement d’un SMTP dédié. L’expéditeur intégré ne dessert que les adresses autorisées de l’équipe : un SMTP dédié reste donc obligatoire avant l’ouverture aux apprenants.
 

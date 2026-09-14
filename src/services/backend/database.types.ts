@@ -6,6 +6,86 @@ type Json =
     | { [key: string]: Json | undefined }
     | Json[];
 
+type CanonicalContentType =
+    | "grammar_lesson"
+    | "vocabulary_pack"
+    | "travel_lesson"
+    | "news_article";
+
+type ContentItemRow = {
+    archived_at: string | null;
+    content_key: string;
+    content_type: CanonicalContentType;
+    created_at: string;
+    id: string;
+    published_at: string | null;
+    published_revision_id: string | null;
+    updated_at: string;
+};
+
+type ContentItemInsert = never;
+type ContentItemUpdate = never;
+
+type ContentRevisionRow = {
+    content_hash: string;
+    content_item_id: string;
+    created_at: string;
+    created_by: string | null;
+    id: string;
+    level: string | null;
+    payload: Json;
+    revision_number: number;
+    schema_version: number;
+    source_path: string | null;
+    title_fa: string | null;
+    title_fr: string;
+};
+
+type ContentRevisionInsert = never;
+type ContentRevisionUpdate = never;
+
+type ContentPublicationAction =
+    | "imported"
+    | "published"
+    | "archived"
+    | "restored";
+
+type ContentPublicationEventRow = {
+    action: ContentPublicationAction;
+    actor_id: string | null;
+    content_item_id: string;
+    id: number;
+    metadata: Json;
+    occurred_at: string;
+    revision_id: string | null;
+};
+
+type ContentPublicationEventInsert = never;
+type ContentPublicationEventUpdate = never;
+
+type ImportContentRevisionRpcRow = {
+    content_hash: string;
+    content_key: string;
+    content_type: CanonicalContentType;
+    published: boolean;
+    revision_number: number;
+};
+
+type PublishedContentRpcRow = {
+    content_hash: string;
+    content_key: string;
+    content_type: CanonicalContentType;
+    item_id: string;
+    level: string | null;
+    payload: Json;
+    published_at: string;
+    revision_id: string;
+    revision_number: number;
+    schema_version: number;
+    title_fa: string | null;
+    title_fr: string;
+};
+
 type LearnerProfileRow = {
     assigned_saurus: string | null;
     avatar_key: string;
@@ -391,6 +471,24 @@ type ClaimLearningRewardRpcRow = {
 type Database = {
     public: {
         Tables: {
+            content_items: {
+                Row: ContentItemRow;
+                Insert: ContentItemInsert;
+                Update: ContentItemUpdate;
+                Relationships: [];
+            };
+            content_publication_events: {
+                Row: ContentPublicationEventRow;
+                Insert: ContentPublicationEventInsert;
+                Update: ContentPublicationEventUpdate;
+                Relationships: [];
+            };
+            content_revisions: {
+                Row: ContentRevisionRow;
+                Insert: ContentRevisionInsert;
+                Update: ContentRevisionUpdate;
+                Relationships: [];
+            };
             learner_profiles: {
                 Row: LearnerProfileRow;
                 Insert: LearnerProfileInsert;
@@ -480,6 +578,27 @@ type Database = {
                 };
                 Returns: LearningGameAttemptRpcRow[];
             };
+            get_published_content: {
+                Args: {
+                    p_content_key?: string | null;
+                    p_content_type?: CanonicalContentType | null;
+                };
+                Returns: PublishedContentRpcRow[];
+            };
+            import_content_revision: {
+                Args: {
+                    p_content_key: string;
+                    p_content_type: CanonicalContentType;
+                    p_level: string | null;
+                    p_payload: Json;
+                    p_publish?: boolean;
+                    p_schema_version: number;
+                    p_source_path: string | null;
+                    p_title_fa: string | null;
+                    p_title_fr: string;
+                };
+                Returns: ImportContentRevisionRpcRow[];
+            };
             record_exercise_attempt: {
                 Args: {
                     p_activity_id: string;
@@ -536,7 +655,12 @@ type Database = {
 };
 
 export {
+    type CanonicalContentType,
     type ClaimLearningRewardRpcRow,
+    type ContentItemRow,
+    type ContentPublicationAction,
+    type ContentPublicationEventRow,
+    type ContentRevisionRow,
     type Database,
     type Json,
     type LearnerActivityRewardRow,
@@ -545,6 +669,7 @@ export {
     type LearnerLessonProgressRow,
     type LearnerReviewSignalRow,
     type LearnerWalletRow,
+    type ImportContentRevisionRpcRow,
     type LearningActivityType,
     type LearningGameActivityType,
     type LearningGameAttemptRpcRow,
@@ -561,6 +686,7 @@ export {
     type LearnerProfileRow,
     type LearnerProfileUpdate,
     type PurchaseShopLessonRpcRow,
+    type PublishedContentRpcRow,
     type ReviewSignalType,
     type SaurusAssignmentSource,
     type ShopLessonContentType,

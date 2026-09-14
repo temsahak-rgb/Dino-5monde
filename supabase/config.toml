@@ -16,9 +16,11 @@ major_version = 17
 enabled = true
 schema_paths = []
 
-# The educational corpus is deliberately not seeded into PostgreSQL.
+# Local Docker receives only four explicit acceptance fixtures. The full
+# production corpus is imported separately through the server-only importer.
 [db.seed]
-enabled = false
+enabled = true
+sql_paths = ["./seeds/uat-content.sql"]
 
 [realtime]
 enabled = false
