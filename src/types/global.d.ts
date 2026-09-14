@@ -540,6 +540,7 @@ export interface NewsVocabularyItem {
     fa: string;
 
     level?: Level;
+    packId?: string;
 }
 
 export interface NewsGrammarItem {

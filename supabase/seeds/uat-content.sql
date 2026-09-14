@@ -99,28 +99,43 @@ from public.import_content_revision(
 select *
 from public.import_content_revision(
     'news_article',
-    'uat-news',
+    '2026-w38-uat-news',
     1,
     'B1',
     'Le journal UAT',
     'خبر آزمایشی',
     jsonb_build_object(
         'catalog', jsonb_build_object(
-            'id', 'uat-news',
+            'id', '2026-w38-uat-news',
             'title', 'Le journal UAT',
             'level', 'B1',
-            'date', '2026-09-14'
+            'image', 'https://images.example.test/uat-news.jpg',
+            'publishedDate', '2026-09-14',
+            'week', 38,
+            'year', 2026
         ),
         'document', jsonb_build_object(
-            'id', 'uat-news',
+            'id', '2026-w38-uat-news',
             'title', 'Le journal UAT',
             'title_fa', 'خبر آزمایشی',
             'level', 'B1',
-            'content', jsonb_build_array(
+            'image', 'https://images.example.test/uat-news.jpg',
+            'imageAlt', 'Illustration de l’actualité UAT',
+            'publishedDate', '2026-09-14',
+            'sources', jsonb_build_array(
                 jsonb_build_object(
-                    'type', 'paragraph',
-                    'text', 'Un article minimal relie les tests de navigation au serveur.'
+                    'title', 'Source UAT officielle',
+                    'url', 'https://source.example.test/uat-news'
                 )
+            ),
+            'content', jsonb_build_object(
+                'fullText', repeat(
+                    'Un article UAT complet relie les tests de navigation au serveur canonique. ',
+                    2
+                ),
+                'simpleText', 'Cet article UAT vérifie simplement la lecture depuis le serveur.',
+                'grammar', jsonb_build_array(),
+                'vocabulary', jsonb_build_array()
             )
         )
     ),

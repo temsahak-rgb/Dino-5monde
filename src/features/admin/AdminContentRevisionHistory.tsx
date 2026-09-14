@@ -14,6 +14,7 @@ import {
 interface AdminContentRevisionHistoryProps {
     action: "idle" | "saving" | "publishing";
     loading: boolean;
+    publicationBlockedReason?: string;
     revisions: AdminContentRevisionRpcRow[];
     selectedRevision: number | null;
     onPublish: () => void;
@@ -23,6 +24,7 @@ interface AdminContentRevisionHistoryProps {
 function AdminContentRevisionHistory({
     action,
     loading,
+    publicationBlockedReason,
     revisions,
     selectedRevision,
     onPublish,
@@ -62,13 +64,22 @@ function AdminContentRevisionHistory({
 
             <Button
                 className="mt-3"
-                disabled={!selectedRevision || action !== "idle"}
+                disabled={
+                    !selectedRevision
+                    || action !== "idle"
+                    || Boolean(publicationBlockedReason)
+                }
                 onClick={onPublish}
             >
                 {action === "publishing"
                     ? "Publication…"
                     : `Publier la révision ${selectedRevision ?? ""}`}
             </Button>
+            {publicationBlockedReason ? (
+                <p className="mt-2 text-xs text-amber-800">
+                    {publicationBlockedReason}
+                </p>
+            ) : null}
         </div>
     );
 }

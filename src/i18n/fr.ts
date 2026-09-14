@@ -380,6 +380,7 @@ const frMessages = {
     "news.simpleText": "Texte simple",
     "news.simplifiedVersion": "Version simplifiée",
     "news.keyVocabulary": "Vocabulaire clé",
+    "news.viewVocabularyPack": "Voir le pack de vocabulaire",
     "news.grammarPoints": "Points de grammaire",
     "news.viewGrammarLesson": "Voir la leçon de grammaire",
     "news.grammarLevel": "⚠️ Ce point est pour le niveau {level}.",

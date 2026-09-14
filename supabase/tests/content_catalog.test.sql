@@ -57,7 +57,7 @@ select is(
             'UAT-A1-G-001',
             'uat-salutations',
             'uat-hotel',
-            'uat-news'
+            '2026-w38-uat-news'
         )
     ),
     4::bigint,
@@ -73,7 +73,7 @@ select results_eq(
             'UAT-A1-G-001',
             'uat-salutations',
             'uat-hotel',
-            'uat-news'
+            '2026-w38-uat-news'
         )
         group by content_type
         order by content_type
@@ -127,7 +127,7 @@ select is(
             'UAT-A1-G-001',
             'uat-salutations',
             'uat-hotel',
-            'uat-news'
+            '2026-w38-uat-news'
         )
     ),
     4::bigint,
@@ -170,7 +170,7 @@ select is(
             'UAT-A1-G-001',
             'uat-salutations',
             'uat-hotel',
-            'uat-news'
+            '2026-w38-uat-news'
         )
     ),
     4::bigint,
