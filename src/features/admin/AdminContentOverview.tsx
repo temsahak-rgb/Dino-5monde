@@ -16,7 +16,7 @@ import {
     Section
 } from "../../ui/components/Layout.js";
 
-interface GrammarImportPanelProps {
+interface ContentImportPanelProps {
     drafts: AdminContentDraft[] | null;
     pendingCount: number;
     progress: { completed: number; total: number };
@@ -26,6 +26,8 @@ interface GrammarImportPanelProps {
     onImport: () => void;
     onPublish: () => void;
     onPublishConfirmed: (value: boolean) => void;
+    contentLabel: string;
+    itemLabel: string;
 }
 
 function StatusCard({ icon, label, value }: {
@@ -42,7 +44,7 @@ function StatusCard({ icon, label, value }: {
     );
 }
 
-function GrammarImportPanel({
+function ContentImportPanel({
     drafts,
     pendingCount,
     progress,
@@ -51,13 +53,15 @@ function GrammarImportPanel({
     onAnalyse,
     onImport,
     onPublish,
-    onPublishConfirmed
-}: GrammarImportPanelProps) {
+    onPublishConfirmed,
+    contentLabel,
+    itemLabel
+}: ContentImportPanelProps) {
     return (
         <Section>
             <details className="rounded-card border border-line bg-surface p-4">
                 <summary className="cursor-pointer font-bold text-ink">
-                    Import initial de la Grammaire
+                    Import initial · {contentLabel}
                 </summary>
                 <div className="mt-4 space-y-4">
                     <p className="text-sm leading-6 text-muted">
@@ -65,7 +69,7 @@ function GrammarImportPanel({
                     </p>
                     <div className="flex flex-wrap gap-2">
                         <Button variant="secondary" disabled={status !== "idle"} onClick={onAnalyse}>
-                            {status === "analysing" ? "Analyse…" : "Analyser l’export Grammaire"}
+                            {status === "analysing" ? "Analyse…" : `Analyser l’export ${contentLabel}`}
                         </Button>
                         <Button disabled={!drafts || status !== "idle"} onClick={onImport}>
                             Importer en brouillons
@@ -73,7 +77,7 @@ function GrammarImportPanel({
                     </div>
                     {drafts ? (
                         <Alert variant="info">
-                            {drafts.length} leçons valides prêtes à être importées.
+                            {drafts.length} {itemLabel}(s) valides prêt(es) à être importé(es).
                         </Alert>
                     ) : null}
                     {progress.total > 0 ? (
@@ -92,7 +96,7 @@ function GrammarImportPanel({
                                 checked={publishConfirmed}
                                 onChange={event => onPublishConfirmed(event.target.checked)}
                             />
-                            J’ai vérifié les brouillons et je souhaite publier les dernières révisions Grammaire.
+                            J’ai vérifié les brouillons et je souhaite publier les dernières révisions {contentLabel}.
                         </label>
                         <Button
                             className="mt-3"
@@ -109,6 +113,6 @@ function GrammarImportPanel({
 }
 
 export {
-    GrammarImportPanel,
+    ContentImportPanel,
     StatusCard
 };

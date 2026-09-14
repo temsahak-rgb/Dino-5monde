@@ -25,9 +25,11 @@ import {
 } from "./AdminContentInventory.js";
 
 import {
-    GrammarImportPanel,
+    ContentImportPanel,
     StatusCard
 } from "./AdminContentOverview.js";
+
+import { loadVocabularyExportDrafts } from "./vocabularyExport.js";
 
 import type {
     AdminContentDraft
@@ -88,12 +90,16 @@ function AdminContentWorkspace({
     } | null>(null);
     const [grammarDrafts, setGrammarDrafts] =
         useState<AdminContentDraft[] | null>(null);
+    const [vocabularyDrafts, setVocabularyDrafts] = useState<AdminContentDraft[] | null>(null);
     const [importProgress, setImportProgress] =
         useState({ completed: 0, total: 0 });
     const [importStatus, setImportStatus] =
         useState<"idle" | "analysing" | "importing" | "publishing">("idle");
     const [publishConfirmed, setPublishConfirmed] =
         useState(false);
+    const [vocabularyProgress, setVocabularyProgress] = useState({ completed: 0, total: 0 });
+    const [vocabularyStatus, setVocabularyStatus] = useState<"idle" | "analysing" | "importing" | "publishing">("idle");
+    const [vocabularyPublishConfirmed, setVocabularyPublishConfirmed] = useState(false);
     const [message, setMessage] =
         useState<string | null>(null);
     const [error, setError] =
@@ -188,6 +194,7 @@ function AdminContentWorkspace({
             && item.latest_revision_number
                 !== item.published_revision_number
     ).length;
+    const pendingVocabularyCount = items.filter(item => item.content_type === "vocabulary_pack" && item.latest_revision_number !== item.published_revision_number).length;
 
     function refresh(identity?: {
         contentKey: string;
@@ -265,6 +272,31 @@ function AdminContentWorkspace({
         }
     }
 
+    async function analyseVocabularyExport(): Promise<void> {
+        setVocabularyStatus("analysing"); setError(null); setMessage(null);
+        try { const drafts = await loadVocabularyExportDrafts(); setVocabularyDrafts(drafts); setVocabularyProgress({ completed: 0, total: drafts.length }); }
+        catch (reason) { setError(getErrorMessage(reason)); }
+        finally { setVocabularyStatus("idle"); }
+    }
+
+    async function importVocabulary(): Promise<void> {
+        if (!vocabularyDrafts) return;
+        setVocabularyStatus("importing"); setError(null); setMessage(null);
+        try {
+            await importAdminContentDrafts(client, vocabularyDrafts, (completed, total) => setVocabularyProgress({ completed, total }));
+            setMessage(`${vocabularyDrafts.length} packs Vocabulaire importés en brouillons.`); refresh();
+        } catch (reason) { setError(getErrorMessage(reason)); }
+        finally { setVocabularyStatus("idle"); }
+    }
+
+    async function publishVocabulary(): Promise<void> {
+        if (!vocabularyPublishConfirmed) return;
+        setVocabularyStatus("publishing"); setError(null); setMessage(null);
+        try { const count = await publishLatestAdminContentBatch(client, "vocabulary_pack"); setMessage(`${count} révision(s) Vocabulaire publiée(s).`); setVocabularyPublishConfirmed(false); refresh(); }
+        catch (reason) { setError(getErrorMessage(reason)); }
+        finally { setVocabularyStatus("idle"); }
+    }
+
     return (
         <Page>
             <PageHeader
@@ -316,7 +348,10 @@ function AdminContentWorkspace({
                 </Alert>
             ) : null}
 
-            <GrammarImportPanel
+            <div className="grid gap-4 lg:grid-cols-2">
+            <ContentImportPanel
+                contentLabel="Grammaire"
+                itemLabel="leçon"
                 drafts={grammarDrafts}
                 pendingCount={pendingGrammarCount}
                 progress={importProgress}
@@ -327,6 +362,20 @@ function AdminContentWorkspace({
                 onPublish={() => void publishGrammar()}
                 onPublishConfirmed={setPublishConfirmed}
             />
+            <ContentImportPanel
+                contentLabel="Vocabulaire"
+                itemLabel="pack"
+                drafts={vocabularyDrafts}
+                pendingCount={pendingVocabularyCount}
+                progress={vocabularyProgress}
+                publishConfirmed={vocabularyPublishConfirmed}
+                status={vocabularyStatus}
+                onAnalyse={() => void analyseVocabularyExport()}
+                onImport={() => void importVocabulary()}
+                onPublish={() => void publishVocabulary()}
+                onPublishConfirmed={setVocabularyPublishConfirmed}
+            />
+            </div>
 
             <div className="grid items-start gap-6 xl:grid-cols-[minmax(0,1.05fr)_minmax(24rem,0.95fr)]">
                 <Section className="min-w-0">
