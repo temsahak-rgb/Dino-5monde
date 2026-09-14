@@ -7,10 +7,16 @@ import {
 } from "react-router";
 
 import {
+    createGrammarLessonPath,
+    createVocabularyPackPath
+} from "../../core/contentRoutes.js";
+
+import {
     useI18n
 } from "../../i18n/I18nProvider.js";
 
 import type {
+    Language,
     NewsArticle as NewsArticleData,
     NewsGrammarItem,
     NewsSource,
@@ -39,6 +45,12 @@ interface NewsArticleProps {
 
     hasHiddenGrammar:
         boolean;
+
+    preview?:
+        boolean;
+
+    previewLanguage?:
+        Language;
 }
 
 type NewsTextMode =
@@ -55,13 +67,19 @@ function NewsArticle({
     article,
     vocabulary,
     grammar,
-    hasHiddenGrammar
+    hasHiddenGrammar,
+    preview = false,
+    previewLanguage
 }: NewsArticleProps) {
     const {
+        language,
         localizedTextClass,
-        localizedValue,
         t
     } = useI18n();
+
+    const activeLanguage =
+        previewLanguage
+        ?? language;
 
     const [
         textMode,
@@ -71,18 +89,19 @@ function NewsArticle({
             "full"
         );
 
-    const title =
-        localizedValue(
-            article.title,
-            article.title_fa,
-            article.id
-        );
+    const title = activeLanguage === "fa"
+        ? article.title_fa || article.title || article.id
+        : article.title || article.title_fa || article.id;
 
-    const subtitle =
-        localizedValue(
-            article.subtitle,
-            article.subtitle_fa
-        );
+    const subtitle = activeLanguage === "fa"
+        ? article.subtitle_fa || article.subtitle
+        : article.subtitle || article.subtitle_fa;
+
+    const articleTextClass = previewLanguage
+        ? activeLanguage === "fa"
+            ? "persian-text text-right"
+            : "ltr-lock text-left"
+        : localizedTextClass();
 
     const image =
         resolveNewsImage(
@@ -96,21 +115,24 @@ function NewsArticle({
 
     return (
         <article
+            dir={activeLanguage === "fa" ? "rtl" : "ltr"}
             className="
                 mx-auto
                 w-full
                 max-w-[900px]
             "
         >
-            <BackButton
-                fallback="/journal"
-            >
-                ←
-                {" "}
-                {t(
-                    "common.back"
-                )}
-            </BackButton>
+            {!preview ? (
+                <BackButton
+                    fallback="/journal"
+                >
+                    ←
+                    {" "}
+                    {t(
+                        "common.back"
+                    )}
+                </BackButton>
+            ) : null}
 
             {/* -------------------------------------------------------------- */}
             {/* Hero                                                           */}
@@ -170,7 +192,7 @@ function NewsArticle({
                     leading-tight
                     text-ink
                     sm:text-3xl
-                    ${localizedTextClass()}
+                    ${articleTextClass}
                 `}
             >
                 {title}
@@ -183,7 +205,7 @@ function NewsArticle({
                         text-base
                         leading-7
                         text-neutral-600
-                        ${localizedTextClass()}
+                        ${articleTextClass}
                     `}
                 >
                     {subtitle}
@@ -473,62 +495,88 @@ function NewsVocabulary({
                     sm:grid-cols-2
                 "
             >
-                {vocabulary.map(
-                    (
-                        word,
-                        index
-                    ) => (
-                        <div
-                            key={
-                                `${word.fr}:${index}`
-                            }
-                            className="
-                                border-e-4
-                                border-dino-500
-                                bg-neutral-50
-                                px-4
-                                py-3
-                            "
-                        >
-                            <div
-                                className="
-                                    ltr-lock
-                                    flex
-                                    flex-wrap
-                                    items-center
-                                    gap-2
-                                    text-[15px]
-                                    font-bold
-                                    text-ink
-                                "
-                            >
-                                <span>
-                                    {word.fr}
-                                </span>
-
-                                {word.level ? (
-                                    <Badge>
-                                        {word.level}
-                                    </Badge>
-                                ) : null}
-                            </div>
-
-                            <p
-                                className="
-                                    persian-text
-                                    mt-1
-                                    text-sm
-                                    text-muted
-                                "
-                            >
-                                {word.fa}
-                            </p>
-                        </div>
-                    )
-                )}
+                {vocabulary.map((word, index) => (
+                    <NewsVocabularyCard
+                        key={`${word.fr}:${index}`}
+                        word={word}
+                    />
+                ))}
             </div>
         </details>
     );
+}
+
+function NewsVocabularyCard({
+    word
+}: {
+    word: NewsVocabularyItem;
+}) {
+    const { t } = useI18n();
+    const vocabularyPath = getVocabularyPackPath(word);
+    const content = (
+        <>
+            <div
+                className="
+                    ltr-lock
+                    flex
+                    flex-wrap
+                    items-center
+                    gap-2
+                    text-[15px]
+                    font-bold
+                    text-ink
+                "
+            >
+                <span>{word.fr}</span>
+
+                {word.level ? <Badge>{word.level}</Badge> : null}
+            </div>
+
+            <p className="persian-text mt-1 text-sm text-muted">
+                {word.fa}
+            </p>
+
+            {vocabularyPath ? (
+                <span className="mt-3 inline-block text-xs font-bold text-dino-700">
+                    🔗 {t("news.viewVocabularyPack")}
+                </span>
+            ) : null}
+        </>
+    );
+    const className = `
+        block
+        border-e-4
+        border-dino-500
+        bg-neutral-50
+        px-4
+        py-3
+        no-underline
+        ${vocabularyPath
+            ? "transition hover:bg-dino-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-dino-600"
+            : ""}
+    `;
+
+    return vocabularyPath ? (
+        <Link className={className} to={vocabularyPath}>
+            {content}
+        </Link>
+    ) : (
+        <div className={className}>{content}</div>
+    );
+}
+
+function getVocabularyPackPath(
+    word: NewsVocabularyItem
+): string | null {
+    if (!word.level || !word.packId) {
+        return null;
+    }
+
+    try {
+        return createVocabularyPackPath(word.level, word.packId);
+    } catch {
+        return null;
+    }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -622,6 +670,7 @@ function NewsGrammarItemView({
     const {
         t
     } = useI18n();
+    const grammarPath = getGrammarLessonPath(item);
 
     return (
         <div
@@ -709,13 +758,9 @@ function NewsGrammarItemView({
                 </p>
             ) : null}
 
-            {item.grammarId ? (
+            {grammarPath ? (
                 <Link
-                    to={
-                        `/grammar/lesson/${encodeURIComponent(
-                            item.grammarId
-                        )}`
-                    }
+                    to={grammarPath}
                     className="
                         mt-4
                         inline-block
@@ -756,6 +801,20 @@ function NewsGrammarItemView({
             ) : null}
         </div>
     );
+}
+
+function getGrammarLessonPath(
+    item: NewsGrammarItem
+): string | null {
+    if (!item.grammarId) {
+        return null;
+    }
+
+    try {
+        return createGrammarLessonPath(item.grammarId);
+    } catch {
+        return null;
+    }
 }
 
 /* -------------------------------------------------------------------------- */

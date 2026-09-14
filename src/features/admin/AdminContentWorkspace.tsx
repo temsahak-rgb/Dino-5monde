@@ -350,6 +350,7 @@ function AdminContentWorkspace({
                 </Section>
 
                 <AdminContentEditor
+                    availableItems={items}
                     client={client}
                     item={selectedItem}
                     key={selectedItem

@@ -380,6 +380,7 @@ const faMessages: Record<TranslationKey, string> = {
     "news.simpleText": "متن ساده",
     "news.simplifiedVersion": "نسخه ساده‌شده",
     "news.keyVocabulary": "واژگان کلیدی",
+    "news.viewVocabularyPack": "مشاهده بسته واژگان",
     "news.grammarPoints": "نکات گرامری",
     "news.viewGrammarLesson": "مشاهده درس گرامر",
     "news.grammarLevel": "⚠️ این نکته برای سطح {level} است.",

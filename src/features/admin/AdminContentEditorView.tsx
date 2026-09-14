@@ -13,6 +13,16 @@ import {
 } from "./AdminContentRevisionHistory.js";
 
 import {
+    AdminNewsEditorFields
+} from "./AdminNewsEditorFields.js";
+
+import {
+    readAdminNewsEditor,
+    updateAdminNewsEditor,
+    validateAdminNewsEditor
+} from "./adminNewsEditor.js";
+
+import {
     createAdminContentEditorFromRevision,
     createAdminPayloadTemplate,
     createEmptyAdminContentEditor,
@@ -56,6 +66,7 @@ import {
 } from "../../ui/components/Layout.js";
 
 interface AdminContentEditorProps {
+    availableItems: readonly AdminContentItemRpcRow[];
     client: DinoBackendClient;
     item: AdminContentItemRpcRow | null;
     onChanged: (identity?: {
@@ -75,6 +86,7 @@ const editorContentTypes: Array<{
 ];
 
 function AdminContentEditor({
+    availableItems,
     client,
     item,
     onChanged
@@ -97,6 +109,30 @@ function AdminContentEditor({
         useState<string | null>(null);
     const [error, setError] =
         useState<string | null>(null);
+    const [dirty, setDirty] =
+        useState(false);
+
+    const setDraftValue: Dispatch<
+        SetStateAction<AdminContentEditorValue>
+    > = nextValue => {
+        setDirty(true);
+        setValue(nextValue);
+    };
+
+    const newsIssues = value.contentType === "news_article"
+        ? validateAdminNewsEditor(
+            readAdminNewsEditor(value),
+            availableItems
+        )
+        : [];
+    const newsErrors = newsIssues.filter(
+        issue => issue.severity === "error"
+    );
+    const publicationBlockedReason = dirty
+        ? "Enregistrez vos modifications en brouillon avant de publier."
+        : newsErrors.length > 0
+            ? `${newsErrors.length} erreur(s) éditoriale(s) bloquent la publication.`
+            : undefined;
 
     useEffect(
         () => {
@@ -114,6 +150,7 @@ function AdminContentEditor({
 
             if (!item) {
                 setValue(createEmptyAdminContentEditor());
+                setDirty(false);
                 setRevisions([]);
                 setSelectedRevision(null);
                 return;
@@ -145,6 +182,7 @@ function AdminContentEditor({
                                 loaded[0]
                             )
                         );
+                        setDirty(false);
                     }
                 },
                 reason => {
@@ -249,11 +287,12 @@ function AdminContentEditor({
                 <div className="grid gap-3 sm:grid-cols-2">
                     <EditorField label="Type">
                         <Select
+                            aria-label="Type de contenu"
                             disabled={Boolean(item)}
                             value={value.contentType}
                             onChange={event => {
                                 updateEditorField(
-                                    setValue,
+                                    setDraftValue,
                                     "contentType",
                                     event.target.value as CanonicalContentType
                                 );
@@ -273,90 +312,47 @@ function AdminContentEditor({
                             disabled={Boolean(item)}
                             required
                             value={value.contentKey}
-                            onChange={changeEditor("contentKey", setValue)}
+                            onChange={changeEditor("contentKey", setDraftValue)}
                         />
                     </EditorField>
                 </div>
 
-                <EditorField label="Titre français">
-                    <Input
-                        required
-                        value={value.titleFr}
-                        onChange={changeEditor("titleFr", setValue)}
+                {value.contentType === "news_article" ? (
+                    <AdminNewsEditorFields
+                        availableItems={availableItems}
+                        value={value}
+                        onChange={setDraftValue}
                     />
-                </EditorField>
-
-                <div className="grid gap-3 sm:grid-cols-2">
-                    <EditorField label="Niveau">
-                        <Input
-                            value={value.level}
-                            onChange={changeEditor("level", setValue)}
-                        />
-                    </EditorField>
-
-                    <EditorField label="Version du schéma">
-                        <Input
-                            min="1"
-                            required
-                            type="number"
-                            value={value.schemaVersion}
-                            onChange={changeEditor("schemaVersion", setValue)}
-                        />
-                    </EditorField>
-                </div>
+                ) : (
+                    <GenericContentFields
+                        value={value}
+                        setValue={setDraftValue}
+                    />
+                )}
 
                 <details>
                     <summary className="cursor-pointer text-sm font-bold text-dino-700">
-                        Métadonnées avancées
+                        Paramètres techniques
                     </summary>
-                    <div className="mt-3 grid gap-3">
-                        <EditorField label="Titre persan">
+                    <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                        <EditorField label="Version du schéma">
                             <Input
-                                dir="rtl"
-                                value={value.titleFa}
-                                onChange={changeEditor("titleFa", setValue)}
+                                min="1"
+                                required
+                                type="number"
+                                value={value.schemaVersion}
+                                onChange={changeEditor("schemaVersion", setDraftValue)}
                             />
                         </EditorField>
                         <EditorField label="Provenance">
                             <Input
                                 className="font-mono"
                                 value={value.sourcePath}
-                                onChange={changeEditor("sourcePath", setValue)}
+                                onChange={changeEditor("sourcePath", setDraftValue)}
                             />
                         </EditorField>
                     </div>
                 </details>
-
-                <div>
-                    <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
-                        <label
-                            className="text-sm font-bold text-ink"
-                            htmlFor="admin-payload"
-                        >
-                            Payload JSON
-                        </label>
-                        <Button
-                            variant="ghost"
-                            onClick={() => {
-                                setValue(current => ({
-                                    ...current,
-                                    payloadText:
-                                        createAdminPayloadTemplate(current)
-                                }));
-                            }}
-                        >
-                            Générer un modèle
-                        </Button>
-                    </div>
-                    <Textarea
-                        id="admin-payload"
-                        className="min-h-80 resize-y font-mono text-xs leading-5"
-                        required
-                        spellCheck={false}
-                        value={value.payloadText}
-                        onChange={changeEditor("payloadText", setValue)}
-                    />
-                </div>
 
                 <Button
                     fullWidth
@@ -373,6 +369,7 @@ function AdminContentEditor({
                 <AdminContentRevisionHistory
                     action={action}
                     loading={loading}
+                    publicationBlockedReason={publicationBlockedReason}
                     revisions={revisions}
                     selectedRevision={selectedRevision}
                     onPublish={() => void publishRevision()}
@@ -384,10 +381,72 @@ function AdminContentEditor({
                                 revision
                             )
                         );
+                        setDirty(false);
                     }}
                 />
             ) : null}
         </Section>
+    );
+}
+
+function GenericContentFields({
+    setValue,
+    value
+}: {
+    setValue: Dispatch<SetStateAction<AdminContentEditorValue>>;
+    value: AdminContentEditorValue;
+}) {
+    return (
+        <>
+            <EditorField label="Titre français">
+                <Input
+                    required
+                    value={value.titleFr}
+                    onChange={changeEditor("titleFr", setValue)}
+                />
+            </EditorField>
+
+            <div className="grid gap-3 sm:grid-cols-2">
+                <EditorField label="Niveau">
+                    <Input
+                        value={value.level}
+                        onChange={changeEditor("level", setValue)}
+                    />
+                </EditorField>
+                <EditorField label="Titre persan">
+                    <Input
+                        dir="rtl"
+                        value={value.titleFa}
+                        onChange={changeEditor("titleFa", setValue)}
+                    />
+                </EditorField>
+            </div>
+
+            <div>
+                <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
+                    <label className="text-sm font-bold text-ink" htmlFor="admin-payload">
+                        Payload JSON
+                    </label>
+                    <Button
+                        variant="ghost"
+                        onClick={() => setValue(current => ({
+                            ...current,
+                            payloadText: createAdminPayloadTemplate(current)
+                        }))}
+                    >
+                        Générer un modèle
+                    </Button>
+                </div>
+                <Textarea
+                    id="admin-payload"
+                    className="min-h-80 resize-y font-mono text-xs leading-5"
+                    required
+                    spellCheck={false}
+                    value={value.payloadText}
+                    onChange={changeEditor("payloadText", setValue)}
+                />
+            </div>
+        </>
     );
 }
 
@@ -428,10 +487,41 @@ function updateEditorField(
     field: keyof AdminContentEditorValue,
     value: string
 ): void {
-    setValue(current => ({
-        ...current,
-        [field]: value
-    }));
+    setValue(current => {
+        const updated = {
+            ...current,
+            [field]: value
+        };
+
+        if (
+            field === "contentType"
+            && value !== "news_article"
+        ) {
+            return {
+                ...updated,
+                payloadText: createAdminPayloadTemplate(updated)
+            };
+        }
+
+        if (
+            updated.contentType === "news_article"
+            && (
+                field === "contentType"
+                || field === "contentKey"
+            )
+        ) {
+            const news = readAdminNewsEditor(updated);
+            return updateAdminNewsEditor(
+                updated,
+                {
+                    ...news,
+                    contentKey: updated.contentKey
+                }
+            );
+        }
+
+        return updated;
+    });
 }
 
 function getErrorMessage(reason: unknown): string {

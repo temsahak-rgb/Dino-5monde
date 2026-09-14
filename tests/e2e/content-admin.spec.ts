@@ -99,6 +99,8 @@ async function installAdminBackendMock(
     let latestRevision = 2;
     let publishedRevision = 1;
     let latestTitle = "Le présent";
+    let newsItem: Record<string, unknown> | null = null;
+    const newsRevisions: Array<Record<string, unknown>> = [];
     const revisions: Array<Record<string, unknown>> = [
         createRevision(2, false, latestTitle),
         createRevision(1, true, latestTitle)
@@ -149,19 +151,25 @@ async function installAdminBackendMock(
                         title_fa: null,
                         title_fr: latestTitle,
                         updated_at: now
-                    }],
+                    }, ...(newsItem ? [newsItem] : [])],
                     status: 200
                 });
                 return;
             }
 
             if (path === "/rest/v1/rpc/admin_get_content_revisions") {
+                const body = request.postDataJSON() as Record<string, unknown>;
+                const requestedRevisions = body.p_content_type === "news_article"
+                    ? newsRevisions
+                    : revisions;
                 await route.fulfill({
                     headers: jsonHeaders(),
-                    json: revisions.map(revision => ({
+                    json: requestedRevisions.map(revision => ({
                         ...revision,
                         published:
-                            revision.revision_number === publishedRevision
+                            body.p_content_type === "news_article"
+                                ? false
+                                : revision.revision_number === publishedRevision
                     })),
                     status: 200
                 });
@@ -171,6 +179,50 @@ async function installAdminBackendMock(
             if (path === "/rest/v1/rpc/admin_import_content_draft") {
                 const body = request.postDataJSON() as Record<string, unknown>;
                 state.draftBodies.push(body);
+
+                if (body.p_content_type === "news_article") {
+                    const revisionNumber = newsRevisions.length + 1;
+                    newsRevisions.unshift({
+                        created_at: now,
+                        created_by: adminId,
+                        level: body.p_level,
+                        payload: body.p_payload,
+                        published: false,
+                        revision_id: `33333333-3333-4333-8333-${String(revisionNumber).padStart(12, "0")}`,
+                        revision_number: revisionNumber,
+                        schema_version: body.p_schema_version,
+                        source_path: body.p_source_path,
+                        title_fa: body.p_title_fa,
+                        title_fr: body.p_title_fr
+                    });
+                    newsItem = {
+                        archived_at: null,
+                        content_key: body.p_content_key,
+                        content_type: "news_article",
+                        item_id: "33333333-3333-4333-8333-333333333333",
+                        latest_revision_number: revisionNumber,
+                        level: body.p_level,
+                        published_at: null,
+                        published_revision_number: null,
+                        revision_count: revisionNumber,
+                        title_fa: body.p_title_fa,
+                        title_fr: body.p_title_fr,
+                        updated_at: now
+                    };
+                    await route.fulfill({
+                        headers: jsonHeaders(),
+                        json: [{
+                            content_hash: "d".repeat(64),
+                            content_key: body.p_content_key,
+                            content_type: "news_article",
+                            published: false,
+                            revision_number: revisionNumber
+                        }],
+                        status: 200
+                    });
+                    return;
+                }
+
                 latestRevision += 1;
                 latestTitle = String(body.p_title_fr);
                 revisions.unshift({
@@ -327,6 +379,93 @@ test(
             viewport: document.documentElement.clientWidth
         }));
         expect(widths.content).toBeLessThanOrEqual(widths.viewport);
+        expect(backend.unexpectedRequests).toEqual([]);
+    }
+);
+
+test(
+    "admin creates, previews and explicitly publishes a structured News article",
+    async ({ page }) => {
+        await prepareAdminSession(page);
+        const backend = await installAdminBackendMock(page);
+
+        await page.goto("/admin/content");
+        await page.getByRole("button", { name: "+ Nouveau contenu" }).click();
+        await page.getByLabel("Type de contenu").selectOption("news_article");
+        await page.getByLabel("Identifiant stable").fill("2026-w40-nouvelle-culturelle");
+        await page.getByLabel("Titre français").fill("Une nouvelle culturelle");
+        await page.getByLabel("Titre persan").fill("یک خبر فرهنگی");
+        await page.getByLabel("Chapô français").fill("Un regard pédagogique sur la culture.");
+        await page.getByLabel("Chapô persan").fill("نگاهی آموزشی به فرهنگ");
+        await page.getByLabel("Niveau ou plage CECRL").fill("B1-C1");
+        await page.getByLabel("Date de publication").fill("2026-10-02");
+        await page.getByLabel("URL de l’image").fill(
+            "https://images.example.test/culture.jpg"
+        );
+        await page.getByLabel("Texte alternatif").fill(
+            "Une scène culturelle française"
+        );
+        await page.getByLabel("Texte complet").fill(
+            "Cette actualité culturelle présente un sujet vérifié et documenté pour les apprenants. ".repeat(2)
+        );
+        await page.getByLabel("Version simplifiée").fill(
+            "Cette actualité explique simplement un sujet culturel aux apprenants."
+        );
+        await page.getByRole("button", { name: "+ Ajouter une source" }).click();
+        await page.getByLabel("Titre de la source 1").fill("Source officielle");
+        await page.getByLabel("URL de la source 1").fill(
+            "https://source.example.test/culture"
+        );
+
+        await expect(page.getByText("0 erreur(s)")).toBeVisible();
+        await page.getByText("Aperçu réel de l’article").click();
+        await expect(page.getByRole("heading", {
+            name: "Une nouvelle culturelle"
+        })).toBeVisible();
+        await page.getByRole("button", { name: "فارسی" }).click();
+        await expect(page.getByRole("heading", {
+            name: "یک خبر فرهنگی"
+        })).toBeVisible();
+
+        await page.getByRole("button", {
+            name: "Enregistrer en brouillon"
+        }).click();
+        await expect(page.getByRole("heading", {
+            name: "Modifier 2026-w40-nouvelle-culturelle"
+        })).toBeVisible();
+
+        expect(backend.draftBodies).toHaveLength(1);
+        expect(backend.draftBodies[0]).toMatchObject({
+            p_content_key: "2026-w40-nouvelle-culturelle",
+            p_content_type: "news_article",
+            p_level: "B1-C1",
+            p_payload: {
+                catalog: {
+                    id: "2026-w40-nouvelle-culturelle",
+                    week: 40,
+                    year: 2026
+                },
+                document: {
+                    id: "2026-w40-nouvelle-culturelle",
+                    sources: [{
+                        title: "Source officielle",
+                        url: "https://source.example.test/culture"
+                    }]
+                }
+            },
+            p_title_fr: "Une nouvelle culturelle"
+        });
+        expect(backend.publicationBodies).toHaveLength(0);
+
+        await page.getByRole("button", {
+            name: "Publier la révision 1"
+        }).click();
+        await expect(page.getByText("Révision 1 publiée.")).toBeVisible();
+        expect(backend.publicationBodies).toEqual([{
+            p_content_key: "2026-w40-nouvelle-culturelle",
+            p_content_type: "news_article",
+            p_revision_number: 1
+        }]);
         expect(backend.unexpectedRequests).toEqual([]);
     }
 );
