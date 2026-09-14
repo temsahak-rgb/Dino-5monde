@@ -95,6 +95,48 @@ type PublishedContentCatalogRpcRow =
         catalog: Json;
     };
 
+type ContentAdminRow = {
+    granted_at: string;
+    granted_by: string | null;
+    user_id: string;
+};
+
+type AdminContentItemRpcRow = {
+    archived_at: string | null;
+    content_key: string;
+    content_type: CanonicalContentType;
+    item_id: string;
+    latest_revision_number: number;
+    level: string | null;
+    published_at: string | null;
+    published_revision_number: number | null;
+    revision_count: number;
+    title_fa: string | null;
+    title_fr: string;
+    updated_at: string;
+};
+
+type AdminContentRevisionRpcRow = {
+    created_at: string;
+    created_by: string | null;
+    level: string | null;
+    payload: Json;
+    published: boolean;
+    revision_id: string;
+    revision_number: number;
+    schema_version: number;
+    source_path: string | null;
+    title_fa: string | null;
+    title_fr: string;
+};
+
+type AdminPublishedContentRpcRow = {
+    content_key: string;
+    content_type: CanonicalContentType;
+    published_at: string;
+    revision_number: number;
+};
+
 type LearnerProfileRow = {
     assigned_saurus: string | null;
     avatar_key: string;
@@ -480,6 +522,12 @@ type ClaimLearningRewardRpcRow = {
 type Database = {
     public: {
         Tables: {
+            content_admins: {
+                Row: ContentAdminRow;
+                Insert: never;
+                Update: never;
+                Relationships: [];
+            };
             content_items: {
                 Row: ContentItemRow;
                 Insert: ContentItemInsert;
@@ -567,6 +615,46 @@ type Database = {
         };
         Views: Record<string, never>;
         Functions: {
+            admin_get_content_revisions: {
+                Args: {
+                    p_content_key: string;
+                    p_content_type: CanonicalContentType;
+                };
+                Returns: AdminContentRevisionRpcRow[];
+            };
+            admin_import_content_draft: {
+                Args: {
+                    p_content_key: string;
+                    p_content_type: CanonicalContentType;
+                    p_level: string | null;
+                    p_payload: Json;
+                    p_schema_version: number;
+                    p_source_path: string | null;
+                    p_title_fa: string | null;
+                    p_title_fr: string;
+                };
+                Returns: ImportContentRevisionRpcRow[];
+            };
+            admin_list_content_items: {
+                Args: Record<string, never>;
+                Returns: AdminContentItemRpcRow[];
+            };
+            admin_publish_content_revision: {
+                Args: {
+                    p_content_key: string;
+                    p_content_type: CanonicalContentType;
+                    p_revision_number: number;
+                };
+                Returns: AdminPublishedContentRpcRow[];
+            };
+            admin_publish_latest_content_batch: {
+                Args: {
+                    p_content_type: CanonicalContentType;
+                };
+                Returns: Array<{
+                    published_count: number;
+                }>;
+            };
             assign_learner_saurus: {
                 Args: {
                     p_answers: string[];
@@ -600,6 +688,12 @@ type Database = {
                     p_level?: string | null;
                 };
                 Returns: PublishedContentCatalogRpcRow[];
+            };
+            get_content_admin_status: {
+                Args: Record<string, never>;
+                Returns: Array<{
+                    is_admin: boolean;
+                }>;
             };
             import_content_revision: {
                 Args: {
@@ -671,12 +765,16 @@ type Database = {
 };
 
 export {
+    type AdminContentItemRpcRow,
+    type AdminContentRevisionRpcRow,
+    type AdminPublishedContentRpcRow,
     type CanonicalContentType,
     type ClaimLearningRewardRpcRow,
     type ContentItemRow,
     type ContentPublicationAction,
     type ContentPublicationEventRow,
     type ContentRevisionRow,
+    type ContentAdminRow,
     type Database,
     type Json,
     type LearnerActivityRewardRow,

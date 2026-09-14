@@ -34,6 +34,10 @@ import {
 } from "../pages/ArchivePage.js";
 
 import {
+    AdminContentPage
+} from "../pages/AdminContentPage.js";
+
+import {
     GrammarIndexPage
 } from "../pages/GrammarIndexPage.js";
 
@@ -143,6 +147,7 @@ import {
  *
  * /auth
  * /onboarding
+ * /admin/content
  *
  * Application routes:
  *
@@ -218,6 +223,14 @@ const router =
 
                     Component:
                         HomePage
+                },
+
+                {
+                    path:
+                        appRoutePatterns.adminContent,
+
+                    Component:
+                        AdminContentPage
                 },
 
                 {

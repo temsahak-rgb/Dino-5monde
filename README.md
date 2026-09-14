@@ -81,6 +81,8 @@ Chaque exercice terminé en Grammaire, Voyage ou Vocabulaire ajoute aussi un ré
 
 La boutique est disponible sur `/shop`. Elle utilise aujourd'hui uniquement des crédits virtuels : aucun paiement en argent réel n'est encore raccordé. Le catalogue pédagogique cible désormais Supabase comme source canonique : une identité stable pointe vers une révision JSONB immuable et chaque import ou publication est audité. Un contrat `ContentRepository` isole React de la source réelle. La Grammaire est le premier domaine raccordé : ses listes téléchargent uniquement les métadonnées publiées par `get_published_content_catalog`, puis la page d'une leçon demande son document et ses exercices par identifiant avec `get_published_content`. Les tables, les brouillons et la provenance d'import restent privés.
 
+L’atelier éditorial est disponible sur `/admin/content`. Il permet de rechercher les contenus du serveur, consulter leurs révisions, créer ou modifier un document JSON, importer l’export Grammaire en brouillons et publier une révision choisie. Enregistrer et publier sont deux actions séparées : aucune sauvegarde ne devient publique implicitement. Le tableau de bord affiche les contenus publiés, les brouillons en attente et la couverture de publication ; il reste utilisable sur mobile.
+
 La bascule reste volontairement progressive. Le corpus complet de `data/` n'est pas modifié : il sert d'export historique pour l'import initial et de repli explicite quand aucun backend n'est configuré. Dès qu'un backend est configuré, la Grammaire ne masque jamais une panne serveur par un retour silencieux au JSON : l'interface montre un état de chargement, une erreur réessayable ou une ressource introuvable. Voyage, Vocabulaire et Journal restent encore sur leurs lecteurs statiques et migreront derrière le même contrat, domaine par domaine. Docker ne charge jamais le corpus complet ; `supabase/seeds/uat-content.sql` contient seulement quatre fixtures réservées aux tests, une par famille de contenu.
 
 Le déploiement GitHub Pages injecte ces valeurs depuis les variables de dépôt `SUPABASE_URL` et `SUPABASE_PUBLISHABLE_KEY`. Le projet Supabase n’est donc jamais codé en dur : passer à l’environnement du client consiste à remplacer ces deux variables puis à rejouer les migrations versionnées.
@@ -98,15 +100,15 @@ npm run content:inventory
 
 `npm run backend:test` exécute notamment les contrôles SQL pgTAP de la boutique et du catalogue versionné. `npm run content:inventory` vérifie en lecture seule que les index et documents JSON forment un inventaire complet, unique et reproductible. `npm run backend:stop` arrête ensuite l’environnement local. Phone OTP reste volontairement désactivé tant qu’un fournisseur SMS payant et ses protections anti-abus ne sont pas configurés.
 
-L'import complet est une opération serveur explicite et idempotente :
+Le premier administrateur doit se connecter une fois, ouvrir `/admin/content`, puis copier l’identifiant de compte affiché sur l’écran d’accès refusé. Un propriétaire du projet l’ajoute ensuite à l’allowlist depuis le SQL Editor Supabase :
 
-```bash
-SUPABASE_URL=https://example.supabase.co \
-SUPABASE_SERVICE_ROLE_KEY=server-only-secret \
-npm run content:import
+```sql
+insert into public.content_admins (user_id)
+values ('UUID_DU_COMPTE')
+on conflict (user_id) do nothing;
 ```
 
-La clé `SUPABASE_SERVICE_ROLE_KEY` ne doit jamais être préfixée par `VITE_`, stockée dans Git ou envoyée au navigateur. Relancer l'import avec un document inchangé réutilise sa révision ; une modification crée une nouvelle révision et conserve l'ancienne.
+Après rechargement, le cycle normal est : **analyser l’export → importer en brouillons → relire → publier explicitement**. L’analyse et l’import ne modifient jamais les fichiers de `data/`. Le navigateur utilise uniquement la clé publique et les RPC vérifient l’allowlist avec l’identité authentifiée ; aucune clé `service_role` n’est nécessaire dans le panel. Le script `npm run content:import` reste un outil de maintenance hors navigateur, mais n’est plus le parcours éditorial normal. Une clé `SUPABASE_SERVICE_ROLE_KEY` ne doit jamais être préfixée par `VITE_`, stockée dans Git ou envoyée au navigateur.
 
 Le parcours de compte utilise une **connexion email sans mot de passe** : `/auth` envoie un lien sécurisé vers la destination demandée et sait aussi vérifier un OTP à 6 chiffres, puis `/profile` crée ou modifie le profil privé et sa préférence d’affichage `Saurus`. Sur le plan gratuit, le modèle d’email Supabase par défaut est conservé ; le modèle OTP bilingue prêt dans `supabase/templates/` sera activé après raccordement d’un SMTP dédié. L’expéditeur intégré ne dessert que les adresses autorisées de l’équipe : un SMTP dédié reste donc obligatoire avant l’ouverture aux apprenants.
 
