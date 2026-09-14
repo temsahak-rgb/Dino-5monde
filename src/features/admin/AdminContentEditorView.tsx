@@ -21,6 +21,10 @@ import {
 } from "./AdminNewsEditorFields.js";
 
 import {
+    AdminVocabularyEditorFields
+} from "./AdminVocabularyEditorFields.js";
+
+import {
     AdminEditorField
 } from "./AdminEditorField.js";
 
@@ -32,6 +36,17 @@ import {
 import {
     validateAdminGrammarEditor
 } from "./adminGrammarValidation.js";
+
+import {
+    readAdminVocabularyEditor,
+    updateAdminVocabularyEditor
+} from "./adminVocabularyEditor.js";
+
+import {
+    validateAdminVocabularyEditor
+} from "./adminVocabularyValidation.js";
+
+import { normalizeWord } from "./AdminVocabularyWords.js";
 
 import {
     readAdminNewsEditor,
@@ -154,12 +169,21 @@ function AdminContentEditor({
     const grammarErrors = grammarIssues.filter(
         issue => issue.severity === "error"
     );
+    const vocabularyIssues = value.contentType === "vocabulary_pack"
+        ? validateAdminVocabularyEditor(readAdminVocabularyEditor(value))
+        : [];
+    const vocabularyErrors = vocabularyIssues.filter(issue => issue.severity === "error");
     const publicationErrors = [
         ...newsErrors,
-        ...grammarErrors
+        ...grammarErrors,
+        ...vocabularyErrors
     ];
     const lockedGrammarSectionIds = useMemo(
         () => getPublishedGrammarSectionIds(item, revisions),
+        [item, revisions]
+    );
+    const lockedVocabularyWords = useMemo(
+        () => getPublishedVocabularyWords(item, revisions),
         [item, revisions]
     );
     const publicationBlockedReason = dirty
@@ -364,6 +388,12 @@ function AdminContentEditor({
                         value={value}
                         onChange={setDraftValue}
                     />
+                ) : value.contentType === "vocabulary_pack" ? (
+                    <AdminVocabularyEditorFields
+                        lockedWords={lockedVocabularyWords}
+                        value={value}
+                        onChange={setDraftValue}
+                    />
                 ) : (
                     <GenericContentFields
                         value={value}
@@ -560,6 +590,17 @@ function updateEditorField(
             );
         }
 
+        if (
+            updated.contentType === "vocabulary_pack"
+            && (field === "contentType" || field === "contentKey")
+        ) {
+            const vocabulary = readAdminVocabularyEditor(updated);
+            return updateAdminVocabularyEditor(updated, {
+                ...vocabulary,
+                contentKey: updated.contentKey
+            });
+        }
+
         return updated;
     });
 }
@@ -596,6 +637,17 @@ function getPublishedGrammarSectionIds(
         ...grammar.lessons.map(section => section.id),
         ...grammar.exercises.map(section => section.id)
     ].filter(Boolean));
+}
+
+function getPublishedVocabularyWords(
+    item: AdminContentItemRpcRow | null,
+    revisions: readonly AdminContentRevisionRpcRow[]
+): ReadonlySet<string> {
+    if (item?.content_type !== "vocabulary_pack" || item.published_revision_number === null) return new Set();
+    const revision = revisions.find(candidate => candidate.revision_number === item.published_revision_number);
+    if (!revision) return new Set();
+    const vocabulary = readAdminVocabularyEditor(createAdminContentEditorFromRevision(item, revision));
+    return new Set(vocabulary.words.map(word => normalizeWord(word.fr)).filter(Boolean));
 }
 
 export {

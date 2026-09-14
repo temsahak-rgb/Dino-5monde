@@ -138,6 +138,29 @@ function createAdminPayloadTemplate(
         );
     }
 
+    if (value.contentType === "vocabulary_pack") {
+        Object.assign(catalog, {
+            icon: "📚",
+            title_fa: value.titleFa.trim() || undefined,
+            words: 1
+        });
+        delete document.sections;
+        Object.assign(document, {
+            icon: "📚",
+            title_fa: value.titleFa.trim() || undefined,
+            words: [{
+                difficulty: 1,
+                emoji: "🦕",
+                fa: "",
+                fr: ""
+            }],
+            quiz: {
+                displayCount: 1,
+                questions: []
+            }
+        });
+    }
+
     return JSON.stringify(
         {
             catalog,
