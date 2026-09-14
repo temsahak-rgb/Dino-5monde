@@ -160,7 +160,7 @@ test(
 );
 
 test(
-    "local backend keeps corpus seeding and paid phone OTP disabled",
+    "local backend seeds only reduced UAT content and keeps paid phone OTP disabled",
     async () => {
         const configuration =
             await readFile(
@@ -173,7 +173,11 @@ test(
 
         assert.match(
             configuration,
-            /\[db\.seed\]\s+enabled = false/u
+            /\[db\.seed\]\s+enabled = true\s+sql_paths = \["\.\/seeds\/uat-content\.sql"\]/u
+        );
+        assert.doesNotMatch(
+            configuration,
+            /sql_paths[^\n]*data\//u
         );
         assert.match(
             configuration,
@@ -186,6 +190,132 @@ test(
         assert.doesNotMatch(
             configuration,
             /service_role|secret_key/u
+        );
+    }
+);
+
+test(
+    "canonical content is versioned, server-owned and exposed through a safe projection",
+    async () => {
+        const migration = await readFile(
+            resolve(
+                root,
+                "supabase/migrations/20260914120000_create_canonical_content_catalog.sql"
+            ),
+            "utf8"
+        );
+
+        for (
+            const table
+            of [
+                "content_items",
+                "content_revisions",
+                "content_publication_events"
+            ]
+        ) {
+            assert.match(
+                migration,
+                new RegExp(
+                    `create table public\\.${table}`,
+                    "u"
+                )
+            );
+            assert.match(
+                migration,
+                new RegExp(
+                    `alter table public\\.${table}\\s+force row level security`,
+                    "u"
+                )
+            );
+            assert.match(
+                migration,
+                new RegExp(
+                    `revoke all on table public\\.${table}\\s+from public, anon, authenticated`,
+                    "u"
+                )
+            );
+        }
+
+        assert.match(
+            migration,
+            /foreign key \(published_revision_id, id\)\s+references public\.content_revisions \(id, content_item_id\)/u
+        );
+        assert.match(
+            migration,
+            /create trigger content_revisions_append_only\s+before update or delete/u
+        );
+        assert.match(
+            migration,
+            /create trigger content_publication_events_append_only\s+before update or delete/u
+        );
+        assert.match(
+            migration,
+            /create function public\.import_content_revision\([\s\S]*security definer\s+set search_path = ''/u
+        );
+        assert.match(
+            migration,
+            /extensions\.digest\([\s\S]*jsonb_build_object\([\s\S]*'payload', p_payload/u
+        );
+        assert.match(
+            migration,
+            /grant execute on function public\.import_content_revision\([\s\S]*\)\s+to service_role/u
+        );
+        assert.match(
+            migration,
+            /grant execute on function public\.get_published_content\(text, text\)\s+to anon, authenticated, service_role/u
+        );
+        assert.doesNotMatch(
+            migration,
+            /grant (?:select|insert|update|delete) on (?:table )?public\.content_(?:items|revisions|publication_events)/u
+        );
+    }
+);
+
+test(
+    "the local UAT seed is deliberately small and covers every content family",
+    async () => {
+        const seed = await readFile(
+            resolve(
+                root,
+                "supabase/seeds/uat-content.sql"
+            ),
+            "utf8"
+        );
+
+        assert.equal(
+            [
+                ...seed.matchAll(
+                    /public\.import_content_revision\(/gu
+                )
+            ].length,
+            4
+        );
+
+        for (
+            const contentType
+            of [
+                "grammar_lesson",
+                "vocabulary_pack",
+                "travel_lesson",
+                "news_article"
+            ]
+        ) {
+            assert.match(
+                seed,
+                new RegExp(
+                    `'${contentType}'`,
+                    "u"
+                )
+            );
+        }
+
+        assert.match(
+            seed,
+            /UAT-A1-G-001/u
+        );
+        assert.doesNotMatch(
+            seed,
+            /data\//u
         );
     }
 );

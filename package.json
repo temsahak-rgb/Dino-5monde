@@ -24,6 +24,8 @@
     "backend:reset": "supabase db reset",
     "backend:test": "supabase test db",
     "backend:types": "supabase gen types typescript --local --schema public > src/services/backend/database.types.ts",
+    "content:inventory": "tsx tools/import-content-catalog.ts",
+    "content:import": "tsx tools/import-content-catalog.ts --apply",
     "corpus:report": "tsx tools/build-corpus-report.ts",
     "features:report": "tsx tools/build-feature-report.ts --output reports/feature-progress.json --markdown reports/feature-progress.md",
     "vigie:report": "tsx tools/build-project-vigie.ts",
