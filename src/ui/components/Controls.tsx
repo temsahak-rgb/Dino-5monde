@@ -1,7 +1,10 @@
 import {
     type ButtonHTMLAttributes,
     type HTMLAttributes,
-    type ReactNode
+    type InputHTMLAttributes,
+    type ReactNode,
+    type SelectHTMLAttributes,
+    type TextareaHTMLAttributes
 } from "react";
 
 import {
@@ -54,6 +57,80 @@ interface ProgressBarProps {
     max?: number;
     label?: string;
     showValue?: boolean;
+}
+
+interface InputProps
+    extends InputHTMLAttributes<HTMLInputElement> {}
+
+interface SelectProps
+    extends SelectHTMLAttributes<HTMLSelectElement> {
+    children: ReactNode;
+}
+
+interface TextareaProps
+    extends TextareaHTMLAttributes<HTMLTextAreaElement> {}
+
+const fieldClassName = `
+    min-h-11
+    w-full
+    rounded-control
+    border
+    border-line
+    bg-surface
+    px-3
+    py-2
+    text-sm
+    text-ink
+    outline-none
+    transition
+    placeholder:text-muted
+    focus:border-dino-500
+    focus:ring-2
+    focus:ring-dino-100
+    disabled:cursor-not-allowed
+    disabled:opacity-60
+`;
+
+/** Shared single-line form field. */
+function Input({
+    className = "",
+    ...props
+}: InputProps) {
+    return (
+        <input
+            className={`${fieldClassName} ${className}`}
+            {...props}
+        />
+    );
+}
+
+/** Shared select field. */
+function Select({
+    children,
+    className = "",
+    ...props
+}: SelectProps) {
+    return (
+        <select
+            className={`${fieldClassName} ${className}`}
+            {...props}
+        >
+            {children}
+        </select>
+    );
+}
+
+/** Shared multiline form field. */
+function Textarea({
+    className = "",
+    ...props
+}: TextareaProps) {
+    return (
+        <textarea
+            className={`${fieldClassName} ${className}`}
+            {...props}
+        />
+    );
 }
 
 function getButtonVariantClass(
@@ -415,11 +492,17 @@ export {
     Badge,
     Button,
     Card,
+    Input,
+    Select,
+    Textarea,
     ProgressBar
 };
 
 export type {
     BadgeProps,
     ButtonProps,
-    CardProps
+    CardProps,
+    InputProps,
+    SelectProps,
+    TextareaProps
 };

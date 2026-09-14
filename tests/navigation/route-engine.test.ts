@@ -19,6 +19,7 @@ test(
             {
                 auth: "/auth",
                 onboarding: "/onboarding",
+                adminContent: "/admin/content",
                 home: "/",
                 profile: "/profile",
                 saurus: "/saurus",
@@ -69,6 +70,7 @@ test(
         const routes: AppRoute[] = [
             { name: "auth" },
             { name: "onboarding" },
+            { name: "admin-content" },
             { name: "home" },
             { name: "profile" },
             { name: "saurus" },
@@ -231,6 +233,10 @@ test(
         );
         assert.equal(
             getAppRouteSection({ name: "auth" }),
+            null
+        );
+        assert.equal(
+            getAppRouteSection({ name: "admin-content" }),
             null
         );
         assert.equal(

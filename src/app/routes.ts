@@ -8,6 +8,7 @@
 const appRoutePatterns = {
     auth: "/auth",
     onboarding: "/onboarding",
+    adminContent: "/admin/content",
     home: "/",
     profile: "/profile",
     saurus: "/saurus",
@@ -62,6 +63,7 @@ type PracticeGameKind =
 type AppRoute =
     | { name: "auth" }
     | { name: "onboarding" }
+    | { name: "admin-content" }
     | { name: "home" }
     | { name: "profile" }
     | { name: "saurus" }
@@ -123,6 +125,8 @@ function createAppPath(
             return appRoutePatterns.auth;
         case "onboarding":
             return appRoutePatterns.onboarding;
+        case "admin-content":
+            return appRoutePatterns.adminContent;
         case "home":
             return appRoutePatterns.home;
         case "profile":
@@ -223,6 +227,14 @@ function matchAppPath(
             case "journal":
                 return { name: "journal-index" };
         }
+    }
+
+    if (
+        segments.length === 2
+        && segments[0] === "admin"
+        && segments[1] === "content"
+    ) {
+        return { name: "admin-content" };
     }
 
     if (
