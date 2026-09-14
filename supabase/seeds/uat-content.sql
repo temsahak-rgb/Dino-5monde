@@ -4,32 +4,46 @@
 select *
 from public.import_content_revision(
     'grammar_lesson',
-    'UAT-A1-G-001',
-    1,
+    'A1-G-998',
+    2,
     'A1',
     'Se présenter simplement',
     'معرفی ساده خود',
     jsonb_build_object(
         'catalog', jsonb_build_object(
-            'id', 'UAT-A1-G-001',
-            'title', 'Se présenter simplement',
-            'level', 'A1'
-        ),
-        'document', jsonb_build_object(
-            'id', 'UAT-A1-G-001',
+            'id', 'A1-G-998',
             'title', 'Se présenter simplement',
             'title_fa', 'معرفی ساده خود',
             'level', 'A1',
+            'module', 'UAT',
+            'category', 'base',
+            'icon', '🧪',
+            'estimatedTime', 5,
+            'importance', 1,
+            'lessons', 1,
+            'exercises', 0,
+            'recommended', false,
+            'prerequisites', jsonb_build_array()
+        ),
+        'document', jsonb_build_object(
+            'id', 'A1-G-998',
+            'title', 'Se présenter simplement',
+            'title_fa', 'معرفی ساده خود',
+            'level', 'A1',
+            'icon', '🧪',
+            'estimatedTime', 5,
             'sections', jsonb_build_array(
                 jsonb_build_object(
-                    'id', 'uat-grammar-introduction',
+                    'id', 'A1-G-998-1',
+                    'type', 'lesson',
                     'title', 'Je suis…',
                     'content', 'Une phrase minimale pour valider le rendu.'
                 )
             )
-        )
+        ),
+        'exerciseSections', jsonb_build_array()
     ),
-    'uat/grammar/UAT-A1-G-001.json',
+    'uat/grammar/A1-G-998.json',
     true
 );
 

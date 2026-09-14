@@ -9,8 +9,8 @@ import {
 } from "../../ui/components/Controls.js";
 
 import {
-    NewsField
-} from "./AdminNewsCoreFields.js";
+    AdminEditorField
+} from "./AdminEditorField.js";
 
 interface AdminNewsSourcesProps {
     value: AdminNewsEditorValue;
@@ -48,21 +48,21 @@ function AdminNewsSources({
                         key={`source:${index}`}
                     >
                         <div className="grid gap-3 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
-                            <NewsField label={`Source ${index + 1}`}>
+                            <AdminEditorField label={`Source ${index + 1}`}>
                                 <Input
                                     aria-label={`Titre de la source ${index + 1}`}
                                     value={source.title}
                                     onChange={event => updateSource(index, "title", event.target.value)}
                                 />
-                            </NewsField>
-                            <NewsField label="URL HTTPS">
+                            </AdminEditorField>
+                            <AdminEditorField label="URL HTTPS">
                                 <Input
                                     aria-label={`URL de la source ${index + 1}`}
                                     type="url"
                                     value={source.url}
                                     onChange={event => updateSource(index, "url", event.target.value)}
                                 />
-                            </NewsField>
+                            </AdminEditorField>
                             <Button
                                 aria-label={`Supprimer la source ${index + 1}`}
                                 variant="ghost"

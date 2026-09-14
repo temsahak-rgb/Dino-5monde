@@ -140,7 +140,7 @@ async function installAdminBackendMock(
                     headers: jsonHeaders(),
                     json: [{
                         archived_at: null,
-                        content_key: "A1-G-ADMIN-001",
+                        content_key: "A1-G-991",
                         content_type: "grammar_lesson",
                         item_id: "11111111-1111-4111-8111-111111111111",
                         latest_revision_number: latestRevision,
@@ -237,7 +237,7 @@ async function installAdminBackendMock(
                     headers: jsonHeaders(),
                     json: [{
                         content_hash: "c".repeat(64),
-                        content_key: "A1-G-ADMIN-001",
+                        content_key: "A1-G-991",
                         content_type: "grammar_lesson",
                         published: false,
                         revision_number: latestRevision
@@ -297,13 +297,34 @@ function createRevision(
         level: "A1",
         payload: {
             catalog: {
-                id: "A1-G-ADMIN-001",
-                title
+                category: "base",
+                estimatedTime: 10,
+                exercises: 0,
+                icon: "📘",
+                id: "A1-G-991",
+                importance: 1,
+                lessons: 1,
+                level: "A1",
+                module: "Administration",
+                prerequisites: [],
+                recommended: false,
+                title,
+                title_fa: "زمان حال"
             },
             document: {
-                id: "A1-G-ADMIN-001",
-                sections: [],
-                title
+                estimatedTime: 10,
+                icon: "📖",
+                id: "A1-G-991",
+                level: "A1",
+                sections: [{
+                    content: "Le présent permet de parler de ce qui se passe maintenant.",
+                    examples: [{ fr: "Je parle français." }],
+                    id: "A1-G-991-1",
+                    title: "Former le présent",
+                    type: "lesson"
+                }],
+                title,
+                title_fa: "زمان حال"
             },
             exerciseSections: []
         },
@@ -344,10 +365,36 @@ test(
         await page.getByPlaceholder("Titre ou identifiant…").fill("présent");
         await page.getByRole("button", { name: /Le présent/u }).click();
         await expect(page.getByRole("heading", {
-            name: "Modifier A1-G-ADMIN-001"
+            name: "Modifier A1-G-991"
         })).toBeVisible();
 
-        await page.getByLabel("Titre français").fill("Le présent révisé");
+        await expect(page.getByText("0 erreur(s)")).toBeVisible();
+        await expect(page.getByLabel("Identifiant de la section 1")).toBeDisabled();
+        await expect(page.getByText("Section publiée protégée")).toBeVisible();
+        await page.getByText("Aperçu de la leçon").click();
+        await expect(page.getByRole("heading", {
+            exact: true,
+            name: "Le présent"
+        })).toBeVisible();
+        await expect(page.getByRole("heading", { name: "Former le présent" })).toBeVisible();
+
+        await page.getByLabel("Titre du catalogue").fill("Le présent révisé");
+        await page.getByLabel("Titre de la leçon").fill("Le présent révisé");
+        await page.getByLabel("Cours de la section 1").fill(
+            "Le présent décrit une action actuelle et une habitude régulière."
+        );
+        await page.getByText("Exercices jouables · 0").click();
+        await page.getByRole("button", { name: "+ Ajouter un exercice" }).click();
+        await page.getByText("1. Nouvel exercice").click();
+        await expect(page.getByLabel("Identifiant du bloc d’exercices 1")).toBeEnabled();
+        await page.getByLabel("Titre français du bloc d’exercices 1").fill(
+            "Choisir la bonne forme"
+        );
+        await page.getByRole("button", { name: "+ Ajouter une question" }).click();
+        await page.getByLabel("Énoncé de la question 1").fill("Tu ___ français.");
+        await page.getByLabel("Réponse proposée 1").fill("parles");
+        await page.getByLabel("Réponse proposée 2").fill("parle");
+        await expect(page.getByText("0 erreur(s)")).toBeVisible();
         await page.getByRole("button", {
             name: "Enregistrer en brouillon"
         }).click();
@@ -357,8 +404,26 @@ test(
         )).toBeVisible();
         expect(backend.draftBodies).toHaveLength(1);
         expect(backend.draftBodies[0]).toMatchObject({
-            p_content_key: "A1-G-ADMIN-001",
+            p_content_key: "A1-G-991",
             p_content_type: "grammar_lesson",
+            p_payload: {
+                document: {
+                    sections: [{
+                        content: "Le présent décrit une action actuelle et une habitude régulière."
+                    }]
+                },
+                exerciseSections: [{
+                    id: "A1-G-991-ex1",
+                    questions: [{
+                        correct: 0,
+                        options: ["parles", "parle"],
+                        question: "Tu ___ français.",
+                        type: "mcq"
+                    }],
+                    title: "Choisir la bonne forme",
+                    type: "exercise"
+                }]
+            },
             p_title_fr: "Le présent révisé"
         });
         expect(backend.publicationBodies).toHaveLength(0);
@@ -368,7 +433,7 @@ test(
         }).click();
         await expect(page.getByText("Révision 3 publiée.")).toBeVisible();
         expect(backend.publicationBodies).toEqual([{
-            p_content_key: "A1-G-ADMIN-001",
+            p_content_key: "A1-G-991",
             p_content_type: "grammar_lesson",
             p_revision_number: 3
         }]);

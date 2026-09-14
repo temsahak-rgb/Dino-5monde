@@ -332,7 +332,7 @@ test(
 
         assert.match(
             seed,
-            /UAT-A1-G-001/u
+            /A1-G-998/u
         );
         assert.doesNotMatch(
             seed,

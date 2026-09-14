@@ -54,7 +54,7 @@ select is(
         select count(*)
         from public.get_published_content_catalog()
         where content_key in (
-            'UAT-A1-G-001',
+            'A1-G-998',
             'uat-salutations',
             'uat-hotel',
             '2026-w38-uat-news'
@@ -70,7 +70,7 @@ select results_eq(
             count(*)
         from public.get_published_content_catalog()
         where content_key in (
-            'UAT-A1-G-001',
+            'A1-G-998',
             'uat-salutations',
             'uat-hotel',
             '2026-w38-uat-news'
@@ -124,7 +124,7 @@ select is(
         select count(*)
         from public.get_published_content_catalog()
         where content_key in (
-            'UAT-A1-G-001',
+            'A1-G-998',
             'uat-salutations',
             'uat-hotel',
             '2026-w38-uat-news'
@@ -167,7 +167,7 @@ select is(
         select count(*)
         from public.get_published_content_catalog()
         where content_key in (
-            'UAT-A1-G-001',
+            'A1-G-998',
             'uat-salutations',
             'uat-hotel',
             '2026-w38-uat-news'
@@ -229,7 +229,7 @@ select is(
         join public.content_items as items
           on items.id = revisions.content_item_id
         where items.content_type = 'grammar_lesson'
-          and items.content_key = 'UAT-A1-G-001'
+          and items.content_key = 'A1-G-998'
     ),
     1::bigint,
     'the seeded grammar document starts at revision one'
@@ -255,7 +255,7 @@ select results_eq(
             true
         ) as imported
         where items.content_type = 'grammar_lesson'
-          and items.content_key = 'UAT-A1-G-001'
+          and items.content_key = 'A1-G-998'
     $$,
     $$ values (1::integer, true::boolean) $$,
     'reimporting an identical document reuses its published revision'
@@ -267,7 +267,7 @@ select is(
         join public.content_items as items
           on items.id = revisions.content_item_id
         where items.content_type = 'grammar_lesson'
-          and items.content_key = 'UAT-A1-G-001'
+          and items.content_key = 'A1-G-998'
     ),
     1::bigint,
     'an idempotent retry creates no duplicate revision'
@@ -294,7 +294,7 @@ select results_eq(
             true
         ) as imported
         where items.content_type = 'grammar_lesson'
-          and items.content_key = 'UAT-A1-G-001'
+          and items.content_key = 'A1-G-998'
     $$,
     $$ values (2::integer, true::boolean) $$,
     'changed content creates and publishes revision two'
@@ -306,7 +306,7 @@ select is(
         join public.content_items as items
           on items.id = revisions.content_item_id
         where items.content_type = 'grammar_lesson'
-          and items.content_key = 'UAT-A1-G-001'
+          and items.content_key = 'A1-G-998'
     ),
     2::bigint,
     'publishing a change preserves both revisions'
@@ -318,7 +318,7 @@ select ok(
         join public.content_items as items
           on items.id = revisions.content_item_id
         where items.content_type = 'grammar_lesson'
-          and items.content_key = 'UAT-A1-G-001'
+          and items.content_key = 'A1-G-998'
           and revisions.revision_number = 1
           and not revisions.payload ? 'uatRevision'
     ),
@@ -329,7 +329,7 @@ select is(
         select revision_number
         from public.get_published_content(
             'grammar_lesson',
-            'UAT-A1-G-001'
+            'A1-G-998'
         )
     ),
     2,
@@ -363,7 +363,7 @@ select results_eq(
         join public.content_items as items
           on items.id = events.content_item_id
         where items.content_type = 'grammar_lesson'
-          and items.content_key = 'UAT-A1-G-001'
+          and items.content_key = 'A1-G-998'
         group by events.action
         order by events.action
     $$,

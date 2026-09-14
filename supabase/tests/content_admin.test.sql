@@ -129,7 +129,7 @@ select results_eq(
             published
         from public.admin_import_content_draft(
             'grammar_lesson',
-            'A1-G-ADMIN-TEST',
+            'A1-G-997',
             2,
             'A1',
             'Brouillon admin',
@@ -137,20 +137,34 @@ select results_eq(
             jsonb_build_object(
                 'catalog',
                 jsonb_build_object(
-                    'id', 'A1-G-ADMIN-TEST',
+                    'id', 'A1-G-997',
                     'level', 'A1',
                     'module', 'Administration',
+                    'category', 'base',
                     'icon', 'book',
                     'title', 'Brouillon admin',
                     'estimatedTime', 10,
-                    'exercises', 0
+                    'importance', 1,
+                    'lessons', 1,
+                    'exercises', 0,
+                    'recommended', false,
+                    'prerequisites', jsonb_build_array()
                 ),
                 'document',
                 jsonb_build_object(
-                    'id', 'A1-G-ADMIN-TEST',
+                    'id', 'A1-G-997',
                     'level', 'A1',
                     'title', 'Brouillon admin',
-                    'sections', jsonb_build_array()
+                    'icon', 'book',
+                    'estimatedTime', 10,
+                    'sections', jsonb_build_array(
+                        jsonb_build_object(
+                            'id', 'A1-G-997-1',
+                            'type', 'lesson',
+                            'title', 'Introduction',
+                            'content', 'Un contenu de test suffisamment complet.'
+                        )
+                    )
                 ),
                 'exerciseSections',
                 jsonb_build_array()
@@ -168,7 +182,7 @@ select is(
     (
         select published_revision_id
         from public.content_items
-        where content_key = 'A1-G-ADMIN-TEST'
+        where content_key = 'A1-G-997'
     ),
     null::uuid,
     'a draft is never public implicitly'
@@ -185,9 +199,9 @@ select results_eq(
             latest_revision_number,
             published_revision_number
         from public.admin_list_content_items()
-        where content_key = 'A1-G-ADMIN-TEST'
+        where content_key = 'A1-G-997'
     $$,
-    $$ values ('A1-G-ADMIN-TEST'::text, 1, null::integer) $$,
+    $$ values ('A1-G-997'::text, 1, null::integer) $$,
     'the editorial catalog distinguishes latest and published revisions'
 );
 select results_eq(
@@ -197,7 +211,7 @@ select results_eq(
             published
         from public.admin_get_content_revisions(
             'grammar_lesson',
-            'A1-G-ADMIN-TEST'
+            'A1-G-997'
         )
     $$,
     $$ values (1, false) $$,
@@ -209,7 +223,7 @@ select lives_ok(
         select *
         from public.admin_publish_content_revision(
             'grammar_lesson',
-            'A1-G-ADMIN-TEST',
+            'A1-G-997',
             1
         )
     $$,
@@ -220,7 +234,7 @@ select results_eq(
         select title_fr
         from public.get_published_content(
             'grammar_lesson',
-            'A1-G-ADMIN-TEST'
+            'A1-G-997'
         )
     $$,
     $$ values ('Brouillon admin'::text) $$,
@@ -232,7 +246,7 @@ select lives_ok(
         select *
         from public.admin_import_content_draft(
             'grammar_lesson',
-            'A1-G-ADMIN-BATCH',
+            'A1-G-996',
             2,
             'A1',
             'Lot admin',
@@ -240,16 +254,36 @@ select lives_ok(
             jsonb_build_object(
                 'catalog',
                 jsonb_build_object(
-                    'id', 'A1-G-ADMIN-BATCH',
-                    'level', 'A1'
+                    'id', 'A1-G-996',
+                    'level', 'A1',
+                    'module', 'Administration',
+                    'category', 'base',
+                    'icon', 'book',
+                    'title', 'Lot admin',
+                    'estimatedTime', 10,
+                    'importance', 1,
+                    'lessons', 1,
+                    'exercises', 0,
+                    'recommended', false,
+                    'prerequisites', jsonb_build_array()
                 ),
                 'document',
                 jsonb_build_object(
-                    'id', 'A1-G-ADMIN-BATCH',
+                    'id', 'A1-G-996',
                     'level', 'A1',
                     'title', 'Lot admin',
-                    'sections', jsonb_build_array()
-                )
+                    'icon', 'book',
+                    'estimatedTime', 10,
+                    'sections', jsonb_build_array(
+                        jsonb_build_object(
+                            'id', 'A1-G-996-1',
+                            'type', 'lesson',
+                            'title', 'Introduction',
+                            'content', 'Un second contenu de test complet.'
+                        )
+                    )
+                ),
+                'exerciseSections', jsonb_build_array()
             ),
             'admin-panel'
         )
@@ -288,7 +322,7 @@ select throws_ok(
         select *
         from public.admin_import_content_draft(
             'grammar_lesson',
-            'A1-G-FORBIDDEN',
+            'A1-G-995',
             2,
             'A1',
             'Interdit',

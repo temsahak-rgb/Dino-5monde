@@ -1,10 +1,10 @@
 import {
     useEffect,
+    useMemo,
     useState,
     type ChangeEvent,
     type Dispatch,
     type FormEvent,
-    type ReactNode,
     type SetStateAction
 } from "react";
 
@@ -13,8 +13,25 @@ import {
 } from "./AdminContentRevisionHistory.js";
 
 import {
+    AdminGrammarEditorFields
+} from "./AdminGrammarEditorFields.js";
+
+import {
     AdminNewsEditorFields
 } from "./AdminNewsEditorFields.js";
+
+import {
+    AdminEditorField
+} from "./AdminEditorField.js";
+
+import {
+    readAdminGrammarEditor,
+    updateAdminGrammarEditor
+} from "./adminGrammarEditor.js";
+
+import {
+    validateAdminGrammarEditor
+} from "./adminGrammarValidation.js";
 
 import {
     readAdminNewsEditor,
@@ -128,10 +145,27 @@ function AdminContentEditor({
     const newsErrors = newsIssues.filter(
         issue => issue.severity === "error"
     );
+    const grammarIssues = value.contentType === "grammar_lesson"
+        ? validateAdminGrammarEditor(
+            readAdminGrammarEditor(value),
+            availableItems
+        )
+        : [];
+    const grammarErrors = grammarIssues.filter(
+        issue => issue.severity === "error"
+    );
+    const publicationErrors = [
+        ...newsErrors,
+        ...grammarErrors
+    ];
+    const lockedGrammarSectionIds = useMemo(
+        () => getPublishedGrammarSectionIds(item, revisions),
+        [item, revisions]
+    );
     const publicationBlockedReason = dirty
         ? "Enregistrez vos modifications en brouillon avant de publier."
-        : newsErrors.length > 0
-            ? `${newsErrors.length} erreur(s) éditoriale(s) bloquent la publication.`
+        : publicationErrors.length > 0
+            ? `${publicationErrors.length} erreur(s) éditoriale(s) bloquent la publication.`
             : undefined;
 
     useEffect(
@@ -285,7 +319,7 @@ function AdminContentEditor({
                 onSubmit={event => void saveDraft(event)}
             >
                 <div className="grid gap-3 sm:grid-cols-2">
-                    <EditorField label="Type">
+                    <AdminEditorField label="Type">
                         <Select
                             aria-label="Type de contenu"
                             disabled={Boolean(item)}
@@ -304,9 +338,9 @@ function AdminContentEditor({
                                 </option>
                             ))}
                         </Select>
-                    </EditorField>
+                    </AdminEditorField>
 
-                    <EditorField label="Identifiant stable">
+                    <AdminEditorField label="Identifiant stable">
                         <Input
                             className="font-mono"
                             disabled={Boolean(item)}
@@ -314,12 +348,19 @@ function AdminContentEditor({
                             value={value.contentKey}
                             onChange={changeEditor("contentKey", setDraftValue)}
                         />
-                    </EditorField>
+                    </AdminEditorField>
                 </div>
 
                 {value.contentType === "news_article" ? (
                     <AdminNewsEditorFields
                         availableItems={availableItems}
+                        value={value}
+                        onChange={setDraftValue}
+                    />
+                ) : value.contentType === "grammar_lesson" ? (
+                    <AdminGrammarEditorFields
+                        availableItems={availableItems}
+                        lockedSectionIds={lockedGrammarSectionIds}
                         value={value}
                         onChange={setDraftValue}
                     />
@@ -335,7 +376,7 @@ function AdminContentEditor({
                         Paramètres techniques
                     </summary>
                     <div className="mt-3 grid gap-3 sm:grid-cols-2">
-                        <EditorField label="Version du schéma">
+                        <AdminEditorField label="Version du schéma">
                             <Input
                                 min="1"
                                 required
@@ -343,14 +384,14 @@ function AdminContentEditor({
                                 value={value.schemaVersion}
                                 onChange={changeEditor("schemaVersion", setDraftValue)}
                             />
-                        </EditorField>
-                        <EditorField label="Provenance">
+                        </AdminEditorField>
+                        <AdminEditorField label="Provenance">
                             <Input
                                 className="font-mono"
                                 value={value.sourcePath}
                                 onChange={changeEditor("sourcePath", setDraftValue)}
                             />
-                        </EditorField>
+                        </AdminEditorField>
                     </div>
                 </details>
 
@@ -398,28 +439,28 @@ function GenericContentFields({
 }) {
     return (
         <>
-            <EditorField label="Titre français">
+            <AdminEditorField label="Titre français">
                 <Input
                     required
                     value={value.titleFr}
                     onChange={changeEditor("titleFr", setValue)}
                 />
-            </EditorField>
+            </AdminEditorField>
 
             <div className="grid gap-3 sm:grid-cols-2">
-                <EditorField label="Niveau">
+                <AdminEditorField label="Niveau">
                     <Input
                         value={value.level}
                         onChange={changeEditor("level", setValue)}
                     />
-                </EditorField>
-                <EditorField label="Titre persan">
+                </AdminEditorField>
+                <AdminEditorField label="Titre persan">
                     <Input
                         dir="rtl"
                         value={value.titleFa}
                         onChange={changeEditor("titleFa", setValue)}
                     />
-                </EditorField>
+                </AdminEditorField>
             </div>
 
             <div>
@@ -450,23 +491,6 @@ function GenericContentFields({
     );
 }
 
-function EditorField({
-    children,
-    label
-}: {
-    children: ReactNode;
-    label: string;
-}) {
-    return (
-        <label className="block">
-            <span className="mb-1 block text-sm font-bold text-ink">
-                {label}
-            </span>
-            {children}
-        </label>
-    );
-}
-
 function changeEditor(
     field: keyof AdminContentEditorValue,
     setValue: Dispatch<SetStateAction<AdminContentEditorValue>>
@@ -488,16 +512,15 @@ function updateEditorField(
     value: string
 ): void {
     setValue(current => {
-        const updated = {
+        let updated = {
             ...current,
             [field]: value
         };
 
         if (
             field === "contentType"
-            && value !== "news_article"
         ) {
-            return {
+            updated = {
                 ...updated,
                 payloadText: createAdminPayloadTemplate(updated)
             };
@@ -520,6 +543,23 @@ function updateEditorField(
             );
         }
 
+        if (
+            updated.contentType === "grammar_lesson"
+            && (
+                field === "contentType"
+                || field === "contentKey"
+            )
+        ) {
+            const grammar = readAdminGrammarEditor(updated);
+            return updateAdminGrammarEditor(
+                updated,
+                {
+                    ...grammar,
+                    contentKey: updated.contentKey
+                }
+            );
+        }
+
         return updated;
     });
 }
@@ -528,6 +568,34 @@ function getErrorMessage(reason: unknown): string {
     return reason instanceof Error
         ? reason.message
         : "Une erreur inattendue est survenue.";
+}
+
+function getPublishedGrammarSectionIds(
+    item: AdminContentItemRpcRow | null,
+    revisions: readonly AdminContentRevisionRpcRow[]
+): ReadonlySet<string> {
+    if (
+        item?.content_type !== "grammar_lesson"
+        || item.published_revision_number === null
+    ) {
+        return new Set();
+    }
+
+    const revision = revisions.find(candidate =>
+        candidate.revision_number === item.published_revision_number
+    );
+    if (!revision) {
+        return new Set();
+    }
+
+    const grammar = readAdminGrammarEditor(
+        createAdminContentEditorFromRevision(item, revision)
+    );
+
+    return new Set([
+        ...grammar.lessons.map(section => section.id),
+        ...grammar.exercises.map(section => section.id)
+    ].filter(Boolean));
 }
 
 export {
