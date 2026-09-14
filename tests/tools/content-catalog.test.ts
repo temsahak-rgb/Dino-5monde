@@ -33,13 +33,13 @@ test(
 
         assert.equal(
             documents.length,
-            673
+            674
         );
         assert.deepEqual(
             summarizeContentCatalog(documents),
             {
                 grammar_lesson: 125,
-                news_article: 1,
+                news_article: 2,
                 travel_lesson: 31,
                 vocabulary_pack: 516
             }
@@ -48,7 +48,7 @@ test(
             createContentCatalogDigest(
                 documents
             ),
-            "30e689723daa78bf8d72ceebd32798ca2c23acc93737d776f2830fdd281a0209"
+            "4912373dcb499f5ac7eef687b94188858719d0734324f24549d658e627c15c42"
         );
     }
 );
