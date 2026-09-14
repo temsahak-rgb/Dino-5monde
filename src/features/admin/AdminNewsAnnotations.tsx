@@ -16,8 +16,8 @@ import {
 } from "../../ui/components/Controls.js";
 
 import {
-    NewsField
-} from "./AdminNewsCoreFields.js";
+    AdminEditorField
+} from "./AdminEditorField.js";
 
 interface AdminNewsAnnotationsProps {
     value: AdminNewsEditorValue;
@@ -67,33 +67,33 @@ function VocabularyEditor({
                         key={`vocabulary:${index}`}
                     >
                         <div className="grid gap-3 sm:grid-cols-2">
-                            <NewsField label="Mot français">
+                            <AdminEditorField label="Mot français">
                                 <Input
                                     value={item.fr}
                                     onChange={event => update(index, "fr", event.target.value)}
                                 />
-                            </NewsField>
-                            <NewsField label="Traduction persane">
+                            </AdminEditorField>
+                            <AdminEditorField label="Traduction persane">
                                 <Input
                                     dir="rtl"
                                     value={item.fa}
                                     onChange={event => update(index, "fa", event.target.value)}
                                 />
-                            </NewsField>
-                            <NewsField label="Niveau">
+                            </AdminEditorField>
+                            <AdminEditorField label="Niveau">
                                 <LevelSelect
                                     value={item.level}
                                     onChange={nextValue => update(index, "level", nextValue)}
                                 />
-                            </NewsField>
-                            <NewsField label="Pack lié">
+                            </AdminEditorField>
+                            <AdminEditorField label="Pack lié">
                                 <Input
                                     className="font-mono"
                                     placeholder="pack_…"
                                     value={item.packId}
                                     onChange={event => update(index, "packId", event.target.value)}
                                 />
-                            </NewsField>
+                            </AdminEditorField>
                         </div>
                         <Button
                             className="mt-2"
@@ -158,49 +158,49 @@ function GrammarEditor({
                             {item.title || `Point de grammaire ${index + 1}`}
                         </summary>
                         <div className="mt-3 grid gap-3 sm:grid-cols-2">
-                            <NewsField label="Titre">
+                            <AdminEditorField label="Titre">
                                 <Input
                                     value={item.title}
                                     onChange={event => update(index, "title", event.target.value)}
                                 />
-                            </NewsField>
-                            <NewsField label="Niveau">
+                            </AdminEditorField>
+                            <AdminEditorField label="Niveau">
                                 <LevelSelect
                                     value={item.level}
                                     onChange={nextValue => update(index, "level", nextValue)}
                                 />
-                            </NewsField>
-                            <NewsField label="Leçon liée">
+                            </AdminEditorField>
+                            <AdminEditorField label="Leçon liée">
                                 <Input
                                     className="font-mono"
                                     placeholder="B1-G-001"
                                     value={item.grammarId}
                                     onChange={event => update(index, "grammarId", event.target.value)}
                                 />
-                            </NewsField>
-                            <NewsField label="Exemple">
+                            </AdminEditorField>
+                            <AdminEditorField label="Exemple">
                                 <Textarea
                                     className="min-h-24 resize-y"
                                     value={item.example}
                                     onChange={event => update(index, "example", event.target.value)}
                                 />
-                            </NewsField>
-                            <NewsField label="Traduction persane">
+                            </AdminEditorField>
+                            <AdminEditorField label="Traduction persane">
                                 <Textarea
                                     className="min-h-24 resize-y"
                                     dir="rtl"
                                     value={item.translation}
                                     onChange={event => update(index, "translation", event.target.value)}
                                 />
-                            </NewsField>
-                            <NewsField label="Explication persane">
+                            </AdminEditorField>
+                            <AdminEditorField label="Explication persane">
                                 <Textarea
                                     className="min-h-24 resize-y"
                                     dir="rtl"
                                     value={item.explanation}
                                     onChange={event => update(index, "explanation", event.target.value)}
                                 />
-                            </NewsField>
+                            </AdminEditorField>
                         </div>
                         <Button
                             className="mt-2"

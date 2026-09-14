@@ -610,5 +610,6 @@ function GrammarPersianNote({
 
 export {
     GrammarLessonContent,
+    GrammarSectionContent,
     GrammarTable
 };

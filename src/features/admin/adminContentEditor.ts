@@ -26,7 +26,7 @@ interface AdminContentEditorValue {
 
 function createEmptyAdminContentEditor():
 AdminContentEditorValue {
-    return {
+    const value: AdminContentEditorValue = {
         contentKey: "",
         contentType:
             "grammar_lesson",
@@ -36,6 +36,11 @@ AdminContentEditorValue {
         sourcePath: "admin-panel",
         titleFa: "",
         titleFr: ""
+    };
+
+    return {
+        ...value,
+        payloadText: createAdminPayloadTemplate(value)
     };
 }
 
@@ -114,10 +119,14 @@ function createAdminPayloadTemplate(
             {
                 estimatedTime: 10,
                 exercises: 0,
+                category: "base",
                 icon: "📘",
+                importance: 1,
                 lessons: 1,
                 module:
-                    "Nouveau module"
+                    "Nouveau module",
+                prerequisites: [],
+                recommended: false
             }
         );
         Object.assign(
