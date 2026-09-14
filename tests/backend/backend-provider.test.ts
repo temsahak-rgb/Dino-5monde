@@ -27,6 +27,15 @@ import {
     useBackend
 } from "../../src/services/backend/BackendProvider.js";
 
+import {
+    ContentProvider,
+    useContent
+} from "../../src/services/content/ContentProvider.js";
+
+import type {
+    ContentRepository
+} from "../../src/services/content/contentRepository.js";
+
 function BackendProbe() {
     const {
         client,
@@ -42,6 +51,20 @@ function BackendProbe() {
                 ? ":no-client"
                 : ":client"
         }:${connectionStatus}`
+    );
+}
+
+function ContentProbe() {
+    const {
+        repository,
+        source,
+        status
+    } = useContent();
+
+    return createElement(
+        "output",
+        null,
+        `${status}:${source ?? "none"}:${repository?.source ?? "no-repository"}`
     );
 }
 
@@ -101,6 +124,46 @@ test(
         assert.doesNotMatch(
             source,
             /import\s+\{[^}]*createClient[^}]*\}\s+from/u
+        );
+    }
+);
+
+test(
+    "ContentProvider makes the legacy repository explicit only when backend is disabled",
+    () => {
+        const staticRepository: ContentRepository = {
+            listCatalog: async () => [],
+            loadDocument: async () => null,
+            source: "legacy-static"
+        };
+        const html =
+            renderToStaticMarkup(
+                createElement(
+                    BackendProvider,
+                    {
+                        configuration: {
+                            status: "disabled",
+                            reason:
+                                "missing-environment"
+                        },
+                        children:
+                            createElement(
+                                ContentProvider,
+                                {
+                                    staticRepository,
+                                    children:
+                                        createElement(
+                                            ContentProbe
+                                        )
+                                }
+                            )
+                    }
+                )
+            );
+
+        assert.match(
+            html,
+            /ready:legacy-static:legacy-static/u
         );
     }
 );

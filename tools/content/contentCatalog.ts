@@ -25,6 +25,7 @@ interface CanonicalContentDocument {
     payload: {
         catalog: JsonObject;
         document: JsonObject;
+        exerciseSections?: JsonObject[];
     };
     schemaVersion: number;
     sourcePath: string;
@@ -198,6 +199,14 @@ async function loadCatalogSource(
                         ?? entry.level
                         ?? source.level
                     );
+                const exerciseSections =
+                    source.contentType
+                    === "grammar_lesson"
+                        ? await loadGrammarExerciseSections(
+                            source.level,
+                            contentKey
+                        )
+                        : null;
 
                 return {
                     contentKey,
@@ -206,15 +215,91 @@ async function loadCatalogSource(
                     level,
                     payload: {
                         catalog: entry,
-                        document
+                        document,
+                        ...(exerciseSections
+                            ? {
+                                exerciseSections
+                            }
+                            : {})
                     },
-                    schemaVersion: 1,
+                    schemaVersion:
+                        source.contentType
+                        === "grammar_lesson"
+                            ? 2
+                            : 1,
                     sourcePath,
                     titleFa,
                     titleFr
                 };
             }
         )
+    );
+}
+
+async function loadGrammarExerciseSections(
+    level: string | null,
+    lessonId: string
+): Promise<JsonObject[]> {
+    if (!level) {
+        throw new Error(
+            `Grammar lesson ${lessonId} requires a level`
+        );
+    }
+
+    const sections: JsonObject[] = [];
+    let exerciseNumber = 1;
+
+    while (true) {
+        const exercise =
+            await readOptionalJsonObject(
+                `data/exercises/${level}/${lessonId}-ex${exerciseNumber}.json`
+            );
+
+        if (!exercise) {
+            break;
+        }
+
+        sections.push(exercise);
+        exerciseNumber += 1;
+    }
+
+    const quiz =
+        await readOptionalJsonObject(
+            `data/exercises/${level}/${lessonId}-quiz.json`
+        );
+
+    if (quiz) {
+        sections.push(quiz);
+    }
+
+    return sections;
+}
+
+async function readOptionalJsonObject(
+    relativePath: string
+): Promise<JsonObject | null> {
+    try {
+        return await readJsonObject(
+            relativePath
+        );
+    } catch (error) {
+        if (
+            isFileNotFoundError(error)
+        ) {
+            return null;
+        }
+
+        throw error;
+    }
+}
+
+function isFileNotFoundError(
+    error: unknown
+): error is NodeJS.ErrnoException {
+    return (
+        error instanceof Error
+        && "code" in error
+        && error.code === "ENOENT"
     );
 }
 

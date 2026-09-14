@@ -26,6 +26,11 @@ const indexPath = resolve(root, "index.html");
 const requiredReactSurfaces = [
     "src/main.tsx",
     "src/app/App.tsx",
+    "src/services/content/ContentProvider.tsx",
+    "src/services/content/contentRepository.ts",
+    "src/services/content/staticContentRepository.ts",
+    "src/services/backend/supabaseContentRepository.ts",
+    "src/features/grammar/grammarRepository.ts",
     "src/app/AppLayout.tsx",
     "src/app/AppRouter.tsx",
     "src/app/routes.ts",
@@ -59,6 +64,7 @@ const requiredReactSurfaces = [
 const forbiddenLegacySurfaces = [
     "app.ts",
     "src/core/navigation.ts",
+    "src/core/lessonEngine.ts",
     "src/core/routeEngine.ts",
     "src/core/router.ts",
     "src/ui/ui.ts",

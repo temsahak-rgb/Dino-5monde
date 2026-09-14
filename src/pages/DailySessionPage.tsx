@@ -44,6 +44,9 @@ import {
     useExerciseTracking
 } from "../services/backend/ExerciseTrackingProvider.js";
 import {
+    useContent
+} from "../services/content/ContentProvider.js";
+import {
     Badge
 } from "../ui/components/Controls.js";
 import {
@@ -68,6 +71,11 @@ function DailySessionPage() {
     const {
         attempts
     } = useExerciseTracking();
+    const {
+        repository,
+        status:
+            contentStatus
+    } = useContent();
     const today =
         useCurrentLocalDay();
     const [catalogs, setCatalogs] =
@@ -83,11 +91,27 @@ function DailySessionPage() {
 
     useEffect(
         () => {
+            if (
+                contentStatus
+                !== "ready"
+                || !repository
+            ) {
+                setCatalogs(null);
+                setLoadError(
+                    contentStatus
+                    === "error"
+                );
+
+                return;
+            }
+
             let active = true;
 
             setLoadError(false);
 
-            void loadReviewCatalog()
+            void loadReviewCatalog(
+                repository
+            )
                 .then(loadedCatalogs => {
                     if (active) {
                         setCatalogs(
@@ -105,7 +129,11 @@ function DailySessionPage() {
                 active = false;
             };
         },
-        [loadRevision]
+        [
+            contentStatus,
+            loadRevision,
+            repository
+        ]
     );
 
     useEffect(

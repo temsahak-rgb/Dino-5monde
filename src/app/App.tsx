@@ -11,6 +11,10 @@ import {
 } from "../services/backend/BackendProvider.js";
 
 import {
+    ContentProvider
+} from "../services/content/ContentProvider.js";
+
+import {
     LearnerProfileProvider
 } from "../services/backend/LearnerProfileProvider.js";
 
@@ -45,23 +49,25 @@ import {
 function App() {
     return (
         <BackendProvider>
-            <AuthProvider>
-                <ShopProvider>
-                    <LessonProgressSyncProvider>
-                        <ExerciseTrackingProvider>
-                            <ReviewSignalsSyncProvider>
-                                <LearningRewardsProvider>
-                                    <LearnerProfileProvider>
-                                        <I18nProvider>
-                                            <AppRouter />
-                                        </I18nProvider>
-                                    </LearnerProfileProvider>
-                                </LearningRewardsProvider>
-                            </ReviewSignalsSyncProvider>
-                        </ExerciseTrackingProvider>
-                    </LessonProgressSyncProvider>
-                </ShopProvider>
-            </AuthProvider>
+            <ContentProvider>
+                <AuthProvider>
+                    <ShopProvider>
+                        <LessonProgressSyncProvider>
+                            <ExerciseTrackingProvider>
+                                <ReviewSignalsSyncProvider>
+                                    <LearningRewardsProvider>
+                                        <LearnerProfileProvider>
+                                            <I18nProvider>
+                                                <AppRouter />
+                                            </I18nProvider>
+                                        </LearnerProfileProvider>
+                                    </LearningRewardsProvider>
+                                </ReviewSignalsSyncProvider>
+                            </ExerciseTrackingProvider>
+                        </LessonProgressSyncProvider>
+                    </ShopProvider>
+                </AuthProvider>
+            </ContentProvider>
         </BackendProvider>
     );
 }

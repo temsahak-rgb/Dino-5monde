@@ -8,8 +8,8 @@ import {
 } from "react-router";
 
 import {
-    loadLessonWithExercises
-} from "../core/lessonEngine.js";
+    loadGrammarLesson
+} from "../features/grammar/grammarRepository.js";
 
 import {
     GrammarLesson
@@ -27,6 +27,10 @@ import {
 import {
     useI18n
 } from "../i18n/I18nProvider.js";
+
+import {
+    useContent
+} from "../services/content/ContentProvider.js";
 
 import type {
     GrammarLevel,
@@ -68,6 +72,12 @@ function GrammarLessonPage() {
         t
     } = useI18n();
 
+    const {
+        repository,
+        status:
+            contentStatus
+    } = useContent();
+
     const lessonId =
         normalizeLessonId(
             lessonIdParameter
@@ -100,11 +110,14 @@ function GrammarLessonPage() {
         );
 
     const [
-        failed,
-        setFailed
+        failure,
+        setFailure
     ] =
         useState(
-            false
+            null as
+                | "not-found"
+                | "unavailable"
+                | null
         );
 
     const [
@@ -129,12 +142,47 @@ function GrammarLessonPage() {
                     false
                 );
 
-                setFailed(
-                    true
+                setFailure(
+                    "not-found"
                 );
 
                 return;
             }
+
+            if (
+                contentStatus
+                === "loading"
+            ) {
+                setLoading(
+                    true
+                );
+                setFailure(
+                    null
+                );
+
+                return;
+            }
+
+            if (
+                contentStatus
+                === "error"
+                || !repository
+            ) {
+                setLesson(
+                    null
+                );
+                setLoading(
+                    false
+                );
+                setFailure(
+                    "unavailable"
+                );
+
+                return;
+            }
+
+            const activeRepository =
+                repository;
 
             let active =
                 true;
@@ -150,51 +198,70 @@ function GrammarLessonPage() {
                     true
                 );
 
-                setFailed(
-                    false
+                setFailure(
+                    null
                 );
 
-                const loadedLesson =
-                    await loadLessonWithExercises(
-                        grammarLevel,
-                        routeLessonId
+                try {
+                    const loadedLesson =
+                        await loadGrammarLesson(
+                            activeRepository,
+                            grammarLevel,
+                            routeLessonId
+                        );
+
+                    if (!active) {
+                        return;
+                    }
+
+                    if (!loadedLesson) {
+                        setLesson(
+                            null
+                        );
+
+                        setFailure(
+                            "not-found"
+                        );
+
+                        setLoading(
+                            false
+                        );
+
+                        return;
+                    }
+
+                    if (
+                        getLessonStatus(
+                            routeLessonId
+                        )
+                        === "not_started"
+                    ) {
+                        setLessonStatus(
+                            routeLessonId,
+                            "in_progress"
+                        );
+                    }
+
+                    setLesson(
+                        loadedLesson
+                    );
+                } catch (error) {
+                    console.error(
+                        `Failed to load grammar lesson ${routeLessonId}:`,
+                        error
                     );
 
-                if (!active) {
-                    return;
-                }
+                    if (!active) {
+                        return;
+                    }
 
-                if (!loadedLesson) {
                     setLesson(
                         null
                     );
-
-                    setFailed(
-                        true
-                    );
-
-                    setLoading(
-                        false
-                    );
-
-                    return;
-                }
-
-                if (
-                    getLessonStatus(
-                        routeLessonId
-                    )
-                    === "not_started"
-                ) {
-                    setLessonStatus(
-                        routeLessonId,
-                        "in_progress"
+                    setFailure(
+                        "unavailable"
                     );
                 }
-
-                setLesson(
-                    loadedLesson
-                );
 
                 setLoading(
                     false
@@ -212,8 +279,10 @@ function GrammarLessonPage() {
             };
         },
         [
+            contentStatus,
             lessonId,
             level,
+            repository,
             retryCount
         ]
     );
@@ -227,6 +296,7 @@ function GrammarLessonPage() {
                 level={
                     null
                 }
+                failure="not-found"
                 onRetry={
                     null
                 }
@@ -249,13 +319,17 @@ function GrammarLessonPage() {
     }
 
     if (
-        failed
+        failure
         || !lesson
     ) {
         return (
             <GrammarLessonError
                 level={
                     level
+                }
+                failure={
+                    failure
+                    ?? "not-found"
                 }
                 onRetry={() => {
                     setRetryCount(
@@ -297,6 +371,10 @@ function GrammarLessonPage() {
 }
 
 interface GrammarLessonErrorProps {
+    failure:
+        | "not-found"
+        | "unavailable";
+
     level:
         GrammarLevel
         | null;
@@ -307,6 +385,7 @@ interface GrammarLessonErrorProps {
 }
 
 function GrammarLessonError({
+    failure,
     level,
     onRetry
 }: GrammarLessonErrorProps) {
@@ -332,14 +411,24 @@ function GrammarLessonError({
 
             <ErrorState
                 title={
-                    t(
-                        "error.notFound.title"
-                    )
+                    failure
+                    === "unavailable"
+                        ? t(
+                            "error.unavailable.title"
+                        )
+                        : t(
+                            "error.notFound.title"
+                        )
                 }
                 description={
-                    t(
-                        "grammar.lessonNotFound"
-                    )
+                    failure
+                    === "unavailable"
+                        ? t(
+                            "error.unavailable.body"
+                        )
+                        : t(
+                            "grammar.lessonNotFound"
+                        )
                 }
                 onRetry={
                     onRetry

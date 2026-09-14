@@ -9,9 +9,12 @@ import {
 } from "react-router";
 
 import {
-    getGrammar,
-    loadGrammar
-} from "../features/grammar/grammarEngine.js";
+    loadGrammarCatalog
+} from "../features/grammar/grammarRepository.js";
+
+import {
+    useContent
+} from "../services/content/ContentProvider.js";
 
 import type {
     GrammarLessonIndex,
@@ -59,6 +62,12 @@ function GrammarLevelPage() {
         t
     } = useI18n();
 
+    const {
+        repository,
+        status:
+            contentStatus
+    } = useContent();
+
     const level =
         parseGrammarLevel(
             levelParameter
@@ -83,11 +92,22 @@ function GrammarLevelPage() {
         );
 
     const [
-        failed,
-        setFailed
+        failure,
+        setFailure
     ] =
         useState(
-            false
+            null as
+                | "not-found"
+                | "unavailable"
+                | null
+        );
+
+    const [
+        retryCount,
+        setRetryCount
+    ] =
+        useState(
+            0
         );
 
     useEffect(
@@ -97,8 +117,8 @@ function GrammarLevelPage() {
                     []
                 );
 
-                setFailed(
-                    false
+                setFailure(
+                    null
                 );
 
                 setLoading(
@@ -107,6 +127,41 @@ function GrammarLevelPage() {
 
                 return;
             }
+
+            if (
+                contentStatus
+                === "loading"
+            ) {
+                setLoading(
+                    true
+                );
+                setFailure(
+                    null
+                );
+
+                return;
+            }
+
+            if (
+                contentStatus
+                === "error"
+                || !repository
+            ) {
+                setLessons(
+                    []
+                );
+                setLoading(
+                    false
+                );
+                setFailure(
+                    "unavailable"
+                );
+
+                return;
+            }
+
+            const activeRepository =
+                repository;
 
             let active =
                 true;
@@ -119,34 +174,47 @@ function GrammarLevelPage() {
                     true
                 );
 
-                setFailed(
-                    false
+                setFailure(
+                    null
                 );
 
-                const loaded =
-                    await loadGrammar(
-                        grammarLevel
-                    );
-
-                if (!active) {
-                    return;
-                }
-
-                const catalog =
-                    loaded.length > 0
-                        ? loaded
-                        : getGrammar(
+                try {
+                    const loaded =
+                        await loadGrammarCatalog(
+                            activeRepository,
                             grammarLevel
                         );
 
-                setLessons(
-                    catalog
-                );
+                    if (!active) {
+                        return;
+                    }
 
-                setFailed(
-                    catalog.length
-                    === 0
-                );
+                    setLessons(
+                        loaded
+                    );
+
+                    setFailure(
+                        loaded.length === 0
+                            ? "not-found"
+                            : null
+                    );
+                } catch (error) {
+                    console.error(
+                        `Failed to load grammar catalog ${grammarLevel}:`,
+                        error
+                    );
+
+                    if (!active) {
+                        return;
+                    }
+
+                    setLessons(
+                        []
+                    );
+                    setFailure(
+                        "unavailable"
+                    );
+                }
 
                 setLoading(
                     false
@@ -163,7 +231,10 @@ function GrammarLevelPage() {
             };
         },
         [
-            level
+            contentStatus,
+            level,
+            repository,
+            retryCount
         ]
     );
 
@@ -223,7 +294,7 @@ function GrammarLevelPage() {
         );
     }
 
-    if (failed) {
+    if (failure) {
         return (
             <Page>
                 <BackButton
@@ -238,18 +309,30 @@ function GrammarLevelPage() {
 
                 <ErrorState
                     title={
-                        t(
-                            "error.notFound.title"
-                        )
+                        failure
+                        === "unavailable"
+                            ? t(
+                                "error.unavailable.title"
+                            )
+                            : t(
+                                "error.notFound.title"
+                            )
                     }
                     description={
-                        t(
-                            "grammar.lessonNotFound"
-                        )
+                        failure
+                        === "unavailable"
+                            ? t(
+                                "error.unavailable.body"
+                            )
+                            : t(
+                                "grammar.lessonNotFound"
+                            )
                     }
                     onRetry={() => {
-                        window.location
-                            .reload();
+                        setRetryCount(
+                            current =>
+                                current + 1
+                        );
                     }}
                     retryLabel={
                         t(

@@ -197,13 +197,18 @@ test(
 test(
     "canonical content is versioned, server-owned and exposed through a safe projection",
     async () => {
-        const migration = await readFile(
-            resolve(
-                root,
-                "supabase/migrations/20260914120000_create_canonical_content_catalog.sql"
-            ),
-            "utf8"
-        );
+        const migration = (
+            await Promise.all([
+                "supabase/migrations/20260914120000_create_canonical_content_catalog.sql",
+                "supabase/migrations/20260914170000_split_content_read_api.sql"
+            ].map(
+                path =>
+                    readFile(
+                        resolve(root, path),
+                        "utf8"
+                    )
+            ))
+        ).join("\n");
 
         for (
             const table
@@ -263,6 +268,22 @@ test(
         assert.match(
             migration,
             /grant execute on function public\.get_published_content\(text, text\)\s+to anon, authenticated, service_role/u
+        );
+        assert.match(
+            migration,
+            /create function public\.get_published_content_catalog\([\s\S]*revisions\.payload -> 'catalog'/u
+        );
+        assert.match(
+            migration,
+            /grant execute on function public\.get_published_content_catalog\(text, text\)\s+to anon, authenticated, service_role/u
+        );
+        assert.match(
+            migration,
+            /create trigger content_revisions_validate_payload\s+before insert on public\.content_revisions/u
+        );
+        assert.match(
+            migration,
+            /message = 'content_payload_identity_invalid'/u
         );
         assert.doesNotMatch(
             migration,

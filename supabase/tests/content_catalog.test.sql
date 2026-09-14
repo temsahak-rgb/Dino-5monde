@@ -3,7 +3,7 @@ begin;
 create extension if not exists pgtap
 with schema extensions;
 
-select plan(26);
+select plan(30);
 
 select has_table(
     'public',
@@ -42,11 +42,23 @@ select has_function(
     array['text', 'text'],
     'the public read projection exists'
 );
+select has_function(
+    'public',
+    'get_published_content_catalog',
+    array['text', 'text'],
+    'the lightweight public catalog projection exists'
+);
 
 select is(
     (
         select count(*)
-        from public.get_published_content()
+        from public.get_published_content_catalog()
+        where content_key in (
+            'UAT-A1-G-001',
+            'uat-salutations',
+            'uat-hotel',
+            'uat-news'
+        )
     ),
     4::bigint,
     'the local seed contains exactly four published UAT documents'
@@ -56,7 +68,13 @@ select results_eq(
         select
             content_type,
             count(*)
-        from public.get_published_content()
+        from public.get_published_content_catalog()
+        where content_key in (
+            'UAT-A1-G-001',
+            'uat-salutations',
+            'uat-hotel',
+            'uat-news'
+        )
         group by content_type
         order by content_type
     $$,
@@ -68,6 +86,29 @@ select results_eq(
             ('vocabulary_pack'::text, 1::bigint)
     $$,
     'each canonical content family has one acceptance fixture'
+);
+select ok(
+    (
+        select bool_and(
+            catalog ? 'id'
+            and not catalog ? 'document'
+            and not catalog ? 'exerciseSections'
+        )
+        from public.get_published_content_catalog()
+    ),
+    'catalog reads never return lesson bodies or exercises'
+);
+select throws_ok(
+    $$
+        select *
+        from public.get_published_content(
+            'grammar_lesson',
+            null
+        )
+    $$,
+    '22023',
+    'content_key_invalid',
+    'detail reads require one explicit content identity'
 );
 
 set local role anon;
@@ -81,7 +122,13 @@ select throws_ok(
 select is(
     (
         select count(*)
-        from public.get_published_content()
+        from public.get_published_content_catalog()
+        where content_key in (
+            'UAT-A1-G-001',
+            'uat-salutations',
+            'uat-hotel',
+            'uat-news'
+        )
     ),
     4::bigint,
     'anonymous visitors can read the published projection'
@@ -118,7 +165,13 @@ set local role authenticated;
 select is(
     (
         select count(*)
-        from public.get_published_content()
+        from public.get_published_content_catalog()
+        where content_key in (
+            'UAT-A1-G-001',
+            'uat-salutations',
+            'uat-hotel',
+            'uat-news'
+        )
     ),
     4::bigint,
     'authenticated learners receive the same published projection'
@@ -144,6 +197,30 @@ select throws_ok(
 );
 
 reset role;
+
+select throws_ok(
+    $$
+        select *
+        from public.import_content_revision(
+            'news_article',
+            'invalid-payload',
+            1,
+            'A1',
+            'Payload invalide',
+            null,
+            jsonb_build_object(
+                'catalog', jsonb_build_object(
+                    'id', 'another-id'
+                )
+            ),
+            null,
+            false
+        )
+    $$,
+    '22023',
+    'content_payload_identity_invalid',
+    'the database rejects incomplete or mismatched content payloads'
+);
 
 select is(
     (
@@ -338,16 +415,17 @@ select is(
     0::bigint,
     'draft content never leaks through the public projection'
 );
-select is(
-    (
-        select count(*)
-        from public.get_published_content(
+select throws_ok(
+    $$
+        select *
+        from public.get_published_content_catalog(
             'unsupported_type',
             null
         )
-    ),
-    0::bigint,
-    'an unsupported public filter returns no content'
+    $$,
+    '22023',
+    'content_type_invalid',
+    'an unsupported public catalog filter is rejected'
 );
 
 select * from finish();

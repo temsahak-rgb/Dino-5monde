@@ -5,6 +5,10 @@ import {
     type Route
 } from "@playwright/test";
 
+import {
+    fulfillContentBackendRequest
+} from "./content-backend-mock.js";
+
 const learnerId =
     "bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb";
 const attemptId =
@@ -199,6 +203,14 @@ test(
             "https://supabase.test/**",
             async route => {
                 if (await fulfillPreflight(route)) {
+                    return;
+                }
+
+                if (
+                    await fulfillContentBackendRequest(
+                        route
+                    )
+                ) {
                     return;
                 }
 

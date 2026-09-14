@@ -14,8 +14,8 @@ import {
     getGrammarLevels
 } from "../grammar/grammarLevels.js";
 import {
-    loadGrammar
-} from "../grammar/grammarEngine.js";
+    loadGrammarCatalog
+} from "../grammar/grammarRepository.js";
 import {
     loadTravelIndex
 } from "../travel/travelEngine.js";
@@ -31,6 +31,12 @@ import {
 import type {
     LearnerActivityReward
 } from "../../services/backend/learningRewardRepository.js";
+import {
+    useContent
+} from "../../services/content/ContentProvider.js";
+import type {
+    ContentRepository
+} from "../../services/content/contentRepository.js";
 import {
     Button,
     Card,
@@ -52,9 +58,11 @@ type CatalogStatus =
     | "ready"
     | "error";
 
-let catalogRequest:
-    Promise<LearningProgressCatalog>
-    | null = null;
+const catalogRequests =
+    new WeakMap<
+        ContentRepository,
+        Promise<LearningProgressCatalog>
+    >();
 
 const areaPresentation = {
     games: {
@@ -84,6 +92,11 @@ function LearningProgressDashboard({
     const {
         t
     } = useI18n();
+    const {
+        repository,
+        status:
+            contentStatus
+    } = useContent();
     const [
         catalog,
         setCatalog
@@ -101,10 +114,28 @@ function LearningProgressDashboard({
 
     useEffect(
         () => {
+            if (
+                contentStatus
+                !== "ready"
+                || !repository
+            ) {
+                setCatalog(null);
+                setStatus(
+                    contentStatus
+                    === "error"
+                        ? "error"
+                        : "loading"
+                );
+
+                return;
+            }
+
             let active = true;
             setStatus("loading");
 
-            void loadLearningProgressCatalog()
+            void loadLearningProgressCatalog(
+                repository
+            )
                 .then(
                     loadedCatalog => {
                         if (!active) {
@@ -126,6 +157,8 @@ function LearningProgressDashboard({
             };
         },
         [
+            contentStatus,
+            repository,
             retryVersion
         ]
     );
@@ -200,7 +233,11 @@ function LearningProgressDashboard({
                         <Button
                             variant="secondary"
                             onClick={() => {
-                                catalogRequest = null;
+                                if (repository) {
+                                    catalogRequests.delete(
+                                        repository
+                                    );
+                                }
                                 setRetryVersion(
                                     current =>
                                         current + 1
@@ -295,17 +332,27 @@ function ProgressArea({
     );
 }
 
-function loadLearningProgressCatalog():
+function loadLearningProgressCatalog(
+    repository: ContentRepository
+):
     Promise<LearningProgressCatalog> {
-    if (catalogRequest) {
-        return catalogRequest;
+    const pending =
+        catalogRequests.get(
+            repository
+        );
+
+    if (pending) {
+        return pending;
     }
 
-    catalogRequest = Promise.all([
+    const request = Promise.all([
         Promise.all(
             getGrammarLevels().map(
                 level =>
-                    loadGrammar(level)
+                    loadGrammarCatalog(
+                        repository,
+                        level
+                    )
             )
         ),
         loadTravelIndex()
@@ -339,12 +386,19 @@ function loadLearningProgressCatalog():
         }
     ).catch(
         reason => {
-            catalogRequest = null;
+            catalogRequests.delete(
+                repository
+            );
             throw reason;
         }
     );
 
-    return catalogRequest;
+    catalogRequests.set(
+        repository,
+        request
+    );
+
+    return request;
 }
 
 export {

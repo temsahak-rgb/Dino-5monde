@@ -34,6 +34,9 @@ import {
     useI18n
 } from "../i18n/I18nProvider.js";
 import {
+    useContent
+} from "../services/content/ContentProvider.js";
+import {
     Badge,
     Card
 } from "../ui/components/Controls.js";
@@ -57,6 +60,11 @@ function ArchivePage() {
         localizedValue,
         t
     } = useI18n();
+    const {
+        repository,
+        status:
+            contentStatus
+    } = useContent();
     const [progress, setProgress] =
         useState<
             LessonProgressSnapshot[]
@@ -111,11 +119,27 @@ function ArchivePage() {
 
     useEffect(
         () => {
+            if (
+                contentStatus
+                !== "ready"
+                || !repository
+            ) {
+                setCatalogs(null);
+                setLoadError(
+                    contentStatus
+                    === "error"
+                );
+
+                return;
+            }
+
             let active = true;
 
             setLoadError(false);
 
-            void loadReviewCatalog()
+            void loadReviewCatalog(
+                repository
+            )
                 .then(loadedCatalogs => {
                     if (active) {
                         setCatalogs(
@@ -133,7 +157,11 @@ function ArchivePage() {
                 active = false;
             };
         },
-        [loadRevision]
+        [
+            contentStatus,
+            loadRevision,
+            repository
+        ]
     );
 
     const completedLessons =

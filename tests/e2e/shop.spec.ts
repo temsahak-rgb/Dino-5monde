@@ -5,6 +5,10 @@ import {
     type Route
 } from "@playwright/test";
 
+import {
+    fulfillContentBackendRequest
+} from "./content-backend-mock.js";
+
 const learnerId =
     "11111111-1111-4111-8111-111111111111";
 
@@ -185,6 +189,14 @@ async function installShopBackendMock(
                     headers: jsonHeaders(),
                     status: 204
                 });
+                return;
+            }
+
+            if (
+                await fulfillContentBackendRequest(
+                    route
+                )
+            ) {
                 return;
             }
 

@@ -86,6 +86,15 @@ type PublishedContentRpcRow = {
     title_fr: string;
 };
 
+type PublishedContentCatalogRpcRow =
+    Omit<
+        PublishedContentRpcRow,
+        "content_hash"
+        | "payload"
+    > & {
+        catalog: Json;
+    };
+
 type LearnerProfileRow = {
     assigned_saurus: string | null;
     avatar_key: string;
@@ -580,10 +589,17 @@ type Database = {
             };
             get_published_content: {
                 Args: {
-                    p_content_key?: string | null;
-                    p_content_type?: CanonicalContentType | null;
+                    p_content_key: string;
+                    p_content_type: CanonicalContentType;
                 };
                 Returns: PublishedContentRpcRow[];
+            };
+            get_published_content_catalog: {
+                Args: {
+                    p_content_type?: CanonicalContentType | null;
+                    p_level?: string | null;
+                };
+                Returns: PublishedContentCatalogRpcRow[];
             };
             import_content_revision: {
                 Args: {
@@ -687,6 +703,7 @@ export {
     type LearnerProfileUpdate,
     type PurchaseShopLessonRpcRow,
     type PublishedContentRpcRow,
+    type PublishedContentCatalogRpcRow,
     type ReviewSignalType,
     type SaurusAssignmentSource,
     type ShopLessonContentType,

@@ -65,6 +65,7 @@ ui/components/       → composants React partagés
 features/            → composants métier, moteurs et repositories
 core/                → logique réutilisable indépendante de React
 services/backend/    → frontière TypeScript vers Auth et PostgreSQL
+services/content/    → contrat unique de lecture du corpus
 i18n/                → textes d'interface et direction
 data/                → export JSON historique, conservé pendant la bascule
 supabase/            → backend canonique, migrations et mini-corpus UAT
@@ -78,9 +79,9 @@ La progression Grammaire et Voyage reste d'abord enregistrée localement pour fo
 
 Chaque exercice terminé en Grammaire, Voyage ou Vocabulaire ajoute aussi un résultat immuable au profil. L'historique conserve le score, la date et un lien de retour vers l'activité ; il fonctionne hors connexion puis se synchronise par compte sans renvoyer les tentatives déjà présentes. Ces scores n'accordent aucun crédit et sont isolés par Row Level Security.
 
-La boutique est disponible sur `/shop`. Elle utilise aujourd'hui uniquement des crédits virtuels : aucun paiement en argent réel n'est encore raccordé. Le catalogue pédagogique cible désormais Supabase comme source canonique : une identité stable pointe vers une révision JSONB immuable et chaque import ou publication est audité. Le navigateur ne reçoit que la révision publiée par `get_published_content` ; les tables, les brouillons et la provenance d'import restent privés.
+La boutique est disponible sur `/shop`. Elle utilise aujourd'hui uniquement des crédits virtuels : aucun paiement en argent réel n'est encore raccordé. Le catalogue pédagogique cible désormais Supabase comme source canonique : une identité stable pointe vers une révision JSONB immuable et chaque import ou publication est audité. Un contrat `ContentRepository` isole React de la source réelle. La Grammaire est le premier domaine raccordé : ses listes téléchargent uniquement les métadonnées publiées par `get_published_content_catalog`, puis la page d'une leçon demande son document et ses exercices par identifiant avec `get_published_content`. Les tables, les brouillons et la provenance d'import restent privés.
 
-La bascule reste volontairement progressive. Le corpus complet de `data/` n'est pas modifié : il sert d'export historique pour l'import initial et continue d'alimenter le frontend tant que la parité serveur n'a pas été validée. Docker ne charge jamais ce corpus complet ; `supabase/seeds/uat-content.sql` contient seulement quatre fixtures réservées aux tests, une par famille de contenu. Après l'import et le raccordement des repositories React, seuls ces exemples UAT resteront en local et le serveur fera foi pour le produit.
+La bascule reste volontairement progressive. Le corpus complet de `data/` n'est pas modifié : il sert d'export historique pour l'import initial et de repli explicite quand aucun backend n'est configuré. Dès qu'un backend est configuré, la Grammaire ne masque jamais une panne serveur par un retour silencieux au JSON : l'interface montre un état de chargement, une erreur réessayable ou une ressource introuvable. Voyage, Vocabulaire et Journal restent encore sur leurs lecteurs statiques et migreront derrière le même contrat, domaine par domaine. Docker ne charge jamais le corpus complet ; `supabase/seeds/uat-content.sql` contient seulement quatre fixtures réservées aux tests, une par famille de contenu.
 
 Le déploiement GitHub Pages injecte ces valeurs depuis les variables de dépôt `SUPABASE_URL` et `SUPABASE_PUBLISHABLE_KEY`. Le projet Supabase n’est donc jamais codé en dur : passer à l’environnement du client consiste à remplacer ces deux variables puis à rejouer les migrations versionnées.
 

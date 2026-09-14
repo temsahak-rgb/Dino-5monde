@@ -48,7 +48,40 @@ test(
             createContentCatalogDigest(
                 documents
             ),
-            "4912373dcb499f5ac7eef687b94188858719d0734324f24549d658e627c15c42"
+            "102e9b9d816d94aeee93228b5a46f09cde5196e89b676f26d72e39c73c333214"
+        );
+
+        const grammarDocuments =
+            documents.filter(
+                document =>
+                    document.contentType
+                    === "grammar_lesson"
+            );
+        const importedExerciseIds =
+            grammarDocuments.flatMap(
+                document =>
+                    document.payload
+                        .exerciseSections
+                        ?.map(
+                            section =>
+                                section.id
+                        )
+                    ?? []
+            );
+
+        assert.deepEqual(
+            importedExerciseIds,
+            [
+                "A1-G-001-ex1",
+                "A1-G-001-quiz"
+            ]
+        );
+        assert.ok(
+            grammarDocuments.every(
+                document =>
+                    document.schemaVersion
+                    === 2
+            )
         );
     }
 );
@@ -88,7 +121,10 @@ test(
             );
             assert.equal(
                 document.schemaVersion,
-                1
+                document.contentType
+                === "grammar_lesson"
+                    ? 2
+                    : 1
             );
             assert.ok(
                 !identities.has(identity),
