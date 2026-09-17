@@ -1,0 +1,297 @@
+name: Deploy AEZA production
+
+on:
+  workflow_run:
+    workflows:
+      - Browser E2E
+    types:
+      - completed
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  checks: read
+
+concurrency:
+  group: aeza-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy to AEZA
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (
+        github.event.workflow_run.event == 'push' &&
+        github.event.workflow_run.conclusion == 'success'
+      )
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Resolve commit to deploy
+        id: commit
+        shell: bash
+        env:
+          WORKFLOW_RUN_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          set -euo pipefail
+          COMMIT_SHA="${WORKFLOW_RUN_SHA:-$GITHUB_SHA}"
+          echo "sha=$COMMIT_SHA" >> "$GITHUB_OUTPUT"
+          echo "Deploying commit: $COMMIT_SHA"
+
+      - name: Await required CI checks
+        uses: actions/github-script@v8
+        env:
+          COMMIT_SHA: ${{ steps.commit.outputs.sha }}
+        with:
+          script: |
+            const requiredChecks = [
+              'Quality report',
+              'Backend schema',
+              'Executable feature contracts',
+              'Startup and i18n (Chromium)',
+            ];
+
+            const optionalChecks = [
+              'Validate educational corpus',
+            ];
+
+            const attempts = 60;
+            const waitMs = 10_000;
+
+            const latestByName = (checks, name) =>
+              checks
+                .filter((check) => check.name === name)
+                .sort(
+                  (left, right) =>
+                    Date.parse(right.started_at ?? 0) -
+                    Date.parse(left.started_at ?? 0)
+                )[0];
+
+            for (let attempt = 1; attempt <= attempts; attempt += 1) {
+              const { data } = await github.rest.checks.listForRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: process.env.COMMIT_SHA,
+                per_page: 100,
+              });
+
+              const required = requiredChecks.map((name) => ({
+                name,
+                check: latestByName(data.check_runs, name),
+              }));
+
+              const missing = required.filter(({ check }) => !check);
+              const running = required.filter(
+                ({ check }) => check && check.status !== 'completed'
+              );
+              const failed = required.filter(
+                ({ check }) =>
+                  check?.status === 'completed' &&
+                  check.conclusion !== 'success'
+              );
+
+              const optional = optionalChecks
+                .map((name) => ({
+                  name,
+                  check: latestByName(data.check_runs, name),
+                }))
+                .filter(({ check }) => check);
+
+              const optionalRunning = optional.filter(
+                ({ check }) => check.status !== 'completed'
+              );
+              const optionalFailed = optional.filter(
+                ({ check }) =>
+                  check.status === 'completed' &&
+                  check.conclusion !== 'success'
+              );
+
+              if (failed.length || optionalFailed.length) {
+                const failures = [...failed, ...optionalFailed]
+                  .map(({ name, check }) => `${name}: ${check.conclusion}`)
+                  .join(', ');
+
+                core.setFailed(`Deployment blocked by CI — ${failures}`);
+                return;
+              }
+
+              if (
+                !missing.length &&
+                !running.length &&
+                !optionalRunning.length
+              ) {
+                core.info(
+                  `All deployment checks passed for ${process.env.COMMIT_SHA}`
+                );
+                return;
+              }
+
+              const pending = [
+                ...missing.map(({ name }) => `${name} (not started)`),
+                ...running.map(({ name }) => `${name} (running)`),
+                ...optionalRunning.map(({ name }) => `${name} (running)`),
+              ].join(', ');
+
+              core.info(
+                `Waiting for CI (${attempt}/${attempts}): ${pending}`
+              );
+
+              await new Promise((resolve) => setTimeout(resolve, waitMs));
+            }
+
+            core.setFailed(
+              `Timed out waiting for CI checks on ${process.env.COMMIT_SHA}`
+            );
+
+      - name: Checkout release commit
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ steps.commit.outputs.sha }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Validate production variables
+        shell: bash
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_PUBLISHABLE_KEY: ${{ vars.SUPABASE_PUBLISHABLE_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "$SUPABASE_URL" || {
+            echo "::error::Missing repository variable SUPABASE_URL"
+            exit 1
+          }
+          test -n "$SUPABASE_PUBLISHABLE_KEY" || {
+            echo "::error::Missing repository variable SUPABASE_PUBLISHABLE_KEY"
+            exit 1
+          }
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build production frontend
+        env:
+          DINO_PUBLIC_BASE: /
+          VITE_SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.SUPABASE_PUBLISHABLE_KEY }}
+        run: npm run build
+
+      - name: Add release metadata
+        shell: bash
+        env:
+          COMMIT_SHA: ${{ steps.commit.outputs.sha }}
+        run: |
+          set -euo pipefail
+
+          python - <<'PY'
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          payload = {
+              "sha": os.environ["COMMIT_SHA"],
+              "builtAt": datetime.now(timezone.utc).isoformat(),
+          }
+
+          Path("dist/version.json").write_text(
+              json.dumps(payload, separators=(",", ":")) + "\n",
+              encoding="utf-8",
+          )
+          PY
+
+      - name: Create deployment archive
+        shell: bash
+        env:
+          COMMIT_SHA: ${{ steps.commit.outputs.sha }}
+        run: |
+          set -euo pipefail
+          tar -czf "dino-release-${COMMIT_SHA}.tgz" \
+            dist \
+            supabase
+
+      - name: Configure SSH
+        shell: bash
+        env:
+          AEZA_SSH_HOST: ${{ secrets.AEZA_SSH_HOST }}
+          AEZA_SSH_PORT: ${{ secrets.AEZA_SSH_PORT }}
+          AEZA_SSH_PRIVATE_KEY: ${{ secrets.AEZA_SSH_PRIVATE_KEY }}
+          AEZA_SSH_USER: ${{ secrets.AEZA_SSH_USER }}
+        run: |
+          set -euo pipefail
+
+          : "${AEZA_SSH_HOST:?Missing AEZA_SSH_HOST secret}"
+          : "${AEZA_SSH_PRIVATE_KEY:?Missing AEZA_SSH_PRIVATE_KEY secret}"
+          : "${AEZA_SSH_USER:?Missing AEZA_SSH_USER secret}"
+
+          AEZA_SSH_PORT="${AEZA_SSH_PORT:-22}"
+
+          mkdir -p "$HOME/.ssh"
+          chmod 700 "$HOME/.ssh"
+
+          printf '%s\n' "$AEZA_SSH_PRIVATE_KEY" > "$HOME/.ssh/id_ed25519"
+          chmod 600 "$HOME/.ssh/id_ed25519"
+
+          ssh-keyscan \
+            -p "$AEZA_SSH_PORT" \
+            -H "$AEZA_SSH_HOST" \
+            >> "$HOME/.ssh/known_hosts"
+
+          chmod 600 "$HOME/.ssh/known_hosts"
+
+      - name: Upload release to AEZA
+        shell: bash
+        env:
+          AEZA_SSH_HOST: ${{ secrets.AEZA_SSH_HOST }}
+          AEZA_SSH_PORT: ${{ secrets.AEZA_SSH_PORT }}
+          AEZA_SSH_USER: ${{ secrets.AEZA_SSH_USER }}
+          COMMIT_SHA: ${{ steps.commit.outputs.sha }}
+        run: |
+          set -euo pipefail
+          AEZA_SSH_PORT="${AEZA_SSH_PORT:-22}"
+
+          scp \
+            -P "$AEZA_SSH_PORT" \
+            "dino-release-${COMMIT_SHA}.tgz" \
+            infra/production/deploy.sh \
+            "${AEZA_SSH_USER}@${AEZA_SSH_HOST}:/tmp/"
+
+      - name: Activate release on AEZA
+        shell: bash
+        env:
+          AEZA_SSH_HOST: ${{ secrets.AEZA_SSH_HOST }}
+          AEZA_SSH_PORT: ${{ secrets.AEZA_SSH_PORT }}
+          AEZA_SSH_USER: ${{ secrets.AEZA_SSH_USER }}
+          COMMIT_SHA: ${{ steps.commit.outputs.sha }}
+        run: |
+          set -euo pipefail
+          AEZA_SSH_PORT="${AEZA_SSH_PORT:-22}"
+
+          ssh \
+            -p "$AEZA_SSH_PORT" \
+            "${AEZA_SSH_USER}@${AEZA_SSH_HOST}" \
+            "chmod +x /tmp/deploy.sh && \
+             /tmp/deploy.sh \
+               '${COMMIT_SHA}' \
+               '/tmp/dino-release-${COMMIT_SHA}.tgz'"
+
+      - name: Deployment summary
+        shell: bash
+        env:
+          COMMIT_SHA: ${{ steps.commit.outputs.sha }}
+        run: |
+          {
+            echo "## AEZA production"
+            echo
+            echo "- Commit: \`${COMMIT_SHA}\`"
+            echo "- Status: deployed"
+          } >> "$GITHUB_STEP_SUMMARY"
