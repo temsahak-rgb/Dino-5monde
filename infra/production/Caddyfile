@@ -1,10 +1,57 @@
-# Copy to /etc/dino/production.env on AEZA.
-# Keep this file OUTSIDE the Git repository in production.
+# Replace these placeholders before installing as /etc/caddy/Caddyfile:
+#
+# __APP_DOMAIN__ -> dino.example.com
+# __API_DOMAIN__ -> api.dino.example.com
 
-# Domain served by the first block of the Caddyfile.
-APP_DOMAIN=dino.example.com
 
-# Direct PostgreSQL URL reachable from the AEZA host itself.
-# The password must be URL-encoded if it contains reserved URL characters.
-# Keep the value quoted.
-SUPABASE_DB_URL='postgresql://postgres:CHANGE_ME@127.0.0.1:5432/postgres'
+__APP_DOMAIN__ {
+    encode zstd gzip
+
+    root * /srv/dino/current
+
+    header {
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        X-Frame-Options "SAMEORIGIN"
+    }
+
+    # Simple server healthcheck.
+    respond /healthz "ok" 200
+
+    # React Router SPA fallback.
+    #
+    # Existing files are served normally:
+    # /assets/*
+    # /data/*
+    # /search-index.json
+    # /version.json
+    #
+    # Unknown routes fall back to index.html.
+    try_files {path} /index.html
+
+    file_server
+}
+
+
+__API_DOMAIN__ {
+    encode zstd gzip
+
+    # Public Supabase API routes.
+    #
+    # Supabase Studio is intentionally NOT exposed.
+    @supabase_api path \
+        /auth/v1* \
+        /rest/v1* \
+        /graphql/v1* \
+        /realtime/v1* \
+        /storage/v1* \
+        /functions/v1*
+
+    handle @supabase_api {
+        reverse_proxy 127.0.0.1:8000
+    }
+
+    handle {
+        respond "Not found" 404
+    }
+}

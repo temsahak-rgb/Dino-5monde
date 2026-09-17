@@ -1,214 +1,223 @@
-# Dino-5monde — AEZA production deployment
+#!/usr/bin/env bash
 
-This directory adds the production deployment path for the React/Vite + Supabase version of Dino-5monde.
+set -Eeuo pipefail
 
-## Deployment flow
+if [[ "$(id -u)" -ne 0 ]]; then
+    echo "Run this script as root." >&2
+    exit 1
+fi
 
-```text
-push main
-    |
-    v
-existing GitHub CI
-    |
-    +-- Code quality
-    +-- Backend schema / pgTAP
-    +-- Feature contracts
-    +-- Browser E2E
-    |
-    v
-Deploy AEZA production
-    |
-    +-- build Vite with production Supabase URL/key
-    +-- create release archive
-    +-- SCP archive to AEZA
-    +-- PostgreSQL pre-deploy backup
-    +-- supabase db push
-    +-- atomic frontend symlink switch
-    +-- HTTPS version healthcheck
-    +-- frontend rollback on healthcheck failure
-```
+readonly DEPLOY_USER="${DEPLOY_USER:-dino}"
+readonly APP_ROOT="${DINO_APP_ROOT:-/srv/dino}"
+readonly ENV_DIR="/etc/dino"
 
-Database migrations are intentionally **not rolled back automatically**.
+echo "Preparing Dino production environment..."
 
-## Important branch state
+# ---------------------------------------------------------------------------
+# Required software
+# ---------------------------------------------------------------------------
 
-At the time these files were generated, `develop` contains the React/Vite +
-Supabase application while `main` still contains the older TypeScript build.
+command -v docker >/dev/null || {
+    echo "Docker is not installed." >&2
+    echo "Install Docker Engine before continuing." >&2
+    exit 1
+}
 
-Merge the current `develop` application into `main` together with these files
-before enabling the production workflow.
+command -v caddy >/dev/null || {
+    echo "Caddy is not installed." >&2
+    echo "Install Caddy before continuing." >&2
+    exit 1
+}
 
-## GitHub repository variables
+command -v curl >/dev/null || {
+    echo "curl is not installed." >&2
+    exit 1
+}
 
-Configure:
+command -v flock >/dev/null || {
+    echo "flock is not installed." >&2
+    echo "Install util-linux before continuing." >&2
+    exit 1
+}
 
-```text
-SUPABASE_URL=https://api.dino.example.com
-SUPABASE_PUBLISHABLE_KEY=<publishable Supabase key>
-```
+# ---------------------------------------------------------------------------
+# Deployment user
+# ---------------------------------------------------------------------------
 
-These are injected into the Vite bundle at build time.
+if ! id "$DEPLOY_USER" >/dev/null 2>&1; then
+    echo "Creating deployment user: $DEPLOY_USER"
 
-## GitHub Actions secrets
+    useradd \
+        --create-home \
+        --shell /bin/bash \
+        "$DEPLOY_USER"
+fi
 
-Configure:
+# deploy.sh needs Docker access for:
+# - PostgreSQL backup
+# - Supabase CLI migration container
+usermod -aG docker "$DEPLOY_USER"
 
-```text
-AEZA_SSH_HOST=<AEZA IPv4 or hostname>
-AEZA_SSH_PORT=22
-AEZA_SSH_USER=dino
-AEZA_SSH_PRIVATE_KEY=<private Ed25519 deployment key>
-```
+# ---------------------------------------------------------------------------
+# SSH directory
+# ---------------------------------------------------------------------------
 
-Do not reuse a personal SSH private key. Generate a dedicated deployment key.
+readonly DEPLOY_HOME="$(
+    getent passwd "$DEPLOY_USER" |
+    cut -d: -f6
+)"
 
-Example locally:
+install \
+    -d \
+    -o "$DEPLOY_USER" \
+    -g "$DEPLOY_USER" \
+    -m 0700 \
+    "${DEPLOY_HOME}/.ssh"
 
-```bash
-ssh-keygen -t ed25519 -f dino_aeza_deploy -C "github-actions-dino"
-```
+touch "${DEPLOY_HOME}/.ssh/authorized_keys"
 
-Install `dino_aeza_deploy.pub` in the AEZA deploy user's
-`~/.ssh/authorized_keys`, then put the contents of `dino_aeza_deploy` in the
-GitHub secret `AEZA_SSH_PRIVATE_KEY`.
+chown \
+    "$DEPLOY_USER:$DEPLOY_USER" \
+    "${DEPLOY_HOME}/.ssh/authorized_keys"
 
-## AEZA prerequisites
+chmod \
+    0600 \
+    "${DEPLOY_HOME}/.ssh/authorized_keys"
 
-The server needs:
+# ---------------------------------------------------------------------------
+# Application directories
+# ---------------------------------------------------------------------------
 
-- Docker Engine
-- Caddy
-- curl
-- a self-hosted Supabase installation
-- Supabase gateway reachable locally on `127.0.0.1:8000`
-- PostgreSQL reachable through the URL in `/etc/dino/production.env`
+install \
+    -d \
+    -o "$DEPLOY_USER" \
+    -g "$DEPLOY_USER" \
+    -m 0755 \
+    "$APP_ROOT"
 
-Supabase's official self-hosted Docker setup should be provisioned once on the
-server. It is infrastructure lifecycle, not something that should be recreated
-on every application push.
+install \
+    -d \
+    -o "$DEPLOY_USER" \
+    -g "$DEPLOY_USER" \
+    -m 0755 \
+    "${APP_ROOT}/releases"
 
-Official documentation:
+install \
+    -d \
+    -o "$DEPLOY_USER" \
+    -g "$DEPLOY_USER" \
+    -m 0755 \
+    "${APP_ROOT}/backups"
 
-https://supabase.com/docs/guides/self-hosting/docker
+install \
+    -d \
+    -o "$DEPLOY_USER" \
+    -g "$DEPLOY_USER" \
+    -m 0755 \
+    "${APP_ROOT}/npm-cache"
 
-## One-time server setup
+# ---------------------------------------------------------------------------
+# Production secrets directory
+# ---------------------------------------------------------------------------
 
-Copy this directory to AEZA once, then:
+install \
+    -d \
+    -o root \
+    -g "$DEPLOY_USER" \
+    -m 0750 \
+    "$ENV_DIR"
 
-```bash
-sudo DEPLOY_USER=dino ./bootstrap-aeza.sh
-```
+readonly ENV_FILE="${ENV_DIR}/production.env"
 
-Edit:
-
-```text
-/etc/dino/production.env
-```
-
-Example:
-
-```bash
+if [[ ! -f "$ENV_FILE" ]]; then
+    cat > "$ENV_FILE" <<'EOF'
+# Public frontend hostname.
 APP_DOMAIN=dino.example.com
-SUPABASE_DB_URL='postgresql://postgres:URL_ENCODED_PASSWORD@127.0.0.1:5432/postgres'
-```
 
-The DB URL must stay server-side. It is not a GitHub/Vite variable.
+# PostgreSQL connection used only from the AEZA server.
+#
+# IMPORTANT:
+# URL-encode the password if it contains reserved characters.
+#
+# Example:
+# postgresql://postgres:my%40password@127.0.0.1:5432/postgres
 
-## Caddy
+SUPABASE_DB_URL='postgresql://postgres:CHANGE_ME@127.0.0.1:5432/postgres'
+EOF
 
-Copy `Caddyfile` to `/etc/caddy/Caddyfile` after replacing:
+    chown \
+        root:"$DEPLOY_USER" \
+        "$ENV_FILE"
 
-```text
-__APP_DOMAIN__
-__API_DOMAIN__
-```
+    chmod \
+        0640 \
+        "$ENV_FILE"
 
-Example:
+    echo
+    echo "Created:"
+    echo "  $ENV_FILE"
+fi
 
-```text
-__APP_DOMAIN__ -> dino.example.com
-__API_DOMAIN__ -> api.dino.example.com
-```
+# ---------------------------------------------------------------------------
+# Caddy
+# ---------------------------------------------------------------------------
 
-Then:
+systemctl enable caddy >/dev/null 2>&1 || true
 
-```bash
-sudo caddy validate --config /etc/caddy/Caddyfile
-sudo systemctl reload caddy
-```
-
-Caddy automatically handles TLS certificates once DNS points to the AEZA host.
-
-The provided API virtual host exposes Supabase API paths but intentionally does
-not expose Supabase Studio.
-
-## DNS
-
-Create at least:
-
-```text
-dino.example.com      A    <AEZA IPv4>
-api.dino.example.com  A    <AEZA IPv4>
-```
-
-## First deployment
-
-After the React/Supabase code and this deployment workflow are present on
-`main`, a push to `main` triggers the existing `Browser E2E` workflow.
-
-When E2E succeeds, `Deploy AEZA production` starts. It waits for the other
-required checks, builds the production frontend and deploys it.
-
-A manual run remains available through `workflow_dispatch`.
-
-## Production filesystem
-
-```text
-/srv/dino/
-├── current -> /srv/dino/releases/<sha>/dist
-├── releases/
-│   ├── <sha>/
-│   │   ├── dist/
-│   │   └── supabase/
-│   └── ...
-├── backups/
-│   └── predeploy-<sha>-<date>.dump
-├── npm-cache/
-└── .deploy.lock
-```
-
-Only the five newest application releases are retained.
-
-Pre-deployment PostgreSQL dumps are retained for 14 days.
-
-## What happens on failure?
-
-### CI failure
-
-Nothing reaches AEZA.
-
-### Migration failure
-
-The new frontend is not activated.
-
-### Frontend healthcheck failure
-
-The `current` symlink is switched back to the previous frontend.
-
-The database migration is **not** automatically reversed, because automatic
-down-migrations are unsafe. Production migrations should remain backward
-compatible with the immediately previous frontend version.
-
-## Firewall
-
-Publicly expose only what is required, normally:
-
-```text
-22/tcp   SSH
-80/tcp   HTTP
-443/tcp  HTTPS
-```
-
-Do not expose PostgreSQL publicly.
-
-The Supabase gateway can remain bound locally and be reached through Caddy.
+echo
+echo "============================================================"
+echo "Dino AEZA bootstrap complete"
+echo "============================================================"
+echo
+echo "Deployment user:"
+echo
+echo "  $DEPLOY_USER"
+echo
+echo "Application directory:"
+echo
+echo "  $APP_ROOT"
+echo
+echo "Production environment:"
+echo
+echo "  $ENV_FILE"
+echo
+echo
+echo "Remaining one-time operations:"
+echo
+echo "1. Configure:"
+echo
+echo "   $ENV_FILE"
+echo
+echo "2. Install the repository Caddyfile:"
+echo
+echo "   /etc/caddy/Caddyfile"
+echo
+echo "   Replace:"
+echo
+echo "     __APP_DOMAIN__"
+echo "     __API_DOMAIN__"
+echo
+echo "3. Validate Caddy:"
+echo
+echo "   caddy validate --config /etc/caddy/Caddyfile"
+echo
+echo "4. Reload Caddy:"
+echo
+echo "   systemctl reload caddy"
+echo
+echo "5. Add the GitHub Actions public SSH key to:"
+echo
+echo "   ${DEPLOY_HOME}/.ssh/authorized_keys"
+echo
+echo "6. Ensure Supabase API gateway is reachable locally:"
+echo
+echo "   127.0.0.1:8000"
+echo
+echo "7. Ensure PostgreSQL is reachable through SUPABASE_DB_URL."
+echo
+echo
+echo "IMPORTANT:"
+echo
+echo "The user '$DEPLOY_USER' was added to the docker group."
+echo "Open a new SSH session before testing Docker commands with it."
+echo
